@@ -4989,6 +4989,9 @@ class TranslationJob(object):
                     if self._should_skip(rel, full, out_path, "text"):
                         continue
                     self._log_progress(idx, total, os.path.basename(full))
+                    self.progress({"file": rel, "file_idx": idx, "files": total,
+                                   "ids": 0, "total_ids": 0,
+                                   "reqs": self.req_count, "unit": "个文件"})
                     try:
                         n_texts = self._run_text_file(
                             os.path.basename(full), full, out_path,
@@ -5319,6 +5322,10 @@ class TranslationJob(object):
             failed += st["failed"]
             changed += 1 if st["changed"] else 0
             copied += 1 if st["copied"] else 0
+            # 条目级进度回传：主界面进度条按“已处理文本表/总表数”推进
+            self.progress({"file": rel, "file_idx": idx, "files": n_tables,
+                           "ids": st["translated"], "total_ids": st["translated"],
+                           "reqs": self.req_count, "unit": "张文本表"})
             if idx == 1 or idx == n_tables or idx % 20 == 0:
                 self.log("文本表 %d/%d（%d%%）：%s"
                          % (idx, n_tables, 100 * idx // n_tables, rel))
@@ -5952,6 +5959,9 @@ class TranslationJob(object):
             if self._should_skip(rel, full, out_path, kind):
                 continue
             self._log_progress(idx, total, rel)
+            self.progress({"file": rel, "file_idx": idx, "files": total,
+                           "ids": 0, "total_ids": 0, "reqs": self.req_count,
+                           "unit": "个文件"})
             if kind == "text":
                 tmp = os.path.join(temp_dir, rel)
                 try:
@@ -6164,7 +6174,7 @@ class TranslationJob(object):
             if n % 20 == 0:
                 self.progress({"file": fn, "ids": n, "total_ids": len(texts),
                                "file_idx": idx, "files": total,
-                               "reqs": self.req_count})
+                               "reqs": self.req_count, "unit": "个文件"})
         if not done:
             try:
                 if os.path.exists(out_path) and \
@@ -6177,7 +6187,8 @@ class TranslationJob(object):
             out_path,
             lambda p: self.p.generateOutputXml(p, done, splitLength=1000))
         self.progress({"file": fn, "ids": len(texts), "total_ids": len(texts),
-                       "file_idx": idx, "files": total, "reqs": self.req_count})
+                       "file_idx": idx, "files": total, "reqs": self.req_count,
+                       "unit": "个文件"})
         return len(texts)
 
     def _pruned_walk(self):
@@ -6806,6 +6817,8 @@ class AiTranslateTab(object):
         ui.label(p, "进度")
         self.progress = ui.progress(p)
         ui.set_progress(self.progress, 0)
+        self.stage_label = ui.label(p, "阶段：待命")
+        self.count_label = ui.label(p, "已处理 0 / 0")
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
 
@@ -7626,6 +7639,8 @@ class AiTranslateTab(object):
         chosen_label = _combo_get(self._source_combo(kind))
 
         def progress(done, total, speed, eta, name):
+            self.ui_call(self._set_stage, "阶段：下载中 · %s" % name)
+            self.ui_call(self._set_dl_count, done, total, name)
             if total:
                 pct = int(100.0 * done / total)
                 if pct != getattr(self, "_last_pct", -1):
@@ -7720,11 +7735,47 @@ class AiTranslateTab(object):
         except Exception:
             pass
 
+    def _set_stage(self, text):
+        """阶段提示：下载 / 翻译共用同一条进度条，靠这行说明当前在做什么。"""
+        try:
+            _label_set(self.stage_label, text)
+        except Exception:
+            pass
+
+    def _set_count(self, done, total, unit=""):
+        """计数提示：按「实际要处理的文件数」显示 已完成/总数，比纯百分比直观。"""
+        try:
+            if total:
+                _label_set(self.count_label,
+                           "已处理 %d / %d %s（%.0f%%）"
+                           % (int(done), int(total), unit,
+                              100.0 * min(done, total) / total))
+            else:
+                _label_set(self.count_label, "已处理 0 / 0 %s" % unit)
+        except Exception:
+            pass
+
+    def _set_dl_count(self, done, total, name=""):
+        """下载阶段复用同一行计数：显示已下载/总大小。"""
+        try:
+            if total:
+                _label_set(self.count_label,
+                           "已下载 %s / %s（%.0f%%）· %s"
+                           % (_fmt_size(done), _fmt_size(total),
+                              100.0 * done / total, name))
+            else:
+                _label_set(self.count_label, "已下载 %s · %s"
+                           % (_fmt_size(done), name))
+        except Exception:
+            pass
+
     def _after_download(self):
         self.dl_cancel = None
         self._last_ui_byte = -1
         self._last_pct = -1
         self._set_progress(0)
+        self._set_count(0, 0)
+        self._set_stage("阶段：待命（下载已完成）")
         self.ui.set_enabled(self.btn_dl_rt, True)
         self.ui.set_enabled(self.btn_dl_model, True)
         self.ui.set_enabled(self.btn_dl_cancel, False)
@@ -8066,6 +8117,8 @@ class AiTranslateTab(object):
         self.ui.set_enabled(self.btn_run, False)
         self.ui.set_enabled(self.btn_run_cancel, True)
         self._set_progress(0)
+        self._set_count(0, 0)
+        self._set_stage("阶段：翻译中（按文本表推进）")
 
         mode = self.cfg["mode"]
         src_lang = self.cfg["src_lang"]
@@ -8167,13 +8220,21 @@ class AiTranslateTab(object):
         if total > 0:
             pct = int(100.0 * min(idx, total) / total)
             if pct != getattr(self, "_last_pct", -1):
+                # 进度条本身语义不变（百分比）；这里只补阶段与计数两行文字，
+                # 并按百分点节流，避免刷爆 UI 线程。
                 self._last_pct = pct
+                self.ui_call(self._set_stage,
+                             "阶段：翻译中 %d/%d · %s"
+                             % (min(idx, total), total, d.get("file", "")))
+                self.ui_call(self._set_count, min(idx, total), total,
+                             d.get("unit", ""))
                 self.ui_call(self._set_progress, pct)
 
     def _run_done(self):
         self.tr_cancel = None
         self._last_pct = -1
         self._set_progress(0)
+        self._set_stage("阶段：完成")
         self.ui.set_enabled(self.btn_run, True)
         self.ui.set_enabled(self.btn_run_cancel, False)
 
