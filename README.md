@@ -76,9 +76,9 @@
 - 插件版本：`ai_translate 2.0.0`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `0045034360d2f0702104b1aedff2131a7934d94ea90f5732e610b5024659de9b`
+  `e70bf6ac08e9405724b0656936403656eea7f68f9c8bb3b9544e50cf5c9dbabf`
 - 当前 zip SHA-256：
-  `6587e0d2f57f088117485d42cb891ca46fb6b6ed334698b22283d205621d03b1`
+  `1d53ab978ca465c42b16c498673b2063152af4b359309358cf9a8da68d867333`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。

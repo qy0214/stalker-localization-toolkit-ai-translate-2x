@@ -2416,6 +2416,7 @@ def estimate_vram_mib(model, ctx_per_route, parallel=1, gpu_layers=99):
     16384 token 正好 1024 MiB，与 server 日志一致。读不到 GGUF 结构时
     退回 64 KiB/token 的经验值，并在结果里标注 approx。
     """
+    # 统一用 MiB：权重/KV 都由字节除以 1024²，compute 直接是 MiB。
     out = {"weights": 0, "kv": 0, "compute": 68, "total": 68,
            "approx": True, "ok": False}
     if not model or not os.path.isfile(model):
@@ -2439,13 +2440,15 @@ def estimate_vram_mib(model, ctx_per_route, parallel=1, gpu_layers=99):
         out["approx"] = False
     except Exception:
         per_token = 64 * 1024
-    kv = int(ctx_per_route) * max(1, int(parallel)) * per_token
+    kv_bytes = int(ctx_per_route) * max(1, int(parallel)) * per_token
+    kv = kv_bytes // (1024 * 1024)
     try:
-        weights = os.path.getsize(model) if int(gpu_layers) > 0 else 0
+        weights_bytes = os.path.getsize(model) if int(gpu_layers) > 0 else 0
     except OSError:
-        weights = 0
+        weights_bytes = 0
+    weights = weights_bytes // (1024 * 1024)
     out.update(weights=weights, kv=kv,
-               total=weights + kv + out["compute"] * 1024 * 1024,
+               total=weights + kv + out["compute"],
                ok=True)
     return out
 
@@ -6762,12 +6765,19 @@ class AiTranslateTab(object):
                 count = len(pages)
             self.api.log("AI 翻译界面已分 %s 个页签（①→⑤ + ⑥术语可选）"
                          % count)
-            # 短内容页签不要再被宿主最小高度撑出一大片空白。
-            try:
-                for short_p in (hw_p, rt_p, engine_p, gloss_p):
-                    ui.viewport_set_min_body_height(short_p, 80)
-            except Exception:
-                pass
+            # 短内容页签不要再被宿主最小高度撑出一大片空白：
+            # 真机有 viewport_set_min_body_height/fit_content/sync，逐个都试，
+            # 任一宿主版本缺能力就跳过，绝不影响页面构建。
+            for target in (tabs,) + tuple(pages):
+                try:
+                    ui.viewport_set_min_body_height(target, 80)
+                except Exception:
+                    pass
+                for fn in ("viewport_fit_content", "viewport_sync"):
+                    try:
+                        getattr(ui, fn)(target)
+                    except Exception:
+                        pass
         else:
             hw_p = rt_p = model_p = engine_p = job_p = gloss_p = log_p = p
 
