@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    {
+      "id": "ai_translate",
+      "version": "2.0.1",
+      "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/download/v2.0.1/ai_translate_plugin_v2.0.1_install.zip",
+      "sha256": "555aef58610a091d4b2031fa3ad83e06b81a8ebec7b2f26f25e283d47da7754b",
+      "entry": "plugin.py",
+      "target": "ai_translate",
+      "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
+      "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
+      "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。"
+    }
+  ]
+}

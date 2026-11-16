@@ -71,19 +71,24 @@ def main() -> int:
 
     install_zip = ROOT / "dist" / ("ai_translate_plugin_v%s_install.zip" % version)
     repo_zip = ROOT / "dist" / ("ai_translate_plugin_v%s.zip" % version)
+    # 字段名严格按平台 tools/plugin_manager/main.cpp：
+    #   plugins[] 里每条读 id / version / package / sha256 / entry / target
+    #   package 不以 http 开头时，平台会拼到
+    #   https://raw.githubusercontent.com/ALittleHuman/STALKER-Localization-Toolkit-2.x-Network-Plugin/main/
+    #   entry 是**文件名**（在解压目录里递归按文件名找），找到后其所在目录
+    #   整体替换 plugins/<target>/。
     entry = {
         "id": PLUGIN_ID,
-        "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
         "version": version,
+        "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x"
+                   "/releases/download/v%s/%s" % (version, install_zip.name),
+        "sha256": sha256(install_zip),
+        "entry": "plugin.py",
+        "target": PLUGIN_ID,
+        "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
         "repo": REPO,
         "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，"
                 "CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。",
-        "url": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x"
-               "/releases/download/v%s/%s" % (version, install_zip.name),
-        "sha256": sha256(install_zip),
-        "entry": "ai_translate/plugin.py",
-        "target": PLUGIN_ID,
-        "depends": [],
     }
     print()
     print("版本 %s → %s" % (old, version))

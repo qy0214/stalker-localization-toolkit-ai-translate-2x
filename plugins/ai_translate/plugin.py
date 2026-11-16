@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -8368,6 +8368,7 @@ def register(api):
     ok = api.register_tool(
         "ai_translate", lambda: AiTranslateTab(api, None),
         order=6, subtitle="Hy-MT2 本地离线翻译", title="AI 翻译")
-    api.log("AI 翻译插件 2.0.0 已注册（宿主 UI 门面%s）"
-            % ("" if ok else "，注册被宿主拒绝"))
+    api.log("AI 翻译插件 %s 已注册（宿主 UI 门面%s）"
+            % (PLUGIN_INFO.get("version", "?"),
+               "" if ok else "，注册被宿主拒绝"))
     return ok

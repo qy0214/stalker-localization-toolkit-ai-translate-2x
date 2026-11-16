@@ -1,4 +1,4 @@
-# ai_translate 2.0.0
+# ai_translate 2.0.1
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -61,7 +61,7 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.0.zip` 解压到工具集的 `plugins/` 目录，形成：
+把 `dist/ai_translate_plugin_v2.0.1.zip` 解压到工具集的 `plugins/` 目录，形成：
 
 ```text
 <工具集目录>\
@@ -105,8 +105,8 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.0.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.0_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.1.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.1_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
@@ -115,26 +115,27 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
 | `tools/release_plugin.py` | 发版助手：改版本号 → 重建包 → 打印注册表条目 |
 | `docs/PLUGIN_REGISTRY.md` | 接入平台插件管理（注册表/检查更新/一键安装）说明 |
+| `docs/plugins_entry.ai_translate.json` | 现成的注册表条目（追加进 plugins.json 即可） |
 | `docs/images/` | README 引用的界面截图 |
 | `THIRD_PARTY_NOTICES.md` | 第三方来源、许可状态与致谢 |
 | `.github/workflows/ci.yml` | CI：跑全量测试 + 发布清单门禁 |
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.0`
+- 插件版本：`ai_translate 2.0.1`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `27da94739d2a0903b37f6a5568794eee434af56ce582b1d96da380a78294923a`
+  `8efe87fb14dedd76ca26e1e1466713697af5f065ab6cd8e2320f5e558ba55251`
 - 当前 zip SHA-256：
-  `fce453ccf8317b98e4573543de0f3dfefafdaa876479a58b6a3a97fb34aecb51`
+  `ff33fc9cbacaeab460da022df2f2c184d504e1b360b570c7f5d3c0d122777bfb`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `bb89b19fad059c2d642508740b3019298e8f10d8c0fd542a86b0ec3b7ce31b80`
+  `555aef58610a091d4b2031fa3ad83e06b81a8ebec7b2f26f25e283d47da7754b`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.0.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.1.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
