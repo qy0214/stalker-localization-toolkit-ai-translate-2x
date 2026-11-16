@@ -6646,21 +6646,37 @@ class AiTranslateTab(object):
         threading.Thread(target=work, daemon=True).start()
 
     def _apply_hw(self, hw, silent=False):
-        _label_set(self.hw_label, hw["short"])
+        # 硬件检测是后台回调：当前可能停在任意步骤页，①/②/③的控件未必存在。
+        # 推荐值一律先写缓存；只有控件在当前页时才顺带刷 UI。
+        if getattr(self, "hw_label", None) is not None:
+            _label_set(self.hw_label, hw["short"])
         self._hw_cuda13_ok = bool(hw.get("cuda13_ok"))
         self._hw_vram_mb = int(hw.get("vram") or 0)
         self.refresh_vram_estimate()
         if not self.cfg.get("variant_chosen"):
-            vals = [VARIANT_LABELS[v] for v in VARIANT_ORDER]
-            vi = VARIANT_ORDER.index(hw["variant"])
-            _combo_set(self.variant_combo, vals, vi)
-            self.sel["variant"] = VARIANT_ORDER[vi]
-            self._on_variant(save_chosen=False)
+            vi = VARIANT_ORDER.index(hw["variant"]) \
+                if hw.get("variant") in VARIANT_ORDER else 0
+            v = VARIANT_ORDER[vi]
+            self.sel["variant"] = v
+            self.cfg["variant"] = v
+            vcombo = getattr(self, "variant_combo", None)
+            if vcombo is not None:
+                _combo_set(vcombo,
+                           [VARIANT_LABELS[x] for x in VARIANT_ORDER], vi)
+                self._on_variant(save_chosen=False)
+            else:
+                save_config(self.cfg)
         if not self.cfg.get("tier_chosen"):
-            idx = TIER_ORDER.index(hw["tier"]) if hw["tier"] in TIER_ORDER else 0
-            _combo_set(self.tier_combo, [TIER_SHORT[t] for t in TIER_ORDER], idx)
-            self.sel["tier"] = TIER_ORDER[idx]
-            self._on_tier(save_chosen=False)
+            idx = TIER_ORDER.index(hw["tier"]) if hw.get("tier") in TIER_ORDER else 0
+            t = TIER_ORDER[idx]
+            self.sel["tier"] = t
+            self.cfg["tier"] = t
+            tcombo = getattr(self, "tier_combo", None)
+            if tcombo is not None:
+                _combo_set(tcombo, [TIER_SHORT[x] for x in TIER_ORDER], idx)
+                self._on_tier(save_chosen=False)
+            else:
+                save_config(self.cfg)
         if not silent:
             self.log("硬件：%s" % hw["short"], "ok")
         self.refresh_local_status()

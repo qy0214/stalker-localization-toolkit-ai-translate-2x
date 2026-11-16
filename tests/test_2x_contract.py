@@ -118,6 +118,15 @@ def t_p1(module, api, tab, ok):
     check("P1-13 自选上下文仅自定义模型可用", ctx_ok,
           "tier=%s enabled=%s" % (tier, getattr(tab.ctx_combo, "enabled", None)))
     tab._show_step(start)
+    # 硬件回调可能在任意步骤页返回；控件不在当前页时也不能抛异常。
+    before_var, before_tier = tab.current_variant(), tab.current_tier()
+    tab._apply_hw({"variant": before_var, "tier": before_tier,
+                   "short": "测试显卡", "cuda13_ok": False, "vram": 6000},
+                  silent=True)
+    check("P1-14 硬件回调不依赖当前页控件",
+          tab.current_variant() == before_var and
+          tab.current_tier() == before_tier and
+          getattr(tab, "variant_combo", None) is None)
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──
