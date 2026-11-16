@@ -6789,10 +6789,12 @@ class AiTranslateTab(object):
                 self.ui = ui
             self._page_widgets[key] = list(rec.widgets)
 
-        # 日志栏：只读多行视图；始终可见，追加走 log_view_append（一次一行）
-        self.log_view = ui.log_view(p, 9)
-        for line in list(self.log_lines):
-            ui.log_view_append(self.log_view, line)
+        # 底部固定区：进度条常驻；日志不占页面空间，点按钮弹窗查看。
+        ui.label(p, "进度")
+        self.progress = ui.progress(p)
+        ui.set_progress(self.progress, 0)
+        self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
+        self.log_view = None
 
         # 更新泵：2.x 唯一能把工作线程的操作带回 UI 线程的机制是宿主 QTimer
         # （随 parent 销毁；回调在 UI 线程执行）。
@@ -6962,10 +6964,6 @@ class AiTranslateTab(object):
         self.tm_chk = ui.checkbox(
             p, "重复句精确复用（TM-lite，高重复时自动）", None)
         _chk_set(self.tm_chk, self.flags["tm_lite"])
-
-        # 进度条：下载（按字节）与翻译（按文件）共用；set_progress 只收整数百分比
-        self.progress = ui.progress(p)
-        ui.set_progress(self.progress, 0)
 
         self.btn_run = ui.button(p, "开始翻译", self.on_run)
         self.btn_run_cancel = ui.button(
@@ -8174,10 +8172,22 @@ class AiTranslateTab(object):
             self.tr_cancel.set()
             self.log("正在取消（当前段落翻译完后停止）…", "warn")
 
+    def on_show_log(self):
+        """底部「查看日志」：弹独立对话框，不占用主页面高度。"""
+        lines = list(self.log_lines)[-300:]
+        text = "\n".join(lines) if lines else "(暂无日志；详细运行记录见 logs\\translate_run.log)"
+        try:
+            self.ui.ask_yes_no("AI 翻译日志（最近 300 行）", text)
+        except Exception as exc:
+            try:
+                self.api.log("日志弹窗失败：%s: %s" % (type(exc).__name__, exc))
+            except Exception:
+                pass
+
 
 
 def register(api):
-    """2.x 入口：注入 `api.ui` 后注册一个工具页，页内再分 5 个步骤页签。
+    """2.x 入口：注入 `api.ui` 后注册一个工具页，页内按步骤切换显示。
 
     `name` 是插件内唯一 id（ASCII），显示名由 `title` 给；`subtitle` 出现在
     页面标题下方。2.x 的页面外壳（header/card/滚动区）由宿主提供，

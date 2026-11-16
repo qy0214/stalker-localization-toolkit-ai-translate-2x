@@ -83,7 +83,8 @@ def t_p1(module, api, tab, ok):
           repr(tool.get("title")))
     check("P1-5 builder 产出 AiTranslateTab",
           isinstance(tab, module.AiTranslateTab))
-    check("P1-6 注册了日志视图", getattr(tab, "log_view", None) is not None)
+    check("P1-6 注册了日志弹窗入口",
+          getattr(tab, "btn_show_log", None) is not None)
     check("P1-7 注册了进度条", getattr(tab, "progress", None) is not None)
     check("P1-8 起了宿主定时器泵",
           any(ms == 30 for _p, ms, _c in api.ui.timers),
@@ -182,14 +183,14 @@ def t_p3(module, api, tab):
     check("P3-1 worker 直接写控件被闸门拦住",
           len(api.ui.warns) == 1, str(api.ui.warns))
     check("P3-2 被拦的 set_text 返回 None", out and out[0][1] is None)
-    before = len(tab.log_view.logs)
+    before = len(tab.log_lines)
     check("P3-3 ui_call 在 worker 里只入队", tab._q.qsize() >= 1,
           "qsize=%d" % tab._q.qsize())
-    check("P3-4 入队期间界面日志没被写", len(tab.log_view.logs) == before)
+    check("P3-4 入队期间日志缓冲未更新", len(tab.log_lines) == before)
     api.pump(3)
-    check("P3-5 泵之后日志落到 log_view",
-          any("来自工作线程的一行" in line for line in tab.log_view.logs),
-          str(tab.log_view.logs[-1:]))
+    check("P3-5 泵之后日志落到内存缓冲",
+          any("来自工作线程的一行" in line for line in tab.log_lines),
+          str(tab.log_lines[-1:]))
     check("P3-6 泵把队列抽干", tab._q.qsize() == 0,
           "qsize=%d" % tab._q.qsize())
     # 上面那一条 Warn 是**故意制造**的（验证闸门生效），其后不许再有
@@ -293,15 +294,28 @@ def t_p7(module, api, tab):
 # ── P8 日志 ────────────────────────────────────────────────
 def t_p8(module, api, tab):
     before_host = len(api.logs)
-    before_view = len(tab.log_view.logs)
+    before_lines = len(tab.log_lines)
     tab.log("契约测试一行")
     check("P8-1 api.log 单参调用成功", len(api.logs) == before_host + 1,
           str(api.logs[-1:]))
-    check("P8-2 日志进界面视图", len(tab.log_view.logs) == before_view + 1,
-          str(tab.log_view.logs[-1:]))
-    check("P8-3 行首有时间戳", "契约测试一行" in tab.log_view.logs[-1] and
-          tab.log_view.logs[-1][2] == ":")
+    check("P8-2 日志进内存环形缓冲",
+          len(tab.log_lines) == before_lines + 1 and
+          "契约测试一行" in tab.log_lines[-1])
+    check("P8-3 行首有时间戳",
+          tab.log_lines[-1].startswith(("0", "1", "2")) and
+          tab.log_lines[-1][2] == ":")
     check("P8-4 内存环形缓冲有上限", len(tab.log_lines) <= 400)
+    before_dialogs = len(api.ui.dialogs)
+    tab.on_show_log()
+    last = api.ui.dialogs[-1] if api.ui.dialogs else None
+    check("P8-5 查看日志弹独立窗口",
+          len(api.ui.dialogs) == before_dialogs + 1 and
+          bool(last) and last[0] == "yes_no" and
+          "契约测试一行" in str(last[2]), str(last)[:120])
+    check("P8-6 进度条常驻且不在步骤分组里",
+          getattr(tab, "progress", None) is not None and
+          all(tab.progress not in widgets
+              for widgets in tab._page_widgets.values()))
 
 
 # ── P9 真 WinHTTP 本地回环 ────────────────────────────────
