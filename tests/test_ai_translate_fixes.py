@@ -1638,7 +1638,8 @@ def t34_engine_mem_and_slow_log():
           '"--parallel"' in src and 'str(self.parallel)' in src)
     check("T34-2 子进程已接入 kill-on-close 作业",
           "_assign_server_to_kill_job(self.proc)" in src)
-    src_tab = inspect.getsource(ait.AiTranslateTab.__init__)
+    # 分页后所有跨页初始化统一在 finish_setup（5 页建好后）执行
+    src_tab = inspect.getsource(ait.AiTranslateTab.finish_setup)
     check("T34-3 启动时扫描遗留引擎",
           "_sweep_orphan_servers()" in src_tab)
     src_parse = inspect.getsource(ait.TranslationJob._parse)

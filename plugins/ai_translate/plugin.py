@@ -6458,11 +6458,10 @@ class AiTranslateTab(object):
         except Exception:
             self.parser = None
 
-        self._build()
-        self.refresh_gloss_view()
-        self.refresh_local_status()
-        self.on_hw_check(silent=True)
-        self._sweep_orphan_servers()
+        # 2.x 没有可用的 tabs/viewport：改为注册 5 个宿主工具页。
+        # 页面 builder 各自调用 build_page(step)，共享本对象的状态与控件句柄。
+        self._built_steps = set()
+        self._setup_done = False
 
     def _sweep_orphan_servers(self):
         """后台清理上次异常退出遗留的引擎（只认本插件 exe + 父进程已死）。
@@ -6602,31 +6601,62 @@ class AiTranslateTab(object):
     def dl_log(self, msg):
         self.log(msg)
 
-    def _build(self):
+    def build_page(self, step, parent=None):
+        """给 5 个宿主工具页各造各的控件；状态与逻辑全部共享。
+
+        2.x 的 `api.ui` 没有 tabs/viewport/split（宿主外壳已经包了滚动区），
+        所以按「① 硬件 → ⑤ 翻译」注册 5 个工具页，每页只放对应步骤的内容。
+        builder 必须零参；`parent=None` 由宿主 `resolve_parent()` 回落到当前页。
+        """
         ui = self.ui
-        p = self.parent
+        p = parent
+        heads = {
+            "hw": "AI 离线翻译（本地推理，不联网翻译）· ① 硬件检测",
+            "runtime": "AI 离线翻译 · ② 运行环境（显卡驱动 / CPU）",
+            "model": "AI 离线翻译 · ③ 离线模型（四选一）",
+            "engine": "AI 离线翻译 · ④ 启动引擎",
+            "job": "AI 离线翻译 · ⑤ 翻译（自动识别全部格式，输出保持原目录结构）",
+        }
+        if step not in heads:
+            return self
+        ui.label(p, heads[step])
 
-        ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 按①→⑤操作")
+        if step == "hw":
+            self._build_step_hw(p)
+            # 更新泵只需一个；挂在首页，随页面销毁。2.x 唯一能把工作线程的
+            # 操作带回 UI 线程的机制是宿主 QTimer，回调在 UI 线程执行。
+            try:
+                ui.timer(p, 30, self._pump)
+            except Exception:
+                pass
+        elif step == "runtime":
+            self._build_step_runtime(p)
+        elif step == "model":
+            self._build_step_model(p)
+        elif step == "engine":
+            self._build_step_engine(p)
+        else:
+            self._build_step_job(p)
+            # 日志栏：只读多行视图；追加走 log_view_append（一次一行，不重写全文）
+            self.log_view = ui.log_view(p, 9)
+            for line in list(self.log_lines):
+                ui.log_view_append(self.log_view, line)
 
-        self._build_step_hw(p)
-        self._build_step_runtime(p)
-        self._build_step_model(p)
-        self._build_step_job(p)
+        self._built_steps.add(step)
+        if len(self._built_steps) >= 5 and not self._setup_done:
+            self.finish_setup()
+        return self
 
-        # 日志栏：只读多行视图；追加走 log_view_append（一次一行，不重写全文）
-        self.log_view = ui.log_view(p, 9)
-        for line in list(self.log_lines):
-            ui.log_view_append(self.log_view, line)
-
-        # 更新泵：2.x 唯一能把工作线程的操作带回 UI 线程的机制是宿主 QTimer
-        # （随 parent 销毁；回调在 UI 线程执行）。
-        try:
-            ui.timer(p, 30, self._pump)
-        except Exception:
-            pass
-
+    def finish_setup(self):
+        """5 页都建好后才做跨页刷新；避免某页控件尚未存在时被回调读到。"""
+        self._setup_done = True
         if self.parser is None:
             self.log("XML 解析模块加载失败（assets/xray_pkg.zip 缺失？）", "err")
+        self.refresh_gloss_view()
+        self._on_tier(save_chosen=False)
+        self.refresh_local_status()
+        self.on_hw_check(silent=True)
+        self._sweep_orphan_servers()
 
     def _section(self, p, text):
         """分节标题。2.x 的 label style 只是挂了个属性（没有对应 QSS 规则），
@@ -6692,11 +6722,13 @@ class AiTranslateTab(object):
             p, "选择模型", self.on_choose_model)
         self.btn_choose_exe = ui.button(p, "自选 exe", self.on_choose_exe)
 
+    def _build_step_engine(self, p):
+        ui = self.ui
         self._section(p, "④ 启动引擎")
         self.btn_start = ui.button(p, "启动引擎", self.on_start)
         self.btn_stop = ui.button(p, "停止", self.on_stop, enabled=False)
         self.engine_status = ui.label(p, "引擎未启动")
-        self._on_tier()
+        ui.label(p, "引擎就绪后，到「⑤ 翻译」页开始处理。")
 
     def _build_step_job(self, p):
         ui = self.ui
@@ -7889,22 +7921,35 @@ class AiTranslateTab(object):
 
 
 def register(api):
-    """2.x 入口：注入 `api.ui` 后注册一个工具页。
+    """2.x 入口：注入 `api.ui` 后注册 5 个工具页（① → ⑤）。
 
-    `name` 是插件内唯一 id（ASCII），显示名由 `title` 给；`subtitle` 出现在
-    页面标题下方。2.x 的页面外壳（header/card/滚动区）由宿主提供，
-    这里只负责往 `parent` 里按顺序放控件。
+    2.x 的 `api.ui` 没有 tabs/viewport/split，宿主外壳已带滚动区；把步骤拆成
+    5 个 `register_tool` 页，用户用宿主原生页签切换，不再一页拖到底。
+    `name` 是插件内唯一 id（ASCII），显示名由 `title` 给。所有页共享同一个
+    `AiTranslateTab` 实例，配置/引擎/日志/跨线程队列都不会各自为政。
     """
     global _UI
     _UI = api.ui
     # ★ 真机 BETA.246 实证：宿主 `wrap_python_builder()` 调的是 `kept()`（零参），
     #   `parent` 由 `UiPanelScope(parent)` 隐式设为“当前面板根”；Python builder
-    #   多收一个位置参数会直接 TypeError ⇒ 页面变占位页（日志：builder 抛异常）。
-    #   控件照官方插件惯例传 `parent=None`，宿主 `resolve_parent()` 会回落到
-    #   当前面板根（QTimer 也据此绑定到页面，随页销毁）。
-    ok = api.register_tool(
-        "ai_translate", lambda: AiTranslateTab(api, None),
-        order=6, subtitle="Hy-MT2 本地离线翻译", title="AI 翻译")
-    api.log("AI 翻译插件 2.0.0 已注册（宿主 UI 门面%s）"
-            % ("" if ok else "，注册被宿主拒绝"))
+    #   多收一个位置参数会直接 TypeError ⇒ 页面变占位页。控件照官方插件惯例传
+    #   `parent=None`，宿主 `resolve_parent()` 会回落到当前面板根。
+    shared = AiTranslateTab(api, None)
+    steps = (
+        ("hw", "① 硬件"),
+        ("runtime", "② 环境"),
+        ("model", "③ 模型"),
+        ("engine", "④ 引擎"),
+        ("job", "⑤ 翻译"),
+    )
+    results = []
+    for i, (key, label) in enumerate(steps):
+        results.append(bool(api.register_tool(
+            "ai_translate_s%d" % (i + 1),
+            lambda key=key: shared.build_page(key, None),
+            order=6 + i, subtitle="Hy-MT2 本地离线翻译",
+            title="AI 翻译 " + label)))
+    ok = all(results)
+    api.log("AI 翻译插件 2.0.0 已注册 %d/5 个步骤页（宿主 UI 门面%s）"
+            % (sum(results), "" if ok else "，部分被宿主拒绝"))
     return ok

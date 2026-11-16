@@ -62,8 +62,10 @@ def make_tab(module):
     module._kill_orphan_servers = lambda cfg=None: []
     api = FakeApi()
     ok = api.install(module)
-    tab = api.build()
-    # 让 __init__ 里触发的后台线程（硬件检测/孤儿清理）跑完并回主线程执行
+    # 5 个步骤页都要由宿主 builder 建一遍；它们共享同一个状态对象。
+    pages = [api.build(i) for i in range(len(api.tools))]
+    tab = pages[0]
+    # 让 finish_setup 触发的后台线程（硬件检测/孤儿清理）跑完并回主线程执行
     for worker in threading.enumerate():
         if worker is not threading.current_thread():
             worker.join(timeout=10)
@@ -74,12 +76,13 @@ def make_tab(module):
 # ── P1 注册与构建 ───────────────────────────────────────────
 def t_p1(module, api, tab, ok):
     check("P1-1 register 返回 True", ok)
-    check("P1-2 只注册一个工具页", len(api.tools) == 1,
+    check("P1-2 注册 5 个步骤工具页", len(api.tools) == 5,
           "tools=%d" % len(api.tools))
     tool = api.tools[0] if api.tools else {}
     check("P1-3 id 为 ASCII 且非空",
           bool(tool.get("name")) and tool["name"].isascii())
-    check("P1-4 显示名走 title", tool.get("title") == "AI 翻译",
+    check("P1-4 显示名走 title",
+          str(tool.get("title", "")).startswith("AI 翻译 "),
           repr(tool.get("title")))
     check("P1-5 builder 产出 AiTranslateTab",
           isinstance(tab, module.AiTranslateTab))
@@ -99,6 +102,15 @@ def t_p1(module, api, tab, ok):
     src = open(PLUGIN, encoding="utf-8").read()
     for name in ("viewport(", "split(", "tabs("):
         check("P1-9 页面不使用 ui.%s" % name.rstrip("("), "ui." + name not in src)
+    check("P1-11 五个步骤页标题按 ①→⑤ 排列",
+          [t.get("title") for t in api.tools] == [
+              "AI 翻译 ① 硬件", "AI 翻译 ② 环境", "AI 翻译 ③ 模型",
+              "AI 翻译 ④ 引擎", "AI 翻译 ⑤ 翻译"],
+          str([t.get("title") for t in api.tools]))
+    check("P1-12 五个步骤页 id 唯一且 ASCII",
+          len({t.get("name") for t in api.tools}) == 5 and
+          all(str(t.get("name")).isascii() for t in api.tools),
+          str([t.get("name") for t in api.tools]))
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──

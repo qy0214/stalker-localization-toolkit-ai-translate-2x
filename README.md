@@ -33,8 +33,10 @@
                 THIRD_PARTY_NOTICES.txt
 ```
 
-重启工具集后，在工具页中打开「AI 翻译」。本插件是**目录插件**，入口文件名固定为
-`plugin.py`，目录名 `ai_translate` 即插件 id。
+重启工具集后，按步骤打开 5 个工具页：「AI 翻译 ① 硬件 / ② 环境 / ③ 模型 /
+④ 引擎 / ⑤ 翻译」。五个页面共享同一份配置、引擎和日志，不用再在一页里
+不停下拉。本插件是**目录插件**，入口文件名固定为 `plugin.py`，目录名
+`ai_translate` 即插件 id。
 
 插件包**不包含**模型、运行库、配置与日志。首次运行按硬件选择档位并下载；下载后
 按官方 SHA-256 校验，文件不一致就删除并自动换下一个源。
@@ -73,9 +75,9 @@
 - 插件版本：`ai_translate 2.0.0`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `5aee0a05c0b3a3f1d8afe681887fa508c2bdae2a98310227e4364a6741dd8204`
+  `0f6f8eeeb5527eee869cb4acd5b878f9f881c1f6d834f4492600bec631b1e5c5`
 - 当前 zip SHA-256：
-  `523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f`
+  `180820e24edc70e6990412cf266d95c5b9f560f893a55c8e62596acceb6c1b9c`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
@@ -103,7 +105,7 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 55 项、功能回归 353 项、分享包 28 项，全部通过。
+当前全量测试：契约 57 项、功能回归 353 项、分享包 28 项，全部通过。
 
 ## 许可
 

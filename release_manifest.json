@@ -1,15 +1,17 @@
 {
-  "generated_at": "2026-11-16T18:31:21+08:00",
+  "generated_at": "2026-11-16T18:55:12+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "0555d6d",
+    "commit": "d13b87b",
     "dirty": true,
     "dirty_files": [
-      "M dist/ai_translate_plugin_v2.0.0.zip",
+      "M README.md",
+      " M dist/ai_translate_plugin_v2.0.0.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_2x_contract.py"
+      " M tests/test_2x_contract.py",
+      " M tests/test_ai_translate_fixes.py"
     ]
   },
   "versions": {
@@ -23,15 +25,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 340627,
-      "sha256": "5aee0a05c0b3a3f1d8afe681887fa508c2bdae2a98310227e4364a6741dd8204",
+      "size": 342924,
+      "sha256": "0f6f8eeeb5527eee869cb4acd5b878f9f881c1f6d834f4492600bec631b1e5c5",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1031169,
+      "size": 1033466,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -39,8 +41,8 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.0.zip",
       "exists": true,
-      "size": 350316,
-      "sha256": "523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f",
+      "size": 351093,
+      "sha256": "180820e24edc70e6990412cf266d95c5b9f560f893a55c8e62596acceb6c1b9c",
       "note": "当前发布包"
     },
     {
@@ -78,7 +80,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.0.zip",
-    "sha256": "523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f",
+    "sha256": "180820e24edc70e6990412cf266d95c5b9f560f893a55c8e62596acceb6c1b9c",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -272,6 +274,6 @@
   },
   "tracked": {
     "files": 19,
-    "bytes": 1666999
+    "bytes": 1670899
   }
 }
