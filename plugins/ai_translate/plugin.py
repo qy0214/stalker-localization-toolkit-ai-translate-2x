@@ -6779,15 +6779,18 @@ class AiTranslateTab(object):
         self.step_combo = ui.combo(p, labels, on_change=self._on_step)
         _combo_set(self.step_combo, labels, 0)
 
+        self._builders = {
+            "hw": self._build_step_hw,
+            "runtime": self._build_step_runtime,
+            "model": self._build_step_model,
+            "engine": self._build_step_engine,
+            "job": self._build_step_job,
+            "glossary": self._build_step_glossary,
+        }
+        # 只保留当前步骤的控件：切页时先存配置，再 destroy 旧控件、重建新页。
+        # 这样既紧凑，又不会因 set_visible 的布局残留导致选项重叠。
         self._page_widgets = {}
-        for key, _label in steps:
-            rec = _WidgetRecorder(ui)
-            self.ui = rec
-            try:
-                getattr(self, "_build_step_" + key)(p)
-            finally:
-                self.ui = ui
-            self._page_widgets[key] = list(rec.widgets)
+        self._current_step = None
 
         # 底部固定区：进度条常驻；日志不占页面空间，点按钮弹窗查看。
         ui.label(p, "进度")
@@ -6803,7 +6806,6 @@ class AiTranslateTab(object):
         except Exception:
             pass
 
-        self._current_step = "hw"
         self._show_step("hw")
         self.api.log("AI 翻译界面已分 6 步（①→⑤ + ⑥术语可选），"
                      "用「当前步骤」下拉切换")
@@ -6818,15 +6820,38 @@ class AiTranslateTab(object):
                 return
 
     def _show_step(self, step):
-        self._current_step = step
+        if step == getattr(self, "_current_step", None):
+            return
         ui = self.ui
-        for key, widgets in getattr(self, "_page_widgets", {}).items():
-            visible = (key == step)
-            for w in widgets:
-                try:
-                    ui.set_visible(w, visible)
-                except Exception:
-                    pass
+        # 切走前先落盘当前页的控件值，destroy 后这些引用就失效了。
+        try:
+            self._persist_cfg()
+        except Exception:
+            pass
+        old_widgets = list(getattr(self, "_page_widgets", {}).pop(
+            self._current_step, ()))
+        for w in old_widgets:
+            try:
+                ui.destroy(w)
+            except Exception:
+                pass
+        for attr, value in list(self.__dict__.items()):
+            if any(value is w for w in old_widgets):
+                setattr(self, attr, None)
+
+        rec = _WidgetRecorder(ui)
+        self.ui = rec
+        try:
+            self._builders[step](self.parent)
+        finally:
+            self.ui = ui
+        self._page_widgets[step] = list(rec.widgets)
+        self._current_step = step
+
+        if step == "glossary":
+            self.refresh_gloss_view()
+        self._on_tier(save_chosen=False)
+        self.refresh_local_status()
         for fn in ("viewport_fit_content", "viewport_sync"):
             try:
                 getattr(ui, fn)(self.parent)
@@ -7163,16 +7188,19 @@ class AiTranslateTab(object):
         def upd():
             if getattr(self, "model_box", None) is not None:
                 _entry_set(self.model_box, model or "")
-            if self.server and self.server.is_running():
-                _label_set(self.engine_status, "运行中（端口 %d）"
-                           % self.server.port)
-            else:
-                bits = ["模型就绪" if model else "模型缺失",
-                        "运行库就绪" if exe else "运行库缺失"]
-                _label_set(self.engine_status,
-                           "未启动（%s）" % " · ".join(bits))
-            env = ("运行库已装 · %s" % _DATA_ROOT) if exe else "运行库未安装"
-            _label_set(self.env_label, env)
+            eng = getattr(self, "engine_status", None)
+            if eng is not None:
+                if self.server and self.server.is_running():
+                    _label_set(eng, "运行中（端口 %d）" % self.server.port)
+                else:
+                    bits = ["模型就绪" if model else "模型缺失",
+                            "运行库就绪" if exe else "运行库缺失"]
+                    _label_set(eng, "未启动（%s）" % " · ".join(bits))
+            env_w = getattr(self, "env_label", None)
+            if env_w is not None:
+                env = ("运行库已装 · %s" % _DATA_ROOT) if exe \
+                    else "运行库未安装"
+                _label_set(env_w, env)
             # 控件读值只能在 UI 线程做：一并放进 upd，工作线程调用时也安全
             try:
                 self._persist_cfg()
@@ -7199,9 +7227,12 @@ class AiTranslateTab(object):
 
     def _persist_cfg(self):
         # 控件 → 缓存 → config.json。本方法只在 UI 线程执行（由 ui_call 保证）。
-        self.sel["tier"] = _tier_of_label(_combo_get(self.tier_combo))
-        self.sel["variant"] = _variant_of_label(
-            _combo_get(self.variant_combo))
+        # 分页会销毁非当前步骤的控件：缺失的控件不要覆盖已有缓存。
+        if getattr(self, "tier_combo", None) is not None:
+            self.sel["tier"] = _tier_of_label(_combo_get(self.tier_combo))
+        if getattr(self, "variant_combo", None) is not None:
+            self.sel["variant"] = _variant_of_label(
+                _combo_get(self.variant_combo))
         self.cfg["tier"] = self.sel["tier"]
         self.cfg["variant"] = self.sel["variant"]
         par_text = _combo_get(getattr(self, "parallel_combo", None))
@@ -7210,32 +7241,37 @@ class AiTranslateTab(object):
                 self.sel["parallel"] = n
                 break
         self.cfg["parallel"] = self.current_parallel()
-        try:
-            self.cfg["in_dir"] = _entry_get(self.in_box)
-            self.cfg["out_dir"] = _entry_get(self.out_box)
-        except Exception:
-            pass
-        lang = _combo_get(self.lang_combo)
-        self.sel["lang"] = re.split(r"[\s（(]", lang, 1)[0] or "auto"
-        self.cfg["src_lang"] = self.sel["lang"]
-        mode_text = _combo_get(self.mode_combo)
-        for k in MODE_ORDER:
-            if mode_text.startswith(k):
-                self.cfg["mode"] = k
-                break
-        self.sel["mode"] = self.cfg["mode"]
-        self._mode_plain = self.cfg["mode"]
-        self.flags["glossary_force"] = _chk_get(self.force_chk)
-        for key, widget in (
-                ("reference_layer", self.ref_chk),
-                ("copy_reference", self.copy_ref_chk),
-                ("only_referenced", self.only_ref_chk),
-                ("protect_proper_v2", self.protect_chk),
-                ("preview_reference", self.preview_chk),
-                ("translate_literals", self.literal_chk),
-                ("session_glossary", self.session_chk),
-                ("tm_lite", self.tm_chk)):
-            self.flags[key] = _chk_get(widget)
+        for key, attr in (("in_dir", "in_box"), ("out_dir", "out_box")):
+            w = getattr(self, attr, None)
+            if w is not None:
+                self.cfg[key] = _entry_get(w)
+        w = getattr(self, "lang_combo", None)
+        if w is not None:
+            lang = _combo_get(w)
+            self.sel["lang"] = re.split(r"[\s（(]", lang, 1)[0] or "auto"
+            self.cfg["src_lang"] = self.sel["lang"]
+        w = getattr(self, "mode_combo", None)
+        if w is not None:
+            mode_text = _combo_get(w)
+            for k in MODE_ORDER:
+                if mode_text.startswith(k):
+                    self.cfg["mode"] = k
+                    break
+            self.sel["mode"] = self.cfg["mode"]
+            self._mode_plain = self.cfg["mode"]
+        for key, attr in (
+                ("glossary_force", "force_chk"),
+                ("reference_layer", "ref_chk"),
+                ("copy_reference", "copy_ref_chk"),
+                ("only_referenced", "only_ref_chk"),
+                ("protect_proper_v2", "protect_chk"),
+                ("preview_reference", "preview_chk"),
+                ("translate_literals", "literal_chk"),
+                ("session_glossary", "session_chk"),
+                ("tm_lite", "tm_chk")):
+            w = getattr(self, attr, None)
+            if w is not None:
+                self.flags[key] = _chk_get(w)
         self.cfg.update(self.flags)
         try:
             self.cfg["prompt_extra"] = _multiline_get(
@@ -7264,7 +7300,8 @@ class AiTranslateTab(object):
         n = len(self.gloss_user)
 
         def upd():
-            _label_set(self.gloss_count, "共 %d 条" % n)
+            if getattr(self, "gloss_count", None) is not None:
+                _label_set(self.gloss_count, "共 %d 条" % n)
         self.ui_call(upd)
 
     def on_gloss_add(self):

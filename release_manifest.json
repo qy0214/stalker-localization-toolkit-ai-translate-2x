@@ -1,15 +1,16 @@
 {
-  "generated_at": "2026-11-16T19:29:31+08:00",
+  "generated_at": "2026-11-16T19:36:00+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "a29dfbb",
+    "commit": "b3e83b8",
     "dirty": true,
     "dirty_files": [
       "M README.md",
       " M dist/ai_translate_plugin_v2.0.0.zip",
       " M plugins/ai_translate/plugin.py",
+      " M tests/fake_host.py",
       " M tests/test_2x_contract.py"
     ]
   },
@@ -24,15 +25,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 353184,
-      "sha256": "57f489002b7069d89913c0889877350fc5aed5658edd72dabd25c1432dac5965",
+      "size": 354778,
+      "sha256": "f0697fb61371f88578ea45bb827908a190122939d60fccdc0b6cbf15a26d7d95",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1043726,
+      "size": 1045320,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -40,8 +41,8 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.0.zip",
       "exists": true,
-      "size": 354238,
-      "sha256": "48fcfbbb65cc57f827728fb9554afb736343baddfde9c0202e5e0a35933e9e47",
+      "size": 354662,
+      "sha256": "aed8f6ae50636cd2947160e4c55456ea684f07ada78e82be4f50a7ff45df9713",
       "note": "当前发布包"
     },
     {
@@ -79,7 +80,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.0.zip",
-    "sha256": "48fcfbbb65cc57f827728fb9554afb736343baddfde9c0202e5e0a35933e9e47",
+    "sha256": "aed8f6ae50636cd2947160e4c55456ea684f07ada78e82be4f50a7ff45df9713",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -273,6 +274,6 @@
   },
   "tracked": {
     "files": 19,
-    "bytes": 1687524
+    "bytes": 1690782
   }
 }

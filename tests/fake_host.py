@@ -228,6 +228,14 @@ class FakeUi(object):
             widget.visible = bool(visible)
         return None
 
+    def destroy(self, widget):
+        if not self._gate("destroy"):
+            return None
+        if widget is not None:
+            widget.alive_flag = False
+            widget.visible = False
+        return None
+
     def set_progress(self, widget, percent):
         if not self._gate("set_progress"):
             return None

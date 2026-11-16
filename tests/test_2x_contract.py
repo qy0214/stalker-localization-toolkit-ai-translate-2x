@@ -106,14 +106,18 @@ def t_p1(module, api, tab, ok):
     check("P1-11 步骤下拉含 ①→⑤ + ⑥术语可选",
           list(getattr(tab.step_combo, "items", [])) == labels,
           str(getattr(tab.step_combo, "items", None)))
-    groups = getattr(tab, "_page_widgets", {})
-    check("P1-12 六组控件分组且默认只显示①",
-          len(groups) == 6 and
-          all(len(v) > 0 for v in groups.values()) and
-          all(getattr(w, "visible", False) for w in groups.get("hw", [])) and
-          not any(getattr(w, "visible", False)
-                  for w in groups.get("engine", [])),
+    groups = dict(getattr(tab, "_page_widgets", {}))
+    check("P1-12 只保留当前步骤控件",
+          list(groups.keys()) == ["hw"] and len(groups["hw"]) > 0,
           str({k: len(v) for k, v in groups.items()}))
+    start = tab._current_step
+    tab._show_step("model")
+    tier = tab.current_tier()
+    ctx_ok = (getattr(tab.ctx_combo, "enabled", False) ==
+              (tier == "custom"))
+    check("P1-13 自选上下文仅自定义模型可用", ctx_ok,
+          "tier=%s enabled=%s" % (tier, getattr(tab.ctx_combo, "enabled", None)))
+    tab._show_step(start)
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──
@@ -203,6 +207,7 @@ def t_p3(module, api, tab):
 # ── P4 下拉缓存（无 set_index 的绕行） ─────────────────────
 def t_p4(module, api, tab):
     labels = [module.TIER_SHORT[t] for t in module.TIER_ORDER]
+    tab._show_step("model")
     target = module.TIER_ORDER.index("7b")
     module._combo_set(tab.tier_combo, labels, target)
     got = module._UI.combo_value(tab.tier_combo)
@@ -213,6 +218,12 @@ def t_p4(module, api, tab):
           tab.sel["tier"])
     check("P4-3 current_tier 读缓存", tab.current_tier() == "7b")
 
+    module._combo_set(tab.ctx_combo, ["4096", "8192", "16384", "32768"], 2)
+    tab._on_custom_ctx(module._UI.combo_value(tab.ctx_combo))
+    check("P4-5 自选上下文写回", tab.sel["ctx"] == "16384" and
+          tab.cfg.get("custom_ctx") == 16384, str(tab.sel.get("ctx")))
+
+    tab._show_step("runtime")
     vlabels = [module.VARIANT_LABELS[v] for v in module.VARIANT_ORDER]
     vi = module.VARIANT_ORDER.index("vulkan")
     module._combo_set(tab.variant_combo, vlabels, vi)
@@ -220,21 +231,19 @@ def t_p4(module, api, tab):
     check("P4-4 后端下拉映射正确", tab.current_variant() == "vulkan",
           tab.current_variant())
 
-    module._combo_set(tab.ctx_combo, ["4096", "8192", "16384", "32768"], 2)
-    tab._on_custom_ctx(module._UI.combo_value(tab.ctx_combo))
-    check("P4-5 自选上下文写回", tab.sel["ctx"] == "16384" and
-          tab.cfg.get("custom_ctx") == 16384, str(tab.sel.get("ctx")))
-
 
 # ── P5 _persist_cfg 只读缓存并落盘 ─────────────────────────
 def t_p5(module, api, tab):
+    tab._show_step("job")
     module._UI.set_text(tab.in_box, r"D:\gamedata")
     module._UI.set_text(tab.out_box, r"D:\out")
     module._UI.set_checked(tab.ref_chk, False)
     module._UI.set_checked(tab.tm_chk, False)
-    module._UI.set_text(tab.extra_prompt, "测试提示词")
     module._UI.combo_set_items(tab.mode_combo,
                                [module.MODE_LABELS[m] for m in module.MODE_ORDER])
+    tab._persist_cfg()
+    tab._show_step("glossary")
+    module._UI.set_text(tab.extra_prompt, "测试提示词")
     tab._persist_cfg()
     check("P5-1 输入目录落 cfg", tab.cfg["in_dir"] == r"D:\gamedata",
           tab.cfg.get("in_dir"))
@@ -250,12 +259,14 @@ def t_p5(module, api, tab):
 
 # ── P6 按钮/进度状态机 ─────────────────────────────────────
 def t_p6(module, api, tab):
+    tab._show_step("engine")
     tab._engine_ui(True)
     check("P6-1 引擎运行时禁用「启动」", tab.btn_start.enabled is False)
     check("P6-2 引擎运行时启用「停止」", tab.btn_stop.enabled is True)
     tab._engine_ui(False)
     check("P6-3 引擎停止后恢复", tab.btn_start.enabled is True and
           tab.btn_stop.enabled is False)
+    tab._show_step("job")
 
     tab._set_progress(37)
     check("P6-4 进度条写到 37", api.ui.progress_value(tab.progress) == 37,
@@ -272,6 +283,7 @@ def t_p6(module, api, tab):
 
 # ── P7 对话框参数形状 ──────────────────────────────────────
 def t_p7(module, api, tab):
+    tab._show_step("glossary")
     api.ui.dialog_reply = ""
     tab.on_gloss_import()
     last = api.ui.dialogs[-1] if api.ui.dialogs else None
@@ -281,6 +293,7 @@ def t_p7(module, api, tab):
           isinstance(last[2], list) and all(
               isinstance(x, tuple) and len(x) == 2 for x in last[2]),
           str(last[2] if last else None))
+    tab._show_step("job")
     api.ui.dialog_reply = ""
     tab.on_choose_in()
     last = api.ui.dialogs[-1] if api.ui.dialogs else None
@@ -374,6 +387,7 @@ def t_p9(module):
 # ── P10 多路翻译选项 ──────────────────────────────────────
 def t_p10(module, api, tab):
     import inspect
+    tab._show_step("engine")
     check("P10-1 默认单路且配置合法",
           module.DEFAULT_CONFIG.get("parallel") == 1 and
           module.load_config().get("parallel") == 1)
@@ -390,6 +404,22 @@ def t_p10(module, api, tab):
     src_job = inspect.getsource(module.TranslationJob._run_reference_layer)
     check("P10-6 文本表并发派发",
           "ThreadPoolExecutor(max_workers=self.parallel)" in src_job)
+    # 上下文/风格提示是线程局部的：并发 worker 不能互相覆盖。
+    from concurrent.futures import ThreadPoolExecutor
+    job = object.__new__(module.TranslationJob)
+    job._tls = threading.local()
+    barrier = threading.Barrier(2)
+
+    def hint(tag):
+        job._ctx_hint = tag
+        job._style_hint = tag
+        barrier.wait(timeout=5)
+        return job._ctx_hint, job._style_hint
+
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        got = list(pool.map(hint, ("a", "b")))
+    check("P10-7 并发上下文/风格不串线",
+          sorted(got) == [("a", "a"), ("b", "b")], str(got))
 
 
 def main():
