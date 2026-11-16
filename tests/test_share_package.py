@@ -239,7 +239,11 @@ check("A6 分享包无任何运行产物（bin/models/logs/downloads/__pycache__
 # 早期这里比较 SHARE 与 WORK，而 WORK 默认就等于 SHARE ——
 # 同一个文件和它自己比，永远通过。现在改为：dist/ 里的发布 zip 必须与
 # 分享目录逐字节一致；没有 zip 时明确 SKIP，不再伪装成通过。
-zips = sorted(glob.glob(os.path.join(ROOT, "dist", "ai_translate_plugin_*.zip")))
+# dist 里有两个包：仓库结构的发布 zip 与平台安装包（顶层 ai_translate/）。
+# D1 只比对仓库结构的那个（不带 _install 后缀）。
+zips = sorted(z for z in glob.glob(os.path.join(ROOT, "dist",
+                                               "ai_translate_plugin_*.zip"))
+              if not z.endswith("_install.zip"))
 if not zips:
     skip("D1 发布 zip == 分享目录", "dist/ 下没有 ai_translate_plugin_*.zip")
     skip("D2 插件版本 == zip 文件名版本", "同上")
@@ -262,6 +266,26 @@ else:
     check("D2 插件版本 == zip 文件名版本",
           bool(ver) and ("v%s" % ver) in os.path.basename(zp),
           "%s / %s" % (ver, os.path.basename(zp)))
+
+# 平台安装包：顶层就是 ai_translate/，供平台插件管理器直接解压
+install_zips = sorted(glob.glob(os.path.join(ROOT, "dist",
+                                             "ai_translate_plugin_*_install.zip")))
+if not install_zips:
+    skip("D3 平台安装包顶层是 ai_translate/", "dist/ 下没有 *_install.zip")
+else:
+    import zipfile
+    ip = install_zips[-1]
+    with zipfile.ZipFile(ip) as z:
+        inames = [n for n in z.namelist() if not n.endswith("/")]
+        want = {"ai_translate/" + f.replace(os.sep, "/") for f in files}
+        check("D3a 平台安装包顶层是 ai_translate/", set(inames) == want,
+              "差异：%s" % (sorted(set(inames) ^ want)[:4] or "无"))
+        diffs = []
+        for n in inames:
+            disk = os.path.join(SHARE, n[len("ai_translate/"):])
+            if not os.path.isfile(disk) or z.read(n) != open(disk, "rb").read():
+                diffs.append(n)
+        check("D3b 平台安装包内容 == 分享目录（逐字节）", not diffs, str(diffs[:4]))
 
 # 关键算法在干净包上照样工作（抽样：编码链/术语索引/术语表摊平/随包术语）
 zh = "潜行者，去酒吧找一个神器。"

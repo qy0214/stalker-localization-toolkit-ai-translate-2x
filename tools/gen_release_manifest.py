@@ -83,6 +83,16 @@ def zip_path() -> Path:
     return DIST / ("ai_translate_plugin_v%s.zip" % EXPECTED_PLUGIN_VERSION)
 
 
+def install_zip_path() -> Path:
+    """平台安装就绪包：顶层就是插件目录 ai_translate/。
+
+    平台的插件管理器会把注册表里的安装包解压进 plugins/<id>/，
+    所以给平台的资产用这个结构（顶层 ai_translate/），
+    仓库内部分发仍用 zip_path()（仓库结构原样，便于核对）。
+    """
+    return DIST / ("ai_translate_plugin_v%s_install.zip" % EXPECTED_PLUGIN_VERSION)
+
+
 def fmt_size(n: int) -> str:
     value = float(n)
     for unit in ("B", "KB", "MB", "GB", "TB"):
@@ -249,7 +259,12 @@ def check(name: str, ok: bool | None, detail: str) -> dict[str, Any]:
 
 
 def build_zip() -> None:
-    """可复现 zip：固定时间戳 + 固定条目顺序（同样的输入 ⇒ 同样的哈希）。"""
+    """可复现 zip：固定时间戳 + 固定条目顺序（同样的输入 ⇒ 同样的哈希）。
+
+    产出两个包：
+      * ai_translate_plugin_v<ver>.zip          —— 仓库结构原样（plugins/ai_translate/…）
+      * ai_translate_plugin_v<ver>_install.zip  —— 顶层 ai_translate/，供平台安装器直接解压
+    """
     DIST.mkdir(parents=True, exist_ok=True)
     target = zip_path()
     tmp = target.with_suffix(".zip.tmp")
@@ -261,9 +276,24 @@ def build_zip() -> None:
             info.external_attr = 0o644 << 16
             z.writestr(info, src.read_bytes())
     os.replace(tmp, target)
+
+    install_target = install_zip_path()
+    itmp = install_target.with_suffix(".zip.tmp")
+    prefix = "plugins/ai_translate/"
+    with zipfile.ZipFile(itmp, "w", zipfile.ZIP_DEFLATED) as z:
+        for rel in sorted(ZIP_ENTRIES):
+            src = ROOT / rel
+            arc = "ai_translate/" + rel[len(prefix):]
+            info = zipfile.ZipInfo(arc, date_time=ZIP_DATE)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            z.writestr(info, src.read_bytes())
+    os.replace(itmp, install_target)
+
     # 非当前版本 zip 不留在 dist 里，避免"发布包到底是哪个"的歧义
+    keep = {target, install_target}
     for stale in DIST.glob("ai_translate_plugin_*.zip"):
-        if stale != target:
+        if stale not in keep:
             stale.unlink()
 
 
@@ -280,6 +310,8 @@ def build_manifest() -> dict[str, Any]:
         artifact("插件分享目录", PLUGIN_DIR,
                  "整个目录即分享包（plugin.py + assets/）"),
         artifact("插件发布 zip", zip_file, "当前发布包"),
+        artifact("平台安装包（顶层 ai_translate/）", install_zip_path(),
+                 "给平台插件管理器直接解压用"),
         artifact("术语库（随包，只读）", ASSETS / "glossary_builtin.json",
                  "运行时匹配的内置层"),
         artifact("术语基表（分类）", ASSETS / "stalker_termbase.json", "导入用"),
@@ -477,8 +509,9 @@ def build_manifest() -> dict[str, Any]:
         bool(glossary_count and actual_sum and glossary_count >= actual_sum),
         "%s / %s" % (glossary_count, actual_sum)))
 
+    keep_zips = {zip_file, install_zip_path()}
     stale_zips = sorted(p.name for p in DIST.glob("ai_translate_plugin_*.zip")
-                        if p != zip_file)
+                        if p not in keep_zips)
     checks.append(check(
         "dist 只保留当前版本 zip", not stale_zips,
         ("多余：%s" % stale_zips) if stale_zips else "仅当前版本"))

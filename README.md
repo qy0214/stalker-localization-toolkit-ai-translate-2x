@@ -37,6 +37,28 @@
 - `查看日志（弹窗）`：日志不占页面高度，点击在独立窗口看最近 300 行；
   完整日志见 `%LOCALAPPDATA%\STALKER Localization Toolkit\ai_translate\logs\translate_run.log`。
 
+## 接入平台插件管理（注册表 / 检查更新 / 一键安装）
+
+平台的插件管理器只认一份硬编码的线上注册表
+（`ALittleHuman/STALKER-Localization-Toolkit-2.x-Network-Plugin/main/plugins.json`）。
+**我们的条目还没写进去，所以客户只有平台时在插件管理里搜不到、也装不了。**
+要打通需要三步：
+
+```powershell
+# 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
+python tools/release_plugin.py 2.0.1
+
+# 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
+gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai_translate 2.0.1"
+
+# 3) 把第 1 步打印的条目追加进注册表的 plugins 数组（需要该仓库写权限）
+```
+
+之后客户流程：平台 → 插件管理 → 检查插件更新 → 选中 ai_translate →
+「现在下载并安装」→ 重启工具集即可用（模型与运行库由插件按显卡档位自动下载）。
+
+字段含义、版本号规则与已知限制见 [`docs/PLUGIN_REGISTRY.md`](docs/PLUGIN_REGISTRY.md)。
+
 ## 安装
 
 把 `dist/ai_translate_plugin_v2.0.0.zip` 解压到工具集的 `plugins/` 目录，形成：
@@ -84,12 +106,15 @@
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
 | `dist/ai_translate_plugin_v2.0.0.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.0_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
 | `tests/test_ai_translate_fixes.py` | 功能回归测试 |
 | `tests/test_share_package.py` | 分享包卫生与发布包一致性测试 |
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
+| `tools/release_plugin.py` | 发版助手：改版本号 → 重建包 → 打印注册表条目 |
+| `docs/PLUGIN_REGISTRY.md` | 接入平台插件管理（注册表/检查更新/一键安装）说明 |
 | `docs/images/` | README 引用的界面截图 |
 | `THIRD_PARTY_NOTICES.md` | 第三方来源、许可状态与致谢 |
 | `.github/workflows/ci.yml` | CI：跑全量测试 + 发布清单门禁 |
@@ -99,9 +124,11 @@
 - 插件版本：`ai_translate 2.0.0`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `da79f2dcf3eb83e310bdd0f0d7c581f69c866db188abde599d20a6605aa7fa08`
+  `27da94739d2a0903b37f6a5568794eee434af56ce582b1d96da380a78294923a`
 - 当前 zip SHA-256：
-  `5f6f8a20c289ccc498dec1d82a2016aff4c49806e2fba0aee09773e383605f6e`
+  `fce453ccf8317b98e4573543de0f3dfefafdaa876479a58b6a3a97fb34aecb51`
+- 平台安装包 SHA-256（顶层 `ai_translate/`）：
+  `bb89b19fad059c2d642508740b3019298e8f10d8c0fd542a86b0ec3b7ce31b80`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
@@ -129,7 +156,7 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 66 项、功能回归 356 项、分享包 28 项，全部通过。
+当前全量测试：契约 66 项、功能回归 356 项、分享包 30 项，全部通过。
 
 进度显示：底部进度条保持百分比语义（下载按字节、翻译按本轮处理文件数）；
 旁边两行文字给出直观计数——`阶段：翻译中 12/87 · configs\items\x.ltx` 和
