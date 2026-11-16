@@ -1,18 +1,14 @@
 {
-  "generated_at": "2026-11-16T19:50:56+08:00",
+  "generated_at": "2026-11-16T20:15:48+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "1e1776e",
+    "commit": "70f27da",
     "dirty": true,
     "dirty_files": [
-      "M README.md",
-      " M dist/ai_translate_plugin_v2.0.0.zip",
-      " M plugins/ai_translate/plugin.py",
-      " M tests/fake_host.py",
-      " M tests/test_2x_contract.py",
-      " M tests/test_share_package.py"
+      "M dist/ai_translate_plugin_v2.0.0.zip",
+      " M plugins/ai_translate/plugin.py"
     ]
   },
   "versions": {
@@ -26,15 +22,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 361753,
-      "sha256": "17fa4b30f57c8cc9a0fe595fd18faef4a862af904ae3fb177235f104e1ec6cdb",
+      "size": 362270,
+      "sha256": "513bcba3e8dbb509c35f85f0f29c22edb39d4398dbb68caf2f6dbb952a6003b7",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1052295,
+      "size": 1052812,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -42,8 +38,8 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.0.zip",
       "exists": true,
-      "size": 354788,
-      "sha256": "72618c8aacebb1a70c4a14269140fd093cd00653c1ee06d35ab123b4dd3b46b7",
+      "size": 354973,
+      "sha256": "8a6e19726749140503b03f4601216cf973fda90c19ba59d8994fd9fd2f9e9de0",
       "note": "当前发布包"
     },
     {
@@ -81,7 +77,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.0.zip",
-    "sha256": "72618c8aacebb1a70c4a14269140fd093cd00653c1ee06d35ab123b4dd3b46b7",
+    "sha256": "8a6e19726749140503b03f4601216cf973fda90c19ba59d8994fd9fd2f9e9de0",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -275,6 +271,6 @@
   },
   "tracked": {
     "files": 19,
-    "bytes": 1698388
+    "bytes": 1699130
   }
 }

@@ -6774,6 +6774,12 @@ class AiTranslateTab(object):
                 self.tabs = tabs
                 if not pages or not all(pages):
                     pages = None
+                else:
+                    # 默认停在①（否则宿主会把最后添加的页签设为当前）
+                    try:
+                        ui.tabs_set_current(tabs, 0)
+                    except Exception:
+                        pass
         except Exception as exc:
             pages = None
             try:
@@ -6782,23 +6788,17 @@ class AiTranslateTab(object):
                 pass
 
         if pages:
+            bodies = []
             for (_key, _label), page in zip(steps, pages):
                 try:
                     body = ui.viewport(page)
                 except Exception:
                     body = page
-                try:
-                    ui.viewport_set_min_body_height(body, 80)
-                except Exception:
-                    pass
+                bodies.append(body)
                 getattr(self, "_build_step_" + _key)(body)
-                for fn in ("viewport_fit_content", "viewport_sync"):
-                    try:
-                        getattr(ui, fn)(body)
-                    except Exception:
-                        pass
             self.api.log("AI 翻译界面已分 6 个页签（①→⑤ + ⑥术语可选）")
         else:
+            bodies = []
             for key, _label in steps:
                 getattr(self, "_build_step_" + key)(p)
 
@@ -6808,6 +6808,19 @@ class AiTranslateTab(object):
         ui.set_progress(self.progress, 0)
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
+
+        # 宿主默认把正文最小高度设成 430，短页面因此留一大片空白；
+        # 压到 80 并让视口按内容收缩。
+        for target in [p, p] + list(bodies):
+            try:
+                ui.viewport_set_min_body_height(target, 80)
+            except Exception:
+                pass
+            for fn in ("viewport_fit_content", "viewport_sync"):
+                try:
+                    getattr(ui, fn)(target)
+                except Exception:
+                    pass
 
         # 更新泵：2.x 唯一能把工作线程操作带回 UI 线程的机制是宿主 QTimer。
         try:
