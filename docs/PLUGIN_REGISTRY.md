@@ -139,21 +139,19 @@ gh release create v2.0.1 `
 结论：这份注册表条目解决的是**「同步更新后平台可见 + 已装用户可一键升级」**；
 「从未装过的用户直接在界面里装上」需要平台侧改造。
 
-### 6.1 平台侧最小改动（建议一并提给平台作者）
+### 6.1 平台侧最小改动（已做好补丁，见 `docs/patches/`）
 
-在 `tools/plugin_manager/main.cpp` 的 `ManagerWindow::refresh()` 里，扫完本地之后
-再拉一次注册表，把**本地没有的条目也追加成表格行**（状态列写「可安装」）：
+要��「从未装过的用户直接在界面里装上」，平台侧要动一处：
+在 `tools/plugin_manager/main.cpp` 的「检查插件更新」里，把**本地还没装的注册表条目**
+补成表格行（状态列写「可安装」），其余安装逻辑一行不改。
 
-```cpp
-// 现状：items_ 只来自本地扫描（run_scan）
-// 建议：合并注册表条目，让全新用户也能选中安装
-//   - 拉 https://raw.githubusercontent.com/ALittleHuman/
-//     STALKER-Localization-Toolkit-2.x-Network-Plugin/main/plugins.json
-//   - 对每个 id 不在本地 items_ 里的条目，追加一行：
-//       col0=id, col1=id, col2=name, col3=version, col4="可安装"
-//   - 安装处理逻辑不用改：它本来就按「选中行的 id」去注册表取
-//     package / sha256 / entry / target，整目录替换 plugins/<target>/
-```
+补丁已经写好并附在 [`docs/patches/`](patches/)：
+
+- `docs/patches/plugin_registry_merge.diff` —— 可直接 `git apply` 的补丁
+  （新增 `include/xrkit/core/plugin_registry.h` 纯逻辑头 + 改
+  `tools/plugin_manager/main.cpp` + 新增 `tests/plugin_registry_test.cpp`）；
+- 纯逻辑部分已用本机 MSVC 编译并跑通（`PLUGIN-REGISTRY-TEST ok`）；
+  Qt 外壳部分因本机缺 Qt 6.8.3 SDK 未编译，需在平台作者那边构建验证。
 
 改动后，客户侧就是完整闭环：平台 → 插件管理 → 表格里出现 `ai_translate` →
 「安装所选更新」→ 重启生效，我们这边不需要再改任何代码。
