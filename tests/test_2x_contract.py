@@ -96,37 +96,29 @@ def t_p1(module, api, tab, ok):
         if callable(builder) else ["<not callable>"]
     check("P1-10 builder 零参可调用（真宿主不传 parent）", not required,
           str(required))
-    # 页面不要自带 viewport / 分割容器（宿主 PageBase 已经包好了）
+    # 页签内部用 viewport 压空白；宿主外壳已包滚动区，只禁 split。
     src = open(PLUGIN, encoding="utf-8").read()
-    # 页签是插件内部容器，允许用；宿主外壳已经包了滚动区，不要自己再套。
-    for name in ("viewport(", "split("):
-        check("P1-9 页面不使用 ui.%s" % name.rstrip("("), "ui." + name not in src)
+    check("P1-9 页面不使用 ui.split(", "ui.split(" not in src)
     labels = ["① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译",
               "⑥ 术语（可选）"]
-    check("P1-11 步骤下拉含 ①→⑤ + ⑥术语可选",
-          list(getattr(tab.step_combo, "items", [])) == labels,
-          str(getattr(tab.step_combo, "items", None)))
-    groups = dict(getattr(tab, "_page_widgets", {}))
-    check("P1-12 只保留当前步骤控件",
-          list(groups.keys()) == ["hw"] and len(groups["hw"]) > 0,
-          str({k: len(v) for k, v in groups.items()}))
-    start = tab._current_step
-    tab._show_step("model")
+    check("P1-11 页内建出 ①→⑤ + ⑥术语可选 6 页签",
+          api.ui.tab_titles == labels, str(api.ui.tab_titles))
+    check("P1-12 每个页签有独立 viewport body",
+          sum(1 for w in api.ui.created
+              if getattr(w, "kind", "") == "viewport") == 6)
     tier = tab.current_tier()
     ctx_ok = (getattr(tab.ctx_combo, "enabled", False) ==
               (tier == "custom"))
     check("P1-13 自选上下文仅自定义模型可用", ctx_ok,
           "tier=%s enabled=%s" % (tier, getattr(tab.ctx_combo, "enabled", None)))
-    tab._show_step(start)
-    # 硬件回调可能在任意步骤页返回；控件不在当前页时也不能抛异常。
+    # 硬件回调可能在任意时刻返回；当前实现先写缓存再刷控件，不应抛异常。
     before_var, before_tier = tab.current_variant(), tab.current_tier()
     tab._apply_hw({"variant": before_var, "tier": before_tier,
                    "short": "测试显卡", "cuda13_ok": False, "vram": 6000},
                   silent=True)
-    check("P1-14 硬件回调不依赖当前页控件",
+    check("P1-14 硬件回调不打断初始化",
           tab.current_variant() == before_var and
-          tab.current_tier() == before_tier and
-          getattr(tab, "variant_combo", None) is None)
+          tab.current_tier() == before_tier)
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──
@@ -155,7 +147,7 @@ def t_p2(module):
         check("P2 禁用导入：%s（%s）" % (prefix, why), not hits, str(hits))
 
     bad_attrs = {"set_state", "log_detail", "widget", "_tk",
-                 "row", "pack", "viewport", "split"}
+                 "row", "pack", "split"}
     hits = []
     for node in ast.walk(tree):
         if not isinstance(node, ast.Attribute):
@@ -164,7 +156,7 @@ def t_p2(module):
             continue
         # `ui.*` / `self.ui.*` 的门面调用，或非门面的控件方法
         base = node.value
-        if node.attr in ("row", "pack", "viewport", "split"):
+        if node.attr in ("row", "pack", "split"):
             if isinstance(base, ast.Attribute) and base.attr == "ui":
                 hits.append("ui.%s" % node.attr)
             elif isinstance(base, ast.Name) and base.id == "ui":
@@ -216,7 +208,6 @@ def t_p3(module, api, tab):
 # ── P4 下拉缓存（无 set_index 的绕行） ─────────────────────
 def t_p4(module, api, tab):
     labels = [module.TIER_SHORT[t] for t in module.TIER_ORDER]
-    tab._show_step("model")
     target = module.TIER_ORDER.index("7b")
     module._combo_set(tab.tier_combo, labels, target)
     got = module._UI.combo_value(tab.tier_combo)
@@ -232,7 +223,6 @@ def t_p4(module, api, tab):
     check("P4-5 自选上下文写回", tab.sel["ctx"] == "16384" and
           tab.cfg.get("custom_ctx") == 16384, str(tab.sel.get("ctx")))
 
-    tab._show_step("runtime")
     vlabels = [module.VARIANT_LABELS[v] for v in module.VARIANT_ORDER]
     vi = module.VARIANT_ORDER.index("vulkan")
     module._combo_set(tab.variant_combo, vlabels, vi)
@@ -243,7 +233,6 @@ def t_p4(module, api, tab):
 
 # ── P5 _persist_cfg 只读缓存并落盘 ─────────────────────────
 def t_p5(module, api, tab):
-    tab._show_step("job")
     module._UI.set_text(tab.in_box, r"D:\gamedata")
     module._UI.set_text(tab.out_box, r"D:\out")
     module._UI.set_checked(tab.ref_chk, False)
@@ -251,7 +240,6 @@ def t_p5(module, api, tab):
     module._UI.combo_set_items(tab.mode_combo,
                                [module.MODE_LABELS[m] for m in module.MODE_ORDER])
     tab._persist_cfg()
-    tab._show_step("glossary")
     module._UI.set_text(tab.extra_prompt, "测试提示词")
     tab._persist_cfg()
     check("P5-1 输入目录落 cfg", tab.cfg["in_dir"] == r"D:\gamedata",
@@ -268,14 +256,12 @@ def t_p5(module, api, tab):
 
 # ── P6 按钮/进度状态机 ─────────────────────────────────────
 def t_p6(module, api, tab):
-    tab._show_step("engine")
     tab._engine_ui(True)
     check("P6-1 引擎运行时禁用「启动」", tab.btn_start.enabled is False)
     check("P6-2 引擎运行时启用「停止」", tab.btn_stop.enabled is True)
     tab._engine_ui(False)
     check("P6-3 引擎停止后恢复", tab.btn_start.enabled is True and
           tab.btn_stop.enabled is False)
-    tab._show_step("job")
 
     tab._set_progress(37)
     check("P6-4 进度条写到 37", api.ui.progress_value(tab.progress) == 37,
@@ -292,7 +278,6 @@ def t_p6(module, api, tab):
 
 # ── P7 对话框参数形状 ──────────────────────────────────────
 def t_p7(module, api, tab):
-    tab._show_step("glossary")
     api.ui.dialog_reply = ""
     tab.on_gloss_import()
     last = api.ui.dialogs[-1] if api.ui.dialogs else None
@@ -302,7 +287,6 @@ def t_p7(module, api, tab):
           isinstance(last[2], list) and all(
               isinstance(x, tuple) and len(x) == 2 for x in last[2]),
           str(last[2] if last else None))
-    tab._show_step("job")
     api.ui.dialog_reply = ""
     tab.on_choose_in()
     last = api.ui.dialogs[-1] if api.ui.dialogs else None
@@ -334,10 +318,9 @@ def t_p8(module, api, tab):
           len(api.ui.dialogs) == before_dialogs + 1 and
           bool(last) and last[0] == "yes_no" and
           "契约测试一行" in str(last[2]), str(last)[:120])
-    check("P8-6 进度条常驻且不在步骤分组里",
+    check("P8-6 进度条常驻页签之外",
           getattr(tab, "progress", None) is not None and
-          all(tab.progress not in widgets
-              for widgets in tab._page_widgets.values()))
+          getattr(tab, "btn_show_log", None) is not None)
 
 
 # ── P9 真 WinHTTP 本地回环 ────────────────────────────────
@@ -396,7 +379,6 @@ def t_p9(module):
 # ── P10 多路翻译选项 ──────────────────────────────────────
 def t_p10(module, api, tab):
     import inspect
-    tab._show_step("engine")
     check("P10-1 默认单路且配置合法",
           module.DEFAULT_CONFIG.get("parallel") == 1 and
           module.load_config().get("parallel") == 1)

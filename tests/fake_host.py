@@ -141,6 +141,11 @@ class FakeUi(object):
             return None
         return self._new(Widget("tabs"))
 
+    def viewport(self, parent=None):
+        if not self._gate("viewport"):
+            return None
+        return self._new(Widget("viewport"))
+
     def tabs_add_page(self, tabs, title):
         if not self._gate("tabs_add_page"):
             return None

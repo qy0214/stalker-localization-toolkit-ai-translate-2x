@@ -6399,32 +6399,6 @@ class TranslationJob(object):
 _UI = None          # 2.x: api.ui（register(api) 注入；模块级 helper 用）
 
 
-class _WidgetRecorder(object):
-    """临时包住 api.ui，记录某一步新建的控件，供后续 set_visible 分页切换。
-
-    2.x 的 tabs 容器会把每个子控件拉到约 100px 高，短步骤页出现大片空白；
-    改为所有控件直接落在页面根（紧凑排布），用宿主 `set_visible` 按组显隐。
-    """
-    CREATE = {"label", "button", "checkbox", "combo", "drop_box", "entry",
-              "text", "progress", "log_view"}
-
-    def __init__(self, ui):
-        self._ui = ui
-        self.widgets = []
-
-    def __getattr__(self, name):
-        fn = getattr(self._ui, name)
-        if name not in _WidgetRecorder.CREATE:
-            return fn
-
-        def wrapped(*a, **k):
-            w = fn(*a, **k)
-            if w is not None:
-                self.widgets.append(w)
-            return w
-        return wrapped
-
-
 def _combo_get(w):
     """读下拉当前项文本（2.x `api.ui.combo_value`）。"""
     try:
@@ -6771,15 +6745,16 @@ class AiTranslateTab(object):
         self.log(msg)
 
     def _build(self):
-        """单页内部按步骤分页：控件直接落在页面根，用 set_visible 切组。
+        """单个宿主工具页，内部 6 个页签（①→⑤ + ⑥术语可选）。
 
-        真机 BETA.246 的 `tabs_add_page` 会把每个子控件拉到约 100px 高，
-        短步骤页出现大片空白。改为所有控件紧凑排在页面根，顶部一个
-        「当前步骤」下拉切换 ①→⑥，只显示当前组的控件。
+        真机 BETA.246 的 `tabs_add_page` 直接塞控件会被拉到约 100px 高；
+        每个页签内先放一个 `viewport`，步骤控件落在 viewport body 上，
+        并用 `viewport_set_min_body_height(..., 80)` 压掉空白。
+        进度条和日志入口放在 tabs 外面，切页时常驻底部。
         """
         ui = self.ui
         p = self.parent
-        ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 用「当前步骤」切换 ①→⑥")
+        ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 按 ①→⑥ 操作")
 
         steps = (
             ("hw", "① 硬件"),
@@ -6790,23 +6765,42 @@ class AiTranslateTab(object):
             ("glossary", "⑥ 术语（可选）"),
         )
         self.step_defs = steps
-        labels = [label for _key, label in steps]
-        ui.label(p, "当前步骤")
-        self.step_combo = ui.combo(p, labels, on_change=self._on_step)
-        _combo_set(self.step_combo, labels, 0)
+        pages = None
+        try:
+            tabs = ui.tabs(p)
+            if tabs:
+                pages = [ui.tabs_add_page(tabs, label)
+                         for _key, label in steps]
+                self.tabs = tabs
+                if not pages or not all(pages):
+                    pages = None
+        except Exception as exc:
+            pages = None
+            try:
+                self.api.log("页签创建失败，回退单页：%s" % exc)
+            except Exception:
+                pass
 
-        self._builders = {
-            "hw": self._build_step_hw,
-            "runtime": self._build_step_runtime,
-            "model": self._build_step_model,
-            "engine": self._build_step_engine,
-            "job": self._build_step_job,
-            "glossary": self._build_step_glossary,
-        }
-        # 只保留当前步骤的控件：切页时先存配置，再 destroy 旧控件、重建新页。
-        # 这样既紧凑，又不会因 set_visible 的布局残留导致选项重叠。
-        self._page_widgets = {}
-        self._current_step = None
+        if pages:
+            for (_key, _label), page in zip(steps, pages):
+                try:
+                    body = ui.viewport(page)
+                except Exception:
+                    body = page
+                try:
+                    ui.viewport_set_min_body_height(body, 80)
+                except Exception:
+                    pass
+                getattr(self, "_build_step_" + _key)(body)
+                for fn in ("viewport_fit_content", "viewport_sync"):
+                    try:
+                        getattr(ui, fn)(body)
+                    except Exception:
+                        pass
+            self.api.log("AI 翻译界面已分 6 个页签（①→⑤ + ⑥术语可选）")
+        else:
+            for key, _label in steps:
+                getattr(self, "_build_step_" + key)(p)
 
         # 底部固定区：进度条常驻；日志不占页面空间，点按钮弹窗查看。
         ui.label(p, "进度")
@@ -6815,64 +6809,14 @@ class AiTranslateTab(object):
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
 
-        # 更新泵：2.x 唯一能把工作线程的操作带回 UI 线程的机制是宿主 QTimer
-        # （随 parent 销毁；回调在 UI 线程执行）。
+        # 更新泵：2.x 唯一能把工作线程操作带回 UI 线程的机制是宿主 QTimer。
         try:
             ui.timer(p, 30, self._pump)
         except Exception:
             pass
-
-        self._show_step("hw")
-        self.api.log("AI 翻译界面已分 6 步（①→⑤ + ⑥术语可选），"
-                     "用「当前步骤」下拉切换")
+        self._on_tier(save_chosen=False)
         if self.parser is None:
             self.log("XML 解析模块加载失败（assets/xray_pkg.zip 缺失？）", "err")
-
-    def _on_step(self, value=None):
-        text = str(value or "")
-        for key, label in getattr(self, "step_defs", ()):
-            if text.startswith(label):
-                self._show_step(key)
-                return
-
-    def _show_step(self, step):
-        if step == getattr(self, "_current_step", None):
-            return
-        ui = self.ui
-        # 切走前先落盘当前页的控件值，destroy 后这些引用就失效了。
-        try:
-            self._persist_cfg()
-        except Exception:
-            pass
-        old_widgets = list(getattr(self, "_page_widgets", {}).pop(
-            self._current_step, ()))
-        for w in old_widgets:
-            try:
-                ui.destroy(w)
-            except Exception:
-                pass
-        for attr, value in list(self.__dict__.items()):
-            if any(value is w for w in old_widgets):
-                setattr(self, attr, None)
-
-        rec = _WidgetRecorder(ui)
-        self.ui = rec
-        try:
-            self._builders[step](self.parent)
-        finally:
-            self.ui = ui
-        self._page_widgets[step] = list(rec.widgets)
-        self._current_step = step
-
-        if step == "glossary":
-            self.refresh_gloss_view()
-        self._on_tier(save_chosen=False)
-        self.refresh_local_status()
-        for fn in ("viewport_fit_content", "viewport_sync"):
-            try:
-                getattr(ui, fn)(self.parent)
-            except Exception:
-                pass
 
     def _section(self, p, text):
         """分节标题。2.x 的 label style 只是挂了个属性（没有对应 QSS 规则），

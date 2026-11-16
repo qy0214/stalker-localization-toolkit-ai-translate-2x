@@ -1,16 +1,18 @@
 {
-  "generated_at": "2026-11-16T19:42:40+08:00",
+  "generated_at": "2026-11-16T19:50:56+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "3948362",
+    "commit": "1e1776e",
     "dirty": true,
     "dirty_files": [
       "M README.md",
       " M dist/ai_translate_plugin_v2.0.0.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_2x_contract.py"
+      " M tests/fake_host.py",
+      " M tests/test_2x_contract.py",
+      " M tests/test_share_package.py"
     ]
   },
   "versions": {
@@ -24,15 +26,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 355501,
-      "sha256": "3b29d38351f4bb6352b7133dbfe37f016efc2e5c6faee4a3091c06f3d1dfa6a3",
+      "size": 361753,
+      "sha256": "17fa4b30f57c8cc9a0fe595fd18faef4a862af904ae3fb177235f104e1ec6cdb",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1046043,
+      "size": 1052295,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -40,8 +42,8 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.0.zip",
       "exists": true,
-      "size": 354835,
-      "sha256": "a022fa8b9094537cc4cb47efd9a70621e64c223042fbddb36a9a30797591e871",
+      "size": 354788,
+      "sha256": "72618c8aacebb1a70c4a14269140fd093cd00653c1ee06d35ab123b4dd3b46b7",
       "note": "当前发布包"
     },
     {
@@ -79,7 +81,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.0.zip",
-    "sha256": "a022fa8b9094537cc4cb47efd9a70621e64c223042fbddb36a9a30797591e871",
+    "sha256": "72618c8aacebb1a70c4a14269140fd093cd00653c1ee06d35ab123b4dd3b46b7",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -273,6 +275,6 @@
   },
   "tracked": {
     "files": 19,
-    "bytes": 1692260
+    "bytes": 1698388
   }
 }
