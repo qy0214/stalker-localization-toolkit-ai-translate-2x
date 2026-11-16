@@ -1,9 +1,9 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-16T17:37:09+08:00`
+- 生成时间：`2026-11-16T18:31:21+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`main` @ `a7e627f`（有未提交改动）
-- 已跟踪文件：19 个，1.60 MB
+- Git：`main` @ `0555d6d`（有未提交改动）
+- 已跟踪文件：19 个，1.59 MB
 
 ## 1. 版本与交付物
 
@@ -16,9 +16,9 @@
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 331.79 KB | `47d35ade7eb925f7a0c3f6d2fb92e334f918f900c277e5dfb6bf862d939d39e0` | 2.x 目录插件（api.ui 门面） |
-| 插件分享目录 | `plugins\ai_translate` | 1006.15 KB | — | 5 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.0.zip` | 341.87 KB | `f8030eaa807adc7f8f2773841693ab23a2615123728c711805f4bc0ca79e8749` | 当前发布包 |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 332.64 KB | `5aee0a05c0b3a3f1d8afe681887fa508c2bdae2a98310227e4364a6741dd8204` | 2.x 目录插件（api.ui 门面） |
+| 插件分享目录 | `plugins\ai_translate` | 1007.00 KB | — | 5 个文件（目录） |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.0.zip` | 342.11 KB | `523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f` | 当前发布包 |
 | 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 311.86 KB | `da7c2e2795b04c4a2fb1533875a72927d0ed321fd7f73ded1e7f68c86b71d61f` | 运行时匹配的内置层 |
 | 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 353.93 KB | `9e689d3b5959b291927503a2d62563f4aa7c634aa02034889587144f0a10e941` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 7.38 KB | `2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6` | 解析 XML/LTX/脚本 |

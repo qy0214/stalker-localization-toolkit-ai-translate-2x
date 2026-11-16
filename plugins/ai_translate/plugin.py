@@ -737,10 +737,12 @@ def _http_request(method, url, headers=None, body=None, timeout=30.0):
         payload = body or b""
         if payload:
             buffer = ctypes.create_string_buffer(payload, len(payload))
+            # dwTotalLength 必须是整个请求体的字节数；给 0 而 dwOptionalLength>0
+            # 会让 WinHTTP 直接返回 ERROR_INVALID_PARAMETER(87)，POST 永远发不出去。
             sent = dll.WinHttpSendRequest(req, header_text,
                                           len(header_text) if header_text else 0,
                                           ctypes.byref(buffer), len(payload),
-                                          0, 0)
+                                          len(payload), 0)
         else:
             sent = dll.WinHttpSendRequest(req, header_text,
                                           len(header_text) if header_text else 0,
@@ -2783,11 +2785,7 @@ class LlamaServer(object):
                                   timeout_sec=timeout, max_tokens=max_tokens,
                                   use_extra=False)
 
-        try:
-            out = probe(16, 120)
-        except OutputTruncated:
-            self.health_warn = tokenizer_warn
-        except Exception:
+        def retry_empty():
             # 16 token 的"空输出"不等于模型坏了：推理型 GGUF 会把预算全花在
             # reasoning_content 上，content 为空（MiniCPM5-2B 实测如此，
             # 256 token 时能正常返回"你好。"）。用更大预算复核一次再下结论。
@@ -2804,6 +2802,25 @@ class LlamaServer(object):
                 self.health_warn = ""
                 self.log("启动自检通过（16 token 不足，256 token 复核成功）：%r"
                          % (out[:24] or "(空)"))
+                return True
+            return False
+
+        try:
+            out = probe(16, 120)
+        except OutputTruncated:
+            self.health_warn = tokenizer_warn
+        except OSError as e:
+            # "空输出"走推理型模型复核；真正的网络/本地服务错误不要再白等
+            # 180 秒，也不要套用"推理型模型空输出"的说辞。
+            if "空输出" in str(e):
+                if retry_empty():
+                    return True
+            else:
+                self.health_warn = "启动自检请求失败：%s（请检查引擎日志与本地服务）" % e
+                self.log("启动自检未通过：" + self.health_warn, "warn")
+                return False
+        except Exception:
+            if retry_empty():
                 return True
         else:
             self.health_warn = ""

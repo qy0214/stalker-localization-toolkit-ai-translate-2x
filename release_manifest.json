@@ -1,19 +1,15 @@
 {
-  "generated_at": "2026-11-16T17:37:09+08:00",
+  "generated_at": "2026-11-16T18:31:21+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "a7e627f",
+    "commit": "0555d6d",
     "dirty": true,
     "dirty_files": [
-      "M THIRD_PARTY_NOTICES.md",
-      " M dist/ai_translate_plugin_v2.0.0.zip",
+      "M dist/ai_translate_plugin_v2.0.0.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/fake_host.py",
-      " M tests/test_2x_contract.py",
-      " M tests/test_ai_translate_fixes.py",
-      " M tests/test_share_package.py"
+      " M tests/test_2x_contract.py"
     ]
   },
   "versions": {
@@ -27,15 +23,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 339757,
-      "sha256": "47d35ade7eb925f7a0c3f6d2fb92e334f918f900c277e5dfb6bf862d939d39e0",
+      "size": 340627,
+      "sha256": "5aee0a05c0b3a3f1d8afe681887fa508c2bdae2a98310227e4364a6741dd8204",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1030299,
+      "size": 1031169,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -43,8 +39,8 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.0.zip",
       "exists": true,
-      "size": 350073,
-      "sha256": "f8030eaa807adc7f8f2773841693ab23a2615123728c711805f4bc0ca79e8749",
+      "size": 350316,
+      "sha256": "523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f",
       "note": "当前发布包"
     },
     {
@@ -82,7 +78,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.0.zip",
-    "sha256": "f8030eaa807adc7f8f2773841693ab23a2615123728c711805f4bc0ca79e8749",
+    "sha256": "523e31f5fc27f5de0e566eea3e01e007a609969b242e25a5178e2bfec939c24f",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -276,6 +272,6 @@
   },
   "tracked": {
     "files": 19,
-    "bytes": 1677809
+    "bytes": 1666999
   }
 }

@@ -13,6 +13,7 @@
   P6 按钮/进度状态机（在不下网络的前提下）
   P7 对话框参数形状（ask_open_file 收两元组列表、无 parent）
   P8 日志（api.log 单参 + log_view 一次一行）
+  P9 真 WinHTTP 本地回环（POST 必须带 dwTotalLength，GET 不能回归）
 """
 
 import importlib.util
@@ -289,6 +290,59 @@ def t_p8(module, api, tab):
     check("P8-4 内存环形缓冲有上限", len(tab.log_lines) <= 400)
 
 
+# ── P9 真 WinHTTP 本地回环 ────────────────────────────────
+def t_p9(module):
+    """POST 曾经把 dwTotalLength 传成 0，WinHTTP 直接 ERROR_INVALID_PARAMETER(87)。"""
+    if os.name != "nt":
+        check("P9-1 WinHTTP POST 本地回环", True, "非 Windows 跳过")
+        return
+    import http.server
+    import socketserver
+
+    class Echo(http.server.BaseHTTPRequestHandler):
+        def _reply(self, payload):
+            self.send_response(200)
+            self.send_header("Content-Type", "application/octet-stream")
+            self.send_header("Content-Length", str(len(payload)))
+            self.end_headers()
+            self.wfile.write(payload)
+
+        def do_GET(self):
+            self._reply(b'{"get":true}')
+
+        def do_POST(self):
+            length = int(self.headers.get("Content-Length", "0"))
+            self._reply(self.rfile.read(length))
+
+        def log_message(self, *args):
+            pass
+
+    server = socketserver.TCPServer(("127.0.0.1", 0), Echo)
+    worker = threading.Thread(target=server.serve_forever, daemon=True)
+    worker.start()
+    url = "http://127.0.0.1:%d/" % server.server_address[1]
+    try:
+        response = module._http_post(
+            url, b'{"ping":1}', {"Content-Type": "application/json"},
+            timeout=5)
+        body = response.read()
+        response.close()
+        check("P9-1 WinHTTP POST 本地回环", body == b'{"ping":1}',
+              repr(body[:80]))
+        response = module._http_get(url, timeout=5)
+        body = response.read()
+        response.close()
+        check("P9-2 WinHTTP GET 本地回环", body == b'{"get":true}',
+              repr(body[:80]))
+    except Exception as exc:
+        check("P9-1 WinHTTP POST 本地回环", False,
+              "%s: %s" % (type(exc).__name__, exc))
+    finally:
+        server.shutdown()
+        server.server_close()
+        worker.join(timeout=5)
+
+
 def main():
     module = load_module()
     api, tab, ok = make_tab(module)
@@ -300,6 +354,7 @@ def main():
     t_p6(module, api, tab)
     t_p7(module, api, tab)
     t_p8(module, api, tab)
+    t_p9(module)
 
     passed = sum(1 for _n, ok, _d in RESULTS if ok)
     failed = [(n, d) for n, ok, d in RESULTS if not ok]
