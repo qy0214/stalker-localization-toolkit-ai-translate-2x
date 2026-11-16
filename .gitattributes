@@ -1,0 +1,27 @@
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.exe binary
+*.dll binary
+*.pyd binary
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.gguf binary
+*.tar.gz binary
+*.7z binary
+*.rar binary
+
+# 术语构建语料：保留原始字节，避免换行转换；不展示逐行 diff
+tools/raw_pairs.json -text -diff
