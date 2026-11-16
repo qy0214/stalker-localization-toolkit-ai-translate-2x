@@ -100,14 +100,19 @@ def t_p1(module, api, tab, ok):
     # 页签是插件内部容器，允许用；宿主外壳已经包了滚动区，不要自己再套。
     for name in ("viewport(", "split("):
         check("P1-9 页面不使用 ui.%s" % name.rstrip("("), "ui." + name not in src)
-    check("P1-11 页内建出 5 步 + ⑥术语可选页签",
-          api.ui.tab_titles == ["① 硬件", "② 环境", "③ 模型", "④ 引擎",
-                                "⑤ 翻译", "⑥ 术语（可选）"],
-          str(api.ui.tab_titles))
-    check("P1-12 页签控件真实创建",
-          any(getattr(w, "kind", "") == "tabs" for w in api.ui.created) and
-          sum(1 for w in api.ui.created
-              if getattr(w, "kind", "") == "tab_page") == 6)
+    labels = ["① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译",
+              "⑥ 术语（可选）"]
+    check("P1-11 步骤下拉含 ①→⑤ + ⑥术语可选",
+          list(getattr(tab.step_combo, "items", [])) == labels,
+          str(getattr(tab.step_combo, "items", None)))
+    groups = getattr(tab, "_page_widgets", {})
+    check("P1-12 六组控件分组且默认只显示①",
+          len(groups) == 6 and
+          all(len(v) > 0 for v in groups.values()) and
+          all(getattr(w, "visible", False) for w in groups.get("hw", [])) and
+          not any(getattr(w, "visible", False)
+                  for w in groups.get("engine", [])),
+          str({k: len(v) for k, v in groups.items()}))
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──

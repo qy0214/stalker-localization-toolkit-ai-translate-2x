@@ -6399,6 +6399,32 @@ class TranslationJob(object):
 _UI = None          # 2.x: api.ui（register(api) 注入；模块级 helper 用）
 
 
+class _WidgetRecorder(object):
+    """临时包住 api.ui，记录某一步新建的控件，供后续 set_visible 分页切换。
+
+    2.x 的 tabs 容器会把每个子控件拉到约 100px 高，短步骤页出现大片空白；
+    改为所有控件直接落在页面根（紧凑排布），用宿主 `set_visible` 按组显隐。
+    """
+    CREATE = {"label", "button", "checkbox", "combo", "drop_box", "entry",
+              "text", "progress", "log_view"}
+
+    def __init__(self, ui):
+        self._ui = ui
+        self.widgets = []
+
+    def __getattr__(self, name):
+        fn = getattr(self._ui, name)
+        if name not in _WidgetRecorder.CREATE:
+            return fn
+
+        def wrapped(*a, **k):
+            w = fn(*a, **k)
+            if w is not None:
+                self.widgets.append(w)
+            return w
+        return wrapped
+
+
 def _combo_get(w):
     """读下拉当前项文本（2.x `api.ui.combo_value`）。"""
     try:
@@ -6729,67 +6755,42 @@ class AiTranslateTab(object):
         self.log(msg)
 
     def _build(self):
-        """单个宿主工具页，内部用 5 个标签页承载①→⑤，不再一页拖到底。
+        """单页内部按步骤分页：控件直接落在页面根，用 set_visible 切组。
 
-        2.x 真机实测 `api.ui` 有 `tabs(parent)` / `tabs_add_page(tabs, title)`；
-        标签页是插件内部的容器，不额外注册宿主工具页。老宿主缺该能力时
-        回退成原来的纵向单页，功能不丢。
+        真机 BETA.246 的 `tabs_add_page` 会把每个子控件拉到约 100px 高，
+        短步骤页出现大片空白。改为所有控件紧凑排在页面根，顶部一个
+        「当前步骤」下拉切换 ①→⑥，只显示当前组的控件。
         """
         ui = self.ui
         p = self.parent
-        ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 按①→⑤操作")
+        ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 用「当前步骤」切换 ①→⑥")
 
-        titles = ("① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译",
-                  "⑥ 术语（可选）")
-        pages = None
-        try:
-            tabs = ui.tabs(p)
-            if tabs:
-                pages = [ui.tabs_add_page(tabs, t) for t in titles]
-                self.tabs = tabs
-                if not pages or not all(pages):
-                    pages = None
-        except Exception as exc:
-            pages = None
+        steps = (
+            ("hw", "① 硬件"),
+            ("runtime", "② 环境"),
+            ("model", "③ 模型"),
+            ("engine", "④ 引擎"),
+            ("job", "⑤ 翻译"),
+            ("glossary", "⑥ 术语（可选）"),
+        )
+        self.step_defs = steps
+        labels = [label for _key, label in steps]
+        ui.label(p, "当前步骤")
+        self.step_combo = ui.combo(p, labels, on_change=self._on_step)
+        _combo_set(self.step_combo, labels, 0)
+
+        self._page_widgets = {}
+        for key, _label in steps:
+            rec = _WidgetRecorder(ui)
+            self.ui = rec
             try:
-                self.api.log("步骤页签创建失败，回退单页：%s" % exc)
-            except Exception:
-                pass
+                getattr(self, "_build_step_" + key)(p)
+            finally:
+                self.ui = ui
+            self._page_widgets[key] = list(rec.widgets)
 
-        if pages:
-            hw_p, rt_p, model_p, engine_p, job_p, gloss_p = pages
-            log_p = job_p
-            try:
-                count = ui.tabs_page_count(tabs)
-            except Exception:
-                count = len(pages)
-            self.api.log("AI 翻译界面已分 %s 个页签（①→⑤ + ⑥术语可选）"
-                         % count)
-            # 短内容页签不要再被宿主最小高度撑出一大片空白：
-            # 真机有 viewport_set_min_body_height/fit_content/sync，逐个都试，
-            # 任一宿主版本缺能力就跳过，绝不影响页面构建。
-            for target in (tabs,) + tuple(pages):
-                try:
-                    ui.viewport_set_min_body_height(target, 80)
-                except Exception:
-                    pass
-                for fn in ("viewport_fit_content", "viewport_sync"):
-                    try:
-                        getattr(ui, fn)(target)
-                    except Exception:
-                        pass
-        else:
-            hw_p = rt_p = model_p = engine_p = job_p = gloss_p = log_p = p
-
-        self._build_step_hw(hw_p)
-        self._build_step_runtime(rt_p)
-        self._build_step_model(model_p)
-        self._build_step_engine(engine_p)
-        self._build_step_job(job_p)
-        self._build_step_glossary(gloss_p)
-
-        # 日志栏：只读多行视图；追加走 log_view_append（一次一行，不重写全文）
-        self.log_view = ui.log_view(log_p, 9)
+        # 日志栏：只读多行视图；始终可见，追加走 log_view_append（一次一行）
+        self.log_view = ui.log_view(p, 9)
         for line in list(self.log_lines):
             ui.log_view_append(self.log_view, line)
 
@@ -6800,8 +6801,35 @@ class AiTranslateTab(object):
         except Exception:
             pass
 
+        self._current_step = "hw"
+        self._show_step("hw")
+        self.api.log("AI 翻译界面已分 6 步（①→⑤ + ⑥术语可选），"
+                     "用「当前步骤」下拉切换")
         if self.parser is None:
             self.log("XML 解析模块加载失败（assets/xray_pkg.zip 缺失？）", "err")
+
+    def _on_step(self, value=None):
+        text = str(value or "")
+        for key, label in getattr(self, "step_defs", ()):
+            if text.startswith(label):
+                self._show_step(key)
+                return
+
+    def _show_step(self, step):
+        self._current_step = step
+        ui = self.ui
+        for key, widgets in getattr(self, "_page_widgets", {}).items():
+            visible = (key == step)
+            for w in widgets:
+                try:
+                    ui.set_visible(w, visible)
+                except Exception:
+                    pass
+        for fn in ("viewport_fit_content", "viewport_sync"):
+            try:
+                getattr(ui, fn)(self.parent)
+            except Exception:
+                pass
 
     def _section(self, p, text):
         """分节标题。2.x 的 label style 只是挂了个属性（没有对应 QSS 规则），

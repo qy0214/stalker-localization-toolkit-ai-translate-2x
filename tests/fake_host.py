@@ -28,7 +28,7 @@ class Widget(object):
     """2.x `PyWidget` 的等价物：只有身份，没有任何控件方法。"""
 
     __slots__ = ("kind", "value", "items", "index", "checked", "enabled",
-                 "alive_flag", "callback", "placeholder", "logs")
+                 "alive_flag", "callback", "placeholder", "logs", "visible")
 
     def __init__(self, kind, **kw):
         self.kind = kind
@@ -41,6 +41,7 @@ class Widget(object):
         self.callback = kw.get("callback")
         self.placeholder = kw.get("placeholder", "")
         self.logs = []
+        self.visible = True
 
     # 宿主只暴露这两个魔法方法
     def __repr__(self):
@@ -218,6 +219,13 @@ class FakeUi(object):
             return None
         if widget is not None:
             widget.enabled = bool(enabled)
+        return None
+
+    def set_visible(self, widget, visible):
+        if not self._gate("set_visible"):
+            return None
+        if widget is not None:
+            widget.visible = bool(visible)
         return None
 
     def set_progress(self, widget, percent):
