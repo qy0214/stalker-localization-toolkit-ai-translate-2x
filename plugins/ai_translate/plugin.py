@@ -3560,6 +3560,7 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
     max_file = (0, "")
     hist = {}
     n_strings = 0
+    n_files_with_text = 0
     max_str = 0
     max_str_file = ""
     truncated = False
@@ -3610,12 +3611,16 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
             if mode == "auto":
                 kind = _SCAN_KIND_MAP.get(
                     classify_xray_file(full, rel), "cfgxml")
+            file_strings = 0
             for s in _iter_candidate_strings(txt, kind):
                 length = len(s)
                 hist[length] = hist.get(length, 0) + 1
                 n_strings += 1
+                file_strings += 1
                 if length > max_str:
                     max_str, max_str_file = length, full
+            if file_strings:
+                n_files_with_text += 1
             if log and n_files % 500 == 0:
                 log("  勘察中…已读 %d 个文件" % n_files)
         if truncated:
@@ -3638,6 +3643,7 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
         "max_str": max_str,
         "max_str_file": max_str_file,
         "n_strings": n_strings,
+        "files_with_text": n_files_with_text,
         "overlong": per_tier,
         "recommend": recommend,
         "truncated": truncated,
@@ -3915,7 +3921,8 @@ class TranslationJob(object):
                  only_referenced=False, protect_proper=True,
                  preview_reference=False, hard_glossary_keys=None,
                  translate_literals=False, auto_session_terms=False,
-                 session_cache_dir=None, tm_lite=True, parallel=1):
+                 session_cache_dir=None, tm_lite=True, parallel=1,
+                 pending_files=0):
         self.p = parser
         self.srv = server
         self.in_dir = in_dir
@@ -3965,6 +3972,8 @@ class TranslationJob(object):
         self.detail = detail or (lambda m: None)
         self.progress = progress or (lambda d: None)
         self.cancel = cancel_event
+        # 自动识别出的「整个 MOD 待翻译文件总数」，用于界面计数显示
+        self.pending_files = int(pending_files or 0)
         self.req_count = 0
         self.trans_chars = 0
         self.redundant = []
@@ -4979,6 +4988,7 @@ class TranslationJob(object):
                     self.log("未发现任何 .xml 文件。请把目录选到 configs"
                              "（文本 XML 在其 text\\ 与 ui\\ 子目录内）", "warn")
                 skipped_empty = 0
+                trans_files = 0
                 failed = 0
                 for idx, (rel, full) in enumerate(targets, 1):
                     if self._cancelled():
@@ -4990,7 +5000,9 @@ class TranslationJob(object):
                         continue
                     self._log_progress(idx, total, os.path.basename(full))
                     self.progress({"file": rel, "file_idx": idx, "files": total,
-                                   "ids": 0, "total_ids": 0,
+                                   "ids": trans_files, "total_ids": 0,
+                                   "tabs": trans_files,
+                                   "pending": self.pending_files,
                                    "reqs": self.req_count, "unit": "个文件"})
                     try:
                         n_texts = self._run_text_file(
@@ -5002,6 +5014,7 @@ class TranslationJob(object):
                                  % (rel, type(e).__name__, e), "err")
                         continue
                     if n_texts > 0:
+                        trans_files += 1
                         self._record_done(rel, full, out_path)
                     if n_texts == 0:
                         skipped_empty += 1
@@ -5293,6 +5306,18 @@ class TranslationJob(object):
             return idx, rel, st
 
         items = list(enumerate(tables, 1))
+        done_n = 0
+        trans_total = 0
+        ent_total = 0
+        trans_tables = 0
+
+        def _report(rel):
+            """每处理完一张文本表就回报一次：已处理张数 / 总张数 + 累计翻译量。"""
+            self.progress({"file": rel, "file_idx": done_n, "files": n_tables,
+                           "ids": trans_total, "total_ids": ent_total,
+                           "tabs": trans_tables, "pending": self.pending_files,
+                           "reqs": self.req_count, "unit": "个文件"})
+
         if self.parallel > 1:
             from concurrent.futures import ThreadPoolExecutor, as_completed
             self.log("多路翻译：%d 路并发处理 %d 张文本表（每路 %d token）"
@@ -5306,7 +5331,14 @@ class TranslationJob(object):
                             f.cancel()
                         self.log("已取消，已处理的文本表保留在输出目录")
                         return False
-                    results.append(fut.result())
+                    idx, rel, st = fut.result()
+                    done_n += 1
+                    trans_total += st["translated"]
+                    ent_total += st.get("total", 0)
+                    if st["translated"]:
+                        trans_tables += 1
+                    results.append((idx, rel, st))
+                    _report(rel)
             results.sort(key=lambda x: x[0])
         else:
             results = []
@@ -5314,7 +5346,14 @@ class TranslationJob(object):
                 if self._cancelled():
                     self.log("已取消，已处理的文本表保留在输出目录")
                     return False
-                results.append(_one(item))
+                idx, rel, st = _one(item)
+                done_n += 1
+                trans_total += st["translated"]
+                ent_total += st.get("total", 0)
+                if st["translated"]:
+                    trans_tables += 1
+                results.append((idx, rel, st))
+                _report(rel)
 
         for idx, rel, st in results:
             translated += st["translated"]
@@ -5322,10 +5361,6 @@ class TranslationJob(object):
             failed += st["failed"]
             changed += 1 if st["changed"] else 0
             copied += 1 if st["copied"] else 0
-            # 条目级进度回传：主界面进度条按“已处理文本表/总表数”推进
-            self.progress({"file": rel, "file_idx": idx, "files": n_tables,
-                           "ids": st["translated"], "total_ids": st["translated"],
-                           "reqs": self.req_count, "unit": "张文本表"})
             if idx == 1 or idx == n_tables or idx % 20 == 0:
                 self.log("文本表 %d/%d（%d%%）：%s"
                          % (idx, n_tables, 100 * idx // n_tables, rel))
@@ -5579,6 +5614,7 @@ class TranslationJob(object):
                 "id": ent.id, "ent": ent, "lang": lang0, "src": src0,
                 "rel": rel, "style": self._entry_style(rel, src0 or ""),
             })
+        st["total"] = len(metas)
         batched_ids = set()
         if "dialog" in rel.lower() and not self.force_glossary:
             def _ok(meta):
@@ -5951,6 +5987,7 @@ class TranslationJob(object):
         chars_all = set()
         written = 0
         failed = 0
+        trans_files = 0
         for idx, (kind, rel, full) in enumerate(targets, 1):
             if self._cancelled():
                 self.log("已取消，已完成文件保留在输出目录")
@@ -5960,8 +5997,9 @@ class TranslationJob(object):
                 continue
             self._log_progress(idx, total, rel)
             self.progress({"file": rel, "file_idx": idx, "files": total,
-                           "ids": 0, "total_ids": 0, "reqs": self.req_count,
-                           "unit": "个文件"})
+                           "ids": trans_files, "total_ids": 0,
+                           "tabs": trans_files, "pending": self.pending_files,
+                           "reqs": self.req_count, "unit": "个文件"})
             if kind == "text":
                 tmp = os.path.join(temp_dir, rel)
                 try:
@@ -5975,6 +6013,7 @@ class TranslationJob(object):
                     continue
                 if n_texts > 0:
                     written += 1
+                    trans_files += 1
                     self._record_done(rel, full, out_path)
             else:
                 mode = {"cfg": "cfgxml", "ltx": "ltx",
@@ -6598,6 +6637,13 @@ class AiTranslateTab(object):
         self.refresh_local_status()
         self.on_hw_check(silent=True)
         self._sweep_orphan_servers()
+        # 上次填过待翻译目录就自动识别一次待翻译文件总数
+        try:
+            in_dir = self.cfg.get("in_dir") or ""
+            if in_dir and os.path.isdir(in_dir):
+                self._auto_scan_in_dir(in_dir)
+        except Exception:
+            pass
 
     def _sweep_orphan_servers(self):
         """后台清理上次异常退出遗留的引擎（只认本插件 exe + 父进程已死）。
@@ -6818,7 +6864,7 @@ class AiTranslateTab(object):
         self.progress = ui.progress(p)
         ui.set_progress(self.progress, 0)
         self.stage_label = ui.label(p, "阶段：待命")
-        self.count_label = ui.label(p, "已处理 0 / 0")
+        self.count_label = ui.label(p, "已翻译 0 / 0")
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
 
@@ -7432,6 +7478,33 @@ class AiTranslateTab(object):
             self.cfg["in_dir"] = path
             self._persist_cfg()
             self._default_out(path)
+            self._auto_scan_in_dir(path)
+
+    def _auto_scan_in_dir(self, path):
+        """自动识别这个 MOD 的待翻译文件总数（后台扫描，不卡界面）。"""
+        self.scan_info = None
+        self.scan_dir = None
+        self._set_stage("阶段：正在识别待翻译文件…")
+        mode = self.cfg.get("mode") or "auto"
+
+        def work():
+            try:
+                info = analyze_input_dir(
+                    path, mode,
+                    log=lambda m: self.ui_call(self.log, m),
+                    cancel=self.tr_cancel)
+            except Exception as e:
+                self.ui_call(self.log, "待翻译文件识别失败：%s" % e, "warn")
+                return
+            self.scan_info, self.scan_dir = info, path
+            n = int(info.get("files_with_text") or 0)
+            self.ui_call(self.log,
+                         "待翻译文件：%d 个（自动识别整个 MOD 中含可译文本的文件）"
+                         % n)
+            self.ui_call(self._set_count, 0, n, "个文件")
+            self.ui_call(self._set_stage,
+                         "阶段：待命（已识别待翻译文件 %d 个）" % n)
+        threading.Thread(target=work, daemon=True).start()
 
     def _default_out(self, in_dir):
         """输出目录默认 输入目录/translated_hy_mt2（用户可改）。"""
@@ -7742,16 +7815,16 @@ class AiTranslateTab(object):
         except Exception:
             pass
 
-    def _set_count(self, done, total, unit=""):
+    def _set_count(self, done, total, unit="", extra=""):
         """计数提示：按「实际要处理的文件数」显示 已完成/总数，比纯百分比直观。"""
         try:
             if total:
                 _label_set(self.count_label,
-                           "已处理 %d / %d %s（%.0f%%）"
+                           "已翻译 %d / %d %s（%.0f%%）%s"
                            % (int(done), int(total), unit,
-                              100.0 * min(done, total) / total))
+                              100.0 * min(done, total) / total, extra))
             else:
-                _label_set(self.count_label, "已处理 0 / 0 %s" % unit)
+                _label_set(self.count_label, "已翻译 0 / 0 %s%s" % (unit, extra))
         except Exception:
             pass
 
@@ -7914,6 +7987,8 @@ class AiTranslateTab(object):
                     info["max_file"][0] / 1024.0, info["n_strings"],
                     info["max_str"],
                     os.path.basename(info["max_str_file"]) or "-"))
+        self.log("待翻译文件（自动识别整个 MOD 中含可译文本的文件）：%d 个"
+                 % int(info.get("files_with_text") or 0))
         for t in BUILTIN_TIERS:
             n = info["overlong"][t]
             if n:
@@ -8171,12 +8246,21 @@ class AiTranslateTab(object):
                                      "注意：" + self.server.health_warn, "warn")
                     self.ui_call(self._engine_ui, True)
                 self._push_prompt_extra()
+                pending_files = 0
                 if self.scan_info and self.scan_dir == in_dir:
+                    info = self.scan_info
+                    pending_files = int(info.get("files_with_text")
+                                        or info.get("files") or 0)
                     self.ui_call(self.log,
                                  "上下文 %d token × %d 路；最长文本 %d 字符，超长自动分句"
                                  % (self.server.ctx_size,
                                     getattr(self.server, "parallel", 1),
-                                    self.scan_info["max_str"]))
+                                    info["max_str"]))
+                    if pending_files:
+                        self.ui_call(self.log,
+                                     "待翻译文件：%d 个（已自动识别整个 MOD 的"
+                                     "可译文本文件）" % pending_files)
+                        self.ui_call(self._set_count, 0, pending_files, "个文件")
 
                 job = TranslationJob(
                     self.parser, self.server, in_dir, mode, src_lang, "chs",
@@ -8201,7 +8285,8 @@ class AiTranslateTab(object):
                     translate_literals=translate_literals,
                     auto_session_terms=session_glossary,
                     tm_lite=tm_lite,
-                    parallel=getattr(self.server, "parallel", 1))
+                    parallel=getattr(self.server, "parallel", 1),
+                    pending_files=pending_files)
                 job.run()
             except Exception as e:
                 self.ui_call(self.log, "翻译失败：%s" % e, "err")
@@ -8213,6 +8298,9 @@ class AiTranslateTab(object):
         """条目级进度：明细落盘，进度条按文件数推进（UI 投递、按百分点节流）。"""
         total = int(d.get("files", 0) or 0)
         idx = int(d.get("file_idx", 0) or 0)
+        # 计数行用「自动识别的整个 MOD 待翻译文件总数」做分母；
+        # 进度条仍按本轮处理的文件数推进（原有百分比语义不变）。
+        pending = int(d.get("pending") or 0) or total
         _append_run_log("  进度：[%d/%d] %s（%d/%d 条，累计 %d 段）"
                         % (idx, total, d.get("file", ""),
                            d.get("ids", 0), d.get("total_ids", 0),
@@ -8220,14 +8308,20 @@ class AiTranslateTab(object):
         if total > 0:
             pct = int(100.0 * min(idx, total) / total)
             if pct != getattr(self, "_last_pct", -1):
-                # 进度条本身语义不变（百分比）；这里只补阶段与计数两行文字，
-                # 并按百分点节流，避免刷爆 UI 线程。
+                # 进度条本身语义不变（百分比，按已处理文件数推进）；下面两行
+                # 文字给出「实际要翻译的文件总数 / 已翻译数量」的直观计数。
                 self._last_pct = pct
                 self.ui_call(self._set_stage,
                              "阶段：翻译中 %d/%d · %s"
                              % (min(idx, total), total, d.get("file", "")))
-                self.ui_call(self._set_count, min(idx, total), total,
-                             d.get("unit", ""))
+                extra = ""
+                if d.get("ids"):
+                    extra = "，条目 %d 条" % int(d.get("ids") or 0)
+                done_count = d.get("tabs")
+                if done_count is None:
+                    done_count = min(idx, total)
+                self.ui_call(self._set_count, int(done_count), pending,
+                             d.get("unit", ""), extra)
                 self.ui_call(self._set_progress, pct)
 
     def _run_done(self):

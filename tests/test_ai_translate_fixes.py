@@ -3324,6 +3324,32 @@ def t66_english_semantic_fixes():
 
 
 # ----------------------------------------------------------------------
+def t67_pending_file_count():
+    print()
+    print("--- T67 待翻译文件总数自动识别 ---")
+    import os as _os
+    import tempfile as _tf
+
+    root = _tf.mkdtemp(prefix="ait_scan_")
+    tdir = _os.path.join(root, "text")
+    _os.makedirs(tdir)
+    with open(_os.path.join(tdir, "a.xml"), "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0"?><x><text id="1">Hello world</text>'
+                '<text id="2">Second line</text></x>')
+    with open(_os.path.join(tdir, "b.xml"), "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0"?><x><item id="9"/></x>')
+    with open(_os.path.join(root, "readme.txt"), "w", encoding="utf-8") as f:
+        f.write("not a translatable file")
+
+    info = ait.analyze_input_dir(root, "text")
+    check("T67-1 候选文件数只算 xml/ltx/script",
+          info["files"] == 2, str(info["files"]))
+    check("T67-2 含可译文本的文件数被单独识别",
+          info.get("files_with_text") == 1, str(info.get("files_with_text")))
+    check("T67-3 可译文本条数统计正常",
+          info["n_strings"] >= 2, str(info["n_strings"]))
+
+
 def main():
     for fn in (t1_encoding, t2_glossary, t3_flatten, t4_artifact, t5_pipeline,
                t6_truncation, t7_config, t8_prompt, t9_ctx, t10_classify,
@@ -3342,7 +3368,7 @@ def main():
                t42_script_context_and_english,
                t43_multiline_profanity_retry, t44_problem_file_filters,
                t45_term_layers_session_cache, t46_anthology_terms,
-               t47_termbase_v2, t48_tm_lite, t49_placeholder_retry, t50_remove_mt15_tier, t51_output_filters, t52_session_hint_only, t53_script_display_calls, t54_credits_exact_protection, t55_english_item_audit, t56_faction_inflections, t57_faction_quote_context, t58_faction_member_cases, t59_ns7_core_terms, t60_residual_cyrillic_retry, t61_soft_layer_coverage, t62_residual_and_ambiguity, t63_hard_term_precision, t64_scene_batch_and_style, t65_english_alias_precision, t66_english_semantic_fixes):
+               t47_termbase_v2, t48_tm_lite, t49_placeholder_retry, t50_remove_mt15_tier, t51_output_filters, t52_session_hint_only, t53_script_display_calls, t54_credits_exact_protection, t55_english_item_audit, t56_faction_inflections, t57_faction_quote_context, t58_faction_member_cases, t59_ns7_core_terms, t60_residual_cyrillic_retry, t61_soft_layer_coverage, t62_residual_and_ambiguity, t63_hard_term_precision, t64_scene_batch_and_style, t65_english_alias_precision, t66_english_semantic_fixes, t67_pending_file_count):
         try:
             fn()
         except Exception as e:

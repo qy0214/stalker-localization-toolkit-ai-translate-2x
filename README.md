@@ -78,9 +78,9 @@
 - 插件版本：`ai_translate 2.0.0`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `6c6d9f824cd449a7c099a9d9013cb17e805a7952aa4be198aa6851bc61f51377`
+  `da79f2dcf3eb83e310bdd0f0d7c581f69c866db188abde599d20a6605aa7fa08`
 - 当前 zip SHA-256：
-  `fe15cf3bedc2afa5d91c353854a7ac5691ff5108aeb8db7cd0153bc7e6debd0b`
+  `5f6f8a20c289ccc498dec1d82a2016aff4c49806e2fba0aee09773e383605f6e`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
@@ -108,7 +108,12 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 66 项、功能回归 353 项、分享包 28 项，全部通过。
+当前全量测试：契约 66 项、功能回归 356 项、分享包 28 项，全部通过。
+
+进度显示：底部进度条保持百分比语义（下载按字节、翻译按本轮处理文件数）；
+旁边两行文字给出直观计数——`阶段：翻译中 12/87 · configs\items\x.ltx` 和
+`已翻译 12 / 87 个文件（14%），条目 345 条`。分母是**自动识别**出来的整个
+MOD 待翻译文件数（选目录或启动工具时后台勘察，含可译文本的文件）。
 
 ## 许可
 
