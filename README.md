@@ -33,8 +33,8 @@
                 THIRD_PARTY_NOTICES.txt
 ```
 
-重启工具集后，按步骤打开 5 个工具页：「AI 翻译 ① 硬件 / ② 环境 / ③ 模型 /
-④ 引擎 / ⑤ 翻译」。五个页面共享同一份配置、引擎和日志，不用再在一页里
+重启工具集后，在工具页中打开「AI 翻译」。页面内部按 ① 硬件 / ② 环境 /
+③ 模型 / ④ 引擎 / ⑤ 翻译 分成 5 个页签，点页签切换步骤，不用在长页面里
 不停下拉。本插件是**目录插件**，入口文件名固定为 `plugin.py`，目录名
 `ai_translate` 即插件 id。
 
@@ -75,9 +75,9 @@
 - 插件版本：`ai_translate 2.0.0`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `0f6f8eeeb5527eee869cb4acd5b878f9f881c1f6d834f4492600bec631b1e5c5`
+  `f0a44d07edabbd34b2eb3134e734759ef3dbdc62079e2de24d3ae0016a2d6464`
 - 当前 zip SHA-256：
-  `180820e24edc70e6990412cf266d95c5b9f560f893a55c8e62596acceb6c1b9c`
+  `b51ac33773a22941963811c93bb6b44bfc434664d084f83ae29f5e4af83c6596`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
@@ -105,7 +105,7 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 57 项、功能回归 353 项、分享包 28 项，全部通过。
+当前全量测试：契约 56 项、功能回归 353 项、分享包 28 项，全部通过。
 
 ## 许可
 

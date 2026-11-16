@@ -5,7 +5,7 @@
     python tests/test_2x_contract.py
 
 覆盖 P1–P8：
-  P1 注册与页面构建（2.x register_tool 契约 / 页面只纵向声明控件）
+  P1 注册与页面构建（2.x register_tool 契约 / 页内 5 个步骤页签）
   P2 源码级禁用面（urllib.request/ssl/http.client/tkinter/row/pack/set_state…）
   P3 线程纪律（worker 只入队，UI 线程泵执行；控件非 UI 线程不可写）
   P4 下拉缓存（combo 无 set_index ⇒ 轮转绕行仍然取得到值）
@@ -62,10 +62,8 @@ def make_tab(module):
     module._kill_orphan_servers = lambda cfg=None: []
     api = FakeApi()
     ok = api.install(module)
-    # 5 个步骤页都要由宿主 builder 建一遍；它们共享同一个状态对象。
-    pages = [api.build(i) for i in range(len(api.tools))]
-    tab = pages[0]
-    # 让 finish_setup 触发的后台线程（硬件检测/孤儿清理）跑完并回主线程执行
+    tab = api.build()
+    # 让 __init__ 里触发的后台线程（硬件检测/孤儿清理）跑完并回主线程执行
     for worker in threading.enumerate():
         if worker is not threading.current_thread():
             worker.join(timeout=10)
@@ -76,13 +74,12 @@ def make_tab(module):
 # ── P1 注册与构建 ───────────────────────────────────────────
 def t_p1(module, api, tab, ok):
     check("P1-1 register 返回 True", ok)
-    check("P1-2 注册 5 个步骤工具页", len(api.tools) == 5,
+    check("P1-2 只注册一个工具页", len(api.tools) == 1,
           "tools=%d" % len(api.tools))
     tool = api.tools[0] if api.tools else {}
     check("P1-3 id 为 ASCII 且非空",
           bool(tool.get("name")) and tool["name"].isascii())
-    check("P1-4 显示名走 title",
-          str(tool.get("title", "")).startswith("AI 翻译 "),
+    check("P1-4 显示名走 title", tool.get("title") == "AI 翻译",
           repr(tool.get("title")))
     check("P1-5 builder 产出 AiTranslateTab",
           isinstance(tab, module.AiTranslateTab))
@@ -100,17 +97,16 @@ def t_p1(module, api, tab, ok):
           str(required))
     # 页面不要自带 viewport / 分割容器（宿主 PageBase 已经包好了）
     src = open(PLUGIN, encoding="utf-8").read()
-    for name in ("viewport(", "split(", "tabs("):
+    # 页签是插件内部容器，允许用；宿主外壳已经包了滚动区，不要自己再套。
+    for name in ("viewport(", "split("):
         check("P1-9 页面不使用 ui.%s" % name.rstrip("("), "ui." + name not in src)
-    check("P1-11 五个步骤页标题按 ①→⑤ 排列",
-          [t.get("title") for t in api.tools] == [
-              "AI 翻译 ① 硬件", "AI 翻译 ② 环境", "AI 翻译 ③ 模型",
-              "AI 翻译 ④ 引擎", "AI 翻译 ⑤ 翻译"],
-          str([t.get("title") for t in api.tools]))
-    check("P1-12 五个步骤页 id 唯一且 ASCII",
-          len({t.get("name") for t in api.tools}) == 5 and
-          all(str(t.get("name")).isascii() for t in api.tools),
-          str([t.get("name") for t in api.tools]))
+    check("P1-11 页内建出 5 个步骤页签",
+          api.ui.tab_titles == ["① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译"],
+          str(api.ui.tab_titles))
+    check("P1-12 页签控件真实创建",
+          any(getattr(w, "kind", "") == "tabs" for w in api.ui.created) and
+          sum(1 for w in api.ui.created
+              if getattr(w, "kind", "") == "tab_page") == 5)
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──
@@ -139,7 +135,7 @@ def t_p2(module):
         check("P2 禁用导入：%s（%s）" % (prefix, why), not hits, str(hits))
 
     bad_attrs = {"set_state", "log_detail", "widget", "_tk",
-                 "row", "pack", "viewport", "split", "tabs"}
+                 "row", "pack", "viewport", "split"}
     hits = []
     for node in ast.walk(tree):
         if not isinstance(node, ast.Attribute):
@@ -148,7 +144,7 @@ def t_p2(module):
             continue
         # `ui.*` / `self.ui.*` 的门面调用，或非门面的控件方法
         base = node.value
-        if node.attr in ("row", "pack", "viewport", "split", "tabs"):
+        if node.attr in ("row", "pack", "viewport", "split"):
             if isinstance(base, ast.Attribute) and base.attr == "ui":
                 hits.append("ui.%s" % node.attr)
             elif isinstance(base, ast.Name) and base.id == "ui":

@@ -58,6 +58,7 @@ class FakeUi(object):
         self.dialogs = []          # (kind, title, extra)
         self.dialog_reply = None   # 供 ask_* 返回
         self.timers = []           # (parent, ms, callback)
+        self.tab_titles = []       # tabs_add_page 依次登记的页签标题
 
     # ── 线程闸门 ──────────────────────────────────────────────
     def on_ui_thread(self):
@@ -133,6 +134,32 @@ class FakeUi(object):
             return None
         self.timers.append((parent, interval_ms, callback))
         return self._new(Widget("timer"))
+
+    def tabs(self, parent=None):
+        if not self._gate("tabs"):
+            return None
+        return self._new(Widget("tabs"))
+
+    def tabs_add_page(self, tabs, title):
+        if not self._gate("tabs_add_page"):
+            return None
+        self.tab_titles.append(str(title))
+        return self._new(Widget("tab_page", value=str(title)))
+
+    def tabs_page_count(self, tabs):
+        if not self._gate("tabs_page_count"):
+            return 0
+        return len(self.tab_titles)
+
+    def tabs_current_index(self, tabs):
+        if not self._gate("tabs_current_index"):
+            return 0
+        return 0
+
+    def tabs_set_current(self, tabs, index):
+        if not self._gate("tabs_set_current"):
+            return None
+        return None
 
     def alive(self, widget):
         if not self._gate("alive"):
