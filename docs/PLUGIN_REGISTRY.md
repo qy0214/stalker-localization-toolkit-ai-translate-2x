@@ -139,19 +139,23 @@ gh release create v2.0.1 `
 结论：这份注册表条目解决的是**「同步更新后平台可见 + 已装用户可一键升级」**；
 「从未装过的用户直接在界面里装上」需要平台侧改造。
 
-### 6.1 平台侧最小改动（已做好补丁，见 `docs/patches/`）
+### 6.1 平台侧最小改动（已做好补丁并在本机编译验证，见 `docs/patches/`）
 
-要��「从未装过的用户直接在界面里装上」，平台侧要动一处：
-在 `tools/plugin_manager/main.cpp` 的「检查插件更新」里，把**本地还没装的注册表条目**
-补成表格行（状态列写「可安装」），其余安装逻辑一行不改。
+要让「从未装过的用户直接在界面里装上」，平台侧要动一处：
+在 `tools/plugin_manager/main.cpp` 里新增一个「同步注册表」的动作，
+把**本地还没装的注册表条目**补成表格行（状态列写「可安装（线上注册表）」），
+其余安装逻辑一行不改。
 
-补丁已经写好并附在 [`docs/patches/`](patches/)：
+补丁在 [`docs/patches/`](patches/)：
 
-- `docs/patches/plugin_registry_merge.diff` —— 可直接 `git apply` 的补丁
+- `plugin_registry_merge.diff` —— 可直接 `git apply` 的补丁
   （新增 `include/xrkit/core/plugin_registry.h` 纯逻辑头 + 改
   `tools/plugin_manager/main.cpp` + 新增 `tests/plugin_registry_test.cpp`）；
-- 纯逻辑部分已用本机 MSVC 编译并跑通（`PLUGIN-REGISTRY-TEST ok`）；
-  Qt 外壳部分因本机缺 Qt 6.8.3 SDK 未编译，需在平台作者那边构建验证。
+- 接入三条路径：**启动时自动同步 / 点「刷新」同步 / 点「检查插件更新」同步**；
+- 本机已实测：MSVC 19.44 + Qt 6.8.3 编译出 `xrkit_plugin_manager.exe`（无警告），
+  纯逻辑单测通过，无头自检确认「空插件目录 → 表格多出可安装行」、
+  「已装用户 → 不重复出现」。
 
-改动后，客户侧就是完整闭环：平台 → 插件管理 → 表格里出现 `ai_translate` →
-「安装所选更新」→ 重启生效，我们这边不需要再改任何代码。
+改动后，客户侧就是完整闭环：平台 → 插件管理（打开即看到 `ai_translate`
+标着"可安装（线上注册表）"）→ 选中 → 「安装所选更新」→ 重启生效，
+我们这边不需要再改任何代码。
