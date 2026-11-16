@@ -100,13 +100,14 @@ def t_p1(module, api, tab, ok):
     # 页签是插件内部容器，允许用；宿主外壳已经包了滚动区，不要自己再套。
     for name in ("viewport(", "split("):
         check("P1-9 页面不使用 ui.%s" % name.rstrip("("), "ui." + name not in src)
-    check("P1-11 页内建出 5 个步骤页签",
-          api.ui.tab_titles == ["① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译"],
+    check("P1-11 页内建出 5 步 + ⑥术语可选页签",
+          api.ui.tab_titles == ["① 硬件", "② 环境", "③ 模型", "④ 引擎",
+                                "⑤ 翻译", "⑥ 术语（可选）"],
           str(api.ui.tab_titles))
     check("P1-12 页签控件真实创建",
           any(getattr(w, "kind", "") == "tabs" for w in api.ui.created) and
           sum(1 for w in api.ui.created
-              if getattr(w, "kind", "") == "tab_page") == 5)
+              if getattr(w, "kind", "") == "tab_page") == 6)
 
 
 # ── P2 源码级禁用面（AST：只认真正的代码，不误伤注释/文档） ──
@@ -351,6 +352,27 @@ def t_p9(module):
         worker.join(timeout=5)
 
 
+# ── P10 多路翻译选项 ──────────────────────────────────────
+def t_p10(module, api, tab):
+    import inspect
+    check("P10-1 默认单路且配置合法",
+          module.DEFAULT_CONFIG.get("parallel") == 1 and
+          module.load_config().get("parallel") == 1)
+    check("P10-2 并行下拉有 1/2/4 三档",
+          list(getattr(tab.parallel_combo, "items", [])) ==
+          [module.PARALLEL_LABELS[n] for n in module.PARALLEL_ORDER],
+          str(getattr(tab.parallel_combo, "items", None)))
+    check("P10-3 当前路数从缓存读取", tab.current_parallel() == 1)
+    check("P10-4 显存估算标签存在",
+          getattr(tab, "vram_label", None) is not None)
+    src_engine = inspect.getsource(module.LlamaServer._start_once)
+    check("P10-5 总上下文按路数放大",
+          "self.ctx_size * self.parallel" in src_engine)
+    src_job = inspect.getsource(module.TranslationJob._run_reference_layer)
+    check("P10-6 文本表并发派发",
+          "ThreadPoolExecutor(max_workers=self.parallel)" in src_job)
+
+
 def main():
     module = load_module()
     api, tab, ok = make_tab(module)
@@ -363,6 +385,7 @@ def main():
     t_p7(module, api, tab)
     t_p8(module, api, tab)
     t_p9(module)
+    t_p10(module, api, tab)
 
     passed = sum(1 for _n, ok, _d in RESULTS if ok)
     failed = [(n, d) for n, ok, d in RESULTS if not ok]

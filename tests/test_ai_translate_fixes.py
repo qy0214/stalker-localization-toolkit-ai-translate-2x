@@ -1353,11 +1353,12 @@ def t26_cuda13_fallback():
     def fake_server_cls(raise_on_13, gpu_13=False):
         class FakeSrv(object):
             def __init__(self, exe, model, variant, log, ctx_size=8192,
-                         tier="", gpu_layers=99):
+                         tier="", gpu_layers=99, parallel=1):
                 self.exe = exe
                 self.model = model
                 self.variant = variant
                 self.ctx_size = ctx_size
+                self.parallel = parallel
                 self.gpu_verified = (variant == "cuda")
                 self.health_warn = ""
 

@@ -1253,6 +1253,14 @@ MODE_LABELS = {
 }
 MODE_ORDER = ("auto", "text", "cfgxml", "ltx", "scriptL", "scriptE")
 
+# 多路翻译：引擎槽位数 = 这里的路数；显存/内存随路数线性增加。
+PARALLEL_ORDER = (1, 2, 4)
+PARALLEL_LABELS = {
+    1: "1 路（最稳，默认）",
+    2: "2 路（推荐，实测约 1.7×）",
+    4: "4 路（需 ≥8GB 显存）",
+}
+
 
 def _model_task(tier):
     p = TIER_PROFILES[tier]
@@ -1707,6 +1715,7 @@ DEFAULT_CONFIG = {
     "exe_paths": {},
     "custom_model_path": "",
     "custom_ctx": 8192,
+    "parallel": 1,
     "tier": "7b",
     "variant": "cpu",
     "in_dir": "",
@@ -1759,6 +1768,11 @@ def load_config():
     cp = cfg.get("custom_model_path")
     if cp and (not isinstance(cp, str) or not os.path.isfile(cp)):
         cfg["custom_model_path"] = ""
+    try:
+        par = int(cfg.get("parallel", 1))
+    except (TypeError, ValueError):
+        par = 1
+    cfg["parallel"] = par if par in (1, 2, 4) else 1
     return cfg
 
 
@@ -2389,6 +2403,53 @@ def read_gguf_meta(path, want=("tokenizer.chat_template",
     return out
 
 
+def _fmt_mem(mib):
+    return ("%.2f GB" % (float(mib) / 1024.0)) if mib >= 1024 \
+        else ("%d MB" % int(mib))
+
+
+def estimate_vram_mib(model, ctx_per_route, parallel=1, gpu_layers=99):
+    """按模型结构和路数估算显存（MiB）：权重 + KV + 计算缓冲。
+
+    llama.cpp 的 KV 缓存按 token 计：layers × kv_heads × (key+value) × 2 字节
+    （f16）。实测本模型 32 层 / 4 KV 头 / 128+128 ⇒ 64 KiB/token，
+    16384 token 正好 1024 MiB，与 server 日志一致。读不到 GGUF 结构时
+    退回 64 KiB/token 的经验值，并在结果里标注 approx。
+    """
+    out = {"weights": 0, "kv": 0, "compute": 68, "total": 68,
+           "approx": True, "ok": False}
+    if not model or not os.path.isfile(model):
+        return out
+    try:
+        base = read_gguf_meta(model, want=("general.architecture",))
+        arch = str(base.get("general.architecture") or "").strip()
+        want = ()
+        if arch:
+            want = tuple(arch + "." + suffix for suffix in (
+                "block_count", "attention.head_count_kv",
+                "attention.key_length", "attention.value_length"))
+        meta = read_gguf_meta(model, want=want)
+        layers = int(meta.get(arch + ".block_count", 0))
+        heads = int(meta.get(arch + ".attention.head_count_kv", 0))
+        klen = int(meta.get(arch + ".attention.key_length", 0))
+        vlen = int(meta.get(arch + ".attention.value_length", 0))
+        if layers <= 0 or heads <= 0 or klen <= 0 or vlen <= 0:
+            raise ValueError("GGUF 缺少 KV 结构字段")
+        per_token = layers * heads * (klen + vlen) * 2
+        out["approx"] = False
+    except Exception:
+        per_token = 64 * 1024
+    kv = int(ctx_per_route) * max(1, int(parallel)) * per_token
+    try:
+        weights = os.path.getsize(model) if int(gpu_layers) > 0 else 0
+    except OSError:
+        weights = 0
+    out.update(weights=weights, kv=kv,
+               total=weights + kv + out["compute"] * 1024 * 1024,
+               ok=True)
+    return out
+
+
 
 
 def sha256_file(path):
@@ -2623,14 +2684,14 @@ class LlamaServer(object):
                          % (name, len(meta["tokenizer.chat_template"]),
                             meta.get("tokenizer.ggml.eos_token_id")), "dim")
 
+        # ctx_size 是「每路」上下文；llama-server 会把总上下文平均分给各槽位，
+        # 所以多路时总 ctx 乘以路数，才能保证每条文本仍有同样的上下文预算。
         args = [self.exe,
                 "--model", self.model,
                 "--host", "127.0.0.1",
                 "--port", str(self.port),
-                "--ctx-size", str(self.ctx_size),
+                "--ctx-size", str(self.ctx_size * self.parallel),
                 "--n-gpu-layers", str(self.gpu_layers),
-                # 翻译请求是串行的：1 个槽位足够。新版 llama-server 的
-                # auto 会给 4 个槽位（每槽一套 16K 上下文），白占显存/内存。
                 "--parallel", str(self.parallel),
                 "--temp", "0.1"]
         if self.variant in GPU_VARIANTS:
@@ -2648,9 +2709,9 @@ class LlamaServer(object):
                         "cuda13": "CUDA 13.4/GPU",
                         "vulkan": "Vulkan/GPU"}.get(self.variant, self.variant)
         self.log("启动 llama-server（%s，%s 档，%d 层 GPU offload，"
-                 "上下文 %d token），端口 %d"
+                 "上下文 %d token × %d 路），端口 %d"
                  % (backend_name, self.tier or "-", self.gpu_layers,
-                    self.ctx_size, self.port))
+                    self.ctx_size, self.parallel, self.port))
         self.log("运行日志：%s" % log_file)
         self.proc = subprocess.Popen(
             args, cwd=os.path.dirname(self.exe), stdout=self._log_fp,
@@ -3826,6 +3887,23 @@ def style_cleanup_cn(text):
 
 
 class TranslationJob(object):
+    # 场景上下文/风格提示必须是线程局部的：多路并发时各 worker 不能互相覆盖。
+    @property
+    def _ctx_hint(self):
+        return getattr(self._tls, "ctx", "")
+
+    @_ctx_hint.setter
+    def _ctx_hint(self, value):
+        self._tls.ctx = value or ""
+
+    @property
+    def _style_hint(self):
+        return getattr(self._tls, "style", "dialogue")
+
+    @_style_hint.setter
+    def _style_hint(self, value):
+        self._tls.style = value or "dialogue"
+
     def __init__(self, parser, server, in_dir, mode, src_lang, tgt_lang,
                  reuse_dir=None, glossary=None, output_anyway=False,
                  force_glossary=True, ctx_size=8192, out_dir=None,
@@ -3834,7 +3912,7 @@ class TranslationJob(object):
                  only_referenced=False, protect_proper=True,
                  preview_reference=False, hard_glossary_keys=None,
                  translate_literals=False, auto_session_terms=False,
-                 session_cache_dir=None, tm_lite=True):
+                 session_cache_dir=None, tm_lite=True, parallel=1):
         self.p = parser
         self.srv = server
         self.in_dir = in_dir
@@ -3856,11 +3934,14 @@ class TranslationJob(object):
             self.glossary.setdefault(_k, _v)
         self.output_anyway = output_anyway
         self.force_glossary = force_glossary
-        self._ctx_hint = ""
-        self._style_hint = "dialogue"
+        self._tls = threading.local()
         self.dialogue_temp = 0.1
         self.batch_stats = {"batches": 0, "lines": 0, "failed": 0}
         self.ctx_size = int(ctx_size)
+        self.parallel = max(1, min(4, int(parallel)))
+        # 多路并发时所有 worker 共享计数/缓存/账本，写操作统一加锁。
+        self._stat_lock = threading.Lock()
+        self._ledger_lock = threading.RLock()
         self.safe_chars = safe_chunk_chars(self.ctx_size)
         self.long_chunks = 0
         # ID 引用层模式：文本正文在 configs/text 的条目里，XML/脚本只放 ID。
@@ -4191,7 +4272,8 @@ class TranslationJob(object):
                         content, max(4, len(content) // 2)))
         parts = split_protected(content, self.safe_chars, _ANY_PLACEHOLDER_RE)
         if len(parts) > 1:
-            self.long_chunks += max(0, len(parts) - 1)
+            with self._stat_lock:
+                self.long_chunks += max(0, len(parts) - 1)
             self.log("  长文本 %d 字符 → 自动切为 %d 段翻译（%s 上下文窗）"
                      % (len(content), len(parts), self.ctx_size))
         return "".join(
@@ -4212,10 +4294,12 @@ class TranslationJob(object):
         stripped = text.strip()
         if (not self.force_glossary and stripped in self.glossary
                 and stripped not in self.session_only_keys):
-            self.req_count += 1
+            with self._stat_lock:
+                self.req_count += 1
             return text.replace(stripped, self.glossary[stripped])
-        self.req_count += 1
-        self.trans_chars += len(text)
+        with self._stat_lock:
+            self.req_count += 1
+            self.trans_chars += len(text)
         hints = None if self.force_glossary else self._glossary_hits(text)
         return self._translate_chunk(text, lang, hints, note=note)
 
@@ -4244,8 +4328,9 @@ class TranslationJob(object):
             return text
         hit = self._tm_lookup(text, lang)
         if hit is not None:
-            self.tm_stats["hits"] += 1
-            self.tm_stats["saved_chars"] += len(text)
+            with self._stat_lock:
+                self.tm_stats["hits"] += 1
+                self.tm_stats["saved_chars"] += len(text)
             self.detail("  TM-lite 精确复用：%s" % str(text)[:60])
             return hit
         normalized = unescape_newlines(text)
@@ -4532,8 +4617,9 @@ class TranslationJob(object):
 
     def _translate_masked(self, masked, lang, note=""):
         """把已占位符化的整串交给模型翻一次（超长时按句切分，不丢占位符）。"""
-        self.req_count += 1
-        self.trans_chars += len(masked)
+        with self._stat_lock:
+            self.req_count += 1
+            self.trans_chars += len(masked)
         if len(masked) <= self.safe_chars:
             return self.srv.translate(
                 masked, lang, self.tgt, extra_sys=note or None,
@@ -4541,7 +4627,8 @@ class TranslationJob(object):
                 style=getattr(self, "_style_hint", "dialogue"),
                 temperature=self._temp_for_style())
         parts = split_protected(masked, self.safe_chars, _PLACEHOLDER_RE)
-        self.long_chunks += max(0, len(parts) - 1)
+        with self._stat_lock:
+            self.long_chunks += max(0, len(parts) - 1)
         self.log("  长文本 %d 字符 → 自动切为 %d 段翻译（%s 上下文窗）"
                  % (len(masked), len(parts), self.ctx_size))
         return "".join(self._translate_masked(seg, lang, note)
@@ -4762,14 +4849,16 @@ class TranslationJob(object):
     def _save_ledger(self):
         if not self._ledger_path:
             return
-        try:
-            tmp = self._ledger_path + ".tmp"
-            with open(tmp, "w", encoding="utf-8") as f:
-                json.dump(self._ledger, f, ensure_ascii=False, sort_keys=True)
-            os.replace(tmp, self._ledger_path)
-            self._ledger_saved = time.time()
-        except OSError:
-            pass
+        with self._ledger_lock:
+            try:
+                tmp = self._ledger_path + ".tmp"
+                with open(tmp, "w", encoding="utf-8") as f:
+                    json.dump(self._ledger, f, ensure_ascii=False,
+                              sort_keys=True)
+                os.replace(tmp, self._ledger_path)
+                self._ledger_saved = time.time()
+            except OSError:
+                pass
 
     def _record_done(self, rel, full, out_path):
         try:
@@ -4777,15 +4866,16 @@ class TranslationJob(object):
             ost = os.stat(out_path)
         except OSError:
             return
-        self._ledger[rel.replace("\\", "/")] = {
-            "in_size": ist.st_size,
-            "in_mtime_ns": ist.st_mtime_ns,
-            "out_size": ost.st_size,
-        }
-        # 每文件全量重写是 O(n²)（几千文件时写放大明显）；5 秒节流，
-        # 崩溃最多让最近几秒的文件下次重译（不会漏、不会错）。
-        if time.time() - self._ledger_saved > 5:
-            self._save_ledger()
+        with self._ledger_lock:
+            self._ledger[rel.replace("\\", "/")] = {
+                "in_size": ist.st_size,
+                "in_mtime_ns": ist.st_mtime_ns,
+                "out_size": ost.st_size,
+            }
+            # 每文件全量重写是 O(n²)（几千文件时写放大明显）；5 秒节流，
+            # 崩溃最多让最近几秒的文件下次重译（不会漏、不会错）。
+            if time.time() - self._ledger_saved > 5:
+                self._save_ledger()
 
     def _output_covers_input(self, full, out_path):
         """输出 XML 是否包含输入的全部 string id（用于旧输出版本迁移）。"""
@@ -5188,13 +5278,39 @@ class TranslationJob(object):
         tables = sorted(self._table_entries)
         n_tables = len(tables)
         changed = copied = translated = skipped = failed = 0
-        for idx, full in enumerate(tables, 1):
-            if self._cancelled():
-                self.log("已取消，已处理的文本表保留在输出目录")
-                return False
+
+        def _one(item):
+            idx, full = item
             rel = os.path.relpath(full, self.in_dir)
             out_path = os.path.join(done_dir, rel)
             st = self._translate_table(full, out_path, rel)
+            return idx, rel, st
+
+        items = list(enumerate(tables, 1))
+        if self.parallel > 1:
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+            self.log("多路翻译：%d 路并发处理 %d 张文本表（每路 %d token）"
+                     % (self.parallel, n_tables, self.ctx_size), "ok")
+            results = []
+            with ThreadPoolExecutor(max_workers=self.parallel) as pool:
+                futures = [pool.submit(_one, item) for item in items]
+                for fut in as_completed(futures):
+                    if self._cancelled():
+                        for f in futures:
+                            f.cancel()
+                        self.log("已取消，已处理的文本表保留在输出目录")
+                        return False
+                    results.append(fut.result())
+            results.sort(key=lambda x: x[0])
+        else:
+            results = []
+            for item in items:
+                if self._cancelled():
+                    self.log("已取消，已处理的文本表保留在输出目录")
+                    return False
+                results.append(_one(item))
+
+        for idx, rel, st in results:
             translated += st["translated"]
             skipped += st["skipped"]
             failed += st["failed"]
@@ -5369,9 +5485,10 @@ class TranslationJob(object):
                 if k not in seen:
                     seen.add(k)
                     pairs.append((k, v))
-        self.batch_stats["batches"] += 1
-        self.req_count += 1
-        self.trans_chars += sum(len(x["src"]) for x in batch)
+        with self._stat_lock:
+            self.batch_stats["batches"] += 1
+            self.req_count += 1
+            self.trans_chars += sum(len(x["src"]) for x in batch)
         try:
             out = self.srv.translate_batch(
                 lines, batch[0]["lang"], self.tgt,
@@ -5425,7 +5542,9 @@ class TranslationJob(object):
             st["copied"] = True
             self._record_done(rel, full, out_path)
             return st
-        if self.tm_lite and not self._tm_global_enabled:
+        # 多路并发时表级 TM 的 _tm_local_enabled/_tm_cache 是实例状态，
+        # 会被其他 worker 覆盖；只保留任务级全局 TM（在并发前已算好）。
+        if self.tm_lite and not self._tm_global_enabled and self.parallel == 1:
             tm_values = []
             for ent in ents:
                 _lang, src = self._pick_source(ent)
@@ -6419,6 +6538,7 @@ class AiTranslateTab(object):
         self._starting = False
         self._cfg_save_warned = False
         self._hw_cuda13_ok = False
+        self._hw_vram_mb = 0
         self._log_pending = False
         self.scan_info = None
         self.scan_dir = None
@@ -6437,6 +6557,7 @@ class AiTranslateTab(object):
             "variant": variant0,
             "tier": tier0,
             "ctx": str(self.cfg.get("custom_ctx", 8192)),
+            "parallel": int(self.cfg.get("parallel", 1)),
             "mode": self.cfg.get("mode", "auto"),
             "lang": self.cfg.get("src_lang", "auto"),
         }
@@ -6498,6 +6619,8 @@ class AiTranslateTab(object):
     def _apply_hw(self, hw, silent=False):
         _label_set(self.hw_label, hw["short"])
         self._hw_cuda13_ok = bool(hw.get("cuda13_ok"))
+        self._hw_vram_mb = int(hw.get("vram") or 0)
+        self.refresh_vram_estimate()
         if not self.cfg.get("variant_chosen"):
             vals = [VARIANT_LABELS[v] for v in VARIANT_ORDER]
             vi = VARIANT_ORDER.index(hw["variant"])
@@ -6613,7 +6736,8 @@ class AiTranslateTab(object):
         p = self.parent
         ui.label(p, "AI 离线翻译（本地推理，不联网翻译）· 按①→⑤操作")
 
-        titles = ("① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译")
+        titles = ("① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译",
+                  "⑥ 术语（可选）")
         pages = None
         try:
             tabs = ui.tabs(p)
@@ -6630,21 +6754,29 @@ class AiTranslateTab(object):
                 pass
 
         if pages:
-            hw_p, rt_p, model_p, engine_p, job_p = pages
+            hw_p, rt_p, model_p, engine_p, job_p, gloss_p = pages
             log_p = job_p
             try:
                 count = ui.tabs_page_count(tabs)
             except Exception:
                 count = len(pages)
-            self.api.log("AI 翻译界面已分 %s 个步骤页签（①→⑤）" % count)
+            self.api.log("AI 翻译界面已分 %s 个页签（①→⑤ + ⑥术语可选）"
+                         % count)
+            # 短内容页签不要再被宿主最小高度撑出一大片空白。
+            try:
+                for short_p in (hw_p, rt_p, engine_p, gloss_p):
+                    ui.viewport_set_min_body_height(short_p, 80)
+            except Exception:
+                pass
         else:
-            hw_p = rt_p = model_p = engine_p = job_p = log_p = p
+            hw_p = rt_p = model_p = engine_p = job_p = gloss_p = log_p = p
 
         self._build_step_hw(hw_p)
         self._build_step_runtime(rt_p)
         self._build_step_model(model_p)
         self._build_step_engine(engine_p)
         self._build_step_job(job_p)
+        self._build_step_glossary(gloss_p)
 
         # 日志栏：只读多行视图；追加走 log_view_append（一次一行，不重写全文）
         self.log_view = ui.log_view(log_p, 9)
@@ -6728,10 +6860,19 @@ class AiTranslateTab(object):
     def _build_step_engine(self, p):
         ui = self.ui
         self._section(p, "④ 启动引擎")
+        ui.label(p, "多路翻译（文本表并发路数）")
+        par_vals = [PARALLEL_LABELS[v] for v in PARALLEL_ORDER]
+        self.parallel_combo = ui.combo(
+            p, par_vals, on_change=lambda v: self._on_parallel(v))
+        _combo_set(self.parallel_combo, par_vals,
+                   PARALLEL_ORDER.index(self.sel["parallel"]))
+        self.vram_label = ui.label(p, "显存估算：等待选择模型…")
+
         self.btn_start = ui.button(p, "启动引擎", self.on_start)
         self.btn_stop = ui.button(p, "停止", self.on_stop, enabled=False)
         self.engine_status = ui.label(p, "引擎未启动")
         ui.label(p, "引擎就绪后，到「⑤ 翻译」页开始处理。")
+        self.refresh_vram_estimate()
 
     def _build_step_job(self, p):
         ui = self.ui
@@ -6784,7 +6925,18 @@ class AiTranslateTab(object):
             p, "重复句精确复用（TM-lite，高重复时自动）", None)
         _chk_set(self.tm_chk, self.flags["tm_lite"])
 
-        self._section(p, "术语表")
+        # 进度条：下载（按字节）与翻译（按文件）共用；set_progress 只收整数百分比
+        self.progress = ui.progress(p)
+        ui.set_progress(self.progress, 0)
+
+        self.btn_run = ui.button(p, "开始翻译", self.on_run)
+        self.btn_run_cancel = ui.button(
+            p, "取消", self.on_cancel_run, enabled=False)
+
+    def _build_step_glossary(self, p):
+        """⑥ 术语（可选）：附加提示词 + 强制术语，按需才切到这里。"""
+        ui = self.ui
+        self._section(p, "⑥ 术语（可选，不影响前五步）")
         ui.label(p, "附加提示词/约束（可选，追加到内置规则后）")
         self.btn_extra_demo = ui.button(p, "填入示例", self.on_extra_demo)
         self.extra_prompt = ui.text(p, height=2, wrap="word")
@@ -6801,14 +6953,6 @@ class AiTranslateTab(object):
         self.btn_gloss_export = ui.button(p, "导出 JSON", self.on_gloss_export)
         self.btn_gloss_clear = ui.button(p, "清空", self.on_gloss_clear)
 
-        # 进度条：下载（按字节）与翻译（按文件）共用；set_progress 只收整数百分比
-        self.progress = ui.progress(p)
-        ui.set_progress(self.progress, 0)
-
-        self.btn_run = ui.button(p, "开始翻译", self.on_run)
-        self.btn_run_cancel = ui.button(
-            p, "取消", self.on_cancel_run, enabled=False)
-
     def current_tier(self):
         """当前模型档位（读跨线程缓存 `self.sel`，不碰控件）。"""
         tier = self.sel.get("tier")
@@ -6818,6 +6962,63 @@ class AiTranslateTab(object):
         """当前后端（读跨线程缓存 `self.sel`，不碰控件）。"""
         variant = self.sel.get("variant")
         return variant if variant in VARIANT_ORDER else "cpu"
+
+    def current_parallel(self):
+        p = self.sel.get("parallel", 1)
+        return p if p in PARALLEL_ORDER else 1
+
+    def _on_parallel(self, value=None):
+        if value:
+            for n in PARALLEL_ORDER:
+                if str(value).startswith(str(n) + " "):
+                    self.sel["parallel"] = n
+                    break
+        self.cfg["parallel"] = self.current_parallel()
+        save_config(self.cfg)
+        self.refresh_vram_estimate()
+        if self.current_parallel() > 1:
+            self.log("多路翻译：%d 路并发；显存占用见「④ 引擎」页估算"
+                     % self.current_parallel(), "dim")
+
+    def _route_ctx(self):
+        tier = self.current_tier()
+        if tier == "custom":
+            try:
+                return max(1024, int(self.sel.get("ctx", 8192)))
+            except (TypeError, ValueError):
+                return 8192
+        return int(TIER_PROFILES[tier]["ctx"])
+
+    def refresh_vram_estimate(self):
+        label = getattr(self, "vram_label", None)
+        if label is None:
+            return
+        model = self.find_model()
+        par = self.current_parallel()
+        ctx = self._route_ctx()
+        key = (model, ctx, par, self.current_variant())
+        est = getattr(self, "_vram_cache", {}).get(key)
+        if est is None:
+            est = estimate_vram_mib(
+                model, ctx, par,
+                gpu_layers=99 if self.current_variant() != "cpu" else 0)
+            if not hasattr(self, "_vram_cache"):
+                self._vram_cache = {}
+            self._vram_cache[key] = est
+        if not est.get("ok") or not model:
+            _label_set(label, "显存估算：未选择模型（下载后自动刷新）")
+            return
+        vram = int(getattr(self, "_hw_vram_mb", 0) or 0)
+        suffix = (" / 显卡 %s" % _fmt_mem(vram)) if vram else ""
+        warn = ""
+        if vram and est["total"] > vram * 0.9:
+            warn = "　⚠ 可能超出显存"
+        _label_set(label, "显存估算：%s（权重 %s + KV %s × %d 路 + 缓冲 %d MB）"
+                   "%s%s%s"
+                   % (_fmt_mem(est["total"]), _fmt_mem(est["weights"]),
+                      _fmt_mem(est["kv"] // par), par, est["compute"],
+                      suffix, warn,
+                      "　※ 按 GGUF 元数据估算" if est.get("approx") else ""))
 
     def _on_variant(self, value=None, save_chosen=True):
         """后端下拉变更（2.x 回调把新值作为第一个参数传进来）。"""
@@ -6839,6 +7040,7 @@ class AiTranslateTab(object):
         if v in GPU_VARIANTS and not self.find_exe(v):
             self.log("%s 运行库未安装，点②「下载运行库」"
                      % VARIANT_LABELS[v].split("（")[0], "warn")
+        self.refresh_vram_estimate()
 
     def model_candidates(self, tier=None):
         tier = tier or self.current_tier()
@@ -6966,6 +7168,12 @@ class AiTranslateTab(object):
             _combo_get(self.variant_combo))
         self.cfg["tier"] = self.sel["tier"]
         self.cfg["variant"] = self.sel["variant"]
+        par_text = _combo_get(getattr(self, "parallel_combo", None))
+        for n in PARALLEL_ORDER:
+            if str(par_text).startswith(str(n) + " "):
+                self.sel["parallel"] = n
+                break
+        self.cfg["parallel"] = self.current_parallel()
         try:
             self.cfg["in_dir"] = _entry_get(self.in_box)
             self.cfg["out_dir"] = _entry_get(self.out_box)
@@ -7261,6 +7469,7 @@ class AiTranslateTab(object):
         if self.server and self.server.is_running():
             self.log("已切换模型档，运行中的引擎仍是旧模型，重启引擎生效",
                      "warn")
+        self.refresh_vram_estimate()
 
     def _probe_task_key(self, kind):
         if kind == "rt":
@@ -7672,15 +7881,18 @@ class AiTranslateTab(object):
             return
         need_stop = False
         if self.server and self.server.is_running():
-            sig = (self.server.model, self.server.variant, self.server.ctx_size)
-            if sig == (model, variant, ctx):
-                self.log("引擎已在运行（相同模型/上下文）")
+            par = self.current_parallel()
+            sig = (self.server.model, self.server.variant,
+                   self.server.ctx_size, getattr(self.server, "parallel", 1))
+            if sig == (model, variant, ctx, par):
+                self.log("引擎已在运行（相同模型/上下文/%d 路）" % par)
                 return
             need_stop = True
         self._starting = True
         self.ui.set_enabled(self.btn_start, False)
-        self.log("正在加载 %s，上下文 %d token，首次加载较慢，请稍候…"
-                 % (TIER_PROFILES[tier]["combo"][:2], ctx))
+        self.log("正在加载 %s，上下文 %d token × %d 路，首次加载较慢，请稍候…"
+                 % (TIER_PROFILES[tier]["combo"][:2], ctx,
+                    self.current_parallel()))
 
         def work():
             try:
@@ -7692,7 +7904,8 @@ class AiTranslateTab(object):
                     if old is not None:
                         old.stop()
                     self.server = None
-                self._spawn_server(exe, model, variant, ctx, tier)
+                self._spawn_server(exe, model, variant, ctx, tier,
+                                   self.current_parallel())
                 self.ui_call(self._engine_ui, True)
             except Exception as e:
                 self.ui_call(self.log, "引擎启动失败：%s" % e, "err")
@@ -7703,7 +7916,7 @@ class AiTranslateTab(object):
                              bool(self.server and self.server.is_running()))
         threading.Thread(target=work, daemon=True).start()
 
-    def _spawn_server(self, exe, model, variant, ctx, tier):
+    def _spawn_server(self, exe, model, variant, ctx, tier, parallel=1):
         """创建并启动引擎；CUDA 13.4 起不来或没上卡时自动回退 CUDA 12.4。
 
         13.4 的可用性只有"驱动 ≥ 580 / 计算能力 ≥ 7.5"这个门槛判据，
@@ -7714,7 +7927,7 @@ class AiTranslateTab(object):
             return LlamaServer(
                 e, model, v,
                 log=lambda m, tag="info": self.ui_call(self.log, m, tag),
-                ctx_size=ctx, tier=tier)
+                ctx_size=ctx, tier=tier, parallel=parallel)
 
         def fallback(reason):
             self.ui_call(self.log, "CUDA 13.4 %s，尝试回退 CUDA 12.4…"
@@ -7861,8 +8074,9 @@ class AiTranslateTab(object):
                 self._push_prompt_extra()
                 if self.scan_info and self.scan_dir == in_dir:
                     self.ui_call(self.log,
-                                 "上下文 %d token；最长文本 %d 字符，超长自动分句"
+                                 "上下文 %d token × %d 路；最长文本 %d 字符，超长自动分句"
                                  % (self.server.ctx_size,
+                                    getattr(self.server, "parallel", 1),
                                     self.scan_info["max_str"]))
 
                 job = TranslationJob(
@@ -7887,7 +8101,8 @@ class AiTranslateTab(object):
                     hard_glossary_keys=hard_glossary,
                     translate_literals=translate_literals,
                     auto_session_terms=session_glossary,
-                    tm_lite=tm_lite)
+                    tm_lite=tm_lite,
+                    parallel=getattr(self.server, "parallel", 1))
                 job.run()
             except Exception as e:
                 self.ui_call(self.log, "翻译失败：%s" % e, "err")
