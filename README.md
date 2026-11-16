@@ -17,6 +17,26 @@
 - 网络层用 ctypes 调系统 WinHTTP，不引入任何第三方 Python 依赖。
 - 界面完全走宿主 `api.ui` 门面；工作线程只操作数据，控件操作统一投递回 UI 线程。
 
+## 界面说明
+
+插件只在**工具集的一个工具页内**再分页：`① 硬件 / ② 环境 / ③ 模型 / ④ 引擎 / ⑤ 翻译 / ⑥ 术语（可选）`，
+不额外注册宿主工具页。
+
+![AI 翻译插件界面（翻译进行中）](docs/images/ai_translate_progress.png)
+
+- 顶部页签：插件页内切换六个步骤；⑥ 只放附加提示词与强制术语，不影响前五步。
+- `输出目录` / `文件类型` / `源语言`：翻译参数；`文件类型` 默认「auto 自动识别全部」。
+- 勾选项：强制术语、识别 ID 引用层、输出流补丁、只译引用项、保护专名/型号、先预览、
+  翻译脚本/XML 字面文本、自动生成当前 MOD 会话词表、重复时精确复用（TM-lite）。
+- 底部**进度条**：百分比语义不变 —— 下载按字节推进，翻译按本轮处理的文件数推进。
+- `阶段：翻译中 2/182 · configs\text\character_name\stable_generate_names.xml`：
+  当前处理到第几个文件、正在处理哪个。
+- `已翻译 2 / 1590 个文件（0%），条目 1765 条`：分母是**自动识别**出来的整个 MOD
+  待翻译文件总数（选目录或启动工具时后台勘察，只算确实含可译文本的文件），
+  分子是已翻译的文件数，括号后是累计翻译条目数。
+- `查看日志（弹窗）`：日志不占页面高度，点击在独立窗口看最近 300 行；
+  完整日志见 `%LOCALAPPDATA%\STALKER Localization Toolkit\ai_translate\logs\translate_run.log`。
+
 ## 安装
 
 把 `dist/ai_translate_plugin_v2.0.0.zip` 解压到工具集的 `plugins/` 目录，形成：
@@ -70,6 +90,7 @@
 | `tests/test_ai_translate_fixes.py` | 功能回归测试 |
 | `tests/test_share_package.py` | 分享包卫生与发布包一致性测试 |
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
+| `docs/images/` | README 引用的界面截图 |
 | `THIRD_PARTY_NOTICES.md` | 第三方来源、许可状态与致谢 |
 | `.github/workflows/ci.yml` | CI：跑全量测试 + 发布清单门禁 |
 
