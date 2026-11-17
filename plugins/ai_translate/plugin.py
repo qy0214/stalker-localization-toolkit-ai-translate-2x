@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -815,6 +815,17 @@ _SESSION_SKIP_DIRS = ("dialog", "news", "task", "tip", "stash", "secret",
 _SESSION_LIMITS = {"人物与军衔": 1500, "物品·武器·装备·神器": 500,
                    "地点与区域": 400, "阵营与组织": 150, "变异生物": 100}
 
+# ★ 2.0.3 高频专名定译：会话词表只扫“名字型”文件（人物/物品/地点目录），
+# 正文里反复出现却不在名字型文件里的专名（组织、事件、俚语地名等）仍会
+# 跨文件漂译。这里全文扫描高频词定译，并入软提示层收敛译名。
+_FREQ_NAME_MIN_TOTAL = 5    # 全文出现 ≥5 次才候选
+_FREQ_NAME_MIN_MID = 2      # 其中句中位置（前随空白/标点）≥2 次（滤句首普通词）
+_FREQ_NAME_LIMIT = 64       # 按频次取 top-N，控预算
+_FREQ_SCAN_FILE_CAP = 4000  # 解析文件数上限，防超大 MOD 拖慢启动
+_FREQ_WORD_RE = re.compile(r"[А-ЯЁ][а-яё]{2,}")
+_FREQ_MID_RE = re.compile(
+    r"(?<=[\s«„\"'(，。！？…：；—])[А-ЯЁ][а-яё]{2,}")
+
 # TM-lite：只在“同一批文本里重复句比例高”时启用**精确同源**复用。
 # 不做模糊匹配、不建跨 MOD 持久库、不把上一次任务的译文混进来。
 # 实测 NS7 182 张表：全局重复率 7.4%，5 张表 ≥20%（1,482 条）；
@@ -875,86 +886,94 @@ def session_term_shape(src, cat):
 
 TRANSLATION_SYS_PROMPT = (
     "你是《潜行者 S.T.A.L.K.E.R.》后末日游戏的专业译员，"
-    "输入为对话、任务或物品文本。严格遵守：\n"
-    "1. 下列内容逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
+    "输入为对话、任务或物品文本。遵守以下规则。\n"
+    "\n"
+    "【硬性规则】\n"
+    "1. 逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
     "控制符（$$ACTION$$、$变量）、脚本与条目ID（如 zat_b101_x、"
-    "sgtat_gen_text_1_x、a.b.c）、\\n；任何疑似代码或标记一律照抄勿译；\n"
+    "sgtat_gen_text_1_x、a.b.c）、\\n；疑似代码或标记一律照抄勿译；\n"
     "2. 人名、阵营、地名、怪物、武器物品等专名使用游戏约定译名，"
     "前后统一，不另译、不音译成多个版本；\n"
     "3. 忠实完整，不增译、不漏译、不脑补剧情；\n"
-    "4. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
-    "用中文的语序、短句和中文习惯的省略与断句，不要翻译腔"
-    "（不要「我不得不说」「就……而言」「如此」「因此」「并且」这类欧化说法，"
-    "不要生硬的被动句，不要把从句堆成长句，不要连缀多余的「的」）；"
-    "称呼、亲疏、口气与情绪贴合说话人身份，"
-    "自然使用「啊、吧、嘛、呢、唉、喂」等语气词；"
-    "但物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
-    "5. 粗话、脏话、辱骂、俚语、威胁、黑色幽默与残酷描写一律按原文原意直译，"
-    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写，"
-    "不得替换成书面语、委婉语或文雅说法（дерьмо 就是「屎／狗屎」，"
-    "不是「糟糕」；заткнись 就是「闭嘴」，不是「请安静」；"
-    "башку оторву 就是「拧下你的脑袋」，不是「我不会放过你」）；"
-    "原文粗俗则译文粗俗，不得因内容而回避或粉饰；\n"
-    "6. 只输出译文本身，不加任何解释或说明；原文已是目标语言时原样返回。\n"
-    "7. 术语提示只在语义相符时采用：同一拼写在普通语境（例如 крот=鼹鼠）\n"
-    "不要硬套人名译名；同一人物、物品、地名全篇保持同一个译名。\n"
-    "8. 输入是格变、复数、单数片段或半句时，按词库和上下文还原语义后\n"
-    "译成中文，不要保留原文，也不要只译一半。\n"
-    "9. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行。\n"
+    "4. 粗话、脏话、辱骂、威胁、黑色幽默与残酷描写一律按原意直译，"
+    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写成书面语、"
+    "委婉语（дерьмо 就是「屎／狗屎」，不是「糟糕」；заткнись 就是「闭嘴」，"
+    "不是「请安静」；башку оторву 就是「拧下你的脑袋」，"
+    "不是「我不会放过你」）；原文粗俗则译文粗俗，"
+    "不得因内容而回避或粉饰；\n"
+    "5. 输入是格变、复数、单数片段或半句时，按词库和上下文还原语义后\n"
+    "译成中文，不要保留原文，也不要只译一半；\n"
+    "6. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行；\n"
+    "\n"
+    "【语气与风格】\n"
+    "7. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
+    "用中文的语序、短句和中文习惯的省略与断句；称呼、亲疏、口气与情绪"
+    "贴合说话人身份，自然使用「啊、吧、嘛、呢、唉、喂」等语气词；\n"
+    "8. 不要翻译腔：不要「我不得不说」「就……而言」「如此」「因此」「并且」"
+    "这类欧化说法，不要生硬的被动句，不要把从句堆成长句，"
+    "不要连缀多余的「的」；\n"
+    "9. 物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
     "10. 反问、讽刺、威胁按说话人的意图译，不要逐字翻转否定："
     "«Ну а на хрен тебе не пойти?» 是「你他妈怎么还不滚？」，"
-    "不是「你别去了吧」。\n"
+    "不是「你别去了吧」；\n"
     "11. 引号不是保留原文的理由：引号内的阵营、组织、地名、物品、人名"
-    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文，"
-    "译文里不得残留整词或整段的俄文。\n"
+    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文；\n"
+    "12. 术语提示只在语义相符时采用：同一拼写在普通语境（例如 крот=鼹鼠）"
+    "不要硬套人名译名；同一人物、物品、地名全篇保持同一个译名。\n"
     "\n"
     "口语对照示例（左为生硬译法，右为地道中文；照右边的路子写）：\n"
     "· 「听着，我有件事要告诉你。」→「哎，我有事找你。」\n"
     "· 「我们无法再继续留在这里了。」→「这儿咱待不下去了。」\n"
     "· 「我不知道你该如何做到这一点。」→「我不知道你咋弄，反正东西我得要。」\n"
-    "· 「你明白正在发生什么吗？」→「你懂现在发生啥了吗？」"
+    "· 「你明白正在发生什么吗？」→「你懂现在发生啥了吗？」\n"
+    "\n"
+    "只输出译文本身，不加任何解释或说明；原文已是目标语言时原样返回。\n"
+    "最后再强调两条：占位符、控制符、条目ID 必须逐字保留；"
+    "译文里不得残留整词或整段的俄文。"
 )
 
-# 英语源文专用提示词。规则与俄语版相同，但把术语/粗口/口语锚例换成
-# 英语里最常见的误译点：小模型容易把英语委婉化、书面化，或把习语逐词直译。
+# 英语源文专用提示词。规则与俄语版同构（分区+首尾复述），把术语/粗口/
+# 口语锚例换成英语里最常见的误译点：小模型容易把英语委婉化、书面化，
+# 或把习语逐词直译。
 TRANSLATION_SYS_PROMPT_EN = (
     "你是《潜行者 S.T.A.L.K.E.R.》后末日游戏的专业译员，"
-    "输入可能是英语的对话、任务、物品或界面文本。严格遵守：\n"
-    "1. 下列内容逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
+    "输入可能是英语的对话、任务、物品或界面文本。遵守以下规则。\n"
+    "\n"
+    "【硬性规则】\n"
+    "1. 逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
     "控制符（$$ACTION$$、$变量）、脚本与条目ID（如 zat_b101_x、"
-    "sgtat_gen_text_1_x、a.b.c）、\\n；任何疑似代码或标记一律照抄勿译；\n"
+    "sgtat_gen_text_1_x、a.b.c）、\\n；疑似代码或标记一律照抄勿译；\n"
     "2. 人名、阵营、地名、怪物、武器物品等专名使用游戏约定译名；"
     "有官方中文名的用官方名，没有的按常见音译，首次出现后保持统一；"
     "缩写、型号、代号（AK-74、PDA、SEVA）保留原文，不要硬造中文；\n"
     "3. 忠实完整，不增译、不漏译、不脑补剧情；英语的冠词、助动词、"
     "重复主语不要逐词搬进中文；\n"
-    "4. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
-    "用中文的语序、短句和中文习惯的省略与断句，不要翻译腔"
-    "（不要「我不得不说」「就……而言」「如此」「因此」「并且」这类欧化说法，"
-    "不要生硬的被动句，不要把从句堆成长句，不要连缀多余的「的」）；"
-    "英语习语按中文口语意译（例如 It's a piece of cake → 小菜一碟），"
-    "不要逐词硬译；称呼、亲疏、口气与情绪贴合说话人身份，"
-    "自然使用「啊、吧、嘛、呢、唉、喂」等语气词；"
-    "但物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
-    "5. 粗话、脏话、辱骂、俚语、威胁、黑色幽默与残酷描写一律按原文原意直译，"
-    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写，"
-    "不得替换成书面语、委婉语或文雅说法（fuck 就是「操／妈的」，"
-    "shit 就是「屎／狗屎」，不是「糟糕」；shut up 就是「闭嘴」，"
-    "不是「请安静」；I'll rip your head off 就是「我拧下你的脑袋」，"
-    "不是「我不会放过你」）；原文粗俗则译文粗俗，不得因内容而回避或粉饰；\n"
-    "6. 只输出译文本身，不加任何解释或说明；原文已是中文时原样返回；"
-    "不要把英文原文抄进译文，也不要把规则复述出来。\n"
-    "7. 术语提示只在语义相符时采用；同一人物、物品、地名全篇保持同一个译名；"
-    "普通语境里的同形词不要硬套专名译名。\n"
-    "8. 输入是复数、缩写、单数片段或半句时，按词库和上下文还原语义后译成中文，"
-    "不要保留英文原文。\n"
-    "9. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行。\n"
+    "4. 粗话、脏话、辱骂、俚语、威胁、黑色幽默与残酷描写一律按原意直译，"
+    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写成书面语、"
+    "委婉语（fuck 就是「操／妈的」，shit 就是「屎／狗屎」，不是「糟糕」；"
+    "shut up 就是「闭嘴」，不是「请安静」；I'll rip your head off "
+    "就是「我拧下你的脑袋」，不是「我不会放过你」）；"
+    "原文粗俗则译文粗俗；\n"
+    "5. 输入是复数、缩写、单数片段或半句时，按词库和上下文还原语义后"
+    "译成中文，不要保留英文原文；\n"
+    "6. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行；\n"
+    "\n"
+    "【语气与风格】\n"
+    "7. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
+    "用中文的语序、短句和中文习惯的省略与断句；称呼、亲疏、口气与情绪"
+    "贴合说话人身份，自然使用「啊、吧、嘛、呢、唉、喂」等语气词；\n"
+    "8. 不要翻译腔：不要「我不得不说」「就……而言」「如此」「因此」「并且」"
+    "这类欧化说法，不要生硬的被动句，不要把从句堆成长句，"
+    "不要连缀多余的「的」；英语习语按中文口语意译"
+    "（例如 It's a piece of cake → 小菜一碟），不要逐词硬译；\n"
+    "9. 物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
     "10. 反问、讽刺、威胁按说话人的意图译，不要逐字翻转否定："
     "「Why don't you just leave?」是「你他妈怎么还不滚？」，"
-    "不是「你为什么不离开」。\n"
+    "不是「你为什么不离开」；\n"
     "11. 引号不是保留原文的理由：引号内的阵营、组织、地名、物品、人名"
-    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文，"
-    "译文里不得残留整词或整段的英文或俄文原文。\n"
+    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文；\n"
+    "12. 术语提示只在语义相符时采用；同一人物、物品、地名全篇保持同一个译名；"
+    "普通语境里的同形词不要硬套专名译名。\n"
     "\n"
     "英语口语对照示例（左为生硬译法，右为地道中文；照右边的路子写）：\n"
     "· 「Listen, I've got something to tell you.」→「哎，我有事找你。」\n"
@@ -962,7 +981,12 @@ TRANSLATION_SYS_PROMPT_EN = (
     "· 「I don't know how you're going to do it.」→「我不知道你咋弄，反正东西我得要。」\n"
     "· 「Do you understand what's going on?」→「你懂现在发生啥了吗？」\n"
     "· 「Get out of my sight.」→「滚，别让我看见你。」\n"
-    "· 「You're a dead man.」→「你死定了。」"
+    "· 「You're a dead man.」→「你死定了。」\n"
+    "\n"
+    "只输出译文本身，不加任何解释或说明；原文已是中文时原样返回；"
+    "不要把英文原文抄进译文，也不要把规则复述出来。\n"
+    "最后再强调两条：占位符、控制符、条目ID 必须逐字保留；"
+    "译文里不得残留整词或整段的英文或俄文原文。"
 )
 
 # 对话场景批量翻译：只用于连续短对话。1.8B 实测能保留 [n] 行号。
@@ -1033,6 +1057,9 @@ def has_cjk(text):
     return bool(re.search(r"[\u4e00-\u9fff]", text or ""))
 
 GLOSSARY_HINT_HEADER = "术语(用给定译名)：\n"
+# ★ 2.0.3 官方措辞 A/B：Hy-MT2 官方术语模板是「参考下面的翻译：X 翻译成 Y」，
+# 贴近训练分布的措辞可能遵循率更高；做成开关由用户对比。
+GLOSSARY_HINT_HEADER_OFFICIAL = "参考下面的翻译：\n"
 GLOSSARY_HINT_BUDGET = 240
 GLOSSARY_HINT_STOPWORDS = frozenset((
     "и", "в", "во", "не", "что", "он", "на", "я", "с", "со", "как", "а", "то",
@@ -1056,7 +1083,7 @@ GLOSSARY_HINT_STOPWORDS = frozenset((
 ))
 
 
-def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET):
+def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET, official=False):
     """把命中术语压成尽可能小的提示块，返回 (文本, 计费字符数)。
 
     计费字符数是**保守上界**（每行按含换行计、另预留与正文之间的空行），
@@ -1065,25 +1092,30 @@ def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET):
     规则：跳过功能词、大小写去重、按预算截断；超预算的长术语直接跳过而不是
     截半（半截术语反而会误导模型）。实测把原来的 15 条上限换成 240 字符预算
     后，每条请求少注入约 25% 字符，且长专名不再被短词挤掉。
+
+    official=True 用官方模板措辞（「X 翻译成 Y」），False 用自研格式（X=Y）。
     """
     seen = set()
     lines = []
-    used = len(GLOSSARY_HINT_HEADER) + 2
+    header = (GLOSSARY_HINT_HEADER_OFFICIAL if official
+              else GLOSSARY_HINT_HEADER)
+    used = len(header) + 2
+    fmt = "%s 翻译成 %s" if official else "%s=%s"
     for k, v in pairs:
         k = str(k).strip()
         lk = k.lower()
         if not k or lk in seen or lk in GLOSSARY_HINT_STOPWORDS:
             continue
         v = str(v)
-        cost = len(k) + len(v) + 2
+        cost = len(k) + len(v) + (4 if official else 2)
         if used + cost > budget:
             continue
         seen.add(lk)
-        lines.append("%s=%s" % (k, v))
+        lines.append(fmt % (k, v))
         used += cost
     if not lines:
         return "", 0
-    return GLOSSARY_HINT_HEADER + "\n".join(lines), used
+    return header + "\n".join(lines), used
 
 EXTRA_PROMPT_DEMO = (
     "· 语气语域：译文用冷峻简短的军事简报口吻，不用敬语、不加句末语气词。\n"
@@ -1741,6 +1773,10 @@ DEFAULT_CONFIG = {
     "tm_lite": True,
     "output_anyway": False,
     "prompt_extra": "",
+    # ★ 2.0.3：官方模板措辞 A/B（术语块「X 翻译成 Y」+ 指令对齐官方分布）
+    "official_prompts": False,
+    # ★ 2.0.3：全文高频专名定译（软提示收敛译名漂移）
+    "freq_names": True,
     "artifact_hashes": {},
 }
 
@@ -2835,9 +2871,13 @@ class LlamaServer(object):
 
         提示词里的语言用**全名**（"俄语"）而不是语言码（"ru"）：小模型对
         "将下面的ru文本翻译为简体中文"这类混排会偶发把 ru 当成待译内容。
+
+        official_prompts=True（config 开关）时 user 指令与术语块措辞对齐
+        Hy-MT2 官方模板分布，供 A/B 对比；system 规则两版共用。
         """
         if not self.is_running():
             raise IOError("引擎未运行")
+        official = bool(getattr(self, "official_prompts", False))
         if src_lang in ("auto", "text"):
             src_lang = detect_text_lang(text) or src_lang
         src = LANG_FULL.get(src_lang)
@@ -2850,7 +2890,10 @@ class LlamaServer(object):
             sys_msg = sys_msg + "\n补充要求（优先遵守）：\n" + extra
         if extra_sys:
             sys_msg = sys_msg + "\n补充要求（优先遵守）：\n" + extra_sys
-        if src and src_lang not in ("auto", "text"):
+        if official:
+            user_msg = ("将以下文本翻译为%s，注意只需要输出翻译后的结果，"
+                        "不要额外解释：\n%s" % (tgt, text))
+        elif src and src_lang not in ("auto", "text"):
             user_msg = "将下面的%s文本翻译为%s：\n%s" % (src, tgt, text)
         else:
             user_msg = "将下面文本翻译为%s：\n%s" % (tgt, text)
@@ -2858,7 +2901,8 @@ class LlamaServer(object):
             user_msg = ("上下文（仅供理解，不要翻译）：" + chr(10)
                         + str(context) + chr(10) + chr(10) + user_msg)
         if glossary_hits:
-            block, _used = glossary_hint_block(glossary_hits)
+            block, _used = glossary_hint_block(glossary_hits,
+                                               official=official)
             if block:
                 user_msg = block + "\n\n" + user_msg
         if max_tokens is None:
@@ -4002,7 +4046,7 @@ class TranslationJob(object):
                  preview_reference=False, hard_glossary_keys=None,
                  translate_literals=False, auto_session_terms=False,
                  session_cache_dir=None, tm_lite=True, parallel=1,
-                 pending_files=0):
+                 pending_files=0, freq_names=True):
         self.p = parser
         self.srv = server
         self.in_dir = in_dir
@@ -4061,6 +4105,10 @@ class TranslationJob(object):
         self.pending_files = int(pending_files or 0)
         self.req_count = 0
         self.trans_chars = 0
+        # ★ 2.0.3 规则违规遥测：kind -> {hits, retried_ok, fixed,
+        #   kept_first, kept_source}。收尾输出「提示词体检」报告，
+        #   为提示词迭代提供数据（哪条规则被违反最多）。
+        self._audit_stats = {}
         self.redundant = []
         self.failed_strings = 0
         self.empty_files = 0
@@ -4075,6 +4123,10 @@ class TranslationJob(object):
                            if hard_glossary_keys is not None else None)
         self.translate_literals = bool(translate_literals)
         self.auto_session_terms = bool(auto_session_terms)
+        self.auto_freq_names = bool(freq_names)
+        self.freq_names = {}
+        self.freq_stats = {"candidates": 0, "cached": 0,
+                           "translated": 0, "failed": 0}
         self.session_cache_dir = session_cache_dir or os.path.join(
             _DATA_ROOT, "session_terms")
         self.session_keys = set()
@@ -4407,6 +4459,34 @@ class TranslationJob(object):
             return 0.1
         return self.dialogue_temp
 
+    def _rule_hit(self, kind, outcome):
+        """规则违规遥测：kind=规则名，outcome=retried_ok/fixed/
+        kept_first/kept_source。线程安全（复用 _stat_lock）。"""
+        with self._stat_lock:
+            s = self._audit_stats.setdefault(kind, {})
+            s["hits"] = s.get("hits", 0) + 1
+            s[outcome] = s.get(outcome, 0) + 1
+
+    def _audit_report(self):
+        """任务收尾的「提示词体检」：按触发次数排序点名最高频违规规则。
+        零违规只落明细日志（GUI 日志风暴防线，T29），有违规才上界面。"""
+        if not self._audit_stats:
+            self.detail("提示词体检：全部规则零违规，内置提示词与规则约束有效")
+            return
+        ranked = sorted(self._audit_stats.items(),
+                        key=lambda kv: -kv[1].get("hits", 0))
+        labels = (("retried_ok", "重试成功"), ("fixed", "自动修复"),
+                  ("kept_first", "保留首译"), ("kept_source", "保留原文"))
+        parts = []
+        for kind, s in ranked:
+            bits = ["%d 次" % s.get("hits", 0)]
+            bits += ["%s %d" % (lab, s[oc]) for oc, lab in labels
+                     if s.get(oc)]
+            parts.append("%s（%s）" % (kind, " / ".join(bits)))
+        self.log("提示词体检：" + "；".join(parts))
+        self.log("最需要关注的规则：%s（触发最多，优先迭代）" % ranked[0][0],
+                 "warn")
+
     def _translate_one(self, text, lang, context="", style="dialogue"):
         """翻译一个文本串；运行期占位符先 mask，译后校验并回填。
 
@@ -4449,14 +4529,17 @@ class TranslationJob(object):
                 if retry is None:
                     self.detail("  运行占位符未原样保留，保留原文：%s"
                                 % str(text)[:60])
+                    self._rule_hit("占位符保留", "kept_source")
                     return text
                 self.detail("  控制符未保留，已按逐字保留要求重试：%s"
                             % str(text)[:50])
+                self._rule_hit("占位符保留", "retried_ok")
                 out = retry
             else:
                 out = restored
         if looks_like_prompt_echo(out):
             self.detail("  模型回显提示词，保留原文：%s" % str(text)[:60])
+            self._rule_hit("提示词回显", "kept_source")
             return text
         # 残留源词确定性替换：模型把专名原样保留时，直接按词库换掉；
         # 不调用模型，也不改动句子其它部分。替换后再看是否还残留俄文。
@@ -4483,16 +4566,55 @@ class TranslationJob(object):
                     and retry.count("\n") == source_nl:
                 self.detail("  换行数不符，已按原文段数重试：%s"
                             % str(text)[:50])
+                self._rule_hit("换行保真", "retried_ok")
                 out = retry
             else:
                 fixed = restore_linebreaks(out, source_nl)
                 if fixed != out:
                     self.detail("  换行数不符（%d→%d），按句末标点补回"
                                 % (source_nl, out.count("\n")))
+                    self._rule_hit("换行保真", "fixed")
                     out = fixed
                 else:
                     self.detail("  换行数与原文不一致（%d→%d），保留首次译文"
                                 % (source_nl, out.count("\n")))
+                    self._rule_hit("换行保真", "kept_first")
+        # ★ 2.0.3 长度比闸门：原文较长而译文长度比异常，多半是漏译
+        # （模型只翻了前半句）或过度扩写。带针对性要求重试一次；
+        # 仍异常则保留首次译文（漏译的译文仍比俄文原文强，不回退原文）。
+        # 短文本（<40 字符或可译词 <4）噪声大，不检；短标签不检。
+        if (self._style_hint != "label" and len(normalized.strip()) >= 40
+                and len(re.findall(r"[а-яёА-ЯЁ]{2,}|[A-Za-z]{2,}",
+                                   normalized)) >= 4):
+            src_len = max(1, len(normalized.strip()))
+            ratio = len(out.strip()) / src_len
+            if not (0.3 <= ratio <= 2.0):
+                note = ("译文长度与原文严重不符，疑似漏译或过度扩写；"
+                        "逐句对照原文完整翻译，不增译、不漏译、不概括。")
+                try:
+                    if mapping:
+                        retry_raw = self._translate_plain(
+                            masked, lang, note=note)
+                        retry = restore_runtime_tokens(retry_raw, mapping)
+                    else:
+                        retry = self._translate_plain(
+                            normalized, lang, note=note)
+                except Exception:
+                    retry = None
+                ok_ratio = False
+                if retry and not looks_like_prompt_echo(retry) \
+                        and 0.3 <= len(retry.strip()) / src_len <= 2.0:
+                    ok_ratio = True
+                if ok_ratio:
+                    self.detail("  译文长度比异常（%.2f），已按完整对照重试：%s"
+                                % (ratio, str(text)[:50]))
+                    self._rule_hit("长度比（漏译/扩写）", "retried_ok")
+                    out = retry
+                else:
+                    self.detail("  译文长度比异常（%.2f），重试未恢复，"
+                                "保留首次译文：%s"
+                                % (ratio, str(text)[:50]))
+                    self._rule_hit("长度比（漏译/扩写）", "kept_first")
         # 粗口保真闸门：原文有脏话/辱骂/威胁，译文却完全软化时，带
         # “保留同等力度”的补充要求重试一次；仍软化则保留第一次结果。
         if has_source_profanity(normalized) and not has_zh_profanity(out):
@@ -4510,7 +4632,10 @@ class TranslationJob(object):
                     and has_zh_profanity(retry):
                 self.detail("  粗口被软化，已按原文力度重试：%s"
                             % str(text)[:50])
+                self._rule_hit("粗口力度", "retried_ok")
                 out = retry
+            else:
+                self._rule_hit("粗口力度", "kept_first")
         # 完整性闸门：源文有可译内容，模型却原样回显/输出英文时重试一次。
         # 不处理纯型号（FX / ППШ-41）和无空格缩写，避免无意义请求。
         if (not has_cjk(out) and not has_cjk(text)
@@ -4532,7 +4657,10 @@ class TranslationJob(object):
                     and has_cjk(retry):
                 self.detail("  译文无中文，已按完整性要求重试：%s"
                             % str(text)[:50])
+                self._rule_hit("完整性（无中文）", "retried_ok")
                 out = retry
+            else:
+                self._rule_hit("完整性（无中文）", "kept_first")
         # 残留俄文闸门：中文译文里还夹着西里尔词，通常是引号内的格变专名
         # 被模型当成不可译名原样保留。带“引号内也要译”要求重试一次；
         # 仍残留则保留首次译文，不强行音译未知专名。
@@ -4554,7 +4682,10 @@ class TranslationJob(object):
                     and has_cjk(retry) and not _CYR_WORD_RE.search(retry):
                 self.detail("  译文残留俄文，已按引号内也译重试：%s"
                             % str(text)[:50])
+                self._rule_hit("残留源文", "retried_ok")
                 out = retry
+            else:
+                self._rule_hit("残留源文", "kept_first")
         final = escape_newlines(out)
         self._tm_store(normalized, lang, final)
         return final
@@ -4925,6 +5056,113 @@ class TranslationJob(object):
                     self.session_stats["translated"],
                     self.session_stats["failed"]), "dim")
 
+    def _build_freq_names(self):
+        """★ 2.0.3 高频专名定译：全文扫描正文高频词，复用会话词表的
+        批量定译与本机缓存管线，结果并入**软提示层**（术语提示只在语义
+        相符时采用），收敛自造译名的跨文件漂移。"""
+        if not self.srv or not self.srv.is_running():
+            return
+        total, mid, lang_of = {}, {}, {}
+        scanned = 0
+        for rel, full in self._collect_text_targets():
+            if self._cancelled():
+                return
+            if scanned >= _FREQ_SCAN_FILE_CAP:
+                break
+            scanned += 1
+            try:
+                ents = self._parse(self.p.parse_xray_text_xml, full,
+                                   read_encoding_chain(full))
+            except Exception:
+                continue
+            for ent in ents:
+                lang, src = self._pick_source(ent)
+                if not src or has_cjk(src):
+                    continue
+                for w in _FREQ_WORD_RE.findall(src):
+                    lang_of.setdefault(w, lang)
+                    total[w] = total.get(w, 0) + 1
+                for w in _FREQ_MID_RE.findall(src):
+                    mid[w] = mid.get(w, 0) + 1
+        stop = GLOSSARY_HINT_STOPWORDS
+        cand = []
+        for w, n in total.items():
+            if n < _FREQ_NAME_MIN_TOTAL or mid.get(w, 0) < _FREQ_NAME_MIN_MID:
+                continue
+            if len(w) <= 3 or w.lower() in stop or w in self.glossary:
+                continue
+            cand.append((n, w))
+        cand.sort(reverse=True)
+        cand = [w for _n, w in cand[:_FREQ_NAME_LIMIT]]
+        self.freq_stats = {"candidates": len(cand), "cached": 0,
+                           "translated": 0, "failed": 0}
+        if not cand:
+            self.freq_names = {}
+            return
+        raw = "\n".join("%s|%s" % (lang_of.get(w, self.src_lang), w)
+                        for w in cand)
+        fp = hashlib.sha1(
+            ("freq/1/" + raw).encode("utf-8", "replace")).hexdigest()
+        cache_path = os.path.join(self.session_cache_dir,
+                                  "freq_" + fp + ".json")
+        cached = {}
+        try:
+            data = json.load(open(cache_path, encoding="utf-8"))
+            if isinstance(data.get("terms"), dict):
+                cached = {str(k): str(v) for k, v in data["terms"].items()}
+        except Exception:
+            cached = {}
+        cache_low = {k.lower(): v for k, v in cached.items()}
+        self.freq_stats["cached"] = len(cache_low)
+        translated = {}
+        missing = [(w, lang_of.get(w, self.src_lang)) for w in cand
+                   if w.lower() not in cache_low]
+        by_lang = {}
+        for w, lang in missing:
+            by_lang.setdefault(lang, []).append(w)
+        for lang, items in by_lang.items():
+            for i in range(0, len(items), 20):
+                batch = items[i:i + 20]
+                got = self._translate_session_batch(batch, lang)
+                translated.update(got)
+                for w in batch:
+                    if w in got:
+                        continue
+                    self.session_requests += 1
+                    try:
+                        out = self.srv.translate(
+                            w, lang, self.tgt,
+                            extra_sys=_SESSION_TERM_NOTE)
+                    except Exception:
+                        continue
+                    dst = self._clean_term_line(out)
+                    if (dst and dst != w and has_cjk(dst)
+                            and not looks_like_prompt_echo(dst)
+                            and len(dst) <= 60):
+                        translated[w] = dst
+        merged = dict(cached)
+        merged.update(translated)
+        self.freq_stats["translated"] = len(translated)
+        self.freq_stats["failed"] = max(0, len(missing) - len(translated))
+        self.freq_names = merged
+        self.glossary.update(merged)
+        self.gloss_soft |= set(merged)
+        self.gloss = self._new_gloss_index()
+        try:
+            os.makedirs(self.session_cache_dir, exist_ok=True)
+            tmp = cache_path + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump({"_format": "ai-translate-freq-names/1",
+                           "fingerprint": fp, "terms": merged},
+                          f, ensure_ascii=False, indent=1, sort_keys=True)
+            os.replace(tmp, cache_path)
+        except OSError:
+            pass
+        self.log("高频专名定译：候选 %d，缓存 %d，新译 %d（软提示层）"
+                 % (self.freq_stats["candidates"],
+                    self.freq_stats["cached"],
+                    self.freq_stats["translated"]), "dim")
+
     def _is_stale_empty_output(self, out_path):
         """早期缺陷会给不含文本条目的文件生成空 XML 占位，
         这类“译文”必须能被重跑覆盖；有真实条目的输出一律保留。"""
@@ -5129,6 +5367,13 @@ class TranslationJob(object):
                 self.log("会话词表生成失败，继续使用通用术语库：%s：%s"
                          % (type(e).__name__, e), "warn")
 
+        if self.auto_freq_names and not self.preview_reference:
+            try:
+                self._build_freq_names()
+            except Exception as e:
+                self.log("高频专名定译失败，跳过：%s：%s"
+                         % (type(e).__name__, e), "warn")
+
         reuse = {}
         if (self.reuse_dir and os.path.isdir(self.reuse_dir)
                 and not self.reference_mode):
@@ -5212,6 +5457,12 @@ class TranslationJob(object):
             except Exception as e:
                 self.log("终检未完成（不影响已生成的输出）：%s: %s"
                          % (type(e).__name__, e), "warn")
+
+        # ★ 2.0.3 提示词体检：规则违规遥测汇总，为提示词迭代提供数据。
+        try:
+            self._audit_report()
+        except Exception:
+            pass
 
         self.log("全部完成：请求 %d 段，%s 字符%s" %
                  (self.req_count, _fmt_size(self.trans_chars),
@@ -6800,6 +7051,9 @@ class AiTranslateTab(object):
                 self.cfg.get("translate_literals", True)),
             "session_glossary": bool(self.cfg.get("session_glossary", True)),
             "tm_lite": bool(self.cfg.get("tm_lite", True)),
+            "freq_names": bool(self.cfg.get("freq_names", True)),
+            "official_prompts": bool(
+                self.cfg.get("official_prompts", False)),
         }
 
         try:
@@ -7207,9 +7461,15 @@ class AiTranslateTab(object):
         self.session_chk = ui.checkbox(
             p, "自动生成当前 MOD 会话词表（名字/物品/地点，本机缓存）", None)
         _chk_set(self.session_chk, self.flags["session_glossary"])
+        self.freq_chk = ui.checkbox(
+            p, "高频专名定译（正文高频词软提示，收敛译名漂移）", None)
+        _chk_set(self.freq_chk, self.flags["freq_names"])
         self.tm_chk = ui.checkbox(
             p, "重复句精确复用（TM-lite，高重复时自动）", None)
         _chk_set(self.tm_chk, self.flags["tm_lite"])
+        self.official_chk = ui.checkbox(
+            p, "官方模板措辞（A/B 对比用，默认用自研措辞）", None)
+        _chk_set(self.official_chk, self.flags["official_prompts"])
 
         self.btn_run = ui.button(p, "开始翻译", self.on_run)
         self.btn_run_cancel = ui.button(
@@ -7592,7 +7852,9 @@ class AiTranslateTab(object):
                 ("preview_reference", "preview_chk"),
                 ("translate_literals", "literal_chk"),
                 ("session_glossary", "session_chk"),
-                ("tm_lite", "tm_chk")):
+                ("tm_lite", "tm_chk"),
+                ("freq_names", "freq_chk"),
+                ("official_prompts", "official_chk")):
             w = getattr(self, attr, None)
             if w is not None:
                 self.flags[key] = _chk_get(w)
@@ -8402,10 +8664,15 @@ class AiTranslateTab(object):
         用真实启动 + gpu_verified 兜底，失败就退回兼容面更广的 12.4。
         """
         def build(v, e):
-            return LlamaServer(
+            srv = LlamaServer(
                 e, model, v,
                 log=lambda m, tag="info": self.ui_call(self.log, m, tag),
                 ctx_size=ctx, tier=tier, parallel=parallel)
+            # ★ 2.0.3 官方措辞 A/B 开关跟随每次引擎启动（含回退路径）。
+            srv.official_prompts = bool(
+                (getattr(self, "flags", {}) or {}).get(
+                    "official_prompts", False))
+            return srv
 
         def fallback(reason):
             self.ui_call(self.log, "CUDA 13.4 %s，尝试回退 CUDA 12.4…"
@@ -8591,6 +8858,7 @@ class AiTranslateTab(object):
                     translate_literals=translate_literals,
                     auto_session_terms=session_glossary,
                     tm_lite=tm_lite,
+                    freq_names=bool(self.flags.get("freq_names", True)),
                     parallel=getattr(self.server, "parallel", 1),
                     pending_files=pending_files)
                 job.run()

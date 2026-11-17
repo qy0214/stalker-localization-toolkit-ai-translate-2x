@@ -2,14 +2,14 @@
   "plugins": [
     {
       "id": "ai_translate",
-      "version": "2.0.2",
-      "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/download/v2.0.2/ai_translate_plugin_v2.0.2_install.zip",
-      "sha256": "21b2968b1b379f2f6a5b4b062f29e569e2377c4d9c11db35af201025d56eec41",
+      "version": "2.0.3",
+      "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/download/v2.0.3/ai_translate_plugin_v2.0.3_install.zip",
+      "sha256": "8f16433a04306b1717a15e61932558cfc7f1d0a4b25cc689e88bcf6c352b8f94",
       "entry": "plugin.py",
       "target": "ai_translate",
       "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
       "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
-      "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。2.0.2：多路翻译按显卡显存/内存动态生成 1..N 路选项（封顶 16），整 MOD 交付前新增全量终检。"
+      "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。2.0.3：规则违规遥测（提示词体检）、漏译/扩写长度比闸门、高频专名定译（软提示收敛译名漂移）、提示词分区化重构、官方模板措辞 A/B 开关。"
     }
   ]
 }
