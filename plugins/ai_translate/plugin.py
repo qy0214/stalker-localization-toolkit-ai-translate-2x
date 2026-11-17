@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1253,13 +1253,23 @@ MODE_LABELS = {
 }
 MODE_ORDER = ("auto", "text", "cfgxml", "ltx", "scriptL", "scriptE")
 
-# 多路翻译：引擎槽位数 = 这里的路数；显存/内存随路数线性增加。
-PARALLEL_ORDER = (1, 2, 4)
+# 多路翻译：引擎槽位数 = 这里的路数；显存/内存随路数线性增加（权重只加载一份）。
+# ★ 2.0.2：路数选项按检测到的硬件**动态生成**（1..max_n，封顶 PARALLEL_CAP）——
+#   GPU 后端按显存预算、CPU 后端按物理内存预算；预算口径与「显存估算」的 90%
+#   警戒线同源。并行单位是**文件**（每路独立翻自己的表，互不影响），且需要跨
+#   文件一致的东西（会话词表/任务级 TM/复用译文）都在并发前单线程算好，所以
+#   路数只改变"同时翻几个文件"，不改变任何一条文本的译文。硬件/模型信息不足
+#   时回落固定档 PARALLEL_ORDER（1/2/4），绝不编造。
+PARALLEL_ORDER = (1, 2, 4)       # 兜底固定档（信息不足时仍可用）
+PARALLEL_CAP = 16                # 动态路数上限：吞吐收益递减 + 槽位调度开销
+PARALLEL_GPU_BUDGET = 0.9        # 显存预算比例（与 refresh_vram_estimate ⚠ 同源）
+PARALLEL_CPU_BUDGET = 0.7        # 物理内存预算比例（系统/其它进程留量更大）
 PARALLEL_LABELS = {
     1: "1 路（最稳，默认）",
     2: "2 路（推荐，实测约 1.7×）",
     4: "4 路（需 ≥8GB 显存）",
 }
+# 旧的静态标签语义（2.0.2 起仅在回落固定档时使用）。
 
 
 def _model_task(tier):
@@ -1772,7 +1782,9 @@ def load_config():
         par = int(cfg.get("parallel", 1))
     except (TypeError, ValueError):
         par = 1
-    cfg["parallel"] = par if par in (1, 2, 4) else 1
+    # ★ 2.0.2：路数选项已动态化（1..PARALLEL_CAP），校验放宽为整数区间；
+    #   旧配置的 1/2/4 原样兼容，越界/垃圾值回落 1。
+    cfg["parallel"] = par if 1 <= par <= PARALLEL_CAP else 1
     return cfg
 
 
@@ -2453,6 +2465,68 @@ def estimate_vram_mib(model, ctx_per_route, parallel=1, gpu_layers=99):
     return out
 
 
+def physical_ram_mb():
+    """物理内存 MiB（GlobalMemoryStatusEx，纯 Win API、零依赖）。
+
+    与 detect_nvidia_gpu 同族的本地硬件探测：非 Windows 或取不到一律返回 0，
+    调用方据此回落固定档位，**不编造近似值**（与 detect_all_gpus 的口径一致）。
+    """
+    if sys.platform != "win32":
+        return 0
+
+    class _MEMORYSTATUSEX(ctypes.Structure):
+        _fields_ = [
+            ("dwLength", ctypes.c_ulong),
+            ("dwMemoryLoad", ctypes.c_ulong),
+            ("ullTotalPhys", ctypes.c_ulonglong),
+            ("ullAvailPhys", ctypes.c_ulonglong),
+            ("ullTotalPageFile", ctypes.c_ulonglong),
+            ("ullAvailPageFile", ctypes.c_ulonglong),
+            ("ullTotalVirtual", ctypes.c_ulonglong),
+            ("ullAvailVirtual", ctypes.c_ulonglong),
+            ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+        ]
+
+    try:
+        st = _MEMORYSTATUSEX()
+        st.dwLength = ctypes.sizeof(_MEMORYSTATUSEX)
+        if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(st)):
+            return 0
+        return int(st.ullTotalPhys // (1024 * 1024))
+    except Exception:
+        return 0
+
+
+def parallel_max_routes(budget_mib, weights_mib, kv_per_route_mib,
+                        compute_mib=68):
+    """预算内可开的最多路数（纯函数，动态选项生成与启动钳制共用）。
+
+    口径：llama-server 单进程多槽位，权重只加载一份，每加一路的边际成本
+    ≈ 该路的 KV 缓存。取满足 `权重 + 缓冲 + KV×n ≤ 预算` 的最大 n：
+    max_n = clamp(floor((预算 − 权重 − 缓冲) / KV每路), 1, PARALLEL_CAP)。
+    返回 0 = 没有预算信息（调用方回落固定档）；权重本身就超预算 ⇒ 1
+    （单路仍可用，「显存估算」的 ⚠ 会单独提示吃紧）。
+    """
+    budget = int(budget_mib or 0)
+    if budget <= 0:
+        return 0
+    fixed = int(weights_mib or 0) + int(compute_mib or 0)
+    if fixed >= budget:
+        return 1
+    marginal = max(1, int(kv_per_route_mib or 0))
+    return max(1, min(PARALLEL_CAP, (budget - fixed) // marginal))
+
+
+def parallel_of_label(label):
+    """从选项文本还原路数（"3 路（…）" → 3）；不认识返回 0。
+
+    2.0.2 起选项是动态生成的，不能再按固定表前缀匹配 —— 正则取开头数字，
+    对任意路数、任意标签顺序都成立（16 路 不会误匹配 1 路）。
+    """
+    m = re.match(r"^(\d+)\s*路", str(label or "").strip())
+    return int(m.group(1)) if m else 0
+
+
 
 
 def sha256_file(path):
@@ -2571,7 +2645,8 @@ class LlamaServer(object):
         self.variant = variant
         self.log = log
         self.ctx_size = int(ctx_size)
-        self.parallel = max(1, min(4, int(parallel)))
+        # ★ 2.0.2：路数上限从写死的 4 放宽到 PARALLEL_CAP（动态选项）。
+        self.parallel = max(1, min(PARALLEL_CAP, int(parallel)))
         self.tier = tier
         self.gpu_layers = 0 if variant == "cpu" else int(gpu_layers)
         self.proc = None
@@ -3024,6 +3099,11 @@ _RUNTIME_TOKEN_RE = re.compile(
     r"|\b[rsg][0-9]?_[a-z0-9_]+\b)")    # r2_details_opt / s_light 等技术后缀
 # 换行/制表不再当“严格占位符”：模型少写一个 \n 就把整条退回原文，
 # 实测 138 条多行描述因此漏译。送翻前换成真实换行，译后统一写回 \n。
+# ★ 2.0.2 终检用：$$R0$$ 形态是**送翻时**的掩码，正常输出里不该出现
+#   （restore_runtime_tokens 保证每个掩码恰好还原一次，失败整条回退原文）。
+#   终检在成品里扫到它 = 有异常路径漏网，点名让人复核（源文本身含 $$R\d$$
+#   的概率可忽略；报告口径是"疑似"，不自动改写）。
+_MASK_RESIDUE_RE = re.compile(r"\$\$R\d+\$\$")
 
 
 def mask_runtime_tokens(text):
@@ -3948,7 +4028,8 @@ class TranslationJob(object):
         self.dialogue_temp = 0.1
         self.batch_stats = {"batches": 0, "lines": 0, "failed": 0}
         self.ctx_size = int(ctx_size)
-        self.parallel = max(1, min(4, int(parallel)))
+        # ★ 2.0.2：路数上限从写死的 4 放宽到 PARALLEL_CAP（与 LlamaServer 同步）。
+        self.parallel = max(1, min(PARALLEL_CAP, int(parallel)))
         # 多路并发时所有 worker 共享计数/缓存/账本，写操作统一加锁。
         self._stat_lock = threading.Lock()
         self._ledger_lock = threading.RLock()
@@ -3963,6 +4044,10 @@ class TranslationJob(object):
         self.preview_reference = bool(preview_reference)
         self._table_entries = {}     # 绝对路径 -> {id: entity}
         self._id_files = {}          # id -> [绝对路径, ...]
+        # ★ 2.0.2 终检：本次**成功改写过**的文本表（rel 集合）。真正的改写
+        #   收口只有 _write_table_changes / _write_table_as_utf8 两个出口，
+        #   在那里登记，终检只验这几张（原样复制的不用验 XML 结构）。
+        self._audit_tables = set()
         self._ref_counts = {}        # id -> 引用次数
         self._ref_files = set()      # 含可解析引用的 XML/脚本
         self._unresolved = {}        # id -> 次数（索引里找不到）
@@ -4947,6 +5032,85 @@ class TranslationJob(object):
                 except OSError:
                     pass
 
+    def _final_audit(self, done_dir):
+        """终检（2.0.2）：整 MOD 交付前的全量复核，只报告、不删改。
+
+        分层口径 —— 与逐条校验互补，不重复：
+          ① **账本在盘**：账本里的每个输出文件存在且非空（原子写之外的第二道
+             兜底；账号 out_size>0 而盘上为 0 = 异常）。
+          ② **文本表可解析 + ID 全保留**：本次改写过的文本表（_audit_tables）
+             逐张解析输出 XML；解析失败 = 表坏；输出缺输入里已有的 string id
+             = 漏条目。原样复制的文件不验结构（复制不改内容）。
+          ③ **掩码残留**：$$R0$$ 形态是送翻时的临时掩码，正常成品不该出现
+             （restore 失败整条回退原文）；扫到即点名"疑似"让人复核。
+        终检不通过不影响已有输出、不改 ok —— 账本续跑机制下次会补漏重译。
+        范围：文本表 XML（数量最大的产出）。脚本字面层/引用层复制件走 ①。
+        """
+        with self._ledger_lock:
+            ledger_items = list(self._ledger.items())
+        missing, empty = [], []
+        for rel, info in ledger_items:
+            out = os.path.join(done_dir, rel.replace("/", os.sep))
+            try:
+                size = os.path.getsize(out)
+            except OSError:
+                missing.append(rel)
+                continue
+            if size == 0 and int(info.get("out_size") or 0) > 0:
+                empty.append(rel)
+        bad_parse, lost_ids, residue, n_tables = [], [], [], 0
+        for rel in sorted(self._audit_tables):
+            n_tables += 1
+            out = os.path.join(done_dir, rel.replace("/", os.sep))
+            full = os.path.join(self.in_dir, rel.replace("/", os.sep))
+            try:
+                out_ents = self._parse(self.p.parse_xray_text_xml, out,
+                                       read_encoding_chain(out))
+            except Exception as e:
+                bad_parse.append("%s（%s）" % (rel, str(e)[:60]))
+                continue
+            if os.path.isfile(full):
+                try:
+                    in_ents = self._parse(self.p.parse_xray_text_xml, full,
+                                          read_encoding_chain(full))
+                    in_ids = {e.id for e in (in_ents or [])}
+                    out_ids = {e.id for e in (out_ents or [])}
+                    miss = in_ids - out_ids
+                    if miss:
+                        lost_ids.append("%s（缺 %d 条：%s…）"
+                                        % (rel, len(miss),
+                                           ", ".join(sorted(miss)[:3])))
+                except Exception:
+                    pass    # 输入表已不存在/解析失败：以输出可解析为准
+            try:
+                raw = read_text_any(out)
+            except Exception:
+                raw = ""
+            if _MASK_RESIDUE_RE.search(raw or ""):
+                residue.append(rel)
+        problems = (len(missing) + len(empty) + len(bad_parse)
+                    + len(lost_ids) + len(residue))
+        if problems:
+            self.log("终检：账本 %d 个文件 / 改写文本表 %d 张，发现 %d 处问题"
+                     % (len(ledger_items), n_tables, problems), "warn")
+            for rel in missing[:10]:
+                self.log("  终检｜账本有记录但输出缺失：%s" % rel, "warn")
+            for rel in empty[:10]:
+                self.log("  终检｜输出为空文件：%s" % rel, "warn")
+            for rel in bad_parse[:10]:
+                self.log("  终检｜文本表解析失败：%s" % rel, "warn")
+            for rel in lost_ids[:10]:
+                self.log("  终检｜输出疑似漏条目：%s" % rel, "warn")
+            for rel in residue[:10]:
+                self.log("  终检｜疑似未还原掩码（$$R…）：%s" % rel, "warn")
+            if problems > 40:
+                self.log("  终检｜其余问题只点名前 40 处，其余见详细日志",
+                         "warn")
+        else:
+            self.log("终检通过：账本 %d 个文件、改写文本表 %d 张全部可解析，"
+                     "无缺失/漏条目/掩码残留" % (len(ledger_items), n_tables),
+                     "ok")
+
     def run(self):
         done_dir = self._resolve_done_dir(self.out_dir)
         self.out_dir = done_dir
@@ -5038,6 +5202,16 @@ class TranslationJob(object):
                 removed = self._prune_empty_dirs(done_dir)
                 if removed:
                     self.log("已清理 %d 个空目录" % removed)
+
+        # ★ 2.0.2 终检：整 MOD 交付前的最后一道闸。逐条校验（占位符 mask/
+        #   校验/回填、失败保留原文）在翻译时就做了，这里验收"整面墙"——
+        #   只报告不删改；取消/部分完成时也跑（报告的就是已落盘的部分）。
+        if not (self.reference_mode and self.preview_reference):
+            try:
+                self._final_audit(done_dir)
+            except Exception as e:
+                self.log("终检未完成（不影响已生成的输出）：%s: %s"
+                         % (type(e).__name__, e), "warn")
 
         self.log("全部完成：请求 %d 段，%s 字符%s" %
                  (self.req_count, _fmt_size(self.trans_chars),
@@ -5757,6 +5931,7 @@ class TranslationJob(object):
                                              changes, rel)
         if wrote:
             st["changed"] = True
+            self._audit_tables.add(rel)   # ★ 2.0.2：登记进终检清单
             self._record_done(rel, full, out_path)
         else:
             st["copied"] = True
@@ -6683,7 +6858,8 @@ class AiTranslateTab(object):
             _label_set(self.hw_label, hw["short"])
         self._hw_cuda13_ok = bool(hw.get("cuda13_ok"))
         self._hw_vram_mb = int(hw.get("vram") or 0)
-        self.refresh_vram_estimate()
+        # ★ 2.0.2：显存到手后先别急着刷 —— 下面可能按硬件自动选后端/档位，
+        #   那两个都会改变预算（变体）与权重（档位），收尾统一重建多路选项。
         if not self.cfg.get("variant_chosen"):
             vi = VARIANT_ORDER.index(hw["variant"]) \
                 if hw.get("variant") in VARIANT_ORDER else 0
@@ -6710,6 +6886,8 @@ class AiTranslateTab(object):
                 save_config(self.cfg)
         if not silent:
             self.log("硬件：%s" % hw["short"], "ok")
+        # ★ 2.0.2：预算与档位/后端都已定，统一重建多路选项（内含显存估算刷新）。
+        self._refresh_parallel_ui()
         self.refresh_local_status()
 
     def ui_call(self, fn, *a, **k):
@@ -6958,11 +7136,22 @@ class AiTranslateTab(object):
         ui = self.ui
         self._section(p, "④ 启动引擎")
         ui.label(p, "多路翻译（文本表并发路数）")
-        par_vals = [PARALLEL_LABELS[v] for v in PARALLEL_ORDER]
+        # ★ 2.0.2：路数选项按检测到的硬件动态生成（1..预算内最高档）；硬件/
+        #   模型信息未就绪时先给固定档（1/2/4），硬件检测回调回来后重建。
+        #   构建期不写配置：已存路数超出预算的收窄由 _apply_hw →
+        #   _refresh_parallel_ui 点名日志后写回。
+        choices = self._parallel_choices()
+        if choices:
+            labels = [lb for _, lb in choices]
+            ns = [n for n, _ in choices]
+        else:
+            labels = [PARALLEL_LABELS[v] for v in PARALLEL_ORDER]
+            ns = list(PARALLEL_ORDER)
+        cur = self.current_parallel()
+        idx = ns.index(cur) if cur in ns else 0
         self.parallel_combo = ui.combo(
-            p, par_vals, on_change=lambda v: self._on_parallel(v))
-        _combo_set(self.parallel_combo, par_vals,
-                   PARALLEL_ORDER.index(self.sel["parallel"]))
+            p, labels, on_change=lambda v: self._on_parallel(v))
+        _combo_set(self.parallel_combo, labels, idx)
         self.vram_label = ui.label(p, "显存估算：等待选择模型…")
 
         self.btn_start = ui.button(p, "启动引擎", self.on_start)
@@ -7057,15 +7246,117 @@ class AiTranslateTab(object):
         return variant if variant in VARIANT_ORDER else "cpu"
 
     def current_parallel(self):
-        p = self.sel.get("parallel", 1)
-        return p if p in PARALLEL_ORDER else 1
+        """用户选定的路数（2.0.2 起是 1..PARALLEL_CAP 的任意整数）。"""
+        try:
+            p = int(self.sel.get("parallel", 1))
+        except (TypeError, ValueError):
+            return 1
+        return p if 1 <= p <= PARALLEL_CAP else 1
+
+    def _parallel_budget_mib(self):
+        """多路预算（MiB）：GPU 后端按显存 ×0.9，CPU 后端按物理内存 ×0.7。
+
+        检测不到（未检测/无独显/非 Windows）返回 0 —— 调用方回落固定档，
+        绝不拿猜测值当预算。
+        """
+        if self.current_variant() == "cpu":
+            ram = physical_ram_mb()
+            return int(ram * PARALLEL_CPU_BUDGET) if ram > 0 else 0
+        vram = int(getattr(self, "_hw_vram_mb", 0) or 0)
+        return int(vram * PARALLEL_GPU_BUDGET) if vram > 0 else 0
+
+    def _parallel_choices(self):
+        """按当前模型/上下文/后端与检测到的硬件生成动态路数选项。
+
+        返回 [(路数, 标签), ...]（1..max_n，预算内最高档标「推荐」）；
+        信息不足（模型未就绪 / 预算未知 / GGUF 结构读不出）返回 None，
+        调用方回落固定档 PARALLEL_ORDER。每档标签带上该路的显存/内存
+        估算，与「显存估算」同一份口径（estimate_vram_mib）。
+        """
+        model = self.find_model()
+        if not model:
+            return None
+        budget = self._parallel_budget_mib()
+        if budget <= 0:
+            return None
+        ctx = self._route_ctx()
+        variant = self.current_variant()
+        key = (model, ctx, variant, budget)
+        cache = getattr(self, "_par_choices_cache", None)
+        if cache is not None and key in cache:
+            return cache[key]
+        est = estimate_vram_mib(
+            model, ctx, 1, gpu_layers=0 if variant == "cpu" else 99)
+        if not est.get("ok"):
+            return None
+        max_n = parallel_max_routes(budget, est["weights"], est["kv"],
+                                    est["compute"])
+        if variant == "cpu":
+            note = " / 内存 %s" % _fmt_mem(budget // PARALLEL_CPU_BUDGET)
+        else:
+            note = " / 显卡 %s" % _fmt_mem(budget // PARALLEL_GPU_BUDGET)
+        choices = []
+        for n in range(1, max_n + 1):
+            used = est["weights"] + est["kv"] * n + est["compute"]
+            bits = []
+            if n == 1:
+                bits.append("最稳，默认")
+            if n == max_n and max_n > 1:
+                bits.append("推荐")
+            bits.append("约 %s" % _fmt_mem(used))
+            choices.append((n, "%d 路（%s%s）"
+                            % (n, "，".join(bits), note if n == 1 else "")))
+        if cache is None:
+            cache = self._par_choices_cache = {}
+        cache[key] = choices
+        return choices
+
+    def _parallel_max_n(self):
+        """当前硬件预算允许的最高路数；信息不足时以 PARALLEL_CAP 为上限。"""
+        choices = self._parallel_choices()
+        return choices[-1][0] if choices else PARALLEL_CAP
+
+    def _refresh_parallel_ui(self):
+        """按当前硬件/模型重建「多路翻译」下拉（2.0.2 的所有刷新入口）。
+
+        保持已选路数：仍在动态列表里就原样选中；超出预算（硬件收窄/换了
+        更大的模型）则改选预算内最高档，并**点名写日志 + 写回设置** ——
+        不静默丢弃用户的选择。
+        """
+        combo = getattr(self, "parallel_combo", None)
+        choices = self._parallel_choices()
+        if combo is not None:
+            if choices:
+                labels = [lb for _, lb in choices]
+                ns = [n for n, _ in choices]
+            else:
+                labels = [PARALLEL_LABELS[v] for v in PARALLEL_ORDER]
+                ns = list(PARALLEL_ORDER)
+            cur = self.current_parallel()
+            if cur in ns:
+                idx = ns.index(cur)
+            else:
+                # 超预算：改选预算内最高档（动态表）或不超过它的最大固定档
+                idx = len(ns) - 1 if choices else 0
+                for i, n in enumerate(ns):
+                    if n <= cur:
+                        idx = i
+                clamped = ns[idx]
+                if clamped != cur and cur > 1:
+                    self.log("多路 %d 超出当前硬件预算（模型/显存已变更），"
+                             "改为 %d 路（已写回设置）" % (cur, clamped),
+                             "warn")
+                self.sel["parallel"] = clamped
+                self.cfg["parallel"] = clamped
+                save_config(self.cfg)
+            _combo_set(combo, labels, idx)
+        self.refresh_vram_estimate()
 
     def _on_parallel(self, value=None):
         if value:
-            for n in PARALLEL_ORDER:
-                if str(value).startswith(str(n) + " "):
-                    self.sel["parallel"] = n
-                    break
+            n = parallel_of_label(value)
+            if n:
+                self.sel["parallel"] = min(n, PARALLEL_CAP)
         self.cfg["parallel"] = self.current_parallel()
         save_config(self.cfg)
         self.refresh_vram_estimate()
@@ -7133,7 +7424,8 @@ class AiTranslateTab(object):
         if v in GPU_VARIANTS and not self.find_exe(v):
             self.log("%s 运行库未安装，点②「下载运行库」"
                      % VARIANT_LABELS[v].split("（")[0], "warn")
-        self.refresh_vram_estimate()
+        # ★ 2.0.2：后端变化会改变预算来源（显存 ↔ 物理内存），重建多路选项。
+        self._refresh_parallel_ui()
 
     def model_candidates(self, tier=None):
         tier = tier or self.current_tier()
@@ -7268,10 +7560,10 @@ class AiTranslateTab(object):
         self.cfg["tier"] = self.sel["tier"]
         self.cfg["variant"] = self.sel["variant"]
         par_text = _combo_get(getattr(self, "parallel_combo", None))
-        for n in PARALLEL_ORDER:
-            if str(par_text).startswith(str(n) + " "):
-                self.sel["parallel"] = n
-                break
+        # ★ 2.0.2：动态选项 —— 正则取"开头数字 路"，不再按固定表前缀匹配。
+        n = parallel_of_label(par_text)
+        if n:
+            self.sel["parallel"] = min(n, PARALLEL_CAP)
         self.cfg["parallel"] = self.current_parallel()
         for key, attr in (("in_dir", "in_box"), ("out_dir", "out_box")):
             w = getattr(self, attr, None)
@@ -7472,6 +7764,8 @@ class AiTranslateTab(object):
                 self.cfg.setdefault("model_paths", {})[tier] = path
             save_config(self.cfg)
             self.refresh_local_status()
+            # ★ 2.0.2：模型文件到手（权重已知），立即按预算重建多路选项。
+            self._refresh_parallel_ui()
 
     def _pick_in(self, path):
         if os.path.isdir(path):
@@ -7576,6 +7870,8 @@ class AiTranslateTab(object):
             save_config(self.cfg)
             if self.current_tier() == "custom":
                 self.refresh_local_status()
+                # ★ 2.0.2：自选上下文改变每路 KV（预算切分的边际），重建多路选项。
+                self._refresh_parallel_ui()
 
     def _on_tier(self, value=None, save_chosen=True):
         """切档：更新状态；引擎运行中切档提示需重启。"""
@@ -7601,7 +7897,8 @@ class AiTranslateTab(object):
         if self.server and self.server.is_running():
             self.log("已切换模型档，运行中的引擎仍是旧模型，重启引擎生效",
                      "warn")
-        self.refresh_vram_estimate()
+        # ★ 2.0.2：档位变化改变模型权重（预算里的固定成本），重建多路选项。
+        self._refresh_parallel_ui()
 
     def _probe_task_key(self, kind):
         if kind == "rt":
@@ -8048,12 +8345,23 @@ class AiTranslateTab(object):
             return
         model, exe, tier, ctx = plan
         variant = self.current_variant()
+        # ★ 2.0.2 启动前安全钳制（兜底二道闸）：正常情况下下拉已经只显示
+        #   预算内的档位（_refresh_parallel_ui 收窄 + 写回）；这里防的是
+        #   配置在别处被改、或检测回调尚未完成就点启动的窗口期。
+        par = self.current_parallel()
+        max_n = self._parallel_max_n()
+        if par > max_n:
+            self.log("多路 %d 超出当前硬件预算，按预算内最高档 %d 路启动"
+                     "（已写回设置）" % (par, max_n), "warn")
+            par = max_n
+            self.sel["parallel"] = par
+            self.cfg["parallel"] = par
+            save_config(self.cfg)
         if self._starting:
             self.log("正在启动引擎，请稍候", "warn")
             return
         need_stop = False
         if self.server and self.server.is_running():
-            par = self.current_parallel()
             sig = (self.server.model, self.server.variant,
                    self.server.ctx_size, getattr(self.server, "parallel", 1))
             if sig == (model, variant, ctx, par):
@@ -8063,8 +8371,7 @@ class AiTranslateTab(object):
         self._starting = True
         self.ui.set_enabled(self.btn_start, False)
         self.log("正在加载 %s，上下文 %d token × %d 路，首次加载较慢，请稍候…"
-                 % (TIER_PROFILES[tier]["combo"][:2], ctx,
-                    self.current_parallel()))
+                 % (TIER_PROFILES[tier]["combo"][:2], ctx, par))
 
         def work():
             try:
@@ -8076,8 +8383,7 @@ class AiTranslateTab(object):
                     if old is not None:
                         old.stop()
                     self.server = None
-                self._spawn_server(exe, model, variant, ctx, tier,
-                                   self.current_parallel())
+                self._spawn_server(exe, model, variant, ctx, tier, par)
                 self.ui_call(self._engine_ui, True)
             except Exception as e:
                 self.ui_call(self.log, "引擎启动失败：%s" % e, "err")
