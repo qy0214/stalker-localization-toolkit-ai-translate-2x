@@ -1,4 +1,4 @@
-# ai_translate 2.0.1
+# ai_translate 2.0.3
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -6,10 +6,18 @@
 
 仓库：<https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x>
 
+## 版本迭代
+
+- **2.0.3** 提示词与规则约束强化：规则违规遥测（任务收尾输出「提示词体检」，按触发次数点名最薄弱规则）；长度比闸门（补上“翻了一半/过度扩写”的静默漏洞，带要求重试一次）；高频专名定译（全文扫描高频专名，复用会话词表定译管线收敛译名漂移）；俄/英提示词分区化重构；官方模板措辞 A/B 开关（默认关）。
+- **2.0.2** 动态多路翻译 + 整 MOD 终检：多路翻译不再只有 1/2/4 固定三档，按显卡显存（GPU）或物理内存（CPU）自动生成 1..16 路选项，每档带显存估算、预算内最高档标「推荐」，信息不足回落固定档；翻译收尾全量终检（账本在盘、文本表可解析且不缺 ID、掩码残留扫描，只报告不删改）。
+- **2.0.1** 首个平台发布版：内置双档 Hy-MT2 模型、四后端自动检测、注册表接入（检查更新/一键安装）、会话词表、TM-lite、原子写盘与完成账本。
+
 ## 功能
 
 - 内置两档本地模型：Hy-MT2-7B Q4_K_M、Hy-MT2-1.8B Q8_0；也支持自选任意 GGUF 模型。
 - 四种运行后端：CPU / CUDA 12.4 / CUDA 13.4 / Vulkan，自动检测硬件并给出推荐档位。
+- 多路翻译按硬件动态生成路数选项（GPU 按显存、CPU 按内存，封顶 16 路，信息不足回落 1/2/4）。
+- 八道译后闸门（占位符/换行/粗口/完整性/残留源文/长度比/回显等），任务收尾输出「提示词体检」遥测报告。
 - 模型与 llama.cpp 运行库不随包分发；插件自动测速选源、按官方 SHA-256 校验，支持断点续传、取消与失败换源。
 - 随包术语库 9059 条，分内置只读层与用户覆盖层；支持会话词表、技术精确表与参考软提示层。
 - 场景批处理：连续短对话按上下文批量翻译，失败回退逐条；中文去翻译腔后处理。
@@ -46,10 +54,10 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.1
+python tools/release_plugin.py 2.0.3
 
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai_translate 2.0.1"
+gh release create v2.0.3 dist/ai_translate_plugin_v2.0.3_install.zip --title "ai_translate 2.0.3"
 
 # 3) 把第 1 步打印的条目追加进注册表的 plugins 数组（需要该仓库写权限）
 ```
@@ -61,7 +69,7 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.1.zip` 解压到工具集的 `plugins/` 目录，形成：
+把 `dist/ai_translate_plugin_v2.0.3.zip` 解压到工具集的 `plugins/` 目录，形成：
 
 ```text
 <工具集目录>\
@@ -78,7 +86,8 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 重启工具集后，在工具页中打开「AI 翻译」。页面内部恢复为 6 个页签：
 ① 硬件 / ② 环境 / ③ 模型 / ④ 引擎 / ⑤ 翻译 / ⑥ 术语（可选）。
 每个页签内嵌独立 viewport 并压低最小高度，不再出现等分高度的大片空白。
-④ 页可选 1/2/4 路并发，并按模型结构实时估算显存。进度条常驻页签之外、
+④ 页多路翻译按显卡显存/内存动态生成 1..N 路选项（每档带显存估算），并按模型
+结构实时估算显存。进度条常驻页签之外、
 固定在页面底部，日志不占页面高度，点「查看日志（弹窗）」在独立窗口看
 最近 300 行。本插件是**目录插件**，入口文件名固定为 `plugin.py`，
 目录名 `ai_translate` 即插件 id。
@@ -105,12 +114,14 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.1.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.1_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.3.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.3_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
 | `tests/test_ai_translate_fixes.py` | 功能回归测试 |
+| `tests/test_dynamic_parallel.py` | 动态多路翻译回归测试（2.0.2） |
+| `tests/test_prompt_rules.py` | 提示词与规则约束回归测试（2.0.3） |
 | `tests/test_share_package.py` | 分享包卫生与发布包一致性测试 |
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
 | `tools/release_plugin.py` | 发版助手：改版本号 → 重建包 → 打印注册表条目 |
@@ -122,20 +133,20 @@ gh release create v2.0.1 dist/ai_translate_plugin_v2.0.1_install.zip --title "ai
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.1`
+- 插件版本：`ai_translate 2.0.3`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `8efe87fb14dedd76ca26e1e1466713697af5f065ab6cd8e2320f5e558ba55251`
+  `2cf7198d3916a45a85323d30dea7ff912ecd8d247680369cdafe2945b1fe67ef`
 - 当前 zip SHA-256：
-  `ff33fc9cbacaeab460da022df2f2c184d504e1b360b570c7f5d3c0d122777bfb`
+  `fa63ec15f9691e83ec4ee05fa718ef99cc0566ffdc3b7dadfad7fbd91bf2ac4b`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `555aef58610a091d4b2031fa3ad83e06b81a8ebec7b2f26f25e283d47da7754b`
+  `8f16433a04306b1717a15e61932558cfc7f1d0a4b25cc689e88bcf6c352b8f94`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.1.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.3.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
@@ -157,7 +168,8 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 66 项、功能回归 356 项、分享包 30 项，全部通过。
+当前全量测试：契约 66 项、功能回归 356 项、动态多路 42 项、提示词规则 46 项、
+分享包 30 项，全部通过。
 
 进度显示：底部进度条保持百分比语义（下载按字节、翻译按本轮处理文件数）；
 旁边两行文字给出直观计数——`阶段：翻译中 12/87 · configs\items\x.ltx` 和
