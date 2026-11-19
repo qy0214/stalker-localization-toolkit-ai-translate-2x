@@ -217,6 +217,176 @@ def t_host_http():
         ait._HOST = old
 
 
+def t_host_download():
+    print("\n--- T7 B250+ 宿主 host.http_download（中小产物跟随宿主）---")
+    import threading as _th
+
+    class FakeHostDl:
+        def __init__(self, behavior):
+            self.calls = []
+            self.behavior = behavior   # fn(url, path, timeout_sec, max_bytes) -> dict
+
+        def http_download(self, url, path, timeout_sec=300, max_bytes=8 << 30):
+            self.calls.append((url, path, timeout_sec, max_bytes))
+            return self.behavior(url, path, timeout_sec, max_bytes)
+
+    def run(behavior, target, total_hint, **kw):
+        host = FakeHostDl(behavior)
+        old_h, old_r = ait._HOST, ait._http_request
+        ait._HOST = host
+        try:
+            return host, ait.download_one(
+                [("m", "http://m/good.bin")], target,
+                log=lambda m, tag="info": None,
+                verify=None, total_hint=total_hint, **kw)
+        finally:
+            ait._HOST, ait._http_request = old_h, old_r
+
+    import tempfile as _tf
+    tmp = _tf.mkdtemp(prefix="ait_dl_")
+
+    # T7-1 成功：宿主落文件 → 直接返回，不建 .part
+    t1 = os.path.join(tmp, "ok.bin")
+    host, r = run(
+        lambda u, p, ts, mb: (_open_write(p, 1000),
+                              {"ok": True, "status": 200, "bytes": 1000,
+                               "truncated": False, "error": ""})[1],
+        t1, 1000)
+    check("T7-1 宿主下载成功返回 True", r is True)
+    check("T7-2 目标文件存在且无 .part",
+          os.path.isfile(t1) and not os.path.isfile(t1 + ".part"))
+    check("T7-3 宿主被调用 1 次、带超时与上限", len(host.calls) == 1
+          and host.calls[0][2] >= 300 and host.calls[0][3] >= 1000)
+
+    # T7-4 失败：回退自建流式（这里用受控 _http_request 验证确实回退）
+    t4 = os.path.join(tmp, "fail.bin")
+    stream_called = []
+    def _fake_stream(method, url, headers=None, body=None, timeout=30.0):
+        stream_called.append(url)
+        raise IOError("自建路径也失败（受控）")
+    host = FakeHostDl(lambda u, p, ts, mb: {"ok": False, "status": 0,
+                                            "error": "网络失败"})
+    old_h, old_r = ait._HOST, ait._http_request
+    ait._HOST, ait._http_request = host, _fake_stream
+    try:
+        try:
+            ait.download_one([("m", "http://m/x.bin")], t4,
+                             log=lambda m, tag="info": None,
+                             verify=None, total_hint=1000,
+                             retries_per_source=1)
+            r4 = "no-raise"
+        except Exception as e:
+            r4 = type(e).__name__
+    finally:
+        ait._HOST, ait._http_request = old_h, old_r
+    check("T7-4 宿主失败回退自建流式（同一次尝试内）",
+          len(stream_called) == 1 and r4 in ("IOError", "OSError"),
+          "stream=%d r=%s" % (len(stream_called), r4))
+    check("T7-5 失败不留半文件", not os.path.isfile(t4)
+          and not os.path.isfile(t4 + ".part"))
+
+    # T7-6 超大产物（模型）不走宿主：仍自建流式
+    t6 = os.path.join(tmp, "big.bin")
+    host = FakeHostDl(lambda u, p, ts, mb: {"ok": True})
+    old_h, old_r = ait._HOST, ait._http_request
+    ait._HOST, ait._http_request = host, _fake_stream
+    try:
+        try:
+            ait.download_one([("m", "http://m/big.bin")], t6,
+                             log=lambda m, tag="info": None,
+                             verify=None, total_hint=5 * 1024 * 1024 * 1024,
+                             retries_per_source=1)
+        except Exception:
+            pass
+    finally:
+        ait._HOST, ait._http_request = old_h, old_r
+    check("T7-6 GB 级产物绕过宿主下载（需进度+断点）", len(host.calls) == 0)
+
+    # T7-7 已有 .part 断点：续传走自建，不试宿主
+    t7 = os.path.join(tmp, "resume.bin")
+    open(t7 + ".part", "wb").write(b"par")
+    host = FakeHostDl(lambda u, p, ts, mb: {"ok": True})
+    old_h, old_r = ait._HOST, ait._http_request
+    ait._HOST, ait._http_request = host, _fake_stream
+    try:
+        try:
+            ait.download_one([("m", "http://m/r.bin")], t7,
+                             log=lambda m, tag="info": None,
+                             verify=None, total_hint=1000,
+                             retries_per_source=1)
+        except Exception:
+            pass
+    finally:
+        ait._HOST, ait._http_request = old_h, old_r
+    check("T7-7 有断点时不走宿主（Range 续传保留）", len(host.calls) == 0
+          and os.path.isfile(t7 + ".part"))
+
+    # T7-8 老宿主（无 http_download）：返回 None，行为同 2.0.5
+    old_h = ait._HOST
+    ait._HOST = object()   # 没有 http_download 属性
+    try:
+        hr = ait._host_http_download("http://m/x", t7 + ".tmp2", 1000)
+    finally:
+        ait._HOST = old_h
+    check("T7-8 老宿主无门面返回 None", hr is None)
+
+    # T7-9 门面抛异常：吞掉回退（不向上冒泡）
+    old_h = ait._HOST
+    class BoomHost:
+        def http_download(self, *a, **k):
+            raise RuntimeError("boom")
+    ait._HOST = BoomHost()
+    try:
+        hr = ait._host_http_download("http://m/x", t7 + ".tmp3", 1000)
+    except Exception:
+        hr = "raised"
+    finally:
+        ait._HOST = old_h
+    check("T7-9 门面抛异常不冒泡", hr is None)
+
+
+def _open_write(path, size):
+    with open(path, "wb") as f:
+        f.write(b"x" * size)
+
+
+def t_on_ui_raise():
+    print("\n--- T8 on_ui_thread 探测抛异常 → 默认走 post/队列（失败方向修正）---")
+    api = FakeApi()
+    api.ui = B249Ui()
+    ait.register(api)
+    tab = api.build()
+    orig_probe = api.ui.on_ui_thread
+
+    def boom():
+        raise RuntimeError("probe broken")
+
+    api.ui.on_ui_thread = boom
+    called = []
+    queued = []
+    orig_put = tab._q.put
+
+    def spy_put(item):
+        queued.append(item)
+        return orig_put(item)
+
+    tab._q.put = spy_put
+    import threading
+
+    # 模拟工作线程：探测抛异常时应 post（或队列），绝不能直接执行 UI 调用
+    th = threading.Thread(target=lambda: tab.ui_call(lambda: called.append(1)))
+    th.start()
+    th.join(timeout=5)
+    direct = called and not getattr(api.ui, "post_calls", 0) and not queued
+    check("T8-1 探测异常不直接执行 UI 调用", not direct,
+          "direct=%s" % direct)
+    check("T8-2 回调经 post 或兼容队列投递",
+          called == [1] and (getattr(api.ui, "post_calls", 0) >= 1
+                             or len(queued) >= 1),
+          "post=%s queued=%s" % (getattr(api.ui, "post_calls", 0), len(queued)))
+    api.ui.on_ui_thread = orig_probe
+
+
 def main():
     t_direct_pack()
     t_spring()
@@ -224,6 +394,8 @@ def main():
     t_host_variants()
     t_host_post()
     t_host_http()
+    t_host_download()
+    t_on_ui_raise()
     passed = sum(1 for _n, ok in RESULTS if ok)
     print("\n%d/%d passed" % (passed, len(RESULTS)))
     return 0 if passed == len(RESULTS) else 1

@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -599,6 +599,10 @@ _WINHTTP_OPTION_REDIRECT_POLICY = 110
 _WINHTTP_REDIRECT_DISALLOW_HTTPS_TO_HTTP = 1
 _ERROR_INSUFFICIENT_BUFFER = 122
 
+# B250+：宿主 http_download 只接管「无断点、体积可预估」的中小产物。
+# 模型（1.8/4.4 GB，需进度+断点+长时长）仍走自建流式，见 _host_http_download。
+_HOST_DL_MAX = 256 * 1024 * 1024
+
 
 def _winhttp():
     """惰性加载 winhttp.dll 并声明全部原型（只做一次）。"""
@@ -873,6 +877,31 @@ class _HostHttpResponse(object):
         return False
 
 
+_API = None
+_HOST_NOTE_TS = 0.0      # 上次门面回退留痕时间（限频，防日志风暴）
+
+
+def _host_fallback_note(url, why):
+    """宿主门面失败回退自建路径时，往宿主控制台留一条痕（60s 限频）。
+
+    为什么留痕：门面失败原本是静默回退，同一请求会被原样再打一遍，
+    排查时看不出"门面失败过"；限频避免引擎健康检查等高频请求刷屏。
+    api 未注册（测试/离线场景）时静默跳过。
+    """
+    global _HOST_NOTE_TS
+    if _API is None:
+        return
+    now = time.time()
+    if now - _HOST_NOTE_TS < 60.0:
+        return
+    _HOST_NOTE_TS = now
+    try:
+        _API.log("宿主 HTTP 门面失败，已回退自建路径：%s（%s）"
+                 % (url, why))
+    except Exception:
+        pass
+
+
 def _host_small_http(method, url, headers=None, body=None, timeout=30.0):
     """小文本请求优先走宿主门面；老宿主/不支持时返回 None 让调用方回退。"""
     host = _HOST
@@ -889,9 +918,17 @@ def _host_small_http(method, url, headers=None, body=None, timeout=30.0):
                 if isinstance(body, bytes) else str(body or "")
             ctype = (headers or {}).get("Content-Type", "application/json")
             result = fn(url, payload, ctype, int(timeout), 1 << 20)
-    except Exception:
+    except Exception as e:
+        _host_fallback_note(url, "门面调用异常 %s: %s"
+                            % (type(e).__name__, e))
         return None
     if not isinstance(result, dict) or not result.get("ok"):
+        # 门面明确失败（HTTP 4xx/5xx 或网络错误）：留痕后回退自建路径。
+        # 否则表现为"静默多打一次请求"，排查时看不出门面失败过。
+        _host_fallback_note(
+            url, "ok=false（HTTP %s %s）"
+            % (result.get("status") if isinstance(result, dict) else "?",
+               result.get("error", "") if isinstance(result, dict) else ""))
         return None     # 宿主请求失败 → 回退自建路径（老行为）
     return _HostHttpResponse(result)
 
@@ -2356,14 +2393,46 @@ class OutputTruncated(Exception):
     pass
 
 
+def _host_http_download(url, target, total=None):
+    """B250+ 宿主 `api.host.http_download`（失败不留半文件，受联网开关管）。
+
+    BETA.250（commit 80becbc）真机实测：返回
+    `{ok, status, bytes, truncated, error, path}`；404/超限/网络失败都**不会
+    在目标路径留半文件**；302 重定向自动跟随。两个能力缺口决定了不能全量
+    替换自建流式：
+      * `timeout_sec` 是**整段下载的时间窗**（慢速流在窗口内没下完即整单
+        失败，实测 14.4 秒的涓流在 timeout=5 下约 8 秒报错）；
+      * 没有进度回调、不支持 Range 断点。
+    所以只用于「无断点续传、体积可预估且 <= _HOST_DL_MAX」的中小产物；
+    GB 级模型（要进度 + 断点 + 长时长）仍走自建流式——能力缺口非二次实现。
+    老宿主无此门面 → 返回 None 交回自建路径。
+    """
+    host = _HOST
+    fn = getattr(host, "http_download", None) if host is not None else None
+    if fn is None:
+        return None
+    # 0.5 MB/s 保底换算时间窗（实测镜像 0.78 MB/s）；size cap 比预估多留 4MB。
+    timeout = 300 if not total else max(300, int(total / 512000.0) + 60)
+    max_bytes = (int(total) + (4 << 20)) if total else (8 << 30)
+    try:
+        return fn(url, target, timeout_sec=int(timeout),
+                  max_bytes=int(max_bytes))
+    except Exception:
+        return None     # 门面抛异常 → 回退自建路径（老行为）
+
+
 def download_one(sources, target, log, progress=None, cancel_event=None,
-                 retries_per_source=3, verify=None):
+                 retries_per_source=3, verify=None, total_hint=None):
     """按 sources 顺序尝试；.part 断点续传；全部源失败才抛异常。
 
     progress(done, total, speed_mbps, eta_sec, src_name)
     verify(part_path) -> digest：**每个源下载完成后**立即校验，失败即删文件并
     换下一个源（文档一直这么写，早期实际只是删文件让用户手动重试）。
     返回校验得到的 digest；未提供 verify 时返回 True。
+
+    total_hint：产物预估字节数（调用方从 task 的 size_bytes / size_hint 换算）。
+    B250+ 且无断点时，中小产物（<= _HOST_DL_MAX）优先走宿主 http_download
+    （跟随宿主）；失败或老宿主回退自建流式。
     """
     part = target + ".part"
     total = None
@@ -2376,6 +2445,29 @@ def download_one(sources, target, log, progress=None, cancel_event=None,
                 raise DownloadCancelled()
             have = os.path.getsize(part) if os.path.isfile(part) else 0
             try:
+                # B250+ 宿主下载（每源只试首轮、无断点、中小产物）；失败回退流式
+                if (attempt == 1 and have == 0 and total_hint
+                        and total_hint <= _HOST_DL_MAX):
+                    hr = _host_http_download(url, target, total_hint)
+                    if hr is not None:
+                        if cancel_event is not None and cancel_event.is_set():
+                            try:
+                                os.remove(target)
+                            except OSError:
+                                pass
+                            raise DownloadCancelled()
+                        if hr.get("ok"):
+                            log("  宿主下载完成：%s"
+                                % _fmt_size(int(hr.get("bytes") or 0)))
+                            if progress:
+                                progress(int(hr.get("bytes") or 0),
+                                         int(total_hint), 0, 0, name)
+                            digest = verify(target) if verify is not None \
+                                else True
+                            return digest
+                        log("  宿主下载未成功（HTTP %s %s），回退自建下载"
+                            % (hr.get("status") or 0,
+                               hr.get("error") or "…"))
                 headers = {}
                 if have:
                     headers["Range"] = "bytes=%d-" % have
@@ -7288,17 +7380,28 @@ class AiTranslateTab(object):
         `post` 的 pybind 签名是 `post(fn, *args)`，只收位置参数，故把 (fn,a,k)
         闭包进无参 lambda 再投，避免关键字参数被 py::args 拒绝。
         """
+        ui = getattr(self, "ui", None)
+        if ui is None:
+            # 无 UI 门面（裸对象/测试桩）：没有 post/队列可投，退化为当场执行
+            try:
+                fn(*a, **k)
+            except Exception as e:
+                self._log_ui_error(fn, e)
+            return
         try:
-            on_ui = bool(self.ui.on_ui_thread())
+            on_ui = bool(ui.on_ui_thread())
         except Exception:
-            on_ui = True
+            # 探测失败时默认"不在 UI 线程"：把回调送进 post/队列。
+            # 反方向（默认在 UI 线程直接调用）在 B249+ 上会被宿主线程闸门
+            # 静默吞掉——表现为"点了没反应"，比多一层投递难查得多。
+            on_ui = False
         if on_ui:
             try:
                 fn(*a, **k)
             except Exception as e:
                 self._log_ui_error(fn, e)
             return
-        post = getattr(self.ui, "post", None)
+        post = getattr(ui, "post", None)
         if callable(post):
             try:
                 post(lambda: fn(*a, **k))
@@ -8463,7 +8566,10 @@ class AiTranslateTab(object):
                     verify=lambda p: verify_artifact(
                         p, task,
                         log=lambda m, tag="info": self.ui_call(self.log, m, tag),
-                        known_hashes=self.cfg.get("artifact_hashes")))
+                        known_hashes=self.cfg.get("artifact_hashes")),
+                    total_hint=int(task.get("size_bytes") or 0) or
+                    (int(float(task.get("size_hint") or 0) * (1 << 30))
+                     or None))
                 self.cfg.setdefault("artifact_hashes", {})[
                     os.path.basename(target)] = digest
                 save_config(self.cfg)
@@ -8585,8 +8691,10 @@ class AiTranslateTab(object):
             cancel_event=self.dl_cancel,
             verify=lambda p: verify_artifact(
                 p, rt_task,
-                log=lambda m, tag="info": self.ui_call(self.dl_log, m),
-                known_hashes=self.cfg.get("artifact_hashes")))
+                log=lambda m, tag="info": self.ui_call(self.log, m, tag),
+                known_hashes=self.cfg.get("artifact_hashes")),
+            total_hint=int(float(rt_task.get("size_hint") or 0) * (1 << 30))
+            or None)
         self.cfg.setdefault("artifact_hashes", {})["cudart_runtime.zip"] = digest
         save_config(self.cfg)
         _extract_zip_into(rt_zip, dest)
@@ -9073,8 +9181,13 @@ def register(api):
     页面标题下方。2.x 的页面外壳（header/card/滚动区）由宿主提供，
     这里只负责往 `parent` 里按顺序放控件。
     """
-    global _UI, _HOST
+    global _UI, _HOST, _API
     _UI = api.ui
+    # ★ B249+ 宿主服务门面（host.http_get/http_post）：小文本请求跟随宿主，
+    #   不再自建 urllib/WinHTTP；老宿主无此门面时 _HOST=None 走兼容路径。
+    #   B250+ 增加 host.http_download：中小产物（运行库 zip 等）跟随宿主。
+    _HOST = getattr(api, "host", None)
+    _API = api
     # ★ B249+ 宿主服务门面（host.http_get/http_post）：小文本请求跟随宿主，
     #   不再自建 urllib/WinHTTP；老宿主无此门面时 _HOST=None 走兼容路径。
     _HOST = getattr(api, "host", None)
