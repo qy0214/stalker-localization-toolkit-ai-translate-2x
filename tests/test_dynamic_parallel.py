@@ -165,8 +165,11 @@ def t4_config():
             details.append("%r→%d" % (raw, got))
         check("T4-1 旧 1/2/4 兼容 + 动态 1..16 保留 + 越界/垃圾回 1",
               all_ok, " ".join(details))
-        check("T4-2 版本号已升至 2.0.2",
-              ait.PLUGIN_INFO["version"] == "2.0.2",
+        def _vge(v, base):
+            return tuple(int(x) for x in v.split(".")) >= tuple(
+                int(x) for x in base.split("."))
+        check("T4-2 版本号 ≥ 2.0.2（动态多路功能已随版本保留）",
+              _vge(ait.PLUGIN_INFO["version"], "2.0.2"),
               ait.PLUGIN_INFO["version"])
     finally:
         ait._CONFIG = old

@@ -1,4 +1,4 @@
-# ai_translate 2.0.3
+# ai_translate 2.0.4
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.4** 兼容性修复：修复平台 BETA.249 等正式版上六个步骤页内容显示不全（只露一行 / 控件间巨大空白）——改为与平台内置页同构的「直接 pack + 弹性占位」布局，不依赖各版本宿主 viewport 行为差异，全版本内容完整显示。
 - **2.0.3** 提示词与规则约束强化：规则违规遥测（任务收尾输出「提示词体检」，按触发次数点名最薄弱规则）；长度比闸门（补上“翻了一半/过度扩写”的静默漏洞，带要求重试一次）；高频专名定译（全文扫描高频专名，复用会话词表定译管线收敛译名漂移）；俄/英提示词分区化重构；官方模板措辞 A/B 开关（默认关）。
 - **2.0.2** 动态多路翻译 + 整 MOD 终检：多路翻译不再只有 1/2/4 固定三档，按显卡显存（GPU）或物理内存（CPU）自动生成 1..16 路选项，每档带显存估算、预算内最高档标「推荐」，信息不足回落固定档；翻译收尾全量终检（账本在盘、文本表可解析且不缺 ID、掩码残留扫描，只报告不删改）。
 - **2.0.1** 首个平台发布版：内置双档 Hy-MT2 模型、四后端自动检测、注册表接入（检查更新/一键安装）、会话词表、TM-lite、原子写盘与完成账本。
@@ -54,10 +55,10 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.3
+python tools/release_plugin.py 2.0.4
 
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.3 dist/ai_translate_plugin_v2.0.3_install.zip --title "ai_translate 2.0.3"
+gh release create v2.0.4 dist/ai_translate_plugin_v2.0.4_install.zip --title "ai_translate 2.0.4"
 
 # 3) 把第 1 步打印的条目追加进注册表的 plugins 数组（需要该仓库写权限）
 ```
@@ -69,7 +70,7 @@ gh release create v2.0.3 dist/ai_translate_plugin_v2.0.3_install.zip --title "ai
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.3.zip` 解压到工具集的 `plugins/` 目录，形成：
+把 `dist/ai_translate_plugin_v2.0.4.zip` 解压到工具集的 `plugins/` 目录，形成：
 
 ```text
 <工具集目录>\
@@ -114,14 +115,15 @@ gh release create v2.0.3 dist/ai_translate_plugin_v2.0.3_install.zip --title "ai
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.3.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.3_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.4.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.4_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
 | `tests/test_ai_translate_fixes.py` | 功能回归测试 |
 | `tests/test_dynamic_parallel.py` | 动态多路翻译回归测试（2.0.2） |
 | `tests/test_prompt_rules.py` | 提示词与规则约束回归测试（2.0.3） |
+| `tests/test_ui_fallback.py` | 页签显示与紧凑布局回归测试（2.0.4） |
 | `tests/test_share_package.py` | 分享包卫生与发布包一致性测试 |
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
 | `tools/release_plugin.py` | 发版助手：改版本号 → 重建包 → 打印注册表条目 |
@@ -133,20 +135,20 @@ gh release create v2.0.3 dist/ai_translate_plugin_v2.0.3_install.zip --title "ai
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.3`
+- 插件版本：`ai_translate 2.0.4`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `2cf7198d3916a45a85323d30dea7ff912ecd8d247680369cdafe2945b1fe67ef`
+  `58034bdda482354156f73219315e2dc5f9fd284d6125a24d6a97a522f4f4d201`
 - 当前 zip SHA-256：
-  `fa63ec15f9691e83ec4ee05fa718ef99cc0566ffdc3b7dadfad7fbd91bf2ac4b`
+  `265dcfd13acaf698d643e889348579aa56d6d356ce3f317f1b8b28f0f7189306`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `8f16433a04306b1717a15e61932558cfc7f1d0a4b25cc689e88bcf6c352b8f94`
+  `a9b23e8ca3aca3d27deddd358ee1f87f39ad7d607c405fb6d9442551958cf7a3`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.3.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.4.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

@@ -146,6 +146,33 @@ class FakeUi(object):
             return None
         return self._new(Widget("viewport"))
 
+    def split(self, parent=None, horizontal=False):
+        if not self._gate("split"):
+            return None
+        return self._new(Widget("split"))
+
+    def split_add_pane(self, split, minsize=0):
+        if not self._gate("split_add_pane"):
+            return None
+        return self._new(Widget("split_pane"))
+
+    def viewport_set_min_body_height(self, body, min_body_height):
+        if not self._gate("viewport_set_min_body_height"):
+            return None
+        self.min_body_heights = getattr(self, "min_body_heights", [])
+        self.min_body_heights.append((body, min_body_height))
+        return None
+
+    def viewport_fit_content(self, body, content_fit=True):
+        if not self._gate("viewport_fit_content"):
+            return None
+        return None
+
+    def viewport_sync(self, body):
+        if not self._gate("viewport_sync"):
+            return None
+        return None
+
     def tabs_add_page(self, tabs, title):
         if not self._gate("tabs_add_page"):
             return None

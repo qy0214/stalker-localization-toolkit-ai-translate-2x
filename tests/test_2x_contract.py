@@ -6,7 +6,7 @@
 
 覆盖 P1–P8：
   P1 注册与页面构建（2.x register_tool 契约 / 页内 5 个步骤页签）
-  P2 源码级禁用面（urllib.request/ssl/http.client/tkinter/row/pack/set_state…）
+  P2 源码级禁用面（urllib.request/ssl/http.client/tkinter/row/pack/set_state…；ui.split 为合法 2.x 门面不在此列）
   P3 线程纪律（worker 只入队，UI 线程泵执行；控件非 UI 线程不可写）
   P4 下拉缓存（combo 无 set_index ⇒ 轮转绕行仍然取得到值）
   P5 _persist_cfg 只从缓存读值并落盘
@@ -96,16 +96,19 @@ def t_p1(module, api, tab, ok):
         if callable(builder) else ["<not callable>"]
     check("P1-10 builder 零参可调用（真宿主不传 parent）", not required,
           str(required))
-    # 页签内部用 viewport 压空白；宿主外壳已包滚动区，只禁 split。
+    # 页签内容直接 pack 到 page，末尾用 ui.split 作弹性占位（合法 2.x 门面）。
+    # 不用 ui.viewport：BETA.249 上它把内容裁成一行。
     src = open(PLUGIN, encoding="utf-8").read()
-    check("P1-9 页面不使用 ui.split(", "ui.split(" not in src)
+    check("P1-9 页面不使用 ui.viewport(", "ui.viewport(" not in src)
     labels = ["① 硬件", "② 环境", "③ 模型", "④ 引擎", "⑤ 翻译",
               "⑥ 术语（可选）"]
     check("P1-11 页内建出 ①→⑤ + ⑥术语可选 6 页签",
           api.ui.tab_titles == labels, str(api.ui.tab_titles))
-    check("P1-12 每个页签有独立 viewport body",
+    check("P1-12 每个页签末尾有弹性占位 split（无 viewport）",
           sum(1 for w in api.ui.created
-              if getattr(w, "kind", "") == "viewport") == 6)
+              if getattr(w, "kind", "") == "split") == 6
+          and not [w for w in api.ui.created
+                   if getattr(w, "kind", "") == "viewport"])
     tier = tab.current_tier()
     ctx_ok = (getattr(tab.ctx_combo, "enabled", False) ==
               (tier == "custom"))
@@ -146,8 +149,10 @@ def t_p2(module):
         hits = imported(prefix)
         check("P2 禁用导入：%s（%s）" % (prefix, why), not hits, str(hits))
 
+    # tkinter 遗留布局 API 禁用；ui.split 是合法 2.x 门面（用于弹性占位），
+    # ui.row/ui.pack 仍禁（宿主自动布局，勿手动 pack）。
     bad_attrs = {"set_state", "log_detail", "widget", "_tk",
-                 "row", "pack", "split"}
+                 "row", "pack"}
     hits = []
     for node in ast.walk(tree):
         if not isinstance(node, ast.Attribute):
@@ -156,7 +161,7 @@ def t_p2(module):
             continue
         # `ui.*` / `self.ui.*` 的门面调用，或非门面的控件方法
         base = node.value
-        if node.attr in ("row", "pack", "split"):
+        if node.attr in ("row", "pack"):
             if isinstance(base, ast.Attribute) and base.attr == "ui":
                 hits.append("ui.%s" % node.attr)
             elif isinstance(base, ast.Name) and base.id == "ui":

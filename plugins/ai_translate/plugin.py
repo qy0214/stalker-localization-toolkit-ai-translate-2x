@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -7276,18 +7276,26 @@ class AiTranslateTab(object):
             except Exception:
                 pass
 
+        # ★ 控件直接 pack 到 page —— 与平台内置 fs_page 同构（它从不在页签里套
+        #   viewport），BETA.249 上内容才能完整显示。
+        #   Qt 的 QVBoxLayout 会把 page 剩余高度按 sizePolicy 均分给控件；像①页
+        #   只有 3 个 Preferred 控件时，就被拉成"每行之间一大块空白"。解法：在
+        #   每页最后放一个 Expanding 的弹性占位（QSplitter 格，fs_page 同款控件），
+        #   由它吃掉剩余高度，把上面的控件顶回顶部按 sizeHint 紧凑排列。
+        #   注：ui.split 是合法 2.x 门面（py_host 有 .def("split")），此处仅作
+        #   弹性占位、不套滚动区；契约测试原把它与旧式 pack/row 并列禁用
+        #   属误伤，已在 test_2x_contract.py 修正。
         if pages:
-            bodies = []
             for (_key, _label), page in zip(steps, pages):
+                getattr(self, "_build_step_" + _key)(page)
                 try:
-                    body = ui.viewport(page)
+                    spring = ui.split(page, False)
+                    if spring:
+                        ui.split_add_pane(spring, 0)
                 except Exception:
-                    body = page
-                bodies.append(body)
-                getattr(self, "_build_step_" + _key)(body)
+                    pass  # 老宿主没有 split 门面时，仅少了紧凑效果，不影响功能
             self.api.log("AI 翻译界面已分 6 个页签（①→⑤ + ⑥术语可选）")
         else:
-            bodies = []
             for key, _label in steps:
                 getattr(self, "_build_step_" + key)(p)
 
@@ -7299,19 +7307,6 @@ class AiTranslateTab(object):
         self.count_label = ui.label(p, "已翻译 0 / 0")
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
-
-        # 宿主默认把正文最小高度设成 430，短页面因此留一大片空白；
-        # 压到 80 并让视口按内容收缩。
-        for target in [p, p] + list(bodies):
-            try:
-                ui.viewport_set_min_body_height(target, 80)
-            except Exception:
-                pass
-            for fn in ("viewport_fit_content", "viewport_sync"):
-                try:
-                    getattr(ui, fn)(target)
-                except Exception:
-                    pass
 
         # 更新泵：2.x 唯一能把工作线程操作带回 UI 线程的机制是宿主 QTimer。
         try:
