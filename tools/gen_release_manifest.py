@@ -36,7 +36,7 @@ PLUGIN = PLUGIN_DIR / "plugin.py"
 ASSETS = PLUGIN_DIR / "assets"
 DIST = ROOT / "dist"
 
-EXPECTED_PLUGIN_VERSION = "2.0.4"
+EXPECTED_PLUGIN_VERSION = "2.0.5"
 EXPECTED_PLUGIN_API = 1
 # 2.x 发布包剥掉了 _ssl.pyd ⇒ 这些导入链会连本机 HTTP 都跑不起来
 FORBIDDEN_IMPORTS = ("ssl", "http", "urllib.request", "urllib.error", "tkinter")
@@ -219,13 +219,25 @@ def parse_plugin(text: str) -> dict[str, Any]:
 
 
 def imported_modules(text: str) -> set[str]:
+    """模块**顶层** import（函数内惰性 import 不算，B249+ 保 SSL 后可安全回退）。"""
     names: set[str] = set()
-    for node in ast.walk(ast.parse(text)):
+    tree = ast.parse(text)
+    fns = [n for n in ast.walk(tree)
+           if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]
+    ranges = [(n.lineno, getattr(n, "end_lineno", n.lineno)) for n in fns]
+
+    def in_fn(lineno):
+        return any(a <= lineno <= b for a, b in ranges)
+
+    for node in ast.walk(tree):
+        found = []
         if isinstance(node, ast.Import):
-            for alias in node.names:
-                names.add(alias.name)
+            found = [a.name for a in node.names]
         elif isinstance(node, ast.ImportFrom):
-            names.add(node.module or "")
+            found = [node.module or ""]
+        for name in found:
+            if not in_fn(getattr(node, "lineno", 0)):
+                names.add(name)
     return names
 
 

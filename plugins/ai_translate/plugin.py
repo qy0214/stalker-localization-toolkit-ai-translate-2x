@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -684,8 +684,76 @@ def _status_reason(text):
     return parts[2] if len(parts) == 3 else ""
 
 
+class _UrlResponse(object):
+    """把 urllib 响应包成与 `_HttpResponse` 同形（status/headers/read/close/上下文）。
+
+    B249 起平台随包保留 `_ssl` + libssl（scripts/package.ps1 的 2026-11-14 决策），
+    插件可直接用标准库 urllib —— 这是**平台内置能力**，优先走它；老宿主
+    （如 BETA.245 fork，剥掉了 _ssl）import 失败时回退自建 ctypes WinHTTP。
+    """
+
+    def __init__(self, raw):
+        self._raw = raw
+        self.status = int(getattr(raw, "status", 0) or 0)
+        # email.message.Message → 大小写不敏感 dict，对齐 _Headers.get()
+        self.headers = dict((k, v) for k, v in getattr(raw, "headers", {}).items())
+
+    def read(self, size=-1):
+        return self._raw.read() if size is None or int(size) <= 0 \
+            else self._raw.read(int(size))
+
+    def close(self):
+        try:
+            self._raw.close()
+        except Exception:
+            pass
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_a):
+        self.close()
+        return False
+
+
+def _urllib_request(method, url, headers=None, body=None, timeout=30.0):
+    """平台内置 SSL 可用时的标准库 HTTP 路径（优先）。不可用抛 ImportError。"""
+    import urllib.request as _ur
+    import urllib.error as _ue
+    parts = urllib.parse.urlsplit(str(url))
+    if parts.scheme not in ("http", "https") or not parts.hostname:
+        raise IOError("不支持的下载地址：%s" % url)
+    headers = dict(headers or {})
+    if not any(k.lower() == "user-agent" for k in headers):
+        headers["User-Agent"] = UA
+    payload = body or None
+    if isinstance(payload, str):
+        payload = payload.encode("utf-8")
+    req = _ur.Request(str(url), data=payload, headers=headers, method=method)
+    local = parts.hostname.lower() in ("127.0.0.1", "localhost", "::1")
+    # 本地回环必须绕过代理（对齐 ctypes 路径的 NO_PROXY）；外网走系统代理。
+    opener = _ur.build_opener(_ur.ProxyHandler({})) if local \
+        else _ur.build_opener()
+    try:
+        raw = opener.open(req, timeout=max(1, float(timeout or 30)))
+    except _ue.HTTPError as e:
+        # 与 ctypes 路径同形：>=400 抛 _HttpError，.read() 仍可取错误体
+        raise _HttpError(e.code, e.reason, str(url), e.read())
+    return _UrlResponse(raw)
+
+
 def _http_request(method, url, headers=None, body=None, timeout=30.0):
-    """同步 HTTP 请求。返回 `_HttpResponse`；状态码 >= 400 抛 `_HttpError`。"""
+    """同步 HTTP 请求。返回与 urllib 同形的响应；>=400 抛 `_HttpError`。
+
+    优先用平台内置的 urllib + SSL（B249+）；`_ssl` 缺失（老宿主）或 urllib
+    本身失败时回退自建 ctypes WinHTTP（零依赖、走系统代理与证书）。
+    """
+    try:
+        return _urllib_request(method, url, headers, body, timeout)
+    except ImportError:
+        pass  # 老宿主剥掉 _ssl：回退 WinHTTP
+    except (_HttpError, IOError, OSError, ValueError):
+        raise  # 真正的网络/参数错误不吞，交调用方处理
     dll = _winhttp()
     parts = urllib.parse.urlsplit(str(url))
     if parts.scheme not in ("http", "https") or not parts.hostname:
@@ -777,11 +845,69 @@ def _http_request(method, url, headers=None, body=None, timeout=30.0):
                     pass
 
 
+class _HostHttpResponse(object):
+    """把宿主 `api.host.http_*` 的 dict 结果包成与流响应同形。
+
+    宿主门面返回 `{ok,status,body(str),error,bytes,truncated}`——body 已按文本
+    解码（引擎返回的就是 JSON 文本，正好）。只用于**小文本请求**；GB 级下载
+    仍走流式管道（宿主门面会把整包读进内存，不适用）。
+    """
+
+    def __init__(self, result):
+        self.status = int(result.get("status") or 0)
+        self.headers = {}       # 小请求只需 status/body，不读 header
+        self._body = str(result.get("body") or "").encode("utf-8")
+
+    def read(self, size=-1):
+        if size is None or int(size) <= 0:
+            return self._body
+        return self._body[:int(size)]
+
+    def close(self):
+        pass
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_a):
+        return False
+
+
+def _host_small_http(method, url, headers=None, body=None, timeout=30.0):
+    """小文本请求优先走宿主门面；老宿主/不支持时返回 None 让调用方回退。"""
+    host = _HOST
+    if host is None:
+        return None
+    fn = getattr(host, "http_get" if method == "GET" else "http_post", None)
+    if fn is None:
+        return None
+    try:
+        if method == "GET":
+            result = fn(url, int(timeout), 1 << 20)
+        else:
+            payload = body.decode("utf-8", "ignore") \
+                if isinstance(body, bytes) else str(body or "")
+            ctype = (headers or {}).get("Content-Type", "application/json")
+            result = fn(url, payload, ctype, int(timeout), 1 << 20)
+    except Exception:
+        return None
+    if not isinstance(result, dict) or not result.get("ok"):
+        return None     # 宿主请求失败 → 回退自建路径（老行为）
+    return _HostHttpResponse(result)
+
+
 def _http_get(url, headers=None, timeout=30.0):
+    small = _host_small_http("GET", url, headers=headers, timeout=timeout)
+    if small is not None:
+        return small
     return _http_request("GET", url, headers=headers, timeout=timeout)
 
 
 def _http_post(url, data, headers=None, timeout=30.0):
+    small = _host_small_http("POST", url, headers=headers, body=data,
+                             timeout=timeout)
+    if small is not None:
+        return small
     return _http_request("POST", url, headers=headers, body=data,
                          timeout=timeout)
 
@@ -2137,9 +2263,10 @@ def probe_source(name, url, max_bytes=2 * 1024 * 1024, max_secs=8.0):
     res.kind = _host_kind(url)
     t0 = time.time()
     try:
-        with _http_get(url,
-                       headers={"Range": "bytes=0-%d" % (max_bytes - 1)},
-                       timeout=8) as resp:
+        # 流式下载探测：必须绕过宿主小请求门面（宿主会整包读进内存）
+        with _http_request("GET", url,
+                           headers={"Range": "bytes=0-%d" % (max_bytes - 1)},
+                           timeout=8) as resp:
             res.range_ok = (resp.status == 206)
             ctype = resp.headers.get("Content-Type", "")
             if "html" in ctype.lower():
@@ -2252,7 +2379,8 @@ def download_one(sources, target, log, progress=None, cancel_event=None,
                 headers = {}
                 if have:
                     headers["Range"] = "bytes=%d-" % have
-                resp = _http_get(url, headers=headers, timeout=30)
+                # 流式下载：绕过宿主小请求门面（断点续传/进度/大文件需要流）
+                resp = _http_request("GET", url, headers=headers, timeout=30)
                 with resp:
                     ctype = resp.headers.get("Content-Type", "")
                     if "html" in ctype.lower():
@@ -6873,6 +7001,7 @@ class TranslationJob(object):
 
 
 _UI = None          # 2.x: api.ui（register(api) 注入；模块级 helper 用）
+_HOST = None        # 2.x B249+: api.host（host.http_get/http_post 小请求门面）
 
 
 def _combo_get(w):
@@ -7148,9 +7277,16 @@ class AiTranslateTab(object):
         """把 UI 操作送回宿主 UI 线程。
 
         2.x 的 `api.ui.*` 有线程闸门：**非 UI 线程调用返回 None 并记 Warn，
-        不抛异常** —— 工作线程直接调控件只会静默失效。所以这里一律先判线程：
-        在 UI 线程就当场执行（同步语义），否则入队，由
-        `_pump()`（宿主 QTimer）抽干。`on_ui_thread` 是跨线程白名单方法。
+        不抛异常** —— 工作线程直接调控件只会静默失效。所以先判线程：
+        - UI 线程：当场同步执行；
+        - B249+：**跟随宿主**，回调直接交给原生 `ui.post`（宿主负责切线程 +
+          异常隔离，每条回调是独立 Qt 事件、不会像"一次抽干几千条"那样卡住
+          主线程，因此不再需要自建队列节流）；
+        - 老宿主（B245 无 post）：回退自建队列 + `ui.timer` 泵（纯兼容层，
+          B249+ 上完全不激活）。
+
+        `post` 的 pybind 签名是 `post(fn, *args)`，只收位置参数，故把 (fn,a,k)
+        闭包进无参 lambda 再投，避免关键字参数被 py::args 拒绝。
         """
         try:
             on_ui = bool(self.ui.on_ui_thread())
@@ -7161,8 +7297,15 @@ class AiTranslateTab(object):
                 fn(*a, **k)
             except Exception as e:
                 self._log_ui_error(fn, e)
-        else:
-            self._q.put((fn, a, k))
+            return
+        post = getattr(self.ui, "post", None)
+        if callable(post):
+            try:
+                post(lambda: fn(*a, **k))
+                return
+            except Exception:
+                pass  # post 异常 → 退回兼容队列
+        self._q.put((fn, a, k))
 
     def _log_ui_error(self, fn, exc):
         """UI 回调异常写详细日志：否则只表现为"点了没反应"。"""
@@ -7308,11 +7451,14 @@ class AiTranslateTab(object):
         self.btn_show_log = ui.button(p, "查看日志（弹窗）", self.on_show_log)
         self.log_view = None
 
-        # 更新泵：2.x 唯一能把工作线程操作带回 UI 线程的机制是宿主 QTimer。
-        try:
-            ui.timer(p, 30, self._pump)
-        except Exception:
-            pass
+        # 更新泵：B249+ 用宿主原生 ui.post（由 ui_call 按需投递 _pump），
+        # 不再常驻 QTimer；老宿主无 post 时回退 QTimer 轮询。
+        self._use_host_post = callable(getattr(ui, "post", None))
+        if not self._use_host_post:
+            try:
+                ui.timer(p, 30, self._pump)
+            except Exception:
+                pass
         self._on_tier(save_chosen=False)
         if self.parser is None:
             self.log("XML 解析模块加载失败（assets/xray_pkg.zip 缺失？）", "err")
@@ -8927,8 +9073,11 @@ def register(api):
     页面标题下方。2.x 的页面外壳（header/card/滚动区）由宿主提供，
     这里只负责往 `parent` 里按顺序放控件。
     """
-    global _UI
+    global _UI, _HOST
     _UI = api.ui
+    # ★ B249+ 宿主服务门面（host.http_get/http_post）：小文本请求跟随宿主，
+    #   不再自建 urllib/WinHTTP；老宿主无此门面时 _HOST=None 走兼容路径。
+    _HOST = getattr(api, "host", None)
     # ★ 真机 BETA.246 实证：宿主 `wrap_python_builder()` 调的是 `kept()`（零参），
     #   `parent` 由 `UiPanelScope(parent)` 隐式设为“当前面板根”；Python builder
     #   多收一个位置参数会直接 TypeError ⇒ 页面变占位页（日志：builder 抛异常）。

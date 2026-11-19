@@ -129,25 +129,42 @@ def t_p2(module):
     import ast
     tree = ast.parse(open(PLUGIN, encoding="utf-8").read())
 
-    imports = set()
+    top_imports = set()      # 模块顶层 import（loader 阶段就执行 → 老宿主会崩）
+    lazy_imports = set()     # 函数内惰性 import（可 try/except 回退 → 安全）
+    fn_nodes = [n for n in ast.walk(tree)
+                if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef))]
+    fn_ranges = [(n.lineno, getattr(n, "end_lineno", n.lineno)) for n in fn_nodes]
+
+    def in_function(lineno):
+        return any(a <= lineno <= b for a, b in fn_ranges)
+
     for node in ast.walk(tree):
+        names = []
         if isinstance(node, ast.Import):
-            for alias in node.names:
-                imports.add(alias.name)
+            names = [a.name for a in node.names]
         elif isinstance(node, ast.ImportFrom):
-            imports.add(node.module or "")
+            names = [node.module or ""]
+        for name in names:
+            (lazy_imports if in_function(node.lineno) else top_imports).add(name)
 
-    def imported(prefix):
-        return [m for m in imports if m == prefix or m.startswith(prefix + ".")]
+    def imported(collection, prefix):
+        return [m for m in collection if m == prefix or m.startswith(prefix + ".")]
 
+    # 顶层禁用：老宿主（BETA.245 fork）剥掉 _ssl，顶层 import urllib.request 会
+    # 在 loader 阶段直接崩。B249 起保 SSL，允许在**函数内惰性** import 并回退 ctypes。
     for prefix, why in (
-            ("ssl", "2.x 不随 _ssl.pyd"),
+            ("ssl", "2.x 老宿主不随 _ssl.pyd"),
             ("http", "http.client 会拖进 ssl"),
-            ("urllib.request", "导入链会拖进 ssl"),
+            ("urllib.request", "老宿主导入链会拖进 ssl，只能惰性+回退"),
             ("urllib.error", "同上"),
             ("tkinter", "2.x 无 Tkinter")):
-        hits = imported(prefix)
-        check("P2 禁用导入：%s（%s）" % (prefix, why), not hits, str(hits))
+        hits = imported(top_imports, prefix)
+        check("P2 禁用顶层导入：%s（%s）" % (prefix, why), not hits, str(hits))
+    # urllib 惰性导入必须配 ctypes 回退（两条路都在源码里）
+    src = open(PLUGIN, encoding="utf-8").read()
+    check("P2 urllib 惰性导入 + ctypes WinHTTP 回退并存",
+          bool(imported(lazy_imports, "urllib.request"))
+          and "def _winhttp(" in src and "except ImportError" in src)
 
     # tkinter 遗留布局 API 禁用；ui.split 是合法 2.x 门面（用于弹性占位），
     # ui.row/ui.pack 仍禁（宿主自动布局，勿手动 pack）。

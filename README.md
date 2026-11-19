@@ -1,4 +1,4 @@
-# ai_translate 2.0.4
+# ai_translate 2.0.5
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.5** 跟随宿主、去除二次实现：小文本请求改用平台 `api.host.http_*`（B249+），UI 线程调度改用宿主 `api.ui.post`；老宿主保留兼容回退，流式下载仍用自建管道。文档同步联网能力已内置、不再有独立"联网插件"。
 - **2.0.4** 兼容性修复：修复平台 BETA.249 等正式版上六个步骤页内容显示不全（只露一行 / 控件间巨大空白）——改为与平台内置页同构的「直接 pack + 弹性占位」布局，不依赖各版本宿主 viewport 行为差异，全版本内容完整显示。
 - **2.0.3** 提示词与规则约束强化：规则违规遥测（任务收尾输出「提示词体检」，按触发次数点名最薄弱规则）；长度比闸门（补上“翻了一半/过度扩写”的静默漏洞，带要求重试一次）；高频专名定译（全文扫描高频专名，复用会话词表定译管线收敛译名漂移）；俄/英提示词分区化重构；官方模板措辞 A/B 开关（默认关）。
 - **2.0.2** 动态多路翻译 + 整 MOD 终检：多路翻译不再只有 1/2/4 固定三档，按显卡显存（GPU）或物理内存（CPU）自动生成 1..16 路选项，每档带显存估算、预算内最高档标「推荐」，信息不足回落固定档；翻译收尾全量终检（账本在盘、文本表可解析且不缺 ID、掩码残留扫描，只报告不删改）。
@@ -23,7 +24,8 @@
 - 随包术语库 9059 条，分内置只读层与用户覆盖层；支持会话词表、技术精确表与参考软提示层。
 - 场景批处理：连续短对话按上下文批量翻译，失败回退逐条；中文去翻译腔后处理。
 - 完成账本 + 原子写盘：输入变化或输出未覆盖全部条目时自动重译，中断不留半截成品。
-- 网络层用 ctypes 调系统 WinHTTP，不引入任何第三方 Python 依赖。
+- 网络层跟随宿主：小文本请求（翻译/健康检查）优先用平台 `api.host.http_*` 门面（B249+，走平台直连优先/代理回退/系统证书），大文件下载走自建流式管道（断点续传/进度，宿主门面无流式能力）；老宿主自动回退标准库 urllib 或 ctypes WinHTTP，不引入任何第三方 Python 依赖。
+- 线程调度跟随宿主：B249+ 用原生 `api.ui.post` 投递 UI 回调（宿主管线程与异常），老宿主回退自建队列 + 定时器泵（纯兼容层）。
 - 界面完全走宿主 `api.ui` 门面；工作线程只操作数据，控件操作统一投递回 UI 线程。
 
 ## 界面说明
@@ -50,15 +52,19 @@
 
 平台的插件管理器只认一份硬编码的线上注册表
 （`ALittleHuman/STALKER-Localization-Toolkit-2.x-Network-Plugin/main/plugins.json`）。
+**联网能力已内置于平台**（BETA.249 起随包保留 Python SSL/libssl，并提供
+`plugins/_sdk/http_winhttp.py`；插件可直接用 urllib），**不再需要单独安装
+"联网插件"**——旧 Network-Plugin 插件是过时产物、其仓库已删，此处只保留
+注册表数据地址的含义，不代表还要装那个插件。
 **我们的条目还没写进去，所以客户只有平台时在插件管理里搜不到、也装不了。**
 要打通需要三步：
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.4
+python tools/release_plugin.py 2.0.5
 
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.4 dist/ai_translate_plugin_v2.0.4_install.zip --title "ai_translate 2.0.4"
+gh release create v2.0.5 dist/ai_translate_plugin_v2.0.5_install.zip --title "ai_translate 2.0.5"
 
 # 3) 把第 1 步打印的条目追加进注册表的 plugins 数组（需要该仓库写权限）
 ```
@@ -70,7 +76,7 @@ gh release create v2.0.4 dist/ai_translate_plugin_v2.0.4_install.zip --title "ai
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.4.zip` 解压到工具集的 `plugins/` 目录，形成：
+把 `dist/ai_translate_plugin_v2.0.5.zip` 解压到工具集的 `plugins/` 目录，形成：
 
 ```text
 <工具集目录>\
@@ -115,15 +121,15 @@ gh release create v2.0.4 dist/ai_translate_plugin_v2.0.4_install.zip --title "ai
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.4.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.4_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.5.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.5_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
 | `tests/test_ai_translate_fixes.py` | 功能回归测试 |
 | `tests/test_dynamic_parallel.py` | 动态多路翻译回归测试（2.0.2） |
 | `tests/test_prompt_rules.py` | 提示词与规则约束回归测试（2.0.3） |
-| `tests/test_ui_fallback.py` | 页签显示与紧凑布局回归测试（2.0.4） |
+| `tests/test_ui_fallback.py` | 页签布局 + 宿主门面跟随回归测试（2.0.4/2.0.5） |
 | `tests/test_share_package.py` | 分享包卫生与发布包一致性测试 |
 | `tools/gen_release_manifest.py` | 重建 zip 与清单，可做漂移门禁 |
 | `tools/release_plugin.py` | 发版助手：改版本号 → 重建包 → 打印注册表条目 |
@@ -135,20 +141,20 @@ gh release create v2.0.4 dist/ai_translate_plugin_v2.0.4_install.zip --title "ai
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.4`
+- 插件版本：`ai_translate 2.0.5`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `58034bdda482354156f73219315e2dc5f9fd284d6125a24d6a97a522f4f4d201`
+  `977a18b9f11c8c47555ce814e75f5afbbbc03b7e4ba085b6780f8965685387dd`
 - 当前 zip SHA-256：
-  `265dcfd13acaf698d643e889348579aa56d6d356ce3f317f1b8b28f0f7189306`
+  `55a8feb85d9729219e52e0ea4158d160f21f2927d520388ec570ba6d76c23fe0`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `a9b23e8ca3aca3d27deddd358ee1f87f39ad7d607c405fb6d9442551958cf7a3`
+  `700561ca8fe7161469a1d18be018e9d55fabbdc0fe8fca38e243d6f9e68915b5`
 - 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
   11 个分类，两个文件条目数一致。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.4.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.5.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
@@ -170,8 +176,8 @@ python tools/gen_release_manifest.py --build
 python tools/gen_release_manifest.py --check
 ```
 
-当前全量测试：契约 66 项、功能回归 356 项、动态多路 42 项、提示词规则 46 项、
-分享包 30 项，全部通过。
+当前全量测试：契约 67 项、功能回归 356 项、动态多路 42 项、提示词规则 46 项、
+页签与宿主门面 21 项、分享包 30 项，全部通过。
 
 进度显示：底部进度条保持百分比语义（下载按字节、翻译按本轮处理文件数）；
 旁边两行文字给出直观计数——`阶段：翻译中 12/87 · configs\items\x.ltx` 和

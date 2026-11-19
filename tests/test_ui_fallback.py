@@ -26,6 +26,18 @@ sys.path.insert(0, HERE)
 
 from fake_host import FakeApi, FakeUi  # noqa: E402
 
+
+class B249Ui(FakeUi):
+    """模拟 B249+：有原生 ui.post，无 QTimer 泵。"""
+
+    def post(self, fn, *args):
+        self.post_calls = getattr(self, "post_calls", 0) + 1
+        try:
+            fn(*args)
+        except Exception:
+            pass
+        return True
+
 RESULTS = []
 
 
@@ -125,11 +137,93 @@ def t_host_variants():
         check("T4-%s 页签标题仍在" % tag, len(titles) == 6)
 
 
+def t_host_post():
+    print("\n--- T5 B249+ 宿主原生 ui.post 线程调度 ---")
+    api = FakeApi()
+    api.ui = B249Ui()
+    ait.register(api)
+    tab = api.build()
+    check("T5-1 检测到 post 门面后不注册 QTimer 泵",
+          getattr(tab, "_use_host_post", False) is True
+          and not api.ui.timers,
+          "timers=%d" % len(api.ui.timers))
+    # 工作线程 ui_call → 应直接 post 回调，绝不碰自建队列
+    called = []
+    queued = []
+    orig_put = tab._q.put
+
+    def spy_put(item):
+        queued.append(item)
+        return orig_put(item)
+
+    tab._q.put = spy_put
+    import threading
+
+    def worker():
+        tab.ui_call(lambda: called.append("ui"))
+
+    th = threading.Thread(target=worker)
+    th.start()
+    th.join(timeout=5)
+    check("T5-2 ui_call 经 post 投递并执行", called == ["ui"],
+          "called=%s" % called)
+    check("T5-3 post 至少调用一次",
+          getattr(api.ui, "post_calls", 0) >= 1,
+          "post_calls=%d" % getattr(api.ui, "post_calls", 0))
+    check("T5-4 ★ 自建队列 put 从未调用（跟随宿主、无二次实现）",
+          not queued, "put 调用 %d 次" % len(queued))
+
+
+def t_host_http():
+    print("\n--- T6 B249+ 宿主 host.http_* 门面（跟随宿主，小请求不自建）---")
+    # 模拟宿主 host 门面
+    class FakeHostHttp:
+        def __init__(self):
+            self.calls = []
+
+        def http_get(self, url, timeout_sec=20, max_bytes=1 << 20):
+            self.calls.append(("GET", url))
+            return {"ok": True, "status": 200, "body": '{"ok":true}',
+                    "error": "", "bytes": 10, "truncated": False}
+
+        def http_post(self, url, body, content_type="application/json",
+                      timeout_sec=20, max_bytes=1 << 20):
+            self.calls.append(("POST", url, body))
+            return {"ok": True, "status": 200, "body": '{"choices":[]}',
+                    "error": "", "bytes": 14, "truncated": False}
+
+    old = ait._HOST
+    try:
+        host = FakeHostHttp()
+        ait._HOST = host
+        r = ait._http_get("http://127.0.0.1:9999/health", timeout=5)
+        check("T6-1 GET 走宿主门面", ("GET", "http://127.0.0.1:9999/health")
+              in host.calls and r.status == 200 and r.read() == b'{"ok":true}')
+        r2 = ait._http_post("http://127.0.0.1:9999/v1/chat/completions",
+                            b'{"q":1}', headers={"Content-Type": "application/json"})
+        check("T6-2 POST 走宿主门面",
+              any(c[0] == "POST" and c[2] == '{"q":1}' for c in host.calls)
+              and r2.status == 200)
+        # 流式下载必须绕过宿主门面
+        before = len(host.calls)
+        try:
+            ait._http_request("GET", "http://127.0.0.1:9999/big",
+                              headers={"Range": "bytes=0-99"}, timeout=2)
+        except Exception:
+            pass
+        check("T6-3 流式下载绕过宿主门面（宿主只适合小文本）",
+              len(host.calls) == before)
+    finally:
+        ait._HOST = old
+
+
 def main():
     t_direct_pack()
     t_spring()
     t_min_height()
     t_host_variants()
+    t_host_post()
+    t_host_http()
     passed = sum(1 for _n, ok in RESULTS if ok)
     print("\n%d/%d passed" % (passed, len(RESULTS)))
     return 0 if passed == len(RESULTS) else 1
