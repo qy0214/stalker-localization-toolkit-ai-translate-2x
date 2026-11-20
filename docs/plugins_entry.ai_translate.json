@@ -2,14 +2,14 @@
   "plugins": [
     {
       "id": "ai_translate",
-      "version": "2.0.6",
-      "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/download/v2.0.6/ai_translate_plugin_v2.0.6_install.zip",
-      "sha256": "df642b54979f99d2ecc5f0d2b624fcc3e9c591408f306bc071800d35e493ecba",
+      "version": "2.0.7",
+      "package": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/download/v2.0.7/ai_translate_plugin_v2.0.7_install.zip",
+      "sha256": "014a4d3aeb324712031103851051019aec8a30acc46ba047d48d7fbf27d9b159",
       "entry": "plugin.py",
       "target": "ai_translate",
       "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
       "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
-      "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。2.0.6：跟随宿主 B250——中小产物（运行库 zip）优先 api.host.http_download（失败不留半文件），GB 级模型保留自建流式（宿主无进度/断点/长时窗能力）；宿主门面失败回退时留痕；ui_call 线程探测异常默认走投递方向。"
+      "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。2.0.7：翻译完整性三修——①长度比闸门按语言对设阈值（俄→中下限 0.15，消除 77 条正确译文的误判重试）；②西里尔全大写短名不再一律当专名跳过，优先直取随包术语库既有译名（БАРМЕН→酒保等 20 条）；③终检新增条目级漏译扫描（输出仍等于俄文源文的条目点名，排除已登记专名）。"
     }
   ]
 }

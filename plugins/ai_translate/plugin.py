@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.6",
+    "version": "2.0.7",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -2170,6 +2170,72 @@ def load_term_layers():
             "quote_required": quote_required}
 
 
+_BUILTIN_FLAT_CACHE = {"key": None, "data": {}}
+
+
+def termbase_lookup(text):
+    """精确查随包术语库（canon/names/technical/reference 全层），返回译名或 None。
+
+    ★ 2.0.7：专名保护跳过之前先查这里——库里已有的译名（如 БАРМЕН→酒保、
+    ПРИЗРАК→幽灵）直接取用，不再当"不可译专名"原样保留。大小写与首尾
+    引号不敏感（SMS 名字表多为全大写，词库多为首字母大写）。
+    只做整串精确匹配，不做子串——避免把正文里的普通词误换成专名译名。
+    """
+    s = (text or "").strip().strip('"\u00ab\u00bb\u201c\u201d\'')
+    if not s:
+        return None
+    # 直接读 termbase 原始分类表：load_term_layers 的 canon/names 是 set
+    # （只有 technical/reference 带映射），这里需要"原文→译名"全量映射。
+    # 两次查表（termbase + builtin）都在模块级缓存上做——终检对几千条目
+    # 逐条调用，不能每次重读 350KB JSON。
+    data = load_termbase_data()
+    low = s.casefold()
+    for _cat, table in data.items():
+        if _cat.startswith("_") or not isinstance(table, dict):
+            continue
+        if s in table:
+            return str(table[s])
+        for k, v in table.items():
+            if str(k).casefold() == low:
+                return str(v)
+    # 兼容早期扁平词库（带 mtime 缓存，避免逐条重读 320KB）
+    global _BUILTIN_FLAT_CACHE
+    try:
+        _bst = os.stat(_GLOSS_BUILTIN)
+        _bkey = (_bst.st_mtime_ns, _bst.st_size)
+    except OSError:
+        _bkey = None
+    if _BUILTIN_FLAT_CACHE.get("key") != _bkey:
+        _BUILTIN_FLAT_CACHE = {"key": _bkey, "data": load_builtin_glossary()}
+    flat = _BUILTIN_FLAT_CACHE.get("data") or {}
+    if s in flat:
+        return str(flat[s])
+    for k, v in flat.items():
+        if str(k).casefold() == low:
+            return str(v)
+    return None
+
+
+def termbase_exact_translation(text):
+    """整条命中术语库时返回可直接落盘的译名（含首尾引号处理），否则 None。
+
+    源文在引号内时去掉词库译名的外层引号，避免 ““自由团”” 双引号嵌套；
+    与 _inline_term_value 同口径。只处理整条精确匹配。
+    """
+    value = termbase_lookup(text)
+    if value is None:
+        return None
+    s = (text or "").strip()
+    quotes = "\"'«»“”‘’"
+    if (len(s) >= 2 and s[0] in quotes and s[-1] in quotes
+            and len(value) >= 2 and value[0] in quotes
+            and value[-1] in quotes):
+        value = value[1:-1]
+    lead = text[:len(text) - len(text.lstrip())]
+    trail = text[len(text.rstrip()):]
+    return lead + value + trail
+
+
 def load_hard_glossary_keys():
     """只把 canon 层（阵营/地点/变异体/物品）当硬词；人物名与对话类只做软参考。
 
@@ -3601,7 +3667,14 @@ def looks_like_proper_text(rel, text):
             or _MODEL_LIKE_RE.match(s)):
         return True
     if len(s) <= 20 and s.isupper() and any(c.isalpha() for c in s):
-        return True
+        # ★ 2.0.7：只保护拉丁字母的型号/缩写（NVIDIA DLSS、AK-74）。
+        # 西里尔全大写短名（БАРМЕН、ПРИЗРАК、ЗВЕРОБОЙ…）在人物表/SMS
+        # 名字表里是**普通身份称呼**，旧规则把它们整批原样保留、连模型
+        # 都不调用。这里放行为"不自动保护"：调用方先用 termbase_lookup
+        # 取库里既有译名，没有的送模型翻译。
+        if re.search(r"[A-Za-z]", s):
+            return True
+        return False
     return False
 
 
@@ -4803,12 +4876,24 @@ class TranslationJob(object):
         # （模型只翻了前半句）或过度扩写。带针对性要求重试一次；
         # 仍异常则保留首次译文（漏译的译文仍比俄文原文强，不回退原文）。
         # 短文本（<40 字符或可译词 <4）噪声大，不检；短标签不检。
+        #
+        # ★ 2.0.7 下限按语言对：俄→中天然压缩（西里尔 2 字节/字符、中文
+        # 信息密度高），实测bio表 0.24~0.35 全是正确译文；旧下限 0.30
+        # 把 77 条正确译文判成漏译、各白跑一次重试。英→中类似。
+        # 同语系/中→外维持 0.30。上限 2.0 不变（扩写仍要抓）。
+        _to_zh = self.tgt in ("zh", "chs", "zh-CN", "zh-Hans", "简体中文",
+                              "中文", "chs")
+        _low_ratio = 0.15 if (_to_zh and lang in ("rus", "eng", "ukr", "auto",
+                                                  "text")) else 0.30
         if (self._style_hint != "label" and len(normalized.strip()) >= 40
                 and len(re.findall(r"[а-яёА-ЯЁ]{2,}|[A-Za-z]{2,}",
                                    normalized)) >= 4):
             src_len = max(1, len(normalized.strip()))
             ratio = len(out.strip()) / src_len
-            if not (0.3 <= ratio <= 2.0):
+            # 漏译的真正特征：译文短到几乎没内容（<12 字符），无论语言对
+            # 都要抓；否则用语言对下限。
+            if ratio < _low_ratio and len(out.strip()) < 12 \
+                    or not (_low_ratio <= ratio <= 2.0):
                 note = ("译文长度与原文严重不符，疑似漏译或过度扩写；"
                         "逐句对照原文完整翻译，不增译、不漏译、不概括。")
                 try:
@@ -4823,7 +4908,7 @@ class TranslationJob(object):
                     retry = None
                 ok_ratio = False
                 if retry and not looks_like_prompt_echo(retry) \
-                        and 0.3 <= len(retry.strip()) / src_len <= 2.0:
+                        and _low_ratio <= len(retry.strip()) / src_len <= 2.0:
                     ok_ratio = True
                 if ok_ratio:
                     self.detail("  译文长度比异常（%.2f），已按完整对照重试：%s"
@@ -5501,6 +5586,9 @@ class TranslationJob(object):
              = 漏条目。原样复制的文件不验结构（复制不改内容）。
           ③ **掩码残留**：$$R0$$ 形态是送翻时的临时掩码，正常成品不该出现
              （restore 失败整条回退原文）；扫到即点名"疑似"让人复核。
+          ④ **条目未翻译**（2.0.7）：改写过的文本表里，输出仍与源文逐字相同
+             且含西里尔——这是"保留原文"的落盘形态（翻译异常/专名跳过）。
+             排除已登记专名/术语库既有条目后即疑似漏译，点名让人补。
         终检不通过不影响已有输出、不改 ok —— 账本续跑机制下次会补漏重译。
         范围：文本表 XML（数量最大的产出）。脚本字面层/引用层复制件走 ①。
         """
@@ -5517,6 +5605,8 @@ class TranslationJob(object):
             if size == 0 and int(info.get("out_size") or 0) > 0:
                 empty.append(rel)
         bad_parse, lost_ids, residue, n_tables = [], [], [], 0
+        untranslated = []          # ★ 2.0.7 条目级漏译（输出=俄文源文）
+        _CYR_AUDIT = re.compile(r"[а-яёА-ЯЁ]{2,}")
         for rel in sorted(self._audit_tables):
             n_tables += 1
             out = os.path.join(done_dir, rel.replace("/", os.sep))
@@ -5538,6 +5628,30 @@ class TranslationJob(object):
                         lost_ids.append("%s（缺 %d 条：%s…）"
                                         % (rel, len(miss),
                                            ", ".join(sorted(miss)[:3])))
+                    # ④ 条目级漏译：同一 id 输出文本仍是输入俄文原样。
+                    # 排除已登记专名（词库命中）——那是有意保留，不是漏译。
+                    in_map = {e.id: e for e in (in_ents or [])}
+                    hits = []
+                    for e in (out_ents or []):
+                        src_e = in_map.get(e.id)
+                        if src_e is None:
+                            continue
+                        for lang_key, out_val in (e.texts or {}).items():
+                            in_val = (src_e.texts or {}).get(lang_key)
+                            if not in_val or not out_val:
+                                continue
+                            if in_val != out_val:
+                                continue          # 改过 = 已翻
+                            if not _CYR_AUDIT.search(in_val):
+                                continue          # 非俄文源（英文等）另算
+                            if termbase_lookup(in_val) is not None:
+                                continue          # 词库条目：有意保留
+                            hits.append(e.id)
+                            break
+                    if hits:
+                        untranslated.append("%s（%d 条：%s…）"
+                                            % (rel, len(hits),
+                                               ", ".join(hits[:3])))
                 except Exception:
                     pass    # 输入表已不存在/解析失败：以输出可解析为准
             try:
@@ -5547,7 +5661,7 @@ class TranslationJob(object):
             if _MASK_RESIDUE_RE.search(raw or ""):
                 residue.append(rel)
         problems = (len(missing) + len(empty) + len(bad_parse)
-                    + len(lost_ids) + len(residue))
+                    + len(lost_ids) + len(residue) + len(untranslated))
         if problems:
             self.log("终检：账本 %d 个文件 / 改写文本表 %d 张，发现 %d 处问题"
                      % (len(ledger_items), n_tables, problems), "warn")
@@ -5561,6 +5675,11 @@ class TranslationJob(object):
                 self.log("  终检｜输出疑似漏条目：%s" % rel, "warn")
             for rel in residue[:10]:
                 self.log("  终检｜疑似未还原掩码（$$R…）：%s" % rel, "warn")
+            for rel in untranslated[:20]:
+                self.log("  终检｜条目未翻译（保留俄文）：%s" % rel, "warn")
+            if untranslated:
+                self.log("  终检｜未翻译条目只点名前 20 张表；"
+                         "可清空输出目录后重跑补译", "warn")
             if problems > 40:
                 self.log("  终检｜其余问题只点名前 40 处，其余见详细日志",
                          "warn")
@@ -6287,6 +6406,10 @@ class TranslationJob(object):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False
+                # ★ 2.0.7：术语库整条命中的条目必须进批次（写入点直接取译名）
+                if src0 not in self.glossary \
+                        and termbase_lookup(src0) is not None:
+                    return True
                 if self.protect_proper and looks_like_proper_text(rel, src0):
                     return False
                 return True
@@ -6350,6 +6473,15 @@ class TranslationJob(object):
                 st["skipped"] += 1
                 continue
             if self.only_referenced and ent.id not in self._ref_counts:
+                continue
+            # ★ 2.0.7 术语优先：整条命中随包词库（БАРМЕН→酒保等）直接取译名，
+            # 不再当"不可译专名"跳过；库里没有的才走保护判定/模型。
+            # 用户/会话词库已给译名时不介入——尊重用户选择与保护专名语义。
+            _exact = termbase_exact_translation(src) \
+                if src not in self.glossary else None
+            if _exact is not None and _exact != src:
+                changes[ent.id] = (lang, _exact)
+                st["translated"] += 1
                 continue
             if self.protect_proper and looks_like_proper_text(rel, src):
                 st["skipped"] += 1
@@ -6783,6 +6915,8 @@ class TranslationJob(object):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False
+                if termbase_lookup(src0) is not None:
+                    return True
                 if self.protect_proper and looks_like_proper_text(full, src0):
                     return False
                 return True
@@ -7043,6 +7177,16 @@ class TranslationJob(object):
             if looks_like_code_or_debug(rel, send):
                 continue
             if looks_like_identifier_text(send):
+                continue
+            # 术语直取只用于 UTF-8 的文本表；脚本/ltx 按源编码（cp1251）
+            # 写回，塞中文译名会 UnicodeEncodeError，交给模型走转码路径。
+            _exact = termbase_exact_translation(send) \
+                if send not in self.glossary and enc.lower() in (
+                    "utf-8", "utf8", "utf-8-sig") else None
+            if _exact is not None and _exact != send:
+                # 术语命中当"已翻译结果"，继续走后续 rep 替换流程；
+                # 这里绝不能 return 单值——_process_non_text 契约是三元组。
+                rep[send] = _exact
                 continue
             if self.protect_proper and looks_like_proper_text(rel, send):
                 continue
