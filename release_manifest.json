@@ -1,27 +1,24 @@
 {
-  "generated_at": "2026-11-20T22:20:41+08:00",
+  "generated_at": "2026-11-20T22:36:34+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "f570478",
+    "commit": "5363fe5",
     "dirty": true,
     "dirty_files": [
       "M README.md",
-      " D dist/ai_translate_plugin_v2.0.6.zip",
-      " D dist/ai_translate_plugin_v2.0.6_install.zip",
-      " M docs/plugins_entry.ai_translate.json",
+      " D dist/ai_translate_plugin_v2.0.7.zip",
+      " D dist/ai_translate_plugin_v2.0.7_install.zip",
       " M plugins/ai_translate/plugin.py",
-      "?? audit-reports/",
-      "?? dist/ai_translate_plugin_v2.0.7.zip",
-      "?? dist/ai_translate_plugin_v2.0.7_install.zip",
-      "?? review_results.json",
-      "?? tests/test_2707_fixes.py"
+      "?? dist/ai_translate_plugin_v2.0.8.zip",
+      "?? dist/ai_translate_plugin_v2.0.8_install.zip",
+      "?? tests/test_2808_context_bleed.py"
     ]
   },
   "versions": {
-    "plugin_version": "2.0.7",
-    "expected_plugin_version": "2.0.7",
+    "plugin_version": "2.0.8",
+    "expected_plugin_version": "2.0.8",
     "plugin_api": 1,
     "target_toolkit": "STALKER Localization Toolkit 2.x"
   },
@@ -30,32 +27,32 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 421432,
-      "sha256": "77a3c31dda5107e66fd01fa4ed90e76a39fa5d389adbbd228af15fa34bd9e257",
+      "size": 425705,
+      "sha256": "d651a7b5e11f3e52e9f62234ee98b1a49ae2419bdd015913c8bbd1afb8ec955c",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1111974,
+      "size": 1116247,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
-      "path": "dist\\ai_translate_plugin_v2.0.7.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.8.zip",
       "exists": true,
-      "size": 373050,
-      "sha256": "3f65f017ef7759789f143e61586ed95eb572eda8e869afb33076767bc8a0d0fb",
+      "size": 374207,
+      "sha256": "31b0a060f549034a5e1fa9924cb51b6013d6c545e10bf7f6d535670a070c3075",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
-      "path": "dist\\ai_translate_plugin_v2.0.7_install.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.8_install.zip",
       "exists": true,
-      "size": 372970,
-      "sha256": "014a4d3aeb324712031103851051019aec8a30acc46ba047d48d7fbf27d9b159",
+      "size": 374127,
+      "sha256": "09c4802c88019a820de94a0e69be525165268699883929143dadb8c3852fb415",
       "note": "给平台插件管理器直接解压用"
     },
     {
@@ -92,8 +89,8 @@
     }
   ],
   "zip": {
-    "path": "dist\\ai_translate_plugin_v2.0.7.zip",
-    "sha256": "3f65f017ef7759789f143e61586ed95eb572eda8e869afb33076767bc8a0d0fb",
+    "path": "dist\\ai_translate_plugin_v2.0.8.zip",
+    "sha256": "31b0a060f549034a5e1fa9924cb51b6013d6c545e10bf7f6d535670a070c3075",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -149,7 +146,7 @@
     {
       "check": "插件版本 == 预期",
       "ok": true,
-      "detail": "PLUGIN_INFO 2.0.7 / 预期 2.0.7"
+      "detail": "PLUGIN_INFO 2.0.8 / 预期 2.0.8"
     },
     {
       "check": "PLUGIN_API == 1（2.x 宿主契约）",
@@ -179,7 +176,7 @@
     {
       "check": "zip 文件名含插件版本",
       "ok": true,
-      "detail": "ai_translate_plugin_v2.0.7.zip"
+      "detail": "ai_translate_plugin_v2.0.8.zip"
     },
     {
       "check": "zip 条目 == 5 个预期文件",
@@ -286,7 +283,7 @@
     "termbase_meta_total": 9059
   },
   "tracked": {
-    "files": 30,
-    "bytes": 1650947
+    "files": 33,
+    "bytes": 2284882
   }
 }

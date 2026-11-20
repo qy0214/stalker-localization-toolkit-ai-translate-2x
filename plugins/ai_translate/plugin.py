@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1184,6 +1184,33 @@ _PROMPT_ECHO_MARKERS = (
 def looks_like_prompt_echo(text):
     s = text or ""
     return any(marker in s for marker in _PROMPT_ECHO_MARKERS)
+
+
+# ★ 2.0.8 场景上下文串入：模型（尤其 1.8B）会把 user prompt 前面那段
+# 「前一句/后一句」当成正文一起翻出来，连标签都照抄。这些标签绝不该出现在
+# 译文里，用固定锚点硬校验，与提示词无关。
+_CONTEXT_ECHO_MARKERS = (
+    "前一句：", "后一句：", "上一句：", "下一句：",
+    "上下文（仅供理解", "上下文(仅供理解",
+)
+
+
+def looks_like_context_echo(text):
+    s = text or ""
+    return any(marker in s for marker in _CONTEXT_ECHO_MARKERS)
+
+
+def looks_like_context_bleed(src, out):
+    """译文串入场景上下文：显式标签，或极短源文吐出超长段落。
+
+    后者兜住模型只翻了上下文正文、却没照抄「前一句：」标签的情况：
+    例如源文 `Я не готов.`（11 字符）却输出一整段上一条的译文。
+    """
+    if not out:
+        return False
+    if looks_like_context_echo(out):
+        return True
+    return len((src or "").strip()) < 24 and len((out or "").strip()) > 150
 
 
 _RU_PROFANITY_RE = re.compile(
@@ -4786,7 +4813,13 @@ class TranslationJob(object):
         校验失败（模型改了/丢了 `$name`、`%s`、`\n` 等）时**保留原文**，
         绝不把坏译文写进文本表。这是硬约束，不依赖提示词。
         """
-        self._ctx_hint = context or ""
+        # ★ 2.0.8 源头减险：极短条目（<12 字符，如 "Я не готов."）不注入
+        # 场景上下文。这类条目几乎没有正文压住 prompt 前面的「前一句：…」，
+        # 1.8B 小模型最容易把上下文整段当正文翻出（实测 bar_arena_man_job_172
+        # 被上一条的长译文覆盖）。阈值只取最危险的极短串，正常短对话仍保留
+        # 上下文帮助消歧；其余污染由下面的 bleed 检测+去上下文重试兜住。
+        self._ctx_hint = "" if len((text or "").strip()) < 12 \
+            else (context or "")
         self._style_hint = style or "dialogue"
         if lang in ("auto", "text"):
             lang = detect_text_lang(text) or self._lang_hint or "rus"
@@ -4834,6 +4867,33 @@ class TranslationJob(object):
             self.detail("  模型回显提示词，保留原文：%s" % str(text)[:60])
             self._rule_hit("提示词回显", "kept_source")
             return text
+        # ★ 2.0.8 上下文串入闸门：模型把「前一句/后一句」上下文当正文翻出，
+        # 或极短源文吐出超长段落（上一条译文）。这些标签/段落绝不属于本条
+        # 译文。去掉上下文重译一次（清 _ctx_hint，否则重试仍带同一上下文）；
+        # 仍异常则保留原文，绝不把相邻条目的译文写进本条。
+        if looks_like_context_bleed(normalized, out):
+            self.detail("  上下文串入译文，去掉上下文重译：%s"
+                        % str(text)[:60])
+            saved_ctx = self._ctx_hint
+            self._ctx_hint = ""
+            try:
+                if mapping:
+                    retry_raw = self._translate_plain(masked, lang)
+                    retry_ctx = restore_runtime_tokens(retry_raw, mapping)
+                else:
+                    retry_ctx = self._translate_plain(normalized, lang)
+            except Exception:
+                retry_ctx = None
+            if retry_ctx and not looks_like_prompt_echo(retry_ctx) \
+                    and not looks_like_context_bleed(normalized, retry_ctx):
+                self.detail("  去上下文重译成功：%s" % str(text)[:50])
+                self._rule_hit("上下文串入", "retried_ok")
+                out = retry_ctx
+            else:
+                self.detail("  去上下文重译仍异常，保留原文：%s"
+                            % str(text)[:60])
+                self._rule_hit("上下文串入", "kept_source")
+                return text
         # 残留源词确定性替换：模型把专名原样保留时，直接按词库换掉；
         # 不调用模型，也不改动句子其它部分。替换后再看是否还残留俄文。
         out = self._repair_residual_source_terms(normalized, out)
@@ -5606,6 +5666,7 @@ class TranslationJob(object):
                 empty.append(rel)
         bad_parse, lost_ids, residue, n_tables = [], [], [], 0
         untranslated = []          # ★ 2.0.7 条目级漏译（输出=俄文源文）
+        ctx_bleed = []             # ★ 2.0.8 上下文串入（前一句/后一句标签）
         _CYR_AUDIT = re.compile(r"[а-яёА-ЯЁ]{2,}")
         for rel in sorted(self._audit_tables):
             n_tables += 1
@@ -5652,6 +5713,18 @@ class TranslationJob(object):
                         untranslated.append("%s（%d 条：%s…）"
                                             % (rel, len(hits),
                                                ", ".join(hits[:3])))
+                    # ⑤ 上下文串入：输出文本仍带「前一句/后一句」标签。
+                    # 这是译文被相邻条目污染的直接证据，必须点名补译。
+                    bleed_ids = []
+                    for e in (out_ents or []):
+                        for out_val in (e.texts or {}).values():
+                            if looks_like_context_echo(out_val):
+                                bleed_ids.append(e.id)
+                                break
+                    if bleed_ids:
+                        ctx_bleed.append("%s（%d 条：%s…）"
+                                         % (rel, len(bleed_ids),
+                                            ", ".join(bleed_ids[:3])))
                 except Exception:
                     pass    # 输入表已不存在/解析失败：以输出可解析为准
             try:
@@ -5661,7 +5734,8 @@ class TranslationJob(object):
             if _MASK_RESIDUE_RE.search(raw or ""):
                 residue.append(rel)
         problems = (len(missing) + len(empty) + len(bad_parse)
-                    + len(lost_ids) + len(residue) + len(untranslated))
+                    + len(lost_ids) + len(residue) + len(untranslated)
+                    + len(ctx_bleed))
         if problems:
             self.log("终检：账本 %d 个文件 / 改写文本表 %d 张，发现 %d 处问题"
                      % (len(ledger_items), n_tables, problems), "warn")
@@ -5677,8 +5751,11 @@ class TranslationJob(object):
                 self.log("  终检｜疑似未还原掩码（$$R…）：%s" % rel, "warn")
             for rel in untranslated[:20]:
                 self.log("  终检｜条目未翻译（保留俄文）：%s" % rel, "warn")
-            if untranslated:
-                self.log("  终检｜未翻译条目只点名前 20 张表；"
+            for rel in ctx_bleed[:20]:
+                self.log("  终检｜上下文串入（前一句/后一句）：%s" % rel,
+                         "warn")
+            if untranslated or ctx_bleed:
+                self.log("  终检｜上述条目只点名前 20 张表；"
                          "可清空输出目录后重跑补译", "warn")
             if problems > 40:
                 self.log("  终检｜其余问题只点名前 40 处，其余见详细日志",
