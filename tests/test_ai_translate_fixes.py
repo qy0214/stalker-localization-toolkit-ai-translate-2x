@@ -2327,10 +2327,10 @@ def t47_termbase_v2():
           meta.get("format") == "stalker-toolkit-termbase/2"
           and meta.get("layers", {}).get("canon")
           and meta.get("layers", {}).get("technical"))
-    check("T47-2 四层规模：canon 1453 / names 3069 / technical 18",
-          len(layers["canon"]) == 1453
-          and len(layers["names"]) == 3069
-          and len(layers["technical"]) == 18,
+    check("T47-2 四层规模（随词库扩充增长，按基线取下限）",
+          len(layers["canon"]) >= 1453
+          and len(layers["names"]) >= 3069
+          and len(layers["technical"]) >= 18,
           "%d/%d/%d" % (len(layers["canon"]), len(layers["names"]),
                         len(layers["technical"])))
     check("T47-3 技术词数据化并进入术语库",

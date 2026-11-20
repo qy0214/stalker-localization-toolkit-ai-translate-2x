@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.8",
+    "version": "2.0.9",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1211,6 +1211,83 @@ def looks_like_context_bleed(src, out):
     if looks_like_context_echo(out):
         return True
     return len((src or "").strip()) < 24 and len((out or "").strip()) > 150
+
+
+# ★ 2.0.9 数字保真：金额/年份/坐标等大额数字绝不能被模型改写。
+# 实测 dm_lin_treasure_33 源文「30000 рублей」被译成「15,000卢布」（报酬腰斩）。
+# 只检 >=3 位的数字（<3 位多为编号/序号，且 2006-м→2006年 等屈折会误报）。
+_BIG_NUM_RE = re.compile(r"(?<![\d,.])(\d{3,})(?![\d,.])")
+_ZH_DIGITS = {"零": 0, "〇": 0, "一": 1, "二": 2, "两": 2, "三": 3, "四": 4,
+              "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
+
+
+def _zh_number_values(text):
+    """把译文里的中文计数法还原成数值集合，用于核对原文大额数字。
+
+    支持：1.5万 / 3万 / 两万 / 三万 / 十五万 / 100,000 / 100 000。
+    中文汉字数字只覆盖万位以内的常见写法，够核对金额即可。
+    """
+    vals = set()
+    if not text:
+        return vals
+    # 阿拉伯数字 + 万/千（含千分位逗号、空格）
+    for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*([万千])", text):
+        try:
+            base = float(m.group(1).replace(",", ""))
+            mult = 10000 if m.group(2) == "万" else 1000
+            v = base * mult
+            vals.add(int(v) if v == int(v) else v)
+        except ValueError:
+            pass
+    # 纯汉字数字串，如 三万 / 一万五千 / 两万 / 十五万 / 一百二十五
+    # 一次性解析整串（含万/千/百/十多级），避免「一万五千」被拆成 1万+5千。
+    for m in re.finditer(r"[零〇一二两三四五六七八九十百千万]+", text):
+        seg = m.group(0)
+        total, section, num = 0, 0, 0
+        for i, ch in enumerate(seg):
+            if ch in _ZH_DIGITS:
+                num = _ZH_DIGITS[ch]
+            elif ch in ("十", "百", "千", "万"):
+                unit = {"十": 10, "百": 100, "千": 1000, "万": 10000}[ch]
+                if ch == "万":
+                    # 万之前的部分（section+num）是"几万"
+                    total += (section + num or 1) * unit
+                    section, num = 0, 0
+                else:
+                    section += (num or 1) * unit
+                    num = 0
+            # 末端数字累加到 section/num 由下方统一处理
+        value = total + section + num
+        if value:
+            vals.add(value)
+    return vals
+
+
+def missing_big_numbers(src, out):
+    """源文大额数字在译文中找不到（原样/千分位/中文计数）时返回缺失列表。
+
+    找不到 = 模型改写或漏掉了关键数字（金额、年份、坐标、密码），
+    必须拦截。返回空列表表示保真通过。
+    """
+    if not src or not out:
+        return []
+    src_nums = set(_BIG_NUM_RE.findall(str(src)))
+    if not src_nums:
+        return []
+    # 译文里的阿拉伯数字（去千分位逗号/空格）
+    out_nums = set(re.findall(r"\d+", re.sub(r"[,\s]", "", str(out))))
+    out_nums |= {str(int(float(x))) for x in out_nums if x.isdigit()}
+    out_vals = _zh_number_values(out)
+    missing = []
+    for n in src_nums:
+        # 原样出现（含千分位：源 30000，译 30,000 → 去逗号后 30000）
+        if n in out_nums:
+            continue
+        iv = int(n)
+        if iv in out_vals or float(iv) in out_vals or iv in out_nums:
+            continue
+        missing.append(n)
+    return missing
 
 
 _RU_PROFANITY_RE = re.compile(
@@ -4980,6 +5057,40 @@ class TranslationJob(object):
                                 "保留首次译文：%s"
                                 % (ratio, str(text)[:50]))
                     self._rule_hit("长度比（漏译/扩写）", "kept_first")
+        # ★ 2.0.9 数字保真闸门：源文的大额数字（金额/年份/坐标/密码）必须在
+        # 译文中原样出现（含千分位或中文万/千计数）。实测源文 30000 卢布被
+        # 译成 15,000，报酬腰斩。带“逐字保留数字”要求重试一次；仍缺则保留
+        # 原文——错误的金额比未翻译的俄文更有害，原文至少不会误导玩家。
+        if _to_zh:
+            _missed = missing_big_numbers(normalized, out)
+            if _missed:
+                self.detail("  译文大额数字缺失/被改（%s），按逐字保留重试：%s"
+                            % (",".join(_missed[:4]), str(text)[:50]))
+                note = ("原文中的数字（尤其是金额、年份、坐标、密码）必须"
+                        "逐字保留，不得换算、四舍五入或改写；"
+                        "例如 30000 就写 30000，不要写成其它数字。")
+                try:
+                    if mapping:
+                        retry_raw = self._translate_plain(
+                            masked, lang, note=note)
+                        retry_num = restore_runtime_tokens(retry_raw, mapping)
+                    else:
+                        retry_num = self._translate_plain(normalized, lang,
+                                                          note=note)
+                except Exception:
+                    retry_num = None
+                still = missing_big_numbers(normalized, retry_num) \
+                    if retry_num else _missed
+                if retry_num and not looks_like_prompt_echo(retry_num) \
+                        and not still:
+                    self.detail("  数字保真重试成功：%s" % str(text)[:50])
+                    self._rule_hit("数字保真", "retried_ok")
+                    out = retry_num
+                else:
+                    self.detail("  数字保真重试仍缺失（%s），保留原文：%s"
+                                % (",".join(still[:4]), str(text)[:50]))
+                    self._rule_hit("数字保真", "kept_source")
+                    return text
         # 粗口保真闸门：原文有脏话/辱骂/威胁，译文却完全软化时，带
         # “保留同等力度”的补充要求重试一次；仍软化则保留第一次结果。
         if has_source_profanity(normalized) and not has_zh_profanity(out):
