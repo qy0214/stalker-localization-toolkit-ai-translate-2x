@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.16",
+    "version": "2.0.17",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1341,6 +1341,8 @@ def missing_big_numbers(src, out):
         if iv in out_vals or float(iv) in out_vals or iv in out_nums:
             continue
         missing.append(n)
+    # 确定性输出顺序：集合迭代顺序随进程哈希变化，会让补数字/测试不稳定
+    missing.sort(key=lambda x: (len(x), x))
     return missing
 
 
@@ -3852,8 +3854,11 @@ _PROTECT_FILE_HINTS = ("credits", "ogg", "music", "songs", "enc_weapons",
 # 旧式 `[^\n:：]{0,80}` 会吞掉 `Just about anyone, buddy. Think about it:`
 # 这类对话（前 80 字内有冒号就整条当标题跳过，实测 12+ 条长对话未译）。
 # 真标题（Vano: ...、MP5 — Sanitizer）冒号前短且无 .!?，仍受保护。
+# ★ 2.0.17：标题规则再收紧——冒号前段含逗号/引号的是叙述句
+# （实测 "Men, take note: only a bullet..." 被当标题整段跳过）。
+# 标签形态（Name: / Radio: / Quest:）冒号前是 1~3 个词、无逗号。
 _TITLE_LIKE_RE = re.compile(
-    r"^[A-Za-z0-9][^\n:：.!?！？]{0,40}[:：]\s*[A-Za-z0-9]")
+    r"^[A-Za-z0-9][A-Za-z0-9 .\-'/]{0,40}[:：]\s*[A-Za-z0-9]")
 _TITLE_DASH_RE = re.compile(
     r"^[A-Za-z0-9][^\n.!?！？—–]{0,40}[—–]\s*"
     r"[A-Za-z0-9][^\n.!?！？]{0,40}$")
@@ -3865,11 +3870,18 @@ _MODEL_LIKE_RE = re.compile(
     r'^(?:[A-Z0-9][A-Za-z0-9\-]*[ .\-/]?){1,5}["“][^"”]{1,80}["”]')
 _CODE_LIKE_RE = re.compile(r"^[A-Z0-9][A-Z0-9 .\-/_]{1,30}$")
 _COPYRIGHT_RE = re.compile(r"^(?:©|\(c\)|copyright\b)", re.I)
+# ★ 2.0.17 误伤修正（实测 2.0.15 产物 59 条漏译里 12 条中招）：
+# - `FAILED\b` 在 re.I 下命中叙述文里的 "failed"（"a result of failed
+#   experiments"）→ 改为大小写敏感的显式 FAILED；
+# - `teleport\w*` 命中叙事词 "teleport closer" → 只认调试标识符形态
+#   `teleport_…` 或 `teleport:`/`teleport =`。
+# 其余 token（onItemDrop/npcObj/reinit/kamps 等驼峰或生僻词）保留 re.I。
 _DEBUG_LIKE_RE = re.compile(
-    r"(?:onItemDrop|npcObj|FAILED\b|sect\s*-|obj\s*:|gvid\s*:|"
-    r"^(?:~|\[[a-z0-9_:.\- ]+\]$)|"
-    r"\b(?:teleport\w*|reinit|kamps|npcItems|isVisual\w*)\b|"
-    r"content\s*:)", re.I)
+    r"(?:onItemDrop|npcObj|\bFAILED\b|sect\s*-|obj\s*:|gvid\s*:|"
+    r"^(?:~|(?i:\[[a-z0-9_:.\- ]+\]$))|"
+    r"\bteleport_[a-z0-9_]+|\bteleport\s*[:=]|"
+    r"\b(?:reinit|kamps|npcItems|isVisual\w*)\b|"
+    r"content\s*:)")
 _DEBUG_PHRASES = {"dead", "none", "null", "true", "false",
                   "avail end", "start here", "reinit timer"}
 
@@ -5346,14 +5358,34 @@ class TranslationJob(object):
                 except Exception:
                     retry = None
                 if retry is None:
-                    self.detail("  运行占位符未原样保留，保留原文：%s"
-                                % str(text)[:60])
-                    self._rule_hit("占位符保留", "kept_source")
-                    return text
-                self.detail("  控制符未保留，已按逐字保留要求重试：%s"
-                            % str(text)[:50])
-                self._rule_hit("占位符保留", "retried_ok")
-                out = retry
+                    # ★ 2.0.17 第三级兜底：切短块逐块译（占位符用
+                    # split_protected 保护不被切断），与完整性闸门同一
+                    # 模式。实测动态新闻/物品描述里含 $clr_N、%c[...]、
+                    # %s 的条目模型最容易破坏占位符，旧版在这里整条
+                    # 保留英文——切片能救回大多数。切片也失败才保留原文。
+                    sliced = None
+                    try:
+                        raw = self._force_sliced(masked, lang,
+                                                 note=_PLACEHOLDER_RETRY_NOTE)
+                        sliced = restore_runtime_tokens(raw, mapping) \
+                            if raw is not None else None
+                    except Exception:
+                        sliced = None
+                    if sliced is not None:
+                        self.detail("  运行占位符被破坏，切片翻译成功：%s"
+                                    % str(text)[:50])
+                        self._rule_hit("占位符保留", "sliced_ok")
+                        out = sliced
+                    else:
+                        self.detail("  运行占位符未原样保留，保留原文：%s"
+                                    % str(text)[:60])
+                        self._rule_hit("占位符保留", "kept_source")
+                        return text
+                else:
+                    self.detail("  控制符未保留，已按逐字保留要求重试：%s"
+                                % str(text)[:50])
+                    self._rule_hit("占位符保留", "retried_ok")
+                    out = retry
             else:
                 out = restored
         if looks_like_prompt_echo(out):
