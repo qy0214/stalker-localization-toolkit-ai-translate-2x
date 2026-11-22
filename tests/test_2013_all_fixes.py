@@ -18,13 +18,13 @@ s.loader.exec_module(m)
 RESULTS = []
 
 
-def check(name, cond):
-    RESULTS.append((name, bool(cond)))
+def check(name, cond, detail=""):
+    RESULTS.append((name, bool(cond), detail))
     return bool(cond)
 
 
 def t_version():
-    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15"))
+    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15", "2.0.16"))
 
 
 def t_en_profanity():
@@ -120,9 +120,17 @@ def t_termbase_consistency():
             continue
         if isinstance(v, dict):
             tf |= set(v)
-    check("term:count", len(b) == 9095)
+    _flat = {}
+    for _c, _dd in t.items():
+        if isinstance(_dd, dict) and _c != "_meta":
+            _flat.update(_dd)
+    check("term:count", len(b) == len(_flat),
+          "%d vs %d" % (len(b), len(_flat)))
     check("term:consistent", set(b) == tf)
-    check("term:meta-total", t["_meta"]["total_entries"] == 9095)
+    _tot = sum(len(v) for k, v in t.items()
+                if k != "_meta" and isinstance(v, dict))
+    check("term:meta-total", t["_meta"]["total_entries"] == _tot,
+          "%s vs %s" % (t["_meta"]["total_entries"], _tot))
 
 
 def main():
@@ -135,8 +143,8 @@ def main():
     t_linebreaks()
     t_thresholds()
     t_termbase_consistency()
-    ok = sum(1 for _, r in RESULTS if r)
-    for name, r in RESULTS:
+    ok = sum(1 for _x, r, _xd in RESULTS if r)
+    for name, r, _d in RESULTS:
         if not r:
             print("FAIL %s" % name)
     print("test_2013_all_fixes: %d/%d 通过" % (ok, len(RESULTS)))

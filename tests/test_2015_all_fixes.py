@@ -46,7 +46,7 @@ def make_job():
 
 
 def main():
-    check("version:2.0.15", m.PLUGIN_INFO["version"] == "2.0.15",
+    check("version:2.0.16", m.PLUGIN_INFO["version"] == "2.0.16",
           m.PLUGIN_INFO["version"])
 
     # ---- N1 颜色码后粘连冠词 ----
@@ -82,9 +82,9 @@ def main():
 
     # ---- N3 词库补录 ----
     for w, zh in [("Circus", "马戏团"), ("Duga", "杜加"),
-                  ("Skadovsk", "斯卡多夫斯克"), ("100 Rads", "100拉德"),
+                  ("Skadovsk", "斯卡多夫斯克"), ("100 Rads", "辐射100"),
                   ("Spore", "孢子"), ("Hercules", "大力士"),
-                  ("Psy-block", "精神阻断剂"), ("Nitro", "尼特罗"),
+                  ("Psy-block", "精神阻断剂"), ("Nitro", "硝基"),
                   ("Swede", "瑞典佬"), ("Volcano", "火山")]:
         check("gloss:%s" % w.lower().replace(" ", "_"),
               m.termbase_exact_translation(w) == zh,
@@ -97,6 +97,15 @@ def main():
                 if k != "_meta" and isinstance(v, dict))
     check("gloss:meta-sync", d["_meta"]["total_entries"] == total,
           "%s vs %s" % (d["_meta"]["total_entries"], total))
+    bb = json.load(open(os.path.join(ROOT, "plugins", "ai_translate",
+                                     "assets", "glossary_builtin.json"),
+                        encoding="utf-8"))
+    flat = {}
+    for cat, dd in d.items():
+        if isinstance(dd, dict) and cat != "_meta":
+            flat.update(dd)
+    check("gloss:builtin-sync",
+          {k: v for k, v in bb.items()} == flat)
 
     ok = sum(1 for _, r, _ in RESULTS if r)
     print("\n==== %d/%d 通过 ====" % (ok, len(RESULTS)))
