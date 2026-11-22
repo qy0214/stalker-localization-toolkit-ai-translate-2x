@@ -68,8 +68,9 @@ def t4_number_patch():
           patched and "2800" in patched and "这款手枪" in patched)
     # 无中文的译文不能补
     check("num:无中文不补", m.patch_missing_numbers(src, "no chinese") is None)
-    # 数字齐全时不改动
-    check("num:齐全不改", m.patch_missing_numbers(src, "售价2800卢布") == "售价2800卢布")
+    # 数字齐全时不改动（2.0.14：年份区间起点 2007 也参与保真，
+    # 因此「售价2800卢布」缺 2007 会补回；只有金额+年份都齐全才原样不动）
+    check("num:齐全不改", m.patch_missing_numbers(src, "2007年售价2800卢布") == "2007年售价2800卢布")
 
 
 def t5_direct_http():

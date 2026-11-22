@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.13",
+    "version": "2.0.14",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1320,8 +1320,11 @@ def missing_big_numbers(src, out):
     # 只豁免「字母-数字」的型号尾号和「4位-4位」年份；独立金额/坐标仍严格校验。
     for m in re.finditer(r"[A-Za-z][A-Za-z0-9]*[-‐‑‒–—]\s*(\d{3,})", s):
         src_nums.discard(m.group(1))
+    # ★ 2.0.14：年份区间不再全部豁免。旧逻辑把 2007-2009 两端都丢掉，
+    # 模型把「developed in 2007-2009」改成「P220 / 220」时闸门完全放行
+    # （实测 esc_2_12_nimble_get_order_131）。改为只豁免区间尾年，保留
+    # 起始年参与校验——译文若两个年份都换成别的数字就会被拦下。
     for m in re.finditer(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b", s):
-        src_nums.discard(m.group(1))
         src_nums.discard(m.group(2))
     if not src_nums:
         return []
@@ -4692,6 +4695,136 @@ def style_cleanup_cn(text):
     return out
 
 
+# =====================================================================
+# ★ 2.0.14 确定性后修复（零模型请求，通用型，不针对单一 MOD）
+# =====================================================================
+
+# D. 标点规范化：只在中文译文里动手，不动代码/占位符/英文上下文。
+# 半角句读紧跟中文 → 全角；叠用标点收敛；「...」→「……」。
+_PUNCT_HALF_TO_FULL = {",": "，", ";": "；", "!": "！", "?": "？", ":": "："}
+# 连续感叹/问号：中文书面最多两个，超过收敛为两个。
+_REPEATED_BANG_RE = re.compile(r"([！!?？])\1{2,}")
+
+
+def normalize_cn_punctuation(text):
+    """中文语境标点规范化（确定性）：半角句读转全角、叠用标点收敛。
+
+    只在含中文的文本里做；用正则的上下文锚定避免误伤英文缩写、
+    小数点和代码里的标点。不改术语/数字/占位符。
+    """
+    if not text or not has_cjk(text):
+        return text, False
+    out = text
+    # 中文字符后紧跟的半角句读 → 全角（排除小数点：前面是数字时跳过）
+    out = re.sub(r"(?<=[\u4e00-\u9fff]),", "，", out)
+    out = re.sub(r"(?<=[\u4e00-\u9fff]);", "；", out)
+    out = re.sub(r"(?<=[\u4e00-\u9fff])!", "！", out)
+    out = re.sub(r"(?<=[\u4e00-\u9fff])\?", "？", out)
+    # 省略号：连续 3 个及以上半角点 → 中文省略号（前面是数字的不动）
+    out = re.sub(r"(?<![\d])\.{3,}(?![\d])", "……", out)
+    # 半角点跟在中文后（句末）→ 句号
+    out = re.sub(r"(?<=[\u4e00-\u9fff])\.(?=$|[^\dA-Za-z])", "。", out)
+    # 叠用收敛：！！！→！！、？？？→？？
+    prev = out
+    out = _REPEATED_BANG_RE.sub(lambda m: m.group(1) * 2, out)
+    # 已有全角省略号旁边多余的半角点（……. → ……）
+    out = re.sub(r"…\.(?![.\d])", "…", out)
+    return out, out != prev or out != text
+
+
+# C. 字面 \n 保真：源文里的字面转义 \n 个数，必须与译文一致。
+# 注意：normalized/unescape 阶段字面 \n 已转成真实换行，这里比较的是
+# escape_newlines 之后的结果（final），与源 text 的字面 \n 计数对齐。
+def count_literal_newlines(text):
+    """统计文本里字面 ``\\n`` 转义序列的个数（不是真实换行符）。"""
+    return (text or "").count("\\n")
+
+
+def reconcile_literal_newlines(src, out):
+    """译文字面 \\n 数与源文不符时的确定性兜底：按源文数量补齐/收敛。
+
+    模型常把字面 \n 吞成空格（$clr_1A\\n$clr_2B→空格），或凭空加 \n\\n。
+    只做数量对齐：缺则按句末/颜色码边界补回，多则收敛到源数量。
+    差异过大（源 0 → 译 >2）交给 context_bleed 闸门处理，这里不动。
+    """
+    if not src or not out:
+        return out, False
+    want = count_literal_newlines(src)
+    have = count_literal_newlines(out)
+    if want == have:
+        return out, False
+    # 源无字面换行却冒出多个：多为串段，交给上层闸门，不在数量层硬删。
+    if want == 0:
+        return out, False
+    # 源有换行、译文全丢或少了：在颜色码切换/句末处补回缺失数量。
+    if have < want:
+        need = want - have
+        # 优先在 $clr_N 颜色码切换处补（动态新闻常是颜色分段）
+        def _add_color(m):
+            nonlocal need
+            if need > 0:
+                need -= 1
+                return "\\n" + m.group(0)
+            return m.group(0)
+        out2 = re.sub(r"\$clr_\d+", _add_color, out)
+        if need > 0:
+            # 其次在句末标点后补
+            def _add_sentence(m):
+                nonlocal need
+                if need > 0:
+                    need -= 1
+                    return m.group(0) + "\\n"
+                return m.group(0)
+            out2 = re.sub(r"(?<=[。！？!?…])", _add_sentence, out2)
+        if need > 0:
+            out2 = "\\n" * need + out2
+        return out2, out2 != out
+    # have > want：收敛多余的换行（删最靠后的空行/连续换行）
+    out2 = out
+    while count_literal_newlines(out2) > want:
+        out2 = re.sub(r"\\n\\n", "\\n", out2, count=1)
+        if "\\n\\n" not in out2:
+            break
+    return out2, out2 != out
+
+
+# B. 大数字/型号保真增强。
+# 源里的「字母-数字型号串」（FNX-45 / MP-153 / P220 等）和年份区间
+# 若被模型整体替换，属于型号篡改，比数字缺失更误导玩家。
+_MODEL_TOKEN_RE = re.compile(r"[A-Za-z]{2,}-?\d{2,4}[A-Za-z]?")
+_YEAR_RANGE_RE = re.compile(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b")
+
+
+def missing_model_tokens(src, out):
+    """返回源文里「明确型号串」在译文中消失的列表（型号被换掉）。
+
+    只取带引号或紧邻武器/物品语义的型号，避免把普通编号当型号。
+    译文里以「译名 + 原型号」形式出现时算保留。
+    """
+    if not src or not out:
+        return []
+    missing = []
+    seen = set()
+    for m in _MODEL_TOKEN_RE.finditer(src):
+        tok = m.group(0).strip()
+        if tok in seen or len(tok) < 4:
+            continue
+        seen.add(tok)
+        # 年份区间不算型号
+        if re.fullmatch(r"\d+", tok):
+            continue
+        # 型号需紧邻引号或武器语境词，减少误报
+        s, e = m.span()
+        near = src[max(0, s - 24):min(len(src), e + 24)]
+        if not (any(q in near for q in "\"'«“”")
+                or re.search(r"rifle|pistol|gun|shotgun|carbine|weapon|ammo|"
+                             r"караб|пистол| оружи|патрон", near, re.I)):
+            continue
+        if tok not in out:
+            missing.append(tok)
+    return missing
+
+
 class TranslationJob(object):
     # 场景上下文/风格提示必须是线程局部的：多路并发时各 worker 不能互相覆盖。
     @property
@@ -5250,6 +5383,7 @@ class TranslationJob(object):
         # 残留源词确定性替换：模型把专名原样保留时，直接按词库换掉；
         # 不调用模型，也不改动句子其它部分。替换后再看是否还残留俄文。
         out = self._repair_residual_source_terms(normalized, out)
+        out = self._repair_residual_latin_names(normalized, out)
         out = self._repair_known_semantic_terms(normalized, out, lang)
         if self._style_hint == "dialogue" and has_cjk(out):
             out = style_cleanup_cn(out)
@@ -5482,7 +5616,26 @@ class TranslationJob(object):
             self.detail("  剥离粘连冠词：%s" % str(text)[:50])
             self._rule_hit("冠词粘连", "fixed")
             out = cleaned2
+        # ★ 2.0.14 确定性后修复（零模型请求）：标点规范化 + 型号/年份保真。
+        if has_cjk(out):
+            out, punct_fixed = normalize_cn_punctuation(out)
+            if punct_fixed:
+                self._rule_hit("标点规范", "fixed")
+        # 型号被模型换成别的（FNX-45→P220）：确定性把原型号补回译文，
+        # 不整段重译（重译既慢又可能把别的型号也改错）。
+        miss_model = missing_model_tokens(normalized, out)
+        if miss_model and has_cjk(out):
+            out = out.rstrip() + "（原文型号 %s）" % "、".join(miss_model[:3])
+            self._rule_hit("型号保真", "fixed")
+            self.detail("  型号被替换，已补回原文型号：%s"
+                        % "、".join(miss_model[:3]))
         final = escape_newlines(out)
+        # C. 字面 \n 保真：源有字面换行而译文吞成空格/多加时，按源数量对齐。
+        final, nl_fixed = reconcile_literal_newlines(text, final)
+        if nl_fixed:
+            self._rule_hit("字面换行保真", "fixed")
+            self.detail("  字面换行数不符，已按原文对齐：%s"
+                        % str(text)[:50])
         self._tm_store(normalized, lang, final)
         return final
 
@@ -5590,6 +5743,61 @@ class TranslationJob(object):
             out2 = pattern.sub(lambda _m: v, out)
             if out2 != out:
                 self.detail("  残留源词按词库替换：%s → %s"
+                            % (term, v))
+                out = out2
+        return out
+
+    def _repair_residual_latin_names(self, src, out):
+        """★ 2.0.14 英文/拉丁专名残留回填（零模型请求，通用型）。
+
+        模型常把句子中间的人名/绰号原样保留（「Nimble 和 Sidorovich」），
+        而词库里明明有标准译名（机灵鬼/西德洛维奇）。旧版
+        `_repair_residual_source_terms` 只处理俄文（`_CYR_WORD_RE`），
+        拉丁专名全部漏网。这里按词库把译文里残留的英文专名替换为中文译名。
+
+        严格防误伤（names 层有 1478 个拉丁词，含 Sniper/Musician 等通用词）：
+        - 只处理词库译名确实含中文的（音译/意译专名），译名是英文原样的跳过；
+        - 词长 >= 4 且首字母大写（或是含空格的多词人名），排除纯技术码；
+        - 排除含数字/点/斜杠的型号、路径、扩展名；
+        - 词边界锚定，只替换译文里仍以原英文形态残留的（已译的不动）。
+        """
+        if not src or not out or self.gloss is None or not self.gloss_names:
+            return out
+        # 从源文里找命中的专名 span（用 gloss.find，与硬词同一套索引）
+        spans = self.gloss.find(src)
+        if not spans:
+            return out
+        quotes = "\"'«»“”‘’"
+        for start, end, key in spans:
+            if key not in self.gloss_names:
+                continue
+            term = src[start:end]
+            if len(term) < 4:
+                continue
+            # 拉丁专名：全 ASCII 字母/空格/连字符，首字母大写；排除技术码
+            if not re.fullmatch(r"[A-Za-z][A-Za-z'’\- ]*", term):
+                continue
+            if not (term[0].isupper() or " " in term):
+                continue
+            value = self.glossary.get(key)
+            if value is None:
+                continue
+            v = str(value)
+            # 译名必须含中文，且不与原词相同（避免把 "AK-74" 换自己）
+            if not has_cjk(v) or v == term:
+                continue
+            if (self._inside_quotes(src, start, end) and len(v) >= 2
+                    and v[0] in quotes and v[-1] in quotes):
+                v = v[1:-1]
+            # 只替换译文里仍以原英文形态残留的（词边界）
+            if not re.search(r"(?<![A-Za-z])%s(?![A-Za-z])"
+                             % re.escape(term), out):
+                continue
+            pattern = re.compile(
+                r"(?<![A-Za-z])%s(?![A-Za-z])" % re.escape(term))
+            out2 = pattern.sub(lambda _m: v, out)
+            if out2 != out:
+                self.detail("  残留英文专名按词库替换：%s → %s"
                             % (term, v))
                 out = out2
         return out
@@ -6850,6 +7058,7 @@ class TranslationJob(object):
         for x, text in zip(batch, parsed):
             text = clean_translation_output(text)
             text = self._repair_residual_source_terms(x["src"], text)
+            text = self._repair_residual_latin_names(x["src"], text)
             xlang = x["lang"]
             if xlang in ("auto", "text", "rus", "eng"):
                 det = detect_text_lang(x["src"])

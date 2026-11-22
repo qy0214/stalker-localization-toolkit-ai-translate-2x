@@ -1,28 +1,29 @@
 {
-  "generated_at": "2026-11-22T18:58:56+08:00",
+  "generated_at": "2026-11-22T19:17:44+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "df985b9",
+    "commit": "d92b6ab",
     "dirty": true,
     "dirty_files": [
       "M README.md",
-      " D dist/ai_translate_plugin_v2.0.12.zip",
-      " D dist/ai_translate_plugin_v2.0.12_install.zip",
-      " M plugins/ai_translate/assets/glossary_builtin.json",
-      " M plugins/ai_translate/assets/stalker_termbase.json",
+      " D dist/ai_translate_plugin_v2.0.13.zip",
+      " D dist/ai_translate_plugin_v2.0.13_install.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_ai_translate_fixes.py",
-      "?? backup/",
-      "?? dist/ai_translate_plugin_v2.0.13.zip",
-      "?? dist/ai_translate_plugin_v2.0.13_install.zip",
-      "?? tests/test_2013_all_fixes.py"
+      " M tests/test_2012_all_fixes.py",
+      " M tests/test_2013_all_fixes.py",
+      " M tests/test_2111_all_fixes.py",
+      "?? audit-reports/AUDIT_PRETEST_2013.txt",
+      "?? dist/ai_translate_plugin_v2.0.14.zip",
+      "?? dist/ai_translate_plugin_v2.0.14_install.zip",
+      "?? tests/test_2014_all_fixes.py",
+      "?? tools/audit_pretest_2013.py"
     ]
   },
   "versions": {
-    "plugin_version": "2.0.13",
-    "expected_plugin_version": "2.0.13",
+    "plugin_version": "2.0.14",
+    "expected_plugin_version": "2.0.14",
     "plugin_api": 1,
     "target_toolkit": "STALKER Localization Toolkit 2.x"
   },
@@ -31,32 +32,32 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 443565,
-      "sha256": "b3a01e3f7a2234f9ad3e18c4ca035815e73206c38f2843da09a314ccc3b51fe9",
+      "size": 453741,
+      "sha256": "9562684c4d004eb6b5e91109302c0b8250d66b79892383fc5c05a7ad5855f812",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 1098079,
+      "size": 1108255,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
-      "path": "dist\\ai_translate_plugin_v2.0.13.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.14.zip",
       "exists": true,
-      "size": 381052,
-      "sha256": "288841299922d87427250cdd0c5cd1cfa0da53ab384a807d70a98bbc166c86f8",
+      "size": 384697,
+      "sha256": "2445a5b8b6bcb72c306408c62a5d26519d054822e1018f4d79111da299a1980d",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
-      "path": "dist\\ai_translate_plugin_v2.0.13_install.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.14_install.zip",
       "exists": true,
-      "size": 380972,
-      "sha256": "30caa3a009592426ea4b4f97d3d16a52d84f7ccf2805b5029228ed765faf2db9",
+      "size": 384617,
+      "sha256": "da8392091e68448f1d8c8242ad6203c37f736ba44504495d5073190c914950c0",
       "note": "给平台插件管理器直接解压用"
     },
     {
@@ -93,8 +94,8 @@
     }
   ],
   "zip": {
-    "path": "dist\\ai_translate_plugin_v2.0.13.zip",
-    "sha256": "288841299922d87427250cdd0c5cd1cfa0da53ab384a807d70a98bbc166c86f8",
+    "path": "dist\\ai_translate_plugin_v2.0.14.zip",
+    "sha256": "2445a5b8b6bcb72c306408c62a5d26519d054822e1018f4d79111da299a1980d",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -150,7 +151,7 @@
     {
       "check": "插件版本 == 预期",
       "ok": true,
-      "detail": "PLUGIN_INFO 2.0.13 / 预期 2.0.13"
+      "detail": "PLUGIN_INFO 2.0.14 / 预期 2.0.14"
     },
     {
       "check": "PLUGIN_API == 1（2.x 宿主契约）",
@@ -180,7 +181,7 @@
     {
       "check": "zip 文件名含插件版本",
       "ok": true,
-      "detail": "ai_translate_plugin_v2.0.13.zip"
+      "detail": "ai_translate_plugin_v2.0.14.zip"
     },
     {
       "check": "zip 条目 == 5 个预期文件",
@@ -287,7 +288,7 @@
     "termbase_meta_total": 9085
   },
   "tracked": {
-    "files": 37,
-    "bytes": 2299259
+    "files": 38,
+    "bytes": 2317037
   }
 }

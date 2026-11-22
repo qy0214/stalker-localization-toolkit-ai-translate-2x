@@ -36,7 +36,7 @@ PLUGIN = PLUGIN_DIR / "plugin.py"
 ASSETS = PLUGIN_DIR / "assets"
 DIST = ROOT / "dist"
 
-EXPECTED_PLUGIN_VERSION = "2.0.13"
+EXPECTED_PLUGIN_VERSION = "2.0.14"
 EXPECTED_PLUGIN_API = 1
 # 2.x 发布包剥掉了 _ssl.pyd ⇒ 这些导入链会连本机 HTTP 都跑不起来
 FORBIDDEN_IMPORTS = ("ssl", "http", "urllib.request", "urllib.error", "tkinter")

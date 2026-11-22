@@ -53,10 +53,12 @@ def t2_number_gate():
     src = ('Take a look - this is the "FN FNX-45". The pistols were developed '
            'in 2007-2009 for a program. In general, it is 2800 from you.')
     miss = ait.missing_big_numbers(src, "这把枪完全没有任何数字")
-    check("P1 型号尾号与年份区间豁免、金额 2800 仍校验",
-          miss == ["2800"], miss)
-    check("P1 金额原样出现即通过",
-          ait.missing_big_numbers(src, "价格是 2800 卢布") == [])
+    # 2.0.14：年份区间只豁免尾年(2009)，起始年(2007)参与保真——
+    # 防止模型把「2007-2009」整体换成别的数字(如 P220)时闸门放行。
+    check("P1 型号尾号豁免、金额与年份起点仍校验",
+          miss == ["2007", "2800"], miss)
+    check("P1 金额与年份都在即通过",
+          ait.missing_big_numbers(src, "2007年研发，价格是 2800 卢布") == [])
     check("P1 独立大额金额仍严格校验",
           ait.missing_big_numbers("报酬 30000 卢布", "报酬 15000 卢布")
           == ["30000"])
