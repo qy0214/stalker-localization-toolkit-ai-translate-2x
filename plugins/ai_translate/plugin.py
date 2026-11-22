@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -880,6 +880,21 @@ class _HostHttpResponse(object):
 _API = None
 _HOST_NOTE_TS = 0.0      # 上次门面回退留痕时间（限频，防日志风暴）
 
+# ★ 2.0.12 多路翻译直连开关。
+# 2.0.5 起所有小请求跟随宿主 api.host.http_post（平台作者要求"不要二次
+# 实现"），但实测宿主门面在多线程调用时被串行化：llama-server 请求时间线
+# 显示峰值并行度恒为 1（11-16 用自建 urllib 时是 2），三路 worker 发出的
+# 请求被门面排成一条队，slot 再均衡也没用。翻译是高频并发小文本请求，
+# 与门面"零散小请求"的设计场景不同。这里给线程安全的翻译通道开一个
+# 直连开关：仅 /v1/ 推理请求走自建 urllib（并发），其余仍走宿主门面。
+# 门面本身照旧注册、健康检查/下载/配置仍跟随宿主，不违背整体约定。
+_DIRECT_INFER_HTTP = False
+
+
+def set_direct_infer_http(on):
+    global _DIRECT_INFER_HTTP
+    _DIRECT_INFER_HTTP = bool(on)
+
 
 def _host_fallback_note(url, why):
     """宿主门面失败回退自建路径时，往宿主控制台留一条痕（60s 限频）。
@@ -941,6 +956,11 @@ def _http_get(url, headers=None, timeout=30.0):
 
 
 def _http_post(url, data, headers=None, timeout=30.0):
+    # ★ 2.0.12：并发推理请求直连自建 urllib，绕过会串行化的宿主门面；
+    # 非推理请求（下载/配置/健康检查等零散小请求）仍跟随宿主门面。
+    if _DIRECT_INFER_HTTP and "/v1/" in str(url):
+        return _http_request("POST", url, headers=headers, body=data,
+                             timeout=timeout)
     small = _host_small_http("POST", url, headers=headers, body=data,
                              timeout=timeout)
     if small is not None:
@@ -1219,7 +1239,16 @@ def looks_like_context_bleed(src, out):
         return False
     if looks_like_context_echo(out):
         return True
-    return len((src or "").strip()) < 24 and len((out or "").strip()) > 150
+    # ★ 2.0.12：串段污染——模型把相邻条目的译文一并吐进当前条目，
+    # 形成「另一段译文\\n\\n正确译文」。特征是源文无换行、译文却出现双 \\n，
+    # 或译文长度远超源文。旧判据只抓极短源文（<24），抓不到长对话串段。
+    s = (src or "").strip()
+    o = (out or "").strip()
+    if s and "\\n" not in s and "\\n" in o:
+        return True
+    if o.count("\\n") >= 2 and s.count("\\n") == 0:
+        return True
+    return len(s) < 24 and len(o) > 150
 
 
 # ★ 2.0.9 数字保真：金额/年份/坐标等大额数字绝不能被模型改写。
@@ -1308,6 +1337,32 @@ def missing_big_numbers(src, out):
             continue
         missing.append(n)
     return missing
+
+
+def patch_missing_numbers(src, out):
+    """数字闸门两次重试仍缺失时的兜底：不整段回退原文，而是把缺失的
+    关键数字按出现顺序补进译文，保留已经译好的正文。
+
+    实测武器长段描述（FNX-45 段落）因金额 2800 两次重试都没带上，
+    旧逻辑整段保留英文——玩家看到的是一整段看不懂的外文，比数字
+    缺失严重得多。这里改为：译文已有中文时，把缺失金额以「（2800）」
+    形式补到对应位置附近；找不到锚点则追加到末尾。
+    """
+    if not src or not out or not any("\u4e00" <= c <= "\u9fff" for c in out):
+        return None                      # 无中文的译文不能补，交给调用方回退
+    missed = missing_big_numbers(src, out)
+    if not missed:
+        return out
+    fixed = out
+    for n in missed:
+        # 优先插到译文里出现的货币/单位词之后（卢布/美元/格里夫纳等）
+        m = re.search(r"(卢布|美元|元|格雷|格里夫纳|coin| coins)", fixed)
+        if m:
+            pos = m.end()
+            fixed = fixed[:pos] + "（原文 %s）" % n + fixed[pos:]
+        else:
+            fixed = fixed.rstrip() + "（原文数字 %s）" % n
+    return fixed
 
 
 _RU_PROFANITY_RE = re.compile(
@@ -3266,6 +3321,12 @@ class LlamaServer(object):
                 with _http_get(health_url, timeout=5) as r:
                     if r.status == 200:
                         self.log("引擎就绪（用时 %.0f 秒）" % (time.time() - t0))
+                        # ★ 2.0.12：引擎就绪后，推理请求切到线程安全的直连
+                        # 通道，恢复多路真并发（宿主门面会串行化并发推理）。
+                        if self.parallel > 1:
+                            set_direct_infer_http(True)
+                            self.log("多路推理直连已启用（绕过串行门面，"
+                                     "%d 路真并发）" % self.parallel, "ok")
                         self._verify_gpu()
                         self.self_check()
                         return True
@@ -3512,6 +3573,7 @@ class LlamaServer(object):
         raise IOError("批量翻译请求失败（%s）" % (last_err or "无响应"))
 
     def stop(self):
+        set_direct_infer_http(False)
         if self.proc is None and self._log_fp is None:
             return
         self._kill_proc()
@@ -3793,7 +3855,16 @@ def looks_like_identifier_text(text):
 # Radiotherapy/Enemy/Magnification/[Say nothing]）。这些表是给玩家看的 UI，
 # 必须翻译；只在下列目录豁免，新闻/物品/人物名表仍按原规则跳过。
 _PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
-                      "dialog", "relation", "reputation", "rank")
+                      "dialog", "relation", "reputation", "rank",
+                      "quick_menu", "companion")
+
+# ★ 2.0.12：全大写短标签的豁免目录。比 _PLAYER_LABEL_DIRS 更窄——
+# binoc（武器属性表）里的 NVIDIA DLSS 是真型号缩写，必须继续保护，
+# 所以不放进来；只放行成就名、军衔声望、同伴菜单、对话选项里的
+# 全大写命令/标题（FOLLOW ME、DO NOT LOOT CORPSES、S.C.H.O.L.A.R.）。
+_UPPER_LABEL_DIRS = ("achievement", "game_relations", "relation",
+                     "reputation", "rank", "quick_menu", "companion",
+                     "dialog")
 
 
 def is_player_facing_label(rel, text=""):
@@ -3828,13 +3899,20 @@ def looks_like_proper_text(rel, text):
     if (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
             or _MODEL_LIKE_RE.match(s)):
         return True
-    if len(s) <= 20 and s.isupper() and any(c.isalpha() for c in s):
+    if len(s) <= 30 and s.isupper() and any(c.isalpha() for c in s):
         # ★ 2.0.7：只保护拉丁字母的型号/缩写（NVIDIA DLSS、AK-74）。
         # 西里尔全大写短名（БАРМЕН、ПРИЗРАК、ЗВЕРОБОЙ…）在人物表/SMS
         # 名字表里是**普通身份称呼**，旧规则把它们整批原样保留、连模型
         # 都不调用。这里放行为"不自动保护"：调用方先用 termbase_lookup
         # 取库里既有译名，没有的送模型翻译。
         if re.search(r"[A-Za-z]", s):
+            # ★ 2.0.12：玩家可见的全大写命令/菜单项（FOLLOW ME、WAIT HERE、
+            # DO NOT LOOT CORPSES、S.C.H.O.L.A.R. 成就名）是**正文**，不是
+            # 型号缩写。目录白名单命中时放行送翻；NVIDIA DLSS、AK-74 等
+            # 真型号不在这些目录，仍受保护。
+            low2 = low.lower().replace("\\", "/")
+            if any(x in low2 for x in _UPPER_LABEL_DIRS) and len(s) <= 30:
+                return False
             return True
         return False
     return False
@@ -5145,10 +5223,21 @@ class TranslationJob(object):
                     self._rule_hit("数字保真", "retried_ok")
                     out = retry_num
                 else:
-                    self.detail("  数字保真重试仍缺失（%s），保留原文：%s"
-                                % (",".join(still[:4]), str(text)[:50]))
-                    self._rule_hit("数字保真", "kept_source")
-                    return text
+                    # ★ 2.0.12：不再整段回退原文。重试仍缺数字时，保留已
+                    # 译好的中文正文，仅把缺失数字按原值补进去——一整段
+                    # 看不懂的外文比一个数字缺失严重得多。仅当译文根本
+                    # 没有中文（完全没翻）才回退原文。
+                    patched = patch_missing_numbers(normalized, out)
+                    if patched and patched != out:
+                        self.detail("  数字保真重试仍缺（%s），已补数字保留译文：%s"
+                                    % (",".join(still[:4]), str(text)[:50]))
+                        self._rule_hit("数字保真", "fixed")
+                        out = patched
+                    else:
+                        self.detail("  数字保真重试仍缺失（%s），保留原文：%s"
+                                    % (",".join(still[:4]), str(text)[:50]))
+                        self._rule_hit("数字保真", "kept_source")
+                        return text
         # 粗口保真闸门：原文有脏话/辱骂/威胁，译文却完全软化时，带
         # “保留同等力度”的补充要求重试一次；仍软化则保留第一次结果。
         if has_source_profanity(normalized) and not has_zh_profanity(out):

@@ -138,14 +138,23 @@ def t3_gate_retry():
 
 
 def t4_gate_keep_source():
-    print("\n--- T4 闸门：重试仍篡改→保留原文 ---")
+    print("\n--- T4 闸门：重试仍篡改→补数字保留译文（2.0.12）---")
     long_src = ("Мужик тот матёрый сталкер, так что, думаю, и хабар у него "
                 "там не хуже. В общем, 30000 рублей будет достаточно.")
     bad = "总之，15,000卢布就足够了。那个经验丰富的潜行者赃物应该不差。"
     srv = ScriptedServer([bad, bad])
     job, _ = make_job(srv)
     out = job._translate_one(long_src, "rus", style="dialogue")
-    check("T4-保留俄文原文", out == long_src, out[:50])
+    # ★ 2.0.12：不再整段回退原文——补数字保留已译好的中文正文，
+    # 一整段俄文比一个数字缺失严重得多（玩家看不懂）。
+    check("T4-补数字保留译文",
+          out != long_src and "30000" in out and "总之" in out, out[:60])
+    # 完全没有中文时才回退原文
+    bad_no_zh = "totally wrong no chinese at all here"
+    srv2 = ScriptedServer([bad_no_zh, bad_no_zh])
+    job2, _ = make_job(srv2)
+    out2 = job2._translate_one(long_src, "rus", style="dialogue")
+    check("T4-无中文仍回退原文", out2 == long_src, out2[:50])
 
 
 def t5_termbase():
