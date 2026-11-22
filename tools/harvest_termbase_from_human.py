@@ -83,9 +83,9 @@ SOURCES = [
     (r"C:/game/NS7/gamedata/configs/text",
      r"D:/CN_Pack_Generator/NS2016/gamedata/config/text/chs",
      "NS2016 汉化（rus→中文，NS7 rus 配对）", 1),
-    # GAMMA 汉化组 GSCTP 简中 × Anomaly 1.5.3 eng 原文（Tosox 解包仓库
-    # sparse clone，只取 text/eng）。GAMMA 为 eng 基座，同 ID 配对。
-    (r"C:/STALKER-AiTranslate-2x/tmp/web/anomaly_repo/gamedata/configs/text/eng",
+    # GAMMA 汉化组 GSCTP 简中 × Anomaly 1.5.3 eng 原文（corpus 内持久化
+    # 副本，原取自 Tosox 仓库 sparse clone）。GAMMA 为 eng 基座，同 ID 配对。
+    (r"C:/STALKER-AiTranslate-2x/corpus/anomaly_eng",
      r"C:/STALKER-AiTranslate-2x/corpus/gamma_chs/Simplified/gamedata/configs/text/chs",
      "GAMMA 汉化组（eng→中文，Anomaly eng 配对）", 1, "GAMMA 参考"),
     # Anomaly rus 槽（官方俄文本地化，NS7-MT-TEST 解包）× GAMMA chs：
