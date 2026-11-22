@@ -1,4 +1,4 @@
-# ai_translate 2.0.9
+# ai_translate 2.0.11
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,8 @@
 
 ## 版本迭代
 
+- **2.0.11** 五类问题一次修复：①冒号/破折号标题正则收紧（`{0,80}`→`{0,40}` 且冒号前无句末标点），带冒号长对话不再被当标题整段跳过；②玩家可见短标签不再误跳过——新增 `is_player_facing_label` 精确豁免成就/声望等级/武器属性/对话选项（实测 129 条该译未译：Radiotherapy/Enemy/Magnification/`[Say nothing]`），并新增「成就·称号·属性标签」会话词表分类批量定译；③数字保真闸门豁免型号尾号（FNX-45）与年份区间（2007-2009），只严格校验独立金额/坐标，避免整段武器描述因数字对不齐而保留英文原文；④llama-server 多路时加 `--slot-prompt-similarity 0` 禁用 LCP 相似度选槽，修三路请求 96% 黏在单一 slot 的空转（实测 slot2=1621/1714）；⑤UTF-8 文本表原地改写时同步把 XML 声明 encoding 改成 utf-8，修声明 cp1251 实为 UTF-8 中文的不符。随包两张 JSON 改紧凑写回保持分享包轻量；新增 test_2111_all_fixes 30 项，全套 684 项回归全绿。
+- **2.0.10** 真机 IWP 兼容性修复：①`_translate_force` 无强制术语分支漏传 `note`，导致数字保真/上下文/占位符/换行等所有闸门的重试指令被丢弃、重试永远无效只能保留原文（实测 AK-103 被改成 AK-999 后整条不译）——补 `note=note` 透传；②`_MODEL_LIKE_RE` 收紧为 `^(?:[A-Z0-9][A-Za-z0-9\-]*[ .\-/]?){1,5}["“]`，旧式 `[A-Za-z0-9 ./\-]*` 会吞掉小写词把整句英文（如 `You have unlocked the "Heavy Pockets" achievement.`）误判成型号名跳过；型号短名（MP5 "Sanitizer"）仍受保护。此版为本地真机验证版，未单独发 Release。
 - **2.0.9** 数字保真与专名校正：①新增数字保真闸门——源文大额数字（金额/年份/坐标/密码）必须在译文原样出现（含千分位与中文万/千计数），否则带逐字保留要求重试，仍缺则保留原文，拦住实测的「30000卢布→15000」报酬腰斩；②依据随包 NS7 对齐语料 + 潜行者中文站 WIKI 校正词库：修正 Крысолов→捕鼠人、Борова→博罗夫、Гном→格诺姆（原译「克雷休克/波诺夫/矮子」为误译），新增 Корефан/Калугин/100 Рентген/Юбилейный/Х-8/ХолодМаш 等 13 条专名；total_entries 9059→9072。新增 test_2909_number_fidelity 30 项回归。
 - **2.0.8** 上下文串入修复：场景上下文（`前一句/后一句`）被 1.8B 小模型当成正文翻出、写进相邻条目（实测 `bar_arena_man_job_172` 译文被上一条长译文覆盖，全表 305 条中招）。三层修复：①源头减险——极短条目（<12 字符）不注入上下文；②污染检测硬校验——译文出现上下文标签或极短源文吐出超长段落时，去掉上下文重译一次，仍异常则保留原文绝不落坏译文；③终检新增第五类扫描——输出残留上下文标签的条目点名。新增 test_2808_context_bleed 17 项回归 + 恶意注入 E2E。
 - **2.0.7** 翻译完整性三修：①长度比闸门按语言对设阈值（俄→中下限 0.15，消除 bio 表 77 条正确译文被误判漏译、各白跑一次重试）；②西里尔全大写短名不再一律当专名跳过——整条命中随包术语库时直接取既有译名（БАРМЕН→酒保、ПРИЗРАК→幽灵等），用户词库优先，未收词条送模型；③终检新增条目级漏译扫描，输出仍等于俄文源文的条目点名（已登记专名除外），并提示清空输出目录重跑补译。新增 test_2707_fixes 34 项回归。
@@ -65,10 +67,10 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.9
+python tools/release_plugin.py 2.0.11
 
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.9 dist/ai_translate_plugin_v2.0.9_install.zip --title "ai_translate 2.0.9"
+gh release create v2.0.11 dist/ai_translate_plugin_v2.0.11_install.zip --title "ai_translate 2.0.11"
 
 # 3) 把第 1 步打印的条目追加进注册表的 plugins 数组（需要该仓库写权限）
 ```
@@ -80,7 +82,7 @@ gh release create v2.0.9 dist/ai_translate_plugin_v2.0.9_install.zip --title "ai
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.9.zip` 解压到工具集的 `plugins/` 目录，形成：
+把 `dist/ai_translate_plugin_v2.0.11.zip` 解压到工具集的 `plugins/` 目录，形成：
 
 ```text
 <工具集目录>\
@@ -125,8 +127,8 @@ gh release create v2.0.9 dist/ai_translate_plugin_v2.0.9_install.zip --title "ai
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.9.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.9_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.11.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.11_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `tests/test_2x_contract.py` | 严格宿主契约测试 |
 | `tests/fake_host.py` | 严格宿主假件 |
@@ -145,7 +147,7 @@ gh release create v2.0.9 dist/ai_translate_plugin_v2.0.9_install.zip --title "ai
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.9`
+- 插件版本：`ai_translate 2.0.11`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
   `977a18b9f11c8c47555ce814e75f5afbbbc03b7e4ba085b6780f8965685387dd`
@@ -158,7 +160,7 @@ gh release create v2.0.9 dist/ai_translate_plugin_v2.0.9_install.zip --title "ai
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.9.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.11.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
