@@ -4779,10 +4779,12 @@ def reconcile_literal_newlines(src, out):
         if need > 0:
             out2 = "\\n" * need + out2
         return out2, out2 != out
-    # have > want：收敛多余的换行（删最靠后的空行/连续换行）
+    # have > want：收敛多余的换行（删最靠后的空行/连续换行）。
+    # 注意：re.sub 的替换串是模板，"\\n" 会被解释成真实换行——
+    # 必须用 lambda 返回字面 \n，否则收敛反而制造真换行。
     out2 = out
     while count_literal_newlines(out2) > want:
-        out2 = re.sub(r"\\n\\n", "\\n", out2, count=1)
+        out2 = re.sub(r"\\n\\n", lambda _m: "\\n", out2, count=1)
         if "\\n\\n" not in out2:
             break
     return out2, out2 != out
