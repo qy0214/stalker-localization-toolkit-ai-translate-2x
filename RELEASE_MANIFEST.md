@@ -1,27 +1,27 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-20T22:49:42+08:00`
+- 生成时间：`2026-11-22T17:13:02+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`main` @ `9cd5361`（有未提交改动）
-- 已跟踪文件：34 个，2.24 MB
+- Git：`rel-2010` @ `82ac99e`（有未提交改动）
+- 已跟踪文件：35 个，2.23 MB
 
 ## 1. 版本与交付物
 
 | 项 | 值 |
 |---|---|
-| 插件版本 | `2.0.9` |
-| 预期版本 | `2.0.9` |
+| 插件版本 | `2.0.10` |
+| 预期版本 | `2.0.10` |
 | 宿主插件 API | `1` |
 | 适用平台 | `STALKER Localization Toolkit 2.x` |
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 421.16 KB | `91fd244a1a078f5ddd6200c40c8c601aaffee184725c858737429ab0383dea6b` | 2.x 目录插件（api.ui 门面） |
-| 插件分享目录 | `plugins\ai_translate` | 1.11 MB | — | 5 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.9.zip` | 371.03 KB | `dec04c97c7592cc76aa2c8c2c73a8ea522be982f8a36cd41d10eef932420664d` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.9_install.zip` | 370.95 KB | `7a78bb1585bc44d961e56d5978ca9af7a523d7a16e7ae789a8201ed0d99d9f02` | 给平台插件管理器直接解压用 |
-| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 347.73 KB | `173abbb0f331afca290a23250dbb010e02962c4118361dfda51e3a760b770c4c` | 运行时匹配的内置层 |
-| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 363.56 KB | `a5aab34573799087b9d487cb0cfedd940a87a543281c48e8d1da6471816a3554` | 导入用 |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 421.70 KB | `07e352e523882d3ab6ae0776402de4e99e8e8b9793e0814d1c40c73b701978aa` | 2.x 目录插件（api.ui 门面） |
+| 插件分享目录 | `plugins\ai_translate` | 1.10 MB | — | 5 个文件（目录） |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.10.zip` | 369.94 KB | `edce02b0ba60f7ffba1842a42917f7d99e4b2b2c6b264c8eb7090d5fb1d3d126` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.10_install.zip` | 369.86 KB | `9e6ab0c9219a44994e66d926bab478ba38eb1b9ea3812d17db4543d12d2f93ac` | 给平台插件管理器直接解压用 |
+| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 338.87 KB | `bd258cef6948a38b7bb1f5b21694614a9f54c4047ef9c5b47908681937c8434a` | 运行时匹配的内置层 |
+| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 354.41 KB | `5043d0ebf24436a8f2b5b753994014bbb4297274b66c09b48068b7a06217aa34` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 7.38 KB | `2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6` | 解析 XML/LTX/脚本 |
 | 第三方来源声明 | `plugins\ai_translate\assets\THIRD_PARTY_NOTICES.txt` | 1.18 KB | `d971f8c84ae81732effb86d0b3bb907166e81a2c804cf85207a0427f9b929d4e` | 随包分发（上游来源与许可状态） |
 
@@ -45,17 +45,17 @@
 | 检查 | 结果 | 说明 |
 |---|---|---|
 | 插件语法 | 一致 | compile() 通过 |
-| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.9 / 预期 2.0.9 |
+| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.10 / 预期 2.0.10 |
 | PLUGIN_API == 1（2.x 宿主契约） | 一致 | 1 |
 | PLUGIN_INFO.id 为 ASCII | 一致 | ai_translate |
 | PLUGIN_INFO.repo 指向 2.x 专用仓库 | 一致 | https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x |
 | 目录插件形状：plugins/ai_translate/{plugin.py,assets/} | 一致 | plugin.py + assets/ |
 | 无 2.x 禁用导入（ssl/http/urllib.request/urllib.error/tkinter） | 一致 | 干净 |
-| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.9.zip |
+| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.10.zip |
 | zip 条目 == 5 个预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
-| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=356073；stalker_termbase.json=372285 |
+| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=347000；stalker_termbase.json=362920 |
 | zip 内文件 == 工作副本 | 一致 | 全部一致 |
 | 官方哈希：llama.cpp 6 项 | 一致 | 登记 6 项；不一致：无 |
 | 官方哈希：模型 2 项 | 一致 | 登记 2 项；不一致：无 |
@@ -90,7 +90,7 @@
 
 ```powershell
 # 校验当前插件 zip
-Get-FileHash 'dist\ai_translate_plugin_v2.0.9.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.10.zip' -Algorithm SHA256
 
 # 重新打包 + 重生成清单
 python tools/gen_release_manifest.py --build

@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.9",
+    "version": "2.0.10",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -3616,8 +3616,12 @@ _TITLE_LIKE_RE = re.compile(
     r"^[A-Za-z0-9][^\n:：]{0,80}[:：]\s*[A-Za-z0-9]")
 _TITLE_DASH_RE = re.compile(
     r"^[A-Za-z0-9][^\n]{0,80}[—–]\s*[A-Za-z0-9]")
+# 型号名（MP5 "Sanitizer"、AK-74 "Рubin"）：引号前只允许最多 5 个
+# 「首字母大写的词」。旧式 `[A-Za-z0-9 ./\-]*` 会一路吞掉小写单词，把
+# `You have unlocked the "Heavy Pockets" achievement.` 这类整句英文当成
+# 型号整条跳过（实测成就解锁提示 100% 未译）。
 _MODEL_LIKE_RE = re.compile(
-    r'^[A-Z0-9][A-Za-z0-9 .\-/]*["“][^"”]{1,80}["”]')
+    r'^(?:[A-Z0-9][A-Za-z0-9\-]*[ .\-/]?){1,5}["“][^"”]{1,80}["”]')
 _CODE_LIKE_RE = re.compile(r"^[A-Z0-9][A-Z0-9 .\-/_]{1,30}$")
 _COPYRIGHT_RE = re.compile(r"^(?:©|\(c\)|copyright\b)", re.I)
 _DEBUG_LIKE_RE = re.compile(
@@ -5279,7 +5283,9 @@ class TranslationJob(object):
         """
         hits = self._glossary_spans(text)
         if not hits:
-            return self._translate_segments(text, lang)
+            # 无强制术语时仍要透传 note：数字保真/上下文/占位符/换行等
+            # 闸门的重试指令全靠它，漏传会让重试永远无效、整条保留原文。
+            return self._translate_segments(text, lang, note=note)
 
         mapping = {}
         parts = []
