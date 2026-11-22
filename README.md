@@ -1,4 +1,4 @@
-# ai_translate 2.0.19
+# ai_translate 2.0.20
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.20 多源语料收割 + 查找性能修复**：词库 21065→**36323** 条。新增语料源：①**OGSR Gunslinger 人工汉化**（原文从 configs.db 经 xrkit 解包，中文在 eng 槽）约 5912 条进 `Gunslinger 参考` 软层——GA 汉化存在语义级错译（榴弹译成"重型坦克"、M433→M406 型号漂移），配套**垃圾过滤器**（载具名词误植 + 型号 token 漂移，西里尔转拉丁比对）；②**CoP 官方中文**（主机版官中 × CoP 1.6.02 补丁包 rus + eng DB 解包）1432 条入标准分类；③**NS2016 汉化** × NS7 rus 同 ID 补缺；④bilibili wiki 专有名词/神器表 24 条（`tools/ingest_wiki_terms.py`）；⑤**GAMMA 汉化组 GSCTP** × Anomaly eng/rus 同 ID 配对约 7876 条进 `GAMMA 参考` 软层。收割工具新增守卫链：占位符集合一致、norm 撞键去重（ё/引号/破折号折叠）、canon 词干冲突（audit 同口径 stemmer + 数字词保护）、跨语言槽位配对索引（eng/rus/chs/cht）。另修 `termbase_lookup` 在 3.6 万条下 O(N) casefold 全扫（3.656ms→**0.125ms**/次，模块级归一索引）。全量深度审计（`tools/audit_termbase_full.py`，五层）+ strict 审计均 0 blocking/0 high。
 - **2.0.19 人工汉化语料收割**：新增 `tools/harvest_termbase_from_human.py`——从 AREA 人工汉化包与 NS7 9月6日官方汉化补丁收割短条目术语对 1.2 万+（人物/地点/物品/界面/百科；引号短语键/≥5 词长描述/占位符不符按审计规则剔除，防收割短语遮蔽组件术语查找）；**NS7 官方译名为权威**，同源冲突覆盖词库旧值（用户确认），AREA 仅补缺；词库 9181→21074 条，strict 审计 0 blocking/0 high。
 - **2.0.18** 2.0.15 快照复核补充修复：①**出口级换行对齐**——换行闸门在流程前段，其后数字/完整性/残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行、全库 280 条换行丢失），写回前做最后一次 `restore_linebreaks` 对齐，任何闸门都破坏不了换行结构；②**型号语境窗口 ±24→±48 + 全源兜底**——武器描述里型号与语境词相距很远，实测 "AK-100 series from the AK-74M" 被漏检（AK-100→AK-74M 未拦）；语境词补 cartridge/sniper/caliber/series/barrel；③词库补 `Accuracy International→精准国际`（品牌名被翻成"精度 International"）。
 - **2.0.17** 2.0.15 新译文复核的 3 处修复（59 条漏译全部定位到根因）：①**调试行正则误伤**——`_DEBUG_LIKE_RE` 的 `FAILED\b` 在 re.I 下命中叙述词 "failed"、`teleport\w*` 命中 "teleport closer"，正常叙事被整条跳过（12 条）；改为 FAILED 大小写敏感、teleport 只认 `teleport_…`/`teleport:` 标识符形态；②**标题规则误伤**——`"Men, take note: ..."` 等叙述句被 `_TITLE_LIKE_RE` 当标题整段跳过（31 条）；冒号前段含逗号/引号不再算标题（字符集白名单收紧）；③**占位符闸门短路**——含 `$clr_N`/`%c[...]`/`%s` 的条目占位符被模型破坏时旧版直接整条保留英文（20 条）；新增第三级切短块兜底（`_force_sliced`，与完整性闸门同模式）。另修 `missing_big_numbers` 集合迭代顺序不确定（补数字位置漂移）。
@@ -156,20 +157,22 @@ gh release create v2.0.12 dist/ai_translate_plugin_v2.0.12_install.zip --title "
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.12`
+- 插件版本：`ai_translate 2.0.20`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `977a18b9f11c8c47555ce814e75f5afbbbc03b7e4ba085b6780f8965685387dd`
+  `f112014dfc2df35c9b974adafa0f091b5649a423407d293ff5ece8c6911a4e5e`
 - 当前 zip SHA-256：
-  `55a8feb85d9729219e52e0ea4158d160f21f2927d520388ec570ba6d76c23fe0`
+  `2796285e286638f00a3eb796d2d394b70ef962dc884adc37005f972585e43b67`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `700561ca8fe7161469a1d18be018e9d55fabbdc0fe8fca38e243d6f9e68915b5`
-- 术语规模：`glossary_builtin.json` 9059 条 / `stalker_termbase.json` 9059 条；
-  11 个分类，两个文件条目数一致。
+  `9d4ed1545f015428c62fa500c138e095962e119439973f6b84534285d7a849ba`
+- 术语规模：`glossary_builtin.json` 36323 条 / `stalker_termbase.json` 36323 条；
+  13 个分类，两个文件条目数一致；canon 4282 / names 3250 / technical 18 /
+  reference 28773（Gunslinger 参考、GAMMA 参考、ANTHOLOGY 参考、百科/任务/
+  界面/新闻为软提示层）。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.12.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.20.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
