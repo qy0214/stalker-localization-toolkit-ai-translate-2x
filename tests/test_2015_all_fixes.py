@@ -9,6 +9,7 @@ import importlib.util
 import json
 import os
 import sys
+sys.dont_write_bytecode = True   # 别把 .pyc 写进随包插件目录（发布门禁 A6 会判为运行产物）
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -46,7 +47,7 @@ def make_job():
 
 
 def main():
-    check("version:2.0.19", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20"),
+    check("version:2.0.19", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20", "2.0.21", "2.0.22"),
           m.PLUGIN_INFO["version"])
 
     # ---- N1 颜色码后粘连冠词 ----

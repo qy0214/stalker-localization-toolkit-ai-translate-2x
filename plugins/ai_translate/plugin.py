@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.21",
+    "version": "2.0.22",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -2282,7 +2282,9 @@ _DEFAULT_LAYERS = {
     "canon": list(_HARD_TERM_CATEGORIES),
     "names": ["人物与军衔"],
     "technical": ["技术缩写"],
-    "reference": ["ANTHOLOGY 参考", "Gunslinger 参考", "GAMMA 参考"],
+    # ★ 2.0.22：Gunslinger/GAMMA 两个软参考层已整体退役（抽样语义自判
+    # 明确错率约 31%），数据留在 corpus/soft_reference_retired.json。
+    "reference": ["ANTHOLOGY 参考"],
 }
 _RISKY_LATIN_RE = re.compile(r"^[a-z][a-z0-9._\-/&()]{1,18}$")
 
@@ -2434,7 +2436,12 @@ def termbase_lookup(text):
     return None
 
 
-def partial_glossary_translation(src):
+_PARTIAL_MODEL_TOKEN_RE = re.compile(
+    r"(?<![A-Za-z])(?:[A-Z]+[A-Za-z]*[-/]\d[\w\-/]*"
+    r"|\d[\w\-/]*[A-Z]+[A-Za-z]*|[A-Z]{2,})(?![a-z])")
+
+
+def partial_glossary_translation(src, rel=None):
     """专名保护命中但整串无词库键时，对串内硬层专名词做子串替换。
 
     ★ 2.0.21（IWP 产物审计）：`Vasya "Boar"`（人物名+引号绰号）整串
@@ -2445,9 +2452,22 @@ def partial_glossary_translation(src):
         普通词误换）；
       * 整串 ≤60 字符（人物/物品短名条目），长句正文不适用；
       * 精确词边界替换，一个词都不命中返回 None（调用方继续保护跳过）。
+    ★ 2.0.22（每 MOD 随机文件测试 + 人工参考对照）：全库 133 条写出里
+    112 条是半中半英破碎文本——硬层收录了与普通英文词同形的条目
+    （Vice→台钳、Eye→眼睛、Lock→锁、Engine→引擎、Sergeant→中士），
+    子串替换只命中其中一部分就把残句写出去：
+      `Executive Vice President` → `Executive 台钳 President`
+      `Senior Sergeant "Mangun" Potryko` → `Senior 中士 "曼古恩" Potryko`
+      `Database Applications Engineer` → `Database Applications 工程师`
+    人工汉化对同样条目是全译（执行副总裁 / 数据库应用工程师）。补两条约束：
+      * 制作名单/音乐表整文件不参与（与"连核心术语也不替换"同口径）；
+      * 替换后仍残留普通英文词（含小写、非型号/全大写缩写形态）→
+        返回 None，回落原样保留，宁可不翻也不写破碎文本。
     """
     s = (src or "").strip()
     if not s or len(s) > 60:
+        return None
+    if rel is not None and looks_like_hard_protected_file(rel):
         return None
     global _PARTIAL_GLOSS_CACHE
     data = load_termbase_data()
@@ -2483,7 +2503,14 @@ def partial_glossary_translation(src):
             if out2 != out:
                 out = out2
                 changed = True
-    return out if changed else None
+    if not changed:
+        return None
+    # ★ 2.0.22：残留普通英文词 = 破碎产物，回落原样保留。型号/全大写
+    # 缩写（PSO-1、AKMS、SIG、OTs-14-4A）是合法残留，先剥掉再判。
+    for w in re.findall(r"[A-Za-z]{3,}", _PARTIAL_MODEL_TOKEN_RE.sub(" ", out)):
+        if any(c.islower() for c in w):
+            return None
+    return out
 
 
 def termbase_exact_translation(text):
@@ -4071,6 +4098,31 @@ def looks_like_code_or_debug(rel, text):
     return False
 
 
+def _is_model_code_form(rel, text):
+    """code 过滤里"全大写型号/弹药规格"那一支是否为命中原因。
+
+    ★ 2.0.22（每 MOD 随机文件测试）：全库 398 条被 code 拦掉的条目其实
+    词库有整串中文译名，其中 121 条与人工汉化逐字一致（AK-74→AK-74突击步枪、
+    AEK-971→AEK-971突击步枪、3D PDA→三维PDA、АН-94→AN-94突击步枪）。
+    按 2.0.21 同一原则（词库整串命中 = 明确翻译意图）放行这一支；
+    调试词/URL/版权行/单字符（dead、True、None、ч）不是型号形态，仍跳过。
+    """
+    s = (text or "").strip()
+    if len(s) <= 1 or s.lower() in _DEBUG_PHRASES or _COPYRIGHT_RE.match(s):
+        return False
+    if _DEBUG_LIKE_RE.search(s):
+        return False
+    if s.lower().startswith(("http://", "https://", "www.")):
+        return False
+    low = (rel or "").lower()
+    if any(x in low for x in ("character_name", "snames", "fnames", "bio",
+                              "string_table_enc_zone", "string_table_levels",
+                              "mapspots")):
+        return False
+    return bool(any(c.isdigit() for c in s)
+                and re.fullmatch(r"[A-ZА-ЯЁ0-9][A-ZА-ЯЁ0-9 .\-/_]{0,40}", s))
+
+
 def looks_like_identifier_text(text):
     """纯小写 ASCII 的“段落/任务/节名”不是用户正文（如 resque information）。"""
     s = (text or "").strip()
@@ -4105,7 +4157,12 @@ _PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
                       # 'a merc'、UI 'Dismissable'/'March'）
                       "news", "dynamic_news", "pda", "options",
                       "equipment", "quests", "loadscreen", "land_names",
-                      "weapons_upgrades", "upgrades", "barter", "cryray")
+                      "weapons_upgrades", "upgrades", "barter", "cryray",
+                      # ★ 2.0.22：藏宝点/储物点名是 PDA 里玩家可见正文，
+                      # 实测 679 条被 identifier 跳过（'Backpack under tree'、
+                      # 'Chest on the roof'、'Safe under the bush'）。此前被
+                      # 软层直取掩盖，软层退役后缺口暴露。
+                      "treasure", "secrets")
 
 # ★ 2.0.12：全大写短标签的豁免目录。比 _PLAYER_LABEL_DIRS 更窄——
 # binoc（武器属性表）里的 NVIDIA DLSS 是真型号缩写，必须继续保护，
@@ -4129,6 +4186,27 @@ def is_player_facing_label(rel, text=""):
     return bool(s) and len(s) <= 90
 
 
+def _is_prose_sentence(s):
+    """整句正文（不是标题/型号名）。
+
+    ★ 2.0.22（每 MOD 随机文件测试 + 人工参考对照）：2.0.21 的注释声称
+    _TITLE_LIKE/_TITLE_DASH 已"长句收口"，但代码只对 _MODEL_LIKE 生效，
+    标题分支从未收口——全库 23 条正文被当标题跳过，人工汉化全部翻译：
+      `Connection error: CD-Key already in use.`（GAMMA：连接错误: CD-Key已被使用.）
+      `Stash: blocked entrance to the underground, inside an L-shaped pipe.`
+      `06:00 \\nЭх... Уже пора вставать...`（时间戳前缀被当标签）
+    真标题（`Vano:`、`MP5 — Sanitizer`）短且无句末标点，不受影响。
+    """
+    n = len(s)
+    if n >= 40 and re.search(r"[.!?。！？]\s*[\"”»']?\s*$", s):
+        return True
+    return n > 90 and len(re.findall(r"[A-Za-zА-Яа-яЁё]{2,}", s)) >= 8
+
+
+_TRACK_LIST_RE = re.compile(r"(?:ТРЕК|Трек|TRACK|Track|曲目)\s*[:：]?\s*\d+",
+                            re.I)
+
+
 def looks_like_hard_protected_file(rel):
     """制作名单/音乐列表：连核心术语也不替换；武器短名只保护非词库型号。"""
     low = (rel or "").lower().replace("\\", "/")
@@ -4145,6 +4223,16 @@ def looks_like_proper_text(rel, text):
     # 只保护短名，长描述仍交给模型（例如武器说明）。
     hint = next((h for h in _PROTECT_FILE_HINTS if h in low), "")
     if looks_like_hard_protected_file(rel):
+        # ★ 2.0.22（全 MOD 全文件测试）："ogg/music" 命中的其实是物品表——
+        # `string_table_ogg_player.xml` 是 MP3 播放器与音乐闪存盘的名字/描述，
+        # 玩家在物品栏就能看到，人工汉化对长描述全部翻译。只放行这类长正文；
+        # 制作名单与人物名字表仍整表保护。
+        # 但**含曲目列表的条目不放行**：ogg_flash_* 的描述后面跟着
+        # `ТРЕК 01: Алиса — Веретено` 这类真实歌名/歌手（全库 54 条），
+        # 整串送翻会把歌名译错，人工也只译了前半句描述——宁可整条保留。
+        if (hint in ("ogg", "music", "songs") and "credits" not in low
+                and _is_prose_sentence(s) and not _TRACK_LIST_RE.search(s)):
+            return False
         return True
     if hint == "enc_weapons" and len(s) <= 40 and len(s.split()) <= 6:
         return True
@@ -4155,9 +4243,10 @@ def looks_like_proper_text(rel, text):
     # is this: ...' 实测整段漏译）；玩家可见目录（quests/news/dialog 等）
     # 的冒号标题是任务名/新闻标题，送翻不保护。
     _label_dir = any(x in low for x in _PLAYER_LABEL_DIRS)
-    if not _label_dir and (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
-                           or (_MODEL_LIKE_RE.match(s) and len(s) <= 90
-                               and not re.search(r"[.!?。！？]\s*[\"”»]?\s*$", s))):
+    if (not _label_dir and not _is_prose_sentence(s)
+            and (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
+                 or (_MODEL_LIKE_RE.match(s) and len(s) <= 90
+                     and not re.search(r"[.!?。！？]\s*[\"”»]?\s*$", s)))):
         return True
     if len(s) <= 30 and s.isupper() and any(c.isalpha() for c in s):
         # ★ 2.0.7：只保护拉丁字母的型号/缩写（NVIDIA DLSS、AK-74）。
@@ -7383,6 +7472,16 @@ class TranslationJob(object):
             if not _has_translatable_text(src):
                 continue
             if looks_like_code_or_debug(rel, src):
+                # ★ 2.0.22：全大写型号/弹药规格且词库有整串中文译名时直取，
+                # 不再被 code 过滤整条拦掉（见 _is_model_code_form 说明）。
+                _mc = (termbase_exact_translation(src)
+                       if (src not in self.glossary
+                           and not looks_like_hard_protected_file(rel)
+                           and _is_model_code_form(rel, src)) else None)
+                if _mc is not None and _mc != src:
+                    changes[ent.id] = (lang, _mc)
+                    st["translated"] += 1
+                    continue
                 st["skipped"] += 1
                 continue
             # ★ 2.0.21（全 MOD 重放审计）：术语直取/句式直译提前到
@@ -7415,7 +7514,7 @@ class TranslationJob(object):
             if self.protect_proper and looks_like_proper_text(rel, src):
                 # ★ 2.0.21：保护命中先试硬层子串替换（Vasya "Boar"→
                 # 瓦西娅"野猪" 形态），词库无可用词才保留原文。
-                _p = (partial_glossary_translation(src)
+                _p = (partial_glossary_translation(src, rel)
                       if src not in self.glossary else None)
                 if _p is not None and _p != src:
                     changes[ent.id] = (lang, _p)
@@ -8145,7 +8244,7 @@ class TranslationJob(object):
                 # ★ 2.0.21：硬层子串替换仅限 UTF-8 表（cp1251 写回塞中文
                 # 会 UnicodeEncodeError，与术语直取同口径）。
                 if enc.lower() in ("utf-8", "utf8", "utf-8-sig"):
-                    _p = (partial_glossary_translation(send)
+                    _p = (partial_glossary_translation(send, rel)
                           if send not in self.glossary else None)
                     if _p is not None and _p != send:
                         rep[send] = _p

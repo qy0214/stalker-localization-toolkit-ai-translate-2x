@@ -14,6 +14,7 @@ import importlib.util
 import os
 import re
 import sys
+sys.dont_write_bytecode = True   # 别把 .pyc 写进随包插件目录（发布门禁 A6 会判为运行产物）
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -75,7 +76,9 @@ def t3_player_labels():
         ("configs/text/eng/gunsl_up_binoc.xml", "Magnification", True),
         ("configs/text/eng/gunsl_up_binoc.xml", "Optical rangefinder", True),
         ("configs/text/eng/st_characters.xml", "Vano", False),
-        ("configs/text/eng/st_dynamic_news.xml", "Courier document", False),
+        # ★ 2.0.21 起 dynamic_news 属玩家可见目录（新闻标题/碎片是正文），
+        # 旧期望 False 是白名单扩充前的口径，未同步导致长期失败。
+        ("configs/text/eng/st_dynamic_news.xml", "Courier document", True),
     ]
     for rel, text, should_translate in cases:
         skipped = (ait.looks_like_identifier_text(text)

@@ -1,0 +1,87 @@
+种子: 0 | 排除记录: 无
+NS7            文件 182(新182) | target     0 code   51(型号直取   0) 词库 12364 句式    0 noise   0 tech   0 ident  280 proper  629(替0) send 17025 | 空   0 解析失败 1
+NS7-SQ基线       文件 182(新182) | target 29918 code   89(型号直取   0) 词库   20 句式    0 noise   0 tech  69 ident  297 proper  363(替0) send   375 | 空   0 解析失败 0
+NS219汉化        文件 144(新144) | target 30965 code   92(型号直取   0) 词库   10 句式    0 noise 191 tech  78 ident   55 proper  145(替2) send   256 | 空   0 解析失败 0
+NS619汉化        文件 147(新147) | target 31166 code   62(型号直取   0) 词库    5 句式    0 noise   0 tech  99 ident   94 proper  165(替2) send   215 | 空   0 解析失败 0
+OP             文件 146(新146) | target 29487 code  121(型号直取   1) 词库    5 句式    0 noise 112 tech  40 ident   34 proper   68(替2) send   282 | 空   1 解析失败 71
+OLR25          文件 188(新188) | target  8747 code   95(型号直取   0) 词库  945 句式    0 noise   0 tech  48 ident  884 proper  434(替4) send  5018 | 空   0 解析失败 88
+疤脸归来2          文件  6(新6) | target     0 code    2(型号直取   0) 词库  208 句式    0 noise   0 tech   1 ident    0 proper    0(替0) send  2993 | 空   0 解析失败 1
+WOT汉化          文件 65(新65) | target 11481 code   68(型号直取   0) 词库  486 句式    0 noise   0 tech  45 ident  267 proper  243(替0) send  1563 | 空   0 解析失败 1
+GA汉化           文件 102(新102) | target 15536 code    8(型号直取   0) 词库    3 句式    0 noise   0 tech  14 ident   17 proper   36(替1) send   100 | 空   0 解析失败 0
+SoC1.0006原版    文件  4(新4) | target     0 code    4(型号直取   0) 词库  290 句式    0 noise   0 tech   0 ident  149 proper    2(替0) send   364 | 空   0 解析失败 1
+Anomaly-eng    文件 138(新138) | target     0 code  112(型号直取   0) 词库 2875 句式   39 noise   0 tech  14 ident 2740 proper  231(替0) send 14364 | 空   3 解析失败 20
+Anomaly-rus    文件 138(新138) | target     0 code  131(型号直取   1) 词库 5145 句式    0 noise   0 tech 149 ident   45 proper  234(替0) send 17533 | 空   3 解析失败 16
+MT-CN          文件  2(新2) | target     3 code    5(型号直取   0) 词库    1 句式    0 noise   0 tech   0 ident    7 proper    1(替0) send    10 | 空   0 解析失败 0
+Monolith-MT    文件  4(新4) | target     0 code    4(型号直取   0) 词库   51 句式    0 noise   0 tech   0 ident  132 proper    4(替0) send   693 | 空   0 解析失败 0
+百科大全           文件  2(新2) | target     0 code    0(型号直取   0) 词库    0 句式    0 noise   0 tech   0 ident    0 proper    0(替0) send     0 | 空   0 解析失败 2
+IWP            文件 80(新80) | target     0 code   86(型号直取   1) 词库 1676 句式   33 noise   0 tech  65 ident  533 proper    7(替0) send  6919 | 空   0 解析失败 0
+
+== A. 离线产物核验失败（译文=源/无中文/占位符不一致）: 13 ==
+   [NS7] items/string_table_enc_equipment.xml|device-PDA (tb)
+      源: КПК
+      译: PDA
+   [NS7] other/sak_strings.xml|device_pda_npc_name (tb)
+      源: ПДА
+      译: PDA
+   [NS7] ui/ui_st_keybinding.xml|kb_pda (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] st_items_devices.xml|st_pda_name (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] st_items_devices.xml|st_pda_1_name (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] st_items_quest.xml|drx_sl_quest_item_3_name (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] st_items_quest.xml|item_pda_map_mlr_name (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] ui_st_encyclopedia_items.xml|encyclopedia_items_pda (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] ui_st_keybinding.xml|kb_grp_pda (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] ui_st_keybinding.xml|kb_active_jobs (tb)
+      源: КПК
+      译: PDA
+   [Anomaly-rus] ui_st_keybinding.xml|kb_pda (tb)
+      源: КПК
+      译: PDA
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_menu_pda (tb)
+      源: КПК
+      译: PDA
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_pda_modded_exes (tb)
+      源: КПК
+      译: PDA
+
+== C. 跳过类本可硬层子串替换（判定链顺序丢失）: 0 ==
+
+== B. 跳过类假跳过红旗: 5 ==
+
+[NS7] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all2: кто помогал появиться на свет проекту S.T.A.L.K.E.R.
+
+[NS219汉化] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all2: кто помогал появиться на свет проекту S.T.A.L.K.E.R.
+
+[NS619汉化] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all2: кто помогал появиться на свет проекту S.T.A.L.K.E.R.
+
+[OLR25] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all4: Your good efforts will not be forgotten!
+
+[WOT汉化] 1 条，抽 1:
+   (proper) ui_st_credits.xml|st_mod_developer: The creator of the modification is Vadim "akmc47u" Samoilov.\n\nI want to express my gra
+
+== D. 裸 & 条目（宿主解析风险面，不断言）: 47 ==
+   Anomaly-rus       18
+   WOT汉化              9
+   NS219汉化            6
+   Anomaly-eng        4
+   NS7-SQ基线           3
+   NS619汉化            3
+   OP                 3
+   OLR25              1

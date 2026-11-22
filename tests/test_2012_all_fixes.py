@@ -3,6 +3,7 @@
 import importlib.util
 import os
 import sys
+sys.dont_write_bytecode = True   # 别把 .pyc 写进随包插件目录（发布门禁 A6 会判为运行产物）
 from unittest.mock import patch
 
 PLUGIN = os.path.join(os.path.dirname(__file__), "..", "plugins",

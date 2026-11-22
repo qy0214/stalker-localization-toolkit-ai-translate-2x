@@ -49,16 +49,27 @@ def read(p):
     return None
 
 
+def _norm_comments(s):
+    s = re.sub(r"<!-+", "<!--", s)
+    s = re.sub(r"<!--(.*?)(-{2,})>", lambda x: "<!--" + x.group(1) + "-->", s)
+    return s.replace("--!>", "-->")
+
+
 def entries(path):
     s = read(path)
     if not s:
         return {}
-    s = re.sub(r"<!-+", "<!--", s)
-    s = re.sub(r"<!--(.*?)(-{2,})>", lambda x: "<!--" + x.group(1) + "-->", s)
-    s = s.replace("--!>", "-->")
-    try:
-        root = ET.fromstring(s)
-    except ET.ParseError:
+    # ★ 原文优先、注释归一回退：归一化会把空注释 `<!---->` 破坏成 `<!-->`
+    # （`<!-+` 吞掉全部短横），实测 OLR25 4 个文件因此在归一后才解析失败；
+    # 反过来 IWP/OP/Anomaly 有 14 个文件只有归一后才能解析。两种都试。
+    root = None
+    for cand in (s, _norm_comments(s)):
+        try:
+            root = ET.fromstring(cand)
+            break
+        except ET.ParseError:
+            continue
+    if root is None:
         return None
     out = {}
     for e in root.iter("string"):

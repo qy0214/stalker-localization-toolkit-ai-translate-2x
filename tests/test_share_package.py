@@ -18,6 +18,7 @@ import json
 import os
 import shutil
 import sys
+sys.dont_write_bytecode = True   # 别把 .pyc 写进随包插件目录（发布门禁 A6 会判为运行产物）
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -62,6 +63,10 @@ print("=" * 78)
 print("\n--- A 分享包内容与痕迹 ---")
 files = []
 for root, _d, fs in os.walk(SHARE):
+    # __pycache__ 是 .gitignore 的构建产物，打包器不会进 zip；
+    # 磁盘侧同口径排除，否则 D1a/D3a 永远差一个 .pyc。
+    if "__pycache__" in root:
+        continue
     for f in fs:
         files.append(os.path.relpath(os.path.join(root, f), SHARE))
 files.sort()

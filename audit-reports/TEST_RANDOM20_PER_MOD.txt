@@ -1,0 +1,40 @@
+种子: 672248003
+NS7            文件 20 | target     0 code    5 词库 1033 句式    0 noise   0 tech   0 ident    1 proper   31(替0) send   983 | 空   0 解析失败 0
+NS7-SQ基线       文件 20 | target  2669 code    0 词库    0 句式    0 noise   0 tech   0 ident    1 proper    1(替0) send     6 | 空   0 解析失败 0
+NS219汉化        文件 20 | target  6733 code   38 词库    6 句式    0 noise  75 tech  13 ident    0 proper    5(替2) send   165 | 空   0 解析失败 0
+NS619汉化        文件 20 | target  2806 code    0 词库    4 句式    0 noise   0 tech   0 ident    8 proper    8(替0) send    25 | 空   0 解析失败 0
+OP             文件 20 | target  9610 code    0 词库    0 句式    0 noise   1 tech   0 ident    0 proper    1(替0) send    13 | 空   1 解析失败 7
+OLR25          文件 20 | target  1106 code    0 词库   59 句式    0 noise   0 tech   0 ident    0 proper    1(替0) send   556 | 空   0 解析失败 10
+疤脸归来2          文件  6 | target     0 code    2 词库  237 句式    0 noise   0 tech   1 ident    0 proper    0(替0) send  2964 | 空   0 解析失败 1
+WOT汉化          文件 20 | target  2818 code    0 词库  273 句式    0 noise   0 tech   4 ident   93 proper  187(替19) send   606 | 空   0 解析失败 0
+GA汉化           文件 20 | target  2841 code    1 词库    0 句式    0 noise   0 tech   0 ident    6 proper    5(替0) send    46 | 空   0 解析失败 0
+SoC1.0006原版    文件  4 | target     0 code    4 词库  388 句式    0 noise   0 tech   0 ident   88 proper    2(替0) send   327 | 空   0 解析失败 1
+Anomaly-eng    文件 20 | target     0 code    7 词库  884 句式    0 noise   0 tech   0 ident  220 proper  191(替23) send  1376 | 空   0 解析失败 1
+Anomaly-rus    文件 20 | target     0 code    7 词库 3357 句式    0 noise   0 tech   0 ident    2 proper    0(替0) send  1078 | 空   0 解析失败 0
+MT-CN          文件  2 | target     3 code    5 词库    1 句式    0 noise   0 tech   0 ident    7 proper    1(替0) send    10 | 空   0 解析失败 0
+Monolith-MT    文件  4 | target     0 code    4 词库   59 句式    0 noise   0 tech   0 ident  125 proper    5(替0) send   691 | 空   0 解析失败 0
+百科大全           文件  2 | target     0 code    0 词库    0 句式    0 noise   0 tech   0 ident    0 proper    0(替0) send     0 | 空   0 解析失败 2
+IWP            文件 20 | target     0 code    2 词库  838 句式   32 noise   0 tech   2 ident   42 proper    1(替0) send  3372 | 空   0 解析失败 0
+
+== A. 离线产物核验失败（译文=源/无中文/占位符不一致）: 2 ==
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_menu_pda (tb)
+      源: КПК
+      译: PDA
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_pda_modded_exes (tb)
+      源: КПК
+      译: PDA
+
+== B. 跳过类假跳过红旗: 7 ==
+
+[WOT汉化] 2 条，抽 2:
+   (proper) st_mp_mapdesc.xml|ui_map_desc_mp_rostok_short: Old deserted plant: silent piles of metal behind concrete walls are all that’s left.
+   (proper) ui_st_credits.xml|st_mod_developer: The creator of the modification is Vadim "akmc47u" Samoilov.\n\nI want to express my gra
+
+[Anomaly-eng] 4 条，抽 4:
+   (proper) st_treasures.xml|st_val_q3_t_a_descr: Write this down: very valuable loot - backpack - hapless military man - right next to an
+   (proper) st_treasures.xml|st_agr_treasure_7_descr: Stash: blocked entrance to the underground, inside an L-shaped pipe.
+   (proper) st_treasures.xml|st_mar_q_t_l_1_descr: Here's a stash tip for you: it's in the backpack on the back of a corpse.
+   (proper) st_treasures.xml|st_mar_q_t_l_4_descr: Here's the info: a young figher "resting" in the bushes is guarding his backpack for you
+
+[Monolith-MT] 1 条，抽 1:
+   (proper) ui_lua_fatal_window.xml|st_lua_fatal_error: WARNING: UNSTABLE GAME STATE\n \nA critical Lua error has occurred resulting in script e

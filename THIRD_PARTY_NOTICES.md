@@ -40,7 +40,35 @@
 - 许可证：Apache-2.0
 - 使用方式：不随本仓库分发，插件在用户机器上按 HuggingFace LFS oid 校验后下载。
 
-## 4. 本仓库自身许可
+## 4. 人工汉化语料与术语库来源
+
+随包术语库（`plugins/ai_translate/assets/stalker_termbase.json` 与
+`glossary_builtin.json`）的条目收割自以下第三方文本。这些来源**均未声明
+开源许可证**，版权均归各自权利人/汉化组；本仓库只保留来源署名，不主张
+任何额外授权，也不对它们的译文质量负责。
+
+| 来源 | 仓库内位置 | 用途与状态 |
+|---|---|---|
+| NS OGSR 系列汉化补丁（2019 / 2026-02-19 / 2026-06-19） | 本机 MOD 目录（未收录原文） | **权威源**，条目并入 canon/names 等标准分类 |
+| GAMMA 汉化组（GSCTP）Anomaly 简体中文 | `corpus/gamma_chs/` | 曾为 `GAMMA 参考` 软层 7998 条；**2.0.22 整体退役** |
+| OGSR Gunslinger Addon 人工汉化（原文 `configs.db`，中文在 eng 槽） | `corpus/gunslinger_eng/`、`corpus/gunslinger_rus/` | 曾为 `Gunslinger 参考` 软层 5948 条；**2.0.22 整体退役** |
+| 《S.T.A.L.K.E.R.：普里皮亚季的呼唤》官方简体中文（主机版） | `corpus/cop_chs/`、`corpus/cop_eng/`、`corpus/cop_rus/` | 1432 条并入标准分类；仅作对齐核验参考 |
+| Anomaly 英文原文 | `corpus/anomaly_eng/` | 源文对齐用，非译文来源 |
+| ANTHOLOGY 2.1 汉化整合包 | 本机 MOD 目录（未收录原文） | `ANTHOLOGY 参考` 148 条（软提示层） |
+| bilibili 《潜行者》中文 wiki 专有名词/神器表 | 经 `tools/ingest_wiki_terms.py` 收割 | 24 条并入标准分类 |
+
+退役的两层共 13946 条留档在
+[`corpus/soft_reference_retired.json`](corpus/soft_reference_retired.json)，
+其 `_meta.reason` 记录了退役依据（逐条语义抽检明确错率约 31%）与出处；
+该文件不参与运行时，仅作追溯与将来重新收割的原料。
+
+`corpus/` 下收录的是上述来源的完整文本副本，仅用于本地对齐收割与核验，
+**不随插件发布包分发**（发布范围见 `release_manifest.json` 的 `scope`）。
+
+> 如果你是上述任一来源的权利人，希望调整署名方式或要求移除相关数据，
+> 请在本仓库开 issue 说明，我们会配合处理。
+
+## 5. 本仓库自身许可
 
 本仓库自身代码按 **GPL-3.0** 分发（见 [`LICENSE`](LICENSE)）。
 该许可不改变上述第三方组件的版权与授权状态；引用上游未声明许可证的代码时，

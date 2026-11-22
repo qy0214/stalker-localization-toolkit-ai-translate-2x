@@ -1,0 +1,124 @@
+种子: 20261123 | 排除记录: audit-reports/picks_round2.json
+NS7            文件 20(新20) | target     0 code    0 词库  563 句式    0 noise   0 tech   0 ident    0 proper    1(替0) send  1474 | 空   0 解析失败 0
+NS7-SQ基线       文件 20(新20) | target  2211 code   44 词库   16 句式    0 noise   0 tech  49 ident   48 proper   51(替1) send     4 | 空   0 解析失败 0
+NS219汉化        文件 20(新20) | target  4346 code    0 词库    0 句式    0 noise   0 tech   1 ident    0 proper   27(替0) send     6 | 空   0 解析失败 0
+NS619汉化        文件 20(新20) | target  1722 code   39 词库   17 句式    0 noise   0 tech  48 ident   19 proper   55(替0) send     0 | 空   0 解析失败 0
+OP             文件 20(新20) | target  2817 code   30 词库    3 句式    0 noise   0 tech   0 ident    1 proper    4(替0) send    44 | 空   0 解析失败 10
+OLR25          文件 20(新20) | target   113 code    4 词库  257 句式    0 noise   0 tech   0 ident   26 proper    0(替0) send   586 | 空   0 解析失败 13
+疤脸归来2          无未测文件（全部 6 个已在前轮覆盖）
+WOT汉化          文件 20(新20) | target  3992 code    2 词库  177 句式    0 noise   0 tech   0 ident   69 proper   25(替0) send   119 | 空   0 解析失败 1
+GA汉化           文件 20(新20) | target  5804 code    0 词库    2 句式    0 noise   0 tech   0 ident    0 proper   10(替0) send    14 | 空   0 解析失败 0
+SoC1.0006原版    无未测文件（全部 4 个已在前轮覆盖）
+Anomaly-eng    文件 20(新20) | target     0 code    1 词库 2333 句式    0 noise   0 tech   0 ident  352 proper    0(替0) send   757 | 空   0 解析失败 4
+Anomaly-rus    文件 20(新20) | target     0 code    4 词库  509 句式    0 noise   0 tech   4 ident    0 proper    0(替0) send  1129 | 空   0 解析失败 4
+MT-CN          无未测文件（全部 2 个已在前轮覆盖）
+Monolith-MT    无未测文件（全部 4 个已在前轮覆盖）
+百科大全           无未测文件（全部 2 个已在前轮覆盖）
+IWP            文件 20(新20) | target     0 code   48 词库  362 句式    0 noise   0 tech  60 ident   65 proper    3(替0) send  1163 | 空   0 解析失败 0
+
+抽样记录已写入: audit-reports/picks_round2.json 累计文件数: 458
+
+== A. 离线产物核验失败（译文=源/无中文/占位符不一致）: 0 ==
+
+== C. 跳过类本可硬层子串替换（判定链顺序丢失）: 29 ==
+   [NS7-SQ基线] encyclopedia/string_table_enc_weapons.xml|ammo_8.6x70_name (tech)
+      源: 8.6x70mm Mk 211 Lock Base 子弹
+      可译: 8.6x70mm Mk 211 锁 Base 子弹
+   [NS7-SQ基线] encyclopedia/string_table_enc_weapons.xml|enc_weapons_groza (ident)
+      源: OTs-14-4A-02 "Groza"
+      可译: OTs-14-4A-02 "雷暴"
+   [NS7-SQ基线] encyclopedia/string_table_enc_weapons.xml|enc_weapons_val (ident)
+      源: AS "Val"
+      可译: AS "维尔"
+   [NS7-SQ基线] other/stable_game_credits_ns_ogsr.xml|st_ns_ogsr_aster (ident)
+      源: Aster
+      可译: 阿斯特
+   [NS619汉化] rus/string_table_enc_weapons.xml|ammo_8.6x70_name (tech)
+      源: 8.6x70mm Mk 211 Lock Base 子弹
+      可译: 8.6x70mm Mk 211 锁 Base 子弹
+   [NS619汉化] rus/string_table_enc_weapons.xml|enc_weapons_groza (ident)
+      源: OTs-14-4A-02 "Groza"
+      可译: OTs-14-4A-02 "雷暴"
+   [NS619汉化] rus/string_table_enc_weapons.xml|enc_weapons_val (ident)
+      源: AS "Val"
+      可译: AS "维尔"
+   [OLR25] eng/ui_st_mm_mp.xml|mm_mp_artefactcapture (ident)
+      源: Artifact capture
+      可译: 神器 capture
+   [OLR25] eng/ui_st_mm_mp.xml|mm_mp_artefdelay (ident)
+      源: Artifact delay (sec)
+      可译: 神器 delay (sec)
+   [OLR25] eng/ui_st_mm_mp.xml|mm_mp_artefstay (ident)
+      源: Artifact life (min)
+      可译: 神器 life (min)
+   [OLR25] eng/ui_st_mm_mp.xml|mm_mp_maxplayers (ident)
+      源: Max players
+      可译: 马克斯 players
+   [WOT汉化] chs/ui_st_mp.xml|mm_mp_max_ping (ident)
+      源: Max ping
+      可译: 马克斯 ping
+   [WOT汉化] chs/ui_st_mp.xml|mp_si_max_ping (ident)
+      源: Max ping
+      可译: 马克斯 ping
+   [WOT汉化] chs/st_ogsm_notepad_mutants.xml|zombierusty (ident)
+      源: Zombie-kamikaze
+      可译: 僵尸-kamikaze
+   [WOT汉化] chs/st_ogsm_notepad_mutants.xml|mutant_boar_leg (ident)
+      源: Boar's hoof
+      可译: 野猪's hoof
+   [WOT汉化] chs/st_ogsm_notepad_mutants.xml|mutant_cat_tail (ident)
+      源: Tail of the cat-bayun
+      可译: 尾巴 of the cat-bayun
+   [WOT汉化] chs/st_ogsm_notepad_mutants.xml|mutant_psydodog_tail (ident)
+      源: Tail of the dog
+      可译: 尾巴 of the dog
+   [Anomaly-eng] st_items_quest.xml|item_docs_hiden_pri_name (ident)
+      源: Strelok's manuscript
+      可译: 史特列洛克's manuscript
+   [IWP] st_itm_minimod.xml|st_itm_artefact_container_name (ident)
+      源: Artifact container
+      可译: 神器 container
+   [IWP] st_items_weapons.xml|st_wpn_mp9 (code)
+      源: BT MP9
+      可译: BT MP9冲锋枪
+   [IWP] st_items_weapons.xml|st_wpn_wincheaster1300_trapper (ident)
+      源: Remington 870 (FD)
+      可译: 雷明顿870 (FD)
+   [IWP] st_items_weapons.xml|st_addon_sil_groza (tech)
+      源: 9x39mm Groza Suppressor
+      可译: 9x39mm 雷暴 Suppressor
+   [IWP] st_items_outfit.xml|dolg_scientific_outfit_name (ident)
+      源: Duty scientific suit
+      可译: “纪律团” scientific suit
+   [IWP] st_items_outfit.xml|dolg_outfit_name (ident)
+      源: Duty suit
+      可译: “纪律团” suit
+   [IWP] st_items_outfit.xml|dolg_heavy_outfit_name (ident)
+      源: Duty armored suit
+      可译: “纪律团” armored suit
+   [IWP] st_items_outfit.xml|dolg_radiation_outfit_name (ident)
+      源: Duty heavy armored suit
+      可译: “纪律团” heavy armored suit
+   [IWP] st_items_outfit.xml|svoboda_radiation_outfit_name (ident)
+      源: Freedom armored suit
+      可译: “自由团” armored suit
+   [IWP] st_items_outfit.xml|monolith_radiation_outfit_name (ident)
+      源: Monolith armored suit
+      可译: “黑石” armored suit
+   [IWP] st_items_outfit.xml|exo_uniq_outfit_name (ident)
+      源: Exoskeleton "Titan"
+      可译: 外骨骼 "Titan"
+
+== B. 跳过类假跳过红旗: 2 ==
+
+[NS7] 1 条，抽 1:
+   (proper) arc_string_table.xml|kontroler_diary_9_part_1: 06:00 \nЭх... Уже пора вставать... М-да, говорил же я Толику, не надо было пятую бутылку
+
+[IWP] 1 条，抽 1:
+   (proper) st_items_outfit.xml|exo_uniq_outfit_description: The name speaks for itself: this is the best protection in the Zone against any physical
+
+== D. 裸 & 条目（宿主解析风险面，不断言）: 11 ==
+   NS7-SQ基线           3
+   NS219汉化            3
+   NS619汉化            3
+   Anomaly-eng        2

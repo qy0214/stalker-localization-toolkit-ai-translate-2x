@@ -131,9 +131,15 @@ def main():
             add("low", "key_ws", cat, k, v)
         if not re.search(r"[0-9A-Za-zА-Яа-яЁё\u4e00-\u9fff]", k):
             add("low", "key_symbol_only", cat, k, v)
-        for q in "\"«“‘":
-            if k.count(q) and k.count(q) % 2 != 0 and q not in "\"'":
-                add("low", "quote_unbalanced_key", cat, k, v, q)
+        # ★ 2.0.22 口径修正：旧实现只数**开引号**并要求偶数——
+        # `Лейтенант «Аспирин» Сострадов` 开引号 1 个（奇数）就被判不平衡，
+        # 实际 «» 是配平的。改为逐对比较开/闭引号数量；‘/’ 不参与——
+        # 英文所有格撇号 The nanosuit’s 天然不成对，会误报。
+        for qo, qc in (("«", "»"), ("“", "”")):
+            if k.count(qo) != k.count(qc):
+                add("low", "quote_unbalanced_key", cat, k, v, qo)
+            if v.count(qo) != v.count(qc):
+                add("low", "quote_unbalanced_value", cat, k, v, qo)
         if CYR.search(v) and cat in canon_cats and not CYR.search(k):
             add("high", "cyr_leftover_canon", cat, k, v)
 

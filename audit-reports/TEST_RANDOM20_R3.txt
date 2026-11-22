@@ -1,0 +1,133 @@
+种子: 314159 | 排除记录: audit-reports/picks_round3.json
+NS7            文件 20(新20) | target     0 code    1 词库 1766 句式    0 noise   0 tech   0 ident    3 proper    1(替0) send  3133 | 空   0 解析失败 0
+NS7-SQ基线       文件 20(新20) | target  2575 code    1 词库   14 句式    0 noise   0 tech  16 ident    2 proper   14(替0) send     2 | 空   0 解析失败 0
+NS219汉化        文件 20(新20) | target  4426 code    1 词库    2 句式    0 noise   0 tech   0 ident    0 proper   10(替0) send    44 | 空   0 解析失败 0
+NS619汉化        文件 20(新20) | target  3195 code    3 词库    2 句式    0 noise   0 tech   0 ident   17 proper   47(替4) send    47 | 空   0 解析失败 0
+OP             文件 20(新20) | target  2539 code   76 词库   12 句式    0 noise   0 tech  37 ident   15 proper   41(替2) send    15 | 空   0 解析失败 6
+OLR25          文件 20(新20) | target   159 code    1 词库  113 句式    0 noise   0 tech   0 ident   55 proper    1(替0) send    42 | 空   0 解析失败 11
+疤脸归来2          无未测文件（全部 6 个已在前轮覆盖）
+WOT汉化          文件 20(新20) | target  3942 code   66 词库  154 句式    0 noise   0 tech  41 ident  138 proper   12(替0) send   687 | 空   0 解析失败 0
+GA汉化           文件 20(新20) | target  1839 code    0 词库    0 句式    0 noise   0 tech   0 ident    3 proper    3(替0) send     8 | 空   0 解析失败 0
+SoC1.0006原版    无未测文件（全部 4 个已在前轮覆盖）
+Anomaly-eng    文件 20(新20) | target     0 code    3 词库  574 句式    0 noise   0 tech   2 ident   20 proper    0(替0) send  1029 | 空   0 解析失败 3
+Anomaly-rus    文件 20(新20) | target     0 code    9 词库 1231 句式    0 noise   0 tech   2 ident    0 proper    1(替0) send  1602 | 空   0 解析失败 1
+MT-CN          无未测文件（全部 2 个已在前轮覆盖）
+Monolith-MT    无未测文件（全部 4 个已在前轮覆盖）
+百科大全           无未测文件（全部 2 个已在前轮覆盖）
+IWP            文件 20(新20) | target     0 code    6 词库  589 句式    0 noise   0 tech   0 ident  177 proper    3(替0) send   659 | 空   0 解析失败 0
+
+抽样记录已写入: audit-reports/picks_round3.json 累计文件数: 678
+
+== A. 离线产物核验失败（译文=源/无中文/占位符不一致）: 2 ==
+   [NS7] other/sak_strings.xml|device_pda_npc_name (tb)
+      源: ПДА
+      译: PDA
+   [Anomaly-rus] ui_st_encyclopedia_items.xml|encyclopedia_items_pda (tb)
+      源: КПК
+      译: PDA
+
+== C. 跳过类本可硬层子串替换（判定链顺序丢失）: 46 ==
+   [NS619汉化] rus/stable_game_credits.xml|st_harris2 (ident)
+      源: Harris
+      可译: 哈里斯
+   [OP] rus/arsenal_mod.xml|ars-val_m2 (ident)
+      源: AS"Val"PSO-3
+      可译: AS"维尔"PSO-3
+   [OLR25] eng/ui_st_mm.xml|testers_mp_agroprom (ident)
+      源: "Agroprom" factory
+      可译: "农业研究所" factory
+   [OLR25] eng/ui_st_mm.xml|testers_mp_factory (ident)
+      源: "Yantar" factory
+      可译: "杨塔" factory
+   [WOT汉化] chs/ui_st_other.xml|st_save_zat_a2_reached_skadovsk (ident)
+      源: arrival at the Skadovsk
+      可译: arrival at the 斯卡多夫斯克
+   [WOT汉化] chs/ui_st_other.xml|st_save_jup_b217_arrived_to_jup (ident)
+      源: arrival at Yanov
+      可译: arrival at 亚诺夫
+   [WOT汉化] chs/ui_st_other.xml|st_save_jup_a9_got_underpass_docs (ident)
+      源: road to Pripyat found
+      可译: road to 普里皮亚季 found
+   [WOT汉化] chs/ui_st_other.xml|st_save_uni_travel_pas_to_pri (ident)
+      源: arrival in Pripyat
+      可译: arrival in 普里皮亚季
+   [WOT汉化] chs/st_items_weapons.xml|st_wpn_m16a4_camo (ident)
+      源: M16A4 (Camouflage)
+      可译: M16A4 (迷彩)
+   [WOT汉化] chs/st_items_weapons.xml|st_wpn_val (ident)
+      源: AS "Val"
+      可译: AS "维尔"
+   [WOT汉化] chs/ui_st_secrets.xml|red_treasure_23_name (ident)
+      源: Zaporozhets car at mine entrance
+      可译: 扎波罗热人 car at mine entrance
+   [WOT汉化] chs/ui_st_secrets.xml|lim_treasure_5_name (ident)
+      源: Case in the fountain
+      可译: 箱子 in the fountain
+   [WOT汉化] chs/ui_st_secrets.xml|lim_treasure_8_name (ident)
+      源: Pipe at the garbage can
+      可译: 管道 at the garbage can
+   [WOT汉化] chs/ui_st_secrets.xml|lim_treasure_13_name (ident)
+      源: Case in the blockage
+      可译: 箱子 in the blockage
+   [WOT汉化] chs/ui_st_secrets.xml|mil_treasure_19_name (ident)
+      源: Stash in peasant's sled
+      可译: 藏匿点 in peasant's sled
+   [WOT汉化] chs/ui_st_secrets.xml|rost_treasure_1_name (ident)
+      源: Case in the booth
+      可译: 箱子 in the booth
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_6_name (ident)
+      源: Pipe in rubble
+      可译: 管道 in rubble
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_7_name (ident)
+      源: Pipe at the body
+      可译: 管道 at the body
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_8_name (ident)
+      源: Case in the trash
+      可译: 箱子 in the trash
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_13_name (ident)
+      源: Case in the closet
+      可译: 箱子 in the closet
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_18_name (ident)
+      源: Pipe on the military base
+      可译: 管道 on the military base
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_19_name (ident)
+      源: Case on the base
+      可译: 箱子 on the base
+   [WOT汉化] chs/ui_st_secrets.xml|agr_treasure_22_name (ident)
+      源: Pipe in the railway tunnel
+      可译: 管道 in the railway tunnel
+   [WOT汉化] chs/ui_st_secrets.xml|x16_treasure_2_name (ident)
+      源: Bloodsucker's chest
+      可译: 吸血怪's chest
+   [WOT汉化] chs/ui_st_secrets.xml|agru_treasure_1_name (ident)
+      源: Bandits' communal "fund"
+      可译: 强盗' communal "fund"
+   [Anomaly-eng] st_items_consumable.xml|st_tea (ident)
+      源: Beard's tea
+      可译: 大胡子's tea
+   [Anomaly-eng] st_items_consumable.xml|st_drink_crow (ident)
+      源: "The Beak"
+      可译: "The “鸟喙”"
+   [Anomaly-eng] st_quest_rioc.xml|st_rioc_sid (ident)
+      源: Sidorovich's supplies
+      可译: 西德洛维奇's supplies
+   [IWP] ui_st_keybinding.xml|kb_fastbolt (ident)
+      源: Bolt throw
+      可译: 螺栓 throw
+   [IWP] st_items_quest.xml|item_docs_hiden_pri_name (ident)
+      源: Strelok's manuscript
+      可译: 史特列洛克's manuscript
+
+== B. 跳过类假跳过红旗: 3 ==
+
+[NS619汉化] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all2: кто помогал появиться на свет проекту S.T.A.L.K.E.R.
+
+[IWP] 2 条，抽 2:
+   (proper) ui_st_other.xml|ui_st_conn_cdkey_in_use: Connection error: CD-Key already in use.
+   (proper) ui_st_other.xml|ui_st_conn_cdkey_disabled: Connection error: Your CD-Key is disabled. Contact customer service.
+
+== D. 裸 & 条目（宿主解析风险面，不断言）: 4 ==
+   Anomaly-rus        2
+   OP                 1
+   WOT汉化              1
