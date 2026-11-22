@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.9",
+    "version": "2.0.11",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -976,7 +976,10 @@ _SESSION_LOC_DIRS = ("mapspot", "level", "place", "zone")
 _SESSION_SKIP_DIRS = ("dialog", "news", "task", "tip", "stash", "secret",
                       "credits", "ui", "gameplay", "spawn", "npc")
 _SESSION_LIMITS = {"人物与军衔": 1500, "物品·武器·装备·神器": 500,
-                   "地点与区域": 400, "阵营与组织": 150, "变异生物": 100}
+                   "地点与区域": 400, "阵营与组织": 150, "变异生物": 100,
+                   # ★ 2.0.11 成就名/声望等级/武器属性短标签：模型单条常原样
+                   # 回显，纳入会话词表批量定译（批量带"不得保留英文"提示）。
+                   "成就·称号·属性标签": 300}
 
 # ★ 2.0.3 高频专名定译：会话词表只扫“名字型”文件（人物/物品/地点目录），
 # 正文里反复出现却不在名字型文件里的专名（组织、事件、俚语地名等）仍会
@@ -1012,6 +1015,12 @@ def session_category(rel, eid):
         return None
     if any(x in s for x in ("faction", "community")):
         return "阵营与组织"
+    # ★ 2.0.11 玩家可见短标签：成就名、声望/等级、武器属性。
+    # 必须放在 _SESSION_ITEM_DIRS 之前（gunsl_up_binoc 等含 weapon 字样的
+    # 属性表优先归到标签类，模型原样回显时由会话词表批量定译）。
+    if any(x in s for x in ("achievement", "game_relations", "binoc",
+                            "reputation", "rank")):
+        return "成就·称号·属性标签"
     if any(x in s for x in _SESSION_ITEM_DIRS):
         if k.endswith(("_descr", "_desc", "_bio", "_text", "_hint")):
             return None
@@ -1271,7 +1280,18 @@ def missing_big_numbers(src, out):
     """
     if not src or not out:
         return []
-    src_nums = set(_BIG_NUM_RE.findall(str(src)))
+    s = str(src)
+    src_nums = set(_BIG_NUM_RE.findall(s))
+    # ★ 2.0.11：型号尾号与年份区间不参与保真校验。
+    # 实测武器长段描述含 `FN FNX-45` / `developed in 2007-2009` / `2800`，
+    # 旧逻辑把型号 45、年份 2007/2009 也当金额，模型译成中文后数字对不齐，
+    # 两次重试仍判缺失 → 整段保留英文（比纯漏译更糟）。
+    # 只豁免「字母-数字」的型号尾号和「4位-4位」年份；独立金额/坐标仍严格校验。
+    for m in re.finditer(r"[A-Za-z][A-Za-z0-9]*[-‐‑‒–—]\s*(\d{3,})", s):
+        src_nums.discard(m.group(1))
+    for m in re.finditer(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b", s):
+        src_nums.discard(m.group(1))
+        src_nums.discard(m.group(2))
     if not src_nums:
         return []
     # 译文里的阿拉伯数字（去千分位逗号/空格）
@@ -3198,6 +3218,12 @@ class LlamaServer(object):
                 "--n-gpu-layers", str(self.gpu_layers),
                 "--parallel", str(self.parallel),
                 "--temp", "0.1"]
+        # ★ 2.0.11：禁用「提示词相似度选槽」。所有请求带同一段系统提示词，
+        # 相似度 0.88~0.93 全被 LCP 黏到 slot 2（实测 1621/1714 请求），
+        # 另两路空转，三路并发名存实亡。0 = 强制轮转进空闲槽。
+        # 仅当多路时加，单路无意义。
+        if self.parallel > 1:
+            args += ["--slot-prompt-similarity", "0"]
         if self.variant in GPU_VARIANTS:
             # 只要 GPU 识别所需的 I 级行（using device / offloaded N/M layers）。
             # 原来的 --verbose 把 verbosity 开到最大：实测一次运行 25 MB / 28 万行，
@@ -3612,12 +3638,21 @@ _SCRIPT_QUOTED_RE = re.compile(r"[\"']([A-Za-z0-9_][A-Za-z0-9_.\-]{1,100})[\"']"
 
 _PROTECT_FILE_HINTS = ("credits", "ogg", "music", "songs", "enc_weapons",
                        "snames", "fnames", "character_name")
+# ★ 2.0.11：冒号/破折号前必须是「短标题」——不含句末标点、长度收紧。
+# 旧式 `[^\n:：]{0,80}` 会吞掉 `Just about anyone, buddy. Think about it:`
+# 这类对话（前 80 字内有冒号就整条当标题跳过，实测 12+ 条长对话未译）。
+# 真标题（Vano: ...、MP5 — Sanitizer）冒号前短且无 .!?，仍受保护。
 _TITLE_LIKE_RE = re.compile(
-    r"^[A-Za-z0-9][^\n:：]{0,80}[:：]\s*[A-Za-z0-9]")
+    r"^[A-Za-z0-9][^\n:：.!?！？]{0,40}[:：]\s*[A-Za-z0-9]")
 _TITLE_DASH_RE = re.compile(
-    r"^[A-Za-z0-9][^\n]{0,80}[—–]\s*[A-Za-z0-9]")
+    r"^[A-Za-z0-9][^\n.!?！？—–]{0,40}[—–]\s*"
+    r"[A-Za-z0-9][^\n.!?！？]{0,40}$")
+# 型号名（MP5 "Sanitizer"、AK-74 "Рubin"）：引号前只允许最多 5 个
+# 「首字母大写的词」。旧式 `[A-Za-z0-9 ./\-]*` 会一路吞掉小写单词，把
+# `You have unlocked the "Heavy Pockets" achievement.` 这类整句英文当成
+# 型号整条跳过（实测成就解锁提示 100% 未译）。
 _MODEL_LIKE_RE = re.compile(
-    r'^[A-Z0-9][A-Za-z0-9 .\-/]*["“][^"”]{1,80}["”]')
+    r'^(?:[A-Z0-9][A-Za-z0-9\-]*[ .\-/]?){1,5}["“][^"”]{1,80}["”]')
 _CODE_LIKE_RE = re.compile(r"^[A-Z0-9][A-Z0-9 .\-/_]{1,30}$")
 _COPYRIGHT_RE = re.compile(r"^(?:©|\(c\)|copyright\b)", re.I)
 _DEBUG_LIKE_RE = re.compile(
@@ -3708,7 +3743,11 @@ def looks_like_code_or_debug(rel, text):
     if s.lower() in _DEBUG_PHRASES or _COPYRIGHT_RE.match(s):
         return True
     if _DEBUG_LIKE_RE.search(s):
-        return True
+        # ★ 2.0.11 [Say nothing] / [Issue Command] 是对话选项，不是调试标记。
+        # 只在玩家可见标签表豁免，且方括号内必须是可读英文短语（含空格）。
+        if not (is_player_facing_label(rel, s)
+                and re.fullmatch(r"\[[A-Za-z][A-Za-z ]{2,60}\]", s)):
+            return True
     if s.lower().startswith(("http://", "https://", "www.")):
         return True
     # 短代号/弹药规格：只有“全大写且没有任何小写字母”才跳过。
@@ -3746,6 +3785,25 @@ def looks_like_identifier_text(text):
         if caps <= 1:
             return True
     return False
+
+
+# ★ 2.0.11 玩家可见短标签豁免：成就名/声望等级/武器属性/对话动作这类
+# 单个英文词或 Title Case 短语，恰好和「任务/段落名」同形，被
+# looks_like_identifier_text 一律跳过（实测 IWP 129 条该译未译：
+# Radiotherapy/Enemy/Magnification/[Say nothing]）。这些表是给玩家看的 UI，
+# 必须翻译；只在下列目录豁免，新闻/物品/人物名表仍按原规则跳过。
+_PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
+                      "dialog", "relation", "reputation", "rank")
+
+
+def is_player_facing_label(rel, text=""):
+    low = (rel or "").lower().replace("\\", "/")
+    if not any(x in low for x in _PLAYER_LABEL_DIRS):
+        return False
+    s = (text or "").strip()
+    # 真对话长句本来就走正常翻译路径，这里只豁免短标签；
+    # 长度上限与 identifier 判定保持一致，避免把整段对话误判成标签。
+    return bool(s) and len(s) <= 90
 
 
 def looks_like_hard_protected_file(rel):
@@ -5279,7 +5337,9 @@ class TranslationJob(object):
         """
         hits = self._glossary_spans(text)
         if not hits:
-            return self._translate_segments(text, lang)
+            # 无强制术语时仍要透传 note：数字保真/上下文/占位符/换行等
+            # 闸门的重试指令全靠它，漏传会让重试永远无效、整条保留原文。
+            return self._translate_segments(text, lang, note=note)
 
         mapping = {}
         parts = []
@@ -5416,7 +5476,8 @@ class TranslationJob(object):
                                  detect_text_lang(bare) or lang or "rus",
                                  rel, ent.id)
         order = {"人物与军衔": 0, "阵营与组织": 1, "地点与区域": 2,
-                 "变异生物": 3, "物品·武器·装备·神器": 4}
+                 "变异生物": 3, "物品·武器·装备·神器": 4,
+                 "成就·称号·属性标签": 5}
         rows = sorted(cand.values(),
                       key=lambda x: (order.get(x[1], 9), len(x[0]), x[0]))
         kept = {}
@@ -6552,7 +6613,8 @@ class TranslationJob(object):
                 if (looks_like_code_or_debug(rel, src)
                         or looks_like_generated_noise(rel, src)
                         or looks_like_technical_text(src)
-                        or looks_like_identifier_text(src)):
+                        or (looks_like_identifier_text(src)
+                            and not is_player_facing_label(rel, src))):
                     continue
                 if self.protect_proper and looks_like_proper_text(rel, src):
                     continue
@@ -6590,7 +6652,8 @@ class TranslationJob(object):
                 if (looks_like_code_or_debug(rel, src0)
                         or looks_like_generated_noise(rel, src0)
                         or looks_like_technical_text(src0)
-                        or looks_like_identifier_text(src0)):
+                        or (looks_like_identifier_text(src0)
+                            and not is_player_facing_label(rel, src0))):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False
@@ -6638,7 +6701,8 @@ class TranslationJob(object):
                 continue
             exact = src.strip()
             if (exact in self.glossary
-                    and exact not in self.session_only_keys):
+                    and (exact not in self.session_only_keys
+                         or is_player_facing_label(rel, src))):
                 # 制作名单/音乐/武器短名即使命中了核心词条，也要服从
                 # “保护专名”；否则 credits 里的 Harris 会被改写成中文。
                 if not (self.protect_proper
@@ -6657,7 +6721,8 @@ class TranslationJob(object):
                 continue
             if (looks_like_generated_noise(rel, src)
                     or looks_like_technical_text(src)
-                    or looks_like_identifier_text(src)):
+                    or (looks_like_identifier_text(src)
+                            and not is_player_facing_label(rel, src))):
                 st["skipped"] += 1
                 continue
             if self.only_referenced and ent.id not in self._ref_counts:
@@ -6833,6 +6898,14 @@ class TranslationJob(object):
         if missed:
             self.detail("  %s：%d 条已改写，%d 条定位失败（保留原文）"
                         % (rel, applied, missed))
+        # ★ 2.0.11：UTF-8 表原地改写时同步把 XML 声明的 encoding 改成 utf-8。
+        # 旧逻辑只写字节不改声明：源码声明 windows-1251、内容却是 UTF-8 中文，
+        # 引擎若按声明解码就会乱码（实测 IWP 输出 5/5 张表声明不符）。
+        text = re.sub(
+            r'(<\?xml[^>]*?\bencoding\s*=\s*["\'])[^"\']+(["\'])',
+            r"\1utf-8\2", text, count=1, flags=re.I)
+        if not text.lstrip().startswith("<?xml"):
+            text = '<?xml version="1.0" encoding="utf-8"?>\n' + text
         data = (b"\xef\xbb\xbf" if had_bom else b"") + text.encode("utf-8")
         parent = os.path.dirname(out_path) or "."
         os.makedirs(parent, exist_ok=True)
@@ -7099,7 +7172,8 @@ class TranslationJob(object):
                 if (looks_like_code_or_debug(full, src0)
                         or looks_like_generated_noise(full, src0)
                         or looks_like_technical_text(src0)
-                        or looks_like_identifier_text(src0)):
+                        or (looks_like_identifier_text(src0)
+                            and not is_player_facing_label(rel, src0))):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False
