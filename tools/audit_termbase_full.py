@@ -43,17 +43,9 @@ _CYR2LAT = str.maketrans({
     "Ъ": "", "Ы": "Y", "Ь": "", "Э": "E", "Ю": "YU", "Я": "YA"})
 
 
-def design_tokens(s):
-    s = s.upper().translate(_CYR2LAT)
-    toks = set()
-    for m in re.finditer(r"[A-Z0-9]{2,}", s):
-        t = m.group(0).replace(".", "").lower()
-        if re.search(r"\d", t):
-            toks.add(t)
-    for m in re.finditer(r"\d{1,3}[.,]\d{1,2}\s*[xх]\s*\d{2,3}", s, re.I):
-        t = re.sub(r"\s|х", "x", m.group(0).lower()).replace(",", ".")
-        toks.add(t.replace(".", ""))
-    return toks
+from harvest_termbase_from_human import (  # noqa: E402
+    _norm_key, garbage_translation, _SRC_VEHICLE_RE,
+    _design_tokens, _tokens_match)
 
 
 def sha(p):
@@ -168,14 +160,15 @@ def main():
     for cat in soft_new_cats:
         n_bad = 0
         for k, v in data.get(cat, {}).items():
-            if ZH_VEHICLE.search(v) and not ZH_VEHICLE.search(k):
+            if ZH_VEHICLE.search(v) and not _SRC_VEHICLE_RE.search(k):
                 add("high", "soft_vehicle", cat, k, v)
                 n_bad += 1
-            ks, zs = design_tokens(k), design_tokens(v)
-            if ks and zs and not (ks & zs):
+            ks = _design_tokens(k)
+            zs = _design_tokens(v, merge_space=True)
+            if ks and zs and not _tokens_match(ks, zs):
                 add("medium", "soft_design_drift", cat, k, v)
                 n_bad += 1
-            if CYR.search(v):
+            if CYR.search(v) and not CYR.search(k):
                 add("medium", "soft_cyr_leftover", cat, k, v)
                 n_bad += 1
         print("  %s: %d 条, 复检命中 %d" % (cat, len(data.get(cat, {})), n_bad))
@@ -190,7 +183,7 @@ def main():
             if len(k.split()) > 8 or re.search(r"[.!?]$", k.strip()):
                 add("medium", "canon_sentence", cat, k, v)
                 bad += 1
-            if ZH_VEHICLE.search(v) and not ZH_VEHICLE.search(k):
+            if ZH_VEHICLE.search(v) and not _SRC_VEHICLE_RE.search(k):
                 add("high", "canon_vehicle", cat, k, v)
                 bad += 1
         print("  %s: %d 条, 抽检命中 %d" % (cat, len(tbl), bad))

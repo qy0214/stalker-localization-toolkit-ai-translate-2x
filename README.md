@@ -1,4 +1,4 @@
-# ai_translate 2.0.20
+# ai_translate 2.0.21
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.21 全库错误清理 + 垃圾口径修正**（用户指令"错的就不要存在"）：新工具 `tools/purge_bad_translations.py` 全库扫描确定性错误（空译文/译文=原文/译文无中文/西里尔残留/载具名词误植/型号漂移），**删除 14 条真错**（9x39→9x19 口径错、5.45x39 7Н22→"5点45分"、ЭО-20→EO-19、12x70→12x76、12 倍镜→6.0x、ОГ-7B→OG-7V 等），全部留痕备份可回滚（`audit-reports/purged_backup_20261123.json` + `PURGE_20261123.md`）。清理预览暴露**垃圾过滤器三处口径缺陷**并修正：①载具误植检查只搜源文中文载具词——俄/英文源（ВЕРТОЛЁТ/helicopter）的正确翻译全被误判，改双语词根豁免；②型号转写 Р 形近映射 P 与音译 R 冲突、mm 单位/中文量词/千分位/空格分隔型号未归一——`_design_tokens` 全面修正 + `_tokens_match` 数字核心/字母骨架/前缀包含判定（31 案例回归）；③垃圾守卫从"仅软参考源"放开为**全源生效**（purge-重收割迭代至收敛 0）。收割回归 +95 条（此前被误滤的合法条目）。另修复 IWP 产物审计暴露的两处插件缺陷：数字/型号闸门**豁免色码内数字**（m249 的 109/193 色码分量曾被补成注记）；专名保护命中时新增**硬层子串替换**（`Vasya "Boar"`→`瓦夏 "野猪"`，此前整条保留英文）。词库 36323→**36477** 条，strict 0 blocking/0 high，全量深度审计通过。
 - **2.0.20 多源语料收割 + 查找性能修复**：词库 21065→**36323** 条。新增语料源：①**OGSR Gunslinger 人工汉化**（原文从 configs.db 经 xrkit 解包，中文在 eng 槽）约 5912 条进 `Gunslinger 参考` 软层——GA 汉化存在语义级错译（榴弹译成"重型坦克"、M433→M406 型号漂移），配套**垃圾过滤器**（载具名词误植 + 型号 token 漂移，西里尔转拉丁比对）；②**CoP 官方中文**（主机版官中 × CoP 1.6.02 补丁包 rus + eng DB 解包）1432 条入标准分类；③**NS2016 汉化** × NS7 rus 同 ID 补缺；④bilibili wiki 专有名词/神器表 24 条（`tools/ingest_wiki_terms.py`）；⑤**GAMMA 汉化组 GSCTP** × Anomaly eng/rus 同 ID 配对约 7876 条进 `GAMMA 参考` 软层。收割工具新增守卫链：占位符集合一致、norm 撞键去重（ё/引号/破折号折叠）、canon 词干冲突（audit 同口径 stemmer + 数字词保护）、跨语言槽位配对索引（eng/rus/chs/cht）。另修 `termbase_lookup` 在 3.6 万条下 O(N) casefold 全扫（3.656ms→**0.125ms**/次，模块级归一索引）。全量深度审计（`tools/audit_termbase_full.py`，五层）+ strict 审计均 0 blocking/0 high。
 - **2.0.19 人工汉化语料收割**：新增 `tools/harvest_termbase_from_human.py`——从 AREA 人工汉化包与 NS7 9月6日官方汉化补丁收割短条目术语对 1.2 万+（人物/地点/物品/界面/百科；引号短语键/≥5 词长描述/占位符不符按审计规则剔除，防收割短语遮蔽组件术语查找）；**NS7 官方译名为权威**，同源冲突覆盖词库旧值（用户确认），AREA 仅补缺；词库 9181→21074 条，strict 审计 0 blocking/0 high。
 - **2.0.18** 2.0.15 快照复核补充修复：①**出口级换行对齐**——换行闸门在流程前段，其后数字/完整性/残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行、全库 280 条换行丢失），写回前做最后一次 `restore_linebreaks` 对齐，任何闸门都破坏不了换行结构；②**型号语境窗口 ±24→±48 + 全源兜底**——武器描述里型号与语境词相距很远，实测 "AK-100 series from the AK-74M" 被漏检（AK-100→AK-74M 未拦）；语境词补 cartridge/sniper/caliber/series/barrel；③词库补 `Accuracy International→精准国际`（品牌名被翻成"精度 International"）。
@@ -157,22 +158,22 @@ gh release create v2.0.12 dist/ai_translate_plugin_v2.0.12_install.zip --title "
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.20`
+- 插件版本：`ai_translate 2.0.21`
 - 宿主插件 API：`1`
 - 插件入口 SHA-256：
-  `f112014dfc2df35c9b974adafa0f091b5649a423407d293ff5ece8c6911a4e5e`
+  `890df1feba76527f274399bcf440d9ac1bd1107423c302b36e300c2e7feb83bd`
 - 当前 zip SHA-256：
-  `2796285e286638f00a3eb796d2d394b70ef962dc884adc37005f972585e43b67`
+  `ed42917ff41d09ffe60eb1e7775bc77dac6ee03ba4e6489226ab5e6bbc5a68d1`
 - 平台安装包 SHA-256（顶层 `ai_translate/`）：
-  `9d4ed1545f015428c62fa500c138e095962e119439973f6b84534285d7a849ba`
-- 术语规模：`glossary_builtin.json` 36323 条 / `stalker_termbase.json` 36323 条；
-  13 个分类，两个文件条目数一致；canon 4282 / names 3250 / technical 18 /
-  reference 28773（Gunslinger 参考、GAMMA 参考、ANTHOLOGY 参考、百科/任务/
+  `ac8cf8dfba5973e70298d21d541dc274ebc20c84d85912eb94b3cbacaf706037`
+- 术语规模：`glossary_builtin.json` 36477 条 / `stalker_termbase.json` 36477 条；
+  13 个分类，两个文件条目数一致；canon 4287 / names 3250 / technical 18 /
+  reference 28922（Gunslinger 参考、GAMMA 参考、ANTHOLOGY 参考、百科/任务/
   界面/新闻为软提示层）。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.20.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.21.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

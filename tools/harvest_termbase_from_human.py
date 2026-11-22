@@ -216,6 +216,15 @@ def strip_lang(rel):
 # 物品/术语名里不可能出现的载具/大型兵器名词（译成它们=错译）：
 _ZH_VEHICLE_RE = re.compile(
     r"坦克|直升机|战斗机|轰炸机|驱逐舰|巡洋舰|潜艇|军舰|装甲车|航母|火炮阵地")
+# ★ 2026-11-23：源侧载具词根（俄/英/俚语）。此前载具误植检查只搜源文的
+# **中文**载具词——俄/英文源（ВЕРТОЛЁТ/helicopter）的**正确翻译**全部被
+# 误判错译（直升机飞行员、搜查直升机、вертушка→直升机 等数百条被错杀，
+# GA/GAMMA 收割时已误滤一批）。载具名必须双语豁免。
+_SRC_VEHICLE_RE = re.compile(
+    r"верт|helicopter|chopper|heli\b|helis|tank|танк|БТР|БРДМ|бтр|брдм|"
+    r"BRDM|BTR|armored|брон|корабл|ship\b|boat|самол|aircraft|plane|"
+    r"Ми-|Mi-2|Mi-24|Ан-|Су-|дирижаб|грузовик|truck|автомобил|vehicle|"
+    r"transport|бронемашин|вертушк|vertush", re.I)
 # 西里尔字母 → 拉丁转写（型号比对用）：ПГ-7ВЛ ≈ PG-7VL
 _CYR2LAT = str.maketrans({
     "А": "A", "Б": "B", "В": "V", "Г": "G", "Д": "D", "Е": "E", "Ё": "E",
@@ -226,27 +235,129 @@ _CYR2LAT = str.maketrans({
 
 
 def _design_tokens(s):
-    """抽取型号 token（西里尔转拉丁、去点号、小写），用于比对。"""
+    """抽取型号 token（西里尔转拉丁、去点号、小写），用于比对。
+
+    ★ 2026-11-23 三处口径修正（IWP 清理预览暴露的误杀根因）：
+      * mm/см 单位后缀剥离（Ствол 7.62 → 7.62mm 口径枪管）；
+      * 整数 NxM 口径（fmj box (150x3) → FMJ弹药箱（150发x3））；
+      * 中文量词剥离（150发x3 → 150x3）。
+    """
+def _design_tokens(s, merge_space=False):
+    """抽取型号 token（西里尔转拉丁、去点号、小写），用于比对。
+
+    ★ 2026-11-23 三处口径修正（IWP 清理预览暴露的误杀根因）：
+      * mm/см 单位后缀剥离（Ствол 7.62 → 7.62mm 口径枪管）；
+      * 整数 NxM 口径（fmj box (150x3) → FMJ弹药箱（150发x3））；
+      * 中文量词剥离（150发x3 → 150x3）。
+    merge_space=True 用于**译文侧**：空格分隔型号合并（.45 ACP→45ACP）、
+    千分位含空格归一（15, 000→15000）——只对中文译文生效，源侧合并会
+    产生 "10AND"/"3PROJECT" 类伪 token（10 and 2 roubles 案例）。
+    """
     s = s.upper().translate(_CYR2LAT)
+    # 中文量词/单位与拉丁单位后缀在 token 提取前剥离
+    s = re.sub(r"(?<=\d)(?:发|枚|发装|_rounds?|rounds?|mm|cm|мм|см)(?=\b|[^A-Za-z0-9])",
+               "", s, flags=re.I)
+    # 150发x3 → 150X3：量词夹在数字与口径乘号之间时直接删除
+    s = re.sub(r"(?<=\d)\s*(?:发|枚|发装)\s*(?=[xх×])", "", s, flags=re.I)
+    if merge_space:
+        # 千分位归一（含空格形态：15, 000 → 15000）
+        s = re.sub(r"(\d),\s*(?=\d{3}\b)", r"\1", s)
+        # 空格分隔型号合并（.45 ACP → 45ACP）
+        s = re.sub(r"\b(\d{1,4})\s+(?=[A-Z]{2,}\b)", r"\1", s)
+    else:
+        s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
     toks = set()
     for m in re.finditer(r"[A-Z0-9]{2,}", s):
         t = m.group(0).replace(".", "").lower()
         if re.search(r"\d", t):
+            # 前导零归一（0100→100；(0,100)/(0, 100) 两形态对齐；
+            # 03svu→3svu 与源侧 03→3 对齐——token 内数字段统一去前导零）
+            t = re.sub(r"\b0+(?=\d)", "", t)
+            if t.isdigit():
+                t = str(int(t))
+            # 倍率 40x→4x（4.0x 断词形态主循环产生 0x 噪声，由口径正则补）
+            t = re.sub(r"^([1-9])0(x)$", r"\1\2", t)
             toks.add(t)
-    # 口径形 7.62x39 / 5.7x28：点号去掉后统一
-    for m in re.finditer(r"\d{1,3}[.,]\d{1,2}\s*[xх]\s*\d{2,3}",
+    # 口径形 7.62x39 / 5.7x28 / 150x3 / 4.0x：点号去掉后统一
+    for m in re.finditer(r"\d{1,3}[.,]?\d{0,2}\s*[xх×](?:\s*\d{1,3})?",
                          s, re.I):
-        t = re.sub(r"\s|х", "x", m.group(0).lower()).replace(",", ".")
-        toks.add(t.replace(".", ""))
+        t = re.sub(r"\s|х|×", "x", m.group(0).lower()).replace(",", ".")
+        t = t.replace(".", "")
+        t = re.sub(r"\b0+(?=\d)", "", t)
+        # 倍率 4.0x→40x→4x（Оптический прицел 4х → 4.0x 光学瞄准镜）
+        t = re.sub(r"^([1-9])0(x)$", r"\1\2", t)
+        toks.add(t)
     return toks
+
+
+def _num_core(t):
+    return re.sub(r"\D", "", t) or t
+
+
+def _tokens_match(ks, zs):
+    """型号 token 匹配判定（IWP 清理口径，逐条经 31 案例回归）。
+
+    1) 精确交集 / p-r 形近互换（ГП-10Р→GP-10R）；
+    2) token 前缀包含：aks74⊃ak74、18⊂18c、60⊂60hz（转写省略连字符/
+       复数后缀变体；要求短侧 ≥2 字符且为长侧**前缀**——中缀不算，
+       否则 7Н22→5点45分 会被 45⊂545x39 放行）；
+    3) 单 token：数字核心一致（DX10.1→DirectX 10.1 的 101）且字母骨架
+       为子序列（dx ⊂ directx），而 ПГ-7ВМ→OG-7V 骨架 pgvm∉ogv 仍拦；
+    4) 多 token 覆盖率：源 ≥2 个型号时译文须逐一有数字核心前缀对应——
+       5.45x39 M995→「5.56 美元」只保住一个口径，照样拦。
+    """
+    if ks & zs:
+        return True
+
+    def swap(t):
+        return t.replace("p", "r") if "p" in t else t.replace("r", "p")
+
+    ks2 = {swap(t) for t in ks}
+    zs2 = {swap(t) for t in zs}
+    if bool(ks2 & zs2) or bool(ks & zs2) or bool(ks2 & zs):
+        return True
+    # ★ 多 token（任一侧 ≥2）：必须逐 token 数字核心前缀对应——
+    # 5.45x39+7Н22 →「5点45分」只保住 45、5.56x45+M995 →「5.56 美元」
+    # 只保住 5.56，均拦截。优先于前缀包含（45⊂45x39 会把这类放行）。
+    if len(ks) >= 2 or len(zs) >= 2:
+        zcores = {_num_core(t) for t in zs if _num_core(t)}
+        kcores = {_num_core(t) for t in ks if _num_core(t)}
+        if len(zcores) >= 2 or len(kcores) >= 2:
+            covered = sum(
+                1 for ca in kcores
+                if any(ca.startswith(z) or z.startswith(ca) for z in zcores))
+            return covered >= max(len(kcores), len(zcores))
+    # 单 token 对单 token：前缀包含 / 数字核心一致 + 字母骨架按序锚定
+    if len(ks) == 1 and len(zs) == 1:
+        a, b = next(iter(ks)), next(iter(zs))
+        short, long = (a, b) if len(a) <= len(b) else (b, a)
+        if len(short) >= 2 and long.startswith(short):
+            return True
+        na, nb = _num_core(a), _num_core(b)
+        if na and nb and (na == nb or na.startswith(nb) or nb.startswith(na)):
+            aa = re.sub(r"\d", "", a)
+            bb = re.sub(r"\d", "", b)
+            short_a, long_a = (aa, bb) if len(aa) <= len(bb) else (bb, aa)
+            if not short_a or len(short_a) < 2:
+                # 空骨架（DX10.1→101）放行；单字符骨架（vm vs v）无判别力，
+                # ПГ-7ВМ→OG-7V 这类真漂移必须拦
+                return not short_a
+            # 骨架按序锚定长串首字符（dx ⊂ directx ✓；pgvm vs ogv ✗）
+            if long_a[:1] == short_a[:1] and all(
+                    c in long_a for c in short_a):
+                return True
+            return False
+    return False
 
 
 def garbage_translation(src, zh):
     """True = 译文存在可机械判定的语义级错译特征，跳过不入库。"""
-    if _ZH_VEHICLE_RE.search(zh) and not _ZH_VEHICLE_RE.search(src):
+    if _ZH_VEHICLE_RE.search(zh) and not _ZH_VEHICLE_RE.search(src) \
+            and not _SRC_VEHICLE_RE.search(src):
         return True                     # 物品/术语被译成载具/大型兵器
-    ks, zs = _design_tokens(src), _design_tokens(zh)
-    if ks and zs and not (ks & zs):
+    ks = _design_tokens(src)
+    zs = _design_tokens(zh, merge_space=True)
+    if ks and zs and not _tokens_match(ks, zs):
         return True                     # 型号完全对不上（M433→M406 型漂移）
     return False
 
@@ -322,9 +433,10 @@ def harvest(src_root, zh_root, auth=1, cat_override=None):
             #   否则精确替换会破坏换行对齐/脚本变量。
             if sorted(PH.findall(sv)) != sorted(PH.findall(zv)):
                 continue
-            # 垃圾译文过滤只用于软参考源（Gunslinger 等）：NS7 权威数据
-            # 不过滤，避免载具名词/型号规则误伤合法译名。
-            if cat_override and garbage_translation(sv, zv):
+            # ★ 2026-11-23：垃圾过滤全源生效（口径经 31 案例回归零误杀，
+            # 用户指令"错的就不要存在"）。NS7 权威性体现在**冲突覆盖**，
+            # 不体现在放行错译。
+            if garbage_translation(sv, zv):
                 continue
             pairs[(cat, sv, auth)].add(zv)
     return pairs

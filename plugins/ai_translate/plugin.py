@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.20",
+    "version": "2.0.21",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1312,6 +1312,10 @@ def missing_big_numbers(src, out):
     if not src or not out:
         return []
     s = str(src)
+    # ★ 2.0.21（IWP 产物审计）：色码 %c[r,g,b,a] 内的数字是渲染参数，
+    # 不参与保真校验——实测 m249 百科的 109/193 为 %c 分量，被当缺失
+    # 金额补成「（原文数字 109）（原文数字 193）」注记污染译文。
+    s = re.sub(r"%c\[[^\]]*\]", " ", s)
     src_nums = set(_BIG_NUM_RE.findall(s))
     # ★ 2.0.11：型号尾号与年份区间不参与保真校验。
     # 实测武器长段描述含 `FN FNX-45` / `developed in 2007-2009` / `2800`，
@@ -2367,6 +2371,7 @@ def load_term_layers():
 
 _BUILTIN_FLAT_CACHE = {"key": None, "data": {}}
 _TB_LOW_INDEX = {"key": None, "low": {}}   # termbase casefold 归一索引（审计 F 层优化）
+_PARTIAL_GLOSS_CACHE = {"key": None, "words": []}   # 硬层专名词映射（保护条目子串替换）
 
 
 def termbase_lookup(text):
@@ -2427,6 +2432,58 @@ def termbase_lookup(text):
     if low in blow:
         return blow[low]
     return None
+
+
+def partial_glossary_translation(src):
+    """专名保护命中但整串无词库键时，对串内硬层专名词做子串替换。
+
+    ★ 2.0.21（IWP 产物审计）：`Vasya "Boar"`（人物名+引号绰号）整串
+    不在词库 → 走专名保护原样保留英文，但 "Boar" 在 canon 有权威译名
+    "野猪"。约束（保守）：
+      * 只替换 canon/names 硬层词（reference/technical 不参与）；
+      * 词长 ≥3 且为 Title Case/全大写（专名形态，避免 doctor/case 类
+        普通词误换）；
+      * 整串 ≤60 字符（人物/物品短名条目），长句正文不适用；
+      * 精确词边界替换，一个词都不命中返回 None（调用方继续保护跳过）。
+    """
+    s = (src or "").strip()
+    if not s or len(s) > 60:
+        return None
+    global _PARTIAL_GLOSS_CACHE
+    data = load_termbase_data()
+    meta_layers = (data.get("_meta") or {}).get("layers") or {}
+    try:
+        _st = os.stat(_TERMBASE_PATH)
+        _k = (_st.st_mtime_ns, _st.st_size)
+    except OSError:
+        _k = None
+    if _PARTIAL_GLOSS_CACHE.get("key") != _k:
+        # ★ 注意：load_term_layers 的 canon/names set 装的是**词条键**，
+        # 不是分类名——硬层分类名要从 _meta.layers 取。
+        layers = set(meta_layers.get("canon") or []) | \
+            set(meta_layers.get("names") or [])
+        words = []
+        for cat, tbl in data.items():
+            if cat.startswith("_") or not isinstance(tbl, dict) \
+                    or cat not in layers:
+                continue
+            for k, v in tbl.items():
+                k = str(k)
+                if len(k) < 3 or not re.search(r"[A-Za-z]", k):
+                    continue
+                if not (k[:1].isupper() or k.isupper()):
+                    continue
+                words.append((k, str(v)))
+        _PARTIAL_GLOSS_CACHE = {"key": _k, "words": words}
+    out = s
+    changed = False
+    for k, v in _PARTIAL_GLOSS_CACHE.get("words") or []:
+        if k in out:
+            out2 = re.sub(rf"(?<!\w){re.escape(k)}(?!\w)", v, out)
+            if out2 != out:
+                out = out2
+                changed = True
+    return out if changed else None
 
 
 def termbase_exact_translation(text):
@@ -4842,6 +4899,9 @@ def missing_model_tokens(src, out):
         return []
     missing = []
     seen = set()
+    # ★ 2.0.21：色码 %c[r,g,b,a] 内数字不是型号，先剥离再扫（同
+    # missing_big_numbers 的色码豁免口径）。
+    src = re.sub(r"%c\[[^\]]*\]", " ", str(src))
     for m in _MODEL_TOKEN_RE.finditer(src):
         tok = m.group(0).strip()
         if tok in seen or len(tok) < 4:
@@ -7326,7 +7386,15 @@ class TranslationJob(object):
                     st["translated"] += 1
                     continue
             if self.protect_proper and looks_like_proper_text(rel, src):
-                st["skipped"] += 1
+                # ★ 2.0.21：保护命中先试硬层子串替换（Vasya "Boar"→
+                # 瓦西娅"野猪" 形态），词库无可用词才保留原文。
+                _p = (partial_glossary_translation(src)
+                      if src not in self.glossary else None)
+                if _p is not None and _p != src:
+                    changes[ent.id] = (lang, _p)
+                    st["translated"] += 1
+                else:
+                    st["skipped"] += 1
                 continue
             use_lang = self.src_lang if self.src_lang != "auto" else lang
             # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
@@ -8047,6 +8115,13 @@ class TranslationJob(object):
                 rep[send] = _exact
                 continue
             if self.protect_proper and looks_like_proper_text(rel, send):
+                # ★ 2.0.21：硬层子串替换仅限 UTF-8 表（cp1251 写回塞中文
+                # 会 UnicodeEncodeError，与术语直取同口径）。
+                if enc.lower() in ("utf-8", "utf8", "utf-8-sig"):
+                    _p = (partial_glossary_translation(send)
+                          if send not in self.glossary else None)
+                    if _p is not None and _p != send:
+                        rep[send] = _p
                 continue
             if self._cancelled():
                 return None
