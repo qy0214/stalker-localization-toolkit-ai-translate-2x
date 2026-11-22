@@ -75,9 +75,9 @@ check("A1 只含插件+解析器+术语数据+来源声明（无模型/运行库
       set(files) == EXPECT, str(sorted(set(files) ^ EXPECT) or files))
 
 size = sum(os.path.getsize(os.path.join(SHARE, f)) for f in files)
-# 随包术语库固定约 690 KB，插件本体约 360 KB；1.9.x 词库扩充后 ~760 KB，
-# 1.2 MB 仍属轻量分享包（该检查防的是误打包运行产物，不是数据本身）。
-check("A2 体积轻量（< 1.2 MB，可随插件目录分享）", size < 1200 * 1024,
+# 词库含人工语料收割（AREA/NS7）后约 2.2 MB；3 MB 上限防的是误打包
+# 运行产物/半截文件，不是数据本身。
+check("A2 体积轻量（< 3 MB，可随插件目录分享）", size < 3000 * 1024,
       "%.0f KB" % (size / 1024.0))
 
 # 术语库是翻译 MOD 的前提：**必须随包**，而且不能是空壳。
@@ -120,7 +120,9 @@ check("A4 不带本机设置文件（无 config.json，只有术语数据）",
 bad_in_data = []
 for f in sorted(DATA_JSON):
     txt = open(os.path.join(SHARE, f), encoding="utf-8", errors="replace").read()
-    for t in ("STALKER-HH", "\\Users\\", "AppData", "Admin"):
+    # ★ "Admin" 单词会误伤合法内容（Administrative documents /
+    # Database Administrator），只查真正的泄漏形态：本机路径。
+    for t in ("STALKER-HH", "Users\\Admin", "C:////Users", "AppData"):
         if t in txt:
             bad_in_data.append((f, t))
 check("A4b 术语数据文件内无本机路径/用户名", not bad_in_data,

@@ -46,7 +46,7 @@ def make_job():
 
 
 def t_version():
-    check("version:2.0.18", m.PLUGIN_INFO["version"] == "2.0.18")
+    check("version:2.0.19", m.PLUGIN_INFO["version"] == "2.0.19")
 
 
 def t_latin_names():

@@ -1,4 +1,4 @@
-# ai_translate 2.0.18
+# ai_translate 2.0.19
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.19 人工汉化语料收割**：新增 `tools/harvest_termbase_from_human.py`——从 AREA 人工汉化包与 NS7 9月6日官方汉化补丁收割短条目术语对 1.2 万+（人物/地点/物品/界面/百科；引号短语键/≥5 词长描述/占位符不符按审计规则剔除，防收割短语遮蔽组件术语查找）；**NS7 官方译名为权威**，同源冲突覆盖词库旧值（用户确认），AREA 仅补缺；词库 9181→21074 条，strict 审计 0 blocking/0 high。
 - **2.0.18** 2.0.15 快照复核补充修复：①**出口级换行对齐**——换行闸门在流程前段，其后数字/完整性/残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行、全库 280 条换行丢失），写回前做最后一次 `restore_linebreaks` 对齐，任何闸门都破坏不了换行结构；②**型号语境窗口 ±24→±48 + 全源兜底**——武器描述里型号与语境词相距很远，实测 "AK-100 series from the AK-74M" 被漏检（AK-100→AK-74M 未拦）；语境词补 cartridge/sniper/caliber/series/barrel；③词库补 `Accuracy International→精准国际`（品牌名被翻成"精度 International"）。
 - **2.0.17** 2.0.15 新译文复核的 3 处修复（59 条漏译全部定位到根因）：①**调试行正则误伤**——`_DEBUG_LIKE_RE` 的 `FAILED\b` 在 re.I 下命中叙述词 "failed"、`teleport\w*` 命中 "teleport closer"，正常叙事被整条跳过（12 条）；改为 FAILED 大小写敏感、teleport 只认 `teleport_…`/`teleport:` 标识符形态；②**标题规则误伤**——`"Men, take note: ..."` 等叙述句被 `_TITLE_LIKE_RE` 当标题整段跳过（31 条）；冒号前段含逗号/引号不再算标题（字符集白名单收紧）；③**占位符闸门短路**——含 `$clr_N`/`%c[...]`/`%s` 的条目占位符被模型破坏时旧版直接整条保留英文（20 条）；新增第三级切短块兜底（`_force_sliced`，与完整性闸门同模式）。另修 `missing_big_numbers` 集合迭代顺序不确定（补数字位置漂移）。
 - **2.0.16** st_characters.xml 人物绰号专项：97 条绰号/军衔经潜行者社区资料逐条核实收录（杰格佳廖夫/祖鲁/瓦诺/洛基/酒保/苏丹/卡丹/斯纳格/夏威夷人/松鸡/布拉瓦/斯巴达克斯/豺狼等，eng 键对齐词库俄文原形译名保证 eng/rus 一致）；纠正 11 处误译（Nitro→硝基、100 Rads→辐射100、Глухарь→松鸡、Sickle→镰刀、Walrus→海象、Ashot→阿肖特、Kremen→火石、Tihiy→季希、Cherniy→黑子、Bulava→布拉瓦、Gazon→加宗）；4 组大小写/跨类同源冲突按审计规则修正（warrant officer→准尉等，引号形态区分昵称与普通词）。词库 9095→9179，strict 口径 0 冲突。根因：单人名短条目无上下文，模型原样回显且切片兜底对 ≤100 字符主动放弃——词库直取是最确定解。test_2015 扩至 22 项（词库断言改结构化校验）。
