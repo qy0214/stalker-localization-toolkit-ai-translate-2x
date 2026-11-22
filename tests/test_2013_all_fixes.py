@@ -24,7 +24,7 @@ def check(name, cond, detail=""):
 
 
 def t_version():
-    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15", "2.0.16", "2.0.17", "2.0.18", "2.0.19", "2.0.20"))
+    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15", "2.0.16", "2.0.17", "2.0.18", "2.0.19", "2.0.20", "2.0.21"))
 
 
 def t_en_profanity():

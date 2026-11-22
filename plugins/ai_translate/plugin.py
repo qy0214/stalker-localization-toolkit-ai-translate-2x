@@ -3970,10 +3970,17 @@ _TECH_CALIBER_RE = re.compile(
 
 
 def looks_like_technical_text(text):
-    """口径/弹药/尺寸类整串：只做技术串保护，不当普通正文。"""
+    """口径/弹药/尺寸类整串：只做技术串保护，不当普通正文。
+
+    ★ 2.0.21（全 MOD 重放审计）：含**句末标点**的串是正文（实测 NS7
+    'Магазин на 10 патронов калибра 10.3x45мм.'——弹匣描述带口径被整条
+    跳过），尾部句号/问号排除。
+    """
     s = str(text or "").strip()
     if not s or len(s) > 60 or re.search(r"[。！？!?；;]", s):
         return False
+    if re.search(r"[.。！？!?]\s*$", s) and len(s) > 20:
+        return False                     # 句末标点 = 句子，非纯规格串
     if _TECH_SPEC_RE.match(s) or _TECH_CALIBER_RE.match(s):
         return True
     return bool(re.search(r"\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?", s))
@@ -4091,7 +4098,14 @@ def looks_like_identifier_text(text):
 # 必须翻译；只在下列目录豁免，新闻/物品/人物名表仍按原规则跳过。
 _PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
                       "dialog", "relation", "reputation", "rank",
-                      "quick_menu", "companion")
+                      "quick_menu", "companion",
+                      # ★ 2.0.21（全 MOD 重放审计）：以下目录的短串是
+                      # 玩家可见正文，实测被 identifier 误跳（WOT 武器
+                      # 升级名 'Synthetic barrel thickener'、新闻碎片
+                      # 'a merc'、UI 'Dismissable'/'March'）
+                      "news", "dynamic_news", "pda", "options",
+                      "equipment", "quests", "loadscreen", "land_names",
+                      "weapons_upgrades", "upgrades", "barter", "cryray")
 
 # ★ 2.0.12：全大写短标签的豁免目录。比 _PLAYER_LABEL_DIRS 更窄——
 # binoc（武器属性表）里的 NVIDIA DLSS 是真型号缩写，必须继续保护，
@@ -4099,7 +4113,10 @@ _PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
 # 全大写命令/标题（FOLLOW ME、DO NOT LOOT CORPSES、S.C.H.O.L.A.R.）。
 _UPPER_LABEL_DIRS = ("achievement", "game_relations", "relation",
                      "reputation", "rank", "quick_menu", "companion",
-                     "dialog")
+                     "dialog",
+                     # ★ 2.0.21：新闻/任务/加载屏的全大写标题是玩家正文
+                     # （'WHO TOOK MY STASH?!!!'、'NIMBLE'S HANDBOOK'）
+                     "news", "dynamic_news", "quests", "loadscreen")
 
 
 def is_player_facing_label(rel, text=""):
@@ -4131,8 +4148,16 @@ def looks_like_proper_text(rel, text):
         return True
     if hint == "enc_weapons" and len(s) <= 40 and len(s.split()) <= 6:
         return True
-    if (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
-            or _MODEL_LIKE_RE.match(s)):
+    # ★ 2.0.21（全 MOD 重放审计）：_MODEL_LIKE 只对短串生效——长正文
+    # （The "underwear" of an exoskeleton...）引号紧跟 Title 词也会命中
+    # 型号形态，实测整段物品描述被跳过。>90 字符或含句末标点不判型号。
+    # ★ _TITLE_LIKE/_TITLE_DASH 同口径收口：长句不是标题（'The situation
+    # is this: ...' 实测整段漏译）；玩家可见目录（quests/news/dialog 等）
+    # 的冒号标题是任务名/新闻标题，送翻不保护。
+    _label_dir = any(x in low for x in _PLAYER_LABEL_DIRS)
+    if not _label_dir and (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
+                           or (_MODEL_LIKE_RE.match(s) and len(s) <= 90
+                               and not re.search(r"[.!?。！？]\s*[\"”»]?\s*$", s))):
         return True
     if len(s) <= 30 and s.isupper() and any(c.isalpha() for c in s):
         # ★ 2.0.7：只保护拉丁字母的型号/缩写（NVIDIA DLSS、AK-74）。
@@ -7360,6 +7385,25 @@ class TranslationJob(object):
             if looks_like_code_or_debug(rel, src):
                 st["skipped"] += 1
                 continue
+            # ★ 2.0.21（全 MOD 重放审计）：术语直取/句式直译提前到
+            # noise/tech/identifier 判定之前——词库整串命中 = 明确的
+            # 翻译意图，任何筛选都不该拦（实测弹药名 '12x76 "Arrow"
+            # slugs' 被 technical 跳过、WOT 升级名被 identifier 跳过，
+            # 而词库均有同形态译名）。credits/音乐等强保护文件除外。
+            if not looks_like_hard_protected_file(rel):
+                _exact = termbase_exact_translation(src) \
+                    if src not in self.glossary else None
+                if _exact is not None and _exact != src:
+                    changes[ent.id] = (lang, _exact)
+                    st["translated"] += 1
+                    continue
+                # ★ 2.0.13 通用新闻句式：固定英文句式 + 词库名词零成本直译。
+                if src not in self.glossary:
+                    _pat = pattern_translate(src, termbase_exact_translation)
+                    if _pat is not None:
+                        changes[ent.id] = (lang, _pat)
+                        st["translated"] += 1
+                        continue
             if (looks_like_generated_noise(rel, src)
                     or looks_like_technical_text(src)
                     or (looks_like_identifier_text(src)
@@ -7368,23 +7412,6 @@ class TranslationJob(object):
                 continue
             if self.only_referenced and ent.id not in self._ref_counts:
                 continue
-            # ★ 2.0.7 术语优先：整条命中随包词库（БАРМЕН→酒保等）直接取译名，
-            # 不再当"不可译专名"跳过；库里没有的才走保护判定/模型。
-            # 用户/会话词库已给译名时不介入——尊重用户选择与保护专名语义。
-            _exact = termbase_exact_translation(src) \
-                if src not in self.glossary else None
-            if _exact is not None and _exact != src:
-                changes[ent.id] = (lang, _exact)
-                st["translated"] += 1
-                continue
-            # ★ 2.0.13 通用新闻句式：固定英文句式 + 词库名词零成本直译。
-            # 只对 ASCII 英文短句生效，名词不在词库就返回 None 照常送模型。
-            if src not in self.glossary:
-                _pat = pattern_translate(src, termbase_exact_translation)
-                if _pat is not None:
-                    changes[ent.id] = (lang, _pat)
-                    st["translated"] += 1
-                    continue
             if self.protect_proper and looks_like_proper_text(rel, src):
                 # ★ 2.0.21：保护命中先试硬层子串替换（Vasya "Boar"→
                 # 瓦西娅"野猪" 形态），词库无可用词才保留原文。
