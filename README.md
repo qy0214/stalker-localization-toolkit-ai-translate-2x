@@ -1,4 +1,4 @@
-# ai_translate 2.0.17
+# ai_translate 2.0.18
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件。
 基于 Hy-MT2 / llama.cpp 在本机完成 X-Ray 文本 XML、cfgxml、ltx 与脚本的翻译，
@@ -8,6 +8,7 @@
 
 ## 版本迭代
 
+- **2.0.18** 2.0.15 快照复核补充修复：①**出口级换行对齐**——换行闸门在流程前段，其后数字/完整性/残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行、全库 280 条换行丢失），写回前做最后一次 `restore_linebreaks` 对齐，任何闸门都破坏不了换行结构；②**型号语境窗口 ±24→±48 + 全源兜底**——武器描述里型号与语境词相距很远，实测 "AK-100 series from the AK-74M" 被漏检（AK-100→AK-74M 未拦）；语境词补 cartridge/sniper/caliber/series/barrel；③词库补 `Accuracy International→精准国际`（品牌名被翻成"精度 International"）。
 - **2.0.17** 2.0.15 新译文复核的 3 处修复（59 条漏译全部定位到根因）：①**调试行正则误伤**——`_DEBUG_LIKE_RE` 的 `FAILED\b` 在 re.I 下命中叙述词 "failed"、`teleport\w*` 命中 "teleport closer"，正常叙事被整条跳过（12 条）；改为 FAILED 大小写敏感、teleport 只认 `teleport_…`/`teleport:` 标识符形态；②**标题规则误伤**——`"Men, take note: ..."` 等叙述句被 `_TITLE_LIKE_RE` 当标题整段跳过（31 条）；冒号前段含逗号/引号不再算标题（字符集白名单收紧）；③**占位符闸门短路**——含 `$clr_N`/`%c[...]`/`%s` 的条目占位符被模型破坏时旧版直接整条保留英文（20 条）；新增第三级切短块兜底（`_force_sliced`，与完整性闸门同模式）。另修 `missing_big_numbers` 集合迭代顺序不确定（补数字位置漂移）。
 - **2.0.16** st_characters.xml 人物绰号专项：97 条绰号/军衔经潜行者社区资料逐条核实收录（杰格佳廖夫/祖鲁/瓦诺/洛基/酒保/苏丹/卡丹/斯纳格/夏威夷人/松鸡/布拉瓦/斯巴达克斯/豺狼等，eng 键对齐词库俄文原形译名保证 eng/rus 一致）；纠正 11 处误译（Nitro→硝基、100 Rads→辐射100、Глухарь→松鸡、Sickle→镰刀、Walrus→海象、Ashot→阿肖特、Kremen→火石、Tihiy→季希、Cherniy→黑子、Bulava→布拉瓦、Gazon→加宗）；4 组大小写/跨类同源冲突按审计规则修正（warrant officer→准尉等，引号形态区分昵称与普通词）。词库 9095→9179，strict 口径 0 冲突。根因：单人名短条目无上下文，模型原样回显且切片兜底对 ≤100 字符主动放弃——词库直取是最确定解。test_2015 扩至 22 项（词库断言改结构化校验）。
 - **2.0.15** 2.0.12 完成产物终审的 3 个缺口修复（通用型）：①**颜色码后粘连冠词**——`clean_stuck_article` 旧版只剥离行首冠词，`%c[default]The科学家` 这类颜色码后紧贴中文的冠词漏网，改为匹配「行首或颜色码之后」并保留颜色码；②**专名回填扩展**——词条层不再限于 names 层（异常/地点/物品专名如 whirligig→旋转木马 同样回填），允许复数/所有格后缀（`Whirligigs`/`Jupiter's`，中文无复数整体替换）与大小写漂移（源小写、译文首字母大写用 re.I 匹配），小写词条以词库收录为准放行；③**词库 9085→9095**——补 `Circus/Duga/Skadovsk/100 Rads/Spore/Hercules/Psy-block/Nitro/Swede/Volcano` 10 个全系列通用词（两库一致），并把 6 个小写怪物词写入 case_sensitive、Hercules 对齐既有译法「大力士」消除同类屈折冲突（词库 strict 审计 0 blocking/high）。新增 test_2015_all_fixes 21 项，全套测试通过。

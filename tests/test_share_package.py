@@ -75,8 +75,9 @@ check("A1 只含插件+解析器+术语数据+来源声明（无模型/运行库
       set(files) == EXPECT, str(sorted(set(files) ^ EXPECT) or files))
 
 size = sum(os.path.getsize(os.path.join(SHARE, f)) for f in files)
-# 随包术语库固定约 690 KB，插件本体约 360 KB；1.1 MB 仍属轻量分享包。
-check("A2 体积轻量（< 1.1 MB，可随插件目录分享）", size < 1100 * 1024,
+# 随包术语库固定约 690 KB，插件本体约 360 KB；1.9.x 词库扩充后 ~760 KB，
+# 1.2 MB 仍属轻量分享包（该检查防的是误打包运行产物，不是数据本身）。
+check("A2 体积轻量（< 1.2 MB，可随插件目录分享）", size < 1200 * 1024,
       "%.0f KB" % (size / 1024.0))
 
 # 术语库是翻译 MOD 的前提：**必须随包**，而且不能是空壳。
