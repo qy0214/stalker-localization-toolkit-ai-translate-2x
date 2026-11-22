@@ -2366,6 +2366,7 @@ def load_term_layers():
 
 
 _BUILTIN_FLAT_CACHE = {"key": None, "data": {}}
+_TB_LOW_INDEX = {"key": None, "low": {}}   # termbase casefold 归一索引（审计 F 层优化）
 
 
 def termbase_lookup(text):
@@ -2381,18 +2382,32 @@ def termbase_lookup(text):
         return None
     # 直接读 termbase 原始分类表：load_term_layers 的 canon/names 是 set
     # （只有 technical/reference 带映射），这里需要"原文→译名"全量映射。
-    # 两次查表（termbase + builtin）都在模块级缓存上做——终检对几千条目
-    # 逐条调用，不能每次重读 350KB JSON。
+    # ★ 全量审计 2026-11-23：3.6 万条后逐分类 casefold 全扫 O(N) 达 3.6ms/次，
+    #   终检几千条目累计数秒——改为模块级 casefold 归一索引（O(1)），
+    #   首分类优先（canon/人物 在前，与旧遍历顺序一致）。
     data = load_termbase_data()
     low = s.casefold()
-    for _cat, table in data.items():
-        if _cat.startswith("_") or not isinstance(table, dict):
-            continue
-        if s in table:
-            return str(table[s])
-        for k, v in table.items():
-            if str(k).casefold() == low:
-                return str(v)
+    global _TB_LOW_INDEX
+    try:
+        _st = os.stat(_TERMBASE_PATH)
+        _tkey = (_st.st_mtime_ns, _st.st_size)
+    except OSError:
+        _tkey = None
+    if _TB_LOW_INDEX.get("key") != _tkey:
+        idx = {}
+        for _cat, table in data.items():
+            if _cat.startswith("_") or not isinstance(table, dict):
+                continue
+            for k, v in table.items():
+                kl = str(k).casefold()
+                if kl not in idx:          # 首分类优先
+                    idx[kl] = str(v)
+        _TB_LOW_INDEX = {"key": _tkey, "low": idx}
+    idx = _TB_LOW_INDEX.get("low") or {}
+    if s in idx:
+        return idx[s]
+    if low in idx:
+        return idx[low]
     # 兼容早期扁平词库（带 mtime 缓存，避免逐条重读 320KB）
     global _BUILTIN_FLAT_CACHE
     try:
@@ -2401,13 +2416,16 @@ def termbase_lookup(text):
     except OSError:
         _bkey = None
     if _BUILTIN_FLAT_CACHE.get("key") != _bkey:
-        _BUILTIN_FLAT_CACHE = {"key": _bkey, "data": load_builtin_glossary()}
-    flat = _BUILTIN_FLAT_CACHE.get("data") or {}
-    if s in flat:
-        return str(flat[s])
-    for k, v in flat.items():
-        if str(k).casefold() == low:
-            return str(v)
+        bflat = load_builtin_glossary() or {}
+        _BUILTIN_FLAT_CACHE = {"key": _bkey, "data": bflat,
+                               "low": {str(k).casefold(): str(v)
+                                       for k, v in bflat.items()}}
+    bcache = _BUILTIN_FLAT_CACHE.get("data") or {}
+    blow = _BUILTIN_FLAT_CACHE.get("low") or {}
+    if s in bcache:
+        return str(bcache[s])
+    if low in blow:
+        return blow[low]
     return None
 
 

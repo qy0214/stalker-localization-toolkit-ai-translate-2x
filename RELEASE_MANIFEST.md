@@ -1,9 +1,9 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-22T23:49:01+08:00`
+- 生成时间：`2026-11-23T00:06:03+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`main` @ `1469c34`（有未提交改动）
-- 已跟踪文件：44 个，4.60 MB
+- Git：`main` @ `dba3eec`（有未提交改动）
+- 已跟踪文件：1110 个，27.06 MB
 
 ## 1. 版本与交付物
 
@@ -16,12 +16,12 @@
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 447.46 KB | `5221bcdcda58ebfae916e4f1cbb2ff17c773bac63f3fbfe502f58d6d2ba421f6` | 2.x 目录插件（api.ui 门面） |
-| 插件分享目录 | `plugins\ai_translate` | 3.40 MB | — | 5 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.20.zip` | 1.20 MB | `ba7de2cd4971d2107443bf1d38d72c612567db1bc4589fafca7ed7c740d6d4ca` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.20_install.zip` | 1.20 MB | `adc8d7c14bcf62479a8e54886031ca2905b5e3b5e479368af220c7efcef2646f` | 给平台插件管理器直接解压用 |
-| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.47 MB | `e53c2a83d2e01ba987f16ab0821b00cc552292fb974b68343a597e0f00267009` | 运行时匹配的内置层 |
-| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.48 MB | `8fa300bb7708084ce48d06ff06c68487235a886560df476f654c01fa3b166192` | 导入用 |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 448.24 KB | `f112014dfc2df35c9b974adafa0f091b5649a423407d293ff5ece8c6911a4e5e` | 2.x 目录插件（api.ui 门面） |
+| 插件分享目录 | `plugins\ai_translate` | 3.82 MB | — | 5 个文件（目录） |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.20.zip` | 1.35 MB | `2796285e286638f00a3eb796d2d394b70ef962dc884adc37005f972585e43b67` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.20_install.zip` | 1.35 MB | `9d4ed1545f015428c62fa500c138e095962e119439973f6b84534285d7a849ba` | 给平台插件管理器直接解压用 |
+| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.69 MB | `9fcaa43593edda4f3ef454e21fa98533c081ff692b22a9f4aea4675f3825f726` | 运行时匹配的内置层 |
+| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.69 MB | `addd1af9066154a7bcbf4974c5995f11afcec00ef3184e511416b5f64d59b1b8` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 7.38 KB | `2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6` | 解析 XML/LTX/脚本 |
 | 第三方来源声明 | `plugins\ai_translate\assets\THIRD_PARTY_NOTICES.txt` | 1.18 KB | `d971f8c84ae81732effb86d0b3bb907166e81a2c804cf85207a0427f9b929d4e` | 随包分发（上游来源与许可状态） |
 
@@ -55,7 +55,7 @@
 | zip 条目 == 5 个预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
-| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1546474；stalker_termbase.json=1552893 |
+| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1767396；stalker_termbase.json=1773815 |
 | zip 内文件 == 工作副本 | 一致 | 全部一致 |
 | 官方哈希：llama.cpp 6 项 | 一致 | 登记 6 项；不一致：无 |
 | 官方哈希：模型 2 项 | 一致 | 登记 2 项；不一致：无 |
@@ -64,20 +64,20 @@
 | 分享目录不含 bin/models/logs/downloads/config.json | 一致 | 干净 |
 | 插件目录无被跟踪的 __pycache__ | 一致 | 干净 |
 | 无绝对路径/用户名泄漏 | 一致 | 未发现 |
-| 术语基表：_meta.total_entries == 实际分类合计 | 一致 | meta 32706 / 实际 32706 |
+| 术语基表：_meta.total_entries == 实际分类合计 | 一致 | meta 36323 / 实际 36323 |
 | 术语基表：_meta.categories == 实际分类条数 | 一致 | meta 13 类 / 实际 13 类，差异：无 |
-| 术语库：随包条目 >= 8000 | 一致 | 32706 条 |
-| 术语库：随包 >= 分类基表 | 一致 | 32706 / 32706 |
+| 术语库：随包条目 >= 8000 | 一致 | 36323 条 |
+| 术语库：随包 >= 分类基表 | 一致 | 36323 / 36323 |
 | dist 只保留当前版本 zip | 一致 | 仅当前版本 |
 
 ## 4. 术语数据规模
 
 | 文件 | 条目 |
 |---|---:|
-| `glossary_builtin.json`（随包，运行时匹配） | 32706 |
-| `stalker_termbase.json`（分类导入） | 32706 |
+| `glossary_builtin.json`（随包，运行时匹配） | 36323 |
+| `stalker_termbase.json`（分类导入） | 36323 |
 
-分类明细：阵营与组织 107、人物与军衔 3250、地点与区域 397、变异生物 79、物品·武器·装备·神器 3699、任务 2456、百科与术语 3765、界面与提示 3263、新闻·对话·其他 5353、ANTHOLOGY 参考 148、技术缩写 18、Gunslinger 参考 5912、GAMMA 参考 4259
+分类明细：阵营与组织 107、人物与军衔 3250、地点与区域 397、变异生物 79、物品·武器·装备·神器 3699、任务 2456、百科与术语 3765、界面与提示 3263、新闻·对话·其他 5353、ANTHOLOGY 参考 148、技术缩写 18、Gunslinger 参考 5912、GAMMA 参考 7876
 
 ## 5. 安装位置与数据落点
 
