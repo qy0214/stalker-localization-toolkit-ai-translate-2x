@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_item_artefact_title">
+		<text>神器狀況(不要碰!)</text>
+	</string>
+	<string id="ui_mcm_menu_item_artefact">
+		<text>神器狀況(不要碰!)</text>
+	</string>
+	<string id="ui_mcm_item_artefact_enable_condition_bar">
+		<text>啟用狀態條 (保持啟用！！！)</text>
+	</string>
+	<string id="ui_mcm_item_artefact_enable_degraded_drops">
+		<text>啟用降級的神器/附件/毛皮戰利品掉落 (保持啟用!!!)</text>
+	</string>
+	<string id="ui_mcm_item_artefact_mutant_part_condition_min">
+		<text>變異怪物戰利品毛皮狀況最小值</text>
+	</string>
+	<string id="ui_mcm_item_artefact_mutant_part_condition_max">
+		<text>變異怪物戰利品毛皮狀況最大值</text>
+	</string>
+	
+	
+</string_table>

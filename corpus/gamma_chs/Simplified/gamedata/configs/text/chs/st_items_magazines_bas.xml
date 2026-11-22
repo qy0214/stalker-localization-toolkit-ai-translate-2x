@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+<!--
+Pistols and MP's
+-->
+
+	<string id="st_mag_sr1m_9x21">
+		<text>标准9x21 SR1M弹匣</text>
+	</string>
+	<string id="st_mag_sr1m_9x21_descr">
+		<text>
+		标准9x21 SR1M弹匣,容量为18发子弹. SR1M是俄罗斯手枪技术的最新发展,发射一种专有的9x21子弹,也用于SR-2 Veresk PDW. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sr1m_9x21ext">
+		<text>加长版9x21 SR1M弹匣</text>
+	</string>
+	<string id="st_mag_sr1m_9x21ext_descr">
+		<text>
+		加长版9x21 SR1M弹匣,容量为26发子弹. SR1M是俄罗斯手枪技术的最新发展,发射一种专有的9x21子弹,也用于SR-2 Veresk PDW. 
+		</text>
+	</string>
+	
+	<string id="st_mag_pl15_9x19_fmj">
+		<text>标准9x19 PL15弹匣</text>
+	</string>
+	<string id="st_mag_pl15_9x19_fmj_descr">
+		<text>
+		标准9x19 PL15弹匣,容量为16发. 
+		</text>
+	</string>
+	
+		<string id="st_mag_pl15_9x19_fmjext">
+		<text>加长版9x19 PL15弹匣</text>
+	</string>
+	<string id="st_mag_pl15_9x19_fmjext_descr">
+		<text>
+		加长版9x19 PL15弹匣,容量为24发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sigp220_11.43x23_fmj">
+		<text>标准.45 SigP220弹匣</text>
+	</string>
+	<string id="st_mag_sigp220_11.43x23_fmj_descr">
+		<text>
+		标准.45 SigP220弹匣,容量为12发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sigp220_11.43x23_fmjext">
+		<text>加长版.45 SigP220弹匣</text>
+	</string>
+	<string id="st_mag_sigp220_11.43x23_fmjext_descr">
+		<text>
+		加长版.45 SigP220弹匣,容量为20发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sig226_9x19_fmj">
+		<text>标准9x19 SigP226弹匣</text>
+	</string>
+	<string id="st_mag_sig226_9x19_fmj_descr">
+		<text>
+		标准9x19 SigP226弹匣,容量为15发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sig226_9x19_fmjext">
+		<text>加长版9x19 SigP226弹匣</text>
+	</string>
+	<string id="st_mag_sig226_9x19_fmjext_descr">
+		<text>
+		加长版9x19 SigP226弹匣,容量为20发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_usptac_9x19_fmj">
+		<text>标准9x19 USP弹匣</text>
+	</string>
+	<string id="st_mag_usptac_9x19_fmj_descr">
+		<text>
+		标准9x19 USP弹匣,容量为22发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_usptac_9x19_fmjext">
+		<text>加长版9x19 USP弹匣</text>
+	</string>
+	<string id="st_mag_usptac_9x19_fmjext_descr">
+		<text>
+		加长版9x19 USP弹匣,容量为30发. 
+		</text>
+	</string>
+
+	<string id="st_mag_wp99_9x19_fmj">
+		<text>标准9x19 Walther P99弹匣</text>
+	</string>
+	<string id="st_mag_wp99_9x19_fmj_descr">
+		<text>
+		标准9x19瓦尔特P99弹匣,容量为16发. 
+		</text>
+	</string>
+	
+	<string id="st_mag_wp99_9x19_fmjext">
+		<text>加长版9x19 Walther P99弹匣</text>
+	</string>
+	<string id="st_mag_wp99_9x19_fmjext_descr">
+		<text>
+		加长版9x19瓦尔特P99弹匣,容量为16发. 
+		</text>
+	</string>
+
+	<string id="st_mag_p220_9x19_u2p2bas">
+		<text>标准9x19 P220定制9型弹匣</text>
+	</string>
+	<string id="st_mag_p220_9x19_u2p2bas_descr">
+		<text>
+		标准9x19 P220定制9型弹匣,容量为19发子弹. 
+		</text>
+	</string>
+
+</string_table>

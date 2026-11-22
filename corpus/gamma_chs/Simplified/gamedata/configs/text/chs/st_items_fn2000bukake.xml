@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_fn2000e_descr">
+		<text>从20世纪80年代末到90年代初, FN Herstal开始研发新型步枪;  其目标是生产一种现代化的模块化武器, 最终诞生了 FN F2000 步枪, 该步枪于 2001 年首次向公众展示; F2000 提供了现代突击步枪的所有流行功能, 例如紧凑的无托结构、灵巧的操作和模块化的 设计有大量可用的选项和插件;  到目前为止, FN F2000步枪只找到了少数买家, 包括斯洛文尼亚武装部队和比利时特种作战部队\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[d_green] 瞄具: %c[0,250,250,0]已集成瞄具\n
+		%c[d_purple] • %c[d_green] 榴弹发射器: %c[d_cyan]"FN GL1"%c[d_red](使用M203榴弹)\n
+		%c[d_purple] • %c[d_green] 消音器: %c[d_orange]5.56x45口径消音器\n \n</text>
+	</string>
+	<string id="st_wpn_fn2000e_nimble">
+		<text>FN F2000</text>
+	</string>
+	<string id="st_wpn_fn2000e_nimble_descr">
+		<text>从20世纪80年代末到90年代初, FN Herstal开始研发新型步枪;  其目标是生产一种现代化的模块化武器, 最终诞生了 FN F2000 步枪, 该步枪于 2001 年首次向公众展示; F2000 提供了现代突击步枪的所有流行功能, 例如紧凑的无托结构、灵巧的操作和模块化的 设计有大量可用的选项和插件;  到目前为止, FN F2000步枪只找到了少数买家, 包括斯洛文尼亚武装部队和比利时特种作战部队; 此型号具有集成的EOTech瞄准镜, 这导致精度略微降低, 但由于本型号是针对CQC设计的, 因此提高的射速可以作为精度的弥补\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[d_green] 瞄具: %c[0,250,250,0]兼容皮卡汀尼导轨\n
+		%c[d_purple] • %c[d_green] 榴弹发射器: %c[d_cyan]"FN GL1"%c[d_red](使用M203榴弹)\n
+		%c[d_purple] • %c[d_green] 消音器: %c[d_orange]5.56x45口径消音器\n \n</text>
+	</string>
+
+</string_table>

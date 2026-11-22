@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="ui_inv_wrange">
+		<text>最大范围</text>
+	</string>
+	<string id="ui_inv_bspeed">
+		<text>初速</text>
+	</string>
+	<string id="ui_inv_drag">
+		<text>空气阻力</text>
+	</string>
+	<string id="ui_inv_reli">
+		<text>可靠性</text>
+	</string>
+	<string id="ui_inv_recoil">
+		<text>后坐力控制</text>
+	</string>
+	
+	<string id="st_stat_meters">
+		<text>米</text>
+	</string>
+	<string id="st_stat_speed">
+		<text>m/s</text>
+	</string>
+	
+</string_table>

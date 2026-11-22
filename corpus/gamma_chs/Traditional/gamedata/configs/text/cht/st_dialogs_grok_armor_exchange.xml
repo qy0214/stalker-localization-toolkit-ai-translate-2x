@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="0_insider">
+		<text>我聽說, 如果想要自己陣營的護甲, 只能用別的護甲來換? </text>
+	</string>
+	<string id="1_insider">
+		<text>是的, 你沒聽錯, 潛行者; 我們的庫存有點吃緊, 所以現在不賣護甲了, 如果想要的話, 只能用同類護甲來換\n
+		記住, 如果你給我的護甲破破爛爛的, 那我也會把倉庫里的破爛拿給你, 這叫做公平交易! 懂嗎?\n
+		順帶一提, 儘管我說護甲是公平交易, 但這項交換的服務可不是免費的, 你可以在這邊的黑板上檢視價格...\n\n
+		太貴了? 呵, 當你在高檔餐廳里吃溢價的牛排時會嫌貴嗎? 這些帥氣的陣營護甲都是我花錢修的! 如果你把這當做是我們陣營的服務費和管理費, 就一點都不覺得貴了!\n
+		那麼, 有什麼你想換的嗎? </text>
+	</string>
+	<string id="armor_exchange_light">
+		<text>一套輕型護甲 ( 用任何輕型裝備交換 ) [ 5 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_medium">
+		<text>一套中型護甲 ( 用任何中型裝備交換 ) [ 10 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_specops">
+		<text>一套特種部隊護甲 ( 用任何中型裝備交換 ) [ 25 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_sci">
+		<text>一套科學防護服 ( 用任何不帶護甲的中型科學防護服交換 ) [15 000 盧布] </text>
+	</string>
+	<string id="armor_exchange_skat">
+		<text>一套 Skat-9戰鬥護甲 ( 用任何Skat-9護甲服交換 ) [ 25 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_exolight">
+		<text>一套外骨骼防護服 (用任何外骨骼防護服交換 ) [ 30 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_exo">
+		<text>一套外骨骼動力護甲 ( 用於任何外骨骼動力護甲交換 )  [ 45 000 盧布 ] </text>
+	</string>
+	<string id="armor_exchange_noso">
+		<text>一套犀牛級外骨骼 ( 用任何犀牛級外骨骼交換 ) [65 000 盧布] </text>
+	</string>
+	<string id="armor_exchange_exit">
+		<text>其實還是算了吧</text>
+	</string>
+</string_table>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+	<string id="mag_kriss45">
+		<text>标准 .45 ACP KRISS Vector 弹匣</text>
+	</string>
+	<string id="mag_kriss45_descr">
+		<text>
+		标准的25发 .45 ACP KRISS Vector弹匣
+		</text>
+	</string>
+	
+	<string id="mag_kriss9">
+		<text>标准 9x19 KRISS Vector 弹匣</text>
+	</string>
+	<string id="mag_kriss9_descr">
+		<text>
+		标准的33发 9x19 KRISS Vector弹匣, 又叫做 "大棒子"</text>
+	</string>
+
+	<string id="ext_mag_kriss_drum">
+		<text>加长型 .45 ACP KRISS Vector 弹匣</text>
+	</string>
+	<string id="ext_mag_kriss_drum_descr">
+		<text>
+		40发加长型 .45 ACP MagEx KRISS Vector弹匣</text>
+	</string>
+
+	<string id="ext_mag_kriss9_drum">
+		<text>加长型 9x19 KRISS Vector 弹匣</text>
+	</string>
+	<string id="ext_mag_kriss9_drum_descr">
+		<text>50发加长型 9x19 KRISS Vector弹匣, 韩国造, 由SGM战术进口, 制造商不建议装载超过 50 发子弹</text>
+	</string>
+
+	<string id="st_mag_mp7_5.7x28_ss190">
+		<text>改装型 5.7x28 MP7 弹匣</text>
+	</string>
+	<string id="st_mag_mp7_5.7x28_ss190_descr">
+		<text>40发 加长型 MP7 弹匣, 被改造成了容纳5.7x28mm口径子弹, 由FN Herstal开发制造, 也许是由于 4.6x30 子弹的稀有性, 一些节俭的技师对 MP7 进行了改装, 使其能够发射与 FN P90 和FIVE-SEVEN相同的5.7x28子弹</text>
+	</string>
+
+</string_table>

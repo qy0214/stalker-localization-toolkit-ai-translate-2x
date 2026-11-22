@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_locations">
+		<text>地點</text>
+	</string>
+	
+	<string id="encyclopedia_locations_agroprom">
+		<text>農業研究所</text>
+	</string>
+	<string id="encyclopedia_locations_agroprom_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]一個奇怪且重度污染的地方. 儘管軍隊開入這個地區並將南部園區作爲了他們的總部, 但此處仍然充滿了危險的變異生物以及被它們保護著的秘密.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 大沼澤
+			\n• 填埋場
+			\n• 揚塔
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 在2011年的陣營戰爭之中, 紀律團曾經將此處作為總部, 南部園區中的一部分被改裝為展示變異生物標本的博物館.
+			\n• 這個科研設施正式成立於1986年的事故之後以用於檢驗農作物受污染土地的影響.
+			\n• 潛行者之中的某些陰謀論者則認為這個設施在2006年第一次大能量風暴之前被用來做一些隱秘的實驗.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_agroprom_underground">
+		<text>農研所地下設施</text>
+	</string>
+	<string id="encyclopedia_locations_agroprom_underground_text">
+		<text>
+			%c[pda_white]農研所地下設施%c[ui_gray_1] 是一個地下隧道網.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n沒有人能確切地說出這些地下管道是用來幹什麼的, 這些管道的一部分的功能是必不可少的, 如取暖等等; 而另一部分顯然是爲了某些科學用途的.\n
+			\n然而它們現在的作用是作為某些人緊急情況下的藏身之處... 亦或者是變異怪物獵捕那些敢於闖入的冒失鬼的狩獵場.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 在紀律團佔據著農業研究所的日子裡, 他們組織了一場對盤踞于地下的變異怪物的"清洗".
+			\n• 軍隊的長官似乎對此處很感興趣並派遣了人員對此處進行探索, 然而到目前為止, 他們什麼也沒有找到.
+			\n• 漆黑, 幽暗的身影潛伏於此處, 小心了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_army_warehouses">
+		<text>軍事倉庫</text>
+	</string>
+	<string id="encyclopedia_locations_army_warehouses_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]一個廢棄的軍事基地毗鄰著一個破舊的村莊和一潭小沼澤. 村莊常常有著一群吸血怪盤踞, 因而"贏得"了"美譽"並嚇跑了許多潛行者. 軍事基地則被自由軍多年來用作總部, 許多勇敢的潛行者在此處抵禦來自障礙北部的黑石士兵, 許多愚蠢的潛行者也是從這裡進入到特異區的深處的.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 羅斯托克
+			\n• 死城
+			\n• 紅森林
+			\n• 雷達站
+			\n• 卡車墓園
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這個地區曾是2011第二次能量風暴之前的軍隊總部, 大部分此處的軍人都變成了殭屍.
+			\n• 據說,那些現在已經死了的士兵的聲音可以在特異區的任意位置在特定的波段上聽到.
+			\n• 和一般的說法不同, 這裡的自由軍的士兵不是爲了找樂子而吸毒的, 他們是爲了減弱千米外"焦腦器"對潛意識的影響以及周圍那種恐怖氛圍才這樣做的.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_chernobyl_npp">
+		<text>切爾諾貝利核電站</text>
+	</string>
+	<string id="encyclopedia_locations_chernobyl_npp_text">
+		<text>
+			%c[pda_white]切爾諾貝利核電站%c[ui_gray_1], 在前蘇聯時期被稱作 %c[pda_green]弗拉基米爾·伊里奇·列寧核電站%c[ui_gray_1] 是特異區標誌建築.\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n1986年4月26日, 這兒發生了第一次災難: 在電力激增, 緊急反應系統失效的情況下, 4號反應堆發生了一次爆炸, 大量的輻射瀰散物質上升至大氣之中.\n
+			\n周圍半徑30千米以內的居民全部被疏散並形成了隔離區 - 通過設立邊界的方式將外界與此處分割開來.\n
+			\n儘管核電站深處於黑石的地盤, 但多年前潛行者們還是成功到達了此處 - 他們相信這裡有能夠實現他們內心願望的裝置.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 黑石最為神聖的地方, 迷信的潛行者們則認為這個地方被死者的靈魂所保衛著.
+			\n• 史特洛克, 方, 鬼魂是第一批能夠保證自己神志清晰抵達此處的潛行者, 當然, 他們也引起了特異區第二次的大能量風暴.
+			\n• 晴空2011年在這裡遭受了重大打擊, 第三次大能量風暴讓他們的許多的成員和領袖(同史特洛克一起)被殺,被俘虜或者被洗腦.
+			\n• 史特洛克2012年回到了此處, 他的記憶恢復了一部分, 同時也接觸到了核電站之下的秘密. 特異區從此不再平靜.
+			\n• 軍隊對此處展開了多次行動, 但毫無例外, 它們都失敗了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_cordon">
+		<text>封鎖線</text>
+	</string>
+	<string id="encyclopedia_locations_cordon_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]把這兒當作是特異區的接待點 - 對於新手們來講這裡是個熟悉特異區的好地方. 西南方有個潛行者村莊 - 別忘了和那兒的交易商交流一下! 最南端則是個軍營, 士兵們常常在路邊巡邏.不推薦你去攻擊他們, 除非他們對你表現出了直接的威脅.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 填埋場
+			\n• 大沼澤
+			\n• 黑暗小徑
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 軍隊曾經在封鎖線有著更多的部隊, 然而現在僅僅只在北部的檢查站和中部的斷橋才有部隊守衛.
+			\n• 僱傭兵2012年的時候想過把菜鳥村奪下來, 但是被史特洛克和"狂人"法納特擊退了.
+			\n• 特異區的許多走私活動都是在這個區域里完成的.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_dark_valley">
+		<text>黑谷</text>
+	</string>
+	<string id="encyclopedia_locations_dark_valley_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]一個陰森的地區, 因兩個地方而出名: 北部的土匪基地和東部的地下實驗室. 土匪的老大總是讓實驗室的大門緊閉著, 原因很簡單 - 去那兒的人幾乎沒有能活著出來的, 也沒有人知道為什麼.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 填埋場
+			\n• 黑暗小徑
+			\n• 卡車墓園
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 2011年陣營戰爭中, 這個區域曾是自由軍的總部.
+			\n• 軍方很少向此處派遣部隊, 有也只是爲了保護或者增援實驗室.
+			\n• 比起在死亡屏障的失敗, 紀律團有一次差點就能把這個地方的土匪給消滅乾淨了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_darkscape">
+		<text>黑暗小徑</text>
+	</string>
+	<string id="encyclopedia_locations_darkscape_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]一段形似新月的峽谷, 連線著黑谷的南部和封鎖線的廢棄隧道, 南部和東部的道路則不知通向何方. 此處植被茂密, 沒有什麼標誌性的建築物. 最狹窄的地方是坍塌的鐵路橋, 這段鐵路實際上和封鎖線還有大沼澤的鐵路相連.
+			\n再往南走, 馬路在小山前分開, 小路往西南走, 一直到一個廢棄的農場, 而主幹道則繼續向南直到一條岔路口, 旁邊挨著一個廢棄的加油站. 之後, 馬路一直向西延申至封鎖線.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 封鎖線
+			\n• 黑谷
+			\n \n%c[pda_yellow]	趣聞%c[ui_gray_1]
+			\n• 由於偏遠的地點和陰森的環境, 這個地方是許多逃避懸賞和陣營鬥爭的潛行者的主要藏身之處.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_dead_city">
+		<text>死城</text>
+	</string>
+	<string id="encyclopedia_locations_dead_city_text">
+		<text>
+			%c[pda_white]死城%c[ui_gray_1], 曾經充滿活力,現在唯有一片廢墟.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n這裡曾經是那些無法在利曼斯克和普里皮亞奇找到住所之人居住的地方, 現在無人記知道這個區域的歷史.n
+			\n這個名字給的十分準確, 因為整個城市就像一具屍體一樣 - 到處都是腐敗的景象.\n
+			\n儘管來自利曼斯克的黑石經常入侵此地, 但是一小部分僱傭兵們仍然在這個地方建立了總部.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 利曼斯克
+			\n• 軍事倉庫
+			\n• 揚塔
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 甚至在2012年前, 潛行者們都認為這個地方只是個傳說, 而在死城的存在被揭露后, 僱傭兵們便用他們的威名來制止普通的潛行者進入此地.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_deserted_hospital">
+		<text>廢棄醫院</text>
+	</string>
+	<string id="encyclopedia_locations_deserted_hospital_text">
+		<text>
+			%c[pda_white]廢棄醫院%c[ui_gray_1], 也叫做 %c[pda_green]利曼斯克醫院%c[ui_gray_1], 是一座大型的廢棄建築物,它整個醫院幾乎都沉入了地底下.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n儘管這座醫院的歷史無從得知, 仍然可以推測這座醫院是被用來為利曼斯克周圍的居民服務的.\n
+			\n這個地方最有趣的一點是這座醫院不知道因為什麼醫院陷入了地底下, 因為這個地區的異常大型地殼活動是及其罕見的.\n
+			\n它也是整個特異區裡面唯一個缺乏輻射和異常點威脅的地方, 然而這並不代表對於這裡很安全 - 這裡到處都是那些邪教徒.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 特異區里少有的能量風暴和脈衝風暴無法波及的地方.
+			\n• 這個地區曾是特異區里守備最為森嚴的地方 - 機槍和直升機將醫院狹長的走廊變爲了殺戮區.
+			\n• 當這個地方的防備被摧毀之後, 這裡變爲了黑石的下級神廟.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_garbage">
+		<text>填埋場</text>
+	</string>
+	<string id="encyclopedia_locations_garbage_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]極大的機械墓地, 第一次事故后這些充滿著輻射的機械垃圾就都埋在這兒了, 這裡大多數建築物里都充滿了變異怪物. 像其他特異區的外圍地區一樣, 這個區域充滿了菜鳥, 同時還有一群群四處閑逛尋找著倒霉蛋的土匪. 這裡的標誌建築物是中間廢棄車庫和北邊的跳蚤市場.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 封鎖線
+			\n• 黑谷
+			\n• 農業研究所
+			\n• 羅斯托克
+			\n• 廢棄區
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 列車車庫據說曾是特異區里強大的獵人碰頭的地方.
+			\n• 這個地區曾經是尤加領導下的土匪組織的總部, 那時的土匪將抓獲的潛行者們關在集中營里進行撿神器的勞動.
+			\n• 從1986年第一次事故開始, 這裡就堆滿了各種機械垃圾.
+			\n• 由於此處是紀律團, 普通潛行者, 軍隊, 土匪控制區域的交界處, 因此這個地方態勢常常很混亂.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_generators">
+		<text>風暴引擎</text>
+	</string>
+	<string id="encyclopedia_locations_generators_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]特異區的發源地.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+	        \n• 切爾諾貝利核電站
+	        \n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這個地區就是超念體將在試圖重塑人類思想時引導"念域"能量流的地方.
+			\n• 到目前為止, 這是隔離區里最陌生的地方, 最好保持警惕, 儘量保持在路上行走.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_locations_great_swamp">
+		<text>大沼澤</text>
+	</string>
+	<string id="encyclopedia_locations_great_swamp_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]這大沼澤大多由污染的水域和少部分安全的陸地構成, 各個陸地之間則由迷宮般的小橋連線. 這裡只有一些廢棄的建築物.
+			\n往北是農業研究所, 過了獵人森林就到了. 東邊是封鎖線. 西邊則是斷裂的大橋.
+			\n大沼澤是喜愛保持自我, 將"文明"保持在合適範圍內的人的理想之地.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 封鎖線
+			\n• 農業研究所
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 傳說這裡有一位善良的沼澤巫醫, 但是很多年來都沒人看到過他.
+			\n• 也有傳說夜晚大沼澤里有鬼影潛伏, 尤其是在通往農業研究所的道路周圍.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_jupiter">
+		<text>尤皮特</text>
+	</string>
+	<string id="encyclopedia_locations_jupiter_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]尤皮特,位於普里皮亞奇西邊, 它的中部有亞諾夫車站, 是一個大型區域. 老舊火車站是許多潛行者的營地, 它裡面有交易商, 技師和醫生. 生態學家在車站周圍建立了一個碉堡, 用於研究特異區的異常點和神器. 其他地方, 例如採石場, 科帕奇村, 沃爾克霍夫防空基地則充滿了行屍走肉.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 紅森林
+			\n• 扎頓
+			\n• 普里皮亞奇
+			\n• 木星工廠地下通道
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 傳說神器"綠洲之心"就在這個區域的某處.
+			\n• 由於天上的異常點, 這裡可以找到許多墜毀的飛行器.
+			\n• 亞諾夫車站曾經被自由軍和紀律團共有, 他們在此處進行了一場"冷戰", 然而這種緊張的關係很快就被捲土重來的黑石所打破. 
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_jupiter_underground">
+		<text>木星工廠地道</text>
+	</string>
+	<string id="encyclopedia_locations_jupiter_underground_text">
+		<text>
+			%c[pda_white]木星工廠地道%c[ui_gray_1], 得名于%c[pda_green]普里皮亞奇地下通道%c[ui_gray_1] 以及 %c[pda_green]普里皮亞奇-1%c[ui_gray_1], 是一套地下隧道系統.\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n從還在生鏽的運輸工具來看, 這些隧道曾經被用來秘密運送貨物和材料, 在第二次能量風暴之後, 這些隧道顯然就被廢棄了,並且充滿了有毒氣體.\n
+			\n直到最近, 一群潛行者才打開了隧道的尤皮特端的入口, 讓他們能夠安全地抵達普里皮亞奇.\n
+			\n當然, 在特異區里, "安全"只是相對的, 想要經過這裡的潛行者會遭遇一大群的史諾克和殭屍.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 從木星工廠到這個地方的電梯很早以前就壞掉了, 幸運的是, 樓梯還完好無損.
+			\n• 黑石開始對潛行者用這些隧道的行為作出反應了.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_lab_x16">
+		<text>X-16實驗室</text>
+	</string>
+	<string id="encyclopedia_locations_lab_x16_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]這個實驗室裡面有"神蹟裝置". 任何沒有合適防護的人進入到這裡都會變為無意識的殭屍.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• "神蹟裝置"是一種濕件主機(被視為計算機程式或系統的人腦), 將一個異常巨大的大腦併入它的設計之中.
+			\n• 將它關掉需要從底層按正確的順序拉下操縱桿.
+			\n• 鬼魂, 傳奇潛行者以及原史特洛克小隊中的一員, 在和生態學家一起研究這座實驗室時死去了, 當史特洛克成功地關掉了機器后(至少當時是那樣的), 他埋葬了他的朋友.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_lab_x18">
+		<text>X-18實驗室</text>
+	</string>
+	<string id="encyclopedia_locations_lab_x18_text">
+		<text>
+			\n%c[pda_green]情報\n%c[ui_gray_1]這個實驗室據說是儲存著和靈體波放射器有關的檔案以及大量的神器, 然而出於某些很好的理由, 當地人常常遠離這個地方.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這個實驗室很可能是當時第一批生產的變異怪物的地方, 尤其是那些具有靈體力量的怪物.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_lab_x19">
+		<text>X-19實驗室</text>
+	</string>
+	<string id="encyclopedia_locations_lab_x19_text">
+		<text>
+			%c[pda_white]X-19實驗室%c[ui_gray_1], 也被稱作 %c[pda_green]X-10實驗室 %c[ui_gray_1].\n
+			\n%c[pda_green]情報\n%c[ui_gray_1]這個實驗室裡面據說隱藏著關於靈能場發射器的寶貴情報, 並安裝了名為"彩虹"的靈能波防禦系統, 反正幾乎所有潛行者都會有意避開這個地區, 也許並不是沒有道理
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 關閉"焦腦器"能夠讓在死亡屏障兩邊旅行更為容易, 然而能夠活著從這裡出來的機會很小.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_lab_x8">
+		<text>X-8實驗室</text>
+	</string>
+	<string id="encyclopedia_locations_lab_x8_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]這裡進行的研究集中在許多不同的領域, 包括靈能場和"念域"的方面上, 以及所謂的"62號專案", 一種用神器碎片作為動力源的武器. 關於"焦腦器"的前沿研究也可能在這裡. 這裡只剩下了一些文件, 這裡的僱傭兵們看起來很需要它們.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• "62號專案"的研究後來被轉移到了扎頓的研究設施里.
+			\n• 有謠言說, 一個三人科研小隊在2006曾駐紮於此: N.A. 列別捷夫, E.F. 卡蘭查以及 V.I. 蘇軾洛夫, 然而與這相關的證據還有待發現.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_limansk">
+		<text>利曼斯克</text>
+	</string>
+	<string id="encyclopedia_locations_limansk_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]一座神秘的研究性城市. 1986年的事故之後, 這裡沒有任何官方的疏散行動, 但利曼斯克現在是一座空城. 2006年特異區正式形成之後, 它變得更加的不友好了, 城市周圍的異常點將整座城市與外界分割. 
+			\n2011年九月第二次大能量風暴之後, 異常點消失了, 潛行者們也涌入城市, 以尋找一條繞過"焦腦器"抵達核電站的道路, 因而還摧毀了此處的土匪和黑石. 現在, 部分異常點又回覆了, 破敗的建築和車輛橫在城市裡, 只有部分傭兵和黑石還在城市裡巡邏.
+			\n它位於死城的北部.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 死城
+			\n• 紅森林
+			\n• 廢棄醫院
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 守林人列斯尼克說, 即便實在最困難的條件下, 那些住在利曼斯克蘇聯時代的居民們對國家十分的忠誠.
+			\n• 利曼斯克也許是靈體波發射天線建設的第一個選址, 由於長期以來的缺乏維護, 它已經失去了功能.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_monolith_control_center">
+		<text>黑石控制中心</text>
+	</string>
+	<string id="encyclopedia_locations_monolith_control_center_text">
+		<text>
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n核電站石棺的一部分, 裡面有大量的計算機裝置, 它們的用途仍然不清楚, 但顯然是由以前的生態學家留下來的, 令人驚訝的是, 黑石很好地維護了這些裝置.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這裡也許是黑石之中最偉大的長者們同他們的"神"交談的地方.
+			\n• 抵達這個地方需要"方"製作的解碼器.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_monolith_war_lab">
+		<text>黑石戰爭實驗室</text>
+	</string>
+	<string id="encyclopedia_locations_monolith_war_lab_text">
+		<text>
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n以前這個地方是超念體存在之地, 自從他們的"死亡"之後, 這個神聖的地方則有黑石維護著.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 研究小隊的某些人, 意識到個人的智慧無法控制住念域影響他人, 於是他們製造了機器, 並將自己變爲了蜂巢意識.
+			\n• 從那以後, 他們把自己稱作超念體, 並立即控制並奴役了他們周圍的人員. 
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_outskirts">
+		<text>普城郊區</text>
+	</string>
+	<string id="encyclopedia_locations_outskirts_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]普里皮亞奇的城郊, 這兒的變異生物數量很多, 而且大多都很致命. 人類在此處的活動很少, 他們大多數是黑石和殭屍化的潛行者, 還有兩個分別由僱傭兵和潛行者控制的哨站, 他們都是奔著當地的實驗室去的.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 普里皮亞奇
+			\n• 木星工廠地下通道
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• "城郊"這個名字實際上是錯誤的, 但它很好地描述了這個區域的特點: 它位於潛行者所認為的普里皮亞奇的中心之外.
+			\n• 在2012年軍隊對核電站"坦途行動"失敗之後, 這個地方曾經有過一次疏散行動, 現在它只是一些十分有經驗的, 或者是十分愚蠢的潛行者的碰頭地點.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_pripyat">
+		<text>普里皮亞奇</text>
+	</string>
+	<string id="encyclopedia_locations_pripyat_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]這個城市曾經居住著為切爾諾貝利核電站工作的工程師, 這曾經是一座雄偉的城市, 現在則是一座充滿著黑石士兵的鬼城.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 雷達站
+			\n• 尤皮特
+			\n• 普城郊區
+			\n• 切爾諾貝利核電站
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 傳奇潛行者, 方, 在這裡有著一座墳墓, 他在軍事倉庫也有著一座墳墓.
+			\n• 這座城市是黑石防線上的樞紐.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_red_forest">
+		<text>紅森林</text>
+	</string>
+	<string id="encyclopedia_locations_red_forest_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]事實上, 這各區域只是紅森林最西邊能通過的地點, 但是, 由於變異生物的高強度活動, 這裡是特異區最危險的地方.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 軍事倉庫
+			\n• 尤皮特
+			\n• 利曼斯克
+			\n• 雷達站
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這個區域的名字"紅森林"來源於1986年切爾諾貝利事故后當地松樹的葉子在吸收了致命的輻射後轉變為淡紅色而來的.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_radar">
+		<text>雷達站</text>
+	</string>
+	<string id="encyclopedia_locations_radar_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]這是紅森林東面的部分, 一個死亡之地, 在這裡你很容易無蹤無跡就消失掉, 不管你究竟有多麼幸運. 森林的盡頭是"焦腦器"所在的地方, 不管是誰在缺少保護的情況下會立即發瘋並變為一隻殭屍開始沒日沒夜地遊離于特異區, 只有很少的人能夠帶著清醒的頭腦回來.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 軍事倉庫
+			\n• 紅森林
+			\n• 普里皮亞奇
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 儘管這個地方的名聲不怎麼好, 但是如果這裡能從黑石手中奪回來, 這將會是抵達特異區北部的最佳通道.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_rostok">
+		<text>羅斯托克</text>
+	</string>
+	<string id="encyclopedia_locations_rostok_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]紀律團的領地, 羅斯托克曾經是廢棄的工業園區, 但是部分被幫派重新佔領和利用, 它是來自特異區各個地方的普通潛行者和生態學家們的安全區. 在紀律團的監管下, 羅斯托克有兩個獨立的"企業"很紅火 - X100射線酒吧和阿尼的競技場, 一定要去看看喲.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 廢棄區
+			\n• 填埋場
+			\n• 軍事倉庫
+			\n• 卡車墓園
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 紀律團曾經在這個地方實施過"禁止武器"的法律: 在公共場合展示武器都會被處以死刑, 這個規定後來被廢除了.
+			\n• 紀律團曾經對進入此處的潛行者有著十分嚴格的審查, 並且會對中立的潛行者徵稅, 大部分菜鳥都被拒絕入內. 這個規定後來被廢除了.
+			\n• 2011年第二次大能量風暴之後, 羅斯托克被難以穿過的異常點區域所分割, 這種強制的隔離一直持續到了第二年的第三次大能量風暴, 之後自由軍通過此處輕易地抵達了軍事倉庫. 
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_sarcophagus">
+		<text>石棺</text>
+	</string>
+	<string id="encyclopedia_locations_sarcophagus_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]石棺包裹著其內地4號反應堆.
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 大多數關於許願石的傳說都指向這兒.
+			\n• 情理之中的是, 兇猛的黑石的士兵防禦著這個地方.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_truck_cemetery">
+		<text>卡車墓園</text>
+	</string>
+	<string id="encyclopedia_locations_truck_cemetery_text">
+		<text>
+			%c[pda_white]卡車墓園%c[ui_gray_1], 官方名稱是 %c[pda_green]拉索哈裝備墓地%c[ui_gray_1], 是一個大型的受輻射污染車輛的墓地.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n卡車墓園是西南部"填埋場"另一種版本, 這裡充滿了1986年用於處理事故的車輛.\n
+			\n這裡大多數的裝置在拋棄時仍然能夠正常工作, 只是因為輻射污染物根本無法處理. 而另一些裝置則是完全壞掉了. 但不管怎樣, 這些曾經搶救過切爾諾貝利的"英雄"們就這樣被留在這兒等著徹底腐爛.\n
+			\n然而, 自從2006年特異區形成以來, 這裡又有了生命, 有些時候這裡會有不同幫派之間的交火, 不過通常來說, 這裡是變異怪物理想的繁衍地.\n
+			\n儘管這個地方難以抵達, 潛行者們卻注意到某些車輛卻被慢慢扒光, 許多人認為有人 - 也許是軍隊的人, 正在拆除這裡的廢鐵並將它們非法出售.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 軍事倉庫
+			\n• 羅斯托克
+			\n• 黑谷
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 儘管這裡很危險, 但是土匪仍然在北部的檢查站建立了基地, 也許是爲了聯絡自由軍和黑谷的基地.
+			\n• 許多車輛的輻射開始消去, 也就是說一旦政府控制了這個區域, 它們很快就能夠被合法拆除.
+			\n• 這裡是某些偏執的潛行者藏匿自己物品的絕好地方, 因為很少有其他潛行者敢於面對危險的變異怪物和大量異常點去從乾草堆裡面找出一根針.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_wild_territory">
+		<text>廢棄區</text>
+	</string>
+	<string id="encyclopedia_locations_wild_territory_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]如果你很好奇羅斯托克在紀律團來這前的樣子的話, 那麼這個地方能夠給你一個準確感覺. 普通的潛行者很不喜歡直接穿過這個地方, 因為這兒要不充滿著變異怪物要不就是充滿了土匪和僱傭兵. 然而, 此地的混亂也充滿了機會 - 羅斯托克的紀律團軍官和酒吧的酒保常常會給這個地方的人設定懸賞.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 羅斯托克
+			\n• 填埋場
+			\n• 揚塔
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 紀律團曾經想把這塊地變為羅斯托克的一部分, 但是因為缺乏人力而不了了之.
+			\n• 這個地區曾經在2012年發生過一場大屠殺 - 在狼狗指揮下的僱傭兵消滅了一群通過此地的生態學家和他們的守衛, 只有兩個人活了下來, 而狼狗和他的小隊則被完全消滅了. 這些日子裡, 除了極個別的特例之外僱傭兵往往不會去管生態學家的事情.
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_yantar">
+		<text>揚塔</text>
+	</string>
+	<string id="encyclopedia_locations_yantar_text">
+		<text>
+			%c[pda_green]情報\n%c[ui_gray_1]傳說中的揚塔湖其實在多年前就乾涸了, 只留下一潭淺淺的沼澤. 這個地方充滿了潮氣和死亡, 以及那些不再是人類的東西. 靠經北部設施的潛行者常常聽見各種聲音, 有些時候直接變成瘋子或是加入行屍走肉的大軍. 大多數人到這裡來只是爲了和當地的生態學家 - 和藹可親的傢伙 - 他通常對神器和變異生物樣本出很高的價錢, 當然也提供各種工作.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 死城
+			\n• 廢棄區
+			\n• 農業研究所
+			\n \n%c[pda_yellow]趣聞%c[ui_gray_1]
+			\n• 這裡坐落著臭名昭著的"神蹟裝置", 一個讓無數潛行者發瘋的靈體能量發射器.
+			\n• 移動科研地堡被一位大佬運營著, 據說他是特異區里靈能防護方面的專家.
+			\n• 移動科研地堡曾經紀律團的士兵保護著, 但後來因為人力原因結束了, 現在生態學家們從各個幫派中招募人員作為長期的保鏢. 
+		</text>
+	</string>
+		
+	<string id="encyclopedia_locations_zaton">
+		<text>扎頓</text>
+	</string>
+	<string id="encyclopedia_locations_zaton_text">
+		<text>
+			%c[pda_white]扎頓%c[ui_gray_1], 也叫 %c[pda_white]死水%c[ui_gray_1], 是一處乾涸了的溪谷, 曾經這裡的河水引向普里皮亞奇.\n
+			\n%c[0,100,255,150]情報%c[ui_gray_1]
+			\n堆滿了各種小船, 駁船, 運輸船, 這個地方與其說是以前的工業碼頭, 但不如說是現在的沼澤.\n
+			\n這個地方的輻射劑量很低, 但很多地點都充斥著黑石士兵, 變異生物, 殭屍們.\n
+			\n儘管這裡離特異區不遠而且被黑石的領地所包圍, 這裡仍然有許多潛行者定居的地點如斯卡多夫斯克號和舍甫琴科號.
+			\n \n%c[pda_blue]毗鄰區域%c[ui_gray_1]
+			\n• 尤皮特
+			\n• 切爾諾貝利核電站
+			\n \n%c[0,100,255,150]趣聞%c[ui_gray_1]
+			\n• 土匪和潛行者以前在這裡保持著相對的和平, 大鬍子經常嘗試讓他們和平相處, 但這並不長久, 和平在2012年之後便不再存在.
+			\n• 據說一架擱淺了的駁船上有一個瘋子, 在探索這些船的時候最好不要站在門前開門.
+		</text>
+	</string>
+	
+</string_table>

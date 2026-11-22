@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_factions_other">
+		<text>陣營 (其它)</text>
+	</string>
+	
+	<string id="encyclopedia_factions_other_zombified">
+		<text>殭屍化潛行者</text>
+	</string>
+	<string id="encyclopedia_factions_other_zombified_text">
+		<text>
+			%c[pda_white]殭屍化潛行者%c[ui_gray_1] 是那些被強大的靈能場影響的人.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n這些行屍走肉沒有了原來所具備的一些高等能力, 僅殘留了一些條件反射類的技能, 無法按自主意識活動, 並且疼痛閾值較高.\n
+			\n隨著時間的流逝, 殭屍潛行者的健康將逐漸惡化, 最終會完全喪失人性, 併成為我們叫做殭屍的怪物.\n
+			\n但是與怪物不同的是, 殭屍潛行者能夠使用武器和工具, 並且經常進行群體行動或與黑石士兵合作.\n
+			\n%c[pda_green]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 不明\n• 服裝顏色: 多樣\n
+		</text>
+	</string>
+	
+</string_table>

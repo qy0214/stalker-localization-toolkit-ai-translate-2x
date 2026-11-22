@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+    <string id="st_save_only_when_sleeping">
+        <text>硬核模式存檔已啟用, 睡眠時和重生時自動存檔</text>
+    </string>
+
+    <string id="st_soulslike_your_items">
+        <text>裝有部分遺失物品的包裹</text>
+    </string>
+ 
+    <string id="set_spawn_button">
+        <text>設定緊急發信器</text>
+    </string>
+
+    <string id="st_soulslike_spawn_location_set">
+        <text>已更新定位, 如遇不測, 附近的潛行者會把你救回此處</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_generic">
+        <text>從恍惚中清醒后, 你發覺身處某個似曾相識的地方, 但對自己如何返回此處卻毫無頭緒 </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_generic">
+        <text>你渾身上下摸索了一番, 口袋裡好像多了些水和食物</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_generic">
+        <text>你在身上發現了一張帶有潦草地圖的字條, 某人用扭捏的筆跡試圖向你說明他在慌亂中將你的隨身物品連同一個簡易發信裝置放在了某個藏物點, 並留下了接收訊號的頻段: %s </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_generic">
+        <text>有人動過你的PDA, 還在地圖上打了個標記</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_1">
+        <text>哎? 原來你沒事嗎? 我發現你的時候還以為你死透了呢... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_2">
+        <text>難以置信, 你終於醒了過來! 我發誓你當時紮在土裡已經不喘氣了! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_3">
+        <text>喂, 我說, 你剛才肯定是在裝死吧? 難道是吃了復甦藥? 不管怎樣, 救人這種事我還是第一次干, 感覺還不錯!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_4">
+        <text>嗨! 你還好吧? 我剛才看到你登錄了PDA, 應該沒什麼大事... 還好趕上了, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_5">
+        <text>哈, 你肯定已經醒了吧, 當時你滿臉是血昏了過去, 有人拿了你的東西, 準備把你挖坑埋了來著, 還好我及時趕到... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_1">
+        <text>雖然覺得沒什麼必要, 不過我還是留了一些吃的在你揹包里, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_2">
+        <text>我放了些沒吃完的乾糧和水在你包里, 放心好了, 我還不缺食物, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_3">
+        <text>你的包里有一些食物和水, 也許不夠你填飽肚子, 但至少能幫你撐到活著回去吧, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_4">
+        <text>我把我自己的口糧留在你的包里了, 不用為我擔心, 其實我能感到你有某種特殊的使命, 所以, 就當是我請客好了! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_5">
+        <text>距離你設定發信器的時間已經很久了, 所以我留了點吃的和喝的給你, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_1">
+        <text>當時你的頭上都是血, 鬼知道你還記得什麼, 所以我乾脆用你的PDA做了標記, 萬一你要回去找東西呢? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_2">
+        <text>你的PDA上有我做的地圖示記, 如果你丟了東西, 可以回去碰碰運氣, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_3">
+        <text>當時情況危急, 沒時間拿你的七七八八了, 所以我在你PDA上打了標記, 你自己回去找吧, 丟了東西別怪到我身上就行, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_4">
+        <text>說起來, 你重的跟頭死豬一樣, 扛著你回來已經是極限了, 實在拿不動剩下的東西, 不過我在你PDA里打了記號, 你自己回去找找吧, 興許還在原地, 丟了也別來找我就是了, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_5">
+        <text>無論如何, 你還是應該減減肥, 加上我一共三個弟兄才把你拖回來, 你的東西我也在PDA里做了記號, 動作快的話應該還能找得到, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_1">
+        <text>在那種情形下, 把你弄回來已經讓我惹上大麻煩了, 所以我拿了一點你的東西作為回報, 不過分吧? 反正對於你來說都是身外之物而已, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_2">
+        <text>要知道, 我當時已經是自身難保, 所以我乾脆借用了一些你的東西, 剩下的我標記在你的PDA里了, 說是借, 但你不會真的回來找我要的吧? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_3">
+        <text>話雖如此, 但揹你回來的途中我的左後方有三隻攝魂怪在吸吸吸, 右邊還有五隻奇美拉在追追追, 而我這種雜魚也沒什麼好裝備, 所以只好讓你揹包里的東西物盡其用了, 剩下的都標記在你的PDA里, 不用謝我, 我只是順手牽... 順手救人而已, 嗯, 順手救人, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_4">
+        <text>其實, 當時我也受了重傷, 所以只好拿了些你的東西救急, 其餘的物品我已經給你標記了, 別怪我啊, 我要是掛了的話, 咱倆就都回不來了... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_5">
+        <text>講道理的話, 我這個人喜歡小偷小摸, 從來不會拿死人的東西, 但你還沒死, 所以這就不能怪我了吧? 雖然已經有人付了錢, 但你的那些東西就當作我的小費好了, 剩下的垃圾我都標記在你的PDA里, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_1">
+        <text>那麼, 祝你好運吧, 神秘的潛行者!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_2">
+        <text>那麼, 再會了! 潛行者...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_3">
+        <text>我覺得, 最好永遠不要再見了吧, 你這命大的傢伙...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_4">
+        <text>下次當心點吧, 沒準可就真死了!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_5">
+        <text>總之, 下次暈過去的時候請你換個好看點的姿勢...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_1">
+        <text>還有一件事, 其實有個鬼鬼祟祟的 %s小子先我一步發現你 - 我後來打聽了一下, 他應該是叫 %s 來著 - 正在亂搞你的槍, 好像還拆了什麼東西下來, 你拿到槍以後最好檢查一下; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_2">
+        <text>其實當我找到你的時候, 有個%s一樣打扮的人, 名字叫 %s, 正在拆你的武器, 我見過他, 經常倒賣一些很搶手的零件之類的, 所以你拿到武器之後好好檢查一下, 鬼知道這個哥們順走了什麼東西... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_3">
+        <text>你猜當我找到你的時候發現了什麼人? 一群%s ! 雖然我好言相勸, 但領頭的那個還是從你槍上硬是扯了什麼東西下來, 他說他叫%s, 說我多管閒事, 還拿槍對著我叫我滾蛋! 雖然我混的一般, 但也沒受過這個氣! 拜託你有空幫我教訓一下這個裝B犯, 噢, 別忘了先把你的槍修好!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_4">
+        <text>另外, 本來不想說的, 其實我找到你的時候, 一群變異犬正準備啃你的屁股, 其中一個可能眼神不好, 抓住你的槍就啃了起來, 我聽到咯嘣一聲, 如果不是它的牙齒掉了, 那就一定是你的槍壞了, 緊接著走過來了一支%s的巡邏隊, 於是我就和他們一起殺光了變異犬, 巡邏隊里有個人叫%s, 和我有交情, 就這樣, 我才順利地把你拖了回來; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_5">
+        <text>順帶一提... 如果之後你發現你的槍有問題的話, 我可以很負責任的告訴你: 當我和我的%s朋友發現你時, 其實看到你用很微妙的姿勢卡在了地面, 身體還在不停的抽搐, 脖子和四肢都伸長成麵條一樣, 我聽說這是一種新的異常現象, 叫做"BUG" - 一種空間不穩定造成的區域性形變, 你的槍一定是在那個時候搞壞了, 真是可惜, 好在你沒事, 只是肩膀脫臼而已... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_1">
+        <text>我找到你時, 有個穿著 %s 制服的傢伙在搜你的身, 我的PDA比較"高級", 所以我查到了他的名字: %s, 之後我對著他的位置開了一槍 - 也不知道打中沒有 - 他就跑了, 如果你丟了東西, 去找那個傢伙吧, 肯定還在他身上; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_2">
+        <text>我這麼晚才去救你, 是因為一支 %s 的運輸隊一直停在你附近不走, 我躲在旁邊聽到一個人喊: "%s ! 搞快點! 頭兒等不急了!", 這時我才看到一個人影在你身上翻來翻去, 他好像拿了些東西, 還往你身上踹了一腳才離開, 所以, 你先把在PDA上打了一半準備發給我的髒話給刪了, 然後動作快點, 說不定還能追上他; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_3">
+        <text>我老遠就看到你掛在樹上, 但是附近有很多 %s 的成員, 我根本沒辦法接近, 其中有個傢伙把你的揹包從樹上拽了下來, 接著就開始坐在地上吃你的東西, 還把你的煙都散給別人抽, 最後還在你身上做連續蹲起的動作 - 我不太懂那是什麼意思, 當他們經過我躲藏的灌木時, 我認出來了那個人: %s , 是個出了名的爛人, 這種有便宜就占的傢伙, 我是不會介意你事後稍微教訓一下他的... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_4">
+        <text>發現你純屬偶然, 我本來已經放棄了搜尋, 一路小跑著往回走, 結果被你的身體絆了一跤, 摔到了一個坑裡人事不省; 當我醒來時, 發現一個 %s 模樣的傢伙正在掏我的包, 可能是以為我死了吧, 看到我突然睜開眼睛, 他就一邊發出娘娘腔的叫聲一邊跑掉了, 他手裡拿著的PDA都直接扔了出去! 我打開看到了這個名字: %s , 他肯定已經拿走了你包里的東西, 快去找他吧! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_5">
+        <text>那個... 我多說一句, 你認識 %s 那邊的朋友嗎? 其實, 我看到你的時候, 那幫人中的某個傢伙正在對著你做一些下流的事情, 簡直變態, 我實在看不下去, 於是開了幾槍, 他褲子都沒來得及穿就跑掉了, 我看了他褲兜里的PDA才知道他的名字: %s, 如果你丟了什麼值錢的玩意, 去找他就對了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_1">
+        <text>我找到你的時候好巧不巧, 正好趕上一場能量風暴, 而我只來得及把你拖走, 你的揹包什麼的都在原地, 這裡可是特異區, 你懂的, 所以風暴結束后我又回去把你的東西藏好才走, 你可以用射頻接收器監聽 %s 頻段來找到你的包, 沒錯, 我在裡面放了個簡易發信器, 不用謝我了, 這都是上面的安排, 鬼知道你是什麼來頭, 不過我也不想知道, 這地方詭異的事情已經夠我受的了... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_2">
+        <text>你應該慶幸遇到我這種專業人士, 你的東西都被我藏好了, 裡面還有一個簡易發信裝置, 你去搞一個射頻接收器, 然後調到 %s 頻段, 當接近的時候會有提示音的, 我把頻段數字寫在一張紙條上給你了, 免得你忘記, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_3">
+        <text>當時四周都是土匪的人, 你的東西留在那裡實在太危險, 所以我存到了附近一個只有我知道的藏物點, 你用射頻接收器, 調到 %s 頻段就能收到我放在裡面發信器的訊號, 頻段我也寫到了一張紙條上給你了, 具體方法不用我再教你了吧? 據我所知, 像你這樣有背景的人, 都不是什麼善茬, 給新手的那一套說辭我終於可以省省了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_4">
+        <text>你問我為什麼只把你擡回來? 那你想想自己往揹包裡面裝了什麼? 那成噸的垃圾指望我一個人搬? 雖說這個工作本來就是體力活, 上頭給的報酬也不少, 但你那些七七八八的我實在搬不動, 於是我就拖到附近一個藏物點給埋了起來, 放心好了, 我相信就算我放著不管, 也沒人會往你那堆垃圾多看兩眼, 不過我是個說到做到的人, 所以我還是放了發信器進去, 甚至還寫了個備忘的紙條塞到你的褲兜里, 用射頻接收器的 %s 頻率去找你的垃圾吧! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_5">
+        <text>在這個鬼地方, 哪怕是掉在地上的一顆螺栓, 轉眼都會被人撿跑, 所以你的東西我都幫你藏到了安全的地方, 你的包里有張紙條, 記錄了一個頻段數字, 簡單來說, 你用射頻接收器調到 %s 這個頻率, 然後接近那裡的話就能收到提示音了, 因為我在裡面放了一個發信器, 雖說是安全的地方, 但也只是相對而已, 如果丟了什麼東西的話, 肯定不是我拿的就是了...</text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_1">
+        <text>我把你的東西藏起來了, 就在你PDA里標記的地方, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_2">
+        <text>你包里的零碎玩意兒, 我都塞到附近一個藏物點了, 順著你PDA里的標記去找吧!</text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_3">
+        <text>你這傢伙下次最好少帶點東西, 爲了藏你的垃圾, 我差點被豬給頂飛! 地點我標記在你的PDA里了, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_4">
+        <text>看著你包里亂七八糟的德性, 我就想到了我曾是菜鳥的日子, 按照我給你PDA里的標記去找吧, 應該不會有人知道那個藏物點的, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_5">
+        <text>你的物品都在一個安全的地方呆著, 如果不想節外生枝, 就趕緊按照我給你PDA里的標記去拿吧!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_1">
+        <text>你還真是幸運, 好在我們及時發現了你, 你怎麼會跑到%s來的? 而且還就帶這麼點裝備? 多虧了我的弟兄們, 不然你連皮帶骨都已經爛在下面了, 你的裝備應該沒人動過, 如果少了東西, 不要怪到我們頭上...</text>
+    </string>
+    
+    <string id="st_soulslike_rescuer_indoor_2">
+        <text>我說老弟, 你是怎麼想的? 穿著一堆破爛一個人跑到%s這裡, 一副完全沒有準備好的樣子, 這可不是外面, 如果沒人及時來救你的話, 你早就涼透了! 真是佩服你的勇氣, 好在這鬼地方沒什麼其他人來轉, 你的物品應該都還在, 如果有機會的話, 你真應該請我喝一杯! 哈, 開玩笑的, 爲了救你, 上頭還真是肯花錢呢...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_3">
+        <text>呵, 瞧瞧這是誰, 這次你怎麼又跑來了 %s ? 我有時候很好奇, 你到底來特異區幹嘛的? 搜尋神器? 還是找什麼人? 算了, 反正只要有人付我錢, 我也可以不關心這些細節...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_4">
+        <text>好吧, 這次是死在了%s, 我上次說過什麼來著? 你還真是不給人省心啊, 知道上面爲了救你下了多少血本嗎? 你的東西應該不會少的, 畢竟除了你, 和跟在你屁股後面救你的我們, 還會有誰去那種鬼地方么? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_5">
+        <text>哇! 這是真的! 我還以為不死人什麼的都是瞎扯! 喂, 你是怎麼做到的? 是把某種神器給磨成粉吞進肚子了? 還是嵌在腦袋上了? 運氣好? 別騙人了, 每次你都能被救活, 也實在太巧了吧? 不過, 你的裝備好像沒什麼特別的, 也沒人動過你的揹包, 真是萬幸! 所以應該說什麼來著... 讚美太陽?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_1">
+        <text>關於你屁股上的傷, 我實際上不想講的, 但那個吸血怪實在是太大了, 我只好先用你擋了一下... 所以你的揹包和左半邊屁股都掉了下去, 你回去拿東西的時候要小心點, 鬼知道那裡還有什麼怪物</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_2">
+        <text>對於我這樣的獵手來說, 趕跑那些準備去啃你的野豬什麼的並非難事, 我擔心的是那些更大的怪物會不會聞聲趕來... 啊, 我難道沒有告訴你, 你的揹包還在那裡嗎? 哈哈, 管他呢, 反正都是些垃圾, 不要也可以的吧?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_3">
+        <text>是的, 我承認當那個史諾克把管子插進昏迷的你嘴裡的時候, 我猶豫了一下, 但訓練有素的我還是及時開了槍, 只不過好像打中了你的揹包, 應該無所謂的吧, 而你應該感謝我阻止了那些噁心怪物繼續褻瀆你的身體, 之後我扛起你就跑, 爲了引開它們的注意力, 我就又把你的揹包丟了出去, 所以我的任務完成的還算完美這一點, 你是同意的吧?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_4">
+        <text>說真的, 那個地方實在太危險了, 當時我身上的子彈也用完了, 根本沒辦法驅趕那些啃你肚臍眼的怪物, 但好歹我靈光一現, 拿起你的揹包就丟到了旁邊的爆燃異常點, 轟! 的一聲就把那些奇形怪狀的玩意兒給嚇沒影了, 當然, 之後我才想起來我身上其實是有螺栓的, 只不過情況危急, 偶爾腦子卡住也是可以理解的吧? 至於怎麼取回包裹這件事情, 好像不在我的工作範圍, 你自己小心怪物就是了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_5">
+        <text>我有說過我超級討厭豚獸這件事嗎? 尤其是它們吞吐東西時的光景, 實在是難以形容, 所以在當時那個瞬間, 到底應該把你從那隻老豚獸缺了牙還流著膿液的巨口中拉出來, 還是應該丟下你不管, 我的內心是做了一番鬥爭的, 扛著你回來之後我才發現你的揹包不見了, 也許還在那個豚獸肚子里也說不定? 不過這就不在我的能力範圍了, 畢竟, 我噁心得已經一天沒吃東西了...</text>
+    </string>
+
+</string_table>

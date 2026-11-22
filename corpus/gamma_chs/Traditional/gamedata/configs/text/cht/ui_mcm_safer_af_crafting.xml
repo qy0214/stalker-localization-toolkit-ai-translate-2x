@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+			
+	<string id="ui_mcm_safe_af_craft_title">
+		<text>增幅和融合神器的操作無需再進行拆箱/裝箱的扯淡行為 - 未裝箱的神器輻射將被物品欄中的空鉛盒吸收, 就像它已經被裝進去了一樣</text>
+	</string>
+	
+	<string id="ui_mcm_safe_af_craft_empty_lead_absorb_enabled">
+		<text>空鉛盒吸收物品欄中的輻射</text>
+	</string>
+	<string id="ui_mcm_safe_af_craft_empty_lead_absorb_enabled_desc">
+		<text>物品欄中如果有空鉛盒, 則同一個物品欄中裸露的神器散發的輻射會被吸收, 此效果相容攜帶型工作臺的箱子</text>
+	</string>
+	
+	<string id="ui_mcm_safe_af_craft_empty_lead_absorb_wshop_only">
+		<text>* 僅當含有神器熔爐的工作臺打開時</text>
+	</string>
+	<string id="ui_mcm_safe_af_craft_empty_lead_absorb_wshop_only_desc">
+		<text>空鉛盒吸收裸露神器的輻射這種事情僅發生在有神器熔爐的工作臺打開的時候</text>
+	</string>
+
+	
+	<string id="ui_mcm_safe_af_craft_melter_absorb_enabled">
+		<text>神器熔爐吸收所有神器輻射</text>
+	</string>
+	<string id="ui_mcm_safe_af_craft_melter_absorb_enabled_desc">
+		<text>有神器熔爐的工作臺在打開時會吸收所有輻射, 不管物品欄中是否有空鉛盒</text>
+	</string>
+
+	
+</string_table>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_patches_by_hotkey_title">
+		<text>陣營臂章快速撕貼</text>
+	</string>
+	<string id="ui_mcm_menu_patches_by_hotkey">
+		<text>陣營臂章撕貼快捷鍵</text>
+	</string>
+
+	<string id="ui_mcm_patches_by_hotkey_enabled">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_patches_by_hotkey_key">
+		<text>快速撕貼臂章快捷鍵</text>
+	</string>
+	
+	<string id="st_patches_by_hotkey_apply_patch">
+		<text>貼上陣營臂章</text>
+	</string>
+	<string id="st_patches_by_hotkey_no_patch">
+		<text>沒有陣營臂章可以貼</text>
+	</string>
+	<string id="st_patches_by_hotkey_remove_patch">
+		<text>撕下陣營臂章</text>
+	</string>
+	
+	
+</string_table>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_aol_hf">
+        <text>藏身处家具</text>
+    </string>
+
+	<string id="ui_mcm_aol_hf_bind_left">
+		<text>顺时针旋转家具</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_right">
+		<text>逆时针旋转家具</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_bind_up">
+		<text>向上移动家具</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_down">
+		<text>向下移动家具</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_place">
+		<text>放置家具</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_bind_collision">
+		<text>切换碰撞检查</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_disable_bbox">
+		<text>放置期间禁用边界框</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_use_ingame_time">
+		<text>照明型家具显示游戏内时间</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_update_mcm">
+		<text>更新 MCM 来设置键键位,默认方向键旋转家具,F键放置家具 汉化BY BILIBILI@蠢了个乐</text>
+	</string>
+
+
+</string_table>

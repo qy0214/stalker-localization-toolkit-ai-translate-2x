@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+<!--
+M1A1
+-->
+
+	<string id="st_mag_m1a1_11.43x23_fmj">
+		<text>标准 .45 ACP M1A1 弹匣</text>
+	</string>
+	<string id="st_mag_m1a1_11.43x23_fmj_descr">
+		<text>
+            M1A1 的 30 发弹匣.\n\n
+			%c[d_purple] • %c[ui_gray_2] 同样适用于汤姆逊M1921式冲锋枪.
+		</text>
+	</string>
+
+	
+	<string id="st_mag_1921_11.43x23_fmj">
+		<text>标准 .45 ACP 1921 弹鼓</text>
+	</string>
+	<string id="st_mag_1921_11.43x23_fmj_descr">
+		<text>
+            50 发弹鼓,用于汤姆逊M1921式冲锋枪. \n\n
+			%c[d_purple] • %c[ui_gray_2] 不适用于M1A1,因为他们弹仓不一样.
+		</text>
+	</string>
+	
+</string_table>

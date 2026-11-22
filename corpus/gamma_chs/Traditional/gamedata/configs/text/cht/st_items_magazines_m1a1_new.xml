@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+<!--
+M1A1
+-->
+
+	<string id="st_mag_m1a1_11.43x23_fmj">
+		<text>標準 .45 ACP M1A1 彈匣</text>
+	</string>
+	<string id="st_mag_m1a1_11.43x23_fmj_descr">
+		<text>
+            M1A1 的 30 發彈匣.\n\n
+			%c[d_purple] • %c[ui_gray_2] 同樣適用於湯姆遜M1921式衝鋒鎗.
+		</text>
+	</string>
+
+	
+	<string id="st_mag_1921_11.43x23_fmj">
+		<text>標準 .45 ACP 1921 彈鼓</text>
+	</string>
+	<string id="st_mag_1921_11.43x23_fmj_descr">
+		<text>
+            50 發彈鼓,用於湯姆遜M1921式衝鋒鎗. \n\n
+			%c[d_purple] • %c[ui_gray_2] 不適用于M1A1,因為他們彈倉不一樣.
+		</text>
+	</string>
+	
+</string_table>

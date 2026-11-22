@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_cap_af_weather_options">
+		<text>天氣</text>
+	</string>
+	<string id="st_cap_af_event_options">
+		<text>事件</text>
+	</string>
+	<string id="st_cap_af_moon_options">
+		<text>夜晚</text>
+	</string>
+	<string id="st_cap_af_default_options">
+		<text>特效</text>
+	</string>
+	<string id="st_cap_af_blowout">
+		<text>能量風暴</text>
+	</string>
+	<string id="st_cap_af_fallout">
+		<text>輻射塵</text>
+	</string>
+	<string id="st_cap_af_psi_storm">
+		<text>脈衝風暴</text>
+	</string>
+	<string id="st_cap_check_enable_blowout">
+		<text>能量風暴已啟用</text>
+	</string>
+	<string id="st_cap_check_enable_fallout">
+		<text>輻射塵已啟用</text>
+	</string>
+	<string id="st_cap_check_enable_psi_storm">
+		<text>脈衝風暴已啟用</text>
+	</string>
+
+	<string id="st_cap_fate">
+		<text>NPC的命運</text>
+	</string>
+	<string id="st_cap_warning">
+		<text>警告</text>
+	</string>
+	<string id="st_cap_task">
+		<text>任務</text>
+	</string>
+	<string id="st_cap_freq">
+		<text>頻率</text>
+	</string>
+	
+	<string id="st_list_freq_12">
+		<text>每 6 - 12 小時</text>
+	</string>
+	<string id="st_list_freq_24">
+		<text>每 12 - 24 小時</text>
+	</string>
+	<string id="st_list_freq_48">
+		<text>每 1 - 2 天</text>
+	</string>
+	<string id="st_list_freq_96">
+		<text>每 2 - 4 天</text>
+	</string>
+
+	<string id="st_list_fate_killatend">
+		<text>能量風暴結束時死亡</text>
+	</string>
+	<string id="st_list_fate_killatwave">
+		<text>隨著能量風暴的推進而死亡</text>
+	</string>
+	<string id="st_list_fate_turntozombie">
+		<text>變成殭屍</text>
+	</string>
+	<string id="st_list_fate_explode">
+		<text>撕成碎片</text>
+	</string>
+	<string id="st_list_fate_poison">
+		<text>輻射/化學中毒</text>
+	</string>
+	<string id="st_list_fate_none">
+		<text>無傷</text>
+	</string>
+	<string id="st_list_fate_kill">
+		<text>在奇點放電時死亡</text>
+	</string>
+	<string id="st_list_fate_killorturn">
+		<text>死亡或變成殭屍</text>
+	</string>
+	<string id="st_list_warning_radio_siren">
+		<text>廣播和汽笛</text>
+	</string>
+	<string id="st_list_warning_radio">
+		<text>廣播</text>
+	</string>
+	<string id="st_list_warning_siren">
+		<text>汽笛</text>
+	</string>
+	<string id="st_list_warning_none">
+		<text>不警告</text>
+	</string>
+	<string id="st_list_task_give">
+		<text>發表任務</text>
+	</string>
+	<string id="st_list_task_none">
+		<text>不發表任務</text>
+	</string>
+	<string id="st_cap_moon_phases">
+		<text>月相</text>
+	</string>
+	<string id="st_cap_night_brightness">
+		<text>晚上環境亮度</text>
+	</string>
+	<string id="st_list_night_brightness_dark">
+		<text>暗夜</text>
+	</string>
+	<string id="st_list_night_brightness_slight">
+		<text>稍微更明亮的夜晚</text>
+	</string>
+	<string id="st_list_night_brightness_medium">
+		<text>中明亮的夜晚</text>
+	</string>
+	<string id="st_list_night_brightness_bright">
+		<text>非常明亮的夜晚</text>
+	</string>
+	<string id="st_cap_weather_presets">
+		<text>預設:</text>
+	</string>
+	<string id="st_cap_weather_balance_presets">
+		<text>平衡</text>
+	</string>
+	<string id="st_cap_weather_length_presets">
+		<text>長度</text>
+	</string>
+	<string id="st_period_length_2h">
+		<text>2小時</text>
+	</string>
+	<string id="st_period_length_3h">
+		<text>3小時</text>
+	</string>
+	<string id="st_period_length_4h">
+		<text>4小時</text>
+	</string>
+	<string id="st_period_length_5h">
+		<text>5小時</text>
+	</string>
+	<string id="st_period_length_6h">
+		<text>6小時</text>
+	</string>
+	<string id="st_period_length_7h">
+		<text>7小時</text>
+	</string>
+	<string id="st_period_length_8h">
+		<text>8小時</text>
+	</string>
+	<string id="st_period_length_9h">
+		<text>9小時</text>
+	</string>
+	<string id="st_period_length_10h">
+		<text>10小時</text>
+	</string>
+	<string id="st_period_length_11h">
+		<text>11小時</text>
+	</string>
+	<string id="st_period_length_12h">
+		<text>12小時</text>
+	</string>
+	<string id="st_period_length">
+		<text>週期長度</text>
+	</string>
+	<string id="st_cap_moon_cycle_length">
+		<text>月亮的週期長度</text>
+	</string>
+	<string id="st_cap_moon_cycle_length_8">
+		<text>8天</text>
+	</string>
+	<string id="st_cap_moon_cycle_length_28">
+		<text>28天</text>
+	</string>
+	<string id="st_cap_moon_static">
+		<text>不要改變和顯示</text>
+	</string>
+	<string id="st_cap_moon_phase_0">
+		<text>新月</text>
+	</string>
+	<string id="st_cap_moon_phase_1">
+		<text>上殘月</text>
+	</string>
+	<string id="st_cap_moon_phase_2">
+		<text>上弦月</text>
+	</string>
+	<string id="st_cap_moon_phase_3">
+		<text>張弦月</text>
+	</string>
+	<string id="st_cap_moon_phase_4">
+		<text>滿月</text>
+	</string>
+	<string id="st_cap_moon_phase_5">
+		<text>張弦月</text>
+	</string>
+	<string id="st_cap_moon_phase_6">
+		<text>下弦月</text>
+	</string>
+	<string id="st_cap_moon_phase_7">
+		<text>下殘月</text>
+	</string>
+	<string id="st_list_weather_balance_preset_default">
+		<text>各項平衡</text>
+	</string>
+	<string id="st_list_weather_balance_preset_good">
+		<text>大部分好</text>
+	</string>
+	<string id="st_list_weather_balance_preset_bad">
+		<text>大部分壞</text>
+	</string>
+	<string id="st_list_weather_balance_preset_custom">
+		<text>自定義</text>
+	</string>
+	<string id="st_list_weather_length_preset_default">
+		<text>不同時期的長度</text>
+	</string>
+	<string id="st_list_weather_length_preset_short">
+		<text>短</text>
+	</string>
+	<string id="st_list_weather_length_preset_long">
+		<text>長</text>
+	</string>
+	<string id="st_list_weather_length_preset_custom">
+		<text>自定義</text>
+	</string>
+	<string id="st_list_periods_clear">
+		<text>晴天</text>
+	</string>
+	<string id="st_list_periods_clear_foggy">
+		<text>晴天 / 霧天</text>
+	</string>
+	<string id="st_list_periods_foggy">
+		<text>霧天</text>
+	</string>
+	<string id="st_list_periods_foggy_rainy">
+		<text>霧天 / 雨天</text>
+	</string>
+	<string id="st_list_periods_rainy">
+		<text>雨天</text>
+	</string>
+	<string id="st_list_periods_stormy">
+		<text>暴雨</text>
+	</string>
+	<string id="st_btn_load_color_balance">
+		<text>載入預設的顏色平衡和亮度設定</text>
+	</string>
+	<string id="st_btn_load_default_settings">
+		<text>恢復預設的天氣、事件和月亮設定</text>
+	</string>
+	<string id="st_msg_after_save">
+		<text>設定將與下一個儲存遊戲一起儲存</text>
+	</string>
+	<string id="st_msg_load_user">
+		<text>是否要載入控制檯預設的顏色平衡和亮度設定?</text>
+	</string>
+	<string id="st_msg_load_default_settings">
+		<text>是否要載入預設的天氣、事件和月亮設定?</text>
+	</string>
+	<string id="st_msg_load_user_done">
+		<text>已載入預設控制檯顏色平衡和亮度設定</text>
+	</string>
+	<string id="st_msg_load_default_settings_done">
+		<text>預設的天氣、事件和月亮設定已恢復</text>
+	</string>
+	
+	<string id="st_cap_weather_occurrence">
+		<text>發生率</text>
+	</string>
+	<string id="st_cap_weather_period">
+		<text>週期</text>
+	</string>
+	<string id="st_occurrence_rare">
+		<text>罕見</text>
+	</string>
+	<string id="st_occurrence_zero">
+		<text>沒有</text>
+	</string>
+	<string id="st_occurrence_regular">
+		<text>定期</text>
+	</string>
+	<string id="st_wthr_clear">
+		<text>晴天</text>
+	</string>
+	<string id="st_wthr_partly">
+		<text>多雲</text>
+	</string>
+	<string id="st_wthr_cloudy">
+		<text>陰天</text>
+	</string>
+	<string id="st_wthr_rain">
+		<text>雨天</text>
+	</string>
+	<string id="st_wthr_storm">
+		<text>暴雨</text>
+	</string>
+	<string id="st_wthr_foggy">
+		<text>霧天</text>
+	</string>
+	
+	<string id="st_cap_af_eff_tiny">
+		<text>動態塵埃效果</text>
+	</string>
+	<string id="st_cap_af_eff_fog">
+		<text>動態霧效果</text>
+	</string>
+	<string id="st_cap_af_eff_wind">
+		<text>動態風效果</text>
+	</string>
+	<string id="st_cap_af_eff_rain">
+		<text>動態雨效果</text>
+	</string>
+</string_table>

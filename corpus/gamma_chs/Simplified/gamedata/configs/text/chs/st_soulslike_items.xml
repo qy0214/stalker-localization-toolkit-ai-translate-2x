@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_soulslike_rescuers_radio_frequency_note_name">
+		<text>一张字写得很难看的字条</text>
+	</string>
+    
+	<string id="st_soulslike_rescuers_radio_frequency_note_desc">
+		<text>好像是把你救回来的潜行者留下的字条</text>
+	</string>
+
+	<string id="st_soulslike_rescuers_radio_frequency_note_message">
+		<text>这张字条用扭捏的笔迹试图向你说明丢失的物品位置, 字条的最后写了一个频率: %s, 还有"%s"的字样</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,625 @@
+	<?xml version="1.0" encoding="UTF-8"?>
+	<string id="ui_mcm_menu_21_game">
+		<text>21点</text>
+	</string>
+	
+	<string id="ui_mcm_21_game_card_game_21_minimum_rate">
+		<text>设置最低下注</text>
+	</string>
+	
+	<string id="ui_mcm_21_game_value_card_21_max_rate">
+		<text>设置最高下注</text>
+	</string>	
+	
+	
+	<string id="st_unique_treasure_spot_descr">
+		<text>物品箱. 密码</text>
+	</string>
+	<string id="st_question_game_reward_advice">
+		<text>赢得了建议:</text>
+	</string>
+	<string id="st_question_game_reward_money">
+		<text>赢得了金钱:</text>
+	</string>
+	<string id="st_remote_charge_delay_deactivated">
+		<text>计时: 禁用</text>
+	</string>
+	<string id="st_remote_charge_delay_timer">
+		<text>计时:</text>
+	</string>
+	<string id="st_remote_charge_delay_value">
+		<text>秒.</text>
+	</string>
+	<string id="st_remote_charge_spot">
+		<text>获取 RS-15</text>
+	</string>
+	<string id="st_21_point_your_card_value">
+		<text>你的点数:</text>
+	</string>
+	<string id="st_21_point_enemy_card_value">
+		<text>对手点数:</text>
+	</string>
+	<string id="st_21_point_rate_field">
+		<text>你赌自己赢:</text>
+	</string>
+	<string id="st_21_point_infoline_1">
+		<text>在你的钱包:</text>
+	</string>
+	<string id="st_21_point_infoline_2">
+		<text>最低下注 - 50, 最高下注 -</text>
+	</string>
+	<string id="st_21_point_money">
+		<text>卢布.</text>
+	</string>
+	<string id="st_21_point_info_about_your">
+		<text>德格捷列夫: 评价</text>
+	</string>
+	<string id="st_21_point_info_about_enemy">
+		<text>: 失败率</text>
+	</string>
+	<string id="st_21_point_web_money">
+		<text>电子货币.</text>
+	</string>
+	<string id="st_21_point_winner_your_1">
+		<text>你赢了! 获得了 -</text>
+	</string>
+	<string id="st_21_point_winner_your_2">
+		<text>卢布. 点数合计: 你 -</text>
+	</string>
+	<string id="st_21_point_winner_your_3">
+		<text>, 对手 -</text>
+	</string>
+	<string id="st_21_point_winner_enemy_1">
+		<text>你输了! 失去了 -</text>
+	</string>
+	<string id="st_21_point_winner_enemy_2">
+		<text>卢布. 点数合计: 你 -</text>
+	</string>
+	<string id="st_21_point_winner_enemy_3">
+		<text>, 对手 -</text>
+	</string>
+	<string id="st_21_point_winner_equally_1">
+		<text>平局. 点数合计: 你 -</text>
+	</string>
+	<string id="st_21_point_winner_equally_2">
+		<text>, 对手 -</text>
+	</string>
+	<string id="st_help_wounded_payment">
+		<text>获得了救命钱</text>
+	</string>
+	<string id="st_mechanic_stripping_count">
+		<text>几个箱子</text>
+	</string>
+	<string id="st_rank_event_present">
+		<text>等级上升</text>
+	</string>
+	<string id="st_bankir_web_money_course_1">
+		<text>兑换比率:</text>
+	</string>
+	<string id="st_bankir_web_money_course_2">
+		<text>你的电子货币:</text>
+	</string>
+	<string id="st_bankir_web_money_course_3">
+		<text>1 电子货币 -</text>
+	</string>
+	<string id="st_bankir_web_money_course_4">
+		<text>戈比.</text>
+	</string>
+	<string id="st_bankir_web_money_course_5">
+		<text>卢布.</text>
+	</string>
+	<string id="st_event_headshot">
+		<text>你赢得了头奖</text>
+	</string>
+	<string id="st_event_iam_find">
+		<text>你发现了</text>
+	</string>
+	<string id="st_event_find_secret">
+		<text>-个 SGM 物品箱.</text>
+	</string>
+	<string id="st_event_find_deserve">
+		<text>-个 私人物品箱.</text>
+	</string>
+	<string id="st_custom_goods_need_rank">
+		<text>需要等级:</text>
+	</string>
+	<string id="st_booty_count">
+		<text>战利品数量</text>
+	</string>
+	<string id="st_booty_costs">
+		<text>数量:</text>
+	</string>
+	<string id="st_add_damage">
+		<text>伤害</text>
+	</string>
+	<string id="st_booty_shtuk">
+		<text>PC.</text>
+	</string>
+	<string id="st_need_rank">
+		<text>需要等级 >=</text>
+	</string>
+	<string id="st_currert_rank">
+		<text>目前等级:</text>
+	</string>
+	<string id="st_af_type_1">
+		<text>支持: 第1类神器</text>
+	</string>
+	<string id="st_af_type_2">
+		<text>支持: 第2类神器</text>
+	</string>
+	<string id="st_af_type_3">
+		<text>支持: 第3类神器</text>
+	</string>
+	<string id="st_af_type_all">
+		<text>支持: 第1,2,3类神器</text>
+	</string>
+	<string id="st_bodyguard_price">
+		<text>服务消费:</text>
+	</string>
+	<string id="st_bankir_deposit_title">
+		<text>保存数目: </text>
+	</string>
+	<string id="st_bankir_percent_title">
+		<text>保存收入: </text>
+	</string>
+	<string id="st_bankir_money">
+		<text>你的钱包里 =</text>
+	</string>
+	<string id="st_bankir_counter">
+		<text>存储账户 :</text>
+	</string>
+	<string id="st_bankir_counter2">
+		<text>存款账户 :</text>
+	</string>
+	<string id="st_bankir_ru">
+		<text>卢比</text>
+	</string>
+	<string id="st_bankir_last">
+		<text>上一次贡献资金 :</text>
+	</string>
+	<string id="st_bankir_result">
+		<text>总额 =</text>
+	</string>
+	<string id="st_bankir_percent">
+		<text>明日总量占比 :</text>
+	</string>
+	<string id="st_bankir_percent_today">
+		<text>今日总量占比 :</text>
+	</string>
+	<string id="st_trader_order_count">
+		<text>商品: </text>
+	</string>
+	<string id="st_order_cost">
+		<text>出价:</text>
+	</string>
+	<string id="st_statistic_value_of">
+		<text>的</text>
+	</string>
+	<string id="st_weapon_damage">
+		<text>造成伤害 </text>
+	</string>
+	<string id="st_weapon_distance">
+		<text>范围 </text>
+	</string>
+	<string id="st_detonation_radius">
+		<text>爆炸半径 </text>
+	</string>
+	<string id="st_detonation_scraps">
+		<text>碎裂弹片</text>
+	</string>
+	<string id="st_def_meters">
+		<text>米</text>
+	</string>
+	<string id="st_detonation_time">
+		<text>触发时间 </text>
+	</string>
+	<string id="st_def_second">
+		<text>秒</text>
+	</string>
+	<string id="st_actor_box_currert_weight">
+		<text>私人物品箱中物品的数量 =</text>
+	</string>
+	<string id="st_actor_box_currert_mass">
+		<text>体积 =</text>
+	</string>
+	<string id="st_actor_box_transportation_cost">
+		<text>|  消耗 =</text>
+	</string>
+	<string id="st_mod_version_title">
+		<text>版本</text>
+	</string>
+	<string id="st_sigerous_mod_successfully_started">
+		<text>加载成功...</text>
+	</string>
+        <string id="st_pri_zone_cleaning_add">
+		<text>剩余僵尸:</text>
+	</string>
+	<string id="st_pri_zone_cleaning_add2">
+		<text>人类</text>
+	</string>
+	<string id="st_task_execution_time_add1">
+		<text>(剩余</text>
+	</string>
+	<string id="st_task_execution_time_add2">
+		<text>分钟)</text>
+	</string>
+	<string id="st_task_execution_time_add3">
+		<text>奖励时间)</text>
+	</string>
+	<string id="st_get_employer_kill_stalker">
+		<text>独行者</text>
+	</string>
+	<string id="st_get_employer_kill_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="st_get_employer_kill_merc">
+		<text>佣兵</text>
+	</string>
+	<string id="st_get_employer_kill_army">
+		<text>军队</text>
+	</string>
+	<string id="st_get_employer_kill_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="st_get_employer_kill_dolg">
+		<text>纪律团</text>
+	</string>
+	<string id="st_get_employer_kill_freedom">
+		<text>自由军</text>
+	</string>
+	<string id="st_get_employer_kill_renegade">
+		<text>叛节者</text>
+	</string>
+
+<!--------------------------=========-------------------------------------->
+<!----------------------'МИНИ ИГРЫ ПЕРЕВОД ДИАЛОГОВ'----------------------->
+<!--------------------------=========-------------------------------------->
+<!--------------------------========--------------------->
+<!------------------------'БАР РОСТОК'------------------->
+<!--------------------------========--------------------->
+	<string id="st_minigames_21_point_accept_step">
+		<text>下注增量 - 200</text>
+	</string>
+	
+    <string id="st_minigames_21_point_rem">
+		<text>保存上次下注</text>
+	</string>
+    
+
+    <string id="st_minigames_21_point_accept_bets">
+		<text>确定下注</text>
+	</string>
+	
+    <string id="st_minigames_21_point_start">
+		<text>开始游戏</text>
+	</string>
+
+    <string id="st_minigames_21_point_exit">
+		<text>退出</text>
+	</string>
+	
+    <string id="st_minigames_21_point_more">
+		<text>要牌</text>
+	</string>
+	
+    <string id="st_minigames_21_point_pass">
+		<text>过牌</text>
+	</string>
+
+    <string id="st_minigames_21_point_cont">
+		<text>继续</text>
+	</string>
+
+
+        <string id="zat_sich_minigame_21_point_dialog_1">
+		<text>我想问问你...</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_2">
+		<text>干啥?</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_3">
+		<text>我们玩两局21点来打发时间如何?</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_4">
+		<text>好啊! 来啊! 先把钱准备好, 我现在洗牌了</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_5">
+		<text>好! 开整!</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_6">
+		<text>好啊! 我准备好了, 开始吧!</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_7">
+		<text>你很闲吧? 来打两局牌如何?</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_8">
+		<text>行啊!</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_9">
+		<text>我确实很闲, 玩就玩.</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_10">
+		<text>现在不行, 改日再说</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_11">
+		<text>我不想玩!</text>
+	</string>
+        <string id="zat_sich_minigame_21_point_dialog_12">
+		<text>现在不合适吧</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'АРМЕЙСКИЕ СКЛАДЫ'--------------------->
+<!------------------------========--------------------->
+
+        <string id="skraga_21_point_dialog_1">
+		<text>[Blackjack]嘿! 吝啬鬼, 我跟你说个事...</text>
+	</string>
+        <string id="skraga_21_point_dialog_2">
+		<text>什么事?</text>
+	</string>
+        <string id="skraga_21_point_dialog_3">
+		<text>你那副牌放那里都落灰了, 要不咱们玩两局?</text>
+	</string>
+        <string id="skraga_21_point_dialog_4">
+		<text>行啊!</text>
+	</string>
+        <string id="skraga_21_point_dialog_5">
+		<text>我准备好了.</text>
+	</string>
+        <string id="skraga_21_point_dialog_6">
+		<text>没问题! 玩就玩!</text>
+	</string>
+        <string id="skraga_21_point_dialog_7">
+		<text>现在?</text>
+	</string>
+        <string id="skraga_21_point_dialog_8">
+		<text>没错!</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'БОЛОТА'--------------------->
+<!------------------------========--------------------->
+       
+       <string id="xolod_21_point_dialog_1">
+		<text>[Blackjack] 哎, 冷风, 我跟你说个事.</text>
+	</string>
+        <string id="xolod_21_point_dialog_2">
+		<text>啥事?</text>
+	</string>
+        <string id="xolod_21_point_dialog_3">
+		<text>想不想打两局牌?</text>
+	</string>
+        <string id="xolod_21_point_dialog_4">
+		<text>行吧.</text>
+	</string>
+        <string id="xolod_21_point_dialog_5">
+		<text>好吧</text>
+	</string>
+        <string id="xolod_21_point_dialog_6">
+		<text>开始吧.</text>
+	</string>
+        <string id="xolod_21_point_dialog_7">
+		<text>还来?</text>
+	</string>
+        <string id="xolod_21_point_dialog_8">
+		<text>是的!</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'РЫЖИЙ ЛЕС'--------------------->
+<!------------------------========--------------------->
+
+       <string id="lesnik_21_point_dialog_1">
+		<text>大爷, 我跟你问个事.</text>
+	</string>
+        <string id="lesnik_21_point_dialog_2">
+		<text>你有什么事, 小子?</text>
+	</string>
+        <string id="lesnik_21_point_dialog_3">
+		<text>你桌子上放的那副牌看上去有些年月了吧, 闲着也是闲着, 要不咱们玩两局?</text>
+	</string>
+        <string id="lesnik_21_point_dialog_4">
+		<text>你说要跟我玩牌? 哈哈! 没问题, 反正我在这几天也见不到一个人, 就让你多呆一会吧.</text>
+	</string>
+        <string id="lesnik_21_point_dialog_5">
+		<text>准备好了.</text>
+	</string>
+        <string id="lesnik_21_point_dialog_6">
+		<text>好, 我也准备好了.</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'МЕРТВЫЙ ГОРОД'--------------------->
+<!------------------------========--------------------->
+
+<string id="cit_killers_21_point_dialog_1">
+		<text>我想问你个问题</text>
+	</string>
+        <string id="cit_killers_21_point_dialog_2">
+		<text>赶紧问!</text>
+	</string>
+        <string id="cit_killers_21_point_dialog_3">
+		<text>你身后架子上那副牌好久没用了吧, 敢不敢跟我玩几局?</text>
+	</string>
+        <string id="cit_killers_21_point_dialog_4">
+		<text>行啊, 不过你可别想耍什么滑头.</text>
+	</string>
+        <string id="cit_killers_21_point_dialog_5">
+		<text>那...开始吧</text>
+	</string>
+        <string id="cit_killers_21_point_dialog_6">
+		<text>好! 开始!</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'ЯНТАРЬ'--------------------->
+<!------------------------========--------------------->
+
+<string id="saxarov_21_point_dialog_1">
+		<text>你好啊教授, 有空吗?</text>
+	</string>
+        <string id="saxarov_21_point_dialog_2">
+		<text>你说吧什么事?</text>
+	</string>
+        <string id="saxarov_21_point_dialog_3">
+		<text>要不要跟我玩两局?</text>
+	</string>
+        <string id="saxarov_21_point_dialog_4">
+		<text>啥? 玩牌? 你看看我, 刚戴上手套, 那边的解剖工作还没结束呢! 你也知道, 如果灵吸怪的尸体放着不管的话外泄的灵能会影响... 嗯... 好像... 休息一会也不错... </text>
+	</string>
+        <string id="saxarov_21_point_dialog_5">
+		<text>太棒了! 来来来</text>
+	</string>
+        <string id="saxarov_21_point_dialog_6">
+		<text>好吧, 就玩两局</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'ЗАТОН'--------------------->
+<!------------------------========--------------------->
+
+<string id="zat_sich_minigame_21_point_dialog_1">
+		<text>嗯... 想不想找点事干?</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_2">
+		<text>嗯? 你想干啥?</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_3">
+		<text>我看到你后面放着一副牌, 我陪你玩两局如何?</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_4">
+		<text>呵呵, 你猜猜上一个这么说的人, 出去的时候穿裤子没有?</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_5">
+		<text>额...所以你是玩还是不玩</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_6">
+		<text>来啊! 把钱准备好就行.</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_7">
+		<text>啥? 还来?</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_8">
+		<text>嗯! 我又觉得我行了</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_9">
+		<text>好嘛, 来就来.</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_10">
+		<text>我现在忙的很, 改天再说.</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_11">
+		<text>现在我不想玩.</text>
+	</string>
+        <string id="sich_minigame_21_point_dialog_12">
+		<text>我看还是算了吧</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'Юпитер'--------------------->
+<!------------------------========--------------------->
+
+
+<string id="jup_barmen_minigame_21_point_dialog_1">
+		<text>酒保, 我问你个事啊</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_2">
+		<text>啥事, 赶紧说</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_3">
+		<text>你这肯定有牌吧? 不想来一局吗?</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_4">
+		<text>来吧, 反正今天没几个人</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_5">
+		<text>好! 开始吧.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_6">
+		<text>我准备好了.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_7">
+		<text>再来一局?</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_8">
+		<text>来就来.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_9">
+		<text>没问题.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_10">
+		<text>还是算了吧, 有空再说.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_11">
+		<text>现在不行, 晚一会吧.</text>
+	</string>
+        <string id="jup_barmen_minigame_21_point_dialog_12">
+		<text>我没心情玩什么牌</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'Юпитер'--------------------->
+<!------------------------========--------------------->
+
+
+        <string id="petrenko_21_point_dialog_1">
+		<text>来玩一局21点怎么样?</text>
+	</string>
+        <string id="petrenko_21_point_dialog_2">
+		<text>好吧, 反正我现在也挺闲</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'Кордон'--------------------->
+<!------------------------========--------------------->
+
+
+        <string id="sidor_21_point_dialog_1">
+		<text>老西! 你这个雁过拔毛的死肥猪! 敢跟我玩21点吗?</text>
+	</string>
+        <string id="sidor_21_point_dialog_2">
+		<text>胆子挺肥嘛, 你准备好光着出去吧!</text>
+	</string>
+        <string id="shustriy_21_point_dialog_1">
+		<text>嘿, 尼博! 我听说你牌技还可以?</text>
+	</string>
+        <string id="shustriy_21_point_dialog_2">
+		<text>一般吧, 怎么, 你中大奖了?</text>
+	</string>
+
+<!------------------------========--------------------->
+<!---------------------'Тёмная Долина'----------------->
+<!------------------------========--------------------->
+
+
+        <string id="maslina_21_point_dialog_1">
+		<text>哥们, 有空吗? 咱们打会牌怎么样?</text>
+	</string>
+        <string id="maslina_21_point_dialog_2">
+		<text>没问题兄弟, 来吧, 反正我今天货也卖的差不多了</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'Агропром'------------------->
+<!------------------------========--------------------->
+
+
+        <string id="military_21_point_dialog_1">
+		<text>呆在这里闲得蛋疼, 玩一把牌解解闷?</text>
+	</string>
+        <string id="military_21_point_dialog_2">
+		<text>好啊, 我都快无聊死了</text>
+	</string>
+
+<!------------------------========--------------------->
+<!------------------------'Припять'-------------------->
+<!------------------------========--------------------->
+
+
+        <string id="propovednik_21_point_dialog_1">
+		<text>老兄, 想不想玩一把21点?</text>
+	</string>
+        <string id="propovednik_21_point_dialog_2">
+		<text>好主意, 今天黑石也没什么动静, 玩玩牌应该误不了什么事</text>
+	</string>

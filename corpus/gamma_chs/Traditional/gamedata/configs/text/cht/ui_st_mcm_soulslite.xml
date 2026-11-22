@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_soulslike">
+		<text>黑魂潛行者模式</text>
+	</string>
+
+    <!--General-->
+    <string id="ui_mcm_soulslike_general">
+        <text>一般設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_general_title">
+        <text>Jabber的黑魂潛行者設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_general_description">
+        <text>本mod為潛行者帶來了魂系玩法, 玩家可以在睡眠處"設定緊急發信裝置", 也就是儲存重生點, 並且不會有真正意義的死亡; "死亡"黑屏之後玩家會被某些潛行者救回重生點, 醒來之後會收到他們發來的各種資訊, 向你告知發現你的一系列事件, 有時也會告訴你丟失的物品位置, 有時你裝備的物品耐久會下降或損壞, 所有功能都可以設定</text>
+     </string>
+    <string id="ui_mcm_soulslike_general_disclaimer">
+        <text>友情提醒: 既然用了這個mod, 那就不要哭哭啼啼的了, 本mod就是以增加難度為目的而製作的, 你100%會遇到裝備丟失或損壞的情況, 如果在異常區內部死亡, 那你丟失的裝備可能拿都拿不回來, 所以不要把雞蛋放在一個籃子里, 多多設定備用藏物點, 輕裝上陣, 做好最壞的打算, 才可能有活下去的希望</text>
+    </string>
+
+    <!--Character-->
+    <string id="ui_mcm_soulslike_character">
+        <text>角色設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_title">
+        <text>角色設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_rank_loss_percent">
+        <text>排名下降百分比</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_rank_loss_percent_desc">
+        <text>甦醒後會損失這麼多排名點數</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_rep_loss_percent">
+        <text>名聲下降百分比</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_rep_loss_percent_desc">
+        <text>甦醒後會損失這麼多的名聲點數, 注意是角色名聲, 不是陣營好感</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_health_loss_on_respawn">
+        <text>健康值下降百分比</text>
+    </string>
+    <string id="ui_mcm_soulslike_character_health_loss_on_respawn_desc">
+        <text>此選項進一步增加了難度, 當甦醒後會下降這麼多的健康值; 舉例: 設定為25%的話, 意為當醒來后只有75%的血量, 這個選項模擬了角色逃過一劫后仍舊處於需要醫治的受傷狀態, 所以應該在你的重生點附近備好醫療用品, 並儘快返回之前倒下的地點取回丟失的物品</text>
+    </string>
+
+    <!--Items-->
+    <string id="ui_mcm_soulslike_items">
+        <text>物品設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_title">
+        <text>物品設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_keep_equipped_items_on_death">
+        <text>倒地后保留物品</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_desc">
+        <text>下方設定會應用在角色倒地昏迷后掉落的物品中, 除非取消勾選, 否則下方已被勾選的每一種型別物品都有機率丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_weapon_loss">
+        <text>允許武器丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_outfit_loss">
+        <text>允許護甲丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_headgear_loss">
+        <text>允許頭盔丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_artifact_loss">
+        <text>允許神器丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_allow_tool_loss">
+        <text>允許工具丟失</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_scalar_description">
+        <text>物品丟失和損壞程度, 取決於玩家的排名等級; 等級越高, 倒地后丟失或損壞物品的機率就越高, 此機制用於模擬其他潛行者更傾向於拿走你身上高質量的物品; 參閱下方每個選項的提示文字來了解更多細節</text>
+     </string>
+    <string id="ui_mcm_soulslike_items_item_loss_scalar">
+        <text>物品丟失標量</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_item_loss_scalar_desc">
+        <text>在最高等級時, 倒地昏迷后角色的每樣物品都有75%的機率丟失; 此標量可用於調整丟失的程度, 預設值0.20 或20%的含義為, 你每件物品的最大丟失機率是15%, 其他標量參考取值: 0.10 = 7.5%, 0.20 = 15%, 0.30 = 22%, 0.40 = 30%... 你懂了嗎? ( 還真沒懂, 所以全部直譯, 75%還是15%自己猜吧 )</text>
+    </string>
+    
+    <string id="ui_mcm_soulslike_items_item_condition_loss_scalar">
+        <text>物品耐久下降標量</text>
+    </string>
+    <string id="ui_mcm_soulslike_items_item_condition_loss_scalar_desc">
+        <text>最高等級的角色, 在倒地昏迷后每件物品都會損失18點耐久; 預設的0.05 或5% 意為每件物品的最大耐久損耗為3.7,其他標量參考取值: 0.05 = 3.7, 0.10 = 7.4, 0.15 = 11... 你懂了嗎? ( 還真沒懂, 所以全部直譯, 18點還是3.7點自己猜吧 )</text>
+    </string>
+    
+    <!--Scenarios-->
+    <string id="ui_mcm_soulslike_scenarios">
+        <text>情景設定</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_title">
+        <text>情景設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_scenarios_description">
+        <text>魂系mod的"死亡"情景本質上是動態的, 重生事件的發生取決於誰殺了你, 如何被殺的, 死時在哪裡, 離你的重生點有多近, 你是在室內還是在室外(室內外判定有誤, 截止23-12-3作者拒絕解釋), 僅舉幾例; 這些設定允許您自定義嘗試恢復裝備的方式; 始終存在的預設情況是, 您最終可能會在重生時保留所有物品(同樣, 基於事件), 或者發現丟失的物品位於死亡地點遺失的揹包中, 以下選項是除此之外的選項, 並且可以更改權重以增加或減少它們的頻率</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_rf_detector_scenario_weight">
+        <text>無線電包裹情景權重</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_rf_detector_scenario_weight_desc">
+        <text>此項為魂系的高難度又增加了一個方面的意義, 當此情景發生時, 你的救星會將你的所有物品置於目前地圖的某個藏物點, 並在你的揹包中留下寫有電波頻率的字條</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_hidden_stash_scenario_weight">
+        <text>標記的藏物點情景權重</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_rf_detector_scenario_weight_desc">
+        <text>此項為魂系的高難度又增加了一個方面的意義, 當此情景發生時, 你的救星會將你的所有物品置於目前地圖的某個藏物點, 並在你的PDA上標記</text>
+     </string>
+    <string id="ui_mcm_soulslike_scenarios_looter_npcs_marked">
+        <text>你的揹包上有追蹤器</text>
+    </string>
+    <string id="ui_mcm_soulslike_scenarios_rf_detector_scenario_weight_desc">
+        <text>當你的包被別人舔了, 這個選項會在你PDA上標記出舔包的NPC</text>
+     </string>
+
+    <!--Ambush-->
+    <string id="ui_mcm_soulslike_ambush">
+        <text>伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_title">
+        <text>伏擊選項</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_description">
+        <text>根據場景的種類和你身上攜帶的物品種類, 在你之前倒下的地方有可能發生伏擊事件</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_mutant_ambush_chance">
+        <text>怪物伏擊機率</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_boar_ambush">
+        <text>允許野豬伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_flesh_ambush">
+        <text>允許豚獸伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_dogs_ambush">
+        <text>允許盲犬伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_cats_ambush">
+        <text>允許變異貓伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_snorks_ambush">
+        <text>允許史諾克伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_bloodsucker_ambush">
+        <text>允許吸血怪伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_burer_ambush">
+        <text>允許變異矮人伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_chimera_ambush">
+        <text>允許奇美拉伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_controller_ambush">
+        <text>允許攝魂怪伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_stalker_ambush_chance">
+        <text>潛行者伏擊機率</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_stalker_novice_ambush">
+        <text>允許菜鳥潛行者伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_stalker_advanced_ambush">
+        <text>允許老手潛行者伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_stalker_veteran_ambush">
+        <text>允許大師級潛行者伏擊</text>
+    </string>
+    <string id="ui_mcm_soulslike_ambush_allow_stalker_sniper_ambush">
+        <text>允許狙擊手伏擊</text>
+    </string>
+
+    <!--Hardcore-->
+    <string id="ui_mcm_soulslike_hardcore">
+        <text>硬核魂系模式</text>
+    </string>
+    <string id="ui_mcm_soulslike_hardcore_title">
+        <text>硬核魂系模式設定</text>
+    </string>
+    <string id="ui_mcm_soulslike_hardcore_save_description">
+        <text>就好像在倒下的你的身上再踩一腳一樣, 魂系的硬核存檔, 意味著手動存檔, 快速存檔, 篝火存檔全部禁用, 並且只有1個存檔檔案能夠保留, 硬核存檔只允許玩家在睡眠時和死亡后存檔, 記住, 因為只有1個存檔檔案, 所以如果你丟了所有裝備, 也沒錢治療和吃喝的話, 很可能檔就廢了</text>
+     </string>
+    <string id="ui_mcm_soulslike_hardcore_is_enabled">
+        <text>啟用硬核存檔</text>
+    </string>    
+    <string id="ui_mcm_soulslike_hardcore_override_campfire_hardcore_saves">
+        <text>啟用硬核存檔的同時啟用篝火存檔</text>
+    </string>
+    <string id="ui_mcm_soulslike_hardcore_override_campfire_hardcore_saves_desc">
+        <text>有時候你就是渴望在存檔時體驗那溫暖舒適的篝火, 這個選項允許你在啟用硬核存檔的同時使用篝火來存檔, 注意即使開了這個選項, 在睡覺和死亡時, 篝火存檔還是會被硬核存檔功能所刪除</text>
+    </string>
+
+    <!--Debug-->
+    <string id="ui_mcm_soulslike_debug">
+        <text>開發模式(不想翻了反正開發者都能看懂)</text>
+    </string> 
+    <string id="ui_mcm_soulslike_debug_title">
+        <text>開發模式設定</text>
+    </string>    
+    <string id="ui_mcm_soulslike_debug_is_enabled">
+        <text>Debug 模式</text>
+    </string>  
+    <string id="ui_mcm_soulslike_debug_enable_tips">
+        <text>Show PDA Messages</text>
+    </string>    
+    <string id="ui_mcm_soulslike_debug_debug_hidden_stashes">
+        <text>Debug Hidden Stashes</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_item_loss">
+        <text>Debug Item Loss</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_the_tarkov_looter">
+        <text>Debug Tarkov Looter</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_the_noloss_scenario">
+        <text>Debug No Loss Scenario</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_the_default_scenario">
+        <text>Debug Default Loss Scenario</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_the_rf_scenario">
+        <text>Debug RF Detector Scenario</text>
+    </string>
+    <string id="ui_mcm_soulslike_debug_debug_the_hidden_stash_scenario">
+        <text>Debug Hidden Stash Scenario</text>
+    </string>
+</string_table>

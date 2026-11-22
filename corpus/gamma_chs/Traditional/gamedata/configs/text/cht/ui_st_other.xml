@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="Btn_Cancel">
+		<text>取消</text>
+	</string>
+	<string id="Btn_No">
+		<text>否</text>
+	</string>
+	<string id="Btn_OK">
+		<text>好</text>
+	</string>
+	<string id="Btn_Yes">
+		<text>是</text>
+	</string>
+	<string id="global_map">
+		<text>特異區地圖</text>
+	</string>
+	<string id="mm_mp_pda_hunt">
+		<text>PDA 獎勵</text>
+	</string>
+	<string id="mp_only_one_voting">
+		<text>只允許進行一次主動投票.</text>
+	</string>
+	<string id="st_game">
+		<text>遊戲</text>
+	</string>
+	<string id="st_item_used">
+		<text>已使用</text>
+	</string>
+	<string id="st_level">
+		<text>關卡</text>
+	</string>
+	<string id="st_loading_ai_objects">
+		<text>載入 AI 對像</text>
+	</string>
+	<string id="st_loading_alife_simulator">
+		<text>伺服器: 載入 alife 模擬器</text>
+	</string>
+	<string id="st_loading_cform">
+		<text>載入 CFORM</text>
+	</string>
+	<string id="st_loading_details">
+		<text>正在載入細節</text>
+	</string>
+	<string id="st_loading_geometry">
+		<text>正在載入地形</text>
+	</string>
+	<string id="st_loading_saved_game">
+		<text>載入存檔</text>
+	</string>
+	<string id="st_loading_sectors_portals">
+		<text>正在載入區域和巡邏隊</text>
+	</string>
+	<string id="st_loading_shaders">
+		<text>載入光影</text>
+	</string>
+	<string id="st_loading_spatial_db">
+		<text>載入空間數據庫</text>
+	</string>
+	<string id="st_loading_textures">
+		<text>載入材質</text>
+	</string>
+	<string id="st_mp_direct_ip">
+		<text>IP直連</text>
+	</string>
+	<string id="st_no_active_task">
+		<text>沒有進行中的任務</text>
+	</string>
+	<string id="st_not_enough_money">
+		<text>沒有足夠的金錢</text>
+	</string>
+	<string id="st_not_enough_money_npc">
+		<text>NPC沒有足夠的金錢</text>
+	</string>
+	<string id="st_opening_stream">
+		<text>開啟 stream</text>
+	</string>
+	<string id="st_prefetching_objects">
+		<text>預取對像</text>
+	</string>
+	<string id="st_rubles">
+		<text>盧布</text>
+	</string>
+	<string id="st_server_connecting">
+		<text>伺服器: 正在連線</text>
+	</string>
+	<string id="st_server_starting">
+		<text>伺服器: 正在開始</text>
+	</string>
+	<string id="st_validating_cdkey">
+		<text>驗證CD-Key</text>
+	</string>
+	<string id="st_video">
+		<text>影象</text>
+	</string>
+	<string id="ui_inv_repair">
+		<text>修理</text>
+	</string>
+	<string id="ui_st_cant_run_r2">
+		<text>無法在你的PC上執行Render2</text>
+	</string>
+	<string id="ui_st_conn_cdkey_disabled">
+		<text>連線錯誤: CD-Key被禁用. 聯繫客服.</text>
+	</string>
+	<string id="ui_st_conn_cdkey_in_use">
+		<text>連線錯誤: CD-Key已被使用.</text>
+	</string>
+	<string id="ui_st_conn_cdkey_invalid">
+		<text>連線錯誤: 無效的CD-Key.</text>
+	</string>
+	<string id="ui_st_conn_invalid_host">
+		<text>連線錯誤: 無效的主機</text>
+	</string>
+	<string id="ui_st_conn_invalid_pass">
+		<text>連線錯誤: 密碼無效</text>
+	</string>
+	<string id="ui_st_conn_new_patch">
+		<text>一個新的補丁準備完畢.\n 版本:%s\n 位置:%s\n 要下載嗎?</text>
+	</string>
+	<string id="ui_st_conn_no_new_patch">
+		<text>目前沒有可用的新補丁</text>
+	</string>
+	<string id="ui_st_conn_rejected_server">
+		<text>連線錯誤: 連線被伺服器拒絕</text>
+	</string>
+	<string id="ui_st_conn_sess_full">
+		<text>連線錯誤: 伺服器已滿</text>
+	</string>
+	<string id="ui_st_conn_version_differs">
+		<text>連線錯誤: 不同版本.</text>
+	</string>
+	<string id="ui_st_connecting_to_masterserver">
+		<text>連線到主伺服器</text>
+	</string>
+	<string id="ui_st_days">
+		<text>天</text>
+	</string>
+	<string id="ui_st_error">
+		<text>錯誤</text>
+	</string>
+	<string id="ui_st_error_loading">
+		<text>載入錯誤</text>
+	</string>
+	<string id="ui_st_file_exist_owerwrite_q">
+		<text>同名檔案已存在. 您要覆蓋它嗎</text>
+	</string>
+	<string id="ui_st_file_name_is_empty">
+		<text>檔名為空</text>
+	</string>
+	<string id="ui_st_hours">
+		<text>小時</text>
+	</string>
+	<string id="ui_st_kicked_by_battleye">
+		<text>被BattleEye切斷連線:</text>
+	</string>
+	<string id="ui_st_kicked_by_server">
+		<text>連線斷開. 原因:</text>
+	</string>
+	<string id="ui_st_leave">
+		<text>離開</text>
+	</string>
+	<string id="ui_st_load_game_confirm">
+		<text>載入該存檔會使未儲存的數據丟失. 繼續?</text>
+	</string>
+	<string id="ui_st_mins">
+		<text>分鐘</text>
+	</string>
+	<string id="ui_st_months">
+		<text>月</text>
+	</string>
+	<string id="ui_st_opponent_items">
+		<text>揹包</text>
+	</string>
+	<string id="ui_st_params">
+		<text>參數</text>
+	</string>
+	<string id="ui_st_patch_download_error">
+		<text>無法下載補丁.</text>
+	</string>
+	<string id="ui_st_patch_download_success">
+		<text>補丁下載成功. 要安裝嗎?</text>
+	</string>
+	<string id="ui_st_price">
+		<text>價格</text>
+	</string>
+	<string id="ui_st_secs">
+		<text>秒</text>
+	</string>
+	<string id="mp_si_sec">
+		<text>秒</text>
+	</string>
+	<string id="ui_st_select_one_map">
+		<text>請至少選擇一個地圖</text>
+	</string>
+	<string id="ui_st_time_remains">
+		<text>剩下</text>
+	</string>
+	<string id="ui_st_voting_disabled">
+		<text>投票失敗</text>
+	</string>
+	<string id="ui_st_want_to_leave_game_q">
+		<text>真的想退出嗎?</text>
+	</string>
+	<string id="st_key_notbinded">
+		<text>...</text>
+	</string>
+	<string id="st_save_uni_travel_generic">
+		<text>在區域內移動</text>
+	</string>
+	<string id="st_travel_lost">
+		<text>你還不認識路.</text>
+	</string>
+	<string id="st_level_changer_descr">
+		<text>前往%s?</text>
+	</string>
+	<string id="st_future_maps_descr">
+		<text>你不能去這裡.</text>
+	</string>
+	<string id="st_save_uni_travel_zat_to_jup">
+		<text>從扎頓前往亞諾夫</text>
+	</string>
+	<string id="st_save_uni_travel_zat_to_pri">
+		<text>從扎頓前往普里皮亞奇</text>
+	</string>
+	<string id="st_save_uni_travel_jup_to_zat">
+		<text>從尤皮特前往扎頓</text>
+	</string>
+	<string id="st_save_uni_travel_jup_to_pri">
+		<text>從尤皮特前往普里皮亞奇</text>
+	</string>
+	<string id="st_save_uni_travel_pri_to_zat">
+		<text>從普里皮亞奇前往扎頓</text>
+	</string>
+	<string id="st_save_uni_travel_pri_to_jup">
+		<text>從普里皮亞奇前往尤皮特</text>
+	</string>
+	<string id="st_save_uni_pri_to_labx8">
+		<text>從普里皮亞奇前往X8</text>
+	</string>
+	<string id="st_save_uni_labx8_to_pri">
+		<text>從X8前往普里皮亞奇</text>
+	</string>
+	<string id="st_save_uni_surge_start">
+		<text>能量風暴</text>
+	</string>
+	<string id="st_save_zat_a1_game_start">
+		<text>遊戲開始</text>
+	</string>
+	<string id="st_save_zat_a2_reached_skadovsk">
+		<text>到達斯卡多夫斯克號</text>
+	</string>
+	<string id="st_save_jup_b9_searched_heli_1">
+		<text>鰩魚 1號已檢查</text>
+	</string>
+	<string id="st_save_zat_b100_searched_heli_2">
+		<text>鰩魚 2號已檢查</text>
+	</string>
+	<string id="st_save_zat_b28_searched_heli_3">
+		<text>鰩魚 3號已檢查</text>
+	</string>
+	<string id="st_save_jup_b8_searched_heli_4">
+		<text>鰩魚 4號已檢查</text>
+	</string>
+	<string id="st_save_zat_b101_searched_heli_5">
+		<text>鰩魚 5號已檢查</text>
+	</string>
+	<string id="st_save_zat_b18_noah_showed_teleport">
+		<text>到達高地</text>
+	</string>
+	<string id="st_save_jup_b217_arrived_to_jup">
+		<text>到達亞諾夫</text>
+	</string>
+	<string id="st_save_jup_a9_got_underpass_docs">
+		<text>找到通往普里皮亞奇的路</text>
+	</string>
+	<string id="st_save_jup_b15_drunk_with_zulu">
+		<text>祖魯加入小隊</text>
+	</string>
+	<string id="st_save_jup_a10_gonna_return_debt">
+		<text>瓦諾的債務以償還</text>
+	</string>
+	<string id="st_save_jup_b218_vano_in_squad">
+		<text>瓦諾加入小隊</text>
+	</string>
+	<string id="st_save_jup_b206_got_anomalous_plant">
+		<text>異常植物已採集</text>
+	</string>
+	<string id="st_save_jup_b218_sokolov_in_squad">
+		<text>索科洛夫加入小隊</text>
+	</string>
+	<string id="st_save_jup_b218_strider_in_squad">
+		<text>神行客加入小隊</text>
+	</string>
+	<string id="st_save_jup_b218_travel_jup_to_pas">
+		<text>小隊已集合</text>
+	</string>
+	<string id="st_save_pas_b400_underpass_start">
+		<text>到達地下通道</text>
+	</string>
+	<string id="st_save_uni_travel_pas_to_pri">
+		<text>到達普里皮亞奇</text>
+	</string>
+	<string id="st_save_pri_a16_arrived_to_pri">
+		<text>軍事力量已定位</text>
+	</string>
+	<string id="st_save_pri_a17_hospital_start">
+		<text>繳獲不明武器</text>
+	</string>
+	<string id="st_save_pri_a20_found_dead_recon">
+		<text>發現偵察小隊</text>
+	</string>
+	<string id="st_save_pri_a18_met_reinforcement">
+		<text>援軍已到達</text>
+	</string>
+	<string id="st_save_pri_a18_searched_antenna">
+		<text>'天線'已檢查</text>
+	</string>
+	<string id="st_save_pri_a21_approached_mad_sentry">
+		<text>發現失蹤哨兵</text>
+	</string>
+	<string id="st_save_pri_a21_killed_controller">
+		<text>哨兵附近的攝魂怪被殺死</text>
+	</string>
+	<string id="st_save_zat_a23_entered_test_center">
+		<text>進入測試車間</text>
+	</string>
+	<string id="st_save_zat_a23_got_gauss_docs">
+		<text>發現高斯步槍檔案</text>
+	</string>
+	<string id="st_save_pri_a22_found_dead_squad">
+		<text>找到死亡的戰士</text>
+	</string>
+	<string id="st_save_pri_a25_gonna_place_explosive">
+		<text>進入幼兒園</text>
+	</string>
+	<string id="st_save_pri_a25_freed_medic">
+		<text>軍醫獲救</text>
+	</string>
+	<string id="st_save_pri_a28_talked_with_ssu">
+		<text>與總部建立的通訊</text>
+	</string>
+	<string id="st_save_pri_a28_evacutaion_start">
+		<text>普里皮亞奇疏散已啟動</text>
+	</string>
+	<string id="st_save_pri_a28_evacuation_end">
+		<text>到達疏散直升機</text>
+	</string>
+	<string id="st_save_uni_zone_to_reality">
+		<text>疏散完成</text>
+	</string>
+	<string id="st_save_jup_b209_placed_mutant_scanner">
+		<text>變異生物探測器</text>
+	</string>
+	<string id="st_save_jup_a12_gave_artefact_for_hostage">
+		<text>人質贖金</text>
+	</string>
+	<string id="st_save_jup_a12_met_with_liberators">
+		<text>人質獲釋</text>
+	</string>
+	<string id="st_save_jup_b6_arrived_to_ash_heap">
+		<text>"灰燼"異常區測量</text>
+	</string>
+	<string id="st_save_jup_b6_arrived_to_fen">
+		<text>"蘆葦"異常區測量</text>
+	</string>
+	<string id="st_save_zat_b38_met_with_grouse">
+		<text>吸血怪巢穴</text>
+	</string>
+	<string id="st_save_jup_b19_arrived_to_kopachy">
+		<text>送到科帕奇</text>
+	</string>
+	<string id="st_save_zat_b40_warned_by_mercs">
+		<text>接近污水處理站</text>
+	</string>
+	<string id="st_save_zat_b7_met_with_robbers">
+		<text>潛行者命中</text>
+	</string>
+	<string id="st_save_zat_b33_got_container">
+		<text>在藏匿處發現的容器</text>
+	</string>
+	<string id="st_save_zat_b106_arrived_to_chimera_lair">
+		<text>獵殺奇美拉</text>
+	</string>
+	<string id="st_save_jup_b16_passed_labyrinth">
+		<text>綠洲已發現</text>
+	</string>
+	<string id="st_save_pri_b35_ready_to_snipe">
+		<text>"一槍行動"開始了</text>
+	</string>
+	<string id="st_save_jup_b1_entered_railroad_tunnel">
+		<text>搜索靈能場輻射源頭</text>
+	</string>
+	<string id="st_save_jup_b47_got_admin_docs">
+		<text>行政檔案</text>
+	</string>
+	<string id="st_save_zat_b103_warned_by_mercs">
+		<text>進變電站車間</text>
+	</string>
+	<string id="st_save_zat_b5_met_with_others">
+		<text>在補給站交易</text>
+	</string>
+	<string id="st_save_jup_b207_arrived_to_duty_depot">
+		<text>紀律團倉庫</text>
+	</string>
+	<string id="st_save_zat_b14_got_altered_wheel">
+		<text>找到奇怪的發光源</text>
+	</string>
+	<string id="st_save_pri_b301_arrived_to_help_zulu">
+		<text>找到祖魯</text>
+	</string>
+	<string id="st_save_zat_b42_arrived_to_controler_lair">
+		<text>危險洞穴</text>
+	</string>
+	<string id="ui_st_upgrade">
+		<text>修理/修改</text>
+	</string>
+	<string id="ui_st_trade">
+		<text>交易</text>
+	</string>
+	<string id="ui_st_exit_hint">
+		<text>關閉界面 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="ui_st_trade_hint">
+		<text>打開交易界面 ($$ACTION_SPRINT_TOGGLE$$)</text>
+	</string>
+	<string id="ui_st_upgrade_hint">
+		<text>打開修理與升級界面 ($$ACTION_SPRINT_TOGGLE$$)</text>
+	</string>
+	<string id="st_save_pri_a28_evacuation_heli">
+		<text>撤離直升機起飛</text>
+	</string>
+	<string id="st_hold_then_release">
+		<text>按住然後鬆開</text>
+	</string>
+	<string id="st_set_companion_to_stealth_state">
+		<text>潛行</text>
+	</string>
+	<string id="st_sleep">
+		<text>睡覺</text>
+	</string>
+	<string id="st_ui_save">
+		<text>儲存</text>
+	</string>
+	
+	
+	<!-- Miscellaneous -->
+	<string id="st_ui_selected">
+		<text>所選</text>
+	</string>
+	<string id="st_ui_arts">
+		<text>神器</text>
+	</string>
+	<string id="st_ui_remove_art">
+		<text>獲得神器</text>
+	</string>
+	<string id="st_ui_place_art">
+		<text>放置神器</text>
+	</string>
+	<string id="st_body_loot">
+		<text>割取</text>
+	</string>
+	<string id="st_body_kick">
+		<text>踢</text>
+	</string>
+	<string id="st_invalid_position">
+		<text>位置不在AI地圖上</text>
+	</string>
+	<string id="st_cfm">
+		<text>只能在篝火邊使用</text>
+	</string>
+	<string id="st_full_charge">
+		<text>電池電量充滿</text>
+	</string>
+	<string id="st_charging">
+		<text>目前費用:</text>
+	</string>
+	<string id="st_rad_level">
+		<text>輻射等級</text>
+	</string>
+	<string id="st_dont_has_knife">
+		<text>沒有可用的刀</text>
+	</string>
+
+	<string id="st_repair_mod_message_box_ask">
+		<text>你確認想要修復%s?\n \n%c[255,1,255,1]+ %s%</text>
+	</string>
+	<string id="st_repair_mod_message_box_condition_to_low">
+		<text>這個物品無法被這些工具修理.</text>
+	</string>
+	<string id="st_repair_mod_message_box_condition_to_high">
+		<text>這些工具不足以進一步修復該物品.</text>
+	</string>
+	
+	<string id="st_trx_input_symbols">
+		<text>1234567890</text>
+	</string>
+	<!-- valid symbols only -->
+    <string id="st_trx_output_symbols">
+		<text>1234567890</text>
+	</string>
+	<string id="st_trx_input_symbols_full">
+		<text>1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-.</text>
+	</string>
+	<!-- valid symbols only -->
+    <string id="st_trx_output_symbols_full">
+		<text>1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-.</text>
+	</string>
+	
+	<!-- Unused -->
+	<string id="selfroll_making">
+		<text>我正在卷葉, 不會花很長時間.</text>
+	</string>
+	<string id="sleepbag_making">
+		<text>縫這個睡袋要花點時間.</text>
+	</string>
+	<string id="backpack_making">
+		<text>做這個揹包需要一段時間.</text>
+	</string>
+	<string id="ammo12x70_making">
+		<text>我在做彈藥, 可能要花點時間.</text>
+	</string>
+	<string id="selfroll_making_end">
+		<text>捲好了.</text>
+	</string>
+	<string id="sleepbag_making_end">
+		<text>睡袋好了.</text>
+	</string>
+	<string id="backpack_making_end">
+		<text>揹包好了.</text>
+	</string>
+	<string id="ammo12x70_making_end">
+		<text>彈藥好了.</text>
+	</string>
+	
+	<!-- New RC18 -->
+	<string id="st_fast_travel_discovered">
+		<text>已發現</text>
+	</string>
+</string_table>

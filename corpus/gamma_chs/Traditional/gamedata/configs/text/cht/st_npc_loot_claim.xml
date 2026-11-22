@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_npc_loot_claim_warn_1">
+		<text>那些戰利品是我的! 滾蛋! </text>
+	</string>
+	<string id="st_npc_loot_claim_warn_2">
+		<text>哎! 那些戰利品是我的! 閃遠一點! </text>
+	</string>
+	<string id="st_npc_loot_claim_warn_3">
+		<text>你幹嘛? 離他遠一點, 那是我殺的! </text>
+	</string>
+	<string id="st_npc_loot_claim_warn_4">
+		<text>你想得美! 那傢伙的東西是屬於我的!</text>
+	</string>
+	<string id="st_npc_loot_claim_warn_5">
+		<text>你手拿開! 那是我的戰利品!</text>
+	</string>
+	<string id="st_npc_loot_claim_warn_6">
+		<text>那個人的東西屬於我們! 你可以閃遠點嗎!</text>
+	</string>
+	
+	<string id="st_npc_loot_claim_last_1">
+		<text>喂喂喂! 你是聾子嗎? 我再說一遍: 給我閃遠一點! </text>
+	</string>
+	<string id="st_npc_loot_claim_last_2">
+		<text>那個人的東西屬於我們! 你可以閃遠點嗎!</text>
+	</string>
+	<string id="st_npc_loot_claim_last_3">
+		<text>你手拿開! 那是我的戰利品!</text>
+	</string>
+	<string id="st_npc_loot_claim_last_4">
+		<text>你幹嘛? 離他遠一點, 那是我殺的! </text>
+	</string>
+	<string id="st_npc_loot_claim_last_5">
+		<text>你想得美! 那些戰利品是我的! 滾蛋! </text>
+	</string>
+
+	<string id="st_npc_loot_claim_attack_1">
+		<text>操, 這傢伙是傻的, 現在你也去死吧!</text>
+	</string>
+	<string id="st_npc_loot_claim_attack_2">
+		<text>弟兄們! 有人要搶我們的東西! 開火!</text>
+	</string>
+	<string id="st_npc_loot_claim_attack_3">
+		<text>哎! 他想搶我們的東西! 幹掉他!</text>
+	</string>
+	<string id="st_npc_loot_claim_attack_4">
+		<text>打死那個小偷!</text>
+	</string>
+	<string id="st_npc_loot_claim_attack_5">
+		<text>搶了我們的東西還想跑? 做夢去吧!</text>
+	</string>
+	
+	<string id="st_npc_loot_claim_far">
+		<text>這具屍體上沒有屬於你的東西</text>
+	</string>
+	
+
+</string_table>

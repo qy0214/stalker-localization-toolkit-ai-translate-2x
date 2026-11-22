@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="encyclopedia_artefacts">
+		<text>神器</text>
+	</string>
+		<string id="encyclopedia_artifacts">
+		<text>神器</text>
+	</string>
+	
+	<string id="pda_encyclopedia_name">
+		<text>名称</text>
+	</string>
+	<string id="pda_encyclopedia_weight">
+		<text>重量</text>
+	</string>
+	<string id="pda_encyclopedia_tier">
+		<text>级别</text>
+	</string>
+	<string id="pda_encyclopedia_tier_0">
+		<text>-</text>
+	</string>
+	<string id="pda_encyclopedia_tier_1">
+		<text>T1</text>
+	</string>
+	<string id="pda_encyclopedia_tier_2">
+		<text>T2</text>
+	</string>
+	<string id="pda_encyclopedia_tier_3">
+		<text>T3</text>
+	</string>
+	
+	<string id="pda_encyclopedia_origin">
+		<text>起源</text>
+	</string>
+	
+	<string id="encyclopedia_artefacts__about">
+		<text>相关</text>
+	</string>
+	<string id="encyclopedia_artefacts__about_text">
+		<text>
+		%c[pda_white]神器%c[ui_gray_1] 是某些物品受到特异区影响而形成的.\n
+		
+		\n%c[pda_green]情报%c[ui_gray_1]
+		\n大多数神器有着奇怪但有用的特点. 举个例子, 当你把神器放在你周围时, 部分神器便会制造出一个场来增强你身体对外界伤害的抵抗; 其余的则会增强你的耐力或是火抗等等. 神器有着很高的科研价值, 所以外界的公司通常会高价购买特异区里的神器.
+		
+		\n \n%c[pda_blue]神器的诞生%c[ui_gray_1]
+		\n神器来源那些接触了特定物品或者特定条件的异常点, 换句话讲, 是异常点与某些物品、异常点与死亡生物、异常点与某些特定条件的结合.
+		\n一个简单的例子就是神器"恒温石": 它是由金属物质和异常点"爆燃"所结合形成的. 大能量风暴被认为是神器形成的催化剂, 然而特异区里的生态学家仍然无法对此进行合理的解释.
+		
+		\n \n%c[pda_yellow]神器的商业用途%c[ui_gray_1]
+		\n对于绝大多数潜行者来说, 神器往往被他们卖向交易商, 而交易商再以高价卖给军队、生态学家和来自外界的公司.
+		\n值得一提的是, 生态学家萨哈洛夫教授认为这些神器拥有者极高的科研价值并声称对神器研究的结果可能会引领新技术的开发和影响世界对科学的认识.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_baloon_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这是一种由几种中空有机结构组成的化合物, 这种神器释放出一种气体物质, 可以中和体内的化学或有毒颗粒, 而不会对人体造成伤害. 但是它还具有许多负面特性. 例如它极大地增强了来自某些异常点和变异怪物的灵体能量. 可不能轻视这个缺点: 一些潜行者说带着气化晶时灵体能量影响非常大, 头疼的像要裂开一样, 然后他们就不得不尖叫着逃离灵能异常点. 同样的情况似乎在电流异常点也出现了: 神器在导电的同时还会增加电流强度. 此外, 许多潜行者的报告表明, 气化晶需要一个载体才能正常工作. 这个能量来源就是人体本身: 这种神器会耗尽使用者的活力和意志力, 程度之深往往会导致眩晕, 在极端情况下甚至会导致使用者昏倒. 这种神器唯一的一个积极方面是它加速了伤口的愈合, 只是它在这方面是如此强大, 它在市场上的高价和对它的供不应求是完全合理的. 在人工辐射尺度上, 辐射量很高. 警告: 由于它的有机性质和不稳定性, 这种神器比其他任何有机神器都更容易自燃, 因此建议不要在火焰或酸性异常点的附近佩戴它.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_baloon">
+		<text>气化晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_blood_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]凝血体是一种由植物、土壤和动物碎片压缩成的红色化石. 能通过吸收化学毒物来部分中和它们, 并降低使用者血液中的总体毒性水平. 非常广泛, 也不是很有效, 因为它会使化学灼伤化脓. 在高温下还会着火. 这种神器的另一个缺点是, 它会增加灵体能量的负面影响, 并且是一种有效的导体. 另一正面作用是能加速止血, 如果戴在身体上可以加快伤口凝血. 但是不建议你老是带着它, 因为血栓对人体也是有害的. 它会释放低度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_blood">
+		<text>凝血体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_cristall_flower_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种神器就像融化的芝士, 中间点缀着蓝宝石般的晶体. 只有黄色的外壳会散发辐射, 通过仔细加工后, 可以提取出地衣体内部的无辐射蓝色晶体, 可以用作珠宝或者工业原料. 如果经过适当的清洁和抛光, 晶体还会更加漂亮, 这些晶体和这颗神器一样坚硬和耐用. 完美的品质和外观使地衣体成为世界各地珠宝商的抢手货. 然而, 这件艺术品的用途并不局限于工业应用. 有科学证据表明, 蓝宝石状的石头能有效地防止毒性, 而外层的外壳能稍微增强耐热性. 然而它会使附近的物体升温, 在极端情况下还会烧起来. 因此我们可以得出肯定的结论: 它能吸收热量, 并能把热量传递给其他物体. 由于密度很大, 地衣体的重量已经超过了正常神器的标准, 因此它是特异区最重的神器之一.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_cristall_flower">
+		<text>地衣体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_cristall_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种神器生成于超高热异常点. 可以消耗多余的热量并保持恒温. 它还将保护使用者免受毒气和化学异常点中酸液的伤害. 另一方面, 由于目前未知的效应, 暴露在这样的环境中会使神器增加被酸腐蚀的程度. 因此人们不得不好好考虑如何利用它. 它也起导电的作用. 这种神器的另一个积极作用是, 如果佩戴在靠近身体的地方, 它会加速凝血. 侧注: 不建议长期持有此神器, 因为血栓可能对你的健康有害. 特异区外的珠宝商对恒温石神器有很高的需求, 因为其内部核心没有多少辐射, 只有那1cm厚的表层带辐射. 并且经过抛光和精制后非常的美丽. 然而, 强烈建议在计划将该神器投放市场时谨慎进行, 因为即使是极少量的放射性材料长期暴露也会导致使用者死亡. 上面覆盖着一层很硬的东西. 神器的高密度使得质量较重. 此外辐射输出在辐射量表上是最低的.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_cristall">
+		<text>恒温石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_dummy_battery_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这个神器比它的兄弟月光石提供了更多的灵能防护. 它由静电元素组成, 但生态学家尚未确定其形成所需的确切物理条件. 虽然长时间使用会对身体产生不利影响, 但这种神器在特异区内很受欢迎, 居民和游客都很重视它的能量特性. 然而, 我们应该注意到, 这种神器阻碍了血液凝固, 增加了开放性伤口的出血率. 另一方面, 作为一个强大的电阻, 它最众所周知的能力, 是保护其用户免受致命的电击. 这个神器也非常轻, 非常便携. 在人可接受的辐射尺度上, 辐射较低.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_dummy_battery">
+		<text>热电体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_dummy_dummy_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]钙藻石由两个蓝色的圆盘组成, 由一种未知性质的半透明材料连接. 很长一段时间以来, 许多生态学家认为这个奇怪的神器没有任何有用的特性. 直到最近人们才发现它确实很有益. 它提供高水平的灵能场保护, 吸收电磁干扰, 作为接地材料. 当神器与身体接触时, 它会让人感到充满活力, 从而增加耐力恢复. 这种效果会在一些潜行者身上诱发多动症. 然而, 这种神器的一个缺点是它减少了一个人血液中的血小板数量, 从而增加了一个人的出血率. 钙藻石非常轻, 非常便携. 在神器辐射尺度上, 辐射量非常高.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_dummy_dummy">
+		<text>钙藻石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_dummy_glassbeads_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]形状像DNA螺旋, 双链体是在爆燃异常点中创造的. 它们最典型的特点之一就是不断地脉动, 产生对人体有益的排放物. 这些排放物会加速任何生物的新陈代谢, 加速伤口的凝固和愈合. 这种神器的影响背后的机制仍不清楚. "双链体"也具有强大的保护功能: 它们可以保护身体和物品免受高温和强酸的伤害. 另一方面, 应该注意的是, 这种神器的存在增加了酸的腐蚀性, 导致设备的加速老化和对任何生物组织的更高损伤. 因此, 强烈建议在酸性和有毒的环境中使用双链体时要谨慎. 这种神器的另一个危险影响是它会增加导电性, 所以佩戴这种神器时被电死的可能性要高得多, 特别是在暴风雨和电气异常点附近的时候. 对于这样一个小的神器来说, 重量也相当高, 由此可以得出密度极高的结论. 在神器辐射尺度上, 辐射输出较低.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_dummy_glassbeads">
+		<text>双链体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_electra_flash_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种神器看起来很像"月光石", 类似于等离子球或等离子灯. 众所周知, 电光晶以作为强电阻, 可以为使用者抵抗住致命的电流. 也有些人认为戴上它时可以轻微抵消某些变异怪物的灵体能量或灵能异常点的有害影响. 然而, 它也会影响伤口愈合, 因此建议谨慎使用, 尤其是受伤或出血时. 这种神器非常轻, 非常便携. 该神器带有重度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_electra_flash">
+		<text>电光晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_electra_moonlight_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种独特的电系神器能在灵体能量影响下产生共振. 潜行者如今会对月光石进行一些调整, 使与主要发射源产生相反的共振, 从而显著地抵消了它们的影响. 当暴露在强电流下时这个美丽的球形神器还能通过降低电导率来增加使用者的抗电能力. 需要注意的是, 当月光石暴露在明火中时会着火. 该神器带有中度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_electra_moonlight">
+		<text>月光石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_electra_sparkler_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]该神器像是半透明蜘蛛网. 性质也和蜘蛛网一样, 它粘的就像胶水. 它通常产生于电力异常点, 并且似乎吸收了电力异常点的一些特性: 它能够充当电阻以保护使用者免受电的伤害. 应该注意的是, 这种神器会增加酸的腐蚀性, 从而导致装备的加速氧化, 并且酸性物质能够对使用者造成更大的伤害. 该神器带有低度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_electra_sparkler">
+		<text>蛛丝体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_eye_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种类似于人眼的神器可大大增加人体的新陈代谢, 帮助伤口更快地愈合. 经验丰富的潜行者说天目石也能带来好运气. 不管这个说法是不是真的, 眼睛的好处一定是真的. 这种神器可以缓解疼痛, 在治疗伤口时非常有用. 佩戴时还可以稍微抵消某些灵能场的影响. 然而这些好处是有代价的. 当暴露于化学异常点中时, 它将极为危险, . 因此强烈建议在探索有毒区域时将它放在背包中, 切勿佩戴, 除非你想死. 也有人把它叫做铜眼, 因为它的导电性和铜一样. 该神器带有中度辐射. \n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_eye">
+		<text>天目石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_fire_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]该神器在高热异常点中生成. 会产生强大的辐射, 从而加快新陈代谢过程, 更快地治愈伤口. 它的治愈能力甚至比天目石还要强, 据说甚至有戴着天火晶的潜行者在奇美拉的利爪下幸免于难. 因此人人都想得到它. 许多潜行者都欠它一条命, 大多数老手和怪物猎人也会佩戴它, 以防万一. 但是它不仅具有同类神器的优点, 也具有同样的缺点: 戴着它进入灵能场无异于自杀. 它会吸收灵体能量并迅速排放. 另外建议在把它送进外界的民间市场前好好考虑一下, 因为长时间接触天火晶的辐射会让人完蛋. 它也可以用来代替医疗包, 因为它可以非常快地治愈伤口. 神器带有重度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_fire">
+		<text>天火晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_fireball_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]它在爆燃异常点中产生, 是一种红色的球形晶体神器. 辉耀晶的属性很独特, 无论周围环境如何, 它总是能保持为75华氏度/24摄氏度的恒定温度. 还可以吸收附近的热量, 能在使用者周围构成一个保护罩, 防止烧伤. 负面影响是会增加电导率, 所以佩戴辉耀晶触电时将会受到更大的伤害, 尤其是在能量风暴期间或者靠近电力异常点时. 辉耀晶的密度很高, 因此比较重. 该神器带有重度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_fireball">
+		<text>辉耀晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_fuzz_kolobok_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]海胆石是比较罕见的化工神器, 因其能够在几分钟内治愈伤口并止血的独特能力而受到高度好评. 出于未知原因, 生态学家们在潜行者中散布谣言称神器会改变使用者的遗传基因, 这一说法未经证实, 可能是生态学家们想把神器都独占下来用作科学研究. 但是这并不意味着神器完全无害. 这种神器的缺点之一是会与放射粒子作用, 因此在佩戴它时时最好避免接触辐射. 带刺的它还会减少使用者的耐力. 刺会不断刺伤使用者但海胆石又会将伤口快速愈合, 所以会带来持续的疼痛和瘙痒感, 影响到使用者的耐力. 由于其高度易燃所以削弱了对热和酸的防护. 很轻, 不影响携带. 该神器带有中度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_fuzz_kolobok">
+		<text>海胆石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_gold_fish_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]重力神器的高级版.就像重力一样, 扬塔的萨哈洛夫教授在一次大规模能量风暴后发现了它的独特性质. 通过进一步的细致研究, 可以确定当三个重力神器相互作用并被彼此的引力场吸引时, 便产生了这种新的神器. 这种现象极为少见, 因此它受到高度重视. 乌克兰特种部队之间有一个传言, 在特异区中有俄罗斯联邦的特工, 其目的就是搜集浮游晶并送到特异区外的专业实验室去.该神器会产生一个恒定的反重力场, 但仅影响其附近的一小片区域.神秘的是, 一些潜行者无故消失后只留下一个浮游晶神器. 另外强大的反重力场也带来了很大的不利影响: 影响范围内的移动物体的速度将大大增加, 会造成更强大的冲击. 该神器带有超高辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_gold_fish">
+		<text>浮游晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_gravi_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]浮空石是由长期受到引力作用的金属物质形成的. 它具有一个强大的引力场, 因此它可以使周围的物品变轻. 在很长一段时间里它一直是个谜, 扬塔的萨哈洛夫教授首先发现了浮空石能创造一个反引力小奇点场, 这种现象每隔30分钟就会出现一次. 它的危险之处在于会增加导电性, 所以戴着这种神器时电的伤害会很大, 尤其是在电力异常点附近. 另一个缺点是它会增加灵体能量的负面影响. 该神器带有中度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_gravi">
+		<text>浮游晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_ice_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]也被叫做辐射雪花, 看起来像是白色的海胆石. 该神器具有增强使用者肌肉的独特能力, 可以大大提高耐力恢复能力. 由于它带有重度辐射, 潜行者们把它戏称为辐射雪花. 在决定是否要佩戴超导晶前, 你最好仔细考虑: 它的耐力和抗电能力在高辐射面前值吗? 就算你决定要戴, 你也应该想想自己能不能承受住辐射. 超导晶还有以下缺点: 它能吸收并放大周围的能量. 因此在装备它时接近高热异常点, 化学异常点, 灵能异常点无异于自杀. 超导晶很轻, 方便携带. 神器带有重度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_ice">
+		<text>超导晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_medusa_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种重力神器会吸引和吸收有毒/化学颗粒, 减少中毒对身体的影响. 在特异区内非常常见, 在特异区外非正式地用于治疗暴露于危险或致命化学品和有毒物质的人. 这个神器很重, 因为它的引力场似乎增加了质量. 它将轻微保护其用户免受极端热和酸分别产生的火焰和化学异常点. 神器带有低度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_medusa">
+		<text>刺胞体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_mincer_meat_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种神器柔软多孔, 有着皮肤般的质地, 可以像多孔石一样压缩, 作用也和多孔石类似, 但只有在一定的外界条件下才能激活它的作用. 第一, 当它在最接近热源时, 会散发出肉烧焦的气味. 长时间的暴露可能会增强它的可燃性, 并导致它点燃. 虽然这种现象会使神器完好无损, 但它会导致其附近的物体升温, 在极端情况下还会与神器一起点燃. 由于这个原因, 可以有把握地得出这样的结论: 它吸收热量并且能够把它传递给其他物体. 第二, 如同多孔石一样, 众所周知, 多孔石表面的孔隙能够吸收环境中的少量毒性物质. 第三, 这个神器通过吸收灵体能量并以很小的速度释放它, 略微放大了灵能场对生物体的破坏性影响. 第四, 肉石也被认为是导电体, 很像生物的皮肤. 潜行者社区内的某些发现进一步表明, 即使只使用很短的时间, 它也会让人感到筋疲力尽. 第五, 这种神器最有益的特性可能是它能够慢慢闭合伤口, 治愈受损组织. 辐射输出在神器辐射尺度上是最低的.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_mincer_meat">
+		<text>肉石</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_night_star_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种发光的神器可以产生定向低重力场. 用途和浮空石差不多, 潜行者们用它来增加负重. 它的内部核心非常漂亮, 各地珠宝商对它有一定的需求量, 但最好小心行事, 因为错误的处理方式会导致神器爆炸, 那足以炸平一个小建筑. 因此建议使用专业的机器来进行抛光, 这样可以将爆炸的可能性降到最低. 此外陨星体只有外部会发出辐射. 陨星体还会吸收周围的有毒和化学物质, 这一点很有价值, 不过对于神器猎人来说它吸收的毒素是微不足道的. 但它相对便宜, 一些穷潜行者也买得起. 据说陨星体受热时会发出烤肉味. 长时间受热可能会导致着火. 神器带有低度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_night_star">
+		<text>陨星体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_soul_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]灵质体是一种独特的有机神器, 具有与众不同的特性 - 它会分泌粘液, 可加快伤口愈合. 灵质体的外观就像它的价格一样高贵, 它是珍贵的收藏品. 它暴露在超过60摄氏度的温度下会自燃. 这种神器通过吸收化学气体提供了高水平的有毒和化学保护. 将其粘液涂在伤口上可以缓解疼痛并加快愈合过程. 它还减少了灵体能量对人体的影响, 不过也会降低人的耐力. 灵质体密度不高, 不是很重. 神器带有低度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_soul">
+		<text>灵质体</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_vyvert_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这种奇形怪状的神器出现在重力异常点附近. 它就像一块多孔石, 可以吸收化学物质和有毒元素, 保护人体免受外部有毒物质和已经进入人体的化学颗粒的伤害. 由于其非有机性质, 它是不可燃的. 它提供了对酸和热的保护. 没有哪个阵营对它有兴趣, 所以它大多是卖给生态学家研究和实验, 以找到它的用途. 它的密度很高, 因此非常重. 在神器辐射尺度上, 辐射输出较低.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_vyvert">
+		<text>螺旋</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_compass_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]很少见的神器, 自第一个磁石晶被发现后已有好几年没出现新的了. 它可以显示出异常点间的安全通道. 据说它可以帮助人们穿越最危险的异常点集群而不受伤. 但是很少有人知道如何正确使用它. 在最近的实验中, 磁石晶展现出了它的独特能力. 它可以与移动的物体相互作用并使它们消失, 也许是传送走了? 它还会消耗耐力并增加出血率. 但是最大的缺点是会产生超强的辐射. 将神器放在身体上可能会在几分钟内杀死你.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_compass">
+		<text>磁石晶</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_oasis_heart_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]这个神器位于传说中绿洲的中心地带. 核心似乎是晶化植物, 目前对绿洲的已知之处是它可以治疗生物. 它不仅大大加快了伤口的恢复速度和愈合过程, 还为人体提供了强大的能量源. 它是一个真正的奇迹. 话虽如此, 绿洲对周围环境非常敏感. 因此绿洲与异常点作用时可能会杀死使用者. 神器带有超高辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_oasis_heart">
+		<text>绿洲之心</text>
+	</string>
+	
+	<string id="encyclopedia_artifacts_glass_text">
+		<text>%c[d_green]情报\n%c[ui_gray_2]荧光晶有一种目前科学还无法解释的能力, 能大大加快生物组织和器官的再生并稳定代谢. 这种神器可以在几分钟之内使一个受了重伤的潜行者重新恢复健康. 此外荧光晶如果暴露于强辐射下会自燃. 这种神器有一个很大的缺点, 它会在愈合过程中减少血液里血小板的含量, 从而增加出血率. 它似乎会极大地降低耐力恢复 一些被荧光晶治愈的人说, 伤好后数小时内他们无法走路. 不幸的是, 荧光晶非常少见. 神器带有重度辐射.\n \n%c[0,200,200,200]属性:%c[ui_gray_2]\n \n%c[0,225,225,225] • %c[ui_gray_2] 神器\n%c[0,100,100,255] • %c[ui_gray_2] 可佩戴的</text>
+	</string>
+	<string id="encyclopedia_artifacts_glass">
+		<text>荧光晶</text>
+	</string>
+		
+</string_table>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Unique sights for MP412 Rex
+-->
+
+<string_table>
+	<string id="st_integrated_docter">
+		<text>DOCTER Sight（瞄准专家）红点瞄具</text>
+	</string>
+	<string id="st_integrated_docter_descr">
+		<text>只能通过升级套装获得。.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 放大: %c[ui_gray_1]无（红点瞄具）\n
+		</text>
+	</string>
+
+    <string id="st_integrated_compact">
+		<text>Compact Sight（紧凑型）红点瞄具</text>
+	</string>
+	<string id="st_integrated_compact_descr">
+		<text>只能通过升级套装获得.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 放大: %c[ui_gray_1]无（红点瞄具）\n
+		</text>
+	</string>
+</string_table>

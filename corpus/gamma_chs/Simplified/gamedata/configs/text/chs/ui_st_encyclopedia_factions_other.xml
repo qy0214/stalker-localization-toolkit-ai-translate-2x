@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_factions_other">
+		<text>阵营 (其它)</text>
+	</string>
+	
+	<string id="encyclopedia_factions_other_zombified">
+		<text>僵尸化潜行者</text>
+	</string>
+	<string id="encyclopedia_factions_other_zombified_text">
+		<text>
+			%c[pda_white]僵尸化潜行者%c[ui_gray_1] 是那些被强大的灵能场影响的人.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n这些行尸走肉没有了原来所具备的一些高等能力, 仅残留了一些条件反射类的技能, 无法按自主意识活动, 并且疼痛阈值较高.\n
+			\n随着时间的流逝, 僵尸潜行者的健康将逐渐恶化, 最终会完全丧失人性, 并成为我们叫做僵尸的怪物.\n
+			\n但是与怪物不同的是, 僵尸潜行者能够使用武器和工具, 并且经常进行群体行动或与黑石士兵合作.\n
+			\n%c[pda_green]统计资料%c[ui_gray_1]\n
+			\n• 领袖: 不明\n• 总部: 不明\n• 服装颜色: 多样\n
+		</text>
+	</string>
+	
+</string_table>

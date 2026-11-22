@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons upgrades
+-->
+<string_table>
+
+	<string id="st_prop_binoc_gamma_nightvision">
+		<text>夜视仪</text>
+	</string>	
+	<string id="st_prop_binoc_gamma_nightvision_0">
+		<text>夜视仪</text>
+	</string>
+	<string id="st_prop_binoc_gamma_nightvision_1">
+		<text>第一代夜视仪</text>
+	</string>
+	<string id="st_prop_binoc_gamma_nightvision_2">
+		<text>第二代夜视仪</text>
+	</string>
+	<string id="st_prop_binoc_gamma_nightvision_3">
+		<text>第三代夜视仪</text>
+	</string>
+	
+	<string id="st_up_binoc_b1_gamma_name">
+		<text>第一代夜视仪</text>
+	</string>
+	<string id="st_up_binoc_b1_gamma_descr">
+		<text>用于弱光条件的夜视技术装置,它依靠夜间有用的光谱和强度范围技术来感知人类观察不到的光辐射. </text>
+	</string>
+	<string id="st_up_binoc_b2_gamma_name">
+		<text>第二代夜视仪</text>
+	</string>
+	<string id="st_up_binoc_b2_gamma_descr">
+		<text>对夜视技术的改进,引入了更好的系统光增益、系统分辨率和光敏性,以提高视觉质量</text>
+	</string>
+	<string id="st_up_binoc_b3_gamma_name">
+		<text>第三代夜视仪</text>
+	</string>
+	<string id="st_up_binoc_b3_gamma_descr">
+		<text>对夜视技术的改进,引入了更好的系统光增益、系统分辨率和光敏度,以提高视觉质量,并采用白色荧光屏,以提高视力和减少眼睛损伤</text>
+	</string>
+
+</string_table>

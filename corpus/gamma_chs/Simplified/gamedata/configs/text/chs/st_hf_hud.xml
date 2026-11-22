@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_hf_holding_msg">
+		<text>$key_interact - 放置物体\n
+            \n
+            $key_collision - 碰撞检测模式\n
+            $key_align - 平面对齐模式\n
+            \n
+            $key_mode - 切换到高级模式\n
+            ESCAPE - 取消放置\n
+        </text>
+	</string>
+
+    <string id="st_hf_advanced_msg">
+		<text>$key_interact - 放置物体\n
+            \n
+            变换操作:\n
+            MOUSE1 - 在水平面上移动\n
+            MOUSE2 - 沿纵轴转动\n
+            LSHIFT + MOUSE1 - 在垂直面上移动\n
+            \n
+            功能键:\n
+            LALT - 吸附功能\n
+            LCTRL - 微调控制\n
+            \n
+            $key_mode - 切换到预览模式\n
+            ESCAPE - 切换到正常模式\n
+        </text>
+	</string>
+
+    <string id="st_hf_preview_msg">
+		<text>$key_interact - 放置物体\n
+            \n
+            ESCAPE - 取消放置\n
+            $key_mode - 切换到高级模式
+        </text>
+	</string>
+</string_table>

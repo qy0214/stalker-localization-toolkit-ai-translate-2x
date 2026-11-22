@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Griffith (Mercs leader in the Bookstore) -->
+	<string id="grifon_meet_dialog_0">
+		<text>我看到你发的消息了, 你们这群雇佣兵怎么做起生意来了?</text>
+	</string>
+	<string id="grifon_meet_dialog_1">
+		<text>...别得寸进尺了! 你之所以还能站在这里是因为我们遭到了麻烦:我们把曾经出现在这儿的人跟丢了, 他被军队救走了... 而且我们也没有找到任何有用的文件. 如果我们就这样回去到达什曼那里去的话, 他肯定会捏爆我的蛋蛋并塞进我的喉咙里的, 这就是为啥我们还在这儿的原因. 至少说, 我们与一般的潜行者战斗毫无意义.</text>
+	</string>
+	<string id="grifon_meet_dialog_2">
+		<text>那么你需要我做些啥?</text>
+	</string>
+	<string id="grifon_meet_dialog_3">
+		<text>所有帮助都行, 我们在这儿没有补给, 也没有工具 - 只有在任务途中找到的东西. 你可以与我们的后勤兵交谈一下, 只要花点小钱, 他就能把东西卖给你.</text>
+	</string>
+
+	<string id="task_find_inf_inx_8_mlr_1_0">
+		<text>有什么特别点的任务吗?</text>
+	</string>
+	<string id="task_find_inf_inx_8_mlr_1_1">
+		<text>实际上, 我们到这儿来是为了去禧年服务中心的X8实验室的, 在那里有一座电梯能让我们下到负一楼去. 但是那群狗娘养的军人打断了我们, 就是因为他们我们才被困在这里的. 达什曼总归是要杀了我们的, 但也许地底下还剩了些秘密档案? 我们离开这里的时候必须得带上些有用的东西. 我很希望我能和队友们一起再次拜访那里, 但是我们人手紧缺 - 光是处理现在的屁事儿就已经令人头大了, 比起这里, 我们更宁愿去特异区的中心. 也许你能够下到X8里面去, 找到一些文档, 呃... 同时你还能挣点外快. 所以说你想去吗?</text>
+	</string>
+	<string id="task_find_inf_inx_8_mlr_1_2">
+		<text>我会去的.</text>
+	</string>
+	<string id="task_find_inf_inx_8_mlr_1_3">
+		<text>算了算了.</text>
+	</string>
+	
+	<string id="task_find_inf_inx_8_mlr_2_0">
+		<text>这些是我所找到的.</text>
+	</string>
+	<string id="task_find_inf_inx_8_mlr_2_1">
+		<text>这一叠纸不是很厚... 但是仍然能够找出一些有意思的东西. 找到个合适的买家并不难, 这是你的报酬.</text>
+	</string>
+	
+<!-- Trunk (Merc Mechanic in the Bookstore) -->
+	<string id="tech_a18_meet_dialog_0">
+		<text>你是这里的技师, 对吧? 你能提供些什么?</text>
+	</string>
+	<string id="tech_a18_meet_dialog_1">
+		<text>找对人了. 我可以提供装备维修和弹药, 当然, 都是搜刮来的, 但用来换你的外国弹药绝对是够了, 当然国外的东西我们也有一些. 一般的东西, 除了RPG火箭弹以外, 兑换比率都是一比一. 我们的武器虽然先进可靠, 但总有那么一小部分人爱用国产的, 毕竟子弹更好搞, 这样才能保证我们能够维持生活并过得更好. 我也提供RPG火箭弹和M203榴弹, 这些都是我们任务的报酬, 但是抱歉的是, 我们没有榴弹发射器了. 对了, 我还提供医疗援助.</text>
+	</string>
+
+	<string id="tech_a18_meet_dialog_1_0">
+		<text>有哪些可以交换的弹药?</text>
+	</string>
+	<string id="tech_a18_meet_dialog_1_1">
+		<text>我有两百颗 9x19 子弹可以换成同样数量的 9x18 +P+ 子弹, 三百发 5.56x45 子弹可换做5.45x39 子弹, 二十个 F1 手榴弹可以换成同数量的 M209 榴弹或是10发 RGD-5手榴弹 换成3发 RPG 火箭弹.</text>
+	</string>
+	
+	<string id="tech_a18_meet_dialog_2_0">
+		<text>好, 来交换吧.</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_1">
+		<text>不错. 你有些什么?</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_2">
+		<text>我要把一百发 9x19子弹换成一百发 9x18 +P+ 子弹.</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_3">
+		<text>我想把一百发 5.56x45 子弹换成一百发 5.45x39子弹.</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_4">
+		<text>我想用二十个 F1手榴弹换成 M209 榴弹.</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_5">
+		<text>把十个 RGD-5 手榴弹换成三个 RPG 火箭弹.</text>
+	</string>
+	<string id="tech_a18_meet_dialog_2_6">
+		<text>我改变主意了.</text>
+	</string>
+
+	
+<!-- Meeker (Special trader  in the Bookstore, substituting Nimble as special orders trader) -->
+	<string id="pri_special_trader_mlr1_0">
+		<text>你是谁?</text>
+	</string>
+	<string id="pri_special_trader_mlr1_1">
+		<text>一个新的客户... 你懂的, 我不是很在意你是谁你来自哪里 - 你只需要从我单子上选个东西然后等上一天到我拿到了东西. 还有, 我不接受反悔 - 我没有时间可以浪费, 另外, 我不接受预付款. 所有东西都会准时到, 但你一次只能订购一件物品.</text>
+	</string>
+
+	<string id="pri_special_trader_mlr4_0">
+		<text>你是怎么与黑石合作并且拿到这么多独特的武器和装备的?</text>
+	</string>
+	<string id="pri_special_trader_mlr4_1">
+		<text>如果我对你的身世不感兴趣的话, 你应当也对我如此对吧? 我很明确的告诉你: 我就是一个中间人. 能与我合作, 你应该感到好运, 我对我的客户们有很高要求的.</text>
+	</string>
+
+	<string id="pri_special_trader_mlr2_0">
+		<text>我想下一个订单.</text>
+	</string>
+	<string id="pri_special_trader_mlr2_1">
+		<text>选择你感兴趣的.</text>
+	</string>
+		<string id="pri_special_trader_mlr2_2">
+			<text>手枪</text>
+		</string>
+		<string id="pri_special_trader_mlr2_7">
+			<text>相信我, 你挑的都是独一无二的, 这儿.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_8">
+			<text>草原雄鹰 - 沙鹰设计、手工精制. 经调整后获得了难以置信的精准度, 它要8000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_11">
+			<text>24小时之后, 你在PDA上受到我的消息.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_9">
+			<text>阿尔卑斯 - 一把改装后的 SIG P220, 配有加长弹匣. 它会花上65000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_10">
+			<text>进行曲 - 改装后的 USP 紧凑型, 大口径、射速快.它要7000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_3">
+			<text>霰弹枪和冲锋枪</text>
+		</string>
+		<string id="pri_special_trader_mlr2_28">
+			<text>好吧, 从这里面选一个.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_12">
+			<text>弗雷泽 - 基于MP5的手工改造的冲锋枪. 加大了口径, 比标准版本更能体现MP5的特点. 它要9500卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_13">
+			<text>重骑射手 - 军方改造过的 SPAS-12, 减小了后坐力并且增加了自动开火模式.它会花上你11000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_14">
+			<text>重击 - 一把基于保卫者的霰弹枪.它花上17000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_15">
+			<text>我没找到我想要的.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_4">
+			<text>狙击枪和突击步枪</text>
+		</string>
+		<string id="pri_special_trader_mlr2_29">
+			<text>这是我能拿到的 - 选一个吧.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_16">
+			<text>暴风 - 一把改造过的 OTs-14 闪电, 用来装备与阿尔法小组, 但是有一些被贩卖流通了, 它最值得指出的一点是大容量弹匣. 这会花上19000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_17">
+			<text>HK G36 - 很难在特异区里找到. 这会花上14000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_18">
+			<text>FN F2000, 比利时稀有货, 很好的步枪, 17000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_19">
+			<text>潮 - VSS Vintorez的特殊版本, 射速低, 但是子弹阻滞力很大,20000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_20">
+			<text>SVU2-A - SVUmk-2 狙击步枪的进阶版. 这把枪原属于麦克斯-自由军的传奇守卫, 它会花上你24000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_21">
+			<text>山猫 - SVD的军式版本, 提高了精准度和阻滞力, 它要18000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_27">
+			<text>高斯步枪, 真正意义上的战利品 - 特异区这玩意儿的数量屈指可数. 它有着绝对的精准度和火力优势, 再配上几乎为零的后坐力. 价格是150000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_5">
+			<text>防护服</text>
+		</string>
+		<string id="pri_special_trader_mlr2_30">
+			<text>好啊, 挑一件吧.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_22">
+			<text>一套黑石的外骨骼 - 有着最棒的保护. 还有, 除非你是他们的一员, 你是不会搞到这种东西的. 它值100000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_23">
+			<text>一套佣兵的外骨骼 - 也许是最好的保护方式之一. 它会花上你75000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_24">
+			<text>土匪的外骨骼, 有着最纯粹的专权性. 它值65000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_25">
+			<text>一套外带外骨骼的全封闭内循环黑石防护服; 你在其他地方铁定见不着. 它会花上你70000卢布.</text>
+		</string>
+		<string id="pri_special_trader_mlr2_26">
+			<text>一套拥有着封闭式呼吸系统的佣兵套装, 它对于普通的潜行者来说是一件真正的奇物, 能够完美地抵挡异常现象的伤害, 它要50000卢布.</text>
+		</string>
+	<string id="pri_special_trader_mlr2_6">
+		<text>我想不必了.</text>
+	</string>
+
+	<string id="pri_special_trader_mlr3_0">
+		<text>我收到了你的信息, 我的订单准备好了吗?</text>
+	</string>
+	<string id="pri_special_trader_mlr3_1">
+		<text>是的, 我希望你有足够的钱能支付它, [%sRU]</text>
+	</string>
+		<string id="pri_special_trader_mlr3_2">
+			<text>好的, 给我草原之鹰, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_20">
+			<text>下次再来.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_3">
+			<text>我会带走SIG阿尔卑斯的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_4">
+			<text>把USP进行曲给我, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_5">
+			<text>我会收下MP5弗雷泽的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_6">
+			<text>把重装骑手给我, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_7">
+			<text>给我重击, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_8">
+			<text>我会要了 OTs-14 能量风暴的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_9">
+			<text>我会收下 HK G36的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_10">
+			<text>FN-2000 听起来象是个不错的选择, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_11">
+			<text>VSS 潮, 就是它了. 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_12">
+			<text>SVU2-A,对吧? 当然, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_13">
+			<text>我会拿走 SVD山猫的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_14">
+			<text>我要带走黑石外骨骼, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_15">
+			<text>给我一套佣兵外骨骼. 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_16">
+			<text>我会为土匪外骨骼砸些钞票的, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_17">
+			<text>我需要那件黑石SEVA防护服, 拿上你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_18">
+			<text>给我雇佣兵SEVA防护服, 这是你的钱.</text>
+		</string>
+		<string id="pri_special_trader_mlr3_19">
+			<text>高斯枪, 行. 这是你的钱.</text>
+		</string>
+	<string id="pri_special_trader_mlr3_21">
+		<text>呃... 等等吧, 我还在筹钱呢.</text>
+	</string>
+
+
+<!-- Monolith Mechanic in the Yubileiny service center -->
+	<string id="mechanic_monolith_kbo_start_0">
+		<text>你好, 我的兄弟. 我运作着这里以便为我们的弟兄们维护装备.</text>
+	</string>
+
+	
+<!-- Monolith trader in the Yubileiny service center -->
+	<string id="meet_guid_prikbo_mon_0">
+		<text>要到哪儿去呀? 我的兄弟.</text>
+	</string>
+	<string id="meet_guid_prikbo_mon_1">
+		<text>我无法亲自护送你, 但是我的弟兄们会带着你过去 - 当然是要付钱的. 我们在红森林、尤皮特、普里皮亚奇设立了哨站, 我们很乐意为你效劳.</text>
+	</string>
+
+	<string id="meet_guid_prikbo_mon_list_0">
+		<text>向导们能带我到哪儿去?</text>
+	</string>
+	<string id="meet_guid_prikbo_mon_list_1">
+		<text>去红森林要5000卢布, 去尤皮特要2000, 而去普里皮亚奇要1000.</text>
+	</string>
+
+	<string id="travel_guid_prikbo_mon_mon_0">
+		<text>我想到哪儿去.</text>
+	</string>
+	<string id="travel_guid_prikbo_mon_mon_1">
+		<text>当然了, 你希望我们的向导把你带到哪儿?</text>
+	</string>
+	<string id="travel_guid_prikbo_mon_mon_2">
+		<text>去红森林. %c[d_orange][5000 卢布]</text>
+	</string>
+	<string id="travel_guid_prikbo_mon_mon_3">
+		<text>去尤皮特. %c[d_orange][2000 卢布]</text>
+	</string>
+	<string id="travel_guid_prikbo_mon_mon_4">
+		<text>去普利皮亚季. %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_prikbo_mon_mon_5">
+		<text>我想还是算了吧.</text>
+	</string>
+
+	
+<!--== Charon, in the basement of the Palace of Culture =-->
+	<string id="meet_guid_l11pri_mon_haron_0">
+		<text>大兄弟, 我能到哪儿去不?</text>
+	</string>
+	<string id="meet_guid_l11pri_mon_haron_1">
+		<text>当然, 我可以让我弟兄们带领着你 - 只要你能够为兄弟会捐一次款的话. 你可以被带往普城郊区以东, 尤皮特以西, 或是红森林的西南部.</text>
+	</string>
+
+	<string id="meet_guid_l11pri_mon_haron_list_0">
+		<text>我的兄弟, 我能到哪儿去啊?</text>
+	</string>
+	<string id="meet_guid_l11pri_mon_haron_list_1">
+		<text>这儿往东走是城郊, 往西走是尤皮特, 往西南走是红森林.</text>
+	</string>
+
+	<string id="travel_guid_l11pri_mon_haron_0">
+		<text>我想到哪儿去.</text>
+	</string>
+	<string id="travel_guid_l11pri_mon_haron_1">
+		<text>好兄弟, 你打算去哪儿啊?</text>
+	</string>
+	<string id="travel_guid_l11pri_mon_haron_2">
+		<text>去普城郊区 %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_l11pri_mon_haron_3">
+		<text>去尤皮特 %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_l11pri_mon_haron_4">
+		<text>去红森林 %c[d_orange][5000 卢布]</text>
+	</string>
+	<string id="travel_guid_l11pri_mon_haron_5">
+		<text>想想还是算了吧.</text>
+	</string>
+
+	<string id="find_blackbox_mlr_reward_haron_0">
+		<text>老兄, 我在一架直升机的残骸里找到了这个飞行记录仪.</text>
+	</string>
+	<string id="find_blackbox_mlr_reward_haron_1">
+		<text>那太棒了! 有了这个, 异教徒会被烧死的.</text>
+	</string>
+
+	
+
+<!-- Guide in eastern Pripyat -->
+	<string id="meet_guid_pri_stalker_0">
+		<text>你就是向导, 对吧?</text>
+	</string>
+	<string id="meet_guid_pri_stalker_1">
+		<text>对的, 他们叫我"游客". 我尤其喜欢到那些地图没什么标记的地方去, 这样我就能找到其他潜行者不知道的路. 好吧, 我可以带你到这些地方去: 核电站, 12000卢布; 普里皮亚奇, 3000卢布; 亚诺夫车站,4000卢布; 雷达站, 8000卢布; 木星工厂地道, 1000卢布; 扎顿, 4000卢布.</text>
+	</string>
+
+	<string id="meet_guid_pri_stalker_list_0">
+		<text>你还能到哪儿去?</text>
+	</string>
+	<string id="meet_guid_pri_stalker_list_1">
+		<text>去核电站要12000卢布; 普里皮亚奇要3000; 亚诺夫车站要4000; 雷达站, 8000; 木星工厂地道只要1000; 而扎顿得从盖瑞那里过去, 要4000卢布.</text>
+	</string>
+
+	<string id="travel_guid_pri_stalker_0">
+		<text>引路吧.</text>
+	</string>
+	<string id="travel_guid_pri_stalker_1">
+		<text>去哪儿?</text>
+	</string>
+	<string id="travel_guid_pri_stalker_2">
+		<text>去核电站. %c[d_orange][12000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_3">
+		<text>去普利皮亚季. %c[d_orange][3000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_4">
+		<text>去雷达站. %c[d_orange][8000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_5">
+		<text>去尤皮特. %c[d_orange][4000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_6">
+		<text>去木星工厂地道. %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_7">
+		<text>去扎顿. %c[d_orange][4000 卢布]</text>
+	</string>
+	<string id="travel_guid_pri_stalker_8">
+		<text>我改变想法了.</text>
+	</string>
+
+<!-- Eidolon -->
+	<string id="monolith_eidolon_st_1">
+		<text>吾名幻灵, 是黑石的选中之人, 也正是吾重启了"焦脑器", 作为我虔诚的回应, 伟大的黑石授予了吾礼物; 全能的黑石教导我, 要保护吾等信众, 惩罚汝等罪人, 最终完成他伟大的事业! 吾从圣区之中找出那些妄图摧毁、颠覆圣教的, 愚蠢渺小的蝼蚁们, 但吾不会杀了你, 当你受到圣器和圣念感化后. 无论汝等逃向何处何地, 我就都能感受到你们了! ...吾心吾行澄如明镜, 所行所为皆为黑石...</text>
+	</string>
+
+</string_table>

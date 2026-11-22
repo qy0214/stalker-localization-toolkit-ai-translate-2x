@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_fmode_sound_title">
+		<text>切换开火模式的按钮声</text>
+	</string>
+	<string id="ui_mcm_menu_fmode_sound">
+		<text>开火模式切换音效</text>
+	</string>
+	<string id="ui_mcm_fmode_sound_sound">
+		<text>声音</text>
+	</string>
+	<string id="ui_mcm_fmode_sound_volume">
+		<text>音量</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss0">
+		<text>声音 1</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss1">
+		<text>声音 2</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss2">
+		<text>声音 3</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss3">
+		<text>声音 4</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss4">
+		<text>声音 5</text>
+	</string>
+	<string id="ui_mcm_lst_switch_mode_gfmss5">
+		<text>声音 6</text>
+	</string>
+</string_table>

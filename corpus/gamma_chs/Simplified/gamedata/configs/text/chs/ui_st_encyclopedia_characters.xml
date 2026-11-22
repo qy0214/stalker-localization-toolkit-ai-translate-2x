@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_characters">
+		<text>人物志</text>
+	</string>
+	
+	<string id="encyclopedia_characters_ashot">
+		<text>阿肖特</text>
+	</string>
+	<string id="encyclopedia_characters_ashot_text">
+		<text>
+			%c[pda_white]阿肖特%c[ui_gray_1] 是自由军分配到亚诺夫车站的一位开朗乐观的交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n据他本人说, 由于他的"低价但高质的装备", 他被黑市交易商列入了某些黑名单\n
+			\n他是一位名叫雅叔的老潜行者的老朋友, 他很怀念雅叔, 也很怀念他们曾经常一起开别人的玩笑\n
+	
+		</text>
+	</string>
+	
+		<string id="encyclopedia_characters_axel">
+		<text>埃克索</text>
+	</string>
+	<string id="encyclopedia_characters_axel_text">
+		<text>
+			%c[pda_white]埃克索%c[ui_gray_1] 是扎顿的斯卡多夫斯克号上的医生\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n大家伙对埃克索知之甚少, 因为他不善言辞, 不过有些流言蜚语说他只是为了逃避岳母而来到特异区\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_barkeep">
+		<text>酒保</text>
+	</string>
+	<string id="encyclopedia_characters_barkeep_text">
+		<text>
+			 %c[pda_white]酒保%c[ui_gray_1] 是罗斯托克辐射100酒吧的老板\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n由于罗斯托克位于特异区繁华地段的中心位置, 所以酒保是一位十分重要的交易商, 他是准备或从探险归来的潜行者们的生命线\n
+			\n除了表面上管理酒吧之外, 他还出租房间、行贿, 并为潜行者提供大量装备和工作\n
+			\n一直到今天, 他仍然受到许多潜行者的尊敬, 因为他对开辟通往特异区中心之路作用巨大\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_beard">
+		<text>大胡子</text>
+	</string>
+	<string id="encyclopedia_characters_beard_text">
+		<text>
+			%c[pda_white]大胡子%c[ui_gray_1] 是斯卡多夫斯克号的神器交易商和酒保\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他是特异区中心地带的一个重要人物, 也是扎顿潜行者的老大\n
+			\n虽然他主要对神器感兴趣, 但他还是提供了各种各样的工作, 而且他似乎总是会让应聘者去做对他们自身而言比较有利的工作\n
+			\n他的酒吧是特异区最繁忙的酒吧之一, 仅次于辐射100酒吧, 他几乎就是斯卡多夫斯克号的代名词\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_cardan">
+		<text>卡丹</text>
+	</string>
+	<string id="encyclopedia_characters_cardan_text">
+		<text>
+			%c[pda_white]卡丹%c[ui_gray_1] 是一位老到的技师, 正在努力戒酒\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他和他的两个朋友:小丑和巴杰来到了特异区, 在一场激烈的酒后争吵后, 他们决定分道扬镳\n
+			\n从此之后他住在了斯卡多夫斯克号, 然后进一步陷入了酗酒的泥潭, 在得知老朋友的死讯后才发誓戒酒\n
+			\n在此之前, 他曾参与过"62号项目"的开发, 也就是高斯步枪的原型, 直到2004年时项目最终流产\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_cold">
+		<text>冷风</text>
+	</string>
+	<string id="encyclopedia_characters_cold_text">
+		<text>
+			%c[pda_white]冷风%c[ui_gray_1] 帮助重建了晴空, 现在他是领袖\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n冷风以前只是个酒保, 曾是特异区里为数不多的消极者之一, 在晴空的大部分主力牺牲或被失踪后, 他接管了晴空\n
+			\n和他的名字正相反, 大家都认为他是一个快活、和善的人, 还爱讲下流笑话\n
+			\n毫无疑问, 他做出了正确的决定, 他让晴空昔日的光辉在今日得以再次闪耀, 并在特异区占据了一席之地\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_doctor">
+		<text>沼泽巫医</text>
+	</string>
+	<string id="encyclopedia_characters_doctor_text">
+		<text>
+			%c[pda_white]沼泽巫医%c[ui_gray_1] 是史特洛克小组的幸存者之一\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n根据公认的传说, 沼泽巫医是第一批见到许愿石的潜行者之一, 他许愿能够医治特异区内所有的生灵\n
+			\n他的愿望得到了满足, 他得到了治愈万灵的能力, 代价是再也无法分辨人和怪物\n
+			\n沼泽巫医本人则否认说这只是个故事而已, 他说那些去寻找许愿石的人没有一个活着回来\n
+		    \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 他是少数几个成功驯服变异犬的潜行者之一. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_fanatic">
+		<text>"狂人"法纳特</text>
+	</string>
+	<string id="encyclopedia_characters_fanatic_text">
+		<text>
+			%c[pda_white]"狂人"法纳特%c[ui_gray_1] 这个名字来源于他的专注和好战\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n"独狼"沃夫临时离开菜鸟村前往军事仓库后, "狂人"法纳特接管了菜鸟村并独自照顾菜鸟们, 直到他的朋友回来\n
+			\n尽管他现在不是唯一的教官, 但他仍然被菜鸟们视为权威, 他更喜欢外出与土匪和怪物战斗, 而不是袖手旁观\n
+	
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_gonta">
+		<text>贡塔</text>
+	</string>
+	<string id="encyclopedia_characters_gonta_text">
+		<text>
+			%c[pda_white]"怪物猎人"贡塔%c[ui_gray_1]是职业猎手, 也是屠兽者的徒弟\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在屠兽者的命令下, 他带着加马特、科拉布和达尼拉来到了扎顿, 杀死了一直威胁着附近潜行者的奇美拉\n
+			\n从一开始他们的冒险之旅就遭遇了厄运, 达尼拉神秘失踪, 科拉布受伤后卧床不起\n
+			\n他们雇佣了一个名叫喜鹊的潜行者来帮助他们, 但喜鹊却在紧要关头溜了, 还偷走了他们的装备, 然后逃向了亚诺夫车站\n
+			\n在一个神秘潜行者的帮助下, 贡塔杀死了奇美拉, 找到了死去的达尼拉, 还发现了喜鹊的下落 - 并且很快就让他得到了应有的报应\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_hawaiian">
+		<text>夏威夷</text>
+	</string>
+	<string id="encyclopedia_characters_hawaiian_text">
+		<text>
+			%c[pda_white]夏威夷%c[ui_gray_1] 是亚诺夫车站的懒散的管理员, 他曾经是车站的经营者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n尽管他的名字暗示着他实际上并不是来自夏威夷, 但他见到顾客总要说一句"阿罗哈!"\n
+			\n他几乎全天趴在车站吧台上, 那里以前是售票亭兼候车亭\n
+			\n他与自由军关系不错, 据说他的主要任务就是让车站保持轻松友好的气氛 - 这对靠近普里皮亚奇的尤皮特来说既是必要的也是艰难的\n
+
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_professor_kalancha">
+		<text>E. F. 卡兰查教授</text>
+	</string>
+	<string id="encyclopedia_characters_professor_kalancha_text">
+		<text>
+			%c[pda_white]卡兰查教授%c[ui_gray_1] 是晴空的首席研究员兼医生\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n作为"晴空"仅存的几个创始人之一, 卡兰查把他的时间花在了神器实验、研究变异的身体部位样本和观察异常点现象上\n
+			\n他被称为活的百科全书和计算机, 他成为医生是被迫的, 而不是出于自身选择. 他是晴空里最有经验的医生, 该组织在2011年濒临崩溃\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_librarian">
+		<text>莱伯利安</text>
+	</string>
+	<string id="encyclopedia_characters_librarian_text">
+		<text>
+			%c[pda_white]莱伯利安%c[ui_gray_1] 实际上是晴空的酒保\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在特大能量风暴后沼泽与其他地区的联系切断了, 莱伯利安发现自己陷入了困境, 找不到出去的路\n
+			\n与其面对土匪或更糟的死亡, 他选择前往遥远的南方, 加入了晴空, 他取代了冷风当了酒保, 因为冷风要去当领袖\n
+
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_lieutenant_kirilov">
+		<text>基里洛夫中尉</text>
+	</string>
+	<string id="encyclopedia_characters_lieutenant_kirilov_text">
+		<text>
+			%c[pda_white]基里洛夫中尉%c[ui_gray_1] 是军队中最有天赋的技师之一\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n基里洛夫最初只是一个无线电电报员, 但他有着能把东西拆开再组装起来的本事\n
+			\n坦途行动失败后, 他和他的小队躲进了一家旧洗衣店, 在那里他利用自己的才能修理小队的装备和武器\n
+			\n在这次事件之后, 他被他的指挥官科瓦斯基上校引荐到军方的农业研究所基地担任最重要的技师\n
+	
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_limpid">
+		<text>"拐子"林匹</text>
+	</string>
+	<string id="encyclopedia_characters_limpid_text">
+		<text>
+			%c[pda_white]"拐子"林匹%c[ui_gray_1] 是土匪的固定技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他曾在一家工厂担任机械工程师, 可以说他精通技术\n
+			\n然而在一次酒后斗殴被解雇后, 他得了酒精中毒, 并在此后不久失去了妻子和家庭\n
+			\n在人生最黯淡的那段日子里, 他选择进入特异区重新做人. 不久之后, 他在填埋场加入了土匪, 并找到了一份技师工作\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_loki">
+		<text>洛基</text>
+	</string>
+	<string id="encyclopedia_characters_loki_text">
+		<text>
+			%c[pda_white]洛基%c[ui_gray_1] 是亚诺夫车站的领袖\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在"焦脑器"被关闭后, 潜行者们纷纷涌向特异区中心, 洛基成了自由军探险队的指挥官\n
+			\n与自由军的其他领袖不同, 他有着更冷静的意识形态, 那些原本会疏远他的阵营也纷纷对他表示尊重\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_major_kuznetsov">
+		<text>库兹涅佐夫</text>
+	</string>
+	<string id="encyclopedia_characters_major_kuznetsov_text">
+		<text>
+			%c[pda_white]库兹涅佐夫%c[ui_gray_1] 是一个冷酷无情且极度腐败的军官\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\nS库兹涅佐夫几年前才进入特异区, 他从一个不起眼的哨站卫兵变成了一名令下属胆寒且经验丰富的指挥官\n
+			\n尽管他在陆军部里几乎没啥实权, 但他通过贿赂以及背后捅刀子的方式让他的同僚都不敢对他有半点质疑\n
+			\n现在, 他几乎成为了特异区最强的军方指挥官\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_nimble">
+		<text>"巧手"尼博</text>
+	</string>
+	<string id="encyclopedia_characters_nimble_text">
+		<text>
+			%c[pda_white]"巧手"尼博%c[ui_gray_1] 是一个贩卖走私武器和装备的奸商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n起初是晴空的成员, 后来是西多洛维奇的斥候, 再后来他制订了一份重要的联系人名单, 从而建立了自己的走私生意\n
+			\n与特异区的其他交易商不同, 他的特点是贩卖稀有装备和很难获得的物品, 因此他永远不知道自己下一次会进什么货\n
+			\n他目前住在斯卡多夫斯克号上, 虽然那里面临着黑石的威胁\n
+			
+			\n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 除了他在晴空的朋友搞来的东西, 他卖的很多装备都来源于联合国的一些失败行动. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_novikov">
+		<text>诺维科夫</text>
+	</string>
+	<string id="encyclopedia_characters_novikov_text">
+		<text>
+			%c[pda_white]诺维科夫%c[ui_gray_1], 也被称作%c[pda_green]格雷%c[ui_gray_1], 是晴空的资深技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n诺维科夫自晴空成立时就是晴空的一员了, 他的朋友们把他称作技术专家, 还开玩笑地说他可以用空易拉罐做出步枪, 还能装上弹药\n
+			\n在晴空濒临崩溃时, 他跑到尤皮特去和移动科研地堡的生态学家们签了合同工作, 但后来发现他们渡过了难关并重建了家园, 所以他又回来了\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_olivius">
+		<text>"枪子儿"奥利维斯</text>
+	</string>
+	<string id="encyclopedia_characters_olivius_text">
+		<text>
+			%c[pda_white]"枪子儿"奥利维斯%c[ui_gray_1] 负责把赃物或其他坑蒙拐骗来的好东西卖给土匪\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n奥利弗利用前土匪头子波诺夫被暗杀后的混乱局面迅速在黑谷中确立了自己的威望\n
+			\n虽然他讨厌高调行事, 但几乎所有的信息, 合同, 贸易或阵营都沾过奥利弗的手\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_owl">
+		<text>猫头鹰</text>
+	</string>
+	<string id="encyclopedia_characters_owl_text">
+		<text>
+			%c[pda_white]猫头鹰%c[ui_gray_1] 是一个比较讲信用的黑市交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在斯卡多夫斯克号上的常住者中, 他是个令人不适的粗鲁人, 是个脾气暴躁的坏蛋\n
+			\n他有着丰富的武器弹药, 也很乐意让潜行者们把各种信息卖给他\n
+			\n由于他与"匪王"苏坦的关系, 再加上他的言谈举止和外表, 许多潜行者认为他曾经是一个土匪\n
+	
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_professor_kruglov">
+		<text>克鲁格洛夫教授</text>
+	</string>
+	<string id="encyclopedia_characters_professor_kruglov_text">
+		<text>
+			%c[pda_white]克鲁格洛夫教授%c[ui_gray_1] 是生物学博士\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在到达特异区之前, 克鲁格洛夫研究了动物的致病性突变及其影响, 所以他将研究成果带到这里只是时间问题\n
+			\n在过去的几年里, 他和萨哈洛夫教授一同工作, 并声称已有了一些重大发现 - 虽然很少有潜行者知道他在说啥, 而且通常都是假装说懂了明白了晓得了\n
+			\n最近他在扬塔研究实验室附近的一个小隔间里经营自己的研究实验室, 他为来访者提供各种各样的技术服务\n
+		    \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 克鲁格洛夫是在佣兵狼狗的袭击中幸存下来的为数不多的生态学家之一. 
+			\n• 虽然他是一个三流的战士, 但他在战斗中仍明显比大多数生态学家更熟练, 而且他只是一个生态学家, 而不是科研警卫或前潜行者. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_professor_sakharov">
+		<text>萨哈洛夫教授</text>
+	</string>
+	<string id="encyclopedia_characters_professor_sakharov_text">
+		<text>
+			%c[pda_white]萨哈洛夫教授%c[ui_gray_1] 是特异区内最有经验的生态学家之一\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n作为扬塔移动科研地堡的首席生态学家, 萨哈洛夫深入参与了绝大多数有关特异区的突破性研究\n
+			\n尽管他很有礼貌, 也很专业, 他对许多特异区现象也有博学的见解, 但他所处的隐蔽位置意味着他常常低估了周围研究人员面临的潜在危险\n
+			\n由于他的工作性质, 以及他的个人伟绩, 他几乎有着无数的神器和变异的身体部位样本合同, 这让他成为了勇敢潜行者间很受欢迎的雇主\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_sergeant_spooner">
+		<text>斯普纳中士</text>
+	</string>
+	<string id="encyclopedia_characters_sergeant_spooner_text">
+		<text>
+			%c[pda_white]斯普纳中士%c[ui_gray_1] 是一名职业士兵和狡诈的交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n大多数时候信息一直是他做决定时的一个重要影响因素, 他会仔细考虑与谁分享信息, 分享什么信息\n
+			\n自然的, 他在参军后成功找到了适合自己的位置, 他能很好地发挥出自己的价值, 现在的他利用职位搞着个人交易和信息经纪业务\n
+			\n除此之外, 人们对他知之甚少, 更不知道他为什么会有这样一个奇怪的绰号\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_sidorovich">
+		<text>西多洛维奇</text>
+	</string>
+	<string id="encyclopedia_characters_sidorovich_text">
+		<text>
+			%c[pda_white]西多洛维奇%c[ui_gray_1] 是菜鸟村地窖里的交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他的名声还不错, 他会给予菜鸟们生存的机会, 而他丰富的人脉使他能够走私各种奢侈品\n
+			\n然而, 也有很多人认为他贪婪、吝啬. 那些试图在他的地盘上与他竞争, 或者只是对他有所不满的人, 往往会被列在他的暗杀名单里\n
+			\n无论是好是坏, 他在贸易往来和阵营关系中都扮演着不可或缺的角色, 因此对于那些想要搞点钱花的人来说, 他就是个金主\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_spore">
+		<text>"孢子"斯波</text>
+	</string>
+	<string id="encyclopedia_characters_spore_text">
+		<text>
+			%c[pda_white]斯波%c[ui_gray_1] 是晴空的交易商兼"巧手"尼博的信赖伙伴\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n像所有潜行者一样, 斯波到特异区来发家致富, 然后学会了控制特异区的货物走私和信息往来\n
+			\n不久之后, 他就得到了尼博的注意, 尼博立即请求两人见次面, 他们很快地意识到了合作的力量\n
+			\n经过尼博与晴空的一些沟通后, 斯波很快被分配为晴空的贸易商, 晴空允许他俩利用沼泽走私路线, 强大的商业联系就此迅速建立起来了\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_sultan">
+		<text>"匪王"苏坦</text>
+	</string>
+	<string id="encyclopedia_characters_sultan_text">
+		<text>
+			%c[pda_white]"匪王"苏坦%c[ui_gray_1] 以前是扎顿的土匪头子, 现在是黑谷的土匪之王\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n由于他的名字和一个东方统治者一样, 特异区的许多人认为"匪王"苏坦是一个非常自傲的人\n
+			\n他的一生充满了麻烦; 在一个亲密的朋友死于过量吸毒之后, "匪王"苏坦宰了毒贩, 然后被关进了监狱\n
+			\n在他被释放后他还是喜欢和法律搞点小互动, 最后他来到特异区当了土匪, 爬上了职业土匪生涯的解体, 并开始经营他的团队\n
+			\n尽管他在扎顿的事业黄了, 但他还是设法将自己的那套准则强加给了黑谷的土匪, 他们别无选择地接受了\n
+		    \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 苏坦和奥利弗偶尔会起冲突. 但最后什么都不会发生, 因为他们俩都需要维护土匪的团结一致. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_wolf">
+		<text>"独狼"沃夫</text>
+	</string>
+	<string id="encyclopedia_characters_wolf_text">
+		<text>
+			%c[pda_white]"独狼"沃夫%c[ui_gray_1] 领导着菜鸟村的防御工作\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n"独狼"沃夫负责保护菜鸟村和居住在菜鸟村的潜行者免受外界威胁, 他利用斥候和间谍来侦测封锁线内的敌对活动\n
+			\n在与西多洛维奇分享情报后, 他们经常会派出突袭小组和一些机会主义者去清理入侵的土匪、怪物或其他威胁菜鸟村的东西\n
+		    \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 尽管名字相似, 但"独狼"沃夫与名叫"狼狗"的那个冷酷佣兵毫无关系. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_xenotech">
+		<text>"黑科技"泽诺泰克</text>
+	</string>
+	<string id="encyclopedia_characters_xenotech_text">
+		<text>
+			%c[pda_white]"黑科技"泽诺泰克%c[ui_gray_1] 是一个主要为新手修装备的技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他在封锁线铁路桥和"希望"异常点之间的独行者基地工作, "黑科技"泽诺泰克是一个有天赋的技师, 他的服务对刚到特异区的菜鸟来说很有用\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_yar">
+		<text>雅叔</text>
+	</string>
+	<string id="encyclopedia_characters_yar_text">
+		<text>
+			%c[pda_white]雅叔%c[ui_gray_1], 原名叫做 %c[pda_green]雅尔%c[ui_gray_1], 是一个很有才干的潜行者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他在特异区中以出色的技术而闻名, 他开玩笑说他可以用一支生锈的步枪造出高射炮, 可能事实也确实如此\n
+			\n在阵营战争结束后, 他随自由军探险队前往亚诺夫车站, 之后在普城郊区做了一段时间的医生\n
+			\n在自由军与纪律团的停火协议破裂后, 他很快就回来了. 他决定再换个职业 - 情报商\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_aspirin">
+		<text>"阿司匹林" 索斯特拉多夫中尉</text>
+	</string>
+	<string id="encyclopedia_characters_aspirin_text">
+		<text>
+			%c[pda_white]索斯特拉多夫中尉%c[ui_gray_1], 广为人知的 %c[pda_green]阿司匹林%c[ui_gray_1] 在无组织潜行者中, 有一名年轻的纪律团军官以及罗斯托克的常驻医生\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n由于熟练的医疗人员是特异区的稀罕之物, 阿斯匹林不仅为自己的阵营服务, 而且为任何通过罗斯托克大门的潜行者服务\n
+			\n尽管他赞同纪律团保护无辜的愿景, 但他并不是通过杀死变异生物, 而是通过修补那些幸存下来的人来实践这些理想\n
+			\n他的工作拯救了许多潜行者, 帮助他们改过自新\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_mangun">
+		<text>"曼冈" 高级中士波特里科</text>
+	</string>
+	<string id="encyclopedia_characters_mangun_text">
+		<text>
+			%c[pda_white]高级中士波特里科%c[ui_gray_1], 非正式地称为 %c[pda_green]曼冈%c[ui_gray_1], 是一名老兵, 他整天都在修补武器和盔甲\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在特异区出现之前, 曼冈找到了一份主要是汽车修理工的工作, 2011年之后不久, 他就加入了军队, 当时他听说他们的车辆在特异区行驶时遇到了困难\n
+			\n然而, 和他之前的许多其他军事组织一样, 他很快发现自己陷入了困境, 如果不是纪律团巡逻队的干预, 他早就死了. 出于感激, 他一结束行程就和他们签约了, 很快就成了一名勇敢的士兵\n
+			\n然而, 他总是轻描淡写自己过去的这一部分, 因为他更喜欢以自己的机械专业知识闻名. 随着时间的推移, 多年的出勤战斗将使他筋疲力尽, 使得他像个醉汉一样酗酒\n
+			\n结果, 他几次差点被不光彩地开除出他的阵营, 但每次这句话都会被沃罗宁将军本人推翻\n
+			\n最终, 双方同意非正式地让曼冈"退休", 让他留在后方可以一心一意追求他热爱的工具和机器\n
+			\n尽管其他的纪律团人员对他的过去以及他的技术能力都有一定程度的尊重, 但按照阵营的标准来看, 他的不良行为实际上阻碍了他进一步的晋升\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_colonel_petrenko">
+		<text>彼得连科上校</text>
+	</string>
+	<string id="encyclopedia_characters_colonel_petrenko_text">
+		<text>
+			%c[pda_white]彼得连科上校%c[ui_gray_1] 是纪律团的首席招募官, 也是沃罗宁将军最信任的军官\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n被其他的纪律团人员认为是一个将军, 除了名字, 彼得连科上校的出身可以追溯到一个卑微的军中少尉\n
+			\n他与沃罗宁、克鲁洛夫和塔琴科一起, 是2006年首批被派往特异区的士兵之一. 作为他们不幸的远征中为数不多的幸存者之一, 他在沃罗宁帮助他们找到纪律团的时候就在那里, 从此再也没有离开过将军身边\n
+			\n尽管如今有许多问题困扰着他的阵营, 上校似乎从容应对, 在外界人士看来, 他几乎是泰然处之\n
+			\n有些人甚至开玩笑说, 他更像机器而不是人; 除了作为领导人、征兵人员和亲信的角色外, 他还担任阵营的后勤和宣传负责人\n
+			\n在纪律团中, 除了沃罗宁之外, 彼得连科比任何人都更相信自己阵营的最初使命和准则. 他的战友中几乎没有人敢在他面前说自己是纪律团理念的坚定捍卫者和支持者\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_general_voronin">
+		<text>沃罗宁将军</text>
+	</string>
+	<string id="encyclopedia_characters_general_voronin_text">
+		<text>
+			%c[pda_white]沃罗宁将军%c[ui_gray_1] 一个年迈的军官是否有责任决定他的阵营更广泛的目标、原则和战略\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n尽管许多潜行者认为沃罗宁严厉且不宽容, 但事实上, 按照纪律团标准, 沃罗宁被认为是温和的; 不像他的前任克鲁洛夫那样盲目的理想主义和狂热, 但也不像纪律团的第一任领导人塔琴科那样愤世嫉俗和务实\n
+			\n他在2011年首次统领了整个阵营, 当时克鲁洛夫被为自由军而工作的佣兵暗杀. 从那以后, 他一直牢牢把握着纪律团的目的, 强化了他们作为光荣士兵的身份, 他们的生活准则近乎神圣\n
+			\n在担任纪律团创始人之前, 他是一名为军队工作的年轻军官. 他上一次为他们执行正式任务是在2006年, 当时他被交给当时的塔琴科上尉指挥, 并被命令以任何必要的手段摧毁特异区的中心\n
+			\n这项任务将导致人类第一次正式接触变异生物和异常现象. 在第一次大规模能量风暴之后, 与总部的通信很快就中断, 在特异区组成自己的团队其实是一个生存问题\n
+			\n尽管沃罗宁由于其根源而与特种部队保持着客气的关系, 但这种客气如果扩展到整个军队, 则是一种冷淡的客气; 在内心深处, 他相信上头把他和他的战友送进了特异区... 目的是让他们全部死去\n
+			\n他决心阻止其他人遭受同样的命运... 前提是其他人千万别触及他眼中的底线\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_lieutenant_rogovets">
+		<text>罗格维特斯中尉</text>
+	</string>
+	<string id="encyclopedia_characters_lieutenant_rogovets_text">
+		<text>
+			%c[pda_white]罗格维特斯中尉%c[ui_gray_1] 是一个有很强医学背景的麻烦官员\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n罗格维特斯是失败的"坦途行动"中为数不多的幸存者之一, 这是一个旨在为政府铺平通往普里皮亚奇和切尔诺贝利道路的军事项目\n
+			\n事实上, 负责这项任务的特种部队很快就被分散了, 他们被异常现象杀死, 被能量风暴或更糟的东西变成了僵尸. 罗格维特斯中尉自己也差点被一名摄魂怪杀死并吃掉, 这一创伤性事件使他被保留了好几年, 这样他就可以在相对正常的平民医院工作\n
+			\n后来, 出于责任感, 他回到了特异区服役, 尽自己最大的努力, 不仅治愈他的战友, 而且教育他们, 使他们不会犯他在坦途所犯的错误\n
+			\n当然, 今天很少有人相信他的疯狂故事: 现代的上班族很少遇到比流浪猫或流浪狗更危险的事, 而那些发现更危险的人也很少回来告知\n
+			\n虽然罗格维特斯在技术上是一名训练有素的医疗专业人员, 同时也是一名经验丰富的特种部队指挥员, 但他对库兹涅佐夫上校 几乎不加掩饰的蔑视使他难以晋升\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_major_zhurov">
+		<text>朱诺夫少校</text>
+	</string>
+	<string id="encyclopedia_characters_major_zhurov_text">
+		<text>
+			%c[pda_white]朱诺夫少校%c[ui_gray_1] 是负责维持封锁线秩序的警官\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在库兹涅佐夫少校晋升为上校后, 军需官朱诺夫被晋升为少校, 以履行他之前担任封锁线看守的职责\n
+			\n与他的前任相比, 朱诺夫要正经得多, 他总是拒绝来自普通潜行者的直接贿赂\n
+			\n然而, 就像他的前任一样, 除了向外界观察员象征性地展示自己的权威外, 他几乎没有采取任何措施来阻止当地的走私活动. 有人说这是因为走私者给了他一份利润, 但没人能肯定\n
+			\n我们所知道的是, 他的人脉比乍看起来要广泛得多, 因为他能够可靠地在他的巡逻队和他们应该逮捕的潜行者之间建立脆弱的休战\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_arnie">
+		<text>阿尼</text>
+	</string>
+	<string id="encyclopedia_characters_arnie_text">
+		<text>
+			%c[pda_white]阿尼%c[ui_gray_1] 是一名前走私犯, 尽管最近他因长期主持罗斯托克竞技场而闻名\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在罗斯托克, 阿尼的竞技场被认为是一种持续的娱乐, 虽然有点冷酷, 但目的是满足格斗者和赌徒\n
+			\n大多数战斗都以死亡告终, 但这并不能阻止渴望荣誉或绝望的人为了名誉或金钱而彼此决斗\n
+			\n尽管纪律团对阿尼的作品有着复杂的情感, 但是他们却以被捕获的变种生物和土匪的形式提供给玩家作为战斗资源, 并希望能够让公众了解他们共同的敌人是如何战斗的\n
+			\n竞技场有时也被用来解决社区纠纷, 如偿还巨额债务, 或解决任何由声誉问题引起的纠纷\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_skinflint">
+		<text>吝啬鬼</text>
+	</string>
+	<string id="encyclopedia_characters_skinflint_text">
+		<text>
+			%c[pda_white]吝啬鬼%c[ui_gray_1] 是自由军的在军事仓库里的长期交易商\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n按自由军的标准, 吝啬鬼沉默寡言, 对迟钝的人没有耐心, 拒绝愚蠢的人\n
+			\n这让他和基地的医生关系紧张, 他几乎不掩饰对他的蔑视\n
+			\n尽管他的态度有点乖戾, 但他的远见卓识、后勤能力以及愿意为自由的同伴们从远足中带回来的任何东西买单, 还是在他的阵营中广受赞赏. 
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_stribog">
+		<text>"风神"斯特利伯格</text>
+	</string>
+	<string id="encyclopedia_characters_stribog_text">
+		<text>
+			%c[pda_white]"风神"斯特利伯格%c[ui_gray_1] 是原罪的军需官\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n前土匪, 几年前被原罪抓获并皈依. 由于他的背景和对生活的新的看法, 他证明了对他的团体有很大的用处\n
+			\n他不仅从倒下的潜行者和军事人员那里收集装备, 而且还与几个愿意与"危险狂热分子的邪教"做生意的交易商建立了联系, 只要报酬丰厚\n
+			\n作为一个为更高的事业服务的开明人, 他非常愿意用他现在认为无用的小玩意儿来换取为他的兄弟们推进这个事业所必需的工具\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_dazhbog">
+		<text>"太阳神"达日伯格</text>
+	</string>
+	<string id="encyclopedia_characters_dazhbog_text">
+		<text>
+			%c[pda_white]"太阳神"达日伯格%c[ui_gray_1] 担任原罪的资深技术人员\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n他曾是一名工程师, 在上世纪90年代末帮助建造了"风暴引擎", 在接下来的几年里, 他一直待在特异区维护这台复杂的、绝密的机器. 由于命运的安排, 2006年6月他还在那里亲眼目睹了第一次能量风暴\n
+			\n他被限制在X-2实验室, 水和食物的供应越来越少, 最终被"黑暗之神"切尔诺伯格和他的羽翼未丰的原罪团体发现. 因为他在天堂降临时所扮演的角色, 他在他们中间获得了一个特殊的位置\n
+			\n现在, 12年过去了, 他仍然很好地利用他的机械技能, 修理和维护他的同胞们需要的装置, 以扩大特异区至越来越远\n
+		
+		</text>
+	</string>
+	
+	<!-- MLR -->
+	<string id="encyclopedia_characters_spirit">
+		<text>"酒鬼"都赫</text>
+	</string>
+	<string id="encyclopedia_characters_spirit_text">
+		<text>
+			%c[pda_white]都赫%c[ui_gray_1] 是一位前潜行者兼扬塔移动实验室的生态学家们的厨子\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n 尽管他在"火星报"科研组工作了5年, 但他却因能做出美味煎蛋而出名. 2018年, 在萨哈洛夫的要求下, 他搬到了扬塔, 成为了一名兼职厨师\n
+			\n 自从黑石东山再起, 不知为何, 他开始疯狂地迷恋酒精, 而尼米洛夫伏特加是他的最爱, 虽然特异区的人都爱喝伏特加, 但他对酒精的痴迷程度, 使得上级不敢再把他扔到战场上去 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_peregrine">
+		<text>游隼</text>
+	</string>
+	<string id="encyclopedia_characters_peregrine_text">
+		<text>
+			%c[pda_white]游隼%c[ui_gray_1] 是扬塔移动实验室的兼职技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在乌克兰军队服役的老兵. 三年前, 他救了一队生态学家的命, 从此声名远扬. 
+			\n由于他很了解技术设备和异常点探测器, 库兹涅佐夫应萨哈洛夫教授的要求, 把他派到了扬塔移动实验室协助生态学家并提供保护. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_butcher">
+		<text>屠夫</text>
+	</string>
+	<string id="encyclopedia_characters_butcher_text">
+		<text>
+			%c[pda_white]屠夫%c[ui_gray_1] 是特异区中经验最丰富的怪物猎人之一\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n与大多数潜行者不同的是, 屠夫对神器毫无兴趣. 他和他的团队只是把特异区看作是满足他们狩猎爱好的绝佳场地. 
+			\n由于他的高超猎杀技艺, 新手们偶尔会跑到他的住处, 听他讲一些建议或故事. 有人说他把特异区内的各种怪物都杀了一遍. 
+			\n虽然现在他已经成为了一名交易商, 但他对狩猎的热情丝毫不减 - 他喜欢以相对较低的价格出售狩猎装备, 并且乐于给那些给他带来怪物肉或其他肢体的潜行者周到的奖励. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_aslan">
+		<text>阿斯兰</text>
+	</string>
+	<string id="encyclopedia_characters_aslan_text">
+		<text>
+			%c[pda_white]阿斯兰%c[ui_gray_1] 是佣兵驻死城体育中心基地的技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他是死城体育中心基地的一个唯利是图的酒保. 阿斯兰从瑞士来到特异区, 这是他最后一次给客户打工. 
+			\n他的秘密甚至都不给自己最亲近的朋友讲, 他高价回收各个阵营的臂章, 没人知道为什么. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_leopard">
+		<text>美洲豹</text>
+	</string>
+	<string id="encyclopedia_characters_leopard_text">
+		<text>
+			%c[pda_white]美洲豹%c[ui_gray_1] 是佣兵驻死城基地的一位经验丰富的向导\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n死城从来都不安全, 即使对经验丰富的潜行者来说也是如此. 美洲豹是少数几个知道死城下水道网络的人之一. 因此很多人都要靠他安全进出死城. 
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_surgeon">
+		<text>外科医生</text>
+	</string>
+	<string id="encyclopedia_characters_surgeon_text">
+		<text>
+			人如其名, %c[pda_white]外科医生%c[ui_gray_1] 是死城的佣兵医官, 偶尔会跑到扬塔放松\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他是个沉默寡言的人, 以前是布莱克雇佣兵队的一员. 尽管一名卧底特工几乎是单枪匹马地消灭了他的老班子, 但外科医生自己却悄悄地逃脱了, 因此活了下来\n \n在作为一个孤独的拾荒者度过了几年之后, 他最终通过从利曼斯克的一次黑石埋伏中救出一帮雇佣兵来恢复自己的声誉 - 在增援部队到达之前, 保持他们的医疗状况稳定, 远离敌人的火力. 这一举动让他被推荐与达什曼共事, 从那时起, 他就一直是队里的主任医师.
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_griffin">
+		<text>格里芬</text>
+	</string>
+	<string id="encyclopedia_characters_griffin_text">
+		<text>
+			%c[pda_white]格里芬%c[ui_gray_1] 是佣兵驻普城郊区的外勤指挥官\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在达什曼的分配下, 格里芬的任务是清除普城郊区的威胁并协助佣兵控制该地区. 他的成果显著, 但随后黑石部队开始从普里皮亚奇大量涌入, 格里芬的部队被迫撤到了一家书店内. 
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_trunk">
+		<text>树桩</text>
+	</string>
+	<string id="encyclopedia_characters_trunk_text">
+		<text>
+			%c[pda_white]树桩%c[ui_gray_1] 是普城郊区的格里芬分队的技师\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在进入特异区之前, 树桩在美国三蓬公司当保安. 佣兵财团雇佣他是因为他对战斗装备有着丰富的经验. 
+			\n他是格里芬分队的一员. 在米克的帮助下他每天都在维护保养装备. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_meeker">
+		<text>米克</text>
+	</string>
+	<string id="encyclopedia_characters_meeker_text">
+		<text>
+			%c[pda_white]米克%c[ui_gray_1] 佣兵中专卖武器的交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n米克尔与外界有许多联系, 能为特异区的佣兵提供高质量武器. 他同意加入格里芬在普城郊区的特遣分队, 为他们提供必要的装备, 帮助他们完成任务. 
+		    \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n• 在加入格里芬之前, 大家认为米克是神行客小队的一员. 他进的一些货表明他仍然保持着与神行客他们的联系. 
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_leshiy">
+		<text>"森林行者"莱西</text>
+	</string>
+	<string id="encyclopedia_characters_leshiy_text">
+		<text>
+			%c[pda_white]"森林行者"莱西%c[ui_gray_1] 是自由军驻军事仓库基地的兼职向导\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n"森林行者"莱西是个精力充沛的老头. 在结识卢卡什加入自由军之前他是个佣兵, 在特异区积累了很多经验. 他可以带领自由军成员通过卡车墓园与军事仓库的安全通道, 有时也可以带到其他偏远地区. 
+			\n他曾把自己的佣兵队友从空间泡中救了出来, 他乐观又活泼, 可以带着菜鸟们回到封锁线, 大家都很喜欢他. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_solid">
+		<text>索里德</text>
+	</string>
+	<string id="encyclopedia_characters_solid_text">
+		<text>
+			%c[pda_white]索里德%c[ui_gray_1] 是自由军驻军事仓库基地的医生\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n索里德因两件事而闻名: 他有一双灵巧的手, 可以很好地治疗伤口. 另外, 他对酒精和毒品上瘾. 
+			\n据他说, 那些玩意儿可以帮助他"集中注意力". 但这并不能防止一些受了小伤的自由军成员在他的治疗下变得伤痕累累. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_snitch">
+		<text>"告密者"</text>
+	</string>
+	<string id="encyclopedia_characters_snitch_text">
+		<text>
+			%c[pda_white]"告密者"%c[ui_gray_1] 是一位无所不知的神秘潜行者, 他在酒吧里当情报商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他呆在辐射100酒吧, 向愿意支付高额现金的潜行者们出售各种信息 
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_loris">
+		<text>洛里斯</text>
+	</string>
+	<string id="encyclopedia_characters_loris_text">
+		<text>
+			%c[pda_white]洛里斯%c[ui_gray_1] 是封锁线北部农场的交易商, 他向菜鸟们卖各种装备\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他在一群潜行者的帮助下住进了北部农场, 这些潜行者成功地把土匪赶出了那个地方. 
+			\n在与西多洛维奇谈妥生意后, 洛里斯的商店很快就开张了. 从那以后晴空成员经常去看望他, 为他提供补给, 但是由于军方的缘故他们很难进入封锁线南方. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_hip">
+		<text>希普</text>
+	</string>
+	<string id="encyclopedia_characters_hip_text">
+		<text>
+			%c[pda_white]希普%c[ui_gray_1] 是一个居住在菜鸟村的前自由军成员\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n希普很早就来到了特异区, 但到目前为止她的潜行者生活还是很平静保守, 即使过了这么多年她也很少深入特异区. 普通潜行者认为她和菜鸟差不多, 即便她能力不错. 最近她一直在建立人脉网, 试图干一番大事. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_navigator">
+		<text>航海家</text>
+	</string>
+	<string id="encyclopedia_characters_navigator_text">
+		<text>
+			%c[pda_white]航海家%c[ui_gray_1] 是一个老手潜行者兼向导\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n由于纪律团放松了进入罗斯托克的要求, 航海家很快就到酒吧来当了向导, 他能够带领潜行者前往辐射100酒吧周边的特异区. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_vector">
+		<text>维克托</text>
+	</string>
+	<string id="encyclopedia_characters_vector_text">
+		<text>
+			他的朋友们把他叫做"暴怒佣兵". %c[pda_white]维克托%c[ui_gray_1] 是扎顿污水处理站的佣兵斥候兼交易商\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n维克多的坏脾气是出了名的. 但他是一个经验丰富的佣兵, 提供各种武器装备和从扎顿到死城的引路. 他和美洲豹了解死城的下水道网络, 可以安全地带领客户出入死城. 
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_kolin">
+		<text>科林</text>
+	</string>
+	<string id="encyclopedia_characters_kolin_text">
+		<text>
+			关于他的信息很少 %c[pda_white]科林%c[ui_gray_1], 除了是个技师外还懂得一些贸易技巧\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			科林和维克托一起搬到了扎顿的污水处理站援助当地的佣兵. 
+			
+		</text>
+	</string>
+	
+	<!-- LTTZ -->
+	
+	<string id="encyclopedia_characters_eidolon">
+		<text>幻灵</text>
+	</string>
+	<string id="encyclopedia_characters_eidolon_text">
+		<text>
+			%c[pda_white]幻灵%c[ui_gray_1] 是一个臭名昭著的黑石信徒\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n虽然大部分的黑石士兵都是炮灰, 但是一位叫做幻灵的黑石信徒重启了"焦脑器", 再次切断了进入特异区中心的通道\n
+			\n传说他会在普里皮亚奇的街道上如幽灵般游荡, 或者花点时间祈祷, 所有前来寻找许愿石的人都会被他准确无误地干掉. 幻灵这个绰号来源于他本人无论受多重的伤都好像没事一样, 以及他神出鬼没的能力\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_gatekeeper">
+		<text>"三头犬"瑟伯</text>
+	</string>
+	<string id="encyclopedia_characters_gatekeeper_text">
+		<text>
+			%c[pda_white]瑟伯%c[ui_gray_1] 是一个负责抵御黑石的老手潜行者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在2012年"焦脑器"被关闭之后, 这个被称为"三头犬"的潜行者是许多前往特异区中心探险的潜行者之一\n
+			\n几年后他回到了军事仓库, 决心要保卫这块特异区南北的交界处, 像是神话中地狱入口的三头犬一样驻扎在死亡屏障入口, 一心想要保护南方地区免受那地狱般恐怖事物的侵袭, 致力于阻止黑石的扩张\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_rogue">
+		<text>"游荡者"</text>
+	</string>
+	<string id="encyclopedia_characters_rogue_text">
+		<text>
+			%c[pda_white]"游荡者"%c[ui_gray_1], 是一位当过兵的铁石心肠的潜行者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他对自己在特异区内执行的任务感到失望, 同时也对它的性质感到好奇, 他最终决定离开封锁线的军方前哨, 加入了菜鸟村的潜行者\n
+			\n在史特洛克这个传奇重返特异区后, 他加入了史特洛克小组, 在战斗中他以严格的纪律, 战术敏锐性和那挺轻机枪为同伴提供了巨大的帮助\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_stitch">
+		<text>"缝合者"</text>
+	</string>
+	<string id="encyclopedia_characters_stitch_text">
+		<text>
+			%c[pda_white]"缝合者"%c[ui_gray_1] 是一个兼职医生的老手潜行者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n他曾是基辅的一家医院的护士, 他从一个前潜行者那里听到的故事最终促使他进入了特异区. 后来他碰巧在离农业研究所不远的地方遇到了史特洛克, 并加入了他的新小组\n
+			\n热情, 开朗, 悠闲, 他用他的幽默感和熟练的治疗技巧帮助同伴们挺过了特异区中心区的一道又一道难关\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_strelok">
+		<text>史特洛克</text>
+	</string>
+	<string id="encyclopedia_characters_strelok_text">
+		<text>
+			%c[pda_white]史特洛克%c[ui_gray_1], 或者叫做"天选者", 是一位传奇般的资深潜行者\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n史特洛克是最强的潜行者之一, 他是少数几个设法进入切尔诺贝利核电站还能活着回来讲故事的人之一. 2012年时他关闭了"焦脑器", 打开了通往特异区中心地带的通道\n
+			\n在担任了一段时间的政府研究顾问后, 他最终放弃了这项工作回到了特异区, 开始了另一段危险之旅\n
+
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_vodnik">
+		<text>"水妖"沃德尼克</text>
+	</string>
+	<string id="encyclopedia_characters_vodnik_text">
+		<text>
+			%c[pda_white]"水妖"沃德尼克%c[ui_gray_1] 作为原罪的使者之一\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n很久以前, 他是自由军的普通成员, 被好奇心所吸引. 有一天, 他在红森林郊外巡逻时遇到了一群穿着深色战壕外套、戴着头巾的高个子潜行者\n
+			\n他已经被许多独特、奇怪的现象所吸引, 很快就成为特异区最热心的捍卫者和传教士之一\n
+			\n如今, "水妖"沃德尼克试图说服普通的潜行者加入原罪的行列, 以便有一天他们可以在一个平和的广阔天堂里行走\n
+		
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_drekavac">
+		<text>"嚎叫者"德雷卡瓦克</text>
+	</string>
+	<string id="encyclopedia_characters_drekavac_text">
+		<text>
+			%c[pda_white]"嚎叫者"德雷卡瓦克%c[ui_gray_1] 是原罪的创始者之一\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在许多人类实验对象中, 甚至在特异区被创造之前, 他就是少数幸存下来的人之一. 为了创造更能适应"念域"的人类, 他被授予了较小的灵体能量\n
+			\n由于"嚎叫者"德雷卡瓦克的背景和兄弟们的集体意愿, 他被"黑暗之神"切尔诺伯格任命为原罪的惩罚者之一: 半精神领袖, 半排长\n
+			\n现在原罪的暗黑圣战正如火如荼地进行着, "嚎叫者"德雷卡瓦克勇敢地带领他的同胞们努力用异教徒的头骨为天堂铺路\n
+
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_chernobog">
+		<text>"黑暗之神"切尔诺伯格</text>
+	</string>
+	<string id="encyclopedia_characters_chernobog_text">
+		<text>
+			%c[pda_white]"黑暗之神"切尔诺伯格%c[ui_gray_1] 是原罪组织的天父\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n在绝密实验中, 这位死囚变成了摄魂怪一样的怪物. 他在特异区出现不久后就悄悄建立了原罪, 当超念体被史特洛克摧毁后, 他幻想着自己成为新的超念体\n
+			\n他是一位很有魅力的领袖, 也是一位有远见卓识的人, 他相信特异区是将世界从罪恶中净化的方法. 但根据现实来看, 他是一个疯狂的狂热分子, 更愿意用以火攻火的方式来实现自己的梦想\n
+			
+		</text>
+	</string>
+	
+	<string id="encyclopedia_characters_degtyarev">
+		<text>德格捷列夫上校</text>
+	</string>
+	<string id="encyclopedia_characters_degtyarev_text">
+		<text>
+			%c[pda_white]亚历山大·德格捷列夫%c[ui_gray_1] 是乌克兰安全部门的一名特工, 在特异区的执行的任务与其他军方武装部队有所不同\n
+			\n%c[pda_green]人物信息%c[ui_gray_1]
+			\n作为一名经验丰富的军方潜行者和卧底特工, 他在特异区完成了许多秘密任务. 令人惊讶的是, 他还在普通的潜行者中建立了良好的名声, 因为他乐于助人\n
+			\n目前大量的能量风暴已经引起了联合国的注意, 德格捷列夫上校发动了"余辉行动", 确保特异区以及其中的秘密不会被国际政客武器化\n
+		
+		</text>
+	</string>
+	
+</string_table>

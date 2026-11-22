@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+	
+	<string id="st_not_in_use">
+        <text>The Item is not in use </text>
+    </string>
+    <string id="st_not_in_use_descr">
+        <text>The Item is not in use </text>
+    </string>
+
+	<string id="st_knifebf4">
+        	<text>OTs-04特战匕首</text>
+    </string>
+    	<string id="st_knifebf4_descr">
+        <text>OTs-04是图拉中央设计研究局(TsKIB)在80年代末90年代初研发,用于内政部特种部队. </text>
+    	</string>
+	
+	<string id="st_kukri">
+        	<text>廓尔喀弯刀</text>
+    </string>
+    <string id="st_kukri_descr">
+        <text>廓尔喀刀是一种反曲刀,刀肚较宽,刀身向前弯曲,像一条狗腿,也被人形象的称为狗腿刀,在刀身与刀柄的连接处有一个V型凹槽,实战中用来导流鲜血,以免玷污刀柄. 
+		\n刀身钢材大多数采用废弃的汽车弹簧钢片打造,多年来一直处于一个特立独行的位置,该弯刀特点是韧性好,因此具有优良的切割和劈砍性能,非常适合切割各种类型的变异怪物,并成为了对抗它们的一道护身符. </text>
+	</string>
+		
+	<string id="st_wpn_ak12_custom">
+        <text>AK-12"黑石"</text>
+    </string>
+    <string id="st_wpn_ak12_custom_descr">
+        <text>一把非常罕见的特殊型AK12步枪. 传说当这位潜行者到达普里皮亚奇中心时遭到了黑石小队的伏击. 弹药用尽了之后他使用了炸药和他所能使用的其他一切手段. 多亏了随身的神器和护甲,他几乎没有受到伤害. 
+		\n在其中一具尸体上发现了这把AK12,他决定带着这些战利品作为纪念. 走遍了特异区所有的枪械师之后,这位潜行者终于遇到了一位有可能在几个月的艰苦工作中翻新这把武器的技师. \n \n
+		%c[0,140,140,140]武器附件: \n
+		%c[0,93,0,116] • %c[0,140,140,140] 武器可用战术套件改进\n
+		%c[0,93,0,116] • %c[0,140,140,140] 瞄准镜: 所有安装在皮卡汀尼上的瞄准镜\n
+		%c[0,93,0,116] • %c[0,140,140,140] 消声器: Hexagon5.45/7.62消声器\n</text>
+    </string>
+
+    <string id="st_wpn_ak12_mono_kit">
+		<text>AK-12黑石改良版</text>
+    </string>
+    <string id="st_wpn_ak12_mono_kit_descr">
+        <text>罕见的型号. AK-12黑石改进型号. 主要由黑石使用. 射击模式: 自动,单发和三发. 多亏了新的枪机组件,它是一个比原来更先进和强大的武器,提高了射击速度和后坐平衡. 改进后不可拆卸. \n
+		%c[ui_gray_2]武器附件: \n
+		%c[0,93,0,116] • %c[0,140,140,140] 已使用"黑石"战术套件改进\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Trijicon Acog和AN/PEQ-16  激光指示器(已集成). \n
+		%c[d_purple] • %c[ui_gray_2] 黑石"卫士"枪挂榴弹发射器. \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Hexagon5.45/7.62消声器. \n </text>
+    </string>
+				
+	<string id="st_wpn_ak12_m1">
+        <text>AK-12自动步枪战术型2016年款</text>
+    </string>
+    <string id="st_wpn_ak12_m1_descr">
+        <text>2016年AK-12的型号. 在外观和设计上与2015年展示的AK-12的前一个型号有相当大的不同. 对自动步枪的设计进行修改,以消除一些已确定的缺点和问题,并根据军方的意愿进行技术改进. \n 
+		%c[0,140,140,140]武器附件: \n
+		%c[0,93,0,116] • %c[0,140,140,140] 瞄准镜: 所有安装在皮卡汀尼上的瞄准镜\n
+		%c[0,93,0,116] • %c[0,140,140,140] GP-25枪挂榴弹发射器\n
+		%c[0,93,0,116] • %c[0,140,140,140] 消声器: Hexagon5.45/7.62消声器\n</text>
+    </string>
+		
+		<string id="st_wpn_usp_tac">
+        <text>HK-USP特殊战术型手枪</text>
+    </string>
+    <string id="st_wpn_usp_tac_descr">
+		<text>这是由萨霍洛夫教授亲自为生态学家设计,专门用于"专家生态学家"战术套件的HK-USP手枪特别版. 枪械系统的工作通过神器得到了改进. 
+		\n与标准USP不同的是它可以安装消声器和激光指示器,瞄准镜. 手枪配有增加到22发9毫米口径子弹的弹匣. \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 该战术套件包括激光指示器和反射式瞄准镜. \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Docter Sight,Aimpoint T1(低轮廓基座),Trijicon RMR,Leupold deltappoint PRO. \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC Black Box\n </text>
+    </string>
+
+	<string id="st_wpn_vintorez_m1">
+		<text>VSS"学者"</text>
+	</string>
+	<string id="st_wpn_vintorez_m1_descr">
+		<text>内部机构被改进后的所取代,从而提高了膛口初速和射击精度. 这提高了重型亚音速子弹的有效射程和弹道平滑度. \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除战术套件外的所有瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: VSS(已集成)\n </text>
+	</string>
+	
+	<string id="st_wpn_vintorez_m2">
+		<text>VSS"佣兵"</text>
+	</string>
+	<string id="st_wpn_vintorez_m2_descr">
+		<text>应雇佣军组织的要求,萨霍洛夫教授领导的一个由热心生态学家组成的小组正在对原型枪进行修改. 为了研发和进行实地试验,已从重力异常点中提取了大约20个神器. 
+		\n这使得皮卡汀尼导轨可以安装在机匣上而不损失精确度,并且改进了枪械机构,从而提高了可靠性指标. \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15. (先进目标标定照明瞄准镜,ATPIAL公司生产的将可见光和红外波段激光指示器与红外探照灯相结合的战术装置). \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除1P59"超子"外的所有瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 安装Fab Defense枪托和战术垂直握把RK-1\n
+		%c[d_purple] • %c[ui_gray_2] VSS消声器(已集成)\n </text>
+	</string>
+	
+	<string id="st_tactical_knife">
+		<text>黑石战术之刃 </text>
+	</string>
+	<string id="st_tactical_knife_descr">
+		<text>(俄罗斯口音"ON")有传言说这些锋利的战术刀是由黑石的工匠在极少量地生产. 金属合金的成分是未知的,他们说它只能在石棺中提取出来的. (俄罗斯口音"OFF")</text>
+	</string>
+	
+	<string id="st_wpn_saiga12s_m1">
+		<text>Saiga-12"生态学家"</text>
+	</string>
+	<string id="st_wpn_saiga12s_m1_descr">
+		<text>"生态学家"是教授关心人们的另一个证据,这种Saiga型号是专门为工作人员所设计. 用于与特别危险的变异怪物的"谈判"并将它们的器官作为科学的"礼物". 
+		\n老猎人以相当羡慕的眼神看着这些用这种型号武装起来的"卵蛋头". \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式反射式瞄准镜. \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Hexagon 12K\n </text>
+	</string>
+	
+	<string id="st_wpn_m4_ru556">
+		<text>鲁格SR-556 </text>
+	</string>
+	<string id="st_wpn_m4_ru556_descr">
+		<text>一些这样的步枪通过生态学家进入了特异区,武器左侧的该组织标志证明了这一点. 据传说,萨哈洛夫教授从外国赞助商那里收到了6个装有这些枪的小容器,但是其中5个在运输过程中丢失了. 
+		\n鲁格SR-556是一款美国自动卡宾枪,由斯特姆–鲁格武器公司制造. 该枪于2009年推出,是鲁格AR-10家族的第一款卡宾枪. 该系列的下一个变体是.308鲁格SR-762卡宾枪. SR-556型在鲁格推出Keymod轻量化改装后,于2016年1月停产. \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] NcStar备用导轨,其上安装有Trijicon RMR反射式瞄准镜. \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜. 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座)). \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: NATO 消声音\n </text>
+	</string>
+	
+	
+	<string id="st_wpn_saiga12s_m2">
+		<text>Saiga"达什曼"</text>
+	</string>
+	<string id="st_wpn_saiga12s_m2_descr">
+		<text>该Saiga经佣兵团请求修改,安装了皮卡汀尼导轨和大型膛口制动器-补偿器,显著降低后坐力. \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式反射式瞄准镜. \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: SilencerCo Salvo 12\n </text>
+	</string>
+
+	<string id="st_wpn_ak74m_beard">
+		<text>AK-74M"胡子"</text>
+	</string>
+	<string id="st_wpn_ak74m_beard_descr">
+		<text>AK-74M的一种改进型号,它重量轻且适合在特异区恶劣地环境中使用,不过遗憾的是,它没有预留安装榴弹发射器的地方. 它是在斯卡多夫斯克和亚诺夫站制造的,流出并分散流入在整个特异区中. \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)以及高轮廓基座型号(Aimpoint PRO,Aimpoint T1高轮廓基座和Barska 11090)除外的所有皮卡汀尼式瞄准镜. \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: TGP-A. \n </text>
+	</string>
+	
+	<string id="st_wpn_ak105_sp">
+		<text>AK-105"专家"</text>
+	</string>
+	<string id="st_wpn_ak105_sp_descr">
+		<text>平衡,后坐力低,精准度高,耐用性高. 以常规ak105为基础,由于改进了发射机构并减轻了重量,长期以来在雇佣兵中很受欢迎\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] NCSTAR备用导轨,配有Leupold DeltaPoint Pro反射式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 燕尾槽式瞄准镜1P29,1P78,PSO-1无目镜罩\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: TGP-A\n </text>
+	</string>
+
+		<string id="st_wpn_akm_isg">
+		<text>步枪动力RD-47 ISG </text>
+	</string>
+	<string id="st_wpn_akm_isg_descr">
+		<text>由美国步枪动力公司根据AKM研发的定制型号, 它是特异区最高科技的武器之一, ISG特种部队使用, \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15, (ATPIAL先进目标指示,照明及瞄准激光, 将可见光激光指示,红外波段激光指示和红外探照灯相结合的战术设备)\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG消声器\n </text>
+	</string>
+	
+		<string id="st_wpn_ak74u_isg">
+		<text>步枪动力RD-74U ISG </text>
+	</string>
+	<string id="st_wpn_ak74u_isg_descr">
+		<text>这把枪是由美国步枪动力公司在AKSU基础上改进的定制版,它是特异区科技水平最高的武器之一, 由ISG特殊单位使用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG消声器\n </text>
+	</string>
+
+		<string id="st_wpn_ak74u_m1_isg">
+		<text>步枪动力RD-74U ISG 战术版</text>
+	</string>
+	<string id="st_wpn_ak74u_m1_isg_descr">
+		<text>这是一种由美国步枪动力公司研发的基于AK-74U ISG定制版改装而来的武器,它是特异区科技水平最高的武器之一, 专供ISG特殊单位使用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15, (ATPIAL先进目标指示,照明及瞄准激光, 将可见光激光指示,红外波段激光指示和红外探照灯相结合的战术设备)\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG消声器\n </text>
+	</string>
+
+		<string id="st_wpn_ak74_isg">
+		<text>步枪动力RD-74M ISG </text>
+	</string>
+	<string id="st_wpn_ak74_isg_descr">
+		<text>这是一种由美国步枪动力公司研发的AK-74M自动步枪的高级型号,它是特异区科技水平最高的武器之一, 专供ISG特殊单位使用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15, (ATPIAL先进目标指示,照明及瞄准激光, 将可见光激光指示,红外波段激光指示和红外探照灯相结合的战术设备) \n
+		%c[d_purple] • %c[ui_gray_2] NCSTAR备用导轨,上面安装了Trijicon RMR反射式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG消声器\n </text>
+	</string>
+
+		<string id="st_wpn_vintorez_isg">
+		<text>步枪动力RD-9x39 ISG </text>
+	</string>
+	<string id="st_wpn_vintorez_isg_descr">
+		<text>这是美国步枪动力公司创始人吉姆·富勒的创意,该型号是在著名和成熟的VSS微声狙击步枪的基础上改进, 与原版的主要区别之一是有特殊枪机组件允许射击两发子弹,并在机匣上安装皮卡汀尼导轨, 由ISG特殊单位使用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15, (ATPIAL先进目标指示,照明及瞄准激光, 将可见光激光指示,红外波段激光指示和红外探照灯相结合的战术设备)\n
+		%c[d_purple] • %c[ui_gray_2] NNCSTAR备用导轨,上面安装了Trijicon RMR反射式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除1P78卡什坦外所有皮卡汀尼式瞄准镜和燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 有传言说该武器可以与枪挂榴弹发射器一起使用\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 已集成 \n </text>
+	</string>
+	
+	<string id="st_wpn_sks_tac">
+		<text>SKS 战术型 </text>
+	</string>
+	<string id="st_wpn_sks_tac_descr">
+		<text>西蒙诺夫口径7.62x39毫米半自动卡宾枪是在西蒙诺夫半自动卡宾枪（SKS）的基础上改进, 它们的外观和尺寸是相同的, 
+		\n战术型号与基础型号的不同之处在于前端区域安装瞄准镜用皮卡汀尼导轨, 还可以安装消声器以及改进的扳击使武器的射速更快, 它在新手潜行者,经验丰富的老兵和变种猎人中很受欢迎\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] SKS SOCOM 轨道:  已集成 \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜和所有反射式瞄准镜(Aimpoint PRO和Aimpoint T1高轮廓基座除外)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Hexagon SKS 7.62x39消声器 \n</text>
+	</string>
+
+		<string id="st_wpn_sks_molot">
+		<text>SKS "锤子"</text>
+	</string>
+	<string id="st_wpn_sks_molot_descr">
+		<text>西蒙诺夫口径7.62x39毫米半自动卡宾枪是在西蒙诺夫半自动卡宾枪（SKS）的基础上改进, 它们的外观和尺寸是相同的, 由于价格低廉,在新手潜行者中很受欢迎\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>
+	
+	<string id="st_wpn_ks23">
+		<text>KS-23卡宾枪</text>
+	</string>
+	<string id="st_wpn_ks23_descr">
+		<text>这是一把苏联的霰弹枪, 叫做卡宾枪只是因为它的枪管是用有膛线的23毫米机载火炮的炮管制成, KS意为"Karabin Spetsialniy"即"特制卡宾枪", 在1970年左右曾用于镇压监狱的骚乱, KS-23以它独特的枪管和口径而出名, 发射23毫米弹药\n \n
+		%c[0,255,255,255]特点:\n
+		%c[d_cyan] • %c[0,255,255,255]原产地: %c[ui_gray_1]苏联\n
+		%c[d_cyan] • %c[0,255,255,255]制造商: %c[ui_gray_1]图拉军工厂\n
+		%c[d_cyan] • %c[0,255,255,255]年份: %c[ui_gray_1]1971\n
+		%c[d_orange] • %c[ui_gray_2]700毫米的枪管可替换成510毫米来降低重量\n</text>
+	</string>
+
+	<string id="st_wpn_ks23_kaban">
+		<text>KS-23M"画眉鸟"</text>
+	</string>
+	<string id="st_wpn_ks23_kaban_descr">
+		<text>这是一把苏联的霰弹枪, KS-23的缩短版, 可拆卸金属枪托, 叫做卡宾枪只是因为它的枪管是用有膛线的23毫米机载火炮的炮管制成, KS意为"Karabin Spetsialniy"即"特制卡宾枪", 在1970年左右曾用于镇压监狱的骚乱, KS-23以它独特的枪管和口径而出名, 发射23毫米弹药\n \n
+		%c[ui_gray_2]附件: KS-23M "画眉鸟"战术套件\n</text>
+	</string>	
+
+		<string id="st_tomahawk">
+		<text>戈博系列战斧 </text>
+	</string>
+	<string id="st_tomahawk_descr">
+		<text>战术战斧,集多功能和穿透手段一体化, </text>
+	</string>
+	
+		<string id="st_wpn_dvl10_m1">
+		<text>DVL-10"破坏者" </text>
+	</string>
+	<string id="st_wpn_dvl10_m1_descr">
+		<text>DVL-10是一种轻型紧凑型消声狙击步枪,用于需要特殊精度和射程的特种作战任务,配备与其他DVL型号兼容的折叠枪托\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 皮卡汀尼式瞄准镜(反射式瞄准镜除外)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 已集成 \n</text>
+	</string>	
+	
+		<string id="st_wpn_dvl10">
+		<text>DVL-10 "巷战手" </text>
+	</string>
+	<string id="st_wpn_dvl10_descr">
+		<text>DVL-10是一种轻型紧凑型步枪,用于需要特殊精度和射程的特种作战任务,配备与其他DVL型号兼容的折叠枪托\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 皮卡汀尼式瞄准镜(反射式瞄准镜除外)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>	
+
+		<string id="st_wpn_saiga12s_isg">
+		<text>卡拉什尼科夫 USA Saiga-12 ISG </text>
+	</string>
+	<string id="st_wpn_saiga12s_isg_descr">
+		<text>由美国卡拉什尼科夫在Komrad 12半自动步枪的基础上研发的一种型号,用于狩猎和保护ISG研究小组的成员免受变异怪物的伤害, 武器装有燕尾槽和皮卡汀尼导轨用于安装各种类型的瞄准镜, 这个型号有一个新型的枪机组件和快慢机,允许你两发齐射\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 皮卡汀尼式瞄准镜(反射式瞄准镜除外)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: SilencerCo Salvo 12 \n</text>
+	</string>
+
+		<string id="st_wpn_ak74_pmc">
+		<text>AK-74 "雇佣兵"</text>
+	</string>
+	<string id="st_wpn_ak74_pmc_descr">
+		<text>卡拉什尼科夫AK-74的改进型, 与标准型号不同的是它安装了战术套件,包括一个战术握把,安装皮卡汀尼导轨的护木和一个可折叠的伸缩枪托,大大提高了枪支的人体工程学, 
+		\n该战术套件还包括一个激光指示器,一个战术手电, 在特异区中,雇佣军,乌克兰特种部队,各种私营军事公司和其他势力通常使用类似型号用于特种作战\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] AN/PEQ-15, (ATPIAL先进目标指示,照明及瞄准激光, 将可见光激光指示,红外波段激光指示和红外探照灯相结合的战术设备)\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除带目镜罩的PSO,EOTS-62和1P59"超子"外,所有皮卡汀尼式瞄准镜和燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: ATG \n</text>
+	</string>
+
+		<string id="st_wpn_svds_pmc">
+		<text>SVDS "雇佣兵"</text>
+	</string>
+	<string id="st_wpn_svds_pmc_descr">
+		<text>带有折叠枪托的德拉贡诺夫狙击步枪是在久经考验的SVD狙击步枪的基础上改进而来,用于武装需要更紧凑狙击武器的空降部队和特种部队狙击手, 
+		\n由于采用了可靠的自动化,步枪结合了良好的射击精度和准确性以及高实用射速,可以连续多次射击击中一个目标或快速命中多个目标.
+        \n在特异区中,雇佣军,乌克兰特种部队,各种私营军事公司和其他势力通常使用类似型号用于特种作战\n 
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜(反射式瞄准镜除外)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Rotor43 消声器 \n
+		%c[ui_gray_2] 战术套件包括: \n
+		%c[d_purple] • %c[ui_gray_2] SVD-S Rotor43螺纹转接器.\n
+        %c[d_purple] • %c[ui_gray_2] SAG MK1 SVD战术套件.\n
+        %c[d_purple] • %c[ui_gray_2] 泽尼特前握把RK-5(允许完美控制后坐力).\n
+        %c[d_purple] • %c[ui_gray_2] 定制SVDS防尘罩.\n
+        %c[d_purple] • %c[ui_gray_2] 泽尼特RK3手枪式握把.\n
+		%c[d_purple] • %c[ui_gray_2] NCSTAR备用导轨,上面安装了Trijicon RMR反射式瞄准镜\n</text>
+	</string>
+
+	<string id="st_wpn_val_tac">
+		<text>AS Val 特种突击步枪</text>
+	</string>
+	<string id="st_wpn_val_tac_descr">
+		<text>AS VAL是在VSS"尖刀"无声狙击步枪的基础上制造, 它是为苏联军队和内政部特种部队设计, 主要用途是在不暴露射手位置的情况下有效击败使用现代个人防护装备的敌人.
+		\n集成消音器和9x39重型亚音速子弹,最大限度地减少了射击声和膛口火焰\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] VSS 消声器 (已集成)\n </text>
+	</string>
+
+	<string id="st_wpn_vintorez_n1">
+		<text>VSS"尖刀"</text>
+	</string>
+	<string id="st_wpn_vintorez_n1_descr">
+		<text>与特种"瓦尔"突击步枪同时研制的狙击步枪"尖刀"是为低噪音狙击而设计的, 它主要由特种部队在无声和秘密行动中使用, 使用特殊亚音速弹药9x39 SP-5和SP-6进行射击\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] VSS 消声器 (已集成)\n </text>
+	</string>	
+
+	<string id="st_wpn_ak74u_n1">
+		<text>AKS-74U </text>
+	</string>
+	<string id="st_wpn_ak74u_n1_descr">
+		<text>AKS-74U主要用于特种部队,空降步兵,后方梯队支援部队和装甲车乘员,他们需要一种紧凑但相对强大的个人自动武器, 
+		\n与AKS-74相比,AKS-74U在狭小的空间内具有更大的机动性,但是子弹初速的显著下降导致了有效射程的下降\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: PBS-4 消声器\n </text>
+	</string>
+
+	<string id="st_wpn_ak74u_tac">
+		<text>AKS-74U 战术型 </text>
+	</string>
+	<string id="st_wpn_ak74u_tac_descr">
+		<text>AKS-74U主要用于特种部队,空降步兵,后方梯队支援部队和装甲车乘员,他们需要一种紧凑但相对强大的个人自动武器.
+		\n与AKS-74相比,AKS-74U在狭小的空间内具有更大的机动性,但是子弹初速的显著下降导致了有效射程的下降, 这个特殊的改型有一个45发的RPK弹匣.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)以及高轮廓基座型号(Aimpoint PRO,Aimpoint T1高轮廓基座)外的所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: PBS-4 消声器\n </text>
+	</string>
+
+	<string id="st_wpn_m4_tac">
+		<text>柯尔特M4A1战术版</text>
+	</string>
+	<string id="st_wpn_m4_tac_descr">
+		<text>柯尔特M4A1是一种美国以AR-15平台为基础上设计,发射5.56x45毫米北约制式弹药的突击步枪, 
+		\n它主要是为车辆操作员和火线任务小组研发,他们需要一种比标准的长步枪更紧凑,更轻的武器,但同时要使用的是相同的弹药, 然而,美国特种作战司令部(SOCOM)很快就为所有下属单位采购了M4A1,随后将M4A1全面引入美国陆军和海军陆战队服役\n \n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 定制OCOM556-怪物\n </text>
+	</string>	
+
+	<string id="st_wpn_m4_butcher">
+		<text>M4"屠夫"</text>
+	</string>
+	<string id="st_wpn_m4_butcher_descr">
+		<text>现代版型号柯尔特M4A1突击队(CQBR)是一种美国以AR-15平台为基础上设计,发射5.56x45毫米北约制式弹药的突击步枪, 
+		\n它主要是为车辆操作员和火线任务小组研发,他们需要一种比标准的长步枪更紧凑,更轻的武器,但同时要使用的是相同的弹药, 然而,美国特种作战司令部(SOCOM)很快就为所有下属单位采购了M4A1,随后将M4A1全面引入美国陆军和海军陆战队服役\n \n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座),OKP-7))\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 北约 \n </text>
+	</string>
+
+    <string id="st_wpn_mp153_m1">
+        <text>MP153"枪骑兵"</text>
+    </string>
+    <string id="st_wpn_mp153_m1_descr">
+		<text>MP-153霰弹枪的定制版, 像它的"父母"一样能够半自动射击,由于相当有效的膛口制退器可以提供更好的后坐补偿, 还配备了皮卡汀尼导轨允许安装反射式瞄准镜和消音器\n
+	    %c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 由于枪托的位置原因只能安装低轮廓基座瞄准镜: Barska AC10632,C-More,Docter Sight,Aimpoint T1,Trijicon RMR,Leupold deltappoint PRO,OKP-7,1P76 Rakurs\n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: SilencerCo Salvo 12 \n</text>
+    </string>
+
+    <string id="st_wpn_fal_sa58_osw">
+		<text>DS ARMS SA-58 </text>
+    </string>
+    <string id="st_wpn_fal_sa58_osw_descr">
+		<text>SA-58 OSW(作战专业武器)由美国公司DSA (David Selvaggio Arms)在与STG-58相同的生产线上生产,是FAL步枪的合法复制品.
+		\n民用版只生产半自动型号,警察或军队可以改装为全自动射击, DSA-58与FN FAL的任何公制弹匣完全兼容\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC 7.62 SDN-6\n </text>
+    </string>
+	
+    <string id="st_wpn_toz106_m1">
+        <text>TOZ-106 </text>
+    </string>
+    <string id="st_wpn_toz106_m1_descr">
+		<text>使用二十号霰弹口径单管狩猎霰弹枪, 采用霰弹枪上少见的旋转后拉式枪机, 被称为"领袖之死"\n
+	    %c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 由于枪托的位置原因只能安装低轮廓基座瞄准镜: Barska AC10632,C-More,Docter Sight,Aimpoint T1,Trijicon RMR,Leupold deltappoint PRO,OKP-7,1P76 Rakurs\n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+    </string>
+
+    <string id="st_wpn_toz106">
+        <text>TOZ-106 (折叠式) </text>
+    </string>
+    <string id="st_wpn_toz106_descr">
+		<text>使用二十号霰弹口径单管狩猎霰弹枪,采用霰弹枪上少见的旋转后拉式枪机, 其与普通版不同之处就在于枪托可以折叠,因为其紧凑的造型便于隐藏,被群众亲切的称为"首相之死"\n
+	    %c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无 \n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+    </string>
+
+    <string id="st_wpn_fal_aus">
+        <text>DS ARMS SA-58 AUS "奥地利风格" </text>
+    </string>
+    <string id="st_wpn_fal_aus_descr">
+		<text>SA-58 OSW(作战专业武器)由美国公司DSA (David Selvaggio Arms)在与STG-58相同的生产线上生产,是FAL步枪的合法复制品, 
+		\n民用版只生产半自动型号,警察或军队可以改装为全自动射击, DSA-58与FN FAL的任何公制弹匣完全兼容\n
+	    %c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无 \n \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进 \n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC 7.62 SDN-6\n</text>
+    </string>	
+
+		<string id="st_wpn_glock17">
+		<text>格洛克17式9mm手枪</text>
+	</string>
+	<string id="st_wpn_glock17_descr">
+		<text>格洛克17是一种以聚合物为枪身框架,短程反冲动作击发,后膛闭锁的半自动手枪,由奥地利格洛克有限公司设计和生产.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>
+
+		<string id="st_wpn_glock17_m1">
+		<text>格洛克 17 战术版 </text>
+	</string>
+	<string id="st_wpn_glock17_m1_descr">
+		<text>格洛克17是一种以聚合物为枪身框架,短程反冲动作击发,后膛闭锁的半自动手枪,由奥地利格洛克有限公司设计和生产, 
+		\n格洛克17的战术型改装版有一些新增的部分: 基座上集成的Aimtech反射式瞄准镜,安装Pachmayr战术橡胶握把和Double Diamond制造的带膛口螺纹枪管\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Docter Sight,Aimpoint T1 (低轮廓基座),Trijicon RMR,Leupold Deltapoint PRO.\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 鱼鹰9毫米 \n</text>
+	</string>	
+
+	<string id="st_wpn_pm_bas_actor">
+		<text>马卡洛夫PM </text>
+	</string>
+	<string id="st_wpn_pm_bas_actor_descr">
+		<text>一根加长的枪管和安装消声器的马卡洛夫PM手枪成为了一把传奇手枪, 有人说它是保加利亚的一个小系列,有人回忆起民主德国,有些人倾向于说它是手工制作的, 但谁也说不清它是怎么进入特异区的\n
+		%c[ui_gray_2]武器附件: \n
+        %c[d_purple] • %c[ui_gray_2] 消声器: 9毫米消声器 \n</text>
+	</string>
+	
+	<string id="st_wpn_pm_bas_custom">
+		<text>PM 定制型 </text>
+	</string>
+	<string id="st_wpn_pm_bas_custom_descr">
+		<text>定制型马卡罗夫PM手枪有较长的带膛口螺纹枪管与PM消音器, 特异区最常见的手枪是苏联时代的遗产,PM是紧凑型自卫武器的最佳代表之一, 
+	\n它体积小,非常可靠,易于使用和维护, 缺点包括射程小,精度低,子弹效率低,以及（与现代同级手枪相比）重量大,弹匣容量不足\n
+	%c[ui_gray_2]武器附件: \n
+    %c[d_purple] • %c[ui_gray_2] 消声器: PMM消声器 \n</text>
+	</string>
+		
+	<string id="st_wpn_pm_bas">
+	      <text>PM </text>
+	</string>
+	<string id="st_wpn_pm_bas_descr">
+		<text>特异区最常见的手枪是苏联时代的遗产,PM是紧凑型自卫武器的最佳代表之一, 它体积小,非常可靠,易于使用和维护, 
+		\n缺点包括射程小,精度低,子弹效率低,以及（与现代同级手枪相比）重量大,弹匣容量不足, </text>
+	</string>
+
+	<string id="st_wpn_pmm_bas">
+		<text>PMM </text>
+	</string>
+	<string id="st_wpn_pmm_bas_descr">
+		<text>马卡洛夫手枪最广为人知的一种改型,马卡洛夫PMM是重新设计的原型枪, 1990年,一组工程师对原来的马卡洛夫手枪进行了改造,主要是增加了弹匣容量, 
+		\n结果是25%以上的火药气体压力转化成了膛口初速, PMM弹匣有12发子弹,而PM只有8发\n
+				%c[ui_gray_2]武器附件: \n
+    %c[d_purple] • %c[ui_gray_2] 消声器: PMM消声器\n</text>
+	</string>
+
+		<string id="st_wpn_fal_aus_kit_aus_tri">
+		<text>DS Arms SA-58 AUS "侦察兵" </text>
+	</string>
+	<string id="st_wpn_fal_aus_kit_aus_tri_descr">
+		<text>FAL SA58 AUS步枪的升级版,这种武器可以在长距离和中距离上非常有效地使用, SA-58 OSW(作战专业武器)由美国公司DSA (David Selvaggio Arms)在与STG-58相同的生产线上生产,是FAL步枪的合法复制品, 
+		\n民用版只生产半自动型号,警察或军队可以改装为全自动射击, DSA-58与FN FAL的任何公制弹匣完全兼容\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Trijicon Acog and Aimpoint T1 (已集成)\n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC 7.62 SDN-6\n</text>
+	</string>
+
+		<string id="st_wpn_fal_aus_kit_sa5x_spec">
+		<text>DS Arms SA-58 AUS "捍卫者" </text>
+	</string>
+	<string id="st_wpn_fal_aus_kit_sa5x_spec_descr">
+		<text>FAL SA58 AUS步枪的升级版,这种武器可以在长距离和中距离上非常有效地使用, SA-58 OSW(作战专业武器)由美国公司DSA (David Selvaggio Arms)在与STG-58相同的生产线上生产,是FAL步枪的合法复制品.
+        \n民用版只生产半自动型号,警察或军队可以改装为全自动射击, DSA-58与FN FAL的任何公制弹匣完全兼容\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: ELCAN SpecterDR and Aimpoint T1 (已集成)\n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC 7.62 SDN-6\n</text>
+	</string>
+
+		<string id="st_wpn_fal_aus_kit_fal_leup">
+		<text>DS Arms SA-58 AUS "掠夺者" </text>
+	</string>
+	<string id="st_wpn_fal_aus_kit_fal_leup_descr">
+		<text>FAL SA58 AUS步枪的升级版,这种武器可以在长距离和中距离上非常有效地使用, SA-58 OSW(作战专业武器)由美国公司DSA (David Selvaggio Arms)在与STG-58相同的生产线上生产,是FAL步枪的合法复制品, 
+		\n民用版只生产半自动型号,警察或军队可以改装为全自动射击, DSA-58与FN FAL的任何公制弹匣完全兼容\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Leupold Mark 8 and Aimpoint T1 (已集成)\n \n
+		%c[d_purple] • %c[ui_gray_2] 消声器: AAC 7.62 SDN-6\n</text>
+	</string>
+
+	<string id="st_wpn_ak12">
+		<text>AK-12突击步枪2012年款</text>
+	</string>
+	<string id="st_wpn_ak12_descr">
+		<text>卡拉什尼科夫AK-12突击步枪是伊兹马什工厂的最新产品, 它的目的是取代目前在国内使用的旧版卡拉什尼科夫AK-74M和AK-100系列步枪,以及出口型号, 该步枪采用导气式系统,使用传统型"卡拉什尼科夫样式"长行程活塞传动型气动式和转拴式枪机闭锁机构的一种可选射击模式的突击步枪, 枪栓组合明显减轻,以减少反冲后坐和提高自动射击的准确性\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 所有符合安装在皮卡汀尼导轨/维佛基座上的瞄具\n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴弹发射器\n
+		%c[d_purple] • %c[ui_gray_2] 5.45/7.62x39 Hexagon消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak104_alfa">
+    	<text>AK-104 "阿尔法"</text>
+  	</string>
+  	<string id="st_wpn_ak104_alfa_descr">
+		<text>定制版的7.62毫米AK-104突击步枪, 看起来就像中东运营商使用的型号\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 所有皮卡汀尼式瞄准镜\n		
+		%c[d_purple] • %c[ui_gray_2] 消声器: 5.45/7.62x39 Hexagon消声器\n </text>
+  	</string>
+
+	<string id="st_wpn_ak74_n">
+		<text>AK-74 </text>
+	</string>
+    <string id="st_wpn_ak74_n_descr">
+		<text>AK-74是米哈伊尔·卡拉什尼科夫在20世纪70年代早期研发的一种5.45x39毫米突击步枪,于70年代初装备苏联军队逐步取代AKM, AK-74的研制与5.45x39毫米小口径枪弹的发展相关\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25枪挂榴弹发射器 (改造后)\n
+		%c[d_purple] • %c[ui_gray_2] 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)\n
+		%c[d_purple] • %c[ui_gray_2] ATG消声器\n </text>
+	</string>
+
+	<string id="st_wpn_svd_m1">
+		<text>SVD </text>
+	</string>
+	<string id="st_wpn_svd_m1_descr">
+		<text>德拉贡诺夫SVD最初是为苏联每个基本步兵单位指定的神射手设计,而不是为专门的狙击队设计, 
+		\n相对于狙击步枪来说,它的重量相对较轻,具有良好的平衡和半自动射击功能, SVD的精度表现良好但并不出众, 有效射程可达800米\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除反射式瞄准镜外的所有燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: KZRZP消声器(改装后)\n </text>
+	</string>
+
+	<string id="st_wpn_svds">
+		<text>SVDS </text>
+	</string>
+	<string id="st_wpn_svds_descr">
+		<text>带有折叠枪托的德拉贡诺夫狙击步枪是在久经考验的SVD狙击步枪的基础上改进而来,用于武装需要更紧凑狙击武器的空降部队和特种部队狙击手, 
+		\n由于采用了可靠的自动化,步枪结合了良好的射击精度和准确性以及高实用射速可以连续多次射击击中一个目标或快速命中多个目标\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除反射式瞄准镜外的所有燕尾槽式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: TGP-V消声器\n </text>
+	</string>
+
+	<string id="st_wpn_ak74m_n">
+		<text>AK-74M </text>
+	</string>
+    <string id="st_wpn_ak74m_n_descr">
+		<text>前苏联在1987年的时候开始研制一种AK-74的改进型,不过这种新枪在苏联解体后的1991年才正式推出,并命名为AK-74M由伊热夫斯克机械制造厂生产, 
+		\nAK-74M卡拉什尼科夫突击步枪的设计几乎完全重复了AK-74的方案,从内部结构的角度来看没有根本区别,但在保留了卡拉什尼科夫突击步枪的所有优良品质的同时它获得了一系列新的,显著提高的性能, 总的来说AK-74M的设计体现了"通用"突击步枪的想法,同时取代了四种型号——AK-74,AK-74N,AKS-74和AKS-74N.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25枪挂榴弹发射器(改装后)\n
+		%c[d_purple] • %c[ui_gray_2] 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: TGP-A消声器\n </text>
+	</string>
+
+	<string id="st_wpn_colt1911_n">
+		<text>柯尔特 M1911 </text>
+	</string>
+	<string id="st_wpn_colt1911_n_descr">
+		<text>经典自动手枪的改进版并光荣地经历了20世纪的所有武装冲突, 这种全世界几十家甚至几百家武器制造商生产的标准配置和改进配置的武器唯一的缺点是弹匣容量一般,主要由它使用的大威力子弹来弥补\n </text>
+	</string>
+
+	<string id="st_wpn_sig226">
+		<text>西格绍尔 P226R </text>
+	</string>
+	<string id="st_wpn_sig226_descr">
+		<text>西格绍尔生产的全尺寸陆军手枪,美国海军特种部队的制式武器,套筒下方有一个皮卡汀尼导轨.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无\n </text>
+	</string>
+
+	<string id="st_wpn_sig220_n">
+		<text>西格绍尔 P220 </text>
+	</string>
+	<string id="st_wpn_sig220_n_descr">
+		<text>西格绍尔P220为瑞士军队设计,特点是制造质量在强度和功能上没有妥协, 西格P220已被日本,奥地利,法国,瑞士和其他国家的军队和警察采用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无\n </text>
+	</string>
+
+	<string id="st_wpn_walther_p99">
+		<text>瓦尔特 P99 </text>
+	</string>
+	<string id="st_wpn_walther_p99_descr">
+		<text>西方生产的优秀手枪,其特点是可靠性高,大容量的弹匣,良好的射击精度,还有同类中最好的人体工程学, 进入特异区后它成为老手和初学者中最常见的手枪之一.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无\n </text>
+	</string>
+
+	<string id="st_wpn_sig226_226sig_kit">
+		<text>西格绍尔 P226R 现代版 </text>
+	</string>
+	<string id="st_wpn_sig226_226sig_kit_descr">
+		<text>西格绍尔生产的全尺寸陆军手枪,美国海军特种部队的制式武器,套筒下方有一个皮卡汀尼导轨\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 已安装战术套件: 用于安装消声器的带膛口螺纹枪管,人体工程学握把和Trijicon RMR反射式瞄准镜, 改进后不可拆卸\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 鱼鹰9毫米\n\n</text>
+	</string>
+
+	<string id="st_wpn_sig220_n_upg220">
+		<text>西格绍尔 P220 现代版 </text>
+	</string>
+	<string id="st_wpn_sig220_n_upg220_descr">
+		<text>西格绍尔P220为瑞士军队设计,特点是制造质量在强度和功能上没有妥协, 西格P220已被日本,奥地利,法国,瑞士和其他国家的军队和警察采用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 已安装战术套件: 用于安装消声器的带膛口螺纹枪管,氚光机械瞄具和Viridian X5L激光指示器和高容量12发弹匣, 几乎可以从任何位置进行有效射击, 改进后不可拆卸\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: BLACK BOX.45\n </text>
+	</string>
+
+	<string id="st_wpn_walther_p99_mod9">
+		<text>瓦尔特 P99 现代版 </text>
+	</string>
+	<string id="st_wpn_walther_p99_mod9_descr">
+		<text>西方生产的优秀手枪,其特点是可靠性高,大容量的弹匣, 良好的射击精度,还有同类中最好的人体工程学, 进入特异区后它成为老手和初学者中最常见的手枪之一\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 已安装战术套件: 用于安装消声器的带膛口螺纹枪管,氚光机械瞄具和Viridian X5L激光指示器, 几乎可以从任何位置进行有效射击, 改进后不可拆卸\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Gemtech\n </text>
+	</string>
+
+	<string id="st_wpn_rpk74_16">
+		<text>RPK-16 5.45x39轻机枪 </text>
+	</string>
+	<string id="st_wpn_rpk74_16_descr">
+		<text>俄罗斯5.45x39口径的RPK-16通用轻机枪是为取代过时的RPK-74而研发, 该型号武器的主要特点是快速更换的枪管,改进的人体工程学以及带有皮卡汀尼导轨的护木和防尘罩\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 所有皮卡汀尼式瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 5.45/7.62x39 Hexagon消声器\n </text>
+	</string>
+
+	<string id="st_wpn_fn57">
+		<text>FN Five-seveN半自动手枪</text>
+	</string>
+	<string id="st_wpn_fn57_descr">
+		<text>Five-seveN是一种延迟反冲操作的半自动手枪, 这把Five-seveN手枪是由FN赫斯塔尔设计的,作为P90冲锋枪的补充武器, P90和Five-seveN共享相同的弹药,即5.7x28mm SS190子弹, 弹药和武器背后的理念是提供良好的穿透力,以对抗由防弹衣保护的目标,同时保持武器的重量、尺寸和后坐力在合理水平\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 该套件包括激光辅助瞄准和红点瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Docter瞄准镜,Aimpoint T1瞄准镜(低基座),Trijicon公司RMR红点瞄准镜,Leupold DeltaPoint PRO瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 消音器: 5.7x28mm消音器\n \n</text>
+	</string>
+--&gt;
+	<string id="st_wpn_abakan_n">
+		<text>AN-94 "阿巴坎"</text>
+	</string>
+	<string id="st_wpn_abakan_n_descr">
+		<text>尼科诺夫"阿巴坎"AN-94突击步枪1994年型号, 在作战使用方面AN-94与AK-74的主要区别在于引入了一种额外的射击模式,即利用高射速进行2发点射,使弹头在枪身开始后坐之前就出膛,子弹出膛以后,后坐力才传递到射手身上,以避免射击后坐力对点射精度的影响.
+		\n这种射击模式提供了高精度和集中命中率, 它被特种部队和值勤人员用来在相对较远的距离上击败穿着防弹衣的敌人\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25枪挂榴弹发射器(改装后)\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有燕尾槽式瞄准镜(1P59"超子"和PSO瞄准镜除外)\n </text>
+	</string>
+
+	<string id="st_wpn_ks23_kaban_kab_up">
+		<text>KS-23 "野猪" </text>
+	</string>
+	<string id="st_wpn_ks23_kaban_kab_up_descr">
+		<text>缩短型号与安装Trijicon RMR反射式瞄准镜, 23毫米-苏联多功能警察泵动霰弹枪,旨在镇压骚乱,选择性武力,对罪犯的精神起到震慑作用, 
+		\n有趣的是,KS-23的口径超过20毫米而且枪管有膛线, 不应该被归类为小型武器,而是小口径火炮, 有传言说,在特异区南部的某个地方,你可以找到一个消声器适合它\n </text>
+	</string>
+
+	<string id="st_wpn_ks23_23_up">
+		<text>KS-23 紧凑型 </text>
+	</string>
+	<string id="st_wpn_ks23_23_up_descr">
+		<text>这是一把苏联的霰弹枪, KS-23的缩短版, 可拆卸金属枪托, 叫做卡宾枪只是因为它的枪管是用有膛线的23毫米机载火炮的炮管制成, KS意为"Karabin Spetsialniy"即"特制卡宾枪", 在1970年左右曾用于镇压监狱的骚乱, KS-23以它独特的枪管和口径而出名, 发射23毫米弹药\n </text>
+	</string>
+
+	<string id="st_wpn_remington700">
+		<text>雷明顿700狙击步枪</text>
+	</string>
+	<string id="st_wpn_remington700_descr">
+		<text>雷明顿700型步枪是雷明顿武器公司自1962年以来生产的一系列栓动型中间威力步枪\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 枪身：M700 MOD X Gen.3枪托,马格普尔 专业版 700,Promag "大天使"公司生产的用于雷明顿M700的聚合物枪托\n
+		%c[d_purple] • %c[ui_gray_2] 丹尼尔防御公司产"Wave"QD消音器 \n \n</text>
+	</string>
+	
+		<string id="st_wpn_remington700_archangel">
+		<text>雷明顿700 "大天使" 狙击步枪</text>
+	</string>
+	<string id="st_wpn_remington700_archangel_descr">
+		<text>雷明顿 700 型是雷明顿武器公司自 1962 年以来制造的一系列栓动中心发火步枪。该型号安装了 Promag "大天使" 聚合物枪托。\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 安装了 Promag "大天使" 聚合物枪托\n</text>
+	</string>
+
+		<string id="st_wpn_remington700_magpul_pro">
+		<text>雷明顿 700 马格普尔 专业版</text>
+	</string>
+	<string id="st_wpn_remington700_magpul_pro_descr">
+		<text>雷明顿 700 型是雷明顿武器公司自 1962 年以来制造的一系列栓动中心发火步枪。该型号具有 马格普尔 专业版 700 底盘和额外的 "三角锥" RMR 红点瞄准镜。\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 安装了马格普尔"专业版 700"枪身\n</text>
+	</string>
+
+		<string id="st_wpn_remington700_mod_x_gen3">
+		<text>雷明顿 700 模块化步枪系统</text>
+	</string>
+	<string id="st_wpn_remington700_mod_x_gen3_descr">
+		<text>雷明顿 700 型是雷明顿武器公司自 1962 年以来制造的一系列栓动中心发火步枪。该型号配备了 MOD X GEN III 模块化步枪系统和额外的 勒波尔德 DeltaPoint PRO 红点瞄准镜。\n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] 安装了 MOD X Gen.3 枪身\n</text>
+	</string>
+
+		<string id="st_wpn_sr1m">
+		<text>谢尔久科夫 "毒蛇" SR1MP 9x21  </text>
+	</string>
+	<string id="st_wpn_sr1m_descr">
+		<text>俄罗斯为特种部队制造的最新手枪, 为了成功地摧毁穿防弹衣和其他防护装备的目标,"毒蛇"使用了专为这种枪设计的强大穿甲弹, 
+		\n由于套筒两侧有凹槽可以在枪上安装各种战术配件,如战术手电或激光指示器, 尽管性能优异但由于难以找到合适的弹药,这种手枪在特异区很少出现\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>
+	
+		<string id="st_wpn_sr1m_sr1upgr1">
+		<text>谢尔久科夫 "毒蛇" SR1MP 9x21  </text>
+	</string>
+	<string id="st_wpn_sr1m_sr1upgr1_descr">
+		<text>俄罗斯为特种部队制造的最新手枪, 为了成功地摧毁穿防弹衣和其他防护装备的目标,"毒蛇"使用了专为这种枪设计的强大穿甲弹, 
+		\n由于套筒两侧有凹槽可以在枪上安装各种战术配件,如战术手电或激光指示器, 尽管性能优异但由于难以找到合适的弹药,这种手枪在特异区很少出现\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 已用战术套件改进\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: PBS 9x21毫米消声器  \n</text>
+	</string>
+
+	<string id="st_wpn_k98_mod">
+		<text>毛瑟98K "护林员"</text>
+	</string>
+	<string id="st_wpn_k98_mod_descr">
+		<text>二战德国狙击步枪毛瑟卡宾98k, 木质枪托被有机聚合物枪托所取代, 并配备了日本制造的March狙击瞄准镜, 在特异区,这把步枪主要用于长距离和超长距离猎杀变异怪物\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: March瞄准镜(已集成)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: K98"护林员", (需要安装消声器的膛口转接器) \n </text>
+	</string>
+
+	<string id="st_wpn_k98_mod_silen98">
+		<text>毛瑟98K "护林员"</text>
+	</string>
+	<string id="st_wpn_k98_mod_silen98_descr">
+		<text>二战德国狙击步枪毛瑟卡宾98k, 木质枪托被有机聚合物枪托所取代, 并配备了日本制造的March狙击瞄准镜, 在特异区,这把步枪主要用于长距离和超长距离猎杀变异怪物.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: March瞄准镜(已集成)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 98K"护林员"\n </text>
+	</string>
+
+	<string id="st_wpn_ks23_ecolog">
+		<text> KS-23 "生态学家"</text>
+	</string>
+	<string id="st_wpn_ks23_ecolog_descr">
+		<text> KS-23的改进版,是为了满足物异区内科研人员的需要而研发的\n </text>
+	</string>
+
+	<string id="st_wpn_ak105">
+		<text>AK-105短突击步枪</text>
+	</string>
+	<string id="st_wpn_ak105_descr">
+		<text>AK-105是AK-74M步枪的5.45x39mm卡宾枪版本, AK-105用于补充一部分俄罗斯陆军正在服役中的AKS-74U卡宾枪的耗损, 是理想的CQC(近距离作战)武器,它不适用于远距离作战, 步枪的机匣是用冲压钢制成的, 而弹匣是由玻璃钢制成,枪托是由更轻、更耐用的聚合物塑料制造,而且其内部是附件储存室,可以把内藏清枪配备的工具盒储存在枪托内部\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 除了带目镜罩的PSO瞄准镜和PSO-1M2-1瞄准镜之外,所有用燕尾槽安装的瞄准镜都是因为在AK系列步枪上使用这些瞄准镜不方便\n
+		%c[d_purple] • %c[ui_gray_2] 能利用战术套件进行升级\n
+		%c[d_purple] • %c[ui_gray_2] 消音器: TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak105_swamp">
+		<text>AK-105 "沼泽行者"</text>
+	</string>
+	<string id="st_wpn_ak105_swamp_descr">
+		<text>AK-105 的一种非常罕见的变体, 它主要出现在晴空老兵手中, 由于存在多个瞄准装置,它非常适合近距离和中远距离的战斗.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 该武器使用"沼泽行者"战术套件升级\n
+		%c[d_purple] • %c[ui_gray_2] 光学设备: Elcan SpecterDR,安装在45度备用导轨上的Trijicon RMR反射式瞄准镜和AN/PEQ-15激光指示器\n </text>
+	</string>
+
+		<string id="st_wpn_remington700_lapua700">
+		<text>雷明顿 M700 "猎鹿人"</text>
+	</string>
+	<string id="st_wpn_remington700_lapua700_descr">
+		<text>"猎鹿人" 是雷明顿 M700狙击步枪的改进型，采用 .338 口径弹药，可在很远的距离上进行精确射击。 \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 该武器已使用"猎鹿人".338 口径套件升级\n
+		%c[d_purple] • %c[ui_gray_2] 行军高性能战术瞄准镜</text>
+	</string>
+
+		<string id="st_wpn_pl15">
+		<text>列别捷夫PL-15手枪 </text>
+	</string>
+	<string id="st_wpn_pl15_descr">
+		<text>俄罗斯半自动手枪PL-15-01,弹药为9x19毫米巴拉贝鲁姆, 该枪与同类产品的区别在于其人体工程学和平衡性与目前对人体生物力学的理解相对应, 设计过程中使用的自动化计算方法有助于提高射击寿命.
+		\n结合人体工程学解决方案使枪在后坐力,射击后抛壳和快速返回瞄准基线方面都很舒适, 所有这些都有助于快速持续射击和快速转移火力,符合人体工程学的大倾角握把有助于"倾斜"射击.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进 \n 
+		%c[d_purple] • %c[ui_gray_2] PL-15可以安装激光指示器\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: PL-15 消声器 \n</text>
+	</string>
+
+		<string id="st_wpn_pl15_pl15_scolaz">
+		<text>列别捷夫PL-15手枪 "战术版"</text>
+	</string>
+	<string id="st_wpn_pl15_pl15_scolaz_descr">
+		<text>俄罗斯半自动手枪PL-15-01,弹药为9x19毫米巴拉贝鲁姆, 该枪与同类产品的区别在于其人体工程学和平衡性与目前对人体生物力学的理解相对应, 设计过程中使用的自动化计算方法有助于提高射击寿命.
+		\n结合人体工程学解决方案使枪在后坐力,射击后抛壳和快速返回瞄准基线方面都很舒适, 所有这些都有助于快速持续射击和快速转移火力,符合人体工程学的大倾角握把有助于"倾斜"射击.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装: 战术套件(激光指示器,Aimpoint T1瞄准镜)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: PL-15 消声器\n</text>
+	</string>
+
+	<string id="st_wpn_ak105_shakal">
+		<text>AK-105 "豺狼"</text>
+	</string>
+	<string id="st_wpn_ak105_shakal_descr">
+		<text>AK-105 的一种非常罕见的变体, 它主要出现在纪律团老兵手中, 由于存在多个瞄准装置,它非常适合近距离和中远距离的战斗.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 该武器使用"豺狼"战术套件升级\n
+		%c[d_purple] • %c[ui_gray_2] 光学设备: Trijicon ACOG,安装在45度备用导轨上的Trijicon RMR反射式瞄准镜和AN/PEQ-15激光指示器\n</text>
+	</string>
+
+	<string id="st_wpn_sig220_n_u2p2g0r">
+		<text>西格绍尔P220 "9" 现代版 </text>
+	</string>
+	<string id="st_wpn_sig220_n_u2p2g0r_descr">
+		<text>西格绍尔P220为瑞士军队设计,特点是最高的制造质量在强度和功能上没有妥协, 西格P220已被日本,奥地利,法国,瑞士和其他国家的军队和警察采用\n \n
+		%c[ui_gray_2]武器附件: \n  
+		%c[d_purple] • %c[ui_gray_2] 已安装战术套件: 9x19带膛口螺纹枪管使用标准BLACK BOX.45消声器,氚光机械瞄具和Viridian X5L激光指示器和高容量19发弹匣.几乎可以从任何位置进行有效射击, 改进后不可拆卸\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: BLACK BOX.45\n </text>
+	</string>
+
+	<string id="st_wpn_aps_bas">
+		<text>APS </text>
+	</string>
+	<string id="st_wpn_aps_bas_descr">
+		<text>该枪是由斯捷奇金在20世纪40年代末和50年代初设计,在1951年斯捷奇金和马卡罗夫手枪一起被苏联武装部队采用, APS是为直接参与战斗的军官以及一些特种部队的士兵和军士而设计\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>
+
+	<string id="st_wpn_aps_bas_apsabigo">
+		<text>APS升级版 </text>
+	</string>
+	<string id="st_wpn_aps_bas_apsabigo_descr">
+		<text>该枪是由斯捷奇金在20世纪40年代末和50年代初设计,在1951年斯捷奇金和马卡罗夫手枪一起被苏联武装部队采用, APS是为直接参与战斗的军官以及一些特种部队的士兵和军士而设计\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 已安装战术套件: 安装APB消声器的枪管,氚光机械瞄具和人体工程学手枪握把\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: APB \n</text>
+	</string>
+
+	<string id="st_wpn_mp133_bas">
+		<text>MP-133 </text>
+	</string>
+	<string id="st_wpn_mp133_bas_descr">
+		<text>MP-133（俄语: МП-133）是俄罗斯的一种霰弹枪,用于各种狩猎,射击和自卫, 该枪是在Izh-81霰弹枪的基础上研发,自2000年起由伊热夫斯克机械厂批量生产.\n </text>
+	</string>
+
+	<string id="st_wpn_mp153_bas">
+		<text>MP-153 </text>
+	</string>
+	<string id="st_wpn_mp153_bas_descr">
+		<text>MP-153（俄语: МП-153）是一种俄罗斯半自动霰弹枪,俗称"穆尔卡", 用于各种狩猎,运动射击,执法和自卫, 在最后一发子弹射出后,枪机会停在最后面的位置,这样可以简化和加速下一次再装弹,并在弹药耗尽时向射手发出信号, MP-153霰弹枪在俄罗斯非常受欢迎,因为价格实惠,可靠性和生存能力也很好, 枪的缺点被认为是比竞争对手重一些\n </text>
+	</string>
+
+	<string id="st_wpn_gauss_bas">
+		<text>高斯步枪 </text>
+	</string>
+	<string id="st_wpn_gauss_bas_descr">
+		<text>被称为"62号产品"的超精密高科技武器是由特异区内秘密实验室的设计师研发,它的原理是基于电磁系统加速子弹,一颗子弹可以以惊人的速度射出,这使得它在几乎完全没有后坐力的情况下提供巨大的穿透能力, 为了保证电池的能量密度,使用了一些神器的颗粒\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 增强型计算机EOTS-62瞄准镜(已集成)</text>
+	</string>
+
+	<string id="st_wpn_umirotvoritel_bas">
+		<text>不明武器 </text>
+	</string>
+	<string id="st_wpn_umirotvoritel_bas_descr">
+		<text>一种未知的武器,其发射机制尚未建立, 武器显然有缺陷—扣动扳机不会导致任何结果, 样品很重,绝对是高科技的, 值得注意的是,它似乎不是基于点火发射子弹, 最有可能的是这些子弹是由电磁推动,人们只能猜测它具有什么样的破坏力, </text>
+	</string>
+
+	<string id="st_wpn_pb_bas">
+		<text>PB </text>
+	</string>
+	<string id="st_wpn_pb_bas_descr">
+		<text>1967年投入使用的无声PB手枪,在苏联军队中也被称为6P9,是在马卡洛夫手枪的基础上研发用于武装军队侦察队和克格勃人员, 该枪采用集成消声器,可将子弹速度降低到亚音速\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 6P9 消声器 (已集成)</text>
+	</string>
+
+	<string id="st_wpn_pb_bas_custom">
+		<text>PB (现代版)消音手枪 </text>
+	</string>
+	<string id="st_wpn_pb_bas_custom_descr">
+		<text>PB（Pistolet Besshumnyj 或 Silent Pistol）在苏联军队中也被称为 6P9，是 1967 年为苏联军队的特种部队和克格勃特工开发的。 该手枪基于改良的马卡洛夫 PM 手枪，并具有独特的一体两件式消音器。 它旨在供克格勃和陆军侦察小组使用。 PB 的整体消音器还可以将子弹速度降低到亚音速以下.\n \n
+		%c[0,255,255,255]特征:\n
+		%c[d_cyan] � %c[0,255,255,255]来源: %c[ui_gray_1]比利时\n
+		%c[d_cyan] � %c[0,255,255,255]制造商: %c[ui_gray_1]FN 赫斯塔尔\n
+		%c[d_cyan] � %c[0,255,255,255]生产年份: %c[ui_gray_1]1967\n
+		</text>
+	</string>
+
+	<string id="st_wpn_akm_alfa">
+    	<text>CAA AK-阿尔法</text>
+  	</string>
+  	<string id="st_wpn_akm_alfa_descr">
+		<text>由以色列Command Arms&amp;Acessories（CAA）研发的AK-阿尔法突击步枪,于2016年首次向公众展示, 这种武器在世界上有两个品牌——"美国卡拉什尼科夫"和"以色列卡拉什尼科夫", 
+		\n显然,这武器是通过ISG协助下进入特异区的,  AK-阿尔法突击步枪试图改善AK步枪的人机工程学,同时保持其主要优势-高可靠性和易于维护\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight)\n		
+		%c[d_purple] • %c[ui_gray_2] 消声器: 5.45/7.62x39 Hexagon消声器\n </text>
+  	</string>
+
+	<string id="st_wpn_sr2_veresk">
+    	<text>SR-2M "维列斯克"</text>
+  	</string>
+  	<string id="st_wpn_sr2_veresk_descr">
+		<text>"维列斯克"是一款由俄罗斯中央研究精密机械制造局所研制及生产的冲锋枪, 其设计目的是让战斗人员在200米以内的近身距离作战杀伤穿着防弹背心的敌人, SR-2的主要优势是它的高火力,射击精度高和子弹在近距离内的杀伤作用大\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: KP SR-2反射式瞄准镜\n	
+        %c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n 		
+		%c[d_purple] • %c[ui_gray_2] 消声器: GZV-SR2\n </text>
+  	</string>
+
+	<string id="st_wpn_sr2_veresk_sr2_upkit">
+    	<text>SR-2M "维列斯克"(改进型)</text>
+  	</string>
+  	<string id="st_wpn_sr2_veresk_sr2_upkit_descr">
+		<text>"维列斯克"是一款由俄罗斯中央研究精密机械制造局所研制及生产的冲锋枪, 其设计目的是让战斗人员在200米以内的近身距离作战杀伤穿着防弹背心的敌人, SR-2的主要优势是它的高火力,射击精度高和子弹在近距离内的杀伤作用大\n
+		%c[ui_gray_2]武器附件: \n		
+        %c[d_purple] • %c[ui_gray_2] 已用战术套件改进, (改进后不可拆卸) \n	
+		%c[d_purple] • %c[ui_gray_2] 消声器: GZV-SR2\n </text>
+  	</string>	
+
+	<string id="st_wpn_sr2_m1">
+    	<text>SR-2M "维列斯克"(现代版)</text>
+  	</string>
+  	<string id="st_wpn_sr2_m1_descr">
+		<text>"维列斯克"是一款由俄罗斯中央研究精密机械制造局所研制及生产的冲锋枪, 其设计目的是让战斗人员在200米以内的近身距离作战杀伤穿着防弹背心的敌人, SR-2的主要优势是它的高火力,射击精度高和子弹在近距离内的杀伤作用大\n
+		%c[ui_gray_2]武器附件: \n		
+        %c[d_purple] • %c[ui_gray_2] 所有皮卡汀尼式瞄准镜, 以及两个倍增瞄准镜: PN-23和Leupold Mark 8 CQBSS 1.1-8x24\n	
+		%c[d_purple] • %c[ui_gray_2] 消声器: GZV-SR2\n </text>
+  	</string>
+
+	<string id="st_wpn_aug_a1_bas">
+		<text>斯太尔 AUG A1 </text>
+	</string>
+	<string id="st_wpn_aug_a1_bas_descr">
+		<text>斯太尔AUG A1步枪,带有不可拆卸的光学1.5倍瞄准镜, AUG（德语Armee Universal Gewehr的缩写,即陆军通用步枪）是一种奥地利5.56毫米无托结构突击步枪,新武器的研制由奥地利斯太尔-丹姆勒-普赫公司的子公司斯太尔-曼利彻尔有限公司于20世纪60年代研发, 
+		\n1978年,AUG被采用为奥地利陆军的标准武器,编号为StG77,取代了7.62毫米StG58自动步枪（许可FN FAL）, 此外该步枪及其改进型号被阿根廷,澳大利亚,马来西亚,新西兰,玻利维亚,厄瓜多尔,爱尔兰,卢森堡,沙特阿拉伯,突尼斯,巴基斯坦以及美国边防军队采用\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 1.5x 瞄准镜(已集成)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 斯太尔UMS \n</text>
+	</string>
+	
+	<string id="st_wpn_aug_a3_bas">
+		<text>斯太尔 AUG A3 </text>
+	</string>
+	<string id="st_wpn_aug_a3_bas_descr">
+		<text>斯太尔 AUG (Armee Universal Gewehr)由奥地利斯太尔-丹姆勒-普赫公司的子公司斯太尔-曼利彻尔有限公司于20世纪60年代研发, 这支步枪使用了无托结构,弹匣位于扳机后方, 
+		\n斯太尔AUG A3改进型配备了皮卡汀尼导轨系统以取代早期型号的集成光学瞄准镜, 该系统允许在武器上安装几乎所有光学瞄准镜, 在枪管的前部由皮卡汀尼导轨代替了可折叠的前握把来安装各种前握把,战术手电和激光指示器\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 斯太尔UMS \n</text>
+	</string>	
+
+	<string id="st_wpn_aug_a1_custom_bas">
+		<text>斯太尔 AUG A1 CQB </text>
+	</string>
+	<string id="st_wpn_aug_a1_custom_bas_descr">
+		<text>斯太尔AUG A1步枪,带有不可拆卸的光学1.5倍瞄准镜, AUG（德语Armee Universal Gewehr的缩写,即陆军通用步枪）是一种奥地利5.56毫米无托结构突击步枪,新武器的研制由奥地利斯太尔-丹姆勒-普赫公司的子公司斯太尔-曼利彻尔有限公司于20世纪60年代研发.
+		\n1978年,AUG被采用为奥地利陆军的标准武器,编号为StG77,取代了7.62毫米StG58自动步枪（许可FN FAL）, 此外该步枪及其改进型号被阿根廷,澳大利亚,马来西亚,新西兰,玻利维亚,厄瓜多尔,爱尔兰,卢森堡,沙特阿拉伯,突尼斯,巴基斯坦以及美国边防军队采用, 紧凑型AUG A1.CQB与原型号相比重量更轻,射速更高\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 1.5x 瞄准镜(已集成)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 斯太尔UMS \n</text>
+	</string>
+
+
+	<string id="st_wpn_aug_a3_custom_bas">
+		<text>斯太尔AUG A3突击手 </text>
+	</string>
+	<string id="st_wpn_aug_a3_custom_bas_descr">
+		<text>斯太尔 AUG (Armee Universal Gewehr)由奥地利斯太尔-丹姆勒-普赫公司的子公司斯太尔-曼利彻尔有限公司于20世纪60年代研发, 这支步枪使用了无托结构,弹匣位于扳机后方, 
+		\n斯太尔AUG A3改进型配备了皮卡汀尼导轨系统以取代早期型号的集成光学瞄准镜, 该系统允许在武器上安装几乎所有光学瞄准镜, 在枪管的前部由皮卡汀尼导轨代替了可折叠的前握把来安装各种前握把,战术手电筒和激光指示器\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装了Trijicon Acog (x4)和PEQ LA5  激光指示器\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 斯太尔UMS \n</text>
+	</string>
+
+	<string id="st_wpn_ak5c_bas">
+		<text>AK 5C </text>
+	</string>
+	<string id="st_wpn_ak5c_bas_descr">
+		<text>AK5（Automatkarabin 5）是瑞典博福斯-埃斯基尔斯图纳公司在FN FNC的基础上研发的一款突击步枪, 该武器目前被瑞典军队和警察以及挪威警察和委内瑞拉军队使用, 
+		\nAK5C是一个拆除准星和照门的改进型号,采用皮卡汀尼导轨用于安装各种类型的光学瞄准镜, 还有一个可调节长度的折叠枪托,一个新的护木和膛口消焰器,  \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 可用战术套件改进\n 
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜.\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无\n</text>
+	</string>
+	
+	<string id="st_wpn_ak5c_bas_5c_tik">
+		<text>AK 5C ISG特殊型 </text>
+	</string>
+	<string id="st_wpn_ak5c_bas_5c_tik_descr">
+		<text>AK5（Automatkarabin 5）是瑞典博福斯-埃斯基尔斯图纳公司在FN FNC的基础上研发的一款突击步枪, 该武器目前被瑞典军队和警察以及挪威警察和委内瑞拉军队使用, 
+		\nAK5C是一个拆除准星和照门的改进型号,采用皮卡汀尼导轨用于安装各种类型的光学瞄准镜, 还有一个可调节长度的折叠枪托,一个新的护木和膛口消焰器,  \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 该武器用战术装备进行了升级, 包括: 战术前握,LA5  激光指示器,Leupold LCO+D'evo瞄准镜,短枪管与改进的枪械结构,因此该型号的射速比原来的型号高.（改进后不可拆卸） \n 
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜安装: Leupold (LCO),Leupold D'evo x6和LA5激光指示器\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG消声器 \n		</text>
+	</string>	
+
+	<string id="st_wpn_ak5c_isg">
+		<text>AK 5C ISG </text>
+	</string>
+	<string id="st_wpn_ak5c_isg_descr">
+		<text>ISG部队使用的改良型AK5C, 
+		\nAK5（Automatkarabin 5）是瑞典博福斯-埃斯基尔斯图纳公司在FN FNC的基础上研发的一款突击步枪, 该武器目前被瑞典军队和警察以及挪威警察和委内瑞拉军队使用, 
+		\nAK5C是一个拆除准星和照门的改进型号,采用皮卡汀尼导轨用于安装各种类型的光学瞄准镜, 还有一个可调节长度的折叠枪托,一个新的护木和膛口消焰器\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, LA5  激光指示器 (已集成)\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 步枪动力ISG抑声器 \n</text>
+	</string>
+
+	<string id="st_wpn_m4a1_siber">
+		<text>M4A1 RAS </text>
+	</string>
+	<string id="st_wpn_m4a1_siber_descr">
+		<text>M4卡宾枪源于一个可以追溯到M16步枪早期卡宾枪版本的枪族,所有这些都是基于ArmaLite公司制造的初版AR-15, 它是M16突击步枪的一个更短更轻的版本与其共用80%的零件.
+		\n发射5.56x45毫米北约弹药,采用全自动,风冷,弹匣供弹,多种射击模式,带四个固定位可调伸缩枪托, 与许多卡宾枪一样,M4比全长步枪更便于携带, 它已被美国特种作战司令部(USSOCOM)采用,是美国陆军特种部队和海军海豹突击队的首选武器\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座)和OKP-7)\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: ADVANCED ARMAMENT (AAC) M4-2000 \n
+		%c[d_purple] • %c[ui_gray_2] M203枪挂榴弹发射器\n</text>
+	</string>
+
+	<string id="st_wpn_akm_bas">
+		<text>AKM </text>
+	</string>
+	<string id="st_wpn_akm_bas_descr">
+		<text>AKM（现代版卡拉什尼科夫突击步枪）是AK突击步枪的改进版本, 
+		\n虽然它在1970年被苏联军队的AK-74取代,但AKM仍然是该系列中使用最广泛的型号\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: PBS-1\n
+		%c[d_purple] • %c[ui_gray_2] GP-25枪挂榴弹发射器(改装后)\n</text>
+	</string>
+
+	<string id="st_wpn_akms_bas">
+		<text>AKMS </text>
+	</string>
+	<string id="st_wpn_akms_bas_descr">
+		<text>带折叠枪托的AKM型号,枪托的固定系统相对于AKS进行了改进（向下折叠到枪管下方）.该型号专门为伞兵设计.\n \n
+		%c[ui_gray_2]武器附件: \n		
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消声器\n
+		%c[d_purple] • %c[ui_gray_2] GP-25枪挂榴弹发射器(改装后)\n</text>
+	</string>
+
+	<string id="st_wpn_sks_b">
+		<text>SKS </text>
+	</string>
+	<string id="st_wpn_sks_b_descr">
+		<text>谢尔盖·加夫里罗维奇·西蒙诺夫设计的苏联半自动卡宾枪,于1949年服役, 在20世纪50年代初它被AK突击步枪取代,它在二线部队服役了几十年,至今仍被用作礼宾用枪\n \n
+		%c[ui_gray_2]武器附件: \n%c[d_purple]• %c[ui_gray_2] 无\n</text>
+	</string>
+
+	<string id="st_wpn_l85_m1">
+		<text>L85 A2 </text>
+	</string>
+	<string id="st_wpn_l85_m1_descr">
+		<text>SA80系统的研制,包括两种武器——SA80 IW突击步枪和SA80 LSW轻机枪, 始于20世纪60年代末,当时英国陆军决定研制一种新型步枪以取代过时的英国制造的L1 SLR 7.62X51, 
+		\n英国军队的标准单兵武器L85（A1型号）在性能上有许多问题, A2是德国Heckler&amp;Koch公司在21世纪初进行的重大改进的结果,目前仍在使用, L85A2在各种气候条件下非常可靠,适用于各种操作场景, 现代L85A2步枪被公认为可靠和精确,特别是在使用标准SUSAT光学瞄准镜时\n \n
+		%c[ui_gray_2]武器附件: \n		
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 带有L85燕尾座的SUSAT瞄准镜\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: ADVANCED ARMAMENT (AAC) M4-2000\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+	
+	<string id="st_wpn_l85_m2">
+		<text>L85 A2 现代版 </text>
+	</string>
+	<string id="st_wpn_l85_m2_descr">
+		<text>SA80系统的研制,包括两种武器——SA80 IW突击步枪和SA80 LSW轻机枪, 始于20世纪60年代末,当时英国陆军决定研制一种新型步枪以取代过时的英国制造的L1 SLR 7.62X51, 
+		\n英国军队的标准单兵武器L85（A1型号）在性能上有许多问题, A2是德国Heckler&amp;Koch公司在21世纪初进行的重大改进的结果,目前仍在使用, L85A2在各种气候条件下非常可靠,适用于各种操作场景, 现代L85A2步枪被公认为可靠和精确,特别是在使用标准SUSAT光学瞄准镜时.\n \n
+		%c[ui_gray_2]武器附件: \n
+        %c[d_purple] • %c[ui_gray_2] 战术套件包括: 安装在L85燕尾座上的皮卡汀尼导轨\n		
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: ADVANCED ARMAMENT (AAC) M4-2000\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+
+	<string id="st_wpn_l85_m3">
+		<text>L85 A2 战术版 </text>
+	</string>
+	<string id="st_wpn_l85_m3_descr">
+		<text>SA80系统的研制,包括两种武器——SA80 IW突击步枪和SA80 LSW轻机枪, 始于20世纪60年代末,当时英国陆军决定研制一种新型步枪以取代过时的英国制造的L1 SLR 7.62X51, 
+		\n英国军队的标准单兵武器L85（A1型号）在性能上有许多问题, A2是德国Heckler&amp;Koch公司在21世纪初进行的重大改进的结果,目前仍在使用, L85A2在各种气候条件下非常可靠,适用于各种操作场景, 现代L85A2步枪被公认为可靠和精确,特别是在使用标准SUSAT光学瞄准镜时.\n \n
+		%c[ui_gray_2]武器附件: \n
+        %c[d_purple] • %c[ui_gray_2] 升级: 安装在L85燕尾座上的皮卡汀尼导轨,带皮卡汀尼导轨的护木,战术前握和B.E.Meyers Mawl-C1绿色激光指示器\n		
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: ADVANCED ARMAMENT (AAC) M4-2000\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: Heckler&amp;Koch M320\n</text>
+	</string>	
+
+	<string id="st_wpn_scar_siber">
+		<text>FN SCAR-H </text>
+	</string>
+	<string id="st_wpn_scar_siber_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪, 
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: FN HERSTAL FN40GL Mk2\n</text>
+	</string>
+
+	<string id="st_wpn_scar_siber_black">
+		<text>FN SCAR-H (黑色) </text>
+	</string>
+	<string id="st_wpn_scar_siber_black_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪.
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器:  FN HERSTAL FN40GL Mk2\n</text>
+	</string>
+
+	<string id="st_wpn_scar_siber_m1">
+		<text>FN SCAR-H 战术版 </text>
+	</string>
+	<string id="st_wpn_scar_siber_m1_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪.
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药,  \n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装升级: 马盖普战术前握,氚光机械瞄具\n		
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+
+	<string id="st_wpn_scar_siber_m1_black">
+		<text>FN SCAR-H 黑色战术版 </text>
+	</string>
+	<string id="st_wpn_scar_siber_m1_black_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪, 
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装升级: 马盖普战术前握,氚光机械瞄具\n	
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+
+	<string id="st_wpn_scar_siber_m2">
+		<text>FN SCAR-H 专业套装 </text>
+	</string>
+	<string id="st_wpn_scar_siber_m2_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪, 
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装升级: B.E.Meyers Mawl-C1绿色激光指示器\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(低轮廓基座))\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+	
+	<string id="st_wpn_scar_siber_m2_custom">
+		<text>FN SCAR-H 专家套装 </text>
+	</string>
+	<string id="st_wpn_scar_siber_m2_custom_descr">
+		<text>FN SCAR（Special Operations Forces Combat Assault Rifle-SCAR特种作战部队突击步枪）是比利时FN Herstal为美国特种作战司令部(USSOCOM)制造的模块化步枪, 
+		\n在2004年11月,USSOCOM正式宣布FN在SCAR项目的竞争中胜出,目前正在美国游骑兵部队服役, 这种步枪系列包括两种类型,SCAR-H和SCAR-L, SCAR-H(重型)使用7.62x51 NATO弹药\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装升级: B.E.Meyers Mawl-C1绿色激光指示器\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Vortex RAZOR UH-1和EOTech G33.STS增倍镜\n
+		%c[d_purple] • %c[ui_gray_2] 膛口: AAC 7.62 SDN-6\n
+		%c[d_purple] • %c[ui_gray_2] 榴弹发射器: 无\n</text>
+	</string>
+
+	<string id="st_wpn_korth">
+		<text>科思 4" 手枪 </text>
+	</string>
+	<string id="st_wpn_korth_descr">
+		<text>Korth(科思)高端枪械制造商,总部位于德国黑森州洛拉尔, 以欧洲奢侈品牌的传统制造武器,最著名的可能是手枪上的标签价格,大多数人更容易将其与德国汽车联系起来,而不是与德国手枪联系起来, 但享誉世界的价格是世界武器史的主题,是建立在他们完整的个性基础上的, 
+		\nKorth的出发点与劳力士的出发点大致相同: 5000美元将为您提供欧洲卓越的一部分,这将是难忘的, Korth的武器是传奇\n
+		%c[ui_gray_2]武器附件: \n		
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无\n </text>
+	</string>
+
+	<string id="st_wpn_korth_custom">
+		<text>科思 6" 手枪 </text>
+	</string>
+	<string id="st_wpn_korth_custom_descr">
+		<text>Korth(科思)高端枪械制造商,总部位于德国黑森州洛拉尔, 以欧洲奢侈品牌的传统制造武器,最著名的可能是手枪上的标签价格,大多数人更容易将其与德国汽车联系起来,而不是与德国手枪联系起来, 但享誉世界的价格是世界武器史的主题,是建立在他们完整的个性基础上的, 
+		\nKorth的出发点与劳力士的出发点大致相同: 5000美元将为您提供欧洲卓越的一部分,这将是难忘的, Korth的武器是传奇\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装6英寸长的枪管.\n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: Docter Sight\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: BLACK BOX.45\n </text>
+	</string>
+
+	<string id="st_grenade_launcher">
+		<text>GP-25"小型火炮"枪挂式榴弹发射器</text>
+	</string>
+	<string id="st_grenade_launcher_descr">
+		<text>
+		\n由苏联制造的前装单发枪挂式榴弹发射器用以提高步兵小队的火力, 既可平射也可以曲射,能够摧毁射程内暴露的单个或群体目标或隐藏在障碍物后,掩体后,散兵坑内或小山丘背面的目标, 
+		\n发射筒为钢制,筒外有连接座,连接座上部有一个凹槽和一个固定卡扣,凹槽与枪管,刺刀,和通条配合,因此不需要任何改变和适配就可以加装在各种武器上, 安装时套在枪管上,把固定卡扣往里面压紧就可以使用,装卸时不需要专用工具\n \n
+		%c[d_purple] • %c[ui_gray_2] 初速:  %c[ui_gray_1]约76米每秒\n
+		%c[d_purple] • %c[ui_gray_2] 有效射程:  %c[ui_gray_1]约300米\n
+		%c[d_purple] • %c[ui_gray_2] 装填速度:  %c[ui_gray_1]缓慢\n
+		%c[d_purple] • %c[ui_gray_2] 可用弹药:  %c[ui_gray_1]VOG-25 40毫米榴弹</text>
+	</string>
+	
+	<string id="st_grenade_launcher_m203">
+		<text>M203下挂榴弹发射器</text>
+	</string>
+	<string id="st_grenade_launcher_m203_descr">
+		<text>
+		\n在越南战争期间为提升单兵作战火力而研发,在投入越南战场后M203迅速在战场上发挥了作用, 随后M203陆续推出了许多改型,在发射器长度及快速拆装能力上有所不同,同时也推出了非附件版的独立发射器, 
+		\n此M203枪挂榴弹发射器经过改进长度减少了三英寸,可以通过皮卡汀尼导轨固定在武器上以达到快速装卸的目的, 因为这种模块化设计,该榴弹发射器在世界上广受欢迎,而且可与目前的大多数步枪适配\n \n
+		%c[d_purple] • %c[ui_gray_2] 初速:  %c[ui_gray_1]约76米每秒\n
+		%c[d_purple] • %c[ui_gray_2] 有效射程:  %c[ui_gray_1]约300米\n
+		%c[d_purple] • %c[ui_gray_2] 装填速度:  %c[ui_gray_1]缓慢\n
+		%c[d_purple] • %c[ui_gray_2] 可用弹药:  %c[ui_gray_1]40x46榴弹</text>
+	</string>
+
+	<string id="st_wpn_howa20">
+		<text>丰和20式 突击步枪 </text>
+	</string>
+	<string id="st_wpn_howa20_descr">
+		<text>该突击步枪于2020年5月正式向公众亮相, 此武器旨在取代已经服役约30年的89式突击步枪,它是自卫队刚装备的新型武器, 和上一代一样这把枪是由日本丰和工业株式会社研制,使用5.56毫米弹药, 
+		\n2014年应日本自卫队的要求丰和工业开始研制替代89式的新型突击步枪, 新型20式在外观和结构上是许多现代步枪统计数据的平均值,例如HK433或CZ BREN II,而且它显然没有任何武器的家族特征, 
+		\n然而这并没有错,因为军队对武器所要求的不是设计的独创性,而是可靠性,低价和符合客户要求, 这种突击步枪如何流传到异常区以及有多少把仍然是一个谜,UNISG和生态学家阵营的环境科学考察有可能是这种武器出现在异常区的一个原因\n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 安装: March shorty 瞄准镜和AN/PEQ-15A DBAL-A2激光设备\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: KAC QDSS NT-4 5.56х45\n </text>
+	</string>
+
+	<string id="st_wpn_ar15_freedom">
+		<text>AR-15"赫拉"</text>
+	</string>
+	<string id="st_wpn_ar15_freedom_descr">
+		<text>AR15是一种高度现代化的步枪,通常由自由军的老手使用, 安装在武器上的战术套件可以让你在任何距离的射击中感到自信,但同时由于在战术套件中使用非常昂贵的部件,武器的价格也很高\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 所有皮卡汀尼式瞄准镜, 低轮廓基座反射式瞄准镜除外(Trijicon RMR,Leupold deltappoint PRO,Aimpoint T1(低轮廓基座),Docter Sight,1P76 Rakurs(皮卡汀尼))\n
+		%c[d_purple] • %c[ui_gray_2] 安装升级: B, E, 迈耶斯MAWL-C1战术绿色激光指示器和Here Arms前握（有助于后坐控制）与枪托\n
+		%c[d_purple] • %c[ui_gray_2] 消声器: Surefire SOCOM556-MONSTER\n </text>
+	</string>
+	
+</string_table>

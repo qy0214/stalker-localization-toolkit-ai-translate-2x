@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_device_glowstick">
+		<text>綠色螢光棒</text>
+	</string>
+	<string id="st_device_glowstick_descr">
+		<text>通過引起化學反應來產生光源, 化學光源被潛行者廣泛用作各種緊急情況下和其他無法獲得其他照明源的情況下的自主光源\n\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]  範圍: •••\n
+		%c[d_cyan] • %c[ui_gray_2] 亮度: •••\n
+		%c[d_cyan] • %c[ui_gray_2] 持續時間: ~40 分鐘\n
+		</text>
+	</string>
+	<string id="st_device_glowstick_red">
+		<text>紅色螢光棒</text>
+	</string>
+	<string id="st_device_glowstick_red_descr">
+		<text>通過引起化學反應來產生光源, 化學光源被潛行者廣泛用作各種緊急情況下和其他無法獲得其他照明源的情況下的自主光源\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 範圍: •••••\n
+		%c[d_cyan] • %c[ui_gray_2] 亮度: ••\n
+		%c[d_cyan] • %c[ui_gray_2] 持續時間: ~60 分鐘\n
+		</text>
+	</string>
+	<string id="st_device_glowstick_orange">
+		<text>橙色螢光棒</text>
+	</string>
+	<string id="st_device_glowstick_orange_descr">
+		<text>通過引起化學反應來產生光源, 化學光源被潛行者廣泛用作各種緊急情況下和其他無法獲得其他照明源的情況下的自主光源\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 範圍: ••\n
+		%c[d_cyan] • %c[ui_gray_2] 亮度: ••\n
+		%c[d_cyan] • %c[ui_gray_2] 持續時間: ~40 分鐘\n
+		</text>
+	</string>
+	<string id="st_device_glowstick_blue">
+		<text>青色螢光棒</text>
+	</string>
+	<string id="st_device_glowstick_blue_descr">
+		<text>通過引起化學反應來產生光源, 化學光源被潛行者廣泛用作各種緊急情況下和其他無法獲得其他照明源的情況下的自主光源\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 範圍: •\n
+		%c[d_cyan] • %c[ui_gray_2] 亮度: •••••\n
+		%c[d_cyan] • %c[ui_gray_2] 持續時間: ~30 分鐘\n
+		</text>
+	</string>
+	<string id="ui_mcm_menu_glowsticks">
+		<text>螢光棒系統</text>
+	</string>
+	<string id="ui_mcm_glowsticks_enable_bs_mm_flicker">
+		<text>在焦腦器和神蹟裝置附近燈光閃爍</text>
+	</string>
+	<string id="ui_mcm_glowsticks_enable_bs_mm_flicker_desc">
+		<text>正因為燈和手電筒會在焦腦器和神蹟裝置附近閃爍, 所以螢光棒才有攜帶和使用的理由</text>
+	</string>
+	<string id="ui_mcm_glowsticks_throw_force">
+        <text>螢光棒投擲距離</text>
+    </string>
+	<string id="ui_mcm_glowsticks_stash_chance">
+        <text>藏物點出現螢光棒概率</text>
+    </string>
+	<string id="ui_mcm_glowsticks_stash_chance_desc">
+        <text>有機會在藏匿處找到螢光棒</text>
+    </string>
+	<string id="ui_mcm_glowsticks_loot_chance">
+        <text>屍體中出現概率</text>
+    </string>
+	<string id="ui_mcm_glowsticks_loot_chance_desc">
+        <text>有機會在屍體上發現螢光棒</text>
+    </string>
+	<string id="ui_mcm_glowsticks_throw_key">
+        <text>投擲螢光棒按鍵</text>
+    </string>
+    <string id="ui_mcm_glowsticks_throw_key_desc">
+        <text>長按鍵位以投擲螢光棒</text>
+    </string>
+</string_table>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Artefacts Containers (LLMC)
+-->
+<string_table>
+	<string id="st_af_itcher_lead_box_name">
+		<text>裝著恒溫體的鉛盒</text>
+	</string>  
+	<string id="st_af_itcher_lead_box_descr">
+		<text>
+		產生於火系異常點,由兩層組成.表面是堅硬,緻密的巖石,佈滿裂痕.內部柔軟的黃色發光核心由未知有機物組成.神器不是很活躍,沒有明顯的屬性.但它可以消耗多餘的熱量並保持恒溫.
+		\n不過不建議在佩戴此神器時進入化學或酸性異常點,因為它會加重酸和毒素對使用者血液的不利影響.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_pin_lead_box_name">
+		<text>裝著針石的鉛盒</text>
+	</string>  
+	<string id="st_af_pin_lead_box_descr">
+		<text>
+		在常期高溫的火系異常點中產生的小神器.外觀像是維管植物的器官.進一步的研究表明,有機組織大都在內部融合.
+		\n針石沒什麼有用的屬性.但會降低使用者的體表溫度,還可以降低附近物品的溫度.
+		\n它能提供一點點靈能抗性,它可以在靈體波的影響下產生"共振".但不建議在佩戴此神器時進入化學或酸性異常點,因為它會加重酸和毒素對使用者血液的不利影響.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>  
+	<string id="st_af_cristall_lead_box_name">
+		<text>裝著恒溫石的鉛盒</text>
+	</string>
+	<string id="st_af_cristall_lead_box_descr">
+		<text>
+		這種神器產生于超高熱異常點.可以消耗多餘的熱量並保持恒溫.
+		\n可以保護使用者免受電流的傷害.但是也會降低人體對物理傷害的抗性.因此人們不得不好好考慮如何利用它.
+		\n特異區外的珠寶商對恒溫石神器有很高的需求,因為其內部核心沒有多少輻射,只有那1cm厚的表層帶輻射.並且經過拋光和精製后非常的美麗.
+		\n但是強烈建議在把它送進民間市場前好好考慮一下,雖然神器的輻射不高但長時間接觸還是會嚴重影響人的健康.外部的高密度層很堅硬,也比較重.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_fireball_lead_box_name">
+		<text>裝著輝耀晶的鉛盒</text>
+	</string>
+	<string id="st_af_fireball_lead_box_descr">
+		<text>
+		它在燃燒異常點中產生,是一種紅色的球形晶體神器.
+		\n輝耀晶的屬性很獨特,無論周圍環境如何,它總是能保持為75華氏度/ 24攝氏度的恒定溫度.還可以吸收附近的熱量,能在使用者周圍構成一個保護罩,防止燒傷.
+		\n負面影響是會增加電導率,所以佩戴輝耀晶觸電時將會受到更大的傷害,尤其是在能量風暴期間或者靠近電系異常點時.輝耀晶的密度很高,因此比較重.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_blood_lead_box_name">
+		<text>裝著凝血體的鉛盒</text>
+	</string>
+	<string id="st_af_blood_lead_box_descr">
+		<text>
+		壓縮的動植物屍骨,呈微紅色.可通過吸收化學毒物降低使用者血液中的毒素含量,中和掉部分毒素.凝血體很常見而且性價比很低,會使化學燒傷造成的傷口化膿.在高溫下還會著火. 
+		\n另一正面作用是能加速止血,如果戴在身體上可以加快傷口凝血.但是不建議你老是帶著它,因為血凝塊對人體也是有害的.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_mincer_meat_lead_box_name">
+		<text>裝著肉石的鉛盒</text>
+	</string>
+	<string id="st_af_mincer_meat_lead_box_descr">
+		<text>
+		這種神器柔軟多孔,有著面板般的質地,據說可以像海綿一樣壓縮,作用也和海綿類似,但只有在一定的外界條件下才能啟用它的作用.
+		\n第一,我們說到過它像海綿一樣,我們知道海綿可以吸收水分,而它可以吸收毒素.
+		\n第二,這種神器也會積聚靈能場,這就影響到了使用者的精神.
+		\n第三,肉石像是我們的面板一樣,它也會導電.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_bracelet_lead_box_name">
+		<text>裝著環石的鉛盒</text>
+	</string>  
+	<string id="st_af_bracelet_lead_box_descr">
+		<text>
+		環石是由一種暴露于高輻射和化學異常點下的苔蘚類植物形成的,這說明它是有機物.
+		\n可以逐漸將PH酸堿度提高到水的水平（7）,從而可以提供針對大多數酸性物質的保護.
+		\n還可以降低某些靈能異常點或者靈能生物造成的影響.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>  
+	<string id="st_af_baloon_lead_box_name">
+		<text>裝著氣化晶的鉛盒</text>
+	</string>
+	<string id="st_af_baloon_lead_box_descr">
+		<text>
+		這種由多種空心有機物形成的化合物會散發出一種氣體,能中和體內的化學或有毒顆粒而不會對其造成傷害. 因此提供了很大程度的毒性和化學保護.
+		\n無論周圍環境如何,它都可以保持恒溫.這使它可以吸收周圍的熱量,並在使用者周圍形成一個保護罩,以防燒傷. 
+		\n但是它還具有許多負面特性.例如它極大的降低了靈能抗性.可不能輕視這個缺點：一些潛行者說帶著氣化晶時靈能場的影響非常大,頭疼的像要裂開一樣,然後他們就不得不尖叫著逃離靈能場區. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_electra_sparkler_lead_box_name">
+		<text>裝著蛛絲體的鉛盒</text>
+	</string>
+	<string id="st_af_electra_sparkler_lead_box_descr">
+		<text>
+		該神器像是半透明蜘蛛網.性質也和蜘蛛網一樣,它粘的就像膠水.
+		\n它通常產生於電系異常點,並且似乎吸收了電系異常點的一些特性：它能夠充當電阻以保護使用者免受電的傷害.
+		\n應該注意的是,這種神器會增加酸的腐蝕性,從而導致裝備的加速老化,並且酸性物質能夠對使用者造成更大的傷害.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_sponge_lead_box_name">
+		<text>裝著多孔石的鉛盒</text>
+	</string>  
+	<string id="st_af_sponge_lead_box_descr">
+		<text>
+		多孔石一直是生態學家之間爭論的焦點.一些人認為這種神器是一種生物,而另一些人則認為它是一種更先進的生命形式,並且具有自我意識.
+		\n儘管圍繞它有各種理論,但所有人都有一個共識：它會動.多孔石有時會試圖"抓住"它接觸的物體.將其放入容器中很難,因為它會試著逃脫.
+		\n這種神器可以作為強大的電阻器,可以抵抗致命的點選.另一方面,當它暴露在明火中時會自燃.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_ring_lead_box_name">
+		<text>裝著環的鉛盒</text>
+	</string>  
+	<string id="st_af_ring_lead_box_descr">
+		<text>
+		一種非常小的電系神器.難以發現.因由兩個環組成而得名.
+		如果把環轉起來,它將永不停止地旋轉,這違反了熱力學第一定律.生態學家認為,這種神器可能繼承了漩渦異常點的特性.
+		\n外環具有高導電性.它可以吸收外部匯入的電流,然後在內環中消耗掉.至於內環是如何消耗電力的目前尚不清楚.
+		\n另一方面,雙環石是易燃的.長時間佩戴還會增加它的可燃性,在高溫下就會自燃.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_electra_flash_lead_box_name">
+		<text>裝著電光晶的鉛盒</text>
+	</string>
+	<string id="st_af_electra_flash_lead_box_descr">
+		<text>
+		這種神器看起來很像月光石,類似於等離子球或等離子燈.
+		\n衆所周知,電光晶以作為強電阻,可以為使用者抵抗住致命的電流.
+		\n也有些人認為戴上它時可以略微增加對靈能場的抵抗力.
+		\n然而,它也會影響傷口癒合,因此建議謹慎使用,尤其是受傷或出血時.這種神器非常輕,非常便攜.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_cristall_flower_lead_box_name">
+		<text>裝著地衣體的鉛盒</text>
+	</string>
+	<string id="st_af_cristall_flower_lead_box_descr">
+		<text>
+		這種神器就像融化的芝士,中間點綴著藍寶石般的晶體.只有黃色的外殼會散發輻射,通過仔細加工后,可以提取出用於地衣體內部的無輻射藍色晶體,可以用作珠寶或者工業原料.如果經過適當的清潔和拋光,晶體還會更加漂亮,這些晶體和這顆神器一樣堅硬和耐用.完美的品質和外觀使地衣體成為世界各地珠寶商的搶手貨. 
+		\n不過地衣體的用途可不止這些.有科學證據表明,內部的晶體能讓人免受靈能場的影響,而外殼則能略微地增強人體對毒素的抵抗力.
+		\n然而它會使附近的物體升溫,在極端情況下還會燒起來.因此我們可以得出肯定的結論:它能吸收熱量,並能把熱量傳遞給其他物體.
+		\n由於密度很大,地衣體的重量已經超過了正常神器的標準,因此它是特異區最重的神器之一.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_lobster_eyes_lead_box_name">
+		<text>裝著蝦眼石的鉛盒</text>
+	</string>  
+	<string id="st_af_lobster_eyes_lead_box_descr">
+		<text>
+		顧名思義,這種神器的形狀就像兩個融合在一起的雞蛋.外層很厚,密度也很大,這可能就是它顏色很深的原因.
+		\n這種神器比它的近親-地衣體,提供了更多的靈能防護.它在靈能影響下會產生小幅共振以吸收靈體能量.
+		\n另一個優點是能夠消耗多餘熱量,無論何時都能保持低溫.
+		\n由於外層密度很大,蝦眼石相當重.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_electra_moonlight_lead_box_name">
+		<text>裝著月光石的鉛盒</text>
+	</string>
+	<string id="st_af_electra_moonlight_lead_box_descr">
+		<text>
+		這種獨特的電系神器能在靈能影響下產生共振.潛行者如今會對月光石進行一些調整,使其能與靈體能量產生抵消共振,從而大大減輕了靈能影響.當暴露在強電流下時這個美麗的球形神器還能通過降低電導率來增加使用者的抗電能力.
+		\n需要注意的是,當月光石暴露在明火中時會著火. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_black_spray_lead_box_name">
+		<text>裝著藍墨晶的鉛盒</text>
+	</string>  
+	<string id="st_af_black_spray_lead_box_descr">
+		<text>
+		作為一種少見的神器,人們對它的屬性和來源知之甚少. 
+		\n藍墨晶與其他類藍寶石神器的形狀相似.但與針石的類似屬性表明它是由暴露在靈能場下的維管植物形成的.
+		\n另一個獨特的特性是射入藍墨晶的光線速度會減慢.這種神秘屬性也適用於靈體波,所以藍墨晶可以抵抗大範圍內的靈能場影響.
+		\n但是這是有代價的.當暴露在有毒環境中時它將變得極其危險,因為它會增強毒素的影響.因此在探索有毒區域時建議將它裝進包里.
+		\n藍墨晶散發著美麗的藍色光環,因此受到全世界珠寶商的追捧.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>  
+	<string id="st_af_medusa_lead_box_name">
+		<text>裝著刺胞體的鉛盒</text>
+	</string>
+	<string id="st_af_medusa_lead_box_descr">
+		<text>
+		在特異區中很常見,可以略微增強人體對衝擊的抵抗力.
+		\n還可以保護使用者免受燃燒異常點的傷害,但效果很有限.
+		\n重力系異常點似乎影響到了刺胞體的性質,因此它非常重.它還會增加靈能場和電的影響.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_vyvert_lead_box_name">
+		<text>裝著珊瑚石的鉛盒</text>
+	</string>
+	<string id="st_af_vyvert_lead_box_descr">
+		<text>
+		這種奇形怪狀的神器出現在重力系異常點附近.
+		\n儘管它看起來像是有機物,但實際上它更類似於珊瑚.由於其引力特性,它可以抵抗衝擊的影響,因為它大大減少了物體間的摩擦.
+		\n它還可以充當過濾器,吸收周圍的有毒物質,可以減輕進入人體的化學顆粒造成的損害.
+		\n珊瑚石會產生定向引力場,因此它很重.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_empty_lead_box_name">
+		<text>裝著虛空石的鉛盒</text>
+	</string>  
+	<string id="st_af_empty_lead_box_descr">
+		<text>
+		由兩塊盤形有機物（通常是脂質,纖維素和木質素）構成,中間沒有東西.因為在中心形成的獨特引力場使得上下兩盤的距離得以穩定.
+		\n由於它的引力場非常穩定,所以無法擠壓或拉開上下兩盤.它彷彿會對外界的影響力作出反應.
+		\n由於這種性質,移動虛空石很難.因為引力場增加了周圍空氣的密度,使得它難以被移動.
+		\n它的引力場可以抵抗住較強的衝擊.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_full_empty_lead_box_name">
+		<text>裝著混沌晶的鉛盒</text>
+	</string>  
+	<string id="st_af_full_empty_lead_box_descr">
+		<text>
+		與"虛空石"神器類似,這種神器由兩塊被引力場隔開的盤形有機物構成.然而它們的區別很大:所有進入混沌晶內部的原子,不管它們的性質如何,都在場的未知效應下相互作用.從而釋放光子(發光).
+		\n生態學家通常將其稱為"銀河效應",它使神器具有異常的光軌道.
+		\n它能使周圍空氣的密度變得很大.因此它會極大地影響使用者的移動速度.
+		\n由於它是虛空石的高級版,因此對衝擊的防護效果是顯著的.一些人聲稱它能夠抵抗住近距離來襲的9mm子彈.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_night_star_lead_box_name">
+		<text>裝著隕星體的鉛盒</text>
+	</string>
+	<string id="st_af_night_star_lead_box_descr">
+		<text>
+		這種發光的神器可以產生定向低重力場.用途和浮空石差不多,潛行者們用它來增加負重.
+		\n它的內部核心非常漂亮,各地珠寶商對它有一定的需求量,但最好小心行事,因為錯誤的處理方式會導致神器爆炸,那足以炸平一個小建築.因此建議使用專業的機器來進行拋光,這樣可以將爆炸的可能性降到最低.此外隕星體只有外部會發出輻射.
+		\n隕星體還會吸收周圍的有毒和化學物質,這一點很有價值,不過對於神器獵人來說它吸收的毒素是微不足道的.但它相對便宜,一些窮潛行者也買得起. 
+		\n據說隕星體受熱時會發出烤肉味.長時間受熱可能會導致著火.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_gravi_lead_box_name">
+		<text>裝著浮空石的鉛盒</text>
+	</string>
+	<string id="st_af_gravi_lead_box_descr">
+		<text>
+		浮空石是由長期受到引力作用的金屬物質形成的.它具有一個強大的引力場,因此它可以使周圍的物品變輕.在很長一段時間裡它一直是個謎,揚塔的薩哈洛夫教授首先發現了浮空石能創造一個反引力小奇點場,這種現象每隔30分鐘就會出現一次.
+		\n它的危險之處在於會增加導電性,所以戴著這種神器時電的傷害會很大,尤其是在電系異常點附近.
+		\n另一個缺點是它會增加靈能場的負面影響.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_gold_fish_lead_box_name">
+		<text>裝著浮游晶的鉛盒</text>
+	</string>
+	<string id="st_af_gold_fish_lead_box_descr">
+		<text>
+		重力神器的高級版.就像重力一樣,揚塔的薩哈洛夫教授在一次大規模能量風暴后發現了它的獨特性質.
+		\n通過進一步的細緻研究,可以確定當三個重力神器相互作用並被彼此的引力場吸引時,便產生了這種新的神器. 這種現象極為少見,因此它受到高度重視.
+		\n烏克蘭特種部隊之間有一個傳言,在特異區中有俄羅斯聯邦的特工,其目的就是蒐集浮游晶並送到特異區外的專業實驗室去.
+		\n該神器會產生一個恒定的反重力場,但僅影響其附近的一小片區域.神秘的是,一些潛行者無故消失後只留下一個浮游晶神器.
+		\n但是強大的反重力場也帶來了很大的不利影響：影響範圍內的移動物體的速度將大大增加,會造成更強大的衝擊.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_dummy_glassbeads_lead_box_name">
+		<text>裝著雙鏈體的鉛盒</text>
+	</string>
+	<string id="st_af_dummy_glassbeads_lead_box_descr">
+		<text>
+		這種形狀像DNA片段的神器是在燃燒異常點中產生的. 它們最獨特的地方在於會不斷跳動,產生有益於人體的排放物. 這些排放物會加快生物的新陳代謝,加速凝血和傷口癒合.至於原理目前仍然未知.
+		\n雙鏈體還具有強大的保護作用：能夠保護人體免受高熱傷害.
+		\n另一方面應注意的是,它會增加電導率,因此戴著它時更容易受到電的傷害,尤其是在暴風雨期間或者電系異常點附近.
+		\n這件小神器很重,所以它的密度一定很大.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_eye_lead_box_name">
+		<text>裝著天目石的鉛盒</text>
+	</string>
+	<string id="st_af_eye_lead_box_descr">
+		<text>
+		這種類似於人眼的神器可大大增加人體的新陳代謝,幫助傷口更快地癒合.經驗豐富的潛行者說天目石也能帶來好運氣.不管這個說法是不是真的,天目石的好處一定是真的. 
+		\n這種神器可以緩解疼痛,在治療傷口時非常有用.
+		\n佩戴時還可以稍微抵消某些靈能場的影響.
+		\n然而這些有好處是有代價的. 當暴露于化學異常點中時,它將極為危險,因為它會增強毒素的影響效果. 因此強烈建議在探索有毒區域時將它放在揹包中,切勿佩戴,除非你想死.
+		\n也有人把它叫做銅眼,因為它的導電性和銅一樣. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_fire_lead_box_name">
+		<text>裝著天火晶的鉛盒</text>
+	</string>
+	<string id="st_af_fire_lead_box_descr">
+		<text>
+		該神器在高熱異常點中產生.會產生強大的紅外輻射,從而加快新陳代謝過程,更快地治癒傷口.
+		\n它的治癒能力甚至比天目石還要強,據說甚至有戴著天火晶的潛行者在奇美拉的利爪下倖免於難.因此人人都想得到它.
+		\n許多潛行者都欠它一條命,大多數老手怪物獵人也會佩戴它,以防萬一.但是它不僅具有同類神器的優點,也具有同樣的缺點：戴著它進入靈能場區域無異於自殺.它會吸收靈體能量並迅速排放.
+		\n另外建議在把它送進外界的民間市場前好好考慮一下,因為長時間接觸天火晶的輻射會讓人完蛋.
+		\n它也可以用來代替醫療包,因為它可以非常快地治癒傷口.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_dummy_battery_lead_box_name">
+		<text>裝著熱電體的鉛盒</text>
+	</string>
+	<string id="st_af_dummy_battery_lead_box_descr">
+		<text>
+		\n儘管長時間佩戴會對人體產生不良影響,但該神器在特異區中很受歡迎,潛行者們很重視它.
+		\n但是應該注意的是,這種神器會影響血液凝結和傷口癒合.另一方面它可以作為強電阻,能夠保護使用者免受致命的電擊.
+		\n作為電系神器,它具有保護使用者免受致命電擊的能力.熱電體也會吸收熱量並將其傳遞給其他物體.
+		\n這種神器很輕,方便攜帶. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_dummy_dummy_lead_box_name">
+		<text>裝著鈣藻石的鉛盒</text>
+	</string>
+	<string id="st_af_dummy_dummy_lead_box_descr">
+		<text>
+		外層由兩個藍色的圓盤組成,中間由性質未知的半透明物體連線.
+		\n長期以來許多生態學家一直認為這種奇怪的神器沒什麼用.直到最近才發現它的優點很多.
+		\n當它與身體接觸時,會使人感到活力煥發,從而增加耐力恢復.當潛行者進行高強度運動時這種作用尤其明顯.缺點是它會減少血液中的血小板含量,使血液難以凝固.
+		\n它提供了一定的靈能場保護,可以吸收靈體能量.
+		\n暴露于明火時會燃燒.帶著鈣藻石接近熱源時必須小心.
+		\n鈣藻石非常輕巧便攜.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_ice_lead_box_name">
+		<text>裝著超導晶的鉛盒</text>
+	</string>
+	<string id="st_af_ice_lead_box_descr">
+		<text>
+		也被叫做輻射雪花,看起來像是白色的海膽石.
+		\n該神器具有增強使用者肌肉的獨特能力,可以大大提高耐力恢復能力.由於它帶有重度輻射,潛行者們把它戲稱為輻射雪花.
+		\n在決定是否要佩戴超導晶前,你最好仔細考慮：它的耐力和抗電能力在高輻射面前值嗎？ 就算你決定要戴,你也應該想想自己能不能承受住輻射.
+		\n超導晶還有以下缺點：它通過吸收並放大周圍的能量. 因此在裝備它時接近高熱異常點,化學異常點,靈能場區無異於自殺.
+		\n超導晶很輕,方便攜帶.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_soul_lead_box_name">
+		<text>裝著靈質體的鉛盒</text>
+	</string>
+	<string id="st_af_soul_lead_box_descr">
+		<text>
+		靈質體是一種獨特的有機神器,具有與衆不同的特性：它會分泌粘液,可加快傷口癒合.靈質體的外觀就像它的價格一樣高貴,它是珍貴的收藏品.
+		\n將其粘液塗在傷口上可以緩解疼痛並加快癒合過程. 
+		\n它還減少了靈能場對人體的影響,不過也會降低人的耐力.靈質體密度不高,不是很重.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_fuzz_kolobok_lead_box_name">
+		<text>裝著海膽石的鉛盒</text>
+	</string>
+	<string id="st_af_fuzz_kolobok_lead_box_descr">
+		<text>
+		海膽石是比較罕見的化學系神器,因其能夠在幾分鐘內治癒傷口並止血的獨特能力而受到高度好評.
+		\n出於未知原因,生態學家們在潛行者中散佈謠言稱神器會改變使用者的遺傳基因,這一說法未經證實,可能是生態學家們想把神器都獨佔下來用作科學研究.但是這並不意味著神器完全無害.
+		\n這種神器的缺點之一是會與放射粒子作用,因此在佩戴它時時最好避免接觸輻射.帶刺的它還會減少使用者的耐力.刺會不斷刺傷使用者但海膽石又會將傷口快速癒合,所以會帶來持續的疼痛和癢感,影響到使用者的耐力.
+		\n由於其高度易燃所以削弱了對熱和酸的防護. 
+		\n很輕,不影響攜帶.
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_glass_lead_box_name">
+		<text>裝著螢光晶的鉛盒</text>
+	</string>
+	<string id="st_af_glass_lead_box_descr">
+		<text>
+		螢光晶有一種目前科學還無法解釋的能力,能大大加快生物組織和器官的再生並穩定代謝.
+		\n這種神器可以在幾分鐘之內使一個受了重傷的潛行者重新恢復健康.此外螢光晶如果暴露於強輻射下會自燃.
+		\n這種神器有一個很大的缺點,它會在癒合過程減少血液中血小板的含量,從而增加出血率.
+		\n它似乎會極大地降低耐力恢復 一些被螢光晶治癒的人說,傷好后數小時內他們無法走路.
+		\n不幸的是,螢光晶非常少見.
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_compass_lead_box_name">
+		<text>裝著磁石晶的鉛盒</text>
+	</string>
+	<string id="st_af_compass_lead_box_descr">
+		<text>
+		很少見的神器,自第一個磁石晶被發現后已有好幾年沒出現新的了.
+		\n它可以顯示出異常點間的安全通道.據說它可以幫助人們穿越最危險的異常點集群而不受傷.但是很少有人知道如何正確使用它.
+		\n在最近的實驗中,磁石晶沒展現出它的獨特能力.它可以與移動的物體相互作用並使它們消失,也許是傳送走了?
+		\n它還會消耗耐力並增加出血率. 但是最大的缺點是會產生超強的輻射.
+		\n將神器放在身體上可能會在幾分鐘內殺死你.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_oasis_heart_lead_box_name">
+		<text>裝著綠洲之心的鉛盒</text>
+	</string>
+	<string id="st_af_oasis_heart_lead_box_descr">
+		<text>
+		這個神器位於傳說中的綠洲的中心地帶.核心似乎是晶化植物,目前對綠洲的已知之處是它可以治療生物.
+		\n它不僅大大加快了傷口的恢復速度和癒合過程,還為人體提供了強大的能量源.它是一個真正的奇蹟.
+		\n話雖如此,綠洲對周圍環境非常敏感. 因此綠洲與異常點作用時可能會殺死使用者.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_death_lamp_lead_box_name">
+		<text>裝著死亡之燈的鉛盒</text>
+	</string>  
+	<string id="st_af_death_lamp_lead_box_descr">
+		<text>
+		碩大,鮮紅,充滿詛咒.
+		\n這就是當地人形容死亡之燈的方式,有人將其稱為"撒旦種子".許多商人相信有關它的謠言,因此拒絕購買死亡之燈.
+		對其來源知之甚少,到目前為止,尚未發現任何有價值的東西.
+		\n死亡之燈是幾年前被三位經驗豐富的潛行者首次發現的.在將神器賣給揚塔生態學家后不久,他們中的兩個人就死掉了,屍體的表情扭曲.關於第三個潛行者的命運我們一無所知.
+		\n在此之後,研究它的生態學家聲稱隨後的幾天內一直在做噩夢.
+		\n除了未知的神秘的效果外,死亡之燈會消耗使用者的活力和意志力,還會引起頭暈,在極端情況下會讓使用者暈倒. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string> 
+	<string id="st_af_misery_bread_lead_box_name">
+		<text>裝著變異麵包的鉛盒</text>
+	</string>
+	<string id="st_af_misery_bread_lead_box_descr">
+		<text>
+		一塊麵包, 其散發的黑暗氣息猶如它前任主人的靈魂一樣恐怖.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+	</string>
+	<string id="st_af_quest_b14_twisted_lead_box_name">
+			<text>裝著扭曲轉輪的鉛盒</text>
+	</string>
+	<string id="st_af_quest_b14_twisted_lead_box_descr">
+		<text>
+		這曾經是一個疏浚站的轉輪. 它現在具有放射性,一半轉化為奇異的神器. 沒有值得注意的屬性.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 神器儲存裝置\n
+		%c[d_cyan] • %c[ui_gray_2] 最大容量:%c[ui_gray_2] 1\n
+		%c[d_green] • %c[ui_gray_2] 無放射性衰變\n
+		</text>
+    </string>
+</string_table>

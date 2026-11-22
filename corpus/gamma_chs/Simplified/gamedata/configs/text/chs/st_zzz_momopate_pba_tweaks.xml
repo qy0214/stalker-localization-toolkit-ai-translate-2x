@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<string_table>
+
+	<!--
+	<string id="st_af_sandstone_descr">
+		<text>An artefact found in extreme temperature anomalies. It seems to have sentience due to being observed as seemingly knowing when its owner takes the life of another living being, instating a hormonal rush in the owner that pushes them into a combat frenzy. These effects may include superhuman stamina, reflexes and even regenerative capabilities. Scientists can't explain this artefact's weird connection with its user and the Noosphere at the same time. \n</text>
+	</string>
+	!-->
+	
+	<string id="st_af_sandstone_descr">
+		<text>
+			有时会在高温异常点形成的一种神器, 有着能将异常点的能量与周围生物进行调谐的特性, 当附近生物死亡时, 似乎能感到这个神器内部的振动频率会暂时加快... \n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 直接佩戴
+		</text>
+	</string>
+	
+	<string id="st_pba_af_sandstone_perk">
+		<text>
+			%c[0,209,172,56]异能: %c[d_orange]死亡律动\n
+			%c[0,81,63,22] • %c[0,209,172,56]杀死任何生命都会获得增幅效果\n
+			%c[0,81,63,22] • %c[0,209,172,56]增幅效果可叠加最多5层, 持续5秒 \n
+			%c[0,81,63,22] • %c[ui_red]佩戴者受到的伤害增加25%\n
+			%c[0,81,63,22] • %c[0,209,172,56]1 层: 大幅增加移动速度\n
+			%c[0,81,63,22] • %c[0,209,172,56]2 层: 小幅增加生命回复\n
+			%c[0,81,63,22] • %c[0,209,172,56]3 层: 缓慢恢复某个随机肢体的健康值\n
+			%c[0,81,63,22] • %c[0,209,172,56]4 层: 缓慢恢复另一个随机肢体的健康值\n
+			%c[0,81,63,22] • %c[0,209,172,56]5 层: 移除对自身25%增伤的负面效果\n
+			%c[0,81,63,22] • %c[0,209,172,56]多个神器的效果: %c[ui_green]可叠加\n
+			%c[0,81,63,22] • %c[0,209,172,56]叠加效果: %c[ui_red]递减
+		</text>
+	</string>
+
+	<string id="st_pba_af_elektron_perk">
+		<text>
+			%c[0,209,172,56]异能: %c[d_orange]电能冲刺\n
+			%c[0,81,63,22] • %c[0,209,172,56]走入电系异常点, 会为电池和设备充电\n
+			%c[0,81,63,22] • %c[0,209,172,56]触发效果后的一段时间内冲刺不消耗体力\n
+			%c[0,81,63,22] • %c[0,209,172,56]叠加5层效果可为外骨骼充能\n
+			%c[0,81,63,22] • %c[0,209,172,56]多个神器的效果: %c[ui_green]可叠加 %c[ui_red](但又不叠加)
+		</text>
+	</string>
+
+	<string id="st_pba_af_repei_perk">
+		<text>
+			%c[0,209,172,56]异能: %c[d_orange]裂伤\n
+			%c[0,81,63,22] • %c[0,209,172,56]将50%的武器伤害转化为%c[ui_red]流血%c[0,209,172,56]伤害\n
+			%c[0,81,63,22] • %c[0,209,172,56]受到冲击时有很小几率造成流血效果\n
+			%c[0,81,63,22] • %c[0,209,172,56]以武器基础伤害为基准按比例造成流血伤害\n
+			%c[0,81,63,22] • %c[0,209,172,56]多个神器的效果: %c[ui_green]可叠加\n
+			%c[0,81,63,22] • %c[0,209,172,56]叠加效果: %c[ui_green]递减
+		</text>
+	</string>
+
+</string_table>

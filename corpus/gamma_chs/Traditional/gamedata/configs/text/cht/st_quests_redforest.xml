@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+
+	<!-- Stribog (Sin Trader) Default Storyline Task -->
+
+	<string id="drx_sl_red_greh_trader_default_task_name">
+		<text>接下一個任務</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_default_task_text">
+		<text>去接受你的下個任務.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_default_task_about">
+		<text>你必須會見一個原罪的頭目. 現在去找他.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_default_task_finish">
+		<text>祝你好運.</text>
+	</string>
+	
+
+	<!-- Stribog (Sin Trader) Retrieve the Secrets of Lab X=16 Storyline Task -->
+
+	<string id="drx_sl_red_greh_trader_task_1_name">
+		<text>找回X-16實驗室的秘密</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_1_text">
+		<text>你應該把在X-16實驗室找到的秘密帶給"風神"斯特利伯格.外界決不能知道.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_1_about">
+		<text>作為特異區真正的守護者, 我們必須迅速行動,將它的秘密隱藏起來, 不讓這個罪惡的世界看到. 其中一個秘密可以在一個被稱作"X-16"的實驗室裡找到. 把它們帶給我, 兄弟. 我會保證它們的安全.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_1_finish">
+		<text>你做的很好.</text>
+	</string>
+	
+
+	<!-- Stribog (Sin Trader) Escort The Believer Storyline Task -->
+
+	<string id="drx_sl_red_greh_trader_task_2_name">
+		<text>護送信徒</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_2_text">
+		<text>有個人在尋求啟迪. 他想逃離他的小隊, 殺死小隊的別的成員, 並護送他見"風神"斯特利伯格. 那個人拿著一把SVD狙擊步槍.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_2_about">
+		<text>有個人相信我們的事業並聯繫了我們. 他希望從這個世界解脫出來, 但是他仍然害怕他自己的生活. 你必須讓他離開他的小隊. 你可以通過他隨身攜帶的SVD來認出他. 我必須先告訴你, 他還在猶豫, 所以估計他會被盯著的時候還擊. 不過很快, 他就會開悟的.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_2_finish">
+		<text>你的努力使我們更加強大. 幹得好!</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_2_msg_join">
+		<text>謝謝你, 兄弟. 我真的很感激... 帶路吧, 是時候離開這個舊世界了.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_2_msg_leave">
+		<text>我們到了. 我要去見見我的兄弟們. 再會.</text>
+	</string>
+	
+
+	<!-- Stribog (Sin Trader) Avange the Sinners Storyline Task -->
+
+	<string id="drx_sl_red_greh_trader_task_3_name">
+		<text>贖罪</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_3_text">
+		<text>你必須找到殺死原罪成員的異教徒, 並向他們報仇.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_3_about">
+		<text>我們有幾個勇敢的戰士被殺害了. 我們不能讓異教徒逃跑. 為我們的兄弟們報仇.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_3_finish">
+		<text>你為我們的事業作出了很大貢獻.</text>
+	</string>
+	
+
+	<!-- Stribog (Sin Trader) Limansk Purge Storyline Task -->
+
+	<string id="drx_sl_red_greh_trader_task_4_name">
+		<text>凈化利曼斯克</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_4_text">
+		<text>打敗利曼斯克里的敵人. 不留活口.</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_4_about">
+		<text>時間到了, 同胞. 黑石長老正在尋求我們的幫助, 需要凈化利曼斯克且清除潛伏在裡面的敵人. 去讓我們感到驕傲吧...</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_task_4_finish">
+		<text>你是個優秀的戰士.</text>
+	</string>
+	
+	<!-- Stribog (Sin Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_pri_red_greh_trader_stalker_cf_task_1_name">
+		<text>放棄財產加入原罪</text>
+	</string>
+	<string id="drx_sl_pri_red_greh_trader_stalker_cf_task_1_text">
+		<text>你想成為原罪的一員, 你就不再需要任何錢了. 給"風神"斯特利伯格1000盧布以讓你加入原罪的事業.</text>
+	</string>
+	<string id="drx_sl_pri_red_greh_trader_stalker_cf_task_1_about">
+		<text>孩子, 你的理智真的是太好了. 我們歡迎你加入特異區的秩序, 但是你必須先放棄你所有世俗的財產, 以付1000盧布的形式即可.</text>
+	</string>
+	<string id="drx_sl_pri_red_greh_trader_stalker_cf_task_1_finish">
+		<text>做得好. 現在起你將給這個不安的世界帶來光明.</text>
+	</string>
+	
+
+	<!-- Dazhbog (Sin Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_red_greh_tech_default_task_name">
+		<text>接下一個任務</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_default_task_text">
+		<text>去接受你的下個任務.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_default_task_about">
+		<text>我的孩子, 你很好的服務了原罪和黑石. 你要和其中一位長者交談, 問他你有什麼可以做的以幫助我們的偉大的事業.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_default_task_finish">
+		<text>祝你好運.</text>
+	</string>
+	
+	<!-- Dazhbog (Sin Mechanic) Retrieve the Secrets of Lab X=18 Storyline Task -->
+
+	<string id="drx_sl_red_greh_tech_task_1_name">
+		<text>找回X-18實驗室的秘密</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_1_text">
+		<text>你應該把在X-18實驗室找到的秘密帶給"太陽神"達日伯格. 外界決不能知道.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_1_about">
+		<text>作為特異區真正的守護者, 我們必須迅速行動, 將它的秘密隱藏起來, 不讓這個罪惡的世界看到. 其中一個秘密可以在一個被稱作"X-18"的實驗室裡找到. 把它們帶給我, 兄弟. 我會保證它們的安全.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_1_finish">
+		<text>幹的漂亮!</text>
+	</string>
+	
+
+	<!-- Dazhbog (Sin Mechanic) Hunt the Forest Beast Storyline Task -->
+
+	<string id="drx_sl_red_greh_tech_task_2_name">
+		<text>獵殺森林野獸</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_2_text">
+		<text>"太陽神"達日伯格需要你去追獵一頭在紅森林襲擊了他的手下的野獸.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_2_about">
+		<text>這片森林有時會變的很棘手, 甚至對於我們的兄弟來說亦是如此. 他們其中的一個被一頭危險的野獸襲擊了, 去找到並獵殺那隻野獸.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_2_finish">
+		<text>幹得好. 森林變的更安全了.</text>
+	</string>
+	
+
+	<!-- Dazhbog (Sin Mechanic) Slay the Enemy Informer Storyline Task -->
+
+	<string id="drx_sl_red_greh_tech_task_3_name">
+		<text>幹掉敵人的線人</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_3_text">
+		<text>有人看見一個異教徒在跟蹤我們. "太陽神"達日伯格讓你去幹掉他.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_3_about">
+		<text>有人看見一個異教徒在遠處跟蹤我們的兄弟.那個膽小鬼逃回了他的領袖那裡. 必須不惜一切代價幹掉他.</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_task_3_finish">
+		<text>幹得好.沒人再敢接近我們了.</text>
+	</string>
+
+
+	<!-- Dazhbog (Sin Mechanic) Find Toolkit Tasks -->
+
+	<string id="red_greh_tech_task_1_name">
+		<text>為"太陽神"達日伯格找到%s</text>
+	</string>
+	<string id="red_greh_tech_task_1_text">
+		<text>"太陽神"達日伯格需要%s來給裝備做一些基本的升級, 如果你發現工具的話應該帶給他.</text>
+	</string>
+	<string id="red_greh_tech_task_1_about">
+		<text>我需要你幫我做點事. 我需要特殊的工具來調整我們的武器.</text>
+	</string>
+	<string id="red_greh_tech_task_1_fetch_about">
+		<text>好的, 我需要一個%s. 現在出發.</text>
+	</string>
+	<string id="red_greh_tech_task_1_fetch_finish">
+		<text>你做的很好.</text>
+	</string>
+
+	<string id="red_greh_tech_task_2_name">
+		<text>為"太陽神"達日伯格找到%s</text>
+	</string>
+	<string id="red_greh_tech_task_2_text">
+		<text>"太陽神"達日伯格需要%s來給裝備做一些進階的升級, 如果你發現任何工具的話應該帶給他</text>
+	</string>
+	<string id="red_greh_tech_task_2_about">
+		<text>我需要更多的工具; 更好的那種. 你能再幫我找找么?</text>
+	</string>
+	<string id="red_greh_tech_task_2_fetch_about">
+		<text>我需要一套進階的工具. 它應該就包含了所有我需要的東西.你過你能給我帶過來, 我將不勝感激, 甚至可以給你打折.</text>
+	</string>
+	<string id="red_greh_tech_task_2_fetch_finish">
+		<text>很好, 你幫我找到了.</text>
+	</string>
+
+	<string id="red_greh_tech_task_3_name">
+		<text>為"太陽神"達日伯格找到%s</text>
+	</string>
+	<string id="red_greh_tech_task_3_text">
+		<text>"太陽神"達日伯格需要%s來給裝備做一些專家級的升級, 如果你發現任何工具的話應該帶給他</text>
+	</string>
+	<string id="red_greh_tech_task_3_about">
+		<text>我需要更多的工具; 更好的那種. 你能再幫我找找么?</text>
+	</string>
+	<string id="red_greh_tech_task_3_fetch_about">
+		<text>我需要一套專家的工具. 它應該就包含了所有我需要的東西. 你過你能給我帶過來, 我將不勝感激, 甚至可以給你打折.</text>
+	</string>
+	<string id="red_greh_tech_task_3_fetch_finish">
+		<text>很好, 你幫我找到了.</text>
+	</string>
+
+</string_table>

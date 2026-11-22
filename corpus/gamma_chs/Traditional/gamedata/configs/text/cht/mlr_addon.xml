@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="look_for_cs_history_part_4_2_0">
+		<text>你好, "三頭犬"瑟伯.</text>
+	</string>
+	<string id="look_for_cs_history_part_4_2_1">
+		<text>嘿, 你要去利曼斯克對嗎? 如果不是爲了"森林行者"萊西... 不管怎樣, 歡迎. 因為我非常需要你的錢... 小心別被我們的巡邏隊抓到 - 那不算我們協議里的一部分.</text>
+	</string>
+
+	<string id="look_for_cs_history_part_4_1_0">
+		<text>錢在這</text>
+	</string>
+	<string id="look_for_cs_history_part_4_1_1">
+		<text>非常好. 我會去提醒橋上的守衛. 一旦你到了那裡, 你要找的人就是"三頭犬"瑟伯. 冷靜行事, 看看能不能找到解釋刀疤臉消失的線索.</text>
+	</string>
+
+	<string id="look_for_cs_history_part_3_2_0">
+		<text>你是"森林行者"萊西, 對嗎?</text>
+	</string>
+	<string id="look_for_cs_history_part_3_2_1">
+		<text>是的, 需要導遊嗎, 還是有點什麼別的事?</text>
+	</string>
+	<string id="look_for_cs_history_part_3_2_2">
+		<text>老兄, 我知道你的過去. 我需要你的幫助, 傭兵.</text>
+	</string>
+	<string id="look_for_cs_history_part_3_2_3">
+		<text>嗯...什麼樣的幫助?</text>
+	</string>
+	<string id="look_for_cs_history_part_3_2_4">
+		<text>你能和看守紅森林大橋的僱傭兵談談嗎? 我要去利曼斯克, 我知道這可能不太方便, 但我可以向你保證, 我會盡力找到僱傭兵刀疤臉留下的痕跡.</text>
+	</string>
+	<string id="look_for_cs_history_part_3_2_5">
+		<text>嗯. 你要明白, 我已經脫離財團很久了... 甚至不確定誰在指揮橋上這群人. 但我有幾個熟人, 但我需要點時間... 和一些錢. 15萬, 不講價.</text>
+	</string>
+
+	<string id="look_for_cs_history_part_1_1_0">
+		<text>我聽說了你們組織的歷史, 我想調查一下.</text>
+	</string>
+	<string id="look_for_cs_history_part_1_1_1">
+		<text>你在找什麼? 哈, 聽好. 你在那些地方基本沒法活, 即便你挺過來, 想要找到我們在那裡的資訊可不是件容易的事.</text>
+	</string>
+	<string id="look_for_cs_history_part_1_1_2">
+		<text>你不感興趣嗎? 還是你想得到什麼回報?</text>
+	</string>
+	<string id="look_for_cs_history_part_1_1_3">
+		<text>嗯... 你可以幫我們幹掉大沼澤里的吸血怪, 然後可能我會和你分享情報.</text>
+	</string>
+	<string id="look_for_cs_history_part_1_1_4">
+		<text>好吧, 告訴我這些怪物的座標.</text>
+	</string>
+	<string id="look_for_cs_history_part_1_1_5">
+		<text>給你 - 玩得開心.</text>
+	</string>
+
+	<string id="look_for_cs_history_part_1_2_0">
+		<text>搞定了, 告訴我你有什麼情報?</text>
+	</string>
+	<string id="look_for_cs_history_part_1_2_1">
+		<text>我聽說了, 幹得漂亮. 你是一個很好的戰士, 我信得過你, 現在我能給你要的東西了. 兄弟們可能已經告訴你了在利曼斯克那座破橋上的襲擊. 以防你不知道... 就在那時, 城市裡, 以及紅森林周邊地區,傭兵們控制了一切. 當然了, 他們不會就爲了你降下橋頭的, 但在一系列事件當中有一個活生生的參與者, 他們叫他守林人列斯尼克. 就是他, 還有刀疤臉, 不知怎麼地就通過了一套"標準"來降下橋頭, 而我們的戰士保護他們不受來自對岸的攻擊. 就這, 我再把關於軍事倉庫和紅森林之間路線的資訊給你, 用它來找到守林人列斯尼克跟他說說. 這點是對清理吸血怪的獎勵.</text>
+	</string>
+	<string id="look_for_cs_history_part_1_2_2">
+		<text>謝謝.</text>
+	</string>
+
+	<string id="mlr_inventory_box_unuse">
+		<text>上鎖的儲藏點</text>
+	</string>
+
+	<string id="totaliz_helper_mlr_text">
+		<text>從不同的角度看這個地區, 請按 ~ 鍵或 \ 打開控制檯, 然後輸入: demo_record 1. 使用 W, A, S , D 鍵以及 CTRL 來控制攝像機. 退出按 ESC 鍵.</text>
+	</string>
+	
+	<string id="st_pda_mlr_descr">
+		<text>包含不同地區間路線資訊的PDA. 由於有密碼鎖, 它的訊息歷史不可訪問</text>
+	</string>
+	<string id="st_new_path_mlr">
+		<text>兩個地區之間的路線已經可以進入.</text>
+	</string>
+
+	<string id="killer_bridge_trader_mlr_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_1_text">
+		<text>僱傭兵們要我幫忙抓住%s.</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_1_about">
+		<text>我們的士兵需要一些裝備, 你能幫我們弄到嗎?</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_1_fetch_about">
+		<text>我們的士兵需要%s, 你能給我們弄來嗎?</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_1_fetch_finish">
+		<text>謝謝, 這是你的報酬.</text>
+	</string>
+
+	<string id="killer_bridge_trader_mlr_task_2_name">
+		<text>找到一個%s神器</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_2_text">
+		<text>傭兵需要%s.</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_2_about">
+		<text>我們的士兵需要神器, 如果沒有它們, 穿過利曼斯克非常困難, 你能幫我們找一個嗎?</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_2_fetch_about">
+		<text>我們的士兵需要神器, 如果沒有它們, 穿過利曼斯克非常困難, 你能幫我們找一個%s?</text>
+	</string>
+	<string id="killer_bridge_trader_mlr_task_2_fetch_finish">
+		<text>非常感謝. 給, 拿著這個.</text>
+	</string>
+
+	<string id="task_look_for_cs_history_part_1_1">
+		<text>找到並殺死吸血怪</text>
+	</string>
+	<string id="task_look_for_cs_history_part_1_2">
+		<text>回到冷風那裡</text>
+	</string>
+	<string id="task_look_for_cs_history_part_1_3">
+		<text>所以說, 他不敢讓我走"這條路", 但如果我去幹掉奪靈怪就沒問題? 我明白了, 哪怕在晴空里, 也有這種廉價銷售人員.</text>
+	</string>
+
+	<string id="task_look_for_cs_history_part_2_1">
+		<text>跟隨晴空: 與守林人列斯尼克談談</text>
+	</string>
+	<string id="task_look_for_cs_history_part_descr_2_1">
+		<text>冷風告訴我, 這些事件的直接參與者是守林人列斯尼克, 並給了我他的座標. 我必須和他談談, 然後去利曼斯克.</text>
+	</string>
+
+	<string id="task_look_for_cs_history_part_3_1">
+		<text>跟隨晴空: 找到"森林行者"萊西</text>
+	</string>
+	<string id="task_look_for_cs_history_part_3_2">
+		<text>跟隨晴空: 與"森林行者"萊西交談</text>
+	</string>
+	<string id="task_look_for_cs_history_part_descr_3_1">
+		<text>好吧, 回到軍隊. 原來那場爭奪大橋的關鍵人物一直在我眼皮底下.</text>
+	</string>
+	<string id="task_look_for_cs_history_part_descr_3_2">
+		<text>我只需要與"森林行者"萊西本人達成協議, 希望這將結束我的任務.</text>
+	</string>
+
+	<string id="task_look_for_cs_history_part_4_1">
+		<text>跟隨晴空: 收集150000 盧布並帶給"森林行者"萊西</text>
+	</string>
+	<string id="task_look_for_cs_history_part_4_3">
+		<text>跟隨晴空: 去和"三頭犬"瑟伯會面</text>
+	</string>
+	<string id="task_look_for_cs_history_part_4_4">
+		<text>跟隨晴空: 與"三頭犬"瑟伯交談</text>
+	</string>
+
+	<string id="task_look_for_cs_history_part_descr_4_1">
+		<text>終於, 我很快就會到橋的另一邊, 那些跑腿的事也將結束.</text>
+	</string>
+
+	<string id="st_bridge_is_open_message">
+		<text>"三頭犬"瑟伯:\n 嘿, 潛行者! 過來, 我有話跟你說.</text>
+	</string>
+
+</string_table>

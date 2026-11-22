@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- Communities -->
+	<string id="ui_st_community">
+		<text>陣營</text>
+	</string>
+
+	<!-- Actor Factions -->
+	<string id="actor">
+		<text>獨行者</text>
+	</string>
+	<string id="actor_army">
+		<text>軍隊</text>
+	</string>
+	<string id="actor_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="actor_csky">
+		<text>晴空</text>
+	</string>
+	<string id="actor_dolg">
+		<text>紀律團</text>
+	</string>
+	<string id="actor_ecolog">
+		<text>生態學家</text>
+	</string>
+	<string id="actor_freedom">
+		<text>自由軍</text>
+	</string>
+	<string id="actor_killer">
+		<text>傭兵</text>
+	</string>
+	<string id="actor_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="actor_monster">
+		<text>變異生物</text>
+	</string>
+	<string id="actor_stalker">
+		<text>獨行者</text>
+	</string>
+	<string id="actor_renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="actor_greh">
+		<text>原罪</text>
+	</string>
+	<string id="actor_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="actor_zombied">
+		<text>殭屍</text>
+	</string>
+
+	<string id="army">
+		<text>軍隊</text>
+	</string>
+	<string id="bandit">
+		<text>土匪</text>
+	</string>
+	<string id="csky">
+		<text>晴空</text>
+	</string>
+	<string id="dolg">
+		<text>紀律團</text>
+	</string>
+	<string id="ecolog">
+		<text>生態學家</text>
+	</string>
+	<string id="freedom">
+		<text>自由軍</text>
+	</string>
+	<string id="killer">
+		<text>傭兵</text>
+	</string>
+	<string id="monolith">
+		<text>黑石</text>
+	</string>
+	<string id="monster">
+		<text>變異生物</text>
+	</string>
+	<string id="zombied">
+		<text>殭屍</text>
+	</string>
+	<string id="greh">
+		<text>原罪</text>
+	</string>
+	<string id="isg">
+		<text>UNISG</text>
+	</string>
+	<string id="renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="greh_npc">
+		<text>原罪</text>
+	</string>
+	<string id="army_npc">
+		<text>烏克蘭安全域性</text>
+	</string>
+
+	<!-- Goodwill -->
+	<string id="ui_st_relation">
+		<text>關係</text>
+	</string>
+	<string id="st_goodwill_enemy">
+		<text>敵對</text>
+	</string>
+	<string id="st_goodwill_indifferent">
+		<text>中立</text>
+	</string>
+	<string id="st_goodwill_friendly">
+		<text>友好</text>
+	</string>
+
+	<!-- Ranks -->
+	<string id="ui_st_rank">
+		<text>頭銜</text>
+	</string>
+	<string id="st_rank_novice">
+		<text>菜鳥</text>
+	</string>
+	<string id="st_rank_trainee">
+		<text>新手</text>
+	</string>
+	<string id="st_rank_experienced">
+		<text>高手</text>
+	</string>
+	<string id="st_rank_professional">
+		<text>專業</text>
+	</string>
+	<string id="st_rank_veteran">
+		<text>老手</text>
+	</string>
+	<string id="st_rank_expert">
+		<text>專家</text>
+	</string>
+	<string id="st_rank_master">
+		<text>大師</text>
+	</string>
+	<string id="st_rank_legend">
+		<text>傳奇</text>
+	</string>
+
+	<!-- Reputations -->
+	<string id="ui_st_reputation">
+		<text>名聲</text>
+	</string>
+	<string id="st_reputation_terrible">
+		<text>天誅地滅</text>
+	</string>
+	<string id="st_reputation_really_bad">
+		<text>萬人唾棄</text>
+	</string>
+	<string id="st_reputation_very_bad">
+		<text>千夫所指</text>
+	</string>
+	<string id="st_reputation_bad">
+		<text>聲名狼藉</text>
+	</string>
+	<string id="st_reputation_neutral">
+		<text>無足輕重</text>
+	</string>
+	<string id="st_reputation_good">
+		<text>初露頭角</text>
+	</string>
+	<string id="st_reputation_very_good">
+		<text>遠近聞名</text>
+	</string>
+	<string id="st_reputation_really_good">
+		<text>威震四海</text>
+	</string>
+	<string id="st_reputation_excellent">
+		<text>叱吒風雲</text>
+	</string>
+
+	<!-- Notifications -->
+	<string id="st_rank_increased">
+		<text>你的排名提升了</text>
+	</string>
+	<string id="st_rank_decreased">
+		<text>你的排名降低了</text>
+	</string>
+	<string id="st_reputation_increased">
+		<text>你的名聲變好了</text>
+	</string>
+	<string id="st_reputation_decreased">
+		<text>你的名聲變差了</text>
+	</string>
+	
+	<!-- Dynamic Relations = News building -->
+    <string id="st_relations_and">
+        <text>和</text>
+    </string>
+    <string id="st_relations_declared_war">
+        <text>陣營已相互宣戰</text>
+    </string>
+    <string id="st_relations_alliance">
+        <text>陣營已結為盟友</text>
+    </string>
+    <string id="st_relations_deteriorating">
+        <text>關係正在惡化</text>
+    </string>
+    <string id="st_relations_cease_fire">
+        <text>陣營宣佈停火</text>
+    </string>
+	
+	<!-- Dynamic Relations = Goodwill-->
+	<string id="st_ui_goodwill_name">
+        <text>陣營好感</text>
+    </string>
+	<string id="st_ui_goodwill_5">
+        <text>同志</text>
+    </string>
+	<string id="st_ui_goodwill_4">
+        <text>親密</text>
+    </string>
+	<string id="st_ui_goodwill_3">
+        <text>友善</text>
+    </string>
+	<string id="st_ui_goodwill_2">
+        <text>初識</text>
+    </string>
+	<string id="st_ui_goodwill_1">
+        <text>陌路</text>
+    </string>
+	
+</string_table>

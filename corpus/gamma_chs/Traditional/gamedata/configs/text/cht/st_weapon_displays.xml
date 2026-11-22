@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_placeable_weapon_rack">
+        <text>槍械陳列架</text>
+    </string>
+    <string id="st_placeable_weapon_rack_descr">
+		<text>一個老舊的陳列架, 潛行者們用它在自己的藏身處展示自己心愛的長槍\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 能容納6把步槍, 衝鋒鎗或霰彈槍\n</text>
+	</string>
+	
+	<string id="st_placeable_pistol_shelf">
+        <text>手槍陳列架</text>
+    </string>
+    <string id="st_placeable_pistol_shelf_descr">
+		<text>一個老舊的陳列架, 潛行者們用它在自己的藏身處展示自己趁手的手槍\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 能容納4把手槍\n</text>
+	</string>
+</string_table>

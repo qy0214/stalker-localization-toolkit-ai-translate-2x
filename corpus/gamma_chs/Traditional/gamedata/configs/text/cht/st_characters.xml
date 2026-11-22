@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="jup_a10_bandit_leader_name">
+		<text>沃萊特</text>
+	</string>
+	<string id="jup_a10_stalker_vano">
+		<text>瓦諾</text>
+	</string>
+	<string id="jup_a6_duty_leader">
+		<text>蘇爾加中校</text>
+	</string>
+	<string id="jup_a6_freedom_leader">
+		<text>洛基</text>
+	</string>
+	<string id="jup_a6_stalker_barmen">
+		<text>夏威夷</text>
+	</string>
+	<string id="jup_a6_stalker_medik">
+		<text>接骨師</text>
+	</string>
+	<string id="jup_b10_stalker_drunk">
+		<text>森卡</text>
+	</string>
+	<string id="jup_b15_zulus">
+		<text>祖魯</text>
+	</string>
+	<string id="jup_b19_freedom_yar_name">
+		<text>雅叔</text>
+	</string>
+	<string id="jup_b1_stalker_1">
+		<text>托波爾</text>
+	</string>
+	<string id="jup_b1_stalker_2">
+		<text>巴拉瓦</text>
+	</string>
+	<string id="jup_b1_stalker_3">
+		<text>格里沙</text>
+	</string>
+	<string id="jup_b1_stalker_4">
+		<text>毒蛇</text>
+	</string>
+	<string id="jup_b207_merc_leader_name">
+		<text>格里夫</text>
+	</string>
+	<string id="jup_b217_stalker_tech">
+		<text>阿佐特</text>
+	</string>
+	<string id="jup_b220_trapper">
+		<text>屠獸者</text>
+	</string>
+	<string id="jup_b25_freedom_flint">
+		<text>燧石</text>
+	</string>
+	<string id="jup_b46_duty_founder_name">
+		<text>塔琴科將軍</text>
+	</string>
+	<string id="jup_b46_duty_founder_squad_02_name">
+		<text>班奇科中尉</text>
+	</string>
+	<string id="jup_b46_duty_founder_squad_03_name">
+		<text>科斯馬奇上校</text>
+	</string>
+	<string id="jup_b46_duty_founder_squad_04_name">
+		<text>薩哈治約克中尉</text>
+	</string>
+	<string id="yan_merc_01">
+		<text>布萊克</text>
+	</string>
+	<string id="yan_merc_02">
+		<text>杜普萊特</text>
+	</string>
+	<string id="yan_merc_03">
+		<text>鋼琴家</text>
+	</string>
+	<string id="yan_merc_04">
+		<text>油桶</text>
+	</string>
+	<string id="yan_merc_05">
+		<text>科爾</text>
+	</string>
+	<string id="yan_merc_06">
+		<text>科斯凱</text>
+	</string>
+	<string id="yan_merc_07">
+		<text>死屍</text>
+	</string>
+	<string id="jup_b4_monolith_squad_leader_name">
+		<text>羅格</text>
+	</string>
+	<string id="jup_b4_monolith_squad_soldier_1_name">
+		<text>鐵盔</text>
+	</string>
+	<string id="jup_b4_monolith_squad_soldier_2_name">
+		<text>西科爾</text>
+	</string>
+	<string id="jup_b4_monolith_squad_soldier_3_name">
+		<text>沃爾魯斯</text>
+	</string>
+	<string id="jup_b4_monolith_squad_soldier_4_name">
+		<text>提希</text>
+	</string>
+	<string id="jup_b4_monolith_squad_soldier_5_name">
+		<text>弗馬</text>
+	</string>
+	<string id="jup_b6_scientist_biochemist">
+		<text>奧澤斯基教授</text>
+	</string>
+	<string id="jup_b6_scientist_novikov">
+		<text>托卡列夫</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist">
+		<text>赫曼教授</text>
+	</string>
+	<string id="jup_b9_shliachin_name">
+		<text>舒爾雅契中士</text>
+	</string>
+	<string id="pri_a15_military_recon_1_name">
+		<text>瑟吉夫中尉</text>
+	</string>
+	<string id="pri_a15_military_recon_2_name">
+		<text>瓦爾約斯科夫中士</text>
+	</string>
+	<string id="pri_a15_military_recon_3_name">
+		<text>奧斯特洛夫斯基中士</text>
+	</string>
+	<string id="pri_a15_military_recon_leader_name">
+		<text>克里門科上尉</text>
+	</string>
+	<string id="pri_a15_sokolov_name">
+		<text>索科洛夫中尉</text>
+	</string>
+	<string id="pri_a17_military_captain_tarasov">
+		<text>塔拉索夫上尉</text>
+	</string>
+	<string id="pri_a17_military_colonel_kovalski_name">
+		<text>科瓦斯基上校</text>
+	</string>
+	<string id="pri_a17_military_lieutenant_podorojniy">
+		<text>波多羅各尼中尉</text>
+	</string>
+	<string id="pri_a18_skorlupko_in_suit_name">
+		<text>斯克亞中尉</text>
+	</string>
+	<string id="pri_a18_vano_in_suit_reserve_name">
+		<text>莫庫洛夫中士</text>
+	</string>
+	<string id="pri_a21_sentry_lieutenant_stecenko_name">
+		<text>斯特森科中尉</text>
+	</string>
+	<string id="pri_a22_military_yarmoshuk_name">
+		<text>雅里莫克中士</text>
+	</string>
+	<string id="pri_a25_army_medic_name">
+		<text>羅格維特斯中尉</text>
+	</string>
+	<string id="pri_a28_evac_com_name">
+		<text>斯莫洛夫中尉</text>
+	</string>
+	<string id="pri_b305_strelok_name">
+		<text>史特洛克</text>
+	</string>
+	<string id="pri_b306_envoy_name">
+		<text>杜拉德·維迪克</text>
+	</string>
+	<string id="st_actor_name">
+		<text>德格捷列夫</text>
+	</string>
+	<string id="st_actor_generic_name">
+		<text>玩家</text>
+	</string>
+	<string id="st_jup_a12_bandit_cashier">
+		<text>矮子</text>
+	</string>
+	<string id="st_jup_a12_bandit_chief">
+		<text>舒沙克</text>
+	</string>
+	<string id="st_jup_a12_stalker_assaulter">
+		<text>灰熊</text>
+	</string>
+	<string id="st_jup_a12_stalker_diplomat">
+		<text>托爾巴</text>
+	</string>
+	<string id="st_jup_a12_stalker_prisoner">
+		<text>米特雅</text>
+	</string>
+	<string id="st_jup_b207_duty_security_squad_leader_name">
+		<text>加夫里倫科中尉</text>
+	</string>
+	<string id="st_jup_b207_freedom_assault_squad_leader_name">
+		<text>科里曼</text>
+	</string>
+	<string id="st_jup_b207_freedom_recon_squad_leader_name">
+		<text>海都克</text>
+	</string>
+	<string id="st_jup_b43_stalker_assistant">
+		<text>蓋瑞</text>
+	</string>
+	<string id="st_pri_a22_army_signaller">
+		<text>基里洛夫中尉</text>
+	</string>
+	<string id="st_pri_b35_envoy">
+		<text>瑟賓</text>
+	</string>
+	<string id="st_pri_b35_merc_leader">
+		<text>豺狼</text>
+	</string>
+	<string id="st_zat_a2_stalker_nimble_name">
+		<text>"巧手"尼博</text>
+	</string>
+	<string id="st_zat_b106_stalker_crab_name">
+		<text>螃蟹</text>
+	</string>
+	<string id="st_zat_b106_stalker_garmata_name">
+		<text>加馬特</text>
+	</string>
+	<string id="st_zat_b106_stalker_gonta_name">
+		<text>"怪物獵人"貢塔</text>
+	</string>
+	<string id="st_zat_b29_stalker_rival_1">
+		<text>鐵錘</text>
+	</string>
+	<string id="st_zat_b29_stalker_rival_2">
+		<text>科布</text>
+	</string>
+	<string id="st_zat_b30_owl_stalker_trader_name">
+		<text>貓頭鷹</text>
+	</string>
+	<string id="st_zat_b38_stalker_cop_name">
+		<text>松雞</text>
+	</string>
+	<string id="st_zat_b38_stalker_hunter_name">
+		<text>達尼拉</text>
+	</string>
+	<string id="st_zat_b7_bandit_boss_sultan_name">
+		<text>"匪王"蘇坦</text>
+	</string>
+	<string id="st_zat_b7_duty_illicit_dealer_name">
+		<text>摩根</text>
+	</string>
+	<string id="st_zat_b7_stalker_raider_leader">
+		<text>銅指環</text>
+	</string>
+	<string id="st_zat_b7_stalker_squad_leader">
+		<text>斯巴達克斯</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_name">
+		<text>大鬍子</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_name">
+		<text>卡丹</text>
+	</string>
+	<string id="zat_b103_lost_merc_1_name">
+		<text>哥布林</text>
+	</string>
+	<string id="zat_b103_lost_merc_2_name">
+		<text>歐克</text>
+	</string>
+	<string id="zat_b103_lost_merc_3_name">
+		<text>鋼琴家</text>
+	</string>
+	<string id="zat_b103_lost_merc_4_name">
+		<text>羅恩</text>
+	</string>
+	<string id="zat_b103_lost_merc_5_name">
+		<text>科扎克</text>
+	</string>
+	<string id="zat_b103_lost_merc_6_name">
+		<text>坦克</text>
+	</string>
+	<string id="zat_b103_lost_merc_7_name">
+		<text>長鼻</text>
+	</string>
+	<string id="zat_b103_lost_merc_leader_name">
+		<text>戰斧</text>
+	</string>
+	<string id="zat_b14_stalker_1_name">
+		<text>沃布拉</text>
+	</string>
+	<string id="zat_b18_noah_name">
+		<text>諾亞</text>
+	</string>
+	<string id="zat_b215_stalker_guide_name">
+		<text>領航員</text>
+	</string>
+	<string id="zat_b22_stalker_medic_name">
+		<text>埃克索</text>
+	</string>
+	<string id="zat_b28_draper_name">
+		<text>德雷皮奧中尉</text>
+	</string>
+	<string id="zat_b28_umerov_name">
+		<text>烏洛莫夫少尉</text>
+	</string>
+	<string id="zat_b33_stalker_snag">
+		<text>斯耐格</text>
+	</string>
+	<string id="zat_b40_merc_squad_leader_1_name">
+		<text>鐵鉤</text>
+	</string>
+	<string id="zat_b40_merc_squad_leader_2_name">
+		<text>頂峰</text>
+	</string>
+	<string id="zat_b42_mayron_name">
+		<text>梅倫</text>
+	</string>
+	<string id="zat_b44_stalker_barge_name">
+		<text>巴杰</text>
+	</string>
+	<string id="zat_b53_artefact_hunter_1_name">
+		<text>佩德魯卡</text>
+	</string>
+	<string id="zat_b53_artefact_hunter_2_name">
+		<text>希羅</text>
+	</string>
+	<string id="jup_b46_duty_founder_squad_01_name">
+		<text>謝普洛少校</text>
+	</string>
+	<string id="pri_a17_military_prapor_valentyr">
+		<text>瓦倫特少尉</text>
+	</string>
+	<string id="pri_a17_military_sergeant_morozov">
+		<text>莫洛佐夫上士</text>
+	</string>
+	<string id="zat_b28_smoliak_name">
+		<text>斯莫雅克上士</text>
+	</string>
+	<string id="jup_b25_stalker_senya">
+		<text>尖刺</text>
+	</string>
+	<string id="zat_b100_army_1">
+		<text>加茲達中士</text>
+	</string>
+	<string id="zat_b100_army_2">
+		<text>福特斯上尉</text>
+	</string>
+	<string id="zat_b100_army_3">
+		<text>舒維克上士</text>
+	</string>
+	<string id="cit_doctor_name">
+		<text>伊萬·托德尼克</text>
+	</string>
+	<string id="marsh_doctor_name">
+		<text>沼澤巫醫</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_name">
+		<text>冷風</text>
+	</string>
+	<string id="esc_wolf_bio">
+		<text>"巧手"尼博的貼身護衛. 想變得富有的老手潛行者.</text>
+	</string>
+	<string id="esc_wolf_name">
+		<text>"獨狼"沃夫</text>
+	</string>
+	<string id="esc_fanat_bio">
+		<text>"獨狼"沃夫的繼任者, 菜鳥村菜鳥們的教官. 充滿目標, 積極進取, 在菜鳥眼中有著當之無愧的權威.</text>
+	</string>
+	<string id="esc_fanat_name">
+		<text>"狂人"法納特</text>
+	</string>
+	<string id="bar_barmen_name">
+		<text>酒保</text>
+	</string>
+	<string id="bar_barmen_bio">
+		<text>他既不是聖人, 也不是無賴. 但每個潛行者都尊重他. 有傳言說他是因過去的一些不光彩的事淘逃進特異區的. 有次碰到異常點后傷到了腿, 自那之後他就決定轉行. 他在紀律團基地中開辦了輻射100酒吧, 於是此地就逐漸變成了特異區老兵們的聚會地. 酒保在特異區內外都有著發達的人際關係.</text>
+	</string>
+	<string id="bar_bar_guard_bio">
+		<text>酒吧保安. 或者是酒保的保鏢. 人們對他的過去一無所知.</text>
+	</string>
+	<string id="bar_bar_guard_name">
+		<text>蓋瑞</text>
+	</string>
+	<string id="bar_bar_guard2_bio">
+		<text>蓋瑞的雙胞胎兄弟. 酒吧保鏢. 和他哥哥一樣沉默寡言.</text>
+	</string>
+	<string id="bar_bar_guard2_name">
+		<text>卓里克</text>
+	</string>
+	<string id="st_bar_duty_security_squad_leader_name">
+		<text>加夫里倫科中尉</text>
+	</string>
+	<string id="bar_kicenko_name">
+		<text>基森科軍士</text>
+	</string>
+	<string id="sim_dolg_veteran_bio">
+		<text>紀律團的好戰者. 裝備精良. 沒有關於他的詳細資訊.</text>
+	</string>
+	<string id="escape_trader_bio">
+		<text>他從小就以貿易為生. 在幼兒園時他向身邊的小夥伴賣蠟筆. 高中時他向同學賣口香糖. 長大后賣毒品. 特異區成立時他就看到了商機, 他能與所有客戶建立良好的商業關係.</text>
+	</string>
+	<string id="escape_trader_name">
+		<text>西多洛維奇</text>
+	</string>
+	<string id="red_forester_name">
+		<text>守林人列斯尼克</text>
+	</string>
+	<string id="yan_st_sakharov_name">
+		<text>薩哈洛夫教授</text>
+	</string>
+	<string id="yan_semenov_bio">
+		<text>移動實驗室的研究助理. 沒有關於他的詳細資訊.</text>
+	</string>
+	<string id="yan_semenov_name">
+		<text>謝梅諾夫教授</text>
+	</string>
+	<string id="yan_vasilyev_name">
+		<text>瓦西里耶夫教授</text>
+	</string>
+	<string id="yan_vasilyev_bio">
+		<text>移動實驗室的研究助理. 沒有關於他的詳細資訊.</text>
+	</string>
+	<string id="yan_kruglov_bio">
+		<text>生物學博士. 負責的研究專案是特異區外動物的致病性突變. 到特異區是爲了研究盲犬.</text>
+	</string>
+	<string id="yan_kruglov_name">
+		<text>克魯格洛夫教授</text>
+	</string>
+	<string id="mar_base_stalker_tech_name">
+		<text>諾維科夫</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_name">
+		<text>"孢子"斯波</text>
+	</string>
+	<string id="mar_base_stalker_barmen_name">
+		<text>萊伯利安</text>
+	</string>
+	<string id="mil_Svoboda_engineer_name">
+		<text>"螺桿"舒魯普</text>
+	</string>
+	<string id="mil_Svoboda_trader_name">
+		<text>吝嗇鬼</text>
+	</string>
+	<string id="bar_petrenko_name">
+		<text>彼得連科上校</text>
+	</string>
+	<string id="bar_voronin_name">
+		<text>沃羅寧將軍</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_name">
+		<text>"拐子"林匹</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_name">
+		<text>"槍子兒"奧利維斯</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_name">
+		<text>"黑科技"澤諾泰克</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_name">
+		<text>傳教士</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_name">
+		<text>兔子</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_name">
+		<text>豪格</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_name">
+		<text>達什曼</text>
+	</string>
+	<string id="cit_killers_merc_medic_stalker_name">
+		<text>外科醫生</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_name">
+		<text>基里洛夫中尉</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_trader_stalker_name">
+		<text>斯普納中士</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_medic_stalker_name">
+		<text>羅戈維茨中尉</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_name">
+		<text>曼岡</text>
+	</string>
+	<string id="mil_freedom_leader_name">
+		<text>盧卡什</text>
+	</string>
+	<string id="mar_csky_commander_name">
+		<text>列別捷夫</text>
+	</string>
+	<string id="warlab_osoznanie_name">
+		<text>超念體代表</text>
+	</string>
+	<string id="warlab_volunteer_name">
+		<text>超念體志願者</text>
+	</string>
+	<string id="sar2_clone_name">
+		<text>幽靈守衛</text>
+	</string>
+	<string id="sar2_arena_manager_name">
+		<text>阿尼</text>
+	</string>
+	<string id="sar2_arena_savage_name">
+		<text>野獸</text>
+	</string>
+	<string id="sar2_bandit_leader_name">
+		<text>瓦西亞·野豬</text>
+	</string>
+	<string id="sar2_bio">
+		<text>黑石製造的幻象.</text>
+	</string>
+	<string id="sar2_borov_name">
+		<text>波諾夫</text>
+	</string>
+	<string id="sar2_crazy_svoboda_name">
+		<text>瘋狂的潛行者</text>
+	</string>
+	<string id="sar2_dolg_blokpost_leader_name">
+		<text>準尉</text>
+	</string>
+	<string id="sar2_dolg_guard_commander_name">
+		<text>保安隊長</text>
+	</string>
+	<string id="sar2_dolg_skull_name">
+		<text>"骷髏"</text>
+	</string>
+	<string id="sar2_dolg_zastava_commander_name">
+		<text>前哨指揮官</text>
+	</string>
+	<string id="sar2_dram_novice_name">
+		<text>尤里克</text>
+	</string>
+	<string id="sar2_explorer_name">
+		<text>哲卡·分身</text>
+	</string>
+	<string id="sar2_fanat_name">
+		<text>'"狂人"法納特'</text>
+	</string>
+	<string id="sar2_fox_name">
+		<text>'狐貍'</text>
+	</string>
+	<string id="sar2_gordon_name">
+		<text>戈登</text>
+	</string>
+	<string id="sar2_haron_name">
+		<text>卡戎</text>
+	</string>
+	<string id="sar2_hellcar_name">
+		<text>貝斯</text>
+	</string>
+	<string id="sar2_informator_name">
+		<text>阿拉</text>
+	</string>
+	<string id="sar2_ivancov_name">
+		<text>伊萬索夫上尉</text>
+	</string>
+	<string id="sar2_krot_name">
+		<text>莫爾</text>
+	</string>
+	<string id="sar2_kruglov_name">
+		<text>克魯格洛夫教授</text>
+	</string>
+	<string id="sar2_kuznetsov_name">
+		<text>庫茲涅佐夫上校</text>
+	</string>
+	<string id="sar2_lucky_name">
+		<text>幸運兒</text>
+	</string>
+	<string id="sar2_petrenko_name">
+		<text>彼得連科上校</text>
+	</string>
+	<string id="sar2_petruha_name">
+		<text>卓里克</text>
+	</string>
+	<string id="sar2_professor_name">
+		<text>薩哈洛夫教授</text>
+	</string>
+	<string id="sar2_ryaboy_name">
+		<text>斯巴迪</text>
+	</string>
+	<string id="sar2_seryi_name">
+		<text>西里</text>
+	</string>
+	<string id="sar2_svoboda_blockpost_leader_name">
+		<text>凱普</text>
+	</string>
+	<string id="sar2_svoboda_bodyguard_name">
+		<text>凱普特</text>
+	</string>
+	<string id="sar2_svoboda_cook_name">
+		<text>大廚</text>
+	</string>
+	<string id="sar2_svoboda_engeneer_name">
+		<text>"螺桿"舒魯普</text>
+	</string>
+	<string id="sar2_svoboda_leader_name">
+		<text>盧卡什</text>
+	</string>
+	<string id="sar2_svoboda_max_name">
+		<text>麥克斯</text>
+	</string>
+	<string id="sar2_svoboda_stukach_name">
+		<text>帕夫里克</text>
+	</string>
+	<string id="sar2_svoboda_trader_name">
+		<text>吝嗇鬼</text>
+	</string>
+	<string id="sar2_svoboda_ugrumyi_name">
+		<text>黑暗</text>
+	</string>
+	<string id="sar2_tiran_name">
+		<text>泰蘭</text>
+	</string>
+	<string id="sar2_tolik_name">
+		<text>托裡克</text>
+	</string>
+	<string id="sar2_volkodav_name">
+		<text>狼狗</text>
+	</string>
+	<string id="sar2_voronin_name">
+		<text>沃羅寧將軍</text>
+	</string>
+	<string id="sar2_wolf_name">
+		<text>"獨狼"沃夫</text>
+	</string>
+	<string id="dar_kalugin_name">
+		<text>皮特 卡魯金</text>
+	</string>
+	<string id="dar_rockatansky_name">
+		<text>羅卡坦斯基</text>
+	</string>
+	<string id="bar_arny_name">
+		<text>阿尼</text>
+	</string>
+	<string id="bar_lelik_name">
+		<text>利奧里克</text>
+	</string>
+	<string id="bar_beast_name">
+		<text>野獸</text>
+	</string>
+	<string id="yan_ghost_name">
+		<text>鬼魂</text>
+	</string>
+	<string id="warlab_entity_name">
+		<text>戰爭實驗室的實體</text>
+	</string>
+	<string id="warlab_main_poltergeist_1">
+		<text>心靈投影</text>
+	</string>
+	<string id="warlab_main_poltergeist_2">
+		<text>心靈投影</text>
+	</string>
+	<string id="warlab_main_psysucker">
+		<text>心靈投影</text>
+	</string>
+	<string id="warlab_main_psycontroller">
+		<text>心靈投影</text>
+	</string>
+	<string id="jup_a6_freedom_trader_ashot_name">
+		<text>阿肖特</text>
+	</string>
+	<string id="agr_kuznetsov_name">
+		<text>庫茲涅佐夫上校</text>
+	</string>
+	<string id="devushka">
+		<text>希普</text>
+	</string>
+
+	<!-- Characters in MLR -->
+
+	<string id="agr_1_6_barman_army_mlr_name">
+		<text>指揮官</text>
+	</string>
+	<string id="agr_1_6_medic_army_mlr_name">
+		<text>羅格維茨</text>
+	</string>
+	<string id="army_south_mechan_mlr_name">
+		<text>賽里尤加</text>
+	</string>
+	<string id="bar_dolg_medic_name">
+		<text>'阿司匹林'</text>
+	</string>
+	<string id="bar_informator_mlr_name">
+		<text>"告密者"</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_name">
+		<text>阿斯蘭</text>
+	</string>
+	<string id="st_dasc_tech_mlr_name">
+		<text>泊勒莫</text>
+	</string>
+	<string id="st_dasc_trade_mlr_name">
+		<text>砍刀</text>
+	</string>
+	<string id="ds_killer_guide_main_base_name">
+		<text>美洲豹</text>
+	</string>
+	<string id="ds_killer_medic_mlr_name">
+		<text>黎明</text>
+	</string>
+	<string id="esc_3_16_military_trader_name">
+		<text>朱諾夫少校</text>
+	</string>
+	<string id="esc_main_base_trader_mlr_name">
+		<text>洛里斯</text>
+	</string>
+	<string id="guid_bar_stalker_navigator_name">
+		<text>航海家</text>
+	</string>
+	<string id="guid_dv_mal_mlr_name">
+		<text>哈巴狗</text>
+	</string>
+	<string id="guid_jup_stalker_garik">
+		<text>蓋瑞</text>
+	</string>
+	<string id="guid_marsh_mlr_name">
+		<text>甘卡</text>
+	</string>
+	<string id="guid_pri_a15_mlr_name">
+		<text>"遊客"</text>
+	</string>
+	<string id="guid_zan_stalker_locman_name">
+		<text>領航員</text>
+	</string>
+	<string id="hunter_gar_trader_name">
+		<text>屠夫</text>
+	</string>
+	<string id="lider_monolith_haron_name">
+		<text>卡戎</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_name">
+		<text>遊隼</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_name">
+		<text>"樹樁"特朗克</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_name">
+		<text>格里芬</text>
+	</string>
+	<string id="st_mil_freedom_barman_mlr_name">
+		<text>大廚</text>
+	</string>
+	<string id="mil_freedom_guid_name">
+		<text>"森林行者"萊西</text>
+	</string>
+	<string id="st_mil_freedom_medic_name">
+		<text>索里德</text>
+	</string>
+	<string id="pri_a16_mech_mlr_name">
+		<text>大錘</text>
+	</string>
+	<string id="pri_special_trader_mlr_name">
+		<text>米克</text>
+	</string>
+	<string id="trader_pri_a15_mlr_name">
+		<text>出納員</text>
+	</string>
+	<string id="yan_povar_army_mlr_name">
+		<text>酒鬼</text>
+	</string>
+	<string id="zat_tech_mlr_name">
+		<text>斯普里恩</text>
+	</string>
+	<string id="zat_stancia_mech_merc_name">
+		<text>科林</text>
+	</string>
+	<string id="zat_stancia_trader_merc_name">
+		<text>維克托</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_name">
+		<text>卡蘭查教授</text>
+	</string>
+	
+	<string id="stalker_gatekeeper_name">
+		<text>"三頭犬"瑟伯</text>
+	</string>
+	<string id="lost_stalker_strelok_name">
+		<text>史特洛克</text>
+	</string>
+	<string id="stalker_scope_name">
+		<text>"凝視者"</text>
+	</string>
+	<string id="stalker_wayfarer_name">
+		<text>"遠行者"</text>
+	</string>
+	<string id="greh_envoy_name">
+		<text>"水妖"沃德尼克</text>
+	</string>
+	<string id="greh_castigator_1_name">
+		<text>"嚎叫者"德雷卡瓦克</text>
+	</string>
+	<string id="greh_castigator_2_name">
+		<text>"沼澤惡魔"博洛特尼克</text>
+	</string>
+	<string id="greh_castigator_3_name">
+		<text>"食尸鬼"烏培</text>
+	</string>
+	<string id="greh_castigator_4_name">
+		<text>"冥神"韋萊斯</text>
+	</string>
+	<string id="greh_castigator_5_name">
+		<text>"惡鬼"比斯</text>
+	</string>
+	<string id="greh_castigator_6_name">
+		<text>"惡魔"喬特</text>
+	</string>
+	<string id="greh_castigator_7_name">
+		<text>"巨人"維德</text>
+	</string>
+	<string id="greh_prisoner_name">
+		<text>"狼首惡魔"索格拉夫</text>
+	</string>
+	<string id="kat_greh_sabaoth_name">
+		<text>"黑暗之神"切爾諾伯格</text>
+	</string>
+	<string id="monolith_eidolon_name">
+		<text>幻靈</text>
+	</string>
+	<string id="army_degtyarev_name">
+		<text>德格捷列夫上校</text>
+	</string>
+	<string id="army_degtyarev_jup_name">
+		<text>亞歷山大·德格捷列夫</text>
+	</string>
+	<string id="army_isg_spy_name">
+		<text>安東諾夫下士</text>
+	</string>
+	<string id="army_tarasov_name">
+		<text>塔拉索夫少校</text>
+	</string>
+	<string id="stalker_strelok_oa_name">
+		<text>史特洛克</text>
+	</string>
+	<string id="stalker_rogue_oa_name">
+		<text>"遊蕩者"</text>
+	</string>
+	<string id="stalker_stitch_oa_name">
+		<text>"縫合者"</text>
+	</string>
+	<string id="agr_u_bandit_boss_name">
+		<text>雷弗</text>
+	</string>
+	<string id="red_greh_trader_name">
+		<text>"風神"斯特利伯格</text>
+	</string>
+	<string id="red_greh_tech_name">
+		<text>"太陽神"達日伯格</text>
+	</string>
+	<string id="jup_cont_mech_bandit_name">
+		<text>奈爾</text>
+	</string>
+	<string id="jup_cont_trader_bandit_name">
+		<text>克列諾夫</text>
+	</string>
+	<string id="mechanic_monolith_kbo_name">
+		<text>佈雷瑟</text>
+	</string>
+	<string id="trader_monolith_kbo_name">
+		<text>奧利瓦爾</text>
+	</string>
+	<string id="ds_domik_isg_leader_name">
+		<text>赫南德斯少校</text>
+	</string>
+	<string id="jup_depo_isg_tech_name">
+		<text>茅斯中尉</text>
+	</string>
+</string_table>

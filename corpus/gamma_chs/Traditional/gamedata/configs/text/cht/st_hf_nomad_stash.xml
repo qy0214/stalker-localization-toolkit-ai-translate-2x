@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_placeable_case">
+		<text>槍箱</text>
+	</string>
+	<string id="st_placeable_case_descr">
+		<text>一個空的槍箱, 比普通揹包容量大, 但也更重\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 中等容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_blue_box">
+		<text>大金屬箱</text>
+	</string>
+	<string id="st_placeable_blue_box_descr">
+		<text>一個專門用於存放物品的大箱子, 有著很大的容量, 但同時由於實在過於笨重難以攜帶\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 高容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_exo_kit">
+		<text>空的外骨骼修理箱</text>
+	</string>
+	<string id="st_placeable_exo_kit_descr">
+		<text>一個空無一物的金屬箱子, 應該是某個潛行者在修完外骨骼后丟棄的, 這種箱子很適合用來存放物品\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 中等容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_sumka6">
+		<text>小揹包</text>
+	</string>
+	<string id="st_placeable_sumka6_descr">
+		<text>用小片的布料縫製而成的簡單包裹, 藏身處里好像用處不大, 但在野外緊急的時候可以很方便的藏點東西進去\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 低容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+    <string id="st_place_furniture">
+		<text>放置物品</text>
+	</string>
+</string_table>

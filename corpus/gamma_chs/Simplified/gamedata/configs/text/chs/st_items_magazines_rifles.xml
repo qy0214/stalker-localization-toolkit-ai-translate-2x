@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+ <!-- 5.45 -->
+	<string id="st_mag_ak74_5.45x39">
+		<text>标准5.45x39 AK-74弹匣</text>
+	</string>
+	<string id="st_mag_ak74_5.45x39_descr">
+		<text>
+		30发胶木弹匣,是乌克兰军方标准发行的. 区内最常见的弹匣之一. 命名为"6L20". 
+		</text>
+	</string>
+	
+	<string id="st_mag_ak74_5.45x39_extended">
+		<text>60发5.45x39 AK-74弹匣</text>
+	</string>
+	<string id="st_mag_ak74_5.45x39_extended_descr">
+		<text>
+        60发四叠弹匣,用于AK-74系列. 在俄罗斯非常罕见,因为只生产了小批量,但据传乌克兰 SSU 开始生产自己的 SSU 以满足他们控制特异区的需要. 命名为"6L31". 		</text>
+	</string>
+
+	<string id="st_mag_ak74m_5.45x39">
+		<text>标准5.45x39 AK-74M弹匣</text>
+	</string>
+	<string id="st_mag_ak74m_5.45x39_descr">
+		<text>
+        30发聚合物弹匣,即俄军标准装备,随AK-74M一起发货. 区内最常见的弹匣之一. 这个弹匣可以调整以适应不同的口径. 命名为"6L23". 		</text>
+	</string>
+
+	<string id="st_mag_ak74_fast_5.45x39">
+		<text>快速5.45x39 AK-74M弹匣</text>
+	</string>
+	<string id="st_mag_ak74_fast_5.45x39_descr">
+		<text>
+        现代PMAG式AK弹匣,可装30发. 构建质量非常高,加载子弹非常轻松. 像这样的弹匣通常只能在 Spetsnaz 黑色行动单位以及尖端的 Alpha AK 上找到. 		</text>
+	</string>
+	
+	<string id="st_mag_rpk74_5.45x39">
+		<text>标准5.45x39 RPK-74弹匣</text>
+	</string>
+	<string id="st_mag_rpk74_5.45x39_descr">
+		<text>
+			45发Bakelite弹匣,标准配备RPK-74 LMG. 这个弹匣也适用于AK-74的衍生产品. 命名为 "6L18"
+		</text>
+	</string>
+
+	<string id="st_mag_rpk74_5.56x45">
+		<text>改进版5.56x45 RPK-74弹匣</text>
+	</string>
+	<string id="st_mag_rpk74_5.56x45_descr">
+		<text>
+			改进版RPK弹匣,适合5.56 NATO子弹. 也与出口的AK-101和AK-102兼容. 
+		</text>
+	</string>
+
+	<string id="st_mag_ak_7.62x39">
+		<text>标准7.62x39 AKM弹匣</text>
+	</string>
+	<string id="st_mag_ak_7.62x39_descr">
+		<text>
+		30发钢制7.62x39弹匣. 像这样的弹匣已经相当古老,但仍能发挥相对较好的作用. 
+		</text>
+	</string>
+
+	<string id="st_mag_ak103_7.62x39">
+		<text>标准7.62x39 AK-103弹匣</text>
+	</string>
+	<string id="st_mag_ak103_7.62x39_descr">
+		<text>
+		30发AK-103弹匣,口径7.62x39. 现代材料和结构使弹匣远比其钢制的同类产品要轻. 此外,该弹匣还可以改进版,以适应其他口径. 
+		</text>
+	</string>
+	
+	<string id="st_mag_ak103_fast_7.62x39">
+		<text>快速7.62x39 AK-103弹匣</text>
+	</string>
+	<string id="st_mag_ak103_fast_7.62x39_descr">
+		<text>
+		PMAG式7.62x39弹匣由聚合物制成. 其制造质量和设计允许快速装填子弹. 这样的装备在 "区 "内是不常见的. 
+		</text>
+	</string>
+
+	<string id="st_mag_rpd_7.62x39">
+		<text>标准7.62x39 RPD弹鼓</text>
+	</string>
+	<string id="st_mag_rpd_7.62x39_descr">
+		<text>
+			鼓形弹匣与RPD的皮带. 盒子里的皮带可以容纳100发子弹. 虽然RPD最终被更精确和更灵活的RPK所取代,但能够打掉100发子弹并不值得嘲笑. 
+		</text>
+	</string>
+	
+	<string id="st_mag_rpk_7.62x39">
+		<text>标准7.62x39 RPK弹匣</text>
+	</string>
+	<string id="st_mag_rpk_7.62x39_descr">
+		<text>
+		钢40发RPK弹匣. 这也与AKM和其他7.62x39的AK步枪兼容. 
+		</text>
+	</string>
+	
+	<string id="st_mag_rpk_7.62x39_drum">
+		<text>95发RPK弹鼓</text>
+	</string>
+	<string id="st_mag_rpk_7.62x39_drum_descr">
+		<text>
+        95发鼓弹匣,用于RPK. 
+		</text>
+	</string>
+	
+	
+	<!-- 5.56 -->
+	
+	<string id="st_mag_ace21_5.56x45">
+		<text>标准5.56x45 Galil ACE-21弹匣</text>
+	</string>
+	<string id="st_mag_ace21_5.56x45_descr">
+		<text>
+		专有的ACE-21弹匣,可容纳35发子弹. 在 "区 "中发现的过时型号需要专有的Galil弹匣,这使该武器成为一种花哨的新奇物品,而不是其他东西. 
+		</text>
+	</string>
+
+	<string id="st_mag_ak101_5.56x45">
+		<text>标准5.56x45 AK-101弹匣</text>
+	</string>
+	<string id="st_mag_ak101_5.56x45_descr">
+		<text>
+		30发弹匣用于出口AK101和AK102. 这个弹匣可以进行调整以适应不同的口径. 
+		</text>
+	</string>
+	<string id="st_mag_aug_5.56x45">
+		<text>标准5.56x45 AUG弹匣</text>
+	</string>
+	<string id="st_mag_aug_5.56x45_descr">
+		<text>
+			第一代AUG步枪专有的30发弹匣. 后来的变种有一个弹匣,使其适应使用标准STANAG模式. 
+		</text>
+	</string>
+	
+	<string id="st_mag_g36_5.56x45">
+		<text>标准5.56x45 G36弹匣</text>
+	</string>
+	<string id="st_mag_g36_5.56x45_descr">
+		<text>
+		标准半透明的G36弹匣,可容纳30发5.56x45子弹. 
+		</text>
+	</string>
+	
+	<string id="st_mag_stanag">
+		<text>标准 5.56x45 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_stanag_descr">
+		<text>
+		30-round HK STANAG magazine used by a majority of NATO assault rifles,including the M4 carbine,M16,LR-300,L85 and FN F2000. It is rumored that Freedom is covertly supplied by NATO or another Western power,which explains this magazine's strange abundance in the Zone.
+		</text>
+	</string>
+
+
+	<string id="st_mag_nato_5.45x39">
+		<text>改进版5.45x39 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_nato_5.45x39_descr">
+		<text>
+			30发STANAG弹匣改进版可供5.45x39子弹使用. 为什么有人会以这种方式改装一支步枪,谁也不知道. 
+		</text>
+	</string>
+	<string id="st_mag_nato_5.56x45_fast">
+		<text>快速5.56x45 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_nato_5.56x45_fast_descr">
+		<text>
+		现代PMAG式弹匣可容纳30发子弹. 比钢制的要轻得多,符合人体工程学的设计有利于快速装弹. 
+		</text>
+	</string>
+	
+	<string id="st_mag_nato_5.56x45_extended">
+		<text>加长版5.56x45 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_nato_5.56x45_extended_descr">
+		<text>
+			加长版40发聚合物弹匣,与大多数北约步枪兼容. 
+		</text>
+	</string>
+
+	<string id="st_mag_nato_5.56x45_casket">
+		<text>60发5.56x45 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_nato_5.56x45_casket_descr">
+		<text>
+			60发四连发弹匣,与北约步枪兼容. 提供了很大的火力,但非常重,而且四叠弹的性质使得它难以快速装弹. 
+		</text>
+	</string>
+	
+	<string id="st_mag_sig550_5.56x45">
+		<text>标准5.56x45 SG550弹匣</text>
+	</string>
+	<string id="st_mag_sig550_5.56x45_descr">
+		<text>
+		瑞士制造的SG550-1弹匣可容纳20发子弹. 用于SG550-1狙击手变体,但也可用于同系列的其他步枪. 
+		</text>
+	</string>
+
+	<string id="st_mag_sig550_sniper_5.56x45">
+		<text>20发5.56x45 SG550-1弹匣</text>
+	</string>
+	<string id="st_mag_sig550_sniper_5.56x45_descr">
+		<text>
+		瑞士制造的SG550-1弹匣可容纳20发子弹. 用于SG550-1狙击手变体,但也可用于同系列的其他步枪. 
+		</text>
+	</string>
+	<string id="st_mag_m249_5.56x45">
+		<text>标准5.56x45 M249弹仓x</text>
+	</string>
+	<string id="st_mag_m249_5.56x45_descr">
+		<text>
+			盒子里有一条皮带,可以装100发5.56x45子弹. M249是自由军前哨的常见装备,对黑石集团的侵犯者提供大量的压制火力. 
+		</text>
+	</string>
+	
+	<string id="st_mag_xm8_5.56x45">
+		<text>标准XM8弹匣5.56x45口径</text>
+	</string>
+	<string id="st_mag_xm8_5.56x45_descr">
+		<text>
+		标准XM8弹匣5.56x45口径.
+		</text>
+	</string>
+
+	<string id="st_mag_type63_7.62x39">
+		<text>标准7.62x39类63弹匣</text>
+	</string>
+	<string id="st_mag_type63_7.62x39_descr">
+		<text>
+		20发弹匣为类63步枪,由冲压钢制成. 在 "区 "中发现的大多数63类弹匣都去掉了枪栓固定装置,因此它们可以适用于更常见的AKM弹匣. 这种弹匣也可以装入AK式步枪. 
+		</text>
+	</string>
+	
+	<string id="st_mag_type63_7.62x54">
+		<text>改进版7.62x54类63弹匣</text>
+	</string>
+	<string id="st_mag_type63_7.62x54_descr">
+		<text>
+			63型弹匣改进版,适合7.62x54R大口径子弹. 63式是土匪团伙的最爱；改装成全尺寸步枪弹是土匪技术员Limpid的专长. 
+		</text>
+	</string>
+	<!-- 9x39 -->
+	<string id="st_mag_val_9x39_pab9">
+		<text>20发9x39 AS VAL弹匣</text>
+	</string>
+	<string id="st_mag_val_9x39_pab9_descr">
+		<text>
+			标准20发AS VAL弹匣,也与SR-3M和VSS步枪兼容. 命名为 "6L25". 
+		</text>
+	</string>
+
+	<string id="st_mag_vihr_9x39_pab9">
+		<text>30发9x39 SR-3M弹匣</text>
+	</string>
+	<string id="st_mag_vihr_9x39_pab9_descr">
+		<text>
+		30发9x39弹匣,标准配备SR-3M "Vihr "步枪. 也与VSS和AS VAL步枪兼容. 命名为 "SR3M.130"
+		</text>
+	</string>
+	
+	<string id="st_mag_vintorez_9x39_pab9">
+		<text>10发9x39 VSS弹匣</text>
+	</string>
+	<string id="st_mag_vintorez_9x39_pab9_descr">
+		<text>
+		标准10发VSS弹匣,也与AS VAL和SR3M步枪兼容. 命名为 "6L24". 
+		</text>
+	</string>
+	
+	<string id="st_mag_vsk94_9x39_pab9">
+		<text>标准9x39 Box弹匣</text>
+	</string>
+	<string id="st_mag_vsk94_9x39_pab9_descr">
+		<text>
+			9A-91和VSK-94步枪中使用的20发盒弹匣. 
+		</text>
+	</string>
+	
+	<string id="st_mag_groza_9x39_pab9">
+		<text>20发9x39 Groza弹匣</text>
+	</string>
+	<string id="st_mag_groza_9x39_pab9_descr">
+		<text>
+			20发弹匣的9x39,标准配备了OTs-14 Groza突击步枪. 设计类似于AK式弹匣. 
+		</text>
+	</string>
+	
+
+<!--
+sniper rifles / full size rifles
+-->
+	
+		
+	<string id="st_mag_g43_7.92x33">
+		<text>标准7.92x57 G43弹匣</text>
+	</string>
+	<string id="st_mag_g43_7.92x33_descr">
+		<text>
+			标准10发弹匣,用于Gewehr43
+		</text>
+	</string>
+
+	<string id="st_mag_galil_7.62x51">
+		<text>标准7.62x51 Galil弹匣</text>
+	</string>
+	<string id="st_mag_galil_7.62x51_descr">
+		<text>
+		标准20发弹匣,用于以色列的加利尔战斗步枪. 
+		</text>
+	</string>
+	
+	<string id="st_mag_stanag_7.62x51">
+		<text>标准 7.62x51 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_stanag_7.62x51_descr">
+		<text>
+			Standard STANAG-style Magazine for 7.62x51 NATO rounds. Used in the HK417,SCAR and SR-25. Holds 20 rounds.
+		</text>
+	</string>
+	
+	<string id="st_mag_stanag_7.62x51_ext">
+		<text>Extended 7.62x51 STANAG Magazine</text>
+	</string>
+	<string id="st_mag_stanag_7.62x51_ext_descr">
+		<text>
+			使用7.62x51 NATO子弹的现代PMAG型扩展弹匣.  用于HK417,SCAR 以及 SR-25. 容量30发.
+		</text>
+	</string>
+	
+	<string id="st_mag_stanag_fast_7.62x51">
+		<text>快速 7.62x51 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_stanag_fast_7.62x51_descr">
+		<text>
+			使用7.62x51 NATO子弹的现代PMAG型弹匣. 用于HK417,SCAR 以及 SR-25. 容量20发.
+		</text>
+	</string>
+	<string id="st_mag_stanag_7.62x51_short">
+		<text>10发 7.62x51 STANAG弹匣</text>
+	</string>
+	<string id="st_mag_stanag_7.62x51_short_descr">
+		<text>
+			使用7.62x51 NATO子弹的紧凑型的10发STANAG型弹匣. KAC SR-25附赠,但是也可以用于HK417 和 SCAR Mk. 17.
+		</text>
+	</string>
+
+	<string id="st_mag_hinge_7.62x51">
+		<text>标准7.62x51弹匣</text>
+	</string>
+	<string id="st_mag_hinge_7.62x51_descr">
+		<text>
+		标准20发7.62x51弹匣用于战斗步枪的铰链弹匣锁定机制. 无论这种风格的武器和弹匣之间的兼容性有多小的差异,都已经被特异区的技术人员 "解决 "了. 用于FN FAL,Mk. 14 EBR和G3步枪. 
+		</text>
+	</string>
+
+	<string id="st_mag_hinge_ext_7.62x51">
+		<text>加长版7.62x51弹匣</text>
+	</string>
+	<string id="st_mag_hinge_ext_7.62x51_descr">
+		<text>
+		加长版30发7.62x51弹匣,用于战斗步枪的铰链弹匣锁定机制. 用于FN FAL,Mk. 14 EBR和G3步枪. 
+		</text>
+	</string>
+	
+	<string id="st_mag_l96a1_7.62x51">
+		<text>10发7.62x51 L96A1弹匣</text>
+	</string>
+	<string id="st_mag_l96a1_7.62x51_descr">
+		<text>
+		L96A1的标准装备10发弹匣. L96是西方雇佣军和黑石公司部队的最爱. 
+		</text>
+	</string>
+
+	<string id="st_mag_remington700_7.62x51">
+		<text>标准7.62x51雷明顿700弹匣</text>
+	</string>
+	<string id="st_mag_remington700_7.62x51_descr">
+		<text>
+		标准5发雷明顿700弹匣. 雷明顿700是一种流行的猎枪,在特异区的条件下表现相当好. 
+		</text>
+	</string>
+
+	<string id="st_mag_wa2000_7.62x51">
+		<text>标准Walther WA 2000弹匣7.62x51口径</text>
+	</string>
+	<string id="st_mag_wa2000_7.62x51_descr">
+		<text>
+		标准Walther WA 2000弹匣calibre 7.62x51口径
+		</text>
+	</string>
+
+
+	<string id="st_mag_pkm_pkm">
+		<text>100发7.62x54 PKM弹仓</text>
+	</string>
+	<string id="st_mag_pkm_pkm_descr">
+		<text>
+			沉重的盒子,可容纳100发7.62x54R的子弹,装在腰带上,用于PKM枪的使用. 如果你打算猎杀伪君子或奇美拉,建议带几个这样的箱子. 
+		</text>
+	</string>
+
+	<string id="st_mag_l96a1_pkm">
+		<text>改进版10发7.62x54 L96A1弹匣</text>
+	</string>
+	<string id="st_mag_l96a1_pkm_descr">
+		<text>
+		改进版L96A1弹匣7.62x54口径.
+		</text>
+	</string>
+	
+	<string id="st_mag_sv98_7.62x54">
+		<text>标准7.62x54 SV98弹匣</text>
+	</string>
+	<string id="st_mag_sv98_7.62x54_descr">
+		<text>
+			标准10发聚合物弹匣,用于SV-98狙击步枪. SV-98主要由俄罗斯执法部门使用；有限的数量已经通过秘密渠道进入责任派手中. 
+		</text>
+	</string>
+	
+	<string id="st_mag_svd_7.62x54">
+		<text>标准7.62x54 SVD弹匣</text>
+	</string>
+	<string id="st_mag_svd_7.62x54_descr">
+		<text>
+			标准10发弹匣为SVD和SVU狙击步枪. SVD受到所有派别成员的欢迎,如果他们能得到这样一支步枪的话. 
+		</text>
+	</string>
+
+	<string id="st_mag_svd_7.62x54_extended">
+		<text>20发7.62x54 SVD弹匣</text>
+	</string>
+	<string id="st_mag_svd_7.62x54_extended_descr">
+		<text>
+			加长版20发弹匣,用于SVD和SVU狙击步枪. 通常与SVU-A步枪一起使用,使其在近距离交战中暂时充当LMG的角色. 
+		</text>
+	</string>
+	
+	<string id="st_mag_svt40_7.62x54">
+		<text>标准7.62x54 SVT-40弹匣</text>
+	</string>
+	<string id="st_mag_svt40_7.62x54_descr">
+		<text>
+			标准10发弹匣与SVT-40步枪一起使用. SVT-40是一支经典的大战步枪,受到许多潜行者的欢迎,特别是独行者. 
+		</text>
+	</string>
+	
+	<string id="st_mag_svt40_pkm">
+		<text>标准7.62x54 SVT-40弹匣</text>
+	</string>
+	<string id="st_mag_svt40_pkm_descr">
+		<text>
+			标准10发弹匣与SVT-40步枪一起使用. SVT-40是一支经典的大战步枪,受到许多潜行者的欢迎,特别是独行者. 这个变体已经被轻微地改进版,以允许装载7.62x54机枪子弹. 
+		</text>
+	</string>
+	
+	<string id="st_mag_svt40_7.62x39">
+		<text>改进版7.62x39 SVT-40弹匣</text>
+	</string>
+	<string id="st_mag_svt40_7.62x39_descr">
+		<text>
+			SVT-40弹匣改进版,可装填7.62x39的中级弹. 
+		</text>
+	</string>
+	
+	<string id="st_mag_trg_magnum_300">
+		<text>标准.338 LM弹匣</text>
+	</string>
+	<string id="st_mag_trg_magnum_300_descr">
+		<text>
+			5发弹匣用于Sako TRG-42,L96 AWM和M24 SWS. 这个弹匣最初是为Sako设计的,然而,它已经被稍微 "修改 "以适应不同的步枪. 在大多数步枪中都能正常使用,只要你记得每隔一段时间就敲一下弹匣. 
+		</text>
+	</string>
+
+	<string id="st_mag_l96a1m_magnum_300">
+		<text>10发.338 LM L96A1弹匣</text>
+	</string>
+	<string id="st_mag_l96a1m_magnum_300_descr">
+		<text>
+			L96A1的标准版10发弹匣,适合稍大且威力更大的.338 Lapua Magnum. L96是西方雇佣军和黑石集团部队的最爱. 
+		</text>
+	</string>
+	
+	<string id="st_mag_m98b_magnum_300">
+		<text>标准.338 LM M98B弹匣</text>
+	</string>
+	<string id="st_mag_m98b_magnum_300_descr">
+		<text>
+			10发弹匣与巴雷特M98B兼容. 
+		</text>
+	</string>
+	
+	
+	<string id="st_mag_vssk_12.7x55">
+		<text>标准12.7x55 VSSK弹匣</text>
+	</string>
+	<string id="st_mag_vssk_12.7x55_descr">
+		<text>
+		标准5发弹匣用于VSSK狙击步枪. 
+		</text>
+	</string>
+
+	<string id="st_mag_ash12_12.7x55">
+		<text>标准12.7x55 ASh-12弹匣</text>
+	</string>
+	<string id="st_mag_ash12_12.7x55_descr">
+		<text>
+		标准ASh-12弹匣,可容纳10发子弹. 对于人类目标来说,不太可能需要超过10发子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_ash12_ext_12.7x55">
+		<text>加长版12.7x55 ASh-12弹匣</text>
+	</string>
+	<string id="st_mag_ash12_ext_12.7x55_descr">
+		<text>
+		加长版ASh-12弹匣,可容纳20发子弹. 当你需要击倒巨大的变异怪物时. 
+		</text>
+	</string>
+
+	<string id="st_mag_m82_12.7x55">
+		<text>10发12.7x55 M82弹匣</text>
+	</string>
+	<string id="st_mag_m82_12.7x55_descr">
+		<text>
+			10发弹匣的巴雷特M82步枪,改进版适合12.7x55 STs子弹. 第一个带来这种怪物武器的潜行者在耗尽弹药后将其丢弃；有进取心的技术人员对这种武器进行了改装,以发射更常见的子弹,而不需要更换非常沉重的枪管. 
+		</text>
+	</string>
+	
+	
+	<string id="st_mag_saiga12s_12x70">
+		<text>标准12x76 Saiga-12S弹匣</text>
+	</string>
+	<string id="st_mag_saiga12s_12x70_descr">
+		<text>
+		标准Saiga-12S弹匣,可装8发子弹. 赛格枪是一种质量好的猎枪,很受值班人员的欢迎. 
+		</text>
+	</string>
+
+	<string id="st_mag_saiga12s_ext_12x70">
+		<text>加长版12x76 Saiga-12S弹匣</text>
+	</string>
+	<string id="st_mag_saiga12s_ext_12x70_descr">
+		<text>
+		加长版Saiga-12S弹匣,可容纳12发炮弹. 更多的炮弹意味着你可以杀死更多的变异怪物,每一个弹匣. 
+		</text>
+	</string>
+	
+	<string id="st_mag_usas12_12x70">
+		<text>标准12x76 USAS-12 弹鼓</text>
+	</string>
+	<string id="st_mag_usas12_12x70_descr">
+		<text>
+		USAS-12自动猎枪的20发,USAS-12提供的火力在短距离内是无与伦比的,尽管它的重量和弹匣体积使它不适合随身携带. 
+		</text>
+	</string>
+
+	<string id="st_mag_vepr_12x70">
+		<text>标准12x76 Vepr-12弹匣</text>
+	</string>
+	<string id="st_mag_vepr_12x70_descr">
+		<text>
+			Vepr-12的标准10发. 尽管它们有相似之处,但Vepr不能与Saiga共享弹匣. 
+		</text>
+	</string>
+
+	<string id="st_mag_vepr_compact_12x70">
+		<text>轻型版12x76 Vepr-12弹匣</text>
+	</string>
+	<string id="st_mag_vepr_compact_12x70_descr">
+		<text>
+			Vepr-12的小弹匣,只有5个弹容量. 不要被骗了--弹匣可以放在你的口袋里,而且非常容易装弹. 
+		</text>
+	</string>
+
+</string_table>

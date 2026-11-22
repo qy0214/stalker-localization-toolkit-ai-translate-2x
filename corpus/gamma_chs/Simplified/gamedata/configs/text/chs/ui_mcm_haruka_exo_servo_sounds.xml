@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_exo_servo_sounds_title">
+		<text>动力外骨骼音效</text>
+	</string>
+	<string id="ui_mcm_menu_exo_servo_sounds">
+		<text>动力外骨骼音效</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_walk">
+		<text>音量(走路)</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_walk_desc">
+		<text>走路时音量</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_land">
+		<text>音量(落地)</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_land_desc">
+		<text>落地时音量</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_jump">
+		<text>音量(起跳时)</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_volume_jump_desc">
+		<text>起跳时音量</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_discharge">
+		<text>释放</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_discharge_desc">
+		<text>遭遇电力异常点导致电力流失</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_scale_freq">
+		<text>频率缩放</text>
+	</string>
+	<string id="ui_mcm_exo_servo_sounds_scale_freq_desc">
+		<text>根据状态（步行、爬行、冲刺等）缩放声音频率</text>
+	</string>
+</string_table>

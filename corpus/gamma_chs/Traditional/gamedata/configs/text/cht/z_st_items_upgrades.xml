@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Upgrading Parts
+-->
+
+<string_table>
+
+<!-- Outfits -->
+	<string id="st_upgr_o_health">
+		<text>防具套件 'HPs-1'</text>
+	</string>
+	<string id="st_upgr_o_health_desc">
+		<text>包含各種機械裝置的套裝，帶有不同種類的注射器和無菌液體儲存器。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_bleed">
+		<text>防具套件 'KrV'</text>
+	</string>
+	<string id="st_upgr_o_bleed_desc">
+		<text>包含各種機械裝置的套裝，帶有不同種類的注射器和無菌液體儲存器。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+	
+    <string id="st_upgr_o_power">
+		<text>防具套件 'UPRz'</text>
+	</string>
+	<string id="st_upgr_o_power_desc">
+		<text>包含各種元件、緊固帶和其他零碎物品的套裝。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+    
+	<string id="st_upgr_o_carry">
+		<text>防具套件 'OSEL'</text>
+	</string>
+	<string id="st_upgr_o_carry_desc">
+		<text>包含各種元件、緊固帶和其他零碎物品的套裝。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_arty">
+		<text>防具套件 'APTe'</text>
+	</string>
+	<string id="st_upgr_o_arty_desc">
+		<text>包含各種元件、緊固帶和其他零碎物品的套裝。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_run">
+		<text>防具套件 'DVgt'</text>
+	</string>
+	<string id="st_upgr_o_run_desc">
+		<text>包含一些奇怪的高級液壓馬達的包。\n這個套件本身沒什麼用，但可以與其他一些相同質量的防具套件組合，以建立一套防具實用升級套件。\n \n
+		</text>
+	</string>
+	
+	
+	<string id="st_upgr_o_armor">
+		<text>防彈材料包 'BRna'</text>
+	</string>
+	<string id="st_upgr_o_armor_desc">
+		<text>包含各種型別的防彈板和襯墊的包裹：凱夫拉爾、鈦、綠柱石、鋁、聚合物和碳纖維。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的防彈材料包組合，打造一個防彈材料包升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_damage">
+		<text>防彈材料包 'PzDH'</text>
+	</string>
+	<string id="st_upgr_o_damage_desc">
+		<text>包含各種型別的防彈衣板和襯墊的包裹：凱夫拉爾、鈦、綠柱石、鋁、聚合物和碳纖維。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的防彈材料包組合，打造一個防彈材料包升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_durability">
+		<text>防彈材料包 'PRCh'</text>
+	</string>
+	<string id="st_upgr_o_durability_desc">
+		<text>包含各種型別的防彈衣板和襯墊的包裹：凱夫拉爾、鈦、綠柱石、鋁、聚合物和碳纖維。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的防彈材料包組合，打造一個防彈材料包升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_weight">
+		<text>防彈材料包 'LGkY'</text>
+	</string>
+	<string id="st_upgr_o_weight_desc">
+		<text>包含各種型別的防彈衣板和襯墊的包裹：凱夫拉爾、鈦、綠柱石、鋁、聚合物和碳纖維。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的防彈材料包組合，打造一個防彈材料包升級套件。\n \n
+		</text>
+	</string>
+
+	<string id="st_upgr_o_chem">
+		<text>核生化防護材料包 'CHM-1'</text>
+	</string>
+	<string id="st_upgr_o_chem_desc">
+		<text>此套件包含耐高溫、耐電壓和 CBRN 威脅的各種服裝材料。\n這個套件本身沒什麼用，但可以與其他一些相同質量的核生化防護材料包組合，打造一個適用於環境保護的升級套件。\n \n
+        </text>
+	</string>
+	
+	<string id="st_upgr_o_burn">
+		<text>核生化防護材料包 'KHMy'</text>
+	</string>
+	<string id="st_upgr_o_burn_desc">
+		<text>此套件包含耐高溫、耐電壓和 CBRN 威脅的各種服裝材料。\n這個套件本身沒什麼用，但可以與其他一些相同質量的核生化防護材料包組合，打造一個適用於環境保護的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_shock">
+		<text>核生化防護材料包 'MSCh'</text>
+	</string>
+	<string id="st_upgr_o_shock_desc">
+		<text>此套件包含耐高溫、耐電壓和 CBRN 威脅的各種服裝材料。\n這個套件本身沒什麼用，但可以與其他一些相同質量的核生化防護材料包組合，打造一個適用於環境保護的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_psi">
+		<text>核生化防護材料包 'MZg'</text>
+	</string>
+	<string id="st_upgr_o_psi_desc">
+		<text>此套件包含耐高溫、耐電壓和 CBRN 威脅的各種服裝材料。\n這個套件本身沒什麼用，但可以與其他一些相同質量的核生化防護材料包組合，打造一個適用於環境保護的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_rad">
+		<text>核生化防護材料包 'CHst'</text>
+	</string>
+	<string id="st_upgr_o_rad_desc">
+		<text>此套件包含耐高溫、耐電壓和 CBRN 威脅的各種服裝材料。\n這個套件本身沒什麼用，但可以與其他一些相同質量的核生化防護材料包組合，打造一個適用於環境保護的升級套件。\n \n
+		</text>
+	</string>
+	
+
+<!-- Weapons -->
+
+	<string id="st_upgr_w_reliability">
+		<text>小型武器調校包 'D-11'</text>
+	</string>
+	<string id="st_upgr_w_reliability_desc">
+		<text>包裹內含各種武器的各種零件，包括扳機機構、螺栓和托架、復進彈簧和導桿。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個武器裝置的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_recoil">
+		<text>小型武器調校包 'K-01'</text>
+	</string>
+	<string id="st_upgr_w_recoil_desc">
+		<text>包裹內含各種武器的各種零件，包括扳機機構、螺栓和托架、復進彈簧和導桿。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個武器裝置的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_calibre">
+		<text>小型武器調校包 'C-22'</text>
+	</string>
+	<string id="st_upgr_w_calibre_desc">
+		<text>包裹內含各種武器的各種零件，包括扳機機構、螺栓和托架、復進彈簧和導桿。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個武器裝置的升級套件。\n \n
+		</text>
+	</string>
+
+	<string id="st_upgr_w_rpm">
+		<text>小型武器調校包 'R-39'</text>
+	</string>
+	<string id="st_upgr_w_rpm_desc">
+		<text>包裹內含各種武器的各種零件，包括扳機機構、螺栓和托架、復進彈簧和導桿。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個武器裝置的升級套件。\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_firemode">
+		<text>小型武器調校包 'F-23'</text>
+	</string>
+	<string id="st_upgr_w_firemode_desc">
+		<text>包裹內含各種武器的各種零件，包括扳機機構、螺栓和托架、復進彈簧和導桿。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個武器裝置的升級套件。\n \n
+		</text>
+	</string>
+
+	<string id="st_upgr_w_weight">
+		<text>小型武器調校包 'W-02'</text>
+	</string>
+	<string id="st_upgr_w_weight_desc">
+		<text>盒子裡裝滿了各種槍支的隨機握把、補償器、替換槍管和聚合物傢俱。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個用於武器主體的升級套件。\n\n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_speed">
+		<text>小型武器調校包 'V-99'</text>
+	</string>
+	<string id="st_upgr_w_speed_desc">
+		<text>盒子裡裝滿了各種槍支的隨機握把、補償器、替換槍管和聚合物傢俱。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個用於武器主體的升級套件。\n\n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_magazine">
+		<text>小型武器調校包 'M-45'</text>
+	</string>
+	<string id="st_upgr_w_magazine_desc">
+		<text>盒子裡裝滿了各種槍支的隨機握把、補償器、替換槍管和聚合物傢俱。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個用於武器主體的升級套件。\n\n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_dispersion">
+		<text>小型武器調校包 'D-19'</text>
+	</string>
+	<string id="st_upgr_w_dispersion_desc">
+		<text>盒子裡裝滿了各種槍支的隨機握把、補償器、替換槍管和聚合物傢俱。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個用於武器主體的升級套件。\n\n
+		</text>
+	</string>
+	
+	<string id="st_upgr_w_inertion">
+		<text>小型武器調校包 'H-7'</text>
+	</string>
+	<string id="st_upgr_w_inertion_desc">
+		<text>盒子裡裝滿了各種槍支的隨機握把、補償器、替換槍管和聚合物傢俱。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的小型武器調校包組合，打造一個用於武器主體的升級套件。\n\n
+		</text>
+	</string>
+	
+	
+	<string id="st_upgr_w_muffle">
+		<text>槍支光學元件和支架套裝 'SPS'</text>
+	</string>
+	<string id="st_upgr_w_muffle_desc">
+		<text>包含各種安裝支架、為槍管新增螺紋的工具，以及不同質量的光學瞄準器。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的套裝組合，打造一個用於武器主體的升級套件。\n\n
+        </text>
+	</string>
+	
+	<string id="st_upgr_w_grenade_mount">
+		<text>槍支光學元件和支架套裝 'Gzh-L'</text>
+	</string>
+	<string id="st_upgr_w_grenade_mount_desc">
+		<text>包含各種安裝支架、為槍管新增螺紋的工具，以及不同質量的光學瞄準器。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的套裝組合，打造一個用於武器主體的升級套件。\n\n
+        </text>
+	</string>
+	
+	<string id="st_upgr_w_scope">
+		<text>槍支光學元件和支架套裝 'OByE'</text>
+	</string>
+	<string id="st_upgr_w_scope_desc">
+		<text>包含各種安裝支架、為槍管新增螺紋的工具，以及不同質量的光學瞄準器。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的套裝組合，打造一個用於武器主體的升級套件。\n\n
+        </text>
+	</string>
+	
+	<string id="st_upgr_w_scope_mount">
+		<text>槍支光學元件和支架套裝 'MTt'</text>
+	</string>
+	<string id="st_upgr_w_scope_mount_desc">
+		<text>包含各種安裝支架、為槍管新增螺紋的工具，以及不同質量的光學瞄準器。\n這個包裹本身沒什麼用，但可以與其他一些相同質量的套裝組合，打造一個用於武器主體的升級套件。\n\n
+        </text>
+	</string>
+
+</string_table>

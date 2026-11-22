@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+<!--
+    messages are constructed based on scenarios => parts => variants
+    1. scenario is a message template, used to represent some sort of topic
+    2. parts are what construct the message
+    3. variants are a set of many strings for a single part, the script will use one of them to represent the part
+    
+    for message title <string id="st_msg_stash_title_scenario_variant">
+    for message itself <string id="st_msg_stash_scenario_part_variant">
+
+    You can have as many scenarios, parts and variants you want. Make sure to follow the numeric values without a break (1 followed by 3 will make the script ignore the 3)
+-->
+
+<!-- stash = found a stash by accident -->
+    <string id="st_msg_stash_title_1_1">
+        <text>找到了一個藏物點</text>
+    </string>
+    <string id="st_msg_stash_title_1_2">
+        <text>藏物點!</text>
+    </string>
+    <string id="st_msg_stash_title_1_3">
+        <text>找到東西了!</text>
+    </string>
+    <string id="st_msg_stash_title_1_4">
+        <text>這裡面能有啥?</text>
+    </string>
+    <string id="st_msg_stash_title_1_5">
+        <text>隱藏的東西!</text>
+    </string>
+    <string id="st_msg_stash_title_1_6">
+        <text>這很可能是個大寶箱</text>
+    </string>
+
+    <string id="st_msg_stash_1_1_1">
+        <text>因為我記性不好所以做個筆記:</text>
+    </string>
+    <string id="st_msg_stash_1_1_2">
+        <text>嘿, 老夥計! 你猜怎麼著!</text>
+    </string>
+    <string id="st_msg_stash_1_1_3">
+        <text>今天真是糟透了, 一切照舊, 但這件事情有點意思</text>
+    </string>
+    <string id="st_msg_stash_1_1_4">
+        <text>這有些東西你可能會感興趣</text>
+    </string>
+    <string id="st_msg_stash_1_1_5">
+        <text>一個提醒而已</text>
+    </string>
+    <string id="st_msg_stash_1_1_6">
+        <text>我有些好東西給你</text>
+    </string>
+
+    <string id="st_msg_stash_1_2_1">
+        <text>我在旅途中發現了這個藏匿處, 但當時情況危急, 所以我沒去仔細看</text>
+    </string>
+    <string id="st_msg_stash_1_2_2">
+        <text>我發現周圍有個揹包樣子的東西, 不知道是不是有人故意放在那裡的, 但肯定是不想讓人發現</text>
+    </string>
+    <string id="st_msg_stash_1_2_3">
+        <text>我剛才被一群餓狗追得滿山跑時發現了一個舊藏物點, 看起來還沒被人動過</text>
+    </string>
+    <string id="st_msg_stash_1_2_4">
+        <text>我今天早些時候發現了個藏物點, 但當時我沒時間停下來去看, 幸運的是它藏得很好</text>
+    </string>
+    <string id="st_msg_stash_1_2_5">
+        <text>$map有一個藏物點, 但我還沒有機會去檢查它</text>
+    </string>
+
+    <string id="st_msg_stash_1_3_1">
+        <text>如果有機會我會再去檢查一次的, 我能感覺到我這次會走運的</text>
+    </string>
+    <string id="st_msg_stash_1_3_2">
+        <text>也許有人想把他的東西藏在這裡?</text>
+    </string>
+    <string id="st_msg_stash_1_3_3">
+        <text>我有空的時候就去看看, 希望沒人比我早到一步</text>
+    </string>
+    <string id="st_msg_stash_1_3_4">
+        <text>我想知道里面有什麼...</text>
+    </string>
+    <string id="st_msg_stash_1_3_5">
+        <text>祈禱裡面不是垃圾</text>
+    </string>
+    <string id="st_msg_stash_1_3_6">
+        <text>肯定有什麼東西放在那裡, 等四周沒動靜了之後再去看看</text>
+    </string>
+    <string id="st_msg_stash_1_3_7">
+        <text>希望裡面全是昂貴的裝備或是價值連城的神器</text>
+    </string>
+	
+	
+<!-- Death of a friend = buried stash or just mournful message -->
+	<string id="st_msg_death_title_1_1">
+		<text>我很抱歉</text>
+	</string>
+	<string id="st_msg_death_title_1_2">
+		<text>又有一個人死在了特異區</text>
+	</string>
+	<string id="st_msg_death_title_1_3">
+		<text>我埋葬了我們的朋友</text>
+	</string>
+	<string id="st_msg_death_title_1_4">
+		<text>他是個好人</text>
+	</string>
+	<string id="st_msg_death_title_1_5">
+		<text>又有一個人倒下了...</text>
+	</string>
+	<string id="st_msg_death_title_1_6">
+		<text>壞訊息</text>
+	</string>
+	<string id="st_msg_death_title_1_7">
+		<text>好兄弟死了</text>
+	</string>
+	<string id="st_msg_death_title_1_8">
+		<text>特異區帶走了這個二逼</text>
+	</string>
+
+	<string id="st_msg_death_1_1_1">
+        <text>我們的戰友剛剛死了</text>
+    </string>
+	<string id="st_msg_death_1_1_2">
+        <text>$fname 迴歸大地了</text>
+    </string>
+	<string id="st_msg_death_1_1_3">
+        <text>我們永遠失去了 $fname</text>
+    </string>
+	<string id="st_msg_death_1_1_4">
+        <text>$fname $lname 最後還是沒撐下去</text>
+    </string>
+	<string id="st_msg_death_1_1_5">
+        <text>今天是 $fname $lname 的忌日</text>
+    </string>
+
+	<string id="st_msg_death_1_2_1">
+        <text>我們剛剛打完獵, 不知道從哪裡冒出一隻野豬頂死了他</text>
+    </string>
+	<string id="st_msg_death_1_2_2">
+        <text>就是一條回營地的通常路線而已, 我們走了上千次... 但他踩到了奇點, 我們只能眼睜睜地看著他被拉向天空</text>
+    </string>
+	<string id="st_msg_death_1_2_3">
+        <text>我們出去巡邏時, 他莫名其妙中了一槍, 當時所有人都驚了</text>
+    </string>
+	<string id="st_msg_death_1_2_4">
+        <text>在我們躲避能量風暴時, 變異鼠蜂擁而至, 當時的藏身處根本沒有空間來躲避它們, $c1_fname很快就被圍攻了, 那些小怪物們直接咬穿了他的護甲</text>
+    </string>
+	<string id="st_msg_death_1_2_5">
+        <text>我們看到他正在盡力躲避一群盲犬, 但在我們趕跑那些盲犬之前他就被咬死了</text>
+    </string>
+	<string id="st_msg_death_1_2_6">
+        <text>我也不知道發生了什麼, 但當我們找到他時...唉...</text>
+    </string>
+
+	<string id="st_msg_death_1_3_1">
+        <text>我們已經盡力了, 當我們正在固定傷口時他就已經失血過多了</text>
+    </string>
+	<string id="st_msg_death_1_3_2">
+        <text>他傷得太重了</text>
+    </string>
+	<string id="st_msg_death_1_3_3">
+        <text>他的身體肯定承受不住</text>
+    </string>
+	<string id="st_msg_death_1_3_4">
+        <text>還要承受多少傷痛, 還要流多少血...</text>
+    </string>
+	<string id="st_msg_death_1_3_5">
+        <text>我們沒有足夠的醫療品了...</text>
+    </string>
+
+	<string id="st_msg_death_1_4_1">
+        <text>他太不走運了</text>
+    </string>
+	<string id="st_msg_death_1_4_2">
+        <text>我們也做不了什麼</text>
+    </string>
+	<string id="st_msg_death_1_4_3">
+        <text>我很抱歉</text>
+    </string>
+	<string id="st_msg_death_1_4_4">
+        <text>他沒被痛苦折磨太久</text>
+    </string>
+	<string id="st_msg_death_1_4_5">
+        <text>他是一個非常好的潛行者</text>
+    </string>
+	<string id="st_msg_death_1_4_6">
+        <text>今晚我們將開一瓶伏特加來紀念他</text>
+    </string>
+
+<!-- map route = got info from someone on route-->
+    <string id="st_msg_map_title_1_1">
+        <text>這個資訊可能會有用...</text>
+    </string>
+    <string id="st_msg_map_title_1_2">
+        <text>這條路看起來不錯</text>
+    </string>
+    <string id="st_msg_map_title_1_3">
+        <text>來看看這條路線</text>
+    </string>
+    <string id="st_msg_map_title_1_4">
+        <text>找到了一條新路線</text>
+    </string>
+    <string id="st_msg_map_title_1_5">
+        <text>這有秘密路徑</text>
+    </string>
+    <string id="st_msg_map_1_1_1">
+        <text>你好啊兄弟, 想聽一些有趣的事嗎?</text>
+    </string>
+    <string id="st_msg_map_1_1_2">
+        <text>你好老傢伙, 這些天過得如何?</text>
+    </string>
+    <string id="st_msg_map_1_1_3">
+        <text>嘿老夥計, 我是你以前的號友, 我有些好東西給你看</text>
+    </string>
+	<string id="st_msg_map_1_1_4">
+		<text>嘿! 看看是誰現在混大了!</text>
+	</string>
+	<string id="st_msg_map_1_1_7">
+		<text>我是你從來就不認識的一個好朋友</text>
+	</string>
+	<string id="st_msg_map_1_1_5">
+		<text>嘿呆子, 我是你老相好的朋友, 我有些好東西給你看</text>
+	</string>
+	<string id="st_msg_map_1_1_6">
+        <text>你好, 傻逼</text>
+    </string>
+
+    <string id="st_msg_map_1_2_1">
+        <text>我從商人那裡獲得了一些舊檔案, 他們提供了特異區周圍一些位置的詳細資訊, 看起來好像是一群研究人員寫的</text>
+    </string>
+    <string id="st_msg_map_1_2_2">
+        <text>今天我遇到了$c2_lname, 他很精明, 他告訴了我一條好走的通道, 可以在特異區中的某些地區安全移動</text>
+    </string>
+    <string id="st_msg_map_1_2_3">
+        <text>我從商人那裡買到了一些資訊, 那個混蛋為此收了很多錢</text>
+    </string>
+    <string id="st_msg_map_1_2_4">
+        <text>前幾天我從老夥計那得到了一點小小的幫助, 他曾經是一名嚮導, 但現在他已經洗手不幹了</text>
+    </string>
+    <string id="st_msg_map_1_2_5">
+        <text>一個老兵今天上午給我看了他的地圖, 我設法做了一點筆記</text>
+    </string>
+    <string id="st_msg_map_1_2_6">
+        <text>我遇見一個不久前剛被困在能量風暴中的潛行者, 顯然他躲的地方沒給他足夠的防護, 不管怎樣, 反正我檢查了他的PDA, 然後發現了很多有用的資訊</text>
+    </string>
+	<string id="st_msg_map_1_2_7">
+        <text>我剛才搜刮屍體時發現了一個PDA, 上面有許多難以置信的有趣資訊</text>
+    </string>
+    <string id="st_msg_map_1_3_1">
+        <text>看一看 $map_route_1 和 $map_route_2 間的這些路徑, 也許有一天你會用得上</text>
+    </string>
+    <string id="st_msg_map_1_3_2">
+        <text>還記得我們徹夜討論如何從 $map_route_1 到底 $map_route_2 嗎? 這裡就是那些不錯的路線, 別客氣!</text>
+    </string>
+	<string id="st_msg_map_1_3_3">
+        <text>在經過前幾天的嘗試過後, 我們發現了一條更安全的路線</text>
+    </string>
+	<string id="st_msg_map_1_3_4">
+        <text>這是 $map_route_1 和 $map_route_2之間的道路, 以前裡面全是異常點, 但現在不是了</text>
+    </string>
+    <string id="st_msg_map_1_4_1">
+        <text>現在我不能確保這就是最安全的路徑, 但我就知道這一條路了, 也許有機會我會問問其他人是否有更好的方法</text>
+    </string>
+    <string id="st_msg_map_1_4_2">
+        <text>牛逼吧? 需要幫忙時儘管喊我! 再見!</text>
+    </string>
+    <string id="st_msg_map_1_4_3">
+        <text>如果你打算有一天去這個地方, 請告訴我, 照顧好你自己</text>
+    </string>
+    <string id="st_msg_map_1_4_4">
+        <text>我不在的時候請小心行事, 別忘了你還欠我一杯酒</text>
+    </string>
+    <string id="st_msg_map_1_4_5">
+        <text>祝你好運! 如果你發現了什麼新路線, 請告訴我</text>
+    </string>
+	
+<!-- RF source = caught a signal by accident -->
+    <string id="st_msg_rf_title_1_1">
+        <text>無線電訊號!</text>
+    </string>
+    <string id="st_msg_rf_title_1_2">
+        <text>有什麼想法嗎?</text>
+    </string>
+    <string id="st_msg_rf_title_1_3">
+        <text>收到了有趣的無線電訊號</text>
+    </string>
+    <string id="st_msg_rf_title_1_4">
+        <text>什麼東西正在輸送訊號!</text>
+    </string>
+    <string id="st_msg_rf_title_1_5">
+        <text>無線電噪音</text>
+    </string>
+    <string id="st_msg_rf_1_1_1">
+        <text>嘿夥計, 又是 $c1_fname.真是個無聊的日子. 我們從 $leader 那裡獲得了另一個任務, 因此我們不得不在 $rf_map 停留一天</text>
+    </string>
+    <string id="st_msg_rf_1_1_2">
+        <text>嘿, 老夥計, 我是$c1_fname啊, 這幾天我在$rf_map有些事情要處理, 所以我一直在這呆著呢!</text>
+    </string>
+    <string id="st_msg_rf_1_1_3">
+        <text>$c1_fname 說. 我現在正在 $rf_map . 我的朋友 $c2_fname 告訴我這邊有很多神器, 所以現在我們在...</text>
+    </string>
+    <string id="st_msg_rf_1_2_1">
+        <text>還記得您給我的這個愚蠢的射頻接收器嗎? 我搞不懂為什麼在口袋裡有PDA時為什麼要用這個東西. 但有趣的是, 我在弄擺弄亂它時, 它突然開始發出蜂鳴聲併發出噪音!</text>
+    </string>
+    <string id="st_msg_rf_1_2_2">
+        <text>這真是漫長的一天. 我開始亂弄應該用於'緊急情況'的射頻接收器. 過了一會兒, 我開始聽到一些東西...</text>
+    </string>
+    <string id="st_msg_rf_1_2_3">
+        <text>我忘了關掉經常帶在身上的射頻接收器. 電池白白得耗掉了, 但每當我接近目的地時, 裝置就會響起很大的噪音...</text>
+    </string>
+    <string id="st_msg_rf_1_2_4">
+        <text>我真是太他媽的幸運了, 我的頻射接收器和PDA在我穿越一個電鍍變異時差點爆炸了. 我不敢相信我竟然活著出來了! 但我的裝置仍然正常執行著. 說到這, 接收器收到了什麼...</text>
+    </string>
+    <string id="st_msg_rf_1_2_5">
+        <text>頻射接收器很早就收到了一些令人毛骨悚然的聲音... 非常令人不安</text>
+    </string>
+    <string id="st_msg_rf_1_2_6">
+        <text>順帶一提, 我又聽見上次頻射接收器收到的噪音了. 和之前一模一樣</text>
+    </string>
+    <string id="st_msg_rf_1_2_7">
+        <text>射頻接收器最近一直收到一些怪異的聲音</text>
+    </string>
+    
+    <string id="st_msg_rf_1_3_1">
+        <text>它在 $rf_freq 千兆赫茲 頻率上收到了某種訊號, 我想它應該來自附近的某個地方</text>
+    </string>
+    <string id="st_msg_rf_1_3_2">
+        <text>$rf_map 中的某處正在 $rf_freq 千兆赫茲 上發送訊號,我覺得挺近的</text>
+    </string>
+    <string id="st_msg_rf_1_3_3">
+        <text>如果將接收器的頻率設定為 $rf_freq 千兆赫茲, 就會聽到奇怪的聲音, 就像某個變異生物試圖通過無線電進行交流</text>
+    </string>
+    <string id="st_msg_rf_1_3_5">
+        <text>簡直就像是那些變異生物在借用無線電波段交流一樣! 你不信的話, 把射頻接收器調到$rf_freq兆赫茲試試, 我發誓有時候真的會聽到!</text>
+    </string>
+    <string id="st_msg_rf_1_3_4">
+        <text>如果將接收器調諧到 $rf_freq 千兆赫茲 你可以聽到我所意思的聲音. 不管是誰或者什麼東西製造這些聲音 - 都是不令人愉快的, 不健康的</text>
+    </string>
+    <string id="st_msg_rf_1_4_1">
+        <text>我會四處看看哪裡有那個訊號</text>
+    </string>
+    <string id="st_msg_rf_1_4_2">
+        <text>你怎麼看?我想看看這是怎麼回事, 如果你想加入我, 就和我說一聲</text>
+    </string>
+    <string id="st_msg_rf_1_4_3">
+        <text>我想看看這到底是什麼鬼東西. 祝我們好運</text>
+    </string>
+    <string id="st_msg_rf_1_4_4">
+        <text>我們已經決定要調查這種噪音. 希望這只是些奇怪的噪音而不是什麼其它的東西</text>
+    </string>
+    <string id="st_msg_rf_1_4_5">
+        <text>我們將去那個地方巡邏, 看看是否可以找到噪音的來源. 回見</text>
+    </string>
+
+<!-- Chitchat = you took stuff from me -->
+    <string id="st_msg_chitchat_title_1_1">
+        <text>我的東西呢?</text>
+    </string>
+    <string id="st_msg_chitchat_title_1_2">
+        <text>我知道是你</text>
+    </string>
+    <string id="st_msg_chitchat_title_1_3">
+        <text>後會有期</text>
+    </string>
+    <string id="st_msg_chitchat_title_1_4">
+        <text>你覺得這樣很有趣?</text>
+    </string>
+    
+    <string id="st_msg_chitchat_1_1_1">
+        <text>喲 $fname, $c1_fname的這裡</text>
+    </string>
+    <string id="st_msg_chitchat_1_1_2">
+        <text>$fname 你個小傻逼...</text>
+    </string>
+    <string id="st_msg_chitchat_1_1_3">
+        <text>嘿</text>
+    </string>
+    <string id="st_msg_chitchat_1_1_4">
+        <text>$fname, 我知道!</text>
+    </string>
+    
+    <string id="st_msg_chitchat_1_2_1">
+        <text>你拿走了我一些儲備起來的香腸, 不是嗎?</text>
+    </string>
+    <string id="st_msg_chitchat_1_2_2">
+        <text>我揹包里的能量飲料都去哪了?!我知道是你, 你個卑鄙小人!</text>
+    </string>
+    <string id="st_msg_chitchat_1_2_3">
+        <text>輕輕地你走了, 不留下隻言片語. 沒關係, 除非你昨晚從我那拿走了三瓶伏特加!</text>
+    </string>
+    
+    <string id="st_msg_chitchat_1_3_1">
+        <text>當下次你的屁股出現在這裡時, 你最好為我準備些好處</text>
+    </string>
+    <string id="st_msg_chitchat_1_3_2">
+        <text>你給我記住, 當你的醜臉再次計劃在這裡出現時, 最好給我一點回報</text>
+    </string>
+    <string id="st_msg_chitchat_1_3_3">
+        <text>別以為我會放過你</text>
+    </string>
+    <string id="st_msg_chitchat_1_3_4">
+        <text>我受夠了你的胡說八道!來打我啊!</text>
+    </string>
+    <string id="st_msg_chitchat_1_3_5">
+        <text>你是個傻屌</text>
+    </string>
+    
+    <string id="st_msg_chitchat_1_4_1">
+        <text>商人想順便找你, 所以確認一下他想要的東西</text>
+    </string>
+    <string id="st_msg_chitchat_1_4_2">
+        <text>$leader 問了我關於你的事. 我猜你有正事要幹了, 回來後向他報告吧</text>
+    </string>
+    <string id="st_msg_chitchat_1_4_3">
+        <text>甚至 $c2_fname 也受夠了你的廢話. 不過$mechanic 有重要的事要找你,去看看吧</text>
+    </string>
+    <string id="st_msg_chitchat_1_4_4">
+        <text>你們哪個傻逼在我的睡袋裡拉屎了?!</text>
+    </string>
+    <string id="st_msg_chitchat_1_4_5">
+        <text>你欠我伏特加和一包煙. 你這個白癡</text>
+    </string>
+    
+<!-- Chitchat = trolling -->
+    <string id="st_msg_joke_title_1_1">
+        <text>有人花錢買你的人頭!</text>
+    </string>
+    <string id="st_msg_joke_title_1_2">
+        <text>你成爲了目標!</text>
+    </string>
+    <string id="st_msg_joke_title_1_3">
+        <text>你的朋友最近死了</text>
+    </string>
+	<string id="st_msg_joke_title_1_4">
+        <text>他們來找你了!</text>
+    </string>
+    
+    <string id="st_msg_joke_1_1_1">
+        <text>只是想引起您的注意</text>
+    </string>
+    <string id="st_msg_joke_1_1_2">
+        <text>開玩笑而已, 別生氣, 好嗎?</text>
+    </string>
+    <string id="st_msg_joke_1_1_3">
+        <text>誘餌!</text>
+    </string>
+	<string id="st_msg_joke_1_1_4">
+        <text>鐵鉤, 線和沉降片!哈哈!</text>
+    </string>
+	<string id="st_msg_joke_1_1_5">
+        <text>啊啊啊啊! 我真是想死你了!</text>
+  </string>
+    
+    <string id="st_msg_joke_1_2_1">
+        <text>你能在回來時帶一些 $c2_fname 和普京伏特加嗎?</text>
+    </string>
+    <string id="st_msg_joke_1_2_2">
+        <text>$c2_fname 說他想要一包好彩香菸. 我的話... 萬寶路, 要擔心, 我會付錢的</text>
+    </string>
+    <string id="st_msg_joke_1_2_3">
+        <text>好吧, 我有點餓了. 來點香腸如何?</text>
+    </string>
+	<string id="st_msg_joke_1_2_4">
+        <text>$c2_fname 活著回來了! 他在之前與我們見過面, 所以我們今晚應該慶祝! 拿些伏特加和食物, 讓我們像1986年時那樣狂歡!</text>
+    </string>
+	<string id="st_msg_joke_1_2_5">
+        <text>無論是啥, 你能弄些吃的來么? 這個特異區里沒有煮熟的屎, 除非是一些野豬排</text>
+    </string>
+    
+    <string id="st_msg_joke_1_3_1">
+        <text>今天的輪班工作差不多完成了,一個小時後見</text>
+    </string>
+    <string id="st_msg_joke_1_3_2">
+        <text>我會等著你. 在這之前, 可別死了呀</text>
+    </string>
+	<string id="st_msg_joke_1_3_3">
+        <text>不要空手而歸, 否則你死定了. 我再說一遍</text>
+    </string>
+	<string id="st_msg_joke_1_3_4">
+        <text>等你回營地, 潛行者!</text>
+    </string>
+    
+<!-- Mission = target -->
+    <string id="st_msg_mission_target_title_1_1">
+        <text>報告</text>
+    </string>
+    <string id="st_msg_mission_target_title_1_2">
+        <text>目標接近</text>
+    </string>
+    <string id="st_msg_mission_target_title_1_3">
+        <text>正注視目標</text>
+    </string>
+    <string id="st_msg_mission_target_title_1_4">
+        <text>我已就位</text>
+    </string>
+	<string id="st_msg_mission_target_title_1_5">
+        <text>待命中</text>
+    </string>
+    
+    <string id="st_msg_mission_target_1_1_1">
+        <text>$leader, 這裡是 $fname $lname. 我有一份任務報告</text>
+    </string>
+    <string id="st_msg_mission_target_1_1_2">
+        <text>$fname $lname 發言. 我有資訊得通報$leader</text>
+    </string>
+    <string id="st_msg_mission_target_1_1_3">
+        <text>我是 $fname $lname. 我收到了來自 $leader 的關於重要目標的命令</text>
+    </string>
+    <string id="st_msg_mission_target_1_1_4">
+        <text>$fname $lname 候命</text>
+    </string>
+    
+    <string id="st_msg_mission_target_1_2_1">
+        <text>我來到了 $map 並且定位 $directional $pointer.目標處視野清晰</text>
+    </string>
+    <string id="st_msg_mission_target_1_2_2">
+        <text>現在 $map 的情況很平靜. 目標的移動方向是 $directional $pointer. 幾分鐘后我會跟蹤他們</text>
+    </string>
+    
+    <string id="st_msg_mission_target_1_3_1">
+        <text>地區被 $enemy 包圍. 他們還沒有離開這裡. 看來他們正在想什麼鬼點子</text>
+    </string>
+    <string id="st_msg_mission_target_1_3_2">
+        <text>我得說明一下 $enemy 離這裡不遠, 不過目前看來問題不大. 對於他們的聯絡還沒什麼線索</text>
+    </string>
+	<string id="st_msg_mission_target_1_3_3">
+        <text>我在這附近看到了 $enemy.如果其他人正朝著這個方向前進,請告訴他們要小心</text>
+    </string>
+	<string id="st_msg_mission_target_1_3_4">
+        <text>在這附近發現了$enemy. 他們在該地區非常活躍</text>
+    </string>
+    
+    <string id="st_msg_mission_target_1_4_1">
+        <text>有什麼命令嗎?</text>
+    </string>
+    <string id="st_msg_mission_target_1_4_2">
+        <text>命令?</text>
+    </string>
+    <string id="st_msg_mission_target_1_4_3">
+        <text>我將繼續執行任務, 並報告任何異常情況</text>
+    </string>
+    <string id="st_msg_mission_target_1_4_4">
+        <text>計劃有什麼改變嗎?</text>
+    </string>
+    <string id="st_msg_mission_target_1_4_5">
+        <text>Has there been any change in plans?</text>
+    </string>
+    
+<!-- Mission = guard -->
+    <string id="st_msg_mission_guard_title_1_1">
+        <text>一切正常</text>
+    </string>
+    <string id="st_msg_mission_guard_title_1_2">
+        <text>平靜的一天</text>
+    </string>
+    <string id="st_msg_mission_guard_title_1_3">
+        <text>守衛這個地方</text>
+    </string>
+    <string id="st_msg_mission_guard_title_1_4">
+        <text>讓他們去那裡</text>
+    </string>
+	<string id="st_msg_mission_guard_title_1_5">
+        <text>守住位置</text>
+    </string>    
+	<string id="st_msg_mission_guard_title_1_6">
+        <text>目前為止,一切都好</text>
+    </string>
+
+    <string id="st_msg_mission_guard_1_1_1">
+        <text>$leader, $map 的情況和往常一樣. 除了一些飢餓的盲犬和變異鼠, 沒有重大威脅. 我們很幸運</text>
+    </string>
+    <string id="st_msg_mission_guard_1_1_2">
+        <text>幾個小時前, 我們發現了 $enemy $directional $pointer, 不過他們逃跑了. 從那以後沒什麼異常的情況</text>
+    </string>
+    <string id="st_msg_mission_guard_1_1_3">
+        <text>$fname 報告. 目前為止 $map 沒有異常. 看來這種狀態已經有一段時間了</text>
+    </string>
+    <string id="st_msg_mission_guard_1_1_4">
+        <text>$fname 報告. $map 非常... 安靜</text>
+    </string>
+
+    <string id="st_msg_mission_guard_1_2_1">
+        <text>你可以在這裡派遣 $c1_fname 的小隊, 我們會等他們</text>
+    </string>
+    <string id="st_msg_mission_guard_1_2_2">
+        <text>如果 $c1_fname 的小隊在前方領頭的話是很安全的,我們將密切注意可能發生的一切</text>
+    </string>
+    <string id="st_msg_mission_guard_1_2_3">
+        <text>我們已經準備好讓下一組減輕我們的負擔</text>
+    </string>
+    <string id="st_msg_mission_guard_1_2_4">
+        <text>We�re ready for the next group to relieve us</text>
+    </string>
+    
+    <string id="st_msg_mission_guard_1_3_1">
+        <text>$fname 出來了</text>
+    </string>
+    <string id="st_msg_mission_guard_1_3_2">
+        <text>在那之前, 我們會保持警惕</text>
+    </string>
+    <string id="st_msg_mission_guard_1_3_3">
+        <text>他們在天黑之前得快點了</text>
+    </string>
+    <string id="st_msg_mission_guard_1_3_4">
+        <text>告訴他們繼續前進</text>
+    </string>
+
+<!-- Mission = mutant hunt -->
+    <string id="st_msg_mission_hunt_title_1_1">
+        <text>免費的肉</text>
+    </string>
+    <string id="st_msg_mission_hunt_title_1_2">
+        <text>去打獵</text>
+    </string>
+    <string id="st_msg_mission_hunt_title_1_3">
+        <text>打獵途中</text>
+    </string>
+    <string id="st_msg_mission_hunt_title_1_4">
+        <text>想加入我們嗎?</text>
+    </string>
+    
+    <string id="st_msg_mission_hunt_1_1_1">
+        <text>嘿 $fname, 你還在 $map 嗎?</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_1_2">
+        <text>$fname, 你應該來看看這個!</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_1_3">
+        <text>我們即將外出打獵. 你錯過了 $fname</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_1_4">
+        <text>我們會因為你的加入而再去打獵?</text>
+    </string>
+
+    <string id="st_msg_mission_hunt_1_2_1">
+        <text>$c2_fname 發現了一群豚獸 $directional $pointer. 它們看上去很有精神, 骨頭上長滿了肉.它們還沒有注意到我們...</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_2_2">
+        <text>我和 $c2_fname 看到了兩隻大野豬 $directional $pointer. 比一般的要大!</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_2_3">
+        <text>豚獸, 好多豚獸, $directional $pointer.它們正在睡覺</text>
+    </string>
+	<string id="st_msg_mission_hunt_1_2_4">
+        <text>我們剛才看到一群野豬安頓下來入睡</text>
+    </string>
+
+    <string id="st_msg_mission_hunt_1_3_1">
+        <text>$c2_fname 想捕殺它們. 別問, 問就是免費的肉</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_3_2">
+        <text>你趕緊他媽的過來. 我們不能等太久, 否則它們就會藏起來了</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_3_3">
+        <text>我的獵刀已經準備好, $c2_fname 正盯著它們</text>
+    </string>
+    
+    <string id="st_msg_mission_hunt_1_4_1">
+        <text>我們會等10分鐘, 如果你想一起幹那就告訴我們</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_4_2">
+        <text>所以你是要來還是怎樣?</text>
+    </string>
+    <string id="st_msg_mission_hunt_1_4_3">
+        <text>通知小組的其他成員我們會遲到一會, 可以嗎?</text>
+    </string>
+    
+<!-- Mission = raid -->
+    <string id="st_msg_mission_raid_title_1_1">
+        <text>準備突襲</text>
+    </string>
+    <string id="st_msg_mission_raid_title_1_2">
+        <text>贈品</text>
+    </string>
+    <string id="st_msg_mission_raid_title_1_3">
+        <text>在做了</text>
+    </string>
+    <string id="st_msg_mission_raid_title_1_4">
+        <text>準備伏擊</text>
+    </string>
+	<string id="st_msg_mission_raid_title_1_5">
+        <text>進行突襲</text>
+    </string>
+	<string id="st_msg_mission_raid_title_1_6">
+        <text>派對要開始了</text>
+    </string>
+    
+    <string id="st_msg_mission_raid_1_1_1">
+        <text>$fname, 啥情況? 有啥好事?</text>
+    </string>
+    <string id="st_msg_mission_raid_1_1_2">
+        <text>$c1_fname在這, 你想幹嘛' $fname?</text>
+    </string>
+	<string id="st_msg_mission_raid_1_1_3">
+        <text>我聽說你在找活幹 $fname?</text>
+    </string>
+	<string id="st_msg_mission_raid_1_1_4">
+        <text>我有一份關於你的差事, $fname</text>
+    </string>
+    
+    <string id="st_msg_mission_raid_1_2_1">
+        <text>我們發現有群菜鳥在 $directional $pointer 附近徘徊.似乎是迷路了</text>
+    </string>
+    <string id="st_msg_mission_raid_1_2_2">
+        <text>有一些贈品正在 $map 徘徊. 現在, 他們正在 $directional $pointer 紮營</text>
+    </string>
+    <string id="st_msg_mission_raid_1_2_3">
+        <text>我們看到一個接近 $directional $pointer 的小隊經歷了一段艱難的時光</text>
+    </string>
+    
+    <string id="st_msg_mission_raid_1_3_1">
+        <text>我以我的屁股做擔保他們絕對有錢. 我們應該等待最好的時機採取行動</text>
+    </string>
+    <string id="st_msg_mission_raid_1_3_2">
+        <text>我覺得我們今晚要暴富...</text>
+    </string>
+    <string id="st_msg_mission_raid_1_3_3">
+        <text>他們的揹包看上去又臟又重. 我們這次真是太走運了</text>
+    </string>
+    <string id="st_msg_mission_raid_1_3_4">
+        <text>他們裝備精良, 好像去過一些有趣的地方</text>
+    </string>
+    
+    <string id="st_msg_mission_raid_1_4_1">
+        <text>你們在那裡幹什麼?</text>
+    </string>
+    <string id="st_msg_mission_raid_1_4_2">
+        <text>我們準備幹一架. 想和我們一起嗎?</text>
+    </string>
+    <string id="st_msg_mission_raid_1_4_3">
+        <text>告訴 $c2_fname 我們可能會晚點來, 讓他別等我們</text>
+    </string>
+	<string id="st_msg_mission_raid_1_4_4">
+        <text>我可以接受像你這樣可靠的人. 你覺得如何?</text>
+    </string>
+    
+<!-- Mission = bounty -->
+    <string id="st_msg_mission_bounty_title_1_1">
+        <text>賞金</text>
+    </string>
+    <string id="st_msg_mission_bounty_title_1_2">
+        <text>我得到了點東西</text>
+    </string>
+    <string id="st_msg_mission_bounty_title_1_3">
+        <text>新工作</text>
+    </string>
+    <string id="st_msg_mission_bounty_title_1_4">
+        <text>適宜的賞金</text>
+    </string>
+    
+    <string id="st_msg_mission_bounty_1_1_1">
+        <text>嘿 $c1_fname, 我們有事要做了</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_1_2">
+        <text>$fname, 我有件東西給你</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_1_3">
+        <text>起來 $fname, 拿好你的槍. 要幹活了</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_1_4">
+        <text>嘿 $fname. 拿些食物和彈藥</text>
+    </string>
+
+    <string id="st_msg_mission_bounty_1_2_1">
+        <text>幾分鐘前我見了商人, 他希望某個人死. 這次開了個好價錢</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_2_2">
+        <text>商人懸賞一個人的腦袋. 10,000 盧布 的獎金.太誘人了</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_2_3">
+        <text>$leader 很生氣. 他說有個傢伙殺了兩個我們的人,他要報復他. 懸賞很重, 所以要認真對待</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_2_4">
+        <text>當我在商人那裡買彈藥時順便問他有什麼好活幹. 他說有個人正在擾亂他的生意所以他想讓那個人消失. 好訊息是: 他會拿一個'刺胞體'做獎勵</text>
+    </string>
+    
+    <string id="st_msg_mission_bounty_1_3_1">
+        <text>我是 $c2_fname $c2_lname. 他們最後一次出現在 $map, $directional $pointer</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_3_2">
+        <text>我問了一些人他們說那個傢伙在 $map 附近活動. 確切地說是 $directional $pointer. 他的名字是 $c2_fname $c2_lname.我們的一個線人告訴我們那傢伙正在和 $enemy 一起行動, 所以事情有點難辦</text>
+    </string>
+	<string id="st_msg_mission_bounty_1_3_3">
+        <text>$c2_fname $c2_lname 就是目標. 他最近惹了不少人, 所以弄到他的資訊應該不難</text>
+    </string>
+    
+    <string id="st_msg_mission_bounty_1_4_1">
+        <text>我們到那裡見面順便調查一下那裡. 讓我知道你有沒有關於他的更多情報</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_4_2">
+        <text>我覺得在別人來搶人頭前是不是應該先下手為強?</text>
+    </string>
+    <string id="st_msg_mission_bounty_1_4_3">
+        <text>別問,問就是很值. 那麼, 我們在附近地點見面並決定下一步該怎麼做?</text>
+    </string>
+	<string id="st_msg_mission_bounty_1_4_4">
+        <text>整理好裝備讓我們去追蹤這個混蛋!</text>
+    </string>
+	<string id="st_msg_mission_bounty_1_4_5">
+        <text>我們得走快點了</text>
+    </string>   
+
+<!-- Mission = artefact -->
+    <string id="st_msg_mission_artefact_title_1_1">
+        <text>這有可能嗎?</text>
+    </string>
+	<string id="st_msg_mission_artefact_title_1_2">
+        <text>我一隻手已經放在神器上了</text>
+    </string>
+	<string id="st_msg_mission_artefact_title_1_3">
+        <text>我找到了些有趣的玩意</text>
+    </string>
+	<string id="st_msg_mission_artefact_title_1_4">
+        <text>我找到了些神器t!</text>
+    </string>
+    <string id="st_msg_mission_artefact_title_1_5">
+        <text>把神器袋起來!</text>
+    </string>
+    <string id="st_msg_mission_artefact_title_1_6">
+        <text>Payday!</text>
+    </string>
+ 
+	<string id="st_msg_mission_artefact_1_1_1">
+        <text>臥槽, 我在 $map找到了一個'月光石'. 我太他媽走運了</text>
+    </string>
+    <string id="st_msg_mission_artefact_1_1_2">
+        <text>喔!我發現了一個'氣化晶'!</text>
+    </string>
+    <string id="st_msg_mission_artefact_1_2_1">
+        <text>我差點被這些電鍍異常點弄死了, 不過好在值得</text>
+    </string>
+    <string id="st_msg_mission_artefact_1_2_2">
+        <text>我遭受了許多輻射試圖抓住這個小寶貝. 它在地上跳來跳去</text>
+    </string>
+    <string id="st_msg_mission_artefact_1_3_1">
+        <text>你覺得商人會對它感興趣嗎?</text>
+    </string>
+    
+<!-- Mission = anomaly study -->
+    <string id="st_msg_mission_anomaly_title_1_1">
+        <text>到達異常區域、</text>
+    </string>
+    <string id="st_msg_mission_anomaly_title_1_2">
+        <text>不同尋常的異常點!</text>
+    </string>
+    <string id="st_msg_mission_anomaly_title_1_3">
+        <text>這很奇怪...</text>
+    </string>
+    <string id="st_msg_mission_anomaly_title_1_4">
+        <text>不太對勁的異常點活動</text>
+    </string>
+    
+    <string id="st_msg_mission_anomaly_1_1_1">
+        <text>你好 $c1_fname. 我現在正在 $map, $directional $pointer</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_1_2">
+        <text>$c1_fname,這裡是$fname. 研究小組已經到達 $map, $directional $pointer</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_1_3">
+        <text>沒問題 $c1_fname,我15分鐘前已經到了 $map.探測器顯示, $directional $pointer 的異常的活動極為活潑</text>
+    </string>
+    
+    <string id="st_msg_mission_anomaly_1_2_1">
+        <text>果然不出所料, 上次能量風暴對這裡的異常區域造成了影響. 我的計量器也滴答作響, 這裡的輻射等級很高</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_2_2">
+        <text>這裡似乎有些不一樣. 這裡有三個新的彼此相鄰的奇點異常點. 上次的脈衝風暴真是夠猛烈的</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_2_3">
+        <text>異常點的位置已經轉移, 讀數也惡化了</text>
+    </string>
+	<string id="st_msg_mission_anomaly_1_2_4">
+        <text>即使我們處在安全, 開闊的地帶, 變異生物似乎仍在避開這一領域,這是個有趣的現象...</text>
+    </string>
+
+    <string id="st_msg_mission_anomaly_1_3_1">
+        <text>我站在這裡的一個奇點異常點附近, 這個和我們之前見到的有些不同. 引力場很強, 但最奇怪的地方是, 它不是穩定的!它顯示出了隨機的活動, 但是, 由於這種現象, 引力場似乎失去了一些力量</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_3_2">
+        <text>現在有趣的地方是這個引力漩渦異常點. 重力場在這附近很強</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_3_3">
+        <text>但是最令我矚目的是這個衝擊力場異常點. 和其他的不同, 它的半徑大概是5米. 很大!</text>
+    </string>
+    
+    <string id="st_msg_mission_anomaly_1_4_1">
+        <text>你要我對這個進行勘測嗎?</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_4_2">
+        <text>我在地裡種些感測器怎麼樣, 以便您自己檢視讀數?</text>
+    </string>
+    <string id="st_msg_mission_anomaly_1_4_3">
+        <text>將嘗試收集更多的資料並進行觀察, 完成後, 我將上傳數據</text>
+	</string>
+</string_table>

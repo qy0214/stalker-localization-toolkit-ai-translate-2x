@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="voronin_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 將軍,你有什麼特別的任務要交給我嗎?</text>
+	</string>
+	<string id="voronin_operation_afterglow_1">
+		<text>是的,我們的職責範圍內不缺工作要做. 我們的前線斥候在扎頓的"鋼鐵森林"異常區發現了不明來源的無線電訊號. 他們沒有所需的解密裝置,所以我要你去調查一下.</text>
+	</string>
+	<string id="voronin_operation_afterglow_2">
+		<text>明白.</text>
+	</string>
+	<string id="voronin_operation_afterglow_21">
+		<text>我很抱歉,將軍. 我現在還沒準備好.</text>
+	</string>
+	<string id="voronin_operation_afterglow_3">
+		<text>很好. 拿著這個無線電,我們的技術人員已經對它進行了適當的改裝. 儘快報告你的發現. 誰知道在離切爾諾貝利核電站這麼近的地方會發生什麼呢.</text>
+	</string>
+	
+	<string id="voronin_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_1">
+		<text>你調查到什麼有趣的東西了沒有?</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_2">
+		<text>是的,將軍. 我曾短暫參與了德格捷列夫上校領導的一次軍事行動. 似乎一個叫UNISG的國際特工組織正在調查特異區最近發生的事件. 軍方不想讓他們發現太多東西.</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_21">
+		<text>沒什麼特別的,指揮官. 只是無意義的噪音.</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_3">
+		<text>我知道了. 這的確是個有趣的發現. 我們會繼續密切觀察這個地區以便下一步部署. 同時,你可以繼續自由活動了. 解散.</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_31">
+		<text>感謝你的確認. 好了,現在沒有任務需要你去完成了. 你可以繼續自由活動. 解散.</text>
+	</string>
+	<string id="voronin_operation_afterglow_transmission_report_4">
+		<text>明白.</text>
+	</string>
+	
+	<string id="dushman_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 你有什麼特別的合約要交給我么?</text>
+	</string>
+	<string id="dushman_operation_afterglow_1">
+		<text>是的,當然. 就是我們的工作. 我們一支在扎頓的部隊截獲了一段來自扎頓"鋼鐵森林"異常區的斷斷續續的無線電傳輸訊號. 但是他們只能聽到一些混亂的雜音. 所以我想讓你帶著適當的裝置去看看那裡發生了什麼.</text>
+	</string>
+	<string id="dushman_operation_afterglow_2">
+		<text>沒問題.</text>
+	</string>
+	<string id="dushman_operation_afterglow_21">
+		<text>不好意思,達什曼. 我還有別的合約要完成.</text>
+	</string>
+	<string id="dushman_operation_afterglow_3">
+		<text>非常好,情報也很值錢. 拿著這臺無線電,豪格給它安裝了一個先進的解密裝置. 有什麼發現后立馬回來.</text>
+	</string>
+	
+	<string id="dushman_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_1">
+		<text>聽到有什麼有趣的東西了么?</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_2">
+		<text>事實上是的. 一個叫德格捷列夫上校的人僱傭了我參與了他們一個黑色行動. 他們一直在試圖阻止一群叫作UNISG好奇的外國佬,以免他們發現太多關於特異區的骯髒秘密.</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_21">
+		<text>不,那不是真的. 只是一些靜電聲,沒什麼特別的.</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_3">
+		<text>聯合國的人已經到這裡了? 他們的一個偵察兵想在進來的時候從我這搞到點情報,但是我沒同意. 我想我們知道原因了,因為看上去他們被發現的有點早. 如果聯合國要求我們提供服務,我會幫他們的. 老話說的好,你做什麼事情都取決於你自己... 多虧了西方企業和西方政府的巨大陰謀,使得我們可以從中牟利.</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_31">
+		<text>看來有些線索是假的. 好吧,我相信你還有更多有趣的活要做.</text>
+	</string>
+	<string id="dushman_operation_afterglow_transmission_report_4">
+		<text>非常好,再見.</text>
+	</string>
+	
+	<string id="sidorovich_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 你有什麼新活要交給我嗎?</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_1">
+		<text>總想著轉更多的錢哈,潛行者? 是的,最近突發了一件事. 我從大鬍子哪裡聽說的,潛行者們一直在討論他們在扎頓"鋼鐵森林"異常區附近聽到的一些奇怪的無線電噪音. 可能是異常點引起的,也有可能是發生了什麼有趣的事情. 去調查一下,好嗎?</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_2">
+		<text>沒問題,老西. 好好坐著等著我漫步特異區歸來就行.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_21">
+		<text>不好意思老西,我還沒準備好.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_3">
+		<text>真是好樣的. 把這臺無線電帶著,除非你想用你鑲的金牙或者其他的東西來接收訊號. 一旦你有發現什麼有價值的東西就回來.</text>
+	</string>
+	
+	<string id="sidorovich_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_1">
+		<text>聽到了什麼有趣的事情么,潛行者?</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_2">
+		<text>是的,非常有趣. 是這樣的,一個叫德格捷列夫上校的人一直在特異區的中心進行絕密的行動. 他與一個叫UNISG的組織戰鬥,這個組織是一支試圖揭露特異區骯髒秘密的外國特種部隊.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_21">
+		<text>並沒有. 不過我的確長途跋涉去聽了一段靜電的噪音.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_3">
+		<text>真是個大新聞,潛行者. 正如你所知,情報很值錢,特別是它是最高機密的情況下. 我會看看我能做什麼,呵呵呵. 不管怎麼說,你可以去自由活動了.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_31">
+		<text>媽的,我還以為是一個有趣的潛行者傳說呢. 好吧,你可以自由活動了.</text>
+	</string>
+	<string id="sidorovich_operation_afterglow_transmission_report_4">
+		<text>再見.</text>
+	</string>
+	
+	<string id="cold_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 你有什麼新的特別任務要交給我嗎?</text>
+	</string>
+	<string id="cold_operation_afterglow_1">
+		<text>是的,有點東西你可以去研究下. 我從生態學家那裡聽說了扎頓的"鋼鐵森林"異常區里傳出了一些很神秘的無線電傳輸訊號. 我知道我知道,就像在大沼澤,但是是在特異區的另一邊. 不過我覺得值得去的一點是,那裡離切爾諾貝利核電站很近,所以.</text>
+	</string>
+	<string id="cold_operation_afterglow_2">
+		<text>聽起來很有趣,算我一個.</text>
+	</string>
+	<string id="cold_operation_afterglow_21">
+		<text>對不起,冷風,我暫時還沒法再來一個長途旅行. 暫時還不行.</text>
+	</string>
+	<string id="cold_operation_afterglow_3">
+		<text>又一次冒險,哈哈. 順帶一提,把這小東西帶上,諾維科夫給我的,它會解密任何你在那裡可能能截獲到的無線電傳輸訊號. 一路順風.</text>
+	</string>
+	
+	<string id="cold_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_1">
+		<text>聽到了什麼有趣的東西沒有?</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_2">
+		<text>當然. 我無意間聽到了一個軍用無線電的訊號,加入了一個叫德格捷列夫上校的人組織的黑色行動. 他們想除掉一個叫UNISG的外國小組,這個組織已經對特異區進行了徹底的調查,這不符合烏克蘭安全域性的意願.</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_21">
+		<text>並沒有. 只是一些異常點產生的靜電,沒啥別的.</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_3">
+		<text>看看我們得到了什麼情報. 的確很有意思. 好吧,我希望你喜歡當特工的感覺. 而且你的後腦勺也沒有中上一顆子彈作為獎勵,所以很好. 現在花點時間放鬆一下,我看看怎麼處理這份情報.</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_31">
+		<text>啊,好吧,我還懷疑卡蘭查都會有興趣呢. 我想,只能說謝謝你的努力了. 你可以走了.</text>
+	</string>
+	<string id="cold_operation_afterglow_transmission_report_4">
+		<text>再見,冷風.</text>
+	</string>
+	
+	<string id="lukash_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 你給我準備了什麼新的冒險?</text>
+	</string>
+	<string id="lukash_operation_afterglow_1">
+		<text>你就是坐不住,哈? 我喜歡你身上那種冒險的火花,兄弟. 所以,是這樣的,洛基告訴我扎頓的"鋼鐵森林"異常區附近多處了很多新的無線電噪音. 可能是異常點導致的噪音,也有可能是特種部隊或者別的什麼. 去看看.</text>
+	</string>
+	<string id="lukash_operation_afterglow_2">
+		<text>真不錯,算我一個!</text>
+	</string>
+	<string id="lukash_operation_afterglow_21">
+		<text>抱歉,盧卡什,我先得從宿醉里恢復過來.</text>
+	</string>
+	<string id="lukash_operation_afterglow_3">
+		<text>要的就是這個精神. 啊對了,拿著這臺無線電. 我敢打賭你的腦子裡肯定沒裝金屬板,所以這個應該會派上用場. 如果你發現什麼有趣的東西立馬回來告訴我.</text>
+	</string>
+	
+	<string id="lukash_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_1">
+		<text>聽到了什麼有趣的東西么?</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_2">
+		<text>天,老哥,你肯定不會相信的! 我捲入了一場絕密的軍事行動! 一個叫德格捷列夫上校的人想讓我幫他們除掉一幫叫UNISG的探員. 他們是一支什麼國際特種部隊,一直在調查特異區. 軍方肯定不喜歡他們這樣做.</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_21">
+		<text>不,並沒有. 聽到了點異常點發出來的靜電聲,然後就感覺無聊了,然後就回來了.</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_3">
+		<text>哈,兩支政府支援的隊伍在爭取特異區秘密的擁有權上打起來了? 太搞笑了! 很高興聽到德格捷列夫上校在和他們對抗. 軍隊都是混蛋,這一點沒錯,但是那傢伙是個光榮的混蛋. 如果你再次碰到他,告訴他讓他注意休息,然後再多幫亞諾夫車站一把,好嗎? 我聽說那裡的情況越來越糟糕了.</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_31">
+		<text>好吧,聽聽"特異區之歌"也許也挺有趣,哈? 無聊? 好吧,別在意. 去做些有趣的事情吧,我可不想你無聊致死. 至少現在我們知道這是特異區在低吟的一種方式...</text>
+	</string>
+	<string id="lukash_operation_afterglow_transmission_report_4">
+		<text>再見,老兄.</text>
+	</string>
+	
+	<string id="sakharov_operation_afterglow_0">
+		<text>我收到了加密無線電傳輸的訊息了. 你有什麼新的重要任務要給我么?</text>
+	</string>
+	<string id="sakharov_operation_afterglow_1">
+		<text>哦,是的,年輕人. 你認識赫曼教授嗎? 他在北方的碉堡里報告說在扎頓的"鋼鐵森林"異常區發現了一些有趣的無線電傳輸訊號. 考慮到特異區顯著的異常點活動,所以這一定特別有趣. 我希望你能去那個地方進行一下研究,不知道我們會發現什麼.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_2">
+		<text>我馬上出發,教授.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_21">
+		<text>我很抱歉,教授. 我還沒準備好做這樣的長途旅行.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_3">
+		<text>謝謝你. 給,拿上這個裝置. 它將嘗試解密並記錄任何你可以截獲到的無線傳輸訊號. 祝你好運.</text>
+	</string>
+	
+	<string id="sakharov_operation_afterglow_transmission_report_0">
+		<text>我從扎頓回來了.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_1">
+		<text>你有發現什麼有趣的事嗎,年輕人?</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_2">
+		<text>是的,教授. 我無意間聽到了一個軍用無線電的訊號,隨後被德格捷列夫上校臨時招募去執行了一個絕密任務. 我們和一支由UNISG派來的特種部隊進行了戰鬥,這個小組是一群一支在調查特異區終極秘密的外國探員.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_21">
+		<text>並沒有,教授. 只是一些當地異常點發出來的靜電聲.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_3">
+		<text>哦,我知道了. 雖然研究特異區本身和其許多其妙現象是值得的,但我一想到如果這些有關於特異區起源的資訊落入壞人手中的後果就感覺到不寒而慄. 謝謝你,年輕人,現在你可以走了.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_31">
+		<text>真浪費精力. 看來我得駁回赫曼的假說了.</text>
+	</string>
+	<string id="sakharov_operation_afterglow_transmission_report_4">
+		<text>再見,教授.</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_psycho_0">
+		<text>我的... 頭... 我的... 頭...</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_0">
+		<text>嘿,大傢伙.</text>
+	</string>
+	
+	<string id="stalker_rogue_repair_oa_0">
+		<text>嘿,"遊蕩者". 你還帶著你的工具箱?</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_help_psycho_0">
+		<text>你... 你在幹什麼夥計?</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_1">
+		<text>我的... 頭... 該死的... 靈能異常點... 需要... 藥物... 需要... 一片... 藥...</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_2">
+		<text>哦媽的. 再撐一會,我會找到點什麼的!</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_20">
+		<text>振作起來,夥計! 抵抗它!</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_21">
+		<text>啊... 幫幫... 我...</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_22">
+		<text>看在他媽老天的份上,集中注意力!</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_23">
+		<text>別... 嚷嚷... 我 必-必須...mmm...mmm... 黑石!</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_help_psycho_24">
+		<text>臥槽!</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_heal_psycho_0">
+		<text>我有藥,吃了它!</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_1">
+		<text>謝-謝謝你,老兄. 它們差點弄死我.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_2">
+		<text>發生了什麼?</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_3">
+		<text>額... 我們的隊伍在和一群黑石戰士的戰鬥里被打散了. 我慢慢的撤退,不斷火力壓制那些狂熱分子... 不小心進入了一片靈能異常點,我腦中開始有聲音在低語. 黑石混蛋把我拖到了這裡,然後離開了. 我想他們想讓我變成他們的一員. 我特么寧願跳進一個異常點裡... 任何別的異常點. 操.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_4">
+		<text>你的抗靈頭盔怎麼了?</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_5">
+		<text>該死的東西總是讓我的牙發癢. 據我聽說"焦腦器"被關閉了之後,我就覺得不需要它了. 不管怎麼說,我們先回洗衣店吧,我們需要重新整頓.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_heal_psycho_6">
+		<text>走吧.</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_saved_0">
+		<text>我們到了.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_saved_1">
+		<text>謝謝你,大傢伙. 我把我從比死亡更慘的命運里救了出來. 我不會忘記的.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_saved_2">
+		<text>客氣了,"遊蕩者".</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_oa_join_0">
+		<text>我們得快點,快走.</text>
+	</string>
+	<string id="stalker_rogue_dialog_oa_join_1">
+		<text>我有種不好的預感.</text>
+	</string>
+	
+	<string id="pri_a17_strelok_dialogue_0">
+		<text>嘿,史特洛克. 像往常一樣屠殺黑石,對吧?</text>
+	</string>
+	<string id="pri_a17_strelok_dialogue_1">
+		<text>謝謝你,我沒想到你會來. 這地方不安全. 去洗衣店,我們得談談.</text>
+	</string>
+	<string id="pri_a17_strelok_dialogue_2">
+		<text>我們走.</text>
+	</string>
+	
+	<string id="pri_a16_strelok_dialogue_0">
+		<text>發生了什麼? 其他人呢?</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_1">
+		<text>我們一直在想方設法切斷黑石的補給線來餓死他們. 最後他們建立了一個專門的小組來對付我們. 我們再戰鬥中被打散了. 而在這個區域發送遠端資訊也很危險,我太累了沒法找到"縫合者"和"遊蕩者". 我們大概是在廢棄醫院附近走散的,他們不可能走的太遠. 去附近找找他們.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_2">
+		<text>沒問題,你待在這. 我會把他們找回來的.</text>
+	</string>
+	
+	<string id="pri_a18_rogue_fallen_0">
+		<text>我在一個幼兒園裡找到了"遊蕩者",他正在向一個奇怪的雕像祈禱. 他被一片靈能異常點殺死了.</text>
+	</string>
+	<string id="pri_a18_rogue_fallen_1">
+		<text>該死. 他還曾吹牛逼說特異區沒有東西能搞死他. 既不是變異生物也不是黑石... 結果是他的腦袋被異常點給搞炸了. 愿他安息.</text>
+	</string>
+	<string id="pri_a18_rogue_fallen_2">
+		<text>嗯.</text>
+	</string>
+	
+	<string id="pri_a28_stitch_fallen_0">
+		<text>我在普羅米修斯電影院附近發現了"縫合者",他被一群殭屍包圍了. 他沒能撐下來.</text>
+	</string>
+	<string id="pri_a28_stitch_fallen_1">
+		<text>沒了他特異區將會變的更加黑暗. 愿他安息.</text>
+	</string>
+	<string id="pri_a28_stitch_fallen_2">
+		<text>嗯.</text>
+	</string>
+	
+	<string id="pri_a16_strelok_dialogue_team_0">
+		<text>普里皮亞奇和往常一樣致命.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_1">
+		<text>是的. 不過走運的是,我們全隊都挺了過來. 我可不想在埋葬我的同伴了.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_100">
+		<text>"遊蕩者"是個硬漢. "縫合者"和我將會在失去了他的火力支援下繼續戰鬥.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_110">
+		<text>"縫合者"是個好夥伴. 我和"遊蕩者"會在失去了他的幽默感下繼續戰鬥.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_120">
+		<text>幾乎我所有的朋友,都再一次... 死在了特異區. 下一步我應該怎麼做? 我想我已經一無所有了.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_2">
+		<text>沒問題,史特洛克. 我覺得作為團隊的一員,很高興能幫上忙.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_200">
+		<text>我完全沒有意料到"遊蕩者"會死,特別是他並不是死在了一場真正的戰鬥中. 該死的.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_210">
+		<text>"縫合者"是個開朗的人,他死了整個感覺都不好了. 該死的.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_220">
+		<text>特異區就是這麼無情的,好吧. 想想他們經歷了這麼多這麼輕易就死在了這裡... 這是來自我們面對的東西的一個可怕的警告.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_3">
+		<text>除了繼續前進我們別無選擇. 即使超念體死亡后,我們對黑石和原罪的致命打擊,以及關閉了所有的靈能場發生器... 特異區依然存在. 我在想我們是否有能力去摧毀它的恐怖.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_4">
+		<text>我想特異區會一直在這兒,不論是好是壞.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_5">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是個紀律團的人,所以你不會簡單的離開而會考慮加入我們. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_51">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是個傭兵而且不願意破壞你和達什曼的合約,但是請考慮加入我們. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_52">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是個獨行者,所以你可能跟喜歡獨自行動,但是請考慮加入我們. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_53">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是晴空戰士,所以你顯然不想加入我們,但是請考慮一下. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_54">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是自由軍的人,所以你可能不認同我的信念,但是請考慮加入我們. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_55">
+		<text>也許吧. 休息一下然後我們想想下一步應該怎麼辦. 我知道你是個生態學家所以你不會簡單的離開而會考慮加入我們. 我們需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_500">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是個紀律團成員所以你不會簡單的離開而會考慮一下. 我的團隊已經沒了,而且我需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_501">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是個傭兵而且不願意破壞你和達什曼的合約. 但是請考慮一下,我的團隊已經沒了,而且我需要任何可能的幫助</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_502">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是個自由潛行者,所以你可能跟喜歡獨自行動. 但是請考慮一下,我的團隊已經沒了,而且我需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_503">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是晴空的一員,所以你顯然不想加入我們. 但是請考慮一下,我的團隊已經沒了,而且我需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_504">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是自由軍的人,所以你可能不認同我的信念. 但是請考慮一下,我的團隊已經沒了,而且我需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_505">
+		<text>也許吧. 我會想想下一步該怎麼做. 我知道你是個生態學家所以你不會簡單的離開而會考慮一下. 我的團隊已經沒了,而且我需要任何可能的幫助.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_6">
+		<text>好的,史特洛克,我會考慮的.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_61">
+		<text>抱歉史特洛克,但是我不能拋棄我的其他承諾. 再會.</text>
+	</string>
+	<string id="pri_a16_strelok_dialogue_team_7">
+		<text>很公平,回頭見.</text>
+	</string>
+	
+	<string id="strelok_finale_dialogue_0">
+		<text>德格捷列夫上校,那個烏克蘭安全域性特工就在外面,他們有命令要麼把你帶回政府拘留所,要麼... 就幹掉你.</text>
+	</string>
+	<string id="strelok_finale_dialogue_1">
+		<text>我不想再和軍方合作了. 當他們不可避免的搞砸了某件事的時候,他們就會假裝什麼都沒發生過且保守秘密. 擦屁股簡直太費力氣,太費錢且後果還不堪設想.</text>
+	</string>
+	<string id="strelok_finale_dialogue_2">
+		<text>我知道,史特洛克,但是聽我說.</text>
+	</string>
+	<string id="strelok_finale_dialogue_3">
+		<text>嗯?</text>
+	</string>
+	<string id="strelok_finale_dialogue_4">
+		<text>我贏得了德格捷列夫上校的信任. 如果我們快速勇猛的進攻可能會讓他的人大吃一驚. 但是我不想這麼做,我不想你被他們抓住.</text>
+	</string>
+	<string id="strelok_finale_dialogue_400">
+		<text>考慮到剩下的行動的成功,所以德格捷列夫還有妥協的餘地. 如果你同意從現在起就躲起來,並且把你對特異區的瞭解保密的話,他會放你走的. 如果他食言,我會支援你的.</text>
+	</string>
+	<string id="strelok_finale_dialogue_401">
+		<text>考慮到剩下的行動的成功,所以德格捷列夫還有妥協的餘地. 如果你同意從現在起就躲起來,並且把你對特異區的瞭解保密的話,他會放你走的. 如果他食言,我會支援你的.</text>
+	</string>
+	<string id="strelok_finale_dialogue_402">
+		<text>考慮到剩下的行動的成功,所以德格捷列夫還有妥協的餘地. 如果你同意從現在起就躲起來,並且把你對特異區的瞭解保密的話,他會放你走的. 如果他食言,我會支援你的.</text>
+	</string>
+	<string id="strelok_finale_dialogue_5">
+		<text>就這樣吧. 這就是這事情的來龍去脈了. 那麼我們把這了結了吧.</text>
+	</string>
+	<string id="strelok_finale_dialogue_500">
+		<text>不管怎麼說,或多或少這本就是我要做的. 告訴他我同意了.</text>
+	</string>
+	<string id="strelok_finale_dialogue_6">
+		<text>好的,我們走,跟著我.</text>
+	</string>
+	
+	<string id="strelok_finale_fight_dialogue_0">
+		<text>好了,德校死了. 這至少會延緩軍方這段時間對你的追捕.</text>
+	</string>
+	<string id="strelok_finale_fight_dialogue_1">
+		<text>他是個正直的人. 但是我懷疑沒有他軍方會繼續執行任務. 謝謝你站在我這邊.</text>
+	</string>
+	<string id="strelok_finale_fight_dialogue_100">
+		<text>很遺憾事情發展到了這一步,但是至少我們還可以指望你. 謝謝.</text>
+	</string>
+	<string id="strelok_finale_fight_dialogue_2">
+		<text>在我們一起面對了這麼多之後? 這是我唯一能做的.</text>
+	</string>
+	<string id="strelok_finale_fight_dialogue_3">
+		<text>是的,我們真的共同經歷了很多,不是么? 我為這次旅程感到高興,雖然我很難過它已經接近尾聲了. 我需要再次藏起來,試著找某個半個特異區的人都不知道的基地. 我們可能很長時間都互相見不到了. 也許我會去看看沼澤巫醫,帶上他一起. 誰知道呢? 不過,再見... 以後再見.</text>
+	</string>
+	<string id="strelok_finale_fight_dialogue_4">
+		<text>再會,史特洛克.</text>
+	</string>
+	
+	<string id="strelok_finale_negotiator_dialogue_0">
+		<text>看來最後軍方的人還是會放你走的.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_1">
+		<text>這的確可能會是另一個結果,但我感覺德格捷列夫會捲土重來. 不過這的確讓我鬆了一口氣.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_100">
+		<text>是的,我很高興. 我希望我們整個小隊都能活著看到這個結局. 不過,這可能是我們所能期待最好的結果了.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_101">
+		<text>是的,我很高興. 我希望我們整個小隊都能活著看到這個結局. 不過,這可能是我們所能期待最好的結果了.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_102">
+		<text>"縫合者"和"遊蕩者"離這和平解決的結局太近了,太糟糕了. 我得找時間把他們埋在方和鬼魂的旁邊.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_2">
+		<text>是的,這情況很複雜. 很高興我能化解他.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_202">
+		<text>我相信他們也會成為傳奇的,史特洛克.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_3">
+		<text>我們該走了. 我們需要找到一個新的藏身處,一個半個特異區都不知道的地方. 我們一起經歷了很多. 我為這次旅程感到高興,雖然也很難過它已經接近尾聲了. 也許我會去看看沼澤巫醫,他肯定想見見我的新小隊,但那之後... 只有特異區知道了. 我不知道我是對是錯,但是我們都做到了... 我想我會很感激的,再會.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_300">
+		<text>"縫合者"和我該走了. 我們需要找到一個新的藏身處,一個半個特異區都不知道的地方. 我們一起經歷了很多. 我為這次旅程感到高興,雖然也很難過它已經接近尾聲了. 也許我會去看看沼澤巫醫,他肯定想見見"縫合者",但那之後... 只有特異區知道了. 我不知道我是對是錯,但是我們都做到了... 我想我會很感激的,再會</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_301">
+		<text>"遊蕩者"和我該走了. 我們需要找到一個新的藏身處,一個半個特異區都不知道的地方. 我們一起經歷了很多. 我為這次旅程感到高興,雖然也很難過它已經接近尾聲了. 也許我會去看看沼澤巫醫,他肯定想見見"遊蕩者",但那之後... 只有特異區知道了. 我不知道我是對是錯,但是我們都做到了... 我想我會很感激的,再會</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_302">
+		<text>我該走了. 我需要找到一個新的藏身處,一個半個特異區都不知道的地方. 我們一起經歷了很多. 我為這次旅程感到高興,雖然也很難過它已經接近尾聲了. 也許我會去看看沼澤巫醫,見見我少數的幾個還活著的朋友總是不錯的,但那之後... 只有特異區知道了. 我不知道我是對是錯,但是我們都做到了... 我想我會很感激的,再會.</text>
+	</string>
+	<string id="strelok_finale_negotiator_dialogue_4">
+		<text>希望我們不久后能再見面. 下次見,史特洛克.</text>
+	</string>
+	
+	<string id="stalker_stitch_dialog_oa_0">
+		<text>太糟糕了. 怎麼會變成了這樣?</text>
+	</string>
+	<string id="stalker_stitch_dialog_oa_1">
+		<text>是這樣的,我們和一大群黑石戰士在戰鬥. 事發突然,子彈到處飛,手榴彈到處炸,黑石瘋子大吼... 我逃到電影院去喘口氣. 但是發現裡面滿是可怕的殭屍. 我便從那裡逃了出來... 結果遇到了另一群殭屍. 多虧你及時趕到,我已經別無選擇了... 我們現在可以去洗衣店了嗎? 拜託?</text>
+	</string>
+	<string id="stalker_stitch_dialog_oa_2">
+		<text>當然,我們走.</text>
+	</string>
+	
+	<string id="stalker_stitch_dialog_oa_saved_0">
+		<text>我們做到了. 你沒被咬吧? 我不確定有沒有人會被醫生傳染. .</text>
+	</string>
+	<string id="stalker_stitch_dialog_oa_saved_1">
+		<text>哈! 如果我沒在發抖我肯定會笑死... 呼. 謝謝你的幫助,夥計. 我欠你一次.</text>
+	</string>
+	<string id="stalker_stitch_dialog_oa_saved_2">
+		<text>客氣了,"縫合者".</text>
+	</string>
+	
+	<string id="stalker_stitch_dialog_oa_join_0">
+		<text>我們必須快點了,快點.</text>
+	</string>
+	<string id="stalker_stitch_dialog_oa_join_1">
+		<text>當然,夥計,我們動手!</text>
+	</string>
+	
+	<string id="degtyarev_start_0">
+		<text>我們日程很緊,所以得快點了.</text>
+	</string>
+	
+	<string id="degtyarev_start_jup_0">
+		<text>你好.</text>
+	</string>
+	
+	<string id="degtyarev_start_pri_0">
+		<text>哦,是你. 你最好別把自己捲進來.</text>
+	</string>
+	
+	<string id="degtyarev_transmission_0">
+		<text>你是誰?</text>
+	</string>
+	<string id="degtyarev_transmission_1">
+		<text>這是我的臺詞,潛行者. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 我希望你作為一名紀律團成員值得信賴.</text>
+	</string>
+	<string id="degtyarev_transmission_100">
+		<text>這是我的臺詞,傭兵. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 當然,你會得到足額的回報.</text>
+	</string>
+	<string id="degtyarev_transmission_110">
+		<text>這是我的臺詞,潛行者. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 當然,你會得到足額的回報.</text>
+	</string>
+	<string id="degtyarev_transmission_120">
+		<text>這是我的臺詞,潛行者. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 作為一名晴空的成員,你應該明白,有些秘密最好隱藏起來.</text>
+	</string>
+	<string id="degtyarev_transmission_130">
+		<text>這是我的臺詞,潛行者. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 我知道自由軍並不喜歡軍隊,但是這樣你就可以償還我在亞諾夫幫你們的債了.</text>
+	</string>
+	<string id="degtyarev_transmission_140">
+		<text>這是我的臺詞. 似乎我們引起了一些不必要的注意. 不管怎麼說,我是德格捷列夫上校. 沒時間浪費了,所以我有個你不能拒絕的提議:來幫助我的部隊消滅一支敵軍小隊. 你知道你來這裡可能是爲了某種研究,但是你已經證明了你有對抗原罪的勇氣,我們能得到的任何幫助都是值得感激的. .</text>
+	</string>
+	<string id="degtyarev_transmission_2">
+		<text>好吧. 我會幫你的.</text>
+	</string>
+	<string id="degtyarev_transmission_21">
+		<text>我不想捲入這件事.</text>
+	</string>
+	<string id="degtyarev_transmission_3">
+		<text>很好. 敵人目前駐紮在東南部的一個廢棄的崗哨里. 帶頭進攻,我和我的部隊會緊隨其後.</text>
+	</string>
+	<string id="degtyarev_transmission_31">
+		<text>你已經卷進來了,所以恐怕你沒法拒絕我. 如果你幫我們的話,我可以不在向上級彙報的時候提到你偶然發現了我們的行動. 搞快點.</text>
+	</string>
+	<string id="degtyarev_transmission_4">
+		<text>好的,上校,我們走.</text>
+	</string>
+	<string id="degtyarev_transmission_41">
+		<text>好吧,你已經表明了你的觀點. 我竟然要幫助我所知的魔鬼.</text>
+	</string>
+	
+	<string id="degtyarev_rally_point_middle_0">
+		<text>我們把他們都搞定了,現在呢?</text>
+	</string>
+	<string id="degtyarev_rally_point_middle_1">
+		<text>我們只是處理掉了他們留下來的哨兵. 我們在這裡等等,剩下的應該會回來.</text>
+	</string>
+	<string id="degtyarev_rally_point_middle_2">
+		<text>有幾個人?</text>
+	</string>
+	<string id="degtyarev_rally_point_middle_3">
+		<text>9個全副武裝的士兵. 他們的指揮官穿著外骨骼,所以準備好一場苦戰.</text>
+	</string>
+	<string id="degtyarev_rally_point_middle_4">
+		<text>希望他們不會過早的意識到這裡發生的事情.</text>
+	</string>
+	
+	<string id="degtyarev_rally_point_0">
+		<text>現在我們把他們都做掉了,還有別的嗎?</text>
+	</string>
+	<string id="degtyarev_rally_point_1">
+		<text>搜查屍體. 他們的頭頭肯定有PDA,我想看看.</text>
+	</string>
+	<string id="degtyarev_rally_point_2">
+		<text>好的.</text>
+	</string>
+	
+	<string id="degtyarev_rally_point_pda_0">
+		<text>這,我找到了他的PDA.</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_1">
+		<text>很好,交給我. 這將有助於預測他們下一步的行動.</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_2">
+		<text>這些人到底是誰?</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_3">
+		<text>你看到了他們制服上的徽記了吧?</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_4">
+		<text>是的,上面寫著 "UNISG",如果這些人是科學家那我就是變異矮人.</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_5">
+		<text>也許早在2011年,他們剛被發現的時候就撤退了. 但可能是考慮到最近的混亂,與原罪的戰爭,前段日子的特大能量風暴... 所以聯合國覺得有必要把他們重組成為一個特種偵查小隊. 我抓到的的偵察兵仍然聲稱他們要向生態學家一樣研究特異區,但是我們知道他們肯定也對特異區的起源很好奇. 而這件事目前最好還是作為一個謎.</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_6">
+		<text>哇,你竟然告訴我了. 所以我會死於冷槍嗎?</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_7">
+		<text>別擔心. 可以說這不是第一次我們與本地的人合作了. 我很感謝你的幫助,所以你也會得到相應的傭金. 我也會保守你的秘密. 但是,我給你個友好的警告:保守你發現的秘密,包括這次行動. 你說的越少,我們就越不可能去找你.</text>
+	</string>
+	<string id="degtyarev_rally_point_pda_8">
+		<text>很公平,我瞭解了. 再見,上校.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_special_delivery_0">
+		<text>沒想到你會來這兒. 你來亞諾夫幹什麼?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_1">
+		<text>只是逛逛. 你懂的,探索,狩獵最危險的東西,之類的.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_2">
+		<text>你確定別的潛行者不會介意嗎?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_3">
+		<text>當然不會. 事實上在當地圈子裡作為一個樂於助人的中立潛行者還是很出名的. 我希望能保持下去.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_4">
+		<text>當然沒問題. 但是你為什麼給我發訊息? 我覺得你應該不需要旅行夥伴吧.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_5">
+		<text>你看,我是個大忙人. 我有很多事情要同時處理. 你在特異區做了很多事情. 你所提供的的幫助都收到了高度讚揚和獎勵.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_6">
+		<text>你需要什麼?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_7">
+		<text>我需要把一個包裹寄給我的一個朋友. 他就在離這不遠的地方待著. 但是問題是,他告訴我他在被一群"暴徒"追捕. 就像你和我最近對付的那些. 所以送貨的時候一定要又快又低調. 怎麼說?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_8">
+		<text>好的, 交給我就行</text>
+	</string>
+	<string id="degtyarev_further_cooperation_special_delivery_9">
+		<text>你搞定了就回來.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_undercover_agent_0">
+		<text>關於那個包裹...</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_1">
+		<text>怎麼了,潛行者?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_11">
+		<text>我相信像你這樣的專業人士不會有太多麻煩吧?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_2">
+		<text>沒啥,別在意.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_20">
+		<text>你的... 嗯, 朋友, 讓我把這包裹帶給你.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_200">
+		<text>你的朋友被抓了, 我到的時候他已經死了</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_210">
+		<text>對不起, 我沒能按時交貨.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_3">
+		<text>好樣的,這是你的報酬. 還有另外個任務. 我的另一個朋友設法潛入了一隊"暴徒"之中. 他已經觀察他們的暴行有一段時間了. 直接聯繫他,從他那裡拿到一個情報U盤.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_4">
+		<text>那你朋友身邊的那些"暴徒"怎麼辦? 他們不會見到我就開槍嗎?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_5">
+		<text>考慮到他們的處境,只要你是一個人去的,不要讓他們知道你去那裡的真正原因,他們這個特殊群體應該會好好對待你. 順帶說一下,我的朋友會問你特異區有什麼危險的變異生物. 記得告訴他你在路上被一群盲犬襲擊了.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_6">
+		<text>好的,我去了.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_undercover_agent_300">
+		<text>媽的,太糟糕了. 我得再準備另一個遞送包裹的計劃. 我想你不顧一切的努力應該得到一點獎勵,我需要你為下一個任務而努力. 我的另一個朋友設法潛入了一隊"暴徒"之中. 他已經觀察他們的暴行有一段時間了. 直接聯繫他,從他那裡拿到一個情報U盤.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_search_unit_0">
+		<text>關於你的朋友...</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_1">
+		<text>嗯?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_2">
+		<text>沒事,別在意.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_20">
+		<text>我拿到U盤了. 他們什麼也沒懷疑.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_200">
+		<text>我拿到U盤了. 不幸的是,我把臥底談話搞糟了,所以整個事情就變的很激烈...</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_3">
+		<text>幹得好. 我在這一塊的活就快完了. 還有一件事:看起來"暴徒"已經徹底搜查了尤皮特的老工廠. 我不想讓他們發現任何機密,萬一還有什麼東西留在那的話,所以我們必須把他們處理掉. 安全總比抱歉好.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_4">
+		 <text>好的. 我們走.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_300">
+		<text>你... 該死,那只是簡單的口令! 我還指望你可以做的很好. 不過,我還是可以好好利用你帶回來的情報. 我在這一塊的活就快完了. 還有一件事:看起來"暴徒"已經徹底搜查了尤皮特的老工廠. 我不想讓他們發現任何機密,萬一還有什麼東西留在那的話,所以我們必須把他們處理掉. 安全總比抱歉好.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_search_unit_middle_0">
+		<text>好了,他們都是死人了. 我們搞定了么?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_middle_1">
+		<text>眼前的威脅消失了. 現在我們應該去工廠搜索任何可能被留在那裡的檔案. 幾年前我曾去過那裡,但是有可能漏了什麼. 那時候很匆忙.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_search_unit_middle_2">
+		<text>好吧. 看著我變成該死的哥布林.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_final_0">
+		<text>給,拿著檔案.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_final_1">
+		<text>很好,我們在亞諾夫的任務都搞定了. 我該走了,餘輝行動還在繼續. 有些普城郊區的情況我必須去處理,但是沒必要再讓你捲進去. 多謝你的幫助,回頭見.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_final_2">
+		<text>再見,上校.</text>
+	</string>
+	
+	<string id="degtyarev_further_cooperation_final_bad_0">
+		<text>我們太遲了. 如果有什麼還在裡面的話,正當我們說話的時候,UNISG的研究人員已經把裡面搜了個底朝天了. 現在怎麼辦?</text>
+	</string>
+	<string id="degtyarev_further_cooperation_final_bad_1">
+		<text>我的工作越來越難了,就是這樣. 不過,我們在亞諾夫的任務都搞定了. 我該走了,我必須去拯救這次行動. 有些普城郊區的情況我必須去處理,但是需要你幫忙的時間已經結束了,回頭見.</text>
+	</string>
+	<string id="degtyarev_further_cooperation_final_bad_2">
+		<text>再見,德格捷列夫.</text>
+	</string>
+	
+	<string id="degtyarev_finale_dialogue_0">
+		<text>怎麼回事,上校?</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_1">
+		<text>這很容易被遺忘,但是我是烏克蘭安全域性的官員,我有命令在身. 特異區有很多秘密,而這些秘密最好還是被隱藏起來. 然而,有些人已經發現了太多. 史特洛克就是其中之一,UNISG也知道這點. 我的主要任務就是防止敏感情報落入壞人手裡. 我現在的任務就是把史特洛克帶回政府監管之下,恢復他作為我們官方研究顧問的職責... 或者消滅他.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_2">
+		<text>你真的要逮捕史特洛克? 他是特異區最有經驗的潛行者. 那傢伙已經對抗黑石且勝利了好幾年了!</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_3">
+		<text>目前為止,餘輝行動相當令人失望. UNISG已經發現了幾乎足夠多的證據來證明應該由聯合國來控制特異區. 情況危急,我們只能儘量做些損傷控制來挽回整個行動. 我們目前不能讓任何人和史特洛克說話,包括你.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_300">
+		<text>目前為止,餘輝行動取得了很大的成功. 我們保護了我們所有的秘密不讓UNISG知道,如果他們立馬離開的話可能很快就在特異區內被迫解除武裝投降. 局勢穩定了,現在剩下的就是收拾殘局,結束整個行動. 因此,我們不能讓任何人與史特洛克交談.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_310">
+		<text>目前為止,餘輝行動令人失望. UNISG已經得到了足夠的資料,可以讓他們從聯合國得到更多的資金和支援. 情況很嚴重,我們不能再失敗了. 我們目前不能讓任何人和史特洛克說話,包括你.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_320">
+		<text>目前為止,餘輝行動取得了成功. 雖然UNISG發現了點什麼,但是這不足以證明他們這一兩年來的行動是正當的. 優勢有限,我們應該收尾行動. 因此,我們不能讓任何人與史特洛克交談.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_4">
+		<text>抱歉我幫不了什麼忙,但是這真的有必要嗎?</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_400">
+		<text>我很高興可以幫你完成這麼多工. 我有沒有什麼可能可以請你幫個忙呢?</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_410">
+		<text>沒有那麼糟糕,你不必這麼做!</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_420">
+		<text>我很高興可以幫了你點小忙. 我有沒有什麼可能可以請你幫個忙呢?</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_5">
+		<text>必須是的. 恐怕我需要你的全力配合,除非你想被"掃地出門".</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_500">
+		<text>這是一次軍事行動,儘管你的確為它的成功做出了重大貢獻. 所以你想得到什麼樣的"恩惠"呢?</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_510">
+		<text>事實上,我必須這麼做. 我希望你能配合,我也不想你被"掃地出門".</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_520">
+		<text>這是一次軍事勾當,我不確定我是否有足夠餘地給你任何"好處"... 但是你可以試試.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_6">
+		<text>好吧,媽的. 我想我別無選擇了.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_61">
+		<text>我受夠了,德格捷列夫. 是時候幹掉你了,就像我當初應該乾的那樣.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_600">
+		<text>我想我們都知道史特洛克很不想來. 讓我試著用一個折中的辦法說服他:他和他的秘密一起藏起來,以換取你放他走,如何.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_7">
+		<text>聽起來是個合理的好處. 上頭不會喜歡的,但是我認為我們有足夠的餘地可以讓他"離開",鑑於整個行動的成功. 好吧,給你十分鐘時間把這事情解決了.</text>
+	</string>
+	<string id="degtyarev_finale_dialogue_8">
+		<text>謝謝你,上校. 這對每個人來說都是最好的結果.</text>
+	</string>
+	
+	<string id="degtyarev_finale_military_dialogue_0">
+		<text>搞定了. 史特洛克不會再泄露任何秘密了.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_1">
+		<text>這不是最好的解決辦法,但是我們別無選擇. 至少現在餘輝行動不是完全失敗... 而你也可以安然無恙的離開,只要你發誓閉好你的嘴. 記住,我們會盯著你的.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_100">
+		<text>這不是最好的解決辦法,但是如果成功的話... 至少現在可以說餘輝行動還算是成功. 感謝你適度的幫助,我可以讓你走,只要你發誓閉好你的嘴. 記住,我們會盯著你的.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_2">
+		<text>我同意這麼做只是爲了讓你和你的鐵皮士兵們離我遠點. 我當然不會告訴任何人我在特異區發現了什麼,這是我的承諾.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_3">
+		<text>很好. 沒有冒犯的意思,但是我希望我們不會再見面.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_300">
+		<text>很好. 我們可能不會再見面了,但我相信那正合你意.</text>
+	</string>
+	<string id="degtyarev_finale_military_dialogue_4">
+		<text>再見,上校.</text>
+	</string>
+	
+	<string id="degtyarev_finale_negotiator_dialogue_0">
+		<text>又一支UNISG小隊死光了,不需要再訴諸暴力了. 史特洛克也會確保別人找不到他.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_1">
+		<text>幹得好,用我的話說的話. 史特洛克可以走了,我們也不會追捕他. 你也一樣.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_100">
+		<text>幹得好. 我們會讓史特洛克離開的,儘管我們會盯著他. 你也是.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_2">
+		<text>很公平. 和你共事很開心,上校.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_3">
+		<text>再一次出色的完成了任務. 未來我們可能會再次合作. 再會.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_300">
+		<text>你表現的很好,你可以去自由活動了. 再見.</text>
+	</string>
+	<string id="degtyarev_finale_negotiator_dialogue_4">
+		<text>再見,上校.</text>
+	</string>
+	
+	<string id="army_lt_jup_special_delivery_0">
+		<text>嗯? 怎麼了?</text>
+	</string>
+	<string id="army_lt_jup_special_delivery_1">
+		<text>我這有個德格捷列夫上校要給你的包裹.</text>
+	</string>
+	<string id="army_lt_jup_special_delivery_2">
+		<text>好的,給我吧.</text>
+	</string>
+	<string id="army_lt_jup_special_delivery_3">
+		<text>就這些?</text>
+	</string>
+	<string id="army_lt_jup_special_delivery_4">
+		<text>是的,沒時間浪費了. 你可以走了.</text>
+	</string>
+	<string id="army_lt_jup_special_delivery_5">
+		<text>旅途愉快.</text>
+	</string>
+	
+	<string id="army_isg_spy_undercover_agent_0">
+		<text>你在這幹什麼,潛行者? 今天營地氛圍有點緊張,如果你不想惹麻煩的話就離我們遠點.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_1">
+		<text>我只是個信使. 一個共同聯繫人想讓我告訴你這塊地方的怪物活動.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_2">
+		<text>啊,好吧. 路上怎麼樣? 碰到了什麼危險嗎?</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_3">
+		<text>我在路上的時候被一群盲犬攻擊了.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_301">
+		<text>事實上,我在路上的時候被一群盲犬攻擊了.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_30">
+		<text>我在路上的時候被一群變異犬攻擊了.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_31">
+		<text>我在路上的時候被一隻變異巨獸攻擊了.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_40">
+		<text>額,你確定?</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_50">
+		<text>媽的,你這個白癡! 拿著這個馬上離開!</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_4">
+		<text>嗯,好的. 我們會小心的,謝謝. 拿著這個馬上離開吧.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_5">
+		<text>再見.</text>
+	</string>
+	<string id="army_isg_spy_undercover_agent_60">
+		<text>好吧,媽的.</text>
+	</string>
+	
+	<string id="military_tarasov_dialog_start_0">
+		<text>在特異區的又一個任務...</text>
+	</string>
+	<string id="military_tarasov_dialog_oa_join_0">
+		<text>我們要出發了,走吧.</text>
+	</string>
+	<string id="military_tarasov_dialog_oa_join_1">
+		<text>想想那個潛行者幾年前幫過我們. 好吧,命令就是命令.</text>
+	</string>
+</string_table>

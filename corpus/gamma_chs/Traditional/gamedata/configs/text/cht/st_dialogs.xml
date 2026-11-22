@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Trading / Repair dialog -->
+	<string id="st_stalker_trade_dialog_init">
+		<text>有什麼賣的么? %c[d_orange][交易]</text>
+	</string>
+	<string id="st_stalker_trade_dialog_reply_1">
+		<text>別指望有什麼花哨的東西. 這些是我找到的</text>
+	</string>
+	<string id="st_stalker_trade_dialog_reply_2">
+		<text>好吧</text>
+	</string>
+	<string id="st_stalker_trade_dialog_reply_3">
+		<text>額... 當然有</text>
+	</string>
+	<string id="st_stalker_trade_dialog_reply_no_1">
+		<text>沒啥賣的. 問問別人去吧</text>
+	</string>
+	<string id="st_stalker_trade_dialog_reply_no_2">
+		<text>不好意思, 我想留著我的東西</text>
+	</string>
+	
+	<string id="st_trader_dialog_init">
+		<text>我想買些裝備. %c[d_orange][交易]</text>
+	</string>
+	<string id="st_trader_dialog_reply_1">
+		<text>沒問題</text>
+	</string>
+	<string id="st_trader_dialog_reply_2">
+		<text>來看看吧</text>
+	</string>
+	<string id="st_trader_dialog_reply_3">
+		<text>看看我的貨</text>
+	</string>
+	
+	<string id="st_mechanic_dialog_init">
+		<text>我的裝備需要調整一下. %c[d_orange][修理/升級]</text>
+	</string>
+	<string id="st_mechanic_dialog_reply_1">
+		<text>我明白了, 給我看看你的裝備... 還有你的錢</text>
+	</string>
+	<string id="st_mechanic_dialog_reply_2">
+		<text>有更多的東西要修? 行吧</text>
+	</string>
+	<string id="st_mechanic_dialog_reply_3">
+		<text>太棒了, 更多的工作</text>
+	</string>
+	
+	<string id="st_medic_dialog_init">
+		<text>我想買點醫療物資. %c[d_orange][交易]</text>
+	</string>
+	<string id="st_medic_dialog_reply_1">
+		<text>我的補給已經不太足了, 這是我現有的貨</text>
+	</string>
+	<string id="st_medic_dialog_reply_2">
+		<text>媽的, 我都快沒貨了... 隨便了, 你看吧</text>
+	</string>
+	<string id="st_medic_dialog_reply_3">
+		<text>好的, 別浪費了</text>
+	</string>
+	
+	<string id="st_bartender_dialog_init">
+		<text>你有什麼賣的么? %c[d_orange][交易]</text>
+	</string>
+	<string id="st_bartender_dialog_reply_1">
+		<text>吃的, 喝的, 抽的... 你想要啥?</text>
+	</string>
+	<string id="st_bartender_dialog_reply_2">
+		<text>餓了? 我剛搞了些好東西...</text>
+	</string>
+	<string id="st_bartender_dialog_reply_3">
+		<text>你今天想來喝點啥? 雜牌伏特加, 還是普京伏特加?</text>
+	</string>
+
+<!-- Selling important documents -->
+	<string id="st_trade_important_documents_0">
+		<text>我找了些舊檔案, 你有興趣么?</text>
+	</string>
+	<string id="st_trade_important_documents_1">
+		<text>當然!讓我們看看你搞到了啥</text>
+	</string>
+	<string id="st_trade_important_documents_2">
+		<text>給, 看看</text>
+	</string>
+	<string id="st_trade_important_documents_4">
+		<text>成交</text>
+	</string>
+	<string id="st_trade_important_documents_5">
+		<text>我想我還是暫時留著比較好...</text>
+	</string>
+	<string id="st_trade_important_documents_7">
+		<text>好吧</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_esc_m_trader">
+		<text>我不會問你從哪搞來這些東西的. 這些檔案非比尋常. 幾乎每個人都能從中受益... 包括我. 我願意花上%s盧布來購買你這些東西, 外加我出售的一件好東西. 你意向如何?</text>
+	</string>
+	<string id="st_trade_important_documents_answer_esc_m_trader">
+		<text>非常好! 如果你還能找到類似的東西, 立馬給我帶過來.我保證你能得到很好的回報...嘿嘿</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_bar_visitors_barman_stalker_trader">
+		<text>什麼鬼... 好吧, 聽著. 這些檔案的確很有價值, 它們包含了特異區的一些實驗的資訊. 如果我是你, 我會盡量小心不會把它們交給壞人. 這樣吧,%s盧布這價格肯定對得起這些檔案. 我也會給你準備些別的東西. 我還會準備更多的錢以換取你以後帶來的更多的其他檔案. 你怎麼想?</text>
+	</string>
+	<string id="st_trade_important_documents_answer_bar_visitors_barman_stalker_trader">
+		<text>很好! 我想你知道在哪能找到我</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_zat_b7_bandit_boss_sultan">
+		<text>看看你, 一個勇敢的小英雄歷盡了艱險. 今天是個不錯的日子, 我也會忽視這些細節. 我知道人們會爲了這些檔案互相殘殺的, 這檔案已經藏了特么好多年了. 我給%s盧布, 建議你好好考慮一下</text>
+	</string>
+	<string id="st_trade_important_documents_answer_zat_b7_bandit_boss_sultan">
+		<text>幹得好, 孩子. 下次你再"找到"這樣的東西, 別忘了過來看看我</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_mar_smart_terrain_base_stalker_leader_marsh">
+		<text>我想這些檔案包含了對我們組織有價值的資訊. 但是不幸的是我們目前的情況不太好, 剛剛恢復一些元氣, 所以我只能提供%s盧布, 很抱歉</text>
+	</string>
+	<string id="st_trade_important_documents_answer_mar_smart_terrain_base_stalker_leader_marsh">
+		<text>謝謝你! 我知道這完全不是個等價交易. 我會和我們的交易商談談. 也許你下次再帶回更多檔案給我們的時候他能給你準備些額外的裝備. 當我們的情況好轉后我肯定會為這些情報付更多的錢, 我保證</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_bar_dolg_leader">
+		<text>有趣... 我們繼續...%s盧布肯定是合理的價格. 別提現在的紀律團完全不盡人意了. 多虧這些檔案, 我們才能安排好所需的裝備去交火. 我想你也能從中受益. 你覺得呢?</text>
+	</string>
+	<string id="st_trade_important_documents_answer_bar_dolg_leader">
+		<text>今天我會和軍方開始談判, 我相信不久就能看到些結果. 下次你給我們帶來這種檔案的時候, 我一定會給你更高價值的回報. 現在, 拿著, 紀律團對你的感激!</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_agr_smart_terrain_1_6_near_2_military_colonel_kovalski">
+		<text>有意思... 非常有意思. 我不管你是怎麼突然發現這些檔案的. 不管怎麼說, 我有個更好的注意, 或者確切點說: 一個商業計劃. 只要你把這些檔案交給我, 然後忘了它們的存在. 如果你發現了更多的檔案, 帶過來, 親手交給我, 沒有中間人, 明白么? 我這邊可以直接付你現金, 每一份檔案%s盧布.怎麼說, 我們達成共識了么?</text>
+	</string>
+	<string id="st_trade_important_documents_answer_agr_smart_terrain_1_6_near_2_military_colonel_kovalski">
+		<text>所以我們達成共識了. 現在, 這些是我自己口袋裡的錢, 拿著</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_cit_killers_merc_trader_stalker">
+		<text>真的很有趣... 這是有關在特異區進行實驗的檔案... 在取得突破性進展時的, 我們的一些重要客戶會開個很好的價錢. 現在時代不同了, 並不是說在這糟糕的情況下我們很需要這些東西, 但是這裡面的情報還是非常值錢的. 嗯... 我們直說吧, 我願意掏%s盧布. 成交?</text>
+	</string>
+	<string id="st_trade_important_documents_answer_cit_killers_merc_trader_stalker">
+		<text>沒關係. 如果你找到類似的檔案就直接帶過來就好, 不用害羞</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_yan_stalker_sakharov">
+		<text>非常有意思的東西!對付這些文件並不是我們的專長, 但是它們的內容可以為我們的研究提供很多幫助. 此外, 我毫不懷疑, 我們的贊助者肯定會對它們很感興趣, 這將對我們能得到的扶持資金有非常積極的影響. 你想和我們達成點特別的協議么? 像這樣的檔案, 帶過來, 我們就可以給你金錢獎勵. 我能為你剛給我的這份檔案提供%s盧布</text>
+	</string>
+	<string id="st_trade_important_documents_answer_yan_stalker_sakharov">
+		<text>謝謝你! 我對我們的新合作感到非常高興</text>
+	</string>
+	
+	<string id="st_trade_important_documents_ask_mil_smart_terrain_7_7_freedom_leader_stalker">
+		<text>哈, 你從哪兒搞到這些紙片的? 你懂的, 這種情報肯定會把世界搞得天翻地覆! 我也絕對不會隱瞞. 如果以前曾經發生過一些非法實驗, 那他們就必須公佈於衆. 你手裡的"這個"這是個開始.我給可以給你%s盧布. 在你拒絕前, 你應該這麼想: 今天你做的很好, 明天就會得到三倍的回報</text>
+	</string>
+	<string id="st_trade_important_documents_answer_mil_smart_terrain_7_7_freedom_leader_stalker">
+		<text>完美! 如果你能幫我們找到別的檔案, 我會很感激的</text>
+	</string>
+	
+	
+<!-- Swap items with Companions -->
+	<string id="st_companion_inv_show_gui">
+		<text>我要管理下你帶的物品</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items">
+		<text>我需要你幫我背一些戰利品</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_dummy"> <!-- NPC will refuse -->
+		<text>我需要你幫我背一些戰利品</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_response_accept_1">
+		<text>沒問題, 你想拿回去就跟我說</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_response_accept_2">
+		<text>額... 你想讓我背點重的東西, 是吧? 好吧</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_response_refuse_1">
+		<text>等下, 夥計... 我自己也有東西! 我不能一次性揹著所有的東西啊</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_response_refuse_2">
+		<text>抱歉, 我的包已經滿了</text>
+	</string>
+	<string id="st_companion_inv_take_all_my_items_response_refuse_3">
+		<text>我是啥? 騾子?! 我的包已經要爆炸了, 老哥!</text>
+	</string>
+	<string id="st_companion_inv_give_me_back_all_items">
+		<text>嘿! 把我的東西還我!</text>
+	</string>
+	<string id="st_companion_inv_give_me_back_all_items_response">
+		<text>當然, 給你</text>
+	</string>
+
+<!-- Paid Companions -->
+	<string id="st_paid_companion_dialog_text_0">
+		<text>我要找隊保鏢, 有興趣么?</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_1">
+		<text>預付款的話就沒問題. 我收%s盧布24小時,%s盧布48小時. 但是警告你, 如果你要去什麼黑石領地或者實驗室之類的你就得自己去了, 明白了么?</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_2">
+		<text>不好意思, 我們已經有活了</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_3">
+		<text>我只需要24小時 %c[d_orange][%s盧布]</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_4">
+		<text>好的, 兩天 %c[d_orange][%s盧布]</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_5">
+		<text>事實上... 我改變主意了</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_6">
+		<text>我們走</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_7">
+		<text>我們走</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_8">
+		<text>好的</text>
+	</string>
+	<string id="st_paid_companion_dialog_text_9">
+		<text>好的</text>
+	</string>
+	<string id="st_paid_companion_contract_timeout_1">
+		<text>合約結束了. 你現在就靠你自己了. 注意安全</text>
+	</string>
+	<string id="st_paid_companion_contract_timeout_2">
+		<text>我的服務結束了, 我要回去了. 保重</text>
+	</string>
+	<string id="st_paid_companion_danger_1">
+		<text>這和我們之前談好的不一樣. 抱歉, 我今天沒有自殺的打算. 所以到此為止了</text>
+	</string>
+	<string id="st_paid_companion_danger_2">
+		<text>你是認真的嗎?! 當你接受我的幫助時, 我怎麼跟你說的?我不去這些地方, 我要離開這裡</text>
+	</string>
+
+<!-- Medic general -->
+	<string id="st_dm_medic_general_text_0">
+		<text>我需要治療</text>
+	</string>
+	<string id="st_dm_medic_general_text_1_0">
+		<text>1850盧布, 我能治好你所有的傷.我有種特殊的血清可以讓你快速恢復健康. 除非你受到了輻射, 血清拿輻射沒辦法. 不過, 你還可以另外花上1480盧布, 我有另外一種治療方法可以清除你身上所有的發光的東西. 所以, 你意向如何?</text>
+	</string>
+	<string id="st_dm_medic_general_text_1_1">
+		<text>啊, 當然, 你甚至不能保持安然無恙. 讓我看看...</text>
+	</string>
+	<string id="st_dm_medic_general_text_1_2">
+		<text>哈? 好的, 過來</text>
+	</string>
+	<string id="st_dm_medic_general_text_1_3">
+		<text>好的, 我會把你治好... 爲了錢</text>
+	</string>
+	<string id="st_dm_medic_general_text_10_0">
+		<text>你沒有任何傷口也沒有輻射病的跡象. 你可以走了</text>
+	</string>
+	<string id="st_dm_medic_general_text_10_1">
+		<text>我來看看... 嗯... 在我看來你挺好的</text>
+	</string>
+	<string id="st_dm_medic_general_text_10_2">
+		<text>嗯... 手和腳都沒問題... 頭也在原位... 你好的很</text>
+	</string>
+	<string id="st_dm_medic_general_text_10_3">
+		<text>老兄, 你比野豬還健康</text>
+	</string>
+	<string id="st_dm_medic_general_text_10_4">
+		<text>別逗, 你好得很</text>
+	</string>
+	<string id="st_dm_medic_general_text_2">
+		<text>好疼... 救命... %c[d_orange][1, 850 盧布]</text>
+	</string>
+	<string id="st_dm_medic_general_text_3">
+		<text>我身上的蓋革計數器一直嗶個不停 %c[d_orange][1, 480 盧布]</text>
+	</string>
+	<string id="st_dm_medic_general_text_4">
+		<text>別見外, 直接給我整個全套! %c[d_orange][3, 350 盧布]</text>
+	</string>
+	<string id="st_dm_medic_general_text_5">
+		<text>我突然覺得不疼了</text>
+	</string>
+	
+	<string id="st_dm_medic_general_text_6">
+		<text>好了, 下次注意安全</text>
+	</string>
+	<string id="st_dm_medic_general_text_7">
+		<text>隨你便</text>
+	</string>
+
+
+<!-- Unlock PDAs -->
+	<string id="st_encrypted_pda_text_0">
+		<text>我有一臺加密的PDA, 似乎沒反應. 你能幫我解決一下么?</text>
+	</string>
+	<string id="st_encrypted_pda_text_1">
+		<text>如果你願意出點錢的話, 當然. 500 盧布解鎖一個PDA</text>
+	</string>
+	<string id="st_encrypted_pda_text_2">
+		<text>公平的交易, 給</text>
+	</string>
+	<string id="st_encrypted_pda_text_3">
+		<text>別在意...</text>
+	</string>
+	<string id="st_encrypted_pda_text_4">
+		<text>好了, 你現在可以用了. 玩的開心</text>
+	</string>
+	<string id="st_encrypted_pda_text_5">
+		<text>好的</text>
+	</string>
+	
+	
+<!-- Faction bribe -->
+	<string id="st_bribe_text_0">
+		<text>你有關係對吧? 你能幫我解決一些和別人的問題么?</text>
+	</string>
+	<string id="st_bribe_text_1">
+		<text>也許吧. 你把誰惹炸了?</text>
+	</string>
+	
+	<string id="st_bribe_text_2">
+		<text>我想讓烏克蘭軍隊別來搞我</text>
+	</string>
+	<string id="st_bribe_text_21">
+		<text>嗯. 我告訴你吧. 我可以讓他們的一個官員給你偽造一份臨時檔案.5000盧布應該就足夠讓你逍遙上兩天. 四天的話10000盧布. 在通行證有效的情況下, 他們不會朝你開槍, 但我建議你也別去跟他們有交集</text>
+	</string>
+	
+	<string id="st_bribe_text_3">
+		<text>我想讓"匪王"蘇坦的人別再騷擾我</text>
+	</string>
+	<string id="st_bribe_text_31">
+		<text>別再? 你別做夢了, 但是如果你掏錢讓他們省去了敲詐你的步驟的話, 他們可能就會無視你. 5000盧布滿足他們兩天, 10000盧布四天. 你要幾天的?</text>
+	</string>
+	
+	<string id="st_bribe_text_4">
+		<text>我之前給晴空的人留下了很差的印象, 我想表明我沒有惡意</text>
+	</string>
+	<string id="st_bribe_text_41">
+		<text>我想像不到你做了什麼才會激怒這些沼澤居民. 不管怎麼說, 5000盧布, 可以在這兩天變的寬容些, 10000盧布則可以讓他們這四天里放鬆點</text>
+	</string>
+	
+	<string id="st_bribe_text_5">
+		<text>紀律團在糾纏我, 我想讓他們停下</text>
+	</string>
+	<string id="st_bribe_text_51">
+		<text>儘管他們有著"正義"和"秩序"的理想, 但是如果你付他們錢的話, 他們還是會對所謂的"無政府主義者和罪犯"視而不見的. 5000盧布可以安撫他們兩天, 10000盧布可以安撫他們四天</text>
+	</string>
+	
+	<string id="st_bribe_text_6">
+		<text>我想我和生態學家還有他們的警衛產生了一些誤會</text>
+	</string>
+	<string id="st_bribe_text_61">
+		<text>當然, 生態學家應該比較容易說服. 付5000盧布, 可以讓他們放鬆一兩天, 4天的話10000盧布</text>
+	</string>
+	
+	<string id="st_bribe_text_7">
+		<text>我惹炸了自由軍</text>
+	</string>
+	<string id="st_bribe_text_71">
+		<text>自由軍? 你這個該死的法西斯. 開玩笑開玩笑. 5000盧布可以讓他們無視你一兩天, 10000盧布四天</text>
+	</string>
+	
+	<string id="st_bribe_text_8">
+		<text>傭兵. 看上去我頭上被放了賞金</text>
+	</string>
+	<string id="st_bribe_text_81">
+		<text>真有可能是. 不過幸運的是, 他們為財而生. 5000盧布可以買一兩天, 10000盧布可以買四天</text>
+	</string>
+	
+	<string id="st_bribe_text_9">
+		<text>獨行者. 我不知道怎麼就在他們之中聲名狼藉</text>
+	</string>
+	<string id="st_bribe_text_91">
+		<text>好的... 等等, *所有* 的? 哇, 你真的很會交朋友, 不是么? 如果你付5000盧布, 我可以說服他們不來打攪你一兩天. 四天10000盧布. 成交?</text>
+	</string>
+	
+	<string id="st_bribe_text_13">
+		<text>給, 兩天應該就夠了</text>
+	</string>
+	<string id="st_bribe_text_14">
+		<text>好的, 來四天</text>
+	</string>
+	
+	<string id="st_bribe_text_10">
+		<text>我改變主意了</text>
+	</string>
+	<string id="st_bribe_text_11">
+		<text>好的</text>
+	</string>
+	<string id="st_bribe_text_12">
+		<text>我會聯繫他們解決問題, 所以在他們改變主意之前完成你的活. 記住: 保持距離. 如果你太靠近他們, 他們還是會行動的</text>
+	</string>
+	
+<!-- Guide Job -->
+	<string id="st_jg_1">
+		<text>我看到了你發的訊息, 需要帶路嗎?</text>
+	</string>
+	<string id="st_jg_1_alt">
+		<text>關於目的地...</text>
+	</string>
+	<string id="st_jg_2">
+		<text>是的, 你願意幫忙么?</text>
+	</string>
+	<string id="st_jg_2_alt">
+		<text>怎麼了?</text>
+	</string>
+	<string id="st_jg_3">
+		<text>跟我說說細節先</text>
+	</string>
+	<string id="st_jg_4">
+		<text>好! 我們出發!</text>
+	</string>
+	<string id="st_jg_5">
+		<text>帶路吧, 潛行者! 等到了我要去的地方, 我會給你報酬的</text>
+	</string>
+	<string id="st_jg_6">
+		<text>抱歉, 你的保證金不夠</text>
+	</string>
+	<string id="st_jg_mlr_1">
+		<text>我連你是誰都不知道. 所以不了, 謝謝, 潛行者</text>
+	</string>
+	<string id="st_jg_7">
+		<text>提醒我下, 我們要去哪來著?</text>
+	</string>
+	<string id="st_jg_8">
+		<text>我們到了</text>
+	</string>
+	<string id="st_jg_9">
+		<text>終於! 謝謝, 潛行者, 好樣的. 這是你的錢</text>
+	</string>
+	<string id="st_jg_10">
+		<text>我改變主意了. 我想取消這項工作</text>
+	</string>
+	<string id="st_jg_11">
+		<text>真的? 你確定?</text>
+	</string>
+	<string id="st_jg_12">
+		<text>是的, 我確定</text>
+	</string>
+	<string id="st_jg_13">
+		<text>其實, 還是算了吧</text>
+	</string>
+	<string id="st_jg_14">
+		<text>我有緊急事務要去%s, 有沒有可靠的潛行者可以帶路並保護我們? 我%s, 我叫%s, 最好快一點</text>
+	</string>
+	<string id="st_jg_15">
+		<text>太慢了, 這一路晃來晃去到底是在幹嘛? 抱歉, 當時我們說好的, 我不會再給你全額報酬了</text>
+	</string>
+	<string id="st_jg_16">
+		<text>簡單來說: 在%s小時之內我必須趕到%s, 酬金是%s盧布, 但是如果我們沒能及時趕到的話, 你就得不到全額報酬了</text>
+	</string>
+	<string id="st_jg_17">
+		<text>我需要去</text>
+	</string>
+	<string id="st_jg_18">
+		<text>看來我只能靠自己了, 這麼輕鬆的錢竟然都不賺, 真為你遺憾</text>
+	</string>
+	<string id="st_jg_19">
+		<text>長度, 起點到終點:</text>
+	</string>
+	<string id="st_jg_29">
+		<text>一個潛行者要去這裡;</text>
+	</string>
+	
+	<string id="st_jg_cancel_1">
+		<text>好棒哦! 謝謝你, 什麼屁事都沒幹!</text>
+	</string>
+	<string id="st_jg_cancel_2">
+		<text>真丟臉</text>
+	</string>
+	<string id="st_jg_cancel_3">
+		<text>感謝你浪費我的時間</text>
+	</string>
+	
+<!-- Debt / Loan -->
+	<string id="debt_register_0">
+		<text>%s, 你能借我些錢嗎?</text>
+	</string>
+	<string id="debt_register_1">
+		<text>你需要這筆錢也許是有充分理由的... 但我也是. 你必須還我本金加上百分十五的利息, 而且記住, 在你還完債之前我不會與你交易</text>
+	</string>
+	<string id="debt_register_2">
+		<text>我需要 %c[d_orange][5, 000 盧布]</text>
+	</string>
+	<string id="debt_register_3">
+		<text>好的, 借我 %c[d_orange][10, 000 盧布]</text>
+	</string>
+	<string id="debt_register_4">
+		<text>我要 %c[d_orange][15, 000 盧布]</text>
+	</string>
+	<string id="debt_register_5">
+		<text>我接受, 我要借 %c[d_orange][20, 000 盧布]</text>
+	</string>
+	<string id="debt_register_6">
+		<text>算了吧...</text>
+	</string>
+	<string id="debt_register_7">
+		<text>我唯一這麼做的原因是因為你很樂於助人. 我希望你也值得信賴. 給你. 下次在這兒出現的時候要還我 %c[d_orange][%s盧布]%c[255, 160, 160, 190]</text>
+	</string>
+	<string id="debt_register_8">
+		<text>好的</text>
+	</string>
+	<string id="debt_register_10">
+		<text>所以每次有窮逼舔著逼臉來我就得撒錢么? 答案是不</text>
+	</string>
+	
+	<string id="debt_pay_off_0">
+		<text>關於我欠你的錢...</text>
+	</string>
+	<string id="debt_pay_off_1">
+		<text>你要還清你的債么?</text>
+	</string>
+	<string id="debt_pay_off_2">
+		<text>當然, 錢給你 %c[d_orange][%s盧布]</text>
+	</string>
+	<string id="debt_pay_off_3">
+		<text>額... 我還在努力</text>
+	</string>
+	<string id="debt_pay_off_4">
+		<text>很好, 你的賬清了</text>
+	</string>
+	<string id="debt_pay_off_5">
+		<text>你最好快點</text>
+	</string>
+	
+	<string id="st_debt_no_trade_1">
+		<text>我不這麼想. 你欠我錢, 還記得么? 你最好儘快還清</text>
+	</string>
+
+<!-- purchase extra equipment -->
+	<string id="buy_extra_items_0">
+		<text>有什麼特價商品嗎?</text>
+	</string>
+	<string id="buy_extra_items_1">
+		<text>你在想什麼?</text>
+	</string>
+	<string id="buy_extra_items_2">
+		<text>我想買些物資</text>
+	</string>
+	<string id="buy_extra_items_3">
+		<text>當然可以, 但是現在沒人會願意賣你任何東西. 你必須獲得一些信任和經驗, 然後你才能批發物資</text>
+	</string>
+	<string id="buy_extra_items_4">
+		<text>我想買些裝備</text>
+	</string>
+	<string id="buy_extra_items_5">
+		<text>你對什麼感興趣?</text>
+	</string>
+		<string id="buy_extra_items_6">
+			<text>醫療補給</text>
+		</string>
+		<string id="buy_extra_items_7">
+			<text>食物</text>
+		</string>
+		<string id="buy_extra_items_8">
+			<text>彈藥</text>
+		</string>
+		<string id="buy_extra_items_9">
+			<text>選擇</text>
+		</string>
+		<string id="buy_extra_items_10">
+			<text>選擇</text>
+		</string>
+		<string id="buy_extra_items_11">
+			<text>選擇</text>
+		</string>
+	<string id="buy_extra_items_12">
+		<text>我改變主意了</text>
+	</string>
+	
+	<string id="buy_extra_items_txt">
+		<text>%s%c[d_orange][%s盧布]</text>
+	</string>
+
+
+<!-- Purchase routes -->
+	<string id="st_buy_route_0">
+		<text>我想買些隱藏路線的情報</text>
+	</string>
+	<string id="st_buy_route_1">
+		<text>我的確有些情報. \n大多數地區和地點都是8000塊的正常價格, 10000盧布隱秘點, 隱藏通道20000盧布. \n如果你有興趣, 我可以跟你分享一些特別的"秘密"路線. 40000盧布, 一分不少</text>
+	</string>
+	<string id="st_buy_route_2">
+		<text>對我來說有點貴</text>
+	</string>
+	<string id="st_buy_route_3">
+		<text>關我什麼事, 等你認真要買了再來找我</text>
+	</string>
+	<string id="st_buy_route_4">
+		<text>給你</text>
+	</string>
+	<string id="st_buy_route_dialog">
+		<text>%c[255,160,160,190]•%c[255,220,220,220]%s-%s價格 %c[255,160,160,190][%s盧布]</text>
+	</string>
+	
+	<string id="st_route_open_title">
+		<text>路線情報</text>
+	</string>
+	<string id="st_route_open_msg">
+		<text>%c[255,160,160,190]從 %c[255,220,220,220](%s)%c[255,160,160,190] 到 %c[255,220,220,220](%s)發現新的路線</text>
+	</string>
+	<string id="st_route_unknown">
+		<text>未知路線</text>
+	</string>
+
+	<string id="st_route_aes1">
+		<text>切爾諾貝利核電站南部</text>
+	</string>
+	<string id="st_route_aes2">
+		<text>切爾諾貝利核電站北部</text>
+	</string>
+	<string id="st_route_agr">
+		<text>農業研究所</text>
+	</string>
+	<string id="st_route_bar">
+		<text>羅斯托克</text>
+	</string>
+	<string id="st_route_cit">
+		<text>死城</text>
+	</string>
+	<string id="st_route_dsc">
+		<text>黑暗小徑</text>
+	</string>
+	<string id="st_route_esc">
+		<text>封鎖線</text>
+	</string>
+	<string id="st_route_gar">
+		<text>填埋場</text>
+	</string>
+	<string id="st_route_gen">
+		<text>發電廠</text>
+	</string>
+	<string id="st_route_jup">
+		<text>尤皮特</text>
+	</string>
+	<string id="st_route_kat">
+		<text>廢棄醫院</text>
+	</string>
+	<string id="st_route_lim">
+		<text>利曼斯克</text>
+	</string>
+	<string id="st_route_mar">
+		<text>大沼澤</text>
+	</string>
+	<string id="st_route_mil">
+		<text>軍事倉庫</text>
+	</string>
+	<string id="st_route_out">
+		<text>普城郊區</text>
+	</string>
+	<string id="st_route_pol">
+		<text>牧場</text>
+	</string>
+	<string id="st_route_pri">
+		<text>普里皮亞奇</text>
+	</string>
+	<string id="st_route_rad">
+		<text>雷達站</text>
+	</string>
+	<string id="st_route_red">
+		<text>紅森林</text>
+	</string>
+	<string id="st_route_ros">
+		<text>廢棄區</text>
+	</string>
+	<string id="st_route_trc">
+		<text>卡車墓園</text>
+	</string>
+	<string id="st_route_val">
+		<text>黑谷</text>
+	</string>
+	<string id="st_route_yan">
+		<text>揚塔</text>
+	</string>
+	<string id="st_route_zat">
+		<text>扎頓</text>
+	</string>
+	<string id="st_route_x8">
+		<text>X-8實驗室</text>
+	</string>
+	<string id="st_route_x16">
+		<text>X-16實驗室</text>
+	</string>
+	<string id="st_route_x18">
+		<text>X-18實驗室</text>
+	</string>
+	<string id="st_route_x19">
+		<text>X-19實驗室</text>
+	</string>
+	<string id="st_route_mar_h">
+		<text>晴空隱秘基地</text>
+	</string>
+	<string id="st_route_agr_u">
+		<text>農研所地下設施</text>
+	</string>
+	<string id="st_route_jup_u">
+		<text>木星工廠地道</text>
+	</string>
+	<string id="st_route_sar">
+		<text>石棺</text>
+	</string>
+	<string id="st_route_s_lab">
+		<text>黑石指揮中心</text>
+	</string>
+	<string id="st_route_w_lab">
+		<text>黑石戰爭實驗室</text>
+	</string>
+	
+	<!-- Travel = unused -->
+	<string id="ka_travel_dialog_ask">
+		<text>我需要旅行到某個地方... 你能幫我安排么?</text>
+	</string>
+	<string id="ka_travel_dialog_response">
+		<text>當然. 你要去哪裡?</text>
+	</string>
+	<string id="ka_travel_dialog_nevermind">
+		<text>算了</text>
+	</string>
+	<string id="ka_travel_dialog_accept">
+		<text>聽起來不錯</text>
+	</string>
+	<string id="ka_travel_dialog_change">
+		<text>事實上, 我要去別的地方.</text>
+	</string>
+	<string id="ka_travel_dialog_deny">
+		<text>太貴了</text>
+	</string>
+	<string id="ka_travel_dialog_cost">
+		<text>我要收%s盧布</text>
+	</string>
+	
+	<string id="ka_travel_dialog_zaton">
+		<text>扎頓的斯卡多夫斯克號</text>
+	</string>
+	<string id="ka_travel_dialog_jupiter">
+		<text>尤皮特的亞諾夫車站</text>
+	</string>
+	<string id="ka_travel_dialog_yantar">
+		<text>揚塔的科學實驗室</text>
+	</string>
+	<string id="ka_travel_dialog_cordon">
+		<text>封鎖線的菜鳥村</text>
+	</string>
+	<string id="ka_travel_dialog_bar">
+		<text>羅斯托克的酒吧</text>
+	</string>
+	<string id="ka_travel_dialog_warehouses">
+		<text>軍事倉庫的自由軍基地</text>
+	</string>
+	<string id="ka_travel_dialog_city">
+		<text>死城的傭兵基地</text>
+	</string>
+	<string id="ka_travel_dialog_agroprom">
+		<text>農業研究所的軍隊基地</text>
+	</string>
+	<string id="ka_travel_dialog_swamp">
+		<text>大沼澤的晴空基地</text>
+	</string>
+	
+	<!-- About Quests Bandit -->
+	<string id="about_quests_dialog_bandit_0">
+		<text>最近有什麼新聞么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_1">
+		<text>哪種的?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_10">
+		<text>你對"巧手"尼博怎麼看?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_101">
+		<text>"巧手"尼博? 我想總有一天我們會在一個安靜的地方好好對待這個滑頭傻逼!</text>
+	</string>
+	<string id="about_quests_dialog_bandit_11">
+		<text>你有聽說過綠洲的事情么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_111">
+		<text>嗯, 我聽過個有趣的故事. 大概就是, 填埋場的孩子們開始到處傳謠說綠洲在哪, 漸漸的也讓這故事變得可信了起來. 然後他們去了那個地方然後等著. 好吧, 我還能說啥? 很多容易上當的屌絲就去分享他們的東西了, 所以剛開始傳這個故事的孩子們很快就離開了特異區. 為啥不呢? 他們這輩子都被安排了. 只有一個叫作尤加的傢伙留了下來...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_112">
+		<text>你要是去了那裡, 那你所有的問題將會得到解決... 我想那裡一定很舒服 - 再也不用擔心宿醉或者痔瘡了!找到它, 建個度假村, 然後賺大錢吧</text>
+	</string>
+	<string id="about_quests_dialog_bandit_113">
+		<text>我為啥要聽信這些廢話? 這些, 都只是屌絲們廉價的話題罷了... 真正的男人不相信這些. 你懂的, 你坐在一個酒吧里, 手裡拿著冷飲, 潛行者們鬧哄哄的, 爭論綠洲在哪裡. 每個沙雕都發誓他知道在哪...但由於某些原因, 每個沙雕說的地點都各不相同</text>
+	</string>
+	<string id="about_quests_dialog_bandit_12">
+		<text>見過一個叫喜鵲的潛行者么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_121">
+		<text>當然... 一看到他就感覺他是個十足的傻屌, 然後我聽潛行者們說他也是個十足的人渣, 我不知道他在哪... 如果你要找他, 就得自己去找</text>
+	</string>
+	<string id="about_quests_dialog_bandit_122">
+		<text>沒有... 我第一次聽到這名字, 夥計</text>
+	</string>
+	<string id="about_quests_dialog_bandit_13">
+		<text>你知道誰會有從私人箱子里偷來的東西么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_131">
+		<text>一隻老鼠. 我想你最好去問問亞諾夫的大佬們, 他們以捕鼠聞名</text>
+	</string>
+	<string id="about_quests_dialog_bandit_14">
+		<text>誰能幫我解密些東西?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_141">
+		<text>我聽說亞諾夫的阿佐特挺有本事的. 顯然, 當他還沒為紀律團工作的時候, 夥計們找他破解過PDA好幾次....啊, 美好的舊時光...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_143">
+		<text>不要對我的科學知識水平抱期望, 大兄弟. 你需要一個黑客來解決這種狗屎問題. 上次我就遇見了硬點子, 當我搞定以後才發現, 他後面還有五個人在等著...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_15">
+		<text>我拿到了紀律團交易商的PDA. 你知道誰會對這感興趣么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_151">
+		<text>有個在斯卡多夫斯克號叫做貓頭鷹的交易商. 他的開價很棒, 夥計們是不是會找他賣潛行者的PDA. 他也不會問太多問題, 所以一切都非常好</text>
+	</string>
+	<string id="about_quests_dialog_bandit_152">
+		<text>差不多每個人, 夥計. 想想: 他自己陣營的人都想活埋這個屌人, 其他陣營的會引發一陣騷動, 而扎頓的貓頭鷹則會讓那個PDA好好的消失. 唯一的問題是, 只有貓頭鷹知道以後這個PDA會出現在哪裡...當然這取決於你</text>
+	</string>
+	<string id="about_quests_dialog_bandit_16">
+		<text>這附近哪能找到工具?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_165">
+		<text>如果你需要外科手術工具, 我建議你去醫院和急救站看看. 如果你需要建築工具, 那就去尤皮特的採石場看看. 如果你要找到是小工具, 那就去舊車間里找</text>
+	</string>
+	<string id="about_quests_dialog_bandit_166">
+		<text>我特么怎麼知道? 我又不需要這些工具來敲詐潛行者, 所以... 別緊張, 我只是開玩笑</text>
+	</string>
+	<string id="about_quests_dialog_bandit_17">
+		<text>誰能解鎖一個記憶體模組?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_171">
+		<text>好問題! 我想說這就是我的專長, 對吧? 哈! 你是傻嗎夥計? 不是技師就是生態學家啊... 不然你真以為我能做出這鬼東西么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_172">
+		<text>我實話跟你講: 上次我打開記憶體模組的時候還是在學生時期, 而那時的記憶體模組是一張爛的不行的軟盤. 去找專家談談吧</text>
+	</string>
+	<string id="about_quests_dialog_bandit_18">
+		<text>誰能搞開一個鋼製容器?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_181">
+		<text>知道斯卡多夫斯克號的卡丹么? 他前幾天剛用撬棍廢了某個人追著他打. 我想卡丹可以讓他的撬棍派上更好的用場, 如果你需要撬開一些東西的話</text>
+	</string>
+	<string id="about_quests_dialog_bandit_182">
+		<text>好吧, 如果有正確的工具我也能做到, 但是誰會帶著這種工具進特異區呢?去找技師吧夥計 - 他們是專業的</text>
+	</string>
+	<string id="about_quests_dialog_bandit_19">
+		<text>我在找一個叫斯耐格的潛行者. 你知道我在哪能找到他嗎?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_191">
+		<text>鬼知道. 去斯卡多夫斯克號問"匪王"蘇坦吧. 老大通常知道所有的目標在哪</text>
+	</string>
+	<string id="about_quests_dialog_bandit_193">
+		<text>我知道, 我聽過那個屌絲. 他通常會在扎頓附近晃悠, 所以你在這附近肯定找不到他</text>
+	</string>
+	<string id="about_quests_dialog_bandit_2">
+		<text>你對墜毀的直升機有什麼知道的?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_20">
+		<text>誰可能會對紀律團創始人的情報感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_201">
+		<text>我不知道誰會不感興趣! 這是個爆炸性的新聞, 夥計, 所以你最好的辦法就是去斯卡多夫斯克號找貓頭鷹 - 這樣你會得到些現金, 也不會樹敵</text>
+	</string>
+	<string id="about_quests_dialog_bandit_22">
+		<text>不. 你想想, 紀律團在我左邊, 自由軍在我右邊, 還有潛行者在我屁股後面 - 所以你指望我盯著天空?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_23">
+		<text>小弟們說他們發現鋼鐵森林的電纜上吊著個人, 但是你過去的話肯定能看到更多... 你很有可能會跑進一個異常點或者被一個騷靈砸爆腦袋</text>
+	</string>
+	<string id="about_quests_dialog_bandit_24">
+		<text>是的, 有人看到一架直升機墜毀在了高地上, 但是並沒有辦法上去... 他們說它飛的很奇怪, 可能是飛行員磕了藥或者怎麼了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_26">
+		<text>我聽到了一架直升機墜毀的聲音, 它正好掉進了沼澤水坑裡. 它很快就擱淺了, 且那裡的水對你的身體健康肯定沒什麼好處 - 劇毒, 化學污染還有屎.</text>
+	</string>
+	<string id="about_quests_dialog_bandit_3">
+		<text>你有在附近見過軍隊嗎?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_30">
+		<text>誰會對扎頓和尤皮特之間的地區的地圖感興趣的?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_301">
+		<text>領航員, 我猜 - 他是往返這些地區的主要嚮導. 如果他能搞到地圖而不是像現在這樣利用星星那就再好不過了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_31">
+		<text>馬仔們說他們見到了一支軍方的部隊直奔南部高地的傭兵營地. 他們以為有什麼糟糕的事情要發生了, 所以就匆忙離開了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_32">
+		<text>我聽說過這樣一個故事: 軍隊的屎殼郎嘗試著從他們墜毀在沼澤的直升機上弄點屎下來. 想像一下, 五個制服仔在沼澤里跳來跳去試著不被弄濕...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_33">
+		<text>一個夥計告訴我, 他在聽到槍聲后試著跟蹤一個潛行者想搶劫他. 結果軍隊和傭兵在交火. 所以他就躲了起來等到了槍戰結束, 但那時候那個潛行者已經跑掉了. 運氣很糟糕哈?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_34">
+		<text>我的一個老兄告訴我他所見的一個搞笑場景. 想像一下, 那條駁船頂上有個製麵機, 諾亞在那邊上狂叫, 結果著火了點燃了所有東西, 還有十個鍋蓋頭儘可能的想遠離諾亞的狗. 好吧, 那老哥自導自演笑的很開心</text>
+	</string>
+	<string id="about_quests_dialog_bandit_35">
+		<text>不, 這是個很詭異的地方, 全是全副武裝的人... 我在執行任務的時候沒時間去人那些是軍隊那些是紀律團</text>
+	</string>
+	<string id="about_quests_dialog_bandit_4">
+		<text>你知道怎麼去普里皮亞奇嗎?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_40">
+		<text>我能雇誰來保護生態學家?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_403">
+		<text>哈, 我和我的馬仔可以做這活! 我們會給他們從未見過的保護! 潛行者和怪物靠近都會被嚇出屎的, 相信我! 每週交錢, 我們都聽你指揮了. 別忘了聖誕節的獎金!</text>
+	</string>
+	<string id="about_quests_dialog_bandit_41">
+		<text>用走的, 夥計. 走到尤皮特的盡頭然後再問你自己這個問題, 因為根本沒有可以直接從扎頓到普里皮亞奇的路線, 這是個科學事實</text>
+	</string>
+	<string id="about_quests_dialog_bandit_43">
+		<text>嘿, 夥計, 我看起來很像個嚮導么? 我的意思是, 我的頭上是不是有什麼"來問我傻逼問題"的紋身? 去問領航員吧, 他就是靠這賺錢的</text>
+	</string>
+	<string id="about_quests_dialog_bandit_44">
+		<text>不... 我該怎麼辦? 那裡可沒有潛行者可以搶!</text>
+	</string>
+	<string id="about_quests_dialog_bandit_5">
+		<text>你能推薦一個不願意被束縛而且想去普里皮亞奇的人么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_51">
+		<text>普里皮亞奇不是我們這樣的人能待的地方. 想想, 那裡面充滿了變種怪和異常點... 就像特異區里別的地方一樣... 但是沒了潛行者們和他們的戰利品. 當潛行者出現在普利皮亞季的時候喊我們一下, 我們自然就會去那裡維持秩序</text>
+	</string>
+	<string id="about_quests_dialog_bandit_57">
+		<text>不知道, 夥計, 抱歉</text>
+	</string>
+	<string id="about_quests_dialog_bandit_6">
+		<text>我找到個不尋常的武器, 你知道有什麼人可能會對它有了解的?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_62">
+		<text>是我的話我會去問問技師. 我是說, 他們是專業搞這些的, 對吧?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_63">
+		<text>難倒我了, 但是斯卡多夫斯克號的潛行者們認為卡丹是個技術天才啥的. 如果你想找他試試的話... 對我來說他只是個老酒鬼...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_7">
+		<text>我可以雇誰來幫生態學家測量?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_73">
+		<text>很簡單 - 我們的馬仔會做的. 我的意思是, 他們沒去讀過書什麼的, 但是他們會好好"測量"你想"測量"的任何人的. 一旦他們搞定了, 那麼那些人毋庸置疑只需要一個漂亮的墳墓就夠了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_8">
+		<text>我找到了一個很奇怪的神器. 你有什麼推薦的買家么?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_81">
+		<text>你說, 一個奇怪的神器?讓我看看... 交給我讓我仔細看看...哈, 放鬆點夥計 - 我只是開個玩笑, 但是如果我是你的話我會把拿東西藏好, 畢竟其他人就沒這麼好的幽默感了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_83">
+		<text>你真有種帶著這個神器到處顯擺. 佩服你. 這樣: 在斯卡多夫斯克號有個在尋求這些東西的交易商叫大鬍子. 不過我們還不知道他是怎麼把神器帶出特異區的, 你可以輕鬆的賣掉它</text>
+	</string>
+	<string id="about_quests_dialog_bandit_9">
+		<text>我在附近發現了一個吸血怪巢穴. 我們該怎麼辦?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_91">
+		<text>額, 我們該怎麼辦? 趕緊特么快跑, 就這麼辦!</text>
+	</string>
+	<string id="about_quests_dialog_bandit_98">
+		<text>好吧, 別在意</text>
+	</string>
+
+	<!-- About Quests Duty -->
+	<string id="about_quests_dialog_dolg_0">
+		<text>最近有什麼新聞嗎?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_1">
+		<text>哪種新聞?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_10">
+		<text>你對"巧手"尼博怎麼看?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_101">
+		<text>"巧手"尼博? 沒聽過這個人. 也許他在某個小隊里或者別的什麼?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_11">
+		<text>你有聽說過綠洲嗎?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_111">
+		<text>這是個潛行者的童話. 潛行者就是這麼做的: 捏造些不真實的東西, 然後大家聚在一起尋找它! 如果我是你, 我會無視這些. 這就像一個神話的大門: 相信了它那你不久后也會相信許願石的存在</text>
+	</string>
+	<string id="about_quests_dialog_dolg_112">
+		<text>啊, 那個會治癒你的傷口補充你的能量的地方? 我有個訊息告訴你, 朋友: 它不存在. 潛行者們發明了這些廢話讓特異區聽起來沒那麼危險, 但殘酷的事實是, 特異區沒有任何安全的地方. 你必須牢牢把握現實, 夥計 - 做夢的人在特異區待不久的</text>
+	</string>
+	<string id="about_quests_dialog_dolg_113">
+		<text>噢當然, 那裡所有的神器都是金子做的, 而且會在你擦腳的時候裝在銀盤子里給你送過來... 當然我是在開玩笑. 我懷疑它根本不存在, 不過真能找到的話那還不錯. 我們甚至可以在那裡建一個完全不需要醫生和藥的醫院 - 人們只要過去就能治療... 媽的, 白日做夢</text>
+	</string>
+	<string id="about_quests_dialog_dolg_12">
+		<text>有遇到過一個叫喜鵲的潛行者嗎?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_121">
+		<text>我連紀律團里的同志們都很難記住, 而你問我一個潛行者的事情?他們的基地在斯卡多夫斯克號, 去那問問吧</text>
+	</string>
+	<string id="about_quests_dialog_dolg_122">
+		<text>不, 沒聽過</text>
+	</string>
+	<string id="about_quests_dialog_dolg_13">
+		<text>你知道誰會有從私人箱子里偷來的東西么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_131">
+		<text>這問題! 這絕不會發生在紀律團的基地, 但是那些全是自由軍痞子的地方 - 會是我第一個去找的地方</text>
+	</string>
+	<string id="about_quests_dialog_dolg_14">
+		<text>這裡誰能幫我破解些東西?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_141">
+		<text>這有個叫阿佐特的技師在亞諾夫車站. 他對電子裝置很在行. 我有次忘了我PDA的密碼, 他只花了5秒鐘就破解了!</text>
+	</string>
+	<string id="about_quests_dialog_dolg_143">
+		<text>你需要去亞諾夫 - 找阿佐特, 他擅長這個</text>
+	</string>
+	<string id="about_quests_dialog_dolg_15">
+		<text>我找到了個紀律團交易商的PDA. 你知道誰可能會對這感興趣么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_151">
+		<text>紀律團的交易商? 這不可能! 再說一遍, 如果你找到些什麼情報, 你最好交給蘇爾加中校, 讓他處理</text>
+	</string>
+	<string id="about_quests_dialog_dolg_16">
+		<text>我到哪能找到工具?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_163">
+		<text>這附近有一座大工廠. 當然, 現在可能已經被洗劫一空了, 但如果我是你的話, 我還是會去檢查一下工廠的倉庫</text>
+	</string>
+	<string id="about_quests_dialog_dolg_165">
+		<text>如果我是你的話我會去舊車間看看. 另外也有可能能在商店裡找到一些</text>
+	</string>
+	<string id="about_quests_dialog_dolg_166">
+		<text>這附近只有變種怪和異常點. 哈! 我不會去找異常點, 但我相信變異矮人和攝魂怪也不會幫你</text>
+	</string>
+	<string id="about_quests_dialog_dolg_169">
+		<text>事實上, 這附近有個橋底下有一列火車. 我以前見過它們 - 通常被用於運送技師, 所以你可能在那能有些收貨</text>
+	</string>
+	<string id="about_quests_dialog_dolg_17">
+		<text>誰能解鎖一個記憶體模組?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_171">
+		<text>阿佐特 - 他是亞諾夫車站唯一知道怎麼對付這些東西的人</text>
+	</string>
+	<string id="about_quests_dialog_dolg_172">
+		<text>你需要去找個技師來解決這個問題. 這裡唯一像樣的技師就是亞諾夫的阿佐特了</text>
+	</string>
+	<string id="about_quests_dialog_dolg_18">
+		<text>誰能幫我打開一個鋼製容器?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_181">
+		<text>他們說那些潛行者中有個技師. 是個醉鬼, 但他知道自己在幹什麼. 去找他談談</text>
+	</string>
+	<string id="about_quests_dialog_dolg_182">
+		<text>哈, 所以你是隨身帶著個保險箱么. 我相信阿佐特幫不了你... 如果它是電子鎖的話那可能就不一樣了...</text>
+	</string>
+	<string id="about_quests_dialog_dolg_19">
+		<text>我在找一個叫斯耐格的潛行者. 你知道我能在哪找到他嗎?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_191">
+		<text>你最好去問問潛行者們 - 只有他們自己知道. 我從沒聽說過斯耐格這個人或者這個名字</text>
+	</string>
+	<string id="about_quests_dialog_dolg_2">
+		<text>你對墜毀的直升機有什麼知道的?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_20">
+		<text>誰會對紀律團創始人的情報感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_201">
+		<text>當然是我們的指揮官. 把你所有知道的都彙報給蘇爾加, 你會得到紀律團的感激的</text>
+	</string>
+	<string id="about_quests_dialog_dolg_22">
+		<text>是的, 我們的偵察兵看到一架軍用直升機摔在了尤皮特的保護區. 他們說他們在墜毀前一直在想辦法改變航向, 但我猜飛行員還有什麼別的需要擔心. 我想應該是那些軍隊仔沒能成功離開採石場</text>
+	</string>
+	<string id="about_quests_dialog_dolg_23">
+		<text>不, 這附近沒有. 我們這裡的存在感很低... 試著問問亞諾夫那兒我們的人</text>
+	</string>
+	<string id="about_quests_dialog_dolg_25">
+		<text>我們的巡邏隊報告說一架軍用直升機試圖在尤皮特的木星工廠那裡迫降. 不幸的是, 直升機迫降的時候撞到了車間的房頂. 應該是沒有幸存者了 - 直升機墜毀后巡邏隊沒有收到任何求救訊號</text>
+	</string>
+	<string id="about_quests_dialog_dolg_3">
+		<text>這附近有見過軍隊么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_30">
+		<text>誰會對扎頓和尤皮特之間的區域的地圖感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_301">
+		<text>某個需要這個的人. 我是說領航員 - 他是亞諾夫和斯卡多夫斯克號之間的嚮導, 所以那些地圖對他來說肯定很有用</text>
+	</string>
+	<string id="about_quests_dialog_dolg_31">
+		<text>軍隊? 這附近我沒見過, 但是我們在這地區的時間也不長</text>
+	</string>
+	<string id="about_quests_dialog_dolg_35">
+		<text>最近在採石場發現了一具士兵的屍體. 他可能就是那直升機的乘員之一. 出了機組人員之外, 直升機最多還可搭載8個人, 所以他們一定找到了出去的路, 儘管沒人知道他們去了哪裡</text>
+	</string>
+	<string id="about_quests_dialog_dolg_36">
+		<text>在生態學家碉堡那裡發現了一個軍人, 他剛到那裡. 我不知道具體細節</text>
+	</string>
+	<string id="about_quests_dialog_dolg_37">
+		<text>幾天前有人看到一個穿軍裝的傢伙進了沃克霍夫防空基地. 但是很有可能那只是一個被誤認為成士兵的殭屍</text>
+	</string>
+	<string id="about_quests_dialog_dolg_38">
+		<text>潛行者們彙報說它們在木星工廠附近發現了一支軍方小隊. 從描述上看像是一支特種部隊. 他們由一名身份不明的潛行者帶路, 朝著普里皮亞奇的方向前進. 這情報聽起來很可靠, 但是過去的經驗證明, 這種情報通常是不可信的</text>
+	</string>
+	<string id="about_quests_dialog_dolg_4">
+		<text>你知道怎麼去普里皮亞奇么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_40">
+		<text>我可以雇誰來保護生態學家?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_401">
+		<text>他們找不到任何比紀律團更靠譜的保護了. 去亞諾夫找蘇爾加中校 - 我相信你倆能解決這個問題</text>
+	</string>
+	<string id="about_quests_dialog_dolg_402">
+		<text>沒有, 當他們找了自由軍的人後我們就會盡量遠離那個地方. 整天聽那些白癡講他們屎一樣的笑話比死還難受</text>
+	</string>
+	<string id="about_quests_dialog_dolg_42">
+		<text>紀律團目前沒有理由要尋找一條前往普里皮亞奇的路, 但是我正在收集情報. 有未經正是的報告表明, 木星工廠下面有一條隧道可以通往普里皮亞奇. 確認這一情報需要對工廠區域進行徹底的搜索</text>
+	</string>
+	<string id="about_quests_dialog_dolg_43">
+		<text>沒有. 如果你需要這樣的情報, 你必須去找個平民導遊談談 - 我們的偵察兵已經有很多的任務了</text>
+	</string>
+	<string id="about_quests_dialog_dolg_44">
+		<text>我們的偵察兵會定期去尋找該地區有沒有通往普里皮亞奇的安全的通路, 但是目前還沒有任何結果</text>
+	</string>
+	<string id="about_quests_dialog_dolg_5">
+		<text>你能推薦一個不願意被束縛而且想去普里皮亞奇的人么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_51">
+		<text>紀律團在這個地區的執勤人員是有限的. 去亞諾夫找我們的人談談吧</text>
+	</string>
+	<string id="about_quests_dialog_dolg_52">
+		<text>有傳言說移動科研地堡里有個軍人. 不過, 他沒多少路能走. 你看, 這些生態學家已經在那裡待了12到18個月了, 他肯定不會獨自一人前往特異區的邊緣的. 考慮到這點, 我打賭他可能會對這感興趣</text>
+	</string>
+	<string id="about_quests_dialog_dolg_53">
+		<text>我建議你去找找那些喜歡冒險的人. 例如, 在亞諾夫車站有個叫瓦諾的潛行者. 他不在乎自己惹上什麼麻煩, 而且他可能很有用 - 那孩子可以閉著眼睛找出一條穿過異常點的路</text>
+	</string>
+	<string id="about_quests_dialog_dolg_54">
+		<text>好吧, 你可以到精神病院去開一個招募活動... 或者, 我知道一個很好的選擇, 黑石戰士. 說道這個, 我們的人發現他們的一個小隊在防空基地的附近, 他們很可能知道去普里皮亞奇的路.... 嘿夥計, 我希望你別當真</text>
+	</string>
+	<string id="about_quests_dialog_dolg_56">
+		<text>找個紀律團的志願者. 比如斯特萊德, 他還從沒接到過任務, 所以我想中校應該會讓他和你一起去</text>
+	</string>
+	<string id="about_quests_dialog_dolg_57">
+		<text>每個人都知道紀律團的人是最好的戰士... 但是我們現在還有別的任務</text>
+	</string>
+	<string id="about_quests_dialog_dolg_6">
+		<text>我發現一個不尋常的武器. 你知道有誰可能會了解這東西么?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_62">
+		<text>好啊, 就是我了! 那是某種大炮! 你是自己做的還是真是找到的?我還從沒見過這樣的東西...問問技師吧</text>
+	</string>
+	<string id="about_quests_dialog_dolg_7">
+		<text>我能雇誰來幫助生態學家測量?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_71">
+		<text>這是個傻逼問題 - 當然是紀律團了. 我們有很多經驗豐富的人, 以前也和生態學家合作過. 去見蘇爾加中校 - 我相信他會找一個小組來完成這項工作的</text>
+	</string>
+	<string id="about_quests_dialog_dolg_72">
+		<text>誰會想去那個被自由軍守護的碉堡工作? 那些可怕的和平主義者大多數時間都是嗨的, 他們很可能會像打敵人一樣互相開槍</text>
+	</string>
+	<string id="about_quests_dialog_dolg_8">
+		<text>我找到一個非常奇怪的神器. 你能推薦一個買家嗎?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_81">
+		<text>神器都很神奇, 而且我也不建議你隨身攜帶. 把它交給專家處理吧</text>
+	</string>
+	<string id="about_quests_dialog_dolg_83">
+		<text>你應該拿去給那些潛行者看 - 他們是這東西的專家. 或者更好的就是拿去給那些神器交易商</text>
+	</string>
+	<string id="about_quests_dialog_dolg_9">
+		<text>我在附近發現了一個吸血怪巢穴, 我們該怎麼辦?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_91">
+		<text>紀律團小隊目前沒有在這一地區的掃蕩行動, 所以只能等待</text>
+	</string>
+	<string id="about_quests_dialog_dolg_98">
+		<text>好吧, 那算了</text>
+	</string>
+
+	<!-- About Quests Freedom -->
+	<string id="about_quests_dialog_freedom_0">
+		<text>最近有什麼新聞?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_1">
+		<text>比如說?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_10">
+		<text>你對"巧手"尼博怎麼看?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_101">
+		<text>我沒怎麼聽過他... 你最好去問問潛行者們, 他也是潛行者的一員, 不是么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_11">
+		<text>你有聽過綠洲的事么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_111">
+		<text>成堆...很不錯的故事, 我跟你說. 沙地上的宮殿, 薄霧中的島嶼, 天空中的城堡... 香格里拉, 伊甸園... 綠洲. 每個自由的人都有夢想, 我不會為此責怪他們</text>
+	</string>
+	<string id="about_quests_dialog_freedom_112">
+		<text>嗯, 我的確從一個潛行者那裡聽說了這個有趣的故事. 我想他是第一個跟我提起這個綠洲的人. 他說, 根據傳說, 你到了那裡所有的傷口都會癒合, 讓你變得平靜放鬆, 好像你就沒在特異區里一樣. 從那以後我就沒見過他了... 直到他離開后我才記起來他以前瘸著腳, 但是那次他離開, 他走的筆直, 看上去年輕了許多</text>
+	</string>
+	<string id="about_quests_dialog_freedom_113">
+		<text>嗯, 一些自由潛行者們給了我座標... 十個不同的座標. 把它們放在一起看, 大概就是一塊從"焦腦器"到切爾諾貝利核電站的區域, 而亞諾夫酒吧就在中心點附近. 所以我們現在完全可能就是在綠洲, 好好享受吧!</text>
+	</string>
+	<string id="about_quests_dialog_freedom_12">
+		<text>見過一個叫喜鵲的潛行者么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_121">
+		<text>不. 我對這裡的自由潛行者不熟</text>
+	</string>
+	<string id="about_quests_dialog_freedom_122">
+		<text>喜鵲? 沒有, 但是這名字挺酷</text>
+	</string>
+	<string id="about_quests_dialog_freedom_13">
+		<text>你知道誰會有從私人箱子里偷來的東西么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_131">
+		<text>不, 這裡沒有這樣的人. 也許有人會趁你不注意咬一口你的麵包或者喝一口你的飲料, 但是肯定沒有徹頭徹尾的小偷</text>
+	</string>
+	<string id="about_quests_dialog_freedom_14">
+		<text>誰能幫我破解一些東西?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_141">
+		<text>我聽說亞諾夫的阿佐特非常熱衷於研究這些組合和演算法. 但我不確定, 我從沒和他說過話 - 他為紀律團工作, 所以他沒什麼時間對付我們這些自由人</text>
+	</string>
+	<string id="about_quests_dialog_freedom_143">
+		<text>我不是本地的專家... 下次你去亞諾夫問問我們的人 - 他們肯定知道</text>
+	</string>
+	<string id="about_quests_dialog_freedom_15">
+		<text>我找到了個紀律團交易商的PDA. 你知道誰可能會對這感興趣么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_151">
+		<text>聽起來很有趣! 我的話我會把它交給洛基, 我們在亞諾夫的頭兒.他會確保自由潛行者會知道招募他們的自由軍是什麼樣的貨色</text>
+	</string>
+	<string id="about_quests_dialog_freedom_16">
+		<text>我在哪能找到工具?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_163">
+		<text>肯定是工廠啊夥計, 不然呢? 哪裡不太熱鬧, 但是那倉庫肯定會讓你高興的. 那裡也比較安全, 你肯定能找到些像樣的工具</text>
+	</string>
+	<string id="about_quests_dialog_freedom_165">
+		<text>這是好問題, 夥計.讓我們來想想. 你在特異區外的話哪裡能找到工具? 現在如果你有半個腦子的話, 你就知道你可以在商店買... 如果你沒有, 你可以去工廠的車間里找找工具和你的腦子. 對吧? 在特異區也一樣 - 你得去一樣的地方找. 就這麼簡單, 潛行者</text>
+	</string>
+	<string id="about_quests_dialog_freedom_166">
+		<text>工具? 這是什麼暗號么夥計? 這裡沒有那些豬, 你可以隨便說話... 哦, 你是認真的? 那我就不知道了</text>
+	</string>
+	<string id="about_quests_dialog_freedom_169">
+		<text>我聽說我們的一個夥計在尋找工具, 他去了橋下的火車那.顯然, 那裡有電彗星... 不管怎麼說, 他說裡面一點都不好玩... 我為啥告訴你這些? 嗯, 因為他說他在那附近看到一些工具, 但是由於不安全, 所以沒拿</text>
+	</string>
+	<string id="about_quests_dialog_freedom_17">
+		<text>誰能幫我解鎖一個記憶體模組?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_171">
+		<text>移動科研地堡的圖卡列夫能做到. 他又好又效率又有禮貌. 亞諾夫也有, 阿佐特, 紀律團的. 他又臭又賤, 但是他很可能會做這項工作</text>
+	</string>
+	<string id="about_quests_dialog_freedom_172">
+		<text>一個熟練的技師, 我猜. 本地有很多類似的機械的東西, 所以除非你需要給你的記憶體模組裝個槍管什麼的, 不然就去尤皮特問問</text>
+	</string>
+	<string id="about_quests_dialog_freedom_18">
+		<text>誰能幫我打開一個鋼製的容器?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_181">
+		<text>嗯, 斯卡多夫斯克號的卡丹應該是個不錯的人選. 人們說他清楚他在做什麼, 儘管他大部分時間都是喝醉的狀態. 也許他能幫你打開那個箱子...</text>
+	</string>
+	<string id="about_quests_dialog_freedom_182">
+		<text>誰靠著撬鋼製容器過活?我想本地技師阿佐特應該不會怎麼做. 我聽說他更喜歡撬別人的電子鎖</text>
+	</string>
+	<string id="about_quests_dialog_freedom_19">
+		<text>我在找一個叫斯耐格的潛行者. 你知道我能在哪找到他么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_191">
+		<text>我沒聽說過這個人... 如果我是你, 我會問問別的自由潛行者</text>
+	</string>
+	<string id="about_quests_dialog_freedom_2">
+		<text>關於墜落的直升機你有什麼知道的?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_20">
+		<text>誰會對紀律團創始人的情報感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_201">
+		<text>毋庸置疑, 就是洛基了. 他是我們在亞諾夫的頭頭. 即使他不知道該怎麼處理這些情報 - 但是最重要的是別讓紀律團的人拿到. 你能想像這東西能產生多少扯淡的宣傳么? 一想到這我就頭疼的很</text>
+	</string>
+	<string id="about_quests_dialog_freedom_22">
+		<text>是啊, 你聽說了那個採石場直升機的故事了啊? 大概就是, 那鐵罐子撞到了他們同伴六年前用於開採的鐵罐子上. 有些人說他們是因為愚蠢在出了這樣的事情, 但我想應該還是有更多別的原因. 你想: 沒人會去那裡, 所以軍隊一旦完成了他們的任務, 他們就可以回到直升機那, 包紮一下然後離開. 我很想知道他們的任務是什麼...</text>
+	</string>
+	<string id="about_quests_dialog_freedom_23">
+		<text>我不是本地人, 我啥都不知道. 去亞諾夫找找我們的人 - 他們會告訴你你想知道的一切, 你不知道的一切</text>
+	</string>
+	<string id="about_quests_dialog_freedom_25">
+		<text>是的, 一些夥計幾天前發現一架直升機飛的和屎一樣.它沒降落到一個好地方, 而是選擇了尤皮特的一個屋頂上. 他們說它撞穿了屋頂, 拽著一堆垃圾摔在了地上</text>
+	</string>
+	<string id="about_quests_dialog_freedom_3">
+		<text>有看到附近有軍隊的人么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_30">
+		<text>誰會對扎頓和尤皮特之間的區域的地圖感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_301">
+		<text>必須是領航員了夥計. 他是這附近主要的自由潛行者嚮導 - 如果你想討論地圖, 那他就是最好人選</text>
+	</string>
+	<string id="about_quests_dialog_freedom_31">
+		<text>冷靜, 夥計.這裡沒有條子, 沒有鐵罐子, 也沒有可怕的民兵 - 你在特異區很安全</text>
+	</string>
+	<string id="about_quests_dialog_freedom_35">
+		<text>沒有, 但是一些夥計告訴我他們看見一支軍方小隊在採石場的直升機停機坪裡邊上爬行他們想幫他們, 但是後來決定不幫. 鍋蓋頭們是個不可預測的品種, 你永遠不知道他們什麼時候會在你背後來上一槍</text>
+	</string>
+	<string id="about_quests_dialog_freedom_36">
+		<text>我自己是沒見過, 但是傳言說移動科研地堡里有個鍋蓋頭. 生態學家奧澤斯基說他是從墜毀的直升機上下來的... 玩笑話是那些鍋蓋頭給自己找了個士兵寵物</text>
+	</string>
+	<string id="about_quests_dialog_freedom_37">
+		<text>我自己沒有, 但我從自由潛行者那裡聽到了一些事情. 他們說在沃爾科夫防空基地發現了個鍋蓋頭. 一定是個鬼或者是個被喚醒的殭屍... 你覺得呢?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_38">
+		<text>沒有. 一個夥計說他看見七個士兵和一個自由潛行者穿過無線電廠朝著普里皮亞奇走去. 我單純的估計是因為那傢伙在特異區一段時間沒抽上大麻了所以說的胡話</text>
+	</string>
+	<string id="about_quests_dialog_freedom_4">
+		<text>你知道怎麼去普里皮亞奇么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_40">
+		<text>我可以雇誰來保護生態學家?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_401">
+		<text>自由軍, 換句話說就是我們. 我們一直和生態學家合作, 所以保護他們是小菜一碟. 去亞諾夫和我們的老大洛基談談 - 他肯定會同意的</text>
+	</string>
+	<string id="about_quests_dialog_freedom_402">
+		<text>我不確定, 朋友. 因為據我所知生態學家們雇了一隊紀律團為他們工作... 我很想保護生態學家, 但是去每天盯著那些便秘的紀律團的臉不太值得</text>
+	</string>
+	<string id="about_quests_dialog_freedom_42">
+		<text>他們說你沒法從尤皮特去到那裡... 我是說那個地方, 不是那個行星的尤皮特... 哈! 你得承認, 這是個好笑話</text>
+	</string>
+	<string id="about_quests_dialog_freedom_43">
+		<text>你知道, 我一無所知. 我只是沒時間去那裡... 是我的話我會問營地裡的領航員, 對吧? 他是自由潛行者, 比任何人都瞭解這個地區</text>
+	</string>
+	<string id="about_quests_dialog_freedom_44">
+		<text>兄弟, 早知道我也該去那裡的. 遠離紀律團, 鍋蓋頭和所有這些戰鬥是值得的...</text>
+	</string>
+	<string id="about_quests_dialog_freedom_5">
+		<text>你能推薦一個不願意被束縛而且想去普里皮亞奇的人么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_51">
+		<text>抱歉, 朋友, 我在扎頓誰都不認識...聽我的, 去亞諾夫問問我們的夥計吧</text>
+	</string>
+	<string id="about_quests_dialog_freedom_52">
+		<text>你知道移動科研地堡么? 他們那邊有情況. 現是潛行者加里, 決定去普里皮亞奇, 現在那個鍋蓋頭也有了同樣的想法. 加里是一個為自己是個獨狼感到自豪的人, 但是那個鍋蓋頭應該就是你要找的人</text>
+	</string>
+	<string id="about_quests_dialog_freedom_53">
+		<text>在亞諾夫的瓦諾是個好人選. 他是個正直的人, 只要他願意他隨時可以加入自由軍. 但我猜他不願與紀律團作鬥爭... 或者任何形式的鬥爭. 這是他對事物的看法, 我們尊重他的看法</text>
+	</string>
+	<string id="about_quests_dialog_freedom_54">
+		<text>當然有. 我們的一個夥計在乾涸的湖邊發現了一支小隊. 他們肯定對普里皮亞奇瞭如指掌, 而且他們應該也不為任何人工作. 他們也肯定很勇敢, 因為他們是黑石士兵!</text>
+	</string>
+	<string id="about_quests_dialog_freedom_55">
+		<text>有. 神行客, 我們新兵的頭頭... 他似乎對我們的隊伍感到不安. 他的孩子們適應的很好, 但是他在這裡並不快樂... 找他談談吧 - 我不希望看到一個好人在他打心底不願意待的地方</text>
+	</string>
+	<string id="about_quests_dialog_freedom_57">
+		<text>不, 不知道</text>
+	</string>
+	<string id="about_quests_dialog_freedom_6">
+		<text>我找到了個不尋常的武器. 你知道可能會有誰對此有了解么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_62">
+		<text>你應該找了本它的說明書吧? 沒有? 那我就不知道了</text>
+	</string>
+	<string id="about_quests_dialog_freedom_7">
+		<text>我可以雇誰來幫助生態學家測量?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_71">
+		<text>我想我們的夥計可以勝任這份工作. 自由軍也有聰明的人, 如果我們不懂, 我們會到碉堡問. 我們希望我們有機會可以幫助生態學家!去亞諾夫找洛基談談 - 我相信他會同意的</text>
+	</string>
+	<string id="about_quests_dialog_freedom_72">
+		<text>我和我的夥計們願意接這活, 但是這幾天紀律團守衛著碉堡. 突然出現去看那些生態學家肯定是個問題, 而且每天在那裡肯定對身體不好</text>
+	</string>
+	<string id="about_quests_dialog_freedom_8">
+		<text>我找到一個很奇怪的神器, 你能給我推薦個買家么?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_81">
+		<text>你需要找個收藏夾, 夥計. 你在亞諾夫估計是找不到, 因為潛行者們都害怕來這裡. 你最好去扎頓問問, 那裡比較安靜</text>
+	</string>
+	<string id="about_quests_dialog_freedom_83">
+		<text>你知道那個潛行者營地的大鬍子酒保么? 他收神器, 也不會宰你太多. 不管你怎麼認為, 他是個好夥計.很遺憾他沒有為我們工作, 真的</text>
+	</string>
+	<string id="about_quests_dialog_freedom_9">
+		<text>我在附近找到了一個吸血怪的巢穴, 我們該怎麼辦?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_91">
+		<text>兄弟, 你得去警告那些自由潛行者 - 他們的營地就在附近. 當然這個地區的野生動物很有價值, 但是比起這個我更關心這裡的人們</text>
+	</string>
+	<string id="about_quests_dialog_freedom_98">
+		<text>好的, 我知道了</text>
+	</string>
+
+	<!-- About Quests Stalker -->
+	<string id="about_quests_dialog_stalkers_0">
+		<text>最近有什麼新聞么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_1">
+		<text>比如說?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_10">
+		<text>你對"巧手"尼博怎麼看?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_101">
+		<text>我沒這閑情跟你叨叨... 去問問斯卡多夫斯克號的常客吧</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_11">
+		<text>你有聽說過綠洲嗎?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_111">
+		<text>我聽說過綠洲的一切! 這是個傳說, 是個神話... 每個潛行者都期待著不同的東西, 他們每個人都聲稱知道它確切的位置. 遺憾的是, 這些地點的共同點就是它們很難到達</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_112">
+		<text>嗯, 他們說在那裡傷口會立即癒合, 你的能量會在幾分鐘內得到補充... 他們說在綠洲沒有疾病, 甚至沒有輻射中毒! 不過我確定是的, 它的位置... 想知道在哪么? 在特異區的中心! 但是你得把這事情瞞著, 別跟任何人說!</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_113">
+		<text>我聽說在那你遇到的變種怪都會無視你走開. 他們還說那裡有種神奇叫做綠洲之心... 沒人知道那是幹啥用的, 但是又一點可以肯定: 你別去碰他. 任何拿走它的人都沒法繼續在特異區生存了... 位置? 夥計, 大家都知道它在普里皮亞奇的摩天輪的地下! 不然還會在哪?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_12">
+		<text>見過一個叫喜鵲的潛行者么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_121">
+		<text>當然... 不過不知道他現在在哪</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_122">
+		<text>額... 沒聽說過這人...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_13">
+		<text>你知道誰會有從私人箱子里偷來的東西么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_131">
+		<text>額, 不知道? 問問亞諾夫的老人, 也許他們會幫助你</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_14">
+		<text>誰能幫我破解一些東西?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_141">
+		<text>亞諾夫的阿佐特, 不然還有誰?他喜歡這些複雜的技術... 但是不喜歡和槍打交道</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_143">
+		<text>我不知道. 去亞諾夫問問 - 那有個專家之類的人</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_15">
+		<text>我有個紀律團交易商的PDA. 你知道誰會對這感興趣么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_151">
+		<text>你知道斯卡多夫斯克號的貓頭鷹么? 我想他會很高興得到這個. 他喜歡參與這些敏感的生意...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_152">
+		<text>以前在斯卡多夫斯克號有個叫貓頭鷹的傢伙. 他做情報生意... 你的PDA可能會讓他感興趣</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_16">
+		<text>我在這附近的哪能找到工具?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_161">
+		<text>一個潛行者告訴我說在1986年前他家的老頭子在變電站車間里工作. 他說那裡有各種各樣的裝置, 所以我猜那裡會有工具. 現在可能已經生鏽了, 不過還是值得一看</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_162">
+		<text>你知道山上森林裡的鋸木廠么? 那裡應該有一些工具, 除非有人捷足先登了. 不過我對此深表懷疑: 你越靠近那個地方, 你就越感覺要被嚇出屎. 那裡的輻射也很可怕, 所以我就沒去...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_163">
+		<text>尤皮特的工廠在那, 裡面肯定有工具. 就我個人而言, 我是肯定不會靠近那個工廠的... 那地方令人毛骨悚然. 你可以去尤皮特的倉庫看看, 工廠旁邊的倉庫</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_164">
+		<text>我聽說普里皮亞奇有幾個地方可以找到各種各樣的技術垃圾. 其中一家就是老的蘇聯百貨店. 這幾乎是當時唯一一個有出售這些</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_165">
+		<text>我怎麼知道? 去舊車間或者商店看看, 那裡可能有些有用的東西</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_166">
+		<text>實話說, 我最後一次見到像樣的工具是在西多洛維奇的碉堡里.當然, 你得付錢, 都是新的, 也不是很貴</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_167">
+		<text>你懂的, 夥計, 我來特異區不是來找工具的. 想想看, 一個充滿放射性的錘子有多大用處?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_168">
+		<text>我聽說你可以到舊服務中心去搜刮點零碎的東西... 你也可以在那找到工具. 和其他的事情一樣: 想找到好東西的唯一辦法就是先去那裡</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_169">
+		<text>好問題... 如果我是你的話我回去橋下看看那列火車. 別問我為什麼... 我的直覺告訴我在那你可能會有所發現</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_17">
+		<text>誰能幫我解鎖一個記憶體模組?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_171">
+		<text>讓我想想... 嗯, 亞諾夫的阿佐特肯定能搞定. 另外的話, 還有托卡列夫, 生態學家的技術人員, 真正的專家. 你要想想你能從中獲得什麼, 因為阿佐特要價會便宜的多</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_172">
+		<text>嗯, 你需要找一個技師, 但是這裡只有卡丹. 問題是他已經當了好幾年的醉鬼了, 所以複雜的電子裝置在他身邊並不安全. 如果我是你, 我會去尤皮特打聽打聽 - 那裡有合適的專家</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_18">
+		<text>誰能撬開鋼製的容器?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_181">
+		<text>我想斯卡多夫斯克號的卡丹可以. 我是說, 他撬鎖的方式令人感到安心</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_182">
+		<text>我想你是需要某種技師對吧. 阿佐特可能不會做這活 - 他不喜歡這種粗野的東西</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_183">
+		<text>哈, 你在普里皮亞奇問這個?! 聽我一句, 去離特異區中心遠點的地方找找吧</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_19">
+		<text>我在找一個叫斯耐格的潛行者. 你知道我能在哪找到他么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_191">
+		<text>最好去問問大鬍子, 斯卡多夫斯克號的酒保. 他通常會知道潛行者們的行蹤</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_193">
+		<text>斯耐格?我特么怎麼知道? 你最好去扎頓問問, 他經常在那裡晃悠</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_2">
+		<text>關於墜落的直升機你有什麼知道的?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_20">
+		<text>誰會對紀律團創人的情報感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_201">
+		<text>是我的話我會去找斯卡多夫斯克號的貓頭鷹談談. 你可以賭他對這樣的一個傳奇人物的情報感興趣</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_21">
+		<text>我自己見過一個... 看起來不像是墜毀, 但是它飛的也不太好. 左右搖晃的墜到了扎頓南部的高地上... 有興趣的話可以去看看有沒有幸存者... 如果我們知道能上去的路就好了. 事實上, 我聽說在精神病駁船的諾亞可能會知道...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_22">
+		<text>我聽說幾架軍用直升機墜落在不遠處... 大家都眾說紛紜, 但我很確定一件事情. 他們說, 他們將直升機降落在以前採石場的備用直升機坪上. 你能相信這狗屁的諷刺么? 我的老頭子常說: "別想著挖坑坑別人, 因為你自己會掉下去的. "太真實了, 不是么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_23">
+		<text>我的一個朋友告訴了我這個故事... 他去"鋼鐵森林"異常區找神器, 剛到那裡他就聽到背後傳來了一陣撞擊聲. 他扭頭看是什麼東西, 就看見一架直升機全速朝他衝過去, 順帶把路上的塔和各種各樣的東西都拆了. 後來他逃了出來... 我倒是很驚訝他竟然沒摔在異常點裡. 你去鋼鐵森林應該可以輕鬆找到 - 幾英里外就看得到. 那裡全是騷靈, 所以保持警惕</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_24">
+		<text>我聽說有一架摔在了南部高地, 但是要爬上去並不容易. 但是另外我又聽說有人在高地的邊上發現了諾亞, 這意味著那個瘋子知道怎麼上去</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_25">
+		<text>我自己沒見到, 但是我聽傳言說它撞進了工廠... 不過沒人想去看看, 那地方太危險了</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_26">
+		<text>一個潛行者告訴我他看到幾個直升機碰到了麻煩... 他看到其中一個引擎著火了, 然後它就摔進了一片全是異常點的大沼澤. 你可以輕鬆到達那裡, 但是大沼澤就是可怕的噩夢了... 那裡不適合人類去, 相信我</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_3">
+		<text>你在附近有見到過軍隊么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_30">
+		<text>誰會對扎頓和普里皮亞奇之間的區域的地圖感興趣?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_301">
+		<text>領航員, 不然還有誰? 他是一個嚮導, 你知道么? 經常往返於斯卡多夫斯克號和亞諾夫之間, 所以你的地圖肯定對他來說肯定有用</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_302">
+		<text>這裡不是扎頓也不是尤皮特, 所以這些地圖在這沒用, 對吧?所以去那些地方打聽打聽, 你可能會趕上好運</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_31">
+		<text>我自己沒看到過, 但是我聽說一些士兵從南部高地的下水道工地邊上下來的. 很顯然一開始他們是像用電纜或者什麼東西滑下來的. 但是他們後來放棄了, 直接一屁股滑了下來, 哈哈哈!特異區雪橇 - 肯定很有趣!</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_32">
+		<text>我在斯卡多夫斯克號聽到過一段對話, 大概就是有人發現五個鍋蓋頭從沼澤旁邊的排水管里出來. 他們說那些士兵髒的要命, 其中一個甚至分辨不出他是人還是沼澤吸血怪, 從頭到腳都沾滿了粘液</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_33">
+		<text>我自己沒見過, 但是我一個朋友看到一個軍方小隊在加工站與另一組傭兵交火. 但是當他準備好吃喝找了個好地方看戲的時候都結束了, 鍋蓋頭們撤退了. 兩方都沒有傷亡... 很經典, 不是么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_34">
+		<text>很顯然有十個左右的鍋蓋頭在諾亞的駁船里. 考慮到那個瘋子還活著, 所以他們可能達成了某種協議... 非常符合他的辦事. 當然沒人想問諾亞發生了什麼 - 你永遠猜不到那瘋狂的狗孃養的傢伙會說點什麼</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_35">
+		<text>我昨晚聽到了爆炸聲, 然後一個在亞諾夫的人告訴我, 他們在舊礦區里看到了一個死的鍋蓋頭和一架廢棄的軍用直升機. 似乎他們是在黑暗中降落的但是撞上了礦井. 沒人知道有多少倖存者, 但我懷疑他是擅自把這直升機飛進來的</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_36">
+		<text>我並沒見過軍隊... 但我聽傳言說有個鍋蓋頭和生態學家在一起. 傳言說潛行者加里進入導彈基地找他的夥伴的時候找到了他. 現在, 這個基地裡全是對人類不友好的殭屍, 所以簡單來說就是加里把他從死亡里救出來的</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_37">
+		<text>沒有, 但我聽說沃爾科夫防空基地那裡發現了一個鍋蓋頭.但我不相信... 他們可能在吹牛, 也有可能沒分清殭屍和士兵</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_38">
+		<text>軍隊? 嗯, 我聽說"一支由一個潛行者領路的軍事小隊"正在穿過木星工廠, 但是我沒注意那些流言蜚語</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_4">
+		<text>你知道怎麼去普里皮亞奇么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_40">
+		<text>你知道我可以雇誰來保護生態學家么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_401">
+		<text>你知道斯巴達克斯和他的小隊么? 就是扎頓的潛行者. 他們是好人, 正直的戰士 - 他們去過那裡, 完成了任務還得到了件T恤. 我覺得他們會喜歡保護生態學家的任務</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_402">
+		<text>你在扎頓的變電站車間有碰到戰斧的小隊嗎?他們有自己的活, 就像別的傭兵一樣, 但是至少他們會先問問題再決定開不開槍. 我猜如果你能讓他們來參加這份工作, 生態學家們會肯高興的, 潛行者們也能放鬆一下.每個人都很開心, 對吧?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_403">
+		<text>額... 我啥都沒想到... 沒有, 抱歉</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_41">
+		<text>我確定的是沒辦法從扎頓去到普里皮亞奇. 每個人要去普里皮亞奇的人都是往尤皮特走的, 所以你應該去那裡問問</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_42">
+		<text>嗯, 傳說木星工廠地下有通往普里皮亞奇的秘密通道... 問題是這些謠言通常每兩次就傳開了, 但是木星工廠就是個可怕的噩夢, 沒人敢靠近那裡</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_43">
+		<text>我怎麼知道, 夥計?你有啥簡單些的問題么? 我只能說你應該去找領航員和他談談 - 如果有人能幫你的話那非他不可了</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_44">
+		<text>哈, 如果我知道去普里皮亞奇的路我就不會在這裡了. 你說我為什麼要去特異區的中心地帶? 普里皮亞奇到處都是神器, 兄弟! 先到先得, 絕對致富!</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_5">
+		<text>你能推薦一個不願意被束縛而且想去普里皮亞奇的人么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_51">
+		<text>我想著附近沒有這樣的人. 去尤皮特問問吧, 那裡都是想離開尤皮特靠近特異區的人</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_52">
+		<text>你聽說了現在有個鍋蓋頭和生態學家在一起的事了么? 我想他和你去應該不會有什麼損失. 生態學家不會很快離開, 他自己也到不了封鎖線, 所以他可能會傻到會和你一起去普里皮亞奇</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_53">
+		<text>你知道亞諾夫車站的瓦諾嗎?他是個誠實的傢伙, 一個好潛行者而且容易上當的很. 需要在異常點堆里穿行 - 只要他在, 他絕對能派上用場</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_54">
+		<text>聽我說, 兄弟, 我聽說人們在防空基地南邊的乾涸的湖邊發現了一支小隊... 顯然, 他們肯定不是一般的潛行者, 也不是自由軍或者紀律團 - 他們是黑石的人! 所以如果你要人和你一起去普里皮亞奇對話, 他們就是車票. 哈哈哈哈, 你知道我在開玩笑的對吧?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_55">
+		<text>你知道神行客么? 那個新的自由軍小隊的小隊長. 如果你看到他的痛苦, 你就會知道亞諾夫並不是適合他. 你應該試著和去和他談談, 他應該真的會和你一起去</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_56">
+		<text>你知道神行客么? 那個新的紀律團小隊的小隊長. 如果你看到他的痛苦, 你就會知道亞諾夫並不是適合他. 你應該試著和去和他談談, 他應該真的會和你一起去</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_57">
+		<text>額... 我沒想到任何人</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_6">
+		<text>我找到了一個不尋常的武器. 你知道有誰會對此有了解么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_62">
+		<text>誰知道呢? 是我的話我會問問專家... 你懂的, 技師之類的...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_63">
+		<text>我想去問問斯卡多夫斯克號的卡丹肯定沒啥壞處, 夥計. 他對付武器很在行... 儘管他是個醉鬼且或許只剩下了一兩個腦細胞...</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_7">
+		<text>我可以雇誰來幫助生態學家測量?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_71">
+		<text>你知道"怪物獵人"貢塔么? 我想他和他的夥計們不會反對為生態學家工作的. 我的意思是, 如果變種怪成了麻煩, 那那些夥計正是你需要的</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_72">
+		<text>你知道亞諾夫的灰熊, 托爾巴還有米特雅么? 他們是三人組, 而且超級酷! 我認為他們適合做那工作... 只要米特雅能擺脫它的麻煩</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_73">
+		<text>不知道, 夥計. 我們自己就有足夠多的麻煩要操心了</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_8">
+		<text>我找到了個奇怪的神器, 你能推薦個買家么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_81">
+		<text>我不知道. 這裡的人一般只和熟人溝通. 去扎頓那邊問問, 哪裡離特異區的邊緣近些</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_83">
+		<text>如果是我的話, 我會去拿給斯卡多夫斯克號的酒保大鬍子看看. 有人說他和外部世界的收藏家有合作, 而那些呆子總是會為一些奇怪的東西欣喜若狂</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_9">
+		<text>我在附近找到了一個吸血怪巢穴, 我們該怎麼辦?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_91">
+		<text>哇你得去斯卡多夫斯克號告訴大鬍子... 因為不是我們去把它們處理了就是它們來把我們給撕了</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_98">
+		<text>好的我知道了</text>
+	</string>
+	<string id="about_skadovsk_dialog_bandit_0">
+		<text>這附近最近的潛行者營地在哪裡?</text>
+	</string>
+	<string id="about_skadovsk_dialog_bandit_1">
+		<text>你是啥, 傻逼么? 我不知道潛行者營地, 但是我知道最近的營地是斯卡多夫斯克號. 我甚至會免費給你座標. 我是個好人, 不是么?</text>
+	</string>
+	<string id="about_skadovsk_dialog_stalkers_0">
+		<text>這附近最近的潛行者營地在哪裡?</text>
+	</string>
+	<string id="about_skadovsk_dialog_stalkers_1">
+		<text>我會把座標傳到你的PDA上... 斯卡多夫斯克號是這裡唯一的主要營地</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_27">
+		<text>我聽說過幾次墜機... 我不知道細節 - 我不關注那些流言蜚語. 抱歉如果我沒提供上什麼幫助的話</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_28">
+		<text>兄弟, 我有比這些直升機還要重要的事情需要擔心... 但是我打賭墜機的時候肯定很疼, 除此之外我就不知道要說什麼了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_27">
+		<text>你在說什麼, 痞子? 你得抽點真正夠勁的東西才能看到這附近有直升機, 因為真正的直升機在這沒啥能做的</text>
+	</string>
+	<string id="about_quests_dialog_freedom_27">
+		<text>哈?不, 兄弟, 我不關注這些事. 這對我傳播知識的使命毫無幫助, 你懂我意思吧?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_27">
+		<text>我買的巡邏隊看到了這些直升機迫降, 但是細節他們已經向中小回報了. 這是一些基本資訊, 細節我就不需要知道了</text>
+	</string>
+	<string id="about_quests_dialog_bandit_50">
+		<text>我到哪可以找一套帶封閉內循環呼吸系統的衣服?</text>
+	</string>
+	<string id="about_quests_dialog_bandit_501">
+		<text>不確定你能否找到, 但是如果你知道哪裡可以投資的話投點錢也許會有成效. 去找"巧手"尼博談一談... 如果他同意這些細節的話他應該會想辦法給你搞到. 我希望如此... 我們會好好享受他不在斯卡多夫斯克號的這幾天的...</text>
+	</string>
+	<string id="about_quests_dialog_bandit_502">
+		<text>我特么怎麼知道? 我也剛到這裡沒多久... 你最好去扎頓問問, 他們通常有自己的關係網</text>
+	</string>
+	<string id="about_quests_dialog_bandit_503">
+		<text>沒線索. 為啥? 你打算用你的鼻子去探異常點么? 聽著, 如果你找到任何神器, 立馬喊我們一聲, 我們馬上就到... 祝你好運</text>
+	</string>
+	<string id="about_quests_dialog_dolg_50">
+		<text>我到哪可以找一套帶封閉內循環呼吸系統的衣服?</text>
+	</string>
+	<string id="about_quests_dialog_dolg_501">
+		<text>我怎麼會知道? 等等... 斯卡多夫斯克號上有個傢伙, 他說可以給你搞到任何你要的東西. 他在上層甲板那裡, 名字叫"巧手"尼博</text>
+	</string>
+	<string id="about_quests_dialog_dolg_502">
+		<text>不知道, 沒人會帶這麼多衣服來這裡... 你最好去扎頓問問 - 那裡離文明世界更近一些</text>
+	</string>
+	<string id="about_quests_dialog_dolg_503">
+		<text>我不知道你要去哪找... 這種衣服甚至在紀律團都很少見. 他們只會在需要在特別地區作戰或者需要穿過成堆異常點的區域的時候發放這些衣服</text>
+	</string>
+	<string id="about_quests_dialog_freedom_50">
+		<text>我到哪可以找一套帶封閉內循環呼吸系統的衣服?</text>
+	</string>
+	<string id="about_quests_dialog_freedom_501">
+		<text>我聽到過一些潛行者討論過一個人, 很有人脈啥的, 好像叫"巧手"尼博還是啥的. 他可以幫你搞到幾乎所有你想要的東西, 比如: 裝備, 槍械, 諸如此類的東西... 出了毒品. 如果你需要的話就去斯卡多夫斯克號找找他吧</text>
+	</string>
+	<string id="about_quests_dialog_freedom_502">
+		<text>好問題, 兄弟... 我們自由軍從來不穿那些東西... 是我的話我會去問問扎頓的潛行者. 那裡可能有人在做這種生意</text>
+	</string>
+	<string id="about_quests_dialog_freedom_503">
+		<text>嘿, 你要那東西有什麼用? 穿了那東西行動很不便. 而且.... 我想我應該知道他的用處了. 它能讓你呼吸更容易, 陽光不會照進你的眼睛之類的... 我也許會去買一個. 嘿, 那你知道在哪能買到么?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_50">
+		<text>我到哪可以找一套帶封閉內循環呼吸系統的衣服?</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_501">
+		<text>嗯, 我打賭"巧手"尼博會有. 斯卡多夫斯克號的第三層. 那傢伙能讓沙漠下雪... 不過他的服務對錢包很不友好</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_502">
+		<text>讓我想想... 以前扎頓有這麼個人, 叫"巧手"尼博. 去看看他還在不在. 我聽說他專供這些高檔商品</text>
+	</string>
+	<string id="about_quests_dialog_stalkers_503">
+		<text>哥們, 你說的好像那是個辦公用品一樣簡單... 沒人確切知道.這種東西很少... 如果你能找到一個那真是很走運了</text>
+	</string>
+
+	<!-- Call of Chernobyl -->
+	<string id="dm_dialog_add_trade">
+		<text>所以... 我聽說你在做些生意?</text>
+	</string>
+	<string id="dm_dialog_add_repair">
+		<text>聽說你有個銼刀和一些工具, 能幫我修修裝備么?</text>
+	</string>
+	<string id="dm_dialog_character_history">
+		<text>我想知道更多關於你的事情</text>
+	</string>
+
+	<!-- General -->
+	<string id="actor_break_dialog_0">
+		<text>再見</text>
+	</string>
+	<string id="actor_break_dialog_1">
+		<text>回頭見</text>
+	</string>
+	<string id="actor_break_dialog_2">
+		<text>祝你好運</text>
+	</string>
+	<string id="actor_break_dialog_3">
+		<text>再會</text>
+	</string>
+
+	<!-- Wish Granter -->
+	<string id="st_wish_1">
+		<text>我希望特異區消失!</text>
+	</string>
+	<string id="st_wish_2">
+		<text>人性是腐敗的, 人類必須被控制!</text>
+	</string>
+	<string id="st_wish_3">
+		<text>我希望世界和平!</text>
+	</string>
+	<string id="st_wish_4">
+		<text>我想要特異區所有的財富!</text>
+	</string>
+	<string id="st_wish_5">
+		<text>讓我永生!</text>
+	</string>
+	<string id="st_wish_99">
+		<text>[保持沉默]</text>
+	</string>
+
+	<!-- Alundaio -->
+	<string id="axr_phrase_npc_start_wounded">
+		<text>幫... 我</text>
+	</string>
+	<string id="axr_phrase_actor_has_medkit">
+		<text>我會幫你的</text>
+	</string>
+	<string id="axr_phrase_actor_dont_has_medkit">
+		<text>抱歉, 我幫不了你</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_trade">
+		<text>我想和你交換裝備</text>
+	</string>
+	<string id="dm_dialog_become_companion_greeting">
+		<text>看起來你有什麼目的</text>
+	</string>
+	<string id="dm_dialog_companion_I_have_a_question">
+		<text>是嗎? 也許吧... 我有個問題</text>
+	</string>
+	<string id="dm_dialog_companion_question_answer_1">
+		<text>什麼?</text>
+	</string>
+	<string id="dm_dialog_companion_question_answer_2">
+		<text>去問別的人吧</text>
+	</string>
+	<string id="dm_dialog_actor_answer_1">
+		<text>有趣...</text>
+	</string>
+	<string id="dm_dialog_actor_answer_2">
+		<text>額... 抱歉打斷了, 我得走了</text>
+	</string>
+	<string id="dm_dialog_companion_can_i_come_with_1">
+		<text>我們一起走吧. 你認為呢?</text>
+	</string>
+	<string id="dm_dialog_companion_can_we_come_with_2">
+		<text>我和我的朋友需要些幫助穿過特異區. 你介意我們加入你么?</text>
+	</string>
+	<string id="dm_dialog_companion_can_i_come_with_2">
+		<text>我們作為一個團隊繼續吧. 你怎麼認為?</text>
+	</string>
+	<string id="dm_dialog_companion_actor_reply_to_join_1">
+		<text>注意你槍指的方向</text>
+	</string>
+	<string id="dm_dialog_companion_actor_reply_to_join_2">
+		<text>好的.但是如果你死了, 我會拿走你的東西</text>
+	</string>
+	<string id="dm_dialog_companion_actor_reply_to_join_3">
+		<text>不. 不感興趣</text>
+	</string>
+	<string id="dm_dialog_companion_actor_reply_to_join_4">
+		<text>滾開!</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_alone_1">
+		<text>謝謝, 夥計. 我保證不會妨礙你</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_alone_2">
+		<text>很好. 我正需要些別人的幫助</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_alone_3">
+		<text>厲害啊, 老兄. 謝謝了</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_bad_alone_1">
+		<text>好吧. 不管怎麼說謝謝了...</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_bad_alone_2">
+		<text>哇, 老哥! 你特么是有什麼問題么?</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_1">
+		<text>聽起來很好! 走吧夥計們!</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_2">
+		<text>好的. 嘿, 這個潛行者會帶我們過去. 跟著他</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_good_3">
+		<text>我們走. 漫長的旅行開始了</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_bad_1">
+		<text>隨便吧</text>
+	</string>
+	<string id="dm_dialog_companion_final_words_bad_2">
+		<text>殺了這個混蛋!</text>
+	</string>
+	<string id="axr_phrase_companion_ask_for_command">
+		<text>你需要什麼?</text>
+	</string>
+	<string id="axr_phrase_actor_give_command">
+		<text>[發佈命令]</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_combat">
+		<text>我們來討論一下戰術...</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_combat_type_camper">
+		<text>你希望你在戰鬥中更加謹慎</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_combat_type_default">
+		<text>和往常一樣戰鬥</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_combat_type_monolith">
+		<text>好好招呼你的敵人!</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_stay_close">
+		<text>待在我旁邊, 看好我的背後</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_keep_distance">
+		<text>我想讓你和我保持距離</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_stealth">
+		<text>噓... 蹲下保持安靜</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_stop_stealth">
+		<text>好了. 恢復正常</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_relax">
+		<text>休息一下. 要走了我會告訴你</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_relax_over">
+		<text>好了. 該走了</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_leave">
+		<text>從這開始我要自己行動了</text>
+	</string>
+	<string id="axr_phrase_companion_are_you_sure">
+		<text>你確定?</text>
+	</string>
+	<string id="axr_phrase_actor_acknowledge_1">
+		<text>是的</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_wait">
+		<text>在這等著並且守好這個位置</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_follow">
+		<text>我需要你跟著我</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_ignore_combat">
+		<text>暫時別向任何人開槍</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_dont_ignore_combat">
+		<text>看到敵人馬上開火</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_ignore_combat_but_help_actor">
+		<text>別攻擊任何人除非他們先攻擊我</text>
+	</string>
+	<string id="axr_phrase_companion_acknowledge_1">
+		<text>瞭解</text>
+	</string>
+	<string id="axr_phrase_companion_acknowledge_2">
+		<text>好的, 老兄</text>
+	</string>
+	<string id="axr_phrase_companion_acknowledge_3">
+		<text>當然, 你要我做什麼?</text>
+	</string>
+	<string id="axr_phrase_companion_goodbye_1">
+		<text>謝謝陪伴.回頭見</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_nevermind">
+		<text>沒什麼</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_hide_in_cover">
+		<text>快點! 找掩護!</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_patrol_menu">
+		<text>我要你在一個區域內巡邏</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_start_patrol">
+		<text>開始巡邏</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_stop_patrol">
+		<text>停止巡邏</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_patrol_remove_waypoints">
+		<text>忘記那些路徑點吧</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_patrol_add_waypoints">
+		<text>將這個位置加入你的巡邏路徑</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_gather_items">
+		<text>撿起所有你發現的裝備; 它可能會派上用場</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_loot_corpses">
+		<text>從屍體里尋找任何有用的東西</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_gather_items_stop">
+		<text>忽略你看到的任何在地上的裝備</text>
+	</string>
+	<string id="axr_phrase_actor_give_command_loot_corpses_stop">
+		<text>忽略屍體</text>
+	</string>
+	<string id="axr_phrase_friend_companion_ask_join">
+		<text>嘿, 讓我們一起探索特異區吧. 我們可以互相幫助.</text>
+	</string>
+	<string id="axr_phrase_friend_companion_answer_join">
+		<text>當然, 聽起來是個好主意!帶路吧</text>
+	</string>
+	<string id="axr_phrase_friend_companion_ask_join_hostage">
+		<text>你能和我一起去救你的同志么?</text>
+	</string>
+	<string id="axr_phrase_friend_companion_answer_join_hostage">
+		<text>當然, 他需要我們的幫助!帶路</text>
+	</string>
+</string_table>

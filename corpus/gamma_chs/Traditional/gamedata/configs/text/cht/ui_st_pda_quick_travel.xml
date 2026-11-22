@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- Fast Travel Names -->
+	<string id="st_pda_fast_travel_to">
+		<text>快速傳送到</text>
+	</string>
+	<string id="agr_smart_terrain_1_2">
+		<text>沼澤</text>
+	</string>
+	<string id="agr_smart_terrain_1_6">
+		<text>研究所</text>
+	</string>
+	<string id="agr_smart_terrain_4_4">
+		<text>工廠</text>
+	</string>
+	<string id="agr_smart_terrain_6_4">
+		<text>隧道營地</text>
+	</string>
+
+	<string id="mil_smart_terrain_2_2">
+		<text>傭兵營地</text>
+	</string>
+	<string id="mil_smart_terrain_2_4">
+		<text>農莊</text>
+	</string>
+	<string id="mil_smart_terrain_2_6">
+		<text>墜落的直升機</text>
+	</string>
+	<string id="mil_smart_terrain_2_10">
+		<text>吸血怪村莊</text>
+	</string>
+	<string id="mil_smart_terrain_3_8">
+		<text>死亡屏障</text>
+	</string>
+	<string id="mil_smart_terrain_7_4">
+		<text>紀律團前哨站</text>
+	</string>
+	<string id="mil_smart_terrain_7_12">
+		<text>自由軍基地</text>
+	</string>
+
+	<string id="aes_smart_terrain_monolit_blockpost4">
+		<text>黑石封鎖線</text>
+	</string>
+	<string id="aes2_monolith_snipers_2">
+		<text>黑石巡邏區</text>
+	</string>
+
+	<string id="esc_smart_terrain_2_12">
+		<text>菜鳥村</text>
+	</string>
+	<string id="esc_smart_terrain_3_16">
+		<text>軍事前哨</text>
+	</string>
+	<string id="esc_smart_terrain_5_2">
+		<text>軍事檢查站</text>
+	</string>
+	<string id="esc_smart_terrain_5_7">
+		<text>北方農莊</text>
+	</string>
+	<string id="esc_smart_terrain_5_9">
+		<text>磨坊</text>
+	</string>
+	<string id="esc_smart_terrain_6_6">
+		<text>廢棄農莊</text>
+	</string>
+	<string id="esc_smart_terrain_6_8">
+		<text>鐵路橋</text>
+	</string>
+	<string id="esc_smart_terrain_7_11">
+		<text>汽車站</text>
+	</string>
+
+	<string id="ds2_lager_st">
+		<text>懸崖下的營地</text>
+	</string>
+	<string id="ds_kem2">
+		<text>廢棄加油站</text>
+	</string>
+	<string id="ds_ptr">
+		<text>鐵路交叉口</text>
+	</string>
+	<string id="ds2_domik_st">
+		<text>廢棄農場</text>
+	</string>
+
+	<string id="val_smart_terrain_1_2">
+		<text>X-18實驗室入口</text>
+	</string>
+	<string id="val_smart_terrain_4_0">
+		<text>廢棄養豬場</text>
+	</string>
+	<string id="val_smart_terrain_7_4">
+		<text>土匪基地</text>
+	</string>
+	<string id="val_smart_terrain_7_8">
+		<text>被污染的湖 北部</text>
+	</string>
+	<string id="val_smart_terrain_8_9">
+		<text>被污染的湖 南部</text>
+	</string>
+
+	<string id="cit_killers">
+		<text>傭兵基地</text>
+	</string>
+	<string id="cit_bandits">
+		<text>死城 學校</text>
+	</string>
+	<string id="cit_bandits_2">
+		<text>死城 村莊</text>
+	</string>
+
+	<string id="katacomb_smart_terrain">
+		<text>廢棄醫院</text>
+	</string>
+
+	<string id="gar_smart_terrain_3_5">
+		<text>火車庫</text>
+	</string>
+	<string id="gar_smart_terrain_3_7">
+		<text>機車墓地</text>
+	</string>
+	<string id="gar_smart_terrain_6_3">
+		<text>跳蚤市場</text>
+	</string>
+
+	<string id="gen_smart_terrain_cemetery">
+		<text>墓地</text>
+	</string>
+	<string id="gen_smart_terrain_lab_entrance">
+		<text>戰爭實驗室入口</text>
+	</string>
+	<string id="gen_smart_terrain_lab_entrance_2">
+		<text>廢棄實驗室</text>
+	</string>
+
+	<string id="mar_smart_terrain_base">
+		<text>晴空基地</text>
+	</string>
+	<string id="mar_smart_terrain_doc">
+		<text>圖茲拉地道</text>
+	</string>
+	<string id="mar_smart_terrain_doc_2">
+		<text>瞭望塔</text>
+	</string>
+	<string id="mar_smart_terrain_3_3">
+		<text>圖茲拉營地</text>
+	</string>
+	<string id="mar_smart_terrain_4_5">
+		<text>村莊廢墟</text>
+	</string>
+	<string id="mar_smart_terrain_5_8">
+		<text>水泵站</text>
+	</string>
+	<string id="mar_smart_terrain_5_12">
+		<text>漁村</text>
+	</string>
+	<string id="mar_smart_terrain_8_8">
+		<text>燒燬的農莊</text>
+	</string>
+	<string id="mar_smart_terrain_8_11">
+		<text>老教堂</text>
+	</string>
+	<string id="mar_smart_terrain_10_5">
+		<text>機械大院</text>
+	</string>
+	<string id="mar_smart_terrain_11_11">
+		<text>南部農莊</text>
+	</string>
+	<string id="mar_smart_terrain_12_2">
+		<text>北部農莊</text>
+	</string>
+
+	<string id="jup_a12">
+		<text>集裝箱倉庫</text>
+	</string>
+	<string id="jup_b204">
+		<text>工廠土匪營地</text>
+	</string>
+	<string id="jup_a6">
+		<text>亞諾夫車站</text>
+	</string>
+	<string id="jup_b200">
+		<text>水泥廠</text>
+	</string>
+	<string id="jup_b19">
+		<text>科帕奇村</text>
+	</string>
+	<string id="jup_b41">
+		<text>移動科研地堡</text>
+	</string>
+
+	<string id="lim_smart_terrain_1">
+		<text>紅森林入口的篝火</text>
+	</string>
+	<string id="lim_smart_terrain_3">
+		<text>國營商店</text>
+	</string>
+	<string id="lim_smart_terrain_6">
+		<text>橋樑哨所</text>
+	</string>
+	<string id="lim_smart_terrain_9">
+		<text>建築工地</text>
+	</string>
+	<string id="lim_smart_terrain_10">
+		<text>無線電波研究所</text>
+	</string>
+
+	<string id="pri_a16">
+		<text>自助洗衣店</text>
+	</string>
+	<string id="pri_a21_smart_terrain">
+		<text>雜貨店</text>
+	</string>
+	<string id="pri_a28_school">
+		<text>學校</text>
+	</string>
+	<string id="pri_b36_smart_terrain">
+		<text>河港</text>
+	</string>
+
+	<string id="pri_smart_monolith_stalker6">
+		<text>普里皮亞奇球場</text>
+	</string>
+	<string id="pri_smart_pseudodog_lair1">
+		<text>摩天輪</text>
+	</string>
+	<string id="pri_smart_tushkano_lair1">
+		<text>波利西亞酒店</text>
+	</string>
+	<string id="pri_monolith">
+		<text>黑石基地</text>
+	</string>
+	<string id="pri_smart_neutral_stalker1">
+		<text>道路入口</text>
+	</string>
+
+	<string id="rad_antenna_patrol">
+		<text>"焦腦器" (X-19 實驗室入口)</text>
+	</string>
+	<string id="rad2_loner_0001">
+		<text>公交站</text>
+	</string>
+	<string id="rad2_prip_teleport">
+		<text>普里皮亞奇隧道</text>
+	</string>
+	<string id="rad_entrance">
+		<text>死亡屏障入口檢查站</text>
+	</string>
+
+	<string id="red_smart_terrain_3_2">
+		<text>舊礦洞</text>
+	</string>
+	<string id="red_smart_terrain_4_2">
+		<text>礦場營地</text>
+	</string>
+	<string id="red_smart_terrain_6_3">
+		<text>惡魔營地</text>
+	</string>
+	<string id="red_smart_terrain_bridge">
+		<text>通往利曼斯克的橋</text>
+	</string>
+
+	<string id="bar_visitors">
+		<text>輻射100酒吧</text>
+	</string>
+	<string id="bar_dolg_general">
+		<text>紀律團基地</text>
+	</string>
+
+	<string id="ros_smart_poltergeist2">
+		<text>火車站</text>
+	</string>
+	<string id="ros_smart_stalker_killers1">
+		<text>傭兵營地</text>
+	</string>
+	<string id="ros_smart_killers1">
+		<text>傭兵狙擊點</text>
+	</string>
+
+	<string id="trc_sim_1">
+		<text>南部基地</text>
+	</string>
+	<string id="trc_sim_3">
+		<text>西部基地</text>
+	</string>
+	<string id="trc_sim_4">
+		<text>東南基地</text>
+	</string>
+	<string id="trc_sim_7">
+		<text>土匪據點</text>
+	</string>
+	<string id="trc_sim_10">
+		<text>西南基地</text>
+	</string>
+	<string id="trc_sim_17">
+		<text>北部基地</text>
+	</string>
+	<string id="trc_sim_20">
+		<text>東北基地</text>
+	</string>
+
+	<string id="yan_smart_terrain_3_6">
+		<text>東部基地</text>
+	</string>
+	<string id="yan_smart_terrain_6_4">
+		<text>移動科研地堡</text>
+	</string>
+
+	<string id="zat_stalker_base_smart">
+		<text>斯卡多夫斯克號</text>
+	</string>
+	<string id="zat_b5_smart_terrain">
+		<text>護林站</text>
+	</string>
+	<string id="zat_b40_smart_terrain">
+		<text>污水處理站</text>
+	</string>
+	<string id="zat_b100">
+		<text>"鋼鐵森林"異常區</text>
+	</string>
+	<string id="zat_b101">
+		<text>鋸木廠</text>
+	</string>
+</string_table>

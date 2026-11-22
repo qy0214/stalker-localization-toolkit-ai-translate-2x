@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Ammunition
+-->
+<string_table>
+
+	<string id="ammo_12.7x55_ap">
+		<text>12.7x55毫米STs-130 VPS彈</text>
+	</string>
+	<string id="ammo_12.7x55_ap_descr">
+		<text>12.7x55毫米亞音速穿甲子彈用於VKS無托式狙擊步槍. 這種子彈可以攜帶重量在59克(911格令)到76克(1173格令)之間的彈丸,發射時彈丸會產生大量動能.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR6 (75)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]82</text>
+	</string>
+	<string id="ammo_12.7x55_ap_s">
+		<text>12.7x55穿甲彈</text>
+	</string>
+
+	<string id="ammo-11.43x23-fmj">
+		<text>.45 ACP FMJ彈</text>
+	</string>
+	<string id="ammo-11.43x23-fmj_descr">
+		<text>由於其彈道效能和相對較小的推進裝藥,0.45口徑全金屬護套子彈已經流行了一百年. 因此,這種子彈速度相對較慢,但準確度很高,並提供了相當大的制動力. \n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (19)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]25</text>
+	</string>
+	<string id="ammo-11.43x23-fmj_s">
+		<text>.45 FMJ彈</text>
+	</string>
+
+	<string id="ammo-11.43x23-hydro">
+		<text>.45 ACP 多頭蛇</text>
+	</string>
+	<string id="ammo-11.43x23-hydro_descr">
+		<text>這種不尋常的.45 ACP口徑的子彈由一個被甲軟尖彈與一個空心的鋼芯組成,同時具有它們各自的優缺點.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (10)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]69</text>
+	</string>
+	<string id="ammo-11.43x23-hydro_s">
+		<text>.45 AP彈</text>
+	</string>
+
+	<string id="ammo-12.7x55-fmj">
+		<text>12.7x55毫米STs-130彈</text>
+	</string>
+	<string id="ammo-12.7x55-fmj_descr">
+		<text>全金屬護套12.7x55毫米亞音速子彈用於VKS/VSSK無托狙擊步槍. 子彈可以攜帶重量在59克(911格令)和76克(1173格令)之間的彈藥,產生大量的動能.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (38)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]82</text>
+	</string>
+	<string id="ammo-12.7x55-fmj_s">
+		<text>12.7x55</text>
+	</string>
+
+	<string id="ammo-12x70-buck">
+		<text>12x76口徑鹿彈</text>
+	</string>
+	<string id="ammo-12x70-buck_descr">
+		<text>基礎的12號口徑霰彈,長70毫米,內裝8發0號圓鉛彈,近距離時十分有效. 只可以使用滑膛槍管發射.\n \n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無(3 x 9)\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]190 (21 x 9)\n
+		%c[0,255,255,255]特點:%c[0,250,250,0]發射多枚彈丸,殺傷範圍較小</text>
+	</string>
+	<string id="ammo-12x70-buck_s">
+		<text>12x76鹿彈</text>
+	</string>
+
+	<string id="ammo-12x76-dart">
+		<text>12x76箭形獨頭彈</text>
+	</string>
+	<string id="ammo-12x76-dart_descr">
+		<text>12號口徑箭形彈,常被用於進行大型狩獵. 也可用於其他用途,包括穿透軟質防彈衣.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (42)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]74</text>
+	</string>
+	<string id="ammo-12x76-dart_s">
+		<text>12x76箭形獨頭彈</text>
+	</string>
+
+	<string id="ammo-12x76-bull">
+		<text>12x76口徑牛彈</text>
+	</string>
+	<string id="ammo-12x76-bull_descr">
+		<text>12號口徑定製彈頭用來殺死恐龍和變種生物. 內部的彈頭是由銅覆蓋的鉛製成,裡面有鋼,像飛鏢一樣插入. 彈頭很長,裝藥量大. 它的後坐力真的能把你的手弄斷.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]非常高</text>
+	</string>
+	<string id="ammo-12x76-bull_s">
+		<text>12x76牛彈</text>
+	</string>
+
+	<string id="ammo-12x76-zhekan">
+		<text>12x76 獨頭彈</text>
+	</string>
+	<string id="ammo-12x76-zhekan_descr">
+		<text>這種重型12號口徑子彈通常用於狩獵大型獵物,但也適用於其他用途. 這種笨重的彈頭不會刺穿盔甲,而是直接擊穿盔甲.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (23)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]132</text>
+	</string>
+	<string id="ammo-12x76-zhekan_s">
+		<text>12x76獨頭彈</text>
+	</string>
+
+	<string id="ammo-338-lapua">
+		<text>.338 拉普阿馬格南彈</text>
+	</string>
+	<string id="ammo-338-lapua_descr">
+		<text>.338 拉普阿馬格南彈(.338 Lapua Magnum)是一種專為軍事遠端狙擊步槍開發的無底緣、瓶型彈殼、中心發火彈藥. 經歷了阿富汗戰爭和伊拉克戰爭,狀態良好的.338LM彈藥供應充足. .338LM彈藥可用於反人員或者反器材,但是受限於口徑,反器材效果不佳.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]Unlimited (140)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]130</text>
+	</string>
+	<string id="ammo-338-lapua_s">
+		<text>.338 LM彈</text>
+	</string>
+
+	<string id="ammo-357-hp">
+		<text>.357 HP彈</text>
+	</string>
+	<string id="ammo-357-hp_descr">
+		<text>.357 HP彈是一種空尖彈. 特殊的設計使它命中后可以快速釋放全部能量,而不是帶著一部分能量穿透目標,這降低了它的穿透力,但同時會造成更大的停止作用和對肉體組織的傷害.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (15)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]103</text>
+	</string>
+	<string id="ammo-357-hp_s">
+		<text>.357 HP彈</text>
+	</string>
+
+	<string id="ammo-5.45x39-ap">
+		<text>5.45x39毫米AP彈</text>
+	</string>
+	<string id="ammo-5.45x39-ap_descr">
+		<text>俄羅斯軍用5.45x39穿甲彈,代號7N22,彈頭重3.67g(56.9格令),有一根T12A工具鋼製的尖頭彈芯. 船尾彈型賦予其良好的彈道. 可以由彈殼口部紅色的密封漆和塗黑的彈尖輕鬆分辨.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR5 (47)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]36</text>
+	</string>
+	<string id="ammo-5.45x39-ap_s">
+		<text>5.45x39 AP</text>
+	</string>
+
+	<string id="ammo-5.45x39-ep">
+		<text>5.45x39毫米HP彈</text>
+	</string>
+	<string id="ammo-5.45x39-ep_descr">
+		<text>軍用 5.45x39 口徑 HP 是用於華約國家自動步槍的空心圓點彈. \n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (15)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]53</text>
+	</string>
+	<string id="ammo-5.45x39-ep_s">
+		<text>5.45x39 HP</text>
+	</string>
+
+	<string id="ammo-5.45x39-fmj">
+		<text>5.45x39毫米FMJ彈</text>
+	</string>
+	<string id="ammo-5.45x39-fmj_descr">
+		<text>俄羅斯軍用5.45x39普通彈,代號7N6,設計由突擊步槍和輕機槍發射的小口徑槍彈,較低的後坐力和較高的初速使得相對7.62x39彈藥它的精度和有效射程都有一定的提升. 特殊的設計使它擊中目標後會大幅度翻滾,造成大量傷害. 可由彈殼口部紅色的密封漆分辨.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (25)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]36</text>
+	</string>
+	<string id="ammo-5.45x39-fmj_s">
+		<text>5.45x39 FMJ</text>
+	</string>
+
+	<string id="ammo-5.56x45-ap">
+		<text>5.56x45毫米AP彈</text>
+	</string>
+	<string id="ammo-5.56x45-ap_descr">
+		<text>最新的北約5.56x45穿甲彈,代號M855A1,美軍廣泛使用的一種彈藥. 尖頭鋼芯外包一層銅套,簡單的結構使其對槍管的磨損較大. 侵徹力和傷害都有所加強. 可由彈頭裸露的鋼芯分辨.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR5 (52)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]35</text>
+	</string>
+	<string id="ammo-5.56x45-ap_s">
+		<text>5.56x45 AP</text>
+	</string>
+
+	<string id="ammo-5.56x45-ss190">
+		<text>5.56x45毫米HP彈</text>
+	</string>
+	<string id="ammo-5.56x45-ss190_descr">
+		<text>帶有空心尖端的標準版北約 5.56x45 口徑子彈. \n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (15)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]46</text>
+	</string>
+	<string id="ammo-5.56x45-ss190_s">
+		<text>5.56x45 HP</text>
+	</string>
+
+	<string id="ammo-5.56x45-fmj">
+		<text>5.56x45毫米FMJ彈</text>
+	</string>
+	<string id="ammo-5.56x45-fmj_descr">
+		<text>一種北約標準發行的5.56x45口徑M193子彈,專門為精確自動射擊設計. 提供良好的彈道特性,是在一種獵槍彈藥的基礎上設計的. 衆所周知,它被用於越南戰爭,對人體組織有很好表現,但穿透能力有限.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (27)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]35</text>
+	</string>
+	<string id="ammo-5.56x45-fmj_s">
+		<text>5.56x45 FMJ</text>
+	</string>
+
+	<string id="ammo-5.7x28-ss190">
+		<text>5.7x28 SS190彈</text>
+	</string>
+	<string id="ammo-5.7x28-ss190_descr">
+		<text>由FN赫斯塔爾製造的5.7x28高速彈藥. 瓶型彈殼,中心發火,與.22大黃蜂彈藥有些相似. 這種彈藥應北約對9x19帕拉貝魯姆彈藥的更換需求而與FN P90個人防禦武器一起研製出來,也被用於Five-seveN手槍.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (42)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]23</text>
+	</string>
+	<string id="ammo-5.7x28-ss190_s">
+		<text>5.7x28 AP</text>
+	</string>
+
+	<string id="ammo-4.6x30-fmj">
+		<text>4.6x30毫米FMJ彈</text>
+	</string>
+	<string id="ammo-4.6x30-fmj_descr">
+		<text>由HK公司製造的4.6x30彈藥,主要供HK公司生產的MP7個人防衛武器使用. 設計以最低的重量和後坐力來達到最高的侵徹力. 瓶型彈殼,尖頭鋼芯銅被甲彈. \n \n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]low • medium</text>
+	</string>
+	<string id="ammo-4.6x30-fmj_s">
+		<text>4.6x30 FMJ</text>
+	</string>
+	<string id="ammo-4.6x30-fmj_bad">
+		<text>4.6x30毫米FMJ (舊)</text>
+	</string>
+	<string id="ammo-4.6x30-fmj_verybad">
+		<text>4.6x30毫米FMJ (損壞)</text>
+	</string>
+
+	<string id="ammo-5.7x28-ss195">
+		<text>5.7x28毫米SS195彈</text>
+	</string>
+	<string id="ammo-5.7x28-ss195_descr">
+		<text>由FN赫斯塔爾製造的5.7x28彈藥,代號為ss195的空尖彈. 瓶型彈殼,中心發火,與.22黃蜂彈藥有些相似.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (21)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]23</text>
+	</string>
+	<string id="ammo-5.7x28-ss195_s">
+		<text>5.7x28 FMJ</text>
+	</string>
+
+	<string id="ammo-50-bmg">
+		<text>.50 BMG彈</text>
+	</string>
+	<string id="ammo-50-bmg_descr">
+		<text>.50BMG彈藥(12.7x99NATO彈藥)最初被設計用於勃朗寧.50大口徑機槍,于1921年正式服役. 作為槍械界長壽的代表勃朗寧M2重機槍(老乾媽)使用的就是這種彈藥. .50BMG在北約國家和非北約國家都被廣泛使用. 除了普通的全金屬鉛芯被甲彈之外還有穿甲彈、曳光彈、燃燒彈、脫穿彈等一系列彈藥. 機槍使用的.50BMG彈藥裝在可散彈鏈中.\n .50BMG被用在遠端反器材狙擊步槍和大口徑機槍上.
+		\n \n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR6
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]非常高</text>
+	</string>
+	<string id="ammo-50-bmg_s">
+		<text>.50 BMG</text>
+	</string>
+	<string id="ammo-50-bmg_bad">
+		<text>.50 BMG (舊)</text>
+	</string>
+	<string id="ammo-50-bmg_verybad">
+		<text>.50 BMG (損壞)</text>
+	</string>
+
+	<string id="ammo-7.62x25-p">
+		<text>7.62x25毫米P彈</text>
+	</string>
+	<string id="ammo-7.62x25-p_descr">
+		<text>俄製7.62x25托卡列夫普通彈,使用瓶型彈殼. 這種彈藥在獨聯體國家、中國、巴基斯塔以及其他許多國家都有使用.7.62x25彈藥由7.63x25毛瑟彈藥發展而來,有著優秀的侵徹力,可以輕鬆擊穿軟質防彈衣或者低等級的凱夫拉爾防彈頭盔. 由於其巨大的庫存,即便大部分使用這種彈藥的武器早已退役,這種彈藥仍然十分常見. 
+		\n \n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無 (8)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]30</text>
+	</string>
+	<string id="ammo-7.62x25-p_s">
+		<text>7.62x25 P</text>
+	</string>
+
+	<string id="ammo-7.62x25-ps">
+		<text>7.62x25毫米Pst彈</text>
+	</string>
+	<string id="ammo-7.62x25-ps_descr">
+		<text>俄製7.62x25托卡列夫鋼芯彈,使用瓶型彈殼. 這種彈藥在獨聯體國家、中國、巴基斯坦以及其他許多國家都有使用. 對付無護甲目標時十分有效. \n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (24)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]21</text>
+	</string>
+	<string id="ammo-7.62x25-ps_s">
+		<text>7.62x25 Pst</text>
+	</string>
+
+	<string id="ammo-7.62x39_ap">
+		<text>7.62x39毫米M43彈</text>
+	</string>
+	<string id="ammo-7.62x39_ap_descr">
+		<text>中國產7.62x39 M43彈藥,或者說56式彈藥. 經常被稱為"7.62x39 CN". 彈頭內部使用軟鋼,因此被美國法律分類為穿甲彈(按照材質區分而不是實際侵徹力),這意味著別國無法向美國出口這種彈藥.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR6 (55)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]40</text>
+	</string>
+	<string id="ammo-7.62x39_ap_s">
+		<text>7.62x39 AP</text>
+	</string>
+
+	<string id="ammo-7.62x39_fmj">
+		<text>7.62x39毫米FMJ彈</text>
+	</string>
+	<string id="ammo-7.62x39_fmj_descr">
+		<text>7.62x39 全金屬被甲彈. 這種彈藥在世界範圍內都有廣泛的使用,尤其是中東和非洲地區. 因為受到恐怖分子和其他犯罪組織的青睞,它被戲稱為"革命の彈". 這種彈藥的普及使得許多執法機構和軍事組織不得不配發高級別的防彈插板來對抗它.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (30)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]40</text>
+	</string>
+	<string id="ammo-7.62x39_fmj_s">
+		<text>7.62x39 FMJ</text>
+	</string>
+
+	<string id="ammo-7.62x51_ap">
+		<text>7.62x51毫米NATO AP彈</text>
+	</string>
+	<string id="ammo-7.62x51_ap_descr">
+		<text>軍用7.62x51穿甲彈,代號M61. 硬化鋼芯使得這種彈藥的侵徹力大幅度提高,同時保留了優秀的傷害.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR6 (62)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]70</text>
+	</string>
+	<string id="ammo-7.62x51_ap_s">
+		<text>7.62x51 AP</text>
+	</string>
+
+	<string id="ammo-7.62x51_fmj">
+		<text>7.62x51毫米NATO民用彈</text>
+	</string>
+	<string id="ammo-7.62x51_fmj_descr">
+		<text>7.62x51北約彈藥,民用.308溫徹斯特的軍方改進版本. 在北約軍隊中服役. 這種彈藥直到越戰前一直是美軍的主力彈藥. 越戰時部分由5.56x45代替. 目前主要被私人僱傭兵組織使用. 這是一種非常常見的用於機槍或者狙擊步槍的彈藥.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (34)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]70</text>
+	</string>
+	<string id="ammo-7.62x51_fmj_s">
+		<text>7.62x51FMJ</text>
+	</string>
+
+	<string id="ammo-7.62x54_7n14">
+		<text>7.62x54毫米7N14彈</text>
+	</string>
+	<string id="ammo-7.62x54_7n14_descr">
+		<text>7.62x54R穿甲彈,代號7N14. 彈頭內有一根穿甲鋼芯,賦予其穿透護甲和一些輕薄的障礙物的能力. 特殊設計的船尾型彈底提高了精確度.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (45)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]74</text>
+	</string>
+	<string id="ammo-7.62x54_7n14_s">
+		<text>7.62x54 7N14</text>
+	</string>
+
+	<string id="ammo-7.62x54-7n1">
+		<text>7.62x54毫米7N1彈</text>
+	</string>
+	<string id="ammo-7.62x54-7n1_descr">
+		<text>7.62x54R專用狙擊彈,代號7N1. 特別為SVD設計的穿甲狙擊彈,與普通的機槍彈不同的是7N1彈有著更好的散佈(精度更高).\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (30)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]74</text>
+	</string>
+	<string id="ammo-7.62x54-7n1_s">
+		<text>7.62x54 7N1</text>
+	</string>
+
+	<string id="ammo-7.62x54-ap">
+		<text>7.62x54毫米AP彈</text>
+	</string>
+	<string id="ammo-7.62x54-ap_descr">
+		<text>7.62x54R機槍彈,代號7N13.專門用於機槍的穿甲彈. 硬化鋼芯賦予其良好的侵徹力.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR6 (80)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]74</text>
+	</string>
+	<string id="ammo-7.62x54-ap_s">
+		<text>7.62x54 AP</text>
+	</string>
+
+	<string id="ammo-7.62x54-r">
+		<text>7.62x54毫米PP彈</text>
+	</string>
+	<string id="ammo-7.62x54-r_descr">
+		<text>7.62x54R PP彈藥,實際上代號為57-N-323S.首先由沙俄製造,進入蘇聯時代后軍隊仍然使用這種彈藥,只不過稍有改進. 最初設計由莫辛納甘發射,鑑於莫辛納甘在異常區的保有量,這種彈藥十分常見且足夠便宜. 這種老掉牙的便宜彈藥有著不俗的侵徹力 - 即使面對更先進的彈藥也不逞多讓. 如果你實在負擔不起7N13的消耗的話,PKM也可以發射這種彈藥.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (37)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]高</text>
+	</string>
+	<string id="ammo-7.62x54-r_s">
+		<text>7.62x54 PP</text>
+	</string>
+
+	<string id="ammo-7.92x33_ap">
+		<text>7.92x57毫米毛瑟AP彈</text>
+	</string>
+	<string id="ammo-7.92x33_ap_descr">
+		<text>英軍使用的7.92x57毛瑟穿甲彈,或者說SA穿甲彈. 原本設計只在貝薩輕機槍上使用,彈頭內有一硬化穿甲鋼芯,提高了它的穿透力. 目前主要用於遠距離射擊. 這種彈藥使用的火藥質量較高. 只能由少數幾種狙擊步槍發射.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (39)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]78</text>
+	</string>
+	<string id="ammo-7.92x33_ap_s">
+		<text>7.92x57 AP</text>
+	</string>
+
+	<string id="ammo-7.92x33_fmj">
+		<text>7.92x57毫米毛瑟FMJ彈</text>
+	</string>
+	<string id="ammo-7.92x33_fmj_descr">
+		<text>7.92x57毛瑟彈藥. 由德國/納粹德國製造使用,在兩次世界大戰中應用十分廣泛. 然而現在主要用於狩獵和射擊運動.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR2 (25)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]78</text>
+	</string>
+	<string id="ammo-7.92x33_fmj_s">
+		<text>7.92x57 FMJ</text>
+	</string>
+
+	<string id="ammo-9x18-ap">
+		<text>9x18毫米AP彈</text>
+	</string>
+	<string id="ammo-9x18-ap_descr">
+		<text>9x18馬卡洛夫手槍彈,代號RG028. 最初的設計目的是穿透防彈衣,所以這種彈藥裝有一根硬化鋼芯. 不幸的是9x18馬卡洛夫彈本身的升級潛力太弱,所以相較於基本的9x18馬卡洛夫這種彈藥並沒有太大的提升.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (30)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]18</text>
+	</string>
+	<string id="ammo-9x18-ap_s">
+		<text>9x18 AP</text>
+	</string>
+
+	<string id="ammo-9x18-fmj">
+		<text>9x18毫米FMJ彈</text>
+	</string>
+	<string id="ammo-9x18-fmj_descr">
+		<text>基本型9x18馬卡洛夫手槍彈,代號57-N-181S. 覆銅鋼被甲,內有一個鋼製穿甲體和鉛套. 有優秀的停止力但是侵徹力不足.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (15)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]18</text>
+	</string>
+	<string id="ammo-9x18-fmj_s">
+		<text>9x18 FMJ</text>
+	</string>
+
+	<string id="ammo-9x18-pmm">
+		<text>9x18毫米HP彈</text>
+	</string>
+	<string id="ammo-9x18-pmm_descr">
+		<text>強裝藥9x18馬卡洛夫手槍彈. 使用強裝藥和增強停止力彈頭的9x18馬卡洛夫手槍彈. 初速比起基本型增加了大約30%. 難以穿透護甲目標.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無(10)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]33</text>
+	</string>
+	<string id="ammo-9x18-pmm_s">
+		<text>9x18 HP</text>
+	</string>
+
+	<string id="ammo-9x19-ap">
+		<text>9x19毫米AP彈</text>
+	</string>
+	<string id="ammo-9x19-ap_descr">
+		<text>這種俄羅斯 9x19 口徑子彈帶有硬鋼芯和增加的壓力. 旨在增強小型武器和衝鋒鎗的穿甲能力. \n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (38)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]21</text>
+	</string>
+	<string id="ammo-9x19-ap_s">
+		<text>9x19 AP</text>
+	</string>
+
+	<string id="ammo-9x19-fmj">
+		<text>9x19毫米FMJ彈</text>
+	</string>
+	<string id="ammo-9x19-fmj_descr">
+		<text>基本型9x19帕拉貝魯姆手槍彈. 全金屬被甲彈,除侵徹力不足外各方面表現平均,但十分易於生產. 這種彈藥因為禁止在戰爭中使用擴張性彈頭的國際公約而十分流行.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR1 (17)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]21</text>
+	</string>
+	<string id="ammo-9x19-fmj_s">
+		<text>9x19 FMJ</text>
+	</string>
+
+	<string id="ammo-9x19-pbp">
+		<text>9x19毫米HP彈</text>
+	</string>
+	<string id="ammo-9x19-pbp_descr">
+		<text>9x19帕拉貝魯姆空尖彈. 命中時彈頭擴張,使得它具有高的停止力和低跳彈概率. 常用於警方或者個人自衛. 極低的穿甲能力,對防彈衣無效,但可以對肉體造成傷害. 最便宜的彈藥之一,可有效殺死特異區的變異怪物. .\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無(10)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]40</text>
+	</string>
+	<string id="ammo-9x19-pbp_s">
+		<text>9x19 HP</text>
+	</string>
+
+	<string id="ammo-9x39-ap">
+		<text>9x39毫米SP-6彈</text>
+	</string>
+	<string id="ammo-9x39-ap_descr">
+		<text>俄羅斯軍用9x39彈藥,代號7N9. 亞音速穿甲彈. 在彈尖露出硬鋼芯,鋼芯和被甲之間有鉛套以保護膛線,彈尖有黑漆標記. 隱蔽地發射這種彈藥需要一個消音器.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR5 (55)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]43\n
+		\n \n%c[ui_gray_1]特點:\n \n%c[d_red] - %c[ui_gray_2] 亞音速彈藥\n%c[ui_gray_2] - %c[ui_gray_2] 彈道下墜嚴重</text>
+	</string>
+	<string id="ammo-9x39-ap_s">
+		<text>9x39 SP-6</text>
+	</string>
+
+	<string id="ammo-9x39-pab9">
+		<text>9x39毫米SP-5彈</text>
+	</string>
+	<string id="ammo-9x39-pab9_descr">
+		<text>俄羅斯軍用9x39彈藥,代號7N8. 全金屬被甲彈,彈頭末端有一小段鋼芯,彈頭無標記,其精度要好一些,通常用於VSS狙擊步槍,因此也經常被稱為狙擊彈. 隱蔽地發射這種彈藥需要一個消音器.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (34)
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]43\n
+		\n \n%c[ui_gray_1]特點:\n \n%c[d_red] - %c[ui_gray_2] 亞音速彈藥\n%c[ui_gray_2] - %c[ui_gray_2] 彈道下墜嚴重</text>
+	</string>
+	<string id="ammo-9x39-pab9_s">
+		<text>9x39 SP-5</text>
+	</string>
+
+	<string id="ammo-gauss">
+		<text>高斯槍電池</text>
+	</string>
+	<string id="ammo-gauss_descr">
+		<text>高斯槍電池,使用封裝好的電光晶神器碎片供能,由高科技裝置製造.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]絕密
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]絕密
+		\n \n%c[ui_gray_1]特點:\n \n%c[ui_gray_2] - %c[ui_gray_2] 技術產品\n%c[ui_gray_2] - %c[ui_gray_2] 原型</text>
+	</string>
+
+	<string id="ammo-gauss_cardan">
+		<text>自製高斯槍電池</text>
+	</string>
+	<string id="ammo-gauss_cardan_descr">
+		<text>高斯槍電池,使用封裝好的電光晶神器碎片供能,容量較低,主要是因為製造它的工匠缺乏高階的裝置和優良的操作環境.\n 
+		\n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]絕密
+		\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]絕密
+		\n \n%c[ui_gray_1]特點:\n \n%c[ui_gray_2] - %c[ui_gray_2] 技術產品\n%c[ui_gray_2] - %c[ui_gray_2] 原型</text>
+	</string>
+
+	<string id="ammo-m209">
+		<text>M203榴彈</text>
+	</string>
+	<string id="ammo-m209_descr">
+		<text>40毫米榴彈用於M203下掛榴彈發射器發射. 這種榴彈有大約3.5米的殺傷半徑. 也可由FN F2000的下掛榴彈發射器發射.\n \n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷力: %c[ui_gray_2]medium\n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷半徑: %c[ui_gray_2]4.1 米\n
+		%c[d_cyan] • %c[0,255,255,255] 破片殺傷半徑: %c[ui_gray_2]28 m\n
+		%c[d_cyan] • %c[0,255,255,255] 平均破片數量: %c[ui_gray_2]95 (小型破片)\n
+		%c[d_cyan] • %c[0,255,255,255] 引信延遲: %c[ui_gray_2]無 (撞擊時爆炸)</text>
+	</string>
+	<string id="ammo-m209_s">
+		<text>M203</text>
+	</string>
+
+	<string id="ammo-og-7b">
+		<text>OG-7V火箭彈</text>
+	</string>
+	<string id="ammo-og-7b_descr">
+		<text>由RPG-7發射的反人員破片榴彈,代號OG7V. 主要用於在開闊地殺傷手榴彈投擲距離之外的敵人.\n \n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷力: %c[ui_gray_2]高\n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷半徑: %c[ui_gray_2]5.6 米\n
+		%c[d_cyan] • %c[0,255,255,255] 破片殺傷半徑: %c[ui_gray_2]41 米\n
+		%c[d_cyan] • %c[0,255,255,255] 平均破片數量: %c[ui_gray_2]153 (小型破片)\n
+		%c[d_cyan] • %c[0,255,255,255] 引信延遲: %c[ui_gray_2]無 (撞擊時爆炸)</text>
+	</string>
+	<string id="ammo-og-7b_s">
+		<text>OG-7V火箭彈</text>
+	</string>
+
+	<string id="ammo-vog-25">
+		<text>VOG-25榴彈</text>
+	</string>
+	<string id="ammo-vog-25_descr">
+		<text>40毫米無殼榴彈,代號VOG-25.可由GP-25下掛榴彈發射器發射. 這種榴彈有大約2.5m的殺傷半徑. 也可用於OTs-14"雷電"武器系統或是RG6/6G30轉輪榴彈發射器.\n \n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷力: %c[ui_gray_2]中等\n
+		%c[d_cyan] • %c[0,255,255,255] 爆炸殺傷半徑: %c[ui_gray_2]3.6米\n
+		%c[d_cyan] • %c[0,255,255,255] 破片殺傷半徑: %c[ui_gray_2]20米\n
+		%c[d_purple] • %c[ui_gray_2] 平均破片數量: %c[ui_gray_2]81 (小型破片)\n
+		%c[d_purple] • %c[ui_gray_2] 引信延遲: %c[ui_gray_2]無 (撞擊時爆炸)</text>
+	</string>
+	<string id="ammo-vog-25_s">
+		<text>VOG-25榴彈</text>
+	</string>
+
+		<!-- Bad Ammo Addon-->
+	<string id="ammo-11.43x23-fmj_bad">
+		<text>.45 ACP FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-11.43x23-fmj_verybad">
+		<text>.45 ACP FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x51_fmj_bad">
+		<text>7.62x51毫米NATO民用彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x51_fmj_verybad">
+		<text>7.62x51毫米NATO民用彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x51_ap_bad">
+		<text>7.62x51毫米NATO AP彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x51_ap_verybad">
+		<text>7.62x51毫米NATO AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-11.43x23-hydro_bad">
+		<text>.45 ACP多頭蛇彈 (舊)</text>
+	</string>
+	<string id="ammo-11.43x23-hydro_verybad">
+		<text>.45 ACP多頭蛇彈 (損壞)</text>
+	</string>
+	<string id="ammo-357-hp_bad">
+		<text>.357 HP彈 (舊)</text>
+	</string>
+	<string id="ammo-357-hp_verybad">
+		<text>.357 HP彈 (損壞)</text>
+	</string>
+	<string id="ammo-338-lapua_bad">
+		<text>.338 拉普阿馬格南彈 (舊)</text>
+	</string>
+	<string id="ammo-338-lapua_verybad">
+		<text>.338 拉普阿馬格南彈 (損壞)</text>
+	</string>
+	<string id="ammo-12x70-buck_bad">
+		<text>12x76 鹿彈 (舊)</text>
+	</string>
+	<string id="ammo-12x70-buck_verybad">
+		<text>12x76 鹿彈 (損壞)</text>
+	</string>
+	<string id="ammo-12x76-zhekan_bad">
+		<text>12x76 獨頭彈 (舊)</text>
+	</string>
+	<string id="ammo-12x76-zhekan_verybad">
+		<text>12x76 獨頭彈 (損壞)</text>
+	</string>
+	<string id="ammo-12x76-dart_bad">
+		<text>12x76 飛鏢彈 (舊)</text>
+	</string>
+	<string id="ammo-12x76-dart_verybad">
+		<text>12x76 飛鏢彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.45x39-ap_bad">
+		<text>5.45x39毫米AP彈 (舊)</text>
+	</string>
+	<string id="ammo-5.45x39-ap_verybad">
+		<text>5.45x39毫米AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.45x39-ep_bad">
+		<text>5.45x39毫米HP彈 (舊)</text>
+	</string>
+	<string id="ammo-5.45x39-ep_verybad">
+		<text>5.45x39毫米HP彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.45x39-fmj_bad">
+		<text>5.45x39毫米FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-5.45x39-fmj_verybad">
+		<text>5.45x39毫米FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.56x45-ap_bad">
+		<text>5.56x45毫米AP彈 (舊)</text>
+	</string>
+	<string id="ammo-5.56x45-ap_verybad">
+		<text>5.56x45毫米AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.56x45-ss190_bad">
+		<text>5.56x45毫米HP彈 (舊)</text>
+	</string>
+	<string id="ammo-5.56x45-ss190_verybad">
+		<text>5.56x45毫米HP彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.56x45-fmj_bad">
+		<text>5.56x45毫米FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-5.56x45-fmj_verybad">
+		<text>5.56x45毫米FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x54-7n1_bad">
+		<text>7.62x54毫米7N1 (舊)</text>
+	</string>
+	<string id="ammo-7.62x54-7n1_verybad">
+		<text>7.62x54毫米7N1 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x54_7n14_bad">
+		<text>7.62x54毫米7N14 (舊)</text>
+	</string>
+	<string id="ammo-7.62x54_7n14_verybad">
+		<text>7.62x54毫米7N14 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x54-ap_bad">
+		<text>7.62x54毫米AP彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x54-ap_verybad">
+		<text>7.62x54毫米AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x54-r_bad">
+		<text>7.62x54毫米PP彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x54-r_verybad">
+		<text>7.62x54毫米PP彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x18-fmj_bad">
+		<text>9x18毫米FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-9x18-fmj_verybad">
+		<text>9x18毫米FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x18-pmm_bad">
+		<text>9x18毫米HP彈 (舊)</text>
+	</string>
+	<string id="ammo-9x18-pmm_verybad">
+		<text>9x18毫米HP彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x18-ap_bad">
+		<text>9x18毫米AP彈藥 (舊)</text>
+	</string>
+	<string id="ammo-9x18-ap_verybad">
+		<text>9x18毫米AP彈藥 (損壞)</text>
+	</string>
+	<string id="ammo-9x19-fmj_bad">
+		<text>9x19毫米FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-9x19-fmj_verybad">
+		<text>9x19毫米FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x19-pbp_bad">
+		<text>9x19毫米空尖彈 (舊)</text>
+	</string>
+	<string id="ammo-9x19-pbp_verybad">
+		<text>9x19毫米空尖彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x19-ap_bad">
+		<text>9x19毫米AP彈 (舊)</text>
+	</string>
+	<string id="ammo-9x19-ap_verybad">
+		<text>9x19毫米AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x39-ap_bad">
+		<text>9x39毫米SP-6彈 (舊)</text>
+	</string>
+	<string id="ammo-9x39-ap_verybad">
+		<text>9x39毫米SP-6彈 (損壞)</text>
+	</string>
+	<string id="ammo-9x39-pab9_bad">
+		<text>9x39毫米SP-5彈 (舊)</text>
+	</string>
+	<string id="ammo-9x39-pab9_verybad">
+		<text>9x39毫米SP-5彈 (損壞)</text>
+	</string>
+	<string id="ammo-gauss_bad">
+		<text>高斯槍電池 (舊)</text>
+	</string>
+	<string id="ammo-gauss_verybad">
+		<text>高斯槍電池 (損壞)</text>
+	</string>
+	<string id="ammo-m209_bad">
+		<text>M203榴彈 (舊)</text>
+	</string>
+	<string id="ammo-m209_verybad">
+		<text>M203榴彈 (損壞)</text>
+	</string>
+	<string id="ammo-og-7b_bad">
+		<text>OG-7V火箭彈 (舊)</text>
+	</string>
+	<string id="ammo-og-7b_verybad">
+		<text>OG-7V火箭彈 (損壞)</text>
+	</string>
+	<string id="ammo-vog-25_bad">
+		<text>VOG-25榴彈 (舊)</text>
+	</string>
+	<string id="ammo-vog-25_verybad">
+		<text>VOG-25榴彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x39_ap_bad">
+		<text>7.62x39毫米M43彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x39_ap_verybad">
+		<text>7.62x39毫米M43彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x39_fmj_bad">
+		<text>7.62x39毫米FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x39_fmj_verybad">
+		<text>7.62x39毫米FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.92x33_fmj_bad">
+		<text>7.92x57毫米毛瑟FMJ彈 (舊)</text>
+	</string>
+	<string id="ammo-7.92x33_fmj_verybad">
+		<text>7.92x57毫米毛瑟FMJ彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.92x33_ap_bad">
+		<text>7.92x57毫米毛瑟AP彈 (舊)</text>
+	</string>
+	<string id="ammo-7.92x33_ap_verybad">
+		<text>7.92x57毫米毛瑟AP彈 (損壞)</text>
+	</string>
+	<string id="ammo-5.7x28-ss190_bad">
+		<text>5.7x28 SS190彈藥 (舊)</text>
+	</string>
+	<string id="ammo-5.7x28-ss190_verybad">
+		<text>5.7x28 SS190彈藥 (損壞)</text>
+	</string>
+	<string id="ammo-5.7x28-ss195_bad">
+		<text>5.7x28毫米SS195彈 (舊)</text>
+	</string>
+	<string id="ammo-5.7x28-ss195_verybad">
+		<text>5.7x28毫米SS195彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x25-p_bad">
+		<text>7.62x25毫米P彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x25-p_verybad">
+		<text>7.62x25毫米P彈 (損壞)</text>
+	</string>
+	<string id="ammo-7.62x25-ps_bad">
+		<text>7.62x25毫米Pst彈 (舊)</text>
+	</string>
+	<string id="ammo-7.62x25-ps_verybad">
+		<text>7.62x25毫米Pst彈 (損壞)</text>
+	</string>
+	<string id="ammo-12.7x55-fmj_bad">
+		<text>12.7x55毫米STs-130彈 (舊)</text>
+	</string>
+	<string id="ammo-12.7x55-fmj_verybad">
+		<text>12.7x55毫米STs-130彈 (損壞)</text>
+	</string>
+	<string id="ammo_12.7x55_ap_bad">
+		<text>12.7x55毫米STs-130 VPS彈 (舊)</text>
+	</string>
+	<string id="ammo_12.7x55_ap_verybad">
+		<text>12.7x55毫米STs-130 VPS彈 (損壞)</text>
+	</string>
+	<!-- Bad Ammo Addon-->
+
+	<string id="ammo-12x70-buck_self">
+		<text>自製12x76霰彈</text>
+	</string>
+	<string id="ammo-12x70-buck_self_descr">
+		<text>自製的12號口徑霰彈. 內裝各種金屬碎片,包含彈殼碎片,損壞的子彈,各種金屬破片等. 近距離十分有效. 只能使用滑膛槍管發射.\n \n%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無\n%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]中~高\n \n%c[ui_gray_2]特點:\n \n%c[d_cyan] • %c[0,255,255,255] 發射多枚彈丸,殺傷範圍較小</text>
+	</string>
+	<string id="ammo_flw">
+		<text>火焰噴射器燃料</text>
+	</string>
+	<string id="ammo_flw_descr">
+		<text>熬煮過的動物脂肪、柴油和生橡膠的混合成的一種類似凝固汽油的粘稠燃料.</text>
+	</string>
+
+	<string id="ammo_23x75_shrapnel">
+		<text>"碎裂彈-25" 23x75毫米</text>
+	</string>
+	<string id="ammo_23x75_shrapnel_descr">
+		<text>子彈中裝有若干子彈丸, 有效射程可達25米, 它用於KS-23卡賓槍, 由於KS-23的槍管內有膛線, 所以彈丸可以覆蓋大片區域, 射擊幾乎無所謂瞄不瞄準, 只要往有危險的大概位置開槍就是了...\n</text>
+	</string>
+
+	<string id="ammo_23x75_barrikada">
+		<text>"路障彈" 23x75毫米</text>
+	</string>
+	<string id="ammo_23x75_barrikada_descr">
+		<text>鋼製彈頭的獨頭彈, 說它是子彈還不如說是炮彈更貼切, 從名字就不難看出, 這東西是專門用來破壞引擎從而強制截停車輛的彈藥, 有效射程可達100米, 用於KS-23卡賓槍\n</text>
+	</string>
+
+	<string id="ammo_9x21_sp10">
+		<text>9x21毫米SP10彈</text>
+	</string>
+	<string id="ammo_9x21_sp10_descr">
+		<text>穿透力增強的手槍子彈. 旨在摧毀由個人防護裝備保護的人力. 熱強化鋼芯的頭部突出殼體,從而實現子彈的高穿透效果.\n</text>
+	</string>
+
+	<string id="ammo_20x70_buck">
+		<text>20x70口徑鹿彈</text>
+	</string>
+	<string id="ammo_20x70_buck_descr">
+		<text>標準的20口徑圓內填充6毫米子彈. 近距離高度致命. 僅適用於滑膛武器.\n \n%c[d_purple] • %c[ui_gray_2] 最高穿甲等級: %c[ui_gray_2]無\n%c[d_purple] • %c[ui_gray_2] 組織損傷等級: %c[ui_gray_2]中~高\n \n%c[ui_gray_2]特點:\n \n%c[d_purple] • %c[ui_gray_2] 發射多枚彈丸,殺傷範圍較小</text>
+	</string>
+	<string id="ammo_20x70_buck_s">
+		<text>20x70鹿彈</text>
+	</string>
+
+	<string id="ammo_23_eco">
+		<text>生化-23子彈</text>
+	</string>
+	<string id="ammo_23_eco_descr">
+		<text>專為特異區科研人員設計的特殊子彈. 根據任務的不同,彈藥有不同型別的配置方案. 需要非常小心的操作. 使用方法: 將其非常緩慢而小心地放入武器之中.\n 
+		\n%c[d_purple] • %c[ui_gray_2] 護甲穿透力(AP): %c[ui_gray_2]無
+		\n%c[d_purple] • %c[ui_gray_2] 肉體制動力(DMG): %c[ui_gray_2]無
+		\n \n%c[ui_gray_2]特點:\n \n%c[d_purple] • %c[ui_gray_2] 它用一根細鎢針刺穿變異怪物的面板來注射溶液.</text>
+	</string>
+	<string id="ammo_23_eco_s">
+		<text>生化-23子彈</text>
+	</string>
+
+</string_table>

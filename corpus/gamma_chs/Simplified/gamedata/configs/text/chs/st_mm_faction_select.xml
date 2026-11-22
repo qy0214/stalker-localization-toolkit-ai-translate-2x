@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- Description = Factions -->
+	<string id="st_faction_stalker">
+		<text>独行者</text>
+	</string>
+	<string id="st_faction_stalker_desc">
+		<text>\n%c[0,255,255,255]独行者\n
+		\n %c[0,150,150,150]保持中立的潜行者, 多数是初来乍到的菜鸟,  为了在特异区生存以及追寻各式各样的梦想而走到了一起抱团取暖, 所以 "独行者" 的意义并非独来独往, 而是作为一个整体, 他们并不从属于任何一个阵营势力, 只想在这混乱中努力求生罢了\n\n
+		%c[0,150,150,150]对于信奉丛林法则的独行者来说, 远离纷争, 适者生存是他们的行事准则, 但也有一部分投机者, 却正是为了可以在纷争中左右逢源才选择这条独行之路\n
+		
+		\n%c[0,255,255,255]难度: 新手</text>
+	</string>
+	<string id="st_faction_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="st_faction_bandit_desc">
+		<text>\n%c[0,255,255,255]土匪\n
+		\n%c[0,150,150,150]特异区人尽皆知的一个事实是: 尽管乌克兰和白俄罗斯政府在名义上控制着这里, 但实际上特异区就是一个法外之地\n \n 
+		强盗, 杀手和黑帮等恶贯满盈之徒, 正是利用特异区的无政府状态来逃过法律的制裁, 占山为王, 当起了土匪, 干着肮脏的勾当
+		\n\n%c[0,255,255,255]难度: 中级</text>
+	</string>
+	<string id="st_faction_dolg">
+		<text>纪律团</text>
+	</string>
+	<string id="st_faction_dolg_desc">
+		<text>\n%c[0,255,255,255]纪律团\n
+		\n%c[0,150,150,150]一个准军事化的组织, 有着崇高理想的人们聚集在这里, 在他们眼中, 特异区是一个不该打开的潘多拉魔盒, 是人类无尽恐惧的源头, 如果不加以控制, 整个世界都会沦陷\n\n
+		长期以来, 由于有着相互矛盾的信条, 他们与自由军之间的战火不断
+		\n\n%c[0,255,255,255]难度: 初级</text>
+	</string>
+	<string id="st_faction_freedom">
+		<text>自由军</text>
+	</string>
+	<string id="st_faction_freedom_desc">
+		<text>\n%c[0,255,255,255]自由军\n\n%c[0,150,150,150]这里是无政府主义者和冒险家们的天堂, 自由军认为特异区是一个奇迹, 理应被全人类所共享, 所有人都应该不受管制地进入特异区\n\n
+		为了自由而战的这一理念, 导致他们经常与纪律团掐架
+		\n\n%c[0,255,255,255]难度: 中级</text>
+	</string>
+	<string id="st_faction_army">
+		<text>军队</text>
+	</string>
+	<string id="st_faction_army_desc">
+		<text>\n%c[0,255,255,255]军队\n\n%c[0,150,150,150]军队阵营包括乌克兰政府军, 乌克兰特种部队和加入乌克兰军方的潜行者\n\n 他们在特异区的出现正是外界社会恐惧心理的最好证明, 这些军人们依照铁一般的命令, 对特异区边界进行着严密的封锁, 未经允许而进入特异区的任何人员都会被立即枪决
+		\n\n%c[0,255,255,255]难度: 高级</text>
+	</string>
+	<string id="st_faction_ecolog">
+		<text>生态学家</text>
+	</string>
+	<string id="st_faction_ecolog_desc">
+		<text>\n%c[0,255,255,255]生态学家\n\n%c[0,150,150,150]生态学家是由乌克兰政府和科学界资助的官方组织, 由受过良好教育的生态学家和专业的实验助理, 和一定比例的保卫单位组成, 他们在特异区驻扎, 利用移动地堡型实验室对异常现象开展着实地研究, 以便利用它的潜力来造福人类
+		\n\n他们在军队的保护下专注于研究工作, 对势力争斗并不关心, 而其他阵营却对他们的研究成果很感兴趣, 因此大多愿意表达合作的姿态
+		\n\n%c[0,255,255,255]难度: 新手</text>
+	</string>
+	<string id="st_faction_killer">
+		<text>佣兵</text>
+	</string>
+	<string id="st_faction_killer_desc">
+		<text>\n%c[0,255,255,255]佣兵\n\n%c[0,150,150,150]由来自世界各地的老兵组成, 以赏金猎人的身份提供各种服务
+		\n\n他们在特异区内从属于一个半松散性质的雇佣兵组织, 而他们真实的客户到底是谁, 连他们自己也不知道
+		\n\n大多数雇佣兵们对特异区没有什么成见或看法, 只是一群单纯为了生意和利润毫不手软的专业杀手
+		\n\n%c[0,255,255,255]难度: 高级</text>
+	</string>
+	<string id="st_faction_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="st_faction_monolith_desc">
+		<text>\n%c[0,255,255,255]黑石\n\n%c[0,150,150,150]狂热的异教团体, 他们坚定地笃信着某种神秘力量的救赎, 所有人都认为黑石士兵们都是些被洗脑的躯壳, 但在他们来看, 外人才是异端, 并誓要将特异区中的人类清理干净\n\n尽管超念体早已被摧毁, 但他们还是成功地卷土重来, 并夺回了许多以前属于他们的领土 
+		\n\n%c[0,255,255,255]难度: 高级</text>
+	</string>
+	<string id="st_faction_csky">
+		<text>晴空</text>
+	</string>
+	<string id="st_faction_csky_desc">
+		<text>\n%c[0,255,255,255]晴空\n\n%c[0,150,150,150]一个独立的科研与军事组织, 专注于研究和了解特异区, 同时保护特异区最致命的秘密 \n\n在经历过切尔诺贝利核电站惨败后, 晴空几乎濒临灭亡, 但仍有少数幸存者设法让晴空散发出昔日的荣光
+		\n\n%c[0,255,255,255]难度: 新手</text>
+	</string>
+	<string id="st_faction_renegade">
+		<text>叛节者</text>
+	</string>
+	<string id="st_faction_renegade_desc">
+		<text>\n%c[0,255,255,255]叛节者\n\n%c[0,150,150,150]由特异区内最为卑鄙的潜行者组成
+		\n\n这些人没有任何的道德可言, 叛节者们犯下的可怕罪行致使他们原属的阵营驱逐了他们, 这样的一群渣滓蛇鼠一窝, 狼狈为奸, 组成了一个帮派类的团体, 遭到所有人的唾弃
+		\n\n%c[0,255,255,255]难度: 中级</text>
+	</string>
+	<string id="st_faction_greh">
+		<text>原罪</text>
+	</string>
+	<string id="st_faction_greh_desc">
+		<text>\n%c[0,255,255,255]原罪\n\n%c[0,150,150,150]一个具有邪教性质的潜行者组织, 他们的狂热信仰便是特异区本身
+		\n\n他们被看作是僵尸化的, 变异的, 疯癫的"黑暗潜行者", 而他们的目的则是将整个世界都变成特异区
+		\n\n%c[0,255,255,255]难度: 中级</text>
+	</string>
+	<string id="st_faction_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="st_faction_isg_desc">
+		<text>\n%c[0,255,255,255]UNISG"联合国科协"\n\n%c[0,150,150,150]一个对特异区怀有浓厚兴趣的国际科学协会, 他们派遣的特种战斗单位也秘密的进入了特异区中
+		\n\n无论他们的目的如何, 这些科学家雇佣的特工们绝非毫无防备的等闲之辈, 为了保守秘密, 他们遇到可疑的人会先开枪再说
+		\n\n%c[0,255,255,255]难度: 高级</text>
+	</string>
+	<string id="st_faction_zombied">
+		<text>僵尸潜行者</text>
+	</string>
+	<string id="st_faction_zombied_desc">
+		<text>\n%c[0,255,255,255]僵尸化潜行者\n\n%c[0,150,150,150]我要吃脑子!!!
+		\n\n脑部遭到过量灵体波的摧残, 这些潜行者们已经变成一种没有自我意识的行尸走肉, 只剩下最基本的生物本能, 并会攻击任何接近他们的生物
+		\n\n%c[0,255,255,255]难度: 自虐</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_box_faction_desc">
+		<text>
+			%c[0,150,150,150]%s天赋
+		</text>
+	</string>
+	<string id="st_mm_box_icon_desc">
+		<text>
+			%c[0,150,150,150]角色天赋
+		</text>
+	</string>
+	<string id="st_mm_list_map_desc">
+		<text>
+			%c[0,150,150,150]选择你的出生地点
+		</text>
+	</string>
+	<string id="st_mm_ck_reset_desc">
+		<text>
+			%c[0,150,150,150]重置物品
+		</text>
+	</string>
+	<string id="st_mm_list_economy_desc">
+		<text>
+			%c[0,150,150,150]"进程难度"主要和特异区的经济有关, 这会对玩家的游戏体验造成很大的影响
+			\n\n例如交易商的买卖价格, 技师的修理/升级价格, 物品的获取难度, 完成任务所获得的金钱和好感等等
+			\n\n%c[200,200,50,50]•%c[0,150,150,150]你可以在游戏过程中随时修改此选项
+			\n参照"额外选项 -> 进程难度"
+		</text>
+	</string>
+	<string id="st_mm_list_difficulty_desc">
+		<text>
+			%c[0,150,150,150]"生存难度"会影响玩家生存的各个方面, 例如伤害抗性, 耐力消耗和负重等, 还包括饥渴度和睡眠的需求
+			\n \n
+			%c[200,200,50,50]• %c[0,150,150,150]你可以在游戏过程中随时修改上面提到的因数.
+			\n参照 "额外选项 -> 生存难度"
+		</text>
+	</string>
+	<string id="st_mm_ck_story_desc">
+		<text>
+			%c[0,150,150,150]剧情模式, 启用后, 玩家将会体验到一系列剧情和动态任务.\n 
+			\n有以下几条由一系列故事推进的剧情线: "永恒传奇", "致命原罪"和"余辉行动", 剧情模式仅适用于独行者, 纪律团, 自由军, 生态学家, 佣兵和晴空这些阵营.\n
+			\n所有可玩阵营都可以接到动态任务, 所以请与你的阵营的老大多聊聊, 玩的开心!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容战区模式\n 
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容尸潮模式.\n 
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容诅咒模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_drx_desc">
+		<text>
+			%c[0,150,150,150]连续的一组动态任务, 可以帮助你探索整个特异区.
+			\n无重复性: 就算你以同一个阵营重新开局, 任务线也不会相同.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容剧情模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容诅咒模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_desc">
+		<text>
+			%c[0,150,150,150]铁人模式的特点是, 死亡时将会删除你的所有存档.\n
+			\n你可以随意保存存档, 但死亡时将会删除所有的存档.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_aim_desc">
+		<text>
+			%c[0,150,150,150]硬核AI瞄准的特点是, 最大限度地提高AI对目标的锁定性, 使玩家在移动中更难避开子弹.
+		</text>
+	</string>
+	<string id="st_mm_ck_survival_desc">
+		<text>
+			%c[0,150,150,150]尸潮模式的特点是, 用僵尸取代所有npc.\n
+			\n成群结队的僵尸会来吃你的脑子 - 做好准备! 看看你能活多久!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容战区模式\n 
+																			   
+		</text>
+	</string>
+	<string id="st_mm_ck_azazel_mode_desc">
+		<text>
+			%c[0,150,150,150]在诅咒模式里, 一次死亡并不代表结束.\n
+			\n就如恶魔阿萨索的传说一样, 当你死亡时, 你会随机转生到另一个潜行者身上, 这个传说真的存在于特异区.\n
+			\n如果你有同伴, 你就会成为他们中的一位. 这个模式很适合铁人模式/尸潮模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]诅咒模式中所有的地图都会解锁.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容剧情模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_warfare_desc">
+		<text>
+			%c[0,150,150,150]此模式使潜行者的A-Life系统具有更大的自由度, 从而创建更为动态的特异区
+			\n \n阵营的基地和势力区域会不断变化, 交易商, 医生和技师也是如此\n
+			\n \n你也可以领导并帮助你的阵营攻城略地, 在特异区中取得优势\n
+			%c[200,150,50,200]• %c[0,150,150,150]通过PDA地图来指挥大局, 驰骋疆场吧!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容剧情模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不兼容尸潮模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_campfire_desc">
+		<text>
+			%c[0,150,150,150](不要勾选--已经由"更好的篝火保存"所取代, 可去模组配置菜单中详细配置)\n
+			在篝火保存模式下, 你只有在篝火旁才能保存游戏, 篝火在特异区内随处可见, 它是潜行者们的聚集地\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核保存模式都相互兼容
+		</text>
+	</string>
+	<string id="st_mm_ck_conditions_desc">
+		<text>
+			%c[0,150,150,150]苦难模式下你不能在这些状态下存档:\n
+			%c[200,200,200,50]• %c[0,150,150,150]受伤时\n
+			%c[200,200,200,50]• %c[0,150,150,150]流血中\n
+			%c[200,200,200,50]• %c[0,150,150,150]被辐射\n
+			%c[200,200,200,50]• %c[0,150,150,150]与敌人交战中\n
+			%c[200,200,200,50]• %c[0,150,150,150]在辐射区域或是在能量风暴, 脉冲风暴期间\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核保存模式都相互兼容.
+		</text>
+	</string>
+	<string id="st_mm_ck_routes_desc">
+		<text>
+			%c[0,150,150,150]默认情况下许多地图之间的出入口通路是隐藏的, 你需要在游戏过程中通过其他方式发现这些通路
+			\n启用此选项将在开始新游戏时解锁所有地图.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_lives_desc">
+		<text>
+			%c[0,150,150,150]铁人模式的一项附加功能, 你可以设置在新游戏中你有多少条命数.
+			\n你每死一次, 生命就会减少一次.
+			\n一旦把命数用光了, 你的存档都会被删除.\n
+			%c[200,200,50,50]• %c[0,150,150,150]铁人模式必须启用才行.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_regen_desc">
+		<text>
+			%c[0,150,150,150]铁人模式的一项附加功能, 你可以设置每多少天增加一条命数.\n
+			%c[200,200,50,50]• %c[0,150,150,150]睡觉度过的时间不计算在内\n
+			%c[200,200,50,50]• %c[0,150,150,150]铁人模式必须启用才行
+		</text>
+	</string>
+	<string id="st_mm_list_timer_desc">
+		<text>
+			%c[0,150,150,150]在计时器模式下, 每隔一段时间才能存档.
+			\n存档后, 直到计时器结束, 您才能再次进行存档.\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核保存模式都相互兼容.
+		</text>
+	</string>
+	
+	<!-- Static Text -->
+	<string id="st_mm_new_game_character">
+		<text>角色</text>
+	</string>
+	<string id="st_mm_new_game_faction">
+		<text>选择阵营</text>
+	</string>
+	<string id="st_mm_new_game_icon">
+		<text>选择头像</text>
+	</string>
+	<string id="st_mm_new_game_options">
+		<text>选项</text>
+	</string>
+	<string id="st_mm_new_game_inventory">
+		<text>物品单</text>
+	</string>
+	<string id="st_mm_new_game_loadout">
+		<text>可选物品</text>
+	</string>
+	<string id="st_mm_new_game_name">
+		<text>名字:</text>
+	</string>
+	<string id="st_mm_new_game_faction_2">
+		<text>阵营:</text>
+	</string>
+	<string id="st_mm_new_game_money">
+		<text>金钱:</text>
+	</string>
+	<string id="st_mm_new_game_points_left">
+		<text>剩余点数:</text>
+	</string>
+	<string id="st_mm_new_game_points_used">
+		<text>已用点数:</text>
+	</string>
+	<string id="ui_st_random_location">
+		<text>-随机地点-</text>
+	</string>
+	
+
+	<!-- Description elements -->
+	<string id="st_mm_new_game_relations">
+		<text>与其他阵营关系</text>
+	</string>
+	<string id="st_mm_new_game_description">
+		<text>背景简介</text>
+	</string>
+	<string id="st_mm_new_game_points">
+		<text>点数</text>
+	</string>
+	<string id="st_mm_new_game_essential">
+		<text>要点</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_itm_desc_unknown">
+		<text>无可用信息</text>
+	</string>
+	
+	<!-- Options -->
+	<string id="st_cap_check_warfare">
+		<text>战区模式</text>
+	</string>
+	<string id="st_cap_check_drx">
+		<text>DoctorX任务线</text>
+	</string>
+	<string id="st_cap_check_campfire">
+		<text>篝火模式(不要动)</text>
+	</string>
+	<string id="st_cap_check_conditions">
+		<text>苦难模式</text>
+	</string>
+	<string id="st_cap_list_timer">
+		<text>计时器模式</text>
+	</string>
+	<string id="st_cap_check_routes">
+		<text>畅通模式</text>
+	</string>
+	<string id="st_cap_list_hardcore_lives">
+		<text>铁人模式命数</text>
+	</string>
+	<string id="st_cap_list_hardcore_regen">
+		<text>获得的命数</text>
+	</string>
+	<string id="st_cap_list_economy">
+		<text>进程难度</text>
+	</string>
+	<string id="st_cap_list_difficulty">
+		<text>生存难度</text>
+	</string>
+	
+	<string id="st_econ_1">
+		<text>旅行者</text>
+	</string>
+	<string id="st_econ_2">
+		<text>拾荒者</text>
+	</string>
+	<string id="st_econ_3">
+		<text>求生专家</text>
+	</string>
+	
+	<string id="st_diff_1">
+		<text>简单</text>
+	</string>
+	<string id="st_diff_2">
+		<text>中等</text>
+	</string>
+	<string id="st_diff_3">
+		<text>困难</text>
+	</string>
+	<string id="st_diff_4">
+		<text>硬核</text>
+	</string>
+	
+	<!--string id="st_diff_1">
+		<text>Novice</text>
+	</string>
+	<string id="st_diff_2">
+		<text>Stalker</text>
+	</string>
+	<string id="st_diff_3">
+		<text>Veteran</text>
+	</string>
+	<string id="st_diff_4">
+		<text>Master</text>
+	</string-->
+	
+	<string id="st_off">
+		<text>关闭</text>
+	</string>
+	<string id="st_new_game_min">
+		<text>分钟</text>
+	</string>
+	<string id="st_new_game_mins">
+		<text>分钟</text>
+	</string>
+	<string id="st_new_game_hour">
+		<text>小时</text>
+	</string>
+	<string id="st_new_game_hours">
+		<text>小时</text>
+	</string>
+	<string id="st_new_game_day">
+		<text>天</text>
+	</string>
+	<string id="st_new_game_days">
+		<text>天</text>
+	</string>
+	<string id="st_new_game_life">
+		<text>次生命</text>
+	</string>
+	<string id="st_new_game_lives">
+		<text>次生命</text>
+	</string>
+	
+	<!-- Buttons -->
+	<string id="st_mm_btn_new_game_faction">
+		<text>选择阵营</text>
+	</string>
+	<string id="st_mm_btn_new_game_icon">
+		<text>选择头像</text>
+	</string>
+	<string id="st_mm_btn_new_game_back">
+		<text>返回</text>
+	</string>
+	<string id="st_mm_btn_new_game_submit">
+		<text>开始</text>
+	</string>
+	<string id="st_mm_btn_new_game_rand">
+		<text>随机生成角色</text>
+	</string>
+	
+	<!-- Discord -->
+	<string id="st_hardcore_lives_left">
+		<text>剩余生命</text>
+	</string>
+	<string id="st_hardcore_lives_left_single">
+		<text>剩余生命</text>
+	</string>
+	<string id="st_player_dead">
+		<text>死亡</text>
+	</string>
+	<string id="st_main_menu">
+		<text>主菜单</text>
+	</string>
+	<string id="st_loading">
+		<text>载入</text> 
+	</string>
+	<string id="st_pause_menu">
+		<text>暂停菜单</text>
+	</string>
+	<string id="st_cap_check_freeplay">
+		<text>自由模式</text>
+	</string>
+	<string id="st_azazel_lives_possessed">
+		<text>已有生命</text>
+	</string>
+	<string id="st_azazel_lives_possessed_single">
+		<text>已有生命</text>
+	</string>
+	<string id="st_godmode">
+		<text>上帝模式</text>
+	</string>
+</string_table>
+			   

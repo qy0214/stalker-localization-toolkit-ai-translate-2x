@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string_table>
+  <string id="ammo_flare_grenade_vog">
+    <text>VOG-25 閃光手榴彈</text>
+  </string>
+  <string id="ammo_flare_grenade_vog_descr">
+    <text>一種改進后的照明彈,可與 GP-25 Kostyor 下掛式榴彈發射器配合使用. 最初,照明彈用於在緊急情況下發出訊號. 但特異區的潛行者發現夜間照明很有用. 包括降落傘,以使照明彈在空中飛行的時間更長. 薄壁允許電荷更快地燃燒,從而產生更亮的光.\n
+\n
+%c[d_purple] • %c[ui_gray_2] 亮度：%c[ui_gray_1]高\n
+%c[d_purple] • %c[ui_gray_2] 照明持續時間：%c[ui_gray_1]40 s\n
+%c[d_purple] • %c[ui_gray_2] 降落傘：%c[ui_gray_1]yes</text>
+  </string>
+  <string id="ammo_flare_grenade_209">
+    <text>M203照明彈</text>
+  </string>
+  <string id="ammo_flare_grenade_209_descr">
+    <text>一種改進后的照明彈,可與 M203 下掛式榴彈發射器配合使用. 最初,照明彈用於在緊急情況下發出訊號. 但特異區的潛行者發現夜間照明很有用. 包括降落傘,以使照明彈在空中飛行的時間更長. 較長的長度允許充電燃燒更長時間,從而增加照明時間.\n
+\n
+%c[d_purple] • %c[ui_gray_2] 亮度：%c[ui_gray_1]正常\n
+%c[d_purple] • %c[ui_gray_2] 照明持續時間：%c[ui_gray_1]60 s\n
+%c[d_purple] • %c[ui_gray_2] 降落傘：%c[ui_gray_1]yes</text>
+  </string>
+</string_table>

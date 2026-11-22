@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_aug_a1">
+		<text>斯太爾 AUG A1突擊步槍</text>
+	</string>
+	<string id="st_wpn_aug_a1_descr">
+		<text>斯太爾AUG(德語Armee Universal Gewehr的縮寫,即陸軍通用步槍)是奧地利5.56x45mm北約犢牛式突擊步槍,由斯太爾戴姆勒公司于20世紀60年代設計,現在由斯太爾曼利徹股份有限公司製造. Co KG (formerly Steyr-Daimler-Puch).\n \n</text>
+	</string>
+
+	<string id="st_wpn_aug_a2">
+		<text>斯太爾 AUG A2突擊步槍</text>
+	</string>
+	<string id="st_wpn_aug_a2_descr">
+		<text>斯太爾AUG(德語Armee Universal Gewehr的縮寫,即陸軍通用步槍)是奧地利5.56x45mm北約犢牛式突擊步槍,由斯太爾戴姆勒公司于20世紀60年代設計,現在由斯太爾曼利徹股份有限公司製造. AUG A2 是 A1 的改進版。 關鍵區別之一是用皮卡汀尼導軌替換了一體式瞄準鏡，允許新增各種反射式瞄準具和瞄準鏡。 這是一把在黑市上很常見的步槍，而且非常可靠。\n \n</text>
+	</string>
+
+	<string id="st_wpn_aug_a3">
+		<text>斯太爾AUG-A3突擊步槍</text>
+	</string>
+	<string id="st_wpn_aug_a3_descr">
+		<text>斯太爾AUG(德語Armee Universal Gewehr的縮寫,即陸軍通用步槍)是奧地利5.56x45mm北約犢牛式突擊步槍,由斯太爾戴姆勒公司于20世紀60年代設計,現在由斯太爾曼利徹股份有限公司製造. 斯太爾AUG-A3不同於基礎版的是在四個皮卡丁尼板條的存在:頂部的一個是用來安裝瞄準鏡,一個下掛榴彈發射器或者可以在底部安裝一個垂直的前握把,在側面安裝一個鐳射指示器或其他必要的附加裝置. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_wpn_aug_thales">
+		<text>泰雷茲 F90</text>
+	</string>
+	<string id="st_wpn_aug_thales_descr">
+		<text>裝載 5.56x45mm 北約子彈。 泰雷茲 F90，也稱為 EF88，是澳大利亞版 AUG F88 的改進型。 2012 年生產，旨在取代 F88，這是人們能找到的最現代化的 AUG，在 F88 本身效能的基礎上進行了大量改進，從而提高了人體工程學和可靠性。 獨特的槍管為其提供了更好的後坐力控制和準確性，而定製的前握把則提供了更好的操控性。 這是一把在特異區非常稀有的槍，由一些前澳大利亞特種部隊帶來，爲了可以在這裡賣個好價錢。\n \n</text>
+	</string>
+
+	<string id="st_wpn_aug_9mm">
+		<text>斯太爾AUG-A3 9mm XS衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_aug_9mm_descr">
+		<text>裝載 9x19mm 帕拉貝魯姆彈藥。 也稱為 斯太爾 AUG Para。 它配備了與AUG不同的獨特槍管、螺栓和彈匣，儘管 TMP 彈匣也可以與它搭配使用。 顧名思義，這種武器是為傘兵而製造的。 它是一種可靠的衝鋒鎗，採用無托結構，這就是它在自由軍中流行的原因。\n \n</text>
+	</string>
+
+</string_table>

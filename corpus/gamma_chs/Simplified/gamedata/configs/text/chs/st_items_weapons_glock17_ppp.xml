@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_glock17">
+		<text>格洛克17式9mm手枪(BaS)</text>
+	</string>
+	<string id="st_wpn_glock17_short">
+		<text>格洛克17手枪</text>
+	</string>
+	<string id="st_wpn_glock17_descr">
+		<text>格洛克17是一种以聚合物为枪身框架,短程反冲动作击发,后膛闭锁的半自动手枪,由奥地利格洛克有限公司设计和生产.\n \n
+		%c[ui_gray_2]武器附件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄准镜: 无\n 
+		%c[d_purple] • %c[ui_gray_2] 消声器: 无 \n</text>
+	</string>
+
+	<string id="st_up_glock17_45acp_name">
+		<text>口径更改为 .45 ACP弹药</text>
+	</string>
+
+	<string id="st_wpn_xd9">
+		<text>斯普林菲尔德 XD Mod.2 超紧凑型手枪</text>
+	</string>
+	<string id="st_wpn_xd9_short">
+		<text>XD9超紧凑型手枪</text>
+	</string>
+	<string id="st_wpn_xd9_descr">
+		<text>斯普林菲尔德公司 XD系列是克罗地亚 HS Produkt 制造的聚合物枪身框架、相当于撞针击发的HS2000 的美国版手枪。 该型号是 Mod.2 版本，超紧凑型改进版，是比 HS2000 本身更小的版本，用于隐蔽携带。 该型号与原始型号相比的重大变化之一是"抓握区"改进，这是一项令人难以置信的人体工程学改进。 尽管它是一把容量如此低的小型手枪，但对于那些想要一支后坐力尽可能低的精确手枪的人来说，它是最受欢迎的武器。 \n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech 消音器</text>
+	</string>
+
+</string_table>

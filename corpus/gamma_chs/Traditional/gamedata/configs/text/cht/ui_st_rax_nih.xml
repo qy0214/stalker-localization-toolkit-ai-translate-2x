@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+<string_table>
+
+
+	<string id="ui_mcm_title_new_item_highlight">
+		<text>新物品高亮提示</text>
+	</string>
+
+	<string id="ui_mcm_menu_new_item_highlight">
+		<text>新物品高亮</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_clear_type">
+		<text>高亮清除方法</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_clear_type_desc">
+		<text>Focus with key requires left shift to be held down before mouseing over item.</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_highlight_clr_a">
+		<text>凸顯透明</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_highlight_clr_r">
+		<text>凸顯紅色</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_highlight_clr_g">
+		<text>凸顯綠色</text>
+	</string>
+	<string id="ui_mcm_new_item_highlight_highlight_clr_b">
+		<text>凸顯藍色</text>
+	</string>
+
+	<string id="ui_mcm_lst_rax_nih_focus">
+		<text>Clear on Focus</text>
+	</string>
+	<string id="ui_mcm_lst_rax_nih_key_focus">
+		<text>Clear on Focus with key</text>
+	</string>
+	<string id="ui_mcm_lst_rax_nih_inv_close">
+		<text>Clear on Inventory Close.</text>
+	</string>
+
+
+</string_table>

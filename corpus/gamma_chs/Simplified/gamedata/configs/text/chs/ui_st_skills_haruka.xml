@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_player_skills_strength">
+		<text>力量</text>
+	</string>
+	<string id="st_player_skills_endurance">
+		<text>耐力</text>
+	</string>
+	<string id="st_player_skills_survival">
+		<text>生存</text>
+	</string>
+	<string id="st_player_skills_scavenging">
+		<text>拾荒</text>
+	</string>
+    <string id="st_haruka_skills_main">
+		<text>角色技能</text>
+	</string>
+	<string id="st_new_level_endurance">
+		<text>$clr_green• $clr_white体力消耗减少\n$clr_cyan• $clr_white移动速度提高</text>
+	</string>
+	<string id="st_new_level_strength">
+		<text>$clr_yellow• $clr_white负重增强\n$clr_red• $clr_white近战攻击增加\n</text>
+	</string>
+	<string id="st_new_level_scavenging">
+		<text>$clr_purple• $clr_white拾荒技能加强</text>
+	</string>
+	<string id="st_new_level_survival">
+		<text>$clr_cyan• $clr_white伤害抵抗加强\n$clr_purple• $clr_white肢解技巧加强</text>
+	</string>
+	<string id="st_new_level_header">
+		<text>$name 技能已升至 $level 级</text>
+	</string>
+</string_table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_placeable_radio">
+		<text>收音機</text>
+	</string>
+	<string id="st_placeable_radio_descr">
+		<text>一臺還能勉強使用的收音機, 好訊息是它能收到特異區的音樂臺, 壞訊息是調頻旋鈕似乎壞了\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		</text>
+	</string>
+</string_table>

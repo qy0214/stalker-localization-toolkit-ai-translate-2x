@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_interact">
+		<text>互動 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_place_popup">
+		<text>放置 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_far_popup">
+		<text>那裡太遠了無法放置</text>
+	</string>
+	<string id="st_collision_warning">
+		<text>無法放置 - 物體和某處產生重疊</text>
+	</string>
+    <string id="st_reject_pickup_world_obj">
+		<text>無法拾取</text>
+	</string>
+	<string id="st_enable_collision">
+		<text>啟用碰撞檢測</text>
+	</string>
+    <string id="st_disable_collision">
+        <text>禁用碰撞檢測</text>
+    </string>
+	<string id="st_align_actor">
+		<text>以玩家為基準對齊</text>
+	</string>
+    <string id="st_align_surface">
+		<text>以平面為基準對齊</text>
+	</string>
+</string_table>

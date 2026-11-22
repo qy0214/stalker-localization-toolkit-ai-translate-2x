@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Upgrading Parts
+-->
+<string_table>
+
+<!-- Outfits -->
+	<string id="st_upgr_o_physical">
+		<text>适用于护甲升级套件</text>
+	</string>
+	<string id="st_upgr_o_physical_desc">
+		<text>这个套装包含各种类型的护甲板和部件,如各种形状和尺寸的凯夫拉和钛,以及大量的小型部件来连接和安装它们. 有了这个套件,你应该能够在护甲上安装任何与改善其物理性能有关的升级.\n\n
+            %c[d_orange]可用于升级:\n
+            %c[d_cyan] • %c[ui_gray_2] 子弹抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 冲击抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 撕裂抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 套装耐久\n
+            %c[d_cyan] • %c[ui_gray_2] 减重\n
+            %c[d_cyan] • %c[ui_gray_2] 爆炸抗性
+        </text>
+    </string>
+	<string id="st_upgr_o_magical">
+		<text>适用于环境保护升级套件</text>
+	</string>
+	<string id="st_upgr_o_magical_desc">
+		<text>这个套件包含各种类型的材料,可以抵抗极端的物理、生物和化学条件. 有了这个套件,你应该能够在护甲上安装任何与改善其环境保护有关的升级. \n\n
+            %c[d_orange]可用于升级:\n
+            %c[d_cyan] • %c[ui_gray_2] 辐射抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 化学抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 灼伤抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 电流抗性\n
+            %c[d_cyan] • %c[ui_gray_2] 灵能抗性\n
+        </text>
+    </string>
+	<string id="st_upgr_o_utility">
+		<text>适用于功能升级套件</text>
+	</string>
+	<string id="st_upgr_o_utility_desc">
+		<text>这套护甲包括紧固带、各种小包、各种不同质量的机械装置和其他零碎的东西. 有了这个套件,你应该能够在服装上安装一些有用的升级.\n\n
+            %c[d_orange]可用于升级:\n
+            %c[d_cyan] • %c[ui_gray_2] 负重\n
+            %c[d_cyan] • %c[ui_gray_2] 腰带槽\n
+            %c[d_cyan] • %c[ui_gray_2] 耐力恢复\n
+            %c[d_cyan] • %c[ui_gray_2] 生命恢复\n
+            %c[d_cyan] • %c[ui_gray_2] 止血\n
+            %c[d_cyan] • %c[ui_gray_2] 伺服电机助力器\n
+        </text>
+    </string>
+	<string id="st_upgr_w_internal">
+		<text>武器装置升级套件</text>
+	</string>
+	<string id="st_upgr_w_internal_desc">
+		<text>这个套件包含高质量的武器部件和用于调整武器机制的工具. 有了这个套件,你应该能够对武器进行各种内部改进. \n\n
+            %c[d_orange]可用于升级:\n
+            %c[d_cyan] • %c[ui_gray_2] 可靠性\n
+            %c[d_cyan] • %c[ui_gray_2] 减少后座力\n
+            %c[d_cyan] • %c[ui_gray_2] 射速\n
+            %c[d_cyan] • %c[ui_gray_2] 改变口径\n
+            %c[d_cyan] • %c[ui_gray_2] 开火模式\n</text>
+    </string>
+	<string id="st_upgr_w_external">
+		<text>武器枪身升级套件</text>
+	</string>
+	<string id="st_upgr_w_external_desc">
+		<text>这个套装包含了用于改装和维护武器枪管的工具,以及战术导轨、支架和各种武器配件的零件. 有了这个套件,你应该能够进行各种与武器枪管或枪身有关的升级.\n\n
+            %c[d_orange]可用于升级:\n
+            %c[d_cyan] • %c[ui_gray_2] 平稳度\n
+            %c[d_cyan] • %c[ui_gray_2] 精度\n
+            %c[d_cyan] • %c[ui_gray_2] 控制\n
+            %c[d_cyan] • %c[ui_gray_2] 武器重量\n
+            %c[d_cyan] • %c[ui_gray_2] 附件\n</text>
+    </string>
+	<string id="st_upgr_w_optical">
+		<text>光学瞄准镜升级套件</text>
+	</string>
+	<string id="st_upgr_w_optical_desc">
+		<text>这个套装包含高质量的镜片和光学器件,适用于更换双筒望远镜和步枪瞄准镜. 有了这个套件,你应该能够升级任何光学仪器.</text>
+    </string>
+
+	<string id="st_try_combine">
+		<text>升级</text>
+	</string>
+	<string id="st_try_downgrade">
+		<text>降级</text>
+	</string>
+	<string id="ui_mcm_menu_supgrades">
+		<text>装备升级设置</text>
+	</string>
+	<string id="ui_mcm_supgrades_title">
+		<text>精简的护甲升级</text>
+	</string>
+
+	<string id="ui_mcm_supgrades_drop">
+		<text>掉落概率</text>
+	</string>
+	<string id="ui_mcm_supgrades_drop_desc">
+		<text>现有的升级套件被新的通用套件所取代的概率.</text>
+	</string>
+
+</string_table>

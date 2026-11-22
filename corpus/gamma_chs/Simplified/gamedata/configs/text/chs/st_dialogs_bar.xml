@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Barkeep -->
+	<string id="bar_visitors_barman_stalker_trader_start_dialog_11">
+		<text>哦, 你好, 怎么了伙计?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_start_dialog_12">
+		<text>你需要什么, 潜行者?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_start_dialog_13">
+		<text>嘿潜行者, 要来一杯吗? 也许能让你脸色缓和点</text>
+	</string>
+	
+	<string id="barkeep_100rads_0">
+		<text>跟我讲讲这地方的故事吧</text>
+	</string>
+	<string id="barkeep_100rads_1">
+		<text>欢迎来到辐射100酒吧, 我在这鬼地方开辟出的一片小绿洲. 多亏了纪律团, 这个社区是整个特异区中最安全的聚集地之一. 只要举止端庄, 没人会找你麻烦. 各地的潜行者到这里吃饭, 休息, 聊天, 寻找信息或找工作. 那么, 你要做什么? 老酒保今天还能帮到你什么吗?</text>
+	</string>
+	
+	<string id="information_about_stash_barmen_0">
+		<text>有没有能卖给我的藏物点信息?</text>
+	</string>
+	<string id="information_about_stash_barmen_1">
+		<text>呵, 是啊... 有时这里有些潜行者喝高了, 他们会醉醺醺地把个人信息塞进储物箱. 我不知道里面有什么, 但我知道它有多值钱. 7000元, 全是你的了</text>
+	</string>
+
+	<string id="information_about_stash_barmen1_0">
+		<text>当然, 给你. %c[d_orange][7000 卢布]</text>
+	</string>
+	<string id="information_about_stash_barmen1_1">
+		<text>感谢惠顾</text>
+	</string>
+	
+	<string id="devushka_4_help_0">
+		<text>你好啊, 酒保! 老西让我带来了你想见的人</text>
+	</string>
+	<string id="devushka_4_help_1">
+		<text>嗯? 哈! 原来是希普啊! 来吧, 你们都坐下吧, 这杯我请! 我想, 老西是让你们来谈神器运送订单的吧?</text>
+	</string>
+	
+	<string id="devushka_help_0">
+		<text>是的, 你可以告诉我们具体的细节</text>
+	</string>
+	<string id="devushka_help_1">
+		<text>...好了! 希普现在知道她需要做什么了, 她让我在她准备好的时候告诉你; 她要穿过死亡屏障去扎顿, 给大胡子送一些神器, 大胡子急需这些神器来和外面的一些神器收藏家做点交易. 她还说她不愿意独自去旅行. 你准备好了吗?</text>
+	</string>
+	<string id="devushka_help_2">
+		<text>是的,我准备好了.我们现在去拿行李</text>
+	</string>
+	<string id="devushka_help_3">
+		<text>差不多了,再给我几分钟准备下东西</text>
+	</string>
+	
+	
+<!-- GARIK -->
+	<string id="request_go_to_nimble_0">
+		<text>我需要过去</text>
+	</string>
+	
+	
+<!-- Voronin (Duty Leader) -->
+	<string id="story_dolg_0">
+		<text>现在是啥情况, 长官?</text>
+	</string>
+	<string id="story_dolg_1">
+		<text>目前我们有四个行动敌人; 自由军、黑石、雇佣兵和土匪. 在这四个中, 最令人担忧的两个是黑石和土匪 - 后者每天都变得越来越有条理. 考虑到它们的数量以及它们普遍缺乏人性, 这可能构成严重威胁.\n \n至于黑石, 他们最近以惊人的速度回来了. 今年早些时候, 他们卷土重来, 削弱了我们在亚诺夫的存在, 我们不得不做出一些重大牺牲, 以确保罗斯托克的整体安全.\n \n现在, 就自由军和蓝人集团而言, 一切都很顺利. 不要误会 - 他们是可敬的敌人, 我们的探子必须密切监视他们. 然而, 他们现在并没有直接反对我们或我们的盟友, 这给了我们一些喘息的空间</text>
+	</string>
+	<string id="story_dolg_2">
+		<text>纪律团怎样, 长官?</text>
+	</string>
+	<string id="story_dolg_3">
+		<text>你是说纪律团的新成员吗? 我觉得是五分之三 - 不好不坏. 多亏了彼得连科, 我们引进了一批健康的新战士, 不过我得承认, 到目前为止他们表现出的缺乏常识让我有点失望.\n \n纪律可以更好, 而且我们现在缺少能训练低级成员的那种愚蠢的行为粗鲁的教官. 我希望纪律团能及时恢复到以前的状态... 但这需要时间</text>
+	</string>
+	<string id="story_dolg_4">
+		<text>我能问问我们是怎么失去亚诺夫的吗, 长官?</text>
+	</string>
+	<string id="story_dolg_5">
+		<text>... 我想没必要隐瞒了. 我们有一个薄弱环节. 叛徒. 一个叫摩根的蠢军官. 他被发现向我们要消灭的土匪出售武器. 更糟糕的是, 是一群中立者抓到了他, 而不是我们的执勤人员. 结果, 我们花了多年的努力才重新获得失去的信任. 都是因为一个人的过错.\n \n这让我们在对抗黑石最近的回归时处于一个糟糕的位置. 我任命到亚诺夫的勇敢指挥官苏尔加中校不得不做出一系列残酷的牺牲, 最终牺牲了他的生命. 在他所率领的整个队伍中, 只有加夫里伦科成功地回到了罗斯托克.\n \n即使这样, 这个可怜的人刚到的时候也几乎不能说话, 他最终报告的是... 不安. 如果你见到他, 我劝你别打扰他</text>
+	</string>
+	<string id="story_dolg_6">
+		<text>非常好, 长官. 我明白</text>
+	</string>
+	
+	<string id="st_bar_dolg_leader_life_ask">
+		<text>我想进一步了解纪律团, 你能介绍点什么吗?</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_1">
+		<text>让我们看看, 我能告诉你什么? 好吧, 并不是每个为我们工作的人都有制服或徽章. 纪律团经常雇佣中立的潜行者作为辅助或线人. 虽然我们的目标是长远的, 但我们只有这么多人手, 认为我们无处不在是很自大的想法. 无论潜行者的样子如何, 他们都需要找口饭吃.  如果与我们合作保护人类的未来, 那就更好了. \n \n如果您认识任何正在寻找工作的人, 请务必让他们找彼得连科上校. 上校会非常乐意帮助潜行者过上体面的生活的</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_2">
+		<text>鉴于我们对特异区的憎恨, 这似乎有违直觉, 但纪律团依然与生态学家保持着特殊的关系. 我们对待敌人的方式和其他人不一样; 敌人不是作为军事力量而存在, 而是作为一种令人憎恶的自然力量而存在. 没有知识就无法赢得任何战争, 更不用说像这样的战争了, 而且谁能比生态学家们更了解我们的敌人呢? 现在, 他们天真地试图利用特异区来改善人类生活, 而且他们不像自由军那样: 总有一天, 他们会意识到摧毁它是唯一的选择. 他们广博的知识, 再加上纪律团的勇敢和技巧, 总有一天肯定会将特异区终结.\n \n与此同时, 为生态学家提供他们可能需要的任何东西都符合人类的利益, 无论是通过捐赠成箱供他们研究的神器, 还是通过武装警卫保护他们不受犯罪分子侵害. 现在情况可能很平静, 但在过去, 自由军和雇佣兵会攻击政府生态学家. 现在只有受到纪律团的威胁才能维持这三个群体之间的和平</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_3">
+		<text>我猜你对我们的制服很好奇, 是吧?\n \n想知道为什么任何一个头脑正常的士兵会穿着黑色和红色的衣服上战场. 我希望你们花点时间想想谁才是我们真正的敌人. 外国雇佣兵吗? 不. 土匪吗? 一个持续的麻烦, 但不是. 自由军? 他们是危险的傻瓜, 但仍然不是. 连黑石都不是我们真正的敌人. 真正的敌人是特异区本身.\n \n告诉我, 你认为伪装能骗过一个吸血怪吗? 它可是能通过空气感受到你的心跳. 用嗅觉和回声定位的狗呢? 或者是摄魂怪?它们只需要读取你的想法.\n \n面对真正的敌人, 伪装是没有用的. 在这种情况下, 我宁愿让这些人穿着鲜明的颜色, 帮助他们看到自己的同志....特别是黑色和红色使他们战斗得更勇敢, 更激烈. 与变种生物相比, 其他一切都像在公园里散步.\n \n所以, 当与人类敌人战斗时, 有些人可能会认为伪装是好的, 因为你无法杀死你看不见的东西. 但纪律团经历了变种生物的地狱, 我们相信犯罪分子看到我们, 就会让他们感到恐惧</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_4">
+		<text>让我告诉你一个小故事, 告诉你自由军和纪律团的区别.\n \n2006年, 罗斯托克是一个狂野的地方. 相比之下, 它会让今天的"废弃区"看起来很温顺. 然而, 纪律团选择在这里宿营, 因为我们知道罗斯托克曾经是一个工业工厂, 我们坚持要修复它.\n当我们到达时, 我们发现一个潜行者, 一瘸一拐地躲避一群猎犬, 拼命求生. 我们救了他, 帮他包扎了伤口, 然后我问他: "孩子, 像你这样的年轻人在这样的地方做什么?"\n他告诉我, "嗯, 长官, 我以前是个酒保, 但被敲诈犯耗尽了金钱. 所以我来这里是为了逃离他们, 努力生存."\n \n我看着这个男孩, 看到他的手抖得太厉害, 连枪都握不住了, 我告诉他, "好吧, 你来对地方了."\n这个男孩后来成为酒保, 他和我一起将罗斯托克恢复到今天的样子. 我们和潜行者合作, 发挥他们最好的能力去开垦特异区里仅有的一点美好.\n \n啊, 但你想知道自由军从何而来. 在2011年, 自由军已经把他们的旧基地毁了, 所以他们决定出去偷一个新的.\n他们一直等到异常点切断了罗斯托克与特异区其他地区的联系, 并利用这个机会袭击了军事仓库, 将其从其合法的主人手中夺走. 从那以后仓库又怎么样了? 自从自由军掌权以来, 这个曾经骄傲的堡垒只剩下了战斗和无政府状态, 而那些曾经勇敢探索未知世界的载具也早已生锈.\n \n自由军保证个人自由, 但从长远来看, 只会带来毁灭. 他们迟早也会崩溃的</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_5">
+		<text>我想我可以给你一些关于纪律团宣誓的见解. 其实很简单.\n \n"我, 一个叫沃罗宁的潜行者,\n宣誓捍卫纪律团的目标和理想.\n为了保护地球免受特异区的危害, 寻找并摧毁它在其中产生的任何东西.\n对抗任何不守规则的人, 不管是个人还是团体.\n为了地球上的正义和秩序献出我的生命!"\n \n这是多年前我和彼得连科一起发誓的誓言. 这就是为什么我们不为自己的利益去寻找神器, 而是把它们交给酒保或生态学家, 他们是我们唯一可以信任的负责任地处理神器的人. 这就是为什么我们要与土匪、雇佣兵和自由军作战, 这些人都在没有预防或预先考虑的情况下, 试图利用无辜的人或天真地散布特异区的"恩赐". 虽然我们不能免除普通潜行者的这种罪行, 但他们有他们的情况, 我们相信潜行者是无辜的, 除非他们被证明有罪, 这与库兹涅佐夫指挥下的那些喜欢开枪的狗不同. \n \n但与被误导的人斗争只是我们真正目标的次要目标: 控制特异区, 并将其击退. 这意味着杀死它创造的变种生物, 摧毁它最危险的神器, 并尽可能驱散它的异常现象. \n \n为了子孙后代的利益, 我们让有意愿有原则的朋友, 帮我们处理神器和降低风险... 那些唯利是图的雇佣兵为了利润而忽视原则. \n \n誓言的最后一部分强调了个人在人类整体中的地位; 我们都在为一个更好的纪律团而努力, 为保卫人类而奉献自己的生命是美好和正确的. \n \n苏尔加中校比任何人都更了解最后这句话</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_6">
+		<text>与我们北面的无政府主义者不同, 纪律团理解自我监督的价值, 所有希望晋升的成员都被灌输了纪律和正直的坚定信念.\n \n在我们看来, 坏的行为并不能洗掉好的. 反之亦然. 它们是相互共存的, 我们必须判断它们是什么.\n \n所以, 当我们犯错, 不能管好自己的时候, 就像很多年前在扎顿发生的这起可耻的案件一样, 我们会做出弥补, 尽我们所能对自己负责.\n \n在某些情况下, 甚至对我们的敌人. 许多年前, 一支强大的纪律团小队伏击并俘虏了一些年轻的自由军囚犯, 并将他们带回罗斯托克接受审讯. 有关的纪律团成员因他们的伏击而受到赞扬. 直到我们派的调查人员发现队里有严重的不当行为. 是的, 纪律团和自由军是在打仗, 但那个小队对他们的俘虏所做的... 那些蛆干的事是不可原谅的.\n \n每一个涉案的纪律团成员都被不光彩地开除了, 我们尽了最大的努力将他们在PDA网络上记录的淫秽信息清除掉, 正义得到了伸张. 纪律团仍占据着信任的高地, 这是我们做好事而获得的地位, 即使有时这意味着牺牲战略上的权宜之计. 特异区是我们所有人内心邪恶的反映. 如果我们继续养活我们内心的邪恶, 我们就无法与特异区抗争</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_7">
+		<text>偶尔, 我听到一些愤世嫉俗的人在嘀咕, 为什么纪律团还需要战士... 为什么这个世界还需要我们. 每当我听到这个问题, 我总是给相同的答案...\n \n以前, 最危险的变种生物只潜伏在地下; 他们都是传说. 现在, 我接到报告说在黑谷有史诺克, 地面上有摄魂怪, 在封锁线甚至有吸血怪. 特异区正在长大, 除非其扩张得到遏制, 否则它的恐怖将像疾病一样蔓延到全球.\n \n军方曾发誓确保任何东西都不会突破特异区目前的边界, 但大多数士兵把时间浪费在骚扰无害的潜行者上, 而不是与真正的威胁作斗争. 随着我国的国防力量越来越误入歧途和腐败, 保护世界不受特异区影响的责任已完全落在我们的肩上. 如果不是我们, 还有谁?</text>
+	</string>
+	<string id="st_bar_dolg_leader_life_end">
+		<text>我现在没啥想问的了</text>
+	</string>
+
+	
+<!-- Mangun (Duty Mechanic) -->
+	<string id="story_dolg_m_0">
+		<text>跟我讲讲你自己</text>
+	</string>
+	<string id="story_dolg_m_1">
+		<text>嗯, 是啊, 好啊. 为什么不呢?\n \n在我改行之前, 我曾在农业研究所工作. 在特异区出现之前我是一名汽车修理工. 我在特异区生活了一段时间后, 纪律团注意到我会鼓捣设备, 所以他们决定派我来这里当技师. 我更喜欢摆弄重武器和战斗武器... 此外我讨厌狙击枪, 尤其是那些娇贵的北约大小姐</text>
+	</string>
+	<string id="story_dolg_m_2">
+		<text>那是什么味道? 我猜纪律团不允许饮酒的</text>
+	</string>
+	<string id="story_dolg_m_3">
+		<text>天啊, 不喝点酒就活不下去了. 我希望在黑石袭击的时候我当时能在亚诺夫帮忙... 但是如果我被配发到那里, 我可能就活不成了. 那么多的好同志失去了保卫那里的机会... 看来我们扯得太远了. 无论如何, 别害羞, 现在 - 给我看看你的大宝贝, 如果你需要修理它的话</text>
+	</string>
+	<string id="story_dolg_m_4">
+		<text>我看看还有什么</text>
+	</string>
+
+	
+<!-- Snitch (Informer) at the Bar -->
+	<string id="talk_to_inf_trader_0">
+		<text>你是谁?</text>
+	</string>
+	<string id="talk_to_inf_trader_1">
+		<text>我是这里的情报商, 我可以为你提供各种情报服务. 目前我有不同类型的信息和地图, 其中有通往不同地点的路线. 我的消息来源是特异区最可靠的, 但我的消息供应者会为了保密而杀人灭口, 所以不要问我从哪儿搞到的消息 - 答案可不美好</text>
+    </string>
+	
+	<string id="talk_to_maps_0">
+		<text>你可以分享些周围的情况吗, 这总是免费的吧?</text>
+	</string>
+	<string id="talk_to_maps_1">
+		<text>通常来说信息是我的饭碗, 不过既然周围没人, 我给你来点额外信息</text>
+	</string>
+	<string id="talk_to_maps_2">
+		<text>我洗耳恭听</text>
+	</string>
+	<string id="talk_to_maps_3">
+		<text>好吧, 你可能已经对南边的一切都很熟悉了. 现在, 你在罗斯托克. 如果你和纪律团关系好, 这里是完全安全的. 东部是卡车墓园 - 和填埋场一样, 但是更大, 辐射更高, 更危险. 废弃区是一片蛮荒之地 - 在罗斯托克旁边, 纪律团巡逻队不会在那边闲逛. 那个地方绝对是个噩梦, 大多数潜行者建议你避开它, 除非你需要去扬塔. 北方是军事仓库, 被一群整日很嗨的家伙占着 - 自由军. 再往北就是黑石的地方, 那里被一些狂热分子和异常区域保卫着</text>
+	</string>
+	<string id="talk_to_maps_4">
+		<text>你能告诉我关于黑石的信息吗?</text>
+	</string>
+	<string id="talk_to_maps_5">
+		<text>据称, 他们是某个被称为许愿石的古老外星水晶的守护者. 黑石相信这颗水晶创造了特异区, 许愿石会将实现愿望的机会给予给它认可的人. 为此他们会全力保卫它, 不让任何人胆敢越过军事仓库的北部死亡屏障. 当然, 也有一些传奇人物真的去许了愿, 但这些都是扯淡, 还有更容易致富的方法呢. 你可能会想, 有人会许愿这里的怪物消失, 或者希望疾病痊愈, 甚至希望世界和平 - 哈! 但是... 我猜当你许愿的时候, 你就不会在乎别人了. </text>
+	</string>
+	<string id="talk_to_maps_6">
+		<text>谢谢你的信息</text>
+	</string>
+
+	<string id="buy_information_from_trader_0">
+		<text>有什么新消息吗?</text>
+	</string>
+	<string id="buy_information_from_trader_1">
+		<text>我得到了关于沼泽巫医的消息. 你知道吗, 那个有着传奇治愈能力的疯老头? 至少他们是这么说的. 只要七千块, 我就跟你说实话</text>
+	</string>
+		<string id="buy_information_from_trader_6">
+			<text>我听着呢</text>
+		</string>
+		<string id="buy_information_from_trader_11">
+			<text>你可能知道, 他住在大沼泽. 你可能不知道他为什么在那里. 因为他在等他的老朋友史特洛克. 随着史特洛克的回归, 很多人想见见沼泽巫医, 但很少有人能找到他. 不过这很容易 - 在沼泽西北方向的铁丝网上找一个缺口, 注意沿途的辐射和异常点</text>
+		</string>
+		<string id="buy_information_from_trader_2">
+			<text>我搞到了一个潜行者的信息, 他最近突入了核电站, 这条信息要一万卢布</text>
+		</string>
+		<string id="buy_information_from_trader_7">
+			<text>我想听听</text>
+		</string>
+		<string id="buy_information_from_trader_12">
+			<text>所以, 在黑石复兴之前, 这个潜行者正在探索石棺里的好东西 - 他找到了... 他遇到了一个与众不同的神器! 很明显, 这是许愿石的碎片! 黑石很快前来阻挠他, 他被迫抛弃了这个神器逃命去了. 现在人们只能猜它值多少钱...</text>
+		</string>
+		<string id="buy_information_from_trader_3">
+			<text>我有史特洛克小组的消息, 只要一万五千卢布</text>
+		</string>
+		<string id="buy_information_from_trader_8">
+			<text>行吧</text>
+		</string>
+		<string id="buy_information_from_trader_13">
+			<text>大家都知道史特洛克最近组建了一支新团队, 但没人知道他们是谁. 我告诉你吧,他们是一群天才 - "缝合者"、"远行者"、"游荡者"和"凝视者". 他们分别是一个神奇的医师, 一个天才的向导, 一个军队的逃兵和一个最强的狙击手. 人们只能好奇他们现在在哪里, 或者他们在做什么</text>
+		</string>
+		<string id="buy_information_from_trader_4">
+			<text>我可以透露一个探索过风暴引擎的神秘潜行者的信息,收你两万四千卢布</text>
+		</string>
+		<string id="buy_information_from_trader_9">
+			<text>接好了</text>
+		</string>
+		<string id="buy_information_from_trader_14">
+			<text>你听说过关于恐怖的风暴引擎的事吗? 直到最近, 它们都还如神话一般... 但是在史特洛克第二次进入特异区中心后, 毫无疑问, 风暴引擎真的存在. 关于它们是啥东西一直存在争议, 但旧的卫星图像显示了某种奇怪的基础设施, 这整个地区都是以它的名字命名的.\n \n很明显, 在特异区内, 所有重要程序和命令都是在这里执行的. 所以已经有潜行者拜访过那里, 我认为他是认真的 - 它的介入可能会对特异区产生重大影响. 少数几个阵营的领袖对这条信息有些担忧</text>
+		</string>
+	<string id="buy_information_from_trader_5">
+		<text>现在不行</text>
+	</string>
+	<string id="buy_information_from_trader_10">
+		<text>以后再来吧</text>
+	</string>
+
+	<string id="st_top_10_task_about_dialog_0">
+		<text>你想找点乐子吗?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_1">
+		<text>乐子吗? 无聊的很伙计. 现在的顾客几乎啥都不想要. 只有一群业余爱好者想要得到神器之类的东西, 你知道我的意思?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_2">
+		<text>这就是我要做的, 对吧?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_3">
+		<text>是啊, 不过他们中可没人想过做一些史诗般的、传奇的事情. 但是你, 你看起来很有经验. 难道你不想完成一些令大家永生难忘的任务吗?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_4">
+		<text>继续说...</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_5">
+		<text>我有个很特别的线人, 他悬赏要干掉十个潜行者. 报酬是5万卢布, 外加点小礼物. 听起来像是一个简单的赏金任务, 对吧? 有趣的是: 你的目标恰好是整个特异区里排前十的潜行者. 这意味着你要杀纪律团, 佣兵, 甚至是黑石的人! 如果你需要, 可以在PDA上看一下他们的列表. 这线人想让他们死, 不管怎么死</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_61">
+		<text>我靠这怎么可能, 谁想接这种活啊?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_62">
+		<text>算我一个吧</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_63">
+		<text>不谢了, 我不感兴趣</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_7">
+		<text>我问这位线人类似的问题. 简单来说, 他已经厌倦了打枪修枪赶路嗑药的生活. 他现在想给普通人更多的机会. 不管怎样, 报酬是很丰厚的, 谁在乎呢?</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_8">
+		<text>太棒了! 我会把你的首个刺杀目标的位置上传到你的PDA上. 你每杀一个人就会更新下一个目标的位置信息. 合作愉快</text>
+	</string>
+	<string id="st_top_10_task_about_dialog_9">
+		<text>随你便, 如果你想改变心意的话, 客户会一直等你的</text>
+	</string>
+	
+	<string id="st_top_10_task_finish_dialog_0">
+		<text>嘿"告密者", 任务完成了, 那十个家伙死的透透的</text>
+	</string>
+	<string id="st_top_10_task_finish_dialog_1">
+		<text>干得漂亮兄弟! 我的客户对你的成功感到非常满意. 如他所承诺的, 这是给你的报酬. 很高兴你能完成这个任务 - 即使到现在, 我仍能听到人们谈论你的传奇. 传奇杀手! 你的行为肯定会让特异区发生天翻地覆的, 呵呵...</text>
+	</string>
+	
+<!-- modified by Tronex -->
+	<string id="inf_trader_buy_transitions_0">
+		<text>我想买些信息</text>
+	</string>
+	<string id="inf_trader_buy_transitions_1">
+		<text>当然, 我有的是</text>
+	</string>
+	<string id="inf_trader_buy_transitions_2">
+		<text>从军事仓库到雷达站的路 %c[d_orange][7000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_9">
+			<text>所以, 你有足够的钱吗?</text>
+		</string>
+		<string id="inf_trader_buy_transitions_11">
+			<text>当然, 给你</text>
+		</string>
+	<string id="inf_trader_buy_transitions_3">
+		<text>从雷达站到它所属的地下实验室的路. %c[d_orange][11,000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_12">
+			<text>有钱没?</text>
+		</string>
+		<string id="inf_trader_buy_transitions_13">
+			<text>当然, 这里</text>
+		</string>
+	<string id="inf_trader_buy_transitions_4">
+		<text>从雷达站到普里皮亚奇的路. %c[d_orange][9000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_14">
+			<text>你有钱没?</text>
+		</string>
+		<string id="inf_trader_buy_transitions_15">
+			<text>给你</text>
+		</string>
+	<string id="inf_trader_buy_transitions_5">
+		<text>从普里皮亚奇到普城郊区的路. %c[d_orange][9000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_16">
+			<text>先给钱再说</text>
+		</string>
+		<string id="inf_trader_buy_transitions_17">
+			<text>好的, 给你钱</text>
+		</string>
+	<string id="inf_trader_buy_transitions_6">
+		<text>从普里皮亚奇到切尔诺贝利核电站的路. %c[d_orange][30,000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_18">
+			<text>你带钱了吗?</text>
+		</string>
+		<string id="inf_trader_buy_transitions_19">
+			<text>当然, 接好了</text>
+		</string>
+	<string id="inf_trader_buy_transitions_7">
+		<text>从切尔诺贝利核电站的南部到北部. %c[d_orange][35,000 卢布]</text>
+	</string>
+		<string id="inf_trader_buy_transitions_20">
+			<text>先给钱</text>
+		</string>
+		<string id="inf_trader_buy_transitions_21">
+			<text>给你</text>
+		</string>
+	<string id="inf_trader_buy_transitions_10">
+		<text>我没钱</text>
+	</string>
+	<string id="inf_trader_buy_transitions_8">
+		<text>我改变想法了</text>
+	</string>
+
+
+<!-- Guide -->
+	<string id="meet_guid_bar_0">
+		<text>你是向导吗?</text>
+	</string>
+	<string id="meet_guid_bar_1">
+		<text>是的, 我叫航海家. 我可以带你去几个地方, 而且收费不高. 我的客户大都是菜鸟, 但我也可以带领任何老手潜行者 - 这一点也不丢人. 我再详细说一遍: 你付钱, 我就带你去你想去的任何地方, 然后我会回到这里. 我可以带你去扬塔, 大沼泽, 军事仓库, 填埋场, 封锁线和尤皮特</text>
+	</string>
+
+	<string id="meet_guid_bar_list_0">
+		<text>抱歉, 你能带我去哪里?</text>
+	</string>
+	<string id="meet_guid_bar_list_1">
+		<text>去填埋场七百元, 去军事仓库一千元, 去菜鸟村三千元, 去扬塔三千五百元, 去亚诺夫六千元, 去大沼泽六千元</text>
+	</string>
+
+	<string id="travel_guid_bar_0">
+		<text>我需要前往某地</text>
+	</string>
+	<string id="travel_guid_bar_1">
+		<text>嗯,哪里?</text>
+	</string>
+	<string id="travel_guid_bar_2">
+		<text>去封锁线. %c[d_orange][3000 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_3">
+		<text>去填埋场. %c[d_orange][700 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_4">
+		<text>去军事仓库. %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_5">
+		<text>去扬塔. %c[d_orange][3500 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_6">
+		<text>去尤皮特. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_7">
+		<text>去大沼泽. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_bar_8">
+		<text>我改变主意了</text>
+	</string>
+
+<!-- Medic -->
+	<string id="bar_dolg_medic_talking_0">
+		<text>请问你是?</text>
+	</string>
+	<string id="bar_dolg_medic_talking_1">
+		<text>我是一个护士... 至少过去是这样. 他们叫我阿斯匹林. 对, 真是这名字. 我可以处理轻伤, 但严重的伤口... 要么叫直升机来救你, 要么是指望特异区自己救你. 而且我们很少呼叫直升机</text>
+	</string>
+	<string id="bar_dolg_medic_talking_2">
+		<text>你是怎么成为一名纪律团军医的?</text>
+	</string>
+	<string id="bar_dolg_medic_talking_3">
+		<text>其他人怎么加入纪律团的? 特异区会从你身上拿走一些东西. 然后再一次, 再一次. 直到你一无所有只剩下特异区本身. 不管是不是医护兵, 潜行者都是这么来的.\n \n我们才是那个在这鬼地方失去一切的人, 却为了不让其他人遭受同样的命运而留下来. 当然, 大多数纪律团成员选择通过杀死特异区来保护人们. 我不是.\n \n我是来消除它在人们身上留下的伤害的. 为了确保这个小镇的潜行者们能多活一天, 当他们的朋友拖着他们血迹斑斑的尸体穿过街道的时候, 不管他们参加了什么愚蠢的远征.\n \n只要你活着回来, 我就会让你焕然一新. 我甚至不会多收你的钱, 不像这里的其他交易者</text>
+	</string>
+	<string id="bar_dolg_medic_talking_4">
+		<text>谢谢</text>
+	</string>
+	
+<!-- ARENA -->
+	<string id="bar_arena_man_job_0">
+		<text>你还有东西和我战斗吗?</text>
+	</string>
+	<string id="bar_arena_man_job_11">
+		<text>你第一次来? 你的对手和你一样是一个新手. 他来这里是因为他欠钱了, 他只有两个选择: 要么直面战斗, 要么被丢进附近的异常点里. 他会像走投无路的动物一样战斗. 今天... 我觉得... 你们俩用最普通的手枪怎么样, 两盒弹药应该足够了. 要么收拾掉他, 要么我们把你喂狗 - 没有啥好扯的. 做选择吧</text>
+	</string>
+	<string id="bar_arena_man_job_111">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_112">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_12">
+		<text>你的上场战斗并不意味着什么, 你还像以前一样是个菜鸟, 没有一个聪明的庄家会在你身上下赌注. 如果你想赚到足够的钱,你就得在竞技场多秀几次. 你的新对手也通过了第一轮淘汰, 他的战斗比你那场要难得多. 说实话, 我不喜欢他 - 他人挡杀人神挡杀神, 观众也不喜欢这样. 所以, 去告诉我们你有多猛吧! 这场战斗之后, 赌注会增加 - 你所要做的就是赢. 上吧!</text>
+	</string>
+	<string id="bar_arena_man_job_121">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_122">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_13">
+		<text>嗯, 嗯... 你不像一开始看起来那么娘娘腔了. 现在是时候给你来点真的了. 你要对阵两个人. 第一个叫瑞典人, 我不记得第二个的名字了. 他们是被故意归到一队的, 因为他们对对方恨之入骨, 所以不要担心他们会团结起来 - 他们更可能内讧. 今天给的是步枪,所以不要让他们靠得太近, 否则我们只能把你一块一块的收拾走了. 赔率是10:1, 所以如果你赢了, 你会得到一大笔钱. 上吧!</text>
+	</string>
+	<string id="bar_arena_man_job_131">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_132">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_14">
+		<text>现在我可以有把握地说你是个战士, 一个真正的战士. 现在轮到团队合作战斗了. 你必须和两个新手 - 俩兄弟 - 并肩作战. 他们还没磨炼过, 但他们是兄弟, 所以我不得不让他们在一起. 如果我是你, 我就不会指望他们能帮上什么忙. 你的对手是一支很有经验的小队, 他们是本赛季的强力竞争者, 相当危险. 他们使用不同的武器, 其中一个有自动霰弹枪 - 对付他要非常小心. 祝你好运, 伙计... 加油吧</text>
+	</string>
+	<string id="bar_arena_man_job_141">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_142">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_15">
+		<text>今天给你准备了场特别的比赛. 连军方都听说过你了! 别惊讶, 他们也在竞技场打比赛的 - 甚至还有一个将军也在这里. 这些人来自阿尔法小组或机动特遣队(OMON). 他们全副武装, 他们护甲是你能想到的最好的. 不过别担心, 我也不会让你光屁股上阵. 你会得到一件自由之风 - 它很轻, 所以不会影响你的机动性. 去吧, 让他们知道潜行者可不是好惹的. 祝你好运!</text>
+	</string>
+	<string id="bar_arena_man_job_151">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_152">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_16">
+		<text>是时候展示你的能力了. 纪律团抓获了一群土匪, 他们在罗斯托克附近坑害潜行者. 纪律团是在晚上出动的, 所以大多数土匪都被活捉了. 反正他们都会被处死, 所以我决定给他们一个机会. 如果他们中的任何一个能活下来, 他们就能得到释放, 总比死在这里好对吧. 他们有准备还行, 一共六人, 所以你要小心. 上吧!</text>
+	</string>
+	<string id="bar_arena_man_job_161">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_162">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_17">
+		<text>你快进决赛了. 现在你要和一个真正的潜行者对战. 就他一个, 但他有一支突击步枪, 而且他穿着护甲. 挨一下就完了. 有一个惊喜, 我也不能告诉你... 我的建议是: 做好准备, 不畏险阻. 获胜者将进入决赛. 至死方休, 上吧</text>
+	</string>
+	<string id="bar_arena_man_job_171">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_172">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_job_18">
+		<text>恭喜你, 你进入决赛了! 坚持到底, 杀爆全场. 在竞技场中还有4个潜行者, 每个人都只能为自己而战. 他们都是穿着外骨骼的专业战士, 但这次是公平的战斗 - 你将得到他们所拥有的一切. 唯一的问题是, 在这场殊死搏斗中, 你没有医疗包或绷带. 准备好了吗? 去证明你是最棒的, 上啊!</text>
+	</string>
+	<string id="bar_arena_man_job_181">
+		<text>我准备好了</text>
+	</string>
+	<string id="bar_arena_man_job_182">
+		<text>我还没准备好</text>
+	</string>
+	<string id="bar_arena_man_start_111112">
+		<text>哟! 你付钱让我给你准备战斗但你却怂了!</text>
+	</string>
+	<string id="bar_arena_man_start_11">
+		<text>哟! 我给你整了场新的战斗</text>
+	</string>
+	<string id="bar_arena_man_start_21">
+		<text>出去逛逛喝几杯. 竞技场还未开张</text>
+	</string>
+	<string id="bar_arena_man_start_31">
+		<text>你已经是个大师了!!!</text>
+	</string>
+	<string id="bar_arena_man_start_41">
+		<text>你赢了! 这是你的奖金</text>
+	</string>
+	<string id="bar_arena_man_start_51">
+		<text>要参加这场比赛你还不够格</text>
+	</string>
+	<string id="bar_arena_manager_game_0">
+		<text>你为我准备了什么战斗?</text>
+	</string>
+	<string id="bar_arena_manager_game_1">
+		<text>没东西打了, 等我们抓到更多怪物后再来吧</text>
+	</string>
+	<string id="bar_arena_manager_game_100">
+		<text>参赛要先交押金. 1000卢布</text>
+	</string>
+	<string id="bar_arena_manager_game_101">
+		<text>好吧, 给你钱</text>
+	</string>
+	<string id="bar_arena_manager_game_105">
+		<text>我钱不够</text>
+	</string>
+	<string id="bar_arena_manager_game_1051">
+		<text>那就出去, 潜行者</text>
+	</string>
+	<string id="bar_arena_manager_game_110">
+		<text>你欠我2000卢布的参赛费</text>
+	</string>
+	<string id="bar_arena_manager_game_111">
+		<text>好吧, 给你钱</text>
+	</string>
+	<string id="bar_arena_manager_game_11111112">
+		<text>我已经付给你了!</text>
+	</string>
+	<string id="bar_arena_manager_game_115">
+		<text>我没那么多钱</text>
+	</string>
+	<string id="bar_arena_manager_game_1151">
+		<text>那就别扯这些</text>
+	</string>
+	<string id="bar_arena_manager_game_120">
+		<text>要和吸血怪打你得交3000卢布的参赛费</text>
+	</string>
+	<string id="bar_arena_manager_game_121">
+		<text>老子不差钱</text>
+	</string>
+	<string id="bar_arena_manager_game_125">
+		<text>3000? (摸兜) ...再见!</text>
+	</string>
+	<string id="bar_arena_manager_game_1251">
+		<text>别浪费我的时间, 潜行者</text>
+	</string>
+	<string id="bar_arena_manager_game_130">
+		<text>别这么急, 参赛费是5000卢布</text>
+	</string>
+	<string id="bar_arena_manager_game_131">
+		<text>好, 钱在这里</text>
+	</string>
+	<string id="bar_arena_manager_game_135">
+		<text>爷没钱</text>
+	</string>
+	<string id="bar_arena_manager_game_1351">
+		<text>别当乞丐啊你</text>
+	</string>
+	<string id="bar_arena_manager_game_140">
+		<text>参赛费是5000卢布</text>
+	</string>
+	<string id="bar_arena_manager_game_141">
+		<text>明白, 给你钱</text>
+	</string>
+	<string id="bar_arena_manager_game_145">
+		<text>老子没钱</text>
+	</string>
+	<string id="bar_arena_manager_game_1451">
+		<text>让我猜猜, 有人偷了你的血汗钱?</text>
+	</string>
+	<string id="bar_arena_manager_game_2">
+		<text>来了只变异犬, 大块头, 但状态很差, 另一方面它还是那么凶, 和我岳母一样</text>
+	</string>
+	<string id="bar_arena_manager_game_200">
+		<text>成交. 在你战斗之前, 你应该确认下比赛时间. 如果你成功地在限时内完成了比赛, 你就能得到额外奖金</text>
+	</string>
+	<string id="bar_arena_manager_game_201">
+		<text>只需要30秒, 三倍奖金</text>
+	</string>
+	<string id="bar_arena_manager_game_202">
+		<text>一分半吧, 双倍奖金</text>
+	</string>
+	<string id="bar_arena_manager_game_203">
+		<text>我可能要打一辈子, 一半奖金就好</text>
+	</string>
+	<string id="bar_arena_manager_game_204">
+		<text>我突然觉得想上厕所</text>
+	</string>
+	<string id="bar_arena_manager_game_2041">
+		<text>别扯淡, 你都交钱了</text>
+	</string>
+	<string id="bar_arena_manager_game_21">
+		<text>我能行, 放狗过来吧</text>
+	</string>
+	<string id="bar_arena_manager_game_22">
+		<text>一只狗? 就这?</text>
+	</string>
+	<string id="bar_arena_manager_game_221">
+		<text>咋了, 你要是怕的话就滚蛋</text>
+	</string>
+	<string id="bar_arena_manager_game_3">
+		<text>来了只戴着防毒面具的怪物, 没错, 就是史诺克, 虽然很瘦也很虚弱, 但它很灵活</text>
+	</string>
+	<string id="bar_arena_manager_game_300">
+		<text>很好, 万事俱备, 进竞技场吧</text>
+	</string>
+	<string id="bar_arena_manager_game_31">
+		<text>不就是个屎爬爬, 有什么好怕的?</text>
+	</string>
+	<string id="bar_arena_manager_game_32">
+		<text>不好意思, 我对屎爬爬过敏</text>
+	</string>
+	<string id="bar_arena_manager_game_321">
+		<text>被一个戴着防毒面具的腐烂怪物吓着了?</text>
+	</string>
+	<string id="bar_arena_manager_game_4">
+		<text>这次好戏来了, 我们抓到一个吸血怪, 哈哈, 它个头不大, 但脾气真不小</text>
+	</string>
+	<string id="bar_arena_manager_game_41">
+		<text>管他吸什么狗屁的怪, 统统放马过来!</text>
+	</string>
+	<string id="bar_arena_manager_game_42">
+		<text>啥? 吸血怪? 你当我他妈傻的?</text>
+	</string>
+	<string id="bar_arena_manager_game_421">
+		<text>有两下子</text>
+	</string>
+	<string id="bar_arena_manager_game_5">
+		<text>这次来了位穿着黑色斗篷的小胖墩 - 当地人称之为变异矮人</text>
+	</string>
+	<string id="bar_arena_manager_game_51">
+		<text>又矮又胖? 简单, 我能行</text>
+	</string>
+	<string id="bar_arena_manager_game_52">
+		<text>我听说过这种变异生物, 我能选别的吗</text>
+	</string>
+	<string id="bar_arena_manager_game_521">
+		<text>他身高还不及你的腰, 他吓着你了?</text>
+	</string>
+	<string id="bar_arena_manager_game_6">
+		<text>今天是个特别的日子. 我不知道他们在哪里发现的... 它... 但它是个真正的野兽</text>
+	</string>
+	<string id="bar_arena_manager_game_61">
+		<text>成交, 我要让它痛不欲生</text>
+	</string>
+	<string id="bar_arena_manager_game_62">
+		<text>我感觉会保不住小命, 让别人来吧</text>
+	</string>
+	<string id="bar_arena_manager_game_621">
+		<text>老实说, 我也很怕, 但我不需要去痛扁它, 谁在乎呢?</text>
+	</string>
+	<string id="bar_arena_manager_info_0">
+		<text>我有几个问题</text>
+	</string>
+	<string id="bar_arena_manager_info_1">
+		<text>说</text>
+	</string>
+	<string id="bar_arena_manager_info_10">
+		<text>没事</text>
+	</string>
+	<string id="bar_arena_manager_info_11">
+		<text>这是什么地方?</text>
+	</string>
+	<string id="bar_arena_manager_info_111">
+		<text>这里是竞技场, 我的小聚宝盆. 在这里, 潜行者可以挑战他们的胆量, 并通过与特异区的恐怖战斗来赢得他们的名声</text>
+	</string>
+	<string id="bar_arena_manager_info_12">
+		<text>你怎么抓来那些怪物的?</text>
+	</string>
+	<string id="bar_arena_manager_info_121">
+		<text>我和纪律团达成了协议, 猎杀怪物时把那些半死不活的拖到这里来换钱. 钱给了, 怪物被杀了, 我也从中获利了. 每个人都赢了</text>
+	</string>
+	<string id="bar_arena_manager_info_13">
+		<text>你从哪来的?</text>
+	</string>
+	<string id="bar_arena_manager_info_131">
+		<text>我可能来自许多地方, 但我不能告诉你. 直到我听说了这穷乡僻壤, 我觉得可以在这里捞一笔. 所以我就来了</text>
+	</string>
+	<string id="bar_arena_manager_rules_0">
+		<text>这里有啥规矩?</text>
+	</string>
+	<string id="bar_arena_manager_rules_1">
+		<text>规则很简单. 我自己定的. 对于怪物挑战, 你要去那间密室, 我们叫笼子, 挑战时会放入怪物. 你付了钱, 然后告诉我要花多长时间干掉怪物. 如果你做到了 - 你就赢了, 如果你没做到 - 我就赢了. \n对于战斗竞技, 土匪和特异区的其他堕落者被纪律团抓到竞技场来赎罪. 另外一些是喜欢打架的潜行者, 他们不是罪犯, 但无论谁想沐浴这血雨腥风都能得到可观的奖励. 如果他们不断奋战, 就会有更多的潜行者前来观看, 我也能给竞技者发更多的奖励</text>
+	</string>
+	<string id="bar_arena_manager_start_11">
+		<text>很高兴见到你潜行者, 欢迎来到竞技场</text>
+	</string>
+	<string id="bar_arena_manager_start_21">
+		<text>所以你在磨叽什么? 进笼子去</text>
+	</string>
+	<string id="bar_arena_manager_start_31">
+		<text>对不起, 现在还没有什么可打的. 等一两天, 我们就能抓来新的怪物</text>
+	</string>
+	<string id="bar_arena_manager_start_41">
+		<text>你还活着! 做得好! 你赢了. 如果你还想赢点钱, 那就随时来吧</text>
+	</string>
+	<string id="bar_arena_manager_start_51">
+		<text>抱歉兄弟, 你输了, 下次再来磨练磨练吧</text>
+	</string>
+
+	<!-- bar_visitors_stalker_mechanic -->
+	<string id="bar_visitors_stalker_mechanic_start_dialog_1">
+		<text>新来的潜行者? 好吧... 给我看看什么坏了，我来修就好了，只是希望你能付得起零件费。</text>
+	</string>
+</string_table>

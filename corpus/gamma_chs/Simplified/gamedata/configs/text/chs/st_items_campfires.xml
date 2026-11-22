@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_itms_campfire_name">
+		<text>柴火</text>
+	</string>
+	<string id="st_itms_campfire_descr">
+		<text>虽然在开发区很容易找到木材,但适合用于篝火的高质量木柴却很稀少. 尽管它很罕见,但却很便宜,也很重. 它可以成为徒步旅行和突袭时的必备品. 它有助于在夜间保持温暖,并提供了烹饪食物的机会. \n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用于制作篝火\n
+		%c[d_orange] • %c[ui_gray_2] 靠近树时右键单击斧头>"砍木头"\n	
+		%c[d_cyan] • %c[ui_gray_2] 可以用斧头收集\n
+		</text>
+	</string>
+
+	<string id="st_bad_surface">
+		<text>这里不合适</text>
+	</string>
+
+	<string id="st_gather_wood">
+		<text>砍木头</text>
+	</string>
+
+</string_table>

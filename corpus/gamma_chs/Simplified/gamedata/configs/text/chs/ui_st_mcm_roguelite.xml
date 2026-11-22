@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_roguelite">
+		<text>休闲版铁人模式</text>
+	</string>
+
+    <!--Global Settings-->
+    <string id="ui_mcm_roguelite_title">
+        <text>Jabbers的休闲版铁人模式设置</text>
+    </string>
+	<string id="ui_mcm_roguelite_global_description">
+        <text>全局设定</text>
+    </string>
+    <string id="ui_mcm_roguelite_is_roguelite_enabled">
+        <text>启用</text>
+    </string>
+
+
+    <!--Player Stash Settings-->
+    <string id="ui_mcm_roguelite_stashes_description">
+        <text>玩家储物箱继承</text>
+    </string>
+    <string id="ui_mcm_roguelite_is_stash_restore_enabled">
+        <text>启用继承储物箱</text>
+    </string>
+	<string id="ui_mcm_roguelite_is_money_restore_enabled">
+        <text>启用金钱继承</text>
+    </string>	
+    <string id="ui_mcm_roguelite_show_stashes_on_pda">
+        <text>在你的PDA上显示可继承的玩家储物箱</text>
+    </string>
+    <string id="ui_mcm_roguelite_stash_item_condition_loss_percent">
+        <text>死亡降低物品耐久百分比</text>		 
+    </string>
+    <!--Player Corpse Settings-->
+    <string id="ui_mcm_roguelite_drop_player_inventory_description">
+        <text>玩家尸体留存</text>
+    </string>
+    <string id="ui_mcm_roguelite_drop_player_inventory_on_death_enabled">
+        <text>继承最后一次死亡的尸体</text>
+    </string>
+    <string id="ui_mcm_roguelite_drop_player_inventory_item_loss_chance">
+        <text>物品丢失几率</text>
+    </string>
+	<string id="ui_mcm_roguelite_drop_player_inventory_item_loss_chance_desc">
+		<text>这个几率是针对每个物品, 并不是最终实际丢失的数量比例, 比如25%几率的意思是包裹中每个物品都会有25%几率丢失</text>
+	</string>
+    <string id="ui_mcm_roguelite_drop_player_inventory_item_loss_max_ingame_time_enabled">
+        <text>启用物品随时间流逝而丢失</text>
+    </string>
+    <string id="ui_mcm_roguelite_drop_player_inventory_item_loss_max_ingame_time_seconds">
+        <text>以秒为单位设置物品丢失, 并应用"物品丢失几率"参数</text>
+    </string>
+	<string id="ui_mcm_roguelite_drop_player_inventory_item_loss_max_ingame_time_seconds_desc">
+		<text>举例: 物品丢失几率为25%, 丢失时间为1小时的话, 你作为独行者在军事仓库死亡, 复活后你花了45分钟时间抵达尸体处, 你会发现物品丢失的百分比为0.75 * 0.25 * 100% = 19%, 因为你只花了3/4小时就取得了尸体, 如果是1小时的话则会丢失25%的物品
+</text>
+	</string>								 
+
+    <!--Trader Reputation Settings-->
+    <string id="ui_mcm_roguelite_trader_rep_description">
+        <text>商人好感保留</text>
+    </string>
+    <string id="ui_mcm_roguelite_is_trader_rep_restore_enabled">
+        <text>继承商人好感度</text>
+    </string>
+    <string id="ui_mcm_roguelite_trader_rep_penalty_percent">
+        <text>死亡丢失商人好感百分比</text>
+    </string>
+
+    <!--Charater Reputation Settings-->
+    <string id="ui_mcm_roguelite_character_rep_description">
+        <text>角色名声保留</text>
+    </string>
+    <string id="ui_mcm_roguelite_is_character_rep_restore_enabled">
+        <text>继承角色名声</text>
+    </string>
+    <string id="ui_mcm_roguelite_character_rep_penalty_percent">
+        <text>死亡损失角色名声百分比</text>
+    </string>
+    <string id="ui_mcm_roguelite_character_rank_penalty_percent">
+        <text>死亡损失角色排名百分比</text>
+    </string>
+	<string id="ui_mcm_roguelite_debug_description">
+        <text>Debug设置</text>
+    </string>
+    <string id="ui_mcm_roguelite_debug">
+        <text>Debug模式</text>
+    </string>
+</string_table>

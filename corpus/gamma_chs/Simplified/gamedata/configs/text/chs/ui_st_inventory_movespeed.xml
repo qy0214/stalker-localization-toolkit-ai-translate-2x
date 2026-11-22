@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="ui_inv_outfit_speed">
+		<text>移动速度倍率</text>
+	</string>
+
+	
+	<!-- MCM -->
+	
+	<string id="ui_mcm_menu_speed">
+		<text>速度大修</text>
+	</string>
+	<string id="ui_mcm_menu_speed_title">
+		<text>服装/武器影响移速</text>
+	</string>
+	<string id="ui_mcm_speed_title">
+		<text>服装/武器影响移速</text>
+	</string>
+	<string id="ui_mcm_speed_encumbrance">
+		<text>超重影响移速</text>
+	</string>
+	<string id="ui_mcm_speed_encumbrance_desc">
+		<text>负重功能在轻度负重（低于25%的总负重）时给予奖励,在重度负重时给予惩罚. (要注意的是,如果你轻装上阵,启用这个选项将导致可笑的速度. 
+</text>
+	</string>
+	<string id="ui_mcm_speed_weapon">
+		<text>武器影响冲刺速度</text>
+	</string>
+	<string id="ui_mcm_speed_weapon_desc">
+		<text>如果启用,武器根据类型和重量对冲刺速度进行修改. </text>
+	</string>
+	<string id="ui_mcm_speed_debug">
+		<text>(开发者）额外的控制台记录</text>
+	</string>
+	<string id="ui_mcm_speed_debug_desc">
+		<text>向控制台显示一些有用的废话. </text>
+	</string>
+</string_table>

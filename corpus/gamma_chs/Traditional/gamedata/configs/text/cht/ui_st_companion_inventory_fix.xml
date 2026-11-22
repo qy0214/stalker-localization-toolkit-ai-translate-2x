@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_companion_inv">
+        <text>管理同伴庫存</text>
+    </string>
+
+	<string id="ui_mcm_companion_inv_show_all">
+		<text>顯示同伴庫存中的每一個物品.</text>
+	</string>
+
+	<string id="ui_mcm_companion_inv_show_all_desc">
+		<text>[Cheaty]這將顯示每一個物品，甚至是你沒有興趣接觸的技術和動畫專案。該選項將顯示的專案染成紅色.</text>
+	</string>
+	<string id="ui_mcm_companion_inv_show_klep">
+		<text>顯示同伴在為你服務期間獲得的物品.</text>
+	</string>
+
+	<string id="ui_mcm_companion_inv_show_klep_desc">
+		<text>這個選項顯示所有物品，除了同伴開始時的物品。他們撿到的任何東西，如果在其他情況下是隱藏的，就會顯示出來。這個選項給它所顯示的物品塗上金色.</text>
+	</string>
+
+
+
+
+</string_table>

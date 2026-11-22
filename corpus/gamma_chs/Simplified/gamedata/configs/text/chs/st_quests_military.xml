@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON MILITARY WAREHOUSES MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_default_task_text">
+		<text>接受下一个任务</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_default_task_about">
+		<text>我需要你去见一个人. 他虽然不是我的朋友但你可以帮助他</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_default_task_finish">
+		<text>好运, 潜行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Assassination Storyline Task= -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_1_name">
+		<text>卢卡什的暗杀任务</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_1_text">
+		<text>卢卡什有一个必须消灭的目标</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_1_about">
+		<text>嘿, 你能来我很高兴. 有些事我要你帮我处理. 我们有个共同的敌人需要被抹除. 他太危险了. 马上去干掉他</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_1_finish">
+		<text>太棒了兄弟! 谢谢</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Freedom Assault on Monolith Storyline Task -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_2_name">
+		<text>突击黑石</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_2_text">
+		<text>卢卡什要求你领导自由军成员对黑石发动突袭</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_2_about">
+		<text>黑石一直在试图突破我们的封锁. 我想必须得和他们好好干一架. 我组建了一只突击队, 希望你能带领着他们给黑石好好地上一课</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_2_finish">
+		<text>小伙子, 有一手啊. 干得好</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Search Lab X=8 (Outskirts) Storyline Task -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_3_name">
+		<text>探索X-8实验室</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_3_text">
+		<text>探索普城郊区的X-8实验室以寻找晴空占领过的证据</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_3_about">
+		<text>有情报称前一段时间晴空可能占领过X-8实验室. 我需要你去调查一下, 并且搜寻他们可能留在那里的重要文件</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_task_3_finish">
+		<text>漂亮. 你做的很好</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	December 08, 2016
+	<!==
+	<!== ========================================================================================= -->
+	<!-- ����������� ������ ������ -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_name">
+		<text>自由!</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_text">
+		<text>卢卡什将以15,000RU的象征性费用向你介绍自由军的生活方式</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_about">
+		<text>呵, 我估计你正在找自由军的甜头, 是吗? 很好, 我可以告诉你. 首先你得问问自己 - "我能成为一个坏蛋吗"? 因为你得有个比死亡之灯还要大的石头才能和我们一起摇滚. 我们会一起度过美好的时光, 当然, 当这些狗屎来临时, 你得做好准备来从狂热分子, 法西斯, 政府手里拯救你的兄弟...\n我们为特异区的自由而战. 如果你是真的想帮助我们在这里建立一个无政府主义的乌托邦, 请为这里的伙计们留下15000RU, 我会很高兴地向你介绍的</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_finish">
+		<text>很好. 你终于获得了自由.有一句警告, 就是 - 任何惹恼在自由军的小伙子的人最终都会横尸吸血怪村. 记住, 要体谅周围的人</text>
+	</string>
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Payoff Change Factions Task -->
+
+	<string id="drx_sl_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_name">
+		<text>自由!</text>
+	</string>
+	<string id="drx_sl_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_text">
+		<text>卢卡什将以15,000RU的象征性费用向你介绍自由军的生活方式</text>
+	</string>
+	<string id="drx_sl_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_about">
+		<text>呵, 我估计你正在找自由军的甜头, 是吗? 很好, 我可以告诉你. 首先你得问问自己 - "我能成为一个坏蛋吗"? 因为你得有个比死亡之灯还要大的石头才能和我们一起摇滚. 我们会一起度过美好的时光, 当然, 当这些狗屎来临时, 你得做好准备来从狂热分子, 法西斯, 政府手里拯救你的兄弟...\n我们为特异区的自由而战. 如果你是真的想帮助我们在这里建立一个无政府主义的乌托邦, 请为这里的伙计们留下15000RU, 我会很高兴地向你介绍的</text>
+	</string>
+	<string id="drx_sl_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_finish">
+		<text>很好. 你终于获得了自由. 有一句警告,就是 - 任何惹恼在自由军的小伙子的人最终都会横尸吸血怪村. 记住, 要体谅周围的人</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Lukash (Freedom Honcho) Stop Enemy Assault Task -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_1_name">
+		<text>消灭敌人</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_1_text">
+		<text>一帮子潜行者正在给自由军的伙伴们带来麻烦. 卢卡什正在悬赏这些混蛋</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_1_about">
+		<text>他妈的, 这群傻逼就是停不下来! 好吧, 我们就给他们上一课. 嘿, 潜行者! 帮帮我们弄点零花钱如何? 有一帮恶棍在我们的地盘为非作歹, 向我的伙伴们开枪, 把我气炸了, 是时候给他们点颜色了, 你能做到吗?</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_1_finish">
+		<text>啊, 不错! 也许我们终于可以平静一阵子了, 嗯?</text>
+	</string>
+
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_2_name">
+		<text>突袭敌人</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_2_text">
+		<text>你奉命为自由军突袭敌人. 完成任务后再去找卢卡什</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_2_about">
+		<text>如果你有胆量的话, 我们有一个危险的任务. 我们被夹在黑石和纪律团中间, 我们的地盘小到我的幽闭恐惧症都犯了. 我需要一个带恶人来帮我突袭敌人的营地以为我们挣得喘息的空间. 你敢当那个带恶人吗?</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_2_finish">
+		<text>哈!你果然做到了, 你这个疯子! 拿好, 这是你的了, 连同我的尊敬一起</text>
+	</string>
+
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_3_name">
+		<text>消灭被洗脑成黑石的成员</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_3_text">
+		<text>一名自由军成员成为了黑石. 卢卡什让你去灭了他</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_3_about">
+		<text>我得到了一个很不幸的消息, 伙计. 我们的一名自由军战士被黑石洗脑了. 他是个好人, 我相信他不会愿意成为一名外星石头的杀手的. 算我求求你, 找到他, 让他安息. 不然他的老朋友们只能挥泪这么做了</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_3_finish">
+		<text>办妥了? 好. 我知道这很难. 在死亡屏障的兄弟会为他们倒下的同志干杯. 至于你, 这是你的报酬</text>
+	</string>
+
+
+	<!-- ASSASSINATE DUTY FOR FREEDOM TASK -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_4_name">
+		<text>处理闹事的潜行者</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_4_text">
+		<text>卢卡什需要教一个闹事的潜行者做人</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_4_about">
+		<text>有个家伙在这附近游荡. 他射杀了我们一名成员. 这种事情绝对不可原谅. 你愿意去教训他吗? 我们会付报酬, 放心</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_4_finish">
+		<text>真他妈棒! 他们这下知道惹我们的下场了. 这是我们许诺你的的奖励. 漂亮, 潜行者</text>
+	</string>
+
+
+	<!-- FIND WEAPON FOR FREEDOM TASK -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_5_name">
+		<text>带给卢卡什一个%s</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_5_text">
+		<text>卢卡什要你帮他弄一把状态不错的枪. 找到后把东西给他</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_5_about">
+		<text>虽然自由军的赞助者们为小伙子们提供了武器, 但我需要一把新的%s作为私人武器. 如果你能弄到一把成色不错的, 我愿意为它付大价钱</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_5_fetch_about">
+		<text>虽然自由军的赞助者们为小伙子们提供了武器, 但我需要一把新的%s作为私人武器. 如果你能弄到一把成色不错的, 我愿意为它付大价钱</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_5_fetch_finish">
+		<text>很好. 在危险来临时这东西也许会扭转命运. 这是我许诺的报酬</text>
+	</string>
+	
+	<!-- Lukash (Freedom Honcho) Decimate the Enemy Task -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_6_name">
+		<text>死亡扳机</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_6_text">
+		<text>卢卡什正在动员一场对自由军敌人的进攻. 带回%s以获取诱人的奖励</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_6_about">
+		<text>好了, 现在我们在夹缝之中生存. 你知道的, 北方是狂热分子, 南方是极端分子, 还有一些军队的暴徒. 你会用怎样的方式来用传统的方式向他们解释我们的理念?不要担心, 奖励异常诱人</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_6_fetch_about">
+		<text>好了, 现在我们在夹缝之中生存. 你知道的, 北方是狂热分子, 南方是极端分子, 还有一些军队的暴徒. 你会用怎样的方式来用传统的方式向他们解释我们的理念? 在羞辱了他们之后, 把他们的%s带来作为战利品. 不要担心, 奖励异常诱人</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_6_fetch_finish">
+		<text>嘿, 干得不错, 伙计. 这是你的钱</text>
+	</string>
+	
+	<!-- Lukash (Freedom Honcho) Mortal Sin Unquenchable Flame Tasks -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_7_about">
+		<text>嘿伙计. 有一件事. 还记得那些傻逼吗? 在你上次挨个踢了他们的屁股之后, 他们似乎还没记事. 洛基说他们又开始在扎顿调皮了, 尤其是在变电站附近. 把他们处理掉</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_7_finish">
+		<text>自由军中一些新人开始觉得你是二号兰博了. 你能完成这样的任务并且活着回来, 这让我觉得他们不是乱说. 所以拿好了. 给我们的兰博的一点小东西</text>
+	</string>
+
+	<!-- Lukash (Freedom Honcho) Rescue the Freedom Agent Task -->
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_name">
+		<text>护送间谍</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_text">
+		<text>一名自由军的卧底需要从敌人的小队中和我们接头. 杀死那个小队的其他成员, 护送他回到基地. 间谍拿着一把SVD</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_about">
+		<text>我们一个卧底正潜伏在敌人内部. 然而, 我们怀疑他的身份已经暴露. 他几次都已经没有回应我们的联络了, 也没有给我们任何消息. 他可能正在被严密地监视着, 所以他肯定是无法完成任务了. 更不用说敌人还可能把他除掉. 我们需要把他弄出来. 我们能找到他的地点, 但是看起来他不是一个人在行动. 消灭敌人的小队, 然后护送他回到基地. 你可以通过武器辨别他, 他用的是SVD. 在你攻击小队时他会向你开枪, 以免暴露, 但他会放水, 所以不要怀恨在心</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_finish">
+		<text>不错. 是时候好好奖励他了</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_msg_join">
+		<text>嘿伙计, 停下! 我是自由军的卧底! 很抱歉我不得不向你开枪. 我不得不借此获取信任... 多亏你做到了. 如果你能把我安全带回军事仓库, 卢卡什会好好报答你的. 带路吧, 我会跟着你的!</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_8_msg_leave">
+		<text>谢谢你救我于水火之中, 潜行者! 后会有期!</text>
+	</string>
+	
+	
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_9_name">
+		<text>玉石俱焚</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_9_text">
+		<text>摧毁封锁线军事检查站的装甲车</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_leader_stalker_task_9_about">
+		<text>我有个重要的任务交给你, 乌克兰军队最近有一批增援的全新装甲车开进了封锁线, 再看看我们仓库里那些残破不堪的垃圾! 如果我们没有坦克, 那政府也不能有! 侦察兵报告说目前这些装甲车就停在封锁线南边军事路障那里, 带上炸药, 把它们全都报废了吧!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Skinflint (Freedom Mechanic) -->
+	
+	<!-- FIND MUTANT MEAT FOR FREEDOM TASK -->
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_1_name">
+		<text>为自由军弄来野味</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_1_text">
+		<text>捕杀变异生物并弄来一些野味. 并送些%s给吝啬鬼以领取你的报酬</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_1_about">
+		<text>我有活给你干, 伙计, 前提是你不害怕变异生物. 你有兴趣吗?</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_1_fetch_about">
+		<text>好, 有些伙伴们正在筹办一个鲍勃马利(雷鬼音乐大师)的生日晚宴. 迟做总比不做好, 对不对? 无论如何, 我们需要弄来一些肉, 越快越好 - 所以如果你出去转转的话, 帮我弄来足够的%s, 我不会让你后悔. 主也不会忘记你!</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_1_fetch_finish">
+		<text>啊, 只要厨子再动动手就是一次不错的晚宴了. 这是你的报酬. 为啥不用来买些伏特加和烟呢?</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Skinflint (Freedom Mechanic) Deliver Equipment Dynamic Task -->
+
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_2_name">
+		<text>把锁着的箱子带给吝啬鬼</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_2_text">
+		<text>吝啬鬼有一个箱子需要带来</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_2_about">
+		<text>我的一个跑腿员本应该帮我去取一个箱子. 但是他们在路上被纪律团的巡逻队给发现了, 所幸的是. 他们把它藏在了安全的地方并把坐标发给了我, 如果你能去取来, 我会把他们一部分报酬给你</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_2_finish">
+		<text>让我打开看看 - 瞧瞧... 啊不错. 正是我需要的. 谢谢你潜行者, 这是你应得的报酬</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Skinflint (Freedom Trader) Night Terror Task -->
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_3_name">
+		<text>黑暗中的幽灵</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_3_text">
+		<text>吝啬鬼付钱让你去清除潜伏在吸血怪村庄的一个变异生物. 不要打瞌睡</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_3_about">
+		<text>最近在露营时有些难以入睡. 每当夜晚降临时就有奇怪的叫声, 但在我们还没来得及采取行动之前, 我们的一个人就被黑暗给吞没了. 第二天我们才在吸血怪村庄找到了他的遗骸.\n 卢卡什觉得这里可能出现了一种罕见的吸血怪. 更黑暗, 强壮, 更邪恶的还只在夜间行动的混蛋. 一些人认为我们应该停止夜间的行动, 直到它迁徙为止, 然后就开始相互推卸, 毕竟直接去找它太危险了.\n好吧, 我的意思你就找一块石头然后在吸血怪村庄等到晚上, 如果你宰了那个混蛋, 我就为你降下卢布雨, 以庆祝我们又能睡上安稳觉了. 至少比"焦脑器"要强</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_3_finish">
+		<text>哦, 你居然做到了! 你这个疯子. 我会让营地知道这个好消息的. 很高兴我们身边有你这样的猎人</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Skinflint (Freedom Trader) Scarce Supplies Task -->
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_4_name">
+		<text>稀缺物资</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_4_text">
+		<text>吝啬鬼需要%s维持自由军的医疗储备</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_4_about">
+		<text>嘿伙计! 我们有大麻烦了! 医疗物资不够了!</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_4_fetch_about">
+		<text>是啊, 你知道自由军的日子一直不好过, 对吧? 一边是纪律团, 一边是黑石, 在枪林弹雨里跑来跑去都成了日常了! 虽然我们的战士们很勇猛, 但也意味着医疗物资消耗的很快; 以前这些物资是归索里德管的, 但他最近有点嗨过头了, 所以我就接手了, 如果你能帮我弄到%s, 你会得到自由军的谢意! 当然, 还有一些卢布</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_4_fetch_finish">
+		<text>啊, 太好了! 我会好好把他们放到索里德找不到的地方, 不然又会被他全都嗨掉了... 多谢了, 潜行者!</text>
+	</string>
+	
+	
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_5_name">
+		<text>弄些神器狩猎的设备</text>
+	</string>
+	<string id="mil_smart_terrain_7_10_freedom_trader_stalker_task_5_about">
+		<text>好吧, 这里有些很关键的事情需要过目. 是这样的: 我们需要冒着极大的风险从两个生态学家碉堡弄来异常点探索设备. 不多, 也不少. 一个却夹在纪律团的暴徒和军队的暴徒中间, 另一个的话我们都知道. 都快到皮城了. 然后两个... 都被我们反对的政府资助着. 我们需要储备一些神器狩猎设备以防我们的补给线被切断. 我需要你从熊式探测器和神器容器开始. 我知道这需要一些时间. 别担心, 你的报酬一分都不会少. 如果你还能额外的弄来电池, 那么报酬会更多. 所以, 有兴趣吗?</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== MECHANIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Screw (Freedom Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_1_text">
+		<text>"螺杆"舒鲁普需要一个%s来进行基础升级, 如果你找到了就带给他</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_1_about">
+		<text>哟, 伙计! 你有兴趣帮我干点活吗? 我需要一些特定的工具来鼓捣武器</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_1_fetch_about">
+		<text>好, 我需要的是%s, 交给我, 我付你钱</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_1_fetch_finish">
+		<text>谢谢, 伙计! 我一开始就觉得你这人靠谱, 多亏了你! 不然我可搞不定这种破事!</text>
+	</string>
+
+
+
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_2_text">
+		<text>"螺杆"舒鲁普需要一个%s来进行进阶升级, 如果你找到了就带给他</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_2_about">
+		<text>哈哈, 我不喜欢拜托别人, 但我确实是需要更多工具! 你上次给我带来的那套有点不够用了, 能再帮我一次吗?</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_2_fetch_about">
+		<text>有一种高级工具箱, 里面应该有我需要的玩意, 如果你带一个给我, 我会非常感激, 甚至以后会为你打点折扣</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_2_fetch_finish">
+		<text>谢谢, 伙计! 我一开始就觉得你这人靠谱, 多亏了你! 不然我可搞不定这种破事!</text>
+	</string>
+
+
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_3_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_3_text">
+		<text>"螺杆"舒鲁普需要一个%s来进行专业级升级, 如果你找到了就带给他</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_3_about">
+		<text>哈哈, 我不喜欢拜托别人, 但我确实是需要更多工具! 你上次给我带来的那套有点不够用了, 能再帮我一次吗?</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_3_fetch_about">
+		<text>有一种专家级工具箱, 里面应该有我需要的玩意, 如果你带一个给我, 我会非常感激, 甚至以后会为你打点折扣</text>
+	</string>
+	<string id="mil_smart_terrain_7_7_freedom_mechanic_stalker_task_3_fetch_finish">
+		<text>谢谢, 伙计! 我一开始就觉得你这人靠谱, 多亏了你! 不然我可搞不定这种破事!</text>
+	</string>
+	
+	
+	<!-- ========================================================================================= -->
+	<!-- Defend the barrier -->
+	<!-- ========================================================================================= -->
+	<string id="barrier_defense_monolith_announce">
+		<text>死亡屏障告急! ! 我是自由军的卢卡什, 我们的斥候侦查到大批敌对目标正在冲向这里! 虽然还未确认敌方身份, 但我们急需人手! 自由战士们, 特异区的好汉们, 我们的时刻到了! 来我这里报道, 如果能活下来, 我会亲自嘉奖!</text>
+	</string>
+	<string id="barrier_defense_monolith_title">
+		<text>守卫"死亡屏障"</text>
+	</string>
+	<string id="barrier_defense_monolith_descr">
+		<text>自由军正在寻求帮助以抵御未知敌人的进攻</text>
+	</string>
+	
+	<string id="barrier_defense_monolith_chatter_1">
+		<text>我去看看, 但如果是黑石的话, 我就撤了..</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_2">
+		<text>哇哦, 白来的钱! 我马上来!</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_3">
+		<text>我本来没打算去军事仓库的, 不过, 就当是为了特异区好了..</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_4">
+		<text>净说漂亮话, 报酬有多少钱? 有神器或武器吗? 我可不会为了几瓶伏特加把小命给丢了..</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_5">
+		<text>该死! 我刚从那里离开, 给我留几个! 我要试试我的新枪..</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_6">
+		<text>我来! 管它是黑石还是僵尸, 我要把它们杀光!</text>
+	</string>
+	<string id="barrier_defense_monolith_chatter_7">
+		<text>尸体是谁打的谁捡对吧? 我可不想被人抢战利品..</text>
+	</string>
+	
+	<string id="barrier_defense_monolith_intro_1">
+		<text>我刚刚收到了信息, 我来协助守卫死亡屏障!</text>
+	</string>
+	<string id="barrier_defense_monolith_intro_2">
+		<text>很好! 很好! 我们的斥候报告说有几只敌方小队正在接近, 能多一把枪我们的胜算就多一分! 现在去就位吧! 如果你能活下来, 就来我这里领赏!</text>
+	</string>
+	
+	<string id="barrier_defense_monolith_outro_1">
+		<text>呼, 死亡屏障安全了... 至少暂时如此</text>
+	</string>
+	<string id="barrier_defense_monolith_outro_2">
+		<text>干得好! 多亏了你们, 特异区的安全才能有所保障, 你是我们的骄傲!</text>
+	</string>
+	
+	<string id="barrier_defense_monolith_start_announce">
+		<text>他们就要来了, 各单位占据有利地形!</text>
+	</string>
+	<string id="barrier_defense_monolith_midchatter">
+		<text>小心! 他们有重火器!</text>
+	</string>
+	<string id="barrier_defense_monolith_run_announce">
+		<text>你以为自己来度假的? 你能活到现在, 至少得谢谢那些比你更勇敢的人挡在了你前面!</text>
+	</string>
+	<string id="barrier_defense_monolith_end_announce">
+		<text>干得漂亮兄弟们! 自由军嘉奖每一位战到最后的勇士, 来我这里领取你们的奖励吧!</text>
+	</string>
+	
+	<string id="barrier_defense_zombie_announce">
+		<text>死亡屏障告急! ! 我是自由军的卢卡什, 我们的斥候侦查到大批敌对目标正在冲向这里! 虽然还未确认敌方身份, 但我们急需人手! 自由战士们, 特异区的好汉们, 我们的时刻到了! 来我这里报道, 如果能活下来, 我会亲自嘉奖!</text>
+	</string>
+	<string id="barrier_defense_zombie_title">
+		<text>守卫"死亡屏障"</text>
+	</string>
+	<string id="barrier_defense_zombie_descr">
+		<text>自由军正在寻求帮助以抵御未知敌人的进攻</text>
+	</string>
+	
+	<string id="barrier_defense_zombie_chatter_1">
+		<text>肯定是那些没脑子的家伙们...</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_2">
+		<text>如果是僵尸的话我就不打了</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_3">
+		<text>好吧, 我来, 但最好别是黑石</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_4">
+		<text>奖金这次增加了吗? 上次给我的钱还不够补贴弹药费...</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_5">
+		<text>可惜! 我离得太远了, 等我跑过来也应该结束了吧? 真想试试新枪啊!</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_6">
+		<text>从雷达站来的? 天哪... 我的朋友几天前才去过那里</text>
+	</string>
+	<string id="barrier_defense_zombie_chatter_7">
+		<text>我先说好, 要我来的话谁也别抢我的东西!</text>
+	</string>
+	
+	
+	<string id="barrier_defense_zombie_intro_1">
+		<text>我刚刚收到了信息, 我来协助守卫死亡屏障!</text>
+	</string>
+	<string id="barrier_defense_zombie_intro_2">
+		<text>很好! 很好! 我们的斥候报告说有几只敌方小队正在接近, 能多一把枪我们的胜算就多一分! 现在去就位吧! 如果你能活下来, 就来我这里领赏!</text>
+	</string>
+	
+	<string id="barrier_defense_zombie_start_announce">
+		<text>那些家伙来了, 赶快就位!</text>
+	</string>
+	<string id="barrier_defense_zombie_midchatter">
+		<text>怎么越打越多了啊?</text>
+	</string>
+	<string id="barrier_defense_zombie_run_announce">
+		<text>怎么, 你怕了吗?</text>
+	</string>
+	<string id="barrier_defense_zombie_end_announce">
+		<text>干得漂亮兄弟们! 自由军嘉奖每一位战到最后的勇士, 来我这里领取你们的奖励吧!</text>
+	</string>
+	
+	<string id="barrier_defense_zombie_outro_1">
+		<text>别光顾着捡东西, 记得补枪, 让他们死透一点!</text>
+	</string>
+	<string id="barrier_defense_zombie_outro_2">
+		<text>不知道我的朋友是否还活着...</text>
+	</string>
+	
+	<string id="barrier_defense_reinforcements_1">
+		<text>兄弟们, 撑住! 增援马上就到!</text>
+	</string>
+	<string id="barrier_defense_reinforcements_2">
+		<text>我们刚刚收到信息, 已经从基地出发了, 坚持住!</text>
+	</string>
+	<string id="barrier_defense_reinforcements_3">
+		<text>那边那么糟糕吗? 我以为你一个人就够了!</text>
+	</string>
+	<string id="barrier_defense_reinforcements_4">
+		<text>开打了! 哈哈! 快给老子爬过来, 别错过这场好戏!</text>
+	</string>
+	
+	<!-- Solid (Freedom Medic) -->
+	<string id="mil_freedom_medic_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mil_freedom_medic_task_1_text">
+		<text>索里德的医疗物品需要补给, 如果你发现了一些%s, 就交给他</text>
+	</string>
+	<string id="mil_freedom_medic_task_1_about">
+		<text>我每天都得治疗大量伤员, 还得维持医疗品的库存, 这太难了, 绷带和医疗箱很快就要用完了, 如果你能弄来一个制药箱, 它们肯定会派上用场的</text>
+	</string>
+	<string id="mil_freedom_medic_task_1_fetch_about">
+		<text>我就知道你在这里! 我正在到处寻找%s, 里面的工具可用来做鸡尾酒, 但是更多的时作为药用, 我知道有些混蛋在打这东西的歪主意, 不要听他们的! 我需要的只是一个像样的制药箱, 不然这个小诊所真的开不下去了</text>
+	</string>
+	<string id="mil_freedom_medic_task_1_fetch_finish">
+		<text>太好了! 我欠你一个人情</text>
+	</string>
+
+</string_table>

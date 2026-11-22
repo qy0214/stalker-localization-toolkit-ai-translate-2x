@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Advanced Weapon Repair Mod 0.3 by Faustle (2017)
+-->
+<string_table>
+
+<!--
+ITEMS
+-->
+
+	<string id="st_prt_i_ammo">
+		<text>弹药零件</text>
+	</string>
+	<string id="st_prt_i_ammo_descr">
+		<text>
+		即使准备得多么周全,都难免会在整理弹药的时候不经意收集到一些'坏弹',给人们在交火的途中带来卡壳等蛋疼情况. 不过从另一方面说,它们又可以作为制造其他种类弹药的零件而被再利用,这就说明了为什么很多人仍愿意保存它们的原因.\n \n	
+		</text>
+	</string>
+	
+	<string id="st_prt_i_paper">
+		<text>纸张</text>
+	</string>
+	<string id="st_prt_i_paper_descr">
+		<text>
+		一张被撕开的丝质涂层纸. 即便在特异区中,它的应用仍然是十分广泛的,例如它是最经济的食品和净土的包装用品.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_textolite">
+		<text>层压胶布板</text>
+	</string>
+	<string id="st_prt_i_textolite_descr">
+		<text>
+		这是一块基于纤维结构和高分子黏着剂 (人造树胶,聚酯树脂,环氧树脂)合成的分层塑板,在合适的人手中会对修理工作大有裨益.\n \n
+		</text>
+	</string>
+	
+	<string id="st_textile_patch_b">
+		<text>布条</text>
+	</string>
+	<string id="st_textile_patch_b_descr">
+		<text>
+		简单的布条,通常被用作衣物修补、涂油或用来清理枪支内部的溶剂,可以利用针管或胶水将其固定住.\n \n
+		</text>
+	</string>
+	
+	<string id="st_textile_patch_m">
+		<text>织物布料</text>
+	</string>
+	<string id="st_textile_patch_m_descr">
+		<text>
+		这种军工品质的织物布料可用于衣物和轻型护甲的现场修补. 由于其低廉的价格和广泛的用途,在特异区可谓遍地都是. 但要想使用这种材料,得需要中级的缝纫设备和先进的胶水. 在武器维护方面,能够有助于液体的均匀扩散. 
+		</text>
+	</string>
+	
+	<string id="st_textile_patch_e">
+		<text>加强型织物布料</text>
+	</string>
+	<string id="st_textile_patch_e_descr">
+		<text>
+		内衬凯夫拉纤维的厚织物布料,可以用作中型或重型护甲的修补. 尺寸可覆盖大面积损伤部位. 但要想使用这种材料,得需要高级的缝纫设备和粘着剂,它的另一个作用是用于武器的清洁和润滑工作,其坚硬的质地甚至可以到达一些软布触及不到的角落. 
+		</text>
+	</string>
+	
+	<string id="st_prt_i_capacitors">
+		<text>一组电容器</text>
+	</string>
+	<string id="st_prt_i_capacitors_descr">
+		<text>这种结构最为简单的电容器是由两个金属片和一个绝缘体构成,对于调整交流电方面起着至关重要的作用,并存储着电能并隔离干扰. 在特异区中很少见,但却非常实用.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_transistors">
+		<text>一盒晶体管</text>
+	</string>
+	<string id="st_prt_i_transistors_descr">
+		<text>
+		一盒高质量的双载子晶体管,每个晶体管是由三个半导体零件(支架、放射器和收集器)组成以进行激活、转换和扩大电震荡的作用. 能够使这种奇迹能够在特异区中得以实现,一直是电子工程师们的终极梦想.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_resistors">
+		<text>一盒电阻器</text>
+	</string>
+	<string id="st_prt_i_resistors_descr">
+		<text>
+		电阻器应该是最常见的电子组件了,它们用来限制和引导电路支路的通行,以确保其他电子组件能够得到获得相匹配的电能. 这一箱电容器被按照从12UP到82M欧姆的电阻值顺序排列.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_copper">
+		<text>铜线</text>
+	</string>
+	<string id="st_prt_i_copper_descr">
+		<text>电工用铜线实际上用于生产、传输或使用电能的所有装置、仪器、以及任何与电能有关的器械上. 全新的铜线很少见,但从平时常用的旧收音机、对讲机和其他电子设备里能够轻易拆一些出来\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_wood">
+		<text>木制零件</text>
+	</string>
+	<string id="st_prt_i_wood_descr">
+		<text>
+		一片横纹轻雪松木零件,经常被使用在像家具、木质平台或工具等户外项目中. 但在特异区中,还是进行手工制作的用途更为合适.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_scrap">
+		<text>金属废料</text>
+	</string>
+	<string id="st_prt_i_scrap_descr">
+		<text>
+		一些金属零件和设备. 各种许多不同类型和牌号的钢和铝合金. 可以在战场上帮助修理装备,或者甚至是在制造中.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_fasteners">
+		<text>紧固件</text>
+	</string>
+	<string id="st_prt_i_fasteners_descr">
+		<text>一把尺寸各异的螺丝、垫片、螺母、钉子和小金属片,可用在户外装备修理上面,或许在手工制作方面也能用得上.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_plastic">
+		<text>塑料膜</text>
+	</string>
+	<string id="st_prt_i_plastic_descr">
+		<text>一小包由低密度聚乙烯海胆石制作而成的塑料膜. 一般都被用来保存物品,或者作为隔膜置于各种物品之间. 在特异区也是被广泛使用. 即便有一些已经不是这么完整,但其聚乙烯的质地仍是作为打包和隔物的绝佳道具,特别是用于食品和药品的封存方面.\n \n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_glass">
+		<text>玻璃片</text>
+	</string>
+	<string id="st_prt_i_glass_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_i_ceramic">
+		<text>陶瓷基料</text>
+	</string>
+	<string id="st_prt_i_ceramic_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_i_leather">
+		<text>皮辊</text>
+	</string>
+	<string id="st_prt_i_leather_descr">
+		<text>.</text>
+	</string>
+	
+	
+	
+	<string id="st_prt_i_rubber">
+		<text>橡胶</text>
+	</string>
+	<string id="st_prt_i_rubber_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_i_triggermechanism">
+		<text>扳机机构</text>
+	</string>
+	<string id="st_prt_i_triggermechanism_descr">
+		<text>这些扳机机构是由未知武器上拆解下来的,大部分的扳机都很相像,所以这一个也不例外地可以装配在几乎任何枪支上.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 基础材料\n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_spring">
+		<text>弹簧</text>
+	</string>
+	<string id="st_prt_i_spring_descr">
+		<text>一个从旧枪械上拆解下来的小弹簧,应该也可以用在其他合适的地方.\n \n%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 基础材料\n
+		</text>
+	</string>
+	
+	<string id="st_prt_i_pistolgrip">
+		<text>手枪握把</text>
+	</string>
+	<string id="st_prt_i_pistolgrip_descr">
+		<text>从未知枪械上拆下的握把,其橡胶握把经过修型或造模应该可以搭载到相对应的枪支上.\n \n%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 基础材料\n
+		</text>
+	</string>
+	
+
+
+<!--
+WEAPONS (rifles)
+-->
+
+<!-- Barrels-->
+	<string id="st_barrel_1">
+		<text>18. 5毫米口径枪管[R]</text>
+	</string>
+	<string id="st_barrel_1_descr">
+		<text>一支18. 5毫米口径霰弹枪的适用枪管.\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_2">
+		<text>18. 5毫米口径双管枪管[R]</text>
+	</string>
+	<string id="st_barrel_2_descr">
+		<text>一支适用于18. 5毫米口径扳机式双管猎枪的双管.\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_3">
+		<text>18. 5毫米口径滑膛步枪枪管[K]</text>
+	</string>
+	<string id="st_barrel_3_descr">
+		<text>一支适用于18. 5毫米口径滑膛枪的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_4">
+		<text>7.62毫米口径枪管[V]</text>
+	</string>
+	<string id="st_barrel_4_descr">
+		<text>一支适用于7.62毫米口径步枪的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_5">
+		<text>7.92毫米口径枪管[V]</text>
+	</string>
+	<string id="st_barrel_5_descr">
+		<text>一支适用于德国7.92毫米口径步枪的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_6">
+		<text>9毫米口径消音器一体化枪管[AS/PP]</text>
+	</string>
+	<string id="st_barrel_6_descr">
+		<text>一支集成一体化消音器的9mm特制枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_7">
+		<text>7.62毫米口径枪管[A|V]</text>
+	</string>
+	<string id="st_barrel_7_descr">
+		<text>一支7.62毫米口径半自动或全自动步枪适用的枪管.\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_8">
+		<text>5.45毫米口径枪管[А]</text>
+	</string>
+	<string id="st_barrel_8_descr">
+		<text>一支5.45毫米口径自动步枪适用的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_9">
+		<text>5.56毫米口径枪管[А]</text>
+	</string>
+	<string id="st_barrel_9_descr">
+		<text>一支5.56毫米口径自动步枪适用的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_10">
+		<text>7.62毫米口径枪管[P]</text>
+	</string>
+	<string id="st_barrel_10_descr">
+		<text>一支集成了气体调节器的7.62毫米口径枪管.\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_11">
+		<text>9毫米口径枪管[AS/PP]</text>
+	</string>
+	<string id="st_barrel_11_descr">
+		<text>一支适用于9毫米口径的枪管.\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_12">
+		<text>7.62毫米口径枪管[PP]</text>
+	</string>
+	<string id="st_barrel_12_descr">
+		<text>大名鼎鼎的传奇之枪 - 波波沙冲锋枪专用的枪管\n \n
+		</text>
+	</string>
+
+	<string id="st_barrel_13">
+		<text>12.7x55毫米口径枪管</text>
+	</string>
+	<string id="st_barrel_13_descr">
+		<text>一支适用于12.7x55毫米口径自动步枪的枪管\n \n
+		</text>
+	</string>
+
+
+<!-- Trigger mechanisms -->
+	<string id="st_trigger_components_1">
+		<text>单发击锤式扳机</text>
+	</string>
+	<string id="st_trigger_components_1_descr">
+		<text>单发击锤式扳机结构\n \n
+		</text>
+	</string>
+
+	<string id="st_trigger_components_2">
+		<text>击锤式双重模式扳机结构</text>
+	</string>
+	<string id="st_trigger_components_2_descr">
+		<text>搭载双重射击模式的扳机,为用户可以进行自动和单发两种射击模式而生.\n \n
+		</text>
+	</string>
+
+	<string id="st_trigger_components_3">
+		<text>三重开火模式扳机结构与击锤</text>
+	</string>
+	<string id="st_trigger_components_3_descr">
+		<text>三重击锤式扳机结构,可进行自动、单发和两点式射击,需要匹配相适应的武器设计.\n \n
+		</text>
+	</string>
+
+	<string id="st_trigger_components_4">
+		<text>单发式扳机机构与撞针
+		</text>
+	</string>
+	<string id="st_trigger_components_4_descr">
+		<text>单发式扳机机构与撞针\n \n
+		</text>
+	</string>
+
+	<string id="st_trigger_components_5">
+		<text>双开火模式扳机机构与撞针
+		</text>
+	</string>
+	<string id="st_trigger_components_5_descr">
+		<text>双开火模式扳机机构与撞针,可调成单发点射和连发模式\n \n
+		</text>
+	</string>
+
+	<string id="st_trigger_components_6">
+		<text>双管霰弹枪用扳机机构与击锤[R]</text>
+	</string>
+	<string id="st_trigger_components_6_descr">
+		<text>双管霰弹枪专用扳机机构与击锤\n \n
+		</text>
+	</string>
+
+
+<!-- Breech blocks -->
+	<string id="st_bolt_carrier_1">
+		<text>滑动螺栓托架与动螺栓锁[俄制]</text>
+	</string>
+	<string id="st_bolt_carrier_1_descr">
+		<text>滑动螺栓托架与转动螺栓锁,由华约工厂制造.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_2">
+		<text>自动武器专用滑动螺栓托架与动螺栓锁[俄制]</text>
+	</string>
+	<string id="st_bolt_carrier_2_descr">
+		<text>动螺栓托架与转动螺栓锁,由华约工厂制造,自动武器专用.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_3">
+		<text>滑动螺栓托架与动螺栓锁[北约]</text>
+	</string>
+	<string id="st_bolt_carrier_3_descr">
+		<text>由北约工厂生产的纵向滑动式闭锁装置,拆自于一支标准口径的自动步枪.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_4">
+		<text>滑动螺栓托架与与偏向锁</text>
+	</string>
+	<string id="st_bolt_carrier_4_descr">
+		<text>滑动螺栓托架与偏向锁.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_5">
+		<text>半自由滑动螺栓托架</text>
+	</string>
+	<string id="st_bolt_carrier_5_descr">
+		<text>半自由滑动螺栓托架与滚动闸\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_6">
+		<text>滑动螺栓托架与防松螺栓</text>
+	</string>
+	<string id="st_bolt_carrier_6_descr">
+		<text>滑动螺栓托架配上防松螺栓\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_7">
+		<text>杠杆式螺栓托架与锁紧楔</text>
+	</string>
+	<string id="st_bolt_carrier_7_descr">
+		<text>杠杆式螺栓托架与锁紧楔.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_8">
+		<text>双管猎枪楔木[R]</text>
+	</string>
+	<string id="st_bolt_carrier_8_descr">
+		<text>拆自于一杆双管猎枪的楔木.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_9">
+		<text>双管霰弹枪楔木[R]</text>
+	</string>
+	<string id="st_bolt_carrier_9_descr">
+		<text>拆自于一杆双管霰弹枪的楔木.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_10">
+		<text>大口径专用滑动螺栓托架与转动螺栓锁[北约]</text>
+	</string>
+	<string id="st_bolt_carrier_10_descr">
+		<text>滑动螺栓托架与转动螺栓锁,北约大口径自动步枪专用部件\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_carrier_11">
+		<text>纵向自由滑动螺栓托架[PP]</text>
+	</string>
+	<string id="st_bolt_carrier_11_descr">
+		<text>冲锋枪专用纵向自由滑动螺栓托架\n \n
+		</text>
+	</string>
+
+
+<!-- Breech heads -->
+	<string id="st_bolt_1">
+		<text>下降式后膛[R]</text>
+	</string>
+	<string id="st_bolt_1_descr">
+		<text>从滑膛式猎枪或步枪中拆下的杠杆锁紧机构下降式后膛,从外观上说,楔子的突出部分情况尚好,没有经历过强加工.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_2">
+		<text>旋转锁定头[双锁式][P]</text>
+	</string>
+	<string id="st_bolt_2_descr">
+		<text>从冲锋枪上拆卸的双停止器旋转式锁头,带旋转锁的纵向滑动闭锁装置. 从外观上看,锁头的情况尚好,没有过度使用过的痕迹.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_3">
+		<text>旋转锁定头[双锁式][K]</text>
+	</string>
+	<string id="st_bolt_3_descr">
+		<text>从滑膛式步枪上拆卸的双停止器旋转式锁头,带闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_4">
+		<text>旋转锁定头[双锁式][V]</text>
+	</string>
+	<string id="st_bolt_4_descr">
+		<text>从来复枪上拆卸的双停止器旋转式锁头,带旋转锁的纵向滑动闭锁装置和锁定斜载,纵向滑动式护窗以及栓锁.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_5">
+		<text>旋转锁定头[三锁式][V]</text>
+	</string>
+	<string id="st_bolt_5_descr">
+		<text>从来复枪上拆卸的双停止器旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_6">
+		<text>旋转锁定头[双锁式][А]</text>
+	</string>
+	<string id="st_bolt_6_descr">
+		<text>从冲锋枪上拆卸的双停止器旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_7">
+		<text>旋转锁定头[四锁式][AS]</text>
+	</string>
+	<string id="st_bolt_7_descr">
+		<text>从特殊自动来复枪上拆卸的四锁式旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_8">
+		<text>旋转锁定头[六锁式][А]</text>
+	</string>
+	<string id="st_bolt_8_descr">
+		<text>从冲锋枪上拆卸的六锁式旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_9">
+		<text>旋转锁定头[七锁式][А]</text>
+	</string>
+	<string id="st_bolt_9_descr">
+		<text>从冲锋枪上拆卸的七锁式旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_10">
+		<text>旋转锁定头[八锁式][А]</text>
+	</string>
+	<string id="st_bolt_10_descr">
+		<text>从冲锋枪上拆卸的八锁式旋转式锁头,带旋转锁的纵向滑动闭锁装置.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_11">
+		<text>双管霰弹枪专用锤式机械增压器[R]</text>
+	</string>
+	<string id="st_bolt_11_descr">
+		<text>双管霰弹枪专用左右锤式机械增压器\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_12">
+		<text>锤式双管霰弹枪专用击锤[R]</text>
+	</string>
+	<string id="st_bolt_12_descr">
+		<text>水平式双管霰弹枪专用左右锤式机械增压器.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_13">
+		<text>旋转锁定头[双锁式][А][北约]</text>
+	</string>
+	<string id="st_bolt_13_descr">
+		<text>拆自一支包含滑动螺栓托架和转动螺栓锁的大口径北约自动步枪的双锁式旋转锁定头\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_14">
+		<text>旋转锁定头[А/PP]</text>
+	</string>
+	<string id="st_bolt_14_descr">
+		<text>一套拆卸于带纵向半自由滑动式枪栓连动座的自动步枪或者PP步枪的旋转锁定头.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_15">
+		<text>弹鼓与主体[PP]</text>
+	</string>
+	<string id="st_bolt_15_descr">
+		<text>包含纵向自由滑动螺栓托架的PP弹鼓和枪身,适用于PP步枪.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_16">
+		<text>弹鼓与主体[PP][北约]</text>
+	</string>
+	<string id="st_bolt_16_descr">
+		<text>包含纵向自由滑动螺栓托架的PP弹鼓和枪身,适用于改进型PP步枪.\n \n
+		</text>
+	</string>
+
+	<string id="st_bolt_17">
+		<text>弹鼓与主体[PP][PPSh]</text>
+	</string>
+	<string id="st_bolt_17_descr">
+		<text>包含纵向自由滑动螺栓托架的PP弹鼓和枪身,适用于类似波波沙这种搭载石帕金系统的步枪弹鼓和枪体.\n \n
+		</text>
+	</string>
+
+
+<!-- Gas tubes, etc -->
+	<string id="st_gas_tube_1">
+		<text>充气管[K]</text>
+	</string>
+	<string id="st_gas_tube_1_descr">
+		<text>从卡宾枪的枪管中拆出的充气管\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_2">
+		<text>护木[R]</text>
+	</string>
+	<string id="st_gas_tube_2_descr">
+		<text>泵动式霰弹枪专用护木.\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_3">
+		<text>充气管[V]</text>
+	</string>
+	<string id="st_gas_tube_3_descr">
+		<text>栓动步枪用充气管\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_4">
+		<text>充气管[AS/PP]</text>
+	</string>
+	<string id="st_gas_tube_4_descr">
+		<text>9mm特殊自动步枪用充气管\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_5">
+		<text>充气管[A|V][俄制]</text>
+	</string>
+	<string id="st_gas_tube_5_descr">
+		<text>俄式全-半自动步枪专用充气管.\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_6">
+		<text>充气管[A|V][北约]</text>
+	</string>
+	<string id="st_gas_tube_6_descr">
+		<text>北约全-半自动步枪专用充气管.\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_7">
+		<text>充气管[P]</text>
+	</string>
+	<string id="st_gas_tube_7_descr">
+		<text>机枪专用充气管\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_8">
+		<text>抛壳顶杆[V]</text>
+	</string>
+	<string id="st_gas_tube_8_descr">
+		<text>含锁定枪栓与滑动枪栓联动座步枪的抛壳顶杆.\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_9">
+		<text>叠排和双管散弹枪专用抛壳顶杆[R]</text>
+	</string>
+	<string id="st_gas_tube_9_descr">
+		<text>叠排和双管散弹枪适用的抛壳顶杆\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_10">
+		<text>叠排和双管散弹枪专用抛壳顶杆[R]</text>
+	</string>
+	<string id="st_gas_tube_10_descr">
+		<text>叠排和双管散弹枪适用的抛壳顶杆\n \n
+		</text>
+	</string>
+
+	<string id="st_gas_tube_11">
+		<text>充气管[PP]</text>
+	</string>
+	<string id="st_gas_tube_11_descr">
+		<text>握把式MP5冲锋枪专用充气管.\n \n
+		</text>
+	</string>
+
+
+<!--
+WEAPONS (pistols)
+-->
+
+<!-- barrels -->
+	<string id="st_prt_w_p_barrel_1">
+		<text>9x18毫米口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_1_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_2">
+		<text>9x19毫米口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_2_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_3">
+		<text>.45口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_3_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_4">
+		<text>5.7毫米口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_4_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_5">
+		<text>7.62毫米口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_5_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_6">
+		<text>9x18毫米口径枪管(封闭式)</text>
+	</string>
+	<string id="st_prt_w_p_barrel_6_descr">
+		<text>.</text>
+	</string>
+
+	<string id="st_prt_w_p_barrel_7">
+		<text>.357口径枪管</text>
+	</string>
+	<string id="st_prt_w_p_barrel_7_descr">
+		<text>.</text>
+	</string>
+
+<!-- trigger mechanism -->
+	<string id="st_prt_w_p_trigger_1">
+		<text>单动式扳机机构</text>
+	</string>
+	<string id="st_prt_w_p_trigger_1_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_trigger_2">
+		<text>双动式扳机机构</text>
+	</string>
+	<string id="st_prt_w_p_trigger_2_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_trigger_3">
+		<text>双动式(DA/SA)扳机机构</text>
+	</string>
+	<string id="st_prt_w_p_trigger_3_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_trigger_4">
+		<text>MP412用双动式扳机机构</text>
+	</string>
+	<string id="st_prt_w_p_trigger_4_descr">
+		<text>.</text>
+	</string>
+	
+	
+<!-- recoil spring assembly -->
+	<string id="st_prt_w_p_spring_1">
+		<text>苏制9mm复进簧总成</text>
+	</string>
+	<string id="st_prt_w_p_spring_1_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_spring_2">
+		<text>俄制9mm复进簧总成</text>
+	</string>
+	<string id="st_prt_w_p_spring_2_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_spring_3">
+		<text>.45复进簧总成</text>
+	</string>
+	<string id="st_prt_w_p_spring_3_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_spring_4">
+		<text>北约9mm复进簧总成</text>
+	</string>
+	<string id="st_prt_w_p_spring_4_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_spring_5">
+		<text>7.62mm复进簧总成</text>
+	</string>
+	<string id="st_prt_w_p_spring_5_descr">
+		<text>.</text>
+	</string>
+	
+	<string id="st_prt_w_p_spring_6">
+		<text>复进簧总成(R1 DE 6")</text>
+	</string>
+	<string id="st_prt_w_p_spring_6_descr">
+		<text>.</text>
+	</string>
+	
+	
+<!--
+OUTFITS
+-->
+
+<!-- Fabrics and hardware -->
+	<string id="st_prt_o_fabrics_1">
+		<text>布片</text>
+	</string>
+	<string id="st_prt_o_fabrics_1_descr">
+		<text>制衣的基底,这些布片的质地各不相同,棉、涤棉、羊毛和皮革布片混在一起,用来给衣服加强舒适度和耐久度. 还有一些防护性织物,例如橡胶和防弹尼龙,以及关节保护装置和一组五金件和拉链. 
+</text>
+	</string>
+	
+	<string id="st_prt_o_fabrics_2">
+		<text>合成布片</text>
+	</string>
+	<string id="st_prt_o_fabrics_2_descr">
+		<text>制衣的基底,这些纺织品混合了像聚酯和莱卡这样的合成材料,以达到提高多功能性和耐久度的作用. 尺寸之外,还使用了其他防护性纺织品,例如橡胶和防弹尼龙,以及关节保护装置和一组五金件和拉链.</text>
+	</string>
+	
+	<string id="st_prt_o_fabrics_3">
+		<text>高耐久纺织品</text>
+	</string>
+	<string id="st_prt_o_fabrics_3_descr">
+		<text>这些织品由不同的材料制成: 例如聚酯、皮革和帆布,还包含一组五金件和拉链. 其良好的耐久度对恶劣环境具有良好的适应性,所以这就是即便在特异区内,旅行装备依然首选用这种材料制作的原因.</text>
+	</string>
+	
+	<string id="st_prt_o_fabrics_4">
+		<text>军用纺织品</text>
+	</string>
+	<string id="st_prt_o_fabrics_4_descr">
+		<text>军用级纺织品通常用于野外服装和轻型护甲,这种材料以其相对较低的价格和多功能性而受到重视. 在特异区中被人们广泛使用,此外还使用了其他防护性纺织品,例如橡胶和防弹尼龙,关节保护装置以及一组五金件和拉链.</text>
+	</string>
+	
+<!-- Retardants / Protective textiles -->
+	<string id="st_prt_o_retardant_1">
+		<text>多层阻燃面料</text>
+	</string>
+	<string id="st_prt_o_retardant_1_descr">
+		<text>经过化学处理和人造防火纤维的封装,这些纺织品的阻燃效果自然比其他的纺织品来得更强,在特异区中,此类面料通常用于服装制作,以使其提供针对危险环境和火焰类型异常点(如炉灶和彗星)的防护.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_2">
+		<text>分层化学/抗震织物</text>
+	</string>
+	<string id="st_prt_o_retardant_2_descr">
+		<text>此类纺织品经过化学处理和防火纤维的封装,使其比其他纺织品具有更强的电击保护和化学微粒性. 在特异区中,此类面料通常用于服装制作,以提供针对危险环境和化学/脉冲型异常点(例如电击和水果酒)的防护</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_3">
+		<text>B级硬质聚氯乙烯质织物</text>
+	</string>
+	<string id="st_prt_o_retardant_3_descr">
+		<text>硬质聚氯乙烯是一种耐候的不易燃材料,它可以进行紫外线稳定处理,以提供更高的防护,以防异常点危害.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_4">
+		<text>A级硬质聚氯乙烯基织物</text>
+	</string>
+	<string id="st_prt_o_retardant_4_descr">
+		<text>硬质聚氯乙烯是一种耐候的不易燃材料,它可以进行紫外线稳定处理,以提供更高的防护,以防异常点危害.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_5">
+		<text>PVC/橡胶涂层织物</text>
+	</string>
+	<string id="st_prt_o_retardant_5_descr">
+		<text>一种坚固耐用的PVC涂层聚酯和橡胶纤维织物,旨在提供危险保护. 可以对其进行缝制、胶合或焊接加工. \n双重涂层材料,具有极其坚韧的聚酯纤维内芯,并在两面都涂有聚氯乙烯.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_6">
+		<text>PVC/碳纤维织物</text>
+	</string>
+	<string id="st_prt_o_retardant_6_descr">
+		<text>一种坚固耐用的PVC涂层聚酯和碳纤维织物,旨在提供危险保护. 可以对其进行缝制、胶合或焊接加工. \n双重涂层材料,具有极其坚韧的聚酯纤维内芯,并在两面都涂有聚氯乙烯.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_7">
+		<text>绝缘镁合金格栅和插件</text>
+	</string>
+	<string id="st_prt_o_retardant_7_descr">
+		<text>镁合金网用作介电层,可在一定程度上保护服装及其穿戴者免受强力电击和灵能场的伤害. 它还可以提供针对其他伤害的保护.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_8">
+		<text>绝缘增强氧化镁格栅</text>
+	</string>
+	<string id="st_prt_o_retardant_8_descr">
+		<text>镁合金网用作介电层,可在一定程度上保护服装及其穿戴者免受强力电击和灵能场的伤害. 它还可以提供针对其他伤害的保护.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_9">
+		<text>聚合物片材(硫酸铋涂层)</text>
+	</string>
+	<string id="st_prt_o_retardant_9_descr">
+		<text>硫酸铋的热降解机制,使其成为特异区中的理想材料. 通常涂在聚合物片材上以确保对装备穿戴者的身体提供足够大的防护面. 除了能够防护常见的几种异常点伤害外,其它的伤害也能够从一定程度上进行化解.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_10">
+		<text>聚合物片材(硫酸钡涂层)</text>
+	</string>
+	<string id="st_prt_o_retardant_10_descr">
+		<text>硫酸钡的热降解机制,使其成为特异区中的理想材料. 通常涂在聚合物片材上以确保对装备穿戴者的身体提供足够大的防护面. 除了能够防护常见的几种异常点伤害外,其它的伤害也能够从一定程度上进行化解.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_11">
+		<text>阻燃织物镀铝层</text>
+	</string>
+	<string id="st_prt_o_retardant_11_descr">
+		<text>多层镀铝织物是专门设计用于在与火型与酸型相关的异常点环境使用的防护服和防护罩. 此外,这些面料对灵能场的抗性也是十分出色.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_12">
+		<text>镀铝玻璃纤维织物</text>
+	</string>
+	<string id="st_prt_o_retardant_12_descr">
+		<text>多层镀铝织物是专门设计用于在与火型与酸型相关的异常点环境使用的防护服和防护罩. 此外,这些面料对灵能场的抗性也是十分出色.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_13">
+		<text>PBI混纺面料</text>
+	</string>
+	<string id="st_prt_o_retardant_13_descr">
+		<text>多年来,PBI混纺面料在消防服务中受到广泛信赖,是公认的领先型高性能防护防火面料. 因此,特异区的人们也常常为自己的服装添加这种材质.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_14">
+		<text>聚酯型PBI混纺面料</text>
+	</string>
+	<string id="st_prt_o_retardant_14_descr">
+		<text>多年来,PBI混纺面料在消防服务中受到广泛信赖,是公认的领先型高性能防护防火面料. 因此,特异区的人们也常常为自己的服装添加这种材质.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_15">
+		<text>活性炭布(ACC)面料</text>
+	</string>
+	<string id="st_prt_o_retardant_15_descr">
+		<text>最初是作为化工战斗服的材料而设计的. 活性炭布现在在国防,工业和医疗应用中都具有广泛用途,增强了各种创伤敷料的功效,也同时为辐射颗粒提供了很好的保护.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_16">
+		<text>活性炭处理无纺布</text>
+	</string>
+	<string id="st_prt_o_retardant_16_descr">
+		<text>最初是作为化工战斗服的材料而设计的; 活性炭布现在在国防,工业和医疗应用中都具有广泛用途,增强了各种创伤敷料的功效,也同时为辐射颗粒提供了很好的保护.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_17">
+		<text>绝缘镍合金嵌件</text>
+	</string>
+	<string id="st_prt_o_retardant_17_descr">
+		<text>这些嵌件由镍合金薄板制成. 它们充当介电层以保护服装及其穿戴者在一定程度上免受电击,灵能场和其他放射性物质的侵害. 它还可以提供针对其他危害的防护,这就是它们能在特异区广受欢迎的原因.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_18">
+		<text>玻璃纤维绝缘镍合金插件涂层</text>
+	</string>
+	<string id="st_prt_o_retardant_18_descr">
+		<text>这些嵌件由镍合金薄板制成. 它们充当介电层以保护服装及其穿戴者在一定程度上免受电击,灵能场和其他放射性物质的侵害. 它还可以提供针对其他危害的防护,这就是它们能在特异区广受欢迎的原因.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_19">
+		<text>绝缘玻璃纤维"聚酯"面料</text>
+	</string>
+	<string id="st_prt_o_retardant_19_descr">
+		<text>耐高温机织面料由"E"玻璃纤维制成,并涂有石基海胆石提供更高的服务温度,最高可达1500°F,耐冲击性高达20Kv. 特异区,这些织物可以轻松应对臭气危害.</text>
+	</string>
+	
+	<string id="st_prt_o_retardant_20">
+		<text>绝缘玻璃纤维"缎纹编织"面料</text>
+	</string>
+	<string id="st_prt_o_retardant_20_descr">
+		<text>耐高温机织面料由"E"玻璃纤维制成,并涂有石基海胆石提供更强劲的高温防护,防护范围最高可达1700°F,耐冲击性高达25Kv. 在特异区,这些织物还可以轻松隔离辐射危害.</text>
+	</string>
+	
+<!-- Ballistic inserts -->
+	<string id="st_prt_o_ballistic_1">
+		<text>凯夫拉K129板配增强陶瓷插件</text>
+	</string>
+	<string id="st_prt_o_ballistic_1_descr">
+		<text>凯夫拉板因其保护功能而广为人知,并且由于此功能而受到高度重视. 它们执行多种功能,其中最重要的是吸收枪支弹丸对躯干正面和背面的影响. 它们构成了重型钢板的轻质替代品. 此外,任何类型的铠装板也有助于使西装保持良好状态,防止磨损造成的磨损. 被全世界的军事单位使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_2">
+		<text>凯夫拉'Protera'纤维板配强化陶瓷嵌件</text>
+	</string>
+	<string id="st_prt_o_ballistic_2_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_3">
+		<text>凯夫拉K129垫片/聚碳酸酯复合材料
+</text>
+	</string>
+	<string id="st_prt_o_ballistic_3_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_4">
+		<text>Kevlar K129垫片/碳纤维复合材料</text>
+	</string>
+	<string id="st_prt_o_ballistic_4_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_5">
+		<text>进阶版凯夫拉垫片和钢板</text>
+	</string>
+	<string id="st_prt_o_ballistic_5_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_6">
+		<text>进阶版凯夫拉垫片与增强钛复合材料</text>
+	</string>
+	<string id="st_prt_o_ballistic_6_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_7">
+		<text>凯夫拉K119垫片与聚碳酸酯插件</text>
+	</string>
+	<string id="st_prt_o_ballistic_7_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_8">
+		<text>凯夫拉K119垫片与碳纤维插件</text>
+	</string>
+	<string id="st_prt_o_ballistic_8_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_9">
+		<text>带有扩展载体的B级聚乙烯板</text>
+	</string>
+	<string id="st_prt_o_ballistic_9_descr">
+		<text>聚乙烯板在护甲是为人体致命部位提供特殊防护的配件,这些坚硬的护甲板,经证实可有效抵抗所有手枪子弹,甚至能够抵御一些步枪弹. 由于旧式的防弹衣已经抵御不了现代新型步枪的子弹冲击,这类经过聚乙烯板加工升级过的军用防弹背心已成为军事用途的标准.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_10">
+		<text>带有扩展载体的A级聚乙烯板</text>
+	</string>
+	<string id="st_prt_o_ballistic_10_descr">
+		<text>聚乙烯板在护甲是为人体致命部位提供特殊防护的配件,这些坚硬的护甲板,经证实可有效抵抗所有手枪子弹,甚至能够抵御一些步枪弹. 由于旧式的防弹衣已经抵御不了现代新型步枪的子弹冲击,这类经过聚乙烯板加工升级过的军用防弹背心已成为军事用途的标准.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_11">
+		<text>凯夫拉K119垫片</text>
+	</string>
+	<string id="st_prt_o_ballistic_11_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_12">
+		<text>增强型凯夫拉K119垫片</text>
+	</string>
+	<string id="st_prt_o_ballistic_12_descr">
+		<text>凯夫拉板因其具备优秀的抗击功能而广为人知并而受到高度重视. 它们可以提供多种防护,其中最重要的是吸收枪支弹丸对躯干正面和背部的影响. 是重型钢板的轻质替代品. 此外,这种纤维板也有助于对应套装本身的防护,防止因穿戴和撕裂对衣物造成的磨损,被全世界的军事单位广为使用.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_13">
+		<text>聚乙烯轻质护甲板</text>
+	</string>
+	<string id="st_prt_o_ballistic_13_descr">
+		<text>聚乙烯板在护甲是为人体致命部位提供特殊防护的配件,这些坚硬的护甲板,经证实可有效抵抗所有手枪子弹,甚至能够抵御一些步枪弹. 由于旧式的防弹衣已经抵御不了现代新型步枪的子弹冲击,这类经过聚乙烯板加工升级过的军用防弹背心已成为军事用途的标准.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_14">
+		<text>聚乙烯护甲板</text>
+	</string>
+	<string id="st_prt_o_ballistic_14_descr">
+		<text>聚乙烯板在护甲是为人体致命部位提供特殊防护的配件,这些坚硬的护甲板,经证实可有效抵抗所有手枪子弹,甚至能够抵御一些步枪弹. 由于旧式的防弹衣已经抵御不了现代新型步枪的子弹冲击,这类经过聚乙烯板加工升级过的军用防弹背心已成为军事用途的标准.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_15">
+		<text>含49号凯夫拉织物的碳纳米管层</text>
+	</string>
+	<string id="st_prt_o_ballistic_15_descr">
+		<text>碳纳米管(CNTs)在制造防弹材料方面具有巨大的潜力,其卓越性能使其成为增强聚合物和其他材料的理想选择,被应用于防弹背心的制作.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_16">
+		<text>含29号凯夫拉织物的碳纳米管层(增强型)</text>
+	</string>
+	<string id="st_prt_o_ballistic_16_descr">
+		<text>碳纳米管(CNTs)在制造防弹材料方面具有巨大的潜力,其卓越性能使其成为增强聚合物和其他材料的理想选择,被应用于防弹背心的制作.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_17">
+		<text>聚乙烯纤维层与聚碳酸酯纤维插件</text>
+	</string>
+	<string id="st_prt_o_ballistic_17_descr">
+		<text>碳纳米管(CNTs)在制造防弹材料方面具有巨大的潜力,其卓越性能使其成为增强聚合物和其他材料的理想选择,被应用于防弹背心的制作.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_18">
+		<text>增强聚乙烯纤维层</text>
+	</string>
+	<string id="st_prt_o_ballistic_18_descr">
+		<text>碳纳米管(CNTs)在制造防弹材料方面具有巨大的潜力,其卓越性能使其成为增强聚合物和其他材料的理想选择,被应用于防弹背心的制作.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_19">
+		<text>碳纤维层</text>
+	</string>
+	<string id="st_prt_o_ballistic_19_descr">
+		<text>与凯夫拉材料相比,除了碳纤维对锋利介质的防御不是很有效外,两者的差距并不大. 但碳纤维的优点是它可以承受高温,而凯夫拉在高温的情况下性能就会变弱. 碳纤维制成的材料往往较轻,因此也具有更大的柔韧性.</text>
+	</string>
+	
+	<string id="st_prt_o_ballistic_20">
+		<text>增强碳纤维层</text>
+	</string>
+	<string id="st_prt_o_ballistic_20_descr">
+		<text>与凯夫拉材料相比,除了碳纤维对锋利介质的防御不是很有效外,两者的差距并不大. 但碳纤维的优点是它可以承受高温,而凯夫拉在高温的情况下性能就会变弱. 碳纤维制成的材料往往较轻,因此也具有更大的柔韧性.</text>
+	</string>
+
+<!-- Supportive installations -->
+	<string id="st_prt_o_support_1">
+		<text>外骨骼框架</text>
+	</string>
+	<string id="st_prt_o_support_1_descr">
+		<text>这种机械框架由电动马达、气动装置、操纵杆和液压系统提供动力,不但为佩戴者提供了出色的保护,并且能极大程度的提高佩戴者的体能.</text>
+	</string>
+	
+
+</string_table>

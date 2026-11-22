@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_options">
+		<text>设置</text>
+	</string>
+	
+	<string id="encyclopedia_options_ai_die_to_anomalies">
+		<text>AI死于异常点</text>
+	</string>
+	<string id="encyclopedia_options_ai_die_to_anomalies_text">
+		<text>
+			%c[pda_white]AI死于异常点%c[ui_gray_1] 移除AI路径上异常点的影响.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n启用后, 变异生物和潜行者将失去预知能力, 从而无法准确判断异常点的位置.\n
+			\n因此, 他们也会被特异区玩弄于鼓掌之间, 就和你别无二致.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_aoe_pickup_mode">
+		<text>范围拾取模式</text>
+	</string>
+	<string id="encyclopedia_options_aoe_pickup_mode_text">
+		<text>
+			%c[pda_white]范围拾取模式%c[ui_gray_1] 一次可以拾取多个物品.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n启用后, 一次按键就可以将多个物品拾取入物品栏中, 就和潜行者: 普里皮亚奇的召唤中一样.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_artefact_degradation">
+		<text>神器降解</text>
+	</string>
+	<string id="encyclopedia_options_artefact_degradation_text">
+		<text>
+			%c[pda_white]神器降解%c[ui_gray_1] 会使神器的加成随着时间而降低.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n启用后顶级神器将不再是神器猎人们努力的终点.\n
+			\n神器将会随着使用而变得黯淡无效, 所以得经常去寻找它们, 而不是快速赚钱的一种方式.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_delayed_repairs">
+		<text>维修需要时间</text>
+	</string>
+	<string id="encyclopedia_options_delayed_repairs_text">
+		<text>
+			%c[pda_white]维修需要时间%c[ui_gray_1] 允许技师暂留你的物品.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n此项开启后, 损坏的武器, 护甲, 或是其他需要维修的物品都会由技师暂存, 直到完成维修时取回.\n
+			\n移交物品后你可以询问技师是否完成, 他们可以将物品退还或是告诉你剩余的工期.\n
+			\n此选项对传统的维修系统进行了拟真的改进, 适合寻求更高游戏难度的人. 因为维修不再是立即生效从而强调了自主维修的重要性.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_enhanced_recoil">
+		<text>后坐力增强</text>
+	</string>
+	<string id="encyclopedia_options_enhanced_recoil_text">
+		<text>
+			%c[pda_white]后坐力增强%c[ui_gray_1] 增加了更多样化和真实化的武器操控性.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n一般来说, 当武器射击时, 逐渐提高准星, 略微增加子弹扩散以及武器动画是原生后坐力系统的效果.\n
+			\n正因为如此, 一般的后坐力系统通过少量的压枪练习就可以几乎消除后坐力的影响.\n
+			\n此功能启用后, 在射击时武器将会出现更多无规律的, 多方向的后坐力, 从而使操控武器更有挑战性, 也使得在升级武器或是选择弹药时得思考片刻.\n
+			\n强烈建议在帧数稳定为30的情况下开启此功能, 50及更高的帧数更佳.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_hardcore_ai_aim">
+		<text>硬核AI瞄准</text>
+	</string>
+	<string id="encyclopedia_options_hardcore_ai_aim_text">
+		<text>
+			%c[pda_white]硬核AI瞄准%c[ui_gray_1] 提高AI对目标的预知能力并减少反应时间.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n启用后, 你即使在奔跑或是冲刺的情况下都很容易被击中, 所以寻找掩体对于生存来说变得尤为重要.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_helicopter_patrols">
+		<text>直升机巡逻</text>
+	</string>
+	<string id="encyclopedia_options_helicopter_patrols_text">
+		<text>
+			%c[pda_white]直升机巡逻%c[ui_gray_1] 启用后阵营可派遣直升机来支援某个地区\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在某个区域内拥有直升机的阵营可派遣直升机来消灭敌对潜行者(包括你)或是变异生物.\n
+			\n尽管看起来吓人, 但是当它们的尾桨损坏后便可以轻松拿下.\n
+			\n如果你觉得螺旋桨的声音很烦人, 但又不想关闭这个功能, 可以单独关闭螺旋桨的声音.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.\n
+			\n%c[pda_green]地点%c[ui_gray_1]
+			\n• 农业研究所\n• 封锁线\n• 黑谷\n• 沼泽\n• 利曼斯克
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_localisation">
+		<text>语言</text>
+	</string>
+	<string id="encyclopedia_options_localisation_text">
+		<text>
+			%c[pda_white]语言%c[ui_gray_1] 允许你选择游戏语言.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n语言更改后, 文本将会切换, 但是部分文本的切换还是需要重新启动游戏.\n
+			\n可从菜单中选用这项功能, 默认情况下是"eng".\n
+			\n%c[pda_green]支持的语言%c[ui_gray_1]
+			\n• English: eng\n• 俄语: rus
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_lootmoney">
+		<text>尸体上搜钱</text>
+	</string>
+	<string id="encyclopedia_options_lootmoney_text">
+		<text>
+			%c[d_cyan]抢钱%c[ui_gray_1] 允许你搜刮死者口袋里的钱.\n
+			\n%c[d_green]情报%c[ui_gray_1]\n
+			\n钱的数量取决于死者的等级. 等级越高, 你能找到的钱就越多.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_online_exclusion">
+		<text>限制刷新</text>
+	</string>
+	<string id="encyclopedia_options_online_exclusion_text">
+		<text>
+			%c[pda_white]限制刷新%c[ui_gray_1] 在你的角色周围创建一个非刷新区域.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n当你在地图的出入口附近探索时, 你可能遭到从其他地区到来的敌人的袭击, 启用此选项后, 这种刷新将会延迟, 直到你安全地离开.\n
+			\n需要注意的时虽然这个区域围绕着你; 但并不代表从其他地区赶来的敌人会被清除.\n
+			\n可从菜单中选用这项功能, 默认情况下设置为25.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_population_factors">
+		<text>人口因素</text>
+	</string>
+	<string id="encyclopedia_options_population_factors_text">
+		<text>
+			%c[pda_white]人口因素%c[ui_gray_1] 设置特异区内潜行者和变异生物的数量.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n潜行者和变异生物的数目都可以通过独立的选项来设置, 你可以在不修改任何参数的情况下来按照口味调整特异区.\n
+			\n开始新游戏时效果最大. 在游戏过程中中修改该因素可能需要花费很长时间才能产生影响, 因为在特异区中已经产生了小队.\n
+			\n可从菜单中选用这项功能, 默认情况下设置为 0.5.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_quicksave_count">
+		<text>快速存档数量</text>
+	</string>
+	<string id="encyclopedia_options_quicksave_count_text">
+		<text>
+			%c[pda_white]快速存档数量%c[ui_gray_1] 快速存档的循环数量\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n进行快速保存时, 文件名的末尾将附加一个数字 - 游戏使用这些数字来帮助跟踪多个不同的快速保存.\n
+			\n使得你在快速存档的循环中拥有更多存档次数, 从而避免读档杀的情况.\n
+			\n总而言之: 设置的越高, 产生存档覆盖前的存档次数越多.\n
+			\n可从菜单中选用这项功能, 默认情况下设置为 5.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_radio_music">
+		<text>广播音乐</text>
+	</string>
+	<string id="encyclopedia_options_radio_music_text">
+		<text>
+			%c[pda_white]广播音乐%c[ui_gray_1] 允许在指定的地方播放指定的音乐.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n特异区的某些娱乐性地点摆放了收音机放精选的音乐曲目, 以供潜行者娱乐.\n
+			\n可从菜单中选用这项功能, 默认情况下是启用的.\n
+			\n%c[pda_green]地点%c[ui_gray_1]
+			\n• 农业研究所: 军事基地\n• 封锁线: 西多洛维奇的地窖\n• 沼泽: 晴空基地\n• 黑谷: 土匪基地\n• 罗斯托克: 辐射100酒吧\n• 红森林: 守林人列斯尼克的塔
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_sleep_deprivation">
+		<text>睡眠剥夺</text>
+	</string>
+	<string id="encyclopedia_options_sleep_deprivation_text">
+		<text>
+			%c[pda_white]睡眠剥夺%c[ui_gray_1] 随着时间的推移或使用消耗品可能会使角色感到困倦.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在特异区中你会发现很多睡袋和床位, 但是一般它们只是为了跳过游戏的时间, 如果启用这个功能它们将会成为不可或缺的部分.\n
+			\n随着时间的推移, 角色渐渐地会变得疲倦, 屏幕会开始模糊和抖动, 在你找到睡觉的地方或是力尽之前, 情况会越来越糟.\n
+			\n医疗用品和酒会导致疲倦, 但诸如咖啡因能量饮料之类的东西与之相反, 会让你兴奋甚至无法入睡.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_thirst">
+		<text>口渴模拟</text>
+	</string>
+	<string id="encyclopedia_options_thirst_text">
+		<text>
+			\n%c[d_green]情报%c[ui_gray_1]\n
+			\n顾名思义: 模拟口渴的硬核选项. 致使角色得寻找饮用水, 提高了游戏难度.
+			\nHUD上会有口渴及口渴程度的标识, 你越口渴耐力和体力就会越差, 甚至死亡.\n	
+			\n可从菜单中选用这项功能,默认情况下是启用的.
+		</text>
+	</string>`
+	
+	<string id="encyclopedia_options_dynamic_news">
+		<text>动态新闻</text>
+	</string>
+	<string id="encyclopedia_options_dynamic_news_text">
+		<text>
+			%c[pda_white]动态新闻%c[ui_gray_1] 允许潜行者们交流特异区内的所见所闻.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n潜行者们将会在PDA网络上针对自己的所见所闻或是所为来扯谈.\n
+			\n涉及到的范围很广, 从抱怨物价到闲聊, 或是遭受攻击时请求援助.\n
+			\n该系统还有一些其他的功能; 潜行者会提示你可疑的目标, 亦或是谁在索要你的人头.\n
+			\n可从 UI/HUD 菜单中选用这项功能, 默认情况下是启用的.\n
+			
+			\n%c[pda_green]设置%c[ui_gray_1]
+			\n动态新闻有很多种选项来启用/禁用任意一种新闻, 或是控制新闻的时间间隔.
+			\n可通过附加选项菜单访问动态新闻选项, 可以通过在主菜单中按F1来访问.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_extended_hud">
+		<text>HUD扩展</text>
+	</string>
+	<string id="encyclopedia_options_extended_hud_text">
+		<text>
+			%c[pda_white]HUD扩展%c[ui_gray_1] 允许在屏幕上显示其他信息.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n这项功能会开启神器带以及简单的随行信息.\n
+			\n可从 UI/HUD 菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_portrait_by_outfit">
+		<text>穿着关联头像</text>
+	</string>
+	<string id="encyclopedia_options_portrait_by_outfit_text">
+		<text>
+			%c[pda_white]穿着关联头像%c[ui_gray_1] 你的头像会基于你的服装而改变.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n启用后, 每当你穿上或是卸下护甲时(不包括头部护具)都会更新和NPC类似的头像.\n
+			\n可从 UI/HUD 菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_options_use_battery">
+		<text>使用电池</text>
+	</string>
+	<string id="encyclopedia_options_use_battery_text">
+		<text>
+			%c[d_cyan]使用电池%c[ui_gray_1] 此选项要求你用电池来保证某些设备的运行.\n
+			\n%c[d_green]情报%c[ui_gray_1]\n
+			\n诸如探测器和手电筒之类的电子设备会从通用电源设备(UPD)中获得所需的电能, 以使其正常工作.
+			\n为了使UPD正常工作, 您应该在耗尽电量之前使用电池为它充电. 
+			\n在口袋里揣上一些电池相当重要, 你可以在特异区内购买或搜刮到电池.\n
+			\n可从菜单中选用这项功能, 默认情况下是启用的.
+		</text>
+	</string>
+</string_table>

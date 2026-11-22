@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_placeable_gas_lamp">
+		<text>煤油燈</text>
+	</string>
+	<string id="st_placeable_gas_lamp_descr">
+		<text>點燃澆有煤油的燈芯來發光, 煤油燈是一種不常見的光源,因為煤油這種燃料會在揹包中佔據重量和空間, 潛行者們更傾向於在揹包中裝一些昂貴的神器,  有經驗的潛行者經常沿著人跡罕至的路徑旅行, 並利用這些燈照亮他們的藏身處, 這個煤油燈經過多年使用已磨損嚴重, 玻璃燈罩也不見了\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 煤油\n</text>
+	</string>
+
+	<string id="st_placeable_metal_torch">
+		<text>老式金屬提燈</text>
+	</string>
+	<string id="st_placeable_metal_torch_descr">
+		<text>蘇聯時代的提燈, 這種擁有笨重金屬外殼的提燈提高了電池的使用效率, 用來照亮藏身處很好用,雖然只能發出錐型光來照亮一小片區域, 不過有經驗的潛行者卻能利用這個特點, 在索敵的同時隱藏自己\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 電池\n</text>
+	</string>
+
+	<string id="st_placeable_light_altar">
+		<text>緊湊型靈能燈</text>
+	</string>
+	<string id="st_placeable_light_altar_descr">
+		<text>不知何人由於何種目的發明的物品, 曾用來製造致命的靈能場, 許多去北部探險的潛行者就是被它的死亡之光奪去了生命, 後來薩哈洛夫教授使用神器"月光石"對它進行了改造, 使它成為一個能夠用持續光源來鼓舞人心的工具\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 內有月光石神器\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 高斯槍電池\n</text>
+	</string>
+</string_table>

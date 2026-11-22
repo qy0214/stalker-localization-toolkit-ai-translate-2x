@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_wpn_fort12">
+		<text>Fort-12手槍</text>
+	</string>
+	<string id="st_wpn_fort12_descr">
+		<text>Fort-12 是最近獨立的烏克蘭（從 1991 年 8 月起）嘗試製造自己的警用手槍以取代蘇聯時代的馬卡洛夫 PM，同時仍使用相同的 9x18 口徑彈藥的作品。 烏克蘭槍械設計師 RPC Fort 于 1995 年設計並於 1998 年開發，這是一把強大的手槍，通常被認為是 PM 的升級版。 儘管它可能存在可靠性問題，尤其是由於缺乏安全的退擊裝置，但它在準確性、彈匣和人體工程學方面進行了補償。 該型號配備螺紋槍管，可隨時安裝消音器。\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 相容消音器</text>
+	</string>
+	
+	<string id="st_wpn_fort17">
+		<text>Fort-17手槍</text>
+	</string>
+	<string id="st_wpn_fort17_descr">
+		<text>Fort-17 是 Fort-12 的改進版，將槍身框架從鋼材替換為聚合物，從而減輕了重量，儘管後坐力可能稍微大一點。 預設裝配 13 號彈匣，而不是 12 號。它還有一個可拆卸的握把填充物，可以改善人體工程學。 \n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 相容消音器</text>
+	</string>
+	
+</string_table>

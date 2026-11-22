@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Basic items (Some are not used anymore)
+-->
+<string_table>
+
+	<string id="st_itm_campfire">
+		<text>篝火</text>
+	</string>
+	<string id="st_itm_campfire_descr">
+		<text>篝火可不是你能随身携带的东西, 你不应该看到这个的!\n \n
+		%c[0,255,255,255]属性:\n
+		%c[0,100,255,255] • %c[ui_gray_2] 潜行者最喜欢的地方\n
+		%c[0,100,255,255] • %c[ui_gray_2] 用于烹饪\n
+		%c[0,100,255,255] • %c[ui_gray_2] 故事时间\n
+		%c[0,100,255,255] • %c[ui_gray_2] 可以和吉他和伏特加一起使用\n
+		</text>
+	</string>
+	
+	<string id="st_poxod_rukzak">
+		<text>异常的背包</text>
+	</string>
+	<string id="st_poxod_rukzak_descr">
+		<text>乍一看, 这个背包似乎没有突出的性能. 然而, 包里物品的重量会随着时间的推移而减少. 有传言说, 这是由于一批为军方运送的背包意外地被一个异常点捕获所引起的. 生态学家们试图重现其独特特性的尝试都失败了. 特异区内有影响力的人士已经购买了一批这种不寻常的背包, 并准备向全球出口.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 独特物品\n
+		</text>
+	</string>
+
+	<string id="st_bolt">
+		<text>螺栓</text>
+	</string>
+	<string id="st_bolt_descr">
+		<text>一个再普通不过的生锈螺栓, 无论是新手还是老手都得用它来在异常点中找出一条安全的道路.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被抛出以探测异常点\n
+		</text>
+	</string>
+	
+	<string id="st_bolty">
+		<text>螺栓</text>
+	</string>
+	<string id="st_bolty_descr">
+		<text>一个再普通不过的生锈螺栓, 无论是新手还是老手都得用它来在异常点中找出一条安全的道路.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被抛出以探测异常点\n
+		</text>
+	</string>
+	
+	<string id="st_bolt_bullet">
+		<text>弹壳</text>
+	</string>
+	<string id="st_bolt_bullet_descr">
+		<text>有时候, 潜行者们会利用自己的空弹壳来代替螺栓, 以在异常点间探索安全的道路.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被抛出以探测异常点\n
+		</text>
+	</string>
+	
+	<string id="st_identity_card">
+		<text>个人乌克兰安全局身份证</text>
+	</string>
+	<string id="st_identity_card_descr">
+		<text>这是你的个人身份证, 它显示了你的真实身份. 把它藏起来. 作为一名乌克兰安全局的突击队员, 你擅长突击步枪和重型武器. 你还擅长控制武器后坐力, 但你的冲刺速度较慢.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_identity_card_assaulter_descr">
+		<text>作为一名乌克兰安全局突击队员你有独特的优点和缺点.\n\n
+		%c[d_cyan]装备\n
+		%c[default]重型防护服敏捷度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]封闭式防护服敏捷度: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]C\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀战: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]操控性特长: %c[d_red_1]高后坐力\n
+		%c[d_blue] • %c[default]维修特长: %c[d_red_1]重武器\n\n
+		%c[d_cyan]药物\n
+		%c[d_blue] • %c[default]绷带/医疗包熟练度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]医疗技能: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]药物处理技能: %c[d_red_1]C\n\n
+		%c[d_cyan]运动能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]非常高\n
+		%c[d_blue] • %c[default]冲刺速度: %c[d_red_1]慢\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]落下/跳跃敏捷度: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]基础体力: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]最大负重: %c[ui_gray_1] %c[d_red_1]高\n\n
+		%c[d_cyan]健康状况\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]快\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]高\n\n
+		%c[d_cyan]免疫系统抵抗\n
+		%c[d_blue] • %c[default]药物/酒精: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]不健康食品: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]辐射: %c[ui_gray_1] %c[d_red_1]C\n
+		</text>
+	</string>
+	<string id="st_identity_card_recon_descr">
+		<text>作为一名乌克兰安全局侦察兵你有独特的优点和缺点.\n\n
+		%c[d_cyan]装备\n
+		%c[default]重型防护服敏捷度: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]封闭式防护服敏捷度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]A+\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀战: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]操控性特长: %c[d_red_1]冲锋枪\n
+		%c[d_blue] • %c[default]维修特长: %c[d_red_1]冲锋枪\n\n
+		%c[d_cyan]药物\n
+		%c[d_blue] • %c[default]绷带/医疗包熟练度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]医疗技能: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]药物处理技能: %c[d_red_1]A\n\n
+		%c[d_cyan]运动能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]低\n
+		%c[d_blue] • %c[default]冲刺速度: %c[d_red_1]快\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]落下/跳跃敏捷度: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]基础体力: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]最大负重: %c[ui_gray_1] %c[d_red_1]低\n\n
+		%c[d_cyan]健康状况\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]慢\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]中\n\n
+		%c[d_cyan]免疫系统抵抗\n
+		%c[d_blue] • %c[default]药物/酒精: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]不健康食品: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]辐射: %c[ui_gray_1] %c[d_red_1]A\n
+		</text>
+	</string>
+	<string id="st_identity_card_sniper_descr">
+		<text>作为一名乌克兰安全局狙击手你的属性非常平衡.\n\n
+		%c[d_cyan]装备\n
+		%c[default]重型防护服敏捷度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]封闭式防护服敏捷度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]B\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀战: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]操控性特长: %c[d_red_1]狙击步枪\n
+		%c[d_blue] • %c[default]维修特长: %c[d_red_1]狙击步枪\n\n
+		%c[d_cyan]药物\n
+		%c[d_blue] • %c[default]绷带/医疗包熟练度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]医疗技能: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]药物处理技能: %c[d_red_1]B+\n\n
+		%c[d_cyan]运动能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]中\n
+		%c[d_blue] • %c[default]冲刺速度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]落下/跳跃敏捷度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]奔跑耐力: 
+		%c[d_red_1]高\n
+		%c[d_blue] • %c[default]冲刺耐力: 
+		%c[d_red_1]中\n
+		%c[d_blue] • %c[default]最大负重: %c[ui_gray_1] %c[d_red_1]中\n\n
+		%c[d_cyan]健康状况\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]低\n\n
+		%c[d_cyan]免疫系统抵抗\n
+		%c[d_blue] • %c[default]药物/酒精: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]不健康食物: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]辐射: %c[ui_gray_1] %c[d_red_1]B\n
+		</text>
+	</string>
+	
+	<string id="st_energy">
+		<text>无</text>
+	</string>
+	<string id="st_energy_descr">
+		<text>以安培小时为单位储存的能量 (Ah).</text>
+	</string>
+
+	<string id="green_bug_name">
+		<text>绿甲虫</text>
+	</string>
+	<string id="green_bug_description">
+		<text>绿甲虫是每个潜行者不可分离的伴侣. 特异区里没有一个人在路上遇到过它. 如果在你的一生中只被发现一两次, 这应该被认为是幸运的. 你的心情与随后每次见到绿甲虫成正比... \n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 大大增加了游戏崩溃的机会\n
+		%c[d_blue] • %c[ui_gray_2] 不可被抛弃\n
+		%c[d_blue] • %c[ui_gray_2] 不可被出售\n
+		</text>
+	</string>
+	
+	<string id="sleep_itm_warning_blowout">
+		<text>现在睡觉很不安全!</text>
+	</string>
+	
+</string_table>

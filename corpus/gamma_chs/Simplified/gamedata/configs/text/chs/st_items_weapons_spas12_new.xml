@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_spas12_new">
+		<text>SPAS-12</text>
+	</string>
+	<string id="st_wpn_spas12_descr_new">
+		<text>SPAS-12 是一款双模式霰弹枪, 专为战斗和防暴而设计; 它被世界各地的许多特种军事和警察部队所采用; 凭借其独特的隔热罩和折叠枪托, SPAS-12 成为一款标志性枪支; 以其可靠性和战术灵活性而闻名; 尽管其重量大, 机制复杂且成本高昂, 但由于其对抗变异怪物的功效, 所以它在特异区的需求量很大\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Salvo 12 消音器\n
+		</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_vityaznew">
+		<text>PP-19 "騎士"-SN</text>
+	</string>
+
+	<string id="st_wpn_vityaznew_descr">
+		<text>2004 年設計的PP-19的變體, 帶有30發9x19毫米彈匣, 它基於AK-74並與AK-74有許多共同點, 但其實是基於PP-19 Bizon發展而來, 它被巡邏隊, 俄羅斯交警, 俄羅斯安全警察和內務部單位使用
+		\n原名"Vityaz", 也就是俄語中"騎士"的意思		\n這是"SN"變體，這意味著它有一個帶導軌的防塵蓋但沒有燕尾側軌, 因此它可以使用北約瞄準鏡但不能使用華約瞄準鏡\n\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]起源: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]廠商:  %c[ui_gray_1]卡拉什尼科夫相關廠商\n
+		%c[d_cyan] • %c[0,255,255,255]生產日期: %c[ui_gray_1]2008\n
+		</text>
+	</string>
+
+</string_table>

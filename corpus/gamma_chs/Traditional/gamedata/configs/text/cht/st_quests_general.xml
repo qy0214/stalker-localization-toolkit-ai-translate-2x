@@ -1,0 +1,2598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--===========================================================
+<
+< GENERAL TEXT  STRINGS FOR TASKS
+<	CoC 1.4.10 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 14, 2016
+<
+<===========================================================-->
+
+<string_table>
+
+
+	<!--                                      -->
+	<!-- STORYLINE GENERAL TASK STRINGS       -->
+	<!--                                      -->
+	<!--	Modified by DoctorX               -->
+	<!--	for DoctorX Questlines 1.6        -->
+	<!--	October 07, 2016                  -->
+	<!--                                      -->
+
+	<!-- Find Wish Granter Task -->
+
+	<string id="drx_sl_find_wish_granter_task_name">
+		<text>找到許願石</text>
+	</string>
+	<string id="drx_sl_find_wish_granter_task_text">
+		<text>據傳,許願石被深藏在切爾諾貝利核電站內, 你得找到它</text>
+	</string>
+
+
+
+	<!--                                                -->
+	<!-- STORYLINE START GAME TASK TEXT  STRINGS        -->
+	<!--                                                -->
+	<!--	Modified by DoctorX                         -->
+	<!--	for DoctorX Questlines 1.6                  -->
+	<!--	October 14, 2016                            -->
+	<!--                                                -->
+
+	<!-- Start Game at Sidorovich (Loner) Task 1 -->
+
+	<string id="drx_sl_esc_m_trader_start_game_1_name">
+		<text>與西多洛維奇見面</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_start_game_1_text">
+		<text>西多洛維奇在封鎖線中給新來的潛行者提供幫助</text>
+	</string>
+
+	<!-- Start Game at Petrenko (Duty) Task 1 -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_start_game_1_name">
+		<text>會見彼得連科上校</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_start_game_1_text">
+		<text>向彼得連科上校報告並接受任務</text>
+	</string>
+
+	<!-- Start Game at Lukash (Freedom) Task 1 -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_start_game_1_name">
+		<text>會見盧卡什</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_start_game_1_text">
+		<text>自由軍的領袖盧卡什想與你聊一聊</text>
+	</string>
+
+	<!-- Meet Cold1 (Clear Sky) Task 1 -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_start_game_1_name">
+		<text>會見冷風</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_start_game_1_text">
+		<text>在晴空基地與冷風見面</text>
+	</string>
+
+	<!-- Start Game at Sakharov (Ecologist) Task 1 -->
+
+	<string id="drx_sl_yan_stalker_sakharov_start_game_1_name">
+		<text>會見薩哈洛夫教授</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_start_game_1_text">
+		<text>薩哈洛夫教授有任務要給你</text>
+	</string>
+
+	<!-- Start Game at Dushman (Mercenary) Task 1 -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_start_game_1_name">
+		<text>會見達什曼</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_start_game_1_text">
+		<text>與達什曼交流</text>
+	</string>
+
+	<!-- Start Game at Kuznetsov (Military Honcho) Task 1 -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_start_game_1_name">
+		<text>會見庫茲涅佐夫</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_start_game_1_text">
+		<text>向庫茲涅佐夫報告</text>
+	</string>
+
+	<!-- Start Game at Sultan (Bandit Honcho) Task 1 -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_start_game_1_name">
+		<text>會見"匪王"蘇坦</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_start_game_1_text">
+		<text>"匪王"蘇坦想要見你</text>
+	</string>
+
+	<!-- Start Game at Rabbit (Monolith Trader) Task 1 -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_start_game_1_name">
+		<text>會見兔子</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_start_game_1_text">
+		<text>接受智慧的兔子的指引</text>
+	</string>
+	
+	<!-- Start Game at Stribog (Sin Trader) Task 1 -->
+
+	<string id="drx_sl_red_greh_trader_start_game_1_name">
+		<text>會見"風神"斯特利伯格</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_start_game_1_text">
+		<text>找到"風神"斯特利伯格接受你的任務</text>
+	</string>
+
+
+
+	<!--                                             -->
+	<!-- STORYLINE MEET HONCHO TASK TEXT  STRINGS    -->
+	<!--                                             -->
+	<!--	Modified by DoctorX                      -->
+	<!--	for DoctorX Questlines 1.6               -->
+	<!--	October 14, 2016                         -->
+	<!--                                             -->
+
+	<!-- Meet Sidorovich (Loner) Task 1 -->
+
+	<string id="drx_sl_esc_m_trader_meet_task_1_name">
+		<text>與西多洛維奇見面</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_meet_task_1_text">
+		<text>我現在應該去找封鎖線的西多洛維奇</text>
+	</string>
+
+	<!-- Meet Xenotech (Loner) Task 1 -->
+
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_meet_task_1_name">
+		<text>會見"黑科技"澤諾泰克</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_meet_task_1_text">
+		<text>我現在應該去找封鎖線的"黑科技"澤諾泰克</text>
+	</string>
+
+	<!-- Meet Beard (Loner) Task 1 -->
+
+	<string id="drx_sl_zat_a2_stalker_barmen_meet_task_1_name">
+		<text>會見大鬍子</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_meet_task_1_text">
+		<text>我現在應該去找斯卡多夫斯克號的大鬍子</text>
+	</string>
+
+	<!-- Meet Noah (Loner) Task 1 -->
+
+	<string id="drx_sl_zat_b18_noah_meet_task_1_name">
+		<text>會見諾亞</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_meet_task_1_text">
+		<text>我現在應該去找扎頓的諾亞</text>
+	</string>
+
+	<!-- Meet Petrenko (Duty) Task 1 -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_meet_task_1_name">
+		<text>會見彼得連科上校</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_meet_task_1_text">
+		<text>我現在應該去找羅斯托克的彼得連科上校</text>
+	</string>
+
+	<!-- Meet Mangun (Duty) Task 1 -->
+
+	<string id="drx_sl_bar_visitors_stalker_mechanic_meet_task_1_name">
+		<text>會見曼岡</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_meet_task_1_text">
+		<text>我現在應該去找羅斯托克的曼岡</text>
+	</string>
+
+	<!-- Meet Lukash (Freedom) Task 1 -->
+
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_meet_task_1_name">
+		<text>會見盧卡什</text>
+	</string>
+	<string id="drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_meet_task_1_text">
+		<text>我現在應該去找軍事倉庫的盧卡什</text>
+	</string>
+
+	<!-- Meet Loki (Freedom) Task 1 -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_meet_task_1_name">
+		<text>會見洛基</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_meet_task_1_text">
+		<text>我現在應該去找亞諾夫車站的洛基</text>
+	</string>
+
+	<!-- Meet Cold (Clear Sky) Task 1 -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_meet_task_1_name">
+		<text>會見冷風</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_meet_task_1_text">
+		<text>我現在應該去找大沼澤的冷風</text>
+	</string>
+
+	<!-- Meet Librarian (Clear Sky) Task 1 -->
+
+	<string id="drx_sl_mar_base_stalker_barmen_meet_task_1_name">
+		<text>會見萊伯利安</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_meet_task_1_text">
+		<text>我現在應該去找沼澤的萊伯利安</text>
+	</string>
+
+	<!-- Meet Sakharov (Ecologist) Task 1 -->
+
+	<string id="drx_sl_yan_stalker_sakharov_meet_task_1_name">
+		<text>會見薩哈洛夫教授</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_meet_task_1_text">
+		<text>我現在應該去找揚塔的薩哈洛夫教授</text>
+	</string>
+
+	<!-- Meet Tukarev (Ecologist) Task 1 -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_meet_task_1_name">
+		<text>會見托卡列夫</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_meet_task_1_text">
+		<text>我現在應該去找尤皮特的托卡列夫</text>
+	</string>
+
+	<!-- Meet Dushman (Mercenary) Task 1 -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_meet_task_1_name">
+		<text>會見達什曼</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_meet_task_1_text">
+		<text>我現在應該去找死城的達什曼</text>
+	</string>
+
+	<!-- Meet Hog (Mercenary) Task 1 -->
+
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_meet_task_1_name">
+		<text>會見豪格</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_meet_task_1_text">
+		<text>我現在應該去找死城的豪格</text>
+	</string>
+
+	<!-- Meet Kuznetsov (Military) Task 1 -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_meet_task_1_name">
+		<text>會見庫茲涅佐夫</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_meet_task_1_text">
+		<text>我現在應該去找農業研究所的庫茲涅佐夫</text>
+	</string>
+
+	<!-- Meet Kirilov (Military) Task 1 -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_meet_task_1_name">
+		<text>會見基里洛夫中尉</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_meet_task_1_text">
+		<text>我現在應該去找農業研究所的基里洛夫中尉</text>
+	</string>
+
+	<!-- Meet Sultan (Bandit) Task 1 -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_meet_task_1_name">
+		<text>會見"匪王"蘇坦</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_meet_task_1_text">
+		<text>我現在應該去找黑谷的"匪王"蘇坦</text>
+	</string>
+
+	<!-- Meet Olivius (Bandit) Task 1 -->
+
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_meet_task_1_name">
+		<text>會見"槍子兒"奧利維斯</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_meet_task_1_text">
+		<text>我現在應該去找黑谷的"槍子兒"奧利維斯</text>
+	</string>
+
+	<!-- Meet Rabbit (Monolith) Task 1 -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_meet_task_1_name">
+		<text>會見兔子</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_meet_task_1_text">
+		<text>我現在應該去找普里皮亞奇的兔子</text>
+	</string>
+
+
+	<!-- Meet Cleric (Monolith) Task 1 -->
+
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_meet_task_1_name">
+		<text>會見傳教士</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_meet_task_1_text">
+		<text>我現在應該去找普里皮亞奇的傳教士</text>
+	</string>
+	
+	<!-- Meet Stribog (Sin) Task 1 -->
+
+	<string id="drx_sl_red_greh_trader_meet_task_1_name">
+		<text>會見"風神"斯特利伯格</text>
+	</string>
+	<string id="drx_sl_red_greh_trader_meet_task_1_text">
+		<text>我現在應該去找紅森林的"風神"斯特利伯格</text>
+	</string>
+	
+	<!-- Meet Dazhbog (Sin) Task 1 -->
+
+	<string id="drx_sl_red_greh_tech_meet_task_1_name">
+		<text>會見"太陽神"達日伯格</text>
+	</string>
+	<string id="drx_sl_red_greh_tech_meet_task_1_text">
+		<text>我現在應該去找紅森林的"太陽神"達日伯格</text>
+	</string>
+	
+	<!-- Meet Olivar (Monolith) Task 1 -->
+
+	<string id="drx_sl_trader_monolith_kbo_meet_task_1_name">
+		<text>會見奧利瓦爾</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_meet_task_1_text">
+		<text>我現在應該去找普城郊區的奧利瓦爾</text>
+	</string>
+	
+	<!-- Meet Griffith (Monolith) Task 1 -->
+
+	<string id="drx_sl_merc_pri_grifon_mlr_meet_task_1_name">
+		<text>會見格里芬</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_meet_task_1_text">
+		<text>我現在應該去找普城郊區的格里芬</text>
+	</string>
+	
+	<!-- Meet Vector (Mercenary) Task 1 -->
+
+	<string id="drx_sl_zat_stancia_trader_merc_meet_task_1_name">
+		<text>會見維克托</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_meet_task_1_text">
+		<text>我現在應該去找扎頓的維克托</text>
+	</string>
+	
+	<!-- Meet Klenov (Bandit) Task 1 -->
+
+	<string id="drx_sl_jup_cont_trader_bandit_meet_task_1_name">
+		<text>會見克列諾夫</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_meet_task_1_text">
+		<text>我現在應該去找尤皮特的克列諾夫</text>
+	</string>
+
+
+	<!-- SIMULATION TASK TEXT  STRINGS     -->
+	<!--	Modified by DoctorX            -->
+	<!--	for DoctorX Questlines 1.6     -->
+	<!--	October 07, 2016               -->
+
+
+	<!-- Procure Supplies for Clear Sky Simulation Task -->
+	<string id="simulation_task_1_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_1_text">
+		<text>一個來自晴空的傢伙叫我把 %s帶給他</text>
+	</string>
+	<string id="simulation_task_1_about">
+		<text>我的補給有些不夠了, 如果你手頭有或者能幫我帶一些的話,我將不勝感激</text>
+	</string>
+	<string id="simulation_task_1_fetch_about">
+		<text>我正缺少 %s, 你有沒有多餘的? 或者你能找到嗎? 如果能的話幫我帶點來</text>
+	</string>
+	<string id="simulation_task_1_fetch_finish">
+		<text>真好,夥計! 謝謝!</text>
+	</string>
+
+
+	<!-- FIND SUPPLIES FOR FREEDOM OR MERC TASK -->
+	<string id="simulation_task_2_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_2_text">
+		<text>一個潛行者叫我把 %s帶給他</text>
+	</string>
+	<string id="simulation_task_2_about">
+		<text>媽的,夥計我需要你幫我一個大忙,我的物資稀缺,你能幫我解決嗎?</text>
+	</string>
+	<string id="simulation_task_2_fetch_about">
+		<text>我手頭的 %s不夠了, 你有嗎? 如果你手上有的話,來找我吧</text>
+	</string>
+	<string id="simulation_task_2_fetch_finish">
+		<text>好極了,夥計, 謝謝!</text>
+	</string>
+	
+	
+	<!-- FIND SUPPLIES FOR BANDIT TASK -->
+	<string id="simulation_task_3_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_3_text">
+		<text>土匪需要一些 %s</text>
+	</string>
+	<string id="simulation_task_3_about">
+		<text>你想交易一些好貨嗎?</text>
+	</string>
+	<string id="simulation_task_3_fetch_about">
+		<text>如果你能幫我找到 %s的話,我可以給你一個好價格</text>
+	</string>
+	<string id="simulation_task_3_fetch_finish">
+		<text>好兄弟,謝謝!</text>
+	</string>
+
+
+	<!-- FIND SUPPLIES FOR MILITARY TASK -->
+	<string id="simulation_task_4_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_4_text">
+		<text>為一名士兵找到 %s</text>
+	</string>
+	<string id="simulation_task_4_about">
+		<text>你有什麼想要出售的物資么?</text>
+	</string>
+	<string id="simulation_task_4_fetch_about">
+		<text>告訴你吧:如果你能幫我弄到一些 %s,我會把多餘的彈藥都給你</text>
+	</string>
+	<string id="simulation_task_4_fetch_finish">
+		<text>很好,謝謝!</text>
+	</string>
+	
+	<!-- Bring Supplies for Monolith Simulation Task -->
+	<string id="simulation_task_5_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_5_text">
+		<text>你的一個好兄弟病了,他需要 %s</text>
+	</string>
+	<string id="simulation_task_5_about">
+		<text>我必須變得更強才能為萬能的黑石效力,但我覺得我的力量正在減弱, 你能幫幫我嗎,兄弟?</text>
+	</string>
+	<string id="simulation_task_5_fetch_about">
+		<text>我的好兄弟,我重病纏身, 傳教士慷慨地為我祈禱了,但我覺得我只需要 %s, 請為我弄一些來</text>
+	</string>
+	<string id="simulation_task_5_fetch_finish">
+		<text>謝謝你, 我的兄弟! 愿黑石的榮光照耀你</text>
+	</string>
+	
+	<!-- Find Supplies for Merc Simulation Task -->
+	<string id="simulation_task_6_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_6_text">
+		<text>我被一個傭兵叫去找 %s</text>
+	</string>
+	<string id="simulation_task_6_about">
+		<text>你能幫我一個大忙嗎? 我的補給不足了,你能幫我擺脫困境嗎?</text>
+	</string>
+	<string id="simulation_task_6_fetch_about">
+		<text>我的 %s已經不足了, 如果你可以從你的手上兌換一些給我,來找我,我會給你報酬</text>
+	</string>
+	<string id="simulation_task_6_fetch_finish">
+		<text>謝謝!</text>
+	</string>
+
+	<!-- FIND WEAPON FOR STALKER TASK -->
+	<string id="simulation_task_7_name">
+		<text>鳥槍換炮: %s</text>
+	</string>
+	<string id="simulation_task_7_text">
+		<text>一名潛行者需要一個狀態良好的 %s</text>
+	</string>
+	<string id="simulation_task_7_about">
+		<text>唉,我的藏物點被洗劫一空,我失去了我最喜歡的武器, 你能幫我找一個新的嗎?</text>
+	</string>
+	<string id="simulation_task_7_fetch_about">
+		<text>我正在尋找 %s, 我愛死那把槍了, 如果你能找到一把狀態良好的,我願意出一個高價</text>
+	</string>
+	<string id="simulation_task_7_fetch_finish">
+		<text>謝謝你, 潛行者! 這是我欠你的, 現在, 我要去找到那個偷我東西的混蛋..</text>
+	</string>
+
+
+	<!-- FIND WEAPON FOR DUTY, MERC, CLEAR SKY, OR MILITARY TASK -->
+	<string id="simulation_task_8_name">
+		<text>全新武器: %s</text>
+	</string>
+	<string id="simulation_task_8_text">
+		<text>弄一把可靠的 %s</text>
+	</string>
+	<string id="simulation_task_8_about">
+		<text>配發給我的這把槍是真的狗屎, 我可不要這種每次在作戰時都掉鏈子的東西, 你能為我找一把新的嗎?</text>
+	</string>
+	<string id="simulation_task_8_fetch_about">
+		<text>幫我弄一把 %s, 你不會後悔的</text>
+	</string>
+	<string id="simulation_task_8_fetch_finish">
+		<text>太棒了! 真是把好槍! 給你, 當作是跑腿費</text>
+	</string>
+	
+	
+	<!-- FIND WEAPON FOR BANDIT TASK -->
+	<string id="simulation_task_9_name">
+		<text>走私軍火</text>
+	</string>
+	<string id="simulation_task_9_text">
+		<text>一個土匪需要一把無法被追查的 %s,別問他為什麼</text>
+	</string>
+	<string id="simulation_task_9_about">
+		<text>聽好了,我要一把無法追查到我頭上來的槍, 你懂我是什麼意思吧? 你能幫我辦妥嗎?</text>
+	</string>
+	<string id="simulation_task_9_fetch_about">
+		<text>我需要 %s, 我不論你是買,還是偷,亦或是搶,無論你怎樣弄;給我整一個就行, 我會付給你雙倍的價錢</text>
+	</string>
+	<string id="simulation_task_9_fetch_finish">
+		<text>牛逼! 給你錢! 沒錯吧? 哥們我絕對說話算話!</text>
+	</string>
+	
+	<!-- Find a Reliable Weapon for Merc Simulation Task -->
+	<string id="simulation_task_10_name">
+		<text>武裝傭兵: %s</text>
+	</string>
+	<string id="simulation_task_10_text">
+		<text>為傭兵蒐羅一把可靠的 %s</text>
+	</string>
+	<string id="simulation_task_10_about">
+		<text>發給我的這把槍太垃圾了, 我需要一把不會瞎幾把亂卡殼的, 你能幫我弄到一把嗎?</text>
+	</string>
+	<string id="simulation_task_10_fetch_about">
+		<text>給我一把 %s, 你會覺得值的</text>
+	</string>
+	<string id="simulation_task_10_fetch_finish">
+		<text>棒極了! 她真美! 拿好, 這些也許可以當你的補償</text>
+	</string>
+
+	<!-- Find a Reliable Weapon for Military Simulation Task -->
+	<string id="simulation_task_11_name">
+		<text>火力支援: %s</text>
+	</string>
+	<string id="simulation_task_11_text">
+		<text>軍隊需要一把不錯的 %s</text>
+	</string>
+	<string id="simulation_task_11_about">
+		<text>配發的這把槍早壞得應該進熔爐了, 我需要一把不會讓我死的太冤枉的槍, 你能幫我找到嗎?</text>
+	</string>
+	<string id="simulation_task_11_fetch_about">
+		<text>我需要一把 %s, 你不會覺得虧的</text>
+	</string>
+	<string id="simulation_task_11_fetch_finish">
+		<text>真好! 多漂亮的槍! 給, 拿好你的報酬</text>
+	</string>
+	
+	<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_12_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_12_text">
+		<text>一個潛行者同伴提供了一個不錯的報酬以換取 %s神器</text>
+	</string>
+	<string id="simulation_task_12_about">
+		<text>你是找神器都好手嗎?</text>
+	</string>
+	<string id="simulation_task_12_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_12_fetch_finish">
+		<text>終於到手了! 你是不知道我找了多久, 這是我給你的回報,很值得我這麼做</text>
+	</string>
+	
+	
+	<!-- FIND ARTEFACT FOR MILITARY TASK -->
+	<string id="simulation_task_13_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_13_text">
+		<text>一個士兵願意用一把槍來換 %s</text>
+	</string>
+	<string id="simulation_task_13_about">
+		<text>嘿,聽著,夥計, 我知道這違背了規則,但我很快就能回家了,我想帶一件紀念品回去, 你覺得你能幫我找到一個神器嗎?</text>
+	</string>
+	<string id="simulation_task_13_fetch_about">
+		<text>我想要一個"%s"神器, 如果你能找到一個給我,我就把我的槍給你</text>
+	</string>
+	<string id="simulation_task_13_fetch_finish">
+		<text>太棒了! 這是我所承諾給你的, 千萬不要讓我的指揮官知道我有這個玩意</text>
+	</string>
+	
+	
+	<!-- FIND MUTANT MEAT FOR STALKER, CLEAR SKY, MERC, FREEDOM, OR BANDIT TASK -->
+	<string id="simulation_task_14_name">
+		<text>黑暗料理: 紅燒%s</text>
+	</string>
+	<string id="simulation_task_14_text">
+		<text>一個潛行者知道特殊的烹飪方法, 他現在需要一些%s來作準備</text>
+	</string>
+	<string id="simulation_task_14_about">
+		<text>夥計,嘗過怪物的肉的嗎? 很多人不會去碰它,除非是快餓死了,而我,我個人很喜歡,你擅長打獵對嗎?</text>
+	</string>
+	<string id="simulation_task_14_fetch_about">
+		<text>如果你能幫我搞到%s的話, 我會讓你大飽口福, 啊... 光是想想就流口水啊!</text>
+	</string>
+	<string id="simulation_task_14_fetch_finish">
+		<text>太好了! 我今晚要吃個飽! 謝謝你潛行者, 這是您的報酬 哦, 還有這個: 一些我用不上的子彈, 你也許會用到</text>
+	</string>
+
+
+	<!-- Mutant Meat Stew for Bandit Simulation Task -->
+	<string id="simulation_task_15_name">
+		<text>黑暗料理: 爆炒%s</text>
+	</string>
+	<string id="simulation_task_15_text">
+		<text>一個土匪有特殊的食譜來處理%s, 給他帶去一些食材</text>
+	</string>
+	<string id="simulation_task_15_about">
+		<text>夥計, 聽說過怪物的肉嗎? 很多老兄寧願餓死也不會碰那東西, 而我不同, 你肯定很擅長狩獵吧?</text>
+	</string>
+	<string id="simulation_task_15_fetch_about">
+		<text>如果你能弄到%s, 我絕對不會讓你後悔的, 操... 我好像已經能聞到香味了</text>
+	</string>
+	<string id="simulation_task_15_fetch_finish">
+		<text>幹的真他媽漂亮! 今晚可以好好撮一頓了! 謝了兄弟, 給你錢!和一些戰利品</text>
+	</string>
+
+	<!-- Collect Mutant Tissue Sample for Ecologist Simulation Task -->
+	<string id="simulation_task_16_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_16_text">
+		<text>一名生態學家正缺少 %s的組織樣本來進行研究</text>
+	</string>
+	<string id="simulation_task_16_about">
+		<text>我正在研究特異區的某些變種生物, 我需要有人幫我收集一些變異生物樣本</text>
+	</string>
+	<string id="simulation_task_16_fetch_about">
+		<text>如果你能狩獵一隻怪物,我正急需一些 %s, 我會為你的風險付報酬的,嗯沒錯,多少有點風險</text>
+	</string>
+	<string id="simulation_task_16_fetch_finish">
+		<text>謝謝你, 先生, 這對我的研究有很大的幫助</text>
+	</string>
+
+
+
+	<!-- Bring patches for Freedom Simulation Task -->
+	<string id="simulation_task_17_name">
+		<text>陣營之爭: %s</text>
+	</string>
+	<string id="simulation_task_17_text">
+		<text>一個自由軍成員讓我收集 %s</text>
+	</string>
+	<string id="simulation_task_17_about">
+		<text>嘿,兄弟,你能幫我收集一些紀律團的臂章嗎? 那會讓我睡得更香</text>
+	</string>
+	<string id="simulation_task_17_fetch_about">
+		<text>嘿,兄弟,你能幫我收集一些紀律團的臂章嗎? 那會讓我睡得更香</text>
+	</string>
+	<string id="simulation_task_17_fetch_finish">
+		<text>致以你崇高的敬意, 兄弟! 拿好這個神器</text>
+	</string>
+	
+	<!-- Bring patches for Duty Simulation Task -->
+	<string id="simulation_task_18_name">
+		<text>陣營之爭: %s</text>
+	</string>
+	<string id="simulation_task_18_text">
+		<text>一個紀律團的成員讓我收集 %s</text>
+	</string>
+	<string id="simulation_task_18_about">
+		<text>你是否也想幹掉一些無政府主義者? 最近他們人太多了, 拿一些臂章作為證據交給我,好嗎?</text>
+	</string>
+	<string id="simulation_task_18_fetch_about">
+		<text>你是否也想幹掉一些無政府主義者? 最近他們人太多了, 拿一些臂章作為證據交給我,好嗎?</text>
+	</string>
+	<string id="simulation_task_18_fetch_finish">
+		<text>幹得好小夥子, 拿好,在別人看見之前收好它</text>
+	</string>
+	
+	<!-- Bring patches for Stalkers Simulation Task -->
+	<string id="simulation_task_19_name">
+		<text>陣營之爭: %s</text>
+	</string>
+	<string id="simulation_task_19_text">
+		<text>一名潛行者讓我收集 %s</text>
+	</string>
+	<string id="simulation_task_19_about">
+		<text>你好兄弟,想殺一些混蛋么? 你把他們甜美的小臂章給我,我就給你一個神器, 幹不幹?</text>
+	</string>
+	<string id="simulation_task_19_fetch_about">
+		<text>你好兄弟,想殺一些混蛋么? 你把他們甜美的小臂章給我,我就給你一個神器, 幹不幹?</text>
+	</string>
+	<string id="simulation_task_19_fetch_finish">
+		<text>謝謝你, 好兄弟, 你真牛逼, 這兒是你的神器</text>
+	</string>
+	
+	<!-- Bring patches for Bandits Simulation Task -->
+	<string id="simulation_task_20_name">
+		<text>陣營之爭: %s</text>
+	</string>
+	<string id="simulation_task_20_text">
+		<text>一名土匪讓我收集 %s</text>
+	</string>
+	<string id="simulation_task_20_about">
+		<text>嘿,臭小子, 我有些活要你去辦, 這裡有些傻逼正在阻礙我們的業務, 教訓教訓他們然後拿臂章給我,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_20_fetch_about">
+		<text>嘿,臭小子, 我有些活要你去辦, 這裡有些傻逼正在阻礙我們的業務, 教訓教訓他們然後拿臂章給我,怎麼樣? 我需要 %s</text>
+	</string>
+	<string id="simulation_task_20_fetch_finish">
+		<text>不錯啊小夥子, 收下我的敬意和這個神器</text>
+	</string>
+	
+	<!-- Find Trip Equipment Tasks -->	
+	<string id="simulation_task_21_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_21_text">
+		<text>一個人讓你尋找並把 %s帶給他</text>
+	</string>
+	<string id="simulation_task_21_about">
+		<text>我和我的同伴正在準備一次長時間的外出, 我們需要用上一些裝備,所以</text>
+	</string>
+	<string id="simulation_task_21_fetch_about">
+		<text>我和我的同伴正在準備一次長時間的外出, 我們需要用上一些裝備,所以, 可以為我們弄一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_21_fetch_finish">
+		<text>謝謝! 這是你的酬勞</text>
+	</string>
+	
+	<!-- Find Trip Equipment Tasks -->	
+	<string id="simulation_task_22_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_22_text">
+		<text>一個人讓你尋找並把 %s帶給他</text>
+	</string>
+	<string id="simulation_task_22_about">
+		<text>我的小隊正準備前往特異區的另一個地方, 考慮到這一點,我們總是會在糟糕的日子到來前弄一些要用的裝備, 你幫我們弄些 %s我給你些東西回報,如何?</text>
+	</string>
+	<string id="simulation_task_22_fetch_about">
+		<text>我的小隊正準備前往特異區的另一個地方, 考慮到這一點,我們總是會在糟糕的日子到來前弄一些要用的裝備</text>
+	</string>
+	<string id="simulation_task_22_fetch_finish">
+		<text>噢,兄弟! 我的夥伴們會高興的, 這裡,拿好這些, 你做了一件好事</text>
+	</string>
+	
+	<!-- Find Repair Kit Tasks -->	
+	<string id="simulation_task_23_name">
+		<text>提供工具: %s</text>
+	</string>
+	<string id="simulation_task_23_text">
+		<text>一個人讓你找到並把 %s給他</text>
+	</string>
+	<string id="simulation_task_23_about">
+		<text>看到我這個破爛不堪的裝備了嗎? 它還在慢慢變壞,但我真是懶到忽略了這一點, 我想我現在得快快修理它</text>
+	</string>
+	<string id="simulation_task_23_fetch_about">
+		<text>看到我這個破爛不堪的裝備了嗎? 它還在慢慢變壞,但我真是懶到忽略了這一點, 我想我現在得快快修理它, 你能給我 %s嗎? 我會給你不錯的報酬</text>
+	</string>
+	<string id="simulation_task_23_fetch_finish">
+		<text>謝謝! 這是你幫我忙的報酬</text>
+	</string>
+	
+	<!-- Find Upgrade Parts Tasks -->	
+	<string id="simulation_task_24_name">
+		<text>提供升級套件: %s</text>
+	</string>
+	<string id="simulation_task_24_text">
+		<text>一個人想升級他的護甲,他讓你幫他找到 %s,並帶給他</text>
+	</string>
+	<string id="simulation_task_24_about">
+		<text>這裡的技師告訴我它需要一些特殊的裝置才能按我的要求來升級護甲, 現在技師讓我馬上把錢和東西交清, 你知道什麼更好的嗎? 我沒有這種狗屎運來碰上這玩意..</text>
+	</string>
+	<string id="simulation_task_24_fetch_about">
+		<text>這裡的技師告訴我它需要一些特殊的裝置才能按我的要求來升級護甲, 現在技師讓我馬上把錢和東西交清, 你知道什麼更好的嗎? 我沒有這種狗屎運來碰上這玩意... 幫我找到 %s的話,我想我會給你相當豐厚的報酬</text>
+	</string>
+	<string id="simulation_task_24_fetch_finish">
+		<text>太棒了! 給你! 雙倍的豐厚報酬</text>
+	</string>
+	
+	<!-- Find Upgrade Parts Tasks -->	
+	<string id="simulation_task_25_name">
+		<text>提供升級套件: %s</text>
+	</string>
+	<string id="simulation_task_25_text">
+		<text>一個人想升級他的武器,他讓你幫他找到 %s,並帶給他 %s</text>
+	</string>
+	<string id="simulation_task_25_about">
+		<text>看到這把生鏽的破槍了嗎? 是時候對它特殊處理一下了, 幫我為他弄一些工具吧,我會好好報答你的</text>
+	</string>
+	<string id="simulation_task_25_fetch_about">
+		<text>看到這把生鏽的破槍了嗎? 是時候對它特殊處理一下了, 幫我為他弄一個 %s吧,我會好好報答你的</text>
+	</string>
+	<string id="simulation_task_25_fetch_finish">
+		<text>太棒了! 我真是迫不及待了, 拿好,我可是給了你雙倍的報酬</text>
+	</string>
+	
+	
+	<!-- HOSTAGE RESCUE FOR STALKER TASK -->
+	<string id="simulation_task_26_name">
+		<text>拯救菜鳥行動</text>
+	</string>
+	<string id="simulation_task_26_text">
+		<text>一個潛行者的朋友遭到一夥土匪的綁架, 他讓我試著把朋友救出來</text>
+	</string>
+	<string id="simulation_task_26_about">
+		<text>我是真的需要幫助了,好兄弟, 我的朋友被土匪搶劫並作為人質抓了起來, 我真不知道該怎麼辦了, 你覺得你有能力幫我把好朋友救出來嗎?</text>
+	</string>
+	<string id="simulation_task_26_finish">
+		<text>你做到了! 謝謝你, 潛行者! 看到我的好朋友能活著回來真好, 拿著這個,也許能解決你的問題</text>
+	</string>
+
+
+	<!-- HOSTAGE RESCUE FOR DUTY TASK -->
+	<string id="simulation_task_27_name">
+		<text>營救人質</text>
+	</string>
+	<string id="simulation_task_27_text">
+		<text>我被派去營救被劫持的一名紀律團成員</text>
+	</string>
+	<string id="simulation_task_27_about">
+		<text>潛行者,我們的同志受傷后被劫持了! 我迫切需要一個有能力的人來實施營救行動, 你認為你能幫我們拯救我們的朋友嗎?</text>
+	</string>
+	<string id="simulation_task_27_finish">
+		<text>謝謝你, 潛行者, 很高興你救了我們的戰友! 給你錢!</text>
+	</string>
+
+
+	<!-- HOSTAGE RESCUE FOR FREEDOM TASK -->
+	<string id="simulation_task_28_name">
+		<text>營救人質</text>
+	</string>
+	<string id="simulation_task_28_text">
+		<text>我奉命營救被劫持為人質的一名自由軍成員</text>
+	</string>
+	<string id="simulation_task_28_about">
+		<text>潛行者,我們一位兄弟受傷而被俘虜了! 我迫切需要一個有能力的人來實施營救行動, 你認為你能幫我們拯救我們的朋友嗎?</text>
+	</string>
+	<string id="simulation_task_28_finish">
+		<text>你做到了! 謝謝你, 潛行者! 能看到我的朋友活著回來真是太好了! 給你這些報酬</text>
+	</string>
+
+
+	<!-- HOSTAGE RESCUE FOR ECOG TASK -->
+	<string id="simulation_task_29_name">
+		<text>營救蛋頭</text>
+	</string>
+	<string id="simulation_task_29_text">
+		<text>從一夥土匪中救出生態學家</text>
+	</string>
+	<string id="simulation_task_29_about">
+		<text>拜託,請幫幫我們! 我的一個同事被綁架了, 你能幫忙救救他嗎? 他帶著蛋頭面罩</text>
+	</string>
+	<string id="simulation_task_29_finish">
+		<text>非常感謝,潛行者, 我同事能夠完好的回來真是太高興了! 請收下這個作為獎勵</text>
+	</string>
+
+
+	<!-- ASSASSINATION  FOR STALKER TASK -->
+	<string id="simulation_task_30_name">
+		<text>獵人還是獵物</text>
+	</string>
+	<string id="simulation_task_30_text">
+		<text>一名潛行者需要擺脫追殺</text>
+	</string>
+	<string id="simulation_task_30_about">
+		<text>你一定要幫幫我, 好兄弟! 一群混蛋正在買我的人頭, 幫我解決掉他們, 我會付給你雙倍的人頭! ...我是指價錢, 雙倍人頭的價錢</text>
+	</string>
+	<string id="simulation_task_30_finish">
+		<text>謝謝! 太謝謝了! 我終於可以睡個安穩覺了! 給你兩個人頭! ...我是指兩個人頭的價錢</text>
+	</string>
+
+
+	<!-- VENGEANCE  FOR STALKER TASK -->
+	<string id="simulation_task_31_name">
+		<text>血海深仇</text>
+	</string>
+	<string id="simulation_task_31_text">
+		<text>一個潛行者要我為他的同伴的死報仇</text>
+	</string>
+	<string id="simulation_task_31_about">
+		<text>昨晚一個土匪潛入我們的營地, 殘酷地殺害了我的朋友, 人渣! 畜生! 他活一天我的折磨就多一天, 替我宰了他, 潛行者, 作為回報, 我死去戰友的遺產都歸你!</text>
+	</string>
+	<string id="simulation_task_31_finish">
+		<text>謝謝你潛行者, 你是條漢子, 坐下和我喝一杯吧, 敬我死去的兄弟..</text>
+	</string>
+
+	<!-- ASSASINATION  FOR MILITARY TASK -->
+	<string id="simulation_task_32_name">
+		<text>斬首行動</text>
+	</string>
+	<string id="simulation_task_32_text">
+		<text>一些戰友正在賭你沒有能力刺殺一個高價值的目標</text>
+	</string>
+	<string id="simulation_task_32_about">
+		<text>咋, 你想升軍階? 我碰巧知道上層想要幹掉的一個高價值目標, 但我賭你根本沒那個膽子</text>
+	</string>
+	<string id="simulation_task_32_finish">
+		<text>我操? 你真的做到了? 媽的, 早知道連你也行的話, 我應該自己動手的... 算了, 下次不會再有這種好事了</text>
+	</string>
+
+	<!-- ASSASSINATION  FOR MERC OR BANDIT TASK -->
+	<string id="simulation_task_33_name">
+		<text>賞金獵手</text>
+	</string>
+	<string id="simulation_task_33_text">
+		<text>你接受了一份刺殺合同</text>
+	</string>
+	<string id="simulation_task_33_about">
+		<text>沒錯, 我確實有活, 實際上我手裡的活有點太多了, 你能幫我完成一份合同嗎? 賞金的話... 我九你一? 哈哈, 開玩笑的, 肯定是五五分嘛, 你看你那張臉, 至於嗎..</text>
+	</string>
+	<string id="simulation_task_33_finish">
+		<text>幹得漂亮, 給, 我九, 你一..</text>
+	</string>
+	
+	<!-- Redemption for Monolith Simulation Task -->
+	<string id="simulation_task_34_name">
+		<text>黑石之救贖</text>
+	</string>
+	<string id="simulation_task_34_text">
+		<text>一名黑石的兄弟被異教徒打敗了, 把他幹掉, 黑石的存在不容踐踏</text>
+	</string>
+	<string id="simulation_task_34_about">
+		<text>我的兄弟, 全能的黑石讓我獻祭一個異教徒, 但我卻失敗了, 辜負了黑石的託付, 你能幫助黑石嗎? 也算是給予我的救贖?</text>
+	</string>
+	<string id="simulation_task_34_finish">
+		<text>你做得很好, 能與你並肩, 為全能的黑石服務, 是我的榮幸</text>
+	</string>
+
+	<!-- Subcontractor for Bandit Simulation Task -->
+	<string id="simulation_task_35_name">
+		<text>二手合同</text>
+	</string>
+	<string id="simulation_task_35_text">
+		<text>你接手了一個土匪的殺人合同</text>
+	</string>
+	<string id="simulation_task_35_about">
+		<text>我他媽有太多的活要乾了, 你能幫我承擔一些嗎哥們? 我會把大部分報酬都給你</text>
+	</string>
+	<string id="simulation_task_35_finish">
+		<text>謝了, 這是我欠你的錢</text>
+	</string>
+
+	
+	<!-- Eliminate Enemy Forces for Monolith Simulation Task -->
+	<string id="simulation_task_36_name">
+		<text>凈化異端</text>
+	</string>
+	<string id="simulation_task_36_text">
+		<text>異端正在這片地區內活動, 我必須爲了黑石而戰!</text>
+	</string>
+	<string id="simulation_task_36_about">
+		<text>我的兄弟, 我們發現了附近的敵人, 去凈化他們的靈魂, 履行黑石的旨意!</text>
+	</string>
+	<string id="simulation_task_36_finish">
+		<text>你做得很好, 我的兄弟</text>
+	</string>
+
+	<!-- Scouting Expedition for Mercenary Simulation Task -->
+	<string id="simulation_task_37_name">
+		<text>偵察行動</text>
+	</string>
+	<string id="simulation_task_37_text">
+		<text>偵察目標區域, 不留活口</text>
+	</string>
+	<string id="simulation_task_37_about">
+		<text>根據報告有敵人在這附近活動, 上面要求我們的隊伍與他們交戰, 我在尋找一名能在前線偵查的戰士, 以準備對敵人發動進攻</text>
+	</string>
+	<string id="simulation_task_37_finish">
+		<text>好手段! 你做事乾淨利落</text>
+	</string>
+
+	
+	<!-- Clear Research Area for Ecologist Simulation Task -->
+	<string id="simulation_task_38_name">
+		<text>開闢科研區域</text>
+	</string>
+	<string id="simulation_task_38_text">
+		<text>附近的敵對陣營一直在騷擾生態學家們, 把他們趕出這片區域, 科研工作才能順利開展</text>
+	</string>
+	<string id="simulation_task_38_about">
+		<text>我必須要去一片重要區域進行研究, 但是有一夥潛行者在那裡, 每當我靠近時他們就朝我開槍, 這個研究非常重要, 你能"說服"他們離開嗎?</text>
+	</string>
+	<string id="simulation_task_38_finish">
+		<text>謝謝你潛行者, 你真是幫了我的大忙, 請把這個當作我的謝意</text>
+	</string>
+	
+	<!-- Push Back Monolith Incursion for Freedom Simulation Task -->
+	<string id="simulation_task_39_name">
+		<text>擊退黑石的進犯</text>
+	</string>
+	<string id="simulation_task_39_text">
+		<text>自由軍成員在這附近發現了黑石軍團, 我們必須阻止黑石的進一步入侵, 否則可能會毀了人們喝酒的興致</text>
+	</string>
+	<string id="simulation_task_39_about">
+		<text>*嗝*...你猜怎麼著? 就在剛才我喝...呃...我是說"和"弟兄們巡邏的時候, 發現離這裡不遠有一些黑石軍人, 我必須回去...*嗝*...通報, 你能幫我盯著他們嗎? 我真的很想幫你, 但我有點頭暈...呃, 我是說頭疼, 對, 是頭疼, 這附近肯定有個靈能場什麼的! ...*嗝*...</text>
+	</string>
+	<string id="simulation_task_39_finish">
+		<text>搞啥? 我只是叫你盯著他們而已, 結果你三兩下把他們全乾掉了? 那我不是白跑一趟嗎? 盧卡什還說增援馬上到, 你這麼一搞, 他們也不用來了... 好吧, 盧卡什發的賞金就給你好了...\n你可真牛逼, 像你這樣的暴力狂我可絕對要離你遠一點! 快走吧! 我這酒還沒...呃...我是說我"這就"...要去巡邏了! *嗝*...</text>
+	</string>
+	
+	<!-- Interdict Enemy Forces for Duty Simulation Task -->
+	<string id="simulation_task_40_name">
+		<text>阻擊敵人</text>
+	</string>
+	<string id="simulation_task_40_text">
+		<text>阻擊目標區域的敵人</text>
+	</string>
+	<string id="simulation_task_40_about">
+		<text>一夥土匪正在往這邊移動, 我得去通知指揮官, 頂住他們直到我回來!</text>
+	</string>
+	<string id="simulation_task_40_finish">
+		<text>太出色了! 你是名不錯的士兵!</text>
+	</string>
+	
+	<!-- Eliminate Dangerous Mutants for Duty Simulation Task -->
+	<string id="simulation_task_41_name">
+		<text>怪物獵手</text>
+	</string>
+	<string id="simulation_task_41_text">
+		<text>為紀律團清理附近的危險怪物</text>
+	</string>
+	<string id="simulation_task_41_about">
+		<text>因為羅斯托克在特異區的地位, 我們一直在控制周圍危險怪物的數量, 出發吧同志, 滅了那些怪物, 不然菜鳥們會被殺的</text>
+	</string>
+	<string id="simulation_task_41_finish">
+		<text>幹得好, 菜鳥們會感謝你的</text>
+	</string>
+
+	<!-- Eliminate Dangerous Mutants for Clear Sky Simulation Task -->
+	<string id="simulation_task_42_name">
+		<text>怪物獵手</text>
+	</string>
+	<string id="simulation_task_42_text">
+		<text>清除特異區的危險怪物</text>
+	</string>
+	<string id="simulation_task_42_about">
+		<text>媽的, 我剛被草叢裡的一群怪物襲擊了, 我告訴你位置, 在它們填飽肚子之前把它們幹掉!</text>
+	</string>
+	<string id="simulation_task_42_finish">
+		<text>謝謝, 這下特異區的空氣變得香甜了許多</text>
+	</string>
+
+	<!-- Eliminate Dangerous Mutants for Monolith Simulation Task -->
+	<string id="simulation_task_43_name">
+		<text>怪物獵手</text>
+	</string>
+	<string id="simulation_task_43_text">
+		<text>清除城區附近的危險怪物</text>
+	</string>
+	<string id="simulation_task_43_about">
+		<text>這附近有一個危險的怪物, 它已經害死了一個兄弟, 去消滅它</text>
+	</string>
+	<string id="simulation_task_43_finish">
+		<text>你做的很好,我的兄弟</text>
+	</string>
+	
+	<!-- Search the Stash Simulation Task -->
+	<string id="simulation_task_44_name">
+		<text>藏寶獵人</text>
+	</string>
+	<string id="simulation_task_44_text">
+		<text>一名潛行者給了一個不錯的藏物點位置, 但他需要裡面的PDA</text>
+	</string>
+	<string id="simulation_task_44_about">
+		<text>我知道一個笨蛋把東西藏在了哪, 你能幫我找裡面的一個PDA嗎, 剩下的都是你的</text>
+	</string>
+	<string id="simulation_task_44_finish">
+		<text>謝謝你潛行者!</text>
+	</string>
+
+	<!-- Drug Runner for Freedom Simulation Task -->
+	<string id="simulation_task_45_name">
+		<text>走私藥物</text>
+	</string>
+	<string id="simulation_task_45_text">
+		<text>一名自由軍成員需要運送"醫療貨物"</text>
+	</string>
+	<string id="simulation_task_45_about">
+		<text>*啊嚏!* 哎! 夥計, 有一批貨...呃...是醫療補給, 對, 啪的一聲就丟了! 你能找到它們帶回來嗎? 地方雖然有點偏僻...*啊嚏!*...但你的話應該沒什麼問題, 就算是賺點外快, 對吧?</text>
+	</string>
+	<string id="simulation_task_45_finish">
+		<text>哈哈,真不錯! 真是太感謝了, 夥計! 我和弟兄們有些"癥狀"需要處理, 時間真是剛剛好... 啥? 你說你也受傷了? 不不不, 這種藥非常難處理, 你這樣的門外漢可掌握不了... 好了拿著這個走吧! *啊嚏!*</text>
+	</string>
+
+	<!-- Retrieve Documents for Clear Sky Simulation Task -->
+	<string id="simulation_task_46_name">
+		<text>機密檔案: 晴空</text>
+	</string>
+	<string id="simulation_task_46_text">
+		<text>一個晴空成員讓你取回他的檔案</text>
+	</string>
+	<string id="simulation_task_46_about">
+		<text>我本來帶著一些很重要的檔案, 但剛才被怪物襲擊, 所以我臨時藏了起來, 我到現在都不敢過去, 如果你能拿給我就再好不過了</text>
+	</string>
+	<string id="simulation_task_46_finish">
+		<text>謝謝你潛行者!</text>
+	</string>
+
+	
+	<!-- Find PDA Tasks -->
+	<string id="simulation_task_cl_name">
+		<text>低頭族的困擾</text>
+	</string>
+	<string id="simulation_task_cl_text">
+		<text>潛行者讓你為他找一個PDA</text>
+	</string>
+	<string id="simulation_task_cl_about">
+		<text>嘿, 夥計, 能幫幫我嗎? 我的PDA叫我一屁股坐壞了, 能不能幫我搞個新的?</text>
+	</string>
+	<string id="simulation_task_cl_fetch_about">
+		<text>嘿, 夥計, 能幫幫我嗎? 我的PDA叫我一屁股坐壞了, 能不能幫我搞個新的?</text>
+	</string>
+	<string id="simulation_task_cl_fetch_finish">
+		<text>謝謝謝謝! 收下這個吧</text>
+	</string>
+	<string id="simulation_task_ec_fetch_about">
+		<text>見鬼, 我剛才蹲坑的時候PDA掉下去了! 我估計就算撈上來也壞了, 你那裡有新的嗎?</text>
+	</string>
+	<string id="simulation_task_ec_fetch_finish">
+		<text>謝謝你, 收下這個吧</text>
+	</string>
+
+	<!-- Deliver Package Simulation Task -->
+	<string id="simulation_task_47_name">
+		<text>特異區快遞</text>
+	</string>
+	<string id="simulation_task_47_text_0">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去, 但卻被你扔在了某個地方</text>
+	</string>
+	<string id="simulation_task_47_text_1">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去</text>
+	</string>
+	<string id="simulation_task_47_about">
+		<text>我有個重要的包裹得給我的朋友, 但是我得留在這裡辦事沒法離開, 幫我把這個東西帶給他好嗎? 他會給你錢的</text>
+	</string>
+	<string id="simulation_task_47_finish">
+		<text>謝謝..</text>
+	</string>
+	<string id="st_simulation_task_47_0">
+		<text>嘿, 你的快遞, 你朋友$name給你的</text>
+	</string>
+	<string id="st_simulation_task_47_1">
+		<text>怎麼這麼慢...我是說...謝謝! 我會讓他知道的, 給你路費</text>
+	</string>
+
+	<string id="simulation_task_48_name">
+		<text>特異區快遞</text>
+	</string>
+	<string id="simulation_task_48_text_0">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去, 但卻被你扔在了某個地方</text>
+	</string>
+	<string id="simulation_task_48_text_1">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去</text>
+	</string>
+	<string id="simulation_task_48_about">
+		<text>我有個重要的包裹得給我的朋友, 但是我得留在這裡辦事沒法離開, 幫我把這個東西帶給他好嗎? 他會給你錢的</text>
+	</string>
+	<string id="simulation_task_48_finish">
+		<text>謝謝..</text>
+	</string>
+	<string id="st_simulation_task_48_0">
+		<text>嘿, 你的快遞, 你朋友$name給你的</text>
+	</string>
+	<string id="st_simulation_task_48_1">
+		<text>我收到了他的簡訊, 謝謝! 請收下這些, 就當是路費了</text>
+	</string>
+
+	<string id="simulation_task_49_name">
+		<text>特異區快遞</text>
+	</string>
+	<string id="simulation_task_49_text_0">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去, 但卻被你扔在了某個地方</text>
+	</string>
+	<string id="simulation_task_49_text_1">
+		<text>$comm 讓你把 $item_1 給他的朋友送過去</text>
+	</string>
+	<string id="simulation_task_49_about">
+		<text>你聽到了吧? 你絕對聽到了吧? 剛才電話里罵罵咧咧的那位, 就爲了 - 這個鬼東西! 他一天能給我打兩百個電話! 要不是我有正事, 我絕對會去他面前把這玩意整個塞進他的屁股里呀! 所以你願意幫我嗎?
+		\n啥? 這麼大怎麼塞進去? 我是說你幫我送過去啦! 你看你這個人..</text>
+	</string>
+	<string id="simulation_task_49_finish">
+		<text>謝謝..</text>
+	</string>
+	<string id="st_simulation_task_49_0">
+		<text>嘿! 你的快遞! 你哥們$name說讓我把這個塞進你的屁股, 不過他應該只是在開玩笑</text>
+	</string>
+	<string id="st_simulation_task_49_1">
+		<text>去他的! 操! 這個臭屁大王! 他能要點臉嗎? 簡直比青蛙的小便還要下賤!\n哦對, 請原諒我的無禮, 你是個好哥們, 給你的路費...\n</text>
+	</string>
+
+	<!-- Take Measurements of Anomaly Field Simulation Task -->
+	<string id="simulation_task_50_name">
+		<text>測量異常點</text>
+	</string>
+	<string id="simulation_task_50_text_0">
+		<text>$comm 要求你協助他研究一個異常點, 但是你把$item_1給丟到了某處</text>
+	</string>
+	<string id="simulation_task_50_text_1">
+		<text>$comm 要求你協助他研究一個異常點 \n前往被標記的地點</text>
+	</string>
+	<string id="simulation_task_50_text_2">
+		<text>$comm 要求你協助他研究一個異常點 \n使用 $item_1 來進行測量</text>
+	</string>
+	<string id="simulation_task_50_text_3">
+		<text>$comm  要求你協助他研究一個異常點 \n把 $item_1 帶回給他並彙報數據</text>
+	</string>
+	<string id="simulation_task_50_about">
+		<text>卡蘭查教授要我前去研究一處異常點, 但我已經有一堆麻煩事了, 我看你也是塊材料, 這麼和你說吧, 如果你能帶上我的裝置去幫我測量的話, 那就幫了大忙了</text>
+	</string>
+	<string id="simulation_task_50_finish">
+		<text>你得到數據了? 很好, 這是給你的酬謝</text>
+	</string>
+	
+	<!-- Take Measurements of Anomaly Field Simulation Task -->
+	<string id="simulation_task_51_name">
+		<text>測量異常點</text>
+	</string>
+	<string id="simulation_task_51_text_0">
+		<text>$comm 要求你協助他研究一個異常點, 但是你把$item_1給丟到了某處</text>
+	</string>
+	<string id="simulation_task_51_text_1">
+		<text>$comm 要求你協助他研究一個異常點, \n前往被標記的地點</text>
+	</string>
+	<string id="simulation_task_51_text_2">
+		<text>$comm 要求你協助他研究一個異常點, \n使用 $item_1來進行測量</text>
+	</string>
+	<string id="simulation_task_51_text_3">
+		<text>$comm 要求你協助他研究一個異常點, \n把 $item_1 帶回給他並彙報數據</text>
+	</string>
+	<string id="simulation_task_51_about">
+		<text>有啊, 我太有了! 我們收到了異常區域的報告, 我需要有人去測量數據並把數據帶回來, 我已經調整了裝置, 使它能夠承受惡劣的環境條件, 並且能夠在遭受干擾的情況下收集準確的數據, 你能幫我嗎?</text>
+	</string>
+	<string id="simulation_task_51_finish">
+		<text>很不錯! 你幫了科學界一個大忙! 給! 請收下這些</text>
+	</string>
+	
+	<!-- Find Fate of Missing Squad Simulation Task -->
+	<string id="simulation_task_52_name">
+		<text>永遠消失的電波 ($freq MHz)</text>
+	</string>
+	<string id="simulation_task_52_text_0">
+		<text>$comm 要你去調查並找到他失蹤的小隊, 搜尋任務需要一個$item_1</text>
+	</string>
+	<string id="simulation_task_52_text_1">
+		<text>$comm 要你去調查並找到他失蹤的小隊 \n前往$map</text>
+	</string>
+	<string id="simulation_task_52_text_2">
+		<text>$comm 要你去調查並找到他失蹤的小隊 \n使用 $item_1 並將頻率設定為 $freq MHz, 在附近搜尋訊號反應</text>
+	</string>
+	<string id="simulation_task_52_text_3">
+		<text>$comm 要你去調查並找到他失蹤的小隊 \n我需要找到並帶回 $item_2</text>
+	</string>
+	<string id="simulation_task_52_text_4">
+		<text>$comm 要你去調查並找到他失蹤的小隊 \n帶著你的發現回到他那裡</text>
+	</string>
+	<string id="simulation_task_52_about">
+		<text>事關緊急! 前幾天我派出了一個小隊執行任務, 但他們返程途中失去了聯繫, 就像人間蒸發一樣! 我需要你找到他們, 或者至少找到一點線索...\n你有一個射頻接收器, 對吧? 我們的小隊也裝備了這個, 你能用它來搜索附近的訊號</text>
+	</string>
+	<string id="simulation_task_52_finish">
+		<text>該死! 這都怪我... 這個PDA里記錄下了他們生命中的最後時刻, 應該是遭到了埋伏, 謝謝你... 這是一點報酬</text>
+	</string>
+	
+	<!-- FIND SUPPLIES FOR RENEGADE TASK -->
+	<string id="simulation_task_53_name">
+		<text>尋找物資 %s</text>
+	</string>
+	<string id="simulation_task_53_text">
+		<text>為叛節者獲取 %s</text>
+	</string>
+	<string id="simulation_task_53_about">
+		<text>你想交換一些好東西嗎?</text>
+	</string>
+	<string id="simulation_task_53_fetch_about">
+		<text>如果你能找到 %s的話, 我正好有些好東西可以給你</text>
+	</string>
+	<string id="simulation_task_53_fetch_finish">
+		<text>好傢伙, 謝謝!</text>
+	</string>
+	
+	<!-- FIND WEAPON FOR RENEGADE TASK -->
+	<string id="simulation_task_54_name">
+		<text>走私武器</text>
+	</string>
+	<string id="simulation_task_54_text">
+		<text>一名叛節者想弄一把不會被追查到的 %s, 鬼知道他要幹什麼</text>
+	</string>
+	<string id="simulation_task_54_about">
+		<text>聽著, 我需要一把不會讓那些多管閒事的傢伙找上門的武器, 懂? 你會幫我的對吧?</text>
+	</string>
+	<string id="simulation_task_54_fetch_about">
+		<text>我想要一把 %s, 不管你用那種手段, 拿過來就付給你雙倍的價錢</text>
+	</string>
+	<string id="simulation_task_54_fetch_finish">
+		<text>好! 這是你的了, 你從沒見過我, 知道了嗎?</text>
+	</string>
+	
+	<!-- Mutant Meat Stew for Renegade Simulation Task -->
+	<string id="simulation_task_55_name">
+		<text>黑暗料理: 清蒸%s</text>
+	</string>
+	<string id="simulation_task_55_text">
+		<text>一名叛節者對於%s的烹飪有著獨特的見解, 帶一些給他</text>
+	</string>
+	<string id="simulation_task_55_about">
+		<text>哥們, 你知道怪物嚐起來是什麼味嗎? 很多人惟恐避之不及, 但我和那些懦夫不一樣, 你肯定是個打獵的好手吧?</text>
+	</string>
+	<string id="simulation_task_55_fetch_about">
+		<text>如果你能給我一些%s, 你絕對忘不掉它的味道, 嗯...我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_55_fetch_finish">
+		<text>好! 我可以大飽口福了! 謝了小子, 給你錢!, 還有上一個想幫我結果死掉的傢伙的東西</text>
+	</string>
+	
+	<!-- Subcontractor for Renegade Simulation Task -->
+	<string id="simulation_task_56_name">
+		<text>眾叛親離</text>
+	</string>
+	<string id="simulation_task_56_text">
+		<text>你接手了一個為叛節者殺人的任務</text>
+	</string>
+	<string id="simulation_task_56_about">
+		<text>手上的事情太多了, 我想你能幫我分擔一些? 我把大部分的酬金給你, 如何?</text>
+	</string>
+	<string id="simulation_task_56_finish">
+		<text>謝謝! 現在小心點, 也許你會是下一個目標</text>
+	</string>
+	
+		<!-- Find Supplies for ISG Simulation Task -->
+	<string id="simulation_task_57_name">
+		<text>尋找物資: %s</text>
+	</string>
+	<string id="simulation_task_57_text">
+		<text>一名UNISG成員請求尋找 %s</text>
+	</string>
+	<string id="simulation_task_57_about">
+		<text>你能幫我個忙嗎? 我的補給已經見底了, 你能幫我弄些嗎?</text>
+	</string>
+	<string id="simulation_task_57_fetch_about">
+		<text>我的%s不夠了, 如果你手頭有了就來找我</text>
+	</string>
+	<string id="simulation_task_57_fetch_finish">
+		<text>謝謝!</text>
+	</string>
+	
+		<!-- Find a Reliable Weapon for ISG Simulation Task -->
+	<string id="simulation_task_58_name">
+		<text>武器補給: %s</text>
+	</string>
+	<string id="simulation_task_58_text">
+		<text>弄到一把成色不錯的 %s 給UNISG成員</text>
+	</string>
+	<string id="simulation_task_58_about">
+		<text>看看! 這是上頭髮下來的破槍, 在戰鬥中真是要多爛有多爛! 你能幫我弄把新的嗎?</text>
+	</string>
+	<string id="simulation_task_58_fetch_about">
+		<text>找把 %s給我, 我會付錢的</text>
+	</string>
+	<string id="simulation_task_58_fetch_finish">
+		<text>很好! 真是把好槍! 謝謝你的幫助</text>
+	</string>
+	
+	<!-- Scouting Expedition for ISG Simulation Task -->
+	<string id="simulation_task_59_name">
+		<text>利益衝突</text>
+	</string>
+	<string id="simulation_task_59_text">
+		<text>清理髮現入侵者的區域, 消滅所有目擊者</text>
+	</string>
+	<string id="simulation_task_59_about">
+		<text>有一群人可能會對我們的任務構成威脅, 我不在乎怎麼做, 只要能讓他們在這裡消失, 我正在找一個願意幹這個事的人</text>
+	</string>
+	<string id="simulation_task_59_finish">
+		<text>很好! 幹得漂亮!</text>
+	</string>
+	
+	<!-- FIND ARTEFACT FOR ISG TASK -->
+	<string id="simulation_task_60_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_60_text">
+		<text>一名UNISG成員正在尋找 "%s"</text>
+	</string>
+	<string id="simulation_task_60_about">
+		<text>你在尋找神器上有什麼擅長之處嗎?</text>
+	</string>
+	<string id="simulation_task_60_fetch_about">
+		<text>我們的客戶正在研究神器, 他們正需要"%s", 猜猜誰是被指派執行此任務的幸運兒? 這就對了, 所以幫我個忙吧, 我會付很多錢</text>
+	</string>
+	<string id="simulation_task_60_fetch_finish">
+		<text>終於得到了! 你不知道我找了多久! 給你! 這是你應得的</text>
+	</string>
+	
+	<!-- Take Measurements of Anomaly Field Simulation Task -->
+	<string id="simulation_task_61_name">
+		<text>測量異常點</text>
+	</string>
+	<string id="simulation_task_61_text_0">
+		<text>$comm 要求你協助他研究一個異常點, 但是你把$item_1給丟到了某處</text>
+	</string>
+	<string id="simulation_task_61_text_1">
+		<text>$comm 要求你協助調查一處異常點 \n前往標記的地點</text>
+	</string>
+	<string id="simulation_task_61_text_2">
+		<text>$comm 要求你協助調查一處異常點 \n使用 $item_1 來獲取數據</text>
+	</string>
+	<string id="simulation_task_61_text_3">
+		<text>$comm 要求你協助調查一處異常點 \n把 $item_1 帶回給他,並上報數據</text>
+	</string>
+	<string id="simulation_task_61_about">
+		<text>有啊, 我太有了! 我們收到了異常區域的報告, 我需要有人去測量數據並把數據帶回來, 我已經調整了裝置, 使它能夠承受惡劣的環境條件, 並且能夠在遭受干擾的情況下收集準確的數據, 你能幫我嗎?</text>
+	</string>
+	<string id="simulation_task_61_finish">
+		<text>很好! 你幫了我大忙! 拿好, 收下這些!</text>
+	</string>
+	
+	<!-- Bring patches for Sin Simulation Task -->
+	<string id="simulation_task_62_name">
+		<text>陣營之爭: %s</text>
+	</string>
+	<string id="simulation_task_62_text">
+		<text>一名原罪的成員叮囑我弄些 %s</text>
+	</string>
+	<string id="simulation_task_62_about">
+		<text>這個特異區必須從骯髒的污泥中浴火重生, 殺了這些渣滓, 把他們制服的臂章給我!</text>
+	</string>
+	<string id="simulation_task_62_fetch_about">
+		<text>這個特異區必須從骯髒的污泥中浴火重生, 殺了這些渣滓, 把他們制服的臂章給我!</text>
+	</string>
+	<string id="simulation_task_62_fetch_finish">
+		<text>你完成的很好, 給你錢!</text>
+	</string>
+	
+	<!-- Redemption for Sin Simulation Task -->
+	<string id="simulation_task_63_name">
+		<text>原罪之救贖</text>
+	</string>
+	<string id="simulation_task_63_text">
+		<text>一個戰士被異教徒打倒了, 必須幫助我們的兄弟, 不能讓黑暗之神失望</text>
+	</string>
+	<string id="simulation_task_63_about">
+		<text>好兄弟, 爲了我們的事業! 把你的力量為我所用!</text>
+	</string>
+	<string id="simulation_task_63_finish">
+		<text>你做的很好! 黑暗之神迴應了!</text>
+	</string>
+	
+	<!-- Eliminate Enemy Forces for Sin Simulation Task -->
+	<string id="simulation_task_64_name">
+		<text>凈化異端</text>
+	</string>
+	<string id="simulation_task_64_text">
+		<text>敵人在這片區域出現了, 消滅他們! 我們的事業不能止步不前!</text>
+	</string>
+	<string id="simulation_task_64_about">
+		<text>我的兄弟, 我們發現了附近的敵人, 告訴兄弟們準備作戰! 去吧! 異教徒必須被凈化!</text>
+	</string>
+	<string id="simulation_task_64_finish">
+		<text>你做的太好了, 我的兄弟</text>
+	</string>
+
+	<!-- Eliminate Dangerous Mutants for Sin Simulation Task -->
+	<string id="simulation_task_65_name">
+		<text>食物短缺</text>
+	</string>
+	<string id="simulation_task_65_text">
+		<text>為原罪消滅怪物</text>
+	</string>
+	<string id="simulation_task_65_about">
+		<text>我們是黑石意志的延伸, 我們要做的就是維持物種的平衡, 讓不潔的靈魂經由我們的身體得到凈化</text>
+	</string>
+	<string id="simulation_task_65_finish">
+		<text>你做的很好, 我會叫人去搬運那些屍體的</text>
+	</string>
+	
+	<!-- Night=time Mutant hunting TASK -->
+	<string id="simulation_task_66_name">
+		<text>黑夜之懼</text>
+	</string>
+	<string id="simulation_task_66_text">
+		<text>我要幫助追捕一隻在夜間遊蕩的危險捕食者, 最好在天亮前解決它</text>
+	</string>
+	<string id="simulation_task_66_about">
+		<text>昨天, 一隻夜行食肉動物在這一帶遊蕩, 它殺死了我們一個夥伴, 並且在日出后就會躲起來, 所以我們動作要快! 你也要來嗎?</text>
+	</string>
+	<string id="simulation_task_66_finish">
+		<text>呼! 太險了... 非常感謝! 給你報酬, 祝你好運!</text>
+	</string>
+	
+	<string id="simulation_task_67_name">
+		<text>黑夜之懼</text>
+	</string>
+	<string id="simulation_task_67_text">
+		<text>我要幫助消滅一種夜間遊蕩的危險生物, 最好在它回來殺死更多人之前找到它</text>
+	</string>
+	<string id="simulation_task_67_about">
+		<text>聽著, 我們的任務是殺死一個危險的夜行動物, 必須在今晚完成, 否則它肯定會回來殺死更多的戰友, 絕不能讓這種事發生! 如果你願意幫忙, 我們可以帶你一起, 我們一起去把野獸拿下, 如何?</text>
+	</string>
+	<string id="simulation_task_67_finish">
+		<text>我們完成了... 幹得好,我的朋友! 收下這個, 我欠你一條命</text>
+	</string>
+	
+		<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_68_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_68_text">
+		<text>一個潛行者正在懸賞%s神器</text>
+	</string>
+	<string id="simulation_task_68_about">
+		<text>你擅長獵取%s神器嗎?</text>
+	</string>
+	<string id="simulation_task_68_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_68_fetch_finish">
+		<text>終於找到了!終於來了! 你不知道我為這個尋找了多久! 給, 給你錢!</text>
+	</string>
+
+	<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_69_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_69_text">
+		<text>生態學家正在懸賞%s神器</text>
+	</string>
+	<string id="simulation_task_69_about">
+		<text>你擅長獵取神器嗎?</text>
+	</string>
+	<string id="simulation_task_69_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_69_fetch_finish">
+		<text>終於來了! 你不知道我為這個尋找了多久, 給你, 給你錢!</text>
+	</string>
+	
+		<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_70_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_70_text">
+		<text>自由軍正在懸賞%s神器</text>
+	</string>
+	<string id="simulation_task_70_about">
+		<text>你擅長獵取神器嗎?</text>
+	</string>
+	<string id="simulation_task_70_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_70_fetch_finish">
+		<text>終於來了! 你不知道我為這個尋找了多久! 給你! 給你錢!</text>
+	</string>
+	
+		<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_71_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_71_text">
+		<text>一個僱傭兵正在懸賞%s</text>
+	</string>
+	<string id="simulation_task_71_about">
+		<text>你擅長獵取神器嗎?</text>
+	</string>
+	<string id="simulation_task_71_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_71_fetch_finish">
+		<text>終於來了! 你不知道我為這個尋找了多久, 給你! 給你錢!!</text>
+	</string>
+	
+		<!-- FIND ARTEFACT FOR STALKER TASK -->
+	<string id="simulation_task_72_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_72_text">
+		<text>一個潛行者正在懸賞%s神器</text>
+	</string>
+	<string id="simulation_task_72_about">
+		<text>你擅長獵取神器嗎?</text>
+	</string>
+	<string id="simulation_task_72_fetch_about">
+		<text>如果你碰巧找到了"%s", 請務必告訴我, 我真的很想要一個! 我出價包你滿意!</text>
+	</string>
+	<string id="simulation_task_72_fetch_finish">
+		<text>終於來了! 你不知道我為這個尋找了多久, 給你! 給你錢!!</text>
+	</string>
+	
+		<!-- FIND ARTEFACT FOR MILITARY TASK -->
+	<string id="simulation_task_73_name">
+		<text>神器收藏: %s</text>
+	</string>
+	<string id="simulation_task_73_text">
+		<text>一個士兵想要收藏%s</text>
+	</string>
+	<string id="simulation_task_73_about">
+		<text>嘿, 聽著, 夥計! 我知道這違反了規定, 但我很快就要回家了, 我想帶點紀念品回去, 你能為我找到一件神器嗎?</text>
+	</string>
+	<string id="simulation_task_73_fetch_about">
+		<text>我想得到"%s", 如果你能給我找到一個, 我就把我這個月賺的錢都給你!</text>
+	</string>
+	<string id="simulation_task_73_fetch_finish">
+		<text>太棒了! 這是咱們之間的事, 不要讓其他人知道!</text>
+	</string>
+	
+		<!-- FIND MUTANT MEAT FOR STALKER, CLEAR SKY, MERC, FREEDOM, OR BANDIT TASK -->
+	<string id="simulation_task_74_name">
+		<text>黑暗料理: 涼拌%s</text>
+	</string>
+	<string id="simulation_task_74_text">
+		<text>某個潛行者對怪物肉的處理有著獨到的見解, 需要把%s帶給他</text>
+	</string>
+	<string id="simulation_task_74_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人都不會碰它,除非他們餓壞了, 但我個人喜歡它, 你擅長打獵對嗎?</text>
+	</string>
+	<string id="simulation_task_74_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你吃了還想吃! 嗯.... 我一想到這個就會流口水</text>
+	</string>
+	<string id="simulation_task_74_fetch_finish">
+		<text>謝謝你, 潛行者! 給你錢! 噢噢! 心心念唸的美味! 終於...(吞口水)</text>
+	</string>
+	
+		<!-- FIND MUTANT MEAT FOR STALKER, CLEAR SKY, MERC, FREEDOM, OR BANDIT TASK -->
+	<string id="simulation_task_75_name">
+		<text>黑暗料理: 油炸%s</text>
+	</string>
+	<string id="simulation_task_75_text">
+		<text>某個潛行者對怪物肉的處理有著獨到的見解, 需要把%s帶給他</text>
+	</string>
+	<string id="simulation_task_75_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_75_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_75_fetch_finish">
+		<text>謝謝你, 潛行者! 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<string id="simulation_task_76_name">
+		<text>黑暗料理: 燒烤%s</text>
+	</string>
+	<string id="simulation_task_76_text">
+		<text>某個土匪有一個烹飪變異肉的祖傳配方,需要 %s帶到他那裡去, </text>
+	</string>
+	<string id="simulation_task_76_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_76_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_76_fetch_finish">
+		<text>謝謝你, 給你錢!, 還有一點戰利品</text>
+	</string>
+	
+		<string id="simulation_task_77_name">
+		<text>黑暗料理: 紅燜%s</text>
+	</string>
+	<string id="simulation_task_77_text">
+		<text>某個土匪有一個烹飪變異肉的祖傳配方,需要 %s拿來給他, </text>
+	</string>
+	<string id="simulation_task_77_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_77_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_77_fetch_finish">
+		<text>謝謝你,給你錢!,還有一點戰利品給你, </text>
+	</string>
+	
+		<string id="simulation_task_78_name">
+		<text>黑暗料理: 泡椒%s</text>
+	</string>
+	<string id="simulation_task_78_text">
+		<text>某個兄弟有一個烹飪變異肉的祖傳配方, 需要把 %s送到他那裡</text>
+	</string>
+	<string id="simulation_task_78_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_78_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_78_fetch_finish">
+		<text>是的！我今晚要吃得好！謝謝你,兄弟, 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<string id="simulation_task_79_name">
+		<text>黑暗料理: 醋溜%s</text>
+	</string>
+	<string id="simulation_task_79_text">
+		<text>某個潛行者對怪物肉的處理有著獨到的見解,需要把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_79_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_79_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_79_fetch_finish">
+		<text>謝謝你, 潛行者, 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<string id="simulation_task_80_name">
+		<text>黑暗料理: 蔥爆%s</text>
+	</string>
+	<string id="simulation_task_80_text">
+		<text>某個潛行者有一個烹飪變異肉的祖傳配方, 需要把 %s送到他那裡, </text>
+	</string>
+	<string id="simulation_task_80_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_80_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_80_fetch_finish">
+		<text>謝謝你, 潛行者, 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<string id="simulation_task_81_name">
+		<text>黑暗料理: 煙燻%s</text>
+	</string>
+	<string id="simulation_task_81_text">
+		<text>某個潛行者對怪物肉的處理有著獨到的見解,需要把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_81_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_81_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_81_fetch_finish">
+		<text>是的！我知道！我知道, 謝謝你, 潛行者, 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<string id="simulation_task_82_name">
+		<text>黑暗料理: 清蒸%s</text>
+	</string>
+	<string id="simulation_task_82_text">
+		<text>某個潛行者對怪物肉的處理有著獨到的見解,需要把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_82_about">
+		<text>夥計, 你試過變異怪物的肉嗎? 很多人哪怕餓死都不會碰它, 但我卻超喜歡那個味道! 我聽說你擅長打獵?</text>
+	</string>
+	<string id="simulation_task_82_fetch_about">
+		<text>如果你能給我弄到幾塊上好的%s, 我絕對讓你想把手指頭都舔一遍! 嗯.... 我已經開始流口水了!</text>
+	</string>
+	<string id="simulation_task_82_fetch_finish">
+		<text>謝謝你, 潛行者, 給你錢! 噢噢! 心心念唸的美味! 終於...(嚥口水)</text>
+	</string>
+	
+		<!-- FIND MUTANT PARTS FOR LONERS TASK -->
+	<string id="simulation_task_83_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_83_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_83_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_83_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬, 潛行者</text>
+	</string>
+	<string id="simulation_task_83_fetch_finish">
+		<text>好, 又一個威脅被消除了, 營地也有了新的裝飾! 真好</text>
+	</string>
+	
+		<!-- FIND MUTANT PARTS FOR LONERS TASK -->
+	<string id="simulation_task_84_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_84_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_84_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_84_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_84_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_85_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_85_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_85_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_85_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_85_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_86_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_86_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_86_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_86_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_86_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_87_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_87_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_87_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_87_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_87_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_88_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_88_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_88_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_88_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_88_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<!-- FIND MUTANT PARTS FOR ECOGS TASK -->
+	<string id="simulation_task_89_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_89_text">
+		<text>來自 %s的 %s要求你從一個 %s中提取組織樣本</text>
+	</string>
+	<string id="simulation_task_89_about">
+		<text>我需要一個有經驗的潛行者或變異怪物獵人, 你是那個人嗎?</text>
+	</string>
+	<string id="simulation_task_89_fetch_about">
+		<text>生態學家們需要收集一個%s的組織樣本, 我不管你是怎麼得到的, 只要確保它是新鮮的, 找到的話就拿來, 我會高價收購 </text>
+	</string>
+	<string id="simulation_task_89_fetch_finish">
+		<text>謝謝你,先生, 這將對我們的研究有極大的幫助, </text>
+	</string>
+	
+			<string id="simulation_task_90_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_90_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_90_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_90_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_90_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_91_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_91_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_91_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_91_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_91_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<string id="simulation_task_92_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_92_text">
+		<text>來自 %s的 %s要求你從一個 %s中提取組織樣本, </text>
+	</string>
+	<string id="simulation_task_92_about">
+		<text>我需要一個有經驗的潛行者或變異怪物獵人, 你是那個人嗎?</text>
+	</string>
+	<string id="simulation_task_92_fetch_about">
+		<text>生態學家們需要收集一個%s的組織樣本, 我不管你是怎麼得到的, 只要確保它是新鮮的, 找到的話就拿來, 我會高價收購</text>
+	</string>
+	<string id="simulation_task_92_fetch_finish">
+		<text>謝謝你,先生, 這將對我們的研究有極大的幫助, </text>
+	</string>
+	
+			<string id="simulation_task_93_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_93_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_93_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_93_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_93_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+			<string id="simulation_task_94_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_94_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_94_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_94_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_94_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+			<string id="simulation_task_95_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_95_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他就會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_95_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_95_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_95_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+			<string id="simulation_task_96_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_96_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_96_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_96_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_96_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+			<string id="simulation_task_97_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_97_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_97_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_97_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_97_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+			<string id="simulation_task_98_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_98_text">
+		<text>來自 %s的 %s要求你從一個 %s中提取組織樣本</text>
+	</string>
+	<string id="simulation_task_98_about">
+		<text>我需要一個有經驗的潛行者或變異怪物獵人, 你是那個人嗎?</text>
+	</string>
+	<string id="simulation_task_98_fetch_about">
+		<text>生態學家們需要收集一個%s的組織樣本, 我不管你是怎麼得到的, 只要確保它是新鮮的, 找到的話就拿來, 我會高價收購</text>
+	</string>
+	<string id="simulation_task_98_fetch_finish">
+		<text>謝謝你,先生, 這將對我們的研究有極大的幫助, </text>
+	</string>
+	
+			<string id="simulation_task_99_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_99_text">
+		<text>來自 %s的 %s要求你從一個 %s中提取組織樣本</text>
+	</string>
+	<string id="simulation_task_99_about">
+		<text>我需要一個有經驗的潛行者或一個變異怪物獵人, 你是那個人嗎?</text>
+	</string>
+	<string id="simulation_task_99_fetch_about">
+		<text>生態學家們需要收集一個%s的組織樣本, 我不管你是怎麼得到的, 只要確保它是新鮮的, 找到的話就拿來, 我會高價收購</text>
+	</string>
+	<string id="simulation_task_99_fetch_finish">
+		<text>謝謝你,先生, 這將對我們的研究有極大的幫助, </text>
+	</string>
+	
+				<string id="simulation_task_100_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="simulation_task_100_text">
+		<text>來自 %s的 %s說,如果我能給他帶來一個 %s,他將會支付很高的報酬 </text>
+	</string>
+	<string id="simulation_task_100_about">
+		<text>我在懸賞一個特殊型別的變異怪物, 你有興趣嗎?</text>
+	</string>
+	<string id="simulation_task_100_fetch_about">
+		<text>殺了這個變異怪物並把它的 %s帶給我, 我會給你很高的報酬</text>
+	</string>
+	<string id="simulation_task_100_fetch_finish">
+		<text>不錯, 又一個威脅被消除了, 營地也有了新的裝飾, 真好!</text>
+	</string>
+	
+		<!-- Find Trip Equipment Tasks -->	
+	<string id="simulation_task_101_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_101_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_101_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_101_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_101_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_102_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_102_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_102_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_102_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_102_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_103_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_103_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_103_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_103_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_103_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_104_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_104_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_104_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_104_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_104_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_105_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_105_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_105_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_105_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_105_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_106_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_106_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_106_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_106_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_106_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_107_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_107_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_107_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_107_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_107_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_108_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_108_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_108_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_108_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_108_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_109_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_109_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_109_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_109_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_109_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_110_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_110_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_110_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_110_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_110_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_111_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_111_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_111_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_111_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_111_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_112_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_112_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_112_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_112_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_112_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_113_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_113_text">
+		<text>有人要求我找到並把 %s帶到他那裡去, </text>
+	</string>
+	<string id="simulation_task_113_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_113_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_113_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_114_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_114_text">
+		<text>有人要求我找到並把 %s帶到他那裡去, </text>
+	</string>
+	<string id="simulation_task_114_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_114_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_114_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<string id="simulation_task_115_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_115_text">
+		<text>有人要求我找到並將 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_115_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, </text>
+	</string>
+	<string id="simulation_task_115_fetch_about">
+		<text>我和夥伴們準備深入特異區, 這是一次長途旅行, 再多的準備都不過分, 你能為我們弄到一些 %s嗎?</text>
+	</string>
+	<string id="simulation_task_115_fetch_finish">
+		<text>謝謝! 這是給你的幫助的一些錢, </text>
+	</string>
+	
+		<!-- Find Trip Equipment Tasks -->	
+	<string id="simulation_task_116_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_116_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_116_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝備來應對糟糕的日子, 你給我們一些 %s,我給你一些回報,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_116_fetch_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝置來應對糟糕的日子, </text>
+	</string>
+	<string id="simulation_task_116_fetch_finish">
+		<text>哦,夥計! 我的夥伴們會很高興的, 來,拿著這些, 你幹得不錯, </text>
+	</string>
+	
+	<string id="simulation_task_117_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_117_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_117_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝備來應對糟糕的日子, 你給我們一些 %s,我給你一些回報,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_117_fetch_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝置來應對糟糕的日子, </text>
+	</string>
+	<string id="simulation_task_117_fetch_finish">
+		<text>哦,夥計! 我的夥伴們會很高興的, 來,拿著這些, 你幹得不錯, </text>
+	</string>
+	
+		<string id="simulation_task_118_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_118_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_118_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝備來應對糟糕的日子, 你給我們一些 %s,我給你一些回報,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_118_fetch_about">
+		<text>我的小隊正要前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝置來應對糟糕的日子, </text>
+	</string>
+	<string id="simulation_task_118_fetch_finish">
+		<text>哦,夥計! 我的夥伴們會很高興的, 來,拿著這些, 你幹得不錯, </text>
+	</string>
+	
+		<string id="simulation_task_119_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_119_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_119_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝備來應對糟糕的日子, 你給我們一些 %s,我給你一些回報,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_119_fetch_about">
+		<text>我的小隊正要前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝置來應對糟糕的日子, </text>
+	</string>
+	<string id="simulation_task_119_fetch_finish">
+		<text>哦,夥計! 我的夥伴們會很高興的, 來,拿著這些, 你幹得不錯, </text>
+	</string>
+	
+		<string id="simulation_task_120_name">
+		<text>旅行準備: %s</text>
+	</string>
+	<string id="simulation_task_120_text">
+		<text>有人要求我找到並把 %s帶到他那裡, </text>
+	</string>
+	<string id="simulation_task_120_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝備來應對糟糕的日子, 你給我們一些 %s,我給你一些回報,怎麼樣?</text>
+	</string>
+	<string id="simulation_task_120_fetch_about">
+		<text>我的小隊即將前往特異區的其他地方, 想到這裡,我們總是可以利用額外的裝置來應對糟糕的日子, </text>
+	</string>
+	<string id="simulation_task_120_fetch_finish">
+		<text>哦,夥計! 我的夥伴們會很高興的, 來,拿著這些, 你幹得不錯, </text>
+	</string>
+	
+	<string id="simulation_task_121_name">
+		<text>收集 %s</text>
+	</string>
+	<string id="simulation_task_121_text">
+		<text>有人讓我去找 %s 並帶給他</text>
+	</string>
+	<string id="simulation_task_121_about">
+		<text>我們爲了進入特異區某個危險的無人之境執行任務, 現在正在整備物資, 目前還需要一些補給和製造工具, 你有沒有多餘的 %s 能夠提供? 錢不會少給你的, 放心吧!</text>
+	</string>
+	<string id="simulation_task_121_fetch_about">
+		<text>我們正在爲了一次危險的任務而整備物資, 現在還需要一些製作工具</text>
+	</string>
+	<string id="simulation_task_121_fetch_finish">
+		<text>太好了! 不知道是不是錯覺, 這種東西最近好像變得稀有了? 總之, 謝謝你了兄弟! 給你錢! 多虧了你, 我們終於能夠準時出發了!</text>
+	</string>	
+	
+	<string id="simulation_task_122_name">
+		<text>為自由軍戰士提供 %s </text>
+	</string>
+	<string id="simulation_task_122_text">
+		<text>一個自由軍戰士拜託我帶一些 %s 來解除他的燃眉之急</text>
+	</string>
+	<string id="simulation_task_122_about">
+		<text>我說朋友, 嘶... 哈... 呃... 你身上有沒有... 有沒有 %s? 別... 別用那種眼神看著我, 我不是個癮君子, 就是突然想用一點... 來緩解一下緊張的情緒, 對, 嘶... 特異區真的很讓我緊張, 實在有點受不了了, 哈啊... 幫幫哥們吧? 我有錢, 有錢!</text>
+	</string>
+	<string id="simulation_task_122_fetch_about">
+		<text>給我弄點 %s 吧? 我快扛不住了, 特異區實在太讓我緊張了, 難道你們每個人不都這樣? 嘶哈..</text>
+	</string>
+	<string id="simulation_task_122_fetch_finish">
+		<text>真夠意思! 哥們!</text>
+	</string>
+	
+	<!-- RESCUE UNDERCOVER AGENT -->
+	<string id="spy_task_name">
+		<text>烏克蘭之戀</text>
+	</string>
+	<string id="spy_task_text">
+		<text>敵方小隊里的我方間諜需要和我們接頭, 殺死那個小隊的其他成員, 護送他回到基地, 間諜拿著一把SVD</text>
+	</string>
+	<string id="spy_task_about">
+		<text>我們有許多人潛伏在敵人中間, 而其中一個顯然被懷疑了, 他既沒有與最後幾個聯繫人碰面, 也沒有留下任何資訊, 應該是受到了監視和控制, 所以可以推斷, 他已經喪失了單獨行動的自由, 我們必須得把他救出來, 他的武器是一把SVD, 當你攻擊隊伍的時候, 他肯定也會假裝向你射擊以避免被懷疑, 見機行事吧</text>
+	</string>
+	<string id="spy_task_finish">
+		<text>很好, 幹得不錯!</text>
+	</string>
+	<string id="spy_task_join">
+		<text>別開槍! 自己人! 我開槍是爲了避免他們懷疑, 我應該沒有打中你... 對吧? 走, 回基地吧, 咱們一起行動</text>
+	</string>
+	<string id="spy_task_leave">
+		<text>謝謝你護送我安全返回, 再見!</text>
+	</string>
+
+	<!-- HOSTAGE INTERACTION  TEXT -->
+	<string id="hostage_companion_task_1_start_dialog_1">
+		<text>謝謝! 謝謝你! 如果再晚幾分鐘, 我可能就... 我欠你一命! 哥們!</text>
+	</string>
+	<string id="hostage_companion_task_1_actor_reply">
+		<text>想活命就快跟我走!</text>
+	</string>
+
+
+	<!-- NIMBLE SPECIAL ORDER TEXT -->
+	<string id="esc_2_12_nimble_items_get_order_name">
+		<text>特殊訂單: 提貨</text>
+	</string>
+	<string id="esc_2_12_nimble_items_get_order_text">
+		<text>"巧手"尼博已經拿到了你要的貨, 去找他吧</text>
+	</string>
+	<string id="esc_2_12_nimble_items_wait_order_name">
+		<text>特殊訂單: 等待發貨</text>
+	</string>
+	<string id="esc_2_12_nimble_items_wait_order_text">
+		<text>你已經下了訂單, 等"巧手"尼博拿到貨吧</text>
+	</string>
+
+
+	<!-- SURGE HIDE MESSAGES -->
+	<string id="hide_from_surge_message">
+		<text>注意! 能量風暴來臨!</text>
+	</string>
+	<string id="hide_from_surge_descr_1_a">
+		<text>能量風暴來臨, 立即就近掩蔽!</text>
+	</string>
+	<string id="hide_from_surge_descr_2_a">
+		<text>能量風暴期間離開掩體是自殺行為</text>
+	</string>
+	<string id="hide_from_surge_name_1">
+		<text>能量風暴: 尋找掩體</text>
+	</string>
+	<string id="hide_from_surge_name_2">
+		<text>能量風暴: 在掩體中等待</text>
+	</string>
+
+
+	<!-- ATMOSFEAR RADIOACTIVE FALLOUT MESSAGES -->
+	<string id="hide_from_fallout_rad_message_caption">
+		<text>注意!</text>
+	</string>
+	<string id="hide_from_fallout_rad_message">
+		<text>輻射風暴來臨</text>
+	</string>
+	<string id="hide_from_fallout_rad_descr_1_a">
+		<text>危險的輻射等級, 你需要躲避輻射風暴</text>
+	</string>
+	<string id="hide_from_fallout_rad_descr_2_a">
+		<text>你不能在輻射風暴期間離開庇護所</text>
+	</string>
+	<string id="hide_from_fallout_rad_name_1">
+		<text>輻射風暴: 尋找庇護所</text>
+	</string>
+	<string id="hide_from_fallout_rad_name_2">
+		<text>輻射風暴: 在庇護所等待</text>
+	</string>
+	<string id="end_fallout_rad_message_caption">
+		<text>注意!</text>
+	</string>
+	<string id="end_fallout_rad_message">
+		<text>輻射能量風暴結束</text>
+	</string>
+
+	<!-- ATMOSFEAR CHEMICAL FALLOUT MESSAGES -->
+	<string id="hide_from_fallout_acid_message_caption">
+		<text>注意!</text>
+	</string>
+	<string id="hide_from_fallout_acid_message">
+		<text>化學沉降開始</text>
+	</string>
+	<string id="hide_from_fallout_acid_descr_1_a">
+		<text>危險的污染等級, 你需要躲避化學沉降</text>
+	</string>
+	<string id="hide_from_fallout_acid_descr_2_a">
+		<text>你不能在能量風暴期間離開庇護所</text>
+	</string>
+	<string id="hide_from_fallout_acid_name_1">
+		<text>化學沉降: 尋找庇護所</text>
+	</string>
+	<string id="hide_from_fallout_acid_name_2">
+		<text>化學沉降: 在庇護所等待</text>
+	</string>
+	<string id="end_fallout_acid_message_caption">
+		<text>注意!</text>
+	</string>
+	<string id="end_fallout_acid_message">
+		<text>化學沉降結束</text>
+	</string>
+
+	<!-- ATMOSFEAR PSI STORM MESSAGES -->
+	<string id="hide_from_psi_storm_message_caption">
+		<text>注意!</text>
+	</string>
+	<string id="hide_from_psi_storm_message">
+		<text>注意! 脈衝風暴來臨!</text>
+	</string>
+	<string id="hide_from_psi_storm_descr_1_a">
+		<text>脈衝風暴來臨, 立即就近掩蔽!</text>
+	</string>
+	<string id="hide_from_psi_storm_descr_2_a">
+		<text>你不能在脈衝風暴間離開掩體</text>
+	</string>
+	<string id="hide_from_psi_storm_name_1">
+		<text>脈衝風暴: 尋找掩體</text>
+	</string>
+	<string id="hide_from_psi_storm_name_2">
+		<text>脈衝風暴: 在掩體中等待</text>
+	</string>
+	<string id="end_psi_storm_caption">
+		<text>注意!</text>
+	</string>
+	<string id="end_psi_storm_message">
+		<text>脈衝風暴已停止</text>
+	</string>
+
+
+	<!-- FACTION BASE DEFENSE VS MUTANTS -->
+	<string id="faction_base_defense_name">
+		<text>守衛基地</text>
+	</string>
+	<string id="faction_base_defense_yantar_name">
+		<text>阻擊殭屍潛行者保護生態學家營地</text>
+	</string>
+	<string id="faction_base_defense_text">
+		<text>怪物正在進攻基地, 協助防禦!</text>
+	</string>
+	<string id="faction_base_defense_yantar_text">
+		<text>殭屍潛行者正在攻擊移動實驗室, 協助防禦! 外面的電磁輻射不足以傷害到你, 在移動實驗室的頂上找到那挺機槍, 用它大開殺戒吧</text>
+	</string>
+	
+	
+	<string id="fetch_drugkit_task_name">
+		<text>醫療物資: %s</text>
+	</string>
+	<string id="fetch_drugkit_task_text">
+		<text>你被要求找到並帶去 %s</text>
+	</string>
+	<string id="fetch_drugkit_task_about">
+		<text>控制我的醫療品和傷者的數量是很難的, 我有點擔心繃帶和急救箱會被用完, 我想讓你幫我帶一些舊的製藥箱, 它們將來一定會派上用場</text>
+	</string>
+	<string id="fetch_drugkit_task_fetch_about">
+		<text>我急需 %s, 包含一些片劑和針劑, 用來補充醫療物資, 如果你能帶來一套, 我會買下它</text>
+	</string>
+	<string id="fetch_drugkit_task_fetch_finish">
+		<text>幹得好! 我欠你一個人情</text>
+	</string>
+	
+	
+	
+	
+	<string id="st_multifetch_1"><text>你被要求找到以下物品:</text></string>
+	<string id="st_multifetch_2"><text>,物品至少有%s% 的狀態值</text></string>
+	<string id="st_multifetch_3"><text>你還得支付以下額外的物品:</text></string>
+	<string id="st_multifetch_4"><text>找到物品:</text></string>
+
+</string_table>

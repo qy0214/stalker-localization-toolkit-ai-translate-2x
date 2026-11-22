@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_dph_loot_cond">
+		<text>掉落状况</text>
+	</string>
+	<string id="ui_mcm_menu_outfit">
+		<text>装备</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit">
+		<text>装备</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_header">
+		<text>僵尸潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_header">
+		<text>菜鸟潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_header">
+		<text>新兵潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_header">
+		<text>熟手潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_header">
+		<text>专业潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_header">
+		<text>老兵潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_header">
+		<text>专家潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_master_header">
+		<text>大师潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_master_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_master_max">
+		<text>最高状况</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_header">
+		<text>传奇潜行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_min">
+		<text>最低状况</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_max">
+		<text>最高状况</text>
+	</string>
+</string_table>

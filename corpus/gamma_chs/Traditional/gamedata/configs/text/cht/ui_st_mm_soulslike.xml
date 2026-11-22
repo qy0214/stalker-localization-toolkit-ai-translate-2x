@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_cap_check_soulslike_mode">
+		<text>黑魂模式</text>
+	</string>
+	<string id="st_mm_ck_soulslike_mode_desc">
+		<text>
+			%c[0,150,150,150]黑魂模式為潛行者帶來了黑魂類遊戲玩法, 玩家可以在睡眠處"設定緊急發信裝置"來儲存重生點, 不會有真正意義的死亡; 因為當你倒下昏迷后, 會被某些潛行者救回重生點, 醒來之後會收到他們發來的各種資訊, 向你告知一系列事件, 比如你丟失的物品位置等等, 有時你裝備的物品耐久會下降或損壞, 所有功能都可以在MCM中設定\n 
+			\n %c[200,200,50,50] 不相容詛咒模式\n
+			\n %c[200,200,50,50] 不相容鐵人模式
+		</text>
+	</string>
+</string_table>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Mod Configuration Menu strings	
+-->
+<string_table>
+
+	<string id="st_rax_fav">
+		<text>標記最愛</text>
+	</string>
+	<string id="st_rax_unfav">
+		<text>移除最愛標記</text>
+	</string>
+	<string id="st_rax_junk">
+		<text>標記垃圾</text>
+	</string>
+	<string id="st_rax_unjunk">
+		<text>移除垃圾標記</text>
+	</string>
+
+
+
+	<string id="ui_mcm_title_SortingPlus">
+		<text>更好的物品排序</text>
+	</string>
+
+	<string id="ui_mcm_menu_SortingPlus">
+		<text>更好的物品排序</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_playerinv">
+		<text>對玩家的庫存排序</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_playerinv_desc">
+		<text>除交易外,所有庫存顯示在螢幕上的右側</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_playertrade">
+		<text>對玩家的交易庫存排序</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_playertrade_desc">
+		<text>交易時的右側庫存</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_npcinv">
+		<text>對NPC庫存進行排序</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_npcinv_desc">
+		<text>除交易外,所有庫存顯示在螢幕上的昨側</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_npctrade">
+		<text>對NPC交易庫存進行排序</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_npctrade_desc">
+		<text>交易時的左側庫存</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_useltx">
+		<text>使用更好的排序.ltx</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_useltx_desc">
+		<text>忽略此處下面的設定,而選擇 sortpluse.ltx 中的設定 ltx 提供更精細的控制. </text>
+	</string>
+
+	<string id="ui_mcm_SortingPlus_iconjunk">
+		<text>標記垃圾</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_iconjunk_desc">
+		<text>用ICON圖示標記為垃圾的物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_hilitejunk">
+		<text>垃圾高亮顯示</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_hilitejunk_desc">
+		<text>高亮顯示標記為垃圾的物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_sortjunk">
+		<text>使用垃圾分類</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_sortjunk_desc">
+		<text>將垃圾專案分類到它們自己的類別中,預設情況下是最後一個</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_selljunk">
+		<text>自動出售垃圾</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_selljunk_desc">
+		<text>交易員將購買的垃圾將被放在賣出窗格中. 你仍然必須按賣出按鈕來最終確定. </text>
+	</string>
+	<string id="ui_mcm_SortingPlus_iconfavs">
+		<text>標記最愛</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_iconfavs_desc">
+		<text>用ICON圖示標記為最愛的物品.</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_hilitefavs">
+		<text>收藏夾高亮顯示</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_hilitefavs_desc">
+		<text>高亮顯示標記為收藏夾的物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_sortfavs">
+		<text>使用收藏夾分類</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_sortfavs_desc">
+		<text>將收藏夾專案分類到它們自己的類別中,預設情況下是第一個. </text>
+	</string>
+	<string id="ui_mcm_SortingPlus_putallfavs">
+		<text>排除收藏夾以外的</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_putallfavs_desc">
+		<text>在進行全部轉移時,收藏夾不會從你的庫存中移動. </text>
+	</string>
+	<string id="ui_mcm_SortingPlus_resort">
+		<text>顯示標記.</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_resort_desc">
+		<text>標記收藏夾/垃圾時,庫存將立即報告. 否則等到下次庫存打開. 禁用突出顯示的有用反饋. </text>
+	</string>
+	<string id="ui_mcm_SortingPlus_usefunctors">
+		<text>USEFUNCTORS</text>
+	</string>	 
+	<string id="ui_mcm_SortingPlus_001loadout">
+		<text>ARM負載</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_002mags">
+		<text>ARM彈匣</text>
+	</string>
+
+	<string id="ui_mcm_SortingPlus_000favorites">
+		<text>最愛</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_999junk">
+		<text>垃圾</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_010weapons">
+		<text>武器</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_020outfits">
+		<text>護甲</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_030artifacts">
+		<text>神器</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_040devices">
+		<text>裝置</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_050tools">
+		<text>工具</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_060medical">
+		<text>醫療物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_070foods">
+		<text>食物</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_080mutantfoods">
+		<text>變種生物食材</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_090quest">
+		<text>任務物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_100notes">
+		<text>筆記</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_110ammo">
+		<text>子彈</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_120mutantparts">
+		<text>變種生物戰利品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_130misc">
+		<text>Misc</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_140upgrades">
+		<text>升級物品</text>
+	</string>
+	<string id="ui_mcm_SortingPlus_150parts">
+		<text>零件</text>
+	</string>
+
+</string_table>

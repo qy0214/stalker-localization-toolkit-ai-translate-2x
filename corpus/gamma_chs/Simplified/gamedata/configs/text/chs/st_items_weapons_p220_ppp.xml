@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_sig229">
+		<text>西格绍尔 P229 "军团"手枪</text>
+	</string>
+	<string id="st_wpn_sig229_descr">
+		<text>P229 是一款紧凑型 9 毫米口径弹药手枪，可以视其为升级版的 P228，它适用于执行警察任务和隐蔽携带。 由于这是"军团"改装型号，可以认为这家伙出现在在佣兵等西方派系中是一个奇迹。 尽管装载较弱的 9 毫米而不是较强的 .45 ACP 弹药，但对于那些喜欢使用 9 毫米口径西格绍尔而不是 .45 ACP 的人来说，它仍然是一把相对不错的小型手枪\n \n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 口径兼容消音器</text>
+	</string>
+
+	<string id="st_wpn_sig320">
+		<text>西格绍尔 P320 RXP手枪</text>
+	</string>
+	<string id="st_wpn_sig320_descr">
+		<text>这是"巧手"尼博发现的一把了不起的手枪，是西格绍尔枪族的最新成员，所以尼博认为自己非常幸运。 虽然其口径为 9 毫米，却可以轻松地将其重新改造为 .45 ACP口径，只需一名技术人员即可。 因为该手枪具有"Strike-Action"（罢工行动）机制，即使使用 .45 ACP 弹药，也能大大减少其后坐力。 这把手枪具有无与伦比的可靠性、非常好的精度和完美的后坐力控制。 也许这是您可以获得的最好的手枪，尤其是在 .45 ACP口径手枪中。\n \n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 口径兼容消音器</text>
+	</string>
+	<string id="st_up_p320_c7_name">
+		<text>口径更改为 .45 ACP</text>
+	</string>
+	<string id="st_up_p320_c7_descr">
+		<text>一个复杂的、可能是非法的、自制的枪管和发射机构的改装，使其可以装载.45 ACP口径弹药</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+    
+<!--
+Just for Shine's + Awry's fixes
+-->
+
+    <string id="mag_kriss45">
+		<text>Vector"短剑" .45 ACP标准弹匣</text>
+	</string>
+	<string id="mag_kriss45_descr">
+		<text>
+		.45 ACP Vector"短剑"的标准弹匣, 弹容30发
+		</text>
+	</string>
+	
+	<string id="mag_kriss9">
+		<text>Vector"短剑" 9x19弹匣</text>
+	</string>
+	<string id="mag_kriss9_descr">
+		<text>
+		Vector"短剑"的定制版弹匣, 为了装填9x19口径的子弹
+		</text>
+	</string>
+	
+	<string id="ext_mag_kriss_drum">
+		<text>Vector"短剑" .45 ACP弹鼓</text>
+	</string>
+	<string id="ext_mag_kriss_drum_descr">
+		<text>
+		Vector"短剑"的扩展弹匣, 弹容40发
+		</text>
+	</string>
+	
+	<string id="ext_mag_kriss9_drum">
+		<text>Vector"短剑" 9x19弹鼓</text>
+	</string>
+	<string id="ext_mag_kriss9_drum_descr">
+		<text>
+		Vector"短剑"的定制版弹鼓, 为了装填9x19口径的子弹
+		</text>
+	</string>
+	
+</string_table>

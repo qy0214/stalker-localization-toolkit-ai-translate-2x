@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Sergeant Spooner (Military Trader) -->
+	<string id="guid_agr_mlr_military_0">
+		<text>你能安排一次旅行吗?我要飞去一个地方.</text>
+	</string>
+	<string id="guid_agr_mlr_military_1">
+		<text>是的, 我可以带你去封锁线和扬塔. 等等, 你是哪位?! 我不能向你这样的普通士兵提供运输, 嘘!</text>
+	</string>
+
+	<string id="guid_agr_mlr_military_list_0">
+		<text>再问一次, 你能飞去哪里?</text>
+	</string>
+	<string id="guid_agr_mlr_military_list_1">
+		<text>去我们在封锁线的前哨站要五千卢布, 去扬塔的基地要七千卢布.</text>
+	</string>
+
+	<string id="guid_agr_mlr_military_vert_0">
+		<text>我需要个飞行员.</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_1">
+		<text>行, 我们的下一班航班很快就要出发了, 要去哪儿?</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_2">
+		<text>去封锁线的检查站. %c[d_orange][5000 卢布]</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_3">
+		<text>去扬塔的基地. %c[d_orange][7000 卢布]</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_4">
+		<text>我改变注意了.</text>
+	</string>
+	
+	<string id="find_blackbox_mlr_reward_army_0">
+		<text>我从一架摔成废铁的直升机里找到个飞行记录仪.</text>
+	</string>
+	<string id="find_blackbox_mlr_reward_army_1">
+		<text>找得好! 干得不错, 我的士兵!</text>
+	</string>
+
+	
+<!-- Military = Medic -->
+	<string id="rogovets_about_himself_1_6_army_mlr_0">
+		<text>说说你自己吧.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_1">
+		<text>我是这个基地的医生. 我第一次来这里是几年前签的合同. 经过一些准备, 我被分配到久负盛名的坦途小组. 可悲的是, 坦途行动本身是失败的. 我们别无选择, 我们还活着的人只能在普里皮亚奇躲起来 - 直到一个来自乌克兰安全局的特工赶来帮助我们撤离.\n \n我很高兴摆脱了那个地方. 在那个被诅咒的城市里, 怪事不断发生, 而我最奇怪的经历之一就是在一个锁着的冰箱里醒来. 直到今天, 我都不知道我是怎么到达那里的, 也不知道我之前在做什么. 其他的人都取笑我, 但我记得当时我流的汗和窒息感, 我的眼睛迷迷糊糊的. 当更多的士兵开始遭遇所谓的"传说怪物"摄魂怪时, 好吧, 他们终于不笑话我了.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_2">
+		<text>然后发生了什么? 你为什么不离开?</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_3">
+		<text>我确实"退出"了一段时间. 或者更确切地说, 我留了下来. 我的指挥官因为坦途行动失败而被解雇后, 我心里很不好受. 然后, 我尽快退役, 以便从医. 尽管如此, 当兵还是有些特别之处的, 如果我最终不回来, 我觉得我就会抛弃他们. 这不是普通士兵的错, 而是总参谋部的错 - 呃...呃, 咳咳.\n \n正如我刚才所说的, 库兹涅佐夫上校的指挥风格肯定不像我的老指挥官, 前科瓦斯基上校的行事风格. 但我还是很高兴能让士兵们活着. 让我更高兴的是, 那个乌克兰安全局的特工 - 德格捷列夫上校 - 在这里也扮演了更积极的领导角色, 知道他还在特异区的某个地方晃悠就足够了. 他救过我很多次, 我真的很感激他.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_4">
+		<text>明白了. 祝你一路顺风.</text>
+	</string>
+	
+	<string id="rogovets_hello_1_6_army_mlr_0">
+		<text>嗯 ?哦, 是你啊.</text>
+	</string>
+
+	
+<!-- Commander, barman in Agroprom -->
+	<string id="barmen_about_himself_1_6_army_mlr_0">
+		<text>你是谁?</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_1">
+		<text>我是当地的酒保 - 或者是食品贩子 - 你怎么称呼都行. 这里的军人们都叫我指挥官. 我在特异区的第一份工作是清洁工, 在1986年事故后清理核电站周围. 我不是这里的人, 但苏联解体后, 我决定按合同留在特异区. 毕竟我有些经验, 哈!</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_2">
+		<text>那里怎么样?</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_3">
+		<text>嗯，那时候我年轻多了 - 只是个新兵，你知道吗? 不是你今天看到的这个百岁老人. 我当时很幸运. 只是用水管把废弃村子中的尘土冲洗掉, 然后再把土翻一遍. 军官们会测量辐射, 而我则被派去清理. 不过, 风暴引擎附近的清洁工却陷入麻烦之中. 在那里, 就连我们的技术都不能避死于放射性尘埃, 更不用说一般人了. 想象一下就知道了. \n \n所以，他们用铲子清理石墨屋顶. 但为了国家的利益, 这是必须做的 - 不管那现在意味着什么. 辐射真是个奇怪的东西 - 它让一些人痛苦不堪, 却又放过另一些人, 比如迪亚特洛夫, 他幸存了下来, 但最终进了监狱. 但是, 与2006年以来发生的事情相比, 我不知道. 现在肯定有比辐射更奇怪的事情发生.</text>
+	</string>
+</string_table>

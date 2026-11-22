@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON PRIPYAT MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Default Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_text">
+		<text>接受下一个任务.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_about">
+		<text>你得和一位黑石的大佬会面. 现在去找他.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_default_task_finish">
+		<text>祝你好运.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Destroy the Non=Believers Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_name">
+		<text>消灭异教徒</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_text">
+		<text>领导黑石对异教徒发动攻击.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_about">
+		<text>时间到了,孩子. 你得带着兄弟们去战斗. 勇猛战斗绝不屈服. 为了黑石的荣耀, 杀光异教徒.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_1_finish">
+		<text>很好. 你是个不错的战士.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Collect Supplies Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_name">
+		<text>为黑石收集%s</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_text">
+		<text>兔子要求你弄到%s.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_about">
+		<text>我的孩子,你的兄弟需要你来收集食物.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_fetch_about">
+		<text>给我们带来%s.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_2_fetch_finish">
+		<text>你完成得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Venture into the Zone Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_name">
+		<text>深入特异区</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_text">
+		<text>深入特异区以证明自己的价值.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_about">
+		<text>我的孩子,你得像全能的黑石证明你的价值. 你要孤身进入特异区. 独自面对所有的挑战. 消灭所有遇见的敌人. 这样你才是为黑石尽了一份力.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_task_3_finish">
+		<text>你很不错,我的孩子.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cleric (Monolith Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_text">
+		<text>接受下一个任务.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_about">
+		<text>我的孩子,你尽心尽力的服侍着黑石. 与长者交谈时,你也许会知道接下来可以为我们的伟大事业做些什么.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_finish">
+		<text>好运.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cleric (Monolith Mechanic) Recover Stolen Equipment Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_name">
+		<text>追回被盗的黑石设备</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_text">
+		<text>一名潜行者破坏了"焦脑器". 追回被卸下的设备.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_about">
+		<text>一名潜行者偷走了"焦脑器"中一个至关重要的设备. 为了全能的黑石,你得追回它.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_1_finish">
+		<text>你做的很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cleric (Monolith Mechanic) Hunt for Food Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_name">
+		<text>捕猎</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_text">
+		<text>进入特异区捕猎,为黑石的兄弟们弄些肉来.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_about">
+		<text>我的孩子,我们得补充食物了. 你会带头狩猎让兄弟们一饱口福吗?</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_2_finish">
+		<text>你们都很好地服侍了黑石. 今晚的盛宴上你们会看见这些肉食. 作为你的报酬,我们会把天目石给你.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cleric (Monolith Mechanic) Monolith Weapon Arsenal Storyline Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_name">
+		<text>黑石%s武器库</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_text">
+		<text>传教士需要%s来扩展黑石的武器库.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_about">
+		<text>我的孩子,要完成我们伟大的目标,首先得有一个精良的武库.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_fetch_about">
+		<text>你得给我%s. 你的成功黑石将永远铭记.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_mechanic_stalker_task_3_fetch_finish">
+		<text>相当不错,我的孩子.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Olivar (Monolith Trader) Default Storyline Task -->
+
+	<string id="drx_sl_trader_monolith_kbo_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_default_task_text">
+		<text>接受下一个任务.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_default_task_about">
+		<text>你的去见一个黑石的领导. 快去找他.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_default_task_finish">
+		<text>好运.</text>
+	</string>
+	
+
+	<!-- Olivar (Monolith Trader) Eliminate the Intruders Storyline Task -->
+
+	<string id="drx_sl_trader_monolith_kbo_task_1_name">
+		<text>消灭入侵者</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_1_text">
+		<text>奥利瓦尔向你告知了一群入侵者. 不惜一切代价消灭他们.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_1_about">
+		<text>这附件发现了一群入侵者. 不能让他们再活下去了. 消灭他们.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_1_finish">
+		<text>很好. 你证明了自己.</text>
+	</string>
+	
+
+	<!-- Olivar (Monolith Trader) Investigate the Scouts' Location Storyline Task -->
+
+	<string id="drx_sl_trader_monolith_kbo_task_2_name">
+		<text>调查侦察兵的位置</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text">
+		<text>奥利瓦尔命令你寻找失踪的侦察兵的位置</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text_0">
+		<text>奥利瓦尔命令你寻找失踪的侦察兵的位置,但是需要$item_1才能展开搜寻.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text_1">
+		<text>奥利瓦尔命令你寻找失踪的侦察兵的位置. \n前往 $map.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text_2">
+		<text>奥利瓦尔命令你寻找失踪的侦察兵的位置. \n将$item_1的频率设置为 $freq MHz. 在附近寻找最好的信号.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text_3">
+		<text>你的将找到的 $item_2 给奥利瓦尔过目.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_text_4">
+		<text>带着你的发现返回奥利瓦尔处.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_about">
+		<text>我有一项重要的任务交给你,兄弟. 我们派出了一只侦察小队去侦察情况. 一天过去了,他们消失得无影无踪. 他们的失败使我们所有人感到羞耻! 我们还是决定追踪他们. 这里,这是其中一个侦察兵的PDA信号频率. 去看看他们到底发生了什么.</text>
+	</string>
+	<string id="drx_sl_trader_monolith_kbo_task_2_finish">
+		<text>这个信息会非常有用. 谢谢你,兄弟.</text>
+	</string>
+
+
+	<!-- ========================================================================================= -->
+	<!-- Griffith (Mercenary Operator) Default Storyline Task -->
+
+	<string id="drx_sl_merc_pri_grifon_mlr_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_default_task_text">
+		<text>接受下一个任务.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_default_task_about">
+		<text>有位愿意为我们的工作付高价的金主. 去见他.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_default_task_finish">
+		<text>好运.</text>
+	</string>
+	
+
+	<!-- Griffith (Mercenary Operator) Hunt Down the Dangerous Mutant Storyline Task -->
+
+	<string id="drx_sl_merc_pri_grifon_mlr_task_1_name">
+		<text>猎杀危险变异生物</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_1_text">
+		<text>格里芬和他的经销商们对这个变异怪物感到厌烦,它总是在晚上骚扰他们. 你必须除掉它.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_1_about">
+		<text>这里有个狗娘养的怪物每天晚上都来袭击我们的守卫. 可不能让它溜了. 找到它然后把它干掉.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_1_finish">
+		<text>终于干掉了! 这下能好好休息了. 这是你的报酬.</text>
+	</string>
+	
+
+	<!-- Griffith (Mercenary Operator) Search Lab X=8 Location Storyline Task -->
+
+	<string id="drx_sl_merc_pri_grifon_mlr_task_2_name">
+		<text>探索X-8实验室</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_2_text">
+		<text>格里芬可不能空手回到达什曼那里. 探索X-8实验室把你能发现的文件全部带走.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_2_about">
+		<text>我们就是为了X8实验室专程而来的,那个实验室就在从这儿往北的禧年服务中心附近. 我们总得带点有用的东西离开. 但是我们没有更多人了,事情太多我们实在是抽调不过来,我们宁愿花更多的人力也不愿意被困在这他妈的特异区中心. 去X-8吧 - 可能还剩点有用的东西.</text>
+	</string>
+	<string id="drx_sl_merc_pri_grifon_mlr_task_2_finish">
+		<text>有意思... 这些文件对懂它的人来说很有价值. 你算做了件好事.</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_name">
+		<text>放弃金钱以加入黑石</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_text">
+		<text>你将成为一名黑石,金钱对你来说将会是粪土. 给兔子 1,000 卢布,以来到全能的黑石的庇佑之下.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_about">
+		<text>你已经觉悟了,这很好,我的孩子. 欢迎成为黑石的一员,但是你得交出1,000 卢布以表示你放弃世俗的决心.</text>
+	</string>
+	<string id="drx_sl_pri_monolith_monolith_trader_stalker_cf_task_1_finish">
+		<text>很好. 欢迎加入黑石兄弟会.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+	
+	<!-- ========================================================================================= -->
+	<!-- Eidolon (Elite Monolith Soldier) Purge the Infidels Task -->
+	<string id="monolith_eidolon_task_1_name">
+		<text>铲除异教徒</text>
+	</string>
+	<string id="monolith_eidolon_task_1_text">
+		<text>幻灵要求搜集%s.</text>
+	</string>
+	<string id="monolith_eidolon_task_1_about">
+		<text>我们受难了. 异教徒们妄图利用全能的黑石. 贪婪,无知和动物性的欲望驱使着他们. 我们代表着黑石. 我们得行动起来,做一个守护者. 铲除这些异教徒. 搜集他们的臂章. 作为胜利的丰碑. 这标志着我们无与伦比的优越性. 出发吧,兄弟. 把他们全部消灭.</text>
+	</string>
+	<string id="monolith_eidolon_task_1_fetch_about">
+		<text>我们受难了. 异教徒们妄图利用全能的黑石. 贪婪,无知和动物性的欲望驱使着他们. 我们代表着黑石. 我们得行动起来,做一个守护者. 铲除这些异教徒. 搜集他们的臂章. 作为胜利的丰碑. 这标志着我们无与伦比的优越性. 出发吧,兄弟. 把他们全部消灭. 并取得%s.</text>
+	</string>
+	<string id="monolith_eidolon_task_1_fetch_finish">
+		<text>这样的奉献精神. 对于我们无上的事业. 必须给予嘉奖.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Eidolon (Elite Monolith Soldier) Hunt the Mutants Task -->
+	
+	<string id="monolith_eidolon_task_2_name">
+		<text>最伟大的战士</text>
+	</string>	
+	<string id="monolith_eidolon_task_2_text">
+		<text>为幻灵收集%s的恩赐.</text>
+	</string>		
+	<string id="monolith_eidolon_task_2_about">
+		<text>危险而又致命的野兽. 是特异区的馈赠,是我们的风景. 也供我们服用. 守护者和猎手,亦是伟大的里程碑. 让我来测试你的力量吧. 下定决心,与实力决一死战. 出发吧,我的兄弟. 狩猎者与狩猎者,人与野兽.</text>
+	</string>		
+	<string id="monolith_eidolon_task_2_fetch_about">
+		<text>危险而又致命的野兽. 是特异区的馈赠,是我们的风景. 也供我们服用. 守护者和猎手,亦是伟大的里程碑. 让我来测试你的力量吧. 下定决心,与实力决一死战. 出发吧,我的兄弟. 狩猎者与狩猎者,人与野兽. 搜集%s证明你的价值.</text>
+	</string>	
+	<string id="monolith_eidolon_task_2_fetch_finish">
+		<text>伟大的恩赐. 黑石会无比的骄傲. 我亦是如此. 一份小小的奖励,赐予你.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Eidolon (Elite Monolith Soldier) Harvest the Fruit Task -->
+
+	<string id="monolith_eidolon_task_3_name">
+		<text>收获圣果</text>
+	</string>
+	<string id="monolith_eidolon_task_3_text">
+		<text>幻灵想要收集一个"%s"神器.</text>
+	</string>
+	<string id="monolith_eidolon_task_3_about">
+		<text>我们守护黑石,黑石庇护我们. 我们侍奉特异区,特异区给予我们馈赠. 灿烂的圣果,散发出无与伦比的光彩, 让我们变得更为强大. 快去收获圣果吧,兄弟.</text>
+	</string>
+	<string id="monolith_eidolon_task_3_fetch_about">
+		<text>我们守护黑石,黑石庇护我们. 我们侍奉特异区,特异区给予我们馈赠. 灿烂的圣果,散发出无与伦比的光彩, 让我们变得更为强大. 快去收获圣果吧,兄弟. 收获一个"%s"神器以增强我们的力量.</text>
+	</string>
+	<string id="monolith_eidolon_task_3_fetch_finish">
+		<text>干得好! 不愧是我看上的人,太谢谢你了,忠诚的兄弟.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Eidolon (Elite Monolith Soldier) Keeper of Secrets Task -->
+	<string id="monolith_eidolon_task_4_name">
+		<text>保密者</text>
+	</string>
+	<string id="monolith_eidolon_task_4_text">
+		<text>取回装有特异区秘密的文件,并把它们带给幻灵.</text>
+	</string>
+	<string id="monolith_eidolon_task_4_about">
+		<text>这里有一些的文件, 它们详细地记载了异教徒所不知道的有关特异区的奇迹及秘密, 把那些文件取回来并交给我, 我会给予你应得的奖励.</text>
+	</string>
+	<string id="monolith_eidolon_task_4_finish">
+		<text>现在特异区安全了,这是你应得的.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Rabbit (Monolith Trader) Assault Territory Task -->
+	<string id="pri_monolith_monolith_trader_stalker_task_1_name">
+		<text>消灭敌人</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_1_text">
+		<text>为了全能的黑石的利益,你被派去清理这片区域. 任务完成后回来向兔子汇报.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_1_about">
+		<text>我有一个十分重要的任务给你. 你需要进入特异区里清理这片区域,以便我们的兄弟们进入这里,你准备好了吗?</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_1_finish">
+		<text>任务已经完成了? 干得好! 赞美黑石!</text>
+	</string>
+
+
+
+	<!-- ASSASSINATION FOR MONOLITH TASK -->
+	<string id="pri_monolith_monolith_trader_stalker_task_2_name">
+		<text>清除计划者</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_2_text">
+		<text>有一个潜行者打算关掉"焦脑器". 去干掉他.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_2_about">
+		<text>特异区里伟大的工程总是受到威胁, 又有人正在打算关掉"焦脑器", 你必须阻止他. 把他找出来然后将他碎尸万段.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_2_finish">
+		<text>干得漂亮. 黑石十分满意.</text>
+	</string>
+
+
+	<!-- FIND WEAPON FOR MONOLITH TASK -->
+	<string id="pri_monolith_monolith_trader_stalker_task_3_name">
+		<text>为兔子拿到%s</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_3_text">
+		<text>兔子需要新武器来扩充黑石军火库.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_3_about">
+		<text>我们现在正在日益壮大. 为了我们的目标,我们需要更多的武器. 你需要为我们找到一种新武器, 这样我们才能继续扩充我们的军火库.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_3_fetch_about">
+		<text>找到一支新的%s并把它带给我.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_3_fetch_finish">
+		<text>做得好.</text>
+	</string>
+
+
+	<!-- FIND MUTANT MEAT FOR MONOLITH TASK -->
+	<string id="pri_monolith_monolith_trader_stalker_task_4_name">
+		<text>帮兔子寻找%s</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_4_text">
+		<text>找到并且加工%s. 把肉拿给兔子好让他能做好准备</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_4_about">
+		<text>我们的补给快见底了,你需要去特异区里去寻找一些食物好让你的黑石兄弟们可以饱餐一顿.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_4_fetch_about">
+		<text>寻找%s并把它带给我们. 记住,这些生物是特异区给我们的馈赠. 快去心怀感激的杀掉它们. 在狩猎完成后记得把肉带回来.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_4_fetch_finish">
+		<text>你成功地完成了你的任务, 做得好!</text>
+	</string>
+
+
+	<!-- FIND SUPPLIES FOR MONOLITH TASK -->
+	<string id="pri_monolith_monolith_trader_stalker_task_5_name">
+		<text>为兔子收集%s</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_5_text">
+		<text>找到%s并把它们交给兔子.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_5_about">
+		<text>为了我们伟大的事业能够继续, 你需要为我们获取更多的补给品.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_5_fetch_about">
+		<text>找到%s并把它们带给我.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_5_fetch_finish">
+		<text>你很好地服侍了黑石.</text>
+	</string>
+
+
+	<!-- FIND ARTEFACT FOR MONOLITH TASK -->
+	<string id="pri_monolith_monolith_trader_stalker_task_6_name">
+		<text>为兔子找到 "%s" 神器</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_6_text">
+		<text>找到"%s"神器. 把它交给兔子以便他准备祭品.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_6_about">
+		<text>我们必须再找一个神器来进行献祭, 你已经准备好去侍奉伟大的黑石了吗?</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_6_fetch_about">
+		<text>找到"%s"神器. 在你成功后把它带给我,以便我主持仪式.</text>
+	</string>
+	<string id="pri_monolith_monolith_trader_stalker_task_6_fetch_finish">
+		<text>你做的很好,今晚来和我们一起吟唱吧.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== MECHANIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Cleric (Monolith Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="pri_monolith_monolith_mechanic_stalker_task_1_name">
+		<text>帮传教士寻找%s</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_1_text">
+		<text>传教士需要%s来完成基本的武器装备升级,如果你找到了它们,把它带给传教士.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_1_about">
+		<text>我需要你为我做一些工作,我需要要一些特殊的工具来调整我们的武器.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_1_fetch_about">
+		<text>是的,我需要一套%s. 快去找.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_1_fetch_finish">
+		<text>做的好.</text>
+	</string>
+
+	<string id="pri_monolith_monolith_mechanic_stalker_task_2_name">
+		<text>帮传教士寻找%s</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_2_text">
+		<text>传教士需要%s来完成高级的武器装备升级,如果你找到了它们,把它带给传教士.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_2_about">
+		<text>我需要更多且更好的工具,你能找到我需要的工具吗?</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_2_fetch_about">
+		<text>我需要一套高级工具. 里面包含了我想要的一切,如果你能帮我找到一套这样的工具,我现在就可以为你打折.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_2_fetch_finish">
+		<text>做的好,你把它们带给了我.</text>
+	</string>
+
+	<string id="pri_monolith_monolith_mechanic_stalker_task_3_name">
+		<text>帮传教士寻找%s</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_3_text">
+		<text>传教士需要%s来完成专业的武器装备升级,如果你找到了它们,把它带给传教士.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_3_about">
+		<text>我需要更多且更好的工具,你能找到我需要的工具吗?</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_3_fetch_about">
+		<text>我需要一套专业工具. 里面包含了我想要的一切,如果你能帮我找到一套这样的工具,我现在就可以为你打折.</text>
+	</string>
+	<string id="pri_monolith_monolith_mechanic_stalker_task_3_fetch_finish">
+		<text>做的好,你把它们带给了我.</text>
+	</string>
+	
+	
+	<string id="lider_monolith_haron_task_1_name">
+		<text>消灭敌人</text>
+	</string>
+	<string id="lider_monolith_haron_task_1_text">
+		<text>卡戎要求我去解放特异区里一个关键的位置.</text>
+	</string>
+	<string id="lider_monolith_haron_task_1_about">
+		<text>我的兄弟,我们现在正缺人手去消灭异教徒.</text>
+	</string>
+	<string id="lider_monolith_haron_task_1_finish">
+		<text>恭喜你, 兄弟! 接受你应得的</text>
+	</string>
+
+	<string id="lider_monolith_haron_task_2_name">
+		<text>收集%s</text>
+	</string>
+	<string id="lider_monolith_haron_task_2_text">
+		<text>卡戎要我给他带来%s.</text>
+	</string>
+	<string id="lider_monolith_haron_task_2_about">
+		<text>伟大的黑石将会给那些那些帮助我们清理圣地的异教徒的兄弟奖励,把那些虫子的标志带回来以证明你已经完成了任务.</text>
+	</string>
+	<string id="lider_monolith_haron_task_2_fetch_about">
+		<text>伟大的黑石将会给那些那些帮助我们清理圣地的异教徒的兄弟奖励,把%s带给我来证明你完成了任务.</text>
+	</string>
+	<string id="lider_monolith_haron_task_2_fetch_finish">
+		<text>干得好,兄弟. 这是给黑石你的.</text>
+	</string>
+	
+<!-- Griffith -->
+	<string id="merc_pri_grifon_mlr_task_1_name">
+		<text>收集%s</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_1_text">
+		<text>格里芬要我收集%s.</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_1_about">
+		<text>那些该死的狂热分子太多了, 你可以把它们全都消灭吗? 如果你给我弄一些他们的臂章, 我这里的好东西就归你</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_1_fetch_about">
+		<text>那些该死的狂热分子太多了, 你可以把它们全都消灭吗? 如果你给我弄一些他们的臂章, 我这里的好东西就归你</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_1_fetch_finish">
+		<text>谢谢你,潜行者,这是一点小报酬.</text>
+	</string>
+	
+	<string id="merc_pri_grifon_mlr_task_2_name">
+		<text>找到"灵质体"神器.</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_2_text">
+		<text>格里芬要求我去找一个"灵质体"神器.</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_2_fetch_about">
+		<text>这里没有医生,但我们需要一些方式活下去. 通常来讲,我们缺乏医疗设备以及医生,想要照顾到每个伤员是很困难的. 因此我需要你的帮助,我听说一种名为"灵质体"的神器可以治疗伤口,你可以为我们带一个过来吗?</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_2_fetch_finish">
+		<text>你已经找到了吗? 真是难以置信... 谢谢你兄弟! 它一定可以帮到那些伤员的,先别走,这是你的报酬.</text>
+	</string>
+
+	<string id="merc_pri_grifon_mlr_task_3_name">
+		<text>清空熟食店</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_3_text">
+		<text>雇佣兵希望熟食店里的狗可以得到特殊的"照顾".</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_3_about">
+		<text>嘿,我们遇到了另一个问题,有一些狗把熟食店当作了它们的巢穴,这对我们可不是一个好消息,这些混蛋整日乱叫,并且还会吸引不必要的注意,如果你可以把它们赶出去我会十分感激.</text>
+	</string>
+	<string id="merc_pri_grifon_mlr_task_3_finish">
+		<text>谢谢你,干得好! 这是你的报酬.</text>
+	</string>
+	
+	
+<!-- (Mercenary Mechanic) -->
+	<string id="merc_pri_a18_mech_mlr_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_1_text">
+		<text>市郊的雇佣兵技师想要我为它找到%s.</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_1_about">
+		<text>我们在普里皮亚奇已经傻坐了这么长时间... 对了,你从格里芬那里听说过我们的事情吗. 我一直都在找初级及高级工具,但最终我只找到了一套初级工具而且这套工具不适合进行维修. 我是个技师,我需要一套合适的工具来把工作做到最好,你可以帮我找到一套吗?</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_1_fetch_about">
+		<text>我们在普里皮亚奇已经傻坐了这么长时间... 对了,你从格里芬那里听说过我们的事情吗. 我一直都在找初级及高级工具, 但最终我只找到了一套初级工具而且这套工具不适合进行维修. 我是个技师,我需要一套合适的工具来把工作做到最好,你可以帮我找到一套吗?</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_1_fetch_finish">
+		<text>谢谢你,不要害怕这些小伙汁,我将会给你报酬.</text>
+	</string>
+
+	<string id="merc_pri_a18_mech_mlr_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_2_text">
+		<text>市郊的雇佣兵技师想要我为它找到%s.</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_2_about">
+		<text>现在,我们已经解决了一些问题,但还有很多事情要去做. 我需要更好的工具来进行升级,介意再个帮忙吗?</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_2_fetch_about">
+		<text>现在,我们已经解决了一些问题,但还有很多事情要去做. 我需要更好的工具来进行升级,介意再个帮忙吗?</text>
+	</string>
+	<string id="merc_pri_a18_mech_mlr_task_2_fetch_finish">
+		<text>干得好! 现在我的工具全了,并且我会为你打折.</text>
+	</string>
+	
+	
+<!-- (Monolith Mechanic) -->
+	<string id="mechanic_monolith_kbo_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_1_text">
+		<text>在禧年服务中心的技师要我为它带去%s.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_1_about">
+		<text>兄弟,我需要你的帮助. 我需要一套工具这样我们的兄弟就可以更为高效的传输有关黑石的消息.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_1_fetch_about">
+		<text>兄弟,我需要你的帮助. 我需要一套工具这样我们的兄弟就可以更为高效的传输有关黑石的消息.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_1_fetch_finish">
+		<text>做的好! 兄弟,我们不会忘记你的恩情,小小谢礼不成敬意.</text>
+	</string>
+
+	<string id="mechanic_monolith_kbo_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_2_text">
+		<text>在禧年服务中心的技师要我为它带去%s.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_2_about">
+		<text>您以前找到的工具集是不够的. 为了能让兄弟们继续传播它的旨意,我们需要一套更好的工具来进行更加复杂的任务,可以再帮我们一次吗?</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_2_fetch_about">
+		<text>您以前找到的工具集是不够的. 为了能让兄弟们继续传播它的旨意,我们需要一套更好的工具来进行更加复杂的任务,可以再帮我们一次吗?</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_2_fetch_finish">
+		<text>做的好! 兄弟,我们不会忘记你的恩情,小小谢礼不成敬意.</text>
+	</string>
+
+	<string id="mechanic_monolith_kbo_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_3_text">
+		<text>在禧年服务中心的技师要我为它带去%s.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_3_about">
+		<text>你带来的最后一套工具是... 足够的, 但是,当我们能够取得更好的成就时,为什么要止步于已经取得的成就呢? 我们需要的是特异区内最好的工具. 我请求你最后帮我们一次,我的兄弟.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_3_fetch_about">
+		<text>你带来的最后一套工具是... 足够的, 但是,当我们能够取得更好的成就时,为什么要止步于已经取得的成就呢? 我们需要的是特异区内最好的工具. 我请求你最后帮我们一次,我的兄弟.</text>
+	</string>
+	<string id="mechanic_monolith_kbo_task_3_fetch_finish">
+		<text>干得好,兄弟. 我将铭记你对弟兄们的贡献... 我承诺在我的能力范围内提供任何帮助.</text>
+	</string>
+	
+	
+
+</string_table>

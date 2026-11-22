@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_SMR">
+		<text>特异区定制计划ZCP</text>
+	</string>
+	
+	<string id="ui_mcm_menu_smr_anomalies">
+		<text>异常点</text>
+  </string>
+    <string id="ui_mcm_SMR_smr_anomalies_dyn_ano_chance">
+		  <text>动态异常点生成数量</text>
+    </string>
+    <string id="ui_mcm_SMR_smr_anomalies_dyn_ano_chance_desc">
+      <text>如果启用了动态异常,这将增加/减少它们出现的机会. 如果没有 ZCP,游戏总是使用 35%</text>
+    </string>
+		<string id="ui_mcm_SMR_smr_anomalies_pulse">
+			<text>启用"脉冲"异常</text>
+		</string>
+		<string id="ui_mcm_SMR_smr_anomalies_pulse_desc">
+			<text>"脉冲"是一种异常现象,有时会在你上方出现光团, 并引发灵体能量击中地面 </text>
+		</string>
+    <string id="ui_mcm_smr_anomalies_anomalies_types_title">
+		<text>异常类型</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_anomalies_anomalies_types_info">
+		<text>你可以在下面控制将产生哪些类型的动态异常. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_anomalies_electric">
+		<text>电能</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_chemical">
+		<text>生化</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_thermal">
+		<text>热能</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_gravitational">
+		<text>重力</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_radioactive">
+		<text>放射性</text>
+	</string>
+  </string_table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<string_table>
+	<string id="ui_mcm_menu_toggle_scope">
+		<text>瞄具切换</text>
+	</string>
+	<string id="ui_mcm_toggle_scope_key_bind_toggle">
+		<text>装卸瞄具按键</text>
+	</string>
+	<string id="ui_mcm_toggle_scope_key_bind_toggle_desc">
+        <text>%c[d_green]• 单击: 装上/取下当前瞄具 
+            \n%c[d_green]• 双击: 装上物品栏内下一个兼容的瞄具
+        </text>
+	</string>
+</string_table>

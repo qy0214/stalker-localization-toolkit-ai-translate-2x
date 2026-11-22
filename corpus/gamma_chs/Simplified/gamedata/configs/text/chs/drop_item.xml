@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_drop_item">
+		<text>快速丢弃</text>
+	</string>
+	<string id="ui_mcm_drop_item_key_drop">
+		<text>快速丢弃按键</text>
+	</string>
+	<string id="ui_mcm_drop_item_key_drop_desc">
+        <text>按下此键会使鼠标正在指向的物品从背包中丢到地面</text>
+	</string>
+</string_table>

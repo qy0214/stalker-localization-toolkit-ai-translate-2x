@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Faction Patches
+-->
+<string_table>
+	<string id="st_matches">
+		<text>引火物</text>
+	</string>
+	<string id="st_matches_descr">
+		<text>一組浸潤著樹脂的松木, 任何曾經在戶外點火的人都知道, 剛剛點燃的火苗很容易就會被吹來的風熄滅, 引火松木可以讓你燃起雖小但是不易熄滅的火苗, 火苗溫度可超過紙張和蠟的燃燒溫度, 最重要的一點還是在於, 它能在潮濕的情況下點燃.\n\n\n
+		%c[0,255,255,255]屬性:\n						
+		%c[d_orange] • %c[ui_gray_2] 用於點火</text>
+	</string>
+	
+	<string id="st_wood_stove">
+		<text>六角爐</text>
+	</string>
+	<string id="st_wood_stove_descr">
+		<text>由不鏽鋼和輕質鈦製成, 這款緊湊型的可摺疊烤爐可用來製作一份主食. 但由於特異區內收集到的木柴污染實在是過於嚴重, 潛行者們不得不放棄木柴轉而使用物美價廉的從外面流入的木炭, 木炭成爲了使用最為廣泛的燃料. 這種爐子可以用來熟制污染較少的肉類, 但對於毒性較大的則無能為力. 點燃爐子需要一些點火技巧.\n \n
+		%c[ui_gray_3]提示:\n \n
+		%c[ui_gray_1]雖說木炭看起來比較便宜, 但是做一頓飯會消耗不少的量, 因此木炭並不像表面看起來那麼便宜, 但是它的優點在於輕便, 當你準備在特異區內進行一次遠行時, 你會需要他的.\n \n
+		%c[ui_gray_1]不需要高溫熟制的肉被稱為"低等變種肉", 而需要高溫熟制的肉被稱為"高等變種肉".\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 可用於烹飪較小變異生物的肉\n
+		%c[d_cyan] • %c[ui_gray_2] 需要: 木炭\n
+		</text>
+	</string>
+	
+	<string id="st_cooking">
+		<text>野外烹飪用具</text>
+	</string>
+	<string id="st_cooking_descr">
+		<text>一個旅行用的野外用具. 包含露營和旅行時所需要的烹飪工具, 產生的噪音很大, 非常笨重. 在潛行者中十分受歡迎.\n \n
+		%c[ui_gray_3]提示:\n \n
+		%c[ui_gray_1]雖說木炭看起來比較便宜, 但是做一頓飯會消耗不少的量, 因此木炭並不像表面看起來那麼便宜, 但是它的優點在於輕便, 當你準備在特異區內進行一次遠行時, 你會需要他的.\n \n
+		%c[ui_gray_1]不需要高溫熟制的肉被稱為"低等變種肉", 而需要高溫熟制的肉被稱為"高等變種肉".\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 可用於烹飪較小變異生物的肉\n
+		%c[d_green] • %c[ui_gray_2] 在篝火上使用\n
+		%c[d_cyan] • %c[ui_gray_2] 需要: 木炭\n
+		</text>
+	</string>
+	
+	<string id="st_army_bowler">
+		<text>軍用飯盒</text>
+	</string>
+	<string id="st_army_bowler_descr">
+		<text>這種軍用飯盒形狀是凹字型的, 配有一個鋼彎制的鐵絲手柄便於攜帶和懸掛, 在掛在腰帶上攜帶時, 凹進去的一邊可以靠身體放置. 在加熱或者烹飪時, 蓋子可以當作鍋來使用. 手柄被設計成可以固定蓋子的樣式, 所以在攜帶時一定要蓋好蓋子, 並將湯匙插進手柄上的專用孔位中.\n \n
+		%c[ui_gray_3]提示:\n \n
+		%c[ui_gray_1]可以使用多種燃料的烹飪器具遠比只能使用木柴和木炭的要高效得多, 從遠期來看, 會讓你省下更多的錢, 但是由於某些燃料過於笨重以至於更適合在據點而不是野外來使用.\n \n
+		%c[ui_gray_1]不需要高溫熟制的肉被稱為"低等變種肉", 而需要高溫熟制的肉被稱為"高等變種肉".\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 可用於烹飪較小變異生物的肉\n
+		%c[d_green] • %c[ui_gray_2] 在篝火上使用\n
+		%c[d_cyan] • %c[ui_gray_2] 需要: 木炭\n
+		</text>
+	</string>
+	
+	<string id="st_fieldcooker">
+		<text>多功能燃料爐</text>
+	</string>
+	<string id="st_fieldcooker_descr">
+		<text>這種爐子已經在無數次探險中飽經考驗, 及其耐用、可靠並且擁有強大功能的設計正是爲了高海拔、低氣溫等極端的環境而生, 擁有極高的輸出功率, 也可以使用任何型別的燃料如 天然氣、汽油、柴油、煤油/石蠟甚至航空燃油. 有單獨的控制旋鈕, 這使得在你戴著手套時也能精確地控制溫度.\n \n
+		%c[ui_gray_3]提示:\n \n
+		%c[ui_gray_1]可以使用多種燃料的烹飪器具遠比只能使用木柴和木炭的要高效得多, 從遠期來看, 會讓你省下更多的錢, 但是由於某些燃料過於笨重以至於更適合在據點而不是野外來使用.\n \n
+		%c[ui_gray_1]不需要高溫熟制的肉被稱為"低等變種肉", 而需要高溫熟制的肉被稱為"高等變種肉"\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 可以用於烹飪各種變異生物的肉\n
+		%c[d_cyan] • %c[ui_gray_2] 需要: 汽油, 天然氣, 煤油\n
+		</text>
+	</string>
+	
+	<string id="st_box_matches">
+		<text>火柴</text>
+	</string>
+	<string id="st_box_matches_descr">
+		<text>在特異區中火柴是除武器之外的第二伴侶, 有了火柴, 你就能點火焰, 為朋友們帶來光明, 趕走狹小的空間內的黑暗. 這些火柴在特異區某個角落裡的小作坊完成生產, 所以不要指望它的質量, 但還是禁不住他的便宜. 盒子已經是皺巴巴的, 粉碎的硫磺滿盒子都是, 所以大概只有四分之一能夠正常使用, 而且別說是點火, 哪怕是點菸都非常困難\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於: 點火和點菸\n</text>
+	</string>
+	
+	<string id="st_kerosene">
+		<text>煤油</text>
+	</string>
+	<string id="st_kerosene_descr">
+		<text>煤油是一種廣泛使用的燃料, 比如在航空中用作火箭的燃料, 也用於玻璃製作的家用照明和加熱工具, 同時它也是很棒的溶劑, 能夠輕易地流入內部構造, 所以在各種部件的清潔和維修中, 常常可以看見它的身影.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 烹飪燃料\n
+		</text>
+	</string>
+	
+	<string id="st_charcoal">
+		<text>木炭</text>
+	</string>
+	<string id="st_charcoal_descr">
+		<text>用硬木製成的木炭, 用於烹飪火盆或者燒烤架中的魚、肉類或者蔬菜.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 烹飪燃料\n</text>
+	</string>
+
+	<string id="st_fuel_tier_1">
+		<text>所有易燃物</text>
+	</string>
+	<string id="st_fuel_tier_1_desc">
+		<text>
+		%c[d_blue] • %c[ui_gray_2] 篝火\n
+		%c[d_blue] • %c[ui_gray_2] 木炭\n
+		%c[d_blue] • %c[ui_gray_2] 煤油\n
+		%c[d_blue] • %c[ui_gray_2] 燃油桶\n
+		%c[d_blue] • %c[ui_gray_2] 燃氣瓶\n
+		</text>
+	</string>
+	
+	<string id="st_fuel_tier_2">
+		<text>僅限液體燃料</text>
+	</string>
+	<string id="st_fuel_tier_2_desc">
+		<text>
+		%c[d_blue] • %c[ui_gray_2] 煤油\n
+		%c[d_blue] • %c[ui_gray_2] 燃油桶\n
+		%c[d_blue] • %c[ui_gray_2] 燃氣瓶\n
+		</text>
+	</string>
+
+</string_table>

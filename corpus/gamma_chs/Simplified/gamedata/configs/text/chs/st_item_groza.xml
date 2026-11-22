@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_wpn_guns_groza">
+		<text>OC-14-4A</text>
+	</string>
+	<string id="st_wpn_groza_guns_descr">
+		<text>这把Groza拥有自动榴弹发射器系统, 基本上就是一把AKS-74U改造后的成果 (主要区别在于9x39毫米的口径, 犊牛式无托结构和支持更多战术配件), 专为武装快速反应部队而设计, 它能够可靠地击杀受防弹背心保护或位于掩体中的敌人, 因此受到军方和潜行者的高度评价, 它还可以组装成4种不同的配置, 具体取决于作战任务的需求\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PO4x34瞄具\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下挂榴弹发射器\n \n</text>
+	</string>
+	<string id="st_wpn_groza_guns_nimble">
+		<text>OC-14-4A "职责"</text>
+	</string>
+	<string id="st_wpn_groza_guns_nimble_descr">
+		<text>当地技师为一位名为丹亚的前纪律团战士改装的OC-14自动步枪, 使用的零件都来自特异区, 口径已更改为更常见的5.45x39, 还有一个可容纳60发子弹的扩容弹匣以及战术激光, 这把机枪是纪律团中每一位老兵的梦想, 但机枪的前任主人却将此枪托付给了彼得连科, 让他在纪律团中为这把枪找到一位配得上它的新主人\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PO4x34瞄准镜, PN-23夜视瞄准镜, ELCAN SpecterDR, Acog, 巴斯卡AC10632红点瞄准镜, Cobra 8-18反射式瞄准镜, Aimpoint PRO红点瞄准镜, 3-24x42 FFP前进牌战术瞄准镜, OKP-7反射式瞄准镜, AimpointMicro红点瞄准镜, Aimpoint红点瞄准镜, C-More红点瞄准镜, Aimpoint CompM4s红点瞄准镜, Docter反射式瞄准镜, Deltapoint Pro反射式瞄准镜, Eotech全息瞄准镜, Eotech 553全息瞄准镜, Kemper反射式瞄准镜, Meprolight自发光夜间红点瞄具, Rakurs, Trijicon RMR反射式瞄准镜\n</text>
+	</string>
+</string_table>

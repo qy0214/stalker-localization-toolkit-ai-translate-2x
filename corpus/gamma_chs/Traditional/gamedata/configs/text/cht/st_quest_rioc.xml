@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_rioc_sid_desc">
+		<text>你在一個死去的潛行者身上發現的密封容器, 一定是西多洛維奇說的那批貨.</text>
+	</string>
+
+	<string id="st_rioc_sid">
+		<text>西多洛維奇的貨物</text>
+	</string>
+
+	<string id="st_rioc_duty_desc">
+		<text>PDA證實了彼得連科失蹤的士兵已經死了. 看來他已經盡力了.</text>
+	</string>
+
+	<string id="st_rioc_duty">
+		<text>掉落的紀律團PDA</text>
+	</string>
+
+	<string id="st_rioc_ecolog_desc">
+		<text>生態學家們說, 一臺裝在加固容器中的計算機, 這是一種全新的探測器原型, 註定要改變神器狩獵的世界. 不幸的是, 沒有一個圖表和數字對你有任何意義.</text>
+	</string>
+
+	<string id="st_rioc_ecolog">
+		<text>原型探測器</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_d">
+		<text>一個潛行者本應該從另一個交易商那裡給我帶來一些特殊的物品, 但我已經好幾天沒有聽到他的任何訊息了, 一開始我以為他只是帶著東西跑了, 但他並沒有隱藏他的位置, 一段時間也沒有移動. 也許他只是丟了PDA或者被殺了, 反正我需要有人過去看看到底發生了什麼. 如果他死了, 碰巧還能拿回那東西.</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_t">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_t">
+		<text>歸還探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_d">
+		<text>我們現在有點問題, 我們的一個科研小組出去執行一些異常點掃瞄, 但還沒有返回. 我們試圖聯繫他們, 但沒有得到任何迴應. 當我們向國家安全域性提出這個問題時, 他們說他們現在不能騰出資源或人力去找我們的科研小組. 它目前對我們的研究至關重要. 其中一個小組成員配備了一個原型探測器, 這是我們很少從基地拿出來使用的東西. 如果你能去他們最後一個已知的地點, 找到探測器原型或科研小組, 我們會獎勵你的幫助. 我會在你的PDA上標記科研小組的最後位置.</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_end">
+		<text>感謝上帝, 你不知道我是多麼感激看到這個裝置回到我們的手中! 失去這個團隊是令人傷心的, 但失去這種裝置將使我們的研究推遲近一年. 謝謝你的幫助, 這是你的酬勞.</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_t">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_d">
+		<text>今天早些時候, 一支輕型巡邏小隊接到了中立部隊的求救訊號. 他們及時趕到, 疏散了一些被困在變種食物襲擊中的潛行者和生態學家, 但其中一名紀律團人員不得不留下來殿後. 他的其他隊員現在將他列為失蹤. 我想讓你去調查襲擊現場確認他的情況. 如果他還活著, 盡你所能治癒他然後把他帶回來. 如果他不能得救, 就把他的掌上電腦拿回來; 烈士的事蹟應該留給子孫後代.</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_end">
+		<text>他死了嗎? 他是個好人, 但特異區對這些人的仇恨是無情的. 來, 讓我看看他的PDA... 嗯, 有意思. 代表紀律團, 我們對你表示感激. 給你, 你賺的可不止這些.</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_agroprom_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_pol_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_garbage_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_wt_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_aw_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_trucc_0">
+		<text>找到西多洛維奇的貨</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_agroprom_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_pol_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_garbage_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_wt_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_aw_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="esc_m_trader_task_recover_item_on_corpse_trucc_1">
+		<text>歸還西多洛維奇的貨物</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_agroprom_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_pol_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_garbage_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_wt_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_aw_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_trucc_0">
+		<text>找到探測器原型</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_agroprom_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_pol_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_garbage_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_wt_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_aw_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_task_rioc_trucc_1">
+		<text>歸還探測器</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_agroprom_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_pol_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_garbage_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_wt_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_aw_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_trucc_0">
+		<text>戰鬥中失蹤</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_agroprom_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_pol_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_garbage_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_wt_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_aw_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_rioc_trucc_1">
+		<text>把PDA交給彼得連科</text>
+	</string>
+
+</string_table>

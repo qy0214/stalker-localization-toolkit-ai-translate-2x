@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<string id="st_wpn_fort12">
+		<text>Fort-12</text>
+	</string>
+	
+	<string id="st_wpn_fort12_descr">
+		<text>Fort-12 是乌克兰制造自己的警用手枪以取代苏联马卡洛夫PM的一次尝试, 同时仍使用相同的 9x18 口径;  这是一款强大的手枪, 由乌克兰枪械设计师RPC Fort于1995年设计并于1998年开发, 被认为是PM本身的升级版;  尽管它可能存在可靠性问题, 特别是由于缺乏安全的待击落装置, 但它弥补了准确性, 弹匣和人体工程学方面的不足;  该型号配有螺纹枪管, 默认配备消音器 \n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 消音器</text>
+	</string>
+	
+	<string id="st_wpn_fort17">
+		<text>Fort-17</text>
+	</string>
+
+	<string id="st_wpn_fort17_descr">
+		<text>Fort-17 是 Fort-12 的改进型;  通过将框架从钢更换为聚合物, 重量减轻了, 尽管后坐力可能会稍微差一点;  默认情况下配备 13 号弹匣; 它还有一个可拆卸的握把背带, 可以改善人体工程学\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 消音器</text>
+	</string>
+	
+	<string id="st_wpn_fort21">
+		<text>Fort-21</text>
+	</string>
+	
+	<string id="st_wpn_fort21_descr">
+		<text>Fort-21.01是“RPC Fort”制造的Jericho 941的复制品, 是在2009年9月与“以色列军事工业”签订合同后制造的; 考虑到其相对较“新”的地位, 特别是在特异区中, 它是一个相当“新”的产品;  稀有手枪, 因此价格昂贵;  它以 CZ-75 为蓝本, 两者可以共享各自的 16 发弹匣;  与它的老兄弟 Fort-12 和 Fort-17 不同, 它使用 9x19 口径而不是 9x18 口径;  该型号似乎还配备了一些瞄准具附件, 具有复杂的绿色和红色氚点设计\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 消音器</text>
+	</string>
+
+	<string id="st_up_fort21_45acp_name">
+		<text>口径修改为 .45 ACP</text>
+	</string>
+
+</string_table>

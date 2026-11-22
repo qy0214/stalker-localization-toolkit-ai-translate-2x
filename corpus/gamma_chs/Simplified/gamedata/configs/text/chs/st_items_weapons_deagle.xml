@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_steppe_eagle">
+		<text>草原之鹰</text>
+	</string>
+	<string id="st_wpn_steppe_eagle_descr">
+		<text>草原之鹰由美国 Magnum Research 公司开发, 采用步枪中常见的气动机构; 这使得该手枪能够使用比传统半自动手枪大得多的子弹口径; 缺点是体积相当大且重; 这支枪在枪管上经过完美调整, 努力达到最高的精确度, 后坐力方面, 也得益于集成的枪口补偿器显著降低了; 它的皮卡汀尼导轨经过了重新设计, 可以安装多种瞄准镜; 这把枪是由潜行者洛根威廉姆斯带到特异区的;  他以记者兼摄影师的身份, 独自一人深入到了普里皮亚特的市中心; 有传言称, 他是特异区内许多秘密部门的眼线, 不过直到现在也无人知晓他的下落\n \n
+		%c[0,140,140,140]枪械配件: \n
+		%c[0,93,0,116] • %c[0,140,140,140] 瞄具: March Tactical 3-24x42 FFP, PN-23, ELCAN SpecterDR, OKP-2, AC10632, ACOG, Aimpoint Micro T1 (低底座), Aimpoint Micro T1 (高底座), C-MORE, Aimpoint CompM4s, Docter Sight III, Deltapoint PRO, EOTech XPS3-0, 眼镜蛇ECP-8-18, Firefield Kemper XL-M, Meprolight M21, OKP-77, Aimpoint PRO, 1P76 "雷卡鲁斯-A", Trijicon RMR. \n</text>
+	</string>
+	<string id="st_wpn_deagle">
+		<text>沙漠之鹰</text>
+	</string>
+	<string id="st_wpn_deagle_descr">
+		<text>沙漠之鹰由美国 Magnum Research 公司开发, 采用步枪中常见的气动机构; 这使得该手枪能够使用比传统半自动手枪大得多的子弹口径; 缺点是体积相当大且重\n \n
+		%c[0,140,140,140]枪械配件: \n
+		%c[0,93,0,116] • %c[0,140,140,140] 瞄具: Docter Sight, Aimpoint T1(低底座), Trijicon RMR, Leupold DeltaPoint PRO. \n</text>
+	</string>
+</string_table>

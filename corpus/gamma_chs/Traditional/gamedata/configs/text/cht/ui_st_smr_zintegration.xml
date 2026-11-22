@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_smr_zzintegration">
+		<text>整合</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_integration_info">
+		<text>此處的選項允許 ZCP 與其他外掛很好地協同工作. 這類似於相容性補丁,只是更方便. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_glowsticks">
+		<text>螢光棒</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_glowsticks_info">
+		<text>適配 https://www.moddb.com/mods/stalker-anomaly/addons/glowsticks. 使螢光棒能夠作為有用的物品產生. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_mags_redux">
+		<text>異常彈匣系統</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_mags_redux_chance">
+		<text>彈匣產生機會</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_mags_redux_info">
+		<text>適配 https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-magazines-redux. 啟用目前裝備的武器的彈夾作為儲藏箱中的額外物品產生. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_lootboxes">
+		<text>異常戰利品箱</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_lootboxes_chance">
+		<text>戰利品產生機會</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zzintegration_lootboxes_info">
+		<text>適配 https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-lootboxes. 使鎖匙作為有用的物品產生,以及作為自己類別的戰利品產生. </text>
+	</string>
+</string_table>

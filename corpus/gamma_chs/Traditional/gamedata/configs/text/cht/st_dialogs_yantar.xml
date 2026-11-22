@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- (Military Mechanic) -->
+	<string id="army_yan_mec_about_tool_0">
+		<text>喂, 你是誰?</text>
+	</string>
+	<string id="army_yan_mec_about_tool_1">
+		<text>我是從當地軍隊調來的, 代號是"遊隼", 我是一名技師, 總部某天發現我修東西的本事, 於是覺得我在這裡會更有用, 你懂的, 幫助維護科研裝置之類, 而薩哈洛夫非常同意這次人事調動, 也許之前的傢伙給他找了不少麻煩...</text>
+	</string>
+	<string id="army_yan_mec_about_tool_2">
+		<text>所以你就成爲了移動地堡的新技師, 那麼目前這裡情況怎樣?</text>
+	</string>
+	<string id="army_yan_mec_about_tool_3">
+		<text>雖然比困在總部要強多了... 比如, 被某個憤怒的上司每天盯著, 又或者被命令逼著去巡邏, 然後朝那些絕望的人臉上開槍之類...		\n但多虧了上面派來的補給隊的"傑出表現", 我需要的工具一樣都沒, 甚至爲了維持目前的狀況, 我都需要和上面爭論到臉色發青, 生態學家在這裡的那些"神秘裝置", 很難用現有的資源維持下去, 更不用說升級或適應特異區不斷變化的環境了\n \n比如這個破收音機, 就永遠都修不好, 它只會發出一堆亂七八糟的聲音, 最弔詭的是, 這些聲音的內容, 明顯來自我們七年前就死在軍事倉庫的弟兄...</text>
+	</string>
+	<string id="army_yan_mec_about_tool_4">
+		<text>這就是特異區嘛, 你永遠猜不到會發生什麼... 不管怎麼說, 祝你好運!</text>
+	</string>
+
+	
+<!-- (Military Cooker) -->
+	<string id="meet_povar_army_0">
+		<text>你是誰?</text>
+	</string>
+	<string id="meet_povar_army_1">
+		<text>我想, 我應該算是本地的廚子吧, 正式來講, 我應該是生態學家的戰場助理, 不過實際上... 額, 他們已經好幾個月沒派我出勤了, 所以我覺得反正哪也去不了, 乾脆在這裡呆著唄, 不說這些了, 大家都叫我"酒鬼", 你好!</text>
+	</string>
+	<string id="meet_povar_army_2">
+		<text>那為啥他們不再派你出去了?</text>
+	</string>
+	<string id="meet_povar_army_3">
+		<text>完全是出於誤會, 他們都認為我真的是個"酒鬼", 呵呵, 你不覺得很可笑?  在這地獄般的鬼地方呆著, 沒有酒精的麻痹怎麼活得下去? 我有個老朋友叫托普, 他就在距普里皮亞奇一步之遙的移動地堡工作, 我從他嘴裡聽說黑石又要來了... 不, 我暫時還不願去想這檔子事...\n
+		聽著, 我這裡處境不太好, 因為缺乏人手, 他們最近甚至要對我下禁酒令, 我必須囤一些貨來幫我在這鬼地方撐下去... 我說, 你如果給我弄點尼米洛夫伏特加, 我可以拿東西跟你換, 怎麼樣?
+		\n拿來5個單位的酒, 我可以用4包9x18, 2包5.45, 2包5.56, 或者2包9x39子彈來換
+		\n10個單位的酒, 我能用1包7.62mm7N1, 3包12x76鹿彈, 4包5.45, 4包5.56, 或者4包9x39子彈來換
+		\n15個單位 - 大概就是5瓶酒 - 加上7000盧布, 你能得到90發的7.62x54mm PP子彈, 它們可貴了, 你懂的...
+		\n20單位, 大概不到七瓶酒, 我會給你一個初級工具箱
+		\n別覺得我在走私公物... 我不偷也不搶, 這些東西都是我存在封鎖線附近倉庫里的, 而且這也不光是為我自己... 多餘的酒我會運到亞諾夫車站賣給那邊的兄弟們</text>
+	</string>
+	<string id="meet_povar_army_4">
+		<text>我會考慮的, 多謝</text>
+	</string>
+
+	<string id="barter_povar_army_0">
+		<text>我給你帶來了些伏特加</text>
+	</string>
+	<string id="barter_povar_army_1">
+		<text>太棒了! 你想要什麼?</text>
+	</string>
+		<string id="barter_povar_army_2">
+			<text>4包9x18</text>
+		</string>
+		<string id="barter_povar_army_3">
+			<text>2包5.45</text>
+		</string>
+		<string id="barter_povar_army_3_2">
+			<text>2包5.56</text>
+		</string>
+		<string id="barter_povar_army_3_3">
+			<text>2包9x39</text>
+		</string>
+		<string id="barter_povar_army_4">
+			<text>4包5.45</text>
+		</string>
+		<string id="barter_povar_army_4_2">
+			<text>4包5.56</text>
+		</string>
+		<string id="barter_povar_army_4_3">
+			<text>4包9x39</text>
+		</string>
+		<string id="barter_povar_army_5">
+			<text>3包鹿彈</text>
+		</string>
+		<string id="barter_povar_army_6">
+			<text>1包7.62mm 7N1</text>
+		</string>
+		<string id="barter_povar_army_7">
+			<text>90發7.62x54mm PP</text>
+		</string>
+		<string id="barter_povar_army_8">
+			<text>初級工具箱</text>
+		</string>
+	<string id="barter_povar_army_10">
+		<text>好, 給你</text>
+	</string>
+	<string id="barter_povar_army_11">
+		<text>好的, 給</text>
+	</string>
+	<string id="barter_povar_army_12">
+		<text>一手交酒, 一手交貨!</text>
+	</string>
+	<string id="barter_povar_army_13">
+		<text>哈! 狩獵愉快, 潛行者!</text>
+	</string>
+	<string id="barter_povar_army_14">
+		<text>嗯... 好選擇</text>
+	</string>
+	<string id="barter_povar_army_15">
+		<text>真想馬上聽到這些嶄新的子彈被你的槍射出去時的美妙音樂!</text>
+	</string>
+	<string id="barter_povar_army_16">
+		<text>給你</text>
+	</string>
+	<string id="barter_povar_army_9">
+		<text>給, 好好享受吧, 反正我會的</text>
+	</string>
+
+	<string id="remember_dyx_barter_0">
+		<text>再說一遍你有啥能換?</text>
+	</string>
+	<string id="remember_dyx_barter_1">
+		<text>聽好了! 5單位雷米洛夫換4包9x18子彈或者2包5.45子彈, 或者2包5.56子彈, 或者2包9x39子彈
+		\n10單位換1包7.62mm 7N1子彈, 或者3盒12X76的鹿彈, 或者4包5.45子彈, 或者4包5.56子彈, 或者4包9x39子彈
+		\n15單位加7000盧布換90發7.62x54mm PP子彈
+		\n20單位換一個初級工具箱</text>
+	</string>
+
+
+<!-- Kruglov -->
+	<string id="yan_ecolog_kruglov_start_dialog_1">
+		<text>你好, 潛行者</text>
+	</string>
+
+	<!-- yan_ecolog_semenov -->
+	<string id="yan_ecolog_semenov_start_dialog_1">
+		<text>啊, 潛行者, 看看你有啥需要的?</text>
+	</string>
+	<string id="yan_ecolog_semenov_start_dialog_yan_ecolog_semenov_task_1">
+		<text>我還需要收集更多的數據, 我們再去找些變異生物!</text>
+	</string>
+
+	<!-- yan_ecolog_vasilyev -->
+	<string id="yan_ecolog_vasilyev_start_dialog_1">
+		<text>你好, 潛行者!</text>
+	</string>
+	
+
+<!-- Sakharov -->
+	<string id="st_yan_saharov_message_free_upgrade">
+		<text>潛行者! 你救了我們! 如果沒了你的幫忙, 我們的碉堡絕對完蛋了! 爲了表達我的感激, 我能幫你免費升級你的抗靈頭盔!</text>
+	</string>
+	<string id="yan_stalker_sakharov_start_1">
+		<text>你好, 潛行者, 什麼風把你吹來了?</text>
+	</string>
+	<string id="yan_stalker_sakharov_player_query_brain_scorcher">
+		<text>你能跟我說說"焦腦器"和"神蹟裝置"嗎?</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_query_brain_scorcher">
+		<text>嗯...好的...我們所知的不多, 但是分享一下這些知識也並無壞處, "焦腦器"似乎會發出入侵性的靈能波, 普里皮亞奇周圍, 紅森林北邊, 以及核電站周圍, 都會被這種能量影響, 癥狀包括偏頭痛; 幻覺; 幻視; 還有一個聽起來很不專業的詞 - 殭屍化... 如果我必須給個科學的猜測, 我認為"焦腦器"就是個遠端的靈能場產生器, 不過在完全確定之前, 我還得做更多的實質性研究;\n
+		而"神蹟裝置"或者"腦機"有著非常相似的功能, 但它的原理似乎更偏向于生物異變產生的靈能波, 比如魔犬和那些被靈能場強化的怪物...</text>
+	</string>
+	<string id="yan_stalker_sakharov_player_query_psi_helmet">
+		<text>教授, 我需要一個抗靈頭盔, 我需要進入"神蹟裝置"和"焦腦器"的靈能場範圍內, 沒有頭盔就沒法完成我的任務</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_query_psi_helmet">
+		<text>我想, 你應該知道進入這些地區的風險吧... 好吧, 我相信你都懂, 不然你也不會來找我, 嗯, 我們有個一直在研究的原型, 經過這兩週的除錯, 已經進行了最終的校準, 如果你急用, 我可以立即提供給你, 只要30,000盧布就行; 但是有一點, 從未有人瘋狂到帶上這個去實地測試... 好吧, 其實我有一個助手測試過了沒有校準的原型, 呃... 下場不是很好, 這個故事我們改天再聊; 這個已經校準過的原型, 應該可以保護你不受固定頻率的大型靈能場的傷害, 比如神蹟裝置和焦腦器; 但我要強調的是: 它不能防護那些野外的小型靈能場和脈衝風暴, 以及在強烈可變頻的靈能場下會有迅速過載的風險</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_query_psi_helmet_free">
+		<text>我想你應該知道進入這些地區的風險吧... 好吧, 我相信你都懂, 不然你也不會來找我, 嗯, 我們有個一直在研究的原型, 但是還沒有完成, 而且缺少最終的校準\n
+		\n它應該可以保護你不受固定頻率的大型靈能場的傷害, 比如神蹟裝置和焦腦器; 但我要強調的是: 它不能防護那些野外的小型靈能場和脈衝風暴, 以及在強烈可變頻的靈能場下會有迅速過載的風險</text>
+	</string>
+	<string id="yan_stalker_sakharov_player_psi_helmet_1_1">
+		<text>我很急, 把未校準的頭盔給我吧</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_1_1">
+		<text>我真的害怕這個沒完成的原型機會影響你的任務, 不過如果你堅持的話... 那好吧, 但別忘了, 你隨時都可以把它帶過來做最終的校準, 如果你覺得有什麼不對勁的話, 馬上回來! 如果你因為這個頭盔死在外面, 我無論如何不能原諒自己\n
+		\n如果你確定了, 給我20,000盧布, 然後把頭盔拿走吧!</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_1_2">
+		<text>錢給你, 謝謝你, 教授!</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_1_2">
+		<text>無需客氣, 但我還是希望你能先測試一下效果... 比如, 就在這裡北邊廠區的下方, 有一個實驗室, 你可以去把裡面的"神蹟裝置"關掉, 希望這個頭盔能保護你的意識完整無缺...</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_1_3">
+		<text>我決定還是讓你們完成最後的工作, 請完全校準這個頭盔</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_1_3">
+		<text>聽到你這個要求, 你無法想像我內心的解脫, 好! 就讓我們完成最終的校準吧! 這肯定會大大減少腦部受傷的風險, 而且也能降低我們內心的愧疚... 既然你已經為我們的研究工作提供了援助, 那麼最終校準就收你10,000盧布吧, 然後你得等上兩天</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_2_1">
+		<text>希望這值得我的等待</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_2_1">
+		<text>那是肯定的! 一旦我們完成這個頭盔的校準工作, 你就可以在特異區里自由的穿行, 且不用擔心大型靈能場對你的精神傷害了, 所以費用是30,000盧布, 但我要提醒你, 儘管它的防護效能將被最大化, 卻僅限於固定頻率的大型靈能場發生器, 某些野外的小型靈能場, 或者可變頻的靈能場還是會對你造成傷害的</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_2_1_free">
+		<text>那是肯定的! 一旦我們完成這個頭盔的校準工作, 你就可以在特異區里自由的穿行, 且不用擔心靈能裝置對你的精神傷害了, 但我要提醒你, 儘管它的防護效能將被最大化, 卻僅限於固定頻率的大型靈能場發生器, 某些野外的小型靈能場, 或者可變頻的靈能場還是會對你造成傷害的, 之前你在緊要關頭幫助了我們, 我們可以把這個裝置免費給你, 好好利用它吧!</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_2_2">
+		<text>我會記住的, 畢竟對我來說, 你們的工作就跟魔法一樣神奇...</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_2_2">
+		<text>哈哈, 這是科學的魔法, 潛行者! 其實, 我們也要感謝你的勇氣! 畢竟關閉神蹟和焦腦器也是我們一直以來期待的目標! 好了, 校準完成! 好好利用吧! </text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_2_3">
+		<text>頭盔搞定了嘛?</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_2_3">
+		<text>搞定了! 給你, 但我還是希望你能先測試一下效果... 比如, 就在這裡北邊廠區的下方, 有一個實驗室, 你可以去把裡面的"神蹟裝置"關掉, 希望這個頭盔能保護你的意識完整無缺...</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_2_3_1">
+		<text>別催! 再等等</text>
+	</string>
+
+	<string id="yan_stalker_sakharov_player_psi_helmet_3_1">
+		<text>我需要考慮一下</text>
+	</string>
+	<string id="yan_stalker_sakharov_npc_psi_helmet_3_1">
+		<text>很好, 別擔心, 這個抗靈頭盔我會替你保管</text>
+	</string>
+	
+	<string id="st_yan_stalker_sakharov_life_ask">
+		<text>最近科學界在特異區有什麼重大發現嗎?</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_1">
+		<text>當然有! 比如隕星體這個神器, 我們發現它在實驗室環境下展現出了優異的防彈效果, 再過幾年, 也許在防彈護甲板領域會出現驚人的進展</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_2">
+		<text>哦, 當然, 雖然我們已經對人形變異怪物的組織樣本進行了大量研究, 但仍不清楚是什麼讓吸血怪進化出隱身能力, 或者是什麼讓史諾克進化出跳躍能力, 如果我們繼續對這些變異的原因和性質進行研究, 說不定就能準確地預測人類的進化路線! 這難道不令人興奮嗎?</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_3">
+		<text>我們最近在吸血怪身上做了一些有趣的實驗, 至於具體細節... 我覺得你還是不要知道的好</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_4">
+		<text>作為一個研究學者, 你肯定會為此事激動: 我們的研究發現, 豚獸身上所謂"眼睛"的組織, 不僅有視覺, 同時還有嗅覺的能力! 誰會能想得到, 最尋常的家豬會變異為最不尋常的通感生物? 這可能不僅僅是它們大腦的變異, 同時還有它們感知器官的變異...</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_5">
+		<text>當然了, 經過多年對變異生物樣本的研究, 我們即將把變異生物的器官和組織商品化, 比如豚獸的眼睛, 史諾克和變異巨獸的肉體組織等等, 嗯, 雖然很有爭議, 但你看到最新的樣本了嗎? 我們可以通過手術把它們移植到志願者身上! 我們將開啟生物改造的新浪潮!</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_6">
+		<text>也許所有話語都無法形容特異區對我研究的幫助, 我們的發現大大地提高了我在生態學家中的地位, 也許最大的成就是我和同事們一起在實驗室條件下創造出了罕見的海膽石! 這是一個值得得到諾貝爾獎的突破! 可不幸的是, 特異區的神器特性一直在變化, 就好像有意地隱藏真實特性一樣, 儘管我們曾經取得過巨大的進展, 但現在還需要很長時間才能製造出更強大的神器</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_7">
+		<text>嗯, 布倫特教授是我的一位同事, 他一直在研究那些吃變異肉的潛行者, 以此測試突變蛋白對人體的影響, 並記錄潛行者們避免不良影響所用的辦法, 我們現在對輻射傷害人體的機制已經很清楚了</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_8">
+		<text>啊當然! 你知道刺胞體吧? 最初由於其核心的不穩定, 2022年之前在實驗室條件下製造這個神器是不現實的, 然而, 現在我們可能會提前破解這個神器的秘密, 因為刺胞體越來越難在特異區中找到, 而且它還對製造防護服和消輻寧十分重要, 你自己就肯定從我們的研究中受益過了, 特異區要是還有誰沒用過我們的防護服或消輻寧, 那可真夠他受的</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_9">
+		<text>什麼? 我很抱歉, 我今天不想討論這些, 昨晚外面那些變種怪的聲音讓我神經緊張, 現在很難集中注意力, 也許你想買些裝備, 或是看看我的同事是否需要幫助?</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_10">
+		<text>許多年前, 我們對浮空石的研究, 促使了第一個反衝器和離子發動機的問世, 然而, 如果沒有潛行者從重力異常中帶來神器, 我們一生或許都得不到這些啓發, 在向公眾公開這些發現之前, 還需要很多年, 但不可否認的是, 潛行者們幫助科學界鋪平了通往星空的道路! 要我說, 像奇點這種重力異常點, 科學界都知道它可以壓縮空間本身, 超空間傳送將不再是一個幻想! 啊, 也可能我想的太遠了...</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_11">
+		<text>我們對特異區的研究, 讓能源領域從中收穫巨大, 我們已經悄悄將月光石放在能安全利用其異常能量輸出的專用裝置中, 並將它放入各地特定的發電機組中, 隨著進一步的改進, 它可以為我們的後人完全取代化石能源, 接下來, 我們可能會試試更強大的熱電體, 但我的同事估計, 即使是單個熱電體的能量輸出也得超過三個核反應堆, 在面對如此強大的能量時, 我們的實驗必須非常小心...</text>
+	</string>
+	<string id="st_yan_stalker_sakharov_life_end">
+		<text>最近沒啥有趣的發現...</text>
+	</string>
+
+	<!-- yan_merc_guards -->
+	<string id="yan_merc_guards_start_2">
+		<text>現在不是時候, 我在工作, 如果你需要什麼, 可以去找遊隼或隨便一個卵蛋頭</text>
+	</string>
+	<string id="yan_merc_guards_start_3">
+		<text>快一點兒! 我可不想聊天的時候史諾克跑來把我菊花爆了</text>
+	</string>
+	<string id="yan_merc_guards_start_4">
+		<text>從北邊傳來的嗡嗡聲讓我渾身發毛, 希望那個該死的廚師別把酒都喝完了...</text>
+	</string>
+</string_table>
+																		 

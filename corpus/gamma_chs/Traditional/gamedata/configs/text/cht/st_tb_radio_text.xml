@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- PDA UI -->
+	
+	<string id="cb_pda_cancel">
+		<text>放棄目前的無線電包裹</text>
+	</string>
+
+	<string id="cb_cancel_package_inactive">
+		<text>你需要一個可用的射頻接收器來取消包裹</text>
+	</string>
+	
+	<string id="cb_cancel_package_underground">
+		<text>在你所處的位置無法發出訊號</text>
+	</string>
+	
+	<string id="cb_cancel_package_success">
+		<text>啥? 你不想要了? 好吧, 這個包裹我們讓別人去拿好了...</text>
+	</string>
+
+	<!-- PDA MESSAGES -->
+
+	<string id="tb_anon_sender">
+		<text>"神秘人"</text>
+	</string>
+
+	<!-- PDA MESSAGES -->
+
+	<string id="tb_sooner_rf">
+		<text>...喂! 聽好了! 別管我是誰, 有人讓我們幫你, 你趁早熟悉一下射頻接收器怎麼用, 之後我們會把座標發給你的, 不要回復!</text>
+	</string>
+
+
+	<string id="tb_package_can_be_found">
+		<text>下一個包裹的訊號在</text>
+	</string>
+
+	<string id="tb_use_rf_on_freq">
+		<text>, 頻率是:</text>
+	</string>
+
+	<string id="tb_mhz_to_search">
+		<text>MHz</text>
+	</string>
+
+
+	<string id="tb_dont_forget">
+		<text>重複! 那個包裹在</text>
+	</string>
+
+	<string id="tb_freq_was_on">
+		<text>, 頻率是:</text>
+	</string>
+
+	<string id="tb_the_mhz">
+		<text>MHz</text>
+	</string>
+	
+	<string id="cb_package_lost">
+		<text>目前座標已失效, 下一個新的包裹在</text>
+	</string>
+	<!-- ROUGH LOCATION TEXTS -->
+
+	<string id="tb_loc_n_r">
+		<text>的北部區域 </text>
+	</string>
+	<string id="tb_loc_ne_r">
+		<text>的東北區域 </text>
+	</string>
+	<string id="tb_loc_e_r">
+		<text>的東部區域 </text>
+	</string>
+	<string id="tb_loc_se_r">
+		<text>的東南區域 </text>
+	</string>
+	<string id="tb_loc_s_r">
+		<text>的南部區域</text>
+	</string>
+	<string id="tb_loc_sw_r">
+		<text>的西南區域</text>
+	</string>
+	<string id="tb_loc_w_r">
+		<text>的西部區域</text>
+	</string>
+	<string id="tb_loc_nw_r">
+		<text>的西北區域</text>
+	</string>
+
+	<!-- LEVEL NAMES -->
+
+	<string id="tb_loc_mar">
+		<text>大沼澤</text>
+	</string>
+	<string id="tb_loc_dsc">
+		<text>黑暗小徑</text>
+	</string>
+	<string id="tb_loc_esc">
+		<text>封鎖線</text>
+	</string>
+	<string id="tb_loc_gar">
+		<text>填埋場</text>
+	</string>
+	<string id="tb_loc_agr">
+		<text>農業研究所</text>
+	</string>
+	<string id="tb_loc_val">
+		<text>黑谷</text>
+	</string>
+	<string id="tb_loc_bar">
+		<text>羅斯托克</text>
+	</string>
+	<string id="tb_loc_ros">
+		<text>廢棄區</text>
+	</string>
+	<string id="tb_loc_mil">
+		<text>軍事倉庫</text>
+	</string>
+	<string id="tb_loc_yan">
+		<text>揚塔</text>
+	</string>
+	<string id="tb_loc_cit">
+		<text>死城</text>
+	</string>
+	<string id="tb_loc_lim">
+		<text>利曼斯克</text>
+	</string>
+	<string id="tb_loc_rad">
+		<text>雷達站</text>
+	</string>
+	<string id="tb_loc_red">
+		<text>紅森林</text>
+	</string>
+	<string id="tb_loc_pri">
+		<text>普里皮亞奇</text>
+	</string>
+	<string id="tb_loc_aes1">
+		<text>核電站南區</text>
+	</string>
+	<string id="tb_loc_aes2">
+		<text>核電站北區</text>
+	</string>
+	<string id="tb_loc_gen">
+		<text>風暴引擎</text>
+	</string>
+	<string id="tb_loc_zat">
+		<text>扎頓</text>
+	</string>
+	<string id="tb_loc_jup">
+		<text>尤皮特</text>
+	</string>
+	<string id="tb_loc_out">
+		<text>普城郊區</text>
+	</string>
+	<string id="tb_loc_trc">
+		<text>卡車墓園</text>
+	</string>
+	<string id="tb_loc_pol">
+		<text>牧場</text>
+	</string>
+	<string id="tb_loc_dbg">
+		<text>測試區域</text>
+	</string>
+
+</string_table>

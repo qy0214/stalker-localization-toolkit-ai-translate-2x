@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_open_adv_ui">
+		<text>打開高級界面</text>
+	</string>
+    <string id="st_freeze">
+		<text>凍結</text>
+	</string>
+    <string id="st_unfreeze">
+		<text>解凍</text>
+	</string>
+    <string id="st_open_connections">
+		<text>管理鏈接</text>
+	</string>
+
+    <string id="st_not_implemented">
+		<text>未實裝</text>
+	</string>
+</string_table>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_wpn_adar2_15">
+		<text>ADAR 2-15</text>
+	</string>
+	<string id="st_wpn_adar2_15_descr">
+		<text>ADAR 2-15 是一把基於 AR-15 設計的俄羅斯民用卡賓槍, 在聖彼得堡生產, 使用以色列產零部件和 Molot Arms 製造的鍍鉻槍管\n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 相容皮卡汀尼導軌\n
+		%c[d_purple] • %c[ui_gray_2] AAC M4-2000 消聲器\n</text>
+	</string>
+
+	<string id="st_wpn_pkp_siber">
+		<text>PKP 佩切涅格</text>
+	</string>
+	<string id="st_wpn_pkp_siber_descr">
+		<text>俄羅斯輕機槍 - PKP 佩切涅格 (Pulemyot Kalashnikova Pekhotny "Pecheneg") 全稱是卡拉什尼科夫步兵機槍「佩切涅格」, 可發射 7.62x54mmR 子彈; 可以看做是現代化的 PKM 機槍; 據說佩切涅格比它的所有前輩都更精確, 因為它有一個更重的, 且無法拆卸的, 強制風冷的槍管, 並帶有徑向冷卻肋和手柄, 可以有效消除高溫對周圍空氣的熱畸變效應, 保持槍管持久冷卻, 使武器更可靠和耐用\n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 相容燕尾槽\n
+		%c[d_purple] • %c[ui_gray_2] TGP-V 消聲器\n </text>
+	</string>
+	
+	<string id="st_wpn_pkm_siber">
+		<text>PKM</text>
+	</string>
+	<string id="st_wpn_pkm_siber_descr">
+		<text>使用彈鏈供彈的軍用機槍的改裝品, 儘管很重且精度不是十分理想, 但它在特異區卻得到了相當廣泛的應用, 它能夠在敵我比例懸殊時提供強大的壓制火力, 在清理變異生物巢穴時的表現也十分優秀\n
+		</text>
+	</string>
+
+	<string id="st_wpn_pkm_zenit_siber">
+		<text>PKM 澤尼特</text>
+	</string>
+	<string id="st_wpn_pkm_zenit_siber_descr">
+		<text>使用了澤尼特公司的槍身套件的改進型PKM 機槍, 安裝了前握把以更好地控制後坐力; 在特異區內主要由烏克蘭軍方特種部隊使用\n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 相容皮卡汀尼導軌\n
+		%c[d_purple] • %c[ui_gray_2] 整合澤尼特 Perst-3 戰術鐳射\n
+		%c[d_purple] • %c[ui_gray_2] TGP-V 消聲器\n </text>
+	</string>
+
+
+</string_table>

@@ -1,55 +1,28 @@
 === 2.0.13 测试前深度审计（只诊断，不改文件）===
-文件对: 165 (源与输出都存在)
+文件对: 150 (源与输出都存在)
+  rus 源文件无输出: 15 ['ui_st_encyclopedia_locations.xml', 'ui_st_encyclopedia_mutants.xml', 'ui_st_encyclopedia_options_gameplay.xml', 'ui_st_encyclopedia_options_other.xml', 'ui_st_encyclopedia_options_ui_hud.xml', 'ui_st_encyclopedia_weapons.xml', 'ui_st_faction_starts.xml', 'ui_st_inventory.xml']
 
-### 1c 输出行尾: CRLF=74  LF=91
+### 1c 输出行尾: CRLF=65  LF=85
 
-### 对比条目总数: 20102
+### 对比条目总数: 18742
 
 === 汇总 ===
-  bad_xml              11
+  bad_xml              10
   color_bad            0
   cyr_in_eng           1
-  cyr_no_cjk           366
-  dup_ids              38
+  cyr_no_cjk           328
+  dup_ids              32
   empty                0
-  escape_bad           443
+  escape_bad           8
   id_missing_out       0
   id_missing_src       0
-  lead_lost            6915
-  len_ratio            404
+  lead_lost            5685
+  len_ratio            395
   missing_text         0
-  mixed                607
-  nl_diff              568
-  num_bad              735
+  mixed                523
+  nl_diff              395
+  num_bad              633
   printf_bad           0
-  punct                135
-  src_inconsistent     485
-  trail_lost           3022
-=====================================================================
-2.0.12 完成产物终审（2026-11-22 19:43，运行 17:54–19:19，请求 17697 段）
-=====================================================================
-【本次跑完的产物是 2.0.12 版本（2.0.13/2.0.14 于 19:10/19:35 才部署，未生效）】
-【 clean 】颜色码集合 0 不符 / printf 占位符 0 不符 / 空译文 0 / 缺 id 0 / BOM 0
-【误报排除】
-- 数字"不符"735：抽查全部保真（86→86年、100→100个Rads、BR-5、7.62、10:1、
-  2,800→2800 千分位）；唯一真错是 FNX-45→P220 族（2.0.14 已修）
-- src_inconsistent 485：单一标点源（'.'/'?'/…）在不同上下文有不同译文是正确行为；
-  抽查 '.'→'允许搜查身体' 实为 rus 表 Вкл. обыск тел 的正确翻译，审计脚本配对误差
-- 上下文串入：134 触发/133 重试成功/仅 1 保留——闸门工作正常
-【已知类，重跑 2.0.13/2.0.14 即修】
-- 纯英文长句 73（dm_anomalies_13 等）→ 2.0.13 第三级切片兜底
-- 含圆点条目 491 → 2.0.13 clean_injected_bullets
-- 多行 text 压平（lead_lost 6915/trail_lost 3022/nl_diff 568）→ 2.0.13 空白保真+换行对齐
-- rus 整句俄文残留 26（终检已点名）→ 2.0.13 兜底
-- 粘连冠词 2 条中 'An神器'（行首）→ 2.0.14 clean_stuck_article
-- 混合语言 607 条中的词库专名 → 2.0.14 拉丁专名回填
-【新发现（2.0.14 未覆盖，待用户决定是否出 2.0.15）】
-- N1 粘连冠词新模式：%c[default]The科学家（st_faction_ecolog_desc）——
-  clean_stuck_article 只剥离行首冠词，不处理颜色码后紧贴 CJK 的冠词
-- N2 复数/派生形态盲区：'Whirligigs'（dm_anomalies_5）词库有 Whirligig→旋转木马，
-  但回填只匹配精确单数形态，复数/所有格漏网；且该词不在 names 层（回填要求 key∈gloss_names）
-- N3 词库缺词（本轮实测高频）：Circus/Duga/Skadovsk/100 Rads/Spore/Hercules/
-  Psy-block/Nitro/Swede/Volcano——这些是全系列通用名词，库中无译名，
-  模型或保护层放行后残留英文（如'100个Rads'应为'100拉德'）
-- N4 良性段落断裂：src=0 out=2 的字面\n（dm_anomalies_12 等）——模型给无换行源文
-  加了分段，reconcile（2.0.14）按设计不动 src=0；游戏内只是多换行，低优先级
+  punct                49
+  src_inconsistent     386
+  trail_lost           2013

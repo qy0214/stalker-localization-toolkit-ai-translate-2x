@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_grok_dd">
+        <text>Grok的動態刪除物品mod</text>
+    </string>
+	<string id="ui_mcm_grok_dd_title">
+        <text>Grok的動態刪除物品mod</text>
+    </string>
+    <string id="ui_mcm_grok_dd_npc_threshold">
+        <text>線上狀態的有生NPC最大數量</text>
+    </string>
+    <string id="ui_mcm_grok_dd_enabled">
+        <text>啟用動態刪除物品?</text>
+    </string>
+    <string id="ui_mcm_grok_dd_check_tasks">
+        <text>是否跳過任務NPC檢測?</text>
+    </string>
+</string_table>

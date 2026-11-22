@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+<string id="ui_mcm_menu_EA_settings">
+		<text>更好的第一人称动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_enable_animations">
+		<text>启用第一人称动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_enable_backpack_addon">
+		<text>启用背包动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_enable_crouch_toggle_backpack_addon">
+		<text>启用背包的蹲下动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_mutant_loot">
+		<text>启用变种的战利品动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_take_item_anim">
+		<text>启用物品拾取动作</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_mutant_loot_desc">
+		<text>注意：如果第一人称动作被禁用 \n
+		\n 则此项自动禁用</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_take_dist">
+		<text>拾取动作距离</text>
+	</string>
+	
+	<string id="ui_mcm_EA_settings_ea_debug">
+		<text>EA debug</text>
+	</string>
+
+	<string id="ui_mcm_EA_settings_take_dist_desc">
+		<text>默认值 - 0.12,推荐值为固定值 \n
+		 弹匣插件错误 - 0.3-0.5</text>
+	</string>
+	
+	<string id="st_EA_ladder_item_not_allowed">
+      <text>你的手现在正忙着呢</text>
+    </string>
+	
+	<string id="st_EA_game_ver_error_1">
+      <text>此游戏版本并非FDDA兼容的版本!!! \n本插件只能用于异常1.5.2\n你的游戏版本为\n --</text>
+    </string>
+	
+	<string id="st_EA_game_ver_error_2">
+      <text>--\n请仔细阅读MODDB上的FDDA插件说明\n 那里有专为1.5.1版本提供的链接 </text>
+    </string>
+	
+	<string id="st_EA_game_ver_error_button_ok">
+      <text>好吧, 崩了吧</text>
+    </string>
+	
+	<string id="st_EA_game_ver_error_button_cancel">
+      <text>好吧, 关我屁事</text>
+    </string>
+</string_table>

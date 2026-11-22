@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Repair Kits
+-->
+<string_table>
+
+	<string id="st_sharpening_stones">
+		<text>三件套磨刀石</text>
+	</string>
+	<string id="st_sharpening_stones_descr">
+		<text>還在用鈍的刀和工具?算了吧. 塑料包裝的三片磨刀石套裝可以讓你不再忍受砂輪在抽屜里滾動的噪音. 預磨、削尖,再到刀刃的固定,三道工序,一次完工,讓你的愛刀時刻保持剃刀般的鋒利.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 適用於利器\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打磨工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於利器維護\n
+		</text>
+	</string>
+	
+	<string id="st_gun_oil">
+		<text>槍械潤滑油 "布魯諾克斯"</text>
+	</string>
+	<string id="st_gun_oil_descr">
+		<text>一種保護槍械零件的潤滑油, 可以防止槍械故障和零件腐蝕, 特別是在武器長時間使用之後. 使用前應事先清理零件表面和內部積存的異物, 使用者也可以使用一些基本工具來處理零件的內部, 以提升維護效果. 噴霧中特殊的成分可以提高運動部件的滑動能力, 使得它更適合於半自動和全自動武器. 這種噴霧能保證槍械在-55°C的溫度下正常運作, 它的燃點為78°C\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 適用於所有武器\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 液體槍油\n
+		%c[d_orange] • %c[ui_gray_2] 適用於裝備維修\n
+		</text>
+	</string>
+	
+	<string id="st_gun_oil_ru_d">
+		<text>槍械潤滑油 "雙子"</text>
+	</string>
+	<string id="st_gun_oil_ru_d_descr">
+		<text>在紅軍中服役時間接近70年的品牌槍油, 金屬瓶里分別放有潤滑油和清潔溶劑兩種材料. 剛投入使用時, 溶劑基於堿液開發, 含有能有效清理彈藥儲存和運輸時常用的鹽類, 直到現在, 產品配方已經過多次更新, 但是簡單粗暴的雙瓶設計未曾改變, "雙子"在特異區內因其用途廣泛而備受追捧\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 適用於所有武器\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 液體槍油\n
+		%c[d_orange] • %c[ui_gray_2] 適用於裝備維修\n
+		</text>
+	</string>
+	
+	<string id="st_gun_oil_ru">
+		<text>槍械潤滑油 "野兔"</text>
+	</string>
+	<string id="st_gun_oil_ru_descr">
+		<text>含有俄羅斯產的廉價槍油的塑料瓶, 儘管價格低廉, 只要定期使用, 還是能夠保證槍械的正常運作. 應配合毛刷來增強槍油的效果. 根據生產商的描述, "野兔"因其低摩擦係數而尤其適用於自動武器, 它還含有多種抗腐蝕和金屬養護成分\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 適用於所有武器\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 液體槍油\n
+		%c[d_orange] • %c[ui_gray_2] 適用於裝備維修\n
+		</text>
+	</string>
+	
+	<string id="st_solvent">
+		<text>槍械潤滑油 "九號"</text>
+	</string>
+	<string id="st_solvent_descr">
+		<text>西方生產的適用於惡劣環境的優質槍械清理溶劑, "九號"幾乎從剛誕生起便是廣受好評的清潔溶劑. 它不僅具有除去銹漬, 火藥, 鉛粉和碎銅等同類產品的作用, 還可以防止大顆粒殘留物附著于槍械部件上, 而這在覈污染較為常見的特異區內尤為重要. 產品起效快, 效果好, 便於使用.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 適用於所有武器\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 液體槍油\n
+		%c[d_orange] • %c[ui_gray_2] 適用於裝備維修\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_p">
+		<text>清理包 "進步" 小口徑版</text>
+	</string>
+	<string id="st_cleaning_kit_p_descr">
+		<text>一套專業的刷子, 用於清潔槍管和槍支的其他部件, 清除使用過程中積累的污垢, 沙子, 水漬, 潤滑劑殘留物和其他異物, 爲了使槍支始終保持良好狀態, 在特異區很常用. 可以讓普通工具更好地利用酒精來接觸槍械的內部結構, 溶解油渣, 也可以更好地發揮槍油的效用, 但大多數有經驗的潛行者會使用動物脂肪作為替代潤滑劑.
+		\n這一套工具一般用於手槍彈武器\n \n
+		%c[0,255,255,255]說明:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於清潔槍內的髒污零件 (狀況60以上) 右鍵點選槍支 - 維護零件 - 清潔零件\n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 小口徑武器\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_s">
+		<text>霰彈槍清理包 "文字已過時"</text>
+	</string>
+	<string id="st_cleaning_kit_s_descr">
+		<text>一組專門用於清理槍管和其它槍械零件中的塵土、水漬和潤滑油殘餘等在使用過程中積攢的異物的特殊毛刷. 這種工具在特異區內被廣泛用於槍械的清潔. 使用一般的工具也可以清潔槍械的內部零件,酒精也有助於去除油污. 這一套工具適用於12號霰彈槍. 極光牌工具包內含三種專用毛刷,一個用於射擊后的清潔,一個用於塗抹潤滑油,一個用於除銹. 讓你的霰彈槍擁有持久火力.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 12號口徑武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於清潔槍內的髒污部分（狀況60以上）. 右鍵點選槍支 - 維護零件 - 清潔零件. \n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r5">
+		<text>瓦魯普諾III牌小口徑步槍清理包(文字過時)</text>
+	</string>
+	<string id="st_cleaning_kit_r5_descr">
+		<text>一組專門用於清理槍管和其它槍械零件中的塵土、水漬和潤滑油殘餘等在使用過程中積攢的異物的特殊毛刷. 這種工具在特異區內被廣泛用於槍械的清潔. 使用一般的工具也可以清潔槍械的內部零件,酒精也有助於去除油污. 這些毛刷也可以被用於均勻塗抹槍油,儘管更有經驗的潛行者們也會以動物油脂作為廉價替代品. 這一套工具適用於中口徑彈藥、槍管較長的步槍,自帶的硬質塑料容器可以循環使用.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 5. 45 和 5. 56 武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於清潔槍內的髒污部分（狀況60以上）. 右鍵點選槍支 - 維護零件 - 清潔零件. \n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r7">
+		<text>中口徑及大口徑步槍清理包(文字過時)</text>
+	</string>
+	<string id="st_cleaning_kit_r7_descr">
+		<text>一組專門用於清理槍管和其它槍械零件中的塵土、水漬和潤滑油殘餘等在使用過程中積攢的異物的特殊毛刷. 這種工具在特異區內被廣泛用於槍械的清潔. 使用一般的工具也可以清潔槍械的內部零件,酒精也有助於去除油污. 這些毛刷也可以被用於均勻塗抹槍油,儘管更有經驗的潛行者們也會以動物油脂作為廉價替代品. 這一套工具適用於大口徑彈藥、槍管很長的步槍. 生產商不明,但是產品簡單的設計和上好的質量可能意味著軍用的背景,很可能來自特種部隊.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 7. 62,7. 92,9x39 和 . 338 口徑武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於清潔槍內的髒污部分（狀況60以上）. 右鍵點選槍支 - 維護零件 - 清潔零件. \n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_u">
+		<text>通用口徑武器清理包</text>
+	</string>
+	<string id="st_cleaning_kit_u_descr">
+		<text>適用於所有口徑武器的高級清潔套裝. 除去清潔和保養功能,它還可以修繕槍械零件. 這一套工具包含潤滑油、清潔溶劑以及一些用於清潔內部零件的微型工具. 爲了達到最佳的效果,請將這一套裝同其它材料及專用維修工具一起使用.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • 不能用於清潔槍支內的武器部件\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_p">
+		<text>手槍修理箱</text>
+	</string>
+	<string id="st_repair_kit_p_descr">
+		<text>這個工具包包括潤滑油、溶劑、基本清潔工具以及專門用於武器拆卸及維護的特殊工具. 款式的標準配置還包括一套備用的槍械基本零件. 工具包有相當的重量,但可以在深入特異區的緊急關頭保證槍械正常工作. 出於不同槍械結構的不同,這套工具只能用於手槍彈武器的拆卸和維修. 將這套工具同其它工具包的材料一起使用可以提高武器保養的效果.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2]可用於更換槍支內的任何零部件, 右鍵點選槍支 - 維護零件 - 更換所需的零件 
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 9毫米, .45 和 .357 口徑武器\n \n
+		\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_s">
+		<text>霰彈槍修理工具包</text>
+	</string>
+	<string id="st_repair_kit_s_descr">
+		<text>這個工具包包括潤滑油、溶劑、基本清潔工具以及專門用於武器拆卸及維護的特殊工具. 款式的標準配置還包括一套備用的槍械基本零件. 工具包有相當的重量,但可以在深入特異區的緊急關頭保證槍械正常工作. 出於不同槍械結構的不同,這套工具只能用於霰彈武器的拆卸和維修. 將這套工具同其它工具包的材料一起使用可以提高武器保養的效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 12號口徑武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於更換槍支內的任何零部件. 右鍵點選槍支 - 維護零件 - 更換所需的零件. \n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_r5">
+		<text>小口徑軍用步槍修理箱</text>
+	</string>
+	<string id="st_repair_kit_r5_descr">
+		<text>這個工具包包括潤滑油、溶劑、基本清潔工具以及專門用於武器拆卸及維護的特殊工具. 款式的標準配置還包括一套備用的槍械基本零件. 工具包有相當的重量,但可以在深入特異區的緊急關頭保證槍械正常工作. 出於不同槍械結構的不同,這套工具只能用於中口徑步槍彈武器的拆卸和維修. 將這套工具同其它工具包的材料一起使用可以提高武器保養的效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 5. 45 和 5. 56 口徑武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於更換槍支內的任何零部件. 右鍵點選槍支 - 維護零件 - 更換所需的零件. \n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_r7">
+		<text>中口徑及大口徑軍用步槍修理箱</text>
+	</string>
+	<string id="st_repair_kit_r7_descr">
+		<text>這個工具包包括潤滑油、溶劑、基本清潔工具以及專門用於武器拆卸及維護的特殊工具. 款式的標準配置還包括一套備用的槍械基本零件. 工具包有相當的重量,但可以在深入特異區的緊急關頭保證槍械正常工作. 出於不同槍械結構的不同,這套工具只能用於大口徑步槍彈武器的拆卸和維修. 將這套工具同其它工具包的材料一起使用可以提高武器保養的效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 7. 62,7. 92,9x39 和 . 338 口徑武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於更換槍支內的任何零部件. 右鍵點選槍支 - 維護零件 - 更換所需的零件. \n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_p_empty">
+		<text>手槍工具箱 (用光了)</text>
+	</string>
+	<string id="st_repair_kit_p_empty_descr">
+		<text>曾裝有用於維修和保養9毫米,. 45和. 357口徑槍械的工具和零件的金屬盒. 即使在這種狀態下,裡面的工具仍可用於維修護甲的金屬部分. 也是低廉的交易等價物.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_s_empty">
+		<text>霰彈槍修理工具包 (用光了)</text>
+	</string>
+	<string id="st_repair_kit_s_empty_descr">
+		<text>曾裝有用於維修和保養12號口徑槍械的工具和零件的金屬盒. 即使在這種狀態下,裡面的工具仍可用於維修護甲的金屬部分. 也是低廉的交易等價物.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_r5_empty">
+		<text>小口徑軍用步槍修理箱 (用光了)</text>
+	</string>
+	<string id="st_repair_kit_r5_empty_descr">
+		<text>曾裝有用於維修和保養5. 45mm和5. 56毫米口徑槍械的工具和零件的金屬盒. 即使在這種狀態下,裡面的工具仍可用於維修護甲的金屬部分. 也是低廉的交易等價物.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit_r7_empty">
+		<text>中口徑及大口徑軍用步槍修理箱 (用光了)</text>
+	</string>
+	<string id="st_repair_kit_r7_empty_descr">
+		<text>曾裝有用於維修和保養大口徑槍械的工具和零件的金屬盒. 即使在這種狀態下,裡面的工具仍可用於維修護甲的金屬部分. 也是低廉的交易等價物.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		</text>
+	</string>
+	
+	<string id="st_sewing_kit_b">
+		<text>基礎縫紉包</text>
+	</string>
+	<string id="st_sewing_kit_b_descr">
+		<text>一個縫紉包,包括一個布卷、幾根鋼針和一副剪刀. 可以用於縫補護甲上柔軟布料的彈孔或者裂口. 針的長度和強度使得這些工具無法處理更嚴重的衣物毀損. 因為一些未知的原因,這些工具只能處理有限的幾種材料,所以將這個工具包和任何可能提高使用效果的材料結合使用幾乎是必須的.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和輕型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_sewing_kit_a">
+		<text>高級縫紉包</text>
+	</string>
+	<string id="st_sewing_kit_a_descr">
+		<text>比起基本款式,這個高級工具包包含更多更好的縫紉工具. 雙股尼龍線卷和更多品質更好的縫紉針使得這個工具包適用於更厚、更韌的材料,包括較輕的怪獸皮革和人造纖維. 可用於修理受損程度更高的護甲.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和輕型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_sewing_kit_h">
+		<text>軍用縫紉包</text>
+	</string>
+	<string id="st_sewing_kit_h_descr">
+		<text>軍用縫紉包的設計用途是處理現代戰鬥護甲甲片表面的損傷. 工具包內含有足以將完全解體的護甲重新組裝起來的金屬絲,即使是最硬的怪獸皮革也可以用它縫到護甲上. 它的另一個優點是含有用於拆卸護甲和頭盔以回收維修材料的系列器材. 這是特異區內可以到手的最好的縫紉包.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和輕型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_glue_b">
+		<text>戰術粘膠 "星河"</text>
+	</string>
+	<string id="st_glue_b_descr">
+		<text>作為特異區內可以到手的最便宜的合成粘合劑,這種環氧樹脂材料可以用於修補纖維和頭盔的小型傷口,但只要程度略微嚴重一點便完全沒有用處. 另一方面,茲維茲達價錢不低,定期使用也可以保證護甲完好無損. 推薦組合使用其它常見材料以強化維修效果. 粘合劑本身無法支撐怪獸皮革的重量,但可協助增強縫紉的效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和輕型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_glue_a">
+		<text>戰術粘膠 "雷神"</text>
+	</string>
+	<string id="st_glue_a_descr">
+		<text>作為烏克蘭化工企業生產的高階產品,配方更新后的圖爾牌環氧樹脂粘合劑可用於粘結大部分較為堅固的材料. 靈活易用的特點使得產品在潛行者群體中廣受好評,特別是在缺少其它材料的情況下. 粘合劑可以將布料同凱夫拉等輕型防護材料粘合在一起,但是不能用於金屬.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_glue_e">
+		<text>戰術粘膠 "M17"</text>
+	</string>
+	<string id="st_glue_e_descr">
+		<text>是來自蘇聯國防工業科研計劃的單一成分、可用於任何環境和材料的高效粘合劑. 它的生產原料是可以同塑料或金屬發生反應的聚甲基丙烯酸酯. 在M17的使用中,這種限制可以被無視,使得它可以用於上述兩種材料之中. 還有,粘合劑液體的形態提供的靈活性使得它可以在加水稀釋後用於達到需要的粘合效果. 幾乎沒有一種損傷是不能用這種粘合劑和其它相應的材料一起修好的. 可用於特異區內的任何材料.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_armor_repair_fa">
+		<text>應急護甲維修包</text>
+	</string>
+	<string id="st_armor_repair_fa_descr">
+		<text>一套用於護甲搶修的工具,包括軍用膠帶和用於修補所有護甲傷口的不同形狀的備用織物. 特別適合用來阻止受損護甲受到更致命的傷害. 套裝里的備用材料強度不高,所以工具只能用於修補較小的傷口且不能用於凱夫拉或金屬等更硬的材料.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和輕型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_helmet_repair_kit">
+		<text>頭部護具修理包</text>
+	</string>
+	<string id="st_helmet_repair_kit_descr">
+		<text>這個套裝包括一切用於維修現代戰術頭盔的工具,包括用於處理凱夫拉、鋼鐵、鈦合金等硬質材料的重型工具,以及一些強力甲基丙烯酸酯粘合劑. 套裝里沒有任何縫紉工具,所以不能修補較柔軟的材料,但可以拆解一些頭部防具以大大增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 中型和重型頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_repair_kit">
+		<text>重型護具修理包</text>
+	</string>
+	<string id="st_repair_kit_descr">
+		<text>這一套複雜的重型工具包括一切用於全面維修任何護甲和頭部護具所需的工具 - 從高強度纖維到縫紉針,再到聚合物補丁. 可用於所有材料,無論是厚重的布料、軍用級凱夫拉還是怪獸的皮革. 額外的工具可以增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 所有護甲和頭部裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_light_repair_kit">
+		<text>輕型護甲修理箱</text>
+	</string>
+	<string id="st_light_repair_kit_descr">
+		<text>這一套複雜的重型工具包括一切用於全面維修任何輕型護甲所需的工具 - 從高強度纖維到縫紉針,再到聚合物補丁. 可用於所有材料,無論是厚重的布料還是軍用級凱夫拉. 額外的工具可以增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 極輕和輕型護甲\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_medium_repair_kit">
+		<text>中型護甲修理箱</text>
+	</string>
+	<string id="st_medium_repair_kit_descr">
+		<text>這一套複雜的重型工具包括一切用於全面維修任何中型護甲所需的工具 - 從高強度纖維到縫紉針,再到聚合物補丁. 可用於所有材料,無論是厚重的布料還是軍用級凱夫拉. 額外的工具可以增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 中型護甲\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_exolight_repair_kit">
+		<text>重型護甲修理箱</text>
+	</string>
+	<string id="st_exolight_repair_kit_descr">
+		<text>這一套複雜的重型工具包括一切用於全面維修任何重型護甲所需的工具 - 從高強度纖維到縫紉針,再到聚合物補丁. 可用於所有材料,無論是厚重的布料還是軍用級凱夫拉. 額外的工具可以增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 重型護甲\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	<string id="st_exo_repair_kit">
+		<text>外骨骼修理箱</text>
+	</string>
+	<string id="st_exo_repair_kit_descr">
+		<text>這一套複雜的重型工具包括一切用於全面維修任何高科技護甲所需的工具 - 從高強度纖維到縫紉針,再到聚合物補丁. 可用於所有材料,無論是厚重的布料還是軍用級凱夫拉. 額外的工具可以增強維修效果.\n \n
+		%c[0,255,255,255]適用範圍:\n
+		%c[d_orange] • %c[ui_gray_2] 任何外骨骼\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可用於維修裝備\n
+		</text>
+	</string>
+	
+	
+	<string id="st_leatherman_tool">
+		<text>多功能工具</text>
+	</string>
+	<string id="st_leatherman_tool_descr">
+		<text>一個有些破損但還能用的多功能工具,用於拆卸武器和護甲的零件以及維修破損或生鏽的扳機.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_purple] • %c[ui_gray_2] 拆解用工具\n
+		%c[d_cyan] • %c[ui_gray_2] 零件維修工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於武器附件維護\n
+		</text>
+	</string>
+	
+	<string id="st_rasp_tool">
+		<text>銼刀</text>
+	</string>
+	<string id="st_rasp_tool_descr">
+		<text>一把銼刀,用於復原破損、生鏽的槍管或槍膛等類似零件.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 零件維修工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於武器附件維護\n
+		</text>
+	</string>
+	
+	<string id="st_ramrod_tool">
+		<text>管道通條</text>
+	</string>
+	<string id="st_ramrod_tool_descr">
+		<text>一個由三個木製零件組合而成的老式通條,用於修復破損、生鏽的槍管或導氣管等類似零件\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 零件維修工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於武器附件維護\n
+		</text>
+	</string>
+
+	<string id="st_sewing_thread">
+		<text>布料縫紉線</text>
+	</string>
+	<string id="st_sewing_thread_descr">
+		<text>這一套縫線包括棉、亞麻、尼龍和絲綢等多種材料. 所有潛行者都知道在特異區內的惡劣環境生活,衣服受損不可避免,所以手邊準備一些縫紉材料有利而無害.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 零件維修工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於服裝附件維護\n
+		</text>
+	</string>
+	
+	<string id="st_heavy_sewing_thread">
+		<text>護甲零件縫紉包</text>
+	</string>
+	<string id="st_heavy_sewing_thread_descr">
+		<text>一套用於縫補、密封護甲傷口的工具,其中縫線所用的凱夫拉是可以買到的強度和熱穩定性最高的防護材料. 它的強度大約是尼龍和聚酯纖維的2. 5倍,延展性很低,不會熔化,在800華氏度(約426攝氏度)下分解. 這些特點使它極為適合重型護甲維修等高強度任務.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 零件維修工具\n
+		%c[d_orange] • %c[ui_gray_2] 適用於服裝附件維護\n
+		</text>
+	</string>
+</string_table>

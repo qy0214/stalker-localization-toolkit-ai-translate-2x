@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON ZATON MAP
+<	CoC 1.4.22 = DoctorX Questlines 1.25
+<
+<	Modified by: DoctorX
+<	Last revised: April 27, 2017
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.25
+	<!==	April 27, 2017
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Beard (Loner Trader) Default Storyline Task -->
+
+	<string id="drx_sl_zat_a2_stalker_barmen_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_default_task_text">
+		<text>接受下一個任務</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_default_task_about">
+		<text>哈哈! 我很高興你來了, 潛行者. 我認識一個需要你幫助的人. 看看你能不能幫助他.</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_default_task_finish">
+		<text>祝你好運! 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Beard (Loner Trader) Retrieve PDA Storyline Task -->
+
+	<string id="drx_sl_zat_a2_stalker_barmen_task_1_name">
+		<text>為大鬍子找到PDA</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_1_text">
+		<text>大鬍子在某處藏著一個PDA, 裡面有關於貓頭鷹的醜聞.</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_1_about">
+		<text>哈哈! 看看是誰! 好吧, 我的朋友, 我跟你有筆生意要談! 那個討厭的貓頭鷹以為他能讓我閉嘴, 但我還是知道他的一些醜事兒的. 我藏了一個PDA, 裡面有我需要的一切, 這樣我就可以把他安排得明明白白. 把它帶給我, 潛行者, 我會讓你不虛此行.</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_1_finish">
+		<text>哈! 你拿到它了! 幹得不錯, 潛行者! 來, 喝一杯!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Beard (Loner Trader) Search and Rescue Storyline Task -->
+
+	<string id="drx_sl_zat_a2_stalker_barmen_task_2_name">
+		<text>搜救潛行者</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_2_text">
+		<text>黑石抓住了一個潛行者, 找到並營救他</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_2_about">
+		<text>潛行者, 黑石抓走了你的一個同志. 他們朝那個方向走了. 救救他!</text>
+	</string>
+	<string id="drx_sl_zat_a2_stalker_barmen_task_2_finish">
+		<text>哈哈! 看看你們兩個, 很難說誰被抓住了, 哈哈! 來, 來, 喝吧! 喝點伏特加放鬆一下!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Noah (Loner Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_zat_b18_noah_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_default_task_about">
+		<text>如果你沒給我帶來死的怪物我們就沒什麼好談的了. 最好離開.</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Noah (Loner Honcho) Dog Food Storyline Task -->
+
+	<string id="drx_sl_zat_b18_noah_task_1_name">
+		<text>為諾亞的狗找到%s</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_1_text">
+		<text>諾亞的怪物寶貝渴望%s. 最好快點找到一些免得它把諾亞吃掉.</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_1_about">
+		<text>你他媽的去哪了? 我沒有狗糧了! 這個小婊子要把家裡啃光了. 雖然她就像個美人, 不是嗎? 就像她的主人一樣.</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_1_fetch_about">
+		<text>你站在那兒幹什麼? 給我弄點%s餵我的狗!</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_1_fetch_finish">
+		<text>差不多是時候了! 給你, 姑娘. 吃吧. 她真是個漂亮的姑娘. 看看那些皮毛有多豐美... 什麼? 你還在這嗎? 給, 拿著這個, 離開這裡.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Noah (Loner Honcho) Exterminate Mutant Infestation Storyline Task -->
+
+	<string id="drx_sl_zat_b18_noah_task_2_name">
+		<text>消滅騷擾諾亞的怪物</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_2_text">
+		<text>老傻瓜諾亞很難讓怪物遠離這個地區. 幫幫老人</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_2_about">
+		<text>你遲到了! 到處都是變異怪物! 你希望我繼續殺了他們? 滾出去把那些該死的東西除掉!</text>
+	</string>
+	<string id="drx_sl_zat_b18_noah_task_2_finish">
+		<text>你一整天都不見了! 要多久才能殺光那些該死的鬼東西? 給你工錢, 別再煩我了. 走的時候別忘了摸摸我的狗好嗎? 她喜歡被潛行者的手指愛撫.</text>
+	</string>
+
+
+	<!-- ========================================================================================= -->
+	<!-- Vector (Mercenary Trader/Guide) Default Storyline Task -->
+
+	<string id="drx_sl_zat_stancia_trader_merc_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_default_task_about">
+		<text>我有個顧客要找你. 我在你的地圖上標出了他的位置</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_default_task_finish">
+		<text>祝你好運!</text>
+	</string>
+	
+
+	<!-- Vector (Mercenary Trader/Guide) Trace the Emergency Signal Storyline Task -->
+
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_name">
+		<text>追蹤緊急訊號($freq MHz)</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text">
+		<text>維克托要你追蹤一組傭兵發出的緊急訊號</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text_0">
+		<text>維克托希望您跟蹤一組傭兵發送的緊急訊號, 但搜索需要$item_1.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text_1">
+		<text>維克托希望您跟蹤一組傭兵發送的緊急訊號. \n在$map上讀取.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text_2">
+		<text>維克托希望您跟蹤一組傭兵發送的緊急訊號. \n使用$item_1並將頻率設定為$freq MHz. 四處找找以接受良好的訊號.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text_3">
+		<text>必須收回找到的$item_2並將其帶給維克多.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_text_4">
+		<text>把你的發現帶回維克托</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_about">
+		<text>有點晚了, 但我很高興你能來. 上次我們還沒做完生意, 就接到了南方來的緊急訊號. 它來自於我派往特異區另一邊基地的小隊的PDA. 事情不妙, 所以我需要你用射頻接收器追蹤他們的訊號, 找出發生了什麼. 你至少得把PDA給帶回來, 裡面有重要的資訊.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_1_finish">
+		<text>所以他們都死了? 真可惜... 你至少把PDA帶回來了. 這是你的報酬.</text>
+	</string>
+	
+
+	<!-- Vector (Mercenary Trader/Guide) Secure the Passage to the Outskirts Storyline Task -->
+
+	<string id="drx_sl_zat_stancia_trader_merc_task_2_name">
+		<text>確保通往皮城城郊的通道安全</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_2_text">
+		<text>維克特想讓你進入木星工廠地道, 消滅隱藏在那裡的黑石小隊.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_2_about">
+		<text>壞訊息, 這次是他媽的黑石. 尤皮特和皮城城郊之間的地下通道已經被我們的小隊使用了一段時間. 這就是我們如何避免與地上的瘋子接觸的同時照常進行任務的訣竅. 但就在你認為生意不錯的時候, 上一隊去那裡的傭兵遭到了一個黑石小隊的伏擊, 靠, 怪物已經夠我們喝一壺的了. 我需要一個像你這樣勇敢的人來除掉他們, 確保地下通道安全. 我們不能讓他們潛伏在那裡.</text>
+	</string>
+	<string id="drx_sl_zat_stancia_trader_merc_task_2_finish">
+		<text>幹得好! 我們的生意又步入正軌了. 給你, 麻煩你了.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Beard (Loner Trader) Clear Mutants from SkadovskTask -->
+
+	<string id="zat_a2_stalker_barmen_task_1_name">
+		<text>清除一片區域的怪物</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_1_text">
+		<text>怪物就在附近. 獵殺它們清除此地.</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_1_about">
+		<text>噓... 聽著, 聽到了嗎? 一些怪物嚎叫. 這麼久了, 老子的雞皮疙瘩都整出來了. 你出去照顧它們怎麼樣? 我會讓你不虛此行的.</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_1_finish">
+		<text>哈哈! 幹得好, 潛行者! 喝一杯吧!</text>
+	</string>
+
+
+	<!-- FIND ARTEFACT FOR BEARD TASK -->
+	<string id="zat_a2_stalker_barmen_task_2_name">
+		<text>為大鬍子找到%s神器</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_2_text">
+		<text>大鬍子想讓你幫他找到%s這件神器.</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_2_about">
+		<text>我經營神器交易. 通常來講, 我不從潛行者那進貨, 但有一個我特別想弄到手. 你想幫我拿到嗎?</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_2_fetch_about">
+		<text>我要找的是這件神器. 你見過嗎? 如果你能找到的話, 我會付給你很多錢的.</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_2_fetch_finish">
+		<text>幹得好! 潛行者. 這值得我請你喝一杯</text>
+	</string>
+
+
+	<!-- ASSASSINATION FOR BEARD TASK -->
+	<string id="zat_a2_stalker_barmen_task_3_name">
+		<text>我兄弟的監護人</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_3_text">
+		<text>殺死軍方潛行者</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_3_about">
+		<text>有個人, 以前跟船上的其他人一樣, 是個普通的潛行者. 一天, 一些軍官來給了他委任狀. 接下來的事情我們都清楚了, 我們發現他冷血地殺了他以前的兄弟! 我們不能忍受! 找到這個叛徒, 為他殺掉的那個人報仇.</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_task_3_finish">
+		<text>你殺了他? 請隨便喝一杯. 我相信我們會處理這樣一個...</text>
+	</string>
+
+
+	<!-- zat_a2_stalker_mechanic -->
+	<string id="zat_a2_stalker_mechanic_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_1_text">
+		<text>%s卡丹要求安裝基本工具以便升級. 如果你找到了, 你應該把它們交給他.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_1_about">
+		<text>我不僅需要更多的酒, 而且我還需要一套好的工具, 潛行者. 如果你有興趣幫我, 我會告訴你我需要什麼</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_1_fetch_about">
+		<text>我需要一套基本的工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 我甚至會給你打折.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_1_fetch_finish">
+		<text>太好了, 潛行者. 你帶來了我要求的東西. 謝謝.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_2_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_2_text">
+		<text>%s卡丹要求安裝先進工具以便升級. 如果你找到了, 你應該把它們交給他.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_2_about">
+		<text>我真的需要更多的工具和伏特加... 但是伏特加很容易找到. 我需要你提供更多的工具; 更好的工具. 你能幫我嗎?</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_2_fetch_about">
+		<text>我需要一套先進的工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 我甚至會給你打折.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_2_fetch_finish">
+		<text>好極了! 隨時可以過來喝一杯, 或者如果你需要我看看你的裝備.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_3_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_3_text">
+		<text>%s卡丹要求安裝專業工具以便升級. 如果你找到了它們你應該把它們帶回來.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_3_about">
+		<text>我真的需要更多的工具和伏特加... 但是伏特加很容易找到. 我需要你提供更多的工具; 更好的工具. 你能幫我做這個嗎?</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_3_fetch_about">
+		<text>我需要一套專家工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="zat_a2_stalker_mechanic_task_3_fetch_finish">
+		<text>好極了! 隨時可以過來喝一杯, 或者如果你需要我看看你的裝備.</text>
+	</string>
+	
+	
+<!-- Noah -->
+	<string id="task_noah_2_1">
+		<text>慈善家: 進入山上的傳送異常點</text>
+	</string>
+	<string id="task_noah_2_2">
+		<text>慈善家: 清除怪物巢穴</text>
+	</string>
+	<string id="task_noah_2_3">
+		<text>慈善家: 告訴諾亞成功的任務</text>
+	</string>
+	<string id="task_noah_2_descr">
+		<text>史諾克已經威脅過諾亞一段時間了. 他要我清理南部高地的一個巢穴.</text>
+	</string>
+	<string id="task_noah_1_1">
+		<text>慈善家: 幫諾亞拿把新槍</text>
+	</string>
+	<string id="task_noah_1_2">
+		<text>慈善家: 給諾亞帶把"保衛者"霰彈槍</text>
+	</string>
+	<string id="task_noah_1_descr">
+		<text>諾亞想讓我幫他拿把重擊, 這樣他晚上就能安心休息了.</text>
+	</string>
+
+	
+	<string id="zat_stancia_trader_merc_task_1_name">
+		<text>收集%s</text>
+	</string>
+	<string id="zat_stancia_trader_merc_task_1_text">
+		<text>一個傭兵要我收集%s.</text>
+	</string>
+	<string id="zat_stancia_trader_merc_task_1_about">
+		<text>你想來一次真正的旅行嗎? 你將獵殺一些人並帶來他們的臂章. 我們將提高該派別的標準.</text>
+	</string>
+	<string id="zat_stancia_trader_merc_task_1_fetch_about">
+		<text>你想來一次真正的旅行嗎? 把%s給我, 我會給你很好的報酬. 我們將提高該派別的標準.</text>
+	</string>
+	<string id="zat_stancia_trader_merc_task_1_fetch_finish">
+		<text>這就是我要說的! 這是你的錢.</text>
+	</string>
+	
+<!-- (Mercenary Mechanic) -->
+	<string id="zat_stancia_mech_merc_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_1_text">
+		<text>一個傭兵技師讓我帶他來%s.</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_1_about">
+		<text>聽著, 如果沒有精心維護和定製的裝置, 我們是個錘子的傭兵. 你知道, 我們以前什麼工具都有, 但有人他媽的從變電站里偷走了. 所以, 我需要工具, 而不是垃圾. 你能給我們找些嗎?</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_1_fetch_about">
+		<text>聽著, 如果沒有精心維護和定製的裝置, 我們是個屁的傭兵? 你知道, 我們以前什麼工具都有, 但有人他媽的從變電站偷走了. 所以, 我需要工具, 而不是垃圾. 你能給我們找些嗎?</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_1_fetch_finish">
+		<text>酷, 我會給你打折的-你應得的. 謝謝.</text>
+	</string>
+
+	<string id="zat_stancia_mech_merc_task_2_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_2_text">
+		<text>一個傭兵技術員讓我帶他來%s.</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_2_about">
+		<text>擁有可靠的武器是件好事, 但到目前為止我們還沒有足夠的升級裝置. 你能給我找一套更好的工具嗎?</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_2_fetch_about">
+		<text>擁有可靠的武器是件好事, 但到目前為止我們還沒有足夠的升級裝置. 你能給我找一套更好的工具嗎?</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_2_fetch_finish">
+		<text>謝謝你. 讓我看看我能這些幫到你和其他人多少!</text>
+	</string>
+
+	<string id="zat_stancia_mech_merc_task_3_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_3_text">
+		<text>一個傭兵技師讓我帶他來%s.</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_3_about">
+		<text>聽著-我們把工作做完, 好嗎? 我需要校準工具以確保沒有人能從我們槍下逃走.</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_3_fetch_about">
+		<text>聽著-我們把工作做完, 好嗎? 我需要校準工具以確保沒有人能從我們槍下逃走.</text>
+	</string>
+	<string id="zat_stancia_mech_merc_task_3_fetch_finish">
+		<text>哦, 操... 你是每個技師的英雄! 幹得好真的... 我會給你雙倍的折扣.</text>
+	</string>
+
+<!-- Axel (Loner Medic) -->
+	<string id="zat_b22_stalker_medic_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="zat_b22_stalker_medic_task_1_text">
+		<text>埃克瑟需要%s以製作醫療藥品, 如果你找到了, 你應該把它們交給他.</text>
+	</string>
+	<string id="zat_b22_stalker_medic_task_1_about">
+		<text>每天在倉庫里剩下的醫療藥品的數量和傷員數量里二選一並不是一件愉快的事情. 我很快就會用完繃帶和藥箱了. 我需要你幫我找一個舊的製藥箱. 它們肯定會派上用場的.</text>
+	</string>
+	<string id="zat_b22_stalker_medic_task_1_fetch_about">
+		<text>有. 我一直在到處找%s. 它應該包含一些藥片和注射器, 我需要製作一些醫療藥品. 如果你能給我帶全套的話, 我就付給你一筆錢.</text>
+	</string>
+	<string id="zat_b22_stalker_medic_task_1_fetch_finish">
+		<text>幹得好! 我欠你一個大人情.</text>
+	</string>
+</string_table>
+
+<!-- zat_tech_mlr_mechanic -->
+	<string id="zat_tech_mlr_task_1_name">
+		<text>為斯普里恩找一個 %s</text>
+	</string>
+	<string id="zat_tech_mlr_task_1_text">
+		<text>斯普里恩需要 %s , 之後他的庫存中會出售更高級的修理工具</text>
+	</string>
+	<string id="zat_tech_mlr_task_1_about">
+		<text>我這邊人手不足, 工具也不夠了, 如果你需要更高級的修理工具, 得先幫我找點東西來!</text>
+	</string>
+	<string id="zat_tech_mlr_task_1_fetch_about">
+		<text>如果想在這裡買到更好的物品, 得先送一套初級工具箱來</text>
+	</string>
+	<string id="zat_tech_mlr_task_1_fetch_finish">
+		<text>太好了潛行者, 你這套工具真是雪中送炭! 謝謝!</text>
+	</string>
+	<string id="zat_tech_mlr_task_2_name">
+		<text>為斯普里恩找一個 %s</text>
+	</string>
+	<string id="zat_tech_mlr_task_2_text">
+		<text>斯普里恩需要 %s , 之後他的庫存中會出售更高級的修理工具</text>
+	</string>
+	<string id="zat_tech_mlr_task_2_about">
+		<text>我這邊人手不足, 工具也不夠了, 如果你需要更高級的修理工具, 得先幫我找點東西來!</text>
+	</string>
+	<string id="zat_tech_mlr_task_2_fetch_about">
+		<text>如果想在這裡買到更好的物品, 得先送一套高級工具箱來</text>
+	</string>
+	<string id="zat_tech_mlr_task_2_fetch_finish">
+		<text>太好了潛行者, 你這套工具真是雪中送炭! 謝謝!</text>
+	</string>
+	<string id="zat_tech_mlr_task_3_name">
+		<text>為斯普里恩找一個 %s</text>
+	</string>
+	<string id="zat_tech_mlr_task_3_text">
+		<text>斯普里恩需要 %s , 之後他的庫存中會出售更高級的修理工具</text>
+	</string>
+	<string id="zat_tech_mlr_task_3_about">
+		<text>我這邊人手不足, 工具也不夠了, 如果你需要更高級的修理工具, 得先幫我找點東西來!</text>
+	</string>
+	<string id="zat_tech_mlr_task_3_fetch_about">
+		<text>如果想在這裡買到更好的物品, 得先送一套專家級工具箱來</text>
+	</string>
+	<string id="zat_tech_mlr_task_3_fetch_finish">
+		<text>太好了潛行者, 你這套工具真是雪中送炭! 謝謝!</text>
+	</string>	
+</string_table>

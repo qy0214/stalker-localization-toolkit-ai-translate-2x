@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Basic items (Some are not used anymore)
+-->
+<string_table>
+
+	<string id="st_cash_name">
+		<text>钱包</text>
+	</string>
+	<string id="st_cash_descr">
+		<text>旧的皮质钱包.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 用来储存货币\n</text>
+	</string>
+	
+		<string id="st_roubles">
+		<text>卢布</text>
+	</string>
+	<string id="st_roubles_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n
+		</text>
+	</string>
+	
+	<string id="st_roubles_5000_name">
+		<text>5000卢布</text>
+	</string>
+	<string id="st_roubles_5000_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n
+		</text>
+	</string>
+	
+	<string id="st_roubles_1000_name">
+		<text>1000卢布</text>
+	</string>
+	<string id="st_roubles_1000_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n</text>
+	</string>
+	
+	<string id="st_roubles_500_name">
+		<text>500卢布</text>
+	</string>
+	<string id="st_roubles_500_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n</text>
+	</string>
+	
+	<string id="st_roubles_100_name">
+		<text>100卢布</text>
+	</string>
+	<string id="st_roubles_100_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n</text>
+	</string>
+	
+	<string id="st_roubles_50_name">
+		<text>50卢布</text>
+	</string>
+	<string id="st_roubles_50_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n</text>
+	</string>
+	
+	<string id="st_roubles_10_name">
+		<text>10卢布</text>
+	</string>
+	<string id="st_roubles_10_descr">
+		<text>特异区中的交易主要是通过电子货币的方式进行, 以确保安全和便于管理. 但是潜行者们也会在身上带上几张钞票, 用来买点香烟之类的小玩意. 它让生活变得轻松, 也减少了电池的使用.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 通用货币单位\n</text>
+	</string>
+	
+</string_table>

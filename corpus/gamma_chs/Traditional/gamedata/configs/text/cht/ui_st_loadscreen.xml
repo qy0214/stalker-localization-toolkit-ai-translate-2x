@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ls_header">
+		<text>S.T.A.L.K.E.R. G.A.M.M.A. 二週年版本0.9.1 =GSCTP漢化=</text>
+	</string>
+	<string id="ls_tip_number">
+		<text>火邊閑談 #</text>
+	</string>
+	<string id="ls_tip_1">
+		<text>聯合國和歐盟已經擺脫了某大國的控制, 現在已經對特異區實施了嚴格的軍火管制...</text>
+	</string>
+	<string id="ls_tip_2">
+		<text>槍械的整體"耐久"是清潔度, 清潔度太低的話會加速零件磨損, 但影響槍械卡殼和傷害的是內部零件的狀態...</text>
+	</string>
+	<string id="ls_tip_3">
+		<text>留著那些狀態超過60%的槍械零件, 和狀態超過50%的護甲零件, 為什麼? 看PDA指南吧!</text>
+	</string>
+	<string id="ls_tip_4">
+		<text>特異區的軍火管制導致商人不再出售武器和護甲, 如果想要獲取更好的裝備, 只能去打別人的主意了...</text>
+	</string>
+	<string id="ls_tip_5">
+		<text>現在潛行者們已經掌握了更好的製作技術, 只要有任意工具箱, 就可以隨時打開工作臺製作物品...</text>
+	</string>
+	<string id="ls_tip_6">
+		<text>多做任務, 多熟悉各地潛行者的不同需求, 找到一條適合自己的成長路線</text>
+	</string>
+	<string id="ls_tip_7">
+		<text>注意藥品上面的急救和治癒屬性, 想恢復肢體健康, 必須先滿足急救, 然後再服下治癒的口服藥物</text>
+	</string>
+	<string id="ls_tip_8">
+		<text>特異區的冒險需要靜下心來體驗, 菜鳥們初期遇到困難很正常, 但只要不斷努力就能鹹魚翻身</text>
+	</string>
+	<string id="ls_tip_9">
+		<text>在破損的裝備上按住左Ctrl鍵會顯示它在最大耐久時的屬性數據</text>
+	</string>
+	<string id="ls_tip_10">
+		<text>在打開容器時, 按住左Shift鍵並用滑鼠劃過物品, 能快速將物品在不同容器間移動</text>
+	</string>
+	<string id="ls_tip_11">
+		<text>執行艱難的任務時, 于其揹著沉重的子彈, 帶著彈頭,彈殼,火藥和填彈箱會更方便</text>
+	</string>
+	<string id="ls_tip_12">
+		<text>右鍵物品可以標記"收藏"或"垃圾", 收藏的物品會始終處於物品欄頂部, 而垃圾則相反 - 它永遠在最底下</text>
+	</string>
+	<string id="ls_tip_13">
+		<text>大部分能治癒肢體的都是口服類藥物, 而口服藥幾乎都有眩暈的副作用, 注意多帶些解除眩暈的消耗品</text>
+	</string>
+	<string id="ls_tip_14">
+		<text>特異區的怪物皮價值突然暴漲, 有些潛行者們說, 這些皮在"0.9版"屬性得到了大幅提升, 鬼知道那是什麼意思...</text>
+	</string>
+	<string id="ls_tip_15">
+		<text>技師現在不提供修理和升級服務了, 而現在只要有升級套件, 你就可以在工作臺自己為裝備升級</text>
+	</string>
+	<string id="ls_tip_16">
+		<text>各種清理包能用來清潔那些髒的很徹底的槍, 也可以直接修復槍械內部不低於60耐久的零件</text>
+	</string>
+	<string id="ls_tip_17">
+		<text>做任務提升陣營好感時, 也會增加陣營商人的庫存等級, 商人下一次重新整理庫存時會提供更高級的商品</text>
+	</string>
+	<string id="ls_tip_18">
+		<text>商人的庫存種類會根據他所在陣營的軍事派別不同而有所差別, 傭兵,晴空,自由軍和UNISG屬於北約; 而剩下的屬於華約</text>
+	</string>
+	<string id="ls_tip_19">
+		<text>想要完全解放神器的潛能, 就不得不使用神器熔爐, 薩哈洛夫和赫曼教授那裡就有出售, 運氣好的話也能在傭兵那裡抽獎得到</text>
+	</string>
+	<string id="ls_tip_20">
+		<text>各種工具箱內有各種備用零件, 可以直接為同類型的槍械補充缺失的, 或壞的很徹底的零件</text>
+	</string>
+	<string id="ls_tip_21">
+		<text>注意平衡日常活動, 保證飲食, 不然就等著晚上靠安眠藥和酒精入睡吧</text>
+	</string>
+	<string id="ls_tip_22">
+		<text>如果白天經常抽菸, 攝入咖啡因, 到晚上肯定不會想去睡覺, 一些常在夜間行動的潛行者都有這種習慣...</text>
+	</string>
+	<string id="ls_tip_23">
+		<text>不同種類的子彈擅長對付的目標也不同, 鹿彈, .357, .45多頭蛇和各種口徑的HP彈對付變異生物有奇效</text>
+	</string>
+	<string id="ls_tip_24">
+		<text>某個神秘人會時不時的給潛行者們發送無線電包裹的座標, 裡面都是幫助新手過渡的資源, 但沒人知道這個神秘人是何方神聖...</text>
+	</string>
+	<string id="ls_tip_25">
+		<text>搜索屍體, 完成任務, 檢視繳獲的PDA, 都有機會獲得藏物點標記, 而只有那些被標記過的藏物點才會放有物品</text>
+	</string>
+	<string id="ls_tip_26">
+		<text>雖然很不可思議, 但你放在藏物點的東西其他人就跟沒看見一樣, 有猜測是因為空間異常的影響導致, 這種說法鬼才信...</text>
+	</string>
+	<string id="ls_tip_27">
+		<text>如果沒有木炭, 可以拿著野外烹飪用具直接在篝火旁邊燉煮食物, 但需要更高溫度才能處理的食物就只能另尋他法</text>
+	</string>
+	<string id="ls_tip_28">
+		<text>薩哈洛夫教授研發的"神器熔爐"可以將同類神器融合到一起, 增幅它的效果, 讓這些神器再次擁有足以顛覆物理法則的能力...</text>
+	</string>
+	<string id="ls_tip_29">
+		<text>在生態學家那裡買到的神器熔爐可以讓你用其他神器作為材料, 製作出全新的神器!</text>
+	</string>
+	<string id="ls_tip_30">
+		<text>神器分為兩類: 輻射神器和異能神器, 輻射神器的能量永遠不會減少, 但異能神器會隨著使用而逐漸失去效果...</text>
+	</string>
+	<string id="ls_tip_31">
+		<text>穿上其他陣營的護甲會偽裝成這個陣營的成員, 如果朋友錯把你當作敵人的話, 就趕緊撕掉陣營臂章吧(預設快捷鍵Z)</text>
+	</string>
+	<string id="ls_tip_32">
+		<text>輻射現在變得更加危險, 不僅會損傷生命值, 還會讓你的最大體力降低, 記得在北上之前先準備好像樣的面罩</text>
+	</string>
+	<string id="ls_tip_33">
+		<text>越往北方深入, 輻射就越強烈, 如果沒有好的面罩或頭部護具, 僅僅是軍事倉庫的輻射區就能要了你的小命</text>
+	</string>
+	<string id="ls_tip_34">
+		<text>"很多菜鳥潛行者們都像個倉鼠, 碰到垃圾就撿, 還總是不存東西, 我就喜歡跟在他們後面, 等他們累的停下來喘氣時 - 呯!"</text>
+	</string>
+	<string id="ls_tip_35">
+		<text>當個獵手穩賺不賠, 有人付錢讓你殺死變異怪物, 有人付錢買怪物的器官, 所以經常能得到雙份的錢, 還有一大堆吃不完的肉</text>
+	</string>
+	<string id="ls_tip_36">
+		<text>技師們需要初級,高級,和專家級工具箱, 才會開始出售更高等級的修理箱; 而工具箱只會在黃色標記的藏物點中出現</text>
+	</string>
+	<string id="ls_tip_37">
+		<text>槍油,粘膠和縫紉包是你的好朋友, 與其說把護甲用到破舊不堪再用昂貴的修理箱去修, 經常保持裝備的完好要劃算的多</text>
+	</string>
+	<string id="ls_tip_38">
+		<text>不知為何, 只有紅森林以北的地圖, 才有可能發現專業級的工具箱, 所以有能力的話就不要在南邊浪費時間了</text>
+	</string>
+	<string id="ls_tip_39">
+		<text>如果你曾認真進行法納特的新手訓練就會知道 - 大部分怪物都是有弱點部位的</text>
+	</string>
+	<string id="ls_tip_40">
+		<text>陣營好感會影響商人展示的庫存, 排名等級會影響隊友對你的態度, 至於名聲... 只能說每個人都有自己的善惡觀念</text>
+	</string>
+	<string id="ls_tip_41">
+		<text>名聲代表了潛行者在所屬陣營中的口碑, 樂於助人可以獲得好名聲, 反之則會臭名遠揚, 不過在特異區, 很多人似乎並不在乎這個</text>
+	</string>
+	<string id="ls_tip_42">
+		<text>一般的潛行者們拜託你的都是些雞毛蒜皮的小事, 雖然不會給你太多錢, 但積極幫助他們有助於積累陣營好感</text>
+	</string>
+	<string id="ls_tip_43">
+		<text>在羅斯托克的競技場可以挑戰怪物, 也可以挑戰其他潛行者, 當排名等級上升后, 還會出現更強力的敵人</text>
+	</string>
+	<string id="ls_tip_44">
+		<text>PDA里的"任務板"可以顯示附近潛行者貼出的任務, 雖然能直接在PDA內領取, 但交付任務還是需要找到任務懸賞者</text>
+	</string>
+	<string id="ls_tip_45">
+		<text>注意看任務文字! 很多工的地圖示記有誤, 而GSCTP的漢化已經儘量在文字中提示你了!</text>
+	</string>
+	<string id="ls_tip_46">
+		<text>G.A.M.M.A.的原義曾是 "Grok's Automated Modular Modpack for Anomaly" - Grok的異常自動化模組化整合包</text> 
+	</string>
+	<string id="ls_tip_47">
+		<text>特異區北方區域有著強烈的靈能場屏障, 必須藉助特殊靈能防護裝備的幫助才能涉足, 揚塔的薩哈洛夫教授對此略知一二</text>
+	</string>
+	<string id="ls_tip_48">
+		<text>各種針劑更適合在戰鬥中使用, 而急救包用起來就很慢, 很多菜鳥潛行者死的時候, 屍體還保持著包紮傷口的動作</text>
+	</string>
+	<string id="ls_tip_49">
+		<text>酒精和安眠藥可以幫助睡眠, 睡眠能治癒肢體狀態, 但不會恢復生命值</text>
+	</string>
+	<string id="ls_tip_50">
+		<text>多攢一些高級料理, 它們通常都能提供長達半天之久的增益效果</text>
+	</string>
+	<string id="ls_tip_51">
+		<text>如果你覺得GAMMA太難了, 也許是沒有讀過PDA指南</text>
+	</string>
+	<string id="ls_tip_52">
+		<text>射頻接收器可以幫助你找到無線電包裹, 空著右手的時候可以通過左鍵,右鍵和Shift+左鍵/右鍵更改接收器的頻率</text>
+	</string>
+	<string id="ls_tip_53">
+		<text>如果實在買不起治療品, 在篝火邊上呆著也會緩慢回覆生命值, 但受傷的肢體就只能藉助藥物或者睡眠來恢復</text>
+	</string>
+	<string id="ls_tip_54">
+		<text>某些衝鋒鎗可以單手持握(可在刀具欄和望遠鏡欄裝備), 比如MP7,SR-2M和P90</text>
+	</string>
+	<string id="ls_tip_55">
+		<text>如果對自己的記憶體有信心, 可以打開資源預載入MOD, 能夠有效防止遊戲卡頓</text>
+	</string>
+	<string id="ls_tip_56">
+		<text>開局時選擇的裝備一定要好好保養,它們會一直carry你渡過遊戲初期, 技師那裡出售的A型修理箱可以幫你修好大部分低階武器</text>
+	</string>
+	<string id="ls_tip_57">
+		<text>記得檢視死者的PDA, 獲取藏物點后再賣給交易商, 如果它們有裝置鎖, 可以去找技師花錢破解</text>
+	</string>
+	<string id="ls_tip_58">
+		<text>右鍵單擊物品可以檢視詳細資訊, 會展示物品的各項屬性和描述, 如果是武器和裝備的話還會顯示它們的升級專案</text>
+	</string>
+	<string id="ls_tip_59">
+		<text>技師們目前都很忙, 不會再提供修理服務了</text>
+	</string>
+	<string id="ls_tip_60">
+		<text>不同的異常點會發出不同的聲音, 在一些危險區域, 聽覺通常比視覺更值得信賴...</text>
+	</string>
+	<string id="ls_tip_61">
+		<text>爆炸物和AP彈不要在前期浪費的太多, 因為它們是遊戲後期對付外骨骼的利器</text>
+	</string>
+	<string id="ls_tip_62">
+		<text>務必隨身帶著復甦藥, 以免能量風暴來臨時附近沒有掩體設施, 復甦藥除了能利用假死跳過風暴以外, 還有著治癒全身的強大功效</text>
+	</string>
+	<string id="ls_tip_63">
+		<text>很多不同口徑的彈藥, 製作材料卻是通用的, 所以可以拆掉自己用不著的彈藥, 然後用填彈箱自製需要的口徑</text>
+	</string>
+	<string id="ls_tip_64">
+		<text>外出時儘量少帶東西, 這樣才可以在返程時揹負更多物品</text>
+	</string>
+	<string id="ls_tip_65">
+		<text>多把神器探測器掏出來看看, 有時在能量風暴后神器會重新整理</text>
+	</string>
+	<string id="ls_tip_66">
+		<text>在GAMMA中生存, 收集, 製作和戰鬥; Rank排名越高, 物品獲取就越好, 走和平主義路線也未嘗不可, 只是成長速度會十分緩慢</text>
+	</string>
+	<string id="ls_tip_67">
+		<text>在特異區雖然沒誰逼你去做好人, 但如果你擔不起當個惡棍的代價, 就還是放老實些吧</text>
+	</string>
+	<string id="ls_tip_68">
+		<text>滿足某個技師的所有要求, 就可以獲得一項讓維修道具的效果變強的成就</text>
+	</string>
+	<string id="ls_tip_69">
+		<text>很多選項已被GAMMA調整過; 在更改任何選項之前, 確保自己已經記錄了此次改動以及充分意識到出錯帶來的後果</text>
+	</string>
+	<string id="ls_tip_70">
+		<text>電子裝置都需要電池, 當你的頭燈不亮時, 記得拿出螢光棒</text>
+	</string>
+	<string id="ls_tip_71">
+		<text>和原版不同, 在GAMMA中如果野外聽到怪物的叫聲, 那就一定有怪物, 好好利用這一點提前偵察, 免得不知道怎麼死的</text>
+	</string>
+	<string id="ls_tip_72">
+		<text>注意子彈的穿甲效能, 怪物不會穿盔甲, 但敵對的潛行者會穿</text>
+	</string>
+	<string id="ls_tip_73">
+		<text>儘管消輻寧有更便宜的替代品, 但口服類藥物通常都有很大的副作用, 常備一些消除頭暈的物品, 比如咖啡, 葡萄糖, 腎上腺素等等</text>
+	</string>
+	<string id="ls_tip_74">
+		<text>槍支內部零件狀態會影響卡殼機率, 而槍管的狀態則會顯著影響武器傷害, 如果拿著破舊不堪的槍去打架, 就別發牢騷說GAMMA太難</text>
+	</string>
+	<string id="ls_tip_75">
+		<text>很多MOD都可以在MCM菜單中進行個性化設定</text>
+	</string>
+	<string id="ls_tip_76">
+		<text>身體健康很重要, 別老是嗑藥, 吃乾淨的食物, 喝乾凈的水, 保證充足睡眠, 做健康的潛行者</text>
+	</string>
+	<string id="ls_tip_77">
+		<text>刀具, 多功能鉗和美容套件之類的工具可以用三件套磨刀石來恢復狀態, 但管道通條, 銼刀之類都是一次性的</text>
+	</string>
+	<string id="ls_tip_78">
+		<text>匆忙趕路時也不要忘記觀察四周, 尤其是那些植被茂密的地方...</text>
+	</string>
+	<string id="ls_tip_79">
+		<text>獨自一人進行槍戰時, 找好掩護, 發動攻擊的最佳時刻是在對手裝彈或卡殼的時候...</text>
+	</string>
+	<string id="ls_tip_80">
+		<text>密切注意電子裝置的電量, 多帶幾塊備用電池, 不要在關鍵時候掉鏈子</text>
+	</string>
+	<string id="ls_tip_81">
+		<text>如果啟用了"限制螺栓"選項, 那麼螺栓就是有限的, 可以找交易商購買螺栓包, 或者丟廢彈殼</text>
+	</string>
+	<string id="ls_tip_82">
+		<text>蓋革計數器具有三種不同的模式:手持模式,手持時顯示值; 持續模式,即在揹包界面顯示值; 按鍵模式,按下繫結鍵時顯示值</text>
+	</string>
+	<string id="ls_tip_83">
+		<text>高級的探測器可以在你靠近異常點時用蜂鳴聲提示危險</text>
+	</string>
+	<string id="ls_tip_84">
+		<text>在物品界面按下左ALT鍵, 會自動拾取和拆卸所有物品, 具體行為規則可在MCM菜單中設定</text>
+	</string>
+	<string id="ls_tip_85">
+		<text>高級的PDA可以在小地圖顯示被你擊殺的屍體標記</text>
+	</string>
+	<string id="ls_tip_86">
+		<text>陣營好感提升后, 所屬陣營的商人在下次更新庫存時會為你提供更好的物品</text>
+	</string>
+	<string id="ls_tip_87">
+		<text>一些樂器是可以演奏的, 在篝火邊放鬆一下心情吧, 篝火也會幫助回血</text>
+	</string>
+	<string id="ls_tip_88">
+		<text>"暢通模式"是預設開啟的,如果你關掉它,某些地圖之間的出入口將需要解鎖才能通過</text>
+	</string>
+	<string id="ls_tip_89">
+		<text>嚮導通常在酒吧或陣營基地內,只要有錢,嚮導就可以讓你安全地到達任何地方</text>
+	</string>
+	<string id="ls_tip_90">
+		<text>不要把死人身上的臂章都賣了! 如果你和傭兵關係良好, 可以去死城找酒保阿斯蘭抽獎</text>
+	</string>
+	<string id="ls_tip_91">
+		<text>即使剛出生就打到一把超屌的槍, 但沒有對應的修理箱去修也是白搭, 而修理箱需要對應的工具箱才能製作</text>
+	</string>
+	<string id="ls_tip_92">
+		<text>右鍵任何工具箱都可以打開你的私人工作臺, 如果還沒有工具箱的話, 也可以去技師那裡用他的工作臺, 免費的!</text>
+	</string>
+	<string id="ls_tip_93">
+		<text>不管在現實中還是在特異區, 拆別人的快遞包裹這種事情都十分令人不齒</text>
+	</string>
+	<string id="ls_tip_94">
+		<text>GAMMA預設設定下, C鍵可以向你的同伴快速下達指令</text>
+	</string>
+	<string id="ls_tip_95">
+		<text>拆卸裝備和槍支所需的多功能鉗可以從技師那裡購買</text>
+	</string>
+	<string id="ls_tip_96">
+		<text>在高難度下, 如果總是想等到敵人靜止下來才開槍, 那可能會死的很慘...</text>
+	</string>
+	<string id="ls_tip_97">
+		<text>不知為何, 潛行者們就算戴著防毒面具也可以正常吃喝...</text>
+	</string>
+	<string id="ls_tip_98">
+		<text>死了就多讀檔, 沒有人會笑話你, 但讀檔讀的太頻繁遊戲會崩...</text>
+	</string>
+	<string id="ls_tip_99">
+		<text>瞄準頭部</text>
+	</string>
+	<string id="ls_tip_100">
+		<text>修理物品都是有狀態閾值的, 所以戰鬥過後檢查武器和護甲狀態, 並隨時用便宜的工具保養是個好習慣</text>
+	</string>
+	<string id="ls_tip_101">
+		<text>多看PDA中的指南和群檔案! 現在的潛行者們的閱讀理解能力真是越來越差了...</text>
+	</string>
+	<string id="ls_tip_102">
+		<text>Fuchs 躺在兩輛生鏽的 GAZ 卡車之間,抓住他的肩膀試圖保持安靜,他聽到周圍的聲音,喊叫和嘲弄,
+	暴徒不知從何處伏擊了他,他在逃跑時中了一顆子彈,現在,他看著躺在枯草上的槍,權衡了一下自己的選擇,他們現在隨時會找到他</text>
+	</string>
+	<string id="ls_tip_103">
+		<text>就在我抬頭仰望長長的草坡時,早晨的陽光掃過大地,進入森林峽谷,我的腳很痛,我的包很重,但我感到比很長時間以來都更快樂,
+	也許我應該放下包裹然後向東轉,直到我自己走出區域,你所有的錢和你所有的手工藝品都買不到這種和平</text>
+	</string>
+	<string id="ls_tip_104">
+		<text>我們的導遊轉向我們,露出苦笑,我們付給他一大筆錢,買了一條他花了幾個月時間獨自偵察的路,
+	你看,我們是從北方進來的——這是避開戰區的唯一方法,我們重重地坐在一根舊圓木上,看著發電廠的微光大廈,離我們還有一天的路程</text>
+	</string>
+	<string id="ls_tip_105">
+		<text>維諾格拉多夫攔住我時,我的手放在生鏽的舊門把手上,"不,不,不,像這樣," 
+	他用拳頭敲了敲門的鋼,我們立刻聽到裡面傳來一陣嘶啞的呻吟聲,"看到了嗎？"他說,解開了一顆手榴彈,"你應該總是先敲門,"</text>
+	</string>
+	<string id="ls_tip_106">
+		<text>那是晚上,但滿月幾乎和陽光一樣照亮了草地,一個叫 Trapper 的年輕人坐在一個叫 Croat 的老人旁邊,	
+	一個遙遠的嚎叫變成了幾十個,"聽到了嗎？"克羅地亞人問道,Trapper急切地點點頭,但突然間,只有一聲孤獨的嚎叫,更加悲傷,而且有點像人,
+	"那是什麼？"年輕人問,克羅特只是搖頭,最好不要回答</text>
+	</string>
+	<string id="ls_tip_107">
+		<text>大多數遇到槍帕夫利克的人都沒有忘記他——大聲、過分自信和霸道,他癡迷於他的射手——他在上面貼了一堆花哨的電子裝置,並花時間給自己的比賽級彈藥裝填,
+	他只是不會就此閉嘴,自然地,有一天他踏入了電子,這就是他和他的武器的終結,他甚至從未在目標練習之外發射過這東西</text>
+	</string>
+	<string id="ls_tip_108">
+		<text>那是斯卡多夫斯克附近的一個雨天,大多數人只是呆在裡面,有點拖累,然後安德烈在決定開始胡說八道時得到了他總是帶著的笑容,
+	他問我們是否聽說過"虛空粒子",然後他直接跳進了他的童話故事,沒有人買它,但我們很高興聽,每個人都需要一個好故事,尤其是在 Zone 中</text>
+	</string>
+	<string id="ls_tip_109">
+		<text>康斯坦丁拚命猜測他還剩下多少發彈匣,但他不敢從門口瞄準,突然,他的兩個隊友從他身邊跑過,沿著走廊跑了過去,
+	還沒等他決定要做什麼,一隻無形的手似乎抓住了他的步槍,差點將它從他手中奪走</text>
+	</string>
+</string_table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_rax_mmt">
+        <text>迷你地图</text>
+    </string>
+
+	<string id="ui_mcm_rax_mmt_keybind">
+		<text>迷你地图切换键</text>
+	</string>
+
+	<string id="ui_mcm_rax_mmt_keybind_desc">
+		<text>组合键位绑定可以减少冲突.</text>
+	</string>
+
+
+	<string id="ui_mcm_rax_mmt_update_mcm">
+		<text>更新MCM以看到此功能,按键默认为斜线[/]</text>
+	</string>
+
+
+</string_table>

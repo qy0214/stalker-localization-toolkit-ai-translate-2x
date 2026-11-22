@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_fetch_count_have">
+        <text>%$clr_txt有%$clr_numberx$count %$clr_txt在你的揹包中</text>
+    </string>
+	<string id="st_fetch_count_in_stashes">
+        <text>%$clr_txt有%$clr_numberx$count %$clr_txt在附近的容器中</text>
+    </string>
+</string_table>

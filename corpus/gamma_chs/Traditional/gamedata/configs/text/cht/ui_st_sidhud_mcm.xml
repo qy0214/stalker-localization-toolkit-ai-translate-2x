@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	SidHUD strings
+-->
+<string_table>
+	<string id="ui_mcm_menu_sidhud">
+		<text>SidHUD</text>
+	</string>
+	<string id="ui_mm_video_hud_sidslide">
+		<text>SidHUD 選項</text>
+	</string>
+
+
+
+	<string id="ui_mcm_sidhud_armorbar">
+		<text>護甲狀況欄</text>
+	</string>
+	<string id="ui_mcm_sidhud_armorbar_desc">
+		<text>顯示護甲狀況欄. </text>
+	</string>
+	<string id="ui_mcm_sidhud_armortext">
+		<text>護甲狀況文字</text>
+	</string>
+	<string id="ui_mcm_sidhud_armortext_desc">
+		<text>以青色文字的百分比顯示護甲狀況. \n%c[ui_gray_2]如果狀態列被禁用則無效. </text>
+	</string>
+	<string id="ui_mcm_sidhud_weaponshow">
+		<text>武器狀況欄</text>
+	</string>
+	<string id="ui_mcm_sidhud_weaponshow_desc">
+		<text>顯示武器狀況欄. </text>
+	</string>
+	<string id="ui_mcm_sidhud_weapontext">
+		<text>武器狀況文字</text>
+	</string>
+	<string id="ui_mcm_sidhud_weapontext_desc">
+		<text>以橙色文字的百分比顯示武器狀況. \n%c[ui_gray_2]如果狀態列被禁用則無效. </text>
+	</string>
+	<string id="ui_mcm_sidhud_weaponbarhide">
+		<text>取消裝備時隱藏</text>
+	</string>
+	<string id="ui_mcm_sidhud_weaponbarhide_desc">
+		<text>使武器狀態列在您解除裝備時消失. \n%c[ui_gray_2]如果狀態列被禁用則無效. </text>
+	</string>
+	<string id="ui_mcm_sidhud_ammoshow">
+		<text>總彈藥計數器</text>
+	</string>
+	<string id="ui_mcm_sidhud_ammoshow_desc">
+		<text>顯示你在庫存中擁有的三種類型的彈藥總量. </text>
+	</string>
+	<string id="ui_mcm_sidhud_oldammoshow">
+		<text>舊彈藥</text>
+	</string>
+	<string id="ui_mcm_sidhud_oldammoshow_desc">
+		<text>使舊彈藥出現在相關的地方（例如沒有"好的"對應物）</text>
+	</string>
+	<string id="ui_mcm_sidhud_radhealthshow">
+		<text>輻射暴露條</text>
+	</string>
+	<string id="ui_mcm_sidhud_radhealthshow_desc">
+		<text>在生命條上從左到右顯示你擁有的輻射量. </text>
+	</string>
+	<string id="ui_mcm_sidhud_bleedingbarshow">
+		<text>出血條</text>
+	</string>
+	<string id="ui_mcm_sidhud_bleedingbarshow_desc">
+		<text>在耐力條上從左到右顯示你正在流失的血量. </text>
+	</string>
+	<string id="ui_mcm_sidhud_healingbar">
+		<text>健康預測條</text>
+	</string>
+	<string id="ui_mcm_sidhud_healingbar_desc">
+		<text>在 HP 條上啟用一個微妙的血量條,它將顯示你在使用治療物品時將獲得的確切治療量. </text>
+	</string>
+	
+</string_table>

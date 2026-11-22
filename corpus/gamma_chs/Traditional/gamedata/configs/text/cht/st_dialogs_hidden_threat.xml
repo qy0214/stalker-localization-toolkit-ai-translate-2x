@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Storyline: Hidden Threat
+	Version:   1.0
+    Autor:     Longreed
+	Last Edit: 01/11/2021
+-->
+<string_table>
+    <!--=========== ��������� ��������(��������) ===============-->
+	<!-- D1 -->
+    <string id="st_sl_hidden_threat_dialog_kuznetsov_d1_first_1">
+        <text>問候您,上校同志！ 軍隊潛行者 %s 已經到了您的指揮之下！</text>
+    </string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_1_0">
+	    <text>稍息,士兵. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_1_1">
+        <text>仔細聽著,我們從傭兵隊伍的線人那裡得到了訊息. 一個陌生的訪客來到了死城的基地. 奇怪的是,線人無法識別來訪者的派別. 表面上看裝備精良,裝備特殊,但線人稱他不是傭兵. 他從達什曼那裡接過一些案子就離開了,避免與外人接觸. 你的工作是找出這個訪客是誰以及他在特異區做什麼. 明白了嗎？</text>
+    </string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_2_1">
+	    <text>我對任務有疑問,指揮官. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_4_1">
+	    <text>有什麼建議可以從哪裡開始尋找？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_5_1">
+	    <text>為什麼是我們而不是SSU來做這件事？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_6_1">
+	    <text>知道這位訪客是誰嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_7_1">
+	    <text>我錯過了什麼,我可以先得到簡報嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_8_1">
+	    <text>幾天前,有報告稱黑暗小徑的一個潛行者營地遭到了攻擊. 只有一個人倖存下來. 他在封鎖線的農舍里. 沒有提到攻擊者. 襲擊者可能是任何人,土匪、傭兵和其他人渣,或者是與我們的案件有關的人. 想辦法與倖存的潛行者交談,瞭解更多關於襲擊的情況. 這沒什麼大不了的,只是特異區里的一個普通事件,但這就是我們所掌握的一切. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_9_1">
+	    <text>我向總部發送了一份報告,並附上了線人提供的所有資訊. 他們可能需要幾周的時間才能把SSU的特工帶進特異區. 我有一種不好的感覺,戰士,我們的時間不多了. 有事情發生了,而且是試圖躲避我們眼睛的事情. 這就是為什麼我們要自己行動,由我自己負責. 你是最有經驗的軍官之一,我不能把這個任務交給其他任何人. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_10_1">
+	    <text>還有Degtyarev上校,他是SSU嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_11_1">
+	    <text>前幾天,德格捷列夫上校收拾好他的老鷹,朝防區北部的某個地方走去. 我沒有說具體在哪裡,你知道 SSU 不向我們報告,他們有自己的秘密. 我聽說了一些關於普城郊區的事情. 目前還沒有聯繫,也不知道他什麼時候出現. 我們現在必須採取行動. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_12_1">
+	    <text>我有我的想法,但我暫時將它們保密. 如果您找到的資訊證實了我的猜測,我們將徹底討論它. </text>
+	</string>	
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_13_1">
+	    <text>明白了,指揮官. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_13_2">
+	    <text>我知道了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_13_3">
+	    <text>明白了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_13_4">
+	    <text>收到,上校. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d1_14_1">
+	    <text>沒有問題了. </text>
+	</string>
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d2_first_1">
+	    <text>報告. 那名潛行者已經死了,我們無法得到任何資訊. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d2_1_1">
+	    <text>士兵！ 再失敗一次,我會把這個任務分配給更負責任的人. 記住這一點！ 去鋸木廠四處尋找任何有用的資訊. 開始吧. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d2_2_1">
+	    <text>是的,上校同志！ 是的,長官. </text>
+	</string>
+	<!-- D3 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d3_first_1">
+	    <text>指揮官,我查過黑暗小徑中的鋸木廠,很奇怪. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d3_1_1">
+	    <text>繼續...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d3_2_1">
+	    <text>專家們正在與北約的小型武器合作. 從各方面來看,都是僱傭兵. 我假設潛行者被趕出了鋸木廠,因為攻擊者需要在鋸木廠有一個基地. 他們離開了,就在我到達那裡前不久. 目前還不清楚為什麼傭兵需要一個基地,在一個被上帝遺忘的地方？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d3_3_1">
+	    <text>嗯... 我想知道... 如果他們不是僱傭兵,那就沒有什麼奇怪的了. 鋸木廠基地是一個完美的藏身之地,可以隱蔽起來. 除了一個倖存的潛行者給他們破壞了. 好了,就這樣吧. 我們會等待更多的資訊,但現在只有謎團了. 我需要你的時候會讓你知道的. 還有就是,潛行者. 去見羅茲金中士. 我命令你去換些新的裝備. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d3_4_1">
+	    <text>謝謝你,上校同志. </text>
+	</string>
+	<!-- D4 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_first_1">
+	    <text>上校同志！ 任務完成. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_first_2">
+	    <text>上校同志,我們的案子有訊息了嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_1_1">
+	    <text>拿著這個,士兵,這是你應得的. 我們這裡發生了一些事情,需要立即干預. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_2_1">
+	    <text>我們有一些需要立即干預的事情. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_3_1">
+	    <text>我正在聽. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_4_1">
+	    <text>在前往特異區北部之前,德格亞雷夫從我這裡帶走了一個班的戰鬥力. 他們要去哪裡,有什麼任務,我沒有被告知. 他們被命令保持沉默. 今天,我收到了這個小隊的 "求救 "訊號. 資訊說,他們在 "木星工廠 "的領土上,遭到了不明身份者的襲擊. 他們目前還在堅持,但急需幫助. \n你的任務是幫助這些戰士. 同時找出這些 "未知者 "是誰. 他們可能是我們正在尋找的客戶. 有問題嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d4_5_1">
+	    <text>不,指揮官,我正在處理. </text>
+	</string>
+	<!-- D5 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d5_first_1">
+	    <text>戰士死了. 我來不及尋求幫助. 但我確實抓住了消滅他們的人. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d5_1_1">
+	    <text>木星工廠就在不遠處,幾乎沒有機會拯救他們. 你對襲擊我們的人有什麼發現？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d5_2_1">
+	    <text>陌生的潛行者在現場盤踞,堵住了入口,準備堅守防線. 他們似乎在這片領土上尋找什麼東西. 目前尚不清楚他們是誰,裝備非常好. 他們表現得很專業. 在這裡,是其中一個人的徽章,我不熟悉. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d5_3_1">
+	    <text>嗯....... 但我對它很熟悉. 所以我的預感得到了證實. 仔細聽,士兵. 現在特異區里有一個國際研究小組,縮寫為ISG. 在聯合國的支援下成立並存在,但事實上主要由美國控制. 他們在特異區的工作相當正式,但如果我們談論的是蛋疼. 那麼,戰士,你的潛行者看起來像頂著卵蛋頭的科學家嗎？就是這樣,他們不像. 他們是ISG的戰鬥部門,他們是非法進入開發區的. 非法的,因為烏克蘭不允許國際組織允許軍事化團體在其領土上存在. ISG的僱傭兵,在 "木星 "工廠里嗅來嗅去,撞見了我們的僱傭兵,很可能是一次偶然的會面,他們就暴露了. 現在我們知道了我們的對手是誰,剩下的就是找出：他們在特異區里遺留下了什麼. 只要戰士是自由的,就好辦. 我需要你的時候會告訴你的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d5_4_1">
+	    <text>我知道了指揮官！</text>
+	</string>
+	<!-- D6 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_first_1">
+	    <text>指揮官,我找到了一些東西！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_1_1">
+	    <text>好吧,讓我們簡短地說,上面是什麼,你從哪裡得到的？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_2_1">
+	    <text>我是奉基里洛夫的命令,在我們的設施,我們守衛的設施. X-18上面的工廠. 在我在場的時候,該設施遭到了ISG的攻擊,攻擊被擊退了,其中一名ISG專家被發現帶著一臺PDA,在一個快閃記憶體盤上有該PDA的部分資訊. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_3_1">
+	    <text>繼續...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_4_1">
+	    <text>U盤裡有 特異區的地圖. 他們從哪裡得到的,現在還不清楚. 地圖上有各種物體的標記,以及對這些標記的加密評論. 我瞭解到兩個物體,在那裡我遇到了ISG小隊,這個"木星 "工廠和"X-18 "實驗室的入口. ISG在特異區的不同地點正在尋找一些東西. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_5_1">
+	    <text>明白了,戰士. ISG可能從達什曼那裡買了地圖和他們任務所需的所有資訊. 還記得那個訪客嗎？為保密起見,在死城,由於擔心截獲廣播,這些數據被存取到了物理介質上. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_6_1">
+	    <text>我們的下一步行動是什麼,指揮官？ 呃...我希望我們能找到他們的行動中心,他們不會躲在那兒...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_7_1">
+	    <text>我們需要加強設施的安全,並保持我們的耳朵在地面上. 我從大地球那裡得到暗示,我們不應該干涉SSU,他們知道ISG的活動. 士兵... 聽著,有一些大的遊戲正在進行,我們在這個生命的聚會上不受歡迎. 所以休息吧,你幹得不錯. 我會把你的資訊轉發給SSU. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d6_8_1">
+	    <text>收到,上校. </text>
+	</string>
+	<!-- D7 -->
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d7_first_1">
+	    <text>按照你的吩咐報告！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d7_1_1">
+	    <text>有一個SSU少校就站在那裡,他的身份已經被證實. 此外,我還聯繫了迪亞吉廖夫,他對這個少校出現在基地感到非常驚訝和震驚. 這位少校告訴了上校密碼. "紅色2號",我不知道這意味著什麼,但在那之後,我收到了迪亞杰列夫前所未有的命令,要求我完全遵守SSU少校的指示. 有一個大的行動正在進行,你會從少校那裡得到細節. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kuznetsov_d7_2_1">
+	    <text>我知道了. 我認識這個專業,他在普里皮亞奇醫院救了我的命. </text>
+	</string>
+	<!--============= �������� �������(������) =================-->
+	<string id="st_sl_hidden_threat_dialog_survived_first_1">
+	    <text>呃...怎麼會...我現在該怎麼辦...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_1_1">
+	    <text>你好,潛行者. 我們需要談談. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_2_1">
+	    <text>什麼樣的談話？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_2_2">
+	    <text>軍隊！ 哦,是的...西多洛維奇警告過我. 我和軍隊沒什麼好說的！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_3_1">
+	    <text>我想知道誰在鋸木廠襲擊了你的部隊？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_3_2">
+	    <text>我要麼與人交談,要麼向他們開槍！ 選擇？ 我想知道誰在鋸木廠襲擊了你的部隊？ 我正在尋找一個人,可能是攻擊你的人,他們離我的朋友很遠. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_4_1">
+	    <text>哦...看,我不知道是誰襲擊了我們. 我的上級派我到封鎖線去拿食物. 在路上,我不得不撒尿. 當我坐在灌木叢中時,我聽到鋸木廠的槍聲. 所有人都快死了,試圖聯繫自己的PDA...靜默. 我害怕了,夥計...我從那裡逃跑了,灌木叢和封鎖線. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_survived_5_1">
+	    <text>是的,不多. 嗯,謝謝你. 久違了,潛行者. </text>
+	</string>
+	<!--============= ������� ������(��������) =================-->
+	<!-- D1 -->
+    <string id="st_sl_hidden_threat_dialog_spooner_d1_first_1">
+	    <text>聽著,我聽到有人小聲說你要去封鎖線. 我想請你幫個忙. 把會計報告拿給南方路障的朱羅夫少校,如果是在你的路上. 你怎麼說,少校不會虧待你的？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d1_1_1">
+	    <text>好吧,給我你的報告. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d1_2_1">
+	    <text>我現在沒時間,找別人. </text>
+	</string>
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_first_1">
+	    <text>中士,我去拿我的裝備. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_first_2">
+	    <text>中士,你還有什麼要的嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_1_1">
+	    <text>請稍等. 嗯... 軍隊潛行者 %s,在名單上,得到了上校的批準. 在此簽名... 好吧,您有權獲得它：</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_2_1">
+	    <text>謝謝你,中士. 好了,再見. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_3_1">
+	    <text>等一下,士兵！你想賺點外快嗎？我有一個快遞員來了. 他說他在農業研究所,很快就會到. 已經兩個小時了,他還沒來. 找出他的情況. 我對他攜帶的包裹更感興趣. 應該是從廢品站運來的,所以到廢品站的路上去看看. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_4_1">
+	    <text>好吧,我會做的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d2_5_1">
+	    <text>我沒時間. </text>
+	</string>
+	<!-- D3 -->
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_first_1">
+	    <text>信使死了,被變異生物殺死了. 這是你的包裹. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_first_2">
+	    <text>中士,你還有什麼需要嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_1_1">
+	    <text>謝謝你的包裹. 你的報酬. 啊...太糟糕了,我失去了最後的供應來源. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_2_1">
+	    <text>你說什麼,供應來源？我想知道是否有什麼我可以幫忙的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_3_1">
+	    <text>每隔一段時間,就會有一個來自揚塔的生態學家護衛隊來補充補給. 他們的報酬很高,他們並不吝嗇. 他們中的一些人有北約的武器,並對它們的彈藥感興趣. 正如你所瞭解的,我們幾乎沒有庫存,它們不是來自地面,我們只能用我們能做的來做. 好吧,我的建議是,你給我帶來北約的彈藥,我就給你同樣數量的我們的彈藥,同樣的型別. 我對碎片不感興趣,我只和你交換成包的彈藥,最小數量為20包（280-300個）,3個為炮管下的手榴彈: \n1.給我300發9x19子彈,我給你320發9x18子彈作為回報. \n2.給我300發5.56x45子彈,我給你等量的5.45x39子彈作為回報. \n3.給我280發.45子彈,我給你90發9x39子彈作為回報. \n4.給我300發7.62x51子彈,我給你等量的7.62x54子彈作為回報. \n5.給我三顆M209手榴彈,我給你等量的VOG-25作為回報. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d3_4_1">
+	    <text>好吧,我會記住的. </text>
+	</string>
+	<!-- D4 -->
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_first_1">
+	    <text>我想交易彈藥. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_1_1">
+	    <text>你想要什麼？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_2_1">
+	    <text>我有 9x19mm FMJ 彈藥. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_3_1">
+	    <text>我得到了 9x19mm Dum-dum 彈藥. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_4_1">
+	    <text>我有 9x19mm bp 彈藥. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_5_1">
+	    <text>這裡有 5.56x45mm FMJ 彈藥. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_6_1">
+	    <text>這裡有 5.56x45mm EP 彈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_7_1">
+	    <text>這裡有 5.56x45mm EPR 彈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_8_1">
+	    <text>這裡有 .45 ACP 輪. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_9_1">
+	    <text>這裡有 .45 多頭蛇彈</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_10_1">
+	    <text>這裡有 7.62x51mm NATO FMJ 彈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_11_1">
+	    <text>這裡有 7.62x51mm NATO AP 彈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_12_1">
+	    <text>這裡有M209下掛式手榴彈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spooner_d4_13_1">
+	    <text>我改變主意了. </text>
+	</string>
+	<!--=============== ����� �����(������) ====================-->
+	<string id="st_sl_hidden_threat_dialog_jurov_first_1">
+	    <text>少校同志！ 從農業研究所帶來了檔案. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_1_1">
+	    <text>Ta-ah-ah... 洛日金中士的會計報告. 謝謝你,士兵. 你想得到什麼好處？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_1_2">
+	    <text>Ta-rah-rah... 洛茲金中士的會計報告. 謝謝你,士兵潛行者. 拿走你的報酬,別在我面前晃來晃去. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_2_1">
+	    <text>在農場里有個潛行者,我需要和他談談,我不想在我身上弄出幾個新的彈孔. 你能安排和那些自由軍的人休戰嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_3_1">
+	    <text>我可以用這筆錢. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_4_1">
+	    <text>幫我一個忙,我可以給你兩個小時的獨家休戰. 潛行者會讓你靠近並前往他們的基地,但如果你開始向他們開槍,休戰就結束了. 就是這樣,你可以自由行動了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jurov_5_1">
+	    <text>謝謝你,少校同志. </text>
+	</string>
+	<!--========= ��.��������� ��������(��������) ==============-->
+	<!-- D1 -->
+	<string id="st_sl_hidden_threat_dialog_kirillov_d1_first_1">
+	    <text>士兵,我想請你幫個忙. 我們黑谷的部隊守衛設施的一個無線電臺出現了故障. 他們要求我送一個新的. 我需要人送過去,你能做到嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kirillov_d1_1_1">
+	    <text>把它包起來,用蝴蝶結繫好,我會以最好的方式送達. </text>
+	</string>
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_kirillov_d2_first_1">
+	    <text>聽基里洛夫,你是一個很好的技術人員. 我有一個 PDA,並且可能包含有價值的資訊. 你能解鎖嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kirillov_d2_1_1">
+	    <text>我可以做到,把它放在這裡. 不要指望它很快實現,也許是 24 小時,也許更多. 完成後我會告訴你的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kirillov_d2_2_1">
+	    <text>好吧,不要等太久. </text>
+	</string>
+	<!-- D3 -->
+	<string id="st_sl_hidden_threat_dialog_kirillov_d3_first_1">
+	    <text>PDA怎麼了？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kirillov_d3_1_1">
+	    <text>你的 PDA 並不容易,嗯...確實如此. 它有一個特殊的額外安全模組,裡面裝有少量炸藥. 我試圖弄清楚,但我做錯了什麼,它消失了. 我只能移除外部驅動器,但裡面充滿了資訊. 卡片都被標記了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_kirillov_d3_2_1">
+	    <text>有標記的卡片,嗯？ 去他媽的PDA,別擔心. 我要去見上校. 再見,謝謝. </text>
+	</string>
+	<!--====== ��������� �������� ������(������ ������) ========-->
+	<string id="st_sl_hidden_threat_dialog_val_leader_squad_first_1">
+	    <text>問候您,軍隊潛行者,你為什麼來這裡？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_val_leader_squad_1_1">
+	    <text>我會給你一個連線,拿著對講機. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_val_leader_squad_2_1">
+	    <text>謝謝你！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_val_leader_squad_3_1">
+	    <text>不用謝我. </text>
+	</string>
+	<!--======== ������� �������(������� �������) ==============-->
+	<string id="st_sl_hidden_threat_dialog_gorobez_first_1">
+	    <text>我希望你不要來...對不起...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_gorobez_1_1">
+	    <text>你在說什麼？</text>
+	</string>
+	<!--========= ����� ��������(������� �������) ==============-->
+	<!-- D1 -->
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d1_first_1">
+	    <text>你已經破壞了我們的兩次行動,你看起來是個行動迅速的人,我們需要你. 你為我們工作吧,我們會保證你的安全. 撤離特異區,在世界任何一個國家的賬戶中都有一筆不菲的收入. 你沒有什麼選擇,只有兩個選擇. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d1_1_1">
+	    <text>第二個是什麼？</text>
+	</string>
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_first_1">
+	    <text>還有其他問題嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_1_1">
+	    <text>我想我會克制的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_2_1">
+	    <text>我沒有太多時間,所以我沒有時間打擾你. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_3_1">
+	    <text>（安靜...）</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_4_1">
+	    <text>好吧,我不和你談心了. 我給你30分鐘時間考慮一下. 我們以後再談. 也許會有更多的激情,這取決於你. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_leader_d2_5_1">
+	    <text>（安靜...）</text>
+	</string>
+	<!--========= ��������� �������(������� �������) ===========-->
+	<string id="st_sl_hidden_threat_dialog_isg_agent_d1_first_1">
+	    <text>聽好了! 我是SSU的少校. 換個日子,我不會抬起一根手指來拯救你的面板,也不會拿我在ISG的身份冒險. 但看起來今天是你的日子. 我們的整個行動都被搞砸了. ISG不知怎麼得到了一個他們不應該知道的潛行者的訊息. 還有杰格捷列夫和這個潛行者見面的事. 派出了一個特別小組來消滅杰格捷列夫並抓捕一名潛行者. 會議將在宿舍舉行. 特別小組計劃從後門進去,用戰鬥力擠掉德格亞雷夫和他的宿敵,到院子里為狙擊手開闢一個位置. 狙擊手將在對面的房子里等著. 你的報酬是警告上校. \n你欠我一條命！你的報酬是警告上校這個陷阱. 記住這句話："死亡不會等待,生命也不應該等待. " 如果沒有暗號,德吉亞雷夫可能會在你的額頭上開一槍,以防萬一. 還有,我有特別重要的資訊,通過通訊背叛是行不通的,ISG的所有頻率都會被破壞. 我把箱子藏在百貨店裡,等待合適的機會,而你就是我的機會. 你要把百貨店裡的案子的資訊告訴德格亞雷夫. 你明白嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_isg_agent_d1_1_1">
+	    <text>是的,我會做一切事情. ... 謝謝你. </text>
+	</string>
+	<!--======== ��������� �������(������� �������) ===========-->
+	<!-- D1 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_first_1">
+	    <text>你需要告訴我一些事情來解釋你為什麼在這裡. 你去了不該去的地方？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_1_1">
+	    <text>等等,上校,我有一封你朋友寫給你的信,"死亡不會等待,生命也不應該等待. "</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_2_1">
+	    <text>好了,現在我更相信你了,看來你救了我們的命. 併爲此非常感謝你. 你是在什麼情況下學會的暗號,你有什麼資訊給我？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_3_1">
+	    <text>在醫院,我被ISG抓住了. 一個ISG官員,出乎意料地射殺了我的警衛,把我的物品和武器還給了我. 他自稱是SSU的少校. 給我的任務是警告你,上校,ISG正在準備一個陷阱,並給了我一個暗號. 我以最快的速度趕去,但沒有及時趕到,並做出了一個獨立的決定,以消除主要的威脅,一個在你後面的狙擊手. 還有一件事,一位 "ISG官員 "讓我告訴你他藏在百貨店的一個箱子,據他說裡面有關於ISG活動的特別重要的資訊. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_4_1">
+	    <text>我明白了,看起來特工冒著掩護的風險是對的. 由於我這裡沒有人,你將不得不接手這個案子. 我將在農業研究所基地與您會面. 去做吧. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d1_5_1">
+	    <text>是的,上校同志！</text>
+	</string>
+	<!--============ ��������� �������(��������) ==============-->
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d2_first_1">
+	    <text>你拿到箱子了嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d2_1_1">
+	    <text>是的,就在這裡. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d2_2_1">
+	    <text>好,這是爲了你的幫助. 你是個好士兵,我決定把你放在我的特殊組裡. 你會直接向我報告. 庫茲涅佐夫將安排轉會檔案. 在此期間,我稍後會與您聯繫. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d2_3_1">
+	    <text>是的,上校同志！</text>
+	</string>
+	<!-- D3 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_first_1">
+	    <text>我本來想問...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_2_1">
+	    <text>通過特工我們必須知道ISG的運營中心在哪裡,為什麼不乾脆幹掉它們呢？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_3_1">
+	    <text>我能夠發現 ISG 正在檢查特異區中的各種對像,並且正在尋找一些東西. 我們對特異區內 ISG 的主要目的瞭解多少？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_4_1">
+	    <text>普里皮亞奇的那個潛行者,我認出了他； 史特洛克！ 為什麼他對 ISG 如此重要？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_5_1">
+	    <text>摧毀基地只會拖延問題,而不是解決問題. ISG會投靠一個新的組織,這可能會更成功. 儘管ISG準軍事組織在特異區是非法的,但摧毀他們會引起國際醜聞. 我們的工作是為外交官獲取任何資訊,這些資訊一般會使ISG在特異區的活動失去信譽. 之後,他們會自己離開,或者我們會幫助他們,在聯合國沒有人會說一個字. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_6_1">
+	    <text>自從ISG到來后,SSU的分析員們就知道他們的目的. ISG正在尋找任何能夠暗示特異區是發展大規模殺傷性武器的結果並對國際安全構成威脅的資訊. 這不一定是真相. 重要的是,國際安全小組應啟動對 特異區的國際調查,並在所獲材料的影響下,迫使烏克蘭允許國際組織全面進入特異區進行調查. 這將有效地剝奪烏克蘭對特異區的壟斷權,並將控制權移交給聯合國. 反過來,ISG將獲得進行任何行動的全權委託. 在調查結束之前,我們可能會被強烈建議離開 特異區. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d3_7_1">
+	    <text>如果它最終落入 ISG 手中,那將是一場徹底的災難和整個行動的失敗. 但這不是你關心的問題. 我給你的建議：忘記這個潛行者以及與他有關的一切. 你會活得更久. </text>
+	</string>
+    <!-- D4 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_first_1">
+	    <text>潛行者 %s 已到收到你的命令. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_1_1">
+	    <text>稍息! 讓我們削減手續. 有一個任務給你. 我們的特工給了我們大量的關於ISG活動的資訊. 現在我對其中一個小組感興趣,特工無法查出他們的任務目的,這對ISG的其他成員是保密的. 根據他的觀察,這個小組每2天定期離開基地,24小時後返回. 你的任務是查出他們的目的是什麼. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_2_1">
+	    <text>資訊太少了,指揮官！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_3_1">
+	    <text>這還不是全部. 早些時候,一個僱傭兵線人告訴我們有一個ISG組織定期出現在死城. 達什曼嚴格警告我們要接近死城西南的那座孤零零的房子,並與他們取得聯繫. 我之前沒有太注意這個資訊,以為ISG在那裡供貨. 但似乎有聯繫. 只要有時間視窗,就悄悄地去看看那個地方,在那裡留下一個記錄儀,一個錄音機. 從現在起整整兩天,把它撿起來帶給我. 也許會有什麼結果. 有問題嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_3_2">
+	    <text>還有其他問題嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_4_1">
+	    <text>關於任務的任何問題. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_5_1">
+	    <text>沒有問題,我會做的. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_7_1">
+	    <text>為什麼是錄音機,上校？ 我們無家可歸嗎？ 我們沒有更先進的無線電發射器嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d4_8_1">
+	    <text>我們正在與一個比 SSU 裝備精良的組織合作. 他們會用探測器探測任何無線電種植園. 我們只是嚇跑他們,他們會改變位置. 基里洛夫專門為這項任務建造了一臺錄音機,它可以拾取聲音並開始錄音. 它不發射任何無線電波,因此幾乎無法檢測到. </text>
+	</string>
+	<!-- D5 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d5_first_1">
+	    <text>任務完成. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d5_1_1">
+	    <text>做得好. 與你分開后,我留下了正在錄像的觀察員,他們正在拍攝發生的事情. 現在我需要時間和技術員一起分析所有的音訊和視訊材料. ISG的規模不大,但他們得到了傭兵的支援,他們的報酬很高. 我們得到了一些令人不安的資訊,ISG和傭兵都集中在利曼斯克. 你大概能明白為什麼. 他們的目標是CNPP. 而這可能會危及到我們的整個行動. 由於你關閉了"焦腦器",我已經派了一隊我們的戰士去CNPP. 他們的任務是等待你,然後陪同並服從你的命令. 你的任務是阻止ISG到達石棺. 主要目標是消滅ISG集團,其他的對我來說沒有什麼興趣. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d5_2_1">
+	    <text>是的,上校同志. </text>
+	</string>
+	<!-- D6 -->
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d6_first_1">
+	    <text>ISG 已被消滅. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d6_1_1">
+	    <text>幹得好. 我們已經完成了對材料的分析. ISG已經通過僱傭兵建立了一個地下分銷和供應渠道. 在你安裝錄音機的房子里,他們正在用武器和彈藥來換取神器. 嗯... 聯合國不喜歡他們的 "手拉手 "組織是一個走私團伙. 看起來我們有足夠的資訊,是時候讓我們的外交使團開始工作了. 我要去大地球了,在我回來之前,你暫時聽從庫茲涅佐夫的安排. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_degtyarev_d6_2_1">
+	    <text>讓他們見鬼去吧,指揮官. </text>
+	</string>
+	<!--============= ����� ���������(��������) ================-->
+	<!-- D1 -->
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d1_first_1">
+	    <text>我將概述一下情況. 你們有點尿褲子了,所以我不得不出面. 在你們和CNPP小組搗亂的時候,這也是一個掩護,主力小組和他們那些頂著卵蛋頭的怪胎們一起,進入了X-8,顯然發現了一些他們不需要發現的東西. 所以,赫南德斯,該區ISG作戰任務的負責人,下令收尾,準備撤離. 你聽到了嗎,戰士？！我聞到了猛烈的氣味. SSU的負責人在行動通訊中,下令清算ISG總部,不要讓他們挖出的資訊,一直以來,從特異區中傳出去. 此後,烏克蘭將面臨外交後果,但這遠沒有ISG可能擁有的資訊重要,如果它被傳到聯合國. \n ISG為他們的基地選擇了一個很好的地方來隱藏,但在戰略上卻令人厭惡. 我們把他們鎖定在普里皮亞奇的一側和木星的一側,這並不困難. 那隻老鼠,是不會溜走的. 現在是困難的部分,你要做的是什麼. 帶領一支由經驗豐富的戰士組成的突擊隊,清理這個老鼠窩. 你進去,任何向你開槍的人都要被消滅. 還是我應該讓別人負責,而你想要你媽媽？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d1_1_1">
+	    <text>試著阻止我,少校同志！</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d1_2_1">
+	    <text>好態度,戰士,我贊成. 去吧,時間不多了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d1_3_1">
+	    <text>是,長官. </text>
+	</string>
+	<!-- D2 -->
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d2_first_1">
+	    <text>少校同志...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d2_1_1">
+	    <text>我已經通過無線電得知ISG的操作中心已經被摧毀. 我已經派了一個戰利品小組和SSU特工,他們會帶走那裡所有有價值的東西. ISG的一些零散部隊可能還留在特異區內,但如果沒有一個統一的協調和供應中心,他們就不是一個威脅,隨著時間的推移,他們會融進其他團體,或試圖自行撤離. 你做得很好. 我們都做得很好. 我們的行動已經結束. 行動的細節是國家機密,如果你不想變成啞巴,請閉上你的嘴. 如果你開口,SSU會對你感興趣的. 這個是我個人送給你的禮物. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_vereshagin_d2_2_1">
+	    <text>謝謝你,少校同志. </text>
+	</string>
+	<!--========== ��������� �������� ������(CNPP) =============-->
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_first_1">
+	    <text>報告！我們做了偵察,觀察員報告說單色人守住了主入口,僱傭兵正在向他們逼近. 戰鬥正在進行,戰果不一,但單色人正在拉攏部隊,很快就會讓僱傭軍泄氣. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_1_1">
+	    <text>嗯... ISG 小組在哪裡？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_2_1">
+	    <text>我不知道. 偵察員沒有找到他們. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_3_1">
+	    <text>有什麼不對...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_4_1">
+	    <text>我們的一名偵察員停止了交流. 他的工作是控制通往醫院的道路. 他的最後一次聯繫是一個小時前,他沒有回覆. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_aes_leader_squad_5_1">
+	    <text>我們沒有太多的時間,沒有時間檢查,所以我們只能碰運氣,盲目地走. 反正我們在這裡也沒什麼可做的,還是讓那些措施繼續招待那些單色的人吧. 把小夥子們叫起來,我們出發吧!</text>
+	</string>
+	<!--============ ��������� ����� SSU(������) ===============-->
+	<string id="st_sl_hidden_threat_dialog_jup_agent_d1_first_1">
+	    <text>突擊隊處於戒備狀態. 我們要開始進攻了嗎？</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jup_agent_d1_1_1">
+	    <text>我們走. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_jup_agent_d1_2_1">
+	    <text>還沒有. </text>
+	</string>
+	<!--============= ��������(������ ������) ==================-->
+	<string id="st_sl_hidden_threat_dialog_spirit_d1_first_1">
+	    <text>我們得到了什麼？樓外有血跡. 沒有彈殼說明哨兵被打了個措手不及,沒有還擊. 讓我們看看接下來會發生什麼...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spirit_d1_1_1">
+	    <text>接著說...</text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_spirit_d2_first_1">
+	    <text>大樓內的潛行者,沒有立即意識到發生了什麼,從兩個入口處受到攻擊,幾乎沒有抵抗. 5.56x45北約彈殼......看起來像是傭兵. 嗯......襲擊發生在兩天前,火中的炭火還很溫暖. 襲擊者在這裡紮營,我有一段時間錯過了他們. 不管是誰,他們都不在這裡了,所以是時候回到庫茲涅佐夫了. </text>
+	</string>
+	<!--================= ����� ������� ========================-->
+	<string id="st_sl_hidden_threat_dialog_all_1_1">
+	    <text>明白了,指揮官. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_1_2">
+	    <text>我知道了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_1_3">
+	    <text>明白了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_1_4">
+	    <text>收到,上校. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_2_1">
+	    <text>請講. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_2_2">
+	    <text>請講. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_2_3">
+	    <text>請講. </text>
+	</string>
+	<string id="st_sl_hidden_threat_dialog_all_3_1">
+	    <text>我改變主意了. </text>
+	</string>
+	<!--===================== Notes ============================-->
+	<string id="encyclopedia__notes_note_from_spooner">
+		<text>洛日金中士的便條. </text>
+	</string>
+	<string id="encyclopedia__notes_note_from_spooner_text">
+		<text> \洛日金提議進行交換: 給我300發9x19子彈,我給你320發9x18子彈作為回報；給我300發5.56x45子彈,我給你等量的5.45x39子彈作為回報；給我280發.45子彈,我給你90發9x39子彈作為回報. \n - 給我300發7.62x51子彈,我給你等量的7.62x54子彈作為回報. \n - 給我5顆M209手榴彈,我給你等量的VOG-25作為回報. </text>
+	</string>
+</string_table>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_ground_coffee">
+		<text>研磨咖啡</text>
+	</string>
+	<string id="st_ground_coffee_descr">
+		<text>磨好的咖啡准备冲泡. 需要烹饪工具和水来冲泡. \n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		%c[d_green] • %c[ui_gray_2] 提神剂\n
+		%c[d_orange] • %c[ui_gray_2] 需要烹饪工具和水来冲泡\n
+		</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons Attachments
+-->
+<string_table>
+	
+	<string id="st_addon_sil_ash12">
+		<text>CKIB ASH-12步槍消音器</text>
+	</string>
+	<string id="st_addon_sil_ash12_descr">
+		<text>\n \n%c[ui_gray_2]相容性:\n \n%c[d_cyan] - %c[ui_gray_2] 12.7x55mm 口徑武器\n \n%c[ui_gray_1]ASH-12 消音器.\n \n%c[d_purple] - %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_addon_scope_specterup">
+		<text>SA-58突擊步槍 S.U.P. 特別升級套裝</text>
+	</string>
+	<string id="st_addon_scope_specterup_descr">
+		<text> 一個特殊的升級套裝，包括一個 SpectreDR x4瞄準鏡、Trijicon RMR紅點瞄具 和一個 ANPEQ15 LAM鐳射指示器。 這種組合爲使用者同時提供了遠距離和近距離瞄準鏡，以及 ANPEQ15 的鐳射瞄準輔助。此套裝不愧為中/近距離作戰的理想選擇。</text>
+	</string>
+
+	<string id="st_addon_scope_sup">
+		<text>S.U.P. 瞄具升級套裝</text>
+	</string>
+	<string id="st_addon_scope_sup_descr">
+		<text> 一個瞄具升級套裝，包括一個 SpectreDR x4瞄準鏡和一個 Trijicon RMR紅點瞄具。 這種組合爲使用者同時提供遠距離和近距離瞄準鏡以輔助槍械瞄準。</text>
+	</string>
+
+	<string id="st_addon_sil_silencerco">
+		<text>"沉默者"CO Salvo 12消音器</text>
+	</string>
+	<string id="st_addon_sil_silencerco_descr">
+		<text>\n \n%c[ui_gray_2]相容性:\n \n%c[d_cyan] - %c[ui_gray_2] 12x76口徑武器\n \n%c[ui_gray_1]"沉默者"CO Salvo 12消音器.\n \n%c[d_purple] - %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+
+</string_table>

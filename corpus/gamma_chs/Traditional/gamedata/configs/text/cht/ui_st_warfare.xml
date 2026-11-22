@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	WARFARE STRINGS
+-->
+<string_table>
+	<string id="st_wrfr_opt_presets">
+		<text>預設值</text>
+	</string>
+	<string id="st_wrfr_opt_apply_to_all">
+		<text>全部採用</text>
+	</string>
+	<string id="st_wrfr_opt_general">
+		<text>一般設定</text>
+	</string>
+	<string id="st_wrfr_opt_azazel_respawn">
+		<text>詛咒模式重生</text>
+	</string>
+	<string id="st_wrfr_opt_rand_settings">
+		<text>隨機設定</text>
+	</string>
+	
+	<string id="st_wrfr_influnence_points">
+		<text>影響點</text>
+	</string>
+	<string id="st_wrfr_release_control_faction">
+		<text>釋放陣營控制</text>
+	</string>
+	<string id="st_wrfr_take_control_faction">
+		<text>進行陣營控制</text>
+	</string>
+	<string id="st_wrfr_show_points">
+		<text>顯示點 / 智慧地域</text>
+	</string>
+	<string id="st_wrfr_hide_points">
+		<text>不顯示點 / 智慧地域</text>
+	</string>
+	<string id="st_wrfr_display_faction_info">
+		<text>顯示陣營資訊</text>
+	</string>
+	<string id="st_wrfr_unselect_squad">
+		<text>取消選擇小隊</text>
+	</string>
+	<string id="st_wrfr_select_squad">
+		<text>選擇小隊</text>
+	</string>
+	<string id="st_wrfr_unselect_point">
+		<text>取消選擇點</text>
+	</string>
+	<string id="st_wrfr_select_point">
+		<text>選擇點</text>
+	</string>
+	<string id="st_wrfr_select_obj">
+		<text>選擇對像</text>
+	</string>
+	<string id="st_wrfr_add_influ">
+		<text>增加影響點</text>
+	</string>
+	<string id="st_wrfr_remove_influ">
+		<text>取消影響點</text>
+	</string>
+	
+	<string id="st_wrfr_cap_point">
+		<text>佔領點</text>
+	</string>
+	<string id="st_wrfr_buy_novice_squad">
+		<text>購買初級小隊</text>
+	</string>
+	<string id="st_wrfr_buy_adv_squad">
+		<text>購買中級小隊</text>
+	</string>
+	<string id="st_wrfr_buy_veteran_squad">
+		<text>購買高級小隊</text>
+	</string>
+	<string id="st_wrfr_buy_heli">
+		<text>購買武裝直升機</text>
+	</string>
+	<string id="st_wrfr_declare_war">
+		<text>開戰</text>
+	</string>
+	<string id="st_wrfr_possess_leader">
+		<text>控制小隊長</text>
+	</string>
+	<string id="st_wrfr_follow">
+		<text>跟隨</text>
+	</string>
+	<string id="st_wrfr_attack">
+		<text>攻擊</text>
+	</string>
+	<string id="st_wrfr_target">
+		<text>目標</text>
+	</string>
+	<string id="st_wrfr_move_here">
+		<text>移至此地</text>
+	</string>
+	<string id="st_wrfr_send_squad">
+		<text>派遣小隊</text>
+	</string>
+	<string id="st_wrfr_send_all_squad">
+		<text>派遣所有小隊</text>
+	</string>
+	<string id="st_wrfr_take_squad">
+		<text>幹掉小隊</text>
+	</string>
+	<string id="st_wrfr_take_all_squads">
+		<text>幹掉所有小隊</text>
+	</string>
+	<string id="st_wrfr_attack_with_all">
+		<text>全力進攻</text>
+	</string>
+	<string id="st_wrfr_send_heli_to_point">
+		<text>將直升機派到點</text>
+	</string>
+	<string id="st_wrfr_send_heli_to_squad">
+		<text>派遣直升機前往小隊</text>
+	</string>
+	<string id="st_wrfr_remove_heli">
+		<text>移除直升機</text>
+	</string>
+	<string id="st_wrfr_heli_route">
+		<text>直升機路線</text>
+	</string>
+	<string id="st_wrfr_order_1">
+		<text>派遣%s到%s</text>
+	</string>
+	<string id="st_wrfr_order_2">
+		<text>派遣%s攻擊%s</text>
+	</string>
+	<string id="st_wrfr_order_3">
+		<text>%s正跟隨%s</text>
+	</string>
+	<string id="st_wrfr_order_4">
+		<text>選取%s的一支防守小隊跟隨玩家.</text>
+	</string>
+	<string id="st_wrfr_order_5">
+		<text>選取%s的所有防守小隊跟隨玩家.</text>
+	</string>
+	<string id="st_wrfr_order_6">
+		<text>選取%s的一支防守小隊攻擊%s的小隊.</text>
+	</string>
+	<string id="st_wrfr_order_7">
+		<text>選取%s的所有防守小隊攻擊%s的小隊.</text>
+	</string>
+	<string id="st_wrfr_order_8">
+		<text>選取%s的一支防守小隊跟隨%s的小隊.</text>
+	</string>
+	<string id="st_wrfr_order_9">
+		<text>選取%s的所有防守小隊跟隨%s的小隊.</text>
+	</string>
+	<string id="st_wrfr_order_10">
+		<text>將%s加至%s的目標</text>
+	</string>
+	<string id="st_wrfr_order_11">
+		<text>派遣%s的一支小隊攻擊%s.</text>
+	</string>
+	<string id="st_wrfr_order_12">
+		<text>派遣%s的所有小隊攻擊%s.</text>
+	</string>
+	<string id="st_wrfr_order_13">
+		<text>移動%s的一支小隊攻擊%s.</text>
+	</string>
+	<string id="st_wrfr_order_14">
+		<text>移動%s的所有小隊攻擊%s.</text>
+	</string>
+	<string id="st_wrfr_order_15">
+		<text>派遣%s的一支小隊到%s.</text>
+	</string>
+	<string id="st_wrfr_order_16">
+		<text>派遣%s的所有小隊到%s.</text>
+	</string>
+	<string id="st_wrfr_order_17">
+		<text>派遣直升機到%s.</text>
+	</string>
+	<string id="st_wrfr_heli_removed">
+		<text>直升機已移除</text>
+	</string>
+	<string id="st_wrfr_heli_already_spawned">
+		<text>直升機已經產生在這個關卡!</text>
+	</string>
+	
+	<string id="st_wrfr_smrt_auto_capture">
+		<text>自動佔領%s中!</text>
+	</string>
+	<string id="st_wrfr_prop_base">
+		<text>基地</text>
+	</string>
+	<string id="st_wrfr_prop_resource">
+		<text>資源</text>
+	</string>
+	<string id="st_wrfr_prop_territory">
+		<text>領地</text>
+	</string>
+	<string id="st_wrfr_prop_lair">
+		<text>巢穴</text>
+	</string>
+	<string id="st_wrfr_prop_faction">
+		<text>陣營</text>
+	</string>
+	<string id="st_wrfr_prop_curr_popu">
+		<text>現有人口</text>
+	</string>
+	<string id="st_wrfr_prop_max_popu">
+		<text>最大人口</text>
+	</string>
+	<string id="st_wrfr_prop_resource_count">
+		<text>資源數</text>
+	</string>
+	<string id="st_wrfr_prop_time_capture">
+		<text>佔領需時</text>
+	</string>
+	<string id="st_wrfr_prop_next_defense">
+		<text>下次防禦</text>
+	</string>
+	<string id="st_wrfr_prop_next_patrol">
+		<text>下次巡邏</text>
+	</string>
+	<string id="st_wrfr_prop_time_culc_hr">
+		<text> %s小時 + %s分鐘</text>
+	</string>
+	<string id="st_wrfr_prop_time_culc_min">
+		<text> %s分鐘</text>
+	</string>
+	<string id="st_wrfr_prop_target">
+		<text>目標</text>
+	</string>
+	<string id="st_wrfr_prop_invasion_size">
+		<text>入侵規模</text>
+	</string>
+	<string id="st_wrfr_prop_targets">
+		<text>--目標--</text>
+	</string>
+	<string id="st_wrfr_prop_invasion">
+		<text>--入侵--</text>
+	</string>
+	<string id="st_wrfr_smart_count_warning">
+		<text> (%s) 被 %s 支小隊包圍!</text>
+	</string>
+	
+	<string id="st_wrfr_heli">
+		<text>直升機</text>
+	</string>
+	<string id="st_wrfr_you">
+		<text>你自己</text>
+	</string>
+	<string id="st_wrfr_mutant">
+		<text>變異生物</text>
+	</string>
+	<string id="st_wrfr_none">
+		<text>無</text>
+	</string>
+	
+	<string id="st_wrfr_sim_1">
+		<text> %s'的小隊</text>
+	</string>
+	<string id="st_wrfr_sim_2">
+		<text>數目</text>
+	</string>
+	<string id="st_wrfr_sim_3">
+		<text>部門</text>
+	</string>
+	<string id="st_wrfr_sim_4">
+		<text>名稱</text>
+	</string>
+	<string id="st_wrfr_sim_5">
+		<text>戰鬥中</text>
+	</string>
+	<string id="st_wrfr_sim_6">
+		<text>前往目標</text>
+	</string>
+	<string id="st_wrfr_sim_7">
+		<text>在目標處等待</text>
+	</string>
+	<string id="st_wrfr_sim_8">
+		<text>總勢力</text>
+	</string>
+	<string id="st_wrfr_sim_9">
+		<text>勢力</text>
+	</string>
+	<string id="st_wrfr_sim_10">
+		<text>擁有的基地</text>
+	</string>
+	<string id="st_wrfr_sim_11">
+		<text>閑置時間</text>
+	</string>
+	<string id="st_wrfr_sim_12">
+		<text>目標關卡</text>
+	</string>
+</string_table>

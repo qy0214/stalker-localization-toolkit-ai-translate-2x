@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	
+	<string id="st_wpn_9a91n_descr">
+		<text>9A91 是一种气动旋转枪机武器, 采用位于枪管上方的长冲程气体活塞和带有 4 个凸耳的旋转枪机, 机匣由钢冲压件制成, 前护木和手枪式握把由聚合物制成, 不使用时, 钢制枪托可向上折叠并位于机匣上方, 翻转式照门的射程设置为 100 米和 200 米, 但相对较短的瞄准器底座和亚音速子弹的陡峭弹道将 9A-91 的射程限制在 100 米左右\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 支持的瞄具类型: %c[ui_yellow]"燕尾槽"\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94 消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vsk94n_descr">
+		<text>VSK-94是俄罗斯KBP仪器设计局开发的9x39毫米消音狙击步枪, 作为VSS步枪的低成本替代品, 该步枪以9A-91卡宾枪为基础, VSK-94 设计用于在 400m 范围内精确打击无装甲目标\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 支持的瞄具类型: %c[ui_yellow]"燕尾槽"\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94 suppressor (integrated)\n \n</text>
+	</string>
+
+</string_table>

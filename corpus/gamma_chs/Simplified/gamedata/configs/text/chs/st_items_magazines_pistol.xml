@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+<!--
+Pistols and MP's
+-->
+
+	<string id="st_mag_aps_9x18_fmj">
+		<text>标准9x18 APS弹匣</text>
+	</string>
+	<string id="st_mag_aps_9x18_fmj_descr">
+		<text>
+		标准9x18 APS弹匣,容量为20发. APS作为个人防卫武器使用有限,被AKS-74U和后来的OTs-33所取代. 
+		</text>
+	</string>
+
+	<string id="st_mag_aps_9x19_fmj">
+		<text>改进版9x19 APS弹匣</text>
+	</string>
+	<string id="st_mag_aps_9x19_fmj_descr">
+		<text>
+		APS弹匣 改进版由一位有进取心的技术员制作,用于容纳9x19帕拉贝鲁姆子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_beretta_9x19_fmj">
+		<text>标准9x19伯莱塔92F弹匣</text>
+	</string>
+	<string id="st_mag_beretta_9x19_fmj_descr">
+		<text>
+		标准发行的伯莱塔92F弹匣,可容纳15发子弹. 伯莱塔仍然是黑帮分子和香港动作电影明星的常年最爱. 
+		</text>
+	</string>
+
+	<string id="st_mag_beretta_9x18_fmj">
+		<text>改进版9x18伯莱塔92F弹匣</text>
+	</string>
+	<string id="st_mag_beretta_9x18_fmj_descr">
+		<text>
+		伯莱塔弹匣改进版,以适应更常见的9x18马卡罗夫弹. 
+		</text>
+	</string>
+
+
+	<string id="st_mag_colt1911_11.43x23_fmj">
+		<text>标准.45 ACP Colt 1911弹匣 </text>
+	</string>
+	<string id="st_mag_colt1911_11.43x23_fmj_descr">
+		<text>
+		标准Colt 1911弹匣可容纳7发子弹. 虽然1911的容量相当低,与其他更现代的.45手枪相比,它已经过时了,但它更便宜,更容易获得. 
+		</text>
+	</string>
+
+	<string id="st_mag_colt_kimber_11.43x23_fmj">
+		<text>标准.45 ACP Colt Kimber弹匣</text>
+	</string>
+	<string id="st_mag_colt_kimber_11.43x23_fmj_descr">
+		<text>
+		标准Colt Kimber弹匣可容纳7发子弹. 与标准1911弹匣相比,它的质量更高,但也同样存在弹药容量不足的问题. 
+		</text>
+	</string>
+
+	<string id="st_mag_cz52_7.62x25_p">
+		<text>标准7.62x25 CZ-52弹匣</text>
+	</string>
+	<string id="st_mag_cz52_7.62x25_p_descr">
+		<text>
+		标准8发CZ-52弹匣. 这款历史悠久的俄罗斯子弹仍有其崇拜者. 
+		</text>
+	</string>
+
+	<string id="st_mag_cz75_9x19_fmj">
+		<text>标准9x19 CZ-75弹匣</text>
+	</string>
+	<string id="st_mag_cz75_9x19_fmj_descr">
+		<text>
+		标准CZ-75弹匣,容量为16发. 
+		</text>
+	</string>
+
+	<string id="st_mag_cz75_9x18_fmj">
+		<text>改进版9x18 CZ-75弹匣</text>
+	</string>
+	<string id="st_mag_cz75_9x18_fmj_descr">
+		<text>
+        CZ-75弹匣改进版可供9x18子弹使用. 鉴于9x18马卡洛夫子弹的普遍性,这在特异区是很常见的现象. 
+		</text>
+	</string>
+
+	<string id="st_mag_desert_eagle_357_hp">
+		<text>标准.357 Desert Eagle弹匣</text>
+	</string>
+	<string id="st_mag_desert_eagle_357_hp_descr">
+		<text>
+		标准.357沙漠之鹰弹匣可容纳7发子弹. 即使是弹匣也是巨大的. 
+		</text>
+	</string>
+
+	<string id="st_mag_fn57_5.7x28_ss190">
+		<text>标准5.7x28 Five-seveN弹匣</text>
+	</string>
+	<string id="st_mag_fn57_5.7x28_ss190_descr">
+		<text>
+		标准发行的五连发弹匣,可容纳20发子弹. 极为精良的制造弹匣,是一种非常有效的副武器,然而弹药却相当匮乏. 
+		</text>
+	</string>
+
+	<string id="st_mag_fnp45_11.43x23_fmj">
+		<text>标准.45 ACP FNP-45弹匣</text>
+	</string>
+	<string id="st_mag_fnp45_11.43x23_fmj_descr">
+		<text>
+		标准装备FNP-45弹匣,可容纳15发子弹. 在西方运营商和黑石公司的潜行者中非常常见的装备. 也可以装入FNX-45手枪. 
+		</text>
+	</string>
+
+	<string id="st_mag_fnx45_11.43x23_fmj">
+		<text>标准.45 ACP FNX-45弹匣</text>
+	</string>
+	<string id="st_mag_fnx45_11.43x23_fmj_descr">
+		<text>
+            标准配备的FNX-45弹匣,可容纳15发子弹. 较新的FNX手枪在雇佣兵中比较常见,尽管它们是黑石公司士兵拿的不常见的战利品. 也会装入FNP-45手枪. 
+		</text>
+	</string>
+
+	<string id="st_mag_fort_9x18_fmj">
+		<text>标准9x18 Fort-17弹匣</text>
+	</string>
+	<string id="st_mag_fort_9x18_fmj_descr">
+		<text>
+		Fort-12手枪的标准装备17发弹匣. 在特异区常见的是作为后线乌克兰军队或有警察背景的潜行者的副武器. 
+		</text>
+	</string>
+
+	<string id="st_mag_fort_9x19_fmj">
+		<text>改进版9x19 Fort-17弹匣</text>
+	</string>
+	<string id="st_mag_fort_9x19_fmj_descr">
+		<text>
+		Fort-17弹匣改进版,可接受9x19帕拉贝鲁姆子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_glock_9x19_fmj">
+		<text>标准9x19 Glock弹匣</text>
+	</string>
+	<string id="st_mag_glock_9x19_fmj_descr">
+		<text>
+		标准Glock弹匣可容纳17发子弹. 这是美国警察和黑帮分子多年来的最爱. 
+		</text>
+	</string>
+
+	<string id="st_mag_glock_9x18_fmj">
+		<text>改进版9x18 Glock弹匣</text>
+	</string>
+	<string id="st_mag_glock_9x18_fmj_descr">
+		<text>
+		格洛克弹匣改进版采取更常见的9x18马卡洛夫子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_gsh18_9x19_fmj">
+		<text>标准9x19 Gsh-18弹匣</text>
+	</string>
+	<string id="st_mag_gsh18_9x19_fmj_descr">
+		<text>
+		标准发行的Gsh-18弹匣可容纳18发子弹. Gsh-18是俄罗斯军队和执法部门使用的现代副武器之一. 
+		</text>
+	</string>
+
+	<string id="st_mag_hpsa_9x19_fmj">
+		<text>标准9x19布朗宁Hi-Power弹匣</text>
+	</string>
+	<string id="st_mag_hpsa_9x19_fmj_descr">
+		<text>
+		标准布朗宁Hi-Power弹匣可容纳13发子弹. Hi-Power是一种可靠且价格合理的副武器,受到许多潜行者的青睐. 
+		</text>
+	</string>
+
+	<string id="st_mag_hpsa_9x18_fmj">
+		<text>改进版9x18勃朗宁Hi-Power弹匣</text>
+	</string>
+	<string id="st_mag_hpsa_9x18_fmj_descr">
+		<text>
+		勃朗宁Hi-Power弹匣改进版,接受9x18马卡洛夫子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp443_9x19_fmj">
+		<text>标准9x19 MP-443弹匣</text>
+	</string>
+	<string id="st_mag_mp443_9x19_fmj_descr">
+		<text>
+		MP-443 "Grach "的标准发行的18发弹匣. 俄罗斯军队和执法单位的主要副武器之一. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp443_9x18_fmj">
+		<text>改进版9x18 MP-443弹匣</text>
+	</string>
+	<string id="st_mag_mp443_9x18_fmj_descr">
+		<text>
+		改进版MP-443弹匣,可接受9x18马卡洛夫子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_oc33_9x18_fmj">
+		<text>标准9x18 OTs-33 Pernach弹匣</text>
+	</string>
+	<string id="st_mag_oc33_9x18_fmj_descr">
+		<text>
+		标准OTs-33 Pernach弹匣可容纳27发子弹. 佩纳赫弹匣继承了APS自动机枪的地位,除了样式之外,几乎在所有方面都更胜一筹. 
+		</text>
+	</string>
+
+	<string id="st_mag_oc33_9x19_fmj">
+		<text>改进版9x19 OTs-33 Pernach弹匣</text>
+	</string>
+	<string id="st_mag_oc33_9x19_fmj_descr">
+		<text>
+			装备有9x19 Parabellum子弹的OTs-33 Pernach弹匣改进版. 
+		</text>
+	</string>
+
+
+	<string id="st_mag_pm_9x18_fmj">
+		<text>标准9x18 PM弹匣</text>
+	</string>
+	<string id="st_mag_pm_9x18_fmj_descr">
+		<text>
+		标准发放的PM弹匣可容纳8发子弹. PM弹匣在阻挡能力和弹匣容量方面都有所欠缺,它唯一值得庆幸的是它很常见. 
+		</text>
+	</string>
+
+	<string id="st_mag_pm_9x19_fmj">
+		<text>改进版9x19 PM弹匣</text>
+	</string>
+	<string id="st_mag_pm_9x19_fmj_descr">
+		<text>
+			PM弹匣改进版可以接受9x19帕拉贝鲁姆子弹. 较大的子弹在威力上增加不多. 
+		</text>
+	</string>
+
+	<string id="st_mag_pmm_9x18_fmj">
+		<text>标准9x18 PMM弹匣</text>
+	</string>
+	<string id="st_mag_pmm_9x18_fmj_descr">
+		<text>
+			标准发行的PMM弹匣,可容纳12发子弹. 与PM相比,这是一个明显的改进. 
+		</text>
+	</string>
+
+	<string id="st_mag_pmm_9x19_fmj">
+		<text>改进版9x19 PMM弹匣</text>
+	</string>
+	<string id="st_mag_pmm_9x19_fmj_descr">
+		<text>
+			PMM弹匣改进版,可接受9x19帕拉贝鲁姆子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_pp2000_9x19_fmj">
+		<text>标准9x19 PP-2000弹匣</text>
+	</string>
+	<string id="st_mag_pp2000_9x19_fmj_descr">
+		<text>
+		标准发行的PP-2000弹匣,容量为30发. 
+		</text>
+	</string>
+
+	<string id="st_mag_pp2000_9x18_fmj">
+		<text>改进版9x18 PP-2000弹匣</text>
+	</string>
+	<string id="st_mag_pp2000_9x18_fmj_descr">
+		<text>
+			PP-2000弹匣改进版采取9x18马卡洛夫子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_sig220_11.43x23_fmj">
+		<text>标准.45 ACP SIG Sauer P220弹匣</text>
+	</string>
+	<string id="st_mag_sig220_11.43x23_fmj_descr">
+		<text>
+			7轮.45 ACP弹匣,用于SIG P220手枪. P220受到保镖和保安人员的欢迎,在区里做得很好. 
+		</text>
+	</string>
+
+	<string id="st_mag_tt33_7.62x25_p">
+		<text>标准7.62x25 TT-33弹匣</text>
+	</string>
+	<string id="st_mag_tt33_7.62x25_p_descr">
+		<text>
+		8发7.62x25 TT-33弹匣. 这款伟大的战争经典在特异区仍有它的崇拜者. 
+		</text>
+	</string>
+
+
+	<string id="st_mag_usp_11.43x23_fmj">
+		<text>标准.45 ACP USP弹匣</text>
+	</string>
+	<string id="st_mag_usp_11.43x23_fmj_descr">
+		<text>
+			标准12发USP弹匣,用于USP的.45 ACP变体. 
+		</text>
+	</string>
+
+	<string id="st_mag_usp_9x19_fmj">
+		<text>标准9x19 USP弹匣</text>
+	</string>
+	<string id="st_mag_usp_9x19_fmj_descr">
+		<text>
+			标准15发USP弹匣,用于USP的9毫米 "比赛 "变体. 
+		</text>
+	</string>
+
+
+	<string id="st_mag_walther_9x19_fmj">
+		<text>标准9x19 Walther P99弹匣</text>
+	</string>
+	<string id="st_mag_walther_9x19_fmj_descr">
+		<text>
+		16发标准版瓦尔特P99弹匣,用于9x19帕拉贝鲁姆. 
+		</text>
+	</string>
+
+	<!-- begin smgs -->
+
+	<string id="st_mag_bizon_9x18_fmj">
+		<text>标准9x18 PP-19弹匣 </text>
+	</string>
+	<string id="st_mag_bizon_9x18_fmj_descr">
+		<text>
+		用于PP-19 Bizon冲锋枪的64发螺旋弹匣. 其高容量被其固有的不可靠的供弹方式所抵消. 
+		</text>
+	</string>
+
+	<string id="st_mag_bizon_9x19_fmj">
+		<text>改进版9x19 PP-19弹匣</text>
+	</string>
+	<string id="st_mag_bizon_9x19_fmj_descr">
+		<text>
+		改进版PP-19弹匣是为了接受9x19的托卡列夫子弹. 考虑到Bizon的螺旋弹匣的复杂性,这显然是一个魔法师的工作. 
+		</text>
+	</string>
+
+	<string id="st_mag_bizon_7.62x25_p">
+		<text>改进版7.62x25 PP-19弹匣</text>
+	</string>
+	<string id="st_mag_bizon_7.62x25_p_descr">
+		<text>
+		改进版PP-19弹匣是为了接受7.62x25的Tokarev子弹. 考虑到Bizon的螺旋弹匣的复杂性,这显然是一个魔法师的工作. 
+		</text>
+	</string>
+
+	<string id="st_mag_kiparis_9x18_fmj">
+		<text>标准9x18 Kiparis弹匣</text>
+	</string>
+	<string id="st_mag_kiparis_9x18_fmj_descr">
+		<text>
+		标准30发的Kiparis弹匣. Kiparis是一种廉价的冲锋枪,在土匪和叛徒的部落中拥有其崇拜者. 
+		</text>
+	</string>
+
+	<string id="st_mag_kiparis_9x19_fmj">
+		<text>改进版9x19 Kiparis弹匣</text>
+	</string>
+	<string id="st_mag_kiparis_9x19_fmj_descr">
+		<text>
+		改进版30发Kiparis弹匣,可接受9x19 Parabellum子弹. Kiparis是一种廉价的冲锋枪,在土匪和叛徒的部落中拥有其崇拜者. 
+		</text>
+	</string>
+
+	<string id="st_mag_vityaz_9x19_fmj">
+		<text>标准9x19 Vityaz-SN弹匣</text>
+	</string>
+	<string id="st_mag_vityaz_9x19_fmj_descr">
+		<text>
+			Vityaz-SN的标准装备,30发9x19弹匣. 在特异区不常见的武器,因为乌克兰军队不使用这种武器. 
+		</text>
+	</string>
+
+	<string id="st_mag_vityaz_9x18_fmj">
+		<text>改进版9x18 Vityaz-SN弹匣</text>
+	</string>
+	<string id="st_mag_vityaz_9x18_fmj_descr">
+		<text>
+		Vityaz-SN弹匣 改进版接受9x18马卡洛夫. 
+		</text>
+	</string>
+
+	<string id="st_mag_vz61_9x19_fmj">
+		<text>标准9x19 vz.61弹匣</text>
+	</string>
+	<string id="st_mag_vz61_9x19_fmj_descr">
+		<text>
+		20发标准版Vz.61弹匣. 一种可靠的武器,在黑社会中享有巨大的知名度. 
+		</text>
+	</string>
+
+	<string id="st_mag_vz61_9x18_fmj">
+		<text>改进版9x18 vz.61弹匣</text>
+	</string>
+	<string id="st_mag_vz61_9x18_fmj_descr">
+		<text>
+			20发Vz.61弹匣改进版,可供9x18马卡洛夫子弹使用. 
+		</text>
+	</string>
+	
+	<string id="st_mag_p90_5.7x28_ss190">
+		<text>标准5.7x28 P90弹匣</text>
+	</string>
+	<string id="st_mag_p90_5.7x28_ss190_descr">
+		<text>
+			P90中使用的标准50轮螺旋弹匣. 太有未来感了!
+		</text>
+	</string>
+	
+	<string id="st_mag_ppsh41_7.62x25_p">
+		<text>标准PPSh41弹鼓7.62x25口径</text>
+	</string>
+	<string id="st_mag_ppsh41_7.62x25_p_descr">
+		<text>
+		标准PPSh41弹鼓7.62x25口径
+		</text>
+	</string>
+
+	<string id="st_mag_mp5_9x19_fmj">
+		<text>标准9x19 MP5弹匣</text>
+	</string>
+	<string id="st_mag_mp5_9x19_fmj_descr">
+		<text>
+            30发弹匣,用于流行的、无处不在的MP5. MP5是各行各业潜行者的最爱,提供足够的火力来抵御狗和土匪. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp5_9x18_fmj">
+		<text>改进版9x18 MP5弹匣</text>
+	</string>
+	<string id="st_mag_mp5_9x18_fmj_descr">
+		<text>
+            MP5弹匣改进版可以使用9x18马卡洛夫子弹. 鉴于MP5的受欢迎程度和对特异区许多技术人员的熟悉程度,将其改装为9x18是相当普遍的. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp7_9x19_fmj">
+		<text>改进版9x19 MP7弹匣</text>
+	</string>
+	<string id="st_mag_mp7_9x19_fmj_descr">
+		<text>
+            40发的MP7弹匣改进版可以接受9x19帕拉贝鲁姆子弹. 由于4.6x30子弹有些罕见,一些节俭的技术人员能够对MP7进行改装,以发射更常见的9毫米手枪子弹. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp7_9x18_fmj">
+		<text>改进版9x18 MP7弹匣</text>
+	</string>
+	<string id="st_mag_mp7_9x18_fmj_descr">
+		<text>
+		40发加长型MP7弹匣改进版再次接受9x18 Parabellum子弹. 在非标准改装的基础上进行非标准改装,往往会造成武器的可靠性问题. 
+		</text>
+	</string>
+
+	<string id="st_mag_mp5_11.43x23_fmj">
+		<text>.45 ACP "Frasier" MP5弹匣</text>
+	</string>
+	<string id="st_mag_mp5_11.43x23_fmj_descr">
+		<text>
+            为MP5 "Frasier "定制的弹匣. 可容纳30发.45ACP子弹. 据传是为一个不知名的古怪值班员定制的. 
+		</text>
+	</string>
+
+	<string id="st_mag_ump45_11.43x23_fmj">
+		<text>标准.45 ACP UMP弹匣</text>
+	</string>
+	<string id="st_mag_ump45_11.43x23_fmj_descr">
+		<text>
+			标准25发UMP弹匣,采用.45 ACP口径. UMP弹匣是一种不常见的武器,但由于其出色的操作性和高阻击力,在特异区备受追捧. 
+		</text>
+	</string>
+	
+</string_table>

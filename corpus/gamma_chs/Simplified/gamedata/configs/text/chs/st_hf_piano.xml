@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_placeable_piano">
+		<text>便携式钢琴</text>
+	</string>
+	<string id="st_placeable_piano_descr">
+		<text>类似这样的文明世界的奢侈品在特异区并不多见, 这架钢琴所有的琴键似乎都还能演奏, 虽然音色一般, 但已经足够为特异区中疲惫的灵魂带来些许慰藉; 琴的内部放着好几张乐谱, 还有一台老式的合成器\n \n
+		%c[ui_gray_3]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 高价值物品\n</text>
+	</string>
+</string_table>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+<!--
+Pistols and MP's
+-->
+
+	<string id="st_mag_sks_7.62x39">
+		<text>标准7.62x39 SKS弹匣</text>
+	</string>
+	<string id="st_mag_sks_7.62x39_descr">
+		<text>
+		标准的SKS弹匣,容量为20枚
+		</text>
+	</string>
+	
+	<string id="st_mag_toz106_20x70_fmj">
+		<text>标准20x70 TOZ 106弹匣</text>
+	</string>
+	<string id="st_mag_toz106_20x70_descr">
+		<text>
+		标准的TOZ 106弹匣,容量为2枚
+		</text>
+	</string>
+	
+	<string id="st_mag_etoz106_20x70_fmj">
+		<text>加长型20x70 TOZ 106弹匣</text>
+	</string>
+	<string id="st_mag_etoz106_20x70_descr">
+		<text>
+		加长型TOZ 106弹匣,可容纳4枚
+		</text>
+	</string>
+	
+	<string id="st_mag_toz106_20x70_zhekan_fmj">
+		<text>标准20x70 TOZ 106弹匣</text>
+	</string>
+	<string id="st_mag_toz106_20x70_zhekan_descr">
+		<text>
+		标准的TOZ 106弹匣,可容纳2枚
+		</text>
+	</string>
+	
+	<string id="st_mag_etoz106_20x70_zhekan_fmj">
+		<text>加长型20x70 TOZ 106弹匣</text>
+	</string>
+	<string id="st_mag_etoz106_20x70_zhekan_descr">
+		<text>
+		加长型TOZ 106弹匣,可容纳4枚
+		</text>
+	</string>
+	
+	<string id="st_mag_dvl_7.62x51">
+		<text>标准7.62x51 DVL10弹匣</text>
+	</string>
+	<string id="st_mag_dvl_7.62x51_descr">
+		<text>
+		标准DVL10弹夹,容量为10枚
+		</text>
+	</string>
+		
+	<string id="st_mag_basremington700_7.62x51_descr">
+		<text>加长型7.62x51雷明顿700弹匣</text>
+	</string>
+	<string id="st_mag_basremington700_7.62x51">
+		<text>
+		加长的雷明顿700弹匣,容量为12枚
+		</text>
+	</string>
+	
+	<string id="st_mag_remingtonarchangel_7.62x51">
+		<text>加长型7.62x51雷明顿大天使套件弹匣</text>
+	</string>
+	<string id="st_mag_remingtonarchangel_7.62x51_descr">
+		<text>
+		加长版雷明顿大天使套件弹匣,容量为20枚
+		</text>
+	</string>
+	
+	<string id="st_mag_remingtonla_300_descr">
+		<text>标准.300雷明顿700弹匣</text>
+	</string>
+	<string id="st_mag_remingtonla_300">
+		<text>
+		标准雷明顿700弹匣,容量为5枚
+		</text>
+	</string>
+	
+	<string id="st_mag_k98_7.92x33">
+		<text>标准7.92x33 Kar98弹夹</text>
+	</string>
+	<string id="st_mag_k98_7.92x33_descr">
+		<text>
+		标准Kar 98弹夹,容量为5枚
+		</text>
+	</string>
+	
+	<string id="st_mag_valbas_9x39_pab9">
+		<text>扩展版9x39 AS VAL弹匣</text>
+	</string>
+	<string id="st_mag_valbas_9x39_pab9_descr">
+		<text>
+		扩展版9x39 AS VAL弹匣,容量为30枚
+		</text>
+	</string>
+	
+	<string id="st_mag_basvintorez_9x39_pab9">
+		<text>扩展版9x39 VSS弹匣</text>
+	</string>
+	<string id="st_mag_basvintorez_9x39_pab9_descr">
+		<text>
+		扩展版9x39 VSS弹匣,容量为20枚
+		</text>
+	</string>
+	
+	<string id="st_mag_basextvintorez_9x39_pab9">
+		<text>扩展版9x39 VSS弹匣</text>
+	</string>
+	<string id="st_mag_basextvintorez_9x39_pab9_descr">
+		<text>
+		扩展版9x39 VSS弹匣,容量为30枚
+		</text>
+	</string>
+	
+	<string id="st_mag_svd_5.56">
+		<text>标准5.56x45 SVD弹匣</text>
+	</string>
+	<string id="st_mag_svd_5.56_descr">
+		<text>
+		标准5.56x45 SVD弹匣容量为10枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_svd_5.56_extended">
+		<text>加长版5.56x45 SVD弹匣</text>
+	</string>
+	<string id="st_mag_svd_5.56_extended_descr">
+		<text>
+		加长版5.56x45 SVD弹匣容量为20枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_sksext_7.62x39">
+		<text>加长版7.62x39 SKS弹匣</text>
+	</string>
+	<string id="st_mag_sksext_7.62x39_descr">
+		<text>
+		加长版7.62x39 SKS弹匣容量为30枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_sks_7.62x54ext">
+		<text>加长版7.62x54 SKS弹匣</text>
+	</string>
+	<string id="st_mag_sks_7.62x54ext_descr">
+		<text>
+		加长版7.62x54 SKS弹匣容量为30枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_sks_7.62x54">
+		<text>标准7.62x54 SKS弹匣</text>
+	</string>
+	<string id="st_mag_sks_7.62x54_descr">
+		<text>
+		标准7.62x54 SKS弹匣容量为20枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_dvl_338">
+		<text>标准.338 Federal DVL10弹匣</text>
+	</string>
+	<string id="st_mag_dvl_338fed_descr">
+		<text>
+		标准.338 Federal DVL10弹匣容量为10枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_akalfa_7.62x39_bas">
+		<text>标准7.62x39 AK Alfa弹匣</text>
+	</string>
+	<string id="st_mag_akalfa_7.62x39_bas_descr">
+		<text>
+		标准7.62x39 AK Alfa弹匣容量为30枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_akalfa_5.56x45_bas">
+		<text>标准5.56x45 AK Alfa弹匣</text>
+	</string>
+	<string id="st_mag_akalfa_5.56x45_bas_descr">
+		<text>
+		标准5.56x45 AK Alfa弹匣容量为30枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_sr2m_9x21_veresk">
+		<text>标准9x21 SR-2M Veresk弹匣</text>
+	</string>
+	<string id="st_mag_sr2m_9x21_veresk_descr">
+		<text>
+		标准9x21 SR-2M Veresk弹匣容量为30枚.
+		</text>
+	</string>
+	
+	<string id="st_mag_sr2m_9x18_veresk">
+		<text>标准SR-2M 9x18 Veresk弹匣</text>
+	</string>
+	<string id="st_mag_sr2m_9x18_veresk_descr">
+		<text>
+		标准9x18 SR-2M Veresk弹匣容量为30枚.
+		</text>
+	</string>
+
+</string_table>

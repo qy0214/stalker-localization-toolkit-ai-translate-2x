@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON ESCAPE (CORDON) MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Default Storyline Task -->
+
+	<string id="drx_sl_esc_m_trader_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_default_task_text">
+		<text>接受下一个任务,</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_default_task_about">
+		<text>我没有任务给你,但我知道有人可能会有,我在你的PDA上标出了他的位置</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_default_task_finish">
+		<text>祝你好运!潜行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Mutant Safari Storyline Task -->
+
+	<string id="drx_sl_esc_m_trader_task_1_name">
+		<text>特异区狩猎</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_1_text">
+		<text>你的任务是带领一群游客去体验下打怪</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_1_about">
+		<text>我接了一群游客过来, 他们想知道杀死一个怪物是什么感觉, 带他们出去打猎, 让他们爽爽, 只要别让他们被吃掉就行了, 这对生意不好...</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_1_finish">
+		<text>打猎回来了? 很好! 这是你的报酬</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Rookie Initiation Storyline Task= -->
+
+	<string id="drx_sl_esc_m_trader_task_2_name">
+		<text>新手入门</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_2_text">
+		<text>带一组新人进入特异区,向他们展示该如何生存</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_2_about">
+		<text>营地里的新手都十分年轻. 我担心他们能不能在特异区里活过一天. 他们死了对生意不好,明白吗? 这样我就少了许多顾客. 我要你带他们去探险. 告诉他们该注意什么,给他们看看异常点,教他们如何活下去</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_task_2_finish">
+		<text>哦,我未来的顾客们都还活着,它们还得从我这儿买些子弹,呵呵呵. 谢谢你,潜行者,这是你的报酬</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Xenotech (Loner Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_default_task_name">
+		<text>获取下一个任务</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_default_task_text">
+		<text>接受下一个任务</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_default_task_about">
+		<text>我的一个朋友需要你的服务. 我在你的地图上标出了他的位置</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_default_task_finish">
+		<text>祝你好运! 潜行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Xenotech (Loner Mechanic) Rescue Missing Stalker Storyline Task -->
+
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_name">
+		<text>营救失踪的潜行者</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_text">
+		<text>一名来自"黑科技"泽诺泰克的营地的潜行者失踪了,找到他</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_about">
+		<text>我需要你的帮助. 我营地的一个潜行者出去寻找补给,但没有回来. 我担心他可能出了什么事. 我会在你的地图上标出他最后一个已知的位置,看你能不能找到他</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_finish">
+		<text>你救了他! 出色的家伙! 把这个当作我感激的表示</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Xenotech (Loner Mechanic) Track Wounded Attacker Storyline Task -->
+
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_name">
+		<text>追踪受伤的攻击者</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_text">
+		<text>一个军队小队袭击了"黑科技"泽诺泰克的营地并尝试杀掉他们. 其中一名袭击者成功逃脱. 找到他</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_about">
+		<text>你去哪里了? 一个军方小队从来过这儿,把这儿整的天翻地覆. 他们和他们那架该死的直升机几乎消灭了营地里的所有人. 我们设法干掉了绝大多数人,但其中一个逃走了. 他可能受伤了,看看你能不能跟着血迹找到他. 我会告诉你他要去的方向</text>
+	</string>
+	<string id="drx_sl_esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_finish">
+		<text>谢谢你!潜行者. 把这个当作你行动的礼物</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_esc_m_trader_cf_task_1_name">
+		<text>退出阵营</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_cf_task_1_text">
+		<text>西多洛维奇可以用10000卢布让你退出你目前的阵营</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_cf_task_1_about">
+		<text>呃,很高兴你能来找我. 我在这个地区有很多关系. 我可以让你放弃你对阵营的承诺,但这并不便宜. 你知道,我需要上下打点. 如果你能给我,我是说... 10000卢布,我就看看能为你做些什么</text>
+	</string>
+	<string id="drx_sl_esc_m_trader_cf_task_1_finish">
+		<text>啊,这应该很好. 我马上安排,享受你的新生活</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Eliminate Car Park Bandits Task -->
+
+	<string id="esc_m_trader_task_1_name">
+		<text>袭击停车场</text>
+	</string>
+	<string id="esc_m_trader_task_1_text">
+		<text>对停车场发动攻击, 消灭占领该地点的匪徒</text>
+	</string>
+	<string id="esc_m_trader_task_1_about">
+		<text>土匪已占领了旧停车场的据点, 那些混蛋抢劫和杀害任何营地附近的人, 他们惊扰了我的客户, 也对菜鸟村是个威胁, 严重损害了生意! 我需要你"搞定"他们, 如果需要帮助, 可以和"狂人"法纳特谈谈</text>
+	</string>
+	<string id="esc_m_trader_task_1_finish">
+		<text>干得好, 潜行者! 如果你坚持下去, 我们就是最好的朋友! 这钱是我答应给你的, 拿去买瓶酒吧!</text>
+	</string>
+
+	<string id="esc_m_trader_task_2_name">
+		<text>合同杀手</text>
+	</string>
+	<string id="esc_m_trader_task_2_text">
+		<text>西多洛维奇和你签了一份合同, 找到并消灭目标, 然后返回得到西德罗维奇的赏金</text>
+	</string>
+	<string id="esc_m_trader_task_2_about">
+		<text>我这里有一个悬赏名单, 都是些从头坏到脚的人渣和恶棍... 毕竟在特异区这种鬼地方, 如果不经常清理垃圾, 那垃圾总有一天会堆到我们家门口! 怎么样? 潜行者, 帮我打扫这些垃圾吧? 我这有现钱, 不会让你白忙活的, 放心好了</text>
+	</string>
+	<string id="esc_m_trader_task_2_finish">
+		<text>很好, 这下封锁线又清净了许多, 给, 拿着你的钱, 去喝一杯吧!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Sidorovich (Loner Trader) Decimate the Enemy Task -->
+
+	<string id="esc_m_trader_task_3_name">
+		<text>教训土匪</text>
+	</string>	
+	<string id="esc_m_trader_task_3_text">
+		<text>西多洛维奇想除掉那些土匪恶霸, 收集%s</text>
+	</string>		
+	<string id="esc_m_trader_task_3_about">
+		<text>这里是进入特异区的第一站, 菜鸟们都想来这里跃跃欲试, 但通常他们都成了附近土匪的猎物, 这些欺软怕硬的土匪们不好好在黑谷呆着, 就知道跑来这里骚扰我们, 破坏了我们的贸易路线, 还会偷我们的设备和物资, 真是欺人太甚, 兔子急了也会咬人不是吗? 是时候教训一下它们了! 干掉他们, 把%s带给我, 让我看看你的本事</text>
+	</string>		
+	<string id="esc_m_trader_task_3_fetch_about">
+		<text>这里是进入特异区的第一站, 菜鸟们都想来这里跃跃欲试, 但通常他们都成了附近土匪的猎物, 这些欺软怕硬的土匪们不好好在黑谷呆着, 就知道跑来这里骚扰我们, 破坏了我们的贸易路线, 还会偷我们的设备和物资, 真是欺人太甚, 兔子急了也会咬人不是吗? 是时候教训一下它们了! 干掉他们, 把%s带给我, 让我看看你的本事</text>
+	</string>		
+	<string id="esc_m_trader_task_3_fetch_finish">
+		<text>你终于回来了! 我还以为你也被土匪绑走了呢, 哈哈! 拿到臂章了吗? 这是给你的报酬!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Wolf (Loner Honcho) -->
+	
+	<string id="esc_2_12_stalker_wolf_task_1_name">
+		<text>怪物猎手</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_1_text">
+		<text>"独狼"沃夫要求你清除一个地区所有的怪物威胁,以确保菜鸟村和通过封锁线的潜行者们的安全. 到达该地点并消灭该地区周围的所有变异生物. 工作完成后,返回并领取报酬</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_1_about">
+		<text>潜行者, 我需要一个比其他新手更勇敢的人来完成这个任务, 最近不知道为什么, 变种怪物日渐猖獗, 封锁线正在成为一个非常危险的地方, 我需要你在这附近做些扫除, 位置已经标在你的PDA上了, 任务是杀死你看到的所有怪物, 等做完了就回来找我, 会给你报酬的</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_1_finish">
+		<text>谢谢你, 新手们会因为你而更加安全, 这是你的报酬</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Wolf (Loner Honcho) Stalker Search and Rescue Dynamic Task -->
+
+	<string id="esc_2_12_stalker_wolf_task_2_name">
+		<text>春季大扫除</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_2_text">
+		<text>土匪在封锁线作威作福的日子已经太久了: 是时候给他们点颜色看看了, 清除所有封锁线的土匪!</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_2_about">
+		<text>封锁线的土匪问题已经不是一天两天了, 我们的弟兄们就算是在基地附近走动, 都会被土匪伏击, 已经不能再退让了! 去吧潜行者! 把封锁线清理干净, 消灭见到的所有土匪! 如果不是基地需要人手, 我真想和你一起去来着, 你会帮这个忙吧?</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_2_finish">
+		<text>谢谢! 多亏了你这样的潜行者, 封锁线才得以维持这样的安宁, 拿好你的酬劳, 菜鸟村的所有人都欠你一个情!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Wolf (Loner Honcho) Stalker Guide Dynamic Task -->
+
+	<string id="esc_2_12_stalker_wolf_task_3_name">
+		<text>封锁线一日游</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_3_text">
+		<text>带领新人领略特异区的风采</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_3_about">
+		<text>一群菜鸟第一次进入特异区, 我需要一位有能力的潜行者来引导他们并保证他们的安全</text>
+	</string>
+	<string id="esc_2_12_stalker_wolf_task_3_finish">
+		<text>谢谢你保护新手的安全, 潜行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Nimble (Loner Trader) Find Weapon Task -->
+
+	<string id="esc_2_12_stalker_nimble_task_1_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_1_text">
+		<text>"巧手"尼博让你找到一种特定的武器,全新的. 当你找到他要找的东西时就回到他身边</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_1_about">
+		<text>我有个客户在找一支特殊的枪,我需要有人帮我找到它. 如果你感兴趣,我会给你更多的细节</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_1_fetch_about">
+		<text>%s... 就是我所需要的,但它必须完好无损,他不想看到一支生锈的东西在生死关头卡住. 既然你做了所有的工作,我就把大部分利润让给你. 你找到了就回来,伙计</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_1_fetch_finish">
+		<text>这是一件好武器. 我想我的客户会很高兴我把这个交给他. 这是我欠你的</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Nimble (Loner Trader) Retrieve PDA Dynamic Task -->
+
+	<string id="esc_2_12_stalker_nimble_task_2_name">
+		<text>为"巧手"尼博带回PDA</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_2_text">
+		<text>"巧手"尼博有个PDA需要找回来</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_2_about">
+		<text>我需要你帮我拿个PDA, 它藏在离这儿不远的地方</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_task_2_finish">
+		<text>谢谢你! 潜行者</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== MECHANIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Xenotech (Loner Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_text">
+		<text>%s"黑科技"泽诺泰克要求你找初级工具箱,如果你找到了就带回来给他</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_about">
+		<text>我需要你帮个忙, 很多潜行者来这里让我改这改那的, 可我的工具丢了, 改不了啊! 工具就是技师的命, 我现在就像少了半条命一样懂吗? 如果你能帮我弄来像样的工具箱, 你就是我一半的救命恩人了, 你想改啥只管来找我就对了!</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_fetch_about">
+		<text>我需要一套基础工具, 应该暂时够用了吧, 给我弄一个, 我会很感激的</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_1_fetch_finish">
+		<text>终于! 我一直期待着! 你让我的存在完整了! 这个就当是一点谢意!</text>
+	</string>
+
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_text">
+		<text>%s"黑科技"泽诺泰克要求你找高级工具包,如果你找到了应该带回来给他</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_about">
+		<text>我现在生意兴隆; 越来越多的潜行者来找我说他们需要把他们的武器进行微调... 但我真的需要更多的工具. 上次你给我带了一个高质量的工具包,但是我需要一个更高质量的工具包. 如果你愿意的话,我会告诉你我需要什么</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_fetch_about">
+		<text>我需要一个%s. 如果你能给我带一个回来,我会很感激的,我还会付钱给你</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_2_fetch_finish">
+		<text>是的,就是它! 这是一些现金; 这是你应得的</text>
+	</string>
+
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_text">
+		<text>"黑科技"泽诺泰克要求你找专家工具包,如果你找到了,应该把升级的设备带回来</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_about">
+		<text>我的生意现在很红火,越来越多的潜行者在需要微调武器的时候来找我... 但我真的需要更多的工具. 上次你给我带来了一个高质量的工具包,但我需要一个更高质量的工具包. 如果你愿意,我会告诉你我需要什么</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_fetch_about">
+		<text>我需要一个%s. 如果你能给我带回来,我会很感激的,我甚至会付钱给你</text>
+	</string>
+	<string id="esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_fetch_finish">
+		<text>是的,是的! 这是一些现金,你应得的</text>
+	</string>
+	
+	
+<!-- (Military Trader = Southern Outpost) -->
+	<string id="esc_3_16_military_trader_task_1_name">
+		<text>镇压封锁线</text>
+	</string>
+	<string id="esc_3_16_military_trader_task_1_text">
+		<text>朱诺夫让我带来%s</text>
+	</string>
+	<string id="esc_3_16_military_trader_task_1_about">
+		<text>高层已经启动了一个非正式的计划,你想参加吗? 作为证据,我需要特异区内罪犯的臂章</text>
+	</string>
+	<string id="esc_3_16_military_trader_task_1_fetch_about">
+		<text>高层已经启动了一个非正式的计划,你想参加吗?你可以收集%s</text>
+	</string>
+	<string id="esc_3_16_military_trader_task_1_fetch_finish">
+		<text>哈,你可真不赖呀! 干得好,这是你的报酬</text>
+	</string>
+
+	
+<!-- (Military Mechanic = Southern Outpost) -->
+	<string id="army_south_mechan_mlr_task_1_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_1_text">
+		<text>赛里尤加,一个军队技师,让我找到%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_1_about">
+		<text>事实上,我们最近把所有的工具都留在了扬塔的研究中心,这就是为什么我甚至不能在这里修复BTR战车,我需要一些基本的工具. 介意帮忙吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_1_fetch_about">
+		<text>事实上,我们最近把所有的工具都留在了扬塔的研究中心,这就是为什么我甚至不能在这里修复BTR战车. 我需要一些基本的工具. 介意帮忙吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_1_fetch_finish">
+		<text>非常感谢! 我会给你打折的</text>
+	</string>
+
+	<string id="army_south_mechan_mlr_task_2_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_2_text">
+		<text>赛里尤加,一个军队技师,让我找到%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_2_about">
+		<text>遗憾的是,你给我的工具还不够,因为它们只适用于最基本的升级. 我需要更先进的工具 - 它们应该不会太少见. 你能帮我找一下吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_2_fetch_about">
+		<text>遗憾的是,你给我的工具还不够,因为它们只适用于最基本的升级. 我需要更先进的工具 - 它们应该不会太少见. 你能帮我找一下吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_2_fetch_finish">
+		<text>来吧,让我们来看一看... 好,这些不错. 这对BTR来说还不够,但也许现在我可以给这里的应征兵擦亮盔甲. 这对士气有好处 - 没有人愿意整天想着自己会死于一阵强风. 至于你的报酬,给你. 你做得很好</text>
+	</string>
+
+	<string id="army_south_mechan_mlr_task_3_name">
+		<text>寻找%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_3_text">
+		<text>赛里尤加,一个军队技师,让我找到%s</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_3_about">
+		<text>我厌倦了到处找BTR战车零件... 是时候给我们的人配备一些合适的装备了. 我可以使用另一种工具 - 校准工具. 你能给我找上一份儿吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_3_fetch_about">
+		<text>我厌倦了到处找BTR战车零件... 是时候让我们的人装备一些合适的装备了. 我可以用另一种工具-校准工具. 你能给我找上一份儿吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_3_fetch_finish">
+		<text>牛逼! 没想到我会再看到如此先进的技术... 尤其是在这里. 你不会阻止我给你一个很好的折扣,对吧?</text>
+	</string>
+
+	
+<!-- Fanatic -->
+	<string id="task_fanat_training_1_1">
+		<text>训练日: 猎杀野猪</text>
+	</string>
+	<string id="task_fanat_training_1_3">
+		<text>训练日: 与"狂人"法纳特交谈</text>
+	</string>
+	<string id="task_fanat_training_1_4">
+		<text>训练日: 到达异常点</text>
+	</string>
+	<string id="task_fanat_training_1_5">
+		<text>训练日: 与法纳特交谈</text>
+	</string>
+	<string id="task_fanat_training_1_9">
+		<text>训练日: 获取刺胞体</text>
+	</string>
+	<string id="task_fanat_training_1_6">
+		<text>训练日: 回到村庄</text>
+	</string>
+	<string id="task_fanat_training_1_7">
+		<text>训练日: 与法纳特对话</text>
+	</string>
+	<string id="task_fanat_training_1_8">
+		<text>训练日: 与法纳特对话</text>
+	</string>
+	<string id="task_fanat_training_1_10">
+		<text>训练日: 将刺胞体放入铅盒内</text>
+	</string>
+	<string id="task_fanat_training_1_descr">
+		<text>"狂人"法纳特似乎是村里最有经验的潜行者之一, 他决定教我一两招</text>
+	</string>
+	
+	<string id="task_fanat_training_2_1">
+		<text>训练日-挑战: 找到藏物点</text>
+	</string>
+	<string id="task_fanat_training_2_2">
+		<text>训练日-挑战: 与"狂人"法纳特对话</text>
+	</string>
+	<string id="task_fanat_training_2_descr">
+		<text>我的下一个挑战是找藏物点, 菜鸟村的某处就有, 法纳特称它为"鸟巢" - 也许这是一个线索?</text>
+	</string>
+	
+	<string id="task_fanat_training_3_1">
+		<text>训练日-成人礼: 清扫停车站</text>
+	</string>
+	<string id="task_fanat_training_3_2">
+		<text>训练日-成人礼: 与法纳特交谈</text>
+	</string>
+	<string id="task_fanat_training_3_3">
+		<text>训练日-成人礼: 返回村庄</text>
+	</string>
+	<string id="task_fanat_training_3_4">
+		<text>训练日-成人礼: 与法纳特交谈</text>
+	</string>
+	<string id="task_fanat_training_3_descr">
+		<text>这是"狂人"法纳特给我的最后也是最重要的任务, 我们一起去停车场除掉土匪</text>
+	</string>
+
+
+	<string id="esc_2_12_stalker_fanat_task_1_name">
+		<text>摧毁变异怪物的巢穴</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_1_text">
+		<text>"狂人"法纳特要求我清扫一个怪物巢穴, 以保护村里的菜鸟和其他通过封锁线的潜行者</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_1_about">
+		<text>我们有个大麻烦, 怪物已经找到了一个新的安身之所, 封锁线的每一天越来越危险, 这些家伙们生孩子的速度太快了, 你得去干掉那里所有的变异生物, 如果成功的话, 我们大家会请你喝一杯, 你觉得呢?</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_1_finish">
+		<text>干得好! 多亏了你, 特异区对新手来说会更安全, 这是你的报酬, 拿去喝一杯吧!</text>
+	</string>
+
+	<string id="esc_2_12_stalker_fanat_task_2_name">
+		<text>找到一个热电体</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_2_text">
+		<text>"狂人"法纳特让我为一个新手找一个热电体</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_2_fetch_about">
+		<text>一个新手最近去了农业研究所, 他右手拿着手枪, 左手拿着探测器, 正准备进行一次愉快的冒险, 紧接着他还真在异常区里发现了一件神器, 但在回村子的路上, 一队军人拦住了他, 把他的东西全部顺走了, 或者用现在流行的说法 -- 他送了次快递? 反正他现在就蹲在那边的角落里, 感觉怪可怜的, 也难怪, 第一件神器就被抢了, 是你的话也会难过吧? 噢, 那个神器叫做"热电体", 我当然可以帮他去找, 但这边的菜鸟们总得有人保护吧? 所以... 你能去帮他搞一个来吗? 我会帮他付钱的</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_task_2_fetch_finish">
+		<text>啊, 你找到了? 哈哈, 那个潜行者会很开心的, 看着他在那边整天哭哭啼啼也挺心烦... 不管怎样, 谢谢!</text>
+	</string>
+
+	
+<!-- Hip -->
+	<string id="toz34_sk2_return">
+		<text>为希普找一把TOZ-194和20发鹿弹</text>
+	</string>
+	<string id="toz34_sk2_find">
+		<text>希普的客户需要一把TOZ-194和20发鹿弹</text>
+	</string>
+	<string id="toz34_return_descr">
+		<text>希普说一位富有的客户愿意花钱买一把TOZ-194和20发12x76鹿弹, 问题是, 现在整个特异区都实行了武器管制, 所以我只能去抢一把来了, 听说土匪们几乎人手一把...</text>
+	</string>
+	
+	<string id="artefacts_to_sidor_return">
+		<text>把神器带给西多洛维奇</text>
+	</string>
+	<string id="artefacts_to_sidor_find">
+		<text>为西多洛维奇找到神器</text>
+	</string>
+	<string id="artefacts_to_sidor_return_descr">
+		<text>希普和我一起为西多洛维奇寻找神器, 需要一个"浮空石", 一个"虾眼石"和一个"月光石"</text>
+	</string>
+
+	<string id="go_to_barmen_1">
+		<text>拜访酒保</text>
+	</string>
+	<string id="go_to_barmen_2">
+		<text>拜访酒保</text>
+	</string>
+	<string id="go_to_barmen_descr">
+		<text>希普想去见见酒保来打探下特异区的事情, 他的工作听起来很紧急, 我们应该赶快</text>
+	</string>
+	
+	<string id="go_to_lukash_1">
+		<text>会见卢卡什</text>
+	</string>
+	<string id="go_to_lukash_2">
+		<text>和卢卡什见面谈谈</text>
+	</string>
+	<string id="go_to_lukash_descr">
+		<text>希普希望卢卡什向北方的潜行者聚集地运送药品, 听起来很紧急, 所以我们不应该浪费时间</text>
+	</string>
+	
+	<string id="go_to_boroda_1">
+		<text>带上神器容器去找大胡子</text>
+	</string>
+	<string id="go_to_boroda_2">
+		<text>带上神器容器去找大胡子</text>
+	</string>
+	<string id="go_to_boroda_descr">
+		<text>酒保要我们把神器容器送到扎顿的斯卡多夫斯克号上的大胡子那里</text>
+	</string>
+	
+	<string id="go_to_loki_1">
+		<text>带着药物包裹去见洛基</text>
+	</string>
+	<string id="go_to_loki_2">
+		<text>带着药物包裹去见洛基</text>
+	</string>
+	<string id="go_to_loki_descr">
+		<text>卢卡什要我们把药送到尤皮特亚诺夫车站的洛基那里</text>
+	</string>
+	
+	<string id="army_south_mechan_mlr_task_4_about">
+		<text>有个傻屌经常跑来用枪打外面挂着的扬声器, 我不知道这个傻屌从哪跑来的, 是菜鸟村里的潜行者还是什么人, 但不管怎样, 我需要一些零件来修理它, 你能帮我找一些吗?</text>
+	</string>
+	<string id="army_south_mechan_mlr_task_4_name">
+		<text>找到塞里尤加的维修零件</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+	<string id="ui_mcm_menu_bountysquads">
+		<text>賞金小隊擴充套件</text>
+	</string>
+	<string id="ui_mcm_title_bountysquads">
+		<text>賞金小隊擴充套件</text>
+	</string>
+
+	<string id="ui_mcm_bountysquads_delay">
+		<text>賞金小隊產生間隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_desc">
+		<text>這個時間是賞金小隊產生的最小間隔, 使用遊戲中的時間, 單位為小時, 只有在遊戲中經過這麼久后才會有可能去判定是否產生賞金小隊, 至於最終是否判定產生, 則要看每個陣營賞金小隊的產生機率</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_spawn">
+		<text>賞金小隊產生條件的更新間隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_spawn_desc">
+		<text>這個時間是賞金小隊產生條件更新的最小間隔, 使用現實的時間, 單位為秒, 會持續更新玩家的陣營, 好感和產生判定, 在遊戲載入後重置時間, 因此玩家在這段時間內必須始終處於已鏈接的敵對位置地圖中, 才會有機會產生賞金小隊</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_state">
+		<text>玩家位置更新間隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_state_desc">
+		<text>顧名思義, 使用現實時間, 單位為秒, 賞金小隊判定目標地點實現移動和追蹤的時間間隔, 如果判定目標在"安全區域"且附近有盟友存在的話則會暫停追蹤</text>
+	</string>
+	<string id="ui_mcm_bountysquads_base_spawn_chance">
+		<text>賞金小隊產生的基礎機率</text>
+	</string>
+	<string id="ui_mcm_bountysquads_base_spawn_chance_desc">
+		<text>當玩家沒有殺死某陣營的任何成員時, 該陣營的賞金小隊在指定更新間隔中產生的機率, 賞金小隊的總產生機率計算為: (基礎機率 * 陣營加乘), 其中陣營加乘取決於有多少陣營成員被玩家殺死, 建議將此值保持在較低水平, 因為陣營加乘肯定會越來越高, 最終確保賞金小隊的產生</text>
+	</string>
+	<string id="ui_mcm_bountysquads_spawn_mult_attacked_increment">
+		<text>陣亡成員的陣營加乘增量</text>
+	</string>
+	<string id="ui_mcm_bountysquads_spawn_mult_attacked_increment_desc">
+		<text>如果玩家對某個特定陣營尤其"照顧", 那該陣營會有更大的機率派遣賞金小隊追捕玩家, 玩家每殺死一個潛行者, 死者的陣營就會增加一個乘數用於判定賞金小隊產生, 例如此值設定為 0.5的話, 則玩家第一次殺死某陣營成員時, 乘數會增加到1.5, 下一個死者會將其增加到2.0, 依此類推; 之後這個值會接著乘以"基礎機率"來判定該陣營是否最終決定派出賞金小隊</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- 
+		MCM
+	-->
+	<string id="ui_mcm_item_icon_info_title">
+		<text>物品UI增強</text>
+	</string>
+	<string id="ui_mcm_menu_item_icon_info">
+		<text>物品UI增強</text>
+	</string>
+
+	<string id="ui_mcm_menu_cond_text">
+		<text>耐久百分比數值</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_title">
+		<text>耐久百分比數值</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_enable_equipped">
+		<text>在已裝備物品上顯示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_hide_bar">
+		<text>隱藏耐久槽</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_hide_bg">
+		<text>耐久數字無背景</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_alt_artefact_pos">
+		<text>神器耐久顯示位置</text>
+	</string>
+	<string id="ui_mcm_lst_alt_art_pos_lower_left">
+		<text>左下</text>
+	</string>
+	<string id="ui_mcm_lst_alt_art_pos_lower_right">
+		<text>右下</text>
+	</string>
+	<string id="ui_mcm_lst_alt_art_pos_top_left">
+		<text>左上</text>
+	</string>
+	<string id="ui_mcm_lst_alt_art_pos_top_right">
+		<text>右上</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_cond_text_padding">
+		<text>文字填充</text>
+	</string>
+
+	<string id="ui_mcm_menu_part_dots">
+		<text>零件角標</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_title">
+		<text>零件耐久指示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_show_on_equipped">
+		<text>在已裝備物品上顯示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_show_on_wpn">
+		<text>在武器上顯示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_show_on_armor">
+		<text>在護甲和頭盔上顯示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_size_mult">
+		<text>大小</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_separator_width">
+		<text>角標間距</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_position">
+		<text>位置</text>
+	</string>
+	<string id="ui_mcm_lst_part_dot_top">
+		<text>耐久槽頂部</text>
+	</string>
+	<string id="ui_mcm_lst_part_dot_right">
+		<text>耐久槽右側</text>
+	</string>
+	<string id="ui_mcm_lst_part_dot_top_pistol">
+		<text>耐久槽頂部 (只應用在某些短小的槍)</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_wpo_mode">
+		<text>使用顏色閾值</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_wpo_green">
+		<text>綠色耐久閾值</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_wpo_yellow">
+		<text>黃色耐久閾值</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_part_dots_wpo_orange">
+		<text>橙色耐久閾值</text>
+	</string>
+
+	<string id="ui_mcm_menu_ammo_name">
+		<text>彈藥名稱</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_title">
+		<text>彈藥名稱使用短文字</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_bad_color">
+		<text>基於彈藥質量著色文字 (壞彈藥/舊彈藥)</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_show_expl">
+		<text>對 M203/VOG 榴彈啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_expl_bad_color">
+		<text>基於彈藥質量著色文字 (爆炸物)</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_ammo_name_padding">
+		<text>文字填充</text>
+	</string>
+
+	<string id="ui_mcm_menu_recipe_text">
+		<text>已讀/未讀</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_recipe_text_title">
+		<text>手冊, 便條和地圖上顯示已讀/未讀</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_recipe_text_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_recipe_text_show_on_pda">
+		<text>在PDA的藏物點上顯示提示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_recipe_text_padding">
+		<text>文字填充</text>
+	</string>
+	
+	<string id="ui_mcm_menu_mag_info">
+		<text>彈匣資訊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_title">
+		<text>顯示彈匣容量和子彈名稱 (需要MagsRedux彈匣mod)</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_show_ammo_name">
+		<text>彈藥名稱使用短文字</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_show_ammo_count">
+		<text>顯示載彈量</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_hide_bar">
+		<text>隱藏彈匣耐久槽</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_mag_info_padding">
+		<text>文字填充</text>
+	</string>
+
+	<string id="ui_mcm_menu_money_text">
+		<text>金錢</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_money_text_title">
+		<text>金錢文字</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_money_text_enable">
+		<text>啟用</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_money_text_hide_bg">
+		<text>無背景</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_money_text_padding">
+		<text>文字填充</text>
+	</string>
+
+	<string id="ui_mcm_menu_armor_info">
+		<text>護甲資訊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_armor_info_title">
+		<text>護甲臂章和修理資訊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_armor_info_show_patch">
+		<text>顯示護甲的陣營臂章圖示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_armor_info_show_armor_type">
+		<text>顯示護甲修理型別</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_armor_info_show_helmet_type">
+		<text>顯示頭盔型別</text>
+	</string>
+
+	<string id="ui_mcm_menu_wpn_info">
+		<text>武器資訊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_title">
+		<text>武器名稱和修理資訊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_show_gun_repair_type">
+		<text>顯示武器修理型別圖示</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_show_wpn_name">
+		<text>顯示武器名稱</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_main_slots_only">
+		<text>只顯示已裝備的主/副武器名稱</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_show_grenade_name">
+		<text>顯示手雷名稱</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_info_show_melee">
+		<text>顯示近戰武器名稱</text>
+	</string>
+		<string id="ui_mcm_menu_wpn_scaling">
+		<text>武器縮放</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_not_installed">
+		<text>武器縮放功能未安裝</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_title">
+		<text>武器縮放和對齊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_enable_equip_hor_scale">
+		<text>將已裝備的武器縮放並水平對齊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_enable_equip_vert_scale">
+		<text>將已裝備的武器縮放並垂直對齊</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_equip_vert_padding">
+		<text>調整已縮放武器的垂直間距</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_equip_hor_padding">
+		<text>調整已縮放武器的水平間距</text>
+	</string>
+	<string id="ui_mcm_item_icon_info_wpn_scaling_enable_inv_scaling">
+		<text>在物品欄中縮放並對齊已安裝的消音器圖示</text>
+	</string>
+
+	<!-- 
+		Mods
+	-->
+	<string id="ui_utjan_recipe_read">
+		<text>已讀</text>
+	</string>
+	<string id="ui_utjan_recipe_unread">
+		<text>未讀</text>
+	</string>
+	<string id="ui_utjan_ruble">
+		<text>盧布</text>
+	</string>
+</string_table>
+                        

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<string_table>
+  <string id="ammo_flare_grenade_vog">
+    <text>VOG-25 闪光手榴弹</text>
+  </string>
+  <string id="ammo_flare_grenade_vog_descr">
+    <text>一种改进后的照明弹,可与 GP-25 Kostyor 下挂式榴弹发射器配合使用. 最初,照明弹用于在紧急情况下发出信号. 但特异区的潜行者发现夜间照明很有用. 包括降落伞,以使照明弹在空中飞行的时间更长. 薄壁允许电荷更快地燃烧,从而产生更亮的光.\n
+\n
+%c[d_purple] • %c[ui_gray_2] 亮度：%c[ui_gray_1]高\n
+%c[d_purple] • %c[ui_gray_2] 照明持续时间：%c[ui_gray_1]40 s\n
+%c[d_purple] • %c[ui_gray_2] 降落伞：%c[ui_gray_1]yes</text>
+  </string>
+  <string id="ammo_flare_grenade_209">
+    <text>M203照明弹</text>
+  </string>
+  <string id="ammo_flare_grenade_209_descr">
+    <text>一种改进后的照明弹,可与 M203 下挂式榴弹发射器配合使用. 最初,照明弹用于在紧急情况下发出信号. 但特异区的潜行者发现夜间照明很有用. 包括降落伞,以使照明弹在空中飞行的时间更长. 较长的长度允许充电燃烧更长时间,从而增加照明时间.\n
+\n
+%c[d_purple] • %c[ui_gray_2] 亮度：%c[ui_gray_1]正常\n
+%c[d_purple] • %c[ui_gray_2] 照明持续时间：%c[ui_gray_1]60 s\n
+%c[d_purple] • %c[ui_gray_2] 降落伞：%c[ui_gray_1]yes</text>
+  </string>
+</string_table>

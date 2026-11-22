@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_beretta_m9">
+		<text>伯萊塔 M9手槍</text>
+	</string>
+	<string id="st_wpn_beretta_m9_descr">
+		<text>裝載 9x19mm 帕拉貝魯姆彈藥。 這是在意大利伯萊塔92FS的基礎上應美國海軍陸戰隊的要求製造出的版本。 它以被傭兵、自由軍和最近出現的一些奇怪的派系使用而聞名，可以肯定地說，這個"半原型"是通過西方軍隊的逃兵和前 PMC成員帶入特異區的。\n \n</text>
+	</string>
+
+	<string id="st_wpn_beretta_px4">
+		<text>伯萊塔 Px4 "風暴"</text>
+	</string>
+	<string id="st_wpn_beretta_px4_descr">
+		<text>裝載 9x19mm 帕拉貝魯姆彈藥。 Px4"風暴" 是伯萊塔 8000 的改進版，旨在作為個人防禦和執法用途的 92FS 的替代品。 它的旋轉槍管可以更好地控制後坐力和連續射擊，輕型框架也有助於減輕重量。 這種特殊型號似乎也配備了氚瞄準具。 從外表上看，這些武器是來自亞美尼亞和羅馬尼亞的傭兵從這些地區"非法"出口的，也許這些傭兵曾經是上述國家警察部隊的一部分。\n \n</text>
+	</string>
+	
+	<string id="st_up_px4_a1_name">
+		<text>彈藥口徑更改為 .45 ACP</text>
+	</string>
+	<string id="st_up_px4_a1_descr">
+		<text>對武器的機械和自動化部件進行復雜的綜合改造，允許以犧牲可靠性為代價改變其口徑。\n</text>
+	</string>
+
+</string_table>

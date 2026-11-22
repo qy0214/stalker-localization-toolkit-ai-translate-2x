@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_items">
+		<text>物品</text>
+	</string>
+	
+	<string id="encyclopedia_items_pda">
+		<text>PDA</text>
+	</string>
+	<string id="encyclopedia_items_pda_text">
+		<text>
+		一个%c[pda_white]个人电子终端%c[ui_gray_1], 或者叫 %c[pda_white]"PDA"%c[ui_gray_1], 是一种袖珍电子设备, 包含了一台普通电脑所具备的各种基础功能和部分重要功能.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\nPDA对于日常信息交流至关重要. 因此特异区内几乎所有的潜行者都有一个.
+		\nGPS模块可以向用户提供地理位置和时间信息.
+		\n除了一些基础功能外外, PDA还具有许多其他功能. 例如访问特异区互联网. 潜行者平时可以在网上轻松交流.
+		\n它还带有FM广播接收器, 可收听特异区广播频道.
+		\n改进版PDA带有一个新模块, 该模块可以扫描并显示半径300米内其他连接到网络的模块(在游戏中体现为地图上显示npc点), 这就让这种模块很受潜行者们的重视.
+		\n \n• PDA消耗 %c[pda_white]0.1毫安时%c[ui_gray_1] 改进版PDA消耗的电量更高.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_upd">
+		<text>UPD</text>
+	</string>
+	<string id="encyclopedia_items_itm_upd_text">
+		<text>
+		 %c[pda_white]通用充电设备%c[ui_gray_1]是一个大小和小型步话机差不多的的便携式充电装置. 几乎可以兼容任何类型的电池. 通过一组微型电线传输插入电池的能量, 以此为电子设备充电. 它可以连接到任何设备上, 无论设备有多复杂, 多陈旧.它可以让潜行者为自己的各种设备充电, 即便他们只有一种电池.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\nUPD的总电池容量为3Ah(安培小时).
+		\n所有电子设备都会消耗UPD的电能, 不同设备的消耗量也有所不同.
+		\n当UPD电量耗尽时, 所有的电子设备都将无法工作. 
+		\n所有你要时刻关注UPD的电量, 确保自己还有备用电池, 以防万一.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_basickit">
+		<text>基础工具</text>
+	</string>
+	<string id="encyclopedia_items_itm_basickit_text">
+		<text>
+		 %c[pda_white]基础工具%c[ui_gray_1] 可以用来制造基本的装备, 设备和护甲升级零件.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n可能不太适合用来进行高端工作, 但在一个节俭的技师手中仍然很有用.
+		\n该套装包含不同类型和大小的钳子、螺钉、粘合剂和各种紧固件.
+		\n \n%c[pda_white]求生指南%c[ui_gray_1] 里通常会提供关于基本生存装备的信息. 学到足够的知识后一个节俭的潜行者可以充分利用这个工具包制造出自己的东西.
+		\n你可以随身携带一些基本材料.毕竟你不能凭空变出所需材料.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_advancedkit">
+		<text>进阶工具</text>
+	</string>
+	<string id="encyclopedia_items_itm_advancedkit_text">
+		<text>
+		 %c[pda_white]进阶工具%c[ui_gray_1]可以用来制造更好的装备, 设备和护甲升级零件.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n一套不错的旧式工具, 尽管年代久远, 但状态似乎还很良好.
+		\n包含一把小钳子, 尖镊子, 探针和夹子.
+		\n \n%c[pda_white]技术手册%c[ui_gray_1] 会提供机械工程方面的信息. 学到足够的知识后一个节俭的潜行者可以充分利用这个工具包制造出自己的东西.
+		\n你可以随身携带一些基本材料.毕竟你不能凭空变出所需材料.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_expertkit">
+		<text>专业工具</text>
+	</string>
+	<string id="encyclopedia_items_itm_expertkit_text">
+		<text>
+		 %c[pda_white]专业工具%c[ui_gray_1]可以用来制造先进的装备, 设备和护甲升级零件.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n一套专业的高品质微调工具包.
+		\n包含一组钻头, 精密镊子, 铁钎, 4毫米螺丝刀和万用表.
+		\n \n%c[pda_white]工程手册%c[ui_gray_1] 会提供工业工程方面的信息. 学到足够的知识后一个节俭的潜行者可以充分利用这个工具包制造出自己东西.
+		\n你可以随身携带一些基本材料. 毕竟你不能凭空变出所需材料.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_drugkit">
+		<text>制药箱</text>
+	</string>
+	<string id="encyclopedia_items_itm_drugkit_text">
+		<text>
+		 %c[pda_white]制药箱%c[ui_gray_1] 可以用来制造各种各样的药物.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n这个小箱子里装有各种制药箱. 例如一些塑料包装袋、药片和安瓿瓶.
+		\n \n没几个人有制药知识, 所以能充分利用这套工具的人不多, 多留意下那些掌握着制药技艺的人 %c[pda_white]秘诀%c[ui_gray_1].
+		\n你可以随身携带一些基本材料. 毕竟你不能凭空变出所需材料.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_itm_ammokit">
+		<text>填弹箱</text>
+	</string>
+	<string id="encyclopedia_items_itm_ammokit_text">
+		<text>
+		%c[pda_white]填弹箱%c[ui_gray_1] 可以用来回收损坏的弹药或制造更好的新弹药.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n一套相当不错的老式工具.
+		\n包含一套冲子、惠勒锤, 冲压工具和一个用来称火药的秤.
+		\n \n%c[pda_white]弹药安全指南%c[ui_gray_1] 会提供关于提供有关各种弹药的信息以及一些子弹部件的图片. 学到足够的知识后一个节俭的潜行者可以充分利用这个工具包制造出自己的东西.
+		\n你可以随身带点损坏的弹药. 毕竟你不能凭空变出它们.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_kit_hunt">
+		<text>狩猎背包</text>
+	</string>
+	<string id="encyclopedia_items_kit_hunt_text">
+		<text>
+		拥有 %c[pda_white]狩猎背包%c[ui_gray_1] 可以增加收割变异的身体部位时获得的肢体数量.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n一整包钩子、刀和其他用来剥皮、切割怪物尸体的工具.
+		\n很少有潜行者会携带专业的怪物收割装备. 这可能就是为什么有这么多潜行者吃了怪物肉后消化不良的原因.
+		\n这是一套多功能工具, 它还可以用来维护武器和护甲.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_fieldcooker">
+		<text>多功能燃料炉</text>
+	</string>
+	<string id="encyclopedia_items_fieldcooker_text">
+		<text>
+		 %c[pda_white]多功能燃料炉%c[ui_gray_1] 可以让使用者烹饪怪物肉.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		多年来人们对这种炉子进行了大量测试, 并在无数次探险中使用过. 它非常强大可靠, 可以应付极端环境, 例如高海拔, 低温或高温环境.
+		\n它的产量非常大, 几乎可以使用任何燃料, 包括丁烷、汽油/汽油、柴油、煤油/石蜡, 甚至航空燃料. 用控制旋钮可以轻松调节火焰到你想要的温度, 即便你戴着手套.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n多功能燃料炉的燃料通用性这一点使得从长远来看它比传统的煤炉或木炭炉更经济. 
+		\n另一方面, 多功能燃料炉使用的燃料通常都装在重金属容器中, 所以它可能更适用于固定场地而不是在户外使用.
+		\n不需要高温熟制的变异生物肉被称为"低等变种肉", 而需要高温熟制的变异生物肉被称为"高等变种肉".
+		\n• 可重复使用.
+		\n• 多功能燃料炉可以烹饪各种肉.
+		\n• 需要: %c[pda_white]汽油, 天然气, 煤油%c[ui_gray_1]
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_cooking">
+		<text>野外烹饪用具</text>
+	</string>
+	<string id="encyclopedia_items_cooking_text">
+		<text>
+		 %c[pda_white]野外烹饪用具%c[ui_gray_1] 可以让使用者烹饪怪物肉.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n一个旅行用的野外用具. 包含露营和旅行时所需要的烹饪工具, 使用时产生的噪音很大, 非常笨重. 在潜行者中十分受欢迎.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n虽说木炭看起来比较便宜, 但是做一顿饭会消耗掉不少, 因此事实上木炭并不是什么好选择, 但是它的优点在于轻便, 当你准备在特异区内进行一次远行时, 你会需要他的.
+		\n不需要高温熟制的变异生物肉被称为"低等变种肉", 而需要高温熟制的变异生物肉被称为"高等变种肉".
+		
+		\n \n• 最大使用次数: %c[pda_white]3%c[ui_gray_1]
+		\n• %c[pda_white]木炭%c[ui_gray_1] 是烹饪肉类的必备品.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_army_bowler">
+		<text>军用饭盒</text>
+	</string>
+	<string id="encyclopedia_items_army_bowler_text">
+		<text>
+		The %c[pda_white]军用饭盒%c[ui_gray_1] 可以让使用者烹饪怪物肉.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n这种军用饭盒形状是凹字型的, 配有一个钢弯制的铁丝手柄便于携带和悬挂. 
+		\n在挂在腰带上携带时, 凹进去的一边可以靠身体放置. 在加热或者烹饪时, 盖子可以当作锅来使用. 手柄被设计成可以固定盖子的样式, 所以在携带时一定要盖好盖子, 并将汤匙插进手柄上的专用孔位中.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n虽说木炭看起来比较便宜, 但是做一顿饭会消耗掉不少, 因此事实上木炭并不是什么好选择, 但是它的优点在于轻便, 当你准备在特异区内进行一次远行时, 你会需要他的.
+		\n不需要高温熟制的变异生物肉被称为"低等变种肉", 而需要高温熟制的变异生物肉被称为"高等变种肉".
+		
+		\n \n• 最大使用次数: %c[pda_white]7%c[ui_gray_1]
+		\n• 军用饭盒可以放在 %c[pda_white]篝火%c[ui_gray_1] 或 %c[pda_white]木炭堆上加热%c[ui_gray_1].
+		</text>
+	</string>
+	
+	
+	<string id="encyclopedia_items_detector_geiger">
+		<text>盖革计数器</text>
+	</string>
+	<string id="encyclopedia_items_detector_geiger_text">
+		<text>
+		%c[pda_white]盖革计数器%c[ui_gray_1] 可以用来测量辐射水平.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n盖革计数器测量电离(放射性)辐射. 它可检测α粒子, β粒子和γ粒子的发射. 盖格计数器发明于1908年, 至今仍是常用的技术设备, 用于医学, 物理, 工业, 地质和其他科学领域的测量. 由简单的电子电路制成.
+		
+		\n \n%c[pda_blue]用法%c[ui_gray_1]
+		\n盖革计数器有三种显示数值的模式:
+		\n• 手持模式: 手持时显示值
+		\n• 持续模式: 始终显示值, 只要电池没耗尽
+		\n• 按键模式: 按下绑定键时显示值(具体请参照键位设置)
+		
+		\n \n• 消耗 %c[pda_white]0.1毫安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_detector_simple">
+		<text>回声探测器</text>
+	</string>
+	<string id="encyclopedia_items_detector_simple_text">
+		<text>
+		 %c[pda_white]回声探测器%c[ui_gray_1] 是一种能够定位附近的神器的设备.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n这种老式探测器在进入异常区域时会发出警报信号. 它还可以侦测神器的位置, 并测量附近神器的距离.
+		\n这个距离由探测器发出的声音的频率快慢来表示.
+		\n如果要切换到找神器模式, 只需要打开探测器的前盖.
+		\n回声探测器设计简单, 所以只能找到普通的神器.
+		
+		\n \n• 消耗 %c[pda_white]0.1毫安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_detector_advanced">
+		<text>熊式探测器</text>
+	</string>
+	<string id="encyclopedia_items_detector_advanced_text">
+		<text>
+		 %c[pda_white]熊式探测器%c[ui_gray_1] 是一种能够探测附近神器的设备.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n这种上一代探测器可以用来探测异常点和神器, 它有一个彩色二极管面板, 不仅可以指示神器的方向, 还可以测量探测器与神器之间的距离.
+		\n如果要切换到搜索神器模式, 请打开探测器前盖.
+		\n可惜的是, 熊式探测器内置的可侦测到的神器列表已经过时了.
+		
+		\n \n• 消耗 %c[pda_white]0.15毫安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_detector_elite">
+		<text>冥神探测器</text>
+	</string>
+	<string id="encyclopedia_items_detector_elite_text">
+		<text>
+		%c[pda_white]冥神探测器%c[ui_gray_1] 是一种先进的神器探测器.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n新一代神器探测器.内置的三个先进探头会在LED屏上显示神器位置以便寻找.
+		\n关闭时可以显示周围的辐射或异常点的情况.
+		\n切换到神器搜索模式需要开启LED显示屏. 当处于搜索模式时, 它能够定位所有已知的神器.
+		
+		\n \n• 消耗 %c[pda_white]0.15毫安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_detector_scientific">
+		<text>火神探测器</text>
+	</string>
+	<string id="encyclopedia_items_detector_scientific_text">
+		<text>
+		%c[pda_white]火神探测器%c[ui_gray_1] 是一种能够定位附近神器的先进探测器.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n拥有扩展功能的异常点探测器的原型, 该设备附带有一个程序, 可用于识别其数据库中已知的异常点, 同时保留了搜寻神器的能力. 
+		\异常点和神器的位置会显示在特殊的屏幕上.
+		\n打开前部LED显示屏即可激活神器搜索模式, 这种搜索模式已经做了些改进, 可以检测到目前尚不为人所知的神器.
+		
+		\n \n• 消耗 %c[pda_white]0.2毫安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_gps_tracker">
+		<text>军用GPS设备</text>
+	</string>
+	<string id="encyclopedia_items_gps_tracker_text">
+		<text>
+		 %c[pda_white]军用GPS设备%c[ui_gray_1] 可以让使用者定位附近的中立潜行者.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n下一代GPS设备的原型. 只制造了几台. 大都分配给了高级军官, 还有几台泄露给别的人了.
+		\n改进过的内部设备即使在恶劣环境下也能保证正常运行. 可以在极端恶劣的操作条件下迅速定位或跟踪周围信号.
+		\n与普通GPS设备不同, 它依赖于所连接的数据网络中提供的特殊代码工作, 这些代码可以让它检测半径300米内所有联网设备的位置.
+		\n另一方面, 该设备在运行时会消耗大量的电能. 设备内部有一个电闸, 可以在连续工作20秒后自动断路.
+		
+		\n \n%c[pda_blue]详细参数%c[ui_gray_1]
+		\n• 扫描时间: %c[pda_white]20秒%c[ui_gray_1]
+		\n• 扫描半径: %c[pda_white]300米%c[ui_gray_1]
+		\n• 消耗 %c[pda_white]0.25安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_lead_box">
+		<text>铅盒</text>
+	</string>
+	<string id="encyclopedia_items_lead_box_text">
+		<text>
+		%c[pda_white]铅盒 (LLMC)%c[ui_gray_1] 是用来储存并完全隔离神器所有作用的设备.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\nLLMC 是一个简单的金属盒, 厚壁、内部有泡沫塑料制的分隔, 还有一个厚实的可以压紧封口的盖子
+		\n它被特别设计用于运输放射性材料.在特异区里LLMC最常见的用途就是储运神器.
+		\n它可以阻挡任何辐射的外泄, 保护神器持有者免受侵害.
+		\n然而这个容器并不能挂在腰带上, 也就是说神器的增益和减益效果都不会生效.\n \n
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n• 神器必须从LLMC里拿出来才能出售.
+		\n• 把神器图标拖放到LLMC上就能装进去.
+		\n• 重量: %c[pda_white]2.12千克%c[ui_gray_1]
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_af_iam">
+		<text>简易神器箱</text>
+	</string>
+	<string id="encyclopedia_items_af_iam_text">
+		<text>
+		 %c[pda_white]简易神器箱 (IAM)%c[ui_gray_1] 可以过滤里面储存的神器发出的辐射, 使用者可以安全地把它们挂在腰带上享受神器的效果.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n简易神器箱(IAM)过滤了从神器中释放出的少量辐射粒子.
+		\n这种机械金属容器是最便宜的神器设备, 可以让使用者利用辐射等级较弱的神器.内部神器滤清器由多层材料构成, 主要是铅材料, 用以屏蔽辐射.
+		\n低配版AAC/AAM模块. 在紧急情况下或者不再需要了, IAM也可以作为一块高质量金属, 可用于护甲或头盔维修.
+		\n \n要把它系在腰带上, 你必须在里面放一个神器.除了减少辐射输出外, 神器的正面效果会得到保留.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n• 售卖时必须将神器从IAM中取出.
+		\n• 把神器图标拖放到IAM上就能装进去.
+		\n• 重量: %c[pda_white]2.4千克%c[ui_gray_1]
+		\n• 最大辐射承载力: %c[pda_white]7 mSv%c[ui_gray_1]
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_af_aac">
+		<text>一般神器箱</text>
+	</string>
+	<string id="encyclopedia_items_af_aac_text">
+		<text>
+		 %c[pda_white]一般神器箱 (AAC)%c[ui_gray_1] 可以过滤里面储存的神器发出的中等强度的辐射, 使用者可以安全地把它们挂在腰带上享受神器的效果.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\nAAC可以过滤神器发出的适量辐射粒子.
+		\n这种铝制容器价格适中, 是处理神器的设备中最受欢迎的一种, 它可以让使用者承载神器发出的中等强度的辐射.
+		\n表面活性剂过滤器主要由多层铅组成, 其中一层钍具有较强的辐射屏蔽性能. 
+		\n这种装置是居住在特异区中军方碉堡内的生态学家制造的.在紧急情况下或者不再需要了, AAC也可以作为一块高质量金属, 可用于护甲或头盔维修. 
+		\n \n要把它系在腰带上, 你必须在里面放一个神器.除了减少辐射输出外, 神器的正面效果会得到保留.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n• 售卖时必须将神器从AAC中取出.
+		\n• 把神器图标拖放到AAC上就能装进去.
+		\n• 重量: %c[pda_white]2.73千克%c[ui_gray_1]
+		\n• 最大辐射承载力: %c[pda_white]12 mSv%c[ui_gray_1]
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_af_aam">
+		<text>高级神器箱</text>
+	</string>
+	<string id="encyclopedia_items_af_aam_text">
+		<text>
+		 %c[pda_white]高级神器箱 (AAM)%c[ui_gray_1] 可以过滤里面储存的神器发出的高强度辐射, 使用者可以安全地把它们挂在腰带上享受神器的效果.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n高级神器箱(AAM)可以过滤内部储存的神器散发出的大量辐射粒子.
+		\n这种先进模块是抵消有着强辐射的神器的影响的最佳办法.
+		\n过滤器是由多层纳米碳制成的. 所以它不仅轻, 而且过滤辐射的能力也是同类中最强的.
+		\n被看作是特异区内土豪的象征. 生态学家通常用它来抵消神器的辐射影响.
+		\n由一个乌克兰政府的研究所设计制造, 该研究所为常驻在特异区的生态学家提供设备.
+		\n在紧急情况下或者不再需要了, AAM也可以作为一块高质量金属, 可用于护甲或头盔维修. 
+		\n \n要把它系在腰带上, 你必须在里面放一个神器. 除了减少辐射输出外, 神器的正面效果会得到保留.
+		
+		\n \n%c[pda_blue]细节%c[ui_gray_1]
+		\n• 售卖时必须将神器从AAM中取出.
+		\n• 把神器图标拖放到AAM上就能装进去.
+		\n• 重量: %c[pda_white]3.06千克%c[ui_gray_1]
+		\n• 最大辐射承载力: %c[pda_white]23 mSv%c[ui_gray_1]
+		</text>
+	</string>
+	
+	<string id="encyclopedia_items_detector_radio">
+		<text>射频接收器</text>
+	</string>
+	<string id="encyclopedia_items_detector_radio_text">
+		<text>
+		%c[pda_white]RF(射频)接收器%c[ui_gray_1] 是一种小型设备, 带有用于基本通信的高度敏感的RF模块.
+		
+		\n \n%c[pda_green]情报%c[ui_gray_1]
+		\n射频接收器已用实际证明了它相比现代电子产品更加的经久不衰, 许多潜行者喜欢备一个用作紧急用途.
+		\n它由简单的电子元件和一个敏感模块组成, 能够与半径为200米内的无线电信号进行交互. 能够处理频率在30到300 千兆赫兹之间的无线电波.
+		
+		\n \n%c[pda_blue]用法%c[ui_gray_1]
+		\n拿着接收器时你可以切换接收频率.
+		\n• 按鼠标左键增大频率.
+		\n• 按鼠标右键减小频率.
+		\n• 按住左shift键并按鼠标左/右键可以一次增大/减小10hz的频率.
+		\n• 按住左Alt键并按鼠标左/右键可以一次增大/减小50hz的频率.
+
+		\n \n• 消耗 %c[pda_white]0.1微安时%c[ui_gray_1] 的电量.
+		</text>
+	</string>
+	
+</string_table>

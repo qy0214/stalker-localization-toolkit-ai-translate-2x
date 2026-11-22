@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Upgrading Parts
+-->
+<string_table>
+
+<!-- Outfits -->
+	<string id="st_upgr_o_health">
+		<text>生命維持系統原型</text>
+	</string>
+	<string id="st_upgr_o_health_desc">
+		<text>這個套件中包含一個整合系統, 可以監控穿戴者的健康狀況,並根據需要提供維生素, 腎上腺素或合成代謝物質.\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_bleed">
+		<text>療傷系統原型</text>
+	</string>
+	<string id="st_upgr_o_bleed_desc">
+		<text>這個套件中包含了用於及時進行連續給藥的醫療裝置.\n \n
+		</text>
+	</string>
+	
+	<string id="st_upgr_o_armor">
+		<text>防彈套件</text>
+	</string>
+	<string id="st_upgr_o_armor_desc">
+		<text>這個套件中包含各種型別的凱夫拉爾纖維, 鈦, 鈹, 鋁和碳纖維板, 以高貼合度和子彈防護作用為特點.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_damage">
+		<text>護甲補償層</text>
+	</string>
+	<string id="st_upgr_o_damage_desc">
+		<text>該套件包含不同材料的特製護甲板, 可略微提高防彈能力.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_durability">
+		<text>耐久板材及面料</text>
+	</string>
+	<string id="st_upgr_o_durability_desc">
+		<text>該套件包含用於重型裝置的鈦和鋁合金耐用護甲板, 以及用於較輕裝備的聚合物嵌件.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_power">
+		<text>塑料和合成零件</text>
+	</string>
+	<string id="st_upgr_o_power_desc">
+		<text>該套件包含各種護甲服的合成材料和塑料部件, 用來減輕護甲的重量並增加機動性和耐力.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_chem">
+		<text>化學阻燃劑和嵌件</text>
+	</string>
+	<string id="st_upgr_o_chem_desc">
+		<text>該套件中包含一組有害的面料和材料, 可提高護甲防護效能, 防止化學影響,它們可以中斷燃燒氣相中的化學反應, 某些材料則會在保護層后膨脹的化學物質, 從而提供更多的隔離性\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_burn">
+		<text>阻燃面料和嵌件</text>
+	</string>
+	<string id="st_upgr_o_burn_desc">
+		<text>該套件中包含一組性質不穩定的防護面料和材料, 可減慢或阻止火蔓延或降低火的強度. 有些是耐火材料, 含有不同長度, 寬度, 厚度和形狀的鎂.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_shock">
+		<text>絕緣紡織品和嵌件</text>
+	</string>
+	<string id="st_upgr_o_shock_desc">
+		<text>該套件包含一組保護性的康銅, 鎂和硅膠嵌件, 用來減少電流對護甲的影響.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_psi">
+		<text>面料保護塗層</text>
+	</string>
+	<string id="st_upgr_o_psi_desc">
+		<text>該套件包含一組用於頭盔和護甲服的遮蔽襯套和滲鋁層, 並帶有防靈能波橡膠以減少靈能場的影響.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_rad">
+		<text>活性過濾器和輻射遮蔽材料</text>
+	</string>
+	<string id="st_upgr_o_rad_desc">
+		<text>一套保護性過濾器, 防止各種毒性物質或化學物質通過呼吸系統進入人體, 其次是高密度材料, 降低阿爾法射線和伽馬射線的侵害.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_carry">
+		<text>負載分配緊固系統</text>
+	</string>
+	<string id="st_upgr_o_carry_desc">
+		<text>該套件包含一組用於分配負載的各種緊韌體.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_arty">
+		<text>附件插槽</text>
+	</string>
+	<string id="st_upgr_o_arty_desc">
+		<text>該套件包含附件插槽, 增加同時使用的裝備和神器的數量.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_run">
+		<text>伺服驅動液壓助推傳動裝置</text>
+	</string>
+	<string id="st_upgr_o_run_desc">
+		<text>該套件包含用於第一代和第二代外骨骼的增強型原型伺服驅動器,允許裝備者進行疾跑.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_o_weight">
+		<text>輕質材料</text>
+	</string>
+	<string id="st_upgr_o_weight_desc">
+		<text>該套件包含一套不同長度, 寬度, 厚度和形狀以及不同特性的輕質聚合物材料.\n \n</text>
+	</string>
+
+<!-- Weapons -->
+	<string id="st_upgr_w_weight">
+		<text>移動配重元件</text>
+	</string>
+	<string id="st_upgr_w_weight_desc">
+		<text>該套件包含一套用於各種武器的輕質聚合物部件, 聚合物元件是相當受歡迎的升級方式, 擁有不錯的成效.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_muffle">
+		<text>槍管消音器螺紋套件</text>
+	</string>
+	<string id="st_upgr_w_muffle_desc">
+		<text>該套件包含一組用於各種型別武器的外螺紋元件, 使得武器可以適配消音器.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_grenade_mount">
+		<text>下掛榴彈發射器支架</text>
+	</string>
+	<string id="st_upgr_w_grenade_mount_desc">
+		<text>該套件包含一套用於各種武器裝備下掛榴彈發射器的支架.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_reliability">
+		<text>自動節氣閥</text>
+	</string>
+	<string id="st_upgr_w_reliability_desc">
+		<text>該套件包含一套用於各種型別武器的特殊調節構造, 保護武器免受塵土侵害.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_speed">
+		<text>附加膛線槍管</text>
+	</string>
+	<string id="st_upgr_w_speed_desc">
+		<text>包含一組用於各種型別武器的附加膛線管. 安裝帶有附加膛線的槍管可提高子彈初度和武器精度, 但會增加後坐力.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_recoil">
+		<text>附加導氣活塞套件</text>
+	</string>
+	<string id="st_upgr_w_recoil_desc">
+		<text>該套件包含一組用於各種型別武器的附加導氣活塞, 第二個活塞可使運動平衡, 以補償螺栓機構的移動衝擊.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_magazine">
+		<text>大容量彈匣組</text>
+	</string>
+	<string id="st_upgr_w_magazine_desc">
+		<text>該套件包含一組可用於各種武器的彈匣, 具有更大的容量.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_scope">
+		<text>光學瞄準鏡安裝套件</text>
+	</string>
+	<string id="st_upgr_w_scope_desc">
+		<text>該套件包含一組用於各種型別武器的光學瞄準鏡. 可滿足近距離, 中距離和遠距離作戰的需要.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_dispersion">
+		<text>平衡元件安裝套件</text>
+	</string>
+	<string id="st_upgr_w_dispersion_desc">
+		<text>該軟體包包含一組用於各種型別武器的平衡元件. 安裝在桿上的合成元件可以確保元件嚴格按照路徑移動, 從而提高了精度.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_calibre">
+		<text>口徑元件安裝套件</text>
+	</string>
+	<string id="st_upgr_w_calibre_desc">
+		<text>該套件包含一套用於各種型別武器的口徑部件, 對武器的機械和自動化部分進行復雜而且綜合的改造, 這樣就可以允許您在降低可靠性的同時改變它的口徑\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_inertion">
+		<text>不同形狀的人體工程學槍機</text>
+	</string>
+	<string id="st_upgr_w_inertion_desc">
+		<text>包含一套用於各種型別武器的人體工程學槍機. 更符合人體工程學的槍機外形, 它能提高使用者一邊移動一邊射擊時的手感.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_rpm">
+		<text>鈦合金擊針裝置</text>
+	</string>
+	<string id="st_upgr_w_rpm_desc">
+		<text>該套件包含一套用於各種武器的鈦棒, 鈦棒比普通棒可承受更高的射速.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_scope_mount">
+		<text>光學瞄準鏡底座套件</text>
+	</string>
+	<string id="st_upgr_w_scope_mount_desc">
+		<text>該套件包含一套用於各種型別武器的光學瞄準鏡底座, 可使得武器安裝光學瞄具.\n \n</text>
+	</string>
+	
+	<string id="st_upgr_w_firemode">
+		<text>扳機套件</text>
+	</string>
+	<string id="st_upgr_w_firemode_desc">
+		<text>包含一套用於各種型別武器的扳機系統, 使得武器適配自動模式.\n \n</text>
+	</string>
+
+</string_table>

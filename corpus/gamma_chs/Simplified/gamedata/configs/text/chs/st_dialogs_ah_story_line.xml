@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- General -->
+	<string id="story_line_dialog_1">
+		<text>这是异常区的坐标, 用探测器检查它们, 应该有我感兴趣的样本</text>
+	</string>
+	<string id="story_line_answer_1">
+		<text>好的</text>
+	</string>	
+	<string id="story_line_dialog_2">
+		<text>你可能已经猜到了, 我之前在切尔诺贝利异常区研究所工作, 所以我知道某些神器是人眼看不见的, 但它们发出的频率可以被探测器感应到</text>
+	</string>
+	<string id="story_line_answer_2">
+		<text>嗯, 我知道</text>
+	</string>	
+	<string id="story_line_dialog_3">
+		<text>你好! 你是来帮我的吗? 你是否知道, 每个神器都以自己的频率发射能量, 它就像一个印记, 一个在艺术品上的签名, 探测器的扫描范围越宽, 它可以发现的记号就越多, 通常, 你这样的潜行者们能为我们带来具有出色性能的样本, 而我们科学家对于任何异常样本都很感兴趣</text>
+	</string>
+	<string id="story_line_answer_3">
+		<text>嗯, 有意思</text>
+	</string>	
+	<string id="story_line_dialog_4">
+		<text>嗯, 史特洛克设法解开了特异区起源的秘密, 这些信息现在可供许多生态学家使用, 极大地促进了我们对异常区惊人本质的理解, 以及它影响我们周围的世界和生物体的机制, 现在我们正在收集实地观察和测量的基础数据, 这项工作也不能说十分简单, 所以我们正在寻找能帮上忙的潜行者</text>
+	</string>
+	<string id="story_line_answer_4">
+		<text>那么, 还有事情吗?</text>
+	</string>	
+	<string id="story_line_dialog_5">
+		<text>是吗? 你听我说, 第二次念域破裂产生的能量风暴导致了特异区的产生, 灵能力场线就像触手一样包围着这片土地, 特异区中的所有事物都会受到它们的影响, 即使是那些已经标记的区域, 其中也有着不为人知的神器, 所以别嫌报酬少, 特异区本身就是一份了不起的礼物, 虽然并不是每个人都能欣赏, 但这与金钱无关, 神器就是特异区的使者, 特异区通过神器来和我们交流, 因此, 我们非常需要它们...</text>
+	</string>
+	<string id="story_line_answer_5">
+		<text>但神器再好, 也不能抹在面包上当饭吃</text>
+	</string>	
+	<string id="story_line_dialog_6">
+		<text>嗯, 我说啊, 你是否知道, 每个神器都有一个独特的能量频率, 即使是同一种类型, 它可以告诉我们很多关于念域的信息, 但把它们系在腰带上来挡子弹并不是最聪明的做法, 现在我们计划编制特异区的完整光谱图, 为此我们将不得不测量大片区域</text>
+	</string>
+	<string id="story_line_answer_6">
+		<text>好吧, 可以直接切入正题吗?</text>
+	</string>	
+	<string id="story_line_dialog_7">
+		<text>没见过就对了! 有没有想过什么神器是由什么制成的? 大多数情况是被异常捕获的生物的遗骸, 所以下次你决定炫耀一个罕见的发现时, 请记住, 它可能是某个潜行者的骨头, 又或是一头野猪什么的...谁知道呢</text>
+	</string>
+	<string id="story_line_answer_7">
+		<text>我可没有炫耀的习惯</text>
+	</string>	
+	<string id="story_line_dialog_8">
+		<text>当然! 我们都认为异常区是时空在高维度的某种断片, 已知的物理定律在那里完全没有作用, 但也有另一种观点认为, 这是一个我们根本无法感知的强大能源, 但到底是为什么? 也许在高维宇宙中, 它只是一个智能生物放在沸腾的肉汤上嘎嘎作响的锅盖?</text>
+	</string>	
+	<string id="story_line_answer_8">
+		<text>或者是他们在打喷嚏</text>
+	</string>
+	<string id="story_line_dialog_9">
+		<text>好吧... 那么, 你知不知道, 异常区通常选择有机样本作为能量的接收者? 例如死掉的野生动物或僵尸, 这都是神器常见的材料, 知道了确切的来源之后, 我们就可以像阅读书籍或U盘那样阅读它包含的信息!</text>
+	</string>
+	<string id="story_line_answer_9">
+		<text>我猜...你一定没有往异常点丢东西的习惯?</text>
+	</string>	
+	<string id="story_line_dialog_10">
+		<text>我们不从潜行者或土匪那里购买神器, 在不知道确切的产地的情况下, 它们对我们毫无用处, 所以我们必须自己从特异区的每个角落收集样本</text>
+	</string>	
+	<string id="story_line_answer_10">
+		<text>原来如此, 所以你已经知道下一个要我去的地方了吧?</text>
+	</string>	
+	<string id="story_line_dialog_11">
+		<text>你算是问对人了! 你知道吗? 即使相同类型的神器, 也各自都有独特的辐射信息, 这取决于它被发现的地方, 特异区在所有事物上都留下了独特的印记, 不会和其他任何东西混淆, 如果我们能知道辐射的完整频谱, 或许就可以制作特异区的灵能地图, 然后了解导致特异区的干扰的起源, 甚至去控制它们</text>
+	</string>	
+	<string id="story_line_answer_11">
+		<text>这真是雄心勃勃的计划, 也许我能为此出一份力?</text>
+	</string>	
+	<string id="story_line_dialog_12">
+		<text>多亏了你, 我们会集合科学界智慧的大成来处理这些信息, 但完整的分析结果可能还需要数几年之久, 尽管我们的成员分散在整个特异区, 存在着相当的风险, 但斯卡宾斯基院士的计划非常高瞻远瞩, 毕竟一个人是不可能理解这么庞大的事物, 只有结合我们所有人的能力, 这项计划才能取得成功</text>
+	</string>	
+	<string id="story_line_answer_12">
+		<text>希望你们能成功, 那么还有事情吗?</text>
+	</string>	
+	<string id="story_line_dialog_13">
+		<text>别这么说, 多伤感情啊, 我真的感谢你与我们同在, 而并没有像之前帮助过我们的潜行者那样... 动不动就没影了, 而频谱图的初步分析也充满了惊喜, 看起来特异区的中心一直在我们的眼皮底下, 我的同事们没有等到最后的计算结果出来就已经往那边去了, 但我仍然倾向于完成这项工作再说... 毕竟我还有几个样品没有处理</text>
+	</string>	
+	<string id="story_line_answer_13">
+		<text>真是个没完没了的工作</text>
+	</string>	
+	<string id="story_line_dialog_14">
+		<text>是的! 十分需要! 我们的工作已经接近尾声了, 很快这最终结果将向科学界证明我们的地位... 你知道吗, 特异区的中心有一个超级异常区, 所有的灵能力场线都在那里相交! 在这个独特的地方诞生的神器将具有无法想象的力量, 特异区的秘密即将揭晓!</text>
+	</string>	
+	<string id="story_line_answer_14">
+		<text>这么厉害?</text>
+	</string>	
+	<string id="story_line_dialog_15">
+		<text>这...真是个坏消息... 特异区停止了和我们的交流... 已经没有希望了, 这些数据都是错的! 特异区中心那个超级异常区, 我们想要研究它几乎不可能了... 唉, 我们再想想办法吧, 也许需要重新演算也说不定...</text>
+	</string>	
+	<string id="story_line_answer_15">
+		<text>所以这一切都白费了? 数据从一开始就是错的?</text>
+	</string>	
+	
+</string_table>

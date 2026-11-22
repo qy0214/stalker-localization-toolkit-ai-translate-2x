@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+	<string id="st_wpn_browning_p35">
+		<text>勃朗宁 P-35手枪</text>
+	</string>
+	<string id="st_wpn_browning_p35_descr">
+		<text>勃朗宁大威力手枪是一款单动式 9 毫米半自动手枪。 它基于美国枪械发明家约翰勃朗宁的想法，于 1922 年设计并获得专利，后来由 FN 赫斯塔尔公司获得专利。 勃朗宁于 1926 年去世，当时他还没有完成生产版本的开发，但 FN 的武器设计师迪厄多纳·萨维开发完成了它。大威力手枪以其 13 发弹匣容量而著称，是鲁格或毛瑟 1910 等同时期设计的两倍。从涂层和"枪管瞄准具"来看，很明显这是一把经典的原装的比利时制造 P-35 。 \n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19兼容消音器（改装后）</text>
+	</string>
+
+	<string id="st_wpn_browning_mk3">
+		<text>勃朗宁大威力手枪 Mark III型</text>
+	</string>
+	<string id="st_wpn_browning_mk3_descr">
+		<text>勃朗宁大威力手枪 Mark III型是 1988 年制造的经典勃朗宁 HP 的现代化版本。它也是澳大利亚国防军的标准配发枪。 这版本的重大变化是更好的可靠性，当然这是勃朗宁一贯的风格。还有更好的瞄准器，改进的人体工学以及改进的后坐力。 这是一把在特异区中很经典的武器, 像个万金油一般的存在, 在军队第一次围攻切尔诺贝利之前, 几乎每个阵营都在用它, 但奇怪的是, 这把武器在第二次围攻战中销声匿迹, 直到后来北上的新物资补给到达之后才又重现特异区 .\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19兼容消音器（改装后）</text>
+	</string>
+</string_table>

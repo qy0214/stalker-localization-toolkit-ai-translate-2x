@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_p90tac">
+		<text>FN P90 战术版</text>
+	</string>
+	<string id="st_wpn_p90tac_descr">
+		<text>FN P90 冲锋枪是在80年代后期开发的, 最初作为车辆和坦克乘员, 炮兵等的单兵防御武器, 由于标准手枪和冲锋枪对穿戴防弹衣的敌人效果不好, 所以FN的设计师开发了一种新弹药, 最初的设计是SS90, 后来为了实现高穿透力和低后坐力, 制造出一种看起来像缩小版的5.56北约弹的弹药, 最终成果就是这把于1990年改进的使用5.7x28 SS190弹的FN P90, 它用更重的双芯钢和铝取代了聚合物弹芯, 能使子弹更好地穿透防弹衣\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[ui_gray_2] ACOG, 巴斯卡ES AC10632瞄准镜, EOTech, Kemper, Specter\n
+		%c[d_purple] • %c[ui_gray_2] 5.7x28通用消音器</text>
+	</string>
+</string_table>

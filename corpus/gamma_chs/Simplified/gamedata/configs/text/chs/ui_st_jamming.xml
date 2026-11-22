@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- Jammin -->
+	<string id="kb_unjam">
+		<text>清理武器卡壳</text>
+	</string>
+	<string id="ui_st_misfire">
+		<text>武器哑火!</text>
+	</string>
+	<string id="ui_st_jam">
+		<text>武器卡壳了!</text>
+	</string>
+	<string id="ui_st_superjam">
+		<text>武器严重卡壳!</text>
+	</string>
+	<string id="ui_st_nothing">
+		<text>无法清理卡壳</text>
+	</string>
+	<string id="ui_st_unjam">
+		<text>武器修复成功</text>
+	</string>
+	<string id="ui_st_functional">
+		<text>武器状态正常</text>
+	</string>
+	<string id="ui_st_oldjam">
+		<text>您正在使用弹匣系统,如果无法清理卡壳,请重新换弹</text>
+	</string>
+	<string id="ui_st_unjam_fail">
+		<text>这似乎不起作用,枪械需要进行整体的维护了......</text>
+	</string>
+	<string id="ui_st_parts_damage">
+		<text>武器内部零件受损了</text>
+	</string>
+	<string id="st_news_parts_alreadygood">
+		<text>零件不需要更换</text>
+	</string>
+	<string id="ui_st_heat1">
+		<text>,但是有温度</text>
+	</string>
+	<string id="ui_st_heat2">
+		<text>,但是开始发烫了!</text>
+	</string>
+	<string id="ui_st_heat3">
+		<text>,但是极其烫手!</text>
+	</string>
+	
+	<string id="st_unjam">
+		<text>清理卡壳</text>
+	</string>
+	<!-- Messages -->
+	<string id="st_news_parts_success">
+		<text>成功翻新零件: </text>
+	</string>
+	<string id="st_news_parts_fail">
+		<text>%c[d_red]武器已经有更好的零件了.</text>
+	</string>
+	<string id="st_news_parts_incompatible">
+		<text>%c[d_red]零件与武器不兼容.</text>
+	</string>
+	<string id="st_news_parts_barrel">
+		<text>%c[d_red]枪管不能在野外替换.</text>
+	</string>
+	<string id="st_news_parts_rusty">
+		<text>%c[d_red]武器太脏了,无法在野外拆开.</text>
+	</string>
+	<string id="st_news_dis_items">
+		<text>%c[d_red]需要一个适当的拆卸工具.</text>
+	</string>
+	<string id="st_news_fieldstrip">
+		<text>拆下的零件:</text>
+	</string>
+	<string id="st_news_cleaned">
+		<text>清理零件:</text>
+	</string>
+
+	<!-- MCM -->
+	<string id="ui_mcm_menu_wpo">
+		<text>武器零件大修</text>
+	</string>
+	<string id="ui_mcm_wpo_title">
+		<text>武器零件大修</text>
+	</string>
+	<string id="ui_mcm_wpo_profanity">
+		<text>启用武器卡住时喊脏话</text>
+	</string>
+	<string id="ui_mcm_wpo_profanity_desc">
+		<text>在武器故障时启用特殊对话.</text>
+	</string>
+	<string id="ui_mcm_wpo_profanity_timeout">
+		<text>武器卡住时的脏话语种</text>
+	</string>
+	<string id="ui_mcm_wpo_profanity_timeout_desc">
+		<text>会给脏话添加一个超时,如果你讨厌这类内容</text>
+	</string>
+	<string id="ui_mcm_wpo_profanity_language">
+		<text>脏话语言</text>
+	</string>
+	<string id="ui_mcm_wpo_jamchance">
+		<text>武器故障发生概率</text>
+	</string>
+	<string id="ui_mcm_wpo_jamchance_desc">
+		<text>有机会让你的武器以新的方式卡住. </text>
+	</string>
+	<string id="ui_mcm_wpo_superjam">
+		<text>启用武器严重卡壳</text>
+	</string>
+	<string id="ui_mcm_wpo_superjam_desc">
+		<text>启用（或禁用）武器严重卡壳（需要取出已装好的弹药才能正常清除）</text>
+	</string>
+	<string id="ui_mcm_wpo_simplejam">
+		<text>如果严重卡壳了就扔掉弹匣</text>
+	</string>
+	<string id="ui_mcm_wpo_simplejam_desc">
+		<text>如果启用,在使用严重卡壳的武器重新换弹时,弹匣将为你弹出,不用再打开背包了!</text>
+	</string>
+	<string id="ui_mcm_wpo_threshold">
+		<text>零件损坏状态阈值</text>
+	</string>
+	<string id="ui_mcm_wpo_threshold_desc">
+		<text>武器在此状态下,有概率损坏零件,状态越低的零件越容易损坏</text>
+	</string>
+	<string id="ui_mcm_wpo_cleancoef">
+		<text>技术员对武器清洗倍数</text>
+	</string>
+	<string id="ui_mcm_wpo_cleancoef_desc">
+		<text>技术人员清洗武器的费用调整.</text>
+	</string>
+	<string id="ui_mcm_wpo_verbosity">
+		<text>卡壳的详细信息</text>
+	</string>
+	<string id="ui_mcm_wpo_verbosity_desc">
+		<text>HUD卡壳消息的详细程度,共有三个级别:\n无：仅警告基于条件的卡壳（否则会造成混淆）.\n正常（推荐）：当你的武器卡住/成功修复时,你会收到通知.\n完整：一切正常,但您也会知道什么时候出现严重堵塞需要卸下武器并解除堵塞才能清除,以及您的武器何时遭受部件损坏.</text>
+	</string>
+	<string id="ui_mcm_wpo_minpart">
+		<text>可销售零件的最低状态</text>
+	</string>
+	<string id="ui_mcm_wpo_minpart_desc">
+		<text>武器的所有部件都有资格销售的最低条件. 如果武器的任何部分低于此条件,它将被列入销售黑名单. 设置为 0 禁用.</text>
+	</string>
+	<string id="ui_mcm_wpo_fun">
+		<text>武器零件大修等级</text>
+	</string>
+	<string id="ui_mcm_wpo_title">
+		<text>武器零件大修</text>
+	</string>
+	<string id="ui_mcm_lst_eng">
+		<text>英语</text>
+	</string>
+	<string id="ui_mcm_lst_rus">
+		<text>俄语</text>
+	</string>
+	<string id="ui_mcm_lst_verbosity_none">
+		<text>无</text>
+	</string>
+	<string id="ui_mcm_lst_verbosity_normal">
+		<text>普通</text>
+	</string>
+	<string id="ui_mcm_lst_verbosity_full">
+		<text>完整</text>
+	</string>
+	<string id="ui_mcm_lst_no">
+		<text>纪律团</text>
+	</string>
+	<string id="ui_mcm_lst_yes">
+		<text>独行者</text>
+	</string>
+	<string id="ui_mcm_lst_ofc">
+		<text>自由军</text>
+	</string>
+	<string id="ui_mcm_wpo_debug">
+		<text>调试logs日志</text>
+	</string>
+	<string id="ui_mcm_wpo_debug_desc">
+		<text>调试日志,在控制台日志中启用一大堆附加信息.</text>
+	</string>
+	<string id="ui_mcm_wpo_babymode">
+		<text>禁用模式</text>
+	</string>
+	<string id="ui_mcm_wpo_babymode_desc">
+		<text>完全禁用基于零件的卡壳. 如果你需要勾选这个,为什么还要安装这个模组呢？</text>
+	</string>
+	<string id="ui_mcm_wpo_newdrops">
+		<text>启用备用零件管理</text>
+	</string>
+	<string id="ui_mcm_wpo_newdrops_desc">
+		<text>用一个新的公式管理零件. 下面的好零件的几率由武器条件和进一步隐藏的重量来调整. 如果权重足够低,会使你的游戏更难. 要使用旧方法,请禁用这个. </text>
+	</string>
+	<string id="ui_mcm_wpo_newdropschance">
+		<text>使用备用零件管理的好零件的机会</text>
+	</string>
+	<string id="ui_mcm_wpo_degradation">
+		<text>雨水中的损坏现象 </text>
+	</string>
+	<string id="ui_mcm_wpo_degradation_desc">
+		<text>在雨天,你的武器损坏得更快的速率. </text>
+	</string>
+	
+	<string id="st_field_strip">
+		<text>零件移除</text>
+	</string>
+	<string id="st_field_strip_fail">
+		<text>这把武器没有可拆卸的部件.</text>
+	</string>
+	<string id="ui_st_missing">
+		<text>这把武器缺少零件.</text>
+	</string>
+
+	
+	<string id="article_wpo">
+		<text>武器维修</text>
+	</string>
+	<string id="article_wpo_text">
+		<text>
+			%c[pda_green]快速常见问题解答%c[ui_gray_1]\n \n
+			\n1. 为什么我的枪卡在 100%？
+			\nA. 你的零件损坏了. 检查状况. 
+			\n2. 我如何解决卡壳？
+			\nA. 双击使用,或者右键单击库存中的武器以调出解除卡壳命令. 
+			\n3. 为什么我在更换零件时会失去状态？
+			\nA. 你需要重新润滑武器,这种情况在60%以上不会发生. 用Leatherman来减少数量,或者用工作台来完全消除它. 
+			\n4. 为什么技术人员不修理我的零件?
+			\nA. 零件必须是搜刮来的. 你可以在技术员那里购买零件,或者使用武器修理包. 这就是武器零件大修的核心玩法. \n \n
+			武器部件大修彻底改变了Anomaly中武器维护的方式. 仔细阅读本指南以了解一切.\n \n
+			
+			%c[pda_green]I. 零件和维修%c[ui_gray_1]\n
+			\n• 你的武器整体状况（你通常习惯的状况栏）现在更容易维护. 机械师将以较低的成本恢复这一点. 所有的武器维修项目都要强大得多. 
+			\n• 武器部件需要维护. 你可以通过鼠标查看武器部件的状况,一目了然. 
+			\n   • 文字的颜色表示状态.
+			\n%c[d_red]   • 丢失
+			\n%c[d_orange]   •  损坏且无法清洗的
+			\n%c[pda_yellow]   • 脏了,可以清洗%c[ui_gray_1]
+			\n• 武器部件可以通过现场拆卸武器的方式获得,这将移除所有非枪管的部件. 
+			\n• 武器部件也可以通过拖动合适零件放来临时替换 %c[d_red]请注意,如果低于60%,就会消耗武器状态. 如果有多功能工具在背包中,可以减少这种影响. %c[ui_gray_1]. 
+			\n• 如果拥有正确的维修工具,也可以在工作台上免费更换武器部件. %c[pda_yellow]这是更换枪管的两种方法之一. 
+			\n \n
+			%c[pda_green]II. 卡壳和零件损坏%c[ui_gray_1]\n
+			\n• 零件有五个级别的损坏: %c[d_red]破损%c[ui_gray_1],%c[d_red]受损%c[ui_gray_1],%c[d_orange]磨损%c[ui_gray_1],%c[0,250,250,0]脏的%c[ui_gray_1],%c[d_green]正常%c[ui_gray_1]
+			\n• 零件损坏越多,发生故障的机会就越大. 
+			\n• 有三种类型的故障：哑火、卡壳和严重卡壳. 
+			\n• 哑火和卡壳可以简单地通过解除卡壳来清除. 
+			\n• 严重卡壳需要在清除卡壳之前弹出弹匣. 
+			\n• 枪管不影响对卡壳概率. 然而,脏的和低于脏的枪管状态会降低武器伤害,最高可达50%. 
+			\n• 在低于85%的条件下开火（默认情况下,改变为 %c[pda_yellow]MCM:零件损坏条件阈值%c[ui_gray_1])有概率对武器部件造成损坏. 
+			\n• 在大雨中开火会使武器加速损坏. 
+			\n• 开火的时间过长会导致过热,从而导致更多的卡壳和更快的损坏. 
+			%c[pda_green]III. 经济变化%c[ui_gray_1]\n
+			\n• 拥有一个清洁工具可以让你清洁 "脏 "的武器部件（高于60%的状态）. 这也能恢复10%的状态. 
+			\n• 拥有维修套件可让您通过右键菜单更换零件. 这会使用一次并恢复10%的状态%c[pda_yellow]这是更换枪管的另一种方法. %c[ui_gray_1]
+			\n• 技术人员会随机以高价出售武器零件. 
+			\n• 60% 以上的武器零件可以用锉刀、推杆或多功能工具修复. 
+			\n• 超过 10% 的武器零件可以使用商贩提供的非常昂贵的破损零件整修工具进行修理. 
+			\n \n 对于所有其他问题,请在 Discord 上 ping arti#3278,我懒得阅读 Moddb 的评论. 
+		</text>
+	</string>
+	
+	<string id="st_partskit">
+		<text>破损零件整修工具</text>
+	</string>
+	<string id="st_partskit_descr">
+		<text>高度先进的工具集,包括微型文件、冷焊金属环氧树脂、电解槽装置以及大量润滑剂、汽油馏分和其他溶剂. 这里的工具可以将拉达发动机恢复成法拉利,更不用说它可以对零件进行加工. 此套件无法修复损坏最严重的废金属. 但是,该套件极难组装,因此 Zone 技术人员仅少量出售. \n\n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 零件维修工具\n
+		%c[d_orange] • %c[ui_gray_2] 能够修复 10% 以上但低于 60% 状况的武器零件\n</text>
+	</string>
+<!-- Info -->
+
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+	<string id="st_damage_missing">
+		<text>缺失!!!</text>
+	</string>
+	<string id="st_damage_0">
+		<text>破碎---</text>
+	</string>
+	<string id="st_damage_1">
+		<text>破损--</text>
+	</string>
+	<string id="st_damage_2">
+		<text>磨损-</text>
+	</string>
+	<string id="st_damage_3">
+		<text>脏污+</text>
+	</string>
+	<string id="st_damage_4">
+		<text>正常++</text>
+	</string>
+	<string id="st_damage_5">
+		<text>完好+++</text>
+	</string>
+
+	<string id="st_wpo_replace_parts">
+		<text>维护零件</text>
+	</string>
+	
+	<string id="st_wpo_replace">
+		<text>翻新</text>
+	</string>
+	<string id="st_wpo_clean">
+		<text>清洁</text>
+	</string>
+	<string id="st_wpo_remove">
+		<text>移除</text>
+	</string>
+
+	<string id="st_name_trigger">
+		<text>扳机装置</text>
+	</string>
+	<string id="st_name_spring">
+		<text>后坐力弹簧</text>
+	</string>
+	<string id="st_name_barrel">
+		<text>枪管</text>
+	</string>
+	<string id="st_name_bolt_carrier">
+		<text>枪栓座</text>
+	</string>
+	<string id="st_name_bolt">
+		<text>枪栓</text>
+	</string>
+	<string id="st_name_gas_tube">
+		<text>导气管</text>
+	</string>
+	<string id="st_name_extractor">
+		<text>退膛室</text>
+	</string>
+	<string id="st_name_ejector">
+		<text>抛壳顶杆</text>
+	</string>
+	<string id="st_name_pump">
+		<text>压动式枪机</text>
+	</string>
+	<string id="st_name_hammers">
+		<text>撞针</text>
+	</string>
+	<string id="st_name_chock">
+		<text>枪口</text>
+	</string>
+	<string id="st_name_all">
+		<text>全部</text>
+	</string>
+	<string id="st_name_issues">
+		<text>问题:</text>
+	</string>
+</string_table>

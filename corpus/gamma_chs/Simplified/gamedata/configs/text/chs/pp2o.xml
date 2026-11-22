@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	
+	<string id="st_wpn_pp2000_oper">
+		<text>PP-2000 "特工"</text>
+	</string>
+	<string id="st_wpn_pp2000_oper_descr">
+		<text>PP-2000 是俄罗斯图拉仪器设计局 (KBP) 的最新开发产品, PP-2000 于 2004 年首次向公众展示, 其布局专利已于 2001 年申请, 并于 2003 年颁发; PP-2000 的定位是非步兵军事人员的个人防御武器, 以及军事人员, 特种部队和特种执法队的作战武器, 因此, 它被设计的更为紧凑, 零件很少, 可靠性高, 维护简单, 成本低廉, 是理想的近距离作战武器\n \n
+		%c[ui_gray_2]枪械配件: \n
+                                    %c[d_purple] • %c[ui_gray_2] 此枪械已集成: %c[ui_yellow]巴斯卡AC10632瞄准镜, 战术激光\n
+		%c[d_purple] • %c[ui_gray_2] 兼容9x19消音器\n \n</text>
+	</string>
+</string_table>

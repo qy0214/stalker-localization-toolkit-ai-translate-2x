@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>	
+    <string id="ui_mcm_menu_aol_hf">
+        <text>藏身处家具</text>
+    </string>
+
+	<!-- Controls -->
+	<string id="ui_mcm_menu_controls">
+		<text>控制设置</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_controls_bind_collision">
+		<text>切换碰撞检测</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_controls_bind_alignment">
+		<text>切换对齐模式: 以玩家或平面为基准</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_controls_bind_place_mode">
+		<text>切换放置模式: 正常, 高级, 预览</text>
+	</string>
+
+	<!-- Gameplay -->
+	<string id="ui_mcm_menu_gameplay">
+		<text>游戏性设置</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_gameplay_uniform_trade_profiles">
+		<text>使用统一售价</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_gameplay_use_ingame_time">
+		<text>游戏中出现灯光/灯光秀的时段</text>
+	</string>
+
+	<!-- World Objects -->
+	<string id="ui_mcm_menu_world_obj">
+		<text>世界物体设置</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_world_obj_flag_record_on_place">
+		<text>当放置物体时启用录制</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_world_obj_flag_record_on_keypress">
+		<text>当按键时启用物体录制</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_world_obj_bind_record">
+		<text>录制物体</text>
+	</string>
+
+	<!-- Debug -->
+	<string id="ui_mcm_menu_debug">
+		<text>Debug</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_debug_bind_creative_mode">
+		<text>创造模式</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_debug_location_offset">
+		<text>位置偏移</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_update_mcm">
+		<text>更新MCM来设置键位, 默认TAB切换碰撞检测, CAPSLOCK切换对齐模式(此mod所有选项都没有描述, 所以只能按照字面意思翻译, 如有修改建议请至GSCTP的moddb页面留言帮助改进)</text>
+	</string>
+</string_table>

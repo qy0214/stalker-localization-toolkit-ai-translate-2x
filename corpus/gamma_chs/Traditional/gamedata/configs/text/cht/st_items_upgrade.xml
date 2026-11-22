@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Upgrading Parts
+-->
+<string_table>
+
+	<string id="st_broneplastina_seva">
+		<text>SEVA護甲板 (升級)</text>
+	</string>
+	<string id="st_broneplastina_seva_descr">
+		<text>用於改善SEVA護甲效能的護甲板.\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_01_name">
+		<text>鋼板</text>
+	</string>
+	<string id="upgr_1_01_description">
+		<text>一組各種長度,寬度,厚度和形狀的鋼板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_01_name">
+		<text>加厚框架</text>
+	</string>
+	<string id="upgr_2_01_description">
+		<text>一套改善防護服效能的各種框架和裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 金屬及塑膠物品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_01_name">
+		<text>鍊甲衫</text>
+	</string>
+	<string id="upgr_3_01_description">
+		<text>自製鍊甲衫, 由小鋼圈製成.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_02_name">
+		<text>橡膠嵌件</text>
+	</string>
+	<string id="upgr_1_02_description">
+		<text>一個耐用的橡膠工業面料.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 橡膠製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_02_name">
+		<text>防水油布</text>
+	</string>
+	<string id="upgr_2_02_description">
+		<text>一大塊耐用的工業帆布.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 面料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_03_name">
+		<text>防火布</text>
+	</string>
+	<string id="upgr_2_03_description">
+		<text>一卷耐火織物, 能在短時間內經受高溫.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 面料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_03_name">
+		<text>多口袋背心</text>
+	</string>
+	<string id="upgr_1_03_description">
+		<text>有額外內襯的背心, 附帶幾個大口袋.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 面料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_04_name">
+		<text>聚碳酸酯板</text>
+	</string>
+	<string id="upgr_1_04_description">
+		<text>一套不同長度, 寬度, 厚度和形狀的聚碳酸酯板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚碳酸酯\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_04_name">
+		<text>聚碳酸酯護甲層</text>
+	</string>
+	<string id="upgr_2_04_description">
+		<text>一種有特殊襯裡的護甲層, 有額外的保護元件, 用於盔甲.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚碳酸酯\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_02_name">
+		<text>陶瓷板</text>
+	</string>
+	<string id="upgr_3_02_description">
+		<text>一套不同長度、寬度、厚度和形狀的陶瓷板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] ceramic\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_05_name">
+		<text>輕質聚合材料</text>
+	</string>
+	<string id="upgr_1_05_description">
+		<text>一組不同長度、寬度、厚度和形狀以及各種效能的輕質聚合物材料.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合物及相關物品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_05_name">
+		<text>鎂嵌入件</text>
+	</string>
+	<string id="upgr_2_05_description">
+		<text>一組含有不同長度、寬度、厚度和形狀的鎂元素的防火材料.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 含鎂材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_06_name">
+		<text>塑膠嵌入件</text>
+	</string>
+	<string id="upgr_2_06_description">
+		<text>一組不同長度、寬度、厚度和形狀的塑料元件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 塑料製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_03_name">
+		<text>用於面料處理的材料</text>
+	</string>
+	<string id="upgr_3_03_description">
+		<text>用於紡織品處理的化合物, 可提高盔甲防護服對化學效應的防護效能.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 化工產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_04_name">
+		<text>橡膠面料</text>
+	</string>
+	<string id="upgr_3_04_description">
+		<text>一卷耐用的橡膠面料.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 面料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_06_name">
+		<text>高壓氣瓶</text>
+	</string>
+	<string id="upgr_1_06_description">
+		<text>充滿氧氣的氣囊. 它的目的是在化學有毒的環境中呼吸, 以及在低氣壓的地方, 如山區.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 特殊物品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_07_name">
+		<text>綜合人體護理系統</text>
+	</string>
+	<string id="upgr_2_07_description">
+		<text>一種用於將藥物自動注入人體的複雜醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 複雜的醫療產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_08_name">
+		<text>負荷分配緊固系統</text>
+	</string>
+	<string id="upgr_2_08_description">
+		<text>一套用於負荷分配的各種緊韌體.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_05_name">
+		<text>附件緊固 (加強)</text>
+	</string>
+	<string id="upgr_3_05_description">
+		<text>一個防護服腰帶附件, 以增加同時可用的模組和神器容器的數量.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_07_name">
+		<text>加強型伺服驅動器 (原型, v1)</text>
+	</string>
+	<string id="upgr_1_07_description">
+		<text>增強原型伺服驅動的第一代和第二代外骨骼, 允許使用者衝刺.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_06_name">
+		<text>至尊化合物</text>
+	</string>
+	<string id="upgr_3_06_description">
+		<text>對面料進行特殊加固, 以增加強度和耐用性.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 化學物品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_09_name">
+		<text>附件緊固 (常規)</text>
+	</string>
+	<string id="upgr_2_09_description">
+		<text>一個防護服腰帶附件, 以增加同時可用的模組和神器容器的數量.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_08_name">
+		<text>凱夫拉板</text>
+	</string>
+	<string id="upgr_1_08_description">
+		<text>一套不同長度、寬度、厚度和形狀的凱夫拉鋼板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 凱夫拉\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_10_name">
+		<text>雙層護甲</text>
+	</string>
+	<string id="upgr_2_10_description">
+		<text>一種有特殊內襯的護甲層, 有額外的保護元件, 用於護甲.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 護甲板\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_09_name">
+		<text>阻尼嵌件</text>
+	</string>
+	<string id="upgr_1_09_description">
+		<text>用於防彈背心的特殊襯裡橡膠嵌件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 橡膠製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_11_name">
+		<text>橡膠衣</text>
+	</string>
+	<string id="upgr_2_11_description">
+		<text>一種特殊的防無線電和化學物質的橡膠防護服襯裡, 用於安裝在盔甲上以提高其防護效能.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 橡膠製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善輕型和中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_07_name">
+		<text>保護框架</text>
+	</string>
+	<string id="upgr_3_07_description">
+		<text>一種與護甲背心輪廓相匹配的框架, 旨在提高護甲的防護效能.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_08_name">
+		<text>瓦良格生命維持系統</text>
+	</string>
+	<string id="upgr_3_08_description">
+		<text>一種用於將藥物自動注入人體的複雜醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_09_name">
+		<text>聚合物鉍嵌件</text>
+	</string>
+	<string id="upgr_3_09_description">
+		<text>用鉍製成的聚合物保護材料, 具有增強對化學和熱效應的抵抗力.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_10_name">
+		<text>鉛網</text>
+	</string>
+	<string id="upgr_3_10_description">
+		<text>有淺孔的普通鉛網.   \n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] lead\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_10_name">
+		<text>補償護甲層</text>
+	</string>
+	<string id="upgr_1_10_description">
+		<text>特別製作的護甲鋼板, 略微提高了子彈的抗性.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 金屬製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_12_name">
+		<text>鋁框架</text>
+	</string>
+	<string id="upgr_2_12_description">
+		<text>用於嵌入中型護甲的通用鋁製框架. 取代任何類似的鋼或鈦框架, 減輕護甲的重量. 但鋁框強度較低.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋁製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_11_name">
+		<text>鈦和綠柱石矩陣</text>
+	</string>
+	<string id="upgr_3_11_description">
+		<text>一套鈦和綠柱石矩陣連線到堅實的, 高質量的護甲板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 強化護甲板\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_11_name">
+		<text>聚合物嵌件</text>
+	</string>
+	<string id="upgr_1_11_description">
+		<text>特殊的聚合物嵌件, 用於輕、中型護甲代替面料. 增加護甲的耐久力和壽命.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_13_name">
+		<text>康銅保溫</text>
+	</string>
+	<string id="upgr_2_13_description">
+		<text>特殊的康銅保溫層.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 康銅\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_12_name">
+		<text>SBK防護服</text>
+	</string>
+	<string id="upgr_3_12_description">
+		<text>一種特殊的防護服, 用於防止化學和放射性的影響.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 橡膠製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_12_name">
+		<text>醫生傷口癒合系統</text>
+	</string>
+	<string id="upgr_1_12_description">
+		<text>一種用於在野外連續給藥的醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_13_name">
+		<text>碳纖維</text>
+	</string>
+	<string id="upgr_3_13_description">
+		<text>碳纖維製成的輕型防護護甲板, 具有高粘度和優良的停止作用.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_14_name">
+		<text>機玻璃板</text>
+	</string>
+	<string id="upgr_2_14_description">
+		<text>一組不同長度、寬度、厚度和形狀的有機玻璃板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_15_name">
+		<text>彈性塑料嵌件</text>
+	</string>
+	<string id="upgr_2_15_description">
+		<text>一組不同長度、寬度、厚度和形狀的彈性塑料元件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_14_name">
+		<text>耐火鎳嵌件</text>
+	</string>
+	<string id="upgr_3_14_description">
+		<text>由鎳製成的輕型阻燃嵌件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鎳\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_13_name">
+		<text>馬拉松運動員用複合醫療裝備</text>
+	</string>
+	<string id="upgr_1_13_description">
+		<text>一種用於在野外連續給藥的醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_16_name">
+		<text>Skat防電保護系統</text>
+	</string>
+	<string id="upgr_2_16_description">
+		<text>一種特殊的裝置, 可以讀取電流並增加對電擊的保護.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科研專案\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_14_name">
+		<text>血液刺激器</text>
+	</string>
+	<string id="upgr_1_14_description">
+		<text>一種用於在野外連續給藥的醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_17_name">
+		<text>太陽能生物激勵器</text>
+	</string>
+	<string id="upgr_2_17_description">
+		<text>一種具有獨立電源供野外持續用藥的醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_15_name">
+		<text>神經波發射器</text>
+	</string>
+	<string id="upgr_3_15_description">
+		<text>一種便攜裝置, 用來研究靈能場對生物的影響.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科研專案\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_15_name">
+		<text>鈦鋁合金</text>
+	</string>
+	<string id="upgr_1_15_description">
+		<text>耐用的鈦和鋁合金護甲板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 金屬合金\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_16_name">
+		<text>神器定位器</text>
+	</string>
+	<string id="upgr_1_16_description">
+		<text>測量神器三維位置的攜帶型科學裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科研專案\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_16_name">
+		<text>絕緣鎂嵌件</text>
+	</string>
+	<string id="upgr_3_16_description">
+		<text>一套保護性的鎂嵌件, 旨在減少電荷對護甲的影響.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鎂製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_17_name">
+		<text>有機聚合物嵌件</text>
+	</string>
+	<string id="upgr_1_17_description">
+		<text>由有機聚合物製成的特殊輕質嵌件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_18_name">
+		<text>分段保護</text>
+	</string>
+	<string id="upgr_2_18_description">
+		<text>一套能夠相互連線的防護護甲板, 形成更大的護甲板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_19_name">
+		<text>鈦和鋁板</text>
+	</string>
+	<string id="upgr_2_19_description">
+		<text>一組由鈦和鋁製成的防護護甲板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 金屬製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_17_name">
+		<text>藍寶石晶體</text>
+	</string>
+	<string id="upgr_3_17_description">
+		<text>藍寶石製成的合成晶體. 非常堅硬.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鎂製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_20_name">
+		<text>康銅絕緣</text>
+	</string>
+	<string id="upgr_2_20_description">
+		<text>一組由康銅製成的板, 可增強對電效應的保護.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_21_name">
+		<text>玻璃纖維隔熱</text>
+	</string>
+	<string id="upgr_2_21_description">
+		<text>一組由玻璃纖維製成的板, 增加了對熱效應的保護.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_22_name">
+		<text>毒素過濾系統</text>
+	</string>
+	<string id="upgr_2_22_description">
+		<text>在野外過濾人體毒素的攜帶型醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_18_name">
+		<text>狂暴注射器</text>
+	</string>
+	<string id="upgr_1_18_description">
+		<text>一種在野外用於靜脈注射的攜帶型醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_23_name">
+		<text>狂暴注射器</text>
+	</string>
+	<string id="upgr_2_23_description">
+		<text>一種在野外用於靜脈注射的攜帶型醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_18_name">
+		<text>鳳凰復甦系統</text>
+	</string>
+	<string id="upgr_3_18_description">
+		<text>一種在野外用於靜脈注射的攜帶型醫療裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_24_name">
+		<text>鉛嵌件</text>
+	</string>
+	<string id="upgr_2_24_description">
+		<text>非常重的鉛板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] lead item\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_25_name">
+		<text>雙層貼身背心</text>
+	</string>
+	<string id="upgr_2_25_description">
+		<text>防彈背心的護甲襯裡, 提供額外的保護免受子彈攻擊.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] lining\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_26_name">
+		<text>備用護甲層</text>
+	</string>
+	<string id="upgr_2_26_description">
+		<text>凱夫拉護甲板, 作為中型和重型護甲套裝的附加或備用護甲安裝.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 護甲板\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_19_name">
+		<text>增強陶瓷板</text>
+	</string>
+	<string id="upgr_3_19_description">
+		<text>嵌入護甲的加厚和增強陶瓷板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 陶瓷製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_20_name">
+		<text>塑料和合成零件</text>
+	</string>
+	<string id="upgr_3_20_description">
+		<text>各種盔甲的合成和塑料部件, 旨在減輕盔甲的重量, 增加機動性和耐久力.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_19_name">
+		<text>合成纖維層 (衣服)</text>
+	</string>
+	<string id="upgr_1_19_description">
+		<text>用於縫製套裝和盔甲的結實的合成纖維.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_27_name">
+		<text>胴體重量分配裝置</text>
+	</string>
+	<string id="upgr_2_27_description">
+		<text>一種嵌入護甲, 增加運載能力的裝置.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_20_name">
+		<text>防塵系統</text>
+	</string>
+	<string id="upgr_1_20_description">
+		<text>內建防塵系統, 可更換過濾器.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_28_name">
+		<text>神諭靈能防護器</text>
+	</string>
+	<string id="upgr_2_28_description">
+		<text>一個稍微減少靈體波對精神影響的科研專案.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科研專案\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_21_name">
+		<text>輕便生命維持系統</text>
+	</string>
+	<string id="upgr_3_21_description">
+		<text>穩定臨界狀態的攜帶型生命支援系統.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_21_name">
+		<text>有源濾波器</text>
+	</string>
+	<string id="upgr_1_21_description">
+		<text>內建有源濾波器系統.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_29_name">
+		<text>保護塗層</text>
+	</string>
+	<string id="upgr_2_29_description">
+		<text>頭盔和盔甲的遮蔽罩, 略微減少靈體波對精神影響的效果.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 特殊物品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_30_name">
+		<text>1PN93-1夜視鏡</text>
+	</string>
+	<string id="upgr_2_30_description">
+		<text>一種軍用夜視裝置, 用於在黑暗中執行任務.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 軍用品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_22_name">
+		<text>保護圓頂</text>
+	</string>
+	<string id="upgr_3_22_description">
+		<text>頭盔的特殊襯裡, 減少靈體波精神影響的效果.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科研專案\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_23_name">
+		<text>離子風冷卻系統</text>
+	</string>
+	<string id="upgr_3_23_description">
+		<text>一種用於中型和重型護甲的冷卻系統, 可增加耐久力.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科學裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_31_name">
+		<text>PN21KL夜視鏡</text>
+	</string>
+	<string id="upgr_2_31_description">
+		<text>用於在黑暗中執行任務的數字軍用夜視. 它的夜視顏色是灰色的.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 軍用品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_32_name">
+		<text>PN2KL數字夜視鏡</text>
+	</string>
+	<string id="upgr_2_32_description">
+		<text>用於在黑暗中執行任務的數字軍用夜視. 它的夜視顏色是紫色的.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 軍用品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_22_name">
+		<text>呼吸面罩清潔系統</text>
+	</string>
+	<string id="upgr_1_22_description">
+		<text>防毒面具和頭盔的綜合清潔系統.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_33_name">
+		<text>炭過濾器</text>
+	</string>
+	<string id="upgr_2_33_description">
+		<text>補充可更換木炭過濾器.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_24_name">
+		<text>保護天線</text>
+	</string>
+	<string id="upgr_3_24_description">
+		<text>一種防護天線, 設計用於安裝在防毒面具和頭盔中. 針對靈體波提供了輕微的保護.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科學裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善中、重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_23_name">
+		<text>兩個過濾器的呼吸器</text>
+	</string>
+	<string id="upgr_1_23_description">
+		<text>兩個過濾器的呼吸器, 替代其他單個過濾器.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_24_name">
+		<text>有害顆粒過濾器</text>
+	</string>
+	<string id="upgr_1_24_description">
+		<text>一種保護性的過濾器, 防止有害顆粒通過呼吸系統進入人體.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_34_name">
+		<text>毒物過濾器</text>
+	</string>
+	<string id="upgr_2_34_description">
+		<text>一種保護性的過濾器, 防止各種有毒物質和化學物質通過呼吸系統進入人體.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_35_name">
+		<text>康銅面罩</text>
+	</string>
+	<string id="upgr_2_35_description">
+		<text>康銅製成的防護面罩, 可提高對化學和熱效應的抵抗力.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 康銅製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_25_name">
+		<text>增強毒物過濾器</text>
+	</string>
+	<string id="upgr_1_25_description">
+		<text>一種帶有附加保護塗層的過濾器, 防止各種有毒物質和化學物質通過呼吸系統進入人體.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_36_name">
+		<text>SPB-VPZ.m.IV裝置</text>
+	</string>
+	<string id="upgr_2_36_description">
+		<text>現代保護系統, 降低靈體波對精神的影響.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科學裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善頭盔的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_26_name">
+		<text>強化鈦部件</text>
+	</string>
+	<string id="upgr_1_26_description">
+		<text>由鈦及其合金製成的強化外骨骼部件.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鈦製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_37_name">
+		<text>活動板</text>
+	</string>
+	<string id="upgr_2_37_description">
+		<text>用於嵌入外骨骼和重型護甲服的輔助保護鋼板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_38_name">
+		<text>分段保護</text>
+	</string>
+	<string id="upgr_2_38_description">
+		<text>一套不同長度、寬度和形狀的薄護甲板, 用於嵌入外骨骼和重型護甲服.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_25_name">
+		<text>鈦護甲</text>
+	</string>
+	<string id="upgr_3_25_description">
+		<text>各種長度、寬度和形狀的強化鈦護甲板, 用於嵌入外骨骼和重型護甲服.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鈦製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_26_name">
+		<text>多層保護</text>
+	</string>
+	<string id="upgr_3_26_description">
+		<text>用於嵌入外骨骼和重型護甲服的各種長度、寬度和形狀的多層聚合物陶瓷護甲板.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 陶瓷製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_27_name">
+		<text>硅膠減震器</text>
+	</string>
+	<string id="upgr_1_27_description">
+		<text>增強硅樹脂阻尼器, 旨在取代類似的橡膠.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] used to improve heavy armour\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_27_name">
+		<text>帶有鉍鑲件的聚合物襯裡</text>
+	</string>
+	<string id="upgr_3_27_description">
+		<text>一種由高分子材料製成的防護服襯裡, 其特點是含有大量鉍.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 聚合材料\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_28_name">
+		<text>鋁嵌件</text>
+	</string>
+	<string id="upgr_3_28_description">
+		<text>一些塑料部件的鋁製版本, 專為外骨骼和重型護甲設計.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋁製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_1_28_name">
+		<text>整合溫控系統</text>
+	</string>
+	<string id="upgr_1_28_description">
+		<text>用於安裝在外骨骼和重型護甲服生命支援系統中的整合溫度控制系統.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 醫療裝置\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_2_39_name">
+		<text>電機保護系統</text>
+	</string>
+	<string id="upgr_2_39_description">
+		<text>一組不同長度、寬度和形狀的防護護甲板, 用於嵌入外骨骼和重型護甲服的移動元件中.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_29_name">
+		<text>移動電機系統</text>
+	</string>
+	<string id="upgr_3_29_description">
+		<text>一個帶有額外彈簧和移動部件的系統, 用於外骨骼和重型護甲服.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 鋼製品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		</text>
+	</string>
+	
+	<string id="upgr_3_30_name">
+		<text>液壓伺服驅動放大系統</text>
+	</string>
+	<string id="upgr_3_30_description">
+		<text>
+		用於外骨骼和重型護甲服伺服驅動器的液壓放大系統.\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 用於改善重型護甲的效能\n
+		%c[d_blue] • %c[ui_gray_2] 值錢\n
+		</text>
+	</string>
+	
+</string_table>

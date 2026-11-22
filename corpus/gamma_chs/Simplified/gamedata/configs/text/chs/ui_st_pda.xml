@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="Time">
+		<text>时间</text>
+	</string>
+	<string id="date">
+		<text>日期</text>
+	</string>
+	<string id="filter_secondary_tasks_text">
+		<text>支线任务</text>
+	</string>
+	<string id="filter_treasures_text">
+		<text>藏物点</text>
+	</string>
+	<string id="missions_list">
+		<text>任务列表</text>
+	</string>
+	<string id="month_april">
+		<text>4月</text>
+	</string>
+	<string id="month_august">
+		<text>8月</text>
+	</string>
+	<string id="month_december">
+		<text>12月</text>
+	</string>
+	<string id="month_february">
+		<text>2月</text>
+	</string>
+	<string id="month_january">
+		<text>1月</text>
+	</string>
+	<string id="month_july">
+		<text>7月</text>
+	</string>
+	<string id="month_june">
+		<text>6月</text>
+	</string>
+	<string id="month_march">
+		<text>3月</text>
+	</string>
+	<string id="month_may">
+		<text>5月</text>
+	</string>
+	<string id="month_november">
+		<text>11月</text>
+	</string>
+	<string id="month_october">
+		<text>10月</text>
+	</string>
+	<string id="month_september">
+		<text>9月</text>
+	</string>
+	<string id="pda_btn_close">
+		<text>关闭PDA</text>
+	</string>
+	<string id="pda_btn_logs">
+		<text>消息记录</text>
+	</string>
+	<string id="pda_btn_logs_hint">
+		<text>查看历史消息</text>
+	</string>
+	<string id="pda_btn_quests">
+		<text>区域地图</text>
+	</string>
+	<string id="pda_btn_quests_hint">
+		<text>显示区域地图与任务列表</text>
+	</string>
+	<string id="pda_btn_ranking">
+		<text>统计数据</text>
+	</string>
+	<string id="pda_btn_ranking_hint">
+		<text>查看个人统计</text>
+	</string>
+	<string id="pda_cur_time">
+		<text>当前时间:</text>
+	</string>
+	<string id="pda_date_filter">
+		<text>按日期筛选</text>
+	</string>
+	<string id="pda_filter_news">
+		<text>显示消息</text>
+	</string>
+	<string id="pda_filter_talk">
+		<text>显示对话</text>
+	</string>
+	<string id="pda_legend_caption">
+		<text>图例</text>
+	</string>
+	<string id="pda_stat_1">
+		<text>生存时间:</text>
+	</string>
+	<string id="pda_stat_2">
+		<text>能量风暴幸存次数:</text>
+	</string>
+	<string id="pda_stat_3">
+		<text>任务完成:</text>
+	</string>
+	<string id="pda_stat_4">
+		<text>杀死的怪物:</text>
+	</string>
+	<string id="pda_stat_5">
+		<text>杀死潜行者:</text>
+	</string>
+	<string id="pda_stat_6">
+		<text>破坏的木箱数量:</text>
+	</string>
+	<string id="pda_stat_7">
+		<text>发现藏物点:</text>
+	</string>
+	<string id="pda_stat_8">
+		<text>脉冲风暴幸存次数:</text>
+	</string>
+	<string id="pda_stat_9">
+		<text>卖掉的PDA:</text>
+	</string>
+	<string id="pda_stat_10">
+		<text>击落的直升机数量:</text>
+	</string>
+	<string id="pda_stat_11">
+		<text>发现的神器数量:</text>
+	</string>
+	<string id="pda_stat_12">
+		<text>帮助受伤的NPC:</text>
+	</string>
+	<string id="pda_stat_13">
+		<text>切换地图次数:</text>
+	</string>
+	<string id="pda_stat_14">
+		<text>对你投降的敌人:</text>
+	</string>
+	<string id="pda_stat_15">
+		<text>打绷带的次数:</text>
+	</string>
+	<string id="pda_stat_16">
+		<text>解锁的PDA条目:</text>
+	</string>
+	<string id="pda_stat_17">
+		<text>已获取的成就:</text>
+	</string>
+	<string id="pda_stat_18">
+		<text>访问过的地图:</text>
+	</string>
+	<string id="pda_stat_money">
+		<text>钱:</text>
+	</string>
+	<string id="pda_stat_mutant_killed">
+		<text>杀死过的最强怪物</text>
+	</string>
+	<string id="st_location">
+		<text>位置:</text>
+	</string>
+	<string id="st_target">
+		<text>目标</text>
+	</string>
+	<string id="st_ui_pda_legend_additional_task">
+		<text>支线任务</text>
+	</string>
+	<string id="st_ui_pda_legend_enemies">
+		<text>敌人</text>
+	</string>
+	<string id="st_ui_pda_legend_friends">
+		<text>朋友</text>
+	</string>
+	<string id="st_ui_pda_legend_leader">
+		<text>阵营领袖</text>
+	</string>
+	<string id="st_ui_pda_legend_main_task">
+		<text>主要任务</text>
+	</string>
+	<string id="st_ui_pda_legend_neutrals">
+		<text>中立</text>
+	</string>
+	<string id="st_ui_pda_legend_scout">
+		<text>指南</text>
+	</string>
+	<string id="st_ui_pda_legend_secrets">
+		<text>隐藏处</text>
+	</string>
+	<string id="st_ui_pda_legend_squad">
+		<text>小队指挥官</text>
+	</string>
+	<string id="st_ui_pda_legend_trader">
+		<text>交易商</text>
+	</string>
+	<string id="trader">
+		<text>交易商</text>
+	</string>
+	<string id="stalker">
+		<text>独行者</text>
+	</string>
+	<string id="ui_logs_center_caption">
+		<text>历史消息</text>
+	</string>
+	<string id="ui_map_btn_center">
+		<text>玩家位置居中</text>
+	</string>
+	<string id="ui_map_btn_down">
+		<text>向下移动</text>
+	</string>
+	<string id="ui_map_btn_left">
+		<text>向左移动</text>
+	</string>
+	<string id="ui_map_btn_legend">
+		<text>显示图例</text>
+	</string>
+	<string id="ui_map_btn_right">
+		<text>向右移动</text>
+	</string>
+	<string id="ui_map_btn_up">
+		<text>向上移动</text>
+	</string>
+	<string id="ui_map_btn_zmreset">
+		<text>重置缩放</text>
+	</string>
+	<string id="ui_map_btn_zoom_in">
+		<text>放大</text>
+	</string>
+	<string id="ui_map_btn_zoom_out">
+		<text>缩小</text>
+	</string>
+	<string id="ui_ranking_center_caption">
+		<text>成就</text>
+	</string>
+	<string id="ui_task_btn_focus_center">
+		<text>任务目标居中</text>
+	</string>
+	<string id="ui_task_btn_focus_center2">
+		<text>任务目标居中</text>
+	</string>
+	<string id="zoom_in_btn_hint">
+		<text>缩放 +</text>
+	</string>
+	<string id="zoom_out_btn_hint">
+		<text>缩放 -</text>
+	</string>
+	<string id="st_ui_pda_legend_mechanic">
+		<text>技师</text>
+	</string>
+	<string id="st_ui_pda_legend_medic">
+		<text>医生</text>
+	</string>
+	<string id="st_ui_pda_legend_barman">
+		<text>酒保</text>
+	</string>
+	<string id="st_ui_pda_legend_special">
+		<text>重要人物</text>
+	</string>
+	<string id="st_ui_pda_companion">
+		<text>同伴</text>
+	</string>
+	<string id="ui_pda_secondary_task">
+		<text>激活的任务</text>
+	</string>
+	<string id="ui_show_second_task_wnd">
+		<text>隐藏或显示任务列表</text>
+	</string>
+	<string id="st_ui_pda_actor_box">
+		<text>个人存储箱</text>
+	</string>
+	<string id="filter_primary_objects_text">
+		<text>区域</text>
+	</string>
+	<string id="filter_quest_npcs_text">
+		<text>重要对象</text>
+	</string>
+	<string id="st_ui_pda_legend_primary_objects">
+		<text>区域</text>
+	</string>
+	<string id="st_jup_b32_has_af">
+		<text>扫描仪检测神器的存在:</text>
+	</string>
+	<string id="st_jup_b32_no_af">
+		<text>据扫描仪探测, 这里没有神器.</text>
+	</string>
+	<string id="st_ui_pda_secret">
+		<text>藏物点</text>
+	</string>
+	<string id="st_ui_pda_sleep_place">
+		<text>床</text>
+	</string>
+	<string id="st_ui_pda_legend_vip">
+		<text>重要的角色</text>
+	</string>
+	<string id="zombie_name">
+		<text>无名氏</text>
+	</string>
+	<string id="arena_enemy">
+		<text>参与者</text>
+	</string>
+	<string id="st_ui_pda_task_unknown_enemy">
+		<text>未知的敌人</text>
+	</string>
+	<string id="st_items_sold">
+		<text>物品出售</text>
+	</string>
+	<string id="st_last_seen">
+		<text>最后出现位置</text>
+	</string>
+	<string id="st_artefacts_found">
+		<text>发现的神器</text>
+	</string>
+	<string id="st_stalkers_killed">
+		<text>杀死潜行者数</text>
+	</string>
+	<string id="st_mutants_killed">
+		<text>杀死的怪物数</text>
+	</string>
+	<string id="st_helicopters downed">
+		<text>击落的直升机数</text>
+	</string>
+	<string id="st_corpse_looted">
+		<text>搜刮的尸体</text>
+	</string>
+	<string id="st_wounded_helped">
+		<text>帮助受伤的NPC</text>
+	</string>
+	<string id="pda_btn_relations">
+		<text>关系</text>
+	</string>
+	<string id="pda_btn_relations_hint">
+		<text>显示阵营关系</text>
+	</string>
+	<string id="pda_relations_header">
+		<text>阵营关系</text>
+	</string>
+	<string id="pda_companions_header">
+		<text>同伴</text>
+	</string>
+	<string id="pda_table_value_on">
+		<text>显示文本</text>
+	</string>
+	<string id="pda_table_value_off">
+		<text>显示数值</text>
+	</string>
+	<string id="pda_companions_auto">
+		<text>刷新</text>
+	</string>
+	<string id="pda_show_enemy">
+		<text>显示敌人</text>
+	</string>
+	
+	<string id="st_pda_mode_on">
+		<text>开启</text>
+	</string>
+	<string id="st_pda_mode_off">
+		<text>关闭</text>
+	</string>
+	<string id="st_pda_mode_dist_far">
+		<text>远</text>
+	</string>
+	<string id="st_pda_mode_dist_near">
+		<text>近</text>
+	</string>
+	<string id="st_pda_mode_true">
+		<text>是</text>
+	</string>
+	<string id="st_pda_mode_false">
+		<text>否</text>
+	</string>
+	<string id="st_pda_mode_enabled">
+		<text>启用</text>
+	</string>
+	<string id="st_pda_mode_disabled">
+		<text>禁用</text>
+	</string>
+	<string id="st_pda_distance_state_far">
+		<text>距离保持-远</text>
+	</string>
+	<string id="st_pda_distance_state_near">
+		<text>距离保持-近</text>
+	</string>
+	<string id="st_pda_cant_trade">
+		<text>任务相关的潜行者不能交易</text>
+	</string>
+	<!-- PDA Relations Action list -->
+	<string id="st_mm_pda_statistics">
+		<text>统计数据</text>
+	</string>
+	<string id="st_pda_action_1__1">
+		<text>借出物品</text>
+	</string>
+	<string id="st_pda_action_1__2">
+		<text>命令</text>
+	</string>
+	<string id="st_pda_action_1__2_2">
+		<text>行动</text>
+	</string>
+	<string id="st_pda_action_1__2_2_2_on">
+		<text>跟随</text>
+	</string>
+	<string id="st_pda_action_1__2_2_2_off">
+		<text>等待</text>
+	</string>
+	<string id="st_pda_action_1__2_2_3_on">
+		<text>距离 (近)</text>
+	</string>
+	<string id="st_pda_action_1__2_2_3_off">
+		<text>距离 (远)</text>
+	</string>
+	<string id="st_pda_action_1__2_3">
+		<text>战斗</text>
+	</string>
+	<string id="st_pda_action_1__2_4">
+		<text>拾取</text>
+	</string>
+	<string id="st_pda_action_1__2_5_on">
+		<text>潜行 (禁用)</text>
+	</string>
+	<string id="st_pda_action_1__2_5_off">
+		<text>潜行 (启用)</text>
+	</string>
+	<string id="st_pda_action_1__2_3_2">
+		<text>被动</text>
+	</string>
+	<string id="st_pda_action_1__2_3_3">
+		<text>防御</text>
+	</string>
+	<string id="st_pda_action_1__2_3_4">
+		<text>攻击</text>
+	</string>
+	<string id="st_pda_action_1__2_4_2_on">
+		<text>物品 (禁用)</text>
+	</string>
+	<string id="st_pda_action_1__2_4_2_off">
+		<text>物品 (启用)</text>
+	</string>
+	<string id="st_pda_action_1__2_4_3_on">
+		<text>队友搜刮尸体 (关闭)</text>
+	</string>
+	<string id="st_pda_action_1__2_4_3_off">
+		<text>队友搜刮尸体 (启用)</text>
+	</string>
+	<string id="pda_btn_contacts">
+		<text>联系人</text>
+	</string>
+	<string id="pda_btn_contacts_hint">
+		<text>显示附近的联系人</text>
+	</string>
+	<string id="pda_show_known_contacts">
+		<text>已知联系人</text>
+	</string>
+	<string id="pda_msg_all">
+		<text>全部</text>
+	</string>
+
+	<string id="st_pda_action_back">
+		<text>后退</text>
+	</string>
+	<string id="st_mm_pda_stalkers_killed">
+		<text>已杀死的潜行者</text>
+	</string>
+	<string id="st_mm_pda_mutants_killed">
+		<text>已杀死的变异生物</text>
+	</string>
+	<string id="st_mm_pda_artes_found">
+		<text>已发现的神器</text>
+	</string>
+	<string id="st_mm_pda_items_sold">
+		<text>已出售的物品</text>
+	</string>
+	<string id="st_mm_pda_helicopters downed">
+		<text>已击落的直升机</text>
+	</string>
+	<string id="st_mm_pda_corpse_looted">
+		<text>已搜刮的尸体</text>
+	</string>
+	<string id="st_mm_pda_wounded_helped">
+		<text>已帮助受伤的NPC</text>
+	</string>
+	<string id="st_mm_pda_level_travel">
+		<text>关卡旅行</text>
+	</string>
+
+	<string id="st_mm_pda_dismissable">
+		<text>解雇</text>
+	</string>
+	<string id="st_mm_pda_stealth">
+		<text>潜行</text>
+	</string>
+	<string id="st_mm_pda_keep_distance">
+		<text>保持距离</text>
+	</string>
+	<string id="st_mm_pda_loot_corpses">
+		<text>搜刮尸体</text>
+	</string>
+	<string id="st_mm_pda_pickup_items">
+		<text>拾取物品</text>
+	</string>
+	<string id="st_mm_pda_combat">
+		<text>战斗</text>
+	</string>
+	<string id="st_mm_pda_movement">
+		<text>移动</text>
+	</string>
+	<string id="st_mm_pda_states">
+		<text>状态</text>
+	</string>
+	<string id="st_mm_pda_location">
+		<text>位置</text>
+	</string>
+	<string id="st_pda_fast_travel">
+		<text>快速旅行</text>
+	</string>
+	<string id="st_pda_display_values">
+		<text>显示数值</text>
+	</string>
+	<string id="st_distance_to">
+		<text>距离...</text>
+	</string>
+	
+	<string id="st_stash_of">
+		<text>...藏物点</text>
+	</string>
+	
+<!-- Radio -->
+	<string id="pda_btn_radio">
+		<text>广播</text>
+	</string>
+	<string id="pda_btn_radio_title">
+		<text>广播</text>
+	</string>
+	<string id="pda_btn_plyr_title">
+		<text>音乐播放器</text>
+	</string>
+	<string id="pda_btn_radio_hint">
+		<text>显示收音机和音乐播放器</text>
+	</string>
+	<string id="ui_st_radio_playing">
+		<text>播放</text>
+	</string>
+	<string id="ui_st_radio_playlist">
+		<text>播放列表</text>
+	</string>
+	<string id="ui_st_radio_loop_off">
+		<text>关闭循环</text>
+	</string>
+	<string id="ui_st_radio_loop_all">
+		<text>循环所有</text>
+	</string>
+	<string id="ui_st_radio_loop_one">
+		<text>单曲循环</text>
+	</string>
+	<string id="ui_st_radio_shuffle_on">
+		<text>随机播放</text>
+	</string>
+	<string id="ui_st_radio_shuffle_off">
+		<text>关闭随机播放</text>
+	</string>
+	
+<!-- Warfare -->
+	<string id="pda_all_levels">
+		<text>所有关卡</text>
+	</string>
+	<string id="pda_current_level">
+		<text>当前关卡</text>
+	</string>
+	<string id="ui_st_pda_warfare_squads">
+		<text>总小队</text>
+	</string>
+	<string id="ui_st_pda_warfare_capped_smarts">
+		<text>总前哨</text>
+	</string>
+	<string id="ui_st_pda_warfare_major_hold">
+		<text>基地</text>
+	</string>
+	<string id="ui_st_pda_warfare_dominance">
+		<text>%s保住了%s在%s的前哨%s</text>
+	</string>
+	<string id="ui_st_pda_warfare_zone">
+		<text>特异区</text>
+	</string>
+	
+</string_table>

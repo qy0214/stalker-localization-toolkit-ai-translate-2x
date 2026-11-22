@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_RF_package_patch_title">
+		<text>無線電包裹選項</text>
+	</string>
+	
+	<string id="ui_mcm_menu_RF_package_patch">
+		<text>無線電包裹選項</text>
+	</string>
+	
+	<string id="ui_mcm_RF_package_patch_reminders">
+		<text>再次提醒未拾取包裹:</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_transition">
+		<text>室外每次載入地圖時</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_local">
+		<text>前往包裹所在地圖時</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_never">
+		<text>不提醒</text>
+	</string>
+	
+	<string id="ui_mcm_RF_package_patch_upgrades">
+		<text>包含的升級套件</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_vanilla">
+		<text>原版升級套件</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_streamlined">
+		<text>Arti的簡化升級套件(GAMMA預設)</text>
+	</string>
+	
+	<string id="ui_mcm_RF_package_patch_unpacking">
+		<text>拆包方式:</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_manual_unpack">
+		<text>右鍵手動拆包</text>
+	</string>
+	
+	<string id="ui_mcm_lst_switch_mode_auto_unpack">
+		<text>拾取后自動拆包</text>
+	</string>
+	
+</string_table>

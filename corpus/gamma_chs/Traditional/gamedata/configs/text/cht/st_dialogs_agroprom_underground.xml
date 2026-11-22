@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- (Bandit ground leader) -->
+	<string id="st_agr_u_bandit_boss_dialog_start_0">
+		<text>你是誰... 你他媽在這兒幹什麼?!</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_start_1a">
+		<text>來找寶藏, 你找到什麼沒?</text>
+	</string>
+		<string id="st_agr_u_bandit_boss_dialog_start_1a_1">
+			<text>不, 我還沒有"找到"任何東西. 你他媽在開玩笑嗎? 你得先聽聽下面傳來的咆哮聲, 然後再想著找寶藏.</text>
+		</string>
+	<string id="st_agr_u_bandit_boss_dialog_start_1b">
+		<text>探索下再說吧, 你永遠不會知道能在這裡找到什麼.</text>
+	</string>
+		<string id="st_agr_u_bandit_boss_dialog_start_1b_1">
+			<text>在特異區所有你可以探索的地方中, 你最終卻來到了這... 蠢得可愛.</text>
+		</string>
+	<string id="st_agr_u_bandit_boss_dialog_start_1c">
+		<text>我有任務在身.</text>
+	</string>
+		<string id="st_agr_u_bandit_boss_dialog_start_1c_1">
+			<text>呃, 我明白了... 你一定很不走運才會到這裡來, 咱們都是同一根繩上的螞蚱.</text>
+		</string>
+
+	<string id="st_agr_u_bandit_boss_dialog_ask_0">
+		<text>那麼你呢? 你們怎麼到這裡來的?</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_ask_1">
+		<text>我叫瑞佛. 我和兄弟們幾天前就到了這裡, 多虧了"匪王"蘇坦. "沒關係, 孩子們, 那個地方很久以前就被遺棄了", "沒什麼好害怕的". 拋棄個屁... 昨晚那些憤怒的東西不知從哪冒出來的時候我們差點被殺了. 之後我們撤退到了這裡, 從那時起就沒動過.
+		\n我們應該在這附近尋找任何有用的東西. 據傳聞, 史特洛克在這裡的某個地方有個藏身處, 他把自己的東西放在那裡. 那個蘇二蛋為什麼這麼在乎? 我真的不知道. 但他說如果我們不帶任何有用的東西回來, 他就把我們喂變異犬!</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_ask_2">
+		<text>聽起來情況挺糟, 有什麼我可以幫的?</text>
+	</string>
+		<string id="st_agr_u_bandit_boss_dialog_ask_5">
+			<text>你願意幫忙?嗯... 我可以接受你的幫忙, 但是風險太他媽大了, 兄弟...</text>
+		</string>
+			<string id="st_agr_u_bandit_boss_dialog_ask_6">
+				<text>不試試怎麼知道, 我們一起找怎麼樣?</text>
+			</string>
+				<string id="st_agr_u_bandit_boss_dialog_ask_7">
+					<text>他媽的... 我不知道, 夥計... 我不想再看到那些該死的東西...
+					\n...</text>
+				</string>
+					<string id="st_agr_u_bandit_boss_dialog_ask_72">
+						<text>...</text>
+					</string>
+					<string id="st_agr_u_bandit_boss_dialog_ask_73">
+						<text>去他媽的... 無論如何, 我不能空手而歸, 我們開始吧.</text>
+					</string>
+					<string id="st_agr_u_bandit_boss_dialog_ask_71">
+						<text>出發吧.</text>
+					</string>
+			<string id="st_agr_u_bandit_boss_dialog_ask_8">
+				<text>我四處看看, 如果找到了什麼, 我會跟你講的.</text>
+			</string>
+				<string id="st_agr_u_bandit_boss_dialog_ask_81">
+					<text>你瘋了, 你知道嗎? 祝你搜索順利.</text>
+				</string>
+	<string id="st_agr_u_bandit_boss_dialog_ask_3">
+		<text>我明白了, 也祝你探索順利.</text>
+	</string>
+	
+	<string id="st_agr_u_bandit_boss_dialog_ask_4">
+		<text>你說的是這些檔案?</text>
+	</string>
+
+	<string id="st_agr_u_bandit_boss_dialog_give_docs_0">
+		<text>這兒, 我發現了這個公文包.</text>
+	</string>
+	
+	<string id="st_agr_u_bandit_boss_dialog_ask_9">
+			<text>什麼... 真的假的?!</text>
+		</string>
+			<string id="st_agr_u_bandit_boss_dialog_ask_10">
+				<text>甭想太多, 過來, 看看.</text>
+			</string>
+			<string id="st_agr_u_bandit_boss_dialog_ask_11">
+				<text>對不住了, 這個公文包我要留著.</text>
+			</string>
+				<string id="st_agr_u_bandit_boss_dialog_ask_12">
+					<text>你... 你確定嗎?</text>
+				</string>
+					<string id="st_agr_u_bandit_boss_dialog_ask_13">
+						<text>是的.</text>
+					</string>
+					<string id="st_agr_u_bandit_boss_dialog_ask_14">
+						<text>開個玩笑, 你拿走吧.</text>
+					</string>
+						<string id="st_agr_u_bandit_boss_dialog_ask_15">
+							<text>我沒時間聽你廢話.</text>
+						</string>
+					
+	<string id="st_agr_u_bandit_boss_dialog_give_docs_1">
+		<text>老實說, 我不知道該說什麼好了. 我們終於可以離開這鬼地方了. 我要帶著這些檔案回去找"匪王"蘇坦, 一旦我們安排好一切, 這裡的兄弟會停留一會兒.
+		\n你呢? 想和我一起去嗎?我會確保"匪王"蘇坦慷慨地付錢給你.</text>
+	</string>
+		<string id="st_agr_u_bandit_boss_dialog_give_docs_2">
+			<text>我還有別的事要做, 回頭見.</text>
+		</string>
+			<string id="st_agr_u_bandit_boss_dialog_give_docs_3">
+				<text>呃, 在你走之前... 拿著這個. 在我們探索這個地方的時候, 我在一個發光的異常點發現了它. 把它當作你幫助我的回報吧. 也許你可以好好利用它.</text>
+			</string>
+			<string id="st_agr_u_bandit_boss_dialog_give_docs_4">
+				<text>好的兄弟, 謝謝了.</text>
+			</string>
+		<string id="st_agr_u_bandit_boss_dialog_give_docs_5">
+			<text>行了, 我們走吧.</text>
+		</string>
+
+	<string id="st_agr_u_bandit_boss_dialog_reask">
+		<text>好的, 我可以幫你的人搜索.</text>
+	</string>
+	
+	<string id="st_agr_u_bandit_boss_dialog_arrived_0">
+		<text>開始吧.</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_arrived_1">
+		<text>謝謝, 夥計, 我不會忘記你的幫助的. 拿著這個. 我... 呃... 我們之前探險的時候發現了這個閃亮的神器. 把它當作你的麻煩的報酬吧.</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_arrived_2">
+		<text>謝謝. 你現在打算做什麼?</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_arrived_3">
+		<text>我會把這個公文包交給"匪王"蘇坦, 讓他知道發生了什麼事. 真高興這一切都結束了, 如果我再見到你, 麻煩請我一杯. 我想我們都需要一點時間緩解這事帶來的心理陰影.</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_dialog_arrived_4">
+		<text>好的, 保重.</text>
+	</string>
+
+	<string id="st_agr_u_bandit_boss_news_on_going">
+		<text>好了, 兄弟們, 我和我們的朋友要去隧道了. 你們留在這兒看守這地方.</text>
+	</string>
+	<string id="st_agr_u_bandit_boss_news_on_going_reply">
+		<text>小心, 兄弟.</text>
+	</string>
+	
+	<string id="agr_u_bandit_boss_task_1_name">
+		<text>地下探險</text>
+	</string>
+	<string id="agr_u_bandit_boss_task_1_desc_0">
+		<text>瑞佛, 他在農研所地下設施中搜索檔案, 不管是研究所的原始研究論文, 還是像史特洛克這樣的著名潛行者的筆記. 搜索每一個角落和縫隙, 尋找有價值的資訊.</text>
+	</string>
+	<string id="agr_u_bandit_boss_task_1_desc_1">
+		<text>帶著你的發現回去找瑞佛.</text>
+	</string>
+	<string id="agr_u_bandit_boss_task_1_desc_2">
+		<text>護送瑞佛到黑谷的土匪基地.</text>
+	</string>
+	<string id="agr_u_bandit_boss_task_1_desc_3">
+		<text>與瑞佛對話.</text>
+	</string>
+</string_table>

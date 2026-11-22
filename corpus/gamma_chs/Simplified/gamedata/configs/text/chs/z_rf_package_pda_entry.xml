@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<string id = "encyclopedia__notes_rfpackages">
+		<text>无线电包裹</text>
+	</string>
+	
+	<string id = "encyclopedia__notes_rfpackages_text">
+		<text>
+		%c[pda_white]某个神秘人为你留的带有简易发信器的包裹,%c[ui_gray_1] 这些包裹内包含了药物, 修理工具, 弹药补给之类的物品, 并可能还有一些额外的高价值物品, 爆炸物, 升级套件, 或异能神器等等
+		\n
+		\n%c[pda_white]包裹的投放是有队列顺序的, 你在任何阵营内每获得250点好感时, 一个包裹就会进入投放队列, 并计划投放至与你突破好感阈值时的地图直接相邻的地图中
+		\n
+		\n%c[pda_white]你同时只会激活队列中的一个包裹%c[ui_gray_1] 你可以选择去拿取包裹, 或是选择使用PDA中的右键菜单来"取消无线电包裹", 取消包裹会使其从包裹队列中移除, 所以, 如果队列中只有这一个包裹, 则需要再次获得250点阵营好感才能收到下一个
+		\n
+		\n%c[pda_white]你可以设置何时会出现包裹提醒, 或是设置拾取时是否自动打开包裹, 以及包裹中掉落原版升级套件还是mod版等等, 这些选项都可以在MCM的"无线电包裹选项"中设置, 如果你没有安装MCM, 可以编辑TB_RF_Receiver_Packages.script文件%c[ui_gray_1]
+		</text>
+	</string>
+</string_table>

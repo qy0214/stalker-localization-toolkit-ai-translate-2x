@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_vityaznew">
+		<text>PP-19 "骑士"-SN</text>
+	</string>
+
+	<string id="st_wpn_vityaznew_descr">
+		<text>2004 年设计的PP-19的变体, 带有30发9x19毫米弹匣, 它基于AK-74并与AK-74有许多共同点, 但其实是基于PP-19 Bizon发展而来, 它被巡逻队, 俄罗斯交警, 俄罗斯安全警察和内务部单位使用
+		\n原名"Vityaz", 也就是俄语中"骑士"的意思		\n这是"SN"变体，这意味着它有一个带导轨的防尘盖但没有燕尾侧轨, 因此它可以使用北约瞄准镜但不能使用华约瞄准镜\n\n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[0,255,255,255]起源: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]厂商:  %c[ui_gray_1]卡拉什尼科夫相关厂商\n
+		%c[d_cyan] • %c[0,255,255,255]生产日期: %c[ui_gray_1]2008\n
+		</text>
+	</string>
+
+</string_table>

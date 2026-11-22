@@ -1,0 +1,2401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!--
+	Options
+-->
+
+	<string id="ui_mm_options_n">
+		<text>設定</text>
+	</string>
+	<string id="ui_mm_btn_apply_all">
+		<text>全部採用</text>
+	</string>
+	
+<!-- Options menu -->
+	<string id="ui_mm_menu_video">
+		<text>影象設定</text>
+	</string>
+		<string id="ui_mm_menu_basic">
+			<text>基礎影象</text>
+		</string>
+		<string id="ui_mm_menu_advanced">
+			<text>進階影象</text>
+		</string>
+		<string id="ui_mm_menu_hud">
+			<text>UI/HUD</text>
+		</string>
+		<string id="ui_mm_menu_player">
+			<text>玩家</text>
+		</string>
+		<string id="ui_mm_menu_weather">
+			<text>天氣設定</text>
+		</string>
+		<string id="ui_mm_menu_night">
+			<text>夜晚設定</text>
+		</string>
+	<string id="ui_mm_menu_sound">
+		<text>聲音設定</text>
+	</string>
+		<string id="ui_mm_menu_general">
+			<text>基礎</text>
+		</string>
+		<string id="ui_mm_menu_environment">
+			<text>環境</text>
+		</string>
+		<string id="ui_mm_menu_radio">
+			<text>收音機</text>
+		</string>
+	<string id="ui_mm_menu_control">
+		<text>控制</text>
+	</string>
+		<string id="ui_mm_menu_keybind">
+			<text>鍵位設定</text>
+		</string>
+	<string id="ui_mm_menu_gameplay">
+		<text>遊戲設定</text>
+	</string>
+		<string id="ui_mm_menu_economy_diff">
+			<text>程序難度 (可調整的)</text>
+		</string>
+		<string id="ui_mm_menu_gameplay_diff">
+			<text>生存難度 (可調整的)</text>
+		</string>
+		<string id="ui_mm_menu_disguise">
+			<text>偽裝</text>
+		</string>
+		<string id="ui_mm_menu_fast_travel">
+			<text>快速旅行</text>
+		</string>
+		<string id="ui_mm_menu_backpack_travel">
+			<text>利用揹包快速旅行</text>
+		</string>
+	<string id="ui_mm_menu_other">
+		<text>其他</text>
+	</string>
+	
+	<string id="ui_mm_menu_alife">
+		<text>特異區設定</text>
+	</string>
+		<string id="ui_mm_menu_event">
+			<text>事件</text>
+		</string>
+		<string id="ui_mm_menu_warfare">
+			<text>戰區模式</text>
+		</string>
+			<string id="ui_mm_menu_azazel">
+				<text>詛咒模式</text>
+			</string>
+			<string id="ui_mm_menu_stalker">
+				<text>獨行者</text>
+			</string>
+			<string id="ui_mm_menu_bandit">
+				<text>土匪</text>
+			</string>
+			<string id="ui_mm_menu_csky">
+				<text>晴空</text>
+			</string>
+			<string id="ui_mm_menu_army">
+				<text>軍方</text>
+			</string>
+			<string id="ui_mm_menu_freedom">
+				<text>自由軍</text>
+			</string>
+			<string id="ui_mm_menu_dolg">
+				<text>紀律團</text>
+			</string>
+			<string id="ui_mm_menu_ecolog">
+				<text>生態學家</text>
+			</string>
+			<string id="ui_mm_menu_killer">
+				<text>傭兵</text>
+			</string>
+			<string id="ui_mm_menu_monolith">
+				<text>黑石</text>
+			</string>
+			<string id="ui_mm_menu_renegade">
+				<text>叛節者</text>
+			</string>
+			<string id="ui_mm_menu_greh">
+				<text>原罪</text>
+			</string>
+			<string id="ui_mm_menu_isg">
+				<text>UNISG</text>
+			</string>
+			<string id="ui_mm_menu_zombied">
+				<text>殭屍</text>
+			</string>
+		<string id="ui_mm_menu_dynamic_news">
+			<text>動態新聞</text>
+		</string>
+
+<!-- Buttons -->
+	<string id="ui_mm_apply">
+		<text>應用</text>
+	</string>
+	<string id="ui_mm_reset">
+		<text>重置</text>
+	</string>
+	<string id="ui_mm_default">
+		<text>預設值</text>
+	</string>
+	<string id="ui_mm_cancel">
+		<text>取消</text>
+	</string>
+	<string id="ui_mm_preset">
+		<text>預設值</text>
+	</string>
+	
+<!-- Messages -->
+	<string id="ui_mm_warning_pending">
+		<text>有 (%s) 個待更改選項.</text>
+	</string>
+	<string id="ui_mm_warning_economy_diff_not_level_present">
+		<text>程序難度係數只能在一個載入的遊戲中使用.</text>
+	</string>
+	<string id="ui_mm_warning_gameplay_diff_not_level_present">
+		<text>生存難度係數只能在一個載入的遊戲中使用.</text>
+	</string>
+	<string id="ui_mm_change_done_restart">
+		<text>變更已儲存\n但得在重啟遊戲后才能生效!</text>
+	</string>
+	<string id="ui_mm_change_done">
+		<text>變更已儲存</text>
+	</string>
+	<string id="ui_mm_discard_changes">
+		<text>未更改的選項將會被還原.繼續?</text>
+	</string>
+	
+	
+	<!-- Video = Basic -->
+	<string id="ui_mm_title_video_basic">
+		<text>畫面設定</text>
+	</string>
+	
+	<string id="ui_mm_lst_renderer_r1">
+		<text>DirectX 8 (基礎)</text>
+	</string>
+	<string id="ui_mm_lst_renderer_r2a">
+		<text>DirectX 9 (基礎)</text>
+	</string>
+	<string id="ui_mm_lst_renderer_r2">
+		<text>DirectX 9 (普通)</text>
+	</string>
+	<string id="ui_mm_lst_renderer_r2.5">
+		<text>DirectX 9 (增強)</text>
+	</string>
+	<string id="ui_mm_lst_renderer_r3">
+		<text>DirectX 10 (增強)</text>
+	</string>
+	<string id="ui_mm_lst_renderer_r4">
+		<text>DirectX 11 (增強)</text>
+	</string>
+	<string id="ui_mm_lst_pres_default">
+		<text>中</text>
+	</string>
+	<string id="ui_mm_lst_pres_extreme">
+		<text>極致</text>
+	</string>
+	<string id="ui_mm_lst_pres_high">
+		<text>高</text>
+	</string>
+	<string id="ui_mm_lst_pres_low">
+		<text>低</text>
+	</string>
+	<string id="ui_mm_lst_pres_minimum">
+		<text>土豆</text>
+	</string>
+	<string id="ui_mm_lst_fullscreen">
+		<text>全屏</text>
+	</string>
+	<string id="ui_mm_lst_borderless">
+		<text>無邊框</text>
+	</string>
+	<string id="ui_mm_lst_windowed">
+		<text>視窗</text>
+	</string>
+	
+	<string id="ui_mm_video_basic_renderer">
+		<text>渲染型別</text>
+	</string>
+	<string id="ui_mm_video_basic_preset">
+		<text>質量設定</text>
+	</string>
+	<string id="ui_mm_video_basic_resolution">
+		<text>解析度</text>
+	</string>
+	<string id="ui_mm_video_basic_gamma">
+		<text>伽馬值</text>
+	</string>
+	<string id="ui_mm_video_basic_contrast">
+		<text>對比度</text>
+	</string>
+	<string id="ui_mm_video_basic_brightness">
+		<text>亮度</text>
+	</string>
+	<string id="ui_mm_video_basic_hud_fov">
+		<text>HUD FOV</text>
+	</string>
+	<string id="ui_mm_video_basic_fov">
+		<text>FOV</text>
+	</string>
+	<string id="ui_mm_video_basic_screen_mode">
+		<text>視窗模式</text>
+	</string>
+	<string id="ui_mm_video_basic_lighting">
+		<text>基本亮度設定</text>
+	</string>
+	
+	
+	<!-- Video = Advanced -->
+	<string id="ui_mm_title_video_advanced">
+		<text>進階影象設定</text>
+	</string>
+	
+	<string id="ui_mm_prst_video_default">
+		<text>中</text>
+	</string>
+	<string id="ui_mm_prst_video_extreme">
+		<text>極致</text>
+	</string>
+	<string id="ui_mm_prst_video_high">
+		<text>高</text>
+	</string>
+	<string id="ui_mm_prst_video_low">
+		<text>低</text>
+	</string>
+	<string id="ui_mm_prst_video_minimum">
+		<text>土豆</text>
+	</string>
+	
+	<string id="ui_mm_lst_low">
+		<text>低</text>
+	</string>
+	<string id="ui_mm_lst_medium">
+		<text>中</text>
+	</string>
+	<string id="ui_mm_lst_high">
+		<text>高</text>
+	</string>
+	<string id="ui_mm_lst_ultra">
+		<text>超高</text>
+	</string>
+	<string id="ui_mm_lst_extreme">
+		<text>極高</text>
+	</string>
+	<string id="ui_mm_lst_off">
+		<text>關閉</text>
+	</string>
+	<string id="ui_mm_lst_default">
+		<text>預設</text>
+	</string>
+	<string id="ui_mm_lst_hbao">
+		<text>HBAO</text>
+	</string>
+	<string id="ui_mm_lst_hdao">
+		<text>HDAO</text>
+	</string>
+	<string id="ui_mm_lst_x2">
+		<text>x2</text>
+	</string>
+	<string id="ui_mm_lst_x4">
+		<text>x4</text>
+	</string>
+	<string id="ui_mm_lst_x8">
+		<text>x8</text>
+	</string>
+	<string id="ui_mm_lst_atest_msaa_dx10_0">
+		<text>使用 DX10</text>
+	</string>
+	<string id="ui_mm_lst_atest_msaa_dx10_1">
+		<text>使用 DX10.1</text>
+	</string>
+	<string id="ui_mm_lst_volumetric">
+		<text>體積</text>
+	</string>
+	<string id="ui_mm_lst_screen_space">
+		<text>螢幕空間</text>
+	</string>
+	<string id="ui_mm_lst_combined">
+		<text>兩者皆有</text>
+	</string>
+	
+	<string id="ui_mm_video_advanced_ai_torch">
+		<text>潛行者可以使用頭燈</text>
+	</string>
+	<string id="ui_mm_video_advanced_v_sync">
+		<text>垂直同步</text>
+	</string>
+	<string id="ui_mm_video_advanced_refresh_60hz">
+		<text>60Hz重新整理率</text>
+	</string>
+	<string id="ui_mm_video_advanced_framelimit">
+		<text>FPS 限制</text>
+	</string>
+	<string id="ui_mm_video_advanced_framelimit_desc">
+		<text>這個滑塊允許你設定一個自定義的FPS上限."0"表示沒有上限.</text>
+	</string>
+	
+	<string id="ui_mm_header_rendering_dist">
+		<text>渲染距離</text>
+	</string>
+	<string id="ui_mm_video_advanced_vis_distance">
+		<text>世界</text>
+	</string>
+	<string id="ui_mm_video_advanced_optimize_static_geom">
+		<text>靜態對像</text>
+	</string>
+	<string id="ui_mm_video_advanced_optimize_dynamic_geom">
+		<text>動態對像</text>
+	</string>
+	<string id="ui_mm_video_advanced_optimize_shadow_geom">
+		<text>遠處陰影消除</text>
+	</string>
+	<string id="ui_mm_video_advanced_optimize_shadow_geom_desc">
+		<text>啟用這一功能可以通過移除遠處的陰影(您通常無法看到它們)來提高效能.
+		\n可以導致很長的陰影被移除(在日出/日落時可以看到).
+		</text>
+	</string>
+	
+	<string id="ui_mm_header_rendering_quality">
+		<text>渲染品質</text>
+	</string>
+	<string id="ui_mm_video_advanced_texture_lod">
+		<text>材質細節</text>
+	</string>
+	<string id="ui_mm_video_advanced_mipbias">
+		<text>貼圖偏移量</text>
+	</string>
+	<string id="ui_mm_video_advanced_mipbias_desc">
+		<text>設定遠處紋理的質量和銳度.</text>
+	</string>
+	<string id="ui_mm_video_advanced_geometry_lod">
+		<text>物體細節</text>
+	</string>
+	<string id="ui_mm_video_advanced_detail_textures">
+		<text>紋理細節</text>
+	</string>
+	<string id="ui_mm_video_advanced_tf_aniso">
+		<text>各向異性過濾</text>
+	</string>
+	<string id="ui_mm_video_advanced_ssample">
+		<text>抗鋸齒</text>
+	</string>
+	<string id="ui_mm_video_advanced_ssample_list">
+		<text>抗鋸齒</text>
+	</string>
+	<string id="ui_mm_video_advanced_smaa">
+		<text>SMAA</text>
+	</string>
+	<string id="ui_mm_video_advanced_detail_bump">
+		<text>細節凹凸</text>
+	</string>
+		<string id="ui_mm_video_advanced_steep_parallax">
+		<text>視差貼圖</text>
+	</string>
+	<string id="ui_mm_video_advanced_enable_tessellation">
+		<text>曲面細分</text>
+	</string>
+
+	<string id="ui_mm_header_grass">
+		<text>草</text>
+	</string>
+	<string id="ui_mm_video_advanced_detail_density">
+		<text>草密度</text>
+	</string>
+	<string id="ui_mm_video_advanced_detail_radius">
+		<text>草渲染距離</text>
+	</string>
+	<string id="ui_mm_video_advanced_detail_height">
+		<text>草的大小</text>
+	</string>
+	<string id="ui_mm_video_advanced_grass_shadow">
+		<text>草陰影</text>
+	</string>
+	<string id="ui_mm_video_advanced_sun_details">
+		<text>動態草陰影</text>
+	</string>
+	
+	<string id="ui_mm_header_lighting">
+		<text>光照</text>
+	</string>
+	<string id="ui_mm_video_advanced_actor_shadow">
+		<text>主角陰影</text>
+	</string>
+	<string id="ui_mm_video_advanced_gloss_factor">
+		<text>反射(光澤度)</text>
+	</string>
+	<string id="ui_mm_video_advanced_slight_fade">
+		<text>光照距離</text>
+	</string>
+	<string id="ui_mm_video_advanced_ls_squality">
+		<text>陰影質量</text>
+	</string>
+	<string id="ui_mm_video_advanced_sun">
+		<text>陽光陰影</text>
+	</string>
+	<string id="ui_mm_video_advanced_sun_quality">
+		<text>陽光陰影質量</text>
+	</string>
+	<string id="ui_mm_video_advanced_sunshafts_mode">
+		<text>太陽光線模式</text>
+	</string>
+	<string id="ui_mm_video_advanced_sunshafts_quality">
+		<text>太陽光線質量(體積)</text>
+	</string>
+	<string id="ui_mm_video_advanced_sunshafts_value">
+		<text>太陽光線主要強度</text>
+	</string>
+	<string id="ui_mm_video_advanced_sunshafts_min">
+		<text>太陽光線基礎強度</text>
+	</string>
+	<string id="ui_mm_video_advanced_ssao_mode">
+		<text>SSAO 模式</text>
+	</string>
+	<string id="ui_mm_video_advanced_ssao">
+		<text>SSAO 質量</text>
+	</string>
+	<string id="ui_mm_video_advanced_volumetric_lights">
+		<text>體積光</text>
+	</string>
+	
+	
+	<string id="ui_mm_video_advanced_msaa_alphatest">
+		<text>Alphatest平滑處理</text>
+	</string>
+	<string id="ui_mm_video_advanced_msaa_opt">
+		<text>優化平滑處理</text>
+	</string>
+
+	<string id="ui_mm_header_effects">
+		<text>特效</text>
+	</string>
+	<string id="ui_mm_video_advanced_soft_water">
+		<text>水面柔光</text>
+	</string>
+	<string id="ui_mm_video_advanced_soft_particles">
+		<text>柔和粒子</text>
+	</string>
+	<string id="ui_mm_video_advanced_dof_enable">
+		<text>景深</text>
+	</string>
+	<string id="ui_mm_video_advanced_mblur_enable">
+		<text>動態模糊</text>
+	</string>
+	<string id="ui_mm_video_advanced_mblur">
+		<text>動態模糊層數</text>
+	</string>
+	<string id="ui_mm_video_advanced_dynamic_wet_surfaces">
+		<text>物體表面濕潤</text>
+	</string>
+	<string id="ui_mm_video_advanced_volumetric_smoke">
+		<text>體積煙</text>
+	</string>
+	
+
+	
+	<!-- Video = HUD -->
+	<string id="ui_mm_title_hud">
+		<text>UI/HUD</text>
+	</string>
+	
+	<string id="ui_mm_video_hud_show_crosshair">
+		<text>顯示準星（菜鳥才選）</text>
+	</string>
+	<string id="ui_mm_video_hud_crosshair_dist">
+		<text>準星顯示目標距離</text>
+	</string>
+	<string id="ui_mm_video_hud_dynamic_crosshair">
+		<text>動態準星</text>
+	</string>
+	<string id="ui_mm_video_hud_crosshair_clr_a">
+		<text>十字線顏色 (Alpha)</text>
+	</string>
+	<string id="ui_mm_video_hud_crosshair_clr_r">
+		<text>十字線顏色 (紅)</text>
+	</string>
+	<string id="ui_mm_video_hud_crosshair_clr_g">
+		<text>十字線顏色 (綠)</text>
+	</string>
+	<string id="ui_mm_video_hud_crosshair_clr_b">
+		<text>十字線顏色 (藍)</text>
+	</string>
+	<string id="ui_mm_video_hud_show_wpn">
+		<text>顯示武器</text>
+	</string>
+	<string id="ui_mm_video_hud_tips_desc">
+		<text>當指向NPC時顯示他們的名字.顏色代表它們與玩家的關係, 這讓玩家更容易識別敵人.</text>
+	</string>
+	<string id="ui_mm_video_hud_show_tracers">
+		<text>顯示曳光彈</text>
+	</string>
+	<string id="ui_mm_video_hud_show_hud">
+		<text>顯示 HUD</text>
+	</string>
+	<string id="ui_mm_video_hud_show_slots">
+		<text>顯示神器欄</text>
+	</string>
+	<string id="ui_mm_video_hud_show_minimap">
+		<text>顯示小地圖</text>
+	</string>
+	<string id="ui_mm_video_hud_show_enemy_health">
+		<text>顯示敵人血條</text>
+	</string>
+	<string id="ui_mm_video_hud_show_identity">
+		<text>顯示NPC身份資訊</text>
+	</string>
+	<string id="ui_mm_video_hud_autohide_stamina_bar">
+		<text>自動隱藏體力條</text>
+	</string>
+	<string id="ui_mm_video_hud_ironsights_zoom_factor">
+		<text>機瞄縮放係數</text>
+	</string>
+	<string id="ui_mm_video_hud_head_bob_factor">
+		<text>頭部晃動係數</text>
+	</string>
+	<string id="ui_mm_video_hud_3d_pda">
+		<text>顯示3D PDA模型</text>
+	</string>
+	
+	<!-- Video = Visual effects -->
+	<string id="ui_mm_title_effects">
+		<text>玩家效果</text>
+	</string>
+	<string id="ui_mm_title_mask">
+		<text>防毒面具</text>
+	</string>
+
+	<string id="ui_mm_video_player_animations">
+		<text>物品使用動畫</text>
+	</string>
+	<string id="ui_mm_video_player_shoot_effects">
+		<text>後坐力增強效果</text>
+	</string>
+	<string id="ui_mm_video_player_mask_hud">
+		<text>面具視野</text>
+	</string>
+	<string id="ui_mm_video_player_breathing_fog">
+		<text>呼吸產生的霧氣</text>
+	</string>
+	<string id="ui_mm_video_player_radiation_effect">
+		<text>輻射效果</text>
+	</string>
+	<string id="ui_mm_video_player_blood_splash">
+		<text>流血效果</text>
+	</string>
+	<string id="ui_mm_video_player_bleed_effect">
+		<text>低生命值視覺模糊</text>
+	</string>
+	<string id="ui_mm_video_player_item_swap_animation">
+		<text>物品交換動畫</text>
+	</string>
+	<string id="ui_mm_video_player_hit_impact_effect">
+		<text>被擊中的衝擊效果</text>
+	</string>
+	<string id="ui_mm_video_player_tiny_pfx">
+		<text>塵埃顆粒</text>
+	</string>
+	<string id="ui_mm_video_player_fog_pfx">
+		<text>動態霧氣</text>
+	</string>
+	<string id="ui_mm_video_player_rain_droplets">
+		<text>雨滴效果</text>
+	</string>
+	<string id="ui_mm_video_player_visor_reflection">
+		<text>玻璃反射效果</text>
+	</string>
+
+	<!-- Video = Weather -->
+	<string id="ui_mm_lst_rare">
+		<text>稀少</text>
+	</string>
+	<string id="ui_mm_lst_regular">
+		<text>常見</text>
+	</string>
+	<string id="ui_mm_lst_3h">
+		<text>3小時</text>
+	</string>
+	<string id="ui_mm_lst_4h">
+		<text>4小時</text>
+	</string>
+	<string id="ui_mm_lst_5h">
+		<text>5小時</text>
+	</string>
+	<string id="ui_mm_lst_6h">
+		<text>6小時</text>
+	</string>
+	<string id="ui_mm_lst_7h">
+		<text>7小時</text>
+	</string>
+	<string id="ui_mm_lst_8h">
+		<text>8小時</text>
+	</string>
+	<string id="ui_mm_lst_9h">
+		<text>9小時</text>
+	</string>
+	<string id="ui_mm_lst_10h">
+		<text>10小時</text>
+	</string>
+	<string id="ui_mm_lst_11h">
+		<text>11小時</text>
+	</string>
+	<string id="ui_mm_lst_12h">
+		<text>12小時</text>
+	</string>
+
+	<string id="ui_mm_video_weather_period">
+		<text>週期</text>
+	</string>
+	<string id="ui_mm_video_weather_occurrence">
+		<text>概率</text>
+	</string>
+
+	<!-- Video = Night -->
+	<string id="ui_mm_title_night">
+		<text>夜晚</text>
+	</string>
+	
+	<string id="ui_mm_lst_dark_night">
+		<text>漆黑的夜晚</text>
+	</string>
+	<string id="ui_mm_lst_slight_night">
+		<text>微亮的夜晚</text>
+	</string>
+	<string id="ui_mm_lst_medium_night">
+		<text>明亮的夜晚</text>
+	</string>
+	<string id="ui_mm_lst_bright_night">
+		<text>非常明亮的夜晚</text>
+	</string>
+	<string id="ui_mm_lst_8days">
+		<text>8天</text>
+	</string>
+	<string id="ui_mm_lst_28days">
+		<text>28天</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_0">
+		<text>新月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_1">
+		<text>峨眉月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_2">
+		<text>上弦月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_3">
+		<text>盈凸月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_4">
+		<text>滿月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_5">
+		<text>虧凸月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_6">
+		<text>下弦月</text>
+	</string>
+	<string id="ui_mm_lst_moon_phase_7">
+		<text>殘月</text>
+	</string>
+	
+	<string id="ui_mm_video_night_brightness">
+		<text>夜間環境亮度</text>
+	</string>
+	<string id="ui_mm_video_night_moon_cycle">
+		<text>月相週期時長</text>
+	</string>
+	<string id="ui_mm_video_night_moon_phase_state">
+		<text>啟用靜態月相</text>
+	</string>
+	<string id="ui_mm_video_night_moon_phase">
+		<text>靜態月相選擇</text>
+	</string>
+
+
+	<!-- Sounds = General -->
+	<string id="ui_mm_title_sound">
+		<text>基本音效設定</text>
+	</string>
+	
+	<string id="ui_mm_lst_none">
+		<text>無</text>
+	</string>
+	<string id="ui_mm_lst_storyonly">
+		<text>僅特殊人物</text>
+	</string>
+	<string id="ui_mm_lst_all">
+		<text>所有人物</text>
+	</string>
+	
+	<string id="ui_mm_sound_general_master_volume">
+		<text>音效音量</text>
+	</string>
+	<string id="ui_mm_sound_general_music_volume">
+		<text>音樂音量</text>
+	</string>
+	<string id="ui_mm_sound_general_sound_device">
+		<text>音效裝置</text>
+	</string>
+	<string id="ui_mm_sound_general_eax">
+		<text>EAX (需音效卡支援)</text>
+	</string>
+	<string id="ui_mm_sound_general_snd_targets">
+		<text>Sound targets</text>
+	</string>
+	<string id="ui_mm_sound_general_dynamic_music">
+		<text>動態音樂</text>
+	</string>
+	<string id="ui_mm_sound_general_caption">
+		<text>字幕</text>
+	</string>
+	
+	<!-- Sounds = Environment -->
+	<string id="ui_mm_title_sound_environment">
+		<text>環境音效</text>
+	</string>
+	
+	<string id="ui_mm_sound_environment_ambient_volume">
+		<text>環境聲音音量</text>
+	</string>
+	<string id="ui_mm_sound_environment_ambient_volume_desc">
+		<text>此滑塊控制背景聲音的音量, 如蟋蟀、烏鴉、鳥類、夜間尖叫聲等.</text>
+	</string>
+	<string id="ui_mm_sound_environment_wind_sound">
+		<text>環境風的聲音</text>
+	</string>
+	<string id="ui_mm_sound_environment_breathing_sound">
+		<text>面具呼吸的聲音</text>
+	</string>
+	<string id="ui_mm_sound_environment_helmet_rain_sound">
+		<text>雨點打在頭盔上的聲音</text>
+	</string>
+
+	<!-- Sounds = Radio/Zone FM -->
+	<string id="ui_mm_title_sound_radio">
+		<text>收音機</text>
+	</string>
+	
+	<string id="ui_mm_sound_radio_zone">
+		<text>特異區電臺</text>
+	</string>
+	<string id="ui_mm_sound_radio_zone_desc">
+		<text>此選項允許特異區周圍的電臺播放音樂.</text>
+	</string>
+	<string id="ui_mm_sound_radio_access">
+		<text>按此進入收音機選項菜單</text>
+	</string>
+	<string id="ui_mm_sound_radio_access_call">
+		<text>按此喚出收音機settings.txt菜單</text>
+	</string>
+	<string id="ui_mm_sound_radio_1_play">
+		<text>播放 / 停止 收音機</text>
+	</string>
+	<string id="ui_mm_sound_radio_2_play">
+		<text>播放 / 停止 音樂播放器</text>
+	</string>
+	<string id="ui_mm_sound_radio_vol_up">
+		<text>增大音量按鈕</text>
+	</string>
+	<string id="ui_mm_sound_radio_vol_down">
+		<text>降低音量按鈕</text>
+	</string>
+	<string id="ui_mm_sound_radio_next">
+		<text>下一個曲目</text>
+	</string>
+	<string id="ui_mm_sound_radio_previous">
+		<text>上一個曲目</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist">
+		<text>下一 頻道 / 播放列表</text>
+	</string>
+	<string id="ui_mm_sound_radio_emission_intereferences">
+		<text>能量風暴期間訊號干擾</text>
+	</string>
+	<string id="ui_mm_sound_radio_underground_intereferences">
+		<text>地下區域中訊號干擾</text>
+	</string>
+	<string id="ui_mm_sound_radio_display_tracks">
+		<text>在HUD上顯示音樂播放器曲目的名稱</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_1">
+		<text>播放列表 1</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_2">
+		<text>播放列表 2</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_3">
+		<text>播放列表 3</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_4">
+		<text>播放列表 4</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_5">
+		<text>播放列表 5</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_6">
+		<text>播放列表 6</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_7">
+		<text>播放列表 7</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_8">
+		<text>播放列表 8</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_9">
+		<text>播放列表 9</text>
+	</string>
+	<string id="ui_mm_sound_radio_playlist_name_10">
+		<text>播放列表 10</text>
+	</string>
+	
+	
+	<!-- Control = General -->
+	<string id="ui_mm_title_control">
+		<text>基本控制設定</text>
+	</string>
+	
+	<string id="ui_mm_control_general_mouse_sens">
+		<text>滑鼠靈敏度</text>
+	</string>
+	<string id="ui_mm_control_general_mouse_sens_aim">
+		<text>瞄準靈敏度</text>
+	</string>
+	<string id="ui_mm_control_general_mouse_invert">
+		<text>滑鼠操控反轉</text>
+	</string>
+	<string id="ui_mm_control_general_crouch_toggle">
+		<text>蹲伏切換模式</text>
+	</string>
+	<string id="ui_mm_control_general_walk_toggle">
+		<text>步行切換模式</text>
+	</string>
+	<string id="ui_mm_control_general_sprint_toggle">
+		<text>衝刺切換模式</text>
+	</string>
+	<string id="ui_mm_control_general_lookout_toggle">
+		<text>傾斜切換模式</text>
+	</string>
+	<string id="ui_mm_control_general_aim_toggle">
+		<text>瞄準切換模式</text>
+	</string>
+	<string id="ui_mm_control_general_pickup_mode">
+		<text>多物品拾取</text>
+	</string>
+	<string id="ui_mm_control_general_pickup_mode_desc">
+		<text>啟用后, 您可以一次撿起多個物品. 否則, 您一次只能撿起一件物品.</text>
+	</string>
+	<string id="ui_mm_control_general_simple_pda_mode">
+		<text>PDA簡單模式</text>
+	</string>
+	<string id="ui_mm_control_general_simple_pda_mode_desc">
+		<text>%c[ui_gray_1]•%c[ui_gray_2]啟用: 簡單模式.
+		\n只有當玩家按住PDA時, 它才會進入焦點(界面)模式(重新載入鍵繫結).
+		\n \n%c[ui_gray_1]•%c[ui_gray_2]禁用: 高級模式.
+		\n玩家可以在焦點/移動模式之間切換, 按下榴彈發射器鍵繫結, 無論PDA是拿近或拿遠.
+		</text>
+	</string>
+	<string id="ui_mm_control_general_disassembly_warning">
+		<text>按住(ALT)鍵進行拆解</text>
+	</string>
+	<string id="ui_mm_control_general_disassembly_warning_desc">
+		<text>此選項可防止您在不先按住(左 ALT)按鈕的情況下拆解物品, 以防止誤拆物品.</text>
+	</string>
+	
+	
+	<!-- Gameplay = General -->
+	<string id="ui_mm_title_gameplay">
+		<text>基本遊戲設定</text>
+	</string>
+
+	<string id="ui_mm_gameplay_general_hardcore_ai_aim">
+		<text>硬核的AI瞄準</text>
+	</string>
+	<string id="ui_mm_gameplay_general_show_tip_reputation">
+		<text>商譽變化通知</text>
+	</string>
+	<string id="ui_mm_gameplay_general_show_tip_reputation_desc">
+		<text>此選項通知玩家完成(或失敗)任務后對於和陣營商譽的改變.</text>
+	</string>
+	<string id="ui_mm_gameplay_general_mechanic_feature">
+		<text>維修需要時間</text>
+	</string>
+	<string id="ui_mm_gameplay_general_mechanic_feature_desc">
+		<text>啟用后, 玩家必須等待一天或更長時間, 技師才能對損壞的物品進行適當的修復, 然後再將其取回.</text>
+	</string>
+	<string id="ui_mm_gameplay_general_player_name">
+		<text>玩家名稱</text>
+	</string>
+	<string id="ui_mm_gameplay_general_outfit_portrait">
+		<text>玩家頭像隨服裝而變化</text>
+	</string>
+	<string id="ui_mm_gameplay_general_outfit_portrait_desc">
+		<text>玩家頭像會隨著服裝而變化, 禁用它會恢復您從'新遊戲'菜單中選擇的預設肖像.</text>
+	</string>
+	<string id="ui_mm_gameplay_general_char_portrait">
+		<text>預設頭像</text>
+	</string>
+	<string id="ui_mm_gameplay_general_release_dropped_items">
+		<text>清除掉舊的掉落物品</text>
+	</string>
+	<string id="ui_mm_gameplay_general_corpse_max_count">
+		<text>重新整理清理屍體</text>
+	</string>
+	<string id="ui_mm_gameplay_general_corpse_max_count_desc">
+		<text>爲了避免效能下降和由於屍體堆積而導致的A-Life佔用, 屍體會在某個時間點重新整理進行清理.
+		\n一旦屍體數量, 與玩家的距離或是存在的時間超過限制, 重新整理就會開始進行.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_general_corpse_min_dist">
+		<text>重新整理清理屍體的距離 [米]</text>
+	</string>
+	<string id="ui_mm_gameplay_general_corpse_min_dist_desc">
+		<text>爲了避免效能下降和由於屍體堆積而導致的A-Life佔用, 屍體會在某個時間點重新整理進行清理.
+		\n一旦屍體數量, 與玩家的距離或是存在的時間超過限制, 重新整理就會開始進行.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_general_npc_loot_distance">
+		<text>屍體搜索距離[米]</text>
+	</string>
+	<string id="ui_mm_gameplay_general_npc_loot_distance_desc">
+		<text>只有當玩家至少在這麼遠的地方, 屍體才會被其他潛行者搜索.
+		\n它應該防止他們竊取玩家辛苦獲得的戰利品.
+		</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_general_max_tasks">
+		<text>每個NPC的最大任務</text>
+	</string>
+	<string id="ui_mm_gameplay_general_max_tasks_desc">
+		<text>從同一個NPC中可以同時啟用多少任務.</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_general_need_equipped_hkit">
+		<text>狩獵裝備必須裝備成揹包才能得到獎勵</text>
+	</string>
+	
+	<!-- Gameplay difficulty -->
+	<string id="ui_mm_title_gameplay_diff">
+		<text>生存難度</text>
+	</string>
+	<string id="ui_mm_desc_gameplay_diff">
+		<text>對生存難度設定所做的更改將僅應用於您新開啟的存檔.</text>
+	</string>
+	
+	<string id="ui_mm_prst_gameplay_easy">
+		<text>簡單</text>
+	</string>
+	<string id="ui_mm_prst_gameplay_medium">
+		<text>中等</text>
+	</string>
+	<string id="ui_mm_prst_gameplay_hard">
+		<text>困難</text>
+	</string>
+	
+	<string id="ui_mm_lst_great">
+		<text>極佳</text>
+	</string>
+	<string id="ui_mm_lst_good">
+		<text>好</text>
+	</string>
+	<string id="ui_mm_lst_average">
+		<text>一般</text>
+	</string>
+	<string id="ui_mm_lst_poor">
+		<text>差</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_gameplay_diff_actor_immunities">
+		<text>玩家的保護</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_actor_immunities_desc">
+		<text>此選項影響玩家對各種傷害源的保護力.
+		\n防護越好玩家所能承受的傷害越大.</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_hit_power">
+		<text>子彈威力因數</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_hit_power_desc">
+		<text>乘以子彈造成的傷害值.
+		\n \n%c[pda_yellow]提示:%c[ui_gray_2]
+		\n此設定僅適用於玩家射擊的子彈, 不會影響NPC射擊的子彈.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_dispersion_base">
+		<text>敵人散射基數</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_dispersion_base_desc">
+		<text>敵人武器散射的基礎值.
+		\n數值越高, 敵人在越遠距離射擊不精準.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_dispersion_factor">
+		<text>敵人散射因素</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_dispersion_factor_desc">
+		<text>敵人武器散射倍數.
+		\n數值越高, 敵人武器的後坐力越大.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_power_loss_bias">
+		<text>體力消耗效果</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_weight">
+		<text>最大負重</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_thirst">
+		<text>飲水需求</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_sleep">
+		<text>睡眠需求</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_radiation_day">
+		<text>日間輻射</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_radiation_day_desc">
+		<text>當開啟時, 玩家白天在戶外將會受到恒定劑量的輻射, 而地下區域將會有更多的輻射.
+		\n具有相當強的輻射防護的頭盔和裝備將有助於防止這種影響.</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_notify_geiger">
+		<text>玩家在蓋格計數器響起時才會受到輻射</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_notify_geiger_desc">
+		<text>%c[ui_gray_1]禁用:%c[ui_gray_2] 玩家在接近放射性場時會聽到蓋格計數器的喀噠聲.
+		\n \n%c[ui_gray_1]啟用:%c[ui_gray_2] 僅當玩家的物品中中有蓋革計數器且電池電量充足時, 才能聽到喀噠聲.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_notify_anomaly">
+		<text>異常點探測器的聲音</text>
+	</string>
+	<string id="ui_mm_gameplay_gameplay_diff_notify_anomaly_desc">
+		<text>啟用后, 玩家將在接近異常點時會聽到警告蜂鳴聲.</text>
+	</string>
+	
+	
+<!-- Gameplay = Progression difficulty -->
+	<string id="ui_mm_title_economy_diff">
+		<text>程序難度</text>
+	</string>
+	<string id="ui_mm_desc_economy_diff">
+		<text>對程序難度設定所做的更改將僅應用於您新開啟的存檔.</text>
+	</string>
+	
+	<string id="ui_mm_prst_economy_easy">
+		<text>旅客</text>
+	</string>
+	<string id="ui_mm_prst_economy_medium">
+		<text>拾荒者</text>
+	</string>
+	<string id="ui_mm_prst_economy_hard">
+		<text>求生者</text>
+	</string>
+	
+	<string id="ui_mm_lst_progressive">
+		<text>程序</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_economy_diff_goodwill">
+		<text>獲得好感係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_goodwill_desc">
+		<text>完成任務后獲得好感的乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_rewards">
+		<text>金錢報酬係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_rewards_desc">
+		<text>完成任務后獲得金錢的乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_repair">
+		<text>修理費用係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_repair_desc">
+		<text>係數越高, 技師索取的費用就越高.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_upgrade">
+		<text>升級費用係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_upgrade_desc">
+		<text>技師提供升級服務費的乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_buy">
+		<text>交易商收購價格係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_buy_desc">
+		<text>玩家出售給交易商的物品價格乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_sell">
+		<text>交易商出售價格係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_sell_desc">
+		<text>交易商出售給玩家的物品價格乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_loots">
+		<text>搜刮戰利品的機率</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_loots_desc">
+		<text>在屍體上找到物品的機率乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_money_loots">
+		<text>搜刮金錢的係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_money_loots_desc">
+		<text>玩家可以在屍體上找到的金錢數量的乘數.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_wpn_condition">
+		<text>搜刮到武器的平均狀態</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_stash_chance">
+		<text>發現藏物點的機率</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_stash_chance_desc">
+		<text>旨在通過檢視從屍體中找到的PDA發現的藏匿處.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_max_medkit_uses">
+		<text>醫療包的最大使次數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_weapon_degradation">
+		<text>武器磨損速度</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_weapon_degradation_desc">
+		<text>武器會因射擊而磨損, 磨損程度因所使用的武器和彈藥而異.
+		\n這是控制總體磨損的全域性因素.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_battery_consumption">
+		<text>電池功耗係數</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_battery_consumption_desc">
+		<text>電子裝置在使用時會不斷消耗電池電量, 並且裝置之間的消耗速度會有所不同.
+		\n這是控制電量消耗速度的全域性因素.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_limited_bolts">
+		<text>有限的螺栓</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_limited_bolts_desc">
+		<text>啟用后, 螺栓的數量將不再是無限的. 玩家需要購買或找到用過的螺栓.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n只要落下的螺栓未受到異常點損壞, 就可以拾起.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_arty_degradation">
+		<text>神器分解</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_bkpk_degradation">
+		<text>分解揹包</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_percentage_parts">
+		<text>零件狀態百分比系統</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_percentage_parts_desc">
+		<text>啟用后, 分解的零件會具狀態百分值(1到100％).
+		\n當該選項被禁用時, 專案使用四種條件類別中的一種(25%, 50%, 75%和100%條件).</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_restock">
+		<text>交易商補貨週期 (小時)</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_restock_desc">
+		<text>決定交易商多久補充一次庫存.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_arty_chance">
+		<text>神器產生</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_arty_chance_desc">
+		<text>神器通常在能量風暴和脈衝風暴(概率很低)后產生.
+		\n這個選項控制神器在異常點中的產生概率.</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_outfit_drops">
+		<text>在屍體上收穫戰利品</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_outfit_drops_desc">
+		<text>控制如何在屍體上找到裝備.
+		\n \n"程序"意味著裝備的掉落取決於玩家的程序, 更高的等級將使你有可能從戰利品中找到更好的裝備.
+		</text>
+	</string>
+	
+<!-- Gameplay = Disguise -->
+	<string id="ui_mm_title_disguise">
+		<text>偽裝設定</text>
+	</string>
+	<string id="ui_mm_desc_disguise">
+		<text>玩家可以偽裝成其他陣營的成員, 同時隱藏自己的真實身份, 以達到各種目的, 如盜竊和暗殺. 以下設定控制偽裝系統的各個方面.PDA百科全書中有一篇詳細的文章進一步解釋了這一特性.</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_disguise_state">
+		<text>啟用偽裝系統</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_active_item">
+		<text>考慮裝備的物品</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_active_item_desc">
+		<text>啟用后, 玩家所持物品的型別和狀態將會引起NPC的懷疑.
+		\n \n您可以通過修改因數來調整其對偽裝的影響.</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_active_item_factor">
+		<text>裝備的物品的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_weapon">
+		<text>考慮玩家的武器</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_weapon_desc">
+		<text>啟用后. 玩家所持武器(已裝備的)的型別和狀態將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_weapon_factor">
+		<text>玩家的武器的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_outfit">
+		<text>考慮玩家的服裝</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_outfit_desc">
+		<text>啟用后,玩家裝備的服裝(已裝備的)的型別和狀態將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n服裝的狀況是偽裝系統中的關鍵要素. 破舊的服裝遭到懷疑.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_outfit_factor">
+		<text>玩家的服裝的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_helmet">
+		<text>考慮玩家的頭盔</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_helmet_desc">
+		<text>啟用后, 玩家裝備的頭盔(獨立的或與裝備整合在一起的)的型別和狀態將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n頭盔是偽裝系統中的關鍵要素, 因為它掩蓋了您的臉部和身份.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_helmet_factor">
+		<text>玩家的頭盔的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_backpack">
+		<text>考慮玩家的揹包</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_backpack_desc">
+		<text>啟用后, 玩家裝備的揹包(已裝備的)的型別和狀態將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n巨大的揹包可能引起注意, 這個因素總體上影響很小.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_backpack_factor">
+		<text>玩家揹包的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_inventory">
+		<text>考慮玩家揹包中的物品</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_inventory_desc">
+		<text>啟用后, 玩家揹包中的物品的數量、重量和大小將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n攜帶許多物品, 特別是像武器這樣的大型物品, 會被npc認為是可疑的, 但這個數值的整體影響很小.   
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_inventory_factor">
+		<text>玩家揹包中的物品的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_speed">
+		<text>考慮玩家移動速度</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_speed_desc">
+		<text>啟用后, 玩家的移動速度將會引起NPC的懷疑.
+		\n \n您可以通過修改其因數來調整其對偽裝的影響.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n試著融入其中, 當npc在附近時不要跑或跳.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_speed_factor">
+		<text>玩家移動速度的可疑因數</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_distance">
+		<text>考慮玩家與他人之間的距離</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_distance_desc">
+		<text>啟用后, 玩家和npc之間的距離會引起NPC的懷疑.
+		\n \n引起NPC懷疑的最小安全距離.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_distance_factor">
+		<text>最小安全距離 [米]</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_stay_time">
+		<text>考慮玩家在npc附近的時間</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_stay_time_desc">
+		<text>啟用后, 玩家在與npc的安全距離內的時長會引起NPC的懷疑.
+		\n \n引起NPC懷疑前所允許的最長時間.
+		\n \n%c[pda_green]提示:%c[ui_gray_2]
+		\n包括談話花費的時間在內, 所以不要逗留太久.
+		</text>
+	</string>
+	<string id="ui_mm_gameplay_disguise_stay_time_factor">
+		<text>最大安全逗留時間 [秒]</text>
+	</string>
+	
+<!-- Gameplay = Fast Travel -->
+	<string id="ui_mm_desc_fast_travel">
+		<text>在幾乎沒有限制的情況下, 您可以通過點選PDA地圖上的旅行標記快速旅行到異常點的許多地方. 當你第一次訪問某個地點時, 一個快速旅行標記就會出現. 以下設定允許您控制快速旅行的各個方面.</text>
+	</string>
+	
+	<string id="ui_mm_lst_disabled">
+		<text>禁用</text>
+	</string>
+	<string id="ui_mm_lst_visit_only">
+		<text>僅限已訪問過</text>
+	</string>
+	<string id="ui_mm_lst_show_all">
+		<text>顯示全部</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_fast_travel_state">
+		<text>快速旅行地點</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_on_combat">
+		<text>允許在戰鬥中</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_on_overweight">
+		<text>允許在超重時</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_on_damage">
+		<text>允許在中彈時</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_on_emission">
+		<text>允許在能量風暴期間</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_long_names">
+		<text>使用長名稱</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_visit_message">
+		<text>位置訪問訊息</text>
+	</string>
+	<string id="ui_mm_gameplay_fast_travel_time">
+		<text>旅行時間停止</text>
+	</string>
+
+<!-- Gameplay = Backpack Travel -->
+	<string id="ui_mm_desc_backpack_travel">
+		<text>在幾乎沒有限制的情況下,您可以通過在PDA地圖上單擊來快速旅行到建立的藏物點.您可以調整揹包旅行的設定.</text>
+	</string>
+	
+	<string id="ui_mm_gameplay_backpack_travel_state">
+		<text>揹包旅行</text>
+	</string>
+	<string id="ui_mm_gameplay_backpack_travel_on_combat">
+		<text>允許在戰鬥中</text>
+	</string>
+	<string id="ui_mm_gameplay_backpack_travel_on_damage">
+		<text>允許在中彈時</text>
+	</string>
+	<string id="ui_mm_gameplay_backpack_travel_on_emission">
+		<text>允許在能量風暴期間</text>
+	</string>
+	<string id="ui_mm_gameplay_backpack_travel_on_overweight">
+		<text>允許在超重時</text>
+	</string>
+	<string id="ui_mm_gameplay_backpack_travel_time">
+		<text>旅行時間停止</text>
+	</string>
+	
+<!-- Alife = General -->
+	<string id="ui_mm_title_alife">
+		<text>基本A-Life設定</text>
+	</string>
+	
+	<string id="ui_mm_lst_full">
+		<text>完整</text>
+	</string>
+	<string id="ui_mm_lst_on_smarts_only">
+		<text>僅智慧地域</text>
+	</string>
+	
+	<string id="ui_mm_alife_general_alife_stalker_pop">
+		<text>潛行者人口</text>
+	</string>
+	<string id="ui_mm_alife_general_alife_stalker_pop_desc">
+		<text>整個特異區潛行者重生數的乘數. 越大重生的小隊數量越多.
+		\n \n%c[pda_yellow]提示:%c[ui_gray_2]
+		\n開始新遊戲時效果最大. 在遊戲過程中修改這個因數將會導致人口的逐漸變化, 因為小隊已經出現在特異區中了.
+		</text>
+	</string>
+	<string id="ui_mm_alife_general_alife_mutant_pop">
+		<text>變異生物數量</text>
+	</string>
+	<string id="ui_mm_alife_general_alife_mutant_pop_desc">
+		<text>整個特異區變異生物重生數的乘數. 越大重生的變異生物數量越多.
+		\n \n%c[pda_yellow]提示:%c[ui_gray_2]
+		\n開始新遊戲時效果最大. 在遊戲過程中修改這個因數將會導致人口的逐漸變化, 因為變異生物已經出現在特異區中了.
+		</text>
+	</string>
+	<string id="ui_mm_alife_general_offline_combat">
+		<text>離線戰鬥</text>
+	</string>
+	<string id="ui_mm_alife_general_offline_combat_desc">
+		<text>該選件綜合了A-Life的動態效果, 通過允許特異區中其他地方的小隊與敵人戰鬥.
+		它會影響陣營和變異生物的人口數量, 取決於戰鬥結果.
+		\n \n%c[pda_yellow]提示:%c[ui_gray_2]
+		\n%c[ui_gray_1]•%c[ui_gray_2] 當動態關係選項被啟用時, 離線戰鬥將在關係變化中發揮很大的作用, 因為陣營之間的戰鬥正在進行中.
+		\n%c[ui_gray_1]•%c[ui_gray_2] 這個功能適用於所有遊戲模式, 包括戰爭模式.
+		\n%c[ui_gray_1]•%c[ui_gray_2] 請注意, 這個特性可以在一定程度上減少潛行者的總數. 不要啟用該選項, 如果你想要更多人口.
+		</text>
+	</string>
+	<string id="ui_mm_alife_general_excl_dist">
+		<text>排除重新整理範圍</text>
+	</string>
+	<string id="ui_mm_alife_general_excl_dist_desc">
+		<text>如果小隊的重生點(智慧地域)在玩家的重新整理範圍內, 則不會重新整理小隊.
+		\n目的是防止玩家面前突然重新整理.
+		</text>
+	</string>
+	<string id="ui_mm_alife_general_dynamic_anomalies">
+		<text>動態異常點</text>
+	</string>
+	<string id="ui_mm_alife_general_dynamic_anomalies_desc">
+		<text>啟用后, 能量風暴可以在特異區各處產生新的異常點.
+		\n異常點可能會在每次能量風暴事件后出現或消失.</text>
+	</string>
+	<string id="ui_mm_alife_general_dynamic_relations">
+		<text>動態陣營關係</text>
+	</string>
+	<string id="ui_mm_alife_general_dynamic_relations_desc">
+		<text>啟用后, 各陣營之間的關係可能會由於特異區內發生的戰鬥而發生變化, 變好或變壞.
+		\n共同敵人的死亡可以對人際關係產生積極影響, 反之亦然.
+		\n關係變化的幅度取決於受害者的重要性.</text>
+	</string>
+	<string id="ui_mm_alife_general_war_goodwill_reset">
+		<text>敵對后商譽重置</text>
+	</string>
+	<string id="ui_mm_alife_general_war_goodwill_reset_desc">
+		<text>當陣營成為玩家陣營的敵人時, 玩家將失去之前與他們獲得的所有商譽.</text>
+	</string>
+	<string id="ui_mm_alife_general_heli_engine_sound">
+		<text>直升機聲音</text>
+	</string>
+	<string id="ui_mm_alife_general_heli_spawn">
+		<text>直升機巡邏</text>
+	</string>
+	
+<!-- Alife = Events -->
+	<string id="ui_mm_title_emission">
+		<text>能量風暴</text>
+	</string>
+	<string id="ui_mm_title_psi_storm">
+		<text>脈衝風暴</text>
+	</string>
+
+	<string id="ui_mm_lst_every_12h">
+		<text>每 6-12 小時</text>
+	</string>
+	<string id="ui_mm_lst_every_24h">
+		<text>每 12-24 小時</text>
+	</string>
+	<string id="ui_mm_lst_every_2d">
+		<text>每 1-2 天</text>
+	</string>
+	<string id="ui_mm_lst_every_4d">
+		<text>每 2-4 天</text>
+	</string>
+	<string id="ui_mm_lst_kill_at_end">
+		<text>結束時死亡</text>
+	</string>
+	<string id="ui_mm_lst_kill_at_wave">
+		<text>隨著能量風暴的持續而死亡</text>
+	</string>
+	<string id="ui_mm_lst_kill_at_vortex">
+		<text>在奇點中死亡</text>
+	</string>
+	<string id="ui_mm_lst_turn_to_zombie">
+		<text>變成殭屍</text>
+	</string>
+	<string id="ui_mm_lst_explode">
+		<text>爆炸</text>
+	</string>
+	<string id="ui_mm_lst_unhurt">
+		<text>無傷</text>
+	</string>
+	<string id="ui_mm_lst_siren_radio">
+		<text>汽笛和廣播</text>
+	</string>
+	<string id="ui_mm_lst_siren">
+		<text>汽笛</text>
+	</string>
+	<string id="ui_mm_lst_radio">
+		<text>廣播</text>
+	</string>
+	<string id="ui_mm_lst_no_warning">
+		<text>不警告</text>
+	</string>
+	
+	<string id="ui_mm_alife_event_emission_state">
+		<text>啟動能量風暴</text>
+	</string>
+	<string id="ui_mm_alife_event_emission_frequency">
+		<text>頻率</text>
+	</string>
+	<string id="ui_mm_alife_event_emission_fate">
+		<text>潛行者命運</text>
+	</string>
+	<string id="ui_mm_alife_event_emission_warning">
+		<text>警告</text>
+	</string>
+	<string id="ui_mm_alife_event_emission_task">
+		<text>提示躲藏</text>
+	</string>
+	
+	<string id="ui_mm_alife_event_psi_storm_state">
+		<text>啟動脈衝風暴</text>
+	</string>
+	<string id="ui_mm_alife_event_psi_storm_frequency">
+		<text>頻率</text>
+	</string>
+	<string id="ui_mm_alife_event_psi_storm_fate">
+		<text>潛行者命運</text>
+	</string>
+	<string id="ui_mm_alife_event_psi_storm_warning">
+		<text>警告</text>
+	</string>
+	<string id="ui_mm_alife_event_psi_storm_task">
+		<text>提示躲藏</text>
+	</string>
+	
+<!-- Alife = Warfare = General -->
+	<string id="ui_mm_prst_warfare_default">
+		<text>快</text>
+	</string>
+	<string id="ui_mm_prst_warfare_yoko">
+		<text>慢</text>
+	</string>
+	
+	<string id="ui_mm_title_warfare">
+		<text>戰區模式設定</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_general_all_out_war">
+		<text>全面戰爭</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_all_out_war_desc">
+		<text>啟用后, 每個派別都會對其他派別充滿敵意. 當DrX動態關係被檢測,這隻會在遊戲開始時應用.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_starting_locations">
+		<text>隨機開局地點</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_starting_locations_desc">
+		<text>啟用后, 玩家將在特異區內一個隨機的基地誕生. 每一個其他基地將使用隨機潛行者機率和隨機變異生物機率選項填充人口.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_starting_character">
+		<text>隨機開局角色</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_starting_character_desc">
+		<text>啟用后, 將以隨機的名字和陣營的玩家開始一個新遊戲; 與隨機開局地點一起使用最佳.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_stalker_chance">
+		<text>隨機潛行者機率</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_stalker_chance_desc">
+		<text>0 - 100, 當"隨機開局地點"啟用時, 潛行者小隊誕生在一個基地或資源點的機率. 這是一個單一小隊誕生的機率. 例如當一個基地的最大人口為2, 隨機潛行者機率設為50, 那就是50%機率第一個小隊誕生, 另外50%機率第二個小隊會誕生.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_monster_chance">
+		<text>隨機變異生物機率</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_random_monster_chance_desc">
+		<text>0 - 100, 當"隨機開局地點"啟用時, 變異生物誕生在一個領土點的機率. 每個領土點只有一個變異生物會誕生.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture">
+		<text>啟用自動佔領</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture_desc">
+		<text>啟用后, 玩家將能夠通過站在指定的"自動佔領最大距離"內指定的"自動佔領等待時間"來佔領土點. 如果你靠近多個點, 最近的基地會最優先, 然後是剩下的基地和資源點; 領土點不能自動佔領</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture_max_distance">
+		<text>自動佔領最大距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture_max_distance_desc">
+		<text>在這個距離內的點將被自動佔領; 如果玩家與被佔領點之間的距離大於這個值, 那麼它就會停止被佔領.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture_wait_time">
+		<text>自動佔領等待時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_auto_capture_wait_time_desc">
+		<text>手動獲取一個點所花費的時間(以遊戲內分鐘為單位).</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_fog_of_war">
+		<text>啟用戰爭迷霧</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_fog_of_war_desc">
+		<text>啟用后, 玩家和任何同陣營的小隊在"戰爭迷霧距離"範圍內的的一切會在PDA上顯示. "隱藏非友好小隊"和"隱藏智慧地域"仍會影響某物件是否顯示在PDA上.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_fog_of_war_distance">
+		<text>戰爭迷霧距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_fog_of_war_distance_desc">
+		<text>當"戰爭迷霧"啟用后, 玩家和任何同陣營的小隊在這個範圍內的一切會在PDA上顯示. "隱藏非友好小隊"和"隱藏智慧地域"仍會影響某物件是否顯示在PDA上.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_unfriendly_squads">
+		<text>隱藏非友好小隊</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_unfriendly_squads_desc">
+		<text>啟用后, 中立和敵對小隊不會顯示在PDA上.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_smarts">
+		<text>隱藏"智慧地域"</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_smarts_desc">
+		<text>啟用后, "智慧地域"圖示將不會在PDA上顯示. 玩家陣營的目標仍然會顯示在PDA上.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_underground_smarts">
+		<text>隱藏地下智慧地域</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_hide_underground_smarts_desc">
+		<text>啟用后, 地下智慧地域不會顯示在PDA上.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_new_game_bonus">
+		<text>啟用敵對額外初始小隊</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_new_game_bonus_desc">
+		<text>啟用后, 敵對陣營將會有更多的初始小隊, 而中立和友好陣營將會有更少的初始小隊.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_base_boost">
+		<text>敵對基地增長</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_base_boost_desc">
+		<text>玩家陣營的所有敵對陣營將被視為擁有其實際擁有的基地以外的指定數量的基地.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_resource_boost">
+		<text>敵對資源增長</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enemy_resource_boost_desc">
+		<text>玩家陣營的所有敵對陣營將被視為擁有其實際擁有的資源點以外的指定數量的資源點. 資源會影響防禦/攻擊/巡邏小隊的重生時間以及技能; 更高的資源數量意味著更優秀的小隊可以更快的重生.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_influence_weight">
+		<text>影響點權重</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_influence_weight_desc">
+		<text>每個影響點給目標增加多少優先順序. 典型的優先順序在1到10之間; 數字越高, 就越有可能被其他佔領點視為目標加上影響點.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_novice_squad_price">
+		<text>支援•菜鳥小隊•價格</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_novice_squad_price_desc">
+		<text>一隊菜鳥小隊的價格. 當你有這個數量的錢或更多, 右鍵點選你自己的陣營的基地, 它將包括一個選項, 購買一個菜鳥小隊, 將立即在基地產生, 並被視為同伴.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_advanced_squad_price">
+		<text>支援•高級小隊•價格</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_advanced_squad_price_desc">
+		<text>一隊高級小隊的價格. 當你有這個數量的錢或更多, 右鍵點選你自己的陣營的基地, 它將包括一個選項, 購買一個高級小隊, 將立即在基地產生, 並被視為同伴.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_veteran_squad_price">
+		<text>支援•老兵小隊•價格</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_veteran_squad_price_desc">
+		<text>一隊老兵小隊的價格. 當你有這個數量的錢或更多, 右鍵點選你自己的陣營的基地, 它將包括一個選項, 購買一個老兵小隊, 將立即在基地產生, 並被視為同伴.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_heli_price">
+		<text>支援•直升機•價格</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_heli_price_desc">
+		<text>一輛直升機的價格.當你有這個數量的錢或更多, 右鍵點選你自己的陣營的基地, 它將包括一個選項, 購買一輛直升機. 每個陣營只能有一架直升機在同一個關卡.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_enemy_rank_weight">
+		<text>支援•敵人等級權重•獎賞</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_enemy_rank_weight_desc">
+		<text>每殺死一個敵人, 你會被獎賞•金錢• + (敵人等級 * •敵人等級權重•)</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_reward_money">
+		<text>支援•金錢•獎賞</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_reward_money_desc">
+		<text>每殺死一個敵人, 你會被獎賞•金錢• + (敵人等級 * •敵人等級權重•)</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_reward_influence">
+		<text>支援•影響力•獎賞</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_actor_support_reward_influence_desc">
+		<text>每殺死一個敵人, 你會被獎賞這麼多影響力.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_max_squads_per_level">
+		<text>每一個關卡最大怪物小隊數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_max_squads_per_level_desc">
+		<text>每當在目前關卡的變異生物小隊數小於這個數值, 此關卡會被其他變異生物小隊設為目標, 變異生物會產生在任何未佔領點或被投放基於"最小怪物重生"和"最大怪物重生"變數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_min_faction_respawn">
+		<text>最小怪物重生</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_min_faction_respawn_desc">
+		<text>到達重生前所經過的最短時間, 或在未被佔領的基地/資源重生一隊變異生物小隊, 條件: 在此關卡已有變異生物小隊小於 "每一個關卡最大怪物小隊數".</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_max_faction_respawn">
+		<text>最大怪物重生</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_monster_max_faction_respawn_desc">
+		<text>到達重生前所經過的最大時間, 或在未被佔領的基地/資源重生一隊變異生物小隊, 條件: 在此關卡已有變異生物小隊小於 "每一個關卡最大怪物小隊數".</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_zombies_act_as_faction">
+		<text>殭屍成為一個陣營</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_zombies_act_as_faction_desc">
+		<text>啟用后, 殭屍化潛行者會參與戰區模式.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enable_mutant_offline_combat">
+		<text>啟用變異生物離線戰鬥</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_enable_mutant_offline_combat_desc">
+		<text>啟用后, 變異生物會參加離線戰鬥. 禁用時, 變異生物會更顯著出現在特異區.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_disable_smart_pop_cap">
+		<text>禁用智慧人口上限</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_disable_smart_pop_cap_desc">
+		<text>啟用后, "智慧地域"不會自動清除溢出小隊.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_purge_zone_on_emission">
+		<text>能量風暴中產生凈化區</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_purge_zone_percentage">
+		<text>凈化區百分比</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_debug_logging">
+		<text>除錯日誌記錄 (膨脹的日誌檔案)</text>
+	</string>
+	<string id="ui_mm_alife_warfare_general_debug_logging_desc">
+		<text>啟用后, 戰區模式會產生除錯日誌記錄. 除錯日誌將記錄戰爭中大多數功能的開始和結束, 所以它將使你的日誌大小增加很多.</text>
+	</string>
+	
+<!-- Alife = Warfare = Faction -->
+	<string id="ui_mm_title_warfare_faction">
+		<text>戰區模式-陣營設定</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_faction_participate_in_warfare">
+		<text>參與戰區模式</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_spawn_on_new_game">
+		<text>在新遊戲中重生</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_random_spawn_entries">
+		<text>隨機重生進入</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_linked_level_targeting">
+		<text>把相鄰關卡作為目標</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_ignore_empty_targets">
+		<text>忽略空的目標</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_offline_power_multiplier">
+		<text>離線傷害乘數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_offline_power_multiplier_desc">
+		<text>當一個小隊在離線戰鬥中造成傷害時, 它會乘以這個數量. 假設這個值設定為2, 在離線戰鬥中, 屬於這個陣營的小隊會比普通小隊造成兩倍的傷害.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_expansion_aggression">
+		<text>擴張侵略性</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_expansion_aggression_desc">
+		<text>每次一個基地的目標數量少於允許的數量, 將在0到100之間產生一個隨機數. 如果這個數字小於或等於"擴張侵略性", 陣營會選擇一個新的目標. 否則, 派別將不會選擇任何新的目標.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_night_activity_chance">
+		<text>夜間活動機率</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_night_activity_chance_desc">
+		<text>一個陣營在夜間將派出入侵部隊或派出巡邏小隊的機率. 夜間時間是指晚上8點到早上6點之間的時間.</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_min_faction_respawn">
+		<text>最小重生時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_faction_respawn_desc">
+		<text>基地產生防禦小隊所需的最短時間. 這與基地的可用資源一起決定了基地的防禦力量重生時間. 一個基地的可用資源由以下決定: "總資源" = "全域性資源" + ("地區資源" * 2) + ("本地資源" * 3). \n基地的重生時間是通過在最小和最大陣營重生時間之間選擇一個值來決定的, 係數為: "資源計數" / "戰爭資源計數". \n重生時間 = (100% - "擁有資源百分比") * "最小重生時間" + ("擁有資源百分比" * "最大重生時間".</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_faction_respawn">
+		<text>最大重生時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_faction_respawn_desc">
+		<text>一個基地產生一個防禦小隊所需的最長時間. 這與基地的可用資源一起決定了基地的防禦力量重生時間. 一個基地的可用資源由以下決定: "總資源" = "全域性資源" + ("地區資源" * 2) + ("本地資源" * 3). \n基地的重生時間是通過在 "最小重生時間" 和 "最大重生時間" 之間選擇一個值並以 "資源計數" / "戰爭資源計數" 為係數來決定的. \n重生時間 = (100% - "擁有資源百分比") * "最小重生時間" + ("擁有資源百分比" * "最大重生時間"</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_keep_last_base">
+		<text>保留最後一個基地</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_min_invasion_size">
+		<text>最小入侵人口係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_invasion_size_desc">
+		<text>最小入侵規模乘數. 這是與 "最大入侵人口係數" 一起使用的, 以及陣營擁有的基地數量, 以便計算一個最終 "入侵規模". 這是"智慧地域"中"最大人口"的乘數, 所以來自潛行者-遊戲設定的"潛行者人口係數"將影響最終入侵規模. \n目前入侵規模 = (100% - "擁有的基地佔百分比") * "最小入侵規模" + ("擁有的基地佔百分比" * "最大入侵規模"). \n目前入侵人口 = min(1, "目標最大人口" * "目前入侵規模")</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_invasion_size">
+		<text>最大入侵人口係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_invasion_size_desc">
+		<text>最大入侵規模乘數. 這是與 "最大入侵人口係數" 一起使用的, 以及陣營擁有的基地數量,  以便計算一個最終 "入侵規模". 這是"智慧地域"中"最大人口"的乘數, 所以來自潛行者-遊戲設定的"潛行者人口係數"將影響最終入侵規模. \n目前入侵規模 = (100% - "擁有的基地佔百分比") * "最小入侵規模" + ("擁有的基地佔百分比" * "最大入侵規模"). \n目前入侵人口 = min(1, "目標最大人口" * "目前入侵規模")</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_invasion_depart_time">
+		<text>最小入侵解散時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_invasion_depart_time">
+		<text>最大入侵解散時間</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_min_patrol_squads">
+		<text>最小巡邏人口係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_patrol_squads_desc">
+		<text>當一個陣營沒有基地時, 每個基地 (理論上沒有基地) 擁有 "最小巡邏小隊數" * "最大人口數" 個巡邏小隊. \n目前巡邏隊係數 = (100% - owned_base_percentage) * min_patrol_squds + (owned_base_percentage * max_patrol_squads. \n目前允許巡邏小隊數 = base.max_population * current patrol squad factor.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_squads">
+		<text>最大巡邏人口係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_squads_desc">
+		<text>當一個陣營沒有基地時, 每個基地擁有 "最大巡邏小隊數" * "最大人口數" 個巡邏小隊. \n目前巡邏隊係數 = (100% - owned_base_percentage) * min_patrol_squds + (owned_base_percentage * max_patrol_squads. \n目前允許巡邏小隊數 = base.max_population * current patrol squad factor.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_patrol_time">
+		<text>最小巡邏時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_patrol_time_desc">
+		<text>基地產生巡邏小隊所需的最短時間. 這與基地的可用資源一起決定了基地巡邏的重生時間. 一個基地的可用資源由以下決定:\n "總資源" = "全域性資源" + ("地區資源" * 2) + ("本地資源" * 3).\n基地的巡邏刷出時間是通過在 "最小巡邏時間" 和 "最大巡邏時間" 中選擇一個值並以 resource_count / warfare.resource_count 為係數來決定的. \n重生時間 = (100% - owned_resource_percentage) * min_patrol_time + (owned_resource_percentage * max_patrol_time .</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_time">
+		<text>最大巡邏時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_time_desc">
+		<text>基地產生巡邏小隊所需的最長時間. 這與基地的可用資源一起決定了基地巡邏的重生時間. 一個基地的可用資源由以下決定:\n total_resources = global_resources + (regional_resources * 2) + (local_resources * 3). \n基地的巡邏刷出時間是通過在 min_patrol_time 和 max_patrol_time 中選擇一個值並以 resource_count / warfare.resource_count 為係數來決定的. \n重生時間 = (100% - owned_resource_percentage) * min_patrol_time + (owned_resource_percentage * max_patrol_time.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_patrol_hunt_chance">
+		<text>巡邏追捕機率</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_patrol_hunt_chance_desc">
+		<text>當基地在為巡邏小隊尋找新目標時, 如果目前關卡或相鄰關卡中有敵方巡邏小隊, 這是基地將指定敵人巡邏隊作為目標的機率;\n如果小隊沒有被指定一個敵人巡邏小隊作為目標, 那麼它將被指定一個靠近基地的領土點進行巡邏.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_patrol_rest_time">
+		<text>最小巡邏休息時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_patrol_rest_time_desc">
+		<text>這是巡邏小隊在領土點等待的最短時間. 夜間活動機率也會影響他們是否被送到一個新的領土點.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_rest_time">
+		<text>最大巡邏休息時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_patrol_rest_time_desc">
+		<text>這是巡邏小隊在領土點等待的最長時間. 夜間活動機率也會影響他們是否被送到一個新的領土點.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_resurgence_wait_time">
+		<text>最小再次休息等待時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_resurgence_wait_time">
+		<text>最大再次休息等待時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_random_squad_count">
+		<text>隨機小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_random_squad_count_desc">
+		<text>啟用后, 陣營中每個小隊擁有隨機NPC數, 數量在 "最小隨機小隊人數" 和 "最大隨機小隊人數" 之間.</text>
+	</string>	
+	<string id="ui_mm_alife_warfare_faction_min_random_squad_count">
+		<text>最小隨機小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_random_squad_count_desc">
+		<text>當"隨機小隊人數"啟用后, 這是該陣營一個小隊將擁有的最小NPC數量.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_random_squad_count">
+		<text>最大隨機小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_random_squad_count_desc">
+		<text>當"隨機小隊人數"啟用后, 這是該陣營一個小隊將擁有的最大NPC數量.</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_faction_random_patrols">
+		<text>隨機巡邏隊數量</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_random_patrols">
+		<text>最大隨機巡邏隊數量</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_random_patrol_time">
+		<text>最小隨機巡邏隊數量時間</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_random_patrol_time">
+		<text>最大隨機巡邏隊數量時間</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_invasion_departure_chance">
+		<text>入侵解散機率</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_invasion_departure_chance_desc">
+		<text>入侵將在目前進攻目標更新解散的的機率. 遊戲中每1到5分鐘校驗一次.</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_faction_base_priority">
+		<text>基地優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_base_priority_desc">
+		<text>陣營有多重視基地. 優先順序數字在0~10之間 .</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_resource_priority">
+		<text>資源優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_resource_priority_desc">
+		<text>陣營對資源點的優先順序. 優先順序數字在0~10之間.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_territory_priority">
+		<text>領地(荒地)優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_territory_priority_desc">
+		<text>陣營有多重視領土點. 優先順序數字在0~10之間.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_flag_priority">
+		<text>陣營旗幟優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_flag_priority_desc">
+		<text>在gamedata/configs/misc/simulation_objects_props.ltx檔案中, 有多少基地優先點標記為他們擁有的陣營. \n例如, 如果晴空正在尋找一個領土點, 如果在該檔案中該點定義了csky = 1, 它將為一個點增加2的優先順序.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_is_being_targeted_priority">
+		<text>已被針對的目標的優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_is_being_targeted_priority_desc">
+		<text>如果一個基地已被另一個基地針對, 它會增加多少優先順序在反擊入侵.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_weaker_priority">
+		<text>目標比自身弱小的優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_weaker_priority_desc">
+		<text>有更弱小的隊伍在場的基地的優先順序.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_stronger_priority">
+		<text>目標比自身強大的優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_stronger_priority_desc">
+		<text>有更強大的隊伍在場的基地的優先順序.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_on_same_level_priority">
+		<text>目標在同一關卡的優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_on_same_level_priority_desc">
+		<text>與自身所處同一關卡的基地的優先順序.</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_max_smart_targets_per_base">
+		<text>每個基地最大智慧目標</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_smart_targets_per_base_desc">
+		<text>基地一次可以將多少佔領點設為目標.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_resource_count_modifier">
+		<text>資源數量修改</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_resource_count_modifier_desc">
+		<text>修改每個陣營的資源數. 可以為負數. 數字越大, 重生越快.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_base_count_modifier">
+		<text>基地數修改</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_base_count_modifier_desc">
+		<text>修改每個陣營的基地數. 可以為負數. 數字越大, 巡邏隊伍越多, 更大的入侵部隊.</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_faction_enemy_faster_respawn">
+		<text>啟用敵人更快重生</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_manual_capture_wait_time">
+		<text>手動佔領計時</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_offline_combat_distance">
+		<text>離線戰鬥距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_disable_offline_combat">
+		<text>禁用離線戰鬥</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_disable_offline_combat_desc">
+		<text>啟用后, 小隊將不會參與離線戰鬥. 實際上, 這將導致戰區模式建立的戰鬥, 會在你接近它們時展開. 這將減緩戰爭的速度, 讓它以你和你周圍的小隊為中心.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_simulate_offline_combat_at_smarts">
+		<text>在"智慧地域"模擬離線戰鬥</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_simulate_offline_combat_at_smarts_desc">
+		<text>啟用后, 小隊只會在防守一個目標點時模擬離線戰鬥. 如果兩個小隊在附近, 但在不同的智慧地域上等待, 他們不會進行離線戰鬥.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_enable_offline_news">
+		<text>啟用離線新聞事件</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_enable_offline_news_desc">
+		<text>啟用后, 你會收到離線新聞更新, 包括: 友方小隊離線/線上戰鬥, 一個友好陣營取得/失去了一個據點</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_offline_news_display_percentage">
+		<text>離線新聞顯示百分比</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_offline_news_display_percentage_desc">
+		<text>0 - 100; 戰區模式只顯示這個百分比的離線新聞訊息.</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_randomize_squad_count">
+		<text>隨機小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_min_squad_count">
+		<text>最小小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_max_squad_count">
+		<text>最大小隊人數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_factions_keep_last_base">
+		<text>陣營保留最後一個基地</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_zombie_mode">
+		<text>殭屍模式</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_faction_target_faction_stronger_priority">
+		<text>目標陣營加強優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_faction_weaker_priority">
+		<text>目標陣營減弱優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_target_resource_priority">
+		<text>目標陣營資源優先順序</text>
+	</string>
+
+	<string id="ui_mm_alife_warfare_faction_lvl_k00_marsh_priority">
+		<text>關卡 (大沼澤) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_k01_darkscape_priority">
+		<text>關卡 (黑暗小徑) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l01_escape_priority">
+		<text>關卡 (封鎖線) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l02_garbage_priority">
+		<text>關卡 (填埋場) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l03_agroprom_priority">
+		<text>關卡 (農業研究所) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l04_darkvalley_priority">
+		<text>關卡 (黑谷) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l05_bar_priority">
+		<text>關卡 (羅斯托克) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l06_rostok_priority">
+		<text>關卡 (廢棄區) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l07_military_priority">
+		<text>關卡 (軍事倉庫) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l08_yantar_priority">
+		<text>關卡 (揚塔) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l09_deadcity_priority">
+		<text>關卡 (死城) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l10_limansk_priority">
+		<text>關卡 (利曼斯克) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l10_radar_priority">
+		<text>關卡 (雷達站) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l10_red_forest_priority">
+		<text>關卡 (紅森林) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l11_hospital_priority">
+		<text>關卡 (廢棄的醫院) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l11_pripyat_priority">
+		<text>關卡 (普里皮亞奇) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l12_stancia_priority">
+		<text>關卡 (切爾諾貝利核電站 (南)) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l12u_sarcofag_priority">
+		<text>關卡 (石棺) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l12u_control_monolith_priority">
+		<text>關卡 (黑石控制中心) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l12_stancia_2_priority">
+		<text>關卡 (切爾諾貝利核電站 (北)) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_l13_generators_priority">
+		<text>關卡 (風暴引擎) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_zaton_priority">
+		<text>關卡 (扎頓) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_jupiter_priority">
+		<text>關卡 (尤皮特) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_pripyat_priority">
+		<text>關卡 (普城郊區) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_jupiter_underground_priority">
+		<text>關卡 (木星工廠地道) 優先順序</text>
+	</string>
+	<string id="ui_mm_alife_warfare_faction_lvl_k02_trucks_cemetery_priority">
+		<text>關卡 (卡車墓園) 優先順序</text>
+	</string>
+	
+	
+<!-- Alife = Warfare = Azazel Mode  -->
+	<string id="ui_mm_title_warfare_azazel">
+		<text>戰爭詛咒模式設定</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_azazel_state">
+		<text>詛咒模式</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_companions">
+		<text>重生為同伴中一員</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_actor_faction">
+		<text>重生為本陣營成員</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_allies">
+		<text>重生為盟友潛行者</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_neutrals">
+		<text>重生為中立潛行者</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_enemies">
+		<text>重生為敵對潛行者</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_respawn_as_nearest">
+		<text>重生為就近潛行者</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_companion_dist_mult">
+		<text>同伴重生距離係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_actor_faction_dist_mult">
+		<text>本陣營成員重生距離係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_friend_dist_mult">
+		<text>友好重生距離係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_ally_dist_mult">
+		<text>盟友重生距離係數</text>
+	</string>	
+	<string id="ui_mm_alife_warfare_azazel_neutral_dist_mult">
+		<text>中立重生距離係數</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_enemy_dist_mult">
+		<text>敵對重生距離係數</text>
+	</string>
+	
+	<string id="ui_mm_alife_warfare_azazel_companion_min_respawn_dist">
+		<text>同伴重生的最小距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_companion_max_respawn_dist">
+		<text>同伴重生的最大距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_actor_faction_min_respawn_dist">
+		<text>陣營成員重生的最小距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_actor_faction_max_respawn_dist">
+		<text>陣營成員重生的最大距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_ally_min_respawn_dist">
+		<text>盟友重生的最小距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_ally_max_respawn_dist">
+		<text>盟友重生的最大距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_neutral_respawn_min_dist">
+		<text>中立陣營成員重生的最小距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_neutral_respawn_max_dist">
+		<text>中立陣營成員重生的最大距離</text>
+	</string>	
+	<string id="ui_mm_alife_warfare_azazel_enemy_respawn_min_dist">
+		<text>敵人重生的最小距離</text>
+	</string>
+	<string id="ui_mm_alife_warfare_azazel_enemy_respawn_max_dist">
+		<text>敵人重生的最大距離</text>
+	</string>
+	
+<!-- Alife = Dynamic News -->
+	<string id="ui_mm_desc_dynamic_news">
+		<text>從任務和死亡通告到日常笑話和閑談. 潛行者們出於各種原因進行交流. 以下設定您可以篩選PDA可能收到的訊息型別.</text>
+	</string>
+	
+	<string id="ui_mm_alife_dynamic_news_message_duration">
+		<text>HUD上訊息的存在時間(按秒)</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_death_stalker_news">
+		<text>請求救援 / 死亡通告 (被敵人襲擊)</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_death_mutant_news">
+		<text>請求救援 / 死亡通告 (被變異生物襲擊)</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_generic_death_news">
+		<text>發現並通告死亡</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_death_report_news">
+		<text>死亡通告 (正式的通告)</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_tips_news">
+		<text>提示新聞</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_kill_wounded_news">
+		<text>威脅和恐嚇</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_found_artifact_news">
+		<text>發現神器</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_heli_call_news">
+		<text>呼叫直升機</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_loot_news">
+		<text>獲取戰利品</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_cycle_of_special_news">
+		<text>週期性特別訊息(按秒)</text>
+	</string>
+
+	<string id="ui_mm_alife_dynamic_news_reaction_news">
+		<text>潛行者的閑聊</text>
+	</string>
+	
+	<string id="ui_mm_alife_dynamic_news_weather_news">
+		<text>天氣流言</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_time_news">
+		<text>時間流言</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_nearby_activity_news">
+		<text>附近活動流言</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_dumb_zombie_news">
+		<text>殭屍溝通的嘗試</text>
+	</string>
+	
+	<string id="ui_mm_alife_dynamic_news_bounty_news">
+		<text>賞金流言</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_cycle_of_task_news">
+		<text>週期性的任務新聞 (按秒)</text>
+	</string>
+
+	<string id="ui_mm_alife_dynamic_news_random_msg_news">
+		<text>隨機的玩笑</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_factions_report_news">
+		<text>陣營活躍性</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_zone_activity_news">
+		<text>特異區</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_found_dead_news">
+		<text>屍體發現</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_surge_news">
+		<text>能量風暴預警</text>
+	</string>
+	<string id="ui_mm_alife_dynamic_news_cycle_of_random_news">
+		<text>週期性的隨機新聞 (按秒)</text>
+	</string>
+
+	<string id="ui_mm_alife_dynamic_news_companions_news">
+		<text>同伴開玩笑</text>
+	</string>	
+	<string id="ui_mm_alife_dynamic_news_cycle_of_companions_news">
+		<text>週期性的同伴開玩笑 (按秒)</text>
+	</string>
+	
+<!-- Others -->
+	<string id="ui_mm_title_other">
+		<text>其他設定</text>
+	</string>
+	
+	<string id="ui_mm_other_localization">
+		<text>語言</text>
+	</string>
+	<string id="ui_mm_other_discord">
+		<text>錯誤狀態</text>
+	</string>
+	<string id="ui_mm_other_discord_desc">
+		<text>如果您在啟用此選項時無法連線, 您的遊戲狀態將顯示在您的個人資料中, 供所有人檢視.
+		資訊顯示是: 關卡, 進行的任務, 陣營, 生命值和遊戲模式</text>
+	</string>
+	<string id="ui_mm_other_important_save">
+		<text>自動存檔 (切換地圖時)</text>
+	</string>
+	<string id="ui_mm_other_autosave_timer">
+		<text>自動存檔 (每15分鐘)</text>
+	</string>
+	<string id="ui_mm_other_autosave_timer_new">
+		<text>自動儲存每X分鐘(0 =禁用)</text>
+	</string>
+	<string id="ui_mm_other_quicksave_cnt">
+		<text>快速存檔數量</text>
+	</string>
+	<string id="ui_mm_other_debug_hud">
+		<text>除錯HUD</text>
+	</string>
+	<string id="ui_mm_other_debug_map_hud">
+		<text>除錯地圖點</text>
+	</string>
+	<string id="ui_mm_other_debug_map_hud_desc">
+		<text>顯示區域內所有小隊的地圖示記, 並提供額外的除錯資訊.</text>
+	</string>
+	<string id="ui_mm_other_debug_error">
+		<text>除錯錯誤通知</text>
+	</string>
+	<string id="ui_mm_other_debug_error_desc">
+		<text>如果在控制檯登錄錯誤, 在HUD上顯示一個通知.</text>
+	</string>
+	
+	
+	
+	<string id="st_sk_desc">
+		<text>實驗功能, 允許無聲拿下未察覺的NPC.\n爲了執行潛行暗殺, 你需要用合適的武器擊中NPC (預設為特戰彈簧刀或用帶消音效果的槍打中頭部) 只要你或被害人被其他NPC看見都會判定失敗. 暗殺成功時不會驚動其他NPC, 如果任何人看見你過早出現在屍體旁邊, 你會被認為時兇手.\n這個功能預設關閉, 因為仍在施工中, 會嚴重影響平衡 (由於做的到自由殺死友好NPC, 或偽裝之後清掃陣營).</text>
+	</string>
+	<string id="ui_mm_menu_silent_kills">
+	<text>潛行暗殺</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_enabled">
+	<text>開啟暗殺</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_melee_enabled">
+	<text>允許使用冷兵器暗殺</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_all_melee_ok">
+	<text>所有冷兵器都可用於暗殺</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_all_melee_ok_desc">
+	<text>如果不打開選項, 只有config檔案中 "can_stealth_stab" 值為true的冷兵器可用於暗殺, 預設只有特戰彈簧刀</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_gun_enabled">
+	<text>允許使用消音武器暗殺</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_headshot_only">
+	<text>用槍暗殺必須爆頭</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_fresh_time">
+	<text>暗殺之後的可疑時間</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_fresh_time_desc">
+	<text>在屍體附近被人看到了多久會被認定為兇手</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_suspect_dist">
+	<text>玩家與屍體的揭發距離</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_suspect_dist_desc">
+	<text>與被暗殺的屍體多近才會被認定為兇手</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_melee_hear_dist">
+	<text>冷兵器暗殺時最短目擊距離</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_melee_hear_dist_desc">
+	<text>當被害人附近有其他NPC, 或你與被害人在這個距離之內 (米) 所有冷兵器暗殺的嘗試都會失敗 (下雨天會縮短)</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_gun_hear_dist">
+	<text>槍擊暗殺時最短目擊距離</text>
+	</string>
+	<string id="ui_mm_gameplay_silent_kills_sk_gun_hear_dist_desc">
+	<text>當被害人附近有其他NPC, 或你與被害人在這個距離之內 (米) 所有槍擊暗殺的嘗試都會失敗 (下雨天會縮短)</text>
+	</string>
+	
+	
+	<string id="ui_mm_gameplay_economy_diff_condition_buy_override">
+	<text>物品可賣出的最低狀態</text>
+	</string>
+	<string id="ui_mm_gameplay_economy_diff_condition_buy_override_desc">
+	<text>所有商販會收購物品的最低狀態, 如果為0, 將按照每個商販的配置檔案為準.</text>
+	</string>
+
+</string_table>

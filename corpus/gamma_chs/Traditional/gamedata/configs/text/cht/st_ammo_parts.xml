@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- Jammin -->
+	<string id="st_casing_pistol">
+		<text>手槍彈殼</text>
+	</string>
+	<string id="st_casing_pistol_desc">
+		<text>帶有手槍彈藥底火的小黃銅外殼. 這些彈殼可以改造成從7.62x25到.357馬格南之間的任意尺寸</text>
+	</string>
+	<string id="st_casing_shotgun">
+		<text>霰彈外殼</text>
+	</string>
+	<string id="st_casing_shotgun_desc">
+		<text>用於製造霰彈槍彈藥的帶有黃銅底火的塑料外殼</text>
+	</string>
+	<string id="st_casing_r5">
+		<text>小型步槍彈殼</text>
+	</string>
+	<string id="st_casing_r5_desc">
+		<text>帶有用於步槍彈藥的底火的黃銅外殼.  這些外殼可以改造成任何尺寸來相容39毫米或45毫米長度的子彈</text>
+	</string>
+	<string id="st_casing_r7">
+		<text>大型步槍彈殼</text>
+	</string>
+	<string id="st_casing_r7_desc">
+		<text>帶有底火的大型黃銅外殼, 用於大尺寸步槍彈藥</text>
+	</string>
+	<string id="st_powder_pistol">
+		<text>手槍彈/霰彈發射藥</text>
+	</string>
+	<string id="st_powder_pistol_desc">
+		<text>用於霰彈和手槍彈的快速燃燒雙基推進劑.  雖然這種無煙火藥粉產生的總能量比燃燒速度較慢的火藥粉更少, 但燃燒更徹底也更迅速</text>
+	</string>
+	<string id="st_powder_rifle">
+		<text>小型步槍彈發射藥</text>
+	</string>
+	<string id="st_powder_rifle_desc">
+		<text>IMR發射藥 (改進型軍用步槍發射藥) 用於輕型步槍彈藥和一些重型手槍彈藥. 這種粉末以中等速度燃燒併產生大量能量. 不能用於氣吹式手槍和霰彈槍, 因為壓力不足會導致燃燒不完全, 造成槍管積垢</text>
+	</string>
+	<string id="st_powder_mag">
+		<text>標準步槍彈發射藥</text>
+	</string>
+	<string id="st_powder_mag_desc">
+		<text>顆粒狀發射藥, 用於大型步槍彈, 緩慢燃燒帶來了極高的輸出, 這種粉末產生的能量最多, 燃燒最慢, 因此它只適用於用長管武器發射的大口徑步槍彈藥</text>
+	</string>
+	<string id="st_handgun_rounds">
+		<text>手槍彈頭</text>
+	</string>
+	<string id="st_handgun_rounds_desc">
+		<text>從彈藥中回收的各種尺寸的手槍彈頭,  可以用這些來製作新的子彈</text>
+	</string>
+	<string id="st_handgun_ap_rounds">
+		<text>手槍穿甲彈頭</text>
+	</string>
+	<string id="st_handgun_ap_rounds_desc">
+		<text>從彈藥中回收的各種尺寸的手槍彈頭. 嵌入了合金穿甲結構, 但即使這樣, 由於手槍彈的低初速, 穿甲效能也並不是很出色, 除非過壓裝藥或專門為穿透護甲設計的子彈, 如5.7x28子彈</text>
+	</string>
+	<string id="st_shotgun_rounds">
+		<text>鉛彈丸</text>
+	</string>
+	<string id="st_shotgun_rounds_desc">
+		<text>狩獵用霰彈槍使用的小型鉛彈, 當然, 也可以將其熔化來鑄成獨頭彈</text>
+	</string>
+	<string id="st_shotgun_ap_rounds">
+		<text>薩博特鋼鏢彈</text>
+	</string>
+	<string id="st_shotgun_ap_rounds_desc">
+		<text>硬質的鋼鏢被塞在塑料彈托中, 警方經常使用這種子彈來破壞罪犯的車輛引擎, 對付防彈衣簡直小菜一碟</text>
+	</string>
+	<string id="st_rifle5_rounds">
+		<text>小口徑步槍彈頭</text>
+	</string>
+	<string id="st_rifle5_rounds_desc">
+		<text>用於突擊步槍的各種尺寸的小口徑步槍彈頭, 軍用級的加工質量, 幷包裹在全金屬外殼中, 針對準確性進行了優化</text>
+	</string>
+	<string id="st_rifle5_ap_rounds">
+		<text>小口徑步槍穿甲彈頭</text>
+	</string>
+	<string id="st_rifle5_ap_rounds_desc">
+		<text>各種尺寸的小口徑步槍彈頭, 主要用於突擊步槍, 嵌有合金穿甲結構. 這些是專門在正常作戰半徑內擊穿護甲而設計的特殊彈藥. 但如果沒有護甲的話, 則會直接貫穿肉體浪費大部分動能, 迅速制敵作用不強</text>
+	</string>
+
+	<string id="st_rifle7_rounds">
+		<text>標準步槍彈頭</text>
+	</string>
+	<string id="st_rifle7_rounds_desc">
+		<text>覆蓋全金屬外殼的標準口徑步槍彈頭. 通常用於狩獵和軍方的狙擊任務</text>
+	</string>
+	<string id="st_rifle7_ap_rounds">
+		<text>標準步槍穿甲彈頭</text>
+	</string>
+	<string id="st_rifle7_ap_rounds_desc">
+		<text>嵌入了合金穿甲結構的標準尺寸步槍彈頭. 是軍方和特種部隊用於從遠距離擊穿防彈衣的特殊彈頭</text>
+	</string>
+	
+	<string id="st_batch_breakdown">
+		<text>批量拆解 [!]</text>
+	</string>
+</string_table>

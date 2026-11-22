@@ -1,0 +1,67 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<string_table>
+	<string id = "kovalev_name">
+		<text>科瓦列夫教授</text>
+ 	</string>
+
+	<string id = "markov_name">
+		<text>馬爾科夫副教授</text>
+ 	</string>
+
+	<string id = "pirogov_name">
+		<text>候選者皮洛戈夫</text>
+ 	</string>
+
+	<string id = "chernov_name">
+		<text>高級研究員契諾夫</text>
+ 	</string>
+
+	<string id = "juk_name">
+		<text>弗拉迪斯拉夫·朱克教授</text>
+ 	</string>
+
+	<string id = "vorobushkin_name">
+		<text>沃羅布什金副教授</text>
+ 	</string>
+
+	<string id = "skabinsky_name">
+		<text>斯卡賓斯基院士</text>
+ 	</string>
+
+	<string id = "sarik_name">
+		<text>薩里克暮光</text>
+ 	</string>
+	<string id="st_kvartet_bio">
+		<text>一位經驗豐富的潛行者, 資訊不詳</text>
+	</string>
+	<string id="cs_informer_name">
+		<text>拐棍</text>
+ 	</string>
+	<string id="st_informer_bio">
+		<text>純凈者偵察兵</text>
+	</string>
+	<string id="dragun_name">
+		<text>刀疤臉</text>
+ 	</string>
+	<string id="st_dragun_bio">
+		<text>一位潛行者老兵</text>
+	</string>
+	<string id="brodyaga_name">
+		<text>"神行客" 斯特萊德</text>
+ 	</string>
+	<string id="st_brodyaga_bio">
+		<text>黑石叛軍領袖</text>
+	</string>
+	<string id="gamajun_name">
+		<text>加瑪云</text>
+ 	</string>
+	<string id="st_gamajun_bio">
+        	<text>黑石叛軍成員</text>
+	</string>
+	<string id="monolith_pri_b36_smart_terrain_defense_name">
+		<text>切布拉托</text>
+ 	</string>
+    	<string id="st_monolith_pri_b36_smart_terrain_defense_bio">
+        	<text>戰地指揮官狂熱者</text>
+    	</string>
+</string_table>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_historic">
+		<text>歷史上有名的</text>
+	</string>
+	
+	<string id="encyclopedia_historic_final_day">
+		<text>末日組織</text>
+	</string>
+	<string id="encyclopedia_historic_final_day_text">
+		<text>
+			%c[pda_white]末日組織%c[ui_gray_1] 是一個生態學家性質的陣營, 別名 %c[pda_green]審判日%c[ui_gray_1], 或者 "%c[pda_green]荒野潛行者%c[ui_gray_1]".\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n他們確信, 特異區最終會導致世界末日, 隨著每一次能量風暴的日益強大, 特異區的範圍將會不斷擴大.\n
+			\n他們會爲了自己的研究計劃而大批獵殺殭屍化的潛行者, 除了他們那現在差不多被遺忘的領袖被一個叫幽靈的潛行者暗殺了之外, 我們現在對他們所知甚少.\n
+			\n由於他們的主要活動是從毀滅晴空的那次大規模能量風暴后開始的, 所以他們有可能是從一群目睹了大規模能量風暴的晴空倖存者中分裂出來的人.
+			\n%c[pda_green]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 不明\n• 服裝顏色: 不明\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n• 關於這個陣營的所有資訊都來自遊戲設計檔案.
+			\n• 這個陣營被 S.T.A.L.K.E.R.: Shadow of Chernobyl 除名了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_historic_isg">
+		<text>ISG</text>
+	</string>
+	<string id="encyclopedia_historic_isg_text">
+		<text>
+			The %c[pda_green]國際科研團隊%c[ui_gray_1] 是一個爲了研究特異區的組織.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n在特異區突然出現后, 聯合國成立了一個新的研究機構, 其唯一目的是爲了研究和解釋這一奇怪新現象.\n
+			\n在遙遠的北部, 那六臺大型發電機的周邊區域被他們認為是最有科學意義的, 因此被他們選作探索的地點.\n
+			\n僅僅持續了幾個月, 他們的工作就被不可預料的因素打斷了.\n
+			\n研究人員不斷被看不見的異常點吞噬, 或者被可怕的怪物撕成碎片. 其他人也莫名其妙的消失了, 幾天後回來的一些人又神志不清的想殺死他們的同事.\n
+			\n探險隊幾乎什麼任務都沒完成就被解散了, 最終結果是高的無法接受的傷亡數字.\n
+			\n烏克蘭政府並沒有被他們的失敗所嚇到, 他們成立了新的研究機構來繼續他們的工作, 也就是現在的生態學家.
+			\n%c[pda_green]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 風暴引擎\n• 服裝顏色: 白色和紅色\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n• 這個陣營被晴空除名了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_historic_renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="encyclopedia_historic_renegade_text">
+		<text>
+			The %c[pda_white]叛節者%c[ui_gray_1] 是特異區里最卑鄙無恥的潛行者.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n他們不受任何道德的限制, 他們主要由那些犯下了可怕罪行被原有組織趕出去的潛行者們組成.\n
+			\n他們唯一遵從的守則就是武力至上, 他們會在特異區的邊緣掠奪弱者, 通常目標是那些年輕的, 沒有經驗的, 沒有任何辦法反抗他們的人.\n
+			\n在無數敵人的圍攻下, 他們被迫進入大沼澤, 在面對晴空的情況下, 他們的求生欲迫使這些豺狼抱團成爲了一個新的陣營.
+			\n%c[pda_green]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 大沼澤\n• 服裝顏色: 多種\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n• 他們很短暫地出現在晴空裡面.
+			\n• 這個陣營的存在只是爲了讓玩家可以和土匪成為朋友.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_historic_rat_wolf">
+		<text>鼠狼</text>
+	</string>
+	<string id="encyclopedia_historic_rat_wolf_text">
+		<text>
+			%c[pda_white]鼠狼%c[ui_gray_1] 是一種罕見的突變鼠亞種.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n鼠狼是一種濫殺濫傷的機器, 比它們現在在特異區里發現的表親要危險得多.\n
+			\n通常帶領一群普通老鼠, 相比之下, 這些生物很容易被發現, 因為它們經常長到大約兩倍或三倍大.\n
+			\n除此之外, 它們的外貌也只有一些細微的差別, 比如有更大的、全黑的眼球, 而它們的上半身又腫又胖.\n
+			\自然選擇最終發揮了作用, 因為它們的體型不自然, 它們經常脫穎而出, 很容易被特異區的貓和其他類似的變異生物挑選.\n
+			\n%c[pda_green]統計資料%c[ui_gray_1]
+			\n• 攻擊: 肉搏\n• 生命值: 平均\n• 速度: 平均\n• 特性: 無\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n• 所有關於這個變異生物的知識都來自於遊戲設計文件.
+			\n• 這個變異生物被切爾諾貝利的陰影除名了.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_historic_tark">
+		<text>塔克</text>
+	</string>
+	<string id="encyclopedia_historic_tark_text">
+		<text>
+			%c[pda_white]塔克%c[ui_gray_1] 是已經滅絕的馬型生物, 很可能是從普氏野馬變異而來.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n由於特異區成立時大量暴露在輻射中, 這種生物與其祖先幾乎沒有相似之處.\n
+			\n它的後腿萎縮了, 而前腿明顯變大了, 而它的尾巴和大部分嘴幾乎都腐爛或消失了.\n
+			\n與豚獸相似的是, 塔克的身體非常腫脹, 而且經常被看到成群狩獵 - 儘管可能更多的是一種本能的遺留物, 而不是任何自然形式的獸群.\n
+			\n與特異區里的其他變異生物不同的是, 它們是極其野性的動物, 它們的瘋狂常常壓倒了它們的恐懼感, 並可能導致它們最終的失敗.\n
+			\n%c[pda_green]統計資料%c[ui_gray_1]
+			\n• 攻擊: 肉搏\n• 生命值: 平均\n• 速度: 快\n• 特性: 狂亂\n
+			\n%c[pda_green]趣聞%c[ui_gray_1]
+			\n• 我們對這個變異生物的所有了解都來自於它的服從性.
+			\n• 這個變異生物在GSC遊戲世界的怪物球比賽中輸給了史諾克.
+		</text>
+	</string>
+	
+</string_table>

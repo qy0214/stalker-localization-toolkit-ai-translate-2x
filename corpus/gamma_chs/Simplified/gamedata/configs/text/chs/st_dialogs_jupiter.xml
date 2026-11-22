@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- (Monolith Mechanic = Jupiter factory) -->
+	<string id="mechanic_monolith_jup_depo_start_0">
+		<text>致意, 兄弟! 我的职责是为该地区的同胞们提供技术支持.</text>
+	</string>
+
+	
+<!-- (Monolith Trader = Jupiter factory) -->
+	<string id="meet_guid_jupdepo_mon_0">
+		<text>兄弟, 我可以去哪个地方?</text>
+	</string>
+	<string id="meet_guid_jupdepo_mon_1">
+		<text>我们有去红森林, 普里皮亚奇, 普城郊区的路.很遗憾我哪个地方都没法带你去, 但是你可以和你的弟兄们一起去 - 当然是要花钱的那种, 我觉得这对你来说应该没什么问题.</text>
+	</string>
+	
+	<string id="meet_guid_jupdepo_mon_list_0">
+		<text>向导, 可以带我去什么地方?</text>
+	</string>
+	<string id="meet_guid_jupdepo_mon_list_1">
+		<text>去红森林要六千卢布, 普城郊区要两千, 普里皮亚奇要一千.</text>
+	</string>
+
+	<string id="travel_guid_jupdepo_mon_mon_0">
+		<text>我想去个地方, 兄弟.</text>
+	</string>
+	<string id="travel_guid_jupdepo_mon_mon_1">
+		<text>当然可以, 想去哪里?</text>
+	</string>
+	<string id="travel_guid_jupdepo_mon_mon_2">
+		<text>去红森林. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_jupdepo_mon_mon_3">
+		<text>去城郊. %c[d_orange][2000 卢布]</text>
+	</string>
+	<string id="travel_guid_jupdepo_mon_mon_4">
+		<text>去普里皮亚奇. %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_jupdepo_mon_mon_5">
+		<text>我改变主意了.</text>
+	</string>
+
+	
+<!-- Garry (Guide) -->
+	<string id="meet_guid_jup_0">
+		<text>你是哪位?</text>
+	</string>
+	<string id="meet_guid_jup_1">
+		<text>很高兴见到你, 我名字是盖瑞, 是个向导 - 通常在特异区中心附近闲逛. 我可以带你去酒吧、普里皮亚奇、红森林、扎顿以及木星工厂地道啥的.</text>
+	</string>
+
+	<string id="meet_guid_jup_list_0">
+		<text>记不得你了. 你可以带我去哪?</text>
+	</string>
+	<string id="meet_guid_jup_list_1">
+		<text>去酒吧要6000卢布, 普里皮亚奇要三千, 红森林两千五, 扎顿地区的斯卡多夫斯克号要两千, 木星工厂地道要一千五.</text>
+	</string>
+
+	<string id="travel_guid_jup_0">
+		<text>带我去个地方.</text>
+	</string>
+	<string id="travel_guid_jup_1">
+		<text>好的, 要去哪?</text>
+	</string>
+	<string id="travel_guid_jup_2">
+		<text>去酒吧. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_jup_3">
+		<text>去普里皮亚奇. %c[d_orange][3000 卢布]</text>
+	</string>
+	<string id="travel_guid_jup_4">
+		<text>去红森林.%c[d_orange][2500 卢布]</text>
+	</string>
+	<string id="travel_guid_jup_5">
+		<text>去木星工厂地道.%c[d_orange][1500 卢布]</text>
+	</string>
+	<string id="travel_guid_jup_6">
+		<text>去扎顿. %c[d_orange][2000 卢布]</text>
+	</string>
+	<string id="travel_guid_jup_7">
+		<text>我改变主意了.</text>
+	</string>
+
+<!-- Loki (Freedom Leader) in Yanov -->
+	<string id="loki_st_0">
+		<text>你是这里管事的人吗?</text>
+	</string>
+	<string id="loki_st_1">
+		<text>是的. 我是洛基, 卢卡什派到亚诺夫车站的自由军指挥官.</text>
+	</string>
+	<string id="loki_st_2">
+		<text>洛基? 这名字很有趣 - 就像北欧神话里的神.</text>
+	</string>
+	<string id="loki_st_3">
+		<text>确实, 别人在早些时候都是这么叫我的, 就是在"焦脑器"出现的那段时间. 真是个混乱的时候啊.</text>
+	</string>
+	<string id="loki_st_4">
+		<text>能告诉我"焦脑器"事件之后的更多事情么?</text>
+	</string>
+	<string id="loki_st_5">
+		<text>当然可以. 2012年"焦脑器"第一次被关闭的时候, 我的小队开始北征. 我们行进了一段时间, 去了许多不同的地点... 当切尔诺贝利核电站在地平线上缓缓出现时, 我们决定找个地方设立营地, 意外发现了这个当时空无一人的车站. 纪律团随后就来了, 我们在对峙中无意发现能量风暴正在袭来 - 你一定能明白, 不论在什么时候, 变成僵尸都是个很弱智的结局吧, 所以... 冒着巨大的风险, 我让纪律团的人进来躲避能量风暴. 我们所有人都赞成在这个车站里收起武器、刀剑入鞘, 所有人达成了车站内停战的共识. 当然了, 我们在车站外依旧互相骚扰对方.</text>
+	</string>
+	<string id="loki_st_6">
+		<text>这里的纪律团站点发生了什么? 他们现在人呢?</text>
+	</string>
+	<string id="loki_st_7">
+		<text>这个问题回答起来可不简单. 不久前, 有个叫亚历山大的潜行者突然出现并帮了这里的人们大忙, 做了很多好事. 多亏有他, 亚诺夫再次处于平衡中, 没人再想着去打破. 尤皮特地带的阵营冲突甚至开始缓和. 直到黑石卷土重来朝我们这边进攻.</text>
+	</string>
+	<string id="loki_st_8">
+		<text>之后发生了什么?</text>
+	</string>
+	<string id="loki_st_9">
+		<text>嗯, 苏尔加上校 - 纪律团分部的指挥官, 当时也在, 他决定自己不能再看着这些狂热分子在特异区自由穿梭而什么都不做. 他尽可能多的募集了人手, 临走时说: "别担心, 我们还会回来喝酒的.", 之后便直接向普里皮亚奇进军... 不久后"焦脑器"重新启动, 我们就再也没看到他了.</text>
+	</string>
+	<string id="loki_st_10">
+		<text>他的牺牲... 值得么?</text>
+	</string>
+	<string id="loki_st_11">
+		<text>...不. 想到我第一次让他的人进来这里时所冒的风险...现在他们可能还在和僵尸一样, 一边被洗脑一边喝着酒呢...</text>
+	</string>
+	<string id="loki_st_12">
+		<text>...该死的.</text>
+	</string>
+
+	<string id="devushka_loki_help_0">
+		<text>嘿, 洛基! 这有个来自卢卡什的包裹!</text>
+	</string>
+	<string id="devushka_loki_help_1">
+		<text>好极了! 这会有帮助的. 正如老话所说, 善有善报嘛. 拿着这套护甲, 它的老主人应该不再需要它了.</text>
+	</string>
+	
+	
+
+	<string id="jup_a6_freedom_trader_ashot_start_dialog_0">
+		<text>今天要买些什么?</text>
+	</string>
+	<string id="jup_b19_freedom_yar_start_dialog_0">
+		<text>你好潜行者, 有什么我可以帮忙的吗?</text>
+	</string>
+
+	<!-- Trapper (Loner) in Yanov -->
+	<string id="jup_b220_trapper_start_11">
+		<text>我是屠兽者, 你不需要介绍你自己.</text>
+	</string>
+	<string id="jup_b220_trapper_start_12">
+		<text>你怎么到这来的?</text>
+	</string>
+	
+		<string id="jup_trapper_about_himself_0">
+		<text>你是做什么的?</text>
+	</string>
+	<string id="jup_trapper_about_himself_1">
+		<text>我是屠兽者, 过去我经常猎捕对潜行者构成威胁的变异怪物...如今, 我发布狩猎悬赏, 并将它们下发给年轻的猎人. 我训练他们并教给他们狩猎策略...</text>
+	</string>
+	
+	<string id="jup_trapper_about_retire_0">
+		<text>你为啥不再去狩猎了?</text>
+	</string>
+	<string id="jup_trapper_about_retire_1">
+		<text>我老了, 兄弟. 狐狸就是这么死的... 他是我的伙伴兼朋友.我们肩并肩一同狩猎了许多野兽... 之后我们在扎顿碰到两只奇美拉, 那时候, 奇美拉已经在特异区绝迹一年半了... 有一只在我掏出散弹枪前就把狐狸撞飞了出去. 我开枪击伤一只之后, 它们就跑开了... 我希望那些怪物都被人杀个精光!</text>
+	</string>
+	
+	<string id="st_jup_b220_trapper_life_ask">
+		<text>告诉我一些狩猎变异生物的信息吧.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_1">
+		<text>奇美拉是非常危险的夜间捕食者. 他们会试图在黑暗的掩护下从身后接近你, 之后跳到你的上方. 如果你知道周围有奇美拉, 要一直注意身后, 并且还要保护好你同伴的屁股.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_2">
+		<text>变异矮人会使用引力攻击... 离得近的时候, 它们会抓住你扔来扔去, 离得远的时候, 它们又会抓起东西丢向你... 除非你很喜欢被重的东西砸, 不然你最好跟它们保持中等距离并且一直移动, 别停下.有一点你必须要注意, 在面对它们的时候一定要注意保存体力! 这些侏儒可以使用引力冲击将武器从你手里夺走, 如果你体力不支, 说不定就会中招.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_3">
+		<text>有两种类型的骚灵, 第一种用重力把东西摔向它们的敌人, 第二种用火焰烤熟那些倒霉蛋.没有经验的猎人会试图在他们周围盘旋以躲避他们的攻击... 其实骚灵看不见也听不见, 它们是真正的"小聋瞎", 可以用它们的这些弱势变成自己的优势, 它们只能感受到物体在引力场中的移动. 所以经验丰富的猎人遇到骚灵时会屏息凝神, 一动不动, 开一枪停一会, 一直重复这个过程, 直到击杀骚灵为止.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_4">
+		<text>变异巨兽非常难以杀死, 它眨个眼的功夫就能造成难以置信的巨大伤害, 你可能想要用散弹枪近距离射击它, 记住了, 变异巨兽会震飞任何未固定在混凝土上的物体, 最好从上面攻击它, 并且确保你站的地方能够为你分担一部分伤害.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_5">
+		<text>摄魂怪会利用你的意志力摧残你, 当你面对摄魂怪时, 要学会善用掩体, 因为它注视你时会对你的心智造成影响. 它们移动速度很慢, 所以如果你处于危险之中, 可以用手榴弹对付他.</text>
+	</string>
+	<string id="st_jup_b220_trapper_life_end">
+		<text>我有工作要做, 我们以后再聊变异生物的事吧.</text>
+	</string>
+
+
+	<!-- -->
+	<string id="jup_a6_stalker_medik_start_dialog_0">
+		<text>你是来找医疗用品, 还是来这里聊天的?</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_0">
+		<text>我需要治疗.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1">
+		<text>让我看看...</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_2">
+		<text>让我看看... 嗯, 你的肝脏比我预期的要大, 但这是职业病, 对吧?除此之外, 你就像个变异矮人一样健康.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_111">
+		<text>嗯, 你确实需要治疗, 但是我可不是免费给你治疗的, 不论什么程度的受伤, 只要我出手, 就要给我1850卢布. 同时, 从你身上消除辐射的价钱也是要分开算的, 最高1480卢布.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_11">
+		<text>你在说什么? 难道我已经死了吗?</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1111">
+		<text>好吧, 我付你钱. 毕竟, 把钱带到坟里没啥意义.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1112">
+		<text>妈的, 这对我来说太贵了!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1115">
+		<text>我不付钱了, 谢谢你, 我宁愿去死!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1114">
+		<text>我没有那么多钱, 请只治疗我身上的的辐射.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_1113">
+		<text>我有急救包, 所以只治疗我的辐射就行.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_11111">
+		<text>等一下... 现在你完好如初了. 我可以给你"保修"两年 - 如果你不走出这个车站的话(笑)</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_11112">
+		<text>我不会借你钱的, 去其他地方去吧.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_11113">
+		<text>那么... 祝你死的愉快, 兄弟?</text>
+	</string>
+	<string id="jup_a6_stalker_medik_need_health_care_11114">
+		<text>好吧, 站起来, 你不需要再打抗辐射针了.</text>
+	</string>
+
+	<!-- -->
+	<string id="jup_a6_freedom_leader_start_dialog_11">
+		<text>所以, 你有什么要说的吗?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_start_dialog_12">
+		<text>你在这是做什么的?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_0">
+		<text>跟我说说你在自由军干啥.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1">
+		<text>说来话长, 你想知道什么?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1111">
+		<text>你在这里做什么?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_11111">
+		<text>我们确保政府的家伙不会向普通民众隐瞒任何事情. 你知道这是怎么回事: 一旦他们找到一个新的实验室或一些揭示了特异区秘密的文件, 他们便立即组织军事行动, 把一切清理得比吸尘器还利索, 解决这弱智问题的唯一出路就是比他们先到达那里.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1112">
+		<text>什么风把你吹到特异区中心来了?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_11121">
+		<text>嗯... 我的兄弟们想在一个新地方散步... 开个玩笑. 这里有见到外面世界不存在的东西的机会, 就特异区而言, 这个地方还未被染指, 所以你看到的任何一处都是崭新的.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_111211">
+		<text>找到什么没?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1112111">
+		<text>大多数都是些锁着的门和新出现的奇怪神器.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1113">
+		<text>你是怎么加入自由军的?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_11131">
+		<text>好吧, 在还没有特异区的时候, 我是自由军老大的朋友.请注意, 在那些日子里, 他们还不是领袖, 他们都是些二流子. 因此, 当我进入特异区寻找神器并遇到这些熟悉的面孔时, 我想我还是和认识的人一起行动比较好.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1114">
+		<text>你怎么看待纪律团?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_11141">
+		<text>他们都是傻逼, 这就是我的看法, 如果沃罗宁的头和屁眼子没长错位, 那他就应该在黑石归来时派些支援来这边, 就像我们自由军一样. 如果苏尔加不是个傻逼, 那他就不会因为试着保护这个车站而消失了! 如果他们的人脑子能稍微聪明点, 他们就会花更多时间在找他们失踪的小伙伴上了, 而不是用枪瞎鸡巴对着我们乱射. 如果他们中哪怕有一个人讲理, 他们就能充分享受富足的生活. 而不是把它们抛到一边, 去试图根除这个世界上最独特的科学奇迹, 妈的.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_1115">
+		<text>行了行了, 忘了这个话题吧.</text>
+	</string>
+	<string id="jup_a6_freedom_leader_about_you_11151">
+		<text>随你的便.</text>
+	</string>
+
+    <!-- Hawaiian (Bartender at Yanov Station) -->
+	<string id="jup_a6_stalker_barmen_start_dialog_11">
+		<text>欢迎来到我的快乐寒舍!你是来追寻愉悦、快乐, 还是两者都有?</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_start_dialog_12">
+		<text>你是来放松的? 这里的饮料没什么特别的, 但是这里是一个热情友好的地方!</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_start_dialog_13">
+		<text>我有你需要的所有东西, 你想要啥? 你想吃点还是喝点? 还是想开几枪?</text>
+	</string>
+	
+	<string id="hawaiian_yanov_0">
+		<text>和我聊聊这地方.</text>
+	</string>
+	<string id="hawaiian_yanov_1">
+		<text>欢迎来到亚诺夫车站, 亲爱的潜行者!这里的老哥们都是人才, 各个都会念诗... 在这里, 你可以和朋友、伙伴们聊天, 喝酒和赌博. 想买点东西帮帮自己吗? 我和阿肖特的货能确保你的后勤, 兄弟, 小心驶得万年船!</text>
+	</string>
+
+	<!-- Hermann (Ecologist)-->
+	<string id="jup_b6_scientist_nuclear_physicist_start_11">
+		<text>你有什么要说的吗?</text>
+	</string>
+	
+	<string id="hermann_lab_0">
+		<text>跟我说说这个地方.</text>
+	</string>
+	<string id="hermann_lab_1">
+		<text>嗯, 好吧, 其实这儿没什么好说的. 经过多方协商, 我设法说服了乌克兰国家科学院, 一旦"焦脑器"被关掉, 就在这个地方再建一个设施, 但是, 随着军方行动完全失败, 我们没有得到任何协助. 有了最先进的设备, 却没有充足的人力, 我们大部分时间都不得不依靠雇佣潜行者来干活. 不用说, 我们的能力和工作条件还有很多不足, 没有外界的任何帮助, 我们应该如何取得重大进展啊?!</text>
+	</string>
+	
+	<string id="jup_b16_biochemist_oasis_start_11">
+		<text>什么风把你吹来了?</text>
+	</string>
+	
+	<string id="ozersky_oasis_0">
+		<text>你知道"绿洲"吗?</text>
+	</string>
+	<string id="ozersky_oasis_1">
+		<text>嗯, 我知道. 我们甚至曾经研究过一件来自那个地方的神器, 尽管它后来被要求在特异区外使用. 然而, 给我们这个宝藏的潜行者 - 亚历山大·德格捷列夫 - 从未透露过"绿洲"的位置. 如果你能找到它, 我们会花大价钱从你手里买走另一个"绿洲".</text>
+	</string>
+
+	<string id="jup_b6_scientist_medic_start_11">
+		<text>什么风把你吹来了?</text>
+	</string>
+
+	<!-- Ashot and Yar -->
+	<string id="st_jup_yar_reply_1">
+		<text>你去告诉%s让他立即滚过来.</text>
+	</string>
+	<string id="st_jup_yar_reply_2">
+		<text>他不知道我很忙吗? 叫他过来.</text>
+	</string>
+	<string id="st_jup_yar_reply_3">
+		<text>我去他那又没人给我钱, 叫他过来找我.</text>
+	</string>
+	<string id="st_jup_yar_reply_4">
+		<text>什么?难不成他还得来个轮椅?给我把%s找来.</text>
+	</string>
+	<string id="st_jup_yar_reply_5">
+		<text>%s人呢? 除非他把东西带来, 否则我搞不定这个.</text>
+	</string>
+
+	<string id="st_jup_ashot_reply_1">
+		<text>如果%s想要它, 让他过来, 从我这里拿走它.</text>
+	</string>
+	<string id="st_jup_ashot_reply_2">
+		<text>又来了? 如果他想要, 他就来拿. 明白?</text>
+	</string>
+	<string id="st_jup_ashot_reply_3">
+		<text>你告诉那个狗日的秃头, 让他自己过来.</text>
+	</string>
+	<string id="st_jup_ashot_reply_4">
+		<text>我不能独自离开商店. 他要来找我, 明白?</text>
+	</string>
+	<string id="st_jup_ashot_reply_5">
+		<text>我看起来像个跑腿的吗? 叫%s自己来拿.</text>
+	</string>
+</string_table>

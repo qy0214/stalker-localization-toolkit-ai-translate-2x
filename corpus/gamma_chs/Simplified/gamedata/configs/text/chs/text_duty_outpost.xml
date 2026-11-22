@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="red_duty_outpost_trader_concern_hostile_0">
+		<text>这里有来自不同社区的潜行者. 他们不会造成麻烦吗？</text>
+	</string>
+	<string id="red_duty_outpost_trader_concern_hostile_1">
+		<text>不要担心. 这个地区在纪律团的控制之下. 纪律团的朋友们在这里受到保护,禁止打架. 你最好不要给自己带来麻烦. </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_1_name">
+		<text>怪物猎人</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_text">
+		<text>我已经同意为前哨站清除一个变异怪物的巢穴. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_about">
+		<text>还有一个变异怪物的巢穴,我们还没有任何小队来分配. 你能解决这个问题吗？</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_finish">
+		<text>做得好! ( 在手中的单子上打了一个勾 ) </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_2_name">
+		<text>杀死潜行者</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_text">
+		<text>我已经同意为前哨站站长解决一个潜行者. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_about">
+		<text>我有一个高度优先的目标需要清除. 他被发现袭击了当地的潜行者和生态学家. 我们承诺对任何能干掉他的人进行奖励. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_finish">
+		<text>我不喜欢杀人,但那个人渣罪有应得. 这就是奖励. </text>
+	</string>
+
+	<string id="red_duty_outpost_trader_task_3_name">
+		<text>寻找 %s</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_text">
+		<text>前哨站站长让我去猎取价值一定数量的变异怪物肉. 带给他%获取奖励. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_about">
+		<text>到我们点的供应线非常危险. 我想把重心更多地放在武器和弹药上,而不是放在我们能在该地区可以获得的东西上,比如食物. 这附近有很多可食用的变异怪物. 猎杀他们并带回%的东西. 然后我就会有奖励给你. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_finish">
+		<text>是的,比起干燥的MREs,我更喜欢这些. 干得好. </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_4_name">
+		<text>寻找 %s</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_text">
+		<text>一些生态学家正在寻找一种罕见的突变部分,称为 %s.</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_about">
+		<text>部分生态学家一直要求寻找一些 %s. 它来自一个危险的变异生物,我的手下通常用子弹和手榴弹把它撕成碎片. 看看你能不能弄到一个. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_finish">
+		<text>终于有人完整地带回了样品. </text>
+	</string>
+
+	
+	<string id="meet_guid_duty_outpost_list_0">
+		<text>你能护送我去哪里？</text>
+	</string>
+	<string id="meet_guid_duty_outpost_list_1">
+		<text>去罗斯托克的酒吧一千一人,去扎顿的斯卡多夫斯克两千一人,去填埋场三千人,去扬塔四千一人,去阿格罗普洛姆的军事基地五千一人,去科顿的鲁克村六千一人,去大沼泽六千一人. </text>
+	</string>
+
+	<string id="travel_guid_duty_outpost_0">
+		<text>我需要一个向导.</text>
+	</string>
+	<string id="travel_guid_duty_outpost_1">
+		<text>是啊,在哪里？</text>
+	</string>
+	<string id="travel_guid_duty_outpost_2">
+		<text>前往罗斯托克. %c[d_orange][1000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_3">
+		<text>前往扎顿. %c[d_orange][2000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_4">
+		<text>前往填埋场. %c[d_orange][3000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_5">
+		<text>前往扬塔. %c[d_orange][4000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_6">
+		<text>前往农业研究所. %c[d_orange][5000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_7">
+		<text>前往封锁线. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_8">
+		<text>前往大沼泽. %c[d_orange][6000 卢布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_9">
+		<text>我改变主意了.</text>
+	</string>
+	
+	<string id="travel_guid_duty_outpost_from_others_0">
+		<text>你知道红森林里的执勤哨所吗？我想去那里.</text>
+	</string>
+	
+	<string id="travel_guid_duty_outpost_from_others_1">
+		<text>是的,它将是 %c[d_orange]%s RU%c[255,160,160,190].</text>
+	</string>
+	<string id="travel_guid_duty_outpost_from_others_2">
+		<text>带我去那里. %c[d_orange][%s RU]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_from_others_3">
+		<text>我已经改变了我的想法.</text>
+	</string>
+	
+</string_table>

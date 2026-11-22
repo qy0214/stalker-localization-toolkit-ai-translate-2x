@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Junk/Misc Items
+-->
+<string_table>
+	<string id="st_jar">
+		<text>塑料瓶</text>
+	</string>
+	<string id="st_jar_descr">
+		<text>
+		一個小小的塑料瓶, 這種小瓶子可以很容易地保證小東西的安全,尤其是藥品, 它可以保持裝在裡面的東西不被水汽侵蝕,並且保持乾燥\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_e_syringe">
+		<text>空注射器</text>
+	</string>
+	<string id="st_e_syringe_descr">
+		<text>一個帶有糟糕的活塞的12毫升醫用注射器, 看上去被用過不止一次了, 懂得了製藥箱的相關知識后,這個注射器可以用來輕鬆地製作各種型別的藥物\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_rope">
+		<text>繩子</text>
+	</string>
+	<string id="st_rope_descr">
+		<text>
+		一根結實的繩子可是大有用處,尤其是特異區這樣的地方, 許多潛行者都可以好好地利用它,這也致使它有很高的交易價值, 大約有10米長\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_porn">
+		<text>俄羅斯"花花公子"雜誌</text>
+	</string>
+	<string id="st_porn_descr">
+		<text>100頁里全都是俄羅斯女孩的"不可描述"的套圖(已經過時很久了), 那些被迫困在特異區的應徵士兵,罪犯或是其他不幸者之間的常見違禁品, 一些西方人戲稱為: 俄羅斯之戀\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_survivalguide">
+		<text>烏克蘭特種部隊生存指南</text>
+	</string>
+	<string id="st_survivalguide_descr">
+		<text>你之前已經看過許多生存指南以至於你看到這玩意就想吐, 正因為如此,它沒有任何教學價值,但是你應該可以賣了它賺點零錢, 一些潛行者可能還是需要它的\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_guitar_name">
+		<text>吉他</text>
+	</string>
+	<string id="st_guitar_descr">
+		<text>吉他是一種在整個特異區任何陣營都廣泛使用的一種絃樂器,可以用來撫平心中的創傷或是增進兄弟情誼, 在營地,前哨站或者其他相對安全的地方,經常可以看見潛行者彈吉他 - 通常是篝火旁\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 音樂娛樂\n
+		%c[d_orange] • %c[ui_gray_2] 可以演奏\n
+		</text>
+	</string>
+
+	<string id="st_harmonica_name">
+		<text>口琴</text>
+	</string>
+	<string id="st_harmonica_descr">
+		<text>為藍調與監獄的情人(尼哥)準備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n</text>
+	</string>
+
+	<string id="st_steel_wool">
+		<text>鋼絲球</text>
+	</string>
+	<string id="st_steel_wool_descr">
+		<text>一卷非常細的柔軟鋼絲, 由低碳鋼製成 (碳含量低到足以接近普通鐵), 它不是通過拉制而成的, 而是通過類似拉削的方法制成的, 在這個過程中, 得將重鋼絲拉過帶齒的模具以去除細的剃鬚
+		\n它可用於木材或金屬物體的精加工, 維修工作的拋光, 或是清潔家用炊具和輕質漆面的有效工具, 也可用於精密裝置的清潔, 如各種槍械, 能讓潤滑劑和清洗劑更加方便地滲透其中\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		</text>
+	</string>
+	
+	<string id="st_grease">
+		<text>工業潤滑脂</text>
+	</string>
+	<string id="st_grease_descr">
+		<text>這是種半固體的潤滑劑, 通常由植物油與礦油皂化而成, 潤滑脂常用於無法持續潤滑或是典型的潤滑油容易流出的結構上, 由於它的特殊性質也被用於充當密封劑以防止水一類的難以壓縮的東西滲入, 用潤滑脂潤滑的軸承也因為它的高粘度而具有更高的耐磨性\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		</text>
+	</string>
+	
+	<string id="st_shovel_old">
+		<text>金屬鏟</text>
+	</string>
+	<string id="st_shovel_old_descr">
+		<text>可用於各個領域的舊金屬鏟, 一般人是不會把鏟子塞進揹包里的,因為這東西在特異區實在是太常見了,尤其是在有產業的地方\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_shovel_mili">
+		<text>軍用鏟</text>
+	</string>
+	<string id="st_shovel_mili_descr">
+		<text>高品質的黑色軍用鏟, 真正的多功能鏟, 特種部隊的士兵在訓練科目中就包括使用這種玩意兒, 據說這種鏟子在阿爾法小隊手裡會變成令人生畏的近戰武器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_meinkampf">
+		<text>我的奮鬥(德語版)</text>
+	</string>
+	<string id="st_meinkampf_descr">
+		<text>'我的奮鬥'是由納粹德國元首希特勒口授,由同僚魯道夫·赫斯執筆撰寫的一本自傳, 在初稿時被希特勒取名為'四年來同謊言、愚蠢和膽怯的鬥爭', 它影響著二戰前以及二戰時所有的德國年輕人,這是不僅因為它是納粹元首希特勒的著作,更是納粹主義的理論的最集中的體現,也是研究希特勒法西斯思想的必讀之物, 阿道夫·希特勒(1889年4月20日 - 1945年4月30日)是一位奧地利裔德國政治人物和國家社會主義德國工人黨的領袖(德語:Nationalsozialistische Deutsche Arbeiterpartei(納粹黨),通常被稱為納粹黨), 他是德國總理1933年至1945年與納粹德國(as Fuhrer und Reichskanzler)的獨裁者1934年至1945年\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_journal">
+		<text>個人日記</text>
+	</string>
+	<string id="st_journal_descr">
+		<text>一本皮革裝訂的日記, 裡面寫寫滿了原主人的內心思想,感悟和一些帶有符號的潦草草圖, 略讀一下可能對普通人會略有啓發,但是除了情感上外,再也沒有什麼其他的價值\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_maps_kit">
+		<text>繪圖工具包</text>
+	</string>
+	<string id="st_maps_kit_descr">
+		<text>地圖製作包,其中包含著一組繪圖鋼筆和測量儀器,用防水的迷彩罩包裹起來,一般配發給炮兵人員, 有些地圖都還沒完成, 你的PDA要比這個有用得多\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_welding_goggles">
+		<text>焊接護目鏡</text>
+	</string>
+	<string id="st_welding_goggles_descr">
+		<text>一個舊而且銹跡斑斑的焊接用護目鏡,這種護目鏡是爲了在焊接等作業時保護眼睛免受強光和火花的傷害, 這種情況下是沒什麼用處,不值幾個錢\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_survival_kit">
+		<text>小型生存包</text>
+	</string>
+	<string id="st_survival_kit_descr">
+		<text>這個生存工具包含有一些繃帶,縫紉針和皮革條,允許你縫合嚴重的傷口及制止大出血,在遠離基地的野外這套工具包往往能拯救你的生命, 這些布料和針線也可以作為衣物的修理工具\n \n
+		%c[0,255,255,255]治療:\n
+		%c[d_green] • %c[ui_gray_2] 恢復3, 6%生命值每秒,總計 162%\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 立即制止大出血\n
+		%c[d_red] • %c[ui_gray_2] 回血時間: 長\n
+		%c[d_cyan] • %c[ui_gray_2] 治癒 %c[ui_gray_2] T%c[0,250,250,0]•••••••• %c[ui_gray_2]A%c[0,250,250,0]••• %c[ui_gray_2]L%c[0,250,250,0]••• \n
+		</text>
+	</string>
+	
+	<string id="st_jewelry_box">
+		<text>珠寶首飾盒</text>
+	</string>
+	<string id="st_jewelry_box_descr">
+		<text>一個裝著珠寶的精美小盒子, 潛行者們偷獵特異區變異生物的蹄,角或是牙並不少見,但只有很少的人能夠將這些材料製作成精美的寶藏, 然而,潛行者們很少會在意這些小裝飾品,也只有很少的交易商在做這類物品的出口業務\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_book1">
+		<text>機械手冊</text>
+	</string>
+	<string id="st_book1_descr">
+		<text>這本便宜的書中記載了一些關於機械工程的專業知識,有人用它來增加這方面的知識,或是用來了解更多關於特異區的工廠和設施的資訊\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_book2">
+		<text>工程手冊</text>
+	</string>
+	<string id="st_book2_descr">
+		<text>這本便宜的書中記載了一些關於機械工程的專業知識,有人用它來增加這方面的知識,或是用來了解更多關於特異區的工廠和設施的資訊\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_drugnotes">
+		<text>毒品交易記錄</text>
+	</string>
+	<string id="st_drugnotes_descr">
+		<text>這個筆記本中詳細記錄了各種毒品交易的細節, 具體的昵稱,地點和時間, 某些交易是需要通過裝置交流執行和其他人支付大量盧布, 當你瀏覽這些記錄,你可以清楚的知道,自由軍是天然毒品,如大麻的主要分銷商, 土匪是生產者和更強大的(和危險)合成藥物如水楊酸和古柯堿的分銷商, 顯然,在特異區中的每個陣營發生在這些交易中的一部分, 尤其是黑石似乎在考慮用大量的毒品換取更昂貴的彈藥和裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_picture_woman">
+		<text>愛人的照片</text>
+	</string>
+	<string id="st_picture_woman_descr">
+		<text>這張照片上的景象令人感到溫暖,略微的笑容讓人倍感鼓舞, 看來拍攝者對於像框內場景的採光和氣氛都經過了深思熟慮,給人帶來種具有周到的,富有含義的溫柔之情\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_porn2">
+		<text>烏克蘭"風度"雜誌</text>
+	</string>
+	<string id="st_porn2_descr">
+		<text>儘管這本雜誌已經破爛不堪, 但裡面的斯拉夫女孩仍然光彩可人, 許多頁面已經被撕了下來, 將這種東西帶進特異區這鬼地方究竟是一種趣味還是一種悲哀, 始終是潛行者們口中爭論的話題\n
+		這本雜誌的內部有著一股淡淡的乳酪味\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_boots">
+		<text>皮靴</text>
+	</string>
+	<string id="st_boots_descr">
+		<text>每個人都知道一套好的裝備非常重要,一雙額外的靴子可能非常有用,也可能會引起其他潛行者的羨慕, 這雙外表完好的靴子在特異區是非常罕見的\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_dead_empty">
+		<text>舊電池 (耗盡的)</text>
+	</string>
+	<string id="st_batteries_dead_empty_descr">
+		<text>在特異區中找到的電池十有八九是沒電的, 但是,這些電池算是徹底沒電了,因此沒有任何價值可言\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_empty">
+		<text>電池 (耗盡的)</text>
+	</string>
+	<string id="st_batteries_empty_descr">
+		<text>這些電池早就耗盡了所有的電量, 它們現在唯一值點錢的可能是上面的些許金屬\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_ccell_empty">
+		<text>軍用電池 (耗盡的)</text>
+	</string>
+	<string id="st_batteries_ccell_empty_descr">
+		<text>一組已經耗盡了的軍用電池, 當它們充滿電時,可是特異區中稀缺的貴重物品, 然而,一旦它們的電量耗盡,它們也就成爲了揹包里的累贅\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_flashlight_broken">
+		<text>破手電</text>
+	</string>
+	<string id="st_flashlight_broken_descr">
+		<text>手柄已經壞的一塌糊塗,甚至膠帶也無法將電池固定起來, 不再有任何價值\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_underwear">
+		<text>潮濕的內褲</text>
+	</string>
+	<string id="st_underwear_descr">
+		<text>換一條新內褲可以大大提高你的幸福感, 但是這一條好像完全浸濕了, 看起來也不會有哪個潛行者會想買這東西, 但拆成布料可以用來擦拭裝備或縫合護甲\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_spareparts">
+		<text>備用槍械零件</text>
+	</string>
+	<string id="st_wpn_spareparts_descr">
+		<text>看上去有點像AKM的配件,木製配件的狀態有點糟糕,金屬部件也沒好到哪裡去, 只有新手可能才有興趣收它們, 然而,它們對於裝置的維修還是很用幫助,一些潛行者在別人的藏匿處發現武器時可能會更換裡面的配件,以免因為搜刮點東西而引來殺身之禍\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_beadspread">
+		<text>床單</text>
+	</string>
+	<string id="st_beadspread_descr">
+		<text>特異區中的奢侈品, 它會讓你睡個好覺的機率增加個百分之十, 由於特異區內安全屋裡的床位並不多,如果你不想在大多數不合適的情況下突然跑不動,那麼睡袋和床罩是必要的, 一些軍方的裝備中包括床罩\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_walkie">
+		<text>對講機</text>
+	</string>
+	<string id="st_walkie_descr">
+		<text>顯示器已經壞了, 揚聲器正在嘶嘶作響, 這玩意肯定是沒用了, 上面留著一個可怕的牙齒印\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_cards">
+		<text>撲克牌</text>
+	</string>
+	<string id="st_cards_descr">
+		<text>有時你非常需要將大腦從這個地獄中轉移出來,投入到更愉悅的活動中去, 打牌是一種流行的消遣方式,但是一副牌也可以用來分類特殊的行業, 封面描繪了莫斯科地鐵引以為傲的建築設計\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_mili_maps">
+		<text>軍用地圖</text>
+	</string>
+	<string id="st_mili_maps_descr">
+		<text>這個地圖顯示的是軍營以及周邊一些地帶,每個人的PDA上都會有這些資訊,所以很少會用到這個地圖\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_headlamp">
+		<text>舊頭燈</text>
+	</string>
+	<string id="st_headlamp_descr">
+		<text>儘管很少有人敢在夜晚探索特異區,但在某些情況下,一個頭燈至關重要, 一個額外的光源會增加你存活的機會,畢竟你永遠也不知道你何時不得不進行移動, 不幸的是,這個特殊的裝置已經用了很久了,現在只能作為廉價配件的來源\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_mirror">
+		<text>伸縮鏡</text>
+	</string>
+	<string id="st_mirror_descr">
+		<text>小鏡子安裝在一隻伸縮鐵管上, 一個方便的小工具, 巷戰中的一門藝術, 一個善戰的老兵會用它在不被擊中的情況下觀察角落\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_hammer">
+		<text>圓頭錘</text>
+	</string>
+	<string id="st_hammer_descr">
+		<text>一個由木柄和鐵錘頭組成的錘子, 在特異區內隨處可見, 儘管很重, 但出於用途廣泛, 所以通常還是會被人們放進揹包中\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+
+	<string id="st_tarpaulin">
+		<text>迷彩帆布</text>
+	</string>
+	<string id="st_tarpaulin_descr">
+		<text>
+		帆布(或者篷布)是一大片結實,柔軟,耐水或防水的材料,通常是布,例如帆布或塗有聚氨酯的聚酯纖維,或由塑料如聚乙烯製成, 在拐角處和側面都加固了索環,形成了繩索的固定點,使它們可以繫緊或懸掛, 有多種用途,但主要用於建立簡單的小型帳篷式庇護所, 由於替代品很多,所以值不了幾個錢\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_synthrope">
+		<text>一捆纜繩</text>
+	</string>
+	<string id="st_synthrope_descr">
+		<text>
+		這種合成纜繩是軍用倉庫中常見的物品, 但出於某些原因軍方潛行者很少帶著這種東西, 一根結實的繩子可是大有用處,尤其是特異區這樣的地方, 許多潛行者都可以好好地利用它,這也致使它有很高的交易價值, 大約有5米長\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_cutlery">
+		<text>野外餐具</text>
+	</string>
+	<string id="st_cutlery_descr">
+		<text>
+		由精鋼製成的刀,叉和勺子, 堅固耐用且輕巧的餐具套裝, 非常適合揹包旅行和野外探險, 餐具通過銅線固定在一起, 如果進行正確的清潔和除銹, 就可以重複使用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_radio">
+		<text>小收音機</text>
+	</string>
+	<string id="st_radio_descr">
+		<text>音樂是使你神經放鬆的一個好辦法,但是這個收音機的天線已經破損,已經沒有多少用處,更何況受潮和污垢也損壞了這個東西\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_radio2">
+		<text>損壞的收音機</text>
+	</string>
+	<string id="st_radio2_descr">
+		<text>
+		一個看起來已經破損很嚴重的小收音機,外表很臟且內部受潮損壞,當你左右搖晃這個收音機時,有時能發出吱吱的響聲,已經沒有多少用處,不值錢\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_broken_detector">
+		<text>壞掉的探測器</text>
+	</string>
+	<string id="st_broken_detector_descr">
+		<text>
+		一個壞掉的熊式探測器, 螢幕碎了,裡面看起來也很糟糕, 但裡面某些電子原件還是好的, 它們可以重新用於維修的目的,甚至可以製作物品\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_gloves">
+		<text>皮手套</text>
+	</string>
+	<string id="st_gloves_descr">
+		<text>
+		一副皮手套, 無論是看起來還是聞起來它都是最近買來的, 在天氣轉冷時,一定要保證你的雙手溫暖\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_hand_watch">
+		<text>手錶</text>
+	</string>
+	<string id="st_hand_watch_descr">
+		<text>
+		一款古老而經典的蘇聯'raketa3'手錶, 看起來成色很棒, 奇怪的是潛行者們更願意用表來看時間而不是PDA, 考慮到這些手錶即使在最壞的情況下也能正常運轉,所以在能量風暴或是異常點附近產生強電磁波而致使PDA失效時,它們非常有用, 然而,有些人只是爲了戴著好看而已\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可以用來檢查時間\n
+		</text>
+	</string>
+	
+	<string id="st_ball_hammer">
+		<text>圓頭錘</text>
+	</string>
+	<string id="st_ball_hammer_descr">
+		<text>
+		也被稱作技師的錘子, 球形錘是金屬加工中使用的一種錘子, 儘管已經很舊並且銹跡斑斑,但為小型維修工作配備一個絕對不會錯\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_duct_tape">
+		<text>強力膠帶</text>
+	</string>
+	<string id="st_duct_tape_descr">
+		<text>
+		通常用於需要堅固,靈活且粘接效果較好的膠帶的情況, 簡單而臨時的快速修理解決方案, 這種型別還具有持久的粘合劑和良好的耐候性\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]基礎材料\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+
+	
+<!-- unused -->
+	<string id="ammo12x70_base_name">
+		<text>用於12x76子彈的彈藥元件</text>
+	</string>
+	<string id="ammo12x70_base_descr">
+		<text>火藥,彈和彈殼 - 製作12x76霰彈的一切零件, 大約能做40發左右\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]用於製作彈藥\n%c[0,253,155,155] • %c[0,240,140,140]需要工具</text>
+	</string>
+	<string id="ammo12x70_tools_name">
+		<text>製造12x76霰彈的工具</text>
+	</string>
+	<string id="ammo12x70_tools_descr">
+		<text>製造12x76鹿彈的必要工具\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]用於製作彈藥\n
+		%c[d_cyan] • %c[ui_gray_2]日用品\n</text>
+	</string>
+	<string id="sew_tools_name">
+		<text>針線包</text>
+	</string>
+	<string id="sew_tools_descr">
+		<text>針和線, 製作布料所需的一切\n \n
+		%c[ui_gray_2]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]製作工具\n
+		%c[d_cyan] • %c[ui_gray_2]常見</text>
+	</string>
+	<string id="sleepbag_base_name">
+		<text>睡袋元件</text>
+	</string>
+	<string id="sleepbag_base_descr">
+		<text>製作睡袋所需要的一切\n \n
+		%c[ui_gray_2]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]製作材料\n
+		%c[0,253,155,155] • %c[0,240,140,140]需要針線包</text>
+	</string>
+	<string id="backpack_base_name">
+		<text>揹包元件</text>
+	</string>
+	<string id="backpack_base_descr">
+		<text>橡膠織物,拉鍊和鉚釘, 製作揹包所需的一切\n \n
+		%c[ui_gray_2]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]製作材料\n
+		%c[0,253,155,155] • %c[0,240,140,140]需要針線包</text>
+	</string>
+	<string id="selfroll_1_name">
+		<text>菸捲</text>
+	</string>
+	<string id="selfroll_1_descr">
+		<text>散裝菸草,濾嘴和紙\n \n
+		%c[ui_gray_2]屬性:\n
+		%c[0,253,155,155] • %c[0,240,140,140]致癌\n
+		%c[d_cyan] • %c[ui_gray_2]自製</text>
+	</string>
+	<string id="st_itm_cutting_tools">
+		<text>主拆解工具</text>
+	</string>
+	<string id="st_itm_cutting_tools_descr">
+		<text>工廠生產的工具,可以拆卸各種東西\n \n%c[ui_gray_3]屬性:\n%c[0,155,155,155] • %c[ui_gray_2]製作工具\n%c[0,255,1,1] • %c[0,100,250,100]適用於高科技裝置</text>
+	</string>
+	<string id="st_itm_cutting_tools_2">
+		<text>旅人拆裝工具</text>
+	</string>
+	<string id="st_itm_cutting_tools_2_descr">
+		<text>一套生鏽的工具,用於中型護甲的拆卸\n \n%c[ui_gray_3]屬性:\n%c[0,155,155,155] • %c[ui_gray_2]製作工具\n%c[0,255,1,1] • %c[0,100,250,100]適用於中型護甲</text>
+	</string>
+	<string id="st_itm_cutting_tools_3">
+		<text>基本拆卸工具</text>
+	</string>
+	<string id="st_itm_cutting_tools_3_descr">
+		<text>專為織物或輕型防毒面具設計的簡易工具\n \n%c[ui_gray_3]屬性:\n%c[0,155,155,155] • %c[ui_gray_2]製作工具\n%c[0,255,1,1] • %c[0,100,250,100]適用於輕甲或防毒面具</text>
+	</string>
+	<string id="plate_seva_name">
+		<text>SEVA板</text>
+	</string>
+	<string id="plate_seva_descr">
+		<text>一塊從SEVA護甲上取下來的護甲板, 能阻擋小型彈藥或是異常點傷害, 可用來修復\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_heavy_name">
+		<text>重型"ESAPI"板</text>
+	</string>
+	<string id="plate_heavy_descr">
+		<text>提供4級保護的陶瓷複合板,可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_medium_name">
+		<text>中型"SAPI"板</text>
+	</string>
+	<string id="plate_medium_descr">
+		<text>提供3級防護的護甲板,可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_light_name">
+		<text>土質護甲板</text>
+	</string>
+	<string id="plate_light_descr">
+		<text>由凱夫拉縴維和芳綸纖維製成的手工制護甲板,可提供2級防護, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_cloth_name">
+		<text>布料護甲板</text>
+	</string>
+	<string id="plate_cloth_descr">
+		<text>由凱夫拉縴維和布製成, 可提供1級防護, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_military_name">
+		<text>花崗巖-4M板</text>
+	</string>
+	<string id="plate_military_descr">
+		<text>由陶瓷製成的軍用重型護甲板, 提供5級保護, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_monolith_name">
+		<text>未知護甲板</text>
+	</string>
+	<string id="plate_monolith_descr">
+		<text>由未知材料製成的護甲板, 似乎是由實心合金和一些織物製成的, 很重, 提供5級保護(現場測試), 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_unload_name">
+		<text>彈藥袋</text>
+	</string>
+	<string id="plate_unload_descr">
+		<text>一個彈藥袋,用來放彈匣, 由緻密且優質的面料製成\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="plate_small_name">
+		<text>小護甲板</text>
+	</string>
+	<string id="plate_small_descr">
+		<text>一小塊自製的護甲板,很可能是由熔化的廢料製成, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="cloth_green_name">
+		<text>綠布</text>
+	</string>
+	<string id="cloth_green_descr">
+		<text>綠色面料,剪裁自綠色服裝, 高質量和緻密的織物, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="cloth_black_name">
+		<text>黑布</text>
+	</string>
+	<string id="cloth_black_descr">
+		<text>黑色面料,剪裁自黑色服裝, 高質量和緻密的織物, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="cloth_brown_name">
+		<text>棕布</text>
+	</string>
+	<string id="cloth_brown_descr">
+		<text>棕色面料,剪裁自棕色服裝, 高質量和緻密的織物, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="cloth_white_name">
+		<text>白布</text>
+	</string>
+	<string id="cloth_white_descr">
+		<text>白色面料,剪裁自白色服裝, 高質量和緻密的織物, 可用作維修材料\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="servomotor_name">
+		<text>伺服驅動器</text>
+	</string>
+	<string id="servomotor_descr">
+		<text>外骨骼上的伺服器, 看起來可以用維修套件進行替換\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 高技術產品\n
+		</text>
+	</string>
+	<string id="plastic_pieces_name">
+		<text>廢塑料</text>
+	</string>
+	<string id="plastic_pieces_descr">
+		<text>星星點點,麻麻賴賴的廢塑料,從護甲上切下來的, 可用於修補或修理\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="glass_pieces_name">
+		<text>玻璃</text>
+	</string>
+	<string id="glass_pieces_descr">
+		<text>從防毒面具或是頭盔上取下的玻璃, 使用得當的工具就可以用來替換幾乎所有頭盔的碎玻璃\n \n%c[ui_gray_3]屬性:\n \n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_spareparts">
+		<text>舊霰彈槍的部件</text>
+	</string>
+	<string id="st_spareparts_descr">
+		<text>來自各種滑膛槍的舊木材和金屬零件,形狀各異,其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_sov_r_spareparts">
+		<text>蘇制自動步槍部件</text>
+	</string>
+	<string id="st_sov_r_spareparts_descr">
+		<text>來自各種蘇制步槍的舊復進簧,槍管和槍托,狀況各異, 其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_nato_r_spareparts">
+		<text>北約自動步槍部件</text>
+	</string>
+	<string id="st_nato_r_spareparts_descr">
+		<text>來自各種北約步槍的舊復進簧,槍管和槍托,狀況各異, 其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_sov_p_spareparts">
+		<text>蘇制手槍部件</text>
+	</string>
+	<string id="st_sov_p_spareparts_descr">
+		<text>來自各種蘇制手槍的舊復進簧,擊錘和握把,狀況各異, 其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_nato_p_spareparts">
+		<text>北約手槍部件</text>
+	</string>
+	<string id="st_nato_p_spareparts_descr">
+		<text>來自各種北約手槍的舊復進簧,擊錘和握把,狀況各異, 其中一些可能可以用於維修, \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_sov_s_spareparts">
+		<text>蘇制狙擊步槍部件</text>
+	</string>
+	<string id="st_sov_s_spareparts_descr">
+		<text>舊的蘇制狙擊步槍部件, 其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_nato_s_spareparts">
+		<text>北約狙擊步槍部件</text>
+	</string>
+	<string id="st_nato_s_spareparts_descr">
+		<text>舊的北約狙擊步槍部件, 其中一些可能可以用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_shot_spareparts">
+		<text>霰彈槍部件</text>
+	</string>
+	<string id="st_shot_spareparts_descr">
+		<text>用於滑膛槍的部件,相對比較新, 可用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_pp_spareparts">
+		<text>衝鋒鎗部件</text>
+	</string>
+	<string id="st_pp_spareparts_descr">
+		<text>用於衝鋒鎗的復進簧,槍機和槍托, 可用於維修\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n
+		</text>
+	</string>
+	<string id="st_deactivate_mix">
+		<text>自製防腐劑</text>
+	</string>
+	<string id="st_deactivate_mix_descr">
+		<text>已證明片劑和溶劑的混合物可有效去除輻射和對生物有害的物質, 可用來此清除污染\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 凈化用品\n
+		%c[d_cyan] • %c[ui_gray_2] 自製</text>
+	</string>
+	<string id="st_barrelkit_shotgun">
+		<text>霰彈槍槍管替換件</text>
+	</string>
+	<string id="st_barrelkit_shotgun_descr">
+		<text>用於在野外更換霰彈槍槍管的特殊工具, 包含所需的工具和槍管\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 技術產品\n</text>
+	</string>
+	<string id="st_vodka_4">
+		<text>野格聖鹿力嬌酒</text>
+	</string>
+	<string id="st_vodka_4_descr">
+		<text>德國產的濃郁利口酒, 其成分包括56種來自全球各地的辛香料,並經過木桶12個月的窖藏而成, 瓶子的標籤上描繪了一隻鹿,角上有一個十字架, 根據傳說,鹿是由獵人的守護神聖休伯特(Saint Hubert)看見的\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 烈酒\n
+		%c[d_cyan] • %c[ui_gray_2] 導致頭暈</text>
+	</string>
+	<string id="st_selfroll_base_1_name">
+		<text>紙,菸草和濾嘴, </text>
+	</string>
+	<string id="st_selfroll_base_1_descr">
+		<text>紙,菸草和濾嘴,製造一根香菸所需的一切, 能做大概6到7根\n \n%c[ui_gray_3]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]製作材料</text>
+	</string>
+</string_table>

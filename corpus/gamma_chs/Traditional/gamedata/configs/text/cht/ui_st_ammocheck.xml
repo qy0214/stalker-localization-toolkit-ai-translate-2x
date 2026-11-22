@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <!-- Ammo_Check Messages -->
+    <string id="st_ac_overfull">
+        <text>過滿</text>
+    </string>
+    <string id="st_ac_plus1">
+        <text>滿 +1</text>
+    </string>
+    <string id="st_ac_just_one">
+        <text>只有一個</text>
+    </string>
+    <string id="st_ac_full">
+        <text>滿的</text>
+    </string>
+    <string id="st_ac_nearly_full">
+        <text>快滿了</text>
+    </string>
+    <string id="st_ac_more_half">
+        <text>大約一半</text>
+    </string>
+    <string id="st_ac_about_half">
+        <text>將近一半</text>
+    </string>
+    <string id="st_ac_less_half">
+        <text>少於一半</text>
+    </string>
+    <string id="st_ac_near_empty">
+        <text>快沒了</text>
+    </string>
+    <string id="st_ac_empty">
+        <text>沒了</text>
+    </string>
+    <string id="st_ac_jammed">
+        <text>卡殼的武器</text>
+    </string>
+    <string id="st_ac_noMag">
+        <text>未裝彈匣</text>
+    </string>
+    <string id="st_ac_noAmmo">
+        <text>這不需要彈藥!</text>
+    </string>
+    <string id="st_ac_ammoLeft">
+        <text>剩餘</text>
+    </string>
+
+	
+    <string id="ui_mcm_menu_rax_ammo_check">
+        <text>彈藥檢查</text>
+    </string>
+    <string id="ui_mm_title_rax_ammo_check">
+        <text>彈藥檢查</text>
+    </string>
+
+	<string id="ui_mcm_rax_ammo_check_usecolor">
+		<text>顏色資訊</text>
+	</string>
+
+	<string id="ui_mcm_rax_ammo_check_hidecounter">
+		<text>隱藏彈藥計數器</text>
+	</string>
+
+	<string id="ui_mcm_rax_ammo_check_hideicon">
+		<text>隱藏彈藥圖示</text>
+	</string>
+
+
+	<string id="ui_mcm_rax_ammo_check_busy_hands_fix">
+		<text>忙手修復</text>
+	</string>
+	<string id="ui_mcm_rax_ammo_check_busy_hands_fix_desc">
+		<text>如果彈藥檢查"動畫"卡住,請選中此框,安裝FDDA時可能發生</text>
+	</string>
+
+	<string id="ui_mcm_rax_ammo_check_keybind">
+		<text>彈藥檢查鍵位</text>
+	</string>
+
+	<string id="ui_mcm_rax_ammo_check_keybind_desc">
+		<text>組合鍵設定：可以將此鍵位繫結+額外的鍵位來緩解衝突.</text>
+	</string>
+
+	<string id="ui_mcm_rax_ammo_check_update_mcm">
+		<text>更新MCM以在此處更改鍵位繫結,鍵位預設為 T </text>
+	</string>
+
+	
+
+</string_table>

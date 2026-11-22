@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_fnx45_v1">
+		<text>FNX-45</text>
+	</string>
+	<string id="st_wpn_fnx45_v1_descr">
+		<text>FNX 系列手槍由比利時槍支公司 FN Herstal 的美國子公司 FNH USA 于 2009 年推出; 這些手槍最初是根據美國聯合作戰手槍計劃的要求開發製造的, 用於軍事, 執法和民用; 所有 FNX 手槍均為半自動手槍, 配有雙動/單動扳機和外部擊錘; 每支 FNX 手槍的槍身均由抗衝擊聚合物製成, 配有不同尺寸的可拆卸揹帶; FNX-45 戰術型是基本 FNX-45 的特殊變體, 具有加長的螺紋槍管和升高的瞄準器; 可與可拆卸的消音器一起使用\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech 消音器</text>
+	</string>
+
+	<string id="st_wpn_fnx45_v2">
+		<text>FNX-45 Tactical</text>
+	</string>
+	<string id="st_wpn_fnx45_v2_descr">
+		<text>FNX 系列手槍由比利時槍支公司 FN Herstal 的美國子公司 FNH USA 于 2009 年推出; 這些手槍最初是根據美國聯合作戰手槍計劃的要求開發製造的, 用於軍事, 執法和民用; 所有 FNX 手槍均為半自動手槍, 配有雙動/單動扳機和外部擊錘; 每支 FNX 手槍的槍身均由抗衝擊聚合物製成, 配有不同尺寸的可拆卸揹帶; FNX-45 戰術型是基本 FNX-45 的特殊變體, 具有加長的螺紋槍管和升高的瞄準器; 可與可拆卸的消音器一起使用\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] FNX 戰術瞄具 (整合的)\n
+		%c[d_purple] • %c[ui_gray_2] GemTech 消音器</text>
+	</string>
+
+	<string id="st_wpn_fn509">
+		<text>FN 509</text>
+	</string>
+	<string id="st_wpn_fn509_descr">
+		<text>FN 509 是一款聚合物框架撞針發射的半自動手槍, 由 FN Herstal 的子公司 FN America 製造; 它採用 9×19 毫米 Parabellum 手槍, 具有雙動操作功能和來自 Vortex Optics 的 Venom 紅點瞄準鏡; 作為 2015 年 9 月發起的 XM17 模組化手槍系統競賽 (MHS) 的一部分, FN Herstal 參賽了一款源自 FN FNS 的聚合物槍身, 撞針發射手槍; 2017 年 1 月, SIG Sauer 憑藉改進版 P320 贏得比賽後, FN America 將其產品的一個版本 ( 現在稱為 FN 509 ) 推向商業市場\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Venom 紅點瞄具 (整合的)\n
+		%c[d_purple] • %c[ui_gray_2] GemTech 消音器</text>
+	</string>
+
+</string_table>

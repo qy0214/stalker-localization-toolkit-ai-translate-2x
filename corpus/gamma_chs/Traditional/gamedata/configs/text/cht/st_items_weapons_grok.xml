@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+	
+	<string id="st_wpn_raptr">
+		<text>RAPTR 霰彈槍</text>
+	</string>
+	<string id="st_wpn_raptr_descr">
+		<text>
+		RAPTR 是一款誕生於特異區的自動供彈彈鼓式霰彈槍,專為滿足世界上那個最危險的地區的特定需求而量身定製的, 通常被潛行者稱為"吸血怪殺手", 它的高射速, 大彈鼓和無與倫比的人體工程學設計使其成為殺死吸血怪等快速移動和隱形目標的完美武器, 在過去的幾年里, RAPTR被認為是一種花哨的武器, 但它在潛行者們執行"毀滅吸血怪巢穴"任務中逐漸口碑爆棚, 使RAPTR霰彈槍開始流行, 它現在被認為是特異區最好的12x76口徑霰彈槍支之一 \n
+		%c[0,255,255,255]特性:\n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]烏克蘭\n
+		%c[d_cyan] • %c[0,255,255,255]製造商:  %c[ui_gray_1]未知\n
+		%c[d_cyan] • %c[0,255,255,255]生產日期: %c[ui_gray_1]未知\n \n
+		%c[0,255,255,255]附件描述（整合）:\n
+		%c[d_blue] • %c[0,255,255,255]專用制退器\n
+		%c[d_blue] • %c[0,255,255,255]專用消焰器\n
+		%c[d_blue] • %c[0,255,255,255]超大專用彈鼓\n
+		</text>
+	</string>
+	<string id="mag_raptr">
+		<text>RAPTR 霰彈槍彈鼓</text>
+	</string>
+	<string id="mag_raptr_descr">
+		<text>可容納 20 發 12x76 口徑霰彈槍彈藥的大彈鼓</text>
+	</string>
+	
+</string_table>

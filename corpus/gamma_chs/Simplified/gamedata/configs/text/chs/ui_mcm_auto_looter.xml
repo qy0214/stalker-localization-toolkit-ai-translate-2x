@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>	
+	<string id="ui_mcm_menu_auto_looter">
+		<text>自动拾取</text>
+	</string>
+	<string id="ui_mcm_auto_looter_base_description">
+		<text>自动拾取MOD按以下特定顺序来执行操作: 整体拆卸 -> 零件/附件剥离 -> 拾取 -> 删除物品; 也就是说, 如果你打开盔甲的自动拆卸功能, 拆出的零件将继续进行下一步的条件检查, 符合条件才会拾取</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_looter_key_title">
+		<text>按键绑定</text>
+	</string>
+	<string id="ui_mcm_auto_looter_looter_key_description">
+		<text>某些mod在物品栏中禁用了一些按键的触发事件, 所以这里建议不要轻易修改下方的默认绑定, 因为左ALT键没有被任何mod禁用</text>
+	</string>
+	<string id="ui_mcm_auto_looter_looter_key">
+		<text>拾取按键</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_remote_looting_title">
+		<text>远程拾取(不兼容GAMMA)</text>
+	</string>
+	<string id="ui_mcm_auto_looter_remote_looting_description">
+		<text>对远程拾取设置最大距离, 设置为0则会禁用远程拾取; 注意!! 如果你安装有其他能够在开启尸体和容器物品栏时执行脚本的mod, 那么不应启用远程拾取, GAMMA玩家应保持此选项始终禁用</text>
+	</string>
+	<string id="ui_mcm_auto_looter_remote_looting_distance">
+		<text>最大距离</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_proximity_looting_title">
+		<text>实验性功能: 范围拾取(不兼容GAMMA)</text>
+	</string>
+	<string id="ui_mcm_auto_looter_proximity_looting_description">
+		<text>和远程拾取的原理相同, 区别在于此功能会根据给定的间隔自动重复启动, 并遍历范围内所有可拾取的尸体(不包括藏物点和你自己的容器), 取值为0则禁用范围拾取; 注意!! 如果你安装有其他能够在开启尸体和容器物品栏时执行脚本的mod, 那么不应启用范围拾取, GAMMA玩家应保持此选项始终禁用</text>
+	</string>
+	<string id="ui_mcm_auto_looter_proximity_looting_distance">
+		<text>范围拾取半径</text>
+	</string>
+	<string id="ui_mcm_auto_looter_proximity_looting_refire_time">
+		<text>范围拾取间隔</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_disassemble_title">
+		<text>自动拆卸设定</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_ammo">
+		<text>拆卸弹药</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_armor">
+		<text>拆卸护甲和头盔</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_armor_desc">
+		<text>可用的是指大于50%状态的护甲零件和用于合成其他物品的零件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_weapon">
+		<text>拆卸枪械</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_title">
+		<text>拆卸杂项物品</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_description">
+		<text>由于有些杂项物品为任务所需(比如小黄书), 你可以在下方自定义需要拆卸和保留的杂项物品, 下方的最后的PDA选项是指那些尸体掉落并能提供藏物点信息的PDA</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_strip_title">
+		<text>拆除枪械零件和附件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_strip_attachments">
+		<text>拆除枪械配件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_strip_weapon">
+		<text>拆除枪械零件</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_loot_title">
+		<text>物品拾取设置</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_description">
+		<text>自定义需要按条件来自动拾取的物品种类, 武器和护甲已略过, 下面未描述的其余物品类型 (例如升级套件, 武器附件, 维修耗材, 未拆卸的杂项物品等) 将被自动拾取, 以免使逻辑过于复杂</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_ammo">
+		<text>拾取弹药</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_ammo_parts">
+		<text>拾取弹药材料</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_grenades">
+		<text>拾取手雷</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_magazines">
+		<text>拾取弹匣</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_armor_parts">
+		<text>拾取护甲零件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_armor_parts_desc">
+		<text>可用的是指大于50%状态的护甲零件和用于合成其他物品的零件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_weapon_parts">
+		<text>拾取枪械零件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_title">
+		<text>拾取杂项物品</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_delete_title">
+		<text>物品删除设置</text>
+	</string>
+	<string id="ui_mcm_auto_looter_delete_description">
+		<text>敌方基地大门前面堆积成山的尸体看上去确实很屌, 直到它们开始干爆你的CPU, 那些你永远都不会再回头多看一眼的东西会始终呆在尸体里面蹂躏你的内存, 而下方的设置可以让游戏自动删除已经互动过的尸体, "删除其他物品" 基本上就是指那些你不想捡的武器和护甲零件</text>
+	</string>
+	<string id="ui_mcm_auto_looter_delete_body">
+		<text>删除整个尸体</text>
+	</string>
+	<string id="ui_mcm_auto_looter_delete_armor">
+		<text>删除护甲和头盔</text>
+	</string>
+	<string id="ui_mcm_auto_looter_delete_weapon">
+		<text>删除枪械</text>
+	</string>
+	<string id="ui_mcm_auto_looter_delete_misc">
+		<text>删除其他物品</text>
+	</string>
+
+	<string id="ui_mcm_auto_looter_misc_options_title">
+		<text>杂项设置</text>
+	</string>
+	<string id="ui_mcm_auto_looter_no_valid_tool_messaging">
+		<text>当缺少拆卸工具时显示提示信息</text>
+	</string>
+	<string id="ui_mcm_auto_looter_usable_armor_part_condition_treshold">
+		<text>可用的护甲零件状态阈值</text>
+	</string>
+	<string id="ui_mcm_auto_looter_usable_weapon_part_condition_treshold">
+		<text>可用的武器零件状态阈值</text>
+	</string>
+	<string id="ui_mcm_auto_looter_always_treat_recipe_part_as_usable">
+		<text>只要是制作材料的零件都被视为可用</text>
+	</string>
+	<string id="ui_mcm_auto_looter_always_treat_recipe_part_as_usable_description">
+		<text>如果取消这个选项, 插件只会检测零件的状态阈值, 而不去管这个零件是否能作为制作材料, 这样一来或许会丢失很多有用的素材(因为任意状态的材料都可以用于制作)</text>
+	</string>
+
+	<!-- Dropdown options -->
+	<string id="ui_mcm_lst_auto_looter_all_label">
+		<text>全都要</text>
+	</string>
+	<string id="ui_mcm_lst_auto_looter_none_label">
+		<text>全都不要</text>
+	</string>
+	<string id="ui_mcm_lst_auto_looter_non_favourite_label">
+		<text>没被我标记为"喜爱"的</text>
+	</string>
+	<string id="ui_mcm_lst_auto_looter_with_usable_parts_label">
+		<text>内有可用零件的</text>
+	</string>
+	<string id="ui_mcm_lst_auto_looter_with_usable_barrel_label">
+		<text>内有可用枪管的</text>
+	</string>
+	<string id="ui_mcm_lst_auto_looter_usable_label">
+		<text>可用的</text>
+	</string>
+
+
+	<!-- To do: remove this section once RavenAscendant adds the support for "text" prop for more fields -->
+	<!-- There might be an exception required for the powder can - can't see XMLs defined for it -->
+	<!-- Other exceptions: Guitar (section: guitar_a, string id: st_guitar_name), Sleeping bag (section: itm_sleepbag, string id: st_itm_sleepbag_name),  -->
+	<!-- PDAs (existing XMLs don't mention whether they are common, uncommon or rare) -->
+	<string id="ui_mcm_auto_looter_disassemble_misc_porn">
+		<text>俄罗斯"花花公子"杂志</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_porn2">
+		<text>乌克兰"风度"杂志</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_beadspread">
+		<text>床单</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_synthrope">
+		<text>一捆缆绳</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_tarpaulin">
+		<text>迷彩帆布</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_underwear">
+		<text>潮湿的内裤</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_shovel_old">
+		<text>金属铲</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_shovel_mili">
+		<text>军用铲</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_ball_hammer">
+		<text>圆头锤</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_boots">
+		<text>皮靴</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_broken_detector">
+		<text>坏掉的探测器</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_cutlery">
+		<text>野外餐具</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_explo_metalcan_powder">
+		<text>火药罐</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_flashlight_broken">
+		<text>破手电</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_gloves">
+		<text>皮手套</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_hand_watch">
+		<text>手表</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_headlamp">
+		<text>旧头灯</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_mirror">
+		<text>伸缩镜</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_radio">
+		<text>小收音机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_radio2">
+		<text>损坏的收音机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_walkie">
+		<text>对讲机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_guitar_a">
+		<text>吉他</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_compression_bag">
+		<text>压缩袋</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_itm_sleepbag">
+		<text>睡袋</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_itm_pda_common">
+		<text>PDA - 普通</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_itm_pda_uncommon">
+		<text>PDA - 稀有</text>
+	</string>
+	<string id="ui_mcm_auto_looter_disassemble_misc_itm_pda_rare">
+		<text>PDA - 罕见</text>
+	</string>
+
+
+	<string id="ui_mcm_auto_looter_loot_misc_porn">
+		<text>俄罗斯"花花公子"杂志</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_porn2">
+		<text>乌克兰"风度"杂志</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_beadspread">
+		<text>床单</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_synthrope">
+		<text>一捆缆绳</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_tarpaulin">
+		<text>迷彩帆布</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_underwear">
+		<text>潮湿的内裤</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_shovel_old">
+		<text>金属铲</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_shovel_mili">
+		<text>军用铲</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_ball_hammer">
+		<text>圆头锤</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_boots">
+		<text>皮靴</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_broken_detector">
+		<text>坏掉的探测器</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_cutlery">
+		<text>野外餐具</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_explo_metalcan_powder">
+		<text>火药罐</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_flashlight_broken">
+		<text>破手电</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_gloves">
+		<text>皮手套</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_hand_watch">
+		<text>手表</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_headlamp">
+		<text>旧头灯</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_mirror">
+		<text>伸缩镜</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_radio">
+		<text>小收音机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_radio2">
+		<text>损坏的收音机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_walkie">
+		<text>对讲机</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_bolt">
+		<text>螺栓</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_bolt_bullet">
+		<text>弹壳</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_guitar_a">
+		<text>吉他</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_compression_bag">
+		<text>压缩袋</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_itm_sleepbag">
+		<text>睡袋</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_itm_pda_common">
+		<text>PDA - 普通</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_itm_pda_uncommon">
+		<text>PDA - 稀有</text>
+	</string>
+	<string id="ui_mcm_auto_looter_loot_misc_itm_pda_rare">
+		<text>PDA - 罕见</text>
+	</string>
+
+	
+</string_table>

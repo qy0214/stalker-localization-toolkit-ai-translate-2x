@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+	<string id="ui_mcm_crp_title">
+		<text>I.N.E.R.T.I.A.</text>
+	</string>
+	<string id="ui_mcm_menu_crpmcm">
+		<text>Inertia镜头动画</text>
+	</string>
+	<string id="ui_mcm_crpmcm_jump_land">
+		<text>起跳/落地时</text>
+	</string>
+	<string id="ui_mcm_crpmcm_leaning">
+		<text>侧身时</text>
+	</string>
+	<string id="ui_mcm_crpmcm_wpn_ads">
+		<text>武器瞄准时</text>
+	</string>
+	<string id="ui_mcm_crpmcm_moving">
+		<text>行走/奔跑时</text>
+	</string>
+	<string id="ui_mcm_crpmcm_crouch">
+		<text>蹲伏时</text>
+	</string>
+	<string id="ui_mcm_crpmcm_fire_mode">
+		<text>射击模式切换时</text>
+	</string>
+
+</string_table>

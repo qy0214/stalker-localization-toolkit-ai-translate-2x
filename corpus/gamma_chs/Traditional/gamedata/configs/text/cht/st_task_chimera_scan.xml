@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+<string id="yan_stalker_sakharov_task_chimera_scan_name">
+	<text>思維導圖</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_about">
+	<text>你聽說過雙頭獅俗稱奇美拉, 對吧? 科學界對這種生物是否僅僅是一種嚴重變異的動物, 進化出了一個類似人類頭部的東西, 還是嚴重違反科學倫理的結果存在很多爭論. 爲了揭開這個謎團, 我們需要更多的數據.我們的技術人員準備了一種特殊的裝置來記錄大腦發出的精確電磁波, 我無意冒犯, 但我懷疑你是否能理解下面的解釋. 總之, 我們需要的是一個志願者去接觸一個特定的奇美拉樣本並記錄下它的大腦訊號. 當然, 這必須在變異怪物還活著的時候完成, 這就是任務的難點所在. 你必須靠近它, 並在裝置穩定下來併成功記錄訊號之前存活下來. 在那之後, 沒有必要讓這個可憐的生物活著, 但這取決於你.</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_0">
+	<text>待在指定的奇美拉附近, 記錄它的腦電波</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_1">
+	<text>恢復裝置</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_2">
+	<text>返回薩哈洛夫</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_start">
+	<text>初始化完成: 掃瞄開始</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_error">
+	<text>錯誤: 訊號丟失, 掃瞄中止</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_complete">
+	<text>掃瞄完成.</text>
+</string>
+<string id="chimera_scan_device_name">
+	<text>腦電波掃描器</text>
+</string>
+<string id="chimera_scan_device_desc">
+	<text>這是一種用來記錄附近電磁波的裝置, 它被專門用來分離特定奇美拉樣本的神經振盪.</text>
+</string>
+</string_table>

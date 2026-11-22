@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_extra_level_transitions_title">
+		<text>特異區密道-銜接區域之間的小路</text>
+	</string>
+	<string id="ui_mcm_menu_extra_level_transitions">
+		<text>特異區密道</text>
+	</string>
+	<string id="ui_mcm_extra_level_transitions_enable_time_advance">
+		<text>啟用時間流逝</text>
+	</string>
+	<string id="ui_mcm_extra_level_transitions_enable_time_advance_desc">
+		<text>穿過特異區密道的過程時間會流逝</text>
+	</string>
+	<string id="ui_mcm_extra_level_transitions_delete_level_transitions">
+		<text>刪除特異區之間小路</text>
+	</string>
+	<string id="ui_mcm_extra_level_transitions_delete_level_transitions_desc">
+		<text>特異區之間小路將從遊戲中刪除. 該選項是爲了安全地刪除該mod</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="voronin_living_legend_0">
+		<text>将军, 彼得连科上校说你正在找可以帮忙寻找一些潜行者的人.</text>
+	</string>
+	<string id="voronin_living_legend_1">
+		<text>的确, 现在是困难时期, 能量风暴越来越频繁且越来越具有破坏性, "神迹装置"和"焦脑器"也再次启动, 黑石无情地向外扩张, 但是一个老伙计, 一个曾几乎全灭他们的传奇潜行者回来了, 我听说他被称作一号, 他的真名叫史特洛克, 虽然他不是纪律团成员, 但他是一名坚定的战士, 是少数参与了突袭核电站行动后活下来的人之一, 过了这么久了, 他或许知道可以彻底摧毁特异区所需的秘密, 找到他, 或者至少学会他那些知识, 这样我们就可以准备足够的人力和决心去实现我们的目标.</text>
+	</string>
+	<string id="voronin_living_legend_2">
+		<text>我会找到他的, 将军.</text>
+	</string>
+	<string id="voronin_living_legend_21">
+		<text>我很抱歉, 将军, 我现在还没准备好执行这么重要的任务.</text>
+	</string>
+	<string id="voronin_living_legend_3">
+		<text>很好, 晴空的领袖也正在全力帮我们寻找, 所以你很幸运的有了新线索: 史特洛克的一位老朋友, 沼泽巫医, 他目前住在大沼泽的一个偏僻的角落, 那地方看起来是被栅栏围住的, 但是你如果仔细寻找, 应该可以找到一个缺口, 这是坐标, 记得带点保护自己免受辐射的东西, 你会需要的, 找到他, 从他那问出史特洛克的下落.</text>
+	</string>
+	
+	<string id="voronin_living_legend_finish_0">
+		<text>我回来了, 将军.</text>
+	</string>
+	<string id="voronin_living_legend_finish_1">
+		<text>终于, 令人印象深刻啊, 我想你应该没有空手而归吧.</text>
+	</string>
+	<string id="voronin_living_legend_finish_2">
+		<text>是的, 我见过了史特洛克和他的小队了, 我们一起海扁了黑石, 并在石棺里找到了一件极为罕见的神器, 而史特洛克向我透露了一些特异区的秘密, 他给了我这个U盘, 这里面包含的信息比我现在所向你汇报的要多得多.</text>
+	</string>
+	<string id="voronin_living_legend_finish_3">
+		<text>很好, 那么你找到"净化"特异区的办法了吗?</text>
+	</string>
+	<string id="voronin_living_legend_finish_4">
+		<text>恐怕这是不可能的, 至少目前为止是这样, 史特洛克几年前就曾试图这么做过, 但是惊人的是他失败了, 他目前仍在寻找实现这一目标的办法, 而且他建议谨慎行事.</text>
+	</string>
+	<string id="voronin_living_legend_finish_5">
+		<text>我明白了, 我们将会继续致力于伟大的事业, 但会保持头脑冷静, 胜仗不是一蹴而就的, 我们会继续我们的事业, 同时, 你也成功的完成了你的任务, 你的表现值得称赞, 这些奖励也是你应得的.</text>
+	</string>
+	
+	<string id="dushman_living_legend_0">
+		<text>所以, 这份超级重要的契约是关于什么的?</text>
+	</string>
+	<string id="dushman_living_legend_1">
+		<text>一个小小的捉迷藏游戏, 有大量的奖励, 我们的探员报告说那个叫史特洛克的著名潜行者又出现了, 史特洛克是特异区的一个传说, 他曾探索了特异区的每一个角落, 破坏了焦脑器, 并与黑石激烈战斗, 有人说他去过好几次许愿石, 有些是传言 , 而有些已经被我们的人证实了, 如果那些传说中有一半是真的, 那他就一定会有非常有价值的知识可以分享, 我想让你去找到他, 然后鼓励他分享这些知识, 不不不, 不需要使用暴力... 不管怎么样, 我会开个好价钱的, 所以有兴趣吗?</text>
+	</string>
+	<string id="dushman_living_legend_2">
+		<text>嗯, 这听起来像是个靠谱的任务.</text>
+	</string>
+	<string id="dushman_living_legend_21">
+		<text>抱歉, 暂时没啥兴趣.</text>
+	</string>
+	<string id="dushman_living_legend_3">
+		<text>啊, 不错, 对了有件事, 你也懂, 独行者和佣兵的关系不是很好, 想个办法伪装一下, 假装是他们的好朋友, 在你暴露之前赢取他们的信任, 或者根本就别暴露, 然后在他们朝你的脸上开枪之前把情报拿到, 了解?</text>
+	</string>
+	<string id="dushman_living_legend_4">
+		<text>去做卧底? 这事我熟</text>
+	</string>
+	<string id="dushman_living_legend_5">
+		<text>我就知道你会喜欢的, 去找史特洛克的老朋友, 沼泽巫医, 从这老头子手上把坐标搞到手, 别担心, 坐标肯定是准确的, 虽然很贵, 但是沼泽巫医是我们能找到的最好的线索, 所以机智点, 带点消辐宁, 把情报带回来, 一路顺风!</text>
+	</string>
+	
+	<string id="dushman_living_legend_finish_0">
+		<text>任务完成</text>
+	</string>
+	<string id="dushman_living_legend_finish_1">
+		<text>你搞定了? 我就知道你是条汉子, 好, 告诉我你找到了啥?</text>
+	</string>
+	<string id="dushman_living_legend_finish_2">
+		<text>除了可以让我连着做几年噩梦的经历之外的东西么? 我陪着史特洛克和他的小队去了石棺, 在那里我发现了很多关于特异区的东西, 在秘密实验室了找到了一些绝密文件, 史特洛克拿走了, 但是他告诉了我很多文件里的东西, 另外他给了我这个U盘, 里面存了一堆好几个G的加密文件, 是关于特异区的一些肮脏的小秘密的东西.</text>
+	</string>
+	<string id="dushman_living_legend_finish_3">
+		<text>那正是我需要的, 干得不错, 我们的客户知道怎么处理这东西.</text>
+	</string>
+	<string id="dushman_living_legend_finish_4">
+		<text>额, 我们把这些东西交给我们的客户真的靠谱么?</text>
+	</string>
+	<string id="dushman_living_legend_finish_5">
+		<text>靠谱? 你在说什么胡话? 别担心, 我们不会把这些卖给什么独裁者之类的人的, 我们只是想赚点钱, 但不想顺带把地球毁灭了, 对吧? 说到钱, 这些是你应得的, 如果你真的做噩梦了, 就把这些钱当枕头垫着睡, 肯定有效.</text>
+	</string>
+	
+	<string id="sidorovich_living_legend_0">
+		<text>大家好像都在谈论一个叫史特洛克的人?</text>
+	</string>
+	<string id="sidorovich_living_legend_1">
+		<text>呵呵, 是啊, 没人比我更知道他了, 长话短说吧, 在十几年前, 我和酒保组织了一个进入特异区中心的行动, 那个"天选者"... 或者确切点说就是史特洛克, 帮了我们很大忙, 他虽然关掉了"焦脑器", 但却再也没有从核电站回来, 大家都以为他要么死掉了, 要么就是被特种部队抓走了, 现在看来他不仅活着, 还又回到了特异区! 我敢打赌, 他的脑子里绝对装着很多秘密, 我是说很值钱的那种秘密! 如果有人能找到他, 弄到他掌握的绝密情报的话, 我估计这辈子也不愁吃喝了, 怎么样? 你觉得有兴趣吗?</text>
+	</string>
+	<string id="sidorovich_living_legend_2">
+		<text>"天选者"和绝密情报? 有意思... 我这就去找他!</text>
+	</string>
+	<string id="sidorovich_living_legend_21">
+		<text>哎哟, 这种事情听上去就很麻烦, 还是算了吧</text>
+	</string>
+	<string id="sidorovich_living_legend_3">
+		<text>哈哈! 其实打动你的是一辈子不愁吃喝吧? 如果你是认真的, 可以去大沼泽找史特洛克的一个老朋友 - 沼泽巫医, 我以前听晴空的"孢子"说过, 这个家伙隐居在大沼泽北边的某个山洞里, 那附近好像早就被围栏给挡住了, 不过你应该能找到入口, 去吧! 多带点消辐宁什么的, 我在这里等你的好消息!</text>
+	</string>
+	
+	<string id="sidorovich_living_legend_finish_0">
+		<text>老西, 好久不见了</text>
+	</string>
+	<string id="sidorovich_living_legend_finish_1">
+		<text>哈! 看看是谁回来了, 那么, 你见过"天选者"了?</text>
+	</string>
+	<string id="sidorovich_living_legend_finish_2">
+		<text>那是当然, 我甚至加入了他的小队, 长话短说吧, 他告诉了我许多事情, 事实上, 你说的对, 许愿石是个陷阱, 是引诱人们进入特异区中央然后对其洗脑的一个骗局, 这就是为什么黑石军团和僵尸们永远杀不完, 这真是一场噩梦</text>
+	</string>
+	<string id="sidorovich_living_legend_finish_3">
+		<text>看吧! 你来到这里的第一天我就告诉过你, 别信那种鬼扯的故事, 不过, 我确实没想到这玩意竟然真的存在! 嗯... 许愿石的传闻, 黑石军团的崛起... 这样一来, 一切似乎都明朗了, 但如果有确凿的证据就更好了, 你懂的, 有些新手菜鸟们就是不见黄河心不死...</text>
+	</string>
+	<string id="sidorovich_living_legend_finish_4">
+		<text>这个U盘就是证据, 里面存着很多加密数据, 这是史特洛克交给我的, 说是他调查多年的心血, 给你!</text>
+	</string>
+	<string id="sidorovich_living_legend_finish_5">
+		<text>天啊! 这是怎样的壮举? 你关闭了神迹和焦脑器, 击败了黑石的领袖, 永远的结束了"许愿石"的谎言, 这里的小伙子们终于能够安全前往特异区的中心, 为我带来更多的商机了! 你完成了史特洛克多年以来的夙愿, 还为我带来了特异区的惊天秘密!
+		\n哈哈! 你来的第一天我就觉得你是个干大事的家伙, 我的眼光一向很准, 不是吗? 干得好! 这些钱拿去吧, 还有我西多洛维奇对你的感谢! 潜行者!</text>
+	</string>
+	
+	<string id="cold_living_legend_0">
+		<text>我对帮你找史特洛克这活挺感兴趣的, 但是我想知道这个人为啥对你来说这么重要.</text>
+	</string>
+	<string id="cold_living_legend_1">
+		<text>你懂得, 我们终于可以处理掉一些没搞定的事情了, 几年前, 列别捷夫决定突袭切尔诺贝利核电站时, 他认为他发现了导致能量风暴威力不断增强的罪魁祸首, 那就是史特洛克, 一个神密的潜行者, 据说他找到了一条可以绕过"焦脑器"范围通往特异区中心的路, 晴空战士们紧随其后想阻止他, 但是大多数人都没能活着回来, 事实是, 我们不知道那里头到底发生了啥, 谁对什么应该负责什么的, 我们幸存下来的人应该继续前行, 但是最近有传闻说史特洛克回来了, 我真的不想让你浪费时间去追踪一个鬼魂, 但是我们中有一些人确实想要个答案.</text>
+	</string>
+	<string id="cold_living_legend_2">
+		<text>好的, 我知道这事情的重要性, 我也想了解一下这个事情的详细.</text>
+	</string>
+	<string id="cold_living_legend_21">
+		<text>我不确定, 冷风, 也许最好就让史特洛克去吧, 我会再考虑一下的.</text>
+	</string>
+	<string id="cold_living_legend_3">
+		<text>谢谢, 我很感激, 先去找沼泽巫医, 他是史特洛克的老朋友, 我不想打搅这位老人, 但是他是帮助我们再次找到史特洛克的最佳人选, 他住在我们大沼泽的一个偏僻的角落, 那地方看起来被围住了, 但是有个洞可以钻过去, 给个警告: 如果你走了错路, 那会遇到很严重的辐射区, 所以多带点消辐宁, 不然你就回不来了.</text>
+	</string>
+	
+	<string id="cold_living_legend_finish_0">
+		<text>嘿, 冷风, 我终于回来了, 我想我应该明白为啥当时大部分人都没能从切尔诺贝利核电站的任务中回来了, 不过, 我活着回来了.</text>
+	</string>
+	<string id="cold_living_legend_finish_1">
+		<text>好久不见, 我很高兴你搞定了, 找到什么答案了吗?</text>
+	</string>
+	<string id="cold_living_legend_finish_2">
+		<text>是的, 我和史特洛克见面且聊过了, 他告诉, 能量风暴是特异区对外的防御手段, 列别捷夫是对的, 史特洛克进到了特异区的中心导致了能量风暴频率的增加, 不幸的是, 晴空对核电站的进攻必然会导致更强大的能量风暴, 基本上, 这就是他们必然的命运了.</text>
+	</string>
+	<string id="cold_living_legend_finish_3">
+		<text>哦, 我明白了, 我们原来以为我们对特异区已经足够了解了, 所以我们可以像一个管理员一样... 但是特异区还是在自我保护, 它不需要任何帮助, 那时候我们真的深受打击, 不过至少, 我很高兴我们现在摆正了我们的态度, 你还发现了什么吗</text>
+	</string>
+	<string id="cold_living_legend_finish_4">
+		<text>事实上有很多, 失败的实验, 灵能场, 扭曲现实, 地下实验室之类的一堆疯狂的东西, 史特洛克给了我这个U盘, 里面存放了他多年以来收集的大量加密数据.</text>
+	</string>
+	<string id="cold_living_legend_finish_5">
+		<text>我真的非常感激你, 潜行者, 接下来我会邀请一些老兵来讨论这个问题, 最好再配上两箱伏特加来缓解一下我们的悲痛, 我会把U盘交给卡兰查, 他知道怎么处理, 不管怎么说, 这是你的报酬, 我们欠你太多了.</text>
+	</string>
+	
+	<string id="lukash_living_legend_0">
+		<text>好的, 那么关于史特洛克到底是怎么回事?</text>
+	</string>
+	<string id="lukash_living_legend_1">
+		<text>一个永恒的传奇回到了我们这些渺小的凡人中, 史特洛克是一个有种的硬汉, 他为了进入特异区中心痛扁了黑石且取得了胜利, 至少现在看来是这样的, 现在和以前的状况又差不多了, 但是他也回来了, 有很多关于切尔诺贝利核电站, 许愿石, 和关于特异区中心的故事, 我真的很想知道史特洛克在特异区中心的时候的所见所闻, 特异区能提供很多东西, 史特洛克一定看到了那些最棒的事物, 所以, 这任务你接么?</text>
+	</string>
+	<string id="lukash_living_legend_2">
+		<text>听起来棒极了, 算我一个!</text>
+	</string>
+	<string id="lukash_living_legend_21">
+		<text>哇, 不好意思伙计, 我觉得我应该再考虑考虑.</text>
+	</string>
+	<string id="lukash_living_legend_3">
+		<text>要的就是这个精神劲儿, 好的, 我们继续, 我觉得先去找沼泽巫医会是个好主意, 他是史特洛克的老朋友, 好消息是新的晴空告诉了我们他退休隐居的地方在哪里!去大沼泽最西北的位置找他, 问他史特洛克的线索, 带点喝的和烟上路, 我听说沼泽巫医那附近辐射非常严重, 我猜他不想被打扰.</text>
+	</string>
+	
+	<string id="lukash_living_legend_finish_0">
+		<text>嘿卢卡什, 我回来了.</text>
+	</string>
+	<string id="lukash_living_legend_finish_1">
+		<text>噢, 你回来了!冒险的时候玩的开心吗?</text>
+	</string>
+	<string id="lukash_living_legend_finish_2">
+		<text>见鬼, 老哥, 当然了, 我玩的超级开心, 特别是享受了"尿裤子"的乐趣, 我大概杀了一百个黑石大兄弟, 然后和史特洛克还有他的小队一起去了切尔诺贝利核电站, 我觉得我会在黑暗的地方发光几个星期, 甚至过几天会长出第二个脑袋什么的.</text>
+	</string>
+	<string id="lukash_living_legend_finish_3">
+		<text>听起来超棒, 他有没有告诉你什么关于特异区的酷事?</text>
+	</string>
+	<string id="lukash_living_legend_finish_4">
+		<text>当然啊, 超多, 特异区是某种实验失败的结果, 很显然, 一群生态学家想让整个世界都快乐一下, 但是这东西在他们的脸上爆炸了, 给, 他给了我一个有很多科学资料的U盘.</text>
+	</string>
+	<string id="lukash_living_legend_finish_5">
+		<text>真的? 好吧, 至少特异区让我们很开心, 所以这群生态学家还是成功了, 见鬼哈哈哈, 我已经可以想象到当我们公布这些东西的时候, 政府会大发雷霆了, 干的好兄弟, 你应该被授予一枚勋章!</text>
+	</string>
+	
+	<string id="sakharov_living_legend_0">
+		<text>告诉我更多史特洛克的情报, 教授.</text>
+	</string>
+	<string id="sakharov_living_legend_1">
+		<text>就是那个几年前帮了我们大忙的勇敢的家伙, 他自己去关闭了"神迹装置", 这样我们就没再受到脉冲风暴的威胁了, 他甚至担任过一段时间的首席生态学家顾问, 但是遗憾的是他没有继续, 不管怎么说, 史特洛克去过特异区的中心, 我没法想象他在那里见到的和经历的事物, 他肯定对特异区的内部运作有很深的理解, 甚至会知道特异区的起源, 年轻人, 你知道这对科学界为意味着什么吗?</text>
+	</string>
+	<string id="sakharov_living_legend_2">
+		<text>那可是诺贝尔奖的好料子, 你想让我去找他吗?</text>
+	</string>
+	<string id="sakharov_living_legend_21">
+		<text>我很抱歉, 教授, 我现在还没准备好接受这么艰巨的任务.</text>
+	</string>
+	<string id="sakharov_living_legend_3">
+		<text>那再好不过了, 卡兰查教授也同样渴望参与这项研究, 可惜的是他没法帮忙了, 但是他建议我们先去找沼泽巫医, 史特洛克的老朋友, 收集更多关于我们的传奇人物的线索, 沼泽巫医住在大沼泽的一个偏僻的角落里, 我在地图上给你标记了, 卡兰查教授还说, 他给你准备了一些很好的辐射防护措施; 沼泽巫医不喜欢被打搅, 他住的地方的环境也反映了这一点, 希望他有关于我们的老朋友回来的线索</text>
+	</string>
+	
+	<string id="sakharov_living_legend_finish_0">
+		<text>我回来了, 教授.</text>
+	</string>
+	<string id="sakharov_living_legend_finish_1">
+		<text>我很高兴你终于回来了, 我知道这一路很艰难, 我想知道, 你的任务成功了吗?</text>
+	</string>
+	<string id="sakharov_living_legend_finish_2">
+		<text>是的, 我找到了史特洛克, 和他面谈过了, 我帮助了他打败了黑石并且突袭了切尔诺贝利核电站, 之后他告诉了我特异区的秘密, 显然, 特异区是一个失败的秘密实验导致的结果, 这个实验的目的是影响包围着我们星球的灵能场, 这项实验是由一群生态学家执行的, 他们已经变成了一个名为"超念体"的集体, 他们的失败导致了灵能场的裂隙, 也就导致了特异区出现了异常点.</text>
+	</string>
+	<string id="sakharov_living_legend_finish_3">
+		<text>我明白了, 我们之前就怀疑特异区是人为导致的, 史特洛克几年前发现的一些信息支持了我们的假设, 现在我们终于证实了, 不过你有什么证据可以证明这一点的吗?</text>
+	</string>
+	<string id="sakharov_living_legend_finish_4">
+		<text>有, 这是史特洛克给我的U盘, 里面储存了很多他的发现, 是从几个秘密实验室和一些秘密文件里收集的.</text>
+	</string>
+	<string id="sakharov_living_legend_finish_5">
+		<text>非常好, 我们会对数据进行分析和评估, 此外, 我们还会考虑以后怎么处理这些信息, 不关怎么说, 你为我们提供了很大的帮助, 多亏了你的帮助, 我们对特异区的研究迈出了很大的一步.</text>
+	</string>
+	
+	<string id="doctor_living_legend_0">
+		<text>别激动, 老人家, 我只是想跟你打听一些关于史特洛克的事情...</text>
+	</string>
+	<string id="doctor_living_legend_1">
+		<text>什么? 史特洛克? 我不认识他! 不要来问我!</text>
+	</string>
+	<string id="doctor_living_legend_2">
+		<text>如果连你"沼泽巫医"都不知道的话, 就没人知道了, 整个特异区都在谈论他的回归, 而我必须找到他, 拜托!</text>
+	</string>
+	<string id="doctor_living_legend_3">
+		<text>为什么... 史特洛克... 都这么多年了, 为什么...
+		\n唉... 如果你是想问我他现在的情况, 那非常遗憾, 我不知道, 但是我知道一个他以前经常去的地方, 那就是农业研究所的地下设施, 那里面四通八达, 他在其中一个维修通道里有个秘密藏身处, 他即使不在那, 也至少会留下一些线索...
+		\n虽然去往地下的入口很多, 不过离那里最近的应该是一个靠近道路的维修入口, 走楼梯到最下面, 然后检查走廊旁边墙上的圆形维修管道, 其中一个应该可以爬上去, 进入他的藏身处</text>
+	</string>
+	<string id="doctor_living_legend_4">
+		<text>谢谢! 我这就去, 希望不会有人再来打扰你, 再见!</text>
+	</string>
+	<string id="doctor_living_legend_5">
+		<text>等等! ...如果你真的见到他, 让他有空就来这里看一看我这个老头子, 好吗?</text>
+	</string>
+	<string id="doctor_living_legend_6">
+		<text>好, 我会转告他的, 我向你保证!</text>
+	</string>
+	
+	<string id="doctor_living_legend_strelok_0">
+		<text>沼泽巫医, 我已经见过史特洛克了, 也转达了你的请求</text>
+	</string>
+	<string id="doctor_living_legend_strelok_1">
+		<text>谢谢... 谢谢你! 他会来的, 他会回来的对吧?</text>
+	</string>
+	<string id="doctor_living_legend_strelok_2">
+		<text>他还在特异区的深处追寻一个答案, 也许不会很快回来, 不过... 是的, 他肯定会回来的!</text>
+	</string>
+	<string id="doctor_living_legend_strelok_3">
+		<text>那就好, 那就好... 他会活下来的, 我们俩也一样! 已经很久都没有这么令人开心的消息了, 再次感谢你!</text>
+	</string>
+	
+	<string id="barkeep_living_legend_0">
+		<text>史特洛克前一阵子是不是来过这里? 他现在在什么地方?</text>
+	</string>
+	<string id="barkeep_living_legend_1">
+		<text>又来一个? 呵, 你真是不巧, 他昨天刚路过这里, 我跟他说很多人都在找他的麻烦, 于是邀请他进来坐坐, 但他坚持要马上离开, 于是就和另外4个人一起往北走了, 好像对"焦脑器"重新启动的事情毫不在意...
+		\n这帮家伙买走了我厨房里一半的补给, 鬼知道是要干嘛去...</text>
+	</string>
+	<string id="barkeep_living_legend_2">
+		<text>他不是一个人行动吗?</text>
+	</string>
+	<string id="barkeep_living_legend_3">
+		<text>是啊, 我不是说了吗, 他还有4个同伴, 身上的装备已经武装到牙齿了, 绝对都是有经验的高手, 而不是这附近找来的菜鸟, 所以我也懒得多问</text>
+	</string>
+	<string id="barkeep_living_legend_4">
+		<text>见鬼! 我晚了一步, 他往北方到底是去干嘛?</text>
+	</string>
+	<string id="barkeep_living_legend_5">
+		<text>我敢打赌他肯定是去切尔诺贝利核电站了, 去那里的道路被焦脑器产生的灵能场覆盖了，非常危险, 如果你不怕灵能场, 那就去和"三头犬"瑟伯谈谈, 他是在死亡屏障的守门人, 如果史特洛克经过那的话, 他绝对会知道</text>
+	</string>
+	<string id="barkeep_living_legend_51">
+		<text>我敢打赌他肯定是去切尔诺贝利核电站了, 去那里的道路非常危险, 尤其是在被焦脑器产生的灵能场覆盖的情况下, 如果你不怕灵能场, 那就去和"三头犬"瑟伯谈谈, 他是在死亡屏障的守门人, 如果史特洛克经过那的话, 他绝对会知道...
+		\n还有, 那边是自由军的地盘, 如果让他们看到你穿着纪律团的衣服在那里乱晃, 肯定吃不了兜着走, 小心点吧!</text>
+	</string>
+	<string id="barkeep_living_legend_6">
+		<text>这任务非常重要, 所以我会尽力而为的, 谢谢你的情报, 酒保.</text>
+	</string>
+	<string id="barkeep_living_legend_7">
+		<text>不客气, 伙计, 祝你好运.</text>
+	</string>
+	
+	<string id="aslan_living_legend_0">
+		<text>阿斯兰, 你是否知道一个叫史特洛克的潜行者?</text>
+	</string>
+	<string id="aslan_living_legend_1">
+		<text>史特洛克? 我怎么会不知道这名字, 你当我是山顶洞人吗? 如果说他是排行第二的特异区专家, 那没有人能说自己是第一, 不管怎么说, 你想去北边么? 你准备好告别这个残酷的世界了?</text>
+	</string>
+	<string id="aslan_living_legend_2">
+		<text>拜托, 我能应付, 快告诉我最好的行动方案就行了.</text>
+	</string>
+	<string id="aslan_living_legend_3">
+		<text>最好的? 别去, 第二好的? 我觉得你应该去扬塔找下那边的卵蛋头, 找个东西保护你通过灵能场, 然后和"三头犬"瑟伯去聊聊, 那混蛋能拿黑石疯子当早饭吃, 他帮忙守卫死亡屏障, 抵挡了他们源源不断的入侵, 如果你想往北走, 雷达站是唯一一条还算明智的路线, 但是你要准备好对付成群的怪物, 迷宫般的异常点, 极端的辐射剂量, 以及全副武装的黑石士兵.</text>
+	</string>
+	<string id="aslan_living_legend_4">
+		<text>听起来有点糟糕, 但是我不想放弃我的任务.</text>
+	</string>
+	<string id="aslan_living_legend_5">
+		<text>当然了, 那是你的选择, 一些喜欢冒险的潜行者有时候会成功, 没有痛就不会有收获... 就像那些孩子常说的, 不管怎么说, "三头犬"瑟伯知道更多细节, 所以下一站你应该去找他.</text>
+	</string>
+	<string id="aslan_living_legend_6">
+		<text>多谢, 阿斯兰, 我现在就启程.</text>
+	</string>
+	<string id="aslan_living_legend_7">
+		<text>客气了, 一路顺风, 我的佣兵兄弟.</text>
+	</string>
+	<string id="aslan_living_legend_71">
+		<text>客气了, 一路顺风, 潜行者.</text>
+	</string>
+	
+	<string id="stalker_gatekeeper_dialog_0">
+		<text>是什么风把你吹到了这地狱的入口, 潜行者?</text>
+	</string>
+	
+	<string id="stalker_gatekeeper_st_1">
+		<text>当然, 反正现在一切都很平静, 你可以叫我瑟伯, 早在2012年我就参加了普里皮亚奇突袭行动, 现在, 我每天都在监视这条他们称之为死亡屏障的路口...\n \n为什么? 我不入地狱谁入地狱? 总得有人干这件事吧? 还有, 大约一年前, 北方的潜行者开始一个接一个的失踪, 我们怀疑这是那个新兴的邪教所为, 也许他们就藏在森林里, 或者在核电站周围... 直到后来黑石东山再起\n \n黑石军团已经销声匿迹了六年, 现在又突然出现在这里, 以前死去的战友们穿着黑石的制服, 像疯子一样地战斗, 我当时已经来不及阻止他们, 所以普里皮亚奇丢了, 雷达站也丢了, 只希望我还来得及守护这里...\n \n所以就这样, 他们都说我像是地狱的三头犬那样守卫着这个死亡屏障... 因为我曾经发誓, 只要我活着, 就必须阻止黑石的继续入侵!</text>
+	</string>
+	
+	<string id="stalker_gatekeeper_breakthrough_0">
+		<text>瑟伯, 我在寻找一个叫史特洛克的潜行者, 他在一周之前曾路过这里吗?</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_1">
+		<text>史特洛克? 我认识他! 我们在特异区深处见过几面, 他前几天来问过我近况, 然后他和他的小队帮我们击退了一次黑石的入侵, 虽然通常来说我们自己也能搞定, 不过他那次的速度简直刷新了纪录...</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_2">
+		<text>所以你看到他们穿过了死亡屏障, 然后呢?</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_3">
+		<text>是的, 他们全副武装, 且带着抗灵头盔, 据我所知他们应该在寻找X-19实验室的什么东西, 但我不是很肯定</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_4">
+		<text>操, 看来我也必须过去了</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_5">
+		<text>只能这样了, 但你必须得有可以保护你不受到灵能场影响的装备, 然后去追上他们, 甚至可以去关闭"焦脑器", 史特洛克在几年前孤身一人就做到了, 如果你下定决心要去北方找他, 你或许也可以做到, 或者... 变成僵尸回来, 谁知道呢</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_6">
+		<text>多谢鼓励, "三头犬"瑟伯, 那么...</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_7">
+		<text>嘘! 你听到了没? 黑石又攻过来了! 跟我来, 我们必须挡住他们, 否则你就别想去北边了! 快上!</text>
+	</string>
+	<string id="stalker_gatekeeper_breakthrough_8">
+		<text>明白!</text>
+	</string>
+	
+	<string id="stalker_gatekeeper_brainscorcher_0">
+		<text>该死, 我们差点就真的下地狱了</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_1">
+		<text>别扯了, 这不是正常操作嘛... 还不赖, 感谢你跟我一同守住了这里, 特异区像你我这样的人太少了, 而且我这里真的需要所有形式的帮助</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_2">
+		<text>既然他们败退了, 我想现在是突袭"焦脑器"最好的时机?</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_3">
+		<text>是的, 他们很长一段时间不会再发动攻击了, 你可以利用这个空当让这活变得简单些</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_4">
+		<text>还有别的建议么?</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_5">
+		<text>没什么别的了, 别死了就行, 还要注意雷达站那边的辐射, 异常点, 变异生物和巡逻的黑石... 另外, 你如果真的关闭了"焦脑器", 我建议你下一站去扎顿, 那里有一艘叫斯卡多夫斯克号的废船, 是当地潜行者的聚集点, 如果你自己找不到史特洛克, 那里肯定会有线索, 另外告诉大胡子, "三头犬"向他问好...</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_6">
+		<text>总比没有线索要好, 谢谢你, 瑟伯, 再见!</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_7">
+		<text>狩猎愉快, 潜行者</text>
+	</string>
+	<string id="stalker_gatekeeper_brainscorcher_71">
+		<text>狩猎愉快, 佣兵</text>
+	</string>
+	
+	<string id="beard_living_legend_0">
+		<text>嘿, 大胡子, 瑟伯向你问好.</text>
+	</string>
+	<string id="beard_living_legend_1">
+		<text>哈, 原来那个老家伙还活着! 很高兴听到这消息, 告诉他... 等等! 所以你是从南边过来的? 你找了向导, 还是你自己躲过了"焦脑器"?</text>
+	</string>
+	<string id="beard_living_legend_2">
+		<text>躲什么躲, 我直接去把它关了</text>
+	</string>
+	<string id="beard_living_legend_3">
+		<text>牛批! 好样的! 那该死的机器真是让人头疼, 这几年, 从南方来的潜行者不断的涌入, 所以那些黑石混蛋们就重新启动了那个狗屁一样的灵能装置, 这些冥顽不灵的家伙你懂的, 来来来, 这杯算我的, 大家! 为我们的英雄举杯! 哈哈, 我又在唠叨了, 你可能想从我这知道点什么, 对吧?</text>
+	</string>
+	<string id="beard_living_legend_4">
+		<text>谢谢, 然后, 是的, 我在寻找一个叫史特洛克的潜行者, 我听说他在前不久到达了北方, 你知道他现在的下落吗?</text>
+	</string>
+	<string id="beard_living_legend_5">
+		<text>我明白了, 一颗冉冉升起的新星想和那个永恒的传奇谈谈对吧, 嗯, 他和他的小队在一周前就来过斯卡多夫斯克号, 我们了解了一些情况... 感觉是... 不太好, 不过"焦脑器"现在停止工作了, 情况应该很快会好转</text>
+	</string>
+	<string id="beard_living_legend_6">
+		<text>好吧, 他有跟你说过他的目标么?</text>
+	</string>
+	<string id="beard_living_legend_7">
+		<text>他没说啥特别的, 他这个人行踪不定, 不知道什么时候他就走了, 那是我最后一次见到他, 但是! 他的一个同伴昨天回来了, 是他小队里最沉默寡言的那个, 应该是叫作"游荡者", 也没跟我多说什么, 但是你也许可以从他那里得到更多的信息, 去试试吧!</text>
+	</string>
+	<string id="beard_living_legend_8">
+		<text>"游荡者"在哪?</text>
+	</string>
+	<string id="beard_living_legend_9">
+		<text>就在你后面, 穿着黎明迷彩, 戴着M40防毒面具的那家伙, 记住尽量不要惹怒他, 他看起来是那种发起火来能赤手空拳把吸血怪脑袋锤爆的人</text>
+	</string>
+	<string id="beard_living_legend_10">
+		<text>好, 我去和他谈谈</text>
+	</string>
+	<string id="beard_living_legend_11">
+		<text>不客气, 顺带的, 毕竟你已经是我们的英雄了, 拿着吧, 算是我未来投资的一部分, 哈哈! 祝你好运!</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_0">
+		<text>滚~</text>
+	</string>
+	<string id="stalker_rogue_dialog2_0">
+		<text>啥?</text>
+	</string>
+	<string id="stalker_rogue_dialog_underpass_0">
+		<text>走!</text>
+	</string>
+	<string id="stalker_rogue_dialog_revenge_0">
+		<text>我会让他尸骨无存~</text>
+	</string>
+	<string id="stalker_rogue_dialog_raid_0">
+		<text>这会有点难</text>
+	</string>
+	
+	<string id="stalker_rogue_living_legend_start_0">
+		<text>嘿, "游荡者", 我想和你聊聊.</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_1">
+		<text>我不想, 别来烦我, 潜行者.</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_111">
+		<text>我不想, 别来烦我, 佣兵.</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_2">
+		<text>拜托, 我可不想费尽辛苦穿过了雷达站, 就被你一句滚蛋给打发了</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_3">
+		<text>啥? 你是怎么穿过"焦脑器"的?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_4">
+		<text>我从萨哈洛夫教授那里搞到了一顶抗灵头盔, 然后顺便关掉了"焦脑器"</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_5">
+		<text>你... 你不是在吹牛, 好吧, 你是个硬汉, 你想干什么?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_6">
+		<text>我听说你是史特洛克的小队成员之一, 我有个任务要找到他</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_71">
+		<text>你是晴空的人? 不知道你想找他干啥.</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_81">
+		<text>只是问一些问题而已, 没什么别的</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_72">
+		<text>你要找什么, 潜行者? 钱, 信息还是一颗枪子?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_82">
+		<text>西多洛维奇派我来的, 他想知道史特洛克在特异区中心的发现</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_73">
+		<text>卵蛋头, 嗯? 史特洛克跟你们说过很多遍了, 他不想把那个豚兽眼睛安在身上</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_83">
+		<text>不不不, 我找他只是为了想对特异区的运作有一些深入的了解</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_74">
+		<text>你们这些背后捅刀子的佣兵, 我不想帮你拿我的朋友头上的赏金!</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_84">
+		<text>别那么说, 这次不是暗杀任务, 我是上司只是想让我从他那里获取一些有价值的信息, 不需要使用任何暴力</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_75">
+		<text>啊, 纪律团想找到摧毁特异区的办法是吧? 恐怕没那么容易, 大块头</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_85">
+		<text>我只是想找到史特洛克并和他谈谈, 具体他要说什么, 由他自己决定</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_76">
+		<text>找个别的地方抽大麻吧, 自由军小瘪三</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_86">
+		<text>哈哈, 非常有趣, 但我已经发誓在完成任务之前不碰大麻了, 我认真的</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_9">
+		<text>好吧, 我来这里是为了给我的小队买点东西, 我已经搞到了情报, 正要离开, 但是... 你看, 西南部有个废弃的军事设施, 而我知道里面有一个实验性的武器, 我非常需要这个玩意, 去找到它带给我, 然后我再和你谈, 明白?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_10">
+		<text>好的, 这武器长什么样?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_start_11">
+		<text>你见到的时候就知道了, 那东西看起来像科幻小说里的玩意儿, 连子弹都不需要, 去吧, 在我改变主意之前</text>
+	</string>
+	
+	<string id="stalker_rogue_living_legend_fetch_complete_0">
+		<text>看看这个!</text>
+	</string>
+	<string id="stalker_rogue_living_legend_fetch_complete_1">
+		<text>嗯, 就是它, 不错, 你没有选择带着它跑掉是明智之举, 给我吧, 那么你到底想干什么?</text>
+	</string>
+	<string id="stalker_rogue_living_legend_fetch_complete_2">
+		<text>只是找史特洛克好好谈谈, 像他这样的人肯定知道不少东西, 也有很多故事, 而我真的想理解特异区的起源, 我不会耍花招的, 我保证</text>
+	</string>
+	<string id="stalker_rogue_living_legend_fetch_complete_3">
+		<text>你最好不会, 我考虑一下...</text>
+	</string>
+	
+	<string id="stalker_rogue_st_1">
+		<text>好奇害死猫, 既然我要和你相处一段时间, 那我话说前面, 我和我的同伴以前是军人, 一开始他们把我们分配到特异区时, 我们还很兴奋, 没过多久我们就意识到了这情况非常糟糕, 而且给的工资也很搞笑, 然后我们看到一些士兵在对付普通的潜行者, 我们觉得变为潜行者会过得更好些, 所以有一天我们装备齐全, 做好准备去巡逻的时候去加入了菜鸟村的潜行者, 从那里开始了我们的小冒险, 真的, 那几天我就和别的潜行者一样, 只想着规则和战斗训练.</text>
+	</string>
+	
+	<string id="stalker_rogue_st_team_0">
+		<text>你提到了一个朋友, 你是史特洛克小队的一员, 那剩下的人呢?</text>
+	</string>
+	<string id="stalker_rogue_st_team_1">
+		<text>史特洛克和"缝合者"都留在了我们在普城郊区的藏身处, 我一个人来这里就是为了找这个大杀器</text>
+	</string>
+	<string id="stalker_rogue_st_team_2">
+		<text>你独自从普里皮亚奇过来的? 我听说那地方一个活人都没有!</text>
+	</string>
+	<string id="stalker_rogue_st_team_3">
+		<text>你说的没错, 知道为什么没活人吗? 因为我拿着我的枪从那里杀了过来</text>
+	</string>
+	<string id="stalker_rogue_st_team_4">
+		<text>呃... 好吧, 但是你们小队只有3个人?</text>
+	</string>
+	<string id="stalker_rogue_st_team_5">
+		<text>以前有5个</text>
+	</string>
+	<string id="stalker_rogue_st_team_6">
+		<text>等等, "三头犬"说你们在死亡屏障附近和黑石军团交过手? 在那之后呢? 发生了什么?</text>
+	</string>
+	<string id="stalker_rogue_st_team_7">
+		<text>然后? 凭借着史特洛克对特异区的了解以及"远行者"在成堆异常点中间找到安全的路线的能力, 我们到了普里皮亚奇, 变种怪和黑石都阻止不了我们, 但是后来发生了一件糟糕的事情, 当我们继续向西北方向前进时, 又和黑石的巡逻队干了一架, 我们在街上利用汽车残骸作为掩体, 而"凝视者"在房顶上用狙击枪掩护我们, 正当敌人就要溃败时, 我听到他的位置传来突击步枪的声音, 我抬头望去, 刚好看到我的朋友 - 他从一幢五层楼的楼顶掉了下来, 一起掉下来的还有一个黑石混蛋...</text>
+	</string>
+	<string id="stalker_rogue_st_team_8">
+		<text>看来他遭到了黑石的埋伏...</text>
+	</string>
+	<string id="stalker_rogue_st_team_9">
+		<text>那不是一个普通的黑石军人, 他掉下来没有死, 就站在那里, 还穿着奇怪的护甲, 瞪着我们, 我立马举枪朝他的头开了几枪, 但他瞬间就不见了, 我知道"凝视者"已经摔成了血淋淋的肉饼, 所以我就专注于我们的战斗, 黑石占据了上风, 史特洛克让我们撤退, 我以火力压制打死了几个, 但是那家伙又不知从哪里冒了出来, 穿过枪林弹雨, 高喊着胡话: "我是幻灵, 被黑石选中, 异教徒的毁灭者", 不断的一遍又一遍的重复</text>
+	</string>
+	<string id="stalker_rogue_st_team_10">
+		<text>幻灵, 嗯?</text>
+	</string>
+	<string id="stalker_rogue_st_team_11">
+		<text>最后我们杀光了别的所有人, 但是那个混蛋好像不会死, 那一刻我们全队所有人的枪都对着他开火, 但是他只是继续前进, 子弹好像伤不到他, 他开枪打中了我的手臂, "远行者"想干掉他, 但是那混蛋把"远行者"打死了, 史特洛克朝他扔了颗手榴弹后和"缝合者"把我拖走了.</text>
+	</string>
+	<string id="stalker_rogue_st_team_12">
+		<text>该死, 所以史特洛克把那个叫幻灵的家伙干掉了吗?</text>
+	</string>
+	<string id="stalker_rogue_st_team_13">
+		<text>没有, 那混蛋没有继续追我们, 但是我能通过爆炸的烟雾看到他, 他依然站着, 这不正常, 我知道他身上穿着某种特殊的混合防护服, 但是没人能承受这么大的伤害, 也许他身上有什么稀有的神器, 我不知道.</text>
+	</string>
+	<string id="stalker_rogue_st_team_14">
+		<text>所以你们小队找了个藏身处, 然后史特洛克派你来找一个能干掉那家伙的武器?</text>
+	</string>
+	<string id="stalker_rogue_st_team_15">
+		<text>正是如此, 我们曾几次试着深入普里皮亚奇, 但是黑石一直挡着我们, 好像他们每次都能知道我们的计划, 我们只能撤到城郊, 剩下的你都知道了.</text>
+	</string>
+	<string id="stalker_rogue_st_team_16">
+		<text>好的, 我明白了, 我可以帮助你们, 以此换区史特洛克的特异区的知识, 听起来怎么样?</text>
+	</string>
+	<string id="stalker_rogue_st_team_17">
+		<text>听起来是个公平的交易, 我很快就要回普里皮亚奇了, 准备好你的装备, 好了告诉我.</text>
+	</string>
+	
+	<string id="stalker_rogue_join_0">
+		<text>我准备好了.</text>
+	</string>
+	<string id="stalker_rogue_join_1">
+		<text>好的, 我们要穿过尤皮特的地下, 那是我知道通往藏身处最安全的路.</text>
+	</string>
+	
+	<string id="stalker_rogue_underpass_0">
+		<text>这条路其实没有真的那么安全, 对吧?</text>
+	</string>
+	<string id="stalker_rogue_underpass_1">
+		<text>妈的, 他们一定是跟着我过来的, 看见我进来就立马在这里设立了哨站, 我跟你说, 这以前比直接通过普里皮亚奇要安全的多</text>
+	</string>
+	<string id="stalker_rogue_underpass_2">
+		<text>那么我们接下来怎么办?</text>
+	</string>
+	<string id="stalker_rogue_underpass_3">
+		<text>还能怎么办, 继续前进! 这些只是少数, 我们要准备好面对更多那些白眼疯子</text>
+	</string>
+	<string id="stalker_rogue_underpass_4">
+		<text>是吗, 我还真是期待...</text>
+	</string>
+	<string id="stalker_rogue_underpass_5">
+		<text>别抬杠了, 赶紧行动</text>
+	</string>
+	
+	<string id="living_legend_rogue_titan_0">
+		<text>我怎样才能帮你对付幻灵?</text>
+	</string>
+	<string id="living_legend_rogue_titan_1">
+		<text>当地的潜行者报告说有只好斗的变异巨兽在这块地方游荡, 它冲进来就糟糕了, 我们不能分心, 我已经把它最后出现的位置发到了你的PDA上, 去把它干掉</text>
+	</string>
+	
+	<string id="living_legend_rogue_titan_complete_0">
+		<text>我搞定了, 变异巨兽死了</text>
+	</string>
+	<string id="living_legend_rogue_titan_complete_1">
+		<text>好样的, 现在我们可以集中注意力对付黑石了</text>
+	</string>
+	
+	<string id="stalker_rogue_join_eidolon_0">
+		<text>我准备好了, 我们走吧</text>
+	</string>
+	<string id="stalker_rogue_join_eidolon_1">
+		<text>拿着这个! 打败幻灵需要这家伙, 记住, 如果你看到一个穿着防护服, 而且在自己面罩上鬼画符的人, 那就保持距离, 朝头打, 这是我们唯一的机会</text>
+	</string>
+	
+	<string id="lost_stalker_strelok_dialog_0">
+		<text>...</text>
+	</string>
+	
+	<string id="living_legend_strelok_start_0">
+		<text>我猜你就是史特洛克?</text>
+	</string>
+	<string id="living_legend_strelok_start_1">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 不过看在纪律团的份上就算了</text>
+	</string>
+	<string id="living_legend_strelok_start_11">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 更别提雇一个佣兵了</text>
+	</string>
+	<string id="living_legend_strelok_start_12">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 独行者? 希望你真的能帮到我们</text>
+	</string>
+	<string id="living_legend_strelok_start_13">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 晴空以前给我带来的麻烦还不够多吗...</text>
+	</string>
+	<string id="living_legend_strelok_start_14">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 更别说是一个自由军的人</text>
+	</string>
+	<string id="living_legend_strelok_start_15">
+		<text>是的, 没想到"游荡者"竟然会拉别人入伙, 而且还找了个生态学家</text>
+	</string>
+	<string id="living_legend_strelok_start_2">
+		<text>没错, 我俩达成了协议, 现在我要和你谈谈</text>
+	</string>
+	<string id="living_legend_strelok_start_3">
+		<text>谈谈? 我猜猜, 其实是你的头儿想从我的嘴里撬出来一些特异区的秘密吧!</text>
+	</string>
+	<string id="living_legend_strelok_start_4">
+		<text>你的话说的很难听, 不过确实如此</text>
+	</string>
+	<string id="living_legend_strelok_start_5">
+		<text>那你就必须知道, 知识是有代价的, 而我则付出了昂贵的代价, 你告诉我一个理由, 我为什么要跟你分享这些?</text>
+	</string>
+	<string id="living_legend_strelok_start_6">
+		<text>好吧, 我愿意和你一起解决黑石的问题, 以换取你的那些知识, "游荡者"说这是个公平的交易</text>
+	</string>
+	<string id="living_legend_strelok_start_7">
+		<text>也许吧, 但是我必须自己去找到我心中的答案, 而这答案只有深入特异区的中心才有可能发现, 我必须回到那里... 但是现在, 有一个不寻常的黑石军人在追踪我, 而我一直没甩掉他</text>
+	</string>
+	<string id="living_legend_strelok_start_8">
+		<text>是幻灵对吧, "游荡者"告诉过我, 而我们手中现在拥有可以干掉他的超级武器, 现在只需要找到他, 然后把他送上天就完事了</text>
+	</string>
+	<string id="living_legend_strelok_start_9">
+		<text>嗯, 听起来不错, 不过我还要再充分准备一下, 你看看其他人有没有需要帮忙的, 等我们全部准备好后, 就可以出发了</text>
+	</string>
+	
+	<string id="stalker_strelok_st_1">
+		<text>我只是一个普通的潜行者, 在特异区已经徘徊了好几年, 寻找破解它秘密的办法, 自从2006年的灾难后, 我和方还有鬼魂一起, 首次到达了切尔诺贝利核电站, 但那是很久以前的事情了, 这些记忆都变得很模糊, 而且每当我试图回忆的时候, 就总会有一些难以理解的画面, 让我的大脑一片空白...
+		\n我后来知道方和鬼魂都已经死了, 只剩下我一个人, 逃亡, 受苦, 并忍受着脑海中的低语... 曾经我被称为"天选者", 我失去了记忆, 被派去执行一个自杀式的任务, 这背后的指使者, 等我以后有机会再告诉你...
+		\n可以说, 是我解开了特异区的最大秘密, 但这代价... 我不得不做出那样的选择... 不管是对是错...</text>
+	</string>
+	
+	<string id="stalker_strelok_doctor_0">
+		<text>噢对了, 这是你的笔记, 我在你原来的藏身处找到的, 还有, 我差点忘了, 沼泽巫医让你有空了去看看他</text>
+	</string>
+	<string id="stalker_strelok_doctor_1">
+		<text>谢谢你, ...他还活着, 我唯一的老朋友, 我会去看望他的, 等这一切都结束...</text>
+	</string>
+	
+	<string id="living_legend_strelok_x8_0">
+		<text>在对付幻灵的战斗准备上有什么我可以帮忙的?</text>
+	</string>
+	<string id="living_legend_strelok_x8_1">
+		<text>嗯, 有件事情, 在这个城市的某个地方有个地下秘密实验室, 我还没去过, 但我怀疑那里可能有另外一份文件, 去那里找找吧, 把落下的文件都拿来</text>
+	</string>
+	
+	<string id="living_legend_strelok_preparations_0">
+		<text>我找到你要的东西了.</text>
+	</string>
+	<string id="living_legend_strelok_preparations_1">
+		<text>很好, 我们也准备的差不多了, 你准备好后就来找我</text>
+	</string>
+	
+	<string id="living_legend_strelok_eidolon_0">
+		<text>我准备好了</text>
+	</string>
+	<string id="living_legend_strelok_eidolon_1">
+		<text>很好, 其实黑石已经找到了这里, 就在刚才我们说话的时候, 他们的侦查小组已经向在这里靠近, 我们这就去干掉他们, 然后前往普里皮亚奇中心, 计划是进攻文化宫并把幻灵引出来, 你一定要看好了, 他只要一出现就把他给崩掉! 我们走!</text>
+	</string>
+	
+	<string id="living_legend_strelok_objective_0">
+		<text>操... 差点就交代在这里了, "死翘翘"是1, "死透透"是10, 你觉得这次是几?</text>
+	</string>
+	<string id="living_legend_strelok_objective_1">
+		<text>得了吧, 你不还没死吗? 嗯... 幻灵身上那个罕见的神器, 你就留着用吧, 就当做帮助我们的奖励了</text>
+	</string>
+	<string id="living_legend_strelok_objective_2">
+		<text>好东西! 谢谢你, 史特洛克! 那么, 现在特异区一半的黑石都死翘翘了, 你现在能告诉我了吧? 你到底在寻找什么?</text>
+	</string>
+	<string id="living_legend_strelok_objective_3">
+		<text>寻找答案, 和你一样, 我也在寻找属于我的答案, 为了找到它们, 我们必须前往核电站, 并且还要找到一块许愿石的碎片</text>
+	</string>
+	<string id="living_legend_strelok_objective_4">
+		<text>哦... 嗯? 等一下, 突袭核电站? 许愿石? 你疯了? 这种东西不是都是传言吗?</text>
+	</string>
+	<string id="living_legend_strelok_objective_5">
+		<text>呵呵, 每个传说都有那么一部分是真的, 相信我, 潜行者, 许愿石就在那里, 我亲眼目睹过, 不过别担心, 几年前我是凭借自己孤身一人杀进了核电厂, 而现在我们已经打败了幻灵和他的部队, 再加上有你的帮助, 我们肯定会再次成功的</text>
+	</string>
+	<string id="living_legend_strelok_objective_51">
+		<text>呵呵, 每个传说都有那么一部分是真的, 相信我, 佣兵, 许愿石就在那里, 我亲眼目睹过, 不过别担心, 几年前我是凭借自己孤身一人杀进了核电厂, 而现在我们已经打败了幻灵和他的部队, 再加上有你的帮助, 我们肯定会再次成功的</text>
+	</string>
+	<string id="living_legend_strelok_objective_6">
+		<text>你真是疯了... 那么你打算怎么进入核电站?</text>
+	</string>
+	<string id="living_legend_strelok_objective_7">
+		<text>当然是老办法了, 潜行者</text>
+	</string>
+	<string id="living_legend_strelok_objective_71">
+		<text>当然是老办法了, 雇佣兵</text>
+	</string>
+	<string id="living_legend_strelok_objective_8">
+		<text>特异区的秘密... 就在那里? 我已经迫不及待想探个究竟了</text>
+	</string>
+	<string id="living_legend_strelok_objective_9">
+		<text>要有耐心, 我们要深入石棺, 我保证你自己会在路上发现很多答案, 等我们拿到碎片逃出来后, 我会告诉你任何你想知道的事情, 我保证</text>
+	</string>
+	<string id="living_legend_strelok_objective_10">
+		<text>嗯, 有你这句话就行, 带我一起去吧!</text>
+	</string>
+	<string id="living_legend_strelok_objective_11">
+		<text>哈, 这肯定会成为你这辈子最大的一次冒险!</text>
+	</string>
+	
+	<string id="living_legend_strelok_answers_0">
+		<text>好了, 史特洛克, 我拿到碎片了, 现在该我提问了</text>
+	</string>
+	<string id="living_legend_strelok_answers_1">
+		<text>我非常感激你的帮助, 问吧, 我会尽我所能回答的</text>
+	</string>
+	<string id="living_legend_strelok_answers_21">
+		<text>特异区到底是什么?</text>
+	</string>
+	<string id="living_legend_strelok_answers_211">
+		<text>特异区既不是奇迹, 也不是恶魔的杰作, 这也不是自然现象, 十多年前, 一群科学家进行了一项秘密实验, 他们发现了一个神秘的灵能场, 叫做"念域", 包围了地球, 他们认为通过影响这个场就可以影响全世界的人, 他们想消除人们心中的自私和暴力, 但却没人能做到这点, 所以他们干脆变成了一个集体意识, 叫做"超念体", 所有成员的意识被上传后链接到一套极为强大的动力装置--"风暴引擎"中, 不出所料, 事情出了岔子, 实验导致了"念域"的裂隙, 然后出现了能量风暴, 而第一次大规模能量风暴释放的灵能场创造了特异区.</text>
+	</string>
+	<string id="living_legend_strelok_answers_212">
+		<text>超念体是谁或者是个什么东西?</text>
+	</string>
+	<string id="living_legend_strelok_answers_213">
+		<text>他们是一群被野心吞噬的科学家, 他们认为可以利用完全未知的东西来修复人类的缺陷, 却不知道这是在为自己进地狱铺路, 为了达到"拯救"人类的目的, 他们把自己变成了一个意识集合体, 他们无意之间创造了特异区, 他们要对能量风暴负责, "神迹装置", "焦脑器", 僵尸还有黑石都是他们的杰作, 都是他们防御网络的一部分, 他们还把许愿石放在石棺里, 而我之前发现自己有机会终结这一切... 所以我杀了他们.</text>
+	</string>
+	<string id="living_legend_strelok_answers_214">
+		<text>许愿石的本质是什么?</text>
+	</string>
+	<string id="living_legend_strelok_answers_215">
+		<text>许愿石, 也被称作黑石, 实现愿望的传说完全是假的, 它是为了引诱潜行者的贪欲, 使他们进入特异区的中心而做的, 这样超念体就可以抓住他们, 将他们洗脑, 把他们变成顺从的士兵, 这是我亲眼看到的, 另外我不确定, 但是... 我可能当时许了什么愿, 我不记得了, 我的记忆还是很模糊, 当我2012年回到这里时, 我已经能抵御它的诱惑了, 而且我不想再面对它了, 但是我又很好奇超念体死亡后的精神反应会对它造成什么影响, 然后我又听到了关于黑石碎片的传闻</text>
+	</string>
+	<string id="living_legend_strelok_answers_216">
+		<text>黑石碎片是哪种神器?</text>
+	</string>
+	<string id="living_legend_strelok_answers_217">
+		<text>这很简单, 传说在超念体被破坏的时候, 许愿石也受损了, 一部分破碎了, 一些潜行者在事后来到了切尔诺贝利核电站, 发现了这些碎片, 很明显, 他们的潜入引起了黑石部队的震怒, 他们再次返回以保护核电站, 而这个潜入者只能迅速逃跑, 留下了黑石碎片以免被追捕, 虽然听起来是假的, 但是这个故事很快就传开了, 但我知道事情没那么简单, 所以我想来调查一下, 那东西可能包含了一些旧文件没法解释的答案.</text>
+	</string>
+	<string id="living_legend_strelok_answers_22">
+		<text>关于能量风暴你有哪些知道的?</text>
+	</string>
+	<string id="living_legend_strelok_answers_221">
+		<text>我们现在都知道了生成特异区的"念域"裂隙溢出了过多的灵体能量, 这种能量形成了能量风暴, 就和水蒸气形成暴风雨的道理一样, 以前这些能量是被控制到极限后才有意释放的, 但是现在没有了超念体的引导, 这些能量只要累积一段时间, 就会自然而然溢出, 这样一来, 本应是消除特定威胁的罕见且毁灭性的能量风暴, 就变得相对较弱且频繁, 还会对所有生命进行无差别灭杀... 我不确定这是不是我当初想要看到的结果</text>
+	</string>
+	<string id="living_legend_strelok_answers_23">
+		<text>关于异常点你知道些什么?</text>
+	</string>
+	<string id="living_legend_strelok_answers_231">
+		<text>他们是"念域"的小裂缝, 或者是被强大灵体能量所影响的一小块扭曲的现实, 他们颠覆了物理定律, 我不是很确定, 每次的能量风暴发生时, 旧的异常点就会移动或者消失, 新的异常点会生成, 还有神器... 它们过去大多都是一些普通物品, 或者是由那些无法理解的能量改变的普通物品的集合, 有时候我感觉它们是根据当地潜行者的意愿而产生的, 也有可能是有全世界人们的恐惧, 不安和欲望而生成的.</text>
+	</string>
+	<string id="living_legend_strelok_answers_24">
+		<text>你对变异生物有什么理解?</text>
+	</string>
+	<string id="living_legend_strelok_answers_241">
+		<text>有人说它们是被辐射影响而变异的? 不要被那些理论所愚弄, 猫, 狗可能是, 但是别的... 奇美拉, 摄魂怪, 变异矮人, 变异巨兽甚至豚兽... 大多数都是人造的生物, 后来成为超念体的那批科学家们在地下的实验室里进行了许多的实验, 不仅仅有遗传学实验, 还有些涉及到"念域"的灵体能量, 这意味着变异生物其实与特异区有很强的联系, 和能量风暴一样, 它们其实也是秘密的防御手段之一.</text>
+	</string>
+	<string id="living_legend_strelok_answers_25">
+		<text>在晴空攻击切尔诺贝利风暴引擎的时候发生了什么?</text>
+	</string>
+	<string id="living_legend_strelok_answers_251">
+		<text>晴空... 他们比别的人都要了解特异区, 但是很显然, 他们了解的还不够多, 他们意识到我干涉特异区的行为使得能量风暴更加频繁, 但是他们试图阻止我也是同样的后果, 只是规模要大得多, 那是我见过最大规模的进攻切尔诺贝利行动, 毁灭从一开始就注定了, 他们追着我穿过利曼斯克, 一直到核电站, 还差点在那里抓到了我, 但是超念体也注意到了他们, 并启动了强大的能量风暴将他们消灭了, 那次我记得的最后一件事就是所有东西都开始变红, 简而言之, 他们自不量力且扼杀了自己.</text>
+	</string>
+	<string id="living_legend_strelok_answers_26">
+		<text>有没有什么办法可以摧毁特异区然后阻止这一系列疯狂的事情?</text>
+	</string>
+	<string id="living_legend_strelok_answers_261">
+		<text>我已经试过了, 结果只会让事情变的更糟, 我认为杀死超念体就足够了, 虽然, 能量风暴比以往任何时候都要频繁, 变种怪, 异常点, 黑石仍旧依然存在, 我发现了特异区的起源, 但是没有找到摧毁它的办法, 没人知道怎么才能做到, 但是我会继续努力, 也许许愿石碎片会揭示更多的信息, 或者别的秘密实验室里的文件, 亦或者特异区真正的中心... 目前为止, 我们知道的还不够多.</text>
+	</string>
+	<string id="living_legend_strelok_answers_27">
+		<text>我知道早在2011年的时候晴空雇佣了一个叫刀疤脸的佣兵去追捕你, 你还记得他后来怎么样了吗?</text>
+	</string>
+	<string id="living_legend_strelok_answers_271">
+		<text>刀疤脸... 是的, 我想我应该记得, 至少一部分, 晴空认为他们应该阻止我再次进入特异区中心, 所以派他来追我, 他在红森林追上了我, 但是我设法逃走了, 不过, 方就没那么幸运了... 我到达了切尔诺贝利核电站后刀疤脸和晴空部队紧随其后, 他用电磁武器破坏了我的灵能防护装备... 然后... 一切都变红了, 一次强大的能量风暴, 他可能已经死了, 但我不确定, 也有可能变成了僵尸, 或者变成了黑石战士, 从那之后我就再也没见过他.</text>
+	</string>
+	<string id="living_legend_strelok_answers_28">
+		<text>当所有人都叫你"天选者"的时候, 你和西多洛维奇还有酒保合作过, 你为什么不回到他们那里?</text>
+	</string>
+	<string id="living_legend_strelok_answers_281">
+		<text>我到过切尔诺贝利核电站, 我见过黑石, 我和超念体交谈过... 然后在一场极其艰难的战斗中, 我杀了他们, 那次经历使我精疲力尽, 我不知道后来发生了什么, 我在特异区中心徘徊了很长一段时间, 虽然我并不知道具体是多久, 然后我帮助了一次军方在普里皮亚奇的行动, 他们雇我当了一段时间的顾问, 但是我无法抵抗特异区的召唤, 后来我离开了他们, 那些问题和怀疑仍然困扰着我... 我忙着寻找答案.</text>
+	</string>
+	<string id="living_legend_strelok_answers_29">
+		<text>我真的不敢相信特异区竟然是人为造出来的, 我见过了"神迹装置"还有"焦脑器", 但是这... 他们怎么做到的?</text>
+	</string>
+	<string id="living_legend_strelok_answers_291">
+		<text>用了某种非常巨大的力量, 我相信核电站与此有某种关联, 也许一个或者多个反应堆在1986年的事故后还在继续工作, 但那也只可能用作能源供应而已, 我听说在更北的地方有个绝密设施, 在特异区的最深处, 那里的现实已经扭曲崩溃, 狂暴的变异生物, 无数的异常点, 黑石部队... 以及一套在2006年的失败实验中使用过的风暴引擎, 你给我带来的文件里提到过, 也许某天我能找到它们.</text>
+	</string>
+	<string id="living_legend_strelok_answers_3">
+		<text>哇, 我需要消化一下, 这些会改变我对很多事物的看法.</text>
+	</string>
+	<string id="living_legend_strelok_answers_4">
+		<text>我能给你的就是这些琐碎的知识, 绝密文件, 废弃的地下实验室, 复杂的设备, 个人经验和我观察到的东西... 特异区永远没那么容易理解, 我们就像两个穴居人, 互相刮擦了两块燧石, 却不小心引燃了火焰, 我们并不知道引发了什么, 只能在火灾蔓延的时候看它吞噬着周围的一切...</text>
+	</string>
+	<string id="living_legend_strelok_answers_5">
+		<text>谢谢你, 这超出了我之前所期望的, 我要回我的基地了, 你呢?</text>
+	</string>
+	<string id="living_legend_strelok_answers_6">
+		<text>我的目标离我越远我就越能有进步, 出了切尔诺贝利核电站, 还有很多秘密有待发现, 还有很多未知领域可能会揭示更多的东西, 或者提出更多的问题, 谁知道呢, 我不确定在继续探索的路上丢了命到底值不值得... 而且我永远也确定不了.</text>
+	</string>
+	<string id="living_legend_strelok_answers_71">
+		<text>我觉得那些回到晴空的隐秘基地的伙计们听到突袭切尔诺贝利核电站的真相后不会开心的, 毕竟这一切都是徒劳.</text>
+	</string>
+	<string id="living_legend_strelok_answers_711">
+		<text>特异区和我们开了一个残酷的玩笑, 我们之间没有任何敌视的理由, 只有教训要吸取, 如果你重视学识, 那么对你来说, 这是一种伪装了的小小的祝福, 不论好坏.</text>
+	</string>
+	<string id="living_legend_strelok_answers_712">
+		<text>我想你是对的, 冷风还有大家都想知道, 无论如何, 我们再也不会发动这样的军事行动了, 我们不是纪律团, 我们只想继续专注研究而不是引起冲突.</text>
+	</string>
+	<string id="living_legend_strelok_answers_72">
+		<text>我知道菜鸟村有些人知道许愿石是诱饵后不会高兴的, 但是让他们根本不想接近切尔诺贝利核电站就是最好的, 西多洛维奇最终也会得到他想要的答案.</text>
+	</string>
+	<string id="living_legend_strelok_answers_721">
+		<text>这事情早就该公布于众了, 我们不需要更多的黑石士兵了, 特别是像幻灵那样的, 如果他们非常注重个人利益, 那他们还可以去特异区里危险性小的多的地方, .</text>
+	</string>
+	<string id="living_legend_strelok_answers_722">
+		<text>或者是启程一次冒险, 史特洛克, 别忘了, 不是所有人都痴迷于寻宝, 我们把这地方点着了火, 所以我们不妨坐下来暖暖手, 讲几个故事, 怎么样?</text>
+	</string>
+	<string id="living_legend_strelok_answers_73">
+		<text>好吧好吧, 所有这些信息都非常有价值, 但我会考虑把它们卖给合适的人, 而不是最有钱的人, .</text>
+	</string>
+	<string id="living_legend_strelok_answers_731">
+		<text>这是个明智的决定, 这种东西不能被公开, 有些人肯定不能知道这些事情, 仔细挑选你的客户, 佣兵, 再多的钱也拯救不了世界性的灾难.</text>
+	</string>
+	<string id="living_legend_strelok_answers_732">
+		<text>除非它的钱够我在太平洋买一个私人岛屿, 对吧? 好吧, 我只是开玩笑, 我向你保证, 史特洛克.</text>
+	</string>
+	<string id="living_legend_strelok_answers_74">
+		<text>好的, 你告诉我的这些事情的确给我们再特异区遇到的许多现象提供了新的线索, 得到这些知识萨哈洛夫教授肯定会很高兴.</text>
+	</string>
+	<string id="living_legend_strelok_answers_741">
+		<text>是的, 这么多年了, 生态学家终于可以发表一些实质性的报告了, 不过要小心, 如果你透露出去的太多太快, 或者在错误的时间, 那后果可能会很可怕, 我很怀疑人类是否准备好去发现特异区的这些肮脏小秘密, 你必须好好考虑你的行动和决定.</text>
+	</string>
+	<string id="living_legend_strelok_answers_742">
+		<text>我可以肯定教授会知道怎么处理的, 我们之前已经有很多你现在告诉我的事情的假说了, 我们也肯定不想因为一些事物威胁到外部世界的安危... 我们发现的东西会引起争议, 我们会小心的.</text>
+	</string>
+	<string id="living_legend_strelok_answers_75">
+		<text>现在真特么太疯狂了, 伙计, 想象一下我回到基地后可以给所有人讲故事, 只是你别老想着摧毁特异区, 好吗? 好好玩, 你会得到回报的.</text>
+	</string>
+	<string id="living_legend_strelok_answers_751">
+		<text>即使经历了这么多事情你依然这么乐观? 好吧, 我可以向你保证我会慎重考虑, 恐怕这里一些最大的灾难是由我的鲁莽造成的, 我必须更谨慎以免重蹈覆辙.</text>
+	</string>
+	<string id="living_legend_strelok_answers_752">
+		<text>这就是我要的, 伙计!让我们一起享受特异区, 希望特异区也能享受我们的存在.</text>
+	</string>
+	<string id="living_legend_strelok_answers_76">
+		<text>知识是战斗的一半, 我会尽快向沃罗宁将军汇报, 总有一天, 我们会发起一场大规模的军事行动, 直击特异区的心脏, 一劳永逸地摧毁所有邪恶生物.</text>
+	</string>
+	<string id="living_legend_strelok_answers_761">
+		<text>记住晴空曾试图做过类似的事情, 但是他们惨败了, 特异区不是能用机枪和手榴弹摧毁的, 关于它的秘密我们还有很多要学, 我们可能永远也没法了解如何摧毁特异区.</text>
+	</string>
+	<string id="living_legend_strelok_answers_762">
+		<text>无论多么艰难, 我们的决心都不会动摇, 但是我会考虑你的建议的, 史特洛克.</text>
+	</string>
+	<string id="living_legend_strelok_answers_81">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 潜行者.</text>
+	</string>
+	<string id="living_legend_strelok_answers_82">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 潜行者.</text>
+	</string>
+	<string id="living_legend_strelok_answers_83">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 佣兵.</text>
+	</string>
+	<string id="living_legend_strelok_answers_84">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 潜行者.</text>
+	</string>
+	<string id="living_legend_strelok_answers_85">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 潜行者.</text>
+	</string>
+	<string id="living_legend_strelok_answers_86">
+		<text>很好, 拿着这个, 作为感激的象征和对你的奖励, 现在外面该分道扬镳了, 但我希望有一天我们可以再见面, 再见, 潜行者.</text>
+	</string>
+	<string id="living_legend_strelok_answers_9">
+		<text>再见, 史特洛克.</text>
+	</string>
+	
+	<string id="stalker_stitch_dialog_0">
+		<text>哦不, 又是你, 哈哈, 开玩笑.</text>
+	</string>
+	<string id="stalker_stitch_dialog_revenge_0">
+		<text>我要朝他的脑袋开两枪, 一枪是为了"凝视者", 另一枪为了"远行者", 他永远不知道是什么打中了他!</text>
+	</string>
+	<string id="stalker_stitch_dialog_raid_0">
+		<text>哦, 天, 现在可是正经事了, 最好给我个游戏啥的, 嘿嘿.</text>
+	</string>
+	
+	<string id="stalker_stitch_dialog_meet_0">
+		<text>你是"缝合者"对吧? 很高兴见到你.</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_1">
+		<text>哦, 嘿, 你是那个纪律团硬汉, 和"游荡者"一起来的对吧? 那家伙不好相处, 等等, 你是不是也从军队里叛逃出来的?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_11">
+		<text>你就是和"游荡者"一起来的那个人对吧? 那家伙不好相处, 尤其是和有钱的士兵, 什么? 你威胁了他的家人? 开玩笑, 他没有家人.</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_12">
+		<text>又一个潜行者? 你就是和"游荡者"一起来的那个人对吧? 那家伙不好相处, 你对他做了什么? 心灵控制?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_13">
+		<text>哦, 看, 一个神密的蓝色家伙, 你就是和"游荡者"一起来的那个人对吧? 那家伙不好相处, 你对他做了什么? 心灵控制?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_14">
+		<text>看起来我们可以开派对了, 你就是和"游荡者"一起来的那个人对吧? 那家伙不好相处, 你对他做了什么? 心灵控制?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_15">
+		<text>哇, 一个卵蛋头一路跑到了普里皮亚奇? 和"游荡者"一起? 那家伙不好相处, 你对他做了什么? 心灵控制?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_2">
+		<text>额, 不, 只是帮个忙而已.</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_3">
+		<text>很公平, 不过我希望你不是摄魂怪伪装成的, 等等, 你是么?</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_4">
+		<text>不是...</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_5">
+		<text>我会盯着你的, 是的, 我是"缝合者", 特长是战场医疗, 只要我有必要的零件, 我就可以把你缝起来, 我可是个针线活专家, 但是我的针老丢... 啊, 这, 这有个.</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_6">
+		<text>我要走了.</text>
+	</string>
+	<string id="stalker_stitch_dialog_meet_7">
+		<text>嘿, 别走啊!</text>
+	</string>
+	
+	<string id="stalker_stitch_st_1">
+		<text>我还能说啥? 我试着保持一个身心健康的状态, 你看, 如果有人突然和子弹来了个亲密接触, 那我就是留下来施魔法治愈他们的人, 我来特异区之前是个护士, 哈哈? 有什么好笑的? 不管怎么说, 我扛过了这么多枪战, 找了个伙伴帮我, 以防有人想杀医生, 很久之前我在农业研究所见到了史特洛克, 可怜的伙计老是惹上麻烦, 所以我就跟着他和"游荡者", 在事后给他们包扎什么的, 唉, 可惜我没办法拯救"凝视者"和"远行者"... 让我们为缅怀他们干杯.</text>
+	</string>
+	
+	<string id="living_legend_stitch_supplies_0">
+		<text>你有什么工作要做的吗?</text>
+	</string>
+	<string id="living_legend_stitch_supplies_1">
+		<text>你懂的, 我有无数的子弹伤和撕裂伤需要治疗, 但是我没有无数的医疗补给去治疗它们, 我们需要更多的医疗用品, 这事能交给你吗?</text>
+	</string>
+	
+	<string id="living_legend_stitch_supplies_complete_0">
+		<text>给, 我给你带了医疗用品.</text>
+	</string>
+	<string id="living_legend_stitch_supplies_complete_1">
+		<text>哈, 太棒了!如果你被粗暴对待了, 我肯定马上给你包扎, 我保证!</text>
+	</string>
+	
+	<string id="stalker_stitch_join_eidolon_0">
+		<text>我们准备好了, 我们走.</text>
+	</string>
+	<string id="stalker_stitch_join_eidolon_1">
+		<text>好了, 动手!</text>
+	</string>
+	
+	<string id="stalker_stitch_heal_0">
+		<text>我需要医疗.</text>
+	</string>
+	<string id="stalker_stitch_heal_1">
+		<text>好的, 让我看看.</text>
+	</string>
+	<string id="stalker_stitch_heal_2">
+		<text>被纸割了一下? 你好的很.</text>
+	</string>
+	<string id="stalker_stitch_heal_3">
+		<text>[继续...]</text>
+	</string>
+	<string id="stalker_stitch_heal_4">
+		<text>你可以走了.</text>
+	</string>
+	
+	<string id="stalker_scope_dialog_0">
+		<text>呃, 你想干啥?</text>
+	</string>
+	
+	<string id="stalker_wayfarer_dialog_0">
+		<text>我觉得我能感觉到什么...</text>
+	</string>
+</string_table>

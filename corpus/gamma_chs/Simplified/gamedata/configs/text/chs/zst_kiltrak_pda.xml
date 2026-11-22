@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_pda_3_name">
+		<text>第三代PDA</text>
+	</string>
+	<string id="st_pda_3_descr">
+		<text>一种口袋大小的电子设备,旨在涵盖计算机的基本和最重要的功能. 掌上电脑对日常信息共享至关重要. 它预装了GPS模块,向用户提供地理位置和时间信息. 这个版本的模块在检索和处理连接到网络的其他模块的位置方面有很大改进,这使这款PDA在潜行者中引人注目. 与通常的GPS模块不同,这个模块依靠成套的代码,允许模块在连接的通道上获得特殊的权限,以获得更多的信息. 这个特殊的设备还能够定位被主人消灭的目标的尸体,因为有人已经越狱,并安装了盗版的IMI KilTrak软件.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低电力消耗\n
+		%c[d_purple] • %c[ui_gray_2] 显示附近的自然队和被消灭的目标的位置.\n
+		</text>
+	</string>
+</string_table>

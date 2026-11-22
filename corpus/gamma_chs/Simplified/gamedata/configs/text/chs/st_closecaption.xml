@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- UI STRINGS FOR CLOSED CAPTION MODS -->
+	<string id="ui_mm_cc_icc">
+		<text>隐藏字幕</text>
+	</string>
+	<string id="ui_mm_cc_icc_chktext">
+		<text>开启音效</text>
+	</string>
+	<string id="ui_mm_cc_captioning">
+		<text>隐藏字幕</text>
+	</string>
+	<string id="ui_mm_cc_none">
+		<text>不显示字幕</text>
+	</string>
+	<string id="ui_mm_cc_storyonly">
+		<text>仅显示重要字幕</text>
+	</string>
+	<string id="ui_mm_cc_all">
+		<text>所有字幕</text>
+	</string>
+
+	<!-- STRING TABLE ADDITIONS FOR GAME -->
+	<string id="st_sending_msg">
+		<text>信息传送</text>
+	</string>
+	<string id="st_memo">
+		<text>备忘录</text>
+	</string>
+	<string id="st_msgfrom_err1">
+		<text>[未知联系人]</text>
+	</string>
+	<string id="st_msgfrom_err2">
+		<text>&lt;!数据错误!&gt;</text>
+	</string>
+	<string id="st_msgfrom_err3">
+		<text>=?网络故障</text>
+	</string>
+	<string id="st_joker_name">
+		<text>小丑</text>
+	</string>
+	<string id="st_soldier_name">
+		<text>士兵</text>
+	</string>
+	<string id="st_hq_general_name">
+		<text>将军</text>
+	</string>
+	<string id="st_ssu_commander_name">
+		<text>乌克兰安全局 指挥部</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR GAME -->
+	<string id="cc_effect-ambient-blowout_begin">
+		<text>[能量风暴开始]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_bloodsucker_roar">
+		<text>[吸血怪的咆哮]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_electro_box_door">
+		<text>[电箱开启]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_electro_box_switch">
+		<text>[电源开关的咔嗒声]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_elevator_door">
+		<text>[电梯门开启]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_cop_elevator_landing">
+		<text>[松鸡跳进电梯]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b38_lock_sound">
+		<text>[门开了]</text>
+	</string>
+	<string id="cc_effect-ambient-zaton-zat_b57_bloodsucker_roar">
+		<text>[吸血怪的咆哮]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b16_oasis_noise">
+		<text>[近处传来的爆裂声]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b41_steam">
+		<text>[气密系统启动]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b46_spatial_bubble_idle">
+		<text>[气泡异常点的声音]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b46_spatial_bubble_rupture">
+		<text>[气泡破裂]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b219_generator_start">
+		<text>[发电机启动]</text>
+	</string>
+	<string id="cc_effect-ambient-jupiter-jup_b219_underpass_opening">
+		<text>[地下通道门开启]</text>
+	</string>
+	<string id="cc_effect-ambient-underpass-pas_b400_elevator_off">
+		<text>[地下通道电梯电源关闭]</text>
+	</string>
+	<string id="cc_effect-ambient-pripyat-pri_a25_blow_up_door_peep">
+		<text>[bomb countdown beeps]</text>
+	</string>
+	<string id="cc_effect-ambient-pripyat-pri_a25_freezer_knock">
+		<text>[knocking on metal]</text>
+	</string>
+	<string id="cc_effect-device-door_start">
+		<text>[门开了]</text>
+	</string>
+	<string id="cc_effect-device-door_closing">
+		<text>[门关上了]</text>
+	</string>
+	<string id="cc_effect-device-door_stop">
+		<text>[门被重重的关上]</text>
+	</string>
+	<string id="cc_effect-device-metal_small_open">
+		<text>[金属门开启]</text>
+	</string>
+	<string id="cc_effect-device-power_switch">
+		<text>[点击开关]</text>
+	</string>
+	<string id="cc_effect-device-radio_call">
+		<text>[无线电通话]</text>
+	</string>
+	<string id="cc_effect-device-wood_large_open">
+		<text>[木门开启]</text>
+	</string>
+	<string id="cc_effect-device-wood_large_close_start">
+		<text>[木门关闭]</text>
+	</string>
+
+	<string id="cc_effect-anomaly-steam_blowout">
+		<text>[蒸汽嘶嘶声]</text>
+	</string>
+	<string id="cc_effect-weapons-n_desert_eagle_shot">
+		<text>[手枪的枪声]</text>
+	</string>
+
+	<string id="cc_effect-music-guitar_">
+		<text>[吉他声]</text>
+	</string>
+	<string id="cc_effect-music-harmonica_">
+		<text>[口琴声]</text>
+	</string>
+	<string id="cc_effect-laughter_">
+		<text>[笑声]</text>
+	</string>
+
+	<string id="cc_wounded-bandit-help">
+		<text>[受伤的土匪求救]</text>
+	</string>
+	<string id="cc_wounded-dolg-help">
+		<text>[受伤的纪律团求救]</text>
+	</string>
+	<string id="cc_wounded-freedom-help">
+		<text>[受伤的自由军求救]</text>
+	</string>
+	<string id="cc_wounded-killer-help">
+		<text>[受伤的佣兵求救]</text>
+	</string>
+	<string id="cc_wounded-military-help">
+		<text>[受伤的士兵求救]</text>
+	</string>
+	<string id="cc_wounded-monolith-help">
+		<text>[受伤的黑石求救]</text>
+	</string>
+	<string id="cc_wounded-stalker-help">
+		<text>[受伤的独行者求救]</text>
+	</string>
+
+	<string id="cc_fight-bandit-attack">
+		<text>[土匪发动攻击]</text>
+	</string>
+	<string id="cc_fight-dolg-attack">
+		<text>[纪律团发动攻击]</text>
+	</string>
+	<string id="cc_fight-freedom-attack">
+		<text>[自由军发动攻击]</text>
+	</string>
+	<string id="cc_fight-killer-attack">
+		<text>[佣兵发动攻击]</text>
+	</string>
+	<string id="cc_fight-military-attack">
+		<text>[军队发动攻击]</text>
+	</string>
+	<string id="cc_fight-monolith-attack">
+		<text>[黑石发动攻击]</text>
+	</string>
+	<string id="cc_fight-stalker-attack">
+		<text>[独行者发动攻击]</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR 'CALL OF PRIPYAT' -->
+	<!-- Zaton -->
+	<string id="zat_a2_base_alarm">
+		<text>注意了潜行者们, 斯卡多夫斯克号遭到了攻击! 我们得把舱门关上, 直到一切平静下来</text>
+	</string>
+	<string id="zat_a2_base_guard_1">
+		<text>拜托, 伙计, 把那武器收起来. 这里是我们的营地, 你用不着它</text>
+	</string>
+	<string id="zat_a2_base_guard_2">
+		<text>嘿, 伙计, 这个地方安全的很. 所以收起你的武器别拿出来了</text>
+	</string>
+	<string id="zat_a2_base_guard_3">
+		<text>看看, 武器是用来猎杀怪物的, 然而这里没有. 所以, 把它收起来, 好吗?</text>
+	</string>
+	<string id="zat_a2_base_relax">
+		<text>注意了潜行者们, 斯卡多夫斯克号的大门再次为你敞开</text>
+	</string>
+	<string id="zat_a2_linker_b29_take_order">
+		<text>不错! 拿好现金</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_after_surge">
+		<text>潜行者, 能量风暴过去了. 希望你们都已经平安度过</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_farewell_1">
+		<text>如果你发现了有趣的事情你就来这里分享. 斯卡多夫斯克号不会到处乱跑, 这是肯定的...</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_farewell_2">
+		<text>如果你找到了什么神器, 就来看看咱们能做些什么</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_farewell_angry_1">
+		<text>完事了吗? ... 嗯? 很好... 出口在那边</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_farewell_angry_2">
+		<text>哦,是这样... 你继续吧. 虽然这在我的计划表上优先度不高</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_greeting_1">
+		<text>你好!是什么把你带到这条不起眼的小船上?</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_greeting_2">
+		<text>欢迎来到我们的沼泽, 破冰船!</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_greeting_angry_1">
+		<text>这艘船搁浅已经很久了, 还总是充满了老鼠. 我们这奇怪的快乐还少了?</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_greeting_angry_2">
+		<text>你想干嘛?</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_surge_phase_1">
+		<text>注意潜行者! 一场能量风暴正在逼近!我再重复一遍, 一场能量风暴正在逼近! 快寻找掩体</text>
+	</string>
+	<string id="zat_a2_stalker_barmen_surge_phase_2">
+		<text>注意潜行者! 一场能量风暴将在未来几分钟内爆发. 如果你想活下去就快去找掩体!</text>
+	</string>
+	<string id="zat_a23_about_x8">
+		<text>这些文件指向一个名为X8的中央实验室, 它应该包含在特异区内进行的秘密实验的信息. 我们的研究员对它感兴趣已经有一段时间了</text>
+	</string>
+	<string id="zat_b100_heli_2_maps">
+		<text>看起来机组人员是在半空中死亡的, 直升机是因为无人驾驶而坠毁. 机载电脑要幸运一些. 我想知道这里有没有什么有用的东西... 啊,这个... !特异区的地图,标明了某些地点.那迟早会有用的</text>
+	</string>
+	<string id="zat_b101_both_heli_info">
+		<text>这架的电子设备情况和上架一样, 但是能量风暴保护系统还是完好的. 是什么造成的呢?</text>
+	</string>
+	<string id="zat_b101_one_heli_info">
+		<text>里面所有的电子设备都烧坏了. 甚至连电缆的外层也熔化了</text>
+	</string>
+	<string id="zat_b103_merc_come_here_now">
+		<text>靠近点, 很好!现在你可以过来了, 我们来谈谈</text>
+	</string>
+	<string id="zat_b103_merc_count_1">
+		<text>一!</text>
+	</string>
+	<string id="zat_b103_merc_count_2">
+		<text>二!</text>
+	</string>
+	<string id="zat_b103_merc_count_3">
+		<text>三!</text>
+	</string>
+	<string id="zat_b103_merc_hide_weapon_1">
+		<text>把你的枪放下!</text>
+	</string>
+	<string id="zat_b103_merc_hide_weapon_2">
+		<text>我告诉过你把枪收起来. 我数到三, 如果你不照做, 我就把你的该死的脑袋轰掉!</text>
+	</string>
+	<string id="zat_b103_merc_talk_to_commander_1">
+		<text>我不想闲扯淡. 找指挥官谈谈!</text>
+	</string>
+	<string id="zat_b103_merc_talk_to_commander_2">
+		<text>指挥官会处理你的谈话请求的</text>
+	</string>
+	<string id="zat_b103_merc_warning">
+		<text>你是哑巴吗? 快回来, 不然我就打爆你的脑袋!</text>
+	</string>
+	<string id="zat_b106_dont_receipt_reward">
+		<text>好了, 各位, 该回去了. 你很没用, 所以不要期待回报</text>
+	</string>
+	<string id="zat_b106_garmata_refuse_talk">
+		<text>找老大谈谈, 相比扯淡我更喜欢打枪</text>
+	</string>
+	<string id="zat_b106_garmata_story_reply">
+		<text>我到处都问过了, 没用. 谁也不知道. 就好像他是个骚灵</text>
+	</string>
+	<string id="zat_b106_gonta_hunt_complete">
+		<text>好了. 我们的任务完成了, 咱们回去吧. 记得去亚诺夫找屠兽者, 告诉他受伤的奇美拉已经死了, 你的报酬也没了</text>
+	</string>
+	<string id="zat_b106_gonta_hunt_great">
+		<text>干得漂亮! 你应该尝试当个猎人的</text>
+	</string>
+	<string id="zat_b106_gonta_hunt_kill">
+		<text>到了. 它很近, 我能感觉到. 如果你看到它, 瞄准它的头部. 不要靠得太近, 奇美拉在一英里外就能闻到你的气味,即使它们正在睡觉</text>
+	</string>
+	<string id="zat_b106_gonta_hunt_plan">
+		<text>听好了! 奇美拉在晚上活动, 早上回到巢穴休息. 所以我们可以在黎明时趁它休息的时候干掉它.我们所要做的就是靠近它,趁它还在睡觉的时候杀了它.很简单.不过我们得早起.我们凌晨3点在... 废船见</text>
+	</string>
+	<string id="zat_b106_gonta_hunt_sneak">
+		<text>小心点, 我们要保持绝对安静, 不能让它听到我们</text>
+	</string>
+	<string id="zat_b106_gonta_see_chimera">
+		<text>那混蛋在睡觉, 来自螃蟹的问候, 开火!</text>
+	</string>
+	<string id="zat_b106_gonta_story_angry">
+		<text>那个狗娘养的会后悔逃跑的</text>
+	</string>
+	<string id="zat_b106_gonta_story_ask">
+		<text>所以, 你找到有关喜鹊的东西了吗?</text>
+	</string>
+	<string id="zat_b106_gonta_story_calm">
+		<text>坚持住, 兄弟, 医生说过几天你就会好的. 你可以利用这段时间休息放松一下</text>
+	</string>
+	<string id="zat_b106_gonta_to_actor">
+		<text>嘿潜行者, 过来, 我有问题要问你</text>
+	</string>
+	<string id="zat_b14_robbery_after_pay_snd_1">
+		<text>很好! 现在转过去, 慢慢地, 然后从哪来的滚回哪里去!</text>
+	</string>
+	<string id="zat_b14_robbery_after_pay_snd_2">
+		<text>你是聋子还是什么, 滚开!</text>
+	</string>
+	<string id="zat_b14_robbery_after_pay_snd_3">
+		<text>嘿, 混蛋! 有人在这里吗? 快滚开, 不然我现在就把你宰了!</text>
+	</string>
+	<string id="zat_b14_robbery_kill_actor_snd_1">
+		<text>我要给你放点血, 混蛋我要放干你的血, 混蛋!</text>
+	</string>
+	<string id="zat_b14_robbery_kill_actor_snd_2">
+		<text>你要完蛋了, 混蛋!</text>
+	</string>
+	<string id="zat_b14_robbery_kill_actor_snd_3">
+		<text>把神器给我, 笨蛋!</text>
+	</string>
+	<string id="zat_b14_robbery_punch">
+		<text>真是个混账!</text>
+	</string>
+	<string id="zat_b14_robbery_stand_still_snd">
+		<text>别动, 不要动, 混蛋! 一步走错, 你就完了!</text>
+	</string>
+	<string id="zat_b14_robbery_stop_snd">
+		<text>别过来!把枪收好, 不许动!</text>
+	</string>
+	<string id="zat_b14_scene_1_give_item">
+		<text>嘿, 大胡子, 看看我在那个鬼地方里发现了什么! 这个东西?</text>
+	</string>
+	<string id="zat_b14_scene_1_linker_reply">
+		<text>哇, 那居然有东西...! 我以前从来没见过. 这儿, 收好了</text>
+	</string>
+	<string id="zat_b14_scene_1_stalker_bye">
+		<text>谢谢你, 如果你有其他工作, 你知道在哪里能找到我的</text>
+	</string>
+	<string id="zat_b14_scene_1_stalker_offended">
+		<text>再继续走的话. 我会让你终身难忘</text>
+	</string>
+	<string id="zat_b14_scene_1_stalker_teach_actor">
+		<text>哦是你... 嗯, 我和你一样需要钱</text>
+	</string>
+	<string id="zat_b18_noah_breakdown">
+		<text>啊... 是它!这就是终结了! 都来了... 怪物... 全世界的怪物!</text>
+	</string>
+	<string id="zat_b18_noah_gave_first_artefact">
+		<text>当你穿过异常点时这垃圾救不了你, 拿着, 快滚!</text>
+	</string>
+	<string id="zat_b18_noah_gave_second_artefact">
+		<text>哈! 你觉得这东西能保护你免受能量风暴的影响, 拿着快滚, 保住你的小命!</text>
+	</string>
+	<string id="zat_b18_noah_go_away">
+		<text>滚开, 怪人!</text>
+	</string>
+	<string id="zat_b18_noah_greetings_1">
+		<text>去死吧, 混蛋!!</text>
+	</string>
+	<string id="zat_b18_noah_greetings_2">
+		<text>快滚混蛋, 不然我就把你们都干掉!</text>
+	</string>
+	<string id="zat_b18_noah_greetings_3">
+		<text>混账怪物... 滚开!</text>
+	</string>
+	<string id="zat_b18_noah_no_talk_1">
+		<text>一边去</text>
+	</string>
+	<string id="zat_b18_noah_no_talk_2">
+		<text>继续走</text>
+	</string>
+	<string id="zat_b18_noah_no_talk_3">
+		<text>走开</text>
+	</string>
+	<string id="zat_b20_noah_instructions">
+		<text>看仔细了, 跟着我</text>
+	</string>
+	<string id="zat_b20_noah_jumped">
+		<text>干得好! 有空来我这儿坐坐</text>
+	</string>
+	<string id="zat_b20_noah_pda">
+		<text>那些该死的怪物. 它们跑到高地上, 以为诺亚上不去. 我猜他们不知道我在"炼狱"异常区那边有条路. 你们会玩得很开心的, 混蛋们!</text>
+	</string>
+	<string id="zat_b215_stalker_guide_farewell_1">
+		<text>嗯, 祝你好运!</text>
+	</string>
+	<string id="zat_b215_stalker_guide_farewell_2">
+		<text>一路顺风!</text>
+	</string>
+	<string id="zat_b215_stalker_guide_greeting_1">
+		<text>你好</text>
+	</string>
+	<string id="zat_b215_stalker_guide_greeting_2">
+		<text>嘿潜行者, 过得如何?</text>
+	</string>
+	<string id="zat_b22_stalker_medic_diary">
+		<text>记录12: 我的研究很快就结束了... 营地里的人开始怀疑了. 松鸡和丹尼拉正计划猎杀一些吸血怪... 我想知道他们什么时候会知道? 我得把这些血袋分类, 看看哪些被污染了... 然后把剩下的藏起来... 有人来了... 记录13. 可能要结束了. 先是那个爱管闲事的猎人, 现在是松鸡. 我不会放过你的. 我知道... 他们会来找我的. 没关系了. 血红蛋白成瘾很快就会要了我的命.我宁愿死于子弹也不愿死于疾病</text>
+	</string>
+	<string id="zat_b22_stalker_medic_farewell_1">
+		<text>嗯, 好. 再见</text>
+	</string>
+	<string id="zat_b22_stalker_medic_farewell_2">
+		<text>拜拜</text>
+	</string>
+	<string id="zat_b22_stalker_medic_greeting_1">
+		<text>怎么了? 你受伤了, 或者沾上了辐射?</text>
+	</string>
+	<string id="zat_b22_stalker_medic_greeting_2">
+		<text>不, 现在不行... 嗯?</text>
+	</string>
+	<string id="zat_b22_stalker_medic_hello">
+		<text>我就知道最终会暴露的, 我相信你有很多问题要问</text>
+	</string>
+	<string id="zat_b28_heli_3_evacuation_points">
+		<text>机载电脑上有信息... Okay, 原来当时鳐鱼-3号的两个引擎都挂了. 嗯... 还有啥?... 一张地图, 上面好像是撤离地点. B2, B28, B205. 有意思</text>
+	</string>
+	<string id="zat_b29_stalker_rival_1_order_ready">
+		<text>任务完成, 神器到手</text>
+	</string>
+	<string id="zat_b29_stalker_rival_2_order_ready">
+		<text>任务完成了, 拿好神器</text>
+	</string>
+	<string id="zat_b3_tech_drink_no_more">
+		<text>近况如何, 潜行者?</text>
+	</string>
+	<string id="zat_b3_tech_drunk">
+		<text>啊... 你想干啥...?</text>
+	</string>
+	<string id="zat_b3_tech_drunk_discount">
+		<text>嗯... 你是不是忘记什么东西了?</text>
+	</string>
+	<string id="zat_b3_tech_no_sleep_1">
+		<text>唔? 啥...? 让我睡一会儿...</text>
+	</string>
+	<string id="zat_b3_tech_no_sleep_2">
+		<text>诶呀, 一边去...!</text>
+	</string>
+	<string id="zat_b3_tech_no_sleep_3">
+		<text>好了... 请喝一杯吧!</text>
+	</string>
+	<string id="zat_b3_tech_realy_drunk">
+		<text>什么... 我能为你做什么?...</text>
+	</string>
+	<string id="zat_b3_tech_realy_drunk_discount">
+		<text>啊...嗯, 是你... 过来!</text>
+	</string>
+	<string id="zat_b3_tech_see_produce_62">
+		<text>什么? 六... 六十二...? 不可能</text>
+	</string>
+	<string id="zat_b3_tech_sleep_1">
+		<text>[睡着了]</text>
+	</string>
+	<string id="zat_b3_tech_sleep_2">
+		<text>...我说过了,喝的还不够...</text>
+	</string>
+	<string id="zat_b3_tech_sleep_3">
+		<text>[睡着了]</text>
+	</string>
+	<string id="zat_b3_tech_sleep_4">
+		<text>嘿, 伙计, 你要去哪儿...? 啊, 我要... 我要待在这儿...</text>
+	</string>
+	<string id="zat_b3_tech_sober">
+		<text>咋了...</text>
+	</string>
+	<string id="zat_b3_tech_take_first_dose">
+		<text>这杯是为了稳当地干活!</text>
+	</string>
+	<string id="zat_b3_tech_take_second_dose">
+		<text>这杯是为了好好地干活!</text>
+	</string>
+	<string id="zat_b3_tech_take_third_dose">
+		<text>这杯是为了我们共同的目标!</text>
+	</string>
+	<string id="zat_b30_owl_about_trouble">
+		<text>我是猫头鹰. 过来见我! 我们来谈谈生意上的事情</text>
+	</string>
+	<string id="zat_b30_owl_stalker_trader_farewell_1">
+		<text>这就对了, 滚吧!</text>
+	</string>
+	<string id="zat_b30_owl_stalker_trader_farewell_2">
+		<text>别撞到门了...</text>
+	</string>
+	<string id="zat_b30_owl_stalker_trader_greeting_1">
+		<text>所以, 你搞到什么新玩意了吗?</text>
+	</string>
+	<string id="zat_b30_owl_stalker_trader_greeting_2">
+		<text>你是什么东西, 雕像吗? 有啥东西的话, 就抖出来. 没有的话, 出去找找!</text>
+	</string>
+	<string id="zat_b33_stalker_snag_greeting_gun">
+		<text>哇哦, 那是把好喷子! 让我看看</text>
+	</string>
+	<string id="zat_b38_stalker_cop_about_lair_bloodsucker">
+		<text>我看见一只吸血怪进了房子. 我猜他们说了谎... 验证一下吧</text>
+	</string>
+	<string id="zat_b38_stalker_cop_another_one">
+		<text>小心! 还有一只!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_appear">
+		<text>你听到吗? ... 没事, 我听错了</text>
+	</string>
+	<string id="zat_b38_stalker_cop_bloodsuckers_no_sleep">
+		<text>它们醒了! 跑!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_bloodsuckers_sleep">
+		<text>嘘! 有很多吸血怪在睡觉. 静静地绕过它们</text>
+	</string>
+	<string id="zat_b38_stalker_cop_come_here_1">
+		<text>过来看! ... 这可能是唯一能进入地下室的路</text>
+	</string>
+	<string id="zat_b38_stalker_cop_come_here_2">
+		<text>别愣着了! 进去瞧瞧吧</text>
+	</string>
+	<string id="zat_b38_stalker_cop_down_floor">
+		<text>嫌你的脚太娘? 那就来这里逛逛</text>
+	</string>
+	<string id="zat_b38_stalker_cop_fear_end">
+		<text>呼... 终于搞定. 神不知鬼不觉</text>
+	</string>
+	<string id="zat_b38_stalker_cop_find_lair_pda">
+		<text>我恐怕找到了那个贱人. 快过来!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_hit_1">
+		<text>你瞄准了再打啊!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_hit_2">
+		<text>你他妈瞎啊, 射我?</text>
+	</string>
+	<string id="zat_b38_stalker_cop_jump_down_1">
+		<text>各位手足, 只有跳下去这条路了... 我来开路!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_jump_down_2">
+		<text>这好像是出口! 跳!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_kill_1">
+		<text>干掉一只! 刚刚一共有俩, 别松懈!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_kill_2">
+		<text>应该是它了. 最后一只</text>
+	</string>
+	<string id="zat_b38_stalker_cop_not_a_hunter"><!-- not used = sound exists only in Russian -->
+		<text>没有猎人... 我日! 看这, 是爪痕. 之前找到那几个人都没有爪痕. 太奇怪了</text>
+	</string>
+	<string id="zat_b38_stalker_cop_not_a_hunter_1">
+		<text>看这爪印! 不对劲...</text>
+	</string>
+	<string id="zat_b38_stalker_cop_not_a_hunter_2">
+		<text>之前发现的尸体身上没有爪印啊</text>
+	</string>
+	<string id="zat_b38_stalker_cop_not_a_hunter_3">
+		<text>猎人不在, 走!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_notice">
+		<text>睁大眼睛! 它们神出鬼没</text>
+	</string>
+	<string id="zat_b38_stalker_cop_see_bloodsucker">
+		<text>那里有东西. 掩护我!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_sit">
+		<text>趴下!</text>
+	</string>
+	<string id="zat_b38_stalker_cop_tell_about_quest">
+		<text>我们没找到猎人, 但我可能知道他在哪. 我先去找找, 然后再联系你. 同时, 告诉潜行者们关于吸血怪的事. 不能放着不管了</text>
+	</string>
+	<string id="zat_b38_stalker_cop_tell_stalker_about_lair">
+		<text>我们得告诉大胡子. 希望他有什么办法治治这些畜生</text>
+	</string>
+	<string id="zat_b38_stalker_cop_try">
+		<text>这个我在行. 从出生我就会</text>
+	</string>
+	<string id="zat_b39_joker_pda_record">
+		<text>我知道那棵树上只有神器. 我能从山坡上爬到树上. 希望山坡上没有变异怪. 可惜上次和卡丹和巴杰争吵之后我不得不一个人来. 等我拿到神器, 他们就知道谁是对的</text>
+	</string>
+	<string id="zat_b40_merc_combat">
+		<text>够了, 杀了那个弱智!</text>
+	</string>
+	<string id="zat_b40_merc_go_away_1">
+		<text>回去吧, 潜行者! 这里没你的事!</text>
+	</string>
+	<string id="zat_b40_merc_go_away_2">
+		<text>潜行者! 趁你的腿还没软赶紧跑吧!</text>
+	</string>
+	<string id="zat_b42_controller_warning_1">
+		<text>离开这里</text>
+	</string>
+	<string id="zat_b42_controller_warning_2">
+		<text>走, 趁还来得及!</text>
+	</string>
+	<string id="zat_b44_stalker_barge_pda">
+		<text>卡丹, 老酒鬼! 一旦他喝了酒, 他不仅是个懒惰的混蛋, '这里不错. 我们要歇一下...' 但是之后他却走了, 还对我和小丑怒吼, 说我们太年轻毛都不懂! 哈...! 呃, 小丑也是个奇葩. 一怒之下, 拿上自己的东西, 失踪了. 我还在安抚卡丹呢, 鬼知道他去哪了. 那我该怎么办? 和那个老年痴呆喝酒? 不, 我谢谢你, 他的伏特加是垃圾! 咦. 想想这件事刚开始时多么有希望...操</text>
+	</string>
+	<string id="zat_b5_bandit_dealer_speak_1">
+		<text>你看, 我们搞到这些神器, 将来还有更多. 我们可以找人换点武器和好的装备</text>
+	</string>
+	<string id="zat_b5_bandits_see_actor">
+		<text>嘿! 你是谁?</text>
+	</string>
+	<string id="zat_b5_dealer_angry">
+		<text>你个白痴, 被人跟踪了!</text>
+	</string>
+	<string id="zat_b5_dealer_bandit_speak_1">
+		<text>你有什么, 瞧瞧!</text>
+	</string>
+	<string id="zat_b5_dealer_bandit_speak_2">
+		<text>纪律团有的我都有, 武器和装备都不是问题. 我的货质量杠杠的, 不用怀疑</text>
+	</string>
+	<string id="zat_b5_dealer_kill_bandits">
+		<text>全杀了. 不留目击者</text>
+	</string>
+	<string id="zat_b5_dealer_see_clients">
+		<text>来了</text>
+	</string>
+	<string id="zat_b5_dealer_to_actor_fire">
+		<text>拿下!</text>
+	</string>
+	<string id="zat_b5_dealer_wait_clients">
+		<text>再等会儿. 客人马上就到</text>
+	</string>
+	<string id="zat_b5_dealer_want_speak_with_actor">
+		<text>要不咱俩聊聊?</text>
+	</string>
+	<string id="zat_b5_dealer_who_there">
+		<text>咋了?</text>
+	</string>
+	<string id="zat_b5_stalkers_all_clear_go">
+		<text>真相大白. 干掉他们!</text>
+	</string>
+	<string id="zat_b5_stalkers_refuse_talk">
+		<text>去问老大</text>
+	</string>
+	<string id="zat_b5_stalkers_watch_out_sentry">
+		<text>别让哨兵看到你</text>
+	</string>
+	<string id="zat_b5_sultan_angry">
+		<text>潜行者? 搞什么...?!</text>
+	</string>
+	<string id="zat_b5_sultan_kill_stalkers">
+		<text>一个不留, 兄弟们!</text>
+	</string>
+	<string id="zat_b52_port_bandits_after_pay_snd_1">
+		<text>算你识相. 放你一马, 赶快滚!</text>
+	</string>
+	<string id="zat_b52_port_bandits_after_pay_snd_2">
+		<text>还不走? 我的耐心有限...</text>
+	</string>
+	<string id="zat_b52_port_bandits_after_pay_snd_3">
+		<text>好吧! 你活够了!</text>
+	</string>
+	<string id="zat_b52_port_bandits_kill_actor_snd_1">
+		<text>省省吧, 傻逼!</text>
+	</string>
+	<string id="zat_b52_port_bandits_kill_actor_snd_2">
+		<text>兄弟们, 他不想合作. 放倒他!</text>
+	</string>
+	<string id="zat_b52_port_bandits_kill_actor_snd_3">
+		<text>兄弟们, 这个逼不想分成!</text>
+	</string>
+	<string id="zat_b52_port_bandits_see_actor">
+		<text>那家伙手里有把好枪! 喂, 等一下!</text>
+	</string>
+	<string id="zat_b52_port_bandits_stand_still_snd">
+		<text>等着! 我下来!</text>
+	</string>
+	<string id="zat_b53_artefact_hunter_2_come_on">
+		<text>放松一下, 继续前进</text>
+	</string>
+	<string id="zat_b53_artefact_hunter_2_come_on_continue">
+		<text>看, 你的防护服应付得了.继续前进!</text>
+	</string>
+	<string id="zat_b53_artefact_hunter_help">
+		<text>救我, 潜行者!</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_farewell_1">
+		<text>再见... 如果你能安然无恙就好</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_farewell_2">
+		<text>有空来坐坐.我们的合作会很愉快的!</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_greeting_1">
+		<text>本人在此!</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_greeting_2">
+		<text>所以你把你的屁股撅过来了, 哈哈!</text>
+	</string>
+	<string id="zat_b7_raider_after_bad">
+		<text>嗯,就这样. ... 你他妈在干嘛? 看风景?</text>
+	</string>
+	<string id="zat_b7_raider_after_ok">
+		<text>嗯, 就是这样! 看着你工作真好</text>
+	</string>
+	<string id="zat_b7_raider_sneak_comments_1">
+		<text>我们会好好招待他们!</text>
+	</string>
+	<string id="zat_b7_raider_sneak_comments_2">
+		<text>诶, 怎么了?</text>
+	</string>
+	<string id="zat_b7_raider_sneak_comments_3">
+		<text>别紧张, 老兄! 我们能轻松搞定他们</text>
+	</string>
+	<string id="zat_b7_raiders_attack">
+		<text>给我干!</text>
+	</string>
+	<string id="zat_b7_raiders_ready_to_go">
+		<text>终于...! 我们等了你好久啦</text>
+	</string>
+	<string id="zat_b7_raiders_sneak_confuse">
+		<text>卧槽...?! 伏地魔, 玩阴的?</text>
+	</string>
+	<string id="zat_b7_raiders_to_boss">
+		<text>听好了! "匪王"苏坦想见你</text>
+	</string>
+	<string id="zat_b7_stalker_after_bad">
+		<text>我们灭了那帮贱种. 你刚刚留了一手, 是吗?</text>
+	</string>
+	<string id="zat_b7_stalker_after_ok">
+		<text>我们灭了那帮贱种. 谢谢你帮忙!</text>
+	</string>
+	<string id="zat_b7_stalkers_attack">
+		<text>杀光!</text>
+	</string>
+
+	<!-- Jupiter -->
+	<string id="jup_a10_bandit_leader_hello">
+		<text>你看那玩意儿! 就它一个!</text>
+	</string>
+	<string id="jup_a10_bandits_warn">
+		<text>收起你的枪, 潜行者, 不然我当场埋了你!</text>
+	</string>
+	<string id="jup_a10_vano_need_help">
+		<text>我该怎么办? 走了赔钱. 不走赔命啊</text>
+	</string>
+	<string id="jup_a12_bandit_say_jump">
+		<text>我怎么... 好像还听到你兜里还有零钱?... 啊, 是不是啊?</text>
+	</string>
+	<string id="jup_a12_bandit_threat_to_prisoner">
+		<text>再走一步, 他必死!</text>
+	</string>
+	<string id="jup_a12_bandits_bodyguard_warning_actor">
+		<text>收起你的枪, 傻逼!</text>
+	</string>
+	<string id="jup_a12_bandits_warning_actor">
+		<text>喂! 你在干啥子? 滚回你原来的地方, 趁我还没打断你的狗腿</text>
+	</string>
+	<string id="jup_a12_merc_attack_started">
+		<text>冲啊!</text>
+	</string>
+	<string id="jup_a12_merc_cover_us">
+		<text>我掩护你</text>
+	</string>
+	<string id="jup_a12_merc_lets_go">
+		<text>我上了</text>
+	</string>
+	<string id="jup_a12_merc_ready">
+		<text>我就位了</text>
+	</string>
+	<string id="jup_a12_stalker_assaulter_1_argue">
+		<text>我依然认为我们应该把神器买了, 换钱来招更多人手. 这样我们就可以一起攻击那些土匪</text>
+	</string>
+	<string id="jup_a12_stalker_assaulter_2_argue">
+		<text>你不认为他们一拿到神器就会马上开枪打他?</text>
+	</string>
+	<string id="jup_a12_stalker_assaulter_3_argue">
+		<text>不能屈服. 他们贪得无厌, 会要求更多</text>
+	</string>
+	<string id="jup_a12_stalker_diplomat_1_argue">
+		<text>不对! 我们把神器给他们就没事了</text>
+	</string>
+	<string id="jup_a12_stalker_diplomat_2_argue">
+		<text>我们冲出去的话他们一定会开枪把他杀了</text>
+	</string>
+	<string id="jup_a12_stalker_diplomat_3_argue">
+		<text>我们不是屈服...! 答应他们的条件是我们唯一能做的</text>
+	</string>
+	<string id="jup_a12_stalker_diplomat_no_talk">
+		<text>我信不过你</text>
+	</string>
+	<string id="jup_a12_stalker_prisoner_says_we_can_run_from_here">
+		<text>跑! 我们能跑出去!</text>
+	</string>
+	<string id="jup_a12_stalker_prisoner_thanks_actor">
+		<text>谢谢你救了我</text>
+	</string>
+	<string id="jup_a12_stalkers_to_actor_came_back">
+		<text>嘿, 你去哪啊? 等等! 过来这儿!</text>
+	</string>
+	<string id="jup_a12_stalkers_to_actor_meet_on_base">
+		<text>在老旧火车站你能找到我</text>
+	</string>
+	<string id="jup_a6_base_alarm">
+		<text>所有潜行者或其他人员注意, 亚诺夫车站遭到攻击! 所有出口暂时封闭</text>
+	</string>
+	<string id="jup_a6_base_guard_1">
+		<text>把枪放下, 这里是和平区</text>
+	</string>
+	<string id="jup_a6_base_guard_2">
+		<text>潜行者, 如果你不把那枪收好你会尝到苦果的</text>
+	</string>
+	<string id="jup_a6_base_guard_3">
+		<text>只要你拿着枪, 你就进不来, 你懂我的意思吗?!</text>
+	</string>
+	<string id="jup_a6_base_megaphone_1">
+		<text>放松, 伙计, 把枪收起来</text>
+	</string>
+	<string id="jup_a6_base_megaphone_2">
+		<text>我们不准持枪入内</text>
+	</string>
+	<string id="jup_a6_base_megaphone_3">
+		<text>潜行者, 如果你要进来, 把枪放下</text>
+	</string>
+	<string id="jup_a6_base_relax">
+		<text>所有潜行者或其他人员注意, 亚诺夫又安全了. 欢迎你随时来访</text>
+	</string>
+	<string id="jup_a6_duty_leader_farewell_1">
+		<text>有缘再会, 潜行者!</text>
+	</string>
+	<string id="jup_a6_duty_leader_farewell_2">
+		<text>呼, 是我们, 笑到最后!</text>
+	</string>
+	<string id="jup_a6_duty_leader_greeting_1">
+		<text>哈喽, 潜行者</text>
+	</string>
+	<string id="jup_a6_duty_leader_greeting_2">
+		<text>有何贵干?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_farewell_1">
+		<text>祝你好运!</text>
+	</string>
+	<string id="jup_a6_freedom_leader_farewell_2">
+		<text>照顾好自己!</text>
+	</string>
+	<string id="jup_a6_freedom_leader_greeting_1">
+		<text>嘿伙计! 怎么啦?</text>
+	</string>
+	<string id="jup_a6_freedom_leader_greeting_2">
+		<text>进来, 伙计, 放轻松. 放松下自己</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_farewell_1">
+		<text>常来看看. 这附近也许有些什么有趣的</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_farewell_2">
+		<text>再见!</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_greeting_1">
+		<text>过来, 兄弟! 我有你需要的东西</text>
+	</string>
+	<string id="jup_a6_stalker_barmen_greeting_2">
+		<text>啊咯哈!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_after_surge">
+		<text>能量风暴过去了. 希望各位平安无事. 如果你受伤了, 就来亚诺夫, 我们把你治好</text>
+	</string>
+	<string id="jup_a6_stalker_medik_farewell_1">
+		<text>下一位! ...额...我是说... 照顾好自己的健康!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_farewell_2">
+		<text>别去惹麻烦!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_greeting_1">
+		<text>你脸色苍白伙计, 打一两针如何?</text>
+	</string>
+	<string id="jup_a6_stalker_medik_greeting_2">
+		<text>又伤着了? 你不是在浪费我时间对吧</text>
+	</string>
+	<string id="jup_a6_stalker_medik_phase_1">
+		<text>注意, 注意! 一场能量风暴正在迫近. 快去找掩体!</text>
+	</string>
+	<string id="jup_a6_stalker_medik_phase_2">
+		<text>注意, 注意! 能量风暴来了! 快找掩体!</text>
+	</string>
+	<string id="jup_a9_actor_conservation_info">
+		<text>那... 地下通道在被封闭后充满了酸雾</text>
+	</string>
+	<string id="jup_a9_actor_power_info">
+		<text>地下通道的入口在这里. 如果我们启动发电机, 我们就能打开输送阀了</text>
+	</string>
+	<string id="jup_a9_actor_way_info">
+		<text>'普里皮亚奇-1号'地下通道的图纸. 这证明有一个地下途径去普里皮亚奇</text>
+	</string>
+	<string id="jup_b1_actor_dont_come">
+		<text>嘿, 老兄! 时间就是金钱. 我们不再等你了, 小队现在要回去了</text>
+	</string>
+	<string id="jup_b1_stalker_warning">
+		<text>小... 小... 小心, 摄... 摄... 摄魂怪!</text>
+	</string>
+	<string id="jup_b1_stalkers_aftershock_1">
+		<text>嗯... 妈的... 什么... 什么玩意儿...? 我... 操...</text>
+	</string>
+	<string id="jup_b1_stalkers_aftershock_2">
+		<text>哦... 冲动... ...噁... 可怕...! 伙计, 我头疼的厉害!</text>
+	</string>
+	<string id="jup_b1_stalkers_first_stay">
+		<text>我们在这里等你. 如果发生什么事, 我们会保护你的</text>
+	</string>
+	<string id="jup_b1_stalkers_get_out">
+		<text>哦, 糟了! 我们最好马上离开这里!</text>
+	</string>
+	<string id="jup_b1_stalkers_greeting">
+		<text>你是洞洞专家, 对吧? 呵-呵-呵... 别担心, 你可以指望他们能迅速干掉那些人</text>
+	</string>
+	<string id="jup_b1_stalkers_lair_check">
+		<text>嗯... 它看起来安静. 我们可以前进</text>
+	</string>
+	<string id="jup_b1_stalkers_monsters_beat_off">
+		<text>一切都很好. 里面有几只仓鼠, 但我们搞定了</text>
+	</string>
+	<string id="jup_b1_stalkers_monsters_out">
+		<text>看来这是最后一批了</text>
+	</string>
+	<string id="jup_b1_stalkers_psy_wound_1">
+		<text>啊呀... 它在我身体里! Nooo...</text>
+	</string>
+	<string id="jup_b1_stalkers_second_stay">
+		<text>走吧! 我们守住入口</text>
+	</string>
+	<string id="jup_b1_stalkers_see_zombied">
+		<text>这是一个僵尸!</text>
+	</string>
+	<string id="jup_b10_stalker_drunk_no_meet_1">
+		<text>嗯... ...额... 你-你知道的...</text>
+	</string>
+	<string id="jup_b10_stalker_drunk_no_meet_2">
+		<text>哈? 啥?</text>
+	</string>
+	<string id="jup_b10_stalker_drunk_no_meet_3">
+		<text>额... 嗯...</text>
+	</string>
+	<string id="jup_b10_ufo_memory_repaired_nitro">
+		<text>嗨呀, 这里是阿佐特. 顺便过来拿一下那个内存模块.已经搞定了</text>
+	</string>
+	<string id="jup_b15_zulus_greeting">
+		<text>你好!</text>
+	</string>
+	<string id="jup_b15_zulus_ready">
+		<text>就这么说定了: 我们会一起去. 不管你看到什么战士, 把他们派给我我就把他们组成一队. 一旦一切准备好了, 就喊我一声. 我们会带上阿佐特然后去尤皮特</text>
+	</string>
+	<string id="jup_b19_freedom_yar_about_zombie_1">
+		<text>看起来像一个安静的村庄... 除非我们打扰当地居民</text>
+	</string>
+	<string id="jup_b19_freedom_yar_about_zombie_2">
+		<text>如此宁静, 就像一个度假胜地</text>
+	</string>
+	<string id="jup_b19_freedom_yar_about_zombie_3">
+		<text>我们快到了</text>
+	</string>
+	<string id="jup_b19_freedom_yar_come_here_1">
+		<text>快上来, 好戏就要开场了!</text>
+	</string>
+	<string id="jup_b19_freedom_yar_come_here_2">
+		<text>来吧, 你还在等什么? 你会错过最精彩的部分</text>
+	</string>
+	<string id="jup_b19_freedom_yar_come_here_3">
+		<text>你在干什么? 快点, 好戏就要开始了</text>
+	</string>
+	<string id="jup_b19_freedom_yar_explanations">
+		<text>所以, 就是这样. 我知道你有一大堆问题, 我也能理解. 我们谈一谈, 好吗?</text>
+	</string>
+	<string id="jup_b19_freedom_yar_guessed_long">
+		<text>看来我还是对的. 僵尸会掩护我们, 把那些混蛋打趴下!</text>
+	</string>
+	<string id="jup_b19_freedom_yar_guessed_short">
+		<text>看来我还是对的. 把那些混蛋打趴下!</text>
+	</string>
+	<string id="jup_b19_freedom_yar_suspense">
+		<text>让我们看看我是不是对的</text>
+	</string>
+	<string id="jup_b19_freedom_yar_zombie_hit">
+		<text>你为什么那样做? 他没碰你吧. 该死的!</text>
+	</string>
+	<string id="jup_b202_bandit_pda">
+		<text>"匪王"苏坦, 我把那个失败者处理得很好. 这样他就不会惹我们了</text>
+	</string>
+	<string id="jup_b202_bandit_to_snag">
+		<text>"匪王"苏坦向你问候. 出来迎接, 低劣人!</text>
+	</string>
+	<string id="jup_b202_snag_pda">
+		<text>我得离开这些混蛋, 越快越好. 我藏在变电站后面的赃物应该够我用一段时间了. 是时候继续前进了. 我相信他们已经在找我了. 不过没关系. 看最后谁赢谁输</text>
+	</string>
+	<string id="jup_b207_duty_guards_warning_actor">
+		<text>嘿! 滚出去! 纪律团领地</text>
+	</string>
+	<string id="jup_b207_duty_leader_about_depot">
+		<text>加夫里伦科! 我发现了仓库的事. 是自由军, 他们应该有很人. 带上你的小队, 我们很快就能搞定那些小混混</text>
+	</string>
+	<string id="jup_b207_duty_leader_about_depot_after">
+		<text>如果证实了, 你就能进入仓库了</text>
+	</string>
+	<string id="jup_b207_duty_security_squad_to_freedom_leave">
+		<text>自由军, 请注意! 这里是纪律团的领地. 离仓库远点!</text>
+	</string>
+	<string id="jup_b207_duty_security_squad_to_freedom_start_attack">
+		<text>杂种...! 是他们自找的. 伙计们, 开始行动吧!</text>
+	</string>
+	<string id="jup_b207_freedom_guards_warning_actor">
+		<text>这不是公共场合, 小子. 你最好现在就走</text>
+	</string>
+	<string id="jup_b207_freedom_leader_about_depot">
+		<text>科里曼! 带你的人去仓库找海杜克. 那些纪律团混蛋随时会来拿他们的东西</text>
+	</string>
+	<string id="jup_b207_freedom_leader_about_depot_after">
+		<text>太棒了! 现在男孩们可以击退他们了. 我不会忘记帮你的忙, 所以你随时都可以用存放点. 我会让大家知道的</text>
+	</string>
+	<string id="jup_b207_freedom_recon_squad_refuse">
+		<text>当然了! 给我们一点时间去储备弹药</text>
+	</string>
+	<string id="jup_b212_trapper_found_chimera">
+		<text>嘿, 我是屠兽者. 我这里刚有个猎人昨晚看到了一只奇美拉. 根据描述, 这就是我们要找的那只. 来找我. 很重要</text>
+	</string>
+	<string id="jup_b217_stalker_guide_welcome">
+		<text>我们到了. 在尤皮特周边地区亚诺夫车站是一个相对安全的避风港. 这是我们分道扬镳的地方. 但如果你需要我, 就去酒吧找我</text>
+	</string>
+	<string id="jup_b217_stalker_tech_farewell_1">
+		<text>再见!</text>
+	</string>
+	<string id="jup_b217_stalker_tech_farewell_2">
+		<text>后会有期!</text>
+	</string>
+	<string id="jup_b217_stalker_tech_greeting_1">
+		<text>嘿这边!</text>
+	</string>
+	<string id="jup_b217_stalker_tech_greeting_2">
+		<text>喝点!</text>
+	</string>
+	<string id="jup_b217_stalker_tech_welcome">
+		<text>第一次来这里? 我自己也是新来的. 我叫阿佐特. 搞装备维修的. 可以修理任何东西. 但... 在这里找些好工具是个问题. 如果你看到什么, 直接带过来. 如果你需要任何技术帮助, 就来找我, 我很乐意为你做些事情</text>
+	</string>
+	<string id="jup_b219_actor_go">
+		<text>很好. 走</text>
+	</string>
+	<string id="jup_b219_actor_ready">
+		<text>大家都准备好了, 开干</text>
+	</string>
+	<string id="jup_b219_duty_ready">
+		<text>准备好了! 小队?</text>
+	</string>
+	<string id="jup_b219_duty_to_tech">
+		<text>安全!</text>
+	</string>
+	<string id="jup_b219_monolith_ready">
+		<text>也准备好了</text>
+	</string>
+	<string id="jup_b219_soldier_ready">
+		<text>我有种不好的预感</text>
+	</string>
+	<string id="jup_b219_stalker_ready">
+		<text>时刻准备着!</text>
+	</string>
+	<string id="jup_b219_tech_damn">
+		<text>嗨...! 来吧!</text>
+	</string>
+	<string id="jup_b219_tech_opening">
+		<text>收到. 开搞!</text>
+	</string>
+	<string id="jup_b219_tech_ready">
+		<text>准备好了?</text>
+	</string>
+	<string id="jup_b219_tech_success">
+		<text>好了! 这样就好</text>
+	</string>
+	<string id="jup_b219_tech_to_duty">
+		<text>祝大家好运!</text>
+	</string>
+	<string id="jup_b220_trapper_farewell_1">
+		<text>祝你今天好运!</text>
+	</string>
+	<string id="jup_b220_trapper_farewell_2">
+		<text>狩猎愉快!</text>
+	</string>
+	<string id="jup_b220_trapper_greeting_1">
+		<text>你好!</text>
+	</string>
+	<string id="jup_b220_trapper_greeting_2">
+		<text>近况如何?</text>
+	</string>
+	<string id="jup_b221_duty_main_1">
+		<text>嗯, 我提议为一群勇敢的纪律团战士干杯, 他们被派到前线去狠狠地打一顿穿着绿迷彩的败类的屁股</text>
+	</string>
+	<string id="jup_b221_duty_main_2">
+		<text>我给你讲过燧石的故事吗? 首先, 他坑了潜行者猎人, 让他们受到奇美拉的攻击, 然后他离开他的伙伴们神秘失踪了, 然后他加入了自由军. 我认为这没啥毛病. 所以我想说, 我们会为所有追随自由军的人干杯然后我们会照顾好任何不追随的人</text>
+	</string>
+	<string id="jup_b221_duty_main_3">
+		<text>让我们干杯吧, 即使在特异区的中心, 也有人愿意为纪律团效力. 致我们的新成员!</text>
+	</string>
+	<string id="jup_b221_duty_main_4">
+		<text>我举杯向这个事实致敬: 研究研究综合体现在已经受到完备的保护, 免受变异生物、无政府主义者和其他人渣的侵害</text>
+	</string>
+	<string id="jup_b221_duty_main_5">
+		<text>伙计们! 让我们举杯向我们勇敢的志愿者致敬, 他们为了科学的进步在特异区最危险的一些地方进行了测量</text>
+	</string>
+	<string id="jup_b221_duty_main_6">
+		<text>我提议为那些勇敢地击退了肮脏小混混们的懦弱攻击的纪律团战士们干杯</text>
+	</string>
+	<string id="jup_b221_duty_reaction_1">
+		<text>没错!</text>
+	</string>
+	<string id="jup_b221_duty_reaction_2">
+		<text>完整正确!</text>
+	</string>
+	<string id="jup_b221_duty_reaction_3">
+		<text>说得好!</text>
+	</string>
+	<string id="jup_b221_duty_reaction_4">
+		<text>同意得不能再同意了</text>
+	</string>
+	<string id="jup_b221_duty_reply_1">
+		<text>他已经死了. 如果让我来做决定, 我会让你们都照做. 让你们不要再因为贪婪而买卖特异区的东西</text>
+	</string>
+	<string id="jup_b221_duty_reply_2">
+		<text>没有人知道到底发生了什么事. 又不是你亲眼看到的</text>
+	</string>
+	<string id="jup_b221_duty_reply_3">
+		<text>那是一支黑石小队吗? 我希望你还能找到一支吸血怪小队, 因为一旦你找到了它们, 中校肯定会把你列入危险怪物名单</text>
+	</string>
+	<string id="jup_b221_duty_reply_4">
+		<text>哈! 你们这些家伙. 就在去年佣兵们让你们夹着尾巴在黑谷里跑来跑去. 忘了?</text>
+	</string>
+	<string id="jup_b221_duty_reply_5">
+		<text>嗯, 我可以想象生态学家们得到的读数. 空气样本成分: 100%的烟, 水样本成分: 100%的伏特加, 还有那白痴般的笑声</text>
+	</string>
+	<string id="jup_b221_duty_reply_6">
+		<text>没关系. 我们会拿回武器的. 你们这些家伙养成了一个好习惯, 只要碰到我们的战士就扔掉武器和神器跑路. 我也不怪你们. 我知道那很难, 所以你们的裤子为何总是这么臭?</text>
+	</string>
+	<string id="jup_b221_freedom_main_1">
+		<text>伙计! 你知道纪律团是如何坚守其准则的吗? 以军火官摩根为例, 他在严格维护阵营好感的前提下把纪律团一半的军火都卖掉了</text>
+	</string>
+	<string id="jup_b221_freedom_main_2">
+		<text>哈! 还记得吗? 纪律团的严苛准则是由塔琴科将军制定的. 他欺骗了同志们, 误导了指挥部, 还勇敢地在空间泡中死去. 让我们为所有追随他的人干杯</text>
+	</string>
+	<string id="jup_b221_freedom_main_3">
+		<text>你知道, 当我第一次看到我们的新小队时, 我问他们: '伙计们, 你们真愿意加入我们吗? 在自由军你们可以随心所欲. "你知道的, 他们对我说, '不, 谢谢. 对他们来说, 一切都是为了"指引". 难怪他们的眼睛是空的. 我们受够了那些僵尸.'</text>
+	</string>
+	<string id="jup_b221_freedom_main_4">
+		<text>一位纪律团成员走到我们的一位伙计面前, 走进碉堡, 问他: "教授, 您能告诉我哪一种神器最适合用来打野猪吗?" 珊瑚石可以保护你免受辐射, 天目石可以帮助你治疗伤口. "你知道答案是什么吗?" "你需要的是钙藻石, 伙计. 如果你看到野猪, 那就尽快跑回你的基地." 哈哈!</text>
+	</string>
+	<string id="jup_b221_freedom_main_5">
+		<text>各位, 你们知道生态学家是怎么让我们的伙计们去测量异常点的吗? 他们先去见苏尔加, 然后对他说'有一项需要为科学界造福的工作.' 他说 '没问题. 我要杀掉谁?'</text>
+	</string>
+	<string id="jup_b221_freedom_main_6">
+		<text>随着日子一天天过去, 我对纪律团那事的认识越来越透彻. 我的意思是, 还有谁会把一整个仓库塞满武器和弹药, 然后送给自由军呢?他们真是太好了, 你说呢?</text>
+	</string>
+	<string id="jup_b221_freedom_reaction_1">
+		<text>[大笑]</text>
+	</string>
+	<string id="jup_b221_freedom_reaction_2">
+		<text>[大笑]</text>
+	</string>
+	<string id="jup_b221_freedom_reaction_3">
+		<text>[大笑]</text>
+	</string>
+	<string id="jup_b221_freedom_reaction_4">
+		<text>[大笑]</text>
+	</string>
+	<string id="jup_b221_freedom_reply_1">
+		<text>是吗? 嗯, 我好像还记得你那勇敢的小队是如何在能量风暴来临前跪着请求进入亚诺夫的</text>
+	</string>
+	<string id="jup_b221_freedom_reply_2">
+		<text>每个人都知道. 纪律团是伪君子的天堂. "我们将保护世界不受特异区的侵害", 就在我们收集了一些神器之后</text>
+	</string>
+	<string id="jup_b221_freedom_reply_3">
+		<text>好主意. 狂热分子就得像狂热分子. 你也应该穿上黑石的制服. 以免潜行者把你当成人类</text>
+	</string>
+	<string id="jup_b221_freedom_reply_4">
+		<text>变异生物? 你确定当变异生物大量出现的时候碉堡还有足够的空间吗? 又不能像辐射100那样, 关着它们等着衰变</text>
+	</string>
+	<string id="jup_b221_freedom_reply_5">
+		<text>如果你的志愿者喝得像你一样多, 我只能想象生态学家得到的读数会是啥样子</text>
+	</string>
+	<string id="jup_b221_freedom_reply_6">
+		<text>是的, 没错. 警卫能带多少带多少. 现在有一半的人都知道你们的军火库, 所以更要警惕</text>
+	</string>
+	<string id="jup_b25_revage_senya">
+		<text>坚持住...! 找到他! 最后关头还没... 啊...</text>
+	</string>
+	<string id="jup_b25_story_artefact">
+		<text>你真该看看我前几天搞到的这个神器, 就这东西. 你知道采石场的事吗? 嗯. 曾经美好的一切如今都不存在了. 燧石查过的变异现象没有意义. 大家都知道</text>
+	</string>
+	<string id="jup_b25_story_bloodsucker">
+		<text>我告诉你一些关于吸血怪的事. 我在扎顿的时候, 那些混蛋把人们折腾的要死. 潜行者们日夜不停地追踪它们, 但无济于事. 该死的混蛋. 有一天, 我决定帮助他们. 于是我拿起猎枪, 直奔那个吸血怪的巢穴. 我和那些狗娘养的一起开了三天的派对, 有时一次要面对两三个. 在和它们度过一段美好时光后, 扎顿的吸血怪问题几乎没了. 这些杂种总是把触角缩成一团</text>
+	</string>
+	<string id="jup_b25_story_controller">
+		<text>好吧, 我来告诉你怎么杀死摄魂怪. 前几天我偶然看到一堆神器, 决定趁它们还在路上的时候把神器藏起来, 因为我的要应付不了了. 在回去的路上, 我找到了我的藏匿处, 那里有一只摄魂怪在休息. 我心里想, '管他摄魂怪不摄魂怪, 我得把我的东西拿回来.' 然后我意识到, 如果我拿什么东西来挡, 这狗屁操作根本不起作用. 所以, 我拿起一个附近发现的金属格栅, 开始偷偷靠近那只野兽. 在它醒过来的时候我给那混蛋的脑袋开了一枪. 就在它开始试图控制我的时候, 我用枪托给了它最后一击, 就这样</text>
+	</string>
+	<string id="jup_b25_story_first_reac_1">
+		<text>啊! 这才是真正的故事, 燧石</text>
+	</string>
+	<string id="jup_b25_story_first_reac_2">
+		<text>燧石是条汉子, 必须的</text>
+	</string>
+	<string id="jup_b25_story_first_reac_3">
+		<text>是... 不错</text>
+	</string>
+	<string id="jup_b25_story_guide">
+		<text>我相信你知道从扎顿出发的路... 是吧? 导游过去经常绕道而行. 我所做的是通过直线穿越创造出一条捷径, 一个新颖的想法. 我试了几个地方, 很快找到了穿过异常点的路. 所以我把那些信息卖给了向导现在他带着所有人走那条路</text>
+	</string>
+	<string id="jup_b25_story_oasis">
+		<text>你听说过绿洲吗? 你肯定听说过. 另一方面, 我确实去过那里. 我是第一个找到到达那里方法的人, 可以说是先驱. 那里没有变异生物或者操蛋的异常点. 它安静得像墓地, 而且到处都是神器. 几天前我还在那里. 星期日, 你知道吗... 带你去? 哈! 抱歉, 但我不想太多人知道. 不是针对你</text>
+	</string>
+	<string id="jup_b25_story_scientist">
+		<text>我有很多故事要讲. 我跟你说过我为生态学家工作的经历吗? 所以有一天我去了他们的碉堡, 很好奇地想知道他们在那里做什么. 一开始他们都很震惊. 但接着他们说, '你正是我们现在需要的人.' 原来他们想把设备放在异常点下. 显然, 那些卵蛋头们不想自己动手, 所以他们答应给我现金和其他好东西. 所以我就想, '好吧, 这很好, 但最好是值得的!' 我不得不在那个地方爬来爬去找异常点, 但这还没有让那些卵蛋头掏钱的一半难</text>
+	</string>
+	<string id="jup_b25_story_second_reac_1">
+		<text>很酷的故事!</text>
+	</string>
+	<string id="jup_b25_story_second_reac_2">
+		<text>是啊!</text>
+	</string>
+	<string id="jup_b25_story_second_reac_3">
+		<text>牛逼!</text>
+	</string>
+	<string id="jup_b25_story_zaton">
+		<text>可能有几个人认为燧石在说谎. 他们可以向基地里的任何人打听我. 甚至是职业猎人, 有一天, 当他们看到我的时候, 他们都说, '我们需要你, 燧石. 没有你我们做不到.' 他们在捉奇美拉, 所以我必须向这些'专业人士'展示怎么做. 我的弹药很简单. 我直接进入老巢. 他们在入口处留了个菜鸟来监视. 当然, 第二天早上, 这个新手一看到野兽就尿裤子跑了, 所以我不得不自己处理这件事. 如你所见, 成功了, 呵-呵-呵...</text>
+	</string>
+	<string id="jup_b4_duty_squad_leader_align">
+		<text>集合!</text>
+	</string>
+	<string id="jup_b4_duty_squad_leader_align_line">
+		<text>列队, 快!</text>
+	</string>
+	<string id="jup_b4_duty_squad_leader_final">
+		<text>恭喜你加入纪律团! 跟我来! 左, 右, 左, 右...</text>
+	</string>
+	<string id="jup_b4_duty_squad_leader_praise">
+		<text>看到了吗? 你想什么时候做就什么时候做. 该宣誓了</text>
+	</string>
+	<string id="jup_b4_duty_squad_leader_speech">
+		<text>你是否发誓以勇气和正直为纪律团服务, 保护人类免受特异区的侵略, 并始终遵循这一准则?</text>
+	</string>
+	<string id="jup_b4_freedom_squad_leader_any_questions">
+		<text>有什么想问吗?</text>
+	</string>
+	<string id="jup_b4_freedom_squad_leader_lets_talk">
+		<text>你为什么要站着? 坐下来谈谈吧!</text>
+	</string>
+	<string id="jup_b4_freedom_squad_leader_reply">
+		<text>我们没有严格的等级制度. 赢得我们的尊重, 你就会有很多追随者. 然而, 当执行任务时, 我们毫无疑问地服从指挥官的命令</text>
+	</string>
+	<string id="jup_b4_freedom_squad_leader_speech">
+		<text>我们尊重我们的成员和其他潜行者的自由, 我们相信特异区是向所有人开放的. 作为人类有史以来收到的最好的礼物, 这是一个在我们的发展中取得巨大飞跃的机会, 每个人都需要理解这一点</text>
+	</string>
+	<string id="jup_b4_freedom_squad_leader_welcome_to_freedom">
+		<text>欢迎来到自由军!</text>
+	</string>
+	<string id="jup_b4_monolith_1_ask_to_freedom">
+		<text>谁来指挥我们呢?</text>
+	</string>
+	<string id="jup_b4_monolith_squad_leader_meet">
+		<text>潜行者! 你能过来一下吗?</text>
+	</string>
+	<string id="jup_b4_monolith_talk_to_commander_1">
+		<text>你最好和神行客谈谈</text>
+	</string>
+	<string id="jup_b4_monolith_talk_to_commander_2">
+		<text>你应该和神行客谈谈</text>
+	</string>
+	<string id="jup_b4_monolith_talking_1_1">
+		<text>我们可以在这里坐一整天, 但那不会有任何结果</text>
+	</string>
+	<string id="jup_b4_monolith_talking_1_2">
+		<text>这里除了变异生物什么都没有</text>
+	</string>
+	<string id="jup_b4_monolith_talking_1_3">
+		<text>我们要去哪里?</text>
+	</string>
+	<string id="jup_b4_monolith_talking_5_1">
+		<text>我们要做的第一件事就是搞清楚我们到底在哪儿</text>
+	</string>
+	<string id="jup_b4_monolith_talking_5_2">
+		<text>我们需要找到人</text>
+	</string>
+	<string id="jup_b4_monolith_talking_5_3">
+		<text>不管我们做什么, 我们都完蛋了</text>
+	</string>
+	<string id="jup_b4_recruit_1_cool_freedom">
+		<text>酷!</text>
+	</string>
+	<string id="jup_b4_recruit_1_serve_duty">
+		<text>我们发誓!</text>
+	</string>
+	<string id="jup_b4_recruit_2_cool_freedom">
+		<text>太棒了! 这正是我们需要的</text>
+	</string>
+	<string id="jup_b4_recruit_2_serve_duty">
+		<text>我们发誓!</text>
+	</string>
+	<string id="jup_b41_base_alarm">
+		<text>注意, 注意! 这里是赫曼, 科学实验室正遭受攻击, 暂时不会让潜行者进入</text>
+	</string>
+	<string id="jup_b41_base_relax">
+		<text>注意, 注意! 这里是赫曼, 我们的移动实验室再次对潜行者开放了</text>
+	</string>
+	<string id="jup_b41_bunker_megaphone_1">
+		<text>潜行者! 我必须警告你, 禁止持枪进入碉堡</text>
+	</string>
+	<string id="jup_b41_bunker_megaphone_2">
+		<text>潜行者! 如果你要进入研究设施的话就必须把枪收好</text>
+	</string>
+	<string id="jup_b41_bunker_megaphone_3">
+		<text>你听到了没? 把枪收好!</text>
+	</string>
+	<string id="jup_b46_duty_founder_pda_diary">
+		<text>...不管我们走哪条路, 最后都是在同一个地方. 我还是不习惯这种雾. 谢普洛消失得无影无踪, 真奇怪. 也许他找到了出路. ... 第六天. 我们的水用完了. 上校勃然大怒, 近距离射杀了两个人, 然后自杀了. 现在我一个人在这破异常点里了. 如果不是我解决了和总部的通讯问题, 他们就能救我们了. 还有纪律团就不会存在了. 我想知道事情会变成什么样子. ... 啊, 管他呢! 那个特卡琴科上尉死了很久了. 而且这个纪律团的特卡琴科将军会跟随他. 这就是正义, 我猜</text>
+	</string>
+	<string id="jup_b46_spatial_bubble_sos_1">
+		<text>...找到出路. 救命! 我们快没有...</text>
+	</string>
+	<string id="jup_b46_spatial_bubble_sos_2">
+		<text>...更久. 我们已经断水两天了. 请求救援! 救...</text>
+	</string>
+	<string id="jup_b46_spatial_bubble_sos_3">
+		<text>...需要立即救援! 我们坚持不了三...</text>
+	</string>
+	<string id="jup_b47_merc_leader_regret">
+		<text>你不应该来这里, 潜行者! 现在你只能喂虫了</text>
+	</string>
+	<string id="jup_b6_scientist_biochemist_farewell_1">
+		<text>下次见!</text>
+	</string>
+	<string id="jup_b6_scientist_biochemist_farewell_2">
+		<text>别见外!</text>
+	</string>
+	<string id="jup_b6_scientist_biochemist_greeting_1">
+		<text>你好! 在碉堡里看到张新面孔可真好</text>
+	</string>
+	<string id="jup_b6_scientist_biochemist_greeting_2">
+		<text>噢... 你好!</text>
+	</string>
+	<string id="jup_b6_scientist_medic_farewell_1">
+		<text>祝你狩猎愉快!</text>
+	</string>
+	<string id="jup_b6_scientist_medic_farewell_2">
+		<text>再会!</text>
+	</string>
+	<string id="jup_b6_scientist_medic_greeting_1">
+		<text>你好!</text>
+	</string>
+	<string id="jup_b6_scientist_medic_greeting_2">
+		<text>嘿!</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_farewell_1">
+		<text>感谢你能抽空来</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_farewell_2">
+		<text>还有什么事吗? 再见</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_greeting_1">
+		<text>啊... 很好, 过来吧. 我能为你做什么?</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_greeting_2">
+		<text>嗯, 我听着呢</text>
+	</string>
+	<string id="jup_b6_stalker_1_first_measurement_begin">
+		<text>来, 赶快开工. 我们完成得越快, 活下去的机会就越大</text>
+	</string>
+	<string id="jup_b6_stalker_1_first_measurement_done">
+		<text>阿尔法, 贝塔和伽马辐射的读数获取中</text>
+	</string>
+	<string id="jup_b6_stalker_1_first_measurement_in_progress">
+		<text>读数获取中!</text>
+	</string>
+	<string id="jup_b6_stalker_1_fourth_measurement_done">
+		<text>挠场扫描完成</text>
+	</string>
+	<string id="jup_b6_stalker_1_fourth_measurement_in_progress">
+		<text>我们快好了. 挠场扫描马上完成</text>
+	</string>
+	<string id="jup_b6_stalker_1_measurements_done">
+		<text>我们完成了, 潜行者. 现在我们离开这里吧!</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_1">
+		<text>嘿! 你是在掩护我们吗?</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_2">
+		<text>注意, 潜行者! 掩护我们!</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_3">
+		<text>嘿! 你在干嘛?!</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_4">
+		<text>潜行者! 他们来了! 帮我们!</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_5">
+		<text>潜行者! 你到底在干什么?!</text>
+	</string>
+	<string id="jup_b6_stalker_1_monsters_coming_6">
+		<text>他们攻击我们! 潜行者, 搞什么...</text>
+	</string>
+	<string id="jup_b6_stalker_1_second_measurement_done">
+		<text>电磁场扫描完成</text>
+	</string>
+	<string id="jup_b6_stalker_1_second_measurement_in_progress">
+		<text>正在进行电磁场扫描</text>
+	</string>
+	<string id="jup_b6_stalker_1_third_measurement_done">
+		<text>所有范围的声学数据</text>
+	</string>
+	<string id="jup_b6_stalker_1_third_measurement_in_progress">
+		<text>目前已收集了两个范围的声学数据</text>
+	</string>
+	<string id="jup_b9_blackbox_records">
+		<text>呼叫, 鳐鱼-4号! 呼叫, 他妈的! 鳐鱼-4号, 收到吗? ... 鳐鱼集团, 请注意! 这里是鳐鱼-1号. 紧急疏散地点是B-2-8. 重复, B-2-8!</text>
+	</string>
+	<string id="jup_b9_heli_1_blackbox">
+		<text>两具尸体... 看起来他们死于坠机. ... 所有有价值的东西都被洗劫一空,  机载计算机也被清空. 但黑匣子仍然完好无损. ... 有意思. ... 我估计一个好技术人员能提取出里面的信息然后解码</text>
+	</string>
+
+	<!-- Underpass -->
+	<string id="pas_b400_sokolov_about_control_gates_1">
+		<text>它锁死了, 也没有按钮. 得有人去控制室打开它</text>
+	</string>
+	<string id="pas_b400_sokolov_about_cover_1">
+		<text>我在这等着, 掩护我们, 好吗?</text>
+	</string>
+	<string id="pas_b400_sokolov_about_dome_1">
+		<text>干, 我就知道我们不该来这里</text>
+	</string>
+	<string id="pas_b400_sokolov_about_door_1">
+		<text>站在这里毫无意义, 这是肯定的</text>
+	</string>
+	<string id="pas_b400_sokolov_about_elevator_1">
+		<text>太棒了! 牛逼!</text>
+	</string>
+	<string id="pas_b400_sokolov_about_exit_1">
+		<text>我们成功了</text>
+	</string>
+	<string id="pas_b400_sokolov_about_gates">
+		<text>所以... 按一下按钮怎么样?</text>
+	</string>
+	<string id="pas_b400_sokolov_about_railway_1">
+		<text>他娘的! 大门没通电</text>
+	</string>
+	<string id="pas_b400_sokolov_about_sniper_first_1">
+		<text>小心! 这里不对劲</text>
+	</string>
+	<string id="pas_b400_sokolov_about_snorks_1">
+		<text>操!</text>
+	</string>
+	<string id="pas_b400_sokolov_about_snorks_2">
+		<text>干!</text>
+	</string>
+	<string id="pas_b400_sokolov_about_snorks_3">
+		<text>妈的, 这玩意儿一刻不消停</text>
+	</string>
+	<string id="pas_b400_sokolov_about_train_1">
+		<text>嗯... 有点不对劲</text>
+	</string>
+	<string id="pas_b400_sokolov_about_train_gates_1">
+		<text>嗯... 这里也感觉不对劲</text>
+	</string>
+	<string id="pas_b400_sokolov_about_transformer_1">
+		<text>你小心点, 好吗?</text>
+	</string>
+	<string id="pas_b400_sokolov_about_tushkano_1">
+		<text>我有一种奇怪的感觉, 而且是不好的那种</text>
+	</string>
+	<string id="pas_b400_sokolov_come_back_1">
+		<text>嘿! 那我们到底走还是不走?</text>
+	</string>
+	<string id="pas_b400_sokolov_idle_1">
+		<text>我为什么要掺和进来?</text>
+	</string>
+	<string id="pas_b400_sokolov_idle_2">
+		<text>这地方见鬼去吧! 我等不及要离开这里了</text>
+	</string>
+	<string id="pas_b400_sokolov_idle_3">
+		<text>尽说些屁话. '别担心, 很容易驾驶的.' 去你丫的!</text>
+	</string>
+	<string id="pas_b400_sokolov_no_meet_1">
+		<text>安静! 保持安静!</text>
+	</string>
+	<string id="pas_b400_sokolov_no_meet_2">
+		<text>我们出去后再谈</text>
+	</string>
+	<string id="pas_b400_sokolov_no_meet_3">
+		<text>现在不是说话的时候</text>
+	</string>
+	<string id="pas_b400_sokolov_on_actor_assault_1">
+		<text>你疯了吗?!</text>
+	</string>
+	<string id="pas_b400_sokolov_on_actor_hit_1">
+		<text>嗷... 你用屁眼瞄准吗, 别瞎打!</text>
+	</string>
+	<string id="pas_b400_sokolov_on_actor_hit_2">
+		<text>嗷... 停! 我受伤了!</text>
+	</string>
+	<string id="pas_b400_sokolov_on_actor_hit_3">
+		<text>呃... 日你个疯子!</text>
+	</string>
+	<string id="pas_b400_sokolov_on_death_1">
+		<text>[索科洛夫死亡]</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_assault_vano_1">
+		<text>瓦诺死了</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_assault_wanderer_1">
+		<text>神行客被杀了</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_assault_zulus_1">
+		<text>祖鲁倒下了</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_hit_1">
+		<text>[索科洛夫受伤]</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_hit_2">
+		<text>[索科洛夫受伤]</text>
+	</string>
+	<string id="pas_b400_sokolov_on_enemy_hit_3">
+		<text>[索科洛夫受伤]</text>
+	</string>
+	<string id="pas_b400_sokolov_wait_for_me_1">
+		<text>回来! 危险!</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_first_1">
+		<text>喂, 这里有给异常点</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_first_2">
+		<text>看看是否有办法绕过去</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_first_3">
+		<text>来! 我找到条路</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_1">
+		<text>另外一个异常点. 看看</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_2">
+		<text>嗯... 走这条肯定能上天</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_second_3">
+		<text>Okay, 这里有条路. 希望路的另一头没那么阴间</text>
+	</string>
+	<string id="pas_b400_vano_about_anomaly_third_1">
+		<text>Okay, 走吧</text>
+	</string>
+	<string id="pas_b400_vano_about_control_gates_1">
+		<text>所以... 大门被堵住了? 嗯... 也许... 可以从控制室打开?</text>
+	</string>
+	<string id="pas_b400_vano_about_cover_1">
+		<text>继续前进, 老兄! 我掩护你的后方. 不用担心</text>
+	</string>
+	<string id="pas_b400_vano_about_dome_1">
+		<text>我两个去... 真他妈漂亮!</text>
+	</string>
+	<string id="pas_b400_vano_about_door_1">
+		<text>那边的门开着. 我们走那条路好吗?</text>
+	</string>
+	<string id="pas_b400_vano_about_gates">
+		<text>看! 是不是要按这个按钮?</text>
+	</string>
+	<string id="pas_b400_vano_about_railway_1">
+		<text>停电了, 哈-哈...</text>
+	</string>
+	<string id="pas_b400_vano_about_room_closed">
+		<text>嘿! 不要去那里! 封住了</text>
+	</string>
+	<string id="pas_b400_vano_about_room_open">
+		<text>看! 现在打开了!</text>
+	</string>
+	<string id="pas_b400_vano_about_sniper_first_1">
+		<text>枪口火焰在右边... 不对... 左边</text>
+	</string>
+	<string id="pas_b400_vano_about_snorks_1">
+		<text>Nice, 全干掉了</text>
+	</string>
+	<string id="pas_b400_vano_about_transformer_1">
+		<text>听我说, 这东西上应该有给启动杠杆</text>
+	</string>
+	<string id="pas_b400_vano_about_underpass">
+		<text>那... 走不走?</text>
+	</string>
+	<string id="pas_b400_vano_come_back_1">
+		<text>兄弟! 别浪费时间. 此地不宜久留</text>
+	</string>
+	<string id="pas_b400_vano_idle_1">
+		<text>这里也没那么糟... 我觉得</text>
+	</string>
+	<string id="pas_b400_vano_idle_2">
+		<text>有忠诚的朋友在身边, 这事也没那么糟</text>
+	</string>
+	<string id="pas_b400_vano_idle_3">
+		<text>决定跟着你真的没错. 不然我怎么会看到这样的地方?</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_1">
+		<text>我们以后再谈, 伙计</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_2">
+		<text>听着, 现在不是聊天的好时机</text>
+	</string>
+	<string id="pas_b400_vano_no_meet_3">
+		<text>讲真, 现在不是说话的时候, 也不是说话的地方</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_assault_1">
+		<text>我尼玛!</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_1">
+		<text>为什么, 伙计? 为什么?...</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_2">
+		<text>我不是敌人, 我去!</text>
+	</string>
+	<string id="pas_b400_vano_on_actor_hit_3">
+		<text>你他妈完了!</text>
+	</string>
+	<string id="pas_b400_vano_on_death_1">
+		<text>[瓦诺死亡]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_sokolov_1">
+		<text>我们的军队朋友死了</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_wanderer_1">
+		<text>我们的黑石同志被杀了</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_assault_zulus_1">
+		<text>是祖鲁! 他死了</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_1">
+		<text>[瓦诺受伤]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_2">
+		<text>[瓦诺受伤]</text>
+	</string>
+	<string id="pas_b400_vano_on_enemy_hit_3">
+		<text>[瓦诺受伤]</text>
+	</string>
+	<string id="pas_b400_vano_wait_for_me_1">
+		<text>嘿, 兄弟! 你要去哪里? 让我们一起来解决这个问题!</text>
+	</string>
+	<string id="pas_b400_wanderer_about_control_gates_1">
+		<text>大门被封锁了. 如果我是你, 我就去控制室看看</text>
+	</string>
+	<string id="pas_b400_wanderer_about_cover_1">
+		<text>我留在这里掩护入口</text>
+	</string>
+	<string id="pas_b400_wanderer_about_door_1">
+		<text>门开着. 我们可以走了吗?</text>
+	</string>
+	<string id="pas_b400_wanderer_about_gates">
+		<text>你得按下按钮</text>
+	</string>
+	<string id="pas_b400_wanderer_about_monolith_1">
+		<text>这里太开阔了. 快走!</text>
+	</string>
+	<string id="pas_b400_wanderer_about_railway_1">
+		<text>看来大门没有通电</text>
+	</string>
+	<string id="pas_b400_wanderer_about_sniper_first_1">
+		<text>干了他们</text>
+	</string>
+	<string id="pas_b400_wanderer_about_sniper_first_2">
+		<text>烤了他们</text>
+	</string>
+	<string id="pas_b400_wanderer_about_snorks_1">
+		<text>我来对付这些混蛋</text>
+	</string>
+	<string id="pas_b400_wanderer_about_transformer_1">
+		<text>一个变压器. 我从小就记得这些</text>
+	</string>
+	<string id="pas_b400_wanderer_about_underpass">
+		<text>快走!</text>
+	</string>
+	<string id="pas_b400_wanderer_come_back_1">
+		<text>这里可不是游手好闲的好地方, 走吧!</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_1">
+		<text>安静. 太安静了</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_2">
+		<text>我想我曾经来过这里. 我不确定</text>
+	</string>
+	<string id="pas_b400_wanderer_idle_3">
+		<text>奇怪... 这地方的一切都很奇怪</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_1">
+		<text>闭嘴, 好吗?!</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_2">
+		<text>安静, 大哥</text>
+	</string>
+	<string id="pas_b400_wanderer_no_meet_3">
+		<text>我... 我不想说话</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_assault_1">
+		<text>叛徒!</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_1">
+		<text>呜, 没... 必要</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_2">
+		<text>我建议你别再继续!</text>
+	</string>
+	<string id="pas_b400_wanderer_on_actor_hit_3">
+		<text>呜... 我警告过你!</text>
+	</string>
+	<string id="pas_b400_wanderer_on_death_1">
+		<text>[神行客死亡]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_sokolov_1">
+		<text>索科洛夫死了</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_vano_1">
+		<text>瓦诺没了</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_assault_zulus_1">
+		<text>祖鲁被杀了</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_1">
+		<text>[神行客受伤]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_2">
+		<text>[神行客受伤]</text>
+	</string>
+	<string id="pas_b400_wanderer_on_enemy_hit_3">
+		<text>[神行客受伤]</text>
+	</string>
+	<string id="pas_b400_wanderer_wait_for_me_1">
+		<text>别冲上去! 守在这儿</text>
+	</string>
+	<string id="pas_b400_zulus_about_control_gates_1">
+		<text>大门被堵住了, 这里也没有按钮. 谁想去控制室看看有没有什么有用的?</text>
+	</string>
+	<string id="pas_b400_zulus_about_cover_1">
+		<text>兄弟们, 继续前进! 我殿后</text>
+	</string>
+	<string id="pas_b400_zulus_about_door_1">
+		<text>好了, 道路已经畅通了. 我们走!</text>
+	</string>
+	<string id="pas_b400_zulus_about_exit_1">
+		<text>看起来我们在普里皮亚奇的下面</text>
+	</string>
+	<string id="pas_b400_zulus_about_gates">
+		<text>按按钮, 兄弟!</text>
+	</string>
+	<string id="pas_b400_zulus_about_monolith_1">
+		<text>背靠背, 快!</text>
+	</string>
+	<string id="pas_b400_zulus_about_monolith_2">
+		<text>日!</text>
+	</string>
+	<string id="pas_b400_zulus_about_obstacle_1">
+		<text>嗯... 看来直达路线行不通了</text>
+	</string>
+	<string id="pas_b400_zulus_about_obstacle_2">
+		<text>不用担心. 真正的男人经常走后门</text>
+	</string>
+	<string id="pas_b400_zulus_about_outfits_1">
+		<text>至少防护服能派上用场</text>
+	</string>
+	<string id="pas_b400_zulus_about_railway_1">
+		<text>嗯... 门上的电源被切断了</text>
+	</string>
+	<string id="pas_b400_zulus_about_sniper_first_1">
+		<text>狙击手!</text>
+	</string>
+	<string id="pas_b400_zulus_about_snorks_1">
+		<text>冷静. 开火!</text>
+	</string>
+	<string id="pas_b400_zulus_about_train_gates_1">
+		<text>嗯, 兄弟... 大干一场吧!</text>
+	</string>
+	<string id="pas_b400_zulus_about_train_gates_2">
+		<text>以卵击石, 不堪一击</text>
+	</string>
+	<string id="pas_b400_zulus_about_transformer_1">
+		<text>这看起来像变压器. 不知道是不是所有线路都被激活了</text>
+	</string>
+	<string id="pas_b400_zulus_about_underpass">
+		<text>动起来!</text>
+	</string>
+	<string id="pas_b400_zulus_come_back_1">
+		<text>兄弟们, 跟上! 我们必须继续前进</text>
+	</string>
+	<string id="pas_b400_zulus_idle_1">
+		<text>好一个地方, 伙计</text>
+	</string>
+	<string id="pas_b400_zulus_idle_2">
+		<text>真是一团糟! 你在我们基地干这种事会被揍的</text>
+	</string>
+	<string id="pas_b400_zulus_idle_3">
+		<text>这地方不是桑迪海滩, 那是肯定的</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_1">
+		<text>没时间开玩笑了, 兄弟</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_2">
+		<text>等这事结束了我们再谈</text>
+	</string>
+	<string id="pas_b400_zulus_no_meet_3">
+		<text>别闲聊了, 集中注意力!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_assault_1">
+		<text>嘿! 他是我的朋友!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_1">
+		<text>呃! 你到底在干什么?!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_2">
+		<text>哎呀! 喂, 别啊!</text>
+	</string>
+	<string id="pas_b400_zulus_on_actor_hit_3">
+		<text>呃! 嘿, 我不能忍受这种事!</text>
+	</string>
+	<string id="pas_b400_zulus_on_death_1">
+		<text>[祖鲁死亡]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_sokolov_1">
+		<text>索科洛夫倒下了!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_vano_1">
+		<text>瓦诺倒下了!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_assault_wanderer_1">
+		<text>神行客倒下了!</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_1">
+		<text>[祖鲁受伤]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_2">
+		<text>[祖鲁受伤]</text>
+	</string>
+	<string id="pas_b400_zulus_on_enemy_hit_3">
+		<text>[祖鲁受伤]</text>
+	</string>
+	<string id="pas_b400_zulus_wait_for_me_1">
+		<text>兄弟们, 回来! 这次任务不需要侦察员</text>
+	</string>
+
+	<!-- Pripyat -->
+	<string id="pri_a15_actor_introduce">
+		<text>我是乌克兰安全局的德格捷列夫, 我正在调查坦途行动的失败原因</text>
+	</string>
+	<string id="pri_a15_actor_introduce_squad">
+		<text>潜行者们帮助我到达普里皮亚奇</text>
+	</string>
+	<string id="pri_a15_actor_leave_him">
+		<text>放了他, 上尉</text>
+	</string>
+	<string id="pri_a15_actor_need_talk_with_commander">
+		<text>我有消息要告诉科瓦斯基. 带我去见他</text>
+	</string>
+	<string id="pri_a15_army_go">
+		<text>跟我来!</text>
+	</string>
+	<string id="pri_a15_army_go_with_me">
+		<text>Okay. 跟我来</text>
+	</string>
+	<string id="pri_a15_army_hide_weapon">
+		<text>把你的武器放到地上, 马上!</text>
+	</string>
+	<string id="pri_a15_army_joke">
+		<text>你是个快活帮, 不是吗?</text>
+	</string>
+	<string id="pri_a15_army_leave">
+		<text>好吧, 去他的!</text>
+	</string>
+	<string id="pri_a15_army_stop">
+		<text>停!</text>
+	</string>
+	<string id="pri_a15_army_who_a_you">
+		<text>你是谁? 你和指挥官有什么关系?</text>
+	</string>
+	<string id="pri_a15_sokolov_conjecture">
+		<text>我就知道!</text>
+	</string>
+	<string id="pri_a15_sokolov_introduce">
+		<text>别开枪! 我是索科洛夫中尉, 鳐鱼-4号的副驾驶. 我在去B28紧急位置的路上</text>
+	</string>
+	<string id="pri_a15_sokolov_wonder">
+		<text>你认识科瓦斯基?</text>
+	</string>
+	<string id="pri_a15_vano_speech_one">
+		<text>你以为我们是来玩的吗? 为什么那么爱动枪? 你看不出来我们都是朋友吗? 我和德-德格... 经历了很多. 相信我</text>
+	</string>
+	<string id="prI_a15_wanderer_about_actor">
+		<text>我才不管谁在为谁卖命</text>
+	</string>
+	<string id="pri_a15_zulus_go">
+		<text>...或者乌克兰安全局</text>
+	</string>
+	<string id="pri_a15_zulus_no_business_with_army">
+		<text>我和军队没有任何关系...</text>
+	</string>
+	<string id="pri_a15_zulus_not_me">
+		<text>我不去</text>
+	</string>
+	<string id="pri_a15_zulus_wonder">
+		<text>乌克兰安全局?... 什么...?</text>
+	</string>
+	<string id="pri_a16_army_1_talk_to_commander_1">
+		<text>少校, 如果你需要什么就跟上校说</text>
+	</string>
+	<string id="pri_a16_army_1_talk_to_commander_2">
+		<text>你一定是在找上校, 少校</text>
+	</string>
+	<string id="pri_a16_army_2_talk_to_commander_1">
+		<text>应该和科瓦斯基上校说话</text>
+	</string>
+	<string id="pri_a16_army_2_talk_to_commander_2">
+		<text>跟科瓦斯基少校说去</text>
+	</string>
+	<string id="pri_a16_army_3_talk_to_commander_1">
+		<text>应该和科瓦斯基说话</text>
+	</string>
+	<string id="pri_a16_army_3_talk_to_commander_2">
+		<text>先生, 如果你需要什么, 可以去找科瓦斯基</text>
+	</string>
+	<string id="pri_a16_base_alarm">
+		<text>各单位注意! 我是科瓦斯基上校. 基地受到攻击. 直到威胁消除前入口不会解除封锁</text>
+	</string>
+	<string id="pri_a16_base_megaphone_1">
+		<text>少校, 如果你不介意的话, 能把枪放进枪套里吗?</text>
+	</string>
+	<string id="pri_a16_base_megaphone_2">
+		<text>听着, 少校, 把枪套上? 我们不会开枪的, 我保证</text>
+	</string>
+	<string id="pri_a16_base_megaphone_3">
+		<text>拜托, 少校. 看在上帝的份上, 把枪收起来. 大家已经够紧张的了</text>
+	</string>
+	<string id="pri_a16_base_relax">
+		<text>各单位注意! 我是科瓦斯基上校. 威胁已经消除</text>
+	</string>
+	<string id="pri_a17_kovalsky_after_surge">
+		<text>各单位注意! 我是科瓦斯基上校. 能量风暴已经结束</text>
+	</string>
+	<string id="pri_a17_kovalsky_surge_phase_1">
+		<text>各单位注意! 我是科瓦斯基上校. 根据我们的读数, 能量风暴即将来临. 立即躲避!</text>
+	</string>
+	<string id="pri_a17_kovalsky_surge_phase_2">
+		<text>各单位注意! 我是科瓦斯基上校. 能量风暴要来了, 重复一遍, 能量风暴要来了. 立即躲避!</text>
+	</string>
+	<string id="pri_a17_monolith_preacher">
+		<text>我们感谢您, 黑石, 向我们揭露了您的敌人的阴谋. 愿您的光芒照耀那些为您的意志献出生命的勇敢战士的灵魂. 前进吧, 黑石的战士们! 为你倒下的兄弟报仇, 因为他们与黑石的永恒结合而受到祝福. 给那些蔑视黑石神圣力量的人带来死亡!</text>
+	</string>
+	<string id="pri_a17_recon_squad_actor_dont_hide">
+		<text>他们会认出你的, 少校</text>
+	</string>
+	<string id="pri_a17_recon_squad_after_monolith_clear">
+		<text>安全! 走吧!</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_1">
+		<text>我们等他们走到院子中央再说吧</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_2">
+		<text>目标已经就位</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_3">
+		<text>他们正在离开!</text>
+	</string>
+	<string id="pri_a17_recon_squad_attack_now_4">
+		<text>我们必须在被发现之前行动. 开火!</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_order_hide1">
+		<text>艾斯, 去房顶. 其他人, 跟我来</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_order_hide2">
+		<text>各就各位</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_ready_to_fire">
+		<text>只要你一声令下, 我随时准备攻击</text>
+	</string>
+	<string id="pri_a17_recon_squad_commander_to_prapor">
+		<text>奇怪. 有人把我们的计划泄露给他们了吗? 我们应该把这事告诉科瓦斯基</text>
+	</string>
+	<string id="pri_a17_recon_squad_monolith_ambush">
+		<text>这是个圈套! 隐蔽!</text>
+	</string>
+	<string id="pri_a17_recon_squad_nice_shoot">
+		<text>好枪法, 少校</text>
+	</string>
+	<string id="pri_a17_recon_squad_order_to_check">
+		<text>我们去看看. 艾斯, 掩护我们!</text>
+	</string>
+	<string id="pri_a17_recon_squad_prapor_to_commander">
+		<text>这些狂热分子知道我们!</text>
+	</string>
+	<string id="pri_a17_recon_squad_sniper_out">
+		<text>艾斯, 醒醒!</text>
+	</string>
+	<string id="pri_a17_recon_squad_talk_with_commander">
+		<text>你最好问问上尉</text>
+	</string>
+	<string id="pri_a18_actor_report">
+		<text>科瓦斯基, 这里发生了一些奇怪的事情. 建筑物里有很多黑石战士. 他们都出神了, 在跟... 一堆垃圾说话. 我检查过这堆东西, 如果你把这堆东西切开, 它就像一个原始人的天线. 好像有人通过这个天线跟他们说话... 他们相信这是神的旨意</text>
+	</string>
+	<string id="pri_a18_kovalskiy_guard">
+		<text>这一切都很奇怪. 有人在控制这些狂热分子... 嗯. 我们稍后再讨论这个问题</text>
+	</string>
+	<string id="pri_a18_kovalskiy_squad">
+		<text>这一切都很奇怪. 有人在控制这些狂热分子... 嗯. 我们稍后再讨论这个问题. 哨兵还没出现, 如果你找到他就告诉我. 完毕</text>
+	</string>
+	<string id="pri_a18_monolith_pray_1">
+		<text>黑石, 我们听不到您</text>
+	</string>
+	<string id="pri_a18_monolith_pray_2">
+		<text>您为什么离开我们, 黑石?</text>
+	</string>
+	<string id="pri_a18_monolith_pray_3">
+		<text>我们等待您的命令, 黑石</text>
+	</string>
+	<string id="pri_a18_shelly_hello">
+		<text>斯克亚中尉, 听你差遣</text>
+	</string>
+	<string id="pri_a18_sokolov_fight">
+		<text>天啊, 这地方都是他们!</text>
+	</string>
+	<string id="pri_a18_sokolov_hello">
+		<text>我以为跟你在一起会更安全</text>
+	</string>
+	<string id="pri_a18_sokolov_on_place">
+		<text>到了</text>
+	</string>
+	<string id="pri_a18_vano_fight">
+		<text>趁他们还没振作起来, 赶紧干掉他们!</text>
+	</string>
+	<string id="pri_a18_vano_hello">
+		<text>我一发现你需要帮助就报名了. 我会跟你走到底的, 伙计</text>
+	</string>
+	<string id="pri_a20_actor_about_next_task">
+		<text>侦察单位掌握了黑石军位置的信息. 笔记上写的是书店</text>
+	</string>
+	<string id="pri_a20_actor_no_data">
+		<text>侦察单位只发现了黑石巡逻队. 他们没有看到任何大型部队或单位</text>
+	</string>
+	<string id="pri_a20_actor_report_about_squad">
+		<text>我找到了这个单位. 他们都死了. 看起来他们中枪了, 但没有敌人的踪迹</text>
+	</string>
+	<string id="pri_a20_colonel_about_sentry">
+		<text>我不明白他们怎么能这么突然袭击, 而不留下任何证据. 真奇怪. ... 少校, 我们刚收到了哨兵的信号! 坐标显示他在熟食店附近. 如果可以的话, 去看看. 我就指望你了, 少校. 完毕</text>
+	</string>
+	<string id="pri_a20_colonel_ask_check_recon_squad">
+		<text>我们得找到侦察队. 少校, 看看发生了什么! 究竟... 嗯. 你出去小心点, 好吗? 少校... 与我保持联络!</text>
+	</string>
+	<string id="pri_a20_colonel_give_next_task_1">
+		<text>是那些该死的狂热分子. 我们需要对付他们</text>
+	</string>
+	<string id="pri_a20_colonel_give_next_task_1_a21_sentry_task">
+		<text>是那些该死的狂热分子, 没完了. 我们还失去了一个哨兵; 他不接电话, 也没有他的踪迹. 我们得把那些混蛋解决掉, 一劳永逸</text>
+	</string>
+	<string id="pri_a20_colonel_send_reinforcement">
+		<text>很好, 我会派两个手下去找你. 他们会在目标附近与你会合. 完毕</text>
+	</string>
+	<string id="pri_a20_colonel_send_reinforcement_a21_about_sentry">
+		<text>很好, 我会派两个手下去找你. 他们会在目标附近与你会合. 另一件事... 我们刚接收到哨兵的信号. 坐标显示他在熟食店附近. 如果可以的话, 去看看. 我就指望你了, 少校. 完毕</text>
+	</string>
+	<string id="pri_a20_colonel_talk_in_radio">
+		<text>侦查单位, 请回答! 外面发生了什么事?</text>
+	</string>
+	<string id="pri_a20_colonel_task_done">
+		<text>我不明白他们怎么能这么突然袭击. 没有留下任何证据. 真奇怪. 我需要仔细考虑一下. 我们很快会再谈</text>
+	</string>
+	<string id="pri_a20_communication_with_recon_squad">
+		<text>我收到侦察部队的消息</text>
+	</string>
+	<string id="pri_a20_recon_squad_attacked">
+		<text>不! ... 那是什么玩意儿? ... 等等! ... 我们都死了... 哎呀... 救命! 谁来救我! 赶走那只东西! 妈...</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_1">
+		<text>哇, 真不敢相信我们毫发无损地来到了普里皮亚奇. 你是怎么找到这条路的?</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_2">
+		<text>这并不难. 你所需要的只是技巧和一点运气, 我们两样都有. 也许是特异区在奖励我们的耐心. 天晓得, 我已经向生态学家们付出了代价</text>
+	</string>
+	<string id="pri_a20_sokolov_with_garick_new_way_to_pripyat_3">
+		<text>是的. 我自己也受够了赫曼</text>
+	</string>
+	<string id="pri_a21_actor_to_base_find_and_terminate_controller">
+		<text>基地, 哨兵死了. 他表现奇怪, 还袭击了我. 我还发现并消灭了那片区域的一只摄魂怪</text>
+	</string>
+	<string id="pri_a21_actor_to_base_find_controller">
+		<text>基地, 哨兵死了. 他表现奇怪, 还袭击了我. 我还在那个区域发现了一只摄魂怪, 所以我不得不撤退</text>
+	</string>
+	<string id="pri_a21_actor_to_base_terminate_controller">
+		<text>基地, 摄魂怪已经被消灭了</text>
+	</string>
+	<string id="pri_a21_base_to_actor_find_and_terminate_controller">
+		<text>收到, 少校. 那只摄魂怪一定是把哨兵夺舍了. 嗯. 他是个好人. ... 嗯. 侦察队肯定也发生了同样的事. 摄魂怪迫使他们互相攻击. 完毕</text>
+	</string>
+	<string id="pri_a21_base_to_actor_terminate_controller">
+		<text>收到, 少校. 那只摄魂怪一定是把哨兵夺舍了. 你得马上杀了那个混蛋! 只要它还活着, 我们就有很大的危险</text>
+	</string>
+	<string id="pri_a21_colonel_base_about_sentry">
+		<text>少校, 我是科瓦斯基. 我们有另一个紧急情况要处理. 到这边来, 我来告诉你细节</text>
+	</string>
+	<string id="pri_a21_colonel_give_sentry_task">
+		<text>少校, 我想请你帮个忙. 我们的哨兵没有回应. 你知道熟食店以前在哪里吗? 这就是他的信号来源. 如果可以的话, 调查一下. 另一件事, 小心. 完毕</text>
+	</string>
+	<string id="pri_a21_colonel_lets_talk">
+		<text>啊, 少校. 请回答</text>
+	</string>
+	<string id="pri_a21_sentr_crazy_1">
+		<text>别过来, 走开!</text>
+	</string>
+	<string id="pri_a21_sentr_crazy_2">
+		<text>别! 别, 啊!</text>
+	</string>
+	<string id="pri_a22_actor_to_base_find_squad_member">
+		<text>基地, 我找到了你的一个成员. 他好像用手榴弹把自己炸死了. 没有交火的迹象也没有任何其他证据表明他被袭击了</text>
+	</string>
+	<string id="pri_a22_base_to_actor_has_rfi_coordinates">
+		<text>我是科瓦斯基. ... 收到, 少校. 我有个好消息. 我们终于得到了干扰源的精确坐标. 信号来自幼儿园</text>
+	</string>
+	<string id="pri_a22_colonel_about_rfi_and_lost_suad">
+		<text>我们的通讯专家认为信号受到了来自我们附近某处的干扰. 我们说话这会儿他正在找坐标. 我派了几个人去查一个可能的干扰源, 但他们失踪了, 他们的个人信号也找不到了</text>
+	</string>
+	<string id="pri_a22_colonel_about_situation">
+		<text>少校, 我们有大麻烦了. 自从直升机坠毁后这次行动变得越来越荒谬. 士兵们像苍蝇一样空投, 我们和总部没有联系, 情况越来越糟. 疏散直升机又没出现. 照这样下去, 我们很快就会完全失去对局势的控制.我们需要和总部建立联系, 马上</text>
+	</string>
+	<string id="pri_a22_colonel_give_task">
+		<text>少校, 你的目标之一是与总部建立联系. 考虑到我们现在的处境, 从现在开始这应该是你的首要任务. 还有, 帮我个忙, 请找到我的手足</text>
+	</string>
+	<string id="pri_a22_colonel_to_actor_need_talk">
+		<text>少校, 我得跟你谈谈. 私底下</text>
+	</string>
+	<string id="pri_a25_actor_all_doors_locked">
+		<text>我在大楼旁边, 但所有入口都被封锁了</text>
+	</string>
+	<string id="pri_a25_kovalski_take_explosive">
+		<text>派去寻找干扰源的那个小队有炸药. 用它们清除入口</text>
+	</string>
+	<string id="pri_a28_actor_scene_end">
+		<text>那名潜行者还有鳐鱼集团都死了. 准备起飞</text>
+	</string>
+	<string id="pri_a28_actor_scene_end_when_strelok_dead">
+		<text>所有人到齐, 除了那名潜行者. 他死了. 准备起飞</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_1">
+		<text>我是德格捷列夫. 我收到你的呼叫</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_2">
+		<text>[德格捷列夫] 我设法获得了在特异区进行实验的文件. 此外, 有个在切尔诺贝利核电站里的潜行者联系了我们 . 他的名字叫史特洛克, 他表示愿意与我们合作</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_with_heli_info">
+		<text>[德格捷列夫] 是的, 我有数据. 史特洛克的信息也证实了它的真实性. 这些直升机在能量风暴中被异常现象击中, 因为它们的位置发生了变化 . 之前发布给飞行员的异常区地图没用了</text>
+	</string>
+	<string id="pri_a28_actor_to_ssu_without_heli_info">
+		<text>[德格捷列夫] 史特洛克认为直升机陷入了异常点. 每次能量风暴过后异常点的位置都会改变; 这是在为坦途行动制作地图时被遗漏的事实</text>
+	</string>
+	<string id="pri_a28_actor_to_strelok">
+		<text>快上直升机! 我希望这是值得的...</text>
+	</string>
+	<string id="pri_a28_army_about_evacuation_1">
+		<text>我们上直升机, 然后在空中谈, 好吗?</text>
+	</string>
+	<string id="pri_a28_army_about_evacuation_2">
+		<text>我们以后有的是时间谈. 我们得确保有足够的弹药</text>
+	</string>
+	<string id="pri_a28_army_about_evacuation_3">
+		<text>这是一个不错的基地. 它像大姐姐般让我们活了下来; 不能要求更多了. 但现在我们得分手了</text>
+	</string>
+	<string id="pri_a28_army_about_surge_1">
+		<text>我们之后再谈. 能量风暴来临时, 我的下巴都卡住了</text>
+	</string>
+	<string id="pri_a28_army_about_surge_2">
+		<text>又有能量风暴, 真的被烦死了</text>
+	</string>
+	<string id="pri_a28_army_about_surge_3">
+		<text>啊... 我感觉就像在战壕里被坦克碾过</text>
+	</string>
+	<string id="pri_a28_army_confusion">
+		<text>蛤?... Okay, 跑!</text>
+	</string>
+	<string id="pri_a28_army_its_here">
+		<text>就是这!</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_1_first">
+		<text>我还以为这里的酸雨已经够糟了</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_1_second">
+		<text>算了吧. 我用它来换周末的任何一天下雨, 周日下两场</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_2_first">
+		<text>操, 太嘈了! 我还在耳鸣, 好像聋了一样</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_2_second">
+		<text>什么? 呵呵... 闹你玩的</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_3_first">
+		<text>呵... 每次一有能量风暴我就头痛欲裂</text>
+	</string>
+	<string id="pri_a28_army_surge_talk_3_second">
+		<text>只要能量风暴没要了你的命, 我觉得还不错</text>
+	</string>
+	<string id="pri_a28_army_what_is_that">
+		<text>那是什么?!</text>
+	</string>
+	<string id="pri_a28_army_zombied_first">
+		<text>僵尸!</text>
+	</string>
+	<string id="pri_a28_army_zombied_in_building">
+		<text>这栋楼里有一打僵尸</text>
+	</string>
+	<string id="pri_a28_center_to_colonel_1">
+		<text>上校, 为什么通讯中断了?</text>
+	</string>
+	<string id="pri_a28_center_to_colonel_2">
+		<text>Okay. 好了, 听着, 坦途行动正被乌克兰安全局接管. 德格捷列夫在吗?</text>
+	</string>
+	<string id="pri_a28_center_to_colonel_3">
+		<text>Okay. 从现在起由他指挥. 叫他待在原地别动. 他的上级很快就会联系他</text>
+	</string>
+	<string id="pri_a28_colonel_about_heli">
+		<text>你看那个! 那逼崽子做到了... 你是对的, 史特洛克</text>
+	</string>
+	<string id="pri_a28_colonel_about_snork">
+		<text>没时间了! 检查武器, 随时开火!</text>
+	</string>
+	<string id="pri_a28_colonel_actor_talk">
+		<text>少校, 我能跟你说句话吗?</text>
+	</string>
+	<string id="pri_a28_colonel_after_surge">
+		<text>看来能量风暴结束了. 基里洛夫, 与总部联系</text>
+	</string>
+	<string id="pri_a28_colonel_cannot_wait">
+		<text>少校, 我没不能再等了</text>
+	</string>
+	<string id="pri_a28_colonel_clear_the_deck">
+		<text>准备好, 各位!</text>
+	</string>
+	<string id="pri_a28_colonel_close_by">
+		<text>来吧, 兄弟们! 我们最后一搏!</text>
+	</string>
+	<string id="pri_a28_colonel_evacuation">
+		<text>部队, 出动!</text>
+	</string>
+	<string id="pri_a28_colonel_fire_will">
+		<text>自由开火! 上!</text>
+	</string>
+	<string id="pri_a28_colonel_go_left">
+		<text>向左移动, 互相掩护!</text>
+	</string>
+	<string id="pri_a28_colonel_instructions">
+		<text>你们听到消息了吧, 伙计们. 我们去的时候, 要团结起来, 让潜行者活着. 有要问的吗?... 准备行动!</text>
+	</string>
+	<string id="pri_a28_colonel_ok_go_here">
+		<text>穿过拱门!</text>
+	</string>
+	<string id="pri_a28_colonel_ready_to_go">
+		<text>保持警惕, 服从命令! 我们离疏散点很近了. 动起来!</text>
+	</string>
+	<string id="pri_a28_colonel_see_helicopter">
+		<text>干! 这是黑石的战士! 随意开火, 继续向直升机移动!</text>
+	</string>
+	<string id="pri_a28_colonel_strelok_out">
+		<text>妈的! 史特洛克倒下了! 但我们还是得离开这里. 走!</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_1">
+		<text>能量风暴的原因. 不可能在一段时间内建立通讯</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_2">
+		<text>是</text>
+	</string>
+	<string id="pri_a28_colonel_to_center_3">
+		<text>收到</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor">
+		<text>少校, 你在哪? 我们得带史特洛克去撤离点!</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_go">
+		<text>少校, 我们得继续走了</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_long">
+		<text>少校, 我们不能再等你了</text>
+	</string>
+	<string id="pri_a28_colonel_wait_actor_return">
+		<text>Okay, 继续前进!</text>
+	</string>
+	<string id="pri_a28_colonel_we_close">
+		<text>我们在路上了!</text>
+	</string>
+	<string id="pri_a28_colonel_will_time">
+		<text>收到! 我们马上就到!</text>
+	</string>
+	<string id="pri_a28_colonel_zombied_attack">
+		<text>每一只普里皮亚奇的僵尸都会知道我们来了! 我们得快一点! 跑!</text>
+	</string>
+	<string id="pri_a28_colonel_zombied_first">
+		<text>沿着大楼向右移动! 跑步前进!</text>
+	</string>
+	<string id="pri_a28_continuation">
+		<text>天啊, 你还在这儿? 如果你需要什么, 到基地找我. 我回来了, 这次带了一些潜行者回来</text> <!-- Bug in xenglish.db (this file should be named jup_a12_stalker_diplomat_no_talk_pda as it says 'I don't trust you...' with a PDA voice effect -->
+	</string>
+	<string id="pri_a28_evac_com_cant_wait">
+		<text>我们接到的命令是如果我们受到攻击就要起飞, 所以快点!</text>
+	</string>
+	<string id="pri_a28_evac_com_helicopter_run_time">
+		<text>我们不能再等了! 60秒后出发!</text>
+	</string>
+	<string id="pri_a28_evac_com_ready">
+		<text>德格捷列夫, 我们可以走了!</text>
+	</string>
+	<string id="pri_a28_evac_com_scene_end_when_strelok_dead">
+		<text>收到!</text>
+	</string>
+	<string id="pri_a28_evac_com_to_helicopter">
+		<text>上直升机! Go, go, go!</text>
+	</string>
+	<string id="pri_a28_evac_com_where_you">
+		<text>鳐鱼! 你在哪?</text>
+	</string>
+	<string id="pri_a28_evac_come_close">
+		<text>德格捷列夫, 我们遭到不明敌人的猛烈攻击! 我们撑不了多久!</text>
+	</string>
+	<string id="pri_a28_medic_about_snork">
+		<text>又是... 那些混蛋. 也许我们该绕过建筑物</text>
+	</string>
+	<string id="pri_a28_signaller_after_surge_1">
+		<text>收到!</text>
+	</string>
+	<string id="pri_a28_signaller_after_surge_2">
+		<text>总部联系上了!</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_1">
+		<text>少校, 收到吗?</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_2">
+		<text>[乌克兰安全局 指挥部] 很好. 从这一刻起, 你负责完成坦途行动. 科瓦斯基上校和鳐鱼部队会协助; 报告</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_3">
+		<text>[乌克兰安全局 指挥部] 收到. 接受他的建议. 你知道我们的直升机坠毁的原因吗?</text>
+	</string>
+	<string id="pri_a28_ssu_to_actor_5">
+		<text>[乌克兰安全局 指挥部] 很好. 也就是说我们要等到下一场能量风暴. 你将和潜行者一起在B28位置集合. 鳐鱼部队会和你一起撤离, 他们已经在路上了. 完毕</text>
+	</string>
+	<string id="pri_a28_strelok_dont_stop">
+		<text>不要停止! 继续前进!</text>
+	</string>
+	<string id="pri_a28_strelok_go_over_anomaly">
+		<text>前方有更多僵尸!</text>
+	</string>
+	<string id="pri_a28_strelok_run">
+		<text>跑!</text>
+	</string>
+	<string id="pri_b301_zulus_after_fight">
+		<text>嗯, 那很有趣!</text>
+	</string>
+	<string id="pri_b301_zulus_hello_in_combat">
+		<text>靠墙站好! 这些混蛋是从四面八方来的!</text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_1">
+		<text>接招!</text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_2">
+		<text>你以为我很容易对付, 哈?!</text>
+	</string>
+	<string id="pri_b301_zulus_surrounded_3">
+		<text>尝尝这个!</text>
+	</string>
+	<string id="pri_b305_actor_ask_about_burning_antenn">
+		<text>你就是那名关闭了"焦脑器"的潜行者?</text>
+	</string>
+	<string id="pri_b305_actor_check_signal">
+		<text>我来检查</text>
+	</string>
+	<string id="pri_b305_actor_dont_see_anyone">
+		<text>我没看到任何人</text>
+	</string>
+	<string id="pri_b305_actor_emission_starts">
+		<text>能量风暴要来了!</text>
+	</string>
+	<string id="pri_b305_actor_go">
+		<text>谢谢, 我会的</text>
+	</string>
+	<string id="pri_b305_actor_it_is_underground">
+		<text>在地下</text>
+	</string>
+	<string id="pri_b305_actor_need_center_to_know">
+		<text>我们必须尽快把这件事通知总部</text>
+	</string>
+	<string id="pri_b305_actor_understand">
+		<text>找到了</text>
+	</string>
+	<string id="pri_b305_actor_we_have_problems">
+		<text>我们有麻烦了. 我们的直升机坠毁的原因我们还不知道</text>
+	</string>
+	<string id="pri_b305_actor_wondered">
+		<text>就那样...</text>
+	</string>
+	<string id="pri_b305_army_what_freezer">
+		<text>哈-哈-哈! 哇, 以前从没听说过! 一个冰箱, 嗯?</text>
+	</string>
+	<string id="pri_b305_kirilov_about_garik">
+		<text>此外, 盖瑞前往亚诺夫车站补货了. 他让我告诉你他要几天不回来</text>
+	</string>
+	<string id="pri_b305_kirilov_about_garik_vano">
+		<text>此外,  让我告诉你他和盖瑞去亚诺夫车站了. 他说他们会带纪念品回来</text>
+	</string>
+	<string id="pri_b305_kirilov_about_strelok_1">
+		<text>谢谢你的帮助! 对了, 上校想让你去拜访他</text>
+	</string>
+	<string id="pri_b305_kirilov_give_coordinates">
+		<text>是的, 我知道坐标, 但信号断断续续, 而且... 它在移动!</text>
+	</string>
+	<string id="pri_b305_kirilov_give_new_coordinates">
+		<text>信号回来了! 传送坐标</text>
+	</string>
+	<string id="pri_b305_kirilov_glad">
+		<text>真的是你吗? 好吧, 我差点...! 我们都以为再也见不到医生了</text>
+	</string>
+	<string id="pri_b305_kirilov_ok">
+		<text>Okay...</text>
+	</string>
+	<string id="pri_b305_kirilov_order_agree">
+		<text>是, sir!</text>
+	</string>
+	<string id="pri_b305_kirilov_signal_lost">
+		<text>信号消失了</text>
+	</string>
+	<string id="pri_b305_kirilov_signal_next_to_actor">
+		<text>信号回来了! 就在你旁边</text>
+	</string>
+	<string id="pri_b305_kirilov_source_is_near">
+		<text>很接近. 它向我们的基地移动</text>
+	</string>
+	<string id="pri_b305_kirilov_strange_signal">
+		<text>上校! 探测到一个无线电信号, 它的信号源离基地不远. 传输是加密的, 我还没能破解</text>
+	</string>
+	<string id="pri_b305_kirilov_what_freezer">
+		<text>什么冰箱? 你在哪里找到的?</text>
+	</string>
+	<string id="pri_b305_kirilov_what_happen">
+		<text>发生了什么事?</text>
+	</string>
+	<string id="pri_b305_kirilov_what_next">
+		<text>那会在哪个邦?</text>
+	</string>
+	<string id="pri_b305_kirilov_where_you_been">
+		<text>所以呢? 告诉我! 你在哪里?</text>
+	</string>
+	<string id="pri_b305_kovalskiy_about_anomaly_map">
+		<text>我们有一张地图, 上面有异常点之间的安全航线... 而且直升机有能量风暴保护系统!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_about_deal">
+		<text>在我们解决问题之前不会有任何直升机支援. 去这个特异区边界的唯一办法就是步行</text>
+	</string>
+	<string id="pri_b305_kovalskiy_ask_coordinates">
+		<text>你有坐标吗?</text>
+	</string>
+	<string id="pri_b305_kovalskiy_attack_case_prepare">
+		<text>少校, 我是科瓦斯基上校. 你最好回来. 我们得为可能的袭击做好准备. 这些混蛋这次可抓不到我们了!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_let_center_know">
+		<text>能量风暴过后我会联系我的指挥官</text>
+	</string>
+	<string id="pri_b305_kovalskiy_news">
+		<text>我和总部的指挥官谈过了, 向他报告了目前的情况以及所有收集到的信息. 暂时不会有直升机支援; 他建议我们加强你方阵地, 等待进一步命令. 乌克兰安全局的观察员现在就在总部, 所以你很快就能和你的上级谈了</text>
+	</string>
+	<string id="pri_b305_kovalskiy_order_kirilov">
+		<text>中尉! 尽快和他们通话!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_talk_in_safe_place">
+		<text>来, 我们进去谈谈!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_think_of_attack">
+		<text>又是黑石?!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_who_are_you">
+		<text>你是谁?!</text>
+	</string>
+	<string id="pri_b305_kovalskiy_wondered">
+		<text>什么?!</text>
+	</string>
+	<string id="pri_b305_medik_dont_know_what_say">
+		<text>嗯... 我不知道该怎么形容</text>
+	</string>
+	<string id="pri_b305_medik_excuse">
+		<text>我在哪儿找到的...? 我想看看你在我们邦找到什么东西</text>
+	</string>
+	<string id="pri_b305_medik_in_freezer">
+		<text>反正你也不会相信我, 但是... 在一个冰箱里</text>
+	</string>
+	<string id="pri_b305_medik_talk_later">
+		<text>唷... 说来话长... 我下次再告诉你</text>
+	</string>
+	<string id="pri_b305_strelok_about_anomaly_randomize">
+		<text>那就奇怪了... 你是说你没注意到异常点在能量风暴后四处移动? 一些消失了, 新的出现在不同的地方, 这使得你的异常区地图失效</text>
+	</string>
+	<string id="pri_b305_strelok_about_heli">
+		<text>原因很明显. 空中有许多异常现象, 特别是在特异区的中心</text>
+	</string>
+	<string id="pri_b305_strelok_about_zone_destroying">
+		<text>是的... 但是我的计划没有成功. 我是来和你们的指挥官们谈谈的. 我有情报可以让军队控制并摧毁特异区</text>
+	</string>
+	<string id="pri_b305_strelok_give_up">
+		<text>别开枪, 我从正门离开!</text>
+	</string>
+	<string id="pri_b305_strelok_how_to_get_away">
+		<text>能量风暴并不只是一个接一个. 如果你能扫描这片区域并识别出所有的异常点, 直升机就能安全地把我们接回来, 只要它们是在能量风暴后被派遣的</text>
+	</string>
+	<string id="pri_b305_strelok_introduse">
+		<text>我的名字是史特洛克</text>
+	</string>
+	<string id="pri_b35_both_done_end">
+		<text>两个目标都消除了. 干得好! 任务完成. 撤退!</text>
+	</string>
+	<string id="pri_b35_envoy_sighted">
+		<text>看, 还有另一组! 让我们看看哪一个是信使</text>
+	</string>
+	<string id="pri_b35_kovalski_calls_guide">
+		<text>我是基里洛夫中尉, 我需要你护送少校</text>
+	</string>
+	<string id="pri_b35_merc_leader_sighted">
+		<text>我才在大门口那个是他们的头头</text>
+	</string>
+	<string id="pri_b35_primary_target_down">
+		<text>第一个目标已击毙</text>
+	</string>
+	<string id="pri_b35_primary_target_lost_end">
+		<text>第一个目标已逃离. 撤退!</text>
+	</string>
+	<string id="pri_b35_rendevous_done">
+		<text>他们完了! 干掉!</text>
+	</string>
+	<string id="pri_b35_rendevous_in_process">
+		<text>目标就在大门口</text>
+	</string>
+	<string id="pri_b35_rendevous_started">
+		<text>少校! 雇佣兵已就位</text>
+	</string>
+	<string id="pri_b35_secondary_target_down">
+		<text>第二个目标已击毙</text>
+	</string>
+	<string id="pri_b35_secondary_target_lost_end">
+		<text>第二个目标跑了, 撤退!</text>
+	</string>
+	<string id="pri_b35_targets_lost_end">
+		<text>两个目标都跑了, 放弃任务, 撤退!</text>
+	</string>
+
+	<!-- CLOSED CAPTIONS FOR CALL OF CHERNOBYL -->
+	<string id="bar_barman_hello_1">
+		<text>嘿, 这边!</text>
+	</string>
+	<string id="bar_barman_hello_2">
+		<text>什么事, 伙计? 最近如何?</text>
+	</string>
+	<string id="bar_barman_hello_3">
+		<text>还活着? 真好啊</text>
+	</string>
+	<string id="bar_barman_hello_4">
+		<text>别来无恙?</text>
+	</string>
+	<string id="bar_barman_hello_5">
+		<text>有什么事?</text>
+	</string>
+	<string id="bar_barman_wait_1">
+		<text>什么东西让你犹豫半天,嗯?</text>
+	</string>
+	<string id="bar_barman_wait_2">
+		<text>过来呀. 这边</text>
+	</string>
+	<string id="bar_barman_wait_3">
+		<text>干嘛在那傻站着?过来,这边来</text>
+	</string>
+	<string id="bar_barman_wait_4">
+		<text>快过来. 我们的时间不多</text>
+	</string>
+	<string id="bar_guard_prohodi_1">
+		<text>我说: 快进来! 别站着</text>
+	</string>
+	<string id="bar_guard_stop_1">
+		<text>你不能过去!</text>
+	</string>
+	<string id="bar_guard_stop_2">
+		<text>和酒保谈去</text>
+	</string>
+	<string id="bar_guard_stop_3">
+		<text>停下! 现在还不能让你出现在这里</text>
+	</string>
+	<string id="duty_hangar_1">
+		<text>滚出去, 潜行者</text>
+	</string>
+	<string id="esc_mech_meet_1">
+		<text>好吧? 你在找什么?</text>
+	</string>
+	<string id="esc_mech_meet_2">
+		<text>这又是什么?</text>
+	</string>
+	<string id="esc_mech_meet_3">
+		<text>你会一个人离开吗? 你们都认为我爱这样, 是吗?</text>
+	</string>
+	<string id="esc_mech_meet_bye_1">
+		<text>好吧, 再见</text>
+	</string>
+	<string id="esc_mech_meet_bye_2">
+		<text>所以你是一个人? 好吧</text>
+	</string>
+	<string id="esc_mech_meet_bye_3">
+		<text>最后, 你一个人走了. 但你还是给我带来了快乐</text>
+	</string>
+	<string id="esc_nimble_greeting_1">
+		<text>你好, 潜行者. 想下订单吗?</text>
+	</string>
+	<string id="esc_nimble_greeting_2">
+		<text>什么事? 决定好要什么了吗?</text>
+	</string>
+	<string id="esc_nimble_greeting_3">
+		<text>嘿! 你想要点什么?</text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_1">
+		<text>别担心. 我马上就拿货去</text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_2">
+		<text>之后再回来吧. 我没有现货</text>
+	</string>
+	<string id="esc_nimble_greeting_order_not_ready_3">
+		<text>以后再来. 随时等候你的订单</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_1">
+		<text>你的订单完成了. 来取货吧</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_2">
+		<text>货到了. 来拿吧!</text>
+	</string>
+	<string id="esc_nimble_greeting_order_ready_3">
+		<text>来拿你的货物, 潜行者! 正如你所见, 我从不食言</text>
+	</string>
+	<string id="esc_nimble_order">
+		<text>工作完成. 你能来取货了</text>
+	</string>
+	<string id="esc_fanat_farewell_1">
+		<text>稍后再见</text>
+	</string>
+	<string id="esc_fanat_farewell_2">
+		<text>祝你好运</text>
+	</string>
+	<string id="esc_fanat_farewell_3">
+		<text>和你谈话很开心</text>
+	</string>
+	<string id="esc_fanat_farewell_4">
+		<text>再见</text>
+	</string>
+	<string id="esc_fanat_farewell_5">
+		<text>狩猎愉快, 潜行者</text>
+	</string>
+	<string id="esc_fanat_greeting_1">
+		<text>你好</text>
+	</string>
+	<string id="esc_fanat_greeting_2">
+		<text>什么事?</text>
+	</string>
+	<string id="esc_fanat_greeting_3">
+		<text>嘿, 这边</text>
+	</string>
+	<string id="esc_fanat_greeting_4">
+		<text>嘿</text>
+	</string>
+	<string id="red_forester_greet_1">
+		<text>你好. 是什么风把你吹来啦?</text>
+	</string>
+	<string id="red_forester_hello_bye_0">
+		<text>再见, 小伙子</text>
+	</string>
+	<string id="red_forester_hello_bye_1">
+		<text>可别忘了我这个老人</text>
+	</string>
+	<string id="red_forester_hello_bye_2">
+		<text>一路顺风, 孩子</text>
+	</string>
+	<string id="red_forester_meet_hello_0">
+		<text>你好啊, 活着的灵魂</text>
+	</string>
+	<string id="red_forester_meet_hello_1">
+		<text>啥事, 年轻人? 你在这里找什么?</text>
+	</string>
+	<string id="red_forester_meet_hello_2">
+		<text>什么契机让你到这里来了呢, 或是别的什么呢?</text>
+	</string>
+	<string id="val_bandit_trader_meet_1">
+		<text>...</text>
+	</string>
+	<string id="val_bandit_trader_meet_2">
+		<text>...</text>
+	</string>
+	<string id="yan_sakharov_meet_1">
+		<text>致以亲切的问候, 年轻人!</text>
+	</string>
+	<string id="yan_sakharov_meet_2">
+		<text>欢迎来到我们的科学中心!</text>
+	</string>
+	<string id="yan_sakharov_meet_3">
+		<text>今天你给我们这个不起眼的实验室带来了什么?</text>
+	</string>
+	<string id="yan_sakharov_meet_4">
+		<text>啊-什么事?</text>
+	</string>
+	<string id="yan_sakharov_meet_bye_1">
+		<text>祝福你!</text>
+	</string>
+	<string id="yan_sakharov_meet_bye_2">
+		<text>遇见你真好</text>
+	</string>
+	<string id="yan_sakharov_meet_bye_3">
+		<text>当你有其他需要时, 欢迎回来!</text>
+	</string>
+</string_table>

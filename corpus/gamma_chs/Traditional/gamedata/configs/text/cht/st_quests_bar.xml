@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON BAR (ROSTOK) MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Default Storyline Task -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_default_task_name">
+		<text>下一個任務</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_default_task_text">
+		<text>接受下一個任務</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_default_task_about">
+		<text>一個我認識的人遇到了點麻煩. 他人的確不咋地, 但是幫了他多少能有好處. 找到他, 問問他想要什麼.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Raid Enemy Camp Storyline Task= -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_1_name">
+		<text>為紀律團襲擊敵人營地</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_1_text">
+		<text>領導一支紀律團小隊攻擊敵營</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_1_about">
+		<text>我們正準備突襲敵人的營地, 由你來帶領本次攻擊.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_1_finish">
+		<text>幹得好, 你是個優秀的戰士</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Locate Brain Scorcher Equipment Storyline Task -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_2_name">
+		<text>定位"焦腦器"</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_2_text">
+		<text>一個潛行者偷走了"焦腦器"的一部分裝置, 並把它藏在特異區的某處, 找到它然後交給彼得連科上校</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_2_about">
+		<text>根據我的訊息, 一個潛行者設法取出了一部分"焦腦器"裝置並且把它藏在了什麼地方, 我們必須找到它, 它有可能是一件極具威力的武器, 因此決不能被別有用心的勢力控制. 這裡是一些可能的座標. 我已經派出半個基地的人去尋找這玩意. 同時, 我想讓你去搜尋這些地方. 如果你找到了, 立刻把它帶給我</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_2_finish">
+		<text>你做得很好, 謝謝你</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Most Wanted Storyline Task -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_3_name">
+		<text>彼得連科的頭號通緝令</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_3_text">
+		<text>某個曾經的紀律團成員已經成了彼得連科上校的頭號通緝犯, 彼得連科希望處決他</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_3_about">
+		<text>這個叛徒給我帶來的麻煩位元異區的任何人都多. 到目前為止, 我的人都沒能找到他. 如果你能殺了他, 我會給你可觀的報酬.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_3_finish">
+		<text>很好, 你解決了那個混蛋! 幹得好. 這是你的付款.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Search Lab X=19 (Radar) Storyline Task -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_4_name">
+		<text>搜索X19實驗室</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_4_text">
+		<text>佩特連科上校會為任何在X-19實驗室發現的檔案出高價.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_4_about">
+		<text>我的情報源告訴我你打算去雷達站的"焦腦器". 我想你瘋了, 但 如果你真要堅持去的話, 我有個提議: 把你在裡面找到的檔案帶回來. 我會好好獎勵你的.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_task_4_finish">
+		<text>幹得好. 你做得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Mangun (Duty Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_bar_visitors_stalker_mechanic_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_default_task_text">
+		<text>接收下一個任務.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_default_task_about">
+		<text>我的一個朋友需要你的幫助. 去看看他.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_default_task_finish">
+		<text>祝你好運! 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Mangun (Duty Mechanic) Find Replacement Weapon Storyline Task= -->
+
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_1_name">
+		<text>為曼岡找到%s的替代品</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_1_text">
+		<text>曼岡搞砸了一次修理, 他需要%s進行補救.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_1_about">
+		<text>我需要幫助, 兄弟.一個勤務兵把他的步槍拿來修理, 但我把它弄得一團糟. 我要在他來取之前找個替代品.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_1_fetch_about">
+		<text>如果你遇到一個%s, 把它帶給我. 我沒有多少錢, 但我有東西可以交換.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_1_fetch_finish">
+		<text>嘿, 太好了! 你找到了一個. 謝謝兄弟, 你救了我的命.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Mangun (Duty Mechanic) Clear Out Mutants Storyline Task -->
+
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_2_name">
+		<text>為曼岡清除變異怪物</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_2_text">
+		<text>曼岡需要清除酒吧路上的變異怪物</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_2_about">
+		<text>嘿, 兄弟, 你能為我做點什麼嗎?我要去個地方, 但我聽說有變異怪物卡住了通往酒吧的路. 我不擅長射擊, 可能因為某些原因瞄都瞄不穩. 你能幫我把它們清理掉嗎?我有一把步槍, 這是個沒被取走的全新貨, 如果做成了, 我可以給你.</text>
+	</string>
+	<string id="drx_sl_bar_visitors_stalker_mechanic_task_2_finish">
+		<text>謝謝兄弟. 這是我答應你的步槍. 希望你比它以前的主人好運... 可憐的傢伙. 幸好他提前給了我錢, 呵呵.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Voronin (Duty Honcho) Decimate the Enemy Task -->
+	
+	<string id="bar_dolg_leader_task_1_name">
+		<text>鎮壓惡徒</text>
+	</string>	
+	<string id="bar_dolg_leader_task_1_text">
+		<text>沃羅寧將軍鼓勵潛行者鎮壓紀律團的敵人, 收集%s交換獎勵.</text>
+	</string>		
+	<string id="bar_dolg_leader_task_1_about">
+		<text>我們紀律團肩負著消滅特異區的偉大使命, 但面對無辜的人們受到傷害時, 我們也決不能坐視不管! 那些不法分子, 無政府主義者, 以及被貪婪, 迷信和妄想驅使的極端分子必須受到懲罰! 去削弱他們的力量吧, 為這一高尚事業所做出的任何貢獻都會得到嘉獎</text>
+	</string>		
+	<string id="bar_dolg_leader_task_1_fetch_about">
+		<text>我們紀律團肩負著消滅特異區的偉大使命, 但面對無辜的人們受到傷害時, 我們也決不能坐視不管! 那些不法分子, 無政府主義者, 以及被貪婪, 迷信和妄想驅使的極端分子必須受到懲罰! 去削弱他們的力量吧, 為這一高尚事業所做出的任何貢獻都會得到嘉獎</text>
+	</string>	
+	<string id="bar_dolg_leader_task_1_fetch_finish">
+		<text>幹得好! 你用行動貫徹了我們紀律團的使命和信念, 我們必須消滅特異區, 同時也決不能忘記保護那些無辜的人</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Voronin (Duty Honcho) Night Terror Task -->
+	
+	<string id="bar_dolg_leader_task_2_name">
+		<text>黑夜之懼: 卡車墓園</text>
+	</string>
+	<string id="bar_dolg_leader_task_2_text">
+		<text>卡車墓園有一隻危險的怪物亞種</text>
+	</string>
+	<string id="bar_dolg_leader_task_2_about">
+		<text>我們的巡邏隊報告有一個異常危險的變異怪物出沒在卡車墓園. 這個怪物已經奪走了幾個好人的生命, 但是我們在白天沒有機會抓住它. 這種恐怖必須立即停止. 去吧, 等到天黑, 野獸變得草率的時候, 那就把這可憎之物搜出來, 消滅它.</text>
+	</string>
+	<string id="bar_dolg_leader_task_2_finish">
+		<text>實現我們目標的又一步. 請允許我償還我們欠你的恩情.</text>
+	</string>
+	
+	<!-- Voronin (Duty Honcho) Mortal Sin Unquenchable Flame Task -->
+	<string id="bar_dolg_leader_task_3_about">
+		<text>即使我們已經對原罪作出了決定性的打擊, 它的信徒仍然拒絕投降. 可靠的線人已經確定, 該派別的倖存者正忙著聚集在扎頓的廢棄變電站. 我們不能讓他們重組, 徹底結束他們.</text>
+	</string>
+	<string id="bar_dolg_leader_task_3_finish">
+		<text>幹得好! 我們不能再捲入另一場長期衝突.</text>
+	</string>
+	
+	<!-- Voronin (Duty Honcho) From Ukraine With Love Task -->
+	<string id="bar_dolg_leader_task_4_name">
+		<text>烏克蘭之戀</text>
+	</string>
+	<string id="bar_dolg_leader_task_4_text">
+		<text>一名臥底特工需要從敵方陣營中脫身, 殺死他身邊其他隊員, 護送他返回基地, 這個間諜拿著一把SVD</text>
+	</string>
+	<string id="bar_dolg_leader_task_4_about">
+		<text>我們有許多人潛伏在敵人中間, 而其中一個顯然被懷疑了, 他既沒有與最後幾個聯繫人碰面, 也沒有留下任何資訊, 應該是受到了監視和控制, 所以可以推斷, 他已經喪失了單獨行動的自由, 我們必須得把他救出來, 他的武器是一把SVD, 當你攻擊隊伍的時候, 他肯定也會假裝向你射擊以避免被懷疑, 見機行事吧</text>
+	</string>
+	<string id="bar_dolg_leader_task_4_finish">
+		<text>太好了, 幹得漂亮</text>
+	</string>
+	<string id="bar_dolg_leader_task_4_msg_join">
+		<text>別開槍! 自己人! 我開槍是爲了避免他們懷疑, 我應該沒有打中你... 對吧? 走, 回羅斯托克吧, 咱們一起行動</text>
+	</string>
+	<string id="bar_dolg_leader_task_4_msg_leave">
+		<text>謝謝你護送我安全返回, 我去將軍那裡作報告時, 會為你美言幾句的</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Petrenko (Duty Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_cf_task_1_name">
+		<text>加入紀律團</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_cf_task_1_text">
+		<text>收集12000盧布, 把它帶給彼得連科上校, 作為你忠誠的象徵</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_cf_task_1_about">
+		<text>看來, 你有心想要加入我們, 是嗎? 這是一個高尚的請求, 但你是否準備好了承擔這一榮譽為你帶來的責任呢? 你是否會去制止那些無政府主義者和罪犯? 是否把無辜人們的生命和安全, 以及作為一個整體的責任, 放在你自己之上? 我們將承擔別人不會承擔的責任. 如果你是認真的, 帶上12000盧布作為你的承諾, 我會為你向將軍推薦.</text>
+	</string>
+	<string id="drx_sl_bar_dolg_general_petrenko_stalker_cf_task_1_finish">
+		<text>你現在正式成為紀律團人員了, 愿你不辜負我們的名譽.</text>
+	</string>
+
+
+	<!-- Petrenko (Duty Trader) Defend Rostok Task -->
+	
+	<string id="bar_dolg_general_petrenko_stalker_task_1_name">
+		<text>保衛羅斯托克</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_1_text">
+		<text>彼得連科上校要求你消滅一夥威脅執行任務的潛行者.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_1_about">
+		<text>形勢越來越不利. 敵人聚集在整個區域. 我被迫派我的人去幾個敵人的集結點, 避免敵人發動進攻, 你能應付嗎?</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_1_finish">
+		<text>幹得好. 你的效勞值得稱讚.</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_2_name">
+		<text>突襲敵人</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_2_text">
+		<text>你被派往敵方領土執行任務. 任務完成後向彼得連科上校彙報.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_2_about">
+		<text>我有一筆可觀的傭金. 無政府主義者和叛亂分子和特種部隊對抗很久了. 如果你能計劃, 準備和領導一場攻擊來削弱他們的控制, 你會得到可觀的回報.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_2_finish">
+		<text>謝謝你, 潛行者. 紀律團感謝你</text>
+	</string>
+
+	<string id="bar_dolg_general_petrenko_stalker_task_3_name">
+		<text>為彼得連科進攻目標</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_3_text">
+		<text>彼得連科將軍命令你找到並消滅一個目標.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_3_about">
+		<text>我有些需要被清理的人士. 目標通常是殺人犯, 強姦犯, 叛逃者, 敵方特工或戰略家. 而這個目標是我們當下所最緊迫的. 幹掉他, 你不僅能幫到紀律團, 還能幫到所有在特異區工作的有頭腦的人.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_3_finish">
+		<text>太棒了! 你使我們驕傲, 這樣的勤勉是不能不報的.</text>
+	</string>
+	
+	<string id="bar_dolg_general_petrenko_stalker_task_4_name">
+		<text>知己知彼, 百戰不殆</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_4_text">
+		<text>彼得連科需要一個%s來研究.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_4_about">
+		<text>將軍想讓士兵們對他們面對的恐怖襲擊有更多瞭解. 為此, 我們需要一些新的樣品來分析. 你有興趣幫我們弄點嗎?</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_4_fetch_about">
+		<text>將軍希望紀律團的小夥子們能更好地瞭解對手, 從而提高存活率. 為此, 我們需要一些新的樣品來分析. 拿回一個%s, 你會得到不錯的報酬.</text>
+	</string>
+	<string id="bar_dolg_general_petrenko_stalker_task_4_fetch_finish">
+		<text>你贏得了我們的感激, 士兵. 這是你的傭金.</text>
+	</string>
+	
+
+	<!-- Mangun (Duty Mechanic) -->
+	<string id="bar_visitors_stalker_mechanic_task_1_name">
+		<text>為曼岡尋找%s</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_1_text">
+		<text>技師需要%進行基本的裝備升級, 如果你發現有, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_1_about">
+		<text>我真的需要一套好的工具, 潛行者... 也許還需要一些錢. 如果你有興趣幫助我, 我會告訴你我在找什麼.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_1_fetch_about">
+		<text>我需要一套基本的工具, 它裡面的東西應該和我的料想一致. 如果你能給我帶些回來, 我將不勝感激, 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_1_fetch_finish">
+		<text>好訊息夥計! 多虧你, 我現在可以回去工作了.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_2_name">
+		<text>為技師尋找%s</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_2_text">
+		<text>技師需要%進行高級裝備升級, 如果你發現了, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_2_about">
+		<text>嘿, 夥計, 如果你碰巧找到一些更先進的工具, 我會再給你打折的. 你能幫我找一下嗎?</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_2_fetch_about">
+		<text>我需要一套高級的工具. 它裡面的東西應該和我料想的一致. 如果你能給我帶些回來, 我將不勝感激, 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_2_fetch_finish">
+		<text>太好了... 太好了! 你將見證一個技師的真正實力.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_3_name">
+		<text>為技師尋找%s</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_3_text">
+		<text>技師需要專家級工具, 如果你發現了, 把它們帶給他.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_3_about">
+		<text>嘿, 夥計, 如果你碰巧找到一些更先進的工具, 我會給你打折的. 你能幫我找一下嗎?</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_3_fetch_about">
+		<text>我需要一套專家級工具. 它裡面的東西應該和我料想的一致. 如果你能給我帶些回來, 我將不勝感激, 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="bar_visitors_stalker_mechanic_task_3_fetch_finish">
+		<text>太好了... 太好了! 這下我絕對會生意興隆的, 潛行者... 不過我得先把怎麼靈活運用這套工具搞明白.</text>
+	</string>
+	
+	
+	<!-- Barkeep -->
+	<string id="bar_visitors_barman_stalker_trader_task_1_name">
+		<text>找到%s物品</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_1_text">
+		<text>我已經同意為酒保的神器生意找一個%s.</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_1_about">
+		<text>我對神器很感興趣. 我會把某件神器的座標給你, 然後帶過來給我. 當然, 你也會得到獎勵. 聽起來不錯吧?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_1_fetch_about">
+		<text>我需要為一些外面的客戶找一件神器. 別擔心, 他們都是值得尊敬的人: 牧師, 醫生, 外面的生態學家之類的人. 以及來自外部的其他文化人. 總之, 他們在找一個叫%s的神器. 接這個任務嗎?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_1_fetch_finish">
+		<text>幹得好, 潛行者. 這是你的報酬.</text>
+	</string>
+	
+	<string id="bar_visitors_barman_stalker_trader_task_2_name">
+		<text>殺死潛行者</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_2_text">
+		<text>我要送一個潛行者去見上帝</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_2_about">
+		<text>這附近的一個交易商擺了副爛攤子. 你懂吧, 比起在他的商品上浪費時間, 羅斯托克的人民會更樂意花錢給他的墳墓放上鮮花. 那麼, 你準備好了嗎?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_2_finish">
+		<text>這是你的錢, 只是別以為自己無人能敵就得意忘形了.</text>
+	</string>
+	
+	<string id="bar_visitors_barman_stalker_trader_task_3_name">
+		<text>怪物獵手</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_3_text">
+		<text>酒保雇我來清理一個變異怪物的巢穴</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_3_about">
+		<text>一些小夥子在最近一次探險中被變異怪物搞得很慘. 紀律團答應清除這個巢穴, 然而遲遲沒有動手. 你能幫我這忙嗎?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_3_finish">
+		<text>幹得好, 這是錢.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Barkeep (Loner Trader) New Tasks -->
+	
+	<string id="bar_visitors_barman_stalker_trader_task_4_name">
+		<text>把%s帶到酒吧</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_4_text">
+		<text>酒保說如果我能給他拿個%s的話, 他會付好價錢.</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_4_about">
+		<text>我有個客戶想要一個特定變異怪物的紀念品. 你有興趣嗎?</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_4_fetch_about">
+		<text>你知道特異區有很多製革商和珠寶商嗎? 一些真正非凡的皮革和珠寶的原料是變異的面板, 馬蹄... 甚至大腦, 真是瘋子! 如果你有興趣幫這些人, 給我拿個%s,我保證你會不缺錢花.</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_4_fetch_finish">
+		<text>好樣的. 這是你的報酬.</text>
+	</string>
+	
+	<string id="bar_visitors_barman_stalker_trader_task_5_name">
+		<text>獲取加密的檔案</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_5_text">
+		<text>獲取加密的檔案. 送到酒吧</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_5_about">
+		<text>最近,一個潛行者泄露了一些關於一個藏物點的資訊, 裡面有一些相當有趣的檔案. 我會給你座標, 作為工作的交換, 回報也是豐厚的. 除了檔案外, 你在裡面發現的任何東西都可以留著.</text>
+	</string>
+	<string id="bar_visitors_barman_stalker_trader_task_5_finish">
+		<text>做得好, 潛行者.</text>
+	</string>
+
+<!-- Aspirin (Duty Medic) -->
+	<string id="bar_dolg_medic_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="bar_dolg_medic_task_1_text">
+		<text>阿司匹林需要%s來補充醫療儲備. 如果你找到了, 你應該儘快把它們帶給他.</text>
+	</string>
+	<string id="bar_dolg_medic_task_1_about">
+		<text>傷亡數字和醫療物品的消耗速度比在不斷上升, 這著實讓人頭疼. 我很快就會用完所有繃帶和急救箱了, 你幫得我找一個舊的製藥箱. 他們肯定會派上用場的.</text>
+	</string>
+	<string id="bar_dolg_medic_task_1_fetch_about">
+		<text>新問題來了. 我一直在到處找%s. 它裡面應該包含一些藥片和注射器來讓我能完成醫療工作. 如果你能給我帶來全套的話, 我就付給你錢.</text>
+	</string>
+	<string id="bar_dolg_medic_task_1_fetch_finish">
+		<text>幹得好! 我欠你一個大人情.</text>
+	</string>
+	
+<!-- Snitch (100 Rads) -->
+	<string id="top_10_task_name">
+		<text>厄運大輪盤: #$num. $name</text>
+	</string>
+	<string id="top_10_task_description">
+		<text>"告密者": 你現在的目標是$comm, 名字是: $name, 他最近經常出現在$map那邊, 祝你好運!</text>
+	</string>
+	<string id="top_10_task_name_finish">
+		<text>厄運大輪盤: 回到"告密者"那裡拿取報酬.</text>
+	</string>
+	<string id="top_10_task_description_finish">
+		<text>"告密者": 所以你還是這麼做了, 嗯? 好極了! 回到輻射100酒吧, 你的錢在等你.</text>
+	</string>
+	<string id="st_task_info_awaiting">
+		<text>等待資訊.</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_thompson_m1a1">
+		<text>湯姆遜M1A1衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_thompson_m1a1_descr">
+		<text>湯姆遜衝鋒鎗是一種反衝操作、風冷、彈匣供彈的選擇性射擊衝鋒鎗.\n
+		湯姆遜的這種變體具有顯著降低的射速和簡化的設計,應美國陸軍的要求生產. 因此,Blish鎖、加油系統和補償器被拆除. 儘管射速較慢,但該槍的射擊效能比1921式差很多.\n
+		該變體也有一個與 1921/1928 變體不同的機匣,因此不接受鼓彈匣\n\n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] None\n</text>
+	</string>
+
+	<string id="st_wpn_thompson_1921">
+		<text>湯姆遜M1921式衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_thompson_1921_descr">
+		<text>湯姆遜衝鋒鎗是一種反衝操作、風冷、彈匣供彈的選擇性射擊衝鋒鎗.\n
+		這種湯姆遜的變體也被昵稱為"芝加哥打字機",具有更快的射速和用於武器操作的Blish鎖系統.\n\n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] None\n
+		</text>
+	</string>
+
+	<string id="st_up_m1a1_b8_name">
+		<text>安裝更重的槍管</text>
+	</string>
+	<string id="st_up_m1a1_b8_descr">
+		<text>安裝更重的槍管以進一步提高後坐力.</text>
+	</string>
+	<string id="st_up_m1a1_b5_name">
+		<text>安裝聚合物槍托</text>
+	</string>
+	<string id="st_up_m1a1_b5_descr">
+		<text>安裝聚合物槍托以取代木製零件,以快速減輕重量.</text>
+	</string>
+	<string id="st_up_m1a1_b6_name">
+		<text>安裝聚合物護木</text>
+	</string>
+	<string id="st_up_m1a1_b6_descr">
+		<text>安裝聚合物護木以取代木質部件,從而略微減輕重量.</text>
+	</string>
+		<string id="st_up_m1a1_b7_name">
+		<text>安裝防腐件</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>安裝需要更長時間才能降解的武器元件.</text>
+	</string>
+
+	<string id="st_up_1921_b8_name">
+		<text>安裝高品質進口零件</text>
+	</string>
+	<string id="st_up_1921_b8_descr">
+		<text>安裝從美國進口的更高質量的零件,以提高槍的可靠性.</text>
+	</string>
+	<string id="st_up_1921_b5_name">
+		<text>安裝聚合物槍托</text>
+	</string>
+	<string id="st_up_1921_b5_descr">
+		<text>安裝聚合物槍托以取代木製零件,以快速減輕重量.</text>
+	</string>
+	<string id="st_up_1921_b6_name">
+		<text>安裝聚合物護木</text>
+	</string>
+	<string id="st_up_1921_b6_descr">
+		<text>安裝聚合物護木以取代木質部件,從而略微減輕重量.</text>
+	</string>
+		<string id="st_up_1921_b7_name">
+		<text>安裝防腐件</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>安裝需要更長時間才能降解的武器元件.</text>
+	</string>
+
+	<string id="st_up_1921_b9_name">
+		<text>安裝重新設計的 Blish 鎖定裝置</text>
+	</string>
+	<string id="st_up_1921_b9_descr">
+		<text>安裝經過調整的鎖定機構可大大提高槍的可靠性.</text>
+	</string>
+
+
+</string_table>

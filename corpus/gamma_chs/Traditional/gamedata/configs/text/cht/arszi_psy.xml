@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+  <string id="st_anabiotic_combat">
+      <text>附近有敵人時吃藥會很危險</text>
+  </string>
+
+   <string id="st_psy_death_scene">
+      <text>你從生不如死中解脫了...</text>
+  </string>
+
+  <string id="st_psy_zombification_scene">
+      <text>特異區給了你第二次機會...</text>
+  </string>
+</string_table>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	
+	<string id="st_wpn_9a91n_descr">
+		<text>9A91 是一種氣動旋轉槍機武器, 採用位於槍管上方的長衝程氣體活塞和帶有 4 個凸耳的旋轉槍機, 機匣由鋼衝壓件製成, 前護木和手槍式握把由聚合物製成, 不使用時, 鋼製槍托可向上摺疊並位於機匣上方, 翻轉式照門的射程設定為 100 米和 200 米, 但相對較短的瞄準器底座和亞音速子彈的陡峭彈道將 9A-91 的射程限制在 100 米左右\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 支援的瞄具型別: %c[ui_yellow]"燕尾槽"\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94 消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vsk94n_descr">
+		<text>VSK-94是俄羅斯KBP儀器設計局開發的9x39毫米消音狙擊步槍, 作為VSS步槍的低成本替代品, 該步槍以9A-91卡賓槍為基礎, VSK-94 設計用於在 400m 範圍內精確打擊無裝甲目標\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 支援的瞄具型別: %c[ui_yellow]"燕尾槽"\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94 suppressor (integrated)\n \n</text>
+	</string>
+
+</string_table>

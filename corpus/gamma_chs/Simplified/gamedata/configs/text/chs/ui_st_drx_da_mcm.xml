@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+	
+	<string id="ui_mcm_drx_da_title">
+		<text>动态异常点重制(DAO)</text>
+	</string>
+	<string id="ui_mcm_menu_drx_da">
+		<text>动态异常点</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_presets">
+		<text>预设</text>
+	</string>
+	<string id="ui_mcm_drx_da_presets_desc">
+		<text>从列表中选择预设</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_easy">
+		<text>简单</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_normal">
+		<text>正常</text>
+	</string>
+	<string id="ui_mcm_lst_drx_da_preset_hard">
+		<text>困难</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_spawn_chance">
+		<text>异常区域生成几率</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_spawn_chance_desc">
+		<text>在"智能地形"中生成异常区域的几率</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_max">
+		<text>异常区域半径</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_max_desc">
+		<text>从异常区域到智能地形中心的最大半径</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_min">
+		<text>异常点最小距离</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_zone_anomalies_distance_min_desc">
+		<text>指定异常点之间的最小距离, 取负值可使异常点互相重叠</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_anomaly_amount_modifier">
+		<text>场内异常点数量</text>
+	</string>
+	<string id="ui_mcm_drx_da_anomaly_amount_modifier_desc">
+		<text>指定异常区域中可包含的异常点数量</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_max_artefacts_per_zone">
+		<text>异常区域神器数量</text>
+	</string>
+	<string id="ui_mcm_drx_da_max_artefacts_per_zone_desc">
+		<text>指定异常区域可生成的最大神器数量</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_artefacts_spawn_chance">
+		<text>神器生成几率</text>
+	</string>
+	<string id="ui_mcm_drx_da_artefacts_spawn_chance_desc">
+		<text>在已指定的最大神器数量中, 每个神器的生成几率</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_random_artefact_spawn_chance">
+		<text>随机神器几率</text>
+	</string>
+	<string id="ui_mcm_drx_da_random_artefact_spawn_chance_desc">
+		<text>通常情况下, 南方会生成较弱的神器, 北方和地下实验室会生成较强的神器. 此选项控制随机强度的神器在任意地点的出现几率, 包括特殊神器</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_gravitational_shake_modifier">
+		<text>引力场反馈强度</text>
+	</string>
+	<string id="ui_mcm_drx_da_gravitational_shake_modifier_desc">
+		<text>指定靠近引力场时的屏幕震动强度</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_electric_field_modifier">
+		<text>电场伤害强度</text>
+	</string>
+	<string id="ui_mcm_drx_da_electric_field_modifier_desc">
+		<text>指定电场的伤害大小, 设备故障不受此选项控制</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_enable_anomalies_behaviour">
+		<text>启用异常点动态特性</text>
+	</string>
+	<string id="ui_mcm_drx_da_enable_anomalies_behaviour_desc">
+		<text>是否启用异常点的动态特性, 随机在地图中出现和消亡</text>
+	</string>
+	
+	<string id="ui_mcm_drx_da_save_after_cleanup">
+		<text>移除动态异常点后保存游戏</text>
+	</string>
+	<string id="ui_mcm_drx_da_save_after_cleanup_desc">
+		<text>在风暴过后当动态异常点在当前地图被移除后保存游戏</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_disable_new_anomalies">
+		<text>禁用新型态异常点</text>
+	</string>
+	<string id="ui_mcm_drx_da_disable_new_anomalies_desc">
+		<text>是否禁用新型态异常点生成, 此选项的改动会在重新开始游戏, 或者在下一次能量风暴/脉冲风暴结束后生效</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_choose_help">
+		<text>
+			下列开关可根据喜好更改
+			\n用于控制指定形态的异常点生成</text>
+	</string>
+
+	 <string id="ui_mcm_drx_da_zone_mine_radar_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_darkness_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_flash_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_ghost_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_gold_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_green_dragon_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_mefistotel_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_net_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_point_enable">
+	 	<text>启用</text>
+	 </string>
+	 <string id="ui_mcm_drx_da_zone_mine_sphere_enable">
+	 	<text>启用</text>
+	 </string>
+
+	<string id="ui_mcm_drx_da_delete_dynamic_anomalies">
+		<text>清除动态异常点</text>
+	</string>
+	<string id="ui_mcm_drx_da_delete_dynamic_anomalies_desc">
+		<text>清除所有动态异常点, 此选项用于安全删除本mod: 先启用此选项, 然后回到游戏保存, 最后退出游戏删除mod文件</text>
+	</string>
+
+	<string id="ui_mcm_drx_da_debug_mode">
+		<text>Debug模式</text>
+	</string>
+	<string id="ui_mcm_drx_da_debug_mode_desc">
+		<text>开启控制台Debug信息</text>
+	</string>
+	
+</string_table>

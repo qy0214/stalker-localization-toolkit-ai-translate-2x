@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+<string id="st_wpn_steyr_scout">
+		<text>斯太尔 Scout 精确射手步枪 5.56口径</text>
+	</string>
+	<string id="st_wpn_steyr_scout_descr">
+		<text>斯太尔Scout狙击步枪是一款著名的枪械, 以其卓越的准确性和多功能性而闻名;  这款步枪采用 5.56x45 毫米弹药, 兼具精准性和便携性, 深受射手和军事专业人士的喜爱;  其紧凑的设计和轻质的结构使其能够在各种战术场景中轻松操纵, 而其坚固的结构确保了现场的耐用性和可靠性;  斯太尔Scout配备先进的光学器件和用户友好的界面, 可快速捕获目标并在中远距离提供卓越的性能;  凭借 5.56x45mm 的膛室, 它具有令人印象深刻的制动力和卓越的弹道性能, 使其成为城市和露天作战的理想选择 \n \n
+		%c[ui_gray_2]枪械配件: \n
+        %c[d_purple] • %c[ui_gray_2] Surefire SOCOM556-MONSTER 消音器 \n \n</text>
+	</string>
+
+<string id="st_wpn_steyr_scout_big">
+		<text>斯太尔 Scout 精确射手步枪 7.62口径</text>
+	</string>
+	<string id="st_wpn_steyr_scout_big_descr">
+		<text>斯太尔Scout狙击步枪是一款备受推崇的枪械, 以其精确性和多功能性而闻名;  这款步枪装有强大的 7.62x51 毫米弹药, 结合了强大的制动力和令人印象深刻的精度, 使其成为射手和军事专业人士的最爱;  其符合人体工程学的设计和轻质结构使其易于操作和快速目标捕获, 确保在各种战术情况下的有效性;  斯太尔Scout坚固的结构保证了在最恶劣环境下的耐用性和可靠性, 使其成为狙击手和神枪手值得信赖的选择;  凭借其 7.62x51mm 的膛室, 它具有出色的远距离精度和强大的威力, 使其成为狙击手的理想选择 \n \n
+		%c[ui_gray_2]枪械配件: \n
+        %c[d_purple] • %c[ui_gray_2] Daniel Defence Wave QD 消音器 \n \n</text>
+	</string>
+
+<string id="st_mag_steyr_556">
+		<text>斯太尔Scout 5.56 弹匣</text>
+	</string>
+	<string id="st_mag_steyr_556_descr">
+		<text>标准的斯太尔Scout 5.56 弹匣\n \n</text>
+	</string>	
+
+<string id="st_mag_steyr_762">
+		<text>斯太尔Scout 7.62 弹匣</text>
+	</string>
+	<string id="st_mag_steyr_762_descr">
+		<text>标准的斯太尔Scout 7.62 弹匣\n \n</text>
+	</string>		
+</string_table>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+-- Author: Catspaw
+-- Source: https://www.moddb.com/members/catspawmods/addons
+-->
+
+<string_table>
+	<string id="ui_mcm_menu_customsquadsize">
+		<text>自定义队友数量</text>
+	</string>
+
+	<string id="ui_mcm_customsquadsize_maxsquadsize">
+		<text>正常情况下最大队友人数</text>
+	</string>
+
+	<string id="ui_mcm_customsquadsize_maxsquadsize_folkhero">
+		<text>拥有"传奇英雄"成就后的最大队友人数</text>
+	</string>
+
+</string_table>

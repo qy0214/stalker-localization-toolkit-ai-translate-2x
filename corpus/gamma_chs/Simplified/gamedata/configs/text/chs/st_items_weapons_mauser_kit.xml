@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons Attachments
+-->
+
+<string_table>
+
+	<string id="st_addon_scope_mauser_kit">
+		<text>毛瑟 K98 Mod 升级套件</text>
+	</string>
+	<string id="st_addon_scope_mauser_kit_descr">
+		<text>一种罕见的武器升级套件，它是当代工程师写老式武器的一封情书。 此套件能将著名的二战毛瑟 K98 德国步枪转换为带有轻型聚合物枪托和机匣的现代螺栓式狙击步枪。这个箱子里就包含着可以发生这种神奇变化的全部部件。 此套件还升级瞄具为高倍变焦狙击镜。 该套件在特异区中常受到高度赞赏，因为 K98 作为狙击步枪易于操作所以它经常被新手使用，而它现在又配备现代瞄准镜。 即使在 2018 年，7.92x57 毫米口径弹药仍然具有强大的冲击力，同时具有适当的装甲穿透力，而且不太贵。这充分解释了它在潜行者中为什么那么受欢迎。\n \n
+		%c[0,255,255,255]兼容性:\n
+		%c[d_orange] • %c[ui_gray_2] 毛瑟 K98步枪\n
+		</text>
+	</string>
+	
+</string_table>

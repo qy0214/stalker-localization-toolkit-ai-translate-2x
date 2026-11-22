@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Notes + Recipes
+-->
+<string_table>
+
+	<string id="st_recipe_basic_1">
+		<text>求生指南 (第一部)</text>
+	</string>
+	<string id="st_recipe_basic_2">
+		<text>求生指南 (第二部)</text>
+	</string>
+	<string id="st_recipe_basic_3">
+		<text>求生指南 (第三部)</text>
+	</string>
+	<string id="st_recipe_basic_4">
+		<text>求生指南 (第四部)</text>
+	</string>
+	<string id="st_recipe_basic_descr">
+		<text>本指南詳細介紹了基本生存技能和一些基本生存工具. 後面幾章描述瞭如何用普通材料製作基本裝備.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_recipe_advanced_1">
+		<text>機械手冊 (第一期)</text>
+	</string>
+	<string id="st_recipe_advanced_2">
+		<text>機械手冊 (第二期)</text>
+	</string>
+	<string id="st_recipe_advanced_3">
+		<text>機械手冊 (第三期)</text>
+	</string>
+	<string id="st_recipe_advanced_4">
+		<text>機械手冊 (第四期)</text>
+	</string>
+	<string id="st_recipe_advanced_descr">
+		<text>機械工程手冊. 有些人通過閱讀這些書籍來擴大他們的專業知識, 並更多地瞭解特異區的設施和工廠.書中包含基本的機械和電氣裝置原理.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_recipe_expert_1">
+		<text>工程手冊 (第一期)</text>
+	</string>
+	<string id="st_recipe_expert_2">
+		<text>工程手冊 (第二期)</text>
+	</string>
+	<string id="st_recipe_expert_3">
+		<text>工程手冊 (第三期)</text>
+	</string>
+	<string id="st_recipe_expert_4">
+		<text>工程手冊 (第四期)</text>
+	</string>
+	<string id="st_recipe_expert_descr">
+		<text>工業工程手冊. 很豐富. 它描述了現代電子學的工作方式: 運算放大器, 半導體二極管, 雙極結電晶體和場效應電晶體. 本手冊的第二部分關於電氣裝置的故障和排除.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_recipe_drug_1">
+		<text>醫藥大全 #1</text>
+	</string>
+	<string id="st_recipe_drug_2">
+		<text>醫藥大全 #2</text>
+	</string>
+	<string id="st_recipe_drug_3">
+		<text>醫藥大全 #3</text>
+	</string>
+	<string id="st_recipe_drug_4">
+		<text>醫藥大全 #4</text>
+	</string>
+	<string id="st_recipe_drug_descr">
+		<text>從書上撕下來的幾頁破紙.用藍墨水手寫的文字由於環境影響變得模糊不清,很難分辨寫了啥.大概描述了一些普通醫藥品使用方法和基礎製藥方法.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_recipe_ammo_1">
+		<text>彈藥安全指南 (第一期)</text>
+	</string>
+	<string id="st_recipe_ammo_2">
+		<text>彈藥安全指南 (第二期)</text>
+	</string>
+	<string id="st_recipe_ammo_3">
+		<text>彈藥安全指南 (第三期)</text>
+	</string>
+	<string id="st_recipe_ammo_4">
+		<text>彈藥安全指南 (第四期)</text>
+	</string>
+	<string id="st_recipe_ammo_descr">
+		<text>每個潛行者都應學會玩槍, 但也要知道如何為愛槍選擇彈藥. 本指南提供有關各種彈藥的資訊以及子彈製作的資訊.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_recipe_cooking_1">
+		<text>大廚筆記</text>
+	</string>
+	<string id="st_recipe_cooking_descr">
+		<text>幾頁手寫的紙片, 描述了在特定溫度下把怪物肉泡在酒里處理的方法, 筆記上說這樣能減少受輻射污染的肉的危害. 看來作者是個經驗豐富的特異區大佬.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有用資訊\n
+		%c[d_cyan] • %c[ui_gray_2] 工藝配方\n
+		</text>
+	</string>
+	
+	<string id="st_memoirs_1_of_2_name">
+		<text>潛行者日記 (第一部分)1/2</text>
+	</string>
+	<string id="st_memoirs_1_of_2_desc">
+		<text>一個塞在卡套里以防磨損的老舊褪色的筆記本. 然而它並沒有經受住時間的摧殘, 只有一小部分文字看得清.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_memoirs_2_of_2_name">
+		<text>潛行者日記 (第二部分)2/2</text>
+	</string>
+	<string id="st_memoirs_2_of_2_desc">
+		<text>一個塞在卡套里以防磨損的老舊褪色的筆記本. 然而它並沒有經受住時間的摧殘, 只有一小部分文字看得清.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_freedom_manual_1_of_2_name">
+		<text>審訊技巧: 基礎篇 (第一部分)1/2</text>
+	</string>
+	<string id="st_freedom_manual_1_of_2_desc">
+		<text>一本教學書, 右上角印了個很大的自由軍標誌, 還畫了個被手槍指著頭跪在地上的可憐蟲. 書名是"審訊技巧: 基礎篇", 裡面的東西都是用自由軍風格的字詞編寫的.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_freedom_manual_2_of_2_name">
+		<text>審訊技巧: 基礎篇 (第二部分)2/2</text>
+	</string>
+	<string id="st_freedom_manual_2_of_2_desc">
+		<text>一本教學書, 右上角印了個很大的自由軍標誌, 還畫了個被手槍指著頭跪在地上的可憐蟲. 書名是"審訊技巧: 基礎篇", 裡面的東西都是用自由軍風格的字詞編寫的.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_stalker_letter_1_of_2_name">
+		<text>回憶錄 (第一部分)1/2</text>
+	</string>
+	<string id="st_stalker_letter_1_of_2_desc">
+		<text>從某本回憶錄中撕下的幾張破紙. 用藍墨水手寫的文字由於環境影響變得模糊不清, 很難分辨寫了啥. 作者不詳.\n \n 
+		</text>
+	</string>
+	<string id="st_stalker_letter_2_of_2_name">
+		<text>回憶錄 (第二部分)2/2</text>
+	</string>
+	<string id="st_stalker_letter_2_of_2_desc">
+		<text>從某本回憶錄中撕下的幾張破紙. 用藍墨水手寫的文字由於環境影響變得模糊不清, 很難分辨寫了啥. 作者不詳.\n \n 
+		</text>
+	</string>
+	<string id="st_ecologist_report_1_of_3_name">
+		<text>殭屍調查報告 編號39B rev. 2 (第一部分)1/3</text>
+	</string>
+	<string id="st_ecologist_report_1_of_3_desc">
+		<text>帶有生態學家標誌的印刷檔案. 屬於機密檔案, 由以下人員簽名: %c[ui_gray_1]阿卡迪·克維特科夫斯基.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_ecologist_report_2_of_3_name">
+		<text>殭屍調查報告 編號39B rev. 2  (第二部分)2/3</text>
+	</string>
+	<string id="st_ecologist_report_2_of_3_desc">
+		<text>帶有生態學家標誌的印刷檔案. 屬於機密檔案, 由以下人員簽名: %c[ui_gray_1]阿卡迪·克維特科夫斯基.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_ecologist_report_3_of_3_name">
+		<text>殭屍調查報告 編號39B rev. 2 (第三部分)3/3</text>
+	</string>
+	<string id="st_ecologist_report_3_of_3_desc">
+		<text>帶有生態學家標誌的印刷檔案. 屬於機密檔案, 由以下人員簽名: %c[ui_gray_1]阿卡迪·克維特科夫斯基.\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_monolith_prayer_1_of_3_name">
+		<text>黑石福音 (第一部分)1/3</text>
+	</string>
+	<string id="st_monolith_prayer_1_of_3_desc">
+		<text>一份沒標題的檔案, 有幾個接在一起的段落. 裡面經常提到許願石, 說明它具有宗教性質. 這張檔案儲存得很好, 這表明它經受了很好的照顧以免損壞.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_monolith_prayer_2_of_3_name">
+		<text>黑石福音 (第二部分)2/3</text>
+	</string>
+	<string id="st_monolith_prayer_2_of_3_desc">
+		<text>一份沒標題的檔案, 有幾個接在一起的段落. 裡面經常提到許願石, 說明它具有宗教性質. 這張檔案儲存得很好, 這表明它經受了很好的照顧以免損壞.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_monolith_prayer_3_of_3_name">
+		<text>黑石福音 (第三部分)3/3</text>
+	</string>
+	<string id="st_monolith_prayer_3_of_3_desc">
+		<text>一份沒標題的檔案, 有幾個接在一起的段落. 裡面經常提到許願石, 說明它具有宗教性質. 這張檔案儲存得很好, 這表明它經受了很好的照顧以免損壞.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_monolithian_thoughts_name">
+		<text>黑石成員的日記</text>
+	</string>
+	<string id="st_monolithian_thoughts_desc">
+		<text>一份手寫檔案. 一開始的文字塗塗抹抹潦草無比, 就好像作者患有嚴重的精神疾病. 有趣的是越往下看文章越平和, 字母也越清晰, 最後一些單詞簡直像是列印出來的.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_letter_to_outside_name">
+		<text>給娜塔莉的信</text>
+	</string>
+	<string id="st_letter_to_outside_desc">
+		<text>顯然是一名潛行者寫給特異區外的人的信, 很可能是他的妻子或情人. 介於你現在正握著它... 這封信肯定從未送到娜塔莉的手中.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_letter_military_stalker_name">
+		<text>軍方潛行者的隨筆</text>
+	</string>
+	<string id="st_letter_military_stalker_desc">
+		<text>藏匿處里的便條, 不知道為啥要寫這東西, 很可能是某人在漫漫長夜中消磨時間的傑作. 最後他將自己的傑作留了下來, 而不是扔進篝火里.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_letter_mercenary_name">
+		<text>傭兵的便箋</text>
+	</string>
+	<string id="st_letter_mercenary_desc">
+		<text>一位傭兵的便箋. 看起來他寫了些關於他在特異區中執行任務時的所見所聞. 至於真正目的尚不清楚.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_letter_military_log_name">
+		<text>通訊記錄 / MSRC行動 / 05.04.2014 18:36:21</text>
+	</string>
+	<string id="st_letter_military_log_desc">
+		<text>駐紮在特異區的軍方之間的無線電通訊記錄. 屬於一位刺鰩行動部隊的戰士, 他一定參與了這項秘密行動, 很可能與監視活動有關.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 軍方物品\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_letter_stalker_letter_3_name">
+		<text>給尼古拉的信</text>
+	</string>
+	<string id="st_letter_stalker_letter_3_desc">
+		<text>寫給尼古拉的一封手寫信. 很可能是兩個長期進行書信來往的潛行者的. 雖然特異區內的通訊主要靠個人移動終端(PDA), 但也有一些人更喜歡傳統的通訊方式, 尤其是處理私人事務時或者是和朋友之間的聯絡活動. 這些信件會被交給信使, 他們像導遊一樣被委以最困難危險的任務. 信件到達收件人那裡通常需要幾天時間, 資訊被竊取的概率比PDA通訊低得多.信使在潛行者間享有很高的聲望, 在潛行者群體間更是具有重要的影響力.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+</string_table>

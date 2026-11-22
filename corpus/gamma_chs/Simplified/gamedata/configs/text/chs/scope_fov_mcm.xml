@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+
+	<string id="ui_mcm_scop_title">
+		<text>瞄具HUD设置</text>
+	</string>	
+	<string id="ui_mcm_menu_scop">
+		<text>调节瞄具HUD</text>
+	</string>
+
+	<string id="ui_mcm_scop_iron_fov">
+		<text>机瞄和内置的3D镜</text>
+	</string>
+	<string id="ui_mcm_scop_iron_fov_desc">
+		<text>如果降低此值的话, 在执行瞄准时会让瞄具或枪械内置的3D镜离自己更近</text>
+	</string>
+
+	<string id="ui_mcm_scop_scope_fov">
+		<text>3D瞄具</text>
+	</string>
+	<string id="ui_mcm_scop_scope_fov_desc">
+		<text>降低此值的话, 在瞄准时会让3D瞄具离自己更近</text>
+	</string>
+
+	<string id="ui_mcm_scop_bad_scope_fov">
+		<text>ACOG,Susat等3D光学瞄具</text>
+	</string>
+	<string id="ui_mcm_scop_bad_scope_fov_desc">
+		<text>由于技术限制, 为了让某些瞄具看上去正常, 距离都设置的很远, 用这个选项可以调节</text>
+	</string>
+
+	<string id="ui_mcm_scop_pistol_fov">
+		<text>手枪</text>
+	</string>
+	<string id="ui_mcm_scop_pistol_fov_desc">
+		<text>手枪离自己的距离</text>
+	</string>
+
+	<string id="ui_mcm_scop_grenade_fov">
+		<text>榴弹发射器挂载</text>
+	</string>
+	<string id="ui_mcm_scop_grenade_fov_desc">
+		<text>降低此值会让下挂的榴弹发射器离自己更近</text>
+	</string>
+	<string id="ui_mcm_scop_alt_fov">
+		<text>额外瞄具(侧瞄)</text>
+	</string>
+	<string id="ui_mcm_scop_alt_fov_desc">
+		<text>降低此值会让额外的瞄具比如侧瞄离自己更近</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_add">
+		<text>使武器离自己更远</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_add_desc">
+		<text>通过增加HUD的FOV视野缩放来使武器离自己更远</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_subtract">
+		<text>让武器离自己更近</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_subtract_desc">
+		<text>通过减少HUD的FOV视野缩放来使武器离自己更近</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_reset">
+		<text>重置当前武器</text>
+	</string>
+	<string id="ui_mcm_scop_keybind_reset_desc">
+		<text>将手持武器HUD的FOV视野重置</text>
+	</string>
+
+	<string id="ui_mcm_scop_snk_update_mcm">
+		<text>升级MCM来使用这个功能. 默认使用小键盘"+","-"来增减武器FOV, 退格键Backspace为重置</text>
+	</string>
+</string_table>

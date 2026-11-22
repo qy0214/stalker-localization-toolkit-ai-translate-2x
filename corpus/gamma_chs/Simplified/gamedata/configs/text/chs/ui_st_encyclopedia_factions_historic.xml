@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_factions_historic">
+		<text>阵营 (历史上有名的)</text>
+	</string>
+	
+	<string id="encyclopedia_factions_historic_final_day">
+		<text>末日组织</text>
+	</string>
+	<string id="encyclopedia_factions_historic_final_day_text">
+		<text>
+			%c[guide_blue]末日组织%c[ui_gray] 是一个生态学家性质的阵营, 别名 %c[guide_blue]审判日%c[ui_gray], 或者 "%c[guide_blue]荒野潜行者%c[ui_gray]".\n
+			\n%c[guide_green]情报%c[ui_gray]\n
+			\n他们确信, 特异区最终会导致世界末日, 随着每一次能量风暴的日益强大, 特异区的范围将会不断扩大.\n
+			\n他们会为了自己的研究计划而大批猎杀僵尸化的潜行者, 除了他们那现在差不多被遗忘的领袖被一个叫鬼魂的潜行者暗杀了之外, 我们现在对他们所知甚少.\n
+			\n由于他们的主要活动是从毁灭晴空的那次大规模能量风暴后开始的, 所以他们有可能是从一群目睹了大规模能量风暴的晴空幸存者中分裂出来的人.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_historic_isg">
+		<text>ISG</text>
+	</string>
+	<string id="encyclopedia_factions_historic_isg_text">
+		<text>
+			The %c[guide_blue]国际科研团队%c[ui_gray] 是一个为了研究特异区的组织.\n
+			\n%c[guide_green]情报%c[ui_gray]\n
+			\n在特异区突然出现后, 联合国成立了一个新的研究机构, 其唯一目的是为了研究和解释这一奇怪新现象.\n
+			\n在遥远的北部, 那六台大型发电机的周边区域被他们认为是最有科学意义的, 因此被他们选作探索的地点.\n
+			\n仅仅持续了几个月, 他们的工作就被不可预料的因素打断了.\n
+			\n研究人员不断被看不见的异常点吞噬, 或者被可怕的怪物撕成碎片. 其他人也莫名其妙的消失了, 几天后回来的一些人又神志不清的想杀死他们的同事.\n
+			\n探险队几乎什么任务都没完成就被解散了, 最终结果是高的无法接受的伤亡数字.\n
+			\n乌克兰政府并没有被他们的失败所吓到, 他们成立了新的研究机构来继续他们的工作, 也就是现在的生态学家.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_historic_renegade">
+		<text>叛节者</text>
+	</string>
+	<string id="encyclopedia_factions_historic_renegade_text">
+		<text>
+			The %c[guide_blue]叛节者%c[ui_gray] 是特异区里最卑鄙无耻的潜行者.\n
+			\n%c[guide_green]情报%c[ui_gray]\n
+			\n他们不受任何道德的限制, 他们主要由那些犯下了可怕罪行而被原有组织赶出去的潜行者们组成.\n
+			\n他们唯一遵从的守则就是武力至上, 他们会在特异区的边缘掠夺弱者, 通常目标是那些年轻的, 没有经验的, 没有任何办法反抗他们的人.\n
+			\n在无数敌人的围攻下, 他们被迫进入大沼泽, 在面对晴空的情况下, 他们的求生欲迫使这些豺狼抱团成为了一个新的阵营.
+		</text>
+	</string>
+	
+</string_table>

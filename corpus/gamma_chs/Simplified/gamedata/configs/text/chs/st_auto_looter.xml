@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>	
+	<string id="st_auto_looter_no_valid_tool">
+		<text>用于拆卸的工具缺失或损坏, 未执行自动拆卸</text>
+	</string>
+	<string id="st_auto_looter_still_running">
+		<text>自动拾取还在处理这件物品</text>
+	</string>
+	<string id="st_auto_looter_remote_looting_disabled">
+		<text>禁用远程拾取</text>
+	</string>
+	<string id="st_auto_looter_remote_looting_too_far">
+		<text>拾取目标超出范围</text>
+	</string>
+	<string id="st_auto_looter_parts_not_stripped">
+		<text>自动拾取: 无法自动移除武器零件（被其他脚本延迟）, 请再次尝试</text>
+	</string>
+
+	<!-- Context menu on items -->
+	<string id="st_auto_looter_enable_auto_disassemble">
+		<text>启用自动拆卸</text>
+	</string>
+	<string id="st_auto_looter_disable_auto_disassemble">
+		<text>禁用自动拆卸</text>
+	</string>
+
+	<string id="st_auto_looter_enable_auto_loot">
+		<text>启用自动拾取</text>
+	</string>
+	<string id="st_auto_looter_disable_auto_loot">
+		<text>禁用自动拾取</text>
+	</string>
+</string_table>

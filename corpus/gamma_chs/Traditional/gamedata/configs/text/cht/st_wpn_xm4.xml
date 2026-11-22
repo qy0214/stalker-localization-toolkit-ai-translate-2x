@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+	
+	<string id="st_wpn_xm4">
+		<text>XM177E2</text>
+	</string>
+	<string id="st_wpn_xm4_descr">
+		<text>XM177E2(或XM4)的血統可以追溯到 M16 的早期卡賓槍版本, 全部基於 ArmaLite 製造的原始 AR-15; 它是 M16 突擊步槍的更短, 更輕的版本, 幾乎共用了 80% 的零件; XM4 發射 5.56x45 毫米北約彈, 具有氣動, 風冷, 彈匣供彈, 和多射擊模式的特點, 配有 4 檔伸縮槍托; 與許多卡賓槍一樣, XM4 比全長步槍更方便攜帶; 它已被美國特種作戰司令部(USSOCOM)採用, 是美國陸軍特種部隊和海軍海豹突擊隊的首選武器 \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 消音器: ADVANCED ARMAMENT (AAC) M4-2000 \n</text>
+	</string>
+	
+</string_table>

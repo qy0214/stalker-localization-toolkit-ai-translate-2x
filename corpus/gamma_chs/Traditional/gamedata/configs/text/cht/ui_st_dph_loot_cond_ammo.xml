@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_dph_loot_cond">
+		<text>掉落狀況</text>
+	</string>
+	<string id="ui_mcm_menu_ammo">
+		<text>彈藥</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_ammo">
+		<text>彈藥</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_ammo_factor">
+		<text>數量</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_ammo_disable_bad">
+		<text>不要產生舊彈藥</text>
+	</string>
+</string_table>

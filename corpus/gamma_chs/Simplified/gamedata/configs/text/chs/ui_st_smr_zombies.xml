@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_smr_zombies">
+		<text>僵尸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombie_spawn">
+		<text>启用僵尸生成</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombie_chance">
+		<text>僵尸生成几率</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombie_chance_desc">
+		<text>潜行者/变异怪物生成被僵尸替换的几率（百分比）. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_seek_enabled">
+		<text>僵尸寻找玩家</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_seek_enabled_desc">
+		<text>在尸潮模式中,僵尸在特定的半径范围内会向玩家移动（即使它们没有被惊动）. 他们会重复这个行为. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_seek_distance">
+		<text>寻找敌人的距离</text>
+	</string>
+	<!-- ZOMBIE TYPES -->
+	<string id="ui_mcm_smr_zombies_zombie_types_title">
+		<text>僵尸变种</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombie_types_info">
+		<text>你可以在下面控制将产生哪些僵尸变种. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombiesp">
+		<text>基本僵尸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombies_amount">
+		<text>基本僵尸的数量</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombies_amount_desc">
+		<text>与其他变异怪物相比,基本僵尸生成（如果启用）的倍率系数. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_blindp">
+		<text>盲眼僵尸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_zombifiedp">
+		<text>僵尸潜行者</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_fracturep">
+		<text>长臂怪人</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_snorkp">
+		<text>史诺克</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_bloodsuckerp">
+		<text>吸血怪</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_zombies_psysuckerp">
+		<text>夺灵怪</text>
+	</string>
+</string_table>

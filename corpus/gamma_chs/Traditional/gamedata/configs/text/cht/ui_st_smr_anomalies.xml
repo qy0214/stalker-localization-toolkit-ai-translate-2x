@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_SMR">
+		<text>特異區定製計劃ZCP</text>
+	</string>
+	
+	<string id="ui_mcm_menu_smr_anomalies">
+		<text>異常點</text>
+  </string>
+    <string id="ui_mcm_SMR_smr_anomalies_dyn_ano_chance">
+		  <text>動態異常點產生數量</text>
+    </string>
+    <string id="ui_mcm_SMR_smr_anomalies_dyn_ano_chance_desc">
+      <text>如果啟用了動態異常,這將增加/減少它們出現的機會. 如果沒有 ZCP,遊戲總是使用 35%</text>
+    </string>
+		<string id="ui_mcm_SMR_smr_anomalies_pulse">
+			<text>啟用"脈衝"異常</text>
+		</string>
+		<string id="ui_mcm_SMR_smr_anomalies_pulse_desc">
+			<text>"脈衝"是一種異常現象,有時會在你上方出現光團, 並引發靈體能量擊中地面 </text>
+		</string>
+    <string id="ui_mcm_smr_anomalies_anomalies_types_title">
+		<text>異常型別</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_anomalies_anomalies_types_info">
+		<text>你可以在下面控制將產生哪些型別的動態異常. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_anomalies_electric">
+		<text>電能</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_chemical">
+		<text>生化</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_thermal">
+		<text>熱能</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_gravitational">
+		<text>重力</text>
+	</string>
+  <string id="ui_mcm_SMR_smr_anomalies_radioactive">
+		<text>放射性</text>
+	</string>
+  </string_table>

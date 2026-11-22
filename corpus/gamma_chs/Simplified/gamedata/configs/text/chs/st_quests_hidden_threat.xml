@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Storyline: Hidden Threat
+	Version:   1.0
+    Autor:     Longreed
+	Last Edit: 01/11/2021
+-->
+<string_table>
+    
+	<!--==================== Task 1 =========================================-->
+	<string id="st_sl_hidden_threat_task_1_stage_0_title">
+	    <text>隐藏的威胁：开始</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_0_descr">
+	    <text>指挥官下达了一个任务：在黑暗的房间里找到黑猫. 
+向库兹涅佐夫上校询问更详细的任务. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_1_title">
+	    <text>隐藏的威胁：幸存的潜行者</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_1_descr">
+	    <text>库兹涅佐夫没有提供更多关于我的任务的实质性信息. 此外,上校指示我检查暗景中的潜行者发生了什么. 在位于 Cordon 的农场里,有一个潜行者在锯木厂的袭击中幸存下来. 将不得不使用伪装与他交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_2_title">
+	    <text>隐藏的威胁：返回库兹涅佐夫上校处. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_2_descr">
+	    <text>出了点问题,潜行者已经死了. 将失败通知库兹涅佐夫. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_3_title">
+	    <text>隐藏的威胁：前往黑暗小径中的锯木厂</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_3_descr">
+	    <text>值得自己环顾锯木厂,寻找任何有用的信息,这些信息可能有助于了解最近在这里发生的事件. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_4_title">
+	    <text>隐藏的威胁：检查锯木厂大楼</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_4_descr">
+	    <text>值得自己环顾锯木厂,寻找任何有用的信息,这些信息可能有助于了解最近这里发生的事情. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_5_title">
+	    <text>隐藏的威胁：返回库兹涅佐夫上校处. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_1_stage_5_descr">
+	    <text>发现不多,至少可以这么说. 这里没什么好做的了,是时候带着报告回去给指挥官了. </text>
+	</string>
+	<!--==================== Task 2 =========================================-->
+	<string id="st_sl_hidden_threat_task_2_stage_0_title">
+	    <text>隐藏的威胁：关闭"焦脑器"</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_2_stage_0_descr">
+	    <text>""焦脑器""严重阻碍了北方的军事行动. 库兹涅佐夫给了一个艰巨的任务：处理它. 扬塔上的生态学家们一定已经想出了办法. 我们需要和萨哈洛夫谈谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_2_stage_1_title">
+	    <text>隐藏的威胁：返回库兹涅佐夫上校处. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_2_stage_1_descr">
+	    <text>""焦脑器""已经关闭. 继续向上校报告. </text>
+	</string>
+	<!--==================== Task 3 =========================================-->
+	<string id="st_sl_hidden_threat_task_3_stage_0_title">
+	    <text>隐藏的威胁：前往木星工厂. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_0_descr">
+	    <text>代格捷列夫派出的小队在执行一项秘密任务时收到了"求救"信号. 据悉,该小队在"木星"工厂境内遭到不明人员袭击,急需火力支援. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_1_title">
+	    <text>隐患：检查"木星工厂"的生产设施</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_1_descr">
+	    <text>厂房门口空无一人,从行政楼里传来同样的声音. 我们需要进一步进入生产设施. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_2_title">
+	    <text>隐藏的威胁：检查攻击者的尸体</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_2_descr">
+	    <text>士兵死了,无法挽救. 他们在工厂执行了什么任务,只有 Degtyarev 知道. 不知名的潜行者给了我热烈的欢迎. 他们在工厂里找东西. 嗯...带有我不知道的符号的人字形. 也许上校知道的更多. 我们至少应该得到一个. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_3_title">
+	    <text>隐藏的威胁：与库兹涅佐夫上校交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_3_stage_3_descr">
+	    <text>未知的潜行者,阵营臂章是我不认识的图案. 或许上校更了解他们. </text>
+	</string>
+	<!--==================== Task 4 =========================================-->
+	<string id="st_sl_hidden_threat_task_4_stage_0_title">
+	    <text>隐藏的威胁：与基里洛夫中尉交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_0_descr">
+	    <text>基里洛夫中尉让我过来看看他. 从我这里找出他需要什么. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_1_title">
+	    <text>隐藏的威胁：带上黑谷的军队无线电</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_1_descr">
+	    <text>作为邮递员佩奇金所需要的只是一点工作. 我想我能应付. 一支军队守卫黑谷"X-18"实验室的入口,等待我的包裹. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_2_title">
+	    <text>隐藏威胁：击退 ISG 攻击. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_2_descr">
+	    <text>天啊！ 时间不对,地点不对. 我需要组织防御. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_3_title">
+	    <text>隐藏的威胁：检查攻击者. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_3_descr">
+	    <text>好吧. 活得好好的,这很好. 我们需要检查攻击者以获取有用的信息. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_4_title">
+	    <text>隐藏的威胁：与基里洛夫中尉交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_4_descr">
+	    <text>在一名 ISG 雇佣兵身上发现了一个 PDA,很可能是该组织的指挥官.  PDA被锁住了,我们的技术人员应该可以应付,说不定出解码出什么东西. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_5_title">
+	    <text>隐藏的威胁：等待基里洛夫解锁 PDA</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_5_descr">
+	    <text>基里洛夫说,黑客攻击不会花费太多时间. 一天或更长时间. 在此期间,我们可以管好自己的事. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_6_title">
+	    <text>隐藏的威胁：与基里洛夫中尉交谈</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_6_descr">
+	    <text>技术人员报告说,该PDA似乎被黑了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_7_title">
+	    <text>隐藏的威胁：与库兹涅佐夫上校交谈</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_4_stage_7_descr">
+	    <text>在 PDA 的地图上,有一些我已经熟悉的标记. 木星工厂,X-18 上的工厂. 那是我遇到 ISG 的地方. 因此,其他标记也是 ISG 的目标,我需要向库兹涅佐夫报告. </text>
+	</string>
+	<!--==================== Task 5 =========================================-->
+	<string id="st_sl_hidden_threat_task_5_stage_0_title">
+	    <text>隐藏的威胁：认识戈罗贝茨中士. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_0_descr">
+	    <text>中士发现了 ISG 小组并寻求帮助. 会面地点是普城郊区的医院. 我没有别的事可做,上校没有给我的任务也没有了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_1_title">
+	    <text>隐藏的威胁：捕鼠器中的老鼠. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_1_descr">
+	    <text>.</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_2_title">
+	    <text>隐藏威胁：摧毁 ISG 狙击手</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_2_descr">
+	    <text>ISG 计划消灭 Degtyarev 上校. 他没有机会.  ISG特遣队早就出动了,估计来不及警告上校了. 但是我可以冒险摧毁狙击手并防止陷阱猛击. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_3_title">
+	    <text>隐藏威胁：为 SSU 分队提供火力支援</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_3_descr">
+	    <text>狙击手被消灭. 由 Degtyarev 领导的 SSU 支队遭到 ISG 突击队的袭击,您需要急于帮助他们. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_4_title">
+	    <text>隐藏的威胁：与 Degtyarev 上校交谈</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_4_descr">
+	    <text>ISG小组已被消灭. 与上校交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_5_title">
+	    <text>隐藏的威胁：在百货店里找到那个箱子</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_5_descr">
+	    <text>上校指示我去百货商店取回一个 SSU 特工留下的公文包. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_6_title">
+	    <text>隐藏的威胁：将案件提交给 Agroprom</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_5_stage_6_descr">
+	    <text>Degtyarev 正在 Agroprom 军事基地等我. </text>
+	</string>
+	<!--==================== Task 6 =========================================-->
+	<string id="st_sl_hidden_threat_task_6_stage_0_title">
+	    <text>隐藏的威胁：与 Degtyarev 上校交谈</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_0_descr">
+	    <text>我接到上校的命令,返回基地与他交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_1_title">
+	    <text>隐藏的威胁：为死城添加书签</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_1_descr">
+	    <text>任务没有封尘,到达死城,在西南的一座孤零零的房子里放置记录仪. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_2_title">
+	    <text>隐藏的威胁：等待 2 天. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_2_descr">
+	    <text>纪录完成. 两天就可以收了. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_3_title">
+	    <text>隐藏的威胁：从死城捡起纪录. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_3_descr">
+	    <text>2天过去了,你需要拿起录音机交给Degtyarev上校. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_4_title">
+	    <text>隐藏的威胁：返回到 Degtyarev. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_4_descr">
+	    <text>我有录音机,你需要把它交给德格捷列夫上校. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_5_title">
+	    <text>隐藏的威胁：与 CNPP 的班长交谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_5_descr">
+	    <text>ISG 正计划在 CNPP 突破单色. 他们很可能已经在那里,我的工作是让他们远离石棺. 我的支援小队在安排好的地点等我. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_6_title">
+	    <text>隐藏的威胁：前往CNPP的西北部. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_6_descr">
+	    <text>在正门,只发现了佣兵. 找不到 ISG. 班长报告说,他的一名侦察员停止了联系. 他可能已经被发现并摧毁了,由于正门不是我们的主要目标,因此值得检查从医院的道路. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_7_title">
+	    <text>隐藏的威胁：消灭 ISG 团队. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_7_descr">
+	    <text>正如我所怀疑的那样. 佣兵们正分散着单色主力的注意力,而ISG这群人,悄悄地从医院一侧进来,并没有引起注意. 去战斗！</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_8_title">
+	    <text>隐藏的威胁：向 Degtyarev 报告成功</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_6_stage_8_descr">
+	    <text>任务完成,ISG群被灭,现在要向上校报告. </text>
+	</string>
+	<!--==================== Task 7 =========================================-->
+	<string id="st_sl_hidden_threat_task_7_stage_0_title">
+	    <text>隐藏的威胁：向库兹涅佐夫上校报告. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_0_descr">
+	    <text>在杰格捷列夫不在的情况下,我现在再次服从库兹涅佐夫,他为什么需要我？ 没有一天的安宁...</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_1_title">
+	    <text>隐藏的威胁：与 韦列夏金 少校交谈</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_1_descr">
+	    <text>说我很惊讶没什么好说的.  韦列夏金 少校是在普里皮亚奇救了我一命的 SSU 特工,我认出了他. 到底发生了什么事把他带到这里来？</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_2_title">
+	    <text>隐藏的威胁：到达普里皮亚奇地铁的入口</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_2_descr">
+	    <text>是时候完成 ISG 我的突击小队正在尤皮特一侧的普里皮亚奇地下入口处等我. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_3_title">
+	    <text>隐藏的威胁：进入普里皮亚奇地下. </text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_3_descr">
+	    <text>现在是我们解决 ISG 的时候了...</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_4_title">
+	    <text>隐藏的威胁：消灭普里皮亚奇地下的任何敌人</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_4_descr">
+	    <text>现在是我们结束 ISG 的时候了...</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_5_title">
+	    <text>隐藏的威胁：向 韦列夏金 少校报告成功</text>
+	</string>
+	<string id="st_sl_hidden_threat_task_7_stage_5_descr">
+	    <text>ISG 已解决,攻击成功,是时候向 韦列夏金 少校报告了. </text>
+	</string>
+	<!--==================== Second Task 1 ==================================-->
+	<string id="st_sl_hidden_threat_second_task_1_stage_0_title">
+	    <text>[HT]南方检查站：交出文件</text>
+	</string>
+	<string id="st_sl_hidden_threat_second_task_1_stage_0_descr">
+	    <text>将会计报告交给南部路障封锁线的朱罗夫少校. </text>
+	</string>
+	<!--==================== Second Task 2 ==================================-->
+	<string id="st_sl_hidden_threat_second_task_2_stage_0_title">
+	    <text>[HT]Agroprom: 寻找快递</text>
+	</string>
+	<string id="st_sl_hidden_threat_second_task_2_stage_0_descr">
+	    <text>洛日金中士指示从填埋场寻找丢失在路上某个地方的信使到基地. 中士对快递员给他提的包裹更感兴趣. </text>
+	</string>
+	<string id="st_sl_hidden_threat_second_task_2_stage_1_title">
+	    <text>[HT]Agroprom：将包裹退回Lozhkin</text>
+	</string>
+	<string id="st_sl_hidden_threat_second_task_2_stage_1_descr">
+	    <text>洛日金中士奉命寻找从填埋场到基地的在路上迷路的信使. 中士对快递员给他提的包裹更感兴趣. </text>
+	</string>
+	<!--======== Tips message ��� "Hidden Threat" ==========================-->
+	<string id="st_sl_hidden_threat_msg_start">
+	    <text>%s,基地需要你在场. 有一个紧急任务. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_2_start">
+	    <text>军队潜行者,我们的案子还是死路一条. 但是你有一个艰巨的任务. 我们的北方行动受到"焦脑器"的严重阻碍. 在扬塔上与 Sakharov 交谈并找到禁用它的方法. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_3_start">
+	    <text>军队潜行者,来看我,我需要和你谈谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_4_start">
+	    <text>%s,请进,我们需要谈谈. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_4_stg_6_msg">
+	    <text>%s,关于你的 PDA. 来吧,我们有话要说. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_5_start">
+	    <text>嘿 %s,好久不见. 我发现一群 ISG 我一个人做不了,我需要帮助. 如果你有胆量去普城郊区的医院,说不定还能从老板那里获得新的荣誉. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_6_start">
+	    <text>军队潜行者 %s,命令是到达基地并直接来找我. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_task_7_start">
+	    <text>军队潜行者 %s,命令立即向我报告！</text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_armistice_title">
+	    <text>已收到：</text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_armistice_msg">
+	    <text>%s：独行者 - 2 小时</text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_armistice_path">
+	    <text>停战</text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_armistice_start">
+	    <text>%s 找你. 我们向我们的基地开放了 2 小时的免费通行证. 如果你想活下去,我们就不要做傻事. 我们的孩子,他们不太喜欢战士. </text>
+	</string>
+	<string id="st_sl_hidden_threat_msg_armistice_end">
+	    <text>%s 休战结束. </text>
+	</string>
+	<string id="st_sl_hidden_threat_spooner_notes_title">
+	    <text>已收到：</text>
+	</string>
+	<string id="st_sl_hidden_threat_spooner_notes_descr">
+	    <text>新的 PDA 条目：来自中士的注释. 洛日金</text>
+	</string>
+	<string id="st_sl_hidden_threat_darkvalley_msg_header">
+	    <text>军队</text>
+	</string>
+	<string id="st_sl_hidden_threat_darkvalley_msg_text">
+	    <text>我看到了敌人！ 去打仗！</text>
+	</string>
+    <!--=====================================================================-->
+    <string id="st_sl_hidden_threat_map_spot_cf">
+	    <text>感兴趣的地方</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- Sorter -->
+	<string id="st_ui_craft_artefacts_container">
+		<text>神器(装在容器里)</text>
+	</string>
+    <string id="st_item_use_empower">
+		<text>神器增幅</text>
+	</string>
+	<string id="st_item_use_fuse">
+		<text>神器制造</text>
+	</string>
+	<string id="st_item_use_craft">
+		<text>打开工作台</text>
+	</string>	
+    <string id="st_ui_itm_repair_support_grok_artefacts">
+		<text>要融解的神器</text>
+	</string>
+    <string id="st_ui_itm_repair_base_grok_artefacts">
+		<text>要强化的神器</text>
+	</string>
+    <string id="st_melter">
+		<text>神器熔炉</text>
+	</string>
+    <string id="st_melter_desc">
+		<text>由萨哈洛夫博士创造的高科技设备, 神器熔炉（AM）以神器作为材料进行加工与合成, 这个工具的能量来自于神器内的能量, 可以通过融解神器来储存能量以便使用, 神器熔炉可以增幅同类神器的能量, 也可以融合不同种类的神器来生成新的神器, 至于具体的过程, 和中间涉及的科学理论尚未被完全解密, 最新的研究表明, 该工具可以利用"念域"的力量, 所以它只能在特异区内才能正常工作, 许多潜行者都想要获得这种工具, 以便创造更强大的神器为自己所用, 又或是去黑市交易和进行境外走私\n \n
+		    %c[0,255,255,255]安装在该设备上的神器熔炉操作系统（AMOS）v2.15a的特点:\n
+			%c[d_cyan] • 融解神器：按住安全键（Left alt）,将神器熔炉移到任何神器上进行融解操作, 会给熔炉充能, 神器越独特, 充能就越多\n
+		    %c[d_cyan] • 神器增幅：在AMOS主菜单中选择"神器增幅", 可以使用同类神器来强化神器的能量 \n
+		    %c[d_cyan] • 神器制造：在AMOS主菜单中选择"神器制造"并打开配方子菜单, 使用多个神器来合成一个新的神器, 成品神器的能量等于所有耗材神器的平均能量, AMOS中已经包含了一些已知的配方\n
+		    %c[d_cyan] • AMOS具有内置的安全协议来避免故障发生, 如果熔炉能量不足10%则无法使用\n
+			%c[0,81,63,22] • %c[ui_red] 目前右键查看此物品详细信息的操作会100%使游戏崩溃, 是一种能使玩家快速退出游戏的方法\n
+		</text>
+	</string>
+	    <string id="st_grizzly">
+		<text>灰熊探测器</text>
+	</string>
+    <string id="st_grizzly_desc">
+		<text>这个异常点探测器是熊式探测器的升级版,能够像火神探测器或维利探测器一样,探测到所有已知的神器特征. 这种升级版的熊式探测器尤其受到夜间猎取神器的潜行者的青睐,因为它的简单显示与夜视仪兼容. \n \n
+		%c[ui_gray_3]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 一般电力消耗\n		</text>
+	</string>
+	
+</string_table>

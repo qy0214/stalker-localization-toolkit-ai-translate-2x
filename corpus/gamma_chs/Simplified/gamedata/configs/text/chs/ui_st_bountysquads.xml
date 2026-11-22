@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+	<string id="ui_mcm_menu_bountysquads">
+		<text>赏金小队扩展</text>
+	</string>
+	<string id="ui_mcm_title_bountysquads">
+		<text>赏金小队扩展</text>
+	</string>
+
+	<string id="ui_mcm_bountysquads_delay">
+		<text>赏金小队生成间隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_desc">
+		<text>这个时间是赏金小队生成的最小间隔, 使用游戏中的时间, 单位为小时, 只有在游戏中经过这么久后才会有可能去判定是否生成赏金小队, 至于最终是否判定生成, 则要看每个阵营赏金小队的生成几率</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_spawn">
+		<text>赏金小队生成条件的更新间隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_spawn_desc">
+		<text>这个时间是赏金小队生成条件更新的最小间隔, 使用现实的时间, 单位为秒, 会持续更新玩家的阵营, 好感和生成判定, 在游戏加载后重置时间, 因此玩家在这段时间内必须始终处于已链接的敌对位置地图中, 才会有机会生成赏金小队</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_state">
+		<text>玩家位置更新间隔</text>
+	</string>
+	<string id="ui_mcm_bountysquads_delay_state_desc">
+		<text>顾名思义, 使用现实时间, 单位为秒, 赏金小队判定目标地点实现移动和追踪的时间间隔, 如果判定目标在"安全区域"且附近有盟友存在的话则会暂停追踪</text>
+	</string>
+	<string id="ui_mcm_bountysquads_base_spawn_chance">
+		<text>赏金小队生成的基础几率</text>
+	</string>
+	<string id="ui_mcm_bountysquads_base_spawn_chance_desc">
+		<text>当玩家没有杀死某阵营的任何成员时, 该阵营的赏金小队在指定更新间隔中生成的几率, 赏金小队的总生成几率计算为: (基础几率 * 阵营加乘), 其中阵营加乘取决于有多少阵营成员被玩家杀死, 建议将此值保持在较低水平, 因为阵营加乘肯定会越来越高, 最终确保赏金小队的生成</text>
+	</string>
+	<string id="ui_mcm_bountysquads_spawn_mult_attacked_increment">
+		<text>阵亡成员的阵营加乘增量</text>
+	</string>
+	<string id="ui_mcm_bountysquads_spawn_mult_attacked_increment_desc">
+		<text>如果玩家对某个特定阵营尤其"照顾", 那该阵营会有更大的几率派遣赏金小队追捕玩家, 玩家每杀死一个潜行者, 死者的阵营就会增加一个乘数用于判定赏金小队生成, 例如此值设置为 0.5的话, 则玩家第一次杀死某阵营成员时, 乘数会增加到1.5, 下一个死者会将其增加到2.0, 依此类推; 之后这个值会接着乘以"基础几率"来判定该阵营是否最终决定派出赏金小队</text>
+	</string>
+
+
+</string_table>

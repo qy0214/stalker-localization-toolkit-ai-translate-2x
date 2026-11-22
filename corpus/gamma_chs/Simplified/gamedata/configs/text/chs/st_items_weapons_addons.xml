@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons Attachments
+-->
+<string_table>
+
+	<string id="st_addon_scope">
+		<text>PSO-1M 光学瞄准镜 (BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有华约步枪\n \n%c[ui_gray_1]PSO(Pritsel Snaipersky Optichesky)"狙击手用光学瞄准具",是由前苏联新西伯利亚仪器制造厂生产的一系列光学瞄准镜(NPZ国家光学机器设备厂). 自1964年生产以来,被运送到俄罗斯军队给SVD系列狙击步枪使用. 这种瞄准镜之后也被加以改进以便于在AK74或者AN94一类的武器上使用. PSO瞄准镜因耐用性、多功能性和精心设计的分化线而闻名. 通过华约标准的燕尾槽来固定在武器上,4倍的放大倍率意味着它主要适用于中远距离的战斗.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]PSO-1</text>
+	</string>
+	
+	<string id="st_addon_scope_1p29">
+		<text>1P29"郁金香"光学瞄准镜 (BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_1p29_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有华约步枪\n \n%c[ui_gray_1] 1P29瞄准镜是一种小型战场瞄准镜,1P29瞄准镜倍率4倍,视场8度. 事实上,这个瞄准镜是英国SUSAT瞄准镜的仿制型,专门用于安装在AK步枪的侧式瞄准镜座上. 而有趣的是,这种设计是把SUSAT反过来: SUSAT用作瞄准分划的锥形分化柱是从底部竖上去的,而1P29瞄准镜则是从顶部吊下来的. 与SUSAT一样的是,1P29瞄准镜在夜间可用绿光照亮锥形塑料柱的尖端,另外还在右侧增加了一块类似PSO-1的测距分划板,这也是1P29瞄准镜比起SUSAT的创新之处.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]PSU-1</text>
+	</string>
+	
+	<string id="st_addon_scope_ac10632">
+		<text>巴斯卡AC10632瞄准镜(BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_ac10632_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2]所有北约步枪\n \n%c[ui_gray_1]Barska AC10632反射式瞄准镜,用于快速瞄准. 兼容所有带有皮卡汀尼导轨的武器,调整瞄准分划的亮度级别(7级),能够在不同的光线水平下瞄准目标.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]无\n</text>
+	</string>
+	
+	<string id="st_addon_scope_acog">
+		<text>ACOG 光学瞄准镜 (BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_acog_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2]所有北约步枪\n \n%c[ui_gray_1]为北约国家步枪设计的可拆卸光学瞄准镜. ACOG是Trijicon公司生产的前进牌战术光学瞄准镜的缩写,这种类型的瞄准镜安装在皮卡汀尼导轨上. 瞄准镜采用了Trijicon公司专利的双照明系统带有自然光和氚光,带有放大倍率的USMC分划.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]4x\n
+		%c[d_purple] • %c[ui_gray_2] 分划: %c[ui_gray_1]USMC</text>
+	</string>
+	
+	<string id="st_addon_scope_eotech">
+		<text>EOTech 553 全息衍射瞄准镜</text>
+	</string>
+	<string id="st_addon_scope_eotech_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2]所有北约步枪\n \n%c[ui_gray_1] 适用于北约规格的各类武器的全息瞄准镜,是一种直接观察弹着点并用弹着点作为瞄准标志的革命式速瞄瞄具. 瞄准快而射击精准.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]无倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_scope_galil_susat">
+		<text>加利尔4.0x瞄准镜 (SUSAT)</text>
+	</string>
+	<string id="st_addon_scope_galil">
+		<text>加利尔4.0x瞄准镜</text>
+	</string>
+	<string id="st_addon_scope_galil_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] IMI加利尔突击步枪\n \n%c[ui_gray_1]以色列IMI加利尔步枪的适配4倍瞄准具.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]SUSAT</text>
+	</string>
+	
+	<string id="st_addon_scope_kobra">
+		<text>EKP 1S-03 "Kobra"反射式瞄准镜(BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_kobra_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有华约步枪\n \n%c[ui_gray_1]Kobra系列战斗瞄准镜是俄罗斯生产的一系列反射式瞄准镜,已经被俄罗斯一些特种部队所采用,并在车臣战场上使用过. 这种瞄准镜通过侧镜架可以安装在各国生产的AK步枪或以AK步枪为基础的其他枪支上,通过尾部上方的旋钮可以选择选择4种分划式样(压下旋钮时)和16级亮度. Kobra反射式瞄准镜重量轻、坚固可靠,虽然外形没有西方国家的牌子那么好看,不过绝对是物超所值.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1] 无倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_scope_po4x34">
+		<text>PO4x34瞄准镜</text>
+	</string>
+	<string id="st_addon_scope_po4x34_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] OTs-14枪族\n \n%c[ui_gray_1]OTs-14枪族的光学瞄准具.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]4x34</text>
+	</string>
+	
+	<string id="st_addon_scope_pso-1m2-01">
+		<text>PSO-1M2-1 光学瞄准镜 (BaS+Van)</text>
+	</string>
+	<string id="st_addon_scope_pso-1m2-01_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 所有华约步枪\n \n%c[ui_gray_1]PSO-1M光学瞄准镜的特殊版本,专为使用9x39重型亚音速子弹射击而设计. 分划标记和特殊测距比例尺便于计算环境补偿因素,在低光照条件下提供分划照明. 这一系列特性允许在特种部队中使用这种瞄准镜. 它也是VSS无声狙击步枪的标准瞄准镜.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 分划: %c[ui_gray_1]PSO-1-1</text>
+	</string>
+	
+	<string id="st_addon_scope_pu">
+		<text>PU瞄准镜</text>
+	</string>
+	<string id="st_addon_scope_pu_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 旧型号俄式步枪\n \n%c[ui_gray_1]苏联红军在第二次世界大战及其后几年中使用的标准制式瞄准镜, 其设计适合于步兵和精确射手步枪, 例如Mosin-Nagant或SVT-40. 拥有3.5x固定倍率, 是长距离战斗的理想选择. 像所有苏联的设计一样, 它经久好用而耐操, 至今仍在生产和使用.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]3.5x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]普通\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]PU</text>
+	</string>
+	
+	<string id="st_addon_scope_zf4">
+		<text>ZF-4瞄准镜</text>
+	</string>
+	<string id="st_addon_scope_zf4_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 老式德制步枪\n \n%c[ui_gray_1] ZF-4是史上最早的瞄准镜之一. 第二次世界大战期间在德国设计和制造, 旨在为常规步兵提供远距离战斗的能力, 由于生产数量不足, 主要被德国狙击手和精锐作战小队使用. 至今仍在被使用, 因为为它所设计的武器仍在广泛使用中, 因此在"特异区"中, 它仍然相对流行.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]2.0x\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化线: %c[ui_gray_1]ZF-41</text>
+	</string>
+	
+	<string id="st_addon_scope_cmore">
+        <text>C-MORE战术瞄具(BaS+Van)</text>
+    </string>
+    <string id="st_addon_scope_cmore_descr">
+        <text>这种高性能红点瞄准镜可提供近乎于无限的视野,同时避免了筒式内红点所常见的遮挡物和隧道视野. Railway系列预装的标准导轨底座,可以将瞄准镜安装到大多数维佛或皮卡汀尼导轨上.\n\n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]无倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 状态: %c[ui_gray_1]好\n</text>
+    </string>
+	
+	<string id="st_addon_scope_ac11090">
+        <text>AC11090红点瞄具</text>
+    </string>
+    <string id="st_addon_scope_ac11090_descr">
+        <text>适用于北约规格的突击步枪和冲锋枪的廉价2倍红点瞄具, 也可用于AK-12.</text>
+    </string>
+	
+	<string id="st_addon_sil_45">
+		<text>.45 ACP消音器</text>
+	</string>
+	<string id="st_addon_sil_45_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] .45口径武器\n \n%c[ui_gray_1].45口径手枪和冲锋枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好 (手枪)</text>
+	</string>
+	
+	<string id="st_addon_sil_57">
+		<text>5.7x28毫米消声器 (BaS+Van) </text>
+	</string>
+	<string id="st_addon_sil_57_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 5.7毫米口径武器\n \n%c[ui_gray_1]FN-P90 个人防卫武器和FN Five-seveN手枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_6p9">
+		<text>6P9消音器</text>
+	</string>
+	<string id="st_addon_sil_6p9_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米口径武器\n \n%c[ui_gray_1]PB手枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好</text>
+	</string>
+
+	<string id="st_addon_sil_9a91">
+		<text>9A-91/VSK-94消音器</text>
+	</string>
+	<string id="st_addon_sil_9a91_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9x39口径武器\n \n%c[ui_gray_1]9A-91短步枪和VSK-94所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_sil_9mm">
+		<text>9毫米消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_9mm_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米口径武器\n \n%c[ui_gray_1]9毫米手枪和冲锋枪所使用的消音器. 有效的9x18口径武器消音器,虽说有些过时但是仍非常有效,主体包含紧密的镀铜网孔,前端包含一组口径可以让子弹穿过的橡胶,常用于暗杀轻甲的敌人.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_sil_aps">
+		<text>APS消音器</text>
+	</string>
+	<string id="st_addon_sil_aps_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米口径武器\n \n%c[ui_gray_1]OTs-33 "Pernach"手枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_atg">
+		<text>ATG消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_atg_descr">
+		<text>\n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45,5.56,7.62口径.\n \n%c[ui_gray_1]战术自动消声器（ATG）设计用于降低5.45毫米卡拉什尼科夫AK74、AKS74、AK74M、AK105射击时的声音和火焰. 5.56毫米卡拉什尼科夫AK101和AK102,以及7.62毫米卡拉什尼科夫AK103和AK104.\n \n%c[d_purple] • %c[ui_gray_2] 声音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_gemtech">
+		<text>Gemtech消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_gemtech_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米,.45口径武器\n \n%c[ui_gray_1]格洛克和FN-FNP、瓦尔特等所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_kzrzp">
+		<text>KZRZP消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_kzrzp_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口径武器\n \n%c[ui_gray_1]SVD狙击步枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_nato">
+		<text>NATO消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_nato_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] .45,5.56,7.62口径武器\n \n%c[ui_gray_1]北约标准5.56x45毫米口径步枪口径武器使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_pbs1">
+		<text>PBS-1消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_pbs1_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口径\n \n%c[ui_gray_1]卡拉什尼科夫7.62毫米步枪所使用的消声器. 安装消声器时配合使用特制的亚音速子弹效果更好..\n \n%c[d_purple] • %c[ui_gray_2] 声音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_pbs4">
+		<text>PBS-4消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_pbs4_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45口径\n \n%c[ui_gray_1]卡拉什尼科夫5.45毫米自动步枪（AKS-74U）消声器.\n \n%c[d_purple] • %c[ui_gray_2] 声音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_sr25">
+		<text>SR-25消音器</text>
+	</string>
+	<string id="st_addon_sil_sr25_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2]7.62毫米口径武器\n \n%c[ui_gray_1]SR-25所使用的消音器\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_tgp-a">
+		<text>TGP-A消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_sil_tgp-a_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45口径\n \n%c[ui_gray_1]用于AK系列5.45毫米突击步枪和RPK-74机枪的战术消声器"TGP-A-5.45". 然而安装时的射击精度略有下降.\n \n%c[d_purple] • %c[ui_gray_2] 声音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_vihr">
+		<text>SR-3M消音器</text>
+	</string>
+	<string id="st_addon_sil_vihr_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9x39口径武器\n \n%c[ui_gray_1]SR-3M短步枪所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_silencer">
+		<text>美国陆军小口径步枪消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_silencer_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 5.56x45口径武器\n \n%c[ui_gray_1]美国设计和制造的先进步枪消音器,显然它已经从美国陆军的一个补给箱中"消失"了. 它由填充有四个延伸腔的高级钢制主体和后方的一系列Z型钛板组成. 这个消音器几乎能完全消除枪口焰并抑制绝大部分枪声,而且它并不需要太多的维护. 这种消音器通常用于所有西方制造的小口径步枪,并一直在西方军队中服役.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_silencer_svu">
+		<text>SVU消音器(BaS+Van)</text>
+	</string>
+	<string id="st_addon_silencer_svu_descr">
+		<text>\n \n%c[ui_gray_2]枪械配件:\n \n%c[d_cyan] • %c[ui_gray_2] SVU步枪\n \n%c[ui_gray_1]在士兵不使用亚音速弹药时, 这种特殊设计的三室消音器不能完全消除SVU步枪的枪声, 它的主要效果是减少枪声, 并使枪声大小扩散到让敌人难以察觉的程度. 它有一个特点是在末端放置了一个非常有效的制退器, 可将后坐力减少约40％. 但这是以降低子弹的枪口初速为代价的, 这降低了武器的伤害.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]差\n \n%c[ui_gray_1]特点:\n \n%c[d_red] • %c[ui_gray_2]降低后坐力</text>
+	</string>
+	
+	<string id="st_addon_trijicon_acog">
+		<text>ACOG瞄准镜(BaS+Van)</text>
+	</string>
+	<string id="st_addon_trijicon_acog_descr">
+		<text>\n \n%c[ui_gray_2]兼容:\n \n%c[d_cyan] • %c[ui_gray_2] 北约精选步枪\n \n%c[ui_gray_1]为北约国家步枪设计的可拆卸光学瞄准镜. ACOG是Trijicon公司生产的前进牌战术光学瞄准镜的缩写,这种类型的瞄准镜安装在皮卡汀尼导轨上. 瞄准镜采用了Trijicon公司专利的双照明系统带有自然光和氚光. 该型号有改进的"trijicon"分划,固定放大率为2.0x.\n \n%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]2.0x\n%c[d_purple] • %c[ui_gray_2] 状况: %c[ui_gray_1]极好\n%c[d_purple] • %c[ui_gray_2] 分划: %c[ui_gray_1]trijicon</text>
+	</string>
+	
+</string_table>

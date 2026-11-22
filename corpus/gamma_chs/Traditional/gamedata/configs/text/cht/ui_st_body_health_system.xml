@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_body_health_system_title">
+		<text>身體健康系統</text>
+	</string>
+	<string id="ui_mcm_menu_body_health_system">
+		<text>身體健康系統</text>
+	</string>
+
+	<string id="ui_mcm_body_health_system_TEXT_BASED_PATCH">
+		<text>使用文字顯示HUD</text>
+	</string>
+	<string id="ui_mcm_body_health_system_TEXT_BASED_PATCH_desc">
+		<text>(需要重新裝填）HUD的文字版本</text>
+	</string>
+
+	<string id="ui_mcm_body_health_system_NEW_LIMB_PENALTIES_FEATURE">
+		<text>新的肢體懲罰功能</text>
+	</string>
+	<string id="ui_mcm_body_health_system_NEW_LIMB_PENALTIES_FEATURE_desc">
+		<text>(需要重新載入）啟用該功能可啟用新的懲罰功能. 禁用則返回舊的BHS處罰</text>
+	</string>
+	<string id="ui_mcm_body_health_system_new_voice_sounds">
+		<text>懲罰時的呼聲</text>
+	</string>
+	<string id="ui_mcm_body_health_system_new_voice_sounds_desc">
+		<text>啟用這個功能后,在腿部受損的情況下衝刺時可啟用新的聲音. 禁用後會恢復原模式的聲音</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_penalty_minimum_hp">
+		<text>腿部受傷後頭部搖擺程度</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_penalty_minimum_hp_desc">
+		<text>至少一條腿的生命值必須低於此值才能發揮效果. 預設滑塊值為 5 意味著效果將以 4 或更少的生命值啟動. （移動速度懲罰仍然存在）</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_limping_damage_minimum_hp">
+		<text>衝刺時造成最小的腿部傷害</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_limping_damage_minimum_hp_desc">
+		<text>腿部受傷的衝刺有機會造成傷害. 此滑塊設定啟動此效果所需的最小腿部 HP,即如果滑塊為 4,腿部 HP 為 4,則效果將被啟用. （值 -1 禁用該功能）</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_animation_power">
+		<text>腿受傷的搖晃效果影響</text>
+	</string>
+	<string id="ui_mcm_body_health_system_leg_animation_power_desc">
+		<text>腿受傷的搖晃效果的懲罰基數-預設值：1.0</text>
+	</string>
+	<string id="ui_mcm_body_health_system_arm_penalty_minimum_hp">
+		<text>懲罰的最低肢體血量</text>
+	</string>
+	<string id="ui_mcm_body_health_system_arm_penalty_minimum_hp_desc">
+		<text>肢體血量值必須低於此數值才能發揮效果. 預設滑塊值 10 表示如果雙臂的血量 為 9 或更少,效果就會啟動</text>
+	</string>
+	<string id="ui_mcm_body_health_system_arm_animation_power">
+		<text>肢體效果影響</text>
+	</string>
+	<string id="ui_mcm_body_health_system_arm_animation_power_desc">
+		<text>手臂受傷的搖晃效果的懲罰基數-預設值：1.0</text>
+	</string>
+	<string id="ui_mcm_body_health_system_head_penalty_minimum_hp">
+		<text>頭部受傷最小懲罰</text>
+	</string>
+	<string id="ui_mcm_body_health_system_head_penalty_minimum_hp_desc">
+		<text>發揮效果所需的傷害. 例如,預設滑塊值為2,意味著每次爆頭傷害必須是2個或更多的血量</text>
+	</string>
+	<string id="ui_mcm_body_health_system_head_animation_power">
+		<text>頭部效果影響</text>
+	</string>
+	<string id="ui_mcm_body_health_system_head_animation_power_desc">
+		<text>頭部受傷的搖晃效果的懲罰基數-預設值：1.0</text>
+	</string>
+
+
+</string_table>

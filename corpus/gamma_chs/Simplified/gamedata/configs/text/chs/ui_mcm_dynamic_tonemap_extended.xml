@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_dynamic_tonemap_extended_title">
+		<text>基于时间的动态色调扩展</text>
+	</string>
+	<string id="ui_mcm_menu_dynamic_tonemap_extended">
+		<text>动态色调</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_enable_dynamic_tonemap">
+		<text>开启动态色调</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_adaptation">
+		<text>色调适应性</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_amount">
+		<text>色调变化量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_amount">
+		<text>最小可允许的变量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_max_amount">
+		<text>最大可允许的变量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_amount_addition">
+		<text>雨天增量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_amount_addition_desc">
+		<text>结果变量可以超过允许的最大值,但绝不会超过1</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_amount_addition">
+		<text>雷暴天增量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_amount_addition_desc">
+		<text>结果变量可以超过允许的最大值,但绝不会超过1</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lowlum">
+		<text>色调最低变量</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_clear_lowlum">
+		<text>晴朗天气下最低色调值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_not_clear_lowlum">
+		<text>非晴朗天气下最低色调值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_max_lowlum">
+		<text>最高可允许的色调值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_lowlum_reduction_coeff">
+		<text>雨天的最低色调降低系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_lowlum_reduction_coeff_desc">
+		<text>最终显示结果为 非晴朗天气色调*雨天色调降低系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_lowlum_reduction_coeff">
+		<text>雷暴天气最低色调降低系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_lowlum_reduction_coeff_desc">
+		<text>最终显示结果为 非晴朗天气色调*雷暴天气色调降低系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_middle">
+		<text>色调中性灰调整比率</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_middle_gray">
+		<text>色调中性灰最小值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_max_middle_gray">
+		<text>色调中性灰最大值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_amb">
+		<text>环境亮度调整比率</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_amb_addition">
+		<text>环境亮度调整额外比率</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_amb_addition_desc">
+		<text>额外比率在上午9点到下午1点的时段会增加, 在晚上7点到夜间12点会降低</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_lumscale_amb">
+		<text>环境亮度最小值(如果觉得室内太暗就增大此项)</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_max_lumscale_amb">
+		<text>环境亮度最大值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_not_clear_amb_reduction_coeff">
+		<text>非晴朗天气的环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_not_clear_amb_reduction_coeff_desc">
+		<text>最终显示结果为 环境亮度 * 非晴朗天气的环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_amb_reduction_coeff">
+		<text>雨天环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_amb_reduction_coeff_desc">
+		<text>最终显示结果为 环境亮度 * 雨天环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_amb_reduction_coeff">
+		<text>雷暴天环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_amb_reduction_coeff_desc">
+		<text>最终显示结果为 环境亮度 * 雷暴天环境亮度系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_hemi">
+		<text>亮度半球调整比率</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_hemi_addition">
+		<text>亮度半球调整额外比率</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_k_lumscale_hemi_addition_desc">
+		<text>此额外比率在晚7点之后生效, 用于提亮特别黑的地面</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_min_lumscale_hemi">
+		<text>亮度半球最小值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_max_lumscale_hemi">
+		<text>亮度半球最大值</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_not_clear_hemi_reduction_coeff">
+		<text>非晴朗天气的亮度半球系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_not_clear_hemi_reduction_coeff_desc">
+		<text>最终显示结果为 亮度半球 * 非晴朗天气的亮度半球系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_hemi_reduction_coeff">
+		<text>雨天亮度半球系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_rain_hemi_reduction_coeff_desc">
+		<text>最终显示结果为 亮度半球 * 雨天的亮度半球系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_hemi_reduction_coeff">
+		<text>雷暴天亮度半球系数</text>
+	</string>
+	<string id="ui_mcm_dynamic_tonemap_extended_storm_hemi_reduction_coeff_desc">
+		<text>最终显示结果为 亮度半球 * 雷暴天的亮度半球系数</text>
+	</string>
+</string_table>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Devices
+-->
+
+<string_table>
+
+	<string id="st_pda_name">
+		<text>PDA</text>
+	</string>
+	<string id="st_pda_descr">
+		<text>PDA中有一些關於特異區的數字記錄,詳細地圖和異常點的位置資訊,如果你找到的買家合適,你能小賺一筆.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]低功耗\n
+		</text>
+	</string>
+	
+	<string id="st_pda_1_name">
+		<text>PDA</text>
+	</string>
+	<string id="st_pda_1_descr">
+		<text>袖珍型電子裝置,包含了一臺電腦的大多數功能. PDA對於日常資訊的共享而言是必不可少的. 預裝有GPS模組,可為使用者提供地理位置和時間資訊.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]低功耗\n
+		</text>
+	</string>
+	
+	<string id="st_pda_2_name">
+		<text>第二代PDA</text>
+	</string>
+	<string id="st_pda_2_descr">
+		<text>袖珍型電子裝置,包含了一臺電腦的大多數功能. PDA對於日常資訊的共享是必不可少的. 預裝有的GPS模組,可為使用者提供地理位置和時間資訊. 此版本中的功能已得到改進,可以檢索和處理半徑300米內與網路連線的其他裝置的位置,所以這種PDA在潛行者里非常受歡迎.\n \n
+																																																																	
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]低功耗\n
+		%c[d_orange] • %c[ui_gray_2]%c[ui_gray_2]顯示附近小隊的位置\n
+		</text>
+	</string>
+	
+	<string id="st_pda_3_name">
+		<text>第三代PDA</text>
+	</string>
+	<string id="st_pda_3_descr">
+		<text>一種口袋大小的電子裝置,旨在涵蓋計算機的基本和最重要的功能. 掌上電腦對日常資訊共享至關重要. 它預裝了GPS模組,向用戶提供地理位置和時間資訊. 這個版本的模組在檢索和處理連線到網路的其他模組的位置方面有很大改進,這使這款PDA在潛行者中引人注目. 與通常的GPS模組不同,這個模組依靠成套的程式碼,允許模組在連線的通道上獲得特殊的許可權,以獲得更多的資訊. 這個特殊的裝置還能夠定位被主人消滅的目標的屍體,因為有人已經越獄,並安裝了盜版的IMI KilTrak軟體.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]低功耗\n
+		%c[d_orange] • %c[ui_gray_2]%c[ui_gray_2]顯示附近的自然隊和被消滅的目標的位置.\n
+		</text>
+	</string>
+	
+	<string id="st_detector1">
+		<text>迴聲探測器</text>
+	</string>
+	<string id="st_detector1_descr">
+		<text>這個過時的異常點探測器在進入異常區域時,就會發出警報訊號. 它還可以標記神器的位置,並測量到最近的神器的距離. 這個距離是由探測器發出的聲音的頻率來表示的. 要切換到神器搜索模式,則需要開啟裝置的前置蓋. 回聲的設計很是簡單,所以只能定位常見的神器.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_detector2">
+		<text>熊式探測器</text>
+	</string>
+	<string id="st_detector2_descr">
+		<text>這種上一代的異常點探測器有一個彩色二極管面板,不僅可以指示神器的方向,還可以測量到它們之間的距離,要切換到神器搜索模式,則需要打開裝置的前蓋. 不幸的是,這個裝置的神器列表有些過時了.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_detector3">
+		<text>冥神探測器</text>
+	</string>
+	<string id="st_detector3_descr">
+		<text>新一代探測器. 三個先進的檢測器會在LED屏上顯示神器位置以便尋找. 關閉時,它會記錄輻射和異常點的情況. 開啟神器探測模式只需要打開前面的LED屏, 神器就會顯示在螢幕上. 在這種模式下可以發現科學界已知的神器.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]高功耗\n
+		</text>
+	</string>
+	
+	<string id="st_detector4">
+		<text>火神探測器</text>
+	</string>
+	<string id="st_detector4_descr">
+		<text>擁有擴充套件功能的原型探測器. 新增的識別程式可以辨別異常點的活動,這些都已經儲存在數據庫里了,同時保留了發現神器的能力. 打開前面的LED二極管,切換到神器探測模式,異常點和神器的位置會在螢幕上顯示. 可以探測目前還未知的神器.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]高功耗\n
+		</text>
+	</string>
+	
+	<string id="st_detector9">
+		<text>射頻接收器</text>
+	</string>
+	<string id="st_detector9_descr">
+		<text>RF(射頻)接收器是一種小型裝置,帶有用於基本通訊功能的高靈敏度射頻模組. 使用的都是舊技術,在士兵中還是很常見的. 顧名思義. 它具有與半徑200 m的無線電訊號進行互動的能力. 該裝置能夠處理頻率範圍在30到300 MHz之間的無線電波.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_detector8">
+		<text>異常點測量裝置</text>
+	</string>
+	<string id="st_detector8_descr">
+		<text>第一個原型機是2008年在薩哈洛夫教授的監督下在揚塔移動實驗室設計的. 在科研領域取得成功后,又有更多的複製品問世. 這種裝置能夠測量和記錄異常區域. 改進的結構和感測器保證即使在惡劣環境下也能正常工作. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_broken_pda">
+		<text>壞的PDA</text>
+	</string>
+	<string id="st_broken_pda_descr">
+		<text>這個PDA似乎嚴重損壞,一半螢幕壞了,GPS模組也不能正常工作. 但內部硬體大部分還是保持完好的.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_device_torch_name">
+		<text>頭燈</text>
+	</string>
+	<string id="st_device_torch_descr">
+		<text>標準的通用頭戴式手電筒,對需要在夜間外出的潛行者來說非常有用,但是使用不當也會招來不必要的麻煩.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_device_torch_nv_1_name">
+		<text>1P93-1夜視儀(附有頭燈)
+		</text>
+	</string>
+	<string id="st_device_torch_nv_1_descr">
+		<text>俄羅斯軍隊1PN93-1夜視裝置, 提供2+級影象增強, 特別適用於夜間或弱光條件下\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		%c[d_orange] • %c[ui_gray_2]長按夜視鍵開啟夜視功能\n
+		%c[d_orange] • %c[ui_gray_2]短按夜視鍵調整夜視亮度\n
+		</text>
+	</string>
+	
+	<string id="st_device_torch_nv_2_name">
+		<text>PN21KL夜視儀(附有頭燈)
+		</text>
+	</string>
+	<string id="st_device_torch_nv_2_descr">
+		<text>PN21KL夜視儀, 成像管提供2+級影象增強, 適用於夜間或完全黑暗中使用紅外照明燈的條件下\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		%c[d_orange] • %c[ui_gray_2]長按夜視鍵開啟夜視功能\n
+		%c[d_orange] • %c[ui_gray_2]短按夜視鍵調整夜視亮度\n
+		</text>
+	</string>
+	
+	<string id="st_device_torch_nv_3_name">
+		<text>"神諭"夜視儀(附有頭燈)</text>
+	</string>
+	<string id="st_device_torch_nv_3_descr">
+		<text>這款夜視儀帶有鏡頭和影象處理軟體, 去除噪點, 增強了PN21K夜視儀的影象顯示, 使其成為成熟的3+級夜視裝置\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		%c[d_orange] • %c[ui_gray_2]長按夜視鍵開啟夜視功能\n
+		%c[d_orange] • %c[ui_gray_2]短按夜視鍵調整夜視亮度\n
+		</text>
+	</string>
+	
+	<string id="st_device_flashlight">
+		<text>手電筒</text>
+	</string>
+	<string id="st_device_flashlight_descr">
+		<text>通用手持手電筒, 不幸的是,由於它需要佔用一隻手,所以大多數武器便無法使用, 因此只能與手槍和其他單手裝置同時使用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_dead">
+		<text>舊電池</text>
+	</string>
+	<string id="st_batteries_dead_descr">
+		<text>在特異區發現的電池中,只有十分之一的還有些電量. 由於幾乎不可能找到電池充電器,潛行者們會在電量耗盡后就會丟棄電池. 電池的表層已經生鏽還沾上了髒東西,看起來它們快過期了. 但就像特異區中的所有事物一樣,有總比沒有好,你還是先拿它們用著吧.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]垃圾\n
+		</text>
+	</string>
+	
+	<string id="st_batteries">
+		<text>一包電池</text>
+	</string>
+	<string id="st_batteries_descr">
+		<text>一包電池,一定有人用過,因為半數的電池已經沒電了. 可適用於手電筒,PDA,夜視儀和其他電子裝置. 記住要定期更換.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]能量源\n
+		</text>
+	</string>
+	
+	<string id="st_batteries_ccell">
+		<text>軍用電池包</text>
+	</string>
+	<string id="st_batteries_ccell_descr">
+		<text>用於為外骨骼供電的重型軍用電池. 這些高密度電源組由烏克蘭研究機構根據 Zone 研究開發,可以替代外骨骼發電廠中的廢電池,或將電力傳輸到機載儲存裝置. 拖到外骨骼上為其充電. \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]能量源\n
+		</text>
+	</string>
+	
+	<string id="st_geiger_dead">
+		<text>蓋革計數器</text>
+	</string>
+	<string id="st_geiger_dead_descr">
+		<text>蓋革計數器測量電離(放射性)輻射. 它可檢測α粒子,β粒子和γ粒子的發射. 蓋格計數器發明于1908年,至今仍是常用的技術物品,用於醫學,物理,工業,地質和其他科學領域的測量. 由簡單的電子元件製成.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2]%c[ui_gray_2]測量放射性污染水平\n
+		%c[d_cyan] • %c[ui_gray_2]中等功耗\n
+		</text>
+	</string>
+	
+	<string id="st_electric power">
+		<text>通用電力裝置(電能)</text>
+	</string>
+	<string id="st_electric power_descr">
+		<text>一個冷戰時期的電源裝置,能夠接受幾乎所有的電池種類. 這種裝置利用插入的電池,通過一組微電線用升壓的電流向電子裝置供電. 不管目標裝置有多複雜,使用時間有多長,通用電力裝置都可以連線. 即使只剩下一塊電池,潛行者也可以順利地使用和操作電子裝置.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]攜帶型能源\n
+		%c[d_cyan] • %c[ui_gray_2]接受所有電池型別\n
+		</text>
+	</string>
+	
+	<string id="extension_pda">
+		<text>多媒體PDA</text>
+	</string>
+	<string id="exten_sion_pda">
+		<text>一款昂貴的防潮防震PDA,配有聊天客戶端和整合音樂播放器.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2]允許在潛行者網路中播放音樂和互動\n
+		</text>
+	</string>
+	
+	<string id="st_gps_tracker">
+		<text>軍用GPS裝置</text>
+	</string>
+	<string id="st_gps_tracker_descr">
+		<text>下一代GPS導航裝置的原型. 只製作了很少的樣本. 儘管其中一些已經泄露,但仍然只分配給軍銜最高的軍官. 改進后的裝置即使在惡劣的環境中也能保持正常執行. 採集期間或跟蹤過程中的擁有高靈敏度,這意味著裝置允許在許多不同的環境中或是最惡劣的操作條件下使用. 與通常的GPS裝置不同,這一裝置依賴於一組程式碼,這些程式碼使得裝置在連線的網路上獲得特權以檢索300米半徑內的其他已連線裝置的位置. 相應的,該裝置在執行時會消耗大量電能. 模組內部包含一個自動開關,連續掃瞄20秒后將其關閉.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]非常高功耗\n
+		</text>
+	</string>
+
+	<string id="st_musicplayer">
+		<text>無線電</text>
+	</string>
+	<string id="st_musicplayer_desc">
+		<text>一種經過修改的無線電裝置,旨在能夠與其他無線電裝置進行通訊,同時又過濾了儘可能多的干擾.\n \n
+		</text>
+	</string>
+	
+	<string id="st_weather_radar">
+		<text>多普勒天氣雷達套件</text>
+	</string>
+	<string id="st_weather_radar_descr">
+		<text>一個先進的脈衝多普勒天氣雷達迷你套件. 這個工具包被認為是氣象學領域的奇蹟. 它使用一個由波導連線到拋物面天線的空腔磁控管,以微秒級的長度發送微波輻射的定向脈衝,以收集氣象數據.\n
+		兩位生態學家發現,使用天線附近的肉石神器可以極大地放大脈衝功率,甚至可以改變大氣對流層中的離子並完全改變其性質.\n \n
+		%c[0,255,255,255]屬性:\n						
+		%c[d_cyan] • %c[ui_gray_2]由一個肉石神器驅動\n
+		</text>
+	</string>
+	
+	<string id="st_dosimeter_mode">
+		<text>放射量檢測模式</text>
+	</string>
+	<string id="st_actor_rads">
+		<text>身體輻射</text>
+	</string>
+	<string id="st_environment_rads">
+		<text>環境輻射</text>
+	</string>
+</string_table>

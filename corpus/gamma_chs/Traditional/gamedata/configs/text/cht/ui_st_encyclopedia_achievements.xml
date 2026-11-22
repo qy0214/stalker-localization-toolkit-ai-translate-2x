@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_achievements">
+		<text>成就</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_bookworm_food">
+		<text>書呆子</text>
+	</string>
+	<string id="encyclopedia_achievements_bookworm_food_text">
+		<text>
+			%c[pda_white]書呆子%c[ui_gray_1] 需要解鎖遊戲指南中的所有文章條目\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n文章可以通過多種方式解鎖,比如與重要人物對話或從U盤中下載數據.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n所有在潛行者屍體上找到的U盤,都會被稀有PDA取代.\n
+			\n如果在解鎖該成就后新增額外的物品,例如通過補丁或mod,那麼該效果將被暫時禁用,以便再次獲得快閃記憶體盤.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_completionist">
+		<text>完美主義</text>
+	</string>
+	<string id="encyclopedia_achievements_completionist_text">
+		<text>
+			%c[pda_white]完美主義%c[ui_gray_1] 需要完成其他成就\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n與通常解鎖成就相比, 排名積分翻倍.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_down_to_earth">
+		<text>接地氣</text>
+	</string>
+	<string id="encyclopedia_achievements_down_to_earth_text">
+		<text>
+			%c[pda_white]接地氣%c[ui_gray_1] 要求你用輕型武器摧毀3架直升機,如果你用的是爆炸性武器,如RPG或RG-6,只用摧毀一架即可.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n米-24直升機直升機將被較弱的米-2老式直升機取代.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_duga_free">
+		<text>噪音終結者</text>
+	</string>
+	<string id="encyclopedia_achievements_duga_free_text">
+		<text>
+			%c[pda_white]噪音終結者%c[ui_gray_1] 你需要關閉"神蹟裝置"和"焦腦器"\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n橫貫特異區中心的兩個靈能場發生器被你關閉了, 潛行者們北上的交通也更加安全了
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_geologist">
+		<text>神器學者</text>
+	</string>
+	<string id="encyclopedia_achievements_geologist_text">
+		<text>
+			%c[pda_white]神器學者%c[ui_gray_1] 需要你至少探測到過50個神器\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n在異常區內使用探測器, 就有機會發現神器\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n神器將會更快地重新整理
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_heavy_pockets">
+		<text>土豪</text>
+	</string>
+	<string id="encyclopedia_achievements_heavy_pockets_text">
+		<text>
+			%c[pda_white]土豪%c[ui_gray_1] 需要你擁有10,000,000 盧布 (別數零了是一千萬)\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n特異區內的所有商人都知道你是個大客戶, 即使你在某個陣營的好感一般, 他們也樂於向你展示自己的全部庫存
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_infopreneur">
+		<text>情報販子</text>
+	</string>
+	<string id="encyclopedia_achievements_infopreneur_text">
+		<text>
+			%c[pda_white]情報販子%c[ui_gray_1] 需要你提供至少50個PDA給交易商.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\nPDA可以在潛行者的屍體上找到,並且可以通過告訴交易商,你有資訊要與他們交易.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n交易商現在將為你賣給他們的任何PDA支付額外小費.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_mechanized_warfare">
+		<text>維修專家</text>
+	</string>
+	<string id="encyclopedia_achievements_mechanized_warfare_text">
+		<text>
+			%c[pda_white]維修專家%c[ui_gray_1] 需要你將全部3套工具交付給一名技術人員.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n初級工具箱,高級工具箱和專家工具包通常可以在藏匿處找到,但有時也可以在其他潛行者身上找到.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n維修時使用的道具效果會增強
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_patriarch">
+		<text>傳奇英雄</text>
+	</string>
+	<string id="encyclopedia_achievements_patriarch_text">
+		<text>
+			%c[pda_white]傳奇英雄%c[ui_gray_1] 需要你達到最高的等級.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n等級可以通過你在特異區內幾乎所有的行動來獲得.\n文章解釋等級及其工作方式的文章可以在功能類別中找到.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你可以在正常限額之外再招募兩個同伴.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_radiotherapy">
+		<text>風暴洗禮</text>
+	</string>
+	<string id="encyclopedia_achievements_radiotherapy_text">
+		<text>
+			%c[pda_white]風暴洗禮%c[ui_gray_1] 需要你熬過25次能量風暴和25次脈衝風暴\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n能量風暴和脈衝風暴隨機間隔發生,可以通過主菜單的"天氣選項"部分進行更改.\n
+			\n這兩個功能可以在播放過程中隨時切換,但需要啟用才能獲得此成就.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n您極有可能在沒有掩體的情況下倖免于來襲的能量風暴和脈衝風暴.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_rag_and_bone">
+		<text>火眼金睛</text>
+	</string>
+	<string id="encyclopedia_achievements_rag_and_bone_text">
+		<text>
+			%c[pda_white]火眼金睛%c[ui_gray_1] 需要您洗劫至少100個藏匿處.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n在這個特異區,幾乎任何地方都可以找到藏物點,但是在完成任務後接收到它們的座標會將它們標記在你的地圖上.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n在新發現的藏匿處中發現的物品將略有增加.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_silver_or_lead">
+		<text>兇神惡煞</text>
+	</string>
+	<string id="encyclopedia_achievements_silver_or_lead_text">
+		<text>
+			%c[pda_white]兇神惡煞%c[ui_gray_1] 需要你殺死500個潛行者,或讓50個潛行者投降.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n達到此成就的要求很可能會通過正常的遊戲方式來滿足,但是如果您故意嘗試解鎖它,請注意不要殺死中立或友好的潛行者,如果您重視自己名譽的話\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n投降的潛行者可能會供出額外藏物點.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_tourist">
+		<text>旅行家</text>
+	</string>
+	<string id="encyclopedia_achievements_tourist_text">
+		<text>
+			%c[pda_white]旅行家%c[ui_gray_1] 需要你走訪特異區的全部33個關卡.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n 你會收到三個獨特藏物點的座標.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_well_dressed">
+		<text>庖丁解牛</text>
+	</string>
+	<string id="encyclopedia_achievements_well_dressed_text">
+		<text>
+			%c[pda_white]庖丁解牛%c[ui_gray_1] 需要你殺死500個變異生物,或者肢解250個變異生物..\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n肢解變異生物的速度更快, 獎勵更好(未驗證)
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_wishful_thinking">
+		<text>真理追尋者</text>
+	</string>
+	<string id="encyclopedia_achievements_wishful_thinking_text">
+		<text>
+			%c[pda_white]真理追尋者%c[ui_gray_1] 需要您完成"永恒傳奇"故事情節.\n
+			\n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你已經解鎖新的可玩陣營-叛節者.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_infantile_pleasure">
+		<text>強迫癥</text>
+	</string>
+	<string id="encyclopedia_achievements_infantile_pleasure_text">
+		<text>
+			%c[pda_white]強迫癥%c[ui_gray_1] 需要你砸碎200個木製板條箱
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n這一成就的要求通過正常的遊戲玩法就能滿足, 在特異區里幾乎到處都能找到木箱
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n砸碎的箱子有25％的機率會爆出更多的物品.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_recycler">
+		<text>廢物利用</text>
+	</string>
+	<string id="encyclopedia_achievements_recycler_text">
+		<text>
+			%c[pda_white]廢物利用%c[ui_gray_1] 需要你拆卸200件物品.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n大部分物品都可以分解成基礎材料. 該過程使用特定的工具,例如瑞士刀或多功能工具.
+			\n可以在"功能"類別中找到有關該主題的文章.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你有33%的機會從拆卸中得到一個額外的部件.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_artificer_eagerness">
+		<text>能工巧匠</text>
+	</string>
+	<string id="encyclopedia_achievements_artificer_eagerness_text">
+		<text>
+			%c[pda_white]能工巧匠%c[ui_gray_1] 需要你製作50件物品.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n可以在藏匿處或其他潛行者的物品中找到製作工具包. 有些提供配方和/或指南,可為更廣泛的裝置提供資訊.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n自製道具時可以少用一點材料
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_unforeseen_guest">
+		<text>偽裝大師</text>
+	</string>
+	<string id="encyclopedia_achievements_unforeseen_guest_text">
+		<text>
+			%c[pda_white]偽裝大師%c[ui_gray_1] 需要你在npc監視範圍內偽裝時間超過5小時.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n您可以通過穿其他派別的服裝來偽裝自己. 可以在"功能"類別中找到有關該主題的文章.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你偽裝時的突然行為不會那麼可疑.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_absolver">
+		<text>赦免者</text>
+	</string>
+	<string id="encyclopedia_achievements_absolver_text">
+		<text>
+			%c[pda_white]赦免者%c[ui_gray_1] 需要你完成"原罪"的故事情節.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n這個成就只能用在劇情模式上.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你已經解鎖新的可玩陣營: 原罪.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_collaborator">
+		<text>合作者</text>
+	</string>
+	<string id="encyclopedia_achievements_collaborator_text">
+		<text>
+			%c[pda_white]合作者%c[ui_gray_1] 需要你完成"餘輝行動"的故事情節.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n這個成就只能用在劇情模式上.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你已經解鎖新的可玩陣營: UNISG.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_iron_curtain">
+		<text>鐵幕崛起</text>
+	</string>
+	<string id="encyclopedia_achievements_iron_curtain_text">
+		<text>
+			%c[pda_white]Iron 鐵幕崛起%c[ui_gray_1] 要求你的陣營在特異區內佔據上風,佔領一半的領土.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n這個成就只能用在戰區模式上
+			\nUnderground levels are ignored.
+			\n \n%c[pda_blue]獎勵%c[ui_gray_1]
+			\n你已獲得50,000 盧布的獎勵,因為你對自身陣營的戰事作出了卓越貢獻.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_murky_spirit">
+		<text>幽靈</text>
+	</string>
+	<string id="encyclopedia_achievements_murky_spirit_text">
+		<text>
+			%c[pda_white]幽靈%c[ui_gray_1] 需要你在鐵人模式下完成三個"迷失地帶"的故事情節.
+			\n \n%c[pda_green]情報%c[ui_gray_1]
+			\n此成就僅適用於劇情模式.但最重要的是,整個遊玩過程中必須啟用鐵人模式.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_achievements_invictus">
+		<text>戰神</text>
+	</string>
+	<string id="encyclopedia_achievements_invictus_text">
+		<text>
+			%c[pda_white]戰神%c[ui_gray_1] 需要你完成常人難以企及的事情:
+			\n%c[d_red] • %c[ui_gray_1]在劇情模式下,完成"迷失地帶"的三個主線劇情
+			\n%c[d_red] • %c[ui_gray_1]使用鐵人模式, 從角色建立以後直到完成所有主線任務
+			\n%c[d_red] • %c[ui_gray_1]角色建立時選擇最難的生存難度和程序難度, 並且中途不能改變任何其他的難度相關設定
+			\n%c[d_red] • %c[ui_gray_1]死亡次數不能超過兩次
+			\n%c[d_red] • %c[ui_gray_1]中途啟用DEBUG除錯模式則判定為作弊, 不記錄此成就
+			\n \n現在你可以去吹牛逼了
+		</text>
+	</string>
+	
+</string_table>

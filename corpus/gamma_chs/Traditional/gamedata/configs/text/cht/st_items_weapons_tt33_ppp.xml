@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_m57">
+		<text>扎斯塔瓦 M57</text>
+	</string>
+
+	<string id="st_wpn_m57_descr">
+		<text>1957 年至 1992 年間的南斯拉夫 TT-33 變型, 在 TT-33 的基礎上進行了許多改進, 包括更長的槍身, 改進的操控性以及更長的彈匣, 可以多裝載一發子彈; 該槍還進行了各種其他改進, 包括更大的彈匣釋放按鈕, 套筒上的防眩光以及更長的可調節瞄準器; 值得一提的是, M57的 9 發彈匣與其他 TT-33 變體相容, 但 TT-33 的 8 發彈匣與該手槍不相容; 此外, 由於其設計方式, 可以輕鬆地將口徑切換為 9x19</text>
+	</string>
+	
+</string_table>

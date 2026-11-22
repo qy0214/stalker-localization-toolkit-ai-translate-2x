@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<string_table>
+    <string id="ah_ecolog">
+        <text>探索者</text>
+    </string>
+
+    <string id="Quest1_desc">
+        <text>任务描述</text>
+    </string>
+    <string id="Quest1_title">
+        <text>第一个目标</text>
+    </string>
+    
+    <string id="ah_redirect_to_kovalev_quest_title">
+        <text>探索者: 沼泽的科瓦列夫教授</text>
+    </string>
+    <string id="ah_redirect_to_kovalev_quest_desc">
+        <text>我收到消息, 大沼泽的科瓦列夫教授在他的研究中需要帮助. 我应该到沼泽南部的老教堂去找他</text>
+    </string>
+
+    <string id="ah_redirect_to_markov_quest_title">
+        <text>探索者: 扬塔的马尔科夫教授</text>
+    </string>
+    <string id="ah_redirect_to_markov_quest_desc">
+        <text>接下来, 我要去找马尔科夫教授. 他应该在扬塔的移动实验室附近</text>
+    </string>
+
+    <string id="ah_redirect_to_pirogov_quest_title">
+        <text>研究者: 黑谷的皮洛戈夫博士</text>
+    </string>
+    <string id="ah_redirect_to_pirogov_quest_desc">
+        <text>皮洛戈夫博士受命调查黑谷. 我应该去看看他是否还活着</text>
+    </string>
+
+    <string id="ah_redirect_to_chernov_quest_title">
+        <text>研究者: 军事仓库的契诺夫教授</text>
+    </string>
+    <string id="ah_redirect_to_chernov_quest_desc">
+        <text>现在我要去找契诺夫教授, 他最后一次是出现在军事仓库西北的一间废弃棚屋里</text>
+    </string>
+
+    <string id="ah_redirect_to_juk_quest_title">
+        <text>探索者: 尤皮特的朱克教授</text>
+    </string>
+    <string id="ah_redirect_to_juk_quest_desc">
+        <text>要做更多的工作, 我应该和朱克教授谈谈. 我能在尤皮特的亚诺夫车站附近找到他</text>
+    </string>   
+
+    <string id="ah_redirect_to_vorobushkin_quest_title">
+        <text>探索者: 扎顿的沃罗布什金教授</text>
+    </string>
+    <string id="ah_redirect_to_vorobushkin_quest_desc">
+        <text>沃罗布什金教授驻扎在护林站, 为了继续协助研究小组的工作, 我得找到他才行</text>
+    </string>   
+
+    <string id="ah_redirect_to_skabinsky_quest_title">
+        <text>研究者: 核电站的斯卡宾斯基教授</text>
+    </string>
+    <string id="ah_redirect_to_skabinsky_quest_desc">
+        <text>沃罗布什金教授告诉我, 这次行动的负责人斯卡宾斯基教授已经去了更远的地方, 目前在切尔诺贝利核电站北部某处. 不知道他是怎么设法去到那里的, 但我得马上找到他</text>
+    </string>       
+
+    <string id="ah_fail_skabinsky_quest_title">
+        <text>研究者: 核电站的斯卡宾斯基教授</text>
+    </string>
+    <string id="ah_fail_skabinsky_quest_desc">
+        <text>沃罗布什金教授的计算依旧充满漏洞, 但线索似乎指向了"灰烬"异常, 我需要找到斯卡宾斯基教授, 走在前面的他已经在那里等我了</text>
+    </string>   
+    
+    <string id="ah_kovalev_quest1_title">
+        <text>研究者: 给科瓦列夫教授带去三个沼泽中的异常样本</text>
+    </string>
+    <string id="ah_kovalev_quest1_desc">
+        <text>沼泽中的研究小组目前正在一些异常区域寻找样本. 科瓦列夫教授让我去检查其中的三个区域</text>
+    </string>   
+    <string id="ah_bol_o1_title">
+        <text>在"文火"异常区寻找样本</text>
+    </string>
+    <string id="ah_bol_o1_desc">
+        <text>其中一个样本位于"文火"异常区</text>
+    </string>       
+    <string id="ah_bol_o2_title">
+        <text>在"沼泽峡谷"异常区寻找样本</text>
+    </string>
+    <string id="ah_bol_o2_desc">
+        <text>其中一个样本位于沼泽峡谷异常区</text>
+    </string>       
+    <string id="ah_bol_g1_title">
+        <text>在"冲击沼泽"异常区寻找样本</text>
+    </string>
+    <string id="ah_bol_g1_desc">
+        <text>其中一个样本位于"冲击沼泽"异常区</text>
+    </string>       
+    
+    <string id="ah_bol_e1_title">
+        <text>在"霹雳"异常区寻找样本</text>
+    </string>
+    <string id="ah_bol_e1_desc">
+        <text>其中一个样本位于"霹雳"异常区</text>
+    </string>   
+
+    <string id="ah_kovalev_quest2_title">
+        <text>研究者: 带回科瓦列夫教授的笔记本电脑和三个异常点样本</text>
+    </string>
+    <string id="ah_kovalev_quest2_desc">
+        <text>科瓦列夫教授在农业研究所进行了实地考察, 当他正在进行工作时他的团队遭到了伏击. 我要找到他留在袭击现场的笔记本电脑并检查里面的数据. 它应该能告诉我接下来应该到哪里寻找样本</text>
+    </string>   
+    <string id="ah_agr_pda_title">
+        <text>在"EMP"异常区内找到科瓦列夫的笔记本电脑</text>
+    </string>
+    <string id="ah_agr_pda_desc">
+        <text>笔记本电脑应该在生态学家们被袭击的建筑的三楼, 正如它的名字暗示的那样, 这个异常区内可能有强大的电能和灵能场</text>
+    </string>   
+    <string id="ah_agr_none_title">
+        <text>寻找未知地点的样本</text>
+    </string>
+    <string id="ah_agr_none_desc">
+        <text>确切位置可以在科瓦列夫的笔记本电脑上找到</text>
+    </string>       
+    <string id="ah_agr_g1_title">
+        <text>在"石爪"异常区寻找样本</text>
+    </string>
+    <string id="ah_agr_g1_desc">
+        <text>一个奇怪的重力异常, 像是地面伸出的一只爪子一样. 好像有地方能够爬上去</text>
+    </string>       
+    <string id="ah_agr_g2_title">
+        <text>在"龙卷"异常区寻找样本</text>
+    </string>
+    <string id="ah_agr_g2_desc">
+        <text>其中一个样本位于"龙卷"异常区</text>
+    </string>   
+    <string id="ah_agr_h1_title">
+        <text>在"旋转木马"异常区寻找样本</text>
+    </string>
+    <string id="ah_agr_h1_desc">
+        <text>其中一个样本位于"旋转木马"异常区</text>
+    </string>   
+
+    <string id="ah_markov_quest1_title">
+        <text>研究者: 给马尔科夫教授带去三个异常区域样本</text>
+    </string>
+    <string id="ah_markov_quest1_desc">
+        <text>扬塔的马尔科夫教授让我用扫描仪检查三个异常点, 并留意能找到的任何不寻常的样本</text>
+    </string>   
+    <string id="ah_yan_o1_title">
+        <text>在"薪王之手"异常区寻找样本</text>
+    </string>
+    <string id="ah_yan_o1_desc">
+        <text>其中一个样本位于"薪王之手"异常区</text>
+    </string>       
+    <string id="ah_yan_h1_title">
+        <text>在"毒水湖"异常区寻找样本</text>
+    </string>
+    <string id="ah_yan_h1_desc">
+        <text>其中一个样本位于"毒水湖"异常区</text>
+    </string>       
+    <string id="ah_yan_h2_title">
+        <text>在"混凝土"异常区寻找样本</text>
+    </string>
+    <string id="ah_yan_h2_desc">
+        <text>其中一个样本位于"混凝土"异常区, 我可能需要做一些防护才不会受到灵能场的影响</text>
+    </string>       
+    
+    <string id="ah_markov_quest2_title">
+        <text>探索者: 在废弃区找到3个异常区样本带给马尔科夫教授</text>
+    </string>
+    <string id="ah_markov_quest2_desc">
+        <text>马尔科夫教授指派我扩大目前的搜索范围, 我要扫描废弃区的三个不同异常区域</text>
+    </string>   
+    <string id="ah_dt_o1_title">
+        <text>在一个被辐射的车间寻找样本</text>
+    </string>
+    <string id="ah_dt_o1_desc">
+        <text>这个地方确切位置不详, 但我记得那个车间, 就在废弃区中罗斯托克检查岗的南边附近</text>
+    </string>       
+    <string id="ah_dt_e1_title">
+        <text>在"闪电列车"异常区寻找样本</text>
+    </string>
+    <string id="ah_dt_e1_desc">
+        <text>这个异常区域到处都带电, 也许应该多带点螺栓</text>
+    </string>       
+    <string id="ah_dt_e2_title">
+        <text>在"闪光绝境"异常区寻找样本</text>
+    </string>
+    <string id="ah_dt_e2_desc">
+        <text>这个异常点是在一个地下隧道里, 据说在那里尽量不要碰到地面</text>
+    </string>   
+
+    <string id="ah_markov_quest3_title">
+        <text>探索者: 马尔科夫需要X16实验室附近的3个异常样本</text>
+    </string>
+    <string id="ah_markov_quest3_desc">
+        <text>我需要在X16实验室附近找到三件异常样本, 因为有"神迹装置"的存在, 如果没有适当的灵能防护就不可能进入其中, 萨哈洛夫教授应该能帮到我</text>
+    </string>   
+    <string id="ah_yan_e1_title">
+        <text>在"雷神"异常区寻找样本</text>
+    </string>
+    <string id="ah_yan_e1_desc">
+        <text>肯定是某个电能异常点, 我应该多带一些螺栓</text>
+    </string>       
+    <string id="ah_yan_e2_title">
+        <text>在"鬼火"异常区寻找样本</text>
+    </string>
+    <string id="ah_yan_e2_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+    <string id="ah_yan_g1_title">
+        <text>在工厂区域寻找样本</text>
+    </string>
+    <string id="ah_yan_g1_desc">
+        <text>研究人员从未踏足过这些设施的深处, 扫描显示有很强的异常能量, 我应当小心行动</text>
+    </string>   
+
+    <string id="ah_pirogov_quest1_title">
+        <text>研究者: 在黑谷找到三个异常样本, 带给皮洛戈夫教授</text>
+    </string>
+    <string id="ah_pirogov_quest1_desc">
+        <text>教授要求我在黑谷为他检查三处异常区域, 但变异生物和土匪们经常在这个地区游荡, 我应该小心行事</text>
+    </string>   
+    <string id="ah_td_o1_title">
+        <text>在有火彗星的隧道中寻找样本</text>
+    </string>
+    <string id="ah_td_o1_desc">
+        <text>教授的标记不是很准确, "彗星"异常区在土匪基地内部, 是一处几乎没人敢去探索的地方, 样本应该就位于异常区上方有火彗星的通道尽头</text>
+    </string>       
+    <string id="ah_td_o2_title">
+        <text>在"狱火裂隙"异常区寻找样本</text>
+    </string>
+    <string id="ah_td_o2_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+    <string id="ah_td_e1_title">
+        <text>在"死云"异常区寻找样本</text>
+    </string>
+    <string id="ah_td_e1_desc">
+        <text>这个异常区应该是在原料储存罐附近. 和土匪基地只隔着一条路, 我应该试着潜入那里</text>
+    </string>       
+    
+    <string id="ah_pirogov_quest2_title">
+        <text>研究者: 在卡车墓园找到三个异常样本, 带给皮洛戈夫教授</text>
+    </string>
+    <string id="ah_pirogov_quest2_desc">
+        <text>教授让我一路向北, 到卡车墓园寻找样本. 那边和这里一样充斥着变异生物和匪徒</text>
+    </string>
+    <string id="ah_kt_g1_title">
+        <text>在"壕沟"异常区寻找样本</text>
+    </string>
+    <string id="ah_kt_g1_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+    <string id="ah_kt_o1_title">
+        <text>在"碳化"异常区寻找样本</text>
+    </string>
+    <string id="ah_kt_o1_desc">
+        <text>其中一个样本位于"碳化"异常区</text>
+    </string>       
+    <string id="ah_kt_h1_title">
+        <text>在"秽土"异常区寻找样本</text>
+    </string>
+    <string id="ah_kt_h1_desc">
+        <text>其中一个样本位于"秽土"异常区</text>
+    </string>   
+
+    <string id="ah_pirogov_quest3_title">
+        <text>研究者: 皮洛戈夫教授让你帮助找到他助手的PDA和两件异常区域样本</text>
+    </string>
+    <string id="ah_pirogov_quest3_desc">
+        <text>皮洛戈夫的助手在研究填埋场的异常情况, 现在已经失踪. 在他的PDA上存有该地区所有异常点的扫描数据, 我需要找到这位助手, 取回数据, 并从数据中记载的异常区域获取样本</text>
+    </string>   
+    <string id="ah_sv_pda_title">
+        <text>找到皮洛戈夫失踪的助手</text>
+    </string>
+    <string id="ah_sv_pda_desc">
+        <text>这位潜行者很可能被土匪伏击了, 有人告诉我, 他最后一次打电话是在跳蚤市场, 我应该从那里开始寻找</text>
+    </string>       
+    <string id="ah_sv_g1_title">
+        <text>在"咒法阵"异常区寻找样本</text>
+    </string>
+    <string id="ah_sv_g1_desc">
+        <text>一个范围很大的有毒区域, 寻找工作会十分棘手.</text>
+    </string>       
+    <string id="ah_sv_h1_title">
+        <text>在"气泡水"异常区寻找样本</text>
+    </string>
+    <string id="ah_sv_h1_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+    <string id="ah_sv_none_title">
+        <text>从失踪潜行者的PDA上取回扫描数据</text>
+    </string>
+    <string id="ah_sv_none_desc">
+        <text>找到异常现象所需要的扫描数据在失踪潜行者的PDA上, 我必须找到他</text>
+    </string>       
+    
+    <string id="ah_chernov_quest1_title">
+        <text>探索者: 在军事仓库地图寻找三件样本带给契诺夫教授</text>
+    </string>
+    <string id="ah_chernov_quest1_desc">
+        <text>我需要找到三个样本并带给契诺夫教授, 军事仓库是一个危险的区域, 这将是对我能力的真正考验</text>
+    </string>   
+    <string id="ah_mil_h1_title">
+        <text>在"溶尸者"异常区寻找样本</text>
+    </string>
+    <string id="ah_mil_h1_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+    <string id="ah_mil_g1_title">
+        <text>在"粉碎机"异常区寻找样本</text>
+    </string>
+    <string id="ah_mil_g1_desc">
+        <text>其中一个样本位于"粉碎机"异常区</text>
+    </string>       
+    <string id="ah_mil_o1_title">
+        <text>在"桑拿"异常区寻找样本</text>
+    </string>
+    <string id="ah_mil_o1_desc">
+        <text>这片区域散发着强烈的热量, 教授提供的坐标似乎不是很准确, 他提到是在这附近某个被爆燃点包围的建筑的阁楼上, 拿到样品后应该可以从窗户跳出来</text>
+    </string>   
+    
+    <string id="ah_chernov_quest3_title">
+        <text>探索者: 给契诺夫教授带去失踪潜行者的PDA和红森林的两个样本</text>
+    </string>
+    <string id="ah_chernov_quest3_desc">
+        <text>契诺夫教授指派了专人绘制红森林的异常地图, 这位潜行者他完成了地图但没有带着数据回来, 我的任务是找到他的PDA, 它被留在了通往利曼斯克的路上桥边的隧道里</text>
+    </string>   
+    <string id="ah_les_pda_title">
+        <text>在桥东边的隧道里找到潜行者的PDA</text>
+    </string>
+    <string id="ah_les_pda_desc">
+        <text>为了逃脱黑石狂热邪教徒的追击, 这位潜行者把他的PDA留在了大桥东边的隧道里, 我得先找到它, 然后才知道该调查哪些异常</text>
+    </string>       
+    <string id="ah_les_o1_title">
+        <text>在"共生体"异常区找到样本</text>
+    </string>
+    <string id="ah_les_o1_desc">
+        <text>在分析了扫描数据后, 我找到了这个值得探索的地点</text>
+    </string>       
+    <string id="ah_les_e1_title">
+        <text>在地下矿井中寻找样本</text>
+    </string>
+    <string id="ah_les_e1_desc">
+        <text>教授又一次标错了位置, 样本并不在地面上, 而是在附近矿洞的下层, 但那个矿洞似乎是某些邪教徒的营地, 我需要小心行事</text>
+    </string>   
+    <string id="ah_les_none_title">
+        <text>在红森林的某处寻找异常样本</text>
+    </string>
+    <string id="ah_les_none_desc">
+        <text>我需要在红森林里找到两件不同的样本, 然而为了确定异常区域的位置, 我需要找到在失踪的潜行者丢失在隧道的存有扫描数据的PDA</text>
+    </string>       
+    
+    <string id="ah_chernov_quest4_title">
+        <text>探索者: 找到人造神器样本</text>
+    </string>
+    <string id="ah_chernov_quest4_desc">
+        <text>据契诺夫教授说, 他和同事在灾难发生之前就成功地在家中的阁楼上制造了一件人造神器, 我应该去他前同事的居所调查, 看看神器是否还在阁楼上, 最近他的房屋周围的田地中出现了异常现象, 应该不是巧合, 我还是谨慎一些为好</text>
+    </string>   
+    
+    <string id="ah_chernov_quest5_title">
+        <text>探索者: 调查前X-19实验室入口</text>
+    </string>
+    <string id="ah_chernov_quest5_desc">
+        <text>X-19实验室, 也被称为"地堡", 那里很显然曾经从事过人造神器的研发活动, 实验室现在被毁了, 但也许我能从一些剩余的文件中找到传闻中"神器农场"的所在地</text>
+    </string>   
+    <string id="ah_rad_pda_title">
+        <text>搜寻X-19的旧入口</text>
+    </string>
+    <string id="ah_rad_pda_desc">
+        <text>教授的标记有误, X-19的旧入口应该是在雷达站的东北角, 那里应该会有我需要的关于"神器农场"的文件</text>
+    </string>
+    <string id="ah_rad_r_title">
+        <text>在X19设施南边的死亡森林寻找三个样本</text>
+    </string>
+    <string id="ah_rad_r_desc">
+        <text>我找到的这个文件中提及了X-19南边森林的神器生成, 我需要地毯式搜索地图中心的整片森林区域</text>
+    </string>
+    <string id="ah_chernov_quest6_title">
+        <text>研究者: 在死城找到两个异常样本</text>
+    </string>
+    <string id="ah_chernov_quest6_desc">
+        <text>为了完成死城的异常区域地图, 契诺夫教授向我寻求帮助, 他对其中的两个坐标很感兴趣, 我应该在那附近扫描一下</text>
+    </string>   
+    <string id="ah_mg_o1_title">
+        <text>调查文化宫</text>
+    </string>       
+    <string id="ah_mg_o1_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>
+    <string id="ah_mg_g1_title">
+        <text>调查旧学校</text>
+    </string>
+    <string id="ah_mg_g1_desc">
+        <text>用我的扫描仪找到它应该没问题</text>
+    </string>       
+
+    <string id="ah_juk_quest1_title">
+        <text>研究者: 在尤皮特寻找三个异常样本</text>
+    </string>
+    <string id="ah_juk_quest1_desc">
+        <text>朱克教授正试图从尤皮特不同类型的异常样本中提取光谱图, 他让我从三个不同的异常区域找到样本</text>
+    </string>   
+    <string id="ah_up_g1_title">
+        <text>在"沥青"异常区寻找样本</text>
+    </string>
+    <string id="ah_up_g1_desc">
+        <text>这是一个需要做好防护措施的高热异常区</text>
+    </string>       
+    <string id="ah_up_h1_title">
+        <text>在"泥浴"异常区寻找样本</text>
+    </string>
+    <string id="ah_up_h1_desc">
+        <text>我听说潜行者会跳上水泥柱来避开下面的酸池</text>
+    </string>       
+    <string id="ah_up_h2_title">
+        <text>在暗林异常区寻找样本</text>
+    </string>
+    <string id="ah_up_h2_desc">
+        <text>这种有毒异常区需要适当的保护才能进入</text>
+    </string>
+
+    <string id="ah_juk_quest2_title">
+        <text>研究者: 为朱克教授找到剩余的样本</text>
+    </string>
+    <string id="ah_juk_quest2_desc">
+        <text>为获取第二批样本, 我需要扫描这片区域剩下的异常点, 朱克教授已经提供了确切位置</text>
+    </string>   
+    <string id="ah_up_e2_title">
+        <text>在神秘的列车中寻找异常样本</text>
+    </string>
+    <string id="ah_up_e2_desc">
+        <text>在移动实验室旁的这个电彗星异常像是困在了车厢里一般, 这种车厢的顶部一般都会有个舱门, 我应该可以从那里进去</text>
+    </string>       
+    <string id="ah_up_e1_title">
+        <text>在西北隧道寻找样本</text>
+    </string>
+    <string id="ah_up_e1_desc">
+        <text>这条隧道极少有人靠近, 所以愈加显得可疑. 据说摄魂怪常在这一带出没.. </text>
+    </string>       
+    <string id="ah_up_g2_title">
+        <text>在沃克霍夫防空基地周边寻找样本</text>
+    </string>
+    <string id="ah_up_g2_desc">
+        <text>一个旧的防空导弹设施, 因为地下大量存在的异常现象而被废弃, 吸血怪好像经常在这附近出没, 我应万分小心</text>
+    </string>
+
+    <string id="ah_juk_quest3_title">
+        <text>探索者: 在普里皮亚奇和普城郊区找到四个异常神器样本</text>
+    </string>
+    <string id="ah_juk_quest3_desc">
+        <text>由于黑石军团的存在, 生态学家们几乎无法进入普里皮亚奇. 然而, 为了完成他们的研究, 从城市的异常样本中提取样本是必不可少的, 我必须找到这些神器样本.</text>
+    </string>   
+    <string id="ah_p_h1_title">
+        <text>在巨藤异常区寻找样本</text>
+    </string>
+    <string id="ah_p_h1_desc">
+        <text>"巨藤"是普城郊区最神奇的异常区, 我应该爬上去在异常点的顶部寻找样本.</text>
+    </string>       
+    <string id="ah_p_g1_title">
+        <text>在学校寻找样本</text>
+    </string>
+    <string id="ah_p_g1_desc">
+        <text>在老学校的中间有一个延伸了好几层楼的巨大引力异常, 我也许需要检查一下建筑物内部</text>
+    </string>       
+    <string id="ah_p_g2_title">
+        <text>在先锋异常区寻找样本</text>
+    </string>
+    <string id="ah_p_g2_desc">
+        <text>这个地方的读数高得离谱, 即使在几公里之外, 生态学家们也能探测到异常现象的影响, 我必须扫描这片区域寻找样本</text>
+    </string>
+    <string id="ah_p_e1_title">
+        <text>在未标记的电异常区寻找样本</text>
+    </string>
+    <string id="ah_p_e1_desc">
+        <text>普里皮亚奇南部还有一个未被发现的异常, 我也应该去扫描一下</text>
+    </string>   
+    
+    <string id="ah_vorobushkin_quest1_title">
+        <text>研究者: 找到沃罗布什金教授的记忆模块和2个异常样本</text>
+    </string>
+    <string id="ah_vorobushkin_quest1_desc">
+        <text>沃罗布什金教授早先在扎顿西边废弃的克鲁格雷达站那里修复了一些老旧设备, 但有一个存储模块他忘了拿, 那里面储存着异常区域的坐标</text>
+    </string>   
+    <string id="ah_zat_pda_title">
+        <text>找到存储模块VNZ-"圆"</text>
+    </string>
+    <string id="ah_zat_pda_desc">
+        <text>教授离开时把存储模块留在了雷达站的地下操作间, 我要先找到存储模块, 才能知道样本的确切位置</text>
+    </string>       
+    <string id="ah_zat_h1_title">
+        <text>在"毒布丁"异常区寻找样本</text>
+    </string>
+    <string id="ah_zat_h1_desc">
+        <text>一个同时有重力和毒性物质的大型异常区域, 我如果还想四肢健全的回来的话就要格外小心</text>
+    </string>       
+    <string id="ah_zat_h2_title">
+        <text>在"橡松"异常区寻找样本</text>
+    </string>
+    <string id="ah_zat_h2_desc">
+        <text>一个巨大的有毒异常区, 和位于城郊的巨藤异常区很相似, 也许我也可以爬上这个?</text>
+    </string>
+    <string id="ah_zat_none_title">
+        <text>在扎顿的某处寻找样本</text>
+    </string>
+    <string id="ah_zat_none_desc">
+        <text>为了知道要调查的异常区的确切位置, 我需要从沃罗布什金的存储模块中找到扫描数据</text>
+    </string>
+    
+    <string id="ah_vorobushkin_quest2_title">
+        <text>研究者: 为沃罗布什金教授在扎顿找到另外三件样本</text>
+    </string>
+    <string id="ah_vorobushkin_quest2_desc">
+        <text>为了完成不同神器的光谱图, 沃罗布什金教授让我扫描扎顿剩余的三个异常区域</text>
+    </string>   
+    <string id="ah_zat_o1_title">
+        <text>在"锅炉"异常区寻找样本</text>
+    </string>
+    <string id="ah_zat_o1_desc">
+        <text>恶劣的异常高温夺走了一位勇敢生态学家的生命, 我需要适当的保护或者敏捷的脚步, 才能在这里安全的穿行</text>
+    </string>       
+    <string id="ah_zat_g1_title">
+        <text>在"利爪"异常区寻找样本</text>
+    </string>
+    <string id="ah_zat_g1_desc">
+        <text>这个重力异常似乎与一些隧道有关, 扫描数据显示, 样本似乎被人为的移进了隧道里</text>
+    </string>       
+    <string id="ah_zat_g2_title">
+        <text>在断桥上找到样本</text>
+    </string>
+    <string id="ah_zat_g2_desc">
+        <text>这座半倒塌的桥充满了重力异常, 小心一些就能穿过, 但还是应该带上足够的螺栓</text>
+    </string>
+
+    <string id="ah_skabinsky_quest1_title">
+        <text>研究者: 为斯卡宾斯基教授找到低语石</text>
+    </string>
+    <string id="ah_skabinsky_quest1_desc">
+        <text>就是它, 斯卡宾斯基教授和他的团队大老远赶来就是为了这个玩意, 它散发出一种奇怪的力量, 我得赶紧拿给他看</text>
+    </string>   
+    <string id="ah_gen_f1_title">
+        <text>在"风暴峡谷"异常区中找到样本</text>
+    </string>
+    <string id="ah_gen_f1_desc">
+        <text>也许这个地方可以被称为特异区的中心, 因为这就是"念域"扰动开始的地方, 也是风暴的源头 扫描结果显示地下有强烈的能量波动, 所以我应该先找一条下去的路, 我有种不好的预感...</text>
+    </string>
+
+    <string id="cs_story_task0_name">
+        <text>最后的黎明: 把扫描器还给"孢子"斯波</text>
+    </string>
+    <string id="cs_story_task0_name1">
+        <text>最后的黎明: 从沼泽西南角的异常区域取回扫描器</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_name">
+        <text>最后的黎明: 回去见冷风</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_story_name1">
+        <text>最后的黎明: 击退叛节者的进犯</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_name3">
+        <text>最后的黎明: 回去见冷风</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_story_name4">
+        <text>最后的黎明: 清除东南农场的叛节者</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_descr">
+        <text>帮助晴空小队守住水泵站</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_descr2">
+        <text>帮助晴空突击小队占领通往封锁线的道路</text>
+    </string>
+
+    <string id="cs_story_task0_descr">
+        <text>扫描器位于"冲击沼泽"异常区, 就在晴空基地北边</text>
+    </string>
+    <string id="cs_story_task2_name">
+        <text>最后的黎明: 将PDA带给"孢子"斯波</text>
+    </string>
+    <string id="cs_story_task2_descr">
+        <text>拐棍没活下来, 他被吸血怪杀死了. 不过我已经替他报了仇, 拿到了他的PDA</text>
+    </string>
+    <string id="cs_story_task1_name">
+        <text>最后的黎明: 寻找失踪的侦察兵</text>
+    </string>
+    <string id="cs_story_task1_descr">
+        <text>我得在变异生物把拐棍拖到洞里之前找到他. 斯波说拐棍最后发出的信号来自大沼泽最北边那条大路旁的某个营地附近, 我得快点了</text>
+    </string>
+    <string id="cs_story_task3_start_name">
+        <text>最后的黎明: 会见冷风</text>
+    </string>
+    <string id="cs_story_task3_start_descr">
+        <text>冷风发来消息, 说侦查员的PDA已经成功破解了, 我应该马上去见他</text>
+    </string>
+    <string id="cs_task4_storytask_name">
+        <text>最后的黎明: 找到佣兵刀疤脸</text>
+    </string>
+    <string id="cs_task4_storytask_descr">
+        <text>我找到刀疤脸的下落了, 现在我的任务是询问他有关晴空失踪成员的信息</text>
+    </string>
+    <string id="cs_task5_storytask_name">
+        <text>最后的黎明: 击退变异怪物</text>
+    </string>
+    <string id="cs_task5_storytask_name1">
+        <text>最后的黎明: 和刀疤脸谈谈</text>
+    </string>
+    <string id="cs_task5_storytask_descr">
+        <text>有一群疯犬嗅到了我的气味, 它们在寻找我, 我是来这里寻求帮助的, 送它们下地狱, 我就把一切告诉你</text>
+    </string>
+    <string id="cs_task3_storytask_name">
+        <text>最后的黎明: 找到刀疤脸</text>
+    </string>
+    <string id="cs_task3_storytask_descr">
+        <text>我要去调查那个叫刀疤脸的雇佣兵, 西多洛维奇那个老家伙肯定知道些关于他的信息</text>
+    </string>
+    <string id="cs_task9_storytask_name">
+        <text>最后的黎明: 与神行客对话</text>
+    </string>
+    <string id="cs_task9_storytask_descr">
+        <text>我们得把解码器给神行客. 他所在的部队在尤皮特亚诺夫车站以南的旧检查站建立了一个小行动据点</text>
+    </string>
+    <string id="cs_task11_storytask_name">
+        <text>最后的黎明: 与神行客对话</text>
+    </string>
+    <string id="cs_task11_storytask_descr">
+        <text>刀疤脸报告说, 晴空的幸存者可能加入了黑石叛军的队伍, 他们的首领叫神行客, 他所在的部队位于亚诺夫车站以南, 我必须找到他, 问他是否知道失踪晴空潜行者的下落</text>
+    </string>
+    <string id="cs_task10_storytask_name">
+        <text>最后的黎明: 与冷风交谈</text>
+    </string>
+    <string id="cs_task10_storytask_descr">
+        <text>我的任务完成了, 冷风的手下还活着, 我要回去向他报告</text>
+    </string>
+    <string id="cs_task8_storytask_name">
+        <text>最后的黎明: 击退反攻</text>
+    </string>
+    <string id="cs_task8_storytask_name1">
+        <text>最后的黎明: 和加玛云交谈</text>
+    </string>
+    <string id="cs_task8_storytask_descr">
+        <text>据黑石叛军们说, 能够将加密对话破解的装置, 在普城郊区东北港口的一群黑石狂热者手中, 我需要找到它</text>
+    </string>
+    <string id="cs_task7_storytask_name">
+        <text>最后的黎明: 抢回设备</text>
+    </string>
+    <string id="cs_task7_storytask_descr">
+        <text>据黑石叛军们说, 港口的黑石狂热者手中有一个能够破解加密对话的装置</text>
+    </string>
+    <string id="cs_task6_storytask_name1">
+        <text>最后的黎明: 和加玛云谈谈</text>
+    </string>
+    <string id="cs_task6_storytask_name">
+        <text>最后的黎明: 营救失联的侦察兵</text>
+    </string>
+    <string id="cs_task6_storytask_descr">
+        <text>一队从黑石叛逃出来的潜行者被困在普里皮亚奇东部的宿舍附近, 其中有一个前晴空的成员, 我必须救他们, 否则我的任务就失败了, 消灭所有前来追杀的黑石成员后与加玛云对话</text>
+    </string>
+
+
+
+<string id="cs_anom_pribor_name">
+        <text>异常活动扫描仪</text>
+    </string>
+    <string id="cs_deshefrator_name">
+        <text>解码器</text>
+    </string>
+    <string id="cs_deshefrator_desc">
+        <text>黑石叛军们用来监听黑石狂热者对话的装置</text>
+    </string>
+    <string id="st_wpn_bm16_ohotnik">
+        <text>猎人的BM-16霰弹枪</text>
+    </string>
+    <string id="st_wpn_bm16_ohotnik_descr">
+        <text>一把老式霰弹枪, 上面有几处标记</text>
+    </string>
+    <string id="pda_dragun_name">
+        <text>刀疤脸的PDA</text>
+    </string>
+    <string id="pda_dragun_desc">
+        <text>在众多条目中, 有一个非常有趣:"神行客组建了一个新的团队来对抗黑石. 有传言说他手下有列别捷夫突击队的前成员"</text>
+    </string>
+    <string id="bar_case_name">
+        <text>沉重的公文包</text>
+    </string>
+    <string id="bar_case_desc">
+        <text>给酒保的一个很特别的箱子,装有战利品</text>
+    </string>
+    <string id="cs_anom_pribor_desc">
+        <text>研究异常能量场的特殊装置, 属于晴空</text>
+    </string>
+    <string id="cs_informer_pda_name">
+        <text>拐棍的PDA</text>
+    </string>
+    <string id="cs_informer_pda_desc">
+        <text>与晴空有关的加密信息就储存在这个PDA里</text>
+    </string>
+    <string id="crazy_stalker_flash_name">
+        <text>疯子的U盘</text>
+    </string>
+    <string id="crazy_stalker_flash_desc">
+        <text>信息已被加密</text>
+    </string>
+    <string id="escape_docs_name">
+        <text>来自封锁线军事路障的文件</text>
+    </string>
+    <string id="escape_docs_desc">
+        <text>从北方传来的军队战斗报告</text>
+    </string>
+    <string id="st_voen_scaner">
+        <text>用于测量异常活动的小型扫描仪</text>
+    </string>
+    <string id="st_voen_scaner_desc">
+        <text>这是一种专为军队潜行者和生态学家们的测量工作而设计的新式便携型号, 可惜的是, 对商人来说并没有什么特别的价值, 因为每个扫描仪都是个人特有的, 只有在输入密码后才会开始工作</text>
+    </string>
+
+<string id="prin_case_traders">
+        <text>把箱子交给商人</text>
+    </string>
+    <string id="tm_find_case_trader_1">
+        <text>从军事路障那里偷个箱子</text>
+    </string>
+    <string id="tm_find_case_trader_1_descr">
+        <text>要潜入军事路障, 从那里偷到装有军事行动报告的箱子</text>
+    </string>
+    <string id="prinesi_military_docs_start_0">
+        <text>我要怎么做才能得到"刀疤脸"的信息</text>
+    </string>
+    <string id="prinesi_military_docs_start_1">
+        <text>事情是这样的, 有个箱子里装着北方的军事行动报告, 从特异区深处带到了军队的路障, 白天他们看守着它, 就像里面装满了纯钚一样, 但晚上不知为何只会留下两名守卫, 你可以偷偷跑到那里, 帮我把箱子拿过来. 为了这个我可以不惜一切代价...嗯...在合理的范围内. 你肯定会去帮我拿回来的? 对吧?</text>
+    </string>
+    <string id="prinesi_military_docs_start_21">
+        <text>既然你这么说...好吧</text>
+    </string>
+    <string id="prinesi_military_docs_start_22">
+        <text>算了吧, 我还想多活几天</text>
+    </string>
+    <string id="prinesi_military_docs_start_31">
+        <text>好, 我已经准备好钱了, 但是你可别到处声张, 要是军队知道这件事, 我们就都完蛋了</text>
+    </string>
+    <string id="prinesi_military_docs_done_0">
+        <text>我找到了, 拿去</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_descr3">
+        <text>帮助晴空突击队从沼泽北部的军队手中夺取机械大院</text>
+    </string>
+
+    <string id="cs_task0_ambush_renegade_story_name6">
+        <text>最后的黎明: 击溃军队并占领机械大院</text>
+    </string>
+
+
+<string id="kuznecov_find_document_1">
+        <text>在农业研究所的地下设施内找到文件</text>
+    </string>
+    <string id="kuznecov_find_document_1_descr">
+        <text>找到包含研究信息的秘密文件, 把它们交给库兹涅佐夫上校</text>
+    </string>
+    <string id="kuznecov_find_document_2">
+        <text>在X-18的地下实验室找到文件</text>
+    </string>
+    <string id="kuznecov_find_document_2_descr">
+        <text>库兹涅佐夫上校下令从X-18号秘密实验室获取文件, 军事指挥部想要了解在这个复杂的实验室里进行的实验和和相关的信息</text>
+    </string>
+    <string id="kuznecov_find_document_3">
+        <text>在实验室X-16中找到文档并关闭"神迹装置"</text>
+    </string>
+    <string id="kuznecov_find_document_3_descr">
+        <text>农业研究所的军事指挥官指示我去位于扬塔的X-16实验室并获取秘密文件, 同时关闭灵能设施--"神迹装置", 他还建议我先做好灵能防护, 据他说, 在移动实验室里的生态学家们刚刚研发出了一些抵御灵能辐射的方法</text>
+    </string>
+    <string id="kuznecov_find_document_4">
+        <text>找到前X-10实验室的文件, 并关闭"焦脑器"</text>
+    </string>
+    <string id="kuznecov_find_document_4_descr">
+        <text>我已经准备好突破北边的黑石营地了, 我有了抵御头盔, 剩下的就是突破雷达站, 潜入实验室, 拿走文件, 并关闭里面的灵能设施</text>
+    </string>
+    <string id="kuznecov_find_document_5">
+        <text>在X-8实验室找到文件</text>
+    </string>
+    <string id="kuznecov_find_document_5_descr">
+        <text>我继续为军队指挥官收集所有实验室的神秘文件, 这次库兹涅佐夫派我去普里皮亚奇调查X-8实验室, 这个实验室显然是在制造基于脉冲能量的高精度武器, 我要在那里寻找所有重要的文件</text>
+    </string>
+    <string id="kuznecov_find_document_6">
+        <text>在普里皮亚奇地下设施找到文件</text>
+    </string>
+    <string id="kuznecov_find_document_6_descr">
+        <text>是进入秘密通道普里皮亚奇-1号设施的机会了, 潜行者称之为普里皮亚奇地下城, 我需要在那里找到研究文件</text>
+    </string>
+    <string id="kuznecov_find_document_7">
+        <text>清剿切尔诺贝利控制室的黑石部队, 并拿到所有文件</text>
+    </string>
+    <string id="kuznecov_find_document_7_descr">
+        <text>这是最后的行程了, 我要去切尔诺贝利的黑石控制室拿剩余的文件, 这将会解开特异区最大的谜团, 也会搞清楚"许愿石"背后的神秘力量, 我已受命尽可能的摧毁这个指挥所, 但在出发之前, 上校建议我在沼泽里寻找一位隐士, 当地人称他沼泽巫医, 他应该知道打开指挥中心大门的解码器在哪里</text>
+    </string>
+    <string id="kuznec_stry_doc">
+        <text>回去见库兹涅佐夫上校</text>
+    </string>
+
+<!-- Caaaaei ?a?o yoe oaiaoeeai! -->
+    <string id="assault_gen_name">
+        <text>黑石复仇行动: 到达风暴引擎所在地</text>
+    </string>
+    <string id="assault_gen_descr">
+        <text>攻击风暴引擎的时候到了, 与核电站的军事小队会合, 他们在老村庄占领了一个据点</text>
+    </string>
+    <string id="assault_gen_1_name">
+        <text>占领据点</text>
+    </string>
+    <string id="st_vasil_nevezuchi">
+        <text>瓦西尔·内维祖奇</text>
+    </string>
+    <string id="st_kvartet">
+        <text>什克·里亚边科队长</text>
+    </string>
+    <string id="come_to_aes_name">
+        <text>黑石复仇行动: 突袭切尔诺贝利核电站</text>
+    </string>
+    <string id="come_to_aes_descr">
+        <text>所有在特异区驻扎的小队都被命令向切尔诺贝利核电站移动, 黑石行动指挥官"老四"在通往扎顿的大门附近部署了战地指挥部</text>
+    </string>
+    <string id="army_assault_1_name">
+        <text>黑石复仇行动: 摧毁第一个检查点</text>
+    </string>
+    <string id="army_assault_1_descr">
+        <text>帮助特种兵小队摧毁第一个路障</text>
+    </string>
+    <string id="army_assault_2_name">
+        <text>黑石复仇行动: 摧毁第二个检查点</text>
+    </string>
+    <string id="army_assault_2_descr">
+        <text>帮助特种兵小队摧毁第二个路障</text>
+    </string>
+    <string id="army_assault_3_name">
+        <text>黑石复仇行动: 摧毁第三个检查点</text>
+    </string>
+    <string id="army_assault_3_descr">
+        <text>帮助特种兵小队摧毁第三个路障</text>
+    </string>           
+    
+    </string_table>

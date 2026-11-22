@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON YANTAR MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist) Default Storyline Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_default_task_text">
+		<text>接受你的下一個任務</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_default_task_about">
+		<text>什麼? 哦, 是的, 好極了! 我需要你幫助我的一個同事, 快去他那裡, 他需要你!</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_default_task_finish">
+		<text>祝你好運, 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist) Research Documents Storyline Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_task_1_name">
+		<text>薩哈洛夫教授的研究檔案</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_1_text">
+		<text>教授手下的一位研究員因怪物襲擊逃跑, 遺留了教授的研究報告, 取回那些研究報告並還給薩哈洛夫教授</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_1_about">
+		<text>太好了, 我正需要人手呢, 我的一個研究人員被怪物攻擊時丟下了研究報告跑了回來, 而我非常需要它! 潛行者, 請幫我取回它, 不管用什麼方法都行, 你的消耗品算在我頭上</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_1_finish">
+		<text>謝謝你, 潛行者! 請拿走這個, 你的報酬</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist) Abnormal Measurement Storyline Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_task_2_name">
+		<text>異常情況測量</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_text_0">
+		<text>薩哈洛夫教授請你幫忙測量一個出現異常情況的異常點, 但你需要先找回你丟失的 $item_1 </text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_text_1">
+		<text>薩哈洛夫教授請你幫忙測量一個出現異常情況的異常點.\n前往標記地點</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_text_2">
+		<text>薩哈洛夫教授請你幫忙測量一個出現異常情況的異常點.\n使用 $item_1 來進行測量</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_text_3">
+		<text>薩哈洛夫教授請你幫忙測量一個出現異常情況的異常點.\n帶著 $item_1 和記錄的測量結果回到他那裡</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_about">
+		<text>啊, 是的, 很好! 我一直在等你, 我們的掃描器正顯示著來自一個特殊異常點的一組有趣的讀數, 我需要一個有經驗的潛行者前往那裡並仔細測量, 我這兒正好有你完成這個任務需要的裝置, 年輕人.祝你好運</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_2_finish">
+		<text>是的, 很好, 太好了! 現在我的研究可以開始了! 謝謝潛行者.你做得很好</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist) Search Lab X=18 (Dark Valley) Storyline Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_task_3_name">
+		<text>搜索X-18實驗室</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_3_text">
+		<text>薩哈洛夫教授需要黑谷X-18實驗室中存放的研究檔案</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_3_about">
+		<text>哦, 是的.很好! 我有一份重要的工作要給你, X-18實驗室曾進行了一項重要的研究, 但實驗室封閉了, 我們沒法獲得檔案來繼續分析它, 你能幫我們找回嗎? 如果你能的話, 我會給你很好的報酬</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_3_finish">
+		<text>棒極了! 謝謝你, 潛行者!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist) Plant Anomaly Scanner (Red Forest) Storyline Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_task_4_name">
+		<text>把掃瞄器安置在"共生體"異常點附近</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text0">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器.\n首先, 你應該先取得一個異常點掃描器</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text1_0">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器.\n將掃描器帶到異常點</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text1_1">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器.\n將掃描器帶到異常點</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text2">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器.\n放置掃描器</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_text3">
+		<text>薩哈洛夫教授希望在紅森林的"共生體"異常點附近安置異常點掃描器.\n彙報安置情況</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_about">
+		<text>非常好! 請看一下這個新掃描器, 我們在科學考察中使用這些裝置探測異常活動, 特異區最有趣的異常點之一是發現于紅森林深處的"共生體"異常點, 我們想把這個掃瞄器安置在那個異常點附近, 幫助我們更多瞭解它的活動情況.
+		\n那個地方很危險, 希望對像你這樣有能力的潛行者來說不會有問題, 請幫我把它安置在那兒, 我想我會很樂意為你遇到的麻煩做出補償的</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_task_4_finish">
+		<text>謝謝你! 現在我們可以研究這種現象了!</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecologist Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_yan_stalker_sakharov_cf_task_1_name">
+		<text>科學和官僚主義</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_cf_task_1_text">
+		<text>薩哈洛夫希望我給他17000盧布, 這樣他就可以提交我成為一名正式的生態學家所需的所有政府官方檔案</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_cf_task_1_about">
+		<text>啊, 好吧, 我相信你會成為一名出色的外勤助理! 問題是, 搞定所有必需的身份檔案不便宜, 如果沒有一些, 呃... "額外動力"的話, 你知道在這鬼體制下會有多麻煩...\n \n比如永久合同, 許可證, ID等等... 如果你想在有生之年就拿到的話, 至少需要17000盧布來打通這些流程... 所以, 我們雖然很樂意多一個同事, 但前提是你得樂意掏錢!</text>
+	</string>
+	<string id="drx_sl_yan_stalker_sakharov_cf_task_1_finish">
+		<text>太棒了! 好極了! 以後我們就是同行了! 爲了科學!</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Semenov (Ecog Honcho) Research Hunt Task -->
+
+	<string id="yan_ecolog_semenov_task_1_name">
+		<text>謝梅諾夫的怪物研究</text>
+	</string>
+	<string id="yan_ecolog_semenov_task_1_text">
+		<text>助理謝梅諾夫已經委託你護送他到各個地方去殺死怪物, 這樣他就可以提取新的組織樣本, 並用他的掃瞄裝置分析屍體了</text>
+	</string>
+	<string id="yan_ecolog_semenov_task_1_about">
+		<text>你能幫我消滅一些怪物嗎? 這樣我就可以讀取數據和採集組織樣本了, 比方說... 大約有5種不同的怪物, 我的小命就交給你了, 你需要確保我的安全, 我會給你報酬的</text>
+	</string>
+	<string id="yan_ecolog_semenov_task_1_finish">
+		<text>謝謝你的幫助, 朋友, 我搞到了所有需要的組織樣本, 這是你的報酬, 改天再來找我</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sakharov (Ecog Trader) -->
+	<string id="yan_stalker_sakharov_task_1_name">
+		<text>大"採購"%s</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_1_text">
+		<text>薩哈洛夫需要一份來自%s的組織樣本</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_1_about">
+		<text>我需要一個有經驗的潛行者或怪物獵人, 你就是那個人嗎?</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_1_fetch_about">
+		<text>我需要從%s身上收集組織樣本, 我不管你是怎麼搞到它的, 只要確保它新鮮就行, 從怪物身上取得我要的組織樣本后就快回來</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_1_fetch_finish">
+		<text>謝謝你, 先生, 這對我的研究有很大幫助</text>
+	</string>
+	
+	<!-- Collect New Artefact Task -->
+	<string id="yan_stalker_sakharov_task_2_name">
+		<text>科學進展</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_text">
+		<text>薩哈洛夫教授要我給他找一件"%s"神器</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_about">
+		<text>你願意幫助我做些調查嗎? 我會為你的努力付出報酬的</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_fetch_about">
+		<text>我們的研究即將有了重大發現, 但仍需要更多的樣品來繼續我們的實驗, 請幫我們找一件"%s"神器, 我們需要從中取樣</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_fetch_finish">
+		<text>我代表科學界謝謝你, 這是承諾的報酬</text>
+	</string>
+
+	<!-- Classified Information Task -->
+	<string id="classified_information_task_name">
+		<text>機密資訊</text>
+	</string>
+	<string id="classified_information_task_text">
+		<text>取得包含機密資訊的檔案</text>
+	</string>
+	<string id="classified_information_task_about">
+		<text>我們剛得知特異區里存在著包含機密資訊的檔案, 它們可能是我們研究取得重大突破的關鍵! 你能幫我們取回這些檔案嗎?</text>
+	</string>
+	<string id="classified_information_task_finish">
+		<text>我們距離認識特異區又近了一步, 謝謝你!</text>
+	</string>
+	
+	<!-- yan_stalker_sakharov -->
+	<string id="yan_stalker_sakharov_psi_helmet_upgrade_name">
+		<text>取得抗靈頭盔</text>
+	</string>
+	<string id="yan_stalker_sakharov_psi_helmet_upgrade_text">
+		<text>薩哈洛夫教授同意為你重新校準靈能防護頭盔, 他讓你過幾天再來拿</text>
+	</string>
+
+	<string id="brain_machine_deactivate_name">
+		<text>關閉"神蹟裝置"</text>
+	</string>
+	<string id="brain_machine_deactivate_text">
+		<text>"神蹟裝置"切斷了揚塔到死城的道路, 你需要高級靈能場防護裝備來關閉它</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Peregrine (Military Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="mechanic_army_yan_mlr_task_1_name">
+		<text>為遊隼找到%s</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_1_text">
+		<text>遊隼需要你幫他找到%s來安裝基本的裝備升級, 如果你找到了一些, 你應該把它們帶回給他</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_1_about">
+		<text>嘿, 我能請你幫個忙嗎? 如果你有興趣幫助我, 我會告訴你我需要什麼</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_1_fetch_about">
+		<text>我需要一套基本的工具, 它應該包含了我所需要的東西, 如果你能給我帶回來, 我將不勝感激, 甚至從現在起會為你打折服務</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_1_fetch_finish">
+		<text>太好了! 你帶來的東西正是我所需要的, 謝謝</text>
+	</string>
+
+	<string id="mechanic_army_yan_mlr_task_2_name">
+		<text>為遊隼找到%s</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_2_text">
+		<text>遊隼需要你幫他找到%s來安裝高級的裝備升級, 如果你找到了一些, 你應該把它們帶回給他</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_2_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具, 但它們可能不好找.你能幫我找一下嗎?</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_2_fetch_about">
+		<text>我需要一套高級的工具, 它應該包含了我所需要的東西, 如果你能給我帶回來, 我將不勝感激, 甚至從現在起會為你打折服務</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_2_fetch_finish">
+		<text>太棒了! 如果你的裝備需要修理或調校的話, 隨時都可以來我這兒</text>
+	</string>
+
+	<string id="mechanic_army_yan_mlr_task_3_name">
+		<text>為遊隼找到%s</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_3_text">
+		<text>遊隼%s來安裝專家裝備升級, 如果我找到了一些, 應該把它們帶回給他</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_3_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具, 但它們可能不好找.你能幫我找一下嗎?</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_3_fetch_about">
+		<text>我真的很感激, 當你帶著工具回來的時候, 我也會教你一些如何進行正確的現場維護的技巧 - 當然, 除非其他技術人員已經教過你了, 這是我說謝謝的方式, 祝你好運</text>
+	</string>
+	<string id="mechanic_army_yan_mlr_task_3_fetch_finish">
+		<text>嗯, 可惜你不在補給隊工作, 也許現在我終於可以把那個該死的接收器修好, 至於你, 你已經贏得了我的感激, 代表這個地堡, 這是你的付款</text>
+	</string>
+	
+	
+	
+ 	<string id="yan_stalker_sakharov_task_4_name">
+		<text>取回追蹤裝置</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_4_about">
+		<text>我們已經在怪物身上植入了一些裝置來收集他們的運動、習慣和其他資訊, 然而, 自從上次電磁輻射爆發以來, 一些追蹤裝置已經開始出現故障, 它們仍在傳輸座標, 但沒有其他數據, 因此有必要手動恢復它們, 你必須弄死那些帶著追蹤裝置的怪物並把裝置帶回這裡</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_4_stage_0">
+		<text>殺死植入了追蹤裝置的怪物</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_4_stage_1">
+		<text>取回追蹤裝置</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_4_stage_2">
+		<text>歸還追蹤裝置</text>
+	</string>
+	<string id="recover_mutant_data_device_desc">
+		<text>一種裝置, 在怪物身上植入以追蹤它的運動和其他數據, 除了一些劃痕外, 它看起來狀態非常好</text>
+	</string>
+	<string id="recover_mutant_data_device_name">
+		<text>追蹤裝置</text>
+	</string>
+</string_table>

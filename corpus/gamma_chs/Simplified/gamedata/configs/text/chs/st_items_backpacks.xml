@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Backpacks
+-->
+<string_table>
+	<string id="st_itm_backpack_name">
+		<text>背包</text>
+	</string>
+	<string id="st_itm_backpack_desc">
+		<text>由耐用材料制成的背包, 能承受最恶劣的天气条件\n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+			</text>
+	</string>
+	
+	<string id="st_equ_smallpack_name">
+		<text>野营背包</text>
+	</string>
+	<string id="st_equ_smallpack_desc">
+		<text>一个有着足够储存空间的背包. 内部有防水设计. 这背包不是很好, 但它确实很有效. 在潜行者和新手中它是很受欢迎的选择\n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_smilpack_name">
+		<text>旅行背包</text>
+	</string>
+	<string id="st_equ_smilpack_desc">
+		<text>长途旅行用的大背包. 由于有重量分配设计, 穿戴者可以携带足够的物品和设备进行一次长达五天的旅行\n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_milpack_name">
+		<text>战斗背包</text>
+	</string>
+	<string id="st_equ_milpack_desc">
+		<text>军用背包, 顾名思义是军队使用的一种战斗背包, 通常用于储存更多的弹药和医疗用品\n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_touristpack_name">
+		<text>旅行包</text>
+	</string>
+	<string id="st_equ_touristpack_desc">
+		<text>一个游客的背包, 里面有很大的存储空间. 由于体积笨重, 不太受欢迎\n \n
+			%c[0,255,255,255]属性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+		</text>
+	</string>
+	
+	<string id="st_kit_hunt">
+		<text>狩猎背包</text>
+	</string>
+	<string id="st_kit_hunt_descr">
+		<text>一整袋的钩子, 刀和其他设备, 用于剥皮和清除动物和怪物. 很少有潜行者携带专业设备进行怪物狩猎. 这也许就是为什么这么多的潜行者在特异区吃了怪物肉后会消化不良的原因. 由于工具种类繁多, 这套工具可以有效地改善武器和护甲的维护\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 物品存储\n
+		%c[d_green] • %c[ui_gray_2] 分解怪物时可以获得更多肢体\n
+		%c[d_orange] • %c[ui_gray_2] 可放置地面用于储物\n
+		</text>
+	</string>
+	
+	<string id="st_itm_actor_backpack_name">
+		<text>紧急释放装置</text>
+	</string>
+	<string id="st_itm_actor_backpack_descr">
+		<text>你肯定不想在特异区里被突然袭击吧? 虽然紧急释放装置并不能帮助你预防这种情况, 但它有助于使你快速脱离危险, 它的功能很简单: 可以立即抛下身上的背包, 让你逃到一个安全的地方, 而不会让沉重的背包阻碍你的行动, 若要使用它, 可以将其拖入快捷键, 按下快捷键后, 紧急释放装置就会激活, 然后就会立即把你的背包(和里面的所有东西)扔到地上\n 
+		%c[ui_gray_3]注意: 你的装备武器, 弹药, 护甲等有用的物品仍然在你的手中, 这样你就能充分地应付紧急情况, 事后还可以取回你的背包\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 内置GPS\n
+		%c[d_cyan] • %c[ui_gray_2] 战斗装备仍在使用者手中\n</text>
+	</string>
+	<string id="st_itm_actor_backpack_desc_mlr">
+		<text>虽然有些潜行者在意外情况下会使用, 不过大部分潜行者对这个东西都不是很感冒, 如果被问到原因, 有些人会一边说着"反正不影响ergo", "超重了ADS速度也不变"这种听不太懂的话, 一边往弹匣里塞着子弹...</text>
+	</string>
+	
+	<string id="st_itm_backpack_stash_name">
+		<text>PDA定位背包</text>
+	</string>
+	<string id="st_itm_backpack_stash_desc">
+		<text>一个配有GPS定位系统的耐用背包. 它的位置讯息会自动同步到您的PDA上, 一旦放下会在地图上产生一个藏物点, 并标记在您的PDA上. 背包由坚固耐用的材料制成, 无论环境状况如何, 都能保证设备的安全和干燥. 迷彩设计确保了使用者在自然环境中能保持隐蔽\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 内置GPS\n
+		%c[d_red] • %c[ui_gray_2] 单独使用\n</text>
+	</string>
+	
+</string_table>

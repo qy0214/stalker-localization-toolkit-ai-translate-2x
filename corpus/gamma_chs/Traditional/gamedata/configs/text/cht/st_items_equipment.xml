@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Basic items (Some are not used anymore)
+-->
+<string_table>
+
+	<string id="st_itm_campfire">
+		<text>篝火</text>
+	</string>
+	<string id="st_itm_campfire_descr">
+		<text>篝火可不是你能隨身攜帶的東西, 你不應該看到這個的!\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[0,100,255,255] • %c[ui_gray_2] 潛行者最喜歡的地方\n
+		%c[0,100,255,255] • %c[ui_gray_2] 用於烹飪\n
+		%c[0,100,255,255] • %c[ui_gray_2] 故事時間\n
+		%c[0,100,255,255] • %c[ui_gray_2] 可以和吉他和伏特加一起使用\n
+		</text>
+	</string>
+	
+	<string id="st_poxod_rukzak">
+		<text>異常的揹包</text>
+	</string>
+	<string id="st_poxod_rukzak_descr">
+		<text>乍一看, 這個揹包似乎沒有突出的效能. 然而, 包里物品的重量會隨著時間的推移而減少. 有傳言說, 這是由於一批為軍方運送的揹包意外地被一個異常點捕獲所引起的. 生態學家們試圖重現其獨特特性的嘗試都失敗了. 特異區內有影響力的人士已經購買了一批這種不尋常的揹包, 並準備向全球出口.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 獨特物品\n
+		</text>
+	</string>
+
+	<string id="st_bolt">
+		<text>螺栓</text>
+	</string>
+	<string id="st_bolt_descr">
+		<text>一個再普通不過的生鏽螺栓, 無論是新手還是老手都得用它來在異常點中找出一條安全的道路.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被拋出以探測異常點\n
+		</text>
+	</string>
+	
+	<string id="st_bolty">
+		<text>螺栓</text>
+	</string>
+	<string id="st_bolty_descr">
+		<text>一個再普通不過的生鏽螺栓, 無論是新手還是老手都得用它來在異常點中找出一條安全的道路.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被拋出以探測異常點\n
+		</text>
+	</string>
+	
+	<string id="st_bolt_bullet">
+		<text>彈殼</text>
+	</string>
+	<string id="st_bolt_bullet_descr">
+		<text>有時候, 潛行者們會利用自己的空彈殼來代替螺栓, 以在異常點間探索安全的道路.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 可被拋出以探測異常點\n
+		</text>
+	</string>
+	
+	<string id="st_identity_card">
+		<text>個人烏克蘭安全域性身份證</text>
+	</string>
+	<string id="st_identity_card_descr">
+		<text>這是你的個人身份證, 它顯示了你的真實身份. 把它藏起來. 作為一名烏克蘭安全域性的突擊隊員, 你擅長突擊步槍和重型武器. 你還擅長控制武器後坐力, 但你的衝刺速度較慢.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 私人物品\n
+		</text>
+	</string>
+	<string id="st_identity_card_assaulter_descr">
+		<text>作為一名烏克蘭安全域性突擊隊員你有獨特的優點和缺點.\n\n
+		%c[d_cyan]裝備\n
+		%c[default]重型防護服敏捷度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]封閉式防護服敏捷度: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]C\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀戰: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]操控性特長: %c[d_red_1]高後坐力\n
+		%c[d_blue] • %c[default]維修特長: %c[d_red_1]重武器\n\n
+		%c[d_cyan]藥物\n
+		%c[d_blue] • %c[default]繃帶/醫療包熟練度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]醫療技能: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]藥物處理技能: %c[d_red_1]C\n\n
+		%c[d_cyan]運動能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]非常高\n
+		%c[d_blue] • %c[default]衝刺速度: %c[d_red_1]慢\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]落下/跳躍敏捷度: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]基礎體力: %c[d_red_1]低\n
+		%c[d_blue] • %c[default]最大負重: %c[ui_gray_1] %c[d_red_1]高\n\n
+		%c[d_cyan]健康狀況\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]快\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]高\n\n
+		%c[d_cyan]免疫系統抵抗\n
+		%c[d_blue] • %c[default]藥物/酒精: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]不健康食品: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]輻射: %c[ui_gray_1] %c[d_red_1]C\n
+		</text>
+	</string>
+	<string id="st_identity_card_recon_descr">
+		<text>作為一名烏克蘭安全域性偵察兵你有獨特的優點和缺點.\n\n
+		%c[d_cyan]裝備\n
+		%c[default]重型防護服敏捷度: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]封閉式防護服敏捷度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]A+\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀戰: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]操控性特長: %c[d_red_1]衝鋒鎗\n
+		%c[d_blue] • %c[default]維修特長: %c[d_red_1]衝鋒鎗\n\n
+		%c[d_cyan]藥物\n
+		%c[d_blue] • %c[default]繃帶/醫療包熟練度: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]醫療技能: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]藥物處理技能: %c[d_red_1]A\n\n
+		%c[d_cyan]運動能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]低\n
+		%c[d_blue] • %c[default]衝刺速度: %c[d_red_1]快\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]落下/跳躍敏捷度: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]基礎體力: %c[d_red_1]高\n
+		%c[d_blue] • %c[default]最大負重: %c[ui_gray_1] %c[d_red_1]低\n\n
+		%c[d_cyan]健康狀況\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]慢\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]中\n\n
+		%c[d_cyan]免疫系統抵抗\n
+		%c[d_blue] • %c[default]藥物/酒精: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]不健康食品: %c[d_red_1]C\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]A\n
+		%c[d_blue] • %c[default]輻射: %c[ui_gray_1] %c[d_red_1]A\n
+		</text>
+	</string>
+	<string id="st_identity_card_sniper_descr">
+		<text>作為一名烏克蘭安全域性狙擊手你的屬性非常平衡.\n\n
+		%c[d_cyan]裝備\n
+		%c[default]重型防護服敏捷度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]封閉式防護服敏捷度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]神器操作: %c[d_red_1]B\n\n
+		%c[d_cyan]武器\n
+		%c[d_blue] • %c[default]刀戰: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]操控性特長: %c[d_red_1]狙擊步槍\n
+		%c[d_blue] • %c[default]維修特長: %c[d_red_1]狙擊步槍\n\n
+		%c[d_cyan]藥物\n
+		%c[d_blue] • %c[default]繃帶/醫療包熟練度: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]醫療技能: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]藥物處理技能: %c[d_red_1]B+\n\n
+		%c[d_cyan]運動能力\n
+		%c[d_blue] • %c[default]耐力: %c[ui_gray_1] %c[d_red_1]中\n
+		%c[d_blue] • %c[default]衝刺速度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]跳起高度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]落下/跳躍敏捷度: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]奔跑耐力: 
+		%c[d_red_1]高\n
+		%c[d_blue] • %c[default]衝刺耐力: 
+		%c[d_red_1]中\n
+		%c[d_blue] • %c[default]最大負重: %c[ui_gray_1] %c[d_red_1]中\n\n
+		%c[d_cyan]健康狀況\n
+		%c[d_blue] • %c[default]食物消耗率: %c[d_red_1]中\n
+		%c[d_blue] • %c[default]睡眠需求: %c[d_red_1]低\n\n
+		%c[d_cyan]免疫系統抵抗\n
+		%c[d_blue] • %c[default]藥物/酒精: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]不健康食物: %c[d_red_1]A+\n
+		%c[d_blue] • %c[default]神器: %c[d_red_1]B\n
+		%c[d_blue] • %c[default]輻射: %c[ui_gray_1] %c[d_red_1]B\n
+		</text>
+	</string>
+	
+	<string id="st_energy">
+		<text>無</text>
+	</string>
+	<string id="st_energy_descr">
+		<text>以安培小時為單位儲存的能量 (Ah).</text>
+	</string>
+
+	<string id="green_bug_name">
+		<text>綠甲蟲</text>
+	</string>
+	<string id="green_bug_description">
+		<text>綠甲蟲是每個潛行者不可分離的伴侶. 特異區里沒有一個人在路上遇到過它. 如果在你的一生中只被發現一兩次, 這應該被認為是幸運的. 你的心情與隨後每次見到綠甲蟲成正比... \n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 大大增加了遊戲崩潰的機會\n
+		%c[d_blue] • %c[ui_gray_2] 不可被拋棄\n
+		%c[d_blue] • %c[ui_gray_2] 不可被出售\n
+		</text>
+	</string>
+	
+	<string id="sleep_itm_warning_blowout">
+		<text>現在睡覺很不安全!</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_smr_loot">
+		<text>战利品</text>
+	</string>
+	<!-- GENERAL -->
+	<string id="ui_mcm_SMR_smr_loot_random_items">
+		<text>散落的战利品</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_random_items_desc">
+		<text>更改在世界各地发现的物品数量. 这只会在开始新游戏时生效. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_general_info">
+		<text>下面的选项增加了在储藏箱和死亡 NPC 上找到一些额外物品的机会. 如果你正在使用"无"基本人口预设,这将非常有帮助. </text>
+	</string>
+	<!-- PDA MESSAGES -->
+	<string id="ui_mcm_SMR_smr_loot_send_message">
+		<text>显示 PDA 通知</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_send_message_desc">
+		<text>每当玩家发现额外物品时显示通知. </text>
+	</string>
+	<string id="st_smr_loot_found_repair">
+		<text>找到一个修理包</text>
+	</string>
+	<string id="st_smr_loot_found_ammo">
+		<text>找到了一些弹药</text>
+	</string>
+	<string id="st_smr_loot_found_useful">
+		<text>找到一个有用的物品</text>
+	</string>
+	<string id="st_smr_loot_found_meds">
+		<text>找到一个医疗物品</text>
+	</string>
+	<string id="st_smr_loot_found_mags">
+		<text>为你的武器找到一个弹匣</text>
+	</string>
+	<string id="st_smr_loot_found_lootbox">
+		<text>发现了一个战利品箱</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_npc_spawn">
+		<text>在 NPC 上找到额外的物品</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_npc_chance">
+		<text>NPC 物品生成几率</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_npc_chance_desc">
+		<text>有机会在 NPC 身上找到额外的物品. 如果成功,将使用常规机会进行第二次掷骰,以在储物箱中找到物品. </text>
+	</string>
+	<!-- ITEMS -->
+	<string id="ui_mcm_SMR_smr_loot_items_title">
+		<text>额外物品会在储物箱中生成. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_spawn">
+		<text>生成修理物品</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_spawn_desc">
+		<text>增加了在储物箱中找到修理物品的机会. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_parts_spawn">
+		<text>生成零件维修物品</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_parts_spawn_desc">
+		<text>启用/禁用作为小修套件的零件维修项目. 如果你不想费心修理/更换武器和装备部件,你可以禁用相关物品的生成. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_chance">
+		<text>修理包机会</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_chance_desc">
+		<text>有机会在储物箱中找到修理包. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_minor_spawn">
+		<text>生成小型修理包</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_minor_spawn_desc">
+		<text>增加了在储物箱中找到胶管和零件包等小型维修包的机会. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_minor_chance">
+		<text>小型修理包机会</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_repair_minor_chance_desc">
+		<text>小型维修套件的生成几率,例如胶管和零件套件. </text>
+	</string>
+	<!-- AMMO -->
+	<string id="ui_mcm_SMR_smr_loot_ammo_spawn">
+		<text>生成额外的弹药</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_ammo_spawn_desc">
+		<text>增加在储物箱中找到弹药的机会. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_loot_ammo_chance">
+		<text>弹药几率</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_chance_desc">
+		<text>在储物箱中找到弹药的几率. </text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_bad_spawn">
+		<text>生成旧弹药</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_bad_chance">
+		<text>旧弹药几率</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_bad_chance_desc">
+		<text>找到的旧弹药的几率. </text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_amount">
+		<text>弹药数量</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_ammo_amount_desc">
+		<text>找到的弹药数量乘数. </text>
+	</string>
+    <!-- USEFUL -->
+    <string id="ui_mcm_SMR_smr_loot_useful_spawn">
+		<text>生成有用的物品</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_useful_spawn_desc">
+		<text>增加了跟商人交易以外难以获得的物品在储物箱生成的机会. 包括刀、背包、探测器、前照灯等. </text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_useful_chance">
+		<text>有用物品的几率</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_useful_chance_desc">
+		<text>在储物箱中找到有用物品的百分比几率. </text>
+	</string>
+	<!-- MEDS -->
+    <string id="ui_mcm_SMR_smr_loot_meds_spawn">
+		<text>生成医疗物品</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_meds_spawn_desc">
+		<text>增加在储物箱中找到医疗物品的机会</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_meds_chance">
+		<text>医疗物品几率</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_loot_meds_chance_desc">
+		<text>在储物箱中找到医疗物品的百分比几率. </text>
+	</string>
+</string_table>

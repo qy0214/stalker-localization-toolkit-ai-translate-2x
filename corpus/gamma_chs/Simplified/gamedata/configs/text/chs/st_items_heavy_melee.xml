@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_sledge_hammer">
+		<text>大锤</text>
+	</string>
+
+	<string id="st_sledge_hammer_descr">
+		<text>一把钝而重的工业大锤. 曾经是用来建造我们周围的建筑物的工具,现在用来粉碎蹲在里面的人的脑袋. \n \n
+		%c[ui_gray_2]]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 近战武器\n
+		%c[d_cyan] • %c[ui_gray_2] 攻击范围比刀大\n
+		</text>
+	</string>
+
+</string_table>

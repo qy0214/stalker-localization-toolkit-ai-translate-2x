@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON DEAD CITY MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Default Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_default_task_about">
+		<text>有一個人想花大價錢來僱傭我們為他服務, 你現在快去找他.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Commando Raid Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_1_name">
+		<text>突擊敵營</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_1_text">
+		<text>你需要秘密滲透進敵人的營地...</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_1_about">
+		<text>我有份工作給你. 有一夥人去了我們的客戶不希望他們去的地方. 你需要把他們從那個區域里"請"出來, 但你只能一個人去. 因為他們已經做好了應對大規模進攻的準備, 但他們不會料到會有一個單獨的滲透者. 潛入他們的營地, 儘可能多地消滅他們.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_1_finish">
+		<text>做得好. 我們的客戶很高興. 他甚至給你發了獎金.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Assault Bandit Camp Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_2_name">
+		<text>襲擊匪營</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_2_text">
+		<text>帶領一隊僱傭兵突襲該地區的一個土匪營地.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_2_about">
+		<text>土匪已進入該地區. 帶幾個人把他們趕出去.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_task_2_finish">
+		<text>幹得好. 你是個好戰士.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Hog (Merc Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_default_task_about">
+		<text>我有個客戶要找你. 我已經在你的地圖上標出了他的位置.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_default_task_finish">
+		<text>祝你好運!潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Hog (Merc Mechanic) Ambush Raid Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_1_name">
+		<text>伏擊突襲</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_1_text">
+		<text>與一些即將突襲在該地區敵人營地的傭兵聯繫.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_1_about">
+		<text>嘿,一些小夥子發現了這個地區有一個敵人的營地, 他們正準備去伏擊那些蠢蛋. 如果你動作快點的話, 你應該可以趕上他們.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_1_finish">
+		<text>幹得好. 這是你的那一份</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Hog (Merc Mechanic) Extract Mercenary Prisoner Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_2_name">
+		<text>營救傭兵俘虜</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_2_text">
+		<text>一個僱傭兵被軍方俘虜了, 把他救出來.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_2_about">
+		<text>軍隊的那些婊子抓了我們的一個人! 快去把他救出來.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_2_finish">
+		<text>幹得好!所有人都撈出來了.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Hog (Merc Mechanic) Mutant Part Storyline Task -->
+
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_3_name">
+		<text>把%s帶給豪格</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_3_text">
+		<text>殺死攻擊豪格的變異怪物, 並把%s帶給他.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_3_about">
+		<text>你經常在野外活動. 如果你遇到這個變異怪物, 我希望你殺了它.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_3_fetch_about">
+		<text>就在上週, 我被一個變異怪物襲擊了, 那個混蛋差點要了我的命, 但我還沒來得及打爆它的屁股, 它就跑掉了. 如果你遇到了那該死的東西, 殺了它, 把它的雜碎掏出來, 給我該死的%s. 我會好好報答你的.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_mechanic_stalker_task_3_fetch_finish">
+		<text>你殺了它! 太棒了! 你這個小混蛋看你還敢不敢再襲擊我! 謝謝, 你做得很好.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Payoff Change Factions Task -->
+
+	<string id="drx_sl_cit_killers_merc_trader_stalker_cf_task_1_name">
+		<text>成為一個僱傭兵</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_cf_task_1_text">
+		<text>達什曼需要12000盧布的擔保金, 作為正式僱傭你的回報.</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_cf_task_1_about">
+		<text>在特異區我們無法進行常規的背景調查, 所以你需要交12000盧布作為擔保金, 防止你單方面解約, 傭兵的信條就是專業, 專業, 還是專業; 拿好你的武器, 別耍鬼點子, 明白?</text>
+	</string>
+	<string id="drx_sl_cit_killers_merc_trader_stalker_cf_task_1_finish">
+		<text>不錯, 你做了一個很好的決定! 簽了這份合同, 你就是我們的一員了!</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Contract Killing Dynamic Task -->
+
+	<string id="cit_killers_merc_trader_stalker_task_1_name">
+		<text>僱傭殺手</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_1_text">
+		<text>你已經簽約去尋找並消滅一個目標. 任務完成後回來領賞.</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_1_about">
+		<text>我們的承包商有一份懸賞清單, 我們需要有人來分散進行這些暗殺, 這將使我們能夠履行我們對承包商的義務. 你有興趣嗎?</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_1_finish">
+		<text>完成了嗎? 幹得好! 這是你的提成.</text>
+	</string>
+
+
+	<!-- ASSAULT TERRITORY FOR MERCS TASK -->
+	<string id="cit_killers_merc_trader_stalker_task_2_name">
+		<text>突襲地區</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_2_text">
+		<text>清除該地區所有的敵對威脅.</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_2_about">
+		<text>我需要你帶領突擊隊去清除目標區域內所有敵對勢力.</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_2_finish">
+		<text>幹得好! 你是個優秀的戰士.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Dushman (Merc Trader) Capture Enemy Documents Dynamic Task -->
+
+	<string id="cit_killers_merc_trader_stalker_task_3_name">
+		<text>奪取敵方檔案</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_3_text">
+		<text>拿到敵人的檔案並把它們交給達什曼.</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_3_about">
+		<text>我們的僱主告訴我們, 他想要從敵人手中奪取一份檔案. 去把它帶來, 我會給你報酬的.</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_3_finish">
+		<text>幹得好.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== MECHANIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Hog (Merc Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="cit_killers_merc_mechanic_stalker_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_1_text">
+		<text>豪格需要%s來完成基本的裝備升級. 如果你找到它, 把它交給豪格</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_1_about">
+		<text>我有個建議給你. 如果你能給我帶些的新工具, 我會給你報酬,你有興趣嗎?</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_1_fetch_about">
+		<text>我一直在找一套%s. 裡面應該有一些油和工具, 我需要用它來進行槍械的改裝.如果你能給我一套完整的工具, 我會付錢給你的.</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_1_fetch_finish">
+		<text>太棒了. 這就是我一直在找的. 謝謝!</text>
+	</string>
+
+
+
+	<string id="cit_killers_merc_mechanic_stalker_task_2_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_2_text">
+		<text>豪格需要%s來完成先進的裝備升級, 如果找到了它, 把它帶給豪格.</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_2_about">
+		<text>我還有一個提議, 你給我帶來的工具箱很好用, 但是還是缺了一些工具, 你可以給我找一套更好的工具嗎?</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_2_fetch_about">
+		<text>我需要一個%s. 我不知道你在哪裡能弄到, 如果你能幫我找到的話, 我會給你報酬的.</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_2_fetch_finish">
+		<text>我需要的東西都有了, 謝謝您.</text>
+	</string>
+
+
+
+	<string id="cit_killers_merc_mechanic_stalker_task_3_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_3_text">
+		<text>豪格需要%s來完成專家級別的裝備升級, 如果你找到了它, 把它帶給豪格.</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_3_about">
+		<text>我還有一個提議, 你給我帶來的工具箱很好用, 但是還是缺了一些工具, 你可以給我找一套更好的工具嗎?</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_3_fetch_about">
+		<text>我需要一個%s. 我不知道你在哪裡能買到, 如果你能幫我找到的話, 我會給你報酬的.</text>
+	</string>
+	<string id="cit_killers_merc_mechanic_stalker_task_3_fetch_finish">
+		<text>我需要的東西都有了. 謝謝您</text>
+	</string>
+	
+	
+<!-- Aslan (Barman) -->
+	<string id="cit_killers_merc_barman_mlr_task_1_name">
+		<text>消滅目標</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_1_text">
+		<text>必須消滅另一個目標</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_1_about">
+		<text>是的, 我們總是有工作給你. 我給你座標, 你去殺了它.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_1_finish">
+		<text>幹得好, 這是你的錢.</text>
+	</string>
+	
+	<string id="cit_killers_merc_barman_mlr_task_2_name">
+		<text>收集%s</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_2_text">
+		<text>阿斯蘭讓我去收集%s.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_2_about">
+		<text>想去殺幾個人嗎? 我來告訴你怎麼分屍, 把它們帶過來我會給你報酬.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_2_fetch_about">
+		<text>想去殺幾個人嗎? 把%s給我, 你會得到豐厚的獎勵.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_2_fetch_finish">
+		<text>做得好. 這是你的錢.</text>
+	</string>
+	
+	<string id="cit_killers_merc_barman_mlr_task_3_name">
+		<text>變異標本: %s</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_3_text">
+		<text>需要%s</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_3_about">
+		<text>是的, 我一直有工作要給你. 有個富有的客戶對一個罕見變異怪物身上的某些部位感興趣. 把它給我帶來, 我會給你報酬的.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_3_fetch_about">
+		<text>是的, 我一直有工作要給你. 有個富有的客戶對一個罕見變異怪物身上的某些部位感興趣. 把它給我帶來, 我會給你報酬的. 把%s給我拿來.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_3_fetch_finish">
+		<text>幹得好, 這是你的報酬.</text>
+	</string>
+	
+	<string id="cit_killers_merc_barman_mlr_task_4_name">
+		<text>黑夜之懼: 紅森林</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_4_text">
+		<text>阿斯蘭想消滅一個危險的變異怪物, 這個變異怪物經常在紅森林出沒.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_4_about">
+		<text>聽著, 有傳聞說紅森林裡有一隻特別討厭的奇美拉, 一整隊的潛行者都不是他的對手. 他們說奇美拉是黑色的. 可能就是那個混蛋殺了我們的偵察隊. 所以, 我想要它永遠消失. 拿好武器去把那個混蛋幹掉.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_4_finish">
+		<text>幹得好, 潛行者, 這是你應得的.</text>
+	</string>
+
+	<string id="cit_killers_merc_barman_mlr_task_5_name">
+		<text>保護基地</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_5_text">
+		<text>阿斯蘭讓你清除基地附近的所有變異怪物.</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_5_about">
+		<text>當然, 這不是合同, 而是個人委託. 有太多的變異怪物在四處遊蕩, 晚上他們製造太多噪音, 讓我渾身難受, 白天這些變異怪物可能會把獵人引過來, 我不喜歡外人窺探這裡. 去掃清特異區的變異怪物</text>
+	</string>
+	<string id="cit_killers_merc_barman_mlr_task_5_finish">
+		<text>這是付款, 繼續好好工作.</text>
+	</string>
+	
+<!-- Surgeon (Mercenary Medic) -->
+	<string id="cit_killers_merc_medic_stalker_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="cit_killers_merc_medic_stalker_task_1_text">
+		<text>%s是外科醫生需要的醫療用品. 如果你找到了, 把它給醫生.</text>
+	</string>
+	<string id="cit_killers_merc_medic_stalker_task_1_about">
+		<text>現在醫療用品庫存量很是令人擔憂, 按照現在的消耗量來算, 我很快就會用完繃帶和醫療包了. 因此我需要你幫我找一套舊的製藥箱, 它們肯定會派上用場的.</text>
+	</string>
+	<string id="cit_killers_merc_medic_stalker_task_1_fetch_about">
+		<text>是的, 我一直在到處找%s. 它應該包含一些藥片和注射器, 我需要用它來製作醫療用品. 如果你能給我帶全套工具的話, 可以給你一些醫療用品.</text>
+	</string>
+	<string id="cit_killers_merc_medic_stalker_task_1_fetch_finish">
+		<text>幹得好! 我欠你一個大人情.</text>
+	</string>
+
+</string_table>

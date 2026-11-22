@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_wpn_fort12">
+		<text>Fort-12手枪</text>
+	</string>
+	<string id="st_wpn_fort12_descr">
+		<text>Fort-12 是最近独立的乌克兰（从 1991 年 8 月起）尝试制造自己的警用手枪以取代苏联时代的马卡洛夫 PM，同时仍使用相同的 9x18 口径弹药的作品。 乌克兰枪械设计师 RPC Fort 于 1995 年设计并于 1998 年开发，这是一把强大的手枪，通常被认为是 PM 的升级版。 尽管它可能存在可靠性问题，尤其是由于缺乏安全的退击装置，但它在准确性、弹匣和人体工程学方面进行了补偿。 该型号配备螺纹枪管，可随时安装消音器。\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 兼容消音器</text>
+	</string>
+	
+	<string id="st_wpn_fort17">
+		<text>Fort-17手枪</text>
+	</string>
+	<string id="st_wpn_fort17_descr">
+		<text>Fort-17 是 Fort-12 的改进版，将枪身框架从钢材替换为聚合物，从而减轻了重量，尽管后坐力可能稍微大一点。 默认装配 13 号弹匣，而不是 12 号。它还有一个可拆卸的握把填充物，可以改善人体工程学。 \n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19 兼容消音器</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- General -->
+	<string id="story_line_dialog_1">
+		<text>這是異常區的座標, 用探測器檢查它們, 應該有我感興趣的樣本</text>
+	</string>
+	<string id="story_line_answer_1">
+		<text>好的</text>
+	</string>	
+	<string id="story_line_dialog_2">
+		<text>你可能已經猜到了, 我之前在切爾諾貝利異常區研究所工作, 所以我知道某些神器是人眼看不見的, 但它們發出的頻率可以被探測器感應到</text>
+	</string>
+	<string id="story_line_answer_2">
+		<text>嗯, 我知道</text>
+	</string>	
+	<string id="story_line_dialog_3">
+		<text>你好! 你是來幫我的嗎? 你是否知道, 每個神器都以自己的頻率發射能量, 它就像一個印記, 一個在藝術品上的簽名, 探測器的掃瞄範圍越寬, 它可以發現的記號就越多, 通常, 你這樣的潛行者們能為我們帶來具有出色效能的樣本, 而我們科學家對於任何異常樣本都很感興趣</text>
+	</string>
+	<string id="story_line_answer_3">
+		<text>嗯, 有意思</text>
+	</string>	
+	<string id="story_line_dialog_4">
+		<text>嗯, 史特洛克設法解開了特異區起源的秘密, 這些資訊現在可供許多生態學家使用, 極大地促進了我們對異常區驚人本質的理解, 以及它影響我們周圍的世界和生物體的機制, 現在我們正在收集實地觀察和測量的基礎數據, 這項工作也不能說十分簡單, 所以我們正在尋找能幫上忙的潛行者</text>
+	</string>
+	<string id="story_line_answer_4">
+		<text>那麼, 還有事情嗎?</text>
+	</string>	
+	<string id="story_line_dialog_5">
+		<text>是嗎? 你聽我說, 第二次念域破裂產生的能量風暴導致了特異區的產生, 靈能力場線就像觸手一樣包圍著這片土地, 特異區中的所有事物都會受到它們的影響, 即使是那些已經標記的區域, 其中也有著不為人知的神器, 所以別嫌報酬少, 特異區本身就是一份了不起的禮物, 雖然並不是每個人都能欣賞, 但這與金錢無關, 神器就是特異區的使者, 特異區通過神器來和我們交流, 因此, 我們非常需要它們...</text>
+	</string>
+	<string id="story_line_answer_5">
+		<text>但神器再好, 也不能抹在麵包上當飯吃</text>
+	</string>	
+	<string id="story_line_dialog_6">
+		<text>嗯, 我說啊, 你是否知道, 每個神器都有一個獨特的能量頻率, 即使是同一種類型, 它可以告訴我們很多關於念域的資訊, 但把它們繫在腰帶上來擋子彈並不是最聰明的做法, 現在我們計劃編製特異區的完整光譜圖, 為此我們將不得不測量大片區域</text>
+	</string>
+	<string id="story_line_answer_6">
+		<text>好吧, 可以直接切入正題嗎?</text>
+	</string>	
+	<string id="story_line_dialog_7">
+		<text>沒見過就對了! 有沒有想過什麼神器是由什麼製成的? 大多數情況是被異常捕獲的生物的遺骸, 所以下次你決定炫耀一個罕見的發現時, 請記住, 它可能是某個潛行者的骨頭, 又或是一頭野豬什麼的...誰知道呢</text>
+	</string>
+	<string id="story_line_answer_7">
+		<text>我可沒有炫耀的習慣</text>
+	</string>	
+	<string id="story_line_dialog_8">
+		<text>當然! 我們都認為異常區是時空在高維度的某種斷片, 已知的物理定律在那裡完全沒有作用, 但也有另一種觀點認為, 這是一個我們根本無法感知的強大能源, 但到底是為什麼? 也許在高維宇宙中, 它只是一個智慧生物放在沸騰的肉湯上嘎嘎作響的鍋蓋?</text>
+	</string>	
+	<string id="story_line_answer_8">
+		<text>或者是他們在打噴嚏</text>
+	</string>
+	<string id="story_line_dialog_9">
+		<text>好吧... 那麼, 你知不知道, 異常區通常選擇有機樣本作為能量的接收者? 例如死掉的野生動物或殭屍, 這都是神器常見的材料, 知道了確切的來源之後, 我們就可以像閱讀書籍或U盤那樣閱讀它包含的資訊!</text>
+	</string>
+	<string id="story_line_answer_9">
+		<text>我猜...你一定沒有往異常點丟東西的習慣?</text>
+	</string>	
+	<string id="story_line_dialog_10">
+		<text>我們不從潛行者或土匪那裡購買神器, 在不知道確切的產地的情況下, 它們對我們毫無用處, 所以我們必須自己從特異區的每個角落收集樣本</text>
+	</string>	
+	<string id="story_line_answer_10">
+		<text>原來如此, 所以你已經知道下一個要我去的地方了吧?</text>
+	</string>	
+	<string id="story_line_dialog_11">
+		<text>你算是問對人了! 你知道嗎? 即使相同型別的神器, 也各自都有獨特的輻射資訊, 這取決於它被發現的地方, 特異區在所有事物上都留下了獨特的印記, 不會和其他任何東西混淆, 如果我們能知道輻射的完整頻譜, 或許就可以製作特異區的靈能地圖, 然後瞭解導致特異區的干擾的起源, 甚至去控制它們</text>
+	</string>	
+	<string id="story_line_answer_11">
+		<text>這真是雄心勃勃的計劃, 也許我能為此出一份力?</text>
+	</string>	
+	<string id="story_line_dialog_12">
+		<text>多虧了你, 我們會集合科學界智慧的大成來處理這些資訊, 但完整的分析結果可能還需要數幾年之久, 儘管我們的成員分散在整個特異區, 存在著相當的風險, 但斯卡賓斯基院士的計劃非常高瞻遠矚, 畢竟一個人是不可能理解這麼龐大的事物, 只有結合我們所有人的能力, 這項計劃才能取得成功</text>
+	</string>	
+	<string id="story_line_answer_12">
+		<text>希望你們能成功, 那麼還有事情嗎?</text>
+	</string>	
+	<string id="story_line_dialog_13">
+		<text>別這麼說, 多傷感情啊, 我真的感謝你與我們同在, 而並沒有像之前幫助過我們的潛行者那樣... 動不動就沒影了, 而頻譜圖的初步分析也充滿了驚喜, 看起來特異區的中心一直在我們的眼皮底下, 我的同事們沒有等到最後的計算結果出來就已經往那邊去了, 但我仍然傾向於完成這項工作再說... 畢竟我還有幾個樣品沒有處理</text>
+	</string>	
+	<string id="story_line_answer_13">
+		<text>真是個沒完沒了的工作</text>
+	</string>	
+	<string id="story_line_dialog_14">
+		<text>是的! 十分需要! 我們的工作已經接近尾聲了, 很快這最終結果將向科學界證明我們的地位... 你知道嗎, 特異區的中心有一個超級異常區, 所有的靈能力場線都在那裡相交! 在這個獨特的地方誕生的神器將具有無法想像的力量, 特異區的秘密即將揭曉!</text>
+	</string>	
+	<string id="story_line_answer_14">
+		<text>這麼厲害?</text>
+	</string>	
+	<string id="story_line_dialog_15">
+		<text>這...真是個壞訊息... 特異區停止了和我們的交流... 已經沒有希望了, 這些數據都是錯的! 特異區中心那個超級異常區, 我們想要研究它幾乎不可能了... 唉, 我們再想想辦法吧, 也許需要重新演算也說不定...</text>
+	</string>	
+	<string id="story_line_answer_15">
+		<text>所以這一切都白費了? 數據從一開始就是錯的?</text>
+	</string>	
+	
+</string_table>

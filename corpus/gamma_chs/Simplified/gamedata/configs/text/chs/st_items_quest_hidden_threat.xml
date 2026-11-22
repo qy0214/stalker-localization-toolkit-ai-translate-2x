@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Storyline: Hidden Threat
+	Version:   1.0
+    Autor:     Longreed
+	Last Edit: 26/10/2021
+-->
+<string_table>
+	<string id="st_sl_ht_accounting_report_name">
+		<text>会计报告</text>
+	</string>
+	<string id="st_sl_ht_accounting_report_desc">
+		<text>一个厚重的文件夹,里面有当月的文件和财务报表,朱罗夫少校正在他的下属洛日金中士那里等着. </text>
+	</string>
+	<string id="st_sl_ht_spooner_quest_package_name">
+		<text>包裹</text>
+	</string>
+	<string id="st_sl_ht_spooner_quest_package_desc">
+		<text>一个潜行者给他的熟人送的包裹. 内容不详. 奇怪的是,它根本没有防止外人篡改的保护措施.</text>
+	</string>
+	<string id="st_sl_ht_walkie_talkie_name">
+		<text>军队无线电</text>
+	</string>
+	<string id="st_sl_ht_walkie_talkie_desc">
+		<text>便携式高频无线电 R-002PP. </text>
+	</string>
+	<string id="st_sl_ht_pda_isg_leader_name">
+		<text>ISG 指挥官的 PDA</text>
+	</string>
+	<string id="st_sl_ht_pda_isg_leader_desc">
+		<text>此 PDA 已锁定. </text>
+	</string>
+	<string id="st_sl_ht_usb_quest_task_4_name">
+		<text>USB存储棒. </text>
+	</string>
+	<string id="st_sl_ht_usb_quest_task_4_desc">
+		<text>该存储设备包含基里洛夫设法保存的一小部分信息. </text>
+	</string>
+	<string id="st_sl_ht_case_quest_task_5_name">
+		<text>SSU 特工的公文包</text>
+	</string>
+	<string id="st_sl_ht_case_quest_task_5_desc">
+		<text>本案内容未知,推测为有关ISG活动的信息. </text>
+	</string>
+	<string id="st_sl_ht_voice_recorder_task_6_name">
+		<text>录音机</text>
+	</string>
+	<string id="st_sl_ht_voice_recorder_task_6_desc">
+		<text>它看起来就像一个普通的录音机,随处可见. 但是这个已经被基里洛夫中尉升级了,它会对声音做出反应并录音. </text>
+	</string>
+	<!--================= Items Tips =======================-->
+	<string id="st_sl_hidden_threat_locked_door_tips">
+	    <text>找另一条路进去. </text>
+	</string>
+	<string id="st_sl_hidden_threat_radio_tips_1">
+	    <text>藏起录音机($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_sl_hidden_threat_radio_tips_2">
+	    <text>取回录音机($$ACTION_USE$$)</text>
+	</string>
+</string_table>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_brewed_coffee">
+		<text>煮好的咖啡</text>
+	</string>
+	<string id="st_brewed_coffee_descr">
+		<text>剛煮好的咖啡記得趁熱喝.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_green] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 強力醒酒效果\n					
+		</text>
+	</string>
+	
+</string_table>

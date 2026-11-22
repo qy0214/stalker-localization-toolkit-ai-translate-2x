@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Ammunition
+-->
+
+<string_table>
+	
+	<string id="ammo_23x75_shrapnel">
+		<text>"碎裂彈-25" 23x75毫米</text>
+	</string>
+	<string id="ammo_23x75_shrapnel_descr">
+		<text>子彈中裝有若干子彈丸, 有效射程可達25米, 它用於KS-23卡賓槍, 由於KS-23的槍管內有膛線, 所以彈丸可以覆蓋大片區域, 射擊幾乎無所謂瞄不瞄準, 只要往有危險的大概位置開槍就是了...\n\n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR3 (6 x 6)\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]285 (47.5 x 6)</text>
+		 
+	</string>
+	
+	<string id="ammo_23x75_barrikada">
+		<text>"路障彈" 23x75毫米</text>
+	</string>
+	<string id="ammo_23x75_barrikada_descr">
+		<text>鋼製彈頭的獨頭彈, 說它是子彈還不如說是炮彈更貼切, 從名字就不難看出, 這東西是專門用來破壞引擎從而強制截停車輛的彈藥, 有效射程可達100米, 用於KS-23卡賓槍\n\n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR5 (51)\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]133</text>
+	</string>
+
+		<string id="ammo_9x21_sp10">
+		<text>9x21毫米SP10彈</text>
+	</string>
+	<string id="ammo_9x21_sp10_descr">
+		<text>穿透力增強的手槍彈, 旨在應對單兵防彈裝備, 熱強化鋼芯的頭部突出殼體, 從而實現了子彈的高穿透性\n\n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]BR4 (36)\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]24</text>
+	</string>
+
+	<string id="ammo_20x70_buck">
+		<text>20x70口徑鹿彈</text>
+	</string>
+	<string id="ammo_20x70_buck_descr">
+		<text>標準的20口徑彈藥, 內部填充6毫米彈丸, 在近距離非常致命, 僅適用於滑膛武器\n \n%c[d_purple] • %c[ui_gray_2] 最高穿甲等級: %c[ui_gray_1]無\n%c[d_purple] • %c[ui_gray_2] 組織損傷等級: %c[ui_gray_1]中~高\n \n%c[ui_gray_1]特點:\n \n%c[d_purple] • %c[ui_gray_2] 發射多枚彈丸, 殺傷範圍較小\n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無 (3 x 9)\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]143 (16 x 9)</text>
+	</string>
+	<string id="ammo_20x70_buck_s">
+		<text>20x70鹿彈</text>
+	</string>
+
+	<string id="ammo_23_eco">
+		<text>生化-23子彈</text>
+	</string>
+	<string id="ammo_23_eco_descr">
+		<text>專為特異區科研人員設計的特殊子彈. 根據任務的不同,彈藥有不同型別的配置方案. 需要非常小心的操作. 使用方法: 將其非常緩慢而小心地放入武器之中.\n \n
+		%c[d_cyan] • %c[0,255,255,255] 護甲穿透力(AP): %c[ui_gray_2]無\n
+		%c[d_cyan] • %c[0,255,255,255] 肉體制動力(DMG): %c[ui_gray_2]無\n
+		%c[0,255,255,255]特點: %c[0,250,250,0] 它用一根細鎢針刺穿變異怪物的面板來注射溶液.</text>
+	</string>
+	<string id="ammo_23_eco_s">
+		<text>生化-23子彈</text>
+	</string>
+
+	<string id="ammo_vog_30">
+		<text>VOG-30榴彈</text>
+	</string>
+	<string id="ammo_vog_30_descr">
+		<text>VOG-30破片榴彈旨在摧毀位於開闊區域的敵方有生力量和火力部署. 與以前研發的型號相比改進版本具有更強大的碎片效果,以彈殼內發射藥的自主密封.\n </text>
+	</string>
+	<string id="ammo_vog_30_s">
+		<text>VOG-30榴彈</text>
+	</string>
+
+	<string id="ammo_338_federal">
+		<text>.338 聯邦彈</text>
+	</string>
+	<string id="ammo_338_federal_descr">
+		<text>.338聯邦彈是一款以.308溫徹斯特槍彈為基礎發展而來的.33口徑步槍彈. 它由聯邦彈藥公司和芬蘭薩科公司于2006年共同研製,旨在作為一種大型獵槍子彈為輕型步槍提供合理的後坐力. \n \n
+		%c[d_cyan] • %c[0,255,255,255]護甲穿透力(AP): %c[ui_gray_2]BR6 (75)\n
+		%c[d_cyan] • %c[0,255,255,255]肉體制動力(DMG): %c[ui_gray_2]56
+		</text>
+	</string>
+	<string id="ammo_338_federal_s">
+		<text>.338 聯邦</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Miscellaneous gear -->
+	<string id="st_psy_helmet_name">
+		<text>生態學家的抗靈頭盔 (已校準)</text>
+	</string>
+	<string id="st_psy_helmet_desc">
+		<text>一頂可以固定在普通頭盔下的抗靈頭盔, 由揚塔研究中心的薩哈洛夫教授領導研製, 頭盔由電系神器提取物和一些裝置天線組成,其工作原理是遮蔽靈能場, 在啟用后,頭盔會在使用者附近創造出一個無形的護罩,由電系神器釋放出的特殊粒子防護靈能場,因為大部分靈能場可以被拒之門外,所以產生的廢棄物會被頭盔中的的保護系統散發掉, 這種抗靈頭盔的獨特性在於它能夠承受切爾諾貝利禁區內各種靈能場發生器不同尋常的改變思維的靈體波頻率.</text>
+	</string>
+	
+	<string id="st_bad_psy_helmet_name">
+		<text>生態學家的抗靈頭盔 (未校準)</text>
+	</string>
+	<string id="st_bad_psy_helmet_desc">
+		<text>未校準的型號,一頂可以固定在普通頭盔下的靈能場防護盔, 由揚塔研究站的薩哈洛夫教授領導研製, 頭盔由電系神器提取物和一些裝置天線組成,其工作原理是遮蔽靈能場, 在啟用后,頭盔會在使用者附近創造出一個無形的護罩,由電系神器釋放出的特殊粒子防護靈能場,因為大部分靈能場可以被拒之門外,所以產生的廢棄物會被頭盔中的的保護系統散發掉, 這種抗靈頭盔的獨特性在於它能夠承受切爾諾貝利特異區內各種靈能場發生器不同尋常的改變思維的靈體波頻率.</text>
+	</string>
+	
+
+<!-- Headgear -->
+	<string id="st_helm_exo_name">
+		<text>外骨骼頭盔</text>
+	</string>
+	<string id="st_helm_exo_descr">
+		<text>該頭盔類似標準外骨骼的配套頭盔,但是與標準型略有不同,具有不同的防護特性, 良好的物理防護能力再加上異常點保護,使這款頭盔成為同類中的最佳選擇之一\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_battle">
+		<text>球式M12頭盔</text>
+	</string>
+	<string id="st_helm_battle_dolg">
+		<text>球式M12頭盔 "職責"</text>
+	</string>
+	<string id="st_helm_battle_freedom">
+		<text>球式M12頭盔 "自由"</text>
+	</string>
+	<string id="st_helm_battle_descr">
+		<text>鋁鈦合金頭盔,外部有偽裝布,並有防護插板的插槽, 該頭盔在潛行者和特種部隊中很常見,通常與PSZ系列防彈衣配合使用, 總體而言,M12頭盔可提供特異區內的最佳戰鬥防護,經常參與戰事的富裕潛行者都會買上一頂\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_hardhat">
+		<text>軍用鋼盔</text>
+	</string>
+	<string id="st_helm_hardhat_descr">
+		<text>一種極度過時的軍用鋼盔,帶有摺疊式護目鏡, 提供對微小的異常點或輻射防護能力,但有機率彈開彈片, 除了短暫的陣營戰爭中使用外,這種頭盔從未在特異區中受歡迎過\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_protective">
+		<text>SSP-99 "蛋頭" 全封閉頭盔</text>
+	</string>
+	<string id="st_helm_protective_descr">
+		<text>生態學家的標準配備, "蛋頭"實際上是書呆子的意思, 但戴上以後確實很像頂著一顆蛋\n 由與SEVA防護服生產者相同的基輔防禦研究中心研製的不太舒適但質量很高的頭盔, 具有全封閉設計,可與危化環境完全隔離, 主要與軍用護甲配合使用,以保證在異常區能夠正常作戰\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_respirator">
+		<text>改裝PBF防毒面具</text>
+	</string>
+	<string id="st_helm_respirator_freedom">
+		<text>自由軍PBF防毒面具</text>
+	</string>
+	<string id="st_helm_respirator_dolg">
+		<text>紀律團PBF防毒面具</text>
+	</string>
+	<string id="st_helm_respirator_descr">
+		<text>配備了外接式40毫米介面過濾器的PBF防毒面具,功能更強大, 但是,由於過濾片一直沒能以統一標準生產,因此不同防毒面具的重量和防護能力存在點小差異, 這種防毒面具通常能在輻射環境中提供可觀的保護,但是在有毒環境中過濾器經常出問題,並且幾乎沒有物理防護能力,它很容易損壞\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_resp">
+		<text>呼吸面罩</text>
+	</string>
+	<string id="st_helm_resp_descr">
+		<text>最基礎的塑料或橡膠呼吸器,用於使穿戴者避免吸入有害的粉塵,煙霧,蒸氣或毒氣, 由於其重量輕而且便宜,因此被菜鳥甚至各個陣營的老兵裝備, 但是它提供的物理保護可以忽略不計,並且無法保證高輻射區域下不掉鏈子\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_respirator_gp5">
+		<text>GP-5防毒面具</text>
+	</string>
+	<string id="st_helm_respirator_gp5_descr">
+		<text>GP-5防毒面具在1962年至1989年間製造,旨在保護蘇聯人民免受放射性塵埃的侵害, 這是一種由白色或黑色橡膠製成的經典防毒面具,目鏡由壓接邊襯固定在兩側偏中的位置, 過濾器已經經過了精細的修理或更換, 與同價位的防毒面具(例如PBF)相比,這種翻新的防毒面具具有更好的防輻射保護,但在有毒環境中的故障率更高\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_bandana">
+		<text>頭巾</text>
+	</string>
+	<string id="st_helm_bandana_descr">
+		<text>軍隊中新兵,後勤隊和二三線士兵常戴的頭巾, 士兵通常戴在頭上,或者將其掛在嘴和鼻子周圍,以免吸入有毒或放射性顆粒, 總比沒有好對吧,但這顯然不是明智的做法,這樣使用頭巾的話需要經常更換\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_rp_bala">
+		<text>頭罩</text>
+	</string>
+	<string id="st_helm_rp_bala_descr">
+		<text>普通的黑色頭罩, 可以保護你的臉蛋不受東歐的刺骨冬風摧殘, 雖然它可以過濾掉一些放射性或有毒微粒,但還是約等於沒有, 而且這樣用頭罩的話需要經常更換\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_cloth_mask">
+		<text>布面罩</text>
+	</string>
+	<string id="st_helm_cloth_mask_descr">
+		<text>一塊破布縫合成的面罩, 作為一種預防手段,潛行者經常使用它來防止危險顆粒吸入體內, 但是,長時間使用后就會積累上不少有害物質,因此一定要經常更換,自己最好再準備幾個備用的\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_m40">
+		<text>M40防毒面具</text>
+	</string>
+	<string id="st_helm_m40_descr">
+		<text>M40防毒面具的左側裝有40毫米介面的濾罐, M40即使破損也能提供一定的輻射和化學保護, 這種防毒面具是為美軍量產的,傭兵也很喜歡用\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_metro">
+		<text>天啟頭盔</text>
+	</string>
+	<string id="st_helm_metro_descr">
+		<text>這種頭盔據說是由已滅亡的末日組織製造的,類似於捷克M10防毒面具並在外面加裝了護甲, 雖然它很重,但卻有著良好的效能,可抵抗化學,輻射和物理威脅, 當末日組織的領袖被"鬼魂"狙殺后,陣營土崩瓦解,這些頭盔也逐漸流入了一些老手潛行者手中,那些想掃蕩特異區的地下實驗室的人尤其喜愛它\n \n
+		</text>
+	</string>
+
+	<string id="st_helm_tactic">
+		<text>球式08頭盔</text>
+	</string>
+	<string id="st_helm_tactic_descr">
+		<text>具有內建空氣過濾系統的現代高級頭盔,基於西方原型設計, 頭盔包括幾層可保護使用者的凱夫拉縴維,以及複合電介質材料,使用者因此可以更好地抵禦衝擊, 特異區內的特種部隊最常使用,通常與PS5系列防彈衣搭配\n \n
+		</text>
+	</string>
+
+	<string id="helm_spartan">
+		<text>Cz-M10斯巴達頭盔</text>
+	</string>
+	<string id="helm_spartan_descr">
+		<text>由極富經驗的潛行者製造的頭盔,該頭盔參照了末日組織的天啟頭盔的設計, 但與天啟相比,這款頭盔不僅更輕,而且可以提供全面的防護, 除了擁有出色的異常點防護能力,它與那些現代軍用頭盔(例如球式系列)相比也極為出色, 是經濟能力允許的潛行者間的流行頭盔\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_battle">
+		<text>紀律團球式M12頭盔</text>
+	</string>
+	<string id="helm_dolg_battle_descr">
+		<text> 已從遊戲中刪除, 紀律團的球式M12頭盔的兩個版本之一, 這款更為常見,相比原版M12提升了物理防護和電磁輻射防護,代價是重量略有增加,並且異常點防護能力更差, 它通常與PSZ-9d戰鬥護甲配套使用,就像原來的M12與SKAT-9"布拉特"戰鬥護甲搭配一樣\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_battle_redline">
+		<text>紀律團球式M12"紅線"頭盔</text>
+	</string>
+	<string id="helm_dolg_battle_redline_descr">
+		<text> 已從遊戲中刪除, 紀律團的球式M12頭盔有兩個版本,這個版本的技術更加先進,也更加輕巧, 就和PSZ-9d"紅線"版獵人戰鬥護甲一樣,該戰鬥頭盔僅配發給在紀律團中取得過卓越成就的老兵, 這款頭盔不僅是實戰層面上的傑作,還是紀律團中聲望與功績的象徵\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_vintage">
+		<text>PSM-4戰鬥頭盔</text>
+	</string>
+	<string id="helm_dolg_vintage_descr">
+		<text> 已從遊戲中刪除, PSM-4是一款笨重但耐用的戰鬥頭盔, 它整合了一個耐用的防毒面具,並加裝了許多可增強防護的金屬零件,可以更好地相容EO-19過濾器, 它還具有IIIA級防彈目鏡, 該頭盔非常重,因為它主要採用金屬材料,現代合成材料幾乎沒有, 頭盔戴起來很難受,但這種厚實的設計使它的物理防護力很強,而且還能夠保護使用者免受大部分靈能場影響, 然而這頭盔裡面悶的像個蒸爐,可能會把使用者的腦子蒸熟, 因此建議在接近高溫異常點時脫下頭盔, PSM-4雖然不是很理想的選擇,但那些需要點強力防護的人還是沒得選, 也有一些老式軍備發燒友,他們戴PSM-4只是因為它酷炫的外觀\n \n
+		</text>
+	</string>
+	
+	<string id="helm_ach7">
+		<text>ACH-7頭盔</text>
+	</string>
+	<string id="helm_ach7_descr">
+		<text>ACH-7(意為高級整合頭盔,有七個組成部分)是老式鋼盔的翻新版,對彈片有更好的防護能力, 但它的主要吸引力在於它對靈能攻擊的驚人抵抗能力,以及它出乎意料的低成本, 然而沒有整合防毒面具,在特異區里算不上好貨,通常只有菜鳥會買,這些菜鳥潛行者想戴著這種頭盔去硬抗電磁輻射\n \n
+		</text>
+	</string>
+	
+	<string id="helm_ach7ex">
+		<text>ACH-7EX頭盔</text>
+	</string>
+	<string id="helm_ach7ex_descr">
+		<text>ACH-7EX是基型ACH-7頭盔的升級版,新增了防毒面具,相比基型有了很大的進步, 該頭盔具有出色的化學和輻射保護,效能介於GP-5和PBF防毒面具之間,並具有良好的物理防護效能,因此對於許多想兼得靈能防護與物理防護同時還便宜的頭盔的潛行者來說,它是一個誘人的選擇\n \n
+		</text>
+	</string>
+	
+	<string id="helm_eo21">
+		<text>EO-21 PBFM防毒面具</text>
+	</string>
+	<string id="helm_eo21_descr">
+		<text> 已從遊戲中刪除, 由潛行者技師設計的EO-20 PBF防毒面具的改進版, 它具有更好的防護效能,並且使用的過濾器重量稍輕,可以更好地保護使用者免受放射顆粒和毒素的侵害, 目鏡更寬廣,更耐衝擊,不容易損壞\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_eo21_red">
+		<text>EO-21 PBFM克拉斯尼防毒面具</text>
+	</string>
+	<string id="helm_dolg_eo21_red_descr">
+		<text> 已從遊戲中刪除, 紀律團改進版EO-21 PBFM防毒面具,增強了物理保護, 它是綜合性能的最佳整合之作, 這款改進型通常與改進的PS5-2M護甲搭配,和普通版最明顯的區別在於紅色濾罐\n \n
+		</text>
+	</string>
+	
+	<string id="helm_eo21sawnoff">
+		<text>EO-21 PBFL防毒面具</text>
+	</string>
+	<string id="helm_eo21sawnoff_descr">
+		<text> 已從遊戲中刪除, 特異區中最緊湊,最輕的防毒面具, 它通常被稱為丐版EO-21,因為它就像是截了一半的基型EO-21,主要用於輻射沒那麼強的區域, 除了應有的防護之外,它還考慮了舒適性, 它既可以單獨使用,也可以與氧氣罐一起使用,氧氣罐可以通過軟管連線到面罩左側的插座上,該插座位於一個過濾器的上方,使用與普通EO-21相同的過濾器\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_eo21sawnoff">
+		<text>紀律團EO-21 PBFL防毒面具</text>
+	</string>
+	<string id="helm_dolg_eo21sawnoff_descr">
+		<text> 已從遊戲中刪除, EO-21防毒面具的緊湊版,由在低污染區域的低階紀律團士兵裝備, 與原始版相比,該面具的防護能力有所增強,針對戰鬥進行了優化,從而最大程度地降低了面具損壞的風險, 即使雖然連手槍子彈都抗不住, 它不容易破裂,不會把使用者的牙磕掉\n \n
+		</text>
+	</string>
+	
+	<string id="helm_gp5">
+		<text>GP-5防毒面具</text>
+	</string>
+	<string id="helm_gp5_descr">
+		<text> 設計重複, 已從遊戲中刪除, 這是一種由白色或黑色橡膠製成的防毒面具,目鏡由壓接邊襯固定在兩側偏中的位置, 過濾器已經經過了精細的修理或更換, 與同價位的防毒面具(例如PBF)相比,這種翻新的防毒面具具有更好的防輻射保護,但在有毒環境中的故障率更高\n \n
+		</text>
+	</string>
+	
+	<string id="helm_ppm88">
+		<text>PPM-88防毒面具</text>
+	</string>
+	<string id="helm_ppm88_descr">
+		<text>俄羅斯防毒面具,適合應對核生化輻射危化環境, 在特異區中它可以看作是GP-5的後輩,在化學和輻射防護方面有了明顯改善, 它是大多數潛行者的優良選擇,前提是不要戴著它去進行槍戰,它連一塊彈片都扛不住\n \n
+		</text>
+	</string>
+	
+	<string id="helm_m50">
+		<text>M50z防毒面具</text>
+	</string>
+	<string id="helm_m50_descr">
+		<text>M50防毒面具的改進型,更適宜特異區的環境, 防護效能比原型稍微差了一點, 緊急情況下可以抵禦一定的電磁輻射和輻射微粒, 總體而言,這種防毒面具是M40防毒面具的繼任者, 但是與M40不同,這種面具由傭兵公司引入,只提供給特異區內的傭兵\n \n
+		</text>
+	</string>
+	
+	<string id="helm_ranger">
+		<text>GP-10z遊騎兵防毒面具</text>
+	</string>
+	<string id="helm_ranger_descr">
+		<text>GP-10防毒面具的特異區改進版,可保護使用者免受攝魂怪和騷靈的影響, 至於成功率就隨緣了,但是對於需要抵抗電磁輻射和彈片的人來說,這款面具還算不錯\n \n
+		</text>
+	</string>
+	
+	<string id="helm_dolg_tactic_red">
+		<text>紀律團球式08克拉斯尼頭盔</text>
+	</string>
+	<string id="helm_dolg_tactic_red_descr">
+		<text> 已從遊戲中刪除, 紀律團改進版球式08頭盔,通常與他們的鈹式防彈護甲搭配使用, 與紀律團的其他克拉斯尼系列裝備一樣,這種頭盔為戰鬥而生,可減少敵人和怪物的威脅, 因此它相比原版降低了異常點防護能力,但提供了更多的物理和電磁輻射保護\n \n
+		</text>
+	</string>
+
+
+<!-- Novice outfits -->
+	<string id="novice_outfit_name">
+		<text>皮夾克</text>
+	</string>
+	<string id="novice_outfit_description">
+		<text>套在舒適高領毛衣外的暖和的皮革夾克,配有結實的牛仔褲和遠足靴, 天真又缺乏經驗的菜鳥才會選擇這種夾克,一些老兵認為這和光屁股闖特異區沒啥區別\n \n
+		</text>
+	</string>
+
+	<string id="novice_outfit_camo_name">
+		<text>軍迷夾克</text>
+	</string>
+	<string id="novice_outfit_camo_description">
+		<text>套在舒適高領毛衣外的暖和的皮革夾克,配有結實的牛仔褲和遠足靴, 曾屬於一些軍事愛好者,與普通夾克相比優勢在於偽裝迷彩,更優質的材料,以及更合理的重量分配系統, 但仍不足以應對特異區的嚴酷條件\n \n
+		</text>
+	</string>
+
+	<string id="novice_outfit_tourist_name">
+		<text>旅行者夾克</text>
+	</string>
+	<string id="novice_outfit_tourist_description">
+		<text>這款暖和的皮革夾克帶有一體式揹包,配有舒適的高領毛衣,結實的牛仔褲和遠足靴, 看來它的主人是個徒步旅行愛好者, 良好的材料和重量分配設計使它要優於普通夾克,但除了真正的"旅行"外,它不適合幹別的\n \n
+		</text>
+	</string>
+
+	<string id="csky_novice_outfit_name">
+		<text>晴空皮夾克</text>
+	</string>
+	<string id="csky_novice_outfit_description">
+		<text>柔軟的藍色皮革外套,配有舒適的高領毛衣,結實的牛仔褲和遠足靴, 這些簡單的夾克由晴空的裁縫大量製造並在配發給陣營中的新兵, 即使在最安全的特異區南方這件夾克也不適用\n \n
+		</text>
+	</string>
+
+	<string id="dolg_novice_outfit_name">
+		<text>紀律團皮夾克</text>
+	</string>
+	<string id="dolg_novice_outfit_description">
+		<text>黑色加紅色皮革外套,配有舒適的高領毛衣,結實的牛仔褲和遠足靴, 以前這些簡陋的夾克是紀律團非戰鬥人員的休閒服,戰鬥人員從未裝備過, 然而艱難的時候偶爾也需要做些改變\n \n
+		</text>
+	</string>
+
+	<string id="bandit_novice_outfit_name">
+		<text>黑夾克</text>
+	</string>
+	<string id="bandit_novice_outfit_description">
+		<text>黑色皮夾克,特異區的土匪才會穿, 可以穿著嚇嚇其他陣營的菜鳥,除了防風保暖或抗住迎頭砸來的伏特加酒瓶外,它幾乎沒有什麼保護作用\n \n
+		</text>
+	</string>
+
+	<string id="bandit_novice_alt_outfit_name">
+		<text>護甲皮夾克</text>
+	</string>
+	<string id="bandit_novice_alt_outfit_description">
+		<text>這款夾克現在在土匪中流通,這與紀律團的腐敗軍火商摩根有關, 這款加強夾克以前屬於紀律團裝備,可以提供接近標準護甲的防護能力, 但它還是不適合特異區內的戰事,尤其是當你穿著它碰上那些火冒三丈的紀律戰士時\n \n
+		</text>
+	</string>
+	
+	<string id="redline_novice_outfit_name">
+		<text>紅線皮夾克</text>
+	</string>
+	<string id="redline_novice_outfit_description">
+		<text>漂亮的亮紅色皮革夾克,配有舒適的高領毛衣,結實的牛仔褲和遠足靴, 你不應該在特異區里穿這麼顯眼的衣服\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_novice_outfit_name">
+		<text>自由軍皮夾克</text>
+	</string>
+	<string id="svoboda_novice_outfit_description">
+		<text>德斑迷彩皮革外套,配有舒適的高領毛衣,結實的牛仔褲和遠足靴, 這夾克通常只在自由軍成員感覺周圍絕對安全時才穿-換句話說,幾乎從不穿\n \n
+		</text>
+	</string>
+
+
+<!-- Overcoats -->
+	<string id="monolith_trenchcoat_outfit_name">
+		<text>黑石大衣</text>
+	</string>
+	<string id="trenchcoat_freedom_brown_outfit_name">
+		<text>自由軍加厚大衣</text>
+	</string>
+	<string id="trenchcoat_dolg_brown_outfit_name">
+		<text>紀律團加厚大衣</text>
+	</string>
+	
+	<string id="trenchcoat_outfit_name">
+		<text>大衣</text>
+	</string>
+	<string id="trenchcoat_outfit_description">
+		<text>長而厚的外套, 根據製造它們的裁縫的不同,大衣的保護效能可能也會千差萬別,一般來講它和皮夾克沒啥區別, 即便這樣很多菜鳥潛行者還是喜歡穿,因為它很酷\n \n
+		</text>
+	</string>
+
+	<string id="trenchcoat_brown_outfit_name">
+		<text>棕色加厚大衣</text>
+	</string>
+	<string id="trenchcoat_brown_outfit_description">
+		<text>厚厚的大衣,裡面夾有一套破爛的生態學家護甲, 儘管內循環系統和其他一些功能被拆除了,但效能還是比一些潛行者防護服要好\n \n
+		</text>
+	</string>
+	
+	<string id="trenchcoat_green_outfit_name">
+		<text>綠色加厚大衣</text>
+	</string>
+	<string id="trenchcoat_green_outfit_description">
+		<text>厚厚的綠色大衣,裡面夾有一套破爛的生態學家護甲, 儘管內循環系統和其他一些功能被拆除了,但效能還是比一些潛行者防護服要好\n \n
+		</text>
+	</string>
+	
+	<string id="greh_trenchcoat_outfit_name">
+		<text>原罪的加厚大衣</text>
+	</string>
+	<string id="greh_trenchcoat_outfit_description">
+		<text>厚厚的血跡斑斑的大衣,裡面夾有一套破爛的生態學家護甲, 儘管內循環系統和其他一些功能被拆除了,但效能還是比一些潛行者防護服要好\n \n
+		</text>
+	</string>
+	
+
+<!-- Exploration -->
+	<string id="travel_outfit_name">
+		<text>"旅行者"潛行者防護服</text>
+	</string>
+	<string id="travel_outfit_description">
+		<text>一件由特異區技師設計組裝的護甲, 這套特殊的防護服品質優良,可以用於更危險的探索行動,擁有構思巧妙的重量分配設計,並針對特異區的輻射與化學威脅提供了充分的保護能力, 但對於許多神器獵人喝某些怪物獵人而言,它有一些明顯的缺點,例如比較昂貴的價格以及無法有效防禦子彈, 但它的主人可能不太想賣掉它\n \n
+		</text>
+	</string>
+	
+	<string id="nomad_outfit_name">
+		<text>"遊牧者"潛行者防護服</text>
+	</string>
+	<string id="nomad_outfit_description">
+		<text>特異區的人爲了生存手工組裝的的防護服, 這件防護服質量很好,穿著感覺特別輕和舒適,與其他潛行者防護服相比它的整體防護效果更好, 組裝這件護甲的人非常熟悉特異區的情況,併爲它傾注了大量的心血 - 然而它的前任主人可做不到這樣, 不管怎樣,它的確值這個價\n \n
+		</text>
+	</string>
+	
+	<string id="antirad_outfit_name">
+		<text>GP-5MvC一體式防輻射服</text>
+	</string>
+	<string id="antirad_outfit_description">
+		<text>GP-5一體式防輻射服早在"焦腦器"被發現之前就設計出來了,也正是穿著這些防護服的潛行者帶來了軍事倉庫北部有強烈的靈能場的訊息, 這套防護服由酒保和他的一些顧客合作開發,酒保提供經濟支援,然後通過賣這種防護服賺了很多錢, 從那時起它就在不斷改進,但其基於黎明防護服的設計沒有太大變化, 最新版本是GP-5M,主體是裝有經過特殊處理的面料和更多樹脂插板的黎明服,還新增了許多彈匣袋, 一個老舊但仍然可靠的GP-5防毒面具(整合了輕型氧氣罐)裝在背後, 它的設計目的主要是爲了提供比普通黎明防護服更強的輻射防護,讓特異區向北的征程不再那麼危險, 雖然被戲稱為簡陋版SEVA防護服,但它還不足以抵抗異常點的威脅, 這件防護服主要還是用來應對高輻射地區,但它在強異常區域並不耐用, C型還帶有深淺不同的綠色迷彩圖案,有著更好的偽裝效果\n \n
+		</text>
+	</string>
+	
+	<string id="hybrid_outfit_name">
+		<text>混合護甲防護服</text>
+	</string>
+	<string id="hybrid_outfit_description">
+		<text>這套護甲有點笨拙,是由基輔防禦研究中心研製的,用來保護特異區內的研究人員, 很顯然這套護甲的設計受到了預算的限制,因為縫製在其中的防彈層削弱了異常點防護能力,但又無法提供鈹式防彈護甲那樣的防彈效能, 因此烏克蘭政府從未採用過哪怕一套這種護甲,但還是有人用不正當手段使它流入特異區, 它是需要可觀的全面防護但又沒那麼富有的潛行者的熱門選擇\n \n
+		</text>
+	</string>
+	
+	<string id="wastelander_outfit_name">
+		<text>"廢土行者"潛行者防護服</text>
+	</string>
+	<string id="wastelander_outfit_description">
+		<text>一件由特異區技師手工製造的護甲, 這套護甲的質量很高,配有整合的捷克M10防毒面具, 它比許多土產護甲要好,但由於無法相容頭盔,實用性和實用性有所降低\n \n
+		</text>
+	</string>
+
+<!-- CS outfits -->
+	<string id="csky_light_novice_outfit_name">
+		<text>CS-1輕型護甲</text>
+	</string>
+	<string id="csky_light_novice_outfit_description">
+		<text>晴空研究人員身穿的淺色輕甲, 對大沼澤的異常區有一定防護能力,但無法抵禦物理威脅和放射現象\n \n
+		</text>
+	</string>
+	
+	<string id="csky_light_outfit_name">
+		<text>CS-2a護甲</text>
+	</string>
+	<string id="csky_light_outfit_description">
+		<text>一種藍色的護甲,用於在異常區等低風險區域進行快速偵搜行動, 不適合應付激烈的槍戰,但它比CS-1護甲要好一些\n \n
+		</text>
+	</string>
+
+	<string id="csky_medium_outfit_name">
+		<text>CS-3a護甲</text>
+	</string>
+	<string id="csky_medium_outfit_description">
+		<text>晴空突擊隊裝備的一種較重但舒適度不錯的護甲,在戰鬥中提供了足夠的保護, 但它對電和化學異常點的抗性不足\n \n
+		</text>
+	</string>
+
+	<string id="csky_heavy_outfit_name">
+		<text>CS-3b護甲</text>
+	</string>
+	<string id="csky_heavy_outfit_description">
+		<text>曾為晴空突擊隊配發的標準護甲,在晴空經歷過2011年切爾諾貝利核電站戰役的毀滅性打擊后,這套護甲提醒著我們: 即使是再好的護甲也無法挽回錯誤的戰略, 它能夠抵禦手槍子彈,同時對異常點也有著一定的防護能力\n \n
+		</text>
+	</string>
+	
+
+<!-- NBC outfits -->
+	<string id="nbc_outfit_name">
+		<text>核生化防護服</text>
+	</string>
+	<string id="nbc_outfit_description">
+		<text>一款帶有凱夫拉背心的經濟型核生化輻射防護服, 由特異區外的工廠批量生產,用於世界各地的軍事行動或者危化環境清理工作, 標配一個GP-5防毒面具,用軟管連線到一個現代化過濾器, 儘管它的設計顯然沒有考慮到特異區的實際情況,但它仍是那些精良重量分配設計愛好者的普遍選擇,總體效能可以和潛行者防護服相提並論\n \n
+		</text>
+	</string>
+	
+	<string id="monolith_nbc_outfit_name">
+		<text>切爾諾貝利核生化防護服</text>
+	</string>
+	<string id="monolith_nbc_outfit_description">
+		<text>帶有凱夫拉背心的老式核生化輻射防護服,通常被黑石狂熱者裝備,這些狂熱分子保衛著特異區中心地帶不受其他潛行者的侵犯, 1986年核事故后爲了進行清理工作,軍方首次使用了這些防護服, 看起來有著明顯的老化和不可修復的磨損痕跡, 這些衣服是如何被保留下來的,以及它們最終是如何落入黑石手中的,都是一個謎, 配備一個翻新版GP-5防毒面具\n \n
+		</text>
+	</string>
+
+	<string id="cs_nbc_outfit_name">
+		<text>CS-3核生化防彈防護服</text>
+	</string>
+	<string id="cs_nbc_outfit_description">
+		<text>一套由晴空翻新和改造的帶凱夫拉背心的核生化輻射防護服, 由特異區外的工廠批量生產,用於世界各地的軍事行動或者危化環境清理工作, 標配一個GP-5防毒面具,用軟管連線到一個現代化過濾器, 晴空製造的每一套核生化防護服都要經過諾維科夫的質量檢查,以確保其能適應特異區惡劣的條件\n \n
+		</text>
+	</string>
+
+	<string id="nbc_merc_outfit_name">
+		<text>傭兵核生化防護服</text>
+	</string>
+	<string id="nbc_merc_outfit_description">
+		<text>一款帶有凱夫拉背心的經濟型核生化輻射防護服, 由特異區外的工廠批量生產,用於世界各地的軍事行動或者危化環境清理工作, 標配一個GP-5防毒面具,用軟管連線到一個現代化過濾器, 儘管它的設計顯然沒有考慮到特異區的實際情況,但它仍是那些精良重量分配設計愛好者的普遍選擇,總體效能稍弱於標準型核生化防護服\n \n
+		</text>
+	</string>
+
+	<string id="nbc_freedom_outfit_name">
+		<text>自由軍衛士</text>
+	</string>
+	<string id="nbc_freedom_outfit_description">
+		<text>由自由軍技師基於中立潛行者的核生化防護服設計的自由軍版核生化防護服, 在某些效能方面與標準的核生化防護服無法相提並論,但自由軍技師大大增強了其化學保護, 這套防護服是那些想要走遍特異區且需擔心化學或輻射威脅的自由戰士的最愛, 尤其是在考慮到其高效的重量分配設計的情況下\n \n
+		</text>
+	</string>
+
+	<string id="nbc_dolg_outfit_name">
+		<text>PS5-Md核生化防護服</text>
+	</string>
+	<string id="nbc_dolg_outfit_description">
+		<text>紀律團中很少有神器獵人,這種基於標準核生化設計的紀律團版核生化防護服是爲了更好的在異常點環境中作戰,以及更好地執行生態學家派給紀律團的任務, 與標準PS5-M套裝相比,該套裝擁有整合的GP-5防毒面具,AAMS神器插槽以及優異的重量分配設計,有助於攜帶大量必需的裝置, 不是同類產品中最好的防護服,一旦紀律團團員的等級達到了足以分到新護甲的級別,它就會被換下\n \n
+		</text>
+	</string>
+
+	<string id="bandit_nbc_outfit_name">
+		<text>掠奪者核生化防護服</text>
+	</string>
+	<string id="bandit_nbc_outfit_description">
+		<text>絕緣很好但其他方面很差的核生化輻射防護服,帶有凱夫拉背心, 在它被土匪使用前很可能是從一些被殘殺的潛行者身上扒下來的, 它標配GP-5防毒面具,該防毒面具使用軟管連線到一個現代化過濾器中, 儘管沒有進行過精心維護,但由於其優良的重量分配設計,它仍然是一種很受歡迎的防護服\n \n
+		</text>
+	</string>
+	
+	
+<!-- Assault vest -->
+	<string id="light_loner_outfit_name">
+		<text>攔截防彈衣</text>
+	</string>
+	<string id="light_loner_outfit_description">
+		<text>從西方走私來的舊式"攔截防彈衣"(IBA),已根據特異區的情況進行了改造, 它有點笨重,但可以提供一定的異常點保護以及良好的防彈能力, 有一些潛行者會在陣營戰爭中裝備它,與普通潛行者防護服相比,這套護甲顯著提高了倖存率\n \n
+		</text>
+	</string>
+	
+	<string id="light_freedom_outfit_name">
+		<text>自由軍防禦者</text>
+	</string>
+	<string id="light_freedom_outfit_description">
+		<text>據傳是自由軍通過未知途徑走私來的,它基於有點過時的"攔截防彈衣"(IBA)系統,但根據特異區情況進行了改造,使其更加舒適, 這是一套值得信賴的防彈衣,主要配發給突擊敵軍陣地的自由軍戰士\n \n
+		</text>
+	</string>
+
+	<string id="light_voen_outfit_name">
+		<text>軍方潛行者IBAz防護服</text>
+	</string>
+	<string id="light_voen_outfit_description">
+		<text>曾經屬於軍方潛行者的一件"異常點防彈衣系統", 與標準款相比該變型穿起來更舒適,整體異常點保護效能有所增強, 一般不會配發給新兵或者普通特種部隊,想得到這種防護服的軍方潛行者一般要自己掏腰包\n \n
+		</text>
+	</string>
+
+	<string id="light_monolit_outfit_name">
+		<text>黑石IBAz突擊防護服</text>
+	</string>
+	<string id="light_monolit_outfit_description">
+		<text>一件"異常點防彈衣系統",不知怎的落在了黑石的手中, 與標準版相比這套護甲更符合人體工程學,並擁有更好的抗心靈干預能力, 這些護甲一般是那些死在征途中的潛行者身上的,然後被黑石回收, 下一次黑石進攻軍事倉庫時這種護甲可能會重現江湖\n \n
+		</text>
+	</string>
+
+	<string id="light_dolg_outfit_name">
+		<text>IBAz通用護甲</text>
+	</string>
+	<string id="light_dolg_outfit_description">
+		<text>從西方走私來的舊式"攔截防彈衣"(IBA),已根據特異區情況進行了改造, 紀律團的變型舒適性很糟糕,但是在經過大幅改造后可以抵禦化學異常點, 紀律團不太可能從外界購買這些護甲,相反人們普遍認為,它們是從自由軍成員的屍體上扒下來的,只是進行了簡單的翻新和修復工作, \n \n
+		</text>
+	</string>
+
+	<string id="light_merc_outfit_name">
+		<text>傭兵IBAz防護服</text>
+	</string>
+	<string id="light_merc_outfit_description">
+		<text>維護良好的"異常點防彈衣系統",通過西方途徑流入傭兵手中, 該防護服穿起來雖然有些不舒服,但總體上位元異區內的標準版要好, 可以使傭兵安全地對特異區內頑固的敵人陣地發起突襲\n \n
+		</text>
+	</string>
+	
+	<string id="light_isg_outfit_name">
+		<text>UNISG IBAz防護服</text>
+	</string>
+	<string id="light_isg_outfit_description">
+		<text>優質但有些過時的戰鬥防護服,經過改造后可以為穿著者提供一定的異常點保護, 在與烏克蘭安全域性部隊交火時UNISG戰士一般會裝備這套防護服, 對於打算對特異區的無數實驗室進行掃蕩的聯合國偵察員來說,也算不錯的選擇\n \n
+		</text>
+	</string>
+
+
+<!-- Sunrise suits -->
+	<string id="stalker_outfit_name">
+		<text>"黎明"潛行者防護服</text>
+	</string>
+	<string id="stalker_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 黎明包含了有雙層橡膠層的樹脂內襯和內建的防彈衣,是迄今為止歷史最久的潛行者護甲之一, 被視作是一個特異區潛行者的最基本的護甲, 由於它便宜的價格和巨大的改造潛力,它在菜鳥和老手潛行者中都非常受歡迎\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_outfit_camo_name">
+		<text>"變色龍"潛行者防護服</text>
+	</string>
+	<string id="stalker_outfit_camo_description">
+		<text>未實裝, 組裝時安裝了偽裝元件,包含了有雙層橡膠層的樹脂內襯和內建的防彈衣,是迄今為止歷史最久的潛行者護甲之一, 被視作是一個特異區潛行者的最基本的護甲, 雖然連手槍子彈都扛不住,但由於它便宜的價格和巨大的改造潛力,它非常受歡迎\n \n
+		</text>
+	</string>
+
+	<string id="stalker_outfit_alt_name">
+		<text>"時髦"潛行者防護服</text>
+	</string>
+	<string id="stalker_outfit_alt_description">
+		<text>未實裝, 包含了有雙層橡膠層的樹脂內襯和內建的防彈衣,是迄今為止歷史最久的潛行者護甲之一, 被視作是一個特異區潛行者的最基本的護甲, 雖然連手槍子彈都扛不住,但由於它便宜的價格和巨大的改造潛力,它非常受歡迎\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_drought_outfit_name">
+		<text>"天旱"潛行者防護服</text>
+	</string>
+	<string id="stalker_drought_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 相比普通潛行者防護服,天旱有著更好的防彈效能,但穿著舒適性也要差得多, 它帶有幾個神器槽,一般會塞滿負重神器以抵消護甲的沉重,這在一定程度上為其贏得了"天旱"的諷刺綽號, 像黎明一樣,它以相對較低的成本和巨大的改裝潛力而廣受歡迎\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_predator_outfit_name">
+		<text>"捕食者"潛行者防護服</text>
+	</string>
+	<string id="stalker_predator_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, "捕食者"是"天旱"防護服的全面升級版,具有差不多的防彈效能,穿著起來也更加舒適, 它是那些渴望防護力和機動性的潛行者的不錯選擇, 和大多數潛行者服一樣,它便宜的價格和巨大的改造潛力使其在菜鳥和老手潛行者中都非常受歡迎, \n \n
+		</text>
+	</string>
+	
+	<string id="stalker_autumn_outfit_name">
+		<text>"秋"潛行者防護服</text>
+	</string>
+	<string id="stalker_autumn_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 這款防護服是神器獵人和職業殺手的最愛,因為穿著它就能在化學異常點間潛行無阻,普通的黎明防護服可做不到, 它比一般的潛行者防護服穿起來要舒服一些,防彈效能也更強, 因為它只比黎明貴一點點,所以對於那些願意再花點小錢的潛行者來說這是個不錯的選擇\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_vineleaf_outfit_name">
+		<text>"藤蔓"潛行者防護服</text>
+	</string>
+	<string id="stalker_vineleaf_outfit_description">
+		<text>未實裝, 常規黎明防護服的高級版,由更耐用和更昂貴的材料製成, 防護服的主要結構與黎明幾乎相同,但使用了更高質量的材料提高防護質量,而不會顯著增加重量, 這套衣服也更耐用,並且可以進行更高級的改造, " 藤蔓"的設計重點是增加使用者的機動性和舒適性並且不降低其防護質量, 它通過使用更具彈性的熱活性織物來實現此目標, 不過如果暴露在高溫下,衣服會略微收縮, 剛買下防護服的潛行者會走到最近的高溫異常點,並在其旁邊站一會兒-然後服裝會收縮並完美契合自己的身體, 即使聽起來很古怪,也沒有人說這件防護服影響了血液循環什麼的, 這種面料似乎很結實,因此它對怪物的撕咬也有一定的抵抗能力, 防護服的最後一個特點是其內層採用複合材料處理,使身體保持涼爽,增加了舒適感, 顧名思義,"藤蔓"帶有迷彩,其顏色類似於常春藤的葉子, 圖案包含顏色較淺和較深陰影的不規則形狀的大斑點\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_bear_outfit_name">
+		<text>"熊式"潛行者防護服</text>
+	</string>
+	<string id="stalker_bear_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 它比其他潛行者服略重,但由於其改進的防彈效能和有效的隔熱能力,暫時不是什麼問題, 然而隔熱層使用的不是傳統材料,而是通過反覆試驗研製出的一種未命名的變異合成材料, 雖然很有效,但副作用是使用者如果如果被電到將會很慘, 在揚塔附近的"爆燃"異常點中工作的潛行者經常裝備它\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_salamander_outfit_name">
+		<text>"火蜥蜴"潛行者防護服</text>
+	</string>
+	<string id="stalker_salamander_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 這套衣服是專為那些經常探索或偵查的潛行者設計的, 它的異常點和物理防護能力很一般,但具有出色的防輻射能力, 對於那些需要待在高輻射地區的人來說,它一個不錯的選擇, 具有諷刺意味的是,雖然叫做火蜥蜴,但它的隔熱能力其實很差勁, 和所有潛行者防護服一樣,它不僅便宜而且還具有很大的升級潛力\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_graphite_outfit_name">
+		<text>"石墨"潛行者防護服</text>
+	</string>
+	<string id="stalker_graphite_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 它是由幾個樂觀的潛行者合作設計的,他們希望能在戶外直接測量能量風暴, 當然,沒成功, , , 但他們的設計後來被重新改進,製成了一種新的防護服,能夠保護使用者的神經系統, 但抗熱性和防化能力都不太行, 在潛行者中有個有點過時的笑話: 把防護服扔在地上,然後假裝它不在那裡\n \n
+		</text>
+	</string>
+	
+	<string id="stalker_tigerstripe_outfit_name">
+		<text>"虎紋"潛行者防護服</text>
+	</string>
+	<string id="stalker_tigerstripe_outfit_description">
+		<text>一件由特異區技師手工組裝的防護服, 這套防護服比較重,專為那些通過當殺手賺錢而不是搜尋神器或獵殺怪物的人設計, 與普通潛行者的衣服相比,它提供了更好的防彈效能,並且在防破片,撕咬和衝擊方面作出了很多改進, 與其他許多護甲相比,這種防護服的主要優點在於價格便宜\n \n
+		</text>
+	</string>
+
+	<string id="ecologist_guard_outfit_name">
+		<text>ISRIT守衛連體服</text>
+	</string>
+	<string id="ecologist_guard_outfit_description">
+		<text>它原本是赫曼教授手下的"火星報"科研組的裝備,現在已經成為特異區的生態學家守衛通用的廉價防護緊身連體服, 有足夠的異常點防護效能,但通常無法抵抗子彈, 如果可以的話,大多數守衛會選擇SEVA或SSP-99M, 那些需要參加激烈戰鬥的人則會選擇更好的軍事作戰服\n \n
+		</text>
+	</string>
+
+	<string id="cs_stalker_outfit_name">
+		<text>CS-2b防彈衣</text>
+	</string>
+	<string id="cs_stalker_outfit_description">
+		<text>與CS系列的其他防護服不同,這種防彈衣是晴空經切爾諾貝利核電站戰役后之後才研製出來的, 被看作是CS-1防護服的繼承者,因為它的重點是保護使用者在異常點環境下的安全,而不是應付戰鬥, 可提供一定的物理保護和異常點保護能力\n \n
+		</text>
+	</string>
+
+
+<!-- STS (Special Tactical Suits) -->
+	<string id="svoboda_light_outfit_name">
+		<text>自由之風</text>
+	</string>
+	<string id="svoboda_light_outfit_description">
+		<text>這款舒適的潛行者緊身衣由自由軍技師製作, 面料經過平整化處理,這是由自由軍經反覆試驗開發的一種折中方案,可提高對化學異常點的防護力, 有人猜這件護甲會有一些副作用\n \n
+		</text>
+	</string>
+
+	<string id="monolith_outfit_name">
+		<text>黑石X-18防護服</text>
+	</string>
+	<string id="monolith_outfit_description">
+		<text>黑石的神秘服裝, 主體是一件環境通用緊身衣,能夠防禦手槍子彈,並提供了超過足夠的化學和輻射防護, 但是,它的異常點防護效能不佳, 製造者不明,在黑暗谷X18實驗室下的集裝箱和儲物柜中發現了數十套, 發現這個隱藏處的潛行者後來都失蹤了,這一發現在其他陣營的潛行者中造就了大量猜測, 許多人以為這些護甲在特異區出現前就有了\n \n
+		</text>
+	</string>
+
+	<string id="bandit_sun_outfit_name">
+		<text>"黃昏"戰術服</text>
+	</string>
+	<string id="bandit_sun_outfit_description">
+		<text>特異區技師的土產防護服, 它的設計似乎是仿照一套特殊戰術服裝設計的,但它與黑石X-18防護服有著可怕的相似度, 核生化防禦功能被移除,以更好地抵抗高熱和電的威脅, 主要裝備于黑谷的土匪,他們有時會追殺那些從X-18逃出來的人\n \n
+		</text>
+	</string>
+
+	<string id="merc_sun_outfit_name">
+		<text>"暮光"戰術服</text>
+	</string>
+	<string id="merc_sun_outfit_description">
+		<text>特異區技師的土產防護服, 顯然傭兵們已經學會了像潛行者一樣自製裝備, 很明顯是仿製黑石的X18防護服 - 毫無疑問,傭兵從利曼斯克大戰中搜刮到了不少黑石服裝, 質量還不錯,大多數傭兵認為它非常適合雷達站以南地帶的中等強度作戰\n \n
+		</text>
+	</string>
+
+	<string id="merc_nighthunter_outfit_name">
+		<text>傭兵STS-N戰鬥護甲</text>
+	</string>
+	<string id="merc_nighthunter_outfit_description">
+		<text>這種護甲有時被稱為"夜行者",是一種稍重的特種戰術護甲,用於夜間作戰和巷戰, 它是特種部隊護甲與普通潛行者護甲的混合產物,對小規模衝突來說已經夠用了,但對於那些吃神器飯的人來說它不太行\n \n
+		</text>
+	</string>
+
+	<string id="merc_wolven_outfit_name">
+		<text>傭兵STS-W防護服</text>
+	</string>
+	<string id="merc_wolven_outfit_description">
+		<text>綽號叫做"狼人"的護甲,這是套舒適的特種戰術護甲,為傭兵的探險和隱秘行動設計,具有良好的異常點防護,能讓使用者安全穿過異常區域, 這些設計對探尋神器任務來說很有用,還可以為傭兵提供良好的偽裝以設定埋伏,讓他們能夠幹掉那些不好惹的傢伙\n \n
+		</text>
+	</string>
+
+	<string id="isg_outfit_name">
+		<text>UNISG MK1戰術護甲</text>
+	</string>
+	<string id="isg_outfit_description">
+		<text>基於西方特種部隊的護甲設計,這樣的護甲在世界各地的軍隊中都很常見, 這是聯合國部隊裝備的最爛的護甲, 與傭兵LC護甲相比,這種防彈衣不僅重量更重,防護性還更差,因此幾乎不適用於特異區, 儘管如此,它還是比那些烏克蘭新兵的爛背心要好一點\n \n
+		</text>
+	</string>
+	
+	<string id="isg_merc_outfit_name">
+		<text>UNISG Mk2戰術護甲</text>
+	</string>
+	<string id="isg_merc_outfit_description">
+		<text>對Mk1的改進版,更適合特異區的情況, 對異常點有了全面的保護,特別是對化學和高熱的保護, 這些改進是聯合國根據從MK1型上搜集到的數據進行的, 使用它的聯合國士兵應儘量避免與當地的潛行者接觸\n \n
+		</text>
+	</string>
+	
+	
+<!-- LCS (Light Combat Suit) -->
+	<string id="merc_outfit_name">
+		<text>傭兵LC護甲</text>
+	</string>
+	<string id="merc_outfit_description">
+		<text>"輕型戰鬥服"是特異區傭兵最常用的護甲之一, 設計基於西方軍隊特種部隊的護甲, 由於對織物進行了特殊處理,護甲插板在運動過程中具有良好的穩定性, 與標準的特種部隊護甲相比質量很差,顯然在設計時並未考慮到異常點的威脅\n \n
+		</text>
+	</string>
+	
+	<string id="merc_fighter_outfit_name">
+		<text>傭兵LC-F護甲</text>
+	</string>
+	<string id="merc_fighter_outfit_description">
+		<text> 被傭兵戲稱為"果體鬥士"的護甲,標準LC護甲的一種變型,犧牲了很多保護以提高機動性,提供更好的高熱保護和額外的神器槽,機動性和隱蔽性都很好,但特異區中的傭兵斥候並不喜歡它\n \n
+		</text>
+	</string>
+
+	<string id="banditmerc_outfit_name">
+		<text>"圍欄"式LC護甲</text>
+	</string>
+	<string id="banditmerc_outfit_description">
+		<text>通過特殊手段流入特異區的輕型護甲,用於武裝特異區的土匪, 設計基於西方特種部隊護甲, 有趣的是提供這些護甲的人總是宰顧客, 這套護甲的整體防護能力在特異區中算是很差的,至少傭兵的LC護甲要差得多, 不過它至少穿起來很舒服,可以說比那些苦逼的烏克蘭新兵穿的要好\n \n
+		</text>
+	</string>
+	
+	<string id="renegademerc_outfit_name">
+		<text>叛節者LC護甲</text>
+	</string>
+	<string id="renegademerc_outfit_description">
+		<text>通過特殊手段流入特異區的輕型護甲,用於武裝特異區的土匪, 設計基於西方特種部隊護甲, 穿起來很舒服,足以保護你不受輕武器和破片的傷害, 然而它並不能抵抗異常點和輻射的威脅,在特異區深處一般沒什麼人穿\n \n
+		</text>
+	</string>
+	
+	<string id="merc_sunset_outfit_name">
+		<text>傭兵LCz護甲</text>
+	</string>
+	<string id="merc_sunset_outfit_description">
+		<text>傭兵的輕型戰鬥服,經過改良后更適合在特異區內使用, 是LC護甲的全面改進型,主要用於應對低強度作戰,但對異常點的抗性比較差, 不過對於大多數普通傭兵來說,這套裝備是一個不錯的選擇\n \n
+		</text>
+	</string>
+
+	<string id="merc_scout_outfit_name">
+		<text>傭兵LC-S護甲</text>
+	</string>
+	<string id="merc_scout_outfit_description">
+		<text>綽號為"斥候"的護甲,其本質上是一套LC-F護甲,只是在某些方面做了點改造, 它比LC-F稍微重一些,防護性也差一些,但它穿起來很舒適, 作為一種廉價的護甲,這款護甲對那些預算不高卻又想探索異常區域的傭兵來說很不錯\n \n
+		</text>
+	</string>
+	
+	<string id="merc_jackal_outfit_name">
+		<text>傭兵LTS-J護甲</text>
+	</string>
+	<string id="merc_jackal_outfit_description">
+		<text>一套輕巧的戰術護甲,綽號為"豺狼",以六年前被派去探索X-8的實驗室時犧牲的一個傭兵頭頭命名, 這套護甲或多或少有一定的防護力,可以應付特異區內的情況,不同之處在於,除了了擁有相當複雜的重量分配設計外,還相當的舒適, 價格也相對便宜,它是有經驗的傭兵的最愛\n \n
+		</text>
+	</string>
+	
+	<string id="merc_coyote_outfit_name">
+		<text>傭兵MTS-C護甲</text>
+	</string>
+	<string id="merc_coyote_outfit_description">
+		<text>一款中型戰術護甲,綽號"郊狼", 作為LTS-J的繼承者,這套護甲保留了前輩的優點並增強了物理保護, 當然它的價格也變高了,但這並不能影響有能力的傭兵搶著買它\n \n
+		</text>
+	</string>
+
+	<string id="greh_armored_outfit_name">
+		<text>伊里基 防彈盔甲</text>
+	</string>
+	<string id="greh_armored_outfit_description">
+		<text>一種舒適的,符合人體工程學的護甲,用於裝備原罪的成員, 它由防彈背心和大衣組成, 提供了良好的異常點和物理防護,為原罪戰士們提供了可靠的保護\n \n
+		</text>
+	</string>
+	
+	<string id="greh_armored_camo_outfit_name">
+		<text>天堂防彈盔甲</text>
+	</string>
+	<string id="greh_armored_camo_outfit_description">
+		<text>一種更高級的原罪製造的護甲,通常配發給陣營中最忠誠的成員, 與標準版相比,這種防護服不僅能增強穿戴者的力量,還加強了異常點防護\n \n
+		</text>
+	</string>
+
+	<string id="dolg_voin_outfit_name">
+		<text>PS6-V勇士護甲</text>
+	</string>
+	<string id="dolg_voin_outfit_description">
+		<text>PS5-M通用護甲的現代版, 足以應付特異區的所有情況,對於紀律團護甲來說相當舒適, 最初打算完全替換其前輩,但最近紀律團成員大量損失加上高昂的成本,使得計劃落空\n \n
+		</text>
+	</string>
+	
+	<string id="isg_lcs_outfit_name">
+		<text>UNISG輕型戰鬥防護服</text>
+	</string>
+	<string id="isg_lcs_outfit_description">
+		<text>一種裝備于UNISG部隊的"輕型戰鬥服", 設計基於西方特種部隊使用的版本, 與傭兵版相比,它具有更好的異常點保護,但物理防護有所下降, 帶有內建防彈衣和護甲插槽模組,在特異區的一般情況下表現一般\n \n
+		</text>
+	</string>
+	
+	<string id="isg_lcs_camo_outfit_name">
+		<text>UNISG輕型戰鬥-叢林迷彩防護服</text>
+	</string>
+	<string id="isg_lcs_camo_outfit_description">
+		<text>改造過的"輕型戰鬥服",裝備于特異區的UNISG部隊, 設計基於西方特種部隊使用的版本, 重量輕且穿戴舒適,面對異常點和子彈時能提供一定保護, 可惜對彈片,撕咬和衝擊的抗性不佳\n \n
+		</text>
+	</string>
+	
+	<string id="isg_lcs_urban_outfit_name">
+		<text>UNISG輕型戰鬥-城市迷彩防護服</text>
+	</string>
+	<string id="isg_lcs_urban_outfit_description">
+		<text>改造過的"輕型戰鬥服",裝備于UNISG的戰鬥部隊, 設計基於西方特種部隊使用的版本, 與它的同類相比它表現還算不錯,但仍達不到UNISG士兵的要求, 不推薦用於異常點或輻射區域\n \n
+		</text>
+	</string>
+
+
+<!-- Berill=5M Armoured Suits -->
+	<string id="army_outfit_name">
+		<text>軍用背心</text>
+	</string>
+	<string id="army_outfit_description">
+		<text>由政府以低預算為目標的外包產品, 一般發給直升機駕駛員、坦克駕駛員、後方人員、義務兵和現役軍人, 可以應付小型怪物, 雖然綜合性能比新手夾克好了一點,但這並不能說明什麼\n \n
+		</text>
+	</string>
+
+	<string id="specops_outfit_name">
+		<text>鈹-5M戰鬥護甲</text>
+	</string>
+	<string id="specops_outfit_description">
+		<text>內含經過修改的軍用PS5防彈衣,具有鈹質夾層, 該護甲專為高強度突入行動設計,是特異區大多數特種部隊成員的標準裝備,但需要使用高級防毒面具來應對其輻射和異常點的威脅, 有時,軍方會把這套護甲賣給潛行者換點小錢\n \n
+		</text>
+	</string>
+	
+	<string id="specops_dolg_outfit_name">
+		<text>PS5-B戰鬥護甲</text>
+	</string>
+	<string id="specops_dolg_outfit_description">
+		<text>內含經過修改的軍用PS5防彈衣,具有鈹質夾層, 與標準PS5-M通用防護服相比,此護甲在人體工程學和防護上更具整體性,但隔熱性不好,並且在抵抗衝擊(例如騷靈的砸擊)時防禦效果很差\n \n
+		</text>
+	</string>
+	
+	<string id="specops_merc_outfit_name">
+		<text>鈹-5M戰鬥甲 "殺手"</text>
+	</string>
+	<string id="specops_merc_outfit_description">
+		<text>特種部隊的護甲被傭兵回收利用的產物, 提供良好保護,同時舒適性很好,對異常點的抗性仍然很差,需要與高級防毒面具和頭盔搭配, 曾經為烏克蘭安全域性工作的傭兵經常穿這種護甲\n \n
+		</text>
+	</string>
+	
+	<string id="specops_bandit_outfit_name">
+		<text>鈹-5M戰鬥甲 "逃亡者"</text>
+	</string>
+	<string id="specops_bandit_outfit_description">
+		<text>一套帶鈹質夾層的PS5防彈衣,由特異區的土匪通過不正當手段獲得, 雖然這套護甲有明顯的磨損跡象,但它仍然是防護性和機動性間的絕佳選擇, 不建議在異常區域使用\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_heavy_outfit_name">
+		<text>鈹-5M戰鬥甲 "自由衛士"</text>
+	</string>
+	<string id="svoboda_heavy_outfit_description">
+		<text>一套自由軍版的鈹-5M護甲, 經一種叫做"至尊"的特殊材料處理過, 這是自由軍通過反覆試驗發明的一種變異化合物, 因此,除了提供良好的戰鬥保護外,它還可以提供一定的異常點保護, 所有自由軍戰士都渴望得到這種護甲, 或者至少是類似的東西\n \n
+		</text>
+	</string>
+
+	<string id="dolg_specops_red_outfit_name">
+		<text>PS5-B2專業戰鬥護甲</text>
+	</string>
+	<string id="dolg_specops_red_outfit_description">
+		<text>特種部隊以前裝備的護甲,為人體的重要部位提供了更強大的保護, 出色的戰鬥護甲,雖然在極端的異常點環境下很容易損壞, 儘管如此,紀律團老兵仍然喜歡這套護甲,他們說只要有一套就不用太擔心異常點的威脅了\n \n
+		</text>
+	</string>
+
+
+<!-- PS5=M Universal protection suit -->
+	<string id="dolg_outfit_name">
+		<text>PS5-M通用防護服</text>
+	</string>
+	<string id="dolg_outfit_description">
+		<text>這款舊版紀律團護甲更適合新兵,他們更喜歡這種類似潛行者防護服的東西而不是沉重的戰鬥護甲, 與PSZ系列不同,該防護服不僅提供一定的物理防護,也可應付變異環境,它可以抵抗手槍子彈\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_scout_outfit_name">
+		<text>PS5-R斥候背心</text>
+	</string>
+	<string id="dolg_scout_outfit_description">
+		<text>與PS5-M通用防護服一同開發的舊式紀律團護甲, 主要用於保護特異區早期時紀律團的成員, 如今穿著這樣簡陋的背心去闖特異區是很危險的行為, 因此它們更多地被配發給紀律團徵召到的新兵\n \n
+		</text>
+	</string>
+
+	<string id="dolg_red_outfit_name">
+		<text>PS5-M獵人防護服</text>
+	</string>
+	<string id="dolg_red_outfit_description">
+		<text>PS5-M通用防護服的重型版,為紀律團的怪物獵人設計, 犧牲了一點子彈抗性,以便更好地應對普通怪物的攻擊,同時也能應付怪物居住的變異環境, 甚至與新的紀律團護甲相比也相當好\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_heavy_outfit_2_name">
+		<text>自由軍哨兵</text>
+	</string>
+	<string id="svoboda_heavy_outfit_2_description">
+		<text>一件稍重的老式潛行者式護甲,很久以前由自由軍技師製作, 雖然這套護甲在某些地方有些磨損,但即便是在今天,它的效能仍然沒有落伍, 偶爾能在自由軍老兵身上看到, 自由軍新兵如果願意花大價錢買一套這樣的護甲只是因為它具有獨特的象徵意義\n \n
+		</text>
+	</string>
+	
+	<string id="bandit_ps5_outfit_name">
+		<text>土匪版PS5-M通用防護服</text>
+	</string>
+	<string id="bandit_ps5_outfit_description">
+		<text>真他媽"多虧"了軍火商摩根,像這樣的高檔貨第一次能流入土匪手中, 爲了獲得更好的舒適感和異常點保護,改造者放棄了一些物理保護, 這些護甲是紀律團的痛處之一,把它們從那些土匪那裡"解救"出來對紀律戰士來說是不言而喻的任務\n \n
+		</text>
+	</string>
+	
+	<string id="greh_ps5_outfit_name">
+		<text>沃洛斯防彈盔甲</text>
+	</string>
+	<string id="greh_ps5_outfit_description">
+		<text>設計基於PS5-M通用防護服, 尚不清楚原罪是如何擁有這種護甲的, 紀律團的人不願聽到他們的護甲正被這些狂熱的瘋子利用,而且很可能會向對待土匪版PS5-M那樣"解救"這套護甲, 護甲本身的質量很好,足以滿足特異區的情況\n \n
+		</text>
+	</string>
+	
+	
+<!-- Skat=9 Military Armoured Suits -->
+	<string id="military_outfit_name">
+		<text>Skat-9戰鬥護甲</text>
+	</string>
+	<string id="military_merc_outfit_name">
+		<text>傭兵版Skat-9戰鬥護甲</text>
+	</string>
+	<string id="military_monolit_outfit_name">
+		<text>黑石型Skat-9戰鬥護甲</text>
+	</string>
+	<string id="military_freedom_outfit_name">
+		<text>解放者Skat-9戰鬥護甲</text>
+	</string>
+	<string id="military_sky_outfit_name">
+		<text>CS-4b戰鬥護甲</text>
+	</string>
+	<string id="military_bandit_outfit_name">
+		<text>劫掠者Skat-9戰鬥護甲</text>
+	</string>
+	
+	<string id="military_outfit_description">
+		<text>特異區內的出色防護服, 這種重型軍用級護甲是為在異常區域進行大規模戰鬥而設計的, 包括PSZ-12p重型防彈衣,內建堅固的內襯和異常點防護連體服, 該護甲提供了出色的防護,可有效抵抗子彈和破片,而且不會大大降低使用者的活動能力, 儘管最初打算配發給軍方潛行者和經驗豐富的特種部隊成員,但這種護甲偶爾也會通過未知方式流入軍方以外的陣營\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_outfit_name">
+		<text>PSZ-9d戰鬥護甲</text>
+	</string>
+	<string id="dolg_heavy_outfit_description">
+		<text>由基輔防禦研究中心開發,這款紀律團護甲的第一批樣品是從PSZ-9舊式護甲改造來的,針對特異區進行了改裝, 多年來,其設計一直在不斷改進,但奇怪的是從未採用過新的名稱, 如今這種護甲的最新版本能夠抵抗步槍子彈,並且可以從容應付特異區內的怪物, 它的主要缺點是體積大和成本高,這樣珍貴的護甲很少配發給那些沒證明過自身價值的紀律戰士\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_pantsir_outfit_name">
+		<text>PSZ-7p破片防護甲</text>
+	</string>
+	<string id="dolg_pantsir_outfit_description">
+		<text>一款"中間"型防護服,比常規PS5通用防護服的防護力更強,但比PSZ-9d戰鬥護甲更便宜,更容易生產, 它是小規模衝突中的理想之選,它保留了全套PSZ服的防彈和熱氣保護功能,但其他方面很一般, 儘管如此,它相對容易維護和維修的特點對遠征的紀律戰士來說是一個福音,例如那些冒險進入亞諾夫或其他地區的偵查員, 總體而言這套護甲還算不錯,儘管它在遭受電擊和衝擊時很容易損壞\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_redline_outfit_name">
+		<text>PSZ-9kl指揮官護甲</text>
+	</string>
+	<string id="dolg_heavy_redline_outfit_description">
+		<text>PSZ護甲系列的一個變型,犧牲了一些異常點保護,大大提高了對爆炸和衝擊的抗性, 這種護甲曾是已犧牲的紀律團中校蘇爾加的好搭檔,雖然他很少冒險離開亞諾夫車站,但他總是擔心被自由軍暗殺,因此這樣的護甲正合他意, 在命中註定的那一天,當他率領部隊向普里皮亞奇發動大規模進攻后,紀律團就認定他已犧牲了,再也沒有人見過他, 他曾經的同志們認為這一壯舉減緩了黑石的擴張,一些紀律團老兵偶爾會穿這套護甲來紀念偉大的蘇爾加中校\n \n
+		</text>
+	</string>
+
+
+<!-- Scientific outfits -->
+	<string id="scientific_outfit_name">
+		<text>SEVA危化環境戰鬥服</text>
+	</string>
+	<string id="scientific_outfit_description">
+		<text>這套戰鬥服是由基輔防禦研究中校生產的,是土製潛行者護甲的絕佳替代品, 它配有一個全封閉循環呼吸系統和,綜合異常點防護系統以及夠用的防彈背心, 由於質量優良,SEVA是很不錯的選擇, 但它還是很昂貴的,那些喜歡槍戰而不是探索異常點的潛行者一般會買別的護甲\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_scientific_outfit_name">
+		<text>自由軍守望者戰鬥服</text>
+	</string>
+	<string id="svoboda_scientific_outfit_description">
+		<text>由自由軍技師製作,特別用於探索特異區的異常區域, 全封閉的呼吸系統和特殊的處理材料對輻射和異常點提供了極好的保護, 然而它搭配的"前哨"防彈衣不是很可靠,所以不適合應對槍戰\n \n
+		</text>
+	</string>
+
+	<string id="monolith_scientific_outfit_name">
+		<text>黑石科研防護服</text>
+	</string>
+	<string id="monolith_scientific_outfit_description">
+		<text>黑石科研防護服包含一個來源未知的防彈背心,並且還進行了獨特的修改,以提高對輻射的抵抗力,代價是電磁輻射保護的降低, 異常點保護系統將與SEVA一同搭配, 奇怪的是根據一些傳說(雖然沒人能證實),這些防護服通常由捍衛雷達站"焦腦器"的黑石戰士裝備\n \n
+		</text>
+	</string>
+
+	<string id="cs_scientific_outfit_name">
+		<text>CS-4a SEVA防護服</text>
+	</string>
+	<string id="cs_scientific_outfit_description">
+		<text>非標準版本的SEVA,走私來的, 通常被晴空的探索者裝備, 提供良好的抗輻射保護,但在其他方面沒什麼亮點\n \n
+		</text>
+	</string>
+
+	<string id="cs_scientific_outfit_good_name">
+		<text>CS-4a探路者</text>
+	</string>
+	<string id="cs_scientific_outfit_good_description">
+		<text>非標準版本的SEVA,經過晴空技師諾維科夫的大幅改進, 它比標準SEVA少了些熱氣抗性,因此對於高熱類異常點來說它不太合適,但它對其他異常點的保護是十分優秀的,穿著非常舒適, 在晴空研究人員中有著很大的需求\n \n
+		</text>
+	</string>
+
+	<string id="bandit_scientific_outfit_name">
+		<text>劫掠者SEVA防護服</text>
+	</string>
+	<string id="bandit_scientific_outfit_description">
+		<text>土匪們對異常點研究一直不太感興趣,儘管如此,他們還是會在異常區域和高輻射區域使用這樣的防護服來伏擊潛行者, 該防護服有封閉的呼吸系統和絕緣塗層,可以很好地應付各種異常點, 物理保護效果很差,無法抵抗子彈,彈片或衝擊\n \n
+		</text>
+	</string>
+
+	<string id="isg_scientific_outfit_name">
+		<text>UNISG版SEVA防護服</text>
+	</string>
+	<string id="isg_scientific_outfit_description">
+		<text>由UNISG聯合國科協委託基輔防禦研究中心開發,專門用於特異區的研究, 全封閉的呼吸系統和特殊的處理材料對輻射和異常點提供了極好的保護, 整合的防彈衣保護效能並不好,所以不適合應對槍戰\n \n
+		</text>
+	</string>
+
+	<string id="merc_scientific_outfit_name">
+		<text>傭兵版SEVA</text>
+	</string>
+	<string id="merc_scientific_outfit_description">
+		<text>傭兵版SEVA防護服, 爲了獲得更好的機動性犧牲了物理防護, 經驗豐富的傭兵一般穿著它在特異區中心地帶蒐集神器,通常還會有一群身穿戰鬥護甲的隊友陪同,他們比穿SEVA的傭兵更適合進行戰鬥, 總體而言它具有出色的異常點保護,但在熱氣和靈能場保護方面有待改進\n \n
+		</text>
+	</string>
+	
+	<string id="merc_combat_scientific_outfit_name">
+		<text>傭兵探路者護甲</text>
+	</string>
+	<string id="merc_combat_scientific_outfit_description">
+		<text>爲了賺取資金,晴空偶爾會對外出售探路者護甲,一般供特異區傭兵使用, 與普通的SEVA相比,此版本在所有方面均具有優勢, 但與CS-4a探路者相比,該防護服對輻射,電磁輻射和衝擊方面的防護效果較差,不過重量較輕,總體上防護效果很好\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_scientific_outfit_name">
+		<text>PS5-9Md通用科研防護服</text>
+	</string>
+	<string id="dolg_scientific_outfit_description">
+		<text>很出色的防護服,廣受好評,因為它結合了出色的異常點保護和足夠的防彈效能, 它包括PS5-M防護服,一個全封閉循環呼吸系統和一個完整的異常點防護系統, 與標準的SEVA相比,它提供了更好的絕緣保護與衝擊保護,可以避免鈍器損傷,而且這些改進幾乎沒有造成負面影響\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_scientific_red_outfit_name">
+		<text>PS5-9Md科研守衛護甲</text>
+	</string>
+	<string id="dolg_scientific_red_outfit_description">
+		<text>紀律團科研防護服的一種變型,更適合用於研究異常點來追蹤怪物的任務, 它的重量輕,可避免使用者負擔過重, 對衝擊和熱氣的優良保護效果對使用者來說很有幫助, 爲了對抗特異區內的一些特殊怪物,它也增強了電磁輻射保護, 但其子彈/撕裂保護相比標準SEVA並沒有太大變化,不是對抗吸血怪,奇美拉或巨型變異犬的最佳選擇\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_scientific_wood_outfit_name">
+		<text>PS5-9Md探路者護甲</text>
+	</string>
+	<string id="dolg_scientific_wood_outfit_description">
+		<text>爲了賺取資金,晴空偶爾會對外出售探路者護甲, 根據紀律團的需要進行了更改,此護甲與CS-4a探路者相比有一些區別,因為增強了化學保護而減弱了輻射保護,電抗性也因熱氣抗性進行了消減,但抗衝擊有所提高, 總體而言,這是為紀律團探險者們準備的舒適護甲\n \n
+		</text>
+	</string>
+	
+	<string id="bandit_scientific_dark_outfit_name">
+		<text>拼湊的密封循環裝置</text>
+	</string>
+	<string id="bandit_scientific_dark_outfit_description">
+		<text>一種類似SEVA的防護服,幾乎完全由一位土匪技師設計製造, 與被搶來的SVEA相比,這件遍佈補丁的防護服具有出色的防護效能,可抵禦熱氣,化學,輻射和電磁輻射方面的威脅,但對於同級別的防護服而言,它的效能相當差, 總的來講它還是時尚又舒適的,使它成爲了有錢土匪中的搶手貨\n \n
+		</text>
+	</string>
+	
+	<string id="renegade_scientific_outfit_name">
+		<text>叛節者SEVA防護服</text>
+	</string>
+	<string id="renegade_scientific_outfit_description">
+		<text>這種舒適的防護服最初是為特異區內研製的,是各種輕型戰鬥服或土製護甲的絕佳替代品, 提供出色的熱氣和化學防護,以及良好的衝擊防護, 不過對於標準SEVA來說這個變型還是差了點\n \n
+		</text>
+	</string>
+	
+	<string id="merc_scientific_armored_outfit_name">
+		<text>傭兵SEVA防彈衣</text>
+	</string>
+	<string id="merc_scientific_armored_outfit_description">
+		<text>傭兵SEVA的另一種變體, 它的一些環境保護系統被拆除,以便為護甲板騰出空間,而護甲板不會妨礙機動性, 經驗豐富的傭兵喜歡使用它們,對特異區研究人員和神器獵手來說很有用, 具有良好的物理,熱能和化學保護,但是當深入其他異常點時應該選擇更好的護甲\n \n
+		</text>
+	</string>
+
+	<string id="monolith_scientific_light_outfit_name">
+		<text>黑石拼湊的科研服</text>
+	</string>
+	<string id="monolith_scientific_light_outfit_description">
+		<text>一位不知名的技師仿製的SEVA, 與普通黑石科研服相比,它更輕巧,還可更好地抵禦高溫和化學灼傷, 除此之外沒什麼優點了, 有人推測它被用作儀仗用途, 但尚不清楚它在黑石部隊中到底是用來幹什麼的\n \n
+		</text>
+	</string>
+
+	<string id="ace_outfit_name">
+		<text>傭兵ACE科研服</text>
+	</string>
+	<string id="ace_outfit_description">
+		<text>特異區中技術最先進的防護服之一, ACE是特異區護甲設計的傑作; 它不僅可以抵抗步槍子彈,而且還提供了很好的異常點保護, 還可以進行大量高科技升級,從而進一步提高使用者的生存機會,智慧選擇性滲透性材料還提供了極高的舒適度, 經驗豐富且富有的僱傭兵一般會在高風險任務中會裝備它,尤其是在紅森林等地區,他們需要為任何可能發生的事情做好準備\n \n
+		</text>
+	</string>
+
+
+<!-- SSP=99 -->
+	<string id="st_ecologist_outfit_orange_name">
+		<text>SSP-99 "生態學家"</text>
+	</string>
+	<string id="st_ecologist_outfit_orange_description">
+		<text>專門為特異區情況設計的SSP-99防護服, 由生態學家及僱傭的潛行者裝備, 它具有整合的空氣過濾和空調系統, 耐熱和抗電,輻射,化學保護一應俱全, 它不是為戰鬥而設計的,因此既不提供子彈保護也不提供碎片保護\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_grn_name">
+		<text>SSP-99M 防護服</text>
+	</string>
+	<string id="st_ecologist_outfit_grn_description">
+		<text>高品質的改良版SSP-99, 增強了物理防護,可防止子彈和碎片損傷, 它是為從事科學考察的警衛設計的, 提供了良好的保護,可以免受輻射和化學異常點的影響\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_white_name">
+		<text>SSP-99 "鑽石"</text>
+	</string>
+	<string id="st_ecologist_outfit_white_description">
+		<text>SSP-99防護服專門針對特異區的惡劣條件設計, 由生態學家以及僱傭的潛行者使用, 它具有整合的空氣過濾和空調系統,可提供出色的抗輻射保護, 鑽石型提供了出色的防電保護,還具有用於異常點防護的整合系統,該系統提供了針對化學和高溫的保護, 它不是為戰鬥而設計的,因此既不提供子彈保護也不提供碎片保護\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_blue_name">
+		<text>SSP-99M "藍寶石"</text>
+	</string>
+	<string id="st_ecologist_outfit_blue_description">
+		<text>高品質的改良版SSP-99, 增強了物理防護,可防止子彈和碎片損傷, 它是為從事科學考察的警衛設計的, 藍寶石型可提供出色的保護,對電磁輻射,輻射和化學異常點都有一定抗性\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_red_name">
+		<text>SSP-99 "紅寶石"</text>
+	</string>
+	<string id="st_ecologist_outfit_red_description">
+		<text>高品質的改良版SSP-99, 增強了物理防護,可防止子彈和碎片損傷, 它是為從事科學考察的警衛設計的, 紅寶石型號可以很好地抵抗怪物的撕咬,並且整合了傷口癒合系統, 它提供了良好的保護,可以讓使用者免受輻射和化學異常點的影響\n \n
+		</text>
+	</string>
+
+	<string id="st_ecologist_outfit_yello_name">
+		<text>SSP-99 "黃玉"</text>
+	</string>
+	<string id="st_ecologist_outfit_yello_description">
+		<text>SSP-99防護服專門針對特異區的惡劣條件設計, 由生態學家以及僱傭的潛行者使用, 黃玉型具有出色的輻射保護, 它具有整合的空氣過濾和空調系統, 它具有耐熱和抗電性,可以很好地防止輻射和化學異常點, 它不是為戰鬥而設計的,因此既不提供子彈也不提供碎片保護\n \n
+		</text>
+	</string>
+
+
+<!-- Heavy combat suits -->
+	<string id="exolight_outfit_name">
+		<text>外骨骼防護服</text>
+	</string>
+	<string id="exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 包括了一體式戰術頭盔,重型護甲背心和增強型連身褲\n \n
+		</text>
+	</string>
+
+	<string id="dolg_exolight_outfit_name">
+		<text>PSZ-10d "職責" 戰鬥甲</text>
+	</string>
+	<string id="dolg_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 通常配發給精英紀律戰士,尤其是那些護送VIP人員或執行高危突擊任務的人\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_exolight_outfit_name">
+		<text>自由軍勇士</text>
+	</string>
+	<string id="svoboda_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 只有最受尊敬的自由軍成員才能穿著這樣的護甲,即使如此,也只在最緊急的情況下才會裝備\n \n
+		</text>
+	</string>
+
+	<string id="merc_exolight_outfit_name">
+		<text>傭兵外骨骼防護服</text>
+	</string>
+	<string id="merc_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 實戰中傭兵隊長的首選裝備\n \n
+		</text>
+	</string>
+
+	<string id="bandit_exolight_outfit_name">
+		<text>掠奪者外骨骼防護服</text>
+	</string>
+	<string id="bandit_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 這套護甲既大氣又令人生畏,是特異區中悍匪的最愛\n \n
+		</text>
+	</string>
+
+	<string id="monolith_exolight_outfit_name">
+		<text>黑石外骨骼防護服</text>
+	</string>
+	<string id="monolith_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 黑石傳教士和大師的最愛,他們說這套護甲就和他們的家 - 石棺一樣舒適\n \n
+		</text>
+	</string>
+
+	<string id="military_exolight_outfit_name">
+		<text>軍方潛行者外骨骼防護服</text>
+	</string>
+	<string id="military_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 烏克蘭政府認為這些護甲是高度試驗性的,所以從未將這些護甲配發給部隊, 因此想穿這種護甲的士兵(通常是軍方潛行者和一些退伍兵)必須自己想辦法了\n \n
+		</text>
+	</string>
+
+	<string id="cs_exolight_outfit_name">
+		<text>CS-5外骨骼防護服</text>
+	</string>
+	<string id="cs_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 這些護甲是從烏克蘭工廠走私進來的,然後由晴空高級技師進行翻新\n \n
+		</text>
+	</string>
+
+	<string id="isg_exolight_outfit_name">
+		<text>UNISG外骨骼防護服</text>
+	</string>
+	<string id="isg_exolight_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 聯合國僅將其留給最成功的特工和有真才實幹的指揮官\n \n
+		</text>
+	</string>
+	
+	<string id="exo_wood_outfit_name">
+		<text>"叢林"外骨骼防護服</text>
+	</string>
+	<string id="exo_wood_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 與標準版相比,它具有更好的異常點防護能力\n \n
+		</text>
+	</string>
+	
+	<string id="bandit_exo_earth_outfit_name">
+		<text>"圍欄"外骨骼防護服</text>
+	</string>
+	<string id="bandit_exo_earth_outfit_description">
+		<text>未實裝, 外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 包括一體式戰術頭盔,重型護甲背心和增強型連身褲\n \n
+		</text>
+	</string>
+	
+	<string id="freedom_exo_vineleaf_outfit_name">
+		<text>自由軍英雄</text>
+	</string>
+	<string id="freedom_exo_vineleaf_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 輕便舒適,堪稱同類中的傑作,但對彈片和化學的防護較差\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_outfit_name">
+		<text>PSZ-10d "職責" 戰鬥護甲</text>
+	</string>
+	<string id="exo_dolg_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 通常配發給精英紀律戰士,尤其是那些護送VIP人員或執行高危突擊任務的人\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_red_outfit_name">
+		<text>PSZ-10d"維納特"戰鬥護甲</text>
+	</string>
+	<string id="exo_dolg_red_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 通常精英紀律團獵人會裝備這件護甲,他們捨棄異常點保護以換取對危險怪物的最佳防禦\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_wood_outfit_name">
+		<text>PSZ-10l"森林"戰鬥護甲</text>
+	</string>
+	<string id="exo_dolg_wood_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 通常配發給精英紀律團戰士,尤其是危險地區(例如紅森林)的人員\n \n
+		</text>
+	</string>
+	
+	<string id="exo_dolg_urban_outfit_name">
+		<text>PSZ-10g城市戰鬥護甲</text>
+	</string>
+	<string id="exo_dolg_urban_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 護甲又舊又沉,2012年紀律團使用這種護甲突襲普里皮亞奇時與自由軍發生過沖突\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_outfit_name">
+		<text>傭兵重型護甲TB-1</text>
+	</string>
+	<string id="exo_merc_outfit_description">
+		<text>未實裝, 編號為TB-1,與原始重型護甲相比,具有很高的物理防護能力, 除了子彈和破裂保護稍差外,其餘與外骨骼相同, 由三個部分組成;  戰術頭盔,重型護甲背心和強化連身褲, 由專業傭兵在特異區北部執行任務時使用,用於消滅黑石精銳小隊, 它帶有標準的深藍色迷彩圖案,適合在城市環境(或其他任何地方,但僅限在夜間)中使用\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_urban_outfit_name">
+		<text>傭兵城市外骨骼防護服</text>
+	</string>
+	<string id="exo_merc_urban_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 在利曼斯克或普里皮亞奇等地區作戰的傭兵隊長的首選裝備\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_wood_outfit_name">
+		<text>傭兵叢林外骨骼防護服</text>
+	</string>
+	<string id="exo_merc_wood_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 在異常區域中作戰的傭兵上尉的首選裝備\n \n
+		</text>
+	</string>
+	
+	<string id="exo_merc_grass_outfit_name">
+		<text>傭兵草原外骨骼防護服</text>
+	</string>
+	<string id="exo_merc_grass_outfit_description">
+		<text>外骨骼的"內衣",有時被錯誤地稱為"輻射防護服", 幾乎可以提供完整外骨骼所能提供的所有保護,但是由於沒有伺服器和電池,因此無法增加負重, 從積極的方面來說,這意味著它現在更易於維護, 並且與完整的外骨骼不同,它不會阻止使用者奔跑, 傭兵上尉在野外作戰時的首選裝備,特別是在高熱能區域\n \n
+		</text>
+	</string>
+
+
+<!-- Proptotype Exoskeleton -->
+	<string id="stalker_proto_exo_outfit_name">
+		<text>黎明外骨骼</text>
+	</string>
+	<string id="stalker_proto_exo_outfit_description">
+		<text>潛行者黎明防護服新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_light_proto_exo_outfit_name">
+		<text>自由之風外骨骼</text>
+	</string>
+	<string id="svoboda_light_proto_exo_outfit_description">
+		<text>自由之風防護服新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+
+	<string id="dolg_proto_exo_outfit_name">
+		<text>PS5-M外骨骼</text>
+	</string>
+	<string id="dolg_proto_exo_outfit_description">
+		<text>紀律團PS5-M通用防護服新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+	
+	<string id="dolg_heavy_proto_exo_outfit_name">
+		<text>PSZ-9d外骨骼</text>
+	</string>
+	<string id="dolg_heavy_proto_exo_outfit_description">
+		<text>紀律團PSZ-9d戰鬥護甲新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備, 與標準外骨骼相比,它具有更好的通用性,並且由於能相容頭盔所以用途更廣泛, 其伺服器看起來很陳舊,因此效率明顯較低\n \n
+		</text>
+	</string>
+
+	<string id="military_proto_exo_outfit_name">
+		<text>Skat-9外骨骼</text>
+	</string>
+	<string id="military_proto_exo_outfit_description">
+		<text>軍用SKAT-9戰鬥護甲新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備, 與標準外骨骼相比,它具有更好的通用性,並且由於能相容頭盔所以用途更廣泛, 其伺服器看起來很陳舊,因此效率明顯較低\n \n
+		</text>
+	</string>
+
+	<string id="monolith_proto_exo_outfit_name">
+		<text>黑石X-18守衛護甲外骨骼</text>
+	</string>
+	<string id="monolith_proto_exo_outfit_description">
+		<text>黑石X-18守衛護甲新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+
+	<string id="cs_stalker_proto_exo_outfit_name">
+		<text>CS-2b外骨骼</text>
+	</string>
+	<string id="cs_stalker_proto_exo_outfit_description">
+		<text>CS-2b護甲新增了用於安裝外骨骼的伺服器和電池的裝置,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+	
+	<string id="ecolog_proto_exo_outfit_name">
+		<text>生態學家守衛外骨骼</text>
+	</string>
+	<string id="ecolog_proto_exo_outfit_description">
+		<text>生態學家護甲外骨骼,專為異常區域的攻擊和支援行動而設計, 儘管無法提供標準外骨骼級別的保護,但它仍具有最佳的戰鬥效能, 外骨骼框架能夠為過載提供機械支撐,例如大量的LLMC,AAM和其他科學物資,使其成為在調查研究人員護衛的絕佳選擇\n \n
+		</text>
+	</string>
+	
+	<string id="isg_proto_exo_outfit_name">
+		<text>UNISG戰術外骨骼</text>
+	</string>
+	<string id="isg_proto_exo_outfit_description">
+		<text>一種聯合國製造的特殊戰術護甲,經過專門修改以適合外骨骼的伺服器和電池,使穿戴者可以攜帶更多裝備,但缺少適當的外部護甲, 與標準外骨骼相比,它提供的防護能力較差,伺服系統的效率也較低,但維護成本很便宜\n \n
+		</text>
+	</string>
+
+	
+<!-- Exoskeletons -->
+	<string id="exo_outfit_name">
+		<text>外骨骼</text>
+	</string>
+	<string id="exo_outfit_description">
+		<text>軍用外骨骼的實驗版, 由於過高的成本和某些設計缺陷,所以從未大量生產過, 但由於它能夠承受大量的負重,因此仍有很大的需求,在烏克蘭以外的地下工廠中進行了小批量生產, 由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),配有現代動力伺服系統\n \n
+		</text>
+	</string>
+
+	<string id="dolg_exo_outfit_name">
+		<text>PSZ-10d外骨骼</text>
+	</string>
+	<string id="dolg_exo_outfit_description">
+		<text>優秀的高科技護甲, 由基輔防禦研究中心開發,專門用於紀律團, 這種護甲正逐漸被淘汰,取而代之的是更便宜更實用的護甲,現役的少數外骨骼往往是紀律團中的老資歷的裝備, 由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),配有現代動力伺服系統\n \n
+		</text>
+	</string>
+
+	<string id="svoboda_exo_outfit_name">
+		<text>自由軍之輝</text>
+	</string>
+	<string id="svoboda_exo_outfit_description">
+		<text>由自由軍最好的技師生產, 在經歷了各種修改和無數次嘗試后,他們創造了一個成功的設計, 雖然不一定是最實用的護甲,但它無疑是強大的,因此僅被配發給自由軍的最強戰士, 由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),配有現代動力伺服系統\n \n
+		</text>
+	</string>
+
+	<string id="merc_exo_outfit_name">
+		<text>傭兵外骨骼</text>
+	</string>
+	<string id="merc_exo_outfit_description">
+		<text>西方生產的軍用外骨骼的實驗版,用於裝備傭兵和其他武裝部隊, 雖然並非特異區中最實用最便於維護的護甲,但它可以使穿著者武裝到牙齒,其負重足以攜帶數週的物資, 經驗豐富的傭兵老闆常將其用作鼓舞士氣和提供強力保護的通用護甲,可以讓傭兵們挺過最可怕的惡戰, 由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),配有現代動力伺服系統\n \n
+		</text>
+	</string>
+
+	<string id="monolith_exo_outfit_name">
+		<text>黑石外骨骼</text>
+	</string>
+	<string id="monolith_exo_outfit_description">
+		<text>以軍用外骨骼為基礎的高科技護甲, 但是研究樣本表明,其伺服器是由目前科學界所未知的合金材料製成的, 護甲由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),配有現代動力伺服系統,裝有超出目前科技的的馬達, 穿著這套護甲感覺就像被埋在石棺的混凝土中-對大多數潛行者來說十分可怕的幽閉環境,但卻能讓真正的黑石大師級戰士感到無比放鬆, \n \n
+		</text>
+	</string>
+
+	<string id="bandit_exo_outfit_name">
+		<text>土匪外骨骼</text>
+	</string>
+	<string id="bandit_exo_outfit_description">
+		<text>土匪從軍方那裡偷來的外骨骼,用於突襲工事或掠奪裝備精良的潛行者, 一些好戰的土匪頭頭很偏愛這種護甲,把它視作力量和權威的不容置疑的象徵, 畢竟,能穿著這種護甲的土匪一定有很強的實力和計謀\n \n
+		</text>
+	</string>
+
+	<string id="military_exo_outfit_name">
+		<text>軍方潛行者外骨骼</text>
+	</string>
+	<string id="military_exo_outfit_description">
+		<text>軍用外骨骼的配發版, 限量配發給軍方潛行者,而且他們必須自己付錢, 可以攜帶榴彈發射器和機槍等重型武器,以及足夠的彈藥、食物和藥品,可以實現單兵的持續作戰, 有時用於代替輕型車輛\n \n
+		</text>
+	</string>
+
+	<string id="cs_exo_outfit_name">
+		<text>CS-5外骨骼</text>
+	</string>
+	<string id="cs_exo_outfit_description">
+		<text>走私到特異區的軍方外骨骼,然後由晴空技術人員進行翻新, 一般來說,這樣的防護服都是備用的,只有在真正的危機來臨時才會動用, 雖然這一套護甲的成本不算很驚人,但只有聲望最高的晴空戰士能夠獲得這樣一套裝備\n \n
+		</text>
+	</string>
+
+	<string id="ecolog_exo_outfit_name">
+		<text>生態學家外骨骼</text>
+	</string>
+	<string id="ecolog_exo_outfit_description">
+		<text>軍方外骨骼的配發版,供生態學家守衛使用, 這種護甲幾乎可以抵禦掉槍彈的所有影響,它的先進伺服馬達使它成為防禦者的最佳選擇,因為有它就能更好地使用重型武器, 戶外作戰時使用者通常會攜帶大量的電池、llmc、AAMs和生態學家探索時可能需要的其他裝備\n \n
+		</text>
+	</string>
+
+	<string id="renegade_exo_outfit_name">
+		<text>叛節者外骨骼</text>
+	</string>
+	<string id="renegade_exo_outfit_description">
+		<text>這是2011年由叛節者組裝的幾件外骨骼之一,用在突入晴空基地的行動中, 不幸的是,由於一名身穿大衣、手持步槍的傭兵的干擾,叛節者在取得勝利前就全軍覆沒了, 穿著它的叛節者在戰鬥中走火入魔,渴望向他們最痛恨的敵人傾瀉所有子彈,另外,叛節者最痛恨所有人\n \n
+		</text>
+	</string>
+
+	<string id="isg_exo_outfit_name">
+		<text>UNISG外骨骼</text>
+	</string>
+	<string id="isg_exo_outfit_description">
+		<text>UNISG外骨骼的配發版, 由聯合國特別限量配發, 雖然它仍然擁有許多設計缺陷,但它仍被認為是輕型、指揮和偵察車輛的絕妙替代品,因為這些車輛在穿越特異區時會遇到很大的麻煩,所以外骨骼被用來代替它們\n \n
+		</text>
+	</string>
+	
+	<string id="greh_exo_outfit_name">
+		<text>天堂動力護甲</text>
+	</string>
+	<string id="greh_exo_outfit_description">
+		<text>高科技護甲,基於軍用原型機設計, 其伺服器由科學領域暫時未知的合金材料製成, 由三部分組成(戰術頭盔,戰術背心和凱夫拉連身服),裝有超越現代科技的動力馬達, 據說穿著這套護甲會給使用者帶來不自然的幸福感和鎮定感,至於真實性還有待考察\n \n
+		</text>
+	</string>
+
+
+<!-- Nosorog exskeletal armor -->
+	<string id="dolg_nosorog_outfit_name">
+		<text>PSZ-10d型犀牛裝甲</text>
+	</string>
+	<string id="merc_nosorog_outfit_name">
+		<text>傭兵型犀牛裝甲</text>
+	</string>
+	<string id="army_nosorog_outfit_name">
+		<text>軍方潛行者型犀牛裝甲</text>
+	</string>
+	<string id="monolith_nosorog_outfit_name">
+		<text>黑石型犀牛裝甲</text>
+	</string>
+	<string id="isg_nosorog_outfit_name">
+		<text>UNISG型犀牛裝甲</text>
+	</string>
+	
+	<string id="nosorog_outfit_description">
+		<text>新一代外骨骼,由雙重加固的外層護甲和捷克M10防毒面具組成, 據傳這套衣服是一個叫"方"的已死潛行者的心血結晶,他的設計後來被特異區的各個強大陣營所採用, 如果穿著標準外骨骼使潛行者感到自己像輕型戰車,那麼犀牛裝甲就是主戰坦克,能夠承受住巨大的傷害, 通常僅裝備陣營中的最強者,即使在異常危險的任務中也是如此\n \n
+		</text>
+	</string>
+	
+	<string id="freedom_nosorog_outfit_name">
+		<text>自由軍至尊型犀牛裝甲</text>
+	</string>
+	<string id="freedom_nosorog_outfit_desc">
+		<text>新一代外骨骼,由雙重加固的外層護甲和捷克M10防毒面具組成, 據傳這套衣服是一個叫"方"的已死潛行者的心血結晶,他的設計後來被特異區的各個強大陣營所採用, 如果穿著標準外骨骼使潛行者感到自己像輕型戰車,那麼犀牛裝甲就是主戰坦克,能夠承受住巨大的傷害, 通常僅裝備陣營中的最強者,即使在異常危險的任務中也是如此\n \n
+		</text>
+	</string>
+
+
+<!-- No group -->	
+	<string id="ghillie_outfit_name">
+		<text>吉利服</text>
+	</string>
+	<string id="ghillie_outfit_description">
+		<text>這種服裝是狙擊手和獵人才會穿,可以與周圍環境融為一體, 吉利服是商業產物,但是軍方和平民都能定製並改進,以適應他們的需求, 雖然很有用,但它的實用性存在一定問題: 即使在溫帶氣候下,它也會隨著時間的流逝變熱並變得非常沉重\n \n
+		</text>
+	</string>
+
+</string_table>

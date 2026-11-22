@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_companion_inv">
+        <text>管理同伴库存</text>
+    </string>
+
+	<string id="ui_mcm_companion_inv_show_all">
+		<text>显示同伴库存中的每一个物品.</text>
+	</string>
+
+	<string id="ui_mcm_companion_inv_show_all_desc">
+		<text>[Cheaty]这将显示每一个物品，甚至是你没有兴趣接触的技术和动画项目。该选项将显示的项目染成红色.</text>
+	</string>
+	<string id="ui_mcm_companion_inv_show_klep">
+		<text>显示同伴在为你服务期间获得的物品.</text>
+	</string>
+
+	<string id="ui_mcm_companion_inv_show_klep_desc">
+		<text>这个选项显示所有物品，除了同伴开始时的物品。他们捡到的任何东西，如果在其他情况下是隐藏的，就会显示出来。这个选项给它所显示的物品涂上金色.</text>
+	</string>
+
+
+
+
+</string_table>

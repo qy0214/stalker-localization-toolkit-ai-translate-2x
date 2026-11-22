@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- Description = Factions -->
+	<string id="st_faction_stalker">
+		<text>獨行者</text>
+	</string>
+	<string id="st_faction_stalker_desc">
+		<text>\n%c[0,255,255,255]獨行者\n
+		\n %c[0,150,150,150]保持中立的潛行者, 多數是初來乍到的菜鳥,  爲了在特異區生存以及追尋各式各樣的夢想而走到了一起抱團取暖, 所以 "獨行者" 的意義並非獨來獨往, 而是作為一個整體, 他們並不從屬於任何一個陣營勢力, 只想在這混亂中努力求生罷了\n\n
+		%c[0,150,150,150]對於信奉叢林法則的獨行者來說, 遠離紛爭, 適者生存是他們的行事準則, 但也有一部分投機者, 卻正是爲了可以在紛爭中左右逢源才選擇這條獨行之路\n
+		
+		\n%c[0,255,255,255]難度: 新手</text>
+	</string>
+	<string id="st_faction_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="st_faction_bandit_desc">
+		<text>\n%c[0,255,255,255]土匪\n
+		\n%c[0,150,150,150]特異區人盡皆知的一個事實是: 儘管烏克蘭和白俄羅斯政府在名義上控制著這裡, 但實際上特異區就是一個法外之地\n \n 
+		強盜, 殺手和黑幫等惡貫滿盈之徒, 正是利用特異區的無政府狀態來逃過法律的制裁, 佔山為王, 當起了土匪, 幹著骯髒的勾當
+		\n\n%c[0,255,255,255]難度: 中級</text>
+	</string>
+	<string id="st_faction_dolg">
+		<text>紀律團</text>
+	</string>
+	<string id="st_faction_dolg_desc">
+		<text>\n%c[0,255,255,255]紀律團\n
+		\n%c[0,150,150,150]一個準軍事化的組織, 有著崇高理想的人們聚集在這裡, 在他們眼中, 特異區是一個不該打開的潘多拉魔盒, 是人類無盡恐懼的源頭, 如果不加以控制, 整個世界都會淪陷\n\n
+		長期以來, 由於有著相互矛盾的信條, 他們與自由軍之間的戰火不斷
+		\n\n%c[0,255,255,255]難度: 初級</text>
+	</string>
+	<string id="st_faction_freedom">
+		<text>自由軍</text>
+	</string>
+	<string id="st_faction_freedom_desc">
+		<text>\n%c[0,255,255,255]自由軍\n\n%c[0,150,150,150]這裡是無政府主義者和冒險家們的天堂, 自由軍認為特異區是一個奇蹟, 理應被全人類所共享, 所有人都應該不受管制地進入特異區\n\n
+		爲了自由而戰的這一理念, 導致他們經常與紀律團掐架
+		\n\n%c[0,255,255,255]難度: 中級</text>
+	</string>
+	<string id="st_faction_army">
+		<text>軍隊</text>
+	</string>
+	<string id="st_faction_army_desc">
+		<text>\n%c[0,255,255,255]軍隊\n\n%c[0,150,150,150]軍隊陣營包括烏克蘭政府軍, 烏克蘭特種部隊和加入烏克蘭軍方的潛行者\n\n 他們在特異區的出現正是外界社會恐懼心理的最好證明, 這些軍人們依照鐵一般的命令, 對特異區邊界進行著嚴密的封鎖, 未經允許而進入特異區的任何人員都會被立即槍決
+		\n\n%c[0,255,255,255]難度: 高級</text>
+	</string>
+	<string id="st_faction_ecolog">
+		<text>生態學家</text>
+	</string>
+	<string id="st_faction_ecolog_desc">
+		<text>\n%c[0,255,255,255]生態學家\n\n%c[0,150,150,150]生態學家是由烏克蘭政府和科學界資助的官方組織, 由受過良好教育的生態學家和專業的實驗助理, 和一定比例的保衛單位組成, 他們在特異區駐紮, 利用移動地堡型實驗室對異常現象開展著實地研究, 以便利用它的潛力來造福人類
+		\n\n他們在軍隊的保護下專注于研究工作, 對勢力爭鬥並不關心, 而其他陣營卻對他們的研究成果很感興趣, 因此大多願意表達合作的姿態
+		\n\n%c[0,255,255,255]難度: 新手</text>
+	</string>
+	<string id="st_faction_killer">
+		<text>傭兵</text>
+	</string>
+	<string id="st_faction_killer_desc">
+		<text>\n%c[0,255,255,255]傭兵\n\n%c[0,150,150,150]由來自世界各地的老兵組成, 以賞金獵人的身份提供各種服務
+		\n\n他們在特異區內從屬於一個半鬆散性質的僱傭兵組織, 而他們真實的客戶到底是誰, 連他們自己也不知道
+		\n\n大多數僱傭兵們對特異區沒有什麼成見或看法, 只是一群單純爲了生意和利潤毫不手軟的專業殺手
+		\n\n%c[0,255,255,255]難度: 高級</text>
+	</string>
+	<string id="st_faction_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="st_faction_monolith_desc">
+		<text>\n%c[0,255,255,255]黑石\n\n%c[0,150,150,150]狂熱的異教團體, 他們堅定地篤信著某種神秘力量的救贖, 所有人都認為黑石士兵們都是些被洗腦的軀殼, 但在他們來看, 外人才是異端, 並誓要將特異區中的人類清理乾淨\n\n儘管超念體早已被摧毀, 但他們還是成功地捲土重來, 並奪回了許多以前屬於他們的領土 
+		\n\n%c[0,255,255,255]難度: 高級</text>
+	</string>
+	<string id="st_faction_csky">
+		<text>晴空</text>
+	</string>
+	<string id="st_faction_csky_desc">
+		<text>\n%c[0,255,255,255]晴空\n\n%c[0,150,150,150]一個獨立的科研與軍事組織, 專注于研究和了解特異區, 同時保護特異區最致命的秘密 \n\n在經歷過切爾諾貝利核電站慘敗后, 晴空幾乎瀕臨滅亡, 但仍有少數倖存者設法讓晴空散發出昔日的榮光
+		\n\n%c[0,255,255,255]難度: 新手</text>
+	</string>
+	<string id="st_faction_renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="st_faction_renegade_desc">
+		<text>\n%c[0,255,255,255]叛節者\n\n%c[0,150,150,150]由特異區內最為卑鄙的潛行者組成
+		\n\n這些人沒有任何的道德可言, 叛節者們犯下的可怕罪行致使他們原屬的陣營驅逐了他們, 這樣的一群渣滓蛇鼠一窩, 狼狽為奸, 組成了一個幫派類的團體, 遭到所有人的唾棄
+		\n\n%c[0,255,255,255]難度: 中級</text>
+	</string>
+	<string id="st_faction_greh">
+		<text>原罪</text>
+	</string>
+	<string id="st_faction_greh_desc">
+		<text>\n%c[0,255,255,255]原罪\n\n%c[0,150,150,150]一個具有邪教性質的潛行者組織, 他們的狂熱信仰便是特異區本身
+		\n\n他們被看作是殭屍化的, 變異的, 瘋癲的"黑暗潛行者", 而他們的目的則是將整個世界都變成特異區
+		\n\n%c[0,255,255,255]難度: 中級</text>
+	</string>
+	<string id="st_faction_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="st_faction_isg_desc">
+		<text>\n%c[0,255,255,255]UNISG"聯合國科協"\n\n%c[0,150,150,150]一個對特異區懷有濃厚興趣的國際科學協會, 他們派遣的特種戰鬥單位也秘密的進入了特異區中
+		\n\n無論他們的目的如何, 這些科學家僱傭的特工們絕非毫無防備的等閒之輩, 爲了保守秘密, 他們遇到可疑的人會先開槍再說
+		\n\n%c[0,255,255,255]難度: 高級</text>
+	</string>
+	<string id="st_faction_zombied">
+		<text>殭屍潛行者</text>
+	</string>
+	<string id="st_faction_zombied_desc">
+		<text>\n%c[0,255,255,255]殭屍化潛行者\n\n%c[0,150,150,150]我要吃腦子!!!
+		\n\n腦部遭到過量靈體波的摧殘, 這些潛行者們已經變成一種沒有自我意識的行屍走肉, 只剩下最基本的生物本能, 並會攻擊任何接近他們的生物
+		\n\n%c[0,255,255,255]難度: 自虐</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_box_faction_desc">
+		<text>
+			%c[0,150,150,150]%s天賦
+		</text>
+	</string>
+	<string id="st_mm_box_icon_desc">
+		<text>
+			%c[0,150,150,150]角色天賦
+		</text>
+	</string>
+	<string id="st_mm_list_map_desc">
+		<text>
+			%c[0,150,150,150]選擇你的出生地點
+		</text>
+	</string>
+	<string id="st_mm_ck_reset_desc">
+		<text>
+			%c[0,150,150,150]重置物品
+		</text>
+	</string>
+	<string id="st_mm_list_economy_desc">
+		<text>
+			%c[0,150,150,150]"程序難度"主要和特異區的經濟有關, 這會對玩家的遊戲體驗造成很大的影響
+			\n\n例如交易商的買賣價格, 技師的修理/升級價格, 物品的獲取難度, 完成任務所獲得的金錢和好感等等
+			\n\n%c[200,200,50,50]•%c[0,150,150,150]你可以在遊戲過程中隨時修改此選項
+			\n參照"額外選項 -> 程序難度"
+		</text>
+	</string>
+	<string id="st_mm_list_difficulty_desc">
+		<text>
+			%c[0,150,150,150]"生存難度"會影響玩家生存的各個方面, 例如傷害抗性, 耐力消耗和負重等, 還包括飢渴度和睡眠的需求
+			\n \n
+			%c[200,200,50,50]• %c[0,150,150,150]你可以在遊戲過程中隨時修改上面提到的因數.
+			\n參照 "額外選項 -> 生存難度"
+		</text>
+	</string>
+	<string id="st_mm_ck_story_desc">
+		<text>
+			%c[0,150,150,150]劇情模式, 啟用后, 玩家將會體驗到一系列劇情和動態任務.\n 
+			\n有以下幾條由一系列故事推進的劇情線: "永恒傳奇", "致命原罪"和"餘輝行動", 劇情模式僅適用於獨行者, 紀律團, 自由軍, 生態學家, 傭兵和晴空這些陣營.\n
+			\n所有可玩陣營都可以接到動態任務, 所以請與你的陣營的老大多聊聊, 玩的開心!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容戰區模式\n 
+			%c[200,200,50,50]• %c[0,150,150,150]不相容尸潮模式.\n 
+			%c[200,200,50,50]• %c[0,150,150,150]不相容詛咒模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_drx_desc">
+		<text>
+			%c[0,150,150,150]連續的一組動態任務, 可以幫助你探索整個特異區.
+			\n無重複性: 就算你以同一個陣營重新開局, 任務線也不會相同.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容劇情模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容詛咒模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_desc">
+		<text>
+			%c[0,150,150,150]鐵人模式的特點是, 死亡時將會刪除你的所有存檔.\n
+			\n你可以隨意儲存存檔, 但死亡時將會刪除所有的存檔.
+		</text>
+	</string>
+	<string id="st_mm_ck_hardcore_aim_desc">
+		<text>
+			%c[0,150,150,150]硬核AI瞄準的特點是, 最大限度地提高AI對目標的鎖定性, 使玩家在移動中更難避開子彈.
+		</text>
+	</string>
+	<string id="st_mm_ck_survival_desc">
+		<text>
+			%c[0,150,150,150]尸潮模式的特點是, 用殭屍取代所有npc.\n
+			\n成群結隊的殭屍會來吃你的腦子 - 做好準備! 看看你能活多久!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容戰區模式\n 
+																			   
+		</text>
+	</string>
+	<string id="st_mm_ck_azazel_mode_desc">
+		<text>
+			%c[0,150,150,150]在詛咒模式里, 一次死亡並不代表結束.\n
+			\n就如惡魔阿薩索的傳說一樣, 當你死亡時, 你會隨機轉生到另一個潛行者身上, 這個傳說真的存在於特異區.\n
+			\n如果你有同伴, 你就會成為他們中的一位. 這個模式很適合鐵人模式/尸潮模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]詛咒模式中所有的地圖都會解鎖.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容劇情模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_warfare_desc">
+		<text>
+			%c[0,150,150,150]此模式使潛行者的A-Life系統具有更大的自由度, 從而建立更為動態的特異區
+			\n \n陣營的基地和勢力區域會不斷變化, 交易商, 醫生和技師也是如此\n
+			\n \n你也可以領導並幫助你的陣營攻城略地, 在特異區中取得優勢\n
+			%c[200,150,50,200]• %c[0,150,150,150]通過PDA地圖來指揮大局, 馳騁疆場吧!\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容劇情模式.\n
+			%c[200,200,50,50]• %c[0,150,150,150]不相容尸潮模式.
+		</text>
+	</string>
+	<string id="st_mm_ck_campfire_desc">
+		<text>
+			%c[0,150,150,150](不要勾選--已經由"更好的篝火儲存"所取代, 可去模組配置菜單中詳細配置)\n
+			在篝火儲存模式下, 你只有在篝火旁才能儲存遊戲, 篝火在特異區內隨處可見, 它是潛行者們的聚集地\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核儲存模式都相互相容
+		</text>
+	</string>
+	<string id="st_mm_ck_conditions_desc">
+		<text>
+			%c[0,150,150,150]苦難模式下你不能在這些狀態下存檔:\n
+			%c[200,200,200,50]• %c[0,150,150,150]受傷時\n
+			%c[200,200,200,50]• %c[0,150,150,150]流血中\n
+			%c[200,200,200,50]• %c[0,150,150,150]被輻射\n
+			%c[200,200,200,50]• %c[0,150,150,150]與敵人交戰中\n
+			%c[200,200,200,50]• %c[0,150,150,150]在輻射區域或是在能量風暴, 脈衝風暴期間\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核儲存模式都相互相容.
+		</text>
+	</string>
+	<string id="st_mm_ck_routes_desc">
+		<text>
+			%c[0,150,150,150]預設情況下許多地圖之間的出入口通路是隱藏的, 你需要在遊戲過程中通過其他方式發現這些通路
+			\n啟用此選項將在開始新遊戲時解鎖所有地圖.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_lives_desc">
+		<text>
+			%c[0,150,150,150]鐵人模式的一項附加功能, 你可以設定在新遊戲中你有多少條命數.
+			\n你每死一次, 生命就會減少一次.
+			\n一旦把命數用光了, 你的存檔都會被刪除.\n
+			%c[200,200,50,50]• %c[0,150,150,150]鐵人模式必須啟用才行.
+		</text>
+	</string>
+	<string id="st_mm_list_hardcore_regen_desc">
+		<text>
+			%c[0,150,150,150]鐵人模式的一項附加功能, 你可以設定每多少天增加一條命數.\n
+			%c[200,200,50,50]• %c[0,150,150,150]睡覺度過的時間不計算在內\n
+			%c[200,200,50,50]• %c[0,150,150,150]鐵人模式必須啟用才行
+		</text>
+	</string>
+	<string id="st_mm_list_timer_desc">
+		<text>
+			%c[0,150,150,150]在計時器模式下, 每隔一段時間才能存檔.
+			\n存檔后, 直到計時器結束, 您才能再次進行存檔.\n
+			%c[200,50,200,50]• %c[0,150,150,150]所有的硬核儲存模式都相互相容.
+		</text>
+	</string>
+	
+	<!-- Static Text -->
+	<string id="st_mm_new_game_character">
+		<text>角色</text>
+	</string>
+	<string id="st_mm_new_game_faction">
+		<text>選擇陣營</text>
+	</string>
+	<string id="st_mm_new_game_icon">
+		<text>選擇頭像</text>
+	</string>
+	<string id="st_mm_new_game_options">
+		<text>選項</text>
+	</string>
+	<string id="st_mm_new_game_inventory">
+		<text>物品單</text>
+	</string>
+	<string id="st_mm_new_game_loadout">
+		<text>可選物品</text>
+	</string>
+	<string id="st_mm_new_game_name">
+		<text>名字:</text>
+	</string>
+	<string id="st_mm_new_game_faction_2">
+		<text>陣營:</text>
+	</string>
+	<string id="st_mm_new_game_money">
+		<text>金錢:</text>
+	</string>
+	<string id="st_mm_new_game_points_left">
+		<text>剩餘點數:</text>
+	</string>
+	<string id="st_mm_new_game_points_used">
+		<text>已用點數:</text>
+	</string>
+	<string id="ui_st_random_location">
+		<text>-隨機地點-</text>
+	</string>
+	
+
+	<!-- Description elements -->
+	<string id="st_mm_new_game_relations">
+		<text>與其他陣營關係</text>
+	</string>
+	<string id="st_mm_new_game_description">
+		<text>背景簡介</text>
+	</string>
+	<string id="st_mm_new_game_points">
+		<text>點數</text>
+	</string>
+	<string id="st_mm_new_game_essential">
+		<text>要點</text>
+	</string>
+	
+	<!-- Hint -->
+	<string id="st_mm_itm_desc_unknown">
+		<text>無可用資訊</text>
+	</string>
+	
+	<!-- Options -->
+	<string id="st_cap_check_warfare">
+		<text>戰區模式</text>
+	</string>
+	<string id="st_cap_check_drx">
+		<text>DoctorX任務線</text>
+	</string>
+	<string id="st_cap_check_campfire">
+		<text>篝火模式(不要動)</text>
+	</string>
+	<string id="st_cap_check_conditions">
+		<text>苦難模式</text>
+	</string>
+	<string id="st_cap_list_timer">
+		<text>計時器模式</text>
+	</string>
+	<string id="st_cap_check_routes">
+		<text>暢通模式</text>
+	</string>
+	<string id="st_cap_list_hardcore_lives">
+		<text>鐵人模式命數</text>
+	</string>
+	<string id="st_cap_list_hardcore_regen">
+		<text>獲得的命數</text>
+	</string>
+	<string id="st_cap_list_economy">
+		<text>程序難度</text>
+	</string>
+	<string id="st_cap_list_difficulty">
+		<text>生存難度</text>
+	</string>
+	
+	<string id="st_econ_1">
+		<text>旅行者</text>
+	</string>
+	<string id="st_econ_2">
+		<text>拾荒者</text>
+	</string>
+	<string id="st_econ_3">
+		<text>求生專家</text>
+	</string>
+	
+	<string id="st_diff_1">
+		<text>簡單</text>
+	</string>
+	<string id="st_diff_2">
+		<text>中等</text>
+	</string>
+	<string id="st_diff_3">
+		<text>困難</text>
+	</string>
+	<string id="st_diff_4">
+		<text>硬核</text>
+	</string>
+	
+	<!--string id="st_diff_1">
+		<text>Novice</text>
+	</string>
+	<string id="st_diff_2">
+		<text>Stalker</text>
+	</string>
+	<string id="st_diff_3">
+		<text>Veteran</text>
+	</string>
+	<string id="st_diff_4">
+		<text>Master</text>
+	</string-->
+	
+	<string id="st_off">
+		<text>關閉</text>
+	</string>
+	<string id="st_new_game_min">
+		<text>分鐘</text>
+	</string>
+	<string id="st_new_game_mins">
+		<text>分鐘</text>
+	</string>
+	<string id="st_new_game_hour">
+		<text>小時</text>
+	</string>
+	<string id="st_new_game_hours">
+		<text>小時</text>
+	</string>
+	<string id="st_new_game_day">
+		<text>天</text>
+	</string>
+	<string id="st_new_game_days">
+		<text>天</text>
+	</string>
+	<string id="st_new_game_life">
+		<text>次生命</text>
+	</string>
+	<string id="st_new_game_lives">
+		<text>次生命</text>
+	</string>
+	
+	<!-- Buttons -->
+	<string id="st_mm_btn_new_game_faction">
+		<text>選擇陣營</text>
+	</string>
+	<string id="st_mm_btn_new_game_icon">
+		<text>選擇頭像</text>
+	</string>
+	<string id="st_mm_btn_new_game_back">
+		<text>返回</text>
+	</string>
+	<string id="st_mm_btn_new_game_submit">
+		<text>開始</text>
+	</string>
+	<string id="st_mm_btn_new_game_rand">
+		<text>隨機產生角色</text>
+	</string>
+	
+	<!-- Discord -->
+	<string id="st_hardcore_lives_left">
+		<text>剩餘生命</text>
+	</string>
+	<string id="st_hardcore_lives_left_single">
+		<text>剩餘生命</text>
+	</string>
+	<string id="st_player_dead">
+		<text>死亡</text>
+	</string>
+	<string id="st_main_menu">
+		<text>主菜單</text>
+	</string>
+	<string id="st_loading">
+		<text>載入</text> 
+	</string>
+	<string id="st_pause_menu">
+		<text>暫停菜單</text>
+	</string>
+	<string id="st_cap_check_freeplay">
+		<text>自由模式</text>
+	</string>
+	<string id="st_azazel_lives_possessed">
+		<text>已有生命</text>
+	</string>
+	<string id="st_azazel_lives_possessed_single">
+		<text>已有生命</text>
+	</string>
+	<string id="st_godmode">
+		<text>上帝模式</text>
+	</string>
+</string_table>
+			   

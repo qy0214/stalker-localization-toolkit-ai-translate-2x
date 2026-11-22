@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_smr_mutants">
+		<text>變異怪物</text>
+	</string>
+    <string id="ui_mcm_smr_mutants_types_title">
+		<text>怪物種類</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_squad_size">
+		<text>怪物群大小</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_squad_size_variance">
+		<text>怪物群大小變化</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_squad_size_variance_desc">
+		<text>值越高, 怪物群大小越隨機</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_random_mutants">
+		<text>產生隨機怪物群</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_random_mutants_desc">
+		<text>將怪物群替換為隨機怪物群, 也就是說某些怪物可能會出現在它不該出現的地方</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_random_mutants_chance">
+		<text>隨機怪物群機率</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_balanced_mutants">
+		<text>怪物產生平衡</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_balanced_mutants_desc">
+		<text>在特異區周邊地區, 強力的怪物會更少, 反之亦然</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_types_info">
+		<text>在下方你可以啟用或禁用怪物種類, 被禁用的怪物不會在特異區出現</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_types_replace_squads">
+		<text>替換被移除的群落</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_types_replace_squads_desc">
+		<text>用被啟用的怪物群來替換被禁用的怪物群</text>
+	</string>
+	<!-- TYPES -->
+	<string id="ui_mcm_SMR_smr_mutants_dogp">
+		<text>狗(不知道是指盲犬Blind Dogs還是變異犬Pseudodogs)</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_psydogp">
+		<text>魔犬</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_tushkanop">
+		<text>變異鼠</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_fracturep">
+		<text>長臂怪人</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_catp">
+		<text>變異貓</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_fleshp">
+		<text>豚獸</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_boarp">
+		<text>變異野豬</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_snorkp">
+		<text>史諾克</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_psysuckerp">
+		<text>奪靈怪</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_bloodsuckerp">
+		<text>吸血怪</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_lurkerp">
+		<text>夜魔</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_karlikp">
+		<text>變異侏儒</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_burerp">
+		<text>變異矮人</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_poltergeistp">
+		<text>騷靈</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_controllerp">
+		<text>攝魂怪</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_chimerap">
+		<text>奇美拉</text>
+	</string>
+    <string id="ui_mcm_SMR_smr_mutants_gigantp">
+		<text>變異巨獸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_ratp">
+		<text>老鼠</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombiep">
+		<text>殭屍</text>
+	</string>
+	<!-- UNUSED -->
+	<string id="ui_mcm_smr_mutants_unused_title">
+		<text>未使用的怪物</text>
+	</string>
+	<string id="ui_mcm_smr_mutants_unused_info">
+		<text>下方你可以啟用某些雖然在遊戲檔案內, 但沒有被原版遊戲啟用的廢案怪物, 啟用的怪物會以隨機怪物群的方式出現在特異區中</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_bibliotekarp">
+		<text>史前巨獸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_boryap">
+		<text>戰鬥獸</text>
+	</string>
+	<string id="ui_mcm_smr_mutants_unused_types_info">
+		<text>下方你可以啟用某些雖然在遊戲檔案內, 但沒有被原版遊戲啟用的廢案怪物, 他們會和其他怪物一起出現在特異區中</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_unused_types_chance">
+		<text>廢案怪物重新整理機率</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_unused_types_chance_desc">
+		<text>普通怪物被替換成廢案怪物的機率</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_bloodsucker_strong_bigp">
+		<text>大型吸血怪</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_burer_electrap">
+		<text>閃電侏儒</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_burer_firerp">
+		<text>烈焰侏儒</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_flesh_bolotp">
+		<text>沼澤豚獸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_gigant_jumperp">
+		<text>跳跳巨獸</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_snork_no_maskp">
+		<text>光頭史諾克</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombie_babkap">
+		<text>女喪屍</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombie_gholp">
+		<text>食尸鬼</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombie_ghostp">
+		<text>厲鬼</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombie_tetap">
+		<text>瘋鬼</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_mutants_zombie_wichp">
+		<text>女巫喪屍</text>
+	</string>
+</string_table>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Advanced Weapon Repair Mod 0.3 by Faustle (2017)
+-->
+<string_table>
+	<!--
+		Interface
+	-->
+	<string id="st_current_condition">
+		<text>現在的狀態:</text>
+	</string>
+	<string id="st_detail_success">
+		<text>+++ 部件 [%s] 已成功安裝</text>
+	</string>
+	<string id="st_detail_fail">
+		<text>--- 部件 [%s] 已在更換過程中損壞</text>
+	</string>
+	<string id="st_quality_worn">
+		<text>++++ 一個或多個部件已被磨損的部件替換. 武器品質已改為磨損.</text>
+	</string>
+	<string id="st_quality_good">
+		<text>++++ 所有部件都已更換為可使用的部件. 武器現在處於新狀態...</text>
+	</string>
+	<string id="st_quality_wgood">
+		<text>++++ 所有部件都已更換. 武器品質沒有改變.</text>
+	</string>
+	<string id="st_already_repair">
+		<text>--- 部件更換程式已完成. 爲了提高武器的品質, 條件必須是 100%</text>
+	</string>
+	<string id="st_no_barrel">
+		<text>--- 更換槍管前不能更換任何部件</text>
+	</string>
+	<string id="st_bar_no_need_new">
+		<text>--- 這種武器的槍管不需要更換.</text>
+	</string>
+	<string id="st_part_no_need_new">
+		<text>--- 武器部件不需要任何更換</text>
+	</string>
+	<string id="st_bar_no_need_old">
+		<text>--- 這種武器的槍管不需要更換. 要提高武器的品質, 條件必須是 100%</text>
+	</string>
+	<string id="st_part_no_need_old">
+		<text>--- 武器部件不需要任何更換. 要提高武器的品質, 條件必須在 100%</text>
+	</string>
+	<string id="st_no_barrel_to_kit">
+		<text>--- 沒有相容的槍管 [%s] 口徑</text>
+	</string>
+	<string id="st_no_details">
+		<text>--- 沒有可用的部件 [%s]</text>
+	</string>
+	<string id="st_selected_worn">
+		<text>--- 選擇%s: [%s] 修復成功的機會: %i%% 修復, 恢復部分</text>
+	</string>
+	<string id="st_selected_good">
+		<text>--- 選擇%s: [%s] 修復成功率: %i%%</text>
+	</string>
+	<string id="st_selected_r_kit">
+		<text>--- 選擇: [%s]</text>
+	</string>
+	<string id="st_sel_detail">
+		<text>--- 單擊相應部件的影象開始替換</text>
+	</string>
+	<string id="st_cond_grow">
+		<text>條件: %i%%</text>
+	</string>
+	<string id="st_awr_back">
+		<text>返回</text>
+	</string>
+	<string id="st_awr_exit">
+		<text>退出</text>
+	</string>
+	<string id="st_awr_ctrl">
+		<text>%s防止意外拆卸物品,\n只有按住ALT鍵才能執行此操作%s</text>
+	</string>
+	<string id="st_unload">
+		<text>武器在維修前需要卸下配件, 並且沒有任何配件</text>
+	</string>
+	<string id="st_no_weap">
+		<text>必須拿出武器才能使用虎鉗</text>
+	</string>
+	<string id="st_handsfree">
+		<text>你忙得不可開交</text>
+	</string>
+	<string id="st_stolen_1">
+		<text>在你不在的時候, 扳機機構被偷,武器的狀態變得更差了</text>
+	</string>
+	<string id="st_stolen_2">
+		<text>在你不在的時候, 後膛頭被偷了, 武器的狀態變得更差了</text>
+	</string>
+	<string id="st_stolen_3">
+		<text>在你不在的時候, 後膛閉鎖塊被偷了, 武器的狀態變得更差了</text>
+	</string>
+	<string id="st_not_in_list">
+		<text>你不具備修理這種武器的知識</text>
+	</string>
+	<string id="st_awr_timer_msg_on">
+		<text>%s你有五分鐘的時間%s</text>
+	</string>
+	<string id="st_awr_timer_msg_off">
+		<text>%s時間到了%s</text>
+	</string>
+	<string id="st_awr_dead_mechanic">
+		<text>%s技師%s已被殺死%s%s\n自由使用</text>
+	</string>
+	<string id="st_by_unknown">
+		<text>未知</text>
+	</string>
+	<string id="st_mech_tiski">
+		<text>技師的工作臺\n</text>
+	</string>
+	<string id="st_mech_tiski_w">
+		<text>技師帶有%s的工作臺</text>
+	</string>
+	<!-- ListBox status texts -->
+	<string id="st_ending_1">
+		<text>ы</text>
+	</string>
+	<string id="st_ending_2">
+		<text>а</text>
+	</string>
+	<string id="st_ending_3">
+		<text>о</text>
+	</string>
+	<string id="st_text_status">
+		<text>[狀態]:%s%s%%</text>
+	</string>
+	<string id="st_text_wpn">
+		<text>[武器]:%s%s</text>
+	</string>
+	<string id="st_text_mode">
+		<text>[模式]:%s%s</text>
+	</string>
+	<string id="st_text_mode_1">
+		<text>恢復</text>
+	</string>
+	<string id="st_text_mode_2">
+		<text>按照可能性進行修復</text>
+	</string>
+	<string id="st_text_mode_3">
+		<text>不可用</text>
+	</string>
+	<string id="st_text_warning_mode_1_4">
+		<text>%s升級后, 武器的狀態將是%s%%, 並且品質 - 新的</text>
+	</string>
+	<string id="st_text_warning_mode_1_3">
+		<text>當升級時%s, 只能使用可用的部件</text>
+	</string>
+	<string id="st_text_warning_mode_1_1">
+		<text>[注意]: 在這種模式下, 只能升級生鏽和磨損的武器</text>
+	</string>
+	<string id="st_text_warning_mode_2_5">
+		<text>%s修復完成後, 升級: %i%% 用於磨損 %i%% 用於新的</text>
+	</string>
+	<string id="st_text_warning_mode_2_4">
+		<text>%s修理完成後不升級, 武器的狀態將等於 %i%%</text>
+	</string>
+	<string id="st_text_warning_mode_2_3">
+		<text>%s同時, 該武器的品質將與最低品質的替換部分相對應</text>
+	</string>
+	<string id="st_text_warning_mode_2_1">
+		<text>[注意]: 在這種模式下, 可以修理和升級武器.</text>
+	</string>
+	<string id="st_text_warning_mode_3_3">
+		<text>%s狀態100%%才可以升級</text>
+	</string>
+	<string id="st_text_warning_mode_3_2">
+		<text>[警告]: 該武器無法修復, 因為該武器的品質條件已達到最高.</text>
+	</string>
+	<string id="st_text_warning_mode_3_1">
+		<text>[警告]: 武器的狀態已經達到最高. 不能再進一步修復.</text>
+	</string>
+	<string id="st_text_warning_mode_help">
+		<text>如需幫助, 請按F1鍵</text>
+	</string>
+	<!-- Disassembly -->
+	<string id="st_dis_news">
+		<text>[AWR]</text>
+	</string>
+	<string id="st_dis_count">
+		<text>––.</text>
+	</string>
+	<string id="st_dis_text_1">
+		<text>%s%s%s%s已拆卸</text>
+	</string>
+	<string id="st_dis_text_2">
+		<text>%s您試圖拆卸%s%s, 但沒有獲得部件.</text>
+	</string>
+	<string id="st_dis_text_3">
+		<text>%s缺少需要的工具%s%s</text>
+	</string>
+	<string id="st_dis_text_4">
+		<text>\n子彈被取出: %iPC type%s\n得到物品:</text>
+	</string>
+	<string id="st_dis_text_5">
+		<text>%s你設法修復了部分%s\n%s</text>
+	</string>
+	<string id="st_dis_text_6">
+		<text>%s您無法還原部件%s</text>
+	</string>
+	<string id="st_dis_text_7">
+		<text>%s%s%s%s%s</text> <!--text>%s %s %s %s has been disassembled</text-->
+	</string>
+	<string id="st_dis_text_8">
+		<text>%s%s%s%s%s被剪下下來</text>
+	</string>
+	<string id="st_dis_text_9">
+		<text>\n已獲得物品:</text>
+	</string>
+	<string id="st_dis_text_10">
+		<text>%s您嘗試了分解%s%s, 但是沒有得到部件.</text>
+	</string>
+	<string id="st_dis_text_11">
+		<text>%s%s%s%s%s</text>
+	</string>
+	<!-- Dialogues -->
+	<string id="st_awr_dialog_1">
+		<text>我可以借用你的工作臺嗎? 我需要修理一些東西.</text>
+	</string>
+	<string id="st_awr_dialog_2">
+		<text>好吧... 但你得支付一千盧布才能使用.</text>
+	</string>
+	<string id="st_awr_dialog_3">
+		<text>給你</text>
+	</string>
+	<string id="st_awr_dialog_4">
+		<text>太好了. 我暫時休息一下. 同時, 動作要快. 我今天還有更多的工作要完成.</text>
+	</string>
+	<string id="st_awr_dialog_5">
+		<text>我沒有那麼多錢.</text>
+	</string>
+	<string id="st_awr_dialog_6">
+		<text>知道了.</text>
+	</string>
+	<string id="st_awr_dialog_7">
+		<text>你幫了我許多忙, 我會讓你使用它的. 但是請你快點, 我今天還有更多的工作要完成.</text>
+	</string>
+
+	<!-- Sell dialog -->
+	<string id="st_awr_sell_dialog_1">
+		<text>我有備用部件. 你知道誰會買嗎?</text>
+	</string>
+	<string id="st_awr_sell_dialog_2">
+		<text>像我這樣的技師會買下你能想到的各種垃圾. 我可能會買你的東西. 當然, 不要太指望價格.</text>
+	</string>
+	<string id="st_awr_sell_dialog_3">
+		<text>你能提供什麼?</text>
+	</string>
+	<string id="st_awr_sell_dialog_4">
+		<text>好吧, 對於功能部件, 我可以為每個新部件提供300 盧布. 磨損的提供150RU. 至於其他的部件, 新的250RU, 磨損的部件125RU. 嗯, 60RU對於銹腐的部件來說應該不錯了. 你知道, 那玩意沒什麼用.</text>
+	</string>
+	<string id="st_awr_sell_dialog_5">
+		<text>嗯... 好的, 你的報價很一般. 但我這些部件對我來說什麼用都沒有. 來, 把錢給我.</text>
+	</string>
+	<string id="st_awr_sell_dialog_6">
+		<text>對我來說有點便宜. 我想我會考慮的.</text>
+	</string>
+	<string id="st_awr_sell_dialog_7">
+		<text>很高興和你做生意. 如果你有更多的部件, 你知道在哪裡可以找到我.</text>
+	</string>
+	<string id="st_awr_sell_dialog_8">
+		<text>我會記住的. 謝謝.</text>
+	</string>
+
+	<!-- Help -->
+	<string id="st_awr_help_0">
+		<text>操作指南</text>
+	</string>
+	<string id="st_awr_help_1">
+		<text>修理程式受武器(新的、磨損的、生鏽的)的整體品質及其目前狀況的影響. 此外, 所謂 0–65, 0–75 和 0–85 決定每種品質的武器狀態: 0–65% 對應生鏽的武器, 0–75% 對應磨損的武器和 0–85% 對應新武器.</text>
+	</string>
+	<string id="st_awr_help_2">
+		<text>修理和升級程式 (武器的狀態在 0–65/0–75/0–85):</text>
+	</string>
+	<string id="st_awr_help_3">
+		<text>1. 選擇一個修理套件, 用另一個相同口徑的槍管更換武器狀態為 0–20/0–25/0–30 或使用武器升級套件的條件為 20–65/25–75/30–85 通過雙擊帶有列表的集合的名稱\n2. 單擊滑鼠就可以在列表中選擇部件. 在修理低狀態武器時, 按一定順序更換部件:\n \n狀態在 0–20/0–25/0–30%: 更換槍管\n狀態在 20–35/25–45/30–55%: 更換扳機(衝擊扳機機構)\n狀態在 35–45/45–60/55–70%: 更換後膛頭\n狀態在 45–55/60–70/70–80%: 更換充氣管\n狀態在 55–65/70–75/80–85%: 更換後膛閉鎖塊\n \n3. 點選目前被替換部件的圖片(被選中的可替換部件以綠燈指示). 嘗試更換一個部件要花費已有的一個可用部件.\n4. 如果更換成功, 則按照指定的順序對所有部件重複此過程.\n5. 如果部件已經損壞, 再試一次, 須要有維修工具包和任何更多的武器部件.\n6. 所有替換的部件都被保留, 直到武器的狀態降低為止. 在這種情況下, 爲了提高品質, 部件將需要更換新的.\n7. 當所有部件已經被替換, 武器的品質將會改變為相應的. 關於這一點, 如果至少有一件被替換的物品磨損了, 即使其他武器部件被替換為新的, 武器的品質也會被改為"磨損".</text>
+	</string>
+	<string id="st_awr_help_4">
+		<text>更換武器部件的預定順序是由於需要將部件與武器的狀態相匹配, 因為在虎鉗中曾經部分維修過的每種武器的所有更換部件都儲存在遊戲儲存器中. 前提是維修后武器狀態沒有降低, 這使您可以從同一位置繼續進行維修而不必更換部件.</text>
+	</string>
+	<string id="st_awr_help_5">
+		<text>武器升級程式只有在95-100%的狀態下才對生鏽或磨損的武器有效:</text>
+	</string>
+	<string id="st_awr_help_6">
+		<text>1. 雙擊列表中的集合名稱, 在列表中選擇一個用於更換槍管的修復工具包或一個武器升級工具包. 置換專案不能用於升級.\n2. 在列表中選擇一個與修復工具包相對應的部件, 滑鼠單擊. 升級時只能使用工作部件.\n3. 單擊目前正在替換的部件的影象\n4. 如果更換成功, 這一功序對所有其他武器部件保持不變.\n5. 如果部件損壞了, 請再試一次, 如果有修理工具和任何更多的武器部件.\n6. 所有更換的部件都被保留, 直到武器的狀態被降低. 在這種情況下, 爲了提高品質, 部件需要進一步更換.\n7. 當所有五個部件都換成新的部件時, 武器的品質將改為"新的".</text>
+	</string>
+</string_table>

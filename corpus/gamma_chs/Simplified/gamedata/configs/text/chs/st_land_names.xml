@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_zat_b55_name_land">
+		<text>"利爪"异常区</text>
+	</string>
+	<string id="st_zat_b100_name_land">
+		<text>"钢铁森林"异常区</text>
+	</string>
+	<string id="st_zat_b104_name_land">
+		<text>锯木厂</text>
+	</string>
+	<string id="st_zat_b38_name_land">
+		<text>克鲁格雷达站</text>
+	</string>
+	<string id="st_zat_b40_name_land">
+		<text>污水处理站</text>
+	</string>
+	<string id="st_zat_b56_name_land">
+		<text>"马戏团"异常区</text>
+	</string>
+	<string id="st_zat_b5_name_land">
+		<text>护林站</text>
+	</string>
+	<string id="st_zat_a2_name_land">
+		<text>斯卡多夫斯克号</text>
+	</string>
+	<string id="st_zat_b20_name_land">
+		<text>"炼狱"异常区</text>
+	</string>
+	<string id="st_zat_fire_name_land">
+		<text>"炼狱"异常区</text>
+	</string>
+	<string id="st_zat_b53_name_land">
+		<text>"锅炉"异常区</text>
+	</string>
+	<string id="st_zat_b101_name_land">
+		<text>"毒布丁"异常区</text>
+	</string>
+	<string id="st_zat_waste_name_land">
+		<text>"污泥"异常区</text>
+	</string>
+	<string id="st_zat_b106_name_land">
+		<text>翡翠村</text>
+	</string>
+	<string id="st_zat_b7_name_land">
+		<text>舍甫琴科号</text>
+	</string>
+	<string id="st_zat_b14_name_land">
+		<text>疏浚站</text>
+	</string>
+	<string id="st_zat_tide_name_land">
+		<text>"激流"异常区</text>
+	</string>
+	<string id="st_zat_b52_name_land">
+		<text>码头起重机</text>
+	</string>
+	<string id="st_zat_b39_name_land">
+		<text>橡松异常区</text>
+	</string>
+	<string id="st_zat_b33_name_land">
+		<text>加油站</text>
+	</string>
+	<string id="st_zat_b18_name_land">
+		<text>老旧的驳船</text>
+	</string>
+	<string id="st_zat_b54_name_land">
+		<text>"疤痕"异常区</text>
+	</string>
+	<string id="st_zat_b12_name_land">
+		<text>断裂的大桥</text>
+	</string>
+	<string id="st_zat_b28_name_land">
+		<text>南部高地</text>
+	</string>
+	<string id="st_zat_b103_name_land">
+		<text>变电站</text>
+	</string>
+	<string id="st_jup_b1_name_land">
+		<text>"灰烬"异常区</text>
+	</string>
+	<string id="st_jup_b46_name_land">
+		<text>冷却塔</text>
+	</string>
+	<string id="st_jup_b202_name_land">
+		<text>小车站</text>
+	</string>
+	<string id="st_jup_b211_name_land">
+		<text>"芦苇"异常区</text>
+	</string>
+	<string id="st_jup_b200_name_land">
+		<text>水泥厂</text>
+	</string>
+	<string id="st_jup_b19_name_land">
+		<text>科帕奇村</text>
+	</string>
+	<string id="st_jup_a6_name_land">
+		<text>亚诺夫车站</text>
+	</string>
+	<string id="st_jup_b25_name_land">
+		<text>采石场</text>
+	</string>
+	<string id="st_jup_earth_name_land">
+		<text>"地裂"异常区</text>
+	</string>
+	<string id="st_jup_b6_name_land">
+		<text>移动科研地堡</text>
+	</string>
+	<string id="st_jup_b205_name_land">
+		<text>沃克霍夫防空基地</text>
+	</string>
+	<string id="st_jup_b206_name_land">
+		<text>"丛林"异常区</text>
+	</string>
+	<string id="st_jup_grove_name_land">
+		<text>"腐烂树林"异常区</text>
+	</string>
+	<string id="st_jup_b32_name_land">
+		<text>停车场</text>
+	</string>
+	<string id="st_jup_a10_name_land">
+		<text>检查站</text>
+	</string>
+	<string id="st_jup_b209_name_land">
+		<text>"沥青"异常区</text>
+	</string>
+	<string id="st_jup_b208_name_land">
+		<text>东部隧道</text>
+	</string>
+	<string id="st_jup_a12_name_land">
+		<text>集装箱仓库</text>
+	</string>
+	<string id="st_jup_b212_name_land">
+		<text>通风综合设施</text>
+	</string>
+	<string id="st_jup_b9_name_land">
+		<text>直升机场</text>
+	</string>
+	<string id="st_jup_b201_name_land">
+		<text>"泥浴"异常区</text>
+	</string>
+	<string id="st_jup_a9_name_land">
+		<text>木星收音机工厂</text>
+	</string>
+	<string id="st_pri_a28_name_land">
+		<text>普罗米修斯电影院</text>
+	</string>
+	<string id="st_pri_b36_name_land">
+		<text>河港</text>
+	</string>
+	<string id="st_pri_b303_name_land">
+		<text>旧服务中心</text>
+	</string>
+	<string id="st_pri_b301_name_land">
+		<text>学校</text>
+	</string>
+	<string id="st_pri_a17_name_land">
+		<text>医院</text>
+	</string>
+	<string id="st_pri_b306_name_land">
+		<text>禧年服务中心</text>
+	</string>
+	<string id="st_pri_plug_name_land">
+		<text>"火花塞"异常区</text>
+	</string>
+	<string id="st_pri_a16_name_land">
+		<text>洗衣店</text>
+	</string>
+	<string id="st_pri_a25_name_land">
+		<text>幼儿园</text>
+	</string>
+	<string id="st_pri_b35_name_land">
+		<text>公寓区</text>
+	</string>
+	<string id="st_pri_a21_name_land">
+		<text>熟食店</text>
+	</string>
+	<string id="st_pri_b304_name_land">
+		<text>百货店</text>
+	</string>
+	<string id="st_pri_bath_name_land">
+		<text>"酸浴"异常区</text>
+	</string>
+	<string id="st_pri_a18_name_land">
+		<text>书店</text>
+	</string>
+	<string id="st_pri_b302_name_land">
+		<text>"巨藤"异常区</text>
+	</string>
+	<string id="st_pri_b307_name_land">
+		<text>"火山"异常区</text>
+	</string>
+	<string id="st_mar_2c_01_anomaly_spot_name">
+		<text>"巫女凝胶"异常区</text>
+	</string>
+	<string id="st_mar_2c_02_anomaly_spot_name">
+		<text>"圈套"异常区</text>
+	</string>
+	<string id="st_ds_2c_01_anomaly_spot_name">
+		<text>"末日坟场"异常区</text>
+	</string>
+	<string id="st_ds_2c_02_anomaly_spot_name">
+		<text>"光明之路"异常区</text>
+	</string>
+	<string id="st_ds_2c_03_anomaly_spot_name">
+		<text>"无名山"异常区</text>
+	</string>
+	<string id="st_ds_2c_04_anomaly_spot_name">
+		<text>"危石"异常区</text>
+	</string>
+	<string id="st_trc_2c_01_rift_anom_spot_name">
+		<text>"壕沟"异常区</text>
+	</string>
+	<string id="st_trc_2c_02_chem_anom_spot_name">
+		<text>"秽土"异常区</text>
+	</string>
+	<string id="st_trc_2c_03_desolation_anom_spot_name">
+		<text>"碳化"异常区</text>
+	</string>
+	<string id="st_esc_2c_01_high_hopes_anomaly_spot_name">
+		<text>"苦痛"异常区</text>
+	</string>
+	<string id="st_gar_2c_01_nwi_anomaly_spot_name">
+		<text>"垃圾山"异常区</text>
+	</string>
+	<string id="st_gar_2c_02_toaster_anomaly_spot_name">
+		<text>"烧烤"异常区</text>
+	</string>
+	<string id="st_agr_2c_01_hg_anomaly_spot_name">
+		<text>"碎骨者"异常区</text>
+	</string>
+	<string id="st_labx18_2c_01_deep_burn_anomaly_spot_name">
+		<text>"灼烧"异常区</text>
+	</string>
+	<string id="st_labx18_2c_02_ff_anomaly_spot_name">
+		<text>"烤箱"异常区</text>
+	</string>
+	<string id="st_labx18_2c_03_elders_anomaly_spot_name">
+		<text>"毒气室"异常区</text>
+	</string>
+	<string id="st_labx18_2c_04_bioh_anomaly_spot_name">
+		<text>"生化"异常区</text>
+	</string>
+	<string id="st_bar_2c_01_grant_anomaly_spot_name">
+		<text>"后院"异常区</text>
+	</string>
+	<string id="st_ros_2c_01_tunnel_anomaly_spot_name">
+		<text>"闪光绝境"异常区</text>
+	</string>
+	<string id="st_ros_2c_02_crispy_train_anomaly_spot_name">
+		<text>"闪电列车"异常区</text>
+	</string>
+	<string id="st_ros_2c_03_yc_anomaly_spot_name">
+		<text>"油炸隧道"异常区</text>
+	</string>
+	<string id="st_mil_2c_01_hw_anomaly_spot_name">
+		<text>"桑拿"异常区</text>
+	</string>
+	<string id="st_yan_2c_01_cd_anomaly_spot_name">
+		<text>"混凝土"异常区</text>
+	</string>
+	<string id="st_x16_lab_2c_01_fb_anomy_spot_name">
+		<text>"石磨"异常区</text>
+	</string>
+	<string id="st_cit_2c_01_ch_anomaly_spot_name">
+		<text>"磨坊"异常区</text>
+	</string>
+	<string id="st_cit_2c_02_pg_anomaly_spot_name">
+		<text>"丘陵"异常区</text>
+	</string>
+	<string id="st_lim_2c_01_ls_anomaly_spot_name">
+		<text>"空间扭曲"异常区</text>
+	</string>
+	<string id="st_lim_2c_02_ib_anomaly_spot_name">
+		<text>"发电机"异常区</text>
+	</string>
+	<string id="st_rad_2c_01_bl_anomaly_spot_name">
+		<text>"活死人"异常区</text>
+	</string>
+	<string id="st_rad_2c_02_pp_anomaly_spot_name">
+		<text>"兵团"异常区</text>
+	</string>
+	<string id="st_bun_2c_01_f_anomaly_spot_name">
+		<text>"熔炉"异常区</text>
+	</string>
+	<string id="st_bun_2c_02_gp_anomaly_spot_name">
+		<text>"超重力"异常区</text>
+	</string>
+	<string id="st_pri_2c_01_pp_anomaly_spot_name">
+		<text>"能源"异常区</text>
+	</string>
+	<string id="st_pri_2c_02_gt_anomaly_spot_name">
+		<text>"火花"异常区</text>
+	</string>
+	<string id="st_pri_2c_03_wr_anomaly_spot_name">
+		<text>"榨汁机"异常区</text>
+	</string>
+	<string id="st_pri_2c_04_o_anomaly_spot_name">
+		<text>"先锋"异常区</text>
+	</string>
+	<string id="st_aes_2c_01_ce_anomaly_spot_name">
+		<text>"陷阱"异常区</text>
+	</string>
+	<string id="st_aes_2c_02_p_anomaly_spot_name">
+		<text>"焊接"异常区</text>
+	</string>
+	<string id="st_aes2_2c_01_bo_anomaly_spot_name">
+		<text>"半衰期"异常区</text>
+	</string>
+	<string id="st_aes2_2c_02_at_anomaly_spot_name">
+		<text>"酸蚀"异常区</text>
+	</string>
+	<string id="st_sar_2c_01_r_anomaly_spot_name">
+		<text>"反应堆"异常区</text>
+	</string>
+	<string id="st_gen_2c_01_ss_anomaly_spot_name">
+		<text>"遗忘墓地"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_11_3_anomaly_spot_name">
+		<text>"沼泽峡谷"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_12_2_anomaly_spot_name">
+		<text>"死境"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_10_10_anomaly_spot_name">
+		<text>"霹雳"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_base_anomaly_spot_name">
+		<text>"冲击沼泽"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_8_8_anomaly_spot_name">
+		<text>"文火"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_3_7_anomaly_spot_name">
+		<text>"引力管道"异常区</text>
+	</string>
+	<string id="st_mar_smart_terrain_3_3_anomaly_spot_name">
+		<text>"融解"异常区</text>
+	</string>
+	<string id="st_esc_smart_terrain_1_11_anomaly_spot_name">
+		<text>"绞肉机"异常区</text>
+	</string>
+	<string id="st_esc_smart_terrain_8_9_anomaly_spot_name">
+		<text>"碎石机"异常区</text>
+	</string>
+	<string id="st_esc_smart_terrain_5_4_anomaly_spot_name">
+		<text>"果核"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_3_7_anomaly_spot_name">
+		<text>"燃烧大地"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_3_7_anomaly_spot_2_name">
+		<text>"蜃景"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_2_4_anomaly_spot_name">
+		<text>"咒法阵"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_6_7_anomaly_spot_name">
+		<text>"颠倒"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_5_6_anomaly_spot_name">
+		<text>"气泡水"异常区</text>
+	</string>
+	<string id="st_gar_smart_terrain_1_7_anomaly_spot_name">
+		<text>"微型黑洞"异常区</text>
+	</string>
+	<string id="st_agr_smart_terrain_1_3_anomaly_spot_name">
+		<text>"石爪"异常区</text>
+	</string>
+	<string id="st_agr_smart_terrain_4_4_near_3_anomaly_spot_name">
+		<text>"EMP"异常区</text>
+	</string>
+	<string id="st_agr_smart_terrain_5_7_anomaly_spot_name">
+		<text>"龙卷"异常区</text>
+	</string>
+	<string id="st_agr_smart_terrain_5_2_anomaly_spot_name">
+		<text>"旋转木马"异常区</text>
+	</string>
+	<string id="st_agr_smart_terrain_1_2_anomaly_spot_name">
+		<text>"剧毒沼泽"异常区</text>
+	</string>
+	<string id="st_val_smart_terrain_9_10_anomaly_spot_name">
+		<text>"狱火裂隙"异常区</text>
+	</string>
+	<string id="st_val_smart_terrain_6_4_anomaly_spot_name">
+		<text>"漏斗"异常区</text>
+	</string>
+	<string id="st_val_smart_terrain_8_6_anomaly_spot_name">
+		<text>"彗星"异常区</text>
+	</string>
+	<string id="st_val_smart_terrain_9_4_anomaly_spot_name">
+		<text>"死云"异常区</text>
+	</string>
+	<string id="st_val_smart_terrain_8_9_anomaly_spot_name">
+		<text>"跳板"异常区</text>
+	</string>
+	<string id="st_mil_smart_terrain_4_7_anomaly_spot_name">
+		<text>"溶尸者"异常区</text>
+	</string>
+	<string id="st_mil_smart_terrain_2_1_anomaly_spot_name">
+		<text>"电击疗法"异常区</text>
+	</string>
+	<string id="st_mil_smart_terrain_2_6_anomaly_spot_name">
+		<text>"引力波"异常区</text>
+	</string>
+	<string id="st_mil_smart_terrain_7_4_anomaly_spot_name">
+		<text>"粉碎机"异常区</text>
+	</string>
+	<string id="st_mil_smart_terrain_8_3_anomaly_spot_name">
+		<text>"地狱"异常区</text>
+	</string>
+	<string id="st_yan_smart_terrain_2_5_anomaly_spot_name">
+		<text>"雷神"异常区</text>
+	</string>
+	<string id="st_yan_smart_terrain_zombi_spawn_anomaly_spot_name">
+		<text>"鬼火"异常区</text>
+	</string>
+	<string id="st_yan_smart_terrain_5_3_anomaly_spot_name">
+		<text>"毒水湖"异常区</text>
+	</string>
+	<string id="st_yan_smart_terrain_4_2_anomaly_spot_name">
+		<text>"薪王之手"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_6_3_anomaly_spot_name">
+		<text>"共生体"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_4_5_anomaly_spot_name">
+		<text>"超导体"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_monsters_anomaly_spot_name">
+		<text>"碎尸者"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_3_2_anomaly_spot_name">
+		<text>"矿井"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_6_6_anomaly_spot_name">
+		<text>"风车"异常区</text>
+	</string>
+	<string id="st_red_smart_terrain_3_1_anomaly_spot_name">
+		<text>"地下雷暴"异常区</text>
+	</string>
+	<string id="st_gen_smart_terrain_urod_anomaly_spot_name">
+		<text>"风暴峡谷"异常区</text>
+	</string>
+	<string id="st_trc_sim_13_anomal_zone_spot_name">
+		<text>"切片机"异常区</text>
+	</string>
+	<string id="st_pol_smart_terrain_1_1_anomaly_spot_name">
+		<text>"碎肉机"异常区</text>
+	</string>
+	<string id="st_pol_smart_terrain_1_2_anomaly_spot_name">
+		<text>"电压"异常区</text>
+	</string>
+</string_table>

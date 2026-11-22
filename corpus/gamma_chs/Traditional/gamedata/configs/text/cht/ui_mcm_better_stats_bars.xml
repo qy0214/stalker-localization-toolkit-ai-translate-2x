@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_better_stats_bars_title">
+		<text>更好的狀態列</text>
+	</string>
+	<string id="ui_mcm_menu_better_stats_bars">
+		<text>更好的狀態列</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_positive_color_help">
+		<text>增加狀態列的顏色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_positive_color_a">
+		<text>不透明度</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_positive_color_r">
+		<text>紅色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_positive_color_g">
+		<text>綠色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_positive_color_b">
+		<text>藍色</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_negative_color_help">
+		<text>減少統計欄的顏色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_negative_color_a">
+		<text>不透明度</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_negative_color_r">
+		<text>紅色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_negative_color_g">
+		<text>綠色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_negative_color_b">
+		<text>藍色</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_neutral_color_help">
+		<text>固定統計欄的顏色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_neutral_color_a">
+		<text>不透明度</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_neutral_color_r">
+		<text>紅色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_neutral_color_g">
+		<text>綠色</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_neutral_color_b">
+		<text>藍色</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_position">
+		<text>額外條相對於基本條的位置</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_position">
+		<text>額外條相對於基本條的位置</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_bottom">
+		<text>Bottom</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_top">
+		<text>Top</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_justify">
+		<text>填充所有高度</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_use_game_values">
+		<text>使用遊戲內的數值</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_use_game_values_desc">
+		<text>啟用該選項將使條形圖代表對實際遊戲威脅（Npcs、變異怪物、異常點）的保護,基於它們的傷害值、元素型別,還包括裝備和頭盔保護的修正行為. 你可以選擇這些選項 \n \n None: 禁用選項 \n \n Max: 條形圖的最大值代表可能收到的最大傷害. 在這種情況下,條形圖的1/3通常代表火、酸和靈能場、弱的變異怪物和手槍口徑的槍械. 2/3條代表異常點地雷,如電、重力異常、燃燒器和酸池,魔犬攻擊,一般強度的變異怪物和中級槍械. 全條代表對最強地雷、領域、攝魂怪攻擊、最強變異怪物和大口徑槍械的保護. \n \n Max (No Mines): 與Max相同,但異常點地雷不計入結果. 如果你想知道對領域的確切保護,並計劃躲避地雷,而不是知道你從它們那裡得到多少傷害,那就很有用. </text>
+		<!-- <text>Enabling this option will make bars represent protection against actual game threats (npcs, mutants, anomalies), based on their damage values, elemental types, and also includes corrected behaviour of outfit and helmet protection. You can choose these options \n None: disabling the option \n Max: maximum of the bar represents maximum damage possible to receive \n Middle: maximum of the bar represents arithmetic average of possible damages \n Median: maximum of the bar represents median value of possible damages, that will result in more accurate representation of common damage receiving</text> -->
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_use_game_values_none">
+		<text>None</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_use_game_values_max">
+		<text>Max</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_use_game_values_max_no_mines">
+		<text>Max (No Mines)</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_position">
+		<text>額外條相對於基本條的位置</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_bottom">
+		<text>Bottom</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_top">
+		<text>Top</text>
+	</string>
+	<string id="ui_mcm_lst_better_stats_bars_position_justify">
+		<text>填充所有高度</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_efp_ui_compatibility">
+		<text>EFP UI (Modern UI) 相容性</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_efp_ui_compatibility_desc">
+		<text>使用 Escape From Pripyat (EFP) modpack 時更好地顯示條形圖. 並且建議將位置設定為"填充所有高度"並降低各種條形的不透明度. </text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_gamma_ui_compatibility">
+		<text>G.A.M.M.A.  UI 相容性（也適用於舊版飢餓、口渴和睡眠UI）</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_gamma_ui_compatibility_desc">
+		<text>使用 G.A.M.M.A 或者舊版本飢餓、口渴和睡眠UI時更好地顯示狀態列. </text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_arx_compatibility">
+		<text>ARX 相容性</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_arx_compatibility_desc">
+		<text>使用 ARX mod（Artefact Restoration eXperiment）時更正確地顯示狀態列</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_abf_compatibility">
+		<text>ABF 相容性</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_abf_compatibility_desc">
+		<text>使用 ABF mod（異常平衡修復）時更正確地顯示狀態列</text>
+	</string>
+
+	<string id="ui_mcm_better_stats_bars_acid_bar_fix">
+		<text>替換酸池顯示</text>
+	</string>
+	<string id="ui_mcm_better_stats_bars_acid_bar_fix_desc">
+		<text>在"使用遊戲內的數值最大值"模式下,通過以犧牲顯示精度為代價人為地降低地雷的命中率,使酸池更可用,覆蓋範圍更廣</text>
+	</string>
+		
+</string_table>

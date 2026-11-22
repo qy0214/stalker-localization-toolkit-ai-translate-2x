@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Medical Items + Drugs
+-->
+
+<string_table>
+	
+	<string id="st_antirad">
+		<text>消輻寧</text>
+	</string>
+	<string id="st_antirad_descr">
+		<text>美沙敏"消輻寧"在特異區很常見使用時,這種藥物會引起外周血管收縮和缺氧,從而治療和預防輻射, 該藥物沒有嚴重的副作用,有個別病例出現輕度噁心、頭暈、痙攣和胃痛, 它還含有麻醉劑以防止疼痛\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	<string id="st_bandage">
+		<text>繃帶</text>
+	</string>
+	<string id="st_bandage_descr">
+		<text>有彈性的繃帶可以止血並能預防傷口感染, 普通的出血只需將繃帶綁在傷口上就行,動脈出血時需要緊緊地綁住傷口\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]軀幹%c[d_orange]••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_coagulant">
+		<text>長春花片</text>
+	</string>
+	<string id="st_drug_coagulant_descr">
+		<text>烏克蘭維卡索倫 - 一種維他命K的合成物,主要能提升傷口血液凝固速度潛行者對它的需求很大,因為它可以加快被怪物撕裂的傷口凝結和康復它的效果可以持續很久.一次吃兩片\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]軀幹%c[0,255,255,255]••••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_anabiotic">
+		<text>復甦藥</text>
+	</string>
+	<string id="st_drug_anabiotic_descr">
+		<text>這是奧澤斯基教授為特異區科研團隊開發的一種實驗性藥物, 這種藥的核心成分是河豚毒素, 俗稱"殭屍粉", 它會麻痹人的中樞神經系統, 從而使人能夠在能量風暴中存活下來, 該藥經過六年的實際測試, 有經驗的潛行者都會準備一些以防突發的能量風暴\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2]引發暫時性休克\n
+		%c[d_green] • %c[pda_white]治癒%c[0,255,255,255]100%全身\n
+		</text>
+	</string>
+	
+	<string id="st_drug_psy_blockade">
+		<text>抗靈藥</text>
+	</string>
+	<string id="st_drug_psy_blockade_descr">
+		<text>一種用來抑制神經活動的藥物, 會在短時間內阻斷情感中樞, 在特異區主要用來抵抗靈能場的影響, 藥效可以持續很久, 一次兩片\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 提高靈能抵抗力, 降低特異區的恐怖對精神的影響\n
+		%c[d_red] • %c[ui_gray_2] 導致極度頭暈\n
+		</text>
+	</string>
+	
+	<string id="st_drug_antidot">
+		<text>解毒劑</text>
+	</string>
+	<string id="st_drug_antidot_descr">
+		<text>IP2解毒劑是一種複方藥物, 由多種成分組成, 包括甲氧氯普脒,吡哆醇,硫胺,核糖核酸等藥物, 原理是在血液中溶解一系列抗生素以抵禦自然毒素或者人造毒素\n
+		IP2在特異區內並不特別受歡迎, 大多數潛行者仍然依靠防毒面具和防護服, 然而, 仍然有一些人會備點解毒劑預防緊急情況, 藥效持久, 一次吃一粒\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]••• %c[pda_white]軀幹%c[0,255,255,255]•••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_booster">
+		<text>大力水</text>
+	</string>
+	<string id="st_drug_booster_descr">
+		<text>該藥物的主要成分是合成型代謝雄性激素, 一種人工類固醇, 其化學成分類似於睪酮, 潛行者們經常在長期作戰中服用它, 以緩解神經疲勞, 並能夠顯著增加負重能力, 藥效持久\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2]強力頭暈去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_drug_radioprotector">
+		<text>輻射防護片</text>
+	</string>
+	<string id="st_drug_radioprotector_descr">
+		<text>事故當初清理核電站的人員配發的特殊醫療包里就包含這種B190茵德林防護劑, 現在在特異區里廣泛流通, 以代替致毒性過大的胱胺, 服用過量可能會斷送你的小命, 可以減輕伽瑪射線對活體細胞的影響, 建議在接觸輻射前服用, 因為藥物需要一段時間才能被充分吸收, 藥效持久, 一次服一粒\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_akvatab">
+		<text>布洛芬</text>
+	</string>
+	<string id="st_akvatab_descr">
+		<text>布洛芬是一種非甾體抗炎藥 (NSAID) 類藥物, 用於治療疼痛, 發燒和炎癥, 在特異區用作一般止痛藥\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]手臂%c[0,255,255,255]•••• %c[pda_white]腿部%c[0,255,255,255]••••\n
+		</text>
+	</string>
+	
+	<string id="st_medkit_ai1">
+		<text>基礎醫療物資包</text>
+	</string>
+	<string id="st_medkit_ai1_descr">
+		<text>包含各種治療輕傷的藥品\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 繃帶(4)\n
+		%c[d_cyan] • %c[default] 雙氯酚鈉針劑\n
+		%c[d_cyan] • %c[default] 簡易治療針\n
+		%c[d_cyan] • %c[default] 安乃近針劑\n
+		%c[d_cyan] • %c[default] 礦泉水\n
+		%c[d_cyan] • %c[default] 磺胺抗菌藥\n
+		%c[d_cyan] • %c[default] 止血帶\n
+		%c[d_cyan] • %c[default] 亞都林\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的醫用品\n</text>
+	</string>
+	
+	<string id="st_medkit_ai2">
+		<text>軍用醫療物資包</text>
+	</string>
+	<string id="st_medkit_ai2_descr">
+		<text>含有適合作戰人員使用的大量刺激性藥物\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 繃帶(4)\n
+		%c[d_cyan] • %c[default] 咖啡因片\n
+		%c[d_cyan] • %c[default] 雙氯酚鈉針劑\n
+		%c[d_cyan] • %c[default] 芬太尼\n
+		%c[d_cyan] • %c[default] 布洛芬\n
+		%c[d_cyan] • %c[default] 軍用治療針\n
+		%c[d_cyan] • %c[default] 礦泉水\n
+		%c[d_cyan] • %c[default] 礦泉水\n
+		%c[d_cyan] • %c[default] 嗎啡針劑\n
+		%c[d_cyan] • %c[default] 安眠藥\n
+		%c[d_cyan] • %c[default] 止血帶(2)\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的醫用品\n</text>
+	</string>
+	
+	<string id="st_medkit_ai3">
+		<text>科研用醫療物資包</text>
+	</string>
+	<string id="st_medkit_ai3_descr">
+		<text>一個專為特異區內科研人員設計的物資包, 含有許多可以對抗生化,靈能和輻射危害的藥物\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 消輻寧(2)\n
+		%c[d_cyan] • %c[default] 解毒劑\n
+		%c[d_cyan] • %c[default] 雙氯酚鈉針劑\n
+		%c[d_cyan] • %c[default] 抗輻射針(2)\n
+		%c[d_cyan] • %c[default] 金黴素\n
+		%c[d_cyan] • %c[default] 腎上腺素針劑\n
+		%c[d_cyan] • %c[default] 小管葡萄糖針劑(2)\n
+		%c[d_cyan] • %c[default] 礦泉水\n
+		%c[d_cyan] • %c[default] 抗靈藥\n
+		%c[d_cyan] • %c[default] 輻射防護片\n
+		%c[d_cyan] • %c[default] 科研用治療針(2)\n
+		%c[d_cyan] • %c[default] 磺胺抗菌藥\n
+		%c[d_cyan] • %c[default] 止血帶\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的醫用品\n
+		</text>
+	</string>
+	
+	<string id="st_analgetic">
+		<text>雙氯酚鈉針劑</text>
+	</string>
+	<string id="st_analgetic_descr">
+		<text>苯乙酸衍生物類的非甾體抗炎藥, 使用後會神經遲鈍, 由於有大量的副作用例如頭痛,頭暈,疲倦, 在某些情況下還有記憶障礙,方向障礙,易怒, 所以大多數國家並不把它列在醫藥品範疇里, 然而特異區中它非常受歡迎, 因為其副作用可以降低中樞神經系統的敏感度, 能讓人在諸如槍傷和彈片傷之類的重傷下保持冷靜\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_purple] • %c[pda_white] 提供少量傷害抗性（5%）\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈 \n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]•••• %c[pda_white]軀幹%c[d_orange]•••• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	
+	<string id="st_jgut_zhgut">
+		<text>止血帶</text>
+	</string>
+	<string id="st_jgut_descr">
+		<text>橡膠止血帶, 可以用於止住瞬間的大出血\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[d_orange]四肢100%\n
+		</text>
+	</string>
+	
+	<string id="st_yadylin">
+		<text>亞都林</text>
+	</string>
+	<string id="st_yadylin_descr">
+		<text>一種基於嗎啡的藥物, 它可以迅速緩解疼痛, 增加腎上腺素的分泌, 幫助使用者應對高強度作戰, 它在潛行者中很受歡迎, 一些小混混們也喜歡嗑著玩, 據說被某個組織大量提供給了黑石軍團\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 導致嚴重的頭暈\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]•••• %c[pda_white]軀幹%c[0,255,255,255]•••• %c[pda_white]手臂%c[0,255,255,255]•• %c[pda_white]腿部%c[0,255,255,255]••\n
+		</text>
+	</string>
+	
+		<string id="st_medkit">
+		<text>AI-2急救包</text>
+	</string>
+	<string id="st_medkit_descr">
+		<text>一個通用急救包, 為前蘇聯防衛人員和民兵組織提供的標準急救包, 可以治療擦傷,瘀腫,化學和高溫燒傷以及各種型別的中毒\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••• %c[pda_white]軀幹%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	<string id="st_medkit_army">
+		<text>軍用急救包</text>
+	</string>
+	<string id="st_medkit_army_descr">
+		<text>一種為戰鬥而生的專用急救包, 包括以甲萘醌為基礎成分的凝血劑,止痛藥,抗生素和免疫催化劑, 以及一套用於清理體內子彈和破片的工具, 這種醫療包主要發放給軍方人員, 如深入特異區的特種部隊, 同時還受到受到紀律團的歡迎\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••••• %c[pda_white]軀幹%c[d_orange]••••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	<string id="st_medkit_science">
+		<text>科研用急救包</text>
+	</string>
+	<string id="st_medkit_science_descr">
+		<text>和其他急救包不同的是, 這是專門為異常區工作的科研人員設計的急救包, 內含處理傷口的藥品, 和可以減少體內的輻射的藥物, 例如長春花片,防輻射藥和消炎藥\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••••••• %c[pda_white]軀幹%c[d_orange]••••••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		</text>
+	</string>
+	
+	<string id="st_glucose_s">
+		<text>小管葡萄糖針劑</text>
+	</string>
+	<string id="st_glucose_s_descr">
+		<text>葡萄糖針劑一般用於嚴重低血糖癥, 但也可以用作提神劑, 碳水化合物的瞬間誘導反應可以提供大量的能量, 從而增強使用者的身體機能, 攜帶很方便, 可以在戰鬥中使用, 打一針葡萄糖是在使用內服藥后消除頭暈的好辦法\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 普通頭暈去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_glucose">
+		<text>大管葡萄糖針劑</text>
+	</string>
+	<string id="st_glucose_descr">
+		<text>葡萄糖針劑一般用於嚴重低血糖癥, 但也可以用作提神劑, 碳水化合物的瞬間誘導反應可以提供大量的能量, 從而增強使用者的身體機能, 攜帶很方便, 可以在戰鬥中使用, 打一針葡萄糖是在使用內服藥后消除頭暈的好辦法\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 強力頭暈去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_stim_impro">
+		<text>簡易治療針</text>
+	</string>
+	<string id="st_stim_impro_descr">
+		<text>簡易醫療針在新手中很受歡迎, 因為它們容易獲得而且便宜,使用特異區內的常見原料生產, 但沒有適當的加工裝置, 也沒經過消毒, 這就是為何它有很多副作用的原因, 注射方式為大腿注射\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••• %c[pda_white]軀幹%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_stim_military">
+		<text>軍用治療針</text>
+	</string>
+	<string id="st_stim_military_descr">
+		<text>軍用醫療針是特異區中軍方的戰鬥部隊的常用裝備, 在市面上不難買到而且價格適中,深受特異區里老兵們的喜愛, 軍用醫療針比它的同類更強力, 起效更快, 很適合在緊急情況下使用, 原料從高密度的原生藥材中提純, 會對身體造成一定傷害, 也會一定程度增加飢餓感\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••• %c[pda_white]軀幹%c[d_orange]••••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]•• %c[pda_white]軀幹%c[0,255,255,255]•• %c[pda_white]手臂%c[0,255,255,255]• %c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_stim_scientic">
+		<text>科研用治療針</text>
+	</string>
+	<string id="st_stim_scientic_descr">
+		<text>和SEVA防護服的研發方相同 - 基輔防禦研究中心這種最先進的醫療針是特異區中最好的一種, 採用最優質的原料和全面的配方, 可以使你幾乎瞬間恢復元氣, 還能消除一定的輻射, 副作用被最小化, 極高的成本讓不少人望而卻步, 只有最富經驗的老練潛行者才會攜帶\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••••••• %c[pda_white]軀幹%c[d_orange]••••••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]•••• %c[pda_white]軀幹%c[0,255,255,255]•••• %c[pda_white]手臂%c[0,255,255,255]• %c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_sleepingpills">
+		<text>安眠藥</text>
+	</string>
+	<string id="st_sleepingpills_descr">
+		<text>一包小安眠藥, 幾乎會瞬間提升睏意, 這也有助於在一定時間內降低靈能對神經系統的傷害, 最好與水一起服用, 一次一片\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 提高靈能抵抗力, 降低特異區的恐怖對精神的影響\n
+		%c[d_green] • %c[ui_gray_2] 立即誘發睡意\n
+		</text>
+	</string>
+	
+	<string id="st_cocaine">
+		<text>古柯堿</text>
+	</string>
+	<string id="st_cocaine_descr">
+		<text>裝有古柯堿和吸食工具的小鋁盒, 古柯堿是一種強大的神經系統提神劑, 服用後會急劇增加大腦中的快感和警覺性, 同時會出現極端的易怒和偏執, 導致暴力情緒波動, 副作用包括食慾不振, 抵抗力低, 精神病等, 對於那些短命鬼和暴力狂來說, 這簡直不是事, 因為古柯堿給予了他們更強的快感和戰鬥力, 據傳, 土匪是特異區最大的古柯堿供應商, 而叛節者是他們的主要客戶\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 超強提神作用\n
+		%c[d_green] • %c[ui_gray_2] 超強頭暈去除效果\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••• %c[pda_white]軀幹%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_adrenalin">
+		<text>腎上腺素針劑</text>
+	</string>
+	<string id="st_adrenalin_descr">
+		<text>腎上腺素是一種激素和神經遞質, 在人體內有多種功能, 可以即時調節心率, 血管和氣管直徑, 以及代謝速率, 腎上腺素釋放會影響到交感神經系統或生物反應, 這些影響會導致血糖和脂肪酸的升高, 為體內細胞提供充足的能量需求\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 超強提神作用\n
+						
+		%c[d_green] • %c[ui_gray_2] 超強頭暈去除效果\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]••••••••••• %c[pda_white]軀幹%c[d_orange]••••••••••• %c[pda_white]手臂%c[d_orange]••••• %c[pda_white]腿部%c[d_orange]•••••\n
+		</text>
+	</string>
+	
+	<string id="st_morphine">
+		<text>嗎啡針劑</text>
+	</string>
+	<string id="st_morphine_descr">
+		<text>一種為軍方野戰人員設計的用於瞬間止痛的野戰裝備, 這隻注射瓶里裝有大劑量的嗎啡, 在臨床醫學中, 嗎啡被認為是阿片類鎮痛藥的最高標準, 常用於緩解極度疼痛, 與其他阿片類藥物,如羥考酮,氫嗎啡酮和二乙酰嗎啡一樣, 會直接作用於中樞神經系統以減輕疼痛, 需要注射到手臂或大腿上\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_purple] • %c[ui_gray_2] 提供極高的傷害抗性（15%）\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈 \n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]•••••••• %c[pda_white]軀幹%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		</text>
+	</string>
+	
+	<string id="st_salicidic_acid">
+		<text>安乃近針劑</text>
+	</string>
+	<string id="st_salicidic_acid_descr">
+		<text>一種為軍方野戰人員設計的用於瞬間止痛的野戰裝備, 用於快速減輕疼痛, 它混有大劑量的安乃近和一種止血藥, 安乃近是最強的消炎藥之一, 對止痛和退燒特別有效, 高劑量作為消炎藥使用時, 可能會引起白細胞和粒細胞減少的副作用, 需要注射到手臂或大腿上, 由於難以走私,該藥品在特異區的供應有限\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_purple] • %c[pda_white] 提供大量的傷害抗性（10%）\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]頭部%c[d_orange]•• %c[pda_white]軀幹%c[d_orange]•• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	
+	<string id="st_caffeine">
+		<text>咖啡因片</text>
+	</string>
+	<string id="st_caffeine_descr">
+		<text>咖啡因和苯甲酸鈉能使中樞神經在一定時間內處於最佳狀態, 一定程度上減少睏倦, 一次兩片\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 中等提神作用\n
+		%c[d_cyan] • %c[ui_gray_2] 中等頭暈消除效果\n
+		</text>
+	</string>
+	
+		<string id="st_antirad_cystamine">
+		<text>抗輻射針</text>
+	</string>
+	<string id="st_antirad_cystamine_descr">
+		<text>一種和消輻寧配合使用的藥物, 用來減弱輻射對身體的影響, 胱胺酸的抗輻射性是建立在結合自由基的能力基礎上的, 自由基是輻射時在組織中形成的電離和活性分子, 藥物與某些酶相互作用以增強對輻射抵抗的能力, 但不能消除已經在體內積累的輻射\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_antibio_sulfad">
+		<text>磺胺抗菌藥</text>
+	</string>
+	<string id="st_antibio_sulfad_descr">
+		<text>磺胺地索辛對革蘭氏陽性菌和革蘭氏陰性菌有效, 它可以對付肺炎球狀菌,鏈球菌,葡萄球菌,大腸桿菌,克雷伯氏桿菌(又稱弗里德蘭德氏桿菌)也就是痢疾的病原體, 對蛋白質活性相對較低, 對沙眼病毒有活性作用, 但不作用於對其他磺胺類藥物耐藥的細菌株, 不良反應包括頭痛,消化系統疾病,皮疹,發燒和白細胞減少, 藥效持久\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈 \n
+		%c[d_green] • %c[pda_white] 治癒%c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_antibio_chlor">
+		<text>金黴素</text>
+	</string>
+	<string id="st_antibio_chlor_descr">
+		<text>一種抗生素, 結晶性粉末,金黃色,味苦,溶於水, 這是(繼青黴素之後)第一批非處方抗生素之一, 金黴素對革蘭氏陽性和革蘭氏陰性細菌, 立克次體和一些大型病毒有抑菌作用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈 \n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]手臂%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_antiemetic">
+		<text>依託拉嗪鎮靜藥</text>
+	</string>
+	<string id="st_antiemetic_descr">
+		<text>膠囊藥劑含有4.6毫克和10毫克的奮乃靜, 它是一種精神病藥物, 具有抗過敏,鎮靜,放鬆,止吐,弱抗膽堿能,低血壓和降溫作用, 鹽酸依託拉嗪的療效基於D2受試體在皮中層和中邊緣系統的阻滯作用, 在特異區內很少使用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 提高靈能抵抗力, 降低特異區的恐怖對精神的影響\n
+		%c[d_green] • %c[ui_gray_2] 輕微頭暈消除效果\n
+		</text>
+	</string>
+	
+	<string id="st_joint">
+		<text>大麻捲煙</text>
+	</string>
+	<string id="st_joint_descr">
+		<text>因其放鬆效果而聞名, 常被潛行者用來消遣, 尤其是那些經常去雷達站或紅森林的人, 與酒精混合使用可產生舒緩效果, 副作用是會增強飢餓感\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 提高靈能抵抗力, 降低特異區的恐怖對精神的影響\n
+		%c[d_cyan] • %c[ui_gray_2] 輕度頭暈去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_rebirth">
+		<text>"重生"針劑</text>
+	</string>
+	<string id="st_rebirth_descr">
+		<text>警告! 不要與任何其他藥物混合使用, 否則可能致死\n
+		小小的注射器內含有大劑量的合成物, 可能會使你失去意識, 當你醒來時(如果你還能醒來的話)你會感到如重生一般, 注射方法為坐下後注入大腿\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 導致極度頭暈 \n
+		%c[d_green] • %c[pda_white] 急救 %c[d_orange]全身 \n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]•••••••• %c[pda_white]軀幹%c[0,255,255,255]•••••••• %c[pda_white]手臂%c[0,255,255,255]••••• %c[pda_white]腿部%c[0,255,255,255]•••••\n
+		</text>
+	</string>
+	
+	<string id="st_tetanus">
+		<text>芬太尼</text>
+	</string>
+	<string id="st_tetanus_descr">
+		<text>芬太尼是一種強大的阿片類藥物, 用作止痛藥, 有時與古柯堿或甲基苯丙胺混合使用, 納洛酮可以中和其潛在的致命過量效應, 芬太尼主要通過啟用α-阿片受體起作用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 引起輕微的頭暈\n
+		%c[d_green] • %c[pda_white] 治癒 %c[pda_white]頭部%c[0,255,255,255]••• %c[pda_white]軀幹%c[0,255,255,255]••• %c[pda_white]手臂%c[0,255,255,255]••• %c[pda_white]腿部%c[0,255,255,255]•••\n
+		</text>
+	</string>
+	
+	<string id="st_antirad_kalium">
+		<text>碘化鉀片</text>
+	</string>
+	<string id="st_antirad_kalium_descr">
+		<text>一種藥理學化合物, 作為特異區內的廉價抗輻射藥物, 會引起很多副作用, 例如胃水腫, 疼痛麻木和甲狀腺功能紊亂\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_marijuana">
+		<text>一包大麻</text>
+	</string>
+	<string id="st_marijuana_descr">
+		<text>抽大麻在特異區是一種很受歡迎的消遣方式, 特別是在死亡屏障駐防的自由軍成員之間, 在特異區到處都可以買到大麻, 有些人認為吸食大麻有助於保持心靈的平靜, 但也有人認為這屬於慢性自殺\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_green] • %c[ui_gray_2] 提高靈能抵抗力, 降低特異區的恐怖對精神的影響\n
+		%c[d_green] • %c[ui_gray_2] 強效去眩暈效果\n
+		</text>
+	</string>
+	
+</string_table>

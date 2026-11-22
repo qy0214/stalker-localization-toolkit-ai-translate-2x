@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< QUEST ITEMS TEXT  STRINGS
+<	CoC 1.4.07 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 06, 2016
+<
+<===========================================================-->
+<string_table>
+
+	<!-- DRX Storyline Documents Quest Item -->
+	<string id="drx_sl_quest_item_1_name">
+		<text>文件</text>
+	</string>
+	<string id="drx_sl_quest_item_1_desc">
+		<text>高级加密的文档. 尽管介绍页面看起来是可能的, 但大部分内容都超出了个人的破解能力. 当然, 这样做超出了个人职责范围... 我们的工作只是把这些笔记交上来, 而不是破译着玩.(以下内容汉化者已破译, 原文英文为凯撒加密向右位移16次)\n"特异区 - 能量风暴在变异生物繁殖中产生的作用\n作者 A.B.斯特鲁加茨基(现实中他是潜行者电影的编剧)\n摘要\n正如赫曼教授所证明的那样, 我们都知道能量风暴可以产生神器和异常点, 而萨哈洛夫教授已经证明, 能量风暴可以使生物僵尸化. 但是能量风暴对人类尸体有什么影响呢?\n \n我们将潜行者的尸体放在能量风暴开始的室外从而得到了结果. 经在多次测试, 我们得到了人形变异生物比如传说中的史诺克和吸血怪.\n \n我们发现, 当能量风暴与一具骷髅尸体接触时, 有机会创造出一个"倒模moulage" - 一个由异常现象制成的活的肉体模型, 使尸体复活. 倒模可以变成史诺克, 吸血怪, 僵尸以及看似正常的人类, 并且在任何情况下都可以通过其面如死灰的脸与活着的同类区分开来. 与正常人类最相似的倒模表现出交流的能力, 但需要镇静剂, 因为他们无一例外地表现出极端的偏执, 妄想, 或渴望逃到未知的地方.\n \n结论: 已经获得了对单性史诺克群体中如何繁殖的潜在解释. 此外, 现在对采取适当的丧葬习俗有了一个科学的理由, 以避免产生喂养变异生物的危险\nmm -2018"</text>
+	</string>
+
+	<!-- DRX Storyline Locked Case Quest Item -->
+	<string id="drx_sl_quest_item_2_name">
+		<text>锁住的箱子</text>
+	</string>
+	<string id="drx_sl_quest_item_2_desc">
+		<text>一个锁着的箱子. 不知道里面装的什么, 但是很重. 希望里面的东西最好值得你带着它到处跑.</text>
+	</string>
+
+	<!-- DRX Storyline PDA Quest Item -->
+	<string id="drx_sl_quest_item_3_name">
+		<text>加密PDA</text>
+	</string>
+	<string id="drx_sl_quest_item_3_desc">
+		<text>一台加密的PDA. 有人承诺过如果你将这东西带给他的话会获得回报.</text>
+	</string>
+
+	<string id="bad_psy_helmet_desc">
+		<text>由生态学家开发的一种保护人类免受灵能场影响的原型设备. 需要校准.</text>
+	</string>
+	<string id="bad_psy_helmet_name">
+		<text>未校准的抗灵头盔</text>
+	</string>
+
+	<string id="good_psy_helmet_desc">
+		<text>由生态学家开发的一种保护人类免受灵能场影响的原型设备.</text>
+	</string>
+	<string id="good_psy_helmet_name">
+		<text>抗灵头盔</text>
+	</string>
+
+	<string id="cit_doctors_key_short_desc">
+		<text>沼泽巫医在普里皮亚奇的秘密藏匿物的钥匙.</text>
+	</string>
+	<string id="cit_doctors_key_name">
+		<text>沼泽巫医的钥匙</text>
+	</string>
+	<string id="cit_doctors_key_desc">
+		<text>一把在侧面刻有"波利西亚酒店 - 26号房间"的钥匙.</text>
+	</string>
+
+	<string id="item_docs_hiden_pri_name">
+		<text>史特洛克的手稿</text>
+	</string>
+	<string id="item_docs_hiden_pri_desc">
+		<text>用皮革装订的旧手稿, 史特洛克亲手写的.\n从标题来看它可能解释了一些特异区的秘密.</text>
+	</string>
+
+	<string id="cit_doctors_pda_name">
+		<text>沼泽巫医的笔记</text>
+	</string>
+	<string id="cit_doctors_pda_desc">
+		<text>关于一些旧阴谋论的笔记.\n\n有传闻说, 在2006年发生事故前的几年里, 农业研究所曾作为非政府控制的秘密实验室. 这个实验室主导了许多非比寻常的实验. 交易商们挖掘了许多关于这些实验室的情报. 我见到了酒保, 他说他派了几个纪律团侦察员去了黑谷地下一个叫X-18的地下实验室, 但是他们消失了. 还有另一个关于"灵体大脑"机器的传言. 扬塔整个地区都受到了那东西的影响: 它把范围内的所有活人都变成了僵尸. 而在红森林雷达站的地下叫做X19实验室的地方还有一个装置, 这很可能就是"焦脑器". 有证据表明, "焦脑器"的存在是为了阻挡了通往北方的道路, 但是没人确切的知道它的本质是什么. 酒保认为, "焦脑器"是人为的, 这些装置并没有一直完全发挥作用. 他觉得有一段时间它们的功率变小了, 应该是装置冷却的原因. 现在去探索特异区所有的地下实验室还不迟, 应该去找出他们隐藏着什么样的秘密. 太可惜了, 我太老了, 已经不适合做这样的事情了. 我真希望史特洛克还在, 但是该死的, 他失踪好几年了.</text>
+	</string>
+
+	<string id="item_decoder_desc">
+		<text>一个强大的电子解码器. 奇怪的是, 它似乎并不是万用的盗窃工具. 相反它似乎是为了开启某个特定的装置而生的. 并不能用到任何别的密码锁上.</text>
+	</string>
+	<string id="item_decoder_name">
+		<text>解码器</text>
+	</string>
+
+	<string id="pri_decoder_docs_conclusion_txt">
+		<text>这份手稿包含了一份简短的报告, 内容是方和史特洛克如何潜入一个隐秘的实验室, 以及他们在里面的旅程. 它提到了切尔诺贝利核电站内部和周围存在着大量的黑石. 更具体的说, 在石棺下面也许就是他们的老巢. 他们试图隐藏着什么东西. 继续读下去后, 你发现他们注意到风暴引擎北面有个地下实验室, 可是由于需要解码器才能进入, 所以他们在写报告的时候还无法进去.</text>
+	</string>
+
+	<string id="item_quest_case_02_desc">
+		<text>一个防火公文包, 里面有军方文件和在农业研究所附近调查的报告. 这些报告详细描述了研究所里的机械和设备是如何失踪的, 还说明了对其下落的调查结果是明显伪造的.</text>
+	</string>
+	<string id="item_quest_case_02_name">
+		<text>军方文件</text>
+	</string>
+
+	<string id="item_doc_x18_name">
+		<text>生物学研究报告</text>
+	</string>
+	<string id="item_doc_x18_desc">
+		<text>这份报告详细介绍了从X-18实验室里发来的生物样本的研究情况. 该报告细致地描述了暴露于能量风暴后生物的突变.</text>
+	</string>
+
+	<string id="item_doc_x16_desc">
+		<text>这份报告提到了生物研究的另外发现, 特别是指生物能产生定向灵能场的发现. 并把X16实验室作为这项重大发现的实验场地, "神迹装置"的本质其实是一个巨大的大脑.</text>
+	</string>
+	<string id="item_doc_x16_name">
+		<text>灵体波研究文件</text>
+	</string>
+
+	<string id="item_doc_x10_desc">
+		<text>这些文件描写了雷达站的技术特性以及与他们计划设计的偏差. 背面有一张便条, 表明这些文件是为X19实验室准备的.</text>
+	</string>
+	<string id="item_doc_x10_name">
+		<text>彩虹发射器资料</text>
+	</string>
+
+	<string id="item_doc_x8_desc">
+		<text>该文件提到研究小组和所有资料将会转移到北方很远的另一个实验室里, 该实验室将用于研究"念域"的有关影响. 要进入实验室, 请使用核事故日期作为密码(ddmmyyyy).\n \n研究团队包括: N.A.列别捷夫, E.F.卡兰查和V.I.苏斯洛夫.</text>
+	</string>
+	<string id="item_doc_x8_name">
+		<text>转移命令</text>
+	</string>
+
+	<string id="item_doc_jup_ug_desc">
+		<text>这本笔记内容详细描述了一个评估灵能场对"念域"影响的实验. 加勒比海的一组生态学家收到了这个信号, 但是它被扭曲了. 信号以一种奇怪的方式改变了, 好像被某人纠正了一样. 一个可能的解释是, "念域"的理论是正确的, 这些变化正是"念域"的所作所为</text>
+	</string>
+	<string id="item_doc_jup_ug_name">
+		<text>实验笔记本</text>
+	</string>
+
+	<string id="item_doc_mon_con_name">
+		<text>原型武器报告</text>
+	</string>
+	<string id="item_doc_mon_con_name_desc">
+		<text>文件描述了先进电磁武器的工作原理和其主要技术特性.\n文件里面有张纸条. \n上面写着: "文件必须交回到X8中央实验室. 我很忙, 所以你自己去送吧". - N.A.列别捷夫"</text>
+	</string>
+
+	<string id="quest_package_name">
+		<text>包裹</text>
+	</string>
+	<string id="quest_package_desc">
+		<text>包裹里装的不知道是什么.\n \n
+		</text>
+	</string>
+	
+	<string id="st_jup_b32_scanner_device_name">
+		<text>异常点活动扫描器</text>
+	</string>
+	<string id="st_jup_b32_scanner_device_desc">
+		<text>这个设备由一个神器探测器, 一块电池和一个强大的无线电信号发射机组成. 设备会扫描异常点情况, 并确定出现的神器的数量和类型. 这些信息将会自动传输到移动科研地堡.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+
+	<!-- MLR -->
+	<string id="mlr_strelok_item_01">
+		<text>旧笔记本</text>
+	</string>
+	<string id="mlr_strelok_item_01_desc">
+		<text>一个笔记本, 感觉像是属于史特洛克的. 它详细描述了如何进入一个叫做X-18的地下设施.</text>
+	</string>
+	
+	<string id="blackbox_mlr">
+		<text>飞行记录器</text>
+	</string>
+	<string id="blackbox_mlr_descr">
+		<text>一个飞行记录器, 或者说叫"黑匣子". 飞行记录器用于记录内部系统和机组人员的对话,并在发生事故时提供重要信息. 在特异区, 潜行者和军队都对这些装置很感兴趣.</text>
+	</string>
+	
+	<string id="item_pda_map_mlr_name">
+		<text>信息PDA</text>
+	</string>
+	<string id="item_pda_map_mlr_descr">
+		<text>一个包含着通往不同区域路线情报的PDA.</text>
+	</string>
+	
+	
+	<!-- DRX -->
+	<string id="drx_x8_documents_name">
+		<text>天线安装文件</text>
+	</string>
+	<string id="drx_x8_documents_desc">
+		<text>这篇文件似乎提到了一个巨大的雷达装置. 很有可能就是雷达站"焦脑器"的结构和操作系统.</text>
+	</string>
+	
+	<string id="drx_x16_documents_name">
+		<text>生物学研究</text>
+	</string>
+	<string id="drx_x16_documents_desc">
+		<text>一些老旧的纸张上记录了在老鼠和其他动物身上做的实验.</text>
+	</string>
+	
+	<string id="drx_x18_documents_name">
+		<text>实验报告: B0-D4</text>
+	</string>
+	<string id="drx_x18_documents_desc">
+		<text>旧文件里面写着关于灵能场共振与发射的实验.</text>
+	</string>
+	
+	<string id="drx_x19_documents_name">
+		<text>通讯日志 / 21.03.2006</text>
+	</string>
+	<string id="drx_x19_documents_desc">
+		<text>研究所的生态学家小组之间无线电对话的打印副本.</text>
+	</string>
+	
+	<string id="drx_agr_u_documents_name">
+		<text>农业研究所文件</text>
+	</string>
+	<string id="drx_agr_u_documents_desc">
+		<text>一大堆关于农业研究所的笔记和图片, 还有一张标记过的地图.可能是史特洛克的东西.</text>
+	</string>
+	
+	<string id="drx_jup_u_documents_name">
+		<text>运输记录</text>
+	</string>
+	<string id="drx_jup_u_documents_desc">
+		<text>这些旧文件里包含了将机械设备和工具运往木星工厂的记录.还包括了东部隧道的设计图.</text>
+	</string>
+	
+	<string id="lx8_history_documents_name">
+		<text>实验 (11.04.2005)</text>
+	</string>
+	<string id="lx8_history_documents_desc">
+		<text>这份日志记录了好几年前的新型"神迹装置"的实验结果.</text>
+	</string>
+	<string id="lx8_history_2_documents_name">
+		<text>实验 (24.09.2005)</text>
+	</string>
+	<string id="lx8_history_2_documents_desc">
+		<text>这份日志记录了好几年前关于生物波应用的实验结果.</text>
+	</string>
+	<string id="lx8_history_3_documents_name">
+		<text>实验 (02.05.2006)</text>
+	</string>
+	<string id="lx8_history_3_documents_desc">
+		<text>这份日志记录了一次生物学实验的实验结果.</text>
+	</string>
+</string_table>

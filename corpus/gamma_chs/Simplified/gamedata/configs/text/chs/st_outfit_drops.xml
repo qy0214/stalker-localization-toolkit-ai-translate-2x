@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    
+	<string id="ui_mcm_outfitdrop_helmet_light_chance">
+		<text>轻型头盔掉落概率</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_light_chance_desc">
+		<text>有一定几率从死去的潜行者身上掠夺到头巾和布面罩</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_medium_chance">
+		<text>中型头盔掉落概率</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_medium_chance_desc">
+		<text>有一定的概率从死去的潜行者身上掠夺到一件中型头盔</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_heavy_chance">
+		<text>重型头盔掉落概率</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_heavy_chance_desc">
+		<text>有一定的概率从死去的潜行者身上掠夺到一件重型头盔</text>
+	</string>
+		<string id="ui_mcm_outfitdrop_helmet_exo_chance">
+		<text>外骨骼头盔掉落概率</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_helmet_exo_chance_desc">
+		<text>有一定的概率从死去的潜行者身上掠夺到一件外骨骼头盔</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_light_chance">
+		<text>轻型装备掉落机会</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_light_chance_desc">
+		<text>有一定的概率从死去的潜行者身上掠夺到一件轻质装备</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_medium_chance">
+		<text>中等装备掉落的机会</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_medium_chance_desc">
+		<text>有一定概率从死去的潜行者身上掠夺到中等装备</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_heavy_chance">
+		<text>重型装备掉落机会</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_heavy_chance_desc">
+		<text>有一定概率从死亡的潜行者身上掠夺重装</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_exo_chance">
+		<text>外骨骼掉落机会</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_outfit_exo_chance_desc">
+		<text>有一定概率从死掉的潜行者身上的外骨骼</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_parts_chance">
+		<text>零件掉落的概率</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_parts_chance_desc">
+		<text>当不掉落服装时,找到零件的概率.</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_debug">
+		<text>调试显示</text>
+	</string>
+	<string id="ui_mcm_outfitdrop_parts_debug_desc">
+		<text>你现在知道这有什么作用了.</text>
+	</string>
+	<string id="ui_mcm_menu_outfitdrop">
+		<text>装备掉率设置</text>
+	</string>
+</string_table>

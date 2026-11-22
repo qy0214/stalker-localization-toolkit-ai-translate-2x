@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_placeable_gas_lamp">
+		<text>煤油燈</text>
+	</string>
+	<string id="st_placeable_gas_lamp_descr">
+		<text>點燃澆有煤油的燈芯來發光, 煤油燈是一種罕見的光源, 因為特異區幾乎已經沒有了載具, 剩下的煤油也難以運輸, 這種燃料多數會作為其他用途如烹飪食物, 這個煤油燈經過多年使用已磨損嚴重, 玻璃燈罩也不見了\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 煤油</text>
+	</string>
+
+	<string id="st_placeable_metal_torch">
+		<text>老式金屬提燈</text>
+	</string>
+	<string id="st_placeable_metal_torch_descr">
+		<text>蘇聯時代的提燈, 這種擁有笨重金屬外殼的提燈提高了電池的使用效率, 用來照亮藏身處很好用,雖然只能發出錐型光來照亮一小片區域, 不過有經驗的潛行者卻能利用這個特點, 在索敵的同時隱藏自己\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 電池\n\n</text>
+	</string>
+
+	<string id="st_placeable_light_altar">
+		<text>緊湊型靈能燈</text>
+	</string>
+	<string id="st_placeable_light_altar_descr">
+		<text>不知何人由於何種目的發明的物品, 曾用來製造致命的靈能場, 許多去北部探險的潛行者就是被它的死亡之光奪去了生命, 後來薩哈洛夫教授使用神器"月光石"對它進行了改造, 使它成為一個能夠用持續光源來鼓舞人心的工具\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 可放置\n
+		%c[d_blue] • %c[ui_gray_2] 低功耗\n
+		%c[d_blue] • %c[ui_gray_2] 內有月光石神器\n
+		%c[d_blue] • %c[ui_gray_2] 需要: 高斯槍電池\n</text>
+	</string>
+
+	<string id="st_placeable_case">
+		<text>槍箱</text>
+	</string>
+	<string id="st_placeable_case_descr">
+		<text>一個空的槍箱, 比普通揹包容量大, 但也更重\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 中等容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_blue_box">
+		<text>大金屬箱</text>
+	</string>
+	<string id="st_placeable_blue_box_descr">
+		<text>一個專門用於存放物品的大箱子, 有著很大的容量, 但同時由於實在過於笨重難以攜帶 \n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 高容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_exo_kit">
+		<text>空的外骨骼修理箱</text>
+	</string>
+	<string id="st_placeable_exo_kit_descr">
+		<text>一個空無一物的金屬箱子, 應該是某個潛行者在修完外骨骼后丟棄的, 這種箱子很適合用來存放物品 \n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 中等容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_sumka6">
+		<text>小揹包</text>
+	</string>
+	<string id="st_placeable_sumka6_descr">
+		<text>用小片的布料縫製而成的簡單包裹, 藏身處里好像用處不大, 但在野外緊急的時候可以很方便的藏點東西進去\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 低容量\n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n</text>
+	</string>
+
+	<string id="st_placeable_workshop">
+		<text>攜帶型工作臺</text>
+	</string>
+	<string id="st_placeable_workshop_descr">
+		<text>可以隨時隨地佈置的摺疊桌子, 提供了各種工具並整合了儲藏空間, 能當作工作臺來使用, 潛行者們在野外都是用工具箱來進行製作, 這種功能性傢俱一般會放在藏身處\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 底部自帶整合儲物箱\n
+		%c[d_orange] • %c[ui_gray_2] 和工具箱作用相同\n</text>
+	</string>
+
+	<string id="st_placeable_radio">
+		<text>收音機</text>
+	</string>
+	<string id="st_placeable_radio_descr">
+		<text>一臺還能勉強使用的收音機, 好訊息是它能收到特異區的音樂臺, 壞訊息是調頻旋鈕似乎壞了\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+		%c[d_cyan] • %c[ui_gray_2] 可放置\n
+		</text>
+	</string>
+
+	<string id="st_placeable_piano">
+		<text>攜帶型電子琴</text>
+	</string>
+	<string id="st_placeable_piano_descr">
+		<text>特異區內罕見的豪華音響系統, 可以讓你在一天特異區的緊張生活后回到基地放鬆一下\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 可放置\n
+		%c[d_orange] • %c[ui_gray_2] 可演奏\n</text>
+	</string>
+
+
+    <string id="st_place_furniture">
+		<text>放置</text>
+	</string>
+</string_table>

@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="mortal_sin_start_text_0">
+		<text>最近人们一直在谈论不知从哪来的"黑暗潜行者", 这个人一直在到处讲特异区如何如何, 就跟传教一样, 邪门的很, 你听说过他吗?</text>
+	</string>
+
+	<string id="voronin_mortal_sin_0">
+		<text>有新命令吗, 将军?</text>
+	</string>
+	<string id="voronin_mortal_sin_1">
+		<text>你是个很有积极性的士兵, 我很中意你这一点... 你知道, 那个100辐射酒吧一直因为鱼龙混杂的顾客而臭名远扬, 但现在来了个新家伙, 而且他还在制造麻烦, 虽然到现在为止还没有什么暴力事件, 不过听说他一直积极地宣传特异区的"伟大"之处, 他也许觉得离我们的基地远远的就没人管他, 大错特错! 找到他, 假装对他的胡言乱语感兴趣, 尽可能套他的话, 直到把一切搞清楚为止, 至于怎么处理他就随你便, 即使你想采取极端手段, 我也会为你授权</text>
+	</string>
+	<string id="voronin_mortal_sin_2">
+		<text>明白, 在这里竟然会有崇拜"特异区"的狂热者, 我们纪律团绝对不能坐视不管!</text>
+	</string>
+	<string id="voronin_mortal_sin_21">
+		<text>将军, 我可能需要时间来准备一下这个审讯工作</text>
+	</string>
+	<string id="voronin_mortal_sin_3">
+		<text>很高兴你能这么说</text>
+	</string>
+	
+	<string id="voronin_mortal_sin_envoy_0">
+		<text>将军, 任务完成了</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_1">
+		<text>我接到报告了, 你放过了那个"特异区"狂热者, 为什么?</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_11">
+		<text>我接到报告了, 你处决了那个"特异区"狂热者, 很好, 他死之前说了什么?</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_2">
+		<text>因为留着活口对我们来说也许更有价值, 他自称是一个叫做"原罪"阵营的代言人, 他还说原罪是特异区真正的守护者, 他们正在招募其他人加入他们的行列, 为一次大规模的行动做准备</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_21">
+		<text>他自称是一个叫做"原罪"阵营的代言人, 他还说原罪是特异区真正的守护者, 他们正在招募其他人加入他们的行列, 为一次大规模的行动做准备</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_3">
+		<text>嗯...你做的很好, 但我有种不好的预感, 因为最近有人向我报告, 说与一个未知的阵营发生了冲突, 他们充满敌意, 会不分青红皂白就攻击其他潜行者, 最近的一次报告来自红森林, 我要你去找守林人列斯尼克, 如果说有谁比任何人都了解红森林的话, 非他莫属, 然后根据情势评估威胁, 确认一下那些袭击者是不是就是这个"原罪"组织的成员...
+		\n至于这里的这位不速之客嘛, 我会好好安排"住宿"的</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_31">
+		<text>嗯...你做的很好, 但我有种不好的预感, 因为最近有人向我报告, 说与一个未知的阵营发生了冲突, 他们充满敌意, 会不分青红皂白就攻击其他潜行者, 最近的一次报告来自红森林, 我要你去找守林人列斯尼克, 如果说有谁比任何人都了解红森林的话, 非他莫属, 然后根据情势评估威胁, 确认一下那些袭击者是不是就是这个"原罪"组织的成员...</text>
+	</string>
+	<string id="voronin_mortal_sin_envoy_4">
+		<text>明白, 长官!</text>
+	</string>
+	
+	<string id="voronin_mortal_sin_report_0">
+		<text>将军, 我已经调查清楚了红森林的具体情势</text>
+	</string>
+	<string id="voronin_mortal_sin_report_1">
+		<text>非常好! 你发现了什么?</text>
+	</string>
+	<string id="voronin_mortal_sin_report_2">
+		<text>原罪组织正在追杀史特洛克的同伴 -- "缝合者", 而我截下并消灭了这支追击小队, 还跟他碰了面, 他确信原罪准备对特异区南部发动大规模袭击, 还有这个, 你看... 这是我从那支小队的队长尸体上发现的PDA, 你应该会想看看</text>
+	</string>
+	<string id="voronin_mortal_sin_report_3">
+		<text>这个情况确实很严峻, 真是邪门, 信仰特异区的邪教怎么刚消灭一个, 就又跑出来一个? 我们也许应该... 等等... 喂? 什么? 我们正遭受攻击? 见鬼! 坚持住!  ...你有正事要做了! 它们正在攻打罗斯托克西门! 开始战斗!</text>
+	</string>
+	<string id="voronin_mortal_sin_report_4">
+		<text>收到!</text>
+	</string>
+	
+	<string id="voronin_mortal_sin_ambush_0">
+		<text>我们击退了敌人, 将军</text>
+	</string>
+	<string id="voronin_mortal_sin_ambush_1">
+		<text>干得好! 原罪组织做了一个愚蠢的决定, 居然胆敢来攻击我们? 我要让他们知道这样做的后果! 我刚拿到一个报告, 他们的部队现在正在接近那两个灵能场发生器, 我估计是想重启它们, 这简直是要在我头上动土! 我们必须竭尽全力阻止他们, 并击溃他们的防线!</text>
+	</string>
+	<string id="voronin_mortal_sin_ambush_2">
+		<text>将军, 您想让我防守哪个设施?</text>
+	</string>
+	<string id="voronin_mortal_sin_ambush_3">
+		<text>我相信你的经验, 你来选! 至于另一个, 我会亲自组织一支部队去处理! 但是要尽快, 留给我们行动的时间不多了!</text>
+	</string>
+	<string id="voronin_mortal_sin_ambush_4">
+		<text>我去防守X-16实验室的"神迹装置", 生态学家们更需要我的帮助!</text>
+	</string>
+	<string id="voronin_mortal_sin_ambush_41">
+		<text>我去防守雷达站X19实验室的"焦脑器", 那个地方易守难攻, 绝不能让敌人占领它!</text>
+	</string>
+	
+	<string id="voronin_mortal_sin_zone_hero_0">
+		<text>敌军的将领已经死了, 他们的部队也被消灭了, 危机解除, 将军!</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_1">
+		<text>好极了, 我为你感到骄傲! 你就是纪律团的榜样! 尽管特异区还在, 但起码它被控制住了, 我们又一次保证了外部世界的安全!</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_2">
+		<text>史特洛克和他的同伴们提供了很大的帮助, 当然, 我们自己的士兵也非常英勇</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_3">
+		<text>这就对了! 在盟友的帮助下, 纪律团再次成功履行了保护群众的承诺... 对了, 说到盟友, 有个曾是战俘的家伙刚刚来这儿突然问起了你, 有空的话就去联系他一下</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_31">
+		<text>这就对了! 在盟友的帮助下, 纪律团再次成功履行了保护群众的承诺</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_4">
+		<text>还有进一步的命令吗, 将军?</text>
+	</string>
+	<string id="voronin_mortal_sin_zone_hero_5">
+		<text>没了, 去忙你的吧, 解散!</text>
+	</string>
+	
+	<string id="dushman_mortal_sin_0">
+		<text>我说啊, 达什曼, 这几天基地里的气氛不太对劲啊, 出了什么事吗?</text>
+	</string>
+	<string id="dushman_mortal_sin_1">
+		<text>既然你提到的话... 我确实有些奇怪的事需要你处理一下, 就在几天前, 有个装神弄鬼的家伙在我们这个破地方扎营, 他没有表现出敌意, 所以我们暂时没去管他, 只是留了人严密监视, 以防万一... 但最近他开始一直缠着我们的弟兄们, 还不停的聊一些关于宗教的狗屁故事, 什么救赎啊, 诅咒啊, 净化啊这些乱七八糟的, 弟兄们现在开始认为他是一个伪装成正常人的黑石, 这就有点越界了, 所以你去和他聊聊天, 拉拉家常, 找出他这么做的真实原因, 然后再把他"处理"掉...</text>
+	</string>
+	<string id="dushman_mortal_sin_2">
+		<text>好, 好, 我会调查的, 又是这档烂摊子, 我猜这又是哪个家伙的屁股需要我来擦了吧?</text>
+	</string>
+	<string id="dushman_mortal_sin_21">
+		<text>不着急, 等我准备好了再说</text>
+	</string>
+	<string id="dushman_mortal_sin_3">
+		<text>擦就擦吧, 不然呢? 你不是一直很专业的吗? 这有什么的... 快去吧!</text>
+	</string>
+	
+	<string id="dushman_mortal_sin_envoy_0">
+		<text>我和那个神神叨叨的家伙聊了聊</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_1">
+		<text>就聊了聊? 没有使用什么工具和药物之类的...?</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_11">
+		<text>嗯, 而且还把人聊死了, 其实我倒是不介意啦, 弟兄们早就都受不了那个蠢货的纠缠了... 我只想知道他死之前说了什么?</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_2">
+		<text>没有, 我不想招来不必要的麻烦和报复, 他是个间谍, 属于一个叫"原罪"的秘密阵营, 他们觉得自己比任何人都了解特异区, 并且还要接管世界什么的... 至于他目前的任务, 则是到处吸收新人加入他们的阵营</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_21">
+		<text>他是个间谍, 属于一个叫"原罪"的秘密阵营, 他们觉得自己比任何人都了解特异区, 并且还要接管世界什么的... 至于他目前的任务, 则是到处吸收新人加入他们的阵营</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_3">
+		<text>"原罪"? 我想起来了... 其实之前就有一些佣兵向我汇报, 说他们遇到一个神秘阵营, 他们见人就打, 打完就跑, 那么, 接下来就由我来"照料"这位尊贵的客人好了, 与此同时, 你得去调查一下红森林的情况, 我的眼线告诉我那边有更多这类神秘的潜行者, 也许就是来自你刚刚听说的"原罪"... 去吧! 去找守林人列斯尼克, 他无所不知</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_31">
+		<text>"原罪"? 我想起来了... 其实之前就有一些佣兵向我汇报, 说他们遇到一个神秘阵营, 他们见人就打, 打完就跑, 那么, 由于你帮我料理了这位尊贵的客人, 收尸的工作就交给我好了, 与此同时, 你得去调查一下红森林的情况, 我的眼线告诉我那边有更多这类神秘的潜行者, 也许就是来自你刚刚听说的"原罪"... 去吧! 去找守林人列斯尼克, 他无所不知</text>
+	</string>
+	<string id="dushman_mortal_sin_envoy_4">
+		<text>...刀口舔血的日子什么时候才是个头? 好吧, 我去就是了</text>
+	</string>
+	
+	<string id="dushman_mortal_sin_report_0">
+		<text>我去过红森林了, 达什曼</text>
+	</string>
+	<string id="dushman_mortal_sin_report_1">
+		<text>并且找到了有价值的情报, 对吧?</text>
+	</string>
+	<string id="dushman_mortal_sin_report_2">
+		<text>那是自然, "原罪"其实在追杀史特洛克的一个同伴 -- 就上次我出任务时碰到的那家伙, 我消灭了追杀小队, 然后找到了这个人, 他说"原罪"一直在准备对南部地区发动大规模袭击, 这件事应该是真的, 因为史特洛克的老朋友们都是可靠的家伙, 并且到目前为止所有事实都符合他的推测, 给你这个, 这是原罪那支追杀小队队长的PDA, 你对这个肯定感兴趣</text>
+	</string>
+	<string id="dushman_mortal_sin_report_3">
+		<text>该死! 就算是黑石, 也不会动不动就搞什么大规模袭击, 现在倒好, 黑石灭绝了, 结果又来了一群宗教狂徒! 阵营直接对抗是我最讨厌的事情之一, 但我还是需要了解更多状况, 至少能在这里做些什么, 好吧, 那么我们...等下! 这是什么声音? 操! 我们正在遭受攻击! 快去对付敌人, 我会在这里部署一道防线!</text>
+	</string>
+	<string id="dushman_mortal_sin_report_4">
+		<text>操! 我这就去!</text>
+	</string>
+	
+	<string id="dushman_mortal_sin_ambush_0">
+		<text>我好好的教训了他们一顿</text>
+	</string>
+	<string id="dushman_mortal_sin_ambush_1">
+		<text>干得不错.你的确为自己赢得了应有的声誉.不过,我们不能让那些混蛋为所欲为.我们的斥候向我汇报说这次袭击是为了转移注意力."原罪"的主要力量绕开了我们,正如我所想的那样,他们正在前往扬塔和雷达站,目标是"焦脑器"和"神迹装置".他们可能想重启那些能发出灵能场的机器并且将其当作防御设施.我们当然不会让这种事发生.</text>
+	</string>
+	<string id="dushman_mortal_sin_ambush_2">
+		<text>让我杀多少"原罪"的狂热分子都行,可我只有一个人.</text>
+	</string>
+	<string id="dushman_mortal_sin_ambush_3">
+		<text>你一个人足够了.我会派遣一支特战小队去防守其中一个设施,你可以先选择你要防守哪个.你最好快点,时间很紧.</text>
+	</string>
+	<string id="dushman_mortal_sin_ambush_4">
+		<text>我去防守扬塔"神迹装置".它离这儿很近,所以也许我能顺带着肃清了周边地区.</text>
+	</string>
+	<string id="dushman_mortal_sin_ambush_41">
+		<text>我去防守雷达站的"焦脑器".我们不能让敌人重新得到一个如此易守难攻的据点.</text>
+	</string>
+	
+	<string id="dushman_mortal_sin_zone_hero_0">
+		<text>我把所有来犯的"原罪"下属部队都送上了西天.他们再也不会试着接管这个世界了.</text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_1">
+		<text>这才是我所见过的最称得上"一夫当关,万夫莫敌"的人.干得好,雇佣兵! </text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_2">
+		<text>好吧,我确实从史特洛克和他的同伴那里得到了一些帮助. </text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_3">
+		<text>的确如此,但是你是唯一一个事后得到报酬的人.我们可以不受任何干扰的继续我们的常规行动了.这绝对是值得令人期待的事.顺便说一下,史特洛克的小队遣送了一名战俘给我.他在找你,而且就在这附近.也许你应该去跟他谈谈.</text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_31">
+		<text>的确如此,但是你是唯一一个事后得到报酬的人.我们可以不受任何干扰的继续我们的常规行动了.这绝对是值得令人期待的事.</text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_4">
+		<text>有什么新发现吗?</text>
+	</string>
+	<string id="dushman_mortal_sin_zone_hero_5">
+		<text>没有.还是那些常规标准的合同.你知道的,享受日常生活.</text>
+	</string>
+	
+	<string id="sidorovich_mortal_sin_0">
+		<text>嗨,西多洛维奇.有什么特殊任务指派给我吗? </text>
+	</string>
+	<string id="sidorovich_mortal_sin_1">
+		<text>让我看看啊...嗯...有.不太确定这个任务是不是就是你脑海里想要的那个,但是有个疯子一直在菜鸟村附近瞎晃悠.他凭空出现,然后开始纠缠篝火边的潜行者,说着一些关于宗教的,关于特异区的伟大之处的胡话.他还希望人们加入他的这个不知道究竟是什么的组织.大多数潜行者都叫他滚开,但有些人确实接受了他的提议.我可不想再有新人再成为某种教派的成员,消失的无影无踪.所以,为什么不让你去解决那个家伙呢?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_2">
+		<text>在我料理他之前,该先问他几个问题吗?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_21">
+		<text>听起来不是个大问题.我也许晚点会回来看看.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_3">
+		<text>没错,试着去了解更多的关于他的阵营的秘密.在那之后,我们可以给他安排一次小小的"事故".你知道,在离这儿不远的地方有个重力异常区,而且这片地区总有一堆饥饿的变异生物四处游荡...</text>
+	</string>
+	
+	<string id="sidorovich_mortal_sin_envoy_0">
+		<text>我跟那个讨厌鬼谈过了,老西.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_1">
+		<text>别那样叫我!那么,你发现什么有意思的东西了吗?你为啥不把他弄死?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_11">
+		<text>别那样叫我!那么,在你把他弄死之前,你发现什么有意思的东西了吗?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_2">
+		<text>我不想将菜鸟村变成他们组织复仇的目标.他是一个叫做"原罪"的派别派来的间谍.他声称他们比任何人都了解特异区,而且很明显他们计划"净化"这个世界.就像你说的那样,他来这儿是为了招募新人加入他们的事业.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_21">
+		<text>他是一个叫做"原罪"的派别派来的间谍.他声称他们比任何人都了解特异区,而且很明显他们计划"净化"这个世界.就像你说的那样,他来这儿是为了招募新人加入他们的事业.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_3">
+		<text>"原罪",嗯?...其实我在过去几年里听说过一些有关于这个组织的传言,尽管没人能证实这些传言.试想一下,最近,许多不同阵营的人和一个未知的阵营的成员发生了冲突,特别是在红森林附近.好,我们现在需要把已知的线索拼凑一下.去红森林那里看看到底发生了什么,跟守林人列斯尼克谈一谈,他应该能够帮助你.我在这儿考虑一下如何让那个间谍安静地离开我们的地盘.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_31">
+		<text>"原罪",嗯?...其实我在过去几年里听说过一些有关于这个组织的传言,尽管没人能证实这些传言.试想一下,最近,许多不同阵营的人和一个未知的阵营的成员发生了冲突,特别是在红森林附近.好,我们现在需要把已知的线索拼凑一下.去红森林那里看看到底发生了什么,跟守林人列斯尼克谈一谈,他应该能够帮助你.我去派一个人把那个间谍的尸体丢进附近的异常点里. </text>
+	</string>
+	<string id="sidorovich_mortal_sin_envoy_4">
+		<text>红森林...嗯,不错.</text>
+	</string>
+	
+	<string id="sidorovich_mortal_sin_report_0">
+		<text>嘿,我回来了,还活着.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_report_1">
+		<text>我也不认为仅仅一趟去红森林的旅行就能打败你.那么,你发现什么了吗?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_report_2">
+		<text>坏消息,和往常一样."原罪"组织在追捕"缝合者",史特洛克的一个同伴.我截下并杀光了他们小队的人,然后找到了他.他说,"原罪"一直在准备对南部地区发动大规模入侵.他是一个可靠的人,并且到目前为止所有事实都符合他的推测.来,拿着这个PDA,它属于那个"原罪"组织追杀小队的队长.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_report_3">
+		<text>嗯,听起来不妙.有时候我会讲一些关于黑石的故事来吓吓那些新人们,但他们造成的威胁离我们还远着呢.我可不喜欢一群狂热分子带着枪来拜访我们,我的生意会受到影响的.无论如何,在局势失控之前我们应该做点儿什么.所以...噢,天啊,又来了.其中一个新人刚刚发来消息：一支庞大的队伍正在接近菜鸟村,似乎是那些"原罪"的狂热分子.你为什么不加入其他人并且给我们的不速之客安排一次热烈的欢迎呢?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_report_4">
+		<text>乐意之至.</text>
+	</string>
+	
+	<string id="sidorovich_mortal_sin_ambush_0">
+		<text>好吧,我们把他们杀光了.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_ambush_1">
+		<text>太棒了!很高兴有你伴我左右...不过,危险程度已经提高了.我收到了特异区各处的潜行者的报告,"原罪"的主要力量已经开始向两个"焦脑器"移动.我认为他们想重新激活它们,并且再次把特异区中心与外界隔绝开来.很显然,我们不能让这种事情发生.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_ambush_2">
+		<text>当然,我可不想再让它们瘫痪一次了.但我一次只能守一个地方.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_ambush_3">
+		<text>没问题.我会利用我的关系来组建一支队伍去防守其中一个设施,另外一个的防守就拜托给你了.无论如何,挑一个你要防守的地方然后快点儿去,我们没多少时间了.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_ambush_4">
+		<text>扬塔"神迹装置".那里更远,所以更需要我的帮助.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_ambush_41">
+		<text>雷达站"焦脑器".我们不能让敌人重新得到一个如此易守难攻的据点.</text>
+	</string>
+	
+	<string id="sidorovich_mortal_sin_zone_hero_0">
+		<text>终于,我回来了."原罪"再也不会来烦我们了.他们的部队被我击溃,并且指挥官也死了.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_1">
+		<text>太出色了,潜行者.有时候你让我想起了那个"天选者",尽管你实际上完成的是一个大任务.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_2">
+		<text>说到史特洛克,没有他和他的人的帮助我们是不可能赢的.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_3">
+		<text>很高兴他还活着在外面做他自己的事情.不过你为什么不留下来呢?人们对你越来越感兴趣,并且你绝对不会相信有多少人来我这儿买你卖给我的那些旧垃圾,就只是因为它们曾经被你带在身上...说到这儿,你的一个粉丝正在菜鸟村等你,也许你该去和他打个招呼.</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_31">
+		<text>很高兴他还活着在外面做他自己的事情.不过你为什么不留下来呢?人们对你越来越感兴趣,并且你绝对不会相信有多少人来我这儿买你卖给我的那些旧垃圾,就只是因为它们曾经被你带在身上...</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_4">
+		<text>那样的话...嗯...真棒.现在没有什么特别的任务了吗?</text>
+	</string>
+	<string id="sidorovich_mortal_sin_zone_hero_5">
+		<text>暂时还是那些平常的事情.</text>
+	</string>
+	
+	<string id="cold_mortal_sin_0">
+		<text>这几天这儿的情况有点儿奇怪.发生了什么?</text>
+	</string>
+	<string id="cold_mortal_sin_1">
+		<text>看到那边那个穿着风衣的怪胎了吗?他几天前和其他潜行者一起到了我们的基地,一开始没惹什么麻烦,所以我们让他留了下来.现在他开始在我们基地里四处开展宣扬特异区的伟大的布道,说什么特异区是某种奇迹,可以帮助我们从罪恶或什么东西中净化整个世界.不不不,我不是编造的,我是亲自听到他这样说的.他还试着招募一些我们的人.是,我可以忍受一个无害的疯子,但是他做的事儿比较可疑.所以,去见见他,听他的布道,试着找出他的目标是什么.在那之后...有很多人都迷失在了沼泽中,那些可怜的灵魂...你懂我的意思吧?</text>
+	</string>
+	<string id="cold_mortal_sin_2">
+		<text>我懂.我认为我是受够了那些搞"特异区崇拜"的疯子了.我去处理他.</text>
+	</string>
+	<string id="cold_mortal_sin_21">
+		<text>抱歉,冷风,我现在还不能处理这件事.</text>
+	</string>
+	<string id="cold_mortal_sin_3">
+		<text>谢了兄弟.他就在这附近,我保证他会站在一个特别显眼的位置,所以你可以很轻松的注意到他.</text>
+	</string>
+	
+	<string id="cold_mortal_sin_envoy_0">
+		<text>我跟那个神经病聊过了.</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_1">
+		<text>聊的怎么样?为啥他还在我们基地里瞎晃悠?</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_11">
+		<text>聊的怎么样?在你早早结束他的生命之前他告诉你什么了吗?</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_2">
+		<text>他的背景比我想象的要复杂的多.他是一个间谍,隶属于一个叫"原罪"的阵营.他声称他们比任何人都更了解特异区,他们是特异区的守护者.就像你之前说的,他一直在招募其他人,同时说着很多"净化世界"之类的话.</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_21">
+		<text>他是一个间谍,隶属于一个叫"原罪"的阵营.他声称他们比任何人都更了解特异区,他们是特异区的守护者.就像你之前说的,他一直在招募其他人,同时说着很多"净化世界"之类的话.</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_3">
+		<text>又来了...是的,我已经听说过这个所谓的"原罪"组织了,尽管我以前一直认为他们一直只是个传言.一帮不知从哪儿冒出来的混蛋只为了完成他们的事情之后消失的无影无踪而攻击所有人.事实上,一些潜行者提到过,类似的事情现在正在红森林内上演.我不喜欢现在这样的状况.你应该去红森林看看发生了什么事.守林人列斯尼克应该可以帮一点你的忙.与此同时,我们将为我们这位"贵宾"安排一个小宴会.</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_31">
+		<text>又来了...是的,我已经听说过这个所谓的"原罪"组织了,尽管我以前一直认为他们一直只是个传言.一帮不知从哪儿冒出来的混蛋只为了完成他们的事情之后消失的无影无踪而攻击所有人.事实上,一些潜行者提到过,类似的事情现在正在红森林内上演.我不喜欢现在这样的状况.你应该去红森林看看发生了什么事.守林人列斯尼克应该可以帮一点你的忙.与此同时,我会派某个人去把我们这位"贵宾"的遗体丢到沼泽里.</text>
+	</string>
+	<string id="cold_mortal_sin_envoy_4">
+		<text>阴森的地方聚集着一群阴森的人...听起来很有趣.</text>
+	</string>
+	
+	<string id="cold_mortal_sin_report_0">
+		<text>冷风,我去过红森林了.</text>
+	</string>
+	<string id="cold_mortal_sin_report_1">
+		<text>怎么样?有什么关于那里的故事可以给我讲吗?</text>
+	</string>
+	<string id="cold_mortal_sin_report_2">
+		<text>就一个.原罪"在追捕史特洛克的一个同伴,"缝合者".我杀光了他们小队的人,然后找到了他.他说,"原罪"一直在准备对南部地区发动大规模入侵.他是一个可靠的人,并且我从那支被我打败的小队队长身上拿到的这个PDA应该可以说服你,如果你没准备好的话.</text>
+	</string>
+	<string id="cold_mortal_sin_report_3">
+		<text>啊,该死.这听起来可不妙.我真希望我们可以在不得不清洗沾满叛徒鲜血的双手之后能以更和平的方式驻扎在大沼泽.我已经厌倦了暴力,但我们不能让一群无所不能的疯子拿走一切.我想这是不可避免的.那么好吧,让我们...哈?我刚接到渔村的消息.有一支强大的敌方小队朝我们来了.该死的.快去帮他们,我会召集我们的人来的.</text>
+	</string>
+	<string id="cold_mortal_sin_report_4">
+		<text>好的,我这就去!</text>
+	</string>
+	
+	<string id="cold_mortal_sin_ambush_0">
+		<text>我们击退了敌人,我们安全了,暂时.</text>
+	</string>
+	<string id="cold_mortal_sin_ambush_1">
+		<text>距离上一次大量的敌人出现在我们的家门口已经有一段时间了.你战胜了他们,这是个好消息.不过,恐怕我没有什么好消息要告诉你.根据我在特异区各处的线人提供的情报,这次袭击只是一个幌子."原罪"的真正意图在于重启我们北方的灵能场发生器.我们准备部队在那里拦截他们,怎么样?这样一来的话我们就不必从头开始了.</text>
+	</string>
+	<string id="cold_mortal_sin_ambush_2">
+		<text>听起来是个好主意.你会指派我到哪个设施去呢?</text>
+	</string>
+	<string id="cold_mortal_sin_ambush_3">
+		<text>你之前把这两个设施都关掉了,所以我把选择权留给你.你和你带的人会去防守你选的地点.我则会组织一支特战队去防守另外一个.我会相信你的判断的,但我们没有时间来仔细思考了.准备好了的话就尽快去.</text>
+	</string>
+	<string id="cold_mortal_sin_ambush_4">
+		<text>我去防守扬塔"神迹装置".它离这儿很远,所以更需要我的帮助.</text>
+	</string>
+	<string id="cold_mortal_sin_ambush_41">
+		<text>我去防守雷达站的"焦脑器".我们不能让敌人重新得到一个如此易守难攻的据点.</text>
+	</string>
+	
+	<string id="cold_mortal_sin_zone_hero_0">
+		<text>嘿,冷风,我做到了."原罪"已经完了,他们的头头也是.</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_1">
+		<text>这可是个好消息,潜行者!终于,晴空组织成功完成了它最初的任务,并且牺牲了很少的士兵就成功渡过了这个难关.干得好!</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_2">
+		<text>而且,讽刺的是,史特洛克和他的队伍在使特异区再次"冷静"下来这件事上给了很多帮助.</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_3">
+		<text>是啊,谁能想到这种事情会发生?有时候命运真的喜欢开玩笑.现在这次邪恶的"十字军东征"计划泡汤了,我们可以继续我们沉闷的,低调的日常状态了.顺便说一下,不久前有个家伙到了这儿来找你.去拜访他一下,他就在基地附近.</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_31">
+		<text>是啊,谁能想到这种事情会发生?有时候命运真的喜欢开玩笑.现在这次邪恶的"十字军东征"计划泡汤了,我们可以继续我们沉闷的,低调的日常状态了.</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_4">
+		<text>我必须要说,终于能够休息一小会儿了,这太好了.</text>
+	</string>
+	<string id="cold_mortal_sin_zone_hero_5">
+		<text>当然,享受这段时间吧,这是你应得的.</text>
+	</string>
+	
+	<string id="lukash_mortal_sin_0">
+		<text>嘿,卢卡什,最近过的怎么样?这附近有没有发生什么有趣的事儿?</text>
+	</string>
+	<string id="lukash_mortal_sin_1">
+		<text>自由军喜欢各种各样的东西,对吧?所以,有一天,这家伙来到我们基地,非常友好.他说他也很欣赏特异区.然后他开始缠着我们的人,说要把整个世界从罪恶中净化出来.他还说我们根本不知道特异区到底是什么,还有其他的一些宗教垃圾.总之,他有点疯狂.就因为他,我这儿的人开始变得紧张起来了.你能和他谈谈吗?你能让他明事理一点儿吗?如果你让他离开,就可以得到额外的奖赏.</text>
+	</string>
+	<string id="lukash_mortal_sin_2">
+		<text>好.你想让我变得更有说服力吗?</text>
+	</string>
+	<string id="lukash_mortal_sin_21">
+		<text>对不起老兄,现在我还没准备好处理这种事情.</text>
+	</string>
+	<string id="lukash_mortal_sin_3">
+		<text>我帮你一把.如果他被证实了是一个危险的人,我相信你会妥善处理他的.</text>
+	</string>
+	<string id="lukash_mortal_sin_4">
+		<text>收到.</text>
+	</string>
+	
+	<string id="lukash_mortal_sin_envoy_0">
+		<text>我跟那个狂人谈过了.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_1">
+		<text>尽管如此,他还在这附近?真倒霉.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_11">
+		<text>你同时也杀了他?谢天谢地!</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_2">
+		<text>他说他是一个间谍,属于一个叫"原罪"的阵营.他告诉我的东西大部分你都已经听说过了,但他也告诉我一直在招募其他人加入他的组织.听起来似乎他们在计划什么大事.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_21">
+		<text>他是一个间谍,属于一个叫"原罪"的阵营.他告诉我的东西大部分你都已经听说过了,但他也告诉我一直在招募其他人加入他的组织.听起来似乎他们在计划什么大事.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_3">
+		<text>"原罪"?这才是真正的新消息.或者...这是新消息吗?显然,红森林里有一群身份不明的潜行者一直在伪装成捕食者并猎杀人类.他们很可能就是你所听说过的"原罪".嗯,我不喜欢这样.没有朋友的黑石已经够糟糕的了.你为什么不去拜访一下守林人列斯尼克,问问他这个神秘的组织呢?我会叫人去告诉我们的客人,他已经不受我们欢迎了.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_31">
+		<text>"原罪"?这才是真正的新消息.或者...这是新消息吗?显然,红森林里有一群身份不明的潜行者一直在伪装成捕食者并猎杀人类.他们很可能就是你所听说过的"原罪".嗯,我不喜欢这样.没有朋友的黑石已经够糟糕的了.你为什么不去拜访一下守林人列斯尼克,问问他这个神秘的组织呢?我会叫人去把你留下的残骸清理干净.</text>
+	</string>
+	<string id="lukash_mortal_sin_envoy_4">
+		<text>好极了,是时候来一场新的冒险了!</text>
+	</string>
+	
+	<string id="lukash_mortal_sin_report_0">
+		<text>老大,我从红树林"野餐"回来了.</text>
+	</string>
+	<string id="lukash_mortal_sin_report_1">
+		<text>哦,嘿,伙计.旅途如何?在那边遇到什么有趣的人了吗?</text>
+	</string>
+	<string id="lukash_mortal_sin_report_2">
+		<text>只遇到了几个.我与那个一直被"原罪"追捕的"缝合者"见面了.你说得对.不管怎样,那支狩猎小队已经死光了,但是"缝合者"说"原罪"一直在准备对南部地区发动大规模入侵.他是值得信赖的,而且在我看来事情确实符合他所言.给你看看这个：狩猎小队领头的PDA.</text>
+	</string>
+	<string id="lukash_mortal_sin_report_3">
+		<text>伙计,我们马上就有一场大战需要打了.好吧,我受够了黑石组织不断的攻击.偶尔换换口味也不错.我会召集我们的人参加另一场阵营战争,只要给我...等一下...嗯,大门口的警卫刚刚报告说有一个大队正在接近我们的基地.发生交火...但他们不是黑石!这不是屁话吗?去帮他们,好吗?我会试着在这里安排一些事情.</text>
+	</string>
+	<string id="lukash_mortal_sin_report_4">
+		<text>当然可以.我这就出发!</text>
+	</string>
+	
+	<string id="lukash_mortal_sin_ambush_0">
+		<text>猜猜是谁废了一群狂热分子?</text>
+	</string>
+	<string id="lukash_mortal_sin_ambush_1">
+		<text>我把所有的卢布都押在你身上了.不管怎样,你做得很好,但还没有结束.我们的人说敌军正在接近那两个灵能场发生器.我敢肯定他们想重启这两个"焦脑器".我更喜欢一个对所有人都开放的特异区,所以我们还是让它保持这个样子吧,好吗?</text>
+	</string>
+	<string id="lukash_mortal_sin_ambush_2">
+		<text>是啊,但是我怀疑我能不能同时保护它们两个,除非你给我一支很好的狙击步枪.</text>
+	</string>
+	<string id="lukash_mortal_sin_ambush_3">
+		<text>啊,那是没必要的.我可以派一队人去保护其中一个设施,这样你这次就不会赢得所有的荣誉了.不过你还是选一个你想亲自防守的设施吧.最好快点,迟到是不礼貌的.</text>
+	</string>
+	<string id="lukash_mortal_sin_ambush_4">
+		<text>扬塔的"神迹装置".那个地方离这儿很远,因此更需要我的帮助.</text>
+	</string>
+	<string id="lukash_mortal_sin_ambush_41">
+		<text>雷达站的"焦脑器".它离这儿很近,而且非常重要.</text>
+	</string>
+	
+	<string id="lukash_mortal_sin_zone_hero_0">
+		<text>我,这个"原罪"组织的毁灭者,回来了!我甚至在石棺里给他们的首领办了一场体面的葬礼.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_1">
+		<text>哇,现在你干得真不错!你可是个炙手可热的人物,伙计.我们来继续保持特异区现在这种我们喜欢的状态：不可预测,致命,但舒适.根本不需要改变任何事情.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_2">
+		<text>我更倾向于同意你说的话.而且奇怪的是,史特洛克和他的朋友们帮了我很多,让我保持这种状态.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_3">
+		<text>是的,这家伙有钢铁般的意志,但如果他不想再破坏特异区那就最好了.希望如此.不管怎样,既然你来了,就应该去看看一个新来的人,他一直在找你.可能现在正在基地附近徘徊.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_31">
+		<text>是的,这家伙有钢铁般的意志,但如果他不想再破坏特异区那就最好了,我希望.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_4">
+		<text>你不介意我放松一下吧?我在这里有点累.</text>
+	</string>
+	<string id="lukash_mortal_sin_zone_hero_5">
+		<text>伙计,想休息就休息吧,但是别忘了来参加胜利庆祝会!</text>
+	</string>
+	
+	<string id="sakharov_mortal_sin_0">
+		<text>这里一切都还好吗,教授?外面的警卫似乎比平时更紧张了.</text>
+	</string>
+	<string id="sakharov_mortal_sin_1">
+		<text>有时候我不知道你是不是在开玩笑,年轻人.我想至少现在,情况还比较稳定.想想看,最近这里发生了一件令人不安的事.几天前,一些新的潜行者来到了扬塔,这个戴着帽子的家伙就在其中.与其帮助我们的警卫抵御连续不断的入侵,他更愿意宣扬特异区的奇迹之处.我自己也听到了,并且我担心他可能疯了.到目前为止,他没有对我们造成直接的伤害,但是我们的警卫对他的存在感到越来越厌烦.拜托你了,试着说服他离开这里.</text>
+	</string>
+	<string id="sakharov_mortal_sin_2">
+		<text>关于特异区的宗教性说教?听起来很熟悉.我先去问他,然后再看看我能做什么.</text>
+	</string>
+	<string id="sakharov_mortal_sin_21">
+		<text>教授,我向你道歉,我现在还没准备好对付更多的疯子.</text>
+	</string>
+	<string id="sakharov_mortal_sin_3">
+		<text>我非常感谢你.</text>
+	</string>
+	
+	<string id="sakharov_mortal_sin_envoy_0">
+		<text>教授,我完成了我的任务.</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_1">
+		<text>很好.你发现了什么吗?</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_11">
+		<text>所以,你杀了他.嗯,一个极端的解决方案...</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_2">
+		<text>他是一个间谍,隶属于一个叫"原罪"的阵营.他声称他们比任何人都更了解特异区,而且很明显他们打算"净化世界".还有,他一直在招募其他人来加入他们的事业.</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_21">
+		<text>恐怕我们不能让他在这待更久了.他是一个间谍,隶属于一个叫"原罪"的阵营.他声称他们比任何人都更了解特异区,而且很明显他们打算"净化世界".还有,他一直在招募其他人来加入他们的事业.</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_3">
+		<text>这可真令人不安.我的警卫最近遇到了一个属于某个神秘派别的潜行者,他表现出了强烈的敌意,很可能是那个"原罪"的成员.据我所知,他们经常去红林狩猎潜行者.不过,有一个叫守林人列斯尼克的传奇人物住在那里,请你去跟他谈谈情况.我们知道的越多,我们就越能为即将到来的一切做好准备.同时,我会和警卫说一下这个安全漏洞.</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_31">
+		<text>这可真令人不安.我的警卫最近遇到了一个属于某个神秘派别的潜行者,他表现出了强烈的敌意,很可能是那个"原罪"的成员.据我所知,他们经常去红林狩猎潜行者.不过,有一个叫守林人列斯尼克的传奇人物住在那里,请你去跟他谈谈情况.我们知道的越多,我们就越能为即将到来的一切做好准备.同时,我会让警卫去把这个间谍的尸体丢掉.</text>
+	</string>
+	<string id="sakharov_mortal_sin_envoy_4">
+		<text>我去看看我能做些什么.</text>
+	</string>
+	
+	<string id="sakharov_mortal_sin_report_0">
+		<text>教授,我已经调查过了红森林的情况.</text>
+	</string>
+	<string id="sakharov_mortal_sin_report_1">
+		<text>很好.我希望你发现了有价值的东西.</text>
+	</string>
+	<string id="sakharov_mortal_sin_report_2">
+		<text>"原罪"在追捕我在上一次任务中遇到的史特洛克的一个同伴.我截获并摧毁了他们的小队,然后找到了他.他说,"原罪"一直在准备对南部地区发动大规模入侵.他是一个可靠的人,到目前为止一切似乎都符合他的说法.教授,请,把我从那个小队队长身上拿到的PDA拿走看一下 .</text>
+	</string>
+	<string id="sakharov_mortal_sin_report_3">
+		<text>哦...我的天!这确实是个坏消息.黑石至少大部分情况下都据守在他们目前的领地内.我们现在恐怕必须得对付一个跟黑石同样强大,但却更具侵略性的敌人.我们应该...哦,不,看来我们受到攻击了!我们的警卫发现一股敌军部队正在接近我们的科研碉堡.求你了,去帮他们击退敌人吧!</text>
+	</string>
+	<string id="sakharov_mortal_sin_report_4">
+		<text>我能搞定!</text>
+	</string>
+	
+	<string id="sakharov_mortal_sin_ambush_0">
+		<text>周围干净了,我们打败了敌人.</text>
+	</string>
+	<string id="sakharov_mortal_sin_ambush_1">
+		<text>太出色了,年轻人!我就知道我可以指望你.不过很不幸,这仅仅是个开始.军方武装直升机观察到有大量的"原罪"部队正在向两个灵能场发生器动员.就目前而言,可以肯定的是,他们打算重新激活它们.最好的办法是现在就阻止他们的计划.</text>
+	</string>
+	<string id="sakharov_mortal_sin_ambush_2">
+		<text>我同意你的看法,教授.但我们只是没有足够的人力来完成这个任务.我们怎样才能同时成功防守两个地点呢?</text>
+	</string>
+	<string id="sakharov_mortal_sin_ambush_3">
+		<text>我会和库兹涅佐夫少校谈谈.我确信他能组织一支足够的部队来保护至少其中一个设施.不过,你必须迅速组织对另一个设施的防御,因为我们的敌人似乎不愿意等太久.拜托,快点!</text>
+	</string>
+	<string id="sakharov_mortal_sin_ambush_4">
+		<text>我去防守扬塔的"神迹装置". 它就在我们旁边,所以如果它被敌人拿下的话可以对我们造成直接威胁.</text>
+	</string>
+	<string id="sakharov_mortal_sin_ambush_41">
+		<text>我去防守雷达站的"焦脑器".我们不能让敌人重新得到一个如此易守难攻的据点.</text>
+	</string>
+	
+	<string id="sakharov_mortal_sin_zone_hero_0">
+		<text>我们成功了,教授."原罪"的部队被击溃了,指挥官也死了. </text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_1">
+		<text>多么可怕的冲突,我很高兴它终于结束了.你做得很好,年轻人.我知道需要的时候我可以依靠你.我真诚地希望特异区最终能够达到一种平衡状态.</text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_2">
+		<text>如果不是史特洛克和他的朋友的话,我们根本不可能胜利.</text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_3">
+		<text>那个"天选者",或者直接叫他史特洛克,继续保持着他的传奇地位.至少我现在知道,对于每一个危险的狂热分子,我们都有一个足智多谋和合理的潜行者,以帮助保持特异区那不稳定的平衡.事实上,我们这里还来了另一个这样的潜行者.我最后一次看到他的时候,他在碉堡外面徘徊.你应该去跟他打个招呼.</text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_31">
+		<text>那个"天选者",或者直接叫他史特洛克,继续保持着他的传奇地位.至少我现在知道,对于每一个危险的狂热分子,我们都有一个足智多谋和合理的潜行者,以帮助保持特异区不稳定的平衡.</text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_4">
+		<text>说完了吗,教授?</text>
+	</string>
+	<string id="sakharov_mortal_sin_zone_hero_5">
+		<text>说完了.现在你可以回到你的日常活动中去了.</text>
+	</string>
+	
+	<string id="greh_envoy_greeting_0">
+		<text>你好,潜行者.你来寻求启迪吗?</text>
+	</string>
+	<string id="greh_envoy_greeting_killer_0">
+		<text>你好,佣兵.你来寻求启迪吗?</text>
+	</string>
+	
+	<string id="greh_envoy_dialog_0">
+		<text>你好.</text>
+	</string>
+	<string id="greh_envoy_dialog_1">
+		<text>你需要什么?</text>
+	</string>
+	<string id="greh_envoy_dialog_2">
+		<text>我想和你谈一谈.</text>
+	</string>
+	<string id="greh_envoy_dialog_21">
+		<text>我有几个问题要问你,你这个讨厌的混蛋.</text>
+	</string>
+	<string id="greh_envoy_dialog_3">
+		<text>很好.我很高兴,在所有一心追求个人利益的人之中,仍然有一些人愿意谈论更伟大的事情.你想知道什么?</text>
+	</string>
+	<string id="greh_envoy_dialog_31">
+		<text>要小心,不要过早下结论.谣言和印象可能充满了欺骗性.我只想同你还有你的朋友分享我的知识.你问,我来回答.你可能会发现这非常有益.</text>
+	</string>
+	<string id="greh_envoy_dialog_4">
+		<text>你是谁?</text>
+	</string>
+	<string id="greh_envoy_dialog_5">
+		<text>我只是我们的天父的一个卑微的使者.很久以前我和其他潜行者一样.但后来有人告诉了我特异区的真相.在那之后,我变了,变成了一个完全不同的人.我的身份不再重要了.重要的是我所能传递的信息.</text>
+	</string>
+	<string id="greh_envoy_dialog_41">
+		<text>谁派你来的?</text>
+	</string>
+	<string id="greh_envoy_dialog_51">
+		<text>我所属的组织.我们称自己为"原罪",因为我们希望纠正人性中的缺陷.各个阵营有不同的目标,有人想摧毁特异区,有人想利用特异区来得到财富,还有人对特异区的许多奇迹之处感到惊奇.然而,只有我们知道真相.我们是特异区的真正守护者.只有我们赞美着特异区给予我们的一切知识和力量.</text>
+	</string>
+	<string id="greh_envoy_dialog_511">
+		<text>"原罪"?我不认为我以前听说过你们.</text>
+	</string>
+	<string id="greh_envoy_dialog_5111">
+		<text>I heard some stories about "dark stalkers", but nothing concrete.</text>
+	</string>
+	<string id="greh_envoy_dialog_512">
+		<text>只要特异区持续存在,我们就保持低调.我们宁愿默默地收集知识来变得更强,也不愿为了追求财富而去抢地盘或是扫荡特异区."鹬蚌相争,渔翁得利."但现在,在维拉杰的光芒下...我们几乎已经准备好了走出阴影...我希望你能和我们一起.</text>
+	</string>
+	<string id="greh_envoy_dialog_42">
+		<text>你的目标是什么?</text>
+	</string>
+	<string id="greh_envoy_dialog_52">
+		<text>我的目标是传播信息,让所有人都知道特异区到底是什么.特异区是个奇迹.它能帮助我们进步,它能从自我毁灭的本性中拯救人类.我努力鼓励其他潜行者加入我们,这样我们就可以分享特异区许多秘密中所包含的力量.这样,在必须采取行动时,当把世界从罪恶中净化出来的时候,他们就能和我们站在一起.</text>
+	</string>
+	<string id="greh_envoy_dialog_6">
+		<text>听起来很有趣.</text>
+	</string>
+	<string id="greh_envoy_dialog_61">
+		<text>我可不吃你这一套.</text>
+	</string>
+	<string id="greh_envoy_dialog_7">
+		<text>我就知道你会感兴趣的.你很特别.不幸的是,不是每个人都准备加入我们的行列,但我对你寄予厚望.</text>
+	</string>
+	<string id="greh_envoy_dialog_71">
+		<text>没关系,你可能需要一段时间来考虑我说的话.我知道放弃自己的旧有观点是多么的困难.请慢慢来.</text>
+	</string>
+	<string id="greh_envoy_dialog_8">
+		<text>谢谢你为我们带来你的...启蒙运动.我现在必须走了.</text>
+	</string>
+	<string id="greh_envoy_dialog_81">
+		<text>别胡说了.是时候结束你了.</text>
+	</string>
+	<string id="greh_envoy_dialog_9">
+		<text>很好.我希望你能考虑加入我们.再会.</text>
+	</string>
+	<string id="greh_envoy_dialog_91">
+		<text>愚蠢的人啊."原罪"是不可能被毁灭的.会死的只有你.</text>
+	</string>
+	<string id="greh_envoy_dialog_92">
+		<text>求你了,闭上嘴去死吧.</text>
+	</string>
+	
+	<string id="red_forester_mortal_sin_0">
+		<text>守林人列斯尼克,我在找一些在这个森林里...呃..."潜行"的一些神秘潜行者.你能帮我吗?</text>
+	</string>
+	<string id="red_forester_mortal_sin_1">
+		<text>年轻人,红森林是所有奇特现象和事件的温床.如果我要我描述所有这些东西的话,我们会...</text>
+	</string>
+	<string id="red_forester_mortal_sin_2">
+		<text>这么说你不知道咯?</text>
+	</string>
+	<string id="red_forester_mortal_sin_3">
+		<text>耐心点,年轻人,我在试着回忆起来!啊...是的,我想我知道你指的是谁.他们几天前毫无预兆地出现了,来自北方.他们身上有不祥的预兆,排成一队默默地走着...其他潜行者看到他们立即避开,为他们让路.然后他们就走进了森林,就像走进一个普通的公园那样.从那以后,我听到过很多次远处传来的枪声,比平常更频繁.</text>
+	</string>
+	<string id="red_forester_mortal_sin_4">
+		<text>他们仍然在里面吗?</text>
+	</string>
+	<string id="red_forester_mortal_sin_5">
+		<text>是的,我很肯定.我认为他们一直在寻找什么东西,或者什么人,更具体的信息我告诉不了你.不过,根据他们的活动产生的烟雾来判断的话,他们在红森林东部扎了营,继续他们的搜查.</text>
+	</string>
+	<string id="red_forester_mortal_sin_6">
+		<text>你说红森林东部?</text>
+	</string>
+	<string id="red_forester_mortal_sin_7">
+		<text>那边有一片空地,通往一个废弃的矿井.如果你想搞掉他们,那么他们很可能就在那里.除了我的塔楼、利曼斯克大桥和西边的雷区,这里没有其他地方可以容纳一支有着这样规模的队伍.</text>
+	</string>
+	<string id="red_forester_mortal_sin_8">
+		<text>谢谢你提供的情报,我要去找他们了.</text>
+	</string>
+	<string id="red_forester_mortal_sin_9">
+		<text>小心点,年轻人.在那边你可能遇到的不仅仅是敌对的潜行者.保持警惕.</text>
+	</string>
+	
+	<string id="stalker_stitch_mortal_sin_0">
+		<text>那是一次意外的重逢.你在这里干什么?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_1">
+		<text>嘿,老兄,好久不见!这是一个漫长而复杂的故事,但我会尽量简短地告诉你.时间很短,而且我后面跟着一群危险的家伙.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_2">
+		<text>他们死了.我在他们来"拜访"你之前就把他们料理好了.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_3">
+		<text>噢...真谢谢你,老铁!无论如何,我们行动的越快越好.那么,你还记得"黑石碎片"吗,就是你帮史特洛克弄到的那个神器?好吧,他向这个神器询问了一下,然后它给了他一个幻觉.就像一个有魔法的8号球.不管怎样,我们发现了发电厂西北部的一个地区.一个真正可怕的地方.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_4">
+		<text>那你接下来要做什么?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_5">
+		<text>好吧,我们去仔细看了看那地方的周围,然后,麻烦大了.我们发现原来那里有一群狂热分子...但他们不是黑石!他妈的,那群混蛋从那里追了出来,好几天都在追我们,导致我们最终不得不分头引开他们.我去了这里,"游荡者"去了西边,我想史特洛克实际上是掉头回去了.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_6">
+		<text>那些狂热分子一直追你到红森林?他们可真有耐心和恒心.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_7">
+		<text>你挡了他们的道对他们来说真是太糟糕了.在我们分开之前,史特洛克说我们发现的地方是所有能量风暴的源头,是特异区的诞生地.它被那些疯子占据了.这可不太好.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_8">
+		<text>天哪!我同意.你有什么计划吗?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_9">
+		<text>我们必须闯进去阻止他们在那里所做的一切.但是,嗯,我把解码器藏在一个秘密的地方了.我想找回它,但我担心我一出现他们就会找到我.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_10">
+		<text>那已经不再是问题了,那么,是什么阻止了你?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_11">
+		<text>嗯,如果他们还没准备好的话,他们会派另一支队伍来,并且他们知道我长什么样.但他们不认识你,因为你杀光了整支小队.那么,我要留在这里,以防史小强或"游荡者"试图联系我.你能帮我拿到解码器吗?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_12">
+		<text>好,当然,又一个取得物品的任务.它在哪儿?  </text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_13">
+		<text>我把它藏在卡车墓园中心位置附近的一辆橙色巴士残骸后面.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_14">
+		<text>哪个残骸?算了,你就给我传个坐标就行了.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_15">
+		<text>事实上,你看,我根本就没有记录坐标.毕竟这是个秘密藏身处.不过,我相信你会找到的.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_16">
+		<text>你疯了吗?那里面可是有好几十辆公共汽车...</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_17">
+		<text>嗯...解码器有一个射频模块来发送和接收信号.我把频率设为171兆赫,以免我找不到它的位置.如果你有一个射频接收器,你可以试着用这个频率跟踪它的信号.一旦你接近它的位置,你的设备就应该开始发出哔哔声.找到它应该很容易.我希望解码器里的电池的电量还足够...</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_18">
+		<text>嗯,好吧,我会做的,但这东西最好值得我去找.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_19">
+		<text>如果你明白我的话,我们可能可以阻止一群狂热分子随意地向我们释放一个又一个能量风暴.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_20">
+		<text>这很公平.我现在就去.</text>
+	</string>
+	
+	<string id="stalker_stitch_mortal_sin_decoder_0">
+		<text>"缝合者",我拿到了你那该死的解码器.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_1">
+		<text>老兄,我就知道你能拿到它的.虽然这实际上不是个容易的差事...不过仍然感谢你.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_2">
+		<text>有什么新消息吗?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_3">
+		<text>是的.我能联系到"游荡者".他还在西边某处观察敌人的行动.他说,"原罪"已经动员了很多人,目前正向南分裂成几个支队.这对我们来说不是好兆头.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_4">
+		<text>确实,这可不是个好兆头.想想看,他们的使节说他们要把全世界从罪恶中拯救出来,事实上他们可能马上就要这么做了.如果我们想阻止他们,就得快点行动.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_5">
+		<text>既然我有解码器了,我就要回到北方去.我必须找到史特洛克,帮助他破坏他们的基地.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_6">
+		<text>你回你的北方去,我去把情况告诉沃罗宁将军.走吧!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_61">
+		<text>你回你的北方去,我去把情况告诉达什曼.走吧!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_62">
+		<text>你回你的北方去,我去把情况告诉西多洛维奇.走吧!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_63">
+		<text>你回你的北方去,我去把情况告诉冷风.走吧!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_64">
+		<text>你回你的北方去,我去把情况告诉卢卡什.走吧!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_decoder_65">
+		<text>你回你的北方去,我去把情况告诉萨哈洛夫教授.走吧!</text>
+	</string>
+	
+	<string id="stalker_stitch_mortal_sin_generators_0">
+		<text>太好了!你在这里.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_generators_1">
+		<text>所以,你比我们先到了这里.史特洛克在哪?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_generators_2">
+		<text>就是这样!他说我们不能再等了,所以我们在这里找到了敌人基地的后门,没有设防.我们黑掉电梯后,史小强独自一人去搞破坏了.我是来掩护他的.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_generators_3">
+		<text>该死,你们就不能等等吗...</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_generators_4">
+		<text>你没听见吗?我们必须要快点儿了!但是,但是,我们看见"原罪"正在正门附近集结兵力.如果他们注意到了史小强,并且都下去阻止他,那么我们就可以和这个世界说再见了!我们得转移他们的注意力!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_generators_5">
+		<text>操!好吧!我们去突击他们的指挥部!我们走!</text>
+	</string>
+	
+	<string id="stalker_stitch_mortal_sin_choice_0">
+		<text>我们成功了.另一个狂热分子组成的势力变成了一片灰尘.希望这是最后一个.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_1">
+		<text>同意.我是说我喜欢特异区,但是那种认为外面有正常生活的想法可以帮助我偶尔放松一下.我想找一个安全的地方,等我完成我的冒险以后回来待着.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_2">
+		<text>是的,特异区确实不需要再扩大了.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_3">
+		<text>我想我们这边的活儿已经结束了."游荡者"和我会和史特洛克一起.你呢?你想许个愿吗?</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_4">
+		<text>许愿?我决不会为了私利,或者说根本不会用这种可憎的东西.我要向沃罗宁将军报告我们的成功.谢谢你的帮助,纪律团会记住你们的贡献的.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_41">
+		<text>不,我想要更可靠的东西,比如现金."许愿石"这个东西是相当不可靠的.我去告诉达什曼我们给了"原罪"狠狠一击.再见,伙计们.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_42">
+		<text>许多新手来到特异区就是为了最终找到"许愿石"...但我不是一个幼稚的菜鸟.我可以安稳的挣我的钱.我去告诉西多洛维奇我们成功了,再见.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_43">
+		<text>据我所知,"许愿石"有一种黑色幽默.我还是不去摸老虎的屁股了.不过,我会很高兴地回去告诉冷风,这次晴空组织终于成功了.谢谢你们的帮助,再见!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_44">
+		<text>不,我认为我很好.特异区的生活很酷,我现在还不需要一个美好的结局.你问我到底想要什么?我想我会给卢卡什和其他人讲很多关于我们小冒险的故事.伙计们,谢谢,再见!</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_45">
+		<text>我很乐意去调查一下那个被称为"许愿石"的玩意儿...但我认为风险太大了.那可是生态学家们鲁莽行事而得到的产物.也许我该打破传统,尽快向萨哈洛夫教授报告好了.伙计们,我很感谢有你们的帮助.再会,</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_46">
+		<text>嗯,既然我为拯救世界而遭受了如此多的劫难,我想我配得上拥有终极的奖赏.</text>
+	</string>
+	<string id="stalker_stitch_mortal_sin_choice_5">
+		<text>噢,好的,如果你这么说的话.我们会陪你去看结果,以防万一.</text>
+	</string>
+	
+	<string id="stalker_rogue_dialog_ms_0">
+		<text>嗨,瞧瞧你这硬汉.</text>
+	</string>
+	
+	<string id="stalker_rogue_repair_0">
+		<text>嗨,"游荡者",你能帮我修一下我的装备吗?</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_0">
+		<text>"游荡者",这儿什么情况?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_1">
+		<text>不怎么样.当你阻止"原罪"重启灵能场发生器时,他们已经决定撤退到利曼斯克并重组了.我设法募集了一些潜行者,但这远远不够,特别是自从"原罪"和黑石在城市里结盟之后.我亲眼看到的,他们肩并肩一起战斗.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_2">
+		<text>这可他妈的太"好"了.我正担心那些被洗脑的疯子会不会觉得有些孤单呢.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_3">
+		<text>真有意思.现在"原罪"似乎在重现编组他们的部队来达到更大的规模,每只部队都由一个被称为"惩戒者"的强大的外骨骼战士所领导.他们不仅是了不起的战士,而且是正儿八经的战术家.我几乎连一个都没杀掉,而且他们一直在反制我们.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_4">
+		<text>不错.那么,计划是什么?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_5">
+		<text>我们的反击将会分为以下几步进行.首先,我们会除掉他们的首领,这将会显著的减缓他们的速度.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_6">
+		<text>听起来有点儿难.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_7">
+		<text>肯定的.顺便说一下,沃罗宁将军派了一队志愿者来帮助你.他们都是经验丰富的潜行者,对特异区和它的崇拜者怀着深仇大恨.去,给敌人来一次斩首行动.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_71">
+		<text>肯定的.顺便说一下,达什曼派了一队志愿者来帮助你.他们都是经验丰富的佣兵,有着无可挑剔的专业声誉.去,给敌人来一次斩首行动.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_72">
+		<text>肯定的.顺便说一下,我派了一队志愿者来帮助你.他们都是经验丰富的潜行者,其中一些人是我亲手训练出来的.去,给敌人来一次斩首行动.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_73">
+		<text>肯定的.顺便说一下,冷风派了一队志愿者来帮助你.他们都是经验丰富的潜行者,其中的一些人甚至是经历过阵营战争的老兵.去,给敌人来一次斩首行动.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_74">
+		<text>肯定的.顺便说一下,卢卡什派了一队志愿者来帮助你.他们都是经验丰富的潜行者,不想让这样的疯子来控制特异区.去,给敌人来一次斩首行动.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_75">
+		<text>肯定的.顺便说一下,萨哈洛夫教授派了一队志愿者来帮助你.他们都是"经验丰富"的潜行者,尽管我希望他们已经为这次行动穿好装备了.去,给敌人来一次斩首行动.</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_warfare_0">
+		<text>虽然很艰难,但那些"惩戒者"还是死了.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_warfare_1">
+		<text>干得好.我们终于有了点喘息的空间.上头为你做出的努力发了一份奖赏,我这就把它转交给你.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_warfare_2">
+		<text>谢谢.那现在怎么办?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_warfare_3">
+		<text>与此同时,我和几个潜行者设法埋伏了"原罪"的一只巡逻小队.大部分人都被我们杀了,但有一个被我敲晕了.相对于其他人来说,这是个菜鸟.我不擅长审问,因为我很容易就下手太重然后给他弄死了.你去试一试从他身上弄到有用的信息.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_warfare_4">
+		<text>没问题,我会去试一下的.</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_interrogation_0">
+		<text>好的,我搞定了.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_1">
+		<text>干得不错.我可不觉得他在被毒打一顿之前就会吐露秘密.看来他们还没准备好进攻.我们应该组织一次突然袭击来阻止他们的计划.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_11">
+		<text>正如我所料.没问题.我想我的方法会更具说服力,也许能奏效.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_12">
+		<text>真是浪费时间.我开始怀疑我们还能不能抓到他们了,这样的话,我们只能自己想办法了.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_2">
+		<text>那么现在到底发生了什么?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_3">
+		<text>你去除掉那些"惩戒者"之后不久,我就派出了侦察队.他们本应该利用这个机会来好好观察一下敌人在城市深处的策略和动向.他们一直都做得很好,直到他们遭到伏击之前,我和他们失去了联系.我要你你去检查一下那儿是否还有幸存者,看看你能不能抢救一下他们的任务.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_4">
+		<text>你上次联系他们时他们在哪里?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_interrogation_5">
+		<text>我会给你的PDA上传坐标.小心,那里很接近敌人的一个巩固了的据点.</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_contact_lost_0">
+		<text>我回来了.我找到了侦察小队的最后一个幸存者,他没能撑住.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_1">
+		<text>该死的,他们是我靠得住的人.那他们的任务呢?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_2">
+		<text>幸存者没能告诉我太多东西,但我发现了队长的PDA.我认为他在上面记录了一些有用的信息.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_3">
+		<text>很好,至少他们的牺牲没有白费.让我看一下.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_4">
+		<text>所以呢?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_5">
+		<text>他们干得很出色.他们的哨位位置符合战俘告诉我们的情报."原罪"正在准备大规模入侵,他们很快就会全力以赴以通过利曼斯克,尽管他们还没准备好.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_51">
+		<text>他们干得很出色.我猜我们不需要一个战俘来给我们提供情报."原罪"正在准备大规模入侵, 他们很快就会全力以赴以通过利曼斯克,尽管他们还没准备好.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_6">
+		<text>我们必须迅速行动,打他们个出其不意.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_7">
+		<text>你说得对.但是这仍不简单.在我们出发之前,确保你完全准备好了,因为从现在开始,没有喘息的机会,也没有任何退路.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_contact_lost_8">
+		<text>这很公平,我准备好了会告诉你的.</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_ready_0">
+		<text>我准备好出发了.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_ready_1">
+		<text>正是时候.我们会先攻击他们设在废弃建筑工地的前哨基地.这次行动将打开一条深入他们领土的道路.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_ready_2">
+		<text>你说这个建筑工地被巩固了?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_ready_3">
+		<text>他们设了一个入口狭窄的路障,从高处可以清楚地看到周围地区.除此之外,还有一堆狙击手.哦对了,整个建筑工地都受到了强烈的辐射.小菜一碟.我们走吧.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_ready_4">
+		<text>这会很好玩儿的...</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_destruction_0">
+		<text>唉...我们至少还活着.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_destruction_1">
+		<text>他们的增援部队还在路上,我们就已经占领了他们的主要集结点.我们应该继续保持这种进攻势头.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_destruction_2">
+		<text>我们还要到更北边去?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_destruction_3">
+		<text>对.有条路可以带我们到废弃医院.几年前这地方还是一个黑石的据点,所以如果我们让他们在那里过得太舒服的话,事情可能会变得很糟糕.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_destruction_4">
+		<text>听起来时间很重要.走吧.</text>
+	</string>
+	
+	<string id="stalker_rogue_mortal_sin_assault_0">
+		<text>该死,他消失了.你没事吧?</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_assault_1">
+		<text>在所有存在于特异区的事物中...是的,我很好.他想让我从你背后射杀你.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_assault_2">
+		<text>好吧,谢谢你没有那样做.你是怎么抗拒他的?我只能在这里勉强应付他.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_assault_3">
+		<text>你问我是如何抗拒他的控制的?嗯...我想象着一点一点地拆卸,清洗和组装我的枪...就这样.无论如何,我们得走了.这混蛋说他想要扩大特异区的范围,而他们组织恰好占据了能导致能量风暴爆发的地方.所以基本上,我们他妈的完犊子了.</text>
+	</string>
+	<string id="stalker_rogue_mortal_sin_assault_4">
+		<text>是啊,我们必须要快一点才能赶得上.同时,我们也要干掉我们一路上遇到的所有"原罪"的巡逻队.我最不想看到的事就是我们被一群武装到牙齿的狂热分子包围,而"黑暗之神"切尔诺伯格正在玩弄我们的精神和思想.</text>
+	</string>
+	
+	<string id="greh_prisoner_greeting_0">
+		<text>你能打败我,但你无法打败我们"原罪"组织!我们会胜利的!</text>
+	</string>
+	
+	<string id="greh_prisoner_dialog_0">
+		<text>你好.</text>
+	</string>
+	<string id="greh_prisoner_dialog_1">
+		<text>纪律团!你以为你们有权利毁灭特异区啊?你们甚至还认为那有可能?傻逼!</text>
+	</string>
+	<string id="greh_prisoner_dialog_111">
+		<text>哦吼?一个佣兵?你什么都不懂,别来趟这趟混水了!到别处去挣你的血腥佣金去吧!</text>
+	</string>
+	<string id="greh_prisoner_dialog_112">
+		<text>哈!一个潜行者!你们永远都是那么贪婪,自以为是,幼稚的像个孩子!快走,否则你就没命了!</text>
+	</string>
+	<string id="greh_prisoner_dialog_113">
+		<text>哈!晴空组织!我们知道你们的秘密...但你们不知道我们的!我们会让特异区扩散到全世界,而你们阻止不了我们!哈哈哈!</text>
+	</string>
+	<string id="greh_prisoner_dialog_114">
+		<text>一个自由军团员?你知道特异区就是一个奇迹,但你的罪大恶极是不能被接受的!你会像其他人一样死去!</text>
+	</string>
+	<string id="greh_prisoner_dialog_115">
+		<text>愚蠢的生态学家...为什么要跟我们起冲突?如果你们想研究特异区,那就等着呗!我们会让特异区变得更大,好让你们研究!</text>
+	</string>
+	<string id="greh_prisoner_dialog_2">
+		<text>冷静,伙计.我只想谈一谈.</text>
+	</string>
+	<string id="greh_prisoner_dialog_221">
+		<text>我这儿有一些问题要问你.</text>
+	</string>
+	<string id="greh_prisoner_dialog_222">
+		<text>闭你妈的嘴,你这个该死的狂热分子.</text>
+	</string>
+	<string id="greh_prisoner_dialog_3">
+		<text>是你?...好吧.你想谈谈?谈什么?</text>
+	</string>
+	<string id="greh_prisoner_dialog_331">
+		<text>问题?为什么我要在回答一个肮脏的人所提出的任何问题上浪费时间呢...除非说,你来寻求启迪?</text>
+	</string>
+	<string id="greh_prisoner_dialog_332">
+		<text>你不能使特异区之声永远沉默!</text>
+	</string>
+	<string id="greh_prisoner_dialog_4">
+		<text>尽管你奋勇战斗,但是很明显你还是个新手.别让那些神经质的"原罪"怪胎把你控制了.告诉我们他们的下一步计划是什么,我们就会饶你一命.</text>
+	</string>
+	<string id="greh_prisoner_dialog_441">
+		<text>告诉我你们的下一步计划是什么,如果你乖乖合作的话,我们可以达成协议.</text>
+	</string>
+	<string id="greh_prisoner_dialog_442">
+		<text>听着,你这没头没脑的蠢猪,告诉我你们的部队的动向...我保证这会很快.不然的话...我一定会尽量割的慢一点的.</text>
+	</string>
+	<string id="greh_prisoner_dialog_5">
+		<text>"原罪"没有控制我!他们...他们只是说服了我!如果能加入他们...并且让世界更美好的话,那么自己独身一人为了实现某种目标而艰难行进有什么意义?至少...至少我认为...</text>
+	</string>
+	<string id="greh_prisoner_dialog_551">
+		<text>"合作"?如果我说"不"呢?我不会与你这个异教徒达成任何交易!</text>
+	</string>
+	<string id="greh_prisoner_dialog_552">
+		<text>我才不怕你!我们都是为了这个星球好!我们都必须准备好做出最终的牺牲!我...我准备好了!</text>
+	</string>
+	<string id="greh_prisoner_dialog_6">
+		<text>我不认为你对他们的鬼话买账.不要相信一群彻底的混蛋.你的命不仅仅只值一条信息."原罪"也许会放弃你,但我不会.</text>
+	</string>
+	<string id="greh_prisoner_dialog_661">
+		<text>基于你目前所处的位置,我觉得你绝对应该考虑一下我的提议.</text>
+	</string>
+	<string id="greh_prisoner_dialog_662">
+		<text>我受够你了,是时候去死了.</text>
+	</string>
+	<string id="greh_prisoner_dialog_7">
+		<text>我...我的头...切尔诺伯格...我们的神父...他非常具有说服力...但是我想的越多,我就越觉得自己被骗了.答应我,我告诉你所有一切之后不要杀我,好吗?</text>
+	</string>
+	<string id="greh_prisoner_dialog_771">
+		<text>考虑?你才是那个应该认真搞清楚自己现在的状况的人.你拖慢了进度!你阻碍了某种比你更伟大的存在!你才是应该投降的那个人!</text>
+	</string>
+	<string id="greh_prisoner_dialog_8">
+		<text>我保证你会成为战俘.如果你表现的好的话也许我们会在打赢这场硬仗之后把你放了.</text>
+	</string>
+	<string id="greh_prisoner_dialog_881">
+		<text>我们就赶快把这事儿了结吧,好吗?</text>
+	</string>
+	<string id="greh_prisoner_dialog_9">
+		<text>好,好吧!我会告诉你的.我们一直在特异区的西部集结兵力,准备进行一次压倒性的进攻.毕竟这个地方的防御比起黑石的防御障碍来说要差得多.然后,我们的部队会涌向南部地区,然后一个接一个的解决所有的阵营.</text>
+	</string>
+	<string id="greh_prisoner_dialog_991">
+		<text>我不会告诉你的!我不会暴露我们的任务!我不会背叛我们伟大而正直的事业!</text>
+	</string>
+	<string id="greh_prisoner_dialog_10">
+		<text>你看,这并不难.谢谢你的帮助.希望你的头在这之后能感觉好一点.</text>
+	</string>
+	<string id="greh_prisoner_dialog_1001">
+		<text>好吧,那毫无意义.</text>
+	</string>
+	
+	<string id="lazarus_greeting_0">
+		<text>怎么了,老兄?</text>
+	</string>
+	
+	<string id="lazarus_story_0">
+		<text>那么,你就是那个在利曼斯克被"游荡者"逮住的人.你的名字叫什么?</text>
+	</string>
+	<string id="lazarus_story_1">
+		<text>是的.我的名字...我记不起来我的真名了.在"原罪"里,他们都叫我波斯格拉夫,所以我想我会继续用这个名字的.</text>
+	</string>
+	<string id="lazarus_story_2">
+		<text>你记不起来了?不管如何,你为啥加入纪律团?</text>
+	</string>
+	<string id="lazarus_story_21">
+		<text>你记不起来了?不管如何,你为什么成了一个佣兵?</text>
+	</string>
+	<string id="lazarus_story_22">
+		<text>你记不起来了?我知道你现在选择成为了一个独行的潜行者.</text>
+	</string>
+	<string id="lazarus_story_23">
+		<text>你记不起来了?不管如何,你为什么而加入晴空组织?</text>
+	</string>
+	<string id="lazarus_story_24">
+		<text>你记不起来了?不管如何,你为什么而加入自由军?</text>
+	</string>
+	<string id="lazarus_story_25">
+		<text>你记不起来了?不管怎么样,你为什么加入生态学家那一伙人?</text>
+	</string>
+	<string id="lazarus_story_3">
+		<text>你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定调整下自己,然后再加入纪律团.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_31">
+		<text>你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定再当一次雇佣兵.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_32">
+		<text>是啊.你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定回归本我,做一个正常的潜行者.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_33">
+		<text>你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定调整下自己,然后再加入晴空组织.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_34">
+		<text>你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定成为自由军的一份子.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_35">
+		<text>你帮助我摆脱了"黑暗之神"切尔诺伯格的洗脑控制,但是我的记忆仍然很模糊."游荡者"决定放我走,既然你对我手下留情,我决定加入生态学家那一伙儿人.如果你愿意的话,我可以帮你,我记不起来我原来究竟是不是一个技师了,不过我仍然记得如何修东西,嘿嘿~</text>
+	</string>
+	<string id="lazarus_story_4">
+		<text>我会考虑的.等一下,你只带了一把手枪就跑了这么远?</text>
+	</string>
+	<string id="lazarus_story_5">
+		<text>不知怎么的,我设法做到了.当我被"原罪"所招募后,他们对我做了一些事...一些我认为使我有所进步的事.你知道,他们给了我一线希望.</text>
+	</string>
+	<string id="lazarus_story_6">
+		<text>真不错.我会考虑你的提议的.</text>
+	</string>
+	
+	<string id="lazarus_repair_0">
+		<text>嘿,伙计,你能修理我的装备吗?</text>
+	</string>
+	
+	<string id="lim_stalker_scout_dialog_0">
+		<text>啊...真该死...</text>
+	</string>
+	<string id="lim_stalker_scout_dialog_1">
+		<text>你是侦察小队的队员吗?发生了什么?</text>
+	</string>
+	<string id="lim_stalker_scout_dialog_2">
+		<text>是的...吸血怪抓到了我们...快...找到...PDA,它应该就...就掉在附近的...的某个地方...</text>
+	</string>
+	<string id="lim_stalker_scout_dialog_3">
+		<text>撑住,让我帮你治疗.</text>
+	</string>
+	<string id="lim_stalker_scout_dialog_4">
+		<text>太迟了...去...找到PDA...要...尽快...</text>
+	</string>
+	<string id="lim_stalker_scout_dialog_5">
+		<text>明白了.</text>
+	</string>
+	
+	<string id="greh_sabaoth_start_0">
+		<text>我一直在等你.</text>
+	</string>
+	
+	<string id="kat_greh_sabaoth_mortal_sin_0">
+		<text>你远道而来,已经走了很长一段路.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_1">
+		<text>一个接待人员,太好了.还好我没在一看见你的时候就开枪.先生你是...?</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_111">
+		<text>立刻表明你的身份.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_121">
+		<text>你他妈是谁?</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_2">
+		<text>我的信徒们开始习惯于叫我"黑暗之神"切尔诺伯格.我看到了,在那遥远之处,仙境(Vyraj)散发出的微弱光芒...我发誓...我要把那光芒带给这个暴力的世界.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_3">
+		<text>...?</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_4">
+		<text>对...来重新认识一下特异区：一个念域和生物圈的综合体,然后,再来认识下念域有多么的充满毁灭性和渴望.没有什么事物能比这再简单直接不过的反映人性了.但是,特异区...特异区可能是我们脱离轨道的补救方法.如果它的范围扩散到了全球,那么每个地球上的人都能够看清自己的真实面目.再也没有欺骗...同样也再也没有妄想.然后,"治疗"就可以开始了.我需要你停止杀害我的孩子们...我需要你让他们给这个不安的世界带来真正的和平.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_5">
+		<text>对不起咯,我想是我搞的破坏,但是是你的随从先杀了我们的人的.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_551">
+		<text>超念体曾经试过用类似的极端方法来治愈人性,相反,他们引发了一场灾难.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_561">
+		<text>"和平"?笑话,靠着枪,异常点和令人厌恶的东西来迫使别人接受你所谓的"和平"?不好意思,我他妈的可不在乎一些假先知的所谓什么"神的启示".</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_6">
+		<text>我不指望你能理解这个宏伟的愿景,尽管你对特异区有着比我更为广博的了解,我还是得到了这个任务.我曾经独自对那些不公正的人施以严惩,但我的努力被误解了.因此,我被判了死刑...但万能的主从那些不理解我的人的手下救了我,并且在那之后使我比以往更加强大,给了我新的目标.然而万能的神祂自己却被一个根本什么都不了解的人,也就是你,判了死刑!难道你看不见吗?潜行者对一个完美的世界的到来来说就是一个威胁,对他们来说,恐惧和贪婪总会有一个占据他们的脑袋.我们不能让他们干扰到我们.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_7">
+		<text>对一个马上就要遭受惨痛的失败的人来说,你出乎意料的冷静.准备好接受自己的命运了吗?</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_8">
+		<text>十年之前,当万能的主亲自授权给我的时候,我就接受了自己的命运.我的能力被大大提高,来使这个世界变得更好.我的命运就是为了成功.我不能失败.而你...就不一样了!</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_9">
+		<text>好,是时候结束这一切了.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_10">
+		<text>...就停在这里.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_11">
+		<text>啊...这是个啥...?!?</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_12">
+		<text>那个可笑的可悲的灵能场保护头盔保护不了你.要么你就来看看我所说的真相,要么你们所有人就都死在这里.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_13">
+		<text>我不会...让你...!</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_14">
+		<text>你想怎么挣扎都行,就像千万个在你之前来到这里的可悲灵魂那样.改变是必然的...那些固执的人,那些垂死的人...这再也不会取决于他们了,当然也不取决于你.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_15">
+		<text>去你的...狗屁改变!去你妈的!</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_1551">
+		<text>我不能让这一切发生...我不能!</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_1552">
+		<text>啊...我的头...啊啊啊啊啊啊啊!</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_16">
+		<text>嗯...你如此强烈而坚定的决心真是让我印象深刻.我真心希望你能加入我们.可惜我们是敌人,这件事让我很难过.</text>
+	</string>
+	<string id="kat_greh_sabaoth_mortal_sin_17">
+		<text>很快...我就会把你从苦难中解救出来.你等着,我发誓.</text>
+	</string>
+	
+	<string id="gen_greh_sabaoth_mortal_sin_generators_0">
+		<text>现在你在这里愤怒的大喊大叫,说一些无意义的话,真是可悲.在我们充满和平的世界里,永远也不会有像你这样的人的一席之地.</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_1">
+		<text>你的人都死光了,你现在是个光杆儿司令.史特洛克已经制止了你的计划,就像他在你面前挫败了超念体一样.</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_2">
+		<text>你说什么?</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_3">
+		<text>你说那个你想用来抑制电磁辐射爆发的机器?早就坏了.现在你可阻止不了特异区扩张了.</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_4">
+		<text>多年的苦心经营,以及我的"孩子"们...都没了.我不能让他们的牺牲成为徒劳,我不会...让你毁灭这个世界!我不会放弃,我不可能接受别的选择!</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_5">
+		<text>我说够了就是够了,你已经失败了.准备好和这个世界说再见吧.</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_6">
+		<text>我还没有失败!还有最后一条路可走.我将会与"许愿石"沟通,它会夺走我的命,然后世界就会得到和平...仙境(Vyraj)表现的很明显,正如万能的主所期望的那样,永别了!</text>
+	</string>
+	<string id="gen_greh_sabaoth_mortal_sin_generators_7">
+		<text>你所谓的"和平"其实是毁灭,绝对不可能得逞,"黑暗之神"切尔诺伯格.我很快就会再见到你.</text>
+	</string>
+</string_table>

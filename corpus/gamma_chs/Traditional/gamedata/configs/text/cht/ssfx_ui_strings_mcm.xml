@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+== @ Version: SCREEN SPACE SHADERS = UPDATE 12.3
+== @ Description: SSS MCM strings
+== @ Author: https://www.moddb.com/members/ascii1457
+== @ Mod: https://www.moddb.com/mods/stalker=anomaly/addons/screen=space=shaders
+-->
+<string_table>
+
+	<string id="ui_mcm_menu_ssfx_module">
+		<text>SSS 設定</text>
+	</string>
+
+	<!-- Buttons -->
+	<string id="ui_mcm_ssfx_module_general">
+		<text>通用</text>
+	</string>
+
+	<!-- Rain Module Buttons -->
+	<string id="ui_mcm_menu_ssfx_rain_module">
+		<text>雨天增強</text>
+	</string>
+
+	<string id="ui_mcm_menu_ssfx_rain_main">
+		<text>雨天</text>
+	</string>
+
+	<string id="ui_mcm_menu_ssfx_rain_footsteps">
+		<text>腳步聲</text>
+	</string>
+
+	<string id="ui_mcm_menu_ssfx_rain_hud_raindrops">
+		<text>HUD上的雨滴</text>
+	</string>
+	
+
+	<string id="ui_mcm_menu_ssfx_wetness">
+		<text>濕潤度</text>
+	</string>
+
+	<string id="ui_mcm_menu_ssfx_gloss">
+		<text>光澤度</text>
+	</string>
+
+	<string id="ui_mcm_menu_ssfx_wet_surf">
+		<text>濕潤的表面</text>
+	</string>
+	
+	<!-- General Settings -->
+	<string id="ui_mcm_ssfx_module_general_title">
+		<text>通用設定</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_general_shaderscope_patch_mcm">
+		<text>啟用基於著色器的2D瞄具支援</text>
+	</string>
+	
+	<!-- Etc -->
+	<string id="ui_mcm_ssfx_module_not_installed">
+		<text>模組未安裝</text>
+	</string>
+
+	<string id="ui_mcm_lst_ssfx_quality_low">
+		<text>低</text>
+	</string>
+
+	<string id="ui_mcm_lst_ssfx_quality_medium">
+		<text>中</text>
+	</string>
+
+	<string id="ui_mcm_lst_ssfx_quality_high">
+		<text>高</text>
+	</string>
+	
+</string_table>

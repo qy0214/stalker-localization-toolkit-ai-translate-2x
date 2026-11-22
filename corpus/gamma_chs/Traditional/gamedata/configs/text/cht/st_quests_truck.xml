@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR BANDIT MLR TASK -->
+
+	<string id="trucks_cemetery_bandit_mechanic_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_1_text">
+		<text>卡車墓園的技師讓我找到%s.</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_1_about">
+		<text>兄弟, 我們這裡一半以上的東西都損壞了, 我迫切需要一些工具來幫助小夥子們. 想幫忙嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_1_fetch_about">
+		<text>兄弟, 我們這裡一半以上的東西都損壞了, 我迫切需要一些工具來幫助孩子們. 想幫忙嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_1_fetch_finish">
+		<text>哦, 是的... 這就是我要說的. 告訴你 - 既然你幫了我, 我就幫你打折.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR BANDIT MLR TASK -->
+
+	<string id="trucks_cemetery_bandit_mechanic_task_2_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_2_text">
+		<text>卡車墓園的技師讓我找到%s.</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_2_about">
+		<text>這片區域完全是荒野, 但這裡... 這是個戰略要點, 夥計! 爲了讓同志們獲得儘可能強大的火力, 我們需要一些更好的工具. 再幫我一次, 好嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_2_fetch_about">
+		<text>這個地方完全是一片荒野, 但是這裡... 這是個戰略要點, 夥計! 爲了讓同志們獲得儘可能強大的火力, 我們需要一些更好的工具. 再幫我一次, 好嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_2_fetch_finish">
+		<text>哦, 我操. 你太屌了. 你肯定會得到額外的折扣!</text>
+	</string>
+
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR BANDIT BANDIT TASK -->
+
+	<string id="trucks_cemetery_bandit_mechanic_task_3_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_3_text">
+		<text>卡車墓園的技師讓我去找%s.</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_3_about">
+		<text>當我意識到我們失去了什麼時, 我只是坐在那裡, 心灰意冷. 沒錯, 我需要更好的工具!不管怎樣, 有福同享? 想幫忙嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_3_fetch_about">
+		<text>當我意識到我們錯過了什麼的時候, 我簡直呆若木雞. 沒錯, 我需要更好的工具! 不管怎樣, 有福同享? 想幫忙嗎?</text>
+	</string>
+	<string id="trucks_cemetery_bandit_mechanic_task_3_fetch_finish">
+		<text>哇哦, 你真的做到了! 謝謝, 夥計, 你是最棒的. 最大的折扣給你, 好好享受吧!</text>
+	</string>
+
+</string_table>

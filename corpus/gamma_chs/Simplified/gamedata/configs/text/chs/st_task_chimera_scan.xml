@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+<string id="yan_stalker_sakharov_task_chimera_scan_name">
+	<text>思维导图</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_about">
+	<text>你听说过双头狮俗称奇美拉, 对吧? 科学界对这种生物是否仅仅是一种严重变异的动物, 进化出了一个类似人类头部的东西, 还是严重违反科学伦理的结果存在很多争论. 为了揭开这个谜团, 我们需要更多的数据.我们的技术人员准备了一种特殊的设备来记录大脑发出的精确电磁波, 我无意冒犯, 但我怀疑你是否能理解下面的解释. 总之, 我们需要的是一个志愿者去接触一个特定的奇美拉样本并记录下它的大脑信号. 当然, 这必须在变异怪物还活着的时候完成, 这就是任务的难点所在. 你必须靠近它, 并在设备稳定下来并成功记录信号之前存活下来. 在那之后, 没有必要让这个可怜的生物活着, 但这取决于你.</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_0">
+	<text>待在指定的奇美拉附近, 记录它的脑电波</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_1">
+	<text>恢复设备</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_stage_2">
+	<text>返回萨哈洛夫</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_start">
+	<text>初始化完成: 扫描开始</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_error">
+	<text>错误: 信号丢失, 扫描中止</text>
+</string>
+<string id="yan_stalker_sakharov_task_chimera_scan_complete">
+	<text>扫描完成.</text>
+</string>
+<string id="chimera_scan_device_name">
+	<text>脑电波扫描仪</text>
+</string>
+<string id="chimera_scan_device_desc">
+	<text>这是一种用来记录附近电磁波的装置, 它被专门用来分离特定奇美拉样本的神经振荡.</text>
+</string>
+</string_table>

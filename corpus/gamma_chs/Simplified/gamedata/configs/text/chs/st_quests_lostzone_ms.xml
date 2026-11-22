@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--===========================================================
+<
+< TEXT STRINGS FOR LOST TO THE ZONE: MORTAL SIN TASKS
+<	Anomaly 1.5 = Lost to the Zone: Mortal Sin
+<
+<	Made by: SarisKhan
+<	Last revised: 25 August 2020
+<
+<===========================================================-->
+
+<string_table>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 1 -->
+	<string id="lttz_ms_start_title">
+		<text>致命原罪: 神秘人</text>
+	</string>
+	
+	<string id="lttz_ms_start_dolg_descr">
+		<text>沃罗宁将军想让你审问一个在辐射100酒吧骚扰潜行者的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_dolg_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报, 向沃罗宁将军汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_dolg_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报.向沃罗宁将军汇报情况</text>
+	</string>
+	
+	<string id="lttz_ms_start_killer_descr">
+		<text>达什曼想让你审问一个在死城基地骚扰佣兵的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_killer_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报, 向达什曼汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_killer_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报, 向达什曼汇报情况</text>
+	</string>
+	
+	<string id="lttz_ms_start_stalker_descr">
+		<text>西多洛维奇想让你审问一个在菜鸟村骚扰潜行者的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_stalker_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报, 向西多洛维奇汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_stalker_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报.向西多洛维奇汇报情况</text>
+	</string>
+	
+	<string id="lttz_ms_start_csky_descr">
+		<text>冷风想让你审问一个在晴空基地骚扰潜行者的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_csky_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报, 向冷风汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_csky_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报, 向冷风汇报情况</text>
+	</string>
+	
+	<string id="lttz_ms_start_freedom_descr">
+		<text>卢卡什想让你审问一个在自由军基地骚扰潜行者的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_freedom_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报.向卢卡什汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_freedom_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报.向卢卡什汇报情况</text>
+	</string>
+	
+	<string id="lttz_ms_start_ecolog_descr">
+		<text>萨哈洛夫教授想让你审问一个在移动科研地堡骚扰警卫的神秘人</text>
+	</string>
+	<string id="lttz_ms_start_ecolog_descr_talk">
+		<text>你审讯了那个神秘的使者, 得到了一些有用的情报, 向萨哈洛夫教授汇报情况</text>
+	</string>
+	<string id="lttz_ms_start_ecolog_descr_kill">
+		<text>你审讯并杀死了那个神秘的使者, 得到了一些有用的情报.向萨哈洛夫教授汇报情况</text>
+	</string>
+	
+	<string id="vodnik_notes_name">
+		<text>"水妖"沃德尼克的笔记</text>
+	</string>
+	<string id="vodnik_notes_desc">
+		<text>"...许多人加入了我们的事业, 也许是为了理解特异区的伟大之处, 又或是为了寻求一些答案, 而对于我来说, 我仰慕那些先行者们, 他们由上主所创造, 本可独自前往新生的天国, 但却选择净化我们! 并认同我们的价值... 他们还会净化我们的同胞, 我要和他们一道, 共同向世界传播这天国的福音!"</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 2 -->
+	<string id="lttz_ms_red_forester_title">
+		<text>致命原罪: 阴云密布</text>
+	</string>
+	<string id="lttz_ms_red_forester_descr">
+		<text>与守林人列斯尼克谈谈关于红森林中原罪可能进行的活动</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 3 -->
+	<string id="lttz_ms_red_forest_attackers_title">
+		<text>致命原罪: 森林守卫</text>
+	</string>
+	<string id="lttz_ms_red_forest_attackers_descr">
+		<text>守林人列斯尼克推断出了那些你正在调查的神秘潜行者的扎营地点, 解决他们</text>
+	</string>
+	<string id="lttz_ms_red_forest_attackers_descr2">
+		<text>从尸体上搜寻任何有用的信息</text>
+	</string>
+	
+	<string id="attackers_pda_name">
+		<text>原罪小队队长的PDA</text>
+	</string>
+	<string id="attackers_pda_desc">
+		<text>这个PDA原本属于原罪小队队长, 里面包含了一张红森林地图, 上面标记了一组地点, 其中一个没有被探查过, 看上去这只小队正在追赶某些人, 并且他们就差一点就找到这些人了, 此PDA里也包含了许多额外的加密数据, 可能会有用处</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 4 -->
+	<string id="lttz_ms_runaway_title">
+		<text>致命原罪: 摆脱追踪</text>
+	</string>
+	<string id="lttz_ms_runaway_descr">
+		<text>原罪正在追踪某人, 他们原计划是前往森林西部的矿井, 但他们现在都被你打死了, 所以只有你自己去了</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 5 -->
+	<string id="lttz_ms_needle_haystack_title">
+		<text>致命原罪: 大海捞针</text>
+	</string>
+	<string id="lttz_ms_needle_haystack_descr">
+		<text>"缝合者"需要他的黑客设备来完成一项重要任务, 去卡车墓园中的其中一辆巴士残骸上找回该物品, 他之前提到过一个频率: 171兆赫</text>
+	</string>
+	<string id="lttz_ms_return_stitch_descr">
+		<text>你找到了装置, 把它带回给"缝合者"</text>
+	</string>
+	
+	<string id="stitch_decoder_name">
+		<text>"缝合者"的解码器</text>
+	</string>
+	<string id="stitch_decoder_desc">
+		<text>这个有些过时的解码器属于"缝合者", 它应该能够兼容分布在特异区的某些同样过时的电子设备</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 6 -->
+	<string id="lttz_ms_report_title">
+		<text>致命原罪: 拨云见日</text>
+	</string>
+	<string id="lttz_ms_report_dolg_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向沃罗宁将军汇报这一切</text>
+	</string>
+	<string id="lttz_ms_report_killer_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向达什曼汇报这一切</text>
+	</string>
+	<string id="lttz_ms_report_stalker_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向西多洛维奇汇报这一切</text>
+	</string>
+	<string id="lttz_ms_report_csky_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向冷风汇报这一切</text>
+	</string>
+	<string id="lttz_ms_report_freedom_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向卢卡什汇报这一切</text>
+	</string>
+	<string id="lttz_ms_report_ecolog_descr">
+		<text>根据"缝合者"的描述, 看起来原罪正准备掀起一场血雨腥风, 向萨哈洛夫教授汇报这一切</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 7 -->
+	<string id="lttz_ms_ambush_title">
+		<text>致命原罪: 埋伏</text>
+	</string>
+	<string id="lttz_ms_ambush_dolg_descr">
+		<text>原罪士兵正在入侵辐射100酒吧, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_dolg_done_descr">
+		<text>你击退了原罪的伏兵, 向沃罗宁将军汇报</text>
+	</string>
+	<string id="lttz_ms_ambush_killer_descr">
+		<text>原罪士兵正在入侵死城, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_killer_done_descr">
+		<text>你击退了原罪的伏兵, 向达什曼汇报</text>
+	</string>
+	<string id="lttz_ms_ambush_stalker_descr">
+		<text>原罪士兵正在入侵菜鸟村, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_stalker_done_descr">
+		<text>你击退了原罪的伏兵, 向西多洛维奇汇报</text>
+	</string>
+	<string id="lttz_ms_ambush_csky_descr">
+		<text>原罪士兵正在进攻沼泽的渔村, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_csky_done_descr">
+		<text>你击退了原罪的伏兵, 向冷风汇报</text>
+	</string>
+	<string id="lttz_ms_ambush_freedom_descr">
+		<text>原罪士兵正在入侵自由军基地总部, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_freedom_done_descr">
+		<text>你击退了原罪的伏兵, 向卢卡什汇报</text>
+	</string>
+	<string id="lttz_ms_ambush_ecolog_descr">
+		<text>原罪士兵正在入侵移动碉堡, 你得击退他们</text>
+	</string>
+	<string id="lttz_ms_ambush_ecolog_done_descr">
+		<text>你击退了原罪的伏兵, 向萨哈洛夫教授汇报</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task -->
+	<string id="lttz_ms_dark_crusade_title">
+		<text>致命原罪: 暗黑圣战</text>
+	</string>
+	<string id="lttz_ms_dark_crusade_descr">
+		<text>原罪对整个潜行者群体构成了相当大的威胁, 尽你所能来阻止他们</text>
+	</string>
+	<string id="lttz_ms_dark_crusade_descr2">
+		<text>"黑暗之神"切尔诺伯格计划扩大特异区的范围, 使其覆盖全世界! 必须要有人来阻止他!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 8 -->
+	<string id="lttz_ms_preemptive_strike_title">
+		<text>致命原罪: 暗黑圣战</text>
+	</string>
+	<string id="lttz_ms_protect_miracle_machine_descr">
+		<text>原罪正尝试重新启动"神迹装置", 击退实验室入口附近的哨兵小队</text>
+	</string>
+	<string id="lttz_ms_protect_miracle_machine_descr2">
+		<text>原罪正尝试重新启动"神迹装置", 下到实验室里, 杀掉所有挡路的敌人!</text>
+	</string>
+	<string id="lttz_ms_protect_miracle_machine_descr3">
+		<text>原罪正尝试重新启动"神迹装置", 阻止最后一支原罪的作战小队启动"神迹装置"!</text>
+	</string>
+	
+	<string id="lttz_ms_protect_brain_scorcher_descr">
+		<text>原罪正尝试重新启动"焦脑器", 向雷达站进发, 消灭所有敌人来阻止他们重启"焦脑器"!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 9 -->
+	<string id="lttz_ms_to_war_title">
+		<text>致命原罪: 开战</text>
+	</string>
+	<string id="lttz_ms_to_war_descr">
+		<text>原罪启用灵能场发生器的计划失败了, 他们宣布正式开战! 前往利曼斯克, 与"游荡者"会合, 与他一同作战!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 10 -->
+	<string id="lttz_ms_urban_warfare_title">
+		<text>致命原罪: 街头巷战</text>
+	</string>
+	<string id="lttz_ms_urban_warfare_descr">
+		<text>原罪占领了利曼斯克! 擒贼擒王, 刺杀敌军的头目来干扰他们</text>
+	</string>
+	<string id="lttz_ms_urban_warfare_descr2">
+		<text>你击败了原罪的"惩戒者", 向"游荡者"汇报你的成功</text>
+	</string>
+	
+	<string id="drekavac_notes_name">
+		<text>"嚎叫者"德雷卡瓦克的笔记</text>
+	</string>
+	<string id="drekavac_notes_desc">
+		<text>"终于! 经过几年的准备, 我们终于能够继续上主们的计划, 但我们仍未被世人理解, 遗憾, 真是遗憾! ...人类已被欲望蒙蔽了双眼, 仅凭言语已无法让真理被看见! 我们将以暴制暴, 以牙还牙, 只有这样他们才会明白, 通往极乐的救赎之路正在显现! 而我会将这乐土蔓延整个世间! 我, 就是天国的开拓者, 神的代言!"</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 11 -->
+	<string id="lttz_ms_war_prisoner_title">
+		<text>致命原罪: 审讯战俘</text>
+	</string>
+	<string id="lttz_ms_war_prisoner_descr">
+		<text>"游荡者"设法抓到了一个原罪的成员, 审讯他来获得有用的情报</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 12 -->
+	<string id="lttz_ms_contact_lost_title">
+		<text>致命原罪: 失联</text>
+	</string>
+	<string id="lttz_ms_contact_lost_descr">
+		<text>"游荡者"派出的侦察小队全军覆没, 没有完成他们的任务, 你要去调查情况</text>
+	</string>
+	<string id="lttz_ms_contact_lost_descr2">
+		<text>你已经设法从那支侦察小队身上获取了一些情报, 回到"游荡者"那里</text>
+	</string>
+	
+	<string id="contact_lost_pda_name">
+		<text>侦察小队队长的PDA</text>
+	</string>
+	<string id="contact_lost_pda_desc">
+		<text>这个PDA曾经属于"游荡者"派出的那只侦察小队的队长, 在他遭遇不测之前他已经设法记录了一些关于敌军部队的有用信息</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 13 -->
+	<string id="lttz_ms_destruction_site_title">
+		<text>致命原罪: 毁灭之地</text>
+	</string>
+	<string id="lttz_ms_destruction_site_descr">
+		<text>原罪的部队在一个旧建筑工地上扎根, 并巩固了该处, 使其成为了一个防御阵地, 消灭他们! 肃清利曼斯克的敌人并清空通往北方之路的阻碍</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 14 -->
+	<string id="lttz_ms_hospital_assault_title">
+		<text>致命原罪: 医院突袭</text>
+	</string>
+	<string id="lttz_ms_hospital_assault_descr">
+		<text>在利曼斯克击溃原罪的余孽, 并进入被遗弃的医院</text>
+	</string>
+	<string id="lttz_ms_hospital_assault_descr2">
+		<text>将原罪的部队赶出被遗弃的医院, 在你向切尔诺贝利核电站推进的同时不给他们驻防的机会</text>
+	</string>
+	<string id="lttz_ms_hospital_assault_descr3">
+		<text>冥冥之中, 有个声音指引你前往一个神秘潜行者的位置, 去调查情况</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 15 -->
+	<string id="lttz_ms_heart_zone_title">
+		<text>致命原罪: 特异区之心</text>
+	</string>
+	<string id="lttz_ms_heart_zone_descr">
+		<text>在你前往切尔诺贝利核电站北部的同时消灭原罪巡逻队来确保回来时是安全的</text>
+	</string>
+	<string id="lttz_ms_heart_zone_descr2">
+		<text>前往那个被称为"风暴引擎"的不祥之地</text>
+	</string>
+	<string id="lttz_ms_heart_zone_descr3">
+		<text>一个身份不明的潜行者通过PDA联系到了你, 希望他是友军</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 16 -->
+	<string id="lttz_ms_decisive_blow_title">
+		<text>致命原罪: 致命一击</text>
+	</string>
+	<string id="lttz_ms_decisive_blow_descr">
+		<text>原罪残留部队正在战争实验室的入口附近集结, 攻击他们来转移他们的注意力, 掩护史特洛克所进行的破坏任务</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 17 -->
+	<string id="lttz_ms_confrontation_title">
+		<text>致命原罪: 直面黑暗</text>
+	</string>
+	<string id="lttz_ms_confrontation_descr">
+		<text>原罪彻底失败了, 他们罪恶的野心被你粉碎, 该去直面"黑暗之神"了</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 18 -->
+	<string id="lttz_ms_endgame_title">
+		<text>致命原罪: 终局之战</text>
+	</string>
+	<string id="lttz_ms_endgame_descr">
+		<text>追上"黑暗之神"切尔诺伯格, 阻止他邪恶的许愿</text>
+	</string>
+	
+	<string id="chernobog_notes_name">
+		<text>"黑暗之神"切尔诺伯格的笔记</text>
+	</string>
+	<string id="chernobog_notes_desc">
+		<text>"...特异区是一个奇迹, 上主净化了我们, 很快, 特异区也会净化这个世界, 但这神圣的使命却受到了罪人们的阻挠! 那头野兽 -- 史特洛克, 玷污了圣洁的黑石, 进入了上主们的房间, 又摧毁了主在人间的凡体! 然而, 我不能绝望, 我不能让这奇迹被凡人的罪恶和污秽所吞噬, 所以我们"原罪", 为了实现上主们的愿望, 必须从现在开始向暴乱者发动战争, 以此换取永恒的和平!"</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 19 -->
+	<string id="lttz_ms_choice_title">
+		<text>致命原罪: 抉择</text>
+	</string>
+	<string id="lttz_ms_choice_descr">
+		<text>"黑暗之神"已经死了, "许愿石"静静的等待着你的选择</text>
+	</string>
+	<string id="lttz_ms_choice_descr2">
+		<text>与"许愿石"交流</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Task 20 -->
+	<string id="lttz_ms_zone_hero_title">
+		<text>致命原罪: 英雄归来</text>
+	</string>
+	<string id="lttz_ms_zone_hero_dolg_descr">
+		<text>原罪妄图使特异区加速扩张的邪恶计划被你成功阻止, 沃罗宁将军会为你感到骄傲的</text>
+	</string>
+	<string id="lttz_ms_zone_hero_killer_descr">
+		<text>你确保了特异区的延续和稳定, 毕竟这样才是最有利可图的状态, 达什曼应该会好好奖励你</text>
+	</string>
+	<string id="lttz_ms_zone_hero_stalker_descr">
+		<text>你直面了潜行者们都惧怕的事物并凯旋而归, 西多洛维奇肯定会为此吹嘘一番</text>
+	</string>
+	<string id="lttz_ms_zone_hero_csky_descr">
+		<text>你保持了特异区的平衡状态, 冷风一定会乐见这样的结果</text>
+	</string>
+	<string id="lttz_ms_zone_hero_freedom_descr">
+		<text>一个妄图凌驾于全人类之上的暴君被你消灭了, 卢卡什肯定会对你大加赞赏</text>
+	</string>
+	<string id="lttz_ms_zone_hero_ecolog_descr">
+		<text>你从任何生态学家都不敢涉足的领域全身而退, 让特异区的研究工作得以持续进行, 萨哈洛夫教授一定想了解更多细节</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	
+	<!-- ========================================================================================= -->
+	<!-- Mortal Sin Unquenchable Flame Tasks -->
+	<string id="unquenchable_flame_task_name">
+		<text>不灭之火</text>
+	</string>
+	<string id="unquenchable_flame_task_text">
+		<text>原罪的幸存者正在扎顿聚集, 扑灭这仅存的罪恶之火</text>
+	</string>
+	
+	<string id="esc_m_trader_task_4_about">
+		<text>潜行者, 我知道你已经和那些"原罪"的疯子打过一场恶仗了, 但是大胡子告诉我他们的余孽又开始在扎顿频繁活动, 几名潜行者的报告说, 他们在扎顿的废弃变电站建立了一个据点, 还好几次危及了我的商队, 这简直无法接受! 去让他们永远长眠吧!</text>
+	</string>
+	<string id="esc_m_trader_task_4_finish">
+		<text>你简直是单枪匹马有如神助啊! 干得好! 而我真的希望再也不会听到关于他们的消息了</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_4_about">
+		<text>你单枪匹马地杀光了所有原罪疯子的事迹早就传开了, 但其实他们还没有被完全消灭, 我们在扎顿污水站的人报告说, 旁边废弃的变电站附近有原罪的可疑踪迹, 在他们开始下一场疯狂的"暗黑圣战"之前消灭他们!</text>
+	</string>
+	<string id="cit_killers_merc_trader_stalker_task_4_finish">
+		<text>知道我为什么信赖你吗? 因为你总是能像一个真正的专业人士那样完成工作, 这是你的报酬, 拿去庆祝一下吧!</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_3_about">
+		<text>该死! 我本来都快忘了几年前发生的那些破事, 结果那些疯子们突然又回来了? 操! 就不能让我消停会儿吗? 我们的斥候在扎顿的废弃变电站附近发现了原罪的幸存者, 他们竟然又在重新集结, 尽管路途遥远, 但那些疯子们就像癌症一样肆无忌惮的滋长, 晴空绝不能坐视不管! 带上我们的弟兄们一起, 把他们彻底干掉!</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_3_finish">
+		<text>啊! 干得好, 我想我们的仗终于打完了吧? 接下来的几年里不会再有类似情况发生了, 对吧...</text>
+	</string>
+		
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+</string_table>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Mechanic -->
+	<string id="dasc_tech_mlr_task_1_name">
+		<text>找來%s</text>
+	</string>
+	<string id="dasc_tech_mlr_task_1_text">
+		<text>鋸木廠的技師讓你為他找來%s.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_1_about">
+		<text>正如你瞭解的, 這邊的荒野充滿了異常. 就如同這個鋸木廠一樣, 除了木頭之外什麼也沒有留下. 我需要一些工具來工作... 如果你能弄到一個基礎工具, 請把它們帶來.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_1_fetch_about">
+		<text>正如你瞭解的, 這邊的荒野充滿了異常. 就如同這個鋸木廠一樣, 除了木頭之外什麼也沒有留下. 我需要一些工具來工作... 如果你能弄到一個基礎工具, 請把它們帶來.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_1_fetch_finish">
+		<text>謝謝... 這樣就簡單多了. 收下這個神器 - 它叫做"海膽石". 非常罕見.</text>
+	</string>
+
+	<string id="dasc_tech_mlr_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="dasc_tech_mlr_task_2_text">
+		<text>鋸木廠的技師讓你為他找來%s.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_2_about">
+		<text>既然你已經找到一組工具, 那你碰巧知道一些更高級的工具在哪裡嗎? 我迫切地需要它們.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_2_fetch_about">
+		<text>既然你已經找到一組工具, 那你碰巧知道一些更高級的工具在哪裡嗎? 我迫切地需要它們.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_2_fetch_finish">
+		<text>謝謝你, 謝謝你. 這兒是些小小的報酬.</text>
+	</string>
+
+	<string id="dasc_tech_mlr_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="dasc_tech_mlr_task_3_text">
+		<text>鋸木廠的技師讓你為他找來%s.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_3_about">
+		<text>我明白, 我在這個被上帝拋棄的地方可能問得太多了, 但也許你能幫我找到第三個, 更全面的工具? 專家級工具箱將滿足我的所有要求.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_3_fetch_about">
+		<text>我明白, 我在這個被上帝拋棄的地方可能問得太多了, 但也許你能幫我找到第三個, 更全面的工具? 專家級工具箱將滿足我的所有要求.</text>
+	</string>
+	<string id="dasc_tech_mlr_task_3_fetch_finish">
+		<text>感謝你幫我的一切. 也許這個可憐的地方總有一天會變成一個成熟的營地.</text>
+	</string>
+
+
+</string_table>

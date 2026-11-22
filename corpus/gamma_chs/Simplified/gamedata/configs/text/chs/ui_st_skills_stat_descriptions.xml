@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_player_skill_stats">
+        <text>\n技能系统:</text>
+    </string>
+
+    <!-- Scavenging -->
+    <string id="st_player_skills_hint_scavenging">
+		<text>在潜行者身上获取额外物品的能力\n\n
+		搜刮潜行者尸体可获得经验, 排名更高的潜行者尸体上可以获得更多经验\n\n</text>
+	</string>
+	<string id="st_skills_stats_scavenging_skill_positive">
+        <text>\n%c[255,86,102,255]•%c[ui_6] 发现额外物品: %c[d_green]$stat%</text>
+    </string>
+    <string id="st_skills_stats_scavenging_skill_negative">
+        <text>\n%c[255,86,102,255]•%c[ui_6] 搜刮失败几率: %c[d_red]$stat%</text>
+    </string>
+
+
+    <!-- Strength -->
+    <string id="st_player_skills_hint_strength">
+		<text>负重和肉搏的能力\n\n
+		负重移动时, 和进行近战攻击时会获得经验\n
+		当前负重越接近最大负重限制, 经验就获取得越快\n\n</text>
+	</string>
+
+    <string id="st_skills_stats_weight_modifer_positive">
+        <text>\n%c[255,255,201,86]•%c[ui_6] 负重增加: %c[d_green]x$stat</text>
+    </string>
+    <string id="st_skills_stats_weight_modifer_negative">
+        <text>\n%c[255,255,201,86]•%c[ui_6] 负重降低: %c[d_red]x$stat</text>
+    </string>
+
+    <string id="st_skills_stats_melee_damage_positive">
+        <text>\n%c[255,255,201,86]•%c[ui_6] 近战伤害增加: %c[d_green]x$stat</text>
+    </string>
+    <string id="st_skills_stats_melee_damage_negative">
+        <text>\n%c[255,255,201,86]•%c[ui_6] 近战伤害降低: %c[d_red]x$stat</text>
+    </string>
+
+    <string id="st_skills_stats_base_weight">
+        <text>\n%c[255,255,201,86]•%c[ui_6] 额外负重奖励: %c[d_green]+$stat kg</text>
+    </string>
+
+    <!-- Survival -->
+    <string id="st_player_skills_hint_survival">
+		<text>物理伤害抵抗和肢解生物的能力\n\n
+		肢解生物和受到攻击(来自子弹和生物的攻击), 会获得经验值, 肢解越强大的生物, 获得的经验值越多\n\n</text>
+	</string>
+    <string id="st_skills_stats_resistance_positive">
+        <text>\n%c[255,135,255,86]•%c[ui_6] 物理抗性增加: %c[d_green]x$stat</text>
+    </string>
+    <string id="st_skills_stats_resistance_negative">
+        <text>\n%c[255,135,255,86]•%c[ui_6] 物理抗性降低: %c[d_red]x$stat</text>
+    </string>
+
+    <string id="st_skills_stats_bleed_restore">
+        <text>\n%c[255,135,255,86]•%c[ui_6] 流血抗性增加: %c[d_green]$stat%</text>
+    </string>
+
+     <string id="st_skills_stats_hunting_skill_positive">
+        <text>\n%c[255,135,255,86]•%c[ui_6] 肢解成功率: %c[d_green]$stat%</text>
+    </string>
+    <string id="st_skills_stats_hunting_skill_negative">
+        <text>\n%c[255,135,255,86]•%c[ui_6] 肢解失败率: %c[d_red]$stat%</text>
+    </string>
+
+    <!-- Endurance -->
+    <string id="st_player_skills_hint_endurance">
+		<text>影响体力和移动速度\n\n
+		非负重状态下移动时会获得经验值\n
+		负重越接近0, 则经验值获取越快\n\n</text>
+	</string>
+    <string id="st_skills_stats_power_loss_positive">
+        <text>\n%c[255,255,86,86]•%c[ui_6] 体力消耗降低: %c[d_green]x$stat</text>
+    </string>
+    <string id="st_skills_stats_power_loss_negative">
+        <text>\n%c[255,255,86,86]•%c[ui_6] 体力消耗增加: %c[d_red]x$stat</text>
+    </string>
+
+    <string id="st_skills_stats_speed_modifier_positive">
+        <text>\n%c[255,255,86,86]•%c[ui_6] 移动速度提升: %c[d_green]x$stat</text>
+    </string>
+    <string id="st_skills_stats_speed_modifier_negative">
+        <text>\n%c[255,255,86,86]•%c[ui_6] 移动速度降低: %c[d_red]x$stat</text>
+    </string>
+</string_table>

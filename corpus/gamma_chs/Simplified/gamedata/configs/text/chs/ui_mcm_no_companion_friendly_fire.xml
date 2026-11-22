@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_title_nomorefriendlyfire">
+		<text>同伴伤害设置</text>
+	</string>
+	<string id="ui_mcm_menu_nomorefriendlyfire">
+		<text>同伴伤害设置</text>
+	</string>
+	<string id="ui_mcm_nomorefriendlyfire_npcprotect">
+		<text>保护NPC</text>
+	</string>
+	<string id="ui_mcm_nomorefriendlyfire_npcprotect_desc">
+		<text>保护同伴免受玩家的伤害</text>
+	</string>
+	<string id="ui_mcm_nomorefriendlyfire_acprotect">
+		<text>保护玩家</text>
+	</string>
+	<string id="ui_mcm_nomorefriendlyfire_acprotect_desc">
+		<text>保护玩家免受同伴的伤害</text>
+	</string>
+</string_table>

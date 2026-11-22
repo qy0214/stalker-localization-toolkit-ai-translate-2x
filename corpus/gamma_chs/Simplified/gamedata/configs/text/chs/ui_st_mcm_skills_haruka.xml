@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_skill_system_exp_multiplier_strength">
+        <text>力量Exp倍速</text>
+    </string>
+    <string id="ui_mcm_skill_system_exp_multiplier_endurance">
+        <text>耐力Exp倍速</text>
+    </string>
+    <string id="ui_mcm_skill_system_exp_multiplier_scavenging">
+        <text>拾荒Exp倍速</text>
+    </string>
+    <string id="ui_mcm_skill_system_exp_multiplier_survival">
+        <text>生存Exp倍速</text>
+    </string>
+    <string id="ui_mcm_skill_system_title">
+        <text>技能系统配置</text>
+    </string>
+     <string id="ui_mcm_menu_skill_system">
+        <text>技能</text>
+    </string>
+    <string id="ui_mcm_skill_system_debug">
+        <text>Debug</text>
+    </string>
+	<string id="ui_mcm_skill_system_ui_keybind">
+        <text>技能菜单键</text>
+    </string>
+	<string id="ui_mcm_skill_system_ui_keybind_desc">
+        <text>打开菜单,你可以检查你的技能进展. .</text>
+    </string>
+	<string id="ui_mcm_skill_system_update_mcm">
+		<text>更新MCM才能看到这个功能. 默认键位为K</text>
+	</string>
+</string_table>

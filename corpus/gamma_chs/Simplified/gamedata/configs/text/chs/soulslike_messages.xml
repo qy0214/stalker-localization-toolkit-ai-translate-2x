@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+    <string id="st_save_only_when_sleeping">
+        <text>硬核模式存档已启用, 睡眠时和重生时自动存档</text>
+    </string>
+
+    <string id="st_soulslike_your_items">
+        <text>装有部分遗失物品的包裹</text>
+    </string>
+ 
+    <string id="set_spawn_button">
+        <text>设置紧急发信器</text>
+    </string>
+
+    <string id="st_soulslike_spawn_location_set">
+        <text>已更新定位, 如遇不测, 附近的潜行者会把你救回此处</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_generic">
+        <text>从恍惚中清醒后, 你发觉身处某个似曾相识的地方, 但对自己如何返回此处却毫无头绪 </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_generic">
+        <text>你浑身上下摸索了一番, 口袋里好像多了些水和食物</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_generic">
+        <text>你在身上发现了一张带有潦草地图的字条, 某人用扭捏的笔迹试图向你说明他在慌乱中将你的随身物品连同一个简易发信装置放在了某个藏物点, 并留下了接收信号的频段: %s </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_generic">
+        <text>有人动过你的PDA, 还在地图上打了个标记</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_1">
+        <text>哎? 原来你没事吗? 我发现你的时候还以为你死透了呢... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_2">
+        <text>难以置信, 你终于醒了过来! 我发誓你当时扎在土里已经不喘气了! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_3">
+        <text>喂, 我说, 你刚才肯定是在装死吧? 难道是吃了复苏药? 不管怎样, 救人这种事我还是第一次干, 感觉还不错!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_4">
+        <text>嗨! 你还好吧? 我刚才看到你登录了PDA, 应该没什么大事... 还好赶上了, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_initial_5">
+        <text>哈, 你肯定已经醒了吧, 当时你满脸是血昏了过去, 有人拿了你的东西, 准备把你挖坑埋了来着, 还好我及时赶到... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_1">
+        <text>虽然觉得没什么必要, 不过我还是留了一些吃的在你背包里, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_2">
+        <text>我放了些没吃完的干粮和水在你包里, 放心好了, 我还不缺食物, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_3">
+        <text>你的包里有一些食物和水, 也许不够你填饱肚子, 但至少能帮你撑到活着回去吧, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_4">
+        <text>我把我自己的口粮留在你的包里了, 不用为我担心, 其实我能感到你有某种特殊的使命, 所以, 就当是我请客好了! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_food_5">
+        <text>距离你设置发信器的时间已经很久了, 所以我留了点吃的和喝的给你, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_1">
+        <text>当时你的头上都是血, 鬼知道你还记得什么, 所以我干脆用你的PDA做了标记, 万一你要回去找东西呢? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_2">
+        <text>你的PDA上有我做的地图标记, 如果你丢了东西, 可以回去碰碰运气, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_3">
+        <text>当时情况危急, 没时间拿你的七七八八了, 所以我在你PDA上打了标记, 你自己回去找吧, 丢了东西别怪到我身上就行, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_4">
+        <text>说起来, 你重的跟头死猪一样, 扛着你回来已经是极限了, 实在拿不动剩下的东西, 不过我在你PDA里打了记号, 你自己回去找找吧, 兴许还在原地, 丢了也别来找我就是了, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_pda_5">
+        <text>无论如何, 你还是应该减减肥, 加上我一共三个弟兄才把你拖回来, 你的东西我也在PDA里做了记号, 动作快的话应该还能找得到, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_1">
+        <text>在那种情形下, 把你弄回来已经让我惹上大麻烦了, 所以我拿了一点你的东西作为回报, 不过分吧? 反正对于你来说都是身外之物而已, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_2">
+        <text>要知道, 我当时已经是自身难保, 所以我干脆借用了一些你的东西, 剩下的我标记在你的PDA里了, 说是借, 但你不会真的回来找我要的吧? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_3">
+        <text>话虽如此, 但背你回来的途中我的左后方有三只摄魂怪在吸吸吸, 右边还有五只奇美拉在追追追, 而我这种杂鱼也没什么好装备, 所以只好让你背包里的东西物尽其用了, 剩下的都标记在你的PDA里, 不用谢我, 我只是顺手牵... 顺手救人而已, 嗯, 顺手救人, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_4">
+        <text>其实, 当时我也受了重伤, 所以只好拿了些你的东西救急, 其余的物品我已经给你标记了, 别怪我啊, 我要是挂了的话, 咱俩就都回不来了... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_used_items_5">
+        <text>讲道理的话, 我这个人喜欢小偷小摸, 从来不会拿死人的东西, 但你还没死, 所以这就不能怪我了吧? 虽然已经有人付了钱, 但你的那些东西就当作我的小费好了, 剩下的垃圾我都标记在你的PDA里, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_1">
+        <text>那么, 祝你好运吧, 神秘的潜行者!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_2">
+        <text>那么, 再会了! 潜行者...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_3">
+        <text>我觉得, 最好永远不要再见了吧, 你这命大的家伙...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_4">
+        <text>下次当心点吧, 没准可就真死了!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_stay_safe_5">
+        <text>总之, 下次晕过去的时候请你换个好看点的姿势...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_1">
+        <text>还有一件事, 其实有个鬼鬼祟祟的 %s小子先我一步发现你 - 我后来打听了一下, 他应该是叫 %s 来着 - 正在乱搞你的枪, 好像还拆了什么东西下来, 你拿到枪以后最好检查一下; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_2">
+        <text>其实当我找到你的时候, 有个%s一样打扮的人, 名字叫 %s, 正在拆你的武器, 我见过他, 经常倒卖一些很抢手的零件之类的, 所以你拿到武器之后好好检查一下, 鬼知道这个哥们顺走了什么东西... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_3">
+        <text>你猜当我找到你的时候发现了什么人? 一群%s ! 虽然我好言相劝, 但领头的那个还是从你枪上硬是扯了什么东西下来, 他说他叫%s, 说我多管闲事, 还拿枪对着我叫我滚蛋! 虽然我混的一般, 但也没受过这个气! 拜托你有空帮我教训一下这个装B犯, 噢, 别忘了先把你的枪修好!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_4">
+        <text>另外, 本来不想说的, 其实我找到你的时候, 一群变异犬正准备啃你的屁股, 其中一个可能眼神不好, 抓住你的枪就啃了起来, 我听到咯嘣一声, 如果不是它的牙齿掉了, 那就一定是你的枪坏了, 紧接着走过来了一支%s的巡逻队, 于是我就和他们一起杀光了变异犬, 巡逻队里有个人叫%s, 和我有交情, 就这样, 我才顺利地把你拖了回来; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_tarkov_looter_5">
+        <text>顺带一提... 如果之后你发现你的枪有问题的话, 我可以很负责任的告诉你: 当我和我的%s朋友发现你时, 其实看到你用很微妙的姿势卡在了地面, 身体还在不停的抽搐, 脖子和四肢都伸长成面条一样, 我听说这是一种新的异常现象, 叫做"BUG" - 一种空间不稳定造成的局部形变, 你的枪一定是在那个时候搞坏了, 真是可惜, 好在你没事, 只是肩膀脱臼而已... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_1">
+        <text>我找到你时, 有个穿着 %s 制服的家伙在搜你的身, 我的PDA比较"高级", 所以我查到了他的名字: %s, 之后我对着他的位置开了一枪 - 也不知道打中没有 - 他就跑了, 如果你丢了东西, 去找那个家伙吧, 肯定还在他身上; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_2">
+        <text>我这么晚才去救你, 是因为一支 %s 的运输队一直停在你附近不走, 我躲在旁边听到一个人喊: "%s ! 搞快点! 头儿等不急了!", 这时我才看到一个人影在你身上翻来翻去, 他好像拿了些东西, 还往你身上踹了一脚才离开, 所以, 你先把在PDA上打了一半准备发给我的脏话给删了, 然后动作快点, 说不定还能追上他; </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_3">
+        <text>我老远就看到你挂在树上, 但是附近有很多 %s 的成员, 我根本没办法接近, 其中有个家伙把你的背包从树上拽了下来, 接着就开始坐在地上吃你的东西, 还把你的烟都散给别人抽, 最后还在你身上做连续蹲起的动作 - 我不太懂那是什么意思, 当他们经过我躲藏的灌木时, 我认出来了那个人: %s , 是个出了名的烂人, 这种有便宜就占的家伙, 我是不会介意你事后稍微教训一下他的... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_4">
+        <text>发现你纯属偶然, 我本来已经放弃了搜寻, 一路小跑着往回走, 结果被你的身体绊了一跤, 摔到了一个坑里人事不省; 当我醒来时, 发现一个 %s 模样的家伙正在掏我的包, 可能是以为我死了吧, 看到我突然睁开眼睛, 他就一边发出娘娘腔的叫声一边跑掉了, 他手里拿着的PDA都直接扔了出去! 我打开看到了这个名字: %s , 他肯定已经拿走了你包里的东西, 快去找他吧! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_enemy_looter_5">
+        <text>那个... 我多说一句, 你认识 %s 那边的朋友吗? 其实, 我看到你的时候, 那帮人中的某个家伙正在对着你做一些下流的事情, 简直变态, 我实在看不下去, 于是开了几枪, 他裤子都没来得及穿就跑掉了, 我看了他裤兜里的PDA才知道他的名字: %s, 如果你丢了什么值钱的玩意, 去找他就对了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_1">
+        <text>我找到你的时候好巧不巧, 正好赶上一场能量风暴, 而我只来得及把你拖走, 你的背包什么的都在原地, 这里可是特异区, 你懂的, 所以风暴结束后我又回去把你的东西藏好才走, 你可以用射频接收器监听 %s 频段来找到你的包, 没错, 我在里面放了个简易发信器, 不用谢我了, 这都是上面的安排, 鬼知道你是什么来头, 不过我也不想知道, 这地方诡异的事情已经够我受的了... </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_2">
+        <text>你应该庆幸遇到我这种专业人士, 你的东西都被我藏好了, 里面还有一个简易发信装置, 你去搞一个射频接收器, 然后调到 %s 频段, 当接近的时候会有提示音的, 我把频段数字写在一张纸条上给你了, 免得你忘记, </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_3">
+        <text>当时四周都是土匪的人, 你的东西留在那里实在太危险, 所以我存到了附近一个只有我知道的藏物点, 你用射频接收器, 调到 %s 频段就能收到我放在里面发信器的信号, 频段我也写到了一张纸条上给你了, 具体方法不用我再教你了吧? 据我所知, 像你这样有背景的人, 都不是什么善茬, 给新手的那一套说辞我终于可以省省了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_4">
+        <text>你问我为什么只把你抬回来? 那你想想自己往背包里面装了什么? 那成吨的垃圾指望我一个人搬? 虽说这个工作本来就是体力活, 上头给的报酬也不少, 但你那些七七八八的我实在搬不动, 于是我就拖到附近一个藏物点给埋了起来, 放心好了, 我相信就算我放着不管, 也没人会往你那堆垃圾多看两眼, 不过我是个说到做到的人, 所以我还是放了发信器进去, 甚至还写了个备忘的纸条塞到你的裤兜里, 用射频接收器的 %s 频率去找你的垃圾吧! </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_radio_freq_5">
+        <text>在这个鬼地方, 哪怕是掉在地上的一颗螺栓, 转眼都会被人捡跑, 所以你的东西我都帮你藏到了安全的地方, 你的包里有张纸条, 记录了一个频段数字, 简单来说, 你用射频接收器调到 %s 这个频率, 然后接近那里的话就能收到提示音了, 因为我在里面放了一个发信器, 虽说是安全的地方, 但也只是相对而已, 如果丢了什么东西的话, 肯定不是我拿的就是了...</text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_1">
+        <text>我把你的东西藏起来了, 就在你PDA里标记的地方, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_2">
+        <text>你包里的零碎玩意儿, 我都塞到附近一个藏物点了, 顺着你PDA里的标记去找吧!</text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_3">
+        <text>你这家伙下次最好少带点东西, 为了藏你的垃圾, 我差点被猪给顶飞! 地点我标记在你的PDA里了, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_4">
+        <text>看着你包里乱七八糟的德性, 我就想到了我曾是菜鸟的日子, 按照我给你PDA里的标记去找吧, 应该不会有人知道那个藏物点的, </text>
+    </string>
+
+    <string id="st_soulslike_hidden_stash_5">
+        <text>你的物品都在一个安全的地方呆着, 如果不想节外生枝, 就赶紧按照我给你PDA里的标记去拿吧!</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_1">
+        <text>你还真是幸运, 好在我们及时发现了你, 你怎么会跑到%s来的? 而且还就带这么点装备? 多亏了我的弟兄们, 不然你连皮带骨都已经烂在下面了, 你的装备应该没人动过, 如果少了东西, 不要怪到我们头上...</text>
+    </string>
+    
+    <string id="st_soulslike_rescuer_indoor_2">
+        <text>我说老弟, 你是怎么想的? 穿着一堆破烂一个人跑到%s这里, 一副完全没有准备好的样子, 这可不是外面, 如果没人及时来救你的话, 你早就凉透了! 真是佩服你的勇气, 好在这鬼地方没什么其他人来转, 你的物品应该都还在, 如果有机会的话, 你真应该请我喝一杯! 哈, 开玩笑的, 为了救你, 上头还真是肯花钱呢...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_3">
+        <text>呵, 瞧瞧这是谁, 这次你怎么又跑来了 %s ? 我有时候很好奇, 你到底来特异区干嘛的? 搜寻神器? 还是找什么人? 算了, 反正只要有人付我钱, 我也可以不关心这些细节...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_4">
+        <text>好吧, 这次是死在了%s, 我上次说过什么来着? 你还真是不给人省心啊, 知道上面为了救你下了多少血本吗? 你的东西应该不会少的, 毕竟除了你, 和跟在你屁股后面救你的我们, 还会有谁去那种鬼地方么? </text>
+    </string>
+
+    <string id="st_soulslike_rescuer_indoor_5">
+        <text>哇! 这是真的! 我还以为不死人什么的都是瞎扯! 喂, 你是怎么做到的? 是把某种神器给磨成粉吞进肚子了? 还是嵌在脑袋上了? 运气好? 别骗人了, 每次你都能被救活, 也实在太巧了吧? 不过, 你的装备好像没什么特别的, 也没人动过你的背包, 真是万幸! 所以应该说什么来着... 赞美太阳?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_1">
+        <text>关于你屁股上的伤, 我实际上不想讲的, 但那个吸血怪实在是太大了, 我只好先用你挡了一下... 所以你的背包和左半边屁股都掉了下去, 你回去拿东西的时候要小心点, 鬼知道那里还有什么怪物</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_2">
+        <text>对于我这样的猎手来说, 赶跑那些准备去啃你的野猪什么的并非难事, 我担心的是那些更大的怪物会不会闻声赶来... 啊, 我难道没有告诉你, 你的背包还在那里吗? 哈哈, 管他呢, 反正都是些垃圾, 不要也可以的吧?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_3">
+        <text>是的, 我承认当那个史诺克把管子插进昏迷的你嘴里的时候, 我犹豫了一下, 但训练有素的我还是及时开了枪, 只不过好像打中了你的背包, 应该无所谓的吧, 而你应该感谢我阻止了那些恶心怪物继续亵渎你的身体, 之后我扛起你就跑, 为了引开它们的注意力, 我就又把你的背包丢了出去, 所以我的任务完成的还算完美这一点, 你是同意的吧?</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_4">
+        <text>说真的, 那个地方实在太危险了, 当时我身上的子弹也用完了, 根本没办法驱赶那些啃你肚脐眼的怪物, 但好歹我灵光一现, 拿起你的背包就丢到了旁边的爆燃异常点, 轰! 的一声就把那些奇形怪状的玩意儿给吓没影了, 当然, 之后我才想起来我身上其实是有螺栓的, 只不过情况危急, 偶尔脑子卡住也是可以理解的吧? 至于怎么取回包裹这件事情, 好像不在我的工作范围, 你自己小心怪物就是了...</text>
+    </string>
+
+    <string id="st_soulslike_rescuer_monster_looter_5">
+        <text>我有说过我超级讨厌豚兽这件事吗? 尤其是它们吞吐东西时的光景, 实在是难以形容, 所以在当时那个瞬间, 到底应该把你从那只老豚兽缺了牙还流着脓液的巨口中拉出来, 还是应该丢下你不管, 我的内心是做了一番斗争的, 扛着你回来之后我才发现你的背包不见了, 也许还在那个豚兽肚子里也说不定? 不过这就不在我的能力范围了, 毕竟, 我恶心得已经一天没吃东西了...</text>
+    </string>
+
+</string_table>

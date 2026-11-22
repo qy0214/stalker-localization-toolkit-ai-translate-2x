@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="ui_mcm_swm_legs_title">
+		<text>SWM視覺化身體！移植自 Shoker Weapon Mod用於CoP/SWM開發者：Shoker、РикошеТ等!</text>
+	</string>	
+	<string id="ui_mcm_menu_swm_legs">
+		<text>SWM視覺化身體</text>
+	</string>
+	<string id="ui_mcm_swm_legs_hide_legs_low_crouch">
+		<text>在低蹲模式下隱藏身體</text>
+	</string>
+	<string id="ui_mcm_swm_legs_legs_offset">
+		<text>身體位置（更近/更遠）</text>
+	</string>
+	<string id="ui_mcm_swm_legs_legs_offset_side">
+		<text>身體位置（左/右）</text>
+	</string>
+	<string id="ui_mcm_swm_legs_toggle_turn_step_sound">
+		<text>轉身時啟用腳步聲</text>
+	</string>
+	<string id="ui_mcm_swm_legs_toggle_turn_step_sound_exo">
+		<text>啟用穿動力甲時的轉身腳步聲</text>
+	</string>
+	<string id="ui_mcm_swm_legs_turn_step_sound_volume">
+		<text>腳步聲</text>
+	</string>
+	<string id="ui_mcm_swm_legs_use_hd_models">
+		<text>啟用高清模型身體（需要HD模型外掛！！）</text>
+	</string>
+	<string id="ui_mcm_swm_legs_disabled">
+		<text>解除安裝MOD（安全刪除!!）</text>
+	</string>
+		<string id="ui_mcm_swm_legs_use_combat_state">
+		<text>戰鬥中/脫離戰鬥使用不同動畫</text>
+	</string>
+	<string id="ui_mcm_swm_legs_use_slow_down_state">
+		<text>根據移動速度使用不同動畫</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_blood">
+		<text>(實驗性功能) 啟用身體上的血漬</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_dirt">
+		<text>(實驗性功能) 啟用身體上的污漬</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_idle_anims">
+		<text>發呆時啟用隨機的待機動畫</text>
+	</string>
+	<string id="ui_mcm_swm_legs_idle_anim_min_cooldown">
+		<text>待機動畫最小間隔時間 (秒)</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_idle_anim_max_cooldown">
+		<text>待機動畫最大間隔時間 (秒)</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_use_special_noncombat_shift">
+		<text>脫離戰鬥時使用特殊身體位置</text>
+	</string>
+	<string id="ui_mcm_swm_legs_legs_offset_noncombat">
+		<text>脫離戰鬥時的身體位置遠近距離</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_visual_upg_enabled">
+		<text>啟用護甲升級部位視覺化</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_enable_debug_warnings">
+		<text>啟用 debug 資訊</text>
+	</string>
+	
+	<string id="ui_mcm_swm_legs_disabled_desc">
+		<text>安全地刪除該MOD.\n1)點選它\n2)檢視SWM身體是否去除\n3)存檔,退出后並禁用外掛</text>
+	</string>
+		<string id="ui_mcm_swm_legs_use_combat_state_desc">
+		<text>啟用后, 玩家在脫離戰鬥時, 某些身體動畫會被換成另一個版本 (比如持續槍動作向下等等)\n
+		如果禁用, 只有預設動畫會被播放</text>
+	</string>
+	<string id="ui_mcm_swm_legs_use_slow_down_state_desc">
+		<text>啟用后, 玩家的移動速度因為各種因素改變時, 某些身體動畫會被換成另一個版本 (如衝刺動作會變成"小跑", 如果移動速度太低的話)</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_blood_desc">
+		<text>啟用后, 當玩家受到足夠的物理傷害, 身上會出現血漬, 由於引擎機能限制, 目前並不能保證產生的可靠性和永續性, 所以只是實驗性功能</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_dirt_desc">
+		<text>啟用后, 當玩家走入髒污的地面, 如水坑和泥坑等等, 身上會出現污漬, 由於引擎機能限制, 目前並不能保證產生的可靠性和永續性, 所以只是實驗性功能</text>
+	</string>
+	<string id="ui_mcm_swm_legs_enable_idle_anims_desc">
+		<text>當玩家站立發呆時, 過一段時間後會自動播放發呆動畫, 只會在向下看時播放, 並伴隨一些微小的聲響\n
+		說明:\n
+		1) 此功能本意是與"戰鬥/非戰鬥動畫"選項配合使用, 如果只啟用此選項, 效果可能較差\n
+		2) 修改過間隔時間后, 也許需要等待一段時間才會生效</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_visual_upg_enabled_desc">
+		<text>如果你的護甲已經進行過防彈升級, 則身體上會顯示一套防彈背心\n
+		目前只實裝了某些輕甲, 還有SSP-99系列護甲</text>
+	</string>
+ 	<string id="ui_mcm_swm_legs_toggle_turn_step_sound_exo_desc">
+		<text>在正常的腳步聲基礎上新增動力甲的傳動馬達音效\n
+		此功能需要安裝動力甲馬達音效MOD\n
+		這些音效的音量由動力甲馬達音效MOD中的腳步音量選項來控制</text>
+	</string>
+
+	<string id="st_visbody_no_sec_msg">
+		<text>視覺化身體MOD: 警告! 護甲的身體部分設定檔案缺失: </text>
+	</string>
+	<string id="st_visbody_no_model_msg">
+		<text>視覺化身體MOD: 警告! 模型丟失: </text>
+	</string>
+	<string id="st_visbody_no_model_msg_2">
+		<text>視覺化身體MOD: 如果在上次讀檔后什麼都沒發生, 那就重新裝備你的護甲並存檔</text>
+	</string>
+</string_table>

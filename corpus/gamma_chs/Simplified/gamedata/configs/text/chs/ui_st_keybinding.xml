@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+<string id="kb_grp_direction">
+	<text>方向</text>
+</string>
+	<string id="kb_left">
+		<text>向左</text>
+	</string>
+	<string id="kb_right">
+		<text>向右</text>
+	</string>
+	<string id="kb_up">
+		<text>向上</text>
+	</string>
+	<string id="kb_down">
+		<text>向下</text>
+	</string>
+
+	
+<string id="kb_grp_movement">
+	<text>运动</text>
+</string>
+	<string id="kb_forward">
+		<text>前进</text>
+	</string>
+	<string id="kb_backward">
+		<text>后退</text>
+	</string>
+	<string id="kb_left_strafe">
+		<text>左平移</text>
+	</string>
+	<string id="kb_right_strafe">
+		<text>右平移</text>
+	</string>
+	<string id="kb_jump">
+		<text>跳跃</text>
+	</string>
+	<string id="kb_crouch">
+		<text>下蹲</text>
+	</string>
+	<string id="kb_walk">
+		<text>走路/蹲下</text>
+	</string>
+	<string id="kb_sprint">
+		<text>冲刺</text>
+	</string>
+	<string id="kb_left_lookout">
+		<text>向左倾斜</text>
+	</string>
+	<string id="kb_right_lookout">
+		<text>向右倾斜</text>
+	</string>
+	<string id="kb_freelook">
+		<text>自由视角</text>
+	</string>
+	
+<string id="kb_grp_weapons">
+	<text>武器</text>
+</string>
+	<string id="kb_weapon1">
+		<text>武器 1</text>
+	</string>
+	<string id="kb_weapon2">
+		<text>武器 2</text>
+	</string>
+	<string id="kb_weapon3">
+		<text>武器 3</text>
+	</string>
+	<string id="kb_weapon4">
+		<text>手榴弹</text>
+	</string>
+	<string id="kb_weapon5">
+		<text>双筒望远镜</text>
+	</string>
+	<string id="kb_weapon6">
+		<text>螺栓</text>
+	</string>
+	<string id="kb_wpn_next">
+		<text>切换弹药种类</text>
+	</string>
+	<string id="kb_next_slot">
+		<text>下一个武器</text>
+	</string>
+	<string id="kb_prev_slot">
+		<text>上一个武器</text>
+	</string>
+	<string id="kb_fire">
+		<text>开火</text>
+	</string>
+	<string id="kb_zoom">
+		<text>缩放</text>
+	</string>
+	<string id="kb_reload">
+		<text>上膛 换子弹</text>
+	</string>
+	<string id="kb_func">
+		<text>切换当前武器附件(榴弹/瞄具)</text>
+	</string>
+	<string id="kb_firemode_next">
+		<text>下一个开火模式</text>
+	</string>
+	<string id="kb_firemode_prev">
+		<text>上一个开火模式</text>
+	</string>
+	<string id="kb_suppressor">
+		<text>消音器</text>
+	</string>
+	<string id="kb_grenade_throw">
+		<text>手榴弹快速投掷</text>
+	</string>
+	<string id="kb_unload_all">
+		<text>卸下所有子弹</text>
+	</string>
+	<string id="kb_lower_weapon">
+		<text>放下/举起武器</text>
+	</string>
+
+	
+<string id="kb_grp_inventory">
+	<text>物品</text>
+</string>
+	<string id="kb_inventory">
+		<text>物品</text>
+	</string>
+	<string id="kb_torch">
+		<text>手电筒</text>
+	</string>
+	<string id="kb_detector">
+		<text>探测器</text>
+	</string>
+	<string id="kb_night_vision">
+		<text>夜视仪</text>
+	</string>
+	<string id="kb_geiger">
+		<text>盖革计数器</text>
+	</string>
+	<string id="kb_mask_clean">
+		<text>清洁面罩</text>
+	</string>
+	<string id="kb_drop">
+		<text>扔掉东西</text>
+	</string>
+	<string id="kb_quick_use_1">
+		<text>快捷栏位 (1)</text>
+	</string>
+	<string id="kb_quick_use_2">
+		<text>快捷栏位 (2)</text>
+	</string>
+	<string id="kb_quick_use_3">
+		<text>快捷栏位 (3)</text>
+	</string>
+	<string id="kb_quick_use_4">
+		<text>快捷栏位 (4)</text>
+	</string>
+	<string id="kb_item_anim">
+		<text>物品动画</text>
+	</string>
+
+<string id="kb_grp_pda">
+	<text>PDA</text>
+</string>
+	<string id="kb_active_jobs">
+		<text>PDA</text>
+	</string>
+	<string id="kb_scores">
+		<text>任务信息</text>
+	</string>
+	<string id="kb_radio">
+		<text>收音机 播放/停止</text>
+	</string>
+	<string id="kb_music_player">
+		<text>播放器 播放/停止</text>
+	</string>
+	<string id="kb_volume_up">
+		<text>音量 +</text>
+	</string>
+	<string id="kb_volume_down">
+		<text>音量 -</text>
+	</string>
+	<string id="kb_next_track">
+		<text>下一首歌曲</text>
+	</string>
+	<string id="kb_prev_track">
+		<text>上一首歌曲</text>
+	</string>
+	<string id="kb_switch_playlist">
+		<text>切换频道/播放列表</text>
+	</string>
+
+<string id="kb_grp_companions">
+	<text>同伴</text>
+</string>
+	<string id="kb_companion_wheel">
+		<text>战术指令</text>
+	</string>
+	<string id="kb_companion_combat">
+		<text>战斗模式</text>
+	</string>
+	<string id="kb_companion_movement">
+		<text>行军模式</text>
+	</string>
+	<string id="kb_companion_move">
+		<text>定点行军</text>
+	</string>
+	<string id="kb_companion_cover">
+		<text>掩护模式</text>
+	</string>
+	<string id="kb_companion_loot">
+		<text>劫掠模式</text>
+	</string>
+
+<string id="kb_grp_common">
+	<text>基本</text>
+</string>
+	<string id="kb_use">
+		<text>使用</text>
+	</string>
+	<string id="kb_hud">
+		<text>开关HUD</text>
+	</string>
+	<string id="kb_cam_1">
+		<text>第一人称视角</text>
+	</string>
+	<string id="kb_cam_2">
+		<text>第三人称视角 (1)</text>
+	</string>
+	<string id="kb_cam_3">
+		<text>第三人称视角 (2)</text>
+	</string>
+	<string id="kb_cam_autoaim">
+		<text>第三人称自动瞄准</text>
+	</string>
+	<string id="kb_console">
+		<text>控制台</text>
+	</string>
+	<string id="kb_debugger">
+		<text>调试器</text>
+	</string>
+	<string id="kb_pause">
+		<text>暂停</text>
+	</string>
+	<string id="kb_quit">
+		<text>退出</text>
+	</string>
+	<string id="kb_screenshot">
+		<text>截图</text>
+	</string>
+	
+<!-- Not used -->
+	<string id="kb_contacts">
+		<text>PDA中的委托公告板</text>
+	</string>
+	<string id="kb_grp_multiplayer">
+		<text>多人游戏</text>
+	</string>
+	<string id="kb_map">
+		<text>地图</text>
+	</string>
+	<string id="kb_pda">
+		<text>PDA</text>
+	</string>
+	<string id="kb_repair">
+		<text>修理</text>
+	</string>
+	<string id="kb_skin_menu">
+		<text>模型选择菜单</text>
+	</string>
+	<string id="kb_team_menu">
+		<text>队伍选择菜单</text>
+	</string>
+	<string id="kb_turn_engine">
+		<text>激活</text>
+	</string>
+	<string id="kb_use_bandage">
+		<text>快速绷带</text>
+	</string>
+	<string id="kb_use_medkit">
+		<text>快速医疗包</text>
+	</string>
+	<string id="kb_vote_begin">
+		<text>开始投票</text>
+	</string>
+	<string id="kb_vote_menu">
+		<text>投票</text>
+	</string>
+	<string id="kb_vote_no">
+		<text>投"反对"票</text>
+	</string>
+	<string id="kb_vote_yes">
+		<text>投"赞成"票</text>
+	</string>
+	<string id="speech_menu_group">
+		<text>语音信息 (1)</text>
+	</string>
+	<string id="speech_menu_personal">
+		<text>语音信息 (2)</text>
+	</string>
+	<string id="kb_buy_menu">
+		<text>购买菜单</text>
+	</string>
+	<string id="kb_chat">
+		<text>交谈</text>
+	</string>
+	<string id="kb_chat_team">
+		<text>队伍交谈</text>
+	</string>
+	<string id="kb_crouch_toggle">
+		<text>蹲姿切换</text>
+	</string>
+	<string id="kb_wpn_prev">
+		<text>上一个同类型武器</text>
+	</string>
+	<string id="kb_alife_command">
+		<text>命令进攻</text>
+	</string>
+	<string id="kb_artefact">
+		<text>神器</text>
+	</string>
+	<string id="kb_binoculars">
+		<text>望远镜</text>
+	</string>
+</string_table>

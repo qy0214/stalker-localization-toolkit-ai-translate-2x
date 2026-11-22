@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Repair Kits
+-->
+
+<string_table>
+	<string id="st_cleaning_kit_p_new">
+		<text>A型武器清理包</text>
+	</string>
+	<string id="st_cleaning_kit_p_new_descr">
+		<text>一套专业的刷子, 用于清洁枪管和枪支的其他部件, 清除使用过程中积累的污垢, 沙子, 水渍, 润滑剂残留物和其他异物\n \n
+		%c[0,255,255,255]说明:\n
+		%c[d_orange] • 用于清洁枪内的脏污零件\n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 清洁零件\n \n
+		%c[0,255,255,255]适用范围:\n
+		%c[d_orange] • %c[ui_gray_2] 小口径武器\n
+		</text>
+	</string>
+	<string id="st_cleaning_kit_s_new">
+		<text>B型武器清理包</text>
+	</string>
+	<string id="st_cleaning_kit_s_new_descr">
+		<text>一套专业的刷子, 用于清洁枪管和枪支的其他部件, 清除使用过程中积累的污垢, 沙子, 水渍, 润滑剂残留物和其他异物\n \n
+		%c[d_orange] • 用于清洁枪内的脏污零件\n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 清洁零件\n	\n									
+		%c[0,255,255,255]适用范围:\n
+		%c[d_orange] • %c[ui_gray_2] 简易武器和霰弹枪\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r5_new">
+		<text>C型武器清理包</text>
+	</string>
+	<string id="st_cleaning_kit_r5_new_descr">
+		<text>一套专业的刷子, 用于清洁枪管和枪支的其他部件, 清除使用过程中积累的污垢, 沙子, 水渍, 润滑剂残留物和其他异物\n \n
+		%c[d_orange] • 用于清洁枪内的脏污零件\n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 清洁零件\n\n
+		%c[0,255,255,255]适用范围:\n
+		%c[d_orange] • %c[ui_gray_2] 标准的军用步枪和特种微冲\n
+		</text>
+	</string>
+	
+	<string id="st_cleaning_kit_r7_new">
+		<text>D型武器清理包</text>
+	</string>
+	<string id="st_cleaning_kit_r7_new_descr">
+		<text>一套专业的刷子, 用于清洁枪管和枪支的其他部件, 清除使用过程中积累的污垢, 沙子, 水渍, 润滑剂残留物和其他异物\n \n
+		%c[d_orange] • 用于清洁枪内的脏污零件\n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 清洁零件\n\n
+		%c[0,255,255,255]适用范围:\n
+		%c[d_orange] • %c[ui_gray_2] 复杂而精密的大口径武器\n
+		</text>
+	</string>
+
+	   <string id="st_toolkit_p_new">
+        <text>A型武器修理箱</text>
+    </string>
+    <string id="st_toolkit_p_new_descr">
+        <text>这个工具包包括润滑油、溶剂、基本清洁工具以及专门用于武器拆卸及维护的特殊工具. 它还标配有一套基本的枪支备件\n \n
+		%c[0,255,255,255]说明:\n
+		%c[d_orange] • 可用于更换枪支内的任何零部件\n 
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 翻新零件\n \n
+        %c[0,255,255,255]适用范围:\n
+        %c[d_orange] • %c[ui_gray_2] 小口径武器\n
+        </text>
+    </string>							  
+    <string id="st_toolkit_s_new">
+        <text>B型武器修理箱</text>
+    </string>
+    <string id="st_toolkit_s_new_descr">
+        <text>这个工具包包括润滑油、溶剂、基本清洁工具以及专门用于武器拆卸及维护的特殊工具. 它还标配有一套基本的枪支备件\n \n
+		%c[0,255,255,255]说明:\n
+		%c[d_orange] • 可用于更换枪支内的任何零部件\n 
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 翻新零件\n\n
+		%c[0,255,255,255]适用范围:\n
+        %c[d_orange] • %c[ui_gray_2] 简易武器和霰弹枪\n \n
+        </text>
+    </string>
+
+    <string id="st_toolkit_r5_new">
+        <text>C型武器修理箱</text>
+    </string>
+    <string id="st_toolkit_r5_new_descr">
+        <text>这个工具包包括润滑油、溶剂、基本清洁工具以及专门用于武器拆卸及维护的特殊工具. 它还标配有一套基本的枪支备件\n \n
+		%c[0,255,255,255]说明:\n
+		%c[d_orange] • %c[ui_gray_2]可用于更换枪支内的任何零部件\n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 翻新零件\n\n
+		%c[0,255,255,255]适用范围:\n
+        %c[d_orange] • %c[ui_gray_2] 标准的军用步枪和特种微冲\n
+        </text>
+    </string>
+
+    <string id="st_toolkit_r7_new">
+        <text>D型武器修理箱</text>
+    </string>
+    <string id="st_toolkit_r7_new_descr">
+        <text>这个工具包包括润滑油、溶剂、基本清洁工具以及专门用于武器拆卸及维护的特殊工具. 它还标配有一套基本的枪支备件 \n \n
+		%c[0,255,255,255]说明:\n
+		%c[d_orange] • 可用于更换枪支内的任何零部件. \n
+		%c[d_orange] • 右键点击枪支 - 维护零件 - 翻新零件\n
+		%c[0,255,255,255]适用范围:\n
+        %c[d_orange] • %c[ui_gray_2] 复杂而精密的大口径武器\n
+        </text>
+    </string>
+</string_table>

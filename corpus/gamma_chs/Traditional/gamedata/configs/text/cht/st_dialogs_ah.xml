@@ -1,0 +1,956 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<string_table>
+
+ <string id = "test_dialog_0">
+ <text>可以給我一個測試容器嗎？ </text>
+ </string>
+ <string id = "test_dialog_1">
+ <text>這是一個beta版的容器 </text>
+ </string>
+ <string id = "test_dialog_2">
+ <text>我會找到樣本的 </text>
+ </string>
+ <string id = "test_dialog_3">
+ <text>不需要 </text>
+ </string>
+ <string id = "test_dialog_4">
+ <text>好的 \n </text>
+ </string>
+ <string id = "test_dialog_end_0">
+ <text>我完成了任務 </text>
+ </string>
+ <string id = "test_dialog_end_1">
+ <text>幹的漂亮\n </text>
+ </string>
+ <string id = "test_dialog_end_2">
+ <text>我的獎賞在哪裡? </text>
+ </string>
+ <string id = "test_dialog_end_3">
+ <text>這就是的</text>
+ </string>
+  <string id = "test_dialog_end_4">
+ <text>謝啦</text>
+ </string>
+ <string id = "test_dialog_end_4">
+ <text>謝謝啊</text>
+ </string>  
+    
+ <string id = "sarik_dialog_0">
+ <text>你好像也是剛來這裡的? 知道些什麼新鮮事嗎?</text>
+ </string>
+ <string id = "sarik_dialog_1">
+<text>沒錯, 其實, 我只是個邊境線上跑腿的, 今天早上我帶著一隊科學家來到特異區, 他們似乎來收集奇怪的樣本, 就是類似神器那種東西, 但更像是被輻射過的垃圾, 我也不知道為什麼他們對那些玩意很感興趣, 所以他們讓我來菜鳥村找找, 看看有沒有一個熟知本地異常區的"神器獵手" </text>
+ </string>
+ <string id = "sarik_dialog_2">
+ <text>聽起來很有趣, 我在哪裡可以找到他們?</text>
+ </string>
+ <string id = "sarik_dialog_3">
+ <text>去他的, 那些頂著卵蛋頭的怪胎們愛做什麼和我無關</text>
+ </string>
+ <string id = "sarik_dialog_4">
+<text>他們進來后就分散到了整個特異區, 最近的一位就在大沼澤的老教堂那邊</text>
+ </string>
+    
+<!-- Meeting of Scientists -->  
+ <string id = "meet_ah_ti_kto_takoy">
+ <text>教授您好, 請問您的研究進展如何? 有什麼需要幫助的嗎? </text>
+ </string>  
+ <string id = "meet_ah_1">
+<text>是的, 當然! 我有一件事需要有人幫忙, 如果你願意的話我可以付你些小小的報酬</text>
+ </string>
+ <string id = "meet_ah_2">
+ <text>當然, 我有時間, 你需要什麼? </text>
+ </string>
+ <string id = "meet_ah_no">
+ <text>不好意思, 我突然覺得我沒空搞這些有的沒的</text>
+ </string>  
+ <string id = "meet_ah_4">
+<text>我的下一個實驗, 需要來自當地異常區域的樣本, 你得進入這些異常區域找到這些快成型的神器, 你的探測器應該能夠發現它們</text>
+ </string>
+ <string id = "meet_ah_5">
+ <text>小菜一碟, 不就是些被輻射的泥巴塊么, 我這就去</text>
+ </string>
+ <string id = "meet_ah_6">
+<text>我很想幫忙, 但我沒有神器探測器, 能向你借一個嗎? </text>
+ </string>
+ <string id = "meet_ah_7">
+ <text>很好, 我會把異常點在你的PDA上標出來</text>
+ </string>
+ <string id = "meet_ah_8">
+ <text>我可以把我的舊探測器給你, 這是舊型號, 但應該能行, 如果你完成幾個我們給你的任務, 你就可以買一個更好的探測器了, 檢查你的PDA, 我發了地點給你</text>
+ </string>
+
+ <string id = "cancel_ah_0">
+ <text>關於你給我的任務... </text>
+ </string>  
+ <string id = "cancel_ah_1">
+ <text>搜索進展如何?你都找到了嗎?</text>
+ </string>
+ <string id = "cancel_ah_2">
+ <text>沒有, 我還在找</text>
+ </string>  
+ <string id = "cancel_ah_3">
+ <text>實際上我什麼也沒找到</text>
+ </string>
+ <string id = "cancel_ah_4">
+ <text>確定嗎?根據我收集的資訊清楚地表明那裡至少會有一些東西的, 哦, 天啊, 這對我的研究非常不利！ </text>
+ </string>
+ <string id = "cancel_ah_5">
+ <text>對不起, 教授, 我沒有找到</text>
+ </string>  
+ <string id = "cancel_ah_6">
+<text>好吧, 我會繼續尋找的</text>
+ </string>      
+ <string id = "cancel_ah_7">
+<text>該死, 這可不妙, 這至少要耽誤我兩個月的時間, 抱歉, 我得去實驗室一趟了, 再見,潛行者</text>
+ </string>
+ 
+
+ <string id = "kovalev_1_quest_0">
+ <text>好的, 接下來我該怎麼做?</text>
+ </string>
+ <string id = "kovalev_1_quest_3">
+ <text>裝備上神器探測器, 然後拿在手中, 靠近神器時它應該會發出嗶嗶的聲音</text>
+ </string>  
+ <string id = "kovalev_1_quest_end_0">
+ <text>我把你要的輻射樣本帶來了, 然後呢?</text>
+ </string>
+ <string id = "kovalev_1_quest_end_1">
+ <text>哦, 太好了, 這是給你的一點獎勵, 謝謝你, 潛行者</text>
+ </string>
+    
+ <string id = "kovalev_2_quest_0">
+ <text>還有什麼需要幫忙的嗎, 教授?</text>
+ </string>
+ <string id = "kovalev_2_quest_3">
+<text>你看, 之前, 我在農業研究所的異常區中發現了一些奇怪的神器, 在這些異常中形成的神器對於念域具有獨特的協調特性, 然而我在研究期間遭到了攻擊, 局勢相當緊張, 我們不得不逃跑, 混亂中我把裝有掃瞄數據的膝上型電腦丟在了一個被靈能場覆蓋的研究室裡, 請找到我的膝上型電腦, 它會顯示我掃瞄過的座標, 然後你可以去那些座標中尋找神器樣本</text>
+ </string> 
+    
+ <string id = "kovalev_2_quest_end_0">
+<text>給, 教授, 我找到了你的膝上型電腦和神器</text>
+ </string>
+ <string id = "kovalev_2_quest_end_1">
+ <text>謝謝, 這對我的研究有很大的幫助! 給你, 這是一點謝禮</text>
+ </string>  
+    
+    <string id = "markov_1_quest_0">
+ <text>你好! 教授</text>
+ </string>
+    <string id = "markov_1_quest_2">
+ <text>可是揚塔的同事們不是也能幫到你嗎?</text>
+ </string>
+ <string id = "markov_1_quest_3">
+<text>我不和楊塔的小組一起工作, 那些平庸的業餘愛好者簡直可笑, 離他們最近的異常現象都沒搞清楚, 聽著, 如果你能找到這些神器, 我會給你獎賞, 越快越好</text>
+ </string> 
+
+ <string id = "markov_1_quest_end_0">
+ <text>這是你要的神器樣本</text>
+ </string>
+ <string id = "markov_1_quest_end_1">
+ <text>幹得好, 年輕人, 嗯... 我來找個地方放好它...</text>
+ </string>      
+    
+    <string id = "markov_2_quest_0">
+ <text>之後呢? </text>
+ </string>  
+ <string id = "markov_2_quest_3">
+<text>當然有! 當我外出進行實地研究時, 我發現附近那個叫廢棄區的地方有奇怪的波動, 那裡的神器似乎與衆不同, 所以我想讓你去調查一下, 我會給你標出我探測到的座標</text>
+ </string>
+
+ <string id = "markov_2_quest_end_0">
+ <text>教授, 我在那鬼地方裡差點被電死! 給, 你要的神器樣本</text>
+ </string>
+ <string id = "markov_2_quest_end_1">
+ <text>但還沒死不是嗎? 哈哈, 給你的報酬</text>
+ </string>      
+    
+    <string id = "markov_3_quest_0">
+ <text>就這? 我還以為會有什麼了不得的東西... </text>
+ </string>
+    <string id = "markov_3_quest_3">
+<text>好吧好吧, 你先別急! 還有另一項實地研究, 我還沒有設法進行, 就在楊塔以北, 有一個老實驗室, 那裡有致命水平的靈能場, 我有理由相信這些靈能影響了該地區神器的形成, 聽著, 本來不是非要你去跑這一趟的, 但我等不及要看看那些結果! 所以, 你可以幫我去檢查一下, 如果需要某種靈能保護, 可以和薩哈洛夫教授談談</text>
+ </string>
+    
+ <string id = "markov_3_quest_end_0">
+ <text>我快死在那邊了, 這些應該就是那些神器了吧?</text>
+ </string>
+ <string id = "markov_3_quest_end_1">
+ <text>真讓人吃驚, 你做到了, 謝謝!你幫了我很大的忙</text>
+ </string>      
+    
+    <string id = "pirogov_1_quest_0">
+ <text>你看起來有些麻煩事？ </text>
+ </string>
+    <string id = "pirogov_1_quest_1">
+<text>沒錯, 沒錯! 這鬼地方到處都是變異生物和強盜, 上頭那些白癡卻讓我一個人跑來! 他們以為我是刀槍不入的嗎? 我干! </text>
+ </string>
+ <string id = "pirogov_1_quest_2">
+ <text>喔, 冷靜點, 也許我能幫你, 你需要做什麼? </text>
+ </string> 
+ <string id = "pirogov_1_quest_5">
+<text>可以, 聽我說, 這附近有一些非常罕見的異常現象, 而這些白癡土匪幾乎沒碰過它們, 如果你能從每個異常區給我拿一份樣本, 我將非常感激, 這是座標</text>
+ </string>  
+
+ <string id = "pirogov_1_quest_end_0">
+ <text>真夠辛苦的, 但我還是拿到了你要的神器樣本</text>
+ </string>
+ <string id = "pirogov_1_quest_end_1">
+ <text>太好了, 我馬上通知薩哈洛夫教授, 謝謝你潛行者, 今天你算是把我從糞坑裡救了出來</text>
+ </string>  
+ 
+    <string id = "pirogov_2_quest_0">
+ <text>我從沒見過這種型別的神器... </text>
+ </string>
+ <string id = "pirogov_2_quest_3">
+<text>...對了, 薩哈洛夫剛告訴我, 他要我去卡車墓園, 但那裡是一個勘探不足的地區, 為此很多人避開它, 儘管有許多有價值的異常現象, 如果你能從這些異常點給我取點樣本, 我就多給你50%的報酬, 卡車墓園就在這裡的北面, 路上要小心土匪</text>
+ </string> 
+
+ <string id = "pirogov_2_quest_end_0">
+ <text>天啊, 那鬼地方, 狗都不會去那拉屎, 這是你要的神器樣本, 教授</text>
+ </string>
+ <string id = "pirogov_2_quest_end_1">
+ <text>謝謝, 這樣就可以了, 按照約定, 這是給你的</text>
+ </string>  
+    
+    <string id = "pirogov_3_quest_0">
+ <text>這些神器樣本出現的地方有點奇怪... </text>
+ </string>
+ <string id = "pirogov_3_quest_3">
+<text>哈, 誰知道呢... 對了, 還有一件事, 我的上一個助手去填埋場把儀器原型機放在一些異常點上, 但最近的兩次無線電聯絡他都沒回應, 恐怕出了什麼事</text>
+ </string> 
+    <string id = "pirogov_3_quest_4">
+ <text>在這個被輻射過的鬼地方並不奇怪</text>
+ </string>
+        <string id = "pirogov_3_quest_5">
+<text>據我所知, 他之前就想去跳蚤市場囤些貨, 所以你最好從那裡開始找, 找到我的助手和他的PDA, 裡面應該有我要勘探的剩餘異常點的位置, 然後把神器樣本帶給我, 讓我快點離開這鬼地方</text>
+ </string>
+
+ <string id = "pirogov_3_quest_end_0">
+ <text>我找到你的助手了, 他已經被強盜射成了蜂窩, 我找回了他的PDA, 也完成了他的任務, 給你, 教授</text>
+ </string>
+ <string id = "pirogov_3_quest_end_1">
+ <text>真可惜, 他是個很努力的小夥子, 多麼糟糕的死法... 唉, 算了, 這是你的報酬, 我也終於可以回移動地堡好好洗個澡了</text>
+ </string>      
+    
+    <string id = "chernov_1_quest_0">
+ <text>我聽說你的研究可能需要人幫忙</text>
+ </string>
+    <string id = "chernov_1_quest_1">
+ <text>你不會盜取我的研究成果吧</text>
+ </string>
+ <string id = "chernov_1_quest_2">
+ <text>我只對錢感興趣</text>
+ </string> 
+ <string id = "chernov_1_quest_5">
+<text>往異常點丟東西? 那是什麼意思... 算了, 我先看看你有什麼本事吧, 在這個被當地人稱為軍事倉庫的地方, 有許多有價值的異常現象, 而大多數潛行者卻只想避開它們, 我要你去PDA上標記的地區, 把那裡的樣本帶給我, 然後我們再談</text>
+ </string>  
+
+ <string id = "chernov_1_quest_end_0">
+ <text>給吧, 一堆發光的爛泥巴</text>
+ </string>
+ <string id = "chernov_1_quest_end_1">
+ <text>哈, 對我來說這可不是爛泥巴, 按照承諾, 這是你的賞金, 現在, 你有什麼特別想了解的嗎?  </text>
+ </string>          
+ 
+    <string id = "chernov_3_quest_0">
+ <text>你怎麼知道這些奇怪的神器會出現在那裡?</text>
+ </string>
+    <string id = "chernov_3_quest_1">
+<text>我們的研究小組實際上是"SIRCAA" -- 也就是"切爾諾貝利異常地區科學研究所"的成員, 我們一直在研究特異區, 想要找到摧毀它的方法, 或者至少控制它, 多虧了當地潛行者提供的資訊和我們自己的勘探, 我們掌握了很多資訊, 我們甚至得到了大部分的異常區域圖, 利用這些資訊, 再加上掃描器的數據, 我們就能推斷出神器形成的可能性...</text>
+ </string>      
+    <string id = "chernov_3_quest_2">
+ <text>有趣, 所以你一直都知道該讓我去哪</text>
+ </string>
+        <string id = "chernov_3_quest_3">
+<text>沒錯, 然而, 你的下一個任務需要謹慎一些, 我可不希望你這樣有能力的助手死在那裡, 我特派了一個潛行者去調查紅森林的異常區域, 但不幸的是他似乎失蹤了, 他最後給我發信息的地方, 是利曼斯克大橋旁的隧道中, 你需要去找他的PDA, 裡面有我給他的掃瞄數據, 然後找到剩下的神器樣本, 但我必須警告你, 我在紅森林失去了很多朋友和同事, 所以... 你懂的</text>
+ </string>
+    
+ <string id = "chernov_3_quest_end_0">
+ <text>這趟旅程要了老命! 一路上到處都是強盜和變異生物, 但我獲得了所有的神器樣本</text>
+ </string>
+ <string id = "chernov_3_quest_end_1">
+ <text>幹得漂亮, 我為你擔心了好久, 希望這筆獎金能補貼你的醫療費</text>
+ </string>  
+    
+    <string id = "chernov_4_quest_0">
+ <text>你有在實驗室裡創造過神器嗎? 我是說, 你研究它們已經有一段時間了, 如果能在異常區外創造出神器, 那對特異區內神器的需求難道不會急劇下降嗎? </text>
+ </string>
+    <string id = "chernov_4_quest_1">
+<text>人造神器在覈災難和特異區建立之前就已經開始進行了, 我的上司曾經在利曼斯克工作和生活, 我們在他家待了好幾個晚上, 討論神器的可能來源, 在從實驗室偷了一個神器溫床之後, 我們甚至創造了一個神器原型, 就像你帶給我的那些一樣</text>
+ </string>      
+    <string id = "chernov_4_quest_2">
+ <text>有趣, 那你的朋友呢? </text>
+ </string>
+        <string id = "chernov_4_quest_3">
+<text>我不知道, 災難發生時, 利曼斯克沒有疏散人員, 所有的居民都突然消失了, 這是個不解之謎, 這倒提醒了我, 我還有他家的地址, 你能去看看神器是否還在那裡嗎? 誰知道呢, 也許這就是解開謎題的關鍵</text>
+ </string>  
+
+ <string id = "chernov_4_quest_end_0">
+<text>利曼斯克的狀況很糟糕, 我沒找到你的朋友, 只有一群瘋狂的黑石信徒, 不過我還是找到了神器, 給你!</text>
+ </string>
+ <string id = "chernov_4_quest_end_1">
+ <text>我早料到了, 然而直到現在, 我還是會不時想起我的老朋友... 總之, 讓我們找出原因, 阻止這一切再次發生, 以告慰他在天之靈吧...</text>
+ </string>      
+    
+    <string id = "chernov_5_quest_0">
+ <text>最近怎麼樣, 教授? 有關於神器來源的訊息嗎? </text>
+ </string>
+    <string id = "chernov_5_quest_1">
+<text>是的, 請看這裡, 看到了嗎? 這個神器有一個完全獨特的輻射模式, 我的朋友, 我們有確鑿的證據證明神器可以通過人工手段創造</text>
+ </string>      
+    <string id = "chernov_5_quest_2">
+ <text>這太瘋狂了! 等等, 你覺得有沒有可能神器在特異區之前就出現了? </text>
+ </string>
+        <string id = "chernov_5_quest_3">
+<text>我可以告訴你, 反正你最終也會知道的, 聽說過神器農場嗎? 這個方向的研究已經進行了很長時間, 現在已經廢棄的X-19實驗室曾在這方面投入過大量資金, 創造了被稱為"溫床"的繭狀設施, 可以在受控條件下形成人造神器, 如今該地區被一群黑石信徒佔領, 非常危險, 然而如果你能設法進入那裡, 那就去找找任何剩餘的神器或文件, 我會付你一大筆錢的</text>
+ </string>
+
+ <string id = "chernov_5_quest_end_0">
+<text>你所言不虛, 那個區域的黑石狂徒像潮水一般, 但我還是摸進了舊實驗室的入口, 找到了看起來很重要的檔案, 還在那附近的森林裡發現了三件人造神器, 你看</text>
+ </string>
+ <string id = "chernov_5_quest_end_1">
+<text>不錯, 至於我怎麼會通曉這一切, 你還是不要知道的好, 考慮到我們研究的性質, 我必須請求你行事低調, 儘管最終我會向全世界揭示這裡的一切, 但在那之前, 我需要完成這些神器的研究</text>
+ </string>  
+    
+    <string id = "chernov_6_quest_0">
+ <text>好吧, 但是為什麼不直接從人們手裡收購呢? 這樣不是更快? </text>
+ </string>
+    <string id = "chernov_6_quest_3">
+<text>是的, 根據我們對這片區域的最新掃瞄結果, 我們發現了一些有趣的東西, 一大群僱傭兵控制著一個地區, 他們稱之為"死城", 我從那個區域得到了非常穩定的讀數, 所以那裡的樣本可以作為對照參考, 如果你能從這些地方給我帶來樣本, 我就能據此建立神器的標準數據模型</text>
+ </string>  
+
+ <string id = "chernov_6_quest_end_0">
+ <text>看起來, 那座城市並沒有那麼"死", 這是你要的樣本, 教授</text>
+ </string>
+ <string id = "chernov_6_quest_end_1">
+ <text>幹得好, 這是你的獎金, 你幫了我這麼大的忙, 我不妨在論文的序言里提到你, 儘管你好像並不怎麼在乎這個...</text>
+ </string>  
+            
+
+    <string id = "juk_1_quest_0">
+ <text>你好教授, 你對神器有什麼見解嗎?</text>
+ </string>
+    <string id = "juk_1_quest_3">
+<text>當然! 你當然可以, 我想研究這! 這! 還有這裡幾個異常區, 但現在有事我走不開啊, 所以我給你的PDA上做個標記, 接下來你懂的吧, 如果我空著手去找薩哈洛夫的話, 他肯定會一腳把我踢回來</text>
+ </string>
+
+ <string id = "juk_1_quest_end_0">
+ <text>給你, 這些是我能找到的神器</text>
+ </string>
+ <string id = "juk_1_quest_end_1">
+ <text>沒想到你真的去了... 嗯, 嗯, 幹得好, 給! 你的報酬</text>
+ </string>
+    
+    <string id = "juk_2_quest_0">
+ <text>你們會如何進行研究? 只有你自己單獨進行嗎?</text>
+ </string>
+    <string id = "juk_2_quest_3">
+<text>太有了! 你在外面的時候, 我收到了一批新的掃瞄數據, 你應該知道, 關於異常區的很多秘密還不為人知, 很多異常區的地圖還沒有被繪製出來, 我把初步掃瞄的數據發給你, 它是一些未繪製的異常區的大致位置, 幫我確認一下這些位置到底對不對, 如果可能的話, 找出任何你能看到的神器, 注意這只是大致的數據, 位置一定會有一些偏差</text>
+ </string>  
+    
+ <string id = "juk_2_quest_end_0">
+ <text>老天, 那鬼地方, 我的螺栓都扔了三包了, 但這些數據似乎是正確的, 而且我還找到了一些神器, 你可能會想看看</text>
+ </string>
+ <string id = "juk_2_quest_end_1">
+ <text>好好好, 至少我們的掃描器還能用, 謝謝你的報告, 我馬上就給你打錢</text>
+ </string>
+    
+    <string id = "juk_3_quest_0">
+ <text>天啊, 就這點?</text>
+ </string>
+    <string id = "juk_3_quest_3">
+<text>是啊, 確實如此! 對了, 還有一件事, 我們在普里皮亞奇發現了非常有價值的輻射訊號, 然而你可能知道, 這座城市既美麗又危險, 憑我的槍法, 估計我豎著進去就得橫著出來, 所以只好拜託你了, 去這些地方看看然後把你能找到的神器全帶回來給我, 放心, 你的子彈錢和醫療費我報銷了</text>
+ </string>      
+    
+ <string id = "juk_3_quest_end_0">
+ <text>看! 我的褲子上還有幾個該死的黑石信徒留下的彈孔! 我去調查了你提到的異常區, 還給你找了些神器, 希望你給的報酬對得起我的付出</text>
+ </string>
+ <string id = "juk_3_quest_end_1">
+ <text>好! 好! 非常棒! 請收下這個, 這是你應得的, 雖然還不夠換條褲子... </text>
+ </string>  
+    
+    <string id = "vorobushkin_1_quest_0">
+ <text>怎麼了教授, 需要幫忙嗎?</text>
+ </string>
+    <string id = "vorobushkin_1_quest_3">
+<text>當然! 這片區域還沒人勘探, 所以我也不知道會發生什麼, 我的計算表明這裡應該有我需要的神器, 昨天爲了查明具體的目標異常區, 我修理了克魯格雷達站內的一些裝置, 然而, 掃瞄花了很長時間, 而我待在那裡已經太久, 爲了避免可能存在的危險, 我不得不匆忙返回這裡, 你得進入電波站拿回我留在那裡的硬碟, 所有必要的數據都應該在上面... 順便說一下, 那附近有一些異常區, 也許也有我需要的樣本, 但在拿到硬碟里的數據之前, 我也不能確定</text>
+ </string>      
+
+ <string id = "vorobushkin_1_quest_end_0">
+<text>小菜一碟, 教授, 你的硬碟還在那裡, 我還拿到了你要的神器樣本</text>
+ </string>
+ <string id = "vorobushkin_1_quest_end_1">
+ <text>終於有好訊息了! 嗯? 這個掃瞄數據有點奇怪..... </text>
+ </string>
+    
+    <string id = "vorobushkin_2_quest_0">
+ <text>怎麼了, 教授?</text>
+ </string>
+    <string id = "vorobushkin_2_quest_3">
+<text>是啊! 這些讀數根本說不通! 不過, 你願意幫我檢查一下這幾個異常區嗎? 如果你找到神器並帶回給我, 我可以開高價給你</text>
+ </string>  
+    
+ <string id = "vorobushkin_2_quest_end_0">
+ <text>我查了你提到的地點找到了這些神器, 這些是你需要的嗎? </text>
+ </string>
+ <string id = "vorobushkin_2_quest_end_1">
+ <text>是的, 太好了! 雖然之前的研究失敗了, 但這次是一個很大的進展, 我的朋友, 這是你的報酬</text>
+ </string>
+
+    
+ <string id = "vorobushkin_redirect_dialog_0">
+ <text>那麼還有什麼需要幫忙的嗎...</text>
+ </string>
+ <string id = "vorobushkin_redirect_dialog_1">
+<text>當然! 你已經幫了我很大的忙了! 如果你想進一步幫助我們, 我可以把你推薦給我的一個同事, 他肯定也會非常需要你的協助! 我把他的位置發給你, 一會兒我再給他打個電話, 讓他知道你過去了, 再見! 祝你好運! 潛行者! </text>
+ </string>  
+ <string id = "vorobushkin_redirect_dialog_2">
+<text>謝謝你寶貴的協助, 我還需要留在這裡做一些計算, 但我剛剛得知一件急事, 你可以去核電站的北部, 找我們小組的頭兒--斯卡賓斯基教授, 不知道他怎麼會跑到那裡去的, 拜託請快一些! 他肯定急需我們的幫助!</text>
+ </string>  
+ <string id = "vorobushkin_redirect_dialog_3">
+<text>由於缺乏足夠的資訊, 其實這些計算都充滿漏洞, 雖然能夠估算異常區的大體位置, 但還是需要進一步的實地觀測, 我剛剛得知我們的負責人斯卡賓斯基教授已經親自出發了, 他可能需要你的幫助, 所以快點找到他, 那個地方很危險, 他絕對不該一個人去!</text>
+ </string>      
+
+ <string id = "ah_start_dialog_0">
+ <text>你好, 潛行者</text>
+ </string>
+    <string id = "ah_start_dialog_1">
+ <text>你好!</text>
+ </string>  
+ <string id = "ah_start_dialog_2">
+ <text>你好, 兄弟</text>
+ </string>      
+
+    <string id = "skabinsky_1_quest_0">
+ <text>老天! 我終於找到你了教授! 周圍有這麼多黑石信徒, 你是怎麼進來的? </text>
+ </string>
+    <string id = "skabinsky_1_quest_1">
+<text>你一定就是沃羅布什金提到的那個非常能幹的潛行者吧? 幸好你及時找到了我, 情況是這樣的, 我本來找了一群傭兵護送我到這裡, 但他們大多已經中槍身亡了, 所以我們得快點, 離我們很近的是一個非常危險的異常區, 和我以前見過的任何異常區都不一樣, 根據我的計算, 在接下來的一段時間, 這裡會形成一種非常罕見而強大的神器, 而目前為止, 論進入異常區的經驗, 已經沒人比你更豐富了, 我們需要你去核實我們的預測是否正確, 但我必須警告你, 這很危險, 你準備好了嗎? </text>
+ </string>      
+    <string id = "skabinsky_1_quest_2">
+ <text>切, 我大老遠跑來, 可不是爲了在最後一刻當逃兵的</text>
+ </string>      
+    <string id = "skabinsky_1_quest_3">
+ <text>嗯... 還是算了吧</text>
+ </string>      
+    <string id = "skabinsky_1_quest_4">
+<text>很好! 我喜歡你的狀態, 然而, 只是想要接近那裡就非常困難, 我希望你有那種先進一些的探測器, 能探測到異常點的話會容易很多... 好了! 去吧! 時間不等人! </text>
+ </string>      
+    <string id = "skabinsky_1_quest_5">
+ <text>謝謝你！再見, 教授</text>
+ </string>      
+    <string id = "skabinsky_1_quest_6">
+<text>等等! 你聽到了嗎? 特異區... 在呼喚我們, 我能感覺到...... 去拿她留下的禮物吧, 我會在扎頓等你回來</text>
+ </string>
+ <string id = "skabinsky_1_quest_end_0">
+ <text>教授... 快看看這個! 我從沒見過這樣的神器, 即便只是盯著它看... 都讓人感覺很不舒服</text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_1">
+<text>所以這是真的......我竟然還以為我們的計算出了錯誤! 謝謝你,潛行者, 我們的團隊和科學界都欠你的, 現在快點, 把神器交給我, 我要妥善的保管, 之後再談你的報酬</text>
+ </string>
+    <string id = "skabinsky_1_quest_end_2">
+ <text>這是我的榮幸, 教授, 很高興能幫助你探尋特異區的秘密, 給, 我希望這一切都值得</text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_3">
+<text>不... 等等! 我突然想通了, 這件神器是我的了!</text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_4">
+<text>什麼? 現在給我來這一套? 潛行者! 你忘了我們講好的嗎! 你要對我食言嗎!</text>
+ </string>
+    <string id = "skabinsky_1_quest_end_5">
+ <text>沒, 沒, 我騙你的, 我說笑的, 給! 拿去把你! 唉喲, 玩笑都開不起...</text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_6">
+<text>對啊... 看啊... 這個神器簡直完美無缺, 我感到無窮的力量正在涌入... 你已經阻止不了我了, 別擋路!</text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_7">
+ <text>不! 這是我畢生的心血! 我不會眼看著你帶走它的, 除非我死了! </text>
+ </string>  
+ <string id = "skabinsky_1_quest_end_8">
+<text>謝謝你！我的工作結束了, 我要回去評估這裡的一切發現, 儘管我們在這裡分道揚鑣, 但我們的團隊會永遠記住你, 你對科學做出的貢獻是無價的, 但目前...我身上就只有這些了, 給你吧, 如果未來還需要任何幫助, 一定會讓你知道的, 希望我們能再次相遇, 潛行者... 祝你好運! 再見!</text>
+ </string>      
+    
+ <string id = "skabinsky_fail_quest_0">
+ <text>總算找到你了, 你的搜索進展如何?</text>
+ </string>  
+ <string id = "skabinsky_fail_quest_1">
+<text>啊! 你好, 是你啊, 那個幫了我們大忙的潛行者! 呵呵...不過... 這都是白費力氣罷了! 因為我們的理論從一開始就是錯的! 這個該死的地方並不是特異區的中心, 我們又回到了原點</text>
+ </string>      
+ <string id = "skabinsky_fail_quest_2">
+ <text>所以... 這些努力到頭只是一場空?</text>
+ </string>      
+ <string id = "skabinsky_fail_quest_3">
+<text>是啊, 我們能做的都已經做了, 現在你還是走吧, 我們的行動徹底失敗了, 這樣也好, 呵, 呵呵...</text>
+ </string>  
+ <string id="est_work_kuznecov_0">
+        <text>前來報告! 長官, 有什麼特別的任務嗎?</text>
+    </string>
+    <string id="est_work_kuznecov_1">
+        <text>聽起來, 你準備幹點正經事了嗎, 士兵? 我希望你準備好了——這是來自最高層的訊息, 我有一份參謀長聯席會議想要調查的優先目標清單</text>
+    </string>
+    <string id="est_work_kuznecov_2">
+        <text>從農業研究所地下設施中取回檔案</text>
+    </string>
+    <string id="est_work_kuznecov_22">
+        <text>根據情報, 在農業研究所的地下設施中有高度機密的檔案, 其中包含了以前在這裡實驗的重要資訊, 你的任務很簡單, 不擇手段拿到那些檔案, 準備好了嗎?</text>
+    </string>
+    <string id="est_work_kuznecov_221">
+        <text>是的, 長官, 我準備好了</text>
+    </string>
+    <string id="est_work_kuznecov_222">
+        <text>我手頭還有些急事, 稍等</text>
+    </string>
+    <string id="est_work_kuznecov_3">
+        <text>從X-18實驗室取回檔案</text>
+    </string>
+    <string id="est_work_kuznecov_33">
+        <text>這個實驗室中藏有開曼諾夫發射器原型的重要數據, 你的目標是找到關於這項研究的所有檔案, 並帶回總部</text>
+    </string>
+    <string id="est_work_kuznecov_331">
+        <text>啥? 上校, 這是送我去死嗎...那外面全都是長得奇形怪狀的東西, 啊, 算了, 我去就是了</text>
+    </string>
+    <string id="est_work_kuznecov_332">
+        <text>別, 與其成為變異矮人拉出來的粑粑, 我還想多活一陣子, 我去不了, 真的</text>
+    </string>
+    <string id="est_work_kuznecov_4">
+        <text>去X-16實驗室拿檔案</text>
+    </string>
+    <string id="est_work_kuznecov_44">
+        <text>我們需要這個實驗室研究工作的詳細記錄, 不過說實話, 這次的任務會很棘手, 那裡有致命的輻射和靈能場, 其他的情報我們知之甚少, 但可以肯定那裡有大量的殭屍和變異生物, 我建議你先去揚塔的移動實驗室, 與駐紮在那裡的生態學家們談談, 或許他們有辦法幫你抵禦強烈的靈能輻射, 所以, 你準備好了嗎?</text>
+    </string>
+    <string id="est_work_kuznecov_441">
+        <text>是的, 長官, 你就等著好訊息吧</text>
+    </string>
+    <string id="est_work_kuznecov_442">
+        <text>抱歉, 長官, 我沒有受過這樣的訓練也缺乏必要的裝置, 原諒我目前不能接受任務</text>
+    </string>
+    <string id="est_work_kuznecov_5">
+        <text>去X-10實驗室拿檔案</text>
+    </string>
+    <string id="est_work_kuznecov_55">
+        <text>你的工作很簡單:突破雷達站, 攻擊並佔領所謂的"焦腦器"所在的建築羣, 關閉它, 同時拿走你能找到的任何檔案, 但黑石信徒不會就此罷休的——你將面對那些黑石部隊的強烈抵抗, 準備好北上了嗎?</text>
+    </string>
+    <string id="est_work_kuznecov_551">
+        <text>關閉"焦腦器"是嗎, 這個任務我接下了</text>
+    </string>
+    <string id="est_work_kuznecov_552">
+        <text>我突然想起來我有急事, 回見!</text>
+    </string>
+    <string id="est_work_kuznecov_6">
+        <text>去X-8實驗室拿檔案</text>
+    </string>
+    <string id="est_work_kuznecov_66">
+        <text>在普里皮亞奇的城郊, 有一個代號為X-8的絕密實驗室, 你的任務是: 找回在那裡的所有研究文件, 你會在禧年服務中心的地下找到秘密實驗室, 你準備好接受任務了嗎?</text>
+    </string>
+    <string id="est_work_kuznecov_661">
+        <text>我準備好了</text>
+    </string>
+    <string id="est_work_kuznecov_662">
+        <text>我還需要一點時間</text>
+    </string>
+    <string id="est_work_kuznecov_7">
+        <text>從普里皮亞奇地下通道獲取檔案</text>
+    </string>
+    <string id="est_work_kuznecov_77">
+        <text>情報稱, 普里皮亞奇地下有一個巨大的綜合設施——可以說是"城中城", 總部需要我們調查那裡進行過怎樣的研究實驗, 還有秘密的"普里皮亞-1"通道的情況</text>
+    </string>
+    <string id="est_work_kuznecov_771">
+        <text>明白了, 長官</text>
+    </string>
+    <string id="est_work_kuznecov_772">
+        <text>還不行, 我需要為這次任務做準備</text>
+    </string>
+    <string id="est_work_kuznecov_8">
+        <text>清剿黑石控制室並取回檔案</text>
+    </string>
+    <string id="est_work_kuznecov_9">
+        <text>我改變主意了</text>
+    </string>
+    <string id="est_work_kuznecov_88">
+        <text>我們已經多次嘗試拿下切爾諾貝利並佔領那個該死的控制室, 但每一次都以慘敗告終, 不過這個首要目標無論如何也不會改變的, 所以你的任務就是摧毀控制室, 然後帶著你能找到的所有情報離開那裡, 不過在那之前, 可以去大沼澤找一個隱居的沼澤巫醫, 他有破解通往控制室的門所需的資訊, 還有, 小心點, 士兵, 從沒有人能做到這樣的事, 至少活著回來</text>
+    </string>
+    <string id="est_work_kuznecov_881">
+        <text>當然, 長官, 到了這個地步, 死了就全完了</text>
+    </string>
+    <string id="est_work_kuznecov_882">
+        <text>這樣的壯舉... 我需要好好準備一下</text>
+    </string>
+    <string id="work_vip_kuznecov_agr_undr_0">
+        <text>任務完成, 上校! 這是地下研究所的資料</text>
+    </string>
+    <string id="work_vip_kuznecov_agr_undr_1">
+        <text>幹得漂亮, 你乾淨利落地完成了任務, 而且還毫髮無損! 這是你應得的獎勵!</text>
+    </string>
+    <string id="work_vip_kuznecov_x18_0">
+        <text>任務完成,長官!我從X-18拿到了必要的檔案</text>
+    </string>
+    <string id="work_vip_kuznecov_x18_1">
+        <text>做得好,士兵!指揮官對這些資訊非常感興趣, 你的優異表現上級都看到了, 這是對你出色工作應得的獎勵</text>
+    </string>
+    <string id="work_vip_kuznecov_x16_0">
+        <text>上校, 我手上有X-16的檔案, "神蹟裝置"已經關閉, 楊塔周圍的靈能場已經失效了</text>
+    </string>
+    <string id="work_vip_kuznecov_x16_1">
+        <text>做得好! 真是一項艱巨的任務! 靈能場被摧毀, 我們就能派出特別行動小組來保護整個基地, 確保科學家們可以在相對安全的情況下開展工作了, 拿去, 你的報酬, 這是你應得的, 士兵</text>
+    </string>
+    <string id="work_vip_kuznecov_x10_0">
+        <text>突襲很成功, 長官, "焦腦器"被關閉了, 這是我在X-10找到的檔案</text>
+    </string>
+    <string id="work_vip_kuznecov_x10_1">
+        <text>終於! 通往北方的道路現在又開放了... 我們總算有機會妥善封鎖整個特異區了, 這都要感謝你, 你可能是我見過的最好的戰士之一, 這個給你, 算是獎勵吧</text>
+    </string>
+    <string id="work_vip_kuznecov_x8_0">
+        <text>我從普里皮亞奇回來了, 長官, 我在禧年服務中心下面找到了實驗室, 這是實驗室的檔案</text>
+    </string>
+    <string id="work_vip_kuznecov_x8_1">
+        <text>幹得好!有了這些檔案, 我們就能夠揭示特異區更多的秘密, 指揮官會為你驕傲的! 給你, 我沒有忘記你的報酬</text>
+    </string>
+    <string id="work_vip_kuznecov_jupiter_ugr_0">
+        <text>任務完成,指揮官!這是我從"普里皮亞-1"通道中取回的檔案</text>
+    </string>
+    <string id="work_vip_kuznecov_jupiter_ugr_1">
+        <text>你成功地完成了任務, 太不可思議了, 我很驚訝, 你知道嗎, 這裡的士兵們已經開始把你當成英雄來崇拜了, 他們看到你在特異區炸開一條路, 然後想, 也許他們也會這麼做, 至於我嘛... 我能想到的就是將軍的肩章更適合你, 給你, 拿著它, 雖然不是晉升爲將軍, 但我相信加薪也沒什麼壞處</text>
+    </string>
+    <string id="work_vip_kuznecov_control_bunker_0">
+        <text>我從切爾諾貝利回來了, 長官, 控制黑石的系統已經被摧毀了——原來石棺是控制掩體投射出來的幻象, 這是檔案, 長官——它詳細地描述了一切</text>
+    </string>
+    <string id="work_vip_kuznecov_control_bunker_1">
+        <text>不可能! 我的天... 難道說, 我的戰友們都被我派去送死了嗎? 我他媽的! 我現在就通知指揮部, 讓他們知道我們... 不對, 是你! 你給了黑石致命的一擊! 然後我把你獲得的所有情報都交到上級那裡, 而至於我們什麼時候決定佔領特異區中心, 嗯... 這也要由上級來決定, 但這次多虧了你, 這是有史以來第一次! 特異區在我們的掌控之中! 我們終於可以控制這裡, 清除變異生物, 趕走那些到處亂晃的潛行者們! 我向你表示最誠摯的謝意, 我是認真的! 你是一個英雄! 懂嗎? 不只是我, 最高指揮部也相信你有能力完成這個任務, 因此, 這裡是為你預留的獎勵和隨之而來的榮譽! 驕傲的拿著它! 這是你用命換來的!</text>
+    </string>
+    <string id="vasil_nevezuchi_1_0">
+        <text>我是來幫忙的, 我能做什麼?</text>
+    </string>
+    <string id="vasil_nevezuchi_1_2">
+        <text>很高興終於在這裡看到了一張友好的面孔, 我希望在覈電站的戰鬥進行得很順利, 我是盧克長官, 你也可以叫我瓦西爾, 我就直說吧, 黑石部隊駐紮在一個基地裡, 就在這個發光的玩意的東南, 森林的正中央, 但是他們埋下了地雷, 還在瞭望塔上佈置了狙擊手, 所以要小心點, 我們現在就出發, 要在那些混蛋發現我們之前幹掉他們, 明白嗎?</text>
+    </string>
+    <string id="vasil_nevezuchi_1_3">
+        <text>明白了, 走吧, 長官, 我掩護你</text>
+    </string>
+    <string id="kvartet_1_0">
+        <text>長官, 我準備好參加突擊了</text>
+    </string>
+    <string id="kvartet_1_2">
+        <text>好吧, 這些混蛋設了三個路障, 其中兩個在通往石棺的路上, 一個就在4號小隊的正前方, 我們的兩個小隊將從兩邊發起攻擊, 你的任務是用遠端火力支援我們的人, 並且儘可能多地幹掉那些該死的黑石部隊</text>
+    </string>
+    <string id="kvartet_1_3">
+        <text>收到! 我上了！</text>
+    </string>
+    <string id="inform_ab_toolkits_0">
+        <text>你知道我們在哪兒能弄到工具箱嗎?</text>
+    </string>
+    <string id="inform_ab_toolkits_1">
+        <text>我聽到了一些訊息, 給我點錢我就告訴你, 比如兩千塊的樣子</text>
+    </string>
+    <string id="inform_ab_toolkits_9">
+        <text>拿去</text>
+    </string>
+    <string id="inform_ab_toolkits_10">
+        <text>我待會兒再來</text>
+    </string>
+    <string id="inform_ab_toolkits_2">
+        <text>我知道, 給我四千我就告訴你</text>
+    </string>
+    <string id="inform_ab_toolkits_11">
+        <text>給給給</text>
+    </string>
+    <string id="inform_ab_toolkits_12">
+        <text>謝謝, 但我不需要</text>
+    </string>
+    <string id="inform_ab_toolkits_3">
+        <text>你先給我一千, 我再告訴你</text>
+    </string>
+    <string id="inform_ab_toolkits_13">
+        <text>拿去吧你</text>
+    </string>
+    <string id="inform_ab_toolkits_14">
+        <text>我改變主意了</text>
+    </string>
+    <string id="inform_ab_toolkits_4">
+        <text>先給我2500再說, 一口價</text>
+    </string>
+    <string id="inform_ab_toolkits_15">
+        <text>給你</text>
+    </string>
+    <string id="inform_ab_toolkits_16">
+        <text>抱歉, 我沒錢</text>
+    </string>
+    <string id="inform_ab_toolkits_5">
+        <text>聽我說, 朋友:</text>
+    </string>
+    <string id="inform_ab_toolkits_24">
+        <text>[繼續...]</text>
+    </string>
+    <string id="inform_ab_toolkits_6">
+        <text>我不知道</text>
+    </string>
+    <string id="inform_ab_toolkits_7">
+        <text>看看那些藏東西的地方</text>
+    </string>
+    <string id="inform_ab_toolkits_8">
+        <text>別煩我, 我現在沒空理你</text>
+    </string>
+    <string id="inform_ab_toolkits_17">
+        <text>你應該去黑谷的強盜基地看看, 他們沒什麼技師, 所以你可以"借"一套工具回來, 但具體放在哪裡, 我也不知道</text>
+    </string>
+    <string id="inform_ab_toolkits_18">
+        <text>在填埋場的人最近告訴我, 他們在當地的機庫里有個基地, 他寧可在那裡作粗活, 也不想被發現</text>
+    </string>
+    <string id="inform_ab_toolkits_19">
+        <text>封鎖線, ATP, 被通緝的強盜分子在扎巴哈特的基地廣泛存在, 甚至還有一個帶著裝置的技術員, 但他在某個地方消失了, 但他們說他的東西還在</text>
+    </string>
+    <string id="inform_ab_toolkits_20">
+        <text>在封鎖線內, 在南側檢查站尋找, 我希望你知道怎麼用地圖?那裡很危險, 沒有人去那裡, 所以有可能是用來做精細工作的工具</text>
+    </string>
+    <string id="inform_ab_toolkits_21">
+        <text>在農業研究所, 那裡的建築羣是中心, 還有一個閃電和靈能場的異常區, 你知道嗎？就在那個綜合體的某個地方, 有好東西, 現在沒有時間讓人們收集各種垃圾, 主要是是戰略性的物資, 為之奮鬥的工作在不斷進行, 但總是看見一堆電子垃圾</text>
+    </string>
+    <string id="inform_ab_toolkits_22">
+        <text>科技的墓地, 現在走出酒吧, 找一輛車號為"9941KIL"的車, 它會帶你到達珍愛的盒子, 我聽一個債務人說, 他們在那裡突襲, 一般來說是偵察, 嗯, 他們搜查了那片區域, 發現那裡很黑, 嗯, 他們進行了一次"戰術撤退", 呵呵, 有一個人跑開了, 發現了心愛的機器</text>
+    </string>
+    <string id="inform_ab_toolkits_23">
+        <text>科技的墓地, 現在走出酒吧, 找一輛車號為"9941KIL"的車, 那裡有一個盒子, 我聽一個債務人說, 他們在那裡發生戰鬥, 一般來說是偵察, 嗯, 他們搜查了那片區域, 發現那裡很黑, 嗯, 於是他們撤退了, 呵呵, 有一個人留下了, 發現了寶貝</text>
+    </string>
+    <string id="inform_ab_toolkits_25">
+        <text>謝謝你的錢, 現在滾吧, 我不知道你的工具在哪裡, 你這個蠢蛋</text>
+    </string>
+    <string id="inform_ab_toolkits_26">
+        <text>不好意思, 我忘了那地方了, 去藏物點看看, 問問周圍的毒販</text>
+    </string>
+    <string id="cs_task0_dialog_0">
+        <text>你們有什麼特別的任務給我嗎?</text>
+    </string>
+    <string id="cs_task0_dialog_1">
+        <text>還沒有什麼特別的, 不過我有份工作要給你, 我們在古蹟區安裝了一個掃瞄裝置, 就是西邊瞭望塔南邊的那個, 到現在為止, 它應該已經收集了我們要找的所有異常活動測量數據——現在我只需要有人把它帶回來, 你會接受嗎?</text>
+    </string>
+    <string id="cs_task0_dialog_3">
+        <text>下一次吧</text>
+    </string>
+    <string id="cs_task0_dialog_2">
+        <text>我會去的</text>
+    </string>
+    <string id="cs_task0_dialog1_0">
+        <text>我回來了, 裝置在我手上, 給你</text>
+    </string>
+    <string id="cs_task0_dialog1_2">
+        <text>謝謝你！順便說一下, 今晚有一位特殊的偵查員要回營地, 大約在晚上8點到11點之間, 別走開, 我們和他會面</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_0">
+        <text>我能為晴空做些什麼嗎?</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_1">
+        <text>是的,有, 你知道, 我們已經重新控制了沼澤的一小塊地方, 但即便如此, 我們的人力還遠遠不夠, 異常活動減少;通常情況下, 這將是一件好事, 但取而代之的是沼澤地帶充斥著尋找輕鬆工作的強盜和叛徒, 多虧了那些混蛋, 我們失去了地盤, 放棄了一個又一個陣地, 我們被困住了, 我們的人也筋疲力盡了——尤其是那些叛徒, 他們最喜歡這樣, 據我所知, 那些混蛋正準備對我們在泵站的前哨發動另一次襲擊, 你能幫我們的人對付他們嗎</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_3">
+        <text>我現在幫不上忙, 改天吧</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_2">
+        <text>沒有問題, 我會處理的</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip_0">
+        <text>叛徒已經被消滅了</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip_2">
+        <text>很好!接下來, 我們要確保通往封鎖線的道路安全, 我已經準備了一支衝鋒隊去佔領南村, 去突襲的位置集合, 幫助他們, 如果你願意, 你可以和他們一起去, 他們正準備離開基地</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip2_0">
+        <text>通往封鎖線的路很安全</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip2_2">
+        <text>幹得漂亮, 多虧了你, 我們已經確保了沼澤地的所有關鍵位置, 這是你的報酬, 不過, 這也不全是好訊息--這次, 問題出在軍隊上, 以前, 叛節者和其他與他們一起來的垃圾不敢深入我們的領土, 因為他們不願意與該地區的士兵打仗；我們與軍方並不完全是朋友, 但只要我們不反過來打擾他們, 他們就滿足於放過我們, 現在呢？軍方已經派出越來越多的潛行者小隊進入我們的地盤, 而我們正在遭受重大損失, 我已經受夠了, 把他們趕出沼澤地東北部的機工院子, 這將最終使我們在這裡獲得優勢, 並確保"晴空"最終能在該地區獲得一個穩定、安全的立足點, 我將派出一支由我們最有經驗的戰士組成的突擊隊--他們已經從我們的基地出發了, 與他們匯合, 幫助他們贏得這場戰鬥</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip3_0">
+        <text>軍隊被趕出了機工場——那是一場艱苦的戰鬥</text>
+    </string>
+    <string id="cs_task0_ambush_renegade_vip3_2">
+        <text>難以置信!多虧了你的幫助, 我們奪回了失去的所有關鍵陣地, 再次成為一股不可忽視的力量, 啊, 要是列別捷夫能在這裡看到這一切就好了, 既然我們已經擺脫了危機, 我們還有很多工作要做——這就是你的回報, 再次感謝你的幫助, 沒有你, 我們做不到</text>
+    </string>
+    <string id="cs_task2_dialog_0">
+        <text>偵察兵死了, 這是他的PDA</text>
+    </string>
+    <string id="cs_task2_dialog_2">
+        <text>真可惜, 他是我們最好的偵察兵之一, 謝謝</text>
+    </string>
+    <string id="cs_task3_cold_dialog_0">
+        <text>我是來解密PDA的</text>
+    </string>
+    <string id="cs_task3_cold_dialog_1">
+        <text>來, 坐吧, 我有一些好訊息要告訴你們, 事實證明, 我們在2011年失蹤的一些戰友實際上還活著, 根據我們從PDA上獲取的資訊, 一個名叫 "刀疤臉"的僱傭兵可能還在附近, 早在2011年, 他就帶領一支突擊隊通過利曼斯克和醫院進入CNPP, 以便追上斯特雷洛克並阻止他；據我們的偵察員說, 他有秘密的情報, 一個符合刀疤臉描述的人還有空娛樂, 甚至有人看到他與一些潛行者接觸, 這些人可能是列別德夫小隊的倖存者, 如果你問我, 最好的行動方案是直接去找西多洛維奇, 看看他是否知道這一切</text>
+    </string>
+    <string id="cs_task3_cold_dialog_2">
+        <text>哇, 這真是個好訊息, 是的, 你是對的——如果有人對這一切有所瞭解, 那就是西多洛維奇, 我去問問他, 看看能不能找到關於我們倖存的戰友的任何資訊</text>
+    </string>
+    <string id="holod_end_cs_story_0">
+        <text>我找到了晴空的一個倖存者</text>
+    </string>
+    <string id="holod_end_cs_story_1">
+        <text>你找到他了嗎?他是誰?他在哪裡?</text>
+    </string>
+    <string id="holod_end_cs_story_2">
+        <text>是列別捷夫老隊伍的加瑪云, 他現在在和黑石反叛者們一起戰鬥, 但我沒能說服他和我一起回沼澤, 他說他不能丟下他的兄弟們</text>
+    </string>
+    <string id="holod_end_cs_story_3">
+        <text>好吧, 我想我相信他的判斷——而且, 如果他活下來了, 也許還有其他人也活下來了, 你的故事給了我希望, 有一天, 我們會和我們的老戰友團聚, 我會讓我們的情報部門向黑石反叛者提供幫助, 我還沒忘記你在這一切中的作用, 你的工作值得獎賞</text>
+    </string>
+    <string id="holod_end_cs_story_4">
+        <text>謝謝你</text>
+    </string>
+    <string id="cs_task4_dragun_dialog_0">
+        <text>嘿!你是刀疤臉嗎?我需要和你談談</text>
+    </string>
+    <string id="cs_task4_dragun_dialog_1">
+        <text>是的,就是我, 你是誰?你要做什麼, 媽的, 現在不行, 先幫我打敗這些變異犬!他們已經追了我兩公里了</text>
+    </string>
+    <string id="cs_task4_dragun_dialog_2">
+        <text>當然, 我來幫你</text>
+    </string>
+    <string id="cs_task5_dragun_dialog_0">
+        <text>哇, 終於幹掉它們了, 所以呢?你能告訴我列別捷夫小組倖存的成員嗎?我有可靠訊息說你對這一切有所瞭解</text>
+    </string>
+    <string id="cs_task5_dragun_dialog_1">
+        <text>是的, 你說的沒錯, 我確實知道一些情況, 不過, 我恐怕不能告訴你那麼多--我知道的大部分不過是傳言而已, 你聽說過被稱為 "神行客 "的潛行者和他的團隊嗎？顯然, 他們都是"黑石"的前成員, 但他們反抗了他們的主人, 這些天正在進行一場針對他們以前的同志的游擊戰, 有傳言說, 這些"黑石反叛者"的隊伍中包括晴空的前成員, 你會在靠近前軍隊檢查站的朱庇特找到斯特里德和他的部隊--過去是由一個叫瓦雷特的傢伙領導的一群強盜的踩踏場, 反正他在穹頂上吃了一個</text>
+    </string>
+    <string id="cs_task5_dragun_dialog_2">
+        <text>非常謝謝你</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog2_0">
+        <text>我找到了加瑪云的手下, 他讓我把這個裝置帶給你, 救援隊完成了他們的任務</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog2_1">
+        <text>這個裝置會扭轉局勢, 對我們有利, 我很高興你找到了他, 即使他沒跟你一起去很遺憾, 他是個厲害的戰士</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog2_2">
+        <text>他決定和黑石反叛者們呆在一起</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog2_3">
+        <text>好, 我認為你幫助了我們小組, 應該得到獎賞, 我們並不富有, 但我們有足夠的錢來支付你出色的工作, 那就這樣吧</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog2_4">
+        <text>謝謝你</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog1_0">
+        <text>我聽說你們隊里有一些前晴空組織的成員, 我能和他們談談嗎?我為晴空工作, 我們在找我們的戰友</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog1_1">
+        <text>我們確實有一些人曾經和晴空在一起——他們和我們一樣是黑石的戰士, 直到石棺意識鬆開了它的控制, 現在我們站在一起對抗黑石</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog1_2">
+        <text>我在哪能見到他們</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog1_3">
+        <text>恐怕你來太晚了, 他們的單位已經去了東部普里皮亞奇完成任務,不幸的是,他們還沒有回覆訊息, 如果你快點,你可能會趕上他們, 我沒有很多人,所以我不能為一個救援任務騰出時間</text>
+    </string>
+    <string id="brodyaga_cs_story_dialog1_4">
+        <text>謝謝你提供的資訊, 我一定會找到他們的, 如果他們有危險, 我會幫助他們的</text>
+    </string>
+    <string id="gamajun_cs_story_dialog1_0">
+        <text>看來我來得正是時候</text>
+    </string>
+    <string id="gamajun_cs_story_dialog1_1">
+        <text>是的,嗯...如果再晚一點, 那些黑石信徒會殺了我們的, 是神行客派你來的嗎?</text>
+    </string>
+    <string id="gamajun_cs_story_dialog1_2">
+        <text>其實我在找你, 你是列別捷夫小組的成員, 對吧?晴空在找你</text>
+    </string>
+    <string id="gamajun_cs_story_dialog1_3">
+        <text>嗯...我曾經是, 但現在我成了黑石反叛者, 我會告訴你我知道的一切然後我們再決定下一步該怎麼做, 但現在我需要你在這裡幫我完成任務, 我們面對的黑石軍隊比我們想像的要強大, 我已經派了一隊人去河港繳獲一個可以用來監聽那些黑石信徒的裝置, 但他們沒有回覆我的任何資訊, 好像是黑石抓住了他們, 我需要你偵察這片區域幫我們把這個裝置拿回來</text>
+    </string>
+    <string id="gamajun_cs_story_dialog1_4">
+        <text>好的, 我會幫助你們的</text>
+    </string>
+    <string id="gamajun_cs_story_dialog2_0">
+        <text>這是裝置</text>
+    </string>
+    <string id="gamajun_cs_story_dialog2_1">
+        <text>謝謝你！你最好把這個帶給神行客, 我留在這裡, 和我的人一起保護這個前哨站</text>
+    </string>
+    <string id="gamajun_cs_story_dialog2_2">
+        <text>你不跟我去沼澤了?</text>
+    </string>
+    <string id="gamajun_cs_story_dialog2_3">
+        <text>不, 對不起, 我是黑石反叛者了, 我不能丟下我的兄弟們, 我答應過你要把我的經歷講給你聽的, 不是嗎?聽我說, 早在2011年, 我和列別捷夫在一個突擊小組, 負責突破利曼斯克,  在一些僱傭兵的幫助下, 我們繼續向北推進, 並設法在城市邊界內站穩腳跟——然後, 一股強烈靈能波襲來, 后呢?我什麼都不記得了-漫遊者說我和其他被靈能波襲擊的人一樣為黑石服務,  我記得的下一件事是在2012年的某個時候, 才在木星地區醒來, 我變成了我自己,  多虧了神行客, 我才活了下來, 從那以後我就和他一起工作了</text>
+    </string>
+    <string id="gamajun_cs_story_dialog2_4">
+        <text>謝謝你告訴我你的故事, 我會把裝置交給神行客, 我也一定會替你向科爾德問好</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_start_0">
+        <text>有什麼特別的工作嗎?</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_start_1">
+        <text>仔細想想, 有的, 自由團和強盜的戰爭正在進行, 還有從北方來的黑石信徒們, 我們所有的軍隊都在打仗, 我們需要獵人來完成我們的主要任務, 摧毀特異區, 我給你提供了一份巫醫的工作, 事情就這麼簡單:我給你一份"女巫"合同, 你履行了它, 並因此獲得了報酬, 聽起來怎麼樣?</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_start_2">
+        <text>聽起來不錯, 如果薪水不錯, 我就接受, 我的第一份任務是什麼?</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_start_3">
+        <text>別擔心薪水, 如果你能證明自己, 我們會付給你錢和裝置的, 你的第一個任務是摧毀一個南遷的吸血怪巢穴, 這可真讓人頭疼, 那些吸血怪已經越過了我們所有的崗哨和巡邏隊, 消滅這些生物, 然後回來拿你的報酬, 我建議你和屠夫一起尋找老巢, 他是當地獵人的首領</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_start_4">
+        <text>我接受了, 可以說這些吸血怪已經死了, 因為我來了</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_end_0">
+        <text>任務完成, 吸血怪被消滅</text>
+    </string>
+    <string id="dolg_story_task_1_dialog_end_1">
+        <text>幹得好, 這是你的報酬</text>
+    </string>
+    <string id="prinesi_military_docs_start_0">
+        <text>我要怎麼做才能得到"刀疤臉"的資訊?</text>
+    </string>
+    <string id="prinesi_military_docs_start_1">
+        <text>事情是這樣的... 昨天, 北方的某個探險隊從特異區深處帶回來了一件非常重要的報告, 現在就存在封鎖線的哨卡那裡, 白天, 他們看守著它, 就像裡面裝滿了黃金一樣, 但晚上, 出於某種原因, 只留下兩名守衛, 偷偷跑到路障那裡, 幫我把箱子拿過來, 我會不惜一切代價幫你...這是我個人原因, 你會做的, 是嗎?</text>
+    </string>
+    <string id="prinesi_military_docs_start_21">
+        <text>我會做的</text>
+    </string>
+    <string id="prinesi_military_docs_start_22">
+        <text>你知道, 我不這麼認為, 我很珍惜我的生命</text>
+    </string>
+    <string id="prinesi_military_docs_start_31">
+        <text>我已經準備好錢了, 但是不要...告訴別人, 好嗎?如果軍方被激怒了, 我們所有人都會受到牽連</text>
+    </string>
+    <string id="prinesi_military_docs_done_0">
+        <text>我找到了, 這裡</text>
+    </string>
+    <string id="prinesi_military_docs_done_1">
+        <text>很好, 很好! 收下這個吧, 算是給你報銷一點醫藥費, 呵呵...</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_0">
+        <text>我在找一個叫刀疤臉的僱傭兵, 你認識他嗎?</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_1">
+        <text>也許我知道, 你為什麼需要這些資訊?</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_3">
+        <text>他知道對晴空很重要的資訊</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_2">
+        <text>嗯, 是的, 我確實知道一些關於他的事情, 但已經過去幾天我有點記不清了... 給我兩萬塊, 然後我說不定能想起來"刀疤臉"的事</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_4">
+        <text>好吧, 我幫你跑腿買資訊</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_5">
+        <text>我沒時間玩這些遊戲, 你個老胖子</text>
+    </string>
+    <string id="cs_task3_sidor_dialog_6">
+        <text>我可沒時間和那些沒錢的懶人打交道, 如果你不是來做生意的, 那就滾出去</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_0">
+        <text>我是來問"刀疤臉"的情報的</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_1">
+        <text>這情報值20000塊, 拿來就行</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_3">
+        <text>好, 你等著, 我搶完銀行就過來</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_2">
+        <text>不就是20000, 拿去揮霍!</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_4">
+        <text>哈哈, 仔細聽好了, 或者拿個小本本記著, 我不可會再說第二遍... 之前有個僱傭兵來找我, 他說自己需要裝備深入北部地區, 這傢伙很有錢, 買那些高級裝備眼睛都不眨一下, 我記得他說要去扎頓一趟, 現在應該還在那裡, 我怎麼知道? 因為他還問我要了一份扎頓的地圖, 說要去變電站的車間那附近找情報... 好了, 我就知道這麼多, 接下來你就只能自求多福了</text>
+    </string>
+    <string id="cs_task3_sidor_dialog1_5">
+        <text>...2萬塊就換了這幾句話, 賣情報還真是好賺</text>
+    </string>   
+</string_table>

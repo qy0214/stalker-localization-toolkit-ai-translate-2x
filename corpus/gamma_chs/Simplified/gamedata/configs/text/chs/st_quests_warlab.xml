@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="sar_perception">
+		<text>北部通道</text>
+	</string>
+	<string id="sar_perception_1">
+		<text>探寻黑石背后的任何人或任何东西.</text>
+	</string>
+	<string id="sar_perception_2">
+		<text>找到手稿中提到的战争实验室, 找出隐藏在其中的秘密.</text>
+	</string>
+	<string id="sar_perception_3">
+		<text>使用解码器开门.</text>
+	</string>
+	<string id="sar_perception_4">
+		<text>打败黑石部队进入房间.</text>
+	</string>
+	<string id="sar_perception_5">
+		<text>从文件中找出开门密码.</text>
+	</string>
+	<string id="warlab_kill_crazy_entity_title">
+		<text>解决掉那不为人知的存在</text>
+	</string>
+	<string id="warlab_kill_crazy_entity_1">
+		<text>与实体对话</text>
+	</string>
+	<string id="warlab_kill_crazy_entity_2">
+		<text>杀死实体的三个幻化形态来打开这扇门</text>
+	</string>
+</string_table>

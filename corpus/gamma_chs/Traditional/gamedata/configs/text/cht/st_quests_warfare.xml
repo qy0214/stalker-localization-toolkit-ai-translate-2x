@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS FOR WARFARE TASKS
+<	CoC 1.4.22
+<
+<
+<===========================================================-->
+<string_table>
+
+	<!--/////////////////////////////////// ARMY WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- ASSAULT AREA FOR MILITARY TASK -->
+	<string id="sim_default_army_trader_task_1_name">
+		<text>為軍方進攻領土</text>
+	</string>
+	<string id="sim_default_army_trader_task_1_text">
+		<text>%s從%s指派你領導一次突擊行動清除任何未經授權的人.</text>
+	</string>
+	<string id="sim_default_army_trader_task_1_about">
+		<text>指揮官對越來越多的人進入特異區感到擔憂. 他想讓你進去搜查一個未經許可的區域. 對任何友軍保持警惕, 但你看到的任何人都可以開槍射擊.</text>
+	</string>
+	<string id="sim_default_army_trader_task_1_finish">
+		<text>幹得好. 堅持下去, 你會得到嘉獎的.</text>
+	</string>
+
+
+	<!-- CAPTURE TERRITORY FOR MILITARY TASK -->
+	<string id="sim_default_army_trader_task_2_name">
+		<text>為軍方奪取領土</text>
+	</string>
+	<string id="sim_default_army_trader_task_2_text">
+		<text>%s從%s指派你佔領特異區內的領土.</text>
+	</string>
+	<string id="sim_default_army_trader_task_2_about">
+		<text>我們部隊的任務是進一步深入戰區. 指揮官正在尋找為我們奪取領土的志願者. 我能把你們合作地想法告訴他嗎?</text>
+	</string>
+	<string id="sim_default_army_trader_task_2_finish">
+		<text>任務完成了嗎? 幹得好. 我馬上通知指揮官你的成功.</text>
+	</string>
+
+
+	<!-- ASSASSINATION FOR MILITARY TASK -->
+	<string id="sim_default_army_trader_task_3_name">
+		<text>為軍方攻取敵方目標</text>
+	</string>
+	<string id="sim_default_army_trader_task_3_text">
+		<text>%s從%s分配給你一個敵方目標去俘虜或殺死.</text>
+	</string>
+	<string id="sim_default_army_trader_task_3_about">
+		<text>總部有一張通緝要犯名單. 如果你處理掉其中任何一個, 你的下一份薪水中就會有獎金. 你能勝任這份工作嗎?</text>
+	</string>
+	<string id="sim_default_army_trader_task_3_finish">
+		<text>幹得好! 指揮官會很高興的.</text>
+	</string>
+	
+	<!-- FIND LEVEL 1 TOOLKIT FOR MILITARY MECHANICS TASK -->
+	<string id="sim_default_army_mechanic_task_1_name">
+		<text>為軍隊技師找到%s</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_1_text">
+		<text>軍隊技師要求更換舊的%s, 如果你找到了, 你應該把它們帶回任何軍隊技師那裡.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_1_about">
+		<text>嘿, 我能請你幫個忙嗎? 如果你有興趣幫助我, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_1_fetch_about">
+		<text>我們急需新的工具, 因為我們沒有從國防部獲得足夠的資金來採購更好的裝置. 現在, 我們需要一套新的初級工具箱. 如果你弄到了, 我們會感激不盡. 順便的, 你不一定得給我, 任何一個軍隊技師都行. 完成後, 我們會在這裡為你打折. 你幹嗎?</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_1_fetch_finish">
+		<text>太棒了! 你正好帶了我們要的東西. 謝謝.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR MILITARY MECHANICS TASK -->
+	<string id="sim_default_army_mechanic_task_2_name">
+		<text>為軍隊技師尋找%s</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_2_text">
+		<text>軍方技師要求更換舊的%s, 如果你找到了, 你應該把它們帶回任何一個軍隊技師那裡.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_2_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具. 但它們可能更難找到. 你能幫我這個忙嗎? ?</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_2_fetch_about">
+		<text>好的, 現在我們需要一套新的高級工具. 帶一套回來, 我們甚至會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_2_fetch_finish">
+		<text>太棒了! 如果你需要我處理一下你的裝備, 隨時都可以來.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR MILITARY MECHANICS TASK -->
+	<string id="sim_default_army_mechanic_task_3_name">
+		<text>為軍隊技師尋找%s</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_3_text">
+		<text>軍方技師要求更換舊的%s, 如果你找到了, 你應該把它們帶回任何一個軍隊技師那裡.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_3_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具. 但它們可能更難找到. 你能幫我這個忙嗎?</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_3_fetch_about">
+		<text>現在我們需要一套新的專家工具. 它應該包含我們現在需要的一切. 帶些回來, 我們會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_army_mechanic_task_3_fetch_finish">
+		<text>太棒了! 如果你需要我處理一下你的裝備, 隨時都可以來.</text>
+	</string>
+	
+	<!--/////////////////////////////////// DUTY WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- DEFEND TERRITORY FOR DUTY TASK -->
+	<string id="sim_default_dolg_trader_task_1_name">
+		<text>保護紀律團領土</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_1_text">
+		<text>敵軍正在侵犯紀律團的地盤. %s從%s要求你消除威脅.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_1_about">
+		<text>我被告知, 敵軍正在我們的一個營地前進. 我需要你在他們到達之前阻止他們.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_1_finish">
+		<text>幹得好. 你真是個好戰士.</text>
+	</string>
+
+
+	<!-- CAPTURE TERRITORY FOR DUTY TASK -->
+	<string id="sim_default_dolg_trader_task_2_name">
+		<text>收回紀律團地領土</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_2_text">
+		<text>你被派去執行重新奪回領土地任務. 工作完成後向%s的%s彙報.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_2_about">
+		<text>我有一個重要的任務. 自由軍佔領了我們的一個營地, 我需要一個戰士來奪回它.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_2_finish">
+		<text>任務完成了嗎? 幹得好.</text>
+	</string>
+
+
+	<!-- ASSASSINATION FOR DUTY TASK -->
+	<string id="sim_default_dolg_trader_task_3_name">
+		<text>暗殺重要人物</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_3_text">
+		<text>%s從%s命令你去尋找並消滅一個目標.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_3_about">
+		<text>我有一份貴賓名單需要... 照顧. 有些人是告密者, 自由軍的高級成員, 班長, 戰術家或普通人渣. 如果可以的話, 幹掉他們, 以防後患.</text>
+	</string>
+	<string id="sim_default_dolg_trader_task_3_finish">
+		<text>太棒了! 你讓我們感到驕傲. 這是我答應過的獎勵.</text>
+	</string>
+	
+		<!-- FIND LEVEL 1 TOOLKIT FOR DUTY MECHANICS TASK -->
+	<string id="sim_default_dolg_mechanic_task_1_name">
+		<text>為紀律團的技師找到%s</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_1_text">
+		<text>紀律團技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個紀律團技師那裡.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_1_about">
+		<text>我是配得上一套好工具的, 潛行者... 也許還有些錢. 如果你有興趣幫我, 我會告訴你我在找什麼.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_1_fetch_about">
+		<text>我們現有的大部分修理工具可以回溯到2006年, 當時發生了第二次事故. 遠在紀律團存在之前. 現在我們不得不去搜尋軍隊剩下的共聚. 長話短說, 我們需要一套新的初級工具箱. 把它帶回任何你遇到的紀律團技師, 我們會給你折扣. 你準備好接受這項任務了嗎?</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_1_fetch_finish">
+		<text>做的不錯. 你帶來這些工具, 我們將會給你很大的折扣.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR DUTY MECHANICS TASK -->
+	<string id="sim_default_dolg_mechanic_task_2_name">
+		<text>為紀律團的技師找到%s</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_2_text">
+		<text>紀律團技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個紀律團技師那裡.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_2_about">
+		<text>嘿, 夥計, 如果你碰巧找到高級工具箱, 我會給你折扣的. 你能幫我留心一下嗎?</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_2_fetch_about">
+		<text>現在我們需要一套新的高級工具. 帶一套來, 我們會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_2_fetch_finish">
+		<text>做的不錯. 你帶來這些工具, 我們將會給你更大的折扣.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR DUTY MECHANICS TASK -->
+	<string id="sim_default_dolg_mechanic_task_3_name">
+		<text>為紀律團的技師找到%s</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_3_text">
+		<text>紀律團技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個紀律團技師那裡.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_3_about">
+		<text>嘿, 夥計, 如果你碰巧找到專家級工具箱, 我會給你折扣的. 你能幫我留心一下嗎?</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_3_fetch_about">
+		<text>現在我們需要一套新的專業級工具. 它應該包含我們現在需要的一切. 如果你能帶一些回來, 我們會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_dolg_mechanic_task_3_fetch_finish">
+		<text>太好了! 現在我們有了所有需要的東西, 多謝你潛行者. 享受你的折扣吧.</text>
+	</string>
+	
+
+	<!--/////////////////////////////////// BANDIT WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSASSIATION FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_1_name">
+		<text>消滅土匪的目標</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_1_text">
+		<text>找到並消滅目標, 然後從%s, %s處收取酬金.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_1_about">
+		<text>在特異區總有人用錯誤的方式和我發生摩擦, 不尊重我. 這些傻逼有的欠我錢, 有的把交易搞砸了. 這些人只不過是需要被踩死的老鼠罷了. 如果你準備好了, 我會給你他們的情報, 這樣你就可以通過GPS跟蹤他們.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_1_finish">
+		<text>幹得好! 這是給你的一點小禮物:</text>
+	</string>
+	
+	<!-- ELIMINATE MUTANTS FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_2_name">
+		<text>消除對土匪構成威脅的變異生物</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_2_text">
+		<text>在這個地點附近發現了怪物, 這使得那裡變得很危險. 你的任務是消滅那片區域內的變異生物威脅. 工作完成後報告給%s的%s. </text>
+	</string>
+	<string id="sim_default_bandit_trader_task_2_about">
+		<text>我們一直在尋找一個有足夠能力的人去清除某些地方的變異生物. 潛行者的膽小鬼不會去那裡, 因為他們太害怕了. 如果我們不做點什麼, 我們就沒有人可以"借"東西了, 那我們就不得不搬出這個地方.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_2_finish">
+		<text>太棒了! 這是你的報酬. 我一定要在老大面前為你美言幾句.</text>
+	</string>
+
+
+	<!-- DEFEND TERRITORY FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_3_name">
+		<text>消除對土匪構成威脅的敵人</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_3_text">
+		<text>你的任務是消滅這篇地區的威脅. 完成任務后返回%s的%s處.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_3_about">
+		<text>臭婊子們正在進入我們的地盤. 老大命令我招集一群小弟, 並讓他們有足夠的膽量去改造這些營地. 你說呢? 是男人就給我幹了?</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_3_finish">
+		<text>太棒了! 這是你的報酬. 我一定要在老大面前為你說幾句好話.</text>
+	</string>
+
+
+	<!-- ESCORT RAIDERS FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_4_name">
+		<text>Chiki-Briki i v Damke</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_4_text">
+		<text>%s從%s要求你把土匪們一直以來想要的貴重物品找到並給他們, 直到他們爽夠了為止, 從而使你在當地土匪之中拔得頭籌.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_4_about">
+		<text>有幾個傢伙在找其它想加入他們的人, 這事已經有段時間了. 他們需要一個偵察兵帶他們去尋找主要目標, 完活后, 他們會立刻給你報酬.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_4_finish">
+		<text>不錯吧? 這是你的那份.</text>
+	</string>
+
+
+	<!-- ASSASSINATION FOR BANDITS TASK -->
+	<string id="sim_default_bandit_trader_task_5_name">
+		<text>殺手</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_5_text">
+		<text>%s在%s和你約定進行一次暗殺. 找到然後消滅目標, 然後返回他那裡領取報酬.</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_5_about">
+		<text>這名單上面的人都惹到了我. 我要你把他們除掉. 你意下如何?</text>
+	</string>
+	<string id="sim_default_bandit_trader_task_5_finish">
+		<text>很好, 你清理了那個混蛋! 這是我答應過的.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR BANDIT MECHANICS -->
+	<string id="sim_default_bandit_mechanic_task_1_name">
+		<text>為土匪技師尋找%s</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_1_text">
+		<text>土匪技師要求更換舊的%s, 如果你找到了, 你最好把它們帶回任何一個土匪技師那裡.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_1_about">
+		<text>我急需新工具, 夥計. 我受不了那些銹跡斑斑的爛貨, 槍油也快用完了. 如果你有興趣幫助我, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_1_fetch_about">
+		<text>我們需要更好的工具. 要找到他們真他媽難, 不然每一個混球都在朝我們開槍. 現在, 我們只需要一套新的初級工具箱. 你找到一個后, 把它帶回給我們的技師, 我們會在這裡給你一個不錯的折扣. 你準備好了, 夥計?</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_1_fetch_finish">
+		<text>完美! 這正是我們需要的, 夥計. 我會和其他技師商量給你一個折扣.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR BANDIT MECHANICS -->
+	<string id="sim_default_bandit_mechanic_task_2_name">
+		<text>為土匪技師尋找%s</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_2_text">
+		<text>土匪技師要求更換舊的%s, 如果你找到了, 你最好把它們帶回任何一個土匪技師那裡.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_2_about">
+		<text>你給我帶來的工具很好, 但它並非我需要的全部. 你覺得你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_2_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你在哪裡能搞到, 但如果你找到了, 帶給我, 我需要它.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_2_fetch_finish">
+		<text>你又堅持到底了! 真劃算, 給你錢. 我和其他技師談過了, 給你更大的折扣.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR BANDIT MECHANICS -->
+	<string id="sim_default_bandit_mechanic_task_3_name">
+		<text>為土匪技師尋找%s</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_3_text">
+		<text>土匪技師要求更換舊的%s, 如果你找到了, 你最好把它們帶回任何一個土匪技師那裡.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_3_about">
+		<text>你給我帶來的工具很好, 但它並非我需要的全部. 你覺得你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個%s. 應該包含了我們現在需要的所有東西. 我不確定你在哪裡可以弄到, 但是如果你能找到的話, 我們需要它.</text>
+	</string>
+	<string id="sim_default_bandit_mechanic_task_3_fetch_finish">
+		<text>你又來了! 很好, 夥計, 現在我們有了我們需要的一切. 我們會再給你折扣的.</text>
+	</string>
+	
+	
+	<!--/////////////////////////////////// KILLER WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->	
+	
+	<!-- ASSASSINATION FOR MERCS TASK -->
+	<string id="sim_default_killer_trader_task_1_name">
+		<text>職業殺手</text>
+	</string>
+	<string id="sim_default_killer_trader_task_1_text">
+		<text>你的任務是找到並消滅一個目標. 任務完成後返回%s的%s處領取報酬.</text>
+	</string>
+	<string id="sim_default_killer_trader_task_1_about">
+		<text>我們的承包商有一份懸賞清單, 我們需要有人來分散進行這些暗殺, 這將使我們能夠履行我們對承包商的義務. 你有興趣嗎?</text>
+	</string>
+	<string id="sim_default_killer_trader_task_1_finish">
+		<text>結束了嗎? 太好了. 這是你的提成:</text>
+	</string>
+
+
+	<!-- ASSAULT TERRITORY FOR MERCS TASK -->
+	<string id="sim_default_killer_trader_task_2_name">
+		<text>為傭兵攻擊領土</text>
+	</string>
+	<string id="sim_default_killer_trader_task_2_text">
+		<text>清除該地區所有的敵對威脅. 任務完成後返回%s的%s處領取報酬.</text>
+	</string>
+	<string id="sim_default_killer_trader_task_2_about">
+		<text>我需要你在這次進攻中擔任指揮. 清除目標區域的所有敵對勢力.</text>
+	</string>
+	<string id="sim_default_killer_trader_task_2_finish">
+		<text>幹得好. 你是個不錯的戰士.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLS FOR MERC MECHANICS TASK -->
+	<string id="sim_default_killer_mechanic_task_1_name">
+		<text>為傭兵的技師尋找%s</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_1_text">
+		<text>傭兵技師要求更換舊的%s, 如果你找到了, 你得把它們帶回任何一個傭兵技師那裡.</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_1_about">
+		<text>我有個建議給你. 如果你能給我帶些的新工具, 我會給你報酬, 你有興趣嗎?</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_1_fetch_about">
+		<text>很好. 我一直在找一套%s. 裡面應該有些我們可以用於武器上的槍油和工具. 如果你給我們的任意一個技師帶來一套的話我們會支付報酬的, 包括我自己. 你沒帶來一副新的工具, 我們將降低我們的服務價格, 以示感謝. 所以, 你意下如何? 幫還是不幫? .</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_1_fetch_finish">
+		<text>太棒了. 這就是我一直在找的. 謝謝!</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR MERC MECHANICS TASK -->
+	<string id="sim_default_killer_mechanic_task_2_name">
+		<text>為傭兵的技師尋找%s</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_2_text">
+		<text>傭兵技師要求更換舊的%s, 如果你找到了, 你得把它們帶回任何一個傭兵技師那裡.</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_2_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_2_fetch_about">
+		<text>現在我們需要一套%s了. 我不確定你在哪裡能弄到, 但如果你能弄到的話, 我需要它.</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_2_fetch_finish">
+		<text>我需要的一切都在這裡了. 謝謝你.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLS FOR MERC MECHANICS TASK -->
+	<string id="sim_default_killer_mechanic_task_3_name">
+		<text>找到%s給傭兵技師</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_3_text">
+		<text>傭兵技師要求更換舊的%s, 如果你找到了, 你得把它們帶回任何一個傭兵技師那裡.</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_3_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你在哪裡可以買到, 但是如果你能找到的話, 我們需要它.</text>
+	</string>
+	<string id="sim_default_killer_mechanic_task_3_fetch_finish">
+		<text>我需要的一切都在這裡了. 謝謝你.</text>
+	</string>
+
+	<!--/////////////////////////////////// LONER WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ELIMINATE MUTANTS 1 FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_1_name">
+		<text>為潛行者清除變異生物</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_1_text">
+		<text>變異生物正在泛濫. 找到並清除它們, 讓這個區域安靜下來. 再回到%s, %s處領取你的回報.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_1_about">
+		<text>噓... 聽, 聽到了嗎? 一些變異怪物在嚎叫. 這種聲音讓我不寒而慄. 你出去照顧一下它們如何? 我會讓你覺得這一切都會是值得的.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_1_finish">
+		<text>幹得好潛行者!</text>
+	</string>
+
+	<!-- FIND ARTEFACT FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_2_name">
+		<text>為獨行者的交易商找到"%s"神器</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_2_text">
+		<text>%s在%s要求你幫他找到%s神器.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_2_about">
+		<text>我通常不從潛行者那裡購買神器, 但有一個我實在是太想入手了. 我能幫我弄一個嗎?</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_2_fetch_about">
+		<text>我正在尋找"%s"神器. 你見過嗎? 我通常不從潛行者那裡購買神器, 但有一個我實在是太想入手了. 如果你能找到, 我會付一個好價錢.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_2_fetch_finish">
+		<text>不錯的狩獵, 潛行者!</text>
+	</string>
+
+	<!-- ASSASSINATION 1 FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_3_name">
+		<text>兄弟的守護者</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_3_text">
+		<text>%s在%s讓你去幹掉一個被軍隊收買的叛徒.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_3_about">
+		<text>這裡有個混蛋;曾經和各位一樣都是尋常的潛行者. 一天, 一些軍官收買了他. 讓后我們發現, 他在曾經的兄弟背後放黑槍! 我們無法原諒! 找到這個叛徒, 為死於黑槍的兄弟報仇.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_3_finish">
+		<text>啊, 你幹掉他了? 我以為我只能默默地喝一杯了. 現在讓我們一起...</text>
+	</string>
+	
+	<!-- ELIMINATE MUTANTS 2 FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_4_name">
+		<text>消除潛行者的變異生物威脅</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_4_text">
+		<text>在這個地點附近發現了變異生物, 使得這個地方變得十分危險. 你的任務是消滅特異區內的變異生物威脅. 工作完成後報告給%s的%s. </text>
+	</string>
+	<string id="sim_default_stalker_trader_task_4_about">
+		<text>我一直在尋找一個人, 來清除這附近發現的變異生物巢穴使得這裡更加安全. 你能勝任這份工作嗎?</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_4_finish">
+		<text>謝謝你, 潛行者. 因為有了你, 這個附近對其他人來說變得安全起來. 這是你的報酬.</text>
+	</string>
+
+	<!-- ASSASSINATION 2 FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_5_name">
+		<text>暗殺高威脅目標</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_5_text">
+		<text>%s在%s有一個高價值目標需要被清除.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_5_about">
+		<text>我知道一個及其危險的傢伙, 他需要被清除. 但是他是個厲害角色, 不過我保證給你豐厚的報酬. 你能勝任這份工作嗎?</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_5_finish">
+		<text>漂亮的一擊, 潛行者. 這是你的報酬.</text>
+	</string>
+
+	<!-- FIND WEAPON FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_6_name">
+		<text>為獨行者的交易商找到%s</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_6_text">
+		<text>%s在%s正在尋找一把狀態尚可的槍. 如果你找到了, 就回來找他.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_6_about">
+		<text>我的一個獵手在市場上尋找著我沒有的特定槍支. 你能幫我找到一個嗎? ?</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_6_fetch_about">
+		<text>我需要一把%s. 獵手的要求是它至少處於中等的成色. 如果你能找到的話, 我可以付你一大筆錢.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_6_fetch_finish">
+		<text>啊, 太好了. 這會是筆不錯的交易. 這是我答應過你的錢.</text>
+	</string>
+
+	<!-- FIND MUTANT PARTS FOR LONERS TASK -->
+	<string id="sim_default_stalker_trader_task_7_name">
+		<text>為獨行者交易商收集%s</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_7_text">
+		<text>%s在%s如果你能弄到%s的話, 他會付高價.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_7_about">
+		<text>我高價懸賞某種變異生物. 有興趣嗎? ?</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_7_fetch_about">
+		<text>殺死這個變異生物, 把它的%s給我, 我就給你豐厚的報酬, 潛行者.</text>
+	</string>
+	<string id="sim_default_stalker_trader_task_7_fetch_finish">
+		<text>啊, 又一個威脅被消除了, 營地又有了新的裝飾品. 幹得好, 潛行者.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR LONER MECHANICS TASK -->
+	<string id="sim_default_stalker_mechanic_task_1_name">
+		<text>為獨行者的技師找到%s</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_1_text">
+		<text>獨行者技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個獨行者技師那裡.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_1_about">
+		<text>我需要新的工具, 潛行者, 這玩意在特異區太難找到了. 如果你有興趣幫助我們, 我會告訴你我們需要什麼.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_1_fetch_about">
+		<text>很高興你問了這個問題, 我們真的很想要一些新的工具來使用, 一些在特異區內很難弄到的東西. 首先, 找到一組新的基本工具. 然後, 把它帶回到任何一個獨行者的技師那裡, 我們會給你一個折扣的. 你準備好了嗎?</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_1_fetch_finish">
+		<text>太完美了! 這正是我們所需要的, 潛行者. 如果你需要對你的任何裝置進行微調, 不要猶豫, 請我來看看. 我也會通知其他技師給你折扣.</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR LONER MECHANICS TASK -->
+	<string id="sim_default_stalker_mechanic_task_2_name">
+		<text>為獨行者的技師找到%s</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_2_text">
+		<text>獨行者技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個獨行者技師那裡.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_2_about">
+		<text>你帶來的工具非常不錯, 但是還不夠. 你認為你能弄到一組更好的嗎?</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_2_fetch_about">
+		<text>現在我們需要一套%s. 我不確定你能在哪裡弄到, 但是如果你弄到了, 就帶給我.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_2_fetch_finish">
+		<text>哇! 你找到了一套很好的工具. 這是一些錢作為回報. 我會和其他技師談談, 給你更大的折扣.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR LONER MECHANICS TASK -->
+	<string id="sim_default_stalker_mechanic_task_3_name">
+		<text>為獨行者的技師找到%s</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_3_text">
+		<text>獨行者技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個獨行者技師那裡.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_3_about">
+		<text>你帶來的工具非常不錯, 但是還差那麼點意思. 你認為你能弄到一組更好的嗎?</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_3_fetch_about">
+		<text>我們現在正缺少%s. 我不確定你能在哪裡弄到, 但是如果你弄到了, 請帶給我.</text>
+	</string>
+	<string id="sim_default_stalker_mechanic_task_3_fetch_finish">
+		<text>好了! 你找到了一套非常好的工具. 這是給你的錢. 我也和其他的技師談過了, 給你更大的折扣.</text>
+	</string>
+
+	<!--/////////////////////////////////// CLEAR SKY WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- DELIVER PDA FOR CSKY TASK -->
+	<string id="sim_default_csky_trader_task_1_name">
+		<text>把PDA送到"巧手"尼博處</text>
+	</string>
+	<string id="sim_default_csky_trader_task_1_text">
+		<text>%s在%s需要你將加密的PDA送到扎頓的"巧手"尼博處.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_1_about">
+		<text>我需要你把這個加密的PDA送到"巧手"尼博那裡. 別把它扔了, 也別弄壞了, 好嗎?</text>
+	</string>
+
+	<!-- DESTROY HELICOPTER FOR CSKY TASK -->
+	<string id="sim_default_csky_trader_task_2_name">
+		<text>為晴空摧毀一架軍用直升機</text>
+	</string>
+	<string id="sim_default_csky_trader_task_2_text">
+		<text>%s在%s想讓你摧毀一架軍用武裝直升機.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_2_about">
+		<text>軍隊一直是我們的煩惱, 派遣突襲隊騷擾我們的前哨等等. 但最近, 他們開始從天上攻擊我們. 看到我要去哪兒了嗎? 我要你摧毀他們的一架攻擊直升機, 這應該會削弱他們的力量. 你覺得你能搞定嗎? 報酬肯定是豐厚的.</text>
+	</string>
+
+	<!-- ESCORT SCIENTISTS FOR CLEAR SKY TASK -->
+	<string id="sim_default_csky_trader_task_3_name">
+		<text>為晴空%s護送生態學家</text>
+	</string>
+	<string id="sim_default_csky_trader_task_3_text">
+		<text>%s在%s將一隊生態學家護送到指定的位置. 在他們的研究完成後, 再將他們安全地送回營地;你會收到相應報酬的地方.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_3_about">
+		<text>營地裡的生態學家需要一名經驗豐富的潛行者來帶領他們進行實地考察. 你準備好了嗎? 你的工作就是保證他們的安全並帶到目的地. 如果失敗的話會給你的聲望帶來影響.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_3_finish">
+		<text>謝謝你, 潛行者. 你可以把這個作為你服務的報酬.</text>
+	</string>
+
+	<!-- HUNT MUTANTS FOR CLEAR SKY TASK -->
+	<string id="sim_default_csky_trader_task_4_name">
+		<text>清除對晴空產生威脅的變異生物</text>
+	</string>
+	<string id="sim_default_csky_trader_task_4_text">
+		<text>在這個地點附近發現了變異生物, 使得這個地方變得十分危險. 你的任務是消滅特異區內的變異生物威脅. 工作完成後報告給%s的%s. </text>
+	</string>
+	<string id="sim_default_csky_trader_task_4_about">
+		<text>你是打獵好手嗎? 我們一直在尋找一個人來清除附近的變異生物從而保證安全. 你想要這份工作嗎?</text>
+	</string>
+	<string id="sim_default_csky_trader_task_4_finish">
+		<text>太棒了! 這是你的酬金. 我一定會對外邊說, 這裡又安全了. 謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- ASSAULT BANDIT CAMP FOR CLEAR SKY TASK -->
+	<string id="sim_default_csky_trader_task_5_name">
+		<text>為晴空消滅土匪營地</text>
+	</string>
+	<string id="sim_default_csky_trader_task_5_text">
+		<text>你被要求前往清剿土匪的營地以消除威脅. 任務完成後返回%s的%s處.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_5_about">
+		<text>這裡的土匪讓我們很是頭疼. 這些窮兇極惡的暴徒總是伏擊我們主基地外的營地, 試圖佔領它們. 這便使得許多安全道路開始變得不太明確;只要他們還在的話. 我們需要一個不怕讓手上染血的老手. 你會幫這個忙嗎?</text>
+	</string>
+	<string id="sim_default_csky_trader_task_5_finish">
+		<text>不錯! 這是你的報酬. 我會確保再次傳遞安全的資訊. 謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- FIND MUTANT MEAT FOR CLEAR SKY TASK -->
+	<string id="sim_default_csky_trader_task_6_name">
+		<text>野味</text>
+	</string>
+	<string id="sim_default_csky_trader_task_6_text">
+		<text>%s在%s希望你能獵殺一些變異生物並且提供%s. </text>
+	</string>
+	<string id="sim_default_csky_trader_task_6_about">
+		<text>假如你精通霰彈槍並且擅長狩獵, 那這邊就有一份你的工作. 你有興趣嗎?</text>
+	</string>
+	<string id="sim_default_csky_trader_task_6_fetch_about">
+		<text>口糧開始不足了, 但我得保證營地裡每個人都能吃飽. 有兩個人不時地會帶些東西回來. 但最近變慢了 -如果你出去而且不是很忙的話, 我需要一些%s. 我會有人在這個基地處理這些肉的. 請記住, 讓變異生物憤怒的話, 身體內的腎上腺素將使肉質變硬. 並且, 出血越少肉品質也就越好. 所以, 瞄準了再打, 好嗎?</text>
+	</string>
+	<string id="sim_default_csky_trader_task_6_fetch_finish">
+		<text>很好, 你是個打獵的好手! 我有報酬要給你.</text>
+	</string>
+	
+	<!-- ASSAULT MILITARY CAMP FOR CLEAR SKY TASK -->
+	<string id="sim_default_csky_trader_task_7_name">
+		<text>為晴空消滅軍隊營地</text>
+	</string>
+	<string id="sim_default_csky_trader_task_7_text">
+		<text>你被要求去消滅這個地區的軍隊營地. 任務完成後返回%s的%s處報告.</text>
+	</string>
+	<string id="sim_default_csky_trader_task_7_about">
+		<text>這裡的軍隊是我們的心腹大患. 這些窮兇極惡的暴徒總是伏擊我們主基地外的營地, 試圖佔領它們. 這便使得許多安全道路開始變得不太明確;只要他們還在的話. 我們需要一個不怕讓手上染血的老手. 你會幫這個忙嗎?</text>
+	</string>
+	<string id="sim_default_csky_trader_task_7_finish">
+		<text>厲害! 這是你的酬金. 我會確保再次傳遞安全的資訊. 謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLS FOR CSKY MECHANICS TASK -->
+	<string id="sim_default_csky_mechanic_task_1_name">
+		<text>為晴空的技師找到%s</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_1_text">
+		<text>晴空技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個晴空技師那裡.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_1_about">
+		<text>在特異區中擺弄工具可真不是件簡單事. 假如我們能弄到些新工具的話, 那維修和調整裝備的效率就會提升很多. 請把任務中遇見的工具包帶給我們的任意一個技師. 如果你感興趣, 我會告訴你我需要什麼. 你準備好了嗎?</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_1_fetch_about">
+		<text>在特異區中擺弄工具可真不是件簡單事. 假如我們能弄到些新工具的話, 那維修和調整裝備的效率就會提升很多. 請把任務中遇見的工具包帶給我們的任意一個技師. 我們需要的是一組初級工具箱. 你做好準備了嗎?</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_1_fetch_finish">
+		<text>真不錯, 夥計! 這裡, 讓我給你些錢. 我已經和技師們商量過了給你打點折.</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR CSKY MECHANICS TASK -->
+	<string id="sim_default_csky_mechanic_task_2_name">
+		<text>為晴空的技師找到%s</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_2_text">
+		<text>晴空技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個晴空技師那裡.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_2_about">
+		<text>我現在需要更多工具了. 上次你的確給我帶來了一些好東西, 但現在我需要一套更高質量的. 如果你有興趣, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_2_fetch_about">
+		<text>現在我們需要一個新的高級工具箱. 你帶一個過來, 然後我們會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_2_fetch_finish">
+		<text>太棒了, 夥計! 你再一次為我們而來! 給你, 讓我給你點錢. 其他技師也會給你更好的價格.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLS FOR CSKY MECHANICS TASK -->
+	<string id="sim_default_csky_mechanic_task_3_name">
+		<text>為晴空的技師找到%s</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_3_text">
+		<text>晴空技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個晴空技師那裡.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_3_about">
+		<text>我現在需要更多工具了. 上次你的確給我帶來了一些好東西, 但現在我需要一套更高質量的. 如果你有興趣, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個新的專家級工具箱. 你帶一個過來, 然後我們會給你更大的折扣.</text>
+	</string>
+	<string id="sim_default_csky_mechanic_task_3_fetch_finish">
+		<text>太棒了, 夥計! 你再一次為我們而來! 給你, 讓我給你點錢. 其他技師也會給你更好的價格.</text>
+	</string>
+	
+	<!--========================= esc_2_12_stalker_nimble =========-->
+	<!-- sim_default_csky_trader_nimble_pda_task_1 -->
+	<string id="sim_default_csky_trader_nimble_pda_warfare_task_1">
+		<text>沒錯, 正在等這個東西. 謝謝. 這是你的報酬:</text>
+	</string>
+
+	<!--/////////////////////////////////// FREEDOM WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+	<!-- STOP ENEMY ASSAULT FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_1_name">
+		<text>為自由軍擊退襲擊</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_1_text">
+		<text>攔截住突擊自由軍營地的敵方小隊. 清除后, 就向%s的%s報告.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_1_about">
+		<text>敵人正在逼近我們的一個營地. 我需要有能力擊退入侵的人. 那麼你是這份工作的合適人選嗎?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_1_finish">
+		<text>任務完成了嗎? 很好.</text>
+	</string>
+
+	<!-- RECAPTURE TERRITORY FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_2_name">
+		<text>奪回自由軍領土</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_2_text">
+		<text>你的任務是捍衛自由軍的領土. 工作完成後向%s的%s彙報.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_2_about">
+		<text>如果你願意的話, 這裡有一項至關重要的任務. 紀律團佔領了我們一塊地盤, 我需要一名勇士來收回它.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_2_finish">
+		<text>很好. 幹得不錯.</text>
+	</string>
+
+	<!-- ASSASSINATE MONOLITH FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_3_name">
+		<text>為自由軍暗殺黑石成員</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_3_text">
+		<text>%s的%s要求你找到並且幹掉一名黑石的成員.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_3_about">
+		<text>我有一項異常危險的任務. 我雖然已經徵集到了志願者, 但就是沒人敢上. 黑石正在不斷突破我們的封鎖. 我想和他們好好地幹一架了. 我需要一個人進入他們的地盤然後殺死他們的成員來給一個口信. 你覺得如何? 你有這個膽量嗎?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_3_finish">
+		<text>啊, 你活下來了! 夥計, 你真有一手. 幹得漂亮.</text>
+	</string>
+
+	<!-- ASSASSINATE DUTY FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_4_name">
+		<text>為自由軍暗殺目標</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_4_text">
+		<text>%s在%s要求你找到並且消滅一個目標.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_4_about">
+		<text>有一個傢伙在大張反對自由軍的旗幟, 他需要安靜下來. 你能讓他閉嘴嗎?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_4_finish">
+		<text>不錯! 你是我們的驕傲. 這是我所許諾的東西:</text>
+	</string>
+
+	<!-- FIND WEAPON FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_5_name">
+		<text>為自由軍找到%s</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_5_text">
+		<text>%s在%s要求你找到把特定的武器. 當你找到時就帶給他.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_5_about">
+		<text>南方是紀律團, 北方是黑石, 我們在夾縫中生存. 我們的武器磨損殆盡需要更換了. 你來為我們的武器獻一份力如何?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_5_fetch_about">
+		<text>我們非常需要一把新的%s. 如果你能拿來把狀態尚可的, 我們將為它出高價.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_5_fetch_finish">
+		<text>不錯. 這把武器將會在保衛特異區的道路上走很遠. 這是我許諾的報酬.</text>
+	</string>
+
+	<!-- FIND MUTANT MEAT FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_6_name">
+		<text>野味</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_6_text">
+		<text>%s從%s想要你獵殺一些變異生物並且帶來些%s. </text>
+	</string>
+	<string id="sim_default_freedom_trader_task_6_about">
+		<text>我有個不錯的工作給你, 夥計, 前提是你不害怕變異生物. 有興趣嗎?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_6_fetch_about">
+		<text>有兩個人不時地會帶些東西回來. 但最近他們的手腳變慢了 -如果你出去而且不是很忙的話, 我需要一些%s. 我們的大廚會處理這些肉的, 就在這個營地.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_6_fetch_finish">
+		<text>很好, 你是個不錯的獵人! 我有報酬要給你.</text>
+	</string>
+	
+	<!-- ELIMINATE MUTANTS FOR FREEDOM TASK -->
+	<string id="sim_default_freedom_trader_task_7_name">
+		<text>為自由軍清理變異怪物區域</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_7_text">
+		<text>獵殺變異生物, 清理這個區域.</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_7_about">
+		<text>我希望有人能消滅這個地方的怪物, 它們給我們帶來了太多麻煩. 當然, 我願意出個好價錢. 你願意接受嗎?</text>
+	</string>
+	<string id="sim_default_freedom_trader_task_7_finish">
+		<text>幹得好, 夥計! 這是我答應過的報酬.</text>
+	</string>
+	
+	<!-- FIND LEVEL 1 TOOLS FOR FREEDOM MECHANICS TASK -->
+	<string id="sim_default_freedom_mechanic_task_1_name">
+		<text>為自由軍的技師找到%s</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_1_text">
+		<text>自由軍技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個自由軍技師那裡.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_1_about">
+		<text>喲, 夥計. 你有興趣給我幫個忙嗎? 我需要一些特定的工具來鼓搗武器.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_1_fetch_about">
+		<text>是啊老兄, 我們需要一套新的工具, 但那些傻瓜們總是隻願意付更多錢而不是找工具. 弄到一套新的初級工具箱, 帶給你能找到的任意一個自由軍技師. 我們會給你打折, 我們能指望你嗎夥計?</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_1_fetch_finish">
+		<text>謝謝, 夥計! 這就是我拜託你的原因. 你看上去就是能解決麻煩事的傢伙. 我們作為回報將給你打折.</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR FREEDOM MECHANICS TASK -->
+	<string id="sim_default_freedom_mechanic_task_2_name">
+		<text>為自由軍的技師找到%s</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_2_text">
+		<text>自由軍技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個自由軍技師那裡.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_2_about">
+		<text>哈哈, 我不喜歡拜託別人. 但我確實是需要更多工具了. 你上次給我帶來的那套有點不夠用了. 能再幫我一次嗎?</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_2_fetch_about">
+		<text>我需要一組高級工具箱. 裡面應該有我需要的. 如果你帶一個過來, 我會非常感激.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_2_fetch_finish">
+		<text>你居然給弄到這狗屎玩意了, 這裡的每個人都會感激你的. 謝謝, 夥計. 爲了感謝我們會給你更好的價格.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLS FOR FREEDOM MECHANICS TASK -->
+	<string id="sim_default_freedom_mechanic_task_3_name">
+		<text>為自由軍的技師找到%s</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_3_text">
+		<text>自由軍技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個自由軍技師那裡.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_3_about">
+		<text>哈哈, 我不喜歡拜託別人. 但我確實是需要更多工具了. 你上次給我帶來的那套有點不夠用了. 能再幫我一次嗎?</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_3_fetch_about">
+		<text>我需要一組專家級工具箱. 裡面應該有我需要的. 如果你帶一個過來, 我會非常感激.</text>
+	</string>
+	<string id="sim_default_freedom_mechanic_task_3_fetch_finish">
+		<text>謝謝, 夥計. 爲了感謝我們會給你更好的價格.</text>
+	</string>
+
+	<!--/////////////////////////////////// MONOLITH WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSAULT TERRITORY FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_1_name">
+		<text>戰勝敵人</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_1_text">
+		<text>你受命為萬能的黑石清剿一片區域. 工作完成後報告給克囉哩克.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_1_about">
+		<text>我有一個十分重要的任務給你. 你需要進入特異區里清理這片區域, 以便我們的兄弟們進入這裡, 你準備好了嗎?</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_1_finish">
+		<text>任務已經完成了? 幹得好! 讚美黑石!</text>
+	</string>
+
+	<!-- ASSASSINATION FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_2_name">
+		<text>清除計劃者</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_2_text">
+		<text>有一個潛行者打算關掉"焦腦器". %s在%s命令你幹掉他.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_2_about">
+		<text>特異區里偉大的工程總是受到威脅, 又有人正在打算關掉"焦腦器", 你必須阻止他. 把他找出來然後將他碎屍萬段.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_2_finish">
+		<text>幹得漂亮. 黑石十分滿意.</text>
+	</string>
+
+	<!-- FIND WEAPON FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_3_name">
+		<text>為黑石取得%s</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_3_text">
+		<text>%s在%s需要新的武器來擴充黑石軍火庫.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_3_about">
+		<text>我們現在正在日益壯大. 爲了我們的目標, 我們需要更多的武器. 你需要為我們找到一種新武器, 這樣我們才能繼續擴充我們的軍火庫.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_3_fetch_about">
+		<text>找到一支新的%s並把它帶給我.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_3_fetch_finish">
+		<text>做得好.</text>
+	</string>
+
+	<!-- FIND MUTANT MEAT FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_4_name">
+		<text>野味·</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_4_text">
+		<text>%s在%s命令你獵殺變異生物並上交%s. </text>
+	</string>
+	<string id="sim_default_monolith_trader_task_4_about">
+		<text>我們的補給快見底了, 你需要去特異區里去尋找一些食物好讓你的黑石兄弟們可以飽餐一頓.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_4_fetch_about">
+		<text>尋找%s. 並把它帶給我們. 記住, 這些生物是特異區給我們的饋贈. 快去心懷感激的殺掉它們. 在狩獵完成後記得把肉帶回來.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_4_fetch_finish">
+		<text>你成功地完成了你的任務, 做得好!</text>
+	</string>
+
+	<!-- FIND SUPPLIES FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_5_name">
+		<text>為黑石弄到%s</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_5_text">
+		<text>%s在%s需要你弄到%s. </text>
+	</string>
+	<string id="sim_default_monolith_trader_task_5_about">
+		<text>爲了我們偉大的事業能夠繼續, 你需要為我們獲取更多的補給品.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_5_fetch_about">
+		<text>找到%s並帶回給我.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_5_fetch_finish">
+		<text>你很好地服侍了黑石.</text>
+	</string>
+
+	<!-- FIND ARTEFACT FOR MONOLITH TASK -->
+	<string id="sim_default_monolith_trader_task_6_name">
+		<text>為黑石找到"%s"神器</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_6_text">
+		<text>%s在%s需要你去尋找%s神器.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_6_about">
+		<text>我們必須再找一個神器來進行獻祭, 你已經準備好去侍奉偉大的黑石了嗎?</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_6_fetch_about">
+		<text>找到"%s"神器. 神器. 在你成功后把它帶給我, 以便我主持儀式.</text>
+	</string>
+	<string id="sim_default_monolith_trader_task_6_fetch_finish">
+		<text>你做的很好, 今晚來和我們一起吟唱吧.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR MONOLITH MECHANICS TASK -->
+	<string id="sim_default_monolith_mechanic_task_1_name">
+		<text>為黑石的技師找到%s</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_1_text">
+		<text>黑石技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個黑石技師那裡.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_1_about">
+		<text>我需要你為我做一些工作, 我需要要一些特殊的工具來調整我們的武器.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_1_fetch_about">
+		<text>好的, 我們需要新的工具來更有效地調整武器. 找到一組新的初級工具箱. 快去找.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_1_fetch_finish">
+		<text>你做得很好. 作為獎勵我們將為你打折.</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR MONOLITH MECHANICS TASK -->
+	<string id="sim_default_monolith_mechanic_task_2_name">
+		<text>為黑石的技師找到%s</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_2_text">
+		<text>黑石技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個黑石技師那裡.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_2_about">
+		<text>我需要更多且更好的工具, 你能再次找到我需要的工具嗎?</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_2_fetch_about">
+		<text>我們需要更多工具了找到一套新的高級工具箱. 出發吧.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_2_fetch_finish">
+		<text>很好. 你帶來了我們需要的東西. 作為獎勵我們將為你打折.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR MONOLITH MECHANICS TASK -->
+	<string id="sim_default_monolith_mechanic_task_3_name">
+		<text>為黑石的技師找到%s</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_3_text">
+		<text>黑石技師要求更換舊的%s, 如果你找到了, 你就把它們帶回任何一個黑石技師那裡.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_3_about">
+		<text>我需要更多且更好的工具, 你能再次找到我需要的工具嗎?</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_3_fetch_about">
+		<text>我們需要更多工具了找到一套新的專家級工具箱. 出發吧.</text>
+	</string>
+	<string id="sim_default_monolith_mechanic_task_3_fetch_finish">
+		<text>很好. 你帶來了我們需要的東西. 作為獎勵我們將為你打折.</text>
+	</string>
+	
+	<!--/////////////////////////////////// ECOLOGISTS WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ESCORT ECOGS TASK -->
+	<string id="sim_default_ecolog_trader_task_1_name">
+		<text>護送生態學家</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_text">
+		<text>%s在%s請你去指導一些研究人員到一個地方進行實地研究. 當他們的研究完成後你要把他們安全地送回營地.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_about">
+		<text>我們需要一個老手潛行者帶領我們的幾個同事去進行實地研究. 你準備好接受這項任務了嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_1_fetch_finish">
+		<text>謝謝你的全程護送, 潛行者. 請收下這個作為我們的答謝.</text>
+	</string>
+	
+	<!-- FIND ARTEFACT FOR ECOGS TASK -->
+	<string id="sim_default_ecolog_trader_task_2_name">
+		<text>為生態學家找到 "%s" 神器</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_text">
+		<text>%s在%s讓你找回%s神器.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_about">
+		<text>我們正在尋找一種神器. 如果你感興趣的話, 我就告訴你我們需要什麼神器.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_fetch_about">
+		<text>我需要你為我們取回 "%s" 神器. 你聽說過嗎? 我們將支付給你豐厚的報酬.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_2_fetch_finish">
+		<text>很好! 你找到了我們所需要的東西.</text>
+	</string>
+	
+	<!-- FIND MUTANT PARTS FOR ECOGS TASK -->
+	<string id="sim_default_ecolog_trader_task_3_name">
+		<text>為生態學家找到%s</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_text">
+		<text>%s在%s請你去收集一份%s的組織樣本.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_about">
+		<text>我需要一個老手潛行者或怪物獵人. 你能行嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_fetch_about">
+		<text>生態學家們需要收集%s的組織樣本. 我不管你怎麼搞, 反正要確保它是新鮮的. 當你取得怪物樣本后馬上到這裡來.</text>
+	</string>
+	<string id="sim_default_ecolog_trader_task_3_fetch_finish">
+		<text>謝謝你長官, 這將對我們的研究工作起到很大的幫助作用.</text>
+	</string>
+	
+	<!-- ESCORT ECOGS FOR SAKHAROV TASK 
+	<string id="yan_stalker_sakharov_task_2_name">
+		<text>Escort Sakharov's Scientists %s</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_text">
+		<text>Sakharov has hired you to guide his researchers to a specific location for study in %s. Once their research has been successfully conducted, return them safely to camp.</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_about">
+		<text>We need an experienced stalker to lead a few of our the colleagues out into the field for study. Are you up for the task?</text>
+	</string>
+	<string id="yan_stalker_sakharov_task_2_fetch_finish">
+		<text>Thank you for your protection, stalker. Please, take this as a token of our gratitude.</text>
+	</string> -->
+	
+	<!-- FIND LEVEL 1 TOOLS FOR ECOLOG MECHANICS TASK -->
+	<string id="sim_default_ecolog_mechanic_task_1_name">
+		<text>找到%s並帶給科學技師</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_text">
+		<text>科學技師需要%s來換掉舊的, 如果你找到了就把它們帶給任何一位科學技師.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_about">
+		<text>我這裡有份工作. 如果你能給我帶些新工具, 我就給你報酬. 你準備好了嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_fetch_about">
+		<text>嗯, 你知道當大家的東西壞了時, 他們會去找誰, 對嗎? 對我們來說就是如此. 問題是我們的工具越來越老舊生鏽, 需要立即更好. 先找一些%s. 當你找到時把它們帶給任何一位科學技師. 每帶來一套工具我們, 我們就給你打個折. 你想試一試嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_1_fetch_finish">
+		<text>很好, 這就是我們要找的, 謝謝你了!</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR ECOLOG MECHANICS TASK -->
+	<string id="sim_default_ecolog_mechanic_task_2_name">
+		<text>找到%s並帶給科學技師</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_text">
+		<text>科學技師需要%s來換掉舊的, 如果你找到了就把它們帶給任何一位科學技師.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_fetch_about">
+		<text>現在我們需要%s. 我不確定你找不找的到, 但如果你找到了就帶過來.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_2_fetch_finish">
+		<text>我要的都在這兒了, 謝謝你.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLS FOR ECOLOG MECHANICS TASK -->
+	<string id="sim_default_ecolog_mechanic_task_3_name">
+		<text>找到%s並帶給科學技師</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_text">
+		<text>科學技師需要%s來換掉舊的, 如果你找到了就把它們帶給任何一位科學技師.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你找不找的到, 但如果你找到了就帶過來.</text>
+	</string>
+	<string id="sim_default_ecolog_mechanic_task_3_fetch_finish">
+		<text>我要的都在這兒了, 謝謝你.</text>
+	</string>
+
+	<!--/////////////////////////////////// RENEGADE WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSASSIATION FOR RENEGADES TASK -->
+	<string id="sim_default_renegade_trader_task_1_name">
+		<text>為叛節者清除目標</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_text">
+		<text>找到並抹殺目標然後回到%s那裡, 在%s並領取報酬.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_about">
+		<text>特異區里有不少人和我有些過節或者是不尊重我. 這些混蛋有的欠我錢, 有的把交易搞砸了. 他們只不過是要被踩死的老鼠. 如果你準備好了, 我就把他們的資訊給你, 這樣你就可以通過GPS跟蹤他們.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_1_finish">
+		<text>幹得好! 這有些小東西是給你的報酬:</text>
+	</string>
+	
+	<!-- ELIMINATE MUTANTS FOR RENEGADES TASK -->
+	<string id="sim_default_renegade_trader_task_2_name">
+		<text>為叛節者消滅怪物威脅</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_text">
+		<text>在這附近發現了怪物, 它們讓周圍變得很危險. 你的任務是消滅那裡的怪物威脅. 工作完成後去找%s在%s. </text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_about">
+		<text>我們一直在找一個膽肥到敢去殺怪的人. 潛行者不會搞的, 因為他們是慫包. 如果我們不做點什麼, 我們就找不到人可以"借"東西了, 那樣的話我們就要喝西北風了.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_2_finish">
+		<text>猛男! 這是你的報酬. 我一定會多跟老大拍幾句關於你的馬屁.</text>
+	</string>
+
+
+	<!-- DEFEND TERRITORY FOR RENEGADES TASK -->
+	<string id="sim_default_renegade_trader_task_3_name">
+		<text>為叛節者消滅敵軍威脅</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_text">
+		<text>你已接受殲滅周邊區域敵軍的任務. 工作完成後去找%s在%s. </text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_about">
+		<text>有些婊子們闖進我們的地盤了. 老大命令我去招募一群賤貨, 他們得夠膽去整頓下這些地方. 你呢? 你膽夠不?</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_3_finish">
+		<text>硬漢! 這是你的報酬. 我見著老大了一定多給你美言幾句.</text>
+	</string>
+
+	<!-- ASSASSINATION FOR RENEGADES TASK -->
+	<string id="sim_default_renegade_trader_task_4_name">
+		<text>殺手</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_text">
+		<text>%s在%s已經和你簽了刺殺合約. 找到並消滅目標然後回到他那裡領賞.</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_about">
+		<text>有人惹毛我了. 我要你把他們宰了. 你覺得如何?</text>
+	</string>
+	<string id="sim_default_renegade_trader_task_4_finish">
+		<text>很好, 你整死了那混蛋! 這是我答應過你的.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR RENEGADE MECHANICS -->
+	<string id="sim_default_renegade_mechanic_task_1_name">
+		<text>找到%s並帶給叛節者技師</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_text">
+		<text>叛節者技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_about">
+		<text>我急需新工具, 夥計. 我用這些生鏽的東西什麼都做不了, 而且我的槍油也快用完了. 如果你有興趣幫我, 我會告訴你我需要的是什麼.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_fetch_about">
+		<text>我們需要更好的工具. 要找它們真他媽難, 所有混球都要來揍我們. 現在我們只需要一套新的基本工具. 你每找到一個並把它帶回到我們的技師, 我們就給你一個折扣. 準備好了沒夥計?</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_1_fetch_finish">
+		<text>完美! 這就是咱要的, 夥計. 我會讓其他技師也給你打折扣的.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR RENEGADE MECHANICS -->
+	<string id="sim_default_renegade_mechanic_task_2_name">
+		<text>找到%s並帶給叛節者技師</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_text">
+		<text>叛節者技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_about">
+		<text>你給我帶的工具箱很好, 但它沒有我想要的所有東西. 你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你找不找的到, 但你要是找到了, 我們會需要的.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_2_fetch_finish">
+		<text>你又成功了! 真是個好交易, 錢給你. 我和其他技師談過了, 他們也會給你更大的折扣.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR RENEGADE MECHANICS -->
+	<string id="sim_default_renegade_mechanic_task_3_name">
+		<text>找到%s並帶給叛節者技師</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_text">
+		<text>叛節者技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_about">
+		<text>你給我帶的工具箱很好, 但它沒有我想要的所有東西. 你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你找不找的到, 但你要是找到了, 我們會需要的.</text>
+	</string>
+	<string id="sim_default_renegade_mechanic_task_3_fetch_finish">
+		<text>你又成功了! 很好, 現在我們有了所有需要的東西. 我們會再給你打個折扣.</text>
+	</string>
+	
+	
+	<!--/////////////////////////////////// SIN WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- ASSAULT TERRITORY FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_1_name">
+		<text>戰勝敵人</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_text">
+		<text>你要為原罪成員清理一塊區域. 工作完成後回去報告.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_about">
+		<text>我有個重要的任務要交給你. 你必須進入這塊區域並進行掃蕩, 這樣我們的部隊才能進入. 你準備好了沒?</text>
+	</string>
+	<string id="sim_default_greh_trader_task_1_finish">
+		<text>任務完成了? 很好. 讚美原罪!</text>
+	</string>
+
+	<!-- ASSASSINATION FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_2_name">
+		<text>殺死圖謀不軌者</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_text">
+		<text>一個潛行者想要關掉"焦腦器". %s在%s讓你去殺了他.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_about">
+		<text>特異區的傑作面臨著許多威脅. 有個人又計劃著讓"焦腦器"停止工作. 必須阻止他. 你必須找到並消滅他.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_2_finish">
+		<text>你做得很好. 大家都為你高興.</text>
+	</string>
+
+	<!-- FIND WEAPON FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_3_name">
+		<text>找到%s並帶給原罪</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_text">
+		<text>%s在%s要求往原罪的武器庫里添把新槍.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_about">
+		<text>我們每天都變得更加強大. 我們需要更多的武器來繼續實現我們的目標. 你必須為我們找到新武器, 這樣我們才能繼續擴充我們的武器庫.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_fetch_about">
+		<text>找到一個新的%s然後帶給我.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_3_fetch_finish">
+		<text>工作做的很好.</text>
+	</string>
+
+	<!-- FIND MUTANT MEAT FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_4_name">
+		<text>野味</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_text">
+		<text>%s在%s讓你去獵殺並取回一些%s的肉.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_about">
+		<text>我們糧倉要見底了. 你得到外面去打獵, 好叫你的原罪弟兄們能吃頓飽飯.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_fetch_about">
+		<text>給我們找一些%s. 記住這是特異區的恩賜. 要抱著感恩之心儘快了結它們. 當你成功時就把肉帶回來.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_4_fetch_finish">
+		<text>你順利完成了任務, 做得好.</text>
+	</string>
+
+	<!-- FIND SUPPLIES FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_5_name">
+		<text>找到%s並帶給原罪</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_text">
+		<text>%s在%s想讓你找%s. </text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_about">
+		<text>你必須為我們找來更多的物資, 這樣我們才能繼續我們的偉大事業.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_fetch_about">
+		<text>找到%s然後帶給我.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_5_fetch_finish">
+		<text>你為我們的事業作出了卓越貢獻.</text>
+	</string>
+
+	<!-- FIND ARTEFACT FOR SIN TASK -->
+	<string id="sim_default_greh_trader_task_6_name">
+		<text>找到 "%s" 神器並帶給原罪</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_text">
+		<text>%s在%s想讓你去找%s神器.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_about">
+		<text>我們必須找個神器作為祭品. 你願意幫助原罪弟兄嗎?</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_fetch_about">
+		<text>找一個 "%s" 神器. 找到后把它帶給我, 這樣我們就可以舉行祭祀儀式了.</text>
+	</string>
+	<string id="sim_default_greh_trader_task_6_fetch_finish">
+		<text>你為我們的事業作出了卓越貢獻. 今晚和我們一起參加祭祀儀式吧. 會有場唱誦.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR SIN MECHANICS TASK -->
+	<string id="sim_default_greh_mechanic_task_1_name">
+		<text>找到%s並帶給原罪技師</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_text">
+		<text>原罪技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_about">
+		<text>我需要你為我做點什麼. 我需要特殊的工具來改造我們的武器.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_fetch_about">
+		<text>好吧, 我需要新的工具來改造我們的武器, 效率提高點. 找套新的基本工具. 快去, 現在.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_1_fetch_finish">
+		<text>你做得很好. 我們給你打個折扣作為獎勵.</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLKIT FOR SIN MECHANICS TASK -->
+	<string id="sim_default_greh_mechanic_task_2_name">
+		<text>找到%s並帶給原罪技師</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_text">
+		<text>原罪技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_about">
+		<text>我需要一些工具, 更好的工具, 你能再次找到我想要的嗎?</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_fetch_about">
+		<text>我們需要工具, 去找一套進階工具, 快去, 現在.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_2_fetch_finish">
+		<text>很好. 你帶來了我們需要的東西. 我們給你打個折扣作為獎勵.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLKIT FOR SIN MECHANICS TASK -->
+	<string id="sim_default_greh_mechanic_task_3_name">
+		<text>找到%s並帶給原罪技師</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_text">
+		<text>原罪技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_about">
+		<text>我需要一些工具, 更好的工具, 你能再次找到我想要的嗎?</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_fetch_about">
+		<text>我們需要更多的工具. 尋找一套新的專家工具. 那裡面應該有我們現在需要的東西. 現在, 快去.</text>
+	</string>
+	<string id="sim_default_greh_mechanic_task_3_fetch_finish">
+		<text>很好. 你帶來了我們需要的東西. 我們給打個你折扣作為獎勵.</text>
+	</string>
+	
+	<!--/////////////////////////////////// ISG WARFARE TASKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+	<!-- FIND LEVEL 1 TOOLS FOR ISG MECHANICS TASK -->
+	<string id="sim_default_isg_mechanic_task_1_name">
+		<text>找到%s並帶給UNISG技師</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_text">
+		<text>UNISG技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_about">
+		<text>我有個工作給你. 如果你能給我帶些新工具, 你就能收到報酬. 你準備好了嗎?</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_fetch_about">
+		<text>很好. 我們還在到處找%s. 它應該包含一些槍油和工具, 我們需要做些火器工作. 如果你能把全套工具帶回到我們的任何一個技工那裡, 包括我在內, 我們將支付你其中一套工具包的費用. 你每帶一套工具我們就打個折作為獎勵. 那麼, 你決定咋搞? 你要幫我們嗎? .</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_1_fetch_finish">
+		<text>很好, 這就是我們在找的, 謝謝了!</text>
+	</string>
+
+	<!-- FIND LEVEL 2 TOOLS FOR ISG MECHANICS TASK -->
+	<string id="sim_default_isg_mechanic_task_2_name">
+		<text>找到%s並帶給UNISG技師</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_text">
+		<text>UNISG技師需要%s來替換舊的, 你要是找到了就把它們帶給技師.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你找不找的到, 但你要是找到了, 我們會需要的.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_2_fetch_finish">
+		<text>我要的都有了, 謝謝你.</text>
+	</string>
+
+	<!-- FIND LEVEL 3 TOOLS FOR ISG MECHANICS TASK -->
+	<string id="sim_default_isg_mechanic_task_3_name">
+		<text>找到%s並帶給UNISG技師</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_text">
+		<text>UNISG技師需要%s來換掉舊的, 如果你找到了就把它們帶給任何一位UNISG技師.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_about">
+		<text>我還有一個提議. 你給我帶來的工具包很好, 但它沒有我需要的一切. 你覺得你能給我找個更好的嗎?</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_fetch_about">
+		<text>現在我們需要一個%s. 我不確定你找不找的到, 但你要是找到了, 我們會需要的.</text>
+	</string>
+	<string id="sim_default_isg_mechanic_task_3_fetch_finish">
+		<text>我要的都有了, 謝謝你.</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="ui_mcm_menu_campfires_on_map">
+		<text>地图显示营火</text>
+	</string>
+
+	<string id="ui_mcm_campfires_on_map_show_campfires">
+		<text>显示营火</text>
+	</string>
+
+	<string id="ui_mcm_campfires_on_map_show_only_visited">
+		<text>只显示访问过的</text>
+	</string>
+	<string id="ui_mcm_campfires_on_map_show_only_visited_desc">
+		<text>必须对营火交互才能使其在地图显示</text>
+	</string>
+
+    <string id="st_campfire">
+		<text>营火</text>
+	</string>
+      <string id="st_campfire_visited">
+		<text>%c[ui_white]营火(%c[d_orange]已访问%c[ui_white])</text>
+	</string>
+</string_table>

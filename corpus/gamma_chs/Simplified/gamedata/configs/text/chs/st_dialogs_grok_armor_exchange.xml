@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="0_insider">
+		<text>我听说, 如果想要自己阵营的护甲, 只能用别的护甲来换? </text>
+	</string>
+	<string id="1_insider">
+		<text>是的, 你没听错, 潜行者; 我们的库存有点吃紧, 所以现在不卖护甲了, 如果想要的话, 只能用同类护甲来换\n
+		记住, 如果你给我的护甲破破烂烂的, 那我也会把仓库里的破烂拿给你, 这叫做公平交易! 懂吗?\n
+		顺带一提, 尽管我说护甲是公平交易, 但这项交换的服务可不是免费的, 你可以在这边的黑板上查看价格...\n\n
+		太贵了? 呵, 当你在高档餐厅里吃溢价的牛排时会嫌贵吗? 这些帅气的阵营护甲都是我花钱修的! 如果你把这当做是我们阵营的服务费和管理费, 就一点都不觉得贵了!\n
+		那么, 有什么你想换的吗? </text>
+	</string>
+	<string id="armor_exchange_light">
+		<text>一套轻型护甲 ( 用任何轻型装备交换 ) [ 5 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_medium">
+		<text>一套中型护甲 ( 用任何中型装备交换 ) [ 10 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_specops">
+		<text>一套特种部队护甲 ( 用任何中型装备交换 ) [ 25 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_sci">
+		<text>一套科学防护服 ( 用任何不带护甲的中型科学防护服交换 ) [15 000 卢布] </text>
+	</string>
+	<string id="armor_exchange_skat">
+		<text>一套 Skat-9战斗护甲 ( 用任何Skat-9护甲服交换 ) [ 25 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_exolight">
+		<text>一套外骨骼防护服 (用任何外骨骼防护服交换 ) [ 30 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_exo">
+		<text>一套外骨骼动力护甲 ( 用于任何外骨骼动力护甲交换 )  [ 45 000 卢布 ] </text>
+	</string>
+	<string id="armor_exchange_noso">
+		<text>一套犀牛级外骨骼 ( 用任何犀牛级外骨骼交换 ) [65 000 卢布] </text>
+	</string>
+	<string id="armor_exchange_exit">
+		<text>其实还是算了吧</text>
+	</string>
+</string_table>

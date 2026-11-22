@@ -1,0 +1,75 @@
+<!--
+- @ Version: SCREEN SPACE SHADERS - UPDATE 15
+- @ Description: Weapons DOF - MCM strings
+- @ Author: https://www.moddb.com/members/ascii1457
+- @ Mod: https://www.moddb.com/mods/stalker-anomaly/addons/screen-space-shaders
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<!-- Button -->
+	<string id="ui_mcm_ssfx_module_wpn_dof">
+		<text>武器景深</text>
+	</string>
+	
+	<!-- DOF Settings -->
+	<string id="ui_mcm_ssfx_module_wpn_dof_title">
+		<text>武器景深設定</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_aim_fadestart_mcm">
+		<text>焦點外的模糊起點 [ 瞄準中 ]</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_aim_fadelen_mcm">
+		<text>焦點外的模糊距離 [ 瞄準中 ]</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_aim_blur_mcm">
+		<text>模糊強度 [ 瞄準中 ] ( 0 = 禁用 )</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wpn_dof_aim_edgeblur_mcm">
+		<text>邊緣模糊 [ 瞄準中 ] ( 0 = 禁用 )</text>
+	</string>
+
+
+	<string id="ui_mcm_ssfx_module_wpn_dof_fadestart_mcm">
+		<text>焦點外的模糊起點</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_fadelen_mcm">
+		<text>焦點外的模糊距離</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_blur_mcm">
+		<text>模糊強度 ( 0 = 禁用 )</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_edgeblur_mcm">
+		<text>邊緣模糊 ( 0 = 禁用 )</text>
+	</string>
+
+
+	<string id="ui_mcm_ssfx_module_wpn_dof_reloading_mcm">
+		<text>換彈時啟用景深效果</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_pda_mcm">
+		<text>使用PDA時啟用景深效果</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_inventory_mcm">
+		<text>打開物品欄時啟用景深效果</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_wpn_dof_fdda_mcm">
+		<text>使用物品時啟用景深效果 (FDDA動作)</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wpn_dof_looting_mutant_mcm">
+		<text>解剖變異生物時啟用景深效果</text>
+	</string>
+	
+</string_table>

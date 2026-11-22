@@ -1,0 +1,2795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+		
+	<string id="st_dynamo_hand_name">
+		<text>攜帶型發電機</text>
+	</string>
+	<string id="st_dynamo_hand_name_descr">
+		<text>該裝置是一種帶有手動驅動的自製攜帶型發電機. 它基於來自舊電器的單相非同步電動機. 發電機的自激是由於連線在電動機輔助繞組上的電容器引起的. 通過蝸輪以 1300-1500 rpm 的標稱速度旋轉轉子來進行充電. 該裝置配備美國製造的點轉電流表,由Weston Electrical Instrument製造. 由於其設計,它具有相當大的重量,但在 Zone 中仍然非常受歡迎. 一些工匠可以改進這個裝置.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2]攜帶型發電裝置\n
+		%c[d_cyan] • %c[ui_gray_2]額定功率為40W的電機\n
+		</text>
+	</string>
+
+	<string id="st_grenade_launcher">
+		<text>GP-25"小型火炮"槍掛式榴彈發射器</text>
+	</string>
+	<string id="st_grenade_launcher_descr">
+		<text>
+		\n由蘇聯製造的前裝單發槍掛式榴彈發射器用以提高步兵小隊的火力. 既可平射也可以曲射,能夠摧毀射程內暴露的單個或群體目標或隱藏在障礙物后,掩體后,散兵坑內或小山丘背面的目標. 
+		\n發射筒為鋼製,筒外有連線座,連線座上部有一個凹槽和一個固定卡扣,凹槽與槍管,刺刀,和通條配合,因此不需要任何改變和適配就可以加裝在各種武器上. 安裝時套在槍管上,把固定卡扣往裡面壓緊就可以使用,裝卸時不需要專用工具. \n \n
+		%c[d_purple] • %c[ui_gray_2] 初速:  %c[ui_gray_1]約76米每秒\n
+		%c[d_purple] • %c[ui_gray_2] 有效射程:  %c[ui_gray_1]約300米\n
+		%c[d_purple] • %c[ui_gray_2] 裝填速度:  %c[ui_gray_1]緩慢\n
+		%c[d_purple] • %c[ui_gray_2] 可用彈藥:  %c[ui_gray_1]VOG-25 40毫米榴彈</text>
+	</string>
+
+	<string id="st_grenade_launcher_m203">
+		<text>M203下掛榴彈發射器</text>
+	</string>
+	<string id="st_grenade_launcher_m203_descr">
+		<text>
+		\n在越南戰爭期間為提升單兵作戰火力而研發,在投入越南戰場后M203迅速在戰場上發揮了作用. 隨後M203陸續推出了許多改型,在發射器長度及快速拆裝能力上有所不同,同時也推出了非附件版的獨立發射器. 
+		\n此M203槍掛榴彈發射器經過改進長度減少了三英吋,可以通過皮卡汀尼導軌固定在武器上以達到快速裝卸的目的. 因為這種模組化設計,該榴彈發射器在世界上廣受歡迎,而且可與目前的大多數步槍適配. \n \n
+		%c[d_purple] • %c[ui_gray_2] 初速:  %c[ui_gray_1]約76米每秒\n
+		%c[d_purple] • %c[ui_gray_2] 有效射程:  %c[ui_gray_1]約300米\n
+		%c[d_purple] • %c[ui_gray_2] 裝填速度:  %c[ui_gray_1]緩慢\n
+		%c[d_purple] • %c[ui_gray_2] 可用彈藥:  %c[ui_gray_1]40x46榴彈</text>
+	</string>
+
+	<string id="st_wpn_9a91">
+		<text>9A-91</text>
+	</string>
+	<string id="st_wpn_9a91_descr">
+		<text>9A-91步槍採用導氣式操作自動原理,長行程導氣活塞位於槍管上方,其迴轉式槍機有4個閉鎖突耳. 拉機柄位於槍機框右側,可以向上摺疊. 槍機由鋼衝壓件製成,護木和手槍式握把均由聚合物製成. 框架式槍托可以翻過槍機向上摺疊. 機匣上安裝有L形翻轉式表尺,射程裝定在100米和200米. 由於亞音速彈的彈道比較彎曲,因此相當於衝鋒鎗用途的9A-91的實際戰鬥距離通常在100米左右. 不過由於9×39毫米步槍彈比9毫米手槍彈有更強的殺傷力和侵徹能力,因此9A-91比其他型號的衝鋒鎗或短突擊步槍的威力都要大. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO瞄準鏡,PSO-1M2-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94消音器</text>
+	</string>
+
+	<string id="st_wpn_abakan">
+		<text>AN-94突擊步槍</text>
+	</string>
+	<string id="st_wpn_abakan_descr">
+		<text>與AK-74相比,尼科諾夫設計的AN-94的高速2發點射模式據說是最大的進步. 由於後坐力和槍口跳動的影響,AK-74在進行短點射時,續發彈的彈著點往往距離首發彈的彈著點距離較遠. 而AN-94的兩發點射是以非常高的射速(1800 RPM)發射且不受後坐力導致的槍身位移所影響,傳說中一個訓練有素的射手能用這種射擊模式在100米靶上打出一個洞來. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (經過改造后)\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡</text>
+	</string>
+
+	<string id="st_wpn_abakan_camo">
+		<text>AN-94突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_abakan_camo_descr">
+		<text>The AN-94 was designed as a potential replacement to the AK-74 series of rifles currently in service with the Russian Armed Forces. Due to its complex design and expense, it failed to fill its intended role as a replacement for the AK-74, but it is in limited use as a special purpose weapon. The AN-94 has the unique feature of delaying recoil felt for the first two rounds. The AN-94 offers a unique two-shot burst function at a stated 1800 rounds per minute and, it is claimed, increases hit probability under the most adverse combat conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1997\n \n
+		%c[0,255,255,255]UNIQUE: %c[0,250,250,0] Hyperburst fire mode\n
+		</text>
+	</string>	
+	
+	<string id="st_wpn_ace21">
+		<text>加利爾ACE-21突擊步槍</text>
+	</string>
+	<string id="st_wpn_ace21_descr">
+		<text>加利爾ACE槍族是由以色列IWI公司設計製造的. ACE的基型是加利爾突擊步槍,而後者又以AK步槍為基礎. 加利爾ACE很重視人體工程學,有較好的人機功效和模組化靈活設計. 加利爾ACE槍族可發射世界上最常見的三種彈藥(5.56x45NATO,7.62x39 M43和7.62x51 NATO),不同的口徑使用的槍管不同. 這把ACE發射5.56x45NATO彈藥,設計十分緊湊. 在特異區里這把步槍不太常見. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45消音器\n
+		%c[d_purple] • %c[ui_gray_2] ACOG,Barska ES ACOG,EOTech瞄準鏡</text>
+	</string>
+
+	<string id="st_wpn_aek971">
+		<text>AEK-971突擊步槍</text>
+	</string>
+	<string id="st_wpn_aek971_descr">
+		<text>AEK-971最主要的特點是採用了稱之為平衡動作(balanced action)原理的迴轉式槍機閉鎖系統. 所謂的"平衡動作"是指AEK-971的導氣裝置有兩個導氣室和兩個導氣活塞,第一個導氣活塞如通常的一樣導氣桿與機框相連並一起運動,而第二個導氣活塞則與配重灌置連線且運動方向與第一個導氣活塞相反,這種同步反方向移動的配重灌置抵消了射擊時的後座衝量,使步槍在全自動射擊時非常平穩.這種步槍曾為俄羅斯科夫羅夫機械廠小批量試製過. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A 消音器\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器</text>
+	</string>
+
+	<string id="st_wpn_aek971_camo">
+		<text>AEK-971突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_aek971_camo_descr">
+		<text>AEK-971最主要的特點是採用了稱之為平衡動作(balanced action)原理的迴轉式槍機閉鎖系統. 所謂的"平衡動作"是指AEK-971的導氣裝置有兩個導氣室和兩個導氣活塞,第一個導氣活塞如通常的一樣導氣桿與機框相連並一起運動,而第二個導氣活塞則與配重灌置連線且運動方向與第一個導氣活塞相反,這種同步反方向移動的配重灌置抵消了射擊時的後座衝量,使步槍在全自動射擊時非常平穩. 這種步槍曾為俄羅斯科夫羅夫機械廠小批量試製過. 這把獨特的AEK-971刷上了淺米色和紅斑涂裝,象徵著紀律團. 一些零件被修磨或被更可靠的零件替換了. 零件變得更加緊湊,從而提高了初速和精度. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A 消音器\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器</text>
+	</string>
+	
+	<string id="st_wpn_aek973">
+		<text>AEK-973突擊步槍</text>
+	</string>
+	<string id="st_wpn_aek973_descr">
+		<text>AEK-973是換用7.62x39毫米口徑的AEK-971. 而AEK-971最主要的特點是採用了稱之為平衡動作原理的迴轉式槍機閉鎖系統. 所謂的"平衡動作"是指AEK-971的導氣裝置有兩個導氣室和兩個導氣活塞,第一個導氣活塞如通常的一樣導氣桿與機框相連並一起運動,而第二個導氣活塞則與配重灌置連線且運動方向與第一個導氣活塞相反,這種同步反方向移動的配重灌置抵消了射擊時的後座衝量,使步槍在全自動射擊時非常平穩. 這種步槍曾為俄羅斯科夫羅夫機械廠小批量試製過. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A 消音器\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器</text>
+	</string>
+
+	<string id="st_wpn_ak">
+		<text>AK-47突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak_descr">
+		<text>AK-47突擊步槍,于1947年定型,1949年裝備部隊,使用7.62×39毫米M43步槍彈.前蘇軍摩托化步兵部隊、空軍和海軍的警衛、勤務人員使用木製或塑料制固定槍托型,傘兵、坦克乘員和特種分隊使用摺疊金屬槍托型. AK-47的動作可靠,勤務性好; 堅實耐用,故障率低,無論是在高溫還是低溫條件下,射擊效能都很好,尤其在風沙泥水中使用,效能可靠; 結構簡單,分解容易. 但是連發射擊時槍口上跳嚴重,影響精度,而且重量比較大. AK-47是裝備範圍相當廣泛的步槍,同時是20世紀下半葉以來產量最大的步槍. 除前蘇軍外,世界上還有30多個國家的軍隊裝備AK-47,有的還進行了仿製或特許生產. 迄今為止,它在幾十個國家中衍生出了許多不同的版本. 幾乎所有的武裝衝突中都能看到它的身影. 蘇軍所裝備的AK-47于50年代末由其改進型AKM所取代. 米哈伊爾·卡拉什尼科夫結合美國M1加蘭德步槍和德國StG44突擊步槍的優點設計了這款步槍. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1 消音器\n%c[d_red] • %c[d_red] 沒有燕尾槽所以不能安裝瞄具\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (經過改造后)</text>
+	</string>
+
+	<string id="st_wpn_ak101">
+		<text>AK-101突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak101_descr">
+		<text>AK-101實際上就是發射北約5.56mm標準口徑彈的AK-74M,外觀上是完全一樣的,只是機匣上用英文寫著口徑"CAL 5.56 NATO". 其彈匣的外形和AK-74M的彈匣也是一樣,只是彈匣體上方標有"5.56 NATO"作為識別標記. AK-101的目標客戶是那些想消耗大量5.56x45子彈庫存又想要AK的優良效能的傢伙. 它採用了現代複合材料(包括工程塑料)以減輕重量並提高精確度. AK-10x系列都在AK-101的基礎上改進. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (經過改造后)\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡,EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] ATG 消音器</text>
+	</string>
+
+	<string id="st_wpn_ak101_camo">
+		<text>AK-101突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_ak101_camo_descr">
+		<text>The AK-101 is an assault rifle of the Kalashnikov series. It's marketed at those looking for a weapon that combines the logistical compatibility and familiarity of the 5.56x45mm NATO round with the reliability of a Kalashnikov. The design of this rifle is similar to the AK-74. It is designed with modern and composite materials, including plastics that reduce weight and improve accuracy.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1994\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_ak102">
+		<text>AK-102突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak102_descr">
+		<text>AK-102是AK-101的卡賓槍改型. 它使用更短的槍管,是介於全尺寸步槍和AKS74U短突擊步槍之間. 步槍的槍機由鋼板衝壓製成; 彈匣由強化玻璃纖維製成,槍托由中空塑料製成. 使它更加輕巧耐用,而且可以將小工具包放進槍托里. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡,EKP-8-02眼鏡蛇,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] ATG 消音器</text>
+	</string>
+	
+	<string id="st_wpn_ak103">
+		<text>AK-103突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak103_descr">
+		<text>AK-103突擊步槍是AK-74M的衍生產物,口徑為7.62x39毫米,與AKM和AK-47相同. 具有燕尾槽的AK-103可以安裝多種瞄準器,包括: 鐳射,夜視和光學瞄準器,以及消音器和GP-25下掛榴彈發射器. 它儘可能使用聚合物部件代替木材和金屬以減輕重量. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (經過改造后)\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] ATG 消音器</text>
+	</string>
+
+	<string id="st_wpn_ak103_camo">
+		<text>AK-103突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_ak103_camo_descr">
+		<text>The AK-103 is an AK-100 derivative of the AK-74M that is chambered for the 7.62x39mm M43 cartridge, similar to the AKM. Newer versions can fit Picatinny rails, allowing more accessories to be mounted. It uses plastic components where possible instead of wood or metal, with such components being the pistol grip, handguards, folding stock and depending on the type, the magazine. Forearm, magazine, butt stock and pistol grip are made of high strength shatterproof plastic with metal parts being coated in corrosion resistant protectants.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1993\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_ak104">
+		<text>AK-104突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak104_descr">
+		<text>AK-104是AK-103步槍的卡賓槍改型,口徑為7.62×39毫米.它使用更短的槍管,介於全尺寸步槍和AKS74U短突擊步槍之間. 步槍的槍機由衝壓鋼製成; 彈匣由強化玻璃纖維製成,槍托由中空塑料製成. 使它更加輕巧耐用,而且可以將小工具包放進槍托里. \n \n
+		%c[ui_gray_2]槍械配件:\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02眼鏡蛇,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] ATG 消音器</text>
+	</string>
+
+	<string id="st_wpn_ak105">
+		<text>AK-105短突擊步槍(BaS)</text>
+	</string>
+	<string id="st_wpn_ak105_descr">
+		<text>AK-105是AK-74M步槍的5.45x39mm卡賓槍版本. AK-105用於補充一部分俄羅斯陸軍正在服役中的AKS-74U卡賓槍的耗損. 是理想的CQC(近距離作戰)武器,它不適用于遠距離作戰. 步槍的機匣是用衝壓鋼製成的. 而彈匣是由玻璃鋼製成,槍托是由更輕、更耐用的聚合物塑料製造,而且其內部是附件儲存室,可以把內藏清槍配備的工具盒儲存在槍托內部. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄準鏡: 除了帶目鏡罩的PSO瞄準鏡和PSO-1M2-1瞄準鏡之外,所有用燕尾槽安裝的瞄準鏡都是因為在AK系列步槍上使用這些瞄準鏡不方便. \n
+		%c[d_purple] • %c[ui_gray_2] 能利用戰術套件進行升級. \n
+		%c[d_purple] • %c[ui_gray_2] 消音器: TGP-A消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_ak12">
+		<text>AK-12突擊步槍2012年款(BaS)</text>
+	</string>
+	<string id="st_wpn_ak12_descr">
+		<text>卡拉什尼科夫AK-12突擊步槍是伊茲馬什工廠的最新產品. 它的目的是取代目前在國內使用的舊版卡拉什尼科夫AK-74M和AK-100系列步槍,以及出口型號. 該步槍採用導氣式系統,使用傳統型"卡拉什尼科夫樣式"長行程活塞傳動型氣動式和轉拴式槍機閉鎖機構的一種可選射擊模式的突擊步槍. 槍栓組合明顯減輕,以減少反衝後坐和提高自動射擊的準確性. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 所有符合安裝在皮卡汀尼導軌/維佛基座上的瞄具\n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器\n
+		%c[d_purple] • %c[ui_gray_2] 5.45/7.62x39 Hexagon消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74">
+		<text>AK-74N突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74_descr">
+		<text>AK-74是米哈伊爾·卡拉什尼科夫在20世紀70年代早期開發的一種5.45x39mm突擊步槍,用於取代早期的AKM. 它于1974年引進,並首次在捲入阿富汗區域性衝突的蘇聯軍隊服役. AKM步槍經過改裝,可以發射更小口徑的5.45x39mm彈藥,並配有一個大尺寸槍口制退器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74_alt">
+		<text>AK-74N突擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_ak74_alt_descr">
+		<text>The AK-74 is a 5.45x39mm assault rifle developed in the early 1970s by Mikhail Kalashnikov to replace the earlier AKM. It was introduced in 1974 and first saw service with Soviet forces engaged in the Afghanistan Conflict. The AKM rifle was adapted to fire the smaller 5.45x39mm cartridge and is fitted with a large muzzle brake. The AK-74N is equipped with a side dovetail rail for mounting optical sights.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1984\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74_custom">
+		<text>AK-74N突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_ak74_custom_descr">
+		<text>The AK-74 is a 5.45x39mm assault rifle developed in the early 1970s by Mikhail Kalashnikov to replace the earlier AKM. It was introduced in 1974 and first saw service with Soviet forces engaged in the Afghanistan Conflict. The AKM rifle was adapted to fire the smaller 5.45x39mm cartridge and is fitted with a large muzzle brake. The AK-74N is equipped with a side dovetail rail for mounting optical sights.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1984\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74_eot">
+		<text>AK-74N突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74_eot_descr">
+		<text>AK-74是米哈伊爾·卡拉什尼科夫(Mikhail Kalashnikov)在20世紀70年代早期開發的一種5.45x39mm突擊步槍,用於取代早期的AKM. 它于1974年引進,並首次在捲入阿富汗區域性衝突的蘇聯軍隊服役. AKM步槍經過改裝,可以發射更小口徑的5.45x39mm子彈,並配有一個大尺寸槍口制退器. 這個特殊的型號有一個整合的EOTech全息光學瞄準鏡和一個45發彈匣. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n
+		%c[d_purple] • %c[ui_gray_2] EOTech瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74_modern">
+		<text>AK-74N突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_ak74_modern_descr">
+		<text>The AK-74 is a 5.45x39mm assault rifle developed in the early 1970s by Mikhail Kalashnikov to replace the earlier AKM. It was introduced in 1974 and first saw service with Soviet forces engaged in the Afghanistan Conflict. The AKM rifle was adapted to fire smaller 5.45x39mm cartridge and fitted with a large muzzle brake.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1984\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74_old">
+		<text>AK-74突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74_old_descr">
+		<text>AK-74是米哈伊爾·卡拉什尼科夫(Mikhail Kalashnikov)在20世紀70年代早期開發的一種5.45x39mm突擊步槍,用於取代早期的AKM. 它于1974年引進,並首次在捲入阿富汗區域性衝突的蘇聯軍隊服役. AKM步槍經過改裝,可以發射更小口徑的5.45x39mm子彈,並配有一個大尺寸槍口制退器. 這種特殊的改裝是很久以前組裝的. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n%c[d_red] • %c[d_red] 無法應對無燕尾槽條件下的配件安裝\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74m">
+		<text>AK-74M突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74m_descr">
+		<text>1991年,伊茲馬什工廠開始生產改進的AK-74,也就是AK-74M突擊步槍. 除了幾項小的生產改進外,步槍還採用了一種新的可摺疊合成材料,由黑色玻璃鋼增強聚酰胺製成. AK-74M還使用了加強的槍口抑制裝置和防塵罩. 每個AK-74M都配有安裝光學元件的側軌基座. AK-74M已被俄羅斯聯邦選定為新一代步槍裝備部隊. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74m_alt">
+		<text>AK-74M突擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_ak74m_alt_descr">
+		<text>In 1991, the Izhmash factory began production of an improved AK-74 - the AK-74M assault rifle. Apart from several minor production improvements, the rifle also features a new foldable synthetic stock made from a black, glass-filled polyamide. The AK-74M also uses a reinforced muzzle device and dust cover. Each AK-74M is fitted with a side-rail bracket for mounting optics. The AK-74M has been accepted as the new service rifle of the Russian Federation.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74m_camo">
+		<text>AK-74M突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_ak74m_camo_descr">
+		<text>In 1991, the Izhmash factory began production of an improved AK-74 - the AK-74M assault rifle. Apart from several minor production improvements, the rifle also features a new foldable synthetic stock made from a black, glass-filled polyamide. The AK-74M also uses a reinforced muzzle device and dust cover. Each AK-74M is fitted with a side-rail bracket for mounting optics. The AK-74M has been accepted as the new service rifle of the Russian Federation.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74m_custom">
+		<text>AK-74M突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_ak74m_custom_descr">
+		<text>In 1991, the Izhmash factory began production of an improved AK-74 - the AK-74M assault rifle. Apart from several minor production improvements, the rifle also features a new foldable synthetic stock made from a black, glass-filled polyamide. The AK-74M also uses a reinforced muzzle device and dust cover. Each AK-74M is fitted with a side-rail bracket for mounting optics. The AK-74M has been accepted as the new service rifle of the Russian Federation.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74m_duty">
+		<text>AK-74M突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74m_duty_descr">
+		<text>In 1991, the Izhmash factory began production of an improved AK-74 - the AK-74M assault rifle. Apart from several minor production improvements, the rifle also features a new foldable synthetic stock made from a black, glass-filled polyamide. The AK-74M also uses a reinforced muzzle device and dust cover. Each AK-74M is fitted with a side-rail bracket for mounting optics. The AK-74M has been accepted as the new service rifle of the Russian Federation.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74m_pk-a">
+		<text>AK-74M突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74m_pk-a_descr">
+		<text>1991年,伊什馬什工廠開始生產改進的AK-74,也就是AK-74M突擊步槍. 除了一些小的生產改進,該步槍還具有一個以黑色玻璃填充聚酰胺這種合成材料為主要原料製成的摺疊式槍托. AK-74M還使用了加固的槍口抑制裝置和防塵罩. 每個AK-74M都配有一個用於安裝光學元件的側軌基座. AK-74M已被俄羅斯聯邦選定為新一代步槍裝備部隊. 該型號在MTK-83光學支架上安裝了PK-A瞄準具. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n
+		%c[d_purple] • %c[ui_gray_2] PK-A紅點瞄準具(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74u">
+		<text>AKS-74UN短槍管突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74u_descr">
+		<text>AKS-74U主要用於特種部隊、空降步兵、後方梯隊支援部隊和裝甲車乘員,他們需要一種緊湊但相對強大的個人自動武器. 與AKS-74相比,AKS-74U在狹小的空間內具有更大的機動性,但是子彈初速的顯著下降導致了有效射程的下降. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] PBS-4消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74u_camo">
+		<text>AKS-74U短槍管突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74u_camo_descr">
+		<text>The AKS-74U was intended for use mainly by Spetsnaz units, airborne infantry, rear-echelon support units and armoured vehicle crews, who require a compact but relatively powerful individual automatic weapon. The AKS-74U is significantly more maneuverable in tight quarters than the AKS-74, but a significant decline in muzzle velocity resulted in a decrease in effective range.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1982\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74u_custom">
+		<text>AKS-74U短槍管突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74u_custom_descr">
+		<text>The AKS-74U was intended for use mainly by Spetsnaz units, airborne infantry, rear-echelon support units and armoured vehicle crews, who require a compact but relatively powerful individual automatic weapon. The AKS-74U is significantly more maneuverable in tight quarters than the AKS-74, but a significant decline in muzzle velocity resulted in a decrease in effective range.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1982\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ak74u_old">
+		<text>AKS-74U短槍管突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74u_old_descr">
+		<text>AKS-74U主要用於特種部隊、空降步兵、後方梯隊支援部隊和裝甲車乘員,他們需要一種緊湊但相對強大的個人自動武器. 與AKS-74相比,AKS-74U在狹小的空間內具有更大的機動性,但是子彈初速的顯著下降導致了有效射程的下降.這個型號似乎很舊. \n \n
+		%c[ui_gray_2]槍械配件: \n%c[d_red] • %c[d_red] 無燕尾槽條件下的配件安裝\n
+		%c[d_purple] • %c[ui_gray_2] PBS-4消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ak74u_snag">
+		<text>AKS-74UNB短槍管消音突擊步槍</text>
+	</string>
+	<string id="st_wpn_ak74u_snag_descr">
+		<text>AKS-74U主要用於特種部隊、空降步兵、後方梯隊支援部隊和裝甲車乘員,他們需要一種緊湊但相對強大的個人自動武器. 與AKS-74相比,AKS-74U在狹小的空間內具有更大的機動性,但是初速的顯著下降導致了有效射程的下降. 這個特殊的變種有一個45輪RPK彈匣,一個整合的眼鏡蛇瞄準鏡和一個整合到槍口的抑制器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] PBS-4消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_akm">
+		<text>AKMN突擊步槍</text>
+	</string>
+	<string id="st_wpn_akm_descr">
+		<text>AKM是由米哈伊爾·卡拉什尼科夫設計的7.62x39毫米突擊步槍. 它是AK-47步槍的改進版本,是在20世紀50年代開發的. AKM于1959年引入紅軍,是AK系列武器中最普遍的改裝型號,在前華約國家及其許多非洲和亞洲盟國中得到廣泛使用. AKM步槍的生產在圖拉兵工廠和伊茲耶夫斯克機械廠進行. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_akms">
+		<text>AKMSN突擊步槍</text>
+	</string>
+	<string id="st_wpn_akms_descr">
+		<text>AKM的一個改型,配備了一個可摺疊的金屬槍托代替固定的木製槍托. AKMS的金屬槍托與之前AK-47型號的摺疊槍托有些不同,因為它有一個改進的鎖緊機構,鎖緊了AKMS槍托的兩個支撐臂,而不是一個. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_akms_alt">
+		<text>AKMSN突擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_akms_alt_descr">
+		<text>A variant of the AKM, equipped with an under-folding metal shoulder stock in place of the fixed wooden stock. The metal stock of the AKMS is somewhat different from the folding stock of the previous AK-47 model as it has a modified locking mechanism which locks both support arms of the AKMS stock instead of just one.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Tula Arms Plant\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1959\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aks">
+		<text>AKS-47突擊步槍(傘兵用摺疊槍托型)</text>
+	</string>
+	<string id="st_wpn_aks_descr">
+		<text>AK-47的一種改裝型號,配備了一個可摺疊的金屬槍托以代替固定的木製槍托. 它是為裝甲車和傘兵設計的. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n%c[d_red] • %c[d_red] 無法應對無燕尾槽條件下的配件安裝\n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_aks74">
+		<text>AKS-74N突擊步槍</text>
+	</string>
+	<string id="st_wpn_aks74_descr">
+		<text>AK-74是一種比AKM更精確、更可靠的步槍,目前仍被前蘇聯大多數國家使用. AKS-74是AK-74的可摺疊槍托版本,槍托呈三角形,缺少AKMS的可摺疊肩墊,進而摺疊到機匣的左側. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GP-25榴彈發射器(改裝后)\n \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] TGP-A消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_aks74_new">
+		<text>AKS-74N突擊步槍(新式)</text>
+	</string>
+	<string id="st_wpn_aks74_new_descr">
+		<text>A more accurate and reliable rifle than the AKM, the AK-74 is still used by the majority of countries of the former 前蘇聯. The AKS-74 has a foldable stock with a triangular shape and lacks the folding shoulder pad of the AKMS. The stock is folded to the left side of the receiver.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1970\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_aps">
+		<text>斯捷奇金全自動手槍</text>
+	</string>
+	<string id="st_wpn_aps_descr">
+		<text>斯捷奇金手槍是一款俄羅斯產射擊模式可調整的全自動手槍,槍身上印有其設計師伊戈爾·斯捷奇金(Igor Stechkin)的名字. 斯捷奇金全自動手槍最初用於7.62x25mm托卡列夫子彈,但後來改為用於新型馬卡洛夫手槍的9x18mm口徑子彈,因為很明顯,這種彈藥將成為蘇聯軍隊手槍的新型服役彈藥. 1951年,馬卡洛夫和斯捷奇金都被引進到蘇聯的兵工廠,取代了老化的TT-33. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] APS消音器</text>
+	</string>
+	
+	<string id="st_wpn_aug">
+		<text>斯太爾AUG-A1突擊步槍</text>
+	</string>
+	<string id="st_wpn_aug_descr">
+		<text>斯太爾AUG-A1是該槍的標準版(軍綠色). AUG是奧地利5.56毫米突擊步槍,由斯太爾曼利徹爾有限公司(前身為斯太爾戴姆勒公司)設計製造. AUG(Armee Universal Gewehr. 意思是:"萬能陸軍步槍")于1978年被奧地利陸軍服役,名稱定為StG.77(Sturmgewehr 77),取代了7.62毫米StG-58自動步槍(FN-FAL製造的許可證). 自1978年生產以來,它是奧地利聯邦警察和各種國家警察部隊的標準輕便武器.
+\n \n"
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 1.5x瞄準鏡(改裝后). \n \n</text>
+	</string>
+
+	<string id="st_wpn_aug_custom">
+		<text>斯太爾AUG-A1突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_aug_custom_descr">
+		<text>Steyr AUG A1 in standard rifle configuration (military green). The AUG is an Austrian 5.56mm bullpup assault rifle. The AUG (Armee-Universal-Gewehr "universal army rifle") was adopted by the Austrian Army as the StG 77 (Sturmgewehr 77) in 1978, where it replaced the 7.62mm StG 58 automatic rifle (a licence-built FN FAL). In production since 1978, it is the standard small arm of the Austrian Bundesheer and various national police units.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Austria\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1977\n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Sight: %c[ui_gray_2] 1.5x scope\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_freedom">
+		<text>斯太爾AUG-A1突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_aug_freedom_descr">
+		<text>Steyr AUG A1 in standard rifle configuration (military green). The AUG is an Austrian 5.56mm bullpup assault rifle. The AUG (Armee-Universal-Gewehr "universal army rifle") was adopted by the Austrian Army as the StG 77 (Sturmgewehr 77) in 1978, where it replaced the 7.62mm StG 58 automatic rifle (a licence-built FN FAL). In production since 1978, it is the standard small arm of the Austrian Bundesheer and various national police units.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Austria\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1977\n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Sight: %c[ui_gray_2] 1.5x scope\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_merc">
+		<text>斯太爾AUG-A1突擊步槍(通用版)</text>
+	</string>
+	<string id="st_wpn_aug_merc_descr">
+		<text>Steyr AUG A1 in standard rifle configuration (military green). The AUG is an Austrian 5.56mm bullpup assault rifle. The AUG (Armee-Universal-Gewehr "universal army rifle") was adopted by the Austrian Army as the StG 77 (Sturmgewehr 77) in 1978, where it replaced the 7.62mm StG 58 automatic rifle (a licence-built FN FAL). In production since 1978, it is the standard small arm of the Austrian Bundesheer and various national police units.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Austria\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Steyr Arms\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1977\n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Sight: %c[ui_gray_2] 1.5x scope\n
+		</text>
+	</string>
+
+	<string id="st_wpn_aug_modern">
+		<text>斯太爾AUG-A1突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_aug_modern_descr">
+		<text>斯太爾AUG-A1標準步槍配置(軍綠色). AUG是奧地利5.56毫米突擊步槍,由斯太爾曼利徹爾有限公司(前身為斯太爾戴姆勒公司)設計製造. AUG(Armee Universal Gewehr. 意思是:"萬能陸軍步槍")于1978年被奧地利陸軍服役,名稱定為StG.77(Sturmgewehr 77),取代了7.62毫米StG-58自動步槍(FN-FAL製造的許可證). 自1978年生產以來,它是奧地利聯邦警察和各種國家警察部隊的標準輕便武器. 該型號已經過修改,可用於7.62x51北約彈藥. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 1.5x瞄準鏡(改裝后). \n \n</text>
+	</string>
+
+	<string id="st_wpn_beretta">
+		<text>伯萊塔92F式手槍</text>
+	</string>
+	<string id="st_wpn_beretta_descr">
+		<text>伯萊塔92F也許是美軍最著名的制式手槍, 它取代了傳說中的M1911, 它是一把帶有鋁製槍身和鍍鉻槍膛, 並採用槍管短後坐式工作原理, 後膛閉鎖式擊發的攜帶型武器, 使用非常廣泛, 由於它採用了大威力子彈和大容量彈匣, 使得其在犯罪分子手中尤其流行\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器(改裝后)</text>
+	</string>
+	
+	<string id="st_wpn_beretta_alt">
+		<text>伯萊塔92F式手槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_beretta_alt_descr">
+		<text>伯萊塔92F也許是美軍最著名的制式手槍, 它取代了傳說中的M1911, 它是一把帶有鋁製槍身和鍍鉻槍膛, 並採用槍管短後坐式工作原理, 後膛閉鎖式擊發的攜帶型武器, 使用非常廣泛, 由於它採用了大威力子彈和大容量彈匣, 使得其在犯罪分子手中尤其流行\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Italy\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Fabbrica d'Armi Pietro Beretta\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_beretta_camo">
+		<text>伯萊塔92F式手槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_beretta_camo_descr">
+		<text>伯萊塔92F也許是美軍最著名的制式手槍, 它取代了傳說中的M1911, 它是一把帶有鋁製槍身和鍍鉻槍膛, 並採用槍管短後坐式工作原理, 後膛閉鎖式擊發的攜帶型武器, 使用非常廣泛, 由於它採用了大威力子彈和大容量彈匣, 使得其在犯罪分子手中尤其流行\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Italy\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Fabbrica d'Armi Pietro Beretta\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+
+	<string id="st_wpn_beretta_modern">
+		<text>伯萊塔92F式手槍(現代版)</text>
+	</string>
+	<string id="st_wpn_beretta_modern_descr">
+		<text>伯萊塔92F也許是美軍最著名的制式手槍, 它取代了傳說中的M1911, 它是一把帶有鋁製槍身和鍍鉻槍膛, 並採用槍管短後坐式工作原理, 後膛閉鎖式擊發的攜帶型武器, 使用非常廣泛, 由於它採用了大威力子彈和大容量彈匣, 使得其在犯罪分子手中尤其流行\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Italy\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Fabbrica d'Armi Pietro Beretta\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_bizon">
+		<text>PP-19"野牛"衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_bizon_descr">
+		<text>這種衝鋒鎗是90年代初在位於伊茲耶夫斯克的著名的伊茲馬斯國家兵工廠開發的,1993年首次公開亮相. 受卡利科衝鋒鎗的影響,"野牛"衝鋒鎗將大容量螺旋彈匣與更傳統的外觀和佈局結合起來. "野牛"縮短了AKS-74機匣長度,由衝壓鋼板製成. 它的特點是採用了簡單的反衝後座作用式操作的槍機,由閉鎖式槍栓引起擊錘運動. "野牛"能夠進行半自動和全自動射擊,機匣右側配有典型的AK系列步槍那樣的保險. 瞄準器類似於AKS-74U上的瞄準器,帶有前後可調節旋鈕. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_bm16">
+		<text>TOZ-66獵槍(短槍管型)</text>
+	</string>
+	<string id="st_wpn_bm16_descr">
+		<text>一種短槍管的雙管獵槍. 它更輕,結構更緊湊,近距離內非常有效. 由於需要一種廉價、有效且致命的短程武器,許多新手潛行者都會在容易獲得的TOZ-66上鋸下槍托和槍管. 這使得該槍的機動性大大增加,但卻以犧牲射程和準確度為代價. \n \n</text>
+	</string>
+
+	<string id="st_wpn_bm16_alt">
+		<text>TOZ-66獵槍改(短槍管型)</text>
+	</string>
+	<string id="st_wpn_bm16_alt_descr">
+		<text>A double-barrelled shotgun with shortened barrels. Lighter and more compact, effective at close range. Needing a cheap, short range weapon that's effective and lethal, many rookie stalkers resort to sawing off the and barrel on the easily acquired TOZ 66. This makes the shotgun quick to wield, but at the cost of range and accuracy.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Tula Arms Plant\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1968\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_bm16_full">
+		<text>TOZ-66獵槍</text>
+	</string>
+	<string id="st_wpn_bm16_full_descr">
+		<text>一款威力強大的武器,每一個潛行者都能負擔得起,TOZ66是一種近距離支援火器,可靠性和有效性俱佳. 然而,由於體積龐大且笨重,許多潛行者寧願把辛苦掙來的盧布花在現代手槍上. \n \n</text>
+	</string>
+
+	<string id="st_wpn_bm16_full_alt">
+		<text>TOZ-66獵槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_bm16_full_descr">
+		<text>一款威力強大的武器,每一個潛行者都能負擔得起,TOZ66是一種近距離支援火器,可靠性和有效性俱佳. 然而,由於體積龐大且笨重,許多潛行者寧願把辛苦掙來的盧布花在現代手槍上. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_colt_kimber">
+		<text>金柏沙漠勇士型M1911A1手槍</text>
+	</string>
+	<string id="st_wpn_colt_kimber_descr">
+		<text>Kimber公司製造開發的先進高階版本的柯爾特M1911A1. 沙漠勇士型手槍是美國為執行特殊任務的部隊而製造的.</text>
+	</string>
+	
+	<string id="st_wpn_colt1911">
+		<text>柯爾特M1911</text>
+	</string>
+	<string id="st_wpn_colt1911_descr">
+		<text>從1911年至1985年,M1911一直是美軍的標準配發武器. 作為一種極其可靠和耐操的武器,它已被世界各地的軍隊、警察和民間所採用,至今仍然是一種非常流行的武器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP槍口抑制器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_colt1911_alt">
+		<text>柯爾特M1911(實驗型)</text>
+	</string>
+	<string id="st_wpn_colt1911_alt_descr">
+		<text>The M1911 was the standard-issue side arm of the US military from 1911 to 1985. An extremely reliable and robust weapon, its been adopted for military, police and civilian use around the world and remains a very popular firearm to this day.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_wpn_colt1911_camo">
+		<text>柯爾特M1911(迷彩版)</text>
+	</string>
+	<string id="st_wpn_colt1911_camo_descr">
+		<text>從1911年至1985年,M1911一直是美軍的標準配發武器. 作為一種極其可靠和耐操的武器,它已被世界各地的軍隊、警察和民間所採用,至今仍然是一種非常流行的武器. 這款則是一個帶有暗紅色沙色處理的定製版. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP槍口抑制器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_colt1911_custom">
+		<text>柯爾特M1911(定製版)</text>
+	</string>
+	<string id="st_wpn_colt1911_custom_descr">
+		<text>The M1911 was the standard-issue side arm of the US military from 1911 to 1985. An extremely reliable and robust weapon, its been adopted for military, police and civilian use around the world and remains a very popular firearm to this day.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_wpn_colt1911_duty">
+		<text>柯爾特M1911(紀律團涂裝)</text>
+	</string>
+	<string id="st_wpn_colt1911_duty_descr">
+		<text>從1911年至1985年,M1911一直是美軍的標準配發武器. 作為一種極其可靠和耐操的武器,它已被世界各地的軍隊、警察和民間所採用,至今仍然是一種非常流行的武器.這款改裝版有一個獨特的特點就是：它比普通型更加強大. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP槍口抑制器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_colt1911_merc">
+		<text>柯爾特M1911(傭兵迷彩涂裝)</text>
+	</string>
+	<string id="st_wpn_colt1911_merc_descr">
+		<text>從1911年至1985年,M1911一直是美軍的標準配發武器. 作為一種極其可靠和耐操的武器,它已被世界各地的軍隊、警察和民間所採用,至今仍然是一種非常流行的武器.這種型號更加可靠和準確. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP槍口抑制器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_colt1911_modern">
+		<text>柯爾特M1911(現代版)</text>
+	</string>
+	<string id="st_wpn_colt1911_modern_descr">
+		<text>The M1911 was the standard-issue side arm of the US military from 1911 to 1985. An extremely reliable and robust weapon, its been adopted for military, police and civilian use around the world and remains a very popular firearm to this day.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_wpn_colt1911_new">
+		<text>柯爾特M1911(新式)</text>
+	</string>
+	<string id="st_wpn_colt1911_new_descr">
+		<text>The M1911 was the standard-issue side arm of the US military from 1911 to 1985. An extremely reliable and robust weapon, its been adopted for military, police and civilian use around the world and remains a very popular firearm to this day.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt Manufacturing Company\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1911\n
+		</text>
+	</string>
+
+	<string id="st_wpn_cz75">
+		<text>CZ-75手槍半自動型</text>
+	</string>
+	<string id="st_wpn_cz75_descr">
+		<text>CZ-75手槍是捷克共和國工程師約瑟夫·庫斯基和弗朗泰斯克·庫斯基這兩兄弟一起研製的. 這種半自動手槍于1975年首次出現,1976年投入生產,主要用於出口海外市場. CZ-75從許多先前的設計中積累了最佳的經驗,由此生產出的手槍具有美觀、操作舒適、射擊準確、可靠性高等特點. CZ-武器製造廠製造了不同版本和型號的CZ-75,它也被廣泛複製和克隆. . \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器</text>
+	</string>
+
+	<string id="st_wpn_cz75_auto">
+		<text>CZ-75手槍全自動型</text>
+	</string>
+	<string id="st_wpn_cz75_auto_descr">
+		<text>CZ-75手槍是捷克共和國工程師約瑟夫·庫斯基和弗朗泰斯克·庫斯基這兩兄弟一起研製的. 這種半自動手槍于1975年首次出現,1976年投入生產,主要用於出口海外市場. CZ-75從許多先前的設計中積累了最佳的經驗,由此生產出的手槍具有美觀、操作舒適、射擊準確、可靠性高等特點. CZ-武器製造廠製造了不同版本和型號的CZ-75,它也被廣泛複製和克隆. CZ-75汽車是1995年的型號,擁有全自動射擊模式和更長的槍管.</text>
+	</string>
+	<string id="st_wpn_cz75_custom">
+		<text>CZ-75手槍半自動型(定製版)</text>
+	</string>
+	<string id="st_wpn_cz75_custom_descr">
+		<text>The CZ-75 was developed in the Czech Republic by the Koucky brothers. This semi-automatic pistol first appeared in 1975, entered production in 1976 and was intended for the export market. The CZ-75 accumulated the best features from many preceding designs and the resulting pistol was aesthetically attractive, comfortable, accurate and reliable in operation. Made by CZ arms in various versions and modifications, the CZ-75 was also widely copied and cloned.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Czechoslovak Socialist Republic\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Ceska zbrojovka\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_desert_eagle">
+		<text>沙漠之鷹手槍</text>
+	</string>
+	<string id="st_wpn_desert_eagle_descr">
+		<text>以色列軍事工業公司生產的沙漠之鷹是一種半自動手槍,以其中間威力彈和自動裝彈手槍而聞名,也是同類中重量最重、模組化程度最高的手槍. 沒有人知道為什麼我認為用手槍射出這麼大口徑的子彈是個好主意,儘管有很多子彈可以在不傷手腕的情況下完成任務；這一個假設是因為.44和.50AE之間的激烈競爭. 不僅是它的沉重的槍身和巨大的後坐力,也是由於它的外觀形狀和重量,你也可以用它來擊斃你的敵人. 儘管世界各地的軍隊和執法部門在腦子沒被門擠過的時候,從未使用過這種磚頭一樣的槍；好萊塢做到了這一點,主要是因為它的"外觀酷炫的因素",現在是黑幫和皮條客的招牌武器,是那些在某個遊戲機射擊遊戲中達到一定級別的人的身份象徵. 有傳言說有個拿著撬棍的潛行者拿著一把改裝過的槍在附近徘徊,但這只是謠言.</text>
+	</string>
+
+	<string id="st_wpn_desert_eagle_custom">
+		<text>沙漠之鷹手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_desert_eagle_custom_descr">
+		<text>The Desert Eagle is a gas-operated, semi-automatic pistol known for chambering the .50 Action Express, the largest centerfire cartridge of any magazine-fed, self-loading pistol. Magnum Research Inc. (MRI) designed and developed the Desert Eagle and was further refined (and manufactured) by Israel Military Industries (IMI). It uses a gas-operated ejection/chambering mechanism normally found in rifles, as opposed to the short recoil or blowback designs most commonly seen in semi-automatic pistols. The advantage of the gas operation is that it allows the use of far more powerful cartridges than traditional semi-automatic pistol designs. Thus it allows the Desert Eagle to compete in an area that had previously been dominated by Magnum revolvers.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States, Israel\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Magnum Research Inc., Israel Military Industries\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+
+	<string id="st_wpn_desert_eagle_modern">
+		<text>沙漠之鷹手槍(現代版)</text>
+	</string>
+	<string id="st_wpn_desert_eagle_modern_descr">
+		<text>The Desert Eagle is a gas-operated, semi-automatic pistol known for chambering the .50 Action Express, the largest centerfire cartridge of any magazine-fed, self-loading pistol. Magnum Research Inc. (MRI) designed and developed the Desert Eagle and was further refined (and manufactured) by Israel Military Industries (IMI). It uses a gas-operated ejection/chambering mechanism normally found in rifles, as opposed to the short recoil or blowback designs most commonly seen in semi-automatic pistols. The advantage of the gas operation is that it allows the use of far more powerful cartridges than traditional semi-automatic pistol designs. Thus it allows the Desert Eagle to compete in an area that had previously been dominated by Magnum revolvers.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States, Israel\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Magnum Research Inc., Israel Military Industries\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1976\n
+		</text>
+	</string>
+
+	<string id="st_wpn_desert_eagle_nimble">
+		<text>沙漠之鷹手槍"草原鷹"版</text>
+	</string>
+	<string id="st_wpn_desert_eagle_nimble_descr">
+		<text>以色列軍事工業公司生產的沙漠之鷹是一種半自動手槍,以其中間威力彈和自動裝彈手槍而聞名,也是同類中重量最重、模組化程度最高的手槍. 沒有人知道為什麼我認為用手槍射出這麼大口徑的子彈是個好主意,儘管有很多子彈可以在不傷手腕的情況下完成任務；這一個假設是因為.44和.50AE之間的激烈競爭. 這個武器是一個叫洛根·威廉姆斯的潛行者帶到特異區的. 他偽裝成一名時代雜誌的攝影師,設法單槍匹馬地進入普里皮亞奇市中心. 他目前下落不明,但據傳他是一名資訊經紀人,專門處理與特區有關的所有事務. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] DOCTER瞄準鏡(已整合)</text>
+	</string>
+	
+	<string id="st_wpn_fn2000">
+		<text>FN F2000突擊步槍</text>
+	</string>
+	<string id="st_wpn_fn2000_descr">
+		<text>從20世紀80年代末到90年代初,FN赫斯塔爾開始研製一種新型步槍. 其目的是生產一種現代模組化的武器,這使得FN F2000步槍應運而生,其第一次向公眾展示在2001年. F2000具有現代突擊步槍的所有主要效能,如緊湊的犢牛式無托佈局,左右手優化操作和模組化的設計與大量的可選配件可用. 到目前為止,FN F2000步槍只找到了少數買家,包括斯洛文尼亞武裝部隊和比利時特種作戰部隊. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] FN2000瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n</text>
+	</string>
+
+	<string id="st_wpn_fn2000_camo">
+		<text>FN F2000突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_fn2000_camo_descr">
+		<text>The aim of the FN F2000 was to produce a modern and modular weapon offering all of the popular features of the modern assault rifle such as a compact bullpup layout, an ambidextrous frame and a modular design with plenty of options and addons available. So far, the FN F2000 rifle has found only a few buyers, including the Armed Forces of Slovenia and Belgian Special Operations Forces.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN Herstal\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1995\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_fn2000_custom">
+		<text>FN F2000突擊步槍(通用版)</text>
+	</string>
+	<string id="st_wpn_fn2000_custom_descr">
+		<text>The aim of the FN F2000 was to produce a modern and modular weapon offering all of the popular features of the modern assault rifle such as a compact bullpup layout, an ambidextrous frame and a modular design with plenty of options and addons available. So far, the FN F2000 rifle has found only a few buyers, including the Armed Forces of Slovenia and Belgian Special Operations Forces.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN Herstal\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1995\n
+		</text>
+	</string>
+
+	<string id="st_wpn_fn2000_nimble">
+		<text>FN F2000全息光學瞄準鏡</text>
+	</string>
+	<string id="st_wpn_fn2000_nimble_descr">
+		<text>從20世紀80年代末到90年代初,FN赫斯塔爾開始研製一種新型步槍. 其目的是生產一種現代模組化的武器,這使得FN F2000步槍應運而生,其第一次向公眾展示在2001年. F2000具有現代突擊步槍的所有主要效能,如緊湊的犢牛式無托佈局,左右手優化操作和模組化的設計與大量的可選配件可用. 到目前為止,FN F2000步槍只找到了少數買家,包括斯洛文尼亞武裝部隊和比利時特種作戰部隊. 這個型號的一體整合式的全息光學瞄準鏡會導致精度稍低,但由於其是針對CQC(近距離交火)而生的,所以交火頻率會相應增加,從而忽略掉他媽的精度這種沒用的東西. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 全息光學瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_fn57">
+		<text>FN Five-seveN半自動手槍(BaS)</text>
+	</string>
+	<string id="st_wpn_fn57_descr">
+		<text>Five-seveN是一種延遲反衝操作的半自動手槍. 這把Five-seveN手槍是由FN赫斯塔爾設計的,作為P90衝鋒鎗的補充武器. P90和Five-seveN共享相同的彈藥,即5.7x28mm SS190子彈. 彈藥和武器背後的理念是提供良好的穿透力,以對抗由防彈衣保護的目標,同時保持武器的重量、尺寸和後坐力在合理水平. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 該套件包括鐳射輔助瞄準和紅點瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 瞄準鏡: Docter瞄準鏡,Aimpoint T1瞄準鏡(低基座),Trijicon公司RMR紅點瞄準鏡,Leupold DeltaPoint PRO瞄準鏡. \n
+		%c[d_purple] • %c[ui_gray_2] 消音器: 5.7x28mm消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_fnp45">
+		<text>FNP-45手槍</text>
+	</string>
+	<string id="st_wpn_fnp45_descr">
+		<text>FN FNP是一系列的比利時的半自動手槍. 由Fabrique Nationale旗下、位於南卡羅來納州哥倫比亞的美國分公司(FNH USA)設計和生產. 這種手槍首次亮相於2006年的年初,而衍生型的FNP手槍都包括靈巧的待擊解脫桿和一個可反轉的彈匣釋放按鈕,以及設有一條整合在套筒下前方的綜合戰術配件導軌,以安裝各種戰術燈或是鐳射瞄準器(LAM)的配件. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器</text>
+	</string>
+
+	<string id="st_wpn_fnp45_custom">
+		<text>FNP-45手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_fnp45_custom_descr">
+		<text>The FN FNP pistol is a series of semi-automatic, polymer framed pistols manufactured in Columbia, South Carolina by FNH USA, a division of Fabrique Nationale de Herstal. Debuted in early 2006, the FNP series weapons are hammer fired weapons utilizing a Browning cam system with an external extractor. The trigger module is housed inside the polymer frame as an individual unit connected to the hammer. The magazine release button is held in place by a retention pin which can be removed to allow the button to be reversed.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States, Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FNH USA\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2006\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_fnx45">
+		<text>FNX-45手槍戰術型</text>
+	</string>
+	<string id="st_wpn_fnx45_descr">
+		<text>FNX系列手槍于2009年由比利時槍支公司FN赫斯塔爾在美國的子公司FNH USA推出. 這些手槍最初是根據美國聯合作戰手槍計劃的要求開發的,在美國製造,用於軍事、執法和民用市場. 所有FNX手槍均為半自動手槍,配有雙/單動扳機和擊錘. 每把FNX手槍的槍身都是由抗衝擊的聚合物製成的,帶有不同尺寸的可拆卸的背板. FNX-45戰術型是FNX-45基礎型的一個特殊改裝版本,其特點是延長的螺紋槍管和高基座瞄準鏡,用於可拆卸的消音器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] FNX戰術瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(已整合)</text>
+	</string>
+
+	<string id="st_wpn_fnx45_alt">
+		<text>FNX-45手槍戰術型(實驗型)</text>
+	</string>
+	<string id="st_wpn_fnx45_alt_descr">
+		<text>The FNX line of pistols were introduced in 2009 by FNH USA, a US based subsidiary of the Belgian gun company FN Herstal. Originally developed to the requirements of the US Joint Combat Pistol Program, these pistols are manufactured in the US and intended for military, law enforcement and civilian use. All FNX handguns are semi-automatic pistols with double/single action trigger and external hammers. The frame of every FNX pistol is made from impact resistant polymer, with removable backstraps of different sizes. The FNX-45 Tactical is a specialized variant of the basic FNX-45 that features an extended threaded barrel and raised sights to be used with a detachable sound suppressor.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States, Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN America\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2009\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+
+	<string id="st_wpn_fnx45_custom">
+		<text>FNX-45手槍戰術型(定製版)</text>
+	</string>
+	<string id="st_wpn_fnx45_custom_descr">
+		<text>The FNX line of pistols were introduced in 2009 by FNH USA, a US based subsidiary of the Belgian gun company FN Herstal. Originally developed to the requirements of the US Joint Combat Pistol Program, these pistols are manufactured in the US and intended for military, law enforcement and civilian use. All FNX handguns are semi-automatic pistols with double/single action trigger and external hammers. The frame of every FNX pistol is made from impact resistant polymer, with removable backstraps of different sizes. The FNX-45 Tactical is a specialized variant of the basic FNX-45 that features an extended threaded barrel and raised sights to be used with a detachable sound suppressor.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States, Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN America\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2009\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n]
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_fort">
+		<text>Fort-17手槍</text>
+	</string>
+	<string id="st_wpn_fort_descr">
+		<text>Fort-17手槍是烏克蘭國營兵工廠的最新研發產品. 它是早期Fort-12手槍的聚合物槍身改進版本,兩種手槍的所有機理和效能幾乎相同. 然而,Fort-17比它的前身更輕,並且有一個可拆卸的后握把,其有不同的尺寸選擇,來適應不同的槍手. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器</text>
+	</string>
+
+	<string id="st_wpn_fort21">
+		<text>Fort-21手槍</text>
+	</string>
+	<string id="st_wpn_fort21_descr">
+		<text>Fort-21.01 是"RPC Fort"製造的 Jericho 941手槍的複製品，在 2009 年 9 月與"以色列軍事工業"簽訂合同後製造。考慮到它相對"新"的地位，尤其是在特異區中，它是一個相當 稀有的手槍，因此價格不菲。 由於設計時參考了 CZ-75 手槍，在這種情況下，兩者可以共享各自的 16 發彈匣。 它使用 9x19 口徑彈藥而不是 9x18，不像它的哥哥：Fort-12 和 Fort-17。 \n \n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm 相容消音器</text>
+	</string>
+
+	
+	<string id="st_wpn_g3">
+		<text>G3A3突擊步槍</text>
+	</string>
+	<string id="st_wpn_g3_descr">
+		<text>G3A3是20世紀50年代由德國武器製造商赫克勒·科赫股份有限公司與西班牙國有設計和開發機構CETME(特殊材料技術研究中心)合作開發的一種戰鬥用步槍. 它的設計是使用7.62x51mm北約標準制式彈藥,並使用滾柱閉鎖原理的自由式槍機. 步槍的設計歸功於CETME. 它是由德國工程師路德維希·沃格里姆勒博士設計的. 1957年,赫克勒·科赫公司購買了製造這種步槍的許可證,對CETME的設計做了一些小的修改. 1959年被德國國防軍正式採購並命名為G3,直到1995年被G36自動步槍所取代. 儘管已經被德國軍隊正式取代,但它的使用仍然很有限. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_g36">
+		<text>G36突擊步槍</text>
+	</string>
+	<string id="st_wpn_g36_descr">
+		<text>在20世紀90年代初,赫克勒·科赫G36被稱為HK-50專案. G11和G41專案取消后,德國國防軍只剩下過時的G3步槍；赫克勒·科赫準備為德國軍隊和出口產品開發一種新型突擊步槍. 新的5.56x45mm突擊步槍于1995年被聯邦德國國防軍採用,同時也被包括英國警察和一些美國警察部門在內的世界各地的執法機構所採用. 到目前為止,很少有人抱怨這種步槍. 更常見的問題是在持續射擊時過熱的護手,以及G36KE步槍的一體整合瞄準鏡的調零損失等問題. 一些德國士兵還抱怨雙光學瞄準器的位置,以及它在惡劣天氣下容易被霧籠罩. 除此之外,它在射擊精度方面準確可靠,維護起來也比較簡單. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n</text>
+	</string>
+
+	<string id="st_wpn_g36_camo">
+		<text>G36突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_g36_camp_descr">
+		<text>The H&amp;K G-36 was known as the HK-50 project in the early 1990s. After the cancellation of the G11 and G41 projects, the Bundeswehr was left with outdated G3 rifles. Heckler &amp; Koch was set to develop a new assault rifle for both the German army and for export. The new 5.56x45mm assault rifle was adopted by the Bundeswehr in 1995 and also found its way into the hands of various law enforcement agencies worldwide, including British police and some US police departments. So far, there have been very few complaints about this rifle. It is accurate, reliable and simple in maintenance.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1996\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_g36k">
+		<text>G36K突擊步槍</text>
+	</string>
+	<string id="st_wpn_g36k_descr">
+		<text>G36突擊步槍的一種縮短槍管型號,裝有一個開放式防火帽、一個較短的前握把和一個可用於連線戰術附件(如戰術燈)的下護木. 步槍的槍管不能發射槍榴彈,也不能安裝刺刀. G36K在德國特種部隊服役時配發了一個100發的C-Mag彈鼓. 有兩個不同變種的G36K,第一種是附在上提把上的三倍的瞄準鏡的版本,而第二種則是安裝在戰術導軌上的機械瞄準鏡的版本. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] G36瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_g3sg1">
+		<text>G3SG1式7.62毫米狙擊步槍</text>
+	</string>
+	<string id="st_wpn_g3sg1_descr">
+		<text>這是G3步槍的一種狙擊步槍變種型號. "SG"代表Schützen Gewehr,或者可稱之為"精確射手步槍". 這種步槍是從生產線上單獨挑選出來的,以確保其精確性,然後再進行改裝. 使用的卡爾蔡司的1.5至6倍可調功率瞄準鏡是利用爪形夾具安裝連線到機匣的. 槍托略有延長,並帶有一個沉重的,可調整的雙重緩衝貼腮片. 一個特殊扳機組結構使得只需要1磅的扳機力就能實現乾脆利落地擊發. 自動射擊模式則被保留了下來. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] G3瞄準鏡(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_g3sg1_modern">
+		<text>G3SG1式7.62毫米狙擊步槍</text>
+	</string>
+	<string id="st_wpn_g3sg1_modern_descr">
+		<text>這是G3步槍的一種狙擊步槍變種型號. "SG"代表Schützen Gewehr,或者可稱之為"精確射手步槍". 這種步槍是從生產線上單獨挑選出來的,以確保其精確性,然後再進行改裝. 使用的卡爾蔡司的1.5至6倍可調功率瞄準鏡是利用爪形夾具安裝連線到機匣的. 槍托略有延長,並帶有一個沉重的,可調整的雙重緩衝貼腮片. 一個特殊扳機組結構使得只需要1磅的扳機力就能實現乾脆利落地擊發. 自動射擊模式則被保留了下來. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] G3瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_g43">
+		<text>Karabiner 43狙擊步槍</text>
+	</string>
+	<string id="st_wpn_g43_descr">
+		<text>納粹德國採用蘇聯SVT步槍的簡單氣動機構,研製出Gewehr 43型半自動步槍. 它在1944年被改名為Karabiner43. 它配備了ZF4可調瞄準鏡,是一種有效的狙擊步槍. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] ZF-41瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+    <string id="st_wpn_famas3"> <!-- NEW GUNS -->
+        <text>法瑪斯F3自動步槍</text>
+    </string>
+    <string id="st_wpn_famas3_descr">
+        <text>法瑪斯代表聖艾蒂安兵工廠生產的突擊步槍. 這種步槍的研製始於1967年,由法國武器設計師保羅·泰利負責. 這種新型步槍旨在取代老化的MAS-Mle.49/56半自動步槍、MAT-49衝鋒鎗和MAC-Mle.1929輕機槍. 第一個法瑪斯原型于1971年製造,法國軍方于1972年開始測試這種步槍,同時,法國採用了瑞士設計的SIG SG-540 5.56毫米突擊步槍作為折中方案. 法瑪斯于1978年被法國人採用,從此成為法國軍隊的標準制式步槍,在法國士兵中被戲稱為"小號". \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n \n</text>
+    </string>
+	
+	<string id="st_wpn_galil">
+		<text>加利爾標準型突擊步槍</text>
+	</string>
+	<string id="st_wpn_galil_descr">
+		<text>以色列軍事工業生產的加利爾自動步槍于1972年被以色列國防軍接受並裝備部隊加入現役,它是為在乾旱條件下作戰而設計的,是以蘇聯AK-47的前身芬蘭RK 62作為基礎. 加利爾自動步槍以其在作戰條件下的可靠性和易於維護而聞名. 它有一條5.56x45mm的膛線和一另一條7.62x51mm的膛線. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n
+		%c[d_purple] • %c[ui_gray_2] 加利爾4x瞄準鏡(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_galil_custom">
+		<text>加利爾標準型突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_galil_custom_descr">
+		<text>Formally accepted into service with the IDF in 1972, the IMI Galil is designed for operation in arid conditions and is based on the Finnish RK 62, which itself was derived from the Soviet AK-47. The Galil is noted for its reliability in combat conditions, and ease of maintenance. It has a line chambered for 5.56x45mm and one for 7.62x51mm.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Israel\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Israel Military Industries\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1972\n
+		</text>
+	</string>
+
+	<string id="st_wpn_galil_modern">
+		<text>加利爾標準型突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_galil_modern_descr">
+		<text>Formally accepted into service with the IDF in 1972, the IMI Galil is designed for operation in arid conditions and is based on the Finnish RK 62, which itself was derived from the Soviet AK-47. The Galil is noted for its reliability in combat conditions, and ease of maintenance. It has a line chambered for 5.56x45mm and one for 7.62x51mm.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Israel\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Israel Military Industries\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1972\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_gauss">
+		<text>高斯步槍(槍械整合包中特殊版武器)</text>
+	</string>
+	<string id="st_wpn_gauss_descr">
+		<text>一種高度實驗性的、人造動力的、超精確的武器,由該地區一個不知名的團體製造. 它的槍聲幾乎聽不見,因為它不用火藥,而是用電磁力將子彈加速到難以置信的速度. 儘管高斯步槍火力巨大,但後坐力微不足道. 這種槍的精確度和威力超過了所有其他輕武器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 增強型4x瞄準鏡(已整合)</text>
+	</string>
+	
+	<string id="st_wpn_glock">
+		<text>格洛克19手槍</text>
+	</string>
+	<string id="st_wpn_glock_descr">
+		<text>格洛克19是格洛克17的一個尺寸更小的版本,它的縮小使得格洛克19更容易被軍隊和警察隱藏和攜帶. 1988年,奧地利的格洛克股份有限公司首次推出了這種手槍. 與格洛克17相比,格洛克19保留了滑套的重量,以控制短後坐行程,同時縮短了握把和槍管. 格洛克19的許多部件可以與格洛克17互換,包括彈匣. 簡單來說,格洛克19是一個緊湊版的格洛克17. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_glock_custom">
+		<text>格洛克19手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_glock_custom_descr">
+		<text>The Glock 19 is a smaller version of the Glock 17. Its reduced size made the Glock 19 easier to conceal and carry by military and police forces. The pistol was debuted by Glock GbmH of Austria in 1988. When compared to the Glock 17, the Glock 19 retains the weight of its slide to keep the short recoil operation in check while at the same time shortening the grip and barrel. Many components of the Glock 19 were made interchangeable with the Glock 17, including the magazine.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Austria\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Glock Ges.m.b.H.\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1988\n
+		</text>
+	</string>
+
+	<string id="st_wpn_glock_modern">
+		<text>格洛克19手槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_glock_modern_descr">
+		<text>格洛克19是格洛克17的一個尺寸更小的版本,它的縮小使得格洛克19更容易被軍隊和警察隱藏和攜帶. 1988年,奧地利的格洛克股份有限公司首次推出了這種手槍. 與格洛克17相比,格洛克19保留了滑套的重量,以控制短後坐行程,同時縮短了握把和槍管. 格洛克19的許多部件可以與格洛克17互換,包括彈匣. 簡單來說,格洛克19是一個緊湊版的格洛克17. 這種型號有一個可選的自動射擊模式. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_hs2000">
+		<text>HS2000</text>
+	</string>
+	<string id="st_wpn_hs2000_descr">
+		<text>HS2000 是一種使用高分子聚合物框架的撞針擊發半自動手槍, 在克羅地亞的卡爾洛瓦茨製造; 這款手槍在歐洲是作為 HS 和 XDM 系列銷售, 而在美國是作為 Springfield Armoury XD 和 XD-M 系列銷售, HS2000 的起源可以追溯到一種名為 PHP 的軍用手槍, 儘管HS2000使用輕便的材料工藝, 但同時也十分堅固, 它的早期版本曾一直受到質量問題的困擾, 很大程度上是由於南斯拉夫戰爭期間的材料供應困難造成的, HS2000 現在被克羅地亞軍方和執法部門用作標準配發手槍\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]克羅地亞\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]HS Produkt\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1999\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_grach">
+		<text>MP-443烏鴉式手槍</text>
+	</string>
+	<string id="st_wpn_grach_descr">
+		<text>MP-443是俄軍一種試驗性質的短後坐行程鎖膛擊發手槍,代號為"格拉赫"(烏鴉). 這些試驗是從1993年發佈新軍用手槍的初步要求時開始的,有幾項設計提交了試驗,獲勝者是弗拉基米爾·亞里金在國家伊澤夫斯克機械廠設計的手槍. 這種手槍最初在軍隊驗證時被稱為6P35,或者是製造商的設計的MP-443"格拉赫",是通過由俄羅斯政府的軍事執法部門PYA指定的,並已通知給一些俄羅斯軍隊單位.</text>
+	</string>
+	
+	<string id="st_wpn_groza">
+		<text>OTs-14"閃電"全自動突擊步槍</text>
+	</string>
+	<string id="st_wpn_groza_descr">
+		<text>OTs-14"格羅扎"("閃電")模組化突擊步槍是在1990年代初由俄羅斯中央設計局開發研製的. 它原打算作為俄羅斯陸軍和內務部各特種部隊的專用城市作戰武器. OTs-14在1990年代中期在圖拉兵工廠小批量生產,1999年在車臣戰爭中投入使用,但不幸失寵之後就不再生產. 這種槍是犢牛式無托結構設計,有可拆下的前握把,可以換裝一個40毫米榴彈發射器. OTs-14-4A適用於特種部隊和專業前線作戰部隊,可根據任務的不同,利用其模組化的特性,組合成四種版本中的一種. 這個特異區版本則裝備了GP-25下掛榴彈發射器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PO 4x34瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_groza_nimble">
+		<text>OTs-14-1A"閃電-1"全自動突擊步槍</text>
+	</string>
+	<string id="st_wpn_groza_nimble_descr">
+		<text>作為OTs-14-4A的唯一改型,OTs-14-1A"Groza-1"的槍膛尺寸為7.62x39mm. 由於使用了這種更輕、更快的子彈,射速、平整度和彈匣容量都得到了提高. Groza-1只進行了小批量生產. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PO 4x34瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] GP-25下掛榴彈發射器 (已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_gsh18">
+		<text>Gsh-18半自動手槍</text>
+	</string>
+	<string id="st_wpn_gsh18_descr">
+		<text>GSh-18是圖拉KBP儀器設計局于20世紀90年代初開發的一款9x19mm半自動手槍. 手槍的名字來源於它的設計者-格里亞澤夫和希普諾夫,數字18表示彈匣的容量. GSh-18是一種槍管後坐式閉鎖後膛手槍. 這種武器有一個不尋常的凸輪旋轉槍管,有10個鎖緊凸耳. GSh-18是一款自由式槍機手槍,它有一個預設的扳機,當滑套在發射一槍向後反衝時,它會預先扳動手槍,然後將扳機向後扳,使射手的撞針完全翹起. 有了7N21和7N31穿甲彈,它可以在20米開外處穿透8毫米厚度的鋼板.</text>
+	</string>
+
+	<string id="st_wpn_gsh18_custom">
+		<text>Gsh-18半自動手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_gsh18_custom_descr">
+		<text>The GSh-18 is a 9x19mm semi-automatic pistol developed in the early 1990s at the KBP Instrument Design Bureau in Tula. The pistol's name is derived from its designers - Gryazev and Shipunow, and the number 18 denotes the magazine capacity. The GSh-18 is a recoil-operated, locked breech pistol. The weapon has an unusual cam-rotated barrel with 10 locking lugs. The GSh-18 is striker fired and features a preset trigger that pre-cocks the pistol when the slide recoils after firing a shot. The striker firing pin is then fully cocked by pulling the trigger back to the rear. With the 7N21 and 7N31 armour-piercing bullets, it can pierce 8mm of steel at 20 meters.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]KBP Instrument Design Bureau\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2000\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_hk416">
+		<text>HK416自動步槍</text>
+	</string>
+	<string id="st_wpn_hk416_descr">
+		<text>HK416是由赫克勒·科赫公司設計和製造的步槍,旨在改進M4的效能. 它現已成為完整的突擊步槍推出,或作為一個上機匣,可以適配任何AR-15型步槍的下機匣. 美軍三角洲部隊與德國武器製造商合作開發了這種新型步槍. HK416在2004年測試時發現,活塞操作系統大大減少了故障,同時提高了零件的使用壽命. 該專案最初被稱為HKM4,但因美國柯爾特防務公司提起的商標侵權訴訟而被更改. 目前,它只提供給政府和軍事組織,這就是為什麼這種突擊步槍通常由僱傭軍攜帶. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_hpsa">
+		<text>勃朗寧大威力自動手槍</text>
+	</string>
+	<string id="st_wpn_hpsa_descr">
+		<text>勃朗寧大威力自動手槍是一種單動式9毫米半自動手槍. 它是基於美國武器發明家約翰·布朗寧的想法,在1922年取得相關專利,後來專利權由FN赫斯塔爾獲得. 布朗寧于1926年去世,當時他還沒有完成最終成品的開發,但FN武器設計師迪尤頓•賽夫卻完成了它. 這款大威力手槍以其13發的彈匣容量而聞名,是魯格或毛瑟1910等同一時期設計的兩倍. 這種改進型的勃朗寧HP手槍,儘管年代久遠,卻在世界各地廣受歡迎. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_hpsa_alt">
+		<text>勃朗寧大威力自動手槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_hpsa_alt_descr">
+		<text>The Browning Hi-Power is a single-action, 9mm semi-automatic pistol. It is based on the ideas of American firearms inventor John Browning, created and patented in 1922 and later completed by FN Herstal. Browning died in 1926, before he had finished developing a production version, but FN arms designer Dieudonne Saive fully developed it. The Hi-Power pistol was noted for its 13 round magazine capacity, twice that of contemporary designs such as the Luger or Mauser 1910. This modified variant of the Browning HP pistol, despite its venerable age, enjoys popularity around the world.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Belgium, United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Browning Arms, FN Herstal\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1988\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_k98">
+		<text>毛瑟98K卡賓槍</text>
+	</string>
+	<string id="st_wpn_k98_descr">
+		<text>在第二次世界大戰期間,某些毛瑟98k步槍因其卓越的精度而被選中,並配備了ZF39瞄準鏡. 這些步槍被納粹德國用作狙擊步槍. 在技術精湛的射手手上,它們的有效射程可達1000米. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] ZF瞄準鏡系列\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器(實驗型)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_kiparis">
+		<text>OTs-02柏樹衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_kiparis_descr">
+		<text>OTs-02"柏樹"是一種衝鋒鎗,1972年根據蘇聯國防部的命令,由位於圖拉的中央運動和狩獵槍械設計局的武器設計師研製. 該槍總體佈局是基於捷克斯洛伐克蝎子Vz.61衝鋒鎗(1961年改型). OTs-02"柏樹"採用自由式槍機工作原理,機匣是由鋼板衝壓成形,彈匣在扳機護圈前插入,握把由工程塑料製成. 供彈方式方面,其採用直形盒式彈匣供彈,20發或30發容量,鋼製槍托可以摺疊到機匣頂部,托底板有橡膠緩衝墊. 爲了增加武器的穩定性,使用了一個摺疊的支架,在緊湊的位置摺疊在機匣的頂部. 在這個地區,這種武器並不少見,通常被那些買不起更好武器的土匪和獨行者們使用. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_l85a2">
+		<text>L85A2突擊步槍</text>
+	</string>
+	<string id="st_wpn_l85a2_descr">
+		<text>SA80系統的研製包括兩種武器——SA80 IW突擊步槍和SA80 LSW輕機槍,這始於上世紀60年代末,當時英軍決定研製一種新型步槍,以取代老化的7.62x51mm L1英制自動裝填式FN FAL. 作為英國武裝部隊的標準單兵武器,L85(最初的A1版本)有許多效能問題. 改進后的L85A2在各種操作場景和氣候條件下都非常可靠. 目前的L85A2步槍被認為是可靠和精確的,特別是當使用標準的SUSAT瞄準鏡時. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] SUSAT 4x瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_l85a2_alt">
+		<text>L85A2突擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_l85a2_alt_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. The improved L85A2 is extremely reliable over a range of climates for various operational scenarios. The current L85A2 rifles are recognized as reliable and accurate, especially when using standard issue SUSAT telescope sights.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_l85a2_custom">
+		<text>L85A2突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_l85a2_custom_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. The improved L85A2 is extremely reliable over a range of climates for various operational scenarios. The current L85A2 rifles are recognized as reliable and accurate, especially when using standard issue SUSAT telescope sights.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_l85a2_modern">
+		<text>L85A2突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_l85a2_modern_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. The improved L85A2 is extremely reliable over a range of climates for various operational scenarios. The current L85A2 rifles are recognized as reliable and accurate, especially when using standard issue SUSAT telescope sights.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_l85">
+		<text>L85A1突擊步槍</text>
+	</string>
+	<string id="st_wpn_l85_descr">
+		<text>SA80系統的研製包括兩種武器——SA80 IW突擊步槍和SA80 LSW輕機槍,這始於上世紀60年代末,當時英軍決定研製一種新型步槍,以取代老化的7.62x51mm L1英制自動裝填式FN FAL. 作為英國武裝部隊的標準單兵武器,L85(最初的A1版本)有許多效能問題. 改進后的L85A2在各種操作場景和氣候條件下都非常可靠. 目前的L85A2步槍被認為是可靠和精確的,特別是當使用標準的SUSAT瞄準鏡時. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] SUSAT瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_l85_alt">
+		<text>L85A1突擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_l85_alt_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle, to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. Though, reliability of this weapon was not a big problem, at least for the British Government, until the L85A1 saw actual combat during the Operation Desert Storm; these assault rifles performed really poorly in desert conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_l85_custom">
+		<text>L85A1突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_l85_custom_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle, to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. Though, reliability of this weapon was not a big problem, at least for the British Government, until the L85A1 saw actual combat during the Operation Desert Storm; these assault rifles performed really poorly in desert conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_l85_modern">
+		<text>L85A1突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_l85_modern_descr">
+		<text>The development of the SA80 system, which included two weapons - the SA80 IW assault rifle and SA80 LSW light machine gun, began in the late 1960s when the British Army decided to develop a new rifle, to replace the ageing 7.62x51mm L1 SLR British made FN FAL. The standard individual weapon for the British armed forces, the L85 (in its original A1 version) had numerous performance issues. Though, reliability of this weapon was not a big problem, at least for the British Government, until the L85A1 saw actual combat during the Operation Desert Storm; these assault rifles performed really poorly in desert conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United Kingdom\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]RSAF Enfield, Royal Ordnance, Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1985\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_l96a1">
+		<text>L96A1狙擊步槍</text>
+	</string>
+	<string id="st_wpn_l96a1_descr">
+		<text>精密國際L96A1(又稱：AW狙擊步槍 譯：Arctic Warfare—北極作戰)是英國國際精密儀器公司所設計和製造的一系列旋轉后拉式槍機式狙擊步槍構成的槍族. 自從1980年代問世至今,該槍有步兵型、警用型和"隱形PM"型三種型號,其步兵型于1986年開始裝備英國陸軍. L96A1狙擊步槍可以在嚴寒的天氣中作戰,即便槍中進水並結冰的情況下,經過短暫處理仍然可以使用. 該槍警用型的名字AWP狙擊步槍(Arctic warfare Police——北極作戰警察)也由此而來. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Leupold Mark 4瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_l96a1m">
+		<text>L96 AWSM狙擊步槍 </text>
+	</string>
+	<string id="st_wpn_l96a1m_descr">
+		<text>精密國際L96A1(又稱：AW 狙擊步槍 譯：Arctic Warfare—北極作戰)狙擊步槍是英國國際精密儀器公司所設計和製造的一系列旋轉后拉式槍機式狙擊步槍構成的槍族. 自從1980年代問世至今,該槍有步兵型、警用型和"隱形PM"型三種型號,其步兵型于1986年開始裝備英國陸軍. L96A1狙擊步槍可以在嚴寒的天氣中作戰,即便槍中進水並結冰的情況下,經過短暫處理仍然可以使用. 該槍警用型的名字AWP狙擊步槍(Arctic warfare Police——北極作戰警察)也由此而來. L96 AWSM可以使用.338 Lapua Magnum這種狙擊子彈. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Leupold Mark 4瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_lr300">
+		<text>LR-300ML突擊步槍</text>
+	</string>
+	<string id="st_wpn_lr300_descr">
+		<text>LR-300以AR-15為基礎,是一種適用於近距離作戰的優秀武器系統. 它的摺疊槍托使其成為理想的進攻性和快速反應武器,這就需要一個緊湊而強大的槍支結構. 由於出色的人機工程和重量較輕,這種武器的精度很高,但它很容易沾染污垢,艱苦的野外條件不是它理想的作戰環境. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_lr300_camo">
+		<text>LR-300ML突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_lr300_camo_descr">
+		<text>Based on the AR-15, the LR-300 is an excellent weapon system suitable for military use in close quarters battle. Its folding skeletal stock makes it ideal for aggressive and rapid building entries requiring a compact yet powerful selective fire weapon. Ergonomic and lightweight, this weapon is highly accurate but is sensitive to dirt and therefore, not ideal for tough field conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Z-M Weapons\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2000\n
+		</text>
+	</string>
+
+	<string id="st_wpn_lr300_custom">
+		<text>LR-300ML突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_lr300_custom_descr">
+		<text>Based on the AR-15, the LR-300 is an excellent weapon system suitable for military use in close quarters battle. Its folding skeletal stock makes it ideal for aggressive and rapid building entries requiring a compact yet powerful selective fire weapon. Ergonomic and lightweight, this weapon is highly accurate but is sensitive to dirt and therefore, not ideal for tough field conditions.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Z-M Weapons\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2000\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_m16">
+		<text>M16A4自動步槍</text>
+	</string>
+	<string id="st_wpn_m16_descr">
+		<text>M16是美軍對源自AR-15的步槍系列的命名並於柯爾特從20世紀60年代開始進一步開發. 包括M16/A1/A2/A3/A4在內的M16步槍家族自20世紀60年代以來一直是美軍的主要步兵用槍. 它的改型已經被15個北約國家使用,並且是在其同口徑武器中產量最多的. M16是一種輕型、5.56x45mm口徑、風冷、氣動、彈匣式突擊步槍,帶有旋轉槍栓和導氣式槍機. 該步槍由鋼、鋁和複合塑料製成. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m16a2">
+		<text>M16A2自動步槍</text>
+	</string>
+	<string id="st_wpn_m16a2_descr">
+		<text>M16A2步槍于20世紀80年代投入使用,其槍膛內發射標準北約子彈,即比利時設計的M855/M856子彈. M16A2是一款精挑細選的步槍,它融入了海軍陸戰隊所要求的設計元素：一個可調的、有風阻的後視鏡、較長的槍管、較重的槍管、為左撇子射擊所用的拋殼窗和圓柱形護手. M16A2由柯爾特和比利時FN武器公司製造,其步槍的各種改型在世界其他地方製造. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m24">
+		<text>M24"綠龍"狙擊手武器系統</text>
+	</string>
+	<string id="st_wpn_m24_descr">
+		<text>M24狙擊手武器系統(SWS)是美國陸軍基於雷明頓700的一種狙擊步槍. M24配備了一個Leupold 10x40mm的瞄準鏡,它有一個不鏽鋼槍管和一個由凱夫拉縴維和石墨製成的可調整的聚合物槍托. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] M24狙擊瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m249">
+		<text>M249班用輕機槍</text>
+	</string>
+	<string id="st_wpn_m249_descr">
+		<text>M249是一種彈鏈供彈的5.56x45mm輕機槍. 這是比利時FN Minimi輕機槍在美國的改進型號. 自1989年美國入侵巴拿馬以來,M249在涉及美國的每一次重大行動中都扮演了重要的角色. 士兵們普遍對這種武器的效能感到滿意,儘管有報道稱它易被泥土和沙子堵塞. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m4">
+		<text>M4A1 RAS卡賓槍</text>
+	</string>
+	<string id="st_wpn_m4_descr">
+		<text>M4卡賓槍源於一個可以追溯到M16步槍早期卡賓槍版本的槍族,所有這些都是基於ArmaLite公司製造的初版AR-15. 它是M16突擊步槍的一個更短更輕的版本,與其共用80%的零件. M4發射5.56x45mm北約彈藥,採用氣動、風冷、彈匣供彈、帶四方向伸縮槍托的多種射擊模式的武器. 與許多卡賓槍一樣,M4比標準長度的步槍更方便攜帶. 它已被美國特種作戰司令部(US SOCOM)採用,是美國陸軍特種部隊和海豹突擊隊的首選武器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m4a1">
+		<text>M4A1卡賓槍</text>
+	</string>
+	<string id="st_wpn_m4a1_descr">
+		<text>M4A1卡賓槍是M16A2突擊步槍的全自動改型,是CQC(近距離戰鬥)的理想選擇. 在軍事上,它已經基本上取代了衝鋒鎗發射的手槍子彈,這些子彈不足以對抗現代防彈衣. M4A1是M4卡賓槍的改進型,能夠自動或半自動射擊. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_m4a1_camo">
+		<text>M4A1卡賓槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_m4a1_camo_descr">
+		<text>The M4 Carbine descends from a family of firearms tracing its lineage back to earlier carbine versions of the M16, all based on the original AR-15 made by ArmaLite. It is a shorter and lighter version of the M16 assault rifle, sharing 80% of its parts. The M4 fires 5.56x45mm NATO ammunition and are gas operated, air cooled, magazine fed, selective fire firearms with a 4 position telescoping stock. As with many carbines, the M4 is handy and more convenient to carry than a full length rifle. It has been adopted by United States Special Operations Command (USSOCOM) and is the preferred weapon of the U.S. Army Special Forces and Navy SEALs.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt's Manufacturing Company, Many others\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_m4a1_custom">
+		<text>M4A1卡賓槍(定製版)</text>
+	</string>
+	<string id="st_wpn_m4a1_custom_descr">
+		<text>The M4 Carbine descends from a family of firearms tracing its lineage back to earlier carbine versions of the M16, all based on the original AR-15 made by ArmaLite. It is a shorter and lighter version of the M16 assault rifle, sharing 80% of its parts. The M4 fires 5.56x45mm NATO ammunition and are gas operated, air cooled, magazine fed, selective fire firearms with a 4 position telescoping stock. As with many carbines, the M4 is handy and more convenient to carry than a full length rifle. It has been adopted by United States Special Operations Command (USSOCOM) and is the preferred weapon of the U.S. Army Special Forces and Navy SEALs.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt's Manufacturing Company, Many others\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+
+	<string id="st_wpn_m4a1_freedom">
+		<text>M4A1卡賓槍(自由軍涂裝)</text>
+	</string>
+	<string id="st_wpn_m4a1_freedom_descr">
+		<text>The M4 Carbine descends from a family of firearms tracing its lineage back to earlier carbine versions of the M16, all based on the original AR-15 made by ArmaLite. It is a shorter and lighter version of the M16 assault rifle, sharing 80% of its parts. The M4 fires 5.56x45mm NATO ammunition and are gas operated, air cooled, magazine fed, selective fire firearms with a 4 position telescoping stock. As with many carbines, the M4 is handy and more convenient to carry than a full length rifle. It has been adopted by United States Special Operations Command (USSOCOM) and is the preferred weapon of the U.S. Army Special Forces and Navy SEALs.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]United States\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Colt's Manufacturing Company, Many others\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1991\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_m79">
+		<text>M79榴彈發射器</text>
+	</string>
+	<string id="st_wpn_m79_descr">
+		<text>M79榴彈發射器是一種單發、肩射、單發裝填的榴彈發射器,發射一枚40x46mm榴彈,它使用美軍所稱的高低推進系統來保持低後坐力. 最早出現在越南戰爭期間.</text>
+	</string>
+	
+	<string id="st_wpn_m98b">
+		<text>巴雷特M98B"Bravo"狙擊步槍</text>
+	</string>
+	<string id="st_wpn_m98b_descr">
+		<text>巴雷特M98B是一把發射.338拉普阿-馬格努姆彈的栓動狙擊步槍. 而不是一把改裝后的獵槍,巴雷特創造了M98B的原始設計. M98B的特點是一個舒適的可調槍托和貼腮板,一個更好的用來進行控制扳機的可調節扳機,槍托下方安裝有一個高度可調的單腳架,下機匣前方安裝有保持射擊穩定的兩腳架. 使用者可以進一步在導軌上自定義安裝步槍附加瞄準具,戰術燈和握把. M98B設計簡單,便於使用者拆卸和清理\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Leupold Mark 4瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] SR-25 suppressor(改裝后)</text>
+	</string>
+	
+	<string id="st_wpn_mosin">
+		<text>莫辛納甘狙擊步槍</text>
+	</string>
+	<string id="st_wpn_mosin_descr">
+		<text>M1891 是一款五發、栓動式、內建彈匣供彈的軍用步槍。 從 1882 年開發到 1891 年，它被俄羅斯帝國、蘇聯和其他國家的武裝部隊使用。 它是歷史上生產量最大的軍用栓動步槍之一，自 1891 年以來生產了超過 3700 萬支。儘管年代久遠，但至今仍被用於世界各地的各種衝突中。 儘管 Mosin 無法承受 AP 彈增加的槍管壓力，但這並沒有阻止配備 4.0x PE 或 3.5x PU 瞄準鏡的它在第二次世界大戰中作為狙擊步槍在時屢建奇功\n \n
+		%c[ui_gray_2]槍械配件: \n%c[d_purple]•%c[ui_gray_2] PU瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_mossberg590">
+		<text>莫斯伯格590A1泵動霰彈槍</text>
+	</string>
+	<string id="st_wpn_mossberg590_descr">
+		<text>莫斯伯格590(Mossberg Model 590)是莫斯伯格父子公司在1970年代中期針對美國要求而在莫斯伯格500的基礎上改進而成. 主要是加強了機匣和其他部件,金屬表面採用磷酸鹽處理. 在1987年590型開始裝備美國軍隊,美軍訂購的590型有些在槍管上安裝隔熱罩、刺刀卡筍和延長彈倉管,但有些則沒有安裝這些附件. 自1987年以來,這是美軍的標準制式霰彈槍,直到1999年才在美國陸軍中被伯奈利M1014半自動霰彈槍正式取代,不過,美國海軍和美國海軍陸戰隊仍在使用莫斯伯格590霰彈槍. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_mp133">
+		<text>MP-133泵動式霰彈槍(BaS)</text>
+	</string>
+	<string id="st_wpn_mp133_descr">
+		<text>MP-133是伊熱夫斯克機械廠的產品. 這種霰彈槍是早期IZh-81泵動式霰彈槍的一種改進版本,主要用於民用和安全市場. 它有兩個基本版本：帶管狀彈匣的標準MP-133和帶可拆卸盒式彈匣的MP-133K,兩個版本都可以有不同的槍管長度和樣式、木質或聚合物材質槍身、固定或側面摺疊聚合物槍托或手槍握把. MP-133散彈鎗採用傳統的泵動作工作原理,滑動前端有雙作用桿. 鎖定是通過傾斜鎖定件實現的,該鎖定件安裝在槍栓中,並在蓄電池中時與筒體延伸部分中的槽口接合. 進料來自管狀的下機匣,只可容納4發子彈,但可以通過安裝彈匣延長管可提高彈匣容量. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_mp153">
+		<text>MP-153半自動霰彈槍(BaS)</text>
+	</string>
+	<string id="st_wpn_mp153_descr">
+		<text>MP-153自動裝填霰彈槍是伊澤夫斯克機械廠設計製造的第一款半自動霰彈槍. 它與泵動式MP-133霰彈槍一起開發,並與前者共享許多零件和元件. MP-153是俄羅斯最流行的半自動霰彈槍之一,在俄羅斯被廣泛用於各種狩獵比賽. 它也作為外貿產品出口,在美國被稱為雷明頓"斯巴達"SPR-453自動裝彈機. MP-153霰彈槍以堅固而著稱,但從結構和可靠性上來說有些重. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_mp412">
+		<text>MP-412雷克斯手槍</text>
+	</string>
+	<string id="st_wpn_mp412_descr">
+		<text>MP412雷克斯是一款俄羅斯雙動式發射點357馬格南子彈的左輪手槍,它的獨特之處就在於中折式設計和自動退殼. 它是為出口而設計的(雷克斯,意為:左輪手槍出口),但由於缺乏市場,從未投入全面生產. 這種武器是由俄羅斯國有企業伊日霍夫斯克機械廠伊日馬赫設計的,該廠還設計和生產了馬卡羅夫PM半自動手槍.</text>
+	</string>
+	
+	<string id="st_wpn_mp5">
+		<text>MP5A3衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_mp5_descr">
+		<text>MP5衝鋒鎗是同類武器中最著名、分佈最廣的武器之一. MP5的緊湊性、準確性和可靠性使其成為全球眾多軍事、執法、情報和安全組織的寵兒. MP5A3配備了可伸縮的金屬支架. 毫不奇怪,在全球黑市氾濫之後,它最終進入了特異區. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_mp5_alt">
+		<text>MP5A3衝鋒鎗(實驗型)</text>
+	</string>
+	<string id="st_wpn_mp5_alt_descr">
+		<text>The MP5 is one of the most famous and widespread firearms of its class. The MP5's compactness, accuracy and reliability have made it a favourite of numerous military, law enforcement, intelligence and security organizations the world over. The MP5A3 is fitted with a retractable metal stock. Having flooded the global black markets, it eventually made its way to the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]West Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1970\n
+		</text>
+	</string>
+
+	<string id="st_wpn_mp5_custom">
+		<text>MP5A3衝鋒鎗(定製版)</text>
+	</string>
+	<string id="st_wpn_mp5_custom_descr">
+		<text>The MP5 is one of the most famous and widespread firearms of its class. The MP5's compactness, accuracy and reliability have made it a favourite of numerous military, law enforcement, intelligence and security organizations the world over. The MP5A3 is fitted with a retractable metal stock. Having flooded the global black markets, it eventually made its way to the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]West Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1970\n
+		</text>
+	</string>
+
+	<string id="st_wpn_mp5_nimble">
+		<text>MP5A3 "切割機"</text>
+	</string>
+	<string id="st_wpn_mp5_nimble_descr">
+		<text>又叫做弗雷澤, 源自法語fraiseur; 此槍基於優秀的HK-MP5A3型號為雛形, 得益於它更大的口徑, 更快的射速以及精確度, 這把槍成為新一代的近身作戰武器首選\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡, Barska ES ACOG瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(改裝后)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_mp5sd">
+		<text>MP5SD6微聲衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_mp5sd_descr">
+		<text>帶有一體整合式槍口抑制器的MP5改型. 在特異區這裡,僱傭兵更喜歡這種改型而不是普通的型號. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 特殊版MP5SD消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_mp5sd_custom">
+		<text>MP5SD6微聲衝鋒鎗(定製版)</text>
+	</string>
+	<string id="st_wpn_mp5sd_custom_descr">
+		<text>The MP5 is one of the most famous and widespread firearms of its class. The MP5's compactness, accuracy and reliability have made it a favourite of numerous military, law enforcement, intelligence and security organizations the world over. The MP5A3 is fitted with a retractable metal stock. Having flooded the global black markets, it eventually made its way to the Zone. The SD6 variant comes with an integrated suppressor. In the Zone, mercenaries prefer this variant to the normal one.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]West Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1974\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+
+	<string id="st_wpn_mp5sd_new">
+		<text>MP5SD6微聲衝鋒鎗(嶄新)</text>
+	</string>
+	<string id="st_wpn_mp5sd_new_descr">
+		<text>The MP5 is one of the most famous and widespread firearms of its class. The MP5's compactness, accuracy and reliability have made it a favourite of numerous military, law enforcement, intelligence and security organizations the world over. The MP5A3 is fitted with a retractable metal stock. Having flooded the global black markets, it eventually made its way to the Zone. The SD6 variant comes with an integrated suppressor. In the Zone, mercenaries prefer this variant to the normal one.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]West Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1974\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_oc33">
+		<text>OTs-33"箭羽錘"衝鋒手槍</text>
+	</string>
+	<string id="st_wpn_oc33_descr">
+		<text>OTs-33"Pernach"(俄語中的箭羽錘)是最近進入俄羅斯自動手槍隊伍里的一員. OTs-33是一種反衝後座式武器,以自動和半自動模式發射9x18mm馬卡洛夫手槍子彈. 該手槍是1995年開發的,用於取代特殊準軍事部隊的斯捷奇金手槍. 1995年由俄羅斯圖拉運動和狩獵武器中央設計局的伊戈爾·斯捷奇金設計,也是開發APS的設計師. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] APS消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_p90">
+		<text>FN P90衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_p90_descr">
+		<text>FN P90衝鋒鎗是20世紀80年代末開發的一種個人防衛武器,用於那些在主要行動中未裝備短小型武器的部隊,如車輛和坦克乘員、炮兵等. 標準手槍和衝鋒鎗被證明對穿防彈衣的敵人無效. FN的設計者開發了一種新的彈藥,最初被命名為SS90,以實現高穿透力,同時保持低後坐力. FN使子彈口徑更接近於小口徑,創造了一種看起來像是等比例縮小的北約制式5.56mm的彈藥. 其成果是1990年推出的FN P90個人防衛武器,以及改進的5.7x28mm SS190彈藥,用更重的雙核心、鋼和鋁取代聚合物芯子彈,以便更好地穿透防彈衣. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡, 巴斯卡ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 5.7x28mm可相容槍口抑制器</text>
+	</string>
+	
+	<string id="st_wpn_pb">
+		<text>PB消音手槍(BaS)</text>
+	</string>
+	<string id="st_wpn_pb_descr">
+		<text>PB手槍(Pistolet Besshumnyj或Silent Pistol)在蘇軍中也被稱為6P9,是1967年為蘇軍的特種部隊以及克格勃特工研製的. 手槍是基於一個改進型馬卡洛夫PM手槍和其功能獨特的兩種組合型抑制器. PB手槍(GRAU index 6P9)于1967年投入使用,是一款基於馬卡洛夫PM的蘇聯靜音手槍. 它是為克格勃和陸軍偵察小隊使用的. 抑制器的前部是可拆卸的,這樣手槍就可以分成兩部分,便於攜帶. PB手槍的一體整合式抑制器也降低子彈速度低於亞音速水平. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 6P9消音器(已整合)</text>
+	</string>
+
+	<string id="st_wpn_pb_custom">
+		<text>PB消音手槍(現代版) (BaS)</text>
+	</string>
+	<string id="st_wpn_pb_custom_descr">
+		<text>The PB (Pistolet Besshumnyj or Silent Pistol), also known in the Soviet army as the 6P9, was developed in 1967 for Spetsnaz units of the Soviet Army as well as for KGB operatives. The pistol is based on a modified Makarov PM pistol and features a unique integral two part suppressor. It was intended for use by the KGB and army reconnaissance groups. The PB's integral suppressor also reduces the bullet velocity to below subsonic levels.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN Herstal\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1967\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_pkm_zulus">
+		<text>祖魯使用的PKM機槍</text>
+	</string>
+	<string id="st_wpn_pkm_zulus_descr">
+		<text>這種武器以前是祖魯使用的. 它的特點包括一個擴容彈匣和一個特別可靠的彈殼回收機構設計. 改裝意味著武器重量的增加,但這對最後一個使用者來說不是問題. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-1S-03 眼鏡蛇反射式瞄準鏡(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_pkp">
+		<text>PKP"佩切涅格" 通用機槍</text>
+	</string>
+	<string id="st_wpn_pkp_descr">
+		<text>PKP"佩切涅格"是一挺俄羅斯輕型機關鎗,發射7.62x54mmR子彈. 這是一挺現代化的PKM機槍. 佩切涅格被認為比它所有的前輩都更精確,與PKM相比最主要的改進是使用了一根具有縱向散熱開槽表面並且以連固定提把的金屬襯套包覆的新型強制氣冷且不可迅速更換重型槍管,從而消除在槍管表面形成上升熱氣以及保持槍管冷卻,令其更精準和更可靠. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_pm">
+		<text>馬卡洛夫PM手槍(BaS)</text>
+	</string>
+	<string id="st_wpn_pm_descr">
+		<text>這把蘇聯遺留下來的手槍是特異區最普通的手槍,也是目前最好的小型自衛手槍之一. 它體積小,可靠性高,使用維護方便,工作狀態良好. 它也有一些缺點,包括射程短,射擊精度低,阻止能力差,同時也失去了現代手槍在其階段的重量和彈匣大小. 1951年,馬卡洛夫手槍被選中並開始在部隊中服役,因為它的簡單,易於製造,準確性和合理的停止力量.</text>
+	</string>
+
+	<string id="st_wpn_pm_custom">
+		<text>馬卡洛夫PM手槍定製版(BaS)</text>
+	</string>
+	<string id="st_wpn_pm_descr">
+		<text>這把蘇聯遺留下來的手槍是特異區最普通的手槍,也是目前最好的小型自衛手槍之一. 它體積小,可靠性高,使用維護方便,工作狀態良好. 它也有一些缺點,包括射程短,射擊精度低,阻止能力差,同時也失去了現代手槍在其階段的重量和彈匣大小. 1951年,馬卡洛夫手槍被選中並開始在部隊中服役,因為它的簡單,易於製造,準確性和合理的停止力量.</text>
+	</string>
+
+	<string id="st_wpn_pm_actor">
+		<text>馬卡洛夫PM手槍特殊型(BaS)</text>
+	</string>
+	<string id="st_wpn_pm_actor_descr">
+		<text>一根加長的槍管和安裝的抑制器的馬卡洛夫PM手槍成爲了一把傳奇手槍. 一些人聲稱這是該槍在保加利亞生產的一個有限的系列,其他人堅持DDR,有些人甚至傾向於認為這是一個手工升級. 它是如何在這個特異區走向終結,沒有一個活著的靈魂可以告訴你. \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 消音器: Silencer 9mm\n</text>
+	</string>
+	
+	<string id="st_wpn_pmm">
+		<text>馬卡洛夫PMM手槍(BaS)</text>
+	</string>
+	<string id="st_wpn_pmm_descr">
+		<text>這是馬卡洛夫手槍最廣為人知的一種改型,馬卡洛夫PMM是重新設計的原型槍. 1990年,一組工程師對原來的馬卡洛夫手槍進行了改造,主要是增加了彈匣容量. 結果是25%以上的火藥氣體壓力轉化成了槍口初速. PMM彈匣有12發子彈,而PM只有8發. \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 消音器: PMM消音器\n</text>
+	</string>
+	
+	<string id="st_wpn_pp2000">
+		<text>PP-2000衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_pp2000_descr">
+		<text>PP-2000是俄羅斯圖拉儀器設計局(KBP)的最新開發. 2004年首次向公眾展示,其佈局專利已於2001年申請,並於2003年發佈. PP-2000的定位是非步兵軍事人員的個人防禦武器,以及特種部隊和特種執法隊的近戰武器. 因此,它是一種緊湊型武器,零件少,可靠性高,維護簡單,成本低. 最適合近戰. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_ppsh41">
+		<text>波波沙衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_ppsh41_descr">
+		<text>PPSh-41是二戰期間蘇聯紅軍步兵的主要武器,是一種結實耐用的武器,由廉價易得的零件製成. 它們使用7.62x25mm子彈. \n \n</text>
+	</string>
+
+	<string id="st_wpn_ppsh41_new">
+		<text>波波沙衝鋒鎗(現代版)</text>
+	</string>
+	<string id="st_wpn_ppsh41_new_descr">
+		<text>The PPSh is a magazine-fed selective-fire submachine gun using an open bolt, blowback action. Made largely of stamped steel, it can be loaded with either a box or drum magazine and fires the 7.62x25mm Tokarev pistol round. The PPSh saw extensive combat use during World War II and the Korean War. It became one of the major infantry weapons of the Soviet Armed Forces during World War II, with about six million PPSh-41s manufactured in this period, making it the most-produced submachine gun of the war.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Numerous\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1941\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ppsh41_camo">
+		<text>波波沙衝鋒鎗(迷彩版)</text>
+	</string>
+	<string id="st_wpn_ppsh41_camo_descr">
+		<text>The PPSh is a magazine-fed selective-fire submachine gun using an open bolt, blowback action. Made largely of stamped steel, it can be loaded with either a box or drum magazine and fires the 7.62x25mm Tokarev pistol round. The PPSh saw extensive combat use during World War II and the Korean War. It became one of the major infantry weapons of the Soviet Armed Forces during World War II, with about six million PPSh-41s manufactured in this period, making it the most-produced submachine gun of the war.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Numerous\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1941\n
+		</text>
+	</string>
+
+	<string id="st_wpn_ppsh41_old">
+		<text>波波沙衝鋒鎗(舊版)</text>
+	</string>
+	<string id="st_wpn_ppsh41_old_descr">
+		<text>The PPSh is a magazine-fed selective-fire submachine gun using an open bolt, blowback action. Made largely of stamped steel, it can be loaded with either a box or drum magazine and fires the 7.62x25mm Tokarev pistol round. The PPSh saw extensive combat use during World War II and the Korean War. It became one of the major infantry weapons of the Soviet Armed Forces during World War II, with about six million PPSh-41s manufactured in this period, making it the most-produced submachine gun of the war.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Numerous\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1941\n
+		</text>
+	</string>
+
+	<string id="st_wpn_protecta">
+		<text>"保衛者"霰彈槍</text>
+	</string>
+	<string id="st_wpn_protecta_descr">
+		<text>獨特設計的"保衛者"霰彈槍是一種旋轉圓筒式12號口徑霰彈槍,用於防暴和戰鬥. 現在被俄羅斯的Saiga-12和美國的AA-12淘汰了,它是1980年代政府為進行種族隔離創造出來的革命性武器. 這種滑膛戰鬥左輪手槍式霰彈槍旨在為軍隊提供極端火力. 這種武器得益於大容量彈匣和高射速,但其體積龐大、重量也很驚人,再加上較長的裝填時間,是實現以上這些優點所要付出的代價. 在特異區很少見,主要用於在密閉空間的環境中清除變異怪物. .</text>
+	</string>
+
+	<string id="st_wpn_protecta_aim">
+		<text>"保衛者"霰彈槍(現代版)</text>
+	</string>
+	<string id="st_wpn_protecta_aim_descr">
+		<text>獨特設計的"保衛者"霰彈槍是一種旋轉圓筒式12號口徑霰彈槍,用於防暴和戰鬥. 現在被俄羅斯的Saiga-12和美國的AA-12淘汰了,它是1980年代政府為進行種族隔離創造出來的革命性武器. 這種滑膛戰鬥左輪手槍式霰彈槍旨在為軍隊提供極端火力. 這種武器得益於大容量彈匣和高射速,但其體積龐大、重量也很驚人,再加上較長的裝填時間,是實現以上這些優點所要付出的代價. 在特異區很少見,主要用於清除變異怪物的生存空間. 特別是這個改進型是高度現代化的,內部的細節是緊密吻合的,由於槍管具有更高的壓力,使得槍口動能大大增加. 在犧牲射速時,增加停止作用. 該型號具有瑞典公司生產的Aimpoint AB準直儀瞄準鏡. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2]"Aimpoint"瞄準鏡(已整合)</text>
+	</string>
+
+	<string id="st_wpn_protecta_camo">
+		<text>"保衛者"霰彈槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_protecta_camo_descr">
+		<text>The uniquely designed Armsel Protecta (also known as the Striker) is a rotating cylinder fed 12-gauge shotgun developed for riot control and combat. Antiquated now by the Russian Saiga-12 and the American AA-12, the Protecta was a revolutionary weapon created by the Apartheid government in the 1980s. This smoothbore combat revolver-type shotgun was intended to provide extreme firepower for militarized units. The weapon benefits from a large magazine and a high effective rate of fire but its bulkiness and considerable weight, combined with a long reload time, are the price to be paid for these advantages.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]South Africa\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Hilton R. Walker\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1981\n
+		</text>
+	</string>
+
+	<string id="st_wpn_protecta_custom">
+		<text>"保衛者"霰彈槍(定製版)</text>
+	</string>
+	<string id="st_wpn_protecta_custom_descr">
+		<text>The uniquely designed Armsel Protecta (also known as the Striker) is a rotating cylinder fed 12-gauge shotgun developed for riot control and combat. Antiquated now by the Russian Saiga-12 and the American AA-12, the Protecta was a revolutionary weapon created by the Apartheid government in the 1980s. This smoothbore combat revolver-type shotgun was intended to provide extreme firepower for militarized units. The weapon benefits from a large magazine and a high effective rate of fire but its bulkiness and considerable weight, combined with a long reload time, are the price to be paid for these advantages.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]South Africa\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Hilton R. Walker\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1981\n
+		</text>
+	</string>
+
+	<string id="st_wpn_protecta_nimble">
+		<text>"保衛者"霰彈槍(定製版)</text>
+	</string>
+	<string id="st_wpn_protecta_nimble_descr">
+		<text>獨特設計的"保衛者"霰彈槍是一種旋轉圓筒式12號口徑霰彈槍,用於防暴和戰鬥. 現在被俄羅斯的Saiga-12和美國的AA-12淘汰了,它是1980年代政府為進行種族隔離創造出來的革命性武器. 這種滑膛戰鬥左輪手槍式霰彈槍旨在為軍隊提供極端火力. 這種武器得益於大容量彈匣和高射速,但其體積龐大、重量也很驚人,再加上較長的裝填時間,是實現以上這些優點所要付出的代價. 在特異區很少見,主要用於清除變異怪物的生存空間. 根據某些訊息來源得知,這個型號曾經屬於坦克,但對他知之甚少.</text>
+	</string>
+
+	<string id="st_wpn_rg6">
+		<text>RG-6榴彈發射器</text>
+	</string>
+	<string id="st_wpn_rg6_descr">
+		<text>RG-6(官方命名是6G30)由位於圖拉的中央設計局于1993年至1994年間開發. 由於近期的小規模地區衝突,例如車臣戰爭,需要新的獨立、快速射擊的多發榴彈發射器來增加城市戰鬥中步兵的火力. RG-6在20世紀90年代中期進入限量生產階段,現在被俄羅斯陸軍和特種部隊以及MVD(內政部)的特種部隊使用. RG-6設計用於發射所有標準的40毫米無殼榴彈,可用於普通的下掛榴彈發射器,如GP-25和GP-30. 這些彈藥包括VOG-25破片手榴彈、VOG-25P彈跳破片手榴彈和用於防暴的"Gvozd"(釘子)非致命催淚瓦斯手榴彈,其轉輪鼓式彈匣也是前裝的. 廣泛用於快速壓制敵人的射擊陣地,並在開闊地攻擊防禦的固定目標或與特別強悍的變異怪物作戰.</text>
+	</string>
+	
+	<string id="st_wpn_rp">
+		<text>PKM通用機槍</text>
+	</string>
+	<string id="st_wpn_rp_descr">
+		<text>該槍配有木製槍托、鉸鏈式槍托底板和木製手槍握把. 槍托的後部裝有一個清潔工具,一根拆卸下來的清潔桿存放在兩腳架的右邊支架上. 是一種非常可靠的機槍. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_rpd">
+		<text>捷格加廖夫輕機槍</text>
+	</string>
+	<string id="st_wpn_rpd_descr">
+		<text>RPD(捷格加廖夫手持式機槍)是瓦西里·德格蒂亞廖夫在蘇聯為7.62x39mm M43子彈研製的一種輕型機槍.該槍採用導氣式工作原理. 閉鎖機構基本由DP輕機槍改進而成,屬中間零件型閉鎖卡鐵撐開式,藉助槍機框擊鐵的閉鎖斜面撞開閉鎖片實現閉鎖. 採用彈鏈供彈,供彈機構由大、小槓桿,撥彈滑板,撥彈機,阻彈板,脫彈片,定彈器,受彈器座等組成. 一次輸彈,一次進彈. 供彈較平穩,但零件較多,結構複雜. 彈鏈裝在彈鏈盒內,彈鏈盒掛在機槍的下方. 擊發機構屬平移擊錘式,機框復進到位時由擊鐵撞擊擊針. 發射機構只能進行連發射擊. </text>
+	</string>
+	
+	<string id="st_wpn_rpg7">
+		<text>RPG-7式40mm火箭筒(BaS)</text>
+	</string>
+	<string id="st_wpn_rpg7_descr">
+		<text>RPG的全稱就是Rocket Propelled Grenade(火箭助推榴彈發射器),簡稱RPG或者火箭筒. RPG-7是先前RPG-2反坦克榴彈發射器的進一步發展. RPG-7在其第一個版本中被稱為RPG-7V,已於1961年在蘇聯軍隊服役,目前這種武器仍然在俄羅斯及其他至少50多個國家裝備著. 到目前為止,RPG-7可以被認為是有史以來最成功的反坦克榴彈發射器之一. 這種武器源自於二戰德國的鐵拳無後坐力炮,在冷戰時期的蘇聯得到了巨大的發展,這是一個龐大的反坦克火箭筒家族,其中最傑出的代表就是RPG-7型火箭筒,自其問世以來,世界上有107個國家擁有和生產了數以百萬記的RPG-7火箭筒和它的改進型號. RPG-7通常配有2.7倍的固定放大光學瞄準具,命名為PGO-7. 它簡單且價格低廉,但對現代坦克具有很高的威脅,堪稱步兵手中的重武器和"遊擊神器"之一. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 瞄準鏡: PGO-7V瞄準具\n \n</text>
+	</string>
+
+	<string id="st_wpn_rpk">
+		<text>卡拉什尼科夫輕機槍</text>
+	</string>
+	<string id="st_wpn_rpk_descr">
+		<text>RPK是一種蘇聯輕型機槍,由米哈伊爾·卡拉什尼科夫1961年在卡拉什尼科夫衝鋒鎗的基礎上研發. 作為蘇聯紅軍軍械庫標準化工作的一部分,RPK取代了RPD,至今仍在使用. \n \n</text>
+	</string>
+
+	<string id="st_wpn_rpk74">
+		<text>RPK-74N機槍</text>
+	</string>
+	<string id="st_wpn_rpk74_descr">
+		<text>RPK(卡拉什尼科夫手持式機槍)是米哈伊爾·卡拉什尼科夫在20世紀50年代末研製的一種5.45x39mm輕型機槍. 它是紅軍小武器庫存標準化計劃的一部分,取代了7.62x39mm RPD輕機槍. 今天,前蘇聯國家和某些非洲和亞洲國家的武裝部隊還在繼續使用RPK. 波蘭軍隊在1974年裝備了這種武器,用於空降突擊、偵察和特種作戰部隊. RPK在保加利亞和羅馬尼亞也有生產許可證. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡 \n
+		%c[d_purple] • %c[ui_gray_2] TGP-A抑制器\n \n</text>
+	</string>
+
+	<string id="st_wpn_saiga12s">
+		<text>Saiga-12S半自動霰彈槍</text>
+	</string>
+	<string id="st_wpn_saiga12s_descr">
+		<text>Saiga-12是一種卡拉什尼科夫系列武器中的12號口徑戰鬥霰彈槍,由伊茨瑪希工廠製造. Saiga-12是公認的利用卡拉什尼科夫式的設計理念設計出來的武器,所有Saiga-12的型號的機匣右側都裝有可識別為卡拉什尼科夫樣式槍族的大型保險槓桿,可以裝在機匣左邊以安裝瞄準鏡的瞄準鏡導軌,和裝上機匣頂部以保護裝置於後方的反衝彈簧元件的大型防塵蓋. 它的殺傷力贏得了特異區內的敬畏,用於攻擊近程(50米或以下)或有限(狹窄)空間內的目標. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_scar">
+		<text>FN SCAR-H特種部隊用突擊步槍</text>
+	</string>
+	<string id="st_wpn_scar_descr">
+		<text>特種作戰部隊戰鬥突擊步槍(SCAR)是FN 赫斯塔爾為美國海豹突擊隊製造的模組化步槍,以滿足SCAR爲了在新式步槍競標中勝出的要求. 這種步槍由兩種型別組成,SCAR-H和SCAR-L. SCAR-H(重型)採用7.62x51mm北約制式彈藥. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+
+	<string id="st_wpn_scar_custom">
+		<text>FN SCAR-H特種部隊用突擊步槍(迷彩版)</text>
+	</string>
+	<string id="st_wpn_scar_custom_descr">
+		<text>The Special Operations Forces Combat Assault Rifle (SCAR) is a modular rifle made by FN Herstal for SOCOM to satisfy the requirements of the SCAR competition. This family of rifle consist of two types, the SCAR-H and SCAR-L. The SCAR-H (Heavy) is chambered in 7.62x51mm NATO cartridge.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN Herstal, FN America\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2004\n
+		</text>
+	</string>
+
+	<string id="st_wpn_scar_new">
+		<text>FN SCAR-H特種部隊用突擊步槍(嶄新)</text>
+	</string>
+	<string id="st_wpn_scar_new_descr">
+		<text>The Special Operations Forces Combat Assault Rifle (SCAR) is a modular rifle made by FN Herstal for SOCOM to satisfy the requirements of the SCAR competition. This family of rifle consist of two types, the SCAR-H and SCAR-L. The SCAR-H (Heavy) is chambered in 7.62x51mm NATO cartridge.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Belgium\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]FN Herstal, FN America\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2004\n
+		</text>
+	</string>
+
+	<string id="st_wpn_sig220">
+		<text>SIG P220手槍</text>
+	</string>
+	<string id="st_wpn_sig220_descr">
+		<text>SIG Sauer P220,由J.P.SAUER公司製造,經常被認為是最好的開箱即用型.45口徑雙動式手槍. P220獲得了立竿見影的成功,被瑞士和日本自衛隊以及許多歐洲警察組織作為制式用槍. 這種手槍也進入了美國,首先是通過猶他州的勃朗寧軍火公司,自1980年代以來,通過新罕布什爾州的SIGARMS公司走向全美國. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP消音器</text>
+	</string>
+
+	<string id="st_wpn_sig220_custom">
+		<text>SIG P220手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_sig220_custom_descr">
+		<text>The SIG-Sauer P220, manufactured in the late 1970s by J.P. Sauer &amp; Son Company, is often considered the best out of the box .45 caliber double action pistol. An instant success, the P220 was adopted by the Swiss and Japanese SDF and by many European police organizations. This pistol also found its way into the US, first through the Browning Arms Company of Utah and since the 1980s, through the SIGARMS Company of New Hampshire.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]西德, 斯威士蘭\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]西格紹爾\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1975\n
+		</text>
+	</string>
+
+	<string id="st_wpn_sig220_nimble">
+		<text>SIG P220 "阿爾卑斯"手槍</text>
+	</string>
+	<string id="st_wpn_sig220_nimble_descr">
+		<text>SIG Sauer P220手槍的特殊型號. 小規模限量版產品的一部分,為一個秘密特種部隊生產. 該型號得益於增加的彈匣容量,高耐用性鋼製槍管和超耐用的聚合物機匣. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP消音器</text>
+	</string>
+
+	<string id="st_wpn_sig550">
+		<text>SIG SG550突擊步槍</text>
+	</string>
+	<string id="st_wpn_sig550_descr">
+		<text>SG 550以其高質量和良好的效能而聞名,通常被稱為有史以來最好的5.56毫米步槍. 它有一個側面摺疊的槍托和一個輕量的可以摺疊在下機匣中的鋁製兩腳架. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+
+	<string id="st_wpn_sig550_camo">
+		<text>SIG SG550突擊步槍(魔改版)</text>
+	</string>
+	<string id="st_wpn_sig550_camo_descr">
+		<text>Renowned for its high production quality and good performance, the SG550 is often referred to as the finest 5.56mm rifle ever made. It has a side-folding skeletonized buttstock and a lightweight aluminium bipod that folds into grooves in the lower handguard.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Switzerland\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Swiss Arms AG\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1986\n
+		</text>
+	</string>
+
+	<string id="st_wpn_sig550_custom">
+		<text>SIG SG550突擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_sig550_custom_descr">
+		<text>Renowned for its high production quality and good performance, the SG550 is often referred to as the finest 5.56mm rifle ever made. It has a side-folding skeletonized buttstock and a lightweight aluminium bipod that folds into grooves in the lower handguard.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Switzerland\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Swiss Arms AG\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1986\n
+		</text>
+	</string>
+
+	<string id="st_wpn_sig550_sniper">
+		<text>SIG SG550-1狙擊步槍</text>
+	</string>
+	<string id="st_wpn_sig550_sniper_descr">
+		<text>作為一種瑞士製造的突擊步槍的精確射手步槍改型,sg550-S在狙擊步槍和突擊步槍之間形成了一個完美的中間地帶,保留了這兩種武器的優點. 另一方面,它也有一些缺點,如狙擊步槍的攔截能力和準確性有些不足,缺乏自動射擊模式. 不過,它仍然是特異區內最好的頂級武器系統之一. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] Kahles ZF95瞄準鏡(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_sig550_strelok">
+		<text>SIG SG550 "飛箭"</text>
+	</string>
+	<string id="st_wpn_sig550_strelok_descr">
+		<text>瑞士製造的SIG SG-550突擊步槍, 看上去並不是全新的, 不過它以前的主人把它保養得很好：武器的零件似乎都被拆下來微調過, 然後重新組裝增加了效能, 提高了操控感\n
+		仔細看的話, 槍托上好像刻有字母"S"和16個小刻痕\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] ELCAN SpecterDR, Acog, 巴斯卡AC10632紅點瞄準鏡, Cobra 8-18反射式瞄準鏡, Aimpoint PRO紅點瞄準鏡, 3-24x42 FFP前進牌戰術瞄準鏡, OKP-7反射式瞄準鏡, C-More紅點瞄準鏡, Aimpoint CompM4s紅點瞄準鏡, Eotech, Kemper反射式瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器</text>
+	</string>
+
+	<string id="st_wpn_sig552">
+		<text>SIG SG552突擊隊員型短突擊步槍</text>
+	</string>
+	<string id="st_wpn_sig552_descr">
+		<text>SG 552突擊隊員型短突擊步槍是為城市戰鬥而設計的,使其成為SIG著名的SG 550家族中結構最緊湊的成員,從而增強了其CQC(近距離戰鬥)能力. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_sks">
+		<text>SKS西蒙諾夫半自動步槍</text>
+	</string>
+	<string id="st_wpn_sks_descr">
+		<text>SKS半自動步槍是第一批為7.62x39毫米子彈配備彈倉的武器之一. 在20世紀50年代早期被蘇聯前線服役的AK-47所取代,它在二線部隊服役了幾十年,至今仍被用作禮賓用槍. \n \n
+		%c[ui_gray_2]槍械配件: \n%c[d_purple]•%c[ui_gray_2] PU瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_wpn_sks_modern">
+		<text>SKS西蒙諾夫半自動步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_sks_modern_descr">
+		<text>The SKS is one of the first weapons chambered for the 7.62x39mm round. Replaced in Soviet front-line service by the AK-47 in the early 1950s, it remained in second-line service for decades and is still used as a ceremonial arm today.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Swiss Arms AG\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1945\n
+		</text>
+	</string>
+
+	<string id="st_wpn_spas12">
+		<text>SPAS-12多功能霰彈槍</text>
+	</string>
+	<string id="st_wpn_spas12_descr">
+		<text>SPAS-12是一種雙動式霰彈槍,用於戰鬥和防暴任務. 它被世界各地的許多特種軍事和警察部隊使用. SPAS-12具有獨特的隔熱板和摺疊槍托,它是一款標誌性的武器. 值得注意的是它的可靠性和戰術靈活性. 儘管其重量較重、作用機制複雜、成本高,但由於其對變異怪物的有效性,在該領域仍有很大的需求. \n \n</text>
+	</string>
+
+	<string id="st_wpn_spas12_custom">
+		<text>SPAS-12多功能霰彈槍(定製版)</text>
+	</string>
+	<string id="st_wpn_spas12_custom_descr">
+		<text>The SPAS-12 is a dual-mode shotgun, designed for combat and anti-riot measures. It is employed by many special military and police units around the world. With its distinctive heat shield and folding stock, the SPAS-12 is an iconic firearm, notable for its reliability and tactical flexibility. Despite its heavy weight, complex mechanisms and considerable cost, it is in demand in the Zone due to its effectiveness against mutants.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Italy\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Franchi\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1979\n
+		</text>
+	</string>
+
+	<string id="st_wpn_spas12_nimble">
+		<text>SPAS-12多功能霰彈槍(現代版)</text>
+	</string>
+	<string id="st_wpn_spas12_nimble_descr">
+		<text>一種專門為突擊隊設計的陸軍霰彈槍,是在弗朗奇SPAS-12的基礎上發明的. 它能像它的前身一樣自動射擊,但由於平衡的無後座系統,它能提供更好的後坐力補償. . \n \n</text>
+	</string>
+
+	<string id="st_wpn_sr25">
+		<text>SR-25半自動步槍</text>
+	</string>
+	<string id="st_wpn_sr25_descr">
+		<text>SR-25斯通納步槍,代號25,是由騎士武器公司的所有者里德騎士和尤金斯通納推出的. SR-25是一種AR-15步槍,可按比例射出7.62x51mm北約或0.308彈藥. 步槍中60%的零件可以與AR-15部件互換. 這種步槍在需要精確的7.62x51mm或0.308口徑的半自動步槍來打獵或射擊目標的民間獵人中很暢銷. 這種步槍在美軍中也很受歡迎. 所有在SR-25平臺上製造的步槍都有相同的基本動作,AR-15/M16系統. 由於AR-15型後坐力緩衝是從機匣向後延伸,所以SR-25不能安裝摺疊槍托,而是安裝了伸縮槍托. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_sv98">
+		<text>SV98狙擊步槍</text>
+	</string>
+	<string id="st_wpn_sv98_descr">
+		<text>SV-98是俄羅斯的一種由弗拉基米爾·斯朗斯爾設計的插銷式狙擊步槍. 2003年,特種作戰部隊裝備了7.62毫米6S11狙擊系統,包括SV-98狙擊步槍(官方命名是6V10)和7N14狙擊增強穿甲彈. 這種步槍曾在車臣作戰時使用過. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PKS-07瞄準鏡(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_sv98_custom">
+		<text>SV98狙擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_sv98_custom_descr">
+		<text>The SV-98 (Snaiperskaya Vintovka Model 1998) is a Russian bolt action sniper rifle designed by Vladimir Stronskiy. It is based on the Record 300 m (328 yd) full bore sport shooting rifle series also made by Izhmash. The rifle has been used in combat during operations in Chechnya.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Izhmash, Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1998\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Optical sight\n
+		</text>
+	</string>
+
+	<string id="st_wpn_svd">
+		<text>德拉貢諾夫狙擊步槍</text>
+	</string>
+	<string id="st_wpn_svd_descr">
+		<text>德拉貢諾夫SVD狙擊步槍最初是為蘇聯每個基本步兵單位的特定射手設計的,並不是為專門的狙擊手隊伍設計的. 是一種相對輕型的狙擊步槍,良好的平衡和半自動射擊模式使其精度是不錯的,但並不是一種專業的狙擊步槍. 它的有效射程可達800米. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] KZRZP消音器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_svd_custom">
+		<text>德拉貢諾夫狙擊步槍(定製版)</text>
+	</string>
+	<string id="st_wpn_svd_custom_descr">
+		<text>Originally intended for designated marksmen in every basic Soviet infantry unit, the Dragunov SVD was not designed for specialized sniper teams. Relatively light for a sniper rifle but well-balanced and providing semi-automatic fire, its precision is good but not exceptional when compared to modern snipers. It has an effective range of up to 800 meters.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Kalashnikov Concern\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1963\n
+		</text>
+	</string>
+
+	<string id="st_wpn_svd_nimble">
+		<text>德拉貢諾夫狙擊步槍 "山貓"</text>
+	</string>
+	<string id="st_wpn_svd_nimble_descr">
+		<text>SVDM-2狙擊步槍的手工裝配版本, 具有改進的平直度增加機制, 在外觀上差別不大, 但整合了裝有目標智慧分析模組的Hyperson瞄具\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 1P59 "Hyperon"瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] KZRZP消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_svt40">
+		<text>SVT-40半自動步槍</text>
+	</string>
+	<string id="st_wpn_svt40_descr">
+		<text>SVT-40是一種產量過剩的半自動步槍,使用口徑為7.62x54mm的子彈. 二戰期間,它在紅軍和國防軍中被廣泛使用. \n \n
+		%c[ui_gray_2]槍械配件: \n%c[d_purple]•%c[ui_gray_2] PU特殊型號瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_wpn_svt40_modern">
+		<text>SVT-40半自動步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_svt40_modern_descr">
+		<text>The SVT-40 is a surplus semi-automatic rifle chambered in the 7.62x54mmR round. It saw widespread service during and after World War II. It was intended to be the Soviet Red Army's new service rifle but its production was disrupted by the German invasion in 1941, resulting in a change back to the Mosin•Nagant rifle for the duration of World War II. After the war, the Soviet Union adopted new rifles, such as the SKS and the AK-47.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]KBP Instrument Design Bureau\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1940\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_svu">
+		<text>OTs-03 SVU狙擊步槍</text>
+	</string>
+	<string id="st_wpn_svu_descr">
+		<text>OTs-03 SVU是一種罕見的SVD狙擊步槍的精簡版本,由空降步兵使用,但後來主要由俄羅斯內政部使用. 它和SVD的主要區別在於其緊湊的尺寸,從而提高了操控性,這要歸功於該槍的犢牛式無托設定和縮短的槍管,使它受到特異區潛行者的追捧. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_wpn_svu_alt">
+		<text>OTs-03 SVU狙擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_svu_alt_descr">
+		<text>The OTs-03 SVU is a rare, compact version of the SVD sniper rifle created for use by the airborne infantry but later employed mainly by the Russian Ministry of Internal Affairs. The main difference between it and the SVD is its compact size and thus improved handling, thanks to a bullpup configuration and shortened barrel. This makes it sought after by stalkers in the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Russia\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]KBP Instrument Design Bureau\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1994\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+
+	<string id="st_wpn_svu_nimble">
+		<text>OTs-03A SVU-A狙擊步槍</text>
+	</string>
+	<string id="st_wpn_svu_nimble_descr">
+		<text>SVU-A是SVU步槍的一個變種,能夠自動射擊,是根據俄羅斯內政部的要求設計的. 雖然這種武器一般不適合近戰情況,但自動射擊已經證明是暴露在外的神槍手的可靠應急解決方案. 這種特殊型號的SVU-A曾經屬於傳說中的自由衛士馬克斯. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_trg_sako">
+		<text>薩科TRG-42</text>
+	</string>
+	<string id="st_wpn_trg_descr">
+		<text>TRG-42不是普通步槍的狙擊改型,而是從一開始就作為狙擊步槍開發的. 一貫的高精確度和可靠性使其在遠端射擊和狙擊戰中廣受歡迎. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] FINDOT瞄準鏡(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_toz194">
+		<text>TOZ-194泵動式霰彈槍</text>
+	</string>
+	<string id="st_wpn_toz194_descr">
+		<text>TOZ-194是圖拉軍火廠生產的一種12號口徑泵動式霰彈槍. 這種武器是在蘇聯最後幾年設計的,在其解體后開始製造,從那時起,它在俄羅斯和歐洲的民間射手中獲得了一定程度的普及,據報道,一些俄羅斯安全部隊正在使用這種武器. \n \n</text>
+	</string>
+
+	<string id="st_wpn_toz34">
+		<text>TOZ-34雙管獵槍</text>
+	</string>
+	<string id="st_wpn_toz34_descr">
+		<text>不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效\n \n</text>
+	</string>
+
+	<string id="st_wpn_toz34_custom">
+		<text>TOZ-34雙管獵槍(定製版)</text>
+	</string>
+	<string id="st_wpn_toz34_custom_descr">
+		<text>TOZ-34不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]前蘇聯\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]圖拉軍工廠\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1964\n
+		</text>
+	</string>
+
+	<string id="st_wpn_toz34_decor">
+		<text>TOZ-34雙管獵槍(紋飾版)</text>
+	</string>
+	<string id="st_wpn_toz34_decor_descr">
+		<text>不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]前蘇聯\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]圖拉軍工廠\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1964\n
+		</text>
+	</string>
+
+	<string id="st_wpn_toz34_bull">
+		<text>TOZ-34"公牛"雙管獵槍</text>
+	</string>
+	<string id="st_wpn_toz34_bull_descr">
+		<text>TOZ-34的手工版,該修改使其發射特製的"牛"彈,一發可能能讓坦克都熄火. 改裝大部分圍繞著槍支強度展開,乍一看,它看起來就像是裝飾過的TOZ-34.但是當你仔細觀察時,你會發現該槍管是由一種獨特的金屬製成的,這和原裝貨可不同,並且槍托也由某種型別的碳纖維製成,並刻有字母"F".不知道是特異區里的誰製造的... \n \n%c[ui_gray_2]</text>
+	</string>
+
+	<string id="st_wpn_toz34_mark4">
+		<text>TOZ-34 "野牛"</text>
+	</string>
+	<string id="st_wpn_toz34_mark4_descr">
+		<text>這是一把手工改裝的TOZ-34,該修改使其只發射特製的"牛"彈,一發可能會讓一輛坦克熄火. 改裝大多與槍的強度有關,乍一看,它看起來只是一個魔改過的TOZ-34,但仔細一看,你會發現槍管是由一種獨特的金屬製成的,這和原裝貨可不同,並且槍托也是由某種型別的碳纖維製成的,上面刻著字母"F". 很難說這把槍是誰做的,怎麼會流入到特異區里來.... \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Leupold Mark 4瞄準鏡(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_toz34_obrez">
+		<text>TOZ-34獵槍(短槍管型)</text>
+	</string>
+	<string id="st_wpn_toz34_obrez_descr">
+		<text>不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效, 這把槍鋸短了大部分槍管和槍托, 使它更緊湊, 攜帶更方便, 在新手潛行者和土匪中很受歡迎, 因為很容易就可以把它藏在風衣里\n \n</text>
+	</string>
+
+	<string id="st_wpn_toz34_obrez_custom">
+		<text>TOZ-34獵槍(短槍管型,定製版)</text>
+	</string>
+	<string id="st_wpn_toz34_obrez_custom_descr">
+		<text>不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效, 這把槍鋸短了大部分槍管和槍托, 使它更緊湊, 攜帶更方便, 在新手潛行者和土匪中很受歡迎, 因為很容易就可以把它藏在風衣里\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]前蘇聯\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]圖拉軍工廠\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1964\n
+		</text>
+	</string>
+
+	<string id="st_wpn_toz34_obrez_decor">
+		<text>TOZ-34獵槍(短槍管型,魔改版)</text>
+	</string>
+	<string id="st_wpn_toz34_obrez_decor_descr">
+		<text>不管是在狩獵活動的業餘還是專業領域都很實用, 是一把立式霰彈槍, 價格適中, 因為能夠快速射出兩發子彈所以瞬間傷害輸出極高, 這使其成為特異區菜鳥手中的流行武器, 並且由於其準確性和停止能力, 對付變異怪物也特別有效, 這把槍鋸短了大部分槍管和槍托, 使它更緊湊, 攜帶更方便, 在新手潛行者和土匪中很受歡迎, 因為很容易就可以把它藏在風衣里\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]前蘇聯\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]圖拉軍工廠\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1964\n
+		</text>
+	</string>
+
+	<string id="st_wpn_tt33">
+		<text>TT-33半自動手槍</text>
+	</string>
+	<string id="wpn_tt33_descr">
+		<text>TT-33是俄羅斯一種7.62x25mm口徑手槍. 它是在1930年代早期由費多爾 瓦西列維奇 托卡列夫開發的一種警用手槍,用於蘇聯軍隊替換納干M1895左輪手槍. 許多共產主義或蘇聯集團國家對TT-33手槍進行了改進,直到1952年被9x18mm馬卡洛夫PM手槍所取代. 1954年蘇聯才停止生產TT-33.</text>
+	</string>
+
+	<string id="st_wpn_tt33_modern">
+		<text>TT-33半自動手槍(現代版)</text>
+	</string>
+	<string id="st_wpn_tt33_modern_descr">
+		<text>The TT-33 is a Russian 7.62x25mm pistol. It was developed in the early 1930s by Fedor Tokarev as a service pistol for the Soviet military to replace the Nagant M1895 revolver. Many communist or Soviet bloc countries made a variation of the TT-33 pistol until it was eventually replaced by the 9x18mm Makarov PM in 1952. Production of the TT-33 in the 前蘇聯 ended in 1954.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Tula Arms Plant\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1930\n
+		</text>
+	</string>
+
+	<string id="st_wpn_type63">
+		<text>國產63式自動步槍</text>
+	</string>
+	<string id="st_wpn_type63_descr">
+		<text>63型,通常被西方錯誤地稱為68型,是中國設計的與SKS相似的步槍. 然而,該武器使用的是AK-47步槍的旋轉槍栓工作系統,而不是SKS的斜拉式槍栓系統. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PU瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_ump45">
+		<text>UMP45衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_ump45_descr">
+		<text>和G36一樣,UMP45標誌著HK公司在武器設計理念上的轉變. UMP45的研製應用了G36的一些設計,不僅外形相似,而且操作規程也相同. UMP45的結構簡單,並大量採用非金屬材料,從而減輕了重量,降低了價格,但就保持了HK傳統的優良效能和質量. 與MP5相比,UMP45的採購價為850美元,而9mm的MP5則要高出300多美元,而MP5/10的價格更可以購買兩支UMP45.UMP45的自動方式不再是MP5傳統的半自由槍機式,而是採用自由式槍機,爲了保證射擊精度採用閉膛待擊. 另外,為便於連發時操槍和減小射彈散佈,還安裝了射速減速器,把射速限制在580發每分鐘,在發射高壓彈(+P彈)時,射速會提高到700發每分鐘. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] Gemtech消音器\n \n</text>
+	</string>
+
+	<string id="st_wpn_ump45_custom">
+		<text>UMP45衝鋒鎗(定製版)</text>
+	</string>
+	<string id="st_wpn_ump45_custom_descr">
+		<text>The UMP45 was developed by H&amp;K in the 1990s, first appearing on the market in 1999. The idea behind the UMP was to create a lightweight and powerful submachine gun that was also cheaper than the MP5. Providing greater stopping power than the MP5, the UMP45 also produces more recoil. The UMP45's cyclic rate of fire was lowered significantly to combat this problem.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]2000\n
+		</text>
+	</string>
+	
+	<string id="st_wpn_usas12">
+		<text>USAS-12全自動戰鬥霰彈槍</text>
+	</string>
+	<string id="st_wpn_usas12_descr">
+		<text>大概在1989年,美國吉爾伯特裝置有限公司決定在艾奇遜霰彈槍的基礎上研製一種新槍,雖然這家公司利用麥斯威爾·艾奇遜的設計圖完成了新槍的設計工作,但卻沒有生產能力,於是便到處尋找製造商,最後找上了韓國的武器生產商大宇精密工業公司(DAEWOO),並在1990年代初開始大規模生產. 該槍命名為USAS-12,意思是"12號口徑美國自動霰彈槍"(U.S. Automatic Shotgun 12). USAS-12採用導氣式操作原理,導氣系統位於槍管上方,槍機為迴轉式閉鎖原理,爲了降低後坐力,採用槍機長行程後坐,這樣也降低了全自動時的射速. 聚合物槍托是空心的,裡面是槍機組的後座空間使用,所以這種設計不能採用摺疊槍托. 大宇精密工業公司USAS-12(通用運動型12口逕自動霰彈槍)是大宇精密工業公司于20世紀80年代在韓國製造的一種用於作戰的自動霰彈槍. 潛行者們很想知道一把韓國槍是如何進入烏克蘭的. 也許我們還能找到一把K2步槍. \n \n</text>
+	</string>
+
+	<string id="st_wpn_usp">
+		<text>USP45手槍</text>
+	</string>
+	<string id="st_wpn_usp_descr">
+		<text>USP45最初是設計來參與烏克蘭安全域性OCOM的戰鬥手槍系統(Combat Pistol,簡稱CP,其前身為Joint Combat Pistol計劃,簡稱JCP)競標的. USP45和USP45C基本上是USP45和P2000的經驗合併,並借用了一些P30的改進要素. 所以USP45具有以上手槍的許多內部和外部特徵. 最明顯的外表變化是略向前傾斜的套筒前端,另外在底把的扳機護圈前方整合有皮卡汀尼導軌,USP45的握把前方帶有手指凹槽.此外,USP45戰術型和USP45CT還在槍管前預製有螺紋用於安裝消音器. 而在2011年,USP45CT被特種作戰司令部正式定型為Mk24,同時P226海軍型也被定型為Mk25. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] .45 ACP消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_usp_alt">
+		<text>USP45手槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_usp_alt_descr">
+		<text>Originally designed for the American market, the USP, Universal Self loading Pistol, is known as an accurate and reliable handgun. U.S. law enforcement and military provided much of the design criteria for the USP. The controls are uniquely American, influenced by famous designs like the Government Model 1911 pistol. Incorporating several successful handgun design elements, the USP Compact .45 is a part of the USP family of handguns designed by H&amp;K. Able to withstand extreme punishment and adverse conditions, it is used by many police and special forces units.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1993\n
+		</text>
+	</string>
+
+	<string id="st_wpn_usp_custom">
+		<text>USP45手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_usp_custom_descr">
+		<text>Originally designed for the American market, the USP, Universal Self loading Pistol, is known as an accurate and reliable handgun. U.S. law enforcement and military provided much of the design criteria for the USP. The controls are uniquely American, influenced by famous designs like the Government Model 1911 pistol. Incorporating several successful handgun design elements, the USP Compact .45 is a part of the USP family of handguns designed by H&amp;K. Able to withstand extreme punishment and adverse conditions, it is used by many police and special forces units.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Heckler &amp; Koch\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1993\n
+		</text>
+	</string>
+
+	<string id="st_wpn_usp_match">
+		<text>USP手槍競賽版</text>
+	</string>
+	<string id="st_wpn_usp_match_descr">
+		<text>HK修改過的USP手槍, 對競賽選手來說很有吸引力, 在MK23上首次出現O型槍口抑制器之後, USP競賽版也配備了該抑制器, 有助於降低.45毫米彈藥產生的後坐力, 槍管還具有多邊形膛線, 扳機護圈也很結實 \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_usp_nimble">
+		<text>USP手槍"進行曲"</text>
+	</string>
+	<string id="st_wpn_usp_nimble_descr">
+		<text>USP手槍的一種大口徑版本,零件緊湊,螺栓元件輕便.曾屬於一個叫做"獨狼"沃夫的傭兵.似乎是改良的USP緊湊型手槍. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] GemTech消音器(改裝后)</text>
+	</string>
+
+	<string id="st_wpn_val">
+		<text>AS Val突擊步槍</text>
+	</string>
+	<string id="st_wpn_val_descr">
+		<text>AS"Val"(中文意思是"巨浪")是由中央精密機械工程研究院(TSNIITochMash)的彼德羅·謝爾久科(P.Serdjukov)領導的研究小組在1980年代後期研製的,AS是Avtomat Spetsialnij的縮寫,即"特種突擊步槍".與另一種名為VSS的微聲狙擊步槍為同一系列的武器.AS與VSS都是以小型突擊步槍的槍機為基礎研製的,這兩種武器的主要區別是槍托和握把的不同,另外AS突擊步槍雖然也可以發射SP-6和PAB-9,但主要是發射便宜的SP-5普通彈.AS和VSS在1980年代後期開始裝備部隊,被俄羅斯的偵察部隊和特種部隊廣泛採用,但也有一些被車臣分離主義武裝使用.AS微聲突擊步槍採用導氣式工作原理,槍機迴轉閉鎖方式,該系統是改進自卡拉斯尼柯夫突擊步槍的動作機構,但槍機頭有6個閉鎖突筍.扳機組也是擊錘擊發,但與AK系列不一樣.保險機柄的外形是AK式樣的,但快慢機卻是一個位於扳機護圈內,在扳機後面的按鈕式開關.AS和VSS都採用相同的整體式雙室型消聲器,通過發射特製的亞音速重型彈頭,比起有效射程相當的微聲武器具有更低的噪音,但彈頭的終點效能更大.槍管上有一系列細小的泄氣孔,位於槍膛的陰線上.射擊時火藥燃氣通過泄氣孔進入第一個氣室內膨脹,第一個氣室內繞著一些金屬網,這些金屬網阻緩了火藥燃氣的膨脹速度,從而降低了壓力和溫度,然後燃氣再進入第二個氣室二次膨脹,因此聲音訊號大為減弱,只有在很近的距離才能聽得到.武器可以選擇單發或全自動發射而不會損壞消聲器,消聲器可以分解出來進行維護,此外由於安全和可靠性問題,在卸下消音器的情況下不應發射這隻步槍. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1 M2-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] VSS消音器(已整合)\n \n</text>
+	</string>
+	<string id="st_wpn_val_modern">
+		<text>AS Val突擊步槍(現代版)</text>
+	</string>
+	<string id="st_wpn_val_modern_descr">
+		<text>AS"Val"(中文意思是"巨浪")是由中央精密機械工程研究院(TSNIITochMash)的彼德羅·謝爾久科(P. Serdjukov)領導的研究小組在1980年代後期研製的,AS是Avtomat Spetsialnij的縮寫,即"特種突擊步槍".與另一種名為VSS的微聲狙擊步槍為同一系列的武器.AS與VSS都是以小型突擊步槍的槍機為基礎研製的,這兩種武器的主要區別是槍托和握把的不同,另外AS突擊步槍雖然也可以發射SP-6和PAB-9,但主要是發射便宜的SP-5普通彈.AS和VSS在1980年代後期開始裝備部隊,被俄羅斯的偵察部隊和特種部隊廣泛採用,但也有一些被車臣分離主義武裝使用.AS微聲突擊步槍採用導氣式工作原理,槍機迴轉閉鎖方式,該系統是改進自卡拉斯尼柯夫突擊步槍的動作機構,但槍機頭有6個閉鎖突筍.扳機組也是擊錘擊發,但與AK系列不一樣.保險機柄的外形是AK式樣的,但快慢機卻是一個位於扳機護圈內,在扳機後面的按鈕式開關.AS和VSS都採用相同的整體式雙室型消聲器,通過發射特製的亞音速重型彈頭,比起有效射程相當的微聲武器具有更低的噪音,但彈頭的終點效能更大.槍管上有一系列細小的泄氣孔,位於槍膛的陰線上.射擊時火藥燃氣通過泄氣孔進入第一個氣室內膨脹,第一個氣室內繞著一些金屬網,這些金屬網阻緩了火藥燃氣的膨脹速度,從而降低了壓力和溫度,然後燃氣再進入第二個氣室二次膨脹,因此聲音訊號大為減弱,只有在很近的距離才能聽得到.武器可以選擇單發或全自動發射而不會損壞消聲器,消聲器可以分解出來進行維護,此外由於安全和可靠性問題,在卸下消音器的情況下不應發射這隻步槍. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] VSS消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_vepr12">
+		<text>Vepr-12"重錘"霰彈槍</text>
+	</string>
+	<string id="st_wpn_vepr12_descr">
+		<text>Vepr-12霰彈槍相當於Saiga-12霰彈槍的"戰術改進型",不過卻是Molot工廠生產的,因此該槍現在是Saiga-12K的有力競爭者.Molot工廠以往生產RPK-74機槍和以Vepr為商標的各種民用半自動獵槍.而所有的"Vepr"步槍和霰彈槍均以RPK-74輕機槍的加強型槍機為基礎設計.Vepr-12霰彈槍採用與Saiga-12相同的導氣式操作的半自動霰彈槍,長行程導氣活塞位於槍管上方,迴轉式槍機是AK式的設計.與Saiga-12不同的是,Vepr-12的導氣系統沒有氣體調節器.該槍最大的特點是保險/快慢機柄有拇指操作的開關,而且左右兩側都有.而且該槍還有傳統AK系統所沒有的空倉掛機功能.另外彈匣座有擴大的彈匣插槽,方便快速插入彈匣,而且彈匣不會搖晃(現在Saiga-12也有同樣的彈匣插槽).在導氣箍、護木和機匣上有皮卡汀尼導軌,可方便地安裝戰術燈、瞄準鏡等輔助裝置.骨架形側摺疊槍托.帶有導軌的機匣上蓋在前端通過鉸鏈固定到機匣上,一般AK式的機匣蓋連線方式並不牢固,除了芬蘭AK外,很少在AK機匣蓋上加瞄準裝置的.Vepr-12在機匣蓋上設定皮卡汀尼導軌,也許是它的連線方式和一樣可靠,但也可能是考慮到霰彈槍不需要對遠距離目標進行準確射擊.至於標準的瞄準具是AK式的.Vepr-12霰彈槍使用專用的8發彈匣,也可以使用Saiga-12彈匣,但是Vepr-12的彈匣不能在Saiga-12上使用.Vepr-12霰彈槍有三種基本型號,標準型(430mm槍管,沒有消音器),Vepr 12 mod.01(520mm槍管,有消音器)和Vepr 12 mod.02(680mm槍管,有可更換的喉縮). \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vihr">
+		<text>SR-3M Vikhr小型突擊步槍</text>
+	</string>
+	<string id="st_wpn_vihr_descr">
+		<text>SR-3"Vikhr"("旋風")緊湊型突擊步槍是由俄羅斯圖拉武器廠在加拿大塔奇馬什開發製造的. SR3M Vikhr最初被稱為"MA"(Malogabaritnyj Avtomat-小型突擊步槍),它是在發射9x39mm彈藥的AS-Val消音突擊步槍的基礎上發展起來的,用於大人物所轄護衛隊和國家安全特工隱蔽攜帶,它是SR-3,AS-Val和VSS Vintorez三者品質結合的產物. SR-3M還有30發的更大容量的彈匣,在自動射擊時也能提供更可靠的持久火力. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1光學瞄準鏡,PSO-1 M2-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] SR-3M消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vintorez">
+		<text>VSS"尖刀"微聲狙擊步槍</text>
+	</string>
+	<string id="st_wpn_vintorez_descr">
+		<text>這種新型步槍由彼得·謝爾久科夫和他的團隊在茨尼托奇馬什設計,用於蘇聯軍隊、克格勃以及MVD等等各種特種部隊. VSS在其使用者當中是一種相當受歡迎的產品,得益於其殺人于無形的能力和9x39mm重型子彈巨大的殺傷力. VSS的有效射程被限制為300-400米. 標準瞄準具由機匣上的側向導軌組成,通常可容納PSO-1M2-1 4x 瞄準鏡. 任何其他瞄準鏡或夜視儀也可以安裝在這裡. 備用機械瞄準具包括後方的照門和前方的準星. 後方瞄具的表尺刻度最高是400米. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P瞄準鏡,PSO-1M2-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] VSS消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_vintorez_alt">
+		<text>VSS"尖刀"微聲狙擊步槍(實驗型)</text>
+	</string>
+	<string id="st_wpn_vintorez_alt_descr">
+		<text>The VSS Vintorez was intended for various Spetsnaz troops of the Soviet Army, KGB and MVD. The VSS is quite popular among its users for its stealthy capabilities and the great lethality of the heavy 9x39mm round. The effective range of the VSS is limited to 300-400 meters. Standard sighting equipment consists of a side rail on the receiver which usually accommodates the 4x PSO-1M2-01 scope. Any other scope or night vision sight can be mounted on the appropriate mount.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Soviet Union\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Tula Arms Plant\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1987\n \n
+		%c[0,255,255,255]INTEGRATED ATTACHEMENTS:\n
+		%c[d_blue] • %c[0,255,255,255]Suppressor\n
+		</text>
+	</string>
+
+	<string id="st_wpn_vintorez_1pn93">
+		<text>VSS Vintorez "1PN93"</text>
+	</string>
+	<string id="st_wpn_vintorez_1pn93_descr">
+		<text>這種新型步槍由彼得·謝爾久科夫和他的團隊在茨尼托奇馬什設計,用於蘇聯軍隊、克格勃以及MVD等等各種特種部隊. VSS在其使用者當中是一種相當受歡迎的產品,得益於其殺人于無形的能力和9x39mm重型子彈巨大的殺傷力. VSS的有效射程被限制為300-400米. 標準瞄準具由機匣上的側向導軌組成,通常可容納PSO-1M2-1 4x 瞄準鏡. 任何其他瞄準鏡或夜視儀也可以安裝在這裡. 備用機械瞄準具包括後方的照門和前方的準星. 後方瞄具的表尺刻度最高是400米. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 1PN93 "萬神之王"瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] VSS消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_vintorez_nimble">
+		<text>VSS"尖刀"微聲狙擊步槍"潮汐"</text>
+	</string>
+	<string id="st_wpn_vintorez_nimble_descr">
+		<text>著名的VSS狙擊步槍的特殊改型. 已進行了大幅度改造. 其內部結構已被更好的器件所取代,從而提高了出膛速度和命中精度. 有效射程達600米. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PSO-1瞄準鏡(已整合)\n
+		%c[d_purple] • %c[ui_gray_2] VSS消音器(已整合)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vityaz">
+		<text>PP-19-01"勇士"衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_vityaz_descr">
+		<text>PP-19的一個變種,附帶有30發9x19毫米子彈的彈鼓,2004年設計. 它是由巡邏隊,俄羅斯交警,俄羅斯安全警察,和MVD的單位使用. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,全息光學瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] PBS-1消音器\n \n</text>
+	</string>
+	
+	<string id="st_wpn_vsk94">
+		<text>VSK-94微聲狙擊步槍</text>
+	</string>
+	<string id="st_wpn_vsk94_descr">
+		<text>VSK-94是俄羅斯KBP儀器設計局開發的一種9x39毫米微聲狙擊步槍,是VSS步槍的低成本替代品. 該步槍是基於9A-91小型突擊步槍發展而成的狙擊步槍,被設計用於精確打擊射程達400米的非護甲目標. VSK-94在效能上並沒有比9A-91步槍有太大的改進,實際上這是在工廠裡手工挑選精度最好的9A-91步槍,用一個框架式聚合物固定槍托代替原來的摺疊槍托,再裝上一個PSO-1 4X瞄準鏡,並配備了可快速拆卸的消聲器,這樣就成了一種狙擊型號. 所以VSK-94和VSS一樣,都保留了9A-91和AS突擊步槍的射擊模式選擇功能. 當不安裝消聲器的時候,通常會裝上一個槍口帽以保護連線消聲器的槍口螺紋,其實就是一個圓形螺母. 當安裝消聲器的時候,槍口帽可以存放在空心的握把內. 如果不使用瞄準鏡,VSK-94上還保留有機械瞄具,但不是9A-91那種簡單的翻轉式表尺,而是一個十字形的旋轉式表尺(結構類似於我國的QBZ95步槍),射程裝定從100米至400米. 另外爲了方便攜帶或存放時節省空間,VSK-94的聚合物槍托和手槍形握把可以整體拆卸下來.由於價格便宜,所以VSK-94和9A-91一樣,在俄羅斯的執法機構中相當受歡迎,特別是從事打擊恐怖主義和有組織犯罪的OMON和SOBR等特警隊. 從2004年開始,VSK-94也已正式被俄羅斯軍隊採用,大多數裝備常規部隊,因為他們很少裝備特種部隊和偵察部隊所使用的更準確、但也更昂貴的VSS狙擊步槍. VSK-94在近距離內的精度也可以,雖然其精度遠達不到西方警察狙擊手的要求,發射SP-5彈時在300~400米內一般達到2-4MOA的表現,但在100~200米用於摸哨還是足夠的,如果需要遠端精確射擊,這些特警隊通常都裝備了更傳統的狙擊步槍發射更強的7.62x54R彈,如SVD或SV-98. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 眼鏡蛇瞄準鏡,1P29瞄準鏡,PSO-1M2-1瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] 9A-91/VSK-94消音器(已整合)\n \n</text>
+	</string>
+
+	<string id="st_wpn_vssk">
+		<text>VSSK"排氣"狙擊步槍</text>
+	</string>
+	<string id="st_wpn_vssk_descr">
+		<text>VSSK是一種俄羅斯截短槍管,直拉式槍栓的狙擊步槍,彈倉內可容納口徑為12.7x55mm的亞音速子彈. 這種武器的另一個名字叫維克洛普. 它是2002年為聯邦安全域性特種部隊開發的. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] PKS-07瞄準鏡(已整合)</text>
+	</string>
+
+	<string id="st_wpn_vz61">
+		<text>VZ61蝎式衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_vz61_descr">
+		<text>該槍1961年被捷克斯洛伐克軍隊採用時,最初發射的是.32 ACP子彈,而大規模生產的型號為VZ68的蝎式衝鋒鎗卻從來沒有代替過VZ61. 即便如此,該槍大量前期製作的VZ68型號的成品還是流入了特異區中. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器(改裝后)\n \n</text>
+	</string>
+
+	<string id="st_wpn_vz61_alt">
+		<text>VZ61蝎式衝鋒鎗(實驗型)</text>
+	</string>
+	<string id="st_wpn_vz61_alt_descr">
+		<text>Originally chambered for .32 ACP (vz.61), it was developed for use with security forces and was adopted by the Czechoslovak Army in 1961 as a personal sidearm for lower-ranking army staff, vehicle drivers, armoured vehicle personnel and special forces. Although mass production of the model vz.68 never took place, a large number of pre-production vz.68 models made their way into the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Czechoslovak Socialist Republic\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Ceska zbrojovka Uhersky Brod\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1959\n
+		</text>
+	</string>
+
+	<string id="st_wpn_vz61_camo">
+		<text>VZ61蝎式衝鋒鎗(迷彩版)</text>
+	</string>
+	<string id="st_wpn_vz61_camo_descr">
+		<text>Originally chambered for .32 ACP (vz.61), it was developed for use with security forces and was adopted by the Czechoslovak Army in 1961 as a personal sidearm for lower-ranking army staff, vehicle drivers, armoured vehicle personnel and special forces. Although mass production of the model vz.68 never took place, a large number of pre-production vz.68 models made their way into the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Czechoslovak Socialist Republic\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Ceska zbrojovka Uhersky Brod\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1959\n
+		</text>
+	</string>
+
+	<string id="st_wpn_vz61_freedom">
+		<text>VZ61蝎式衝鋒鎗(自由軍涂裝)</text>
+	</string>
+	<string id="st_wpn_vz61_freedom_descr">
+		<text>Originally chambered for .32 ACP (vz.61), it was developed for use with security forces and was adopted by the Czechoslovak Army in 1961 as a personal sidearm for lower-ranking army staff, vehicle drivers, armoured vehicle personnel and special forces. Although mass production of the model vz.68 never took place, a large number of pre-production vz.68 models made their way into the Zone.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Czechoslovak Socialist Republic\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Ceska zbrojovka Uhersky Brod\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1959\n
+		</text>
+	</string>
+
+	<string id="st_wpn_walther">
+		<text>瓦爾特P99半自動手槍</text>
+	</string>
+	<string id="st_wpn_walther_descr">
+		<text>人體工程學是其設計的重點,沃爾特P99是一個玻璃纖維聚合物框架槍身反衝後坐式手槍. 它是為執法部門和民用射擊市場開發的,被許多國家的警察部門使用. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器</text>
+	</string>
+
+	<string id="st_wpn_walther_custom">
+		<text>瓦爾特P99半自動手槍(定製版)</text>
+	</string>
+	<string id="st_wpn_walther_custom_descr">
+		<text>Ergonomics being a key focus in its design, the Walther P99 is a recoil-operated pistol with a fibreglass polymer frame. Developed for law enforcement and the civilian shooting market, it is employed by police units in a number of countries.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[0,255,255,255]原產地: %c[ui_gray_1]Germany\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]Carl Walther GmbH Sportwaffen\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1997\n
+		</text>
+	</string>
+
+	<string id="st_wpn_umirotvoritel">
+		<text>不明武器(BaS)</text>
+	</string>
+	<string id="st_wpn_umirotvoritel_descr">
+		<text>未知的武器,不清楚其發射原理. 武器似乎有故障,表現爲:扳機扣不動. 它非常重,絕對是一種高科技武器. 值得注意的是,它似乎不是以火藥氣體為動力的武器. 彈藥很可能是電磁推動的. 人們只能猜測它具有什麼樣的破壞力.</text>
+	</string>
+	
+	<!-- New -->
+	<string id="st_wpn_ash12">
+		<text>ASh-12.7毫米自動步槍</text>
+	</string>
+	<string id="st_wpn_ash12_descr">
+		<text>ASh-12.7毫米自動步槍是一種專用的城市環境下的CQB巷戰武器,是由俄羅斯圖拉KBP儀器設計局的子公司TsKIB SOO("運動和狩獵武器中央設計研究局")應俄羅斯聯邦安全域性(FSB)的要求開發的. 這種武器的設計考慮到了極短射程下的攔截能力,因為它是為在城市環境中打擊全副武裝、有組織的歹徒和恐怖分子的FSB特種部隊設計的,這些歹徒和恐怖分子需要一槍打死. 據俄羅斯媒體報道,第一批ASh-12.7突擊步槍已交付FSB. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_aug_a3">
+		<text>斯太爾AUG-A3突擊步槍</text>
+	</string>
+	<string id="st_wpn_aug_a3_descr">
+		<text>斯太爾AUG(德語Armee Universal Gewehr的縮寫,即陸軍通用步槍)是奧地利5.56x45mm北約犢牛式突擊步槍,由斯太爾戴姆勒公司于20世紀60年代設計,現在由斯太爾曼利徹股份有限公司製造. 斯太爾AUG-A3不同於基礎版的是在四個皮卡丁尼板條的存在:頂部的一個是用來安裝瞄準鏡,一個下掛榴彈發射器或者可以在底部安裝一個垂直的前握把,在側面安裝一個鐳射指示器或其他必要的附加裝置. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_mk14">
+		<text>Mk14 EBR增強型精確射手步槍</text>
+	</string>
+	<string id="st_wpn_mk14_descr">
+		<text>美國海軍的Mark 14 Mod 0增強型戰鬥步槍(Enhanced Battle Rifle - EBR)是M14步槍的變型槍,最初是由美國海軍特種作戰司令部根據海豹突擊隊的要求,在2000年向槍械廠商招標設計的一種用於CQB的戰鬥步槍,之所以考慮用M14,一方面是因為7.62 NATO的侵徹能力在城市戰中對付車輛、普通墻壁等掩體非常有效,另一方面是因為M14的效能久經考驗,海豹多年來一直使用M14,他們甚至把M14改成扳疊式槍托以方便在狹窄環境中使用. 經過試驗后,他們採用了塞奇國際有限公司的方案. 除了塞奇公司和史密斯企業公司外,有其他廠商也曾向NSWC提供過他們的Mk14方案,例如專門為美軍提供精密槍管的洛克槍管公司(Rock Creek Barrels,Inc.)就在2001年提出了由他們的工程師吉米·里波迪(Jim Ribordy)所設計的樣槍,這個設計後來被特洛伊工業生產,最初命名為SOPMOD M14,但沒有被採用.雖然外形不同,但這個洛克·里波迪方案與塞奇·史密斯方案相比有一個共同點,都是採用伸縮式的槍托、帶皮卡汀尼導軌的鋁合金底盤系統. 現在民用市場上都有由塞奇公司或史密斯企業所生產的EBR出售,買家可以買回來自己改裝,或購買已經改裝好的完整槍支,當然,那些完整槍支多數是用春田M1A(當然也有其他公司的M14)改裝的. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_fal">
+		<text>FN FAL自動步槍</text>
+	</string>
+	<string id="st_wpn_fal_descr">
+		<text>FN FAL是由FN在比利時生產的北約槍支. 世界上最知名和最受歡迎的自動步槍之一. FN FAL最初是為第二次世界大戰期間德國人使用的7.92x33毫米中間威力彈開發的,隨後又出現了.280英國子彈的原型. 後來,它採用了7.62×51毫米北約子彈,並被北約國家大量裝備. 在冷戰期間,它獲得了"自由之拳"的綽號. FAL採用活塞短行程導氣系統,導氣裝置在槍管上方,其結構類似於美國的勃朗寧自動步槍. 活塞筒的前端置於導氣箍內,和氣體調節器相連線. 氣體調節器通過改變排出氣量的多少來控制作用於活塞頭上氣體能量,射手根據不同氣候環境或槍的污染狀況來調整合適的氣量,也可關閉導氣孔以便發射槍榴彈\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+
+	<string id="st_wpn_fort500">
+		<text>Fort-500霰彈槍</text>
+	</string>
+	<string id="st_wpn_fort500_descr">
+		<text>Fort 500散彈鎗是由烏克蘭內政部的Fort NGO在1990年代後期開發的,旨在武裝烏克蘭內政部和安全部門的工作人員. 目前,少量的FORT-500步槍已在烏克蘭內務部的特殊部隊服役,並以狩獵的名義出售給該國公民. \n \n</text>
+	</string>
+
+	<string id="st_wpn_m82">
+		<text>巴雷特M82狙擊步槍</text>
+	</string>
+	<string id="st_wpn_m82_descr">
+		<text>朗尼·巴雷特在1982年設計了一支半自動的.50BMG口徑步槍,因此命名為M82,並開始在民用市場上銷售. 後來又在1986年改進出M82A1步槍. 雖然精度不高,但效能可靠價格便宜,而且在.50口徑半自動步槍的市場營銷上也佔了先機,因此巴雷特M82A1成為當今使用最廣泛的大口徑狙擊步槍(反器材步槍)之一,幾乎佔領了.50狙擊步槍市場的統治地位. 目前至少已裝備英國、法國、比利時、意大利、丹麥、芬蘭、希臘、意大利、墨西哥、葡萄牙、荷蘭、沙特阿拉伯、瑞典、西班牙、土耳其等30多個國家的軍隊或警察部隊.M82A1半自動狙擊步槍採用槍管短後坐原理,半自動發射方式. 槍管短後座原理是著名槍械設計師勃朗寧開發的,而巴雷特將這種原理改進使之適合作為肩射武器的自動原理. 巴雷特M82A1的後坐力很小,這是因為一部分後坐能量作用於槍管、槍機和槍機框的向後運動及壓縮復進簧,另外,槍本身也吸收了部分後坐能量,但最主要還是其高效的槍口制退器減少了大部分的後坐力,這就保證了射擊時的舒適性及射擊精度. 槍托底部還有一個特種橡膠後座墊,據說後坐感覺比12號口徑的霰彈槍要好,而後坐力明顯比7.62毫米口徑的步槍要小. 不過這個高效制退器有個缺點,就是每發射一發槍彈時從制退器噴出的火藥氣體都會在射手附近捲起大量塵土和鬆散顆粒. \n \n</text>
+	</string>
+
+	<string id="st_wpn_remington700">
+		<text>雷明頓700步槍(BaS)</text>
+	</string>
+	<string id="st_wpn_remington700_descr">
+		<text>雷明頓700型步槍是雷明頓武器公司自1962年以來生產的一系列栓動型中間威力步槍. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 底盤：M700 MOD X Gen.3槍托,Magpul PRO 700,Promag Archangel公司生產的用於雷明頓M700的聚合物槍托. \n
+		%c[d_purple] • %c[ui_gray_2] 丹尼爾防禦公司產"Wave"QD消音器 \n \n</text>
+	</string>
+	
+	<string id="st_wpn_remington870">
+		<text>雷明頓870霰彈槍</text>
+	</string>
+	<string id="st_wpn_remington870_descr">
+		<text>雷明頓870型霰彈槍的出現,一定程度上是由於溫徹斯特12型和伊薩卡37型霰彈槍等競爭對手的市場壓力所致. 伊薩卡37最初是把20號口徑的雷明頓17型放大成12號口徑而成,而雷明頓公司也把雷明頓17型重新設計成12號口徑的雷明頓31型. 但31型比同時代的溫徹斯特12型的訂單要低. 而二戰結束后,伊薩卡37也在泵動霰彈槍市場搶佔了不少份額. 爲了奪回市場,雷明頓公司重新設計了一種霰彈槍,並在1950年推出. 這種霰彈槍最初命名為雷明頓870型,稱為"翼主"(Wingmaster).雷明頓870是一種手動裝填的霰彈槍,通過推拉泵動手柄(前托)進行拋殼、供彈. 槍機為卡鐵擺動式閉鎖,通過閉鎖卡鐵進入槍管後上方的延長段的閉鎖槽中閉鎖,內建式擊錘擊發. 裝填彈藥是通過機匣底部的裝彈口裝入,裝彈口平時被托彈片擋住. 向彈倉裝彈時,向上頂開托彈片,將霰彈裝入彈倉中. 向後拉動槍機時,彈倉中的最後一發彈向後進入托彈片中並被托彈片上抬至進彈位置,再向前推動槍機時再將槍彈推進彈膛中. 而彈殼從機匣右側的拋殼口排出. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_wa2000">
+		<text>瓦爾特WA2000狙擊步槍</text>
+	</string>
+	<string id="st_wpn_wa2000_descr">
+		<text>瓦爾特WA2000狙擊步槍由卡爾·瓦爾特公司在1970年代末至1980年代初研製,首次亮相是在1982年,其後被德國和幾個歐洲國家的一些特警單位所少量採用. 在當時,許多高精度狙擊步槍的設計往往都是以一些運動步槍或獵槍為基礎改進而成的,但WA2000與衆不同,該槍是完全以軍/警狙擊手為唯一目標使用者所作的全新設計. 該槍設計優異,射擊精度極高. 由於WA2000在生產過程中完全以質量和精度為首要目標,不計製造成本,結果導致售價昂貴,乏人問津,結果產量和銷售量都相當有限. 據估計,大約只生產了176支WA2000步槍,在1988年11月就已經停止生產. 在1988年的時候,每枝WA2000售價大約9000至12500美元,還不含瞄準鏡. WA2000採用無托結構,槍管長有650毫米,但全槍長度卻只有905毫米,不足一米,相當緊湊. 而美軍的M24槍管才610毫米,全槍長卻有1092mm.WA2000設計時的彈膛是以. 300溫徹斯特-馬格南口徑為基礎,有效射程遠遠超出了800米,其他的可選口徑有7.62×51mm北約標準口徑和7.5×55mm瑞士口徑. WA2000是一種半自動步槍,採用導氣式迴轉槍機,短行程導氣活塞位於槍管下方. 機頭有7個螺紋形的閉鎖凸耳,機頭進入彈膛尾部閉鎖. 沉重的比賽級槍管為自由浮置式,螺接在機匣上,位於兩根鋁合金支柱構成的步槍框架之間,在步槍框架下面有木製前托,框架上面有瞄準鏡架和兩腳架安裝點. 槍托的托底板長度和高度可以微調,長度調節範圍25毫米,高低調節範圍30mm. 但貼腮板高度不可調. 扳機力也可在1.2-1.4kg(2.65~3.1lb)之間進行調節,雖然是無托結構,但扳機力相當輕. 整個發射機構可作為一個獨立部件從框架上拆除,方便野戰維護. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] KZRZP消音器(改裝后)\n \n</text>
+	</string>
+	
+	<string id="st_wpn_apb">
+		<text>APB消音手槍</text>
+	</string>
+	<string id="st_wpn_apb_descr">
+		<text>APB(自動消聲手槍)是斯捷奇金APS自動手槍的衍生型號. 該槍于1972年為蘇聯特種部隊和克格勃部隊開發,並在阿富汗和後來的衝突中廣泛使用. 所有APB手槍都是從早期的斯捷奇金APS手槍改裝而來. APB裝有消音器,聲音和非消音的.22口徑手槍一樣大,而且非常精確和可控,特別是裝有肩托的情況下. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_cz52">
+		<text>CZ 52半自動手槍</text>
+	</string>
+	<string id="st_wpn_cz52_descr">
+		<text>CZ52是一種半自動手槍,由簡·克拉托奇維爾和雅羅斯拉夫·克拉托奇維爾兩兄弟設計,1950年代初為捷克斯洛伐克軍隊採用. 約20萬支CZ52由切斯卡·茲布羅約夫卡在1952年至1954年在斯特拉科尼采製造. 在將7.62×25毫米口徑的版本標準化之前. 捷克斯洛伐克軍隊在三種不同口徑中採用了多個改型. \n \n</text>
+	</string>
+
+	<string id="st_wpn_fnc">
+		<text>FN FNC自動步槍</text>
+	</string>
+	<string id="st_wpn_fnc_descr">
+		<text>FNC(Fabrique Nationale Carabine,即：國家卡賓槍製造廠)是比利時軍火製造商FN·赫斯塔爾在20世紀70年代末推出的一種5.56x45mm北約突擊步槍.這把槍的正式名稱是FNC76,參加了1976年的"北約下一代步槍選型試驗". FNC76的外形和CAL基本相同,主要不同點是FNC76的衝壓鋼機匣的結構簡化,而且用兩個對稱的閉鎖凸筍代替CAL槍機上的兩排閉鎖斷隔螺,實際上FNC的長行程導氣活塞和雙閉鎖凸筍槍機是直接參照了AK系統的設計. 另外,FNC使用比利時研製的SS109彈. 由於SS109彈採用鉛/鋼複合式彈芯,彈頭重也加大至4.02克,因此遠距離效能大為改善. 在這次改進中FN公司的設計師重視了操作簡單和效能可靠,但由於FNC樣槍在選型試驗中出現了槍機突筍裂縫等故障,最終還是退出了競爭行列. FNC的槍管用高級優質鋼製成,內膛精鍛成型,故強度、硬度、韌性較好,耐蝕抗磨. 槍管前部有一個直徑22mm的圓筒形消音器兼槍榴彈發射器.導氣箍裝在槍管上方,提高了武器重心,使之與槍管軸線重合,消除射擊時槍管上跳現象. 發射槍榴彈時,可作槍榴彈瞄準具用的氣塞架摺疊在準星上方,截斷進入活塞筒的氣流,以保證火藥氣體壓力全部作用於槍榴彈的尾部.槍口部有刺刀座安裝美國的M7刺刀,但FNC也是專門配的刺刀\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n \n
+		</text>
+	</string>
+	
+	<string id="st_wpn_hk417">
+		<text>HK417自動步槍</text>
+	</string>
+	<string id="st_wpn_hk417_descr">
+		<text>HK417是德國赫克勒·科赫公司設計和製造的一款戰鬥用突擊步槍. 這是更大口徑版本的HK416,彈倉內可以容納全威力7.62x51mm北約步槍子彈. 它是一種帶有旋轉槍栓的導氣式可調射擊模式的步槍. HK417適用於需要7.62x51mm子彈更大穿透力、停止力和射程的場合. 它已被一些武裝部隊、特種部隊和警察組織所採用為制式槍械. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_m60">
+		<text>M60通用機槍</text>
+	</string>
+	<string id="st_wpn_m60_descr">
+		<text>M60系列有多個型號,主要有M60、M60D、M60E3等等,時移世易,現在M60在許多方面都已經顯得落後了,儘管有新的改進型出來,但由於一些固定的缺點難以改進,因此美軍裝備的M60系列正逐步被M240系列(FN MAG58)所取代. 但在美軍特種部隊和直升機上,M60系列仍作為輕機槍或航空機槍而使用. M60的機匣、供彈機蓋等大多數部件採用衝壓件,重量輕且成本低,整體重量比起0.30口徑的勃朗寧M1919A4/A6大大降低,而且結構緊湊.在M60槍內還大量採用減少摩擦的滾輪機構,因而射擊振動較小.M60的導氣裝置改進自FG42,當活塞向後移動時,會關閉側壁上的導氣孔,自動截斷火藥氣體的流入,這種自動調節導氣裝置的結構比較簡單,不需氣體調節器,但缺點是不能調節射速. 彈鏈式供彈裝置改進自MG42,藉助槍機滾輪帶動撥彈桿左右運動,再通過槓桿使撥彈滑板上的撥彈齒撥彈,單程輸彈. 槍機頭有兩個閉鎖卡筍. M60採用固定式的片狀準星,U形缺口照門安裝在立框式表尺上,照門可以調整高低和風偏. 供彈機蓋上方可安裝一個瞄準鏡座,瞄準具座上有美國陸軍標準的燕尾介面和偏心鎖緊機構,以便安裝白光/夜視瞄準具、鐳射指示器等附件. 由於M60的槍機自由行程較長,而緩衝器也吸收了大部分後坐能量,因此射速較低,大約每分鐘550發左右,射擊時容易控制槍身,經過訓練的射手能夠控制出單發或短點射. M60主要發射7.62×51mm北約標準彈,美軍裝備的M60主要使用M61穿甲彈、M62曳光彈、M80普通彈、M63教練彈、M82空包彈等型別的彈藥. M60配用的彈鏈在美國政府命名為M13彈鏈,但是許多人只稱其為M60彈鏈. \n \n</text>
+	</string>
+	
+	<string id="st_wpn_mp7">
+		<text>MP7單兵自衛用衝鋒鎗</text>
+	</string>
+	<string id="st_wpn_mp7_descr">
+		<text>MP7(Maschinen pistole 7)是德國個人防禦武器(PDW),由赫克勒·科赫公司設計和製造用來發射HK 4.6x30mm子彈. 它的設計採用了新的子彈,以滿足1989年公佈的北約要求,因為以上這些要求使得個人防禦武器級火器在使用時,其穿透人體護甲的能力比目前僅限於常規手槍子彈的武器要更強一些. MP7于2001年投產,其大量應用塑料聚合物,重量非常輕,而尺寸也十分短小,其大小與SOCOM手槍相差無幾. PDW共由六大元件構成: 機匣、槍管和擊發機構; 槍尾及槍托和裝填裝置; 機匣蓋及附件; 槍機; 復進簧; 彈匣. 只要撥下三個銷釘,不用其他任何工具,就可以將全槍分解成這六大部分. 三個銷釘中,兩個在機匣後端,用於機匣與槍尾的連線,第三個在槍口上部,用於機匣蓋與機匣的連線. MP7于2001年投入生產. 由於MP7既輕便,又"聽話",即使很少訓練的士兵,也很容易操作並精確瞄準. 因此,所有不配備突擊步槍的單位都可以選擇配備PDW.整個後勤部隊包括衛生人員,坦克、裝甲車與直升機乘員,以及只配手槍的機槍手等,他們都適合佩帶PDW. 此外,各類特種部隊人員也同樣可以選用這種輕便的武器. 據說有一支MP7是諾瓦露贈與艾伊芙的自衛武器. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+	
+	<string id="st_wpn_xm8">
+		<text>XM8輕型突擊步槍</text>
+	</string>
+	<string id="st_wpn_xm8_descr">
+		<text>XM8是20世紀90年代末到21世紀初的研製的一種輕型突擊步槍系統. 該步槍是由德國輕武器製造商赫克勒·科赫設計的,並與他們的G36步槍共享設計和工程結構. 經過對阿富汗戰場上美軍武器表現的研究,美國國防部希望能夠儘快獲得新武器,於是武器研究發展與工程中心很快就作出了決定,在2002年10月與ATK和HK防務公司簽訂了一項500萬美元的研製合同,由HK防務公司負責研製XM8輕型突擊步槍,所限定的開發週期也非常短,只有3年時間. HK防務公司位於弗吉尼亞州的斯特林(Sterling),是德國HK公司的一個子公司,在XM29的研製集團中負責武器本身的設計和生產. 積極參與該專案研究的中心位於新澤西州的皮卡汀尼兵工廠(Picatinny Arsenal),它也是ARDEC的所在地,而位於本寧堡的陸軍步兵中心(Army Infantry Center)也是該計劃的熱心支持者. XM8本質上是XM29的5.56毫米步槍部分,通過模組化組合使它成為單個機構,並可以根據不同的任務需要和作戰地域,轉換成不同的槍型或發射不同口徑的彈藥. 由於採用了XM29的先進技術,XM8的基本型(卡賓槍型)重量將比M4/M4A1輕20%. XM8的最終發展目標,不僅是作為代替M16系列的一種輕型卡賓槍,而是可以轉換成多種不同型號的模組化步槍系統,不同長度的槍管及其他配件賦予其不同的角色,甚至可以更換機匣以發射不同口徑的彈藥,例如俄製的7.62×39mm中間威力步槍彈. \n
+		XM8的設計最初是目標單兵作戰武器計劃(OICW)的一部分,該計劃正在開發一種"智慧"下掛榴彈發射器,帶有懸掛式卡賓槍系統. 該系統無法滿足效能和重量要求,並最終被取消了. 之後,OICW研究計劃的兩部分被拆分開來,誕生了XM8和XM25專案. \n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45mm可相容槍口抑制器\n
+		%c[d_purple] • %c[ui_gray_2] 前進牌戰術光學瞄準鏡,Barska ES ACOG瞄準鏡,C-more多色全息戰術瞄準鏡,全息光學瞄準鏡\n \n</text>
+	</string>
+
+<!-- 
+Grenades 
+-->
+	<string id="st_grenade_f1">
+		<text>F1防禦型手雷</text>
+	</string>
+	<string id="st_grenade_f1_descr">
+		<text>一種防禦型手雷,其碎片能夠撕裂中等護甲.手雷的殺傷半徑約為4米.潛行者可以從軍隊那裡買到F1手雷,而後者則將其用於對抗變異怪物. \n \n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷: %c[ui_gray_1]高\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷半徑: %c[ui_gray_1]4.2米\n
+		%c[d_purple] • %c[ui_gray_2] 破片殺傷半徑: %c[ui_gray_1]48米\n
+		%c[d_purple] • %c[ui_gray_2] 平均破片數: %c[ui_gray_1]380片(小破片)\n
+		%c[d_purple] • %c[ui_gray_2] 引信延遲: %c[ui_gray_1]約4秒鐘</text>
+	</string>
+	
+	<string id="st_grenade_rgd5">
+		<text>RGD-5進攻型手雷</text>
+	</string>
+	<string id="st_grenade_rgd5_descr">
+		<text>一種攻擊性的手雷,殺傷半徑約為3米. 由於成本相對較低,經常被潛行者用來"從霧中驅趕"出變異怪物. \n \n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷: %c[ui_gray_1]中等\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷半徑: %c[ui_gray_1]3.2米\n
+		%c[d_purple] • %c[ui_gray_2] 破片殺傷半徑: %c[ui_gray_1]43米\n
+		%c[d_purple] • %c[ui_gray_2] 平均破片數: %c[ui_gray_1]240片(小破片)\n
+		%c[d_purple] • %c[ui_gray_2] 引信延遲: %c[ui_gray_1]約4秒鐘</text>
+	</string>
+	
+	<string id="st_grenade_smoke">
+		<text>煙霧彈</text>
+	</string>
+	<string id="st_grenade_smoke_descr">
+		<text>一種煙霧手榴彈.用於釋放煙幕帶來遮擋敵人視線. 投擲手榴彈后,煙幕需要10秒鐘才能完全散開.</text>
+	</string>
+	
+	<string id="st_grenade_thermite">
+		<text>鋁熱劑手雷</text>
+	</string>
+	<string id="st_grenade_thermite_descr">
+		<text>一種燃燒手榴彈(或鋁熱劑手榴彈),通過化學反應產生大量的熱(2200攝氏度或3992華氏度) ,其中粉末狀的鋁和氧化鐵反應產生一股熔融鐵和氧化鋁射流. 內部充滿約600至800克鋁熱劑. \n \n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷: %c[ui_gray_1]中等 (熱殺傷)\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸殺傷半徑: %c[ui_gray_1]4.6米\n
+		%c[d_purple] • %c[ui_gray_2] 破片殺傷半徑: %c[ui_gray_1]無\n
+		%c[d_purple] • %c[ui_gray_2] 平均破片數: %c[ui_gray_1]無\n
+		%c[d_purple] • %c[ui_gray_2] 引信時間: %c[ui_gray_1]約4秒</text>
+	</string>
+	
+<!--
+	Melee 
+-->
+	<string id="st_knife_combat">
+		<text>M9刺刀</text>
+	</string>
+	<string id="st_knife_combat_descr">
+		<text>\n \n%c[ui_gray_1]帶有堅固橡膠刀柄的大獵刀. 鋒利且維護良好. 它可能不適合對付護甲,但由於齒狀設計,它很適合給活物放血. 這是面對變異怪物時的理想選擇,尤其是那些老弱病殘的怪物.</text>
+	</string>
+	
+	<string id="st_knife_6x4">
+		<text>6H4刺刀</text>
+	</string>
+	<string id="st_knife_6x4_descr">
+		<text>\n \n%c[ui_gray_1]為AK步槍設計的刺刀. 它很耐用,但除拼刺刀外也沒什麼功能了. \n \n
+		%c[d_red] • %c[d_red]不適合切皮厚的變異怪物</text>
+	</string>
+	
+	<string id="st_knife_hunting">
+		<text>獵刀</text>
+	</string>
+	<string id="st_knife_hunting_descr">
+		<text>\n \n%c[ui_gray_1]一種非常耐用的獵刀,刀片由不鏽鋼製成.是對付大型動物,肉類和厚皮的理想選擇. 它能夠造成大出血. 它的缺點是無法有效對付護甲.</text>
+	</string>
+	
+	<string id="st_knife_m">
+		<text>軍刀</text>
+	</string>
+	<string id="st_knife_m_descr">
+		<text>\n \n%c[ui_gray_1]遊戲中並未出現. 標準的軍刀,標準的款式,標準的殺傷.</text>
+	</string>
+	
+	<string id="st_knife_needle">
+		<text>NR-40偵察兵之刃</text>
+	</string>
+	<string id="st_knife_needle_descr">
+		<text>\n \n%c[ui_gray_1]一種戰鬥刀,基於二戰時蘇聯軍隊首次採用的設計. 它在技術上是過剩的,沒有被任何現代軍隊正式使用過. \n \n這把蘇聯鋼刀裝有長達152毫米的刀片,帶有一個大掛扣,一個黑色的木柄和一個S形的護手. 護手被"倒置"了,因為標準的蘇軍握刀要求持刀時刀刃要朝向自己. 手柄採用堅固的織物加固,以增加摩擦力. \n \n儘管這是一把很好的戰鬥刀,但在特異區這裡,它的切割力只適用於實用目的或是用來消滅已經無法反抗的對手. 然而,它的穿透力卻令人恐懼：即使是現代戰鬥盔甲的間隙,也很容易被這把刀的致命點對準. \n \n
+		%c[d_red] • %c[d_red]不適合切皮厚的變異怪物.</text>
+	</string>
+	
+	<string id="st_knife_nr40">
+		<text>NR-40偵察兵之刃(傳奇級)</text>
+	</string>
+	<string id="st_knife_nr40_descr">
+		<text>\n \n%c[ui_gray_1]遊戲中並未出現. 一把珍貴的蘇聯軍刀,具有很高的歷史和象徵價值. 木柄上飾有二戰傘兵師某部的鐵徽. 擁有這樣一把劍通常是榮譽的標誌,特別是在有著自豪的軍事傳統的陣營中. 通常只有在對某一陣營或商人集團表現出忠誠、稱職的服務之後才提供給潛行者.</text>
+	</string>
+	
+	<string id="st_knife_swat">
+		<text>特戰彈簧刀</text>
+	</string>
+	<string id="st_knife_swat_descr">
+		<text>一種保養良好的特戰彈簧刀,是參與外科手術打擊的特種部隊操作員的理想選擇. 據傳在冷戰期間避免了幾起核事件. 它是一種致命的武器,也是該地區唯一一把既能穿透盔甲又能造成巨大組織損傷的刀. 是名副其實的終極近戰武器.</text>
+	</string>
+	
+	<string id="st_axe">
+		<text>斧子</text>
+	</string>
+	<string id="st_axe_descr">
+		<text>斧子是一種有著數千年曆史的工具,可以用來加工,劈開和切割木材,或者用作武器或用作依仗或成就的象徵. 斧子有多種款式,但通常由手柄和鐵斧頭組成. 在特異區中,多功能的斧子是生存的好幫手. \n \n
+		%c[ui_gray_1]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 近戰武器\n
+		%c[d_cyan] • %c[ui_gray_2] 與刀相比擁有更大的傷害範圍\n
+		%c[d_cyan] • %c[ui_gray_2] 日常用品</text>
+	</string>
+	
+	<string id="st_axe2">
+		<text>消防斧</text>
+	</string>
+	<string id="st_axe2_descr">
+		<text>這種沉重的斧頭是消防員最常使用的,經常被潛行者用來砍伐樹木,或者像其他斧頭一樣用來砍人. 因此,它可以在熟練的潛行者手中充當強大的武器. \n \n
+		%c[ui_gray_1]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 近戰武器\n
+		%c[d_cyan] • %c[ui_gray_2] 與刀相比擁有更大的傷害範圍\n
+		%c[d_cyan] • %c[ui_gray_2] 日常用品</text>
+	</string>
+	
+	<string id="st_axe3">
+		<text>獵斧</text>
+	</string>
+	<string id="st_axe3_descr">
+		<text>這種方便的斧頭已經有數千年的歷史了,它可以用來砍柴,砍肉,甚至用作儀仗用具,雖然它通常由斧刃和手柄組成,但形狀卻有很多種.在特異之類的地方,這把斧頭可以決定生死. \n \n
+		%c[ui_gray_1]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 近戰武器\n
+		%c[d_cyan] • %c[ui_gray_2] 與刀相比擁有更大的傷害範圍\n
+		%c[d_cyan] • %c[ui_gray_2] 日常用品</text>
+	</string>
+	
+	<string id="st_grenade_light">
+		<text>M68手雷</text>
+	</string>
+	<string id="st_grenade_light_descr">
+		<text>M68輕型手雷裝有大量彈片,在傘兵,海軍陸戰隊和北約特種部隊中很受歡迎. 使用M213保險絲,可以將保險絲勾在腰帶上以快速拉開保險.</text>
+	</string>
+	
+	<string id="st_wpn_flamewerfer">
+		<text>火焰噴射器</text>
+	</string>
+	<string id="st_wpn_flamewerfer_descr">
+		<text>一種自製火焰噴射器,容易堵油,射程近. 它的設計的隨意性表明它是由一個特異區的潛行者手工製成的.</text>
+	</string>
+</string_table>

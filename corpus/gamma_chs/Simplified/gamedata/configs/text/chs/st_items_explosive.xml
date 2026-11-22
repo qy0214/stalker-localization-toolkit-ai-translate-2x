@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Explosive items + Mines
+-->
+<string_table>
+
+	<string id="st_mine_name">
+		<text>PFM-1破片型反步兵地雷</text>
+	</string>
+	<string id="st_mine_descr">
+		<text>PFM-1(杀伤地雷的简称; 北约名称: "绿鹦鹉")曾经是红军的制式人员杀伤地雷, 主要在苏联入侵阿富汗期间使用. 由于该地雷形状和颜色类似于玩具, 所以在战争期间造成了大量的平民伤亡, 尤其是儿童. PFM-1获得了一个难听的绰号: '儿童杀手', 从那个时候起, 这种地雷便被新的型号取代, 但就像那些退役的装备一样, 这种地雷也以某些特殊的方式进入了特异区, 成为陷阱的主要爆炸物. 由于该地雷操作简单, 结构紧凑, 较低的重量受到一致好评. 但缺点也在于装药量破片量较少, 威力通常还是不能杀死穿着重型护甲的潜行者, 因此该地雷最好与其他的爆炸性武器一同引爆, 另外, 即使被枪击中地雷也不会爆炸\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 爆炸物\n
+		%c[d_blue] • %c[ui_gray_2] 军用品\n
+		%c[d_blue] • %c[ui_gray_2] 反步兵地雷\n
+		%c[d_purple] • %c[ui_gray_2] 触发机制: %c[ui_gray_1]压力\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸伤害: %c[ui_gray_1]小\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸半径: %c[ui_gray_1]2.2米\n
+		%c[d_purple] • %c[ui_gray_2] 破片大小: %c[ui_gray_1]无\n
+		%c[d_purple] • %c[ui_gray_2] 破片数量: %c[ui_gray_1]无\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸延迟: %c[ui_gray_1]无\n
+		</text>
+	</string>
+	
+	<string id="st_ied_rpg">
+		<text>简易爆炸装置(火箭弹改造)</text>
+	</string>
+	<string id="st_ied_rpg_descr">
+		<text>基于OG-7V火箭弹和汽车电池的简易爆炸装置, 看上去已经被制作出一段时间了, 总让人觉得随时会爆炸一般. 幸运的是它的触发装置会确保它不会再子弹击中之类的强烈外力作用下爆炸. 在特异区中, 人们将它用在各种地方: 爆破或是伏击. 不过通常和地雷一起使用以增加威力. 另外该装置还能很好地隐藏, 使别人几乎看不见它\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 爆炸物\n
+		%c[d_blue] • %c[ui_gray_2] 军用品\n
+		%c[d_blue] • %c[ui_gray_2] 放置后不易被发现\n
+		%c[d_purple] • %c[ui_gray_2] 触发机制: %c[ui_gray_1]靠近\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸伤害: %c[ui_gray_1]高\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸半径: %c[ui_gray_1]7.8米\n
+		%c[d_purple] • %c[ui_gray_2] 破片大小: %c[ui_gray_1]56米\n
+		%c[d_purple] • %c[ui_gray_2] 破片数量: %c[ui_gray_1]440(弹片)\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸延迟: %c[ui_gray_1]无\n
+		</text>
+	</string>
+	
+	<string id="st_ied">
+		<text>简易爆炸装置(化学品制作)</text>
+	</string>
+	<string id="st_ied_descr">
+		<text>有各种化学品制作的简易爆炸装置, 装有许多钢珠, 并由电子引火器引爆. 其中的化学物质还带有刺激性气味甚至带有剧毒. 这种IED比常见的OG-7V版本威力更大. 在特异区中, 人们将它用在各种地方: 爆破或是伏击. 不过通常和地雷一起使用以增加威力. 另外该装置还能很好地隐藏, 使别人几乎看不见它\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 爆炸物\n
+		%c[d_blue] • %c[ui_gray_2] 军用品\n
+		%c[d_blue] • %c[ui_gray_2] 放置后不易被发现\n
+		%c[d_purple] • %c[ui_gray_2] 触发机制: %c[ui_gray_1]靠近\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸伤害: %c[ui_gray_1]很高\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸半径: %c[ui_gray_1]12.9米\n
+		%c[d_purple] • %c[ui_gray_2] 破片半径: 
+		%c[ui_gray_1]74米\n
+		%c[d_purple] • %c[ui_gray_2] 破片数量: %c[ui_gray_1]580(钢珠)\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸延迟: %c[ui_gray_1]无\n
+		</text>
+	</string>
+	
+	<string id="st_balon_gas">
+		<text>液化气罐</text>
+	</string>
+	<string id="st_balon_gas_descr">
+		<text>\n \n
+		%c[d_red]不会爆炸\n \n
+		%c[ui_gray_1]重金属液化气罐在内部和外部均浸渍有相容性聚合物, 并带有氯磺化聚乙烯橡胶涂层以提高耐候性和抗紫外线性能. 这种储气瓶在压力充气之前是可以拆卸的, 可以用来装各种工业气体. 而在特异区中里面一般则装着甲烷, 丙烷, 乙烷和丁烷等等, 用于烹饪, 加热或是战斗的目的. 在受到子弹撞击时, 气罐很可能被点燃, 并在短时间内释放出大量的能量, 致使气罐中的气体急速膨胀, 产生剧烈的爆炸, 金属碎片会向着四面八方扩散. 在阵营战争中这种气罐因此被作为武器使用, 使许多人丧命. 气罐清空后, 可用于维修\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 技术产品\n
+		%c[d_blue] • %c[ui_gray_2] 内含: %c[ui_gray_1] 纯天然气\n
+		%c[d_green] • %c[ui_gray_2] 高级烹饪燃料\n
+		</text>
+	</string>
+
+	<string id="st_balon_gas_empty">
+		<text>液化气罐(空的)</text>
+	</string>
+	<string id="st_balon_gas_empty_descr">
+		<text>重金属液化气罐在内部和外部均浸渍有相容性聚合物, 并带有氯磺化聚乙烯橡胶涂层以提高耐候性和抗紫外线性能. 这种储气瓶在压力充气之前是可以拆卸的, 可以用来装各种工业气体. 而在特异区中里面一般则装着甲烷, 丙烷, 乙烷和丁烷等等, 用于烹饪, 加热或是战斗的目的. 在受到子弹撞击时. 现在罐子中是空的, 你可以用于护甲的维护\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 技术产品\n
+		</text>
+	</string>
+	
+	<string id="st_metalcan_powder">
+		<text>火药罐</text>
+	</string>
+	<string id="st_metalcan_powder_descr">
+		<text>\n \n
+		%c[d_red]可拆卸\n \n
+		%c[ui_gray_1]一个中等重量的金属罐子, 里面塞满了爆炸性化学品, 金属螺栓螺母以及旧弹药中的火药等等, 臭名昭著的一种死亡陷阱. 由一群叫做"怪客"的俄罗斯土匪设计, 并且出售给特异区内各个土匪组织. 遭到子弹撞击后, 罐子会立即爆炸, 螺母螺栓和腐蚀性化学物质便会四处飞溅. 任何头脑清醒的人在使用这种危险的爆炸物时都会保持警惕. 当然, 你也可以用罐子中的金属部件对装备进行紧急维护\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 爆炸物\n
+		%c[d_blue] • %c[ui_gray_2] 技术产品\n
+		%c[d_purple] • %c[ui_gray_2] 触发机制: %c[ui_gray_1]子弹冲击或爆炸\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸伤害: %c[ui_gray_1]低\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸半径: %c[ui_gray_1]1.8米\n
+		%c[d_purple] • %c[ui_gray_2] 破片大小: %c[ui_gray_1]14米\n
+		%c[d_purple] • %c[ui_gray_2] 破片数量: %c[ui_gray_1]77(小金属片)\n
+		%c[d_purple] • %c[ui_gray_2] 爆炸延迟: %c[ui_gray_1]无\n
+		</text>
+	</string>
+	
+	<string id="st_jerrycan_item">
+		<text>油桶</text>
+	</string>
+	
+	<string id="st_jerrycan_fuel">
+		<text>汽油桶</text>
+	</string>
+	<string id="st_jerrycan_fuel_descr">
+		<text>\n \n
+		%c[d_red]不会爆炸\n \n
+		%c[ui_gray_1]装有95号汽油的大金属罐. 特异区的油桶都是军方为了补给装甲车而运入的. 最初, 这些汽油都还能派上用场, 但在切尔诺贝利第二次爆炸后, 车辆就莫名其妙的无法启动了. 即使特异区里的人一直在试图使汽车运转起来, 但是很显然有人找到了另一种好玩的方式: 作为简易炸弹. 被直接击中后, 油桶将会着火, 随后发生爆炸. 即使十分笨重但是只要位置的当, 它极大的威力足以杀死一个身着外骨骼的人. 但是如果使用不当, 猛烈的爆炸会殃及自身. 有传闻说, 一名叫做尤亚的资深潜行者就曾经把一只变异巨兽引入油桶陷阱, 从而救了自己的命. 他用马卡洛夫手枪中的最后一颗子弹引爆了油桶, 在木星工厂的一声轰鸣声中, 变异巨兽被炸成了碎片\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 技术产品\n
+		%c[d_blue] • %c[ui_gray_2] 内含: 95号汽油\n
+		%c[d_green] • %c[ui_gray_2] 高级烹饪燃料l\n
+		</text>
+	</string>
+
+	<string id="st_jerrycan_fuel_empty">
+		<text>油桶(空的)</text>
+	</string>
+	<string id="st_jerrycan_fuel_empty_descr">
+		<text>空的金属罐. 它可以用作修理护甲的材料, 也能卖给交易商\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 爆炸物\n
+		%c[d_blue] • %c[ui_gray_2] 技术产品\n
+		</text>
+	</string>
+	
+</string_table>

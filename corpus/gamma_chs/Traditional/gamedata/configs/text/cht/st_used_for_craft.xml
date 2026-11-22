@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_craft_used_for">
+		<text>%c[d_orange] • %c[0,255,255,255]用於製作:%c[ui_gray_2]</text>
+	</string>
+	<string id="st_craft_unlocks">
+		<text>%c[d_orange] • %c[0,255,255,255]解鎖製作:%c[ui_gray_2]</text>
+	</string>
+	<string id="st_cook_used_for">
+		<text>%c[d_orange] • %c[0,255,255,255]用於烹飪:%c[ui_gray_2]</text>
+	</string>
+	<string id="ui_mcm_craft_in_tooltip_title">
+		<text>工具提示中的製作資訊配置</text>
+	</string>
+	<string id="ui_mcm_menu_craft_in_tooltip">
+		<text>工具提示中的製作資訊</text>
+	</string>
+	<string id="ui_mcm_craft_in_tooltip_use_icons">
+		<text>顯示物品圖示</text>
+	</string>
+	<string id="ui_mcm_craft_in_tooltip_use_icons_desc">
+		<text>顯示可製作的物品的圖示,而不是它們的名字</text>
+	</string>
+</string_table>

@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons Upgrades
+-->
+<string_table>
+	<string id="st_upgr_required_materials">
+		<text>必要的材料</text>
+	</string>
+	<string id="st_upgr_enough_materials">
+		<text>材料不足</text>
+	</string>
+	<string id="st_prop_bullet_speed">
+		<text>弹道平直度</text>
+	</string>
+	<string id="st_prop_calibre">
+		<text>口径</text>
+	</string>
+	<string id="st_prop_recoil">
+		<text>后坐力</text>
+	</string>
+	<string id="st_prop_reliability">
+		<text>可靠性</text>
+	</string>
+	<string id="st_prop_scope_1.6x">
+		<text>1.6倍反射式瞄准镜</text>
+	</string>
+	<string id="st_prop_scope_4x">
+		<text>4倍光学瞄准镜</text>
+	</string>
+	<string id="st_prop_silencer">
+		<text>消音器接口</text>
+	</string>
+	<string id="st_prop_underbarrel_slot">
+		<text>枪管下安装</text>
+	</string>
+	<string id="st_prop_weight">
+		<text>重量</text>
+	</string>
+	<string id="st_up_add_a1_descr">
+		<text>外螺纹允许安装消音器.</text>
+	</string>
+	<string id="st_up_add_a1_name">
+		<text>枪管外螺纹</text>
+	</string>
+	<string id="st_up_add_a2_descr">
+		<text>安装用于连接光学瞄准镜的基座.</text>
+	</string>
+	<string id="st_up_add_a2_name">
+		<text>光学瞄准镜基座</text>
+	</string>
+	<string id="st_up_add_a3_descr">
+		<text>安装用于连接枪管下挂榴弹发射器的基座.</text>
+	</string>
+	<string id="st_up_add_a3_name">
+		<text>榴弹发射器基座</text>
+	</string>
+	<string id="st_up_add_a4_descr">
+		<text>用大容量弹匣替代标准弹匣.</text>
+	</string>
+	<string id="st_up_add_a4_name">
+		<text>增加弹匣容量</text>
+	</string>
+	<string id="st_up_add_b1_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b1_name">
+		<text>枪管更换为5.45毫米口径</text>
+	</string>
+	<string id="st_up_add_b2_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b2_name">
+		<text>枪管更换为5.56毫米口径</text>
+	</string>
+	<string id="st_up_add_b3_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b3_name">
+		<text>枪管更换为9x18毫米口径</text>
+	</string>
+	<string id="st_up_add_b4_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b4_name">
+		<text>枪管更换为9x19毫米口径</text>
+	</string>
+	<string id="st_up_add_b5_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b5_name">
+		<text>枪管更换为7.62x39毫米口径</text>
+	</string>
+	<string id="st_up_add_b6_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b6_name">
+		<text>枪管更换为7.62x51毫米口径</text>
+	</string>
+	<string id="st_up_add_b7_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径.</text>
+	</string>
+	<string id="st_up_add_b7_name">
+		<text>枪管更换为7.62x54毫米口径</text>
+	</string>
+	<string id="st_up_addd_a1_descr">
+		<text>在不增加武器长度的情况下增加弹匣载弹量.</text>
+	</string>
+	<string id="st_up_addd_a1_name">
+		<text>增加弹匣载弹量</text>
+	</string>
+	<string id="st_up_addh_a1_descr">
+		<text>加长型工程塑料弹匣, 这种轻质材料部分抵消了全枪增加的重量.</text>
+	</string>
+	<string id="st_up_addh_a1_name">
+		<text>增加弹匣载弹量</text>
+	</string>
+	<string id="st_up_autd_a1_descr">
+		<text>通过精细的零件安装来令武器减少卡壳的几率.</text>
+	</string>
+	<string id="st_up_autd_a1_name">
+		<text>零件校准</text>
+	</string>
+	<string id="st_up_autd_a2_descr">
+		<text>塑料组件的流行不仅带来了回报, 而且也成为了一种相当流行的升级.</text>
+	</string>
+	<string id="st_up_autd_a2_name">
+		<text>复合材料组件</text>
+	</string>
+	<string id="st_up_autd_b1_descr">
+		<text>减少后坐力.</text>
+	</string>
+	<string id="st_up_autd_b1_name">
+		<text>低速缓冲撞针</text>
+	</string>
+	<string id="st_up_autd_b2_descr">
+		<text>安装弹药固定器件后可以让子弹在射击时不偏离瞄准线, 准确命中靶心.</text>
+	</string>
+	<string id="st_up_autd_b2_name">
+		<text>安装弹药固定器件</text>
+	</string>
+	<string id="st_up_autd_b3_descr">
+		<text>广泛使用在武器闭锁机构上的升级可以减少后坐力, 增加设计精度.</text>
+	</string>
+	<string id="st_up_autd_b3_name">
+		<text>半自由闭锁枪机</text>
+	</string>
+	<string id="st_up_autd_b4_descr">
+		<text>附加导气管可以减轻武器重量, 同时显著提高开火速率.</text>
+	</string>
+	<string id="st_up_autd_b4_name">
+		<text>安装附加导气管</text>
+	</string>
+	<string id="st_up_autd_b5_descr">
+		<text>加装一个能够安装在霰弹枪上的气动机, 用来实现半自动射击.</text>
+	</string>
+	<string id="st_up_autd_b5_name">
+		<text>安装气动机</text>
+	</string>
+	<string id="st_up_autd_c1_descr">
+		<text>保护涂层可以使武器避免由于机械故障而哑火.</text>
+	</string>
+	<string id="st_up_autd_c1_name">
+		<text>保护组件涂层</text>
+	</string>
+	<string id="st_up_autd_c2_descr">
+		<text>开枪时, 枪管闭锁系统打开一条进入枪管的通道, 然后通过前握把的直线滑动动作回到封闭位置.</text>
+	</string>
+	<string id="st_up_autd_c2_name">
+		<text>枪管闭锁系统</text>
+	</string>
+	<string id="st_up_autd_c3_descr">
+		<text>安转惯性自动装填机可以让普通霰弹枪进行自锁供弹.</text>
+	</string>
+	<string id="st_up_autd_c3_name">
+		<text>安装惯性自动装填机</text>
+	</string>
+	<string id="st_up_autd_c4_descr">
+		<text>标准后坐组件是一种减轻后坐力的绝佳技术手段.</text>
+	</string>
+	<string id="st_up_autd_c4_name">
+		<text>标准后坐组件</text>
+	</string>
+	<string id="st_up_autd_c5_descr">
+		<text>安装全自动传动杆来提高武器精确度.</text>
+	</string>
+	<string id="st_up_autd_c5_name">
+		<text>安装全自动传动杆</text>
+	</string>
+	<string id="st_up_auth_a1_descr">
+		<text>安装主动配重平衡装置可以减少后坐力的影响.</text>
+	</string>
+	<string id="st_up_auth_a1_name">
+		<text>安装配重平衡装置</text>
+	</string>
+	<string id="st_up_auth_b1_descr">
+		<text>安装额外的滑轮机构来减少后坐力.</text>
+	</string>
+	<string id="st_up_auth_b1_name">
+		<text>安装往复式滑轮制退器</text>
+	</string>
+	<string id="st_up_auth_c1_descr">
+		<text>重新改造枪栓来提高自动射击时开火速率.</text>
+	</string>
+	<string id="st_up_auth_c1_name">
+		<text>开放式枪栓</text>
+	</string>
+	<string id="st_up_auth_c2_descr">
+		<text>使机枪枪栓动作平稳, 提升射击时的可操作性.</text>
+	</string>
+	<string id="st_up_auth_c2_name">
+		<text>安装自动均衡器</text>
+	</string>
+	<string id="st_up_auto_a1_descr">
+		<text>安装在枪机里的配重平衡作为一种额外的升级安装可以使武器后坐力降低.</text>
+	</string>
+	<string id="st_up_auto_a1_name">
+		<text>安装可移动配重平衡装置</text>
+	</string>
+	<string id="st_up_auto_a2_descr">
+		<text>升级零件为工程塑料零件能提高耐久度, 是一项很受欢迎的升级.</text>
+	</string>
+	<string id="st_up_auto_a2_name">
+		<text>自动武器适用的高分子材料零件</text>
+	</string>
+	<string id="st_up_auto_b1_descr">
+		<text>安装这种特殊的机械装置来减少对武器的损害.</text>
+	</string>
+	<string id="st_up_auto_b1_name">
+		<text>全自动双位式气体调节器.</text>
+	</string>
+	<string id="st_up_auto_b2_descr">
+		<text>特殊的密封部件使射击时枪膛压力达到最大值.</text>
+	</string>
+	<string id="st_up_auto_b2_name">
+		<text>安装枪管密封部件</text>
+	</string>
+	<string id="st_up_auto_b3_descr">
+		<text>同步器被安装在枪机装置上, 可以增加子弹的弹道平直度.</text>
+	</string>
+	<string id="st_up_auto_b3_name">
+		<text>同步调整杆</text>
+	</string>
+	<string id="st_up_auto_b4_descr">
+		<text>安装在枪机后侧的一种部件, 用于降低枪栓的速度. 安装以提高瞄准火力的有效性.</text>
+	</string>
+	<string id="st_up_auto_b4_name">
+		<text>惯性延迟机构</text>
+	</string>
+	<string id="st_up_auto_c1_descr">
+		<text>在枪机上安装缓冲制退器来补偿枪机的运动影响和减少后坐力.</text>
+	</string>
+	<string id="st_up_auto_c1_name">
+		<text>安装缓冲制退器</text>
+	</string>
+	<string id="st_up_auto_c2_descr">
+		<text>经常应用在狙击步枪上的整体改造, 可以明显增加全枪重量.</text>
+	</string>
+	<string id="st_up_auto_c2_name">
+		<text>安装内置制退器</text>
+	</string>
+	<string id="st_up_auto_c3_descr">
+		<text>安装这种运动机构后, 可以提升子弹进入枪膛的速度.</text>
+	</string>
+	<string id="st_up_auto_c3_name">
+		<text>自动装填器</text>
+	</string>
+	<string id="st_up_auto_c4_descr">
+		<text>升级武器的自动机构后可以提升射击精度, 但需要更换很多零件.</text>
+	</string>
+	<string id="st_up_auto_c4_name">
+		<text>平衡过的缓冲系统</text>
+	</string>
+	<string id="st_up_auto_c5_descr">
+		<text>一种合成零件, 安转在枪栓运动前面的前面, 有力的压缩枪机来提升射击精确度.</text>
+	</string>
+	<string id="st_up_auto_c5_name">
+		<text>安装制动装置</text>
+	</string>
+	<string id="st_up_auto_c6_descr">
+		<text>一套枪管定位装置, 如果枪管移动, 额外的补偿孔会打开.</text>
+	</string>
+	<string id="st_up_auto_c6_name">
+		<text>安装灵敏补偿装置</text>
+	</string>
+	<string id="st_up_auts_a1_descr">
+		<text>改造后使你的扳机动作更加平稳, 对于狙击枪而言很重要.</text>
+	</string>
+	<string id="st_up_auts_a1_name">
+		<text>安装扳机释放控制器</text>
+	</string>
+	<string id="st_up_auts_a2_descr">
+		<text>这个装置可以使射手更好的把握射击, 提高设计精确度.</text>
+	</string>
+	<string id="st_up_auts_a2_name">
+		<text>安装双动扳机</text>
+	</string>
+	<string id="st_up_auts_b1_descr">
+		<text>被西方兵工厂广泛使用的闭锁机构, 能够减少后坐力提升射击精确度.</text>
+	</string>
+	<string id="st_up_auts_b1_name">
+		<text>自由枪栓闭锁机构</text>
+	</string>
+	<string id="st_up_auts_b2_descr">
+		<text>一种特殊的设备可以减缓射击时的后坐动量, 因此使射击更舒服, 更容易控制.</text>
+	</string>
+	<string id="st_up_auts_b2_name">
+		<text>射击减震器</text>
+	</string>
+	<string id="st_up_auts_b3_descr">
+		<text>安装三相气体调节器, 相对于以前可以减少狙击步枪的维护次数.</text>
+	</string>
+	<string id="st_up_auts_b3_name">
+		<text>安装三相自动气体调节器</text>
+	</string>
+	<string id="st_up_auts_c1_descr">
+		<text>调节散热导气方式可以减少自动武器零部件上所耗火药气体能量, 因此提高了子弹的动能.</text>
+	</string>
+	<string id="st_up_auts_c1_name">
+		<text>调节自动武器零部件的导气方式</text>
+	</string>
+	<string id="st_up_auts_c2_descr">
+		<text>安装长行程扳机来控制自动武器的射击.</text>
+	</string>
+	<string id="st_up_auts_c2_name">
+		<text>长行程扳机系统</text>
+	</string>
+	<string id="st_up_auts_c3_descr">
+		<text>阻滞器是紧挨着枪栓运动区域前面的一种聚合物部件, 它能显著限制枪栓位移以提高射击精度.</text>
+	</string>
+	<string id="st_up_auts_c3_name">
+		<text>安装阻滞器</text>
+	</string>
+	<string id="st_up_bar_a1_descr">
+		<text>用加长型枪管替换普通枪管, 可以提升精确度和子弹弹道平整度.</text>
+	</string>
+	<string id="st_up_bar_a1_name">
+		<text>加长型枪管</text>
+	</string>
+	<string id="st_up_bar_a2_descr">
+		<text>在护木上减少导气孔来减少火药气体泄漏, 从而提升武器精度.</text>
+	</string>
+	<string id="st_up_bar_a2_name">
+		<text>安装浮动枪管</text>
+	</string>
+	<string id="st_up_bar_a3_descr">
+		<text>持续高速射击会导致枪管过热, 安装枪管散热片来避免此种现象减损枪管寿命.</text>
+	</string>
+	<string id="st_up_bar_a3_name">
+		<text>安装枪管散热片.</text>
+	</string>
+	<string id="st_up_bar_b1_descr">
+		<text>将过时的枪口制退器换为更新的型号, 进一步降低后坐力.</text>
+	</string>
+	<string id="st_up_bar_b1_name">
+		<text>安装更先进的枪口制退器</text>
+	</string>
+	<string id="st_up_bar_b2_descr">
+		<text>安装附加的枪管膛线提升武器射速和精度.</text>
+	</string>
+	<string id="st_up_bar_b2_name">
+		<text>附加步枪膛线</text>
+	</string>
+	<string id="st_up_bar_b3_descr">
+		<text>这项改进可以增加在特异区里的近距离交火的射速, 但无法进行精确射击. 减少武器的膛线就能提升射速.</text>
+	</string>
+	<string id="st_up_bar_b3_name">
+		<text>简化枪管膛线</text>
+	</string>
+	<string id="st_up_bar_c1_descr">
+		<text>多边形膛线可以提升武器射击精度.</text>
+	</string>
+	<string id="st_up_bar_c1_name">
+		<text>安装多边形枪管膛线</text>
+	</string>
+	<string id="st_up_bar_c2_descr">
+		<text>可以减少枪管发热同时提升开火速度.</text>
+	</string>
+	<string id="st_up_bar_c2_name">
+		<text>安装曲线型膛线枪管</text>
+	</string>
+	<string id="st_up_bar_c3_descr">
+		<text>用狙击步枪专用精密枪管替代原装枪管, 具有良好的平面特性, 可提高其精度.</text>
+	</string>
+	<string id="st_up_bar_c3_name">
+		<text>狙击步枪专用精密枪管</text>
+	</string>
+	<string id="st_up_bard_a1_descr">
+		<text>超耐用硬材料可以减少膛线的磨损.</text>
+	</string>
+	<string id="st_up_bard_a1_name">
+		<text>超耐用硬合金枪管</text>
+	</string>
+	<string id="st_up_bard_b1_descr">
+		<text>对枪管内表面进行处理来防止机械损伤.</text>
+	</string>
+	<string id="st_up_bard_b1_name">
+		<text>枪管内处理</text>
+	</string>
+	<string id="st_up_bard_b2_descr">
+		<text>枪管所用合成材料增稠剂的使用可以显著提高枪管精度.</text>
+	</string>
+	<string id="st_up_bard_b2_name">
+		<text>合成枪管材料增稠剂</text>
+	</string>
+	<string id="st_up_bard_b3_descr">
+		<text>用加长型枪管来替换普通枪管提升弹道平直度.</text>
+	</string>
+	<string id="st_up_bard_b3_name">
+		<text>加长型枪管</text>
+	</string>
+	<string id="st_up_bard_b4_descr">
+		<text>纵向导气管不仅能防止枪管卡壳, 还能降低后坐力.</text>
+	</string>
+	<string id="st_up_bard_b4_name">
+		<text>纵向导气管</text>
+	</string>
+	<string id="st_up_bard_b5_descr">
+		<text>用加长型枪管来替换普通枪管提升弹道平直度.</text>
+	</string>
+	<string id="st_up_bard_b5_name">
+		<text>加长型枪管</text>
+	</string>
+	<string id="st_up_bard_b6_descr">
+		<text>这些涂料可以保护枪管不会过热, 修复生产时产生的瑕疵, 并且增加枪管寿命.</text>
+	</string>
+	<string id="st_up_bard_b6_name">
+		<text>枪身内部保护涂层.</text>
+	</string>
+	<string id="st_up_bard_c1_descr">
+		<text>枪管平衡系统由多个活塞组成, 可以使武器射击时更稳定.</text>
+	</string>
+	<string id="st_up_bard_c1_name">
+		<text>枪管平衡系统</text>
+	</string>
+	<string id="st_up_bard_c2_descr">
+		<text>线膛武器的射速会受到膛线的轻微影响, 但极高的精度提升弥补了这些.</text>
+	</string>
+	<string id="st_up_bard_c2_name">
+		<text>线膛枪管</text>
+	</string>
+	<string id="st_up_bard_c3_descr">
+		<text>使用聚合物材料构成的枪管材料增稠剂可以增加膛压和提升子弹速度.</text>
+	</string>
+	<string id="st_up_bard_c3_name">
+		<text>高效枪管增稠剂</text>
+	</string>
+	<string id="st_up_bard_c4_descr">
+		<text>圆柱形枪管钻孔可以提升武器射速同时不影响武器的精度.</text>
+	</string>
+	<string id="st_up_bard_c4_name">
+		<text>圆柱形枪管钻孔</text>
+	</string>
+	<string id="st_up_bard_c5_descr">
+		<text>当武器发射时, 改进的枪口制动器的主动配重块同时移动到枪管的枪口部分, 从而补偿部分后坐力.</text>
+	</string>
+	<string id="st_up_bard_c5_name">
+		<text>安装改进的枪口制退器</text>
+	</string>
+	<string id="st_up_bard_c6_descr">
+		<text>通过复杂的机械加工, 以可靠性为代价为自动武器更换枪管口径</text>
+	</string>
+	<string id="st_up_bard_c6_name">
+		<text>枪管更换为7.62x54毫米口径</text>
+	</string>
+	<string id="st_up_barp_a1_descr">
+		<text>将原装枪管更换为长枪管, 增加弹道平直度和射击精度, 但降低了射速.</text>
+	</string>
+	<string id="st_up_barp_a1_name">
+		<text>更换为长枪管</text>
+	</string>
+	<string id="st_up_barp_a2_descr">
+		<text>在枪管上钻孔, 火药气体会从特殊的孔洞里泻出以减小后坐力.</text>
+	</string>
+	<string id="st_up_barp_a2_name">
+		<text>枪管钻孔</text>
+	</string>
+	<string id="st_up_barp_a3_descr">
+		<text>短型枪管, 这种精密的设计可以在不减少射击精度和弹道平直度下提升射击速率.</text>
+	</string>
+	<string id="st_up_barp_a3_name">
+		<text>短型枪管</text>
+	</string>
+	<string id="st_up_barp_b1_descr">
+		<text>枪管内层镀铬可以提高枪管的耐久度.</text>
+	</string>
+	<string id="st_up_barp_b1_name">
+		<text>枪管内层镀铬</text>
+	</string>
+	<string id="st_up_barp_b2_descr">
+		<text>橡胶隔板可以承担部分后坐力.</text>
+	</string>
+	<string id="st_up_barp_b2_name">
+		<text>橡胶隔板</text>
+	</string>
+	<string id="st_up_barp_b3_descr">
+		<text>较浅的膛线可以提升射击速率, 这在和敌人的近距离作战时很有用.</text>
+	</string>
+	<string id="st_up_barp_b3_name">
+		<text>安装有较浅膛线的枪管.</text>
+	</string>
+	<string id="st_up_barp_b4_descr">
+		<text>安装附加的枪管膛线提升子弹初速和精度. 代价是增加后坐力.</text>
+	</string>
+	<string id="st_up_barp_b4_name">
+		<text>为枪管安装附加膛线.</text>
+	</string>
+	<string id="st_up_barp_b5_descr">
+		<text>将补偿器/消焰器整合到枪身上后坐力可大大降低.</text>
+	</string>
+	<string id="st_up_barp_b5_name">
+		<text>将补偿器/消焰器转移到枪身上</text>
+	</string>
+	<string id="st_up_barp_c1_descr">
+		<text>曲线膛线在减少枪管发热同时提升开火速度又不影响弹道平直度.</text>
+	</string>
+	<string id="st_up_barp_c1_name">
+		<text>曲线膛线</text>
+	</string>
+	<string id="st_up_barp_c2_descr">
+		<text>多边形膛线枪管通常用于提高狙击步枪的精度.</text>
+	</string>
+	<string id="st_up_barp_c2_name">
+		<text>安装带有多边形膛线的枪管</text>
+	</string>
+	<string id="st_up_barp_c3_descr">
+		<text>安装一个气动助推器以将部分后坐力转化为提高枪管压力来增加子弹初速度.</text>
+	</string>
+	<string id="st_up_barp_c3_name">
+		<text>安装气动助推器</text>
+	</string>
+	<string id="st_up_opt_a1_descr">
+		<text>安装适用于近距离作战的突击瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a1_name">
+		<text>1.6倍反射式瞄准镜</text>
+	</string>
+	<string id="st_up_opt_a2_descr">
+		<text>安装适用于中远距离作战的光学瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a2_name">
+		<text>4倍光学瞄准镜</text>
+	</string>
+	<string id="st_up_opt_a3_descr">
+		<text>安装适用于远距战斗的POSP 8x42 W瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a3_name">
+		<text>POSP 8x42 W瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a4_descr">
+		<text>缩放倍数提升至12倍, 适用于远距离作战的光学瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a4_name">
+		<text>光学瞄准镜缩放倍数提升至12倍</text>
+	</string>
+	<string id="st_up_opt_a5_descr">
+		<text>缩放倍数提升至15倍, 适用于远距离作战的光学瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a5_name">
+		<text>光学瞄准镜缩放倍数提升至15倍</text>
+	</string>
+	<string id="st_up_opt_a6_descr">
+		<text>缩放倍数提升至10倍, 适用于远距离作战的光学瞄准镜.</text>
+	</string>
+	<string id="st_up_opt_a6_name">
+		<text>光学瞄准镜缩放倍数提升至10倍</text>
+	</string>
+	<string id="st_up_opt_b1_descr">
+		<text>这项改进给安装了反射式瞄准镜的突击武器提升昏暗环境下的视野. 特别有利于黄昏黎明时分和昏暗的建筑物内的战斗.</text>
+	</string>
+	<string id="st_up_opt_b1_name">
+		<text>改进瞄准镜视野对比度</text>
+	</string>
+	<string id="st_up_opt_c1_descr">
+		<text>安装热成像仪可以使使用者发现和识别有热源的目标.</text>
+	</string>
+	<string id="st_up_opt_c1_name">
+		<text>自动光学目标搜寻器</text>
+	</string>
+	<string id="st_up_opt_c2_descr">
+		<text>夜视仪拯救了很多菜鸟狙击手. 增加0.27kg的重量.</text>
+	</string>
+	<string id="st_up_opt_c2_name">
+		<text>安装夜视仪</text>
+	</string>
+	<string id="st_up_opt_c3_descr">
+		<text>安装测距仪可以让你迅速调整到射击所需的视线距离.</text>
+	</string>
+	<string id="st_up_opt_c3_name">
+		<text>可调测距仪</text>
+	</string>
+	<string id="st_up_opt_binoc1_descr">
+		<text>将对比度增强滤光片集成到望远镜中, 以提高城市地区和低光照条件下的能见度.</text>
+	</string>
+	<string id="st_up_opt_binoc1_name">
+		<text>安装对比度增强的滤光片</text>
+	</string>
+	<string id="st_up_opt_binoc2_descr">
+		<text>更换望远镜镜头以获得更好的变焦效果, 放大倍数提高到5.0倍.</text>
+	</string>
+	<string id="st_up_opt_binoc2_name">
+		<text>缩放倍数提升至5倍</text>
+	</string>
+	<string id="st_up_opt_binoc3_descr">
+		<text>更换双筒望远镜的光学装置, 以允许可调变焦.由于安装了更复杂的机构, 重量略有增加.</text>
+	</string>
+	<string id="st_up_opt_binoc3_name">
+		<text>安装可调变焦镜头</text>
+	</string>
+	<string id="st_up_stk_binoc1_descr">
+		<text>用聚合物替代金属握持部位, 从而显著减轻重量.</text>
+	</string>
+	<string id="st_up_stk_binoc1_name">
+		<text>聚合物握持部位</text>
+	</string>
+	<string id="st_up_stk_binoc2_descr">
+		<text>望远镜外壳更换为铝制.降低重量, 显著增加使用的便利性.</text>
+	</string>
+	<string id="st_up_stk_binoc2_name">
+		<text>铝制望远镜外壳</text>
+	</string>
+	<string id="st_up_stk_binoc3_descr">
+		<text>用钛合金替代机械部件.减轻重量, 增加人机工效.</text>
+	</string>
+	<string id="st_up_stk_binoc3_name">
+		<text>钛合金机械部件</text>
+	</string>
+	<string id="st_up_opt_dynamo_hand3_name">
+		<text>附加磁铁</text>
+	</string>
+	<string id="st_up_pri_a1_descr">
+		<text>一种充气枪托用来减少在三连发射击时的反冲.</text>
+	</string>
+	<string id="st_up_pri_a1_name">
+		<text>充气枪托</text>
+	</string>
+	<string id="st_up_pri_b1_descr">
+		<text>可移动的枪托抵肩可以大大减少对身体的后坐力冲击.</text>
+	</string>
+	<string id="st_up_pri_b1_name">
+		<text>安装缓冲用枪托抵肩</text>
+	</string>
+	<string id="st_up_pri_b2_descr">
+		<text>一种更现代的枪托, 更注重人体工程学.</text>
+	</string>
+	<string id="st_up_pri_b2_name">
+		<text>人体工程学枪托</text>
+	</string>
+	<string id="st_up_pri_c1_descr">
+		<text>令射击后产生的部分气体进入枪机后部, 平稳的对枪栓进行制动.</text>
+	</string>
+	<string id="st_up_pri_c1_name">
+		<text>安装气动缓冲制退枪栓</text>
+	</string>
+	<string id="st_up_pri_c2_descr">
+		<text>延长枪栓结构的长度来提升弹道平直度, 但代价是增加了后坐力.</text>
+	</string>
+	<string id="st_up_pri_c2_name">
+		<text>安装的加长的震动缓冲枪栓</text>
+	</string>
+	<string id="st_up_pri_c3_descr">
+		<text>在枪托里安装一种滑动零件, 可以有效地减少后坐力.</text>
+	</string>
+	<string id="st_up_pri_c3_name">
+		<text>滑动后座缓冲器</text>
+	</string>
+	<string id="st_up_prih_a1_descr">
+		<text>改进后的扳机可以提高武器精确度.</text>
+	</string>
+	<string id="st_up_prih_a1_name">
+		<text>增大扳机尺寸</text>
+	</string>
+	<string id="st_up_prih_b1_descr">
+		<text>安装一个减震弹簧可以缓冲掉部分后坐力, 以减轻手持型机枪射击时给手部造成的不适感.</text>
+	</string>
+	<string id="st_up_prih_b1_name">
+		<text>内置弹簧缓冲装置</text>
+	</string>
+	<string id="st_up_prih_c1_descr">
+		<text>在枪托里安装一套制退装置可以缓冲掉大部分后坐力.</text>
+	</string>
+	<string id="st_up_prih_c1_name">
+		<text>附加气动型枪栓缓冲装置</text>
+	</string>
+	<string id="st_up_pris_a1_descr">
+		<text>这种橡胶反冲软化装置经常被用在工厂里生产的大口径狙击步枪的枪托上.</text>
+	</string>
+	<string id="st_up_pris_a1_name">
+		<text>枪托减震部件</text>
+	</string>
+	<string id="st_up_pris_b1_descr">
+		<text>这种带有托腮板的可调枪托可以大大的增加射手射击时的舒适度.</text>
+	</string>
+	<string id="st_up_pris_b1_name">
+		<text>带托腮板的可调枪托</text>
+	</string>
+	<string id="st_up_pris_c1_descr">
+		<text>这种安装在枪托里的减震部件是专门为大口径武器缓冲强大的后坐力而研制的.</text>
+	</string>
+	<string id="st_up_pris_c1_name">
+		<text>枪托内置液压型缓冲器</text>
+	</string>
+	<string id="st_up_ret_a1_descr">
+		<text>加强型钢复进弹簧可以提高弹头的初速.</text>
+	</string>
+	<string id="st_up_ret_a1_name">
+		<text>加强钢复进簧</text>
+	</string>
+	<string id="st_up_ret_a2_descr">
+		<text>在机匣结构上安装一个加强型移动部件, 可以确保武器在射击的时候指向方位不会偏离目标.</text>
+	</string>
+	<string id="st_up_ret_a2_name">
+		<text>复进减震器</text>
+	</string>
+	<string id="st_up_ret_a3_descr">
+		<text>安装一个附加的螺旋复进簧可以在丝毫不影响弹道平直度的情况下降低武器的后坐力.</text>
+	</string>
+	<string id="st_up_ret_a3_name">
+		<text>附加型复进簧</text>
+	</string>
+	<string id="st_up_ret_b1_descr">
+		<text>保护型涂层可以提高武器的可靠性, 更重要的是可以确保枪膛的气密性以防止火药能量泄漏.</text>
+	</string>
+	<string id="st_up_ret_b1_name">
+		<text>复进机构保护型涂层</text>
+	</string>
+	<string id="st_up_ret_b2_descr">
+		<text>钛合金击针能承受的武器射速要远远高于普通的击针.</text>
+	</string>
+	<string id="st_up_ret_b2_name">
+		<text>钛合金击针装置</text>
+	</string>
+	<string id="st_up_ret_b3_descr">
+		<text>在复进机构上安装一个合成材料击发装置, 提高其可靠性, 并且能提高武器的精确度.</text>
+	</string>
+	<string id="st_up_ret_b3_name">
+		<text>附加型平衡构件</text>
+	</string>
+	<string id="st_up_ret_c1_descr">
+		<text>加厚型套筒涂层可以增加膛压, 并且提高弹头初速.</text>
+	</string>
+	<string id="st_up_ret_c1_name">
+		<text>复进结构套筒涂层</text>
+	</string>
+	<string id="st_up_ret_c2_descr">
+		<text>一个连接导气组件和闭锁机构自身的连接装置, 它可以让火药燃气通过该装置来操作复进机构.</text>
+	</string>
+	<string id="st_up_ret_c2_name">
+		<text>安装一个分配连接装置</text>
+	</string>
+	<string id="st_up_ret_c3_descr">
+		<text>替换一个更强劲的复进机构, 包括两个击发装置和一个复进簧.提高武器的射速.</text>
+	</string>
+	<string id="st_up_ret_c3_name">
+		<text>转换为双重击发系统</text>
+	</string>
+	<string id="st_up_roun_a1_descr">
+		<text>一种特殊的火药燃气利用装置, 它可以减少一部分武器的后坐力.</text>
+	</string>
+	<string id="st_up_roun_a1_name">
+		<text>气动制退器</text>
+	</string>
+	<string id="st_up_roun_a2_descr">
+		<text>附加型对角线凸轮插槽可以提高武器上膛组件的旋转速度.</text>
+	</string>
+	<string id="st_up_roun_a2_name">
+		<text>安装对角线凸轮插槽</text>
+	</string>
+	<string id="st_up_stk_a1_descr">
+		<text>这种以欧洲标准为改进方案的好处是在丝毫不影响可靠性的前提下降低武器的重量.</text>
+	</string>
+	<string id="st_up_stk_a1_name">
+		<text>抗冲击聚合物枪托</text>
+	</string>
+	<string id="st_up_stk_a2_descr">
+		<text>这种特殊枪机可以大大的提高武器的耐久性, 让其可以可靠的在高频率全天候下战斗使用.</text>
+	</string>
+	<string id="st_up_stk_a2_name">
+		<text>高耐久合金枪机</text>
+	</string>
+	<string id="st_up_stk_a3_descr">
+		<text>一种用安装附加重物在枪机前端的简单方法来减低武器的后坐力.</text>
+	</string>
+	<string id="st_up_stk_a3_name">
+		<text>机匣配重增加</text>
+	</string>
+	<string id="st_up_stk_b1_descr">
+		<text>安装一个特殊冷却型机匣外壳以提高武器射速, 它可以控制机匣温度的上升程度.</text>
+	</string>
+	<string id="st_up_stk_b1_name">
+		<text>附加冷却型机匣</text>
+	</string>
+	<string id="st_up_stk_b2_descr">
+		<text>一种更符合人体工程学的握把外形, 它能提高使用者一边移动一边射击时的手感.</text>
+	</string>
+	<string id="st_up_stk_b2_name">
+		<text>人体工学枪机形状</text>
+	</string>
+	<string id="st_up_stk_c1_descr">
+		<text>改装专门用于装有无托式枪机的枪管, 它可以让武器的维修保养更容易.</text>
+	</string>
+	<string id="st_up_stk_c1_name">
+		<text>模块化枪机</text>
+	</string>
+	<string id="st_up_stk_c2_descr">
+		<text>这种特殊涂层可以有效的防止枪管过热, 它可以修复枪管在生产过程中造成的一些缺陷, 大大的增加的枪管的使用寿命.</text>
+	</string>
+	<string id="st_up_stk_c2_name">
+		<text>平滑枪机槽和枪管内涂层</text>
+	</string>
+	<string id="st_up_stk_c3_descr">
+		<text>在空心握把内安装一种轻型制退组件, 它可以有效降低武器射击时的后坐力.</text>
+	</string>
+	<string id="st_up_stk_c3_name">
+		<text>改装型握把</text>
+	</string>
+	<string id="st_up_stvd_a1_descr">
+		<text>空心的武器握把可以降低武器的整体重量.</text>
+	</string>
+	<string id="st_up_stvd_a1_name">
+		<text>改装型握把</text>
+	</string>
+	<string id="st_up_stvd_a2_descr">
+		<text>比标准型枪托更轻的轻型枪托.</text>
+	</string>
+	<string id="st_up_stvd_a2_name">
+		<text>轻型枪托</text>
+	</string>
+	<string id="st_up_stvd_a3_descr">
+		<text>一种更轻的聚合物材料可以降低武器的重量.</text>
+	</string>
+	<string id="st_up_stvd_a3_name">
+		<text>抗冲击聚合物枪托</text>
+	</string>
+	<string id="st_up_stvd_b1_descr">
+		<text>附加一些大重量配件以降低一部分武器的后坐力.</text>
+	</string>
+	<string id="st_up_stvd_b1_name">
+		<text>附加制退组件</text>
+	</string>
+	<string id="st_up_stvd_b2_descr">
+		<text>一种更现代化并且手感更好的武器握把.</text>
+	</string>
+	<string id="st_up_stvd_b2_name">
+		<text>符合人体工程学的握把</text>
+	</string>
+	<string id="st_up_stvd_b3_descr">
+		<text>这种减震型握把可以降低后坐力.</text>
+	</string>
+	<string id="st_up_stvd_b3_name">
+		<text>减震型握把</text>
+	</string>
+	<string id="st_up_stvd_b4_descr">
+		<text>一种外形更现代化, 更舒适的枪托.它可以增加武器的手感.</text>
+	</string>
+	<string id="st_up_stvd_b4_name">
+		<text>人体工学枪托</text>
+	</string>
+	<string id="st_up_stvd_b5_descr">
+		<text>这种特殊的保护涂层可以保护武器的各个组件.</text>
+	</string>
+	<string id="st_up_stvd_b5_name">
+		<text>防腐蚀涂层</text>
+	</string>
+	<string id="st_up_stvd_c1_descr">
+		<text>安装这种水银减震制退器在枪托里, 可以降低武器射击时的后坐力.</text>
+	</string>
+	<string id="st_up_stvd_c1_name">
+		<text>水银减震制退器</text>
+	</string>
+	<string id="st_up_stvd_c2_descr">
+		<text>这种自由浮置式减震组件, 当武器射击时它能吸收掉枪栓运动产生的后坐力.</text>
+	</string>
+	<string id="st_up_stvd_c2_name">
+		<text>附加反冲减震装置</text>
+	</string>
+	<string id="st_up_stvh_a1_descr">
+		<text>替换一种特殊材料制成的枪管以减少枪管在射击时的热量分布不均匀, 它可以提高武器的射速.</text>
+	</string>
+	<string id="st_up_stvh_a1_name">
+		<text>高耐久, 高耐热合金</text>
+	</string>
+	<string id="st_up_stvh_b1_descr">
+		<text>这项关键的改装可以让武器射击时不受任何空气湿度和温度的影响</text>
+	</string>
+	<string id="st_up_stvh_b1_name">
+		<text>附加自动温控型机匣</text>
+	</string>
+	<string id="st_up_stvh_b2_descr">
+		<text>这种高科技的散热改装需要极高的制作工艺, 它可以有效的防止武器射击时枪管过热.</text>
+	</string>
+	<string id="st_up_stvh_b2_name">
+		<text>枪管表面散热装置</text>
+	</string>
+	<string id="st_up_stvh_c1_descr">
+		<text>替换一个更加现代化的新版本枪管, 武器的精确度会大大的增加.</text>
+	</string>
+	<string id="st_up_stvh_c1_name">
+		<text>更换新型枪管</text>
+	</string>
+	<string id="st_up_stvp_a1_descr">
+		<text>这种昂贵的机匣可以大大的延长武器的使用寿命.</text>
+	</string>
+	<string id="st_up_stvp_a1_name">
+		<text>钛合金机匣</text>
+	</string>
+	<string id="st_up_stvp_a2_descr">
+		<text>这种机匣材料比复合材料更加的可靠.</text>
+	</string>
+	<string id="st_up_stvp_a2_name">
+		<text>实钢机匣</text>
+	</string>
+	<string id="st_up_stvp_b1_descr">
+		<text>这是一种专门升级手枪机匣的配件, 可以在毫不影响武器可靠性的前提下替换为轻型的机匣框架.</text>
+	</string>
+	<string id="st_up_stvp_b1_name">
+		<text>聚合物手枪机匣</text>
+	</string>
+	<string id="st_up_stvp_b2_descr">
+		<text>一个更加现代化, 手感更佳的握把, 可以提高武器的手感.</text>
+	</string>
+	<string id="st_up_stvp_b2_name">
+		<text>人体工程学握把</text>
+	</string>
+	<string id="st_up_stvp_b3_descr">
+		<text>这种减震型握把可以降低后坐力.</text>
+	</string>
+	<string id="st_up_stvp_b3_name">
+		<text>减震型握把</text>
+	</string>
+	<string id="st_up_stvp_b4_descr">
+		<text>这种增厚型防护垫圈可以保护武器不会堆积火药残渣, 并且受其影响.</text>
+	</string>
+	<string id="st_up_stvp_b4_name">
+		<text>密封防护机构</text>
+	</string>
+	<string id="st_up_stvp_b5_descr">
+		<text>将握把的后部改装成更符合人体工程学的外形.</text>
+	</string>
+	<string id="st_up_stvp_b5_name">
+		<text>改装为直尾部握把</text>
+	</string>
+	<string id="st_up_stvp_b6_descr">
+		<text>改装为长度可调式握把, 让其可以调节长度更符合人体工程学外形.</text>
+	</string>
+	<string id="st_up_stvp_b6_name">
+		<text>伸缩式握把</text>
+	</string>
+	<string id="st_up_stvp_c1_descr">
+		<text>这种改装是唯一一种可能把复进簧装进握把里方法.</text>
+	</string>
+	<string id="st_up_stvp_c1_name">
+		<text>安装一个复进簧减震装置</text>
+	</string>
+	<string id="st_up_stvp_c2_descr">
+		<text>可调式镶板可以让使用者选择握把的外形以更符合人体工程学.</text>
+	</string>
+	<string id="st_up_stvp_c2_name">
+		<text>替换一种可调式镶板形握把</text>
+	</string>
+	<string id="st_up_stvs_a1_descr">
+		<text>这种经常用于保护武器机匣外壳的部件可以防止武器过早的出现磨损.</text>
+	</string>
+	<string id="st_up_stvs_a1_name">
+		<text>安装一个穿孔钢型机匣壳</text>
+	</string>
+	<string id="st_up_stvs_b1_descr">
+		<text>这种更高技术含量的制退器大多都是用在自动武器上.</text>
+	</string>
+	<string id="st_up_stvs_b1_name">
+		<text>高效能枪口制退器</text>
+	</string>
+	<string id="st_up_stvs_b2_descr">
+		<text>一种针对狙击步枪超远程射击的现代化枪管改装.</text>
+	</string>
+	<string id="st_up_stvs_b2_name">
+		<text>安装具备多边形膛线的重型枪管</text>
+	</string>
+	<string id="st_up_stvs_b3_descr">
+		<text>枪管内的纵向膛线可以防止射击时枪管过热或是枪管内堆积火药残渣导致的子弹卡壳.</text>
+	</string>
+	<string id="st_up_stvs_b3_name">
+		<text>纵向膛线枪管</text>
+	</string>
+	<string id="st_up_stvs_c1_descr">
+		<text>整体型消音器和消焰器是隐秘行动必不可少的装备.</text>
+	</string>
+	<string id="st_up_stvs_c1_name">
+		<text>安装一个整体型消音器</text>
+	</string>
+	<string id="st_up_stvs_c2_descr">
+		<text>正弦型膛线通常都是用来提高突击型武器的射速.</text>
+	</string>
+	<string id="st_up_stvs_c2_name">
+		<text>正弦型膛线枪膛</text>
+	</string>
+	<string id="st_up_usm_a1_descr">
+		<text>这个部件可以缓冲掉射击时枪栓带来的后坐力, 提高全自动射击时的精确度.</text>
+	</string>
+	<string id="st_up_usm_a1_name">
+		<text>枪栓制退器</text>
+	</string>
+	<string id="st_up_usm_a2_descr">
+		<text>这项改装比较简单实用而且也很流行, 它能降低扳机的阻力.既简单又方便.</text>
+	</string>
+	<string id="st_up_usm_a2_name">
+		<text>软击发</text>
+	</string>
+	<string id="st_up_usm_b1_descr">
+		<text>这种特殊的组件是由特定材料制成可以在各种武器上通用, 它可不便宜, 但它可以增加你的武器的使用寿命.</text>
+	</string>
+	<string id="st_up_usm_b1_name">
+		<text>合成材料火控组件</text>
+	</string>
+	<string id="st_up_usm_b2_descr">
+		<text>这项改装可以提高武器的射速, 但是武器的精确度和可靠性会降低.</text>
+	</string>
+	<string id="st_up_usm_b2_name">
+		<text>强制型扳机延迟装置</text>
+	</string>
+	<string id="st_up_usm_b3_descr">
+		<text>拿掉弹簧可以让你在战斗中第一枪快半秒开火, 这可能不是很有用, 但是有可能会救你一命.</text>
+	</string>
+	<string id="st_up_usm_b3_name">
+		<text>拿掉弹簧</text>
+	</string>
+	<string id="st_up_usm_c1_descr">
+		<text>保护涂层可以避免由于击发装置的故障而造成的子弹卡壳.</text>
+	</string>
+	<string id="st_up_usm_c1_name">
+		<text>击发装置保护涂层</text>
+	</string>
+	<string id="st_up_usm_c2_descr">
+		<text>自动装填装置可以提高武器的装填速度, 同时能大大的提高武器的射速.</text>
+	</string>
+	<string id="st_up_usm_c2_name">
+		<text>自动装填装置</text>
+	</string>
+	<string id="st_up_usm_c3_descr">
+		<text>这种无后坐力系统并没有在供弹系统上做文章, 它是采用了一种特殊的击针装置, 这使得射击时的后坐力相当的平软.</text>
+	</string>
+	<string id="st_up_usm_c3_name">
+		<text>安装一个无后坐力击发系统</text>
+	</string>
+	<string id="st_up_usmp_a1_descr">
+		<text>扳机由第一次触发, 所有其他触发均在自动触发触发期间发生.</text>
+	</string>
+	<string id="st_up_usmp_a1_name">
+		<text>双扳机击发机制</text>
+	</string>
+	<string id="st_up_usmp_b1_descr">
+		<text>这项改装比较简单实用而且也很流行, 它能降低扳机的阻力.既简单又方便.</text>
+	</string>
+	<string id="st_up_usmp_b1_name">
+		<text>软击发</text>
+	</string>
+	<string id="st_up_usmp_b2_descr">
+		<text>部分预装可以提高射击精度.</text>
+	</string>
+	<string id="st_up_usmp_b2_name">
+		<text>带部分预装的射击机制</text>
+	</string>
+	<string id="st_up_usmp_b3_descr">
+		<text>这项改装可以让扳机在发射第一个子弹一直到最后一颗子弹时始终保持在同一扳机压力上, 这既简单又实用.</text>
+	</string>
+	<string id="st_up_usmp_b3_name">
+		<text>安全型击发装置</text>
+	</string>
+	<string id="st_up_usmp_b4_descr">
+		<text>这种现代化的改装可以防止枪栓结构分离导致的卡壳.</text>
+	</string>
+	<string id="st_up_usmp_b4_name">
+		<text>增加扳机枪栓头</text>
+	</string>
+	<string id="st_up_usmp_b5_descr">
+		<text>模块化的击发机构可以更方便的维修或是更换部件, 可以让武器的使用和维护更加的容易.</text>
+	</string>
+	<string id="st_up_usmp_b5_name">
+		<text>模块化击发机构</text>
+	</string>
+	<string id="st_up_usmp_c1_descr">
+		<text>这个组件可以大大的降低扣动扳机所需的压力, 提高武器精确度.</text>
+	</string>
+	<string id="st_up_usmp_c1_name">
+		<text>安装扳机待命组件</text>
+	</string>
+	<string id="st_up_usmp_c2_descr">
+		<text>这种新技术改装可以让击发机构更加的简单, 以此改善武器的射击模式 - 让武器向更人性化的方向改进, 校准武器也更加的简单.</text>
+	</string>
+	<string id="st_up_usmp_c2_name">
+		<text>"双发点射"模式</text>
+	</string>
+	<string id="st_up_usmp_c3_descr">
+		<text>一旦开火后, 接下来只要扣下一半的扳机行程武器就会射击.</text>
+	</string>
+	<string id="st_up_usmp_c3_name">
+		<text>短行程击发机构</text>
+	</string>
+	<string id="st_up_zat_a1_descr">
+		<text>这种价格相当高的改装其实在新一代武器上其实是非常普遍的.</text>
+	</string>
+	<string id="st_up_zat_a1_name">
+		<text>安装强化枪栓组件</text>
+	</string>
+	<string id="st_up_zat_a2_descr">
+		<text>增厚枪栓机构部件可以防止火药燃气外泄, 从而提高弹道平直度.</text>
+	</string>
+	<string id="st_up_zat_a2_name">
+		<text>使用合成嵌件加厚枪栓截面</text>
+	</string>
+	<string id="st_up_zat_a3_descr">
+		<text>尽管名称如此, 但替换的是枪栓, 因为它必须承受提高射速的后果.</text>
+	</string>
+	<string id="st_up_zat_a3_name">
+		<text>快速自动击发</text>
+	</string>
+	<string id="st_up_zat_b1_descr">
+		<text>排气口带有一个以相同速度移动的块, 承担部分后坐力.</text>
+	</string>
+	<string id="st_up_zat_b1_name">
+		<text>安装一个带移动块的排气口</text>
+	</string>
+	<string id="st_up_zat_b2_descr">
+		<text>安装一个双重反冲活塞制退器, 可以降低枪栓运动时造成的后坐力.</text>
+	</string>
+	<string id="st_up_zat_b2_name">
+		<text>安装附加气体活塞</text>
+	</string>
+	<string id="st_up_zat_b3_descr">
+		<text>保护性喷涂可以提高可靠性, 更重要的是它能保证枪机气密性, 防止燃气能量泄露.</text>
+	</string>
+	<string id="st_up_zat_b3_name">
+		<text>保护性枪栓喷涂</text>
+	</string>
+	<string id="st_up_zat_b4_descr">
+		<text>枪机上的倾斜凹槽的目的是减少摩擦并捕获小颗粒, 防止枪栓部分受到污染.</text>
+	</string>
+	<string id="st_up_zat_b4_name">
+		<text>附加纵向凹槽</text>
+	</string>
+	<string id="st_up_zat_b5_descr">
+		<text>用合成增稠剂减小气室直径可大大提高子弹的速度.</text>
+	</string>
+	<string id="st_up_zat_b5_name">
+		<text>定向导气能</text>
+	</string>
+	<string id="st_up_zat_b6_descr">
+		<text>当枪栓运动到起始位置时, 枪膛气流定向装置会通过空气来冷却它.</text>
+	</string>
+	<string id="st_up_zat_b6_name">
+		<text>强制冷却器</text>
+	</string>
+	<string id="st_up_zat_c1_descr">
+		<text>武器的枪栓会沿着枪管滑动, 可以防止射击时的枪口上跳.</text>
+	</string>
+	<string id="st_up_zat_c1_name">
+		<text>安装缓慢枪栓</text>
+	</string>
+	<string id="st_up_zat_c2_descr">
+		<text>将手枪的导气制动装置安装到枪栓框架内, 这可以大大降低武器受火药残渣的污染程度.</text>
+	</string>
+	<string id="st_up_zat_c2_name">
+		<text>安装气动活塞装置</text>
+	</string>
+	<string id="st_up_zat_c3_descr">
+		<text>该系统可以聚集火药燃气用来提高枪栓运动速度.</text>
+	</string>
+	<string id="st_up_zat_c3_name">
+		<text>火药燃气聚集系统</text>
+	</string>
+	<string id="st_up_zat_c4_descr">
+		<text>使用改进型的燃气助推活塞来替换掉之前的快慢机, 可以大大的提高武器的射速.</text>
+	</string>
+	<string id="st_up_zat_c4_name">
+		<text>短行程气体活塞</text>
+	</string>
+	<string id="st_up_zat_c5_descr">
+		<text>通常用于现代武器, 滚轴锁定系统可减少后坐力并改善分组.</text>
+	</string>
+	<string id="st_up_zat_c5_name">
+		<text>改装为半自由枪栓的滚轴系统</text>
+	</string>
+	<string id="st_up_zath_a1_descr">
+		<text>这种组件可以吸收一些热量, 防止由于持续全自动射击导致的武器过热.</text>
+	</string>
+	<string id="st_up_zath_a1_name">
+		<text>热量吸收部件</text>
+	</string>
+	<string id="st_up_zath_b1_descr">
+		<text>一种会略微的增加武器长度的长行程导气活塞装置, 但它可以显著的改善武器的弹道平直度.</text>
+	</string>
+	<string id="st_up_zath_b1_name">
+		<text>长行程气动活塞装置</text>
+	</string>
+	<string id="st_up_zath_b2_descr">
+		<text>这种移动缓冲部件可以在武器射击的时候均匀的分布后坐力, 从而使其后坐力降低.</text>
+	</string>
+	<string id="st_up_zath_b2_name">
+		<text>安装一个特殊的制退部件</text>
+	</string>
+	<string id="st_up_zath_c1_descr">
+		<text>对称型强制冷却装置可以通过其均匀的冷却枪管, 从而保证武器不会过热.</text>
+	</string>
+	<string id="st_up_zath_c1_name">
+		<text>强制冷却系统</text>
+	</string>
+	<string id="st_up_zatp_a1_descr">
+		<text>在提高武器射速的情况下不会让枪械的其他部件受损, 但会增加武器的后坐力.</text>
+	</string>
+	<string id="st_up_zatp_a1_name">
+		<text>滑动型枪栓组件</text>
+	</string>
+	<string id="st_up_zatp_b1_descr">
+		<text>由于提高了弹头的初速和冲击力, 所以弹道平直度也相应的有所改善.</text>
+	</string>
+	<string id="st_up_zatp_b1_name">
+		<text>枪栓结构密闭系统</text>
+	</string>
+	<string id="st_up_zatp_b2_descr">
+		<text>通过减慢枪栓部分的后退运动来软化后坐力.</text>
+	</string>
+	<string id="st_up_zatp_b2_name">
+		<text>慢栓后退系统</text>
+	</string>
+	<string id="st_up_zatp_b3_descr">
+		<text>保护涂层可以防止武器过快的磨损.</text>
+	</string>
+	<string id="st_up_zatp_b3_name">
+		<text>枪栓保护涂层</text>
+	</string>
+	<string id="st_up_zatp_b4_descr">
+		<text>由于提高了弹头的初速和冲击力, 所以弹道平直度也相应的有所改善.</text>
+	</string>
+	<string id="st_up_zatp_b4_name">
+		<text>枪管密闭系统</text>
+	</string>
+	<string id="st_up_zatp_b5_descr">
+		<text>一个重型密闭枪栓可以防止手枪的枪栓机构出故障.</text>
+	</string>
+	<string id="st_up_zatp_b5_name">
+		<text>增强型密闭枪栓</text>
+	</string>
+	<string id="st_up_zatp_b6_descr">
+		<text>一个小的缓冲器, 承担一些后坐力.</text>
+	</string>
+	<string id="st_up_zatp_b6_name">
+		<text>聚合物反冲缓冲器</text>
+	</string>
+	<string id="st_up_zatp_b7_descr">
+		<text>安装钢制嵌件有助于减少后坐力.</text>
+	</string>
+	<string id="st_up_zatp_b7_name">
+		<text>安装带有成形螺旋槽的封闭嵌件</text>
+	</string>
+	<string id="st_up_zatp_b8_descr">
+		<text>通过增加枪栓行程和加强复进机构强度, 来提高武器的弹道平直度.</text>
+	</string>
+	<string id="st_up_zatp_b8_name">
+		<text>增加枪栓行程</text>
+	</string>
+	<string id="st_up_zatp_c1_descr">
+		<text>短行程枪栓可以在毫不影响弹道平直度的前提下提高武器的射速.</text>
+	</string>
+	<string id="st_up_zatp_c1_name">
+		<text>安装短行程枪栓组件</text>
+	</string>
+	<string id="st_up_zatp_c2_descr">
+		<text>长行程枪栓可以加大弹头的冲击力.</text>
+	</string>
+	<string id="st_up_zatp_c2_name">
+		<text>安装长行程枪栓加长枪管</text>
+	</string>
+	<string id="st_up_zatp_c3_descr">
+		<text>使用改进型的燃气助推活塞来替换掉之前的快慢机, 可以大大的提高武器的射速.</text>
+	</string>
+	<string id="st_up_zatp_c3_name">
+		<text>安装一个短行程后坐能量利用系统</text>
+	</string>
+	<string id="st_up_zatp_c4_descr">
+		<text>安装这个模组能大幅提高射击精度, 而且不用牺牲武器的射速.</text>
+	</string>
+	<string id="st_up_zatp_c4_name">
+		<text>双弹簧复位模组</text>
+	</string>
+	<string id="st_up_zatp_c5_descr">
+		<text>采用可以显著减少后座力的附加孔.</text>
+	</string>
+	<string id="st_up_zatp_c5_name">
+		<text>整合式枪管上跳抵消器</text>
+	</string>
+	<string id="st_up_zatp_c6_descr">
+		<text>改造手枪的自动机构, 能让手枪适合进行全自动射击.</text>
+	</string>
+	<string id="st_up_zatp_c6_name">
+		<text>全自动射击模式</text>
+	</string>
+	<string id="st_up_zatp_c7_descr">
+		<text>修改手枪的自动部件, 使它适合于3连发模式.</text>
+	</string>
+	<string id="st_up_zatp_c7_name">
+		<text>三发点射模式</text>
+	</string>
+	<string id="st_upgr_cost">
+		<text>花费</text>
+	</string>
+	<string id="st_upgr_disable">
+		<text>不能安装</text>
+	</string>
+	<string id="st_upgr_installed">
+		<text>-</text>
+	</string>
+	<string id="st_upgrade_install">
+		<text>你确定要安装吗:</text>
+	</string>
+	<string id="st_prop_autolock">
+		<text>自动目标搜寻系统</text>
+	</string>
+	<string id="st_prop_autolockscope">
+		<text>自动目标搜寻系统</text>
+	</string>
+	<string id="st_prop_scope_5x">
+		<text>5倍光学瞄准镜</text>
+	</string>
+	<string id="st_prop_scope_6x">
+		<text>6倍光学瞄准镜</text>
+	</string>
+	<string id="st_prop_scope_12x">
+		<text>12倍光学瞄准镜</text>
+	</string>
+	<string id="st_prop_scope_15x">
+		<text>15倍光学瞄准镜</text>
+	</string>
+	<string id="st_prop_scanner">
+		<text>红外扫描器</text>
+	</string>
+	<string id="st_prop_weightoutfit">
+		<text>防弹衣重量</text>
+	</string>
+	<string id="st_prop_night_vision_2">
+		<text>PN21KL第二代夜视设备</text>
+	</string>
+	<string id="st_prop_night_vision_3">
+		<text>PN21KL第三代夜视设备</text>
+	</string>
+	<string id="st_prop_night_vision_10">
+		<text>升级PN21KL第三代夜视设备</text>
+	</string>
+	<string id="st_prop_scope_attach">
+		<text>增加光学瞄准镜基座</text>
+	</string>
+	<string id="st_int_silencer">
+		<text>整合式消声器</text>
+	</string>
+	<string id="st_prop_grenade_launcher">
+		<text>枪挂式榴弹发射器</text>
+	</string>
+	<string id="st_prop_restore_bleeding">
+		<text>治疗出血</text>
+	</string>
+	<string id="st_prop_restore_health">
+		<text>生命恢复</text>
+	</string>
+	<string id="st_prop_night_vision">
+		<text>1PN93-1第一代夜视设备</text>
+	</string>
+	<string id="st_prop_scope">
+		<text>可调式瞄准镜</text>
+	</string>
+	<string id="st_prop_contrast">
+		<text>高对比度瞄准镜</text>
+	</string>
+	<string id="st_prop_sprint">
+		<text>加大伺服电机功率</text>
+	</string>
+	<string id="st_prop_durability">
+		<text>防具耐久度</text>
+	</string>
+	<string id="st_prop_not_available">
+		<text>所需武器等级:</text>
+	</string>
+	<string id="st_prop_not_available_no_reason">
+		<text>此武器不支持升级</text>
+	</string>
+	<string id="st_gauss_cannot_be_repaired">
+		<text>不清楚这把武器的工作原理. 在没有关于这把枪设计信息的情况下不能进行维修.</text>
+	</string>
+	<string id="st_upgr_cant_do">
+		<text>技工无法进行此项改进.</text>
+	</string>
+	<string id="st_upgr_group">
+		<text>该部件已升级</text>
+	</string>
+	<string id="st_upgr_enough_money">
+		<text>没钱</text>
+	</string>
+	<string id="st_no_buck">
+		<text>无法使用霰弹弹药</text>
+	</string>
+	<string id="st_auto_fire">
+		<text>自动模式</text>
+	</string>
+	<string id="st_semi_auto_fire">
+		<text>3发点射模式</text>
+	</string>
+	<string id="st_prop_artefact">
+		<text>护甲上的神器插槽数量</text>
+	</string>
+	<string id="st_upgr_vodka">
+		<text>技师需要伏特加</text>
+	</string>
+	<string id="st_upgr_toolkit_1">
+		<text>技师需要基本工具来做基础工作</text>
+	</string>
+	<string id="st_upgr_toolkit_2">
+		<text>技师需要进阶工具来做精细工作</text>
+	</string>
+	<string id="st_upgr_toolkit_3">
+		<text>技师需要专业工具来做校准工作</text>
+	</string>
+	<string id="st_upgr_condlist">
+		<text>技师需要额外的信息</text>
+	</string>
+	<string id="st_upgr_parents">
+		<text>需要先前部分的改造</text>
+	</string>
+	<string id="st_upgr_rusty_profile">
+		<text>武器生锈了, 无法进行机械改装</text>
+	</string>
+	<string id="st_upgr_worn_profile">
+		<text>武器腐蚀严重, 基础改造及基础水平以上的改造不可用</text>
+	</string>
+	<string id="st_upgr_standard_profile">
+		<text>需要现代化武器配置文件来进行改装</text>
+	</string>
+	<string id="st_upgr_no_reason">
+		<text>无法对此物品进行改造</text>
+	</string>
+	<string id="st_up_arm_c9_name">
+		<text>基于蓝宝石晶体的"犰狳"保护覆盖层</text>
+	</string>
+	<string id="st_up_arm_c5_name">
+		<text>增强型钛和铍矩阵</text>
+	</string>
+	<string id="st_up_arm_c7_name">
+		<text>额外的碳纤维覆盖层</text>
+	</string>
+	<string id="st_up_kom_a5_name">
+		<text>橡胶布底层</text>
+	</string>
+	<string id="st_up_upgrade_not_available_name">
+		<text>升级不可用</text>
+	</string>
+	<string id="st_up_upgrade_not_available_descr">
+		<text>此升级选项对此物品不可用.</text>
+	</string>
+	
+	
+	<!-- Armour upgrade descriptions  -->	
+	
+	<string id="st_up_arm_a1_descr">
+		<text>增加钛板数量可大大提高防弹衣的耐用性.</text>
+	</string>
+	<string id="st_up_arm_a1_name">
+		<text>额外的铝板/钛板</text>
+	</string>
+	<string id="st_up_arm_a2_descr">
+		<text>防弹板的使用寿命更长, 但不耐用.</text>
+	</string>
+	<string id="st_up_arm_a2_name">
+		<text>凯夫拉防弹板</text>
+	</string>
+	<string id="st_up_arm_a3_descr">
+		<text>铝钛合金可以减少纯钛制的个人防具的重量.</text>
+	</string>
+	<string id="st_up_arm_a3_name">
+		<text>铝钛合金板</text>
+	</string>
+	<string id="st_up_arm_a4_descr">
+		<text>钛对于个人防具来说太重了, 但是有时会用于外骨骼.</text>
+	</string>
+	<string id="st_up_arm_a4_name">
+		<text>可靠的钛合金部件</text>
+	</string>
+	<string id="st_up_arm_a5_descr">
+		<text>用碳纤维取代金属, 在减少护甲重量的同时又不牺牲可靠性.</text>
+	</string>
+	<string id="st_up_arm_a5_name">
+		<text>用碳纤维来取代护甲的金属部分</text>
+	</string>
+	<string id="st_up_arm_a6_descr">
+		<text>凯夫拉是防弹衣最常用的材料之一.</text>
+	</string>
+	<string id="st_up_arm_a6_name">
+		<text>凯夫拉板</text>
+	</string>
+	<string id="st_up_arm_a7_descr">
+		<text>聚碳酸酯能够阻止手枪子弹, 同时保持与塑料一样轻.</text>
+	</string>
+	<string id="st_up_arm_a7_name">
+		<text>聚碳酸酯板</text>
+	</string>
+	<string id="st_up_arm_a8_descr">
+		<text>陶瓷防弹板的寿命不太长, 但是抵抗子弹冲击的效果却比凯夫拉要好.</text>
+	</string>
+	<string id="st_up_arm_a8_name">
+		<text>安装陶瓷防弹板</text>
+	</string>
+	<string id="st_up_arm_a9_descr">
+		<text>把一些简单的钢板缝进土匪风衣里.</text>
+	</string>
+	<string id="st_up_arm_a9_name">
+		<text>钢板</text>
+	</string>
+	<string id="st_up_arm_b1_descr">
+		<text>陶瓷外层可以使穿透的子弹转向一定角度, 还可以瞬间吸收穿透子弹的冲击力.</text>
+	</string>
+	<string id="st_up_arm_b1_name">
+		<text>外覆陶瓷防弹衣</text>
+	</string>
+	<string id="st_up_arm_b2_descr">
+		<text>安装内层护甲以防外层损坏.</text>
+	</string>
+	<string id="st_up_arm_b2_name">
+		<text>双层保护板</text>
+	</string>
+	<string id="st_up_arm_b3_descr">
+		<text>为护甲添加能使大部分子弹冲击力分散的内置防弹层.</text>
+	</string>
+	<string id="st_up_arm_b3_name">
+		<text>添加能使冲击力分散的内置防弹层</text>
+	</string>
+	<string id="st_up_arm_b4_descr">
+		<text>当主要护甲损坏后, 额外的框架能抵抗手枪子弹.</text>
+	</string>
+	<string id="st_up_arm_b4_name">
+		<text>额外的护甲框架</text>
+	</string>
+	<string id="st_up_arm_b5_descr">
+		<text>较薄的护甲板分层以增加护甲的耐磨性.</text>
+	</string>
+	<string id="st_up_arm_b5_name">
+		<text>分层护甲板保护</text>
+	</string>
+	<string id="st_up_arm_b6_descr">
+		<text>更多的防弹板并不意味着更好的保护性能, 但是它们保证了耐久性.</text>
+	</string>
+	<string id="st_up_arm_b6_name">
+		<text>安装一个次级的后备护甲层</text>
+	</string>
+	<string id="st_up_arm_b7_descr">
+		<text>可移动防弹板能保护关节部分免受枪伤.</text>
+	</string>
+	<string id="st_up_arm_b7_name">
+		<text>为关节部分安装可移动式保护层</text>
+	</string>
+	<string id="st_up_arm_b8_descr">
+		<text>更轻的铝制框架, 用来代替钢制框架.</text>
+	</string>
+	<string id="st_up_arm_b8_name">
+		<text>更轻的铝制框架</text>
+	</string>
+	<string id="st_up_arm_b9_descr">
+		<text>加厚的嵌件, 以减少子弹通过防弹衣的冲击力.</text>
+	</string>
+	<string id="st_up_arm_b9_name">
+		<text>加厚皮革嵌件</text>
+	</string>
+	<string id="st_up_arm_c10_descr">
+		<text>外加硅减震陶瓷层.</text>
+	</string>
+	<string id="st_up_arm_c10_name">
+		<text>增强型陶瓷防弹板</text>
+	</string>
+	<string id="st_up_arm_c11_descr">
+		<text>使用更轻的材料来减轻防弹衣的重量.</text>
+	</string>
+	<string id="st_up_arm_c11_name">
+		<text>安装更轻的合成和塑料部件</text>
+	</string>
+	<string id="st_up_arm_c12_descr">
+		<text>虽然结实的钛板对于一个步兵来说太重, 以致成为累赘, 但是, 外骨骼能用它那强大的伺服电机轻松解决搞定这些重量.</text>
+	</string>
+	<string id="st_up_arm_c12_name">
+		<text>钛制护胸</text>
+	</string>
+	<string id="st_up_arm_c13_descr">
+		<text>SBK-RKhZ.m.II - 一种特殊的辐射防护服, 二型.</text>
+	</string>
+	<string id="st_up_arm_c13_name">
+		<text>SBK-RKhZ.m.II密封的辐射防护服</text>
+	</string>
+	<string id="st_up_arm_c1_descr">
+		<text>这个耗费了大量人力物力的改进并不是很受欢迎, 尽管它因能拯救生命而被大家众所周知.</text>
+	</string>
+	<string id="st_up_arm_c1_name">
+		<text>缝制锁子甲衬衫</text>
+	</string>
+	<string id="st_up_arm_c2_descr">
+		<text>由陶瓷板构成的鳞片甲可以避免穿着者被击中同一地方两次.</text>
+	</string>
+	<string id="st_up_arm_c2_name">
+		<text>改装成偏斜的陶瓷鳞片甲</text>
+	</string>
+	<string id="st_up_arm_c3_descr">
+		<text>使用"至尊"处理后, 紧身衣就变得刀枪不入, 而且不会撕裂.</text>
+	</string>
+	<string id="st_up_arm_c3_name">
+		<text>用"至尊"固定化合物处理</text>
+	</string>
+	<string id="st_up_arm_c4_descr">
+		<text>陶瓷能吸收子弹的冲击力还能使子弹偏转、碎裂并且弹开.</text>
+	</string>
+	<string id="st_up_arm_c4_name">
+		<text>在防弹板外涂上一层陶瓷</text>
+	</string>
+	<string id="st_up_arm_c5_descr">
+		<text>用加强型铍模块来代替铝, 这是种能提供最可靠的单兵保护的方式.</text>
+	</string>
+	<string id="st_up_arm_c6_descr">
+		<text>陶瓷能吸收子弹的冲击力还能使子弹偏转、碎裂并且弹开.</text>
+	</string>
+	<string id="st_up_arm_c6_name">
+		<text>防弹板外层陶瓷</text>
+	</string>
+	<string id="st_up_arm_c7_descr">
+		<text>碳纤维是最耐用而且最抗磨的材料之一, 它甚至被用于航空工业.</text>
+	</string>
+	<string id="st_up_arm_c8_descr">
+		<text>组合型多层聚合物和陶瓷涂层.</text>
+	</string>
+	<string id="st_up_arm_c8_name">
+		<text>外层保护护甲组合板</text>
+	</string>
+	<string id="st_up_arm_c9_descr">
+		<text>最新的国内个人防护领域发明 - 能自我修复的人工蓝宝石晶体护甲板.</text>
+	</string>
+	
+	<string id="st_up_exo_a1_descr">
+		<text>额外的运动装置允许增加最大承载负载.</text>
+	</string>
+	<string id="st_up_exo_a1_name">
+		<text>附加的伺服电机</text>
+	</string>
+	<string id="st_up_exo_b1_descr">
+		<text>一种由自由军的技术人员研制的技术, 用碳纤维取代金属材料来改进第一代外骨骼, 以降低其巨大的重量.</text>
+	</string>
+	<string id="st_up_exo_b1_name">
+		<text>用碳纤维来取代金属部件</text>
+	</string>
+	<string id="st_up_exo_b2_descr">
+		<text>在外骨骼的关键部位加装保护型护甲板可以有效的防御敌方的精确火力打击.</text>
+	</string>
+	<string id="st_up_exo_b2_name">
+		<text>护甲驱动保护装置</text>
+	</string>
+	<string id="st_up_exo_c1_descr">
+		<text>这种简单的运动辅助系统采用强化型弹簧和加强型链条连接关节部位, 它可以让穿戴着在运动的时候降低体能的消耗.</text>
+	</string>
+	<string id="st_up_exo_c1_name">
+		<text>"步行机"简单运动辅助系统</text>
+	</string>
+	<string id="st_up_exo_c2_descr">
+		<text>第四代外骨骼和第三代的主要区别是它安装有一个液压助推传动器.它可以让穿戴者在装备上外骨骼的情况下进行奔跑.</text>
+	</string>
+	<string id="st_up_exo_c2_name">
+		<text>安装液压助推传动装置</text>
+	</string>
+	
+	<string id="st_up_kom_a1_descr">
+		<text>面料嵌件可防止在撞击板时损坏软组织.</text>
+	</string>
+	<string id="st_up_kom_a1_name">
+		<text>面料减震层</text>
+	</string>
+	<string id="st_up_kom_a2_descr">
+		<text>与橡胶相比, 硅增稠剂更有效地吸收冲击, 而对穿着者的伤害更小.</text>
+	</string>
+	<string id="st_up_kom_a2_name">
+		<text>加厚硅胶减震</text>
+	</string>
+	<string id="st_up_kom_a3_descr">
+		<text>面料、夹子和增稠剂被更轻的合成材料取代, 以减轻护甲重量.</text>
+	</string>
+	<string id="st_up_kom_a3_name">
+		<text>更轻的合成材料和聚合物材料</text>
+	</string>
+	<string id="st_up_kom_a4_descr">
+		<text>橡胶化可防止在撞击板时对软组织造成损伤.</text>
+	</string>
+	<string id="st_up_kom_a4_name">
+		<text>橡胶减震层</text>
+	</string>
+	<string id="st_up_kom_a5_descr">
+		<text>如果主面料撕裂, 底层会有所帮助.</text>
+	</string>
+	<string id="st_up_kom_a6_descr">
+		<text>多层聚碳酸酯、硅和碳纤维嵌件, 以防主护甲被穿透.</text>
+	</string>
+	<string id="st_up_kom_a6_name">
+		<text>保护性聚合物嵌件</text>
+	</string>
+	<string id="st_up_kom_a7_descr">
+		<text>自由军潜行者的封闭式紧身防具, 一般都是在异常点里探寻神器时穿着.</text>
+	</string>
+	<string id="st_up_kom_a7_name">
+		<text>异常点封闭式紧身防护服</text>
+	</string>
+	<string id="st_up_kom_a8_descr">
+		<text>在外层主护甲破损的情况下, 内部的聚合物合成材料密封内衬还可以起到保护作用.</text>
+	</string>
+	<string id="st_up_kom_a8_name">
+		<text>聚合物合成材料内衬</text>
+	</string>
+	<string id="st_up_kom_b10_descr">
+		<text>一种非常符合人体工程学的可调整型高灵活型橡胶构紧身服, 即使穿着笨重的盔甲防具它也丝毫不会影响穿戴者的灵活性.</text>
+	</string>
+	<string id="st_up_kom_b10_name">
+		<text>高灵活性橡胶紧身服</text>
+	</string>
+	<string id="st_up_kom_b11_descr">
+		<text>康铜能够隔离电并且具有非常高的熔点.</text>
+	</string>
+	<string id="st_up_kom_b11_name">
+		<text>康铜隔热嵌件</text>
+	</string>
+	<string id="st_up_kom_b12_descr">
+		<text>铅可以完全的吸收三大类型的辐射, 可以说用它来防御辐射是非常可靠的.</text>
+	</string>
+	<string id="st_up_kom_b12_name">
+		<text>在紧身衣上添加铅</text>
+	</string>
+	<string id="st_up_kom_b1_descr">
+		<text>防止雨水和腐蚀性物质与皮肤接触的基本防护措施.</text>
+	</string>
+	<string id="st_up_kom_b1_name">
+		<text>帆布紧身衣</text>
+	</string>
+	<string id="st_up_kom_b2_descr">
+		<text>经耐火物质处理的织物在寻找火制品的潜行者中很受欢迎.</text>
+	</string>
+	<string id="st_up_kom_b2_name">
+		<text>经耐火物质处理的面料</text>
+	</string>
+	<string id="st_up_kom_b3_descr">
+		<text>镁板嵌件可以保护穿戴者不受高温的伤害.</text>
+	</string>
+	<string id="st_up_kom_b3_name">
+		<text>镁板嵌件</text>
+	</string>
+	<string id="st_up_kom_b4_descr">
+		<text>即使是简单的塑料内层也能保护穿戴者免受化学危害.</text>
+	</string>
+	<string id="st_up_kom_b4_name">
+		<text>密封塑料内层</text>
+	</string>
+	<string id="st_up_kom_b5_descr">
+		<text>将护甲防具内的织物, 防弹板和加强涂层内衬等替换为更轻便的聚合物材料, 以降低护甲防具的重量.</text>
+	</string>
+	<string id="st_up_kom_b5_name">
+		<text>高分子聚合物材料</text>
+	</string>
+	<string id="st_up_kom_b6_descr">
+		<text>有机玻璃可吸收两种类型的放射线, 而且比铅轻得多.</text>
+	</string>
+	<string id="st_up_kom_b6_name">
+		<text>有机玻璃防辐射内衬层</text>
+	</string>
+	<string id="st_up_kom_b7_descr">
+		<text>它能够有效的防护化学物质和电造成的威胁.</text>
+	</string>
+	<string id="st_up_kom_b7_name">
+		<text>弹性封闭式塑料保护层</text>
+	</string>
+	<string id="st_up_kom_b8_descr">
+		<text>一薄层康铜能够隔离电.</text>
+	</string>
+	<string id="st_up_kom_b8_name">
+		<text>用于隔离的康铜内层</text>
+	</string>
+	<string id="st_up_kom_b9_descr">
+		<text>玻璃纤维用于自然灾害应急小组的紧身衣.</text>
+	</string>
+	<string id="st_up_kom_b9_name">
+		<text>玻璃纤维热防护层</text>
+	</string>
+	<string id="st_up_kom_c1_descr">
+		<text>全包面料和防止化学中毒.</text>
+	</string>
+	<string id="st_up_kom_c1_name">
+		<text>全包紧身衣面料</text>
+	</string>
+	<string id="st_up_kom_c2_descr">
+		<text>橡胶是保护自己免受短暂辐射暴露的基本方法.</text>
+	</string>
+	<string id="st_up_kom_c2_name">
+		<text>橡胶紧身衣面料</text>
+	</string>
+	<string id="st_up_kom_c3_descr">
+		<text>用于提高潜行者服装的耐久性.</text>
+	</string>
+	<string id="st_up_kom_c3_name">
+		<text>高耐久防护盾组件</text>
+	</string>
+	<string id="st_up_kom_c4_descr">
+		<text>镍具有足够的耐火性, 可用于防弹衣嵌入物.</text>
+	</string>
+	<string id="st_up_kom_c4_name">
+		<text>带镍嵌件的防火紧身衣</text>
+	</string>
+	<string id="st_up_kom_c5_descr">
+		<text>这种镍和镁合金用于护甲以防止电击.</text>
+	</string>
+	<string id="st_up_kom_c5_name">
+		<text>带有锰铜嵌件的隔离紧身衣</text>
+	</string>
+	<string id="st_up_kom_c6_descr">
+		<text>带有凯夫拉护甲外层和防腐蚀保护层的封闭式紧身防护服.</text>
+	</string>
+	<string id="st_up_kom_c6_name">
+		<text>双层防护型护甲紧身综合防护服</text>
+	</string>
+	<string id="st_up_kom_c7_descr">
+		<text>由基辅研究所研制的一种采用新一代未知的合成材料外表面, 铋填充内衬层的生态学家防护服.</text>
+	</string>
+	<string id="st_up_kom_c7_name">
+		<text>铋填充内衬层的生态学家防护服</text>
+	</string>
+	<string id="st_up_kom_c8_descr">
+		<text>外层镶嵌的铅网可以让穿戴者丝毫不受辐射和化学物质的伤害, 同时它还丝毫的不会影响到穿戴者的灵活性.</text>
+	</string>
+	<string id="st_up_kom_c8_name">
+		<text>表面覆盖有柔韧的铅网和有机玻璃内衬层的救援人员防护服</text>
+	</string>
+	<string id="st_up_kom_c9_descr">
+		<text>这种乌克兰国产的改进型防具出现在切尔诺贝利事件发生之后.主要装备在外骨骼上防止其出现电子故障.</text>
+	</string>
+	<string id="st_up_kom_c9_name">
+		<text>带有铅防护内衬层的防水型防护服</text>
+	</string>
+	
+	<string id="st_up_res_a1_name">
+		<text>有源过滤器</text>
+	</string>
+	<string id="st_up_res_a1_descr">
+		<text>有源过滤器可以完全过滤掉腐蚀性化学物质.</text>
+	</string>
+	<string id="st_up_res_a2_descr">
+		<text>这种钢材料密封式隔离层经论证可以在灵能场区域给穿戴者提供保护免受其伤害.</text>
+	</string>
+	<string id="st_up_res_a2_name">
+		<text>由成对的钢格栅制成的灵能防护层</text>
+	</string>
+	<string id="st_up_res_a3_descr">
+		<text>这种面罩都是在空气严重污染或是临界温度条件下使用的, 比如过低或是过高的温度下保证穿戴者可以正常呼吸.</text>
+	</string>
+	<string id="st_up_res_b1_descr">
+		<text>安装过滤涂层</text>
+	</string>
+	<string id="st_up_res_b1_name">
+		<text>安装过滤涂层</text>
+	</string>
+	<string id="st_up_res_b2_descr">
+		<text>一种带有加强型防腐蚀保护层和防毒面具的呼吸过滤器</text>
+	</string>
+	<string id="st_up_res_b2_name">
+		<text>污染区域用呼吸过滤器</text>
+	</string>
+	<string id="st_up_res_b3_descr">
+		<text>这种有机玻璃面罩的防辐射效果比较有限.</text>
+	</string>
+	<string id="st_up_res_b3_name">
+		<text>有机玻璃保护层</text>
+	</string>
+	<string id="st_up_res_b4_descr">
+		<text>这种有机玻璃面罩的防辐射效果比较有限</text>
+	</string>
+	<string id="st_up_res_b4_name">
+		<text>有机玻璃呼吸面罩</text>
+	</string>
+	<string id="st_up_res_b5_descr">
+		<text>完全阻断毒素的面具</text>
+	</string>
+	<string id="st_up_res_b5_name">
+		<text>全包防毒面具</text>
+	</string>
+	<string id="st_up_res_c1_descr">
+		<text>这种铍和铝合成材料的保护层会增加一点头盔的重量, 但是它的防护效果非常的优秀.</text>
+	</string>
+	<string id="st_up_res_c1_name">
+		<text>铍和铝材料的合金板</text>
+	</string>
+	<string id="st_up_res_c2_descr">
+		<text>这种铍和钛合成材料的保护层在确保防具重量不会大大增加的前提下可以让防具的防护性大幅度增加.</text>
+	</string>
+	<string id="st_up_res_c2_name">
+		<text>铍和钛合金板</text>
+	</string>
+	<string id="st_up_res_c3_descr">
+		<text>这种改进型的过滤器不管在任何等级的污染区域都能保证给穿戴者提供正常的氧气供给.</text>
+	</string>
+	<string id="st_up_res_c3_name">
+		<text>安装改进型科研用途过滤器</text>
+	</string>
+	<string id="st_up_res_c4_descr">
+		<text>这种高科技的灵能防护层据说是一位被称为萨哈洛夫的生态学家发明的.</text>
+	</string>
+	<string id="st_up_res_c4_name">
+		<text>安装灵能圆顶防护层</text>
+	</string>
+	<string id="st_up_res_c5_descr">
+		<text>保护合金框架, 防止热和电损伤.</text>
+	</string>
+	<string id="st_up_res_c5_name">
+		<text>雷鸟康铜面甲</text>
+	</string>
+	<string id="st_up_res_c6_descr">
+		<text>附加护甲外壳可以提高头盔的耐久性.</text>
+	</string>
+	<string id="st_up_res_c6_name">
+		<text>增强型护甲头盔</text>
+	</string>
+	<string id="st_up_res_c7_descr">
+		<text>一种带有额外净化涂层和去除毒物系统的过滤器.</text>
+	</string>
+	<string id="st_up_res_c7_name">
+		<text>极端条件增强型呼吸器</text>
+	</string>
+	
+	<string id="st_up_resp_a1_descr">
+		<text>配给俄罗斯军队的标准1PN93-1夜视仪, 这个改进版可以安装在战术头盔上. 提供2代及以上的图像增强, 特别适用于夜间或低光条件下的行动. 拆下电池盒并更换为UPD输入后, 总重量降低到可承受的1.5kg. 作为被购买的一套完整的设备, 它还具有一个安装接口, 可以在将来安装更好的设备.此设备需要大量电量, 会高速消耗UPD.\n \n%c[d_cyan] • %c[default] 高UPD消耗</text>
+	</string>
+	<string id="st_up_resp_a1_name">
+		<text>第一代1PN93-1夜视仪</text>
+	</string>
+	<string id="st_up_resp_a2_descr">
+		<text>这种智能系统在探测到周围空气中的放射性物质和化学粒子会威胁到使用者时会自动的切换到封闭式循环呼吸模式.</text>
+	</string>
+	<string id="st_up_resp_a2_name">
+		<text>放射性和化学物质智能探测系统</text>
+	</string>
+	<string id="st_up_resp_a3_name">
+		<text>蒸汽净化呼吸面罩</text>
+	</string>
+	<string id="st_up_resp_b1_descr">
+		<text>新西伯利亚仪器制造厂生产的现代化的第二代PN21KL夜视仪.头戴式, 大大提高了低光条件下的视野范围. 具有先进的图像处理软件, 会以灰色显示图像. 使用它时需要安装底座. 它重约270g, 明显比其他头盔轻.可以通过升级包, 使用更好的镜头和更复杂的图像处理软件来对它进行升级.\n \n%c[d_cyan] • %c[default] 高UPD消耗</text>
+	</string>
+	<string id="st_up_resp_b1_name">
+		<text>第二代PN21KL夜视仪</text>
+	</string>
+	<string id="st_up_resp_b2_descr">
+		<text>这种热源探测设备可以让佩戴者探测并且识别发出热源的有生目标.</text>
+	</string>
+	<string id="st_up_resp_b2_name">
+		<text>目标自动识别系统</text>
+	</string>
+	<string id="st_up_resp_b3_descr">
+		<text>用于在具有灵能场异常区域工作的科学装置.</text>
+	</string>
+	<string id="st_up_resp_b3_name">
+		<text>"神谕"灵能监测仪</text>
+	</string>
+	<string id="st_up_resp_c1_descr">
+		<text>镜头和图像处理软件的更新消除了视频噪声, 增强了PN21K单元的图像识别能力, 使其成为一个成熟的IIT第3代夜视设备. 不影响头盔重量或UPD消耗速度.</text>
+	</string>
+	<string id="st_up_resp_c1_name">
+		<text>对PN21K的夜视仪镜头及图像处理软件的改进</text>
+	</string>
+	<string id="st_up_resp_c2_descr">
+		<text>电离子和空气粒子在这种系统里反复的扭转并且反向运动, 用来制造离子能量风暴.</text>
+	</string>
+	<string id="st_up_resp_c2_name">
+		<text>离子能量风暴冷却系统</text>
+	</string>
+	<string id="st_up_resp_c3_descr">
+		<text>这种红外线扫描设备可以探测到附近的人类目标.</text>
+	</string>
+	<string id="st_up_resp_c3_name">
+		<text>红外扫描仪</text>
+	</string>
+	<string id="st_up_resp_c4_descr">
+		<text>SPB - VPZ.m.IV第四代灵能场波段保护系统.</text>
+	</string>
+	<string id="st_up_resp_c4_name">
+		<text>SPB - VPZ.m.IV战斗系统</text>
+	</string>
+	
+	<string id="st_up_tch_a1_descr">
+		<text>这种A型注射器是基辅的一个研究机构研发的, 它会给人体的血液中注射小量的肾上腺素, 这可能对人体有些伤害, 但在紧急情况下可以挽救人的生命.</text>
+	</string>
+	<string id="st_up_tch_a1_name">
+		<text>"暴君"肾上腺注射器</text>
+	</string>
+	<string id="st_up_tch_a2_descr">
+		<text>净化或冷冻有毒物质的净化呼吸过滤系统.</text>
+	</string>
+	<string id="st_up_tch_a2_name">
+		<text>有毒物质净化系统</text>
+	</string>
+	<string id="st_up_tch_a3_descr">
+		<text>晴空的生态学家研制的短波发射器, 它可以安装在防具的背面, 当装备者受伤出血时它会有效加快伤口处的血液凝结速度.</text>
+	</string>
+	<string id="st_up_tch_a3_name">
+		<text>射线止血装置</text>
+	</string>
+	<string id="st_up_tch_a4_descr">
+		<text>一种防护服的表层供电系统, 它可以屏蔽放射性物质和化学粒子.</text>
+	</string>
+	<string id="st_up_tch_a4_name">
+		<text>内置型放射性尘埃防护系统</text>
+	</string>
+	<string id="st_up_tch_b1_descr">
+		<text>B型注射器, 当穿戴者的血压显著下降时它会为其注射凝血剂在其血液中.</text>
+	</string>
+	<string id="st_up_tch_b1_name">
+		<text>"水螅"血红蛋白注射器</text>
+	</string>
+	<string id="st_up_tch_b2_descr">
+		<text>这个系统可以防止使用者体力虚脱, 让其一直在保持最佳的身体温度.</text>
+	</string>
+	<string id="st_up_tch_b2_name">
+		<text>安装一个热量调节系统</text>
+	</string>
+	<string id="st_up_tch_b3_descr">
+		<text>这种微波发射器安装在使用者的胸部位置, 它可以显著的提高伤口的愈合速度和使用者的免疫系统, 但是长期使用之后一旦使用者停止使用时, 可能会有些不适.</text>
+	</string>
+	<string id="st_up_tch_b3_name">
+		<text>"太阳神"生物刺激仪</text>
+	</string>
+	<string id="st_up_tch_b4_descr">
+		<text>用于在具有灵能场异常区域工作的科学装置.</text>
+	</string>
+	<string id="st_up_tch_b4_name">
+		<text>"神谕"灵能监测仪</text>
+	</string>
+	<string id="st_up_tch_c1_descr">
+		<text>C型注射器可以中和一切进入到使用者血液里的有毒物质, 加快受损组织的再生速度并且能够消除疼痛感.</text>
+	</string>
+	<string id="st_up_tch_c1_name">
+		<text>"凤凰"复苏系统</text>
+	</string>
+	<string id="st_up_tch_c2_descr">
+		<text>这是一种可以监测穿戴者的健康状况, 维生素供应和肾上腺素以及合成代谢物质需求量的综合系统.</text>
+	</string>
+	<string id="st_up_tch_c2_name">
+		<text>安装一个生命维持系统</text>
+	</string>
+	<string id="st_up_tch_c3_descr">
+		<text>这种波段发射器安装在使用者的脖子上, 虽然还不清楚它的机理和操作方法, 它能给穿戴者很强的镇静作用.</text>
+	</string>
+	<string id="st_up_tch_c3_name">
+		<text>反射型神经刺激仪</text>
+	</string>
+	
+	<string id="st_up_uti_a1_descr">
+		<text>附加的运动助力装置可以增加穿戴者的最大荷载量.</text>
+	</string>
+	<string id="st_up_uti_a1_name">
+		<text>附加的伺服电机</text>
+	</string>
+	<string id="st_up_uti_a2_descr">
+		<text>这个药品供应系统可以治疗破伤风, 并且给伤口消炎和给穿戴者提供抗感染药品.</text>
+	</string>
+	<string id="st_up_uti_a2_name">
+		<text>"战地医生"内置型医疗系统</text>
+	</string>
+	<string id="st_up_uti_a3_descr">
+		<text>为在受污染区工作而研制的带有过滤器的通风型紧身防护服系统.</text>
+	</string>
+	<string id="st_up_uti_a3_name">
+		<text>内部热量调节系统</text>
+	</string>
+	<string id="st_up_uti_a4_descr">
+		<text>这项改装非常符合人体工程学: 将一种特殊的装置安装在紧身防护服上, 可以让穿戴者感觉整体重量非常的轻.</text>
+	</string>
+	<string id="st_up_uti_a4_name">
+		<text>重量分配背心</text>
+	</string>
+	<string id="st_up_uti_a5_descr">
+		<text>一个氧气罐是进入充满放射性物质和化学粒子区域里工作的必备物品.</text>
+	</string>
+	<string id="st_up_uti_a5_name">
+		<text>安装一个氧气罐</text>
+	</string>
+	<string id="st_up_uti_b1_descr">
+		<text>安装一个额外的神器槽.</text>
+	</string>
+	<string id="st_up_uti_b1_name">
+		<text>额外的神器槽</text>
+	</string>
+	<string id="st_up_uti_b2_descr">
+		<text>一个重量分配系统可以让穿戴者携带的所有装备的重量分配的更均匀合理.</text>
+	</string>
+	<string id="st_up_uti_b2_name">
+		<text>配重系统</text>
+	</string>
+	<string id="st_up_uti_b3_descr">
+		<text>配重背架通过将肩部负荷分散在身体上来减轻集中肩部负荷, 从而增加最大负荷.</text>
+	</string>
+	<string id="st_up_uti_b3_name">
+		<text>配重背架</text>
+	</string>
+	<string id="st_up_uti_b4_descr">
+		<text>这套系统可以为穿戴者自动消毒, 而且可以注射兴奋剂和破伤风药物, 虽然都是国产的, 但似乎不会给穿戴者身体造成不良影响.</text>
+	</string>
+	<string id="st_up_uti_b4_name">
+		<text>内置式护理系统</text>
+	</string>
+	<string id="st_up_uti_b5_descr">
+		<text>这个系统是一个特殊的电场屏蔽装置, 它可以瞬间产生和异常点相同的电力来减少其对穿戴者造成的伤害.</text>
+	</string>
+	<string id="st_up_uti_b5_name">
+		<text>"鳐鱼"静电反制系统</text>
+	</string>
+	<string id="st_up_uti_b6_descr">
+		<text>药物内衬可以防止穿戴者化学中毒.</text>
+	</string>
+	<string id="st_up_uti_b6_name">
+		<text>化学防护内衬层</text>
+	</string>
+	<string id="st_up_uti_b7_descr">
+		<text>目前处于试验阶段的一个马拉松运动辅助系统, 由于其价格非常昂贵, 而且系统也不是很稳定, 所以目前它还只在特异区里使用.</text>
+	</string>
+	<string id="st_up_uti_b7_name">
+		<text>内置运动辅助系统</text>
+	</string>
+	<string id="st_up_uti_b8_descr">
+		<text>这个系统可以清除掉停留在防毒面具滤毒罐里的有毒冷凝水.</text>
+	</string>
+	<string id="st_up_uti_b8_name">
+		<text>有毒物质清除系统</text>
+	</string>
+	<string id="st_up_uti_c1_descr">
+		<text>安装一个附加的护甲附件模块.</text>
+	</string>
+	<string id="st_up_uti_c1_name">
+		<text>附加的双室护甲附件模块</text>
+	</string>
+	<string id="st_up_uti_c2_descr">
+		<text>安装在作战服里的战斗支援系统. 它主要装备给特种部队使用. 它内部预装的有肾上腺素和凝血系统.</text>
+	</string>
+	<string id="st_up_uti_c2_name">
+		<text>"瓦良格"战斗支援系统</text>
+	</string>
+	<string id="st_up_uti_c3_descr">
+		<text>这是战斗支援系统的原型样式, 设计者放弃了对人体有害的肾上腺素注射器, 替换上了带有药物愈合型的凝血系统.</text>
+	</string>
+	<string id="st_up_uti_c3_name">
+		<text>"史克夫"战斗支援系统</text>
+	</string>
+	
+	
+		<string id="st_prop_binoc_zoom">
+		<text>放大倍数</text>
+	</string>
+	<string id="st_prop_binoc_nightvision">
+		<text>夜视仪</text>
+	</string>
+	<string id="st_prop_binoc_autolock">
+		<text>可探测性</text>
+	</string>
+	
+<!-- Binoculars -->
+	<string id="st_prop_binoc_nightvision_1">
+		<text>高对比度</text>
+	</string>
+	<string id="st_prop_binoc_nightvision_2">
+		<text>第一代夜视仪</text>
+	</string>
+	<string id="st_prop_binoc_nightvision_3">
+		<text>第二代夜视仪</text>
+	</string>
+	
+	<string id="st_up_binoc_a1_name">
+		<text>物镜(放大10倍)</text>
+	</string>
+	<string id="st_up_binoc_a1_descr">
+		<text>为探寻更远的距离而安装新透镜组, 提供10倍放大.</text>
+	</string>
+	<string id="st_up_binoc_a2_name">
+		<text>物镜(放大15倍)</text>
+	</string>
+	<string id="st_up_binoc_a2_descr">
+		<text>为探寻更远的距离而安装新透镜组, 提供15倍放大.</text>
+	</string>
+	<string id="st_up_binoc_a3_name">
+		<text>高质量物镜(放大20倍)</text>
+	</string>
+	<string id="st_up_binoc_a3_descr">
+		<text>为探寻更远的距离而安装新透镜组, 提供20倍放大.</text>
+	</string>
+	<string id="st_up_binoc_b1_name">
+		<text>提高视野对比度</text>
+	</string>
+	<string id="st_up_binoc_b1_descr">
+		<text>ED玻璃装置取代了普通透镜, 使色差和二次光谱的影响最小化, 从而获得更好的视觉效果</text>
+	</string>
+	<string id="st_up_binoc_b2_name">
+		<text>第一代夜视仪</text>
+	</string>
+	<string id="st_up_binoc_b2_descr">
+		<text>用于微光条件下的夜视技术, 它依赖于夜间有用的光谱和强度范围技术来感知人类看不见的辐射.</text>
+	</string>
+	<string id="st_up_binoc_b3_name">
+		<text>第二代夜视仪</text>
+	</string>
+	<string id="st_up_binoc_b3_descr">
+		<text>对夜视技术的改进, 引入更好的系统光增益、系统分辨率和感光度, 提高视觉质量</text>
+	</string>
+	<string id="st_up_binoc_c1_name">
+		<text>外壳类型</text>
+	</string>
+	<string id="st_up_binoc_c1_descr">
+		<text>更换外壳类型, 以便通过采用铝合金制成的开放式桥和底盘减轻整体重量.</text>
+	</string>
+	<string id="st_up_binoc_d1_name">
+		<text>探测目标</text>
+	</string>
+	<string id="st_up_binoc_d1_descr">
+		<text>更换外壳类型, 以便通过采用铝合金制成的开放式桥和底盘减轻整体重量.</text>
+	</string>
+	
+<!-- Dynamo -->
+	<string id="st_up_opt_dynamo_hand1_descr">
+		<text>用尼龙代替齿轮减速器, 减少了摩擦, 略微提高了机构的可靠性和使用寿命.</text>
+	</string>
+	<string id="st_up_opt_dynamo_hand1_name">
+		<text>挡块齿轮</text>
+	</string>
+	<string id="st_up_opt_dynamo_hand2_descr">
+		<text>发电机机座钢件更换为硬铝, 显著减轻了重量.</text>
+	</string>
+	<string id="st_up_opt_dynamo_hand2_name">
+		<text>硬铝框架</text>
+	</string>
+	<string id="st_up_opt_dynamo_hand3_descr">
+		<text>在电机转子上安装额外的尼科迪莫维奇磁铁, 提高了发电机的效率.</text>
+	</string>
+</string_table>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_ithacam37">
+		<text>伊薩卡M37 "暴徒"</text>
+	</string>
+	<string id="st_wpn_ithacam37_descr">
+		<text>伊薩卡 M37 是在美國最受認可的泵動式霰彈槍之一，也創造了歷史上最長的泵動式霰彈槍生產週期。 伊薩卡 37 專為平民、警察和軍人設計，其設計理念基於槍支設計師約翰·勃朗寧 (John Browning) 1915 年的一項專利，最初命名為雷明頓 Model 17。這把霰彈槍在槍底部採用了一個新穎的彈殼彈射和裝彈口的組合裝置，使裝彈和彈出彈殼互不干擾。 "暴徒"型號被廣泛認為是標準版 M37。\n \n
+		%c[0,255,255,255]特性:\n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]美國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]伊薩卡武器公司\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1937\n
+		</text>
+	</string>
+		
+	<string id="st_wpn_ithacam37_trench">
+		<text>伊薩卡M37 "塹壕槍"</text>
+	</string>
+	<string id="st_wpn_ithacam37_trench_descr">
+		<text>伊薩卡 M37 是在美國最受認可的泵動式霰彈槍之一，也創造了歷史上最長的泵動式霰彈槍生產週期。 伊薩卡 37 專為平民、警察和軍人設計，其設計理念基於槍支設計師約翰·勃朗寧 (John Browning) 1915 年的一項專利，最初命名為雷明頓 Model 17。這把霰彈槍在槍底部採用了一個新穎的彈殼彈射和裝彈口的組合裝置，使裝彈和彈出彈殼互不干擾。"塹壕槍"型號帶有隔熱罩和刺刀凸耳，有助於該槍降溫並提供更好的操控性。\n \n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]美國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]伊薩卡武器公司\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1937\n
+		</text>
+	</string>
+		
+	<string id="st_wpn_ithacam37_extmag">
+		<text>伊薩卡M37 "防禦者"</text>
+	</string>
+	<string id="st_wpn_ithacam37_extmag_descr">
+		<text>伊薩卡 M37 是在美國最受認可的泵動式霰彈槍之一，也創造了歷史上最長的泵動式霰彈槍生產週期。 伊薩卡 37 專為平民、警察和軍人設計，其設計理念基於槍支設計師約翰·勃朗寧 (John Browning) 1915 年的一項專利，最初命名為雷明頓 Model 17。這把霰彈槍在槍底部採用了一個新穎的彈殼彈射和裝彈口的組合裝置，使裝彈和彈出彈殼互不干擾。"防禦者"型號增加了一個 7 發加長彈匣，並使用聚合物代替木材，同時採用了不鏽鋼進行表面處理。\n \n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]美國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]伊薩卡武器公司\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1937\n
+		%c[0,255,255,255]整合附件描述:\n
+		%c[d_blue] • %c[0,255,255,255]加長彈匣\n
+		</text>
+	</string>
+		
+	<string id="st_wpn_ithacam37_stakeout">
+		<text>伊薩卡M37 "監視者"</text>     
+	</string>
+	<string id="st_wpn_ithacam37_stakeout_descr">
+		<text>伊薩卡 M37 是在美國最受認可的泵動式霰彈槍之一，也創造了歷史上最長的泵動式霰彈槍生產週期。 伊薩卡 37 專為平民、警察和軍人設計，其設計理念基於槍支設計師約翰·勃朗寧 (John Browning) 1915 年的一項專利，最初命名為雷明頓 Model 17。這把霰彈槍在槍底部採用了一個新穎的彈殼彈射和裝彈口的組合裝置，使裝彈和彈出彈殼互不干擾。 "監視者"型號具有縮短至 330 毫米的原廠槍管，並使用手槍式握把。\n \n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]美國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]伊薩卡武器公司\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1937\n
+		</text>
+	</string>
+		
+	<string id="st_wpn_ithacam37_sawnoff">
+		<text>伊薩卡M37 "小短炮"</text>
+	</string>
+	<string id="st_wpn_ithacam37_sawnoff_descr">
+		<text>伊薩卡 M37 是在美國最受認可的泵動式霰彈槍之一，也創造了歷史上最長的泵動式霰彈槍生產週期。 伊薩卡 37 專為平民、警察和軍人設計，其設計理念基於槍支設計師約翰·勃朗寧 (John Browning) 1915 年的一項專利，最初命名為雷明頓 Model 17。這把霰彈槍在槍底部採用了一個新穎的彈殼彈射和裝彈口的組合裝置，使裝彈和彈出彈殼互不干擾。 "小短炮"型號被人去掉了槍支配件以減輕重量。\n \n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]美國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商: %c[ui_gray_1]伊薩卡武器公司\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1937\n
+		</text>
+	</string>
+	
+</string_table>

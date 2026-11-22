@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_wpn_sig550t">
+		<text>SIG SG550</text>
+	</string>
+	<string id="st_wpn_sig550_camot">
+		<text>SIG SG550 (改裝版)</text>
+	</string>
+	<string id="st_wpn_sig550_customt">
+		<text>SIG SG550 (定製版)</text>
+	</string>
+	<string id="st_wpn_sig550t_descr">
+		<text>SG 550 以其高生產質量和良好效能而聞名, 通常被稱為有史以來最好的 5.56 毫米步槍, 它有一個側面摺疊的鏤空槍托和一個摺疊到下護手凹槽中的輕型鋁製兩腳架\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45通用消音器\n
+		%c[d_purple] • %c[ui_gray_2] ELCAN SpecterDR, Acog, 巴斯卡AC10632紅點瞄準鏡, Cobra 8-18反射式瞄準鏡, Aimpoint PRO紅點瞄準鏡, 3-24x42 FFP前進牌戰術瞄準鏡, OKP-7反射式瞄準鏡, C-More紅點瞄準鏡, Aimpoint CompM4s紅點瞄準鏡, Eotech, Kemper反射式瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+	<string id="st_wpn_sig550_rusty">
+		<text>SIG SG550 (鏽蝕的)</text>
+	</string>
+	<string id="st_wpn_sig550_rusty_descr">
+		<text>SIG SG550 以其高生產質量和良好效能而聞名, 通常被稱為有史以來最好的 5.56 毫米步槍, 它有一個側面摺疊的鏤空槍托和一個摺疊到下護手凹槽中的輕型鋁製兩腳架, 但這把槍好像已經被鏽蝕的很嚴重, 使用效果估計會大打折扣\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_red] • %c[d_red] 消音器不可用\n
+		%c[d_purple] • %c[ui_gray_2] ELCAN SpecterDR, Acog, 巴斯卡AC10632紅點瞄準鏡, Cobra 8-18反射式瞄準鏡, Aimpoint PRO紅點瞄準鏡, 3-24x42 FFP前進牌戰術瞄準鏡, OKP-7反射式瞄準鏡, C-More紅點瞄準鏡, Aimpoint CompM4s紅點瞄準鏡, Eotech, Kemper反射式瞄準鏡\n
+		%c[d_purple] • %c[ui_gray_2] M203下掛榴彈發射器\n \n</text>
+	</string>
+	<string id="st_wpn_sig550_sniper">
+		<text>SIG SG550-1 "狙擊手"</text>
+	</string>
+	<string id="st_wpn_sig550_sniper_descr">
+		<text>SG 550-S 是一把瑞士製造的突擊步槍SIG SG550的變體, 是狙擊步槍和突擊步槍之間的完美平衡, 同時保留了兩種武器的優點, 另一方面它也有一些缺點, 例如與狙擊步槍相比, 它的制動力和準確性方面有些不足, 與突擊步槍相比的話它也沒有全自動功能, 儘管如此, 它仍然是特異區內優秀的頂級武器之一\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45通用消音器\n
+		%c[d_purple] • %c[ui_gray_2] 卡勒斯ZF95瞄準鏡 (已整合)\n \n</text>
+	</string>
+	<string id="st_wpn_sig550_strelokt">
+		<text>SIG SG550 "飛箭"</text>
+	</string>
+	<string id="st_wpn_sig550_strelokt_descr">
+		<text>瑞士製造的SIG SG-550突擊步槍, 看上去並不是全新的, 不過它以前的主人把它保養得很好：武器的零件似乎都被拆下來微調過, 然後重新組裝增加了效能, 提高了操控感\n
+		仔細看的話, 槍托上好像刻有字母"S"和16個小刻痕\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45通用消音器\n
+		%c[d_purple] • %c[ui_gray_2] ELCAN SpecterDR, Acog, 巴斯卡AC10632紅點瞄準鏡, Cobra 8-18反射式瞄準鏡, Aimpoint PRO紅點瞄準鏡, 3-24x42 FFP前進牌戰術瞄準鏡, OKP-7反射式瞄準鏡, C-More紅點瞄準鏡, Aimpoint CompM4s紅點瞄準鏡, Eotech, Kemper反射式瞄準鏡\n</text>
+	</string>
+	<string id="st_wpn_sig550_worn">
+		<text>SIG SG550 (磨損的)</text>
+	</string>
+	
+	<string id="st_wpn_sig552t">
+		<text>SIG SG552 "突擊手"</text>
+	</string>
+	<string id="st_wpn_sig552t_descr">
+		<text>SG 552 "突擊手" 專為巷戰而設計, 增強了其 CQC 的能力, 使其成為 SIG 著名的 SG 550 系列中設計最緊湊的一員\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 5.56x45通用消音器\n
+		%c[d_purple] • %c[ui_gray_2] ELCAN SpecterDR, Acog, 巴斯卡AC10632紅點瞄準鏡, Cobra 8-18反射式瞄準鏡, Aimpoint PRO紅點瞄準鏡, 3-24x42 FFP前進牌戰術瞄準鏡, OKP-7反射式瞄準鏡, C-More紅點瞄準鏡, Aimpoint CompM4s紅點瞄準鏡, Eotech, Kemper反射式瞄準鏡\n \n</text>
+	</string>
+	<string id="st_wpn_sig552_worn">
+		<text>SIG SG552 "突擊手" (磨損的)</text>
+	</string>
+</string_table>

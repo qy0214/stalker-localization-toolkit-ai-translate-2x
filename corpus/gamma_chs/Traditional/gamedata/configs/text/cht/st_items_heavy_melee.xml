@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_sledge_hammer">
+		<text>大錘</text>
+	</string>
+
+	<string id="st_sledge_hammer_descr">
+		<text>一把鈍而重的工業大錘. 曾經是用來建造我們周圍的建築物的工具,現在用來粉碎蹲在裡面的人的腦袋. \n \n
+		%c[ui_gray_2]]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 近戰武器\n
+		%c[d_cyan] • %c[ui_gray_2] 攻擊範圍比刀大\n
+		</text>
+	</string>
+
+</string_table>

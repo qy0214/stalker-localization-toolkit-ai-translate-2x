@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Faction Patches
+-->
+<string_table>
+	<string id="csky_patch">
+		<text>晴空臂章</text>
+	</string>
+	<string id="csky_patch_description">
+		<text>从晴空的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="freedom_patch">
+		<text>自由军臂章</text>
+	</string>
+	<string id="freedom_patch_description">
+		<text>从自由军的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="stalker_patch">
+		<text>独行者臂章</text>
+	</string>
+	<string id="stalker_patch_description">
+		<text>从独行者的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="ecolog_patch">
+		<text>生态学家臂章</text>
+	</string>
+	<string id="ecolog_patch_description">
+		<text>从生态学家的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="bandit_patch">
+		<text>土匪臂章</text>
+	</string>
+	<string id="bandit_patch_description">
+		<text>从土匪的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="duty_patch">
+		<text>纪律团臂章</text>
+	</string>
+	<string id="duty_patch_description">
+		<text>从纪律团的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="monolith_patch">
+		<text>黑石臂章</text>
+	</string>
+	<string id="monolith_patch_description">
+		<text>从黑石的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="army_patch">
+		<text>军队臂章</text>
+	</string>
+	<string id="army_patch_description">
+		<text>从乌克兰军队的阵营制服上撕下来的臂章.</text>
+	</string>
+
+	<string id="merc_patch">
+		<text>佣兵臂章</text>
+	</string>
+	<string id="merc_patch_description">
+		<text>从一个雇佣兵的阵营制服上撕下来的臂章.</text>
+	</string>
+	
+	<string id="st_clearsky_fp">
+		<text>晴空阵营臂章</text>
+	</string>
+	<string id="st_clearsky_fp_descr">
+		<text>这个阵营臂章额描绘了一个在晴朗天空里的日出, 旁边还有鸽子在飞. 这是为了表达该阵营想要治愈特异区的愿望, 以及对他们对冲突的厌恶. 晴空表明过他们的目标是逐渐减少异常点的生成频率和严重程度. 很少有潜行者会相信这些成为现实. \n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_freedom_fp">
+		<text>自由军阵营臂章</text>
+	</string>
+	<string id="st_freedom_fp_descr">
+		<text>这个阵营臂章描绘了一只黑色背景下乌克兰国旗旁绿色的狼. 总的来说, 这个设计是为了表达自由的社会本质和对大地的热爱, 以及他们在战斗中坚定的决心和集体劫掠的凶猛. 然而, 为什么无政府主义者会想将任何国家的国旗设计在他们阵营的臂章里, 这仍是个谜.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_stalker_fp">
+		<text>独行者臂章</text>
+	</string>
+	<string id="st_stalker_fp_descr">
+		<text>通常由未加入任何阵营的潜行者佩戴, 这个臂章被雇佣兵当做收藏品, 他们用这样的臂章从一个神秘赞助人那里交换战利品. 虽然独行者数量众多, 但是大多都是小队行动或者完全独行的, 他们被其他组织认为是特异区最容易的猎物. \n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_ecolog_fp">
+		<text>生态学家阵营臂章</text>
+	</string>
+	<string id="st_ecolog_fp_descr">
+		<text>这个阵营的臂章在青色和白色的背景下描绘了一对金色的翅膀. 特异区黑市非常看重这些生态学家臂章, 因为只要把这块臂章缝到你的衣服上, 你就可以几乎随意出入特异区的任何地方, 而不用担心被别的阵营骚扰. 生态学家们虽然也很看重这臂章, 可惜特异区的其他人更看重这东西.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_bandit_fp">
+		<text>土匪阵营臂章</text>
+	</string>
+	<string id="st_bandit_fp_descr">
+		<text>这个阵营的臂章描绘了一个破碎的黑色骷髅背景是白色盾牌. 这描绘和该阵营的一些领袖的愿景高度一致 - 他们不仅仅是暴徒,他们是封建暴民的领主, 给那些接受他们"保护"的人带去秩序, 给任何敢于反抗他们的人带去无情的报复.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_dolg_fp">
+		<text>纪律团阵营臂章</text>
+	</string>
+	<string id="st_dolg_fp_descr">
+		<text>这个阵营臂章描绘了一个金色的十字准星瞄准了一块红色和黑色的盾牌. 这一设计暗示了该阵营的军方起源, 也表达了他们坚韧不拔的士兵存在的主要作用, 他们为了保护外面的世界, 坚决与特异区对抗到底.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_monolith_fp">
+		<text>黑石阵营徽章</text>
+	</string>
+	<string id="st_monolith_fp_descr">
+		<text>这个臂章描绘了金色太阳映衬下的羽毛翅膀, 也许是许愿石的象征. 这个臂章最有意思的地方在于, 它只被一群被别人认为是被洗脑和精神错乱的人戴着. 这个臂章的存在表明了黑石的人还保留了很高水平的创造力, 或者是外部力量秘密的在给他们提供装备.黑石臂章在别的阵营都很受欢迎, 因为它们展示了一个人对抗黑石和生存的能力 - 这些能力普遍受到特异区老兵们的高度尊重.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_army_fp">
+		<text>军队阵营臂章</text>
+	</string>
+	<string id="st_army_fp_descr">
+		<text>这个徽章描绘了三个炽热的盾牌, 它的中间是乌克兰国旗的颜色, 背后有两把剑. 金色的桂冠围绕着这些盾牌. 特异区的军队把自己想象成特异区的保护者和维和人员. 但是现实里, 特异区里的军队到底是否履行了这一角色, 这是个引起激烈争论的话题.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_merc_fp">
+		<text>佣兵阵营臂章</text>
+	</string>
+	<string id="st_merc_fp_descr">
+		<text>这个松散的阵营臂章描绘了一只黑色背景下的蓝色的猛禽. 这象征着作为一个冷酷, 精准, 高机动的雇佣兵,随时准备好抓捕或者毁灭他们的目标, 非常符合他们阵营的特点. \n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_isg_fp">
+		<text>UNISG 阵营臂章</text>
+	</string>
+	<string id="st_isg_fp_descr">
+		<text>这个阵营臂章描绘了一个白色的显微镜被高度棱角和风格化的桂冠包围, 背景是栗色的. 臂章觉得背面缝这一个标签, 上面写着这臂章属于"联合国国际科研团队".\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_greh_fp">
+		<text>原罪阵营臂章</text>
+	</string>
+	<string id="st_greh_fp_descr">
+		<text>仅仅是拿着这个臂章就让你感到些许的不安.臂章的左上角是一条蛇, 右上角是一个东正教十字架. 正中央有一个日食样式的图案. 然而, 当你继续带着这枚臂章, 你的不安情绪逐渐平息了下来, 变成一种奇怪的, 逐渐平静的感觉.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+	
+	<string id="st_renegade_fp">
+		<text>叛节者阵营臂章</text>
+	</string>
+	<string id="st_renegade_fp_descr">
+		<text>这个阵营臂章描绘了一只黄色的蝎子衬托着一块绿色的盾牌. 这个物品的存在意味着特异区的叛节者们曾有过远大目标, 尽管今天已经没人相信他们是因为绝望而聚在一起. 尽管如此, 这一物品仍在所有真正的叛节者们手上流通, 可能是出于怀旧情怀.\n \n
+		%c[0,255,255,255]属性:\n 
+		</text>
+	</string>
+</string_table>

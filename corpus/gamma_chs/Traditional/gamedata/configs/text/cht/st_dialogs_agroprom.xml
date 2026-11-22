@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Sergeant Spooner (Military Trader) -->
+	<string id="guid_agr_mlr_military_0">
+		<text>你能安排一次旅行嗎?我要飛去一個地方.</text>
+	</string>
+	<string id="guid_agr_mlr_military_1">
+		<text>是的, 我可以帶你去封鎖線和揚塔. 等等, 你是哪位?! 我不能向你這樣的普通士兵提供運輸, 噓!</text>
+	</string>
+
+	<string id="guid_agr_mlr_military_list_0">
+		<text>再問一次, 你能飛去哪裡?</text>
+	</string>
+	<string id="guid_agr_mlr_military_list_1">
+		<text>去我們在封鎖線的前哨站要五千盧布, 去揚塔的基地要七千盧布.</text>
+	</string>
+
+	<string id="guid_agr_mlr_military_vert_0">
+		<text>我需要個飛行員.</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_1">
+		<text>行, 我們的下一班航班很快就要出發了, 要去哪兒?</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_2">
+		<text>去封鎖線的檢查站. %c[d_orange][5000 盧布]</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_3">
+		<text>去揚塔的基地. %c[d_orange][7000 盧布]</text>
+	</string>
+	<string id="guid_agr_mlr_military_vert_4">
+		<text>我改變注意了.</text>
+	</string>
+	
+	<string id="find_blackbox_mlr_reward_army_0">
+		<text>我從一架摔成廢鐵的直升機里找到個飛行記錄儀.</text>
+	</string>
+	<string id="find_blackbox_mlr_reward_army_1">
+		<text>找得好! 幹得不錯, 我的士兵!</text>
+	</string>
+
+	
+<!-- Military = Medic -->
+	<string id="rogovets_about_himself_1_6_army_mlr_0">
+		<text>說說你自己吧.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_1">
+		<text>我是這個基地的醫生. 我第一次來這裡是幾年前簽的合同. 經過一些準備, 我被分配到久負盛名的坦途小組. 可悲的是, 坦途行動本身是失敗的. 我們別無選擇, 我們還活著的人只能在普里皮亞奇躲起來 - 直到一個來自烏克蘭安全域性的特工趕來幫助我們撤離.\n \n我很高興擺脫了那個地方. 在那個被詛咒的城市裡, 怪事不斷發生, 而我最奇怪的經歷之一就是在一個鎖著的冰箱裡醒來. 直到今天, 我都不知道我是怎麼到達那裡的, 也不知道我之前在做什麼. 其他的人都取笑我, 但我記得當時我流的汗和窒息感, 我的眼睛迷迷糊糊的. 當更多的士兵開始遭遇所謂的"傳說怪物"攝魂怪時, 好吧, 他們終於不笑話我了.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_2">
+		<text>然後發生了什麼? 你為什麼不離開?</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_3">
+		<text>我確實"退出"了一段時間. 或者更確切地說, 我留了下來. 我的指揮官因為坦途行動失敗而被解僱后, 我心裡很不好受. 然後, 我儘快退役, 以便從醫. 儘管如此, 當兵還是有些特別之處的, 如果我最終不回來, 我覺得我就會拋棄他們. 這不是普通士兵的錯, 而是總參謀部的錯 - 呃...呃, 咳咳.\n \n正如我剛才所說的, 庫茲涅佐夫上校的指揮風格肯定不像我的老指揮官, 前科瓦斯基上校的行事風格. 但我還是很高興能讓士兵們活著. 讓我更高興的是, 那個烏克蘭安全域性的特工 - 德格捷列夫上校 - 在這裡也扮演了更積極的領導角色, 知道他還在特異區的某個地方晃悠就足夠了. 他救過我很多次, 我真的很感激他.</text>
+	</string>
+	<string id="rogovets_about_himself_1_6_army_mlr_4">
+		<text>明白了. 祝你一路順風.</text>
+	</string>
+	
+	<string id="rogovets_hello_1_6_army_mlr_0">
+		<text>嗯 ?哦, 是你啊.</text>
+	</string>
+
+	
+<!-- Commander, barman in Agroprom -->
+	<string id="barmen_about_himself_1_6_army_mlr_0">
+		<text>你是誰?</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_1">
+		<text>我是當地的酒保 - 或者是食品販子 - 你怎麼稱呼都行. 這裡的軍人們都叫我指揮官. 我在特異區的第一份工作是清潔工, 在1986年事故后清理核電站周圍. 我不是這裡的人, 但蘇聯解體后, 我決定按合同留在特異區. 畢竟我有些經驗, 哈!</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_2">
+		<text>那裡怎麼樣?</text>
+	</string>
+	<string id="barmen_about_himself_1_6_army_mlr_3">
+		<text>嗯，那時候我年輕多了 - 只是個新兵，你知道嗎? 不是你今天看到的這個百歲老人. 我當時很幸運. 只是用水管把廢棄村子中的塵土沖洗掉, 然後再把土翻一遍. 軍官們會測量輻射, 而我則被派去清理. 不過, 風暴引擎附近的清潔工卻陷入麻煩之中. 在那裡, 就連我們的技術都不能避死於放射性塵埃, 更不用說一般人了. 想像一下就知道了. \n \n所以，他們用鏟子清理石墨屋頂. 但爲了國家的利益, 這是必須做的 - 不管那現在意味著什麼. 輻射真是個奇怪的東西 - 它讓一些人痛苦不堪, 卻又放過另一些人, 比如迪亞特洛夫, 他倖存了下來, 但最終進了監獄. 但是, 與2006年以來發生的事情相比, 我不知道. 現在肯定有比輻射更奇怪的事情發生.</text>
+	</string>
+</string_table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_placeable_workshop">
+		<text>便携式工作台</text>
+	</string>
+	<string id="st_placeable_workshop_descr">
+		<text>可以随时随地布置的折叠桌子, 提供了各种工具并集成了储藏空间, 能当作工作台来使用, 潜行者们在野外都是用工具箱来进行制作, 这种功能性家具一般会放在藏身处\n \n
+		%c[ui_gray_3]属性:\n
+		%c[d_blue] • %c[ui_gray_2] 科技物品\n
+		%c[d_blue] • %c[ui_gray_2] 底部自带集成储物箱\n
+		%c[d_orange] • %c[ui_gray_2] 和工具箱作用相同\n</text>
+	</string>
+</string_table>

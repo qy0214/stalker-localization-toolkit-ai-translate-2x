@@ -1,0 +1,88 @@
+<!--
+- @ Version: SCREEN SPACE SHADERS - UPDATE 19
+- @ Description: Wind - MCM strings
+- @ Author: https://www.moddb.com/members/ascii1457
+- @ Mod: https://www.moddb.com/mods/stalker-anomaly/addons/screen-space-shaders
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<!-- Rain Title -->
+	<string id="ui_mcm_ssfx_module_wind_title">
+		<text>風力設定</text>
+	</string>
+
+	<!-- Button -->
+	<string id="ui_mcm_ssfx_module_wind">
+		<text>風力</text>
+	</string>
+
+	<!-- Rain Settings -->
+	<string id="ui_mcm_ssfx_module_wind_min_speed_mcm">
+		<text>最小風速</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_min_speed_mcm_desc">
+		<text>設定最小風速</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_speed_mcm">
+		<text>雜草晃動速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_speed_mcm_desc">
+		<text>設定雜草晃動的動畫速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_turbulence_mcm">
+		<text>雜草晃動渦流強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_turbulence_mcm_desc">
+		<text>雜草晃動的紊亂程度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_push_mcm">
+		<text>雜草彎曲強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_push_mcm_desc">
+		<text>雜草彎曲強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_wave_mcm">
+		<text>草面波紋強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_grass_wave_mcm_desc">
+		<text>草面波紋強度</text>
+	</string>
+
+
+	<string id="ui_mcm_ssfx_module_wind_trees_speed_mcm">
+		<text>樹枝/灌木晃動速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_trees_speed_mcm_desc">
+		<text>樹枝/灌木的晃動速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_trees_trunk_mcm">
+		<text>樹幹搖晃速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_trees_trunk_mcm_desc">
+		<text>樹幹搖晃速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_trees_bend_mcm">
+		<text>樹幹搖晃強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_wind_trees_bend_mcm_desc">
+		<text>樹幹搖晃強度</text>
+	</string>
+
+</string_table>

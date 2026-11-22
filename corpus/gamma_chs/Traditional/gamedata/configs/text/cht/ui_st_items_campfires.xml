@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_campfire_placeable_title">
+		<text>可放置的營火</text>
+	</string>
+	<string id="ui_mcm_menu_campfire_placeable">
+		<text>可放置的營火</text>
+	</string>
+
+	<string id="ui_mcm_campfire_placeable_place_radius">
+		<text>營火可搭建範圍</text>
+	</string>
+	<string id="ui_mcm_campfire_placeable_place_radius_desc">
+		<text>玩家需要建立營火的周圍,它應該或多或少是平坦的,這樣才有可能生起篝火. \n
+					\n 預設: 3.0</text>
+	</string>
+
+	<string id="ui_mcm_campfire_placeable_dot_dist_diff">
+		<text>放置營火管理</text>
+	</string>
+	<string id="ui_mcm_campfire_placeable_dot_dist_diff_desc">
+		<text>如果你想在更多不平坦的表面上放置營火,請增加滑塊 \n
+					\n 預設: 0.4</text>
+	</string>
+
+	<string id="ui_mcm_campfire_placeable_transition_delete_items">
+		<text>刪除閑置營火</text>
+	</string>
+	<string id="ui_mcm_campfire_placeable_transition_delete_items_desc">
+		<text>在每次地圖轉換時刪除放置的營火. \n
+					\n 預設: On</text>
+	</string>
+
+	<string id="ui_mcm_campfire_placeable_delete_items">
+		<text>刪除模組前請打勾（必選）</text>
+	</string>
+	<string id="ui_mcm_campfire_placeable_delete_items_desc">
+		<text>爲了防止儲存檔案損壞,該選項將在下次載入時刪除所有由該外掛新增的新專案 \n 
+				\n 如果你想刪除模組: \n
+				\n 1) 啟用該選項; \n
+				\n 2) 儲存、載入、再次儲存; \n
+				\n 3) 退出遊戲並關閉模組.</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	
+    <string id="ui_mcm_menu_aol_hf">
+        <text>藏身處傢俱</text>
+    </string>
+
+	<string id="ui_mcm_aol_hf_bind_left">
+		<text>順時針旋轉傢俱</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_right">
+		<text>逆時針旋轉傢俱</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_bind_up">
+		<text>向上移動傢俱</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_down">
+		<text>向下移動傢俱</text>
+	</string>
+
+    <string id="ui_mcm_aol_hf_bind_place">
+		<text>放置傢俱</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_bind_collision">
+		<text>切換碰撞檢查</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_disable_bbox">
+		<text>放置期間禁用邊界框</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_use_ingame_time">
+		<text>照明型傢俱顯示遊戲內時間</text>
+	</string>
+
+	<string id="ui_mcm_aol_hf_update_mcm">
+		<text>更新 MCM 來設定鍵鍵位,預設方向鍵旋轉傢俱,F鍵放置傢俱 漢化BY BILIBILI@蠢了個樂</text>
+	</string>
+
+
+</string_table>

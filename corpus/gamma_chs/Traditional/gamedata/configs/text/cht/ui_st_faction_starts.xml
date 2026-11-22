@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- SineDeviance Edits/Adds -->
+	<string id="ui_st_train_hangar">
+		<text>火車機庫 (填埋場)</text>
+	</string>
+	<string id="ui_st_truck_cemetery_bandits_post">
+		<text>郊區營地 (卡車墓園)</text>
+	</string>
+	<string id="ui_st_tc_central_tower">
+		<text>中央瞭望塔 (卡車墓園)</text>
+	</string>
+	
+	<!-- Stock Anomaly -->
+	<string id="ui_st_abandoned_sawmill">
+		<text>鋸木廠 (扎頓)</text>
+	</string>
+	<string id="ui_st_abandoned_school">
+		<text>廢棄學校 (死城)</text>
+	</string>
+	<string id="ui_st_abandoned_village">
+		<text>廢棄村莊 (軍事倉庫)</text>
+	</string>
+	<string id="ui_st_brain_scorcher">
+		<text>"焦腦器" (雷達站)</text>
+	</string>
+	<string id="ui_st_car_park">
+		<text>停車場 (封鎖線)</text>
+	</string>
+	<string id="ui_st_construction_site">
+		<text>建築工地 (廢棄區)</text>
+	</string>
+	<string id="ui_st_container_warehouse">
+		<text>集裝箱倉庫 (尤皮特)</text>
+	</string>
+	<string id="ui_st_cultural_center">
+		<text>能量文化宮 (普里皮亞奇)</text>
+	</string>
+	<string id="ui_st_eastern_factory">
+		<text>東區工廠(黑谷)</text>
+	</string>
+	<string id="ui_st_factory_complex">
+		<text>廠區 (農業研究所)</text>
+	</string>
+	<string id="ui_st_hermanns_bunker">
+		<text>赫曼的碉堡 (尤皮特)</text>
+	</string>
+	<string id="ui_st_hidden_base">
+		<text>晴空秘密基地 (大沼澤)</text>
+	</string>
+	<string id="ui_st_kopachy_village">
+		<text>科帕奇 (尤皮特)</text>
+	</string>
+	<string id="ui_st_lodging_house">
+		<text>宿舍 (羅斯托克)</text>
+	</string>
+	<string id="ui_st_makeshift_barracks">
+		<text>臨時兵營 (羅斯托克)</text>
+	</string>
+	<string id="ui_st_military_base">
+		<text>軍事倉庫 (軍事倉庫)</text>
+	</string>
+	<string id="ui_st_northern_factory">
+		<text>北方工廠 (黑谷)</text>
+	</string>
+	<string id="ui_st_river_port">
+		<text>河港 (普城郊區)</text>
+	</string>
+	<string id="ui_st_rookie_village">
+		<text>菜鳥村 (封鎖線)</text>
+	</string>
+	<string id="ui_st_research_institute">
+		<text>農業研究所 (農業研究所)</text>
+	</string>
+	<string id="ui_st_sakharovs_bunker">
+		<text>薩哈洛夫的碉堡 (揚塔)</text>
+	</string>
+	<string id="ui_st_skadovsk_shipwreck">
+		<text>斯卡多夫斯克號 (扎頓)</text>
+	</string>
+	<string id="ui_st_southern_checkpoint">
+		<text>軍方前哨 (封鎖線)</text>
+	</string>
+	<string id="ui_st_sports_center">
+		<text>體育中心 (死城)</text>
+	</string>
+	<string id="ui_st_tunnel_entrance">
+		<text>隧道入口 (尤皮特)</text>
+	</string>
+	<string id="ui_st_tunnel_refuge">
+		<text>地下設施 (農研所)</text>
+	</string>
+	<string id="ui_st_tuzla_outpost">
+		<text>圖茲拉哨岡 (大沼澤)</text>
+	</string>
+	<string id="ui_st_yanov_station">
+		<text>亞諾夫 (尤皮特)</text>
+	</string>
+	<string id="ui_st_pripyat_hospital">
+		<text>醫院 (普城郊區)</text>
+	</string>
+	<string id="ui_st_pumping_station">
+		<text>水泵站 (大沼澤)</text>
+	</string>
+	<string id="ui_st_red_forest_old_mine">
+		<text>礦山營房 (紅森林)</text>
+	</string>
+	<string id="ui_st_village_ruins">
+		<text>村莊廢墟 (大沼澤)</text>
+	</string>
+
+	<!-- Last Day -->
+	<string id="ui_st_atp">
+		<text>巴士站 (封鎖線)</text>
+	</string>
+	<string id="ui_st_barricades_at_the_car">
+		<text>汽車路障 (農業研究所)</text>
+	</string>
+	<string id="ui_st_camp_at_crane">
+		<text>起重機營地 (切爾諾貝利核電站)</text>
+	</string>
+	<string id="ui_st_camp_on_a_hillock">
+		<text>山上營地 (卡車墓園)</text>
+	</string>
+	<string id="ui_st_check_point">
+		<text>檢查站 (尤皮特)</text>
+	</string>
+	<string id="ui_st_crossroads">
+		<text>十字路口 (卡車墓園)</text>
+	</string>
+	<string id="ui_st_curve_beam">
+		<text>溝壑 (軍事倉庫)</text>
+	</string>
+	<string id="ui_st_deadlock_of_a_tunnel">
+		<text>隧道 (農業研究所)</text>
+	</string>
+	<string id="ui_st_destroyed_bridge">
+		<text>斷橋 (黑谷)</text>
+	</string>
+	<string id="ui_st_eastern_checkpoint">
+		<text>東部檢查站 (卡車墓園)</text>
+	</string>
+	<string id="ui_st_fallen_helicopter">
+		<text>墜毀直升機 (軍事倉庫)</text>
+	</string>
+	<string id="ui_st_farm_base_neytral">
+		<text>廢棄農場 (封鎖線)</text>
+	</string>
+	<string id="ui_st_filling_station">
+		<text>加油站 (黑谷)</text>
+	</string>
+	<string id="ui_st_flea_market">
+		<text>跳蚤市場 (填埋場)</text>
+	</string>
+	<string id="ui_st_forest_area">
+		<text>鋸木廠 (扎頓)</text>
+	</string>
+	<string id="ui_st_halt_behind_a_dump">
+		<text>停車場 (卡車墓園)</text>
+	</string>
+	<string id="ui_st_hideout">
+		<text>藏身處 (普城郊區)</text>
+	</string>
+	<string id="ui_st_house_on_the_hill">
+		<text>坡間小屋</text>
+	</string>
+	<string id="ui_st_kbo_monolith">
+		<text>禧年服務中心 (普城郊區)</text>
+	</string>
+	<string id="ui_st_machine_yard">
+		<text>機械大院 (大沼澤)</text>
+	</string>
+	<string id="ui_st_military_base_two">
+		<text>軍事基地 (發電機)</text>
+	</string>
+	<string id="ui_st_mine_koper">
+		<text>廢棄礦洞 (紅森林)</text>
+	</string>
+	<string id="ui_st_outpost_of_dolg">
+		<text>紀律團前哨 (填埋場)</text>
+	</string>
+	<string id="ui_st_parking_at_kamaz">
+		<text>停車場 (廢棄區)</text>
+	</string>
+	<string id="ui_st_parking_on_a_farm">
+		<text>農場停車場 (黑谷)</text>
+	</string>
+	<string id="ui_st_parking_under_an_embankment">
+		<text>堤下 (大沼澤)</text>
+	</string>
+	<string id="ui_st_pole_bandit_base">
+		<text>土匪公園 (牧場)</text>
+	</string>
+	<string id="ui_st_pole_stalker_village">
+		<text>餐廳 (牧場)</text>
+	</string>
+	<string id="ui_st_post_of_mercenaries">
+		<text>軍方檢查站 (軍事倉庫)</text>
+	</string>
+	<string id="ui_st_power_station">
+		<text>空地 (切爾諾貝利核電站)</text>
+	</string>
+	<string id="ui_st_small_village">
+		<text>小村莊(黑谷)</text>
+	</string>
+	<string id="ui_st_prachechnya">
+		<text>洗衣店 (普城郊區)</text>
+	</string>
+	<string id="ui_st_processing_station">
+		<text>污水處理站 (扎頓)</text>
+	</string>
+	<string id="ui_st_ruins">
+		<text>廢墟 (廢棄醫院)</text>
+	</string>
+	<string id="ui_st_store_books_a18">
+		<text>書店 (普城郊區)</text>
+	</string>
+	<string id="ui_st_yard">
+		<text>庭院 (利曼斯克)</text>
+	</string>
+	<string id="ui_st_yard_with_a_terrace">
+		<text>庭院露臺 (利曼斯克)</text>
+	</string>
+</string_table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_wpn_beretta_stars">
+		<text>Beretta 92F "Stars"</text>
+	</string>
+	<string id="st_wpn_beretta_stars_descr">
+		<text>伯萊塔92F也許是美軍最著名的制式手槍, 它取代了傳說中的M1911, 它是一把帶有鋁製槍身和鍍鉻槍膛, 並採用槍管短後坐式工作原理, 後膛閉鎖式擊發的攜帶型武器, 使用非常廣泛, 由於它採用了大威力子彈和大容量彈匣, 使得其在犯罪分子手中尤其流行\n \n
+		%c[ui_gray_2]槍械配件: \n
+		%c[d_purple] • %c[ui_gray_2] 9x19mm通用消音器(改裝后)\n
+		%c[d_purple] • %c[ui_gray_2] 相容瞄具: Docter反射式瞄準鏡, RMR反射式瞄準鏡, DeltaPoint反射式瞄準鏡 \n \n</text>
+	</string>
+</string_table>

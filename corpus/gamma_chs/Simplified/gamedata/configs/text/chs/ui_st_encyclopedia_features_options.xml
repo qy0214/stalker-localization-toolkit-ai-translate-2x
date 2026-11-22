@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_features_options">
+		<text>功能 (可选)</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_aoe_pickup_mode">
+		<text>范围拾取模式</text>
+	</string>
+	<string id="encyclopedia_features_options_aoe_pickup_mode_text">
+		<text>
+			%c[d_cyan]范围拾取模式[ui_gray_2] 可以一次拾取多个物品.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用后, 一次按键就可以将多个物品拾取入物品栏中, 就和潜行者: 普里皮亚奇的召唤中一样.\n
+			\n可从菜单中选用这项功能, 默认情况下禁用.
+		</text>
+	</string>
+	
+	
+	<string id="encyclopedia_features_options_ai_die_in_anomaly">
+		<text>AI死于异常点</text>
+	</string>
+	<string id="encyclopedia_features_options_ai_die_in_anomaly_text">
+		<text>
+			%c[d_cyan]AI死于异常点%c[ui_gray_2] 让潜行者和变种生物一样, 容易受到异常点的攻击.\n
+			\n%c[d_red]警告%c[ui_gray_2]\n
+			\n潜行者会尝试避开异常点, 但通常AI无法检测到异常点的伤害范围导致丧命. 对象包括同伴\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+			\n在游戏中更改选项将需要重新启动游戏.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_artefact_degradation">
+		<text>神器降解</text>
+	</string>
+	<string id="encyclopedia_features_options_artefact_degradation_text">
+		<text>
+			%c[d_cyan]神器降解%c[ui_gray_2] 激活后会导致神器能力和加成降低.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用此功能后, 拥有最好的神器不再是神器猎人的终点.\n
+			\n神器的使用量越大, 就越弱, 促进了它们的进一步狩猎和积累, 而不是仅仅成为一种快速的收入来源.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_day_radiation">
+		<text>日间辐射</text>
+	</string>
+	<string id="encyclopedia_features_options_day_radiation_text">
+		<text>
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n在白天, 空气会受到辐射. 把自己暴露在外面会使你的身体不断受到周围辐射的影响, 而这反过来又会严重影响你的健康.\n
+			\n你要么要避免白天外出, 要么在周围放一些防辐射的东西, 以消除身体吸收的辐射.\n \n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_debug_hud">
+		<text>调试 HUD/地图</text>
+	</string>
+	<string id="encyclopedia_features_options_debug_hud_text">
+		<text>
+			%c[d_cyan]调试 HUD%c[ui_gray_2] 显示地图上智能地域的信息和位置.\n
+			\n%c[d_cyan]调试地图 HUD%c[ui_gray_2] 显示信息和位置的神器和藏品, 你需要在地图上使用快捷键, 如SHIFT, ALT, CTRL.\n
+			\n这两个功能可以从"游戏选项"菜单中切换, 默认情况下处于禁用状态.
+			\n在调试模式下启动游戏将在使用这些选项时显示更多信息.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_delayed_repairs">
+		<text>维修需要时间</text>
+	</string>
+	<string id="encyclopedia_features_options_delayed_repairs_text">
+		<text>
+			%c[d_cyan]维修需要时间%c[ui_gray_2] 允许技术人员保留您的设备.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用此功能后, 您带给技师的损坏的武器、装备和其他物品将保留在他们的手中, 直到他们完成所有维修.\n
+			\n交付物品后, 您可以再次与技术人员交谈, 询问他们是否准备好提货, 他们会将物品退回或告诉您还需要多少时间.\n
+			\n这为传统的维修系统增加了一点现实的增强功能, 如果您想获得更艰苦的体验, 这是很合适的, 因为它不再是瞬时工作的, 而是强调使用枪械和缝纫工具.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_dynamic_news">
+		<text>离线战斗模拟器</text>
+	</string>
+	<string id="encyclopedia_features_options_dynamic_news_text">
+		<text>
+			%c[d_cyan]离线战斗模拟器%c[ui_gray_2] 允许潜行者/变异生物在特异区的其他地方与敌人作战.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用后, 它将在一定程度上模拟其他地图中的小队之间的战斗. 结果取决于%c[ui_gray_3]人口因素%c[ui_gray_2] 包括潜行者和变异生物.
+			\n玩家可以收到来自遥远地点潜行者的枪战情况的消息.
+			\n启用 %c[ui_gray_3]动态阵营关系%c[ui_gray_2] 选项时, 各阵营之间的战斗将在关系变化中发挥作用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_extended_hud">
+		<text>扩展 HUD</text>
+	</string>
+	<string id="encyclopedia_features_options_extended_hud_text">
+		<text>
+			%c[d_cyan]扩展 HUD%c[ui_gray_2] 允许在屏幕上显示其他信息.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用此功能后, 简短的同伴信息和一个迷你版提示器在屏幕上方显示.\n
+			\n可以从UI/HUD选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_full_alife">
+		<text>完整A-life模拟</text>
+	</string>
+	<string id="encyclopedia_features_options_full_alife_text">
+		<text>
+			%c[d_cyan]完整A-life模拟%c[ui_gray_2]在全地图激活A-life系统.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n正常情况下A-life模拟只启动于玩家所在地图和其余相邻地图.
+			\n这个功能会在全地图启动A-life模拟. 这将导致整个区域的潜行者和变种生物自由移动, 生活和行动,扩展了整个区域的动态体验.\n
+			\n%c[d_red]注意: %c[ui_gray_2]这个功能会增加电脑负担. 如果遇到性能问题,可能必须减少人口系素.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.\n
+			\n开关这个功能需要重启游戏.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_hardcore_ai_aim">
+		<text>硬核AI瞄准</text>
+	</string>
+	<string id="encyclopedia_features_options_hardcore_ai_aim_text">
+		<text>
+			%c[d_cyan]硬核AI瞄准%c[ui_gray_2] 增强了AI瞄准预判能力同时减少反应时间.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n开启之后你将更难避免在扫射和冲刺时被击中, 使用掩护对你生存变得越来越重要.\n
+			\n这个功能可以从游戏选项菜单中切换, 默认关闭.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_harcore_campfire">
+		<text>硬核保存 (篝火)</text>
+	</string>
+	<string id="encyclopedia_features_options_harcore_campfire_text">
+		<text>
+			%c[d_cyan]硬核保存 (篝火)%c[ui_gray_2] 只有在篝火处才能存档!.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n这一功能增加了游戏的硬核元素, 并描绘了生存体验.
+			\n一旦开启, 你不能从主菜单或使用快速保存按钮保存你的进度. 你需要在篝火上用火柴来保存.\n
+			\n这个功能可以从游戏选项菜单中切换, 默认关闭.\n
+			\n与硬核保存 (健康情况) 模式一起体验更佳.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_harcore_conditions">
+		<text>硬核保存 (健康情况)</text>
+	</string>
+	<string id="encyclopedia_features_options_harcore_conditions_text">
+		<text>
+			%c[d_cyan]硬核保存 (健康情况)%c[ui_gray_2]允许您在满足特定条件时保存进度.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n这一功能增加了游戏的硬核元素,并描绘了生存体验.
+			\n一旦启用,当你的健康情况符合以下任意一项, 你将不能从主菜单或使用快速保存按钮保存你的进度:
+			\n%c[d_red]• %c[ui_gray_2]生命值低.
+			\n%c[d_red]• %c[ui_gray_2]受到辐射.
+			\n%c[d_red]• %c[ui_gray_2]正在流血.
+			\n%c[d_red]• %c[ui_gray_2]处于危险 (敌人发现你).
+			\n%c[d_red]• %c[ui_gray_2]处于能量风暴.\n \n
+			\n这个功能可以从游戏选项菜单中切换, 默认关闭.\n
+			\n与硬核保存 (篝火) 模式一起体验更佳.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_helicopter_patrols">
+		<text>直升飞机巡逻</text>
+	</string>
+	<string id="encyclopedia_features_options_helicopter_patrols_text">
+		<text>
+			%c[d_cyan]直升飞机巡逻%c[ui_gray_2] 使阵营能够使用空中支援来保卫战略区域.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n有友军飞机在该地区巡逻的阵营将能够在攻击或防御敌人潜行者(包括你)和变异生物时请求他们的支持.\n
+			\n尽管它们的外观很吓人, 但在尾桨受到轻微损坏后, 它们很容易被打下来.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于启用状态.\n
+			\n%c[d_green]地点%c[ui_gray_2]\n
+			\n• 农业研究所\n• 封锁线\n• 黑暗小径\n• 大沼泽\n• 利曼斯克
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_lootmoney">
+		<text>尸体上搜钱</text>
+	</string>
+	<string id="encyclopedia_features_options_lootmoney_text">
+		<text>
+			%c[d_cyan]抢钱%c[ui_gray_2] 允许你在死人身上找到金钱.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n你发现的金额取决于死者的排名. 排名越高, 您可能找到的钱越多.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_online_exclusion">
+		<text>限制刷新</text>
+	</string>
+	<string id="encyclopedia_features_options_online_exclusion_text">
+		<text>
+			%c[d_cyan]限制刷新%c[ui_gray_2] 在你的角色周围创建一个非刷新区域.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n当你在地图的出入口附近探索时, 你可能遭到从其他地区到来的敌人的袭击, 启用此选项后, 这种刷新将会延迟, 直到你安全地离开.\n
+			\n需要注意的时虽然这个区域围绕着你; 但并不代表从其他地区赶来的敌人会被清除.\n
+			\n可以从游戏选项菜单中调整此功能, 默认情况下设置为75.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_population_factors">
+		<text>人口因素</text>
+	</string>
+	<string id="encyclopedia_features_options_population_factors_text">
+		<text>
+			%c[d_cyan]人口因素%c[ui_gray_2] 修改在特异区中发现的潜行者和变异生物的数量.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n潜行者和变异生物人口因素可以相互独立调整, 允许你决定特异区的野生或定居程度, 而无需修改任何游戏文件.\n
+			\n应该注意的是, 开始新角色时效果最大, 如果这些因素在游戏开始后发生了改变, 那么它们只会在潜行者 和/或 变异生物死亡后以更大或更小的数量重生时才会生效.\n
+			\n这些功能可以从游戏选项菜单中进行调整.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_portrait_by_outfit">
+		<text>穿着关联头像</text>
+	</string>
+	<string id="encyclopedia_features_options_portrait_by_outfit_text">
+		<text>
+			%c[d_cyan]穿着关联头像%c[ui_gray_2] 头像根据你的穿着变换.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n启用此功能后, 每次装备或取消装备装备(不包括头饰)时, 角色的肖像都会更新以反映这一点, 模拟AI的肖像如何与其外观匹配.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_radio_music">
+		<text>广播音乐</text>
+	</string>
+	<string id="encyclopedia_features_options_radio_music_text">
+		<text>
+			%c[d_cyan]广播音乐%c[ui_gray_2] 允许在某些地点播放自定义音乐曲目.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n特异区内的某些休闲地点附近安装了收音机, 每个都会播放精选的音乐曲目, 以保持潜行者的愉悦.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下启用.\n
+			\n%c[d_green]地点%c[ui_gray_2]\n
+			\n• 农业研究所 - 军队基地\n• 封锁线 - 西多洛维奇的碉堡\n• 大沼泽 - 晴空基地\n• 黑谷 - 土匪基地\n• 罗斯托克 - 辐射100\n• 红森林 - 守林人列斯尼克的塔
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_options_thirst">
+		<text>口渴模拟</text>
+	</string>
+	<string id="encyclopedia_features_options_thirst_text">
+		<text>
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n顾名思义: 这是模拟口渴的核心选项. 它不断地推动玩家寻找水源, 并在其他需求的同时增加另一层难度.
+			\n口渴指示器将显示在你的HUD上, 以确定口渴程度, 你越口渴, 你的健康和耐力将越差, 直到你死亡.\n	
+			\n可以从游戏选项菜单中开关此功能, 默认情况下启用.
+		</text>
+	</string>`
+	
+	<string id="encyclopedia_features_options_sleep_deprivation">
+		<text>睡眠剥夺</text>
+	</string>
+	<string id="encyclopedia_features_options_sleep_deprivation_text">
+		<text>
+			%c[d_cyan]睡眠剥夺%c[ui_gray_2] 允许时间和消耗品的使用导致你的角色疲劳.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n在整个特异区里, 你会发现许多床和睡袋, 通常它们只是用来让你通过睡觉来跳过时间, 但是启用了这个功能, 它们就成为了游戏中必不可少的一部分.\n
+			\n随着时间的推移, 你的角色会慢慢开始感到疲惫, 屏幕开始模糊和抖动. 这些影响将继续恶化, 直到你找到一个合适的地方休息或睡眠剥夺的影响导致你崩溃从疲惫.\n
+			\n疲劳可以通过服用药盒和伏特加等物品来加速, 而高咖啡因能量饮料则可以消除疲劳 - 然而, 服用太多会让你无法休息, 直到它们的效果消失.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于禁用状态.
+		</text>
+	</string>`
+	
+	<string id="encyclopedia_features_options_use_battery">
+		<text>使用电池</text>
+	</string>
+	<string id="encyclopedia_features_options_use_battery_text">
+		<text>
+			%c[d_cyan]使用电池%c[ui_gray_2] 该选项要求您使用电池来保持小工具的功能.\n
+			\n%c[d_green]情报%c[ui_gray_2]\n
+			\n探测器和手电筒等电气设备从通用电源设备(UPD)获得所需的电压和功率, 以便正常工作. 正因为如此, UPD单元不断被消耗.
+			\n为了保持UPD的功能, 你应该在失去所有的能量之前用电池给它充电. 
+			\n把电池放在口袋里很重要, 你可以买, 也可以到处找.\n
+			\n可以从游戏选项菜单中开关此功能, 默认情况下处于启用状态.
+		</text>
+	</string>`
+	
+</string_table>

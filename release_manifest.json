@@ -1,34 +1,32 @@
 {
-  "generated_at": "2026-11-22T22:09:01+08:00",
+  "generated_at": "2026-11-22T23:49:01+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "f3c554b",
+    "commit": "1469c34",
     "dirty": true,
     "dirty_files": [
-      "M README.md",
-      " M audit-reports/AUDIT_PRETEST_2013.txt",
-      " D dist/ai_translate_plugin_v2.0.18.zip",
-      " D dist/ai_translate_plugin_v2.0.18_install.zip",
+      "M audit-reports/AUDIT_PRETEST_2013.txt",
+      " D dist/ai_translate_plugin_v2.0.19.zip",
+      " D dist/ai_translate_plugin_v2.0.19_install.zip",
       " M plugins/ai_translate/assets/glossary_builtin.json",
       " M plugins/ai_translate/assets/stalker_termbase.json",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_2013_all_fixes.py",
-      " M tests/test_2014_all_fixes.py",
-      " M tests/test_2015_all_fixes.py",
-      " M tests/test_ai_translate_fixes.py",
-      " M tests/test_share_package.py",
+      " M tools/harvest_termbase_from_human.py",
       "?? audit-reports/HARVEST_CONFLICTS.md",
-      "?? dist/ai_translate_plugin_v2.0.19.zip",
-      "?? dist/ai_translate_plugin_v2.0.19_install.zip",
+      "?? corpus/",
+      "?? dist/ai_translate_plugin_v2.0.20.zip",
+      "?? dist/ai_translate_plugin_v2.0.20_install.zip",
       "?? old_tb_head.json",
-      "?? tools/harvest_termbase_from_human.py"
+      "?? tmp/",
+      "?? tools/extract_ogsrga_texts.py",
+      "?? tools/ingest_wiki_terms.py"
     ]
   },
   "versions": {
-    "plugin_version": "2.0.19",
-    "expected_plugin_version": "2.0.19",
+    "plugin_version": "2.0.20",
+    "expected_plugin_version": "2.0.20",
     "plugin_api": 1,
     "target_toolkit": "STALKER Localization Toolkit 2.x"
   },
@@ -37,48 +35,48 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 468348,
-      "sha256": "91907abfa7b964fbafd847f2d0582b9721e8d39d930686e88d14f325bdfcc24f",
+      "size": 458196,
+      "sha256": "5221bcdcda58ebfae916e4f1cbb2ff17c773bac63f3fbfe502f58d6d2ba421f6",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 2538103,
+      "size": 3566335,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
-      "path": "dist\\ai_translate_plugin_v2.0.19.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.20.zip",
       "exists": true,
-      "size": 854426,
-      "sha256": "3a3c316d1beadfa571c809eb0a53603e6a358113dcc93561dd81dc44ef173b69",
+      "size": 1257287,
+      "sha256": "ba7de2cd4971d2107443bf1d38d72c612567db1bc4589fafca7ed7c740d6d4ca",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
-      "path": "dist\\ai_translate_plugin_v2.0.19_install.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.20_install.zip",
       "exists": true,
-      "size": 854346,
-      "sha256": "bbf4e305ed77233272fdbce46ef7192fd814fd0fdc9e0f39c32d96ce8cb688ca",
+      "size": 1257207,
+      "sha256": "adc8d7c14bcf62479a8e54886031ca2905b5e3b5e479368af220c7efcef2646f",
       "note": "给平台插件管理器直接解压用"
     },
     {
       "role": "术语库（随包，只读）",
       "path": "plugins\\ai_translate\\assets\\glossary_builtin.json",
       "exists": true,
-      "size": 1027609,
-      "sha256": "96796fc8fb3bbf00708f968912398b7d8f87b6fff4a2afdca870f31dc922d80f",
+      "size": 1546474,
+      "sha256": "e53c2a83d2e01ba987f16ab0821b00cc552292fb974b68343a597e0f00267009",
       "note": "运行时匹配的内置层"
     },
     {
       "role": "术语基表（分类）",
       "path": "plugins\\ai_translate\\assets\\stalker_termbase.json",
       "exists": true,
-      "size": 1033374,
-      "sha256": "6da3553940b533f9e5fc954c9ae7edb0759b02f9b4b53d9d31ec8d0fc92dd009",
+      "size": 1552893,
+      "sha256": "8fa300bb7708084ce48d06ff06c68487235a886560df476f654c01fa3b166192",
       "note": "导入用"
     },
     {
@@ -99,8 +97,8 @@
     }
   ],
   "zip": {
-    "path": "dist\\ai_translate_plugin_v2.0.19.zip",
-    "sha256": "3a3c316d1beadfa571c809eb0a53603e6a358113dcc93561dd81dc44ef173b69",
+    "path": "dist\\ai_translate_plugin_v2.0.20.zip",
+    "sha256": "ba7de2cd4971d2107443bf1d38d72c612567db1bc4589fafca7ed7c740d6d4ca",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -156,7 +154,7 @@
     {
       "check": "插件版本 == 预期",
       "ok": true,
-      "detail": "PLUGIN_INFO 2.0.19 / 预期 2.0.19"
+      "detail": "PLUGIN_INFO 2.0.20 / 预期 2.0.20"
     },
     {
       "check": "PLUGIN_API == 1（2.x 宿主契约）",
@@ -186,7 +184,7 @@
     {
       "check": "zip 文件名含插件版本",
       "ok": true,
-      "detail": "ai_translate_plugin_v2.0.19.zip"
+      "detail": "ai_translate_plugin_v2.0.20.zip"
     },
     {
       "check": "zip 条目 == 5 个预期文件",
@@ -206,7 +204,7 @@
     {
       "check": "随包术语库非空壳（两文件合计 > 600 KB）",
       "ok": true,
-      "detail": "glossary_builtin.json=1027609；stalker_termbase.json=1033374"
+      "detail": "glossary_builtin.json=1546474；stalker_termbase.json=1552893"
     },
     {
       "check": "zip 内文件 == 工作副本",
@@ -251,22 +249,22 @@
     {
       "check": "术语基表：_meta.total_entries == 实际分类合计",
       "ok": true,
-      "detail": "meta 21065 / 实际 21065"
+      "detail": "meta 32706 / 实际 32706"
     },
     {
       "check": "术语基表：_meta.categories == 实际分类条数",
       "ok": true,
-      "detail": "meta 11 类 / 实际 11 类，差异：无"
+      "detail": "meta 13 类 / 实际 13 类，差异：无"
     },
     {
       "check": "术语库：随包条目 >= 8000",
       "ok": true,
-      "detail": "21065 条"
+      "detail": "32706 条"
     },
     {
       "check": "术语库：随包 >= 分类基表",
       "ok": true,
-      "detail": "21065 / 21065"
+      "detail": "32706 / 32706"
     },
     {
       "check": "dist 只保留当前版本 zip",
@@ -275,25 +273,27 @@
     }
   ],
   "term_data": {
-    "glossary_entries": 21065,
-    "termbase_entries": 21065,
+    "glossary_entries": 32706,
+    "termbase_entries": 32706,
     "termbase_categories": {
       "阵营与组织": 107,
       "人物与军衔": 3250,
       "地点与区域": 397,
       "变异生物": 79,
-      "物品·武器·装备·神器": 3413,
-      "任务": 2455,
-      "百科与术语": 3742,
-      "界面与提示": 2684,
-      "新闻·对话·其他": 4772,
+      "物品·武器·装备·神器": 3699,
+      "任务": 2456,
+      "百科与术语": 3765,
+      "界面与提示": 3263,
+      "新闻·对话·其他": 5353,
       "ANTHOLOGY 参考": 148,
-      "技术缩写": 18
+      "技术缩写": 18,
+      "Gunslinger 参考": 5912,
+      "GAMMA 参考": 4259
     },
-    "termbase_meta_total": 21065
+    "termbase_meta_total": 32706
   },
   "tracked": {
-    "files": 43,
-    "bytes": 3778087
+    "files": 44,
+    "bytes": 4827417
   }
 }

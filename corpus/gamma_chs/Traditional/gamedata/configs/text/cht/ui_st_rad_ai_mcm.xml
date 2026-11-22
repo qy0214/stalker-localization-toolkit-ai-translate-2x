@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_rad_ai_title">
+		<text>精神煥發的AI</text>
+	</string>
+	<string id="ui_mcm_menu_rad_ai">
+		<text>精神煥發的AI設定</text>
+	</string>
+
+	<string id="ui_mcm_rad_ai_trader_sleep">
+		<text>會睡覺的商人</text>
+	</string>
+
+	<string id="ui_mcm_rad_ai_mechanic_sleep">
+		<text>會睡覺的技師</text>
+	</string>
+
+	<string id="ui_mcm_rad_ai_medic_sleep">
+		<text>會睡覺的醫師</text>
+	</string>
+
+	<string id="ui_mcm_rad_ai_sleep_from">
+		<text>商人睡眠開始時間</text>
+	</string>
+
+	<string id="ui_mcm_rad_ai_sleep_to">
+		<text>商人睡眠結束時間</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- STALKERS -->
+	<string id="ui_mcm_menu_smr_stalkers">
+		<text>潛行者</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_squad_size">
+		<text>潛行者小隊規模</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_squad_size_variance">
+		<text>小隊規模差異</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_squad_size_variance_desc">
+		<text>數值越高,潛行者小隊的規模就越隨機. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war">
+		<text>內戰</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_civilwar_disabled">
+		<text>已禁用</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_civilwar_stalkers">
+		<text>潛行者</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_civilwar_squads">
+		<text>小隊</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war_desc">
+		<text>如果啟用,所有潛行者或潛行者小隊都會相互敵對. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war_base_population">
+		<text>內戰影響基礎人口</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war_base_population_desc">
+		<text>如果啟用,屬於基礎人口的潛行者會受到內戰環境的影響. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war_monolith_allied">
+		<text>黑石結盟（內戰）</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_civil_war_monolith_allied_desc">
+		<text>無論內戰預設如何,都會使黑石與潛行者之間彼此結盟. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population">
+		<text>潛行者基地人口</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population_desc">
+		<text>基地中的潛行者數量. </text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_base_population_default">
+		<text>預設</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_base_population_survival">
+		<text>生存</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_base_population_minimal">
+		<text>最小</text>
+	</string>
+	<string id="ui_mcm_lst_smr_stalkers_base_population_none">
+		<text>沒有</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population_default">
+		<text>預設異常預設. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population_survival">
+		<text>預設的異常生存預設. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population_minimal">
+		<text>刪除了幾乎所有的基地. 在剩下的基地中,羅斯托克是唯一安全的,有基地守衛. 基地外重新整理的不受影響. \n
+	如果你不是以獨行者的身份開始,你可能需要利用偽裝系統. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_base_population_none">
+		<text>受死氣 "Last Stand" 模式的啓發,刪除了基地內的所有潛行者的產生\n
+	這意味著不會有任何商人、機械師或守衛. 基地外的重新整理不受影響. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_random_stalkers">
+		<text>產生隨機潛行者小隊</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_random_stalkers_desc">
+		<text>將潛行者小隊替換為隨機陣營的小隊. 這意味著你可能會在你之前沒有想到的地方發現別的陣營. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_random_stalkers_chance">
+		<text>隨機潛行者小隊機率</text>
+	</string>
+	<string id="ui_mcm_smr_stalkers_factions_title">
+		<text>陣營</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_factions_info">
+		<text>你可以在下面啟用或禁用陣營. 禁用的陣營不會出現在特異區中. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_factions_replace_squads">
+		<text>替換移除的小隊</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_factions_replace_squads_desc">
+		<text>將禁用陣營的小隊替換為啟用陣營的小隊. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_stalker">
+		<text>獨行者</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_csky">
+		<text>晴空</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_duty">
+		<text>紀律團</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_freedom">
+		<text>自由軍</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_merc">
+		<text>傭兵</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_army">
+		<text>軍隊</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_ecolog">
+		<text>生態學家</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_greh">
+		<text>原罪</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_stalkers_zombied">
+		<text>殭屍</text>
+	</string>
+</string_table>

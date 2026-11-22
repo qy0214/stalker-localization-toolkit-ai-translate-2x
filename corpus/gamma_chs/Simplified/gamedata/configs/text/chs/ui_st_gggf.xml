@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+<string_table>
+
+
+	<string id="ui_mcm_gggf_title">
+		<text>移动速度配置</text>
+	</string>
+	<string id="ui_mcm_menu_gggf">
+		<text>小G快跑</text>
+	</string>
+	<string id="ui_mcm_gggf_gotta_go_fast_run">
+		<text>奔跑速度倍率</text>
+	</string>
+	<string id="ui_mcm_gggf_gotta_go_fast_run_desc">
+		<text>将角色奔跑速度（当你不按任何其他键移动时）乘以自定义的系数</text>
+	</string>
+	<string id="ui_mcm_gggf_gotta_go_fast_sprint">
+		<text>冲刺速度倍率</text>
+	</string>
+	<string id="ui_mcm_gggf_gotta_go_fast_sprint_desc">
+		<text>将角色的冲刺速度（当你按下"冲刺"键移动时）乘以自定义的系数</text>
+	</string>
+
+
+</string_table>

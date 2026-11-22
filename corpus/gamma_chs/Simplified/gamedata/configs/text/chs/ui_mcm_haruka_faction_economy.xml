@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_faction_economy_title">
+		<text>阵营经济系统</text>
+	</string>
+	<string id="ui_mcm_menu_faction_economy">
+		<text>阵营经济系统</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_faction_discounts">
+		<text>阵营折扣倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_faction_discounts_desc">
+		<text>启用基于阵营关系的倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_goodwill_mul">
+		<text>商誉值倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_goodwill_mul_desc">
+		<text>启用基于商誉值的倍率. (默认情况下只适用于你的阵营)</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_ignore_faction_goodwill">
+		<text>忽略阵营的商誉值倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_ignore_faction_goodwill_desc">
+		<text>使商誉值倍率对所有阵营都有效.</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_reputation_mul">
+		<text>声誉倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_reputation_mul_desc">
+		<text>启用基于玩家声誉的倍率.</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_north_level_mul">
+		<text>北部地区价格较高</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_north_level_mul_desc">
+		<text>使北方的价格因赤字而更高.</text>
+	</string>
+	<string id="ui_mcm_faction_economy_chance_for_extra_item">
+		<text>玩家在阵营交易商处获得额外物品的概率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_required_supply_level">
+		<text>其他阵营所需的商誉等级</text>
+	</string>
+	<string id="ui_mcm_faction_economy_required_supply_level_desc">
+		<text>其他阵营的商人开始出售阵营装备的商誉等级</text>
+	</string>
+	<string id="ui_mcm_faction_economy_goodwill_mul">
+		<text>商誉价格倍率系数</text>
+	</string>
+	<string id="ui_mcm_faction_economy_rep_mul">
+		<text>信誉价格倍率系数</text>
+	</string>
+	<string id="ui_mcm_faction_economy_ammo_amount_special">
+		<text>特殊弹药的数量</text>
+	</string>
+	<string id="ui_mcm_faction_economy_ammo_amount">
+		<text>普通弹药的数量</text>
+	</string>
+	<string id="ui_mcm_faction_economy_ammo_amount_special_desc">
+		<text>特殊（AP、HP、弹头、飞镖等）弹药的数量,将根据商人出售的武器在库存中产生. </text>
+	</string>
+	<string id="ui_mcm_faction_economy_ammo_amount_desc">
+		<text>普通弹药的数量,将根据商人出售的武器在库存中产生. </text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_trade_GUI">
+		<text>启用贸易菜单中的附加信息</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_special_ammo_spawns">
+		<text>使用特殊弹药生成器</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_trade_GUI_desc">
+		<text>启用交易员肖像旁边的附加信息如库存等级和倍率</text>
+	</string>
+	<string id="ui_mcm_faction_economy_use_special_ammo_spawns_desc">
+		<text>为商人启用特殊的弹药生成规则, 弹药不是使用商人文件,而是根据售出的武器来生成. </text>
+	</string>
+	<string id="st_haruka_sulpplies_level">
+		<text>库存等级</text>
+	</string>
+	<string id="st_haruka_multiplier">
+		<text>倍率</text>
+	</string>
+</string_table>

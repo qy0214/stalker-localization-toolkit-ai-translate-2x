@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!--COMMON-->
+	<string id="st_mag_weapon_jammed">
+		<text>武器卡殼了</text>
+	</string>
+	<string id="st_mag_eject_magazine">
+		<text>取下彈匣</text>
+	</string>
+	<string id="st_mag_unload_ammo">
+		<text>卸下彈藥</text>
+	</string>
+	<string id="st_mag_loadout_remove">
+		<text>移出彈藥袋</text>
+	</string>
+	<string id="st_mag_loadout_add">
+		<text>新增到彈藥袋</text>
+	</string>
+	<string id="st_mag_retool">
+		<text>改造</text>
+	</string>
+	<string id="st_mag_err_retool">
+		<text>不能改造已填裝的彈匣! 請卸下所有子彈</text>
+	</string>
+
+	<!-- MCM -->
+	
+	<string id="ui_mcm_menu_magazines">
+		<text>彈匣系統</text>
+	</string>
+	<string id="ui_mcm_menu_mgmt">
+		<text>彈匣管理</text>
+	</string>
+	<string id="ui_mcm_menu_hud">
+		<text>彈匣HUD</text>
+	</string>
+	<string id="ui_mcm_menu_gameplay">
+		<text>遊戲設定</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmtitle">
+		<text>異常彈匣重製</text>
+	</string>
+	<string id="ui_mcm_magazines_hudtitle">
+		<text>HUD設定</text>
+	</string>
+	<string id="ui_mcm_magazines_gametitle">
+		<text>遊戲設定</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_loadtime_factor">
+		<text>子彈裝填時間</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_loadtime_factor_desc">
+		<text>裝填子彈速度倍率</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_unloadtime_factor">
+		<text>子彈解除安裝時間</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_unloadtime_factor_desc">
+		<text>解除安裝子彈速度倍率</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_tooltip">
+		<text>彈匣詳細資訊</text>
+	</string>
+	<string id="ui_mcm_lst_topround">
+		<text>只顯示第一發</text>
+	</string>
+	<string id="ui_mcm_lst_trcap">
+		<text>顯示第一發 + 確切彈容</text>
+	</string>
+	<string id="ui_mcm_lst_full">
+		<text>完整顯示</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_mag_tooltip_desc">
+		<text>彈匣資訊的完整程度</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_debug">
+		<text>啟用除錯日誌</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_debug_desc">
+		<text>啟用控制檯中的除錯日誌</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_empty_mags_stack">
+		<text>空彈匣在物品欄中可以堆疊</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_empty_mags_stack_desc">
+		<text>如果啟用, 空彈匣將在物品欄中堆疊在一起, 而不是分開</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_sort_inv">
+		<text>彈匣狀態更新時自動整理物品欄</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_sort_inv_desc">
+		<text>如果你不喜歡彈匣更新時庫存中的物品四處移動, 請取消勾選此項</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_highlight_color">
+		<text>高亮顯示顏色</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_highlight_color_desc">
+		<text>高亮顯示已經置入彈匣袋的彈匣</text>
+	</string>
+
+	<string id="ui_mcm_magazines_mgmt_highlight_clr_a">
+		<text>高亮不透明度</text>
+	</string>
+	<string id="ui_mcm_magazines_mgmt_highlight_clr_a_desc">
+		<text>較低的值會使高亮更不明顯</text>
+	</string>
+
+	<string id="ui_mcm_lst_ram_orange">
+		<text>橙色</text>
+	</string>
+	<string id="ui_mcm_lst_ram_pink">
+		<text>粉色</text>
+	</string>
+	<string id="ui_mcm_lst_ram_blond">
+		<text>金色</text>
+	</string>
+	<string id="ui_mcm_lst_ram_white">
+		<text>白色</text>
+	</string>
+	<string id="ui_mcm_lst_ram_brown">
+		<text>棕色</text>
+	</string>
+	<string id="ui_mcm_lst_ram_blue">
+		<text>藍色</text>
+	</string>
+
+	<string id="ui_mcm_magazines_hud_scale">
+		<text>HUD 縮放</text>
+	</string>
+
+	<string id="ui_mcm_magazines_hud_ammo_scale">
+		<text>彈藥圖示縮放</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_grp_by_bt">
+		<text>根據武器分組</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_grp_by_bt_desc">
+		<text>如果開啟, 同一武器的彈匣會歸為一組, 如果關閉, 相同的彈匣物品都會歸為一組</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_show_bgrd">
+		<text>顯示背景</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_bgrd">
+		<text>背景材質</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_group_by_ammo">
+		<text>按彈藥分組</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_group_by_ammo_desc">
+		<text>如果啟用, 彈匣將根據第一發子彈被分組</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_show_hud">
+		<text>啟用彈匣HUD</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_show_hud_desc">
+		<text>如果啟用, 你的HUD中會顯示目前裝備的彈匣, 位於彈藥計數器附近</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_icon_text">
+		<text>啟用彈匣HUD上的彈藥文字</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_icon_text_desc">
+		<text>如果啟用, 你將在HUD上看到彈匣中第一發子彈的文字, 需要開啟"按彈藥分組"</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_ammo_icon">
+		<text>啟用彈匣HUD上的彈藥圖示</text>
+	</string>
+	<string id="ui_mcm_magazines_hud_ammo_icon_desc">
+		<text>如果啟用, 你將在HUD上看到彈匣中第一發子彈的小彈藥圖示, 需要啟用"按彈藥分組"</text>
+	</string>
+
+	<string id="ui_mcm_magazines_gameplay_retain_round">
+		<text>啟用"膛內留彈"模式</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_retain_round_desc">
+		<text>如果啟用,當彈匣被彈出時,武器會在槍膛中保留一發子彈.</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_fast_loading">
+		<text>在儲物箱中瞬間裝填子彈</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_fast_loading_desc">
+		<text>如果啟用, 在儲物箱中裝卸子彈將是即時的, 就像在逃離塔科夫一樣</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_quick_loading">
+		<text>啟用快速彈匣裝填</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_quick_loading_desc">
+		<text>如果啟用, 在物品欄中裝子彈會很快, 一次裝滿一個彈匣</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_ejection">
+		<text>空彈匣的解除安裝行為</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_ejection_desc">
+		<text>控制空彈匣的去向</text>
+	</string>
+
+	<string id="ui_mcm_lst_ruck">
+		<text>放進揹包</text>
+	</string>
+
+	<string id="ui_mcm_lst_loadout">
+		<text>放進彈藥袋</text>
+	</string>
+
+	<string id="ui_mcm_magazines_gameplay_mag_unequip_trs">
+		<text>%被視為空彈匣</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_mag_unequip_trs_desc">
+		<text>低於這個百分比將被視作空彈匣.</text>
+	</string>
+	<string id="ui_mcm_magazines_rant">
+		<text>解釋一下戰鬥裝彈（關閉庫存裝彈）的原理:
+
+	\n\n你的彈匣數是你背心上的一組裝彈袋/環. 在這個例子中,你有4個裝彈袋,你有4個彈匣,每個裝彈袋有一個,第五個彈匣在槍里. 
+	\n你要換彈,你的槍在一隻手上,你用另一隻手抓住槍中的彈匣,然後把它拿出來. 你現在一隻手拿著槍,另一隻手拿著彈匣. 四個口袋裡都有一個彈匣,所以你不能把手裡的彈匣放進口袋,也不能把彈匣從口袋裡拿出來,因為你兩隻手都不是空的. 你會怎麼做？把手裡的彈匣塞進你的口袋或者揹包. 
+	\n現在你有一隻空手,你可以從裝彈袋中取出一個彈匣,然後把它放進槍中. 換彈完畢. 
+	\n如果你的裝彈袋是空的,那麼槍里的空彈匣就會被放進那個口袋裡. 除非它是空的,那麼預設情況下它會進入你的揹包. 這一點可以被改變,這樣空彈夾就會被放進裝彈袋或掉到地上. 
+
+	\n\n如果你打開了庫存,那麼這就不是戰鬥中的重新裝彈,而且還會有額外的嘗試將彈匣放入你的彈藥袋,因為它被認為你可以將槍或彈匣放下. 另外,當庫存打開時,將彈匣扔在地上的設定也被忽略了. 
+	\n然而,如果你認為RavenAscendant是錯誤的,在戰鬥換彈期間,你的潛行者有一隻神奇的第三隻手來握住從槍里出來的彈夾,直到它可以被放進釋放出來的裝載袋,或者他們會用牙齒/膝蓋/腋窩/幻覺的力量握住它,那麼下面有一個選項可以啟用這種行為. </text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_three_hands">
+		<text>在戰鬥中重新裝彈后,用第三隻手將彈出的彈匣放回你的彈藥袋.</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_three_hands_desc">
+		<text>Raven 覺得這麼幹不科學.</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathquality">
+		<text>NPC 彈匣質量</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathquality_desc">
+		<text>調節從屍體中找到更好的彈匣和彈藥的機率.</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathmags">
+		<text>NPC 彈匣掉落</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathmags_desc">
+		<text>調節NPC掉落的彈匣數量.</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathammo">
+		<text>NPC 彈藥掉落</text>
+	</string>
+	<string id="ui_mcm_magazines_gameplay_deathammo_desc">
+		<text>調節NPC掉落的彈匣中彈藥的數量.</text>
+	</string>
+
+	<!--MAGAZINES-->
+
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+	<string id="st_mag_bonus">
+		<text>(裝備:%s + 額外的:%s)<!--alt:> (%s + %s)<--></text>
+	</string>
+	<string id="st_mag_small">
+		<text>小型彈匣:</text>
+	</string>
+	<string id="st_mag_medium">
+		<text>中型彈匣:</text>
+	</string>
+	<string id="st_mag_large">
+		<text>大型彈匣:</text>
+	</string>
+	<string id="st_mag_base">
+		<text>彈匣基座</text>
+	</string>
+	<string id="st_mag_base_descr">
+		<text>彈匣基座</text>
+	</string>
+	
+	<string id="st_mag_size">
+		<text>彈匣尺寸:</text>
+	</string>
+	<string id="st_mag_size_small">
+		<text>小型</text>
+	</string>
+	<string id="st_mag_size_medium">
+		<text>中型</text>
+	</string>
+	<string id="st_mag_size_large">
+		<text>大型</text>
+	</string>
+
+	<string id="st_mag_loaded">
+		<text>已裝填的彈匣:</text>
+	</string>
+	<string id="st_mag_loaded_none">
+		<text>警告:沒有裝載彈匣</text>
+	</string>
+	
+	<string id="st_mag_ammo_loaded_count">
+		<text>已裝填子彈:</text>
+	</string>
+	<string id="st_mag_capacity">
+		<text>彈匣容量:</text>
+	</string>
+	<string id="st_mag_ammo_top_round">
+		<text>第一發:</text>
+	</string>
+
+	<string id="article_mags">
+		<text>異常彈匣</text>
+	</string>
+	<string id="article_mags_text">
+		<text>
+			%c[pda_green]彈匣Redux%c[ui_gray_1]\n
+			\n歡迎使用彈匣Redux,本指南將涵蓋大部分的功能和變化,你可以在使用這個MOD時期待.\n
+			\nF或舊的異常彈匣(來自Wuut)的使用者,你可以期望在遊戲中沒有什麼區別.大部分功能都是一樣的.\n
+			%c[pda_green]I. 如何裝載和發射武器%c[ui_gray_1]\n
+			\n• 在現實生活中邏輯上使用彈夾的武器需要使用彈夾.\n
+			\n   • 沒有的武器將表現得像原版一樣(霰彈槍,一些栓式步槍,左輪手槍).\n
+			\n• 彈藥必須手動裝入彈夾.彈夾的描述會指出什麼樣的彈藥是相容的.要裝載彈藥,將彈藥專案拖到彈夾上.這將啟動一個裝載程式,一個接一個地把子彈裝進去.\n
+			\n   • 要取消這個程式,請點選任何地方.\n
+			\n• 要把一個彈夾放入裝備中,右擊彈夾.會有一個選項 "新增到彈藥袋".彈夾的背景會改變顏色,並且會新增一個圖示:這意味著彈夾已經被新增到你的裝備裝載中.\n
+			\n   • 從這裡開始,如果你持有符合條件的武器,重新裝填武器將利用你裝備中的彈夾.\n
+			\n   • 該模型將試圖自動選擇a)具有最大尺寸和b)具有與你的彈藥型別相同的頂級子彈的彈夾.\n
+			\n• 該模型將試圖自動選擇a)具有最大尺寸和b)具有與你的彈藥型別相同的頂級子彈的彈夾.\n
+			\n• 彈藥選擇界面可以用來交換彈匣.彈匣是按頂部的子彈分類的..\n
+			%c[pda_green]II. 哪裡可以找到彈匣%c[ui_gray_1]\n
+			\n• 儲存槍支的供應商會儲存彈夾.彈夾也可能以微薄的價格賣給他們.\n
+			\n• NPC的武器會有幾個彈夾,有一點彈藥.\n
+			\n   • NPC,特別是高等級的NPC,有很小的機率會掉落改進的彈夾.這些彈夾載入速度更快,容量更大,或者兩者兼而有之.\n
+
+			\n
+			%c[pda_green]III. 解釋MCM選項%c[ui_gray_1]\n
+			\n• 戰利品質量.影響掉落彈夾的數量、填充量和改進彈夾的機會.\n
+			\n• 裝彈/卸彈時間係數.彈夾中子彈裝載/解除安裝速度的乘數.\n
+			\n• 快速裝載.可即時卸下/裝上彈夾,只需存放在庫存中.\n
+			\n• 一個在槍膛里.切換彈夾時保留槍膛里的子彈,就像現實生活一樣.\n
+		</text>
+	</string>
+
+</string_table>

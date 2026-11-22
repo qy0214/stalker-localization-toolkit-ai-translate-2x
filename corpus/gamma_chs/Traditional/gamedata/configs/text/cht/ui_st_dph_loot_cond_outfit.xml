@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_dph_loot_cond">
+		<text>掉落狀況</text>
+	</string>
+	<string id="ui_mcm_menu_outfit">
+		<text>裝備</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit">
+		<text>裝備</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_header">
+		<text>殭屍潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_zombied_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_header">
+		<text>菜鳥潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_novice_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_header">
+		<text>新兵潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_trainee_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_header">
+		<text>熟手潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_experienced_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_header">
+		<text>專業潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_professional_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_header">
+		<text>老兵潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_veteran_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_header">
+		<text>專家潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_expert_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_master_header">
+		<text>大師潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_master_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_master_max">
+		<text>最高狀況</text>
+	</string>
+	<!-- //// -->
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_header">
+		<text>傳奇潛行者</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_min">
+		<text>最低狀況</text>
+	</string>
+	<string id="ui_mcm_dph_loot_cond_outfit_legend_max">
+		<text>最高狀況</text>
+	</string>
+</string_table>

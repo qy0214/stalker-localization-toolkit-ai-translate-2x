@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="zone_mine_radar_section_name">
+		<text>靈能裂隙</text>
+	</string>
+	
+	<string id="zone_mine_darkness_section_name">
+		<text>黑域</text>
+	</string>
+	
+	<string id="zone_mine_flash_section_name">
+		<text>時間裂縫</text>
+	</string>
+	
+	<string id="zone_mine_ghost_section_name">
+		<text>幽靈守衛</text>
+	</string>
+	
+	<string id="zone_mine_gold_section_name">
+		<text>流金</text>
+	</string>
+	
+	<string id="zone_mine_green_dragon_section_name">
+		<text>綠龍</text>
+	</string>
+	
+	<string id="zone_mine_mefistotel_section_name">
+		<text>惡魔花</text>
+	</string>
+	
+	<string id="zone_mine_net_section_name">
+		<text>粒子網</text>
+	</string>
+	
+	<string id="zone_mine_point_section_name">
+		<text>球狀閃電</text>
+	</string>
+	
+	<string id="zone_mine_sphere_section_name">
+		<text>力場屏障</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_radar">
+		<text>靈能裂隙</text>
+	</string>
+	<string id="encyclopedia_anomalies_radar_text">
+		<text>
+			• 異常名: %c[d_cyan]靈能裂隙%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]靈能
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n據一些學者聲稱, 圍繞著地球的除了大氣, 還有一層能影響意識的心靈位面--念域, 如果念域和現實的邊界遭到破壞就會形成這樣的裂隙, 會向周圍釋放出足以使人癲狂的靈體能量, 對精神造成毀滅性的影響
+			\n\n這種對腦部活動的干擾會繞過幾乎所有的靈能防護裝置, 所以從沒有人敢主動靠近這裡 
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_darkness">
+		<text>黑域</text>
+	</string>
+	<string id="encyclopedia_anomalies_darkness_text">
+		<text>
+			• 異常名: %c[d_cyan]黑域%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]靈能
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n在這片可怕的黑色區域中, 神秘的力量會影響生物的心靈, 將深入骨髓的恐懼刻入腦海. 不知為何詭異的騷靈活動在這裡也會十分頻繁
+			\n\n或許它的力量也源於那深不可測的黑暗...
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_flash">
+		<text>時間裂縫</text>
+	</string>
+	<string id="encyclopedia_anomalies_flash_text">
+		<text>
+			• 異常名: %c[d_cyan]時間裂縫%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]時間
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n時空連續體受到干擾后產生的裂縫, 受其影響的生物會在高維度沿著未知軸向滑行, 通常會瞬間跳過一段時間. 但不知為何卻不會使時間倒流
+			\n\n有的潛行者利用這個特性來逃脫變異生物的追捕, 也有潛行者在裡面一呆就是一整天, 好像只是爲了獲得某種神器 
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_ghost">
+		<text>幽靈守衛</text>
+	</string>
+	<string id="encyclopedia_anomalies_ghost_text">
+		<text>
+			• 異常名: %c[d_cyan]幽靈守衛%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]電力/化學
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n球形的電化學異常, 它最顯著的特點是會在一定區域內沿著固定的路線移動, 像個巡邏的守衛
+			\n\n雖然很多潛行者認為這種行為體現了它具有一定程度的智慧, 不過大部分生態學家都對這樣的說法嗤之以鼻 
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_gold">
+		<text>流金</text>
+	</string>
+	<string id="encyclopedia_anomalies_gold_text">
+		<text>
+			• 異常名: %c[d_cyan]流金%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]化學
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n就像是"毒汁"的孿生姐妹那樣, "流金"也有著極其相似的特點, 它會散發出金黃色的劇毒雲霧. 這種化合物進入循環系統后, 能將生物的體溫急劇升高到致命的程度, 引發嚴重的脫水, 甚至會在很短時間內使生物死於血液沸騰
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_green_dragon">
+		<text>綠龍</text>
+	</string>
+	<string id="encyclopedia_anomalies_green_dragon_text">
+		<text>
+			• 異常名: %c[d_cyan]綠龍%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]化學
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n包含未知成分化合物的劇毒雲霧, 能極大影響有機體的運動機能, 顯著削弱諸如快速奔跑和跳躍在內的運動能力 
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_mefistotel">
+		<text>惡魔花</text>
+	</string>
+	<string id="encyclopedia_anomalies_mefistotel_text">
+		<text>
+			• 異常名: %c[d_cyan]惡魔花%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]電力/化學
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n美麗的事物常常伴隨著危險, 就像浮士德中所描述的以狡詐著稱的惡魔--墨菲斯特一樣, 這種有著花朵般奇異外觀的區域, 會對著靠近的生物併發出詭異的聲響, 之後會迅速將其吸入中心並引爆, 將殘骸碎片撒向四周 
+
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_net">
+		<text>粒子網</text>
+	</string>
+	<string id="encyclopedia_anomalies_net_text">
+		<text>
+			• 異常名: %c[d_cyan]粒子網%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]重力/電力
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n基本上就是一道高能粒子流, 藉由附近的力場進一步加速, 能迅速包圍闖入的生物, 就像是一張大網一般
+			\n\n疏於防範而誤入其中的潛行者, 沒有一個能活著回來講述這種經歷 
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_point">
+		<text>球狀閃電</text>
+	</string>
+	<string id="encyclopedia_anomalies_point_text">
+		<text>
+			• 異常名: %c[d_cyan]球狀閃電%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]電力
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n一種電系的異常點, 讓人回想起曾經無法解釋的自然現象. 它好像能影響附近的電容器, 主動將能量灌輸其中. 有的潛行者說自己從此再也沒買過電池
+			\n\n不過爲了保險起見, 還是應該做好萬全的準備, 再去驗證這種說法的真實性
+		</text>
+	</string>
+
+	<string id="encyclopedia_anomalies_sphere">
+		<text>力場屏障</text>
+	</string>
+	<string id="encyclopedia_anomalies_sphere_text">
+		<text>
+			• 異常名: %c[d_cyan]力場屏障%c[ui_gray_1]
+			\n• 異常型別: %c[d_orange]引力
+			\n \n%c[pda_green]資訊%c[ui_gray_1]
+			\n由多個力場緊密聚合而成的異常點, 在垂直於地面的上方形成了一個圓盤. 像是盾牌一樣, 它會減弱甚至抵消快速移動的物體動能, 比如子彈或者什麼別的東西, 有經驗的潛行者們經常利用它創造戰術優勢 
+			\n\n(和子彈無關, 目前只會影響投擲物, 如螺栓和手雷丟上去會消失)
+		</text>
+	</string>
+
+</string_table>

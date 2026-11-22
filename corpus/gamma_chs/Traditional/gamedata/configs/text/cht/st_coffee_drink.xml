@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_coffee_drink">
+		<text>UCC冷泡即飲咖啡</text>
+	</string>
+	<string id="st_coffee_drink_descr">
+		<text>UCC冷泡阿拉比卡和羅布斯塔牛奶咖啡.\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲料\n
+		%c[d_green] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 強力醒酒效果\n
+		</text>
+	</string>
+	
+</string_table>

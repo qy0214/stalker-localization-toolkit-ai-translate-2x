@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_ignite_fire">
+		<text>點火 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_ignite_wait">
+		<text>你必須等會才能再次點火</text>
+	</string>
+	<string id="st_ignite_far">
+		<text>附近沒有篝火,或是你站得太遠了</text>
+	</string>
+	<string id="st_extinguish_fire">
+		<text>滅火 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="actor_inventory_box_use">
+		<text>打開私人儲物箱($$ACTION_USE$$)</text>
+	</string>
+	<string id="cant_walk">
+		<text>你已筋疲力盡無法移動</text>
+	</string>
+	<string id="cant_walk_weight">
+		<text>你的負重過多無法移動</text>
+	</string>
+	<string id="car_character_use">
+		<text>開門 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_use_action_sit">
+		<text>坐下 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="character_use">
+		<text>交談 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="dead_character_use">
+		<text>搜索屍體 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="dead_character_use_or_drag">
+		<text>搜索屍體 ($$ACTION_USE$$)\n拖屍體 (SHIFT+$$ACTION_USE$$)</text>
+	</string>
+	<string id="general_complete_task">
+		<text>任務完成:</text>
+	</string>
+	<string id="general_fail_task">
+		<text>任務失敗:</text>
+	</string>
+	<string id="general_in_item">
+		<text>獲得物品:</text>
+	</string>
+	<string id="general_in_money">
+		<text>獲得金錢:</text>
+	</string>
+	<string id="general_new_task">
+		<text>新任務:</text>
+	</string>
+	<string id="general_out_item">
+		<text>失去物品:</text>
+	</string>
+	<string id="general_out_money">
+		<text>失去金錢:</text>
+	</string>
+	<string id="general_reverse_task">
+		<text>任務取消:</text>
+	</string>
+	<string id="general_update_task">
+		<text>任務更新:</text>
+	</string>
+	<string id="gun_jammed">
+		<text> </text>
+	</string>
+	<string id="st_item_taken">
+		<text>%s</text>
+	</string>
+	<string id="inventory_box_use">
+		<text>搜索容器 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="inventory_item_use">
+		<text>撿起物品 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b10_ufo_searching_tips">
+		<text>搜查飛行器 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b1_bar_door">
+		<text>門被卡住了</text>
+	</string>
+	<string id="jup_b1_door_is_closed">
+		<text>門從另一邊鎖住了</text>
+	</string>
+	<string id="jup_b202_treasures_closed">
+		<text>鎖住了</text>
+	</string>
+	<string id="jup_b205_tip_door_closed">
+		<text>需要密碼</text>
+	</string>
+	<string id="jup_b205_tip_door_decode">
+		<text>輸入密碼 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b206_use_plant">
+		<text>拿起植物 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b209_scanner_place_tips">
+		<text>架設掃描器 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="jup_b209_scanner_remove_tips">
+		<text>拿起掃描器 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="lx8_raduga">
+		<text>"彩虹"防禦系統\n
+		模式: 外部靈能場設施\n
+		能量比例 1:20</text>
+	</string>
+	<string id="pas_b400_tip_switcher">
+		<text>打開開關 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a18_use_idol">
+		<text>檢查儀器 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a25_blow_up_enter_door">
+		<text>放置炸藥 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_a28_talk_with_stupid_medic">
+		<text>恢復 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pri_b306_elevator_door_locked_used">
+		<text>電梯沒電</text>
+	</string>
+	<string id="pri_b306_generator_use">
+		<text>打開發電機 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="sleep_ok_button">
+		<text>睡覺</text>
+	</string>
+	<string id="sleep_warning_all_pleasures">
+		<text>你難以入睡!因為你身受輻射傷害並流血不止, 使用藥物或找醫生治療下</text>
+	</string>
+	<string id="sleep_warning_bleeding">
+		<text>你難以入睡!因為你正流血不止, 使用藥物或找醫生治療下</text>
+	</string>
+	<string id="sleep_warning_radiation">
+		<text>你難以入睡!因為你身受高危輻射傷害, 使用藥物或找醫生治療下</text>
+	</string>
+	<string id="sleep_zone_tip">
+		<text>睡覺 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_autosave">
+		<text>自動儲存, , </text>
+	</string>
+	<string id="st_can_use_weapon_now">
+		<text>現在你能使用武器了</text>
+	</string>
+	<string id="st_codelock">
+		<text>密碼鎖 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_detective_news">
+		<text>由於你發現了潛行者們失蹤的秘密,醫療品已經被放在了在斯卡多夫斯克號的私人儲物箱裡</text>
+	</string>
+	<string id="st_duty_first_reward_news">
+		<text>由於你幫助了紀律團,一件PS5-M通用防護服已經被放在了在亞諾夫的私人儲物箱裡</text>
+	</string>
+	<string id="st_duty_second_reward_news">
+		<text>由於你幫助了紀律團,一件PSZ-9d紀律團通用防護服已經被放在了在亞諾夫的私人儲物箱裡</text>
+	</string>
+	<string id="st_freedom_first_reward_news">
+		<text>由於你幫助了自由軍,一件自由軍風魂甲已經被放在了在亞諾夫的私人儲物箱裡</text>
+	</string>
+	<string id="st_freedom_second_reward_news">
+		<text>由於你幫助了自由軍,一件自由軍衛士護甲已經被放在了在亞諾夫的私人儲物箱裡</text>
+	</string>
+	<string id="st_freeplay_text_ok">
+		<text>你沒能成功得趕上直升飛機,撤離小隊已經丟下你離開特異區了</text>
+	</string>
+	<string id="st_freeplay_text_yes_no">
+		<text>你準備好了要離開特異區了嗎?到這可無路可回了</text>
+	</string>
+	<string id="st_game_over">
+		<text> </text>
+	</string>
+	<string id="st_game_over_press_jump">
+		<text> </text>
+	</string>
+	<string id="st_game_paused">
+		<text>暫停</text>
+	</string>
+	<string id="st_game_saved">
+		<text>儲存遊戲</text>
+	</string>
+	<string id="st_herald_of_justice_news">
+		<text>由於你揭發了喜鵲,一件神器已經被放在了在斯卡多夫斯克號的私人儲物箱裡</text>
+	</string>
+	<string id="st_jup_b41_door_locked">
+		<text>你必須等待密封艙完全密封</text>
+	</string>
+	<string id="st_lx8_button_press_true">
+		<text>允許進入</text>
+	</string>
+	<string id="st_lx8_lift_button">
+		<text>坐電梯上升 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_pri_b306_go_down">
+		<text>坐電梯下降 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_psy_danger">
+		<text>危險的靈能輻射等級,立即離開危險區</text>
+	</string>
+	<string id="st_helmet_countdown">
+		<text>防護功能關閉</text>
+	</string>
+	<string id="st_radiation_danger">
+		<text>危險的輻射等級,需要更高級的防護</text>
+	</string>
+	<string id="st_search_helicopter">
+		<text>搜查直升機 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_search_treasure">
+		<text>搜刮藏匿物 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_sleep_hours">
+		<text>點</text>
+	</string>
+	<string id="st_tip">
+		<text>資訊</text>
+	</string>
+	<string id="tip_door_blocked">
+		<text>這個門被鎖住了</text>
+	</string>
+	<string id="tip_door_close">
+		<text>關門 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_door_closed_base_alarm">
+		<text>此門被鎖 - 基地處於警戒狀態</text>
+	</string>
+	<string id="tip_door_closed_hide_weapon">
+		<text>此門被鎖 - 你必須收起你的武器</text>
+	</string>
+	<string id="tip_door_locked">
+		<text>這個門被鎖住了</text>
+	</string>
+	<string id="tip_door_no_electricity">
+		<text>此門沒有接通電源</text>
+	</string>
+	<string id="tip_door_open">
+		<text>開門 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_gate_locked">
+		<text>大門被鎖</text>
+	</string>
+	<string id="tip_need_access_card">
+		<text>使用通行卡 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_no_access_card">
+		<text>進入需要通行卡</text>
+	</string>
+	<string id="tip_open_another_site">
+		<text>門不能從這側打開</text>
+	</string>
+	<string id="ui_st_mp_experience_grow">
+		<text>-</text>
+	</string>
+	<string id="ui_st_mp_create">
+		<text>建立</text>
+	</string>
+	<string id="zat_b12_conteiner_full_locked">
+		<text>此箱被鎖, 需要兩把鑰匙打開它</text>
+	</string>
+	<string id="zat_b12_conteiner_has_one_key">
+		<text>使用鑰匙 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b12_conteiner_has_two_key">
+		<text>使用鑰匙 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b12_conteiner_locked">
+		<text>此箱被鎖, 你需要第二把鑰匙打開它</text>
+	</string>
+	<string id="zat_b12_conteiner_open">
+		<text>打開儲物箱 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b14_door_locked_hint">
+		<text>此門從裡面鎖上了</text>
+	</string>
+	<string id="zat_b57_balon_use_hint">
+		<text>連線上毒氣罐 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b57_gas_warning">
+		<text>警告!化學品危險!</text>
+	</string>
+	<string id="zat_b57_vintil_press">
+		<text>打開閥門 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="zat_b33_car_searching_tip">
+		<text>搜查汽車 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_resupply_ready">
+		<text>通過拜訪沃寇中尉和基里洛夫中尉你可以重補充醫療品和彈藥</text>
+	</string>
+	<string id="st_surge_while_asleep">
+		<text>在你睡覺的時候發生了一次能量風暴</text>
+	</string>
+	<string id="st_mutant_hunter_news">
+		<text>由於你消除了變異怪物的危險, 彈藥已經被放在了在亞諾夫的私人儲物箱裡</text>
+	</string>
+	<string id="st_found_old_treasure">
+		<text>收到藏物點座標</text>
+	</string>
+	<string id="st_got_treasure">
+		<text>發現藏物點</text>
+	</string>
+	<string id="st_found_new_treasure">
+		<text>收到藏物點座標</text>
+	</string>
+	<string id="st_press_any_key">
+		<text>按任意鍵開始遊戲</text>
+	</string>
+	<string id="tips_labx16switcher_press">
+		<text>關閉"神蹟裝置" ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tips_rad_switcher_press">
+		<text>關閉"焦腦器" ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_down_red_forest_tips">
+		<text>放下橋 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_stop_red_forest_tips">
+		<text>停止橋 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="bridge_up_red_forest_tips">
+		<text>升起橋 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="drx_sl_tips_rad_switcher_press">
+		<text>啟用"焦腦器" ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_make_a_wish">
+		<text>許願 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_lx18_pda">
+		<text>收聽PDA錄音</text>
+	</string>
+	<string id="dar_poltergeist_hold_the_door">
+		<text>有人把著門</text>
+	</string>
+	<string id="st_labx18_pass_to_1st_door">
+		<text>太棒了,同事,  我很高興你已經找到第二級訪問許可權, 最後你會發現我們實驗室裡發生了什麼事情, 你的訪問密碼是1243,  資訊來自:X-18實驗室主任,皮特 卡魯金</text>
+	</string>
+	<string id="st_labx18_pass_to_2nd_door">
+		<text>親愛的同事,請允許我提醒你,從明天開始,你將參加中心實驗室裝置的巡察, 你必須每兩小時檢查一次集裝箱, 並直接向我彙報一切, 中央實驗室房間的密碼是9524, 資訊來自:X-18實驗室主任,皮特 卡魯金</text>
+	</string>
+	<string id="st_yan_saharov_message">
+		<text>好傢伙,你終究成功了, 我們在實驗室裡研究的這臺機器是非常關鍵的,試著把它關掉,這樣我們就可以看一看了</text>
+	</string>
+	<string id="st_yan_saharov_message_2">
+		<text>聽著! 這個原型防護頭盔無法在強烈的可變頻靈能場中保護你! 頭盔會持續檢測靈能場強度, 如果檢測到會變頻的靈能場, 那麼定時器就會啟用, 當時間耗盡時, 它將過載失效, 一定要留心!</text>
+	</string>
+	<string id="st_yan_saharov_message_3">
+		<text>你... 竟然活著出來了! 我這裡的靈能場讀數顯示, "神蹟"發生器已經被你關閉了! 幹的漂亮! 潛行者! 等你閒下來或者什麼時候再次路過揚塔的話, 一定要來我們的地堡里坐坐, 大家一起喝一杯!</text>
+	</string>
+	<string id="tips_warlab_switcher_press">
+		<text>關閉發電機 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="tip_door_coded">
+		<text>此門被密碼鎖住</text>
+	</string>
+	<string id="tip_door_decode">
+		<text>按 ($$ACTION_USE$$) 解碼開門</text>
+	</string>
+	<string id="tip_door_decoding">
+		<text>正在解碼</text>
+	</string>
+	<string id="bar_arena_actor_afraid">
+		<text>戰鬥結束了! 挑戰者跑了! 哇! 這個膽小鬼, 快去吃奶吧!</text>
+	</string>
+	<string id="bar_arena_fight_10">
+		<text>10秒鐘過去了!</text>
+	</string>
+	<string id="bar_arena_fight_20">
+		<text>20秒鐘過去了!</text>
+	</string>
+	<string id="bar_arena_fight_30">
+		<text>30秒鐘過去了!</text>
+	</string>
+	<string id="bar_arena_fight_40">
+		<text>40秒鐘過去了!</text>
+	</string>
+	<string id="bar_arena_fight_50">
+		<text>50秒鐘過去了!</text>
+	</string>
+	<string id="bar_arena_fight_60">
+		<text>戰鬥進入了1分鐘!</text>
+	</string>
+	<string id="bar_arena_fight_70">
+		<text>1分10秒過去了!</text>
+	</string>
+	<string id="bar_arena_fight_80">
+		<text>1分20秒過去了!</text>
+	</string>
+	<string id="bar_arena_fight_90">
+		<text>1分30秒過去了!</text>
+	</string>
+	<string id="bar_arena_fight_begin">
+		<text>戰鬥已經開始了!</text>
+	</string>
+	<string id="bar_arena_fight_bloodsucker">
+		<text>注意! 注意! 一場新的戰鬥即將在競技場開始!\n在左邊的怪物, 是特異區最可怕的噩夢, 永遠飢餓的吸血怪!\n在右邊... 一個人類? 是的, 是個人類! 請為他歡呼!</text>
+	</string>
+	<string id="bar_arena_fight_burer">
+		<text>注意! 注意! 一場新的戰鬥即將在競技場開始!\n在左邊的怪物, 是心靈傳送的大師--變異矮人!\n在右邊的是...一個帥氣逼人的潛行者! 準備開始!</text>
+	</string>
+	<string id="bar_arena_fight_dead">
+		<text>真悲慘, 挑戰者又被殺了! ...嗯? 我為什麼要說又呢?</text>
+	</string>
+	<string id="bar_arena_fight_lose">
+		<text>挑戰者雖然殺死了他的對手, 但可惜的是---已經超時了啊! 這個笨蛋! 他失敗了!</text>
+	</string>
+	<string id="bar_arena_fight_pseudodog">
+		<text>注意! 注意! 一場新的戰鬥即將在競技場開始!\n在左邊的怪物是什麼? 嗯, 它很白, 毛髮也很軟, 但最主要的是... 這條變異犬它好像非常不爽啊!\n而在右邊的是... 算了, 鬼知道是誰! 準備開始!</text>
+	</string>
+	<string id="bar_arena_fight_savage">
+		<text>注意! 注意! 一場新的戰鬥即將在競技場開始!\n在左邊的是我們的老朋友! 從頭到腳流著膿, 口齒不清, 哆哆嗦嗦, 但是會隨時把你腦子挖出來吃掉的--"野獸"!\n而在右邊的是... 我不認識! 你可以叫他路人甲, 管他呢! 準備開始!</text>
+	</string>
+	<string id="bar_arena_fight_snork">
+		<text>注意! 注意! 一場新的戰鬥即將在競技場開始!\n在左邊的怪物是跳躍專家-史諾克!\n在右邊的是... 一個不知道哪冒出來的潛行者, 準備開始!</text>
+	</string>
+	<string id="bar_arena_fight_timeout">
+		<text>時間到了! 挑戰者失敗了, 但他仍然會為他的生命而戰!</text>
+	</string>
+	<string id="bar_arena_fight_victory">
+		<text>哇噢! 挑戰者及時殺死了他的對手! 他贏了!</text>
+	</string>
+	<string id="st_death_count">
+		<text>你已經死了%s次</text>
+	</string>
+	<string id="st_msg_unlocked_routes">
+		<text>新的地點已經在你的PDA上標記出來</text>
+	</string>
+	<string id="st_zone_disappeared">
+		<text>願望實現了!</text>
+	</string>
+	
+	<string id="st_screen_kick">
+		<text>踢</text>
+	</string>
+	<string id="st_screen_field_dress">
+		<text>肢解怪物</text>
+	</string>
+	<string id="st_nobody_left_to_replace">
+		<text>有沒人能代替</text>
+	</string>
+	<string id="st_nothing_useful">
+		<text>屍體血肉模糊了</text>
+	</string>
+	<string id="st_ui_heli">
+		<text>直升機</text>
+	</string>
+
+	<!-- AWR -->
+	<string id="st_tiski_no_info">
+		<text>沒有許可權使用這個工作臺</text>
+	</string>
+	<string id="st_tiski">
+		<text>使用工作臺 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_awr_tiski">
+		<text>修理 ($$ACTION_USE$$)</text>
+	</string>
+	
+	<!-- Lost to the Zone -->
+	<string id="st_impending_doom">
+		<text>能量風暴即將到來</text>
+	</string>
+	
+	<!-- Ironman -->
+	<string id="st_ironman_new_life">
+		<text>授予新的生命! \n
+		你已經死了%s次, \n
+		剩餘:%s</text>
+	</string>
+	
+	<!-- Toggle Animations -->
+	<string id="st_toggle_animation_on">
+		<text>物品動畫被啟用</text>
+	</string>
+	<string id="st_toggle_animation_off">
+		<text>物品動畫被關閉</text>
+	</string>
+	
+	<!-- Disguise -->
+	<string id="ui_st_disguse_disabled">
+		<text>偽裝系統已禁用</text>
+	</string>
+	<string id="ui_st_disguse_back_to_default">
+		<text>現在你又被認為是一名%s成員了</text>
+	</string>
+	<string id="ui_st_disguse_blacklisted_faction">
+		<text>你不能偽裝成%s成員</text>
+	</string>
+	<string id="ui_st_disguse_someone_saw">
+		<text>你換衣服時被人看到了, 每個人都記得你曾是%s成員</text>
+	</string>
+	<string id="ui_st_disguse_someone_remember">
+		<text>你最近被人見過, 每個人都記得你曾是%s成員</text>
+	</string>
+	<string id="ui_st_disguse_naked">
+		<text>在沒有偽裝的情況下,潛行者會把你看成是%s成員</text>
+	</string>
+	<string id="ui_st_disguse_patch_torn">
+		<text>這件服裝的臂章已經被扯下,潛行者們會把你看作是%s成員</text>
+	</string>
+	<string id="ui_st_disguse_patch_torn_now">
+		<text>你已經將服裝的%s撕破, 它不能再用來偽裝了</text>
+	</string>
+	<string id="ui_st_disguse_patch_attach_now">
+		<text>你為這件服裝貼上了%s,它又能被用來偽裝了</text>
+	</string>
+	<string id="ui_st_disguse_on">
+		<text>穿著這件衣服, 大部分潛行者都會認為你屬於%s</text>
+	</string>
+	<string id="st_disguse_actor_exposed">
+		<text>你被識破了! 現在所有人都知道你是%s成員假扮的</text>
+	</string>
+	
+	<string id="st_news_disguse_enemy_expose_1">
+		<text>入侵者!!!</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_2">
+		<text>間諜!! 殺了他</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_3">
+		<text>是間諜!! 快! 開火</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_4">
+		<text>這傢伙是敵人!!! 開槍!</text>
+	</string>
+	<string id="st_news_disguse_enemy_expose_5">
+		<text>給我站住! 罪惡之徒! 要麼交罰金, 要麼就去蹲大牢! 你身上所有贓物都要被沒收!</text>
+	</string>
+	
+	<string id="st_news_disguse_natural_expose_1">
+		<text>你是間諜嗎?! 誰派你來的?</text>
+	</string>
+	<string id="st_news_disguse_natural_expose_2">
+		<text>扮成臥底? 你覺得這很有趣?</text>
+	</string>
+	<string id="st_news_disguse_natural_expose_3">
+		<text>你騙不了我們, 白癡</text>
+	</string>
+	<string id="st_news_disguse_natural_expose_4">
+		<text>滾開</text>
+	</string>
+	
+<!-- DoctorX Questlines -->
+    <string id="st_drx_questlines_and_this_one">
+        <text>還有這個 </text>
+    </string>
+    <string id="st_drx_questlines_joined">
+        <text>你已經加入了</text>
+    </string>
+    <string id="st_drx_questlines_faction">
+        <text>陣營</text>
+    </string>
+	
+<!-- Bribe -->
+	<string id="st_bribe_expired">
+		<text>與%s的停火協議已到期</text>
+	</string>
+	<string id="st_bribe_broke">
+		<text>你違反了規則,和%s的交易取消了!</text>
+	</string>
+	
+<!-- Goodwill -->
+	<string id="st_news_goodwill_update_title">
+		<text>任務目標改變</text>
+	</string>
+	<string id="st_news_goodwill_intro_1">
+		<text>任務成功, 你的美名在四處遠揚</text>
+	</string>
+	<string id="st_news_goodwill_intro_lose_1">
+		<text>任務失敗, 你的臭名被四處傳播</text>
+	</string>
+	<string id="st_news_goodwill_main_1">
+		<text>你和%s的關係上升了</text>
+	</string>
+	<string id="st_news_goodwill_main_lose_1">
+		<text>你正在失去%s的信任</text>
+	</string>
+	<string id="st_news_goodwill_enemy_1">
+		<text>%s反感你這樣的行為</text>
+	</string>
+	
+	
+<!-- Bad turn -->
+	<string id="st_bad_turn_into_bandit">
+		<text>你被逐出這個團體!</text>
+	</string>
+	<string id="st_bad_turn_into_bandit_news">
+		<text>%c[0,255,0,0]你被逐出這個團體!</text>
+	</string>
+	<string id="st_bad_turn_into_zombie">
+		<text>靈能場等級嚴重,你已經殭屍化了!</text>
+	</string>
+	<string id="st_bad_turn_into_zombie_news">
+		<text>%c[0,255,64,0]靈能場等級嚴重,你已經殭屍化了!</text>
+	</string>
+	<string id="st_bad_turn_dezombification">
+		<text>殭屍化成功完成!</text>
+	</string>
+	<string id="st_bad_turn_dezombification_news">
+		<text>%c[0,255,64,0]殭屍化成功完成!</text>
+	</string>
+	
+<!-- Travel -->
+	<string id="st_travel_event">
+		<text>附近仍有敵人, 無法快速旅行</text>
+	</string>
+	<string id="st_travel_overloaded">
+		<text>你背的東西太重了</text>
+	</string>
+	<string id="st_travel_already_here">
+		<text>你已經在目的地了</text>
+	</string>
+	<string id="bp_to">
+		<text>移動中</text>
+	</string>
+	<string id="bp_open">
+		<text>打開揹包</text>
+	</string>
+	
+<!-- Stash placement -->
+	<string id="st_stash_created">
+		<text>藏物點已建立</text>
+	</string>
+	<string id="st_stash_placed">
+		<text>你已經將藏物點放置在某處了</text>
+	</string>
+	<string id="st_stash_unsafe">
+		<text>藏物點不能放在這裡</text>
+	</string>
+	<string id="st_itm_stash">
+		<text>藏物點</text>
+	</string>
+	<string id="st_itm_stash_of_character">
+		<text>%s的藏物點</text>
+	</string>
+	
+<!-- Sleep -->
+	<string id="st_sleep_awake">
+		<text>你不需要休息</text>
+	</string>
+	<string id="st_sleep_awake_woke_early">
+		<text>%s小時後提前醒來</text>
+	</string>
+	<string id="st_sleep_awake_slept_for">
+		<text>睡了%s個小時</text>
+	</string>
+	<string id="st_sleep_awake_slept_well">
+		<text>睡了%s個小時,睡得很好</text>
+	</string>
+	<string id="st_sleep_awake_wired">
+		<text>你體內咖啡因含量過高,無法休息</text>
+	</string>
+	<string id="st_sleep_bleeding">
+		<text>你正在流血;需要就醫</text>
+	</string>
+	<string id="st_sleep_bleeding_irradiated">
+		<text>你正在流血並遭受輻射;需要就醫</text>
+	</string>
+	<string id="st_sleep_deprived">
+		<text>你在睡夢中被殺了</text>
+	</string>
+	<string id="st_sleep_event">
+		<text>你開始打瞌睡了</text>
+	</string>
+	<string id="st_sleep_exhausted">
+		<text>你有些疲憊,需要休息</text>
+	</string>
+	<string id="st_sleep_exhausted_final">
+		<text>您疲憊不堪 - 立即休息!</text>
+	</string>
+	<string id="st_sleep_irradiated">
+		<text>你遭到了輻射;需要就醫</text>
+	</string>
+	<string id="st_cant_sleep_find_shelter_mlr">
+		<text>需要在一個安全的地方睡覺</text> 
+	</string>
+	<string id="st_cant_sleep_outside_tent_mlr">
+		<text>你得進入帳篷睡覺</text> 
+	</string>
+	
+<!-- Skinning -->
+	<string id="st_body_decayed">
+		<text>已經嚴重腐爛</text>
+	</string>
+	<string id="st_body_useless">
+		<text>屍體上沒什麼有用的部分</text>
+	</string>
+	<string id="st_body_knife_needed">
+		<text>需要一把刀</text>
+	</string>
+	<string id="st_body_knife_bad">
+		<text>刀已經鈍了</text>
+	</string>
+	<string id="st_body_knife_weak">
+		<text>需要更好的刀才能切割這個變異生物</text>
+	</string>
+	
+<!-- Campfire -->
+	<string id="st_only_campfire_save">
+		<text>手動儲存已被禁用 (可在篝火邊存檔)</text>
+	</string>
+	<string id="st_only_campfire_load">
+		<text>不在篝火旁無法讀檔</text>
+	</string>
+	<string id="st_only_campfire_quit">
+		<text>只有在篝火旁才能退出</text>
+	</string>
+	<string id="st_swsh">
+		<text>你需要一件鋒利的東西來打開罐子</text>
+	</string>
+	<string id="st_camp_m">
+		<text>你需要點火物來生火</text>
+	</string>
+	<string id="st_camp_help">
+		<text>篝火點燃了</text>
+	</string>
+	<string id="st_fail">
+		<text>沒能點燃篝火</text>
+	</string>
+	<string id="st_ui_no_save_campfire">
+		<text>你只能在篝火旁%s</text>
+	</string>
+	<string id="st_ui_campfire_prereq">
+		<text>點燃篝火需要火柴或點火裝備</text>
+	</string>
+	
+<!-- Items -->
+	<string id="st_imm_smoke_fail">
+		<text>你需要火柴來點菸</text>
+	</string>
+	<string id="st_imm_smoke_already_used">
+		<text>你擁有了更高效率的類似效果</text>
+	</string>
+	<string id="st_imm_befor_swiss">
+		<text>你需要一件鋒利的東西來打開罐子</text>
+	</string>
+	<string id="st_imm_need_swiss">
+		<text>要打開這個罐子,你需要一把瑞士刀</text>
+	</string>
+	<string id="st_imm_swiss_broken">
+		<text>你的瑞士刀壞了</text>
+	</string>
+	<string id="st_stash_no_backpack_found">
+		<text>沒有裝備揹包</text>
+	</string>
+	
+	<string id="st_itm_manager_greater_effect">
+		<text>你擁有了更高效率的類似效果:%s</text>
+	</string>
+	<string id="st_itm_manager_missing_requirements">
+		<text>需要%s!</text>
+	</string>
+	
+<!-- Notes -->
+	<string id="st_recipe_is_known">
+		<text>你之前已經讀過這個了</text>
+	</string>
+	<string id="st_letter_is_known">
+		<text>你之前已經讀過這個了</text>
+	</string>
+	
+<!-- Hardcore Saving -->
+	<string id="st_ui_no_save_timer">
+		<text>計時器正在運轉,你還不能%s</text>
+	</string>
+	
+	<string id="st_ui_no_save_combat">
+		<text>你不能在戰鬥期間%s</text>
+	</string>
+	<string id="st_ui_no_save_surge">
+		<text>你不能在能量風暴期間%s</text>
+	</string>
+	<string id="st_ui_no_save_bleed">
+		<text>你不能在流血時%s</text>
+	</string>
+	<string id="st_ui_no_save_radiation">
+		<text>你不能在遭受輻射時%s</text>
+	</string>
+	<string id="st_ui_no_save_bleed_radiation">
+		<text>你不能在流血並遭受輻射時%s</text>
+	</string>
+	<string id="st_ui_no_save_injury_1">
+		<text>你不能在中度受傷時%s</text>
+	</string>
+	<string id="st_ui_no_save_injury_2">
+		<text>你不能在重度受傷時%s</text>
+	</string>
+	<string id="st_ui_no_save_injury_3">
+		<text>你不能在嚴重受傷時%s</text>
+	</string>
+	<string id="st_ui_no_save_injury_4">
+		<text>你不能在受致命傷時%s</text>
+	</string>
+
+	<string id="st_pri_special_trader_mlr_message2">
+		<text>米克:\n你的訂單已經到了, 潛行者, 過來簽收吧</text>
+	</string>
+	<string id="st_pri_special_trader_mlr_message">
+		<text>格里芬:\n潛行者, 你正進入私人軍事財團的控制區域, 我們目前不會攻擊你們, 但也希望你在這裡不要耍花樣... 如果想找事做, 可以來見我</text>
+	</string>
+	
+<!-- Lost to the Zone -->
+	<string id="st_lttz_eidolon_strelok_message">
+		<text>偵察隊失敗了,是時候向普里皮亞奇中心發動最後一次進攻了</text>
+	</string>
+	<string id="st_lttz_stancia_strelok_message">
+		<text>下一步我們將進入石棺,  這很困難, 在我們繼續之前先喘口氣,  </text>
+	</string>
+	<string id="st_lttz_mon_strelok_message">
+		<text>碎片受到了很大的保護,  我們得殺了所有警衛</text>
+	</string>
+	<string id="st_lttz_limansk_rogue_message">
+		<text>嘿,硬漢,  我們在利曼斯克有情況,  我需要你的幫助,  這是我的座標</text>
+	</string>
+	<string id="st_lttz_kat_rogue_message">
+		<text>這不是在公園散步, 緩慢前進,注意門和角落</text>
+	</string>
+	<string id="st_lttz_gen_stitch_message">
+		<text>嘿小子,是你嗎?快過來,快!</text>
+	</string>
+	<string id="st_lttz_intercepted_transmission_message">
+		<text>, , , 現在在廢棄變電站的車間里紮營,  我們已經定位了敵人的特別研究小組並準備, , </text>
+	</string>
+	<string id="st_lttz_yanov_invitation_message">
+		<text>我看見你在這個里了, 你是怎麼來到亞諾夫車站的我們能談一談嗎?</text>
+	</string>
+	<string id="st_lttz_yanov_invitation2_message">
+		<text>嘿這裡,潛行者, 你能過來和我談一談嗎?</text>
+	</string>
+	<string id="st_lttz_pripyat_strelok_message">
+		<text>我們正在廢棄醫院附近與黑石交戰,任何幫助我們都會不勝感激</text>
+	</string>
+	<string id="st_lttz_pripyat_rogue_message">
+		<text>救-救救, , ,  我, , ,  誰來, , ,  救救我, , </text>
+	</string>
+	<string id="st_lttz_pripyat_stitch_message">
+		<text>草,草,草! 我需要一些幫助! 有人嗎?!</text>
+	</string>
+	<string id="st_lttz_pripyat_degtyarev_message">
+		<text>我是烏克蘭安全域性的亞歷山大·亞歷山大羅維奇·德格捷列夫上校,我們知道你在那裡,史特洛克,你知道我們為什麼會來,現在放下武器,一個一個慢慢出來,如果你遵守規矩我們也許不會採用暴力手段</text>
+	</string>
+	<string id="st_lttz_pripyat_strelok_message2">
+		<text>你永遠都離不開特異區的,上校,無論你是進攻風暴引擎還是躲到地球的另一邊, 只要它還存在,它就威脅著這個世界, 這不是你上司能掩蓋的東西,我不會加入你們的</text>
+	</string>
+	<string id="st_lttz_pripyat_unisg_message">
+		<text>上校,這是你最後一次干預我們的工作,  準備好你的禱告詞吧</text>
+	</string>
+	<string id="st_lttz_oa_army_degtyarev_jup_meet_msg">
+		<text>%s,是%s,  來尤皮特見我,有些東西我想和你談談</text>
+	</string>
+	<string id="st_oa_transmission_decryption">
+		<text>解密傳輸</text>
+	</string>
+</string_table>

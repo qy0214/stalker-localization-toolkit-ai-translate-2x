@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON AGROPROM MAP
+<	CoC 1.4.10 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 14, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 14, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_default_task_about">
+		<text>我需要你向當地的某個人報到. 我已經在你的PDA上標記了他的位置.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_default_task_finish">
+		<text>祝你好運, 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Sniper Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_name">
+		<text>狙擊手</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_text">
+		<text>庫茲涅佐夫命令你從遠距離上消滅一個目標.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_about">
+		<text>我定位了一個高價值的目標. 他不容易接近, 所以我需要一個遠距離槍法非常準確的神射手.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_finish">
+		<text>高超的槍法. 做得好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Assault Enemy Camp Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_name">
+		<text>突擊敵方營地</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_text">
+		<text>帶領你的小隊進攻敵人的營地.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_about">
+		<text>我們正在準備攻擊敵人的營地. 指揮官給每個人都配發了新武器. 我需要你和我們一起進攻.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_finish">
+		<text>幹得好. 你是個優秀的戰士.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Defend Military Base Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_name">
+		<text>保衛軍事基地</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_text">
+		<text>保護軍事基地不受敵人的侵犯.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_about">
+		<text>我們已在該地區偵查到敵軍的勢力. 指揮官懷疑他們在策劃襲擊我們的基地. 帶你的小隊出去接敵, 消除他們對基地威脅.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_finish">
+		<text>幹得不錯. 你做得很好.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Save the Military Agent Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_name">
+		<text>拯救軍方潛行者</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_text">
+		<text>一名臥底特工需要從敵方陣營中撤離, 殺死敵方小隊其他的人員, 護送他返回基地. 這個特工有一枝SVD狙擊槍</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_about">
+		<text>我們有一個特工在敵對陣營臥底, 但是我們擔心他被懷疑了. 他錯過了最後幾次接頭, 也沒有留下任何資訊. 可能他被監視著, 所以除了和敵人一起活動他什麼都幹不了. 但是敵人可能會以莫須有的罪名幹掉他, 我們需要把他救出來. 我們已經在附近找到了他, 但他和其他敵方潛行者在一起,你需要殺了他們並護送他回來. 你可以通過他的步槍認出他, 一個持有SVD狙擊槍的人. 當你攻擊這個小組時他必須向你開槍, 所以機靈點.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_finish">
+		<text>太好了, 我會盡快和他一起回來.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_msg_join">
+		<text>別開槍了! 我是間諜! 很抱歉, 你得繼續演戲以防被敵人發覺. 我們現在回基地去.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_msg_leave">
+		<text>我們應該在這裡分開了, 再見!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kirilov (Military Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_default_task_about">
+		<text>我們的一個盟友需要我們的幫助. 向他報到, 看看你能提供什麼幫助.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_default_task_finish">
+		<text>祝你好運, 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kirilov (Military Mechanic) Battle Plans Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_1_name">
+		<text>作戰計劃</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_1_text">
+		<text>基里洛夫中尉已經知道了敵人作戰計劃的位置, 需要你獲取之.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_1_about">
+		<text>一名線人透露了敵人作戰計劃的位置. 我需要你潛入這個地區並找回計劃.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_1_finish">
+		<text>做得好! 你的壯舉已經救了很多人的命.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kirilov (Military Mechanic) Patrol Local Area Storyline Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_2_name">
+		<text>巡邏附近區域</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_2_text">
+		<text>在農業研究所周圍區域巡邏.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_2_about">
+		<text>輪到你當哨兵了. 巡邏一下週邊地區, 注意任何未經授權進入本地區的人員.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_army_mechanic_stalker_task_2_finish">
+		<text>幹得好. 指揮官會很高興的.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 14, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Payoff Change Factions Task -->
+
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_cf_task_1_name">
+		<text>成為軍隊的一員</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_cf_task_1_text">
+		<text>帶著8000盧布到庫茲涅佐夫那裡, 作為你足智多謀的明證.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_cf_task_1_about">
+		<text>啊, 很高興在今天的年輕人中看到一些有民族自豪感的人! 讓我們看看... 嗯, 你受的輻射太大了, 不能通過入伍體檢... 我想你應該考慮轉為為一名軍方潛行者吧, 嗯? 我們不會讓任何人隨隨便便就加入進來, 你懂的. 首先帶上8000盧布作為你在這裡生存能力的證明, 然後我們可以認真地討論這個問題.</text>
+	</string>
+	<string id="drx_sl_agr_smart_terrain_1_6_near_2_military_colonel_kovalski_cf_task_1_finish">
+		<text>嗯, 就是這樣. 你能夠從那些小部隊都會九死一生的地方生存下來. 考慮到你已經被徵召入伍了, 士兵. 一定要保持嗅覺靈敏.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 14, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Stop Unauthorized Incursions Task -->
+
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_name">
+		<text>格殺勿論</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_text">
+		<text>軍方奉命消滅特異區內任何未經授權的不明身份人員</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_about">
+		<text>總部對最近特異區被頻繁入侵的現狀非常不滿, 我要你去附近掃蕩所有未經授權的匿名人員, 對任何勢力都要保持警惕, 看到人就可以開槍!</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_1_finish">
+		<text>幹得好! 只要堅持照命令列事, 我們會受到總部嘉獎的!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Capture Territory Task -->
+
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_name">
+		<text>奪取地盤</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_text">
+		<text>你收到了使用暴力佔領一處據點的命令</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_about">
+		<text>我們分隊的任務是在特異區擴張控制力, 指揮官正在尋找志願者去奪取地盤, 你願意加入嗎?</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_2_finish">
+		<text>任務完成了嗎? 幹得好! 我這就向指揮官彙報你成功的訊息!</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Capture Enemy Combatant Task -->
+
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_name">
+		<text>俘虜敵方作戰人員</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_text">
+		<text>你被指派去抓捕或殺死一個敵對的目標.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_about">
+		<text>總部有一份該地區通緝犯名單. 如果你能抓獲或者殺死他們中的任何一個, 你的下一份薪水中會有額外的獎金. 你能勝任這份工作嗎?</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_3_finish">
+		<text>你表現得很出色! 指揮官會很高興的.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Kuznetsov (Military Honcho) Tight Security Task -->
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_name">
+		<text>保證安全</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_text">
+		<text>庫茲涅佐夫想收集一些%s.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_about">
+		<text>聽著, 士兵. 上級要證明我們牢牢控制了這個地區. 很多的潛行者都在四處遊蕩, 所有這很難斷言. 幸運的是, 上面的人不會親自來檢查. 因此, 我希望你收集一些敵人的臂章, 我會將它們作為證據展示出來, 我們已經將周邊地區牢牢掌握在手中. 明白了嗎?</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_fetch_about">
+		<text>聽著, 士兵. 上級要證明我們牢牢控制了這個地區. 很多的潛行者都在四處遊蕩, 所有這很難斷言. 幸運的是, 上面的人不會親自來檢查. 因此, 我希望你收集一些敵人的臂章, 我會將它們作為證據展示出來, 我們已經將周邊地區牢牢掌握在手中. 明白了嗎? 給我拿來%s, 你會為你的可靠得到獎勵.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_4_fetch_finish">
+		<text>幹得好, 士兵. 這是你的獎金.</text>
+	</string>
+	
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_5_name">
+		<text>奪回重要檔案</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_5_text">
+		<text>奪回重要檔案並帶回給少校.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_5_about">
+		<text>聽著, 士兵. 一些潛行者從我們的一個前哨站偷走了重要檔案. 我要你馬上把他們找回來.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_near_2_military_colonel_kovalski_task_5_finish">
+		<text>幹得好, 士兵. 我們真的不想讓他們知道太多.</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== MECHANIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 06, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Kirilov (Military Mechanic) Find Level 1 Toolkit Task -->
+
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_1_name">
+		<text>為基里洛夫中尉尋找%s</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_1_text">
+		<text>基里洛夫中尉需要%s來安裝基礎的裝備升級, 如果你發現了這些東西, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_1_about">
+		<text>嘿, 我能請你幫個忙嗎? 如果你有興趣幫我, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_1_fetch_about">
+		<text>我需要一套初級工具箱. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激, 從現在起我會給你打折.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_1_fetch_finish">
+		<text>太好了! 你帶來了我需要的東西. 謝謝</text>
+	</string>
+
+
+
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_2_name">
+		<text>為基里洛夫中尉尋找%s</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_2_text">
+		<text>基里洛夫中尉需要%s來安裝進階的裝置升級, 如果你發現了這些東西, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_2_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具. 但它們可能更難找到.你能幫我做這個嗎?</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_2_fetch_about">
+		<text>我需要一套高級工具箱. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激, 從現在起我甚至會給你額外的打折.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_2_fetch_finish">
+		<text>太好了! 如果你需要我照看你的裝備可以隨時回來.</text>
+	</string>
+
+
+
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_3_name">
+		<text>為基里洛夫中尉尋找%s</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_3_text">
+		<text>基里洛夫中尉需要%s來安裝專業的裝備升級, 如果你發現了這些東西, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_3_about">
+		<text>好吧, 如果你準備好了, 我需要更多的工具. 但它們可能更難找到. 你能幫我做這個嗎?</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_3_fetch_about">
+		<text>我需要一套專家級工具箱. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激, 從現在起我甚至會給你額外的打折.</text>
+	</string>
+	<string id="agr_smart_terrain_1_6_army_mechanic_stalker_task_3_fetch_finish">
+		<text>太好了! 如果你需要我照看你的裝備可以隨時回來.</text>
+	</string>
+
+
+<!-- (Military Medic) -->
+	<string id="agr_1_6_medic_army_mlr_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="agr_1_6_medic_army_mlr_task_1_text">
+		<text>羅戈維茨中尉需要%s來製作醫療用品. 如果你找到了, 你應該把它們交給他.</text>
+	</string>
+	<string id="agr_1_6_medic_army_mlr_task_1_about">
+		<text>僅僅依靠醫療用品倉庫里剩下的東西來供給如此多的傷患是令人擔憂的. 我很快就會用完繃帶和藥箱了. 我需要你幫我找到那些舊藥盒. 他們肯定會派上用場的.</text>
+	</string>
+	<string id="agr_1_6_medic_army_mlr_task_1_fetch_about">
+		<text>有. 我到處找%s. 裡面應該有一些藥片和注射器, 我可以用它們來製作醫療用品. 如果你能把一整套東西帶回來, 我就給你一個醫療箱.</text>
+	</string>
+	<string id="agr_1_6_medic_army_mlr_task_1_fetch_finish">
+		<text>幹得好! 我欠你一個人情.</text>
+	</string>
+</string_table>

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="st_ui_dbg_help">
+		<text>
+		%c[ui_gray_2]调试模式下可用的主菜单快捷键:
+		\n \n%c[d_orange]仅在加载的游戏中:
+		\n%c[pda_blue]• %c[ui_gray_3]F7:%c[ui_gray_2] 启动异常调试器
+		\n%c[pda_blue]• %c[ui_gray_3]1:%c[ui_gray_2] 调试 HUD - 左侧面板的切换信息反馈
+		\n%c[pda_blue]• %c[ui_gray_3]2:%c[ui_gray_2] 调试 HUD - 切换中间面板的信息反馈
+		\n%c[pda_blue]• %c[ui_gray_3]3:%c[ui_gray_2] 调试 HUD - 右侧面板的切换信息反馈
+		\n \n%c[d_orange]没有加载的游戏:
+		\n%c[pda_blue]• %c[ui_gray_3]F2:%c[ui_gray_2] 启动测试地图
+		\n \n%c[d_orange]两种情况:
+		\n%c[pda_blue]• %c[ui_gray_3]数字键盘 0:%c[ui_gray_2] 重启系统设置
+		</text>
+	</string>
+
+	<!-- Debuggers -->
+	<string id="st_ui_dbg_weather_about">
+		<text>
+			%c[ui_gray_1]Tronex / Rezy
+			\nAdded: 2019/6/1
+			\nLast edit: 2020/2/22
+			\n异常天气编辑器 2.0
+			\n \n%c[pda_green]情报%c[ui_gray_2]
+			\n天气编辑器允许您实时更改天气值. 分钟精度.
+			\nGUI 是交互式且易于使用的, 能够动态修改或创建天气文件.
+			\n修改后的值会临时缓存您正在处理的天气和时间.
+			\n如果您关闭编辑器, 您可以返回它们(避免在有未保存的值时退出或重新加载).
+			\n在(查看器)模式下, 您可以通过时间滑块见证天气变化.
+			\n \n%c[pda_blue]快捷键%c[ui_gray_2]\n
+			\n%c[d_purple]• %c[ui_gray_3]方向键: %c[ui_gray_2]参数导航.
+			\n%c[d_purple]• %c[ui_gray_3]左Shift (按住): %c[ui_gray_2]x10 步进值 / 跳转2个参数.
+			\n%c[d_purple]• %c[ui_gray_3]左Alt (按住): %c[ui_gray_2]x50 步进值 / 跳转3个参数.\n
+			\n%c[d_purple]• %c[ui_gray_3]R/F: %c[ui_gray_2]增加/减少选定的值.
+			\n%c[d_purple]• %c[ui_gray_3]T/G: %c[ui_gray_2]增加/减少所选参数的所有值.
+			\n%c[d_purple]• %c[ui_gray_3]Q/A: %c[ui_gray_2]选择下一/上一小时.
+			\n%c[d_purple]• %c[ui_gray_3]W/S: %c[ui_gray_2]选择下一/上一分钟.
+			\n%c[d_purple]• %c[ui_gray_3]E/D: %c[ui_gray_2]选择下一个/上一个保存的时刻.\n
+			\n%c[d_purple]• %c[ui_gray_3]Z: %c[ui_gray_2]启动查看器模式.\n
+			\n%c[d_purple]• %c[ui_gray_3]C: %c[ui_gray_2]复制选择参数值.
+			\n%c[d_purple]• %c[ui_gray_3]C + CTRL: %c[ui_gray_2]复制当前设置.
+			\n%c[d_purple]• %c[ui_gray_3]V: %c[ui_gray_2]paste/应用复制的参数值.
+			\n%c[d_purple]• %c[ui_gray_3]V + CTRL: %c[ui_gray_2]粘贴/应用到当前设置.\n
+			\n%c[d_purple]• %c[ui_gray_3]Delete: %c[ui_gray_2]重置当前修改时刻.
+			\n%c[d_purple]• %c[ui_gray_3]Delete + CTRL: %c[ui_gray_2]重置所有修改的时刻.
+			\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]切换帮助窗口.
+			\n%c[d_purple]• %c[ui_gray_3]Esc 或 Home: %c[ui_gray_2]关闭编辑器.
+		</text>
+	</string>
+	<string id="st_ui_dbg_weather_title">
+		<text>天气编辑器 2.0</text>
+	</string>
+	<string id="st_ui_dbg_weather_file">
+		<text>选择天气文件</text>
+	</string>
+	<string id="st_ui_dbg_weather_time">
+		<text>选择时间</text>
+	</string>
+	<string id="st_ui_dbg_weather_copy">
+		<text>复制设置</text>
+	</string>
+	<string id="st_ui_dbg_weather_paste">
+		<text>粘贴设置</text>
+	</string>
+	<string id="st_ui_dbg_weather_viewer">
+		<text>查看器模式</text>
+	</string>
+	<string id="st_ui_dbg_weather_save">
+		<text>如果您在下面的框中指定名称, 则保存到新文件, 否则保存到当前文件.
+		\n自定义文件的名称必须以 "w_" 开头.
+		</text>
+	</string>
+	<string id="st_ui_dbg_weather_resume">
+		<text>恢复天气, 并退出</text>
+	</string>
+	<string id="st_ui_dbg_weather_clear">
+		<text>清除缓存值</text>
+	</string>
+	<string id="st_ui_dbg_weather_help">
+		<text>关于</text>
+	</string>
+	<string id="st_ui_dbg_weather_exit">
+		<text>退出 (天气仍会在引擎中暂停)</text>
+	</string>
+	<string id="st_ui_dbg_weather_save_msg_error">
+		<text>新文件 ( %s) 无效.
+		\n文件名必须以 "w_" 开头
+		\nTip: 空名称将保存到当前文件
+		</text>
+	</string>
+	<string id="st_ui_dbg_weather_save_msg_old">
+		<text>保存到现有文件 ( %s), 是否继续?</text>
+	</string>
+	<string id="st_ui_dbg_weather_save_msg_new">
+		<text>保存到新文件 ( %s), 是否继续?</text>
+	</string>
+	<string id="st_ui_dbg_weather_playing">
+		<text>自动播放</text>
+	</string>
+	
+	<string id="st_ui_dbg_lighting_title">
+		<text>灯光编辑器</text>
+	</string>
+	
+	<string id="st_ui_dbg_hud_title">
+		<text>武器HUD编辑器</text>
+	</string>
+	<string id="st_ui_dbg_hud_alignment">
+		<text>切换准星</text>
+	</string>
+	<string id="st_ui_dbg_hud_ratio">
+		<text>应用于 4:3 和 16:9 参数</text>
+	</string>
+	<string id="st_ui_dbg_hud_copy">
+		<text>复制设置</text>
+	</string>
+	<string id="st_ui_dbg_hud_paste">
+		<text>粘贴设置</text>
+	</string>
+	<string id="st_ui_dbg_hud_current_file">
+		<text>保存到文件</text>
+	</string>
+	<string id="st_ui_dbg_hud_resume">
+		<text>恢复</text>
+	</string>
+	<string id="st_ui_dbg_hud_about">
+		<text>
+			%c[ui_gray_1]Tronex/Rezy
+			\n2019/9/15
+			\n武器HUD编辑器
+			\n \n%c[pda_green]关于%c[ui_gray_2]
+			\n武器 HUD 编辑器允许您实时更改武器 HUD 的位置和方向.
+			\nGUI 具有交互性且易于使用, 能够将调整后的 pos 保存在临时文件中 "temp_hud.ltx".
+			\n编辑的值会临时缓存您使用的武器. 如果您关闭编辑器, 您可以返回它们 (避免在有未保存的值时退出或重新加载).
+			\n \n%c[pda_red]注意%c[ui_gray_2]
+			\n武器配置必须在使用编辑器之前解压, 它们必须在 (%c[ui_gray_3]gamedata/configs/items/weapons%c[ui_gray_2]).
+			\n保存到 HUD 参数的更改不会直接生效, 直到您重新启动游戏.
+			\n对于影响瞄准定位的参数, 首先在选项中启用瞄准切换并用枪瞄准, 然后使用编辑器查看您的更改.
+			\n(%c[ui_gray_3]gamedata/configs/cache_dbg.ltx%c[ui_gray_2]) 更改时会保留原始参数的痕迹, 因此您可以使用"重置"按钮将它们重置回来.
+			\n不要忘记备份配置以供参考.
+			\n \n%c[pda_blue]快捷键%c[ui_gray_2]\n
+			\n%c[d_purple]• %c[ui_gray_3]方向键: %c[ui_gray_2]参数导航.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 8/2: %c[ui_gray_2]增加/减少选定的值.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 9/3: %c[ui_gray_2]增加/减少所选参数的所有值.
+			\n%c[d_purple]• %c[ui_gray_3]左Shift (按住): %c[ui_gray_2]x10 步进值 / 跳转2个参数.
+			\n%c[d_purple]• %c[ui_gray_3]左Alt (按住): %c[ui_gray_2]x50 步进值 / 跳转3个参数.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 5: %c[ui_gray_2]复制当前的数据.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 6: %c[ui_gray_2]粘贴当前的数据.
+			\n%c[d_purple]• %c[ui_gray_3]G: %c[ui_gray_2]切换准星.\n
+			\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]显示帮助窗口.
+			\n%c[d_purple]• %c[ui_gray_3]Esc: %c[ui_gray_2]关闭编辑器.
+		</text>
+	</string>
+	
+	<string id="st_ui_dbg_launcher_console">
+		<text>控制台</text>
+	</string>
+	<string id="st_ui_dbg_launcher_target">
+		<text>在目标上执行</text>
+	</string>
+	<string id="st_ui_dbg_launcher_action">
+		<text>执行动作</text>
+	</string>
+	<string id="st_ui_dbg_launcher_toggle">
+		<text>切换命令</text>
+	</string>
+	<string id="st_ui_dbg_launcher_editor">
+		<text>编辑器列表</text>
+	</string>
+	
+	<string id="st_ui_dbg_spawn_type">
+		<text>物品类型</text>
+	</string>
+	<string id="st_ui_dbg_spawn_list">
+		<text>按列表</text>
+	</string>
+	<string id="st_ui_dbg_spawn_icon">
+		<text>按图标</text>
+	</string>
+	<string id="st_ui_dbg_spawn_btn">
+		<text>生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_name">
+		<text>按区域生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_smart">
+		<text>在智能地域生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_smart_lvl">
+		<text>选择关卡</text>
+	</string>
+	<string id="st_ui_dbg_spawn_smart_list">
+		<text>选择智能地域</text>
+	</string>
+	<string id="st_ui_dbg_spawn_point">
+		<text>在光标处生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_nearby">
+		<text>在玩家处生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_inv">
+		<text>在库存中生成</text>
+	</string>
+	<string id="st_ui_dbg_spawn_log">
+		<text>日志</text>
+	</string>
+
+	<string id="st_ui_dbg_logic">
+		<text>NP逻辑</text>
+	</string>
+	<string id="st_ui_dbg_logic_section">
+		<text>活动区域</text>
+	</string>
+	<string id="st_ui_dbg_logic_logic">
+		<text>活动逻辑</text>
+	</string>
+	<string id="st_ui_dbg_logic_file">
+		<text>INI 文件名</text>
+	</string>
+	<string id="st_ui_dbg_logic_set">
+		<text>设置逻辑</text>
+	</string>
+	<string id="st_ui_dbg_logic_revert">
+		<text>还原逻辑</text>
+	</string>
+
+	<string id="st_ui_dbg_exec">
+		<text>函数执行器</text>
+	</string>
+	<string id="st_ui_dbg_exec_btn">
+		<text>执行</text>
+	</string>
+	
+	<string id="st_ui_dbg_item_stats">
+		<text>统计</text>
+	</string>
+	<string id="st_ui_dbg_item_list">
+		<text>列表</text>
+	</string>
+	<string id="st_ui_dbg_item_compare">
+		<text>比较</text>
+	</string>
+	<string id="st_ui_dbg_item_btn_copy">
+		<text>复制</text>
+	</string>
+	<string id="st_ui_dbg_item_btn_paste">
+		<text>粘贴</text>
+	</string>
+	<string id="st_ui_dbg_item_btn_apply">
+		<text>应用</text>
+	</string>
+	<string id="st_ui_dbg_item_btn_Reset">
+		<text>重置</text>
+	</string>
+	<string id="st_ui_dbg_item_about">
+		<text>
+			%c[ui_gray_1]Tronex
+			\n2019/10/8
+			\n物品编辑器
+			\n \n%c[pda_green]关于%c[ui_gray_2]
+			\n物品编辑器允许您直接在游戏中编辑物品配置并保存/测试您的更改.
+			\nGUI是交互式且易于使用的, 支持武器/服装/神器编辑.
+			\n您可以在列表中选择一个相关物品, 将其统计数据与您的活动物品进行比较.
+			\n为您正在处理的物品临时缓存修改后的值, 如果您关闭编辑器, 您可以返回到它.
+			\n \n%c[pda_red]注意%c[ui_gray_2]
+			\n物品配置必须在使用编辑器之前解压, 它们必须在 (%c[ui_gray_3]gamedata/configs/items%c[ui_gray_2]).
+			\n(%c[ui_gray_3]gamedata/configs/cache_dbg.ltx%c[ui_gray_2]) 更改时会保留原始参数的痕迹, 因此您可以使用"重置"按钮将它们重置回来.
+			\n不要忘记备份配置以供参考.
+			\n \n%c[pda_blue]快捷键%c[ui_gray_2]\n
+			\n%c[d_purple]• %c[ui_gray_3]方向键: %c[ui_gray_2]参数导航.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 8/2: %c[ui_gray_2]增加/减少选定的值.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 9/3: %c[ui_gray_2]增加/减少所选参数的所有值.
+			\n%c[d_purple]• %c[ui_gray_3]左Shift (按住): %c[ui_gray_2]x10 步进值 / 跳转2个参数.
+			\n%c[d_purple]• %c[ui_gray_3]左Alt (按住): %c[ui_gray_2]x50 步进值 / 跳转3个参数.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 5: %c[ui_gray_2]复制当前的数据.
+			\n%c[d_purple]• %c[ui_gray_3]数字键盘 6: %c[ui_gray_2]粘贴当前的数据.\n
+			\n%c[d_purple]• %c[ui_gray_3]H: %c[ui_gray_2]显示帮助窗口.
+			\n%c[d_purple]• %c[ui_gray_3]Esc: %c[ui_gray_2]关闭编辑器.
+		</text>
+	</string>
+
+	<string id="st_desc_hit_power">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]子弹造成的伤害量.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[d_cyan](!)%c[ui_gray_2] 这是一个统计参数.
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]此参数的每个值用于不同的难度:
+		\n大师 -&gt; 老兵 -&gt; 潜行者 -&gt; 新手
+		\n在 Anomaly 中不使用 Vanilla 难度, 对所有难度使用相同的值.
+		</text>
+	</string>
+	<string id="st_desc_hit_impulse">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]一发子弹的物理力量. 更高的值会导致更戏剧性的布娃娃死亡.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_fire_distance">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]子弹"死亡"前的距离(以米为单位) - 超出此范围的任何物体都不会被击中.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_bullet_speed">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]速度, 以米每秒为单位.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_rpm">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]射速, 以每分钟多少发子弹为单位.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_rpm_empty_click">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]'empty'声音文件播放的速率, 如果一个人试图在空弹匣的时候开火.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<!--string id="st_desc_time_to_aim">
+		<text>
+		\n \n%c[pda_green]Description
+		\n%c[ui_gray_2]
+		\n \n%c[pda_red]Range
+		\n%c[ui_gray_2]$range
+		</text>
+	</string-->
+	<string id="st_desc_zoom_dof">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]使用机瞄时的景深修正.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_reload_dof">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]重装弹药时的景深.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_control_inertion_factor">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]施加在枪上的"刹车"量 - 快速可靠地转动有多困难. 在PKm和SVD 上值得注意. 影响操控性数值.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[d_cyan](!)%c[ui_gray_2] 这是一个统计参数.
+		</text>
+	</string>
+	<string id="st_desc_crosshair_inertion">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]操纵相机的惯性量 - 如果您猛拉, 您的瞄准偏离目标的可能性有多大. 影响操控性数值.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_fire_dispersion_base">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]以度为单位的基本火力锥度 - 枪的第一次扫射的准确度. 影响基本精度, 并显示精度统计.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[d_cyan](!)%c[ui_gray_2] 这是一个统计参数.
+		</text>
+	</string>
+	<string id="st_desc_misfire_probability">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]任何时间发生失火的概率 (未使用此参数).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_misfire_start_condition">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]哑火几率开始上升的武器状态.
+		\n在更高的条件下不会发生哑火.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]卡弹几率计算%c[ui_gray_2]
+		\n%c[ui_gray_3]射击哑火几率 = start_prop + ( (start_con - condition) x (end_prop - start_prop) / factor )
+		
+		\n \n%c[d_purple]• %c[ui_gray_3]状态:%c[ui_gray_2] 当前武器状态
+		\n%c[d_purple]• %c[ui_gray_3]start_prop:%c[ui_gray_2] "misfire_start_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_prop:%c[ui_gray_2] "misfire_end_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]start_con:%c[ui_gray_2] "misfire_start_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_con:%c[ui_gray_2] "misfire_end_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]factor:%c[ui_gray_2] (start_con - end_con) 当这些值不同时, 或 (start_con) 仅当它们相同时.
+		</text>
+	</string>
+	<string id="st_desc_misfire_end_condition">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]哑火几率停止上升的武器状况.
+		\n在较低条件下, 失火几率将上限为 "misfire_end_prob".
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]卡弹几率计算%c[ui_gray_2]
+		\n%c[ui_gray_3]射击哑火几率 = start_prop + ( (start_con - condition) x (end_prop - start_prop) / factor )
+		
+		\n \n%c[d_purple]• %c[ui_gray_3]状态:%c[ui_gray_2] 当前武器状态
+		\n%c[d_purple]• %c[ui_gray_3]start_prop:%c[ui_gray_2] "misfire_start_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_prop:%c[ui_gray_2] "misfire_end_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]start_con:%c[ui_gray_2] "misfire_start_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_con:%c[ui_gray_2] "misfire_end_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]factor:%c[ui_gray_2] (start_con - end_con) 当这些值不同时, 或 (start_con) 仅当它们相同时.
+		</text>
+	</string>
+	<string id="st_desc_misfire_start_prob">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]哑火的开始机率.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]卡弹几率计算%c[ui_gray_2]
+		\n%c[ui_gray_3]射击哑火几率 = start_prop + ( (start_con - condition) x (end_prop - start_prop) / factor )
+		
+		\n \n%c[d_purple]• %c[ui_gray_3]状态:%c[ui_gray_2] 当前武器状态
+		\n%c[d_purple]• %c[ui_gray_3]start_prop:%c[ui_gray_2] "misfire_start_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_prop:%c[ui_gray_2] "misfire_end_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]start_con:%c[ui_gray_2] "misfire_start_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_con:%c[ui_gray_2] "misfire_end_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]factor:%c[ui_gray_2] (start_con - end_con) 当这些值不同时, 或 (start_con) 仅当它们相同时.
+		</text>
+	</string>
+	<string id="st_desc_misfire_end_prob">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]哑火的结束机率.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]卡弹几率计算%c[ui_gray_2]
+		\n%c[ui_gray_3]射击哑火几率 = start_prop + ( (start_con - condition) x (end_prop - start_prop) / factor )
+		
+		\n \n%c[d_purple]• %c[ui_gray_3]状态:%c[ui_gray_2] 当前武器状态
+		\n%c[d_purple]• %c[ui_gray_3]start_prop:%c[ui_gray_2] "misfire_start_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_prop:%c[ui_gray_2] "misfire_end_prob" 值
+		\n%c[d_purple]• %c[ui_gray_3]start_con:%c[ui_gray_2] "misfire_start_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]end_con:%c[ui_gray_2] "misfire_end_condition" 值
+		\n%c[d_purple]• %c[ui_gray_3]factor:%c[ui_gray_2] (start_con - end_con) 当这些值不同时, 或 (start_con) 仅当它们相同时.
+		</text>
+	</string>
+	<string id="st_desc_condition_shot_dec">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]每次射击损失多少状态.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]计算
+		\n%c[ui_gray_3]每次射击状态损失 = (condition_shot_dec) x (weapon_degredation) x (impair) x (condition_shot_dec_k)
+		\n \n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec"%c[ui_gray_2] 按武器部分定义. 将 "condition_queue_shot_dec" 设置为相同的值
+		\n%c[d_purple]• %c[ui_gray_3]"weapon_degredation"%c[ui_gray_2] 是一个控制台命令, 允许在游戏中控制大体上的降解 (默认为 1)
+		\n%c[d_purple]• %c[ui_gray_3]"impair"%c[ui_gray_2] 是武器当前使用的弹药部分中定义的参数
+		\n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec_k"%c[ui_gray_2] 是在附加到武器的消音器部分中定义的参数 (默认为 1 如果它不存在)
+		</text>
+	</string>
+	<string id="st_desc_condition_queue_shot_dec">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]全自动射击中每次射击损失多少状态.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]计算
+		\n%c[ui_gray_3]每次射击状态损失 = (condition_shot_dec) x (weapon_degredation) x (impair) x (condition_shot_dec_k)
+		\n \n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec"%c[ui_gray_2] 按武器部分定义. 将 "condition_queue_shot_dec" 设置为相同的值
+		\n%c[d_purple]• %c[ui_gray_3]"weapon_degredation"%c[ui_gray_2] 是一个控制台命令, 允许在游戏中控制大体上的降解 (默认为 1)
+		\n%c[d_purple]• %c[ui_gray_3]"impair"%c[ui_gray_2] 是武器当前使用的弹药部分中定义的参数
+		\n%c[d_purple]• %c[ui_gray_3]"condition_shot_dec_k"%c[ui_gray_2] 是在附加到武器的消音器部分中定义的参数 (默认为 1 如果它不存在)
+		</text>
+	</string>
+	<string id="st_desc_cam_return">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]之后相机是否会返回到您的目标?
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cam_relax_speed">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]您的准星返回 "中立" 的速度.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		</text>
+	</string>
+	<string id="st_desc_cam_dispersion">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]射击时的分散 (无瞄准).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]这个值在引擎中没有上限, 负值会导致负后坐力.
+		</text>
+	</string>
+	<string id="st_desc_cam_dispersion_inc">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]每次射击会增加多少分散.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]这个值在引擎中没有上限, 负值会导致负后坐力.
+		</text>
+	</string>
+	<string id="st_desc_cam_dispersion_frac">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]分散的另一个因素.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cam_max_angle">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]后坐力可以从原点影响您的准星的最大角度 - 向上 50 度.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cam_max_angle_horz">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]最大水平偏移
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cam_step_angle_horz">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]射击引起的水平后坐力. 0 将导致垂直后坐力, 负数将向左后坐力.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_relax_speed">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]机瞄/瞄准镜返回中立的速度.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_relax_speed" 值代替.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_dispersion">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]分散 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_dispersion" 值代替.
+		\n这个值在引擎中没有上限, 负值会导致负后坐力.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_dispersion_inc">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]每次射击会增加多少分散 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range (度)
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_dispersion_inc" 值代替.
+		\n这个值在引擎中没有上限, 负值会导致负后坐力.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_dispersion_frac">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]分散的另一个因素 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_dispersion_frac" 值代替.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_max_angle">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]后坐力可以从原点影响您的准星的最大角度 - 向上 50 度 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_max_angle" 值代替.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_max_angle_horz">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]最大水平偏移 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_max_angle_horz" 值代替.
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_step_angle_horz">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]射击引起的水平后坐力. 0 将导致垂直后坐力, 负数将向左后坐力 (仅影响机瞄/瞄准镜).
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[pda_blue]注释
+		\n%c[ui_gray_2]如果这个参数没有在武器部分定义, 引擎将使用 "cam_step_angle_horz" 值代替.
+		</text>
+	</string>
+	<string id="st_desc_PDM_disp_base">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]基础 "PDM". 这会影响准确性, 类似于 fire_dispersion_base 的作用. 较低的值使其更准确. 还影响武器的操控性数值, 以及 control_inertion_factor
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		\n \n%c[d_cyan](!)%c[ui_gray_2] 这是一个统计参数.
+		</text>
+	</string>
+	<string id="st_desc_PDM_disp_vel_factor">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]根据玩家的速度增加子弹传播的乘数
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_PDM_disp_accel_factor">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]随着玩家加速而增加子弹传播的乘数
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_PDM_disp_crouch">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]当玩家蹲下时效果传播的乘数
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_PDM_disp_crouch_no_acc">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]当玩家蹲下且不移动时效果传播的乘数 (基本上是玩家最准确的)
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_fire_dispersion_condition_factor">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]状态影响分散 - 更高的数字会导致更剧烈的降解.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cam_relax_speed_ai">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]扫射后 AI 的瞄准恢复速度有多快.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_zoom_cam_relax_speed_ai">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]AI 在机瞄/瞄准镜射击后恢复瞄准的速度.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_holder_range_modifier">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]AI携带武器时的有效视距.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_holder_fov_modifier">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]AI携带武器时的视野. 1.0给了它大约180的视野.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_min_radius">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]可以看到您的最小半径, 以米为单位. 会引起有趣的幻觉.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_max_radius">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]AI 区分敌友的最大半径.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_zoom_enabled">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]是否允许使用机瞄
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_zoom_rotate_time">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]瞄准目标需要多长时间.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_scope_zoom_factor">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]FOV 在瞄准目标时"放大"了多少. 1 为默认.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_ammo_elapsed">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]弹匣大小.
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_ammo_mag_size">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]这个数字必须等于'elapsed'变量 - 否则该值可能不是!
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+	<string id="st_desc_cost">
+		<text>
+		\n \n%c[pda_green]描述
+		\n%c[ui_gray_2]武器基础成本 (请记住, 它受很多经济方面的影响)
+		\n \n%c[pda_red]范围
+		\n%c[ui_gray_2]$range
+		</text>
+	</string>
+</string_table>

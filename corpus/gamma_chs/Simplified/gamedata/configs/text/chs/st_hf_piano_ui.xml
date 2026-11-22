@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_autoplay">
+		<text>自动播放</text>
+	</string>
+	<string id="st_configure">
+		<text>设置</text>
+	</string>
+	<string id="st_tempo">
+		<text>节拍速度</text>
+	</string>
+	<string id="st_transpose">
+		<text>变调</text>
+	</string>
+	<string id="st_volume">
+		<text>音量</text>
+	</string>
+	<string id="st_instrument">
+		<text>乐器</text>
+	</string>
+	<string id="st_filter_by_tag">
+		<text>依照标签排序</text>
+	</string>
+</string_table>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_wpn_vihrn">
+		<text>SR-3M 旋风</text>
+	</string>
+	<string id="st_wpn_vihrn_descr">
+		<text>SR-3"Vikhr"("旋风")紧凑型突击步枪是由俄罗斯图拉武器厂在加拿大塔奇马什开发制造的, SR3M Vikhr最初被称为"MA"(Malogabaritnyj Avtomat-小型突击步枪), 它是在发射9x39mm弹药的AS-Val消音突击步枪的基础上发展起来的, 用于VIP人员护卫队和国家安全特工隐蔽携带, 它是SR-3, AS-Val 和 VSS "尖刀" 三者品质结合的产物, SR-3M还有30发的更大容量的弹匣, 在自动射击时也能提供更可靠的持久火力\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[d_green]瞄具: %c[0,250,250,0]兼容部分燕尾槽瞄具\n
+		%c[d_purple] • %c[d_green]消音器: %c[d_orange]SR-3M 消音器\n \n</text>
+	</string>
+</string_table>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_ppk">
+		<text>沃爾特 PPK</text>
+	</string>
+	<string id="st_wpn_ppk_descr">
+		<text>沃爾特 PPK (Polizeipistole Kurz) 是一款由德國武器製造商 Carl Walther GmbH Sportwaffen 開發的半自動手槍。 它被認為是來自西方的經典手槍，在世界範圍內廣泛使用。 那麼它被愛好者、黑市甚至前警察帶到特異區也就不足為奇了。 這把武器在菜鳥中很受歡迎。 值得注意的是，它已被修改爲射擊 9x18 馬卡洛夫彈藥而不是原槍預設的罕見的 .32 ACP彈藥。\n \n
+		%c[0,255,255,255]特性:\n
+		%c[d_cyan] • %c[0,255,255,255]來源: %c[ui_gray_1]德國\n
+		%c[d_cyan] • %c[0,255,255,255]製造商:  %c[ui_gray_1]Carl Walther GmbH Sportwaffen\n
+		%c[d_cyan] • %c[0,255,255,255]生產年份: %c[ui_gray_1]1935\n
+		</text>
+	</string>
+
+</string_table>

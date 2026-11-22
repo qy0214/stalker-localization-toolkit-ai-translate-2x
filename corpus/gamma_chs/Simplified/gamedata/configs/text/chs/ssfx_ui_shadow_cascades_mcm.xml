@@ -1,0 +1,86 @@
+<!--
+- @ Version: SCREEN SPACE SHADERS - UPDATE 15
+- @ Description: Shadow Cascades - MCM strings
+- @ Author: https://www.moddb.com/members/ascii1457
+- @ Mod: https://www.moddb.com/mods/stalker-anomaly/addons/screen-space-shaders
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<!-- Button -->
+	<string id="ui_mcm_ssfx_module_shw_cascades">
+		<text>阴影递进层级</text>
+	</string>
+
+	<!-- Shadow Cascades Settings -->
+	<string id="ui_mcm_ssfx_module_shw_cascades_title">
+		<text>阴影递进层级设置</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_1_mcm">
+		<text>近距阴影递进层级的大小</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_1_mcm_desc">
+		<text>最好使用较小值来增加阳光阴影的质量</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_2_mcm">
+		<text>中距阴影递进层级的大小</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_2_mcm_desc">
+		<text>最好使用较小值来增加阳光阴影的质量</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_3_mcm">
+		<text>远距阴影递进层级的大小</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_size_3_mcm_desc">
+		<text>这个层级决定了阳光阴影的最终渲染距离, 较小值会优化游戏性能, 较大值会优化远距阴影同时增加性能消耗</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_quality_mcm">
+		<text>草的阴影质量</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_quality_mcm_desc">
+		<text>[ 低 ] 草地阴影只在近距阴影递进层级的范围内渲染, 这是异常原版的默认使用情况 [ 中 ] 在近距和中距阴影递进层级范围内渲染草地阴影 [ 高 ] 草地阴影会显示在所有递进层级范围, 也会被太阳的体积光柱影响 [ 超高 ] 所有光源都会投射草地阴影</text>
+	</string>
+	
+	<string id="ui_mcm_lst_shw_cascades_low">
+		<text>低 ( 异常原版默认 )</text>
+	</string>
+	
+	<string id="ui_mcm_lst_shw_cascades_medium">
+		<text>中</text>
+	</string>
+
+	<string id="ui_mcm_lst_shw_cascades_high">
+		<text>高</text>
+	</string>
+	
+	<string id="ui_mcm_lst_shw_cascades_ultra">
+		<text>超高 ( 极大影响游戏性能 )</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_distance_mcm">
+		<text>草地阴影距离 ( 基于阳光 )</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_distance_mcm_desc">
+		<text>此选项用于调整被阳光投射的草地阴影, 与"草地渲染距离"成正比, 低取值会优化游戏性能</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_nondir_maxdistance_mcm">
+		<text>草地阴影最大距离</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_shw_cascades_grass_shw_nondir_maxdistance_mcm_desc">
+		<text>[ 仅用于"超高"质量的草地阴影 ] 此值用于调整非定向光投射的草地阴影的渲染距离, 较低的值会提高性能, 但阴影停止渲染时比较容易被玩家察觉</text>
+	</string>
+	
+</string_table>

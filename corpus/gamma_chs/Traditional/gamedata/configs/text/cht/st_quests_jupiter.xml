@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON JUPITER (YANOV) MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev  (Ecologist Mechanic) Default Storyline Task -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_default_task_text">
+		<text>接受你的下一個任務.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_default_task_about">
+		<text>是的, 我的一個同時需要你的幫助.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_default_task_finish">
+		<text>祝你好運, 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev  (Ecologist Mechanic) Mutant Tissue Experiment Storyline Task -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_task_1_name">
+		<text>托卡列夫的%s實驗</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_1_text">
+		<text>收集一個%s並且把它帶給托卡列夫.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_1_about">
+		<text>我需要對一種特殊的變異生物做個實驗. 我需要你去為我獵殺一個這樣的變異生物.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_1_fetch_about">
+		<text>給我找一個%s. 如果你成功了的話我會給你獎勵的.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_1_fetch_finish">
+		<text>幹得不錯, 這就是我要的那個. 這是你的獎賞.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev  (Ecologist Mechanic) Find Missing Scientist Storyline Task -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_task_2_name">
+		<text>找到失蹤的生態學家</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_2_text">
+		<text>尋找失蹤的生態學家.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_2_about">
+		<text>我手下的一個研究員失蹤了. 他外出考察去了, 然後再也沒有回來. 這是他去考察的那片區域, 你去那裡搜查一下, 看看能不能找到他.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_2_finish">
+		<text>謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev  (Ecologist Mechanic) Recover Stolen PDA Storyline Task -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_task_3_name">
+		<text>為托卡列夫取回被盜走的PDA</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_3_text">
+		<text>托卡列夫的PDA被偷了, 裡面有著重要的研究資料. 找到並將PDA還給他.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_3_about">
+		<text>土匪們洗劫了我們的一個移動實驗室. 他們拿走的其中一樣東西, 一個包含著一些非常重要的研究資料的PDA.我收到了一個秘密訊息, 它告訴我土匪們把PDA藏在了哪裡. 你去檢查一下, 如果你找到PDA的話, 帶回來給我, 我會給你獎勵的.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_3_finish">
+		<text>好極了! 你做得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev  (Ecologist Mechanic) Search Jupiter Underground Storyline Task -->
+
+	<string id="drx_sl_jup_b6_scientist_tech_task_4_name">
+		<text>搜查木星工廠地道</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_4_text">
+		<text>取回遺失在木星工廠地道的研究文稿.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_4_about">
+		<text>我們中的一位頂尖生態學家在從普里皮亞奇回來的路上被殺了, 屍體就在地下通道里. 他攜帶著一些重要的研究檔案, 我需要你幫我找到它們然後帶回給我.</text>
+	</string>
+	<string id="drx_sl_jup_b6_scientist_tech_task_4_finish">
+		<text>好極了! 你做得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Loki  (Freedom Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_default_task_text">
+		<text>接受你的下一個任務.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_default_task_about">
+		<text>我需要你去拜訪一個潛行者, 問問他你能幫他做些什麼. 他會給你非常豐厚的報酬的.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_default_task_finish">
+		<text>祝你好運, 潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Loki  (Freedom Honcho) Arms Dealer Storyline Task -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_task_1_name">
+		<text>%s軍火商</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_1_text">
+		<text>洛基需要%s, 搞齊了以後交給他</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_1_about">
+		<text>自由軍在這裡很難維持下去. 我需要武器. 而且要很多.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_1_fetch_about">
+		<text>我需要一些%s. 如果你能找到方法繞過"焦腦器"來搞到它們的話, 我願意給你報酬.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_1_fetch_finish">
+		<text>幹得不錯. 我的槍越多我睡得越香. 拿走這個, 當作你的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Loki  (Freedom Honcho) Clear Monolith Beachhead Storyline Task -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_task_2_name">
+		<text>清理黑石的防禦陣地</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_2_text">
+		<text>清除所有指定區域內的黑石士兵, 為自由軍的大舉進攻做準備.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_2_about">
+		<text>我們準備入侵黑石的領土. 我需要你為我們清理幾個指定區域,以便我們的主要突擊部隊能夠進入.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_2_finish">
+		<text>幹得好! 現在我們可以開始我們的入侵了! 好吧, 還不是時候, 晚一點兒... 或者明天. 無論如何, 兄弟, 謝謝你.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Loki  (Freedom Honcho) Hunt Artefact Storyline Task -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_task_3_name">
+		<text>為洛基找到一件"%s"神器</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_3_text">
+		<text>洛基需要一件"%s"神器來保護他的一個手下.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_3_about">
+		<text>我要派我手下的一個兄弟去執行任務, 這個任務很危險, 即使是我們最好的防護服也不能保證他活著回來. 所以我需要一件特別的神器來給他提供額外的防護.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_3_fetch_about">
+		<text>給我帶來一件"%s"神器. 如果你能找到一件給我的話, 我會好好報答你的.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_3_fetch_finish">
+		<text>啊, 完美! 幹得好, 兄弟.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Loki  (Freedom Honcho) Search Monolith Control Center (Chernobyl) Storyline Task -->
+
+	<string id="drx_sl_jup_a6_freedom_leader_task_4_name">
+		<text>搜查黑石的控制中心</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_4_text">
+		<text>搜查位於切爾諾貝利核電站的秘密實驗室, 以尋找關於某個武器原型的研究資料.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_4_about">
+		<text>有傳言說切爾諾貝利核電站里的秘密實驗室內有一個關於新武器的研究計劃. 如果我們想要與黑石抗衡的話, 我們就必須取得這些研究資料. 是, 我知道這風險很大, 但是如果你願意為我們取得這些研究資料的話我會付給你很高的報酬的.</text>
+	</string>
+	<string id="drx_sl_jup_a6_freedom_leader_task_4_finish">
+		<text>太好了, 你完美的完成了任務!</text>
+	</string>
+
+
+	<!-- Klenov (Bandit Trader) Default Storyline Task -->
+
+	<string id="drx_sl_jup_cont_trader_bandit_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_default_task_text">
+		<text>接受你的下一個任務.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_default_task_about">
+		<text>有人給了你一份工作, 你需要去見他, 照他說的做. 懂嗎?</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_default_task_finish">
+		<text>祝好運.</text>
+	</string>
+	
+
+	<!-- Klenov (Bandit Trader) Retrieve Weapons Shipment Storyline Task -->
+
+	<string id="drx_sl_jup_cont_trader_bandit_task_1_name">
+		<text>取得運來的武器</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_1_text">
+		<text>克列諾夫讓你找到並把運輸來的武器運到尤皮特的集裝箱倉庫.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_1_about">
+		<text>我們今天本應該得到一批武器,就因為一支該死的軍方巡邏隊, "匪王"蘇坦的人把它藏了起來. 現在這批武器的位置應該清楚了, 去拿吧.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_1_finish">
+		<text>你是一個可靠的人. 幹得好!</text>
+	</string>
+	
+
+	<!-- Klenov (Bandit Trader) Kill the Enemy Scout Storyline Task -->
+
+	<string id="drx_sl_jup_cont_trader_bandit_task_2_name">
+		<text>殺掉敵方偵察兵</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_2_text">
+		<text>克列諾夫讓你不惜一切代價去找到並殺死敵方偵察兵.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_2_about">
+		<text>一名敵方偵察兵告訴了一群潛行者我們正在準備發動一次突襲. 結果呢? 死了三個兄弟. 我們不能再冒失敗的風險了, 所以我要你找到並殺了那個混蛋.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_2_finish">
+		<text>終於! 現在我們可以為我們的下一次襲擊做準備了. 這是你的報酬.</text>
+	</string>
+	
+
+	<!-- Klenov (Bandit Trader) Escort the Bandits Spy Storyline Task -->
+
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_name">
+		<text>護送土匪的間諜</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_text">
+		<text>一個土匪臥底需要從敵軍中撤離, 殺掉他所屬小隊的其他人, 把他護送到克列諾夫那裡. 這個土匪間諜揹著一把SVD狙擊槍.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_about">
+		<text>聽著. 敵方部隊中混有我們的線人. 他一直在告知我們敵方部隊的行進路線, 已經有一陣子了. 然而最近已經有一段時間沒有收到他傳來的線報了. 他肯定陷入了一些巨大的狗屎麻煩之中. 如果我們不趕緊去把他從那裡弄出來的話某個人肯定會揭穿他的偽裝.
+		\n我需要你把他完整的帶回來, 聽見了嗎?不準少一塊兒肉! 記住, 他身邊還跟著其他潛行者, 所以你需要把他們先殺了. 你可以通過他帶的那把SVD來認出他來. 他會在你攻擊隊伍里的其他人的時候不得不向你開槍, 但是你給我記住了, 不準讓他缺胳膊少腿兒! 現在, 去吧!</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_finish">
+		<text>哈,你們倆都完好無缺的回來了,不是嗎?哈哈,開個玩笑.拿著,這是你的錢.</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_msg_join">
+		<text>操! 別開槍! 他媽的別! 開! 槍! 他們都死了! 我們他媽的趕緊離開這兒, 回到克列諾夫那裡! 求你了, 老兄...</text>
+	</string>
+	<string id="drx_sl_jup_cont_trader_bandit_task_3_msg_leave">
+		<text>狗屎... 我們做到了! 謝了老鐵, 我現在得走了.</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev (Ecog Mechanic) Escort Jupiter Scientists Task -->
+
+	<string id="jup_b6_scientist_tech_task_1_name">
+		<text>護送生態學家</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_1_text">
+		<text>生態學家們僱傭你來當嚮導, 帶領他們去一個特定的地點來進行他們的研究. 一旦他們的研究完成了, 你就要把他們安全的帶回基地.</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_1_about">
+		<text>我們需要一個老謀深算的潛行者來帶領我們的一些同事去外面實地考察. 你會接這個任務嗎?</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_1_fetch_finish">
+		<text>謝謝你的周到保護, 潛行者. 請把這個拿走, 作為我們對你的感謝.</text>
+	</string>
+
+	<string id="jup_b6_scientist_tech_task_2_name">
+		<text>找到"%s"神器</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_2_text">
+		<text>你接受了尋找"%s"神器的任務. 如果你剛好手頭有一件的話, 把它帶回給托卡列夫.</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_2_about">
+		<text>我們正在尋找特定種類的神器.如果你感興趣的話, 我會告訴你我需要什麼神器的.</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_2_fetch_about">
+		<text>我需要你給我們帶回一件"%s"神器你以前聽說過它嗎?</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_2_fetch_finish">
+		<text>太好了! 你找到的這件神器正是我所需要的! 來, 拿著這件套裝; 它能為你提供超凡的針對特異區的保護, 並且我確信如果你買的話你會花很大一筆錢才能購入這件套裝的. 所以現在它是你的了, 作為我們的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Tukarev (Ecog Mechanic) Brains vs Brawn Dynamic Task -->
+
+	<string id="jup_b6_scientist_tech_task_3_name">
+		<text>大腦VS肌肉</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_3_text">
+		<text>帶領一隊生態學家護衛與土匪作戰.</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_3_about">
+		<text>我的研究人員一直處於危險之中. 這個地方到處都是土匪, 而且似乎沒有一個人願意做些什麼來制止這種現象. 我要你和一些我的人一起清理這個區域. 別讓他們的"A"級研究等級騙了你, 這些孩子知道如何給別人的腦袋上開一個洞. 現在, 帶他們出去, 並且帶領他們走向勝利!</text>
+	</string>
+	<string id="jup_b6_scientist_tech_task_3_finish">
+		<text>幹得好,謝謝你.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Trapper (Loner Honcho) Lead Mutant Hunt Task -->
+
+	<string id="jup_b220_trapper_task_1_name">
+		<text>清理一個區域內的變異生物</text>
+	</string>
+	<string id="jup_b220_trapper_task_1_text">
+		<text>這個地點附近發現了許多變異生物, 使得這個區域對一些附近的居民來說變得非常危險. 你已接獲任務, 要帶領一支獵殺小隊去減少特異區內變異生物的數量. 任務完成後, 向屠獸者報告.</text>
+	</string>
+	<string id="jup_b220_trapper_task_1_about">
+		<text>我組織了一支狩獵小隊, 以減少在該地區發現的各種變種巢穴數量的方式去幫助亞諾夫車站附近的區域保持相對安全, 因此, 我需要某個有經驗的潛行者來帶領這支小隊. 你會接下這個任務嗎?</text>
+	</string>
+	<string id="jup_b220_trapper_task_1_finish">
+		<text>謝謝你, 潛行者.因為你, 亞諾夫周邊的地區對其他人來說安全多了. 這是你的報酬.</text>
+	</string>
+
+	<string id="jup_b220_trapper_task_2_name">
+		<text>刺殺目標人物</text>
+	</string>
+	<string id="jup_b220_trapper_task_2_text">
+		<text>屠獸者發佈了一個需要除掉的高價值目標.</text>
+	</string>
+	<string id="jup_b220_trapper_task_2_about">
+		<text>我這裡有一個需要被抹掉的致命威脅. 這次不是變異生物了, 而是人. 他不是個好對付的傢伙, 但我保證我會付很高的報酬. 你接這個任務嗎?</text>
+	</string>
+	<string id="jup_b220_trapper_task_2_finish">
+		<text>幹得好潛行者, 這是給你的報酬.</text>
+	</string>
+
+
+	<!-- FIND WEAPON FOR HUNTSMAN TASK -->
+	<string id="jup_b220_trapper_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_b220_trapper_task_3_text">
+		<text>屠獸者正在尋找一支特別的, 狀況完美的武器. 如果你找到一把的話, 帶給他.</text>
+	</string>
+	<string id="jup_b220_trapper_task_3_about">
+		<text>我手下的一名獵人正在市場上購買一支我這裡不能給他提供的特殊武器. 你能幫我找到一支嗎?</text>
+	</string>
+	<string id="jup_b220_trapper_task_3_fetch_about">
+		<text>我需要一支%s. 我手下的一個想要它獵人的要去參與一場危險的狩獵, 所以他需要這支武器保持完美狀態. 如果你為我找到一支的話我會付你錢的.</text>
+	</string>
+	<string id="jup_b220_trapper_task_3_fetch_finish">
+		<text>啊, 完美. 這會幫我一個大忙. 給你, 這是我答應給你的錢.</text>
+	</string>
+
+
+	<!-- FIND MUTANT PARTS FOR HUNTSMAN TASK -->
+	<string id="jup_b220_trapper_task_4_name">
+		<text>獲取%s</text>
+	</string>
+	<string id="jup_b220_trapper_task_4_text">
+		<text>屠獸者說如果你能給他帶來%s的話他會付你錢.</text>
+	</string>
+	<string id="jup_b220_trapper_task_4_about">
+		<text>我這有一筆關於特殊型別變異生物的賞金. 你有興趣嗎?</text>
+	</string>
+	<string id="jup_b220_trapper_task_4_fetch_about">
+		<text>殺了這個變異生物並且給我帶來它的%s, 我會給你一筆可觀的賞金, 潛行者.</text>
+	</string>
+	<string id="jup_b220_trapper_task_4_fetch_finish">
+		<text>啊, 又一個威脅被解除了, 這下我可以用新的"裝飾品"來裝點營地了. 幹得好, 潛行者.</text>
+	</string>
+
+
+	<!--= Call of Chernobyl -->
+
+
+	<string id="jup_b217_stalker_tech_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_1_text">
+		<text>阿佐特需要%s來安裝基本的裝備升級. 如果你找到的話, 帶回來給他.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_1_about">
+		<text>我需要新的工具, 潛行者, 一些在特異區很難找到的東西. 如果你有興趣幫助我的話, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_1_fetch_about">
+		<text>我需要一套基本工具. 它應該包含了我所需要的東西. 如果你能給我帶回來, 我將不勝感激; 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_1_fetch_finish">
+		<text>完美! 這正是我需要的, 潛行者. 如果你需要別人來調校好你的裝備的話, 現在的我做這件事就是小菜一碟.</text>
+	</string>
+
+	<string id="jup_b217_stalker_tech_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_2_text">
+		<text>阿佐特需要%s來安裝進階的裝備升級. 如果你找到的話, 帶回來給他.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_2_about">
+		<text>你給我帶來的工具很好用, 但它裡面的東西不全. 你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_2_fetch_about">
+		<text>我需要一套%s. 我不太確定你能在哪找到一套, 但如果你找到了的話, 記住, 我需要它.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_2_fetch_finish">
+		<text>哇噢! 你給我找到了一套很好的工具. 給, 作為回報, 我會給你一些錢.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_3_text">
+		<text>阿佐特需要%s來安裝專家級的裝備升級. 如果你找到的話, 帶回來給他.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_3_about">
+		<text>你給我帶來的工具很好用, 但它裡面的東西不全. 你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_3_fetch_about">
+		<text>我需要一套%s. 我不太確定你能在哪找到一套, 但如果你找到了的話, 記住, 我需要它.</text>
+	</string>
+	<string id="jup_b217_stalker_tech_task_3_fetch_finish">
+		<text>哇噢! 你給我找到了一套非常好的工具. 給, 作為回報, 我會給你一些錢.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- Jup A6 Yar -->
+	<string id="jup_b19_freedom_yar_task_1_name">
+		<text>特快專遞</text>
+	</string>
+	<string id="jup_b19_freedom_yar_task_1_text">
+		<text>你需要傳遞一個資訊. 你是怎麼被捲入這件事的?</text>
+	</string>
+	<string id="jup_b19_freedom_yar_task_1_about">
+		<text>好吧, 我有一個很簡單的工作給你. 我需要你給我的朋友捎個信, 阿肖特. 他的PDA需要修理, 叫他把它帶到這裡.</text>
+	</string>
+	<string id="jup_b19_freedom_yar_task_1_finish">
+		<text>哈哈, 我們只是在跟你開玩笑, 潛行者. 我真不敢相信你能忍受這麼久.</text>
+	</string>
+
+	<string id="jup_b19_freedom_yar_task_1_dm_query">
+		<text>我是來傳遞資訊的.</text>
+	</string>
+
+	
+<!-- (Ecologists) -->
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_name">
+		<text>掃瞄場</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_text0">
+		<text>拿取一臺異常點掃描器.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_text1_0">
+		<text>將掃描器帶到異常區域.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_text1_1">
+		<text>將掃描器帶到異常區域.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_text2">
+		<text>放置掃描器.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_text3">
+		<text>回報安置情況.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_about">
+		<text>我們的研究小組正在盡力通過對異常點形成的方式進行測試來試圖找出能量風暴和神器之間的關係. 但是, 我們的研究團隊的經驗尚且不足, 所以我們迫切需要一名志願者來幫助我們完成我們的任務. 我需要你把這個先進的掃瞄器放在指定的異常點, 測量得到的數據會傳送到我們的電腦上.</text>
+	</string>
+	<string id="jup_b6_scientist_nuclear_physicist_task_1_finish">
+		<text>啊, 好, 我看到了, 掃瞄器正在按預期工作. 謝謝你, 潛行者, 非常感謝你的幫助.</text>
+	</string>
+
+	
+<!-- (Monolith Mechanic) -->
+	<string id="mechanic_monolith_jup_depo_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_1_text">
+		<text>營地的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_1_about">
+		<text>我們最近在這裡建立了我們的營地, 但是我們的兄弟們非常缺乏工具. 你能為兄弟們找到一套基本的工具嗎? 這將是無價的.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_1_fetch_about">
+		<text>我們最近在這裡建立了我們的營地, 但是我們的兄弟們非常缺乏工具. 你能不能爲了兄弟們好, 去找到一套基本的工具?這將是無價的.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_1_fetch_finish">
+		<text>太好了. 這將幫助我們站穩腳跟, 增強力量... 我相信你會得到折扣服務的.</text>
+	</string>
+
+	<string id="mechanic_monolith_jup_depo_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_2_text">
+		<text>營地的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_2_about">
+		<text>大量戰鬥表明, 我們的武器略次於那些異教徒的武器, 很明顯他們中有一些有能力的技師. 我需要工具來為我們的武器做些精細的調整, 把我們的兄弟從這樣的劣勢中拯救出來. 你會幫忙嗎, 兄弟?</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_2_fetch_about">
+		<text>大量戰鬥表明, 我們的武器略次於那些異教徒的武器, 很明顯他們中有一些有能力的技師. 我需要工具來為我們的武器做些精細的調整, 把我們的兄弟從這樣的劣勢中拯救出來. 你會幫忙嗎, 兄弟?</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_2_fetch_finish">
+		<text>幹得好. 調校好的裝備將供給特異區的所有部隊. 你會得到折扣服務的.</text>
+	</string>
+
+	<string id="mechanic_monolith_jup_depo_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_3_text">
+		<text>營地的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_3_about">
+		<text>我們會超過他們所有人的, 兄弟! 爲了做到這一點, 我需要一套用來校準武器的工具. 請找一套來給我.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_3_fetch_about">
+		<text>我們會超過他們所有人的, 兄弟! 爲了做到這一點, 我需要一套用來校準武器的工具. 找到並帶來一套來給我.</text>
+	</string>
+	<string id="mechanic_monolith_jup_depo_task_3_fetch_finish">
+		<text>搞定了. 有了這些新發現, 我們將征服周圍地區. 從現在起, 我將竭盡所能為您服務.</text>
+	</string>
+	
+	
+<!-- (Bandits Mechanic) -->
+	<string id="jup_cont_mech_bandit_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_1_text">
+		<text>幫派的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_1_about">
+		<text>那些混蛋潛行者搶走了所有東西, 並在亞諾夫車站建立了防禦. 我們呢? 什麼狗屁東西都沒有得到!我需要一些工具, 夥計. 給我拿點, 好嗎?</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_1_fetch_about">
+		<text>那些混蛋潛行者搶走了所有東西, 並在亞諾夫車站建立了防禦. 我們呢? 什麼狗屁東西都沒有得到!我需要一些工具, 夥計. 給我拿點, 好嗎?</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_1_fetch_finish">
+		<text>太好了! 完美! 你會得到折扣的.</text>
+	</string>
+
+	<string id="jup_cont_mech_bandit_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_2_text">
+		<text>幫派的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_2_about">
+		<text>聽著, 我不想再打擾你了, 但是你能不能再給我帶來一套工具來? 就一套. 你知道, 我們需要一套更好的工具來改善我們裝備的狀況, 對我們來說沒有恰當的裝備升級的話會很難過活的. 呵...</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_2_fetch_about">
+		<text>聽著, 我不想再打擾你了, 但是你能不能再給我帶來一套工具來? 就一套. 你知道, 我們需要一套更好的工具來改善我們裝備的狀況, 對我們來說沒有恰當的裝備升級的話會很難過活的. 呵...</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_2_fetch_finish">
+		<text>謝了老兄. 你是個真男人, 你知道嗎?</text>
+	</string>
+
+	<string id="jup_cont_mech_bandit_task_3_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_3_text">
+		<text>幫派的技師請我給他帶回來%s.</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_3_about">
+		<text>嘿, 夥計, 你給我們帶來的另外兩套工具真的很有用, 但我需要最好的. 你知道的... 就那種可以搞定一切, 讓你的裝備保持"高潮"狀態的那種東東...</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_3_fetch_about">
+		<text>嘿, 夥計, 你給我們帶來的另外兩套工具真的很有用, 但我需要最好的. 你知道的... 就那種可以搞定一切, 讓你的裝備保持"高潮"狀態的那種東東...</text>
+	</string>
+	<string id="jup_cont_mech_bandit_task_3_fetch_finish">
+		<text>好吧... 我干! 這可稀罕了... 真正的珍品. 我再給你一個折扣, 這是你應得的. 謝謝兄弟.</text>
+	</string>
+
+	
+	<!-- Bonesetter (Loner Medic) -->
+	<string id="jup_a6_stalker_medik_task_1_name">
+		<text>找到%s</text>
+	</string>
+	<string id="jup_a6_stalker_medik_task_1_text">
+		<text>%s是接骨師需要的醫療用品. 如果你找到了一些, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_task_1_about">
+		<text>保證醫療用品倉庫里剩下的東西和我每天必須治療的損傷數量相匹配不是個容易活. 現在狀況很糟, 我很快就會用完繃帶和藥箱了. 我需要你幫我找一套老舊的製毒工具. 它肯定會派上用場的.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_task_1_fetch_about">
+		<text>就是它了. 我一直在到處尋找%s. 它應該包含一些我製作醫療補給用品所需的藥片和注射器. 如果你能給我找到一整套並帶回來的話, 我就給你一套.</text>
+	</string>
+	<string id="jup_a6_stalker_medik_task_1_fetch_finish">
+		<text>幹得漂亮! 我欠你一個大人情.</text>
+	</string>
+</string_table>

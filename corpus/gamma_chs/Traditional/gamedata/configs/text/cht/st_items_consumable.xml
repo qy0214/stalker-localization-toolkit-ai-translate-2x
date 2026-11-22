@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="st_vodka">
+		<text>尼米洛夫伏特加</text>
+	</string>
+	<string id="st_vodka_descr">
+		<text>尼米洛夫是烏克蘭的酒精飲料生產商, 專門生產伏特加和其他烈酒, 總部位於文尼茨卡的尼米洛夫鎮, 這是特異區乃至世界上最好的伏特加酒之一\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+		<string id="st_vodka2">
+		<text>普京伏特加</text>
+	</string>
+	<string id="st_vodka2_descr">
+		<text>遵循俄羅斯總統為伏特加品牌命名的傳統, 普京牌伏特加在弗拉基米爾·普京當選總統後首次投產, 這種佳釀的亮點不僅僅是口味獨特而已, 它使用最優質的穀物和西伯利亞優質礦泉水製造, 三重凈化, 口感綿柔, 飲酒請適度\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+	
+	<string id="st_vodka_quality">
+		<text>首都伏特加</text>
+	</string>
+	<string id="st_vodka_quality_descr">
+		<text>是俄羅斯乃至全世界人民喜愛的飲品, 是一種優質的俄羅斯伏特加, 也許是因為某個商人的走私路線, 它在特異區中也受到廣泛的喜愛, 通常是將其裝在軍用容器或鐵桶中, 以便混過軍隊在邊境的貨物檢查, 之後才分裝到堅固的金屬瓶中\n\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+	
+		<string id="st_beer">
+		<text>烏克蘭啤酒</text>
+	</string>
+	<string id="st_beer_descr">
+		<text>烏克蘭啤酒, 繼伏特加后又一種在特異區極受歡迎的飲料\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+	
+	<string id="st_bottle_metal">
+		<text>土產伏特加</text>
+	</string>
+	<string id="st_bottle_metal_descr">
+		<text>一個金屬瓶, 裝著像是在特異區土法釀造的伏特加, 質量無法保證, 油煙味很重\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+	
+<!--< FOOD >-->
+	<string id="st_energy_drink">
+		<text>強能飲料</text>
+	</string>
+	<string id="st_energy_drink_descr">
+		<text>潛行者經常在長途旅行中喝幾罐, 因為它有強勁的興奮效果, 如果你喝醉了, 這種飲料還能讓你醒酒, 並促使腎上腺素釋放到血液中, 但別過量飲用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_flask">
+		<text>壺裝凈水</text>
+	</string>
+	<string id="st_flask_descr">
+		<text>裝有凈化水的軍用水壺\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		</text>
+	</string>
+		
+	<string id="st_kolbasa">
+		<text>膳食香腸</text>
+	</string>
+	<string id="st_kolbasa_descr">
+		<text>這種香腸最初的目的是提供給長期飢餓和營養不良的人當作膳食補充劑, 因為它是一種味道溫和, 價格低廉且相對健康的肉類來源, 膳食香腸在蘇聯非常受歡迎\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_tea">
+		<text>大鬍子熱茶</text>
+	</string>
+	<string id="st_tea_descr">
+		<text>一種在特異區很風行的熱茶, 由大鬍子的獨家配方所制: 糖, 干蘑菇和據說零輻射的開水混合而成, 買得起這種飲料的都是些經常在特異區長途旅行的潛行者們, 確實, 當感到疲倦或在寒冷的夜晚外出冒險時, 沒什麼能比得上一杯熱茶更好的精神飲料了\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_tomato">
+		<text>番茄罐頭</text>
+	</string>
+	<string id="st_tomato_descr">
+		<text>會定期走私進特異區的裝有番茄丁的罐頭, 底部的生產日期表明它還很新鮮\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_sausage">
+		<text>熏腸</text>
+	</string>
+	<string id="st_sausage_descr">
+		<text>由牛肉和豬肉製成, 熏製后真空包裝, 能夠儲存很久, 這一類熏腸是從俄羅斯進口的, 因其獨特的風味和口感在俄羅斯黑道中享有盛名\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_corn">
+		<text>玉米罐頭</text>		 
+	</string>
+	<string id="st_corn_descr">
+		<text>從外界進口的甜玉米罐頭, 可以直接食用, 但也有些人用它來做湯\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_beans">
+		<text> 焗豆罐頭 </text>
+	</string>
+	<string id="st_beans_descr">
+		<text>從西方走私來的罐裝烤豆, 這些美味的番茄醬烤豆讓許多人憶起了美好的往昔\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_chili">
+		<text>辣豆罐頭</text>
+	</string>
+	<string id="st_chili_descr">
+		<text>從西方走私來的罐裝辣味豆, 作為特異區一些料理的食材而很受歡迎\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_conserva">
+		<text>金槍魚罐頭</text>
+	</string>
+	<string id="st_conserva_descr">
+		<text>罐頭中美味的金槍魚被油浸滿, 從外界走私而來\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_tushonka">
+		<text>圖雙卡牛肉罐頭</text>
+	</string>
+	<string id="st_tushonka_descr">
+		<text>"圖雙卡"是蘇聯和其他華約國家生產的罐裝燉牛肉的通用名稱, 它已成為長期儲存肉類的主要方式, 既被平民使用, 也被用作標準配給的紅軍口糧, 圖雙卡以其高營養價值和相對良好的口味而聞名\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_salmon">
+		<text>煙燻三文魚</text>
+	</string>
+	<string id="st_salmon_descr">
+		<text>烏克蘭煙燻三文魚, 一旦走私進特異區, 這東西就會被轉手以高價出售, 價格不菲\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_raisins">
+		<text>葡萄乾</text>
+	</string>
+	<string id="st_raisins_descr">
+		<text>一包葡萄乾, 營養很豐富, 可以維持血液中的糖分\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_chocolate">
+		<text>俄羅斯巧克力</text>
+	</string>
+	<string id="st_chocolate_descr">
+		<text>俄羅斯巧克力, 儘管味道沒什麼特別的, 但由於罕見所以很值錢, 也許因為能令人回想起美好的童年, 所以有助於緩解在殘酷的特異區生活的痛苦\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+    <string id="st_chocolate_p">
+		<text>俄羅斯巧克力(吃了一半的)</text>
+	</string>
+    <string id="st_chocolate_p_descr">
+		<text>不知被誰咬了一半的俄羅斯巧克力, 儘管味道沒什麼特別的, 但由於罕見所以很值錢, 也許因為能令人回想起美好的童年, 所以有助於緩解在殘酷的特異區生活的痛苦\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_mint">
+		<text>歐托滋薄荷糖</text>
+	</string>
+	<string id="st_mint_descr">
+		<text>原產自英國的老牌薄荷糖, 吃起來非常清爽, 並能清除口腔中的輻射顆粒, 似乎能在短時間內減輕睏倦\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_nuts">
+		<text>什錦堅果</text>
+	</string>
+	<string id="st_nuts_descr">
+		<text>花生, 榛子, 腰果和杏仁都有, 非常受歡迎, 營養價值很高, 從南非進口\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_mineral_water">
+		<text>礦泉水</text>
+	</string>
+	<string id="st_mineral_water_descr">
+		<text>從烏克蘭溫泉採集的礦泉水, 碳酸灌裝, 並新增了鈣\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_mre">
+		<text>MRE單兵野戰軍糧</text>
+	</string>
+	<string id="st_mre_descr">
+		<text>"即食餐"或MRE, 是一種輕質包裝的單兵野戰口糧, 由美國軍方為其服役人員開發, 用於普通作戰或其他缺乏用餐設施的野戰環境, MRE的包裝是爲了承受惡劣條件和暴露于各種氣候而設計, 裡面包含一道主食以及各種小食和飲料\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 軍用口糧\n\n
+		%c[d_cyan] • %c[ui_gray_2] 3份\n
+		</text>
+	</string>
+	
+	<string id="st_ration_ru">
+		<text>俄羅斯IRP-B戰鬥軍糧
+		</text>
+	</string>
+	<string id="st_ration_ru_descr">
+		<text>早餐, 午餐和晚餐都裝在這個包里, 包括各種富含人體必需礦物質和微量元素的食物, 以及加熱裝置和野外使用的物品(小型金屬加熱臺, 燃料片, 火柴, 打火器和餐巾), 外帶一個保護食物免受有害環境影響的盒子\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 軍用口糧\n
+		%c[d_cyan] • %c[ui_gray_2] 7份\n
+		</text>
+	</string>
+	
+	<string id="st_ration_ukr">
+		<text>烏克蘭戰鬥軍糧
+		</text>
+	</string>
+	<string id="st_ration_ukr_descr">
+		<text>這種烏克蘭戰鬥口糧是基於俄羅斯的版本開發的, 內含市面上出售的罐頭和乾糧, 它們裝在由非常薄的綠色塑料製成的分段盒(類似於外賣盤)中, 食物包含一個健康的成年人一天所需的所有卡路里和礦物質\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 軍用口糧\n
+		%c[d_cyan] • %c[ui_gray_2] 6份\n
+		</text>
+	</string>
+	
+	<string id="st_bread">
+		<text>麵包</text>
+	</string>
+	<string id="st_bread_descr">
+		<text>就是一個麵包, 超級新鮮鬆軟, 肯定是近期在特異區製作的\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_breadold">
+		<text>陳舊麵包</text>
+	</string>
+	<string id="st_breadold_descr">
+		<text>一個不太新鮮的麵包, 不過總比餓肚子強, 咬上去有點硬\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_protein">
+		<text>巧克力蛋白棒</text>
+	</string>
+	<string id="st_protein_descr">
+		<text>這根棒棒為人體提供必需的蛋白質和讓你精神振奮的糖類, 在長途旅行以及需要快速補充能量時很有用\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 食物\n
+		</text>
+	</string>
+	
+	<string id="st_water_drink">
+		<text>氣泡水</text>
+	</string>
+	<string id="st_water_drink_descr">
+		<text>容易口渴的潛行者首選的氣泡水, 可以有效緩解疲憊\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_drink_crow">
+		<text>"烏鴉嘴"</text>
+	</string>
+	<string id="st_drink_crow_descr">
+		<text>"烏鴉嘴"是由特異區土產的伏特加和變異的烏鴉喙磨粉混合成的飲品, 並不是每隻烏鴉喙都可以作為原料, 只有那些在特異區生活了15年以上的雄性烏鴉才能充分變異, 傳說這種喙富含一種能清除體內中量輻射的蛋白質, 甚至有人說喝下它會讓你在幾秒內感覺長了翅膀, 但可惜的是它的味道很糟\n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 飲品\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_cyan] • %c[ui_gray_2] 酒精\n
+		</text>
+	</string>
+	
+<!--< SMOKE >-->
+	<string id="st_cuban_cigar">
+		<text>古巴雪茄</text>
+	</string>
+	<string id="st_cuban_cigar_descr">
+		<text>這種珍貴的古巴雪茄可以帶給你短暫的愉悅, 尤其是當你欣賞美麗的日落時, 有些潛行者發現這種強烈的菸草味能夠驅蚊, 古巴雪茄是世界公認的極品, 稀有貨\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigarettes_lucky">
+		<text>好綵牌香菸</text>
+	</string>
+	<string id="st_cigarettes_lucky_descr">
+		<text>從西方走私來的經典香菸, 潛行者們有時能用這東西在自己陣營內換幾發彈藥\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigarettes_russian">
+		<text>俄羅斯香菸</text>
+	</string>
+	<string id="st_cigarettes_russian_descr">
+		<text>特異區最便宜的香菸, 俄羅斯廉價品牌\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigar1">
+		<text>星火牌香菸</text>
+	</string>
+	<string id="st_cigar1_descr">
+		<text>%c[d_red]"星星之火, 可以燎原"\n
+		%c[ui_gray_2]一包廉價, 勁大但質量一般的香菸, 精心儲存了真正的前蘇聯風味\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigar2">
+		<text>榮耀牌香菸</text>
+	</string>
+	<string id="st_cigar2_descr">
+		<text>%c[d_red]"榮耀屬於蘇聯! 烏拉!"\n
+		%c[ui_gray_2]一包廉價, 勁大但質量一般的香菸, 精心儲存了真正的前蘇聯風味\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigar3">
+		<text>紅星牌香菸</text>
+	</string>
+	<string id="st_cigar3_descr">
+		<text>%c[d_red]"紅星照耀蘇維埃"\n
+		%c[ui_gray_2]一包廉價, 勁大但質量一般的香菸, 精心儲存了真正的前蘇聯風味\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_hand_rolling_tobacco">
+		<text>手卷煙</text>
+	</string>
+	<string id="st_hand_rolling_tobacco_descr">
+		<text>從西方走私來的珍貴手卷煙, 沒有任何新增物, 你可以享受菸葉本身純正的原味\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_cigarettes">
+		<text>萬寶路香菸</text>
+	</string>
+	<string id="st_cigarettes_descr">
+		<text>%c[d_red]"Men Always Remember Love Because of Romance Only"\n
+		%c[ui_gray_2]從西方走私來的香菸, 由於只剩下幾根, 所以一定有人抽過了, 僅抽一根就能可以穩定你的精神狀態,並可以稍微緩解飢餓感, 它們在特異區中很少見, 價格高昂\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+	
+	<string id="st_tobacco">
+		<text>俄羅斯菸葉</text>
+	</string>
+	<string id="st_tobacco_descr">
+		<text>菸草在特異區中價格昂貴且稀有, 未加工的菸葉更是如此 - 能讓你以低成本自製香菸, 這個盒子是密封的, 能讓菸葉根據存放條件保持幾天甚至幾周的新鮮\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 菸草\n
+		%c[d_cyan] • %c[ui_gray_2] 提神劑\n
+		%c[d_green] • %c[ui_gray_2] 醒酒效果\n
+		</text>
+	</string>
+</string_table>

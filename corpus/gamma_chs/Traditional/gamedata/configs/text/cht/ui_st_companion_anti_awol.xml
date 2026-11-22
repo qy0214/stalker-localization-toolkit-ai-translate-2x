@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_companion_anti_awol_title">
+		<text>同伴戰鬥管理-忽略戰鬥距離</text>
+	</string>
+	<string id="ui_mcm_menu_companion_anti_awol">
+		<text>同伴戰鬥管理</text>
+	</string>
+
+	<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol">
+		<text>啟用基於玩家距離的同伴忽略戰鬥</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_desc">
+		<text>根據與玩家的距離,啟用/禁用同伴的無視戰鬥</text>
+	</string>
+
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_player_distance">
+		<text>忽略戰鬥距離(跟隨)</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_player_distance_desc">
+		<text>當同伴與玩家達到指定的距離（以米為單位）時,他們將忽略戰鬥</text>
+	</string>
+
+
+	<string id="ui_mcm_companion_anti_awol_companion_allow_combat_player_distance">
+		<text>允許戰鬥距離(跟隨)</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_allow_combat_player_distance_desc">
+		<text>當同伴達到與玩家的指定距離（以米為單位）時,他們將重新投入戰鬥. </text>
+	</string>
+
+
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_distance">
+		<text>忽略戰鬥距離（去標記點）</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_distance_desc">
+		<text>當同伴到達指定的去向標記的距離（以米為單位）時,他們將忽略戰鬥. </text>
+	</string>
+
+
+	<string id="ui_mcm_companion_anti_awol_companion_allow_combat_goto_distance">
+		<text>允許戰鬥距離（去標記點）</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_allow_combat_goto_distance_desc">
+		<text>當同伴到達指定的去向標記的距離（以米為單位）時,他們將重新投入戰鬥. </text>
+	</string>
+
+	
+	<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_enemy">
+		<text>啟用基於敵人距離的同伴忽略戰鬥</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_enable_companion_anti_awol_enemy_desc">
+		<text>根據玩家和敵人之間的距離,啟用/禁用同伴的無視戰鬥. </text>
+	</string>
+
+
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_enemy_distance">
+		<text>忽略戰鬥距離(跟隨)</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_enemy_distance_desc">
+		<text>當敵人在與玩家的指定距離之外（以米為單位）,同伴將忽略戰鬥. </text>
+	</string>
+
+
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_enemy_distance">
+		<text>忽略戰鬥距離（去標記點）</text>
+	</string>
+	<string id="ui_mcm_companion_anti_awol_companion_ignore_combat_goto_enemy_distance_desc">
+		<text>當敵人在離去向標記的指定距離（以米為單位）之外時,同伴將忽略戰鬥</text>
+	</string>
+
+</string_table>

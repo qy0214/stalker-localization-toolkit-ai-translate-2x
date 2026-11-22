@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_free_zoom">
+		<text>自由縮放</text>
+	</string>
+	<string id="ui_mcm_free_zoom_key_bind_toggle">
+		<text>自由縮放鍵繫結</text>
+	</string>
+	<string id="ui_mcm_free_zoom_key_bind_toggle_desc">
+        <text>以犧牲移動速度為代價, 聚焦並放大你的視野</text>
+	</string>
+	
+	<string id="ui_mcm_free_zoom_pistol_mult">
+		<text>手槍的距離係數</text>
+	</string>
+	<string id="ui_mcm_free_zoom_pistol_mult_desc">
+        <text>僅作用於手槍, 增大此值可使手槍模型遠離身體
+        </text>
+	</string>
+	<string id="ui_mcm_free_zoom_ads_mult">
+		<text>機瞄放大係數</text>
+	</string>
+	<string id="ui_mcm_free_zoom_ads_mult_desc">
+        <text>調整ADS時的視野放大程度, 此值越低, 放大程度越高
+        </text>
+	</string>
+	<string id="ui_mcm_free_zoom_free_zoom_mult">
+		<text>自由縮放放大係數</text>
+	</string>
+	<string id="ui_mcm_free_zoom_free_zoom_mult_desc">
+        <text>調整自由縮放時的視野放大程度, 此值越低, 放大程度越高
+        </text>
+	</string>
+	
+</string_table>

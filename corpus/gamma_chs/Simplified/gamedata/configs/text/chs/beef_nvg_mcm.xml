@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+
+<string_table>
+
+	<string id="ui_mcm_beef_nvg_title">
+		<text>Beef的夜视仪设置</text>
+	</string>	
+	
+	<string id="ui_mcm_beef_nvg_title_2">
+		<text>兼容基于着色器的2D镜瞄</text>
+	</string>	
+	
+	<string id="ui_mcm_menu_beef_nvg">
+		<text>Beef的夜视仪</text>
+	</string>
+
+
+	<string id="ui_mcm_beef_nvg_nvg_gain_max_mcm">
+		<text>夜视仪最大亮度增益</text>
+	</string>
+	<string id="ui_mcm_beef_nvg_nvg_gain_max_mcm_desc">
+		<text>取值越高亮度越强, 但有极限值. 建议在午夜时分应用cloudy_dark_2天气种类, 来正确设定此值</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gain_min_mcm">
+		<text>夜视仪最小亮度增益</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gain_min_mcm_desc">
+		<text>取值越高亮度越弱, 低到一定程度的话, "夜"视仪就可以在白天用了</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gain_offset_mcm">
+		<text>环境亮度</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gain_offset_mcm_desc">
+		<text>取值1.0为正常, 取值更高会提高整个游戏世界的亮度, 但不包括光源</text>
+	</string>
+
+
+	<string id="ui_mcm_beef_nvg_nvg_washout_thresh_mcm">
+		<text>光源筛除阈值</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_washout_thresh_mcm_desc">
+		<text>通常情况下推荐取值0.1, 提高取值可以略微降低光源筛除效果, 此选项会被亮度增益修正, 所以增益越高, 筛除越多, 反之亦然</text>
+	</string>
+	
+	
+	<string id="ui_mcm_beef_nvg_nvg_view_through_scope_mcm">
+		<text>使用瞄具时允许使用夜视仪</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_view_through_scope_mcm_desc">
+		<text>如果取消勾选此项, 在使用瞄具时角色会关闭夜视仪</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_stays_pda_mcm">
+		<text>查看PDA时保持夜视仪开启</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_stays_pda_mcm_desc">
+		<text>如果取消勾选此项, 当打开PDA时, 夜视仪会自动关闭</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen1_tubes_mcm">
+		<text>单管夜视仪选项: (默认单管居中)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen1_tubes_mcm_desc">
+		<text>修改单管夜视仪显示模式</text>
+	</string>
+
+	<string id="ui_mcm_beef_nvg_nvg_gen2_tubes_mcm">
+		<text>双筒夜视仪选项: (默认双筒居中)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen2_tubes_mcm_desc">
+		<text>修改双筒夜视仪显示模式</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen3_tubes_mcm">
+		<text>四目夜视仪选项: (默认四目居中)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen3_tubes_mcm_desc">
+		<text>修改四目夜视仪显示模式</text>
+	</string>
+
+	
+	<string id="ui_mcm_lst_single_centered">
+		<text>单管居中</text>
+	</string>
+	
+	<string id="ui_mcm_lst_single_left">
+		<text>单管偏左</text>
+	</string>
+	
+	<string id="ui_mcm_lst_single_right">
+		<text>单管偏右</text>
+	</string>
+	
+	<string id="ui_mcm_lst_dual_centered">
+		<text>双筒居中</text>
+	</string>
+	
+	<string id="ui_mcm_lst_quad_centered">
+		<text>四目居中</text>
+	</string>
+	
+	
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen1_mode_mcm">
+		<text>单筒夜视仪背景: (默认无叠加)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen1_mode_mcm_desc">
+		<text>选择叠加到背景上的效果</text>
+	</string>
+
+	<string id="ui_mcm_beef_nvg_nvg_gen2_mode_mcm">
+		<text>双管夜视仪背景: (默认模糊)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen2_mode_mcm_desc">
+		<text>选择叠加到背景上的效果</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen3_mode_mcm">
+		<text>四目夜视仪背景: (默认模糊)</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_nvg_gen3_mode_mcm_desc">
+		<text>选择叠加到背景上的效果</text>
+	</string>
+	
+	
+	<string id="ui_mcm_lst_blurred_background">
+		<text>模糊</text>
+	</string>
+	
+	<string id="ui_mcm_lst_black_background">
+		<text>黑色</text>
+	</string>
+	
+	<string id="ui_mcm_lst_image_overlay">
+		<text>(还未实现) 图像</text>
+	</string>
+	
+	<string id="ui_mcm_lst_clear_vision">
+		<text>无叠加 (视野较清晰)</text>
+	</string>
+	
+	
+	<string id="ui_mcm_beef_nvg_shader_scope_compat">
+		<text>如果你使用基于着色器的2D镜瞄, 开启此选项</text>
+	</string>
+	
+	<string id="ui_mcm_beef_nvg_shader_scope_compat_desc">
+		<text>如果没有使用就不要开启</text>
+	</string>
+	
+</string_table>

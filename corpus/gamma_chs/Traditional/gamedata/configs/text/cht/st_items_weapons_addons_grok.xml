@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons Attachments
+-->
+<string_table>
+	
+
+<string id="st_addon_scope_m40">
+		<text>Leupold M40</text>
+	</string>
+	<string id="st_addon_scope_m40_descr">
+		<text> M40 圍繞 Leupold 的高級光學系統構建,提供久經考驗的真實光傳輸、一流的強光下眩光減少以及區域休閑潛行者所需的解析度和清晰度. </text>
+	</string>
+	
+	<string id="st_addon_scope_h1h">
+		<text>Aimpoint H1H</text>
+	</string>
+	<string id="st_addon_scope_h1h_descr">
+		<text> Aimpoint H1H 因其尺寸、重量輕和堅固的製造質量而成為全球非常受歡迎的狩獵瞄準具. 它的設計考慮了獵人.  它堅固可靠,可增強對最嚴酷元素的信心,非常適合特異區.</text>
+	</string>
+
+<string id="st_addon_scope_compm4">
+		<text>Aimpoint CompM4s 紅點瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_compm4_descr">
+		<text> Aimpoint CompM4s 專為需要專業品質紅點光學器件以在極端惡劣條件下使用的使用者而設計.</text>
+	</string>
+	
+	<string id="st_addon_scope_eoot553">
+		<text>Eotech 553</text>
+	</string>
+	<string id="st_addon_scope_eoot553_descr">
+		<text> Eotech 553 是在對各種光學瞄準具進行廣泛測試后開發的,美國特種作戰司令部已將 Eotech 全息武器瞄準具標準化為近距離和城市戰區的 1X 武器光學瞄準具. </text>
+	</string>
+	
+	<string id="st_addon_scope_kemper">
+		<text>Firefield Kemper XL-M反射式瞄準鏡 (BaS)</text>
+	</string>
+	<string id="st_addon_scope_kemper_descr">
+		<text>Kemper XL-M是一種反射式瞄準鏡,非常適合高速射擊、傾斜射擊和移動目標射擊. 與民用型號不同"M"是一種軍用型號的瞄準鏡,由更堅固的鋁合金製成,專為惡劣使用條件而設計. 安裝在皮卡汀尼導軌上.</text>
+	</string>
+</string_table>

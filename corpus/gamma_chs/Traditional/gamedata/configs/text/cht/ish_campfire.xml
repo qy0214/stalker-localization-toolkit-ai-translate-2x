@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_ui_no_save_campfire_baby">
+		<text>只能在營火旁%s</text>
+	</string>
+	<string id="st_ui_no_save_campfire_base">
+		<text>只能在友方營地的營火旁%s</text>
+	</string>
+	<string id="st_ui_no_save_campfire_unlit">
+		<text>必須先點燃營火才能%s</text>
+	</string>
+	<string id="ui_mcm_menu_yasc">
+		<text>更好的營火存檔</text>
+	</string>
+	<string id="ui_mcm_lst_Sanctuaries_None">
+		<text>不啟用</text>
+	</string>
+	<string id="ui_mcm_lst_Sanctuaries_Friendly">
+		<text>僅限友方陣營</text>
+	</string>
+	<string id="ui_mcm_lst_Sanctuaries_Neutral">
+		<text>友方陣營和中立陣營</text>
+	</string>
+	<string id="ui_mcm_yacs_title">
+		<text>更好的營火存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_enableCampfireSaving">
+		<text>啟用營火存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_enableCampfireSaving_desc">
+		<text>你只能在友方營地內點燃的營火旁存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_allowNeutralBases">
+		<text>允許中立營地</text>
+	</string>
+	<string id="ui_mcm_yasc_allowNeutralBases_desc">
+		<text>其他陣營的好感足夠高的話, 也可以在他們的營地中存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_allowSanctuaries">
+		<text>啟用安全區</text>
+	</string>
+	<string id="ui_mcm_yasc_allowSanctuaries_desc">
+		<text>如果你的名聲足夠好, 一些在特異區很有影響力的角色也會同意你在他們的居所存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_enableNotifications">
+		<text>啟用老子要存檔</text>
+	</string>
+	<string id="ui_mcm_yasc_enableNotifications_desc">
+		<text>擁有令牌就可以隨時存檔. 此選項會在你試圖儲存時, 顯示距離下一次授予令牌的時間資訊</text>
+	</string>
+	<string id="ui_mcm_yasc_isNotMommy">
+		<text>我是老子</text>
+	</string>
+	<string id="ui_mcm_yasc_isNotMommy_desc">
+		<text>取消后你會被稱為老孃</text>
+	</string>
+	<string id="mommy_true">
+		<text>老孃</text>
+	</string>
+	<string id="mommy_false">
+		<text>老子</text>
+	</string>
+	<string id="token_pending">
+		<text>%s在 %i 秒后才能存檔</text>
+	</string>
+	<string id="token_granted">
+		<text>%s有一個令牌, 可以隨時按SHIFT-F5存檔</text>
+	</string>
+</string_table>
+

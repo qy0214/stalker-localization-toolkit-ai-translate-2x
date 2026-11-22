@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+	Devices
+-->
+
+<string_table>
+
+	<string id="st_itm_exo_psu_name">
+		<text>應急外骨骼PSU</text>
+	</string>
+	<string id="st_itm_exo_psu_descr">
+		<text>外骨骼裝備輔助電源, 拖放到外骨骼上使用, 提供了額外的電容, 考慮到標準外骨骼附帶的效率相當低, 因此輔助電源受到大多數潛行者的歡迎, 這種型別的電源是業餘組裝的, 效率很低, 雖然僅略微增加了容量, 但重量也很輕; 大多數外骨骼的主要缺點之一是它們只能在短時間內部署, 通常是在返回基地充電之前的激戰中, 像這樣的外部電源可以一定程度緩解這個問題, 但這種業餘的玩意效果很有限\n\n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 電容: 150\n
+		%c[d_blue] • %c[ui_gray_2] 電量消耗速率: 100%\n
+		</text>
+	</string>
+
+	<string id="st_itm_exo_psu_mili_name">
+		<text>軍用外骨骼PSU</text>
+	</string>
+	<string id="st_itm_exo_psu_mili_descr">
+		<text>外骨骼裝備輔助電源, 拖放到外骨骼上使用, 提供了額外的電容, 考慮到標準外骨骼附帶的效率相當低, 因此輔助電源受到大多數潛行者的歡迎, 此模型是在工廠專業製造的, 可無縫安裝到外骨骼上, 它很重, 但非常耐用, 也大大提高了能源容量, 但在節能方面不是特別出衆\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 軍用裝備\n
+		%c[d_blue] • %c[ui_gray_2] 電容: 250\n
+		%c[d_blue] • %c[ui_gray_2] 電量消耗速率: 85%\n
+		</text>
+	</string>
+	
+	<string id="st_itm_exo_psu_sci_name">
+		<text>實驗性外骨骼PSU "反應堆"</text>
+	</string>
+	<string id="st_itm_exo_psu_sci_descr">
+		<text>外骨骼裝備輔助電源, 拖放到外骨骼上使用, 能夠自動充電, 考慮到標準外骨骼附帶的效率相當低, 因此輔助電源受到大多數潛行者的歡迎
+		\n\n這個模型是根據你從生態學家那裡獲得的示意圖建造的實驗性原型, 使用熱電體的潛在靜態屬性來產生無盡的能量, 含有神器的反饋迴路會不斷地給外骨骼的電源充電--基本上是一個近乎無限的電源\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 實驗原型\n
+		%c[d_blue] • %c[ui_gray_2] 電容: 400\n
+		%c[d_blue] • %c[ui_gray_2] 電量消耗速率: 50%\n
+		%c[d_blue] • %c[ui_gray_2] 雙擊 $$ACTION_SPRINT_TOGGLE$$ 釋放閃電新星\n
+		</text>
+	</string>
+	
+	<string id="st_itm_exo_psu_tank_name">
+		<text>實驗性外骨骼PSU "堡壘"</text>
+	</string>
+	<string id="st_itm_exo_psu_tank_descr">
+		<text>外骨骼裝備輔助電源, 拖放到外骨骼上使用, 提供了額外的電容, 考慮到標準外骨骼附帶的效率相當低, 因此輔助電源受到大多數潛行者的歡迎, \n\n這個模型是根據你從生態學家那裡獲得的原理圖建造的實驗性原型, 爲了補充需要在猛烈的炮火中前進的前線部隊而設計的, 它利用"混沌晶"的引力屬性, 在啟用時會產生一個區域性的重力井, 以使用者為中心來有效減緩高速彈片的速度, 並使變異怪物的攻擊失去作用, 然而這個重力井也會干擾使用者的行動 \n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 實驗原型\n
+		%c[d_blue] • %c[ui_gray_2] 電容: 500\n
+		%c[d_blue] • %c[ui_gray_2] 電量消耗速率: 135%\n
+		%c[d_blue] • %c[ui_gray_2] 雙擊 $$ACTION_SPRINT_TOGGLE$$ 啟用引力屏障, 獲得大幅減傷\n
+		%c[d_blue] • %c[ui_gray_2] 20 能耗, 持續 8 秒, 20 秒冷卻\n
+		</text>
+	</string>
+
+	<string id="st_itm_exo_psu_sprint_name">
+		<text>實驗性外骨骼PSU "引擎"</text>
+	</string>
+	<string id="st_itm_exo_psu_sprint_descr">
+		<text>外骨骼裝備輔助電源, 拖放到外骨骼上使用, 提供了額外的電容, 考慮到標準外骨骼附帶的效率相當低, 因此輔助電源受到大多數潛行者的歡迎 \n\n此模型是根據您從生態學家那裡獲得的示意圖構建的實驗原型, 旨在為突擊隊員增加機動性選項, 使用電光晶神器的電容屬性為一組定製的伺服電機提供動力; 可以臨時啟用電光晶神器以極大地增加使用者的移動性; 大幅提高的移動速度還允許使用者對擋在其路徑上的任何生物或人造成巨大傷害\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 高價值物品\n
+		%c[d_blue] • %c[ui_gray_2] 電容: 300\n
+		%c[d_blue] • %c[ui_gray_2] 電量消耗速率: 85%\n
+		%c[d_blue] • %c[ui_gray_2] 中等能耗\n
+		%c[d_blue] • %c[ui_gray_2] 雙擊 $$ACTION_SPRINT_TOGGLE$$ 啟用電機超頻, 獲得超級加速\n
+		%c[d_blue] • %c[ui_gray_2] 衝撞目標會對其造成傷害\n
+		%c[d_blue] • %c[ui_gray_2] 20 能耗, 持續 8 秒, 20 秒冷卻\n
+		</text>
+	</string>
+
+	<string id="st_batteries_ccell">
+		<text>軍用外骨骼電池</text>
+	</string>
+	<string id="st_batteries_ccell_descr">
+		<text>用於為外骨骼供電的重型軍用電池, 這些高密度電源組由烏克蘭研究機構根據在特異區的研究成果而開發, 可以替代外骨骼電源中的廢電池, 或將電力傳輸到機載儲存裝置\n \n
+		%c[ui_gray_3]屬性:\n
+		%c[d_blue] • %c[ui_gray_2] 高科技產品\n
+		%c[d_blue] • %c[ui_gray_2] 拖放到外骨骼上充電\n
+		</text>
+	</string>
+
+	
+	<string id="st_exo_recipe_1">
+		<text>"熱電體" 神器在人工電磁場下的特性</text>
+	</string>
+	<string id="st_exo_recipe_1_descr">
+		<text>由 V.R.索蘭諾夫 和 R.R.羅曼諾維奇 撰寫的科學論文, 詳細說明了熱電體在受到各種強度的電磁場影響時的行為和觀察結果, 在一定的VPM水平下, 觀察到從熱電體中發射出短暫而強烈的直流電流, 其效果與場的強度沒有任何關聯, 這篇文章的字數很多, 而且很啰嗦, 伴隨著文字和方程式的是一些圖表, 黑白照片和測試記錄; 檔案的背面是一個熱電體裝置的應用示意圖, 上方蓋有烏克蘭科學部的官方印章\n\n
+			%c[ui_gray_3]屬性:\n
+			%c[d_green] • %c[ui_gray_2] 資訊物品\n
+			%c[d_blue] • %c[ui_gray_2] 工藝配方\n
+			%c[d_blue] • %c[ui_gray_2] 高價值物品\n</text>
+	</string>
+	
+	<string id="st_exo_recipe_2">
+		<text>對"混沌晶"神器引力外殼投射的觀察和分析</text>
+	</string>
+	<string id="st_exo_recipe_2_descr">
+		<text>由A.N. Perchenov和V.R. Solenov撰寫的科學論文,詳細描述了對混沌晶神器的特殊引力效應的觀察. 根據該檔案,空盤之間的空間是兩個盤子相對於彼此的位置部分扭曲時空的結果,以創造一個微型的引力異常現象. 混沌晶的'完整'部分是什麼內容仍然未知,據推測是空氣粒子的可見形式,帶有高度激發的零點能量. 當在真空條件下受到一定安培數的交流電時,內容物會暫時消散,兩個圓盤之間包含的重力異常會膨脹,形成一個幾乎不透光的 "殼",任何進入空間的固體物體都會被抓住並偏離其原來的軌跡. 據稱,當正確的配置被撥入時,這種行為的發現使四名實習生和兩名實驗室助理受傷. 在實驗日誌中,有一張複製這種行為所需的真空密封裝置的圖\n\n
+			%c[ui_gray_3]屬性:\n
+			%c[d_green] • %c[ui_gray_2] 資訊物品\n
+			%c[d_blue] • %c[ui_gray_2] 工藝配方\n
+			%c[d_blue] • %c[ui_gray_2] 高價值物品\n</text>
+	</string>
+	
+	<string id="st_exo_recipe_3">
+		<text>"電光晶"神器在電能超功率輸出上的應用</text>
+	</string>
+	<string id="st_exo_recipe_3_descr">
+		<text>由R.R. Romanovich和A.N. Perchenov撰寫的科學論文,詳細介紹了電光晶對電力驅動的機械的奇怪影響. 當電光晶在真空中受到正向電流的影響時,該神器會投射出不同大小的異常場,極大地增加了特異區內電力機械的物理輸出--電機執行得更快,CPU超頻,甚至機械錶的移動也更快. 各種實驗記錄顯示,如果場持續時間較長,機器會因為產生的高熱和摩擦而燒燬,而大部分論文都是在猜測什麼會導致這種行為. 最新流行的理論是量子水平的影響,增加了電流量和磁力強度. 然而,這種理論是未經證實的. 論文的中間是一張圖,詳細說明了實驗中使用的神器的密封室結構\n\n
+			%c[ui_gray_3]屬性:\n
+			%c[d_green] • %c[ui_gray_2] 資訊物品\n
+			%c[d_blue] • %c[ui_gray_2] 工藝配方\n
+			%c[d_blue] • %c[ui_gray_2] 高價值物品\n</text>
+	</string>
+	
+	<string id="st_power">
+		<text>電量: </text>
+	</string>
+	<string id="st_equipped_supply">
+		<text>已配備的電源:</text>
+	</string>
+	<string id="st_equipped_none">
+		<text>無</text>
+	</string>
+	<string id="st_charge_exo">
+		<text>充電套裝</text>
+	</string>
+	<string id="st_install_psu">
+		<text>安裝</text>
+	</string>
+	<string id="st_remove_psu">
+		<text>移除PSU</text>
+	</string>
+	<string id="kb_power">
+		<text>啟用電源能力</text>
+	</string>
+	
+	<string id="st_dot">
+		<text>•</text>
+	</string>
+	<string id="article_exo">
+		<text>動力外骨骼</text>
+	</string>
+	<string id="article_exo_text">
+		<text>
+			%c[pda_white]動力外骨骼\n \n %c[ui_gray_1] 
+			E外骨骼現在每個都有自己獨特的動力源, 爲了使外骨骼能夠有效地移動, 必須保持一定電能 
+			\n \n%c[pda_blue]外骨骼電池%c[ui_gray_1]
+			\n 外骨骼的能量儲備可以通過從商人那裡購買的電池或在世界範圍內找到的電池進行充電; 電池的預設電量為100, 這足以完全滿足一個未升級的外骨骼的需要
+			\n 外骨骼的能量隨著運動而消耗, 衝刺時消耗的更快, 如果電力下降到0, 玩家移動速度將被大幅降低, 除非脫掉盔甲
+			\n \n%c[pda_green]PSU電源%c[ui_gray_1]
+			\n 外骨骼的輔助電源(PSU)可以通過購買, 製作和搜尋來獲取
+			\n 要裝備電源, 可將電源拖放到盔甲上
+			\n PSU電源能將外骨骼的電量擴充到100以上, 更高級別的版本賦予獨特的好處和能力
+		</text>
+	</string>
+	
+	<string id="st_err_none">
+		<text>[系統] 警告: 未找到功能</text>
+	</string>
+	<string id="st_err_power">
+		<text>[系統] 警告: 電量不足</text>
+	</string>
+	<string id="st_err_cooldown">
+		<text>[系統] 警告: 系統溫度高於安全閾值</text>
+	</string>
+	<string id="st_ok_cooldown">
+		<text>[系統] 資訊: 系統溫度低於安全閾值</text>
+	</string>
+	<string id="st_act_tank">
+		<text>[系統] 警告: 引力屏障已啟用</text>
+	</string>
+	<string id="st_act_sprint">
+		<text>[系統] 警告: 電機超頻已啟用</text>
+	</string>
+
+	<string id="st_low_power">
+		<text>[系統] 警告: 電池電量低</text>
+	</string>
+	
+	<string id="ui_mcm_menu_exo">
+		<text>動力外骨骼</text>
+	</string>
+	<string id="ui_mcm_exo_title">
+		<text>動力外骨骼</text>
+	</string>
+	<string id="ui_mcm_exo_drain">
+		<text>外骨骼能耗</text>
+	</string>
+	<string id="ui_mcm_exo_sprint_drain">
+		<text>外骨骼衝刺能耗</text>
+	</string>
+	<string id="ui_mcm_exo_debug">
+		<text>啟用除錯日誌</text>
+	</string>
+	<string id="ui_mcm_exo_drain_desc">
+		<text>外骨骼的能耗倍率</text>
+	</string>
+	<string id="ui_mcm_exo_sprint_drain_desc">
+		<text>衝刺時能耗倍率</text>
+	</string>
+	<string id="ui_mcm_exo_battery_chance">
+		<text>外骨骼電池的發現機率</text>
+	</string>
+	<string id="ui_mcm_exo_battery_chance_desc">
+		<text>穿戴外骨骼的潛行者掉落電池的機率</text>
+	</string>
+	<string id="ui_mcm_exo_debug_desc">
+		<text>在控制檯中啟用除錯日誌</text>
+	</string>
+
+	<string id="ui_mcm_menu_exo_power">
+		<text>動力外骨骼按鍵繫結</text>
+	</string>
+	<string id="ui_mcm_exo_power_keybind">
+		<text>啟用PSU電源能力</text>
+	</string>
+	<string id="ui_mcm_exo_power_keybind_desc">
+		<text>用於啟用外骨骼特殊能力</text>
+	</string>
+</string_table>

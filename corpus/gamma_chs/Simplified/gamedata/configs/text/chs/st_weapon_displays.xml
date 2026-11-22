@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+    <string id="st_placeable_weapon_rack">
+        <text>枪械陈列架</text>
+    </string>
+    <string id="st_placeable_weapon_rack_descr">
+		<text>一个老旧的陈列架, 潜行者们用它在自己的藏身处展示自己心爱的长枪\n \n
+			%c[ui_gray_1]属性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收纳用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 能容纳6把步枪, 冲锋枪或霰弹枪\n</text>
+	</string>
+	
+	<string id="st_placeable_pistol_shelf">
+        <text>手枪陈列架</text>
+    </string>
+    <string id="st_placeable_pistol_shelf_descr">
+		<text>一个老旧的陈列架, 潜行者们用它在自己的藏身处展示自己趁手的手枪\n \n
+			%c[ui_gray_1]属性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收纳用\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 能容纳4把手枪\n</text>
+	</string>
+</string_table>

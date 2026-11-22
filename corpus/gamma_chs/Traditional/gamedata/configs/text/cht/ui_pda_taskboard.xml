@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_pda_accept_task">
+		<text>接受委託</text>
+	</string>
+	<string id="st_pda_refresh_tasks">
+		<text>重新掃瞄</text>
+	</string>
+	<string id="st_pda_next_task">
+		<text>下一個委託</text>
+	</string>
+	<string id="pda_btn_taskboard">
+		<text>委託資訊</text>
+	</string>
+	
+	<string id="st_pda_caption_setup_bounty_task">
+		<text>賞金委託</text>
+	</string>
+	<string id="st_pda_caption_setup_assault_task">
+		<text>襲擊據點</text>
+	</string>
+	<string id="st_pda_caption_setup_spy_task">
+		<text>接應臥底</text>
+	</string>
+	<string id="st_pda_caption_on_init_delivery_task">
+		<text>特異區快遞</text>
+	</string>
+	<string id="st_pda_caption_setup_measure_task">
+		<text>異常區測量</text>
+	</string>
+	<string id="st_pda_caption_on_init_fate_task">
+		<text>失蹤者的命運</text>
+	</string>
+	<string id="st_pda_caption_setup_dominance_task">
+		<text>統治據點</text>
+	</string>
+	<string id="st_pda_caption_setup_fetch_task">
+		<text>尋找物品</text>
+	</string>
+	<string id="st_pda_caption_script">
+		<text>事件任務</text>
+	</string>
+	<string id="st_pda_caption_recover_mutant_data_location">
+		<text>取回變異體數據</text>
+	</string>
+	<string id="st_pda_caption_rest">
+		<text>其他委託</text>
+	</string>
+	
+	
+</string_table>

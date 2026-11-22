@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_addon_companion_quick_menu_tooFar">
+		<text>我的小队听不到我的声音, 我需要靠得更近或通过PDA联系他们.</text>
+	</string>
+
+	<string id="st_addon_companion_quick_menu_followMe">
+		<text>跟上</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_waitHere">
+		<text>等一等</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_stopStealth">
+		<text>停止潜行</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_stealth">
+		<text>潜行</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_stayClose">
+		<text>靠近点</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_stayFar">
+		<text>保持距离</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_fireAtWill">
+		<text>自由开火</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_ignoreCombatButHelpMe">
+		<text>先别打, 来帮我</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_ignoreCombat">
+		<text>不要开火</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_doNotLootCorpses">
+		<text>不要搜刮尸体</text>
+	</string>
+	
+	<string id="st_addon_companion_quick_menu_lootCorpses">
+		<text>搜刮尸体</text>
+	</string>
+	
+</string_table>

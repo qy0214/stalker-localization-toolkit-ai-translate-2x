@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Cold (Clear Sky Leader) -->
+	<string id="find_blackbox_mlr_reward_csky_0">
+		<text>我找到了一個飛行記錄儀. </text>
+	</string>
+	<string id="find_blackbox_mlr_reward_csky_1">
+		<text>啊, 太棒了! 這裡面一定藏著軍隊空襲大沼澤的目的!</text>
+	</string>
+
+
+<!-- Librarian (Clear Sky Barman) -->
+	<string id="story_b_cs_0">
+		<text>能告訴我一些關於冷風的事嗎?</text>
+	</string>
+	<string id="story_b_cs_1">
+		<text>什麼? 冷風? 我們晴空的現任領袖? 他是個令人尊敬的人, 還用多說什麼嗎?</text>
+	</string>
+	<string id="story_b_cs_2">
+		<text>你們為什麼這麼尊重他?</text>
+	</string>
+	<string id="story_b_cs_3">
+		<text>那就要講到在冷風之前的那個傢伙了 -- 列別捷夫, 他是個飽受爭議的人, 順帶說一句, 我可從未見過他, 但據說他在領著晴空軍隊去突襲切爾諾貝利核電站的時候, 完全沒有考慮過其他人的意見, 是啊, 那個傭兵 -- 叫什麼來著 -- 確實幫了很大忙, 但最後又如何呢? 一切都是那麼不值得, 基地裡剩下的兄弟們根本抵抗不了捲土重來的叛節者, 我們在沼澤中蓄勢待發了這麼久, 到頭來都是徒勞... 那些兄弟們在覈電站的犧牲... 也都毫無意義...</text>
+	</string>
+	<string id="story_b_cs_4">
+		<text>看上去大家都對這個列別捷夫很有怨言啊</text>
+	</string>
+	<string id="story_b_cs_5">
+		<text>你覺得呢... 自從我們的部隊回來后,我們還得打持久戰,要把一切都奪回來,沒有冷風的話,我們沒法應付日常生活,他得到了一些獨立潛行者的幫助,還接觸了些分佈在填埋場和封鎖線地區的人,自由潛行者幫助我們走出困境,有一個有魅力的領導者肯定沒有壞處,此外,他下令所有人不準離開這裡,我們願意接受任何幫助,但不用拿生命去冒險. </text>
+	</string>
+	<string id="story_b_cs_6">
+		<text>不管列別捷夫是誰,做了什麼,你已經不是以前的那個陣營了. </text>
+	</string>
+	<string id="story_b_cs_7">
+		<text>這是你的想法,有部分對吧,目前,我們沒有什麼戰略目標,除了... 呃... 現在我們停止閑聊,開始交易吧. </text>
+	</string>
+	<string id="story_b_cs_8">
+		<text>好吧. </text>
+	</string>
+
+	<string id="story_dog_0">
+		<text>那是誰的變異犬?</text>
+	</string>
+	<string id="story_dog_1">
+		<text>那是沼澤巫醫的狗,他讓冷風保護它,因為它有點老了. </text>
+	</string>
+	<string id="story_dog_2">
+		<text>哦,表面上看,好像它不需要這樣. </text>
+	</string>
+	<string id="story_dog_3">
+		<text>外表有時是會騙人的,這隻寵物是個善良的動物,我給你講講這類犬的趣事?</text>
+	</string>
+	<string id="story_dog_4">
+		<text>請講. </text>
+	</string>
+	<string id="story_dog_5">
+		<text>變異犬並不是狗的後代,儘管他們有相同的祖先,紀律團研究它們的時候意識到它們有點狼的基因. </text>
+	</string>
+	<string id="story_dog_6">
+		<text>你是怎麼知道的?</text>
+	</string>
+	<string id="story_dog_7">
+		<text>我的職業性質,我會收集各種見聞,北邊有個類似沼澤的地方叫扎頓,我聽說有艘破船里住著一個怪人,他也有一隻變異犬,也許你可以去探探,看看是不是真的,只要你不嫌遠. </text>
+	</string>
+	<string id="story_dog_8">
+		<text>就是貫穿特異區的距離,也許什麼時候會路過一下. </text>
+	</string>
+	
+	<string id="about_dog_marsh_part_two_0">
+		<text>我和諾亞談過了,就是你之前提到的那個"老怪人". </text>
+	</string>
+	<string id="about_dog_marsh_part_two_1">
+		<text>哦,我差點忘了,真的嗎,他也馴服了一隻變異犬嗎?</text>
+	</string>
+	<string id="about_dog_marsh_part_two_2">
+		<text>是的,它叫萊茜,她有兩隻小變異犬,它們沒有任何攻擊性. </text>
+	</string>
+	<string id="about_dog_marsh_part_two_3">
+		<text>還有小變異犬嗎? 從沒在特異區看到過,嗯,謝謝你的見聞,現在我知道特異區有更多友好的變異犬在繁衍了,這裡有些你接下來旅途的補給品... 如果你需要,我可以告訴你關於軍事倉庫和紅森林的路線情報,這些是和我們一樣是以前的見證. </text>
+	</string>
+
+	
+<!-- (Clear Sky guide) -->
+	<string id="meet_guid_marsh_csky_0">
+		<text>嘿,你傻傻站這裡幹嘛?</text>
+	</string>
+	<string id="meet_guid_marsh_csky_1">
+		<text>我想傻站這裡和你沒有關吧... 嗨,開個玩笑,因為我是當地的嚮導,所以我要經常出現,還有別總盯著我的裝置,這樣我會好受些,我可以帶你去一些你想去的地方,沼澤的哨塔,水泵站,老教堂和機械大院,同時還有封鎖線區的菜鳥村,農業研究所和酒吧,當然,不是免費的. </text>
+	</string>
+
+	<string id="meet_guid_marsh_csky_list_0">
+		<text>能再說一遍嗎?</text>
+	</string>
+	<string id="meet_guid_marsh_csky_list_1">
+		<text>記住: 哨塔 300盧布,水泵站和老教堂 500盧布,機械大院 800盧布,菜鳥村 1500盧布,農業研究所 2000盧布,酒吧 4000盧布. </text>
+	</string>
+
+	<string id="travel_guid_marsh_csky_0">
+		<text>我要你帶我去個地方. </text>
+	</string>
+	<string id="travel_guid_marsh_csky_1">
+		<text>行啊,去哪?</text>
+	</string>
+	<string id="travel_guid_marsh_csky_2">
+		<text>哨塔,%c[d_orange][300 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_3">
+		<text>水泵站,%c[d_orange][500 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_4">
+		<text>老教堂,%c[d_orange][500 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_5">
+		<text>機械大院,%c[d_orange][800 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_6">
+		<text>菜鳥村,%c[d_orange][1500 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_7">
+		<text>農業研究所,%c[d_orange][2000 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_8">
+		<text>酒吧,%c[d_orange][4000 盧布]</text>
+	</string>
+	<string id="travel_guid_marsh_csky_9">
+		<text>算了吧. </text>
+	</string>
+
+	<string id="mar_csky_guide_background_1">
+		<text>我嗎? 哦,我做晴空嚮導已經超過7年了,也就是說,早些年,像2011年,我幾乎都在沼澤,很少帶潛行者去更遠的地方,那個該死的奄奄一息的傭兵被在沼澤里發現后,一切都發生了變化,
+		\n我們的頭兒不相信他--每次他想進入或離開我們的基地,都要我矇住他的眼睛,然後在短短數週內,他就說服了晴空,還有我們大部分人,衝進了核電站,
+		\n不必多說,他和我們的大部分人都沒有從那場浩劫中恢復過來,都是因為那個狗日的傭兵. </text>
+	</string>
+	<string id="mar_csky_guide_background_2">
+		<text>你是在說刀疤臉嗎?</text>
+	</string>
+	<string id="mar_csky_guide_background_3">
+		<text>是的,相當傳奇,除了他臉上的傷疤,我還記得他那雙恐怖的眼睛,那傢伙把我嚇壞了,卡蘭查教授告訴我,他能以某種方式抵禦能量風暴,不僅如此,每次過後他的身體變強壯了,腦袋也變渾了,不管怎麼說,他似乎沒有成為黑石中偉大的一員,也沒那傾向. </text>
+	</string>
+	<string id="mar_csky_guide_background_4">
+		<text>哦,我想是信念吧. </text>
+	</string>
+	
+	
+<!-- (Clear Sky Mechanic) -->
+	<string id="marsh_stalker_tech_pragmatic_research_0">
+		<text>晴空是不是很熱衷於研究調查?</text>
+	</string>
+	<string id="marsh_stalker_tech_pragmatic_research_1">
+		<text>這是肯定的,就像生態學家一樣,我們一直試圖更好的瞭解特異區,但不侷限於觀察,我們更喜歡把獲得的知識用於實際,比如,鑲嵌在防彈衣中的神器可以減輕重量,吸血怪的凝血劑可用於生命維持系統,防止戰鬥中失血,還有分析肉石神器可以幫助我們開發出更先進的瞄準系統,這只是冰山一角而已. </text>
+	</string>
+
+	
+	<string id="cit_doctor_hello_dialog_11">
+        <text>你... 你是誰? 你要幹什麼?</text>
+    </string>
+    <string id="cit_doctor_hello_dialog_21">
+        <text>我已經告訴你所有我知道的了. </text>
+    </string>
+	<string id="cit_doctor_main_dialog_0">
+		<text>我聽說你有關於特異區的情報. </text>
+	</string>
+	<string id="cit_doctor_main_dialog_1">
+		<text>哦...調查特異區的神秘,明白嗎？我可能有你想要的情報,但我希望你做點什麼來作為回報. </text>
+	</string>
+	<string id="cit_doctor_main_dialog_11">
+		<text>繼續</text>
+	</string>
+	<string id="cit_doctor_main_dialog_2">
+	<text>很多人嘗試這個任務,但他們都失敗了,包括我的親愛的朋友...\n有一群精英潛行者在調查特異區內的某種謎團或陰謀,但是隻有史特洛克是唯一的倖存者. 他從那次冒險中回來了,我上次見到他時,我的朋友明顯變了,某事或某人明顯改變了他...哦,是的...\n有些東西不想被發現——特異區本身似乎掩蓋了它. 你明白嗎？</text>
+	</string>
+	<string id="cit_doctor_main_dialog_21">
+		<text>我還想知道更多,老頭子</text>
+	</string>
+	<string id="cit_doctor_main_dialog_3">
+		<text>那就讚了 愚蠢,但令人欽佩...</text>
+	</string>
+	<string id="cit_doctor_main_dialog_31">
+		<text>你會告訴我嗎？ </text>
+	</string>
+	<string id="cit_doctor_main_dialog_4">
+		<text>非常好年輕人. 當史特洛克上次來拜訪時,他給了我一把鑰匙和一個位於普里皮亞奇的藏匿處的座標. \n 他說的是關於黑石的事情,我不太瞭解,我也不太確定他是否瞭解. 來,拿去. 還有一件事...他花了很多時間在地下實驗室尋找陰謀的線索,我相信是某種秘密掩飾. 也許你會在那裡找到你的答案. </text>
+	</string>
+	<string id="cit_doctor_main_dialog_41">
+		<text>我知道了,謝謝,感謝你的幫助. </text>
+	</string>
+	<string id="cit_doctor_main_dialog_5">
+		<text>走吧,讓我這個老頭子安靜的待會兒. </text>
+	</string>
+
+	<string id="mar_base_owl_stalker_trader_start_dialog_1">
+		<text>需要補給或裝備還是情報?... 或者你想出售情報?</text>
+	</string>
+	    <string id="mar_smart_terrain_base_doctor_need_health_care_0">
+        <text>我需要醫療救助. </text>
+    </string>
+    <string id="mar_smart_terrain_base_doctor_need_health_care_1">
+        <text>好吧,讓我來給你做些基礎治療. </text>
+    </string>
+    <string id="mar_smart_terrain_base_doctor_need_health_care_11">
+        <text>[繼續... ]</text>
+    </string>
+    <string id="mar_smart_terrain_base_doctor_need_health_care_111">
+        <text>很好,我做完了,你應該可以走了. </text>
+    </string>
+    <string id="mar_smart_terrain_base_doctor_need_health_care_2">
+        <text>讓我看看... 沒有傷口,也沒有任何輻射病的跡象,我認為一切都很正常,你可以走了. </text>
+    </string>
+    <string id="mar_smart_terrain_base_doctor_start_1">
+        <text>嗯?</text>
+    </string>
+	<string id="marsh_stalker_barmen_start_dialog_1">
+		<text>新人啊! 大家叫我萊伯利安,我是本地的酒保,我很樂意回答你的問題,有時我發佈一些活兒,還有一些小道訊息,經常來轉轉. </text>
+	</string>
+	<string id="marsh_stalker_barmen_start_dialog_2">
+		<text>嘿,潛行者,你想要什麼?</text>
+	</string>
+	<string id="marsh_stalker_tech_start_1">
+		<text>你好,潛行者,有什麼可以效勞的? 在特異區很難找到好的工具,但我仍然可以修復你的裝備並做一些小小的升級. </text>
+	</string>
+	<string id="marsh_stalker_medic_background_0">
+        <text>說說你自己吧. </text>
+    </string>
+    <string id="marsh_stalker_medic_background_1">
+        <text>哦,我是E.F.卡蘭查教授. 與列別捷夫和蘇斯洛夫一樣,我也是"晴空"的創始成員之一. 不像他們在切爾諾貝利核電站中衝鋒陷陣,我留在了隱秘的基地中,愿他們安息. 我是組織的首席研究員,大部分時間都在做神器實驗,研究變異怪物和觀察異常現象. 有時我會與諾維科夫合作,為我的工作成果尋找實際的應用,此外,我還是當地的醫生. 如果你在旅途中受傷,或有稀有的樣本,那麼,就可以來找我. </text>
+    </string>
+
+    <string id="marsh_stalker_medic_about_people_0">
+        <text>你如何評價潛行者?</text>
+    </string>
+    <string id="marsh_stalker_medic_about_people_1">
+        <text>他們中的許多人自以爲了解特異區. 但很不幸,他們都錯了. 有些人覺得只會滋生邪惡,另一些人則稱之為奇蹟,而有些人則確信在這裡能得到榮華富貴... 他們都是被人性意識所誤導了,透過人類的感知來看的話. 特異區毫無疑問令人費解. 對我們來說,一切嘗試還為時過早,潛行者和政府都有點草率和無知,曾經,我也認為自己擁有過於常人的知識,結果付出了沉重的代價. </text>
+    </string>
+
+    <string id="marsh_stalker_medic_about_zone_0">
+        <text>你對特異區知道些什麼?</text>
+    </string>
+    <string id="marsh_stalker_medic_about_zone_1">
+        <text>小夥子,我們研究特異區已經有好幾年了,但仍然毫無頭緒. 我可以告訴你,特異區的異常絕對不是自然現象,而是... 一些野心過大的人所做的無用功. 而且我們無法扭轉它的影響. 特異區無法摧毀,也不會自行消失. 還有,長久經驗來看,任何遏制或遏制它的企圖都將產生災難性的後果. 目前我們--晴空相信只有一條路,人類與特異區只能共存. </text>
+    </string>
+    <string id="marsh_stalker_medic_about_zone_2">
+        <text>如果沒有每隔幾天的能量風暴,可能還會好些,但這究竟是什麼原因導致的?</text>
+    </string>
+    <string id="marsh_stalker_medic_about_zone_3">
+        <text>我該怎麼解釋呢? 這麼說吧: 任何複雜的自然系統,包括這個特異區,如果沒有不穩定因素的干擾都會達到一個平衡點. 幾年來特異區就是很穩定的存在,沒有明顯的失衡... 而現在,就像你說的那樣,能量風暴經常席捲特異區,這個系統正在變得扭曲... 像出現故障似的,特異區一個接一個的釋放爆發. 這些能量使我的感測器瘋狂震盪! 但是很不幸,列別捷夫和蘇斯洛夫做出了悲壯的犧牲,但他們無法永遠扭轉這一趨勢,詭異的是,這種異常也不是自然產生的,都是人為的. </text>
+    </string>
+	<string id="marsh_stalker_barman_background">
+		<text>我是酒保. 我提供飲料、食物,管著這臺收音機. 這不是個刺激的工作,但比外面的要好得多. 我已經在這裡有好些年了,當能量風暴發生時我陷入了沼澤,差不多是困在了這裡. 我像多數人一樣往南,是少數幾個在土匪槍下倖免的人之一,我搜索了這個基地,並加入了晴空. 要不是這樣早死在哪個水坑裡了. 然後花了幾周的時間擊退了叛節者,並把他們趕出了瞭望哨,直到冷風接手后我才做上了酒保. 我很自然的就接受了,因為我寧願喝醉也不願挨槍子兒. 廢話少說了! 來杯冰啤怎麼樣?</text>
+	</string>
+	<string id="marsh_stalker_trader_background">
+		<text>我叫斯波, 他們都叫我"孢子", 一年前我接手了這份工作,像所有人一樣來特異區尋找財富,然後遇到了一個叫"巧手"尼博的潛行者,我發現我們有很多共同的才能,就是有很多外部人脈,很擅長在特異區販賣商品或資訊,所以當黑石再次出現時,我們的生意轉移到了南方,我被"巧手"尼博推薦給冷風后,在這裡找到了一份不錯的工作,你知道嗎,"巧手"尼博當時是晴空的一員,當然,"巧手"尼博又回到扎頓在斯卡多夫斯克上幫忙,真是個瘋子! 但他留給了我一個小營生,我現在可以通過一條沒有軍隊的走私路線穿過沼澤,而晴空是我的首選客戶,如果你在邊界靠北,你可以花點時間去見見"巧手"尼博,直到現在,他仍然只向同道潛行者兜售最稀有的武器和防具,只要價錢到位,他會幫你搞到最好的裝備. </text>
+	</string>
+	<string id="marsh_stalker_tech_background">
+		<text>我叫諾維科夫,但有些人叫我格雷,我是保證裝備正常執行的技術員,潛行者的槍械出現問題是都會來找我,在冷風接管很久之前就在這裡工作了,當一切變得槽糕后,我找了個環境還尚不穩定的地方,和尤皮特附近的生態學家一起合作,我在那裡生活了很多年,直到有一天,我聽說這些傢伙不知何故渡過了難關,合同一到期,我就回去了,他們毫無疑問接納了我,我的技能還有和生態學家的關係都是他們需要的,我促使我們和他們合作,這樣就可以繼續我們之前的研究了,若果你感興趣的話,可以和斯波談談,他們一直在尋找當地異常點的嚮導. </text>
+	</string>
+	<string id="marsh_stalker_leader_background">
+		<text>從哪裡開始講呢, 他們稱我為冷風, 我是晴空的領導, 很久以前是個酒保,直到我得知列別捷夫、蘇斯洛夫和其他指揮官的情況后,就把這個榮譽交給了萊伯利安,在對最近一批走私的伏特加酒進行了長時間緊張的談判后,我們的部隊認為,我是最適合接管的人,從那以後,我就一直做著一把手. </text>
+	</string>
+	<string id="marsh_csky_history_ask1">
+		<text>跟我講講晴空. </text>
+	</string>
+	<string id="marsh_csky_history_ask2">
+		<text>你想知道些什麼?</text>
+	</string>
+	<string id="marsh_csky_history_destroyed1">
+		<text>晴空沒有被消滅嗎?</text>
+	</string>
+	<string id="marsh_csky_history_destroyed2">
+		<text>差一點兒,但我們挺過來了. 雖然我們大多數人都在電廠被殺了,但不是所有人都是. 許多人仍在我們的其他領土內,這些領土後來因能量風暴后的異常現象而與特異區其他地區隔絕. 當意識到幾乎被困在沼澤這裡無路可逃時,一切就變得更糟了,一夜之間,可靠的潛行者變成了土匪,剩下的人則逃到我們的基地,或靠吃變異生物為生,我們僱傭了很多人,食品商店確保了他們不會造反,這之後,顯然我們需要新的領袖,我挑起了重擔,並請萊伯利安替代我原先的位置,自從他加入以來,很短的時間內就為自己贏得了很高的聲望,和土匪對峙了幾個月后,我們俘虜了他們多數人,但是這並沒有阻止軍隊入駐的想法,直到現在他們還安插眼線要接管這裡. </text>
+	</string>
+	<string id="marsh_csky_history_goal1">
+		<text>那你目前有什麼目標嗎?</text>
+	</string>
+	<string id="marsh_csky_history_goal2">
+		<text>問題是,我們沒有總體方針,列別捷夫是個雄心勃勃的傢伙,他認為我們可以發現特異區所有骯髒的小秘密,用來馴服或控制它,然而,這並沒有完全成功,如今,我們做的事情基本上和以前一樣,狩獵變異怪物,收集神器並進行研究. 我們甚至得到了聯合國的支援,在特異區的黃金時代進行了我們自己的研究. 我們從他們的生態學家和當地生態學家那裡獲得了武器、研究裝置,甚至是見解,以幫助我們努力揭開特異區的秘密. 有時還會在一些古老的實驗室找些有意思的檔案,但我們不和別的陣營搶地盤,也沒有計劃在短時間內發動戰役,我們和紀律團不同,我們不破壞特異區,我們也不想像那些來自自由軍的人那樣,像開個遊樂園一樣享樂,現在我們就是共存,保持低調,就和之前一樣.尤其是在這些艱難時期,因為黑石又回來了...這不再是特異區的黃金時代,聯合國正在慢慢退休,當地的 PMC 受到新威脅的挑戰. 甚至有傳言說有一個比黑石還要瘋狂的新邪教. 但老實說,我們離這些麻煩還很遠. 最好保持低調,就像我說的那樣. </text>
+	</string>
+	<string id="marsh_csky_history_goal3">
+		<text>所以,晴空成員現在基本上想做什麼就做什麼?</text>
+	</string>
+	<string id="marsh_csky_history_goal4">
+		<text>可以這麼說吧,我們都是志同道合的人,所以即使我不主動告訴他們要做什麼,他們也會堅持完成自己的任務,到目前為止我們工作得很好. </text>
+	</string>
+	
+	<string id="cit_doctor_health_care_0">
+		<text>醫生,我需要醫療救助. </text>
+	</string>
+	<string id="cit_doctor_health_care_1">
+		<text>好的,過來,我來看看. </text>
+	</string>
+	<string id="cit_doctor_health_care_11">
+		<text>有多糟糕?</text>
+	</string>
+	<string id="cit_doctor_health_care_111">
+		<text>看來你需要包紮一下,我無法消除輻射,但可以處理傷口. </text>
+	</string>
+	<string id="cit_doctor_health_care_112">
+		<text>你似乎沒有受傷或輻射,一切都好吧,小夥子. </text>
+	</string>
+	<string id="cit_doctor_health_care_1111">
+		<text>好吧,醫生,有勞了. </text>
+	</string>
+	<string id="cit_doctor_health_care_1112">
+		<text>感謝幫助. </text>
+	</string>
+	<string id="cit_doctor_health_care_11111">
+		<text>稍等... 現在應該沒事了,你可以走了. </text>
+	</string>
+	
+	
+	
+	<string id="st_psd_end_1">
+		<text>終於搞定! 大家清理一下戰場然後休息一下! ...謝謝你的幫助, 潛行者!</text>
+	</string>
+	<string id="st_psd_end_2">
+		<text>媽的, 領導又在牢騷了, 他讓我來接管指揮, 幫個忙吧兄弟們!</text>
+	</string>
+	<string id="st_psd_intro">
+		<text>等等... 有人過來了!... 呃, 沒事, 不是土匪...
+		\n喂! 你有什麼事就快點, 不然會有麻煩的</text>
+	</string>
+	<string id="st_psd_start">
+		<text>準備好! 大家就位! 他們來了!</text>
+	</string>
+	<string id="st_psd_warning">
+		<text>離開戰鬥太遠的話, 別人會認為你在逃跑!</text>
+	</string>
+	<string id="st_psd_escape">
+		<text>你臨陣脫逃了, 留下晴空獨自抵禦土匪</text>
+	</string>
+	
+	
+	<string id="st_psd_stage_0"><text>到達水泵站 </text></string>
+	<string id="st_psd_stage_1"><text>和守衛的指揮官談談 </text></string>
+	<string id="st_psd_stage_2"><text>到倒下的狙擊手位置 </text></string>
+	<string id="st_psd_stage_3"><text>生存下來!</text></string>
+	<string id="st_psd_stage_5"><text>向指揮官報告 </text></string>
+	<string id="st_psd_stage_6"><text>回到冷風那裡拿獎賞 </text></string>
+	
+
+	<string id="st_psd_dialog_1"><text>你最好快點行動,這裡很快就會一團糟 </text></string>
+	<string id="st_psd_dialog_2"><text>冷風派我來抵禦土匪 </text></string>
+	<string id="st_psd_dialog_3"><text>太好了,我們真的需要幫助,我們的狙擊手在上次的襲擊中被殺了,我們需要有人去把他們的頭打爆. </text></string>
+	<string id="st_psd_dialog_4"><text>OK,我這就上去. </text></string>
+	<string id="st_psd_dialog_5"><text>謝謝你的提醒,我走了. </text></string>
+	<string id="st_psd_dialog_6"><text>怎麼樣?</text></string>
+	<string id="st_psd_dialog_7"><text>我馬上就來,把東西準備好. </text></string>
+	<string id="st_psd_dialog_8"><text>好了,今天就到這裡,你的幫助至關重要,下次見. </text></string>
+	<string id="st_psd_dialog_9"><text>好的,再見. </text></string>
+	<string id="st_psd_dialog_10"><text>我想成為突擊隊長,但不像是這樣... </text></string>
+	<string id="st_psd_dialog_11"><text>真遺憾啊. </text></string>
+	
+</string_table>

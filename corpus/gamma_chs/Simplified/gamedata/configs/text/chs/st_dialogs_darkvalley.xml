@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Olivius (Bandit Trader) -->
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_start_dialog_1">
+		<text>嘿, 伙计!我卖各种各样的零碎, 如果你有兴趣的话还可以给你提供几个工作. 这周围的小伙, 口袋里有点闲钱了就来找我吧!</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_start_dialog_2">
+		<text>嘿, 伙计, 你有啥需要的? 还是想找个工作?</text>
+	</string>
+	
+	<string id="information_about_stash_7_4_bandit_trader_0">
+		<text>我想要点藏匿物的情报, 你搞到了么?</text>
+	</string>
+	<string id="information_about_stash_7_4_bandit_trader_1">
+		<text>该死, 你怎么知道的? 我刚拿到情报别人都还不知道呢. 随便吧, 7000卢布, 它就是你的了.</text>
+	</string>
+
+	<string id="information_about_stash_7_4_bandit_trader1_0">
+		<text>我要了. %c[d_orange][7000 卢布]</text>
+	</string>
+	<string id="information_about_stash_7_4_bandit_trader1_1">
+		<text>去你妈的.</text>
+	</string>
+
+	<string id="bandit_trader_st_0">
+		<text>你为啥叫"枪子儿"这种烂名字?</text>
+	</string>
+	<string id="bandit_trader_st_1">
+		<text>你说啥? 小逼崽子? 我们很熟吗? 干啥啥不行, 装逼倒挺在行... 爸爸我要是不管你们这样的货色, 你们装逼能装的动吗? 早就在外面曝尸荒野了! 我绰号爱叫什么关你屁事啊~ 这傻屌...</text>
+	</string>
+	<string id="bandit_trader_st_2">
+		<text>嘿, 冷静冷静 - 抱歉, 我不是故意的. 我只是有点好奇罢了</text>
+	</string>
+	<string id="bandit_trader_st_3">
+		<text>你给我记清楚了, 不是所有人都会给你道歉的机会... 算了! 看在你是个傻屌的份上, 我懒得理你</text>
+	</string>
+	<string id="bandit_trader_st_4">
+		<text>好吧好吧, 我只是想知道这屌炸天的外号怎么来的?</text>
+	</string>
+	<string id="bandit_trader_st_5">
+		<text>如果我告诉你就能让你停止逼逼的话, 那好吧, 苏联时期的时候我还关在号子里头, 因为我想要过点好生活... 所以就做了点非法交易, 然后就被抓了, 出狱之后, 我重操旧业, 建立新的人脉, 继续非法生意做了三年, 我又进去了... 等我第二次出来的时候, 苏联已经消失了... 你知道这个故事里最悲伤的是什么么?</text>
+	</string>
+	<string id="bandit_trader_st_6">
+		<text>不知道, 从我记事起苏联就不存在了</text>
+	</string>
+	<string id="bandit_trader_st_7">
+		<text>第一次我进监狱是因为"生意"... 或者老话讲就是"投机倒把", 那时候, 任何一个成功的生意人都会被扔进监狱, 相信我, 那地方对你的屁眼不太友好</text>
+	</string>
+	<string id="bandit_trader_st_8">
+		<text>[继续...]</text>
+	</string>
+	<string id="bandit_trader_st_9">
+		<text>但当我第二次出狱的时候一切都崩溃了, 我发现那么多人和我一样做着同样的勾当, 却还留着完好的屁眼, 这就是最悲伤的事情---生不逢时, 于是当特异区出现后, 我立马就决定自己过来, 我不想再错过这样的机会</text>
+	</string>
+	<string id="bandit_trader_st_10">
+		<text>[继续讲...]</text>
+	</string>
+	<string id="bandit_trader_st_11">
+		<text>所以难道还不明显吗? 他们叫我"枪子儿"奥利维斯, 就因为我这里的家伙事儿能武装一个连! 你只要跟我搞好关系, 就肯定比别人活得久, 我对这里太熟了, 在"匪王"苏坦来之前很久就在这混了... 就算有一天他走掉, 我也还会在这里</text>
+	</string>
+	<string id="bandit_trader_st_12">
+		<text>牛逼! 感谢你告诉我这些, 再一次向您道歉, "枪子儿"大爷</text>
+	</string>
+
+	
+<!-- (Bandits Mechanic) -->
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_start_dialog_1">
+		<text>你今天需要点啥, 伙计? 我立马能帮你修好. 另外如果你发现任何加密的PDA, 那就卖给我.</text>
+	</string>
+	
+	<string id="bandit_mechanic_st_0">
+		<text>分享下你的故事, 兄弟.</text>
+	</string>
+	<string id="bandit_mechanic_st_1">
+		<text>你想让我被抓住把柄还是什么? 随便吧, 坐下放松吧.</text>
+	</string>
+	<string id="bandit_mechanic_st_2">
+		<text>[继续...]</text>
+	</string>
+	<string id="bandit_mechanic_st_3">
+		<text>以前我的脸上总是自信满满... 我在一家工厂当机械工程师, 公司认为我是这行里最好的专家. 他们还给了我奖品和证书.</text>
+	</string>
+	<string id="bandit_mechanic_st_4">
+		<text>那你是怎么失去这些的? 我猜你是想干点什么勾当?</text>
+	</string>
+	<string id="bandit_mechanic_st_5">
+		<text>嘿, 我还是真的很怀念和女孩子们一起上私人瑜伽课的时光的, 如果你懂我的意思的话!但是不, 并不是因为这些.</text>
+	</string>
+	<string id="bandit_mechanic_st_6">
+		<text>啥? 所以他们是因为你突然瘸了所以叫你"拐子"林匹么?</text>
+	</string>
+	<string id="bandit_mechanic_st_7">
+		<text>你他妈真是个二比, 找死么? 我们继续, 在一次很长时间的轮班后我真的很想和伙计们一起去酒吧. 所以我去了, 那天喝了太多太多的酒... 老板把我逮了个正着, 然后我就像个蠢屌丝一样被解雇了.</text>
+	</string>
+	<string id="bandit_mechanic_st_8">
+		<text>生活就是个婊子.</text>
+	</string>
+	<string id="bandit_mechanic_st_9">
+		<text>我怀疑你有没有真见过这婊子. 后来我找了份普通锁匠的工作, 找到了一个名叫维特卡的新朋友. 这份新工作几乎没什么工资, 但是谢天谢地, 我之前挣的钱够我喝上好久. 有一次我们喝多了到处鬼混, 我用螺丝刀捅了他一下... 我甚至不记得我为啥要这么做 - 幸好他没死. 我在一个有着最高戒备的监狱待了几年之后出来了, 我的婊子老婆卖掉了所有的东西然后跑路了. 我把所有的钱都花在了喝酒上, 最后进了贫民窟... 直到特异区的出现. 我听说在这里人人平等:我们在外面都是被抛弃的废物. 我在填埋场遇到了这些家伙 - 他们发现我是个有用的技工, 便让我待在了那儿. 那真是我生命中最美好的时光... 一大堆的枪和伏特加.</text>
+	</string>
+	<string id="bandit_mechanic_st_10">
+		<text>但是这里不是填埋场啊.</text>
+	</string>
+	<string id="bandit_mechanic_st_11">
+		<text>惊人的观察力! 我一直以来都以为你是个瞎子! 我们还没说到那部分呢, 搅屎棍. 随着那场超大的能量风暴的来临, 我们像小女孩一样躲了起来.\n \n在那噩梦结束之后, 我们开了个关于到底该特么去哪里的: 当时切断罗斯托克的异常现象突然消失了, 所以我们受到了来自北境的巨大压力, 而一些古怪的牧师正试图把我们从南境赶出去.更糟的是, 我们当时的老板, 尤加, 刚死了, 唯一有勇气让我们在一起的就是我们那该死的酒保.\n \n他把我们分成几组, 让我们走不同的路在黑谷会合. 然后, 当然, 几个月后, 他死于一个失忆的枪手之手, 让我们在接下来的几年里自谋生路... 那段时间里"枪子儿"奥利维斯一直在帮我们, 但直到"匪王"苏坦我们才重新振作起来.</text>
+	</string>
+	<string id="bandit_mechanic_st_12">
+		<text>真是个有意思的故事.</text>
+	</string>
+
+
+<!-- Sultan -->
+	<string id="zat_b7_bandit_boss_sultan_intro_0">
+		<text>记住. 我是"匪王"苏坦. 这里所有的一切都在我的控制之下或者将要被我控制. 如果你想过上好日子, 那就得为我工作. 如果你不这么做, 那么你就会过上屎一样的生活. 这就是我们的规矩, 朋友.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_0">
+		<text>和我聊聊你在这里的生活.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1">
+		<text>作为领袖, 这不是在公园散步, 这是肯定的... 你到底想知道什么?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1111">
+		<text>你在这里干什么?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11111">
+		<text>我们盯着那些潜行者. 你必须承认, 你们中有一大半的人更像是小孩子而不是个男人. 你们带着些愚蠢的梦想来到特异区, 或者是来扮演英雄, 或者仅仅是因为在外面的生活过得不好. 但是你们根本没有意识到特异区里等待着你们的是什么:主要来说, 就是死神. 这些菜鸡就是我们的目标. 我们在填埋场找到他们, 抢走他们的装备然后把他们送回封锁线. 一些聪明的人会在边界外就把装备准备好. 而那些木鱼脑袋怎么办呢? 我们保护他们, 我们从他们那征税. 我告诉你, 没有人敢进入我们的领土;军队不可能, 佣兵不可能, 甚至变异生物也不可能.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1112">
+		<text>是什么驱使你来到特异区的?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11121">
+		<text>命运. 我们是来找潜行者们的, 不然呢? 没有我们维持秩序的话, 这简直就是一团糟. 你搜刮东西, 你留着它们. 但是谁来为你交税呢? 你懂的, 和平和安全税的关系. 比如说就是有人在我们的监视下搜刮异常点, 杀死变异生物. 如果他没事, 那我们就过去宰他一刀... 这是为了维持秩序, 你明白吧.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1113">
+		<text>你是怎么成为大佬的?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11131">
+		<text>该从哪儿开始讲呢... 我想可以追溯到我高中时期. 我有个好朋友, 可以说是最好的朋友. 我们一起出去抽烟喝酒什么的. 但是他却开始追求更多的刺激. 他染上了毒品:一开始先是大麻, 后来是罂粟, 再到他开始赚钱就变成了古柯碱. 我告诉他"你必须戒掉这鬼东西, 托林, 不然就太迟了". 但是他不听. 后来有一天他拿到了一些不好的货, 害了他. 我去找到了他的毒贩, 为他打抱了不平... 然后我就进去了, 拍了照, 被关了起来, 地狱在向我招手;斗殴, 帮派斗争, 捅人肚子... 出来后, 我把这些都抛到了脑后, 把目光放在了特异区. 我花了几个月的时间苦练, 然后升职了. 所以现在我负责维护这里的秩序.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1114">
+		<text>你对潜行者有什么看法?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11141">
+		<text>他们都不太一样. 比如, 有些是一星期都待不住的小流氓, 有些是想来赚钱的... 还有些, 是流窜于封锁线两头的好人. 我们抢劫第一种人, 向第二种征税. 至于最后一种... 好吧, 我们就尽量不去妨碍他们. 但是可惜你并不能很快辨别出他们到底是哪一种.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1115">
+		<text>你觉得"枪子儿"奥利维斯怎么样?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11151">
+		<text>大到可以当我叔叔... 或者是我爷爷. 有时很难分辨. 坚实的家伙. 他欠我一条命, 因为我救了黑谷, 我不会让他忘记这一点... 他有时会有点自大, 但他现在已经是家人了. 如果没有他的关系, 这个山谷就不一样了.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_1116">
+		<text>哦, 当我没说, 别在意.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_about_11161">
+		<text>你自便.</text>
+	</string>
+	
+	<string id="sultan_st_0">
+		<text>你一定是"匪王"苏坦吧</text>
+	</string>
+	<string id="sultan_st_1">
+		<text>是啊, 孩子, 没错, 我的名声是应得的. 在关键时刻从扎顿赶来. 清除了聚集在这里的变种生物, 拯救了守卫者, 招募他们加入我的团伙... 整栋楼都重新开工了. 这里的很多人还欠我一条命, 而且他们不会忘记.\n \n当然, 也不全是阳光和彩虹. 不知道你一开始是否知道我为什么要从扎顿出发.</text>
+	</string>
+	<string id="sultan_st_2">
+		<text>是的, 我听说了. 这些家伙连规矩都不懂, 应该多注意这种人. 不管哪混蛋叫啥名, 我一定会给他起个新名字的.</text>
+	</string>
+	<string id="sultan_st_3">
+		<text>他好像叫啥名亚历山大啥名的 - 别去招惹他. 他的屌这么小, 而他的屁眼却像是个金属迷宫; 就算你有世界上最大的老二, 你也进不去.\n \n别担心, 他会得到报应的. 只要相信你的"匪王"苏坦.</text>
+	</string>
+	<string id="sultan_st_4">
+		<text>知道了, "匪王"苏坦. 我相信你. 对这里的人有什么建议吗?</text>
+	</string>
+	<string id="sultan_st_5">
+		<text>很简单. 除了手臂上有骷髅章的自己人之外, 谁都别相信. 大多数潜行者都是一有机会就去干你, 所以不要用一颗柔软的心给他们机会. 现在, 有些雇佣兵是好的, 自由军也是, 但不要把接受误认为爱; 如果他们认为他们能逃脱惩罚, 他们还是会欺骗你的. 不过你看起来很聪明, 所以你很快就会自己想明白的. 只要记住; 如果你觉得有什么不对劲, 不要等着别人来告诉你, 赶紧离开那里. 而是让你活着回来, 这样那些想抓你的告密者就不会对你的家人下手了.</text>
+	</string>
+	<string id="sultan_st_6">
+		<text>谢谢, "匪王"苏坦. 避难所呢? 特异区还有其他类似的安全屋吗?</text>
+	</string>
+	<string id="sultan_st_7">
+		<text>特异区里没有这样的地方, 孩子, 但是别浪费这个建议. 我们北边是卡车墓园.如果你有了现金, 哈巴狗可以安全地带你过去; 他通常在楼下"枪子儿"奥利维斯附近. 否则, 你需要通过辐射, 变种生物和军事巡逻... 但如果你去了, 你会发现有几个兄弟在军事仓库的检查站工作. 他们会保护你们的安全, 在北方的自由军也会保护你们. 不过要小心, 别在显眼的地方惹卢卡什喜欢的人, 否则你在绿狼里的日子就屈指可数了.\n \n我们西边是填埋场. 在旧火车机库里有一个退休的猎人, 在他东北方向有几个通常很酷的跳蚤交易商, 但他们的主顾可能太前卫了, 你可能不喜欢. 注意那些大型潜行者, 尤其是纪律团, 他们喜欢在那里游荡.\n \n现在, 在南方, 有一片巨大的森林叫做黑暗小径 - 非常荒凉的地方, 你会不时有士兵在巡逻, 独行者在闲逛. 相当大的迷宫. 我们以前用它在封锁线的车站和我们的人碰头, 但现在我们用牧场, 去西南部.</text>
+	</string>
+	<string id="sultan_st_8">
+		<text>听起来这大家庭过得很好啊.</text>
+	</string>
+	<string id="sultan_st_9">
+		<text>那你以为呢, 孩子? 生活并不总是在公园里散步, 但我们有联系. 说到这里; 如果你想干掉一些潜行者, 去找洛里斯, 在封锁线桥的西北方向. 有时会有竞争, 但在安静的日子里, 你应该能够走到他面前, 然后以合适的价格, 他会帮你伪装. 如果白嘴鸦看不见你的到来, 就更容易把财宝从它们身上拿走.</text>
+	</string>
+	<string id="sultan_st_10">
+		<text>谢谢你的帮助, 老大. 我会好好利用这些信息的.</text>
+	</string>
+
+	
+<!-- (Bandit guide) -->
+	<string id="meet_guid_dv_bandit_0">
+		<text>你是谁?</text>
+	</string>
+	<string id="meet_guid_dv_bandit_1">
+		<text>啊, 太好了, 又来了一位游客. 如果他们让你进去, 你也不会太糟.\n \n我的名字叫哈巴狗. 我是当地导游. 我可以带你去我们在卡车墓园的前哨, 1500卢布, 或者8000卢布去我们在尤皮特的仓库. 随你挑吧.</text>
+	</string>
+
+	<string id="travel_guid_dv_bandit_0">
+		<text>我们走.</text>
+	</string>
+	<string id="travel_guid_dv_bandit_1">
+		<text>去哪?</text>
+	</string>
+	<string id="travel_guid_dv_bandit_2">
+		<text>去卡车墓园. %c[d_orange][1500 卢布]</text>
+	</string>
+	<string id="travel_guid_dv_bandit_3">
+		<text>去尤皮特集装箱仓库. %c[d_orange][8000 卢布]</text>
+	</string>
+	<string id="travel_guid_dv_bandit_4">
+		<text>我改变主意了.</text>
+	</string>
+
+</string_table>

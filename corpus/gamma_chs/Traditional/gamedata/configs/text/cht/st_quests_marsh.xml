@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON MARSH (SWAMPS) MAP
+<	CoC 1.4.10 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 14, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 14, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_default_task_text">
+		<text>接受下一個任務</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_default_task_about">
+		<text>是的, 我有個朋友需要你的幫助, 去找他.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Covert Agent Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_1_name">
+		<text>隱蔽特工</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_1_text">
+		<text>收回晴空特工留下的檔案, 並將其返回給列別捷夫.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_1_about">
+		<text>我的一名特工在一個沒有標記的地點給我留下了一些檔案. 我要你幫我找回它們, 別讓任何人跟著你. 如果你看到有人跟蹤你, 立刻殺了他們.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_1_finish">
+		<text>你沒被跟蹤是嗎? 幹得好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Protect Clear Sky Base Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_name">
+		<text>保護晴空基地</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_text">
+		<text>清除該地區的任何敵對勢力, 防止他們發現晴空基地.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_about">
+		<text>沼澤里敵人正在加強他們的活動. 我不能冒險讓任何人誤入我們的基地, 我要你清除所有晴空的敵人.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_finish">
+		<text>你做得很好. 謝謝你潛行者.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Find Artefact Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_name">
+		<text>找一個"%s"神器</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_text">
+		<text>冷風需要%s神器</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_about">
+		<text>潛行者, 我需要你給我拿一件神器</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_fetch_about">
+		<text>給我找一件%s神器. 我弄一個來進行研究. 我相信它還有一些尚未發現的屬性.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_fetch_finish">
+		<text>啊, 太好了, 你找到了它了! 你做得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Search Agroprom Underground Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_4_name">
+		<text>探索農研所地下設施通道</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_4_text">
+		<text>被盜的軍事檔案藏在農研所地下設施通道里. 找到它們, 讓它們消失.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_4_about">
+		<text>我們的一名特工已經設法從軍方那裡獲取了重要檔案, 但他還沒來得及把檔案帶回來就被殺了, 它們目前隱藏在農業研究所的地下通道中. 我要你秘密潛入那個地區, 趕在軍方之前找到他們. 找到后馬上還給我, 祝你好運.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_4_finish">
+		<text>幹得好. 你做得很好.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Blood Red Sky Storyline Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_5_name">
+		<text>血紅天空</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_5_text">
+		<text>把叛節者趕出沼澤.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_5_about">
+		<text>所以你成功了, 很好, 我們有大麻煩了. 叛節者們又潛伏在沼澤里. 我想我們不是唯一一群在這麼多年還活著的人. 我們有隊勇敢的戰士將加入你, 必須教訓他們! 祝你好運, 潛行者.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_5_finish">
+		<text>啊, 真是鬆了一口氣! 你真是個勇敢的潛行者. 謝謝你.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Librarian (Clear Sky Trader) Default Storyline Task -->
+
+	<string id="drx_sl_mar_base_stalker_barmen_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_default_task_text">
+		<text>接受下一個任務</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_default_task_about">
+		<text>我知道有人需要你的幫助. 去見他吧, 大家都知道他的給的報酬很好.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Librarian (Clear Sky Trader) Clear Out Mutant Lair Storyline Task -->
+
+	<string id="drx_sl_mar_base_stalker_barmen_task_1_name">
+		<text>為萊伯利安清除怪物的巢穴</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_1_text">
+		<text>萊伯利安知道有個地方有怪物的巢穴, 他想把它們清理掉.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_1_about">
+		<text>離這兒不遠有個怪物的巢穴. 去那兒清理一下.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_1_finish">
+		<text>嘿, 幹得不錯, 這是給你的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Librarian (Clear Sky Trader) Procure Supplies Storyline Task -->
+
+	<string id="drx_sl_mar_base_stalker_barmen_task_2_name">
+		<text>為晴空"採購"%s</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_2_text">
+		<text>萊伯利安讓我給他帶來%s.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_2_about">
+		<text>我需要你的幫助, 我們的補給不足, 要在這裡補充糧食是很不容易的.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_2_fetch_about">
+		<text>我們需要%s.</text>
+	</string>
+	<string id="drx_sl_mar_base_stalker_barmen_task_2_finish">
+		<text>太好了, 謝謝.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 14, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Payoff Change Factions Task -->
+
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_cf_task_1_name">
+		<text>加入晴空</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_cf_task_1_text">
+		<text>冷風很歡迎你進入晴空但這要花上15000盧布.</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_cf_task_1_about">
+		<text>是的, 我們一直在觀察你... 正合我意的好奇心和冒險精神. 你會很適合晴空. 但是, 我們堅持要求每位入會者支付15000盧布的費用. 這有助於資助我們的研究並支付保護費. 你怎麼看的?</text>
+	</string>
+	<string id="drx_sl_mar_smart_terrain_base_stalker_leader_marsh_cf_task_1_finish">
+		<text>很好, 還有很多研究要做. 去看看你能幫忙的地方.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+	
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Decimate the Enemy Task -->
+	
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_1_name">
+		<text>沼澤大掃蕩</text>
+	</string>	
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_1_text">
+		<text>冷風想把晴空的敵人從大沼澤中剷除. 收集%s.</text>
+	</string>		
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_1_about">
+		<text>一開始, 我們都很感激軍隊為我們做土匪清理工作. 不幸的是, 後來他們在北方建立了一些永久性的前哨基地, 而他們的巡邏隊對我們的人也不是很友好, 更不用說他們劣跡纍纍, 而且土匪也不斷騷擾我們的前哨基地, 給他們瞧瞧我們的厲害.</text>
+	</string>		
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_1_fetch_about">
+		<text>一開始, 我們都很感激軍隊為我們做土匪清理工作. 不幸的是, 後來他們在北方建立了一些永久性的前哨基地, 而他們的巡邏隊對我們的人也不是很友好, 更不用說他們劣跡斑斑, 而且土匪也不斷騷擾我們的前哨基地, 給他們瞧瞧我們的厲害.</text>
+	</string>	
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_1_fetch_finish">
+		<text>給你, 我們的"職業殺手". 我想那些混蛋會三思而後行的, 希望如此罷. 對了, 這是你的報酬.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) Night Terror Task -->
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_2_name">
+		<text>黑夜之懼: 大沼澤</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_2_text">
+		<text>冷風想消滅一頭危險的怪物, 它在離晴空基地北邊瞭望塔不遠的地方遊蕩.</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_2_about">
+		<text>變異怪物很少靠近我們的基地. 但我們的人報告說, 前一天晚上, 一隻巨大的野獸撕碎了西北瞭望塔的所有戰士, 我們有四個全副武裝的隊友在那兒只剩下了四處的碎片, 那可不是狗能做到的. 我知道你是個硬漢, 所以也許你可以去看看這個地方, 解決那個討厭的混蛋?</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_2_finish">
+		<text>嘿, 幹得好, 夥計! 我希望這個獎勵會配得上你, 營地裡的人們正講著你的故事呢!</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Cold (Clear Sky Honcho) FDefend the pump station Task -->
+
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_4_title">
+		<text>保衛水泵站</text>
+	</string>
+	<string id="mar_smart_terrain_base_stalker_leader_marsh_task_4_descr">
+		<text>我們的一個巡邏隊抓獲了一些在水泵站附近亂搞的土匪, 把他們痛扁之後, 他們就承認了他們正在準備的襲擊. 我們不知道他們什麼時候會來, 我已經派了一些人過去, 但是任何幫助都是被需要的... 當然還有回報.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Kalancha (Clear Sky Medic) Lost to the Zone Tasks -->
+	
+	<string id="mar_smart_terrain_base_doctor_task_1_name">
+		<text>非自然選擇</text>
+	</string>	
+	<string id="mar_smart_terrain_base_doctor_task_1_text">
+		<text>為卡蘭查教授收集%s樣本.</text>
+	</string>		
+	<string id="mar_smart_terrain_base_doctor_task_1_about">
+		<text>特異區的怪物對其異常條件表現出許多獨特的適應性. 請你為我的研究收集一些組織樣本. 他們也可以幫助我們在這樣的環境中堅持下去.</text>
+	</string>		
+	<string id="mar_smart_terrain_base_doctor_task_1_fetch_about">
+		<text>特異區的怪物對其異常條件表現出許多獨特的適應性. 請你為我的研究收集一些組織樣本. 它們也可能幫助我們在這種環境中堅持下去. 收集%s個樣本.</text>
+	</string>	
+	<string id="mar_smart_terrain_base_doctor_task_1_fetch_finish">
+		<text>樣品狀況良好. 很好, 我馬上去調查. 謝謝你.</text>
+	</string>
+	
+	<string id="mar_smart_terrain_base_doctor_task_2_name">
+		<text>科學進步</text>
+	</string>	
+	<string id="mar_smart_terrain_base_doctor_task_2_text">
+		<text>為卡蘭查教授找一件%s神器</text>
+	</string>		
+	<string id="mar_smart_terrain_base_doctor_task_2_about">
+		<text>神器可以為我們的研究提供寶貴的數據. 然而, 由於我們面臨的許多威脅, 我們的人真的負擔不起經常為我收集這些威脅. 你能幫我嗎?</text>
+	</string>		
+	<string id="mar_smart_terrain_base_doctor_task_2_fetch_about">
+		<text>神器可以為我們的研究提供寶貴的數據. 然而, 由於我們面臨的許多威脅以至於我們無法冒險去收集它們. 你能幫我嗎? 找到一個"%s"神器.</text>
+	</string>	
+	<string id="mar_smart_terrain_base_doctor_task_2_fetch_finish">
+		<text>即使在這麼多年之後, 它們也從未停止讓我感到驚訝. 多好的標本啊. 謝謝你的幫助.</text>
+	</string>
+	
+	<string id="mar_smart_terrain_base_doctor_task_3_name">
+		<text>稀缺物資</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_3_text">
+		<text>卡蘭查教授需要%s</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_3_about">
+		<text>你看, 斯波盡力為我們提供補給. 縱使如此, 這麼多年過去了, 我們仍然處於困難的境地. 我們不缺傷員, 但我們的醫療用品有限. 請幫我們補充庫存.</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_3_fetch_about">
+		<text>你看, 斯波盡力為我們提供補給. 縱使如此, 這麼多年過去了, 我們仍然處於困難的境地. 我們不缺傷員, 但我們的醫療用品有限. 請幫我們補充庫存. 請買些%s.</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_3_fetch_finish">
+		<text>我們都非常感謝你的幫助.</text>
+	</string>
+	
+	<string id="mar_smart_terrain_base_doctor_task_5_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_5_text">
+		<text>卡蘭查教授需要%s來製作藥品, 如果你找到了, 你應該把它們交給他.</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_5_about">
+		<text>每天在倉庫里醫療藥品的數量和傷員數量之間做出選擇是十分艱難的. 我很快就會用完繃帶和藥箱了, 我需要你幫我找一個舊的製藥箱. 它們肯定會派上用場的.</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_5_fetch_about">
+		<text>就是它了. 我一直在到處找%s. 它應該包含一些藥片和安瓿, 我需用它來製作一些醫療藥品. 如果你能給我帶上一套的話, 我就付你給你報酬.</text>
+	</string>
+	<string id="mar_smart_terrain_base_doctor_task_5_fetch_finish">
+		<text>幹得好! 我欠你一個大人情.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Spore (Clear Sky Trader) Deliver PDA Task -->
+
+	<string id="mar_base_owl_stalker_trader_task_1_name">
+		<text>將PDA交給"巧手"尼博</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_1_text">
+		<text>斯波需要你把一個加密的PDA交給在扎頓的"巧手"尼博.</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_1_about">
+		<text>好吧, 帥哥, 需要工作嗎? 這臺PDA需要交給一個在扎頓閑逛的人, 他的名字-"巧手"尼博. 他會在交貨時給你錢的. 別把它扔到水坑裡或者做出像那樣的蠢事兒... 否則我就宰了你. 當你在那裡的時候, 看看他能提供什麼; 他能得到一些好的裝置... 只要你付出一定的錢錢.</text>
+	</string>
+
+	<!-- DESTROY HELICOPTER FOR SPORE TASK -->
+	<string id="mar_base_owl_stalker_trader_task_2_name">
+		<text>摧毀直升機</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_2_text">
+		<text>斯波受夠了那些瘋狂的噪音, 想讓你摧毀直升機. 如果你去了的話, 他會給你打折的.</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_2_about">
+		<text>那該死的直升機快把我逼瘋了. 我有嚴重的耳鳴, 每次那個該死的東西在南部邊境巡邏時, 都會讓我的耳朵尖叫! 讓我想用棍子敲人! 在我發狂殺人之前, 把那玩意兒給我打下來, 我會給你打個折的.</text>
+	</string>
+
+	<!-- ESCORT SCIENTISTS FOR CLEAR SKY TASK -->
+	<string id="mar_base_owl_stalker_trader_task_3_name">
+		<text>護送生態學家</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_3_text">
+		<text>晴空生態學家雇你來指導他們到一個特定的地點進行研究. 一旦他們的研究成功, 把他們安全地送回營地; 在那裡你將得到報酬.</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_3_about">
+		<text>營地裡的生態學家需要一個有經驗的潛行者帶領他們到野外進行研究. 你要報名嗎? 你的工作是讓他們活著, 並引導他們到達目的地. 失敗的話會讓你名聲狼藉的.</text>
+	</string>
+	<string id="mar_base_owl_stalker_trader_task_3_finish">
+		<text>謝謝你, 潛行者. 你可以把這個作為你服務的報酬.</text>
+	</string>
+
+	<!-- HUNT MUTANTS FOR CLEAR SKY TASK -->
+	<string id="mar_base_stalker_barmen_task_1_name">
+		<text>怪物獵手</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_1_text">
+		<text>在這個地方附近發現了怪物, 使得這個地區對一些當地人來說很危險. 你的任務是消除該地區的怪物威脅. 工作完成後向萊伯利安報告.</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_1_about">
+		<text>你是個狂熱的獵人嗎? 我們一直在尋找一個人, 能夠清除我們陣營經常光顧的地區的怪物, 這樣大沼澤就能更安全一些. 你想要這份工作嗎?</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_1_finish">
+		<text>好極了! 這是你的付款. 我一定會轉達一個訊息: 那裡又安全了. 謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- ASSAULT BANDIT CAMP FOR CLEAR SKY TASK -->
+	<string id="mar_base_stalker_barmen_task_2_name">
+		<text>襲擊匪營</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_2_text">
+		<text>你的任務是消除該地區內的土匪威脅. 工作完成後向萊伯利安報告.</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_2_about">
+		<text>我們在這個地區遇到了土匪的大麻煩. 那些兇殘的暴徒一直埋伏在我們的營地外的主要基地, 試圖佔領領土. 只要他們還在這個地區, 我們就無法通過大沼澤的許多原本安全路線. 我們需要一個有經驗的潛行者, 他不怕弄髒自己的手. 你能幫我們嗎?</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_2_finish">
+		<text>好極了! 這是你的付款. 我一定會轉達一個訊息: 那裡又安全了. 謝謝你, 潛行者.</text>
+	</string>
+
+	<!-- FIND MUTANT MEAT FOR CLEAR SKY TASK -->
+	<string id="mar_base_stalker_barmen_task_3_name">
+		<text>獲取%s</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_3_text">
+		<text>從死亡的怪物上收集獵物肉. 然後將%s交給給晴空大本營的萊伯利安.</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_3_about">
+		<text>如果你擅長步槍還不怕怪物的話, 那我就給你找份工作. 你有興趣嗎?</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_3_fetch_about">
+		<text>口糧越來越少, 我得讓營地裡的每個人都吃飽. 有些人時不時地出去打獵, 並給我帶來食物, 但最近進展緩慢... 所以如果你不太忙的話, 你出去走走, 我需要%s. 我在廚房裡把肉殺掉加工. 記住, 由於腎上腺素的作用, 怪物被激怒會使肉變硬. 而且, 出血越少, 肉的味道越好. 所以, 小心你的槍, 好嗎?</text>
+	</string>
+	<string id="mar_base_stalker_barmen_task_3_fetch_finish">
+		<text>太好了, 你畢竟是個好獵手! 這是你的錢.</text>
+	</string>
+
+	<!-- FIND LEVEL 1 TOOLS FOR NOVIKOV TASK -->
+	<string id="mar_base_stalker_tech_task_1_name">
+		<text>獲取%s</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_1_text">
+		<text>諾維科夫需要%s來進行升級, 如果你找到了它們, 你應該把它們帶回給他.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_1_about">
+		<text>在特異區很難找到工具. 如果我能得到一些新的工具, 我將能夠對更多種類的裝置進行升級. 如果你感興趣, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_1_fetch_about">
+		<text>我需要一套基本的工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 我甚至會給你打折的.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_1_fetch_finish">
+		<text>太棒了, 夥計! 來, 讓我把錢給你.</text>
+	</string>
+	<!-- FIND LEVEL 2 TOOLS FOR NOVIKOV TASK -->
+	<string id="mar_base_stalker_tech_task_2_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_2_text">
+		<text>諾維科夫需要%s來進行升級, 如果你找到了它們, 應該帶回去給他.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_2_about">
+		<text>我真的需要更多的工具. 上次你給我帶了些好東西, 但我需要一套更高質量的. 如果你感興趣, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_2_fetch_about">
+		<text>我需要一套先進的工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 我甚至會給你打折的.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_2_fetch_finish">
+		<text>太棒了, 夥計! 你又來找我了! 來, 讓我把錢給你.</text>
+	</string>
+	<!-- FIND LEVEL 3 TOOLS FOR NOVIKOV TASK -->
+	<string id="mar_base_stalker_tech_task_3_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_3_text">
+		<text>諾維科夫需要%s來進行升級, 如果你找到了它們, 應該把它們帶回給他.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_3_about">
+		<text>我真的需要更多的工具. 上次你給我帶了些好東西, 但我需要一套更高質量的. 如果你感興趣, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_3_fetch_about">
+		<text>我需要一套專家工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激; 我甚至會給你打折的.</text>
+	</string>
+	<string id="mar_base_stalker_tech_task_3_fetch_finish">
+		<text>太棒了, 夥計! 你又來找我了! 來, 讓我把錢給你.</text>
+	</string>
+
+	<!-- ESCORT SCIENTISTS DIALOGS -->
+	<string id="ecolog_companion_task_1_start_dialog_1">
+		<text>你就是我們的嚮導? 我會在你的PDA標出位置. 帶路, 我們跟著你走. 完成分析后, 護送我們安全返回, 回到營地再與我們交談一次.</text>
+	</string>
+	<string id="ecolog_companion_task_1_start_dialog_2">
+		<text>好了嗎? 我們該走了. 我們等得越久, 危險就越大.</text>
+	</string>
+	<string id="ecolog_companion_task_1_complete">
+		<text>謝謝你, 潛行者. 你工作做得很好. 這是你的付款.</text>
+	</string>
+	<string id="ecolog_companion_task_1_actor_reply">
+		<text>好的</text>
+	</string>
+
+		<!-- FIND SWAMP DOCTOR -->
+	<string id="mar_doctor_task">
+		<text>神秘地帶</text>
+	</string>
+	<string id="mar_doctor_task_0">
+		<text>你來到特異區是爲了解開它的許多謎團, 一張熟悉的臉也許能幫你找到答案.</text>
+	</string>
+
+	<!-- MARSH DOCTOR STASH IN PRIPYAT -->
+	<string id="cit_doctor_task">
+		<text>波利西亞酒店</text>
+	</string>
+	<string id="cit_doctor_task_1">
+		<text>醫生給你的鑰匙和座標表明, 史特洛克在普里皮亞奇的波利西亞酒店的一個房間里有一個藏物點.</text>
+	</string>
+	<string id="cit_doctor_task_2">
+		<text>你已經找到了酒店的座標. 在這附近的某個地方應該有與鑰匙上的銘文相匹配的房間.</text>
+	</string>
+	<string id="cit_doctor_task_3">
+		<text>史特洛克藏匿的房間里散落著一些零散的東西. 你應該調查它們潛在的線索.</text>
+	</string>
+	<!-- MARSH DOCTOR VISIT LABS -->
+	<string id="st_main_1_search_agr_ug_name">
+		<text>調查農研所地下設施</text>
+	</string>
+	<string id="st_main_1_search_agr_ug_text">
+		<text>調查農研所地下設施, 尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_2_search_labx18_name">
+		<text>調查實驗室X-18</text>
+	</string>
+	<string id="st_main_2_search_labx18_text">
+		<text>調查X-18實驗室, 尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_3_search_labx16_name">
+		<text>調查實驗室X-16</text>
+	</string>
+	<string id="st_main_3_search_labx16_text">
+		<text>調查X-16實驗室, 尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_4_search_labx10_name">
+		<text>調查實驗室X-19</text>
+	</string>
+	<string id="st_main_4_search_labx10_text">
+		<text>調查X-19實驗室, 尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_5_search_labx8_name">
+		<text>調查實驗室X-8</text>
+	</string>
+	<string id="st_main_5_search_labx8_text">
+		<text>調查X-8實驗室, 尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_6_search_jup_ug_name">
+		<text>調查木星工廠地道</text>
+	</string>
+	<string id="st_main_6_search_jup_ug_text">
+		<text>調查木星工廠地道並尋找陰謀的確鑿證據.</text>
+	</string>
+	<string id="st_main_7_search_mon_con_name">
+		<text>調查切爾諾貝利核電站</text>
+	</string>
+	<string id="st_main_7_search_mon_con_text">
+		<text>調查切爾諾貝利核電站, 尋找陰謀的確鑿證據.</text>
+	</string>
+</string_table>

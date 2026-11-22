@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="red_duty_outpost_trader_concern_hostile_0">
+		<text>這裡有來自不同社區的潛行者. 他們不會造成麻煩嗎？</text>
+	</string>
+	<string id="red_duty_outpost_trader_concern_hostile_1">
+		<text>不要擔心. 這個地區在紀律團的控制之下. 紀律團的朋友們在這裡受到保護,禁止打架. 你最好不要給自己帶來麻煩. </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_1_name">
+		<text>怪物獵人</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_text">
+		<text>我已經同意為前哨站清除一個變異怪物的巢穴. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_about">
+		<text>還有一個變異怪物的巢穴,我們還沒有任何小隊來分配. 你能解決這個問題嗎？</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_1_finish">
+		<text>做得好! ( 在手中的單子上打了一個勾 ) </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_2_name">
+		<text>殺死潛行者</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_text">
+		<text>我已經同意為前哨站站長解決一個潛行者. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_about">
+		<text>我有一個高度優先的目標需要清除. 他被發現襲擊了當地的潛行者和生態學家. 我們承諾對任何能幹掉他的人進行獎勵. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_2_finish">
+		<text>我不喜歡殺人,但那個人渣罪有應得. 這就是獎勵. </text>
+	</string>
+
+	<string id="red_duty_outpost_trader_task_3_name">
+		<text>尋找 %s</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_text">
+		<text>前哨站站長讓我去獵取價值一定數量的變異怪物肉. 帶給他%獲取獎勵. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_about">
+		<text>到我們點的供應線非常危險. 我想把重心更多地放在武器和彈藥上,而不是放在我們能在該地區可以獲得的東西上,比如食物. 這附近有很多可食用的變異怪物. 獵殺他們並帶回%的東西. 然後我就會有獎勵給你. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_3_finish">
+		<text>是的,比起乾燥的MREs,我更喜歡這些. 幹得好. </text>
+	</string>
+	
+	<string id="red_duty_outpost_trader_task_4_name">
+		<text>尋找 %s</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_text">
+		<text>一些生態學家正在尋找一種罕見的突變部分,稱為 %s.</text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_about">
+		<text>部分生態學家一直要求尋找一些 %s. 它來自一個危險的變異生物,我的手下通常用子彈和手榴彈把它撕成碎片. 看看你能不能弄到一個. </text>
+	</string>
+	<string id="red_duty_outpost_trader_task_4_finish">
+		<text>終於有人完整地帶回了樣品. </text>
+	</string>
+
+	
+	<string id="meet_guid_duty_outpost_list_0">
+		<text>你能護送我去哪裡？</text>
+	</string>
+	<string id="meet_guid_duty_outpost_list_1">
+		<text>去羅斯托克的酒吧一千一人,去扎頓的斯卡多夫斯克兩千一人,去填埋場三千人,去揚塔四千一人,去阿格羅普洛姆的軍事基地五千一人,去科頓的魯克村六千一人,去大沼澤六千一人. </text>
+	</string>
+
+	<string id="travel_guid_duty_outpost_0">
+		<text>我需要一個嚮導.</text>
+	</string>
+	<string id="travel_guid_duty_outpost_1">
+		<text>是啊,在哪裡？</text>
+	</string>
+	<string id="travel_guid_duty_outpost_2">
+		<text>前往羅斯托克. %c[d_orange][1000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_3">
+		<text>前往扎頓. %c[d_orange][2000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_4">
+		<text>前往填埋場. %c[d_orange][3000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_5">
+		<text>前往揚塔. %c[d_orange][4000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_6">
+		<text>前往農業研究所. %c[d_orange][5000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_7">
+		<text>前往封鎖線. %c[d_orange][6000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_8">
+		<text>前往大沼澤. %c[d_orange][6000 盧布]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_9">
+		<text>我改變主意了.</text>
+	</string>
+	
+	<string id="travel_guid_duty_outpost_from_others_0">
+		<text>你知道紅森林裡的執勤哨所嗎？我想去那裡.</text>
+	</string>
+	
+	<string id="travel_guid_duty_outpost_from_others_1">
+		<text>是的,它將是 %c[d_orange]%s RU%c[255,160,160,190].</text>
+	</string>
+	<string id="travel_guid_duty_outpost_from_others_2">
+		<text>帶我去那裡. %c[d_orange][%s RU]</text>
+	</string>
+	<string id="travel_guid_duty_outpost_from_others_3">
+		<text>我已經改變了我的想法.</text>
+	</string>
+	
+</string_table>

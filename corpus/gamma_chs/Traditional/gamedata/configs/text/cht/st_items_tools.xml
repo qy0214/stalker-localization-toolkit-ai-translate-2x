@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Usable Items (Special Purposes)
+-->
+<string_table>
+	
+	<string id="st_itm_repairkit_tier_1_name">
+		<text>初級工具箱</text>
+	</string>
+	<string id="st_itm_basickit_name">
+		<text>初級工具箱</text>
+	</string>
+	<string id="st_itm_basickit_descr">
+		<text>一套基本的維修工具,無法用於高階維護,然而在物盡其用的技師手中會十分有用. 包含不同型號和尺寸的鉗子、改錐,強力膠和一些配對的螺栓螺母. 如果你經驗豐富,這套工具可以用來製造一些基本的裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 需要合適的材料\n
+		%c[d_orange] • %c[ui_gray_2] 可在工作臺使用\n
+		%c[d_orange] • %c[ui_gray_2] 技師可以使用這套工具來改裝武器與護甲\n \n
+		</text>
+	</string>
+
+	<string id="st_itm_repairkit_tier_2_name">
+		<text>高級工具箱</text>
+	</string>
+	<string id="st_itm_advancedkit_name">
+		<text>高級工具箱</text>
+	</string>
+	<string id="st_itm_advancedkit_descr">
+		<text>一套正經的老工具,這套比你爸爸還大的工具的狀態還很好. 包含一組趁手的小鉗子、尖頭鑷子以及鉆孔工具. 如果你經驗豐富,這套工具可以用來製造一些更好的裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 需要合適的材料\n
+		%c[d_orange] • %c[ui_gray_2] 可在工作臺使用\n
+		%c[d_orange] • %c[ui_gray_2] 技師可以使用這套工具來改裝武器與護甲\n \n
+		</text>
+	</string>
+	
+	<string id="st_itm_repairkit_tier_3_name">
+		<text>專家級工具箱</text>
+	</string>
+	<string id="st_itm_expertkit_name">
+		<text>專家級工具箱</text>
+	</string>
+	<string id="st_itm_expertkit_descr">
+		<text>一套專業的高質量工具,用於微調裝置. 包含一套鉆頭、精密鑷子、烙鐵、4mm螺絲批套裝和一個萬用表. 如果你經驗豐富,這套工具可以用來製造一些頂級的裝備\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 需要合適的材料\n
+		%c[d_orange] • %c[ui_gray_2] 可在工作臺使用\n
+		%c[d_orange] • %c[ui_gray_2] 技師可以使用這套工具來改裝武器與護甲\n \n
+		</text>
+	</string>
+	
+	<string id="st_itm_drugkit">
+		<text>製藥箱</text>
+	</string>
+	<string id="st_itm_drugkit_descr">
+		<text>一些小盒子和各種金屬物品組成的一套混合與製造藥物的工具.包含一些小塑料包、藥片和注射器\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 需要合適的材料\n
+		%c[d_orange] • %c[ui_gray_2] 可在工作臺使用\n
+		%c[d_orange] • %c[ui_gray_2] 醫生可以使用這套工具來製造藥物\n \n
+		</text>
+	</string>
+
+	<string id="st_itm_ammokit">
+		<text>填彈箱</text>
+	</string>
+	<string id="st_itm_ammokit_descr">
+		<text>一套有模有樣的舊槍匠工具和配件. 包含一套衝子、惠勒錘(Wheeler公司生產的用於敲擊衝子的錘子)、壓彈頭裝置和一個用來稱火藥的秤. 如果你經驗豐富,這套工具可以用來修復損壞了的槍彈,也可以製造更好的\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 需要合適的材料\n
+		%c[d_orange] • %c[ui_gray_2] 可在工作臺使用\n
+		%c[d_orange] • %c[ui_gray_2] 技師可以使用這套工具來製作彈藥\n \n
+		</text>
+	</string>
+	
+	<string id="st_binocular_name">
+		<text>軍用望遠鏡</text>
+	</string>
+	<string id="st_binocular_descr">
+		<text>烏克蘭製造的基本型軍用望遠鏡. 當你想從遠處觀察目標時很有用.十分耐用\n</text>
+	</string>
+	
+	<string id="st_con_checker_name">
+		<text>物品狀態清單</text>
+	</string>
+	<string id="st_con_checker_descr">
+		<text>一小張紙,上面記著你的裝備狀況\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 裝備狀態評估\n</text>
+	</string>
+	
+	<string id="st_container_tool_name">
+		<text>神器鉗子</text>
+	</string>
+	<string id="st_container_tool_descr">
+		<text>淬火鋼製造的鉗子,僅被用於夾持神器. 某些特殊性質使得其他任何方式都無法從一個容器里拿出神器. 這副鉗子也可以避免你因裸手接觸神器而灼傷; 然而這並不代表你的神經和精神不會受到神器的影響. 真正的神器獵人永遠不會在離家的時候忘帶它\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 用於夾持神器\n
+		%c[ui_cyan] • %c[ui_gray_2] 挪動容器里的神器時必備\n</text>
+	</string>
+	
+	<string id="st_lead_box_name">
+		<text>鉛盒 (空)</text>
+	</string>
+	<string id="st_lead_box_descr">
+		<text>鉛盒(the lead-lined metal container,LLMC)是一個簡單的金屬盒,厚壁、內部有泡沫塑料制的分隔,還有一個厚實的可以壓緊封口的蓋子. 它被特別設計用於運輸放射性材料. 在特異區里LLMC最常見的用途就是儲運神器. 它可以阻擋任何輻射的外泄,保護神器持有者免受侵害. 然而這個容器並不能掛在腰帶上,也就是說神器的增益和減益都不會生效\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 神器容器\n
+		%c[ui_cyan] • %c[ui_gray_2] 容量: %c[ui_gray_1] 1\n
+		%c[ui_cyan] • %c[ui_gray_2] 狀態: %c[ui_gray_1] 空\n \n
+		%c[d_red]警告: %c[ui_gray_2] 神器必須從容器里拿出來才可以出售\n</text>
+	</string>
+	
+	<string id="st_lead_box_half_name">
+		<text>鉛盒 (半滿)</text>
+	</string>
+	<string id="st_lead_box_half_descr">
+		<text>鉛盒(the lead-lined metal container,LLMC)是一個簡單的金屬盒,厚壁、內部有泡沫塑料制的分隔,還有一個厚實的可以壓緊封口的蓋子. 它被特別設計用於運輸放射性材料. 在特異區里LLMC最常見的用途就是儲運神器. 它可以阻擋任何輻射的外泄,保護神器持有者免受侵害. 然而這個容器並不能掛在腰帶上,也就是說神器的增益和減益都不會生效\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 神器容器\n
+		%c[ui_cyan] • %c[ui_gray_2] 容量: %c[ui_gray_1] 1\n
+		%c[ui_cyan] • %c[ui_gray_2] 狀態: %c[ui_gray_1] 半滿\n \n
+		%c[d_red]警告: %c[ui_gray_2] 神器必須從容器里拿出來才可以出售\n</text>
+	</string>
+	
+	<string id="st_lead_box_closed_name">
+		<text>鉛盒 (滿)</text>
+	</string>
+	<string id="st_lead_box_closed_descr">
+		<text>鉛盒(the lead-lined metal container,LLMC)是一個簡單的金屬盒,厚壁、內部有泡沫塑料制的分隔,還有一個厚實的可以壓緊封口的蓋子. 它被特別設計用於運輸放射性材料. 在特異區里LLMC最常見的用途就是儲運神器. 它可以阻擋任何輻射的外泄,保護神器持有者免受侵害. 然而這個容器並不能掛在腰帶上,也就是說神器的增益和減益都不會生效\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 神器容器\n
+		%c[ui_cyan] • %c[ui_gray_2] 容量: %c[ui_gray_1] 1\n
+		%c[ui_cyan] • %c[ui_gray_2] 狀態: %c[ui_gray_1] 滿\n \n
+		%c[d_red]警告: %c[ui_gray_2] 神器必須從容器里拿出來才可以出售\n</text>
+	</string>
+	
+	<string id="st_crowbar">
+		<text>物理學聖劍 (可重複使用)</text>
+	</string>
+	<string id="st_crowbar_descr">
+		<text>最好的開門/開鎖工具. 工業區常見的物品. 一些潛行者不知何故一直帶著這個便宜的重物. 曾經有一個著名的從不說話的潛行者隨身帶著一根傳奇撬棍,上面銘刻有"黑山基地財產"字樣. 之後撬棍就十分受人追捧以至於一些潛行者像尋找神器一樣尋找撬棍\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 無限使用</text>
+	</string>
+	
+	<string id="st_bolts_pack">
+		<text>一包螺絲</text>
+	</string>
+	<string id="st_bolts_pack_descr">
+		<text>鑑於螺絲便宜且常見,這些小玩意經常被用來探測異常點. 你永遠可以在交易商那裡買到裝著螺絲和空彈殼的小包\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 日用品\n
+		%c[d_orange] • %c[ui_gray_2] 裝有20~30個螺絲\n</text>
+	</string>
+	
+	<string id="st_swiss">
+		<text>瑞士軍刀</text>
+	</string>
+	<string id="st_swiss_descr">
+		<text>想要開罐頭,擰緊螺絲,切斷繩索還是磨銳你最好的子彈? 那就用瑞士軍刀(Victorinox™)吧. 你經常可以在異常區里發現裝有瑞士軍刀的小盒子,所以它並不貴. 修復武器或者護甲時可以拆掉幾把來當材料\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 拆卸工具\n
+		</text>
+	</string>
+	
+	<string id="st_grooming">
+		<text>美容套件</text>
+	</string>
+	<string id="st_grooming_descr">
+		<text>裝在防彈箱裡的美容工具. 包含鬍鬚梳,修面剪,看起來是男式的戒指,鋒利無比的不鏽鋼刀片,防滑握把和鼻毛剪\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 拆卸工具\n
+		</text>
+	</string>
+	
+	<string id="st_drugs_kit">
+		<text>小藥包</text>
+	</string>
+	<string id="st_drugs_kit_descr">
+		<text>一些小盒子和各種金屬物品組成的一套混合與製造藥物的工具. 包含塑料包裝的藥片和草藥\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_red] • %c[ui_gray_2] 無法使用\n</text>
+	</string>
+	
+	<string id="st_itm_sleepbag_name">
+		<text>睡袋</text>
+	</string>
+	<string id="st_itm_sleepbag_descr">
+		<text>輕便的睡袋,在你休息時讓你保持溫暖與乾燥. 確保你找到的地點足夠安全且至少有一條逃生路線. 這個睡袋會在你起床后自動打包,當然點一下"取消"鍵也可以\n \n
+		%c[d_cyan]警告: %c[ui_gray_2]在空曠處睡覺可能引來捕食者; 不防輻射\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[ui_cyan] • %c[ui_gray_2] 便攜的床\n
+		%c[ui_cyan] • %c[ui_gray_2] 無限使用\n
+		%c[ui_cyan] • %c[ui_gray_2] 日用品\n</text>
+	</string>
+	
+	<string id="st_compression_bag">
+		<text>壓縮袋</text>
+	</string>
+	<string id="st_compression_bag_descr">
+		<text>用來裝睡袋或者幾件衣服的壓縮袋\n \n
+		%c[ui_gray_2] 屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 在未打包的睡袋前使用來打包\n
+		%c[d_orange] • %c[ui_gray_2] 靠近睡袋時右鍵單擊物品>"使用"\n</text>
+	</string>
+	
+	<string id="st_itm_tent_bag">
+		<text>空的帳篷包</text>
+	</string>
+	<string id="st_itm_tent_bag_descr">
+		<text>設計用於儲運帳篷的包,拆卸和打包帳篷需要一些時間\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 用於打包帳篷\n
+		%c[d_orange] • %c[ui_gray_2] 靠近睡袋時右鍵單擊物品>"使用"\n</text>
+	</string>
+
+	<string id="st_itm_tent_name">
+		<text>帳篷包</text>
+	</string>
+	<string id="st_itm_tent_descr">
+		<text>裝著露營帳篷的包,一個擋風擋雨的小型庇護所. 支起帳篷需要一些時間. 在異常區中最好找一個有逃生路線的地方來安置帳篷\n \n
+		%c[d_cyan]警告: %c[ui_gray_2]在空曠處睡覺可能引來捕食者; 不防輻射
+		%c[0,255,255,255]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 用於支起帳篷\n
+		%c[ui_cyan] • %c[ui_gray_2] 無限使用\n\n</text>
+	</string>
+	
+	<string id="st_lighter">
+		<text>打火機</text>
+	</string>
+	<string id="st_lighter_descr">
+		<text>可靠且防水的便攜火源. 在異常區中打火機不只是做飯的必備物品,它還是爲了和攝魂怪戰鬥前做點儀式感以求好運的必備物品,比如點根菸或者某些更猛的東西. 這個耐用的金屬煤油打火機在異常區的有毒有害環境中是完美選擇\n \n
+		%c[ui_gray_3]屬性: \n
+		%c[d_orange] • %c[ui_gray_2] 做飯,抽菸\n</text>
+	</string>
+	
+	<string id="st_lighter_refillers_descr">
+		<text>帶著一個空的打火機幾乎沒有任何意義. 老潛行者永遠不會在深入異常區之前忘記裝滿他的打火機. 常見的便宜貨"癌癥"牌打火機油可以完美勝任這一工作\n \n
+		%c[0,255,255,255]屬性:\n 
+		%c[d_orange] • %c[ui_gray_2] 用途: %c[ui_gray_1] 裝滿打火機 (+100%)\n</text>
+	</string>
+	
+	<string id="st_lighter_refiller5">
+		<text>打火機油 (133 ml 剩餘)</text>
+	</string>
+	<string id="st_lighter_refiller4">
+		<text>打火機油 (107 ml 剩餘)</text>
+	</string>
+	<string id="st_lighter_refiller3">
+		<text>打火機油 (80 ml 剩餘)</text>
+	</string>
+	<string id="st_lighter_refiller2">
+		<text>打火機油 (54 ml 剩餘)</text>
+	</string>
+	<string id="st_lighter_refiller1">
+		<text>打火機油 (27 ml 剩餘)</text>
+	</string>
+	
+	<string id="st_itm_mapkit">
+		<text>異常區地圖</text>
+	</string>
+	<string id="st_itm_mapkit_descr">
+		<text>一份匿名檔案, 裡面有幾張手寫的便條, 幾張私人照片和幾段警示語, 最特別的東西是一張畫的亂七八糟的地圖, 看起來, 他之前的主人應該是個神器獵手\n \n
+		</text>
+	</string>
+	<string id="st_itm_mapkit_1">
+		<text>異常區地圖 (軍事倉庫)</text>
+	</string>
+	<string id="st_itm_mapkit_2">
+		<text>異常區地圖 (揚塔)</text>
+	</string>
+	<string id="st_itm_mapkit_3">
+		<text>異常區地圖 (紅森林)</text>
+	</string>
+	<string id="st_itm_mapkit_4">
+		<text>異常區地圖 (死城)</text>
+	</string>
+	<string id="st_itm_mapkit_5">
+		<text>異常區地圖 (卡車墓園)</text>
+	</string>
+	<string id="st_itm_mapkit_6">
+		<text>異常區地圖 (尤皮特)</text>
+	</string>
+	<string id="st_itm_mapkit_7">
+		<text>異常區地圖 (扎頓)</text>
+	</string>
+	<string id="st_itm_mapkit_8">
+		<text>異常區地圖 (填埋場)</text>
+	</string>
+	<string id="st_itm_mapkit_9">
+		<text>異常區地圖 (農業研究所)</text>
+	</string>
+	
+	<string id="st_ammo_box">
+		<text>一盒彈藥</text>
+	</string>
+	<string id="st_ammo_box_descr">
+		<text>每個潛行者都知道可靠的武器的重要性. 這就是為什麼每天徹底檢查一遍你的槍對你的生存十分重要. 潛行者們經常數自己的子彈並且清理它們來保證自己的武器不會在戰鬥中卡殼\n \n
+		%c[0,255,255,255]屬性:\n
+		</text>
+	</string>
+	
+	<string id="st_itm_sleepbag_desc">
+		<text>便攜的睡袋,可以在你睡覺時保持溫暖與隱蔽\n \n
+		%c[255,255,255,0]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 雙擊來在地面上放置\n</text>
+	</string>
+	
+	<string id="st_itm_gunsmith_toolkit">
+		<text>槍械維護工具</text>
+	</string>
+	<string id="st_itm_gunsmith_toolkit_descr">
+		<text>保養槍械的基礎工具. 包含槍油和一些小工具. 出門在外時十分有用,只是有點沉\n \n
+		%c[255,255,255,0]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 拖放到你想要修復的東西上\n</text>
+	</string>
+	
+	<string id="st_itm_outfit_toolkit">
+		<text>針線包</text>
+	</string>
+	<string id="st_itm_outfit_toolkit_descr">
+		<text>臨時的縫紉工具和一些多餘的材料. 用於縫補你外套上的洞\n \n
+		%c[255,255,255,0]屬性:\n
+		%c[d_orange] • %c[ui_gray_2] 拖放到你想要修復的東西上\n</text>
+	</string>
+	
+	<string id="st_itm_tent_desc">
+		<text>軍用帳篷,可以抵抗惡劣天氣.在開闊地支起它\n</text>
+	</string>
+	
+	<string id="st_itm_lantern_name">
+		<text>LED燈</text>
+	</string>
+	<string id="st_itm_lantern_desc">
+		<text>笨重且耐用的營地燈,依靠鋰電池供電. 放在地面上來穩固地使用這盞燈\n</text>
+	</string>
+	
+	<string id="st_itm_artefact_container_name">
+		<text>神器容器</text>
+	</string>
+</string_table>

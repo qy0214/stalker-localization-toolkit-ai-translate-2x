@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons Attachments
+-->
+<string_table>
+
+	<string id="st_addon_scope">
+		<text>PSO-1M 光學瞄準鏡 </text>
+	</string>
+	<string id="st_addon_scope_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有華約步槍\n \n%c[ui_gray_1]PSO(Pritsel Snaipersky Optichesky)"狙擊手用光學瞄準具",是由前蘇聯新西伯利亞儀器製造廠生產的一系列光學瞄準鏡(NPZ國家光學機器裝置廠). 自1964年生產以來,被運送到俄羅斯軍隊給SVD系列狙擊步槍使用. 這種瞄準鏡之後也被加以改進以便於在AK74或者AN94一類的武器上使用. PSO瞄準鏡因耐用性、多功能性和精心設計的分化線而聞名. 通過華約標準的燕尾槽來固定在武器上,4倍的放大倍率意味著它主要適用於中遠距離的戰鬥.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 狀態: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化線: %c[ui_gray_1]PSO-1</text>
+	</string>
+	
+	<string id="st_addon_scope_1p29">
+		<text>1P29"鬱金香"光學瞄準鏡 </text>
+	</string>
+	<string id="st_addon_scope_1p29_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有華約步槍\n \n%c[ui_gray_1] 1P29瞄準鏡是一種小型戰場瞄準鏡,1P29瞄準鏡倍率4倍,視場8度. 事實上,這個瞄準鏡是英國SUSAT瞄準鏡的仿製型,專門用於安裝在AK步槍的側式瞄準鏡座上. 而有趣的是,這種設計是把SUSAT反過來: SUSAT用作瞄準分劃的錐形分化柱是從底部豎上去的,而1P29瞄準鏡則是從頂部吊下來的. 與SUSAT一樣的是,1P29瞄準鏡在夜間可用綠光照亮錐形塑料柱的尖端,另外還在右側增加了一塊類似PSO-1的測距分劃板,這也是1P29瞄準鏡比起SUSAT的創新之處.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 狀態: %c[ui_gray_1]好\n
+		%c[d_purple] • %c[ui_gray_2] 分化線: %c[ui_gray_1]PSU-1</text>
+	</string>
+	
+	<string id="st_addon_scope_ac10632">
+		<text>巴斯卡AC10632瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_ac10632_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]所有北約步槍\n \n%c[ui_gray_1]Barska AC10632反射式瞄準鏡,用於快速瞄準. 相容所有帶有皮卡汀尼導軌的武器,調整瞄準分劃的亮度級別(7級),能夠在不同的光線水平下瞄準目標.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]無\n</text>
+	</string>
+	
+	<string id="st_addon_scope_acog">
+		<text>ACOG 光學瞄準鏡 </text>
+	</string>
+	<string id="st_addon_scope_acog_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]所有北約步槍\n \n%c[ui_gray_1]為北約國家步槍設計的可拆卸光學瞄準鏡. ACOG是Trijicon公司生產的前進牌戰術光學瞄準鏡的縮寫,這種型別的瞄準鏡安裝在皮卡汀尼導軌上. 瞄準鏡採用了Trijicon公司專利的雙照明系統帶有自然光和氚光,帶有放大倍率的USMC分劃.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]4x\n
+		%c[d_purple] • %c[ui_gray_2] 分劃: %c[ui_gray_1]USMC</text>
+	</string>
+	
+	<string id="st_addon_scope_eotech">
+		<text>EOTech 553 全息瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_eotech_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2]所有北約步槍\n \n%c[ui_gray_1] 適用於北約規格的各類武器的全息瞄準鏡,是一種直接觀察彈著點並用彈著點作為瞄準標誌的革命式速瞄瞄具. 瞄準快而射擊精準.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]無倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 狀態: %c[ui_gray_1]非常好</text>
+	</string>
+		
+	<string id="st_addon_scope_kobra">
+		<text>EKP 1S-03 "Kobra"反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_kobra_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 所有華約步槍\n \n%c[ui_gray_1]Kobra系列戰斗瞄準鏡是俄羅斯生產的一系列反射式瞄準鏡,已經被俄羅斯一些特種部隊所採用,並在車臣戰場上使用過. 這種瞄準鏡通過側鏡架可以安裝在各國生產的AK步槍或以AK步槍為基礎的其他槍支上,通過尾部上方的旋鈕可以選擇選擇4種分劃式樣(壓下旋鈕時)和16級亮度. Kobra反射式瞄準鏡重量輕、堅固可靠,雖然外形沒有西方國家的牌子那麼好看,不過絕對是物超所值.\n \n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1] 無倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 狀態: %c[ui_gray_1]非常好</text>
+	</string>
+	
+	<string id="st_addon_scope_pso-1m2-01">
+		<text>PSO-1M2-1 光學瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_pso-1m2-01_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 所有華約步槍\n \n%c[ui_gray_1]PSO-1M光學瞄準鏡的特殊版本,專為使用9x39重型亞音速子彈射擊而設計. 分劃標記和特殊測距比例尺便於計算環境補償因素,在低光照條件下提供分劃照明. 這一系列特性允許在特種部隊中使用這種瞄準鏡. 它也是VSS無聲狙擊步槍的標準瞄準鏡.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 分劃: %c[ui_gray_1]PSO-1-1</text>
+	</string>
+		
+	<string id="st_addon_scope_cmore">
+        <text>C-MORE紅點瞄準鏡</text>
+    </string>
+    <string id="st_addon_scope_cmore_descr">
+        <text>這種高效能紅點瞄準鏡可提供近乎于無限的視野,同時避免了筒式內紅點所常見的遮擋物和隧道視野. Railway系列預裝的標準導軌底座,可以將瞄準鏡安裝到大多數維佛或皮卡汀尼導軌上.\n\n
+		%c[d_purple] • %c[ui_gray_2] 放大倍率: %c[ui_gray_1]無倍率 (速瞄瞄具)\n
+		%c[d_purple] • %c[ui_gray_2] 狀態: %c[ui_gray_1]好\n</text>
+    </string>
+		
+	<string id="st_addon_sil_57">
+		<text>5.7x28毫米消聲器  </text>
+	</string>
+	<string id="st_addon_sil_57_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 5.7毫米口徑武器\n \n%c[ui_gray_1]FN-P90 個人防衛武器和FN Five-seveN手槍所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+			
+	<string id="st_addon_sil_9mm">
+		<text>9毫米消音器</text>
+	</string>
+	<string id="st_addon_sil_9mm_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米口徑武器\n \n%c[ui_gray_1]9毫米手槍和衝鋒鎗所使用的消音器. 有效的9x18口徑武器消音器,雖說有些過時但是仍非常有效,主體包含緊密的鍍銅網孔,前端包含一組口徑可以讓子彈穿過的橡膠,常用於暗殺輕甲的敵人.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]非常好</text>
+	</string>
+		
+	<string id="st_addon_sil_atg">
+		<text>ATG消音器</text>
+	</string>
+	<string id="st_addon_sil_atg_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45,5.56,7.62口徑.\n \n%c[ui_gray_1]戰術自動消聲器(ATG)設計用於降低5.45毫米卡拉什尼科夫AK74、AKS74、AK74M、AK105射擊時的聲音和火焰. 5.56毫米卡拉什尼科夫AK101和AK102,以及7.62毫米卡拉什尼科夫AK103和AK104.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_gemtech">
+		<text>Gemtech消音器</text>
+	</string>
+	<string id="st_addon_sil_gemtech_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米,.45口徑武器\n \n%c[ui_gray_1]格洛克和FN-FNP、瓦爾特等所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_kzrzp">
+		<text>KZRZP消音器</text>
+	</string>
+	<string id="st_addon_sil_kzrzp_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑武器\n \n%c[ui_gray_1]SVD狙擊步槍所使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_nato">
+		<text>NATO消音器</text>
+	</string>
+	<string id="st_addon_sil_nato_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] .45,5.56,7.62口徑武器\n \n%c[ui_gray_1]北約標準5.56x45毫米口徑步槍口徑武器使用的消音器.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]好</text>
+	</string>
+	
+	<string id="st_addon_sil_pbs1">
+		<text>PBS-1消音器</text>
+	</string>
+	<string id="st_addon_sil_pbs1_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑\n \n%c[ui_gray_1]卡拉什尼科夫7.62毫米步槍所使用的消聲器. 安裝消聲器時配合使用特製的亞音速子彈效果更好..\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_sil_pbs4">
+		<text>PBS-4消音器</text>
+	</string>
+	<string id="st_addon_sil_pbs4_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45口徑\n \n%c[ui_gray_1]卡拉什尼科夫5.45毫米自動步槍(AKS-74U)消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+		
+	<string id="st_addon_sil_tgp-a">
+		<text>TGP-A消音器</text>
+	</string>
+	<string id="st_addon_sil_tgp-a_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45口徑\n \n%c[ui_gray_1]用於AK系列5.45毫米突擊步槍和RPK-74機槍的戰術消聲器"TGP-A-5.45". 然而安裝時的射擊精度略有下降.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+		
+	<string id="st_addon_silencer">
+		<text>美國陸軍小口徑步槍消音器</text>
+	</string>
+	<string id="st_addon_silencer_descr">
+		<text>\n \n%c[ui_gray_2]槍械配件:\n \n%c[d_cyan] • %c[ui_gray_2] 5.56x45口徑武器\n \n%c[ui_gray_1]美國設計和製造的先進步槍消音器,顯然它已經從美國陸軍的一個補給箱中"消失"了. 它由填充有四個延伸腔的高級鋼製主體和後方的一系列Z型鈦板組成. 這個消音器幾乎能完全消除槍口焰並抑制絕大部分槍聲,而且它並不需要太多的維護. 這種消音器通常用於所有西方製造的小口徑步槍,並一直在西方軍隊中服役.\n \n%c[d_purple] • %c[ui_gray_2] 消音效果: %c[ui_gray_1]中等</text>
+	</string>
+		
+	<string id="st_addon_trijicon_acog">
+		<text>ACOG瞄準鏡</text>
+	</string>
+	<string id="st_addon_trijicon_acog_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 北約精選步槍\n \n%c[ui_gray_1]為北約國家步槍設計的可拆卸光學瞄準鏡. ACOG是Trijicon公司生產的前進牌戰術光學瞄準鏡的縮寫,這種型別的瞄準鏡安裝在皮卡汀尼導軌上. 瞄準鏡採用了Trijicon公司專利的雙照明系統帶有自然光和氚光. 該型號有改進的"trijicon"分劃,固定放大率為2.0x.\n \n%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]2.0x\n%c[d_purple] • %c[ui_gray_2] 狀況: %c[ui_gray_1]極好\n%c[d_purple] • %c[ui_gray_2] 分劃: %c[ui_gray_1]trijicon</text>
+	</string>
+	
+	<string id="st_addon_scope_okp-7">
+		<text>OKP-7 反射式瞄準鏡(燕尾槽式安裝)</text>
+	</string>
+	<string id="st_addon_scope_okp-7_descr">
+		<text>OKP瞄準鏡的設計初衷允許在瞬息萬變的戰場條件下依然能夠瞄準射擊,減輕了瞄準時射手的疲勞,並在必要時允許無阻礙地使用基礎機械瞄具. 該瞄準鏡的主要特徵是無框反光鏡,對視野不會有太大的影響與遮擋. 取而代之的是反射鏡由薄而堅固的遮陽板保護,射擊時幾乎沒有干擾.</text>
+	</string>
+	
+	<string id="st_addon_scope_rmr">
+		<text>Trijicon RMR反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_rmr_descr">
+		<text>Trijicon RMR不僅在獵人中很受歡迎,而且在軍方和特種部隊人員中也很受歡迎. 儘管尺寸適中,但瞄準鏡非常堅固可靠. Trijicon反射式瞄準鏡的特點與著名的ACOG非常相似,這種瞄準鏡可以提高目標的定位速度,提高遠端射擊精度.
+        \nTrijicon瞄準鏡的高精度是因為它可以垂直和水平調節,還有一個光感測器可以根據周圍環境的亮度自動調整亮度. 該裝置的一個重要優點是,它可以安裝在幾乎任何武器上,無論是手槍,步槍,卡賓槍,獵槍,甚至弩. </text>
+	</string>
+	
+	<string id="st_addon_scope_aimpoint">
+		<text>Aimpoint Micro T1 反射式瞄準鏡(高輪廓基座)</text>
+	</string>
+	<string id="st_addon_scope_aimpoint_descr">
+		<text>Aimpoint瞄準鏡由於其強度享譽全球,承受極端條件的同時在武器上只增加少量的重量. 任何型別的霰彈槍和手槍——瞄準鏡什麼都能搞定! 最輕的封閉式紅點瞄準鏡專為獵人設計,允許更快地瞄準. </text>
+	</string>
+	
+	<string id="st_addon_scope_ekp8_02">
+		<text>Cobra EKP 8-02反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_ekp8_02_descr">
+		<text>Kobra反射式瞄準鏡在自然光照條件下(晴朗的白天、深沉的黃昏和有月光的夜晚)提供自信的瞄準,這得益於16級手動調整瞄準分劃的亮度. 瞄準分劃和目標位於同一平面上,可以用一隻或兩隻眼睛進行瞄準為射手創造無限的視野. 並對快速移動、小尺寸和短暫突然出現的目標進行有效的高速射擊.</text>
+	</string>
+	
+	<string id="st_addon_scope_specterDR">
+		<text>ELCAN SpecterDR瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_specterDR_descr">
+		<text>Elcan SpecterDR 1-4X DFOV14-T1混合光學瞄準鏡是加拿大公司的獨特設計,可在1倍和4倍放大倍率之間進行切換. DFOV14-T1瞄準分劃根據北約口徑5.56子彈的飛行軌跡繪製彈道點,保證在任何距離的高精度. 所有這些都使瞄準鏡既相容圍獵,也相容接近或埋伏的經典狩獵方式.
+        \nElcan SpecterDR的設計特點確保無論選擇何種放大倍率出瞳距離都保持不變,在需要快速切換到不同距離目標的情況下提供舒適的瞄準. 最佳設計允許最大數量的光線通過,再加上品牌的多層反光塗層,由優質玻璃製成的鏡片保證了明亮、對比度高、色調均勻,在整個視野中沒有扭曲.
+		\nELCAN SpecterDR採用堅固耐用的輕質航空級鋁合金製成,能夠抵禦各種腐蝕性物質,從而在惡劣環境下仍能提供強大的觀瞄效果,防震設計以承受槍支連續射擊時的強大後坐力. 特殊防鏡片反光將完全排除在陽光下暴露的可能性.(瞄準鏡頂部有備用機械瞄具)</text>
+		
+		
+	</string>
+	
+	<string id="st_addon_scope_pso2">
+		<text> PSO-1М(無護目罩)</text>
+	</string>
+	<string id="st_addon_scope_pso2_descr">
+		<text>PSO-1M瞄準鏡是由新西伯利亞儀器製造廠(NPZ光學國家工廠)生產的一系列蘇聯製造的光學瞄準鏡. 自1964年作為SVD狙擊步槍的標準瞄準鏡引入以來一直被廣泛使用. 後來被廣泛使用於卡拉什尼科夫系列武器. 因其耐用性、多功能性和設計精良的分劃而聞名,具有方便的測距刻度. 倍率為4.0x,主要用於遠距離作戰,它通過燕尾槽安裝到武器上.</text>
+	</string>
+	
+			<string id="st_addon_scope_0kp2">
+		<text>OKP-7 反射式瞄準鏡(皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_0kp2_descr">
+		<text>OKP瞄準鏡的設計初衷允許在瞬息萬變的戰場條件下依然能夠瞄準射擊,減輕了瞄準時射手的疲勞,並在必要時允許無阻礙地使用基礎機械瞄具. 該瞄準鏡的主要特徵是無框反光鏡附件,對視野不會有太大的影響與遮擋. 取而代之的是反射鏡由薄而堅固的遮陽板保護,射擊時幾乎沒有干擾.</text>
+	</string>
+	
+		<string id="st_addon_scope_d0cter">
+		<text>Docter Sight III 反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_d0cter_descr">
+		<text>DocterOptics的Docter Sight III是第三代微型光學裝置. 直觀,易於安裝和使用紅點將驚喜經驗豐富的射手. 結合可靠性和整體設計,Docter Sight III成為特異區不可或缺的助手.</text>
+	</string>
+	
+	<string id="st_addon_scope_1p59">
+		<text>1P59 "超子"狙擊瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_1p59_descr">
+		<text>"超子"狙擊步槍瞄準鏡的目的是偵察目標並用狙擊步槍進行瞄準射擊. 提供了目標測距過程中瞄準角的自動輸入. 通過放大幅度更大、使用更精確的測距儀、將測距操作與目標結合並輸入瞄準角,以及將瞄準角輸入刻度盤放置在瞄準鏡的視野中,使SVD的射擊效率比PSO-1標準瞄準鏡提高了1.3-2倍(取決於目標的射程和大小).</text>
+	</string>	
+	
+	<string id="st_addon_scope_1pn93">
+		<text>1PN93-4 夜視瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_1pn93_descr">
+		<text>1PN93-4是夜視儀的第三代產品. 用於在自然環境照射下的探測、識別和瞄準射擊.</text>
+	</string>
+	
+	<string id="st_addon_scope_pks">
+		<text>PKS-07 (未使用)</text>
+	</string>
+	<string id="st_addon_scope_pks_descr">
+		<text>PKS-07戰術狙擊手瞄準鏡,帶雙黑/紅測距十字線,通用AK/SKS/SVD版本是一款基於準直器技術的獨特狙擊手瞄準鏡.該望遠鏡是在洛莫(俄羅斯聖彼得堡)特別為VSK-94狙擊手平臺設計的.由於它在技術上更先進、更輕,俄羅斯軍方選擇它而不是PSO-3作為SV-98的標準光學元件.我們提供帶有線性分劃的仰角炮塔的AA版本,由Kalinka Optics獨家進口.它適合AK和SVD步槍,並優化用於SVD、Tigr、PSL Mosin和類似步槍.它的全塗層棱鏡透鏡系統提供了一個顯著的,高對比度,廣角視野和較低的目鏡位置舒適的瞄準.瞄準鏡有一個發光的測距十字線.該範圍具有POSP風格的偏差和高程調整(每個高程轉檯"咔噠"在100米處移動POI 4.5釐米,每個偏差轉檯"咔噠"在100米處移動POI 2.5釐米).特殊的防護透鏡塗層可在極端戰場條件下保護瞄準鏡,防止其被刮傷和污染.注意這個範圍上的極端溫度等級,你會提前退出.它配有一個外殼和橡膠目鏡.絕對是最好的選擇！.</text>
+	</string>
+	
+	<string id="st_addon_scope_leupold">
+		<text>Leupold Mark 8 CQBSS 1.1-8x24</text>
+	</string>
+	<string id="st_addon_scope_leupold_descr">
+		<text>Leupold Mark 8 1.1-8x24光學瞄準鏡,具有廣泛的倍數範圍. 非常適合短距離射擊,但不值得掛上"圍欄"瞄準鏡的標籤,因為它在中距離精確射擊相當有效.</text>
+	</string>
+	
+	<string id="st_addon_scope_mepro">
+		<text>Meprolight M21自發光夜間紅點瞄具</text>
+	</string>
+	<string id="st_addon_scope_mepro_descr">
+		<text>MEPRO M21是應以色列特種部隊的要求而設計. MEPRO M21採用氚氣自發光原理,外殼上裝有采光條在白天吸取外界自然光來增強分劃的亮度,在夜晚缺乏自然光時自動切換分劃使用氚光. 在任何天氣和溫度條件下都可工作. 直徑為30毫米的鏡片提供了更大的視野和快速捕捉目標,可用雙眼瞄準. </text>
+	</string>
+	
+	<string id="st_addon_scope_aim_low">
+		<text>Aimpoint Micro T1 反射式瞄準鏡(低輪廓基座)</text>
+	</string>
+	<string id="st_addon_scope_aim_low_descr">
+		<text>Aimpoint瞄準鏡由於其強度享譽全球,承受極端條件的同時在武器上只增加少量的重量. 任何型別的霰彈槍和手槍——瞄準鏡什麼都能搞定! 最輕的封閉式紅點瞄準鏡專為獵人設計,允許更快地瞄準.</text>
+	</string>	
+
+	<string id="st_addon_scope_aimpoint_pro">
+		<text>Aimpoint PRO</text>
+	</string>
+	<string id="st_addon_scope_aimpoint_pro_descr">
+		<text>Aimpoint Patrol Rifle Optic(PRO)反射式瞄準鏡是在一批經過特別挑選的前特種部隊還有現役特種部隊專業人員的直接參與下研製. Aimpoint系統融合了許多前所未見的功能,在現代執法面臨的挑戰條件下,最大限度地提高了該瞄準鏡的效能. 可以很容易地安裝在任何具有皮卡汀尼導軌的武器上.</text>
+	</string>
+
+	<string id="st_addon_scope_1p76">
+		<text>1P76 "Rakurs-A"(用於燕尾槽安裝)</text>
+	</string>
+	<string id="st_addon_scope_1p76_descr">
+		<text>該瞄準鏡具有廣闊的視野和單倍放大,允許在動態戰鬥條件下用肉眼和瞄準鏡同時快速檢視地形,而不會影響目標的可見度. 爲了使重量和尺寸最小化,1P76採用了Pehan棱鏡上的旋轉系統和透鏡移動校準機制,分劃由氚發光元件照明.</text>
+	</string>	
+
+	<string id="st_addon_scope_pka">
+		<text>PK-A 反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_pka_descr">
+		<text>PK-A是由明斯克Belomo公司的專家開發的小型輕武器反射式瞄準鏡. 該瞄準裝置包括一倍率光學瞄準鏡,分劃爲一個清晰可見的紅點被投射到該光學瞄準鏡上. 瞄準鏡內充滿了氮氣以防止光學元件起霧. </text>
+	</string>
+
+	<string id="st_addon_scope_ekp8_18">
+		<text>Kobra EKP 8-18反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_ekp8_18_descr">
+		<text>Kobra EKP-8-18反射式瞄準鏡,帶有電子照明亮度控制電路和瞄準分劃型別切換功能,該瞄準鏡設計用於安裝在帶有皮卡汀尼導軌的武器上.</text>
+	</string>	
+
+<string id="st_addon_sil_osprey">
+		<text>此專案不再在外掛中使用 / The Item is no longer in use in the addon</text>
+	</string>
+	<string id="st_addon_sil_osprey_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45毫米\n \n%c[ui_gray_1]SilencerCo魚鷹消聲器改良用於5.56和5.45毫米步槍.在特異區中,通常由黑石老兵使用.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+	
+	<string id="st_addon_sil_salvo">
+		<text>Salvo 12消聲器</text>
+	</string>
+	<string id="st_addon_sil_salvo_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 12毫米\n \n%c[ui_gray_1]Salvo 12消聲器相容SilencerCo公司生產的12號口徑霰彈槍. \n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+	
+	<string id="st_addon_scope_deltapoint">
+		<text>Deltapoint PRO反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_deltapoint_descr">
+		<text>Leupold的DeltaPoint Pro緊湊型瞄準鏡幾乎沒有應用限制. 最初計劃安裝在霰彈槍上進行比賽和實彈射擊.從霰彈槍和手槍到AR平臺,它在各種武器上表現出色,作為主瞄準鏡或副瞄準鏡都會呈現出優異的成績.</text>
+	</string>
+	
+	<string id="st_addon_scope_e0t2">
+		<text>EOTech XPS3-0全息瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_e0t2_descr">
+		<text>該瞄準鏡來自美國Eotech公司. XPS3-0比其他全息瞄準鏡更小,但在速度和功能上並不遜色. 它安裝在皮卡汀尼導軌上.</text>
+	</string>
+	
+	<string id="st_addon_scope_pn23">
+		<text>PN-23 夜視瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_pn23_descr">
+		<text>從自新西伯利亞儀器製造廠的小型夜間瞄準鏡,具有固定倍數(3x). 它安裝在皮卡汀尼導軌上.</text>
+	</string>
+	
+	<string id="st_addon_scope_gauss_sight">
+		<text>EOTS-62</text>
+	</string>
+	<string id="st_addon_scope_gauss_sight_descr">
+		<text>(在目前的BaS測試版中,這個裝備不起作用.不要買！)EOP-62電子光學瞄準鏡是由特異域內的秘密實驗室的設計師研製,用於與已知的"產品62"航天器的超精確武器一起使用. 它安裝在皮卡汀尼導軌上. 具有目標檢測功能.</text>
+	</string>
+	
+	<string id="st_addon_sil_hexagon">
+		<text>Hexagon SKS 7.62x39消聲器</text>
+	</string>
+	<string id="st_addon_sil_hexagon_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑.\n \n%c[ui_gray_1]Hexagon公司為SKS研製的消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]低</text>
+	</string>
+	
+	<string id="st_addon_scope_marchf">
+		<text>March Tacti口徑 3-24x42 FFP</text>
+	</string>
+	<string id="st_addon_scope_marchf_descr">
+		<text>Deon Opti口徑 Design Corporation是一家日本公司成立於2004年底. 一個經驗豐富的工程師團隊能夠在短時間內開發出高級光學瞄準具. March品牌下生產的瞄準鏡的主要優點是難以置信的高放大率,這在光學瞄準鏡中是無與倫比的. 該公司的光學方案允許您獲得逼真的影象無論放大率如何. 所有產品都是手工組裝然後經過嚴格的測試,保證了高可靠性和耐用性.</text>
+	</string>
+	
+	<string id="st_addon_scope_pgo7gs">
+		<text>PGO-7V 瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_pgo7gs_descr">
+		<text>PGO-7光學瞄準鏡是RPG-7發射器的主要瞄準鏡. 它的作用是用於引導發射器瞄準不同距離的目標.</text>
+	</string>
+	
+	<string id="st_addon_scope_rakurs">
+		<text>1P76 "Rakurs-A"(相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_rakurs_descr">
+		<text>該瞄準鏡具有廣闊的視野和單倍放大,允許在動態戰鬥條件下用肉眼和瞄準鏡同時快速檢視地形,而不會影響目標的可見度. 爲了使重量和尺寸最小化,1P76採用了Pehan棱鏡上的旋轉系統和透鏡移動校準機制,分劃由氚發光元件照明.</text>
+	</string>
+
+	<string id="st_addon_scope_compm4s">
+		<text>Aimpoint CompM4s (相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_compm4s_descr">
+		<text>瑞典Aimpoint公司的反射式瞄準鏡,專為中短距離精確射擊而設計.</text>
+	</string>
+
+	<string id="st_addon_scope_susat">
+		<text>SUSAT (相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_susat_descr">
+		<text>SUSAT是英國皇家武器研發中心開發的4X光學瞄準鏡. 由Avimo和聯合科學儀器公司製造. 它最常用於中遠端輕小型武器的瞄準射擊.(瞄準鏡頂部有備用機械瞄具).</text>
+	</string>
+
+	<string id="st_addon_scope_1p78gs">
+		<text>1P78 卡什坦</text>
+	</string>
+	<string id="st_addon_scope_1p78gs_descr">
+		<text>1P78是俄羅斯武裝部隊服役的最新光學瞄準鏡之一. 該設計在概念上類似於ACOG,具有相對較低的放大率(2.8倍),設計用於從帶有燕尾槽側軌的武器上進行中距離瞄準射擊.</text>
+	</string>
+
+	<string id="st_addon_scope_1pn93n2_1gs">
+		<text>1PN93-1 夜視儀</text>
+	</string>
+	<string id="st_addon_scope_1pn93n2_1gs_descr">
+		<text>第二代固定放大率夜視儀(4屈光度).選項1PN93-1設計用於在中距離能見度低的情況下作戰.設計用於安裝在帶有標準燕尾式支架的武器上(如華沙條約國家)</text>
+	</string>
+	
+	<string id="st_addon_scope_kemper">
+		<text>Firefield Kemper XL-M反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_kemper_descr">
+		<text>Kemper XL-M是一種反射式瞄準鏡,非常適合高速射擊、傾斜射擊和移動目標射擊. 與民用型號不同"M"是一種軍用型號的瞄準鏡,由更堅固的鋁合金製成,專為惡劣使用條件而設計. 安裝在皮卡汀尼導軌上.</text>
+	</string>
+
+	<string id="st_addon_scope_usp1">
+		<text>1P29 "鬱金香" (無目鏡罩)</text>
+	</string>
+	<string id="st_addon_scope_usp1_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 所有華約步槍\n \n%c[ui_gray_1]USP-1白光瞄準鏡(指1P29)設計用於在白天和夜間照明目標進行瞄準射擊. 該瞄準鏡無需電池,瞄準鏡的分劃佈局為吊掛式方尖碑形的瞄準標線,並且以氚用作黑暗或光照不足等低光度環境時的照明光源.\n \n
+		%c[d_purple] • %c[ui_gray_2] 倍率: %c[ui_gray_1]4.0x\n
+		%c[d_purple] • %c[ui_gray_2] 分劃: %c[ui_gray_1]PSU-1</text>
+	</string>
+
+	<string id="st_addon_sil_rotor">
+		<text>Rotor 43 7.62x54 膛口制退器</text>
+	</string>
+	<string id="st_addon_sil_rotor_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑.\n \n%c[ui_gray_1]Rotor 43膛口制退器設計用於安裝在SVD-S 7.62x54上,定位為制退器但同時降低射擊聲音.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]低</text>
+	</string>
+	
+	<string id="st_addon_scope_trijicon_rmr">
+		<text>Trijicon 戰術套件(相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_trijicon_rmr_descr">
+		<text>該套件由兩個Trijicon瞄準鏡組成,允許在應用皮卡汀尼導軌的武器上同時安裝兩個瞄準鏡:Trijicon Acog BAC 5.56 BDC和Trijicon RMR. 這種佈局可以相容短距離和長距離瞄準射擊.</text>
+	</string>	
+	
+	<string id="st_addon_scope_mark8_rmr">
+		<text>Leupold RMR 戰術套件(相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_mark8_rmr_descr">
+		<text>該套件由Leupold和Trijicon公司的兩種瞄準鏡組成,允許在應用皮卡汀尼導軌的武器上同時安裝兩個瞄準鏡: Leupold Mark 8 CQBSS和Trijicon RMR. 這種佈局可以相容短距離和長距離瞄準射擊.</text>
+	</string>
+	
+	<string id="st_addon_scope_psicho_rmr">
+		<text>PSO RMR 戰術套件。 (適用於燕尾槽和皮卡汀尼導軌/維弗基座)</text>
+	</string>
+	<string id="st_addon_scope_psicho_rmr_descr">
+		<text>該戰術套件組合了俄羅斯 BelOMO 和美國 Trijicon 公司製造的兩個瞄準鏡， 可以使兼具有燕尾槽和皮卡汀尼導軌的步槍上同時安裝 PSO-1m2-1瞄準鏡 和 Trijicon RMR紅點瞄具。 這種配置使射手可以在長、短距離上自由切換瞄準方式而不會感到任何不適。</text>
+	</string>
+	
+	<string id="st_addon_scope_spec_alt">
+		<text>SpecterDR RMR 戰術套件(相容皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_spec_alt_descr">
+		<text>該套件由Elcan和Trijicon公司的兩種瞄準鏡組成,允許在應用皮卡汀尼導軌的武器上同時安裝兩個瞄準鏡: SpecterDR DFOV14-C2 1-4X和Trijicon RMR. 這種佈局可以相容短距離和長距離瞄準射擊.</text>
+	</string>
+	
+	<string id="st_addon_scope_kashtan_rmr">
+		<text>Kashtan RMR 戰術套件(相容燕尾槽和皮卡汀尼導軌)</text>
+	</string>
+	<string id="st_addon_scope_kashtan_rmr_descr">
+		<text>該套件由俄羅斯中央設計局"Tochpribor"和美國Trijicon公司的兩種瞄準鏡組成,允許在應用燕尾槽和卡汀尼導軌的武器上同時安裝兩個瞄準鏡: 1P78 Kashtan和Trijicon RMR. 這種佈局可以相容短距離和長距離瞄準射擊.</text>
+	</string>
+
+	<string id="st_addon_sil_hex23">
+		<text>野豬23消聲器</text>
+	</string>
+	<string id="st_addon_sil_hex23_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 23毫米口徑.\n \n%c[ui_gray_1]KS-23野豬自製的消聲器. 它是由特異區內一些槍匠製造的. 這個裝置的目的是至少稍微減少野豬射擊的轟鳴聲,以免引起不必要的注意. 設計結果是雷鳴般沉重,這給使用消聲器帶來了一些不便.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]低</text>
+	</string>		
+
+	<string id="st_addon_scope_mono_kit">
+		<text>黑石AK12 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_mono_kit_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] AK12 黑石.\n \n%c[ui_gray_1] 該套件包括: 符合人體工程學的護木,允許安裝30毫米榴彈發射器,以及近距離和中遠端瞄準裝置: Trijicon Acog和AN/PEQ-16 LAM.它還包括一個60發容量的彈匣. 
+		\n改進后不可拆卸.</text>
+	</string>
+	
+	<string id="st_addon_sil_aac762">
+		<text>AAC 7.62 SDN-6消聲器</text>
+	</string>
+	<string id="st_addon_sil_aac762_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑.\n \n%c[ui_gray_1]AAC 762 SDN-6消聲器設計用於7.62x51 NATO彈藥,但也可用於300 AAC、6.8 SPC、6.5和5.56mm NATO彈藥. 只能安裝在相容的51T型膛口螺紋上.</text>
+	</string>
+	
+	<string id="st_addon_sil_tgpv">
+		<text>TGP-V 消聲器</text>
+	</string>
+	<string id="st_addon_sil_tgpv_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 7.62口徑.\n \n%c[ui_gray_1]戰術消聲器是專門為SVDS步槍而設計. 也可用於PKM/PKP系列機槍.</text>
+	</string>		
+	
+	<string id="st_addon_sil_osp9">
+		<text>Osprey-9消聲器</text>
+	</string>
+	<string id="st_addon_sil_osp9_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 9 毫米口徑.\n \n%c[ui_gray_1]由Silencerco公司製造的用於9毫米手槍的輕型消聲器.</text>
+	</string>
+
+	<string id="st_addon_sil_pmm">
+		<text>PMM 消聲器</text>
+	</string>
+	<string id="st_addon_sil_pmm_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 9 毫米口徑.\n \n%c[ui_gray_1]9x18毫米手槍的消聲器,也可與任何帶有類似膛口螺紋的9x18手槍配合使用.</text>
+	</string>
+
+	<string id="st_addon_scope_kit_aus_tri">
+		<text>SA58 FAL AUS的"偵察"戰術套件</text>
+	</string>
+	<string id="st_addon_scope_kit_aus_tri_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] DS Arms SA-58澳大利亞"奧地利風格".\n \n%c[ui_gray_1]
+		改進為射手步槍在短距離內也很容易使用. 套件包括: FAB AG FAL手槍式握把,安裝皮卡汀尼導軌的DS Arms Extreme Duty防塵蓋,人體工程學VLTOR CASV FAL護木,SA-58 7.62x51的21英吋槍管和人體工程學DSA BRS槍托. 
+		\n此外該套件還包括兩個瞄準鏡: Trijicon Acog和NcStar 45導軌上的Aimpoint T1. 
+		\n改進后不可拆卸.</text>
+	</string>
+	
+	<string id="st_addon_scope_kit_fal_leup">
+		<text>SA58 FAL AUS的"掠奪者"戰術套件</text>
+	</string>
+	<string id="st_addon_scope_kit_fal_leup_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] DS Arms SA-58澳大利亞"奧地利風格".\n \n%c[ui_gray_1]
+		改進為射手步槍在短距離內也很容易使用. 套件包括: Fab AG FAL手槍式握把,安裝皮卡汀尼導軌的DS Arms Extreme Duty防塵蓋,人體工程學VLTOR CASV FAL護木,SA-58 7.62x51的21英吋槍管和人體工程學DSA BRS槍托. 
+		\n此外該套件還包括兩個瞄準鏡: Leupold Mark 8 CQBSS和NcStar 45導軌上的Aimpoint T1. 
+		\n改進后不可拆卸.</text>
+	</string>	
+
+	<string id="st_addon_scope_kit_sa5x_spec">
+		<text>SA58 FAL AUS"防守者"戰術套件</text>
+	</string>
+	<string id="st_addon_scope_kit_sa5x_spec_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] DS Arms SA-58澳大利亞"奧地利風格".\n \n%c[ui_gray_1]
+		改進為射手步槍在短距離內也很容易使用. 套件包括: Fab AG FAL手槍式握把,安裝皮卡汀尼導軌的DS Arms Extreme Duty防塵蓋,人體工程學VLTOR CASV FAL護木,SA-58 7.62x51的21英吋槍管和人體工程學DSA BRS槍托.  
+		\n此外該套件還包括兩個瞄準鏡: ELCAN SpecterDR和NcStar 45導軌上的Aimpoint T1.
+		\n改進后不可拆卸.</text>
+	</string>
+
+	<string id="st_addon_sil_geks545">
+		<text>5.45/7.62x39 Hexagon消聲器</text>
+	</string>
+	<string id="st_addon_sil_geks545_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 5.45,7.62口徑.\n \n%c[ui_gray_1]Hexagon公司5.45x39和7.62x39口徑的消聲器.</text>
+	</string>
+
+	<string id="st_addon_sil_kek12">
+		<text>Hexagon 12K消聲器</text>
+	</string>
+	<string id="st_addon_sil_kek12_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 12號霰彈.\n \n%c[ui_gray_1]Hexagon公司為12號霰彈槍和卡賓槍製造的消聲器.</text>
+	</string>
+
+	<string id="st_addon_sil_black_box">
+		<text>AAC Black Box消聲器</text>
+	</string>
+	<string id="st_addon_sil_black_box_descr">
+		<text>\n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 9毫米,.45口徑.\n \n%c[ui_gray_1]先進武器公司生產Black Box消聲器相容大多數帶有膛口螺紋的9毫米和.45 ACP手槍.</text>
+	</string>
+
+	<string id="st_addon_scope_226sig_kit">
+		<text>西格紹爾 P226R 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_226sig_kit_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 西格紹爾 P226R手槍\n \n%c[ui_gray_1]
+        該套件包括: 用於安裝消聲器的膛口螺紋,人體工程學手槍握把和Trijicon RMR反射式瞄準鏡.
+		\n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_scope_mod9">
+		<text>沃爾特 P99 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_mod9_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 沃爾特 P99手槍 \n \n%c[ui_gray_1]
+        該套件包括: 用於消聲器的膛口螺紋,氚光機械瞄具和Viridian X5L鐳射指示器. 
+		\n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_scope_upg220">
+		<text>西格紹爾 P220 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_upg220_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]  西格紹爾 P220手槍\n \n%c[ui_gray_1]
+       套件包括:用於消聲器的膛口螺紋,氚光機械瞄具和Viridian X5L鐳射指示器和高容量12發彈匣. 
+	   \n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_scope_23_up">
+		<text>KS-23的510毫米槍管</text>
+	</string>
+	<string id="st_addon_scope_23_up_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] KS-23卡賓\n \n%c[ui_gray_1]
+        KS-23卡賓槍的槍管更短,更舒適,更輕. 
+		\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_kab_up">
+		<text>KS-23"畫眉鳥"戰術套件</text>
+	</string>
+	<string id="st_addon_scope_kab_up_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] KS-23M"畫眉鳥"\n \n%c[ui_gray_1]
+        該套件包括: 用於安裝消聲器的帶膛口螺紋槍管和Trijicon RMR瞄準鏡. 
+		\n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_sil_daniel">
+		<text>丹尼爾防務(Daniel Defence)Wave QD消聲器</text>
+	</string>
+	<string id="st_addon_sil_daniel_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 雷明頓 700\n \n%c[ui_gray_1]丹尼爾防務Wave QD消聲器,可安裝在雷明頓700型.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+
+	<string id="st_addon_scope_archangel">
+		<text>雷明頓M700 Promag Archangel 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_archangel_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 雷明頓 M700\n \n%c[ui_gray_1]
+Promag生產的雷明頓700型步槍 Archangel套件. 
+\n該套件包括聚合物槍托和20發容量彈匣. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_magpul_pro">
+		<text>雷明頓M700 馬蓋普 PRO700 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_magpul_pro_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 雷明頓 M700\n \n%c[ui_gray_1]
+PRO700是馬蓋普為M700生產的一款輕型,符合人體工程學的套件. 
+\n該套件包括12發容量彈匣和安裝在45度備用導軌上的Trijicon RMR反射式瞄準鏡. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_mod_x_gen3">
+		<text>雷明頓M700 MOD X Gen.3 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_mod_x_gen3_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]雷明頓 M700\n \n%c[ui_gray_1]
+Mod X MRS(Modular Rifle System)是A*B Arms為M700生產的一款輕型,符合人體工程學的套件. 
+\n該套件包括12發容量彈匣和安裝在45度備用導軌上的Leupold Deltapoint Pro反射式瞄準鏡. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_sil_sr1m">
+		<text>SR1MP消聲器 9x21</text>
+	</string>
+	<string id="st_addon_sil_sr1m_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR1MP 9x21 手槍\n \n%c[ui_gray_1]SR-1MP手槍的標準消聲器.安裝需要膛口螺紋.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+
+	<string id="st_addon_scope_sr1upgr1">
+		<text>SR1MP 9x21"毒蛇" 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_sr1upgr1_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR1MP 9x21 手槍\n \n%c[ui_gray_1]
+ 該套件包括氚光機械瞄具、鐳射指示模組和允許安裝消聲器的長槍管. 
+ \n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_silen98">
+		<text>毛瑟98k"護林員"消聲器轉接器</text>
+	</string>
+	<string id="st_addon_scope_silen98_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]毛瑟98k"護林員"\n \n%c[ui_gray_1]
+帶螺紋的轉接器,允許在毛瑟98K"護林員"狙擊步槍上使用消聲器. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_sil_forester">
+		<text>消聲器K98"護林員"</text>
+	</string>
+	<string id="st_addon_sil_forester_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 毛瑟98k"護林員"\n \n%c[ui_gray_1]護林員自製的消聲器,用於他自己改裝的毛瑟98k狙擊步槍. 爲了安裝到步槍上必須安裝一個螺紋轉接器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+
+	<string id="st_addon_scope_swamp">
+		<text>AK-105 "沼澤行者"</text>
+	</string>
+	<string id="st_addon_scope_swamp_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] AK-105\n \n%c[ui_gray_1]
+    由於價格的原因,AK-105的套件很罕見且不太受歡迎. 與紀律團使用的套件非常相似. 它主要出現在晴空老兵手中. 
+    \n該套包括:細長的護木,符合人體工程學的槍托和更舒適的手槍式握把和45發容量彈匣. 此外該套件還包括一個改進的扳機和三個光學裝置,使武器成為近距離和中遠端的"理想伴侶".
+    \n光學裝置: Elcan SpecterDR,安裝在45度備用導軌上的Trijicon RMR反射式瞄準鏡和AN/PEQ-15鐳射指示器.
+    \n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_lapua700">
+		<text>"獵鹿人".338雷明頓M700 戰術套件</text>
+	</string>
+	<string id="st_addon_scope_lapua700_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 雷明頓 M700\n \n%c[ui_gray_1]
+    將.308雷明頓700型口徑轉換為.338拉普馬格南口徑的套件,用於遠端打擊目標. 
+    \n套件包括: 338口徑槍管和338口徑消聲器螺紋,Magpul Pro槍托,包括槍管鎖定系統,可容納.338LM的彈匣和改進的Leupold瞄準鏡. 
+    \n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_gurza_up">
+		<text>SR1MP 9x21 "毒蛇" 高級戰術套件</text>
+	</string>
+	<string id="st_addon_scope_gurza_up_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR1MP 9x21 Gyurza\n \n%c[ui_gray_1]
+該套件包括鐳射指示器,4方向的皮卡汀尼導軌和Trijicon RMR瞄準鏡. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_scope_lazup_pl15">
+		<text>列別捷夫 PL-15手槍的鐳射指示器</text>
+	</string>
+	<string id="st_addon_scope_lazup_pl15_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 列別捷夫 PL-15\n \n%c[ui_gray_1]
+鐳射指示器允許您從幾乎任何位置進行瞄準射擊.\n </text>
+	</string>
+
+	<string id="st_addon_scope_pl15_scolaz">
+		<text>PL-15手槍 高級"戰術"套件</text>
+	</string>
+	<string id="st_addon_scope_pl15_scolaz_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 列別捷夫 PL-15\n \n%c[ui_gray_1]
+ 該套件包括鐳射指示器,Aimpoint T1瞄準鏡和基座. 
+ \n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_sil_lapu7">
+		<text>M700.338LM消聲器</text>
+	</string>
+	<string id="st_addon_sil_lapu7_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 雷明頓 M700 .338拉普馬格南 \n \n%c[ui_gray_1]雷明頓M700.338 拉普馬格南用消聲器\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_addon_sil_pl15">
+		<text>PL-15消聲器</text>
+	</string>
+	<string id="st_addon_sil_pl15_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 列別捷夫 PL-15\n \n%c[ui_gray_1]列別捷夫 PL-15手槍用消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+
+	<string id="st_addon_scope_shakal">
+		<text>AK-105 "豺狼"</text>
+	</string>
+	<string id="st_addon_scope_shakal_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] AK-105\n \n%c[ui_gray_1]
+由於價格的原因,AK-105的套件很罕見且不太受歡迎. 與睛空使用的套件非常相似. 它主要出現在紀律團老兵手中. 
+\n該套包括:細長的護木,符合人體工程學的槍托和更舒適的手槍式握把和45發容量彈匣. 此外該套件還包括一個改進的扳機和三個光學裝置,使武器成為近距離和中遠端的"理想伴侶". 
+\n光學裝置: Trijicon ACOG,安裝在45度備用導軌上的Trijicon RMR反射式瞄準鏡和AN/PEQ-15鐳射指示器. 
+\n改進后不可拆卸. \n </text>
+	</string>
+
+	<string id="st_addon_sil_spec_isg">
+		<text>步槍動力ISG消聲器</text>
+	</string>
+	<string id="st_addon_sil_spec_isg_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] ISG武器: 5.45/7.62毫米\n \n%c[ui_gray_1]步槍動力公司為位於特異區內ISG部門特別訂購的消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]高</text>
+	</string>
+
+	<string id="st_addon_scope_u2p2g0r">
+		<text>Sig Sauer P220套件"9"</text>
+	</string>
+	<string id="st_addon_scope_u2p2g0r_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] Sig Sauer P220 手槍\n \n%c[ui_gray_1]
+ 該套件包括用於安裝消聲器的9x19口徑槍管,氚光機械瞄具和Viridian X5L鐳射指示器,高容量19發彈匣. 
+ \n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_sil_apb">
+		<text>APB消聲器</text>
+	</string>
+	<string id="st_addon_sil_apb_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 9 毫米\n \n%c[ui_gray_1]用戰術套件改進的APS手槍的消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_addon_scope_apsabigo">
+		<text>APS手槍戰術套件</text>
+	</string>
+	<string id="st_addon_scope_apsabigo_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]  APS 手槍\n \n%c[ui_gray_1]
+ 該套件包括: 用於APB消聲器的槍管,氚光機械瞄具和符合人體工程學的手槍橡膠握把. 
+ \n改進后不可拆卸.\n </text>
+	</string>
+
+	<string id="st_addon_scope_kp_sr2">
+		<text>KP SR-2反射式瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_kp_sr2_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR-2M 衝鋒鎗 \n \n%c[ui_gray_1]
+ KP SR-2反射式瞄準鏡旨在提高9x21毫米 SR-2M衝鋒鎗在晴朗的白天和晚上以及夜間射擊的條件下對新出現和移動目標的射擊效率.\n </text>
+	</string>
+
+	<string id="st_addon_sil_veresk">
+		<text>GZV-SR2消聲器</text>
+	</string>
+	<string id="st_addon_sil_veresk_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR-2M 衝鋒鎗\n \n%c[ui_gray_1]用於SR-2M 衝鋒鎗的消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+	<string id="st_addon_scope_sr2_upkit">
+		<text>SR-2M"維列斯克"衝鋒鎗戰術套件</text>
+	</string>
+	<string id="st_addon_scope_sr2_upkit_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] SR-2M 衝鋒鎗\n \n%c[ui_gray_1]
+ 該套件包括: 安裝皮卡汀尼導軌的護木,鐳射指示器和KP SR-2反射式瞄準鏡. 
+ \n改進后不可拆卸.\n </text>
+	</string>	
+
+	<string id="st_grenade_launcher_monolit">
+		<text>黑石"衛士"榴彈發射器</text>
+	</string>
+	<string id="st_grenade_launcher_monolit_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] 裝有黑石戰術套件的AK-12.\n \n%c[ui_gray_1]
+由黑石設計師基於特殊的無聲榴彈發射器6G17"金絲雀"研製而成的30毫米輕型榴彈發射器.\n 
+ %c[d_purple] • %c[ui_gray_2] 相容: %c[ui_gray_1]VOG-30 30毫米 榴彈\n</text>
+	</string>
+
+	<string id="st_addon_sil_auga">
+		<text>斯太爾UMS消聲器</text>
+	</string>
+	<string id="st_addon_sil_auga_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] Aug Steyr\n \n%c[ui_gray_1]斯太爾UMS(通用軍用消聲器)-斯太爾突擊步槍的消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_addon_scope_5c_tik">
+		<text> 特種ISG戰術套件(AK 5C套件)</text>
+	</string>
+	<string id="st_addon_scope_5c_tik_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]AK 5C卡賓槍\n \n%c[ui_gray_1]AK 5C的套件,將標準的AK 5C改進為該套件的緊湊型號以適用於所有場合. 該套件在ISG人員出現后不久就出現在特異區內. \n \n%c[d_purple] • %c[ui_gray_2] 套件包括:戰術前握,LA5鐳射指示器,Leupold LCO和D'evo x6瞄準鏡以及帶有所有必要元件的短槍管,因為改進了導氣系統所以具有比之前更高的射速. 
+		\n改進后不可拆卸.</text>
+	</string>
+
+	<string id="st_addon_sil_m42k">
+		<text>AAC M4-2000 消聲器</text>
+	</string>
+	<string id="st_addon_sil_m42k_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] M4A1 RAS,L85\n \n%c[ui_gray_1]先進武器公司為AR-15卡賓槍提供可靠的通用消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_addon_scope_susatov">
+		<text>SUSAT L85標準瞄準鏡</text>
+	</string>
+	<string id="st_addon_scope_susatov_descr">
+		<text>SUSAT是英國英國皇家武器研究與發展中心開發的4倍光學瞄準鏡. 由Avimo和聯合科學儀器公司製造.它最常用於中遠端輕武器瞄準射擊. 它安裝在L85上機匣燕尾座上.(頂部有備用的機械瞄具).</text>
+	</string>
+
+	<string id="st_addon_sil_surfire">
+		<text>SOCOM556-MONSTER 消聲器</text>
+	</string>
+	<string id="st_addon_sil_surfire_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] M4 戰術型\n \n%c[ui_gray_1]Surefire SOCOM556-Monster 5.56x45消聲器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+
+	<string id="st_grenade_launcher_scar">
+		<text>FN40GL榴彈發射器</text>
+	</string>
+	<string id="st_grenade_launcher_scar_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] FN SCAR\n \n%c[ui_gray_1]
+ 比利時FN Herstal公司為FN SCAR突擊步槍研製的40毫米榴彈發射器\n
+%c[d_purple] • %c[ui_gray_2] 相容: %c[ui_gray_1]M203 40毫米 榴彈\n</text>
+	</string>
+
+	<string id="st_grenade_launcher_l85">
+		<text> M320 榴彈發射器</text>
+	</string>
+	<string id="st_grenade_launcher_l85_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2] L85\n \n%c[ui_gray_1]
+M320榴彈發射器由Heckler&amp;Koch公司于2008年研製,以取代M203榴彈發射器.\n
+%c[d_purple] • %c[ui_gray_2] 相容: %c[ui_gray_1]M203 40毫米 榴彈\n</text>
+	</string>	
+
+	<string id="st_addon_sil_kac4">
+		<text>KAC QDSS NT-4 5.56x45消聲器</text>
+	</string>
+	<string id="st_addon_sil_kac4_descr">
+		<text>\n \n%c[ui_gray_2]相容:\n \n%c[d_cyan] • %c[ui_gray_2]豐和20\n \n%c[ui_gray_1]奈特軍械公司 QDSS NT-4 5.56x45口徑消音器.\n \n%c[d_purple] • %c[ui_gray_2] 聲音抑制: %c[ui_gray_1]中等</text>
+	</string>
+	
+</string_table>

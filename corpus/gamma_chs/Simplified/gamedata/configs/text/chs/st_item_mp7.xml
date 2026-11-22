@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_mp7_descr_new">
+		<text>Heckler &amp; Koch MP7 (Maschinenpistole 7) 是由 Heckler &amp; Koch (H&amp;K黑克勒&amp;科赫) 设计和制造的德国单兵防卫武器 (PDW), 使用 HK 4.6x30mm 弹药筒, 它采用新弹药筒设计, 以满足 1989 年发布的北约要求, 因为这些要求要求个人防御武器 (PDW) 级枪支, 与仅限于传统手枪弹药筒的现有武器相比, 具有更强的穿透防弹衣的能力, MP7 于 2001 年投入生产\n \n
+		%c[ui_gray_2]枪械配件: \n
+		%c[d_purple] • %c[d_green]消音器: %c[d_orange]兼容9x19消音器\n
+		%c[d_purple] • %c[d_green]瞄具: %c[0,250,250,0]兼容%c[d_cyan]"皮卡汀尼导轨"\n \n</text>
+	</string>
+	
+</string_table>

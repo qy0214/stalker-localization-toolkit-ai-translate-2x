@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_anomalies">
+		<text>异常点</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_emission">
+		<text>能量风暴</text>
+	</string>
+	<string id="encyclopedia_anomalies_emission_text">
+		<text>
+			%c[pda_white]能量风暴%c[ui_gray_1]
+			也被称作能量风暴, 是特异区积累的辐射能量急速爆发的现象\n
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			\n 突如其来的强风, 和铺满猩红色天际的乌云, 伴随着无数的雷声和脚下低沉的轰鸣, 这些异象, 都预示着一场能量风暴的临近
+			\n 剧烈的辐射炙烤着大地, 灵能的异变扭曲着生物的意识. 顷刻之间, 又如风卷残云般消褪. 只留下满目疮痍, 生灵涂炭.
+			\n 这种能量对人体的照射极其致命, 却无法穿透坚固的工事, 只要躲在室内或者地下隧道中, 就能安全的渡过一劫. 
+			\n 和脉冲风暴一样, 特异区的能量通过这样的途径释放到外界, 使得异常点中的能量过载并凝结, 这样, 新的神器就又有机会从中诞生.
+			\n 所以才会有人说, 神器就好像那些被能量风暴摧毁的亡魂, 以另一种形式重返大地
+			\n 据说还有一种能够进入假死状态的药物, 可以让人即使暴露在这样的环境下也不至于死亡, 其真实的作用机理无人知晓\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_phantom">
+		<text>幻象</text>
+	</string>
+	<string id="encyclopedia_anomalies_phantom_text">
+		<text>
+			%c[pda_white]幻象%c[ui_gray_1]造成的伤害更偏向于心理层面\n
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			\n 它既不是变异生物, 也不是异常现象, 更像是某种特殊的变异生物潜意识的投射
+			\n 这些投射总是伴随着似乎肉眼可见的透明影像, 和不需要耳朵就能听到的可怕嚎叫, 它似乎能无视一切障碍, 始终向着受害者飘去
+			\n 目前还不清楚为什么这些影像始终都是变异生物的样子
+			\n 对于这种现象, 有个十分有说服力的理论:  特异区里活动的变种怪兽似乎在某种程度上与"念域"有着强烈的联系, 因为灵能场的波动, 它们的视觉形象与狩猎的本能就在无意识的状态下投射到了人们的脑海\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_psistorm">
+		<text>脉冲风暴</text>
+	</string>
+	<string id="encyclopedia_anomalies_psistorm_text">
+		<text>
+			%c[pda_white]脉冲风暴%c[ui_gray_1]由多个灵能涡流所组成, 会释放致命的精神能量\n
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			\n 这种不寻常的异象是最近才在特异区中发生的, 尽管有很多猜测, 但其成因始终是个未解之谜
+			\n 紫色和粉色的薄雾还有大量的能量风暴云是它即将来临的征兆, 它会在顷刻之间形成, 并对所在区域造成严重的破坏
+			\n 潜行者们如果想要在这样的极端气候中存活, 必须拥有良好的灵能防护手段, 比如一些强化精神的药物, 或是具有心灵屏蔽功能的设备
+			\n 即便做好万全准备, 暴露在能量风暴中也会使心理受到伤害, 需要尽快服用精神抑制类药物
+			\n 与能量风暴类似, 脉冲风暴释放出的大量能量似乎也可以给异常点"充电", 所以在这样的能量风暴结束后, 一些潜行者们会出发寻找神器\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_radiation">
+		<text>辐射场</text>
+	</string>
+	<string id="encyclopedia_anomalies_radiation_text">
+		<text>
+			%c[pda_white]辐射场%c[ui_gray_1]是环境辐射计数超过每小时50微伦琴的区域
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			\n它们几乎覆盖着整个特异区. 在室外区域, 辐射场往往在开阔地带或者在堆积如山的废料或机械旁
+			\n%c[pda_green]提示%c[ui_gray_1]
+			%c[pda_white]• 盖革计数器%c[ui_gray_1]
+			是探测辐射强度的重要工具. 滴答声越快, 代表着这个区域的辐射就越强(可以按下数字键8来随时查看自身辐射量)
+			\n• 大量的潜行者死于辐射病, 最好常备一些消辐宁在包里
+			\n• 确保你的防毒面罩时刻保持良好状态
+			\n• 相比昂贵的消辐宁, 伏特加和香烟是一种廉价且效果良好的替代品, 在潜行者们中很流行. 只是治疗的速度可能不太理想\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_psi">
+		<text>灵能场</text>
+	</string>
+	<string id="encyclopedia_anomalies_psi_text">
+		<text>
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			\n 一片非常大的心灵能量活跃区域, 甚至向上一直延伸到云端,  通常只能通过它对光线的扭曲来发现它
+			\n 毋庸置疑, 这样的区域会影响脑部的活动, 会对心智造成伤害
+			\n 大多数情况下这些力场经常伴随着异常点的出现, 或者与辐射区相伴
+			\n 在灵能场中从未发现过神器\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_brain_scorcher">
+		<text>"焦脑器"</text>
+	</string>
+	<string id="encyclopedia_anomalies_brain_scorcher_text">
+		<text>
+			%c[pda_green]"焦脑器"%c[ui_gray_1]
+			曾是一个军用设施, 后来被某个组织所占领, 并成为了在特异区第一个应用精神控制类技术的试验场
+			\n%c[pda_green]已知情报%c[ui_gray_1]
+			苏联解体后, 这个组织继续在X8地下实验室研究, 接管并组装了"焦脑器". 而更重要的工作, 则放到了位于地下的X-19实验室中
+			\n 后来, 特异区出现, 为了阻挡人类侵入特异区心脏地带, "超念体"激活了"焦脑器"
+			\n 这个装置产生的强大心灵能量可以有效控制入侵者的思想, 并使他们服从超念体的意愿, 为黑石军团制造了无数没有思想的士兵, 不小心靠近那里的潜行者们也都成为了无意识的僵尸
+			\n 与此同时, 史特洛克带领的一队潜行者设法避开了"焦脑器"的影响范围, 进入了特异区的中心.
+			\n 而他们前进的方向, 疯狂的黑石军团正在默默等候着...\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_burner">
+		<text>爆燃点</text>
+	</string>
+	<string id="encyclopedia_anomalies_burner_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 爆燃点%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 火焰%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 爆燃点很难在白天被察觉, 因为你只能看到它上方冒出的微弱热气
+			\n 当生物或者物体进入它的范围内时就会被触发, 猛烈地喷出火柱, 焚烧周围的一切
+			\n 有时爆燃点会聚在一起, 释放时会达到很高的温度, 甚至将金属熔化, 这也许能解释为什么它们出现的地面总是会布满裂缝
+			\n 这样的性质, 导致爆燃点非常棘手, 即使你穿着顶级的护甲也没什么太大的差别
+			\n 避免受到其伤害的办法有很多, 最简单的莫过于利用螺栓来触发它, 然后绕开火柱
+			\n 是否能熟练掌握这种技巧通常事关生死\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_comet">
+		<text>火彗星</text>
+	</string>
+	<string id="encyclopedia_anomalies_comet_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 火彗星%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 火焰%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 火彗星基本就是一个会快速移动的爆燃点, 通常会沿着某条固定路线循环往复
+			\n 但与爆燃点不同的是它的核心温度极高, 直接碰到它的话, 在瞬间就会被气化
+			\n 这种异常点不会生成任何神器\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_vortex">
+		<text>奇点</text>
+	</string>
+	<string id="encyclopedia_anomalies_vortex_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 奇点%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 重力%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 一种具有强大引力的异常点. 当它触发时, 会用巨大的力量将半径10~15米内的所有物体拖入中心. 陷入其中的生物几乎没有任何生还的机会: 他们的身体会很快地压缩成一个紧密的肉球, 强大的能量随之释放, 将肉球炸成碎片. 
+			\n 这种异常点会持续存在差不多一周的时间, 并一直会呆在原地
+			\n 在白天很容易通过它上面的空气流动, 周围飞舞的树叶, 又或是散落在周围的破碎尸块, 和它中心的独特黑点来发现它
+			\n 而在夜晚, 只能通过探测器或者朝它投掷金属螺栓才能发现
+			\n 辨别奇点和引力漩涡其实很简单, 奇点的范围会大的多, 而且比引力漩涡更难逃脱, 同时造成的伤害也无人可及
+			\n 奇点的强度不同, 摆脱的难度也不同, 所装备的护甲类型非常重要, 因为你不可能全身而退
+			\n 如果发现自己已经身处奇点范围, 不要慌张, 等待它释放能量而失去引力效应的那一刻冲出去就可以, 但如果穿着一套没有升级传动系统的外骨骼, 那就只能等死了
+			\n 在被奇点拉着围绕中心旋转时, 如果顺着旋转的切线方向突然加速, 就会像引力弹弓效应那样, 可以安全迅速地挣脱引力场
+			\n 当然, 最简单的办法, 就是压根不要靠近.
+			\n 奇点会发出很容易辨识的嗡嗡声, 像科幻电影中空间扭曲时一样. 并且好像只对生物有反应. 对于一个跑得快的人来说, 单独出现的奇点通常不是什么问题, 但成群的奇点就非常危险.
+			\n 神器有可能会在多个奇点的相互作用下生成\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_springboard">
+		<text>冲击力场</text>
+	</string>
+	<string id="encyclopedia_anomalies_springboard_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 冲击力场%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 重力%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 史上最早被发现的异常点之一. 它是一个固定在地表的不稳定引力场, 大概1-2米宽. 会对靠近的物体和生物做出反应, 用强烈的冲击波破坏其半径内的所有东西. 造成的损伤小到淤青, 大到严重的伤口, 甚至直接死亡都有可能.
+			\n 冲击力场非常常见, 不论室内还是室外, 在特异区中到处都能见到. 肉眼看上去, 表现为一种涟漪状的热空气波动, 伴随着飞舞的树叶, 有时地面上还会有一块可疑的深红色血污. 朝着它扔螺栓就会触发冲击波, 因此较容易辨别
+			\n 和很多异常点相同, 在它发出冲击的间隙也可以安全地通过, 可以利用螺栓和靠近时逐渐变亮的视野来判断触发冲击的距离
+			\n 尽管这种异常点威胁不是很大, 但它们会经常出现在奇怪的位置, 让一些潜行者在与敌人交火时不小心走入它的范围, 非常令人讨厌\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_whirligig">
+		<text>引力漩涡</text>
+	</string>
+	<string id="encyclopedia_anomalies_whirligig_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 引力漩涡%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 重力%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 一种常见的危险异常点, 生物会被它抛到半空, 再被超高速旋转的力场压成碎块, 这种现象的成因一直是个未解之谜 
+			\n 虽然也会受一点小伤, 但只要设法远离它的中心, 就能逃脱引力漩涡的控制
+			\n 如果靠的太近, 引力漩涡就会猛地把受害者拽到空中, 直到将受害者肢解.
+			\n 尽管奇点的瞬间伤害更加可怕, 但引力漩涡能把生物浮空使其失去行动能力这一点, 让它成为比奇点更加危险的变异现象
+			\n 想要辨识它非常简单, 只需要看看周围四散的肉块, 并观察上方是否有不停旋转的灰尘就可以\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_fruit">
+		<text>毒汁</text>
+	</string>
+	<string id="encyclopedia_anomalies_fruit_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 毒汁%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 化学%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 在地下区域和室内常见的一种淡绿色液体, 黑暗中会发出明亮的光芒, 靠近时也能听到独特的嘶嘶声和气泡声, 当生物或者物体接触到它时, 亮度会突然增强, 并引发强烈的溶解反应, 普通的防护服也很难抵抗这样的腐蚀性
+			\n 普遍认为它是某些放射性物质泄露的残留, 又从特异区获得了异常点的能量. 它的强大腐蚀能力表现在可以溶解所有的生物组织, 无机物, 金属和塑料上
+			\n 通常单个出现, 只在某些与生化实验相关的地下设施中, 才会看到大面积泄漏的毒汁
+			\n 它有时会产生酸雾, 与其共同作用的结果会直接破坏护甲和设备\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_fuzz">
+		<text>鬼发</text>
+	</string>
+	<string id="encyclopedia_anomalies_fuzz_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 鬼发%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 化学%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 于其说这是异常点, 不如说是一种被异常能量影响的植物, 通常在角落中生长并自然下垂, 像是东方传说中的女鬼垂下的长发
+			\n 这种植物似乎吸收了异常场中的能量, 并在受到刺激时释放出去, 对肉体造成严重灼伤, 虽然危险, 却只会攻击迅速靠近的生物, 对缓慢移动的物体, 或丢过去的螺栓都没有任何反应
+			\n 它是最早受到异常场的影响而变异的植物, 也许正因为原本就是植物, 才使它能够判断目标移动的速度以及外力刺激的程度来做出攻击反馈\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_gas">
+		<text>酸雾</text>
+	</string>
+	<string id="encyclopedia_anomalies_gas_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 酸雾%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 化学%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 地面上浮现的绿色气体云. 不太容易被发现, 但如果靠近的话, 视野会变成绿色
+			\n 接触有机物或金属时, 它会释放出酸性化合物, 并喷溅到四周
+			\n 和毒汁不同, 它的形态主要是气体云雾, 而不是像毒汁那样的液体
+			\n 似乎可以视作强化版的毒汁, 因为是气体, 所以能够影响呼吸系统, 造成严重的窒息, 更具有腐蚀性和破坏性\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_gascloud">
+		<text>强酸彗星</text>
+	</string>
+	<string id="encyclopedia_anomalies_gascloud_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 强酸彗星%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 化学%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 类似酸雾, 会导致腐蚀灼伤. 但是强酸彗星能够移动. 因此可以说它是电彗星和火彗星的化学版本.
+			\n 即便拥有顶级的防护服和化学防护物品, 也不能完全避免它带来的伤害, 接触其核心的话有可能直接死亡. 直接远离它们才是最好的办法
+			\n 这种异常点不会生成任何神器\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_electro">
+		<text>滚雷</text>
+	</string>
+	<string id="encyclopedia_anomalies_electro_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 滚雷%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 电能%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 一种直径大约10米, 积蓄大量静电的异常点, 一旦触发就会释放出电弧, 瞬间杀死几乎所有生物. 周围漂浮着被电离的等离子体, 以及会时不时放出小型电弧, 因此很容易被辨别出来, 滚雷对靠近的生物和物体都会产生反应
+			\n 通常会在狭小的空间里出现, 也有人观察到它们会相隔1米左右抱团出现
+			\n 虽然在户外很容易躲开, 但在封闭空间内就很危险了
+			\n 像是一个天然的发电机, 它的充能和放电特性有点像雷云和闪电. 一个滚雷至少能储存5000伏特到几十万伏特的电压. 电流在几百安培甚至几千安培, 它的频繁放电能够杀死特异区中几乎任何类型的生物\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_tesla">
+		<text>电彗星</text>
+	</string>
+	<string id="encyclopedia_anomalies_tesla_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 电彗星%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 电能%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 它的特性很像滚雷, 区别在于电彗星会移动. 从这个意义上来说, 它可以视作电能版本的火彗星. 它看起来就像一个快速移动的高能电球.
+			\n 可以说是滚雷的增强版. 曾有一种假设, 说它原来是一个很大的滚雷异常, 由于一直没有受到任何干扰, 从而积累了大量的电能, 开始随着地面的磁场流动
+			\n 除非装备电能防护的神器或者穿上具有优秀绝缘性能的防护服, 否则只是接触就会导致死亡
+			\n 这种异常点不会生成任何神器\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_space">
+		<text>空泡</text>
+	</string>
+	<string id="encyclopedia_anomalies_space_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 空泡%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 扭曲现实%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 可以明确的说, 这种改变现实结构, 扭曲时空的现象, 就是特异区不稳定的能量所能带来的终极结果.
+			\n 似乎是一个微型的虫洞, 能将生物或者任何扔到它内部的东西传送到另一个地方.
+			\n 这个理论主要源自那些在封锁线附近生活的潜行者们. 只要在那里提及黑洞之类的话题, 八成会有人带你去铁路桥那里的空泡异常点 据说他们经常往桥上的空泡内投掷垃圾, 反正也没人知道这些垃圾都去了哪里.
+			\n 不知为何空泡有时候会困住跳进去的人, 到底是特异区存在的不稳定能量的证明, 还是这东西真的具有意识, 这一点谁也说不准 
+			\n 守林人列斯尼克曾说他在空泡里找到过磁石晶神器. 在扎顿曾使用空泡异常点从烧毁的农庄传送到南部高地的诺亚, 好像也对这种现象略知一二\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_teleport">
+		<text>虫洞</text>
+	</string>
+	<string id="encyclopedia_anomalies_teleport_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 虫洞%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 扭曲现实%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 一种在特异区很稀有的异常现象. 本质上是无害的
+			\n 靠近的话就会被传送到另一个地方\n\n\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_anomalies_pulse">
+		<text>灵能脉冲</text>
+	</string>
+	<string id="encyclopedia_anomalies_pulse_text"> 	
+		<text>
+			%c[d_cyan]• 名称: 脉冲%c[ui_gray_1]
+			\n%c[d_orange]• 类型: 电能%c[ui_gray_1]
+			\n %c[d_green]已知情报%c[ui_gray_1]
+			\n 生态学家们普遍认为这是一种受到灵能动的侵袭作用下形成的独特闪电. 半空会莫名地出现蓝色的等离子云, 之后迅速地积聚能量形成明亮的球体, 并在能量过载的一刻接地, 形成超强的闪电, 任何靠近接地点的生物都会因为巨大的电压差而瞬间死亡
+			\n 它的生成频率和天气状况直接相关, 在雨天和雷暴的天气下会更容易形成, 但也会经常在人们毫无防备的时刻突然出现
+			\n 一些潜行者们半开玩笑的说, 灵能脉冲就好像一双无形的眼睛在观察战局一样, 当你在掩体中躲避子弹的时候, 头顶就总是会出现脉冲把你逼出来
+			\n 没有脉冲风暴的能量加持, 它平时的伤害不是很大, 但仍然很具有威胁性, 不管什么时候都要优先远离脉冲范围, 从听到声音到死亡, 中间只有几秒的行动时间而已
+			\n 装备抵抗灵能影响和电击伤害的护具, 或许有可能从脉冲的电击中存活下来
+			\n 这种异常不会生成任何神器\n\n\n
+		</text>
+	</string>
+	
+</string_table>

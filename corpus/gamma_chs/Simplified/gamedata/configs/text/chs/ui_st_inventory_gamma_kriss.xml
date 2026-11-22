@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_kriss">
+		<text>Vector "短剑"</text>
+	</string>
+	<string id="st_wpn_kriss_descr">
+		<text>KRISS Vector是一系列基于美国公司KRISS USA(前身为 Transformational Defense Industries (TDI))开发的冲锋枪设计的武器, 他们使用非常规的延迟反吹系统与直列式设计相结合, 后坐力低到几乎不存在\n
+		%c[ui_gray_3]特性:\n
+		%c[d_purple] • %c[ui_gray_2] 原产地: %c[ui_gray_1]美国\n
+		%c[d_purple] • %c[ui_gray_2] 制造商: %c[ui_gray_1]Kriss USA, Inc.\n
+		%c[d_purple] • %c[ui_gray_2] 生产年份: %c[ui_gray_1]2006\n
+		</text>
+	</string>
+
+</string_table>

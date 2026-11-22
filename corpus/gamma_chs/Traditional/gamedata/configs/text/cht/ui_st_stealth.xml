@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_stealth_title">
+		<text>潛行大修</text>
+	</string>
+	<string id="ui_mcm_menu_stealth">
+		<text>潛行大修</text>
+	</string>
+
+	<string id="ui_mcm_stealth_memory">
+		<text>NPC搜索時長</text>
+	</string>
+	<string id="ui_mcm_stealth_memory_desc">
+		<text>記憶倍率(如果NPC已經看到了目標,那麼NPC將收到他們對這個目標的視覺提升. 隨著時間的推移而減少,在預設值為1.0的情況下,NPC需要大約100秒的時間才能將他們對這個目標的提升降為0) \n 
+				\n 預設: 1.0</text>
+	</string>
+
+	<string id="ui_mcm_stealth_luminocity">
+		<text>玩家身體的發光率</text>
+	</string>
+	<string id="ui_mcm_stealth_luminocity_desc">
+		<text>亮度影響係數. (物品的亮度) \n 
+				\n 預設: 1.0</text>
+	</string>
+
+	<string id="ui_mcm_stealth_distance">
+		<text>距離影響係數</text>
+	</string>
+	<string id="ui_mcm_stealth_distance_desc">
+		<text>距離倍率(從物體到物體的距離,範圍和視野角度) \n 
+				\n 預設: 1.0</text>
+	</string>
+
+	<string id="ui_mcm_stealth_velocity">
+		<text>速度影響係數</text>
+	</string>
+	<string id="ui_mcm_stealth_velocity_desc">
+		<text>速度影響係數. (目標的速度) \n 
+				\n 預設: 1.0</text>
+	</string>
+
+	<string id="ui_mcm_stealth_weight">
+		<text>玩家揹負的重量</text>
+	</string>
+	<string id="ui_mcm_stealth_weight_desc">
+		<text>重量影響係數. (角色物品重量) \n 
+				\n 預設: 1.0</text>
+	</string>
+
+	<string id="ui_mcm_stealth_crouch">
+		<text>蹲伏影響係數</text>
+	</string>
+	<string id="ui_mcm_stealth_crouch_desc">
+		<text>蹲伏影響係數. \n 
+				\n 預設: 0.4</text>
+	</string>
+
+	<string id="ui_mcm_stealth_low_crouch">
+		<text>潛行(或趴下)影響係數</text>
+	</string>
+	<string id="ui_mcm_stealth_low_crouch_desc">
+		<text>潛行(或趴下)影響係數. \n 
+				\n 預設: 0.25</text>
+	</string>
+
+	<string id="ui_mcm_stealth_icon">
+		<text>開燈提示圖示</text>
+	</string>
+	<string id="ui_mcm_stealth_icon_desc">
+		<text>手電或頭燈的亮度圖示（玩家開燈的話）</text>
+	</string>
+
+	<string id="ui_mcm_stealth_michiko_patch">
+		<text>Michiko天氣補丁</text>
+	</string>
+	<string id="ui_mcm_stealth_michiko_patch_desc">
+		<text>如果你使用Michiko天氣,建議啟用這個功能. </text>
+	</string>
+
+	<string id="ui_mcm_stealth_debugx">
+		<text>除錯</text>
+	</string>
+	<string id="ui_mcm_stealth_debugx_desc">
+		<text>顯示方程變數（爲了正確的閾值,你必須將游標一直保持在對像上）. : \n 
+				\n 控制檯：所有變數 \n 
+				\n 動態新聞：如果對像看到玩家或沒有看到玩家 \n 
+				\n 螢幕底部的資訊：對象的可見度閾值（以及你可以在MCM中改變的變數）. </text>
+	</string>
+
+
+
+</string_table>

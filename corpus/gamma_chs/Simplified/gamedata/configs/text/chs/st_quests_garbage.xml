@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Butcher -->
+	<string id="hunter_gar_trader_task_1_name">
+		<text>怪物猎人</text>
+	</string>
+	<string id="hunter_gar_trader_task_1_text">
+		<text>清理变异怪物的巢穴</text>
+	</string>
+	<string id="hunter_gar_trader_task_1_about">
+		<text>我发现了一个变种食物的巢穴, 需要清理一下. 它开始给当地的潜行者带来麻烦, 但一个有准备的猎人应该不会有什么问题. 今天想去打猎吗? 我会为付钱, 等你回来后你可以把你收集的肉和战利品卖给我.</text>
+	</string>
+	<string id="hunter_gar_trader_task_1_finish">
+		<text>当地生态系统再一次处于平衡状态... 呵呵. 这是你出色工作的奖励.</text>
+	</string>
+
+	<string id="hunter_gar_trader_task_2_name">
+		<text>找到%s</text>
+	</string>
+	<string id="hunter_gar_trader_task_2_text">
+		<text>屠夫让我给他找来%s</text>
+	</string>
+	<string id="hunter_gar_trader_task_2_about">
+		<text>有人出钱收购变异怪物的肉.</text>
+	</string>
+	<string id="hunter_gar_trader_task_2_fetch_about">
+		<text>你想挣点钱吗? 变异怪物的肉在少数几个"小圈子"里是很有价值的... 最好不要细说, 我只是想让你找到一些%s. 你说呢?</text>
+	</string>
+	<string id="hunter_gar_trader_task_2_fetch_finish">
+		<text>哇, 屌啊! 这些肉现在看起来可能很恶心, 但你要等它们做好了再吃. 他们会很美味!</text>
+	</string>
+
+	
+<!-- Flea Market -->
+	<string id="baraholka_trader_night_task_1_name">
+		<text>寻找"%s"神器</text>
+	</string>
+	<string id="baraholka_trader_night_task_1_text">
+		<text>跳蚤市场的交易商想让我找到%s.</text>
+	</string>
+	<string id="baraholka_trader_night_task_1_about">
+		<text>你否想找一些稀有的神器来赚点钱? 我可以提供你一些好装备.</text>
+	</string>
+	<string id="baraholka_trader_night_task_1_fetch_about">
+		<text>想在寻找稀有神器的同时赚点零花钱吗? 我可以提供你关于"%s"的一些信息.</text>
+	</string>
+	<string id="baraholka_trader_night_task_1_fetch_finish">
+		<text>啊, 干得漂亮潜行者. 拿好, 这是你的了.</text>
+	</string>
+
+
+</string_table>

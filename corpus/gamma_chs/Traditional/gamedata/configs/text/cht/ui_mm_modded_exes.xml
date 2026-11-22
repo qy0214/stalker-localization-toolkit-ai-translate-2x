@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+	<string id="ui_mm_title_modded_exes">
+		<text>exe魔改</text>
+	</string>
+	<string id="ui_mm_menu_modded_exes">
+		<text>exe魔改</text>
+	</string>
+
+	<string id="ui_mm_lst_ON">
+		<text>開啟</text>
+	</string>
+	<string id="ui_mm_lst_OFF">
+		<text>關閉</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_sds_enable">
+		<text>啟用基於著色器的瞄具, 括號中是控制檯命令(sds_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_sds_speed_enable">
+		<text>啟用著色器瞄具縮放時的滑鼠靈敏度修改 (sds_speed_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_sds_zoom_enable">
+		<text>啟用著色器瞄具的縮放比率修改 (sds_zoom_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_new_zoom_enable">
+		<text>啟用著色器瞄具的平滑縮放修改 (new_zoom_enable)</text>
+	</string>
+	<string id="ui_mm_modded_exes_zoom_step_count">
+		<text>著色器瞄具平滑縮放的遞進步數 (zoom_step_count)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_blur_inner">
+		<text>著色器瞄具的內部模糊值 (scope_blur_inner)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_blur_outer">
+		<text>著色器瞄具的外部模糊值 (scope_blur_outer)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_brightness">
+		<text>著色器瞄具的外部亮度 (scope_brightness)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_ca">
+		<text>著色器瞄具的色差效果 (scope_ca)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_radius">
+		<text>著色器瞄具的霧氣效果範圍 (scope_fog_radius)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_interp">
+		<text>著色器瞄具的霧氣執行速度 (scope_fog_interp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_sharp">
+		<text>著色器瞄具的霧氣銳化度 (scope_fog_sharp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_swayAim">
+		<text>著色器瞄具的霧氣隨滑鼠晃動 (scope_fog_swayAim)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_swayMove">
+		<text>著色器瞄具的霧氣隨人物移動而晃動 (scope_fog_swayMove)</text>
+	</string>
+	<string id="ui_mm_modded_exes_scope_fog_travel">
+		<text>著色器瞄具的霧氣最大執行距離 (scope_fog_travel)</text>
+	</string>
+	
+	<string id="ui_mm_modded_exes_particle_update_mod">
+		<text>粒子更新頻率 (1 - 30赫茲, 0.5 - 60赫茲, 以此類推) (particle_update_mod)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_crash_save">
+		<text>啟用崩潰存檔 (crash_save)</text>
+	</string>
+	<string id="ui_mm_modded_exes_crash_save_count">
+		<text>崩潰存檔檔案數量 (crash_save_count)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_snd_doppler_power">
+		<text>聲音的多普勒效應強度 (snd_doppler_power)</text>
+	</string>
+	<string id="ui_mm_modded_exes_snd_doppler_smoothing">
+		<text>聲音的多普勒效應流暢度 (snd_doppler_smoothing)</text>
+	</string>
+
+	<string id="ui_mm_modded_exes_first_person_death">
+		<text>啟用FPD - 第一人稱死亡視角 (first_person_death)</text>
+	</string>
+	<string id="ui_mm_modded_exes_first_person_death_position_smoothing">
+		<text>FPD鏡頭位置變化的平滑度 (first_person_death_position_smoothing)</text>
+	</string>
+	<string id="ui_mm_modded_exes_first_person_death_direction_smoothing">
+		<text>FPD鏡頭方向變化的平滑度 (first_person_death_direction_smoothing)</text>
+	</string>
+	<string id="ui_mm_modded_exes_pseudogiant_can_damage_objects_on_stomp">
+		<text>變異巨獸的踐踏攻擊有物體傷害的範圍判定 (pseudogiant_can_damage_objects_on_stomp)</text>
+	</string>
+	<string id="ui_mm_modded_exes_use_english_text_for_missing_translations">
+		<text>使用英文來顯示未翻譯的文字(ui_mm_modded_exes_use_english_text_for_missing_translations)</text>
+	</string>
+</string_table>

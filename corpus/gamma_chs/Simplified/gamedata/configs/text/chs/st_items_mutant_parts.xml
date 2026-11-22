@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Mutant parts
+-->
+<string_table>
+	
+	<string id="st_meat_tushkano">
+		<text>烤鼠肉串</text>
+	</string>
+	<string id="st_meat_tushkano_descr">
+		<text>两小串鼠肉佐以配菜, 用盐和辣椒调味后烤制, 走在路上很方便吃, 是特异区中比较廉价的食物\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_dog">
+		<text>狗腿焖饭</text>
+	</string>
+	<string id="st_meat_dog_descr">
+		<text>一碗烤狗腿肉佐以配菜, 混合了大蒜, 胡椒和蘑菇, 肉质紧实, 非常入味, 特异区中很受欢迎的廉价食物\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_pseudodog">
+		<text>红烧肋排</text>
+	</string>
+	<string id="st_meat_pseudodog_descr">
+		<text>变异犬的肋排佐以各种酱料和配菜, 鲜香四溢, 由于变异犬的肌肉发达, 营养价值很高\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_flesh">
+		<text>油腻培根饭</text>
+	</string>
+	<string id="st_meat_flesh_descr">
+		<text>由豚兽的五花肉佐以调味料和配菜制成的培根饭, 虽然很油, 但很管饱\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_boar">
+		<text>红烧蹄膀饭</text>
+	</string>
+	<string id="st_meat_boar_descr">
+		<text>红烧的野猪肉, 用各种调味料烧制, 再与胡椒混合, 喷香扑鼻, 肉的紧致口感令人难忘, 很受潜行者欢迎的热餐\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_bloodsucker">
+		<text>血块炖肉饭</text>
+	</string>
+	<string id="st_meat_bloodsucker_descr">
+		<text>一碗炖菜, 用吸血怪的肉和血制成, 用辣椒调味, 再与蘑菇混合, 有一点腥气, 但炖的很入味\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_psysucker">
+		<text>乱炖胸肉饭</text>
+	</string>
+	<string id="st_meat_psysucker_descr">
+		<text>一碗炖菜, 由夺灵怪肉制成, 用辣椒调味, 再与蘑菇混合, 肉炖的很烂, 入口即化\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_snork">
+		<text>泡椒鬼爪</text>
+	</string>
+	<string id="st_meat_snork_descr">
+		<text>满满一盘泡椒腌制的史诺克手, 闻上去味道不是很好, 但吃起来有种独特的香味, 超级辣, 可以当零食, 在女性潜行者中很受欢迎\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_chimera">
+		<text>葱爆里脊饭</text>
+	</string>
+	<string id="st_meat_chimera_descr">
+		<text>用奇美拉身上最好的里脊肉制成, 佐以辣椒, 蘑菇和香料, 香味扑鼻, 价格昂贵, 是老练的潜行者最常吃的, 通常在艰难的任务过后用于庆祝\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_meat_lurker">
+		<text>五香腱花饭</text>
+	</string>
+	<string id="st_meat_lurker_descr">
+		<text>一份夜魔的腱子肉, 加盐调味并与胡椒混合, 这种怪物肌肉厚实, 营养美味, 价值很高\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="mutant_flesh_meat">
+		<text>豚兽五花肉</text>
+	</string>
+	<string id="mutant_flesh_meat_description">
+		<text>豚兽肉是特异区的热门食物, 口感好, 营养价值高. 生态学家们已经有了足够的豚兽样本, 所以它不太值钱. 同时, 肉的脂肪还能当做枪油使用.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_boar_chop">
+		<text>野猪蹄膀肉</text>
+	</string>
+	<string id="mutant_boar_chop_description">
+		<text>特异区最受欢迎的肉类. 营养丰富, 几乎没有污染. 生态学家们已经有了足够的野猪样本, 所以它不太值钱. 同时, 肉的脂肪还能当做枪油来使用.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_meat">
+		<text>狗腿肉</text>
+	</string>
+	<string id="mutant_dog_meat_description">
+		<text>盲犬的肉是猪肉的廉价替代品, 生态学家们已经有了足够的盲犬样本, 所以它不太值钱. 同时, 肉的脂肪还能当做枪油来使用.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_psevdodog_meat">
+		<text>变异犬肋排</text>
+	</string>
+	<string id="mutant_psevdodog_meat_description">
+		<text>变异犬肉是特异区的常见食物. 美味, 具有很高的营养价值, 在潜行者中广受欢迎. 可以卖给生态学家. 此外, 肉的脂肪还能当做枪油来使用.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 有毒食物\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_krovosos_meat">
+		<text>吸血怪臀肉</text>
+	</string>
+	<string id="mutant_krovosos_meat_description">
+		<text>吸血怪的肉很黏腻, 因此不适合食用, 尽管吸血怪是恐怖的怪物, 但由于样本用处有限, 所以不太值钱, 可以卖给生态学家, 此外, 肉的脂肪还能当做枪油来使用.\n \n
+		
+		%c[d_cyan] • %c[ui_gray_2] 高等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+	
+	<string id="mutant_psysucker_meat">
+		<text>夺灵怪胸肉</text>
+	</string>
+	<string id="mutant_psysucker_meat_description">
+		<text>和普通吸血怪一样, 夺灵怪的肉很黏, 因此不适合食用. 由于样本用处有限, 所以不太值钱. 可以卖给生态学家. 此外, 肉的脂肪还能当做枪油来使用.\n \n
+		
+		%c[d_cyan] • %c[ui_gray_2] 高等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_snork_hand">
+		<text>史诺克手</text>
+	</string>
+	<string id="mutant_snork_hand_description">
+		<text>众所周知, 史诺克起源于人类, 因此吃史诺克被认为是吃人, 违反道德. 但是, 某些阵营, 例如土匪和佣兵, 将其列在菜单上, 以显示他们的与众不同. 可以卖给能更好地利用它的生态学家\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_fracture_hand">
+		<text>长臂怪人的手</text>
+	</string>
+	<string id="mutant_fracture_hand_description">
+		<text>长臂怪人的手 - 严重突变的类人变异怪物. 可以肯定的是, 这些怪物曾经是人类, 并且是第二次切尔诺贝利大爆炸的产物. 从他们残缺不堪的衣服中, 我们可以推断出长臂怪人此前是被安置在此地进行劳改的囚犯. 由于所有长臂怪人的身体结构都是差不多的, 因此可以判定, 当大爆炸发生时, 所有实验体的身体姿势都一样 - 因为当时正在运输这些家伙, 或者是因为有人强迫他们这么做. 到目前为止的所有样本都是雄性. 因此, 可以有把握地认定长臂怪人种群无法繁殖, 并且其特异区的数量将逐渐减少. 因此, 目前它们是最罕见的怪物之一. 他们的右手是很有价值的研究样本.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 罕见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_zombi_hand">
+		<text>僵尸手</text>
+	</string>
+	<string id="mutant_zombi_hand_description">
+		<text>这是一只僵尸的手 - 以前在禁区生活或工作的人类, 在第二次切尔诺贝利事故发生时受到极大的辐射和精神影响. 在这种情况下, 多年之后, 它们只剩一具空壳, 骨头和半烂的血肉清晰可见. 因此, 它们和死尸没什么两样, 但是它们非常活跃, 几乎总是饿肚子, 因此当成群出现时可能成为威胁. 僵尸手不仅是科学研究样本, 而且很多时候还可以用来识别它此前的主人.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_meat">
+		<text>奇美拉里脊</text>
+	</string>
+	<string id="mutant_chimera_meat_description">
+		<text>大块的奇美拉肉, 由于奇美拉是最危险的生物之一, 因此, 这种肉得到了愿意以相当高的价格购买的资深潜行者的高度评价. 斯卡多夫斯克号上的厨师使用这种肉作为猛男之餐的原材料, 虽然只有极少数人声称它的味道比野猪肉更好. 可以卖给生态学家, 此外, 它还饱含了特异区中最优质的动物脂肪, 可用于润滑枪械.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 高等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+	
+	<string id="mutant_lurker_meat">
+		<text>夜魔腱子肉</text>
+	</string>
+	<string id="mutant_lurker_meat_description">
+		<text>一块上好的夜魔肉. 营养丰富, 几乎没有污染. 可以卖给生态学家. 同时, 它饱含的脂肪可以用于枪械的润滑.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 高等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_tushkano_meat">
+		<text>碎老鼠肉</text>
+	</string>
+	<string id="mutant_tushkano_meat_description">
+		<text>变异老鼠肉. 一种廉价且常见的食物, 据说在用火烹饪后吃了对心脏有好处. 可以卖给生态学家.\n \n
+		
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_cyan] • %c[ui_gray_2] 可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		</text>
+	</string>
+
+	<string id="mutant_flesh_eye">
+		<text>豚兽眼</text>
+	</string>
+	<string id="mutant_flesh_eye_description">
+		<text>豚兽的眼睛, 十分肿大且有许多奇怪的特征, 其中最有趣的是其能够修复损伤的器官的能力. 如果能发现其原理将提供更多治疗疾病的方法, 还会彻底改变现代医学, 但迄今为止尚不清楚这种修复过程的细节. 你可以通过向生态学家出售豚兽眼睛来加速科学的进步, 挽救无辜人民的生命.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_boar_leg">
+		<text>野猪蹄</text>
+	</string>
+	<string id="mutant_boar_leg_description">
+		<text>野猪蹄可用于生产各种药物, 例如抗辐射血清.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_tail">
+		<text>狗尾巴</text>
+	</string>
+	<string id="mutant_dog_tail_description">
+		<text>长期以来, 盲犬皮肤对电和化学试剂的抗性一直是一个研究项目. 由于没有脂肪, 盲犬尾巴特别适合实验测试.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_psevdodog_tail">
+		<text>变异犬尾巴</text>
+	</string>
+	<string id="mutant_psevdodog_tail_description">
+		<text>有传言说, 特异区外面的世界有了一种新的时尚商品: 变异犬尾巴制成的皮草. 据说这种皮草柔软无比. 即使在最恶劣的暴风雪中, 它也能使人保持温暖. 由于这些原因, 变异犬尾巴的需求量很大.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_krovosos_jaw">
+		<text>吸血怪触须</text>
+	</string>
+	<string id="mutant_krovosos_jaw_description">
+		<text>吸血怪触须含有一种特殊的腺体, 该腺体会产生一种能够溶解皮肤并同时防止血液凝结的酶. 如果酶的组成被研究出来, 那可能是一系列医学巨大进步的基石. 一些潜行者喜欢使用吸血怪的牙齿制作项链和饰物. 吸血怪的触须绝对是特异区最受欢迎的装饰品之一.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_snork_leg">
+		<text>史诺克脚</text>
+	</string>
+	<string id="mutant_snork_leg_description">
+		<text>史诺克的脚和腿包含大量的高弹性肌腱. 这就解释了它在为什么能有如此惊人的弹跳力. 生态学家们仍在寻找史诺克脚的潜在用途, 你可以将它们卖给生态学家.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_cogot">
+		<text>奇美拉的牙齿</text>
+	</string>
+	<string id="mutant_chimera_cogot_description">
+		<text>奇美拉的牙齿. 它的组成是未知的, 但它的尖端像钻石一样耐用且锋利, 这说明了它为什么能够轻松穿透盔甲. 此物品的需求量很大, 因为它看起来与犀牛角相似. 有传言说, 曾有一些偷猎者进入特异区, 想要获得牙齿并在黑市上出售. 然而, 令他们惊讶的是, 奇美拉没犀牛那么好惹, 因此再也没有偷猎者打它们的主意, 只剩下那些带血的碎片无声诉说着那种恐怖, 这些恶毒的怪物会把偷猎者撕成肉酱. 奇美拉的牙齿也可以用作粗磨工具, 但应格外小心, 因为它容易折断, 那可就卖不出去这种值钱的标本了.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n
+		</text>
+	</string>
+
+	<string id="mutant_chimera_claw">
+		<text>奇美拉的爪子</text>
+	</string>
+	<string id="mutant_chimera_claw_description">
+		<text>奇美拉的爪子. 它的组成是未知的, 但它与钻石一样耐用且锋利, 这说明了为什么它能够轻松穿透盔甲.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+	
+	<string id="mutant_lurker_eye">
+		<text>夜魔的眼睛</text>
+	</string>
+	<string id="mutant_lurker_eye_description">
+		<text>夜魔的黄眼睛. 大大的瞳孔散发的光芒使猎人对它的眼睛很感兴趣. 生态学家们仍在寻找夜魔的眼睛的潜在用途.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+	
+	<string id="mutant_lurker_tail">
+		<text>夜魔的尾巴</text>
+	</string>
+	<string id="mutant_lurker_tail_description">
+		<text>生态学家认为: 夜魔尾巴的特征证明了夜魔是变异鼠的变种.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+	
+	<string id="mutant_psysucker_hand">
+		<text>夺灵怪的手</text>
+	</string>
+	<string id="mutant_psysucker_hand_description">
+		<text>夺灵怪因其纤细的手指而闻名. 指尖周围的皮肤似乎撕裂得很厉害, 这就是为什么它的手上总是有红红的血液. 生态学家很乐意对其进行研究, 期望找到与其精神能力有关的突变原因.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_tushkano_head">
+		<text>老鼠头</text>
+	</string>
+	<string id="mutant_tushkano_head_description">
+		<text>变异老鼠的头. 生态学家们希望对其进行研究, 以找出变异老鼠究竟来自于什么生物.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_part_controller_brain_tissue">
+		<text>摄魂怪大脑</text>
+	</string>
+	<string id="mutant_part_controller_brain_tissue_description">
+		<text>摄魂怪具有强大的精神能量, 可以肯定地说, 这些力量源于它们的大脑, 似乎每个具有精神能力的怪物都具有类似结构的大脑. 生态学家将为它付高价. 有趣的是, 它闻起来让人想起了酸南瓜.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 超值钱\n</text>
+	</string>
+
+	<string id="mutant_controller_hand">
+		<text>摄魂怪的手</text>
+	</string>
+	<string id="mutant_controller_hand_description">
+		<text>当摄魂怪进行精神攻击时, 它会用它的手发射能量. 生态学家很乐意对其进行研究, 期望找到与其精神能力有关的突变原因. 它闻起来像旧袜子和腐败的泡菜.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_cat_tail">
+		<text>猫尾巴</text>
+	</string>
+	<string id="mutant_cat_tail_description">
+		<text>特异区的猫比正常的猫大得多, 实际上它们是非常危险的捕食者, 无论情况如何, 它们能够迅速移动且不发出声音. 在潜行者中, 猫尾巴是知识的象征.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_pseudogigant_hand">
+		<text>变异巨兽的手</text>
+	</string>
+	<string id="mutant_pseudogigant_hand_description">
+		<text>变异巨兽的手可能会在科研方面有些作用. 闻起来像旧袜子和腐败的泡菜.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_pseudogigant_eye">
+		<text>变异巨兽的眼睛</text>
+	</string>
+	<string id="mutant_pseudogigant_eye_description">
+		<text>变异巨兽的眼睛有点像人眼, 但有一些区别. 它具有多种颜色的虹膜, 并且其泪腺非常发达. 众所周知, 变异巨兽喜欢流泪, 但不知道这是某种生理过程的结果还是该生物情绪的体现. 生态学家们愿意为这个标本付出高昂的代价.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_burer_hand">
+		<text>变异矮人的手</text>
+	</string>
+	<string id="mutant_burer_hand_description">
+		<text>变异矮人的手似乎在该生物利用重力的方面起着至关重要的作用. 生态学家很乐意对其进行研究, 期望找到突变原因. 闻起来像旧袜子和腐败泡菜.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="st_mutant_part_crow_beak">
+		<text>乌鸦的喙</text>
+	</string>
+	<string id="st_mutant_part_crow_beak_description">
+		<text>尽管许多潜行者认为乌鸦不值一提, 但是有些知识分子觉得这些乌鸦在应对特异区危险方面有着独门绝技. 虽然死掉的乌鸦可以证明在切尔诺贝利和普里皮亚奇空荡荡的街上具有无数的危险, 但也只有在它们死后才显出这种价值.\n \n特异区动物的适应能力似乎加速了它们的繁殖周期, 每年最多可产下4个卵. 它们长达20年的寿命增长了智力.\n \n一些特异区居民中有着一个传闻-来自进入特异区的第一批潜行者. 一种仪式 - 当地称为"喙" - 从老乌鸦的喙磨成粉, 并制成特殊混合物. 在满月之夜吃了这种混合物时, 它可以使人的思想与区域内所有乌鸦的思想暂时融合. 没有人知道脆弱的人的心灵经受这种考验时会发生什么, 但是有人推测, 这就是导致潜行者诺亚建立自己的方舟的原因, 试图从即将发生的不可避免的大灾难中活下来, 等待灾难再次落在这片已经毁灭的土地上.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_snork_mask">
+		<text>史诺克的面具</text>
+	</string>
+	<string id="mutant_snork_mask_description">
+		<text>史诺克时所戴的防毒面具是GP-5的某个型号, 这是苏联产的防毒面具. 在第二次切尔诺贝利灾难发生时, 士兵以及在特异区工作的人员普遍使用GP-5. 其中一些人在地下实验室中工作, 在那里他们与外界隔绝, 并暴露于大量辐射下, 产生了我们称为史诺克的生物. 面具虽然已经残破不堪(目镜破裂和过滤软管破裂), 但生态学家对它还是有需求. 它也可以用于修理服装, 但是此做法会导致面具剩余的可用材料消失.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 普通科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_liver">
+		<text>狗肝</text>
+	</string>
+	<string id="mutant_dog_liver_description">
+		<text>狗的肝脏由于进食毒物和安全饮用水的缺乏而经历了巨大的变化. 生态学家对肝脏特别感兴趣, 因为它有可能为研究肝脏疾病的药物提供帮助.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_dog_heart">
+		<text>狗心</text>
+	</string>
+	<string id="mutant_dog_heart_description">
+		<text>盲犬具有许多特点, 与普通狗有很大不同. 这些差异之一是一个非常强壮的心脏, 允许盲犬持续追逐猎物, 直到精疲力尽. 追逐时的心脏搏动达到每分钟250次, 这对于相同体重的犬类健康个体而言是不可想象的. 这种耐力使盲犬的心脏成为一个有趣的研究项目, 但是由于它很普遍, 所以它并不值钱.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_cat_thyroid">
+		<text>猫的甲状腺</text>
+	</string>
+	<string id="mutant_cat_thyroid_description">
+		<text>长期居住在受辐射污染的地区导致了变异猫的甲状腺尺寸成倍增加. 经世代变更后的甲状腺具有一些遗传性疾病: 食物摄入增加, 活动增加, 行为改变, 神经质, 掉毛. 这并没有影响到变异猫的生存, 反而让它们迅速取代了正常的猫, 并在食物链中占据了很高的位置. 生态学家对此类疾病的机理和作用的研究有着很大兴趣.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_cat_claw">
+		<text>猫爪</text>
+	</string>
+	<string id="mutant_cat_claw_description">
+		<text>猫爪的结构未知, 它可以轻松撕开衣裤. 生态学家和军方认为, 对它们进行深入研究将有助于制造高度耐用的材料和防护装备.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_tusk_boar">
+		<text>野猪獠牙</text>
+	</string>
+	<string id="mutant_tusk_boar_description">
+		<text>野猪獠牙对野猪攻击的对象构成了相当大的威胁, 其长度为30厘米. 由于其普通的成分和强度, 生态学家对它没有特别的兴趣. 獠牙通常是潜行者间的奖励象征. 而在特异区外, 已经有獠牙出现在了一些收藏家的展柜中.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_heart_bloodsucker">
+		<text>吸血怪的心脏</text>
+	</string>
+	<string id="mutant_heart_bloodsucker_description">
+		<text>吸血怪的心脏具有一种能力 - 它会分泌特殊的酶, 这些酶会阻止由不相容的血型引起的凝血过程. 因此, 即使血型不同, 也不会发生凝结. 对这种机制的作用方式和酶的组成进行的研究, 将使生态学家能够解决罕见血型患者的献血者问题, 并且可能会为医学打开新的大门.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_fang_psevdodog">
+		<text>变异犬的牙齿</text>
+	</string>
+	<string id="mutant_fang_psevdodog_description">
+		<text>变异犬的牙通常用来撕扯和咬住猎物. 由于变异犬巨大的咬合力, 它能够咬伤特异区中的大多数护甲. 牙齿本身不太坚固, 变异犬一生中中会定期进行更换. 与特异区外的收藏家不同, 生态学家对它们并不特别感兴趣.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+
+	<string id="mutant_brain_burer">
+		<text>变异矮人的大脑</text>
+	</string>
+	<string id="mutant_brain_burer_description">
+		<text>变异矮人具有完美的精神能力,这是科学界绝对无法研究的. 这就是为什么侏儒的大部分器官被生态学家和佣兵所喜爱的原因. 作为其心理影响能力的主要来源, 大脑在变异矮人的肢体中占据着很重要的地位. 它的质量是人脑的0.5-1.5倍. 没有任何外部差异. 由于其大小和结构, 大脑在获得过程中很容易受到损害: 损坏器官不能用于任何科学研究.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+
+	<string id="mutant_heart_chimera">
+		<text>奇美拉的心脏</text>
+	</string>
+	<string id="mutant_heart_chimera_description">
+		<text>奇美拉的心脏正好适应了这种合成生物, 它已经进化为可以用作储备血液供应的双生器官. 生态学家感兴趣的是它具有高水平的再生能力, 即使在遭受重伤后, 奇美拉仍可以持续战斗. 对此的研究可以用于解决连体人的死亡率问题.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		%c[d_cyan] • %c[ui_gray_2] 值钱\n</text>
+	</string>
+	
+	
+	<!-- Analogs addon-->
+	<string id="mutant_part_psy_dog_brain">
+		<text>魔犬的大脑</text>
+	</string>
+	<string id="mutant_part_psy_dog_brain_description">
+		<text>魔犬具有强大的精神能力, 例如释放幻象分身. 这些幻象就像真的一样, 而且能够通过当前未知的方式造成同样真实的伤害. 有趣的是, 生态学家们说尽管他们已经确定了负责精神能力的大脑区域, 但是很明显, 特异区还有着强大的发育和进化潜力. 生态学家将慷慨地支付此类组织的样本. \n 
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+	
+	<string id="st_meat_tark">
+		<text>马肉</text>
+	</string>
+	<string id="st_meat_descr_tark">
+		<text>营养和辐射均高的肉. 生态学家们已经有足够的样本, 所以它不太值钱. 脂肪可以用于枪支润滑.\n \n
+		%c[d_red]警告:\n \n
+		%c[default]建议潜行者不要吃生肉, 因为特异区的动物和怪物可能携带旋毛虫病或布鲁氏菌病. 这些疾病是通过摄入被感染的肉传播的. 产生的症状包括发高烧, 疲劳和食欲不振, 考虑到特异区的医疗条件, 这些病都极为危险.脓肿,真菌和身体表面的肿瘤表明该肉已被感染,需要进行处理.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 低等变种肉\n
+		%c[d_red] • %c[ui_gray_2] 不可烹饪\n
+		%c[d_red] • %c[ui_gray_2] 有毒食物\n
+		%c[d_red] • %c[ui_gray_2] 辐射: %c[ui_gray_1] +646 mSv\n
+		</text>
+	</string>
+	
+	<string id="mutant_tark_tail">
+		<text>马尾巴</text>
+	</string>
+	<string id="mutant_tark_tail_description">
+		<text>长长的尾巴, 来自于特异区的变异马. 生态学家们已经有足够的样本, 所以它不太值钱.\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_orange] • %c[ui_gray_2] 常见科学标本\n
+		</text>
+	</string>
+	
+</string_table>

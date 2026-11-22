@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_blood_pool_title">
+		<text>血泊</text>
+	</string>
+	<string id="ui_mcm_menu_blood_pool">
+		<text>血泊</text>
+	</string>
+
+	<string id="ui_mcm_blood_pool_max_pool_size">
+		<text>血泊的最大数量</text>
+	</string>
+
+	<string id="ui_mcm_blood_pool_num_of_updates">
+		<text>血泊状态刷新次数</text>
+	</string>
+	<string id="ui_mcm_blood_pool_num_of_updates_desc">
+		<text>状态的刷新次数越多, 血泊的扩展就越流畅 (并不会影响血泊的最终大小)</text>
+	</string>
+
+	<string id="ui_mcm_blood_pool_update_freq">
+		<text>血泊状态刷新频率 (秒)</text>
+	</string>
+	<string id="ui_mcm_blood_pool_update_freq_desc">
+		<text>每次刷新的间隔, 取值越小, 血泊扩展到最终大小的速度就会越快</text>
+	</string>
+
+	<string id="ui_mcm_blood_pool_pool_lifetime">
+		<text>血泊持续时间 (秒)</text>
+	</string>
+	<string id="ui_mcm_blood_pool_pool_lifetime_desc">
+		<text>血泊持续的时间; 血泊完全消失的时间 = 血泊持续时间 - 刷新次数 * 刷新频率</text>
+	</string>
+
+</string_table>

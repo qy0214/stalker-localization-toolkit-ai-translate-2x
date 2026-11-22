@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Backpacks
+-->
+<string_table>
+	<string id="st_itm_backpack_name">
+		<text>揹包</text>
+	</string>
+	<string id="st_itm_backpack_desc">
+		<text>由耐用材料製成的揹包, 能承受最惡劣的天氣條件\n \n
+			%c[0,255,255,255]屬性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+			</text>
+	</string>
+	
+	<string id="st_equ_smallpack_name">
+		<text>野營揹包</text>
+	</string>
+	<string id="st_equ_smallpack_desc">
+		<text>一個有著足夠儲存空間的揹包. 內部有防水設計. 這揹包不是很好, 但它確實很有效. 在潛行者和新手中它是很受歡迎的選擇\n \n
+			%c[0,255,255,255]屬性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_smilpack_name">
+		<text>旅行揹包</text>
+	</string>
+	<string id="st_equ_smilpack_desc">
+		<text>長途旅行用的大揹包. 由於有重量分配設計, 穿戴者可以攜帶足夠的物品和裝置進行一次長達五天的旅行\n \n
+			%c[0,255,255,255]屬性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_milpack_name">
+		<text>戰鬥揹包</text>
+	</string>
+	<string id="st_equ_milpack_desc">
+		<text>軍用揹包, 顧名思義是軍隊使用的一種戰鬥揹包, 通常用於儲存更多的彈藥和醫療用品\n \n
+			%c[0,255,255,255]屬性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+		</text>
+	</string>
+	
+	<string id="st_equ_touristpack_name">
+		<text>旅行包</text>
+	</string>
+	<string id="st_equ_touristpack_desc">
+		<text>一個遊客的揹包, 裡面有很大的儲存空間. 由於體積笨重, 不太受歡迎\n \n
+			%c[0,255,255,255]屬性:\n
+			%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+			%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+		</text>
+	</string>
+	
+	<string id="st_kit_hunt">
+		<text>狩獵揹包</text>
+	</string>
+	<string id="st_kit_hunt_descr">
+		<text>一整袋的鉤子, 刀和其他裝置, 用於剝皮和清除動物和怪物. 很少有潛行者攜帶專業裝置進行怪物狩獵. 這也許就是為什麼這麼多的潛行者在特異區吃了怪物肉後會消化不良的原因. 由於工具種類繁多, 這套工具可以有效地改善武器和護甲的維護\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 物品儲存\n
+		%c[d_green] • %c[ui_gray_2] 分解怪物時可以獲得更多肢體\n
+		%c[d_orange] • %c[ui_gray_2] 可放置地面用於儲物\n
+		</text>
+	</string>
+	
+	<string id="st_itm_actor_backpack_name">
+		<text>緊急釋放裝置</text>
+	</string>
+	<string id="st_itm_actor_backpack_descr">
+		<text>你肯定不想在特異區里被突然襲擊吧? 雖然緊急釋放裝置並不能幫助你預防這種情況, 但它有助於使你快速脫離危險, 它的功能很簡單: 可以立即拋下身上的揹包, 讓你逃到一個安全的地方, 而不會讓沉重的揹包阻礙你的行動, 若要使用它, 可以將其拖入快捷鍵, 按下快捷鍵后, 緊急釋放裝置就會啟用, 然後就會立即把你的揹包(和裡面的所有東西)扔到地上\n 
+		%c[ui_gray_3]注意: 你的裝備武器, 彈藥, 護甲等有用的物品仍然在你的手中, 這樣你就能充分地應付緊急情況, 事後還可以取回你的揹包\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 內建GPS\n
+		%c[d_cyan] • %c[ui_gray_2] 戰鬥裝備仍在使用者手中\n</text>
+	</string>
+	<string id="st_itm_actor_backpack_desc_mlr">
+		<text>雖然有些潛行者在意外情況下會使用, 不過大部分潛行者對這個東西都不是很感冒, 如果被問到原因, 有些人會一邊說著"反正不影響ergo", "超重了ADS速度也不變"這種聽不太懂的話, 一邊往彈匣里塞著子彈...</text>
+	</string>
+	
+	<string id="st_itm_backpack_stash_name">
+		<text>PDA定位揹包</text>
+	</string>
+	<string id="st_itm_backpack_stash_desc">
+		<text>一個配有GPS定位系統的耐用揹包. 它的位置訊息會自動同步到您的PDA上, 一旦放下會在地圖上產生一個藏物點, 並標記在您的PDA上. 揹包由堅固耐用的材料製成, 無論環境狀況如何, 都能保證裝置的安全和乾燥. 迷彩設計確保了使用者在自然環境中能保持隱蔽\n \n
+		%c[0,255,255,255]屬性:\n
+		%c[d_cyan] • %c[ui_gray_2] 內建GPS\n
+		%c[d_red] • %c[ui_gray_2] 單獨使用\n</text>
+	</string>
+	
+</string_table>

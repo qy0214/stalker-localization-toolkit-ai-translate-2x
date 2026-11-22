@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================
+	Personal Adjustable Waypoint
+    Author: Catspaw
+    Source: https://www.moddb.com/mods/stalker-anomaly/addons/personal-adjustable-waypoint-for-anomaly-151-152-and-gamma
+
+    Permission granted to freely translate into any language.
+===================================================================== -->
+
+<string_table>
+	<string id="st_paw_waypoint_set">
+		<text>在此处设置路点</text>
+	</string>
+
+	<string id="st_paw_waypoint_mov">
+		<text>移动路点到此处</text>
+	</string>
+
+	<string id="st_paw_waypoint_del">
+		<text>移除当前路点</text>
+	</string>
+
+	<string id="st_paw_placed_waypoint">
+		<text>已设置路点</text>
+	</string>
+
+	<string id="st_paw_proceed">
+		<text>前往你设置的路点</text>
+	</string>
+
+<!-- Added in 1.2 -->
+	<string id="st_paw_missing_waypoint_error">
+		<text>当前存档中设置的路点已丢失, 为了避免游戏崩溃, 相关联的路点任务已被取消, 下次存档后应当不会再次出现此安全提示</text>
+	</string>
+
+<!-- Added in 1.3 -->
+	<string id ="ui_mcm_menu_pawsys">
+		<text>自定义路点</text>
+	</string>
+
+	<string id ="ui_mcm_menu_pawgen">
+		<text>一般设置</text>
+	</string>
+
+	<string id ="ui_mcm_menu_pawpins">
+		<text>自定义标记</text>
+	</string>
+
+	<string id ="ui_mcm_menu_pawmenu">
+		<text>地图右键菜单</text>
+	</string>
+
+	<string id ="ui_mcm_menu_pawbinds">
+		<text>键位和鼠标</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_enabled">
+		<text>启用自定义路点系统</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_uninstall_desc">
+		<text>启用此项会清除所有路点信息, 所有自定义标记, 并取消所有路点任务</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_milpda">
+		<text>启用Milspec PDA 插件兼容性补丁</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_milpda_desc">
+		<text>启用Milspec PDA 插件兼容性补丁, Milspec PDA插件地址\n\nhttps://www.moddb.com/mods/stalker-anomaly/addons/milspec-pda-for-anomaly-151-152-and-gamma</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_debuglogs">
+		<text>启用debug日志</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_debuglogs_desc">
+		<text>debug用, 如果你在使用PAW的过程中遇到问题:\n1. 启用此选项\n2. 重新制造问题\n3. 把log发给我\n</text>
+	</string>
+
+	<string id="st_paw_pin_add">
+		<text>在此处添加标记</text>
+	</string>
+
+	<string id="st_paw_pin_del">
+		<text>移除标记</text>
+	</string>
+
+	<string id="st_paw_pin_ren">
+		<text>重命名标记</text>
+	</string>
+
+	<string id="st_paw_pin_dbg">
+		<text>移除这个地图点上的所有标记</text>
+	</string>
+
+	<string id="st_paw_pin_clr">
+		<text>清除所有标记 - 此操作无法撤销</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_wptoggle">
+		<text>切换显示路点按键</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_wptoggle_desc">
+		<text>按下此键, 会隐藏/显示当前的路点</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_quickpin">
+		<text>快速标记按键</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_quickpin_desc">
+		<text>按下此键, 会在玩家最近的智能地形上放置标记, 如果同时安装了快速旅行平衡模组(FFT), 则此标记可作为快速旅行用途</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_cartmode">
+		<text>制图模式按键</text>
+	</string>
+
+	<string id = "ui_mcm_pawsys_pawbinds_bind_cartmode_desc">
+		<text>默认为长按, 此功能会激活制图模式, 能够显示所有智能地形(GAMMA中默认关闭), 并有额外的工具和选项来使玩家更方便的管理标记</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_use_custom_pin_icon">
+		<text>使用自定义的mapspot图标来显示地图标记</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_use_custom_pin_icon_desc">
+		<text>如果启用, PAW会尝试使用指定的mapspot ID来显示标记图标, 可用的mapspot包含在map_spots.xml或其依赖中, 如果使用不可用的文件游戏会崩溃</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_custom_pin_icon">
+		<text>使用mapspot ID</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_custom_pin_icon_desc">
+		<text>如果你已经查阅了mapspot文件并已获悉可用的mapspot ID, 可以在此输入, 警告! 错误的输入会使游戏崩溃, 如果尝试失败, 请重置为"user_defined"</text>
+	</string>
+
+	<string id ="st_paw_pin_default_name">
+		<text>已标记的地图位置</text>
+	</string>
+
+	<string id ="st_paw_pin_quick_name">
+		<text>快速标记</text>
+	</string>
+
+	<string id ="st_paw_pin_dropped">
+		<text>在当前位置放置快速标记</text>
+	</string>
+
+	<string id ="st_paw_pin_already">
+		<text>已标记最近的智能地形 %s</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_1">
+		<text>在PDA 1.0上启用路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_1_desc">
+		<text>启用此项的话, 最初级的PDA能够使用所有路点和标记功能, 如果禁用此项, 已存在的标记会保留, 但除非装备等级足够的PDA才能正常显示</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_2">
+		<text>在PDA 2.0上启用路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_2_desc">
+		<text>启用此项的话, PDA2.0能够使用所有路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_3">
+		<text>在PDA 3.1上启用路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_3_desc">
+		<text>启用此项的话, PDA3.1能够使用所有路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_milspec">
+		<text>在Milspec PDA上启用路点和标记功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_s_device_pda_milspec_desc">
+		<text>启用此项的话, Milspec PDA能够使用所有路点和标记功能(如果已经安装Milspec mod)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_pins">
+		<text>默认的标记图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_pins_desc">
+		<text>当"标记图标集"被激活时, 此选项决定当前创建的标记会使用哪一个图标, 每个标记都可以使用不同的图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_patches">
+		<text>默认的阵营臂章图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_patches_desc">
+		<text>当"阵营图标集"被激活时, 此选项决定当前创建的标记会使用哪一个图标, 每个标记都可以使用不同的图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_bwhr">
+		<text>默认的BW高分辨率POI图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_bwhr_desc">
+		<text>当"BW高分辨率POI图标集"被激活时, 此选项决定当前创建的标记会使用哪一个图标, 每个标记都可以使用不同的图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_faves">
+		<text>默认的收藏图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_faves_desc">
+		<text>当"收藏图标集"被激活时, 此选项决定当前创建的标记会使用哪一个图标, 每个标记都可以使用不同的图标\n\n提示: 你可以通过编辑此文件configs\scripts\paw\icon_set_*.ltx来修改任何图标集</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_pg_faves">
+		<text>收藏的图标</text>
+	</string>
+
+	<string id="st_paw_no_last_wp">
+		<text>没有可显示的路点</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_redround32">
+		<text>红色圆钉标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_stalker32">
+		<text>潜行者箭头标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_redmodern32">
+		<text>现代地图标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_redpush32">
+		<text>红按钉标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_yelpush32">
+		<text>黄按钉标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_whtsimple32">
+		<text>白色极简标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_badge_stalker">
+		<text>独行者</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_army">
+		<text>军队</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_csky">
+		<text>晴空</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_dolg">
+		<text>纪律团</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_ecolog">
+		<text>生态学家</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_freedom">
+		<text>自由军</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_killer">
+		<text>佣兵</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_greh">
+		<text>原罪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_renegade">
+		<text>叛节者</text>
+	</string>
+	<string id="ui_mcm_lst_pawsys_cmenu_cart">
+		<text>只在制图模式下</text>
+	</string>
+	<string id="ui_mcm_lst_pawsys_cmenu_norm">
+		<text>只在普通模式下</text>
+	</string>
+	<string id="ui_mcm_lst_pawsys_cmenu_all">
+		<text>一直激活</text>
+	</string>
+	<string id="ui_mcm_lst_pawsys_cmenu_off">
+		<text>禁用</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_pin_icon_group">
+		<text>激活的标记图标集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_pin_icon_group_desc">
+		<text>下方的每一套图标集 (比如标记和臂章) 都可以选择一个图标作为放置标记时的默认图标, 收藏图标集会始终置于列表顶端, 你可以在这个文件中自由编辑图标集的内容:\n configs\scripts\paw\icon_set_faves.ltx.</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_pg_pins">
+		<text>标记图标</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_pg_patches">
+		<text>阵营臂章图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_headertxt">
+		<text>这个菜单可以自定义游戏中PAW出现的菜单内容, 你可以禁用某些选项来缩减游戏中的菜单选项, 或定义他们何时才会显示, 比如一直显示, 制图模式显示, 或普通模式显示(就是PDA地图中)</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_wp_set">
+		<text>设置路点</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_wp_mov">
+		<text>移动路点</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_wp_del">
+		<text>删除路点</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_pn_add">
+		<text>放置标记</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_pn_del">
+		<text>移除标记</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_pn_ren">
+		<text>重命名标记</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_pn_clr">
+		<text>清除所有标记</text>
+	</string>
+	<string id="ui_mcm_pawsys_pawmenu_pn_spt">
+		<text>清除此地点所有标记</text>
+	</string>
+
+
+<!-- Added in 1.4 -->
+	<string id="ui_mcm_lst_pawsys_pg_bwhr">
+		<text>BW高分辨率POI</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_info">
+		<text>BWHR信息</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_signal">
+		<text>BWHR信号源</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_loot">
+		<text>BWHR战利品</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_death">
+		<text>BWHR危险</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_ak">
+		<text>BWHR武器</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_ammo">
+		<text>BWHR弹药</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_bio">
+		<text>BWHR生化</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_rad">
+		<text>BWHR辐射</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_warn">
+		<text>BWHR警告</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_bwhr_magn">
+		<text>BWHR放大镜</text>
+	</string>
+
+<!-- Added in 1.5 -->
+
+	<string id="ui_mcm_lst_paw_badge_hr_stalker">
+		<text>HR独行者</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_army">
+		<text>HR军队</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_bandit">
+		<text>HR土匪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_csky">
+		<text>HR晴空</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_dolg">
+		<text>HR纪律团</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_ecolog">
+		<text>HR生态学家</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_freedom">
+		<text>HR自由军</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_killer">
+		<text>HR佣兵</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_monolith">
+		<text>HR黑石</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_greh">
+		<text>HR原罪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_isg">
+		<text>HR UNISG</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_hr_renegade">
+		<text>HR叛节者</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_badge_uhr_stalker">
+		<text>UHR独行者</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_army">
+		<text>UHR军队</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_bandit">
+		<text>UHR土匪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_csky">
+		<text>UHR晴空</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_dolg">
+		<text>UHR纪律团</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_ecolog">
+		<text>UHR生态学家</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_freedom">
+		<text>UHR自由军</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_killer">
+		<text>UHR佣兵</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_monolith">
+		<text>UHR黑石</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_greh">
+		<text>UHR原罪</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_isg">
+		<text>UHR UNISG</text>
+	</string>
+	<string id="ui_mcm_lst_paw_badge_uhr_renegade">
+		<text>UHR叛节者</text>
+	</string>
+
+	<string id ="st_paw_pingspot">
+		<text>地图标记 - 右键设置标记或路点</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawmenu_mping">
+		<text>地图标记音效</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_pingsound">
+		<text>当标记地图时发出音效</text>
+	</string>
+
+<!-- Added in 1.6 -->
+
+	<string id ="ui_mcm_pawsys_pawpins_milpda_body_icon">
+		<text>为 Milspec PDA 模组添加自定义尸体图标</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_milpda_body_icon_desc">
+		<text>这个可选项提供了适配Milspec PDA包含的尸体标记的图标\n\n禁用: MilPDA 正常显示\n\n死者阵营臂章: 死去的潜行者会用他的所属阵营臂章当作尸体标记, 其他的图标均为尸体图标集中的默认\n\n尸体图标集: MilPDA将使用当前默认图标为所有尸体添加标记</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_get_milpda">
+		<text>此功能需要Milspec PDA 1.7.3 或更高版本:\nhttps://www.moddb.com/mods/stalker-anomaly/addons/milspec-pda-for-anomaly-151-152-and-gamma</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_pg_bodies">
+		<text>尸体标记</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_poi_icon_bodies">
+		<text>默认图标作为尸体标记</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_patch_res">
+		<text>阵营臂章的分辨率</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_patch_res_desc">
+		<text>此选项决定了阵营臂章图标的分辨率质量: 低分辨率和高分辨率差不多一样大, UHR版本的差不多大了25%</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_badge_res">
+		<text>低分辨率 (原版物品栏图标)</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_badge_hr_res">
+		<text>高分辨率 (来自 clean master)</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_badge_uhr_res">
+		<text>超高分辨率 (带有白色描边)</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawpins_milpda_body_icon">
+		<text>为Milspec PDA自定义尸体标记</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_bodyoff">
+		<text>禁用</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_bodyfac">
+		<text>死者阵营臂章</text>
+	</string>
+
+	<string id ="ui_mcm_lst_pawsys_cfg_bodyset">
+		<text>尸体标记图集</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawmenu_waypoint_rename">
+		<text>重命名路点</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawmenu_waypoint_redesc">
+		<text>修改路点信息</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_death_small">
+		<text>小型BWHR死亡图标 </text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_blue_circle">
+		<text>蓝色圆环</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_crosshair_white">
+		<text>白色准星</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_crosshair_red">
+		<text>红色准星</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_crosshair_green">
+		<text>绿色准星</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_stash_green">
+		<text>绿色藏物点标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_stash_white">
+		<text>白色藏物点标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_stash_purple">
+		<text>紫色藏物点标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_stash_red">
+		<text>红色藏物点标记</text>
+	</string>
+
+<!-- Added in 1.6.1 -->
+
+	<string id ="ui_mcm_pawsys_pawgen_wipe_all">
+		<text>删除所有标记数据</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawgen_wipe_all_desc">
+		<text>删除所有标记和数据 - 此操作不可逆</text>
+	</string>
+
+	<string id="ui_mcm_lst_deadbody_location_sdot">
+		<text>[MPDA] 小型蓝点</text>
+	</string>
+
+	<string id="ui_mcm_lst_deadbody_location_mdot">
+		<text>[MPDA] 中型蓝点</text>
+	</string>
+
+	<string id="ui_mcm_lst_deadbody_location_ldot">
+		<text>[MPDA] 大型蓝点</text>
+	</string>
+
+	<string id="ui_mcm_lst_deadbody_location_whtx">
+		<text>[MPDA] 白色X标记</text>
+	</string>
+
+	<string id="ui_mcm_lst_deadbody_location_skul">
+		<text>[MPDA] 小型头颅</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_togglehold">
+		<text>制图模式按键功能</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_toggle">
+		<text>切换</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_hold">
+		<text>长按</text>
+	</string>
+
+<!-- Added in 1.7 -->
+
+	<string id="ui_mcm_pawsys_pawbinds_mwheel_enabled">
+		<text>鼠标滚轮支持 (需要编译过的源码)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_mwheel_enabled_desc">
+		<text>激活后, 鼠标滚轮将能够直接切换激活的图标或图标集\n
+		此功能需要编译过的20230701及以上版本源码, GAMMA 从0.9.1版本起已经支持</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_mwheel_notify">
+		<text>当鼠标滚轮模式改变时显示信息</text>
+	</string>
+
+	<string id="ui_mcm_paw_modded_binaries">
+		<text>编译过的exe源码 by demonized (鼠标滚轮功能所需, GAMMA 从0.9.1版本起已经支持):\n https://github.com/themrdemonized/STALKER-Anomaly-modded-exes/
+		</text>
+	</string>
+
+	<string id="st_paw_change_set">
+		<text>当前激活的标记图集已改为 %s\n
+		</text>
+	</string>
+
+	<string id="st_paw_change_icon">
+		<text>当前激活的图标已</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_next">
+		<text>切换至下一图集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_next_desc">
+		<text>可选键位, 用于切换到下一图集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_prev">
+		<text>切换至上一图集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_prev_desc">
+		<text>可选键位, 用于切换到上一图集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_next">
+		<text>在当前图集中切换至下一图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_next_desc">
+		<text>可选键位, 用于在当前图集中切换至下一图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_prev">
+		<text>在当前图集中切换至上一图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_prev_desc">
+		<text>可选键位, 用于在当前图集中切换至上一图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_scroll">
+		<text>长按此键用滚轮切换图集</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_set_scroll_desc">
+		<text>当此键长按时, 滚动鼠标滚轮可以切换图集, 前提是鼠标滚轮功能已激活</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_scroll">
+		<text>长按此键用滚轮切换图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_ico_scroll_desc">
+		<text>当此键长按时, 滚动鼠标滚轮可以在当前激活图集中切换图标, 前提是鼠标滚轮功能已设置为"全部长按"</text>
+	</string>
+
+	<string id="st_paw_cycling_sets">
+		<text>鼠标滚轮用来切换图集</text>
+	</string>
+
+	<string id="st_paw_cycling_icons">
+		<text>鼠标滚轮用来切换图标</text>
+	</string>
+
+	<string id="st_paw_mwheel_normal">
+		<text>鼠标滚轮重置为默认状态</text>
+	</string>
+
+	<string id ="ui_mcm_menu_pawhud">
+		<text>图标可视化界面</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_widget_enable">
+		<text>启用图标可视化界面</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_autohide">
+		<text>X秒后自动隐藏图标HUD (0 为永不隐藏)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_hudsound">
+		<text>图集和图标改变时播放音效</text>
+	</string>
+
+	<string id ="ui_mcm_pawsys_pawhud_pingsound">
+		<text>当标记地图时播放音效</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_active_theme">
+		<text>图标可视化界面主题</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_custompos">
+		<text>使用自定义屏幕定位来代替主题定好的位置</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_widgetinfo">
+		<text>图标可视化界面会直接在屏幕显示当前激活的图标, 根据选择的主题不同也可能显示其他信息</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_pos_x_desc">
+		<text>为图标界面的左上角定位X轴向值(水平方向), 作为参考, 0,0 是屏幕的最左上角, 而1024,768(或你游戏当前显示的分辨率)是屏幕最右下角</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_pos_y_desc">
+		<text>为图标界面的左上角定位Y轴向值(垂直方向), 作为参考, 0,0 是屏幕的最左上角, 而1024,768(或你游戏当前显示的分辨率)是屏幕最右下角</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_pos_x">
+		<text>X值(水平, 从左到右) </text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_pos_y">
+		<text>Y值(垂直, 从上到下)</text>
+	</string>
+
+	<string id="ui_mcm_themes_list">
+		<text>可在下方阅读每个可用主题的说明\n</text>
+	</string>
+
+	<string id="ui_mcm_themes_classicauto">
+		<text>
+			经典潜行者主题, 自动切换: 138x75 (默认位置 890,620)\n
+			图标/图标集字体, 下一个/当前/上一个\n
+			当PDA开启时自动切换为经典的纵向右侧模式\n
+			如果不喜欢自动切换就选择 "Classic经典" 主题 \n
+			推荐默认
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_classic">
+		<text>
+			经典潜行者主题, 横向: 138x75 (默认位置 890,620)\n
+			图标/图标集字体, 下一个/当前/上一个\n
+			不自动切换, 但其默认位置会被PDA遮挡
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_vertright">
+		<text>
+			经典纵向, 靠右排列: 100x154 (默认位置 922,440)\n
+			图标字体, 下一个/当前/上一个\n
+			PDA模式为经典潜行者主题自动排列, 也能单独使用
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_vertleft">
+		<text>
+			经典纵向, 靠左排列: 100x154 (默认位置 4,570)\n
+			图标字体, 下一个/当前/上一个\n
+			其默认位置会遮挡PDA消息文字\n
+			推荐自定义位置
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_gamma_right">
+		<text>
+			GAMMA主题, 靠右排列: 136x150 (默认位置 888,440)\n
+			图标/图标集字体, 下一个/当前/上一个\n
+			任何情况下都无遮挡
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_gamma_left">
+		<text>
+			GAMMA Style, 靠左排列: 136x150 (默认位置 4,440)\n
+			图标/图标集字体, 下一个/当前/上一个\n
+			其默认位置会遮挡PDA消息文字\n
+			推荐自定义位置
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_minimal_h">
+		<text>
+			极简主题, 横向: 94x52 (默认位置 924,645)\n
+			图标字体, 下一个/当前/上一个 有下阴影\n
+			其默认位置会被PDA遮挡\n
+			推荐自定义位置
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_minimal_v">
+		<text>
+			极简主题, 纵向: 92x112 (默认位置 924,440)\n
+			图标字体, 下一个/当前/上一个 有下阴影\n
+			没有靠左排列的版本
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_minicom">
+		<text>
+			极简主题, 紧凑型: 38x38 (默认位置 890,440)\n
+			只显示当前图标, 有下阴影\n
+			其默认位置会被PDA遮挡
+		</text>
+	</string>
+
+	<string id="ui_mcm_themes_compact_noui">
+		<text>
+			紧凑型, 无边框: 32x32 (默认位置 890,440)\n
+			只显示当前图标, 无其他任何元素\n
+			适用性强
+		</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_classicauto">
+		<text>经典潜行者主题, 横/纵向, 自动切换</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_classic">
+		<text>经典潜行者主题, 横向 (890,620)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_vertright">
+		<text>经典主题, 纵向, 靠右排列 (922,440)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_vertleft">
+		<text>经典主题, 纵向, 靠左排列 (4,570)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_gamma_right">
+		<text>GAMMA主题, 靠右排列 (888,440)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_gamma_left">
+		<text>GAMMA主题, 靠左排列 (4,574)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_minimal_h">
+		<text>极简风格, 横向 (890,650)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_minimal_v">
+		<text>极简风格, 纵向 (890,440)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_minicom">
+		<text>极简风格, 紧凑型 (820,725)</text>
+	</string>
+
+	<string id="ui_mcm_lst_theme_compact_noui">
+		<text>紧凑型, 无UI元素 (820,725)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_enabled">
+		<text>启用</text>
+	</string>
+
+<!-- Added in 1.7.1 -->
+
+	<string id="st_paw_waypoint_cleared">
+		<text>当前路点已清除</text>
+	</string>
+
+<!-- Added in 1.7.2 -->
+
+	<string id="ui_mcm_paw_moddb_link">
+		<text>PAW: https://www.moddb.com/mods/stalker-anomaly/addons/personal-adjustable-waypoint-for-anomaly-151-152-and-gamma
+		</text>
+	</string>
+
+	<string id="ui_mcm_paw_milpda_link">
+		<text>Milspec PDA: https://www.moddb.com/mods/stalker-anomaly/addons/milspec-pda-for-anomaly-151-152-and-gamma
+		</text>
+	</string>
+
+<!-- Added in 1.7.3 -->
+
+	<string id="ui_mcm_pawsys_pawgen_disable_mcmups">
+		<text>禁用MCM实时刷新</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_disable_mcmups_desc">
+		<text>当您在游戏过程中更改当前图标/设置时, PAW 会同时更新 MCM 中的相同设置, 这样即使游戏崩溃, 您的更改也会被保存, 但这种实时更新可能会对性能造成影响,  启用此设置将关闭实时更新, 但保存游戏时仍会存储这些变动, 但是, 如果在保存之前进入 MCM 菜单, 则更改不会在 MCM 中更新</text>
+	</string>
+
+<!-- Added in 1.7.4 -->
+
+	<string id="ui_mcm_pawsys_pawmenu_show_all_pins">
+		<text>显示所有标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_hide_all_pins">
+		<text>隐藏所有标记</text>
+	</string>
+
+<!-- Added in 1.8 -->
+
+	<string id="ui_mcm_pawsys_pawgen_wp_clear_dist">
+		<text>路点自动清除的距离(米)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_wp_hud_icon_enabled">
+		<text>在HUD上显示路点</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_welcome_msg_shown">
+		<text>读取存档时禁用PAW的欢迎文本</text>
+	</string>
+
+	<string id="st_pawsys_welcome_msg">
+		<text>$clr_prp[ 自定义路点系统PAW已加载 ]$clr_wht \n \n
+• 在任何地图图标上右键可以设置自定义任务($clr_lbl路点$clr_wht) , 也可以放置自定义地图$clr_lbl标记$clr_wht\n
+• 按下 $clr_yel%s$clr_wht 来切换显示/隐藏路点, 如果不需要可视化图标界面, 可在MCM选项中关闭\n
+• 按下 $clr_yel%s$clr_wht 可对当前位置设置$clr_lbl快速标记$clr_wht\n
+• 按住 $clr_yel%s$clr_wht 可进入$clr_lbl制图模式$clr_wht 进行更多操作, 如对地图某处进行$clr_lblping$clr_wht 操作, 以便更准确地放置标记和路点\n
+\n
+MCM中有更多说明, 参阅$clr_lbl自定义路点$clr_wht.\n
+\n
+这则信息不会再次出现, 祝你好运, %s!</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_hud_vis_on">
+		<text>在HUD上显示标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_hud_vis_off">
+		<text>在HUD上隐藏标记</text>
+	</string>
+
+	<string id="st_paw_system_disabled">
+		<text>PAW系统已禁用</text>
+	</string>
+
+
+<!-- Added in 1.10 -->
+
+
+	<string id="ui_mcm_paw_current_active_pin">
+		<text>已激活标记:</text>
+	</string>
+
+	<string id="ui_mcm_paw_pinmenu_header">
+		<text>当放置标记时, 会使用当前激活的图标集内的默认图标, 你可以在此处修改, 或在游戏中使用指定的键位来切换图标集和默认图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cartmode_toggle">
+		<text>进入制图模式的按键为切换开关</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cartmode_toggle_desc">
+		<text>默认情况下需要长按按键来进入制图模式, 启用此项会使按键改变为切换</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cart_shows_smarts">
+		<text>制图模式下显示所有智能地形</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cart_shows_smarts_desc">
+		<text>制图模式默认会显示在所有智能地形上显示白色放大镜图标(GAMMA已默认为你禁用)</text>
+	</string>
+
+<!-- Added in 1.11 -->
+
+	<string id="st_paw_meters_abbr">
+		<text>米</text>
+	</string>
+
+	<string id="st_paw_unknown">
+		<text>未知</text>
+	</string>
+
+	<string id="st_paw_stash">
+		<text>藏物点</text>
+	</string>
+
+	<string id="st_paw_squad">
+		<text>小队</text>
+	</string>
+
+	<string id="st_paw_npc_pda_equipped">
+		<text>你现在装备着别人的PDA, 无法使用PAW自定义路点功能</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_show_dist_wp">
+		<text>在路点HUD上显示距离</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_show_dist_wp_desc">
+		<text>选择何时在路点HUD上显示距离信息</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_show_dist_pins">
+		<text>在标记HUD上显示距离</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_show_dist_pins_desc">
+		<text>选择何时在标记HUD上显示距离信息</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_show_hint_pins">
+		<text>在标记HUD上显示文字标签</text>
+	</string>
+	
+	<string id="ui_mcm_pawsys_pawgen_show_hint_pins_desc">
+		<text>选择何时在标记HUD上显示文字标签</text>
+	</string>
+
+<!-- Added in 1.12 -->
+
+	<string id="ui_mcm_lst_pawsys_pg_npcs">
+		<text>NPC和服务</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_npcs">
+		<text>NPC和服务使用默认图标样式</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_diamond_friendly">
+		<text>友善 (钻石样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_diamond_neutral">
+		<text>中立 (钻石样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_diamond_enemy">
+		<text>敌对 (钻石样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_chevron_friendly">
+		<text>友善 (V型样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_chevron_neutral">
+		<text>中立 (V型样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_chevron_enemy">
+		<text>敌对 (V型样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_flag_friendly">
+		<text>友善 (旗帜样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_flag_neutral">
+		<text>中立 (旗帜样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_flag_enemy">
+		<text>敌对 (旗帜样式)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_npc_mechanic">
+		<text>NPC 技师</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_npc_trader">
+		<text>NPC 商人</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_npc_guide">
+		<text>NPC 向导</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_npc_food_trader">
+		<text>NPC 食物商人</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_npc_medic">
+		<text>NPC 医师</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_sleep_zone">
+		<text>睡眠区</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_obj_briefcase">
+		<text>手提箱物品</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_obj_lock">
+		<text>锁住的物品</text>
+	</string>
+
+	<string id="ui_mcm_paw_cartmode_head">
+		<text>制图模式</text>
+	</string>
+
+	<string id="ui_mcm_paw_cartmode_desc">
+		<text>制图模式增加了更多地图工具, 你可以在MCM设置中自定义在制图模式下(以及普通模式下)会出现何种功能</text>
+	</string>
+
+	<string id="ui_mcm_paw_mousewheel_head">
+		<text>鼠标滚轮支持</text>
+	</string>
+
+	<string id="ui_mcm_paw_crosshair_target_head">
+		<text>路点和标记 - 准星瞄准的目标</text>
+	</string>
+
+	<string id="ui_mcm_paw_crosshair_target_desc">
+		<text>前两个键位可以让你对任何被你准星瞄准的东西打标记和路点 ( GAMMA默认隐藏了准星, 但即使如此你也可以直接用屏幕中心对准来打标记 ) , 被标记的物体或NPC必须在准星正中, 换句话说, 就是能让准星显示出NPC阵营的状态</text>
+	</string>
+
+	<string id="ui_mcm_paw_generalbinds_head">
+		<text>路点和标记 - 一般键位</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_wp_target_obj">
+		<text>按下按键来对瞄准的目标设置路点</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_wp_target_obj_desc">
+		<text>按下此键会对准星上的目标设置路点, 或是移动已有路点, 如果对已有路点的目标使用则会删除路点</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_pin_target_obj">
+		<text>按下按键对瞄准的目标设置标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_bind_pin_target_obj_desc">
+		<text>按下此键会使用目前激活的图标对准星上的目标设置标记, 或是移除目标上已有的标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_pin_auto_visible">
+		<text>通过准星快速标记的图标默认显示在HUD上</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_pin_auto_visible_desc">
+		<text>如果标记是用准星打上的话, 会自动在HUD显示, 当然, 任何时候你都可以用PDA来隐藏这些标记</text>
+	</string>
+
+
+	<string id="st_paw_pin_removed_from_target">
+		<text>标记 $clr_yel%s$clr_wht 已从 $clr_lbl%s$clr_wht上移除</text>
+	</string>
+
+	<string id="st_paw_pin_added_to_target">
+		<text>已标记 $clr_lbl%s$clr_wht 使用图标: $clr_lbl%s$clr_wht\n
+		你可以用以下按键来切换当前激活的图标 $clr_yel%s$clr_wht/$clr_yel%s$clr_wht</text>
+	</string>
+
+	<string id="ui_mcm_paw_pin_target_desc">
+		<text>标记 $clr_yel%s$clr_wht 已从 $clr_lbl%s$clr_wht上移除</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_tip_on_icoset_change">
+		<text>使用键位改变图标和图标集时显示新提示</text>
+	</string>
+
+<!-- Added in 1.13 -->
+
+	<string id="ui_mcm_pawsys_pawgen_pin_near_fade_dist">
+		<text>标记近距渐隐 (米)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_pin_near_fade_dist_desc">
+		<text>当玩家进入此距离内标记会渐隐</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_pin_far_fade_dist">
+		<text>标记远距渐隐 (米)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_pin_far_fade_dist_desc">
+		<text>当玩家离开此距离外标记会渐隐</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_pin_far_hide_dist">
+		<text>标记远距隐藏 (米)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_pin_far_hide_dist_desc">
+		<text>当玩家和标记的距离大于此值, 该标记会完全隐藏</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cartmode_unfade">
+		<text>制图模式下在HUD上的标记永不渐隐</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawbinds_cartmode_unfade_desc">
+		<text>如果HUD上有任何已经设置过渐隐的标记, 在制图模式下会取消渐隐</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_lock_pin">
+		<text>锁定标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawmenu_unlock_pin">
+		<text>解锁标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_reticle_mode">
+		<text>当准星指向能够标记的目标上时显示智能目标指示器</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_reticle_mode_desc">
+		<text>此项用来控制智能目标指示器何时出现: 总是, 只在制图模式, 或永不 (也就是禁用)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_reticle_alpha">
+		<text>智能目标指示器透明度</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_reticle_alpha_desc">
+		<text>取值0为完全透明, 255为完全不透明</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_ret_fade_attack_time">
+		<text>智能目标指示器淡入时间(毫秒)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_ret_fade_attack_time_desc">
+		<text>智能目标指示器出现时的淡入效果速度</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_ret_fade_decay_time">
+		<text>智能目标指示器淡出时间(毫秒)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_ret_fade_decay_time_desc">
+		<text>智能目标指示器消失时的淡出效果速度</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_preview_aspect">
+		<text>下方是不同屏幕长宽比下的预览</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_aspect_4_3">
+		<text>4:3 (标准)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_aspect_16_10">
+		<text>16:10 (1920x1200, 2560x1600)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_aspect_16_9">
+		<text>16:9 (1080p, 1440p, 2160p)</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_aspect_21_9">
+		<text>21:9 (超宽屏)</text>
+	</string>
+
+<!-- Added in 1.14 -->
+
+	<string id="ui_mcm_paw_resolutions">
+		<text>不同长宽比下的分辨率示例:\n</text>
+	</string>
+
+	<string id="ui_mcm_paw_resolutions_4_3">
+		<text>\n1024x768\n1600x1200</text>
+	</string>
+
+	<string id="ui_mcm_paw_resolutions_16_9">
+		<text>\n1920x1080\n1280x720\n1600x900\n2560x1440\n3840x2160</text>
+	</string>
+
+	<string id="ui_mcm_paw_resolutions_16_10">
+		<text>\n1280x800\n1920x1200\n2560x1600\n3840x2400</text>
+	</string>
+
+	<string id="ui_mcm_paw_resolutions_21_9">
+		<text>\n2560x1080\n3440x1440\n3840x1600</text>
+	</string>
+
+<!-- Added in 1.16 -->
+
+	<string id="ui_mcm_menu_pawret">
+		<text>指示器自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_enable_autotag">
+		<text>启用指示器智能自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_enable_autotag_desc">
+		<text>当此项被激活, PAW的HUD指示器会自动标记可用的目标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_reticle_info1">
+		<text>对准星指向的目标按下按键来使用标记和路点, 默认情况下, 当准星指向可用目标时, 指示器会有淡入淡出效果</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_reticle_info2">
+		<text>如果想要自动标记目标, 看下方"指示器自动标记"部分</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_autotag_info">
+		<text>指示器自动标记, 会使用事先指定的图标来自动对某一类目标进行标记, 这个功能可以让你忘掉多余的键位操作, 更专注于眼前的紧张状况</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawhud_autotag_facid">
+		<text>这个功能和自动阵营指示插件的原理相似, 可参阅两者的MCM设置来使两者更好的协作</text>
+	</string>
+
+	<string id="ui_mcm_lst_pawsys_pg_smartpins">
+		<text>智能标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawpins_poi_icon_smartpins">
+		<text>智能标记使用的默认图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_human_f_enable">
+		<text>启用对友方潜行者的自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_f">
+		<text>人类 (友好) 图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_f_desc">
+		<text>自动标记功能会对友方潜行者标记此图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_human_n_enable">
+		<text>启用对中立潜行者的自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_n">
+		<text>人类 (中立) 图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_n_desc">
+		<text>自动标记功能会对中立潜行者标记此图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_human_e_enable">
+		<text>启用对敌对潜行者的自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_e">
+		<text>人类 (敌对) 图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_human_e_desc">
+		<text>自动标记功能会对敌对潜行者标记此图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_monster_enable">
+		<text>启用对怪物的自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_monster">
+		<text>怪物</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_monster_desc">
+		<text>自动标记功能会对变异怪物和其他非人生物标记此图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_stash_enable">
+		<text>启用对藏物点的自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_stash">
+		<text>藏物点图标</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_stash_desc">
+		<text>自动标记功能会对藏物点和其他存储容器标记此图标</text>
+	</string>
+
+
+	<string id="ui_mcm_pawsys_pawret_reticle_mustzoom">
+		<text>只在开镜瞄准/使用望远镜时激活智能目标指示器</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_reticle_mustzoom_desc">
+		<text>当此项被勾选, 目标指示器和指示器标记功能仅在进入瞄具瞄准界面或望远镜观察界面时有效, 这样能够避免在路上随便走着或是和NPC对话时就自动给周围目标打上标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_manual_smart_pins">
+		<text>手动设置的标记为智能标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_manual_smart_pins_desc">
+		<text>当此项被勾选, 使用按键设置的标记也会遵循自动标记的规则, 会对目标使用下方所选的图标, 而不是当前激活的图标</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_pin_redskull">
+		<text>红色野兽头骨</text>
+	</string>
+
+	<string id="ui_mcm_lst_paw_crosshair_gradient">
+		<text>渐变准星</text>
+	</string>
+
+<!-- Added in 1.16.3 -->
+
+	<string id="st_paw_texture_load_error_tip">
+		<text>$clr_yel自定义路点系统$clr_red未能成功加载贴图数据$clr_wht, 为了保护你的存档, 本插件自动禁用\n \n
+		请提交日志中的报错, 并确保MO2中PAW模组下的其他mod没有任何覆盖 $clr_yelmap_spots_relations.xml$clr_wht文件的操作 \n \n
+		如果你并不关心这件事情, 可以在MCM中的 $clr_yel自定义路点系统$clr_wht 设置中禁用此消息</text>
+	</string>
+
+	<string id="st_paw_texture_load_error_mcmhead1">
+		<text>警告: mapspot的贴图数据丢失</text>
+	</string>
+
+	<string id="st_paw_texture_load_error_mcmhead2">
+		<text>为了避免游戏崩溃, PAW核心功能及其大部分MCM设置被禁用, 在此问题被解决后启用</text>
+	</string>
+
+	<string id="st_paw_texture_load_error1">
+		<text>自定义路点系统无法正确从map_spots_relations.xml中加载贴图数据, 此问题几乎总是由于另外的MOD在本插件之后加载并修改了该文件导致, 例如以下插件 (不限于) Kill Tracker尸体标记 和 Milspec PDA</text>
+	</string>
+
+	<string id="st_paw_texture_load_error2">
+		<text>如果你使用MO2 (或类似GAMMA这样的插件包), 可以去mod列表调整插件加载顺序, 确保本插件在所有会修改map_spots_relations.xml文件的下方, 如果你不用MO2, 那祝你吃泡面没调料包</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_disable_load_warning">
+		<text>在游戏中禁用此报错信息 (不推荐)</text>
+	</string>
+
+<!-- Added in 1.17 -->
+
+	<string id="ui_mcm_pawsys_pawret_autotag_persistence">
+		<text>自动标记变为永久性</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_autotag_persistence_desc">
+		<text>除非选中此项, 否则所有自动标记都是临时的--也就是说, 当玩家过图时和读取存档后会自动清除, 下方的时间选项也可以自动清除这些自动标记</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_autotag_lifetime">
+		<text>自动标记保留时限(秒)</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawret_autotag_lifetime_desc">
+		<text>如果自动标记永久性未被启用, 则所有自动标记在此时限到达之后都会被清除, 取值为0的话会禁用时限, 但自动标记仍然会在玩家过图时和读取存档后被清除</text>
+	</string>
+
+<!-- Added in 2.0 -->
+
+	<string id="ui_mcm_pawsys_pawgen_headertxt">
+		<text>
+		$clr_yelPAW$clr_wht 并不仅仅是个路点标记mod--它是一整套能让玩家更好使用地图的管理及导航工具, 尤其适合新手玩家在特异区陌生环境下保持方向和距离感的帮手, $clr_yel几乎所有功能都可以定制使用, 以打造更适合你自己的独特体验$clr_wht \n \n
+		•$clr_lbl 随时随地设置属于自己的任务路点, 并自定义说明文字$clr_wht \n 
+		•$clr_lbl 依照自己的喜好挑选图标, 随心所欲放置, 移除, 重命名属于自己的地图标记$clr_wht \n 
+		•$clr_lbl 依照玩家指定的规则自动标记任何拥有ID的目标, 并在HUD上随时可见$clr_wht \n \n
+		$clr_yel充分使用PAW吧! 真正在特异区走自己的路, 让别的潜行者们无路可走$clr_wht
+		</text>
+	</string>
+
+	<string id="ui_mcm_pawsys_pawgen_wp_clear_dist_desc">
+		<text>当玩家接近路点的距离达到此数值时自动清除路点标记, 设置为0则禁用自动清除</text>
+	</string>
+
+</string_table>

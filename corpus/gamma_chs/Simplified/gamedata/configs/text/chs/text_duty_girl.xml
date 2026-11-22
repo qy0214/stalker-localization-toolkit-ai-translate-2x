@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="stalker_duty_girl_name">
+		<text>安娜</text>
+	</string>
+	
+	
+	
+	<string id="duty_girl_companion_join_0">
+		<text>我在下一个任务中需要一个额外的助手. 你能帮助我吗？</text>
+	</string>
+	<string id="duty_girl_companion_join_1">
+		<text>当然,带路吧. </text>
+	</string>
+	<string id="duty_girl_companion_join_2">
+		<text>你和她在一起不是很开心吗？对不起,我现在很忙.</text>
+	</string>
+	
+	<string id="duty_girl_companion_leave_0">
+		<text>我想我们应该暂时分道扬镳.</text>
+	</string>
+	<string id="duty_girl_companion_leave_1">
+		<text>你确定吗?</text>
+	</string>
+	<string id="duty_girl_companion_leave_2">
+		<text>是的,有一些事情我必须单独处理.</text>
+	</string>
+	<string id="duty_girl_companion_leave_3">
+		<text>不要紧,再想一想,两个会更好.</text>
+	</string>
+	<string id="duty_girl_companion_leave_4">
+		<text>好吧. 狩猎工作做得好. 我将返回罗斯托克. 记得时常来看看.</text>
+	</string>
+	
+	<string id="duty_girl_actor_ask_companion_0">
+		<text>我们有不同的敌人和朋友. 有什么办法让我们一起打猎吗？?</text>
+	</string>
+	<string id="duty_girl_actor_ask_companion_1_lone">
+		<text>我的存在可以说服乌克兰军队离你远点. 但不要尝试任何愚蠢的事情. 如果你把他们惹毛了,我也不会帮忙. 作为回报,请确保自由军不给我找麻烦. 然后我想我们就可以相处了. </text>
+	</string>
+	<string id="duty_girl_actor_ask_companion_1_csky">
+		<text>我的存在可以说服乌克兰军队离你远点. 但不要尝试任何愚蠢的事情. 如果你把他们惹毛了,我也不会帮忙. 作为回报,请确保自由军和雇佣兵不给我带来麻烦. 然后我想我们就可以相处了. </text>
+	</string>
+	<string id="duty_girl_actor_ask_companion_1_army">
+		<text>我可以说服自由军和晴空成员,你不是一个威胁. 你最好也采取相应的行动. 如果你把他们惹毛了,我也不会帮忙. 那么我想我们的相处方式就会很好. </text>
+	</string>
+	<string id="duty_girl_actor_ask_companion_1_ecol">
+		<text>你没有很多敌人,嗯？我想如果你能说服自由军和雇佣兵不攻击我,我们就能相处得很好. .</text>
+	</string>
+	
+	<string id="duty_girl_companion_random_chat_1">
+		<text>最好在平时储备更多的弹药. </text>
+	</string>
+	<string id="duty_girl_companion_random_chat_2">
+		<text>你知道,你可以离开区域. 安定下来,重新开始,娶个女孩...</text>
+	</string>
+	
+	<string id="duty_girl_companion_random_chat_special_1">
+		<text>你看起来不太好. 尽快更好地治疗你的伤口.</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_2">
+		<text>你可以看到辐射. 你还好吗?</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_3">
+		<text>新的一天,我们还活着. 那太棒了.</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_4">
+		<text>现在是早上. 是时候去消灭一些变异怪物了.</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_5">
+		<text>早晨了,我猜那些自由军还在被吸血怪侵扰</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_6">
+		<text>夜晚来临了,现在 "特异区 "更加危险了,但机会也随之而来. </text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_7">
+		<text>夜幕降临,我们要不要休息一下？</text>
+	</string>
+	<string id="duty_girl_companion_random_chat_special_8">
+		<text>你今天消灭了多少个变异怪物？</text>
+	</string>
+	
+	<string id="duty_girl_chat_0">
+		<text>我想问你一件事.</text>
+	</string>
+	<string id="duty_girl_chat_1">
+		<text>是吗?</text>
+	</string>
+	<string id="duty_girl_chat_2">
+		<text>不要介意.</text>
+	</string>
+	
+	
+	<string id="duty_girl_chat_hunting_chimera_0">
+		<text>你急于杀死奇美拉. 这是因为你的父亲？</text>
+	</string>
+	<string id="duty_girl_chat_hunting_chimera_1">
+		<text>是的,算是吧. 你知道,包括我在内的大多数纪律团成员,都是在 "特异区 "内失去亲朋的人. 这样的记忆是不会轻易被遗忘的.</text>
+	</string>
+	
+	<string id="duty_girl_chat_monolith_elite_0">
+		<text>那些人似乎都听从你的命令.</text>
+	</string>
+	<string id="duty_girl_chat_monolith_elite_1">
+		<text>我懂医学,通常会帮助受伤的人,所以他们似乎很喜欢我. 也可能是我不像其他纪律团人员那样严格.</text>
+	</string>
+		
+	<string id="duty_girl_chat_capture_the_brirge_0">
+		<text>为什么 "黑石 "要封锁路线？</text>
+	</string>
+	<string id="duty_girl_chat_capture_the_brirge_1">
+		<text>他们是黑石. 他们总是阻止人们到达 "特异区"的中心. 我认为我们与之战斗的那些人是 "脑残粉 "的新受害者. 有经验的潜行者会试图穿越 "烧脑机"的迷幻领域,到达 "特异区 "的中心. 很多事情都可能发生,变异怪物的攻击破坏了他们的保护设备,无法及时穿越场域,等等. 这条路线很危险,但同时它也会通向没有人探索过的新区域. </text>
+	</string>
+	
+	<string id="duty_girl_chat_capture_the_brirge_2">
+		<text>我看到有一些自由军加入我们在桥上的战斗. </text>
+	</string>
+	<string id="duty_girl_chat_capture_the_brirge_3">
+		<text>也许他们是受到我们重新开放路线的行动的影响,有他们的朋友被困在北方,所以他们来帮忙. 也可能他们只是为了奖励而来. 不管怎么说,我们欢迎任何帮助. </text>
+	</string>
+	
+<!--==================================================================================================
+	Quests
+====================================================================================================-->
+	<string id="duty_girl_first_meet_0">
+		<text>我已经有好几年没有见过女孩了. </text>
+	</string>
+	<string id="duty_girl_first_meet_1">
+		<text>我想你总是会看到我的身影. </text>
+	</string>
+	<string id="duty_girl_first_meet_2">
+		<text>我以前没有见过你. 你是新兵吗？</text>
+	</string>
+	<string id="duty_girl_first_meet_3">
+		<text>我在一年前参加了纪律团. 那是一次非正式招募,我父亲是一名自由军,我和他在一起. 有一天,我们被一只奇美拉袭击了. 我躲在卡车车厢里设法活了下来,但他没能活下来. 他在试图保护我时被杀. 然后,一个纪律团的探险队发现并救了我. 于是我加入了他们,因为我无处可去,而且我想为我父亲报仇. 从那时起,我就和他们一起训练和战斗. 现在我们的任务结束了,我们回到了基地,等待下一个命令.</text>
+	</string>
+	<string id="duty_girl_first_meet_4">
+		<text>多么悲伤的故事. 我很遗憾听到这个消息. </text>
+	</string>
+	<string id="duty_girl_first_meet_5">
+		<text>我很好. 嘿,你就是那个最近到处跑来找工作的人,对吧？我目前负责纪律团的特别行动. 如果你需要工作,我可能有一些工作给你. </text>
+	</string>
+	
+	<string id="duty_girl_hunting_chimera_init_0">
+		<text>你有什么工作需要我帮忙的吗？</text>
+	</string>
+	<string id="duty_girl_hunting_chimera_init_1">
+		<text>我现在要去打猎了. 有一个奇美拉已经困扰了巴曼一段时间了. 加入我吧,我会把赏金的一半分给你. 在跳蚤市场见我. </text>
+	</string>
+	
+	
+	<string id="duty_girl_hunting_chimera_move_0">
+		<text>我已经准备好了. </text>
+	</string>
+	<string id="duty_girl_hunting_chimera_move_1">
+		<text>我刚刚看到它从远处追赶一些土匪. 我很高兴见到你. 它是个大块头,如果你不来帮忙,我就不得不放弃这个任务了. 它现在肯定已经回到它的巢穴了. 跟着我,跟紧点. </text>
+	</string>
+	
+	<string id="duty_girl_hunting_chimera_hunt_1">
+		<text>看,那是一个黑色的奇美拉.</text>
+	</string>
+	<string id="duty_girl_hunting_chimera_hunt_2">
+		<text>它并没有意识到我们的存在,很好. </text>
+	</string>
+	<string id="duty_girl_hunting_chimera_hunt_3">
+		<text>你最好把第一炮打响.</text>
+	</string>
+	<string id="duty_girl_hunting_chimera_hunt_4">
+		<text>唷! 好险啊.</text>
+	</string>
+	
+	<string id="duty_girl_hunting_chimera_done_0">
+		<text>那个怪物已经死了. </text>
+	</string>
+	<string id="duty_girl_hunting_chimera_done_1">
+		<text>你比我想象的要坚强. 我正在为我的任务寻找一些好的战士,而你是一个很好的补充. 我会详细解释的,但我认为你应该准备一些更好的装备. 给,拿着奖励. </text>
+	</string>
+	
+	
+	<string id="duty_girl_monolith_elite_init_0">
+		<text>你有什么工作需要我帮忙的吗？</text>
+	</string>
+	<string id="duty_girl_monolith_elite_init_1">
+		<text>是的. 有一个. 恐怕是个相当危险的家伙. 就在最近,一群黑石出现在军事仓库里,挡住了通往红森林的道路. 他们不是什么黑石,侦察员报告说,他们的武器非常好. 人们哭着要求重新开放路线,所以我们在这里. 我们将在军事仓库的废弃房子里集合. 在那里见. </text>
+	</string>
+	
+	<string id="duty_girl_monolith_elite_join_0">
+		<text>我是来加入你们的. </text>
+	</string>
+	<string id="duty_girl_monolith_elite_join_1">
+		<text>很高兴见到你. 这是你的补给品. 做好准备,准备好后告诉我. .</text>
+	</string>
+	<string id="duty_girl_monolith_elite_join_2">
+		<text>我已经准备好了.</text>
+	</string>
+	
+	<string id="duty_girl_monolith_elite_move_1">
+		<text>系好安全带,男人. 这并不容易. </text>
+	</string>
+	<string id="duty_girl_monolith_elite_move_2">
+		<text>记住要低着头,跟着我的手势走. </text>
+	</string>
+	<string id="duty_girl_monolith_elite_move_3">
+		<text>行动.</text>
+	</string>
+	<string id="duty_girl_monolith_elite_move_4">
+		<text>这就是了. 干得好,伙计们!</text>
+	</string>
+	<string id="duty_girl_monolith_elite_move_5">
+		<text>该死的,他被发现了.</text>
+	</string>
+	<string id="duty_girl_monolith_elite_move_6">
+		<text>大伙,开枪吧.</text>
+	</string>
+	
+	<string id="duty_girl_monolith_elite_done_0">
+		<text>我是来领赏的. .</text>
+	</string>
+	<string id="duty_girl_monolith_elite_done_1">
+		<text>是的,你来了. 我知道我可以依靠你. 你今天的贡献将在纪律团中广为人知.</text>
+	</string>
+	
+	<string id="duty_girl_loot_stash_init_0">
+		<text>你有什么工作需要我帮忙的吗？</text>
+	</string>
+	<string id="duty_girl_loot_stash_init_1">
+		<text>我还没有得到任何东西. 但也许你会对这个感兴趣. 你在最近的任务中做得很好,我认为奖励是相当少的. 这是从其中一个黑石的PDA上获得的坐标. 毫无疑问,是一个藏物点. 还没有人保护它,我们必须为下一步行动做准备. 所以就当做是给你的报酬吧. </text>
+	</string>
+	<string id="duty_girl_loot_stash_init_2">
+		<text>谢谢.</text>
+	</string>
+	
+	<string id="duty_girl_capture_the_brirge_init_0">
+		<text>你有什么工作需要我帮忙的吗?</text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_init_1">
+		<text>黑石又来了. 他们占领了红森林中桥附近的前哨. 我们要赶走他们,同时占领它并建立一个前哨来维持路线. 我们的集结点是红森林的巴士站. 在那里见. </text>
+	</string>
+	
+	<string id="duty_girl_capture_the_brirge_join_0">
+		<text>我来和你一起</text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_join_1">
+		<text>我们在前面探路. 我们的敌人有不太熟练的战士,但他们是按人数来的. 发现了大约10个人,但我肯定他们有后援藏在周围. 这将比之前的战斗更艰难. 带上你的补给,做好准备. </text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_join_2">
+		<text>我已经准备好了. </text>
+	</string>
+	
+	<string id="duty_girl_capture_the_brirge_move_1">
+		<text>要小心,他们比以前更强硬. </text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_move_2">
+		<text>不要前进得太远,待在一起. </text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_move_3">
+		<text>行动.</text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_move_4">
+		<text>看起来那是最后一个,干得好!</text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_move_5">
+		<text>该死的,他被发现了.</text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_move_6">
+		<text>大伙,进攻吧</text>
+	</string>
+	
+	<string id="duty_girl_capture_the_brirge_done_0">
+		<text>我是来领取我的奖赏的. </text>
+	</string>
+	<string id="duty_girl_capture_the_brirge_done_1">
+		<text>谢谢你的帮助. 我们的人正在赶来的路上,前哨站将很快投入使用. 我的任务已经结束. 我想我将会闲置一段时间. 如果你在任务中需要额外的帮助,你只需要开口. </text>
+	</string>
+	
+	
+	
+	
+</string_table>

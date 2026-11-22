@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>	
+	<string id="ui_mcm_menu_pda_taskboard">
+		<text>PDA委託資訊面板</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_banner">
+		<text>PDA委託資訊面板</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_scanning_range">
+		<text>任務掃瞄半徑</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_trim_text">
+		<text>簡化長文字</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_trim_text_desc">
+		<text>如果您不想檢視委託任務的詳細資訊和描述, 就開啟此選項; 如果關閉的話, 您可能還需要修改下方的"列表行高"選項, 以確保很長的描述不會與下一個任務重疊</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_list_row_height">
+		<text>列表行高</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_list_row_height_desc">
+		<text>與上方的"簡化長文字"配合使用, 確保未經簡化的長文字可以在列表中完整顯示而不與其他元素重疊, 此選項需要重新讀取存檔才能生效</text>
+	</string>
+		<string id="ui_mcm_pda_taskboard_taskboard_key">
+		<text>PDA委託板快捷鍵</text>
+	</string>
+	<string id="ui_mcm_pda_taskboard_companions_give_tasks">
+		<text>允許隊友發佈任務</text>
+	</string>
+</string_table>

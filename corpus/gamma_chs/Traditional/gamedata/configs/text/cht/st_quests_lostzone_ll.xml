@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--===========================================================
+<
+< TEXT STRINGS FOR LOST TO THE ZONE: LIVING LEGEND TASKS
+<	Anomaly 1.5 = Lost to the Zone: Living Legend
+<
+<	Made by: SarisKhan
+<	Last revised: 04 September 2019
+<
+<===========================================================-->
+
+<string_table>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 1 -->
+	<string id="lttz_ll_find_doctor_task_title">
+		<text>永恒傳奇: 舊日老友</text>
+	</string>
+	<string id="lttz_ll_find_doctor_task_descr">
+		<text>沼澤巫醫, 史特洛克的老夥伴, 在大沼澤西北的一個角落隱居, 想辦法找到他, 並打聽史特洛克的下落, 那裡異常點很密集, 被晴空列為禁區, 但有似乎附近有一處柵欄破損了可以過去</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 2 -->
+	<string id="lttz_ll_visit_agro_ug_name">
+		<text>永恒傳奇: 潛入地牢</text>
+	</string>
+	<string id="lttz_ll_visit_agro_ug_text">
+		<text>調查史特洛克在地下設施的藏身處並獲取線索, 沼澤巫醫提到最近的入口在靠近地圖中央道路的位置</text>
+	</string>
+	<string id="lttz_ll_visit_agro_ug_text_2">
+		<text>調查史特洛克在地下設施的藏身處並獲取線索, 沼澤巫醫提到最近的入口在靠近地圖中央道路的位置</text>
+	</string>
+	
+	<string id="strelok_notes_name">
+		<text>史特洛克的筆記</text>
+	</string>
+	<string id="strelok_notes_desc">
+		<text>史特洛克的筆記本, 瀏覽一遍會發現裡面全是雜亂無章, 晦澀難懂的符號. 這位潛行者似乎早在幾年之前就做出了一些重要的決定, 之後, 他迅速在羅斯托克進行補給, 並馬不停蹄的前往北方</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 3 -->
+	<string id="lttz_ll_visit_barkeep_task_title">
+		<text>永恒傳奇: 追隨傳說</text>
+	</string>
+	<string id="lttz_ll_visit_barkeep_task_descr">
+		<text>假如史特洛克在羅斯托克進行補給的話, 那酒保肯定會知道些什麼...</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 3 -->
+	<string id="lttz_ll_visit_aslan_task_title">
+		<text>永恒傳奇: 追隨傳說</text>
+	</string>
+	<string id="lttz_ll_visit_aslan_task_descr">
+		<text>阿斯蘭對特異區的北方無所不知, 去拜訪他吧</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 4 -->
+	<string id="lttz_ll_call_north_task_title">
+		<text>永恒傳奇: 北方的召喚</text>
+	</string>
+	<string id="lttz_ll_call_north_task_descr">
+		<text>設法獲取靈能防護裝置來讓你免遭"焦腦器"的傷害</text>
+	</string>
+	<string id="lttz_ll_call_north_task_descr2">
+		<text>"三頭犬"瑟伯是北方死亡屏障處一名老到的潛行者. 他很可能是最後一個看到史特洛克的人</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 5 -->
+	<string id="lttz_ll_breakthrough_task_name">
+		<text>永恒傳奇: 守護屏障</text>
+	</string>		
+	<string id="lttz_ll_breakthrough_task_text">
+		<text>黑石正在進攻死亡屏障的防線, 你得擊退他們才有機會前往雷達站</text>
+	</string>
+	<string id="lttz_ll_talk_gatekeeper_task_descr">
+		<text>你擊退了黑石, 去和"三頭犬"瑟伯談談</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 6 -->
+	<string id="lttz_ll_radar_deactivate_name">
+		<text>永恒傳奇: 深入瘋狂</text>
+	</string>
+	<string id="lttz_ll_deactivate_text">
+		<text>關閉"焦腦器"深入特異區的中心</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 7 -->
+	<string id="lttz_ll_visit_beard_task_title">
+		<text>永恒傳奇: 偏安一隅</text>
+	</string>
+	<string id="lttz_ll_visit_beard_task_descr">
+		<text>"三頭犬"瑟伯讓你向大鬍子問好, 而後者可能知道一些關於史特洛克的情報</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 8 -->
+	<string id="lttz_ll_meet_rogue_task_title">
+		<text>永恒傳奇: "遊蕩者"</text>
+	</string>
+	<string id="lttz_ll_meet_rogue_task_descr">
+		<text>史特洛克的一個同伴"遊蕩者", 正呆在斯卡多夫斯克號, 他肯定知道更詳細的情報</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 9 -->
+	<string id="lttz_ll_fetch_gauss_task_title">
+		<text>永恒傳奇: 超級殺器</text>
+	</string>
+	<string id="lttz_ll_fetch_gauss_task_descr">
+		<text>"遊蕩者"讓你去為他尋找一把實驗性的武器原型, 在一個廢棄的軍事設施中</text>
+	</string>
+	<string id="lttz_ll_fetch_gauss_task_descr2">
+		<text>你找到了武器原型, 帶給"遊蕩者"看看</text>
+	</string>
+	
+	<string id="lttz_ll_wpn_gauss_quest_name">
+		<text>"62號專案"</text>
+	</string>
+	<string id="lttz_ll_wpn_gauss_quest_descr">
+		<text>威力巨大並且高度精準的電磁加速槍, 使用電系神器供能, 可以擊穿最堅固的護甲, 不知道是誰把這個巨大武器原型的單兵版給扔在了實驗靶場里</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 10 -->
+	<string id="lttz_ll_path_pripyat_task_title">
+		<text>永恒傳奇: 普城之路</text>
+	</string>
+	<string id="lttz_ll_path_pripyat_task_descr">
+		<text>與"遊蕩者"一同穿過木星工廠地下通道</text>
+	</string>
+	<string id="lttz_ll_talk_rogue_underpass_task_descr">
+		<text>你剛剛擊退了黑石的伏擊, 向"遊蕩者"瞭解情況</text>
+	</string>
+	<string id="lttz_ll_reach_pripyat_task_descr">
+		<text>與"遊蕩者"一起抵達史特洛克在普里皮亞奇的藏身處</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 11 -->
+	<string id="lttz_ll_medical_supplies_name">
+		<text>永恒傳奇: 醫療補給</text>
+	</string>
+	<string id="lttz_ll_medical_supplies_text">
+		<text>"縫合者", 史特洛克的隊醫, 要求你弄來%s.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 12 -->
+	<string id="lttz_ll_attack_on_titan_name">
+		<text>永恒傳奇: 進擊的巨獸</text>
+	</string>
+	<string id="lttz_ll_attack_on_titan_text">
+		<text>一個危險的變異巨獸在普里皮亞奇遊蕩, 消滅這個致命的麻煩</text>
+	</string>
+	<string id="lttz_ll_return_rogue_attack_on_titan_task_descr">
+		<text>你擊倒了變異巨獸, 回到"遊蕩者"那裡通報你的成功</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 13 -->
+	<string id="lttz_ll_find_documents_name">
+		<text>永恒傳奇: 最高機密</text>
+	</string>
+	<string id="lttz_ll_find_documents_text">
+		<text>X-8實驗室裡有著特異區的最高機密, 找到檔案並帶回給史特洛克.</text>
+	</string>
+	
+	<string id="item_doc_x8_ll_name">
+		<text>X-8研究檔案</text>
+	</string>
+	<string id="item_doc_x8_ll_desc">
+		<text>這些檔案簡要介紹了由某未知團隊進行的一系列靈能場實驗的結果, 最突出的內容是, 該結果似乎證實了包圍地球的非實體靈能場的存在(即念域)\n檔案中還包含對一些複雜機械裝置的簡短描述, 這些裝置似乎可以用可控的方式影響上文中的靈能場\n不過, 這之中大部分內容都是關於人體暴露在不同強度的靈能場的實驗記錄, 在測試過程中, 許多實驗體似乎擁有了超人般的耐力, 智力或心智影響能力, 根據記錄, 沒有死掉的實驗體都被轉移了, 還有一些則神秘的消失了
+		\n\n檔案在一處空白上潦草地寫著: "爲了那些所謂的願景, 我們把活生生的人扭曲成了面目全非的東西! 我們的傲慢和罪惡肯定會遭天譴的!", 史特洛克應該會對這些檔案感興趣</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 14 -->
+	<string id="lttz_ll_eidolon_start_task_title">
+		<text>永恒傳奇: 先發制人</text>
+	</string>
+	<string id="lttz_ll_eidolon_start_task_descr">
+		<text>集結隊伍, 立刻出發去擊敗幻靈</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 15 -->
+	<string id="lttz_ll_eidolon_task_title">
+		<text>永恒傳奇: 黑石的守護者</text>
+	</string>
+	<string id="lttz_ll_eidolon_task_descr">
+		<text>突襲文化宮, 揪出幻靈, 擊敗他</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 16 -->
+	<string id="lttz_ll_strelok_objective_task_title">
+		<text>永恒傳奇: 壯志雄心</text>
+	</string>
+	<string id="lttz_ll_strelok_objective_task_descr">
+		<text>你擊敗了幻靈, 史特洛克想要告訴你他的最終計劃了</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 17 -->
+	<string id="lttz_ll_chernobyl_raid_task_title">
+		<text>永恒傳奇: 突襲核電站</text>
+	</string>
+	<string id="lttz_ll_chernobyl_raid_task_descr">
+		<text>抵達核電站並擊敗黑石的防禦部隊</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 18 -->
+	<string id="lttz_ll_crucible_task_title">
+		<text>永恒傳奇: 靈魂熔爐</text>
+	</string>
+	<string id="lttz_ll_crucible_task_descr">
+		<text>殺出一條前往黑石控制中心的血路, 擊敗幽靈守衛並找到黑石碎片</text>
+	</string>
+	
+	<string id="item_monolith_shard_name">
+		<text>黑石碎片</text>
+	</string>
+	<string id="item_monolith_shard_desc">
+		<text>據說這是許願石上分離下來的碎片, 和任何神器有著本質的不同, 它蘊含的能量發出令人不安的噼啪聲, 看似普通的外表之下似乎隱藏著不為人知的野蠻力量</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 19 -->
+	<string id="lttz_ll_answers_task_title">
+		<text>永恒傳奇: 水落石出</text>
+	</string>
+	<string id="lttz_ll_answers_task_descr">
+		<text>你得到了黑石的一塊碎片, 是時候尋找這一切的答案了</text>
+	</string>
+	
+	<string id="st_strelok_pendrive_name">
+		<text>史特洛克的U盤</text>
+	</string>
+	<string id="st_strelok_pendrive_descr">
+		<text>這個U盤內包含了大量加密數據, 都是他挖掘多年獲得的檔案備份, 這些絕密實驗數據是導致特異區出現的寶貴證據</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Living Legend Task 20 -->
+	<string id="lttz_ll_finish_task_title">
+		<text>永恒傳奇: 塵埃落定</text>
+	</string>
+	
+	<string id="lttz_ll_finish_csky_task_descr">
+		<text>回到冷風處報告你的成功</text>
+	</string>
+	<string id="lttz_ll_finish_stalker_task_descr">
+		<text>回到西多洛維奇處報告你的成功</text>
+	</string>
+	<string id="lttz_ll_finish_killer_task_descr">
+		<text>回到達什曼處報告你的成功</text>
+	</string>
+	<string id="lttz_ll_finish_freedom_task_descr">
+		<text>回到盧卡什處報告你的成功</text>
+	</string>
+	<string id="lttz_ll_finish_dolg_task_descr">
+		<text>回到沃羅寧將軍處報告你的成功</text>
+	</string>
+	<string id="lttz_ll_finish_ecolog_task_descr">
+		<text>回到薩哈洛夫教授處報告你的成功</text>
+	</string>
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	
+</string_table>

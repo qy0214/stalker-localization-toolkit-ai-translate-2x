@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--===========================================================
+<
+< TEXT  STRINGS FOR TASKS ON DARK VALLEY MAP
+<	CoC 1.4.08 = DoctorX Questlines 1.6
+<
+<	Modified by: DoctorX
+<	Last revised: October 07, 2016
+<
+<===========================================================-->
+<string_table>
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== STORYLINE TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Default Storyline Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_default_task_name">
+		<text>獲取下一個任務</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_default_task_text">
+		<text>接受下一個任務.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_default_task_about">
+		<text>我想讓你見個人, 他可以給你一份工作. 現在走吧, 記住, 別亂說話, 知道嗎?</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Retrieve Lock Box Storyline Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_1_name">
+		<text>為"匪王"蘇坦取回保險箱</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_1_text">
+		<text>"匪王"蘇坦想要得到保險箱裡的東西</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_1_about">
+		<text>我需要你幫我找個箱子. 它被藏在了哪. 箱子里的東西隨你拿, 但箱子得是我的. 完畢? 把那玩意拿來, 我會賞給你額外的報酬</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_1_finish">
+		<text>好極了!你做的很好</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Sultan's Enemy Storyline Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_2_name">
+		<text>"匪王"蘇坦的敵人</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_2_text">
+		<text>"匪王"蘇坦想報復欺騙他的潛行者.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_2_about">
+		<text>一個無能鼠輩欺騙了我. 我要讓他知道, 沒人能和我作對, 他不會活著看到下一個日出. 殺了那混蛋. 我會讓你覺得這活物有所值.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_2_finish">
+		<text>很好. 早知道, 我就應該讓你把他的頭紮在長矛上示眾. 不管咋樣, 每個人現在都知道不要惹"匪王"蘇坦. 這是你的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Kill the Rat Storyline Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_3_name">
+		<text>殺死鼠輩</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_3_text">
+		<text>一個土匪背叛了我們, "匪王"蘇坦希望他被幹掉</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_3_about">
+		<text>我們中間出了個叛徒. 日防夜防, 家賊難防, 但我們並非完全被動:他還不清楚, 我已經看穿了這事. 幹掉他, 走到他跟前, 用手槍指著他的臉, 扣動扳機, 完事. 但你要小心那些鼠輩同夥的反應, 必要的時候一併除鼠. 等他在地下腐爛時給我答覆.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_3_finish">
+		<text>很好, 你解決了那個混蛋!這些是我答應過的</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Search Lab X=16 (Yantar) Storyline Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_4_name">
+		<text>搜索X-16實驗室.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_4_text">
+		<text>"匪王"蘇坦有一些買家想購買X-16實驗室中的檔案</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_4_about">
+		<text>我有個金主願意花大價錢買那個位於揚塔的, 令人毛骨悚然的實驗室裡的一些檔案. 那些娘炮們都不敢進去, 他們疑神疑鬼的, 看那樣, 怕是遇到個攝魂怪就能抓狂. 如果你能給我那些檔案, 我就把他們付我的一半給你. 你說什麼? 別告訴我你也害怕鬼怪?</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_task_4_finish">
+		<text>做得很好. 這是你的那份.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Olivius (Bandit Trader) Default Storyline Task -->
+
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_default_task_name">
+		<text>一個新的任務</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_default_task_text">
+		<text>接受下一個任務</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_default_task_about">
+		<text>對不起, 你怕是找錯人了. 如果你想買東西, 直走, 總之別來煩我.</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_default_task_finish">
+		<text>祝你好運! 潛行者</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Olivius (Bandit Trader) Gun Smuggler Storyline Task -->
+
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_1_name">
+		<text>走私%s</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_1_text">
+		<text>"槍子兒"奧利維斯需要從軍隊那邊偷運過來的%s.</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_1_about">
+		<text>你知道我在軍隊的內應嗎? 當我把武器帶過檢查站的時候, 那個人總是往另一個方向看, 這樣我才能保住自己的小本買賣. 可你能相信, 那個狗孃養的想開始向我收費嗎? 去他媽的. 我要你把我的下一批貨拿到他鼻子跟前轉悠一圈, 然後偷偷溜走.</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_1_fetch_about">
+		<text>拿到%s之後從那婊子的面前走過. 我會給你夠本的報酬.</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_1_fetch_finish">
+		<text>是的. 你做得很好. 這是你的那份</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Olivius (Bandit Trader) Kill the Double=Crosser Storyline Task -->
+
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_name">
+		<text>殺了那個騙子</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_text">
+		<text>"槍子兒"奧利維斯被一名軍人出賣了, 他想讓那個人被好好"照顧"一下.</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_about">
+		<text>你認識我們的軍人朋友嗎? 那個如果我們給他盒香菸他就會讓武器通過檢查站的人? 現在他說他想讓我每次通過都付一定比例的錢, 否則他就要把我們供出來. 去他的, 他以為自己在和誰打交道? 我要他死, 聽清楚了, 死! 把他的頭給我!</text>
+	</string>
+	<string id="drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_finish">
+		<text>很好. 去他媽的.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== CHANGE FACTIONS TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Payoff Change Factions Task -->
+
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_cf_task_1_name">
+		<text>加入土匪</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_cf_task_1_text">
+		<text>如果你想成為土匪, 你需要向"匪王"蘇坦交入夥費. 他要5000盧布.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_cf_task_1_about">
+		<text>你想要羅曼蒂克式的流氓生活, 對不? 聽著年輕人, 任何一個他媽的拿著手槍的混蛋, 只要他願意, 都可以像普通的暴徒一樣四處遊蕩, 然後像狗一樣死在溝里. 我想這可不是你要的. 你想成為一個男人嗎? 你想過上好日子嗎? 帶來5000盧布, 對"匪王"蘇坦宣誓效忠, 我會讓你過上吃香喝辣的生活.</text>
+	</string>
+	<string id="drx_sl_zat_b7_bandit_boss_sultan_cf_task_1_finish">
+		<text>很好. 這裡其他的夥計可能會尊敬你了. 去跟那些光榮的老混蛋們打個招呼吧, 好讓他們看看新鮮血液.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== DYNAMIC TASK TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.0
+	<!==	July 18, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Mob Hit Task -->
+
+	<string id="zat_b7_bandit_boss_sultan_task_1_name">
+		<text>土匪突擊</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_1_text">
+		<text>找到並清除目標, 返回"匪王"蘇坦處領取報酬.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_1_about">
+		<text>特異區里的不少人要麼把我當傻子, 要麼就是對我不敬. 他們的做法也是相應的: 要麼欠我錢, 要麼就是搞砸了我的交易. 這些人只不過是抬腳就能踩死的老鼠. 如果你想接這任務, 我會給你他們的資訊, 這樣你就可以通過GPS跟蹤他們.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_1_finish">
+		<text>幹得好! 這是為你遇上的小麻煩的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Eliminate Military Presence Dynamic Task -->
+
+	<string id="zat_b7_bandit_boss_sultan_task_2_name">
+		<text>消滅軍隊勢力</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_2_text">
+		<text>"匪王"蘇坦要你消滅本地區所有的軍方人員</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_2_about">
+		<text>那些鍋蓋頭又他媽在這裡鬼鬼祟祟的. 照顧照顧他們.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_2_finish">
+		<text>幹得好. 你做得很好.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Stalker Elimination Dynamic Task -->
+
+	<string id="zat_b7_bandit_boss_sultan_task_3_name">
+		<text>殺死潛行者</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_3_text">
+		<text>消滅那些襲擊土匪同伴的潛行者</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_3_about">
+		<text>好吧, 聽著. 不久前一群潛行者試圖勾結我的一個成員. 幸運的是他逃脫了, 並在醫院中忙著康復, 但我們不能放過這種人.\n \n你可能需要在行動之前召集自己的團隊, 但這些人試圖屠殺我的人. 向他們展示嘗試這樣做的傻逼會發生什麼.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_3_finish">
+		<text>完成了? 很好.</text>
+	</string>
+	
+	
+	<string id="zat_b7_bandit_boss_sultan_task_4_name">
+		<text>收集%s</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_4_text">
+		<text>"匪王"蘇坦讓我收集%s</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_4_about">
+		<text>是時候提醒那些弱智們, 土匪中間到底是誰最強了. 把他們的臂章撕下來給我, 我會付錢給你的.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_4_fetch_about">
+		<text>是時候提醒那些弱智們, 土匪中間到底是誰最強了. 把他們的臂章撕下來給我, 我會付錢給你的.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_4_fetch_finish">
+		<text>明白了嗎? 這是你的報酬.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Unwelcome in the Hood Task -->
+	
+	<string id="zat_b7_bandit_boss_sultan_task_5_name">
+		<text>不受歡迎的面孔</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_5_text">
+		<text>"匪王"蘇坦想消滅農場里的潛行者</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_5_about">
+		<text>這是給你的任務. 一群潛行者在附近的農場紮營, 我不想讓他們出現在我們的地盤上. 你去那裡禮!貌!地護送他們出去, 好嗎?</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_5_finish">
+		<text>不錯, 猛男. 這是你的報酬.</text>
+	</string>
+	
+	<!-- ========================================================================================= -->
+	<!-- Sultan (Bandit Honcho) Night Terror Task -->
+	
+	<string id="zat_b7_bandit_boss_sultan_task_6_name">
+		<text>恐怖之夜</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_6_text">
+		<text>"匪王"蘇坦想除掉一個危險的怪物.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_6_about">
+		<text>媽的怪物真煩人. 不久前, 一個該死的黑色吸血怪榨乾了我們一整隊弟兄. 我會告訴你它最後一個出現的方位. 去找它, 然後狠狠踢它的屁股.</text>
+	</string>
+	<string id="zat_b7_bandit_boss_sultan_task_6_finish">
+		<text>這也許能教會它們不要向我們搗亂. 不管怎樣. 這是你的報酬.</text>
+	</string>
+
+	<!-- ========================================================================================= -->
+	<!-- Olivius (Bandit Trader) Eliminate Mutants Task= -->
+
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_1_name">
+		<text>清除黑谷中的怪物威脅</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_1_text">
+		<text>該地附近發現的怪物使整個地區人心惶惶. 你的任務是消除該地區的威脅. 工作完成後向"槍子兒"奧利維斯彙報.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_1_about">
+		<text>我們一直在尋找一個蛋夠多的人來這地清除變異怪物.那些沒卵用的潛行者聽到這事就能被嚇尿. 快點, 我們要是不採取措施, 就再沒人可以帶!來!好!處!了, 媽的, 到時候又得搬家.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_1_finish">
+		<text>好極了! 這是你的付款. 我一定替你向老闆說句好話.</text>
+	</string>
+
+
+
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_2_name">
+		<text>消除領地威脅</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_2_text">
+		<text>你的任務是消除該地區的領地威脅. 工作完成後向"槍子兒"奧利維斯彙報.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_2_about">
+		<text>那些賤人們正在進入我們的領地. 老闆命令我用大!筆!的!錢!來招募一個夠膽的亡命徒來收復這些地方. 你說什麼?你嫌你活的太久了?</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_2_finish">
+		<text>好極了! 這是你的報酬. 我一定替你向老闆說句好話.</text>
+	</string>
+
+
+
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_3_name">
+		<text>Cheeki Breeki iv Damke</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_3_text">
+		<text>把土匪們一直以來想要的貴重物品找到並給他們, 直到他們爽夠了為止, 從而使你在當地土匪之中拔得頭籌.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_3_about">
+		<text>有幾個傢伙在找其它想加入他們的人, 這事已經有段時間了. 他們需要一個偵察兵帶他們去尋找主要目標, 完活后, 他們會立刻給你報酬.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_3_finish">
+		<text>不錯吧? 這是你的那份</text>
+	</string>
+
+
+	<!-- ASSASSINATION FOR OLIVIUS TASK -->
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_4_name">
+		<text>殺手</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_4_text">
+		<text>"槍子兒"奧利維斯已經和你約定進行一次暗殺. 找到然後消滅目標, 返回"槍子兒"奧利維斯處領取報酬.</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_4_about">
+		<text>這名單上面的人都惹到了我. 我要你把他們除掉. 你意下如何?</text>
+	</string>
+	<string id="val_smart_terrain_7_4_bandit_trader_stalker_task_4_finish">
+		<text>很好, 你清理了那個混蛋! 這是我答應過的.</text>
+	</string>
+
+
+	<!-- FIND LEVEL 1 TOOLKIT FOR LIMPID -->
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_name">
+		<text>為"拐子"林匹尋找%s</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text">
+		<text>"拐子"林匹需要工具進行基本裝置升級, 如果你發現了什麼, 立刻把它們帶給他.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_about">
+		<text>我急需新工具, 夥計. 我受不了那些銹跡斑斑的爛貨, 槍油也快用完了. 如果你有興趣幫助我, 我會告訴你我需要什麼.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_fetch_about">
+		<text>我需要一套基本的工具. 它應該包含我需要的東西. 如果你能給我帶些回來, 我將不勝感激. 從現在起我甚至會給你打折.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_fetch_finish">
+		<text>很完美!這正是我需要的, 夥計. 我現在可以真正升級裝備了!</text>
+	</string>
+
+
+
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_name">
+		<text>為"拐子"林匹尋找%s</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text">
+		<text>"拐子"林匹需要工具進行先進裝置升級, 如果你發現了什麼, 立刻把它們帶給他.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_about">
+		<text>你給我帶來的工具很好, 但它並非我需要的全部. 你覺得你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_fetch_about">
+		<text>我需要一個%s. 我不確定你在哪裡能搞到, 但如果你找到了, 帶給我,我需要它.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_fetch_finish">
+		<text>你又做到了! 很好, 夥計, 這是一些錢.</text>
+	</string>
+
+
+
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_name">
+		<text>為"拐子"林匹尋找%s</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text">
+		<text>"拐子"林匹需要工具進行基本裝置升級, 如果你發現了什麼, 立刻把它們帶給他.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_about">
+		<text>你給我帶來的工具很不錯, 但它並非我需要的全部. 你覺得你能給我找一套更好的嗎?</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_fetch_about">
+		<text>我需要一個%s. 我不確定你在哪裡能搞到, 但如果你真的找到了, 帶給我, 我需要它.</text>
+	</string>
+	<string id="val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_fetch_finish">
+		<text>你又做到了! 很好, 夥計, 這是一些錢.</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////
+	<!==
+	<!== COMPANION DIALOG TEXT  STRINGS
+	<!==
+	<!==	Modified by DoctorX
+	<!==	for DoctorX Questlines 1.6
+	<!==	October 07, 2016
+	<!==
+	<!== ========================================================================================= -->
+
+	<!-- ========================================================================================= -->
+	<!-- Dark Valley Raiders Companion Dialog -->
+
+	<string id="bandit_companion_task_1_start_dialog_1">
+		<text>帶路, 我們跟著你走. 事情辦完后, 你會得到你的報酬. 不過我們得確保自己不會吃槍子, 小心點.</text>
+	</string>
+	<string id="bandit_companion_task_1_start_dialog_2">
+		<text>我們得走了 - 我摁著扳機的手指快發癢了. 記住, 我們得到了戰利品!</text>
+	</string>
+	<string id="bandit_companion_task_1_complete">
+		<text>你的工作做得很好, 這是你的那份</text>
+	</string>
+	<string id="bandit_companion_task_1_actor_reply">
+		<text>好的</text>
+	</string>
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<!-- (Bandit Medic) -->
+	<string id="bandit_main_base_medic_mlr_task_1_name">
+		<text>尋找%s</text>
+	</string>
+	<string id="bandit_main_base_medic_mlr_task_1_text">
+		<text>土匪醫生需要%s來補給醫療用品. 如果你找到了, 你要把它們交給他.</text>
+	</string>
+	<string id="bandit_main_base_medic_mlr_task_1_about">
+		<text>你也知道我們的活計對醫療用品的需求量多大. 這麼說吧, 基本上就是入不敷出, 真讓人頭疼. 我很快就會用完所有繃帶和急救箱了. 我需要你幫我找一包舊制藥箱. 它們肯定會派上用場的</text>
+	</string>
+	<string id="bandit_main_base_medic_mlr_task_1_fetch_about">
+		<text>這就是了. 我曾到處找%s. 裡面應該有一些藥片和注射器, 我需要它們來處理醫療用品. 如果你能把全套工具帶回來, 我會給你報酬.</text>
+	</string>
+	<string id="bandit_main_base_medic_mlr_task_1_fetch_finish">
+		<text>幹得好! 我欠你一個人情</text>
+	</string>
+
+</string_table>

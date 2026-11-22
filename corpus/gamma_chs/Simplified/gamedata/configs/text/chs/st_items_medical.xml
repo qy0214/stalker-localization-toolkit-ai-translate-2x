@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Medical Items + Drugs
+-->
+
+<string_table>
+	
+	<string id="st_antirad">
+		<text>消辐宁</text>
+	</string>
+	<string id="st_antirad_descr">
+		<text>美沙敏"消辐宁"在特异区很常见使用时,这种药物会引起外周血管收缩和缺氧,从而治疗和预防辐射, 该药物没有严重的副作用,有个别病例出现轻度恶心、头晕、痉挛和胃痛, 它还含有麻醉剂以防止疼痛\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	<string id="st_bandage">
+		<text>绷带</text>
+	</string>
+	<string id="st_bandage_descr">
+		<text>有弹性的绷带可以止血并能预防伤口感染, 普通的出血只需将绷带绑在伤口上就行,动脉出血时需要紧紧地绑住伤口\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]躯干%c[d_orange]••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_coagulant">
+		<text>长春花片</text>
+	</string>
+	<string id="st_drug_coagulant_descr">
+		<text>乌克兰维卡索伦 - 一种维他命K的合成物,主要能提升伤口血液凝固速度潜行者对它的需求很大,因为它可以加快被怪物撕裂的伤口凝结和康复它的效果可以持续很久.一次吃两片\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]躯干%c[0,255,255,255]••••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_anabiotic">
+		<text>复苏药</text>
+	</string>
+	<string id="st_drug_anabiotic_descr">
+		<text>这是奥泽斯基教授为特异区科研团队开发的一种实验性药物, 这种药的核心成分是河豚毒素, 俗称"僵尸粉", 它会麻痹人的中枢神经系统, 从而使人能够在能量风暴中存活下来, 该药经过六年的实际测试, 有经验的潜行者都会准备一些以防突发的能量风暴\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2]引发暂时性休克\n
+		%c[d_green] • %c[pda_white]治愈%c[0,255,255,255]100%全身\n
+		</text>
+	</string>
+	
+	<string id="st_drug_psy_blockade">
+		<text>抗灵药</text>
+	</string>
+	<string id="st_drug_psy_blockade_descr">
+		<text>一种用来抑制神经活动的药物, 会在短时间内阻断情感中枢, 在特异区主要用来抵抗灵能场的影响, 药效可以持续很久, 一次两片\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 提高灵能抵抗力, 降低特异区的恐怖对精神的影响\n
+		%c[d_red] • %c[ui_gray_2] 导致极度头晕\n
+		</text>
+	</string>
+	
+	<string id="st_drug_antidot">
+		<text>解毒剂</text>
+	</string>
+	<string id="st_drug_antidot_descr">
+		<text>IP2解毒剂是一种复方药物, 由多种成分组成, 包括甲氧氯普脒,吡哆醇,硫胺,核糖核酸等药物, 原理是在血液中溶解一系列抗生素以抵御自然毒素或者人造毒素\n
+		IP2在特异区内并不特别受欢迎, 大多数潜行者仍然依靠防毒面具和防护服, 然而, 仍然有一些人会备点解毒剂预防紧急情况, 药效持久, 一次吃一粒\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]••• %c[pda_white]躯干%c[0,255,255,255]•••\n
+		</text>
+	</string>
+	
+	<string id="st_drug_booster">
+		<text>大力水</text>
+	</string>
+	<string id="st_drug_booster_descr">
+		<text>该药物的主要成分是合成型代谢雄性激素, 一种人工类固醇, 其化学成分类似于睾酮, 潜行者们经常在长期作战中服用它, 以缓解神经疲劳, 并能够显著增加负重能力, 药效持久\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2]强力头晕去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_drug_radioprotector">
+		<text>辐射防护片</text>
+	</string>
+	<string id="st_drug_radioprotector_descr">
+		<text>事故当初清理核电站的人员配发的特殊医疗包里就包含这种B190茵德林防护剂, 现在在特异区里广泛流通, 以代替致毒性过大的胱胺, 服用过量可能会断送你的小命, 可以减轻伽玛射线对活体细胞的影响, 建议在接触辐射前服用, 因为药物需要一段时间才能被充分吸收, 药效持久, 一次服一粒\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_akvatab">
+		<text>布洛芬</text>
+	</string>
+	<string id="st_akvatab_descr">
+		<text>布洛芬是一种非甾体抗炎药 (NSAID) 类药物, 用于治疗疼痛, 发烧和炎症, 在特异区用作一般止痛药\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]手臂%c[0,255,255,255]•••• %c[pda_white]腿部%c[0,255,255,255]••••\n
+		</text>
+	</string>
+	
+	<string id="st_medkit_ai1">
+		<text>基础医疗物资包</text>
+	</string>
+	<string id="st_medkit_ai1_descr">
+		<text>包含各种治疗轻伤的药品\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 绷带(4)\n
+		%c[d_cyan] • %c[default] 双氯酚钠针剂\n
+		%c[d_cyan] • %c[default] 简易治疗针\n
+		%c[d_cyan] • %c[default] 安乃近针剂\n
+		%c[d_cyan] • %c[default] 矿泉水\n
+		%c[d_cyan] • %c[default] 磺胺抗菌药\n
+		%c[d_cyan] • %c[default] 止血带\n
+		%c[d_cyan] • %c[default] 亚都林\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的医用品\n</text>
+	</string>
+	
+	<string id="st_medkit_ai2">
+		<text>军用医疗物资包</text>
+	</string>
+	<string id="st_medkit_ai2_descr">
+		<text>含有适合作战人员使用的大量刺激性药物\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 绷带(4)\n
+		%c[d_cyan] • %c[default] 咖啡因片\n
+		%c[d_cyan] • %c[default] 双氯酚钠针剂\n
+		%c[d_cyan] • %c[default] 芬太尼\n
+		%c[d_cyan] • %c[default] 布洛芬\n
+		%c[d_cyan] • %c[default] 军用治疗针\n
+		%c[d_cyan] • %c[default] 矿泉水\n
+		%c[d_cyan] • %c[default] 矿泉水\n
+		%c[d_cyan] • %c[default] 吗啡针剂\n
+		%c[d_cyan] • %c[default] 安眠药\n
+		%c[d_cyan] • %c[default] 止血带(2)\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的医用品\n</text>
+	</string>
+	
+	<string id="st_medkit_ai3">
+		<text>科研用医疗物资包</text>
+	</string>
+	<string id="st_medkit_ai3_descr">
+		<text>一个专为特异区内科研人员设计的物资包, 含有许多可以对抗生化,灵能和辐射危害的药物\n \n
+		%c[ui_gray_3]包含:\n
+		%c[d_cyan] • %c[default] 消辐宁(2)\n
+		%c[d_cyan] • %c[default] 解毒剂\n
+		%c[d_cyan] • %c[default] 双氯酚钠针剂\n
+		%c[d_cyan] • %c[default] 抗辐射针(2)\n
+		%c[d_cyan] • %c[default] 金霉素\n
+		%c[d_cyan] • %c[default] 肾上腺素针剂\n
+		%c[d_cyan] • %c[default] 小管葡萄糖针剂(2)\n
+		%c[d_cyan] • %c[default] 矿泉水\n
+		%c[d_cyan] • %c[default] 抗灵药\n
+		%c[d_cyan] • %c[default] 辐射防护片\n
+		%c[d_cyan] • %c[default] 科研用治疗针(2)\n
+		%c[d_cyan] • %c[default] 磺胺抗菌药\n
+		%c[d_cyan] • %c[default] 止血带\n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 打包的医用品\n
+		</text>
+	</string>
+	
+	<string id="st_analgetic">
+		<text>双氯酚钠针剂</text>
+	</string>
+	<string id="st_analgetic_descr">
+		<text>苯乙酸衍生物类的非甾体抗炎药, 使用后会神经迟钝, 由于有大量的副作用例如头痛,头晕,疲倦, 在某些情况下还有记忆障碍,方向障碍,易怒, 所以大多数国家并不把它列在医药品范畴里, 然而特异区中它非常受欢迎, 因为其副作用可以降低中枢神经系统的敏感度, 能让人在诸如枪伤和弹片伤之类的重伤下保持冷静\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_purple] • %c[pda_white] 提供少量伤害抗性（5%）\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕 \n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]•••• %c[pda_white]躯干%c[d_orange]•••• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	
+	<string id="st_jgut_zhgut">
+		<text>止血带</text>
+	</string>
+	<string id="st_jgut_descr">
+		<text>橡胶止血带, 可以用于止住瞬间的大出血\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[d_orange]四肢100%\n
+		</text>
+	</string>
+	
+	<string id="st_yadylin">
+		<text>亚都林</text>
+	</string>
+	<string id="st_yadylin_descr">
+		<text>一种基于吗啡的药物, 它可以迅速缓解疼痛, 增加肾上腺素的分泌, 帮助使用者应对高强度作战, 它在潜行者中很受欢迎, 一些小混混们也喜欢嗑着玩, 据说被某个组织大量提供给了黑石军团\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 导致严重的头晕\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]•••• %c[pda_white]躯干%c[0,255,255,255]•••• %c[pda_white]手臂%c[0,255,255,255]•• %c[pda_white]腿部%c[0,255,255,255]••\n
+		</text>
+	</string>
+	
+		<string id="st_medkit">
+		<text>AI-2急救包</text>
+	</string>
+	<string id="st_medkit_descr">
+		<text>一个通用急救包, 为前苏联防卫人员和民兵组织提供的标准急救包, 可以治疗擦伤,瘀肿,化学和高温烧伤以及各种类型的中毒\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••• %c[pda_white]躯干%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	<string id="st_medkit_army">
+		<text>军用急救包</text>
+	</string>
+	<string id="st_medkit_army_descr">
+		<text>一种为战斗而生的专用急救包, 包括以甲萘醌为基础成分的凝血剂,止痛药,抗生素和免疫催化剂, 以及一套用于清理体内子弹和破片的工具, 这种医疗包主要发放给军方人员, 如深入特异区的特种部队, 同时还受到受到纪律团的欢迎\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••••• %c[pda_white]躯干%c[d_orange]••••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	<string id="st_medkit_science">
+		<text>科研用急救包</text>
+	</string>
+	<string id="st_medkit_science_descr">
+		<text>和其他急救包不同的是, 这是专门为异常区工作的科研人员设计的急救包, 内含处理伤口的药品, 和可以减少体内的辐射的药物, 例如长春花片,防辐射药和消炎药\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••••••• %c[pda_white]躯干%c[d_orange]••••••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		</text>
+	</string>
+	
+	<string id="st_glucose_s">
+		<text>小管葡萄糖针剂</text>
+	</string>
+	<string id="st_glucose_s_descr">
+		<text>葡萄糖针剂一般用于严重低血糖症, 但也可以用作提神剂, 碳水化合物的瞬间诱导反应可以提供大量的能量, 从而增强使用者的身体机能, 携带很方便, 可以在战斗中使用, 打一针葡萄糖是在使用内服药后消除头晕的好办法\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 普通头晕去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_glucose">
+		<text>大管葡萄糖针剂</text>
+	</string>
+	<string id="st_glucose_descr">
+		<text>葡萄糖针剂一般用于严重低血糖症, 但也可以用作提神剂, 碳水化合物的瞬间诱导反应可以提供大量的能量, 从而增强使用者的身体机能, 携带很方便, 可以在战斗中使用, 打一针葡萄糖是在使用内服药后消除头晕的好办法\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 强力头晕去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_stim_impro">
+		<text>简易治疗针</text>
+	</string>
+	<string id="st_stim_impro_descr">
+		<text>简易医疗针在新手中很受欢迎, 因为它们容易获得而且便宜,使用特异区内的常见原料生产, 但没有适当的加工设备, 也没经过消毒, 这就是为何它有很多副作用的原因, 注射方式为大腿注射\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••• %c[pda_white]躯干%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_stim_military">
+		<text>军用治疗针</text>
+	</string>
+	<string id="st_stim_military_descr">
+		<text>军用医疗针是特异区中军方的战斗部队的常用装备, 在市面上不难买到而且价格适中,深受特异区里老兵们的喜爱, 军用医疗针比它的同类更强力, 起效更快, 很适合在紧急情况下使用, 原料从高密度的原生药材中提纯, 会对身体造成一定伤害, 也会一定程度增加饥饿感\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••• %c[pda_white]躯干%c[d_orange]••••••• %c[pda_white]手臂%c[d_orange]••• %c[pda_white]腿部%c[d_orange]•••\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]•• %c[pda_white]躯干%c[0,255,255,255]•• %c[pda_white]手臂%c[0,255,255,255]• %c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_stim_scientic">
+		<text>科研用治疗针</text>
+	</string>
+	<string id="st_stim_scientic_descr">
+		<text>和SEVA防护服的研发方相同 - 基辅防御研究中心这种最先进的医疗针是特异区中最好的一种, 采用最优质的原料和全面的配方, 可以使你几乎瞬间恢复元气, 还能消除一定的辐射, 副作用被最小化, 极高的成本让不少人望而却步, 只有最富经验的老练潜行者才会携带\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••••••• %c[pda_white]躯干%c[d_orange]••••••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]•••• %c[pda_white]躯干%c[0,255,255,255]•••• %c[pda_white]手臂%c[0,255,255,255]• %c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_sleepingpills">
+		<text>安眠药</text>
+	</string>
+	<string id="st_sleepingpills_descr">
+		<text>一包小安眠药, 几乎会瞬间提升困意, 这也有助于在一定时间内降低灵能对神经系统的伤害, 最好与水一起服用, 一次一片\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 提高灵能抵抗力, 降低特异区的恐怖对精神的影响\n
+		%c[d_green] • %c[ui_gray_2] 立即诱发睡意\n
+		</text>
+	</string>
+	
+	<string id="st_cocaine">
+		<text>古柯碱</text>
+	</string>
+	<string id="st_cocaine_descr">
+		<text>装有古柯碱和吸食工具的小铝盒, 古柯碱是一种强大的神经系统提神剂, 服用后会急剧增加大脑中的快感和警觉性, 同时会出现极端的易怒和偏执, 导致暴力情绪波动, 副作用包括食欲不振, 抵抗力低, 精神病等, 对于那些短命鬼和暴力狂来说, 这简直不是事, 因为古柯碱给予了他们更强的快感和战斗力, 据传, 土匪是特异区最大的古柯碱供应商, 而叛节者是他们的主要客户\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 超强提神作用\n
+		%c[d_green] • %c[ui_gray_2] 超强头晕去除效果\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••• %c[pda_white]躯干%c[d_orange]•••\n
+		</text>
+	</string>
+	
+	<string id="st_adrenalin">
+		<text>肾上腺素针剂</text>
+	</string>
+	<string id="st_adrenalin_descr">
+		<text>肾上腺素是一种激素和神经递质, 在人体内有多种功能, 可以即时调节心率, 血管和气管直径, 以及代谢速率, 肾上腺素释放会影响到交感神经系统或生物反应, 这些影响会导致血糖和脂肪酸的升高, 为体内细胞提供充足的能量需求\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 超强提神作用\n
+						
+		%c[d_green] • %c[ui_gray_2] 超强头晕去除效果\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]••••••••••• %c[pda_white]躯干%c[d_orange]••••••••••• %c[pda_white]手臂%c[d_orange]••••• %c[pda_white]腿部%c[d_orange]•••••\n
+		</text>
+	</string>
+	
+	<string id="st_morphine">
+		<text>吗啡针剂</text>
+	</string>
+	<string id="st_morphine_descr">
+		<text>一种为军方野战人员设计的用于瞬间止痛的野战装备, 这只注射瓶里装有大剂量的吗啡, 在临床医学中, 吗啡被认为是阿片类镇痛药的最高标准, 常用于缓解极度疼痛, 与其他阿片类药物,如羟考酮,氢吗啡酮和二乙酰吗啡一样, 会直接作用于中枢神经系统以减轻疼痛, 需要注射到手臂或大腿上\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_purple] • %c[ui_gray_2] 提供极高的伤害抗性（15%）\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕 \n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]•••••••• %c[pda_white]躯干%c[d_orange]••••• %c[pda_white]手臂%c[d_orange]•••• %c[pda_white]腿部%c[d_orange]••••\n
+		</text>
+	</string>
+	
+	<string id="st_salicidic_acid">
+		<text>安乃近针剂</text>
+	</string>
+	<string id="st_salicidic_acid_descr">
+		<text>一种为军方野战人员设计的用于瞬间止痛的野战装备, 用于快速减轻疼痛, 它混有大剂量的安乃近和一种止血药, 安乃近是最强的消炎药之一, 对止痛和退烧特别有效, 高剂量作为消炎药使用时, 可能会引起白细胞和粒细胞减少的副作用, 需要注射到手臂或大腿上, 由于难以走私,该药品在特异区的供应有限\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_purple] • %c[pda_white] 提供大量的伤害抗性（10%）\n
+		%c[d_green] • %c[pda_white] 急救 %c[pda_white]头部%c[d_orange]•• %c[pda_white]躯干%c[d_orange]•• %c[pda_white]手臂%c[d_orange]•• %c[pda_white]腿部%c[d_orange]••\n
+		</text>
+	</string>
+	
+	<string id="st_caffeine">
+		<text>咖啡因片</text>
+	</string>
+	<string id="st_caffeine_descr">
+		<text>咖啡因和苯甲酸钠能使中枢神经在一定时间内处于最佳状态, 一定程度上减少困倦, 一次两片\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[ui_gray_2] 中等提神作用\n
+		%c[d_cyan] • %c[ui_gray_2] 中等头晕消除效果\n
+		</text>
+	</string>
+	
+		<string id="st_antirad_cystamine">
+		<text>抗辐射针</text>
+	</string>
+	<string id="st_antirad_cystamine_descr">
+		<text>一种和消辐宁配合使用的药物, 用来减弱辐射对身体的影响, 胱胺酸的抗辐射性是建立在结合自由基的能力基础上的, 自由基是辐射时在组织中形成的电离和活性分子, 药物与某些酶相互作用以增强对辐射抵抗的能力, 但不能消除已经在体内积累的辐射\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_antibio_sulfad">
+		<text>磺胺抗菌药</text>
+	</string>
+	<string id="st_antibio_sulfad_descr">
+		<text>磺胺地索辛对革兰氏阳性菌和革兰氏阴性菌有效, 它可以对付肺炎球状菌,链球菌,葡萄球菌,大肠杆菌,克雷伯氏杆菌(又称弗里德兰德氏杆菌)也就是痢疾的病原体, 对蛋白质活性相对较低, 对沙眼病毒有活性作用, 但不作用于对其他磺胺类药物耐药的细菌株, 不良反应包括头痛,消化系统疾病,皮疹,发烧和白细胞减少, 药效持久\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕 \n
+		%c[d_green] • %c[pda_white] 治愈%c[pda_white]腿部%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_antibio_chlor">
+		<text>金霉素</text>
+	</string>
+	<string id="st_antibio_chlor_descr">
+		<text>一种抗生素, 结晶性粉末,金黄色,味苦,溶于水, 这是(继青霉素之后)第一批非处方抗生素之一, 金霉素对革兰氏阳性和革兰氏阴性细菌, 立克次体和一些大型病毒有抑菌作用\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕 \n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]手臂%c[0,255,255,255]•\n
+		</text>
+	</string>
+	
+	<string id="st_antiemetic">
+		<text>依托拉嗪镇静药</text>
+	</string>
+	<string id="st_antiemetic_descr">
+		<text>胶囊药剂含有4.6毫克和10毫克的奋乃静, 它是一种精神病药物, 具有抗过敏,镇静,放松,止吐,弱抗胆碱能,低血压和降温作用, 盐酸依托拉嗪的疗效基于D2受试体在皮中层和中边缘系统的阻滞作用, 在特异区内很少使用\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 提高灵能抵抗力, 降低特异区的恐怖对精神的影响\n
+		%c[d_green] • %c[ui_gray_2] 轻微头晕消除效果\n
+		</text>
+	</string>
+	
+	<string id="st_joint">
+		<text>大麻卷烟</text>
+	</string>
+	<string id="st_joint_descr">
+		<text>因其放松效果而闻名, 常被潜行者用来消遣, 尤其是那些经常去雷达站或红森林的人, 与酒精混合使用可产生舒缓效果, 副作用是会增强饥饿感\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 提高灵能抵抗力, 降低特异区的恐怖对精神的影响\n
+		%c[d_cyan] • %c[ui_gray_2] 轻度头晕去除效果\n
+		</text>
+	</string>
+	
+	<string id="st_rebirth">
+		<text>"重生"针剂</text>
+	</string>
+	<string id="st_rebirth_descr">
+		<text>警告! 不要与任何其他药物混合使用, 否则可能致死\n
+		小小的注射器内含有大剂量的合成物, 可能会使你失去意识, 当你醒来时(如果你还能醒来的话)你会感到如重生一般, 注射方法为坐下后注入大腿\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 导致极度头晕 \n
+		%c[d_green] • %c[pda_white] 急救 %c[d_orange]全身 \n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]•••••••• %c[pda_white]躯干%c[0,255,255,255]•••••••• %c[pda_white]手臂%c[0,255,255,255]••••• %c[pda_white]腿部%c[0,255,255,255]•••••\n
+		</text>
+	</string>
+	
+	<string id="st_tetanus">
+		<text>芬太尼</text>
+	</string>
+	<string id="st_tetanus_descr">
+		<text>芬太尼是一种强大的阿片类药物, 用作止痛药, 有时与古柯碱或甲基苯丙胺混合使用, 纳洛酮可以中和其潜在的致命过量效应, 芬太尼主要通过激活α-阿片受体起作用\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_red] • %c[ui_gray_2] 引起轻微的头晕\n
+		%c[d_green] • %c[pda_white] 治愈 %c[pda_white]头部%c[0,255,255,255]••• %c[pda_white]躯干%c[0,255,255,255]••• %c[pda_white]手臂%c[0,255,255,255]••• %c[pda_white]腿部%c[0,255,255,255]•••\n
+		</text>
+	</string>
+	
+	<string id="st_antirad_kalium">
+		<text>碘化钾片</text>
+	</string>
+	<string id="st_antirad_kalium_descr">
+		<text>一种药理学化合物, 作为特异区内的廉价抗辐射药物, 会引起很多副作用, 例如胃水肿, 疼痛麻木和甲状腺功能紊乱\n \n
+		%c[0,255,255,255]属性:\n
+		</text>
+	</string>
+	
+	<string id="st_marijuana">
+		<text>一包大麻</text>
+	</string>
+	<string id="st_marijuana_descr">
+		<text>抽大麻在特异区是一种很受欢迎的消遣方式, 特别是在死亡屏障驻防的自由军成员之间, 在特异区到处都可以买到大麻, 有些人认为吸食大麻有助于保持心灵的平静, 但也有人认为这属于慢性自杀\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_green] • %c[ui_gray_2] 提高灵能抵抗力, 降低特异区的恐怖对精神的影响\n
+		%c[d_green] • %c[ui_gray_2] 强效去眩晕效果\n
+		</text>
+	</string>
+	
+</string_table>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Author: Catspaw (CatspawMods @ ModDB)
+	Addon: Fair Fast Travel
+	Source: https://www.moddb.com/mods/stalker-anomaly/addons/fair-fast-travel-duration-for-anomaly-151
+	Permission granted to freely translate into any language.
+-->
+
+<string_table>
+	<string id="ui_mcm_menu_fftd">
+		<text>快速旅行平衡</text>
+	</string>
+
+	<string id="st_fftd_mapspot_estdur">
+		<text>至少</text>
+	</string>
+
+	<string id="st_fftd_mapspot_meters">
+		<text>米</text>
+	</string>
+
+	<string id="ui_mcm_menu_gen">
+		<text>總體設定</text>
+	</string>
+
+	<string id="ui_mcm_menu_ftcfg">
+		<text>快速旅行</text>
+	</string>
+
+	<string id="ui_mcm_menu_bpcfg">
+		<text>揹包傳送</text>
+	</string>
+
+	<string id="st_pda_backpack_travel_to">
+		<text>傳送至揹包</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_skillsystem_enabled">
+		<text>整合Haruka的技能系統</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_haruka_enabled_desc">
+		<text>如果已經安裝了Haruka的技能系統並開啟此項, 本MOD會參考角色的耐力技能等級來模擬移動速度, 並影響快速旅行的消耗時間, 比如1.15倍率的移動速度會減少15%的旅行時間\n\n 如果沒有安裝技能系統則此項無效</text>
+	</string>
+
+	<string id="ui_mcm_fftd_usedisguisefix">
+		<text>啟用偽裝系統補丁</text>
+	</string>
+
+	<string id="ui_mcm_fftd_useoldcalcs">
+		<text>使用異常原版的距離計算</text>
+	</string>
+
+	<string id="ui_mcm_fftd_mpm">
+		<text>每移動100米消耗的遊戲時間(分鐘)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_enabled">
+		<text>為旅行時間增加隨機延遲</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_hours_min">
+		<text>使用此項增加最小耗時(小時)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_hours_max">
+		<text>使用此項增加最大耗時(小時)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_minutes_min">
+		<text>使用此項增加最小耗時(分鐘)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_minutes_max">
+		<text>使用此項增加最大耗時(分鐘)</text>
+	</string>
+
+	<string id="ui_mcm_header_loc_travel">
+		<text>同地圖內部傳送</text>
+	</string>
+
+	<string id="ui_mcm_header_map_travel">
+		<text>不同地圖之間傳送</text>
+	</string>
+
+	<string id="st_fftd_rub">
+		<text>盧布</text>
+	</string>
+
+	<string id="st_fftd_toopoor">
+		<text>你窮的連路費都付不起</text>
+	</string>
+
+	<string id="st_fftd_mapspot_guideto">
+		<text>僱傭嚮導</text>
+	</string>
+
+	<string id="st_fftd_farepaid_guide">
+		<text>召喚附近的一位老練嚮導, 並支付 %s 來為你帶路</text>
+	</string>
+
+	<string id="st_fftd_guides_ignored">
+		<text>這鳥不生蛋的地方沒有嚮導願意過來</text>
+	</string>
+
+	<string id="ui_mcm_menu_gtcfg">
+		<text>嚮導傳送</text>
+	</string>
+
+	<string id="ui_mcm_fftd_cost_coef">
+		<text>每旅行一米的花費</text>
+	</string>
+
+	<string id="ui_mcm_fftd_pause_stats">
+		<text>旅行時暫停角色生理活動</text>
+	</string>
+
+	<string id="st_fftd_notyet">
+		<text>%s 暫時不可用, 需要再等待 %s</text>
+	</string>
+
+	<string id="st_fft_hour">
+		<text>小時</text>
+	</string>
+	<string id="st_fft_hours">
+		<text>小時</text>
+	</string>
+	<string id="st_fft_minute">
+		<text>分</text>
+	</string>
+	<string id="st_fft_minutes">
+		<text>分</text>
+	</string>
+	<string id="st_fft_second">
+		<text>秒</text>
+	</string>
+	<string id="st_fft_seconds">
+		<text>秒</text>
+	</string>
+
+	<string id="st_fftd_travelname_ft">
+		<text>快速旅行</text>
+	</string>
+
+	<string id="st_fftd_travelname_bp">
+		<text>揹包傳送</text>
+	</string>
+
+	<string id="st_fftd_travelname_gt">
+		<text>嚮導傳送</text>
+	</string>
+
+	<string id="st_fftd_ftsystem">
+		<text>快速旅行系統</text>
+	</string>
+
+	<string id="st_fftd_guides_far">
+		<text>附近沒有嚮導迴應你的請求</text>
+	</string>
+
+	<string id="st_fftd_enemy_guides">
+		<text>附近唯一的嚮導和你是敵對陣營</text>
+	</string>
+
+	<string id="st_fftd_guides_none">
+		<text>現在沒有空閑的嚮導</text>
+	</string>
+
+	<string id="ui_mcm_fftd_rnd_enabled_desc">
+		<text>如果啟用這種旅行方式, 會根據下方的選項為每兩次旅行中間增加隨機冷卻時間, 作為參考, 異常原版的設定為0-2小時與0-59分鐘</text>
+	</string>	
+
+	<string id="ui_mcm_fftd_pause_stats_desc">
+		<text>如果啟用, 大部分生理需求的進度, 如飢渴度的增長等等, 會暫時停止, 直至旅行結束</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_enabled">
+		<text>從PDA網路中僱傭嚮導</text>
+	</string>
+
+	<string id="ui_mcm_fftd_ftcfg_travel_cooldown">
+		<text>快速旅行的冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_bpcfg_travel_cooldown">
+		<text>揹包傳送的冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_travel_cooldown">
+		<text>嚮導傳送的冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_ftcfg_travel_cooldown_desc">
+		<text>快速旅行的冷卻時間(現實時間), 設定為0則無冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_bpcfg_travel_cooldown_desc">
+		<text>揹包傳送的冷卻時間(現實時間), 設定為0則無冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_travel_cooldown_desc">
+		<text>嚮導傳送的冷卻時間(現實時間), 設定為0則無冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_add_travel_time">
+		<text>嚮導需要時間找到你</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_add_travel_time_desc">
+		<text>如果啟用此項, 會把嚮導目前所在位置和玩家當前位置的距離算進旅行時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_local_only">
+		<text>僅聯繫目前地圖嚮導</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_local_only_desc">
+		<text>啟用此項的話, 只能在目前地圖有嚮導的情況下進行傳送</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_guides_loyal">
+		<text>嚮導只服務本陣營的潛行者</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_guides_loyal_desc">
+		<text>如果啟用, 則敵對陣營的嚮導不會提供傳送服務, 但如果有合適的偽裝, 嚮導就不會拒絕</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_shared_cooldown">
+		<text>所有型別的旅行統一冷卻時間</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_shared_cooldown_desc">
+		<text>啟用的話會禁止連續使用不同的快速旅行方式, 比如揹包傳送過後需要等待冷卻才能再使用嚮導傳送</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_debuglogs_enabled">
+		<text>啟用debug日誌</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_allow_debug_travel">
+		<text>允許傳送到debug地圖點</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_allow_debug_travel_desc">
+		<text>如果使用debug模式啟動遊戲, 異常原版會允許玩家傳送到其他潛行者身邊, 地圖出入口, 智慧地塊等等正常來說無法傳送的地方, 注意, 很多地點會卡住玩家, 本mod預設情況下已經禁用了這些debug地點, 如果啟用此項, 可以幫助你脫離卡住的地形, 或是單純的debug用途, 推薦預設關閉此項</text>
+	</string>
+
+	<string id="ui_mcm_header_ft">
+		<text>標準快速旅行設定</text>
+	</string>
+
+	<string id="ui_mcm_header_ftsub">
+		<text>這是預設的快速旅行設定, 如果某個選項說的是"快速旅行"(注意不是"揹包傳送"或"嚮導傳送")那麼就會使用這裡的設定</text>
+	</string>
+
+	<string id="ui_mcm_header_bp">
+		<text>揹包傳送設定</text>
+	</string>
+
+	<string id="ui_mcm_header_bpsub">
+		<text>揹包傳送功能, 允許你傳送到之前放在地面作為藏物點的揹包</text>
+	</string>
+
+	<string id="ui_mcm_header_gt">
+		<text>PDA嚮導傳送設定</text>
+	</string>
+
+	<string id="ui_mcm_header_gtsub">
+		<text>本MOD特有的功能, 可以僱傭一位老練的嚮導來帶你前往目的地, 雖然需要支付報酬, 但由於嚮導一路上管吃管喝, 所以再旅途中你的飢渴度不會降低(可選設定), 甚至在你超重和受傷時也能幫你逃脫困境, 但某些區域由於極度危險, 所以給再多錢也不會有人去的</text>
+	</string>
+
+	<string id="ui_mcm_fftd_allow_pin_travel">
+		<text>允許傳送到自定義路點(需要PAW支援)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_allow_pin_travel_desc">
+		<text>需要Personal Adjustable Waypoint模組支援, 安裝后啟用此項可傳送到玩家放置的路點</text>
+	</string>
+
+	<string id="ui_mcm_fftd_getpaw">
+		<text>如果需要PAW模組, 在這裡下載: \n https://www.moddb.com/mods/stalker-anomaly/addons/personal-adjustable-waypoint-for-anomaly-151-152-and-gamma</text>
+	</string>
+
+	<string id="ui_mcm_fftd_usedisguisefix_desc">
+		<text>原版中傳送到NPC附近時會發生由於超出偽裝時限導致偽裝暴露的BUG, 此選項在旅行週期內禁用了偽裝時限檢測來繞過此BUG, 除非debug原因否則不要禁用此項</text>
+	</string>
+
+	<string id="ui_mcm_fftd_useoldcalcs_desc">
+		<text>在原版中的距離計算只在同地圖有效, 跨地圖距離計算會返回不可預測的奇怪數值, 本MOD替換了舊的距離演算法, 使用全域性距離來進行結算, 除非debug或者MOD相容性原因, 否則不要啟用此項</text>
+	</string>
+
+	<string id="ui_mcm_fftd_cost_coef_desc">
+		<text>預設情況下, 只有嚮導傳送需要收費, 你可以讓其他兩種傳送方式也收費, 如果取值大於0, 則費用會與嚮導傳送相同</text>
+	</string>
+
+	<string id="st_fftd_farepaid_noguide">
+		<text>快速旅行費用: %s</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_ignore_status">
+		<text>嚮導無視受傷和超重狀態</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gtcfg_ignore_status_desc">
+		<text>啟用此項的話, 即使快速傳送在受傷,輻射,流血狀態下禁用, 嚮導傳送也會無視這些限制, 畢竟嚮導身上都帶著醫療包, 而且也願意幫你分擔一些負重</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_combat_dist">
+		<text>戰鬥狀態距離閾值</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_combat_dist_desc">
+		<text>玩家被認為在戰鬥中的最大距離, 用於影響快速旅行的可用性</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_combat_timeout">
+		<text>脫離戰鬥狀態時限(秒)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_combat_timeout_desc">
+		<text>如果敵人在這段時間內沒有看到玩家, 則認為玩家脫離戰鬥, 可以進行快速旅行</text>
+	</string>
+
+<!-- Added in 2.3 -->
+
+	<string id="ui_mcm_fftd_gen_use_warfare_fix">
+		<text>使用戰區模式AI大修補丁</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_use_warfare_fix_desc">
+		<text>如果啟用此項並開啟戰區模式, 本MOD將不會再為地圖增加快速旅行圖示, 當進行戰區模式遊玩, 並且地圖圖示和滑鼠右鍵選項有錯誤時啟用此項 (但我好心勸你不要在GAMMA里玩戰區模式)</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_allow_open_bp">
+		<text>允許在PDA地圖操作直接打開地面揹包</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_allow_open_bp_desc">
+		<text>不用解釋了, 預設關閉, 因為影響平衡</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gear_dmg_factor">
+		<text>裝備磨損乘數</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gear_dmg_factor_desc">
+		<text>此項用於調整快速旅行時模擬所有身上裝備磨損的耐久下降速率, 距離越遠, 磨損就越嚴重\n\n如果是普通難度, 建議取值在1-2左右, 最大取值11的概念就基本上已經不能說是健康的遊戲體驗了\n\n取值為0則關閉旅行時裝備磨損的機制</text>
+	</string>
+
+<!-- Added in 2.3.1 -->
+	<string id="ui_mcm_fftd_gen_cond_dmg_mode">
+		<text>旅途磨損</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_cond_dmg_mode_desc">
+		<text>所有裝備: 所有已裝備的物品都會磨損\n
+			隨機一件: 隨機選擇一件已裝備的物品進行磨損\n
+			護甲磨損: 已裝備的護甲和頭盔會磨損\n
+			槍械磨損: 已裝備的槍械會磨損\n
+			關閉旅途磨損: 關閉所有形式的快速旅行期間的裝備磨損機制, 此選項優先順序高於所有形式的快速旅行內部設定\n
+		</text>
+	</string>
+
+	<string id="ui_mcm_lst_fft_dmg_disabled">
+		<text>關閉旅途磨損</text>
+	</string>
+
+	<string id="ui_mcm_lst_fft_dmg_all">
+		<text>所有裝備</text>
+	</string>
+
+	<string id="ui_mcm_lst_fft_dmg_random">
+		<text>隨機一件</text>
+	</string>
+
+	<string id="ui_mcm_lst_fft_dmg_armor">
+		<text>護甲磨損</text>
+	</string>
+
+	<string id="ui_mcm_lst_fft_dmg_weapons">
+		<text>槍械磨損</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_minimum_health">
+		<text>允許旅行的最低生命值</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_minimum_health_desc">
+		<text>如果同時開啟了流血和輻射時禁用快速旅行的選項, 則也會檢測角色是否超出此項規定的最低生命值下限, 設定為0則關閉此特性</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_minimum_satiety">
+		<text>允許旅行的最低飢渴度</text>
+	</string>
+
+	<string id="ui_mcm_fftd_gen_minimum_satiety_desc">
+		<text>如果同時開啟了流血和輻射時禁用快速旅行的選項, 則也會檢測角色是否超出此項規定的最低飢渴度下限, 設定為0則關閉此特性</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="st_use_stove">
+		<text>使用爐灶</text>
+	</string>
+	
+	<string id="st_prop_laptop_item">
+		<text>膝上型電腦</text>
+	</string>
+	<string id="st_prop_laptop_item_descr">
+		<text>
+			一個非常現代化的膝上型電腦, 在特異區很罕見 \n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n				
+		</text>
+	</string>
+
+	<string id="st_prop_bed_1">
+		<text>摺疊床</text>
+	</string>
+	<string id="st_prop_bed_1_descr">
+		<text>
+			一張簡單的摺疊床, 有床墊和毯子, 輕便且易於攜帶\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+			%c[d_orange] • %c[ui_gray_2] 睡眠用\n		
+		</text>
+	</string>
+
+	<string id="st_prop_bed_2">
+		<text>金屬床</text>
+	</string>
+	<string id="st_prop_bed_2_descr">
+		<text>
+			一張老舊的金屬床, 帶有普通的床墊和毯子, 總比睡地上好\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+			%c[d_orange] • %c[ui_gray_2] 睡眠用\n				
+		</text>
+	</string>
+
+	<string id="st_prop_bed_3">
+		<text>木質床</text>
+	</string>
+	<string id="st_prop_bed_3_descr">
+		<text>
+			一張結實的木質床, 床墊非常柔軟舒適, 加厚的毯子能讓你在冰冷的夜晚保持體溫\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+			%c[d_orange] • %c[ui_gray_2] 睡眠用\n		
+		</text>
+	</string>
+
+	<string id="st_prop_board_map">
+		<text>特異區地圖</text>
+	</string>
+	<string id="st_prop_board_map_descr">
+		<text>
+			特異區的詳細地形圖, 仔細計劃你的下一次冒險旅程吧 \n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+
+	<string id="st_prop_cans_tuna">
+		<text>罐頭收納箱</text>
+	</string>
+	<string id="st_prop_cans_tuna_descr">
+		<text>
+			商人們經常用來展示貨品的箱子, 這個箱子只能放入罐裝食品\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納容器\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 大容量\n
+			%c[d_blue] • %c[d_red] 只能儲存罐裝食品 %c[ui_gray_2] \n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n	
+		</text>
+	</string>
+
+	<string id="st_prop_couch_1">
+		<text>舊沙發</text>
+	</string>
+	<string id="st_prop_couch_1_descr">
+		<text>
+			一張老舊的沙發, 出乎意料的沒有什麼破洞, 似乎已被消毒過, 把輻射塵都去掉了\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+
+	<string id="st_prop_counter_1">
+		<text>木質櫃檯</text>
+	</string>
+	<string id="st_prop_counter_1_descr">
+		<text>
+			一個簡單的木質櫃檯, 經歷了特異區惡劣環境的洗禮, 依舊保養的很好\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+
+	<string id="st_prop_poster_vertical_item">
+		<text>海報(縱向)</text>
+	</string>
+	<string id="st_prop_poster_vertical_item_descr">
+		<text>
+			一張簡單的蠟紙海報\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+	
+	<string id="st_prop_table_1">
+		<text>木質書桌</text>
+	</string>
+	<string id="st_prop_table_1_descr">
+		<text>
+			一張堅固的木質書桌, 保養的還不錯\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+
+	<string id="st_prop_table_2">
+		<text>木質桌子</text>
+	</string>
+	<string id="st_prop_table_2_descr">
+		<text>
+			一張普通的木質桌子, 堅固好用\n \n
+			%%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n		
+		</text>
+	</string>
+
+	<string id="st_prop_bong">
+		<text>水煙筒</text>
+	</string>
+	<string id="st_prop_bong_descr">
+		<text>
+			水煙筒, "呼卡"或"阿爾改", 是一種用於吸食水煙的單管或多管器具, 其中的煙霧由底座中的水來冷卻和過濾\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_case">
+		<text>臺式機箱</text>
+	</string>
+	<string id="st_prop_case_descr">
+		<text>
+			一個老舊的機箱, 裡面有一張過時的顯示卡, 現在只能當柴燒\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_chair_descr">
+		<text>木質凳子</text>
+	</string>
+	<string id="st_prop_chair_descr">
+		<text>
+			一張簡單又堅固的凳子, 有軟墊, 所以坐起來很舒服\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_dish1">
+		<text>陶瓷盤子</text>
+	</string>
+	<string id="st_prop_dish1_descr">
+		<text>
+			雖然和防彈陶瓷板是一個材質, 但這個是用來吃飯的, 別把它塞到防彈衣里\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_dish2">
+		<text>陶瓷碗</text>
+	</string>
+	<string id="st_prop_dish2_descr">
+		<text>
+			再難以下嚥的怪物肉, 裝在這裡面擺一下盤似乎也變的好吃了, 就像某些經常把食物拍下來發到PDA上的潛行者那樣\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_fan">
+		<text>小風扇</text>
+	</string>
+	<string id="st_prop_fan_descr">
+		<text>
+			普通的小風扇, 在常年陰冷潮濕的特異區除了吹乾襪子之類沒什麼特別的用途\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n
+			%c[d_orange] • %c[ui_gray_2] 能吹涼風\n			
+		</text>
+	</string>
+
+	<string id="st_prop_fridge">
+		<text>舊冰箱</text>
+	</string>
+	<string id="st_prop_fridge_descr">
+		<text>
+			大而笨重的冰箱, 可以給怪物肉保鮮\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納容器\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 大容量\n
+			%c[d_orange] • %c[ui_gray_2] 裡面的怪物肉不會腐爛 %c[ui_gray_2] \n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n
+		</text>
+	</string>
+	
+	<string id="st_prop_keyboard">
+		<text>鍵盤</text>
+	</string>
+	<string id="st_prop_keyboard_descr">
+		<text>
+			一個老舊的鍵盤, 塑料鍵帽已經老化發黃, WASD和F7鍵上的字已經磨的看不清了\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_mice">
+		<text>滑鼠</text>
+	</string>
+	<string id="st_prop_mice_descr">
+		<text>
+			一隻九十年代的老式機械滾輪滑鼠, 笨重, 難用, 還要經常清理底部滾球上摻雜著鼻屎和頭髮的污垢\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_mice_pad">
+		<text>滑鼠墊和滑鼠</text>
+	</string>
+	<string id="st_prop_mice_pad_descr">
+		<text>
+			一隻九十年代的老式機械滾輪滑鼠, 笨重, 難用, 還要經常清理底部滾球上摻雜著鼻屎和頭髮的污垢, 這隻雖然配了滑鼠墊, 但也沒好到哪去\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_monitor">
+		<text>顯示器</text>
+	</string>
+	<string id="st_prop_monitor_descr">
+		<text>
+			一個老式的CTR顯示器, 超極笨重, 螢幕還完好無損, 說不定能修好\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_mug">
+		<text>馬克杯</text>
+	</string>
+	<string id="st_prop_mug_descr">
+		<text>
+			一隻不知哪裡搞來的馬克杯, 挺乾淨的, 用它不管喝什麼好像都別有一番風味\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_stove1">
+		<text>小型爐灶</text>
+	</string>
+	<string id="st_prop_stove1_descr">
+		<text>
+			一個被改造成了可以使用任何燃料的小爐灶, 用來做飯很方便\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+			%c[d_blue] • %c[ui_gray_2] 高價值\n
+			%c[d_orange] • %c[ui_gray_2] 烹飪用\n
+		</text>
+	</string>
+
+	<string id="st_prop_stove2">
+		<text>大型爐灶</text>
+	</string>
+	<string id="st_prop_stove2_descr">
+		<text>
+			一個被改造成了可以使用任何燃料的大爐灶, 用來做飯很方便\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+			%c[d_blue] • %c[ui_gray_2] 高價值\n
+			%c[d_blue] • %c[ui_gray_2] 大容量 (內建容器)\n
+			%c[d_orange] • %c[ui_gray_2] 烹飪用\n		
+		</text>
+	</string>
+
+	<string id="st_prop_tv">
+		<text>電視機</text>
+	</string>
+	<string id="st_prop_tv_descr">
+		<text>
+			一個老舊的電視機, 打開之後好像收不到什麼穩定的訊號, 應該只能當做裝飾\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n			
+		</text>
+	</string>
+
+	<string id="st_prop_shelf_1">
+		<text>木質書架</text>
+	</string>
+	<string id="st_prop_shelf_1_descr">
+		<text>
+			簡單的書架, 木質的, 在特異區挺常見\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n
+			%c[d_red] • %c[ui_gray_2] 收納功能未實裝\n				
+		</text>
+	</string>
+
+	<string id="st_prop_shelf_2">
+		<text>木質大書架</text>
+	</string>
+	<string id="st_prop_shelf_2_descr">
+		<text>
+			堅固的大書架, 保養的很好\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_green] • %c[ui_gray_2] 傢俱\n
+			%c[d_red] • %c[ui_gray_2] 收納功能未實裝\n
+		</text>
+	</string>
+
+	<string id="st_prop_prop_clock_1">
+		<text>電子鐘</text>
+	</string>
+	<string id="st_prop_prop_clock_1_descr">
+		<text>
+			一個嶄新的現代電子鐘, 在特異區裡實屬罕見\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_orange] • %c[ui_gray_2] 顯示時間\n
+		</text>
+	</string>
+
+	<string id="st_prop_med_case_1">
+		<text>醫用收納箱</text>
+	</string>
+	<string id="st_prop_med_case_1_descr">
+		<text>
+			堅固的塑料箱, 內部有軟墊, 為儲存易碎的醫療品專用\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納容器\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 大容量\n
+			%c[d_orange] • %c[d_red] 只能收納醫療品 %c[ui_gray_2] \n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n
+		</text>
+	</string>
+
+	<string id="st_prop_lamp1">
+		<text>小型檯燈</text>
+	</string>
+	<string id="st_prop_lamp1_descr">
+		<text>
+			為你的藏身處驅散黑暗 \n \n
+			%c[ui_gray_3]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 低能耗\n
+			%c[d_blue] • %c[ui_gray_2] 使用電池\n			
+		</text>
+	</string>
+
+	<string id="st_prop_lamp2">
+		<text>大型檯燈</text>
+	</string>
+
+	<string id="st_prop_lamp2_descr">
+		<text>
+			為你的藏身處驅散黑暗 \n \n
+			%c[ui_gray_3]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 高科技物品\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 低能耗\n
+			%c[d_blue] • %c[ui_gray_2] 使用電池\n		
+		</text>
+	</string>
+
+	<string id="st_placeable_ammo_box">
+		<text>彈藥收納箱</text>
+	</string>
+	<string id="st_placeable_ammo_box_descr">
+		<text>超大容量的木箱子, 軍隊常用來儲存各種彈藥, 內部不知被誰做了小隔間, 所以不太適合放置其他物品\n \n
+			%c[ui_gray_1]屬性:\n
+			%c[d_blue] • %c[ui_gray_2] 物品收納容器\n
+			%c[d_blue] • %c[ui_gray_2] 可放置\n
+			%c[d_blue] • %c[ui_gray_2] 大容量\n
+			%c[d_orange] • %c[d_red] 只能作為彈藥收納用 %c[ui_gray_2] \n
+			%c[0,100,255,150] • %c[ui_gray_2] 可作為藏物點\n
+		</text>
+	</string>
+	
+</string_table>

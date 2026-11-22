@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_features">
+		<text>功能</text>
+	</string>
+	
+	<string id="encyclopedia_features_azazel_mode">
+		<text>诅咒模式</text>
+	</string>
+	<string id="encyclopedia_features_azazel_mode_text">
+		<text>
+			%c[pda_white]诅咒模式%c[ui_gray_1] 允许你在死后继续扮演另外一个角色.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n诅咒模式的死亡并不是终结 - 当你的角色死亡后, 你将会随机控制一个npc.\n
+			\n如果在你死亡的时候有队友在身边, 那他们将被优先选中, 而你将继续扮演他们中的一员.\n
+			\n这个模式只能在角色创建界面启用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_ironman_mode">
+		<text>铁人模式</text>
+	</string>
+	<string id="encyclopedia_features_ironman_mode_text">
+		<text>
+			%c[pda_white]铁人模式%c[ui_gray_1] 给游戏增加难度, 你扮演的角色在死后所有存档将会被删除.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n你可以在新游戏开始时定制铁人模式, 比如你的角色死几次之后存档就会被删除.
+			\n生命数可以给玩家一个周期:每个周期将会恢复一个生命数, 这样玩家就可以在游玩一段时间后获得更多的生命数.
+			\n诅咒模式如果同时被启用, 那么你还是会在死后继续扮演别的角色, 但是你已阵亡角色的存档依旧会被删除.\n
+			\n当你启用此模式时, 你该角色所有的存档将会被标记为铁人模式, 因此相关的存档不会被删除.\n
+			\n这个模式只能在角色创建界面启用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_story_mode">
+		<text>剧情模式</text>
+	</string>
+	<string id="encyclopedia_features_story_mode_text">
+		<text>
+			%c[pda_white]剧情模式%c[ui_gray_1] 玩家除了可以单独完成阵营的任务线之外, 也可以选择游玩全新且阵容豪华的"迷失地带"故事线.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n找你的阵营领袖聊聊最近在特异区发生的事情, 他应该会给你些信息和线索.\n
+			\n这个模式只能在角色创建界面启用.\n
+			\n%c[pda_blue]可用%c[ui_gray_1]
+			\n• 晴空\n• 纪律团\n• 生态学家\n• 自由军\n• 独行者\n• 雇佣兵\n
+			\n%c[pda_blue]提示%c[ui_gray_1]
+			\n只要剧情模式启用, 所有阵营的故事线都可以完成.
+			\n玩家如果找到友好阵营的首领, 可以通过和他们对话的方式来完成别的友好阵营的任务.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_warfare">
+		<text>战区模式</text>
+	</string>
+	<string id="encyclopedia_features_warfare_text">
+		<text>
+			%c[pda_white]战区模式%c[ui_gray_1] (GAMMA不支持!)动态战争模拟, 每个阵营都尽全力想获取特异区的控制权.
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n战区模式可以让玩家控制自己所在的阵营, 玩家可以在动态扩展系统和手动扩展系统中进行选择. 动态扩展系统将自动适配您在手动扩展系统中占领的任何基地.
+			\n启用了离线作战模拟器后, AI小队就可以任意截击别的小队, 因此整个战区将会更加动态化, 也许很大规模的战斗会发生在地图某个遥远的角落.
+			\n动态扩展系统会适应战场的变通, 以确保玩的体验不会完全相同.
+			\n \n%c[pda_yellow]趣闻%c[ui_gray_1]
+			\n这个模式最初是由 "werejew" 制作的普里皮亚奇的召唤的模组.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_survival_mode">
+		<text>尸潮模式</text>
+	</string>
+	<string id="encyclopedia_features_survival_mode_text">
+		<text>
+			%c[pda_white]尸潮模式%c[ui_gray_1] 会将特异区变成一个狩猎场 - 而你, 就是猎物.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n一旦这个模式被启用, 所有生成的npc将会被僵尸潜行者和怪物取代, 他们会慢慢的朝着你的位置蹒跚靠近, 并试图干掉你.\n
+			\n僵尸有一些改动, 作为一定程度上的削弱, 他们失去了使用操控机械装置的能力(比如使用枪械).\n
+			\n只有少数的交易商和潜行者小队会保留, 这意味着你不得不在特异区不断搜刮才能活下来.\n
+			\n这个模式只能在角色创建界面启用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_campfire_mode">
+		<text>篝火模式</text>
+	</string>
+	<string id="encyclopedia_features_campfire_mode_text">
+		<text>
+			%c[pda_white]篝火保存模式%c[ui_gray_1] 除非你站在篝火旁, 否则无法保存进度.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n要在篝火模式下保存进度, 请靠近附近的篝火, 然后像往常一样保存游戏就可以了.
+			\n \n篝火模式由于其性质, 所以会在玩家位于地下时被禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_agony_mode">
+		<text>苦难模式</text>
+	</string>
+	<string id="encyclopedia_features_agony_mode_text">
+		<text>
+			%c[pda_white]苦难模式%c[ui_gray_1] 通过在某些情况下禁用保存游戏的方式给游戏增加难度.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n如果你处于以下情况下则无法保存进度:
+			\n%c[200,200,200,50]• %c[0,150,150,150]受伤
+			\n%c[200,200,200,50]• %c[0,150,150,150]流血
+			\n%c[200,200,200,50]• %c[0,150,150,150]辐射病
+			\n%c[200,200,200,50]• %c[0,150,150,150]与敌人战斗中
+			\n%c[200,200,200,50]• %c[0,150,150,150]在能量风暴或者脉冲风暴时
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_timer_mode">
+		<text>计时器模式</text>
+	</string>
+	<string id="encyclopedia_features_timer_mode_text">
+		<text>
+			%c[pda_white]在计时器模式中%c[ui_gray_1], 你只能每隔一段时间保存一次进度. 
+			\n一旦你保存了进度, 那么就无法在计时器结束前再次保存.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_companions">
+		<text>同伴</text>
+	</string>
+	<string id="encyclopedia_features_companions_text">
+		<text>
+			%c[pda_white]同伴%c[ui_gray_1] 是一些可以招募的潜行者, 类似于别的游戏里面的随从.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n由于特异区异常危险,大多数潜行者都会选择抱团探索, 通常是3到4个人的团队.\n
+			\n这个功能将允许你和大多数潜行者一样组队, 只要通过和某个小组的领头者交谈, 你就可以说服他们和你一起探险.\n
+			\n唯一的要求就是这个团队的领头者和你必须要有友好的关系, 他的等级不能高过你一级, 而且你无法拥有太多的同伴.\n
+			\n某些特殊情况下, 一些角色会作为同伴来帮你完成任务, 他们有自己独特的招募要求, 且不计入你的团队人数.\n
+			\n在PDA中"关系"的选项卡里可以查看到同伴的信息, 在该选项卡中, 你可以给他们或者单独下达命令, 以及改变他们的行为.有一个选项可以开始在你的HUD上显示同伴的信息.\n
+			\n这些也可以通过快捷键完成, 你可以通过按键设置绑定快捷键.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_guide">
+		<text>指南</text>
+	</string>
+	<string id="encyclopedia_features_guide_text">
+		<text>
+			The %c[pda_white]指南%c[ui_gray_1] 可以帮助你了解游戏的内容.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n这个功能是在玩家们的强烈要求下添加的, 目的是帮助解释游戏功能和游戏机制, 以及添加了一个更直观的进度条.\n
+			\n此条会按照类别分类, 所有教程的重要内容会随着你创建角色后探索世界而逐步解锁.\n
+			\n当你解锁一个词条时, 它的名称和类别将会在消息中显示, 可以让你轻松的找到它.\n
+			\n%c[pda_yellow]免责申明%c[ui_gray_1]
+			\n这是自潜行者: 切尔诺贝利的阴影以来, 第一次有人认真尝试重新加入一个完整的游戏内用户指南, 用于介绍所有可用的游戏内容.\n
+			\n虽然这个功能基本上是完整的, 但是它仍处于早期制作阶段, 因此只有一少部分的词条被撰写了.\n
+			\n由于这项任务的艰巨性,它仍然有很多工作需要完成, 其中有很多类别是不完整的或者缺失的,且交互式的解锁系统还没有完全完成.\n
+			\n通过不断引入新词条和进一步的更新还有修补bug, 这个指南最终将会完成, 但是会花上相当长的时间.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_hud">
+		<text>HUD</text>
+	</string>
+	<string id="encyclopedia_features_hud_text">
+		<text>
+			The %c[pda_white]HUD%c[ui_gray_1] 会显示你的健康状况和装备状态.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n%c[pda_white]状态栏%c[ui_gray_1] 会显示你的健康状况和装备的当前状态, 如果状态稍差则会显示灰色, 不佳则会显示黄色, 而橙色和红色则表示装备已经处于临界状态.
+			\n%c[pda_white]警告栏%c[ui_gray_1] 会在你进入一个对你健康状况和装备状态有直接影响的危险区域时显示, 颜色越明显, 你的健康状态就会下降的更快.
+			\n%c[pda_white]增益栏%c[ui_gray_1] 会在你使用了消耗品处于buff状态时显示出来. 通常是某种形式的愈合, 保护或者恢复. 当buff消失, 相应的指示灯也会消失
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_map_spots">
+		<text>地图点</text>
+	</string>
+	<string id="encyclopedia_features_map_spots_text">
+		<text>
+			%c[pda_white]地图点%c[ui_gray_1] 是出现在地图上的图标, 用来突出显示一些功能或者信息.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n许多地点和实体都有与之相关的地图点, 方便人一眼就能看懂地图, 而不需要记住大量的信息.\n
+			\n%c[pda_blue]切换%c[ui_gray_1]
+			\n在PDA界面可以通过地图选项卡底下的顶部按钮来切换重要人物和对象(交易商, 技师, 床之类的), 藏物点, 任务导航点的显示.\n
+			\n不管这些设置如何, 那些潜行者或者别的移动的物体会在你的小地图上显示他们的光标, 因为不能保证他们会静止不动在一个位置.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_rank">
+		<text>潜行者排名等级</text>
+	</string>
+	<string id="encyclopedia_features_rank_text">
+		<text>
+			%c[pda_white]排名等级%c[ui_gray_1] 是基于潜行者在特异区内成就的评分系统.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n你在整个游戏过程中的所作所为都会被记录下来, 每个行为都会根据评分来给予你相应的点数.\n
+			\n当你积累的点数越来越多, 你的等级会随着你达到的每个里程碑而改变, 每个里程碑都需要在上个里程碑的基础上再加1000点.\n
+			\n大多数的行为会记录在PDA的统计选项卡中, 其中还包含一个游戏内的排行榜, 可以追踪到当前排名最高的100位潜行者.\n
+			\n你的等级越高, 你在普通潜行者中的名声就越大. 虽然这意味着你可以招募到更多有技能的同伴, 但也意味这那些不喜欢的人会开始派人来... 照顾你. 小心.
+			\n%c[pda_blue]等级%c[ui_gray_1]
+			\n• 菜鸟: 0\n• 新兵: 2,000\n• 熟手: 4,000\n• 专业: 7,000\n• 老兵: 10,000\n• 专家: 15,000\n• 大师: 21,000\n• 传奇: 28,000
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_reputation">
+		<text>名声</text>
+	</string>
+	<string id="encyclopedia_features_reputation_text">
+		<text>
+			%c[pda_white]名声%c[ui_gray_1] 会表现在潜行者与他人的互动中.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n名声和排名类似, 区别在于它是非线性的 - 既可以增加也可以减少 -  因为这是基于玩家和别的潜行者的互动\n
+			\n提高名声最简单的办法是通过完成任务, 提供急救或者杀死你阵营的敌人, 反之如果任务失败, 杀死中立或者友好的潜行者的话名声就会下降\n
+			\n名声完全是为了游戏的沉浸度而设计的, 和游戏中其他机制没有任何联系\n
+			\n赏金小队的出现判定只基于阵营好感, 和名声好坏也没有关系
+			\n%c[pda_blue]名声等级%c[ui_gray_1]
+			\n• 天诛地灭: -2,000\n• 万人唾弃: -1,500\n• 千夫所指: -1,000\n• 声名狼藉: -500\n• 无足轻重: 0\n• 初露头角: 500\n• 远近闻名: 1,000\n• 威震四海: 1,500\n• 叱咤风云: 2,000
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_stashes">
+		<text>藏物点</text>
+	</string>
+	<string id="encyclopedia_features_stashes_text">
+		<text>
+			%c[pda_white]藏物点%c[ui_gray_1] 是一些潜行者隐藏物资的地方.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n特异区的大多数潜行者都会将一些弹药, 食物还有药品储存在容器, 背包或一些隐藏箱里以便日后取回再用.\n
+			\n有关它们位置的信息往往随着藏它们的潜行者的死亡消失, 这就导致了有无数的藏匿物且堆满了未使用的物品, 等待着某天被发现.\n
+			\n情报交易商和交易商通常会把藏匿物的坐标作为奖励提供给为他们完成任务的人, 而那些手头拮据的人则会试图使用他们的藏品来换取生存.\n
+			\n你也可以通过右键点击背包中的任何物品然后点击隐藏来创建自己的藏匿物.\n
+			\n你的藏匿物绝对不会被别的潜行者拿走, 所以放心, 你藏的东西永远安全.\n
+			\n%c[pda_blue]]鉴别%c[ui_gray_1]
+			\n通过在地图界面将鼠标悬停在其之上的操作你可以很容易的确定其隐藏的类型或者其状态.\n
+			\n• 绿色: 原封不动\n• 紫色:独特\n• 红色:紧急\n• 黄色:玩家所有
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_workshop">
+		<text>工作台</text>
+	</string>
+	<string id="encyclopedia_features_workshop_text">
+		<text>
+			%c[pda_white]工作台%c[ui_gray_1] 允许玩家自行修理,升级或者制造装备.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n特异区的每个技师都会使用他们的工作台提供一些修理和升级的服务, 而一些老道的潜行者喜欢自己做这样的工作, 许多人会临时从技师那里租一个工作台来调整自己的装备, 你也可以右键背包中的工具箱来打开属于自己的工作台
+			\n在工作台你可以完成以下操作:
+			\n%c[pda_white]• 修理 (更换零件): %c[ui_gray_1]所有武器和服装都由特定的零件和部件组成. 当它们损坏时, 你可以使用对应的零件来更换掉旧的, 坏掉的零件, 以此改善它的状态.
+			\n%c[pda_white]• 升级: %c[ui_gray_1]配上正确的工具,你就可以升级你的装备.
+			\n%c[pda_white]• 制造: %c[ui_gray_1]配上正确的工具和组件还有足够的知识, 你就可以制造出各种各样的东西
+			
+			\n \n在你使用工作台时, 会有一个列表显示需要的主要工具和它们的可用性(你自己拥有或者技师拥有). 这些工具是制作和升级必不可少的.
+			\n底部会有个信息栏以帮助玩家在工作台执行必要的操作.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_workshop_repair">
+		<text>工作台 (修理/部件)</text>
+	</string>
+	<string id="encyclopedia_features_workshop_repair_text">
+		<text>
+			%c[pda_white]工作台%c[ui_gray_1] 可以被用于修复损坏的武器或者装备以及用状态较好的零件替换损坏的零件.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n每件武器和服装都是由一堆部件组成的, 一件装备的总状态是由其各个部件的状态加起来的.
+			\n零件一般有4种状态:
+			\n• 武器部件从最差到最好有: %c[d_red]变形%c[ui_gray_1], %c[d_orange]受损%c[ui_gray_1], %c[0,250,250,0]划坏%c[ui_gray_1], %c[d_green]完好%c[ui_gray_1]
+			\n• 服装组件从最差到最好有: %c[d_red]撕裂%c[ui_gray_1], %c[d_orange]受损%c[ui_gray_1], %c[0,250,250,0]划破%c[ui_gray_1], %c[d_green]完好%c[ui_gray_1]
+			\n\n要修理装备,你需要拥有以下物品:
+			\n %c[pda_white]• 合适的修理工具箱%c[ui_gray_1] (取决于你要修理的武器/装备): 像是技师出售的工具箱.
+			\n %c[pda_white]• 相同的部件%c[ui_gray_1] 但是比你所装备的状态更好的话. 你可以通过拆解武器或者服装来获得他们.
+			
+			\n \n%c[pda_blue]修理步骤%c[ui_gray_1]
+			\n1• 先检查修理装备的需求. 当你有工具或者更好的替代品时, 按钮将会处于可用状态.
+			\n2• 点击高亮显示的部分. 需要的零件会和你的持有状态同步.
+			\n3• 在零件的选择列表中, 点击状态较好的选项.然后被选择的零件将会被新零件, 它会在你装备的总体状态反应出来.
+			\n4• 如果有多个零件需要更换, 那就准备好足够的工具箱, 然后重复这一过程.
+			\n5• 当你搞定了, 就按"修理"按钮.
+			
+			\n \n%c[pda_yellow]提示:%c[ui_gray_1]
+			\n• 灰色的零件代表你持有的零件中没有状态较好的替代品, 因此无法修理.
+			\n• 如果你在需要更换装备零件时发现需要的工具状态不佳, 你可以用一些特殊的工具来修理它们, 例如: %c[pda_white]多功能工具, 锉刀, 通条, 基本缝纫线, 战地护甲包 w/ 凯夫拉线%c[ui_gray_1]
+			\n• 每次更换零件都需要消耗一次对应的修理工具箱.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_workshop_upgrade">
+		<text>工作台 (升级)</text>
+	</string>
+	<string id="encyclopedia_features_workshop_upgrade_text">
+		<text>
+			%c[pda_white]工作台%c[ui_gray_1] 可以用于升级你的武器和服装, 只要你有合适的工具, 就不需要花钱让技师来做.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n升级装备的办法和技师的升级系统类似, 但是需要额外的工具. 
+			\n\n要升级装备, 你需要拥有以下物品:
+			\n %c[pda_white]• 合适的修理工具箱%c[ui_gray_1]  (取决于你要修理的武器/装备): 像是技师出售的工具箱.
+			\n %c[pda_white]• 武器/护甲升级箱%c[ui_gray_1]  (取决于你要修理的武器/装备):  这些升级箱一般可以在别的潜行者身上找到, 潜行者一般会搜集这些东西留着自己用.
+			\n %c[pda_white]• 主要工具箱%c[ui_gray_1] (取决于要升级的阶段): 这种工具箱比较稀有, 因为技师升级装备总会需要这些东西, 自己升级也一样, 如果你愿意搜的话还是可以搜到的.
+			
+			\n \n%c[pda_blue]升级步骤%c[ui_gray_1]
+			\n1• 检查升级装备所需的工具, 当持有合适的修理包时, 下一步.
+			\n2• 点击要升级的装备, 升级树会和已安装的升级一起显示.
+			\n3• 每次升级都需要特定的升级工作包. 此外还需要一个主要工具箱 (取决于要升级的阶段)
+			\n4• 如果升级可用, 直接点击即可.
+			\n5• 搞定了之后就点击"升级"按钮安装所有已选升级项.
+			
+			\n \n%c[pda_yellow]提示:%c[ui_gray_1]
+			\n• 升级需要主要工具箱, 它们不会被消耗.
+			\n• 主要工具箱有以下几种: %c[pda_white]初级工具箱,高级工具箱,专家级工具箱.%c[ui_gray_1]
+			\n• 将鼠标悬停在升级上可以查看其属性的所有详细信息. 如果升级不可用, 它将会显示需求.
+			\n• 每次升级都需要消耗一次对应的工具箱.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_workshop_craft">
+		<text>工作台 (制作)</text>
+	</string>
+	<string id="encyclopedia_features_workshop_craft_text">
+		<text>
+			%c[ui_gray_1]持有正确的零部件和足够的知识, %c[pda_white]技师的工作台%c[ui_gray_1] 可以让你制作各种物品.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n有时候有些装备很难在特异区里找到, 因此, 准备好不同的材料可能会派上用场.
+			\n\n要制作装备的话, 你需要拥有以下物品:
+			\n %c[pda_white]• 主要工具箱:%c[ui_gray_1] 这种工具箱比较稀有, 因为技师升级装备总会需要这些东西,自己升级也一样, 如果你愿意搜的话还是可以搜到的.
+			\n %c[pda_white]• 食谱和指南:%c[ui_gray_1] 正确的制作需要知识. 许多潜行者可能会有有用的食谱或者指南.
+			\n %c[pda_white]• 组件:%c[ui_gray_1] 每件物品都是由不同的材料和部件制成的. 这些材料可以通过拆卸各种物品获得.
+			
+			\n \n%c[pda_blue]制造步骤%c[ui_gray_1]
+			\n1• 选择你要制造的条目, 条目按照物品类型排列. 每个条目会显示可选的列表.
+			\n2• 如果你想制作的东西高亮显示, 那就意味着你知道怎么做. 直接点击即可.
+			\n3• 随后会显示需要的物品和工具箱. 需要的最小数量会显示在组件的图标下方. 
+			\n4• 如果你缺失主要工具箱或者某些组件不足, 则无法进行制作.
+			\n5• 点击"制作"按钮即可.
+			
+			\n \n%c[pda_yellow]提示:%c[ui_gray_1]
+			\n• 制作需要主要工具箱, 它们不会被消耗.
+			\n• 主要工具箱有以下几种: %c[pda_white]初级工具箱,高级工具箱,专家级工具箱, 制药箱包, 填弹箱.%c[ui_gray_1]
+			\n• 如果你之前给技师带去过工具箱, 那么这些工具箱将会在此工作台保持可用状态.
+			\n• 用特殊工具可以拆解物品, 详情参阅相关文庄.
+			\n• 只有已知的配方会高亮显示.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_disassembly">
+		<text>物品拆解</text>
+	</string>
+	<string id="encyclopedia_features_disassembly_text">
+		<text>
+			你可以 %c[pda_white]拆解%c[ui_gray_1] 各种各样的物品来从中获取零件.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n拆解可以回收不需要的物品, 以获得可以用于其他用途的零件, 例如在工作台修理或者制作别的物品.
+			\n可以用以下3种工具之一来完成拆解:
+			\n• %c[pda_white]瑞士军刀%c[ui_gray_1] (除了武器)
+			\n• %c[pda_white]梳妆工具%c[ui_gray_1] (除了武器)
+			\n• %c[pda_white]多功能工具%c[ui_gray_1]
+			
+			\n \n%c[pda_blue]步骤%c[ui_gray_1]
+			\n可以拆解的物品会在你在背包界面中点击它后显示(拆解[!]).
+			\n要拆解物品, 请确认你有合适的拆卸工具, 然后按住左ALT捡并点击你的物品然后选择(拆解[!])
+			
+			\n \n%c[pda_yellow]提示%c[ui_gray_1]
+			\n左ALT键是作为一个保险, 防止意外错点. 可以在设置中禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_battery">
+		<text>设备和电池</text>
+	</string>
+	<string id="encyclopedia_features_battery_text">
+		<text>
+			每个设备都有电池, 没了电池就没法工作.
+			
+			\n \n%c[pda_green]情报%c[ui_gray_1]
+			\n设备的电量会在物品图标下方的一个蓝条显示. 当你使用它的时候, 它会不断消耗电量, 一旦电量耗尽, 设备就不再工作了.
+			\n你可以给设备安装电池也可以卸下电池. 如果你有一个很重要的低耗电量设备, 你可以从其他不用的设备中卸下电池供其使用.
+			\n不同设备的耗电量不同, 高端设备的耗电量往往比小型设备的要大.
+			\n时刻注意你设备的电量, 建议常在口袋里多备些电池. 你永远猜不到什么时候会需要它
+			
+			\n \n%c[pda_blue]步骤%c[ui_gray_1]
+			\n• 要安装电池, 只需要把电池拖到设备上即可
+			\n• 要卸下电池, 在你的背包界面右键点击设备然后选择 %c[pda_white]卸下电池%c[ui_gray_1] 选项
+			
+			\n \n%c[pda_yellow]提示%c[ui_gray_1]
+			\n左ALT键是作为一个保险, 防止意外误点击. 可以在设置中禁用.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_economy_difficulty">
+		<text>进程难度</text>
+	</string>
+	<string id="encyclopedia_features_economy_difficulty_text">
+		<text>
+			%c[pda_white]进程难度%c[ui_gray_1] 决定了特异区的经济状况的糟糕程度. 直接影响你的游戏进展\n
+			
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n进程难度对经济有巨大影响, 这会影响玩家在特异区的进展.
+			\n受此影响的包括交易商收/售物品的价格, 技师修理/升级装备的价格, 稀有战利品以及通过完成任务获得的金钱和声望.\n
+			
+			\n%c[pda_blue]细节%c[ui_gray_1]
+			\n本模组允许你指定所有进程难度的细节, 以下是所有可选项:
+			\n%c[200,200,50,50]• %c[pda_white]声望获得系数: %c[ui_gray_1]完成任务时获得的声望的倍数.
+			\n%c[200,200,50,50]• %c[pda_white]金钱获得系数: %c[ui_gray_1]完成任务时获得的金钱的倍数.
+			\n%c[200,200,50,50]• %c[pda_white]修理花费系数: %c[ui_gray_1]技师提供的修理服务价格倍数.
+			\n%c[200,200,50,50]• %c[pda_white]升级花费系数: %c[ui_gray_1]技师提供的修理服务价格倍数.
+			\n%c[200,200,50,50]• %c[pda_white]交易商价格(买) 系数: %c[ui_gray_1]交易商卖你东西的价格倍数.
+			\n%c[200,200,50,50]• %c[pda_white]交易商价格(卖)系数: %c[ui_gray_1]交易商收你东西的价格倍数.
+			\n%c[200,200,50,50]• %c[pda_white]战利品(物品)几率系数: %c[ui_gray_1]从尸体里搜刮到物品的几率倍数.
+			\n%c[200,200,50,50]• %c[pda_white]战利品(金钱)几率系数: %c[ui_gray_1]从尸体里搜刮到金钱的几率倍数.
+			\n%c[200,200,50,50]• %c[pda_white]零件状态百分比制: %c[ui_gray_1]启用后, 从武器装备上拆下来的部件将会有状态数值. 从而使此系统更复杂.
+			\n%c[200,200,50,50]• %c[pda_white]发现藏匿物的几率: %c[ui_gray_1]控制从PDA中找到藏匿物坐标的几率.
+			\n%c[200,200,50,50]• %c[pda_white]武器损坏系数: %c[ui_gray_1]武器损坏速率的倍数.
+			\n%c[200,200,50,50]• %c[pda_white]电池电量消耗系数: %c[ui_gray_1]电池电量消耗速率的倍数.
+			\n%c[200,200,50,50]• %c[pda_white]启用有限的螺栓数量: %c[ui_gray_1]顾名思义,你的螺栓数量有限.
+			\n%c[200,200,50,50]• %c[pda_white]启用神器损坏: %c[ui_gray_1]当神器在保护它的使用者时会损坏, 损坏会影响神器价格.
+			\n%c[200,200,50,50]• %c[pda_white]神器重生几率: %c[ui_gray_1]神器在异常点刷新的几率.
+			\n%c[200,200,50,50]• %c[pda_white]交易商补货周期(小时): %c[ui_gray_1]间隔多少小时交易商会重新补货.
+	
+			\n \n \n%c[200,200,50,50]注意!!!%c[ui_gray_1]
+			\n• 根据游玩的进度改变这些系数.
+			\n• 只有载入存档后才能更改这些因子.在"设置"菜单中更改他们.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_gameplay_difficulty">
+		<text>生存难度</text>
+	</string>
+	<string id="encyclopedia_features_gameplay_difficulty_text">
+		<text>
+			%c[pda_white]生存难度%c[ui_gray_1] 影响游玩的难易度.\n
+			
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n生存难度影响玩家的方方面面,比如减伤,耐力的消耗还有负重,另外还有水的消耗和睡眠等其他方面.\n
+			
+			\n%c[pda_blue]细节%c[ui_gray_1]
+			\n本模组允许你指定所有生存难度的细节,一下是所有可选项:
+			\n%c[200,200,50,50]• %c[pda_white]玩家的减伤: %c[ui_gray_1]有4个选项以决定玩家受到伤害的基础减伤.
+			\n%c[200,200,50,50]• %c[pda_white]子弹伤害系数: %c[ui_gray_1]子弹伤害数值的倍数.数值越高,伤害越高,杀人越快.
+			\n%c[200,200,50,50]• %c[pda_white]耐力消耗系数: %c[ui_gray_1]耐力因为移动和负重而损失的倍数.
+			\n%c[200,200,50,50]• %c[pda_white]最大承载重量: %c[ui_gray_1]控制你可以带多少重量的东西.
+			\n%c[200,200,50,50]• %c[pda_white]启用缺水: %c[ui_gray_1]启动口渴模拟, 意味着你的角色需要不断摄入水分.
+			\n%c[200,200,50,50]• %c[pda_white]启用缺少睡眠: %c[ui_gray_1]启动后随着时间的流逝和消耗品的使用会逐渐耗尽你角色的精力.
+			\n%c[200,200,50,50]• %c[pda_white]白天启用辐射: %c[ui_gray_1]白天外出会让你的角色暴露在高且恒定计量的辐射下.只要你得到一个合适的头盔和服装即可为你提供足够的防护.
+			\n%c[200,200,50,50]• %c[pda_white]只有在拥有盖革计数器时播放辐射计数声: %c[ui_gray_1]启动后,只有在你的背包中有电量足够的盖革计数器时,你才能听到辐射计数的滴答声.
+			\n%c[200,200,50,50]• %c[pda_white]启用异常点探测器: %c[ui_gray_1]在玩家靠近异常点时默认播放的嘟嘟声..
+	
+	
+			\n \n \n%c[200,200,50,50]注意!!!%c[ui_gray_1]
+			\n• 根据游玩的进度改变这些系数.
+			\n• 只有载入存档后才能更改这些因子.在"设置"菜单中更改他们.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_disguise">
+		<text>伪装系统</text>
+	</string>
+	<string id="encyclopedia_features_disguise_text">
+		<text>
+			你可以通过%c[pda_white]伪装%c[ui_gray_1] 自己成一个别的阵营的潜行者来隐藏你的真实身份以此达到各种目的.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\nTo disguise as a member of a specific faction, you need to wear an appropriate outfit.
+			\n伪装后,你可以在阵营成员中自由走动假装是他们的一员,即使在正常情况下他们与你是敌对状态.
+			\n当你走到他们面前时,他们会观察你和你的行为,HUD上会出现一个"可疑度"计数,以此显示你的可疑程度.
+			\n很多因素都会影响你伪装的有效性,并且影响别人对你的怀疑度.
+			\n注意你所穿的装备以及其状况.照常行事,不要做出任何可疑的举动,确保自己不会引起不必要的注意.
+			\n你没法伪装成黑石成员,他们通过未知的方式确认自己人的身份.
+			
+			\n \n%c[pda_blue]选项%c[ui_gray_1]
+			\n• 你可以通过设置菜单中的选项调整伪装的设置.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_features_fast_travel">
+		<text>快速旅行</text>
+	</string>
+	<string id="encyclopedia_features_fast_travel_text">
+		<text>
+			%c[pda_white]快速旅行和背包旅行%c[ui_gray_1] 让你可以使用PDA地图界面传送到以前发现过的位置.\n
+			\n%c[pda_green]情报%c[ui_gray_1]
+			\n在你旅行时会发现许多地点,这些地点会在地图上作为一个标记显示,点击它即可快速传送过去.
+			\n背包旅行也是同一个道理,只是取决于你建立的藏物点.
+			\n你无法在战斗中,负重过高,受伤或者能量风暴和脉冲风暴时快速旅行.
+			
+			\n \n%c[pda_blue]选项%c[ui_gray_1]
+			\n• 你可以通过设置菜单更改快速旅行和背包旅行的设置.
+		</text>
+	</string>
+</string_table>

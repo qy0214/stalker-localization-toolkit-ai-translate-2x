@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="ui_mcm_menu_SMR">
+		<text>特异区定制计划ZCP</text>
+	</string>
+	
+	<string id="ui_mcm_menu_smr_amain">
+		<text>主要功能</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_persist_info_mm">
+		<text>你不在游戏中. 现在所做的任何更改都将在开始新游戏时应用,但如果您加载的保存文件具有已保存的配置,则会被覆盖. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_persist_info_level">
+		<text>你在游戏中. 现在所做的任何更改都将与您的保存文件一起保存和加载. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_tooltip_info">
+		<text>大多数选项都有工具提示. 如果你不确定某个选项的作用,将鼠标悬停在它的名称上,就会有描述. </text>
+	</string>
+	<!-- GENERAL -->
+	<string id="st_smr_glitched_pda_text">
+		<text>致命错误：检测到内存损坏</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_smr_enabled">
+		<text>启用 ZCP</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_smr_debug_log">
+		<text>调试日志</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_smr_debug_log_desc">
+		<text>启用调试日志记录. 警告：这将很快膨胀您的日志文件以及单独的日志文件"dph_zcp.log". </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_smr_persist_override">
+		<text>不要从保存文件加载配置</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_smr_persist_override_desc">
+		<text>覆盖从保存文件加载的配置. 如果你怀疑存储的数据已损毁或其他无效,则很有用. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_respawn_idle">
+		<text>重生时间</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_10800">
+		<text>3小时</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_21600">
+		<text>6小时</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_43200">
+		<text>12小时</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_86400">
+		<text>1天（默认）</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_172800">
+		<text>2天</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_345600">
+		<text>4天</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_604800">
+		<text>1周</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_1209600">
+		<text>2周</text>
+	</string>
+	<string id="ui_mcm_lst_smr_amain_respawn_idle_1">
+		<text>从不</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_pop_factor_info">
+		<text>每当启用 ZCP 时,这些人口系数设置将覆盖 Anomaly 内置设置. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_monster_pop_factor">
+		<text>变异怪物群体系数</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_stalker_pop_factor">
+		<text>潜行者人口系数</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_respawn_idle_desc">
+		<text>改变了所有潜行者、变异怪物和僵尸的重生计时器. </text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_glitched_pda">
+		<text>损坏的 PDA</text>
+	</string>
+	<string id="ui_mcm_SMR_smr_amain_glitched_pda_desc">
+		<text>将你有用的PDA变成一个镇纸,并配有可爱的错误信息. </text>
+	</string>
+</string_table>

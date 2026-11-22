@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Storyline: Hidden Threat
+	Version:   1.0
+    Autor:     Longreed
+	Last Edit: 29/10/2021
+-->
+<string_table>
+    <string id="st_hidden_threat_ser_gorobez_name">
+		<text>戈罗贝茨中士</text>
+	</string>
+	<string id="st_hidden_threat_isg_leader_name">
+		<text>赫南德斯少校</text>
+	</string>
+	<string id="st_hidden_threat_isg_agent_name">
+		<text>戈杜诺夫中尉</text>
+	</string>
+	<string id="st_hidden_threat_spirit_name">
+		<text>(脑海中的声音):</text>
+	</string>
+	<string id="st_hidden_threat_strelok_name">
+		<text>史特洛克</text>
+	</string>
+	<string id="st_hidden_threat_degtyarev_name">
+		<text>德格捷列夫上校</text>
+	</string>
+	<string id="st_agr_1_6_ht_vereshagin_name">
+		<text>韦列夏金少校</text>
+	</string>
+</string_table>

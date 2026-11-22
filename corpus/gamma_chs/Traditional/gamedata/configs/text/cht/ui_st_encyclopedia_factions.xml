@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_factions">
+		<text>陣營</text>
+	</string>
+	
+	<string id="encyclopedia_factions_bandit">
+		<text>土匪</text>
+	</string>
+	<string id="encyclopedia_factions_bandit_text">
+		<text>
+			%c[pda_white]土匪%c[ui_gray_1] 是一群在特異區活動的黑社會成員.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n人們來到特異區是爲了逃避或彌補不堪的過去, 尋求啟示或者探險, 但是土匪並不是那樣的.\n
+			\n以前大家爲了各自的目標會組建各式各樣的陣營, 後來, "匪王"蘇坦的鐵腕力量使得特異區里的流氓和罪犯團結在了一起.\n
+			\n雖然大多數的土匪直接參與了與別的陣營的戰爭, 但是有些聰明的傢伙則選擇了滲透到這些陣營中, 以相對低風險的方式欺騙, 綁架, 脅迫且讓陣營自身腐敗.\n
+			\n在這裡, 法律因人而異, 而"匪王"蘇坦則喜歡土匪們把他當做最高法律.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 領袖: "匪王"蘇坦\n• 總部: 黑谷\n• 服裝顏色: 什麼都有
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_clear_sky">
+		<text>晴空</text>
+	</string>
+	<string id="encyclopedia_factions_clear_sky_text">
+		<text>
+			%c[pda_white]晴空%c[ui_gray_1] 是一個致力於瞭解特異區內部運作的科研組織.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n儘管他們參戰了2011年的陣營戰爭, 但是他們通常還是會被視作一個和平主義陣營, 比起參與政治鬥爭和戰爭, 他們更願意把時間花在研究上.\n
+			\n他們認為特異區既是上天給予的禮物也是詛咒 - 這是一個令人難以置信但是未被髮掘出潛力的東西 - 且如果不適當保持平衡的話可能會對人類造成威脅.\n
+			\n而正是他們後來的魯莽幾乎導致了他們的毀滅. 他們堅信那個叫史特洛克的人闖進了特異區中心破壞了特異區的平衡, 晴空動員發起了有史以來最大規模的軍事行動追捕史特洛克.\n
+			\n他們在第三次大規模能量風暴來臨前不久在覈電站外頭抓到了他. 沒人知道在特異區會發生什麼, 只知道晴空領導者犧牲了而且部隊損失慘重, 與此同時保護特異區的黑石似乎變得更強大了.\n
+			\n然而, 今天, 這個陣營已經重建且恢復了. 這很大程度上, 要感謝他們的新領袖, 冷風. 晴空現在正在研究他們之前研究的東西, 隱居在特異區的一個安靜的角落.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 冷風\n• 總部: 大沼澤\n• 服裝顏色: 藍白晴空迷彩
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_duty">
+		<text>紀律團</text>
+	</string>
+	<string id="encyclopedia_factions_duty_text">
+		<text>
+			%c[pda_white]紀律團%c[ui_gray_1] 是一個準軍事化組織, 他們致力於保護人們不受特異區的各種恐怖威脅.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n這是一個由一些前軍方組建的曾經強大又光榮的陣營, 現在由於他們在特異區北部的行動失敗和一系列醜聞而名聲掃地.\n
+			\n由於他們大部分的精銳成員和指揮官要麼已經陣亡, 要麼就是叛變了, 所以沃羅寧和彼得連科很難在這一爛攤子中維持這個陣營特有的紀律性.\n
+			\n雖然困難重重, 但是這個陣營仍然堅持著自己的理想, 盡一切努力讓羅斯托克成為各地中立潛行者們的庇護所.\n
+			\n不隸屬於羅斯托克本部基地部隊的成員則往往致力於追捕土匪, 掃蕩怪物巢穴, 並通過捐贈樣本的方式來幫助生態學家\n
+			\n儘管過去不堪回首, 但是他們仍然以自己的意識形態為責任, 他們反對自由軍, 認為在特異區過度自由會導致很多危險.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 總指揮官: 沃羅寧將軍\n• 總部: 羅斯托克\n• 服裝顏色: 黑色為主紅色為輔
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_ecologist">
+		<text>生態學家</text>
+	</string>
+	<string id="encyclopedia_factions_ecologist_text">
+		<text>
+			%c[pda_white]生態學家%c[ui_gray_1] 是一支由政府支援的科研機構.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n沒有任何地方的生態系統能和特異區的相提並論, 因此自然也會有政府對此懷有極大的興趣.\n
+			\n這正是這個陣營存在的原因-研究只能在這裡找到的神器, 異常點, 怪物以及其他反常的情況.\n
+			\n到目前為止他們已經建立了兩個研究實驗室, 一個在揚塔, 另一個在尤皮特, 他們在那裡面進行了大部分秘密實驗.\n
+			\n在野外工作的時候, 他們通常會有護衛隊陪同,通常是雇來的傭兵, 潛行者, 或者士兵, 也有可能是自行武裝.\n
+			\n不少尋找神器和尋找稀有變種怪標本的潛行者更願意把這些東西賣給生態學家們, 因為他們通常開價更高.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 首席研究員: 薩哈洛夫教授\n• 首席研究實驗室: 揚塔\n• 服裝顏色: 根據護甲效能區分顏色
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_freedom">
+		<text>自由軍</text>
+	</string>
+	<string id="encyclopedia_factions_freedom_text">
+		<text>
+			%c[pda_white]自由軍%c[ui_gray_1] 是武裝的無政府主義分子, 其口號是: "爲了特異區的自由而戰"\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n這個陣營的成員相信人們可以與特異區共存, 他們把特異區看成是一個科學形式和社會政治形式上的奇蹟, 他們認為, 必須承認該地區是一個沒有統治者的自由領土, 他們反對任何企圖控制該地區或者違背其性質的人.\n
+			\n這些觀點使得他們與紀律團形成了鮮明的對比, 紀律團認為任何形式與特異區共存都是幼稚和暫時的, 而最壞的主張則是完全毀滅它.\n
+			\n盧卡什決心要對抗黑石, 加上洛基與其他組織的高度和諧接觸, 使得自由軍成為特異區里最為廣泛被接受的陣營之一... 至少目前是這樣的.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 盧卡什\n• 總部: 軍事倉庫\n• 服裝顏色: 迷彩
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_loner">
+		<text>獨行者</text>
+	</string>
+	<string id="encyclopedia_factions_loner_text">
+		<text>
+			%c[pda_white]獨行者%c[ui_gray_1] or %c[pda_green]自由潛行者%c[ui_gray_1], 是那些沒有加入任何陣營的人.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n潛行者來到特異區的原因有很多, 渴望冒險, 渴望探索未知的領域, 或者渴望從頭開始的新生活.\n
+			\n許多有影響力的陣營採取對他們中立或者友好的立場, 把他們視作潛在的新兵, 或者讓他們從事自己無法或者不願從事的工作.\n
+			\n他們大部分的收入來源於搜刮廢棄的建築和搜刮已故潛行者發現的神器, 一部分變異物體, 武器以及一些其他雜七雜八的物品.\n
+			\n然而, 幾乎每一個有想法的潛行者都在夢想有一天能找到傳說中的許願石, 那是一顆遠古外星水晶, 它能滿足你的任何願望.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 最有影響力的人: 西多洛維奇\n• 交易地點: 封鎖線\n• 服裝顏色: 多種
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_mercenary">
+		<text>僱傭兵</text>
+	</string>
+	<string id="encyclopedia_factions_mercenary_text">
+		<text>
+			%c[pda_white]僱傭兵%c[ui_gray_1] 是由來自外國的私人軍事公司組建的.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n他們認真對待自己的工作和任務, 計劃周密, 準備完善是他們成功的秘訣.\n
+			\n和人們普遍認為的不一樣的是, 他們不僅僅是受僱傭的殺手, 他們也還執行各種合同, 包括尋找稀有神器和裝置, 護送貴重貨物通過特異區最危險的區域.\n
+			\n雖然他們完成任務的成功率很高,也經常有人找他們, 但是有傳言說, 他們真正幕後的老大是一個神秘的海外僱主, 他們的動機甚至位元異區更深不可測.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 承包商聯絡人: 達什曼\n• 總部: 死城\n• 服裝顏色: 藍色和灰色
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_military">
+		<text>軍隊</text>
+	</string>
+	<string id="encyclopedia_factions_military_text">
+		<text>
+			%c[pda_white]軍隊%c[ui_gray_1] 在特異區的部隊是由特種部隊, 受委託的軍事潛行者和應徵軍人組成的聯合分遣隊,由內務部授權, 烏克蘭安全域性協調.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n他們的主要任務就是確保特異區和外部世界的邊界不被破壞,他們被這裡幾乎所有的人所憎恨, 除了 - 紀律團, 他們與特種部隊也有聯繫 - 生態學家, 他們也得到了同一個政府的支援.\n
+			\n他們接到的命令是見到所有在特異區的非法人員就開槍, 對著有意見的人總會被教導說這些非法人員總比那些變異怪要好對付.\n
+			\n然而, 他們的軍官總是很好賄賂, 最明顯的例子就是: 儘管封鎖線的菜鳥村距離他們的一個前哨站不到幾百米, 但是他們卻像是瞎子一樣看不到這個菜鳥獨行者的天堂.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 實際指揮官: 庫茲涅佐夫\n• 總部: 農業研究所\n• 服裝顏色: 林地迷彩
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_monolith">
+		<text>黑石</text>
+	</string>
+	<string id="encyclopedia_factions_monolith_text">
+		<text>
+			%c[pda_white]黑石%c[ui_gray_1] 是一個狂熱的偽宗教教派, 他們敵視所有除了自己人的人.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n他們被一種狂熱的信仰迷住了, 他們試著抵抗所有嘗試進入特異區中心的人, 因此大多數潛行者認為他們都瘋了.\n
+			\n雖然在生理上他們和特異區里別的潛行者無異, 但是他們的狂熱才是讓他們能置身事外般戰鬥的主要原因 - 衆所周知, 他們的成員會在彈藥耗盡后拔刀衝鋒, 或者在被俘虜時用手雷自爆.\n
+			\n外界廣泛認為他們是被洗腦後的潛行者, 是被史特洛克關閉的"焦腦器"洗腦的.\n
+			\n儘管如此, 但是黑石還是設法獲得了數不盡的新兵和物資.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 代理主教: 兔子/傳教士\n• 聖城: 普里皮亞奇\n• 服裝顏色: 城市迷彩加棕色
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_greh">
+		<text>原罪</text>
+	</string>
+	<string id="encyclopedia_factions_greh_text">
+		<text>
+			%c[pda_white]原罪%c[ui_gray_1] 是由高度敵對的變異潛行者組成的邪教, 他們相信特異區的神聖本質, 認為它是治療和"赦免"的媒介.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n邪惡的"黑暗潛行者"被外界描述成殭屍, 變異的或者被附身的人. 他們試圖拓展特異區以覆蓋整個世界, 他們將不擇手段的完成這個雄心勃勃的目標.\n
+			\n儘管他們看上去死氣沉沉而且健康狀態不佳, 但是他們是一股不容忽視的力量. 他們的戰鬥力與普通潛行者不相上下, 而且他們願意狂熱的爲了理想獻身, 這驅動著他們在冰雹般的子彈和彈片中衝鋒.\n
+			\n據說他們的創立者是一個死刑犯,早在特異區出現之前就在地下實驗室裡秘密實驗過.\n
+			\n另一方面, 他們的戰士被認為是由被拋棄的人, 叛徒, 自願招募的新兵還有俘虜組成的, 通過他們的洗腦和變異, 成為原罪的忠實僕人.\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 開創教父: "黑暗之神"切爾諾伯格\n• 總部: 風暴引擎\n• 服裝顏色: 棕色, 灰色和黑色
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_isg">
+		<text>UNISG</text>
+	</string>
+	<string id="encyclopedia_factions_isg_text">
+		<text>
+			%c[pda_white]聯合國國際科研團隊%c[ui_gray_1] 是一支對特異區有濃厚興趣的特種單位, 是比原ISG更無情的繼承者.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+		    \n雖然原ISG在2011年成立后因為不可預料因素被解散了, 但是最近又有令人不安的傳言說在倫敦看到大量但是無害的能量風暴, 他們說服了聯合國恢復了這一國際組織, 並授權其繼續研究特異區.\n
+			\n表面上他們作為西方的生態學家繼承了原組織的老任務, 繼續他們的宣言, 爲了科學利益研究特異區的奇蹟.\n
+			\n事實上, 烏克蘭政府懷疑他們對特異區的起源有著狂熱的出於政治動機的目的. 毋庸置疑的是, 烏克蘭安全域性不想把這些知識落入壞人手裡, 所以正是這個原因, 所有聯合國國際科研團隊成員都都沒有正式被允許進入特異區.\n
+			\n因此, 在特異區活動的所有聯合國國際科研團隊成員會盡可能低調行事, 也包括會處理掉所有可能的目擊證人. 不管他們的實際目的是什麼, 他們的特工絕不是手無寸鐵, 他們準備好了最先進的武器和現代化的作戰戰術來"獲取知識".\n
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 不明\n• 服裝顏色: 白色, 綠色和棕色
+		</text>
+	</string>
+	
+	<string id="encyclopedia_factions_renegade">
+		<text>叛節者</text>
+	</string>
+	<string id="encyclopedia_factions_renegade_text">
+		<text>
+			%c[pda_white]叛節者%c[ui_gray_1] 是特異區里最卑鄙無恥的潛行者.\n
+			\n%c[pda_green]情報%c[ui_gray_1]\n
+			\n即使用土匪的標準來衡量他們, 他們依舊是一群道德更敗壞的人, 據說他們的成員非常的殘暴, 卑鄙, 懦弱, 不靠譜或者是口是心非, 以至於沒有任何陣營願意公開與他們結盟.\n
+			\n他們唯一遵守的法則就是武力至上, 在特異區的邊緣掠奪弱者, 通常目標都是那些太年輕, 沒有經驗, 沒機會反抗他們的人.\n
+			\n在無數敵人的驅趕下, 他們被迫進入了大沼澤, 在面對晴空的時候,他們的求生欲迫使這群豺狼抱團組成了自己的陣營.
+			\n%c[pda_blue]統計資料%c[ui_gray_1]\n
+			\n• 領袖: 不明\n• 總部: 不明\n• 服裝顏色: 多種\n
+		</text>
+	</string>
+
+	<string id="encyclopedia_factions_zombified">
+		<text>殭屍</text>
+	</string>
+	<string id="encyclopedia_factions_zombified_text">
+		<text>
+			%c[pda_white]殭屍%c[ui_gray_1] 潛行者是那些收到強靈能場影響的人, 他們沒有自己的意識, 但是和黑石中立.\n
+			\n%c[pda_green]情報%c[ui_gray_1]
+			\n這些生物缺乏大腦的高級功能, 只能依靠殘留的反射和技能, 不能有意識的活動, 對疼痛有很高的閾值.\n
+			\n變成殭屍的潛行者的身心健康程度會隨著時間的推移而惡化, 最終完全失去人性, 成為被稱作喪屍的怪物.\n
+			\n和怪物不同的是, 殭屍潛行者會使用武器和工具, 且經常成群結隊的一起行動, 或者被黑石士兵聚集到一起.\n
+			\n%c[pda_green]統計資料%c[ui_gray_1]\n
+			\n• 預防辦法/延緩殭屍化: 復甦藥, 以及具有靈能防護的頭盔\n• 導致殭屍化的常見原因: 能量風暴, "焦腦器", "神蹟裝置", 攝魂怪,\n• 服裝顏色: 多種\n
+		</text>
+	</string>
+</string_table>

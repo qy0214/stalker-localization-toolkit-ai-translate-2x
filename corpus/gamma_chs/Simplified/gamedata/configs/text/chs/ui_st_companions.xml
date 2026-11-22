@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_companion_order_tooFar">
+		<text>我的小队听不见我. 我需要靠近他们或者通过PDA联系他们.</text>
+	</string>
+	<string id="st_no_companions">
+		<text>周围没有同伴</text>
+	</string>
+	<string id="st_set_companion_to_attack_state">
+		<text>随意开火</text>
+	</string>
+	<string id="st_set_companion_to_ignore_combat_state">
+		<text>忽略战斗</text>
+	</string>
+	<string id="st_set_companion_to_attack_only_actor_combat_enemy_state">
+		<text>忽略战斗, 帮帮我</text>
+	</string>
+	<string id="st_set_companion_to_wait_state">
+		<text>在这等着</text>
+	</string>
+	<string id="st_set_companion_to_follow_state">
+		<text>跟着我</text>
+	</string>
+	<string id="st_set_companion_to_patrol_state">
+		<text>这个区域巡逻</text>
+	</string>
+	<string id="st_move_to_point">
+		<text>移到点上</text>
+	</string>
+	<string id="st_set_companion_to_loot_items_and_corpses">
+		<text>搜刮尸体</text>
+	</string>
+	<string id="st_set_companion_to_loot_nothing">
+		<text>不准搜刮</text>
+	</string>
+	<string id="st_set_companion_to_stay_far">
+		<text>保持距离 远</text>
+	</string>
+	<string id="st_set_companion_to_stay_close">
+		<text>保持距离 近</text>
+	</string>
+	<string id="st_set_companion_to_stealth_substate">
+		<text>潜行</text>
+	</string>
+	<string id="st_set_companion_to_default_substate">
+		<text>停止潜行</text>
+	</string>
+	<string id="st_set_companion_to_trade">
+		<text>交换物品</text>
+	</string>
+	
+</string_table>

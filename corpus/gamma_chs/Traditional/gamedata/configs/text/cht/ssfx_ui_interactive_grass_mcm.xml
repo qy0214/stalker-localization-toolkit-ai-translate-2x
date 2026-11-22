@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+- @ Version: SCREEN SPACE SHADERS - UPDATE 15
+- @ Description: Interactive Grass - MCM strings
+- @ Author: https://www.moddb.com/members/ascii1457
+- @ Mod: https://www.moddb.com/mods/stalker-anomaly/addons/screen-space-shaders
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<string_table>
+
+	<!-- Button -->
+	<string id="ui_mcm_ssfx_module_inter_grass">
+		<text>動態互動草地</text>
+	</string>
+
+	<!-- Interactive Grass Settings -->
+	<string id="ui_mcm_ssfx_module_inter_grass_title">
+		<text>動態草地設定</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_mcm">
+		<text>啟用</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_mcm_desc">
+		<text>[ 需重新執行遊戲 ] 啟用/禁用動態草地</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_max_entities_mcm">
+		<text>最大互動數量</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_max_entities_mcm_desc">
+		<text>[ 需重新執行遊戲 ] 最大互動模擬的數量, 取值較大會影響遊戲效能</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_max_distance_mcm">
+		<text>最大互動距離</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_max_distance_mcm_desc">
+		<text>渲染草地互動的最大距離</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_player_mcm">
+		<text>玩家互動草地</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_player_mcm_desc">
+		<text>啟用/禁用玩家與草地的互動效果</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_mutants_mcm">
+		<text>怪物的衝擊波效果</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_enable_mutants_mcm_desc">
+		<text>讓變異巨獸和變異矮人的衝擊波影響草地</text>
+	</string>																
+	<string id="ui_mcm_ssfx_module_inter_grass_radius_mcm">
+		<text>彎曲半徑</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_radius_mcm_desc">
+		<text>彎曲效果的半徑</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_horizontal_str_mcm">
+		<text>橫向強度</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_horizontal_str_mcm_desc">
+		<text>橫向變形強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_vertical_str_mcm">
+		<text>垂直強度</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_vertical_str_mcm_desc">
+		<text>垂直變形強度</text>
+	</string>
+	<string id="ui_mcm_ssfx_module_inter_grass_explosions_str_mcm">
+		<text>衝擊形變強度</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_explosions_str_mcm_desc">
+		<text>怪物衝擊波效果影響草地形變的強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_explosions_speed_mcm">
+		<text>衝擊形變速度</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_explosions_speed_mcm_desc">
+		<text>衝擊波形變效果擴散的速度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_shooting_str_mcm">
+		<text>射擊形變強度</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_shooting_str_mcm_desc">
+		<text>槍械射擊時造成的草地形變強度</text>
+	</string>
+
+	<string id="ui_mcm_ssfx_module_inter_grass_shooting_range_mcm">
+		<text>射擊形變距離</text>
+	</string>
+	
+	<string id="ui_mcm_ssfx_module_inter_grass_shooting_range_mcm_desc">
+		<text>槍械射擊時造成的草地形變影響距離</text>
+	</string>														  
+</string_table>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="name_army_0">
+		<text>安德列</text>
+	</string>
+	<string id="name_private_0">
+		<text>列兵</text>
+	</string>
+	<string id="name_private_1">
+		<text>高级列兵</text>
+	</string>
+	<string id="name_stalker_0">
+		<text>亚历克斯</text>
+	</string>
+	<string id="name_stalker_1">
+		<text>安东</text>
+	</string>
+	<string id="name_stalker_2">
+		<text>阿特姆</text>
+	</string>
+	<string id="name_stalker_3">
+		<text>亚瑟</text>
+	</string>
+	<string id="name_stalker_4">
+		<text>阿尔乔姆</text>
+	</string>
+	<string id="name_stalker_5">
+		<text>博格丹</text>
+	</string>
+	<string id="name_stalker_6">
+		<text>博丹</text>
+	</string>
+	<string id="name_stalker_7">
+		<text>博尔卡</text>
+	</string>
+	<string id="name_stalker_8">
+		<text>博亚</text>
+	</string>
+	<string id="name_stalker_9">
+		<text>达尼亚</text>
+	</string>
+	<string id="name_stalker_10">
+		<text>丹科</text>
+	</string>
+	<string id="name_stalker_11">
+		<text>丹亚</text>
+	</string>
+	<string id="name_stalker_12">
+		<text>邓尼斯</text>
+	</string>
+	<string id="name_stalker_13">
+		<text>邓尼斯</text>
+	</string>
+	<string id="name_stalker_14">
+		<text>迪马</text>
+	</string>
+	<string id="name_stalker_15">
+		<text>迪姆卡</text>
+	</string>
+	<string id="name_stalker_16">
+		<text>迪米特里</text>
+	</string>
+	<string id="name_stalker_17">
+		<text>艾迪克</text>
+	</string>
+	<string id="name_stalker_18">
+		<text>艾格尔</text>
+	</string>
+	<string id="name_stalker_19">
+		<text>埃戈尔卡</text>
+	</string>
+	<string id="name_stalker_20">
+		<text>费德卡</text>
+	</string>
+	<string id="name_stalker_21">
+		<text>费德</text>
+	</string>
+	<string id="name_stalker_22">
+		<text>费德亚</text>
+	</string>
+	<string id="name_stalker_23">
+		<text>菲尔卡</text>
+	</string>
+	<string id="name_stalker_24">
+		<text>菲尔亚</text>
+	</string>
+	<string id="name_stalker_25">
+		<text>费马</text>
+	</string>
+	<string id="name_stalker_26">
+		<text>费奥多尔</text>
+	</string>
+	<string id="name_stalker_27">
+		<text>詹纳</text>
+	</string>
+	<string id="name_stalker_28">
+		<text>詹卡</text>
+	</string>
+	<string id="name_stalker_29">
+		<text>格奥尔格</text>
+	</string>
+	<string id="name_stalker_30">
+		<text>格奥尔吉</text>
+	</string>
+	<string id="name_stalker_31">
+		<text>吉尔曼</text>
+	</string>
+	<string id="name_stalker_32">
+		<text>格列布</text>
+	</string>
+	<string id="name_stalker_33">
+		<text>郭沙</text>
+	</string>
+	<string id="name_stalker_34">
+		<text>格里沙</text>
+	</string>
+	<string id="name_stalker_35">
+		<text>格里什卡</text>
+	</string>
+	<string id="name_stalker_36">
+		<text>格里什科</text>
+	</string>
+	<string id="name_stalker_37">
+		<text>伊格雷克</text>
+	</string>
+	<string id="name_stalker_38">
+		<text>伊戈利亚</text>
+	</string>
+	<string id="name_stalker_39">
+		<text>伊尔亚</text>
+	</string>
+	<string id="name_stalker_40">
+		<text>基留卡</text>
+	</string>
+	<string id="name_stalker_41">
+		<text>科尔亚</text>
+	</string>
+	<string id="name_stalker_42">
+		<text>科斯迪克</text>
+	</string>
+	<string id="name_stalker_43">
+		<text>科斯特亚</text>
+	</string>
+	<string id="name_stalker_44">
+		<text>伦卡</text>
+	</string>
+	<string id="name_stalker_45">
+		<text>伦亚</text>
+	</string>
+	<string id="name_stalker_46">
+		<text>莱什卡</text>
+	</string>
+	<string id="name_stalker_47">
+		<text>利瓦</text>
+	</string>
+	<string id="name_stalker_48">
+		<text>里昂卡</text>
+	</string>
+	<string id="name_stalker_49">
+		<text>里昂亚</text>
+	</string>
+	<string id="name_stalker_50">
+		<text>里昂斯卡</text>
+	</string>
+	<string id="name_stalker_51">
+		<text>里奥瓦</text>
+	</string>
+	<string id="name_stalker_52">
+		<text>马克</text>
+	</string>
+	<string id="name_stalker_53">
+		<text>马特维</text>
+	</string>
+	<string id="name_stalker_54">
+		<text>麦特维</text>
+	</string>
+	<string id="name_stalker_55">
+		<text>麦克斯</text>
+	</string>
+	<string id="name_stalker_56">
+		<text>米沙</text>
+	</string>
+	<string id="name_stalker_57">
+		<text>米什卡</text>
+	</string>
+	<string id="name_stalker_58">
+		<text>米斯卡</text>
+	</string>
+	<string id="name_stalker_59">
+		<text>米特亚</text>
+	</string>
+	<string id="name_stalker_60">
+		<text>尼克</text>
+	</string>
+	<string id="name_stalker_61">
+		<text>尼基塔</text>
+	</string>
+	<string id="name_stalker_62">
+		<text>奥列格</text>
+	</string>
+	<string id="name_stalker_63">
+		<text>帕沙</text>
+	</string>
+	<string id="name_stalker_64">
+		<text>帕什卡</text>
+	</string>
+	<string id="name_stalker_65">
+		<text>派特卡</text>
+	</string>
+	<string id="name_stalker_66">
+		<text>皮处</text>
+	</string>
+	<string id="name_stalker_67">
+		<text>皮特亚</text>
+	</string>
+	<string id="name_stalker_68">
+		<text>洛马</text>
+	</string>
+	<string id="name_stalker_69">
+		<text>罗姆卡</text>
+	</string>
+	<string id="name_stalker_70">
+		<text>罗斯里克</text>
+	</string>
+	<string id="name_stalker_71">
+		<text>鲁斯</text>
+	</string>
+	<string id="name_stalker_72">
+		<text>鲁斯克</text>
+	</string>
+	<string id="name_stalker_73">
+		<text>森内克</text>
+	</string>
+	<string id="name_stalker_74">
+		<text>森亚</text>
+	</string>
+	<string id="name_stalker_75">
+		<text>森辽克</text>
+	</string>
+	<string id="name_stalker_76">
+		<text>萨瓦</text>
+	</string>
+	<string id="name_stalker_77">
+		<text>萨夫瓦</text>
+	</string>
+	<string id="name_stalker_78">
+		<text>瑟马</text>
+	</string>
+	<string id="name_stalker_79">
+		<text>赛米杨</text>
+	</string>
+	<string id="name_stalker_80">
+		<text>赛亚</text>
+	</string>
+	<string id="name_stalker_81">
+		<text>赛雷加</text>
+	</string>
+	<string id="name_stalker_82">
+		<text>赛尔亚加</text>
+	</string>
+	<string id="name_stalker_83">
+		<text>赛瓦</text>
+	</string>
+	<string id="name_stalker_84">
+		<text>赛夫卡</text>
+	</string>
+	<string id="name_stalker_85">
+		<text>舒里克</text>
+	</string>
+	<string id="name_stalker_86">
+		<text>斯拉瓦</text>
+	</string>
+	<string id="name_stalker_87">
+		<text>斯拉维克</text>
+	</string>
+	<string id="name_stalker_88">
+		<text>斯特帕</text>
+	</string>
+	<string id="name_stalker_89">
+		<text>斯特潘</text>
+	</string>
+	<string id="name_stalker_90">
+		<text>西马</text>
+	</string>
+	<string id="name_stalker_91">
+		<text>提马</text>
+	</string>
+	<string id="name_stalker_92">
+		<text>提姆卡</text>
+	</string>
+	<string id="name_stalker_93">
+		<text>托里克</text>
+	</string>
+	<string id="name_stalker_94">
+		<text>托什卡</text>
+	</string>
+	<string id="name_stalker_95">
+		<text>瓦迪克</text>
+	</string>
+	<string id="name_stalker_96">
+		<text>瓦迪姆</text>
+	</string>
+	<string id="name_stalker_97">
+		<text>瓦达亚</text>
+	</string>
+	<string id="name_stalker_98">
+		<text>瓦来拉</text>
+	</string>
+	<string id="name_stalker_99">
+		<text>瓦里克</text>
+	</string>
+	<string id="name_stalker_100">
+		<text>万卡</text>
+	</string>
+	<string id="name_stalker_101">
+		<text>万亚</text>
+	</string>
+	<string id="name_stalker_102">
+		<text>瓦斯卡</text>
+	</string>
+	<string id="name_stalker_103">
+		<text>瓦斯科</text>
+	</string>
+	<string id="name_stalker_104">
+		<text>瓦斯亚</text>
+	</string>
+	<string id="name_stalker_105">
+		<text>文亚</text>
+	</string>
+	<string id="name_stalker_106">
+		<text>维托里克</text>
+	</string>
+	<string id="name_stalker_107">
+		<text>维特卡</text>
+	</string>
+	<string id="name_stalker_108">
+		<text>维特亚</text>
+	</string>
+	<string id="name_stalker_109">
+		<text>沃拉德</text>
+	</string>
+	<string id="name_stalker_110">
+		<text>沃瓦</text>
+	</string>
+	<string id="name_stalker_111">
+		<text>沃夫卡</text>
+	</string>
+	<string id="name_stalker_112">
+		<text>雅拉</text>
+	</string>
+	<string id="name_stalker_113">
+		<text>雅里克</text>
+	</string>
+	<string id="name_stalker_114">
+		<text>雅沙</text>
+	</string>
+	<string id="name_stalker_115">
+		<text>雅什卡</text>
+	</string>
+	<string id="name_stalker_116">
+		<text>尤里克</text>
+	</string>
+	<string id="name_stalker_117">
+		<text>尤尔卡</text>
+	</string>
+	<string id="name_stalker_118">
+		<text>尤尔科</text>
+	</string>
+	<string id="name_stalker_119">
+		<text>尤里</text>
+	</string>
+	<string id="name_stalker_120">
+		<text>真卡</text>
+	</string>
+	<string id="name_stalker_121">
+		<text>真亚</text>
+	</string>
+	<string id="name_stalker_122">
+		<text>卓瓦</text>
+	</string>
+	<string id="name_bandit_0">
+		<text>安德留哈</text>
+	</string>
+	<string id="name_bandit_1">
+		<text>安德里卡</text>
+	</string>
+	<string id="name_bandit_2">
+		<text>阿尔卡沙</text>
+	</string>
+	<string id="name_bandit_3">
+		<text>博德亚</text>
+	</string>
+	<string id="name_bandit_4">
+		<text>博尔严</text>
+	</string>
+	<string id="name_bandit_5">
+		<text>迪蒙</text>
+	</string>
+	<string id="name_bandit_6">
+		<text>迪姆哈</text>
+	</string>
+	<string id="name_bandit_7">
+		<text>迪姆克哈</text>
+	</string>
+	<string id="name_bandit_8">
+		<text>菲卡</text>
+	</string>
+	<string id="name_bandit_9">
+		<text>费姆卡</text>
+	</string>
+	<string id="name_bandit_10">
+		<text>格里什卡</text>
+	</string>
+	<string id="name_bandit_11">
+		<text>格里什科</text>
+	</string>
+	<string id="name_bandit_12">
+		<text>伊尔尤哈</text>
+	</string>
+	<string id="name_bandit_13">
+		<text>伊尤哈卡</text>
+	</string>
+	<string id="name_bandit_14">
+		<text>乔瑟夫</text>
+	</string>
+	<string id="name_bandit_15">
+		<text>尼古拉斯</text>
+	</string>
+	<string id="name_bandit_16">
+		<text>莱卡哈</text>
+	</string>
+	<string id="name_bandit_17">
+		<text>里昂哈</text>
+	</string>
+	<string id="name_bandit_18">
+		<text>米哈</text>
+	</string>
+	<string id="name_bandit_19">
+		<text>米哈尔</text>
+	</string>
+	<string id="name_bandit_20">
+		<text>米哈斯</text>
+	</string>
+	<string id="name_bandit_21">
+		<text>米卡</text>
+	</string>
+	<string id="name_bandit_22">
+		<text>米卡尔</text>
+	</string>
+	<string id="name_bandit_23">
+		<text>米卡斯</text>
+	</string>
+	<string id="name_bandit_24">
+		<text>米特卡</text>
+	</string>
+	<string id="name_bandit_25">
+		<text>帕夫卢哈</text>
+	</string>
+	<string id="name_bandit_26">
+		<text>帕夫鲁卡</text>
+	</string>
+	<string id="name_bandit_27">
+		<text>皮处哈</text>
+	</string>
+	<string id="name_bandit_28">
+		<text>森里克</text>
+	</string>
+	<string id="name_bandit_29">
+		<text>什辽克</text>
+	</string>
+	<string id="name_bandit_30">
+		<text>赛斯胡克</text>
+	</string>
+	<string id="name_bandit_31">
+		<text>舒里克</text>
+	</string>
+	<string id="name_bandit_32">
+		<text>斯特普卡</text>
+	</string>
+	<string id="name_bandit_33">
+		<text>斯特普哈</text>
+	</string>
+	<string id="name_bandit_34">
+		<text>斯特普克哈</text>
+	</string>
+	<string id="name_bandit_35">
+		<text>斯泰亚卡</text>
+	</string>
+	<string id="name_bandit_36">
+		<text>泰姆卡</text>
+	</string>
+	<string id="name_bandit_37">
+		<text>提莫哈</text>
+	</string>
+	<string id="name_bandit_38">
+		<text>提莫克哈</text>
+	</string>
+	<string id="name_bandit_39">
+		<text>托哈</text>
+	</string>
+	<string id="name_bandit_40">
+		<text>托克哈</text>
+	</string>
+	<string id="name_bandit_41">
+		<text>托雷</text>
+	</string>
+	<string id="name_bandit_42">
+		<text>托尔严</text>
+	</string>
+	<string id="name_bandit_43">
+		<text>汤姆卡</text>
+	</string>
+	<string id="name_bandit_44">
+		<text>瓦迪亚</text>
+	</string>
+	<string id="name_bandit_45">
+		<text>瓦赛克</text>
+	</string>
+	<string id="name_bandit_46">
+		<text>瓦斯言</text>
+	</string>
+	<string id="name_bandit_47">
+		<text>瓦泰尔</text>
+	</string>
+	<string id="name_bandit_48">
+		<text>维提哈</text>
+	</string>
+	<string id="name_bandit_49">
+		<text>维提克哈</text>
+	</string>
+	<string id="name_bandit_50">
+		<text>沃万</text>
+	</string>
+	<string id="name_bandit_51">
+		<text>雅什卡</text>
+	</string>
+	<string id="name_bandit_52">
+		<text>尤拉斯</text>
+	</string>
+	<string id="name_bandit_53">
+		<text>泽卡</text>
+	</string>
+	<string id="name_bandit_54">
+		<text>卓尔卡</text>
+	</string>
+	<string id="name_senior_sergeant_0">
+		<text>军士长</text>
+	</string>
+	<string id="name_senior_sergeant_1">
+		<text>上士</text>
+	</string>
+	<string id="name_sergeant_0">
+		<text>中士</text>
+	</string>
+	<string id="name_sergeant_1">
+		<text>下士</text>
+	</string>
+	<string id="name_lieutenant_0">
+		<text>少尉</text>
+	</string>
+	<string id="name_lieutenant_1">
+		<text>中尉</text>
+	</string>
+	<string id="name_lieutenant_2">
+		<text>上尉</text>
+	</string>
+	<string id="name_science_0">
+		<text>艾历克斯</text>
+	</string>
+	<string id="name_science_1">
+		<text>亚历山大</text>
+	</string>
+	<string id="name_science_2">
+		<text>阿列克谢</text>
+	</string>
+	<string id="name_science_3">
+		<text>阿列克西</text>
+	</string>
+	<string id="name_science_4">
+		<text>安纳托利</text>
+	</string>
+	<string id="name_science_5">
+		<text>安德烈</text>
+	</string>
+	<string id="name_science_6">
+		<text>安德雷</text>
+	</string>
+	<string id="name_science_7">
+		<text>安东</text>
+	</string>
+	<string id="name_science_8">
+		<text>波丹</text>
+	</string>
+	<string id="name_science_9">
+		<text>波赫丹</text>
+	</string>
+	<string id="name_science_10">
+		<text>德米特里</text>
+	</string>
+	<string id="name_science_11">
+		<text>伊万</text>
+	</string>
+	<string id="name_science_12">
+		<text>康斯坦丁</text>
+	</string>
+	<string id="name_science_13">
+		<text>奥列格</text>
+	</string>
+	<string id="name_science_14">
+		<text>罗曼</text>
+	</string>
+	<string id="name_science_15">
+		<text>谢尔盖</text>
+	</string>
+	<string id="name_science_16">
+		<text>谢尔基</text>
+	</string>
+	<string id="name_science_17">
+		<text>文尼明</text>
+	</string>
+	<string id="name_science_18">
+		<text>维特里</text>
+	</string>
+	<string id="name_science_19">
+		<text>弗拉基米尔</text>
+	</string>
+	<string id="name_science_20">
+		<text>尤里</text>
+	</string>
+	<string id="name_science_21">
+		<text>尤利</text>
+	</string>
+	<string id="name_captain_0">
+		<text>上尉</text>
+	</string>
+</string_table>

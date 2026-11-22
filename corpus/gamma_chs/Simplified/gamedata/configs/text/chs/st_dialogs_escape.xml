@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Sidrovish -->
+	<string id="esc_2_12_stalker_trader_start_dialog_1">
+		<text>你就是那个新来的? 我以前见过你吗? 怎么感觉有点面熟... \n我是这个营地的管理者, 我欢迎所有独行者在这里休息, 只要别惹麻烦就行, 另外, 小心南边的军队, 别去那里耍花招, 他们的长官是看在我的面子上才不来这里惹事, 但你要是去找死, 那就是你自己的事了...</text>
+	</string>
+	<string id="esc_2_12_stalker_trader_start_dialog_2">
+		<text>嗯? 你又来了? 这次需要什么?</text>
+	</string>
+	<string id="esc_2_12_stalker_trader_start_dialog_esc_m_trader_task_1_complete">
+		<text>事情办妥了? 很好,这是你的报酬</text>
+	</string>
+	<string id="esc_2_12_stalker_trader_start_dialog_esc_m_trader_task_2_complete">
+		<text>你小子还挺能干的, 这是你的报酬, 继续努力吧!</text>
+	</string>
+	
+	<string id="devushka_3_quest_0">
+		<text>老西! 这是你让希普找的神器, 拿去吧!</text>
+	</string>
+	<string id="devushka_3_quest_1">
+		<text>嗯? 希普让你来的? 她已经很久没有这样相信过别人了, 呵呵呵... 拿去吧, 这是希普的报酬, 跟她说一声, 她不是一直想要出人头地吗? 机会来了, 罗斯托克的酒保那里有一件重要货物需要运到北方, 为了这丫头, 我欠了些人情, 把这个活抢下来了, 让她快去找酒保吧!</text>
+	</string>
+	<string id="devushka_3_quest_2">
+		<text>谢谢! 我会告诉她的, 不过, 我不知道她有没有做好离开这里的心理准备...</text>
+	</string>
+	<string id="devushka_3_quest_3">
+		<text>放心吧, 她还是个孩子时就来到特异区了, 当时她是随着自由军到处奔波, 但后来不知为何离开了军事仓库...
+		\n从那之后, 她就一直像个菜鸟一样呆在我这里这么多年, 真是浪费时间啊, 我都看不下去了, 酒保那个老家伙跟我有交情, 这是她重新成长的好机会, 你一定要劝劝她</text>
+	</string>
+	
+	<string id="st_esc_m_trader_life_ask">
+		<text>老西, 最近生意怎么样?</text>
+	</string>
+	<string id="st_esc_m_trader_life_1">
+		<text>还行吧, 天气要变冷了, 最近东方某个神秘国度那边来了许多订单, 他们对变异犬的皮毛很感兴趣, 如果你想让那些美女们在寒冷的季节能穿上暖和的围脖, 那就把皮毛卖给我吧, 别理那些生态学家, 那些卵蛋头们嘴上说着科学, 心里都是生意</text>
+	</string>
+	<string id="st_esc_m_trader_life_2">
+		<text>唉, 虽然我不想说这个, 但你以为没用的垃圾, 在某些人眼里都是好东西, 最近我接到了很多"吸血怪牙齿"的订单, 你没听错, 也许有人认为那玩意会给他们带来好运, 不过无所谓了, 这种傻瓜越多我越开心, 有需求才有市场, 对吧?</text>
+	</string>
+	<string id="st_esc_m_trader_life_3">
+		<text>生意还好, 谢谢你的关心! 你知道吗, 有时候你根本想不到那些有求于你的人都是干嘛的, 前几天我交付了一个碎灵晶的订单, 后来我打听了一下才知道, 买家是个珠宝商, 哈哈! 不知道他用那玩意做什么, 也许那个神器被打磨成了闪亮的饰物, 戴到了某个女士的脖子上... 唉, 算了, 只要客户开心就好, 只是不知道某位女士现在的精神状况如何...</text>
+	</string>
+	<string id="st_esc_m_trader_life_4">
+		<text>怎么样? 你从我的表情看不出来吗? 妈的, 即使像我这样八面玲珑的人, 没想到也会被摆一道! 有个混蛋到处以我的名义在外面坑蒙拐骗, 他去找其他的潜行者, 说他是我老西的销售代表! 利用我的名声卖东西不说, 卖的还都是假货! 什么缺零件的武器啦, 过期的罐头食品啦... 最可恶的是他卖的防弹板上还留着枪眼!
+		\n昨天我的客户找到这里向我抱怨, 以为这都是我的主意, 妈的! ...算了, 反正我已经找人去给他收尸了, 我别无选择, 只可惜我没能亲眼看到他的屁股开花的样子</text>
+	</string>
+	<string id="st_esc_m_trader_life_5">
+		<text>生意嘛, 我的生意其实很大程度上被这附近的军队活动所影响, 虽然他们在南边的封锁很严, 但时不时还是会有一些逃兵加入到独行者这边, 可能是士气低落, 军心涣散所致吧, 在这些逃兵里面, 大部分都是些新兵蛋子, 但也有一些人其实在体制里面混得不错, 只不过是受不了军中日益严重的官僚主义而已...</text>
+	</string>
+	<string id="st_esc_m_trader_life_6">
+		<text>嗯? 看来你对我的商业模式很好奇? 怎么? 你也想当个中间商什么的?
+		\n呵呵, 你首先要有足够的人脉和信誉, 具有竞争力的价格, 还要有自己的供货来源, 不然你只能按我的规矩来...
+		\n并且, 我目前对培养人才没什么兴趣, 在铁路北面的洛里斯已经够麻烦的了! 我现在需要的是更多的猎手或杀手, 更多跑腿的, 和更多能提供原材料的探索者! 而不是更多跟我竞争的人</text>
+	</string>
+	<string id="st_esc_m_trader_life_7">
+		<text>不咋地, 知道为什么吗? 告诉你吧, 没有什么比土匪更影响生意的了! 这帮孙子! 把我的快递员给绑了, 还敲诈到我的头上! 我的老客户们已经开始对我有意见了!
+		\n我西多洛维奇不是什么英雄, 但在特异区欠我人情的人到处都是, 就连匪王都得给我几分面子! 但他似乎在人事管理方面不是很在行, 竟然把他的狗放到我的地头上来找事, 如果我不给他们点颜色, 我老西以后在特异区就没法混了!</text>
+	</string>
+	<string id="st_esc_m_trader_life_8">
+		<text>生意还行, 你要知道在这里赚钱的最好办法, 就是尽可能多地疏通关系, 看看那些军队就知道, 按照规矩的话, 整个菜鸟村的存在都是非法的, 然而我却坐在这里吹着风扇吃着肉, 离军队南边检查站只有几步之遥, 你没想过为什么吗?
+		\n其实很简单, 我给他们提供情报, 给他们提供罕见的生物样本, 他们某些长官受到提拔是因为我的帮助, 我手上有他们的把柄, 我知道他们的秘密, 如果他们惹到我头上, 那么自己也翻不了身, 这就是菜鸟村一直存在的原因, 这就是我的本事 - 化敌为友, 只要手段用的好, 就根本不需要武力
+		\n但是这一条对那些二百五不适用, 比如... 那些不但不要命, 脑子还缺根弦的土匪</text>
+	</string>
+	<string id="st_esc_m_trader_life_9">
+		<text>生意很好, 我这里可以为任何新手提供庇护所, 必需品和一些工作, 在这南边附近有一个军队的哨所, 但我和他们的头头已经达成协议了, 他们一般不会来打扰这里的独行者们, 不过我还是请你别贱不兮兮的非要去惹他们, 懂吗? 这不是金钱能办到的事情, 是靠我西多洛维奇的命, 记住, 你只要别在这里惹事, 那你就不会有事</text>
+	</string>
+	<string id="st_esc_m_trader_life_end">
+		<text>今天没什么好说的了, 烦别人去吧</text>
+	</string>
+
+
+<!-- Wolf -->
+	<string id="esc_2_12_stalker_wolf_start_dialog_1">
+		<text>嗯, 什么事?</text>
+	</string>
+	
+	<string id="wolf_st_1">
+		<text>你只需要知道, 我是这里的老大就行,  我的任务就是保证这些初来乍到的菜鸟们不会在特异区的第一天就被怪物吞掉, 如果你想学两手, 可以去篝火那边找法纳特...</text>
+	</string>
+	
+<!-- Fanatic -->
+	<string id="esc_2_12_stalker_fanat_start_dialog_1">
+		<text>干嘛?</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_start_dialog_esc_m_trader_task_2">
+		<text>呃... 你这里有事要办?</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_about_esc_m_trader_task_2_0">
+		<text>唉, 是啊, 土匪们又来霸占着停车场了, 西多洛维奇说你可以帮我摆平他们</text>
+	</string>
+	<string id="esc_2_12_stalker_fanat_about_esc_m_trader_task_2_1">
+		<text>好吧, 那就帮帮你, 菜鸟们确实需要一些额外照顾</text>
+	</string>
+	
+	<string id="fanatic_st_1">
+		<text>我是"疯狗", 呵, 他们都这样叫我, 我算是沃夫的继任者吧, 毕竟我把大部分时间都花在了训练新手上, 那些家伙们简直菜的抠脚! 不仅不会用枪, 还总是私下到处转悠, 要么就是被怪物吞掉, 要么就是被土匪给绑了, 而这里的南边不远就有一处军事路障, 那些军人见到我们就会开枪的!
+		\n不过... 话说回来, 我确实挺享受教导别人的过程, 有一种成就感, 尤其是看到他们带着人生中第一个神器回来时那发光的眼神... 呵, 曾几何时我也是那样的菜鸟, 在特异区的日子过的还真是快啊!</text>
+	</string>
+	
+	<string id="fanat_training_start_0">
+		<text>噢... 新面孔, 你似乎也是一个新手吧? 我和沃夫是这个菜鸟村管事的, 如果你愿意的话, 我倒是可以教你两招, 怎么样? 你不会想要来到特异区里第一天就被野猪给拱死, 或是被异常点给崩上天吧?</text>
+	</string>
+	<string id="fanat_training_start_1">
+		<text>呃... 言之有理, 我确实不太想要落得那种下场</text>
+	</string>
+	<string id="fanat_training_start_2">
+		<text>你才是新手, 我玩过三部曲, 屌的一批, 谁要跟你学什么有的没的</text>
+	</string>
+	<string id="fanat_training_start_3">
+		<text>很好, 首先我会带你猎杀变异生物, 道路的另一侧是个垃圾堆, 经常有野猪啊什么的在那里转悠, 野猪的头骨很厚, 对付它们的最好的办法就是从侧面射击, 当然如果你能绕到后面打它们的屁股更好, 我们一起去吧, 如果成功的话, 晚上就可以加餐野猪肉了!
+		\n不过你最好别乱跑, 上次来了个菜鸟, 说是去打野猪, 直接把老子领到黑石基地门口, 幸亏他先死了我才跑回来...</text>
+	</string>
+	
+	<string id="fanat_training_boars_death_0">
+		<text>好险! 没想到这些野猪这么耐操, 接下来呢?</text>
+	</string>
+	<string id="fanat_training_boars_death_1">
+		<text>哈! 不要大惊小怪了, 现在用你的刀子从野猪身上找一些能吃的部分切下来, 我等着你, 搞完以后就去村子北边的异常区那里进行下一课</text>
+	</string>
+
+	<string id="fanat_training_anomaly_reached_0">
+		<text>我们到了, 现在我需要干嘛?</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_1">
+		<text>看到了么? 这个重力异常区里全是异常点, 我先前探测过, 在那中间应该有一个神器, 我交给你一些设备, 然后你去把那个神器搞到手, 任务就完成了!</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_2">
+		<text>什么设备?</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_3">
+		<text>这个, 是回声探测器, 是最基础的一种型号, 当你听到蜂鸣声时, 就说明附近肯定有神器, 蜂鸣的频率越快, 离神器也就越近, 这个基础型号无法探测出高级的神器, 但对你今天的测试应该没有什么影响</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_4">
+		<text>明白了</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_5">
+		<text>第二个东西, 是用来装神器的容器, 神器分两种, 辐射神器和异能神器, 辐射神器 - 顾名思义, 都是带辐射的, 并且大部分都同时具有正面和负面的效果, 我们所在的这个异常区中是个辐射神器, 所以必须装在这样的铅盒里, 让你免受辐射的侵害, 这种铅盒非常安全, 但在屏蔽辐射的同时也会屏蔽所有正面效果, 所以主要用来作为运输神器的工具, 如果想让神器的力量帮助自己, 又想屏蔽辐射的话, 就需要更高级的神器箱了, 以后你就会见到的, 西多洛维奇有时会出售这种东西...
+		\n至于另一种异能神器的话, 因为没有辐射, 所以可以直接佩戴, 但是和强大的辐射神器不同, 异能神器的能级很小, 所以戴久了效果就会渐渐消失</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_6">
+		<text>能知道这些太好了, 这个铅盒好沉... 我现在可以进去了吗?</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_7">
+		<text>别急! 你的护甲还不能完全抵抗这里的辐射, 所以这瓶伏特加你也得拿着, 在异常区呆久了你的屁股会发绿光的, 而这玩意可以帮你清洁循环系统... 呃, 我也不知道是什么科学原理, 反正大家都这么干</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_8">
+		<text>我刚好想喝几口来着... 接下来还有要注意的吗?</text>
+	</string>
+	<string id="fanat_training_anomaly_reached_9">
+		<text>还有螺栓! 千万不要忘了这个东西, 很多异常点都会对小金属块产生反应, 把这个往前丢出去, 如果它静静的落在了地上, 那就表示它轨迹所经过的地方是安全的...
+		\n就这些了, 去吧! 噢对了! 不要管里面那个面包! 它已经不再是普通的面包了!</text>
+	</string>
+
+	<string id="fanat_training_artefact_taken_1">
+		<text>我拿到神器了! ...呸! 还吃进去一点辐射尘</text>
+	</string>
+	<string id="fanat_training_artefact_taken_2">
+		<text>哈哈, 很好... 我能看出你终将成为一名经验丰富的潜行者, 我们回菜鸟村吧! 然后继续你的新手训练</text>
+	</string>
+
+	<string id="fanat_training_back_to_village_1">
+		<text>刚才那个异常区的辐射有点猛...</text>
+	</string>
+	<string id="fanat_training_back_to_village_2">
+		<text>没事, 抽根烟就行... 放下背包休息一会吧, 等你准备好了, 我再给你新的任务</text>
+	</string>
+
+	<string id="fanat_training_stash_search_0">
+		<text>我准备好了, 下一步是什么?</text>
+	</string>
+	<string id="fanat_training_stash_search_1">
+		<text>下一步, 也是在特异区生存最重要的一步 - 找到别人的秘密... 哈哈! 其实很多潜行者都会到处藏东西, 而拥有一双善于搜寻的眼睛, 是每个潜行者的必修功课之一...
+		\n我已经提前在村子里藏好了一件礼物, 找到的话就是你的了, 给你的提示是: 破房顶掏鸟窝</text>
+	</string>
+
+	<string id="fanat_training_stash_found_0">
+		<text>找到了... 谢谢你的"鸟蛋"</text>
+	</string>
+	<!--string id="fanat_training_stash_found_1">
+		<text>Huh... I see that with your level of perception, the Zone won't be taking you so easily. Your final lesson is about to start. Take some time to prepare</text>
+	</string-->
+	<string id="fanat_training_stash_found_1">
+		<text>嗯, 这个"辟邪珠"能帮你解决一些猫猫狗狗之类的怪物, 你的天赋不错, 特异区应该不会轻易把你带走的, 好了, 这就是你的最后一课了, 你现在已经是一个合格的菜鸟了, 哈哈! 我没有什么可以教你的了! 回见!</text>
+	</string>
+	
+	<string id="fanat_training_bandit_raid_start_0">
+		<text>我们的最后一项任务是什么?</text>
+	</string>
+	<string id="fanat_training_bandit_raid_start_1">
+		<text>你会看到的,正如你所知,我们最阴险的敌人 - 他们足够怪异 - 仍然是人. 我们一直以来都在不断将停车场的土匪赶走,但他们仍然不断地卷土重来,他们已经成为了恒定的威胁,一般数量在5到7个,让我们好好去'照顾'他们</text>
+	</string>
+
+	<string id="fanat_training_bandit_raid_end_0">
+		<text>啊,我两人就战胜了这些杂种... 我们是英雄!</text>
+	</string>
+	<string id="fanat_training_bandit_raid_end_1">
+		<text>你所喊的个人英雄主义在我们这些老手间早就司空见惯了,我们回菜鸟村吧</text>
+	</string>
+
+	<string id="fanat_training_end_0">
+		<text>谢谢你保护我</text>
+	</string>
+	<string id="fanat_training_end_1">
+		<text>嗯,这就是我的平时所为. 那么,如果你不知道如何从农业研究所抵达扬塔我可以告诉你一些信息. 休息一会吧,然后... 啊,我是谁然后我教了你些什么? 你已经证明自己是一名潜行者,应当为此感到骄傲. 现在就出发. 呼吸着新鲜的辐射空气走向自由!</text>
+	</string>
+
+
+<!-- Nimble -->
+	<!-- esc_2_12_stalker_trader_mar_base_owl_stalker_trader_task_1 -->
+	<string id="esc_2_12_stalker_nimble_mar_base_owl_stalker_trader_task_1">
+		<text>有东西给我? 我一直在等斯波帮我,他能保持我与外界的联系是安全且隐秘的. 通过高级加密 - 嘿嘿,狗屎黑客. 不管你相信与否,我曾经是一个正式的晴空成员,那边有很多糟糕的事情发生,但似乎不知何故,他们仍设法团结在一起. 大多数人要么死了,要么分道扬镳. 我看不到坚持的意义,但我仍然保持着和斯波的联系. 哦,对不起,我忘了. 这是你的报酬:</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_mar_base_owl_stalker_trader_task_1_about">
+		<text>我有东西给你</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_no">
+		<text>你恐怕问错人了</text>
+	</string>
+
+	<string id="esc_2_12_stalker_nimble_about_0">
+		<text>你能回答一些问题吗?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_1">
+		<text>当然</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_1111">
+		<text>我的订单什么时候会到?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_11111">
+		<text>这取决于弄到它有多难. 它通常需要我一天的时间,有时更少</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_1114">
+		<text>说说你自己</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_11141">
+		<text>这没什么可讲的,我的过去有好事也有坏事,像大多数人一样,踏进特异区,成为土匪的人质...很久以前,我来到特异区时还说一个青年,一开始只是一个跟班,卖一些杂货,就像消辐宁,穿甲弹一类的东西,到处都能找到这种人. 后来我为西多洛维奇工作,是他救了我的命,所以我要报答他,我为他火中取栗. 因此,我逐步建立起了一个相当有用的情报网,很快,我就独立起来. 通过这些特殊的人际关系老做一些特殊的订购. 到目前为止,我总能成功躲掉生意中那些倒霉的事情,孤独的我有一种预感,我的这些好运快要用完了. 与此同时,我已经不想为了这点小钱去冒生命危险了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_1116">
+		<text>谢谢你,我明白了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_about_11161">
+		<text>乐意效劳</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_0">
+		<text>我来给我的订单收货了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_111">
+		<text>这是你的草原雄鹰. 比我想象的复杂. 某个手枪爱好者表现出了很大的兴趣,但我几乎在它上面花费了全部的时间. 看看 - 一把手工制作的枪,所有组件都以无与伦比的精度进行调整. 有没有想过一把完美的狙击手枪是什么样子? 这就是. 你还欠我2800</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_1111">
+		<text>好了,给你</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_11111">
+		<text>谢谢惠顾. 很高兴和你做生意</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_1112">
+		<text>我身上没带那么多</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_11121">
+		<text>好吧,我帮你保留这把枪一阵子. 我希望你能尽快找到钱</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_1113">
+		<text>我不想买这个</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_11131">
+		<text>如果你拒绝取货,下次我就不能依赖你了. 我必须在价格中包括风险估计,要求更高的预支</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_111311">
+		<text>不过,我还是不收这批货了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_1113111">
+		<text>好吧,随你便</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_1114">
+		<text>我会考虑的</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_11141">
+		<text>当然,这取决于你. 我来帮你拿枪</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_112">
+		<text>这是你的超高精确度草原雄鹰. 你还欠我2800</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_121">
+		<text>看"阿尔卑斯" - 这可真漂亮. 你可以放心,这把手枪是整个特异区里独一无二的. 一个独特的型号,为一个单人特殊部队非常有限委托发行. 要拿到它并不容易,我甚至不得不让我的一个海外同事参与进来. 一个扩充弹匣,特别硬的钢枪管,超强聚合物枪机. 加上只要的2800,这个宝贝就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_122">
+		<text>这是你的"阿尔卑斯"手枪,带扩展弹匣. 加上剩下的2800,这个孩子就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_131">
+		<text>看,这是"进行曲". 这支手枪属于一个叫"独狼"沃夫的雇佣兵. 一种紧凑的高口径射击机,具有短的反作用力和一个轻型螺栓. "独狼"沃夫是个十足的败类,但他知道自己的武器,这点必须承认. 他们说,他最喜欢的把戏是炸掉受害者的四肢,然后炸掉他的头 - 在它落地之前. 总之,它值2800</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_132">
+		<text>这是你的速射"进行曲"手枪. 你还欠我2800</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_211">
+		<text>这个 - "切割者",一把冲锋枪. 我就直说了,你不要在意外表. 这是全新的型号,还没有批量生产. 这是刚从军械库拿出来的原型. 设计者的目标是制造一种新一代近距离武器: 一种高口径、快速射击和精确的结合. 所以要价8000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_212">
+		<text>是的,这是"切割者",一个快速的冲锋枪. 那就要多出8000. </text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_221">
+		<text>这是一个很好的样品 - "卡宾枪手". 真正的军用猎枪. 由于平衡,无冲击系统,能够自动射击,同时提供良好的反后坐力. 加上8000,它就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_222">
+		<text>这是"卡宾枪手",一种自动猎枪. 加上8000,它就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_231">
+		<text>我想这正是你所需要的. "排除者",最新开发. 这批货本来是要运到中非的,但朋友们特别帮了我一个忙,给了我一个'样品'. 一种自动猎枪,弹匣很大,射速极快. 你的只卖8000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_232">
+		<text>自动猎枪"排除者",带扩展弹匣. 8000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_311">
+		<text>不错. 看"能量风暴",集冲锋枪和榴弹发射器于一身. 这个原型是一种常规武器的改进版本,设计用于在特异区中作战的特殊单位. 斯拉夫兄弟的技术创新最好了... 加上16000,它就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_312">
+		<text>不错. 这是"能量风暴",一个带扩展弹匣的冲锋机和榴弹发射器,额外的16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_321">
+		<text>就是这个,GP37,新一代突击步枪. 内置光学示波器,准确、可靠、方便. 它以前由一名联合国观察员拥有. 他们的小组被派到特异区去调查. 然而,情况变得更糟... 16000,步枪归你了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_322">
+		<text>就是这个,GP37,新一代突击步枪. 价格是16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_331">
+		<text>稍等片刻. 这是一款模块化FT-200M步枪,比利时枪械制造商的创意. 精确,多用途,方便右手和左手,配有光学瞄准镜和榴弹发射器. 我从一些不幸的联合国观察员那里得到的... 那就要多收16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_332">
+		<text>这是一个模块化FT-200M步枪. 那就要多收16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_411">
+		<text>这是"潮". 它是基于一种无声狙击步枪而设计的,专门用于军队对抗僵尸. "潮"的射击速度有利于阻止力量,让狙击手在不暴露位置的情况下一个接一个地干掉僵尸. 然而,很明显在死亡屏障,光是潜行者就足以阻止僵尸,所以这款步枪从未大规模生产. 这孩子是你的,再加16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_412">
+		<text>这是"潮",一种无声的狙击步枪,具有更强的拦截能力. 再增加16000,就可以享受了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_421">
+		<text>在这里. 这是SVU2-A,一种短狙击步枪,火力更强. 我从传奇的自由军卫士麦克斯那里买的. 他发誓说,整个特异区里再也没有像他这样的人了. 这是独家的,至少在这里是这样. 需要额外增加16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_422">
+		<text>屌啊. SVU2-A,一种短狙击步枪,射速增加. 需要额外增加16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_431">
+		<text>当然,就看这里的"山猫". 由当地专家手工制作. 他现在已经死了,所以不会有任何副本. 它看起来就像任何其他步枪一样,但是将它拿出来进行一些打靶练习,您会感觉到完全不同. 它完美地结合了准确性和停止力. 把剩下的16000加起来,这个孩子就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_432">
+		<text>哇,"山猫",一种精度和威力都更高的狙击步枪. 加上16000,它就是你的了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_511">
+		<text>看这里. 我把清单上的东西都拿走了 - 带头盔的CS-3a. 头盔本身没有什么特别之处,但它允许安装一个移动战术综合体,其中包括一个高质量的夜视系统和一个主动红外传感器. CS-3a护甲真的很漂亮. 对子弹和异常的出色保护确实是一个罕见的特点,在这样轻便和移动的防护服. 整件事将花费你32000美元</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_512">
+		<text>厉害. 一套CS-3a护甲和一个战术头盔. 总共32000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_611">
+		<text>专门为你准备的,SEVA防护服. 一切都和您订购的一样 - 闭路循环呼吸模块、耐热、保护电路和外表面抗腐蚀材料. 另外还有几个内置的容器作为奖励. 这是任何潜行者的必备品. 按我们说好的扔下24000就归你了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_612">
+		<text>在这里. 一件SEVA防护服. 价格是24000,就像我们说好的那样</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_711">
+		<text>这就是它,和生命一样强大的战斗外骨骼. 在特异区里,除了装甲车外,你能得到的最好的保护是免受子弹、爪子和手榴弹碎片的伤害. 但它也追赶装甲车,因为它减轻了你的重量负担,当然是在合理的范围内. 48000,毫无保留地归你所有... 呃... 我指的是电池和伺服马达</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_get_order_712">
+		<text>这就是它,和生命一样强大的战斗外骨骼. 48000它是你的</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_0">
+		<text>我想订货</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_1">
+		<text>没有问题. 你需要什么?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_11">
+		<text>一把手枪</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_111">
+		<text>当然可以. 是3500,其中我要求预付700</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_1111">
+		<text>好了,给你</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_11111">
+		<text>订单一准备好,我马上与您联系</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_1112">
+		<text>我身上没带钱</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_11121">
+		<text>好吧,等你有钱了再来</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_1113">
+		<text>你知道,我改变主意了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_11131">
+		<text>很好. 如果你最终决定下订单,我随时奉陪</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_112">
+		<text>你不是一个非常可靠的客户,所以这把手枪要花你4200. 我要求你预付1400</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_113">
+		<text>恐怕最好的手枪已经卖完了. 如果你想要普通的东西,猫头鹰就是你要找的人</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_12">
+		<text>短距离武器</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_121">
+		<text>当然了. 价格是10000,我需要提前收2000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_122">
+		<text>你拒绝拿上一份订单... 所以这个要花你12000元,我需要提前收4000元</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_123">
+		<text>唉... 你知道,我可能帮不上你. 需求太高了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_13">
+		<text>一把突击武器</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_131">
+		<text>一些高口径和快速发射能力的东西,好吧... 常规价格是20000元,预付4000. 你说呢?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_132">
+		<text>你是个难对付的家伙. 我要收您24000元,而且我需要提前支付8000元. 成交?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_133">
+		<text>现在不是时候... 军方在封锁线制造了麻烦. 前几天有人袭击了他们的前哨站,这让他们更难对付</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_14">
+		<text>一把狙击武器</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_141">
+		<text>我只花20000就能买到最好的,但你得先付我4000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_142">
+		<text>和你一起工作需要一定的风险... 我可以试着给你安排24000的订单,但你需要先付8000的定金</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_143">
+		<text>对不起,这种武器现在很难进货. 我的狙击枪联络人是... 假设他不舒服</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_15">
+		<text>一件护甲服</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_151">
+		<text>是啊,我想起来了... 合适. 费用是40000,但你得先付我8000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_152">
+		<text>是啊,我想起来了... 合适. 你拒绝接受你的上一个订单,所以价格是48000,你必须预付给我16000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_153">
+		<text>我再也没有比上次给你的更好的防护服了. 那是既独特又出类拔萃的产品</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_16">
+		<text>一件有闭路呼吸模块的防护服</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_161">
+		<text>这是一个苛刻的要求... 这可不容易,绝对不行. 我可以试着花3万买一个这样的婴儿,但我必须要求6000的首付</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_162">
+		<text>上一笔订单你让我失望了,所以这次我要三思了. 我可以试着花36000买一个这样的宝贝,但我必须要求付12000的首付</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_163">
+		<text>我竭尽全力去拿最后一个. 我想我不能再重复了</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_17">
+		<text>一件外骨骼</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_171">
+		<text>你一定考虑过这个选择了. 我可以弄到一个战斗版本,但要花你60000. 我知道很贵,但很值. 记住,我现在就需要支付其中的12000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_172">
+		<text>上一笔订单你对我不太好,所以这次要花你72000. 记住,我现在就需要支付其中的24000</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_173">
+		<text>不可能. 由于他们关闭了制造工厂,空荡荡的外骨骼通常只能在尸体上找到... 那不是我的方法</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_18">
+		<text>现在还没有</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_place_order_2">
+		<text>对不起我的商店暂时关门了. 货物运输过程出了点临时问题...</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_start_11">
+		<text>你好. 我是"巧手"尼博,人们来找我拿独一无二的武器稀有的武器,护甲,独一无二的东西 - 诸如此类的东西. 加上精英装备,最新的防护服和战斗套装的改装. 我亲自检查每个项目,所以质量能得到保证</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_start_12">
+		<text>你好. 你要下订单吗?</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_start_13">
+		<text>你好</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_start_14">
+		<text>你的订单很快会到</text>
+	</string>
+	<string id="esc_2_12_stalker_nimble_start_15">
+		<text>订单完成了. 快来取走吧</text>
+	</string>
+
+<!-- (Military Mechanic = Southern Outpost) -->
+	<string id="army_south_mechan_mlr_st_0">
+		<text>你好! 你是?</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_1">
+		<text>哦, 我在这个前哨担任技师</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_2">
+		<text>我该如何称呼你?</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_3">
+		<text>如果不是在巡逻途中就不用这么在意形式, 因为在战斗的紧急情况下, 我的名字会因为太长而来不及说出来, 哈哈, 我叫谢尔盖 赛里尤加</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_4">
+		<text>很高兴认识你, 赛里尤加</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_5">
+		<text>我也是, 如果你有什么东西需要修理, 只管告诉我</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_6">
+		<text>现在这附近有什么情况?</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_7">
+		<text>没什么值得说的, 北边一点有一个潜行者的菜鸟村, 虽然暂时相安无事, 没什么威胁, 但理论上仍然和我们是敌对的关系</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_8">
+		<text>那么... 我们驻守在这里是不是随时有可能遭受攻击?</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_9">
+		<text>当然不是, 有点脑子的人都会知道招惹军队的下场, 当然如果是没脑子的怪物的话, 就另当别论了</text>
+	</string>
+	<string id="army_south_mechan_mlr_st_10">
+		<text>哈哈, 确实</text>
+	</string>
+
+	
+<!-- (Military Trader = Southern Outpost) -->
+	<string id="guid_esc_mlr_military_0">
+		<text>我要请求一架直升机. 可以做安排吗?</text>
+	</string>
+	<string id="guid_esc_mlr_military_1">
+		<text>可以,但是我们不会为你耗尽燃料,而且你得证明为你这么做是值得的</text>
+	</string>
+
+	<string id="guid_esc_mlr_military_list_0">
+		<text>我能搭乘交通工具抵达一些地方吗?</text>
+	</string>
+	<string id="guid_esc_mlr_military_list_1">
+		<text>去我们在农业研究所的基地要花费5000卢布,去黑谷的加油站是3000卢布,然后去扬塔的移动实验室需要10000卢布</text>
+	</string>
+
+	<string id="guid_esc_mlr_military_vert_0">
+		<text>我想去其他地方</text>
+	</string>
+	<string id="guid_esc_mlr_military_vert_1">
+		<text>去哪里?</text>
+	</string>
+	<string id="guid_esc_mlr_military_vert_2">
+		<text>去农业研究所的军事基地. %c[d_orange][5000 卢布]</text>
+	</string>
+	<string id="guid_esc_mlr_military_vert_3">
+		<text>去黑谷的加油站. %c[d_orange][3000 卢布]</text>
+	</string>
+	<string id="guid_esc_mlr_military_vert_4">
+		<text>去扬塔的移动实验室. %c[d_orange][10000 卢布]</text>
+	</string>
+	<string id="guid_esc_mlr_military_vert_5">
+		<text>我改变主意了</text>
+	</string>
+
+	
+<!-- Hip -->
+	<string id="devushka_1_start_0">
+		<text>盯着我看什么? 没见过女潜行者吗?</text>
+	</string>
+	<string id="devushka_1_start_1">
+		<text>呃... 冷静一点, 我只是想在这附近找些事做而已</text>
+	</string>
+	<string id="devushka_1_start_2">
+		<text>是吗? 哼, 我还以为又是哪个自以为是的白痴, 对那样的人我没什么好说的...
+		\n我叫希普, 说不定你真的能帮到我, 我认识一个很有钱的武器收藏家, 他有个特殊的癖好, 喜欢用他在特异区收藏的各种枪来打野猪, 他曾经拜托过我给他在特异区弄一把TOZ-194, 但好巧不巧, 前不久这里突然实行了武器禁运, 我认识的卖家都不再出售枪械了, 如果你能帮我找到一把, 呃... 最好再加上20发鹿弹一起给我的话, 我会付你很多钱, 因为我想狠狠敲他一笔...(笑)</text>
+	</string>
+	<string id="devushka_1_start_3">
+		<text>不就是TOZ-194么, 包在我身上好了</text>
+	</string>
+	<string id="devushka_1_start_4">
+		<text>我还有别的事要忙, 下次再说吧!</text>
+	</string>
+	<string id="devushka_1_start_6">
+		<text>我有个更好的主意, 那就是我自己去敲诈他, 快把这个家伙的信息告诉我! 不然就要你的命!</text>
+	</string>
+	<string id="devushka_1_start_5">
+		<text>听起来很简单, 我接受</text>
+	</string>
+	
+	<string id="devushka_2_start_0">
+		<text>希普, 你猜我包里有什么?</text>
+	</string>
+	<string id="devushka_2_start_1">
+		<text>我猜 -- 是一把TOZ-194? 啊, 我猜对了! 太好了!
+		\n但是, 有个坏消息, 那个很有钱的家伙已经死了! 可能是他太不小心了吧, 总之, 这下子我们的发财计划落空了... 那这把枪就送给我了! 我把这个工具箱给你, 就当是补偿吧, 嗯?</text>
+	</string>
+	<string id="devushka_2_start_2">
+		<text>怎么我离开没多久人就死了? 这么巧?</text>
+	</string>
+	<string id="devushka_2_start_3">
+		<text>对啊, 听说是被变异巨兽一脚给踩扁了... 干嘛一脸嫌弃? 你在怀疑我吗? 我真的没骗你! 不过说起来, 你介意再帮我一个忙吗? 我其实还有另一个客户... 他想要收藏史诺克的手, 是的, 你没听错, 大概8只手就够我... 呃, 咳嗯! 够我卖给他! 你会帮我的对吧?</text>
+	</string>
+	<string id="devushka_2_start_4">
+		<text>够你干嘛? ...算了算了, 我去找就是</text>
+	</string>
+	<string id="devushka_2_start_5">
+		<text>一个工具箱就想打发我吗希普? 老子生气了, 把你身上值钱的全交出来!</text>
+	</string>
+	
+	<string id="devushka_0_dialog_0">
+		<text>给! 8个史诺克手, 放在我包里都有点发臭了...</text>
+	</string>
+	<string id="devushka_0_dialog_1">
+		<text>就是这个味道! 你难道没吃过... 呃, 我是说, 谁会想吃这种恶心的东西! 对吧? 谢谢你! 你真是太好了!</text>
+	</string>
+	
+	<string id="devushka_1_dialog_0">
+		<text>其实, 我有些事情想问你...</text>
+	</string>
+	<string id="devushka_1_dialog_1">
+		<text>什么事情? 这么神秘兮兮的?</text>
+	</string>
+	<string id="devushka_1_dialog_2">
+		<text>也没什么, 就是请教一些特异区的基本常识, 毕竟你来这里比我早, 比如说关于生存小窍门啊, 异常区啊, 类似这样的...</text>
+	</string>
+	<string id="devushka_1_dialog_3">
+		<text>这个简单, 你算是问对人了! 第一, 和女生说话要温柔! 第二, 很多怪物的肉都能吃! 第三, 如果听到呼吸声就说明附近有史诺克! 第四, 一定要拉完屎以后再出去做任务! 最后一点是... 嗯, 我还没想好(笑)</text>
+	</string>
+	<string id="devushka_1_dialog_4">
+		<text>哇... 真是... 发人深省</text>
+	</string>
+
+	<string id="devushka_2_dialog_0">
+		<text>不就是史诺克嘛, 没什么大不了的... 那个, 我听说你曾经是个商人?</text>
+	</string>
+	<string id="devushka_2_dialog_1">
+		<text>看来我们的口味很像! ...是的, 我之前在自由军那边专门倒卖医用品, 但是后来, 嗯, 只能说, 那份工作给我带来很多特殊的麻烦, 你明白吗? 如果只是面对变异怪物和纪律团的话我还能忍受... 不说这个了, 你听说过"巧手"尼博吗? 在我最低谷的时候, 就是他的事迹一直鼓舞着我, 他是在扎顿的一艘破船上的一位武器专家, 我很崇拜他, 我听说尼博选择单干之后就来了封锁线, 在这里建立人脉, 白手起家, 所以我离开自由军之后想都没想, 直接来了这里, 想要追随他的脚步</text>
+	</string>
+	<string id="devushka_2_dialog_2">
+		<text>没看出来, 你竟有这样的雄心壮志, 那为什么不直接去扎顿找他呢?</text>
+	</string>
+	<string id="devushka_2_dialog_3">
+		<text>因为去北方的路隔着神迹和焦脑器两个灵能场, 我还没有傻到那个地步去送死, 挣再多钱死了也没法花啊, 对吧?</text>
+	</string>
+	<string id="devushka_2_dialog_4">
+		<text>话是这么说没错, 但我听说你在菜鸟村附近呆了很久了, 还在积累起步资金和人脉吗?</text>
+	</string>
+	<string id="devushka_2_dialog_5">
+		<text>差不多吧, 毕竟我已经选择离开了阵营势力的保护, 成为一名独行者, 而作为独行者, 在这里不管干什么都肯定需要西多洛维奇的支持, 否则寸步难行. 毕竟不是所有人都像你这样待人友善, 有些人就像盘旋在濒死之人头顶的秃鹫一样觊觎着你... 有了老西的支持, 起码我能拥有一个放心睡觉的地方, 而光是这一点我就花了很长时间, 那个财迷心窍的老头!</text>
+	</string>
+	<string id="devushka_2_dialog_6">
+		<text>西多洛维奇? 就是地堡里那个老家伙吧, 他对人很刻薄吗?</text>
+	</string>
+	<string id="devushka_2_dialog_7">
+		<text>嗯, 在这个鬼地方也怪不得他, 其实老西也算是很照顾我了, 我离开自由军之后, 多亏了他去跟纪律团替我担保, 不然那帮穿红衣服的肯定会因为我以前的行为而追到这里, 不过我觉得, 老西好像更希望我离开这里, 他总是把我当成一个小屁孩, 但是如果我真的离开, 肯定还是要担心土匪, 还有那些想让我"帮个忙"的王八蛋们... 好像特异区就我一个女人似的!</text>
+	</string>
+	<string id="devushka_2_dialog_8">
+		<text>可能总有些人以为女生说"不"是在表达相反的意思...</text>
+	</string>
+	<string id="devushka_2_dialog_9">
+		<text>是啊是啊! 这些死宅男, 成天抱着小黄书看, 他们应该把那个劲头放到事业上! 不过幸运的是, 也有很多正直的人, 比如"独狼"沃夫就会像对待其他人一样对待我, 我觉得挺好的! 在这里过了这么久, 我和这里的潜行者们都打成一片了, 毕竟大家都是普通人罢了, 可惜, 除了沃夫和法纳特以外, 大多数人在这里都待不长, 而我也不想自己孤身一人跑出去被史诺克偷袭, 所以想交些新朋友...</text>
+	</string>	
+	<string id="devushka_2_dialog_10">
+		<text>那么, 我要去哪里帮你找一些新朋友? </text>
+	</string>
+	<string id="devushka_2_dialog_11">
+		<text>什... 你好像不太会和女孩子聊天吧? 你知道孤身一人时留意史诺克有多难吗? 比想象中难多了! 我向你保证!</text>
+	</string>
+	<string id="devushka_2_dialog_16">
+		<text>好吧好吧, 那么你接下来有什么打算?</text>
+	</string>
+	<string id="devushka_2_dialog_17">
+		<text>我从老西那里接了个神器订单, 如果你愿意帮我留意屁股后面的史诺克, 那我可以算你一个, 报酬五五分, 很公平吧?</text>
+	</string>
+	<string id="devushka_2_dialog_12">
+		<text>没问题, 算我一个</text>
+	</string>
+	<string id="devushka_2_dialog_13">
+		<text>别, 算了吧, 我对史诺克过敏, 下次再说吧</text>
+	</string>
+	<string id="devushka_2_dialog_14">
+		<text>太好了! 这个订单需要我们收集月光石, 虾眼石和浮空石, 这些神器都不太好找, 虽然客户给的时间很宽松, 但还是最好尽快完成, 这对我建立良好的信誉有帮助</text>
+	</string>
+	<string id="devushka_2_dialog_15">
+		<text>没问题, 我们出发吧, 希普!</text>
+	</string>
+
+	<string id="devushka_3_quest_money_0">
+		<text>这是那些神器换来的钱, 但我总感觉被老西敲了一把竹杠</text>
+	</string>
+	<string id="devushka_3_quest_money_1">
+		<text>哈哈, 也许吧, 但如果没有老西的话, 我们连这样的活都接不到不是吗? 现在我有了不错的信誉, 还能小赚一笔, 我已经很开心了(笑)</text>
+	</string>
+
+	<string id="devushka_heal_0">
+		<text>希普, 拿着这个急救包</text>
+	</string>
+	<string id="devushka_heal_1">
+		<text>嗯? 为什么? 如果你指望我来救你的话, 那还不如死了算了...</text>
+	</string>
+	<string id="devushka_heal_2">
+		<text>以防万一, 就算是心理作用也好, 拿着吧!</text>
+	</string>
+	<string id="devushka_heal_3">
+		<text>嗯... 说的也是</text>
+	</string>
+	<string id="devushka_heal_4">
+		<text>额, 好吧, 就信你一回</text>
+	</string>
+
+	<string id="devushka_3_dialog_0">
+		<text>对于一个曾在自由军混过的人来说, 你的行事准则还真是不寻常...</text>
+	</string>
+	<string id="devushka_3_dialog_1">
+		<text>你也觉得? ...嗯, 其实自由军最早的成员中有很多都是我的朋友, 我加入自由军本来也是因为他们, 但我真的不喜欢他们思想的改变, 还把自由军搞成现在这样乌烟瘴气的, 我只想和朋友们一起冒险, 我才不愿只为了某个人的理想而战</text>
+	</string>
+	<string id="devushka_3_dialog_2">
+		<text>来篝火边上, 我有好消息告诉你</text>
+	</string>
+
+	<string id="devushka_4_dialog_0">
+		<text>西多洛维奇让我告诉你一些事情, 他为你提供了酒保的送货任务... 问题在于, 这个任务要我们穿越死亡屏障</text>
+	</string>
+	<string id="devushka_4_dialog_1">
+		<text>谢谢你告诉我, 一个老朋友刚给我发了PDA信息, 也说了类似的话, 我说, 咱们今晚再回到这里来好吗, 我要为接下来的旅途做一点心理准备... 我肯定还会需要你来帮我提防史诺克的, 所以不要花太长时间哦!</text>
+	</string>
+
+	<string id="devushka_4_quest_0">
+		<text>希普, 是时候了, 准备好接酒保的工作了吗?</text>
+	</string>
+	<string id="devushka_4_quest_1">
+		<text>我也不知道... 我早些时候收到的消息是来自卢卡什, 他急需把一些药品送往亚诺夫车站的基地, 我知道我之前和你说过自由军的事, 但你也清楚, 这个工作不只是为了他们</text>
+	</string>
+	<string id="devushka_4_quest_2">
+		<text>卢卡什的活可以找其他人去做, 但酒保占据着特异区的中心地带, 抓住这次机会, 从长远来看对你更有利</text>
+	</string>
+	<string id="devushka_4_quest_3">
+		<text>如果这样的话, 看来我们应该尽快前往卢卡什那里取药, 省下的每一秒都能拯救一条生命</text>
+	</string>
+	<string id="devushka_4_quest_4">
+		<text>我也这么觉得, 自由军完全可以找其他人帮他们跑腿, 但我的路还要自己走, 我们就去找酒保吧!</text>
+	</string>
+	<string id="devushka_4_quest_5">
+		<text>很高兴你能同意, 自由军在亚诺夫的物资相当紧张, 虽然酒保那里是个好机会, 但能够拯救更多生命也很重要吧? 我们一起去军事仓库好了</text>
+	</string>
+
+	<string id="devushka_about_artefact_0">
+		<text>关于西多洛维奇所要的神器... 你有什么建议吗?</text>
+	</string>
+	<string id="devushka_about_artefact_1">
+		<text>当然, 月光石可以在电系异常点中找到, 浮空石可以在重力异常点中找到, 而虾眼石能在火系异常点中找到</text>
+	</string>
+	<string id="devushka_about_artefact_2">
+		<text>好吧, 那么... 你进异常区拿神器的时候我就在旁边看着史诺克对吧?</text>
+	</string>
+	<string id="devushka_about_artefact_3">
+		<text>嗯? 你是不是搞错了, 其实, 是你进去拿, 而我在外面掩护你</text>
+	</string>
+	<string id="devushka_about_artefact_4">
+		<text>...原来是这样的吗?</text>
+	</string>
+	<string id="devushka_about_artefact_5">
+		<text>是啊, 我都告诉过你去哪里找了嘛! 而且, 这种事情你去做才会更有趣对吧?</text>
+	</string>
+	
+	<string id="devushka_about_semeckiy_0">
+		<text>嘿, 希普? 你知道特异区里发生的有趣的故事吗?</text>
+	</string>
+	<string id="devushka_about_semeckiy_1">
+		<text>当然! 你听说过尤里·塞梅斯基吗? 他每天都至少会在信息网络上死一次! 好不好笑! 也许是个通信故障吧, 但很多人说尤里是第一个到达许愿石并许下永生愿望的人, 即便他死了, 第二天就会在一个神秘的地方复活, 直到下一次死亡, 而他的死因通常都惨不忍睹...
+		\n这就是为什么PDA上的死讯我都不看, 尽管特异区很压抑, 但我还是想保留一些美好的愿望...</text>
+	</string>
+	<string id="devushka_about_semeckiy_2">
+		<text>那为什么现在的信息网络上不再报告尤里的死讯了?</text>
+	</string>
+	<string id="devushka_about_semeckiy_3">
+		<text>我不知道, 我听到过一些推测: 说是有个名叫"天选者"的潜行者关闭了"焦脑器", 然后抵达核电站后不久, 尤里的死讯就停止了, 我不知道那意味着什么, 但肯定是和那些灵能场发生器有关系, 不管怎样, 尤里终于可以安息了</text>
+	</string>
+	<string id="devushka_about_semeckiy_4">
+		<text>可是万一他还一直活着呢?</text>
+	</string>
+	<string id="devushka_about_semeckiy_5">
+		<text>那谁知道? 就算活着, 也是人不人鬼不鬼的吧! 我才不想去探讨这种事情...</text>
+	</string>
+
+	<string id="give_devushka_medved_0">
+		<text>希普, 拿着这个探测器吧</text>
+	</string>
+	<string id="give_devushka_medved_1">
+		<text>给我干嘛? 不是你走在前面吗? 看到你跑进异常点的话, 我肯定会躲开的, 放心好了!</text>
+	</string>
+
+	<string id="devushka_give_present_0">
+		<text>希普, 你对未来有什么打算吗?</text>
+	</string>
+	<string id="devushka_give_present_1">
+		<text>我之前和你说过的 - 当一个商人, 但是... 从和你一起开始旅行后, 我觉得或许我想要的并不是那种安定的生活, 之前有那种想法可能只是在逃避恐惧罢了, 我好像更喜欢和你一起冒险! 毕竟还有那么多值得探索的地方, 我想去看看!</text>
+	</string>
+	<string id="devushka_give_present_2">
+		<text>可是你的经商梦想呢? 就这么放弃了?</text>
+	</string>
+	<string id="devushka_give_present_3">
+		<text>我想先把它暂时先放一边, 现在, 我对外面世界的好奇心已经无法压抑了! 我才不想那么早就过上养老的日子</text>
+	</string>
+	<string id="devushka_give_present_4">
+		<text>特异区很危险, 很可能会死在外面的</text>
+	</string>
+	<string id="devushka_give_present_5">
+		<text>可是, 你几乎天天都在外面闯, 不是活的好好的吗?</text>
+	</string>
+	<string id="devushka_give_present_6">
+		<text>那是因为你并不了解我经历过的危险...</text>
+	</string>
+	<string id="devushka_give_present_7">
+		<text>所以, 我才希望能够了解更多你经历过的事情, 就带上我一起吧! 难道你觉得我是个累赘吗? 是这样吗?</text>
+	</string>
+	<string id="devushka_give_present_8">
+		<text>希普, 我不是那个意思, 我是说, 你现在就站在斯卡多夫斯克, 你曾经的梦想已经触手可及, 为什么还想过潜行者的生活?</text>
+	</string>
+	<string id="devushka_give_present_9">
+		<text>那样我不就只能成天无聊地坐在船上了吗? 就像尼博那样! 之前的我也许是那么想的, 也许当我像老西那样年迈臃肿时, 会改变心意, 但至少现在不要!</text>
+	</string>
+	<string id="devushka_give_present_10">
+		<text>你总是这么心急, 真的不要再考虑一下了么?</text>
+	</string>
+	<string id="devushka_give_present_12">
+		<text>不要! 我考虑过了! 我决定了! 我还以为你能开心的支持我呢!</text>
+	</string>
+	<string id="devushka_give_present_11">
+		<text>好吧好吧, 那就一起走吧, 反正总得有人帮你注意屁股后面的史诺克不是吗...</text>
+	</string>
+	<string id="devushka_give_present_13">
+		<text>当然了! 我也是这么认为! 哈哈! 这个给你! 你帮助我的次数比任何人都要多, 谢谢!</text>
+	</string>
+	<string id="devushka_give_present_14">
+		<text>这是朋友之间该做的, 对吧? 那, 我们就出发了!</text>
+	</string>
+
+	<string id="devushka_go_village_0">
+		<text>希普, 我觉得我们应该暂时分开一下下</text>
+	</string>
+	<string id="devushka_go_village_1">
+		<text>你确定?</text>
+	</string>
+	<string id="devushka_go_village_2">
+		<text>是的, 你先去做你的事吧, 有些事情我必须独自处理...</text>
+	</string>
+	<string id="devushka_go_village_3">
+		<text>哈! 逗你玩的!</text>
+	</string>
+	<string id="devushka_go_village_4">
+		<text>那好吧, 我先回菜鸟村了, 你会去那里找我的对不? 挣的钱要活着才能花, 还记得吗? 不要死啊...</text>
+	</string>
+
+	<string id="adventure_time_with_hip_0">
+		<text>希普, 我们又见面了, 真好! 你还愿意和我一同踏上特异区的冒险旅程吗?</text>
+	</string>
+	<string id="adventure_time_with_hip_1">
+		<text>你觉得呢? 这种事情, 你明明知道的</text>
+	</string>
+	
+	<string id="st_hip_news_1">
+		<text>希普: 为什么这么神秘兮兮的? 好吧, 篝火见吧...</text>
+	</string>
+	<string id="st_hip_news_2">
+		<text>希普: 稍等, 我接个电话</text>
+	</string>
+	<string id="st_hip_news_3">
+		<text>希普: 我刚才接到消息, 另一边的任务已经有人去处理了, 所以我们就不用管了</text>
+	</string>
+	<string id="st_hip_news_4">
+		<text>酒保: 大胡子看起来很满意, 这种跑腿工作虽然很危险, 但只要保持下去的话, 一定会为希普建立良好的业务关系</text>
+	</string>
+	<string id="st_hip_news_5">
+		<text>希普: 看来你的选择是对的, 酒保这里真的不错!</text>
+	</string>
+	<string id="st_hip_news_6">
+		<text>希普: 做一件发自内心的善事有时候真难</text>
+	</string>
+	<string id="st_hip_news_7">
+		<text>希普: 说真的, 谢谢你, 你帮助解决了亚诺夫车站的困境</text>
+	</string>
+</string_table>

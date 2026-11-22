@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<string id="ui_mcm_menu_targetID">
+		<text>陣營識別</text>
+	</string>
+
+	<string id="ui_mcm_targetID_deadID">
+		<text>識別死亡的潛行者</text>
+	</string>
+
+	<string id="ui_mcm_targetID_nameID">
+		<text>識別潛行者的名字</text>
+	</string>
+
+	<string id="ui_mcm_targetID_timeID">
+		<text>通過距離識別延遲</text>
+	</string>
+	<string id="ui_mcm_targetID_timeID_desc">
+		<text>如果啟用,識別將要求您根據距離看著潛行者一段時間,以識別他們. .</text>
+	</string>
+
+	<string id="ui_mcm_targetID_rankID">
+		<text>識別潛行者等級</text>
+	</string>
+
+	<string id="ui_mcm_targetID_talkName">
+		<text>必須瞭解名字</text>
+	</string>
+	<string id="ui_mcm_targetID_talkName_desc">
+		<text>如果啟用,玩家必須在知道潛行者的名字和等級之前與之交談或搶奪其物品. .</text>
+	</string>
+
+	<string id="ui_mcm_targetID_speedID">
+		<text>辨識速度</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xo">
+		<text>X軸位移</text>
+	</string>
+	<string id="ui_mcm_targetID_yo">
+		<text>Y軸位移</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xp">
+		<text>臂章X軸偏移</text>
+	</string>
+	<string id="ui_mcm_targetID_yp">
+		<text>臂章Y軸偏移</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xn">
+		<text>姓名X軸偏移</text>
+	</string>
+	<string id="ui_mcm_targetID_yn">
+		<text>姓名Y軸偏移</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_xr">
+		<text>排名X軸偏移</text>
+	</string>
+	<string id="ui_mcm_targetID_yr">
+		<text>排名Y軸偏移</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_flipAlign">
+		<text>翻轉文字對齊方式</text>
+	</string>
+	<string id="ui_mcm_targetID_flipAlign_desc">
+		<text>姓名和軍銜將向右對齊,以便HUD可以放在螢幕的右側. .</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_colorR">
+		<text>姓名文字顏色R值</text>
+	</string>
+	<string id="ui_mcm_targetID_colorG">
+		<text>姓名文字顏色G值</text>
+	</string>
+	<string id="ui_mcm_targetID_colorB">
+		<text>姓名文字顏色B值</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_RcolorR">
+		<text>排名文字顏色R值</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorG">
+		<text>排名文字顏色G值</text>
+	</string>
+	<string id="ui_mcm_targetID_RcolorB">
+		<text>排名文字顏色B值</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_targL">
+		<text>瞄準範圍</text>
+	</string>
+	<string id="ui_mcm_targetID_targL_desc">
+		<text>表示目標離螢幕中心多遠能被識別, 取值越高, 顯示陣營UI所需的瞄準精度就越高, 取值越低則更容易跟蹤目標, 值為1.0意味著你必須確切的用準星正對目標</text>
+	</string>
+	
+	<string id="ui_mcm_targetID_unknown">
+		<text>不詳</text>
+	</string>
+	<string id="ui_mcm_targetID_scan">
+		<text>識別...</text>
+	</string>
+	
+	
+</string_table>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+ <!-- Dusman (Mercenary Leader) -->
+ 	<string id="find_blackbox_mlr_reward_killer_0">
+		<text>達什曼, 看看這個! 一個飛行記錄儀! 這裡面記錄的情報... 咱們上頭會出高價來換的對吧？</text>
+	</string>
+	<string id="find_blackbox_mlr_reward_killer_1">
+		<text>這是軍用的? 嗯... 講真, 這個玩意很不錯! 我收了, 你開個價吧!</text>
+	</string>
+
+
+<!-- (Mercenary Guide) -->
+	<string id="meet_ds_killer_guide_main_base_0">
+		<text>嗨! 有辦法帶我安全離開這裡嗎?</text>
+	</string>
+	<string id="meet_ds_killer_guide_main_base_1">
+		<text>嗯, 這附近雖然很危險, 但還好我們對下水道網路很熟悉, 我可以找個嚮導帶你離開這裡, 前往我們在扎頓南部的分基地</text>
+	</string>
+
+	<string id="meet_ds_killer_guide_main_base_list_0">
+		<text>你剛才說我能去哪來著?</text>
+	</string>
+	<string id="meet_ds_killer_guide_main_base_list_1">
+		<text>扎頓的污水處理站, 這是唯一的路線了, 費用是8000盧布</text>
+	</string>
+	
+	<string id="travel_ds_killer_guide_main_base_0">
+		<text>我想離開這裡</text>
+	</string>
+	<string id="travel_ds_killer_guide_main_base_1">
+		<text>噢? 唯一的安全路線只有扎頓的污水處理站, 費用8000塊</text>
+	</string>
+	<string id="travel_ds_killer_guide_main_base_2">
+		<text>我準備好了, 我們走! %c[d_orange][8000 盧布]</text>
+	</string>
+	<string id="travel_ds_killer_guide_main_base_3">
+		<text>我突然覺得還是算了</text>
+	</string>
+	
+	
+ <!-- Aslan (Mercenary Barman) -->
+	<string id="talk_to_aslan_on_main_base_merk_0">
+		<text>哥們, 說說你的故事?</text>
+	</string>
+	<string id="talk_to_aslan_on_main_base_merk_1"> <!-- Fixed -->
+		<text>說啥? 沒什麼好說的, 我是這裡的酒保... 看不出來? 在這鬼地方也難怪... 其實我們被困在這裡好久了, 現在也就是勉強維持著生活...\n
+		在之前我曾參加過總統府的保衛工作, 後來又移居瑞士, 再後來就到了特異區, 我就喜歡和狐朋狗友們去酒吧, 開懷暢飲, 然後談論以前的日子... 有一次在酒吧我認識了財團的人, 然後受邀加入了傭兵, 當時的日子可不好過, 所以達什曼和我都是元老級的人物了, 但那又怎樣呢? 大家都是爲了求生存, 殊途同歸罷了, 比如我們這有曾在阿富汗和格魯吉亞服役過的老兵, 反倒是波羅的海國家的人不那麼急於來, 更別提發達國家的人了...</text>
+	</string>
+
+
+	<string id="talk_to_aslan_about_lottery_0">
+		<text>聽說你這裡可以兌換陣營臂章?</text>
+	</string>
+	<string id="talk_to_aslan_about_lottery_1">
+		<text>是啊... 拿過來吧, 20個換一次, 任何陣營臂章都可以, 獎品池會根據臂章的所屬陣營有區別, 比如紀律團的臂章會讓你經常抽到子彈, 自由軍的大部分都是藥品, 至於獨行和生態學家, 基本就是一些小神器之類</text>
+	</string>
+	<string id="talk_to_aslan_about_lottery_2">
+		<text>好的, 可是... 你拿這些臂章來做什麼用?</text>
+	</string>
+	<string id="talk_to_aslan_about_lottery_3">
+		<text>做什麼用? 你喝飲料從來沒"再來一瓶"過嗎? 你怎麼不問他們要瓶蓋幹嘛... 你就給我臂章, 然後把東西拿走, 就這麼簡單! 不要再問來問去了, 這是上頭用來提升僱傭兵積極性的一種手段, 我能說的就這麼多</text>
+	</string>
+
+	<string id="lottery_ds_aslan_mlr_0">
+		<text>我要兌換一些臂章</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_1">
+		<text>好吧, 換哪個陣營的?</text>
+	</string>
+		<string id="lottery_ds_aslan_mlr_2">
+			<text>20個晴空臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_3">
+			<text>20個自由軍臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_4">
+			<text>20個獨行者臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_5">
+			<text>20個生態學家臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_6">
+			<text>20個土匪臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_7">
+			<text>20個紀律團臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_8">
+			<text>20個黑石臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_9">
+			<text>20個軍隊臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_50">
+		     <text>20個傭兵臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_53">
+		     <text>20個叛節者臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_51">
+		    <text>20個原罪臂章</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_52">
+		     <text>20個UNISG臂章</text>
+		</string>									   
+		<string id="lottery_ds_aslan_mlr_11">
+			<text>晴空,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_12">
+			<text>自由軍,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_13">
+			<text>獨行者,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_14">
+			<text>生態學家,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_20">
+			<text>土匪,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_16">
+			<text>紀律團,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_17">
+			<text>黑石,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_18">
+			<text>軍隊,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_56">
+		     <text>反叛,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_54">
+		     <text>原罪,30個臂章(看到此條報告BUG)</text>
+		</string>
+		<string id="lottery_ds_aslan_mlr_55">
+		     <text>UNISG,30個臂章(看到此條報告BUG)</text>
+		</string>  
+		<string id="lottery_ds_aslan_mlr_57">
+		     <text>傭兵,30個臂章(看到此條報告BUG)</text>
+		</string>
+	<string id="lottery_ds_aslan_mlr_10">
+		<text>我不換了</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_19">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_20">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_21">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_22">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_23">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_24">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_25">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_26">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_27">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_28">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_29">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_30">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_31">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_34">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_35">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_36">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_40">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_41">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_42">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_43">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_44">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_45">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_46">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_47">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_48">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_49">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_58">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_59">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_60">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+	<string id="lottery_ds_aslan_mlr_61">
+		<text>這是你的獎品, 拿走吧</text>
+	</string>
+
+	<string id="aslan_st_0">
+		<text>現在這裡是什麼情況?</text>
+	</string>
+	<string id="aslan_st_1">
+		<text>什麼情況? 這裡現在是財團在特異區唯一的主基地, 就這個情況... 由於"神蹟裝置"的緣故, 通往揚塔的路被切斷了, 殭屍和變異生物還時不時跑來這裡, 利曼斯克也是一團糟, 黑石的出現讓那片城區變得更危險了, 紅森林就更別提了, 至於那些黑石, 他們一屁股坐在了通往利曼斯克的橋上, 其他地方則爬滿了怪物, 東邊的軍事倉庫則是自由軍的地盤</text>
+	</string>
+	<string id="aslan_st_2">
+		<text>還有別的嗎?</text>
+	</string>
+	<string id="aslan_st_3">
+		<text>別的? 嗯... 你自己會慢慢體會到的... 比如說出勤執行任務時, 不要讓多餘的情緒分散你的注意力, 傭兵的心裡可沒有情感和道德的容身之所 - 唯有憑藉冷酷的智慧才能活得久... 至於去北邊的路線, 除了嚮導之外, 最方便的可能只剩下利曼斯克了, 從那裡可以直接去到尤皮特的土匪基地, 只是要注意利曼斯克那永遠不可捉摸的環境, 誰也不知道在下一個拐角會碰到什麼狀況</text>
+	</string>
+	<string id="aslan_st_4">
+		<text>你說這裡是財團勢力的主基地, 難道沒有其他的據點了?</text>
+	</string>
+	<string id="aslan_st_5">
+		<text>當然有, 嚮導就可以帶你去污水處理站, 那是我們在扎頓南部的另一個基地, 還有一個基地在普城郊區的圖書館, 在廢棄區也有我們的人手駐紮, 不過那只是一個很小的據點而已, 其實, 在特異區各個地方都能見到我們的身影, 畢竟我們的任務本質使然...</text>
+	</string>
+	<string id="aslan_st_6">
+		<text>所以利曼斯克再往北邊, 就是黑石的天下了?</text>
+	</string>
+	<string id="aslan_st_7">
+		<text>差不多吧, 利曼斯克北邊不遠有一個廢棄的醫院, 不過沒人去那裡 - 那就是一條能通往切爾諾貝利核電站的路罷了, 不過就像揚塔一樣, 被靈能場給阻斷了</text>
+	</string>
+	<string id="aslan_st_8">
+		<text>差不多瞭解了, 謝謝你的資訊</text>
+	</string>
+
+	<string id="information_about_stash_aslan_0">
+		<text>聽說你這裡能買到藏物點的資訊?</text>
+	</string>
+	<string id="information_about_stash_aslan_1">
+		<text>沒錯, 我們的人在出勤時都會留意某些可疑的地方, 地點資訊需要支付6500盧布</text>
+	</string>
+
+	<string id="information_about_stash_aslan1_0">
+		<text>我想買個藏物點的情報 %c[d_orange][6500 盧布]</text>
+	</string>
+	<string id="information_about_stash_aslan1_1">
+		<text>發到你的PDA了, 祝你好運</text>
+	</string>
+
+</string_table>

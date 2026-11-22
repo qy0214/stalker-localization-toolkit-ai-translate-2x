@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+<!-- Forester -->
+	<string id="red_forester_hello_dialog_0">
+		<text>什麼風把你吹來了?</text>
+	</string>
+	<string id="red_forester_hello_dialog_1">
+		<text>像你這樣的菜鳥來我守林人列斯尼克的莊園里找什麼呢?</text>
+	</string>
+	<string id="red_forester_hello_dialog_2">
+		<text>是偶然的機會把你帶到我身邊的嗎?</text>
+	</string>
+	<string id="red_forester_hello_dialog_3">
+		<text>祝你好運,孩子!</text>
+	</string>
+	<string id="red_forester_hello_dialog_4">
+		<text>可別把我忘了!</text>
+	</string>
+	<string id="red_forester_hello_dialog_5">
+		<text>好好記住我!</text>
+	</string>
+	<string id="red_forester_who_are_you_0">
+		<text>你是哪位?</text>
+	</string>
+	<string id="red_forester_who_are_you_1">
+		<text>我能告訴你些關於的自己什麼呢? 我名叫守林人列斯尼克, 在這兒已經待了很長時間了, 我一輩子都住在這片森林旁邊, 我已經老了. 等你到了我這個年齡, 不管發生什麼, 你也會和我一樣深愛著自己的家鄉的. 核電站那場事故發生的時候, 我拒絕從這裡撤離出去, 我在特異區產生的時候倖存了下來... 我還記得那在地平線上閃現的光輝... 那天, 很多人難逃一死, 但特異區卻饒恕了我, 你懂我意思嗎? 靠, 不只饒恕了我, 還給了我個禮物! 我以前很熟悉這片森林, 所以現在我可以直接找出避開致命的異常現象的路. 潛行者們很羨慕我, 但我並不為這份禮物感到有多麼開心. 你要知道, 一切都是要付出代價的. 總有一天, 特異區會向我收取這份禮物的"報酬", 這就是我害怕的地方, 兄弟.</text>
+	</string>
+	<string id="red_forester_who_are_you_111">
+		<text>不, 之前還是片普通的的松樹林. 嗯, 它其實是個自然保護區. 1986年切爾諾貝利核電站事故發生后, 它變成紅色. 我上床睡覺的時候它還是綠色, 醒來就變成了現在這個樣子, 然後, 特異區就出現了, 動物和鳥類都紛紛放棄這片森林, 我成了唯一留下的生物. 這裡只有我, 和一片紅色的森林, 以及永遠無法散去的濃霧.</text>
+	</string>
+	<string id="red_forester_who_are_you_11111">
+		<text>是的, 許多潛行者在這裡丟了命. 我甚至聽說紅森林裡住著一個邪惡的鬼魂. 在我看來, 這片森林就像特異區的其他東西一樣. 只要你對它好, 它就不會碰你. 問題是, 你們這些潛行者對待任何事情都不正確. 你們渴望擁有特異區的其中一部分, 而作為回報, 你也會得到... 你應得的.</text>
+	</string>
+	<string id="red_forester_about_forest_0">
+		<text>跟我說說紅森林.</text>
+	</string>
+	<string id="red_forester_about_forest_1">
+		<text>這曾經是個野生動植物保護區, 而我是當地的守林人列斯尼克. 我負責保護森林及其動物免遭偷獵者的殘害. 現在, 特異區本身保護了這個地方, 而且保護得很好, 人們願意爲了避開它而多走十幾英里. 如果有什麼人踏上森林, 他就已經和死沒什麼兩樣了. 我可能還是"護林員", 但即使我也不知道到底發生了什麼. 一個人走進霧裡, 然後就被吸進了什麼地方. 你可能就在他身後走著, 還不知道他是怎麼死的. 就是這樣, 孩子.</text>
+	</string>
+	<string id="red_forester_about_zone_0">
+		<text>你可以告訴我些關於特異區的資訊嗎?</text>
+	</string>
+	<string id="red_forester_about_zone_1">
+		<text>特異區, 呵呵...特異區也是有生命的, 我們只是在阻礙它的發展, 程度不同罷了. 特異區就像我們的身體對抗疾病一樣, 致力於消除任何風險. 我們會發燒, 而特異區也會發抖. 能量風暴... 這是一種讓我們難受的方式. 我們對它的刺激越大, 新的能量風暴也就越厲害.</text>
+	</string>
+	<string id="red_forester_about_zone_11">
+		<text>這麼多年你是怎麼在這種獨自一人又處於各種危險之中生存下來的?</text>
+	</string>
+	<string id="red_forester_about_zone_111">
+		<text>一個愚蠢的行為就能毀掉特異區... 以及屬於它的一切. 不僅僅是變異生物和異常點, 還有神器和你們這些潛行者... 還有我. 我能感覺到特異區被深深地干擾著; 有什麼東西正在擾亂它, 打破它的平衡. 一場能量風暴正在醞釀... 我不知道現狀能否維持下去.</text>
+	</string>
+	
+	<string id="red_forester_about_doc_0">
+		<text>我在找能告訴我更多關於這片區域的資訊的人. 告訴我, 老傢伙, 你知道什麼有用的東西嗎?</text>
+	</string>
+	<string id="red_forester_about_doc_1">
+		<text>嗯... 你挺有野心, 不是么? 這讓我想起了那些來這裡尋找未知的, 可憐的靈魂的潛行者... 
+		\n許多年前, 我的一個老朋友曾經和一群人一起旅行. 他們其中一個已經到達了特異區的最深處. 這位老友應該就是你要找的人. 如果我沒記錯, 他就和他的狗一起住在大沼澤里.</text>
+	</string>
+	<string id="red_forester_about_doc_11">
+		<text>好的, 謝謝你的資訊.</text>
+	</string>
+	<string id="red_forester_about_doc_111">
+		<text>要對你的目標充滿謹慎, 年輕人.</text>
+	</string>
+
+	<string id="look_for_cs_history_part_2_1_0">
+		<text>守林人列斯尼克, 我需要穿過利曼斯克大橋.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_1">
+		<text>你說過橋? 你為什麼不去和守橋的人談談啊?</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_2">
+		<text>你也許已經忘記了, 但多虧了你, 利曼斯克現在正擠滿了傭兵.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_3">
+		<text>我沒忘, 但你也不會從我這兒得到任何幫助. 我不確定我幫助那些傭兵做得對不對.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_4">
+		<text>聽著你得幫幫我. 你做的對不對又有什麼關係呢? 無論如何, 我得知道我是否能到達那個城市.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_5">
+		<text>如果你現在不告訴我所有的事情, 你將會得到一張免費的停屍房門票.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_6">
+		<text>老傢伙, 如果特異區要我去利曼斯克, 我就會去. 幫助我對你最有利, 因為沒人知道下次是否會支援你.</text>
+	</string>
+	<string id="look_for_cs_history_part_2_1_7">
+		<text>...我在刀疤臉身上看到了一些東西 - 特異區需要他. 你... 是的, 我想知道他發生了什麼事. 所以, 聽著: 我們幫助傭兵脫離了空間泡異常點. 一切解決后, 他們拜訪了我. 似乎其中一個人告了密, 告訴他們我也參加了救援. 我和他們的領袖"森林行者"萊西談了談, 他給了我一些糧食, 金錢和彈藥 - 然後他繼續前進. 用他自己的話說, 他是前往軍事倉庫 - 去自由軍. 您可以去那裡找他 - 雖然幾年過去了, 但是從我們的談話來看, 他加入他們的意圖很認真.</text>
+	</string>
+
+	
+<!-- (Monolith Trader) by the bridge to Limansk -->
+	<string id="meet_guid_red_forest_mon_0">
+		<text>我可以去哪裡, 兄弟?</text>
+	</string>
+	<string id="meet_guid_red_forest_mon_1">
+		<text>我不能親自護送你, 但是你可以付費讓別的兄弟可以告訴你去哪裡. 我們已經在紅森林, 亞諾夫和普里皮亞奇建立了據點, 我們隨時樂意為你服務.</text>
+	</string>
+
+	<string id="meet_guid_red_forest_mon_list_0">
+		<text>嚮導, 可以帶我去哪裡?</text>
+	</string>
+	<string id="meet_guid_red_forest_mon_list_1">
+		<text>到紅森林要五千盧布, 尤皮特要兩千盧布, 普里皮亞奇要一千盧布.</text>
+	</string>
+
+	<string id="travel_guid_red_forest_mon_0">
+		<text>我想去個地方.</text>
+	</string>
+	<string id="travel_guid_red_forest_mon_1">
+		<text>當然可以, 你想讓嚮導帶你去哪?</text>
+	</string>
+	<string id="travel_guid_red_forest_mon_2">
+		<text>去紅森林. %c[d_orange][5000 盧布]</text>
+	</string>
+	<string id="travel_guid_red_forest_mon_3">
+		<text>去尤皮特. %c[d_orange][2000 盧布]</text>
+	</string>
+	<string id="travel_guid_red_forest_mon_4">
+		<text>去普里皮亞奇. %c[d_orange][1000 盧布]</text>
+	</string>
+	<string id="travel_guid_red_forest_mon_5">
+		<text>我改變主意了.</text>
+	</string>
+	
+<!-- Sin trader -->
+	<string id="red_greh_trader_start_dialog_0">
+		<text>來吧, 兄弟. 我會確保你能更好地為特異區服務.</text>
+	</string>
+	<string id="red_greh_trader_st_1">
+		<text>如果你需要裝備, 我可以提供. 我不僅僅是收集和管理我們勇敢的戰士們從倒下的敵人那裡得到的裝備. 不不不, 這些年來我與外部供應商建立了許多聯繫. 你看, 兄弟, 其他人可能不理解特異區的宏偉, 不同意我們事業的正義, 甚至想要我們死... 但是一旦他們認識到這是個賺錢的機會, 他們就會非常願意合作. 我非常願意利用他們的缺點為我們服務. 雖然他們為我們提供了實現神聖願景所需的工具, 但他們所得到的只是數字、金屬幣和紙片. 很諷刺,不是么?</text>
+	</string>
+
+<!-- Sin mechanic -->
+	<string id="red_greh_tech_start_dialog_0">
+		<text>對於特異區來說, 這還有比表面看起來更多的東西.</text>
+	</string>
+	<string id="red_greh_tech_st_1">
+		<text>我永遠只是一個卑微的僕人. 你知道嗎, 兄弟, 在特異區出現之前, 我就作為工程師為上主們服務. 我曾是組成風暴引擎的那批生態學家的一員, 這些生態學家沒有任何權威可言, 只是在特異區的建立過程中扮演了一個小而重要的角色. 當上主們上升到頂峰時, 我們的天父"黑暗之神"切爾諾伯格被放出來執行他們的意志,他招募我進入新生的原罪組織行列, 以表彰我在任務和機械技能方面的貢獻. 如今, 我辛勤工作, 以保持我們戰士們的裝備保持狀態良好, 以便他們能夠執行神的意志.</text>
+	</string>
+</string_table>

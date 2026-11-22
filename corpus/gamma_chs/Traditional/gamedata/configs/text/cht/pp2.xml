@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+	
+	<string id="st_wpn_pp2000n">
+		<text>PP-2000</text>
+	</string>
+	<string id="st_wpn_pp2000n_descr">
+		<text>PP-2000 是俄羅斯圖拉儀器設計局 (KBP) 的最新開發產品, PP-2000 于 2004 年首次向公眾展示, 其佈局專利已於 2001 年申請, 並於 2003 年頒發; PP-2000 的定位是非步兵軍事人員的個人防禦武器, 以及軍事人員, 特種部隊和特種執法隊的作戰武器, 因此, 它被設計的更為緊湊, 零件很少, 可靠性高, 維護簡單, 成本低廉, 是理想的近距離作戰武器\n \n
+		%c[ui_gray_2]槍械配件: \n
+                                    %c[d_purple] • %c[ui_gray_2] 瞄具:%c[ui_yellow] 部分皮卡汀尼導軌瞄具\n
+		%c[d_purple] • %c[ui_gray_2] 相容9x19消音器\n \n</text>
+	</string>
+</string_table>

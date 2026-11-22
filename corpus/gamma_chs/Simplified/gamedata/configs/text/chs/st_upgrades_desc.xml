@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Upgrades descriptions
+-->
+<string_table>
+
+<!--
+	Outfits upgrades
+-->
+	<string id="st_up_armor_1_name">
+		<text>凯夫拉板</text>
+	</string>
+	<string id="st_up_armor_1_descr">
+		<text>加固板的使用寿命更长, 但不是更耐用.</text>
+	</string>
+	<string id="st_up_armor_2_name">
+		<text>聚碳酸酯板</text>
+	</string>
+	<string id="st_up_armor_2_descr">
+		<text>聚碳酸酯板虽然使用寿命不长, 但改进了防弹性能, 比凯夫拉防弹板更可靠.</text>
+	</string>
+	<string id="st_up_armor_3_name">
+		<text>双层保护板</text>
+	</string>
+	<string id="st_up_armor_3_descr">
+		<text>内置防弹层可以将子弹的冲击力分散到更多的区域.</text>
+	</string>
+	<string id="st_up_armor_4_name">
+		<text>为关节部分安装可移动式保护层</text>
+	</string>
+	<string id="st_up_armor_4_descr">
+		<text>可移动的保护板可以使关节免受枪伤.</text>
+	</string>
+	
+	
+	<string id="st_up_damage_1_name">
+		<text>分段保护</text>
+	</string>
+	<string id="st_up_damage_1_descr">
+		<text>较薄的护甲层可以增加护甲的耐磨性.</text>
+	</string>
+	<string id="st_up_damage_2_name">
+		<text>额外的铝/钛板</text>
+	</string>
+	<string id="st_up_damage_2_descr">
+		<text>增加钛板数量可大大提高防弹衣的耐用性.</text>
+	</string>
+	<string id="st_up_damage_3_name">
+		<text>备用可移动层</text>
+	</string>
+	<string id="st_up_damage_3_descr">
+		<text>可移动的保护板可以使关节免受枪伤.</text>
+	</string>
+	
+	
+	<string id="st_up_durability_1_name">
+		<text>加厚皮革嵌件</text>
+	</string>
+	<string id="st_up_durability_1_descr">
+		<text>尽管这种东西不能增加什么保护性, 但确实可以提高耐用性.</text>
+	</string>
+	<string id="st_up_durability_2_name">
+		<text>高耐用性保护支架</text>
+	</string>
+	<string id="st_up_durability_2_descr">
+		<text>可提高护甲的耐用性.</text>
+	</string>
+	<string id="st_up_durability_3_name">
+		<text>增强凯夫拉板和嵌件</text>
+	</string>
+	<string id="st_up_durability_3_descr">
+		<text>增强板的使用寿命更长, 可以提升护甲的耐用性.</text>
+	</string>
+	
+	
+	<string id="st_up_weight_1_name">
+		<text>坚固碳组件</text>
+	</string>
+	<string id="st_up_weight_1_descr">
+		<text>用碳纤维代替金属可以在不牺牲可靠性的情况下减轻护甲的重量.</text>
+	</string>
+	<string id="st_up_weight_2_name">
+		<text>更轻的铝制框架</text>
+	</string>
+	<string id="st_up_weight_2_descr">
+		<text>更轻的铝制框架, 用来代替钢制框架. 减轻护甲重量</text>
+	</string>
+	<string id="st_up_weight_3_name">
+		<text>安装更轻的合成和塑料部件</text>
+	</string>
+	<string id="st_up_weight_3_descr">
+		<text>使用更轻的材料来减轻防弹衣的重量.</text>
+	</string>
+	<string id="st_up_weight_4_name">
+		<text>更轻的合成材料和聚合物材料</text>
+	</string>
+	<string id="st_up_weight_4_descr">
+		<text>面料、夹子和增稠剂被更轻的合成材料取代, 以减轻护甲重量.</text>
+	</string>
+	
+		
+	<string id="st_up_carry_1_name">
+		<text>配重系统</text>
+	</string>
+	<string id="st_up_carry_1_descr">
+		<text>重量分配系统可以让穿戴者携带的所有装备的重量分配的更均匀合理.</text>
+	</string>
+	<string id="st_up_carry_2_name">
+		<text>配重背架</text>
+	</string>
+	<string id="st_up_carry_2_descr">
+		<text>配重背架通过将肩部负荷分散在身体上来减轻集中肩部负荷, 从而增加最大负荷.</text>
+	</string>
+	<string id="st_up_carry_3_name">
+		<text>附加伺服电机</text>
+	</string>
+	<string id="st_up_carry_3_descr">
+		<text>额外的运动装置允许增加最大承载负载.</text>
+	</string>
+	
+	
+	<string id="st_up_shock_1_name">
+		<text>用于隔离的康铜内层</text>
+	</string>
+	<string id="st_up_shock_1_descr">
+		<text>一薄层康铜能够隔离电.</text>
+	</string>
+	<string id="st_up_shock_2_name">
+		<text>康铜隔热嵌件</text>
+	</string>
+	<string id="st_up_shock_2_descr">
+		<text>康铜能够隔离电并且具有非常高的熔点.</text>
+	</string>
+	<string id="st_up_shock_3_name">
+		<text>带有锰铜嵌件的隔离紧身衣</text>
+	</string>
+	<string id="st_up_shock_3_descr">
+		<text>这种镍和镁合金用于护甲以防止电击.</text>
+	</string>
+	
+	
+	<string id="st_up_burn_1_name">
+		<text>经耐火物质处理的面料</text>
+	</string>
+	<string id="st_up_burn_1_descr">
+		<text>经耐火物质处理的织物在寻找火制品的潜行者中很受欢迎.</text>
+	</string>
+	<string id="st_up_burn_2_name">
+		<text>镁板嵌件</text>
+	</string>
+	<string id="st_up_burn_2_descr">
+		<text>镁板嵌件可以保护穿戴者不受高温的伤害.</text>
+	</string>
+	<string id="st_up_burn_3_name">
+		<text>玻璃纤维热防护层</text>
+	</string>
+	<string id="st_up_burn_3_descr">
+		<text>玻璃纤维用于自然灾害应急小组的紧身衣.</text>
+	</string>
+	<string id="st_up_burn_4_name">
+		<text>带镍嵌件的防火紧身衣</text>
+	</string>
+	<string id="st_up_burn_4_descr">
+		<text>镍具有足够的耐火性, 可用于防弹衣嵌入物.</text>
+	</string>
+	<string id="st_up_helm_burn_1_name">
+		<text>雷鸟康铜面甲</text>
+	</string>
+	<string id="st_up_helm_burn_1_descr">
+		<text>保护合金框架, 防止热和电损伤.</text>
+	</string>
+	
+	
+	<string id="st_up_rad_1_name">
+		<text>橡胶紧身衣面料</text>
+	</string>
+	<string id="st_up_rad_1_descr">
+		<text>橡胶是保护自己免受短暂辐射暴露的基本方法.</text>
+	</string>
+	<string id="st_up_rad_2_name">
+		<text>有机玻璃防辐射内衬层</text>
+	</string>
+	<string id="st_up_rad_2_descr">
+		<text>有机玻璃可吸收两种类型的放射线, 而且比铅轻得多.</text>
+	</string>
+	<string id="st_up_rad_3_name">
+		<text>在紧身衣上添加铅</text>
+	</string>
+	<string id="st_up_rad_3_descr">
+		<text>铅可以完全的吸收三大类型的辐射, 可以说用它来抵御辐射非常可靠.</text>
+	</string>	
+	<string id="st_up_helm_rad_1_name">
+		<text>有源过滤器</text>
+	</string>
+	<string id="st_up_helm_rad_1_descr">
+		<text>有源过滤器可抵御放射性粒子.</text>
+	</string>
+	<string id="st_up_helm_rad_2_name">
+		<text>有机玻璃保护层</text>
+	</string>
+	<string id="st_up_helm_rad_2_descr">
+		<text>有机玻璃保护层可抵御部分辐射伤害.</text>
+	</string>
+	<string id="st_up_helm_rad_3_name">
+		<text>极端条件增强型呼吸器</text>
+	</string>
+	<string id="st_up_helm_rad_3_descr">
+		<text>一种带有额外净化涂层和去除毒物系统的过滤器.</text>
+	</string>
+	
+	
+	<string id="st_up_chem_1_name">
+		<text>帆布紧身衣</text>
+	</string>
+	<string id="st_up_chem_1_descr">
+		<text>防止雨水和腐蚀性物质与皮肤接触的基本防护措施.</text>
+	</string>
+	<string id="st_up_chem_2_name">
+		<text>密封塑料内层</text>
+	</string>
+	<string id="st_up_chem_2_descr">
+		<text>即使是简单的塑料内层也能保护穿戴者免受化学危害.</text>
+	</string>
+	<string id="st_up_chem_3_name">
+		<text>全包紧身衣面料</text>
+	</string>
+	<string id="st_up_chem_3_descr">
+		<text>全包面料和防止化学中毒.</text>
+	</string>
+	<string id="st_up_chem_4_name">
+		<text>表面覆盖有柔韧的铅网和有机玻璃内衬层的救援人员防护服</text>
+	</string>
+	<string id="st_up_chem_4_descr">
+		<text>外层镶嵌的铅网可以让穿戴者丝毫不受辐射和化学物质的伤害, 同时它还丝毫的不会影响到穿戴者的灵活性.</text>
+	</string>
+	<string id="st_up_helm_chem_1_name">
+		<text>污染区域用呼吸过滤器</text>
+	</string>
+	<string id="st_up_helm_chem_1_descr">
+		<text>具有增强防腐蚀涂层的过滤器, 带有一个用于清除毒物的附加防护层.</text>
+	</string>
+	<string id="st_up_helm_chem_2_name">
+		<text>全包防毒面具</text>
+	</string>
+	<string id="st_up_helm_chem_2_descr">
+		<text>完全阻断毒素的面具.</text>
+	</string>
+	
+	
+	<string id="st_up_tele_1_name">
+		<text>由成对的钢格栅制成的灵能防护层</text>
+	</string>
+	<string id="st_up_tele_1_descr">
+		<text>这种封闭层已被证明可以提供部分保护, 防止直接的灵能辐射.</text>
+	</string>
+	<string id="st_up_helm_tele_1_name">
+		<text>安装灵能圆顶防护层</text>
+	</string>
+	<string id="st_up_helm_tele_1_descr">
+		<text>这种高科技的灵能防护层据说是一位名为萨哈洛夫的生态学家发明的.</text>
+	</string>
+	
+	
+	<string id="st_up_arty_1_name">
+		<text>主要护甲附件模块</text>
+	</string>
+	<string id="st_up_arty_1_descr">
+		<text>安装护甲附件模块.</text>
+	</string>
+	<string id="st_up_arty_2_name">
+		<text>一个附加的护甲附件模块</text>
+	</string>
+	<string id="st_up_arty_2_descr">
+		<text>安装一个附加的护甲附件模块.</text>
+	</string>
+	<string id="st_up_arty_3_name">
+		<text>双室护甲附件模块</text>
+	</string>
+	<string id="st_up_arty_3_descr">
+		<text>安装双室护甲附件模块.</text>
+	</string>
+	
+	
+	<string id="st_up_stamina_1_name">
+		<text>内部热量调节系统</text>
+	</string>
+	<string id="st_up_stamina_1_descr">
+		<text>这项改装非常符合人体工程学: 将一种特殊的装置安装在紧身防护服上, 可以让穿戴者感觉整体重量非常的轻.</text>
+	</string>
+	<string id="st_up_stamina_2_name">
+		<text>内置运动辅助系统</text>
+	</string>
+	<string id="st_up_stamina_2_descr">
+		<text>目前处于试验阶段的一个运动辅助系统, 由于其价格非常昂贵,而且系统也不是很稳定, 所以目前它还只在特异区里使用.</text>
+	</string>
+	<string id="st_up_helm_stamina_1_name">
+		<text>蒸汽净化呼吸过滤器</text>
+	</string>
+	<string id="st_up_helm_stamina_1_descr">
+		<text>一套过滤器, 用于受污染的空气以及空气温湿度过高或过低.</text>
+	</string>
+	
+	
+	<string id="st_up_bleed_1_name">
+		<text>射线止血装置</text>
+	</string>
+	<string id="st_up_bleed_1_descr">
+		<text>它可以安装在防具的背面, 当装备者受伤出血时它会有效加快伤口处的血液凝结速度.</text>
+	</string>
+	<string id="st_up_bleed_2_name">
+		<text>"水螅"血红蛋白注射器</text>
+	</string>
+	<string id="st_up_bleed_2_descr">
+		<text>B型注射器, 当穿戴者的血压显著下降时它会为其注射凝血剂在其血液中.</text>
+	</string>
+	
+	
+	<string id="st_up_health_1_name">
+		<text>"暴君"肾上腺注射器</text>
+	</string>
+	<string id="st_up_health_1_descr">
+		<text>这种第一代注射器是基辅的一个研究机构研发的, 它会给人体的血液中注射小量的肾上腺素, 这可能对人体有些伤害, 但在紧急情况下可以挽救人的生命.</text>
+	</string>
+	<string id="st_up_health_2_name">
+		<text>"凤凰"复苏系统</text>
+	</string>
+	<string id="st_up_health_2_descr">
+		<text>这是一种可以监测穿戴者的健康状况, 维生素供应和肾上腺素以及合成代谢物质需求量的综合系统.</text>
+	</string>
+	<string id="st_up_health_3_name">
+		<text>安装一个生命维持系统</text>
+	</string>
+	<string id="st_up_health_3_descr">
+		<text>这是一种可以监测穿戴者的健康状况, 维生素供应和肾上腺素以及合成代谢物质需求量的综合系统.</text>
+	</string>
+	
+	
+	<string id="st_up_run_1_name">
+		<text>安装液压助推传动装置</text>
+	</string>
+	<string id="st_up_run_1_descr">
+		<text>第四代外骨骼和第三代的主要区别是它安装有一个液压助推传动器. 它可以让穿戴者在装备上外骨骼的情况下进行奔跑.</text>
+	</string>
+
+</string_table>

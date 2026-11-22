@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	SidHUD strings
+-->
+<string_table>
+	<string id="ui_mm_video_hud_sidslide">
+		<text>SidHUD 选项</text>
+	</string>
+
+
+
+	<string id="ui_mm_video_hud_armorbar">
+		<text>护甲状况栏</text>
+	</string>
+	<string id="ui_mm_video_hud_armorbar_desc">
+		<text>显示护甲状况栏. </text>
+	</string>
+	<string id="ui_mm_video_hud_armortext">
+		<text>护甲状况文本</text>
+	</string>
+	<string id="ui_mm_video_hud_armortext_desc">
+		<text>以青色文本的百分比显示护甲状况. \n%c[ui_gray_2]如果状态栏被禁用则无效. </text>
+	</string>
+	<string id="ui_mm_video_hud_weaponshow">
+		<text>武器状况栏</text>
+	</string>
+	<string id="ui_mm_video_hud_weaponshow_desc">
+		<text>显示武器状况栏. </text>
+	</string>
+	<string id="ui_mm_video_hud_weapontext">
+		<text>武器状况文本</text>
+	</string>
+	<string id="ui_mm_video_hud_weapontext_desc">
+		<text>以橙色文本的百分比显示武器状况. \n%c[ui_gray_2]如果状态栏被禁用则无效. </text>
+	</string>
+	<string id="ui_mm_video_hud_weaponbarhide">
+		<text>取消装备时隐藏</text>
+	</string>
+	<string id="ui_mm_video_hud_weaponbarhide_desc">
+		<text>使武器状态栏在您解除装备时消失. \n%c[ui_gray_2]如果状态栏被禁用则无效. </text>
+	</string>
+	<string id="ui_mm_video_hud_ammoshow">
+		<text>总弹药计数器</text>
+	</string>
+	<string id="ui_mm_video_hud_ammoshow_desc">
+		<text>显示你在库存中拥有的三种类型的弹药总量. </text>
+	</string>
+	<string id="ui_mm_video_hud_oldammoshow">
+		<text>旧弹药</text>
+	</string>
+	<string id="ui_mm_video_hud_oldammoshow_desc">
+		<text>使旧弹药出现在相关的地方（例如没有"好的"对应物）</text>
+	</string>
+	<string id="ui_mm_video_hud_radhealthshow">
+		<text>辐射暴露条</text>
+	</string>
+	<string id="ui_mm_video_hud_radhealthshow_desc">
+		<text>在生命条上从左到右显示你拥有的辐射量. </text>
+	</string>
+	<string id="ui_mm_video_hud_bleedingbarshow">
+		<text>出血条</text>
+	</string>
+	<string id="ui_mm_video_hud_bleedingbarshow_desc">
+		<text>在耐力条上从左到右显示你正在流失的血量. </text>
+	</string>
+	<string id="ui_mm_video_hud_healingbar">
+		<text>健康预测条</text>
+	</string>
+	<string id="ui_mm_video_hud_healingbar_desc">
+		<text>在 HP 条上启用一个微妙的血量条,它将显示你在使用治疗物品时将获得的确切治疗量. </text>
+	</string>
+	
+</string_table>

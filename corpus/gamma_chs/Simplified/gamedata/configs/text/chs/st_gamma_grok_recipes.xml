@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<!-- Sorter -->
+	<string id="st_gamma_recipe_basic_1">
+		<text>特异区生存指南 卷一</text>
+	</string>
+    <string id="st_gamma_recipe_basic_1_descr">
+		<text>不知是谁写的这套指南, 这是第一本, 里面详细介绍了在特异区恶劣环境中生存的基本技巧, 以及制作基本生存用品的方法, 例如背包, 凯夫拉板, 腰带配件, 烹饪工具, 帐篷和睡袋等等</text>
+	</string>
+	<string id="st_gamma_recipe_advanced_1">
+		<text>特异区生存指南 卷二</text>
+	</string>
+    <string id="st_gamma_recipe_advanced_1_descr">
+		<text>不知是谁写的这套指南, 这是第二本, 里面详细介绍了在特异区恶劣环境中生存的高级技巧, 以及制作高级生存用品的方法, 例如背包, 凯夫拉板, 腰带配件, 烹饪工具, 帐篷和睡袋等等</text>
+	</string>	
+	<string id="st_gamma_recipe_expert_1">
+		<text>特异区生存指南 卷三</text>
+	</string>
+    <string id="st_gamma_recipe_expert_1_descr">
+		<text>不知是谁写的这套指南, 这是第三本, 里面详细介绍了在特异区恶劣环境中生存的特殊技巧, 以及制作专家级生存用品的方法, 例如背包, 凯夫拉板, 腰带配件, 烹饪工具, 帐篷和睡袋等等</text>
+	</string>		
+
+	<string id="st_gamma_recipe_basic_2">
+		<text>电烙铁和万用表 上册</text>
+	</string>
+    <string id="st_gamma_recipe_basic_2_descr">
+		<text>这套电子制作手册涵盖了几乎所有常用电器元件的制作和组装心得, 读过这本书上册的潜行者有足够的能力自己制作基本的夜视仪, 探测器, 神器箱等电子设备</text>
+	</string>
+	<string id="st_gamma_recipe_advanced_2">
+		<text>电烙铁和万用表 中册</text>
+	</string>
+    <string id="st_gamma_recipe_advanced_2_descr">
+		<text>这套电子制作手册涵盖了几乎所有常用电器元件的制作和组装心得, 读过这本书中册的潜行者有足够的能力自己制作高级的夜视仪, 探测器, 神器箱等电子设备</text>
+	</string>	
+	<string id="st_gamma_recipe_expert_2">
+		<text>电烙铁和万用表 下册</text>
+	</string>
+    <string id="st_gamma_recipe_expert_2_descr">
+		<text>这套电子制作手册涵盖了几乎所有常用电器元件的制作和组装心得, 读过这本书下册的潜行者有足够的能力自己制作特殊的夜视仪, 探测器, 神器箱等电子设备</text>
+	</string>		
+	
+	<string id="st_gamma_recipe_basic_3">
+		<text>武器装备性能优化小窍门 (一)</text>
+	</string>
+    <string id="st_gamma_recipe_basic_3_descr">
+		<text>特异区的某个枪械爱好者写的手册, 也包含了护甲和头盔的内容, 第一册中详细描述了优化枪支和装备性能的基本解决方案</text>
+	</string>
+	<string id="st_gamma_recipe_advanced_3">
+		<text>武器装备性能优化小窍门 (二)</text>
+	</string>
+    <string id="st_gamma_recipe_advanced_3_descr">
+		<text>特异区的某个枪械爱好者写的手册, 也包含了护甲和头盔的内容, 第二册中详细描述了优化枪支和装备性能的高级解决方案</text>
+	</string>	
+	<string id="st_gamma_recipe_expert_3">
+		<text>武器装备性能优化小窍门 (三)</text>
+	</string>
+    <string id="st_gamma_recipe_expert_3_descr">
+		<text>特异区的某个枪械爱好者写的手册, 也包含了护甲和头盔的内容, 第三册中详细描述了优化枪支和装备性能的专家级解决方案</text>
+	</string>		
+		
+	<string id="st_gamma_recipe_basic_4">
+		<text>星火燎原: 异常能量的聚合与重组</text>
+	</string>
+    <string id="st_gamma_recipe_basic_4_descr">
+		<text>这本书由特异区的生态学家萨哈洛夫教授撰写, 书中详细介绍了神器熔炉的熔解和融合等使用方法, 以及将常见的神器融合成高级神器的步骤</text>
+	</string>
+	<string id="st_gamma_recipe_advanced_4">
+		<text>珠联璧合: 异常样本融合的艺术</text>
+	</string>
+    <string id="st_gamma_recipe_advanced_4_descr">
+		<text>这本书由特异区的生态学家萨哈洛夫教授撰写, 书中详细介绍了神器熔炉的熔解和融合等使用方法, 以及将高级神器融合成稀有神器的步骤</text>
+	</string>	
+	<string id="st_gamma_recipe_expert_4">
+		<text>万法归一: 论超能神器的形成条件</text>
+	</string>
+    <string id="st_gamma_recipe_expert_4_descr">
+		<text>这本书由特异区的生态学家萨哈洛夫教授撰写, 书中详细介绍了神器熔炉的熔解和融合等使用方法, 以及将稀有神器融合成超级神器的步骤</text>
+	</string>
+	<string id="st_gamma_recipe_ammo_4">
+		<text>我国单兵装备应用前沿与展望: 外骨骼篇 (内参)</text>
+	</string>
+    <string id="st_gamma_recipe_ammo_4_descr">
+		<text>这应该是某国的军事内参, 但不知为何流传到了特异区里, 这篇期刊翔实的介绍了一种单兵装备的应用原理, 甚至附有装备的详细图纸和说明\n
+		如果你脑子够好, 也许能利用这些知识去修复特异区中的同类装备</text>
+	</string>
+	
+</string_table>

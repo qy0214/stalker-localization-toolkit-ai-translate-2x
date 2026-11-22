@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_trader_destockifier_title">
+		<text>商人库存清理</text>
+	</string>
+	<string id="ui_mcm_menu_trader_destockifier">
+		<text>商人库存清理</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_enable">
+		<text>启用</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_debug_mode">
+		<text>Debug 模式</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_debug_mode_desc">
+		<text>在控制台显示DEBUG信息</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_items_help">
+		<text>
+			您可以在下面定义每个交易者在补货后可以拥有的最大物品数量\n
+			将滑块设置为 0 将完全删除类别中的物品\n
+			将滑块设置为 -1 将忽略类别中的物品并不会删除任何内容\n
+		</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_guns">
+		<text>库存中双手武器的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_handguns">
+		<text>库存中手枪的最大数量Max amount of pistols in stock</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_knives">
+		<text>库存中刀具的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_outfits">
+		<text>库存中护甲的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_helmets">
+		<text>库存中头盔/面罩的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_weapon_attachments">
+		<text>库存中枪械配件的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_backpacks">
+		<text>库存中背包的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_explosives">
+		<text>库存中爆炸品(手雷, 火箭弹)的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_ammo_percent">
+		<text>待售弹药数量的百分比(相较于原始库存)</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_ammo_percent_desc">
+		<text>取值为-10则不影响弹药</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_sell_only_guns_ammo">
+		<text>只出售库存中已有枪械的弹药(如果是字面意思那么不兼容GAMMA因为没枪卖)</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_food">
+		<text>库存中食品(吃的, 喝的, 吸的)的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_food_desc">
+		<text>如果不是酒吧的商人库存减少50%</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_heal">
+		<text>库存中医疗品的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_heal_desc">
+		<text>如果不是医师的话库存减少50%</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_repair">
+		<text>库存中维修品的最大数量</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_repair_desc">
+		<text>如果不是技师的话库存减少50%</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_randomize">
+		<text>参数随机化</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_randomize_desc">
+		<text>真实的货物数量会在给定值的基础上随机波动</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_randomize_deviation">
+		<text>参数随机偏差百分比</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_randomize_deviation_desc">
+		<text>
+			100% - 货物数量在0到2倍之间波动\n
+			50% - 货物数量在0.5到1.5倍之间波动
+		</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_compatibility_help">
+		<text>
+			下方是针对某些模组特有物品的设置\n
+		</text>
+	</string>
+	<string id="ui_mcm_trader_destockifier_max_mags">
+		<text>库存中弹匣的最大数量(Mags Redux)</text>
+	</string>
+	
+</string_table>

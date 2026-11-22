@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_ace52">
+		<text>ACE 52式</text>
+	</string>
+	<string id="st_wpn_ace52_descr">
+		<text>一把IWI ACE步枪, IWI意为以色列军工(Israel Weapon Industries), 使用7.62x51口径, 专为满足现代战场的需求而打造, 使其成为寻求先进步枪的军队和特工的首选, 这支步枪在最不利和极端的条件下进行了实战验证, 被誉为终极突击步枪, 尽管枪体结构基于旧的 IMI 加利尔, 但先进的设计和工艺将其转变为更可靠, 更精确的战斗武器, 这把52式的枪机部分使用钢与高分子聚合物的混合工艺来代替机械加工的实心钢, 所以具有更好的人体工程学和准确性\n \n
+		%c[0,255,255,255]属性:\n
+		%c[d_cyan] • %c[0,255,255,255]原产地: %c[ui_gray_1]以色列\n
+		%c[d_cyan] • %c[0,255,255,255]制造商: %c[ui_gray_1]以色列军工\n
+		%c[d_cyan] • %c[0,255,255,255]生产年份: %c[ui_gray_1]2008\n
+		</text>
+	</string>
+
+	<string id="st_up_ace52_a5_name">
+		<text>安装重型枪管</text>
+	</string>
+	<string id="st_up_ace52_a5_descr">
+		<text>安装重型枪管以提升后坐力控制</text>
+	</string>
+	<string id="st_up_ace52_b1_name">
+		<text>安装枪托颊板</text>
+	</string>
+	<string id="st_up_ace52_b1_descr">
+		<text>枪托颊板(jia二声), 是安装在枪托上用来拖住腮部的垫板, 能让射手在瞄准射击时更好控制枪体后坐力</text>
+	</string>
+	<string id="st_up_ace52_c1_name">
+		<text>更换口径为7.62x54</text>
+	</string>
+	<string id="st_up_ace52_c1_descr">
+		<text>让这把枪使用特异区更常见的7.62x54弹药</text>
+	</string>
+</string_table>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!-- Stalkeri -->
+	<string id="outfit_novice_name">
+		<text>Regular outfit</text>
+	</string>
+	<string id="outfit_novice_description">
+		<text>A regular coat that's made out of of thick cloth that has a hood, a pair of jeans, and a pair of high boots. This set of clothes presumably came from outside the of the border of the Zone. It'll give you some protection against scratches or wounds, but it won't protect you against the Zone's anomalies.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 0-0-0%c[default]</text>
+	</string>
+	<string id="outfit_novice_exo1_name">
+		<text>Outfit with exoskeleton</text>
+	</string>
+	<string id="outfit_novice_exo1_description">
+		<text>A regular coat that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 0-0-0%c[default]</text>
+	</string>
+	<string id="outfit_novice_exo2_name">
+		<text>Outfit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="outfit_novice_exo2_description">
+		<text>A regular coat that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-0%c[default]</text>
+	</string>		
+	
+	<string id="novice_outfit_name_m">
+		<text>Anomalous coat</text>
+	</string>	
+	<string id="novice_outfit_description_m">
+		<text>This coat was stripped off a stalker who died in a "Fruit punch" anomaly. Having laid a long time in the anomaly, the coat obtained the ability to speed up metabolism.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 0-0-0%c[default]</text>
+	</string>	
+	<string id="novice_outfit_m1_exo1_name">
+		<text>Anomalous coat with exoskeleton</text>
+	</string>	
+	<string id="novice_outfit_m1_exo1_description">
+		<text>A anomalous coat that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 0-0-0%c[default]</text>
+	</string>	
+	<string id="novice_outfit_m1_exo2_name">
+		<text>Anomalous coat with KNIGHT exoskeleton</text>
+	</string>	
+	<string id="novice_outfit_m1_exo2_description">
+		<text>A anomalous coat that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-0%c[default]</text>
+	</string>
+	
+	<string id="stalker_outfit_name">
+		<text>Stalker suit</text>
+	</string>
+	<string id="stalker_outfit_description">
+		<text>Being produced by local craftsmen, stalker suits tend to be a wild combination of many types of common clothes and equipment. They usually consist of light armor and an outfit that's made out of rubberized cloth or tarpaulin. Most craftsmen put knee and elbowpads on the suits to protect the user's more senisitive joints against the environment. These suits give good against protection against bullet rounds or weaker mutants, but they're useless for raids deep inside the Zone - far dangerous mutants and anomalies exist there. On the flip side, this suit is inexpensive and can be repaired easily.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>
+	<string id="stalker_outfit_exo1_name">
+		<text>Stalker suit with exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo1_description">
+		<text>A stalker suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="stalker_outfit_exo2_name">
+		<text>Stalker suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo2_description">
+		<text>A stalker suit that's equipped with an KNIGHT external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="stalker_outfit_name_m1">
+		<text>Ghost's suit</text>
+	</string>
+	<string id="stalker_outfit_description_m1">
+		<text>Rumor has it that Ghost never carried a first aid kit with him. Everything heals on him like on a dog. They say that he has an unusual suit that he got on an anomaly.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="stalker_outfit_exo1_name_m1">
+		<text>Ghost's suit with exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo1_description_m1">
+		<text>Ghost's suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>
+	<string id="stalker_outfit_exo2_name_m1">
+		<text>Ghost's suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo2_description_m1">
+		<text>Ghost's suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>		
+	
+	<string id="stalker_outfit_name_m2">
+		<text>Tourist suit</text>
+	</string>
+	<string id="stalker_outfit_description_m2">
+		<text>The former owner of this suit was a real tourist and, it seems, often went on very difficult, on the verge of human endurance, hiking trips. He knew how to distribute correctly the weight that he carried, and which things to give preference to. The coat pockets and the educated choice of the backpack allow its owner to carry a heavy weight.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="stalker_outfit_exo1_name_m2">
+		<text>Tourist suit with exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo1_description_m2">
+		<text>A 'tourist' suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="stalker_outfit_exo2_name_m2">
+		<text>Tourist suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="stalker_outfit_exo2_description_m2">
+		<text>A 'tourist' suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="scientific_outfit_name">
+		<text>SERAFIM suit</text>
+	</string>
+	<string id="scientific_outfit_description">
+		<text>This suit was produced by one of Kiev's defence research institutes and represents an excellent alternative to the hand-made stalker suits. It's an excellent combination of an bulletproof vest, a closed cycle breathing system and an integrated system of anomalous field suppression. Due to the perfect choice of the materials, it's a good choice. The only disadvantage is its high price.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-2-2%c[default]</text>
+	</string>
+	
+<!-- banditi -->
+	<string id="bandit_outfit_name">
+		<text>Bandit jacket</text>
+	</string>
+	<string id="bandit_outfit_description">
+		<text>Traditional bandit clothing - a leather jacket with armor pieces sewed in. The protection it provides is completely inadequate for the harsh conditions of the Zone.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-0%c[default]</text>
+	</string>	
+	<string id="bandit_outfit_exo1_name">
+		<text>Bandit jacket with exoskeleton</text>
+	</string>
+	<string id="bandit_outfit_exo1_description">
+		<text>A bandit jacket that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-0%c[default]</text>
+	</string>	
+	<string id="bandit_outfit_exo2_name">
+		<text>Bandit jacket with KNIGHT exoskeleton</text>
+	</string>
+	<string id="bandit_outfit_exo2_description">
+		<text>A bandit jacket that's equipped with an external KNIGHT exoskeleton
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-0%c[default]</text>
+	</string>	
+	
+	<string id="bandit_plash_name">
+		<text>Bandit commander's jacket</text>
+	</string>	
+	<string id="bandit_plash_description">
+		<text>The typical garment a bandit commander wears in the Zone consists of a highly modified stalker outfit with a trenchcoat. Stalkers who were part of the Sin faction first wore these, then Strelok's group copied the design from them. Now it's used by bandit commanders for protection. These cost a fortune to buy! But still, they look cool.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-1-1%c[default]</text>
+	</string>
+	
+	<string id="bandit_plash_m1_name">
+		<text>Bandit veteran suit</text>
+	</string>
+	<string id="bandit_plash_m1_description">
+		<text>These suits are worn by veteran bandits. They're produced by skilled bandit craftsman under the guidance of Fraer, a professional arms seller with deep ties to the criminal underworld in Ukraine. Only Borov's most trusted commissars wear it. These suits consist of a modified stalker suit, and a trenchcoat that's made out of hardened leather with lining. This suit also has steel plates placed in key spots, which provides good protection from bullets. However, this suit offers little to no protection from the Zone's anomalies - although this makes sense in context because bandits never really go out of their way to wander through anomalies for artifacts.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-1%c[default]</text>
+	</string>
+	
+	
+<!-- Dolg -->	
+	<string id="dolg_outfit_name">
+		<text>PSZ-9d Duty suit</text>
+	</string>	
+	<string id="dolg_outfit_description">
+		<text>Produced by one of Kiev's defence research institutes and commissioned by the Duty faction. It is as simple and reliable as the standard PSZ-9 model, but due to the new materials, it provides good protection from various harmful impacts, including firearm damage. The vest still needs some work because it has no breathing protection system.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-1%c[default]</text>
+	</string>	
+	<string id="dolg_outfit_exo1_name">
+		<text>PSZ-9d Duty suit with exoskeleton</text>
+	</string>	
+	<string id="dolg_outfit_exo1_description">
+		<text>A PSZ-9d suit that's equipped with an external exoskeleton. 
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-1%c[default]</text>
+	</string>	
+	<string id="dolg_outfit_exo2_name">
+		<text>PSZ-9d Duty suit with KNIGHT exoskeleton</text>
+	</string>	
+	<string id="dolg_outfit_exo2_description">
+		<text>A PSZ-9d suit that's equipped with an external KNIGHT exoskeleton. 
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="dolg_outfit_name_m1">
+		<text>Modified PSZ-9d Duty suit</text>
+	</string>
+	<string id="dolg_outfit_description_m1">
+		<text>A modified version of the PSZ-9d suit that gives better protection against mutants.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-2%c[default]</text>
+	</string>	
+	<string id="dolg_outfit_m1_exo1_name">
+		<text>Modified PSZ-9d Duty suit with exoskeleton</text>
+	</string>
+	<string id="dolg_outfit_m1_exo1_description">
+		<text>A modified PSZ-9d suit that's equipped with an external exoskeleton. 
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-2%c[default]</text>
+	</string>	
+	<string id="dolg_outfit_m1_exo2_name">
+		<text>Modified PSZ-9d Duty suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="dolg_outfit_m1_exo2_description">
+		<text>A modified PSZ-9d suit that's equipped with an external KNIGHT exoskeleton. 
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-2%c[default]</text>
+	</string>	
+	
+<!-- Svododa -->
+	<string id="svoboda_heavy_outfit_name">
+		<text>Guardian of Freedom suit</text>
+	</string>
+	<string id="svoboda_heavy_outfit_description">
+		<text>This stalker bodysuit with reinforced body armor made by Freedom craftsmen represents a good compromise between combat and anomaly protection. The built-in body armor comprises armor plating and ten Kevlar layers, capable of stopping a pistol bullet. The suit uses the relatively expensive Sovereign compound for anomaly protection. Comes with an artifact container.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-2-3%c[default]
+		%c[100,255,0,0] \n \nDue to the bulky design of this suit, it's impossible to mount a 2nd generation KNIGHT exoskeleton on top of it.</text>
+	</string>	
+	<string id="svoboda_heavy_outfit_exo1_name">
+		<text>Guardian of Freedom suit with exoskeleton</text>
+	</string>
+	<string id="svoboda_heavy_outfit_exo1_description">
+		<text>A Guardian of Freedom suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-2-3%c[default]</text>
+	</string>	
+	<string id="svoboda_heavy_outfit_exo2_name">
+		<text>Guardian of Freedom suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="svoboda_heavy_outfit_exo2_description">
+		<text>A Guardian of Freedom suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-3%c[default]</text>
+	</string>	
+
+<!-- Naemniki -->
+	<string id="killer_outfit_name">
+		<text>Mercenary suit</text>
+	</string>
+	<string id="killer_outfit_description">
+		<text>Stalker suit from the Merc faction. Its design is based on the suit used by the special forces of Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-1%c[default]</text>
+	</string>	
+	<string id="killer_outfit_exo1_name">
+		<text>Mercenary suit with exoskeleton</text>
+	</string>
+	<string id="killer_outfit_exo1_description">
+		<text>A mercenary suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-1%c[default]</text>
+	</string>	
+	<string id="killer_outfit_exo2_name">
+		<text>Mercenary suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="killer_outfit_exo2_description">
+		<text>A mercenary suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="killer_outfit_name_m1">
+		<text>Reinforced mercenary suit</text>
+	</string>
+	<string id="killer_outfit_description_m1">
+		<text>There is chain mail sewn into the lining of this suit, which increases the level of protection this suit gives against bullets and mutant attacks. A PNV is also included with this suit.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-2%c[default]</text>
+	</string>	
+	<string id="killer_outfit_exo1_name_m1">
+		<text>Reinforced mercenary suit with exoskeleton</text>
+	</string>
+	<string id="killer_outfit_exo1_description_m1">
+		<text>A reinforced mercenary suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 3-1-2%c[default]</text>
+	</string>	
+	<string id="killer_outfit_exo2_name_m1">
+		<text>Reinforced mercenary suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="killer_outfit_exo2_description_m1">
+		<text>A reinforced mercenary suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-2%c[default]</text>
+	</string>	
+
+<!-- Ecologi -->
+	<string id="ecolog_outfit_name">
+		<text>SSP-99 Ecologist</text>
+	</string>
+	<string id="ecolog_outfit_description">
+		<text>A SSP-99 chemical protection suit specially designed for the Zone's conditions. It's used by scientific expeditions and the eco-stalkers who cooperate with them. It has an integrated air-filtering and air-conditioning system. It is resistant against heat and electricity, and it also provides good protection from radiation and biological anomalies. It's also resistant to chemically aggressive environments. It is not designed for combat, so it doesn't provide protection against bullets or grenade fragments.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 1-1-1%c[default]
+		%c[100,255,0,0] \n \nThe suit's life support system does not allow an exoskeleton to be mounted on top.</text>
+	</string>
+	<string id="protection_outfit_name">
+		<text>SSP-99M Suit</text>
+	</string>
+	<string id="protection_outfit_description">
+		<text>High quality modified SSP-99 suit. This variant of the SSP-99 suit was modified to provide better protection against bullets and grenade fragments. It is designed for the guards working with scientific expeditions. It provides good protection from radiation and biological anomalies. It is resistant to chemically aggressive environments and other effects dangerous to the body.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-1-1%c[default]
+		%c[100,255,0,0] \n \nThe suit's life support system does not allow an exoskeleton to be mounted on top.</text>
+	</string>
+	
+<!-- Voennie -->	
+	<string id="outfit_soldier_name">
+		<text>PSZ-7 suit</text>
+	</string>
+	<string id="outfit_soldier_description">
+		<text>A standard set of military fatigues with a bulletproof vest; the specific bulletproof vest intergrated with a gear rig that's currently used by the Ukrainian Army is known as the 'PSZ-7' (Personal Protection System). It gives protection against bullets and grenade fragments, but it won't protect you against anomalies at all.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-0%c[default]</text>
+	</string>	
+	<string id="outfit_soldier_exo1_name">
+		<text>PSZ-7 suit with exoskeleton</text>
+	</string>
+	<string id="outfit_soldier_exo1_description">
+		<text>A PSZ-7 suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-0%c[default]</text>
+	</string>	
+	<string id="outfit_soldier_exo2_name">
+		<text>PSZ-7 suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="outfit_soldier_exo2_description">
+		<text>A PSZ-7 suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-0%c[default]</text>
+	</string>	
+	
+	<string id="specops_outfit_name">
+		<text>Beryl-5M suit</text>
+	</string>
+	<string id="specops_outfit_description">
+		<text>The Beryl-5M suit is a PS5-series suit that's been combined with beryllium sputter, making it ideal for use in the Zone. This suit is designed for assault operations in highly radioactive areas, although it is ineffective in areas of high anomalous activity. The suit makes its way to stalkers through the military, who exchange it for loot. Does not come with an artifact container.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-1%c[default]
+		%c[100,255,0,0] \n \nDue to the bulky design of this suit, it's impossible to mount a 2nd generation KNIGHT exoskeleton on top of it.</text>
+	</string>	
+	<string id="specops_outfit_exo1_name">
+		<text>Beryl-5M suit with exoskeleton</text>
+	</string>
+	<string id="specops_outfit_exo1_description">
+		<text>A Beryl-5M suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-1%c[default]</text>
+	</string>
+	<string id="specops_outfit_exo2_name">
+		<text>Beryl-5M suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="specops_outfit_exo2_description">
+		<text>A Beryl-5M suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="specnaz_outfit_name_m1">
+		<text>Healing Beryl-5M suit</text>
+	</string>	
+	<string id="specnaz_outfit_description_m1">
+		<text>The fabric of the suit is saturated with a streptozoidal lotion, which speeds up the healing of wounds.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-1%c[default]
+		%c[100,255,0,0] \n \nDue to the bulky design of this suit, it's impossible to mount a 2nd generation KNIGHT exoskeleton on top of it.</text>
+	</string>
+	<string id="specnaz_outfit_exo1_name_m1">
+		<text>Healing Beryl-5M suit with exoskeleton</text>
+	</string>	
+	<string id="specnaz_outfit_exo1_description_m1">
+		<text>A healing Beryl-5M suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-1%c[default]</text>
+	</string>	
+	<string id="specnaz_outfit_exo2_name_m1">
+		<text>Healing Beryl-5M suit with KNIGHT exoskeleton</text>
+	</string>	
+	<string id="specnaz_outfit_exo2_description_m1">
+		<text>A healing Beryl-5M suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="military_outfit_name">
+		<text>SKAT-9M suit</text>
+	</string>
+	<string id="military_outfit_description">
+		<text>This SKAT-9M bulletproof military suit is designed for assault operations in areas of anomalous activity. It includes a PSZ-12p heavy military bulletproof suit, an integrated compensation suit and a Sphere-12M helmet. It provides perfect protection from bullets and splinters and it doesn't decrease the soldier's mobility. It has a balanced system of anomaly protection.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-2%c[default]
+		%c[100,255,0,0] \n \nDue to the bulky design of this suit, it's impossible to mount a 2nd generation KNIGHT exoskeleton on top of it.</text>
+	</string>
+	
+	<string id="military_outfit_exo1_name">
+		<text>SKAT-9 suit with exoskeleton</text>
+	</string>
+	<string id="military_outfit_exo1_description">
+		<text>A SKAT-9 suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 4-3-2%c[default]</text>
+	</string>	
+	<string id="military_outfit_exo2_name">
+		<text>SKAT-9 suit with KNIGHT exoskeleton</text>
+	</string>
+	<string id="military_outfit_exo2_description">
+		<text>A SKAT-9 suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-2%c[default]</text>
+	</string>	
+	
+<!-- Monolit -->
+	<string id="monolit_outfit_name">
+		<text>Monolith suit</text>
+	</string>	
+	<string id="monolit_outfit_description">
+		<text>Stalker suit from the Monolith faction. The producer is unknown. Its protective properties are slightly worse then those of the PSZ-9a military bulletproof vest. Its structure is similar to the suit popular with neutral stalkers which combines a bulletproof vest and a radiation protection suit. It provides good protection from gunfire. Its level of anomaly protection is low due to the absence of an air filtering system.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>
+	
+	<string id="monolit_outfit_exo1_name">
+		<text>Monolith suit with exoskeleton</text>
+	</string>	
+	<string id="monolit_outfit_exo1_description">
+		<text>A Monolith suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="monolit_outfit_exo2_name">
+		<text>Monolith suit with KNIGHT exoskeleton</text>
+	</string>	
+	<string id="monolit_outfit_exo2_description">
+		<text>A Monolith suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>
+	
+	
+	<string id="monolit_outfit_m1_name">
+		<text>Strange Monolith suit</text>
+	</string>	
+	<string id="monolit_outfit_m1_description">
+		<text>This Monolith suit is unusual. There's a strange attachment near the lumbar support and in helmet. It looks like a common feature found in many Monolith suits, but upon closer inspection it looks to be nearly out of place for a common Monolith suit. This attachment has a powerful current collector, which is well grounded, and it seems to provide good protection against psy-related damage. Obvoiusly, this is a suit that's meant to be used in places with high psychotronic emissions or for experiments with psy-mutants. It also looks like this outfit was a prototype for the more common Monolith suit.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>
+	
+	<string id="monolit_outfit_exo1_m1_name">
+		<text>Strange Monolith outfit with exoskeleton</text>
+	</string>	
+	<string id="monolit_outfit_exo1_m1_description">
+		<text>A strange Monolith suit that's equipped with an external exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 2-0-1%c[default]</text>
+	</string>	
+	<string id="monolit_outfit_exo2_m1_name">
+		<text>Strange Monolith outfit with KNIGHT exoskeleton</text>
+	</string>	
+	<string id="monolit_outfit_exo2_m1_description">
+		<text>A strange Monolith suit that's equipped with an external KNIGHT exoskeleton.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>	
+	
+	<string id="monolit_exoskeleton_name">
+		<text>Monolith exoskeleton</text>
+	</string>
+	<string id="monolit_exoskeleton_description">
+		<text>This suit is actually an exoskeleton attached to a protective suit. Its origin is unknown. The exoskeleton itself is made out of a strange material that has properties unknown to science. The exoskeleton itself doesn't augment the user's strength that much, but it's very lightweight and mobile. The suit that's attached to the exoskeleton gives good protection from bullets, radiation, mutants, and anomalies. There's also a strange-looking attachment on the suit itself that's near the suit's lumbar support area.
+		%c[100,50,250,80] \n \nBulletproof rating (body-head-neck): 5-4-1%c[default]</text>
+	</string>
+	
+<!-- Exosceleti -->
+	<string id="exo1_outfit_name">
+		<text>Exoskeleton</text>
+	</string>
+	<string id="exo1_outfit_description">
+		<text>An experimental sample of a military exoskeleton. It was never mass-produced due to its very high cost and design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. Comes with a built-in artifact container.</text>
+	</string>
+	<string id="exo2_outfit_name">
+		<text>KNIGHT exoskeleton</text>
+	</string>
+	<string id="exo2_outfit_description">
+		<text>The KNIGHT exoskeleton has been designed to be used in combat, augmenting the mobility and stamina of any soldier that wears it. They are produced by a classified Russian defense contractor, and can be bought via special order. It's mostly made out of lightweight composites, so it's considerably lighter and more mobile than older exoskeletons. It's powered by an advanced power source that's small, efficient, and compact, and it also relies on a artifical muscle-related technology to help augment the user's strength, although it can't carry as much as older exoskeletons - those were purely designed to help augment the user's strength and mobility without much regard for being viable for use in combat. As mentioned, this was designed to be used in combat, so some sacrifices had to made during its design. This exoskeleton can be equipped over any outfit that allows it to mount to the user's back, hands, and legs.</text>
+	</string>
+	<string id="exo_control_btn_hint">
+		<text>Remove exoskeleton</text>
+	</string>	
+	
+<!-- Multiplayer -->
+	<string id="mp_exo_outfit_description">
+		<text>Exoskeleton provides excelent protection of wounds and fragments, but slows his host. Can be damaged with armor piercing ammo.</text>
+	</string>
+	<string id="mp_exo_outfit_name">
+		<text>Exoskeleton</text>
+	</string>
+	<string id="mp_military_outfit_description">
+		<text>Military outfit was designed for combat operations. Provides excellent protection of wounds and fragments, has good mobility. Can be damaged with armor piercing ammo.</text>
+	</string>
+	<string id="mp_military_outfit_name">
+		<text>Military outfit</text>
+	</string>
+	<string id="mp_scientific_outfit_description">
+		<text>This outfit was designed for scientific activity in the Zone. Has closed air purification system and built-in system of the inhibition of anomaly impacts, so it's best against anomalies. Very fragile due to low protection. Has built-in container for artifacts.</text>
+	</string>
+	<string id="mp_scientific_outfit_name">
+		<text>Scientific outfit</text>
+	</string>		
+</string_table>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_wepl_hit_effect_title">
+		<text>击中/受击反馈</text>
+	</string>
+	<string id="ui_mcm_menu_wepl_hit_effect">
+		<text>击中/受击反馈</text>
+	</string>
+
+
+	<!-- Main configs -->
+	<string id="ui_mcm_wepl_hit_effect_enable_stalker">
+		<text>启用受击反馈</text>
+	</string>
+
+	<string id="ui_mcm_wepl_hit_effect_enable_npc">
+		<text>启用击中反馈</text>
+	</string>
+
+	<string id="ui_mcm_wepl_hit_effect_volume">
+		<text>受击反馈的音量</text>
+	</string>
+
+</string_table>

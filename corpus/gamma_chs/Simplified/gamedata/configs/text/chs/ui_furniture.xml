@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="st_interact">
+		<text>使用 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_place_popup">
+		<text>放置物品 ($$ACTION_USE$$)</text>
+	</string>
+	<string id="st_far_popup">
+		<text>太远了放不了</text>
+	</string>
+	<string id="st_collision_warning">
+		<text>无法放置物体 - 它与某物发生碰撞</text>
+	</string>
+	<string id="st_rotation_label">
+		<text>旋转偏移</text>
+	</string>
+	<string id="st_vertical_label">
+		<text>垂直偏移</text>
+	</string>
+	<string id="st_enable_collision">
+		<text>启用碰撞</text>
+	</string>
+	<string id="st_disable_collision">
+		<text>禁用碰撞</text>
+	</string>
+	<string id="st_pickup">
+		<text>捡起</text>
+	</string>
+    <string id="st_close">
+		<text>关闭</text>
+	</string>
+    <string id="st_turn_on">
+		<text>打开</text>
+	</string>
+    <string id="st_turn_off">
+		<text>关闭</text>
+	</string>
+    <string id="st_take_fuel">
+		<text>取出燃料</text>
+	</string>
+    <string id="st_add_fuel">
+		<text>添加燃料</text>
+	</string>
+	<string id="st_access_stash">
+		<text>打开藏匿处</text>
+	</string>
+	<string id="st_use_workshop">
+		<text>使用工作台</text>
+	</string>
+	<string id="st_fuel">
+		<text>燃料</text>
+	</string>
+	<string id="st_duration">
+		<text>持续</text>
+	</string>
+
+	<string id="st_autoplay">
+		<text>自动演奏</text>
+	</string>
+	<string id="st_configure">
+		<text>设置</text>
+	</string>
+	<string id="st_tempo">
+		<text>速度</text>
+	</string>
+	<string id="st_transpose">
+		<text>移调</text>
+	</string>
+	<string id="st_volume">
+		<text>音量</text>
+	</string>
+	<string id="st_instrument">
+		<text>乐器</text>
+	</string>
+	<string id="st_filter_by_tag">
+		<text>按标签过滤</text>
+	</string>
+</string_table>

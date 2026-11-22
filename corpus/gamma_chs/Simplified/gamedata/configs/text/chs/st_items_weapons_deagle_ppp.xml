@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_desert_eagle_gold">
+		<text>沙漠之鹰 (金色)</text>
+	</string>
+	
+	<string id="st_wpn_desert_eagle_black">
+		<text>沙漠之鹰 (黑色)</text>
+	</string>
+
+	<string id="st_wpn_desert_eagle_dhampyr">
+		<text>沙漠之鹰 "吸血鬼"</text>
+	</string>
+	<string id="st_wpn_desert_eagle_dhampyr_descr">
+		<text>沙漠之鹰更现代化的版本，在枪身框架和滑块上带有内置补偿器和皮卡汀尼导轨。 虽然如此，它仍然有相当大的后坐力，但比任何其他沙漠之鹰都低得多，更不用说"大酒瓶"了，枪管的轻微改进也提高了一点精度，并且可以插入一些瞄准镜。 它看似外形上有变化，但看看网页和杂志，说这种武器使用 .50AE弹药，但这把枪正在使用 .357 口径弹药。 毫无疑问，它是在特异区中被修改的，也许是"巧手"尼博本人修改的。\n \n
+		%c[ui_gray_2]描述: \n
+		%c[d_purple] • %c[ui_gray_2] ACOG3.5倍瞄准镜,Barska ES瞄具 AC10632瞄具,C-more导轨战术瞄具</text>
+	</string>
+	
+	<string id="st_up_deagle_127_name">
+		<text>口径改造:12.7x55mm</text>
+	</string>
+
+	<string id="st_up_deagle_127_descr">
+		<text>枪本身附带"巧手"尼博的改造设计图, 使它可以将口径更改为强大的12.7x55mm, 但代价是弹匣中只有一发子弹, 此改造不可逆转</text>
+	</string>
+
+</string_table>

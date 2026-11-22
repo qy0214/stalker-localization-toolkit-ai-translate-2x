@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia__notes">
+		<text>笔记</text>
+	</string>
+	
+	<string id="encyclopedia__notes__state">
+		<text>装备状态</text>
+	</string>
+	<string id="encyclopedia__notes__state_text">
+		<text>
+			装备的状态列表\n \n
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes__ironman">
+		<text>铁人模式状态</text>
+	</string>
+	<string id="encyclopedia__notes__ironman_text">
+		<text>
+			铁人模式的状态:\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_mysteries_of_the_zone">
+		<text>特异区之谜</text>
+	</string>
+	<string id="encyclopedia__notes_mysteries_of_the_zone_text">
+		<text>
+			史特洛克的一个老朋友藏在这儿附近,对于我来说这也许是个与他碰面并且了解特异区的好机会. 问题在于我完全不知道他的位置.	
+			\n红森林里面的老头"守林人列斯尼克",也许知道他在哪儿,他们看起来好像以前有过联系.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_living_legend">
+		<text>史小强回来了?</text>
+	</string>
+	<string id="encyclopedia__notes_living_legend_text">
+		<text>
+			有谣言说,一位传奇的潜行者最近回到了特异区,他是少数几个活着抵达特异区中心的人.
+			\n人们都在谈论这件事... %s也许想要见我.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_mortal_sin">
+		<text>新的帮派?</text>
+	</string>
+	<string id="encyclopedia__notes_mortal_sin_text">
+		<text>
+			空气中弥漫着紧张的气氛,有人在附近见到了四处神游的潜行者,他们一边悼念着经文,一边安利着其他人加入他们的"氏族",但没人知道他们的目标和意图.
+			\n新的能量风暴已经出现,我得去见%s.
+		</text>
+	</string>
+
+	<string id="encyclopedia__notes_recipe_cooking_1">
+		<text>大厨笔记</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_cooking_1_text">
+		<text>
+			几页手写的纸片,描述了在特定温度下把怪物肉泡在酒精里处理的方法,笔记上说这样能减少受辐射污染的肉的危害. 看来作者是个经验丰富的特异区大佬.
+		</text>
+	</string>
+
+	<string id="encyclopedia__notes_letter_memoirs_1_of_2">
+		<text>潜行者日记 (第一部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_memoirs_1_of_2_text">
+		<text>
+			一个塞在卡套里以防磨损的老旧褪色的笔记本. 然而它并没有经受住时间的摧残,只有一小部分文字看得清.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_memoirs_1_of_2_text2">
+		<text>
+			\n \n"我觉得我得把这些东西写下来,也许这会让我更好过一些,我希望我死后有人能够看到这个,这样他们就不会和我犯下相同的错误.
+			\n我没有什么朋友,到了特异区之后更是傻蛋一个,那些蠢货交易商都认为我是个自闭症: 扎顿的胡子哥总是用他的笑容对着我,亚诺夫的夏威夷又喜欢摆出一份轻松的样子;去你妈的,我只是想买点吃的喝的还有子弹而已.
+			\n \n我写这个是为了让人知道那个晚上发生了什么,也许就是那点刺激把我整成了这个样子. 好吧,虽然说我是独自一人来特异区的,但其实抵达之后就立即碰见了另外一个新手,他对地质矿物很感兴趣.
+			\n他非常喜欢收集石头,各种各样的,所以说特异区里的神器,奇石就是他的目标. 他确实收集了很多,只不过因此在肚子上长了个巨大的肿瘤,你懂的,他经常整些呕吐,腹泻之类的废物操作. 他就像个怀孕的女人,只不过是怀的不是孩子,而是癌症,他狗日的还用自己第一条狗的名字给这玩意儿取了名字 - 真是恶趣味.
+			\n但不得不说,他确实是个合格的伙伴. 我们从来不攻击土匪,尽可能避着变异怪物,然后只是在异常点周围闲逛捡捡石头,运气好还能捡到神器."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_memoirs_2_of_2">
+		<text>潜行者日记 (第二部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_memoirs_2_of_2_text">
+		<text>
+			一个塞在卡套里以防磨损的老旧褪色的笔记本. 然而它并没有经受住时间的摧残,只有一小部分文字看得清.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_memoirs_2_of_2_text2">
+		<text>
+			\n \n"他们说,某个洞穴里面 - 或者说是地底裂缝里面有一个异常点,那里有着大量的神器,但是出于某些原因没人想去那里.
+			\n"真是一些傻子和蠢货"我们想到. 为什么他们就没有胆量跳下去然后发一笔财,从此之后过上轻松的生活呢? 
+			\n \n我也不知道我们哪儿来的勇气,然后我们就收拾好装备直接奔向那里,然而我们还没有来得及仔细看看,一个黑影便朝我们奔来,混乱之中,我被绊倒了,之后就昏了过去.
+			\n过了好一会儿,我才醒来,听到有什么东西在呜咽,我一开始以为那是动物,但我立刻便看到我的朋友就躺在我的面前. 他全身的皮都被外力剥开了,裸露在外的肌肉不断渗出血液,折断的骨头从伤口裂了出来,他痛苦的捂着肚子,慢慢地朝洞穴外爬去.
+			\n"究竟发生了什么?" 我想不出来合理的解释,此时我仍然带着我的备用手枪,出于应激反应我立刻掏枪射击. 我总共有20发子弹并且关掉了手枪的快慢机,当还剩7发子弹时,有什么东西抓住了我的手,让我继续扣动扳机.
+			\n那时我完全不知道我的枪究竟对向哪儿但是我完全停不下来,突然,那股外力撤走了,我惊慌失措,即使弹匣打空了,我仍然扣着扳机,因为我知道我只要停下来,我就会像我的朋友一样. 我实在是没有勇气再呆在那里了,我甚至不敢拿走我朋友的狗牌,唯有仓皇逃走.
+			\n \n我该怎么给他人讲起这件事呢?在经历如此恐怖之后,一想到特异区能够如此轻易地带走这一切,我又怎么还敢与其他人结伴呢?特异区的友谊伴随着代价和风险,短暂而温暖的情谊往往不值得这些,尤其是当你以这样的方式失去它的时候..."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_freedom_manual_1_of_2">
+		<text>审讯技巧: 基础篇(第一部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_freedom_manual_1_of_2_text">
+		<text>
+			一本教学书,右上角印了个很大的自由军标志,还画了个被手枪指着头跪在地上的可怜虫. 书名是"审讯技巧: 基础篇",里面的东西都是用自由军风格的字词编写的.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_freedom_manual_1_of_2_text2">
+		<text>
+			\n \n"我完全就不应该写这玩意儿因为很显然特异区里的老油条都懂的,但是,呃,说真的,这种事情不应该摆在台面上来... 我是说,不要把这里的内容给任何人说,不要把这本手册给任何人看,也不要就这样卖掉它.
+			\n直接把它扔掉,烧掉它,或是把它给你最信任的人,你不会希望有人知道这个的,如果他们用这上面的东西来对付你呢?你有藏物点对吧?所以说把这个东西保管好,不要说我没警告过你.
+			\n \n每个人都有那么一个藏物点,哪怕是最傻逼的土匪也他妈有一个,他们在藏物点存一些食物和子弹,这里人人都会这样做. 你收集些钱,卖一些神器或是变异怪物的肢体标本,搜尸然后再去买些武器弹药,这样当你倒霉的时候就不会是两手空空对着危险傻笑了,而是拿着什么可以救你命的东西努力反抗.	
+			\n \n特异区是个危险的地方,你也总会碰到那些危险的事的,到那个时候,可没人会来帮你."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_freedom_manual_2_of_2">
+		<text>审讯技巧: 基础篇 (第二部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_freedom_manual_2_of_2_text">
+		<text>
+			一本教学书,右上角印了个很大的自由军标志,还画了个被手枪指着头跪在地上的可怜虫. 书名是"审讯技巧: 基础篇",里面的东西都是用自由军风格的字词编写的.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_freedom_manual_2_of_2_text2">
+		<text>
+			\n \n"然而,你可以抱着一个更好的心态,如果你想知道某个人的箱子在哪儿,不妨好好挑挑你的猎物.	
+			\n当一切就绪之后,你懂的,那个倒霉鬼独自一人,周围空荡荡的时候,就从精神上击垮他. 朝着他们的手臂或大腿开火,让他们感到害怕,剥掉他们几层皮,直到他把你当作这世上最"亲近"的"朋友",最后就等着他们扔掉武器跪倒在你面前吧.
+			\n和他们交谈,和气中带点恐吓,帮助中带点威胁,别杀了他们,他们毕竟还是人类. 特异区已经有够多的变异怪物了,不要让这一切变得更加糟糕,况且,你只是想要他们的藏匿物,对吧?告诉他们你会把脸皮给割下来,把他们吓个半死,让他们认为他们不再需要他们的物品了. 这时候,他们往往立即放弃然后逃跑了."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_stalker_letter_1_of_2">
+		<text>回忆录 (第一部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_1_of_2_text">
+		<text>
+			从某本回忆录中撕下的几张破纸. 从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 作者不详.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_1_of_2_text2">
+		<text>
+			\n \n"我仍然能够在背上感觉到异常点释放的热量,哪怕是我此时正坐在斯卡多夫斯克号 - 一个安全的地方,远离危险,远离那些该死的"炉子". 说真的,你不会知道离一群异常点如此之近是怎样一种体验.
+			\n呃,我去,我的背现在更痛了,天哪,它现在就是我的生物版本异常点探测仪. 当你被燃烧或者是毒性的异常点漂那么一下后,那种感觉不会轻易地消失,就像是特异区给你身体里打入了什么,我想,"特异区的印记".	
+			\n \n但是梦魇,它们才是最难受. 当看到那些违背物理规律的事情之后,你会失去所有信心的.	
+			\n试想一下: 我能够在漆黑的夜里干掉10只朝我冲来的吸血怪,这不是难事,你懂的,我是一个硬汉. 但是那些无视正常物理定律的异常点才是真的恐怖,我常常在想"这些东西是真的吗?我之前所学到的又是真的吗?"这样一来,我一直都把整个特异区当作一场噩梦,我是多么希望醒来,但我又害怕醒来之后的世界就像特异区一样. 这种思想一直伴随着我的多个夜晚,每当想到此处便会从床上尖叫着跳起来.	
+			\n按照这样的逻辑,我不可避免地越陷越深."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_stalker_letter_2_of_2">
+		<text>回忆录 (第二部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_2_of_2_text">
+		<text>
+			从某本回忆录中撕下的几张破纸. 从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 作者不详.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_2_of_2_text2">
+		<text>
+			\n \n"每次我想到这件事的时候,我的后背总会颤抖发红.
+			\n那件事过了之后的4个月,我都没有在接近过异常点,一直都以打猎维持生活,但是你知道的,对于我们来说,打猎可坚持不了多久.
+			\n背上的伤口还是像以前一样,有些时候我多么希望我没有从那个燃烧村庄里活着回来,也许当时我成了野猪的食物才是最好的. 说到野猪,它们都是一群傻逼,直接一群群的冲进那些燃烧异常点.	
+			\n如果不是因为有燃烧的农场在的话,斯卡多夫斯克号早就被野猪攻破了,子弹根本就不够抵御它们. 如果不是因为农场 - 这个BBQ工厂,野猪的肉说不定还能处理后拿来吃掉.
+			\n \n有些时候我回到扎顿去看烟火,但是我的背仍然能感到疼痛以至于背着个包都能让我感到难受. 我回到扎顿是因为我感觉我在这儿落下了什么东西 - 我能感到它在呼唤我. 由于我背上的伤口,现在我只能侧着身子睡觉.
+			\n我讨厌侧着身子睡觉,以前我都是躺着睡的,特异区甚至就这样直接改变了你的习惯..."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_ecologist_report_1_of_3">
+		<text>僵尸调查报告 编号39B rev. 2 (第一部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_1_of_3_text">
+		<text>
+			带有生态学家标志的印刷文件. 属于机密文件,由以下人员签名: %c[pda_white]阿卡迪·克维特科夫斯基%c[ui_gray_1]
+			\n实验室和研究碉堡RX12初级科学官
+			\n \n僵尸调查报告 编号39B rev. 2 
+			\n \n• 日期: %c[pda_white]19.03.2014%c[ui_gray_1]
+			\n• 份数: %c[pda_white]34%c[ui_gray_1]
+			\n• 页码: %c[pda_white]第1页%c[ui_gray_1] 总计 %c[pda_white]3页%c[ui_gray_1]
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_1_of_3_text2">
+		<text>
+			  \n \n"这些当地人所称呼的"僵尸",实际指的是一种生物,这种生物缺乏感官能力,已经不再是活着的人了.	
+			  \n研究数据显示它们的脑不再进行任何思想进程,神经活动也几乎不再存在,也就是说,它们实际上处于脑死亡的状态,但是实地测验却发现它们任然可以进行低等的生命活动(有人说这是生物的本能反应,但事实上二者大不相同).	
+			  \n \n有一种解释是它们的下行神经束的末端部分在上行纤维束接收到刺激后仍然可以释放递质,这样一来它们的身体便会以特定的形式运动. 当面临危险时,它们往往展现出极度暴力,所以在接近它们时应该极其小心和谨慎.
+			  \n \n实验证明,一旦它们的脑被影响之后,它们身体各个部分可以自我供养,这个结果是十分令人震惊的,也是具有极高科学价值的 - 这意味着身体的各个器官可以在缺乏营养的状况下独立生存. 其中最为成功的是一个科研小组成功地在缺少血流和其他器官的条件下让体外肝和体外心存活了3个月.
+			  \n深度研究并没有发现分子和原子结构上的异常."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_ecologist_report_2_of_3">
+		<text>僵尸调查报告 编号39B rev. 2  (第二部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_2_of_3_text">
+		<text>
+			带有生态学家标志的印刷文件. 属于机密文件,由以下人员签名: %c[pda_white]阿卡迪·克维特科夫斯基%c[ui_gray_1]
+			\n实验室和研究碉堡RX12初级科学官
+			\n \n僵尸调查报告 编号39B rev. 2  
+			\n \n• 日期: %c[pda_white]21.03.2014%c[ui_gray_1]
+			\n• Packet: %c[pda_white]34%c[ui_gray_1]
+			\n• 页码: %c[pda_white]第2页%c[ui_gray_1] 总计 %c[pda_white]3页%c[ui_gray_1]
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_2_of_3_text2">
+		<text>
+			\n \n"我们的发现能够对这些生物在四肢,盆腔部以及次要器官受到大量伤害后仍然可以毫无困难地进行活动进行合理的解释.
+			\n它们的行动受阻,奔跑更是不可能的,但是拔枪出来扣动扳机的反射行为竟然没被影响,除此之外,使用简单的工具或设备的能力也没有被影响.
+			\n \n在这种生物"失活"之后,请不要使用词语"死掉",这是因为生物意义上的"失活"要比"死掉"更加中性化,这样才能将它们所维持的身体同正常人类区分开来,或者是减轻使它们"失活"的懊悔.
+			\n"失活"需要物理中断它们运动系统的连接,这需要在它们脑区域和脊髓上施以打击,最好的方式是弹道创伤.
+			\n \n所有科研人员必须记住: 即使是在"失活"之后,它们的四肢仍然会运动,所以必须予以预防措施. 最有效的方法是用手术器具移除颈椎骨和脑干,在缺乏合适装备的情况下则可以使用锋利物品."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_ecologist_report_3_of_3">
+		<text>僵尸调查报告 编号39B rev. 2 (第三部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_3_of_3_text">
+		<text>
+			带有生态学家标志的印刷文件. 属于机密文件,由以下人员签名: %c[pda_white]阿卡迪·克维特科夫斯基%c[ui_gray_1]
+			\n实验室和研究碉堡RX12初级科学官
+			\n \n僵尸调查报告 编号39B rev. 2 
+			\n \n• 日期: %c[pda_white]29.03.2014%c[ui_gray_1]
+			\n• Packet: %c[pda_white]34%c[ui_gray_1]
+			\n• 页码: %c[pda_white]第3页%c[ui_gray_1] 总计 %c[pda_white]3页%c[ui_gray_1]
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_ecologist_report_3_of_3_text2">
+		<text>
+			\n \n"在部分极端情况下,"僵尸"会表现出高级动物的本能:
+			\n它们会扔掉武器并且躲避战斗,这些生物对于我们的研究至关重要,所以并不建议对它们展开"失活"措施.
+			\n实验室的隔离措施与深度研究是十分重要的. 神经生态学家们对这些生物十分感兴趣,因为对其脑干的研究在理论上能够给阿尔茨海默病和其他疾病的临床治疗带来突破.
+			\n \n在执行"失活"手段时,尽量避免损伤生物的肾脏和心,因为这些器官仍然可以用于移植用途. 从一些失去了活动能力的"僵尸"身上收集器官是被允许的,但是要当心当地的潜行者与生物的情感联系.
+			\n \n如果在收集时遭遇了无法避免的潜行者活动,有两种方法能够最小化减少冲突的可能.
+			\n第一,对于缺乏经验的潜行者来说,你只需要给他们看看生物的眼,这十分有效,因为瞳孔括约肌和开大肌的失效导致整个眼球缺乏人类表现.
+			\n第二,面对有经验的潜行者来说,这通常更为容易,因为他们能够更好地压抑住自身的情感. 但是,科研人员仍然需要具备一定的谈判能力以防对方完全失去理性."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_monolith_prayer_1_of_3">
+		<text>黑石福音 (第一部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_1_of_3_text">
+		<text>
+			一份没标题的文件,有几个接在一起的段落. 里面经常提到许愿石,说明它具有宗教性质. 这张文件保存得很好,这表明它经受了很好的照顾以免损坏. 祷文上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_1_of_3_text2">
+		<text>
+			\n \n"噢,黑石!
+			\n我们向您祈祷!
+			\n噢,黑石!
+			\n我们子夜中的长明灯!
+			\n噢,黑石!
+			\n我们脚步中充满赤诚!
+			\n我们迈向罪恶的世人!
+			\n \n噢,黑石!
+			\n宽恕我的不洁灵魂!
+			\n噢,黑石!
+			\n敞开我的命运之门!
+			\n噢,黑石!
+			\n让我们借您的力量去点亮星辰!
+			\n噢,黑石!
+			\n让我们在您的光芒中迈向敌人!
+			\n噢,黑石!
+			\n请让我们见证您的光辉永恒!
+			\n \n噢,黑石!
+			\n我们向您祈祷!
+			\n噢,黑石!
+			\n我们是您的后裔!
+			\n噢,黑石!
+			\n我们救赎中的唯一希冀!
+			\n噢,黑石!
+			\n您的名字永驻于我的记忆! "
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_monolith_prayer_2_of_3">
+		<text>黑石福音 (第二部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_2_of_3_text">
+		<text>
+			一份没标题的文件,有几个接在一起的段落. 里面经常提到许愿石,说明它具有宗教性质. 这张文件保存得很好,这表明它经受了很好的照顾以免损坏. 祷文上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_2_of_3_text2">
+		<text>
+			\n \n"黑石战士们,站起来!
+			\n噢黑石,我们的明灯!
+			\n唤醒我们的魂魄与心灵.
+			\n请您洗浴我们!
+			\n请您抹消我们的疑惑与犹豫!
+			\n噢黑石,我们的希望!
+			\n我们是您的战士!
+			\n我们愿因您献身
+			\n我们愿为您献魂
+			\n我们愿与您共存!
+			\n噢黑石,我们将为您征服一切!
+			\n吃我肉!
+			\n喝我血!
+			\n汲我魂!
+			\n然后再次共生!
+			\n你我为一,噢黑石."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_monolith_prayer_3_of_3">
+		<text>黑石福音 (第三部分)</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_3_of_3_text">
+		<text>
+			一份没标题的文件,有几个接在一起的段落. 里面经常提到许愿石,说明它具有宗教性质. 这张文件保存得很好,这表明它经受了很好的照顾以免损坏. 祷文上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolith_prayer_3_of_3_text2">
+		<text>
+			\n \n"噢黑石!
+			\n您是我们共同的希冀.
+			\n而我们就是义兄义弟.
+			\n我们是黑石光芒下的兄弟.
+			\n为您的意志而死.
+			\n为您的威名而死.
+			\n为您的光辉而死.
+			\n而死亡不过是另一段开始.
+			\n我们念着您的名字前进,噢黑石! "
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_monolithian_thoughts">
+		<text>黑石成员的日记</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolithian_thoughts_text">
+		<text>
+			一份手写文件. 一开始的文字涂涂抹抹潦草无比,就好像作者患有严重的精神疾病. 有趣的是越靠后文字越干净,字母也越清晰,最后的一些单词简直像是打印出来的. 日记上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_monolithian_thoughts_text2">
+		<text>
+			\n \n"现在我只还记得,当时我身处黑暗之中,我什么也看不见. 这样过了好几个小时后,我突然看见了一束光!它是如此的明亮,如此的柔和... 我想触摸它,我想感受它,我知道它能够帮助我,拯救我.
+			\n \n在我触摸了那束光芒之后,我忘记了一切,忘记了我以往的生活,以往的黑暗,现在我面前只有那束光.
+			\n它的名字是黑石,它拯救了我,我将毕生感激.
+			\n有些时候我能回想到各个人的面孔,有女人的,也有孩子的... 他们是我的家人吗?我穿着白大褂,也许我是个生态学家... 雷达站... 这个糟糕的词语... 不!那就是黑暗!它想要杀死我!我不会让它得逞的!
+			\n没有退路了,我面前只有那束光芒,朝着它进发!为了黑石!"
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_letter_to_outside">
+		<text>给娜塔莉的信</text>
+	</string>
+	<string id="encyclopedia__notes_letter_letter_to_outside_text">
+		<text>
+			显然是一名潜行者写给特异区外的人的信,很可能是他的妻子或情人. 介于你现在正握着它... 这封信肯定从未送到过娜塔莉的手中.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_letter_to_outside_text2">
+		<text>
+			\n \n"亲爱的娜塔莉,
+			\n \n你过得如何?我们的孩子怎么样了?
+			\n如果桑亚不听话的话,那就告诉他我回来之后,我会好好揍他一顿.
+			\n \n我,我并不指望着你能够明白. 特异区... 这个地方十分... 独一无二,只有在这儿我才能够感觉到人们之间的联系,也这有在这儿我才能看到真实的人.	
+			\n在这儿,人们之间不会伪装自己,他们对于他人都是真心实意的. 算了,下次我们相遇时再聊这些.
+			\n我已经在这儿挣了不少钱了,我终于能给你买你喜欢的项链了!
+			\n对了,你的信我收到了,这真让我精神一振,每当我想起你的时候,世界都好了起来. 我们很快就会相遇的,替我向孩子们问好!
+			\n \n挚爱
+			\n - 米哈伊尔 你的潜行者."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_military_stalker">
+		<text>军方潜行者的随笔</text>
+	</string>
+	<string id="encyclopedia__notes_letter_military_stalker_text">
+		<text>
+			藏匿处里的便条,不知道为啥要写这东西. 很可能是某人在漫漫长夜中消磨时间的杰作,最后他将自己的杰作随地一扔,还好没扔进篝火里. 随笔上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_military_stalker_text2">
+		<text>
+			\n \n " 所以,我想我得到了我想要的洗白生活,我成为了一名军方潜行者,受保护地在特异区内行动.
+			\n为了走上这条路我花了几年的时间,在这个地狱般的特异区低三下四,现在,那些曾视我为死敌的军人不得不向我敬礼. "是的,长官.""不,长官.""三个包都装满了,长官."这些士兵对我言听计从,感觉像在做梦. 即便是特种部队和内务部的条子也对我很尊重. 这在一周以前简直是不可想象的.	
+			\n \n现在,他们给我最好的护甲,最好的武器,最好的工具和补给. 我每天吃的像个国王,不爽的心情已经与我无关. 我甚至赚了不少钱,可以寄给家里. 唯一的不足是,我不能在工作的时候让普通的潜行者走到我附近. 我的长官说如果那些潜行者离我太近,我应该直接开枪. 好吧,我所有的潜行者朋友都死了,所以我也不会对其他人手软了. 但我真的,真的想知道其他潜行者看我的眼神,是不是就像多年前的我看恐怖怪物一样? "
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_mercenary">
+		<text>佣兵的随笔</text>
+	</string>
+	<string id="encyclopedia__notes_letter_mercenary_text">
+		<text>
+			一位佣兵的笔记. 看起来他写了些关于他在特异区中执行任务时的所见所闻. 至于真正目的尚不清楚.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_mercenary_text2">
+		<text>
+			\n \n"从我的所见所闻之中,这儿和外面并没有什么不同的.
+			\n我们仍然是雇佣兵,为钱而战的战士,但是,在特异区里,我们却可以选择我们的目标. 有些时候我们甚至不会去接那么个任务因为它会脏了我们的手. 如果我们的客户想要我们去干掉一个凭自己努力和本事吃饭的人,那就去他妈的!他们可以自己到特异区里来解决问题.
+			\n那么如果去干掉那些杀人犯,放逐者或是其他一些人渣的话,那么任何时间,任何地点,这都是没问题的. 当我们不得不保护我们自己的时候,那又是另一回事儿了. 不过,如果你想杀掉一个无辜的傻逼的话,最好去找那些洋基佬,他们不想我们一样挑三拣四.
+			\n \n我们同他们不同,下次给钱的时候注意这点."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_military_log">
+		<text>通讯记录 / MSRC行动 / 05.04.2014 18:36:21</text>
+	</string>
+	<string id="encyclopedia__notes_letter_military_log_text">
+		<text>
+			驻扎在特异区的军方之间的无线电通讯记录. 属于一位穿着SKAT军甲的战士,他一定参与了这项秘密行动,很可能与监视活动有关. 通讯录上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_military_log_text2">
+		<text>
+			\n \n"- 总部,我是 MSRC 1-03.我们拍摄了NII目标的照片,240张沼泽异常点的,1400张主基地的. 我们何时返回?
+			\n- MSRC 1-03,这是总部. 现在还不行,仓库那儿有什么问题,MSRC 4-07正在请求支援,这次的信号很强,我们才知道他们还活着.
+			\n- 呃,了解,总部,我们之后是乘坐直升机回去吗?
+			\n- 不行,在NII农业研究所有许多异常点,这太危险了. 前往扬塔,一架MI-24会将你们接回去.
+			\n- 收到. 下次能量风暴是什么时候?
+			\n- 萨哈洛夫说至少还有两天,但你们得抓紧,他们的信息向来不可靠.
+			\n- 明白. 我们上路了,告诉飞机7小时后抵达扬塔. MSRC 1-03通讯结束.
+			\n- 稍等,1-03,我是总部,你们在N-2地下隧道有什么发现吗?
+			\n- 是. 我们发现了新的异常点,它看起来像可以传送之类的,扬塔的卵蛋头一定会很感兴趣,我们的仪器在测量灵能场值时坏掉了,不知道为什么,好像是电流的问题.
+			\n- 收到,MSRC 1-03.祝你们好运,7小时后再次联系,总部通讯结束."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_letter_stalker_letter_3">
+		<text>给尼古拉的信</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_3_text">
+		<text>
+			写给尼古拉的一封手写信. 很可能是两个长期进行书信来往的潜行者的. 虽然特异区内的通讯主要靠个人移动终端(PDA),但也有一些人更喜欢传统的通讯方式,尤其是处理私人事务时或者是和朋友之间的联络活动. 这些信件会被交给信使,他们像导游一样被委以最困难危险的任务. 信件到达收件人那里通常需要几天时间,信息被窃取的概率比PDA通信低得多. 信使在潜行者间享有很高的声望,在潜行者群体间更是具有重要的影响力. 信上写着:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_letter_stalker_letter_3_text2">
+		<text>
+			\n \n"尼古拉,
+			\n \n我才从特异区中心回来,那简直是太糟糕了.
+			\n黑石部队和军方正在互相残杀,有一瞬间的短暂平静,这让我以为他们会停火,但是并没有.
+			\n接下来就是持续的爆炸与破坏,我只能逃离那里别无选择,路上还差点丧了命,那些操蛋的摄魂怪.
+			\n但我不想把错误都归咎于它们,毕竟我完全没注意到它们的存在. 总之,在经历了各种各样的苦难之后,我活着到了普里皮亚奇并决定在这儿稍微停留一会儿.	
+			\n \n回到我们之前的地方,我们得把任务推迟一下,直到那儿安全下来再说. 回来之后我就没有睡过觉,但我得让你知道我现在还好,至少身体没有问题. 保持联系.
+			\n \n照顾好自己,鲁阿."
+		</text>
+	</string>
+
+	
+	<string id="encyclopedia__notes_recipe_basic_1_text">
+		<text>
+			本指南详细介绍了基本生存技能和一些基本生存工具. 后面几章描述了如何用普通材料制作基本装备.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_basic_2_text">
+		<text>
+			本指南详细介绍了基本生存技能和一些基本生存工具. 后面几章描述了如何用普通材料制作基本装备.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_basic_3_text">
+		<text>
+			本指南详细介绍了基本生存技能和一些基本生存工具. 后面几章描述了如何用普通材料制作基本装备.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_basic_4_text">
+		<text>
+			本指南详细介绍了基本生存技能和一些基本生存工具. 后面几章描述了如何用普通材料制作基本装备.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_recipe_advanced_1_text">
+		<text>
+			一本技术手册. 一些人靠这种书来学习专业知识,以便对特异区内的技术设备有更多了解. 书中包含基本机械和电气设备的详细信息.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_advanced_2_text">
+		<text>
+			一本技术手册. 一些人靠这种书来学习专业知识,以便对特异区内的技术设备有更多了解. 书中包含基本机械和电气设备的详细信息.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_advanced_3_text">
+		<text>
+			一本技术手册. 一些人靠这种书来学习专业知识,以便对特异区内的技术设备有更多了解. 书中包含基本机械和电气设备的详细信息.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_advanced_4_text">
+		<text>
+			一本技术手册. 一些人靠这种书来学习专业知识,以便对特异区内的技术设备有更多了解. 书中包含基本机械和电气设备的详细信息.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_recipe_expert_1_text">
+		<text>
+			一本工程手册,内容相当多. 里面包含一些现代电子设备的信息: 例如运算放大器、半导体二极管、双极结晶体管和场效应晶体管. 手册的第二章讲了如何处理电子设备故障.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_expert_2_text">
+		<text>
+			一本工程手册,内容相当多. 里面包含一些现代电子设备的信息: 例如运算放大器、半导体二极管、双极结晶体管和场效应晶体管. 手册的第二章讲了如何处理电子设备故障.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_expert_3_text">
+		<text>
+			一本工程手册,内容相当多. 里面包含一些现代电子设备的信息: 例如运算放大器、半导体二极管、双极结晶体管和场效应晶体管. 手册的第二章讲了如何处理电子设备故障.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_expert_4_text">
+		<text>
+			一本工程手册,内容相当多. 里面包含一些现代电子设备的信息: 例如运算放大器、半导体二极管、双极结晶体管和场效应晶体管. 手册的第二章讲了如何处理电子设备故障.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_recipe_drug_1_text">
+		<text>
+			从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 大概描述了一些普通医药品使用方法和基础制药方法.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_drug_2_text">
+		<text>
+			从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 大概描述了一些普通医药品使用方法和基础制药方法.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_drug_3_text">
+		<text>
+			从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 大概描述了一些普通医药品使用方法和基础制药方法.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_drug_4_text">
+		<text>
+			从书上撕下来的几页破纸. 用蓝墨水手写的文字由于环境影响变得模糊不清,很难分辨写了啥. 大概描述了一些普通医药品使用方法和基础制药方法.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_recipe_ammo_1_text">
+		<text>
+			每个潜行者都应学会玩枪,但也要知道如何为爱枪选择弹药. 本指南提供有关各种弹药的信息以及一些子弹部件的图片.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_ammo_2_text">
+		<text>
+			每个潜行者都应学会玩枪,但也要知道如何为爱枪选择弹药. 本指南提供有关各种弹药的信息以及一些子弹部件的图片.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_ammo_3_text">
+		<text>
+			每个潜行者都应学会玩枪,但也要知道如何为爱枪选择弹药. 本指南提供有关各种弹药的信息以及一些子弹部件的图片.
+		</text>
+	</string>
+	<string id="encyclopedia__notes_recipe_ammo_4_text">
+		<text>
+			每个潜行者都应学会玩枪,但也要知道如何为爱枪选择弹药. 本指南提供有关各种弹药的信息以及一些子弹部件的图片.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_note_from_spirit">
+		<text>大厨笔记</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_spirit_text">
+		<text>
+			酒鬼会用军用补给换取烈酒:
+			\n• 5单位雷米洛夫伏特加 - 换4包9x18子弹或者2包5.45子弹, 或者2包5.56子弹, 或者2包9x39子弹
+			\n• 10单位雷米洛夫伏特加 - 换1包7.62mm 7N1子弹, 或者3盒12X76的鹿弹, 或者4包5.45子弹, 或者4包5.56子弹, 或者4包9x39子弹
+			\n• 15单位雷米洛夫伏特加 - 加上7000卢布 - 换90发7.62x54mm PP子弹
+			\n• 20单位雷米洛夫伏特加 - 换一个初级工具箱
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_note_from_aslan">
+		<text>阿斯兰的便条</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_aslan_text">
+		<text>
+			阿斯兰有个奇怪的爱好. 他喜欢收集各种徽章,"对我们的人来说,这是赢得荣誉的最佳方案.",他说.
+			\n这是说的话:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_aslan_text2">
+		<text>
+			\n \n"如果你能给我带了徽章,你就有机会得到装备. 除了生态学家和黑石的,其他任何阵营25枚徽章,你就有可能拿到一个一般的神器,或者啥也没有; 50个徽章,你就有机会拿到一个很好的神器,当然也有可能什么也没有. 50个黑石或生态学家的徽章,你就一定能拿到一件只有最好的潜行者才会有的装备,而且不会坑你. 你也学会问我"为什么要这样做."... 因为许多人都喜欢把这些徽章作为他们自己的纪念品."
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_note_from_trunk">
+		<text>树桩给你的条子</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_trunk_text">
+		<text>
+			树桩能够让我交换弹药. 他会把多余的换成需要的.
+			\n这些是他感兴趣的:\n
+			\n• 他会用100发9x18毫米+P+弹换取100发9x19毫米FMJ弹.
+			\n• 他会用100发5.45x39毫米子弹换取100发5.56x45毫米子弹.
+			\n• 他会用20发M209枪榴弹换取10枚F1手雷.
+			\n• 他会用3发RPG弹头换取10枚RGD-5手雷.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_note_from_meeker">
+		<text>米克的便条</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_meeker_text">
+		<text>
+			尽管格里芬小队现在的处境很糟糕,但是米克仍然能够拿到一些特别的装备. 我得下订单才能拿到我要的东西.
+			\n据他所言,我一次只能下一样订单,他还不要预付款,一旦货到了,他便会通知我:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_meeker_text2">
+		<text>
+			\n• 草原雄鹰 - 沙鹰设计、手工精制. 经调整后获得了难以置信的精准度,它要8000卢布
+			\n• 阿尔卑斯 - 一把改装后的SIG P220,配有加长弹匣. 它会花上65000卢布.
+			\n• 进行曲 - 改装后的UDP紧凑型,大口径、射速快,它要7000卢布.
+			\n• 弗雷泽 - 基于MP5的手工改造的冲锋枪,加大了口径,比标准版本更能体现MP5的特点. 它要9500卢布.
+			\n• 重骑射手 - 军式改造过的SPAS-12,减小了后坐力并且增加了自动开火模式. 它会花上你11000卢布.
+			\n• 重击 - 一把基于保卫者的霰弹枪,它花上17000卢布.
+			\n• 能量风暴 - 一把改造过的OTs-14闪电 制造用来装备与特种部队,但是有一些被贩卖流通了,它最值得指出的一点是大容量弹匣. 这会花上19000卢布.	
+			\n• H&amp;K G36 - 很难在特异区里找到,这会花上14000卢布.
+			\n• FN F2000,比利时稀有货,很好的步枪,17000卢布.
+			\n• 潮 - VSS 狙击步枪的特殊版本,射速低,但是子弹阻滞力很大,20000卢布.
+			\n• SVU2-A - SVUmk-2狙击步枪的进阶版. 这把枪原属于麦克斯-自由军的传奇守卫,它会花上你24000卢布.
+			\n• 山猫 - SVD的军式版本,提高了精准度和阻滞力,它要18000卢布.	
+			\n• 高斯步枪,真正意义上的战利品 - 特异区这玩意儿的数量屈指可数. 它有着绝对的精准度和火力优势,再配上几乎为0的后坐力. 价格是150000卢布.
+			\n• 一套黑石的外骨骼 - 有着最棒的保护. 还有,除非你是他们的一员,你是不会搞到这种东西的. 它值100000卢布.
+			\n• 一套雇佣兵的外骨骼-也许是最好的保护方式之一,它会花上你75000卢布.
+			\n• 土匪的外骨骼,有着最纯粹的专权性,它值65000卢布.
+			\n• 一套外配外骨骼的拥有着全封闭式呼吸系统的黑石套装;  你在其他地方铁定见不着,它会花上你70000卢布.
+			\n• 一套拥有着封闭式呼吸系统的雇佣兵套装,它对于普通的潜行者来说是一件真正的奇物,能够完美地抵挡异常点地伤害,它要50000卢布.
+		</text>
+	</string>
+	
+	<string id="encyclopedia__notes_note_from_grifon">
+		<text>格里芬的便条</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_grifon_text">
+		<text>
+			格里芬和他的小队被困在了普城郊区,但是他不能空着手回去. 一个隐秘的实验室(X-8)就在北边的什么地方,佣兵们希望我在那儿为他们找到些什么东西.
+			\n如果我能为他带回来些东西的话,他会给我一大笔钱,他是这么说的:
+		</text>
+	</string>
+	<string id="encyclopedia__notes_note_from_grifon_text2">
+		<text>
+			"实际上,我们到这儿来是为了去禧年服务中心的X8实验室的,在那里有一座电梯能让我们下到负一楼去. 但是那群狗娘养的军人打断了我们,就是因为他们我们才被困在这里的. 达什曼总归是要杀了我们的,但也许地底下还剩了些秘密档案? 我们离开这里的时候必须得带上些有用的东西. 我很希望我能和队友们一起再次拜访那里,但是我们人手紧缺 - 光是处理现在的屁事儿就已经令人头大了 ,比起这里,我们更宁愿去特异区的中心. 也许你能够下到X8里面去,找到一些文档,呃... 同时你还能挣点外快. 所以说你想去吗?"
+		</text>
+	</string>
+	
+</string_table>

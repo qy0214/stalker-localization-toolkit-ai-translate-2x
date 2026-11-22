@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	<string id="sar_monolith">
+		<text>來自北方的呼喚</text>
+	</string>
+	<string id="sar_monolith_0">
+		<text>和許願石談談.</text>
+	</string>
+	<string id="sar_monolith_1">
+		<text>一個來自北方的聲音呼喚著你. 你應該設法找到源頭.</text>
+	</string>
+	<string id="sar_monolith_2">
+		<text>呼喚你的聲音一定是來自許願石. 你應該能在石棺里找到它.</text>
+	</string>
+	<string id="sar_monolith_destroy">
+		<text>石棺</text>
+	</string>
+	<string id="sar_monolith_destroy_0">
+		<text>找到手稿中提到的隱藏的巨石基座, 發現它隱藏的東西.</text>
+	</string>
+	<string id="sar_monolith_destroy_1">
+		<text>摧毀願望石: 摧毀所有10波由願望石召喚的投影</text>
+	</string>
+	<string id="sar_monolith_destroy_2">
+		<text>關閉超念體艙的電源發電機</text>
+	</string>
+	<string id="sar_monolith_destroy_3">
+		<text>關閉風暴引擎.</text>
+	</string>
+</string_table>

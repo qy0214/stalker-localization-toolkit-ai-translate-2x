@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Weapons
+-->
+<string_table>
+
+	<string id="st_wpn_thompson_m1a1">
+		<text>汤姆逊M1A1冲锋枪</text>
+	</string>
+	<string id="st_wpn_thompson_m1a1_descr">
+		<text>汤姆逊冲锋枪是一种反冲操作、风冷、弹匣供弹的选择性射击冲锋枪.\n
+		汤姆逊的这种变体具有显着降低的射速和简化的设计,应美国陆军的要求生产. 因此,Blish锁、加油系统和补偿器被拆除. 尽管射速较慢,但该枪的射击性能比1921式差很多.\n
+		该变体也有一个与 1921/1928 变体不同的机匣,因此不接受鼓弹匣\n\n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] None\n</text>
+	</string>
+
+	<string id="st_wpn_thompson_1921">
+		<text>汤姆逊M1921式冲锋枪</text>
+	</string>
+	<string id="st_wpn_thompson_1921_descr">
+		<text>汤姆逊冲锋枪是一种反冲操作、风冷、弹匣供弹的选择性射击冲锋枪.\n
+		这种汤姆逊的变体也被昵称为"芝加哥打字机",具有更快的射速和用于武器操作的Blish锁系统.\n\n
+		%c[ui_gray_2]附件: \n
+		%c[d_purple] • %c[ui_gray_2] None\n
+		</text>
+	</string>
+
+	<string id="st_up_m1a1_b8_name">
+		<text>安装更重的枪管</text>
+	</string>
+	<string id="st_up_m1a1_b8_descr">
+		<text>安装更重的枪管以进一步提高后坐力.</text>
+	</string>
+	<string id="st_up_m1a1_b5_name">
+		<text>安装聚合物枪托</text>
+	</string>
+	<string id="st_up_m1a1_b5_descr">
+		<text>安装聚合物枪托以取代木制零件,以快速减轻重量.</text>
+	</string>
+	<string id="st_up_m1a1_b6_name">
+		<text>安装聚合物护木</text>
+	</string>
+	<string id="st_up_m1a1_b6_descr">
+		<text>安装聚合物护木以取代木质部件,从而略微减轻重量.</text>
+	</string>
+		<string id="st_up_m1a1_b7_name">
+		<text>安装防腐件</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>安装需要更长时间才能降解的武器组件.</text>
+	</string>
+
+	<string id="st_up_1921_b8_name">
+		<text>安装高品质进口零件</text>
+	</string>
+	<string id="st_up_1921_b8_descr">
+		<text>安装从美国进口的更高质量的零件,以提高枪的可靠性.</text>
+	</string>
+	<string id="st_up_1921_b5_name">
+		<text>安装聚合物枪托</text>
+	</string>
+	<string id="st_up_1921_b5_descr">
+		<text>安装聚合物枪托以取代木制零件,以快速减轻重量.</text>
+	</string>
+	<string id="st_up_1921_b6_name">
+		<text>安装聚合物护木</text>
+	</string>
+	<string id="st_up_1921_b6_descr">
+		<text>安装聚合物护木以取代木质部件,从而略微减轻重量.</text>
+	</string>
+		<string id="st_up_1921_b7_name">
+		<text>安装防腐件</text>
+	</string>
+	<string id="st_up_1921_b7_descr">
+		<text>安装需要更长时间才能降解的武器组件.</text>
+	</string>
+
+	<string id="st_up_1921_b9_name">
+		<text>安装重新设计的 Blish 锁定装置</text>
+	</string>
+	<string id="st_up_1921_b9_descr">
+		<text>安装经过调整的锁定机构可大大提高枪的可靠性.</text>
+	</string>
+
+
+</string_table>

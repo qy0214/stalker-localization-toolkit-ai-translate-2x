@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+
+	<!-- PDA -->
+	<string id="pda_btn_encyclopedia">
+		<text>指南</text>
+	</string>
+	
+	<string id="pda_btn_encyclopedia_hint">
+		<text>顯示使用者指南</text>
+	</string>
+	
+	<!-- Interface components -->
+	<string id="pda_encyclopedia_title">
+		<text>特異區指南</text>
+	</string>
+	
+	<string id="st_pda_encyclopedia_image_checkbox">
+		<text>置頂圖片</text>
+	</string>
+	
+	<string id="st_pda_encyclopedia_message_checkbox">
+		<text>顯示訊息</text>
+	</string>
+	
+	<!-- Messages -->
+	<string id="pda_encyclopedia_notify">
+		<text>條目已解鎖: %s, %s</text>
+	</string>
+	<string id="pda_encyclopedia_notify_note">
+		<text>新記錄: %s</text>
+	</string>
+	
+	<!-- Misc -->
+	<string id="pda_encyclopedia_info">
+		<text>資訊</text>
+	</string>
+	<string id="pda_encyclopedia_properties">
+		<text>屬性</text>
+	</string>
+	<string id="pda_encyclopedia_subject">
+		<text>主題</text>
+	</string>
+	<string id="pda_encyclopedia_content">
+		<text>目錄</text>
+	</string>
+	
+	<string id="pda_encyclopedia_ironman_lifes">
+		<text>獲得的生命</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_life">
+		<text>剩餘的生命</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_deaths">
+		<text>死亡次數</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_cycle">
+		<text>獲得生命(每小時)</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_1">
+		<text>踏錯一步, 前功盡棄!</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_2">
+		<text>小心點!</text>
+	</string>
+	<string id="pda_encyclopedia_ironman_3">
+		<text>我現在安全了</text>
+	</string>
+	
+	
+	<!-- Locked articles -->
+	<string id="pda_encyclopedia_locked">
+		<text>??????????</text>
+	</string>
+	
+	<string id="pda_encyclopedia_locked_text">
+		<text>
+			你還沒有解鎖這個條目.\n
+			\n條目能被以下方式解鎖:\n
+			\n• 第一次發現地點.
+			\n• 從儲存卡下載數據.
+			\n• 切下變異生物的肉和身體部位.
+			\n• 與潛行者交談或者互動.
+			\n• 使用物品或是裝備陣營護甲.
+		</text>
+	</string>
+	
+</string_table>

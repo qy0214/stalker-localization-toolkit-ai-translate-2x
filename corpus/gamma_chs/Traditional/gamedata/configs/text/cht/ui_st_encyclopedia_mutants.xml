@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="encyclopedia_mutants">
+		<text>怪物</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_blind_dog">
+		<text>盲犬</text>
+	</string>
+	<string id="encyclopedia_mutants_blind_dog_text">
+		<text>
+			%c[pda_white]盲犬%c[ui_gray_1] 是特異區最常見的怪物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n自切爾諾貝利事故以來已經有好幾代的野狗出生或死去, 每代狗受特異區影響的程度均高於上一代.\n
+			\n迅速的突變導致了許多方面的增強, 但是代價是那些與它們共享棲息地的動物, 那些弱者都滅絕了.\n
+			\n這些狗的視覺和聽覺完全喪失了, 但它們進化出了第六感, 讓它們甚至能夠透過墻壁感知獵物的行動.\n
+			\n像它們的祖先狼一樣, 盲犬喜歡成群出動, 即使對裝備精良、經驗豐富的潛行者來說, 碰上一群盲犬也是相當危險的.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 撕咬\n• 生命值: 低\n• 速度: 快\n• 特長: 無
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_bloodsucker">
+		<text>吸血怪</text>
+	</string>
+	<string id="encyclopedia_mutants_bloodsucker_text">
+		<text>
+			%c[pda_white]吸血怪%c[ui_gray_1] 顧名思義是以血液為食的怪物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n吸血怪是一種傳奇般的怪物, 被潛行者視為特異區中危險和恐怖的象徵.\n
+			\n它能獲得這些名號是因為它在特異區怪物中相對少見, 而且很少有人能從它的攻擊下倖存.\n
+			\n倖存者們把它們形容為高大的類人生物, 臉上有許多觸手.\n
+			\n它們最特殊的能或許是隱形, 可以讓它們暫時無法被肉眼看到.\n
+			\n隱形狀態不會持續很長時間, 因為隱形時它們處於最弱狀態, 通常僅在發現獵物或試圖埋伏時才會隱形.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 快\n• 特長: 隱形, 吸血\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 沼澤中曾有種能夠把受害者拖走的亞種.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_boar">
+		<text>野豬</text>
+	</string>
+	<string id="encyclopedia_mutants_boar_text">
+		<text>
+			%c[pda_white]野豬%c[ui_gray_1] 是特異區中最常見的怪物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n雖然這些野豬在生理上沒發生太大變化, 但它們異常喜歡人肉, 並且具有更高的智力.\n
+			\n它們是大型動物, 生存能力和攻擊能力遠超特異區外的同類.\n
+			\n突變對它們產生了很大的影響, 它們的部分皮毛脫落, 而在其他地方長出了更多的皮毛.\n
+			\n通常情況下, 如果與保持一定的距離並且不激怒它們, 它們就會和其他野豬安靜地待在一起.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 慢\n• 特長: 無
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_burer">
+		<text>變異矮人</text>
+	</string>
+	<string id="encyclopedia_mutants_burer_text">
+		<text>
+			%c[pda_white]變異矮人%c[ui_gray_1] 是一種矮胖的人形怪物, 通常居住在地下區域.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n它們是類人生物, 身材矮胖, 穿著破爛的外套, 害怕強光.\n
+			\n對作為實驗體的罪犯進行基因實驗的產物, 天生就擁有強大的心理影響能力, 它們的實力要比它們的外貌強得多.\n
+			\n能夠放出衝擊波或用大腦操縱物體, 即使試圖躲避攻擊, 它們也很難對付.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰, 引力攻擊\n• 生命值: 平均\n• 速度: 慢\n• 特長: 靈體能力, 引力操縱\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 一些變異矮人能夠模仿聲音, 例如鳥叫聲, 狗叫聲, 人的笑聲甚至是小孩的哭泣聲.
+			\n• 變異矮人能夠控制比較重的物體.那些使用重型裝備的潛行者在與它們的戰鬥中會承受更大的痛苦. 
+			\n• 侏儒喜歡吃腐爛的屍體或人肉.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_cat">
+		<text>變異貓</text>
+	</string>
+	<string id="encyclopedia_mutants_cat_text">
+		<text>
+			%c[pda_white]特異區中的貓%c[ui_gray_1] 發生了大量變異.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n最初是普通的寵物貓, 在特異區的影響下, 它們已發生了明顯變化, 甚至對人來說也非常危險.\n
+			\n變異貓通常兩三成群, 並且居住在安靜且隱秘的地方, 例如森林或草叢中.\n
+			\n當變異貓群展開攻擊時, 第一隻會設法分散獵物的注意力, 而其他的則設法偷襲獵物, 直到獵物精疲力盡或者受了重傷..\n
+			\n如果只有一隻貓, 它會很擔小, 並且會花長時間尾隨目標, 直到找到了合適的攻擊機會.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 低\n• 速度: 快\n• 特長: 無\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 經常有菜鳥潛行者被貓啃死.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_chimera">
+		<text>奇美拉</text>
+	</string>
+	<string id="encyclopedia_mutants_chimera_text">
+		<text>
+			%c[pda_white]奇美拉%c[ui_gray_1] 是一種無毛怪物, 完全體的體型接近成年獅子.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n雖然沒有最強的防禦力, 但奇美拉仍然是完美的殺人機器, 它們通過極高的速度和攻擊性來彌補防禦缺陷.\n
+			\n奇美拉具有兩套器官, 沒有發達的循環系統, 全身遍佈毛細血管, 因此奇美拉可以輕鬆地避免器官老化或大出血.\n
+			\n它的第二個頭可提供更廣闊的視野, 發達的後腿可以提供強大的彈跳力, 利爪和牙齒幾乎可以撕開任何防彈衣.\n
+			\n它們是夜行性生物, 因此一般不會在白天見到奇美拉, 它們白天要睡大覺, 但總有例外情況.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 高\n• 速度: 快\n• 特長: 靈活, 再生能力\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 雖然奇美拉的防禦力不差, 但它們對化學和高熱異常點的抗性很差.
+			\n• 雖然通常是單獨行動的怪物, 但成對進行捕獵的奇美拉也有人見過.
+			\n• 在2012年期間, 兩隻特別強大的奇美拉使扎頓和亞諾夫的潛行者陷入恐慌之中.它們的罪惡最終被一個名叫亞歷山大的潛行者終結.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_controller">
+		<text>攝魂怪</text>
+	</string>
+	<string id="encyclopedia_mutants_controller_text">
+		<text>
+			%c[pda_white]攝魂怪%c[ui_gray_1] 是特異區中最危險的靈能生物之一.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n攝魂怪看起來類似於人類, 但頭部的比例大大增加, 能夠影響甚至直接控制其他生物.\n
+			\n與其他靈能生物不同, 攝魂怪不會操縱物體, 但可以控制敵人的神志, 能讓敵人陷入混亂之中.\n
+			\n攝魂怪主要通過定向靈體能量攻擊, 這會對受害者的大腦造成嚴重損害, 受害者最終的結果是自殺或者殭屍化.\n
+			\n人們普遍認為, 它們只能攻擊它們所看到的東西, 因此充分利用障礙物隱藏自己有很大的幫助.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰, 精神攻擊\n• 生命值: 平均\n• 速度: 慢\n• 特長: 範圍傷害, 靈體能量, 精神控制
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_crow">
+		<text>烏鴉</text>
+	</string>
+	<string id="encyclopedia_mutants_crow_text">
+		<text>
+			%c[pda_white]烏鴉%c[ui_gray_1] 是特異區中少數倖存下來的鳥類.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n爲了避免異常區域的影響, 軍方飛行員使用了先進的探測器, 但是烏鴉是如何能安全地在特異區上空飛翔至今仍然是個迷.\n
+			\n關於特異區的烏鴉為何如此特別, 並且與其他怪物相比沒有發生很大突變的原因鮮為人知.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 無\n• 生命值: 低\n• 速度: 快\n• 特長: 無
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_flesh">
+		<text>豚獸</text>
+	</string>
+	<string id="encyclopedia_mutants_flesh_text">
+		<text>
+			%c[pda_white]豚獸%c[ui_gray_1] 是高度變異的家豬, 也許是特異區中最無害的怪物之一.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n像生活在特異區的許多生物一樣, 第二次災難后, 家豬經歷了嚴重的突變, 主要是影響了關乎其代謝的DNA片段.\n
+			\n它們的外表發生了巨大的變化: 前肢變成了昆蟲般的腿, 豚獸用它來挖植物的根莖或撕扯屍體, 它們的身體變得極度肥腫.\n
+			\n大多數豚獸是無害的, 並且如果一個人靠近它們, 膽小的豚獸通常會逃跑, 除非是被攻擊或被逼到無路可逃了.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 慢\n• 特長: 無
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_fracture">
+		<text>長臂怪人</text>
+	</string>
+	<string id="encyclopedia_mutants_fracture_text">
+		<text>
+			%c[pda_white]長臂怪人%c[ui_gray_1] 是以前被流放後來發生了變異的人.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n與其他怪物不同, 長臂怪人很像人類, 但它的身高超過兩米, 看起來像一個衣衫破爛的老頭.\n
+			\n對這些怪胎知之甚少.人們認為它們要麼是核災難前非法居住在如今的特異區範圍內的人, 要麼是早期基因實驗的實驗體.\n
+			\n它肥大的手臂和腫脹的手影響了運動速度, 但這雙長臂就像球桿一樣可以輕鬆地擊倒成年男子.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 慢\n• 特長: 無\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 有時當他們發現潛行者時會呼喚幫助.不過至於是在誘騙潛行者還是在呼喚它的同類尚不清楚.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_karlik">
+		<text>變異侏儒</text>
+	</string>
+	<string id="encyclopedia_mutants_karlik_text">
+		<text>
+			%c[pda_white]變異侏儒%c[ui_gray_1] 是非常罕見的矮人怪物, 它們隱居在廢棄建築中.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n尚不清楚它們是否與變異矮人有關, 但它們之間有很多相似之處, 不知道是不是巧合呢? \n
+			\n在一些觀察報告中, 變異侏儒似乎會被一些建築或神器吸引, 它們像是在執行某種任務, 會攻擊任何離自己太近的生物.\n
+			\n除此之外, 我們對它幾乎一無所知, 因為大多數直接接觸過它們的人都已死亡或者精神失常, 而且沒有明顯外傷.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰, 精神攻擊\n• 生命值: 平均\n• 速度: Slow\n• 特長: 範圍傷害, 幻影, 靈體能力, 引力操縱\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 雖然經常與變異矮人相提並論, 但變異侏儒更擅長使用靈體能量製造幻覺, 而不是操縱物體.
+			\n• 如果你覺得變異侏儒和變異矮人一樣都是實驗室的產物, 那麼前者很可能是後者的早期版.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_poltergeist">
+		<text>騷靈</text>
+	</string>
+	<string id="encyclopedia_mutants_poltergeist_text">
+		<text>
+			%c[pda_white]騷靈%c[ui_gray_1] 是特異區中少見且奇怪的怪物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n騷靈的活動在一些人眼中是超自然現象, 經常出沒在廢棄的老建築里.\n
+			\n人們對它們的起源一無所知, 有傳言說它們是因強輻射而死的潛行者的靈魂.\n
+			\n它們進行的神秘活動很像是鬧鬼, 也因此得到了這個綽號, 它們會試圖舉起重物砸你.\n
+			\n令人掃興的是, 所有關於騷靈的資訊都來源於那些含糊不清且相互矛盾的可疑故事.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 精神攻擊\n• 生命值: 平均\n• 速度: 平均\n• 特長: 靈體能力, 引力操縱\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 老手潛行者說騷靈被殺死時偶爾會留下屍體. 但新手大都不信.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_pseudodog">
+		<text>變異犬</text>
+	</string>
+	<string id="encyclopedia_mutants_pseudodog_text">
+		<text>
+			%c[pda_white]變異犬%c[ui_gray_1] 是比較常見的變異犬科動物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n儘管名字叫變異犬, 但它不是狗, 而是核災難發生時居住在此地森林中的狼.\n
+			\n從嚴格意義上講, 變異犬和狼並沒有太多相似之處, 它的頭更圓, 有巨大但不是很突出的下顎, 長滿了無數巨大的牙齒, 在變異犬的一生中會不斷更換.\n
+			\n與盲犬相比, 變異犬更快、更強壯、更有攻擊性, 它們經常和盲犬待在一起. 它們的領地意識很強, 會毫不猶豫地攻擊入侵者.\n
+			\n強健的肌肉和骨骼使它能以令人難以置信的速度奔跑, 還增強了跳躍能力, 使它比大多數同類動物要靈活得多.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 快\n• 特長: 靈活
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_pseudogeist">
+		<text>虛靈</text>
+	</string>
+	<string id="encyclopedia_mutants_pseudogeist_text">
+		<text>
+			%c[pda_white]虛靈%c[ui_gray_1] 是騷靈的罕見黑色亞種.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n對這些生物基本一無所知, 因為它們是最近才出現的, 還沒有記錄它們.\n
+			\n它們看上去像是一陣運動的黑色雲團, 它們將殺死任何不幸進入雲中的東西.\n
+			\n不出現在特定地點, 哪裡都可能見到它們的身影.\n
+			\n在死亡時它們會爆炸成煙霧狀, 然後消散.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 精神攻擊\n• 生命值: 平均\n• 速度: 平均\n• 特長: 靈體能力\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_pseudogiant">
+		<text>變異巨獸</text>
+	</string>
+	<string id="encyclopedia_mutants_pseudogiant_text">
+		<text>
+			%c[pda_white]變異巨獸(假巨人)%c[ui_gray_1] 是特異區最可怕的怪物之一.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n與其他類人怪物不同的是, 變異巨獸具有驚人的力量, 並且在死亡之前能夠承受住相當大的傷害.\n
+			\n一對不成比例的大腳加上令人難以置信的巨大身軀使它能夠橫掃靠近它的可憐蟲 - 能夠通過拍擊大腳來擊飛物體.\n
+			\n儘管變異巨獸很強大, 但它們似乎更注重領地而不是進攻, 追擊目標時通常不會跑太遠.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 非常高\n• 速度: 慢\n• 特長: 力大無窮
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 奇怪的是, 與其他怪物相比大多數變異巨獸並不喜歡攻擊. 然而對於普通潛行者來說, 這些大塊頭喜不喜歡攻擊沒啥區別.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_psydog">
+		<text>魔犬</text>
+	</string>
+	<string id="encyclopedia_mutants_psydog_text">
+		<text>
+			%c[pda_white]魔犬%c[ui_gray_1] 是一種少見的變異犬亞種, 擁有獨特的靈體能力.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n魔犬最突出的特點是能夠進行精神攻擊, 它能夠製造出自己的幻影.\n
+			\n這不同於其他靈能生物產生的幻影, 因為它們看起來更像是活的, 並且能夠對目標造成實質傷害.\n
+			\n從外觀來看除了長有灰色/白色條紋外, 它們與變異犬幾乎沒有區別.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰, 精神攻擊\n• 生命值: 平均\n• 速度: 快\n• 特長: 靈活, 幻影
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_pyrogeist">
+		<text>焰靈</text>
+	</string>
+	<string id="encyclopedia_mutants_pyrogeist_text">
+		<text>
+			%c[pda_white]焰靈%c[ui_gray_1] 是很少見的騷靈亞種.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n它們看起來像是浮動的熱霧, 閃爍著熾熱的光芒, 很容易與普通騷靈區分開. 死亡時, 它們會在血和火中爆炸.\n
+			\n它們唯一的攻擊方式是產生火焰, 類似於爆燃, 由於只有這一種戰鬥方式, 焰靈只能試圖燒死敵人.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 精神攻擊 (放火)\n• 生命值: 平均\n• 速度: 平均\n• 特長: 靈體能力
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_rat">
+		<text>老鼠</text>
+	</string>
+	<string id="encyclopedia_mutants_rat_text">
+		<text>
+			%c[pda_white]老鼠%c[ui_gray_1] 很小, 而且總是很餓的變異老鼠, 通常生活在廢棄建築周邊.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n老鼠通常成群出現, 從某種角度來說它們是人類永遠的伴侶 - 人走到哪裡它們跟到哪裡.\n
+			\n老鼠是非常聰明的動物, 它們會嘗試從不同方向攻擊受害者, 如果被它們包圍很難生還.\n
+			\n它們通常生活在廢棄的地方, 據說它們能夠感應到危險並小心地避開.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: Low\n• 速度: 平均\n• 特長: 無\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 它們是特異區內相對無害的怪物, 一般殺它們是爲了取肉而不是因為它們的威脅.
+			\n• 老鼠是變異鼠的近親, 它們溫和的, 不那麼有攻擊性, 變異程度也不大.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_snork">
+		<text>史諾克</text>
+	</string>
+	<string id="encyclopedia_mutants_snork_text">
+		<text>
+			%c[pda_white]史諾克%c[ui_gray_1] 是發生了恐怖變異的士兵和潛行者.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n這些怪物顯然曾經是活人, 因為他們仍然穿著破破爛爛的制服, 儘管很難想像什麼東西可以將人變成這樣.\n
+			\n史諾克過著完全動物化的生活.他們用四肢爬行跳躍, 並不斷聞著空氣中食物的味道.\n
+			\n他們會聰明謹慎地進行狩獵, 等待像潛行者那樣的獵物. 閃電般的反射速度和強壯的肌肉使史諾克能夠發動精確的跳躍攻擊, 並在幾秒鐘內就能將受害者撕成碎片.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 快\n• 特長: 靈活\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 最初被認為是首次進入特異區的軍方遠征軍中的不幸者, 但它們到2018年仍然存在, 這不得不讓人想到一些更黑暗可怕的東西.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_tushkano">
+		<text>變異鼠</text>
+	</string>
+	<string id="encyclopedia_mutants_tushkano_text">
+		<text>
+			%c[pda_white]變異鼠(變異鼠)%c[ui_gray_1] 是像老鼠一樣的小動物, 它們用兩條腿移動.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n它們的名字指的是在俄羅斯被稱為圖什坎奇科夫的雙足類齧齒動物, 它們的移動方式非常相似.\n
+			\n普遍認為變異鼠是一些于受過訓練的馴化老鼠, 是核災難前的實驗產物.\n
+			\n大部分生活在廢棄建築物中, 以捕食為生, 目標包括變異怪物和潛行者, 而且經常成群行動, 最多十隻.\n
+			\n像老鼠一樣, 它們也是非常聰明的生物, 會從各個方向攻擊受害者. 由於身材矮小, 它們合作時可以壓制住大多數獵物.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 低\n• 速度: 快\n• 特長: 無
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_zombie">
+		<text>殭屍</text>
+	</string>
+	<string id="encyclopedia_mutants_zombie_text">
+		<text>
+			%c[pda_white]殭屍%c[ui_gray_1] 是受到重度電磁輻射影響的潛行者.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n與名字不同, 這些殭屍實際上並不是亡靈, 它們只是些失去了思考能力的死屍.\n
+			\n殭屍是人類受到重度電磁輻射后的產物, 甚至失去了操作基本工具和武器的能力.\n
+			\n由於這些變化, 殭屍只不過是愚笨的活死人, 它們只有兩種活動: 吃飯和睡覺.\n
+			\n由於大多數人在變成殭屍階段之前就死透了, 它在特異區內並不常見.\n
+			\n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 低\n• 速度: 慢\n• 特長: 無\n
+			\n%c[pda_yellow]雜項%c[ui_gray_1]
+			\n• 它們是真正的悲劇, 是最好給這些可憐的笨蛋一個痛快.
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_psysucker">
+		<text>奪靈怪</text>
+	</string>
+	<string id="encyclopedia_mutants_psysucker_text">
+		<text>
+			%c[pda_white]奪靈怪%c[ui_gray_1] 是吸血怪的亞種, 具有靈體能力.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n起源不明, 特異區中最神秘的怪物之一.
+			\n驗屍結果顯示它與吸血怪有很多相似之處, 尤其是隱形能力, 這使他們暫時無法被肉眼看到. 進一步的研究表明, 奪靈怪擁有更發達的神經系統, 這表明它們具有影響人精神的獨特能力, 能夠創造類似於自己的幻影.\n
+			\n與普通吸血怪相比, 奪靈怪的面板開裂脆弱, 好像隨著時間的流逝而老化了. 它們還沒有觸鬚. 也許這就是奪靈怪進行幻影攻擊時會躲起來的原因.
+			\n \n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰, 精神攻擊\n• 生命值: 低\n• 速度: 快\n• 特長: 隱形, 幻影\n
+		</text>
+	</string>
+	
+	<string id="encyclopedia_mutants_lurker">
+		<text>夜魔</text>
+	</string>
+	<string id="encyclopedia_mutants_lurker_text">
+		<text>
+			%c[pda_white]夜魔%c[ui_gray_1] 是具有強大戰鬥力的雜交怪物.\n
+			\n%c[pda_green]資料%c[ui_gray_1]
+			\n有傳言說, 夜魔是核災難發生之前特異區秘密實驗室的產物.然而2013年又在普城郊區發現了一群夜魔.\n
+			\n強大的多層面板, 異常發達的肌肉和聽覺使夜魔獲得了在最惡劣的環境條件下生存的能力.它們可以對行動遲緩的潛行者發動強大的跳躍攻擊.\n
+			\n衆所周知, 當地的獵人對它黃色的發光眼睛很感興趣.
+			\n \n%c[pda_blue]屬性%c[ui_gray_1]
+			\n• 攻擊: 近戰\n• 生命值: 平均\n• 速度: 快\n• 特長: 無\n
+		</text>
+	</string>
+	
+</string_table>

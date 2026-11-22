@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--===========================================================
+<
+< TEX=T STRINGS FOR LOST TO THE ZONE: HOLLOW BOUNDARIES TASKS
+<	Anomaly 1.5 = Lost to the Zone: Hollow Boundaries
+<
+<	Made by: Tronex
+<	Last revised: 10 September 2019
+<
+<===========================================================-->
+
+<string_table>
+
+	<!-- Dushman intel -->
+	<string id="st_hb_isg_dushman_intel_name">
+		<text>達什曼的情報</text>
+	</string>
+	<string id="st_hb_isg_dushman_intel_desc">
+		<text>如果達什曼遵守諾言, 那麼這個檔案中草擬的地圖和註釋對於UNISG來說便是無價的. 可以大大降低UNISG未來行動的危險性</text>
+	</string>
+
+
+	<!-- Hollow Boundaries Arc 1 -->
+	<string id="lttz_hb_task_1_1_dushman_intel_name">
+		<text>虛空邊境: 機密線人</text>
+	</string>
+	<string id="lttz_hb_task_1_1_dushman_intel_desc">
+		<text>赫南德斯少校命令你去找一名叫做"達什曼"的人, 獲取到聯合國從他那裡買到的重要情報</text>
+	</string>
+	
+	<string id="lttz_hb_task_1_2_recruit_name">
+		<text>虛空邊境: 秘密基地</text>
+	</string>
+	<string id="lttz_hb_task_1_2_recruit_desc">
+		<text>赫南德斯少校和他的小隊已經在一個被當地人稱作"尤皮特"的地方駐紮了下來, 將獲取的情報帶到那裡</text>
+	</string>
+
+	
+	<!-- Hollow Boundaries Arc 2 -->
+	<string id="lttz_hb_task_2_1_guarded_secrets_name_1">
+		<text>虛空邊境: 木星工廠</text>
+	</string>
+	<string id="lttz_hb_task_2_1_guarded_secrets_name_2">
+		<text>虛空邊境: 返回赫南德斯少校處</text>
+	</string>
+	<string id="lttz_hb_task_2_1_guarded_secrets_desc_1">
+		<text>在木星工廠中尋找檔案, 並消滅一切目擊證人</text>
+	</string>
+	<string id="lttz_hb_task_2_1_guarded_secrets_desc_2">
+		<text>確定周邊區域安全無虞之後, 將檔案帶回赫南德斯少校處</text>
+	</string>
+
+	<string id="lttz_hb_task_2_2_breakthrough_name_1">
+		<text>虛空邊境: 地下突圍</text>
+	</string>
+	<string id="lttz_hb_task_2_2_breakthrough_name_2">
+		<text>虛空邊境: 與赫南德斯少校交談</text>
+	</string>
+	<string id="lttz_hb_task_2_2_breakthrough_desc_1">
+		<text>與赫南德斯少校的小隊一同突破木星工廠的地下通道, 確保他們的安全, 並尋找重要檔案</text>
+	</string>
+	<string id="lttz_hb_task_2_2_breakthrough_desc_2">
+		<text>你找到了一些檔案, 給赫南德斯少校過目</text>
+	</string>
+	
+	<!-- Hollow Boundaries Arc 3 -->
+	<string id="st_lttz_hb_task_3_1_search_agr_ug_name">
+		<text>調查農業研究所地下設施</text>
+	</string>
+	<string id="st_lttz_hb_task_3_1_search_agr_ug_text">
+		<text>調查農業研究所地下設施, 尋找這起陰謀的證據</text>
+	</string>
+	<string id="st_lttz_hb_task_3_2_search_labx18_name">
+		<text>調查X-18地下實驗室</text>
+	</string>
+	<string id="st_lttz_hb_task_3_2_search_labx18_text">
+		<text>調查X-18地下實驗室並且尋找陰謀的證據</text>
+	</string>
+	<string id="st_lttz_hb_task_3_3_search_labx16_name">
+		<text>調查X-16地下實驗室</text>
+	</string>
+	<string id="st_lttz_hb_task_3_3_search_labx16_text">
+		<text>調查X-16地下實驗室並且尋找陰謀的證據</text>
+	</string>
+	<string id="st_lttz_hb_task_3_4_search_labx10_name">
+		<text>調查X-19地下實驗室</text>
+	</string>
+	<string id="st_lttz_hb_task_3_4_search_labx10_text">
+		<text>調查X-19地下實驗室並且尋找陰謀的證據</text>
+	</string>
+	<string id="st_lttz_hb_task_3_5_search_labx8_name">
+		<text>調查X-8地下實驗室</text>
+	</string>
+	<string id="st_lttz_hb_task_3_5_search_labx8_text">
+		<text>調查X-8地下實驗室並且尋找陰謀的證據</text>
+	</string>
+	
+	<string id="lttz_hb_task_3_8_handle_docs_name">
+		<text>秘密揭曉</text>
+	</string>
+	<string id="lttz_hb_task_3_8_handle_docs_text">
+		<text>這是一場驚天大陰謀! 而你找齊了確鑿的證據, 去向赫南德斯少校彙報 - 他會很高興的</text>
+	</string>
+
+	<!-- Hollow Boundaries Arc 4 -->
+	<string id="lttz_hb_task_4_1_crossfire_1_name">
+		<text>火線對抗: 消滅軍方部隊</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_2_name">
+		<text>火線對抗: 史特洛克</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_3_name">
+		<text>火線對抗: 押送史特洛克</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_4_name">
+		<text>火線對抗: 與史特洛克交談</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_5_name">
+		<text>火線對抗: 殺死史特洛克</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_6_name">
+		<text>火線對抗: 翻找史特洛克的屍體</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_7_name">
+		<text>火線對抗: 返回赫南德斯少校處</text>
+	</string>
+	
+	<string id="lttz_hb_task_4_1_crossfire_1_desc">
+		<text>赫南德斯少校命令你從史特洛克那裡弄到情報, 但是你必須先消滅尾隨史特洛克來到普城城郊的軍方部隊</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_2_desc">
+		<text>軍隊被消滅了, 是時候從史特洛克那裡取得機密情報了, 不論他是否配合</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_3_desc">
+		<text>幫助史特洛克從地面前往紅森林逃亡, 或誘導他從木星工廠地道進入UNISG秘密基地來抓捕他</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_4_desc">
+		<text>你幫助史特洛克安全的抵達了紅森林, 該讓他兌現承諾了</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_5_desc">
+		<text>不能讓史特洛克在這時逃走! 幹掉他!</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_6_desc">
+		<text>特異區的傳奇死了, 搜索他的屍體, 查詢任何有用的情報</text>
+	</string>
+	<string id="lttz_hb_task_4_1_crossfire_7_desc">
+		<text>你在史特洛克的隨身物品中找到了一個U盤, 返回赫南德斯少校處並報告你的發現</text>
+	</string>
+
+	
+	<!-- Maus (ISG Mechanic) Find Level 1 Toolkit Task -->
+	<string id="jup_depo_isg_tech_task_1_name">
+		<text>為"地鼠"茅斯找到%s</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_1_text">
+		<text>茅斯中尉需要一個%s來對裝備進行基礎升級. 如果你找到了就帶給他</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_1_about">
+		<text>我有個好活給你幹. 給我弄來一些好工具, 你就會收到一些報酬. 你幹不幹?</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_1_fetch_about">
+		<text>當然有. 我一直缺少一組%s. 裡面包含一些處理槍用的槍油和工具. 如果你能帶來一組完整的, 我會好好的報答你</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_1_fetch_finish">
+		<text>很好! 這就是我一直需要的. 謝謝!</text>
+	</string>
+
+	<!-- Maus (ISG Mechanic) Find Level 2 Toolkit Task -->
+	<string id="jup_depo_isg_tech_task_2_name">
+		<text>為"地鼠"茅斯找到%s</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_2_text">
+		<text>茅斯中尉需要一個%s來對裝備進行高級升級, 如果你找到了就給他</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_2_about">
+		<text>我還有一個請求, 你上次給我的工具用起來還湊合, 但無法滿足我的工作需求, 能幫我弄來一套更好的嗎?</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_2_fetch_about">
+		<text>我需要%s, 不知道能在哪裡搞來, 但如果你能弄到的話... 我真的很需要</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_2_fetch_finish">
+		<text>太好了! 謝謝你</text>
+	</string>
+
+	<!-- Maus (ISG Mechanic) Find Level 3 Toolkit Task -->
+	<string id="jup_depo_isg_tech_task_3_name">
+		<text>為"地鼠"茅斯找到%s</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_3_text">
+		<text>茅斯中尉需要一個%s來進行專業級升級. 如果你找到了就帶給他</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_3_about">
+		<text>聽著, 我的意思並不是說你之前給我的工具不好, 但都不是最專業的, 我相信你懂我的意思</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_3_fetch_about">
+		<text>我需要%s, 不知道能在哪裡搞來, 但如果你能弄到的話... 我應該就沒什麼遺憾的了</text>
+	</string>
+	<string id="jup_depo_isg_tech_task_3_fetch_finish">
+		<text>這下我沒有遺憾了, 謝謝!</text>
+	</string>
+	
+</string_table>

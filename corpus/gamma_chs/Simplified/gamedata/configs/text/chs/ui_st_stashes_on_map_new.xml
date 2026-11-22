@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Modconfiguration Menu strings
+	
+-->
+<string_table>
+
+	<string id="ui_mcm_menu_stashes_on_map">
+		<text>藏物点地图</text>
+	</string>
+	
+	<string id="ui_mcm_title_stashes_on_map">
+		<text>地图上的藏物点</text>
+	</string>
+	
+	<string id="ui_mcm_stashes_on_map_map_key">
+		<text>启用按键</text>
+	</string>
+	
+	<string id="ui_mcm_stashes_on_map_mode">
+		<text>模式</text>
+	</string>
+	
+	<string id="ui_mcm_lst_all_stashes">
+		<text>所有藏物点</text>
+	</string>
+
+	<string id="ui_mcm_lst_only_filled">
+		<text>只有充满的藏物点</text>
+	</string>
+
+
+</string_table>

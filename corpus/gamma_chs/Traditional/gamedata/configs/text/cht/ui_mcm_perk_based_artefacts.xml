@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string_table>
+	
+	<string id="ui_mcm_perk_based_artefacts_title">
+		<text>更好的神器</text>
+	</string>
+	<string id="ui_mcm_menu_perk_based_artefacts">
+		<text>更好的神器</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_debug_mode">
+		<text>除錯模式</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_debug_mode_desc">
+		<text>啟用控制檯中的垃圾資訊</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_allow_arty_containers">
+		<text>允許容器中的神器</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_allow_arty_containers_desc">
+		<text>允許容器中的更好的神器使用它們的效果,特權描述仍將僅適用於無容器神器</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_treasure_chance">
+		<text>藏匿處的神器掉落概率</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_treasure_chance_desc">
+		<text>數量越少--藏品中的福利神器就越稀少</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_timed_degradation">
+		<text>狀態惡化</text>
+	</string>
+	<string id="ui_mcm_perk_based_artefacts_timed_degradation_desc">
+		<text>每隔20秒就會有一個百分點的狀態損失</text>
+	</string>
+	
+</string_table>

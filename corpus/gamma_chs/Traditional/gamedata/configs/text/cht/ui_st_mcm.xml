@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Anomaly Mod Configuration Menu strings
+	
+-->
+<string_table>
+
+	<string id="ui_mcm_desc_mcm">
+		<text>歡迎來到Anomaly Mod配置菜單.MCM本身沒有任何作用.MCM為其他mods/addons提供了一個顯示設定界面的地方.在左側您將看到使用MCM執行此操作的模組/外掛列表</text>
+	</string>
+	<string id="ui_mcm_desc_mcm2">
+		<text>logs日誌中的MCM錯誤或ui_mcm.script的崩潰很可能是由使用MCM的模組/外掛之一引起的,應報告給該模組/外掛的作者. </text>
+	</string>
+	<string id="ui_mm_menu_mcm">
+		<text>模組配置菜單</text>
+	</string>
+
+	<string id="ui_mcm_menu_mcm">
+		<text>模組配置菜單</text>
+	</string>
+	<string id="ui_mcm_menu_mcm_about">
+		<text>關於MCM</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_about_reset">
+		<text>重啟所有菜單</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_about_reset_desc">
+		<text>選中此項並點選應用將導致 MCM 重新載入所有菜單. 這是一個除錯工具,在正常情況下不應該是必需的</text>
+	</string>
+
+
+	<string id="ui_mcm_menu_mcm_log">
+		<text>Logs日誌記錄</text>
+	</string>
+	<string id="ui_mcm_mcm_desc_log">
+		<text>這是為附加元件製作者提供的一個工具,讓他們把日誌記錄從xray日誌和遊戲控制檯中移出來.\n
+		\n因為我尊重你對滯後和SSD寫入週期的關注,所以我提供了一些控制,讓你調整記錄的行為方式.\n
+		\n日誌將以建立它們的指令碼和MCM會話ID號碼命名.它們將在appdata/logs/mcm/中建立</text>
+	</string>
+
+	<string id="ui_mcm_mcm_mcm_log_enable">
+		<text>啟用 MCM 日誌記錄實用程式</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_enable_desc">
+		<text>取消勾選這個選項將阻止任何新的日誌被建立或更新.(注意變化可能要在載入新的儲存遊戲后才會生效)</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_numlogs">
+		<text>要保留的日誌會話的數量</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_numlogs_desc">
+		<text>當一個指令碼建立的日誌數量超過這個數字時,舊的日誌將被刪除.(注意如果遊戲崩潰的話,日誌的刪除不會發生)</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_continuous">
+		<text>允許連續寫檔案</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_continuous_desc">
+		<text>日誌檔案通常是分批更新的.如果遊戲崩潰了,這可能會導致一些資訊丟失.一個附加元件的製作者可能會要求你勾選這個框,以允許他們的日誌立即被更新</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_savefreq">
+		<text>日誌自動儲存的間隔時間,以毫秒為單位</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_savefreq_desc">
+		<text>無論在這裡設定了什麼,當進入各種用戶界面螢幕和儲存/載入遊戲時,日誌仍然會被儲存</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_timestamp">
+		<text>Xray日誌時間戳頻率</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_timestamp_desc">
+		<text>MCM為xray日誌新增了一個時間戳,以便更容易協調MCM日誌和xray日誌之間的事件.這就是這些時間戳之間的最小時間.如果沒有其他東西列印到控制檯,MCM也不會</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_debug_logging2">
+		<text>啟用除錯日誌</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_log_debug_logging2_desc">
+		<text>這將啟用MCM自己的除錯日誌,在用MCM報告錯誤之前應該啟用.其他外掛也可以使用這個設定來啟用它們自己的日誌</text>
+	</string>
+
+
+	<string id="ui_mcm_menu_mcm_kb">
+		<text>MCM的鍵位繫結</text>
+	</string>
+	<string id="ui_mcm_menu_mcm_kb_main">
+		<text>主要內容</text>
+	</string>
+
+	<string id="ui_mcm_mcm_desc_kb">
+		<text>MCM鍵位繫結工作 "Minecraft風格":點選方框,然後點選一個鍵位.點選或Escape鍵會取消.\n
+		\n如果你看到的鍵位與你按下的鍵位不一致,或者MCM似乎忽略了某些鍵位,你可能需要修改mcm_key_localization.ltx以反映你的鍵位佈局.\n
+		\n被分配到一個以上的MCM鍵位或預設遊戲鍵位將被突出顯示為紅色</text>
+	</string>
+	<string id="ui_mcm_mcm_desc_kb2">
+		<text>關於紅色衝突的鍵位著色的一些說明.\n
+		\n1. 這可能並不重要.如果這些鍵位被用於兩個不同的用戶界面,或者如果一個鍵只在按住shift的時候觸發,那麼這個鍵位被使用兩次的事實並不重要.\n
+		\n2. MCM不知道一個附加元件可能對一個鍵位做了什麼.你需要了解一個附加元件是如何使用一個鍵位的,才能知道衝突是否相關.\n
+		\n3. 對於單個待處理的變更,顏色會正確更新,而對於多個待處理的變更,可能不會.應用你的修改,並重新打開MCM以驗證正確的衝突狀態</text>
+	</string>
+
+	<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_presstime">
+		<text>長按倍數</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_presstime_desc">
+		<text>應用於雙擊倍數,以確定一個鍵位需要按住多長時間才能算作長按或保持.只適用於使用MCM來識別長按鍵位的附加元件</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_dtaptime2">
+		<text>雙擊視窗</text>
+	</string>
+	<string id="ui_mcm_mcm_mcm_kb_mcm_kb_main_dtaptime2_desc">
+		<text>第二次按下某個鍵需要在第一次按下後多長時間才能算作雙擊該鍵. 僅適用於使用 MCM 識別雙按鍵的外掛. 這個時間會影響一些單次按鍵事件的輸入延遲,因此應該設定得儘可能小</text>
+	</string>
+
+	<string id="ui_mcm_menu_mcm_all_kb">
+		<text>所有的鍵位繫結</text>
+	</string>
+	<string id="ui_mcm_mcm_desc_kb_all">
+		<text>這個面板將所有MCM鍵的繫結收集到一個地方,其順序與新增它們的附加元件在左邊出現的順序相同.\n
+		\n然而,這個列表不能包括來自附加元件面板的其他設定,這些設定可能會影響這個鍵的行為方式.\n
+		\n始終審查他們收集鍵位繫結的附加元件面板,以及該附加元件的文件. </text>
+	</string>
+	<string id="ui_mcm_mcm_desc_kb_all2">
+		<text>其他面板上的待定更改不會反映在本面板上,本面板上的待定設定也不會反映在其他面板上.\n
+		\n在使用此面板之前和之後應用您的更改. 不這樣做可能會導致不良行為.\n
+		\n\n關於紅色衝突鍵著色的一些注意事項.\n
+		\n1. 可能沒關係. 如果鍵在兩個不同的 UI 中使用,或者如果一個鍵繫結僅在同時按住 shift 時觸發,則該鍵被使用兩次這一事實並不重要.\n
+		\n2. MCM 不知道外掛可能對鍵位做什麼. 您需要了解外掛如何使用鍵位來了解衝突是否相關.\n
+		\n3. 對於單個待處理的更改,顏色會正確更新,對於多個待處理的更改,它可能不會. 應用您的更改並重新打開 MCM 以驗證正確的衝突狀態</text>
+	</string>
+	<string id="ui_mcm_menu_mcm_kb_conflicts">
+		<text>鍵位繫結衝突</text>
+	</string>
+	<string id="ui_mcm_mcm_desc_kb_conflicts">
+		<text>此面板將所有標記為衝突的 MCM 鍵繫結收集到一個位置,並按鍵排序.\n
+		\n如果某個鍵僅在可能與引擎鍵繫結衝突時出現在此列表中. 這些列在正常的異常選項中.\n
+		\n但是,此列表不能包含來自外掛面板的其他設定,這些設定可能會影響此鍵位的行為方式.\n
+		\n始終檢視收集鍵位的外掛面板以及外掛文件. </text>
+	</string>
+
+	
+	
+	<string id="ui_mcm_mcm_kb_modifier">
+		<text>使用組合鍵</text>
+	</string>
+	<string id="ui_mcm_mcm_kb_modifier_desc">
+		<text>只有在這個鍵也被按住的情況下,上述的鍵繫結才會啟用</text>
+	</string>
+
+	<string id="ui_mcm_lst_mcm_kb_mod_none">
+		<text>不使用組合鍵</text>
+	</string>
+	<string id="ui_mcm_lst_mcm_kb_mod_ctrl">
+		<text>Control鍵</text>
+	</string>
+	<string id="ui_mcm_lst_mcm_kb_mod_shift">
+		<text>Shift鍵</text>
+	</string>
+	<string id="ui_mcm_lst_mcm_kb_mod_alt">
+		<text>Alt鍵</text>
+	</string>
+
+
+
+	
+	<string id="ui_mcm_mcm_kb_mode">
+		<text>輸入模式</text>
+	</string>
+	<string id="ui_mcm_mcm_kb_mode_desc">
+		<text>如果以這種方式輸入按鍵,上述按鍵繫結將被啟用</text>
+	</string>
+	
+	<string id="ui_mcm_lst_mcm_kb_mode_press">
+		<text>短按</text>
+	</string>
+	<string id="ui_mcm_lst_mcm_kb_mode_dtap">
+		<text>雙擊</text>
+	</string>
+	<string id="ui_mcm_lst_mcm_kb_mode_hold">
+		<text>長按</text>
+	</string>
+	
+
+
+
+
+
+</string_table>
