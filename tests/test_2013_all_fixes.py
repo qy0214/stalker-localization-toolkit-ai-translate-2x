@@ -24,7 +24,7 @@ def check(name, cond):
 
 
 def t_version():
-    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14"))
+    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15"))
 
 
 def t_en_profanity():
@@ -120,9 +120,9 @@ def t_termbase_consistency():
             continue
         if isinstance(v, dict):
             tf |= set(v)
-    check("term:count", len(b) == 9085)
+    check("term:count", len(b) == 9095)
     check("term:consistent", set(b) == tf)
-    check("term:meta-total", t["_meta"]["total_entries"] == 9085)
+    check("term:meta-total", t["_meta"]["total_entries"] == 9095)
 
 
 def main():
