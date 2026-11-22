@@ -88,6 +88,11 @@ SOURCES = [
     (r"C:/STALKER-AiTranslate-2x/tmp/web/anomaly_repo/gamedata/configs/text/eng",
      r"C:/STALKER-AiTranslate-2x/corpus/gamma_chs/Simplified/gamedata/configs/text/chs",
      "GAMMA 汉化组（eng→中文，Anomaly eng 配对）", 1, "GAMMA 参考"),
+    # Anomaly rus 槽（官方俄文本地化，NS7-MT-TEST 解包）× GAMMA chs：
+    # 同 ID 体系，为 Anomaly 内容补 rus→中文 对。
+    (r"C:/game/NS7-MT-TEST/extract/anomaly_full/configs/text/rus",
+     r"C:/STALKER-AiTranslate-2x/corpus/gamma_chs/Simplified/gamedata/configs/text/chs",
+     "GAMMA 汉化组（rus→中文，Anomaly rus 配对）", 1, "GAMMA 参考"),
 ]
 
 
