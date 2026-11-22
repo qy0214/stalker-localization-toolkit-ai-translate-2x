@@ -45,3 +45,6 @@ Desktop.ini
 *.swp
 *~
 *.lnk
+
+# 本地备份（迭代前快照，不提交）
+backup/

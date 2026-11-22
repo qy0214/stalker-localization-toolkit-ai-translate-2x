@@ -2453,9 +2453,11 @@ def t48_tm_lite():
           job._tm_key("Привет $name", "rus")
           != job._tm_key("Привет $other", "rus")
           and job._tm_key("A\\nB", "rus") != job._tm_key("A B", "rus"))
+    # ★ 2.0.13：TM 门槛 20%→8%（实测重复率约 9.3%）。
+    # unique=48/50 → 重复率 4% < 8%，仍不启用；unique=30/50 → 40% 启用。
     check("T48-5 全局门控阈值可判定",
           job._tm_should_enable({"total": 50, "unique": 30})
-          and not job._tm_should_enable({"total": 50, "unique": 45})
+          and not job._tm_should_enable({"total": 50, "unique": 48})
           and not job._tm_should_enable({"total": 10, "unique": 5}))
 
 

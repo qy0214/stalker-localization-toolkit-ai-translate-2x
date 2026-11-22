@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.12",
+    "version": "2.0.13",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1017,7 +1017,9 @@ _FREQ_MID_RE = re.compile(
 # 实测 NS7 182 张表：全局重复率 7.4%，5 张表 ≥20%（1,482 条）；
 # 阈值 20% 正好把“名字/任务/新闻模板”这类高重复表挑出来，普通对话表
 # 不会因为零星重复而改变翻译路径。
-TM_LITE_MIN_RATIO = 0.20
+# ★ 2.0.13：实测 IWP 重复率约 9.3%，旧门槛 20% 导致表内精确复用长期不启用。
+# 降到 8% 让重复段直接复用（零生成）；MIN_ENTRIES 保持避免小表误判。
+TM_LITE_MIN_RATIO = 0.08
 TM_LITE_MIN_ENTRIES = 40
 
 
@@ -1368,6 +1370,12 @@ def patch_missing_numbers(src, out):
 _RU_PROFANITY_RE = re.compile(
     r"дерьм|заткн|хрен|чёрт|черт|бля|хуй|пизд|ебат|еб[ао]|говн|суч|"
     r"сдох|жоп|муд[ао]|уёб|уеб|нахуй|иди ты|пошёл ты|пошел ты", re.I)
+# ★ 2.0.13：英文源文的粗口（STALKER 大量英语对话/广播结尾"Weird shit"等）
+# 旧版只认俄语，英文脏话完全绕过粗口力度闸门，模型常把 shit/fuck 软化成
+# "奇怪的东西"。用词边界锚定，避免把 "shot"(发射) 里的 sh 误伤。
+_EN_PROFANITY_RE = re.compile(
+    r"\b(?:shit|fuck(?:ing|ed|er)?|bitch|bastard|asshole|dick|piss(?:ed|ing)?|"
+    r"crap|damn|bullshit|motherfucker|wtf)\b", re.I)
 # 中文译文里出现连续两个以上西里尔字母，基本就是模型漏译/原样保留。
 _CYR_WORD_RE = re.compile(r"[А-Яа-яЁё]{2,}")
 _ZH_PROFANITY_RE = re.compile(
@@ -1388,7 +1396,10 @@ _RESIDUAL_CYRILLIC_NOTE = (
 
 
 def has_source_profanity(text):
-    return bool(_RU_PROFANITY_RE.search(text or ""))
+    """源文含粗口（俄语/英语/中文任一）——决定是否启用粗口力度闸门。"""
+    return bool(_RU_PROFANITY_RE.search(text or "")
+                or _EN_PROFANITY_RE.search(text or "")
+                or _ZH_PROFANITY_RE.search(text or ""))
 
 
 def has_zh_profanity(text):
@@ -3383,7 +3394,9 @@ class LlamaServer(object):
             if block:
                 user_msg = block + "\n\n" + user_msg
         if max_tokens is None:
-            max_tokens = max(1024, int(self.ctx_size * 0.6))
+            # ★ 2.0.13：按本次输入长度动态估算（短句不虚设、长段不截断），
+            # 上限仍受 ctx 约束——对所有 MOD 通用，不依赖单一 MOD 实测值。
+            max_tokens = budget_max_tokens(len(text or ""), self.ctx_size)
         payload = json.dumps({
             "model": "hy-mt2",
             "messages": [
@@ -3536,7 +3549,9 @@ class LlamaServer(object):
             if block:
                 user_msg = block + chr(10) + chr(10) + user_msg
         if max_tokens is None:
-            max_tokens = max(1024, int(self.ctx_size * 0.6))
+            # ★ 2.0.13：按批量输入总长度动态估算，长对话不截断。
+            max_tokens = budget_max_tokens(
+                sum(len(x) for x in lines), self.ctx_size)
         payload = json.dumps({
             "model": "hy-mt2",
             "messages": [
@@ -3628,6 +3643,21 @@ _RUNTIME_TOKEN_RE = re.compile(
 _MASK_RESIDUE_RE = re.compile(r"\$\$R\d+\$\$")
 
 
+def budget_max_tokens(src_chars, ctx_size):
+    """★ 2.0.13 按本次输入长度估算输出 token 预算（通用，不随 MOD 失效）。
+
+    为什么不用固定 1536：别的 MOD 若有接近 safe_chars 的长段，译文可能需要
+    上千 token，固定值触发 finish_reason=length 截断→递归二分重试，反而更慢。
+    为什么不用 ctx*0.6：那与本次输入无关，短句也虚设 4915，放大失控生成。
+
+    正解是看本次要翻多少字：中文输出 token 上界约源字符数的 1.2 倍
+    （汉字约 1 token/字，加标点/空格/换行余量），另加 256 缓冲；下限 1024
+    覆盖实测最大输出（940），上限不超过窗口 0.6（与旧行为一致的硬顶）。
+    """
+    est = int(src_chars * 1.2) + 256
+    return max(1024, min(est, int(ctx_size * 0.6)))
+
+
 def mask_runtime_tokens(text):
     """把运行期占位符换成 $$R0$$…，返回 (masked, mapping)。"""
     mapping = {}
@@ -3650,6 +3680,80 @@ def restore_runtime_tokens(text, mapping):
     return text
 
 
+# ★ 2.0.13 圆点注入修复：1.8B 会把遮罩后的颜色码 $$R0$$ 当成列表项，
+# 还原后在 %c[...] 后留下 "•"，实测 392 条神器/百科描述被污染（源文零圆点）。
+# 只在源文**没有**圆点时清理，避免误伤原文真用到的项目符号。
+_BULLET = "\u2022"
+
+def clean_injected_bullets(src, out):
+    """源文无圆点而译文有 → 判定为模型注入，删除所有圆点并整理空格。
+
+    保留 round-trip 安全性：只删圆点本身与其后紧邻的一个空格，
+    不触碰颜色码/占位符/换行，返回 (清洗后文本, 是否改动)。
+    """
+    if not out or _BULLET not in out:
+        return out, False
+    if _BULLET in (src or ""):
+        return out, False   # 源文本来就有圆点，可能是合法列表，不动
+    cleaned = out
+    # "• " / "•" 连同其后紧邻空白一起删（颜色码后常见 %c[...]• %c[...]）
+    cleaned = re.sub(re.escape(_BULLET) + r"[ \t]?", "", cleaned)
+    # 删完后若颜色码之间留下双空格，收敛为一个（源文该处本无空格）
+    cleaned = re.sub(r"(%c\[[^\]]*\])([ \t]{2,})", r"\1 ", cleaned)
+    return cleaned, cleaned != out
+
+# 冠词粘连：小模型偶尔把英文冠词 An/A/The 贴在中文译文前（"An神器..."）。
+# 只在词首紧邻 CJK 时剥离，避免误伤真正的英文混排。
+_LEADING_ARTICLE_RE = re.compile(r"^(?:An|A|The)(?=[\u4e00-\u9fff])", re.I)
+
+def clean_stuck_article(out):
+    """剥离紧贴译文首字的英文冠词，返回 (文本, 是否改动)。"""
+    if not out:
+        return out, False
+    cleaned = _LEADING_ARTICLE_RE.sub("", out, count=1)
+    return cleaned, cleaned != out
+
+
+# ★ 2.0.13 通用新闻句式替换：STALKER 各版本的动态广播/新闻存在大量
+# 固定英文句式（"We were attacked by a <怪物>"、"<怪物> ambushed us" 等）。
+# 这类句子结构固定、只有中间名词变化，逐条送模型既慢又容易漏译。这里做成
+# **数据驱动的通用模板**：句式通用 + 名词查词库，任何 MOD 只要名词在库里就
+# 能零成本命中；库里没有的名词返回 None，照常送模型，不误伤。
+# 只处理纯 ASCII 英文短句，不含占位符/控制符。
+_NEWS_PATTERNS = (
+    # (正则, 模板)  —— 组1是名词（含可选冠词/复数由正则吃掉）
+    (re.compile(r"^We (?:were|got) (?:attacked|ambushed) by (?:a |an |some )?(.+?)[.!]?$", re.I),
+     "我们被%s袭击了。"),
+    (re.compile(r"^(?:A |An |The )?(.+?) ambushed us[.!]?$", re.I),
+     "%s伏击了我们。"),
+    (re.compile(r"^(?:A |An |The )?(.+?) attacked us[.!]?$", re.I),
+     "%s袭击了我们。"),
+    (re.compile(r"^We (?:ran into|encountered|met) (?:a |an |some )?(.+?)[.!]?$", re.I),
+     "我们遇到了%s。"),
+    (re.compile(r"^We got attacked by (?:a |an |some )?(.+?)[.!]?$", re.I),
+     "我们被%s袭击了。"),
+)
+
+def pattern_translate(src, lookup):
+    """通用句式 + 词库名词 → 确定性译文；无法覆盖返回 None。
+
+    lookup: 单调函数 term -> 译名 或 None（由调用方注入词库查询）。
+    """
+    s = (src or "").strip()
+    if not s or not s.isascii():
+        return None
+    for pat, tpl in _NEWS_PATTERNS:
+        m = pat.match(s)
+        if not m:
+            continue
+        noun = m.group(1).strip()
+        zh = lookup(noun)
+        if not zh:
+            return None
+        return tpl % zh
+    return None
+
+
 def unescape_newlines(text):
     """送翻前把字面 \\n/\\t 变成真实换行，让模型看到段落结构。"""
     return (text or "").replace("\\r\\n", "\n").replace("\\n", "\n") \
@@ -3663,25 +3767,61 @@ def escape_newlines(text):
 
 
 def restore_linebreaks(text, count):
-    """模型把多行合并成一行时的确定性兜底：按句末标点补回换行。
+    """模型改动换行数时的确定性兜底：把译文的换行数对齐到原文。
 
-    只在输出**一个换行都没有**且句子数足够时生效；不猜测原文行内位置，
-    但至少让每段独立成行，避免整段挤成一行。
+    ★ 2.0.13：旧版只在译文**一个换行都没有**时才补，实测大量
+    “原文 10 行 → 译文 8 行”的部分丢失被当成 kept_first 原样写回，
+    游戏里表现为整段错行（用户实测百科/描述条目）。新逻辑同时处理
+    换行不足（按句末/从句标点补）和换行过多（把多余换行并回相邻行），
+    且只在缺/多的量不大（≤ 原文行数）时动手，避免把模型正常分行打乱。
     """
-    if count <= 0 or not text or text.count("\n") > 0:
+    if count <= 0 or not text:
         return text
-    parts = [p for p in re.split(r"(?<=[。！？!?…])", text) if p]
-    if len(parts) < count + 1:
-        # 句子不够就退到逗号/破折号，宁可断得碎一点，也不要整段挤一行。
-        parts = [p for p in re.split(r"(?<=[。！？!?…；;，,、])", text) if p]
-    if len(parts) < 2:
+    cur = text.count("\n")
+    if cur == count:
         return text
-    count = min(count, len(parts) - 1)
-    out = []
-    for i, part in enumerate(parts[:-1]):
-        out.append(part + ("\n" if i < count else ""))
-    out.append(parts[-1])
-    return "".join(out)
+    # 差异过大时不动手：原文 3 行译文 30 行属于模型自由分段，
+    # 强行对齐只会破坏本就可读的译文。
+    if abs(cur - count) > max(count, 1):
+        return text
+
+    if cur < count:
+        # 缺行：优先按句末标点切，不够再退到从句标点。
+        parts = [p for p in re.split(r"(?<=[。！？!?…])", text) if p]
+        if len(parts) < count + 1:
+            parts = [p for p in
+                     re.split(r"(?<=[。！？!?…；;，,、])", text) if p]
+        if len(parts) < 2:
+            return text
+        need = min(count, len(parts) - 1)
+        out = []
+        for i, part in enumerate(parts[:-1]):
+            out.append(part + ("\n" if i < need else ""))
+        out.append(parts[-1])
+        fixed = "".join(out)
+        return fixed if fixed.count("\n") == count else text
+
+    # 多行：把多余的换行符号并回（删除多余 \\n，保留非空行内容）。
+    lines = text.split("\n")
+    keep = []
+    for ln in lines:
+        if len(keep) < count + 1:
+            keep.append(ln)
+        elif ln.strip():
+            # 已够行数又有正文：并入最后一行，不丢字。
+            keep[-1] = keep[-1].rstrip() + ln
+        # 纯空行直接丢弃
+    fixed = "\n".join(keep)
+    # 行数还多（原文就是空行多）：从尾部合并空行
+    while fixed.count("\n") > count:
+        idx = fixed.find("\n")
+        # 优先合并连续空行，其次合并任意相邻换行
+        m = re.search(r"\n\s*\n", fixed)
+        if m:
+            fixed = fixed[:m.start()] + "\n" + fixed[m.end():]
+        else:
+            fixed = fixed.replace("\n", "", 1)
+    return fixed if fixed.count("\n") == count else text
 
 
 # 专名/歌名/型号保护：只按**结构**判断，不写死任何 MOD 文件名。
@@ -5283,7 +5423,28 @@ class TranslationJob(object):
                 self._rule_hit("完整性（无中文）", "retried_ok")
                 out = retry
             else:
-                self._rule_hit("完整性（无中文）", "kept_first")
+                # ★ 2.0.13 第三级兜底：整段回显时强制切成短块逐块译。
+                # 旧版到这里直接 kept_first，长英文句（如 dm_anomalies_13
+                # 341 字符）就整段不翻。只有切片也失败才保留原文。
+                sliced = None
+                try:
+                    if mapping:
+                        raw = self._force_sliced(masked, lang, note=note)
+                        sliced = restore_runtime_tokens(raw, mapping) \
+                            if raw is not None else None
+                    else:
+                        sliced = self._force_sliced(normalized, lang,
+                                                    note=note)
+                except Exception:
+                    sliced = None
+                if sliced and not looks_like_prompt_echo(sliced) \
+                        and has_cjk(sliced):
+                    self.detail("  译文无中文，切片强制翻译成功：%s"
+                                % str(text)[:50])
+                    self._rule_hit("完整性（无中文）", "sliced_ok")
+                    out = sliced
+                else:
+                    self._rule_hit("完整性（无中文）", "kept_first")
         # 残留俄文闸门：中文译文里还夹着西里尔词，通常是引号内的格变专名
         # 被模型当成不可译名原样保留。带“引号内也要译”要求重试一次；
         # 仍残留则保留首次译文，不强行音译未知专名。
@@ -5309,9 +5470,46 @@ class TranslationJob(object):
                 out = retry
             else:
                 self._rule_hit("残留源文", "kept_first")
+        # ★ 2.0.13 确定性后修复（零模型请求）：圆点注入 + 冠词粘连。
+        # 这些是模型的格式噪声，用源文比对即可确定性清除，不必重译整段。
+        cleaned, bullet_fixed = clean_injected_bullets(normalized, out)
+        if bullet_fixed:
+            self.detail("  清除模型注入圆点：%s" % str(text)[:50])
+            self._rule_hit("圆点注入", "fixed")
+            out = cleaned
+        cleaned2, article_fixed = clean_stuck_article(out)
+        if article_fixed:
+            self.detail("  剥离粘连冠词：%s" % str(text)[:50])
+            self._rule_hit("冠词粘连", "fixed")
+            out = cleaned2
         final = escape_newlines(out)
         self._tm_store(normalized, lang, final)
         return final
+
+    def _force_sliced(self, text, lang, note=""):
+        """★ 2.0.13 未翻译兜底：把整段强制切成短块逐块翻译。
+
+        完整性闸门重试仍无中文时说明模型把整段英文原样回显——整段越长越
+        容易回显。这里无视 safe_chars 强行按句切成 ≤100 字符的小块，每块
+        单独请求（短句翻译成功率高得多），拼回。占位符用 split_protected
+        保护不被切断。任一块仍是纯英文则整条判失败（返回 None），交回原文。
+        """
+        if not text or not text.strip():
+            return None
+        parts = split_protected(text, 100, _PLACEHOLDER_RE)
+        if len(parts) <= 1 and len(text) <= 100:
+            # 本来就是短句还回显，切片也帮不上，直接失败
+            return None
+        pieces = []
+        for seg in parts:
+            try:
+                got = self._translate_segments(seg, lang, note=note)
+            except Exception:
+                return None
+            if not got or not has_cjk(got):
+                return None      # 有一块没译出，整条不算成功
+            pieces.append(got)
+        return "".join(pieces) if pieces else None
 
     def _translate_plain(self, text, lang, note=""):
         """翻译一个文本串；强制术语模式下整体翻译后回填指定译名。"""
@@ -6719,7 +6917,11 @@ class TranslationJob(object):
             })
         st["total"] = len(metas)
         batched_ids = set()
-        if "dialog" in rel.lower() and not self.force_glossary:
+        # ★ 2.0.13：批量不再因 force_glossary 整体关闭。原实现里只要开着
+        # 强制术语，dialog 表就全走逐条——实测请求数翻倍是速度主因之一。
+        # 术语安全由下面 _ok() 保证：含 hard 术语/占位符/词库整条命中的条目
+        # 一律踢出批次走逐条，批量只处理「无硬术语的连续短对话」。
+        if "dialog" in rel.lower():
             def _ok(meta):
                 src0 = meta["src"]
                 if not src0 or not src0.strip():
@@ -6825,6 +7027,14 @@ class TranslationJob(object):
                 changes[ent.id] = (lang, _exact)
                 st["translated"] += 1
                 continue
+            # ★ 2.0.13 通用新闻句式：固定英文句式 + 词库名词零成本直译。
+            # 只对 ASCII 英文短句生效，名词不在词库就返回 None 照常送模型。
+            if src not in self.glossary:
+                _pat = pattern_translate(src, termbase_exact_translation)
+                if _pat is not None:
+                    changes[ent.id] = (lang, _pat)
+                    st["translated"] += 1
+                    continue
             if self.protect_proper and looks_like_proper_text(rel, src):
                 st["skipped"] += 1
                 continue
@@ -6951,7 +7161,14 @@ class TranslationJob(object):
         inner = m.group(2)
         tag_re = re.compile(r"(<%s\b[^>]*>)(.*?)(</%s>)" % (tag, tag), re.S)
         tm = tag_re.search(inner)
-        esc = (new_text.replace("&", "&amp;").replace("<", "&lt;")
+        # ★ 2.0.13 空白保真：源 <text> 内容的前导/尾随空白（缩进、换行）
+        # 属于排版约定，模型译文常把它们抹平（实测 ui_hint_localization_rus
+        # 丢前导空格）。这里把源内容的首尾空白套回译文，避免游戏内错位。
+        src_body = tm.group(2) if tm else ""
+        lead = src_body[:len(src_body) - len(src_body.lstrip())]
+        trail = src_body[len(src_body.rstrip()):]
+        new_body = lead + str(new_text).strip() + trail
+        esc = (new_body.replace("&", "&amp;").replace("<", "&lt;")
                .replace(">", "&gt;"))
         if tm:
             inner2 = inner[:tm.start(2)] + esc + inner[tm.end(2):]
