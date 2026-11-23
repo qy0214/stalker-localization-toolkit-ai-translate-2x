@@ -200,6 +200,18 @@ check("lookup: Pripyat", m.termbase_lookup("Pripyat") == "普里皮亚季",
       m.termbase_lookup("Pripyat"))
 check("lookup: КПК → PDA", m.termbase_lookup("КПК") == "PDA",
       m.termbase_lookup("КПК"))
+# ── 8b 首尾引号键可达（旧实现只剥输入引号，键自带引号则永远查不到）──
+for k, want in (("Учёный «О-Сознания»", "“共同意识”科学家"),
+                ("Представитель «О-Сознания»", "“共同意识”代表"),
+                ('"Tears of Electra"', "“电之泪”"),
+                ('"Monolith" Chief', "黑石首领"),
+                ('"Agroprom" factory', "农业研究所")):
+    check("带引号键可达 %r" % k[:26], m.termbase_lookup(k) == want,
+          m.termbase_lookup(k))
+for k, want in (('"Boar"', "野猪"), ("«Бармен»", "酒保")):
+    check("剥引号匹配不回归 %r" % k, m.termbase_lookup(k) == want,
+          m.termbase_lookup(k))
+
 check("lookup: 大小写不敏感",
       m.termbase_lookup("PRIPYAT") == "普里皮亚季"
       and m.termbase_lookup("pripyat") == "普里皮亚季",

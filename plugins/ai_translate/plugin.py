@@ -2384,16 +2384,28 @@ def termbase_lookup(text):
     引号不敏感（SMS 名字表多为全大写，词库多为首字母大写）。
     只做整串精确匹配，不做子串——避免把正文里的普通词误换成专名译名。
     """
-    s = (text or "").strip().strip('"\u00ab\u00bb\u201c\u201d\'')
-    if not s:
+    raw = (text or "").strip()
+    s = raw.strip('"\u00ab\u00bb\u201c\u201d\'')
+    if not raw:
         return None
+    # ★ 2.0.22：首尾引号不敏感必须是**双向**的——旧实现只把输入剥引号后查，
+    # 于是键本身带引号的条目永远查不到（实测 50 条不可达，含
+    # `Учёный «О-Сознания»`→`“共同意识”科学家`、`"Tears of Electra"`→
+    # `“电之泪”`、`"Monolith" Chief`→`黑石首领`；Anomaly 两个「共同意识」
+    # 人物名因此白白送模型）。原串优先、剥引号兜底，两种形态都试。
+    cands = []
+    for _form in (raw, s):
+        if not _form:
+            continue
+        for _c in (_form, _form.casefold()):
+            if _c not in cands:
+                cands.append(_c)
     # 直接读 termbase 原始分类表：load_term_layers 的 canon/names 是 set
     # （只有 technical/reference 带映射），这里需要"原文→译名"全量映射。
     # ★ 全量审计 2026-11-23：3.6 万条后逐分类 casefold 全扫 O(N) 达 3.6ms/次，
     #   终检几千条目累计数秒——改为模块级 casefold 归一索引（O(1)），
     #   首分类优先（canon/人物 在前，与旧遍历顺序一致）。
     data = load_termbase_data()
-    low = s.casefold()
     global _TB_LOW_INDEX
     try:
         _st = os.stat(_TERMBASE_PATH)
@@ -2411,10 +2423,9 @@ def termbase_lookup(text):
                     idx[kl] = str(v)
         _TB_LOW_INDEX = {"key": _tkey, "low": idx}
     idx = _TB_LOW_INDEX.get("low") or {}
-    if s in idx:
-        return idx[s]
-    if low in idx:
-        return idx[low]
+    for _c in cands:
+        if _c in idx:
+            return idx[_c]
     # 兼容早期扁平词库（带 mtime 缓存，避免逐条重读 320KB）
     global _BUILTIN_FLAT_CACHE
     try:
@@ -2429,10 +2440,11 @@ def termbase_lookup(text):
                                        for k, v in bflat.items()}}
     bcache = _BUILTIN_FLAT_CACHE.get("data") or {}
     blow = _BUILTIN_FLAT_CACHE.get("low") or {}
-    if s in bcache:
-        return str(bcache[s])
-    if low in blow:
-        return blow[low]
+    for _c in cands:
+        if _c in bcache:
+            return str(bcache[_c])
+        if _c in blow:
+            return blow[_c]
     return None
 
 
