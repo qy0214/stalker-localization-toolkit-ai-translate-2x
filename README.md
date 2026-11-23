@@ -112,9 +112,9 @@ gh release create v2.0.22 dist/ai_translate_plugin_v2.0.22_install.zip --title "
 ## 版本与校验
 
 - 插件版本：`ai_translate 2.0.22`　宿主插件 API：`1`
-- 插件入口 SHA-256：`2e51b708e3205b7fbabc1735a34f1780c7ca1ebd66f504b6ea9c09c784000e41`
-- 发布 zip SHA-256：`c5b81d4505891762ea987d3244af2f7ff609bf5dc72f34ad8b1b83c7f3a210bc`
-- 平台安装包 SHA-256：`7915940c2cf8d730173514c2d31f991c14d82ed6b85c21a411d8ef17d6383c78`
+- 插件入口 SHA-256：`23ee71961bc2c76a5eac799cfcb26b0c9fbde179e00f81696a4cd00e95159bfa`
+- 发布 zip SHA-256：`7592ea633418a9d2fb94f795b6c20a41062cf8fca2904cbf92b4583b4d91d022`
+- 平台安装包 SHA-256：`e322127295fc27936a939ddd4dfb9f8b77e75976ae9fd71a7dea644994de63f8`
 - 术语规模：两张 JSON 各 **22524** 条、11 个分类、条目数一致；
   canon 4276 / names 3250 / technical 18 / reference 14981。
   2.0.22 起 `Gunslinger 参考`/`GAMMA 参考`（13946 条）退役，留档

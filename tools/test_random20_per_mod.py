@@ -17,8 +17,10 @@
 import os
 import re
 import sys
+import io
 import json
 import random
+import contextlib
 import importlib.util
 import xml.etree.ElementTree as ET
 
@@ -70,12 +72,34 @@ def _norm_comments(s):
     return s.replace("--!>", "-->")
 
 
-def entries(path):
-    """原文优先、注释归一回退。
+_VENDOR = None
 
-    归一化会把空注释 `<!---->` 破坏成 `<!-->`（`<!-+` 吞掉全部短横），
-    实测 OLR25 4 个文件因此在归一后才解析失败；反过来 IWP/OP/Anomaly
-    有 14 个文件只有归一后才能解析。两种都试，谁通用谁。
+
+def _vendor_parse(path):
+    """与插件运行时同链路的解析兜底（vendored parse_xray_text_xml）。
+
+    normalize_xml_string 会转义裸 &（非白名单实体）、包缺失的
+    <string_table> 根、剥注释、修半截 string_table——与插件完全一致。
+    返回 [] 表示插件同样会当作空文件跳过；None 表示读不了（插件也会跳过）。
+    """
+    global _VENDOR
+    if _VENDOR is None:
+        _VENDOR = m._load_vendor()
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            return _VENDOR.parse_xray_text_xml(
+                path, list(m.read_encoding_chain(path)))
+    except Exception:
+        return None
+
+
+def entries(path):
+    """原文优先、注释归一回退，最后走插件同款 vendored 兑底。
+
+    前两级（裸 fromstring / 只修注释）都失败时，改用发布包内
+    xRayXmlParser.parse_xray_text_xml——插件运行时就是它，重放口径
+    必须与真实链路一致。2.0.22 报的「解析失败 207 个」即本工具缺
+    这一级兑底造成的假红旗：OP 71 / OLR25 88 等在插件真实链路下 0 失败。
     """
     s = read(path)
     if not s:
@@ -88,7 +112,16 @@ def entries(path):
         except ET.ParseError:
             continue
     if root is None:
-        return None
+        ents = _vendor_parse(path)
+        if ents is None:
+            return None
+        out = {}
+        for e in ents:
+            texts = e.texts or {}
+            t = texts.get("text") or texts.get("rus") or texts.get("eng")
+            if e.id is not None and t:
+                out[e.id] = t
+        return out
     out = {}
     for e in root.iter("string"):
         t = e.find("text")
@@ -272,7 +305,7 @@ def main():
         for _m, rel, sid, cat, s in show:
             print("   (%s) %s|%s: %s" % (cat, os.path.basename(rel), sid, s))
 
-    print("\n== D. 裸 & 条目（宿主解析风险面，不断言）: %d ==" % len(amp))
+    print("\n== D. 裸 & 条目（插件 normalize 兑底已覆盖，仅记录）: %d ==" % len(amp))
     by_mod = {}
     for r in amp:
         by_mod[r[0]] = by_mod.get(r[0], 0) + 1

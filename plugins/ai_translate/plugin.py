@@ -6583,6 +6583,13 @@ class TranslationJob(object):
           ④ **条目未翻译**（2.0.7）：改写过的文本表里，输出仍与源文逐字相同
              且含西里尔——这是"保留原文"的落盘形态（翻译异常/专名跳过）。
              排除已登记专名/术语库既有条目后即疑似漏译，点名让人补。
+          ⑤ **上下文串入**（2.0.8）：输出仍带「前一句/后一句」标签 = 译文
+             被相邻条目污染，点名补译。
+          ⑥ **& 保真哨兵**（2.0.22）：第三方产物见过 `Heckler & Koch` →
+             `Heckler  Koch` 的静默吞 &（& 位置塌成双空格）。本插件解析/
+             写回链路已验证往返保真（normalize 转义裸 & + generateOutputXml
+             再转义），残余风险只剩模型译文吞 &；源含 & 且译文出现源没有
+             的双空格即点名复核，只报告不删改。
         终检不通过不影响已有输出、不改 ok —— 账本续跑机制下次会补漏重译。
         范围：文本表 XML（数量最大的产出）。脚本字面层/引用层复制件走 ①。
         """
@@ -6601,6 +6608,7 @@ class TranslationJob(object):
         bad_parse, lost_ids, residue, n_tables = [], [], [], 0
         untranslated = []          # ★ 2.0.7 条目级漏译（输出=俄文源文）
         ctx_bleed = []             # ★ 2.0.8 上下文串入（前一句/后一句标签）
+        amp_lost = []              # ★ 2.0.22 & 保真哨兵（源含 & 译文双空格）
         _CYR_AUDIT = re.compile(r"[а-яёА-ЯЁ]{2,}")
         for rel in sorted(self._audit_tables):
             n_tables += 1
@@ -6659,6 +6667,27 @@ class TranslationJob(object):
                         ctx_bleed.append("%s（%d 条：%s…）"
                                          % (rel, len(bleed_ids),
                                             ", ".join(bleed_ids[:3])))
+                    # ⑥ & 保真哨兵：源含 & 的已翻条目，译文出现源没有的
+                    # 双空格 = 吞 & 特征签名（Heckler & Koch → Heckler  Koch）。
+                    # 只点名，不自动改写（译成「黑克勒-科赫」专名属正常）。
+                    amp_ids = []
+                    for e in (out_ents or []):
+                        src_e = in_map.get(e.id)
+                        if src_e is None:
+                            continue
+                        for lang_key, out_val in (e.texts or {}).items():
+                            in_val = (src_e.texts or {}).get(lang_key)
+                            if not in_val or not out_val or in_val == out_val:
+                                continue          # 未翻/空值不看
+                            if "&" not in in_val:
+                                continue          # 源无 & 不看
+                            if "  " in out_val and "  " not in in_val:
+                                amp_ids.append(e.id)
+                                break
+                    if amp_ids:
+                        amp_lost.append("%s（%d 条：%s…）"
+                                        % (rel, len(amp_ids),
+                                           ", ".join(amp_ids[:3])))
                 except Exception:
                     pass    # 输入表已不存在/解析失败：以输出可解析为准
             try:
@@ -6669,7 +6698,7 @@ class TranslationJob(object):
                 residue.append(rel)
         problems = (len(missing) + len(empty) + len(bad_parse)
                     + len(lost_ids) + len(residue) + len(untranslated)
-                    + len(ctx_bleed))
+                    + len(ctx_bleed) + len(amp_lost))
         if problems:
             self.log("终检：账本 %d 个文件 / 改写文本表 %d 张，发现 %d 处问题"
                      % (len(ledger_items), n_tables, problems), "warn")
@@ -6688,6 +6717,8 @@ class TranslationJob(object):
             for rel in ctx_bleed[:20]:
                 self.log("  终检｜上下文串入（前一句/后一句）：%s" % rel,
                          "warn")
+            for rel in amp_lost[:20]:
+                self.log("  终检｜疑似吞 &（& 塌成双空格）：%s" % rel, "warn")
             if untranslated or ctx_bleed:
                 self.log("  终检｜上述条目只点名前 20 张表；"
                          "可清空输出目录后重跑补译", "warn")

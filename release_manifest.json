@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-11-23T15:25:41+08:00",
+  "generated_at": "2026-11-23T16:17:10+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "8adac75",
+    "commit": "3f36a0a",
     "dirty": true,
     "dirty_files": [
       "M CHANGELOG.md",
-      " M README.md",
       " M dist/ai_translate_plugin_v2.0.22.zip",
       " M dist/ai_translate_plugin_v2.0.22_install.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_2022_soft_retire.py"
+      " M tools/replay_filters_all_mods.py",
+      " M tools/test_random20_per_mod.py",
+      "?? tests/test_2022_amp_sentinel.py"
     ]
   },
   "versions": {
@@ -26,15 +27,15 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 471277,
-      "sha256": "2e51b708e3205b7fbabc1735a34f1780c7ca1ebd66f504b6ea9c09c784000e41",
+      "size": 473410,
+      "sha256": "23ee71961bc2c76a5eac799cfcb26b0c9fbde179e00f81696a4cd00e95159bfa",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 2691033,
+      "size": 2693166,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
@@ -42,16 +43,16 @@
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.22.zip",
       "exists": true,
-      "size": 911262,
-      "sha256": "c5b81d4505891762ea987d3244af2f7ff609bf5dc72f34ad8b1b83c7f3a210bc",
+      "size": 911849,
+      "sha256": "7592ea633418a9d2fb94f795b6c20a41062cf8fca2904cbf92b4583b4d91d022",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
       "path": "dist\\ai_translate_plugin_v2.0.22_install.zip",
       "exists": true,
-      "size": 911182,
-      "sha256": "7915940c2cf8d730173514c2d31f991c14d82ed6b85c21a411d8ef17d6383c78",
+      "size": 911769,
+      "sha256": "e322127295fc27936a939ddd4dfb9f8b77e75976ae9fd71a7dea644994de63f8",
       "note": "给平台插件管理器直接解压用"
     },
     {
@@ -89,7 +90,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.22.zip",
-    "sha256": "c5b81d4505891762ea987d3244af2f7ff609bf5dc72f34ad8b1b83c7f3a210bc",
+    "sha256": "7592ea633418a9d2fb94f795b6c20a41062cf8fca2904cbf92b4583b4d91d022",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -283,6 +284,6 @@
   },
   "tracked": {
     "files": 1267,
-    "bytes": 31072563
+    "bytes": 31079379
   }
 }

@@ -7,8 +7,10 @@
 import os
 import re
 import sys
+import io
 import glob
 import random
+import contextlib
 import importlib.util
 import xml.etree.ElementTree as ET
 
@@ -55,13 +57,33 @@ def _norm_comments(s):
     return s.replace("--!>", "-->")
 
 
+_VENDOR = None
+
+
+def _vendor_parse(path):
+    """与插件运行时同链路的解析兑底（vendored parse_xray_text_xml）。"""
+    global _VENDOR
+    if _VENDOR is None:
+        _VENDOR = m._load_vendor()
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            return _VENDOR.parse_xray_text_xml(
+                path, list(m.read_encoding_chain(path)))
+    except Exception:
+        return None
+
+
 def entries(path):
     s = read(path)
     if not s:
         return {}
-    # ★ 原文优先、注释归一回退：归一化会把空注释 `<!---->` 破坏成 `<!-->`
-    # （`<!-+` 吞掉全部短横），实测 OLR25 4 个文件因此在归一后才解析失败；
-    # 反过来 IWP/OP/Anomaly 有 14 个文件只有归一后才能解析。两种都试。
+    # ★ 原文优先、注释归一回退，最后走插件同款 vendored 兑底：
+    # 归一化会把空注释 `<!---->` 破坏成 `<!-->`（`<!-+` 吞掉全部短横），
+    # 实测 OLR25 4 个文件因此在归一后才解析失败；反过来 IWP/OP/Anomaly
+    # 有 14 个文件只有归一后才能解析。前两级都失败时调 vendored
+    # parse_xray_text_xml（normalize_xml_string：转义裸 &、包根、剥注释、
+    # 修半截 string_table）——插件运行时就是它。2.0.22 报的「解析失败
+    # 207 个」是本工具缺这一级兑底造成的假红旗，插件真实链路 0 失败。
     root = None
     for cand in (s, _norm_comments(s)):
         try:
@@ -70,7 +92,16 @@ def entries(path):
         except ET.ParseError:
             continue
     if root is None:
-        return None
+        ents = _vendor_parse(path)
+        if ents is None:
+            return None
+        out = {}
+        for e in ents:
+            texts = e.texts or {}
+            t = texts.get("text") or texts.get("rus") or texts.get("eng")
+            if e.id is not None and t:
+                out[e.id] = t
+        return out
     out = {}
     for e in root.iter("string"):
         t = e.find("text")
