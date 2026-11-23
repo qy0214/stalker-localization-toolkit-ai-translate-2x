@@ -1,4 +1,4 @@
-# ai_translate 2.0.26
+# ai_translate 2.0.27
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件：
 用 Hy-MT2 / llama.cpp 在本机翻译 X-Ray 文本 XML、cfgxml、ltx 与脚本，不依赖在线翻译 API。
@@ -11,7 +11,8 @@
 
 | 版本 | 摘要 |
 |---|---|
-| **2.0.26** | 术语库深度审查与优化：16 个 MOD / 1623 文件 / 64.2 MB 全量词频扫描 + 人工复核，新增「高频硬词」分类 51 条并挂入 canon 层（主产地名格变补位：Зона 主语单数、Припяти/Болотах/Кордоне/Агропроме/Янтаре/Радаре/Юпитере/Лощина 四格变；英文地名、CNPP/ЧАЭС 机组、Lab X-8/10/16/18、固定物品与 UI）；修正 9 处错译（Russian→俄语、НИИ→研究所、Director→主管、Darkscape→幽暗地带、Исполнитель желаний→许愿石、Крота→鼹鼠、Шурупа→螺丝、Стрелка 三格变→史特列洛克，删除 S.T.A.L.K.E.R.→潜行者）；词库 24456→24455（13 分类），本机用户层同步写入 51 条；测试 20/20 全绿 |
+| **2.0.27** | 术语库交叉一致性审计（新方法，弃用旧脚本）：同源跨类冲突 15 组全部统一（Loners→独行者、Wolf→狼、Cap→帽子、Mama's Beads→妈妈的念珠、Generator→发电机 等）、中文半角标点 1087 条规范化、俄英同源（Мамины бусы 系列）对齐；交叉审计 S1/S4a 归零，两仓四副本同步，测试 20/20 全绿 |
+| 2.0.26 | 术语库深度审查与优化：16 个 MOD / 1623 文件 / 64.2 MB 全量词频扫描 + 人工复核，新增「高频硬词」分类 51 条并挂入 canon 层（主产地名格变补位：Зона 主语单数、Припяти/Болотах/Кордоне/Агропроме/Янтаре/Радаре/Юпитере/Лощина 四格变；英文地名、CNPP/ЧАЭС 机组、Lab X-8/10/16/18、固定物品与 UI）；修正 9 处错译（Russian→俄语、НИИ→研究所、Director→主管、Darkscape→幽暗地带、Исполнитель желаний→许愿石、Крота→鼹鼠、Шурупа→螺丝、Стрелка 三格变→史特列洛克，删除 S.T.A.L.K.E.R.→潜行者）；词库 24456→24455（13 分类），本机用户层同步写入 51 条；测试 20/20 全绿 |
 | 2.0.25 | aera MOD 审计（188 文件 / 36138 应译条目）+ 人工对照包按 id 全量比对驱动的修复（不做 A/B 开关）：ident 假跳过修复（`_name/_descr/_text/_title` 等 id 后缀豁免，2206 条找回）；强制术语长文阈值（≥600 字符走分段链，1.8B 长文保不住占位符）；上下文串入切片级兜底；字面换行收敛 11 条；CHS 人工对照收割 1932 条入「人工对照」硬层（P1/P2/P4）；口语化提示词锚例（P6）；审计/清单工具口径修正。词库 22524→24456，测试 20/20 全绿，全 MOD 重放零漂移 |
 | 2.0.24 | IWP 已翻译产物全量深度审计（186 文件 / 18978 应译条目）驱动的 6 项修复：批量对话路径补齐占位符掩码/还原/数字/粘连/错位校验（P0，实测 `%c[default]→%c[默认]` 等 16 条运行期破坏全部来自该无掩码旁路）；「（原文数字/型号 …）」注记退役（年代误报 38 条清零 + 定向重试 + 裸数字兜底 + 型号数字双注记修复）；短名回显新增定名指令兜底；粘连残词（克里门enko 类）新增确定性闸门；未解析引用报告收紧；汉字间空格收敛。全 MOD 重放零漂移，测试 19/19 全绿 |
 | 2.0.23 | 界面选项精简：11 个勾选逐项核对后，5 个「关闭只有坏处」的收编为内部固定开启（引用层/完整补丁/TM-lite/会话词表/高频专名），1 个实验键移出 UI，保留 5 个各挂一行开关后果说明；强制术语/保护专名出厂默认改为开；引用层无文本表自动回退整目录模式（原先警告后终止）；词库 22524 条，测试 18/18 全绿 |
@@ -57,7 +58,7 @@
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.26.zip` 解压到工具集的 `plugins/` 目录：
+把 `dist/ai_translate_plugin_v2.0.27.zip` 解压到工具集的 `plugins/` 目录：
 
 ```text
 <工具集目录>\plugins\ai_translate\plugin.py
@@ -87,9 +88,9 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.26
+python tools/release_plugin.py 2.0.27
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.26 dist/ai_translate_plugin_v2.0.26_install.zip --title "ai_translate 2.0.26"
+gh release create v2.0.27 dist/ai_translate_plugin_v2.0.27_install.zip --title "ai_translate 2.0.27"
 # 3) 把第 1 步打印的条目追加进注册表 plugins 数组（需要该仓库写权限）
 ```
 
@@ -103,8 +104,8 @@ gh release create v2.0.26 dist/ai_translate_plugin_v2.0.26_install.zip --title "
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.26.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.26_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.27.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.27_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `CHANGELOG.md` | 各版本完整修复明细与证据 |
 | `corpus/` | 收割用双语语料与退役软层留档（不随发布包分发） |
@@ -122,10 +123,10 @@ gh release create v2.0.26 dist/ai_translate_plugin_v2.0.26_install.zip --title "
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.26`　宿主插件 API：`1`
-- 插件入口 SHA-256：`4b707340e9340caba2feac898c3e1e278cc06b0692b43f73fe6821f4bf5b132f`
-- 发布 zip SHA-256：`b1a0f9669830657d5023f20c9d4f433c195a4fccd639cbc786a0528edbdb2ad3`
-- 平台安装包 SHA-256：`4a1dd6a360b64637a2b76c30adc96a421d67809dcfe3b4030572ef2e3c52a539`
+- 插件版本：`ai_translate 2.0.27`　宿主插件 API：`1`
+- 插件入口 SHA-256：`83584fafaf222907bf4d693bcf3e4be725933af77cd5e72b840cd1ee2a5e7a62`
+- 发布 zip SHA-256：`96c33465642b2bde668dd0841feffa7ca991e41628ec360996b954451569e6a0`
+- 平台安装包 SHA-256：`73536a801ed8cb3b7bd5a5ae411d28be17922977f99d91a562bfaf467730ab0f`
 - 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
   [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
   reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
@@ -136,7 +137,7 @@ gh release create v2.0.26 dist/ai_translate_plugin_v2.0.26_install.zip --title "
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.26.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.27.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
