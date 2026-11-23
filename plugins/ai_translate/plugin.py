@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.23",
+    "version": "2.0.24",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1198,6 +1198,8 @@ TRANSLATION_BATCH_SYS_PROMPT = (
     "开头的 [n] 编号、行数和顺序，不合并、不拆分、不解释、不加角色名。"
     "上下文里前后句只帮助理解，不要翻译没有编号的内容。"
     "术语提示只在语义相符时采用；引号内的阵营、地名、物品、人名也要译成中文。"
+    "输入里的 $$R0$$、$$R1$$ 等控制符必须逐字原样保留，不得翻译、"
+    "拆分或改动。"
     "只输出带编号的译文行。"
 )
 
@@ -1345,12 +1347,27 @@ def missing_big_numbers(src, out):
         if iv in out_vals or float(iv) in out_vals or iv in out_nums:
             continue
         missing.append(n)
+    # ★ 2.0.24（IWP 全量审计 D2）：年代的中文纪年表述视为保真。
+    # 实测 "1960s / 1990s" 译作「20世纪60年代/90年代」被严格数字核对
+    # 判缺失，59 条注记里 38 条是这种误报。译文出现「YY年代」（可带
+    # 世纪前缀）或「YYYY年代」时，认定对应十年位年份已表达。
+    # 通用规则，不依赖具体 MOD/文本。
+    if missing:
+        keep = []
+        for n in missing:
+            if (len(n) == 4 and n.endswith("0")
+                    and re.search(r"(?:(?:1[5-9]|20)\s*世纪\s*)?"
+                                  + n[2:4] + r"\s*年代|" + n + r"年代",
+                                  str(out))):
+                continue
+            keep.append(n)
+        missing = keep
     # 确定性输出顺序：集合迭代顺序随进程哈希变化，会让补数字/测试不稳定
     missing.sort(key=lambda x: (len(x), x))
     return missing
 
 
-def patch_missing_numbers(src, out):
+def patch_missing_numbers(src, out, skip=()):
     """数字闸门两次重试仍缺失时的兜底：不整段回退原文，而是把缺失的
     关键数字按出现顺序补进译文，保留已经译好的正文。
 
@@ -1358,21 +1375,33 @@ def patch_missing_numbers(src, out):
     旧逻辑整段保留英文——玩家看到的是一整段看不懂的外文，比数字
     缺失严重得多。这里改为：译文已有中文时，把缺失金额以「（2800）」
     形式补到对应位置附近；找不到锚点则追加到末尾。
+
+    ★ 2.0.24：skip 传入缺失型号串——数字若是某个缺失型号的一部分
+    （AK-103 里的 103），由型号保真闸门整串补「（AK-103）」即可，
+    再补裸「（103）」就是双注记（实测交互缺陷，回归测试抓出）。
     """
     if not src or not out or not any("\u4e00" <= c <= "\u9fff" for c in out):
         return None                      # 无中文的译文不能补，交给调用方回退
     missed = missing_big_numbers(src, out)
     if not missed:
         return out
+    if skip:
+        _sk = [str(t) for t in skip]
+        missed = [n for n in missed
+                  if not any(n in t for t in _sk)]
+        if not missed:
+            return out
     fixed = out
     for n in missed:
         # 优先插到译文里出现的货币/单位词之后（卢布/美元/格里夫纳等）
+        # ★ 2.0.24（IWP 全量审计 D2）：注记字样「原文数字」退役——
+        # 兜底补的是裸数字，玩家读到的仍是成品文本而非审计注记。
         m = re.search(r"(卢布|美元|元|格雷|格里夫纳|coin| coins)", fixed)
         if m:
             pos = m.end()
-            fixed = fixed[:pos] + "（原文 %s）" % n + fixed[pos:]
+            fixed = fixed[:pos] + "（%s）" % n + fixed[pos:]
         else:
-            fixed = fixed.rstrip() + "（原文数字 %s）" % n
+            fixed = fixed.rstrip() + "（%s）" % n
     return fixed
 
 
@@ -3799,6 +3828,39 @@ def restore_runtime_tokens(text, mapping):
     return text
 
 
+# ★ 2.0.24（IWP 全量审计 D10）：半音译粘连签名。模型（1.8B）会把专名
+# 音译一半、原文留一半，产出「克里门enko队长」「Tkachenko将军」
+# 「$clr_2We正看到」「箱子-kit在那儿」这类玩家不可读、词库回填也救不回
+# 的残词（回填要求整词边界，词内碎片永远不命中）。判定前剥掉合法 token：
+# 占位符/色码/变量（$$R0$$、%c[...]、$var）、数字、字面 \n——否则
+# 「$target正在」「AK-103可以」误报。剥后仍出现「拉丁字母串直接贴汉字」
+# 即粘连。大小写混合形态（首字母大写+后续小写）才算：纯大写缩写
+# （PC机 的 PC）不误伤。
+_GLUE_STRIP_RE = re.compile(
+    r"\$\$R\d+\$\$|%c\[[^\]]*\]|\$clr_\d+|\$[A-Za-z_][A-Za-z0-9_]*"
+    r"|%[-+ #0-9.*$]*[A-Za-z]|\\n")
+_GLUE_RE = re.compile(
+    r"[\u4e00-\u9fff][A-Za-z][a-z]+|[A-Za-z][a-z]+[\u4e00-\u9fff]")
+
+
+def find_glue_residue(text):
+    """返回译文里的粘连残词样例（最多 3 个）；无粘连返回 []。
+
+    数字保留在探针里：单位记法（45mm弹壳、125g药剂）的字母串前面
+    必然是数字，按"字母串紧邻数字"跳过——这是度量单位不是粘连。
+    """
+    if not text:
+        return []
+    probe = _GLUE_STRIP_RE.sub(" ", text)
+    hits = []
+    for mm in _GLUE_RE.finditer(probe):
+        pre = probe[:mm.start()]
+        if re.search(r"[\d.]\s*$", pre):
+            continue
+        hits.append(mm.group(0))
+    return hits[:3]
+
+
 # ★ 2.0.13 圆点注入修复：1.8B 会把遮罩后的颜色码 $$R0$$ 当成列表项，
 # 还原后在 %c[...] 后留下 "•"，实测 392 条神器/百科描述被污染（源文零圆点）。
 # 只在源文**没有**圆点时清理，避免误伤原文真用到的项目符号。
@@ -4947,6 +5009,11 @@ def normalize_cn_punctuation(text):
     out = _REPEATED_BANG_RE.sub(lambda m: m.group(1) * 2, out)
     # 已有全角省略号旁边多余的半角点（……. → ……）
     out = re.sub(r"…\.(?![.\d])", "…", out)
+    # ★ 2.0.24（IWP 全量审计 F5 定量）：汉字之间的空格收敛。
+    # 长文分段/模型风格会产出「强烈的 禁区 环境中」这类词间空格——
+    # 中文没有词间空格，两侧都是汉字即可安全删除；占位符/色码/数字
+    # 两侧必有一侧非汉字，不受影响（「12.3 米」「$start $mid」保留）。
+    out = re.sub(r"(?<=[\u4e00-\u9fff]) +(?=[\u4e00-\u9fff])", "", out)
     return out, out != prev or out != text
 
 
@@ -5035,6 +5102,10 @@ def missing_model_tokens(src, out):
         seen.add(tok)
         # 年份区间不算型号
         if re.fullmatch(r"\d+", tok):
+            continue
+        # ★ 2.0.24（IWP 全量审计 D2）：英文年代短语不是型号——实测
+        # "mid-1990s" 被当型号，译文「1990年代中期」判缺失补出注记。
+        if re.fullmatch(r"(?:early|mid|late)[-\s]?\d{4}s?", tok, re.I):
             continue
         # 型号需紧邻引号或武器语境词，减少误报。
         # ★ 2.0.18：语境窗口从 ±24 放宽到 ±48 + 全源兜底——实测武器描述
@@ -5750,7 +5821,9 @@ class TranslationJob(object):
                     # 译好的中文正文，仅把缺失数字按原值补进去——一整段
                     # 看不懂的外文比一个数字缺失严重得多。仅当译文根本
                     # 没有中文（完全没翻）才回退原文。
-                    patched = patch_missing_numbers(normalized, out)
+                    patched = patch_missing_numbers(
+                        normalized, out,
+                        skip=missing_model_tokens(normalized, out))
                     if patched and patched != out:
                         self.detail("  数字保真重试仍缺（%s），已补数字保留译文：%s"
                                     % (",".join(still[:4]), str(text)[:50]))
@@ -5826,6 +5899,36 @@ class TranslationJob(object):
                                 % str(text)[:50])
                     self._rule_hit("完整性（无中文）", "sliced_ok")
                     out = sliced
+                elif len(normalized.strip()) <= 48:
+                    # ★ 2.0.24（IWP 全量审计 D5）：短名回显第 4 级兜底。
+                    # 成就名/绰号/军衔名（Rag and Bone、Lt-Colonel Shulga）
+                    # 对「翻译这句话」类指令持续回显（实测 187 条）——改发
+                    # 「定名」指令（要求给出中文译名，而非翻译整句）再试
+                    # 一次；仍回显才保留原文。通用规则，不依赖具体 MOD。
+                    _name_note = ("输入是游戏内的名称（成就、人物、物品、"
+                                  "地点、组织）。为该名称给出简洁的中文译名"
+                                  "（音译或意译均可），不要解释，不要原样"
+                                  "保留英文或俄文。")
+                    nm = None
+                    try:
+                        if mapping:
+                            raw = self._translate_plain(masked, lang,
+                                                         note=_name_note)
+                            nm = restore_runtime_tokens(raw, mapping)
+                        else:
+                            nm = self._translate_plain(normalized, lang,
+                                                       note=_name_note)
+                    except Exception:
+                        nm = None
+                    if (nm and not looks_like_prompt_echo(nm)
+                            and has_cjk(nm)
+                            and nm.strip() != normalized.strip()):
+                        self.detail("  短名回显，已按定名指令给出译名：%s"
+                                    % str(text)[:50])
+                        self._rule_hit("完整性（无中文）", "named_ok")
+                        out = nm
+                    else:
+                        self._rule_hit("完整性（无中文）", "kept_first")
                 else:
                     self._rule_hit("完整性（无中文）", "kept_first")
         # 残留俄文闸门：中文译文里还夹着西里尔词，通常是引号内的格变专名
@@ -5870,14 +5973,72 @@ class TranslationJob(object):
             out, punct_fixed = normalize_cn_punctuation(out)
             if punct_fixed:
                 self._rule_hit("标点规范", "fixed")
-        # 型号被模型换成别的（FNX-45→P220）：确定性把原型号补回译文，
-        # 不整段重译（重译既慢又可能把别的型号也改错）。
+        # 型号被模型换成别的（FNX-45→P220）。★ 2.0.24（IWP 全量审计
+        # D2/D3）：旧实现只补「（原文型号 …）」注记——错误内容原样留在
+        # 成品里还污染玩家阅读。现在先带「型号逐字保留」要求定向重试
+        # 一次，仍失败才句末追加裸型号（无「原文」字样）。
         miss_model = missing_model_tokens(normalized, out)
         if miss_model and has_cjk(out):
-            out = out.rstrip() + "（原文型号 %s）" % "、".join(miss_model[:3])
-            self._rule_hit("型号保真", "fixed")
-            self.detail("  型号被替换，已补回原文型号：%s"
-                        % "、".join(miss_model[:3]))
+            _model_note = ("武器/物品型号（如 AK-100、FNX-45）必须原样"
+                           "保留，不得替换为其他型号、省略或换算。")
+            retried = None
+            try:
+                if mapping:
+                    raw = self._translate_plain(masked, lang,
+                                                note=_model_note)
+                    retried = restore_runtime_tokens(raw, mapping)
+                else:
+                    retried = self._translate_plain(normalized, lang,
+                                                    note=_model_note)
+            except Exception:
+                retried = None
+            if (retried and not looks_like_prompt_echo(retried)
+                    and has_cjk(retried)
+                    and not missing_model_tokens(normalized, retried)):
+                retried, _ = normalize_cn_punctuation(retried)
+                self.detail("  型号保真重试成功：%s" % str(text)[:50])
+                self._rule_hit("型号保真", "retried_ok")
+                out = retried
+            else:
+                out = out.rstrip() + "（%s）" % "、".join(miss_model[:3])
+                self._rule_hit("型号保真", "fixed")
+                self.detail("  型号被替换且重试仍失败，已补回型号：%s"
+                            % "、".join(miss_model[:3]))
+        # ★ 2.0.24（IWP 全量审计 D10）：半音译粘连闸门。模型把专名音译
+        # 一半、原文留一半（「克里门enko队长」「Tkachenko将军」
+        # 「$clr_2We正看到」），词库回填要求整词边界、残留西里尔闸门不认
+        # 拉丁碎片，这类残词此前完全无人拦。带「整词音译」指令重试一次；
+        # 仍粘连则保留现译文只记规则命中——碎片句仍比整段原文可读，
+        # 且已在终检点名清单里供人工复核。
+        if _to_zh and has_cjk(out):
+            glue = find_glue_residue(out)
+            if glue:
+                _glue_note = ("译文里出现了音译一半、原文留一半的粘连词"
+                              "（如「克里门enko」）。人名、绰号、术语要么"
+                              "整体音译成中文，要么整词保留原文并加空格，"
+                              "禁止字母直接贴着汉字。")
+                retried = None
+                try:
+                    if mapping:
+                        raw = self._translate_plain(masked, lang,
+                                                    note=_glue_note)
+                        retried = restore_runtime_tokens(raw, mapping)
+                    else:
+                        retried = self._translate_plain(normalized, lang,
+                                                        note=_glue_note)
+                except Exception:
+                    retried = None
+                if (retried and not looks_like_prompt_echo(retried)
+                        and has_cjk(retried)
+                        and not find_glue_residue(retried)):
+                    self.detail("  粘连残词（%s），已按整词音译重试：%s"
+                                % ("、".join(glue), str(text)[:50]))
+                    self._rule_hit("粘连残词", "retried_ok")
+                    out = retried
+                else:
+                    self._rule_hit("粘连残词", "kept_first")
+                    self.detail("  粘连残词重试仍失败：%s | %s"
+                                % ("、".join(glue), str(text)[:50]))
         # ★ 2.0.18 出口级换行对齐：换行闸门在流程前段，其后数字/完整性/
         # 残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行）。
         # 在写回前做最后一次对齐，保证任何闸门都破坏不了换行结构。
@@ -6966,6 +7127,15 @@ class TranslationJob(object):
             return False
         if "/" in v or "\\" in v or ":" in v:
             return False
+        # ★ 2.0.24（IWP 全量审计 D9）：未解析报告要求下划线形态。旧判据
+        # 把一切标识符形态字符串都算"未解析引用"，实测 CSV 里
+        # ammo/gr/ap/fmj/OK/third/dummy 等 8 类全是 XML 配置参数值，
+        # 不是条目 ID，稀释真正待确认项。能在索引里解析到的 ID 走
+        # add_ref 第一条分支，不受本判据影响——只收紧报告，零覆盖变化。
+        # XRay 文本表 ID 绝大多数带下划线（st_/ui_/mgr_/GENERATE_NAME_…）；
+        # 无下划线的裸词 ID（controls/ok）本来就解析得到，不会进报告。
+        if "_" not in v:
+            return False
         return bool(re.match(r"^[A-Za-z_][A-Za-z0-9_.\-]*$", v))
 
     def _scan_references(self):
@@ -7340,7 +7510,17 @@ class TranslationJob(object):
 
     def _translate_dialogue_batch(self, batch):
         """批量翻译 2～4 条连续短对话；失败返回 {}，交由逐条路径。"""
-        lines = [x["src"] for x in batch]
+        # ★ 2.0.24（IWP 全量审计 D1）：批量路径与单条路径同等保护——
+        # 送翻前 mask 运行期占位符（%c[default]、$clr、%s…），译后逐行
+        # 还原并校验；任何不一致整批丢弃交回单条路径（那里有完整闸门）。
+        # 旧实现直接送原文，实测 16 条 %c[default]→%c[默认]、$clr_2REMOVE
+        # 被拆译、色码元组内插换行——引擎按未知色名/坏变量渲染，运行期破坏。
+        lines = []
+        mappings = []
+        for x in batch:
+            masked, mapping = mask_runtime_tokens(x["src"])
+            lines.append(masked)
+            mappings.append(mapping)
         pairs = []
         seen = set()
         for x in batch:
@@ -7364,9 +7544,41 @@ class TranslationJob(object):
         if not parsed:
             self.batch_stats["failed"] += 1
             return {}
+        # ★ 2.0.24（IWP 全量审计 D11）：批处理错位签名。模型把上一行的
+        # 译文复制/顺延到下一行（实测 agr_technic_dialogs_737 拿到 735
+        # 源文的另一种译法、本条一字未译）——行数一致、长度比 0.23 也
+        # 高于闸门下限，唯一可靠信号是「不同源文、完全相同译文」。
+        # 命中任何一对即整批丢弃，交单条路径逐条重翻。
+        # 短应答豁免：「是的。/好的。」类问候语不同源文同译是正常收敛，
+        # 只有 ≥30 字的整句译文重复才可能是错位（实测错位样本 ~90 字）。
+        for _i in range(len(parsed)):
+            for _j in range(_i + 1, len(parsed)):
+                if (len(parsed[_i].strip()) >= 30
+                        and parsed[_i].strip() == parsed[_j].strip()
+                        and batch[_i]["src"].strip()
+                        != batch[_j]["src"].strip()):
+                    self.batch_stats["failed"] += 1
+                    return {}
         result = {}
-        for x, text in zip(batch, parsed):
+        for x, mapping, text in zip(batch, mappings, parsed):
             text = clean_translation_output(text)
+            if mapping:
+                text = restore_runtime_tokens(text, mapping)
+                if text is None:
+                    # 掩码丢失/重复/被改动：整批不可信，回退单条路径
+                    self.batch_stats["failed"] += 1
+                    return {}
+            if text.count("\\n") != x["src"].count("\\n"):
+                self.batch_stats["failed"] += 1
+                return {}
+            if (self.tgt == "chs"
+                    and missing_big_numbers(x["src"], text)):
+                self.batch_stats["failed"] += 1
+                return {}
+            if self.tgt == "chs" and find_glue_residue(text):
+                # 粘连残词交单条路径重试（批量里无法定向重试）
+                self.batch_stats["failed"] += 1
+                return {}
             text = self._repair_residual_source_terms(x["src"], text)
             text = self._repair_residual_latin_names(x["src"], text)
             xlang = x["lang"]

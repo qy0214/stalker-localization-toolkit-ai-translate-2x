@@ -1,0 +1,49 @@
+﻿种子: 773832423 | 排除记录: 无
+NS7            文件 20(新20) | target     0 code   39(型号直取   3) 词库 1728 句式    0 noise   0 tech  13 ident   22 proper  123(替0) send  3826 | 空   0 解析失败 0
+NS7-SQ基线       文件 20(新20) | target  3967 code    5(型号直取   0) 词库   14 句式    0 noise   0 tech   3 ident   14 proper    0(替0) send     4 | 空   0 解析失败 0
+NS219汉化        文件 20(新20) | target  5969 code    4(型号直取   0) 词库    0 句式    0 noise   2 tech  16 ident    1 proper    2(替0) send     7 | 空   0 解析失败 0
+NS619汉化        文件 20(新20) | target  2619 code   10(型号直取   0) 词库    0 句式    0 noise   0 tech   0 ident    4 proper    3(替0) send     8 | 空   0 解析失败 0
+OP             文件 20(新20) | target  5383 code    0(型号直取   0) 词库    0 句式    0 noise   0 tech   0 ident    1 proper    4(替0) send     8 | 空   0 解析失败 0
+OLR25          文件 20(新20) | target   876 code   14(型号直取   0) 词库  144 句式    0 noise   0 tech   0 ident  471 proper  319(替0) send   404 | 空   0 解析失败 0
+疤脸归来2          文件  6(新6) | target     0 code    2(型号直取   0) 词库 1816 句式    0 noise   0 tech   1 ident    0 proper    0(替0) send  2997 | 空   0 解析失败 0
+WOT汉化          文件 20(新20) | target  2251 code    1(型号直取   0) 词库   20 句式    0 noise   0 tech   0 ident   46 proper    1(替0) send   202 | 空   0 解析失败 0
+GA汉化           文件 20(新20) | target  2398 code    0(型号直取   0) 词库    3 句式    0 noise   0 tech   0 ident    5 proper    0(替0) send    12 | 空   0 解析失败 0
+SoC1.0006原版    文件  4(新4) | target     0 code    4(型号直取   0) 词库  341 句式    0 noise   0 tech   0 ident  168 proper    4(替0) send   376 | 空   0 解析失败 0
+Anomaly-eng    文件 20(新20) | target     0 code    3(型号直取   0) 词库  302 句式   39 noise   0 tech   0 ident  202 proper    6(替0) send  3831 | 空   0 解析失败 0
+Anomaly-rus    文件 20(新20) | target     0 code    4(型号直取   0) 词库  263 句式    0 noise   0 tech   0 ident    1 proper    0(替0) send  2263 | 空   0 解析失败 0
+MT-CN          文件  2(新2) | target     3 code    5(型号直取   0) 词库    1 句式    0 noise   0 tech   0 ident    7 proper    1(替0) send    10 | 空   0 解析失败 0
+Monolith-MT    文件  4(新4) | target     0 code    4(型号直取   0) 词库   51 句式    0 noise   0 tech   0 ident  132 proper    4(替0) send   693 | 空   0 解析失败 0
+百科大全           文件  2(新2) | target     0 code    0(型号直取   0) 词库    1 句式    0 noise   0 tech   0 ident    7 proper    1(替0) send    93 | 空   0 解析失败 0
+IWP            文件 20(新20) | target     0 code   45(型号直取   1) 词库  692 句式   33 noise   0 tech  65 ident  101 proper    1(替0) send  3462 | 空   0 解析失败 0
+
+== A. 离线产物核验失败（译文=源/无中文/占位符不一致）: 2 ==
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_menu_pda (tb)
+      源: КПК
+      译: PDA
+   [Monolith-MT] rus/ui_mm_modded_exes.xml|ui_mm_pda_modded_exes (tb)
+      源: КПК
+      译: PDA
+
+== C. 跳过类本可硬层子串替换（判定链顺序丢失）: 4 ==
+   [NS7] encyclopedia/string_table_enc_weapons.xml|enc_weapons_hk417 (ident)
+      源: HK417 "Sniper"
+      可译: HK417 "狙击手"
+   [OLR25] eng/string_table_general.xml|xlam_6_name (ident)
+      源: Flash drive (1/2)
+      可译: 闪存盘 (1/2)
+   [OLR25] eng/string_table_general.xml|xlam_7_name (ident)
+      源: Flash drive (2/2)
+      可译: 闪存盘 (2/2)
+   [IWP] st_items_weapons.xml|st_wpn_wincheaster1300_trapper (ident)
+      源: Remington 870 (FD)
+      可译: 雷明顿870 (FD)
+
+== B. 跳过类假跳过红旗: 1 ==
+
+[OLR25] 1 条，抽 1:
+   (proper) stable_game_credits.xml|st_thanks_all4: Your good efforts will not be forgotten!
+
+== D. 裸 & 条目（插件 normalize 兑底已覆盖，仅记录）: 9 ==
+   NS7                4
+   百科大全               4
+   SoC1.0006原版        1

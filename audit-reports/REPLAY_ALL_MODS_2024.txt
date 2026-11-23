@@ -1,0 +1,567 @@
+﻿NS7            条目  31131 | 已中文     0 | send 29709 code   93 noise   0 tech  97 ident   302 proper  930 | 空    0 失败 0
+NS7-SQ基线       条目  31131 | 已中文 29918 | send   389 code   89 noise   0 tech  69 ident   302 proper  364 | 空    0 失败 0
+NS219汉化        条目  31794 | 已中文 30965 | send   262 code   92 noise 191 tech  78 ident    58 proper  148 | 空    0 失败 0
+NS619汉化        条目  31808 | 已中文 31166 | send   215 code   62 noise   0 tech  99 ident    98 proper  168 | 空    0 失败 0
+OP             条目  34688 | 已中文 33980 | send   294 code  122 noise 113 tech  41 ident    37 proper  100 | 空    1 失败 0
+OLR25          条目  21981 | 已中文 11635 | send  6206 code   97 noise   0 tech  58 ident  3536 proper  449 | 空    0 失败 0
+疤脸归来2          条目   4816 | 已中文     0 | send  4813 code    2 noise   0 tech   1 ident     0 proper    0 | 空    0 失败 0
+WOT汉化          条目  14464 | 已中文 11787 | send  1883 code   68 noise   0 tech  45 ident   437 proper  244 | 空    0 失败 0
+GA汉化           条目  15715 | 已中文 15536 | send   100 code    8 noise   0 tech  14 ident    20 proper   37 | 空    0 失败 0
+SoC1.0006原版    条目    893 | 已中文     0 | send   573 code    4 noise   0 tech   0 ident   304 proper   12 | 空    0 失败 0
+Anomaly-eng    条目  23636 | 已中文     0 | send 17982 code  184 noise   0 tech 172 ident  5041 proper  254 | 空    3 失败 0
+Anomaly-rus    条目  24801 | 已中文     0 | send 24215 code  132 noise   0 tech 162 ident    51 proper  238 | 空    3 失败 0
+MT-CN          条目     27 | 已中文     3 | send    10 code    5 noise   0 tech   0 ident     8 proper    1 | 空    0 失败 0
+Monolith-MT    条目    884 | 已中文     0 | send   714 code    4 noise   0 tech   0 ident   160 proper    6 | 空    0 失败 0
+百科大全           条目    102 | 已中文     0 | send    94 code    0 noise   0 tech   0 ident     7 proper    1 | 空    0 失败 0
+IWP            条目   9320 | 已中文     0 | send  7872 code   87 noise   0 tech  67 ident  1279 proper   15 | 空    0 失败 0
+
+== 抽样（每 MOD 每类最多 8 条）==
+
+[NS7] ident（200 条）
+   stable_game_credits.xml|st_johnen: Anja
+   stable_game_credits.xml|st_chorek2: Chorek
+   stable_game_credits.xml|st_baker: Shamus
+   stable_game_credits.xml|st_offenberg: Dirk
+   stable_game_credits.xml|st_piotrowski: Jan
+   stable_game_credits.xml|st_sulkowski: Przemyslaw
+   stable_game_credits.xml|st_plianpho: Chalermchai "Kata"
+   stable_game_credits.xml|st_castaneda2: Castaneda
+
+[NS7] proper（200 条）
+   string_table_enc_weapons.xml|enc_weapons_usp_match: HK USP .45 Match
+   string_table_enc_weapons.xml|enc_weapons_aps: АПС
+   string_table_enc_weapons.xml|enc_weapons_sg550: Sig SG550
+   string_table_enc_weapons.xml|enc_weapons_m4a1: Colt M4A1
+   string_table_enc_weapons.xml|ammo-7.62x39-fmj: Патроны 7.62х39мм М43
+   string_table_enc_weapons.xml|ammo-9x21-sp11_s: 9х21 СП11
+   string_table_enc_weapons.xml|mag_5_ammo-12.7x55: 5 х 12.7х55мм
+   string_table_enc_weapons.xml|ammo-12.7x55_s: 12.7х55 СЦ-130
+
+[NS7] tech（97 条）
+   string_table_enc_weapons.xml|ammo-10.9x33_jhp_s: .44 Magnum
+   stable_storyline_info_natasha_story.xml|natasha_story_pda_160x2030x2002: ПДА инкогнито №160x2030x2002
+   string_table_enc_weapons.xml|mag_25_ammo-11.43x23: 25 х 11.43x23мм
+   string_table_enc_weapons.xml|st_addon_silencer_vihr: Глушитель 9x39 для СР-3М
+   string_table_enc_weapons.xml|enc_weapons_mag_17_ammo_9x19: 17 х 9x19мм
+   stable_storyline_info_natasha_story.xml|natasha_story_pda_160x2010x2004: ПДА инкогнито №160x2010x2004
+   string_table_enc_weapons.xml|mag_10_ammo_10.3x45: 10 х 10.3x45мм
+   string_table_enc_weapons.xml|mag_30_ammo-9x18: 30 х 9x18мм
+
+[NS7] code（93 条）
+   news_places.xml|bp_l03_agroprom2_8: 3
+   ui_sss.xml|ui_mcm_lst_ssfx_cover_1024: 1024
+   stable_game_credits.xml|st_thanks_license5: www.rasterbar.com/products/luabind.html за компоновочную библиотеку Lua (Luabind)
+   string_table_enc_weapons.xml|enc_weapons_g36k: HK G36K
+   stable_pc_text.xml|ui_pc_static_image_of: -
+   string_table_enc_weapons.xml|ammo-vog25p_s: ВОГ-25П
+   news_places.xml|bp_l07_military2_2: 1
+   string_table_enc_weapons.xml|enc_weapons_mp9: BT MP9
+
+[NS7-SQ基线] ident（200 条）
+   string_table_enc_weapons.xml|enc_weapons_svu: IED
+   string_table_enc_weapons.xml|enc_weapons_akm: AKM
+   stable_game_credits.xml|st_deerson: Eric
+   stable_game_credits.xml|st_padovan2: Padovan
+   stable_game_credits.xml|st_wielebski: Michal
+   string_table_enc_weapons.xml|enc_weapons_glock17: Glock-17
+   stable_game_credits.xml|st_pawlowski: Arkadiusz
+   stable_game_credits.xml|st_kowalewski2: Kowalewski
+
+[NS7-SQ基线] proper（200 条）
+   stable_game_credits.xml|st_tkachenko2: Ткаченко
+   stable_game_credits.xml|st_olga_volchanova: Ольга
+   stable_game_credits.xml|st_verpahovskiy2: Верпаховский
+   string_table_enc_weapons.xml|st_addon_silencer_sfn_57: Gemtech SFN-57 消音器
+   stable_game_credits.xml|st_dobronravin: Юрий Добронравин
+   string_table_ogg_player.xml|ogg_flash_7: 用于 MP3 播放器的音乐曲目闪存卡。 \n \n%c[255,1,255,255]曲目 01:%c[255,1,255,1] Armik — Pure Paradise \n
+   stable_game_credits.xml|st_kuchma: Евгений 'Smile' Кучма
+   stable_game_credits.xml|st_bolshakov: Антон Большаков
+
+[NS7-SQ基线] tech（69 条）
+   string_table_enc_weapons.xml|mag_30_ammo-11.43x23: 30 x 11.43x23毫米
+   stable_storyline_info_natasha_story.xml|natasha_story_pda_160x2010x2001: 匿名PDA编号160x2010x2001
+   stable_storyline_info_natasha_story.xml|natasha_story_pda_160x2030x2003: PDA匿名者 №160x2030x2003
+   string_table_enc_weapons.xml|mag_7_colt_ammo-11.43x23: 7 x 11.43x23毫米
+   string_table_enc_weapons.xml|ammo-5.56x45-ss190_s: 5.56x45 M855
+   string_table_enc_weapons.xml|ammo-12.7x55: 12.7x55mm STs-130子弹
+   string_table_enc_weapons.xml|st_addon_silencer_p90: KAC OHG 5.7x28mm 消音器
+   string_table_enc_weapons.xml|mag_7_sig_ammo-11.43x23: 7 x 11.43x23毫米
+
+[NS7-SQ基线] code（89 条）
+   string_table_enc_weapons.xml|enc_weapons_aek971: AEK-971
+   string_table_enc_weapons.xml|enc_weapons_m249: FN M249 SAW
+   news_places.xml|bp_l04u_labx182_5: 2
+   string_table_enc_weapons.xml|enc_weapons_mr153: MP-153
+   news_places.xml|bp_l07_military2_8: 3
+   string_table_enc_weapons.xml|enc_weapons_m32a1: M32A1
+   string_table_enc_weapons.xml|enc_weapons_tt33: TT-33
+   string_table_enc_weapons.xml|enc_weapons_ak74m: AK-74M
+
+[NS219汉化] ident（58 条）
+   string_table_enc_weapons.xml|enc_weapons_remington700: Remington 700
+   ui_st_mm.xml|ui_mm_eax: EAX
+   stable_game_credits.xml|st_qa: QA
+   string_table_enc_weapons.xml|enc_weapons_glock17: Glock-17
+   ui_z_custom.xml|ui_firemod_1_desc: (1)
+   stable_game_credits_ns.xml|st_ns_thanks_and: _And_
+   string_table_enc_weapons.xml|enc_weapons_beretta: Beretta 92FS
+   stable_game_credits.xml|st_addaraya: Addaraya
+
+[NS219汉化] proper（148 条）
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_95: Paul MauriatР— The Good, The Bad, The Ugly
+   ___cfgxml__put_this_to_text_folder.xml|sgtat_gen_text_1771582442_1176: 搜寻“SKAT-15”
+   string_table_apgreyd_weapons.xml|wpn-lr300_ves: 轻型LR-300ML
+   stable_game_credits.xml|st_thanks_license11: Don Clugston (codeproject.com/cpp/FastDelegate.asp http://www.codeproject.com/cpp/FastDe
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_3238: V.E.L.：
+   string_table_ogg_player.xml|ogg_flash_6: 用于MP3播放器的音乐曲目闪存卡。\n%c[255,1,255,255]曲目 01:%c[255,1,255,1] The Offspring - The Kids aren'
+   string_table_enc_weapons.xml|enc_weapons_gauss: VGI "Gauss" M72-GR
+   string_table_enc_weapons.xml|st_addon_scope_leupold: LEUPOLD Mark 8瞄准镜
+
+[NS219汉化] tech（78 条）
+   string_table_enc_weapons.xml|ammo-9x39-ap_s: 9x39 SP-6
+   ___cfgxml__put_this_to_text_folder.xml|sgtat_gen_text_1771582442_2861: 匿名PDA编号160x2010x2001
+   string_table_enc_weapons.xml|mag_7_sig_ammo-11.43x23: 7 x 11.43x23毫米
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_196: 60 x 9x19毫米
+   string_table_enc_weapons.xml|ammo-7.62x25-p_s: 7.62x25 P
+   string_table_enc_weapons.xml|ammo-5.45x39-fmj: 5.45x39mm 7N10子弹
+   ___cfgxml__put_this_to_text_folder.xml|sgtat_gen_text_1771582442_2892: PDA 匿名版 №160x2010x2003
+   string_table_enc_weapons.xml|ammo-12.7x33_jsp_s: .50 AE
+
+[NS219汉化] code（92 条）
+   stable_game_credits.xml|st_thanks_license5: www.rasterbar.com/products/luabind.html 提供的Lua绑定库（Luabind）
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_370: Copyright 2008 ReaL Studio Team
+   string_table_enc_weapons.xml|enc_weapons_ak74u: AKS-74U
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_2440: х
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_2758: x
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_5794: kamps after
+   ui_st_other.xml|ui_firemod_2_desc: 2
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_1236: gvid: %d\n
+
+[NS219汉化] noise（191 条）
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_7: Karta Name
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_84: Nelly Furtado:In God's Hands
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_107: 45 x 7.62x39mm
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_154: 12.7x55mm SC-130
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_126: Matthew Ryan:Follow the Leader
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_5641: %c[default] \n
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1771582451_1286: mtl: fPHFriction:
+   ___cfgxml__put_this_to_text_folder1.xml|sgtat_gen_text_1771582469_129: Half-Life 2 Beta OST:Path to Borealis
+
+[NS619汉化] ident（98 条）
+   string_table_enc_weapons.xml|enc_weapons_fort12: Fort-12
+   string_table_enc_weapons.xml|enc_weapons_vihr: SR-3M "Vikhr"
+   stable_game_credits_ns.xml|st_ns_thanks_and: _And_
+   ui_z_custom.xml|ui_inv_actor_rad_unit: Ki
+   stable_game_credits.xml|st_rzadca2: Rzadca
+   stable_game_credits_ns_ogsr.xml|st_ns_ogsr_tester_shurai: Shurai344
+   string_table_levels.xml|atp_for_test22: ATP
+   stable_game_credits_ns_ogsr.xml|st_ns_ogsr_tester_danila: danila
+
+[NS619汉化] proper（168 条）
+   stable_game_credits.xml|st_special_thanks_3: Menno Wittebrood
+   string_table_enc_weapons.xml|enc_weapons_spas12: Franchi SPAS-12
+   string_table_enc_weapons.xml|st_addon_scope_aimpoint: Aimpoint Micro T-1瞄准镜
+   stable_game_credits_ns_ogsr.xml|st_ns_ogsr_voice_natasha: 娜塔莎——Юлия Кошелева
+   gameplay.xml|tcfc7973b: 寻找“SKAT-15”
+   string_table_enc_weapons.xml|ammo-11.43x23-fmj_s: .45ACP M1911
+   string_table_oksana579.xml|st_bar_borov_photo_tutorial_tutorial: 悬挂照片（$$ACTION_USE$$）
+   string_table_enc_weapons.xml|enc_weapons_hpsa: Browning High-Power
+
+[NS619汉化] tech（99 条）
+   scripts.xml|tc08e2a0e: 10 x 7.62x51
+   scripts.xml|t56e35b76: 7 x 11.43x23毫米
+   scripts.xml|t6d12e332: 50 x 7.62x51
+   string_table_enc_equipment.xml|binocul: “BPOs 10x42”望远镜
+   string_table_enc_weapons.xml|ars-7.62x51_ap_s: 7.62x51 M993 AP
+   string_table_enc_weapons.xml|ammo-7.62x54-ap_s: 7.62x54 7N26
+   string_table_enc_weapons.xml|ammo-9x39-sp5_s: 9x39 SP-5
+   scripts.xml|t56de9eda: 20 x 9x19毫米
+
+[NS619汉化] code（62 条）
+   scripts.xml|tea7d3477: ~~~ sol_sound 角色
+   scripts.xml|te8e227e0: х
+   string_table_enc_weapons.xml|ammo-vog25_s: VOG-25
+   string_table_enc_weapons.xml|enc_weapons_9a91: 9A-91
+   string_table_enc_weapons.xml|enc_weapons_tt33: TT-33
+   amk_strings.xml|g_3d_pda: 3D PDA
+   string_table_enc_weapons.xml|enc_weapons_m32a1: M32A1
+   string_table_enc_weapons.xml|enc_weapons_bm16: BM-16
+
+[OP] ident（37 条）
+   string_table_enc_weapons.xml|wpn-aps: APS
+   stable_game_credits.xml|st_qa: QA
+   string_table_enc_weapons.xml|wpn-pb: PB
+   arsenal_mod.xml|ars-apb: APB
+   ui_st_mm.xml|ui_mm_hdao: HDAO
+   arsenal_mod.xml|ars-val_m2: AS"Val"PSO-3
+   arsenal_mod.xml|ars-akms: AKMS
+   ui_st_mm.xml|ui_mm_eax: EAX
+
+[OP] proper（100 条）
+   string_table_ogg_flash_6.xml|ogg_flash_6: MP3播放器音乐曲目闪存卡。\n%c[255,1,255,255]曲目01:%c[255,1,255,1] A-HA：Take On Me\n%c[255,1,255,255]
+   stable_game_credits.xml|st_thanks_license12: 感谢他的fastdelegate库(fastdelegate)
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_1318: NOT CHANGE!
+   string_table_ogg_flash_15.xml|ogg_flash_15: 用于MP3播放器的音乐曲目闪存卡。\n%c[255,1,255,255]曲目01:%c[255,1,255,1] Europe乐队:The Final Countdown \n
+   string_table_enc_weapons.xml|wpn-groza: OTs-14-4 “雷电”
+   string_table_ogg_flash_3.xml|ogg_flash_3: 用于MP3播放器的音乐曲目闪存卡。\n%c[255,1,255,255]曲目01:%c[255,1,255,1] Laid back:Sunchine reggae \n%c[
+   string_table_enc_weapons.xml|wpn-vssm: VSSM “Berkut”
+   arsenal_mod.xml|ars-scar_mk17: FN SCAR-H
+
+[OP] tech（41 条）
+   string_table_enc_weapons.xml|ammo-7.62x39-ap: 7.62×39毫米57-Н-231С弹药
+   string_table_enc_weapons.xml|ammo-7.62x25-p_s: 7.62x25 ТТ
+   string_table_enc_weapons.xml|ammo-7.62x39-fmj_s: 7.62×39
+   arsenal_mod.xml|ars-7.62x51_fmj_s: 7.62x51 FMJ
+   string_table_enc_weapons.xml|ammo-9x19-pbp_s: 9×19 +P+
+   arsenal_mod.xml|ars-7.62x39_k_s: 7.62x39 УЗ
+   arsenal_mod.xml|ars-7.62x51_ap: 弹药 7.62x51毫米 NATO AP
+   string_table_enc_weapons.xml|ammo-5.45x39-fmj_s: 5.45x39
+
+[OP] code（122 条）
+   string_table_enc_weapons.xml|ars-kumul_82_s: H-82
+   arsenal_mod.xml|ars-m4a3: M4A3
+   string_table_enc_weapons.xml|ak47: AK-47
+   string_table_enc_equipment.xml|inv_name_ballast: _
+   arsenal_mod.xml|ars-svt40: SVT-40
+   string_table_enc_weapons.xml|wpn-addon-grenade-launcher: GP-25
+   arsenal_mod.xml|ars-xm8: HK XM8
+   arsenal_mod.xml|ars-mp40: MP-40
+
+[OP] noise（113 条）
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_3527: %s: %%c[red]+%d %s
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_3512: %s: %d %s%s
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_3248: } nil %-
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_131: ARNY:
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_3520: %s: %.2f
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_1327: %c[255,238,155,23]
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_4091: \n \n
+   ___scriptE__put_this_to_text_folder.xml|sgtat_gen_text_1763224802_2953: [%s]: %s, %s
+
+[OLR25] ident（200 条）
+   stable_game_credits.xml|st_kovach2: Kovach
+   stable_bio_name.xml|bar_plichko_name: Head of security
+   stable_bio_name.xml|sim_stalker_veteran_umnik_name: Smartass
+   stable_bio_name.xml|bar_barmen_name: Barkeep
+   stable_bio_name.xml|esc_fanat_name: Fanatic
+   stable_bio_name.xml|esc_fox_name: Fox
+   stable_bio_name.xml|bar_arny_name: Arnie
+   stable_game_credits.xml|st_shelekhov2: Shelekhov
+
+[OLR25] proper（200 条）
+   stable_game_credits.xml|st_test_supervisor: Test Supervisor
+   stable_game_credits.xml|st_vallejo: Monica Vallejo
+   stable_game_credits.xml|st_international_art_director: International Art Director
+   stable_game_credits.xml|st_product_manager_asia_pacific: Product Manager, Asia Pacific
+   stable_game_credits.xml|st_flock: Kelly Flock
+   stable_game_credits.xml|st_associate_producer: Associate Producer
+   stable_game_credits.xml|st_newall: Anthony Newall
+   stable_game_credits.xml|st_pieri: Liz Pieri
+
+[OLR25] tech（58 条）
+   string_table_enc_weapons.xml|ammo-7.62x54-7h1: 7.62x54RmmR 7N1 rounds
+   string_table_enc_weapons.xml|ammo-9x19-pbp_s: 9x19mm PB1s
+   string_table_enc_weapons.xml|ammo-5.45x39-ap_s: 5.45x39mm BP
+   string_table_enc_weapons.xml|ammo-7.62x54-7h1_s: 7.62x54 7H1弹
+   string_table_enc_weapons.xml|ammo-12x70-buck: 12x70 shot rounds
+   string_table_enc_weapons.xml|ammo-12x76-zhekan: 12x76 slug rounds
+   string_table_enc_weapons.xml|ammo-5.56x45-ap: 5.56x45mm AP rounds
+   string_table_enc_weapons.xml|ammo-9x19-fmj: 9x19mm FMJ rounds
+
+[OLR25] code（97 条）
+   string_table_enc_weapons.xml|ammo-vog-25p: VOG-25P
+   string_table_enc_weapons.xml|wpn-lr300: LR-300
+   string_table_enc_weapons.xml|wpn-ak74: AKS-74
+   stable_treasure_manager.xml|mil_secret_0017_name: .
+   string_table_enc_weapons.xml|wpn-lr300: LR-300
+   string_table_enc_weapons.xml|grenade-rgd5: RGD-5
+   string_table_enc_weapons.xml|grenade-gd05: GD-05
+   string_table_enc_weapons.xml|new_gm-94: GM-94
+
+[疤脸归来2] tech（1 条）
+   string_table_abc.xml|wpn-mp5_m3: «Золотой MP5 9x18»
+
+[疤脸归来2] code（2 条）
+   string_table_abc.xml|dm_sleep_request_0: 200 БАКСОВ.
+   string_table_abc.xml|wpn-lr300_rad: LR300
+
+[WOT汉化] ident（200 条）
+   st_mm_atmosfear_texts.xml|st_list_weather_length_preset_default: A variety of
+   st_mm_atmosfear_texts.xml|st_msg_load_user_done: Standard lighting settings have been returned
+   st_mm_atmosfear_texts.xml|st_list_warning_siren: Siren
+   st_items_weapons.xml|st_wpn_saiga: Saiga-12K
+   st_items_weapons.xml|st_wpn_aks74: Akm 74/2
+   st_mm_atmosfear_texts.xml|st_cap_check_enable_fallout: Poisonous precipitation included
+   st_mm_atmosfear_texts.xml|st_list_night_brightness_bright: Very bright nights
+   st_mm_atmosfear_texts.xml|st_cap_moon_phase_0: New moon
+
+[WOT汉化] proper（200 条）
+   ui_st_credits.xml|st_ruminski: Lukasz Ruminski
+   ui_st_credits.xml|st_sobotka: Tomasz Sobotka
+   ui_st_credits.xml|st_davidian: Dmitry “Abe” Davidyan
+   ui_st_credits.xml|st_binkowski: Krzysztof Binkowski
+   ui_st_credits.xml|st_litvinenko: Vladimir "Fiachna" Litvinenko
+   ui_st_credits.xml|st_demidenko: Alexander Demidenko
+   ui_st_credits.xml|st_omelchuk: Aleksey Omelchuk
+   ui_st_credits.xml|st_lazarski: Szymon Lazarski
+
+[WOT汉化] tech（45 条）
+   st_items_weapons_upgrades.xml|st_up_add_b2_name: Change of caliber to 5x56
+   st_items_weapons.xml|ammo-7.62x54-7h14_s: 7,62x54 7N14
+   st_items_weapons.xml|ammo-12.7x55-fmj_s: 12,7x55 mm SC-130
+   st_items_weapons.xml|ammo-5.45x39-ap: 5.45x39 mm 7N22步枪弹
+   st_items_weapons_upgrades.xml|st_up_add_b4_name: Change of caliber to 9x19
+   st_items_weapons.xml|ammo-5.7x28-fmj_s: 5,7x28 SS190
+   st_items_weapons.xml|ammo-5.7x28-fmj: 5,7x28 mm SS190手枪弹
+   st_items_weapons.xml|ammo-7.62x51-ap_s: 7,62x51 AP
+
+[WOT汉化] code（68 条）
+   st_items_weapons.xml|st_wpn_m16a4: M16A4
+   st_items_weapons.xml|st_wpn_m4: M4
+   st_items_weapons.xml|st_addon_scope_kobra-ekp-8-02: EKP-8-02
+   st_items_weapons.xml|ammo-vog-25p_s: VOG-25P
+   st_items_weapons.xml|st_wpn_aek971: AEK-971
+   st_items_weapons.xml|st_wpn_p90: FN P90
+   ui_gui_elements.xml|ui_mm_help_1: ?
+   st_items_weapons.xml|st_wpn_m79: M79
+
+[GA汉化] ident（20 条）
+   string_table_items.xml|item_filin_note_desc: LALALALA
+   string_table_ogse_messages.xml|msg_crash_1_text: -----------------------------
+   ___gameplay__put_this_to_text_folder.xml|sgtat_auto_generate_text_1678213961_15: 12, 10, 14
+   ___gameplay__put_this_to_text_folder.xml|sgtat_auto_generate_text_1678213961_13: 18, 10, 8
+   ui_st_mm.xml|smaa: SMAA
+   string_table_enc_vehicles.xml|btr-70: BTR-70(z)
+   string_table_enc_weapons.xml|gunsl_wpn_gsh18: GSh-18
+   ___gameplay__put_this_to_text_folder.xml|sgtat_auto_generate_text_1678213961_36: esc_kvest_searcrh_guitar
+
+[GA汉化] proper（37 条）
+   string_table_enc_equipment.xml|autodoctor: “SLSA 0.01.1EM”
+   string_table_enc_weapons.xml|gunsl_ammo_9x18_fmj_short: 9 х 18mm PM
+   string_table_enc_weapons.xml|gunsl_addon_scope_elcan: Elcan Specter DR 1x/4x内窥镜
+   string_table_enc_weapons.xml|gunsl_addon_silencer_57x28_pistol: GEMTECH SFN57消音器
+   string_table_enc_vehicles.xml|Zaporozh_gorb: ZAZ-965（驼峰）
+   string_table_level_tips.xml|flame_off: 关灯 ($$ACTION_USE$$)
+   string_table_level_tips.xml|switcher_off: 开关-开 ($$ACTION_USE$$)
+   string_table_ui.xml|tip_car_use: 开门($$ACTION_USE$$)
+
+[GA汉化] tech（14 条）
+   string_table_enc_weapons.xml|gunsl_addon_scope_leupold: Leupold Mark 8 CQBSS 1.1- 8x 24示波器
+   string_table_enc_weapons.xml|gunsl_ammo_7.62x39_ap_short: 7.62x39毫米AP
+   string_table_enc_weapons.xml|gunsl_ammo_5.7x28_short: 5.7x28毫米FN SS190
+   string_table_enc_weapons.xml|gunsl_ammo_7.62x54_7h1: 7.62x54mmR 7N1 rounds
+   string_table_enc_weapons.xml|gunsl_ammo_7.62x54_7h14_short: 7.62x54毫米R 7N14
+   string_table_enc_weapons.xml|gunsl_ammo_9x39_ap_short: 9 x39毫米SP-6
+   string_table_enc_weapons.xml|gunsl_ammo_9x39_pab9_short: 9 x39毫米SP-5
+   string_table_enc_weapons.xml|gunsl_ammo_5.56x45_ap_short: 5.56x45毫米AP
+
+[GA汉化] code（8 条）
+   stable_game_credits.xml|ogsr_engine_developers_url_text: https://github.com/OGSR
+   string_table_enc_weapons.xml|gunsl_wpn_lr300: LR-300
+   string_table_enc_weapons.xml|mil_m202_name: M202 FLASH
+   string_table_enc_weapons.xml|gunsl_wpn_rg6: RG-6
+   string_table_enc_weapons.xml|gunsl_addon_gl_m203: M203
+   string_table_enc_weapons.xml|gunsl_wpn_mr133: MR-133
+   string_table_enc_weapons.xml|gunsl_wpn_l85: L85A2
+   string_table_enc_weapons.xml|gunsl_wpn_bm16: TOZ-66
+
+[SoC1.0006原版] ident（200 条）
+   ui_st_mm.xml|ui_mm_r2_lens_dirt: Lens dirt
+   ui_st_mm.xml|video_settings_name_8: Texture filtering - r__tf_aniso
+   ui_st_mm.xml|ui_mm_r2_detail_bump: Detail bump
+   ui_st_mm.xml|ui_mm_r2_soft_shadows: Soft shadow edges
+   ui_st_mm.xml|video_settings_name_12: Grass shadows - r2_sun_details
+   ui_st_mm.xml|ui_mm_keyboard_setup: Keyboard setup
+   ui_st_mm.xml|ui_mm_r2_sun_limit: Range of the sun
+   ui_st_mm.xml|both: both water and asphalt
+
+[SoC1.0006原版] proper（12 条）
+   ui_st_other.xml|st_client_synchronising: CLIENT: Synchronizing
+   ui_st_mm.xml|st_opt_dlss: NVIDIA DLSS
+   ui_st_other.xml|st_server_starting: SERVER: Starting
+   ui_st_other.xml|ui_st_conn_invalid_host: Connection error: Invalid host
+   ui_st_mm.xml|st_opt_dlss: NVIDIA DLSS
+   ui_st_other.xml|ui_st_conn_invalid_pass: Connection error: Invalid password
+   ui_st_other.xml|st_server_connecting: SERVER: Connecting
+   ui_st_other.xml|ui_st_conn_cdkey_invalid: Connection error: Invalid CD-Key.
+
+[SoC1.0006原版] code（4 条）
+   ui_st_mm.xml|ui_mm_3d_pda: 3D PDA
+   ui_st_mm.xml|st_opt_fsr3: AMD FSR3
+   ui_st_mm.xml|st_opt_fsr3: AMD FSR3
+   ui_st_mm.xml|ui_mm_3d_pda: 3D PDA
+
+[Anomaly-eng] ident（200 条）
+   st_characters.xml|sar2_seryi_name: 'Seriy'
+   st_characters.xml|jup_cont_mech_bandit_name: Nile
+   st_characters.xml|guid_bar_stalker_navigator_name: Navigator
+   st_characters.xml|st_mil_freedom_barman_mlr_name: Culinary
+   st_characters.xml|sar2_lucky_name: Lucky
+   st_characters.xml|zat_b103_lost_merc_4_name: Gazon
+   mlr_addon.xml|killer_bridge_trader_mlr_task_2_name: Find a %s artefact
+   st_characters.xml|mil_Svoboda_engineer_name: Screw
+
+[Anomaly-eng] proper（200 条）
+   ui_st_credits.xml|st_keska: Aleksander Keska
+   ui_st_credits.xml|st_boggs: Justin Boggs
+   ui_st_credits.xml|st_thanks13: Oleg Chernov
+   ui_st_credits.xml|st_slipchenko: Konstantin Slipchenko
+   ui_st_credits.xml|st_durajczyk: Rafal Durajczyk
+   ui_st_credits.xml|st_physic: Physics Programmer
+   ui_st_credits.xml|st_ciemny: Wojciech Ciemny
+   ui_st_credits.xml|st_thanks7: Dmitry 'Hill' Gorban
+
+[Anomaly-eng] tech（172 条）
+   st_items_ammo.xml|ammo-12x70-buck_bad: 12x70 shot rounds (old)
+   st_items_weapons_upgrades.xml|st_up_add_b6_name: Change of calibre to 7.62x51
+   st_items_ammo.xml|ammo-9x18-fmj_bad: 9x18 mm FMJ rounds (old)
+   st_items_ammo.xml|ammo-9x39-pab9_bad: 9x39 mm SP-5 rounds (old)
+   st_items_ammo.xml|ammo-7.62x54-r: 7.62x54 mm PP rounds
+   st_items_ammo.xml|ammo-7.62x51_fmj_bad: 7.62x51 mm NATO rounds (old)
+   st_items_ammo.xml|ammo-5.56x45-fmj_bad: 5.56x45 mm FMJ rounds (old)
+   st_items_weapons_upgrades.xml|st_up_bard_c6_name: Change of calibre to 7.62x54
+
+[Anomaly-eng] code（184 条）
+   st_closecaption.xml|pas_b400_zulus_on_enemy_hit_1: [Zulu gets hurt]
+   st_closecaption.xml|jup_b221_freedom_reaction_4: [laughter]
+   st_items_weapons.xml|st_wpn_usas12: USAS-12
+   st_items_weapons.xml|st_wpn_ak103: AK-103
+   st_closecaption.xml|pas_b400_sokolov_on_death_1: [Sokolov dies]
+   st_closecaption.xml|pas_b400_sokolov_on_enemy_hit_3: [Sokolov gets hurt]
+   st_items_parts.xml|st_prt_w_p_spring_2_descr: .
+   st_closecaption.xml|pas_b400_vano_on_enemy_hit_1: [Vano gets hurt]
+
+[Anomaly-rus] ident（51 条）
+   st_items_weapons.xml|st_wpn_remington870: Remington 870
+   st_items_trash.xml|cloth_white_name: White cloth
+   st_items_trash.xml|plate_military_name: Granite-4M plate
+   st_items_trash.xml|plate_seva_name: SEVA plate
+   ui_st_mm.xml|ui_mm_ok: OK
+   st_items_trash.xml|st_shot_spareparts: Shotgun parts
+   st_items_trash.xml|plastic_pieces_name: Plastic scraps
+   st_items_trash.xml|sleepbag_base_name: Sleeping bag components
+
+[Anomaly-rus] proper（200 条）
+   ui_st_credits.xml|st_thanks19: Александр Новиков
+   ui_st_credits.xml|st_bastrikin: Михаил Бастрыкин
+   ui_st_credits.xml|st_komorek: Artur Komorek
+   ui_st_credits.xml|st_gabryel: Jakub Gabryel
+   ui_st_credits.xml|st_composer: Композитор
+   ui_st_credits.xml|st_mrozowski: Dawid Mrozowski
+   ui_st_credits.xml|st_osinski: Lukasz Osinski
+   ui_st_credits.xml|st_goscicki: Tomasz Goscicki
+
+[Anomaly-rus] tech（162 条）
+   st_items_ammo.xml|ammo-7.62x54-ap_verybad: Патроны 7,62x54 мм ПП (испорченные)
+   st_items_ammo.xml|ammo-5.56x45-ss190_verybad: Патроны 5,56x45 мм EP (испорченные)
+   st_items_weapons_upgrades.xml|st_up_add_b7_name: Смена калибра на 7.62x54
+   st_items_ammo.xml|ammo-5.7x28-ss195_verybad: Патроны 5,7x28 мм ЭП (испорченные)
+   st_items_ammo.xml|ammo-7.62x39_fmj_bad: Патроны 7,62x39 мм FMJ (старые)
+   st_items_ammo.xml|ammo-7.62x51_ap_bad: Патроны 7,62x51 мм НАТО AP (старые)
+   st_items_weapons_upgrades.xml|st_up_add_b6_name: Смена калибра на 7.62x51
+   st_items_ammo.xml|ammo-9x19-fmj_verybad: Патроны 9x19 мм FMJ (испорченные)
+
+[Anomaly-rus] code（132 条）
+   st_items_weapons.xml|st_wpn_m16: M16A4
+   st_dynamic_news.xml|st_dyn_news_number_15: 15
+   st_dynamic_news.xml|st_dyn_news_number_4: 4
+   st_items_weapons.xml|st_wpn_g36k: G36K
+   st_dynamic_news.xml|st_dyn_news_number_6: 6
+   st_items_weapons.xml|st_wpn_mp5: MP5A3
+   st_items_weapons.xml|st_wpn_l96a1: L96A1
+   st_dynamic_news.xml|st_dyn_news_few_year: г
+
+[MT-CN] ident（8 条）
+   st_monolith_dlss.xml|ui_mm_lst_dlss_off: Off
+   st_monolith_dlss.xml|ui_mm_lst_dlss_dlaa: DLAA (native)
+   st_monolith_dlss.xml|ui_mm_lst_dlss_performance: Performance
+   st_monolith_dlss.xml|ui_mm_video_basic_dlss_sharpness: Upscaling sharpening (CAS)
+   st_monolith_dlss.xml|ui_mm_video_basic_upscaler: Temporal upscaler
+   st_monolith_dlss.xml|ui_mm_lst_dlss_quality: Quality
+   st_monolith_dlss.xml|ui_mm_lst_dlss_balanced: Balanced
+   st_monolith_dlss.xml|ui_mm_lst_dlss_default: Default (NVIDIA recommended)
+
+[MT-CN] proper（1 条）
+   st_monolith_dlss.xml|ui_mm_lst_upscaler_dlss: NVIDIA DLSS
+
+[MT-CN] code（5 条）
+   st_monolith_dlss.xml|ui_mm_lst_upscaler_fsr3: AMD FSR 3
+   st_monolith_dlss.xml|ui_mm_lst_dlss_l: L
+   st_monolith_dlss.xml|ui_mm_lst_dlss_m: M
+   st_monolith_dlss.xml|ui_mm_lst_dlss_j: J
+   st_monolith_dlss.xml|ui_mm_lst_dlss_k: K
+
+[Monolith-MT] ident（160 条）
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_visual_particles_allow_silencer_hide_tracer: Allow silencers to hide tracers (allow_silencer_hide_tracer)
+   ui_mm_modded_exes.xml|ui_mm_lst_hdr10_colorspace_p3d65: P3-D65 (DCI-P3)
+   ui_mm_modded_exes.xml|ui_mm_saves_modded_exes: Saves
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_visual_hdr10_contrast: Contrast (r4_hdr10_contrast)
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_visual_crosshair_g_crosshair_occlusion_fade_rate: Crosshair opacity animation speed (g_crosshair_*_occlusion_fade_rate)
+   ui_mm_modded_exes.xml|ui_mm_lst_ON: ON
+   ui_mm_modded_exes.xml|ui_mm_monsters_modded_exes: Monsters
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_optimizations_mt_particles: Multithreaded particles (mt_particles)
+
+[Monolith-MT] proper（6 条）
+   ui_mm_modded_exes.xml|ui_mm_lst_nearwall_hud_fov: HUD FOV
+   ui_mm_modded_exes.xml|ui_mm_lst_nearwall_hud_fov: HUD FOV
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_somebody: Stalkers Enemy Inertia: To Somebody (ms) (ai_enemy_inertia_time_to_somebody)
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_debug_errors_lua_busy_hands_debug: Lua "Busy Hands" debug (lua_busy_hands_debug)
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_from_actor: Stalkers Enemy Inertia: From Actor (ms) (ai_enemy_inertia_time_from_actor)
+   ui_mm_modded_exes.xml|ui_mm_modded_exes_gameplay_stalkers_ai_enemy_inertia_time_to_actor: Stalkers Enemy Inertia: To Actor (ms) (ai_enemy_inertia_time_to_actor)
+
+[Monolith-MT] code（4 条）
+   ui_mm_modded_exes.xml|ui_mm_hdr10_modded_exes: HDR 10
+   ui_mm_modded_exes.xml|ui_mm_hdr10_modded_exes: HDR 10
+   ui_mm_modded_exes.xml|ui_mm_menu_hdr10: HDR 10
+   ui_mm_modded_exes.xml|ui_mm_menu_hdr10: HDR 10
+
+[百科大全] ident（7 条）
+   ui_st_encyclopedia__anthology.xml|encyclopedia__ant_guide_main: Introduction
+   ui_st_encyclopedia__anthology.xml|encyclopedia_article_mags: Anomaly magazines
+   ui_st_encyclopedia__anthology.xml|encyclopedia_ant_guide_troubleshooting: Troubleshooting
+   ui_st_encyclopedia__anthology.xml|encyclopedia_anthology_translate: English translation
+   ui_st_encyclopedia__anthology.xml|encyclopedia_ant_guide_faq: FAQ
+   ui_st_encyclopedia__anthology.xml|encyclopedia_anthology_story_atribut: Atributte
+   ui_st_encyclopedia__anthology.xml|encyclopedia__anthology_mod: Anthology credits
+
+[百科大全] proper（1 条）
+   ui_st_encyclopedia__anthology.xml|encyclopedia_anthology_story_in_a_web_of_lies: Death Defying 2 : In a Web of Lies
+
+[IWP] ident（200 条）
+   st_characters.xml|val_smart_terrain_7_4_bandit_medic_name: Scalpel
+   st_characters.xml|sar2_tolik_name: Tolik
+   st_characters.xml|bar_lelik_name: Liolik
+   st_items_artefacts.xml|st_af_lighthouse_name: Beacon
+   st_characters.xml|sar2_ryaboy_name: Spotty
+   st_characters.xml|red_forester_name: Forester
+   st_characters.xml|sar2_dram_novice_name: Yurik
+   st_characters.xml|bar_barmen_name: Barkeep
+
+[IWP] proper（15 条）
+   ui_st_other.xml|ui_st_conn_cdkey_invalid: Connection error: Invalid CD-Key.
+   st_itm_minimod.xml|st_itm_stash_of_character_25: To whoever's reading this: may you rot.
+   st_items_outfit.xml|halo_outfit_name: Enhanced Assault Armor "Mjolnir"
+   ui_st_other.xml|ui_st_conn_invalid_host: Connection error: Invalid host
+   ui_st_other.xml|st_wish_granted: WISH GRANTED!
+   ui_st_other.xml|ui_st_conn_invalid_pass: Connection error: Invalid password
+   ui_st_other.xml|ui_st_conn_version_differs: Connection error: Different version.
+   ui_st_other.xml|st_server_connecting: SERVER: Connecting
+
+[IWP] tech（67 条）
+   st_items_weapons.xml|st_ammo_9x39_ap_s: 9x39 SP-6
+   st_items_weapons.xml|st_ammo_12x76_zhekan: 12x76 "Arrow" slugs
+   st_items_weapons.xml|st_ammo_9x18_fmj_s: 9x18
+   st_items_weapons.xml|st_ammo_9x18_pmm_s: 9x18 PMM
+   st_items_weapons.xml|st_ammo_5.45x39_fmj_s: 5.45x39 PS
+   st_items_weapons.xml|st_addon_sil_9x21_sr2m: PBS 9x21mm for SR-2MP
+   st_items_weapons.xml|st_ammo_9x19_pbp_s: 9x19 PP
+   st_items_weapons.xml|st_ammo_5.7x28_fmj_s: 5.7x28mm FN SB193
+
+[IWP] code（87 条）
+   st_dialogs_zaton.xml|zat_b22_stalker_medic_need_health_care_11: [continue...]
+   st_items_weapons.xml|st_wpn_m249: FN M249 SAW
+   ui_st_encyclopedia_weapons.xml|encyclopedia_weapons_m320: M320
+   st_items_weapons.xml|st_grenade_launcher_l123a2: L123A2 UGL
+   st_items_outfit.xml|st_nightvision_none: none
+   ui_st_encyclopedia_weapons.xml|encyclopedia_weapons_fn2000: FN F2000
+   st_items_weapons.xml|st_wpn_m320: HK M320
+   ui_st_encyclopedia_weapons.xml|encyclopedia_weapons_p90: FN P90
