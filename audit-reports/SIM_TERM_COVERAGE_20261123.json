@@ -1,0 +1,12 @@
+{
+ "sim": "全16 MOD send 层术语覆盖模拟（tmp/sim_term_coverage.py，2026-11-23）",
+ "total_send": 72886,
+ "total_send_chars": 10953023,
+ "hard_canon_coverage_entries_pct": 27.0,
+ "names_coverage_entries_pct": 11.8,
+ "ref_coverage_entries_pct": 67.0,
+ "hard_chars_pct": 2.1,
+ "ref_chars_pct": 9.0,
+ "mechanical_full_cover_entries": 32,
+ "verdict": "条目级直取已吃满；send 层内硬层词只占 2.1% 字符——就地全量替换的速度收益约 2%；reference 层就是 2.0.22 退役的软层（错率 31%）"
+}

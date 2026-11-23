@@ -11,9 +11,7 @@
 |---|---|---|---|
 | GAMMA 参考 | .338 Lapua Magnum rounds | .338 Lapua Magnum 弹药 | .338 拉普阿马格南弹 |
 | GAMMA 参考 | .357 HP rounds | .357 HP 弹药 | .357 HP弹 |
-| GAMMA 参考 | .45 ACP | .45 ACP口径 | .45 FMJ弹 |
 | GAMMA 参考 | .45 ACP Hydra-shock rounds | .45 ACP Hydra-shock 弹药 | .45 ACP 多头蛇 |
-| GAMMA 参考 | .45 ACP rounds | .45 ACP子弹 | .45 ACP FMJ弹 |
 | GAMMA 参考 | 1.6-кратный прицел | 1.6 倍反射式瞄准镜 | 1.6倍反射式瞄准镜 |
 | GAMMA 参考 | 1.6x reflex sight | 1.6 倍反射式瞄准镜 | 1.6倍反射式瞄准镜 |
 | GAMMA 参考 | 10 seconds have elapsed! | 已过 10 秒！ | 10秒钟过去了! |
@@ -21,8 +19,6 @@
 | GAMMA 参考 | 1000 рублей | 1000 卢布 | 1000卢布 |
 | GAMMA 参考 | 2-х пружинный возвратный модуль | 双弹簧复进组合模块 | 双弹簧复位模组 |
 | GAMMA 参考 | 20 seconds have elapsed! | 已过 20 秒！ | 20秒钟过去了! |
-| GAMMA 参考 | 28 days | 28 天 | 28天 |
-| GAMMA 参考 | 28 дней | 28 天 | 28天 |
 | GAMMA 参考 | 3-round burst mode | 三连发模式 | 3发点射模式 |
 | GAMMA 参考 | 30 seconds have elapsed! | 已过 30 秒！ | 30秒钟过去了! |
 | GAMMA 参考 | 30 seconds, triple win. | 30 秒，三倍。 | 只需要30秒, 三倍奖金 |
@@ -64,14 +60,10 @@
 | GAMMA 参考 | AK-74M (camouflaged) | AK-74M（迷彩） | AK-74M突击步枪(迷彩版) |
 | GAMMA 参考 | AK-74M (custom) | AK-74M（定制型） | AK-74M突击步枪(定制版) |
 | GAMMA 参考 | AN-94 (camouflaged) | AN-94（迷彩） | AN-94突击步枪(迷彩版) |
-| GAMMA 参考 | AS Val | AS瓦尔 | AS Val突击步枪 |
 | GAMMA 参考 | Abandoned Sawmill (Zaton) | 废弃的锯木厂（扎通） | 锯木厂 (扎顿) |
 | GAMMA 参考 | Abandoned School (Dead City) | 废弃的学校（死城） | 废弃学校 (死城) |
 | GAMMA 参考 | Abandoned Village (Army Warehouses) | 废弃的村庄（军方仓库） | 废弃村庄 (军事仓库) |
-| GAMMA 参考 | Abject | 季霍讷恩科夫 | 小白 |
-| GAMMA 参考 | Absolute | 苏博京 | 绿帽 |
 | GAMMA 参考 | Access card required | 需要通行卡 | 进入需要通行卡 |
-| GAMMA 参考 | Accountant | 山米纳西利 | 秀逗 |
 | GAMMA 参考 | Achievements: | 成就： | 已获取的成就: |
 | GAMMA 参考 | Action | 行动 | 动作 |
 | GAMMA 参考 | Activate generator ($$ACTION_USE$$) | 启动发电机（$$ACTION_USE$$） | 打开发电机 ($$ACTION_USE$$) |
@@ -88,23 +80,16 @@
 | GAMMA 参考 | Adjustable range-finder sight | 可调测距瞄准镜 | 可调测距仪 |
 | GAMMA 参考 | Adjustable sight | 可调瞄准具 | 可调式瞄准镜 |
 | GAMMA 参考 | Advanced sewing kit | 高级缝纫套件 | 高级缝纫包 |
-| GAMMA 参考 | Agent | 波洛夫采夫 | 蓝猫 |
 | GAMMA 参考 | Aggressive | 好斗 | 攻击 |
-| GAMMA 参考 | Agreed. | 好的 | 嗯. |
-| GAMMA 参考 | Agroprom Research Institute | 农业研究所 | 农业研究所大楼 |
 | GAMMA 参考 | Agroprom Underground | 农业研究所地下设施 | 农研所地下设施 |
 | GAMMA 参考 | Agrosafe | 农用保险柜 | 研究所的箱子 |
 | GAMMA 参考 | Airtight plastic inner layer | 气密塑料内层 | 密封塑料内层 |
 | GAMMA 参考 | Aleksandr | 亚历山大 | 艾历克斯 |
 | GAMMA 参考 | Alert | 警报 | 黑贝 |
 | GAMMA 参考 | Alexey | 阿列克谢 | 阿列克西 |
-| GAMMA 参考 | Alfyorov | 艾弗攸洛夫 | 阿尔菲罗夫 |
 | GAMMA 参考 | All right, suit yourself. | 好吧,随你便. | 好吧,随你便 |
-| GAMMA 参考 | Alligator | 西亚金 | 战神 |
-| GAMMA 参考 | Alright then. | 行啊。 | 好的 |
 | GAMMA 参考 | Alright, man. | 行，哥们儿。 | 好的, 老兄 |
 | GAMMA 参考 | Alternative | 替代方案 | 切换 |
-| GAMMA 参考 | Ambassador | 萨尔科 | 不朽 |
 | GAMMA 参考 | Amortization fabric layer | 减震织物层 | 面料减震层 |
 | GAMMA 参考 | Amortization handle | 减震握把 | 减震型握把 |
 | GAMMA 参考 | Amortization rubberized layer | 橡胶减震内衬层 | 橡胶减震层 |
@@ -113,64 +98,42 @@
 | GAMMA 参考 | An assault weapon. | 一把突击步枪. | 一把突击武器 |
 | GAMMA 参考 | An exoskeleton. | 一件外骨骼. | 一件外骨骼 |
 | GAMMA 参考 | Anabiotics | 抗生素 | 复苏药 |
-| GAMMA 参考 | Anaconda | 西岩可 | 狂犬 |
 | GAMMA 参考 | Anatoly | 阿纳托利 | 安纳托利 |
 | GAMMA 参考 | Andrey | 安德烈 | 安德雷 |
 | GAMMA 参考 | Andreychuk | 安德烈丘克 | 安德列楚克 |
 | GAMMA 参考 | Andreyev | 安德烈耶夫 | 烟枪 |
 | GAMMA 参考 | Andryukha | 安德留哈 | 安德里卡 |
-| GAMMA 参考 | Anisotropic filtering | 纹理滤镜 | 各向异性过滤 |
 | GAMMA 参考 | Anomalies | 异常现象 | 异常点 |
 | GAMMA 参考 | Anomaly | 异常 | 破鞋 |
-| GAMMA 参考 | Ant | 索宁 | 极乐 |
 | GAMMA 参考 | Anti-corrosive coating | 防腐涂层 | 防腐蚀涂层 |
 | GAMMA 参考 | Anti-radiation drugs | 抗辐射药物 | 消辐宁 |
 | GAMMA 参考 | Antidote poison removal system | 解毒排毒系统 | 有毒物质清除系统 |
 | GAMMA 参考 | Antipin | 安季平 | 安蒂平 |
 | GAMMA 参考 | Anyone nearby? | 附近有人吗？ | 有人在附近吗? |
-| GAMMA 参考 | Apostle | 波卢氏恩 | 惯犯 |
 | GAMMA 参考 | April | 四月 | 4月 |
 | GAMMA 参考 | Ara | 阿里 | 阿拉 |
 | GAMMA 参考 | Archive box | 档案箱 | 档案盒 |
 | GAMMA 参考 | Are you all right? | 你没事吧？ | 你还好吗? |
 | GAMMA 参考 | Are you sure? | 你确定？ | 你确定? |
 | GAMMA 参考 | Area | 领土 | 区域 |
-| GAMMA 参考 | Armorer | 里亚博夫 | 话痨 |
-| GAMMA 参考 | Armsel Protecta | 阿姆塞尔·普罗特克塔 | "保卫者"霰弹枪 |
 | GAMMA 参考 | Armsel Protecta (camouflaged) | Armsel Protecta（迷彩涂装） | "保卫者"霰弹枪(迷彩版) |
 | GAMMA 参考 | Armsel Protecta (custom) | Armsel Protecta（定制型） | "保卫者"霰弹枪(定制版) |
 | GAMMA 参考 | Army Warehouses | 军械库 | 军事仓库 |
-| GAMMA 参考 | Army medkit | 军用急救箱 | 军用急救包 |
 | GAMMA 参考 | Arnie | 阿尔尼 | 阿尼 |
-| GAMMA 参考 | Ascetic | 波么尼科夫 | 秃子 |
 | GAMMA 参考 | Ash Heap anomaly | 燃灰变异区 | "灰烬"异常区 |
 | GAMMA 参考 | Ash Heap anomaly measurements | 灰堆异常点测量 | "灰烬"异常区测量 |
-| GAMMA 参考 | Athlete | 山多佛(功夫猫熊) | 自大狂 |
 | GAMMA 参考 | Athlete built-in system | 运动员内置系统 | 内置运动辅助系统 |
 | GAMMA 参考 | August | 八月 | 8月 |
-| GAMMA 参考 | Auroch | 斯莫特罗夫 | 瘦高个 |
-| GAMMA 参考 | Auto-secret stash | 车子里的藏匿物 | 自助宝藏 |
 | GAMMA 参考 | Automatic fire mode | 全自动射击模式 | 自动模式 |
 | GAMMA 参考 | Automatic optical target acquisition | 光学自动目标捕获 | 自动光学目标搜寻器 |
 | GAMMA 参考 | Automatic round feeding | 自动供弹 | 自动装填器 |
 | GAMMA 参考 | Autosaving... | 自动存档中…… | 自动保存, , |
-| GAMMA 参考 | Aviator | 波洛特瑟夫 | 大眼 |
 | GAMMA 参考 | Axel | 阿克塞尔 | 埃克索 |
 | GAMMA 参考 | Azazel mode | 阿撒兹勒模式 | 诅咒模式 |
-| GAMMA 参考 | Babbler | 塞加耶夫 | 话痨 |
-| GAMMA 参考 | Baboon | 西岩科夫 | 驼背 |
-| GAMMA 参考 | Backpack behind the garages | 车库后的背包 | 在垃圾堆里的背包 |
-| GAMMA 参考 | Backpack of the tester | 测试员的背包 | 检测用背包 |
-| GAMMA 参考 | Backpack with the loot | 装着战利品的背包 | 装着赃物的背包 |
-| GAMMA 参考 | Bagel | 桑盖土林 | 苦行者 |
 | GAMMA 参考 | Balaclava | 巴拉克拉瓦头套 | 头罩 |
 | GAMMA 参考 | Balanced impact-free system | 平衡无冲击系统 | 平衡过的缓冲系统 |
-| GAMMA 参考 | Balitsky | 巴勒斯基 | 波利特斯基 |
 | GAMMA 参考 | Bandits | 强盗 | 土匪 |
 | GAMMA 参考 | Barabashka | 巴拉巴什卡 | 没脾气 |
-| GAMMA 参考 | Barbarian | 普列奥布拉任斯基 | 死鬼 |
-| GAMMA 参考 | Bard | 波德雅科夫 | 蠢蛋 |
-| GAMMA 参考 | Barrel | 图罗夫 | 饭桶 |
 | GAMMA 参考 | Barrel skew closing system | 枪管偏转闭锁系统 | 枪管密闭系统 |
 | GAMMA 参考 | Bashmakov | 巴什马科夫 | 巴什玛科夫 |
 | GAMMA 参考 | Basic | 基础设置 | 基础图像 |
@@ -179,24 +142,15 @@
 | GAMMA 参考 | Battery | 蓄电池 | 热电体 |
 | GAMMA 参考 | Battery fully charged | 电池已充满 | 电池电量充满 |
 | GAMMA 参考 | Baul | 巴乌尔 | 保尔 |
-| GAMMA 参考 | Bayonet | 乌勒杨懦夫 | 铁人 |
 | GAMMA 参考 | Be careful. | 小心点。 | 保持警惕 |
-| GAMMA 参考 | Beekeeper | 萨姆索诺夫 | 宅男 |
-| GAMMA 参考 | Beetle | 特若科肯 | 明眼 |
 | GAMMA 参考 | Belyavin | 别利亚温 | 贝尔雅文 |
 | GAMMA 参考 | Beretta 92F (camouflaged) | Beretta 92F（迷彩） | 伯莱塔92F式手枪(迷彩版) |
 | GAMMA 参考 | Beryllium & aluminium plates | 铍铝板 | 铍和铝材料的合金板 |
 | GAMMA 参考 | Beryllium & titanium plates | 铍钛板 | 铍和钛合金板 |
-| GAMMA 参考 | Big Fellow | 赛菲洛夫 | 妖怪 |
-| GAMMA 参考 | Big-eyed | 萨伊 | 残疾人 |
 | GAMMA 参考 | Binoyev | 比诺耶夫 | 比诺耶利夫 |
-| GAMMA 参考 | Bitter | 斯克沃尔佐夫 | 斗鸡眼 |
 | GAMMA 参考 | Bitumen anomaly | 沥青变异区 | "沥青"异常区 |
-| GAMMA 参考 | Black | 扎亚特瑟夫 | 内八字 |
 | GAMMA 参考 | Black leather jacket | 黑色皮夹克 | 黑夹克 |
 | GAMMA 参考 | Bleeding control | 止血 | 控制出血 |
-| GAMMA 参考 | Blessed | 波戈金 | 皮包骨 |
-| GAMMA 参考 | Blighter | 扎尔金 | 歪把子 |
 | GAMMA 参考 | Blinov | 布利诺夫 | 比利诺夫 |
 | GAMMA 参考 | Blood | 血液 | 出血 |
 | GAMMA 参考 | Bloodsucker goulash | 吸血怪炖肉 | 血块炖肉饭 |
@@ -208,99 +162,59 @@
 | GAMMA 参考 | Bogdanov | 博格丹诺夫 | 巴格丹罗夫 |
 | GAMMA 参考 | Bogomolov | 博戈莫洛夫 | 鲍格莫洛夫 |
 | GAMMA 参考 | Boldeskul | 博尔德斯库尔 | 波德斯库尔 |
-| GAMMA 参考 | Boldskul | 博德斯凯 | 博德斯库尔 |
 | GAMMA 参考 | Bolt hammer compensator | 枪机击锤补偿器 | 枪栓制退器 |
-| GAMMA 参考 | Bone | 乌拉可夫 | 哭丧脸 |
 | GAMMA 参考 | Bonesetter | 正骨师 | 接骨师 |
-| GAMMA 参考 | Bony | 扎波诺特尼 | 白内障 |
-| GAMMA 参考 | Boot | 图皮特斯基 | 沙皮脸 |
-| GAMMA 参考 | Bore | 韦谢洛夫斯基 | 冒失鬼 |
 | GAMMA 参考 | Borov | 博罗夫 | 波诺夫 |
 | GAMMA 参考 | Borya | 博里亚 | 博亚 |
 | GAMMA 参考 | Boryan | 博里扬 | 博尔严 |
-| GAMMA 参考 | Boss | 西瓦科夫 | 倒霉蛋 |
-| GAMMA 参考 | Boss-eyed | 斜眼者 | 头目 |
-| GAMMA 参考 | Bowlegged | 扎多尔日尼 | 混球 |
 | GAMMA 参考 | Boxes smashed: | 砸开的箱子： | 破坏的木箱数量: |
 | GAMMA 参考 | Boychenko | 博伊琴科 | 博伊申科 |
 | GAMMA 参考 | Boyko | 博伊科 | 波伊科 |
 | GAMMA 参考 | Brain Scorcher | 大脑烧灼器 | "焦脑器" |
 | GAMMA 参考 | Brain Scorcher (Radar) | 焦脑器（雷达站） | "焦脑器" (雷达站) |
-| GAMMA 参考 | Brave | 普瑞福尔瑞塞夫 | 偏执狂 |
-| GAMMA 参考 | Break | 托尔斯泰 | 孬种 |
-| GAMMA 参考 | Brick | 塔他若夫 | 正义使者 |
-| GAMMA 参考 | Broken radio | 损坏的无线电 | 损坏的收音机 |
 | GAMMA 参考 | Brothers, help us! | 兄弟们，帮帮我们！ | 兄弟们, 帮帮我们! |
 | GAMMA 参考 | Brothers, help! | 兄弟们，帮忙！ | 兄弟们, 救命! |
-| GAMMA 参考 | Bud | 巴德 | 波德 |
-| GAMMA 参考 | Buffer | 沃罗斯恩 | 刽子手 |
-| GAMMA 参考 | Buffoon | 皮特森 | 大力士 |
-| GAMMA 参考 | Bug | 斯梅塔宁 | 说书人 |
 | GAMMA 参考 | Bulava | 布拉瓦 | 巴拉瓦 |
 | GAMMA 参考 | Bulkin | 布利金 | 莽夫 |
-| GAMMA 参考 | Bulldozer | 沃洛申 | 老汉 |
-| GAMMA 参考 | Bully | 爱罗武勇 | 帅哥 |
-| GAMMA 参考 | Bumper | 苏奇科夫 | 外八字 |
-| GAMMA 参考 | Bundle | 尤伯维瑟巴肯 | 瘾君子 |
-| GAMMA 参考 | Bureaucrat | 波扎尔斯基 | 官僚 |
 | GAMMA 参考 | Burer | 狂暴侏儒 | 变异矮人 |
 | GAMMA 参考 | Burer skin | 狂暴侏儒皮 | 变异矮人皮 |
 | GAMMA 参考 | Burner | 燃烧器 | 爆燃点 |
-| GAMMA 参考 | Burr | 叶洛米曜夫 | 烟嗓 |
 | GAMMA 参考 | Buryak | 布良克 | 布尔雅克 |
-| GAMMA 参考 | Bushwhacker | 塞尔皮奥诺夫 | 游击队员 |
-| GAMMA 参考 | Busybody | 瓦亚莫肯 | 大忙人 |
 | GAMMA 参考 | Butt | 屁股 | 烟头 |
-| GAMMA 参考 | Butters | 扎科夫 | 牛油 |
 | GAMMA 参考 | Buturin | 布图林 | 布特金 |
 | GAMMA 参考 | Buy | 购买 | 购入 |
 | GAMMA 参考 | Buy last purchased loadout | 购买上次用过的装备配置 | 购买上次购买果的装备 |
 | GAMMA 参考 | Buy rifle ammo (W) | 购买步枪弹药（W） | 购买步枪弹药 (W) |
 | GAMMA 参考 | Buy selected items | 购买所选物品 | 购买选定的物品 |
 | GAMMA 参考 | Byalo | 比亚沃 | 博雅洛 |
-| GAMMA 参考 | Bye! | 再见! | 再会! |
 | GAMMA 参考 | C-Consciousness representative | C意识代表 | 超念体代表 |
 | GAMMA 参考 | C-Consciousness volunteer | C意识志愿者 | 超念体志愿者 |
 | GAMMA 参考 | CZ-75 (custom) | CZ-75（定制型） | CZ-75手枪半自动型(定制版) |
 | GAMMA 参考 | CZ-75 Automatic | CZ-75 自动型 | CZ-75手枪全自动型 |
-| GAMMA 参考 | Cabbage | 沃登 | 卷心菜 |
 | GAMMA 参考 | Cannabis joint | 大麻烟卷 | 大麻卷烟 |
 | GAMMA 参考 | Cannot be installed | 无法安装 | 不能安装 |
 | GAMMA 参考 | Cannot buy weapon | 无法购买武器 | 不能买武器 |
 | GAMMA 参考 | Canvas bodysuit | 帆布连体服 | 帆布紧身衣 |
 | GAMMA 参考 | Cap | 上尉 | 帽子 |
 | GAMMA 参考 | Captain Ivantsov | 伊万佐夫上尉 | 伊万索夫上尉 |
-| GAMMA 参考 | Carbide | 耶迪姆斯盖 | 碳化物 |
 | GAMMA 参考 | Care built-in system | 关怀内置系统 | 内置式护理系统 |
-| GAMMA 参考 | Carpenter | 萨菲于林 | 木匠 |
-| GAMMA 参考 | Carrier | 勒热夫斯基 | 运输工 |
 | GAMMA 参考 | Casanova | 卡萨诺瓦 | 风流汉 |
 | GAMMA 参考 | Cat claw | 变异猫的爪 | 猫爪 |
 | GAMMA 参考 | Cat tail | 变异猫之尾 | 猫尾巴 |
 | GAMMA 参考 | Center map on objective | 地图居中到任务目标 | 任务目标居中 |
 | GAMMA 参考 | Center on player | 玩家位置 | 玩家位置居中 |
 | GAMMA 参考 | Ceramic layer on plates | 板上的陶瓷层 | 防弹板外层陶瓷 |
-| GAMMA 参考 | Chance | 乌戈勒尼科夫 | 侥幸 |
 | GAMMA 参考 | Changing barrel geometry | 改变枪管几何形状 | 更换新型枪管 |
 | GAMMA 参考 | Chapaev | 恰帕耶夫 | 夏伯阳 |
-| GAMMA 参考 | Chapayev | 维卡什夫 | 恰巴耶夫 |
 | GAMMA 参考 | Characters | 人物 | 人物志 |
 | GAMMA 参考 | Chat | 聊天 | 交谈 |
 | GAMMA 参考 | Chebur | 切布尔 | 切波 |
 | GAMMA 参考 | Cheburashka | 切布拉什卡 | 切波什卡 |
-| GAMMA 参考 | Chernobyl NPP | 切尔诺贝利核电厂 | 切尔诺贝利核电站 |
-| GAMMA 参考 | Chest in the crane | 起重机里的钱 | 吊车里的箱 |
-| GAMMA 参考 | Chilly | 维滕贝格 | 寒冷 |
 | GAMMA 参考 | Chimera claw | 奇美拉之爪 | 奇美拉的爪子 |
 | GAMMA 参考 | Chimera heart | 奇美拉之心 | 奇美拉的心脏 |
-| GAMMA 参考 | Chimneysweep | 谢罗夫 | 扫烟囱的 |
 | GAMMA 参考 | Chingachgook | 钦加奇古克 | 金戈古克 |
-| GAMMA 参考 | Chingachuk | 维塔耶夫 | 辛戈古克 |
 | GAMMA 参考 | Chip | 芯片 | 尖刺 |
-| GAMMA 参考 | Chipmunk | 西园寺世界 | 花栗鼠 |
 | GAMMA 参考 | Chirikov | 奇里科夫 | 基里科夫 |
-| GAMMA 参考 | Chopper | 苏斯利亚科夫 | 砍刀 |
-| GAMMA 参考 | Cider | 图波列夫 | 苹果酒 |
 | GAMMA 参考 | Clear | 晴朗 | 晴天 |
 | GAMMA 参考 | Clear (C) | 清除（C） | 清空 (C) |
 | GAMMA 参考 | Clear Sky stalkers | 晴空潜行者 | 晴空潜行者, |
@@ -308,28 +222,16 @@
 | GAMMA 参考 | Close PDA | 关闭 PDA | 关闭PDA |
 | GAMMA 参考 | Close door ($$ACTION_USE$$) | 关门（$$ACTION_USE$$） | 关门 ($$ACTION_USE$$) |
 | GAMMA 参考 | Close window ($$ACTION_USE$$) | 关闭窗口（$$ACTION_USE$$） | 关闭界面 ($$ACTION_USE$$) |
-| GAMMA 参考 | Closet | 尤兰德莫夫 | 克洛塞 |
 | GAMMA 参考 | Cloth mask | 布制口罩 | 布面罩 |
-| GAMMA 参考 | Clown | 列舍特尼科夫 | 活宝 |
 | GAMMA 参考 | Clumsy | 笨手 | 蠢货 |
-| GAMMA 参考 | Cobra | 索布恰克 | 眼镜蛇 |
 | GAMMA 参考 | Cocaine | 可卡因 | 古柯碱 |
 | GAMMA 参考 | Code lock ($$ACTION_USE$$) | 密码锁（$$ACTION_USE$$） | 密码锁 ($$ACTION_USE$$) |
-| GAMMA 参考 | Coffin | 西耶夫 | 棺材 |
-| GAMMA 参考 | Cognac | 捷列先科 | 白兰地 |
 | GAMMA 参考 | Cold | 寒冷 | 冷风 |
-| GAMMA 参考 | Collar | 苏土林 | 领子 |
-| GAMMA 参考 | Colonel | 罗亚巴肯 | 上校 |
 | GAMMA 参考 | Colt M1911 (Duty camouflage) | Colt M1911（纪律团迷彩） | 柯尔特M1911(纪律团涂装) |
 | GAMMA 参考 | Colt M1911 (camouflaged) | Colt M1911（迷彩） | 柯尔特M1911(迷彩版) |
 | GAMMA 参考 | Colt M1911 (custom) | Colt M1911（定制型） | 柯尔特M1911(定制版) |
 | GAMMA 参考 | Colt M1911 (new) | Colt M1911（全新） | 柯尔特M1911(新式) |
-| GAMMA 参考 | Comanche | 肉弹 | 科曼奇 |
-| GAMMA 参考 | Comatose | 约日伊科夫 | 睡神 |
-| GAMMA 参考 | Comb | 秀明 | 梳子 |
 | GAMMA 参考 | Comet | 彗星 | 火彗星 |
-| GAMMA 参考 | Commodore | 叶戈罗夫 | 准将 |
-| GAMMA 参考 | Compass | 指南针 | 磁石晶 |
 | GAMMA 参考 | Component adjustment | 部件调整 | 零件校准 |
 | GAMMA 参考 | Composite firing mechanism components | 复合击发机构部件 | 合成材料火控组件 |
 | GAMMA 参考 | Concrete Bath anomaly | 水泥池变异区 | "泥浴"异常区 |
@@ -341,58 +243,40 @@
 | GAMMA 参考 | Constantan thermal isolation inserts | 康铜隔热内衬 | 康铜隔热嵌件 |
 | GAMMA 参考 | Construction Site (Wild Territory) | 建筑工地（荒野） | 建筑工地 (废弃区) |
 | GAMMA 参考 | Construction site | 建筑工地 | 工地 |
-| GAMMA 参考 | Contact | 萨维伊琳 | 联络 |
 | GAMMA 参考 | Contacts in the PDA | PDA 联系人 | PDA中的委托公告板 |
 | GAMMA 参考 | Container Warehouse (Jupiter) | 集装箱仓库（木星） | 集装箱仓库 (尤皮特) |
 | GAMMA 参考 | Controller | 脑波怪 | 摄魂怪 |
 | GAMMA 参考 | Cool! | 太好了! | 酷! |
 | GAMMA 参考 | Corpses (disable) | 尸体（禁用） | 队友搜刮尸体 (关闭) |
 | GAMMA 参考 | Corpses (enable) | 尸体（启用） | 队友搜刮尸体 (启用) |
-| GAMMA 参考 | Cosmos | 季霍科郝得 | 宇宙学家 |
-| GAMMA 参考 | Cossack | 雷泽索夫 | 哥萨克 |
 | GAMMA 参考 | Cost | 价格 | 花费 |
-| GAMMA 参考 | Cottager | 西野尼科夫 | 装逼犯 |
 | GAMMA 参考 | Credits | 制作人员 | 制作名单 |
 | GAMMA 参考 | Creeping bolt installation | 缓行枪机安装 | 安装缓慢枪栓 |
-| GAMMA 参考 | Crocodile | 索尔达托夫 | 牛粪头 |
-| GAMMA 参考 | Cross-eyed | 扎多尔诺夫 | 斗鸡眼 |
-| GAMMA 参考 | Crosshair target distance | 准星目标距离 | 准星显示目标距离 |
 | GAMMA 参考 | Crouch | 蹲下 | 下蹲 |
 | GAMMA 参考 | Crouch toggle | 蹲下切换 | 蹲姿切换 |
 | GAMMA 参考 | Cuirass titanium armour | 胸甲钛装甲 | 钛制护胸 |
 | GAMMA 参考 | Current charge: | 当前电量： | 当前费用: |
 | GAMMA 参考 | Current time: | 当前时间： | 当前时间: |
-| GAMMA 参考 | Cursor | 西野科瑟夫 | 车臣人 |
 | GAMMA 参考 | Cylindrical drilling of barrel | 枪管圆柱钻孔 | 圆柱形枪管钻孔 |
-| GAMMA 参考 | Cynic | 波道 | 愤世嫉俗 |
-| GAMMA 参考 | Dad | 莱科夫 | 老爹 |
 | GAMMA 参考 | Damage | 杀伤力 | 伤害 |
-| GAMMA 参考 | Dancer | 森金 | 舞蹈家 |
 | GAMMA 参考 | Dangerous secret | 危险秘密 | 危险的秘密 |
 | GAMMA 参考 | Danya | 丹尼亚 | 丹亚 |
 | GAMMA 参考 | Dark Valley | 黑暗山谷 | 黑谷 |
 | GAMMA 参考 | Darkscape | 峡谷 | 黑暗小径 |
-| GAMMA 参考 | Dead stalker | 死亡潜行者 | 死掉的潜行者 |
-| GAMMA 参考 | Dealer | 普斯雅科夫 | 贩子 |
 | GAMMA 参考 | Debug HUD | 调试 HUD | 调试HUD |
 | GAMMA 参考 | December | 十二月 | 12月 |
 | GAMMA 参考 | Decoding in progress | 解码进行中 | 正在解码 |
 | GAMMA 参考 | Default (F5) | 默认（F5） | 默认 (F5) |
-| GAMMA 参考 | Defector | 叛逃者 | 背叛者 |
 | GAMMA 参考 | Deflective ceramic Scale modification | 偏弹陶瓷「鳞甲」改装 | 改装成偏斜的陶瓷鳞片甲 |
 | GAMMA 参考 | Degtyarev | 捷格加廖夫 | 德格捷列夫 |
 | GAMMA 参考 | Delayed repairs | 延迟维修 | 维修需要时间 |
 | GAMMA 参考 | Denis | 丹尼斯 | 邓尼斯 |
-| GAMMA 参考 | Deputy | 拜尔特森 | 代表 |
 | GAMMA 参考 | Detailed textures | 精细纹理 | 纹理细节 |
 | GAMMA 参考 | Devices | 装置 | 电子设备 |
-| GAMMA 参考 | Dexter | 波克罗夫斯基 | 右手 |
 | GAMMA 参考 | Did you find anything? | 找到什么了吗？ | 找到什么没? |
 | GAMMA 参考 | Died: | 死亡： | 死讯: |
 | GAMMA 参考 | Dimon | 季蒙 | 迪蒙 |
-| GAMMA 参考 | Dimuha | 迪穆哈 | 迪姆哈 |
 | GAMMA 参考 | Dimukha | 苍蝇 | 迪姆克哈 |
-| GAMMA 参考 | Dinosaur | 斯卢切夫斯基 | 恐龙 |
 | GAMMA 参考 | Direct IP | 直接IP | IP直连 |
 | GAMMA 参考 | Directed gas energy | 定向气流动能 | 定向导气能 |
 | GAMMA 参考 | Disabled | 已禁用 | 禁用 |
@@ -404,34 +288,24 @@
 | GAMMA 参考 | Distance keep far | 保持远距离 | 距离保持-远 |
 | GAMMA 参考 | Distance keep near | 保持近距离 | 距离保持-近 |
 | GAMMA 参考 | Distance to | 距离 | 距离... |
-| GAMMA 参考 | Diver | 普罗宁 | 潜水员 |
 | GAMMA 参考 | Dmitro | 德米特罗 | 迪米特里 |
 | GAMMA 参考 | Doc | 医生 | 博士 |
 | GAMMA 参考 | Docent | 副教授 | 临时教师 |
-| GAMMA 参考 | Dock | 码头 | 前台 |
-| GAMMA 参考 | Dogman | 萨哈斯特利维特瑟夫 | 教条主义者 |
-| GAMMA 参考 | Dolphin | 斯洛柏占宁 | 海豚 |
 | GAMMA 参考 | Dombrik | 东布里克 | 多布里克 |
 | GAMMA 参考 | Door blocked | 门被挡住 | 这个门被锁住了 |
 | GAMMA 参考 | Door jammed | 门卡住了 | 门被卡住了 |
 | GAMMA 参考 | Door locked | 门已上锁 | 这个门被锁住了 |
 | GAMMA 参考 | Dotsenko | 多岑科 | 德特森科 |
 | GAMMA 参考 | Double trigger firing mechanism | 双扳机击发机构 | 双扳机击发机制 |
-| GAMMA 参考 | Doughnut | 叶尔钦 | 甜甜圈 |
 | GAMMA 参考 | Dovgalyuk | 多夫加柳克 | 德夫加留科 |
-| GAMMA 参考 | Dragon | 多拉巩 | 恶龙 |
 | GAMMA 参考 | Dredge station | 挖泥船 | 疏浚站 |
 | GAMMA 参考 | Drive device armouring | 驱动装置装甲 | 护甲驱动保护装置 |
 | GAMMA 参考 | Drug-making kit | 制毒套件 | 制药箱 |
-| GAMMA 参考 | Dry | 彼得罗夫 | 枯燥 |
 | GAMMA 参考 | Dubenchuk | 杜本科 | 杜本楚克 |
-| GAMMA 参考 | Dude | 韦恩斯坦 | 阿飞 |
 | GAMMA 参考 | Dudorov | 杜多罗夫 | 杜德洛夫 |
-| GAMMA 参考 | Duke | 绿色 | 公爵 |
 | GAMMA 参考 | Dunayev | 杜纳耶夫 | 杜勒耶夫 |
 | GAMMA 参考 | Duplicate protective plate layer | 备份防护板层 | 双层保护板 |
 | GAMMA 参考 | Duration | 作用时间 | 持续时间 |
-| GAMMA 参考 | Duremar | 威考洛夫 | 吸血怪猎手 |
 | GAMMA 参考 | Dushman | 杜什曼 | 达什曼 |
 | GAMMA 参考 | Duty forces | 纪律团部队 | 纪律团部队, |
 | GAMMA 参考 | Duty soldiers | 纪律团士兵 | 纪律团战士, |
@@ -447,7 +321,6 @@
 | GAMMA 参考 | Egor | 叶戈尔 | 艾格尔 |
 | GAMMA 参考 | Egorka | 叶戈尔卡 | 埃戈尔卡 |
 | GAMMA 参考 | Elder | 爷爷 | 长者 |
-| GAMMA 参考 | Electrician | 西岩古洛夫 | 电工 |
 | GAMMA 参考 | Elevator has no power | 升降机没电 | 电梯没电 |
 | GAMMA 参考 | Emission | 电磁风暴 | 能量风暴 |
 | GAMMA 参考 | Emissions | 电磁风暴 | 能量风暴 |
@@ -458,16 +331,13 @@
 | GAMMA 参考 | Engine | 引擎 | 工程师 |
 | GAMMA 参考 | Enhanced recoil | 增强后坐力 | 后坐力增强 |
 | GAMMA 参考 | Enter code ($$ACTION_USE$$) | 输入密码（$$ACTION_USE$$） | 输入密码 ($$ACTION_USE$$) |
-| GAMMA 参考 | Epaulet | 叶儿模洛夫 | 肩章 |
 | GAMMA 参考 | Ergonomic receiver shape | 人体工学机匣形状 | 人体工学枪机形状 |
 | GAMMA 参考 | Erofeev | 叶罗费耶夫 | 埃罗费耶夫 |
-| GAMMA 参考 | Erohin | 艾罗辛 | 伊罗欣 |
 | GAMMA 参考 | Erokhin | 叶罗欣 | 伊洛克辛 |
 | GAMMA 参考 | Even forced cooling system | 均匀强制冷却系统 | 强制冷却系统 |
 | GAMMA 参考 | Examine device ($$ACTION_USE$$) | 检查装置（$$ACTION_USE$$） | 检查仪器 ($$ACTION_USE$$) |
 | GAMMA 参考 | Examine helicopter ($$ACTION_USE$$) | 检查直升机（$$ACTION_USE$$） | 搜查直升机 ($$ACTION_USE$$) |
 | GAMMA 参考 | Excellent | 优秀 | 叱咤风云 |
-| GAMMA 参考 | Exit to Windows | 回到视窗 | 退出到WINDOWS |
 | GAMMA 参考 | Expanse anomalous protection bodysuit | 「辽阔」异常防护连体服 | 异常点封闭式紧身防护服 |
 | GAMMA 参考 | Experienced | 老兵 | 高手 |
 | GAMMA 参考 | Explorer | 探索者 | 冒险家 |
@@ -477,59 +347,43 @@
 | GAMMA 参考 | Extra carbon fibre coating | 额外碳纤维涂层 | 额外的碳纤维覆盖层 |
 | GAMMA 参考 | Eye | 眼睛 | 天目石 |
 | GAMMA 参考 | F1 grenade | F1 手雷 | F1防御型手雷 |
-| GAMMA 参考 | FN F2000 | 埃尔斯塔尔F2000 | FN F2000突击步枪 |
 | GAMMA 参考 | FN F2000 (camouflaged) | FN F2000（迷彩） | FN F2000突击步枪(迷彩版) |
-| GAMMA 参考 | FN P90 | FN P90手枪 | FN P90冲锋枪 |
 | GAMMA 参考 | FNP-45 (custom) | FNP-45（定制型） | FNP-45手枪(定制版) |
 | GAMMA 参考 | FOLLOW ME | 跟我来 | 跟上 |
-| GAMMA 参考 | Factor | 尤伯雅士 | 代理商 |
 | GAMMA 参考 | Factory Complex (Agroprom) | 工厂建筑群（农业研究所） | 厂区 (农业研究所) |
 | GAMMA 参考 | Fadeyev | 法捷耶夫 | 费德耶夫 |
 | GAMMA 参考 | False | 假 | 否 |
 | GAMMA 参考 | Fanatic | 狂热分子 | "狂人"法纳特 |
 | GAMMA 参考 | Fang | 獠牙 | 毒牙 |
 | GAMMA 参考 | Fantasist | 说书人 | 牛皮大王 |
-| GAMMA 参考 | Fat | 佩斯特扎夫 | 肥肉 |
-| GAMMA 参考 | Fatty | 皮诺丘 | 小胖 |
-| GAMMA 参考 | Favorite | 扎波罗热茨 | 最爱 |
 | GAMMA 参考 | February | 二月 | 2月 |
 | GAMMA 参考 | Fedya | 费佳 | 费德亚 |
-| GAMMA 参考 | Felka | 费尔卡 | 菲卡 |
-| GAMMA 参考 | Ferret | 斯特列尔科夫 | 雪貂 |
 | GAMMA 参考 | Feygelman | 费格尔曼 | 菲尔格曼 |
 | GAMMA 参考 | Field cutlery | 野战餐具 | 野外餐具 |
 | GAMMA 参考 | Filya | 菲利亚 | 菲尔亚 |
 | GAMMA 参考 | Fima | 菲马 | 费马 |
 | GAMMA 参考 | Fimka | 菲姆卡 | 费姆卡 |
-| GAMMA 参考 | Find the Wish Granter | 发现"许愿石" | 找到许愿石 |
 | GAMMA 参考 | Fire rate | 射击速率 | 射速 |
 | GAMMA 参考 | Firefly | 萤火虫 | 荧光晶 |
-| GAMMA 参考 | Fireman | 萨加德耶夫 | 消防员 |
 | GAMMA 参考 | Firing amortization system | 射击缓冲系统 | 射击减震器 |
 | GAMMA 参考 | First-aid kit | 急救箱 | AI-2急救包 |
 | GAMMA 参考 | Flame | 火焰 | 天火晶 |
 | GAMMA 参考 | Flesh meat | 豚兽肉 | 豚兽五花肉 |
 | GAMMA 参考 | Flight recorder | 飞行数据记录器 | 飞行记录器 |
-| GAMMA 参考 | Footballer | 谢沃斯季亚诺夫 | 足球运动员 |
 | GAMMA 参考 | Forced cooling | 强制冷却 | 强制冷却器 |
 | GAMMA 参考 | Forcing trigger delay device | 强制扳机延迟装置 | 强制型扳机延迟装置 |
 | GAMMA 参考 | Forget all your waypoints. | 忘掉所有路点。 | 忘记那些路径点吧 |
-| GAMMA 参考 | Fort-17 | 福特-17 | Fort-17手枪 |
 | GAMMA 参考 | Found | 发现 | 找到了 |
 | GAMMA 参考 | Fracture | 折裂者 | 长臂怪人 |
 | GAMMA 参考 | Fractures attacked us | 长臂怪人袭击了我们 | 长臂怪人正在攻击我们 |
-| GAMMA 参考 | Frame | 特维尼科夫 | 框人 |
 | GAMMA 参考 | Freedom forces | 自由团的部队 | 自由军部队, |
 | GAMMA 参考 | Freedom stalkers | 自由团的潜行者 | 自由军潜行者, |
 | GAMMA 参考 | Frequency 60Hz | 60赫兹刷新率 | 60Hz刷新率 |
 | GAMMA 参考 | Friday | 星期五 | 忠仆 |
-| GAMMA 参考 | Fuck you! | 去你妈的！ | 操他妈! |
 | GAMMA 参考 | Fucking rats attacked us | 操蛋的巨鼠袭击了我们 | 妈的老鼠在啃我们 |
 | GAMMA 参考 | Full | 满 | 完整 |
-| GAMMA 参考 | Furnace secret stash | 炉子里的秘密藏匿物 | 炉子里的藏匿处 |
 | GAMMA 参考 | Fury adrenalin injector | 狂怒肾上腺素注射器 | "暴君"肾上腺注射器 |
 | GAMMA 参考 | G36 (camouflaged) | G36（迷彩涂装） | G36突击步枪(迷彩版) |
-| GAMMA 参考 | Gadfly | 索罗金 | 牛虻 |
 | GAMMA 参考 | Galil AR (custom) | Galil AR（定制型） | 加利尔标准型突击步枪(定制版) |
 | GAMMA 参考 | Galil AR (modern) | Galil AR（现代型） | 加利尔标准型突击步枪(现代版) |
 | GAMMA 参考 | Galkin | 加尔金 | 盖尔金 |
@@ -539,7 +393,6 @@
 | GAMMA 参考 | Garbage | 废料场 | 填埋场 |
 | GAMMA 参考 | Garik | 加里克 | 盖瑞 |
 | GAMMA 参考 | Garkusha | 加尔库沙 | 加库沙 |
-| GAMMA 参考 | Garlic | 乌格洛夫 | 大蒜 |
 | GAMMA 参考 | Gas balloon (empty) | 气瓶（空） | 液化气罐(空的) |
 | GAMMA 参考 | Gas cylinder | 煤气罐 | 高压气瓶 |
 | GAMMA 参考 | Gas energy collection system | 气流动能收集系统 | 火药燃气聚集系统 |
@@ -551,114 +404,71 @@
 | GAMMA 参考 | Gauss rifle documentation found | 找到高斯步枪文档 | 发现高斯步枪文件 |
 | GAMMA 参考 | Gena | 根纳 | 詹纳 |
 | GAMMA 参考 | Generator | 干扰器 | 超导核心 |
-| GAMMA 参考 | Georg | 格奥尔 | 格奥尔格 |
 | GAMMA 参考 | George | 格奥尔格 | 格奥尔吉 |
 | GAMMA 参考 | German | 赫尔曼 | 吉尔曼 |
-| GAMMA 参考 | Geshkenbein | 盖斯坎宾 | 格什肯本 |
 | GAMMA 参考 | Get lost! | 滚开！ | 滚开! |
 | GAMMA 参考 | Ghost | 幽灵 | 鬼魂 |
-| GAMMA 参考 | Gioconda | 乌玛洛夫 | 乔康达 |
 | GAMMA 参考 | Glad to help. | 乐意帮忙。 | 乐意效劳 |
-| GAMMA 参考 | Gladiator | 普希金 | 角斗士 |
 | GAMMA 参考 | Glebovsky | 格列博夫斯基 | 格里波夫斯基 |
-| GAMMA 参考 | Glider | 赛托夫 | 滑翔机 |
-| GAMMA 参考 | Globe | 瑟亚诺夫 | 球型 |
 | GAMMA 参考 | Glock 19 (custom) | Glock 19（定制型） | 格洛克19手枪(定制版) |
-| GAMMA 参考 | Gloomy | 扎夫拉日诺夫 | 阴沉 |
-| GAMMA 参考 | Glue | 塔他罗夫 | 胶水 |
-| GAMMA 参考 | Gnat | 索莫夫 | 吸血蝇 |
 | GAMMA 参考 | Gnatyuk | 格纳秋克 | 格纳图克 |
 | GAMMA 参考 | Gnom | 格诺姆 | 矮子 |
 | GAMMA 参考 | Go on. | 继续. | 还有别的吗? |
 | GAMMA 参考 | Go on... | 继续... | 继续说... |
 | GAMMA 参考 | Goldfish | “金鱼” | 浮游晶 |
-| GAMMA 参考 | Good day. | 再见。 | 今天天气不错呀. |
 | GAMMA 参考 | Good luck, son! | 祝你好运，孩子！ | 祝你好运,孩子! |
-| GAMMA 参考 | Goose | 司来平尼 | 鹅 |
-| GAMMA 参考 | Gopher | 斯杰别罗夫 | 地鼠 |
 | GAMMA 参考 | Gordienko | 戈尔季延科 | 戈尔坚科 |
 | GAMMA 参考 | Gorlevoy | 戈尔列沃伊 | 戈里洛夫 |
 | GAMMA 参考 | Gorokhin | 戈罗欣 | 格洛科辛 |
 | GAMMA 参考 | Gorynich | 戈里内奇 | 贪婪 |
 | GAMMA 参考 | Gosha | 戈沙 | 郭沙 |
-| GAMMA 参考 | Gouge | 戈巴 | 挖掘者 |
-| GAMMA 参考 | Government chest | 政府的金库 | 国有资产 |
-| GAMMA 参考 | Gramps | 皮特纳夫 | 抽筋 |
 | GAMMA 参考 | Grandpa | 爷爷 | 老头子 |
 | GAMMA 参考 | Grass density | 草地密度 | 草密度 |
 | GAMMA 参考 | Grass rendering distance | 草地渲染距离 | 草渲染距离 |
 | GAMMA 参考 | Grass shadow | 草地阴影 | 动态草阴影 |
-| GAMMA 参考 | Grasshopper | 索洛德尼科夫 | 蝗虫 |
 | GAMMA 参考 | Greben | 格列边 | 科布 |
 | GAMMA 参考 | Grebenyuk | 格列别纽克 | 格列本尤克 |
-| GAMMA 参考 | Greetings, living soul. | 你好啊。活人。 | 你好啊, 活着的灵魂 |
-| GAMMA 参考 | Gremlin | 维里琴科 | 大妖精 |
 | GAMMA 参考 | Grif | 格里芬 | 格里夫 |
 | GAMMA 参考 | Grim | 严酷者 | 冷酷 |
 | GAMMA 参考 | Grishachev | 格里沙乔夫 | 格里沙切夫 |
 | GAMMA 参考 | Gritsay | 格里察伊 | 格里赛 |
 | GAMMA 参考 | Group: | 组： | 群组: |
 | GAMMA 参考 | Gubar | 古巴尔 | 格巴 |
-| GAMMA 参考 | Guest | 皮特林 | 访客 |
 | GAMMA 参考 | Guide | 向导 | 指南 |
 | GAMMA 参考 | Gunko | 贡科 | 甘苦 |
-| GAMMA 参考 | Gunpowder | 托若泊夫 | 火药 |
-| GAMMA 参考 | Gunsmith | 枪炮匠 | 军火商 |
 | GAMMA 参考 | Gurevich | 古列维奇 | 古里维奇 |
 | GAMMA 参考 | Guys, help! | 哥们儿，救命！ | 老铁们, 帮帮忙! |
-| GAMMA 参考 | Haggler | 谢列布里亚科夫 | 小贩子 |
-| GAMMA 参考 | Handicapped | 叶库拉耶夫 | 残疾人 |
 | GAMMA 参考 | Handling | 可靠性 | 操控性 |
-| GAMMA 参考 | Hare | 斯塔罗杜布采夫 | 野兔 |
 | GAMMA 参考 | Hawaiian | 夏威夷人 | 夏威夷 |
-| GAMMA 参考 | Head | 文鸡鲁 | 头领 |
 | GAMMA 参考 | Health | 生命值 | 健康值 |
 | GAMMA 参考 | Health restoration | 恢复生命值 | 生命恢复 |
-| GAMMA 参考 | Heart | 心脏 | 水晶之心 |
-| GAMMA 参考 | Heartthrob | 萨亚科夫 | 柔情 |
 | GAMMA 参考 | Heat absorbing components | 吸热部件 | 热量吸收部件 |
 | GAMMA 参考 | Heavy | 重型 | 重 |
-| GAMMA 参考 | Hedgehog | 斯梅申诺夫 | 豪猪 |
 | GAMMA 参考 | Helicopter sounds | 直升机音效 | 直升机声音 |
 | GAMMA 参考 | Helicopters downed: | 击落直升机： | 击落的直升机数量: |
 | GAMMA 参考 | Hello, stalker. | 你好,潜行者. | 哈喽, 潜行者 |
 | GAMMA 参考 | Hello. | 你好。 | 你好 |
 | GAMMA 参考 | Help us! | 帮帮我们！ | 帮帮我们! |
-| GAMMA 参考 | Help, dude! | 救命，朋友！ | 救命, 老兄! |
 | GAMMA 参考 | Hercules | 大力士 | 大力水 |
-| GAMMA 参考 | Herdsman | 科扎克 | 游牧者 |
-| GAMMA 参考 | Here we go. | 来了 | 开始吧. |
 | GAMMA 参考 | Hey, help us out! | 嘿，帮我们一把！ | 嘿, 帮帮我们! |
-| GAMMA 参考 | Hey. Who are you? | 嗯，你是谁？ | 喂, 你是谁? |
-| GAMMA 参考 | Hidden safe | 隐藏的保险柜 | 隐藏的安全箱 |
 | GAMMA 参考 | High contrast sight | 高对比度瞄准具 | 高对比度瞄准镜 |
 | GAMMA 参考 | High durability alloy barrel | 高耐久合金枪管 | 超耐用硬合金枪管 |
 | GAMMA 参考 | High durability alloy receiver | 高耐久合金机匣 | 高耐久合金枪机 |
-| GAMMA 参考 | Hireling | 罗斯科肯 | 小儿麻痹 |
-| GAMMA 参考 | Hoary | 乌霰克懦夫 | 苍老 |
 | GAMMA 参考 | Hold then release | 按住后松开 | 按住然后松开 |
-| GAMMA 参考 | Hood | 特热巴夫 | 面罩 |
-| GAMMA 参考 | Horse | 索博列夫斯基 | 骏马 |
-| GAMMA 参考 | How much? | 多少？ | 多少钱? |
 | GAMMA 参考 | Hrrrr! | 吼啊啊！ | 哈啊啊啊啊! |
 | GAMMA 参考 | Hunchback | 驼背人 | 驼背者 |
-| GAMMA 参考 | Hybrid | 沃洛诺夫 | 杂种 |
 | GAMMA 参考 | Hydra haemoglobin injector | 九头蛇血红蛋白注射器 | "水螅"血红蛋白注射器 |
 | GAMMA 参考 | Hydraulic stock recoil buffer | 液压枪托后坐缓冲器 | 枪托内置液压型缓冲器 |
 | GAMMA 参考 | I already paid you! | 我已经付过你了！ | 我已经付给你了! |
 | GAMMA 参考 | I have no money. | 我没钱。 | 我没钱 |
 | GAMMA 参考 | ICONS | 图标 | 图示 |
 | GAMMA 参考 | IGNORE COMBAT | 别管战斗 | 不要开火 |
-| GAMMA 参考 | Ice | 夜柳扎洛夫 | 艾斯 |
 | GAMMA 参考 | If you say so. | 随你怎么说吧。 | 行吧 |
 | GAMMA 参考 | Ignite ($$ACTION_USE$$) | 点燃（$$ACTION_USE$$） | 点火 ($$ACTION_USE$$) |
 | GAMMA 参考 | Ignore the dead. | 别管尸体。 | 忽略尸体 |
 | GAMMA 参考 | Igoryok | 伊戈廖克 | 伊戈利亚 |
 | GAMMA 参考 | Ilya | 伊利亚 | 伊尔亚 |
-| GAMMA 参考 | Ilyuha | 伊柳哈 | 伊尔尤哈 |
 | GAMMA 参考 | Ilyukha | 伊柳哈 | 伊尤哈卡 |
-| GAMMA 参考 | Immortal | 佩琴金 | 不朽者 |
-| GAMMA 参考 | Important | 罗哥夫 | 权威 |
 | GAMMA 参考 | Important character | 重要人物 | 重要的角色 |
 | GAMMA 参考 | Important objects | 重要目标 | 重要对象 |
 | GAMMA 参考 | Impregnated bodysuit fabric | 浸渍连体服织物 | 全包紧身衣面料 |
@@ -670,7 +480,6 @@
 | GAMMA 参考 | Increased magazine capacity | 弹匣容量增加 | 增加弹匣容量 |
 | GAMMA 参考 | Increased rest size | 增大肩托尺寸 | 增大扳机尺寸 |
 | GAMMA 参考 | Increased trigger bolt head | 加大型扳机螺栓头 | 增加扳机枪栓头 |
-| GAMMA 参考 | Indian | 拉兹瓦也夫 | 印度人 |
 | GAMMA 参考 | Installation of ceramic plates | 安装陶瓷板 | 安装陶瓷防弹板 |
 | GAMMA 参考 | Instructions | 使用说明 | 操作指南 |
 | GAMMA 参考 | Integrated barrel lifting compensator | 内置枪管上跳补偿器 | 整合式枪管上跳抵消器 |
@@ -679,9 +488,6 @@
 | GAMMA 参考 | Internal thermal regulation system | 内部温度调节系统 | 内部热量调节系统 |
 | GAMMA 参考 | Invert mouse | 反转鼠标 | 鼠标操控反转 |
 | GAMMA 参考 | Invincible | 不可战胜 | 无敌 |
-| GAMMA 参考 | Iron | 托班诺夫 | 钢铁 |
-| GAMMA 参考 | Ironstone | 威可罗斯海姆 | 铁石心肠 |
-| GAMMA 参考 | Isotope | 塔恩科夫 | 同位素 |
 | GAMMA 参考 | Item animations | 物品使用动画 | 物品动画 |
 | GAMMA 参考 | Item lost: | 失去物品： | 失去物品: |
 | GAMMA 参考 | Item received: | 获得物品： | 获得物品: |
@@ -690,23 +496,18 @@
 | GAMMA 参考 | Ivan Trodnik | 伊万·特罗德尼克 | 伊万·托德尼克 |
 | GAMMA 参考 | Ivchenko | 伊夫琴科 | 伊夫申科 |
 | GAMMA 参考 | Izhenko | 伊任科 | 伊森科 |
-| GAMMA 参考 | Jammy | 雷日科夫 | 有料 |
 | GAMMA 参考 | January | 一月 | 1月 |
-| GAMMA 参考 | Judge | 谢利瓦诺夫 | 法官 |
 | GAMMA 参考 | July | 七月 | 7月 |
 | GAMMA 参考 | Jumper | 跳线 | 弹跳者 |
 | GAMMA 参考 | KBO Jubilee | 朱比利KBO | 禧年服务中心 |
 | GAMMA 参考 | Kabanov | 野猪 | 卡巴诺夫 |
-| GAMMA 参考 | Kagor | 沃洛维茨 | 凯格尔 |
 | GAMMA 参考 | Kandybabko | 坎德巴布科 | 坎迪巴克 |
 | GAMMA 参考 | Kapuka | 卡普卡 | 卡库卡 |
 | GAMMA 参考 | Kapustyanko | 卡普斯坚科 | 卡普斯迪亚科 |
-| GAMMA 参考 | Karma | 塔他瑞采夫 | 报应 |
 | GAMMA 参考 | Kastet | 指虎 | 铜指环 |
 | GAMMA 参考 | Katz | 卡茨 | 卡兹 |
 | GAMMA 参考 | Keep on the lookout. | 继续盯着点。 | 密切注意四周 |
 | GAMMA 参考 | Keep your eyes open. | 眼睛放亮点。 | 把眼睛放亮点 |
-| GAMMA 参考 | Key | 陶舍夫 | 弯刀 |
 | GAMMA 参考 | Khaladze | 哈拉德泽 | 卡哈拉德兹 |
 | GAMMA 参考 | Kick | 踢出 | 踢 |
 | GAMMA 参考 | Kill this asshole! | 干掉这个混蛋！ | 杀了这个混蛋! |
@@ -719,7 +520,6 @@
 | GAMMA 参考 | Kolyan | 科良 | 乔瑟夫 |
 | GAMMA 参考 | Kondratenko | 孔德拉坚科 | 康德拉琴科 |
 | GAMMA 参考 | Kopachy Village (Jupiter) | 科帕奇村（木星） | 科帕奇 (尤皮特) |
-| GAMMA 参考 | Korneev | 科尔涅夫 | 科尔尼夫 |
 | GAMMA 参考 | Korneyev | 科尔涅耶夫 | 科尔尼耶夫 |
 | GAMMA 参考 | Koschei | 科谢伊 | 科斯基 |
 | GAMMA 参考 | Kostik | 科斯佳 | 科斯迪克 |
@@ -736,27 +536,21 @@
 | GAMMA 参考 | Kuznetsov | 库兹涅佐夫 | 库兹涅特索夫 |
 | GAMMA 参考 | Kuzyakin | 库贾金 | 库兹雅金 |
 | GAMMA 参考 | LOOT CORPSES | 搜尸体 | 搜刮尸体 |
-| GAMMA 参考 | Lantern | 尤德姆 | 路灯 |
 | GAMMA 参考 | Larin | 拉林 | 拉宁 |
 | GAMMA 参考 | Last save | 最近保存 | 最近存档 |
 | GAMMA 参考 | Lavrik | 拉夫里克 | 拉夫里科 |
 | GAMMA 参考 | Lavrov | 拉夫罗夫 | 拉夫诺夫 |
-| GAMMA 参考 | Law | 塔拉懦夫 | 法律 |
-| GAMMA 参考 | Lax | 泽菲罗夫 | 拉克斯 |
 | GAMMA 参考 | Lean left | 向左窥视 | 向左倾斜 |
 | GAMMA 参考 | Lean right | 向右窥视 | 向右倾斜 |
 | GAMMA 参考 | Leave me alone. | 别烦我。 | 一边去 |
 | GAMMA 参考 | Ledentsov | 廖坚佐夫 | 里登斯托夫 |
 | GAMMA 参考 | Legal | 法律 | 林格 |
 | GAMMA 参考 | Legend | 图例 | 传奇 |
-| GAMMA 参考 | Legionary | 军团的 | 军团士兵 |
-| GAMMA 参考 | Lemming | 西岩奥索夫 | 旅鼠 |
 | GAMMA 参考 | Level | 等级 | 关卡 |
 | GAMMA 参考 | Level changes: | 地图切换： | 切换地图次数: |
 | GAMMA 参考 | Level travel | 地图间移动 | 关卡旅行 |
 | GAMMA 参考 | Levels visited: | 到访地图： | 访问过的地图: |
 | GAMMA 参考 | Librarian | 图书管理员 | 莱伯利安 |
-| GAMMA 参考 | Lifeguard | 谢切诺夫 | 救生员 |
 | GAMMA 参考 | Lighter stock | 轻量枪托 | 轻型枪托 |
 | GAMMA 参考 | Limpid | 利普德 | "拐子"林匹 |
 | GAMMA 参考 | Liolik | 廖利克 | 利奥里克 |
@@ -765,7 +559,6 @@
 | GAMMA 参考 | Livshits | 利夫希茨 | 里文谢茨 |
 | GAMMA 参考 | Load | 加载 | 载入 |
 | GAMMA 参考 | Load game | 加载游戏 | 载入游戏 |
-| GAMMA 参考 | Loader | 普丁 | 装载机 |
 | GAMMA 参考 | Loading | 载入中 | 载入 |
 | GAMMA 参考 | Loading AI objects | 加载AI对象 | 加载 AI 对象 |
 | GAMMA 参考 | Loading CFORM | 加载对象表单 | 加载 CFORM |
@@ -782,7 +575,6 @@
 | GAMMA 参考 | Location: | 地点： | 位置: |
 | GAMMA 参考 | Lock | 锁 | 洛克 |
 | GAMMA 参考 | Locked Case | 上锁的箱子 | 锁住的箱子 |
-| GAMMA 参考 | Locksmith | 萨亚特克莫特夫 | 锁匠 |
 | GAMMA 参考 | Lodging House (Rostok) | 旅社（罗斯托克） | 宿舍 (罗斯托克) |
 | GAMMA 参考 | Long barrel section | 加长枪管段 | 更换为长枪管 |
 | GAMMA 参考 | Long gas piston movement | 长行程导气活塞 | 长行程气动活塞装置 |
@@ -791,14 +583,9 @@
 | GAMMA 参考 | Longer barrel sections | 加长枪管段 | 加长型枪管 |
 | GAMMA 参考 | Longitudinal gas venting canals | 纵向排气孔道 | 纵向导气管 |
 | GAMMA 参考 | Looting | 搜刮 | 拾取 |
-| GAMMA 参考 | Lord | 罗泽科夫 | 君王 |
-| GAMMA 参考 | Loser | 渣宾 | 失败者 |
 | GAMMA 参考 | Low impulse firing mechanism | 低冲量击发机构 | 低速缓冲撞针 |
-| GAMMA 参考 | Loyal | 萨帕勒耶夫 | 忠诚 |
-| GAMMA 参考 | Luckster | 罗亚特瑟夫 | 狗屎运 |
 | GAMMA 参考 | Lurker | 潜伏者 | 夜魔 |
 | GAMMA 参考 | Lymarenko | 雷马连科 | 利马尔伦科 |
-| GAMMA 参考 | Lyoha | 廖哈 | 里昂哈 |
 | GAMMA 参考 | Lyonya | 廖尼亚 | 里昂亚 |
 | GAMMA 参考 | Lyoshka | 廖什卡 | 里昂斯卡 |
 | GAMMA 参考 | Lyova | 廖瓦 | 里奥瓦 |
@@ -807,11 +594,7 @@
 | GAMMA 参考 | M4A1 (custom) | M4A1（定制型） | M4A1卡宾枪(定制版) |
 | GAMMA 参考 | MP5A3 (custom) | MP5A3（定制型） | MP5A3冲锋枪(定制版) |
 | GAMMA 参考 | MRE | MRE 单兵口粮 | MRE单兵野战军粮 |
-| GAMMA 参考 | Machine | 特卡琴科 | 王牌 |
-| GAMMA 参考 | Madera | 由美林 | 马德拉 |
 | GAMMA 参考 | Magazine capacity increase | 弹匣容量增加 | 增加弹匣载弹量 |
-| GAMMA 参考 | Maggots | 乌戈利特斯基 | 蛆虫 |
-| GAMMA 参考 | Magnate | 鲁巴舍肯 | 富豪 |
 | GAMMA 参考 | Magnesium plate inserts | 镁板内衬 | 镁板嵌件 |
 | GAMMA 参考 | Makarenko | 马卡连科 | 马卡伦科 |
 | GAMMA 参考 | Make a wish ($$ACTION_USE$$) | 许愿（$$ACTION_USE$$） | 许愿 ($$ACTION_USE$$) |
@@ -819,12 +602,8 @@
 | GAMMA 参考 | Makeshift Barracks (Rostok) | 临时营房（罗斯托克） | 临时兵营 (罗斯托克) |
 | GAMMA 参考 | Maltsev | 马尔采夫 | 麦尔特瑟夫 |
 | GAMMA 参考 | Mamayev | 马马耶夫 | 马玛耶夫 |
-| GAMMA 参考 | Mammoth | 索洛明 | 长毛象 |
 | GAMMA 参考 | March | 三月 | 3月 |
 | GAMMA 参考 | Marijuana | 大麻 | 一包大麻 |
-| GAMMA 参考 | Marmot | 斯塔尔采夫 | 旱獭 |
-| GAMMA 参考 | Martian | 罗德因 | 火星人 |
-| GAMMA 参考 | Mason | 罗德科夫 | 石匠 |
 | GAMMA 参考 | Matvey | 马特维 | 麦特维 |
 | GAMMA 参考 | Max | 马克斯 | 麦克斯 |
 | GAMMA 参考 | May | 五月 | 5月 |
@@ -835,22 +614,16 @@
 | GAMMA 参考 | Message | 消息 | 信息 |
 | GAMMA 参考 | Message history | 历史 | 历史消息 |
 | GAMMA 参考 | Messages | 消息 | 消息记录 |
-| GAMMA 参考 | Microbe | 索洛维约夫 | 微生物 |
 | GAMMA 参考 | Mikha | 米哈 | 米卡 |
 | GAMMA 参考 | Mikhal | 米哈 | 米卡尔 |
 | GAMMA 参考 | Milchenko | 米尔琴科 | 米尔申科 |
 | GAMMA 参考 | Military Base (Army Warehouses) | 军事基地（军方仓库） | 军事仓库 (军事仓库) |
 | GAMMA 参考 | Military documents | 军事文件 | 军方文件 |
-| GAMMA 参考 | Milkman | 卢萨科夫 | 送奶工 |
-| GAMMA 参考 | Mill | 米尔 | 磨坊 |
 | GAMMA 参考 | Mine | 矿井 | 矿洞 |
-| GAMMA 参考 | Minepicker | 萨维亚提莫夫 | 矿工 |
 | GAMMA 参考 | Miner | 矿工 | 工兵 |
 | GAMMA 参考 | Minimal | 最小 | 陌路 |
-| GAMMA 参考 | Minor | 小个子 | 初识 |
 | GAMMA 参考 | Mironov | 米罗诺夫 | 米洛诺夫 |
 | GAMMA 参考 | Mironyuk | 米罗纽克 | 米伦雅克 |
-| GAMMA 参考 | Miser | 吝啬鬼 | 小气鬼 |
 | GAMMA 参考 | Mishka | 米什卡 | 米斯卡 |
 | GAMMA 参考 | Mission cancelled: | 任务取消： | 任务取消: |
 | GAMMA 参考 | Mission complete: | 任务完成： | 任务完成: |
@@ -859,23 +632,17 @@
 | GAMMA 参考 | Mitya | 米佳 | 米特亚 |
 | GAMMA 参考 | Mityay | 米佳 | 米特雅 |
 | GAMMA 参考 | Mobile counter-weight | 可移动配重 | 滑动后座缓冲器 |
-| GAMMA 参考 | Moderator | 鲁诺夫 | 版主 |
 | GAMMA 参考 | Modular receiver | 模块化机匣 | 模块化枪机 |
-| GAMMA 参考 | Mohawk | 列米佐夫 | 莫西干头 |
 | GAMMA 参考 | Money | 金钱 | 钱 |
 | GAMMA 参考 | Money lost: | 失去金钱： | 失去金钱: |
 | GAMMA 参考 | Money received: | 获得金钱： | 获得金钱: |
 | GAMMA 参考 | Monolith forces | 黑石武装力量 | 黑石部队, |
 | GAMMA 参考 | Monolith troops | 黑石部队 | 几个黑石军人, |
 | GAMMA 参考 | Moonlight | “月光” | 月光石 |
-| GAMMA 参考 | Moped | 塔巴瑞纳苦洛夫 | 小绵羊 |
 | GAMMA 参考 | Morer | 莫雷尔 | 莫尔 |
 | GAMMA 参考 | Morozov | 莫罗佐夫 | 莫洛佐夫 |
-| GAMMA 参考 | Mosquito | 索博列夫 | 蚊子 |
 | GAMMA 参考 | Most powerful mutant killed | 已击杀的最强变异体 | 杀死过的最强怪物 |
 | GAMMA 参考 | Mostovoy | 莫斯托沃伊 | 莫斯托夫伊 |
-| GAMMA 参考 | Motor | 托卡列夫 | 马达 |
-| GAMMA 参考 | Mountaineer | 沃提亚科夫 | 登山运动员 |
 | GAMMA 参考 | Move all | 全部移动 | 全部放入 |
 | GAMMA 参考 | Move down | 下移 | 向下移动 |
 | GAMMA 参考 | Move left | 左移 | 向左移动 |
@@ -885,26 +652,19 @@
 | GAMMA 参考 | Moving bolt section | 活动枪机部位 | 滑动型枪栓组件 |
 | GAMMA 参考 | Mukhamedov | 穆哈梅多夫 | 姆克哈多夫 |
 | GAMMA 参考 | Muntyan | 蒙蒂安 | 蒙迪杨 |
-| GAMMA 参考 | Muscleman | 普瑞克巴特金 | 肌肉猛男 |
-| GAMMA 参考 | Muskrat | 斯科罗博高特夫 | 麝香鼠 |
 | GAMMA 参考 | Mutants | 变异体 | 怪物 |
 | GAMMA 参考 | Mutants killed: | 击杀变异体： | 杀死的怪物: |
 | GAMMA 参考 | My pleasure. | 我很乐意. | 乐意之至. |
 | GAMMA 参考 | Myskov | 梅斯科夫 | 米斯科夫 |
 | GAMMA 参考 | Nah, no clue. | 不知道，没头绪。 | 不, 不知道 |
-| GAMMA 参考 | Narc | 索洛德茨基赫 | 缉毒特警 |
-| GAMMA 参考 | Narcissus | 扎维亚洛夫 | 水仙 |
-| GAMMA 参考 | Native | 波利万诺夫 | 土著 |
 | GAMMA 参考 | Navrotsky | 纳夫罗茨基 | 纳夫洛特斯基 |
 | GAMMA 参考 | Need help, please. | 需要支援，求你们了。 | 需要帮忙, 快 |
 | GAMMA 参考 | Nepritsky | 涅普里茨基 | 涅普里斯基 |
-| GAMMA 参考 | Nerve | 乌霸诺姆斯基 | 神经 |
 | GAMMA 参考 | Neutrals | 中立者 | 中立 |
 | GAMMA 参考 | Nevermind. | 算了。 | 没什么 |
 | GAMMA 参考 | New mission: | 新任务： | 新任务: |
 | GAMMA 参考 | Next firing mode | 切换至下一射击模式 | 下一个开火模式 |
 | GAMMA 参考 | Next weapon | 下一把武器 | 下一个武器 |
-| GAMMA 参考 | Nik | 聂 | 尼克 |
 | GAMMA 参考 | Nikanorov | 尼卡诺罗夫 | 尼卡诺洛夫 |
 | GAMMA 参考 | Nikeshin | 尼凯申 | 尼克辛 |
 | GAMMA 参考 | Nimble | 机灵鬼 | "巧手"尼博 |
@@ -913,8 +673,6 @@
 | GAMMA 参考 | No idea, buddy. Sorry. | 不知道，哥们儿。抱歉。 | 不知道, 伙计, 抱歉 |
 | GAMMA 参考 | No. Not interested. | 不。没兴趣。 | 不. 不感兴趣 |
 | GAMMA 参考 | Noah | 诺阿 | 诺亚 |
-| GAMMA 参考 | Nocturnal | 托勒卡切耶夫 | 夜行者 |
-| GAMMA 参考 | Nondescript chest | 普通的箱子 | 平庸的箱子 |
 | GAMMA 参考 | None of your business. | 不关你的事。 | 不关你的事 |
 | GAMMA 参考 | Nordiev | 诺尔季耶夫 | 诺季耶夫 |
 | GAMMA 参考 | Northern Factory (Dark Valley) | 北区工厂（黑暗山谷） | 北方工厂 (黑谷) |
@@ -923,7 +681,6 @@
 | GAMMA 参考 | Nothing useful | 没什么有用的 | 尸体血肉模糊了 |
 | GAMMA 参考 | November | 十一月 | 11月 |
 | GAMMA 参考 | Now | 当前 | 目前 |
-| GAMMA 参考 | Nozzle | 尤亚尼米 | 满口喷粪 |
 | GAMMA 参考 | OG-7V warhead | OG-7V 火箭弹 | OG-7V火箭弹 |
 | GAMMA 参考 | Oasis found | 找到绿洲 | 绿洲已发现 |
 | GAMMA 参考 | October | 十月 | 10月 |
@@ -935,14 +692,12 @@
 | GAMMA 参考 | Old backpack | 旧背包 | 老包 |
 | GAMMA 参考 | Old barge | 旧驳船 | 老旧的驳船 |
 | GAMMA 参考 | Old stash | 旧藏匿点 | 旧藏 |
-| GAMMA 参考 | Oldtimer | 普瑞菲利耶夫 | 活在过去 |
 | GAMMA 参考 | Olivius | 奥利维乌斯 | "枪子儿"奥利维斯 |
 | GAMMA 参考 | Open bolt firing systems | 开膛待击系统 | 开放式枪栓 |
 | GAMMA 参考 | Open container ($$ACTION_USE$$) | 打开容器（$$ACTION_USE$$） | 打开储物箱 ($$ACTION_USE$$) |
 | GAMMA 参考 | Open door ($$ACTION_USE$$) | 开门（$$ACTION_USE$$） | 开门 ($$ACTION_USE$$) |
 | GAMMA 参考 | Opening stream | 开启数据流 | 开启 stream |
 | GAMMA 参考 | Operation One Shot initiated | 「一枪」行动开始 | "一枪行动"开始了 |
-| GAMMA 参考 | Operator | 罗亚科夫 | 接线员 |
 | GAMMA 参考 | Opolev | 奥波列夫 | 奥普列夫 |
 | GAMMA 参考 | Optical mount | 瞄准镜导轨 | 光学瞄准镜基座 |
 | GAMMA 参考 | Optical scope mount | 光学瞄准镜支架 | 增加光学瞄准镜基座 |
@@ -950,23 +705,12 @@
 | GAMMA 参考 | Optimized compensation muzzle brake | 优化型补偿枪口制退器 | 安装更先进的枪口制退器 |
 | GAMMA 参考 | Order of Transfer | 移交令 | 转移命令 |
 | GAMMA 参考 | Outskirts | 郊区 | 普城郊区 |
-| GAMMA 参考 | PB | PB语言 | PB消音手枪(BaS) |
 | GAMMA 参考 | PDA bonus | PDA 加成 | PDA 奖励 |
 | GAMMA 参考 | PDAs delivered: | 送交 PDA： | 卖掉的PDA: |
-| GAMMA 参考 | PKM | 脉冲群调制 | PKM通用机枪 |
 | GAMMA 参考 | PM (custom) | PM（定制型） | 马卡洛夫PM手枪定制版(BaS) |
 | GAMMA 参考 | PPSh-41 | PPSH-41冲锋枪 | 波波沙冲锋枪 |
 | GAMMA 参考 | PPSh-41 (old) | PPSh-41（旧的） | 波波沙冲锋枪(旧版) |
-| GAMMA 参考 | Package for Duty | 纪律团的背包 | 纪律团的包裹 |
-| GAMMA 参考 | Paddle | 塔马尔金 | 磨刀石 |
-| GAMMA 参考 | Padishah | 罗亚科𬣳 | 国王 |
-| GAMMA 参考 | Pagan | 西亚尼特萨 | 异教徒 |
-| GAMMA 参考 | Painter | 西琳 | 画家 |
-| GAMMA 参考 | Parachute | 托勒斯特波若夫 | 降落伞 |
-| GAMMA 参考 | Paranoid | 热地耶夫 | 多疑 |
 | GAMMA 参考 | Particle distance | 粒子距离 | 粒子间距 |
-| GAMMA 参考 | Pastor | 罗亚特恩 | 牧师 |
-| GAMMA 参考 | Patron | 托勒斯特科哲夫 | 赞助人 |
 | GAMMA 参考 | Paused | 已暂停 | 暂停 |
 | GAMMA 参考 | Pavlik | 帕夫利克 | 帕夫里克 |
 | GAMMA 参考 | Pavlukha | 帕夫卢哈 | 帕夫鲁卡 |
@@ -974,30 +718,20 @@
 | GAMMA 参考 | Perforated barrel section | 开孔枪管段 | 枪管钻孔 |
 | GAMMA 参考 | Personal journal | 私人日志 | 个人日记 |
 | GAMMA 参考 | Personal storage | 个人储物箱 | 个人存储箱 |
-| GAMMA 参考 | Pert | 普利科霍德科 | 冒失鬼 |
 | GAMMA 参考 | Petkevich | 佩特克维奇 | 派特科维奇 |
 | GAMMA 参考 | Petro | 彼得罗 | 皮处 |
 | GAMMA 参考 | Petrov | 彼得罗夫 | 派特诺夫 |
 | GAMMA 参考 | Petya | 佩佳 | 皮特亚 |
 | GAMMA 参考 | Phoenix restoration system | 凤凰恢复系统 | "凤凰"复苏系统 |
-| GAMMA 参考 | Pietist | 西亚诺夫 | 虔诚者 |
-| GAMMA 参考 | Pig | 猪 | 猪头 |
-| GAMMA 参考 | Pinocchio | 乌斯惕末夫维奇 | 皮诺曹 |
 | GAMMA 参考 | Pioneer | 开拓者 | 先行者 |
 | GAMMA 参考 | Pipe | 管道 | 烟斗 |
-| GAMMA 参考 | Piranha | 斯塔里科夫 | 食人鱼 |
-| GAMMA 参考 | Pistols. | 手枪。 | 手枪 |
-| GAMMA 参考 | Piton | 斯塔罗杜博夫 | 皮顿 |
 | GAMMA 参考 | Plant explosives ($$ACTION_USE$$) | 安放炸药（$$ACTION_USE$$） | 放置炸药 ($$ACTION_USE$$) |
-| GAMMA 参考 | Plasticine | 托泊驰诺夫维池 | 橡皮泥 |
 | GAMMA 参考 | Plavni anomaly measurements | 普拉夫尼异常点测量 | "芦苇"异常区测量 |
 | GAMMA 参考 | Please help! Someone! | 快帮帮忙！谁来都行！ | 请帮帮我们! 来人啊! |
 | GAMMA 参考 | Plexiglass coating | 有机玻璃涂层 | 有机玻璃保护层 |
 | GAMMA 参考 | Plokhenko | 普洛赫恩科 | 普洛申科 |
-| GAMMA 参考 | Plowman | 里奇科夫 | 皮劳曼 |
 | GAMMA 参考 | Pneumatic stock | 气动枪托 | 充气枪托 |
 | GAMMA 参考 | Podyachev | 波佳切夫 | 波达切夫 |
-| GAMMA 参考 | Poet | 萨尔尼科夫 | 吟游诗人 |
 | GAMMA 参考 | Points | 眼镜 | 点数 |
 | GAMMA 参考 | Poltergeist | 吵闹鬼 | 骚灵 |
 | GAMMA 参考 | Poly-material components | 高分子材料部件 | 复合材料组件 |
@@ -1005,10 +739,8 @@
 | GAMMA 参考 | Polymer pistol frame | 聚合物手枪框架 | 聚合物手枪机匣 |
 | GAMMA 参考 | Polymer recoil buffer | 聚合物后坐缓冲器 | 聚合物反冲缓冲器 |
 | GAMMA 参考 | Poplavsky | 波普拉夫斯基 | 鲍普拉夫斯基 |
-| GAMMA 参考 | Porter | 普里贝洛夫 | 行李员 |
 | GAMMA 参考 | Portnykh | 波特内赫 | 波尼赫 |
 | GAMMA 参考 | Portrait by outfit | 按护甲显示头像 | 穿着关联头像 |
-| GAMMA 参考 | Postman | 萨尔科夫 | 邮递员 |
 | GAMMA 参考 | Prefetching objects | 缓存对象 | 预取对象 |
 | GAMMA 参考 | Preobrazhensky bridge | 普列奥布拉任斯基桥 | 断裂的大桥 |
 | GAMMA 参考 | Previous (F4) | 上一个（F4） | 购买上次购买果的装备 (F4) |
@@ -1027,7 +759,6 @@
 | GAMMA 参考 | Protective component sputter | 部件保护性喷镀 | 保护组件涂层 |
 | GAMMA 参考 | Protective polymer inserts | 防护聚合物内衬 | 保护性聚合物嵌件 |
 | GAMMA 参考 | Protsenko | 普罗岑科 | 普洛特森科 |
-| GAMMA 参考 | Proud | 西岩诺维奇 | 自豪 |
 | GAMMA 参考 | Pseudodog | 伪犬 | 变异犬 |
 | GAMMA 参考 | Pseudodog fang | 地狱犬的獠牙 | 变异犬的牙齿 |
 | GAMMA 参考 | Pseudodog fur | 地狱犬毛皮 | 变异犬皮 |
@@ -1047,11 +778,8 @@
 | GAMMA 参考 | Quick access slot (4) | 快捷栏（4） | 快捷栏位 (4) |
 | GAMMA 参考 | Quick bandage | 包扎 | 快速绷带 |
 | GAMMA 参考 | Quick medkit | 快速急救包 | 快速医疗包 |
-| GAMMA 参考 | Quiet | 彼得考夫 | 安静 |
-| GAMMA 参考 | Quit game | 离开游戏 | 退出游戏 |
 | GAMMA 参考 | Quit profile | 退出档案 | 退出 |
 | GAMMA 参考 | RGD-5 grenade | RGD-5手榴弹 | RGD-5进攻型手雷 |
-| GAMMA 参考 | Rabbi | 萨帕科夫 | 法师 |
 | GAMMA 参考 | Rabbit | 兔子 | 小兔 |
 | GAMMA 参考 | Radar | 雷达 | 雷达站 |
 | GAMMA 参考 | Radio music | 收音机音乐 | 广播音乐 |
@@ -1059,18 +787,11 @@
 | GAMMA 参考 | Radioprotectant | 辐射防护剂 | 辐射防护片 |
 | GAMMA 参考 | Radkevich | 拉德克维奇 | 拉德科维奇 |
 | GAMMA 参考 | Rain | 雨 | 雨天 |
-| GAMMA 参考 | Rainbow | 彩虹乐队 | 彩虹 |
 | GAMMA 参考 | Rainbow emitter documents | 彩虹发射器文件 | 彩虹发射器资料 |
-| GAMMA 参考 | Ranger | 拉斯泊泊夫 | 游骑兵 |
 | GAMMA 参考 | Rank restriction | 等级限制 | 排名限制 |
 | GAMMA 参考 | Rapid automatic release | 快速自动释放 | 快速自动击发 |
-| GAMMA 参考 | Rasta | 萨瑞伊切夫 | 拉斯塔 |
-| GAMMA 参考 | Ravioli | 沃尔瓦科夫 | 馄饨 |
-| GAMMA 参考 | Reactor | 特热蒂亚科夫维斯基 | 反应堆 |
 | GAMMA 参考 | Recipes | 配方 | 食谱 |
 | GAMMA 参考 | Recover ($$ACTION_USE$$) | 取回（$$ACTION_USE$$） | 恢复 ($$ACTION_USE$$) |
-| GAMMA 参考 | Red | 雷维亚肯 | 革命分子 |
-| GAMMA 参考 | Red-haired | 苏沃金 | 红毛小子 |
 | GAMMA 参考 | Reflection neurostimulator | 反射神经刺激器 | 反射型神经刺激仪 |
 | GAMMA 参考 | Reinforced armoured helmet body | 加固装甲头盔壳体 | 增强型护甲头盔 |
 | GAMMA 参考 | Reinforced return spring | 强化复进簧 | 加强钢复进簧 |
@@ -1088,32 +809,18 @@
 | GAMMA 参考 | Required | 需求 | 需要 |
 | GAMMA 参考 | Research Institute (Agroprom) | 研究所（农业研究所） | 农业研究所 (农业研究所) |
 | GAMMA 参考 | Respirator | 防毒面具 | 呼吸面罩 |
-| GAMMA 参考 | Result | 结果 | 成品 |
 | GAMMA 参考 | Return mechanism sleeve thickener | 复进机构套筒加厚件 | 复进结构套筒涂层 |
-| GAMMA 参考 | Reverend | 牧师 | 萨满 |
-| GAMMA 参考 | Rider | 普多夫金 | 骑士 |
 | GAMMA 参考 | Rifled barrels | 膛线枪管 | 线膛枪管 |
 | GAMMA 参考 | Rifled sniper rifle canals | 狙击步枪膛线槽 | 狙击步枪专用精密枪管 |
-| GAMMA 参考 | Righteous | 日金 | 正义使者 |
-| GAMMA 参考 | Robin | 斯马金 | 罗宾 |
-| GAMMA 参考 | Robot | 特鲁法诺夫 | 机器人 |
 | GAMMA 参考 | Rockatansky | 洛卡坦斯基 | 罗卡坦斯基 |
-| GAMMA 参考 | Rocker | 萨维恩科夫 | 罗克 |
-| GAMMA 参考 | Rocket | 特拉维肯 | 火箭 |
 | GAMMA 参考 | Rod movement synchronization | 连杆运动同步 | 同步调整杆 |
 | GAMMA 参考 | Rodnyansky | 罗德尼扬斯基 | 罗丹斯基 |
 | GAMMA 参考 | Rogoza | 罗戈扎 | 罗古扎 |
 | GAMMA 参考 | Roma | 罗马 | 洛马 |
-| GAMMA 参考 | Romantic | 皮尔尤文 | 浪漫主义者 |
-| GAMMA 参考 | Rook | 斯库拉托夫 | 赌棍 |
 | GAMMA 参考 | Rookie Village (Cordon) | 新手村（封锁线） | 菜鸟村 (封锁线) |
-| GAMMA 参考 | Root | 捷瑶斯舍 | 树根 |
 | GAMMA 参考 | Rope | 绳索 | 绳子 |
 | GAMMA 参考 | Roquefort | 罗克福尔 | 洛克福 |
 | GAMMA 参考 | Rostik | 罗斯季克 | 罗斯里克 |
-| GAMMA 参考 | Rotted log | 腐烂的原木 | 烂木 |
-| GAMMA 参考 | Round | 回合 | 圆圈 |
-| GAMMA 参考 | Roundboy | 瓦西里耶夫 | 牛仔 |
 | GAMMA 参考 | Rubberized bodysuit fabric | 橡胶化连体服织物 | 橡胶紧身衣面料 |
 | GAMMA 参考 | Runner | “鼹鼠” | 跑者 |
 | GAMMA 参考 | Russian tobacco | 俄罗斯烟草 | 俄罗斯烟叶 |
@@ -1124,34 +831,23 @@
 | GAMMA 参考 | SIG P220 (custom) | SIG P220（定制型） | SIG P220手枪(定制版) |
 | GAMMA 参考 | SPAS-12 (custom) | SPAS-12（定制型） | SPAS-12多功能霰弹枪(定制版) |
 | GAMMA 参考 | SPB - VPZ.m.IV | SPB - VPZ.m.IV 作战系统 | SPB - VPZ.m.IV战斗系统 |
-| GAMMA 参考 | SSP-99 Ecologist | SSP-99生态学家 | SSP-99 "生态学家" |
 | GAMMA 参考 | STAY FAR | 离远点 | 保持距离 |
-| GAMMA 参考 | Safe in the house | 房子里的保险柜 | 在房子里的安全箱 |
 | GAMMA 参考 | Safe locked | 保险箱已锁 | 锁住了 |
 | GAMMA 参考 | Safe release device | 安全释放装置 | 安全型击发装置 |
-| GAMMA 参考 | Safe under the tree | 树下的安全点 | 在树下的安全箱 |
-| GAMMA 参考 | Samurai | 萨夫拉索夫 | 武士 |
 | GAMMA 参考 | Sanya | 萨尼亚 | 森亚 |
 | GAMMA 参考 | Savchenko | 萨夫琴科 | 萨夫申科 |
 | GAMMA 参考 | Savchuk | 萨夫丘克 | 萨夫楚克 |
 | GAMMA 参考 | Scar | 伤疤 | 碎灵晶 |
-| GAMMA 参考 | Scholar | 西亚卡耶夫 | 学者 |
-| GAMMA 参考 | Scoop | 特鲁瑟夫 | 斯普纳 |
 | GAMMA 参考 | Scope | 瞄准镜 | "凝视者" |
 | GAMMA 参考 | Scopes | 瞄准具 | 瞄准镜 |
 | GAMMA 参考 | Screen combined plate coating | 屏蔽式复合板涂层 | 外层保护护甲组合板 |
-| GAMMA 参考 | Scythe | 捷捷列夫 | 赛恩 |
 | GAMMA 参考 | Search aircraft ($$ACTION_USE$$) | 搜查飞机（$$ACTION_USE$$） | 搜查飞行器 ($$ACTION_USE$$) |
 | GAMMA 参考 | Search body ($$ACTION_USE$$) | 搜身（$$ACTION_USE$$） | 搜索尸体 ($$ACTION_USE$$) |
 | GAMMA 参考 | Search box ($$ACTION_USE$$) | 搜查箱子（$$ACTION_USE$$） | 搜索容器 ($$ACTION_USE$$) |
 | GAMMA 参考 | Search car ($$ACTION_USE$$) | 搜查汽车（$$ACTION_USE$$） | 搜查汽车 ($$ACTION_USE$$) |
 | GAMMA 参考 | Secondary task | 次要任务 | 支线任务 |
 | GAMMA 参考 | Secondary tasks | 次要任务 | 支线任务 |
-| GAMMA 参考 | Secret stash in KAMAZ | 卡尔码的秘密藏匿点 | KAMAZ卡车的藏物点 |
-| GAMMA 参考 | Secretary | 萨亚肯 | 秘书 |
 | GAMMA 参考 | Sedykh | 灰白 | 赛迪克 |
-| GAMMA 参考 | See ya. | 回见。 | 再见. |
-| GAMMA 参考 | See you around! | 回头见! | 后会有期! |
 | GAMMA 参考 | See you later. | 回头见。 | 回头见 |
 | GAMMA 参考 | Selected | 已选择 | 所选 |
 | GAMMA 参考 | Sell | 出售 | 卖出 |
@@ -1169,15 +865,8 @@
 | GAMMA 参考 | Sevka | 谢夫卡 | 赛夫卡 |
 | GAMMA 参考 | Sewing kit | 缝纫套件 | 针线包 |
 | GAMMA 参考 | Sewn-in chainmail shirt | 内嵌式锁子甲衬衣 | 缝制锁子甲衬衫 |
-| GAMMA 参考 | Shaggy | 扎哈罗夫 | 绒毛汉子 |
 | GAMMA 参考 | Shagohod easy movement system | 沙戈霍德轻便活动系统 | "步行机"简单运动辅助系统 |
-| GAMMA 参考 | Sharp | 日维卡夫 | 沙普 |
-| GAMMA 参考 | Sharp-sighted | 沃多里耶夫 | 尖眼睛 |
-| GAMMA 参考 | Sharptoothed | 沃洛宁 | "枪子儿"奥利维斯 |
-| GAMMA 参考 | Shepherd | 西里瓦诺夫 | 谢泼德 |
-| GAMMA 参考 | Sheriff | 西特尼科夫 | 警长 |
 | GAMMA 参考 | Shilov | 希洛夫 | 谢尔洛夫 |
-| GAMMA 参考 | Shipboy | 西亚尼 | 水手 |
 | GAMMA 参考 | Shit, help! | 操，救命！ | 该死, 救命! |
 | GAMMA 参考 | Shoot. | 问吧。 | 说 |
 | GAMMA 参考 | Short movement gas piston | 短行程导气活塞 | 短行程气体活塞 |
@@ -1188,32 +877,22 @@
 | GAMMA 参考 | Show news | 显示新闻 | 显示消息 |
 | GAMMA 参考 | Show personal statistics | 显示个人统计 | 查看个人统计 |
 | GAMMA 参考 | Shrapnel wound | 破片伤 | 破片伤害 |
-| GAMMA 参考 | Shrimp | 叶世扫洛夫 | 虾 |
-| GAMMA 参考 | Shtirlits | 维特威宁 | 谢提尼斯 |
 | GAMMA 参考 | Sickle | 镰刀 | 西科尔 |
 | GAMMA 参考 | Sidorenko | 西多连科 | 西德伦科 |
 | GAMMA 参考 | Sidorov | 西多罗夫 | 西德洛夫 |
 | GAMMA 参考 | Sidorovich | 西德洛维奇 | 西多洛维奇 |
-| GAMMA 参考 | Sieve | 崔弗诺夫 | 滤网 |
-| GAMMA 参考 | Simpleton | 日林 | 傻瓜 |
-| GAMMA 参考 | Simulator | 萨亚诺夫 | 模仿者 |
 | GAMMA 参考 | Sinaev | 西纳耶夫 | 谢纳夫 |
-| GAMMA 参考 | Sinayev | 西纳耶夫 | 谢纳耶夫 |
 | GAMMA 参考 | Sinusoidal rifling of barrel | 枪管正弦膛线 | 曲线膛线 |
 | GAMMA 参考 | Sit ($$ACTION_USE$$) | 坐下（$$ACTION_USE$$） | 坐下 ($$ACTION_USE$$) |
 | GAMMA 参考 | Skadovsk | 斯卡多夫斯克 | 斯卡多夫斯克号 |
 | GAMMA 参考 | Skadovsk Shipwreck (Zaton) | 斯卡多夫斯克沉船（扎通） | 斯卡多夫斯克号 (扎顿) |
-| GAMMA 参考 | Skeleton | 乌鲁塞 | 白骨 |
 | GAMMA 参考 | Skif field support system | 斯基夫战地支援系统 | "史克夫"战斗支援系统 |
-| GAMMA 参考 | Skiff | 萨亚恩维尺 | 轻舟 |
-| GAMMA 参考 | Skinny | 普利米安尼科夫 | 瘦子 |
 | GAMMA 参考 | Sleep ($$ACTION_USE$$) | 睡觉（$$ACTION_USE$$） | 睡觉 ($$ACTION_USE$$) |
 | GAMMA 参考 | Slutsky | 斯卢茨基 | 斯拉特斯基 |
 | GAMMA 参考 | Smartass | 聪明人 | 自作聪明 |
 | GAMMA 参考 | Smelov | 斯梅洛夫 | 斯迈尔洛夫 |
 | GAMMA 参考 | Smoked salmon | 熏鲑鱼 | 烟熏三文鱼 |
 | GAMMA 参考 | Smoked sausage | 熏制香肠 | 熏肠 |
-| GAMMA 参考 | Smoker | 罗科索夫斯基 | 烟鬼 |
 | GAMMA 参考 | Smoliy | 斯莫利 | 斯莫里利 |
 | GAMMA 参考 | Smooth A-test objects | 平滑通道贴图对象 | Alphatest平滑处理 |
 | GAMMA 参考 | Snag | 斯纳格 | 斯耐格 |
@@ -1223,32 +902,25 @@
 | GAMMA 参考 | Snork mask | 史诺克面罩 | 史诺克的面具 |
 | GAMMA 参考 | Snowflake | 雪花 | 超导晶 |
 | GAMMA 参考 | So what happened? | 然后发生了什么? | 发生了什么事? |
-| GAMMA 参考 | So? | 所以呢？ | 所以呢? |
 | GAMMA 参考 | Soft release | 柔和击发 | 软击发 |
 | GAMMA 参考 | Soft water | 柔化水面 | 水面柔光 |
-| GAMMA 参考 | Softy | 斯塔特尼克 | 懦夫 |
 | GAMMA 参考 | Soldier | 军队 | 士兵 |
 | GAMMA 参考 | Solid bolt installation | 整体枪机安装 | 安装强化枪栓组件 |
 | GAMMA 参考 | Solid steel frame | 实心钢制框架 | 实钢机匣 |
 | GAMMA 参考 | Solid titanium components | 纯钛部件 | 可靠的钛合金部件 |
 | GAMMA 参考 | Someone, help! | 来人，救命！ | 有人吗, 救命啊! |
-| GAMMA 参考 | Sorcerer | 罗申科 | 巫师 |
 | GAMMA 参考 | Sorokin | 索罗金 | 索洛金 |
 | GAMMA 参考 | Soul | “灵魂” | 灵质体 |
 | GAMMA 参考 | Sound | 音频 | 声音设置 |
 | GAMMA 参考 | Sound device | 声音设备 | 音效设备 |
 | GAMMA 参考 | Sounds rough. | 听着不太妙。 | 听起来很惨 |
-| GAMMA 参考 | Spaghetti | 由美杨恩可 | 意大利面 |
 | GAMMA 参考 | Speak ($$ACTION_USE$$) | 交谈（$$ACTION_USE$$） | 交谈 ($$ACTION_USE$$) |
 | GAMMA 参考 | Spetsnaz | 特种部队 | 特种部队, |
-| GAMMA 参考 | Spinner | 列兹尼科夫 | 纺纱工人 |
 | GAMMA 参考 | Spirin | 斯皮林 | 斯比林 |
 | GAMMA 参考 | Spore | 孢子 | "孢子"斯波 |
 | GAMMA 参考 | Spotty | 麻脸 | 斯巴迪 |
 | GAMMA 参考 | Springless release | 无弹簧释放 | 拿掉弹簧 |
 | GAMMA 参考 | Sprint | 奔跑 | 冲刺 |
-| GAMMA 参考 | Squeegee | 刮刀 | 抽水机 |
-| GAMMA 参考 | Squint-eyed | 约日因 | 眯眯眼 |
 | GAMMA 参考 | Stalkers killed: | 击杀潜行者： | 杀死潜行者: |
 | GAMMA 参考 | Stalkers, help us! | 潜行者们，帮帮我们！ | 潜行者, 帮帮我们! |
 | GAMMA 参考 | Start patrolling. | 开始巡逻。 | 开始巡逻 |
@@ -1267,11 +939,9 @@
 | GAMMA 参考 | Stealth (enable) | 潜行（开启） | 潜行 (启用) |
 | GAMMA 参考 | Steep parallax | 陡峭视差 | 视差贴图 |
 | GAMMA 参考 | Steklov | 斯捷克洛夫 | 斯特克罗夫 |
-| GAMMA 参考 | Stepa | 斯泰帕 | 斯特帕 |
 | GAMMA 参考 | Stepan | 斯捷潘 | 斯特潘 |
 | GAMMA 参考 | Stepanenko | 斯捷潘年科 | 斯特潘科 |
 | GAMMA 参考 | Stepukha | 斯捷普哈 | 斯特普克哈 |
-| GAMMA 参考 | Stern | 普罗维克 | 无情者 |
 | GAMMA 参考 | Steyr AUG A1 (custom) | Steyr AUG A1（定制型） | 斯太尔AUG-A1突击步枪(定制版) |
 | GAMMA 参考 | Steyr AUG A3 | 斯泰尔AUG A3 | 斯太尔AUG-A3突击步枪 |
 | GAMMA 参考 | Stingray 1 examined | 鳐鱼 1 号已勘察 | 鳐鱼 1号已检查 |
@@ -1279,20 +949,16 @@
 | GAMMA 参考 | Stingray 3 examined | 鳐鱼 3 号已勘察 | 鳐鱼 3号已检查 |
 | GAMMA 参考 | Stingray 4 examined | 鳐鱼 4 号已勘察 | 鳐鱼 4号已检查 |
 | GAMMA 参考 | Stingray 5 examined | 鳐鱼 5 号已勘察 | 鳐鱼 5号已检查 |
-| GAMMA 参考 | Stone | 塔拉索夫 | 石头 |
-| GAMMA 参考 | Stooped | 佩斯多夫 | 臣服者 |
 | GAMMA 参考 | Stop patrolling. | 停止巡逻。 | 停止巡逻 |
 | GAMMA 参考 | Strafe left | 向左移动 | 左平移 |
 | GAMMA 参考 | Strafe right | 向右移动 | 右平移 |
 | GAMMA 参考 | Stranger | 流浪者 | 怪胎 |
 | GAMMA 参考 | Strelok | 史特列洛克 | 史特洛克 |
 | GAMMA 参考 | Strider joins the squad | 斯特莱德加入小队 | 神行客加入小队 |
-| GAMMA 参考 | Student | 谢利德夫 | 学生 |
 | GAMMA 参考 | Styopka | 斯乔普卡 | 斯泰亚卡 |
 | GAMMA 参考 | Sun biostimulator | 太阳生物刺激器 | "太阳神"生物刺激仪 |
 | GAMMA 参考 | Sun rays mode | 阳光射线模式 | 太阳光线模式 |
 | GAMMA 参考 | Sun shadow | 太阳阴影 | 阳光阴影 |
-| GAMMA 参考 | Supplies in the bunker | 碉堡里的补给 | 碉堡中的补给品 |
 | GAMMA 参考 | Survival mode | 生存模式 | 尸潮模式 |
 | GAMMA 参考 | Sykula | 瑟库拉 | 斯库拉 |
 | GAMMA 参考 | Symbols | 符号 | 图例 |
@@ -1304,14 +970,10 @@
 | GAMMA 参考 | Take plant ($$ACTION_USE$$) | 采集植物（$$ACTION_USE$$） | 拿起植物 ($$ACTION_USE$$) |
 | GAMMA 参考 | Take scanner ($$ACTION_USE$$) | 取下扫描仪（$$ACTION_USE$$） | 拿起扫描仪 ($$ACTION_USE$$) |
 | GAMMA 参考 | Tambourine | 布本 | 手鼓 |
-| GAMMA 参考 | Tar | 态尔 | 柏油 |
-| GAMMA 参考 | Tarantula | 斯杰潘诺夫 | 狼蛛 |
-| GAMMA 参考 | Target | 特卡切夫 | 目标 |
 | GAMMA 参考 | Tarnavsky | 塔尔纳夫斯基 | 塔纳夫斯基 |
 | GAMMA 参考 | Tasks completed: | 完成任务： | 任务完成: |
 | GAMMA 参考 | Tatarchuk | 塔塔尔丘克 | 塔塔尔楚克 |
 | GAMMA 参考 | Team chat | 团队聊天 | 队伍交谈 |
-| GAMMA 参考 | Telegraphist | 萨帕折尼科夫 | 电报师 |
 | GAMMA 参考 | Teleport | 传送门 | 虫洞 |
 | GAMMA 参考 | Tell me about anomalies. | 告诉我有关变异点的信息. | 和我聊聊异常点 |
 | GAMMA 参考 | Tell me about bloodsuckers. | 告诉我吸血怪的事. | 说说吸血怪吧 |
@@ -1320,52 +982,33 @@
 | GAMMA 参考 | Tetanus vaccine | 破伤风疫苗 | 芬太尼 |
 | GAMMA 参考 | Textolite base | 胶木板基材 | 层压胶布板 |
 | GAMMA 参考 | Texture detail | 纹理细节 | 材质细节 |
-| GAMMA 参考 | Thanks! | 谢谢！ | 谢谢! |
 | GAMMA 参考 | Thanks, I see. | 谢了，我明白了。 | 谢谢你,我明白了 |
-| GAMMA 参考 | The Zone | 特异区 | 特异区设置 |
-| GAMMA 参考 | The bandits. | 强盗 | 土匪. |
-| GAMMA 参考 | The burer. | 矮人 | 变异矮人 |
 | GAMMA 参考 | The choice is yours. | 选择在你。 | 选择权在你手上. |
 | GAMMA 参考 | The fight has started! | 比赛开始了！ | 战斗已经开始了! |
 | GAMMA 参考 | The job is done. | 任务完成. | 任务完成了 |
 | GAMMA 参考 | Thermal fibreglass protection | 隔热玻璃纤维防护 | 玻璃纤维热防护层 |
 | GAMMA 参考 | Thickening leather inserts | 加厚皮革衬垫 | 加厚皮革嵌件 |
-| GAMMA 参考 | Thoughtful | 瓦斯涅夫 | 知识分子 |
-| GAMMA 参考 | Thrush | 鸫 | 画眉 |
 | GAMMA 参考 | Thunderbird constantan face armour | 雷鸟康铜面部护甲 | 雷鸟康铜面甲 |
 | GAMMA 参考 | Tihiy | 季希 | 提希 |
 | GAMMA 参考 | Tima | 季马 | 提马 |
 | GAMMA 参考 | Timchuk | 季姆丘克 | 提姆楚克 |
 | GAMMA 参考 | Time elapsed: | 已用时间： | 生存时间: |
-| GAMMA 参考 | Timesheet | 叶细屁懦夫 | 手表 |
 | GAMMA 参考 | Timka | 季姆卡 | 提姆卡 |
-| GAMMA 参考 | Timoha | 蒂莫哈 | 提莫哈 |
 | GAMMA 参考 | Timokha | 季莫哈 | 提莫克哈 |
 | GAMMA 参考 | Tip # | 提示 # | 火边闲谈 # |
 | GAMMA 参考 | Titanium frame | 钛框架 | 钛合金机匣 |
 | GAMMA 参考 | Titanium return mechanism rods | 钛制复进机构导杆 | 钛合金击针装置 |
-| GAMMA 参考 | Tobacco | 叶细卡懦夫 | 烟草 |
 | GAMMA 参考 | Toggle HUD | 切换 HUD | 开关HUD |
-| GAMMA 参考 | Toha | 土波 | 托哈 |
 | GAMMA 参考 | Tokha | 托哈 | 托克哈 |
 | GAMMA 参考 | Tolik | 托利克 | 托里克 |
 | GAMMA 参考 | Tolyan | 托良 | 托尔严 |
 | GAMMA 参考 | Tourist backpack | 旅游背包 | 旅行包 |
-| GAMMA 参考 | Trailblazer | 萨亚恩斯基 | 尖兵 |
-| GAMMA 参考 | Trap | 塔诺夫维斯基 | 圈套 |
 | GAMMA 参考 | Trapper | 猎兽人 | 屠兽者 |
-| GAMMA 参考 | Trasher | 索钦斯基 | 分离者 |
-| GAMMA 参考 | Traveler | 普希尔尼可尼考夫 | 旅行者 |
 | GAMMA 参考 | Treatment of the barrel | 枪管处理 | 枪管内处理 |
-| GAMMA 参考 | Trick | 叶若夫 | 捣蛋鬼 |
-| GAMMA 参考 | Trigger | 特米莫史肯 | 扳机 |
-| GAMMA 参考 | Truculent | 派金 | 毒舌 |
 | GAMMA 参考 | True | 真 | 是 |
 | GAMMA 参考 | Tukarev | 图卡列夫 | 托卡列夫 |
-| GAMMA 参考 | Tuner | 鲁斯纳克 | 调音师 |
 | GAMMA 参考 | Tunnel Entrance (Jupiter) | 隧道入口（木星） | 隧道入口 (尤皮特) |
 | GAMMA 参考 | Tunnel Refuge (Agr. Underground) | 隧道避难所（农业研究所地下） | 地下设施 (农研所) |
-| GAMMA 参考 | Turkey | 斯耐特金 | 土耳其人 |
 | GAMMA 参考 | Turn valve ($$ACTION_USE$$) | 转动阀门（$$ACTION_USE$$） | 打开阀门 ($$ACTION_USE$$) |
 | GAMMA 参考 | Tushkano attacked us | 跳鼠袭击了我们 | 变异鼠在咬我们 |
 | GAMMA 参考 | Tyomka | 焦姆卡 | 汤姆卡 |
@@ -1373,7 +1016,6 @@
 | GAMMA 参考 | Tyran | 暴君 | 泰兰 |
 | GAMMA 参考 | Uncalibrated psy-helmet | 未调谐灵能头盔 | 未校准的抗灵头盔 |
 | GAMMA 参考 | Under the cross | 十字架下 | 藏在十字架下 |
-| GAMMA 参考 | Under the dipper | 在迪普之下 | 北斗之下 |
 | GAMMA 参考 | Under-barrel grenade launcher | 下挂式榴弹发射器 | 切换当前武器附件(榴弹/瞄具) |
 | GAMMA 参考 | Underbarrel grenade launcher mount | 安装枪挂式榴弹发射器 | 榴弹发射器基座 |
 | GAMMA 参考 | Unidentified weapon | 来源不明的武器 | 不明武器(BaS) |
@@ -1387,10 +1029,6 @@
 | GAMMA 参考 | Use keys ($$ACTION_USE$$) | 使用钥匙（$$ACTION_USE$$） | 使用钥匙 ($$ACTION_USE$$) |
 | GAMMA 参考 | Use of gas energy | 利用气体能量 | 气动制退器 |
 | GAMMA 参考 | Uuurrh... | 呃啊…… | 呜呜呜呜喔啊 |
-| GAMMA 参考 | VOG-25 | 伏格-25 | VOG-25榴弹 |
-| GAMMA 参考 | VOG-25 grenade | VOG-25手榴弹 | VOG-25榴弹 |
-| GAMMA 参考 | VSS Vintorez | 文托雷斯 | VSS"尖刀"微声狙击步枪 |
-| GAMMA 参考 | Vacuum | 苏普鲁诺夫 | 厨子 |
 | GAMMA 参考 | Vadik | 瓦季克 | 瓦迪克 |
 | GAMMA 参考 | Vadim | 瓦季姆 | 瓦迪姆 |
 | GAMMA 参考 | Valentinov | 瓦连京诺夫 | 瓦伦汀诺夫 |
@@ -1398,38 +1036,28 @@
 | GAMMA 参考 | Valet | 瓦列特 | 沃莱特 |
 | GAMMA 参考 | Validating CD Key | 验证密钥 | 验证CD-Key |
 | GAMMA 参考 | Valik | 瓦利克 | 瓦里克 |
-| GAMMA 参考 | Vandal | 普列扎德尼科夫 | 破坏者 |
 | GAMMA 参考 | Vanya | 万尼亚 | 万亚 |
 | GAMMA 参考 | Varyag field support system | 瓦良格战地支援系统 | "瓦良格"战斗支援系统 |
-| GAMMA 参考 | Vasek | 瓦谢克 | 瓦赛克 |
 | GAMMA 参考 | Vasiliev | 瓦西里耶夫 | 瓦斯列夫 |
 | GAMMA 参考 | Vasya | 瓦夏 | 瓦斯亚 |
 | GAMMA 参考 | Vasyan | 瓦夏恩 | 瓦斯言 |
-| GAMMA 参考 | Vehicle station | 汽车站 | 车站 |
 | GAMMA 参考 | Veles detector | "维尔斯"探测器 | 冥神探测器 |
 | GAMMA 参考 | Veniamin | 韦尼亚明 | 文尼明 |
-| GAMMA 参考 | Ventilator | 苏尔宁 | 通风机 |
 | GAMMA 参考 | Venya | 韦尼亚 | 文亚 |
 | GAMMA 参考 | Video | 视频 | 图像 |
-| GAMMA 参考 | Viking | 普洛柴诺夫 | 维京人 |
 | GAMMA 参考 | Vinca | 止血剂 | 长春花片 |
-| GAMMA 参考 | Visitor | 普里瓦洛夫 | 拜访者 |
 | GAMMA 参考 | Vitalik | 维塔利克 | 维托里克 |
 | GAMMA 参考 | Vitaly | 维塔利 | 维特里 |
 | GAMMA 参考 | Vitya | 维佳 | 维特亚 |
-| GAMMA 参考 | Vityuha | 维丘哈 | 维提哈 |
 | GAMMA 参考 | Vlad | 弗拉德 | 沃拉德 |
 | GAMMA 参考 | Voice messages (1) | 语音消息（1） | 语音信息 (1) |
 | GAMMA 参考 | Voice messages (2) | 语音消息（2） | 语音信息 (2) |
 | GAMMA 参考 | Volanchuk | 沃兰丘克 | 沃兰楚克 |
-| GAMMA 参考 | Voland | 乌斯提曜桑提 | 沃兰德 |
 | GAMMA 参考 | Volodar | 沃洛达尔 | 沃洛达 |
 | GAMMA 参考 | Voloshin | 沃洛申 | 沃洛什 |
-| GAMMA 参考 | Volumetric | 体积（晴天） | 体积 |
 | GAMMA 参考 | Volumetric smoke | 体积烟雾 | 体积烟 |
 | GAMMA 参考 | Vorontsov | 沃龙佐夫 | 沃龙索夫 |
 | GAMMA 参考 | Vovka | 沃夫 | 沃夫卡 |
-| GAMMA 参考 | Vulture | 斯拉夫斯基 | 秃鹫 |
 | GAMMA 参考 | Vyushinsky | 维尤申斯基 | 维申斯基 |
 | GAMMA 参考 | WAIT HERE | 在这儿等着 | 等一等 |
 | GAMMA 参考 | Walk/Low crouch | 行走/低姿蹲伏 | 走路/蹲下 |
@@ -1448,45 +1076,29 @@
 | GAMMA 参考 | Weight carried | 负重 | 负重提升 |
 | GAMMA 参考 | Weight distribution vest | 重量分布背心 | 重量分配背心 |
 | GAMMA 参考 | Weight: | 重量： | 总重量: |
-| GAMMA 参考 | Well, hello! | 你好！ | 哦, 看见你真他妈的好啊! |
 | GAMMA 参考 | Wgt. | 重量. | 负重 |
 | GAMMA 参考 | What are the rules? | 有什么规矩？ | 这里有啥规矩? |
-| GAMMA 参考 | What did you say? | 你刚才说什么？ | 你说什么? |
 | GAMMA 参考 | What do you need? | 你需要什么？ | 你需要什么? |
 | GAMMA 参考 | What is this establishment? | 这地方是干什么的？ | 这是什么地方? |
-| GAMMA 参考 | What next? | 下一个是什么？ | 接下来会怎么样? |
-| GAMMA 参考 | What the hell? | 搞什么鬼？ | 你说啥? |
 | GAMMA 参考 | What? | 什么？ | 啥? |
 | GAMMA 参考 | Whatever. | 随便吧。 | 随便吧 |
 | GAMMA 参考 | Where are you from? | 你是哪儿的人？ | 你从哪来的? |
-| GAMMA 参考 | Whiner | 日丹诺夫 | 牢骚者 |
-| GAMMA 参考 | Whip | 特勒赛恩 | 鞭子 |
-| GAMMA 参考 | Whirlpool | 椰卡懦夫 | 惠尔普 |
-| GAMMA 参考 | Whist | 沃罗比约夫 | 惠斯 |
-| GAMMA 参考 | White | 巴拉莱卡 | 无声 |
-| GAMMA 参考 | Whiz | 特艾克提瑞尼科夫 | 怀兹 |
 | GAMMA 参考 | Wild Territory | 荒野地区 | 废弃区 |
-| GAMMA 参考 | Wind | 苏斯宁 | 风 |
 | GAMMA 参考 | Wolf | 沃夫 | "独狼"沃夫 |
 | GAMMA 参考 | Wolfhound | “沃夫” | 狼狗 |
-| GAMMA 参考 | Woodchuck | 列霍夫 | 土拨鼠 |
 | GAMMA 参考 | Wooden parts | 木质部件 | 木制零件 |
 | GAMMA 参考 | Wound healing | 治疗伤口 | 治疗出血 |
 | GAMMA 参考 | Wounded helped: | 救助伤员： | 帮助受伤的NPC: |
-| GAMMA 参考 | Wow! | 哇！ | 牛逼! |
-| GAMMA 参考 | Wrangler | 普瑞赛珍 | 牧马人 |
 | GAMMA 参考 | Xenotech | 异科技师 | "黑科技"泽诺泰克 |
 | GAMMA 参考 | Yanov | 亚诺夫 | 亚诺夫车站 |
 | GAMMA 参考 | Yanov Station (Jupiter) | 亚诺夫车站（木星） | 亚诺夫 (尤皮特) |
 | GAMMA 参考 | Yantar | 杨塔 | 扬塔 |
 | GAMMA 参考 | Yar | 雅尔 | 雅叔 |
 | GAMMA 参考 | Yeah, what is it? | 嗯，什么事？ | 嗯, 怎么了? |
-| GAMMA 参考 | Yes? | 是的? | 嗯? |
 | GAMMA 参考 | You got it. | 明白。 | 了解 |
 | GAMMA 参考 | Yuras | 尤拉西 | 尤拉斯 |
 | GAMMA 参考 | Zabiyagoda | 扎比雅戈达 | 扎比亚戈达 |
 | GAMMA 参考 | Zagorodnyuk | 扎戈罗德纽克 | 扎戈罗德努克 |
-| GAMMA 参考 | Zaharov | 扎哈诺夫 | 扎哈罗夫 |
 | GAMMA 参考 | Zaikin | 扎伊金 | 扎金 |
 | GAMMA 参考 | Zakharin | 扎哈林 | 扎克哈林 |
 | GAMMA 参考 | Zakharov | 扎哈罗夫 | 扎哈洛夫 |
@@ -1508,10 +1120,7 @@
 | GAMMA 参考 | Ёж | 刺猬 | 毕业 |
 | GAMMA 参考 | Ёлс | 叶丽诗 | "冥神"韦莱斯 |
 | GAMMA 参考 | А ведь мёртвым прикидывался! | 这家伙以为装死就能溜。 | 这家伙在装死? 把我们当傻子吗? |
-| GAMMA 参考 | А давай. | 好的，谢谢。 | 好吧 |
 | GAMMA 参考 | АКС-74У Коряги | AKS-74U 树桩 | AKS-74UNB短枪管消音突击步枪 |
-| GAMMA 参考 | АПБ | 斯特奇金全境通告 | APB消音手枪 |
-| GAMMA 参考 | АПС | 施特金APS | 斯捷奇金全自动手枪 |
 | GAMMA 参考 | Аааа | 呃啊啊！ | 呜呃呃呃! |
 | GAMMA 参考 | Абдурахманов | 阿卜杜拉赫曼诺夫 | 阿卜杜拉马诺夫 |
 | GAMMA 参考 | Абдурхманов | 阿卜杜勒赫马诺夫 | 阿卜杜拉赫玛诺夫 |
@@ -1520,7 +1129,6 @@
 | GAMMA 参考 | Абсолют | 绝对 | 杀手 |
 | GAMMA 参考 | Август | 八月 | 8月 |
 | GAMMA 参考 | Авиатор | 飞行员 | 鲤鱼 |
-| GAMMA 参考 | Авто-тайник | 车子里的藏匿物 | 自助宝藏 |
 | GAMMA 参考 | Автобусная станция | 公交车站 | 普里皮亚奇. 巴士站 |
 | GAMMA 参考 | Автоматическое питание боеприпасами | 自动供弹 | 自动装填器 |
 | GAMMA 参考 | Автосохранение... | 自动存档中…… | 自动保存, , |
@@ -1580,7 +1188,6 @@
 | GAMMA 参考 | Бессмертный | 不朽者 | 不朽 |
 | GAMMA 参考 | Бетонная ванна | 混凝土池 | 尤皮特. 干涸运河 |
 | GAMMA 参考 | Библиотекарь | 图书管理员 | 莱伯利安 |
-| GAMMA 参考 | Благодарствую. | 谢谢你。 | 谢谢. |
 | GAMMA 参考 | Блаженный | 极乐者 | 极乐 |
 | GAMMA 参考 | Блинов | 布利诺夫 | 比利诺夫 |
 | GAMMA 参考 | Блок шестерней | 齿轮组 | 挡块齿轮 |
@@ -1675,7 +1282,6 @@
 | GAMMA 参考 | Виталик | 维塔利克 | 维托里克 |
 | GAMMA 参考 | Витюха | 维秋哈 | 维提哈 |
 | GAMMA 参考 | Витя | 维佳 | 维特亚 |
-| GAMMA 参考 | Включить | 启用 | 激活 |
 | GAMMA 参考 | Включить рубильник ($$ACTION_USE$$) | 启动开关（$$ACTION_USE$$） | 打开开关 ($$ACTION_USE$$) |
 | GAMMA 参考 | Влад | 弗拉德 | 沃拉德 |
 | GAMMA 参考 | Внешний обдув ствола | 枪管外部散热片 | 枪管表面散热装置 |
@@ -1714,7 +1320,6 @@
 | GAMMA 参考 | Встроенный глушитель | 一体式消音器 | 整合式消声器 |
 | GAMMA 参考 | Вы действительно желаете отсоединиться? | 你确定要断开连接吗？ | 你确定需要断开? |
 | GAMMA 参考 | Выбирай. | 选吧。 | 选择 |
-| GAMMA 参考 | Выбор за тобой. | 你选吧，史特列洛克。 | 选择权在你手上. |
 | GAMMA 参考 | Выбрано | 已选择 | 所选 |
 | GAMMA 参考 | Выброс | 电磁风暴 | 能量风暴 |
 | GAMMA 参考 | Выбросить | 丢弃 | 扔掉东西 |
@@ -1881,7 +1486,6 @@
 | GAMMA 参考 | ЖДАТЬ ЗДЕСЬ | 在这儿等着 | 等一等 |
 | GAMMA 参考 | Жадина | 吝啬鬼 | 饭桶 |
 | GAMMA 参考 | Жалкий | 可怜的 | 巴蒂 |
-| GAMMA 参考 | Жалко парня... | 可怜的家伙.... | 哈... 咱们去看看他包里留下了几个钱 |
 | GAMMA 参考 | Жареная рука снорка | 煎史诺克的手 | 泡椒鬼爪 |
 | GAMMA 参考 | Жека | 热卡 | 泽卡 |
 | GAMMA 参考 | Железный | 铁 | 铁子 |
@@ -1901,7 +1505,6 @@
 | GAMMA 参考 | За гаражами припрятал хабарок. | 在车库后面藏了战利品。 | 把好东西藏在车库里 |
 | GAMMA 参考 | Забрать сканер ($$ACTION_USE$$) | 取下扫描仪（$$ACTION_USE$$） | 拿起扫描仪 ($$ACTION_USE$$) |
 | GAMMA 参考 | Забудь старый маршрут. | 忘掉所有路点。 | 忘记那些路径点吧 |
-| GAMMA 参考 | Забудь. | 算了吧。 | 没什么 |
 | GAMMA 参考 | Завал | 路障 | 农研所地下设施 |
 | GAMMA 参考 | Завод | 工厂 | 工业区 |
 | GAMMA 参考 | Загадать желание ($$ACTION_USE$$) | 许愿（$$ACTION_USE$$） | 许愿 ($$ACTION_USE$$) |
@@ -1915,7 +1518,6 @@
 | GAMMA 参考 | Загрузка текстур | 加载纹理 | 加载材质 |
 | GAMMA 参考 | Загрузка формы объектов | 加载对象表单 | 加载 CFORM |
 | GAMMA 参考 | Задание выполнено: | 任务完成： | 任务完成: |
-| GAMMA 参考 | Задание обновлено: | 任务更新。 | 任务更新: |
 | GAMMA 参考 | Задание отменено: | 任务取消： | 任务取消: |
 | GAMMA 参考 | Задание провалено: | 任务失败： | 任务失败: |
 | GAMMA 参考 | Заикин | 扎伊金 | 扎金 |
@@ -1930,7 +1532,6 @@
 | GAMMA 参考 | Заметки | PDA 日记 | 笔记 |
 | GAMMA 参考 | Замок | 锁 | 有料 |
 | GAMMA 参考 | Замосенчук | 扎莫先丘克 | 扎莫森楚克 |
-| GAMMA 参考 | Заначка в тачке | 遗失的物品 | 车里的隐匿处 |
 | GAMMA 参考 | Заначка под бетонными блоками | 混凝土块下的藏匿点 | 多余的钱在混凝土块下面 |
 | GAMMA 参考 | Заначка под крестом | 十字架下的私房钱 | 记号在十字架下面 |
 | GAMMA 参考 | Зануда | 无聊的人 | 宅男 |
@@ -1957,7 +1558,6 @@
 | GAMMA 参考 | Звучит неплохо, пошли. | 行，这主意不错！你带路。 | 当然, 听起来是个好主意!带路吧 |
 | GAMMA 参考 | Здорово! | 你好！ | 你好, 兄弟 |
 | GAMMA 参考 | Здорово! Ну, как оно? | 哦，你好。什么事？ | 哦, 你好, 怎么了伙计? |
-| GAMMA 参考 | Здорово, живая душа. | 你好啊。活人。 | 你好啊, 活着的灵魂 |
 | GAMMA 参考 | Здорово, сталкер! Как жизнь? | 你好，潜行者。今天怎么样？ | 干嘛? |
 | GAMMA 参考 | Здорово, сталкер! Нужно что? | 嘿，潜行者。要点什么？ | 嘿,潜行者,你想要什么? |
 | GAMMA 参考 | Здоровье | 生命值 | 健康值 |
@@ -2019,7 +1619,6 @@
 | GAMMA 参考 | Карлик | 小矮人 | 变异侏儒 |
 | GAMMA 参考 | Карма | 业力 | 手卷烟 |
 | GAMMA 参考 | Карта Зоны | 禁区地图 | 特异区地图 |
-| GAMMA 参考 | Карта в КПК | PDA地图 | 地图 |
 | GAMMA 参考 | Кастет | 指虎 | 铜指环 |
 | GAMMA 参考 | Качество рендеринга | 渲染质量 | 渲染品质 |
 | GAMMA 参考 | Качество солнца | 太阳质量 | 阳光阴影质量 |
@@ -2057,7 +1656,6 @@
 | GAMMA 参考 | Комбинированные | 组合 | 两者皆有 |
 | GAMMA 参考 | Компенсатор ударника затвора | 枪机击锤补偿器 | 枪栓制退器 |
 | GAMMA 参考 | Комплект для изготовления наркотиков | 制毒套件 | 小药包 |
-| GAMMA 参考 | Контакты в КПК | PDA联络人 | PDA中的委托公告板 |
 | GAMMA 参考 | Контролёр | 脑波怪 | 摄魂怪 |
 | GAMMA 参考 | Кончай его! | 解决掉他！ | 杀了这狗日的! |
 | GAMMA 参考 | Конь | 马 | 仔猪 |
@@ -2092,13 +1690,11 @@
 | GAMMA 参考 | Крот | 鼹鼠 | 莫尔 |
 | GAMMA 参考 | Крыса | 变异鼠 | 老鼠 |
 | GAMMA 参考 | Крысы | 变异鼠 | 老鼠 |
-| GAMMA 参考 | Кто вы? | 你们是谁？ | 你们是谁? |
 | GAMMA 参考 | Кто-нибудь хочет проверить? | 谁想去看看？ | 有人想去看个究竟吗? |
 | GAMMA 参考 | Кузнецов | 库兹涅佐夫 | 库兹涅特索夫 |
 | GAMMA 参考 | Кузнечик | 蚱蜢 | 磨石 |
 | GAMMA 参考 | Кузякин | 库贾金 | 库兹雅金 |
 | GAMMA 参考 | Купить | 购买 | 购入 |
-| GAMMA 参考 | Купить последний приобретённый набор | 购买上一个组合 | 购买上次购买果的装备 |
 | GAMMA 参考 | Курок | 扳机 | 卡西 |
 | GAMMA 参考 | Кусок мяса химеры | 奇美拉肉 | 奇美拉里脊 |
 | GAMMA 参考 | Кутузов | 库图佐夫 | 钉子 |
@@ -2108,8 +1704,6 @@
 | GAMMA 参考 | Лавров | 拉夫罗夫 | 拉夫诺夫 |
 | GAMMA 参考 | Ладно, всё равно спасибо... | 好吧。还是谢了…… | 好吧. 不管怎么说谢谢了... |
 | GAMMA 参考 | Ладно, пора идти. | 好了，该走了。 | 好了. 该走了 |
-| GAMMA 参考 | Ладно, пошли. | 好吧，我们去看看 | 好的,上校,我们走. |
-| GAMMA 参考 | Лады. | 好的。 | 好的 |
 | GAMMA 参考 | Лапа псевдогиганта | 大脚怪之手 | 变异巨兽的手 |
 | GAMMA 参考 | Ларин | 拉林 | 拉宁 |
 | GAMMA 参考 | Лежбище | 巢穴 | 农研所地下设施 |
@@ -2147,7 +1741,6 @@
 | GAMMA 参考 | Материалы о пси-установке | PSI研究文件 | 灵体波研究文件 |
 | GAMMA 参考 | Машина | 汽车 | 库图佐夫 |
 | GAMMA 参考 | Машина с тайником | 藏有藏匿点的汽车 | 车里藏着东西 |
-| GAMMA 参考 | Медикаменты | 医疗补给 | 医疗 |
 | GAMMA 参考 | Меню выбора модели | 型号选择菜单 | 模型选择菜单 |
 | GAMMA 参考 | Мертвец | 死者 | 作死货 |
 | GAMMA 参考 | Местонахождение: | 地点： | 位置: |
@@ -2192,7 +1785,6 @@
 | GAMMA 参考 | Мутировавший клюв вороны | 乌鸦喙 | 乌鸦的喙 |
 | GAMMA 参考 | Мухомор | 毒蝇伞 | 雪貂 |
 | GAMMA 参考 | Мыськов | 梅斯科夫 | 米斯科夫 |
-| GAMMA 参考 | Мягкая вода | 软水 | 水面柔光 |
 | GAMMA 参考 | Мягкие частицы | 软粒子 | 柔和粒子 |
 | GAMMA 参考 | Мягкий спуск | 柔和击发 | 软击发 |
 | GAMMA 参考 | Мясо кабана | 野猪肉 | 野猪蹄膀肉 |
@@ -2241,16 +1833,12 @@
 | GAMMA 参考 | На нас напали псевдособаки | 我们遭到了一群地狱犬的攻击 | 我们正被变异犬攻击 |
 | GAMMA 参考 | На нас напали химеры | 我们被奇美拉袭击了 | 我们被奇美拉攻击了 |
 | GAMMA 参考 | На этом пока всё. | 目前就这些安排。 | 计划有什么改变吗? |
-| GAMMA 参考 | Набор 1 (F1) | 预设值1(F1) | 预设装备 1 (F1) |
-| GAMMA 参考 | Набор 2 (F2) | 预设值2(F2) | 预设装备 2 (F2) |
-| GAMMA 参考 | Набор 3 (F3) | 预设值3(F3) | 预设装备 3 (F3) |
 | GAMMA 参考 | Набор для стрижки | 理发套件 | 美容套件 |
 | GAMMA 参考 | Набор экстренного ремонта брони | 护甲应急维修套件 | 应急护甲维修包 |
 | GAMMA 参考 | Навроцкий | 纳夫罗茨基 | 纳夫洛特斯基 |
 | GAMMA 参考 | Найден тайник | 发现藏匿处 | 发现藏物点 |
 | GAMMA 参考 | Найдено артефактов: | 找到神器： | 发现的神器数量: |
 | GAMMA 参考 | Найдено тайников: | 找到藏匿处： | 发现藏物点: |
-| GAMMA 参考 | Найти Исполнитель желаний | 发现"许愿石" | 找到许愿石 |
 | GAMMA 参考 | Намокание поверхностей | 表面浸湿 | 物体表面湿润 |
 | GAMMA 参考 | Наполеон | 拿破仑 | 缉毒特警 |
 | GAMMA 参考 | Напоролись на группу карликов | 我们遭到了小矮人袭击 | 我们被变异侏儒攻击了 |
@@ -2325,12 +1913,10 @@
 | GAMMA 参考 | Нептун | 海王星 | 密探 |
 | GAMMA 参考 | Нерв | 神经 | 工兵 |
 | GAMMA 参考 | Нет активного задания | 无进行中任务 | 没有进行中的任务 |
-| GAMMA 参考 | Нет информации | 没有可用的讯息。 | 无可用信息 |
 | GAMMA 参考 | Нет новых патчей | 无新补丁 | 当前没有可用的新补丁 |
 | GAMMA 参考 | Нет, ничего. | 不，没了。 | 没啥,别在意. |
 | GAMMA 参考 | Нет, прости. | 不。没兴趣。 | 不. 不感兴趣 |
 | GAMMA 参考 | Неудачник | 失败者 | 倒霉蛋 |
-| GAMMA 参考 | Неудачник... | 这就是一个失败者啊... | 草包 |
 | GAMMA 参考 | Неуязвимый | 无敌的 | 战神 |
 | GAMMA 参考 | Нижнее бельё | 内衣 | 潮湿的内裤 |
 | GAMMA 参考 | Никаноров | 尼卡诺罗夫 | 尼卡诺洛夫 |
@@ -2358,7 +1944,6 @@
 | GAMMA 参考 | Обработка ствола | 枪管处理 | 枪管内处理 |
 | GAMMA 参考 | Обрез | 锯断霰弹枪 | 法律 |
 | GAMMA 参考 | Обрез ТОЗ-34 | TOZ-34锯断霰弹枪 | TOZ-34猎枪(短枪管型) |
-| GAMMA 参考 | Обрезок трубы | 铅管 | 截水管 |
 | GAMMA 参考 | Обходите то место стороной. | 继续盯着点。 | 密切注意四周 |
 | GAMMA 参考 | Общий канал: | 独行者 | 独行者, |
 | GAMMA 参考 | Объёмный дым | 体积烟雾 | 体积烟 |
@@ -2380,8 +1965,6 @@
 | GAMMA 参考 | Оружие 2 | 武器2 | 武器 2 |
 | GAMMA 参考 | Оружие 3 | 武器3 | 武器 3 |
 | GAMMA 参考 | Оружие для ближнего боя. | 一把近战武器. | 短距离武器 |
-| GAMMA 参考 | Оружие из предыдущего слота | 前一个栏位的武器 | 上一个武器 |
-| GAMMA 参考 | Оружие из следующего слота | 下一个栏位的武器 | 下一个武器 |
 | GAMMA 参考 | Осведомитель | 线人 | "告密者" |
 | GAMMA 参考 | Оскар | 奥斯卡 | 土著 |
 | GAMMA 参考 | Осколочное ранение | 破片伤 | 破片伤害 |
@@ -2399,11 +1982,9 @@
 | GAMMA 参考 | Отсоединиться | 断开连接 | 断开 |
 | GAMMA 参考 | Очаг радиации | 辐射点 | 辐射场 |
 | GAMMA 参考 | Очень высоко | 超高 | 很高 |
-| GAMMA 参考 | Очистить (C) | 重设物品(C) | 清空 (C) |
 | GAMMA 参考 | Ошибка соединения: неверный хост | 连接错误：主机无效 | 连接错误: 无效的主机 |
 | GAMMA 参考 | Ошибка соединения: различные версии | 连接错误：版本不同。 | 连接错误: 不同版本. |
 | GAMMA 参考 | Ошибка соединения: сервер заполнен | 连接错误：服务器已满 | 连接错误: 服务器已满 |
-| GAMMA 参考 | ПБ | PB语言 | PB消音手枪(BaS) |
 | GAMMA 参考 | ПКМ Зулуса | 祖鲁的 PKM | 祖鲁使用的PKM机枪 |
 | GAMMA 参考 | ПМ | PM手枪 | 马卡洛夫PM手枪(BaS) |
 | GAMMA 参考 | ППШ-41 | PPSH-41冲锋枪 | 波波沙冲锋枪 |
@@ -2423,7 +2004,6 @@
 | GAMMA 参考 | Патроны 7,62x39 мм M43 | 7.62x39mm M43 弹 | 7.62x39毫米M43弹 |
 | GAMMA 参考 | Патроны 7,62x54 мм 7Н1 | 7.62x54mm 7N1 弹药 | 7.62x54毫米7N1弹 |
 | GAMMA 参考 | Патроны 7,62x54 мм 7Н14 | 7.62x54mm 7N14 弹药 | 7.62x54毫米7N14弹 |
-| GAMMA 参考 | Патроны 7,62x54 мм ПП | 7.62x54毫米口径聚丙烯子弹 | 7.62x54毫米AP弹 |
 | GAMMA 参考 | Патроны 9x19 мм Дум-дум | 9x19mm PBP 弹药 | 9x19毫米HP弹 |
 | GAMMA 参考 | Патроны 9x39 мм СП-5 | 9x39mm SP-5 弹 | 9x39毫米SP-5弹 |
 | GAMMA 参考 | Паук | 蜘蛛 | 仓鼠 |
@@ -2509,7 +2089,6 @@
 | GAMMA 参考 | Прапор | “旗帜” | 准尉 |
 | GAMMA 参考 | Прасолов | 普拉索洛夫 | 普拉索夫 |
 | GAMMA 参考 | Предыдущее оружие этого типа | 同类型前代武器 | 上一个同类型武器 |
-| GAMMA 参考 | Предыдущий (F4) | 预设值4(F4) | 购买上次购买果的装备 (F4) |
 | GAMMA 参考 | Прекрати патрулирование. | 停止巡逻。 | 停止巡逻 |
 | GAMMA 参考 | Привал | 已暂停 | 军事仓库. 村庄服务站 |
 | GAMMA 参考 | Привести в чувство ($$ACTION_USE$$) | 取回（$$ACTION_USE$$） | 恢复 ($$ACTION_USE$$) |
@@ -2517,9 +2096,7 @@
 | GAMMA 参考 | Призрак | 幽灵 | 鬼魂 |
 | GAMMA 参考 | Прикладной контейнер артефактов (пустой) | 神器应用容器（空） | 一般神器箱(空) |
 | GAMMA 参考 | Прикладной модуль артефактов (пустой) | 神器应用模块（空） | 高级神器箱(空) |
-| GAMMA 参考 | Приобретённый набор сохранён как | 将购买的组合储存为 | 装备保存为预设 |
 | GAMMA 参考 | Припять | 普里皮亚季 | 普里皮亚奇 |
-| GAMMA 参考 | Присесть | 半蹲下 | 下蹲 |
 | GAMMA 参考 | Прицел | 瞄准镜 | "凝视者" |
 | GAMMA 参考 | Прицел ACOG | ACOG瞄准镜 | ACOG瞄准镜(BaS+Van) |
 | GAMMA 参考 | Прицел ACOG 3.5x | ACOG 3.5x 瞄准镜 | ACOG 光学瞄准镜 (BaS+Van) |
@@ -2643,7 +2220,6 @@
 | GAMMA 参考 | Рязанский | 梁赞的 | 皮劳曼 |
 | GAMMA 参考 | С каким вопросом пришёл? | 你来这儿干什么？ | 你在这是做什么的? |
 | GAMMA 参考 | С чем пришёл? | 什么风把你吹来了？ | 你怎么到这来的? |
-| GAMMA 参考 | СВД | 德拉古诺夫SVD | 德拉贡诺夫狙击步枪 |
 | GAMMA 参考 | Сабченко | 萨布琴科 | 萨基托夫 |
 | GAMMA 参考 | Савченко | 萨夫琴科 | 萨夫申科 |
 | GAMMA 参考 | Савчук | 萨夫丘克 | 萨夫楚克 |
@@ -2755,7 +2331,6 @@
 | GAMMA 参考 | Станция переработки отходов (Затон) | 处理站（扎通） | 污水处理站 (扎顿) |
 | GAMMA 参考 | Старик | 老家伙 | 老汉 |
 | GAMMA 参考 | Стартовый | 默认 | 预设默认 |
-| GAMMA 参考 | Стартовый (F5) | 预设物品(F5) | 默认 (F5) |
 | GAMMA 参考 | Старый молоток | 旧锤子 | 圆头锤 |
 | GAMMA 参考 | Старый рюкзак | 旧背包 | 老包 |
 | GAMMA 参考 | Статистика | 统计 | 统计数据 |
@@ -2783,7 +2358,6 @@
 | GAMMA 参考 | Сухой паёк | MRE 单兵口粮 | MRE单兵野战军粮 |
 | GAMMA 参考 | Счетовод | 会计 | 凶恶 |
 | GAMMA 参考 | Сыкула | 瑟库拉 | 斯库拉 |
-| GAMMA 参考 | ТОЗ-34 | 锯断型TOZ-34 | TOZ-34双管猎枪 |
 | GAMMA 参考 | Табак | 烟草 | 行李员 |
 | GAMMA 参考 | Табель | 值班表 | 邮递员 |
 | GAMMA 参考 | Тайник Арни | 阿尔尼的藏匿点 | 阿尔尼的秘密藏物点 |
@@ -2861,13 +2435,11 @@
 | GAMMA 参考 | Увеличенная головка затвора | 加大型扳机螺栓头 | 增加扳机枪栓头 |
 | GAMMA 参考 | Увеличенное время движения затвора | 增大枪机行程 | 增加枪栓行程 |
 | GAMMA 参考 | Увеличенный упор | 增大肩托尺寸 | 增大扳机尺寸 |
-| GAMMA 参考 | Уверен? | 你确定？ | 你确定? |
 | GAMMA 参考 | Увидимся! | 回头见。 | 回头见 |
 | GAMMA 参考 | Увидимся. | 回头见. | 稍后再见 |
 | GAMMA 参考 | Угрюмый | 阴郁者 | 黑暗 |
 | GAMMA 参考 | Удлинение части ствола | 延长枪机框缓冲块 | 安装的加长的震动缓冲枪栓 |
 | GAMMA 参考 | Удобность | 操作性 | 操控性 |
-| GAMMA 参考 | Уже есть | 你已经有 | 已经有了 |
 | GAMMA 参考 | Узел | 节点 | 技师 |
 | GAMMA 参考 | Укороченный ствол | 缩短枪管段 | 短型枪管 |
 | GAMMA 参考 | Украинский рацион питания | 乌克兰口粮 | 乌克兰战斗军粮 |
@@ -2965,15 +2537,11 @@
 | GAMMA 参考 | Чеснок | 大蒜 | 长毛象 |
 | GAMMA 参考 | Чингачгук | 钦加奇古克 | 接线员 |
 | GAMMA 参考 | Чириков | 奇里科夫 | 基里科夫 |
-| GAMMA 参考 | Чистильщик | 清除 | 清除一片区域的怪物 |
 | GAMMA 参考 | Что вы здесь делаете? | 你在这儿是干什么的？ | 你在这里干什么? |
 | GAMMA 参考 | Что ещё? | 还有啥？ | 这又是什么? |
 | GAMMA 参考 | Что за работа? | 什么工作？ | 什么任务? |
 | GAMMA 参考 | Что нового в Зоне? | 区域里有什么新情况？ | 特异区有什么新鲜事么? |
 | GAMMA 参考 | Что со мной произошло? | 我身上发生了什么？ | 你们对我做了什么? |
-| GAMMA 参考 | Что там? | 你觉得呢？ | 怎么了? |
-| GAMMA 参考 | Что тебе нужно? | 你需要什么？ | 你想干嘛? |
-| GAMMA 参考 | Что это было?! | 这是什么？ | 那是什么?! |
 | GAMMA 参考 | Что это за место? | 这是什么地方？ | 这是什么地方? |
 | GAMMA 参考 | Что-то пасмурно... | 天色有些阴沉…… | 今天有暴风雨吗? |
 | GAMMA 参考 | Чувак | 老兄 | 凯撒 |
@@ -3037,7 +2605,6 @@
 | GAMMA 参考 | Ячейка быстрого доступа 4 | 快捷栏（4） | 快捷栏位 (4) |
 | GAMMA 参考 | Ящик в укромном месте | 隐蔽处的箱子 | 在安全的地方的箱子 |
 | GAMMA 参考 | Ящик завхоза | 总务员储物箱 | 扎弗兹的箱子 |
-| GAMMA 参考 | Ящик на блокпосте | 路障旁的箱子 | 在全副武装的军事检查站里的箱子 |
 | GAMMA 参考 | Ящик на кране | 起重机上的箱子 | 吊车里的箱 |
 | GAMMA 参考 | Ящик под домиком | 小屋下的箱子 | 小房子下面的箱子 |
 | GAMMA 参考 | Ящик с добром | 物资箱 | 有战利品的箱子 |
@@ -3071,8 +2638,6 @@
 | Gunslinger 参考 | A nightmare-proof bucket | 防噩梦的桶 | 防恶梦水桶 |
 | Gunslinger 参考 | A strange dream | 怪梦 | 一场奇怪的梦 |
 | Gunslinger 参考 | AI uses flashlights | AI手电筒使用 | 人工智能使用手电筒 |
-| Gunslinger 参考 | AK-74M | AK-74M突击步枪 | AK-74 M突击步枪 |
-| Gunslinger 参考 | AKS-74U | AKS-74U短枪管突击步枪 | AKS-74 U突击步枪 |
 | Gunslinger 参考 | Abandoned hangar | 废弃机库 | 废弃的机库。 |
 | Gunslinger 参考 | Abandoned pig farm | 废弃养猪场 | 废弃的养猪场 |
 | Gunslinger 参考 | Accuracy | 精度 | 精准 |
@@ -3127,7 +2692,6 @@
 | Gunslinger 参考 | Chat | 聊天 | 交谈 |
 | Gunslinger 参考 | Chebur | 切布尔 | 维诺格拉多夫 |
 | Gunslinger 参考 | Chernodub | 切尔诺杜布 | 契诺杜比 |
-| Gunslinger 参考 | Chest from the helicopter | 直升机上的箱子 | 直升机的箱子 |
 | Gunslinger 参考 | Chimera claw | 奇美拉之爪 | 奇美拉的爪子 |
 | Gunslinger 参考 | Chirikov | 奇里科夫 | 契立科夫 |
 | Gunslinger 参考 | Chuk | 丘克 | 查克 |
@@ -3305,7 +2869,6 @@
 | Gunslinger 参考 | No active task | 无进行中任务 | 非执行任务 |
 | Gunslinger 参考 | Note | 便条 | 笔记 |
 | Gunslinger 参考 | OPTIONS | 设置 | 选项 |
-| Gunslinger 参考 | OTs-03A SVU-A | OTs-03A SVU-A狙击步枪 | OTs-03 A安全车辆单元 |
 | Gunslinger 参考 | Objects detail | 加载距离 | 物件细节 |
 | Gunslinger 参考 | Oganesyan | 奥加涅相 | 欧根斯安 |
 | Gunslinger 参考 | Old backpack | 旧背包 | 老旧的背包 |
@@ -3496,8 +3059,6 @@
 | Gunslinger 参考 | А что с ним? | 那他呢？ | 它是怎样的？ |
 | Gunslinger 参考 | А что сделать-то надо? | 具体要做什么？ | 但我该做些什么？ |
 | Gunslinger 参考 | А? | 啊？ | 嗯？ |
-| Gunslinger 参考 | АК-74М | AK-74M突击步枪 | AK-74 M突击步枪 |
-| Gunslinger 参考 | АКС-74У | AKS-74UN短枪管突击步枪 | AKS-74 U突击步枪 |
 | Gunslinger 参考 | Абитуриент | 考生 | 珀丽史舒克 |
 | Gunslinger 参考 | Абориген | 土著 | 波利万诺夫 |
 | Gunslinger 参考 | Абсолют | 绝对 | 苏博京 |
@@ -4936,50 +4497,29 @@
 | 任务 | Телепортёр | 传送器 | 传送装置 |
 | 地点与区域 | Вертухай | 狱警 | “狱警” |
 | 地点与区域 | Шнырь | 鼹鼠 | “鼹鼠” |
-| 新闻·对话·其他 | Anything else? | 还有呢？ | 还有其它的事吗? |
 | 新闻·对话·其他 | Clear Sky | “晴空” | 晴空 |
 | 新闻·对话·其他 | Duty | “纪律团” | 纪律团 |
 | 新闻·对话·其他 | Freedom | “自由团” | 自由团 |
-| 新闻·对话·其他 | Good luck to you. | 祝你好运。 | 祝你好运. |
-| 新闻·对话·其他 | Good luck. | 祝好运 | 祝你好运. |
-| 新闻·对话·其他 | Hey. | 嘿 | 嘿. |
-| 新闻·对话·其他 | I can do that. | 我能做到。 | 很简单,我能做到. |
-| 新闻·对话·其他 | I need it. | 我需要它。 | 我需要它. |
-| 新闻·对话·其他 | Is that it? | 就那个吗？ | 是吗? |
 | 新闻·对话·其他 | Monolith | “黑石” | 黑石 |
-| 新闻·对话·其他 | Ready. | 准备好了。 | 准备好了. |
-| 新闻·对话·其他 | See ya. | 回见。 | 再见. |
-| 新闻·对话·其他 | Tell me about Duty. | 告诉我有关纪律团的事。 | 告诉我关于纪律团的事情. |
 | 新闻·对话·其他 | Testers | 测试人员 | 测试员 |
 | 新闻·对话·其他 | The bloodsucker | 吸血鬼 | 吸血怪 |
 | 新闻·对话·其他 | Unknown | 未知人员 | 未知 |
-| 新闻·对话·其他 | Wait. | 等等 | 等等. |
-| 新闻·对话·其他 | What about it? | 它是怎样的？ | 对此有什么疑问吗? |
 | 新闻·对话·其他 | Аккумулятор 100В АМ1 | 100V 电池 AM1 | 100V AM1 电池 |
 | 新闻·对话·其他 | Взрывная волна | 冲击波 | 爆炸伤 |
 | 新闻·对话·其他 | Водяной | 水鬼 | 那只水鬼 |
-| 新闻·对话·其他 | Давай дальше. | 下一场! | 看看下一件是什么. |
-| 新闻·对话·其他 | Жаль. | 多么遗憾啊。 | 太遗憾了. |
 | 新闻·对话·其他 | Завалили | 路障 | 干掉了 |
 | 新闻·对话·其他 | Замочили | 锁 | 干掉了 |
 | 新闻·对话·其他 | Зомбированный | 丧尸化人员 | 那个僵尸化的潜行者 |
 | 新闻·对话·其他 | Излом | 折裂者 | 那个长臂怪人 |
-| 新闻·对话·其他 | Как дела? | 怎么样了？ | 事情怎么样了? |
 | 新闻·对话·其他 | Карлик | 小矮人 | 那只小矮人 |
 | 新闻·对话·其他 | Контроль Монолита | 黑石控制区 | “黑石”控制区 |
 | 新闻·对话·其他 | Медведь | 灰熊 | 那头变异熊 |
-| 新闻·对话·其他 | Подожди. | 等等 | 等等. |
-| 新闻·对话·其他 | Понял, иду. | 收到，我走了。 | 好吧. |
 | 新闻·对话·其他 | Псевдособака | 伪犬 | 地狱犬 |
 | 新闻·对话·其他 | Пси-собака | 灵能犬 | 那只PSI犬 |
 | 新闻·对话·其他 | Стронглав | 壮汉 | 那个壮汉 |
 | 新闻·对话·其他 | Тушкан | 变异鼠 | 那只跳鼠 |
-| 新闻·对话·其他 | Ты в Зоне давно? | 你来特异区有多久了? | 你来特异区多久了? |
 | 新闻·对话·其他 | Убили | 已击杀 | 被杀了 |
-| 新闻·对话·其他 | Уже ухожу. | 我要离开了。 | 好吧,我就走. |
-| 新闻·对话·其他 | Что там? | 你觉得呢？ | 怎么了? |
-| 物品·武器·装备·神器 | .45 ACP rounds | .45 ACP子弹 | .45 ACP 弹 |
-| 物品·武器·装备·神器 | .45 Hydro | .45九头蛇 | .45 空尖弹 |
+| 物品·武器·装备·神器 | A trusty guitar. | 一把可靠的吉他。 | 一个可靠的吉他 |
 | 物品·武器·装备·神器 | Anabiotic | 冬眠剂 | 安纳比奥提克 |
 | 物品·武器·装备·神器 | Anomalous activity scanner | 异常活动扫描仪 | 异常活动扫描器 |
 | 物品·武器·装备·神器 | Anti-radiation drugs | 抗辐射药物 | 抗辐射药 |
@@ -4993,13 +4533,11 @@
 | 物品·武器·装备·神器 | Knife | 刀 | 匕首 |
 | 物品·武器·装备·神器 | Kolobok | 小圆球 | 海胆 |
 | 物品·武器·装备·神器 | Leather trench coat | 皮制风衣 | 皮风衣 |
-| 物品·武器·装备·神器 | Lynx | 猞猁 | 山猫 |
 | 物品·武器·装备·神器 | March | 三月 | 蝴蝶 |
 | 物品·武器·装备·神器 | Military backpack | 军方背包 | 军用背包 |
 | 物品·武器·装备·神器 | Military documents | 军事文件 | 军方文件 |
 | 物品·武器·装备·神器 | Moonlight | “月光” | 月光 |
 | 物品·武器·装备·神器 | Night Star | “夜星” | 夜星 |
-| 物品·武器·装备·神器 | Number of containers | 容器数量 | 容器数 |
 | 物品·武器·装备·神器 | PK-A sight | PK-A瞄准镜 | PK-A 瞄准镜 |
 | 物品·武器·装备·神器 | Psy-block | 精神阻断剂 | PSY抗剂 |
 | 物品·武器·装备·神器 | RGD-5 grenade | RGD-5手榴弹 | RGD-5 手雷 |
@@ -5007,19 +4545,15 @@
 | 物品·武器·装备·神器 | Rope | 绳索 | 绳子 |
 | 物品·武器·装备·神器 | Silencer PBS-4 | PBS-4消音器 | PBS-4 消音器 |
 | 物品·武器·装备·神器 | Soul | “灵魂” | 灵魂 |
-| 物品·武器·装备·神器 | Tide | 潮汐 | 静电 |
 | 物品·武器·装备·神器 | Under-barrel grenade launcher | 下挂式榴弹发射器 | 枪挂榴弹发射器 |
-| 物品·武器·装备·神器 | VOG-25 grenade | VOG-25手榴弹 | VOG-25 枪榴弹 |
 | 物品·武器·装备·神器 | Volume | 容积 | 音量 |
 | 物品·武器·装备·神器 | Wrenched | “扭曲” | 扳手 |
-| 物品·武器·装备·神器 | Аккумуляторы | 高斯枪电池 | 高斯电磁弹 |
-| 物品·武器·装备·神器 | Армейский бронекостюм | 军用防护服 | 军用防弹衣 |
-| 物品·武器·装备·神器 | ВОГ-25 | 伏格-25 | VOG-25S 充电器 |
 | 物品·武器·装备·神器 | Глаз плоти | 豚兽之眼 | 豚兽眼睛 |
 | 物品·武器·装备·神器 | Деактиватор телепорта | 传送器干扰装置 | 传送门关闭装置 |
 | 物品·武器·装备·神器 | Записка Сепатора | 分离者便条 | “分离者”便条 |
 | 物品·武器·装备·神器 | Затвор | 闩锁 | 枪机 |
 | 物品·武器·装备·神器 | Именная фляжка Петренко | 彼得连科的水壶 | 彼得连科专属水壶 |
+| 物品·武器·装备·神器 | Канистра, 10 л. | 10升油桶 | 10升油桶。 |
 | 物品·武器·装备·神器 | Кастрюля | 炖锅 | 平底锅 |
 | 物品·武器·装备·神器 | Копыто кабана | 野猪的蹄子 | 野猪蹄 |
 | 物品·武器·装备·神器 | Коричневый бандитский плащ | 棕色强盗风衣 | 棕色强盗斗篷 |
@@ -5028,23 +4562,12 @@
 | 物品·武器·装备·神器 | Недостаточно денег | 资金不足 | 钱不够 |
 | 物品·武器·装备·神器 | Неизвестная флеш-карта | 未知U盘 | 未知闪存卡 |
 | 物品·武器·装备·神器 | Нож | 刀 | 匕首 |
-| 物品·武器·装备·神器 | Облегчённая рукоятка. | 比标准型枪托更轻的轻型枪托. | 标准枪托的轻量版本。 |
 | 物品·武器·装备·神器 | Обрез | 锯断霰弹枪 | 短双管猎枪 |
 | 物品·武器·装备·神器 | Объём | 容积 | 音量 |
-| 物品·武器·装备·神器 | Патроны .45 ACP Hydroshock | .45 ACP液压冲击弹 | .45 ACP 空尖弹 |
 | 物品·武器·装备·神器 | Патроны 12х70 дробь | 12x70 鹿弹弹药 | 12x70 霰弹 |
-| 物品·武器·装备·神器 | Патроны 5,45x39 мм | 5.45x39毫米EPR子弹 | 5.45x39 mm 弹 |
-| 物品·武器·装备·神器 | Патроны 5,45x39 мм БП | 5.45x39毫米AP弹 | 5.45x39 mm AP 弹 |
-| 物品·武器·装备·神器 | Патроны 5,56x45 мм AP | 5.56x45毫米AP弹 | 5.56x45 mm AP 弹 |
-| 物品·武器·装备·神器 | Патроны 5,56х45 мм | 5.56x45毫米FMJ子弹 | 5.56x45 mm 弹 |
-| 物品·武器·装备·神器 | Патроны 7,62x54 мм ПП | 7.62x54毫米口径聚丙烯子弹 | 7.62x54 mm PP 弹 |
-| 物品·武器·装备·神器 | Патроны 9x19 мм JHP | 9x19毫米HP子弹 | 9x19 mm JHP 弹 |
-| 物品·武器·装备·神器 | Патроны 9x39 мм СП-6 | 9x39毫米SP-6弹 | 9x39 mm SP-6 弹 |
-| 物品·武器·装备·神器 | Патроны 9х19 мм FMJ | 9x19毫米FMJ子弹 | 9x19 mm FMJ 弹 |
 | 物品·武器·装备·神器 | Планшетка | 乩板 | 绘图板 |
 | 物品·武器·装备·神器 | Плащ Борова | 博罗夫的军大衣 | 野猪披风 |
 | 物品·武器·装备·神器 | Плащ психиатра | 精神科医师风衣 | 精神科医师斗篷 |
-| 物品·武器·装备·神器 | Противогаз | GP-5防毒面具 | 防毒面具 |
 | 物品·武器·装备·神器 | Противогаз M50з | M50Z防毒面具 | M50z防毒面具 |
 | 物品·武器·装备·神器 | Пружина | “弹簧” | 弹簧 |
 | 物品·武器·装备·神器 | Рация | 电台 | 对讲机 |
@@ -5059,19 +4582,15 @@
 | 物品·武器·装备·神器 | Хвост псевдособаки | 伪狗的尾巴 | 地狱犬尾巴 |
 | 物品·武器·装备·神器 | Чёрный бандитский плащ | 黑色强盗风衣 | 黑色强盗斗篷 |
 | 物品·武器·装备·神器 | Щупальца кровососа | 吸血者的触手 | 吸血怪的触须 |
-| 界面与提示 | 30 minutes | 30 分钟 | 30分钟 |
-| 界面与提示 | 30 минут | 30 分钟 | 30分钟 |
 | 界面与提示 | Accuracy | 精度 | 精准度 |
 | 界面与提示 | Action | 行动 | 动作 |
 | 界面与提示 | Advanced | 扩展 | 高级 |
-| 界面与提示 | Anisotropic filtering | 纹理滤镜 | 各向异性过滤 |
 | 界面与提示 | Anomalies | 异常现象 | 变异点 |
 | 界面与提示 | Armor | 护甲 | 防弹 |
 | 界面与提示 | Binoculars | 双筒望远镜 | 望远镜 |
 | 界面与提示 | Bleeding | 流血 | 正在流血 |
 | 界面与提示 | Change ammo type | 切换弹药类型 | 改变弹药种类 |
 | 界面与提示 | Characteristics | 性能参数 | 属性 |
-| 界面与提示 | Crosshair target distance | 准星目标距离 | 显示准星目标距离 |
 | 界面与提示 | Damage | 杀伤力 | 伤害 |
 | 界面与提示 | Decoding in progress | 解码进行中 | 正在破解 |
 | 界面与提示 | Deserted factory | 废弃工厂 | 废弃的工厂 |
@@ -5079,14 +4598,12 @@
 | 界面与提示 | Down | 向下 | 下 |
 | 界面与提示 | Duration | 作用时间 | 持续时间 |
 | 界面与提示 | Duty | “纪律团” | 纪律团 |
-| 界面与提示 | Exit to Windows | 回到视窗 | 回到Windows |
 | 界面与提示 | Experienced | 老兵 | 老手 |
 | 界面与提示 | FPS Limit | 帧率限制 | 帧数上限 |
 | 界面与提示 | Fracture | 折裂者 | 长臂怪人 |
 | 界面与提示 | Freedom | “自由团” | 自由团 |
 | 界面与提示 | Frequency 60Hz | 60赫兹刷新率 | 60Hz刷新率 |
 | 界面与提示 | Full dynamic lighting | 全动态光照 | 全动态光影效果 |
-| 界面与提示 | Game over. | 游戏结束 | 游戏结束. |
 | 界面与提示 | Garbage | 废料场 | 垃圾 |
 | 界面与提示 | Grenades | 手榴弹 | 手雷 |
 | 界面与提示 | Handling | 可靠性 | 操作性 |
@@ -5118,7 +4635,6 @@
 | 界面与提示 | Rank | 等级 | 军阶 |
 | 界面与提示 | Reputation | 声望 | 名誉 |
 | 界面与提示 | Right | 向右 | 右 |
-| 界面与提示 | Rostok factory | 罗托斯克[工厂] | 大荒野的工厂 |
 | 界面与提示 | SFX Volume | 音量 | 音效音量 |
 | 界面与提示 | Selected | 已选择 | 已选中 |
 | 界面与提示 | Sound | 音频 | 声音 |
@@ -5127,25 +4643,18 @@
 | 界面与提示 | Team play | 团队对抗 | 团队游戏 |
 | 界面与提示 | Thirst | 口渴度 | 口渴 |
 | 界面与提示 | To all | 全体 | 对所有人 |
-| 界面与提示 | To team | 对队伍 | 对团队 |
 | 界面与提示 | Unknown | 未知人员 | 未知 |
 | 界面与提示 | Up | 向上 | 上 |
 | 界面与提示 | Use | 应用 | 使用 |
-| 界面与提示 | Vision distance | 视野距离 | 可视距离 |
-| 界面与提示 | Vote failed! | 投票失败！ | 投票失败! |
-| 界面与提示 | Vote successful! | 投票成功！ | 投票成功! |
 | 界面与提示 | Weapon 1 | 武器1 | 1号武器栏 |
 | 界面与提示 | Weapon 2 | 武器2 | 2号武器栏 |
 | 界面与提示 | Weapon 3 | 武器3 | 3号武器栏 |
 | 界面与提示 | Weapon 4 | 武器4 | 4号武器栏 |
-| 界面与提示 | Weapon in next slot | 下一个栏位的武器 | 下一个武器 |
-| 界面与提示 | Weapon in previous slot | 前一个栏位的武器 | 前一个武器 |
 | 界面与提示 | Zaton | 河湾 | 扎通 |
 | 界面与提示 | Антирадиационные препараты | 抗辐射药物 | 抗辐射医学 |
 | 界面与提示 | Армейская аптечка | 军用医疗包 | 军队急救包 |
 | 界面与提示 | Баллон с коллоидным газом | 胶体气罐 | 含有胶体气体的圆筒 |
 | 界面与提示 | Безопасная зона | 安全区 | 存档区 |
-| 界面与提示 | Включить | 启用 | 激活 |
 | 界面与提示 | Военные склады | 军用仓库 | 军方仓库 |
 | 界面与提示 | Военный | 军方 | 军队 |
 | 界面与提示 | Воронье яйцо | 乌鸦蛋 | 腐肉乌鸦蛋 |
@@ -5160,11 +4669,9 @@
 | 界面与提示 | Замок | 锁 | 锁定 |
 | 界面与提示 | Затон | 河湾 | 扎通 |
 | 界面与提示 | Зомбированный | 丧尸化人员 | 僵尸 |
-| 界面与提示 | Игра окончена. | 游戏结束 | 游戏结束. |
 | 界面与提示 | Интерфейс | 用户 | 界面/HUD |
 | 界面与提示 | Информация зашифрована. | 信息已加密。 | 该信息已加密。 |
 | 界面与提示 | Канистра | 油罐 | 罐体 |
-| 界面与提示 | Канистра с бензином | 满的汽油罐 | 气罐 |
 | 界面与提示 | Карта Зоны | 禁区地图 | 特异区地图 |
 | 界面与提示 | Команда | 队伍 | 团队 |
 | 界面与提示 | Команде | 队伍 | 对团队 |
@@ -5178,7 +4685,6 @@
 | 界面与提示 | Научная аптечка | 科研医疗包 | 科学医疗包 |
 | 界面与提示 | Научный EXP-4 | 科研型EXP-4 | 科学EXP-4 |
 | 界面与提示 | Облучение предметов | 物品的辐照 | 物品辐射 |
-| 界面与提示 | Опытный | 潜行者 | 老手 |
 | 界面与提示 | Опьянение | 醉酒度 | 醉酒 |
 | 界面与提示 | Отдел | 游戏设计 | 程序 |
 | 界面与提示 | Погода | 肩章 | 初始天气 |
@@ -5191,7 +4697,6 @@
 | 界面与提示 | Среднее сталкерское снаряжение | 中型潜行者装备 | 中等级潜行者装备 |
 | 界面与提示 | Сумка Сахарова | 萨哈罗夫背包 | 萨哈罗夫的包 |
 | 界面与提示 | Тиски | 台钳 | 副职 |
-| 界面与提示 | Хорошо | 可以 | 好 |
 | 界面与提示 | Экипировка и еда | 装备与食品 | 设备与食品 |
 | 界面与提示 | Элитный детектор аномалий | 精英异常探测器 | 精英异常检测器 |
 | 百科与术语 | 100 Rads | 辐射100 | 100 拉德 |

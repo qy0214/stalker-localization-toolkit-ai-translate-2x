@@ -1,0 +1,6022 @@
+{
+ "_script_translated": [],
+ "latin_residue": [
+  [
+   "configs/text/eng/area_bad_ammo.xml",
+   "ammo-11.43x23-hydro_bad",
+   [
+    "Hydra",
+    "shok"
+   ],
+   ".45 ACP Hydra-shok 子弹（湿弹）"
+  ],
+  [
+   "configs/text/eng/area_bad_ammo.xml",
+   "ammo-11.43x23-hydro_verybad",
+   [
+    "Hydra",
+    "shok"
+   ],
+   ".45 ACP Hydra-shok 子弹（劣质）"
+  ],
+  [
+   "configs/text/eng/area_bad_ammo.xml",
+   "ammo-338-lapua_bad",
+   [
+    "Lapua",
+    "Magnum"
+   ],
+   ".338 Lapua Magnum 弹药（湿的）"
+  ],
+  [
+   "configs/text/eng/area_bad_ammo.xml",
+   "ammo-338-lapua_verybad",
+   [
+    "Lapua",
+    "Magnum"
+   ],
+   ".338 Lapua Magnum 弹药（糟糕）"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "hog_limansk_31",
+   [
+    "grave",
+    "Ansk"
+   ],
+   "没什么好消息……只能数着时间，偶尔会收到一些无线电信号的片段。只是这些信号让我感到痛苦不堪。记录如下：听——“……P……grave……我们被"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_silencer_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关在枪管上安装消音器时应用螺纹的信息的闪存盘。详细的指导说明。经验不足的技术人员会非常欢迎这样的资料，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_scope_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关瞄准具安装及其安装方法的信息的闪存盘。详细的指导说明。对于经验不足的技术人员来说，这样的工具非常实用，他们可以借助闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_grenade_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关步枪支架及其安装方式的信息的闪存盘。详细的指导说明。对于经验不足的技术人员来说，这样的工具非常实用，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_magazine_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关扩展弹匣信息的闪存盘。详细的指导说明。经验不足的技术人员会很高兴找到这样的工具，借助闪存盘中的信息，他们能够进行新的升级或多次新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_5.45_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关口径 5.45x39 型切割筒技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的发现，因为他们可以借助闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_5.56_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含口径 5.56x45 切割技术信息的闪存盘。详细指南。没有经验的技术人员会很高兴得到这样的资料，从而能够进行新的升级或多次新的升级。\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_9.18_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关口径 9.18 号切割筒技术信息的闪存盘。详细指南。经验不足的技术人员会很高兴得到这样的信息，他们可以借助这些信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_9.19_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含口径 9.19 切割技术信息的闪存盘。详细指南。缺乏经验的技术人员会非常欢迎这样的发现，他们可以借助闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.39_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关口径 7.62x39 子弹切割技术信息的闪存盘。详细指南。经验不足的技术人员会很高兴得到这样的资料，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.51_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含关于将枪管切割成口径 7.62x51 技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的发现，他们可以借助闪存盘中的信息"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.54_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关口径 7.62x54 子弹切割技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的资源，他们可以借助闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_plates_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关各种面板和插件以及其安装技术的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_alloy_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含关于各种材料、合金及其使用技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ceramics_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含有关特定西装陶瓷配件的信息以及使用这些配件的技术的闪存盘。包含详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_doublearmor_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服内层装甲及其在防护服中应用的技术的信息的闪存盘。包含详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_segments_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关分段防护的详细信息以及其在装备中的使用技术的闪存盘。附有详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_carcass_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关各种用于战斗的框架技术信息以及其在战斗中应用的技术的闪存盘。提供详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_titan_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关各种钛部件的信息以及其使用和应用技术的闪存盘。提供详细的指导。技术人员会很高兴这一发现，借助闪存盘中的信息，他们能够进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_protectivesbk_descr",
+   [
+    "RKGTS",
+    "cyan",
+    "cyan"
+   ],
+   "包含关于放射化学防护系统 SBC-RKGTS.m.II 的信息以及其在防护服中应用的技术的闪存盘。包含详细的指导说明。即使是经验丰富的技术人"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_obrabotka_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关各种作品处理信息的闪存盘。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_combined_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关联合防护机制及其在防护服中应用的技术的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们能"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_regulirovka_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含武器组件调整信息的闪存盘。详细的指导说明。经验不足的技术人员会非常欢迎这样的工具，借助闪存盘中的信息，他们能够进行一次或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_polimers_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关聚合物材料及其使用技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_trigger_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关扳机机构修改信息的闪存盘。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c["
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_position_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关精确定位系统及其应用技术的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的资料，借助闪存盘中的信息，他们能够进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gazcilindr_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关气瓶改造信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_napileniya_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器喷洒技术及其使用方法的信息的闪存盘。包含详细的指导说明。技术人员会很高兴地发现这一工具，并能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_avtomatrezhim_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关自动射击模式以及其安装技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地接受这一发现，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_porshen_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关气体活塞改造信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_protivoves_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器配重及其安装技术的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_shtok_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关库存修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多个新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skolzdetali_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关滑动部件修改的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gazregulator_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含武器气体调节器相关信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_speedmechanism_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关提高武器射击速率方法的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_tormoz_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含武器制退器信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c["
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismstrigger_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器触发系统机制的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级或"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismszatvor_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器螺栓机制信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanisgazregulator_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器气体调节器机制的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_stvol_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关枪管修改的信息。详细的指导。技术人员会很高兴这一发现，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismtormoz_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器制退器机制信息的闪存盘。详细指南。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismstvol_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器枪管机制的信息。详细的指导。即使是经验丰富的技术人员也会欢迎这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_newmaterials_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含关于用新型材料替换武器部件信息的闪存盘。详细的指导说明。经验不足的技术人员会很高兴得到这样的资料，他们可以依据闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_usilitel_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器气动放大器的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_servomotors_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关伺服电机及其安装的信息。详细的指导。即使是经验丰富的技术人员也会喜欢这样的资料，借助闪存盘中的信息，他们就能进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_carbon_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关特定碳部件及其安装信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_exosystems_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含有关外骨骼系统及其安装信息的闪存盘。包含详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们也能进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_amortizators_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关减震器及其使用信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_artdetector_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关确定文物位置相关信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_layers_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关套装额外层级的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_rubberizol_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服橡胶绝缘材料的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_thermoizol_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服热绝缘信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_orgsteklo_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关西装用有机玻璃部件信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_constant_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含有关盔甲心理保护修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_propitka_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "带数据的闪存盘关于诉讼处理。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c[def"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_chestplates_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关额外防护服信息的闪存盘。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c[d"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_newscopes_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器集成瞄准装置修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_contrast_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器视角对比修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_autoaim_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器瞄准装置引导系统的信息。详细的引导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_pnv_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关用于服装的夜视眼镜的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dynamicscope_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器可调节瞄准具的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_lenses_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器镜头修改的信息。详细的指导。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级或多个新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_rukoyatka_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关修改握把武器信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_compensator_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关武器补偿器修改的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_filters_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器附加过滤器及其安装信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_antenns_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关安装防护服天线信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行一次或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ecran_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关防护服保护屏的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_cupols_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服保护罩信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_closedbreath_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服密闭呼吸系统的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_psystimulators_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘包含有关 suits 心理刺激系统的信息。详细的指导。即使是经验丰富的技术人员也会欢迎这样的发现，并能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skaneri_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关扫描仪详细信息的闪存盘。提供详细的指导。即使是经验丰富的技术人员也会喜欢这样的发现，因为从闪存盘中获取的信息可以帮助他们进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ionwind_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关系统设置的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为从闪存盘中获取的信息可以帮助他们进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_psyprotect_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一个包含有关盔甲心理防护修改信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的资料，他们能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_pruzhini_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器弹簧修改信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_priemnik_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关武器弹匣接收器修改信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们也能进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_injectorfury_descr",
+   [
+    "Rage",
+    "cyan",
+    "cyan"
+   ],
+   "包含有关“Rage”套装注射器的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dustprotect_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服防尘系统的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升级或"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_injectorgemo_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关套装用血红蛋白注射器的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_biostimulator_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关用于设备的生物刺激剂信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_feniksregen_descr",
+   [
+    "Phoenix",
+    "cyan",
+    "cyan"
+   ],
+   "包含关于“Phoenix”系统相关信息的闪存盘，用于设备维护。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为从闪存盘中获取"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_neuroemittor_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "闪存盘 包含有关防护服用神经微波发射器的信息。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_complexdoctor_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关复杂“Doctor”设备相关信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gasballons_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关防护服用气罐及其安装方式的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_artmodules_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关盔甲装备模块及其安装方式的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_kreplenie_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关西装卸装及安装方法的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_restoresystem_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关盔甲再生系统及其安装方法的信息的闪存盘，附带详细的指导说明。即使是经验丰富的技术人员也会喜欢上这样的工具，借助闪存盘中的信息，他们就"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skatsystem_descr",
+   [
+    "Skat",
+    "cyan",
+    "cyan"
+   ],
+   "包含关于“Skat”系统相关信息的闪存盘，用于设备维护。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为通过闪存盘中的信息，"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_marafonecsystem_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关复杂“马拉松”套装信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_poisonfilters_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关诉讼用毒物过滤系统信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_systemvaryag_descr",
+   [
+    "Varyag",
+    "cyan",
+    "cyan"
+   ],
+   "包含有关 Varyag 系统用于维修的详细信息的闪存盘。这些指导信息非常有用。即使是经验丰富的技术人员也会喜欢这样的发现，因为他们可以借助闪"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dynamo_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "包含有关发电机改造信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_hangover_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "一种绿色药片，能很好地使身体清醒，甚至还能稍微提神。\\n\\n%c[default] 特性：\\n\\n%c[ui_cyan] • %c[defa"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "mutant_part_psy_dog_brain_description",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "灵犬以其强大的心理能力著称，尤其是能够制造幻象并对其他生物的大脑产生影响，可以肯定地说，这些能力源自它们的大脑。有趣的是，每个拥有此类与灵波"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_deactivate_mix_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一种由高锰酸钾和含酒精的物质混合而成的物质。适用于通过物理方式去除放射性物质来使物体失去功能。对于未密封或未加压的物品，无法使其失效。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_detox_mix_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "高锰酸钾与温水的混合液。具有很好的抗菌作用，非常适合清除体内的毒素。\\n\\n%c[default]规格\\n%c[ui_cyan] • %c["
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_wine_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "一瓶梅洛红葡萄酒。它属于十大国际红葡萄酒品种之一，是仅次于著名的赤霞珠的第二大热门品种。天然红葡萄酒能增强身体对病毒、电磁和辐射的抵抗力，含"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "旧武器的备用零件。木制部件当然并非完好无损，只有初学者才会对购买它们感兴趣。金属部件也处于相对良好的状态。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sov_r_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "自动武器的备用零件：弹簧、击针、机匣、枪托、弹仓等。这些部件状况还算不错，不过木质部件除外。\\n\\n%c[default] 规格说明：\\n%"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_r_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "来自欧洲的自动武器备件：弹簧、击针、机匣、枪托、弹仓等。这些部件状况相对良好，不过部分聚合物部件有些磨损。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sov_p_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "CIS 系统中可用的手枪零件：弹簧、击针、框架、弹夹等。这些部件状况较好，不过部分塑料部件有些磨损。\\n\\n%c[default] 规格说明"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_p_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "来自欧洲的手枪配件：弹簧、击针、框架，配件及其他更多内容。除部分聚合物部件外，其他组件状况都还不错。\\n\\n%c[default]规格：\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sov_s_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "备用零件，包括狙击枪的部件：弹簧、击针、机匣、枪托、弹仓等。所有零件都处于相对良好的状态，不过木质部件的零件除外。\\n\\n%c[defaul"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_s_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "来自欧洲的狙击武器备用零件：弹簧、击针、机匣、枪托、弹仓等。这些零件状况较好，不过部分聚合物部件有些磨损。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_shot_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "散弹枪配件：弹簧、击针、枪身外壳、框架、弹夹等更多物品。这些部件状况还算不错，不过有些聚合物部件有些老化。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_pp_spareparts_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "冲锋枪的备用零件：弹簧、击针、机匣外壳、框架、弹夹等更多部件。这些零件状况还算不错，不过有些聚合物部件有些损坏。\\n\\n%c[default"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_seva_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "“谢瓦”型号的装甲板，从战衣上切割而成。由基辅某国防研究机构的技术制造。能够阻挡手枪子弹，并吸收刃器造成的伤害。可用作修复材料。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_heavy_descr",
+   [
+    "ESAPI",
+    "cyan",
+    "cyan"
+   ],
+   "陶瓷复合板型号「ESAPI」。提供4级防护等级。由高质量复合材料和陶瓷制成，防护物质被涂覆在板材表面。可用作修复材料。\\n\\n%c[defa"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_medium_descr",
+   [
+    "SAPI",
+    "cyan",
+    "cyan"
+   ],
+   "这种轻型复合装甲名为“SAPI”。提供3级防护能力，由优质材料制成。在装甲板的前侧，陶瓷层之上，有一层防护层，旨在提高装甲板的作战生存能力。"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_light_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "由凯夫拉尔和芳纶制成的手工制作护甲。提供二级防护。由禁区工厂使用周边地区采集的材料制成。可用作修复材料。\\n\\n%c[default]属性："
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_cloth_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "由凯夫拉尔和厚布料制成的自制装甲部件。提供一级防护。由从周边地区运来的材料在禁区工厂制造。\\n\\n%c[default] 属性：\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_military_descr",
+   [
+    "Granite",
+    "cyan",
+    "cyan"
+   ],
+   "由复合材料和陶瓷制成的“Granite-4M”重型本土装甲。提供5级防护。为套装量身定制的、带有周边防护的军事单位。可用作修复材料。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_monolith_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "未知护甲部件，由合金和加固织物制成。重量极重。提供5级防护。显然不是手工制品。可用作修复材料。\\n\\n%c[default]属性：\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_unload_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "从套装中雕刻出用于卸载的口袋。由厚实且质量高的面料制成，可用作修复材料。\\n\\n%c[default]特性：\\n\\n%c[ui_cyan] "
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_small_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "这是一块用简易方法制作的小型自制护甲板。可用作修复材料。\\n\\n%c[default]属性：\\n\\n%c[ui_cyan] • %c[def"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "cloth_green_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "绿色布料，从相应颜色的制服上裁剪而成。材质质量非常高，密度也很大。可用作修补材料。\\n\\n%c[default]属性：\\n\\n%c[ui_c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "cloth_black_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "黑色布料，裁自相应颜色的制服。材质质量非常高，密度大。可用作修补材料。\\n\\n%c[default]属性：\\n\\n%c[ui_cyan] •"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "cloth_brown_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "棕色布料，由相应颜色的制服裁剪而成。材质质量非常高，密度大，可用作修补材料。\\n\\n%c[default]特性：\\n\\n%c[ui_cyan"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "cloth_white_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "浅色衣料，由相应颜色的布料制成。品质非常高，面料厚实。可用作修补材料。\\n\\n%c[default]属性：\\n\\n%c[ui_cyan] •"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "servomotor_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "这是从外骨骼中拆下的伺服引擎之一。如果您有维修工具包，可以在外骨骼处更换现有的引擎。\\n\\n%c[default] 属性：\\n\\n%c[ui"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plastic_pieces_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "部分聚合物部件是从其他地方切割下来的。可用作防护服或防毒面具的修补材料。\\n\\n%c[default]属性：\\n\\n%c[ui_cyan] "
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "glass_pieces_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "从防毒面具或头盔上切割下来的玻璃碎片。使用优质的修理工具，几乎可以替换任何头盔中损坏的玻璃部件。\\n\\n%c[default]属性：\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "circuit_board_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "PCB是一种介电板，其表面和/或内部形成了导电电子电路。印刷电路板用于各种电子元件的电气和机械连接。印刷电路板上的电子元件通过其引脚与导电图"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "servokit_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "用于现场更换外骨骼伺服电机的专用工具包。包含所需的材料以及校准工具。仅可用于更换伺服电机。\\n\\n%c[default] 规格说明：\\n%c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "ammo-12x70-buck_self_descr",
+   [
+    "purple",
+    "purple",
+    "purple"
+   ],
+   "这款自制的弹药筒适用于第12代口径游戏，其弹丸直径为6毫米。在近距离射击时，它具有极强的杀伤力和停止效果。适用于发射滑膛枪和霰弹枪。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_ammo12x76zhekan_base_descr",
+   [
+    "cyan",
+    "Zhekan"
+   ],
+   "弹药筒的包装、套筒、子弹，以及你面前所有必要的弹药筒组件口径 12x76。看起来这些足够装30个弹药筒了。\\n\\n%c[default]属性"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "sew_tools_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "线、针、拉链以及各种工具。包含缝纫和刺绣所需的一切工具。\\n\\n%c[default] 规格说明：\\n%c[ui_cyan] • %c[de"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_selfroll_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "由烟草和手工纸制成的自卷式香烟。\\n\\n\\t\\t%c[default] 规格说明：\\n\\t\\t%c[ui_cyan] • %c[defaul"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_delivery_container_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "用于运输装备或补给的重金属容器。其重量足以单独承载。\\n\\n%c[default]属性：\\n\\n%c[ui_cyan] • %c[defau"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "这种可食用的蘑菇生长在禁区及其周边地区。它没有任何变异特性。经过长时间煮沸或煎炒后食用，味道微苦。当地吸毒者常将其用于制造镇静剂和强效止痛药"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_muh_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "大型的毒蝇伞蘑菇，可以在禁区中找到。与同类蘑菇不同，它含有大量有害和放射性物质，因此毒性更强。可用于制药。建议不要使用在禁区采集的蘑菇，因为"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_fried_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "大型煮熟的蘑菇。可食用，经过长时间烹饪后味道更佳。尽管仍含有少量毒素，但当地美食家常将其作为替代食物来源。这种蘑菇通常生长在沼泽和阴暗的地方"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_crow_egg_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "常见的乌鸦蛋。这是一种热量极高的食物，能满足饥饿感，稍微改善健康状况，并减少辐射剂量。由于禁区中缺乏鸡和其他产蛋动物，因此它成为一种当地的美"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_crow_boiled_egg_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   ">一个煮熟的乌鸦蛋这是一种热量极高的产品，能够满足饥饿感，稍微改善健康状况，并略微减少辐射剂量。考虑到当地没有鸡和其他产蛋动物禁区，是一种当"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_dosimeter_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "辐射剂量计 “普里皮亚季” RKS-20.03 是一种由苏联制造的电子测量仪器。它用于单独或集体测量背景电离辐射的等效剂量率、β辐射通量密度"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_kovalev_pda_descr",
+   [
+    "Dubrov",
+    "Dubrov"
+   ],
+   "笔记本电脑存储着关于异常研究的数据，数据保存在农业研究所上。  \\n问题 3.7 尚未完成，有些地方已经标记了，有些则被划掉了，还有一些显然"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_vorobushkin_pda_descr",
+   [
+    "Circle",
+    "cyan"
+   ],
+   "该模块已从“Circle”倾斜与返回探测站的设备中移除。该设备位于站点附近，包含带有异常详细地图的地形频谱图。\\n\\n%c[default]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_5_1_dlg_1_1",
+   [
+    "Group",
+    "Consciousness"
+   ],
+   "水晶 Group。曾经，它是我们最强大的部队集团，负责保卫 O-Consciousness、“黑石”、石棺及其周边地区。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_5_1_dlg_1_3",
+   [
+    "Woofers",
+    "Preacher"
+   ],
+   "然后，如你所知，某个或一群疯子突破了我们的防御屏障“Burner”，接着就出现了那些“Woofers”，各种“冒险者”，甚至还有那些混蛋。我"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_4_dlg_1_2",
+   [
+    "Wings",
+    "Griffin",
+    "Pegasus",
+    "Wind",
+    "Liberty"
+   ],
+   "“Wings”，就是他们仅存的部分。他们称我为Griffin，那边的两个人叫麻雀和Pegasus，那个自大的家伙拿着SVD枪的就是Wind。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_dasc_traveler_mlr_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "哦，嘿！你不需要向导吗？那么，让我告诉你哪里可以安全带你去：\\n%c[ui_cyan]• 封锁线 [新手村]\\n%c[ui_cyan]• 沼"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_dasc_traveler_mlr_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "\\n%c[ui_cyan]• 封锁线 [新手村，1000]  \\n%c[ui_cyan]• 沼泽地 [隐藏基地，2500]  \\n%c[ui"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_ds_killer_guide_main_base_1",
+   [
+    "Leopard",
+    "cyan"
+   ],
+   "我是指挥官，呼叫 Leopard。如你所见，这座“死城”被各种敌人包围着，但很少有人知道地下下水道网络的存在，不过我知道。我们可以安全地离开"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_zaton_killer_guide_station_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "我可以问你一个非常合理的问题：“那你呢？你是怎么做的？”不过还是有一件事让你困扰，那就是我提供的是“我的”服务——也就是作为向导提供的服务。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_zaton_killer_guide_station_list_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "此处：\\n%c[ui_cyan]• “死城” [贸易合作社，8000]  \\n%c[ui_cyan]• 红森林 [桥后的前哨站，2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "tasks_noah_dialog_5",
+   [
+    "Saiga",
+    "Protekta"
+   ],
+   "我完全不喜欢我的武器，所以如果你能给我带点“Saiga”这样的武器……不过我不知道在禁区里能不能买到那样的东西。不过我见过一些强盗里有 Pr"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "rogovets_about_himself_1_6_army_mlr_1",
+   [
+    "Farwater",
+    "Group"
+   ],
+   "我是一名军事军医，受合同派遣来到这里。经过一些训练后，我很快就被分配到了“Farwater Group”。有一次在手术结束后，我们被困在了普"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_l11pri_mon_haron_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "我知道，而且可以请兄弟们帮忙展示，但当然不是免费的。以下是我们的基地：\\n%c[ui_cyan]• 郊区位于普里皮亚季附近\\n%c[ui_c"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_l11pri_mon_haron_list_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "听好了：\\n%c[ui_cyan]• 郊区 of 普里皮亚季 [1000]  \\n%c[ui_cyan]• 木星附近区域 [1000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_red_forest_mon_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "关于捐款方面，我可以请兄弟们帮忙，但具体的位置如下：\\n%c[ui_cyan]• 郊区位于普里皮亚季附近  \\n%c[ui_cyan]• 位"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_red_forest_mon_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "听好了：\\n%c[ui_cyan]• 郊区的普里皮亚季 [5000]  \\n%c[ui_cyan]• 木星附近区域 [6000]  \\n%c"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_prikbo_mon_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "我自己无法承受，但兄弟们会告诉你该去哪里。不过不是免费的。看这里：\\n%c[ui_cyan]• 木星附近\\n%c[ui_cyan]• 普里皮"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_prikbo_mon_list_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "听好了：\\n%c[ui_cyan]• 木星附近 [2000]  \\n%c[ui_cyan]• 普里皮亚季中心 [1000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jupdepo_mon_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "不过，我自己不会接受它，你可以和你的兄弟们一起去。现在你只需要为这个兄弟会捐款即可。不过我觉得这并不会让你感到沮丧。这是你的路费：\\n%c["
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jupdepo_mon_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "听好了：\\n%c[ui_cyan]• 红色森林 [6000]  \\n%c[ui_cyan]• 普里皮亚季中的郊区 [2000]  \\n%c["
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_3",
+   [
+    "Desert",
+    "Eagle",
+    "cyan"
+   ],
+   "“草原之鹰”——是对 Desert Eagle 进行更成功的改良版本，部分部件经过人工调整。\\n%c[ui_cyan]• 价格：8000"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_6",
+   [
+    "Marsh",
+    "cyan"
+   ],
+   "“Marsh”——一种快速射击且具备屠杀能力的枪械，是美国USP手枪的一种改进型号。\\n%c[ui_cyan]• 价格：7000"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_10",
+   [
+    "Carabinier",
+    "SPAS",
+    "cyan"
+   ],
+   "“Carabinier”——一种经过改装的 SPAS-12 步枪，具有较小的后坐力和自动射击功能。\\n%c[ui_cyan]• 价格：110"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_11",
+   [
+    "Protecta",
+    "Striker",
+    "cyan"
+   ],
+   "“Protecta”是Striker霰弹枪的专属改装版本。\\n%c[ui_cyan]• 价格：17000"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_15",
+   [
+    "Storm",
+    "Thunderstorm",
+    "cyan"
+   ],
+   "“Storm”是特种部队装备的OTS-14“Thunderstorm”的改进版，该信息被该组织秘密泄露给了外界。其优点中值得注意的就是存储容"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_18",
+   [
+    "Surf",
+    "Vintorez",
+    "cyan"
+   ],
+   "“Surf”——这是BCC“Vintorez”的专属修改版本，同样由专业工程师打造。它的射击频率降低，但致命力增强。\\n%c[ui_cyan"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr2_20",
+   [
+    "Lynx",
+    "cyan"
+   ],
+   "SVD “Lynx”——一种结合了精确性与致命威力的军队改装型武器。\\n%c[ui_cyan]• 价格：18000"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "barter_povar_army_recall_1",
+   [
+    "Cossacks",
+    "Cossacks",
+    "Cossacks",
+    "Cossacks",
+    "Cossacks"
+   ],
+   "看这里：\\n5瓶“Cossacks” = 5包9x18毫米口径\\n5瓶“Cossacks” = 3包5.45x39毫米重弹口径\\n5瓶“Co"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "brain_on_staff_1",
+   [
+    "Application",
+    "Container"
+   ],
+   "好的……我可以为您提供3个科学级别的医疗包作为替代，包括4个军队级医疗包、神器 Application Container或2个抗生素。请选"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "brain_on_staff_4",
+   [
+    "Application",
+    "Container"
+   ],
+   "请给我神器 Application Container，这就是我需要的。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "mil_freedom_guid_meet_2",
+   [
+    "probably",
+    "been",
+    "places"
+   ],
+   "你对当地情报了解多少？probably been to a lot of places?"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "mil_freedom_guid_go_list_1",
+   [
+    "cyan",
+    "Village",
+    "cyan"
+   ],
+   "致：\\n%c[ui_cyan]• 郊区 [新手 Village, 4500]  \\n%c[ui_cyan]• 杨塔 [5000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_esc_mlr_military_list_1",
+   [
+    "cyan",
+    "cyan",
+    "Dark",
+    "Scape",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• 农业研究所 [5000, 军事基地]  \\n%c[ui_cyan]• Dark Scape [燃料站，"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_agr_mlr_military_list_1",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "仅在线：\\n%c[ui_cyan]• 郊区 [南方检查站，5000]  \\n%c[ui_cyan]• 杨塔 [科学基地，7000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_marsh_csky_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "是的，没有时间可以坐下来，我必须时刻保持在视线范围内，因为我是当地的管理员。你不用看我的设备，那样我移动起来更方便。我也可以带你去一些地方，"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_marsh_csky_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• 沼泽地 [观察站，300]  \\n%c[ui_cyan]• 沼泽地 [抽水站，500]  \\n%c[u"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_marsh_csky_7",
+   [
+    "cyan",
+    "Village"
+   ],
+   "给郊区 %c[ui_cyan][新手 Village, 1500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_dv_bandit_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "你他妈在看什么？我这辈子都在旅行，现在也站在这里。我也能带你去一些地方。这里：\\n%c[ui_cyan]• 废料场 [机库，1500]\\t\\"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_dv_bandit_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "此处：\\n%c[ui_cyan]• 废料场 [机库，1500]\\t\\t\\n%c[ui_cyan]• 卡车墓地 [土匪停车场，1500]\\t\\"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_pri_stalker_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• NPP [12000]  \\n%c[ui_cyan]• 普里皮亚季 [3000]  \\n%c[ui_c"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jup_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "嘿，兄弟。我叫加里克，我来回开车，主要行驶在禁区区域。我来登记一下：\\n%c[ui_cyan]• 酒吧 \\n%c[ui_cyan]• 普里皮"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jup_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• 酒吧 [6000]  \\n%c[ui_cyan]• 普里皮亚季 [3000]  \\n%c[ui_cya"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_zat_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "指挥员飞行员随时为您服务。这里没有太多可以停留的地方，但速度肯定会快得多，安全性也更高。我带您去：\\n%c[ui_cyan]• 普里皮亚季 "
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_zat_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• 普里皮亚季 [通过加里克， 4000]  \\n%c[ui_cyan]• 郊区 of 普里皮亚季 [通过"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_bar_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "我是一名向导，为客人提供服务，收取少量费用，他们称我为“导航员”。当然，我主要服务的是绿色区域的人，不过有经验的追踪者也不会忽视这项服务。协"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_bar_list_1",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "收件人：\\n%c[ui_cyan]• 杨塔 [3500]  \\n%c[ui_cyan]• 沼泽 [6000]  \\n%c[ui_cyan]•"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "ammo-flamer_descr",
+   [
+    "Makshoob",
+    "purple",
+    "purple"
+   ],
+   "这是一种自制的坦克，使用了混合燃料，由当地的工匠少量生产，被火焰喷射器“Makshoob”所使用。\\n\\n\\n%c[ui_purple] •"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "ammo_flw_descr",
+   [
+    "purple",
+    "purple"
+   ],
+   "一种用于手动组装的火焰-减速坦克，适用于手喷火器，该手喷火器是在禁区的某个地方手工组装而成的。\\n\\n\\n%c[ui_purple] • %"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_grenade_light_descr",
+   [
+    "purple",
+    "purple",
+    "purple",
+    "purple"
+   ],
+   "用于照明目的非致命性武器。\\n被军队、执法机构和特种部队使用。\\n\\n%c[ui_purple] • %c[default] • %c[de"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_mp40_descr",
+   [
+    "Schmeisser",
+    "Volmer",
+    "ERMA",
+    "Werke",
+    "ERMA"
+   ],
+   "MP 40冲锋枪，常被误称为“Schmeisser”，是由德国设计师Volmer在ERMA Werke公司为德国武装部队开发的，并于1938"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_mp40_worn_descr",
+   [
+    "ERMA",
+    "Werke",
+    "ERMA",
+    "purple"
+   ],
+   "MP 40冲锋枪，常被误称为“施迈瑟”枪，由德国设计师沃尔默在ERMA Werke公司为德国武装部队研发，并于1938年由德国国防军投入使用"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_uzi_descr",
+   [
+    "nUzi",
+    "Uziel",
+    "purple"
+   ],
+   "Uzi是战后时期最著名的武器之一，它诞生于一个非常年轻的民族国家。\\nUzi冲锋枪被设计成一种简单且廉价的武器，旨在解决刚刚开始专业化训练的"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_mine_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "purple",
+    "purple"
+   ],
+   "一种金属外壳的抛射物，设计用于安装在地下、地面或接近地面的其他表面。当载荷超过5公斤时触发。\\n\\n%c[default] 特性：\\n%c["
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_spareparts_duplet2_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "双联框架由拆解的霰弹枪和机枪的各个部件组装而成，双扳机机构则通过导轨固定。不过有趣的是，以这种形式它可以被扔向某人。\\n\\n \\n%c[de"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_spareparts_duplet3_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "双联框架由拆解的霰弹枪和机枪的各个部件组装而成，双扳机机构安装在导轨上，配有方便更换的枪托。这是一个有趣的样本，但缺乏最重要的细节。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_338_cnt_5_name",
+   [
+    "Lapua",
+    "Magnum"
+   ],
+   ".338 Lapua Magnum 口径弹匣"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_338_cnt_5_descr",
+   [
+    "Lapua",
+    "Magnum",
+    "AWSM"
+   ],
+   "金属箱弹匣，可容纳 5 发 .338 Lapua Magnum 子弹口径。\\n耐用，能承受任何冲击。在恶劣储存条件下可能会生锈。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_545_60_descr",
+   [
+    "Polyamide",
+    "cyan"
+   ],
+   "Polyamide弹匣 6L31，可容纳 60 发 5.45x39 mm 子弹口径。\\n结构坚固，能承受任何冲击。并非防锈。\\n\\n%c[d"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_556_25_descr",
+   [
+    "cyan",
+    "Famas"
+   ],
+   "用于装填25发5.56x45mm子弹的弹药筒口径。\\n耐用，能承受任何冲击。在不利的储存条件下可能会生锈。\\n\\n%c[default] 规"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_556_35_ace_descr",
+   [
+    "cyan",
+    "Galil"
+   ],
+   "金属箱弹匣，可容纳 35 发子弹口径 5.56x45mm 口径。\\n耐用，能承受任何冲击。在储存条件恶劣的情况下可能会生锈。\\n\\n%c[d"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_762x39_8_descr",
+   [
+    "cyan",
+    "Hoofer"
+   ],
+   "用于装8发7.62x39毫米子弹的弹匣口径。\\n耐用，抗弯性强，能承受任何冲击。但在储存条件不佳的情况下容易生锈。\\n\\n%c[defaul"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_762x51_25_descr",
+   [
+    "cyan",
+    "Galil"
+   ],
+   "金属箱弹匣，可装 25 发 7.62x51mm 子弹口径。 耐用的设计，能承受任何冲击。在储存条件不佳的情况下可能会生锈。\\n\\n%c[de"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x18_12_descr",
+   [
+    "cyan",
+    "Fort",
+    "Fort"
+   ],
+   "金属箱弹匣，可容纳 12 发 9x18mm 子弹口径。耐用性强，能承受任何冲击。在储存条件不佳的情况下容易生锈。\\n\\n%c[default"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x18_27_descr",
+   [
+    "cyan",
+    "Pernach"
+   ],
+   "金属箱弹匣，可装27发9x18mm子弹口径。\\n 耐用，能承受任何冲击。在不良储存条件下可能会生锈。\\n\\n%c[default] 规格：\\"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x18_30_descr",
+   [
+    "cyan",
+    "Kiparis"
+   ],
+   "金属箱弹匣，可容纳 30 发 9x18mm 子弹口径。\\n 耐用的设计，能承受任何冲击。在恶劣储存条件下可能会生锈。\\n\\n%c[defau"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x18_64_descr",
+   [
+    "cyan",
+    "Bizon"
+   ],
+   "64发装、螺旋式弹仓，口径9x18毫米，属于口径类型。\\n结构坚固，能承受任何冲击。在恶劣的储存条件下可能会生锈。\\n\\n%c[defaul"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x19_18_mp443_descr",
+   [
+    "cyan",
+    "Grach"
+   ],
+   "金属箱弹匣，可容纳 18 发 9x19mm 子弹口径。耐用，能承受任何冲击。在不利的储存条件下会生锈。\\n\\n%c[default]140]"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x19_30_pp19_descr",
+   [
+    "cyan",
+    "Vityaz"
+   ],
+   "金属箱弹匣，可容纳30发9x19mm子弹口径。\\n 耐用的设计，能承受任何冲击。在不良储存条件下可能会生锈。\\n\\n%c[default] "
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_9x39_10_descr",
+   [
+    "cyan",
+    "Vintorez"
+   ],
+   "用于装20发9x39毫米子弹的弹匣口径。\\n耐用，能承受任何冲击。在储存条件不佳的情况下会生锈。\\n\\n%c[default] 规格：\\n%"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_1143x23_8_descr",
+   [
+    "cyan",
+    "Kimber"
+   ],
+   "适用于 8.45 ACP（11.43x23mm）弹药的金属弹匣。结构坚固，能承受任何冲击。在不良储存条件下会生锈。\\n\\n%c[defaul"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_1143x23_8_2_descr",
+   [
+    "Desert",
+    "Eagle"
+   ],
+   "适用于 8.45 ACP（11.43x23mm）弹药的金属弹匣。\\n结构坚固，能承受任何冲击。在不良储存条件下可能会生锈。\\n\\n%c[0."
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_1143x23_30_descr",
+   [
+    "cyan",
+    "Kriss",
+    "Vector"
+   ],
+   "用于装填30发.45 ACP子弹的弹匣（11.43x23毫米），型号为口径。结构坚固，能承受任何冲击。在储存条件不佳的情况下容易生锈。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_12x76_cnt_8_descr",
+   [
+    "cyan",
+    "Saiga"
+   ],
+   "用于装8发12x76毫米子弹的塑料弹匣口径。\\n耐用，能承受任何冲击。不会生锈。\\n\\n%c[default] 规格：\\n%c[ui_cya"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_12x76_cnt_10_descr",
+   [
+    "cyan",
+    "Vepr"
+   ],
+   "用于装10发12x76毫米子弹的塑料弹匣口径。耐用，能承受任何冲击。不会生锈。\\n\\n%c[default] 规格：\\n%c[ui_cyan"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_12x76_cnt_20_descr",
+   [
+    "cyan",
+    "USAS"
+   ],
+   "用于装20发12x76毫米子弹的塑料弹匣口径。\\n耐用，能承受任何冲击。不会生锈。\\n\\n%c[default] 规格：\\n%c[ui_cy"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_12x55_5_descr",
+   [
+    "cyan",
+    "Vykhlop"
+   ],
+   "金属箱弹匣，可装5发12.7x55mm子弹口径。\\n 耐用的设计，能承受任何冲击。在恶劣储存条件下可能会生锈。\\n\\n%c[default]"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "container_with_an_artefacts_baraholka_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "大型镀锌金属容器。里面装有许多文物。容器内有些东西在滚动和跳跃。该容器被锁在一个复杂的密码锁上，所以千万别尝试破解它。\\n\\n%c[defa"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "agr_main_monolith_mlr_task_5_doc_desc",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "只有第66号订单引起了注意，由此可以推断，所谓的“产品编号62”样本，与所有相关文档一样，被送到了切尔诺贝利异常事件的科学研究所禁区。\\n\\"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "box_to_the_heads_descr",
+   [
+    "cyan",
+    "cyan"
+   ],
+   "这些地方常用的储存各种垃圾的容器。里面装着两个被切断的跟踪者头头。气味难闻极了。\\n\\n%c[default] 规格：\\n%c[ui_cya"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_1_desc",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "这些笔记完全毫无用处，里面记载着所有员工的姓名和职务信息，这些信息在工作日开始和结束时都被反复标记过。不过，日期表明这个建筑在第一次爆炸之后"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_2_desc",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "它也没有什么特别的价值，这里并没有发生任何超自然的事情。显然，这家工厂的员工主要负责处理能源相关的问题。\\n\\n%c[default] 规格"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_3_desc",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "其中包含了关于相关责任人以及新企业基本结构的基本信息。大部分资金来自国家，且是定向提供的。遗憾的是，该辖区内没有发现任何异常材料；武器并未在"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mil_freedom_barman_mlr_task_1_notebook_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "该小组使用的通用笔记本电脑，用于娱乐目的。上面有一些社交网络上的页面副本、音乐、各种游戏，从艺术电影到当前最流行的电影，还有这些信息载体的照"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mlr_strelok_item_01_desc",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "那本包含记录的笔记本文件，很可能属于枪手本人。\\n它详细描述了如何进入被称为“x-18”实验室的地下建筑。\\n\\n%c[default] 规"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "blackbox_descr",
+   [
+    "cyan",
+    "cyan",
+    "cyan",
+    "cyan"
+   ],
+   "健康直升机飞行数据记录器或者被称为“黑匣子”，正如媒体惯用的称呼。\\n机载记录器用于记录飞机内部系统以及机组人员的谈话内容，总的来说，用于记"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "talk_to_maps_3",
+   [
+    "Rostock",
+    "Mercs",
+    "Truck",
+    "Cemetery"
+   ],
+   "……嗯。\\n听着，这里是酒吧。对于““纪律团” 朋友”和中立者来说，这里完全安全。\\n西边是荒野地区，这里就是工厂“Rostock”工厂的旧"
+  ],
+  [
+   "configs/text/eng/st_characters.xml",
+   "st_agr_1_6_medic_army_mlr_name",
+   [
+    "major",
+    "Krivenko"
+   ],
+   "中士 major Krivenko"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b9_blackbox_records",
+   [
+    "Stingray",
+    "Stingray",
+    "Stingray",
+    "Stingray",
+    "Eight"
+   ],
+   "Stingray-4，进来！快进来，该死的！Stingray-4，你能听见吗？……注意了，Stingray小组！这里是Stingray-1。"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a28_ssu_to_actor_2",
+   [
+    "Command",
+    "Fairway",
+    "Stingray"
+   ],
+   "[USS Command] 很好。从此时起，您负责完成“Fairway”行动。科瓦尔斯基和Stingray小队将为您提供帮助；请报告。"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a28_ssu_to_actor_5",
+   [
+    "Command",
+    "Stingray"
+   ],
+   "[USS Command] 很好。这意味着我们还有时间直到下一次发射。你将与来自B28位置的追踪者一起被接走。Stingray小队也会和你一"
+  ]
+ ],
+ "tag": [
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_army_0",
+   [
+    "[Army]"
+   ],
+   [
+    "[军队]"
+   ],
+   "我想加入[军队]。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_bandit_0",
+   [
+    "[Bandits]"
+   ],
+   [
+    "[强盗]"
+   ],
+   "我想加入[强盗]"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_csky_0",
+   [
+    "[Clear Sky]"
+   ],
+   [
+    "[“晴空”]"
+   ],
+   "我想加入[“晴空”]"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_dolg_0",
+   [
+    "[Duty]"
+   ],
+   [
+    "[纪律团]"
+   ],
+   "我想加入[纪律团]。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_ecolog_0",
+   [
+    "[Scientists]"
+   ],
+   [
+    "[科学家]"
+   ],
+   "我想加入[科学家]。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_freedom_0",
+   [
+    "[Freedom]"
+   ],
+   [
+    "[自由团]"
+   ],
+   "我想加入[自由团]"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_killer_0",
+   [
+    "[Mercenaries]"
+   ],
+   [
+    "[雇佣兵]"
+   ],
+   "我想加入[雇佣兵]。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_loner_0",
+   [
+    "[Loner]"
+   ],
+   [
+    "[独行者]"
+   ],
+   "我想当[独行者]。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_monolith_0",
+   [
+    "[Monolith]"
+   ],
+   [
+    "[黑石]"
+   ],
+   "我想加入[黑石]"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "bandit_barman_dar_mlr_find_number_2",
+   [
+    "[Click on trigger]"
+   ],
+   [
+    "[扣动扳机]"
+   ],
+   "[扣动扳机]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_dasc_traveler_mlr_1",
+   [
+    "[Hidden base]",
+    "[Junkyard]",
+    "[Rookie village]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[废品场]",
+    "[新手村]",
+    "[隐藏基地]"
+   ],
+   "哦，嘿！你不需要向导吗？那么，让我告诉你哪里可以安全带你去：\\n%c[ui_cyan]• 封锁线 [新手村]\\n%c[u"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_dasc_traveler_mlr_list_1",
+   [
+    "[Hidden base, 2500]",
+    "[Junkyard, 2500]",
+    "[Rookie village, 1000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[废品场，2500]",
+    "[新手村，1000]",
+    "[隐藏基地，2500]"
+   ],
+   "\\n%c[ui_cyan]• 封锁线 [新手村，1000]  \\n%c[ui_cyan]• 沼泽地 [隐藏基地，2500"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_dasc_traveler_mlr_base_2",
+   [
+    "[Rookie village, 1000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[新手村，1000]"
+   ],
+   "给封锁线 %c[ui_cyan][新手村，1000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_dasc_traveler_mlr_base_3",
+   [
+    "[Hidden base, 2500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[隐藏基地，2500]"
+   ],
+   "前往沼泽地 %c[ui_cyan][隐藏基地，2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_dasc_traveler_mlr_base_4",
+   [
+    "[Junkyard, 2500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[垃圾场，2500]"
+   ],
+   "给废料场 %c[ui_cyan][垃圾场，2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_ds_killer_guide_main_base_1",
+   [
+    "[outpost behind the bridge]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[桥后的前哨站]"
+   ],
+   "我是指挥官，呼叫 Leopard。如你所见，这座“死城”被各种敌人包围着，但很少有人知道地下下水道网络的存在，不过我知道"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_ds_killer_guide_main_base_list_1",
+   [
+    "[outpost in front of the bridge, 2500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[桥前的前哨站，2500]"
+   ],
+   "看：\\n%c[ui_cyan]• 红色森林 [桥前的前哨站，2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_ds_killer_guide_main_base_3",
+   [
+    "[\"outpost in front of the bridge\", 2500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[\"桥前的前哨站\", 2500]",
+    "[ui_cyan]"
+   ],
+   "前往红森林 %c[ui_cyan][\"桥前的前哨站\", 2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_zaton_killer_guide_station_1",
+   [
+    "[Trade cooperative]",
+    "[outpost behind the bridge]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[桥后面的前哨站]",
+    "[贸易合作社]"
+   ],
+   "我可以问你一个非常合理的问题：“那你呢？你是怎么做的？”不过还是有一件事让你困扰，那就是我提供的是“我的”服务——也就是"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_zaton_killer_guide_station_list_1",
+   [
+    "[Trade cooperative, 8000]",
+    "[outpost behind the bridge, 2500]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[桥后的前哨站，2500]",
+    "[贸易合作社，8000]"
+   ],
+   "此处：\\n%c[ui_cyan]• “死城” [贸易合作社，8000]  \\n%c[ui_cyan]• 红森林 [桥后的"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_zaton_killer_guide_station_base_2",
+   [
+    "[Trade cooperative, 8000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[贸易合作社，8000]"
+   ],
+   "在“死城” %c[ui_cyan][贸易合作社，8000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_zaton_killer_guide_station_base_3",
+   [
+    "[\"outpost behind the bridge\", 2500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[\"桥后的前哨站\", 2500]",
+    "[ui_cyan]"
+   ],
+   "前往红色森林 %c[ui_cyan][\"桥后的前哨站\", 2500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "mil_freedom_guid_go_list_1",
+   [
+    "[5000]",
+    "[Rookie Village, 4500]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[5000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[新手 Village, 4500]"
+   ],
+   "致：\\n%c[ui_cyan]• 郊区 [新手 Village, 4500]  \\n%c[ui_cyan]• 杨塔 [5"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "mil_freedom_guid_go_4",
+   [
+    "[Rookie Village, 4500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[新手村，4500]"
+   ],
+   "前往郊区 %c[ui_cyan][新手村，4500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_esc_mlr_military_list_1",
+   [
+    "[5000, military base]",
+    "[Fuel Station, 3000]",
+    "[Scientific base, 10000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[5000, 军事基地]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[燃料站， 3000]",
+    "[科学基地， 10000]"
+   ],
+   "收件人：\\n%c[ui_cyan]• 农业研究所 [5000, 军事基地]  \\n%c[ui_cyan]• Dark S"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_esc_mlr_military_vert_2",
+   [
+    "[military base, 5000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[军事基地，5000]"
+   ],
+   "给农业研究所 %c[ui_cyan][军事基地，5000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_esc_mlr_military_vert_3",
+   [
+    "[Fuel Station, 3000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[燃料站，3000]"
+   ],
+   "前往黑暗荒野 %c[ui_cyan][燃料站，3000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_esc_mlr_military_vert_4",
+   [
+    "[Scientific base, 10000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[科学基地，10000]"
+   ],
+   "给杨塔 %c[ui_cyan][科学基地，10000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_agr_mlr_military_list_1",
+   [
+    "[Scientific base, 7000]",
+    "[Southern checkpoint, 5000]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[南方检查站，5000]",
+    "[科学基地，7000]"
+   ],
+   "仅在线：\\n%c[ui_cyan]• 郊区 [南方检查站，5000]  \\n%c[ui_cyan]• 杨塔 [科学基地，"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_agr_mlr_military_vert_2",
+   [
+    "[Southern checkpoint, 5000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[南方检查站，5000]"
+   ],
+   "给郊区 %c[ui_cyan][南方检查站，5000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "guid_agr_mlr_military_vert_3",
+   [
+    "[Scientific base, 7000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[科学基地，7000]"
+   ],
+   "给杨塔 %c[ui_cyan][科学基地，7000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_marsh_csky_1",
+   [
+    "[Beginner Village]",
+    "[Mechanical yard]",
+    "[Observation post]",
+    "[Old Church]",
+    "[Water pumping]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[抽水站]",
+    "[新手村]",
+    "[机械厂]",
+    "[老教堂]",
+    "[观察站]"
+   ],
+   "是的，没有时间可以坐下来，我必须时刻保持在视线范围内，因为我是当地的管理员。你不用看我的设备，那样我移动起来更方便。我也"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_marsh_csky_list_1",
+   [
+    "[2000]",
+    "[4000]",
+    "[Mechanical yard, 800]",
+    "[Observation post, 300]",
+    "[Old Church, 500]",
+    "[Rookie Village, 1500]",
+    "[Water pumping, 500]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[2000]",
+    "[4000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[抽水站，500]",
+    "[新手村，1500]",
+    "[机械厂，800]",
+    "[老教堂，500]",
+    "[观察站，300]"
+   ],
+   "收件人：\\n%c[ui_cyan]• 沼泽地 [观察站，300]  \\n%c[ui_cyan]• 沼泽地 [抽水站，50"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_marsh_csky_3",
+   [
+    "[Swamp Doctor's Shelter, 1000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[沼泽医生庇护所，1000]"
+   ],
+   "沼泽地 %c[ui_cyan][沼泽医生庇护所，1000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_marsh_csky_6",
+   [
+    "[Mechanical Yard, 800]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[机械场，800]"
+   ],
+   "沼泽地 %c[ui_cyan][机械场，800]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_marsh_csky_7",
+   [
+    "[Rookie Village, 1500]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[新手 Village, 1500]"
+   ],
+   "给郊区 %c[ui_cyan][新手 Village, 1500]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_dv_bandit_1",
+   [
+    "[Freedom base, 4000]",
+    "[bandit parking, 1500]",
+    "[factory, 4000]",
+    "[hangar, 1500]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[土匪停车场，1500]",
+    "[工厂， 4000]",
+    "[机库，1500]",
+    "[自由基地，4000]"
+   ],
+   "你他妈在看什么？我这辈子都在旅行，现在也站在这里。我也能带你去一些地方。这里：\\n%c[ui_cyan]• 废料场 [机"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_dv_bandit_list_1",
+   [
+    "[Freedom base, 4000]",
+    "[bandit parking, 1500]",
+    "[factory, 4000]",
+    "[hangar, 1500]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[土匪停车场，1500]",
+    "[工厂， 4000]",
+    "[机库，1500]",
+    "[自由基地，4000]"
+   ],
+   "此处：\\n%c[ui_cyan]• 废料场 [机库，1500]\\t\\t\\n%c[ui_cyan]• 卡车墓地 [土匪停车"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_dv_bandit_5",
+   [
+    "[hangar, 4000]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[机库，4000]"
+   ],
+   "军械库 %c[ui_cyan][机库，4000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_pri_stalker_list_1",
+   [
+    "[\"Yanov\"]",
+    "[12000]",
+    "[3000]",
+    "[3000]",
+    "[8000]",
+    "[through Garik, 4000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[\"亚诺夫\"]",
+    "[12000]",
+    "[3000]",
+    "[3000]",
+    "[8000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[通过加里克， 4000]"
+   ],
+   "收件人：\\n%c[ui_cyan]• NPP [12000]  \\n%c[ui_cyan]• 普里皮亚季 [3000] "
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jup_1",
+   [
+    "[Forester's home]",
+    "[Skadovsk]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[斯卡多夫斯克]",
+    "[森林之主的家]"
+   ],
+   "嘿，兄弟。我叫加里克，我来回开车，主要行驶在禁区区域。我来登记一下：\\n%c[ui_cyan]• 酒吧 \\n%c[ui_"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_jup_list_1",
+   [
+    "[3000]",
+    "[6000]",
+    "[Forester's home, 2500]",
+    "[Laundry, 4000]",
+    "[Skadovsk, 2000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[3000]",
+    "[6000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[斯卡多夫斯克， 2000]",
+    "[林务官的家，2500]",
+    "[洗衣房，4000]"
+   ],
+   "收件人：\\n%c[ui_cyan]• 酒吧 [6000]  \\n%c[ui_cyan]• 普里皮亚季 [3000]  \\"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_zat_1",
+   [
+    "[\"Yanov\" station]",
+    "[through Garik]",
+    "[through Garik]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[“亚诺夫”车站]",
+    "[途经加里克]",
+    "[途经加里克]"
+   ],
+   "指挥员飞行员随时为您服务。这里没有太多可以停留的地方，但速度肯定会快得多，安全性也更高。我带您去：\\n%c[ui_cya"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_zat_list_1",
+   [
+    "[\"Yanov\" station, 2000]",
+    "[through Garik, 4000]",
+    "[through Garik, 5000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]"
+   ],
+   [
+    "[\"亚诺夫\" 车站， 2000]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[ui_cyan]",
+    "[通过加里克， 4000]",
+    "[通过加里克， 5000]"
+   ],
+   "收件人：\\n%c[ui_cyan]• 普里皮亚季 [通过加里克， 4000]  \\n%c[ui_cyan]• 郊区 of"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a28_actor_to_ssu_2",
+   [
+    "[Major Degtyarev]"
+   ],
+   [
+    "[德格塔列夫少校]"
+   ],
+   "[德格塔列夫少校] 我成功获取了关于在禁区进行的实验的相关文件。还有，我们还收到了一名在切尔诺贝利核电站的跟踪者的联系。"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a28_actor_to_ssu_with_heli_info",
+   [
+    "[Major Degtyarev]"
+   ],
+   [
+    "[德格塔列夫少校]"
+   ],
+   "[德格塔列夫少校] 是的，我有相关数据。斯特雷洛克的信息也证实了这一点。在排放过程中，直升机的位置发生变化后，它们遭到了"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a28_actor_to_ssu_without_heli_info",
+   [
+    "[Major Degtyarev]"
+   ],
+   [
+    "[德格塔列夫少校]"
+   ],
+   "[德格塔列夫少校] 斯特雷洛克认为这些直升机出现了异常现象。这些异常的位置每次发射后都会发生变化；这一事实在绘制“Fai"
+  ]
+ ],
+ "untranslated": [
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_bandit_19",
+   "send",
+   "..."
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_dolg_6",
+   "send",
+   "..."
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "bandit_barman_dar_mlr_find_number_4",
+   "send",
+   "..."
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "drink_with_me_24",
+   "send",
+   "..."
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "drink_with_me_7",
+   "send",
+   "A hungry man does not comprehend a hungry man... The drunk does not understand t"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_04500000001",
+   "send",
+   "Colt 1911"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_127000000001",
+   "send",
+   "Mossberg 590"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7622500000001",
+   "send",
+   "PPSh41"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7623900000001",
+   "send",
+   "AKM"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7623900000002",
+   "send",
+   "AKMS"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7623900000004",
+   "send",
+   "RPK"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7623900000005",
+   "send",
+   "SKS"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7623900000006",
+   "send",
+   "Type63"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7625400000002",
+   "send",
+   "SVD"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_792330000000001",
+   "send",
+   "Gewehr43"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_792330000000002",
+   "send",
+   "Mauser98k"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_7923300000003",
+   "send",
+   "StG44"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91800000001",
+   "send",
+   "APS"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91800000002",
+   "send",
+   "Fort12"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91800000004",
+   "send",
+   "PB"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91800000006",
+   "send",
+   "Kiparis"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91800000007",
+   "send",
+   "Vz.61"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91900000001",
+   "send",
+   "Beretta"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_91900000003",
+   "send",
+   "HPSA"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sd_hacking_soft_descr",
+   "send",
+   "Flash card with a written malware software - xHack version 1.0. It is known in n"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_2_start1_1",
+   "send",
+   "That's great! You're not as bad as you look. With your attentiveness you won't g"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "travel_guid_pri_stalker_3",
+   "send",
+   "In the Pripyat %c[ui_cyan][3000]"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_5",
+   "send",
+   "About zombies I can. Well, here it is a fairly common phenomenon, although unlik"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_10",
+   "send",
+   "Many here do not believe in paranormalism, and indeed everyone has a different f"
+  ],
+  [
+   "configs/text/eng/st_characters.xml",
+   "gar_3_5_stalker_paton_name",
+   "send",
+   "Eugene Paton"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "st_ssu_commander_name",
+   "send",
+   "USS Command"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "val_bandit_trader_meet_1",
+   "send",
+   "..."
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "val_bandit_trader_meet_2",
+   "send",
+   "..."
+  ]
+ ],
+ "num_lost": [
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_csky_1",
+   "10",
+   "Yeah, we need people, especially now when few of u",
+   "是的，我们需要人手，尤其是现在我们只剩下少数人了。去核电站的那次行动真的让我们的人员数量减少了。但我"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_ecolog_1",
+   "10",
+   "Yeah, we can take you into the junior field group,",
+   "是的，我们可以让你加入初级小组，但由于官僚程序上的延误，我们需要你支付1万格里夫尼亚的款项。你有这笔"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_killer_4",
+   "10",
+   "Shut up, you head of the gramophone. I don't think",
+   "闭嘴吧，你这个留声机主管。我觉得你不适合我们。因为我们工作的关键就是保密。你嘴巴太张了，得忍着点。当"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_killer_5",
+   "10",
+   "That's right. Hehehe, I think you're right for us.",
+   "没错。呵呵呵，我觉得你适合我们。在我们这个行业，保密性与订单的精确性同样重要。谁站在你面前并不重要，"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_monolith_1",
+   "10",
+   "Yeah, I know. Yes... But I have to take away 10 th",
+   "是的，我知道。但是我得从你那里拿走一万美元……这是他的要求。这是他的旨意。你有这笔钱，对吧？"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "georgii_kltsk_start_7",
+   "10",
+   "About 10 thousand hryvnias and medicines.",
+   "大约1万格里夫尼亚和一些药品。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_43",
+   "24",
+   "From what is known, the Supplies on the Swamps is ",
+   "据所知，沼泽地上的补给要么就在警戒线附近，要么在沼泽地带。在警戒线附近，可能靠近工厂和铁路隧道；如果"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_pred_start_4",
+   "10",
+   "Around 10 thousand hryvnias. And something else, b",
+   "大约一万格里夫尼亚。另外，根据具体情况还会得到一些额外的报酬。"
+  ]
+ ],
+ "trunc": [
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_killer_4",
+   403,
+   152,
+   "Shut up, you head of the gramophone. I don't think you're right for us",
+   "闭嘴吧，你这个留声机主管。我觉得你不适合我们。因为我们工作的关键就是保密。你嘴巴太张了，得忍着点。当雇佣兵就是要保守秘密，只有你和客户知道这"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "change_faction_to_killer_5",
+   385,
+   126,
+   "That's right. Hehehe, I think you're right for us. Secrecy is just as ",
+   "没错。呵呵呵，我觉得你适合我们。在我们这个行业，保密性与订单的精确性同样重要。谁站在你面前并不重要，动机应该只与你和客户有关。而且每个代理人"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "drink_with_me_16",
+   680,
+   228,
+   "Oh, shit, that's fucked up! My legs buckled... Ugh, I don't feel so go",
+   "哦，该死，这太糟糕了！我的腿都发软了……呃，感觉不太对劲。深呼吸，再深呼吸……现在感觉好些了。不，我根本不会喝酒，无论怎么努力，喝完就感觉糟"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "drink_with_me_28",
+   378,
+   141,
+   "Ooh, that went well, mate, thank you! When I think back... It brings t",
+   "哦，进行得不错啊，兄弟，谢谢！回想起那些事……真是让人流泪……啊？我有个朋友，愿他安息。他以前总是这样倒伏特酒，味道总是那么好，就像现在一样"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "drink_with_me_32",
+   486,
+   164,
+   "Oh, you made me happy! Listen, I was sitting here recently by the fire",
+   "哦，你让我开心极了！听着，最近我正坐在火炉旁，那些跟踪者一直在低声谈论藏起来的战利品，让我在地图上给你指一下。你……别担心，他们一天后就消失"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_13",
+   419,
+   130,
+   "Yes, also an interesting topic. Recently, traders have all sorts of ki",
+   "是的，这也是一个有趣的话题。最近，商人提供了各种制作弹壳的工具包，但任何自制的弹药都比工厂的更差。通常他们使用工具来制作弹壳以及相关的材料。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_15",
+   446,
+   141,
+   "Heh... Turn your head. What else can i do? Here in the Zone in general",
+   "呵……转转头。我还能做什么呢？在禁区里，很多事情都是我们自己动手完成的。破布和伏特加就是绷带。我们缝制睡袋和背包，这些材料和工具几乎任何商人"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_17",
+   306,
+   106,
+   "So, depending on what you want to collect, I say at once, I collect no",
+   "所以，根据你想收集的东西，我立刻说，我不会收集所有东西，而是不同的口径。看看我周围，这不是一个工厂，所以质量会过时。而且我使用的零件大多也是"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_3",
+   977,
+   304,
+   "The gun barrel is a delicate thing. To replace it you need to have two",
+   "枪管是一件非常精密的部件。要更换它，你需要两样东西：枪管本身以及更换用的工具套装。通常，枪管要么直接购买，要么使用专门的工具从武器上拆下来。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_5",
+   1127,
+   299,
+   "Well, the suits are not difficult to disassemble, the main thing here ",
+   "嗯，这些套装并不难拆卸，关键在于精确度。它们通常是成套出售的，由商人销售。更先进的设备则需要使用相应的工具才能拆卸。这类工作有三种工具可供选"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_7",
+   1029,
+   314,
+   "In the field, suits can also be repaired in a homemade way, of course,",
+   "在野外，套装也可以用自制的办法进行修理，当然这是可能的。从破布到厚重的装甲板，几乎所有东西都可以用来修理。消耗品本身不会粘在服装上，所以你仍"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "Klin_Guide_9",
+   430,
+   118,
+   "Weapons in the zone are difficult and expensive to keep in good condit",
+   "在禁区中的武器很难保养且成本高昂。由专业人士进行维修费用昂贵，所以你必须使用临时方法定期维护武器。要修理枪支，就像修理制服一样，你需要消耗品"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_13",
+   370,
+   131,
+   "This time it's more complicated, the cargo is either here on Cordon or",
+   "这次情况更复杂了，货物要么在封锁线这里，要么在沼泽地里。在封锁线附近可能有 ATP 和农场，如果没有，就在 Lonely 高塔或教堂周围的沼"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_14",
+   428,
+   134,
+   "This time is more complicated, the Supplies are either here, on the Co",
+   "这次情况更复杂了，补给物资要么就在这里，在封锁线上，要么在沼泽地里。在封锁线上，可能就在桥后的铁路隧道附近以及停车场，如果不在那里，就在孤独"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_16",
+   312,
+   101,
+   "From what is known, the Supplies are in the Swamps, it is either the n",
+   "据目前所知，补给品位于沼泽地中，可能位于教堂附近、机械厂附近，或者 lonely 高塔附近。如果不在那里，可能就在 Lo 附近的沼泽地。你只"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_18",
+   381,
+   132,
+   "This time is more complicated, the Supplies are either on the Cordon o",
+   "这次情况更复杂了，补给物要么在封锁线区域，要么在沼泽地。在封锁线区域，可能位于铁路隧道和停车场附近；如果不在那里，就到孤独塔高塔或教堂附近的"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_19",
+   394,
+   135,
+   "This time is more complicated, the Supplies are either here, on the Co",
+   "这次情况更复杂，补给物要么就在这里，位于封锁线上，要么在沼泽地中。在封锁线上，它可能位于停车场和农场的附近；如果不在那里，就在教堂或机械库附"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_20",
+   373,
+   129,
+   "This time is more complicated, the Supplies are either here, on the Co",
+   "这次的情况更复杂了，补给品要么就在封锁线这里，要么在沼泽地里。在封锁线那里，可能靠近铁路线隧道和农场；如果没有，就在靠近Lone高塔或教堂的"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_21",
+   368,
+   125,
+   "This time is more complicated, the Supplies are either on the Cordon o",
+   "这次情况更复杂了，补给品要么在封锁线上，要么在沼泽地里。在封锁线上可能靠近农场和停车场，如果没有，就在燃烧村附近或孤寂的高塔附近的沼泽地里寻"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_22",
+   394,
+   126,
+   "This time is more complicated, the Supplies are either here on Cordon ",
+   "这次情况更复杂，补给品要么就在封锁线这里，要么在沼泽地。在封锁线附近，可能位于铁路隧道和ATP附近，如果不在那里，就在孤塔高塔或烧毁的村庄附"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_29",
+   366,
+   127,
+   "This time is more complicated, the Supplies are either here on Cordon ",
+   "这次情况更复杂，补给品要么在封锁线这里，要么在沼泽地。在封锁线可能就在农场或停车场附近，如果不是，就在孤独的高塔附近或机器库里的沼泽地寻找。"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_30",
+   365,
+   125,
+   "This time is more complicated, the Supplies are either here on the Cor",
+   "这次情况更复杂了，补给品要么在封锁线这里，要么在沼泽地。在封锁线可能靠近铁路线隧道和农场，如果没有，就在孤独的高塔或教堂附近的沼泽地寻找。我"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_31",
+   403,
+   131,
+   "This time is more complicated, the Supplies are either here on the Cor",
+   "这次情况更复杂了，补给品要么在封锁线地区，要么在沼泽地。在封锁线地区，可能位于工厂附近和桥后的铁路隧道区域；如果没有，就在教堂或机械厂附近的"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_32",
+   397,
+   132,
+   "This time is more complicated, the Supplies are either here, on the Co",
+   "这次情况更复杂，补给物资要么就在封锁线上，要么在沼泽地里。在封锁线上，它可能位于铁路隧道和停车场附近；如果不在那里，就在孤独高塔或烧焦村附近"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_39",
+   374,
+   135,
+   "This time is more complicated, the Supplies are either here, on Cordon",
+   "这次情况更复杂，补给品可能在这里，在封锁线附近，或者在大沼泽地。在封锁线附近，它可能靠近铁路线隧道和工厂；如果没有，就在孤独之塔高塔附近或机"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_40",
+   350,
+   126,
+   "This time is more complicated, the Supplies are either here on Cordon ",
+   "这次的情况更复杂了，补给品要么在封锁线时在这里，要么在沼泽地。在封锁线时可能就在停车场和农场附近，如果没有，就在教堂附近或孤独的高塔的沼泽地"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_41",
+   385,
+   181,
+   "This time is more complicated, the Supplies are either here on the Cor",
+   "这次情况更复杂，补给品要么就在封锁线这里，要么在沼泽地。如果在封锁线，可能就在停车场和农场附近；如果不在，就在教堂或孤塔附近的沼泽地里找。封"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_42",
+   369,
+   118,
+   "This time is more complicated, the Supplies are either here on the Cor",
+   "这次情况更复杂了，补给物要么在封锁线这里，要么在沼泽地。在封锁线可能就在磨坊和铁路隧道附近，如果没有，就在教堂或机械场附近的沼泽地寻找。我知"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_8",
+   367,
+   128,
+   "This time is more complicated, the Supplies are either here on Cordon ",
+   "这次情况更复杂，补给物可能位于封锁线这里，或者沼泽地中。在封锁线可能就在磨坊附近或铁路隧道附近，如果没有的话，就在教堂或机器场附近的沼泽地中"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_drugs_start_9",
+   442,
+   157,
+   "This time is more complicated, the Supplies are either here on Cordon ",
+   "这次情况更复杂，补给品要么在 封锁线 这里，要么在沼泽地。在 封锁线 可能就在农场或磨坊附近，如果不在，就在沼泽地周围找。在孤寂的 高塔 只"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_fox.xml",
+   "fanat_pred_start_1",
+   425,
+   146,
+   "Mm-hmm. Mm-hmm. I'll try briefly. I'll give you a place to look for so",
+   "嗯。嗯。我会尝试一下。我会给你一个寻找的地方。不要问不必要的问题。如果你找到了，你就是村里第一个找到的人，愿赞美归于你，荣誉和半个王国加给你"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "sidorovych_start_dialog_10201",
+   708,
+   224,
+   "Okay, Stalker, listen up, I'm talking for the first and last time. I a",
+   "好的，潜行者，听好了，这是我第一次也是最后一次发言。我是个当地人。商人，而且在禁区今天并不是第一天。与我合作的人中，我总是会执行他们的命令并"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "serega_start_2",
+   892,
+   304,
+   "Hey, man! I see you're not from around here, you're new. Let's meet, I",
+   "嘿，兄弟！我看你不是本地人，是新来的吧。我们见见面吧，我是机械师，我叫谢尔盖。不用用军衔来打招呼，咱们就用简单的话立刻达成默契。我会向你说明"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "hog_limansk_1",
+   1045,
+   353,
+   " Ugh, eat him by the leg. What? I told him that right away? ...I'm not",
+   " 呃，从腿上把他吃掉。什么？我马上就告诉他了？……我不会再隐瞒了。听好了，我不会重复——在“利曼斯克”期间，我们很多人失踪了，没有尸体，没有"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "hog_limansk_31",
+   343,
+   135,
+   "Nothing good... Count it and no, fragments of radio messages from time",
+   "没什么好消息……只能数着时间，偶尔会收到一些无线电信号的片段。只是这些信号让我感到痛苦不堪。记录如下：听——“……P……grave……我们被"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "hog_limansk_33",
+   424,
+   142,
+   "Hmm... I'm not forcing you, but if you're in Limansk, try looking for ",
+   "嗯……我不是在强迫你，但如果你在利曼斯克里，试着在房子里寻找细节。我们的接收器在运输过程中损坏了，那些人不得不从一群野猪手中逃脱。现在信号只"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_heal_111",
+   386,
+   131,
+   "Hmm... Surface tissue damage, multiple traces of wounds, open wound. I",
+   "嗯……表面组织损伤，多处伤口痕迹，开放性伤口。我可以实施手术来稳定病情，这项服务费用为 2500 格里夫纳。你受到了辐射，出现了初期辐射病的"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_quest_book_1",
+   420,
+   142,
+   "I'd appreciate it if you could find me one book. \"Guide to Internal Pa",
+   "如果您能帮我找一本书，我将不胜感激。书名是《内部病理学指南》。我以前和一位同事住在这里，他喜欢收集各种珍稀书籍。但他去世后，他的妻子把他的所"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_1111",
+   453,
+   151,
+   "Welcome. Hmm... I haven't seen you before. I think we should meet if y",
+   "欢迎。嗯……我之前没见过你。如果你想多活一会儿，我觉得我们应该见面。我是维卡里乌斯，一名医生。我正在收集比你更不成功的跟踪者的遗物。我可以告"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_121",
+   737,
+   212,
+   "I hope you don't need this, but listen carefully. In the Zone, frequen",
+   "我希望你不需要这个，但请仔细听。在禁区中，频繁受伤的原因多种多样，无论是突变体攻击、枪伤还是负面异常。组织损伤通常伴随着出血。在箱子中，我建"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_1241",
+   635,
+   174,
+   "As well as stopping bleeding after mechanical damage to the body's tis",
+   "除了在身体组织受到机械损伤后止血之外，你还需要稳定状态以进行进一步恢复。个人急救包和刺激剂就足够了。急救包从最基础的到最先进的，都能吸收辐射"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_1251",
+   594,
+   166,
+   " Beware of places where anomalies, old equipment and other radioactive",
+   " 注意那些异常物质、旧设备以及其他放射性污渍堆积的地方。我建议你始终随身携带盖革计数器。进入这些区域之前，使用放射防护药物，或者穿戴带有封闭"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_1253",
+   324,
+   100,
+   "You can use the old proven method of drinking alcoholic beverages... H",
+   "你可以使用那种经过验证的老方法，即饮用含酒精的饮料……嗯……我还听说当地的香烟供应商已经与一些制造商达成协议，将吸収辐射的物质引入他们的烟草"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_medic_mlr_start_dialog_1261",
+   523,
+   156,
+   "In the Zone, there is a specific impact on the human psyche and the br",
+   "在禁区中，存在一种对人类心理和大脑整体具有特定影响的现象，称为灵能场。这种影响极其负面。暴露于强烈的灵能场会导致严重的脑损伤，最好的情况是导"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_heal_info_111",
+   767,
+   227,
+   "I hope you don't need this, but listen carefully. In the area, frequen",
+   "希望您不需要这个，但请仔细听。在这个区域，由于各种原因经常发生受伤情况，无论是突变体攻击、枪伤还是负面异常。组织损伤通常伴随着出血现象。在这"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_heal_info_121",
+   635,
+   174,
+   "As well as stopping bleeding after mechanical damage to the body's tis",
+   "除了在身体组织受到机械损伤后止血之外，你还需要稳定状态以进行进一步恢复。个人急救包和刺激剂就足够了。急救包从最基础的到最先进的，都能吸收辐射"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_heal_info_131",
+   594,
+   166,
+   " Beware of places where anomalies, old equipment and other radioactive",
+   " 注意那些异常物质、旧设备以及其他放射性污渍堆积的地方。我建议你始终随身携带盖革计数器。进入这些区域之前，使用放射防护药物，或者穿戴带有封闭"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_heal_info_133",
+   324,
+   100,
+   "You can use the old proven method of drinking alcoholic beverages... H",
+   "你可以使用那种经过验证的老方法，即饮用含酒精的饮料……嗯……我还听说当地的香烟供应商已经与一些制造商达成协议，将吸収辐射的物质引入他们的烟草"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_heal_info_141",
+   523,
+   156,
+   "In the Zone, there is a specific impact on the human psyche and the br",
+   "在禁区中，存在一种对人类心理和大脑整体具有特定影响的现象，称为灵能场。这种影响极其负面。暴露于强烈的灵能场会导致严重的脑损伤，最好的情况是导"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_info_31",
+   707,
+   234,
+   "Hmm... let me think... In general, the dead city is not just named. Pr",
+   "嗯……让我想想……一般来说，这座死城并非只是个名字而已。以前，这里居住着一些外国工程技术人员，他们没有在当地有住所，所以为他们建造了这座城镇"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_info_42002",
+   432,
+   142,
+   " Of course we tried. The search operation was carried out by Leopard, ",
+   " 我们当然尝试过了。搜索行动是由Leopard进行的，但即便他拥有追踪器的经验，搜索也未能成功，最终我们又失去了三个人。我听说Hog已经尝试"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_info_4201",
+   850,
+   269,
+   "Don't get it wrong, I'm a reasonable man, but not all aspects of the z",
+   "别误会，我是个通情达理的人，但至少因为这些现象的本质并不明确，所以并非所有关于禁区的事情都能用理智来理解。你读过库兹涅佐夫教授的著作《XXI"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_info_421",
+   653,
+   203,
+   " It's an old and gloomy city. Once upon a time on the outskirts of its",
+   " 这是一座古老而阴森的城市。曾经有那么一个时代……郊区其狭窄的街道上充满了生机。而现在，这里只剩下过去的影子，居住着变异者以及许多出身不凡的"
+  ],
+  [
+   "configs/text/eng/area_dialogs_all_las.xml",
+   "ds_killer_mlr_info_431",
+   531,
+   143,
+   "Dangerous terrain, many radiation spots, in some places there are clus",
+   "危险地形，有许多辐射点，某些地方还有异常现象群集，尤其是在最近的村庄。潜行者们说最好不要在那里过夜。此前，这个地区被称为“宁静山丘”，但后来"
+  ],
+  [
+   "configs/text/eng/area_dialogs_craft.xml",
+   "esc_stalker_klin_craft_5453900008",
+   307,
+   104,
+   "Done, the Stock of course is not polymeric and folding as in the origi",
+   "完成啦，当然，枪托不是聚合物材质且无法像原版那样折叠，枪口制退器也没有像在枪托上那样得到改进。无论我怎么努力，它都无法与定制样品相媲美，尽管"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_17001",
+   334,
+   111,
+   "Yeah! It's been a long time since those gas cylinders have kept me qui",
+   "是的！那些气罐让我保持沉默已经很久了。伙计，如果你有……箱子等等，别打扰我。好吧，呃……所以，要用溶液来覆盖它……滑动……对，更柔和的运行，"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_18001",
+   396,
+   115,
+   "All right, let's see. I know a little bit about this already... ...we ",
+   "好吧，让我看看。我对此已经了解一些了……我们在粘稠的载体中涂覆一层由均相和异相催化剂以及分散强化体系混合而成的多官能化合物……然后就是温度问"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_3001",
+   446,
+   145,
+   "Perfect! Recently a stalker came in with an unusual combez, but about ",
+   "太好了！最近有个跟踪者带着一个不寻常的装置来，但他关于如何改进它的细节却选择保持沉默。我听说过用于盔甲的特殊合金，但这……我简直睡不着！幸好"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_4001",
+   437,
+   132,
+   "Wait, I'm gonna see how, uh... Oh, cool info. Ceramic bulletproof vest",
+   "等等，我得看看怎么……哦，好消息。陶瓷防弹背心早在80年代就开始使用了，当时它们在重量/厚度保护方面表现更好，相比钢制防弹板来说。不过，这种"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_5001",
+   334,
+   110,
+   "Well, let's see... Yeah, there's a lot of ways to combine different ty",
+   "嗯，让我们看看……是的，有多种方式可以组合不同类型的装甲防护，这里有纺织金属、陶瓷有机塑料等等……是的，这是非常有价值的信息。最重要的是，我"
+  ],
+  [
+   "configs/text/eng/area_dialogs_flash.xml",
+   "esc_stalker_upgrade_flashdisk_8001",
+   319,
+   107,
+   "About frames? And what the hell do I not know about body armor frames?",
+   "关于框架？那我到底不知道关于防弹衣框架的什么鬼东西？得了吧，如果有什么我已知的，你可拿不到钱。那么，我们这里有什么呢？嗯，我知道的，还有，呃"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_silencer_descr",
+   406,
+   166,
+   "Flash disk containing information on the application of threads on the",
+   "包含有关在枪管上安装消音器时应用螺纹的信息的闪存盘。详细的指导说明。经验不足的技术人员会非常欢迎这样的资料，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_scope_descr",
+   387,
+   165,
+   "Flash disk containing information about mounts for sights and their in",
+   "包含有关瞄准具安装及其安装方法的信息的闪存盘。详细的指导说明。对于经验不足的技术人员来说，这样的工具非常实用，他们可以借助闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_grenade_descr",
+   386,
+   164,
+   "Flash disk containing information about the rifle mounts and their ins",
+   "包含有关步枪支架及其安装方式的信息的闪存盘。详细的指导说明。对于经验不足的技术人员来说，这样的工具非常实用，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_magazine_descr",
+   365,
+   159,
+   "Flash disk containing information about extended magazines. Detailed g",
+   "包含有关扩展弹匣信息的闪存盘。详细的指导说明。经验不足的技术人员会很高兴找到这样的工具，借助闪存盘中的信息，他们能够进行新的升级或多次新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_5.45_descr",
+   392,
+   167,
+   "Flash disk containing information about cutting barrel technology for ",
+   "包含有关口径 5.45x39 型切割筒技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的发现，因为他们可以借助闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_5.56_descr",
+   381,
+   151,
+   "Flash disk containing information on cutting technology for the calibe",
+   "包含口径 5.56x45 切割技术信息的闪存盘。详细指南。没有经验的技术人员会很高兴得到这样的资料，从而能够进行新的升级或多次新的升级。\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_9.18_descr",
+   389,
+   158,
+   "Flash disk containing information about cutting barrel technology for ",
+   "包含有关口径 9.18 号切割筒技术信息的闪存盘。详细指南。经验不足的技术人员会很高兴得到这样的信息，他们可以借助这些信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_9.19_descr",
+   383,
+   158,
+   "Flash disk containing information on cutting technology for the calibe",
+   "包含口径 9.19 切割技术信息的闪存盘。详细指南。缺乏经验的技术人员会非常欢迎这样的发现，他们可以借助闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.39_descr",
+   392,
+   166,
+   "Flash disk containing information about cutting barrel technology for ",
+   "包含有关口径 7.62x39 子弹切割技术信息的闪存盘。详细指南。经验不足的技术人员会很高兴得到这样的资料，他们可以借助闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.51_descr",
+   408,
+   167,
+   "A flash disk containing information about the technology of cutting th",
+   "一个包含关于将枪管切割成口径 7.62x51 技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的发现，他们可以借助闪存盘中的信息"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_7.62.54_descr",
+   392,
+   165,
+   "Flash disk containing information about cutting barrel technology for ",
+   "包含有关口径 7.62x54 子弹切割技术信息的闪存盘。详细指南。经验不足的技术人员会非常欢迎这样的资源，他们可以借助闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_plates_descr",
+   428,
+   160,
+   "Flash disk containing information on a variety of plates and inserts i",
+   "包含有关各种面板和插件以及其安装技术的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_alloy_descr",
+   416,
+   161,
+   "Flash disk containing information about a wide variety of materials-al",
+   "包含关于各种材料、合金及其使用技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ceramics_descr",
+   433,
+   167,
+   "A flash disk containing information about specific ceramic accessories",
+   "一个包含有关特定西装陶瓷配件的信息以及使用这些配件的技术的闪存盘。包含详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_doublearmor_descr",
+   423,
+   167,
+   "Flash disk containing information about the inner layer of armor for s",
+   "包含有关防护服内层装甲及其在防护服中应用的技术的信息的闪存盘。包含详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_segments_descr",
+   413,
+   163,
+   "Flash disk containing information on segmented protection for suits, a",
+   "包含有关分段防护的详细信息以及其在装备中的使用技术的闪存盘。附有详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_carcass_descr",
+   411,
+   167,
+   "Flash disk containing information on various frames for suits, as well",
+   "包含有关各种用于战斗的框架技术信息以及其在战斗中应用的技术的闪存盘。提供详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_titan_descr",
+   419,
+   161,
+   "Flash disk containing information about various titanium parts, as wel",
+   "包含有关各种钛部件的信息以及其使用和应用技术的闪存盘。提供详细的指导。技术人员会很高兴这一发现，借助闪存盘中的信息，他们能够进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_protectivesbk_descr",
+   447,
+   196,
+   "Flash disk containing information on the system of radiochemical prote",
+   "包含关于放射化学防护系统 SBC-RKGTS.m.II 的信息以及其在防护服中应用的技术的闪存盘。包含详细的指导说明。即使是经验丰富的技术人"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_obrabotka_descr",
+   377,
+   147,
+   "Flash disk containing information on the processing of various composi",
+   "包含有关各种作品处理信息的闪存盘。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_combined_descr",
+   420,
+   172,
+   "Flash disk containing information about the combined protection, as we",
+   "包含有关联合防护机制及其在防护服中应用的技术的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们能"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_regulirovka_descr",
+   379,
+   154,
+   "Flash disk containing information on the adjustment of weapon componen",
+   "包含武器组件调整信息的闪存盘。详细的指导说明。经验不足的技术人员会非常欢迎这样的工具，借助闪存盘中的信息，他们能够进行一次或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_polimers_descr",
+   400,
+   160,
+   "Flash disk containing information about polymeric materials, as well a",
+   "包含有关聚合物材料及其使用技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_trigger_descr",
+   384,
+   146,
+   "Flash disk containing information about the modifications of the trigg",
+   "包含有关扳机机构修改信息的闪存盘。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c["
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_position_descr",
+   413,
+   167,
+   "Flash disk containing information about exact positioning system, as w",
+   "包含有关精确定位系统及其应用技术的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的资料，借助闪存盘中的信息，他们能够进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gazcilindr_descr",
+   365,
+   149,
+   "Flash disk containing information on gas cylinder modifications. Detai",
+   "包含有关气瓶改造信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_napileniya_descr",
+   398,
+   161,
+   "Flash disk containing information on spraying for weapons, as well as ",
+   "包含有关武器喷洒技术及其使用方法的信息的闪存盘。包含详细的指导说明。技术人员会很高兴地发现这一工具，并能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_avtomatrezhim_descr",
+   416,
+   162,
+   "Flash disk containing information about the automatic shooting mode, a",
+   "包含有关自动射击模式以及其安装技术的信息的闪存盘。详细的指导说明。技术人员会很高兴地接受这一发现，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_porshen_descr",
+   373,
+   151,
+   "Flash disk containing information on the modification of the gas pisto",
+   "包含有关气体活塞改造信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_protivoves_descr",
+   407,
+   160,
+   "Flash disk containing information on counterweights for weapons, as we",
+   "包含有关武器配重及其安装技术的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_shtok_descr",
+   357,
+   151,
+   "Flash disk containing information on stock modification. Detailed guid",
+   "包含有关库存修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多个新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skolzdetali_descr",
+   380,
+   151,
+   "Flash drive containing information about the modification of the slidi",
+   "闪存盘包含有关滑动部件修改的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gazregulator_descr",
+   368,
+   154,
+   "Flash disk containing information on the gas regulator for weapons. De",
+   "包含武器气体调节器相关信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_speedmechanism_descr",
+   391,
+   154,
+   "Flash disk containing information on mesenisms of increasing the rate ",
+   "包含有关提高武器射击速率方法的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_tormoz_descr",
+   370,
+   150,
+   "Flash disk containing information about the muzzle brake for weapons. ",
+   "包含武器制退器信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c["
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismstrigger_descr",
+   396,
+   164,
+   "Flash disk containing information about the mechanisms for trigger sys",
+   "包含有关武器触发系统机制的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级或"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismszatvor_descr",
+   389,
+   160,
+   "Flash disk containing information about the mechanisms for the bolt fo",
+   "包含有关武器螺栓机制信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanisgazregulator_descr",
+   398,
+   165,
+   "Flash disk containing information about the mechanisms for the gas reg",
+   "包含有关武器气体调节器机制的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_stvol_descr",
+   370,
+   151,
+   "Flash drive containing information on the modification of the barrel. ",
+   "闪存盘包含有关枪管修改的信息。详细的指导。技术人员会很高兴这一发现，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismtormoz_descr",
+   397,
+   158,
+   "Flash disk containing information about the mechanisms for the muzzle ",
+   "包含有关武器制退器机制信息的闪存盘。详细指南。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_mechanismstvol_descr",
+   392,
+   156,
+   "Flash drive containing information about the mechanisms for the barrel",
+   "闪存盘包含有关武器枪管机制的信息。详细的指导。即使是经验丰富的技术人员也会欢迎这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_newmaterials_descr",
+   420,
+   163,
+   "A flash disk containing information on the replacement of components w",
+   "一个包含关于用新型材料替换武器部件信息的闪存盘。详细的指导说明。经验不足的技术人员会很高兴得到这样的资料，他们可以依据闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_usilitel_descr",
+   378,
+   150,
+   "Flash drive containing information about the pneumatic amplifier for w",
+   "闪存盘包含有关武器气动放大器的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_servomotors_descr",
+   380,
+   162,
+   "Flash drive containing information about servos and their installation",
+   "闪存盘包含有关伺服电机及其安装的信息。详细的指导。即使是经验丰富的技术人员也会喜欢这样的资料，借助闪存盘中的信息，他们就能进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_carbon_descr",
+   386,
+   152,
+   "Flash disk containing information about specific carbon parts and thei",
+   "包含有关特定碳部件及其安装信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_exosystems_descr",
+   399,
+   169,
+   "A flash disk containing information about systems for exoskeletons and",
+   "一个包含有关外骨骼系统及其安装信息的闪存盘。包含详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们也能进行"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_amortizators_descr",
+   371,
+   158,
+   "Flash disk containing information about shock absorbers and their use.",
+   "包含有关减震器及其使用信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_artdetector_descr",
+   404,
+   163,
+   "Flash disk containing information about the determinant of the positio",
+   "包含有关确定文物位置相关信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_layers_descr",
+   377,
+   159,
+   "Flash disk containing information about additional layers for suits. D",
+   "包含有关套装额外层级的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_rubberizol_descr",
+   369,
+   155,
+   "Flash disk containing information about rubber insulation for suits. D",
+   "包含有关防护服橡胶绝缘材料的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_thermoizol_descr",
+   370,
+   151,
+   "Flash disk containing information about thermal insulation for suits. ",
+   "包含有关防护服热绝缘信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_orgsteklo_descr",
+   373,
+   156,
+   "Flash disk containing information about parts from plexiglass for suit",
+   "包含有关西装用有机玻璃部件信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_constant_descr",
+   389,
+   155,
+   "A flash drive containing information on the modification of psyche pro",
+   "一个包含有关盔甲心理保护修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_propitka_descr",
+   349,
+   147,
+   "Flash drive with data on the treatment of suits. Detailed guidance. Te",
+   "带数据的闪存盘关于诉讼处理。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c[def"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_chestplates_descr",
+   373,
+   149,
+   "Flash disk containing information about additional body armor for suit",
+   "包含有关额外防护服信息的闪存盘。详细指南。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c[d"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_newscopes_descr",
+   392,
+   155,
+   "Flash disk containing information on the modification of the integrate",
+   "包含有关武器集成瞄准装置修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_contrast_descr",
+   393,
+   153,
+   "Flash disk containing information on the modification of the contrast ",
+   "包含有关武器视角对比修改信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_autoaim_descr",
+   382,
+   157,
+   "Flash drive containing information on the guidance system for sights f",
+   "闪存盘包含有关武器瞄准装置引导系统的信息。详细的引导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_pnv_descr",
+   377,
+   152,
+   "Flash drive containing information about the night vision googles for ",
+   "闪存盘包含有关用于服装的夜视眼镜的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dynamicscope_descr",
+   369,
+   151,
+   "Flash drive containing information on adjustable sights for weapons. D",
+   "闪存盘包含有关武器可调节瞄准具的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_lenses_descr",
+   378,
+   152,
+   "Flash drive containing information on the modification of lenses for w",
+   "闪存盘包含有关武器镜头修改的信息。详细的指导。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级或多个新的升级。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_rukoyatka_descr",
+   372,
+   151,
+   "Flash disk containing information on the modification of the grip arms",
+   "包含有关修改握把武器信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_compensator_descr",
+   385,
+   150,
+   "Flash drive containing information about the modification of the weapo",
+   "闪存盘包含有关武器补偿器修改的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_filters_descr",
+   395,
+   156,
+   "Flash disk containing information about additional filters for weapons",
+   "包含有关武器附加过滤器及其安装信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_antenns_descr",
+   396,
+   159,
+   "Flash disk containing information on the installation of protective an",
+   "包含有关安装防护服天线信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行一次或多次新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ecran_descr",
+   371,
+   149,
+   "Flash drive containing information about protective screens for suits.",
+   "闪存盘包含有关防护服保护屏的信息。详细的指导。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_cupols_descr",
+   368,
+   153,
+   "Flash disk containing information about protective domes for suits. De",
+   "包含有关防护服保护罩信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_closedbreath_descr",
+   382,
+   155,
+   "Flash disk containing information about the system of closed breathing",
+   "包含有关防护服密闭呼吸系统的信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_psystimulators_descr",
+   392,
+   165,
+   "Flash drive containing information about the system of psychostimulati",
+   "闪存盘包含有关 suits 心理刺激系统的信息。详细的指导。即使是经验丰富的技术人员也会欢迎这样的发现，并能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skaneri_descr",
+   368,
+   165,
+   "Flash disk containing information about scanners for suits. Detailed g",
+   "包含有关扫描仪详细信息的闪存盘。提供详细的指导。即使是经验丰富的技术人员也会喜欢这样的发现，因为从闪存盘中获取的信息可以帮助他们进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_ionwind_descr",
+   370,
+   163,
+   "Flash disk containing information about the system for suits. Detailed",
+   "包含有关系统设置的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为从闪存盘中获取的信息可以帮助他们进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_psyprotect_descr",
+   397,
+   163,
+   "A flash drive containing information on the modification of psyche pro",
+   "一个包含有关盔甲心理防护修改信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的资料，他们能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_pruzhini_descr",
+   379,
+   153,
+   "Flash disk containing information about the modification of the weapon",
+   "包含有关武器弹簧修改信息的闪存盘。详细的指导说明。技术人员会对这一发现感到满意，并能够利用闪存盘中的信息进行新的升级或多次新的升级。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_priemnik_descr",
+   403,
+   165,
+   "Flash disk containing information about the modification of the magazi",
+   "包含有关武器弹匣接收器修改信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们也能进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_injectorfury_descr",
+   379,
+   167,
+   "Flash disk containing information about the \"Rage\" injector for suits.",
+   "包含有关“Rage”套装注射器的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，而且能够利用闪存盘中的信息进行新的"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dustprotect_descr",
+   386,
+   164,
+   "Flash disk containing information about the dust protection system for",
+   "包含有关防护服防尘系统的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升级或"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_injectorgemo_descr",
+   383,
+   165,
+   "Flash disk containing information about the hemoglobin injector for su",
+   "包含有关套装用血红蛋白注射器的信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_biostimulator_descr",
+   370,
+   162,
+   "Flash disk containing information on biostimulants for suits. Detailed",
+   "包含有关用于设备的生物刺激剂信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_feniksregen_descr",
+   380,
+   178,
+   "Flash disk containing information about the system \"Phoenix\" for suits",
+   "包含关于“Phoenix”系统相关信息的闪存盘，用于设备维护。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为从闪存盘中获取"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_neuroemittor_descr",
+   382,
+   164,
+   "Flash drive containing information about the neurowave emitter for sui",
+   "闪存盘 包含有关防护服用神经微波发射器的信息。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_complexdoctor_descr",
+   380,
+   168,
+   "Flash disk containing information about the complex \"Doctor\" for suits",
+   "包含有关复杂“Doctor”设备相关信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_gasballons_descr",
+   393,
+   162,
+   "Flash disk containing information on gas cylinders for suits, as well ",
+   "包含有关防护服用气罐及其安装方式的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_artmodules_descr",
+   408,
+   163,
+   "Flash disk containing information about the modules for artifacts for ",
+   "包含有关盔甲装备模块及其安装方式的信息的闪存盘。附有详细的指导说明。技术人员会很高兴地发现这一点，因为他们可以利用闪存盘中的信息进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_kreplenie_descr",
+   392,
+   155,
+   "Flash disk containing information about unloading for suits, as well a",
+   "包含有关西装卸装及安装方法的信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，并能够利用闪存盘中的信息进行新的升级或多次新的升级。"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_restoresystem_descr",
+   408,
+   169,
+   "Flash disk containing information on regeneration systems for suits, a",
+   "包含有关盔甲再生系统及其安装方法的信息的闪存盘，附带详细的指导说明。即使是经验丰富的技术人员也会喜欢上这样的工具，借助闪存盘中的信息，他们就"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_skatsystem_descr",
+   377,
+   175,
+   "Flash disk containing information about the system \"Skat\" for suits. D",
+   "包含关于“Skat”系统相关信息的闪存盘，用于设备维护。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，因为通过闪存盘中的信息，"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_marafonecsystem_descr",
+   382,
+   161,
+   "Flash disk containing information about the complex \"Marathon\" for sui",
+   "包含有关复杂“马拉松”套装信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的发现，并能够利用闪存盘中的信息进行新的升级或多"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_poisonfilters_descr",
+   392,
+   163,
+   "Flash disk containing information about the filtering system for poiso",
+   "包含有关诉讼用毒物过滤系统信息的闪存盘。详细的指导说明。即使是经验丰富的技术人员也会喜欢这样的工具，借助闪存盘中的信息，他们就能进行新的升级"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_systemvaryag_descr",
+   377,
+   175,
+   "Flash disk containing information about the Varyag system for suits. D",
+   "包含有关 Varyag 系统用于维修的详细信息的闪存盘。这些指导信息非常有用。即使是经验丰富的技术人员也会喜欢这样的发现，因为他们可以借助闪"
+  ],
+  [
+   "configs/text/eng/area_flash_disks.xml",
+   "st_itm_upgr_flash_disk_dynamo_descr",
+   377,
+   154,
+   "Flash disk containing information about the modification of dynamo mac",
+   "包含有关发电机改造信息的闪存盘。详细的指导说明。技术人员会很高兴地发现这一点，因为有了闪存盘中的信息，他们就能进行新的升级或多次新的升级。\\"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "mutant_part_psy_dog_brain_description",
+   581,
+   241,
+   "Psy-dogs are distinguished by powerful mental abilities, in particular",
+   "灵犬以其强大的心理能力著称，尤其是能够制造幻象并对其他生物的大脑产生影响，可以肯定地说，这些能力源自它们的大脑。有趣的是，每个拥有此类与灵波"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_deactivate_mix_descr",
+   357,
+   156,
+   "A mixture of potasium permanganate and an alcohol-containing substance",
+   "一种由高锰酸钾和含酒精的物质混合而成的物质。适用于通过物理方式去除放射性物质来使物体失去功能。对于未密封或未加压的物品，无法使其失效。\\n\\"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_wine_descr",
+   1023,
+   388,
+   "A bottle of red wine Merlot. Among the top ten international varieties",
+   "一瓶梅洛红葡萄酒。它属于十大国际红葡萄酒品种之一，是仅次于著名的赤霞珠的第二大热门品种。天然红葡萄酒能增强身体对病毒、电磁和辐射的抵抗力，含"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_spareparts_descr",
+   348,
+   155,
+   "Spare parts of old weapons. The wooden elements are not to say that th",
+   "旧武器的备用零件。木制部件当然并非完好无损，只有初学者才会对购买它们感兴趣。金属部件也处于相对良好的状态。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sov_r_spareparts_descr",
+   331,
+   154,
+   "Spare parts of automatic weapons: springs, strikers, receiver boxes, s",
+   "自动武器的备用零件：弹簧、击针、机匣、枪托、弹仓等。这些部件状况还算不错，不过木质部件除外。\\n\\n%c[default] 规格说明：\\n%"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_r_spareparts_descr",
+   347,
+   156,
+   "Spare parts of automatic weapons from Europe: springs, strikers, recei",
+   "来自欧洲的自动武器备件：弹簧、击针、机匣、枪托、弹仓等。这些部件状况相对良好，不过部分聚合物部件有些磨损。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_sov_p_spareparts_descr",
+   330,
+   160,
+   "Spare parts of pistols with space in the CIS: springs, strikers, frame",
+   "CIS 系统中可用的手枪零件：弹簧、击针、框架、弹夹等。这些部件状况较好，不过部分塑料部件有些磨损。\\n\\n%c[default] 规格说明"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_p_spareparts_descr",
+   313,
+   149,
+   "Spare parts of pistols from Europe: springs, strikers, frames, clips a",
+   "来自欧洲的手枪配件：弹簧、击针、框架，配件及其他更多内容。除部分聚合物部件外，其他组件状况都还不错。\\n\\n%c[default]规格：\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_nato_s_spareparts_descr",
+   341,
+   156,
+   "Spare parts sniper weapons from Europe: springs, strikers, receiver bo",
+   "来自欧洲的狙击武器备用零件：弹簧、击针、机匣、枪托、弹仓等。这些零件状况较好，不过部分聚合物部件有些磨损。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_shot_spareparts_descr",
+   319,
+   158,
+   "Spare parts for shotguns: springs, strikers, receiver boxes, frames, c",
+   "散弹枪配件：弹簧、击针、枪身外壳、框架、弹夹等更多物品。这些部件状况还算不错，不过有些聚合物部件有些老化。\\n\\n%c[default]规格"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_pp_spareparts_descr",
+   337,
+   163,
+   "Spare parts for submachine guns: springs, strikers, receiver boxes, fr",
+   "冲锋枪的备用零件：弹簧、击针、机匣外壳、框架、弹夹等更多部件。这些零件状况还算不错，不过有些聚合物部件有些损坏。\\n\\n%c[default"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_itm_cutting_tools_descr",
+   312,
+   147,
+   "A set of improvised tools and industrial high-tech tools of the highes",
+   "一套用于切割和修剪的优质即兴工具及工业高科技工具。可切割并拆卸任何防护服或头盔。\\n\\n%c[default] 规格说明：\\n%c[0,15"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_itm_cutting_tools_3_descr",
+   305,
+   151,
+   "A set of tools for cutting and trimming, which was assembled from impr",
+   "一套用于切割和修剪的工具，由临时拼凑而成。仅允许处理低技术含量的织物物品以及防毒面具。\\n\\n%c[default]规格说明：\\n%c[0,"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_itm_uncraft_tools_1_descr",
+   325,
+   152,
+   "A set of improvised tools and rough tools for disassembly. Allows you ",
+   "一套用于拆解的临时工具和粗糙工具。可以拆解任何形式的枪支，不过这些工具不足以实现更高效的制造。\\n\\n%c[default] 规格说明：\\n"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_itm_uncraft_tools_2_descr",
+   333,
+   157,
+   "Factory set of tools and tools for disassembling. Allows you to disass",
+   "工厂一套用于拆解的工具。可以拆解几乎所有物品，除了 7.92 毫米的口径步枪和一些狙击步枪。\\n\\n%c[default] 规格：\\n%c["
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_itm_uncraft_tools_3_descr",
+   325,
+   144,
+   "A set of high-quality industrial tools and tools for disassembly. Allo",
+   "一套高质量的工业工具及拆解工具。可以让你拆解任何武器。\\n\\n%c[default] 规格：\\n%c[0,155,155,155] • %c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_seva_descr",
+   366,
+   169,
+   "The armored plate of the “SEVA” model, cut out of the suit. Made by te",
+   "“谢瓦”型号的装甲板，从战衣上切割而成。由基辅某国防研究机构的技术制造。能够阻挡手枪子弹，并吸收刃器造成的伤害。可用作修复材料。\\n\\n%c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_heavy_descr",
+   354,
+   164,
+   "Ceramic-composite panel model «ESAPI». Provides protection class 4. Ma",
+   "陶瓷复合板型号「ESAPI」。提供4级防护等级。由高质量复合材料和陶瓷制成，防护物质被涂覆在板材表面。可用作修复材料。\\n\\n%c[defa"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_medium_descr",
+   494,
+   196,
+   "The armor \"SAPI\" of lightweight combined armor. Provides protection cl",
+   "这种轻型复合装甲名为“SAPI”。提供3级防护能力，由优质材料制成。在装甲板的前侧，陶瓷层之上，有一层防护层，旨在提高装甲板的作战生存能力。"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "plate_monolith_descr",
+   307,
+   152,
+   "Unknown armor element, made of alloys and reinforced fabrics. Extremel",
+   "未知护甲部件，由合金和加固织物制成。重量极重。提供5级防护。显然不是手工制品。可用作修复材料。\\n\\n%c[default]属性：\\n\\n%"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "circuit_board_descr",
+   536,
+   189,
+   "A PCB is a dielectric plate, on the surface and/or in the volume of wh",
+   "PCB是一种介电板，其表面和/或内部形成了导电电子电路。印刷电路板用于各种电子元件的电气和机械连接。印刷电路板上的电子元件通过其引脚与导电图"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "servokit_descr",
+   308,
+   146,
+   "Specialized kit for replacing the servo of the exoskeleton in the fiel",
+   "用于现场更换外骨骼伺服电机的专用工具包。包含所需的材料以及校准工具。仅可用于更换伺服电机。\\n\\n%c[default] 规格说明：\\n%c"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_detonator_descr",
+   404,
+   137,
+   "It is a part of an explosive device containing an explosive charge tha",
+   "它是一种爆炸装置的一部分，内部含有对外部影响更为敏感的爆炸物，比主装药中的高爆炸药更为敏感。该起爆器能够可靠地引发炮弹、地雷、炸弹、导弹弹头"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_descr",
+   677,
+   282,
+   "One of the edible species of mushrooms growing on the territory of the",
+   "这种可食用的蘑菇生长在禁区及其周边地区。它没有任何变异特性。经过长时间煮沸或煎炒后食用，味道微苦。当地吸毒者常将其用于制造镇静剂和强效止痛药"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_muh_descr",
+   619,
+   277,
+   "Big amanita, which can be found within the Zone. Unlike its counterpar",
+   "大型的毒蝇伞蘑菇，可以在禁区中找到。与同类蘑菇不同，它含有大量有害和放射性物质，因此毒性更强。可用于制药。建议不要使用在禁区采集的蘑菇，因为"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_mushroom_fried_descr",
+   544,
+   232,
+   "Large boiled mushroom. Edible, tastes good after a long cooking period",
+   "大型煮熟的蘑菇。可食用，经过长时间烹饪后味道更佳。尽管仍含有少量毒素，但当地美食家常将其作为替代食物来源。这种蘑菇通常生长在沼泽和阴暗的地方"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_crow_egg_descr",
+   343,
+   151,
+   "Common crow Egg. It is a very high-calorie product, it satisfies hunge",
+   "常见的乌鸦蛋。这是一种热量极高的食物，能满足饥饿感，稍微改善健康状况，并减少辐射剂量。由于禁区中缺乏鸡和其他产蛋动物，因此它成为一种当地的美"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_crow_boiled_egg_descr",
+   339,
+   155,
+   ">A boiled crow egg, a very high-calorie product, satisfies hunger, sli",
+   ">一个煮熟的乌鸦蛋这是一种热量极高的产品，能够满足饥饿感，稍微改善健康状况，并略微减少辐射剂量。考虑到当地没有鸡和其他产蛋动物禁区，是一种当"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_dosimeter_descr",
+   849,
+   351,
+   "The dosimeter \"Pripyat\" RKS-20.03 is an electronic measuring instrumen",
+   "辐射剂量计 “普里皮亚季” RKS-20.03 是一种由苏联制造的电子测量仪器。它用于单独或集体测量背景电离辐射的等效剂量率、β辐射通量密度"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_strelok_pda_descr",
+   402,
+   170,
+   "Smartphone of the famous Gunslinger. According to the content, you can",
+   "著名枪手的第智能手机阶段。根据内容可知，他几乎没时间使用它。从保存下来的信息来看，只有前往切尔诺贝利核电站的转移计划，以及一张包含异常区域地"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "st_chernov_docs_descr",
+   318,
+   158,
+   "Papers from lab X-19. Most of the pages are damp, you can't read them.",
+   "来自实验室 X-19 的文件。大部分页面都潮湿，无法阅读。但在图表上，你可以分解出雷达附近区域的地图。此外，还有将实验样本固定在树木上的方法"
+  ],
+  [
+   "configs/text/eng/area_items.xml",
+   "ah_gramota_desc",
+   341,
+   157,
+   "A personal letter of appreciation acknowledging your merits to science",
+   "一封由学术院士斯卡宾斯基亲自签名的感谢信，表彰您在科学领域的贡献。同时附有一份建议文件，以认可本文的提交者作为切尔诺贝利区域研究所的候选人。"
+  ],
+  [
+   "configs/text/eng/area_quests.xml",
+   "drx_sl_dasc_trade_mlr_task_1_about",
+   329,
+   110,
+   "I got some important documents for me, the courier left them, I think ",
+   "我有一些重要的文件，快递员把它们留在这里了。我认为它们放在某个合同相关的地方，你需要去取。注意别被跟踪，如果察觉到有人跟踪，就消除他们。箱子"
+  ],
+  [
+   "configs/text/eng/area_quests.xml",
+   "drx_sl_bar_visitors_barman_stalker_trader_task_3_fetch_about",
+   562,
+   184,
+   "Interruptions in delivery, there's lot of visitors... But supplies are",
+   "交货过程中会有中断，而且有很多人来拜访……但物资还是非常需要的。偶尔会有人给我带来一两个变异动物的尸体，但最近没人愿意去捕猎了。所以，如果你"
+  ],
+  [
+   "configs/text/eng/area_quests.xml",
+   "drx_sl_merc_pri_a18_mech_mlr_task_1_about",
+   303,
+   100,
+   "We always have a lot of contracts for the next head. Recently, a rathe",
+   "我们接下来还有很多关于下一个首领的合同需要处理。最近，有一个相当有趣的人联系了我们，他的目标同样引人注目，所以我希望由你来完成这份合同。合同"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "deactivate_items_1",
+   359,
+   104,
+   "I think so, we have a decontamination chamber in the laboratory. But y",
+   "我想是的，我们在实验室里有一个去污室。但您应该明白，我无法免费为您处理这件事。我还想立即提醒您，我们的摄像机体积很大，每次使用的去污剂数量几"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_10",
+   638,
+   221,
+   "The gun barrel is a delicate thing. To replace it, you need two things",
+   "枪管是一件非常精密的部件。要更换它，你需要两样东西：枪管本身以及更换工具包。枪管通常可以通过购买获得，或者用手工从枪支上取出，无论是用刀还是"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_11",
+   660,
+   207,
+   "Well, the suit is not difficult to disassemble, the main thing here is",
+   "嗯，这套装备拆解起来并不困难，关键在于精确度。它们主要是按套出售的，商人会出售整套装备。有用于已损坏的装备的套件，也有更精密的套件，用于新装"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_12",
+   671,
+   224,
+   "In the field, repairing suits is better than artisanal, of course, dif",
+   "在战场上，当然，修理盔甲比手工修理更困难，但仍然是可行的。几乎任何东西都可以用来修理：从破布到厚重的装甲板。不过，这些消耗品本身不会粘在盔甲"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_13",
+   518,
+   141,
+   "Weapons in the zone are quite difficult and expensive to maintain. Rep",
+   "禁区级别武器维护起来相当困难且成本高昂。由专业人士进行维修几乎总是更经济实惠，但你自己则需要借助简易工具定期保养武器，因为维修成本总是更高。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_15",
+   397,
+   134,
+   "Yes, also an interesting topic. More recently, merchants have all kind",
+   "是的，这也是一个有趣的话题。最近，商人提供了各种制作弹壳的工具包，但任何自制的弹药都比工厂的弹药质量差。他们通常使用工具来制作弹壳以及制作所"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "inf_craft_16",
+   448,
+   156,
+   "Well, here in the Zone, in general, there are a lot of things that the",
+   "嗯，在禁区里，他们通常会做很多事情。用破布和伏特加来制作绷带。他们自己缝制睡袋和背包，以及几乎所有商人都需要的材料和工具。他们还喜欢用临时材"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_trade_dasc_1",
+   459,
+   153,
+   "Yes, the fact is that I can't store whole arsenals here, despite the f",
+   "是的，事实是，尽管这里是一个巨大的机库，但我无法在这里存放大量的武器。这里没有仓库，对吧？屋顶漏水，墙壁有洞，而且排放物也会造成问题。在最好"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_trade_bandit_1",
+   335,
+   121,
+   "Well, in the Zone with valleys, the situation is as follows: we do not",
+   "嗯，在有山谷的禁区地区，情况如下：我们几乎不进行贸易，只交易矿渣，因为那样没有利润，而且我们都是按订单来供货。我负责处理这里的订单。但如果你"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "totaliz_pre_1",
+   379,
+   138,
+   "I see you have earned a good reputation in the arena, which means you ",
+   "我看你在“竞技场”中赢得了良好的声誉，这意味着你可以下注并观看战斗！没错，就像那些巨大的债务挑战一样，把这当作我送给你的礼物，作为一位优秀战"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "wings_soldier_mon_mlr_1_talk_5",
+   539,
+   174,
+   "And as a former me, the Zone has long been trampled. I've been hanging",
+   "作为曾经的我，禁区早已被践踏得不成样子。最近我常泡在酒吧里，自从雷达这里开始那场混乱事件以来，我依然没有断粮。后来，了解发生了什么并看看那场"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "esc_factory_smart_terrain_10_bandit_mechanic_first_meet_3",
+   669,
+   195,
+   "Yeah, I am, you know? I got into a zone of foolishness and juveniles b",
+   "是的，我知道。我进去了。禁区因为那该死的啤酒，他变得愚蠢且幼稚。他让“朋友”在清理商店时留意情况，结果他们只拿到几块香烟和一个箱子他们喝着啤"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "esc_factory_smart_terrain_10_bandit_mechanic_first_meet_7",
+   708,
+   230,
+   "Well, it didn't work out any further. There's no work, no money, and t",
+   "嗯，事情并没有继续发展下去。没有工作，没有钱，而且还有个一直和我一起服刑的兄弟。于是那头老大提出来这里找我。他见到我是因为我在机器上散发着卡"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_5_dlg_1_3",
+   329,
+   120,
+   "No, not alone. You'll meet another one of our bands, they're acting as",
+   "不，不是单独行动。你会遇到我们的另一支乐队，他们现在充当着风暴部队的角色。我会给新成员一些时间，先和一组人相处，然后再和另一组人相处，这样他"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_5_1_dlg_1_3",
+   600,
+   219,
+   "Then, as you know, some freak or a group of freaks broke our protectiv",
+   "然后，如你所知，某个或一群疯子突破了我们的防御屏障“Burner”，接着就出现了那些“Woofers”，各种“冒险者”，甚至还有那些混蛋。我"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_5_1_dlg_about_leader_1",
+   347,
+   131,
+   "I woke up somewhere near Pripyat, with people I didn't know, and nothi",
+   "我在普里皮亚季附近醒来，周围都是我不认识的人，一切我都记不得了。我们唯一的共同点就是制服，而且我们彼此都没有让对方失望。我的过去已经过去了，"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_gar_talk_to_choper_3",
+   1156,
+   342,
+   "Here you can say the flea market is the main pearl, and the rest ... t",
+   "这里可以这么说，跳蚤市场是核心所在，其余的……仓库北边有一条铁路，别去那儿，那里强盗重建了营地。再往北就是通往酒吧的直接道路，那里有多尔加尔"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_4_dlg_1_2",
+   654,
+   247,
+   "\"Wings,\" exactly what's left of them. They call me Griffin, those guys",
+   "“Wings”，就是他们仅存的部分。他们称我为Griffin，那边的两个人叫麻雀和Pegasus，那个自大的家伙拿着SVD枪的就是Wind。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_3_dlg_1_6",
+   455,
+   159,
+   "And you're damn right it is. Except that's how bad their PDA reports a",
+   "你说得对，确实如此。只不过他们的 PDA 报告实在糟糕。之前你站在一起的其中一个新兵，本应从仓库里偷走Monolithic公司的高跟鞋，然后"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_1_dlg_1_5",
+   535,
+   174,
+   "Hmm and where do you come from such jokers. In general, the \"Monolith\"",
+   "嗯，你们这些怪人到底来自哪里？一般来说，“黑石” 已经和以前不同了。简单来说，这个团体现在只有少数几个热心者支持着它。在“燃烧器”被禁用之后"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_1_dlg_1_6",
+   555,
+   178,
+   "At least honestly. In general, the \"Monolith\" is not the same as befor",
+   "至少说实话。总体而言，“黑石” 已经和以前不同了。简单来说，这个团体现在只有少数几个热心者支持着它。在“燃烧器”被禁用后，很多人离开了这个团"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_1_dlg_1_7",
+   560,
+   174,
+   "Here it is the very thing that keeps people like us in brotherhood. In",
+   "这就是维系我们这样的兄弟情谊的纽带。总的来说，“黑石”已经和以前不同了。简单来说，这个兄弟会现在只有少数几个热心者支持。在“燃烧器”被禁用之"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_1_dlg_1_8",
+   512,
+   160,
+   "Don't make me laugh. In general, the \"Monolith\" is not the same as bef",
+   "别逗我笑了。总的来说，“黑石” 已经和以前不一样了。简单来说，这个团体现在只有少数几个热心者支持着它。在“燃烧器”功能被禁用后，很多人离开了"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "main_monolith_mlr_task_1_dlg_1_10",
+   710,
+   220,
+   "There is a time for everything, a new brother. Remember that your past",
+   "凡事都有合适的时机，新兄弟。记住，你的前世即将结束。兄弟情谊最终变得愈发稀薄，但怨恨却更深了。你在这里必须经历的那些事情，尤其是在测试期间，"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "rookie_pole_task_1_dlg_1",
+   761,
+   231,
+   "This is all a factory. You know, the place here is certainly not the \"",
+   "这全都是工厂的地方。你知道的，这里当然不是所谓的“第一新鲜之地”，但自从第一次爆炸之后，这里并没有多少文物，而且对于郊区和禁区来说，这里也很"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "rookie_pole_task_1_dlg_3",
+   575,
+   194,
+   "Yeah. But first, please help me, I had a commander's watch, I got it f",
+   "是的。但首先，请帮帮我。我有一块指挥官的手表，是祖父传给我的。我在当地变电站里挖掘时把它弄丢了，那里有一些奇怪的异常现象，我太粗心了，其中一"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "look_for_cs_history_part_2_1_7",
+   615,
+   220,
+   "Eh, that's true. I saw something special in Scar, and Zone needed him.",
+   "呃，确实如此。我在斯卡尔身上看到了一些特别之处，而禁区需要他。至于你……是的，我想知道他到底发生了什么。所以听好了：我们帮助把那些“merc"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "look_for_cs_history_part_1_2_1",
+   765,
+   237,
+   "The Observers have already reported to me, well done. Well, you're a f",
+   "观察者们已经向我汇报了情况，做得很好。嗯，你确实是个战士。那么听好了：那些人告诉我，利曼斯克中的那座桥是如何被攻破的。在箱子时，你在城里以及"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "bandit_main_base_medic_mlr_heal_4",
+   375,
+   143,
+   "Truth be told, bro, you can get a first-aid kit or two, but not the fa",
+   "说实话，兄弟，你可以得到一两个急救箱，但那并不能真正解决问题。我有个很棒的主意，我们把它卖2500格里夫纳。我还有个注射器，它能让你恢复所有"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_ds_killer_guide_main_base_1",
+   361,
+   126,
+   "I'm a conductor calling Leopard. As you can see, the \"dead city\" is su",
+   "我是指挥官，呼叫 Leopard。如你所见，这座“死城”被各种敌人包围着，但很少有人知道地下下水道网络的存在，不过我知道。我们可以安全地离开"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_dog_marsh_part_two_3",
+   311,
+   104,
+   "Puppies? Oh, what only in the zone you will not see. Well, thanks, I'l",
+   "小狗？哦，这些只有在禁区才能看到的东西。嗯，谢谢，现在我知道我们不是唯一拥有这种“狗繁殖者”的人了。如果有必要的话，请记下关于从军队转移到红"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "buy_information_from_trader_12",
+   361,
+   99,
+   "This same stalker who went to the Doctor is now looking for traces of ",
+   "这个曾经找过博士的跟踪者现在正在寻找“枪手”组织的踪迹。他已经调查了黑暗山谷和杨塔地区的实验室，显然不会就此罢手。根据可靠消息来源判断，他打"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "buy_information_from_trader_13",
+   387,
+   121,
+   "This is the same stalker and he turns off the \"Brain Scorcher\"! I wond",
+   "这个跟踪者还是那个家伙，他现在关闭了“大脑烧灼器”！不知道他们什么时候才能设法破坏控制面板，而不是每次都去触碰开关。有传言说他现在要进入“普"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "buy_information_from_trader_14",
+   685,
+   210,
+   "Have you ever heard of Generators? Until recently, this place was cons",
+   "你听说过焦脑器吗？直到最近，这个地方还只被认为是一个传说，但在Strelka小组第二次前往禁区中心之后，所有的疑问都得到了解答。关于那里究竟"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "tasks_noah_dialog_6",
+   353,
+   116,
+   "It's time to finish with these creatures, they want to kill me day and",
+   "是时候结束这些生物了，它们日夜都想杀我，我对它们充满了强烈的仇恨，我能感觉到。每晚我都能听到这些生物中的某个在驳船附近爬行时发出的呼吸声。它"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "noah_start_dialog1_12",
+   492,
+   151,
+   "Because these creatures are watching me day and night. You don't under",
+   "因为这些生物日夜都在监视着我。你不懂……那些来自南部高原的喷鼻声一直追着我，一直追到了“方舟”那里！我是个经验丰富的猎人，我知道他们不会花这"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_3_start_1",
+   353,
+   104,
+   "You will see in a moment. As you know, the most dangerous enemy to man",
+   "您稍后会看到。如您所知，对人类最危险的敌人就是人类自己。这里附近有个ATP，还有一群无良之徒在敲诈所有人，我受够了这种事。我们必须彻底解决他"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_3_start2_1",
+   539,
+   182,
+   "Who else but me? Wolf used to watch the village... Till something got ",
+   "除了我还能有谁呢？沃尔夫曾经守护着这个村庄……直到他脑子出了问题，便收拾东西前往禁区的中心。为什么呢？为什么？天知道。也许他会回来。我觉得自"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_2_start_1",
+   407,
+   150,
+   "Now listen to me carefully, stalker. To survive, and not just survive,",
+   "现在仔细听我说，潜行者。为了生存，甚至不仅仅是为了生存，你必须去寻找。寻求者终会找到。就像别人的藏匿点一样。什么？不公平？不公平？我们正处于"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_1_start_3",
+   362,
+   120,
+   "Listen to me and stay close, then there won't be any surprises. So, on",
+   "听我的话，待在我身边，这样就不会有意外情况了。所以，在禁区中最大的危险之一就是突变体。哪怕是最小的怪物也会给你带来麻烦。路边有一群野猪，我们"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_1_start_cancel_1",
+   342,
+   121,
+   "Yes, still valid. So, the first of the dangerous things that are here ",
+   "是的，仍然有效。所以，这里最危险的东西之一就是突变体。我们已经有一段时间没有狩猎了，现在要赶紧处理这个问题。格里莎注意到不远处的一个峡谷里有"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_1_start1_1",
+   902,
+   324,
+   "So, how do you like the local fauna? That's not what you're gonna see ",
+   "那么，你对这里的当地动物有什么看法？不过这里可不会让你看到那种东西。这是我的猎刀，你用的刀可无法打开罐头。在禁区里，没有一把好刀你是到不了任"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_1_start2_1",
+   1097,
+   328,
+   "Well, here we are. This is the death of all inattentive and careless -",
+   "好了，我们到了。这就是那些粗心大意之人的末日——那些异常生物。拿些东西放在面前，这样就能确保前方一切清晰明了。根据我的探测器，这里某个地方有"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "fanat_kmb_1_start3_1",
+   477,
+   147,
+   "Well, keep it for yourself, it has the ability to absorb different typ",
+   "嗯，就留给自己吧，它确实能吸收各种辐射，但现在不会对你造成伤害。不过我不建议用这些小玩意儿来发光，因为有很多人想抢你的东西。所以记住这一点。"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "barmen_about_himself_1_6_army_mlr_3",
+   472,
+   155,
+   "Yes, I was still an conscript, I was only lucky to measure the general",
+   "是的，我当时还是个应征士兵。我只能幸运地和战友们一起了解整体情况，并参与了对辐射源的清理工作。在车站里听到这些消息的人，他们真是幸运，能活着"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "rogovets_about_himself_1_6_army_mlr_1",
+   956,
+   312,
+   "I'm a military medic, contracted to come here and almost immediately I",
+   "我是一名军事军医，受合同派遣来到这里。经过一些训练后，我很快就被分配到了“Farwater Group”。有一次在手术结束后，我们被困在了普"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "grifon_meet_dialog_1",
+   434,
+   142,
+   "Why are you doing this out of the blue? Don't abuse our hospitality. W",
+   "你为什么突然这么做？不要滥用我们的好意。我们只是有生意要处理而已。因为过去这里常有军人出没，我们失去了一些重要人物，也一直无法找到所需的信息"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "grifon_meet_dialog_3",
+   362,
+   123,
+   "All kinds of things. We don't have any supplies or equipment here, jus",
+   "各种各样的东西。我们这里没有任何物资或装备，只有剩下的中间人来负责执行任务。你也可以联系我们的物资管理员，他会收取一定的费用后把一些多余的装"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "task_find_inf_inx_8_mlr_1_1",
+   642,
+   205,
+   "Got it. We actually came here for the information from the X-8 laborat",
+   "明白了。我们其实是为了获取X-8实验室的信息才来这里的，它位于当地的KBO地区。只要乘坐电梯到“负一层”就可以了，但被那些该死的军队给阻止了"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr1_1",
+   315,
+   120,
+   "A new client. So, look, I don't care who you are or where you come fro",
+   "新的客户。所以，听着，我不在乎你是谁或来自哪里，你只需从列表中选择你想要的东西，然后等待整整24小时，直到我收到货物。另外，我不会接受“不”"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "pri_special_trader_mlr4_1",
+   352,
+   106,
+   "If I'm not interested in who you are, then you shouldn't, right? Only ",
+   "如果我对你这个人不感兴趣，那你也没必要感兴趣，对吧？只是为了让你安心，我必须说明，我只是一个中介，而不是那种在禁区里胡闹的鲁莽家伙，就像机灵"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_povar_army_1",
+   474,
+   179,
+   "Local chef, kind of. Can't even make eggs, though, what can I do? It's",
+   "算是当地厨师吧。不过我连煮鸡蛋都做不到，我该怎么办呢？这里就是军队驻地。位于禁区地区。我不太擅长战斗，所以他们把我安排在这里。不过其实不是因"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_povar_army_3",
+   655,
+   281,
+   "All right, dude. I know it's tight with ammo here, Sakharov doesn't se",
+   "好吧，兄弟。我知道这里的弹药很紧张，萨哈罗夫不会出售那种弹药！我可以装进去，但那是索夫德波夫的弹药。抱歉，我得预订一些，这些全是我的。怎么样"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "army_yan_mec_about_tool_1",
+   528,
+   181,
+   "Can't you tell? I'm military man, Peregrine is my call sign. I help ou",
+   "你难道看不出来吗？我是军人，Peregrine是我的代号。我在这里帮助我们的士兵处理装备问题。我也是一名技术员。如果有什么东西坏了，就拿过来"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "talk_to_barman_mil_7_7_about_lottery_1",
+   341,
+   147,
+   "Besides Russian roulette? I collect stripes. You need to bring as many",
+   "除了俄罗斯轮盘赌之外呢？我喜欢收集条纹图案。你得尽可能多地带来稀有的条纹图案，我会给你一些奖励。如果你带来10个，那当然我不会给太多奖励。但"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "meet_guid_bar_1",
+   362,
+   178,
+   "I'm a guide, here and there for a modest fee, they're calling me “Navi",
+   "我是一名向导，为客人提供服务，收取少量费用，他们称我为“导航员”。当然，我主要服务的是绿色区域的人，不过有经验的追踪者也不会忽视这项服务。协"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "hunter_trader_meet_3",
+   594,
+   218,
+   "Well, we are doing pretty specific leisure here. We do not collect art",
+   "嗯，我们在这里从事的是非常特定的休闲活动。我们不收集任何文物，不遵循任何关于禁区的普遍观点，也不试图揭开其秘密。我们只是猎捕变异者，并不是因"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_baraholka_hunter_trader_1",
+   933,
+   310,
+   "Ooooh, but you didn't find such places on the mainland? Let's just say",
+   "哦哦哦，但你在大陆上没找到这样的地方吧？这么说吧，这个地方有点像市场，但是个不寻常的市场。实际上，那里有卖东西的小贩，就像你的西多罗维奇不在"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_1",
+   1167,
+   398,
+   "Well, then there are such cute rodents, they are popularly called \"tus",
+   "嗯，还有这么可爱的啮齿动物，它们被普遍称为“图什卡诺斯”。你肯定见过它们。它们看起来并不危险，但成群时，它们很容易咬到即使是经验丰富的追踪者"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_2",
+   1314,
+   435,
+   "Well, every rookie encounters dogs at the cordon, not to mention on th",
+   "嗯，每个新人在封锁线都会遇到狗，更不用说在大陆上了。它们和所谓的“原型”并没有太大区别。虽然这并没有让人安心，因为其他感官已经变得更加敏锐了"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_3",
+   914,
+   256,
+   "There are dogs, but there are pseudo-dogs. Why pseudo? Yes, they are o",
+   "这里有狗，但也有伪狗。为什么叫伪狗呢？因为有些伪狗只是部分类似于狗，这是因为它们能够以最负面的方式影响人类的大脑，导致人类产生幻觉。这些伪狗"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_4",
+   870,
+   286,
+   "Let's talk about snorts. The most common theory is that these are form",
+   "我们来谈谈鼻吸剂。最常见的理论是，这些人是前军人，在第二次爆炸之前就一直在守卫 ChEZ，所以他们的脑浆被“消化”成了糊状状态。这有点像僵尸"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_6",
+   2678,
+   925,
+   "And let me tell you about bloodsuckers. Creepy creatures with tentacle",
+   "让我来告诉你关于那些吸血生物的事。它们是一种令人毛骨悚然的生物，嘴部有触手，外形类似人类。大概是一种人类的变异体吧，嗯，我就是这么想的——我"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_7",
+   1665,
+   494,
+   "Burers. There are such creatures that are legendary even sooner, the e",
+   "那些怪物。有些生物甚至更早就有传奇传说，让很多人最好不要知道它们的存在，否则就会陷入恐惧之中。我能给出的最好建议就是不要待在地下城和各种荒废"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_8",
+   1776,
+   542,
+   "But the jokes are really bad with the controllers, these creatures hav",
+   "但那些脑波怪上的笑话实在糟糕，这些生物拥有稳定的超能力背景，能够操控任何人的意识。如果没有适当的防护措施，绝对禁止靠近它们，实际上最好避开这"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_9",
+   576,
+   193,
+   "Have you seen cats? Oh, Christmas trees. That only a zone with domesti",
+   "你见过猫吗？哦，还有圣诞树。只有那些有家养动物的禁区才会看到它们。它们的甲状腺因为辐射而肿胀，还长出了这些恶心的肿瘤，我不知道为什么猫会……"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_11",
+   996,
+   286,
+   "There are also creatures about whom many tales of bonfire are stacked.",
+   "还有许多关于那些怪物的传说。它们就是那种有着过度发育的手臂和颈部的类人生物。它们用那只手轻易就能击碎你的胸膛，而普通的怪物则没有这种异常特性"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_12",
+   1257,
+   364,
+   "Here is another psvedogiant. Usually, his growth does not exceed human",
+   "这里还有另一个怪物巨人。通常，它的体型不会超过人类，但它那强大的爪子足以引发局部地震，所以人们才这么称呼它。直到最近，关于它的信息仍然一无所"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_13",
+   1094,
+   346,
+   "The chimera can rightfully be called the top of the food chain of the ",
+   "奇美拉可以理直气壮地被称为食物链顶端的……禁区。 为什么？这是一种非常聪明的生物，主要在夜间活动捕食者这种生物可以从数十米的距离向你飞扑过来"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_14",
+   668,
+   202,
+   "Boars and flesh. \\nThe flesh is a sample of the eerily mutated pig (as",
+   "野猪和 flesh。\\nf flesh 是那种发生了诡异变异的猪的样本（如科学家所示），行动极其缓慢且虚弱，只有完全傻子才能躲过它那“楔形”"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "about_monsters_trader_hangar_15",
+   560,
+   195,
+   "Dwarves. \\nThank you for helping me gather information about them, loo",
+   "矮人。\\n感谢你帮我收集了关于他们的信息，看看我画的是什么：\\n他们主要生活在地下建筑中，这些地方曾以各种方式被用于人类实验。他们似乎就是这"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "in_freedom_1",
+   1447,
+   458,
+   "Well, we are actually one of the strongest groups in the Zone, heh. We",
+   "嗯，我们实际上是在禁区中最强大的团队之一，嘿。我们在阻挡屏障，试图阻止那些混蛋进入“纪律团”，因为我们的目标本质上截然不同。我们希望以最理想"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_tesla_descr",
+   598,
+   220,
+   "The prototype is a high-tech energy weapon that works on electronic ch",
+   "该原型是一种高科技能量武器，依靠电子电荷运作。特斯拉枪能发射长达20米的真闪电，电压极高，是一种极其危险的武器。尽管蓄电池使用的是能量级遗物"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_mp40_descr",
+   748,
+   296,
+   "The MP 40 submachine gun, often mistakenly referred to as the \"Schmeis",
+   "MP 40冲锋枪，常被误称为“Schmeisser”，是由德国设计师Volmer在ERMA Werke公司为德国武装部队开发的，并于1938"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_mp40_worn_descr",
+   749,
+   287,
+   "Worn MP 40 submachine gun, often mistakenly referred to as the \"Schmei",
+   "MP 40冲锋枪，常被误称为“施迈瑟”枪，由德国设计师沃尔默在ERMA Werke公司为德国武装部队研发，并于1938年由德国国防军投入使用"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_wpn_uzi_descr",
+   920,
+   341,
+   "The Uzi, one of the most recognizable weapons of the post-war era was ",
+   "Uzi是战后时期最著名的武器之一，它诞生于一个非常年轻的民族国家。\\nUzi冲锋枪被设计成一种简单且廉价的武器，旨在解决刚刚开始专业化训练的"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_spareparts_duplet3_descr",
+   414,
+   198,
+   "Duplex frame assembled from various parts from disassembled shotguns a",
+   "双联框架由拆解的霰弹枪和机枪的各个部件组装而成，双扳机机构安装在导轨上，配有方便更换的枪托。这是一个有趣的样本，但缺乏最重要的细节。\\n\\n"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_545_30_2_descr",
+   564,
+   233,
+   "Bakelite magazine for 30 rounds of 5.45x39mm caliber. Bakelite is a ma",
+   "用于装填30发5.45x39毫米子弹的巴贝拉板弹壳口径。\\n巴贝拉板是一种在树脂合成初期阶段形成的材料。这种材料能很好地抵抗压力、摩擦、冲击"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_545_30_a545_descr",
+   367,
+   147,
+   "Plastic transparent magazine for 30 cartridges of 5.45x39mm caliber. D",
+   "用于容纳30发5.45x39毫米子弹的透明塑料弹仓，型号为口径。\\n该弹仓耐用，能承受任何冲击。其优点包括重量轻以及可靠性高。在恶劣的储存条"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_545_75_descr",
+   358,
+   165,
+   "Metalic drum magazine for 75 rounds of 5.45x39mm caliber, also known a",
+   "用于装填75发5.45x39毫米子弹的金属弹仓，型号为口径，也被称为“蜗牛弹仓”或“鼓形弹仓”。这种弹仓的设计目的是通过增加弹药数量来提高武"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_762x39_100_descr",
+   355,
+   159,
+   "Non-disintegrating 100-round segmented belt for caliber 7.62x39mm stor",
+   "非易碎的100发分段式腰带，适用于口径 7.62x39毫米子弹，存储在鼓状容器中。内含2条各含50发子弹的带子，这些带子相互连接。耐用，能承"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_762x51_8_descr",
+   360,
+   136,
+   "8-round clip of 7.62x51mm caliber. Durable, can withstand any shock. S",
+   "7.62x51mm 口径 8发弹匣。耐用，能承受任何冲击。在不利的储存条件下可能会生锈。缺点是插入弹仓的弹匣尚未完全发射，所以无法重新装填武"
+  ],
+  [
+   "configs/text/eng/area_weapons.xml",
+   "st_magazine_762x51_100_descr",
+   301,
+   138,
+   "Non-disintegrating 100-round segmented belt for caliber 7.62x51mm stor",
+   "非易碎的100发分段式腰带，适用于口径 7.62x51毫米子弹，装在一个盒子里。内含100发子弹。耐用，能承受任何冲击。在不利的储存条件下可"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "dasc_trade_mlr_task_1_about",
+   352,
+   113,
+   "It is necessary to destroy some of the mutants. The place here and so ",
+   "必须消灭一些变异体。这里以及追踪者环境中的这些地方并不受欢迎，因为那些该死的变异体实在太可怕了，它们存在于森林里、道路上，甚至是在通往各地的"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "sar_crystal_pda_mlr_3_descr",
+   532,
+   177,
+   "There is nothing remarkable in the memory of the device, except for on",
+   "该设备的记录中没有什么特别值得注意的，只有一条日期为2012年6月的记录：\\n“最近几天，“黑石”不再出现在我的梦中。相反，我开始看到某个人"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "sar_crystal_pda_mlr_4_descr",
+   580,
+   192,
+   "And this is the CCP member of the fraternity, who has been doing sever",
+   "这是该兄弟会中的中共成员，他除了进行常规巡逻之外，还从事着其他一些活动。这里描述了一个所谓的“启示室”，据说在那里，思维被设定为“错误”状态"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "zat_a2_stalker_mechanic_task_1_1_fetch_about",
+   509,
+   169,
+   "Yes, there is such a thing. I used to work here, before the first expl",
+   "是的，确实存在这样的东西。我以前在这里工作过，在第一次爆炸之前，我们还在为军事需求开发武器。但爆炸之后，我们被疏散了，我也彻底辞了职。我无法"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "zat_a2_stalker_mechanic_task_1_1_about",
+   499,
+   167,
+   "Yes, there is such a thing. I used to work here, before the first expl",
+   "是的，确实存在这样的东西。我以前在这里工作过，在第一次爆炸之前，我们还在为军事需求开发武器。但爆炸之后，我们被疏散了，我也彻底辞了职。我无法"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_factory_smart_terrain_10_bandit_trader_task_1_about",
+   389,
+   135,
+   "Here on a farm nearby, our bloodsucker saw, maybe there are several of",
+   "在附近的农场里，我们的吸血怪发现，可能还有几只，不过我不确定。我担心这些家伙会进入工厂，甚至更糟的是，它们会在下面某个地方筑巢，然后寻找入口"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "bandit_barman_gar_hangr_mlr_task_1_fetch_about",
+   432,
+   139,
+   "One asshole went into the tunnel, apparently he wanted to prove someth",
+   "有个混蛋进入了隧道，显然他想向朋友们证明什么。而那个隧道则是个糟糕透顶的地方。去他的吧，但他还是带着新的SVD去了那里！也许他是从别人那里偷"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "agr_main_monolith_mlr_task_5_doc_desc",
+   382,
+   181,
+   "Only order No. 66 attracts attention, from which it follows that the s",
+   "只有第66号订单引起了注意，由此可以推断，所谓的“产品编号62”样本，与所有相关文档一样，被送到了切尔诺贝利异常事件的科学研究所禁区。\\n\\"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_1_desc",
+   384,
+   190,
+   "Absolutely useless notes containing the names and paintings of all emp",
+   "这些笔记完全毫无用处，里面记载着所有员工的姓名和职务信息，这些信息在工作日开始和结束时都被反复标记过。不过，日期表明这个建筑在第一次爆炸之后"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_3_desc",
+   435,
+   190,
+   "It contains basic information on accountable persons and the material ",
+   "其中包含了关于相关责任人以及新企业基本结构的基本信息。大部分资金来自国家，且是定向提供的。遗憾的是，该辖区内没有发现任何异常材料；武器并未在"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "pole_factory_doc_4_desc",
+   760,
+   254,
+   "It's in bad condition, but a note was attached under the cover, appare",
+   "它状况很差，但在封面下面附有一张纸条，显然是为了这次箱子而复制的上一封消息：“潜行者，如果你读了这封信，最好永远离开这里。如果你来这里是为了"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mil_freedom_barman_mlr_task_1_about",
+   602,
+   185,
+   "Oh, hey, man! Listen, there's a delicate matter, and I have a feeling ",
+   "哦，嘿，兄弟！听着，有个棘手的事情，我觉得你就是我要找的人。如你所知，禁区网络状况很差，有各种干扰和磁场问题，不过我们的人在附近一个村庄的水"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mil_freedom_barman_mlr_task_1_notebook_descr",
+   508,
+   212,
+   "The general laptop of the group, used by it for entertainment purposes",
+   "该小组使用的通用笔记本电脑，用于娱乐目的。上面有一些社交网络上的页面副本、音乐、各种游戏，从艺术电影到当前最流行的电影，还有这些信息载体的照"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "zat_b7_bandit_boss_sultan_task_5_about",
+   488,
+   161,
+   "So, you need to crank one thing. Although those morons at the flea mar",
+   "所以，你得推动一下这件事。虽然那些跳蚤市场的蠢货并不认识我们的屋顶，但你必须让他们明白他们确实需要我们的服务。那么，生活中会发生什么呢？立刻"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_3_16_military_trader_task_3_about",
+   323,
+   119,
+   "Yes, the work has appeared. Strip the square indicated in your PDA fro",
+   "是的，任务已经完成。从你的 PDA 中移除所指示的方块里的伪狗，它位于村庄的对面。那些狡猾的罪犯无法轻易行动，我也还无法派遣我的人员去处理这"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_2_12_stalker_fanat_task_3_fetch_about",
+   576,
+   198,
+   "So listen. We had some freaks here who decided to mock the green one, ",
+   "所以听着。这里有一些疯子，他们决定嘲笑那个绿色的人，抢走了他的手枪，然后把它扔在了 ATP 的某个地方。我发现后，立刻把他们赶出了这里。我也"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_3_16_military_trader_task_2_fetch_about",
+   774,
+   230,
+   "One of my fighters lost his machine gun yesterday. He had the urge to ",
+   "我的一个战士昨天丢失了他的机枪。他在巡逻时因为需要而不得不离开岗位，就在那时，一群野猪敌人冲了过来。那个笨蛋，简直是疯了，他扔下武器直接冲向"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_m_trader_task_6_about",
+   659,
+   225,
+   "Work, huh? Well, there is one thing. You aren’t like a green jerk alre",
+   "工作，对吧？嗯，不过有一件事。据我从你的资料来看，你已经不像那个笨蛋了。PDA, grh. 呃。简而言之，一些蠢货围住我，让我展示这里到底有"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mil_smart_terrain_7_7_freedom_leader_stalker_task_7_about",
+   474,
+   151,
+   "Oh, you're just in time, because my fighters rarely come to work, but ",
+   "哦，你来得正是时候，因为我的战士们很少来工作，但我也不能怪他们。如果你不知道的话，过去在米克卢卡、库克以及其他那些无意识的人物的时代，我们派"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mil_smart_terrain_7_7_freedom_leader_stalker_task_6_about",
+   556,
+   189,
+   "A delicate matter has formed for me. Do you know that the Duty have be",
+   "我遇到了一个棘手的问题。你知道，“纪律团” 多年来一直试图在通往罗斯托克的道路上的某个村庄建立立足点。不知道吗？一般来说，我知道如何彻底阻止"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "bar_visitors_sad_veteran_task_1_about",
+   904,
+   287,
+   "Job? I think it’s unlikely that you can help me. Although wait, have a",
+   "工作？我觉得你不太可能帮得上忙。不过等等，先喝一杯吧。我和战友们去设备墓地进行侦察，你懂的，那个地方就是一片无尽的荒地，到处都是各种设备的残"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "yan_stalker_sakharov_task_7_about",
+   532,
+   154,
+   "There has been a long-standing debate in our community about the level",
+   "在我们的社区中，关于植被结构中存在何种异常和放射性干扰的问题一直存在长期争论，尤其是所谓的“红木森林”中的树木。可，我们所有试图了解这一问题"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "jup_b6_scientist_nuclear_physicist_task_2_about",
+   452,
+   154,
+   "Ah, welcome. We always have a job, our MBU is one way or another engag",
+   "啊，欢迎。我们总是有任务在身，我们的MBU或多或少都会参与植物研究。比如，不久前我们请了一个跟踪者给我们送一些植物来研究它们的特性。现在我们"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "hunter_gar_trader_task_4_about",
+   385,
+   148,
+   "There's a job for a hunter. You don't look much like a hunter, though.",
+   "有个工作适合猎人来做。不过你看起来并不像猎人。不过这也不完全算狩猎……这是份很糟糕的工作，没错。听着，我不知道他们是怎么来到这里的，但有一些"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "hunter_gar_trader_task_3_about",
+   322,
+   114,
+   "The job is dangerous and must be done by morning. Not far from here, i",
+   "这项工作很危险，必须在早上之前完成。离这里不远处，有一群废弃的车辆，一些奇怪的怪物从那里出来，对当地的追踪者进行恐吓。许多人害怕在夜间寻找文"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mar_smart_terrain_base_stalker_leader_marsh_task_1_about",
+   314,
+   103,
+   "This work needs to be done before morning, as in the camp at this time",
+   "这项工作必须在早上之前完成，因为现在营地里，这些混蛋最不活跃的时候。我在这里召集了一些有决心的人，他们甚至能在渔场的主基地里对付强盗。你愿意"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "blackbox_descr",
+   776,
+   329,
+   "Healthy helicopter flight recorder or \"black box\", as he likes to be c",
+   "健康直升机飞行数据记录器或者被称为“黑匣子”，正如媒体惯用的称呼。\\n机载记录器用于记录飞机内部系统以及机组人员的谈话内容，总的来说，用于记"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "merc_pri_tesak_mlr_task_2_fetch_about",
+   312,
+   93,
+   "We don't have a doctor here, and we have to survive somehow. Sometimes",
+   "我们这里没有医生，只能想办法自救。有时候因为医疗手段不足，以及我们在这一领域的知识匮乏，所以必须依靠所有人来共同应对。我听说那些能够治愈伤口"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_2_12_stalker_fanat_task_2_fetch_about",
+   684,
+   237,
+   "In general, that's the thing. We have a newcomer in the village alone,",
+   "一般来说，情况就是这样。村里刚来了个新成员，他最近去了沼泽地那个酸性极强的垃圾场，在那里发现了一把神器武器。我直接跑回村子想炫耀，但并没有什"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "yan_stalker_sakharov_task_5_fetch_about",
+   346,
+   132,
+   "You know, we've heard many times before how semi-legendary artifacts, ",
+   "你知道的，我们之前多次听说过那些半传奇级别的神器，那些被称为“Electron”的珍贵物品，会从一个人传到另一个人手中。但我们从没见过如此不"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_2_12_stalker_fanat_task_1_about",
+   315,
+   114,
+   "There's one thing to do. Every day on Cordon it becomes more and more ",
+   "有一件事必须完成。在封锁线每一天，情况都会变得越来越危险。这里，越来越多的突变体被聚集在巢穴中，我们不能允许它们在箱子中繁殖！你必须清理我在"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "yan_stalker_sakharov_task_4_about",
+   325,
+   99,
+   "Can't you help us with the zombies annihilation? I've been irritated b",
+   "你不能帮助我们消灭僵尸吗？多年来我一直被他们烦扰，不过至少现在那个地堡有了些安保措施，但之前发生的事真是太可怕了。尖叫声、呻吟声，还有指甲刮"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "mar_smart_terrain_base_stalker_leader_marsh_task_3_about",
+   361,
+   106,
+   "Situation is terrible for us. Near the tower in the southwest of the m",
+   "我们的处境非常糟糕。在沼泽西南部的高塔附近，有一种生物主要在夜间袭击。幸存者告诉我们，它仿佛是夜晚黑暗的一部分，就像黑暗本身一样，没人能看见"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "talk_to_maps_3",
+   1153,
+   411,
+   "...hm. \\nLook, this is Bar. It is completely safe for \"Duty Friends\" a",
+   "……嗯。\\n听着，这里是酒吧。对于““纪律团” 朋友”和中立者来说，这里完全安全。\\n西边是荒野地区，这里就是工厂“Rostock”工厂的旧"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_dolg_1",
+   523,
+   179,
+   "Okay, with the Freemen so far silence, digging up, and we and they, I ",
+   "好吧，目前自由民们保持沉默，我们在进行挖掘工作，我觉得短期内不会有特殊情况发生。当然，我们不会让他们独自行动，要让他们保持警惕。\\n其余的："
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_dolg_3",
+   396,
+   130,
+   "Average, three out of five. Shaky stability in terms of fighters and t",
+   "一般，五分制中得三分。战斗人员的数量和涌入情况稳定性不稳定，但只要有新人员加入，情况就不会完全失控。在领土控制方面情况更糟，在通往普里皮亚季"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_dolg_5",
+   376,
+   119,
+   "The black lane went off, first our supply guy was exposed in those par",
+   "黑色通道被切断了，我们的补给人员首先暴露在那些区域。那个混蛋向所有不偷懒的人投掷武器，包括强盗和雇佣兵。后来他被当地的潜行者抓住，在与某些人"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_b_cs_3",
+   574,
+   156,
+   "You know, Lebedev, even though I didn't catch him, but people began to",
+   "你知道的，列别杰夫，虽然我没抓住他，但人们开始讨厌他了。在最后一次战役中调动成员时，他并没有征求团队成员的意见。那个雇佣兵确实帮了我们忙，但"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_b_cs_5",
+   420,
+   159,
+   "Listen next... When the rest of the squad returned, we had to fight fo",
+   "接下来听……当其他队员回来时，我们不得不长时间战斗，才能夺回一切。如果我们不这么做的话，根本无法活下去。那些熟悉的“自由”追捕者带来的寒冷，"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "story_dog_7",
+   313,
+   108,
+   "I gather all sorts of stories by virtue of my profession, since we're ",
+   "由于我的职业原因，我收集了各种各样的故事，毕竟我们谈论的是伪狗。从一开始……郊区那个植物园里有一个地方，和我们的沼泽地类似，它被称为河湾我听"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "owl_story_1",
+   602,
+   209,
+   "There was a strange stalker who turned out to be an USS major. He help",
+   "有个奇怪的跟踪者，后来发现他其实是USS少校。他帮我们很好地清理了社区。但除此之外，最近又出现了某种混蛋。Psi-set和“Burner”又"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "owl_story_3",
+   385,
+   121,
+   "There's always something, these cases made my situation a little bette",
+   "总有一些事情，这些案例让我的处境稍微好了一些。来自大地球的人正在失去他们的孩子、丈夫和兄弟，他们当然很关心他们。很多傻瓜在听说这个好消息后出"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "boroda_story_3",
+   381,
+   126,
+   "Yes, anything, after the departure of the Sultan was not so intense in",
+   "是的，任何东西都可以。在苏丹离开后，附近寻找文物的活动就不那么频繁了。如果你前往南部，朝着变电站或废物回收站方向走，请小心。那里的犯罪集团虽"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "aslan_st_1",
+   400,
+   147,
+   "Look here: \"The syndicate in the Zone has only one central base - ours",
+   "看这里：“位于禁区的犯罪集团只有一个中央基地——那就是我们的基地。通往南方的道路被切断了，安伯岛上的心理能量装置又开始运作了，而那些僵尸群有"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "aslan_st_3",
+   597,
+   187,
+   "Think about the dangers - you'll estimate it yourself, but keep in min",
+   "想想其中的危险——你自己可以估算一下，但请记住，当你执行任务时，你正在工作，身处忙碌之中，而且还感冒了。无论你是扔掉它还是把它放在架子上，这"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "aslan_st_5",
+   427,
+   155,
+   "Of all the people I know, there are three small dots. The first one is",
+   "在我认识的人中，有三位人物需要特别提及。第一个人位于河湾上，身处那片无尽的“北方”沼泽边缘。第二个人则位于魔鬼的领地，在普里皮亚季的郊区处。"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "sultan_st_1",
+   315,
+   115,
+   "Listen carefully. I am a local godfather, you already know my name. No",
+   "仔细听。我是个当地的头目，你们已经知道我的名字了。不久前，我从河湾来到这里，带着那些人一起。我们成功将那些突变体赶出了这里，并重新建立了基地"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "sultan_st_7",
+   956,
+   324,
+   "Listen carefully, kid. From the North from us the Cemetery of technics",
+   "仔细听，孩子。来自北方的我们，技术墓园，我们在那个旧检查站，靠近道路和出口的地方，那里的士兵们……军械库保留那枚邮票，在那个墓地，尽量不要在"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "bandit_trader_st_5",
+   429,
+   132,
+   "When you lured my ears, I'll tell you what to do. My story has its roo",
+   "当你引诱我的耳朵时，我会告诉你该做什么。我的故事起源于苏联时期。我想过上美好的生活。我依靠猜测，因为所做出的选择而陷入牢笼。我开始寻找新的熟"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "bandit_mechanic_st_9",
+   834,
+   293,
+   "A lame streak of life has fizzled out. I got a job as a locksmith in t",
+   "一段微弱的生命迹象已经熄灭了。我在住房和公用事业领域找到了一份锁匠的工作，并在那里结识了朋友——维季亚。报酬是用“辣根”支付的，钱足够用来喝"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "bandit_mechanic_st_11",
+   361,
+   117,
+   "You're interrupting again. The Big Escape came, we hid like a fucking ",
+   "你又来打扰了。大逃亡的时候，我们就像该死的胆小鬼一样躲在了洞穴里。当会议平静下来，决定在何处“撕开爪子”时，那个地方却根本不适合作为避难所来"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "army_south_mechan_mlr_st_9",
+   309,
+   97,
+   "No, recently the fathers of the commanders brought us an APC, which ha",
+   "不，最近指挥官们的父亲给我们送来了一辆装甲车，但那辆车已经坏了。巡逻次数也增加了，而且直升机也能持续进行掩护。另外，我忘了告诉你们如何从检查"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "loki_st_5",
+   503,
+   201,
+   "Good. When the Burnout was turned off, my detachment set out on a camp",
+   "很好。当“Burnout”功能被关闭后，我的小队便出发前往北方展开行动。他们走了很长时间，周围都是荒凉的地方。当切尔诺贝利核电站逐渐出现在地"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "loki_st_7",
+   773,
+   256,
+   "There are none of them whom they did not have time to shoot, they them",
+   "他们没有遗漏任何一个人，但都没来得及射击，他们自己就逃走了。不久前，有个跟踪者与我们为敌，他的名字叫萨沙。他虽然身体虚弱，但帮了我们很多忙。"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "loki_st_11",
+   325,
+   102,
+   "The beasts are full. And to be honest, then we missed the \"Monolithian",
+   "那些怪物已经满了。说实话，我们错过了“独石人”，那些混蛋成功在旧仓库里安了家。总的来说，他们在那里有一个不错的基地。在北方，科帕奇到处都是僵"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_2_12_medic_mlr_save_task_dlg4_1",
+   475,
+   152,
+   "Head spins a little bit and it gets darker in my eyes... How interesti",
+   "头部有点晕眩，眼睛也变得暗淡了……想想自己是如何来到这里的，真是有趣。现在我要躺下来闻一闻氨气的味道，然后必须包扎伤口。把背包下部口袋里需要"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "esc_2_12_medic_mlr_after_wounded3",
+   498,
+   168,
+   "You've been looking for adventure. We had rumors here that after the t",
+   "你一直在寻找冒险的体验。我们这里听说，在隧道被摧毁后，它部分倒塌了，而且那里发现了一些奇怪的东西。据当地居民说，那些栖息在废墟中的生物，它们"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "newbee_monolith_stalker_5_dlg7",
+   323,
+   114,
+   "Well done, you might say. I sent a couple of my people to look after y",
+   "做得好，你可以这么说。我派了几个人来照顾你，当然了，我不能把这么重要的事情单独交给你处理。别担心，我们已经处理好了。我们收到了格里芬的消息，"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "rookie_pole_task_3_dlg_3",
+   327,
+   115,
+   " They won't know. In short, I heard that this freak is looking for som",
+   " 他们不会知道的。简而言之，我听说这个变态在找人去附近抢劫，就说你是经验丰富的跟踪狂，带他去强盗或者 mutants那里，然后就不管他了——"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "wings_soldier_mon_mlr_2_talk3",
+   354,
+   116,
+   "Yeah, I crossed the army line like that and found myself Are you sure ",
+   "是的，我那样穿越了军队防线，结果发现自己……你确定你想知道原因吗？哦，但我根本不会回答你的问题，你不会明白我的意思。这非常私人化，只要“意识"
+  ],
+  [
+   "configs/text/eng/mlr_addon.xml",
+   "wings_soldier_mon_mlr_2_talk5",
+   595,
+   182,
+   "I don't believe you haven't heard or you're asking me for my opinion? ",
+   "我不相信你没听说过，或者是在问我的意见？他们不是神话中的生物，而是一群真正的科学家级武器专家，他们不知怎么来到了诺索弗尔。我设法从禁区的北部"
+  ],
+  [
+   "configs/text/eng/st_characters.xml",
+   "bar_barmen_bio",
+   462,
+   147,
+   "Neither a saint, nor a scoundrel. The Barkeep knows his worth and is r",
+   "既不是圣人，也不是恶棍。这家酒吧老板清楚自己的价值，受到所有追踪者们的尊敬。据传，他因为过去的某些黑暗事件而躲藏在禁区中。在与那个异常物体发"
+  ],
+  [
+   "configs/text/eng/st_characters.xml",
+   "escape_trader_bio",
+   350,
+   99,
+   "Has been making his living since childhood by trading. In kindergarten",
+   "他从小就开始通过交易来谋生。在幼儿园时，他卖蜡笔；高中时，他开始卖口香糖。在学院期间，他从事轻毒品交易。当禁区出现后，他立刻意识到其赚钱的潜"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "zat_b100_heli_2_maps",
+   303,
+   98,
+   "Looks like the crew died in mid-air, and the helicopter simply crashed",
+   "看起来整个机组人员都在空中丧生，直升机也因为没有人驾驶而坠毁了。不过机载计算机还算幸运一些。不知道这里有没有什么有用的东西……啊，好像有……"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "zat_b106_gonta_hunt_plan",
+   325,
+   91,
+   "Listen now! The chimera hunts at night and returns to its lair in the ",
+   "现在听好了！奇美拉在夜间活动，清晨则返回巢穴休息。我们可以在黎明时分它休息的时候抓住它。我们只需靠近它，趁它还在睡觉时将其杀死。很简单。不过"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "zat_b22_stalker_medic_diary",
+   588,
+   221,
+   "Recording 12. My research will be over soon... People at the camp are ",
+   "录音 12. 我的调查很快就要结束了……营地里的人开始怀疑了。格罗斯和丹尼拉正计划去捕猎一些吸血生物……不知道他们什么时候会发现真相。我得整"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "zat_b39_joker_pda_record",
+   314,
+   101,
+   "I'm positive the artefact is on the tree itself. It's clear from here ",
+   "我确信那个文物就在树上。从这里就能看出，我可以从山上爬到树上。我只希望那些山丘上没有变异者。真可惜，在和卡丹以及巴奇发生争执后，我不得不独自"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "zat_b44_stalker_barge_pda",
+   543,
+   180,
+   "Cardan, that old drunk! Not only is he a lazy bastard once he's had a ",
+   "卡丹，那个老醉鬼！他一旦喝醉，不仅是个懒惰的混蛋，还总是说“这里才合适，我们得放松点……”然后他还会冲我和乔克大发牢骚，说我们年轻，根本不懂"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b217_stalker_tech_welcome",
+   316,
+   112,
+   "First time here? I'm relatively new here myself. The name's Nitro. I w",
+   "第一次来这里吗？我自己也是刚来不久。我叫尼特罗。我负责维修设备，可以修理你需要的任何东西。不过……这里没有好的工具，这确实是个问题。如果你看"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b221_duty_main_2",
+   347,
+   121,
+   "Have I told you the story about Flint? First he set up stalker hunters",
+   "我跟你讲过弗林特的故事吗？他先安排跟踪者猎人去遭遇奇美拉的攻击，然后让他的搭档在异常状态下死去，最后自己又加入了 “自由团”。我觉得这结论相"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b221_freedom_main_3",
+   312,
+   131,
+   "You know, the first time I saw our new squad I asked them, 'Fellows, w",
+   "你知道，第一次看到我们的新小队时，我问他们：“伙计们，你们愿意加入吗？”“纪律团”“那不然呢？你当然可以随心所欲地做你想做的事。”你知道的，"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b221_freedom_main_4",
+   356,
+   129,
+   "A member of Duty came up to one of our people, got in the bunker and a",
+   "“纪律团” 的一名成员走到我们的人面前，进入掩体后问他：“教授，您能告诉我哪种遗物最适合对抗野猪吗？是 “扭曲” 来保护您免受辐射影响，还是"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_bloodsucker",
+   575,
+   175,
+   "I'll tell you everything there is to say about bloodsuckers. When I wa",
+   "我会把关于那些吸血鬼的一切都告诉你。我在河湾的时候，那些混蛋让几乎所有人日子都过得很艰难。追杀者日夜不停地追捕他们，但毫无效果。可怜的家伙们"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_controller",
+   750,
+   258,
+   "Okay, I'll tell you how to kill controllers. The other day I chanced u",
+   "好吧，我来告诉你如何杀死脑波怪。前几天我偶然发现了大量文物，于是决定……藏匿点在途中就顺便去看了他们，因为我的背部实在支撑不住了。返回的路上"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_guide",
+   334,
+   115,
+   "Well, I'm sure you know about the path from Zaton... No? Well, the gui",
+   "嗯，我相信你肯定知道从河湾出发的路线……对吧？原来，向导总是走一条绕远路。我则通过直线切割来创建一条捷径，这真是个新颖的想法。我尝试了几个地"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_oasis",
+   428,
+   145,
+   "You heard about the Oasis? Of course you've heard of it. I, on the oth",
+   "你听说过绿洲吗？当然了，你肯定听说过。而我，实际上确实去过那里。我是第一个找到通往那里的方法的人，可以说是先驱者。那里没有变种人或什么该死的"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_scientist",
+   658,
+   204,
+   "Well, I've got a lot of stories to tell. Did I tell you about my time ",
+   "嗯，我有很多故事要讲。我跟你说过我在科学家工作的那段经历吗？有一天，我去了他们的掩体，非常好奇他们在里面做什么。一开始，他们全都惊呆了。但后"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b25_story_zaton",
+   623,
+   231,
+   "There might be a few folk who think that Flint is telling lies. Well, ",
+   "可能有一些人认为弗林特在撒谎。嗯，他们可以在基地里随便问任何人关于我的事情。就连那支专业的猎人小队，前几天看到我的时候，都纷纷表示：‘我们需"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "jup_b46_duty_founder_pda_diary",
+   651,
+   221,
+   "...whichever way we go, we always end up at the same exact spot. I sti",
+   "……无论我们走哪条路，最终都会回到同一个地方。我还是无法适应这种雾气。奇怪的是，切普诺伊毫无踪迹地消失了。也许他找到了出路……第六天。我们的"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a17_monolith_preacher",
+   373,
+   122,
+   "We thank you, Monolith, for revealing the cunning plans of Your enemie",
+   "我们感谢您，“黑石”，向我们揭示了您敌人的狡猾计划。愿您的光芒照耀在那些为履行您的意志而献出生命的勇敢士兵的灵魂上。前进吧，“黑石”的战士们"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a18_actor_report",
+   362,
+   125,
+   "Kovalsky, something strange is going on here. There were loads of Mono",
+   "科瓦尔斯基，这里有些奇怪的事情正在发生。大楼里有很多“黑石”型战士。他们全都处于恍惚状态，还在和……一堆垃圾交谈。我仔细查看了那堆东西，如果"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_a22_colonel_about_situation",
+   418,
+   113,
+   "Major, we got a serious problem. This operation has been getting more ",
+   "少校，我们遇到了严重的问题。自从直升机坠毁后，这次行动就变得越来越荒谬了。士兵们伤亡不断，我们无法与总部取得联系，情况越来越糟糕。撤离直升机"
+  ],
+  [
+   "configs/text/eng/st_closecaption.xml",
+   "pri_b305_kovalskiy_news",
+   331,
+   95,
+   "I spoke to the HQ commander and reported the situation to him along wi",
+   "我与总部指挥官进行了交谈，向他报告了情况以及收集到的所有信息。短期内不会有任何直升机的支援；他建议我们加强阵地防御，等待进一步的命令。USS"
+  ]
+ ],
+ "cyr_residue": [
+  [
+   "configs/text/eng/area_translation.xml",
+   "barter_povar_army_recall_1",
+   "Here, look: \\n\t\t\t5 bottles of \"Cossacks\" = 5 packs",
+   "看这里：\\n5瓶“Cossacks” = 5包9x18毫米口径\\n5瓶“Cossacks” = 3包"
+  ],
+  [
+   "configs/text/eng/area_translation.xml",
+   "barter_povar_army_8",
+   "Give me \"Berryl-5М\"",
+   "给我“Berryl-5М”"
+  ]
+ ],
+ "amp_lost": [
+  [
+   "configs/text/eng/st_closecaption_generic.xml",
+   "cc_generic-military-meet_use_no_talk_leader_3",
+   "I do shooting. The commander does Q&A sessions.",
+   "我负责射击任务。指挥官负责进行问答环节。"
+  ]
+ ],
+ "_slices": {
+  "text_eng": {
+   "files": 17,
+   "copied": 0,
+   "entries": 5949,
+   "should": 5294,
+   "zh": 5261,
+   "bad": 521
+  }
+ },
+ "_meta": {
+  "time": "2026-11-23 21:15:15",
+  "plugin": "2.0.24",
+  "out": "C:\\Users\\Admin\\Desktop\\aera\\gamedata\\translated_hy_mt2"
+ }
+}

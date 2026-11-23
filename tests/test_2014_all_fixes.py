@@ -48,7 +48,7 @@ def make_job():
 
 
 def t_version():
-    check("version:2.0.19+", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24"))
+    check("version:2.0.19+", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24", "2.0.25"))
 
 
 def t_latin_names():
@@ -90,10 +90,14 @@ def t_literal_newlines():
     check("nl:restored", fixed and m.count_literal_newlines(lost) == 1)
     same, fixed2 = m.reconcile_literal_newlines(src, src + "翻")
     check("nl:same", not fixed2 and same == src + "翻")
-    # 源无换行、译文多加 → 不硬删（交给串段闸门）
+    # ★ 2.0.25：源无换行、译文 ≤2 个多余 \n → 确定性收敛为空格
+    # （aera 实测 11 条「源 0 → 译 2」漏过串段闸门原样落盘）；>2 仍交闸门
     extra, fixed3 = m.reconcile_literal_newlines(
         "无换行", "多" + NL + NL + "行")
-    check("nl:extra-left", not fixed3)
+    check("nl:extra-collapsed", fixed3 and m.count_literal_newlines(extra) == 0)
+    extra2, fixed4 = m.reconcile_literal_newlines(
+        "无换行", "多" + NL + NL + NL + "行")
+    check("nl:extra-many-left", not fixed4)
     check("nl:count", m.count_literal_newlines("A" + NL + "B" + NL) == 2)
 
 

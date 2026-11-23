@@ -47,7 +47,7 @@ def make_job():
 
 
 def main():
-    check("version:2.0.19", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24"),
+    check("version:2.0.19", m.PLUGIN_INFO["version"] in ("2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24", "2.0.25"),
           m.PLUGIN_INFO["version"])
 
     # ---- N1 颜色码后粘连冠词 ----
@@ -105,8 +105,9 @@ def main():
     for cat, dd in d.items():
         if isinstance(dd, dict) and cat != "_meta":
             flat.update(dd)
+    # ★ 2.0.25：gb 允许混合结构（扁平+分类嵌套），本质等价断言用 flatten
     check("gloss:builtin-sync",
-          {k: v for k, v in bb.items()} == flat)
+          m.flatten_glossary(bb) == flat)
 
     ok = sum(1 for _, r, _ in RESULTS if r)
     print("\n==== %d/%d 通过 ====" % (ok, len(RESULTS)))

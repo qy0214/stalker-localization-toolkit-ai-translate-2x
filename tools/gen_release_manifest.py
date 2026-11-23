@@ -36,7 +36,7 @@ PLUGIN = PLUGIN_DIR / "plugin.py"
 ASSETS = PLUGIN_DIR / "assets"
 DIST = ROOT / "dist"
 
-EXPECTED_PLUGIN_VERSION = "2.0.24"
+EXPECTED_PLUGIN_VERSION = "2.0.25"
 EXPECTED_PLUGIN_API = 1
 # 2.x 发布包剥掉了 _ssl.pyd ⇒ 这些导入链会连本机 HTTP 都跑不起来
 FORBIDDEN_IMPORTS = ("ssl", "http", "urllib.request", "urllib.error", "tkinter")
@@ -247,10 +247,32 @@ def json_count(path: Path) -> int | None:
     except Exception:
         return None
     if isinstance(data, dict):
-        return len([k for k in data if k != "_meta"])
+        # ★ 2.0.25：gb 允许混合结构（扁平条目 + 分类嵌套 dict），
+        # 计数按 flatten 语义展开（与插件 flatten_glossary 一致）
+        n = 0
+        for k, v in data.items():
+            if str(k).startswith("_"):
+                continue
+            if isinstance(v, dict):
+                n += json_count_dict(v)
+            else:
+                n += 1
+        return n
     if isinstance(data, list):
         return len(data)
     return None
+
+
+def json_count_dict(table) -> int:
+    n = 0
+    for k, v in table.items():
+        if str(k).startswith("_"):
+            continue
+        if isinstance(v, dict):
+            n += json_count_dict(v)
+        else:
+            n += 1
+    return n
 
 
 def artifact(role: str, path: Path, note: str = "") -> dict[str, Any]:

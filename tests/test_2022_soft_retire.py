@@ -27,7 +27,7 @@ def check(name, ok, detail=""):
     return ok
 
 # ── 1 版本 ──────────────────────────────────────────────────────
-check("version:2.0.22+", m.PLUGIN_INFO["version"] in ("2.0.22", "2.0.23", "2.0.24"),
+check("version:2.0.22+", m.PLUGIN_INFO["version"] in ("2.0.22", "2.0.23", "2.0.24", "2.0.25"),
       m.PLUGIN_INFO["version"])
 
 # ── 2 软层退役：GAMMA / Gunslinger 参考不再参与整串直取 ──────────
@@ -45,11 +45,16 @@ check("_DEFAULT_LAYERS.reference 不含软层",
       not any(c in m._DEFAULT_LAYERS["reference"] for c in soft),
       m._DEFAULT_LAYERS["reference"])
 # 抽样自判明确错的软层译名，退役后必须查不到
-for src in ("HK USP Match", "Find %s for Cardan", "Вставить",
+# ★ 2.0.25：「Find %s for Cardan」经 CHS 人工对照重新收录（"为卡丹找到%s"，
+# 含 Cardan 不丢信息），从"必须 None"清单移到人工对照命中断言
+for src in ("HK USP Match", "Вставить",
             ".45 Hydra-shock", "Остров валунов", "HK G36", "FN P90"):
     check("直取不再命中软层误译 %r" % src,
           m.termbase_lookup(src) is None and src not in gb,
           m.termbase_lookup(src))
+_v = m.termbase_lookup("Find %s for Cardan")
+check("人工对照重收：Find %%s for Cardan",
+      _v == "为卡丹找到%s" and "寻找%s" != _v, _v)
 check("垃圾键 '.' 已不存在", m.termbase_lookup(".") is None and "." not in gb)
 check("垃圾键 '...' 已删除", m.termbase_lookup("...") is None)
 # 退役数据留档可追溯
@@ -70,7 +75,10 @@ check("_meta.total_entries == 分类求和",
 check("_meta.categories 逐类计数正确",
       all(tb["_meta"]["categories"][c] == len(tb[c])
           for c in tb["_meta"]["categories"] if isinstance(tb.get(c), dict)))
-check("扁平镜像条数 == 分类求和", len(gb) == n_cat, "%d / %d" % (len(gb), n_cat))
+# ★ 2.0.25：gb 允许混合结构（扁平+分类嵌套），本质等价断言用 flatten
+check("扁平镜像 == 分类求和（flatten 等价）",
+      len(m.flatten_glossary(gb)) == n_cat,
+      "%d / %d" % (len(m.flatten_glossary(gb)), n_cat))
 
 # ── 4 硬层子串替换：破碎产物必须被拦 ────────────────────────────
 broken = [

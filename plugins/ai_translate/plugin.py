@@ -53,7 +53,7 @@ import urllib.parse
 PLUGIN_INFO = {
     "id": "ai_translate",
     "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.24",
+    "version": "2.0.25",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
                    "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
@@ -1120,6 +1120,7 @@ TRANSLATION_SYS_PROMPT = (
     "· 「我们无法再继续留在这里了。」→「这儿咱待不下去了。」\n"
     "· 「我不知道你该如何做到这一点。」→「我不知道你咋弄，反正东西我得要。」\n"
     "· 「你明白正在发生什么吗？」→「你懂现在发生啥了吗？」\n"
+    "· 「如果你因失血过多而死，我概不负责。」→「你要是流血死了，我可不负责。」\n"
     "\n"
     "只输出译文本身，不加任何解释或说明；原文已是目标语言时原样返回。\n"
     "最后再强调两条：占位符、控制符、条目ID 必须逐字保留；"
@@ -1160,6 +1161,10 @@ TRANSLATION_SYS_PROMPT_EN = (
     "这类欧化说法，不要生硬的被动句，不要把从句堆成长句，"
     "不要连缀多余的「的」；英语习语按中文口语意译"
     "（例如 It's a piece of cake → 小菜一碟），不要逐词硬译；\n"
+    "8a. 物品描述、百科正文虽不是对话，同样不许有翻译腔：用自然的中文"
+    "说明文，短句直说（「low radiation won't kill you」是「低剂量辐射"
+    "死不了人」，不是「你不会因低辐射而死」）；「并」「其」「则」「"
+    "免受……的伤害」这类书面连接能免则免；\n"
     "9. 物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
     "10. 反问、讽刺、威胁按说话人的意图译，不要逐字翻转否定："
     "「Why don't you just leave?」是「你他妈怎么还不滚？」，"
@@ -4260,6 +4265,22 @@ def is_player_facing_label(rel, text=""):
     return bool(s) and len(s) <= 90
 
 
+# ★ 2.0.25（aera 与 CHS 人工包全量对照 P3）：条目 id 后缀是引擎命名惯例
+# 里的"玩家可见字段"标记——st_xxx_name / xxx_descr / ui_yyy_text 这类
+# id 的内容就是物品名/描述/界面文案（实测 AREA 闪存盘名 "Flash drive
+# with alloys data" 等 2206 条被 identifier 过滤整类跳过，人工包全译）。
+# 后缀白名单是跨 MOD 通用的引擎约定，不含任何具体 MOD 词。
+_PLAYER_ID_SUFFIX_RE = re.compile(
+    r"(?:_|^)(?:name|descr|description|text|title|hint|info|tips|caption)"
+    r"(?:_?\d+)?$",
+    re.I)
+
+
+def _id_player_visible(eid):
+    """条目 id 以玩家可见字段后缀结尾 → 不按 identifier/technical 跳过。"""
+    return bool(eid) and bool(_PLAYER_ID_SUFFIX_RE.search(str(eid)))
+
+
 def _is_prose_sentence(s):
     """整句正文（不是标题/型号名）。
 
@@ -5039,7 +5060,15 @@ def reconcile_literal_newlines(src, out):
     if want == have:
         return out, False
     # 源无字面换行却冒出多个：多为串段，交给上层闸门，不在数量层硬删。
+    # ★ 2.0.25（aera 全量审计）：实测 11 条「源 0 → 译 2」漏过串段闸门
+    # 原样落盘（dm_anomalies_12 等）——模型平白加的断行在游戏里把整句
+    # 拆碎。少量（≤2 个）时确定性收敛为空格；更多仍交串段闸门点名。
     if want == 0:
+        if 0 < have <= 2:
+            out2 = out.replace("\\n", " ")
+            while "  " in out2:
+                out2 = out2.replace("  ", " ")
+            return out2, True
         return out, False
     # 源有换行、译文全丢或少了：在颜色码切换/句末处补回缺失数量。
     if have < want:
@@ -5696,10 +5725,29 @@ class TranslationJob(object):
                 self._rule_hit("上下文串入", "retried_ok")
                 out = retry_ctx
             else:
-                self.detail("  去上下文重译仍异常，保留原文：%s"
-                            % str(text)[:60])
-                self._rule_hit("上下文串入", "kept_source")
-                return text
+                # ★ 2.0.25（aera 全量审计 D12 签名②）：去上下文重译仍串入
+                # 时不再直接保留原文——先试切片强译（实测 camelbak 描述
+                # 341 字符因此整条漏译）。切片结果同样过串入检测。
+                sliced_ctx = None
+                try:
+                    raw = self._force_sliced(masked, lang)
+                    sliced_ctx = restore_runtime_tokens(raw, mapping) \
+                        if (raw is not None and mapping) else raw
+                except Exception:
+                    sliced_ctx = None
+                if (sliced_ctx and not looks_like_prompt_echo(sliced_ctx)
+                        and has_cjk(sliced_ctx)
+                        and not looks_like_context_bleed(normalized,
+                                                         sliced_ctx)):
+                    self.detail("  去上下文重译仍串入，切片强译成功：%s"
+                                % str(text)[:50])
+                    self._rule_hit("上下文串入", "sliced_ok")
+                    out = sliced_ctx
+                else:
+                    self.detail("  去上下文重译仍异常，保留原文：%s"
+                                % str(text)[:60])
+                    self._rule_hit("上下文串入", "kept_source")
+                    return text
         # 残留源词确定性替换：模型把专名原样保留时，直接按词库换掉；
         # 不调用模型，也不改动句子其它部分。替换后再看是否还残留俄文。
         out = self._repair_residual_source_terms(normalized, out)
@@ -6262,6 +6310,15 @@ class TranslationJob(object):
         if not hits:
             # 无强制术语时仍要透传 note：数字保真/上下文/占位符/换行等
             # 闸门的重试指令全靠它，漏传会让重试永远无效、整条保留原文。
+            return self._translate_segments(text, lang, note=note)
+        # ★ 2.0.25（aera 全量审计 D12 签名①）：超长多术语条目不走 $$T$$
+        # 占位符法。实测百科长文（800+ 字符、多处色码/换行）里 1.8B 连续
+        # 破坏 $$T1$$，两次重试失败 → 切片兜底的片段占位符也失败 → 整条
+        # 保留原文（15 条百科条目全漏）。长文改走普通整译，术语交译后
+        # 词库回填（_repair_residual_source_terms/_latin_names 实测有效）。
+        if len(text) >= 600:
+            self.detail("  长文多术语，跳过占位符法改普通整译+回填：%s"
+                        % str(text)[:50])
             return self._translate_segments(text, lang, note=note)
 
         mapping = {}
@@ -7675,7 +7732,8 @@ class TranslationJob(object):
                         or looks_like_generated_noise(rel, src0)
                         or looks_like_technical_text(src0)
                         or (looks_like_identifier_text(src0)
-                            and not is_player_facing_label(rel, src0))):
+                            and not is_player_facing_label(rel, src0)
+                            and not _id_player_visible(meta["id"]))):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False
@@ -7773,7 +7831,8 @@ class TranslationJob(object):
             if (looks_like_generated_noise(rel, src)
                     or looks_like_technical_text(src)
                     or (looks_like_identifier_text(src)
-                            and not is_player_facing_label(rel, src))):
+                        and not is_player_facing_label(rel, src)
+                        and not _id_player_visible(ent.id))):
                 st["skipped"] += 1
                 continue
             if self.only_referenced and ent.id not in self._ref_counts:
@@ -8230,7 +8289,8 @@ class TranslationJob(object):
                         or looks_like_generated_noise(full, src0)
                         or looks_like_technical_text(src0)
                         or (looks_like_identifier_text(src0)
-                            and not is_player_facing_label(rel, src0))):
+                            and not is_player_facing_label(rel, src0)
+                            and not _id_player_visible(meta["id"]))):
                     return False
                 if self.only_referenced and meta["id"] not in self._ref_counts:
                     return False

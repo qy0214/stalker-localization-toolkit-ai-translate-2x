@@ -39,8 +39,12 @@ from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PLUGIN = os.path.join(ROOT, "plugins", "ai_translate", "plugin.py")
-GAME = r"C:\Users\Admin\Desktop\IWP\gamedata"
-OUT = os.path.join(GAME, "translated_hy_mt2")
+# 用法：python tools/audit_iwp_full.py [gamedata 目录] [产出子目录名]
+# 默认 IWP；对任意 MOD 产出可传参（如 .../aera/gamedata）。
+GAME = (sys.argv[1] if len(sys.argv) > 1
+        else r"C:\Users\Admin\Desktop\IWP\gamedata")
+OUT = os.path.join(GAME, (sys.argv[2] if len(sys.argv) > 2
+                          else "translated_hy_mt2"))
 
 spec = importlib.util.spec_from_file_location("m", PLUGIN)
 m = importlib.util.module_from_spec(spec)
@@ -121,8 +125,10 @@ def entry_checks(name, sid, sv, ov, cat, F):
         tags.append("note_leak")
         F["note_leak"].append((name, sid, mt.group(0), ov[:80]))
     if "&" in sv and "&" not in ov:
-        tags.append("amp_lost")
-        F["amp_lost"].append((name, sid, sv[:60], ov[:60]))
+        # ★ 2.0.25：Q&A→「问答」类意译不算吞 &；仅品牌 & 形态才点名
+        if not (re.search(r"Q\s*&\s*A", sv) and re.search(r"问答|问与答", ov)):
+            tags.append("amp_lost")
+            F["amp_lost"].append((name, sid, sv[:60], ov[:60]))
     if sorted(PH.findall(sv)) != sorted(PH.findall(ov)):
         tags.append("ph")
         F["ph"].append((name, sid, PH.findall(sv), PH.findall(ov), ov[:60]))
@@ -137,7 +143,10 @@ def entry_checks(name, sid, sv, ov, cat, F):
         tags.append("cyr_residue")
         F["cyr_residue"].append((name, sid, sv[:50], ov[:50]))
     if ZH.search(ov):
-        words = [w for w in LATIN_WORD.findall(ov)
+        # ★ 2.0.25：先剥色码/控制符再扫拉丁残留（实测 %c[ui_cyan] 的
+        # cyan/purple 占 latin_residue 5594+ 条全是噪声）
+        probe = re.sub(r"%c\[[^\]]*\]|\$clr_\d+|\$[A-Za-z_]\w*", " ", ov)
+        words = [w for w in LATIN_WORD.findall(probe)
                  if not m._MODEL_LIKE_RE.search(w)
                  and m.termbase_exact_translation(w) is None
                  and w.lower() not in ("pda", "rad", "tv", "pc", "id", "ok")]
@@ -278,12 +287,16 @@ def main():
 
     rep = {k: v for k, v in F.items()}
     rep["_slices"] = {k: v for k, v in slices.items()}
-    rep["_meta"] = {"time": time.strftime("%F %T"), "plugin": m.PLUGIN_VERSION
-                    if hasattr(m, "PLUGIN_VERSION") else "?",
+    rep["_meta"] = {"time": time.strftime("%F %T"),
+                    "plugin": m.PLUGIN_INFO.get("version", "?"),
                     "out": OUT}
     outdir = os.path.join(ROOT, "audit-reports")
     stamp = time.strftime("%Y%m%d")
-    path = os.path.join(outdir, "IWP_FULL_AUDIT_%s.json" % stamp)
+    _g = os.path.normpath(GAME)
+    mod = (os.path.basename(os.path.dirname(_g))
+           if os.path.basename(_g).lower() == "gamedata"
+           else os.path.basename(_g))
+    path = os.path.join(outdir, "%s_FULL_AUDIT_%s.json" % (mod.upper(), stamp))
     with open(path, "w", encoding="utf-8") as f:
         json.dump(rep, f, ensure_ascii=False, indent=1)
     print("\n报告:", path)

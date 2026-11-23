@@ -25,7 +25,7 @@ def check(name, cond, detail=""):
 
 
 def t_version():
-    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15", "2.0.16", "2.0.17", "2.0.18", "2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24"))
+    check("version:2.0.13", m.PLUGIN_INFO["version"] in ("2.0.13", "2.0.14", "2.0.15", "2.0.16", "2.0.17", "2.0.18", "2.0.19", "2.0.20", "2.0.21", "2.0.22", "2.0.23", "2.0.24", "2.0.25"))
 
 
 def t_en_profanity():
@@ -125,9 +125,11 @@ def t_termbase_consistency():
     for _c, _dd in t.items():
         if isinstance(_dd, dict) and _c != "_meta":
             _flat.update(_dd)
-    check("term:count", len(b) == len(_flat),
-          "%d vs %d" % (len(b), len(_flat)))
-    check("term:consistent", set(b) == tf)
+    # ★ 2.0.25：gb 允许混合结构（扁平+分类嵌套），本质等价断言用 flatten
+    b_flat = m.flatten_glossary(b)
+    check("term:count", len(b_flat) == len(_flat),
+          "%d vs %d" % (len(b_flat), len(_flat)))
+    check("term:consistent", set(b_flat) == tf)
     _tot = sum(len(v) for k, v in t.items()
                 if k != "_meta" and isinstance(v, dict))
     check("term:meta-total", t["_meta"]["total_entries"] == _tot,
