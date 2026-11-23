@@ -1,32 +1,19 @@
 {
-  "generated_at": "2026-11-24T02:15:54+08:00",
+  "generated_at": "2026-11-24T02:39:30+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "7700a21",
+    "commit": "25c6002",
     "dirty": true,
     "dirty_files": [
-      " M audit-reports/HARVEST_CONFLICTS.md",
-      " D dist/ai_translate_plugin_v2.0.24.zip",
-      " D dist/ai_translate_plugin_v2.0.24_install.zip",
+      "M CHANGELOG.md",
+      " M README.md",
+      " M dist/ai_translate_plugin_v2.0.25.zip",
+      " M dist/ai_translate_plugin_v2.0.25_install.zip",
       " M plugins/ai_translate/assets/glossary_builtin.json",
       " M plugins/ai_translate/assets/stalker_termbase.json",
-      " M plugins/ai_translate/plugin.py",
-      " M tests/test_2013_all_fixes.py",
-      " M tests/test_2014_all_fixes.py",
-      " M tests/test_2015_all_fixes.py",
-      " M tests/test_2022_soft_retire.py",
-      " M tests/test_2024_audit_fixes.py",
-      " M tools/audit_iwp_full.py",
-      "?? audit-reports/AERA_FULL_AUDIT_20261123.json",
-      "?? audit-reports/AERA_FULL_AUDIT_20261124.json",
-      "?? audit-reports/CHS_HARVEST_20261124.csv",
-      "?? audit-reports/REPLAY_ALL_MODS_2025.txt",
-      "?? audit-reports/SIM_TERM_COVERAGE_20261123.json",
-      "?? audit-reports/sim_term_coverage.py",
-      "?? dist/ai_translate_plugin_v2.0.25.zip",
-      "?? dist/ai_translate_plugin_v2.0.25_install.zip"
+      " M tests/test_2025_chs_fixes.py"
     ]
   },
   "versions": {
@@ -48,40 +35,40 @@
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 3503913,
+      "size": 2934414,
       "sha256": "",
-      "note": "6 个文件（目录）"
+      "note": "5 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.25.zip",
       "exists": true,
-      "size": 993348,
-      "sha256": "4623b101a60c491aadd7bd1c2a8e3be32ffd2a52d82b11951d40aa20ace7029b",
+      "size": 993310,
+      "sha256": "001cbda8fe2c53d27ee9913c54dfb22ce916acd65cc52c8ecd12969052ebf0a4",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
       "path": "dist\\ai_translate_plugin_v2.0.25_install.zip",
       "exists": true,
-      "size": 993268,
-      "sha256": "79e8484e806e0dd1c1a7d29e4e795cdfaa7dec262095ed454bfed58e638695e8",
+      "size": 993230,
+      "sha256": "8d32a752ece14852111882c31b2c9e413c28d766780fc7cadb9e1f65ce920ecc",
       "note": "给平台插件管理器直接解压用"
     },
     {
       "role": "术语库（随包，只读）",
       "path": "plugins\\ai_translate\\assets\\glossary_builtin.json",
       "exists": true,
-      "size": 1208269,
-      "sha256": "f4481e351dd6b42aeb4fae29fb167e2a506f5347181f439f2efcd03371c56d1b",
+      "size": 1208216,
+      "sha256": "20e842f0541a69b6164d26210256fcc05affa203a2839b758088333cbed3ec4a",
       "note": "运行时匹配的内置层"
     },
     {
       "role": "术语基表（分类）",
       "path": "plugins\\ai_translate\\assets\\stalker_termbase.json",
       "exists": true,
-      "size": 1215600,
-      "sha256": "43897337f76aa85075fadec8ca0d820d152c1c8ba44a0c56c6386428b5c981f8",
+      "size": 1215547,
+      "sha256": "351f3419f64f51222b2ffa28cad81c06595aef3b53abed208dea068a1b9615b7",
       "note": "导入用"
     },
     {
@@ -103,7 +90,7 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.25.zip",
-    "sha256": "4623b101a60c491aadd7bd1c2a8e3be32ffd2a52d82b11951d40aa20ace7029b",
+    "sha256": "001cbda8fe2c53d27ee9913c54dfb22ce916acd65cc52c8ecd12969052ebf0a4",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -209,7 +196,7 @@
     {
       "check": "随包术语库非空壳（两文件合计 > 600 KB）",
       "ok": true,
-      "detail": "glossary_builtin.json=1208269；stalker_termbase.json=1215600"
+      "detail": "glossary_builtin.json=1208216；stalker_termbase.json=1215547"
     },
     {
       "check": "zip 内文件 == 工作副本",
@@ -244,7 +231,7 @@
     {
       "check": "插件目录无被跟踪的 __pycache__",
       "ok": true,
-      "detail": "本地缓存存在但未跟踪（不影响发布包）"
+      "detail": "干净"
     },
     {
       "check": "无绝对路径/用户名泄漏",
@@ -254,7 +241,7 @@
     {
       "check": "术语基表：_meta.total_entries == 实际分类合计",
       "ok": true,
-      "detail": "meta 24458 / 实际 24458"
+      "detail": "meta 24456 / 实际 24456"
     },
     {
       "check": "术语基表：_meta.categories == 实际分类条数",
@@ -264,12 +251,12 @@
     {
       "check": "术语库：随包条目 >= 8000",
       "ok": true,
-      "detail": "24458 条"
+      "detail": "24456 条"
     },
     {
       "check": "术语库：随包 >= 分类基表",
       "ok": true,
-      "detail": "24458 / 24458"
+      "detail": "24456 / 24456"
     },
     {
       "check": "dist 只保留当前版本 zip",
@@ -278,8 +265,8 @@
     }
   ],
   "term_data": {
-    "glossary_entries": 24458,
-    "termbase_entries": 24458,
+    "glossary_entries": 24456,
+    "termbase_entries": 24456,
     "termbase_categories": {
       "阵营与组织": 107,
       "人物与军衔": 3250,
@@ -292,12 +279,12 @@
       "新闻·对话·其他": 5352,
       "ANTHOLOGY 参考": 148,
       "技术缩写": 18,
-      "人工对照": 1934
+      "人工对照": 1932
     },
-    "termbase_meta_total": 24458
+    "termbase_meta_total": 24456
   },
   "tracked": {
-    "files": 1275,
-    "bytes": 30333136
+    "files": 1285,
+    "bytes": 35256363
   }
 }

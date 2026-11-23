@@ -70,7 +70,7 @@ def make_job(srv, **kw):
                     reference_mode=False, copy_reference=False,
                     protect_proper=True, auto_session_terms=False,
                     freq_names=False, tm_lite=False,
-                    force_glossary=False)
+                    force_glossary=False, glossary={})
     defaults.update(kw)
     job = ait.TranslationJob(ait._load_vendor(), srv, ind, "auto",
                              "auto", "chs", **defaults)
@@ -119,20 +119,51 @@ check("词库-人工对照层挂 names",
       "人工对照" in ait.load_termbase_data()["_meta"]["layers"]["names"])
 
 # ── 5 长文多术语跳过占位符法（D12 签名①）──────────────────────
-long_text = ("General information about the faction. " * 22)  # ~770 字符
-srv = FakeServer(script={"": "（普通整译产出）" + long_text[:40]})
-job = make_job(srv, force_glossary=True)
+# ★ 修正：旧夹具源文无词库命中（spans=0），根本没进 _translate_force，
+# "$$T" not in out 是假通过。现在源文含词库术语（spans>0）走占位符法
+# 前置检查，捕获真实请求断言全部无 $$T（= 走了 len>=600 分段链）。
+long_text = ("General information about the Whirligig anomaly. " * 18)
+seen_calls = []
+
+
+class CapServer(FakeServer):
+    def translate(self, text, src, tgt, **kw):
+        seen_calls.append(str(text))
+        return "（普通整译产出）" + str(text)[:20]
+
+
+job = make_job(CapServer(), force_glossary=True,
+               glossary={"Whirligig": "旋转木马"})
+check("长文-词库命中就位", bool(job._glossary_spans(long_text)),
+      str(len(job._glossary_spans(long_text))))
 out = job._translate_plain(long_text, "eng")
-check("长文-不走 $$T$$ 占位符", "$$T1$$" not in str(out), str(out)[:60])
+check("长文-不走 $$T$$ 占位符",
+      seen_calls and all("$$T" not in c for c in seen_calls),
+      str(seen_calls[0])[:60] if seen_calls else "无请求")
 shutil.rmtree(job._tmp_root, ignore_errors=True)
 
 # ── 6 上下文串入→切片兜底（D12 签名②）────────────────────────
-srv = FakeServer(script={"Short clean": "正常的好译文。",
-                         "": "前一句：串入污染的坏译文"})
-job = make_job(srv)
-out = job._translate_one("Short clean sentence here.", "eng",
+# ★ 修正：旧夹具按文本分派让主翻译直接拿到好译文，串入三级路径
+# 完全没执行（单请求假通过）。现在按请求形态分派：带上下文的主请求
+# 返回串入污染 → 清上下文整条重译仍串入 → 切片片段请求返回好译文。
+SRC6 = ("Short clean sentence about the zone and its anomalies. " * 4)
+
+
+class BleedServer(FakeServer):
+    def translate(self, text, src, tgt, **kw):
+        if kw.get("context"):
+            return "前一句：上一条对话的串入译文"          # 主请求
+        if str(text).strip() == SRC6.strip():
+            return "前一句：去上下文重译仍串入"            # 整条无上下文
+        return "正常的好译文。"                            # 切片片段
+
+
+job = make_job(BleedServer())
+out = job._translate_one(SRC6, "eng",
                          context="前一句：上一条对话", style="dialogue")
-check("上下文-串入后切片救回", out == "正常的好译文。", out)
+check("上下文-串入后切片救回",
+      "前一句" not in str(out) and "正常的好译文" in str(out),
+      str(out)[:60])
 shutil.rmtree(job._tmp_root, ignore_errors=True)
 
 # ── 7 提示词锚例（P6）─────────────────────────────────────────
