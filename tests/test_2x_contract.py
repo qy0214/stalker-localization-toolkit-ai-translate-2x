@@ -257,8 +257,10 @@ def t_p4(module, api, tab):
 def t_p5(module, api, tab):
     module._UI.set_text(tab.in_box, r"D:\gamedata")
     module._UI.set_text(tab.out_box, r"D:\out")
-    module._UI.set_checked(tab.ref_chk, False)
-    module._UI.set_checked(tab.tm_chk, False)
+    # ★ 2.0.23：引用层/完整补丁/TM-lite/会话词表/高频专名已收编固定开启，
+    # 无对应勾选；这里用保留的开关验证持久化。
+    module._UI.set_checked(tab.force_chk, False)
+    module._UI.set_checked(tab.only_ref_chk, True)
     module._UI.combo_set_items(tab.mode_combo,
                                [module.MODE_LABELS[m] for m in module.MODE_ORDER])
     tab._persist_cfg()
@@ -266,9 +268,16 @@ def t_p5(module, api, tab):
     tab._persist_cfg()
     check("P5-1 输入目录落 cfg", tab.cfg["in_dir"] == r"D:\gamedata",
           tab.cfg.get("in_dir"))
-    check("P5-2 勾选状态进 flags", tab.flags["reference_layer"] is False and
-          tab.flags["tm_lite"] is False, str(tab.flags))
-    check("P5-3 勾选状态同步进 cfg", tab.cfg["reference_layer"] is False)
+    check("P5-2 保留开关勾选进 flags", tab.flags["glossary_force"] is False and
+          tab.flags["only_referenced"] is True, str(tab.flags))
+    check("P5-3 收编开关固定开启且同步进 cfg",
+          all(tab.flags[k] is True for k in ("reference_layer",
+                                             "copy_reference", "tm_lite",
+                                             "session_glossary", "freq_names"))
+          and tab.cfg["reference_layer"] is True and tab.cfg["tm_lite"] is True,
+          str({k: tab.flags[k] for k in ("reference_layer", "copy_reference",
+                                         "tm_lite", "session_glossary",
+                                         "freq_names")}))
     check("P5-4 多行提示词落 cfg", tab.cfg["prompt_extra"] == "测试提示词")
     check("P5-5 工作线程可见的缓存已更新",
           tab._prompt_extra_text == "测试提示词")

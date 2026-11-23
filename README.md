@@ -1,4 +1,4 @@
-# ai_translate 2.0.22
+# ai_translate 2.0.23
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件：
 用 Hy-MT2 / llama.cpp 在本机翻译 X-Ray 文本 XML、cfgxml、ltx 与脚本，不依赖在线翻译 API。
@@ -11,7 +11,8 @@
 
 | 版本 | 摘要 |
 |---|---|
-| **2.0.22** | 三轮随机文件测试（678 文件）+ 全 MOD 全文件测试（1600 文件 / 24 万条目）：GAMMA/Gunslinger 软层 13946 条整体退役（逐条语义抽检明确错率约 31%）、硬层子串替换加固（半中半英写出 112→0）、title 长句豁免找回 23 条正文、藏宝点目录豁免找回 679 条、ogg/music 保护收窄、词库内容级修正 13 条、`termbase_lookup` 带引号键 50 条不可达修复；词库 22524 条，测试 16/16 全绿 |
+| **2.0.23** | 界面选项精简：11 个勾选逐项核对后，5 个「关闭只有坏处」的收编为内部固定开启（引用层/完整补丁/TM-lite/会话词表/高频专名），1 个实验键移出 UI，保留 5 个各挂一行开关后果说明；强制术语/保护专名出厂默认改为开；引用层无文本表自动回退整目录模式（原先警告后终止）；词库 22524 条，测试 18/18 全绿 |
+| 2.0.22 | 三轮随机文件测试（678 文件）+ 全 MOD 全文件测试（1600 文件 / 24 万条目）：GAMMA/Gunslinger 软层 13946 条整体退役（逐条语义抽检明确错率约 31%）、硬层子串替换加固（半中半英写出 112→0）、title 长句豁免找回 23 条正文、藏宝点目录豁免找回 679 条、ogg/music 保护收窄、词库内容级修正 13 条、`termbase_lookup` 带引号键 50 条不可达修复；词库 22524 条，测试 16/16 全绿 |
 | 2.0.21 | 全库确定性错误清理 14 条 + 垃圾过滤三处口径修正 + 闸门豁免色码内数字 + 专名保护硬层子串替换；词库 36472 |
 | 2.0.20 | 多源语料收割（Gunslinger / CoP 官中 / NS2016 / wiki / GAMMA），词库 21065→36323；`termbase_lookup` O(N)→O(1)（3.656→0.125 ms） |
 | 2.0.19 | 人工汉化语料收割 1.2 万+ 术语对，NS7 官方译名为权威 |
@@ -39,7 +40,12 @@
 ![AI 翻译插件界面（翻译进行中）](docs/images/ai_translate_progress.png)
 
 - ⑥ 只放附加提示词与强制术语，不影响前五步；`文件类型` 默认「auto 自动识别全部」。
-- 勾选项：强制术语、识别 ID 引用层、输出流补丁、只译引用项、保护专名/型号、先预览、翻译脚本/XML 字面文本、自动生成会话词表、TM-lite 精确复用。
+- ⑤ 翻译页勾选只留真正需取舍的 5 项，每项下挂一行开/关后果说明：
+  强制术语（开=词库命中强制回填译名，关=只作软提示）、保护专名/歌名/型号
+  （开=整条跳过模型只做子串替换）、只译被引用条目（开=省请求，关=全量更保险）、
+  翻译脚本/XML 字面文本（关=脚本里写死的文字不翻）、先预览（试运行不写盘）。
+  引用层识别 / 完整补丁 / TM-lite / 会话词表 / 高频专名定译已收编为内部固定
+  行为，不再提供开关（关闭只有坏处）。
 - 底部进度条常驻：下载按字节推进，翻译按本轮处理文件数推进；旁边两行给出
   `阶段：翻译中 12/87 · configs\items\x.ltx` 与 `已翻译 12 / 87 个文件（14%），条目 345 条`。
   分母是自动识别出的整个 MOD 待翻译文件数（只算确实含可译文本的文件）。
@@ -48,7 +54,7 @@
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.22.zip` 解压到工具集的 `plugins/` 目录：
+把 `dist/ai_translate_plugin_v2.0.23.zip` 解压到工具集的 `plugins/` 目录：
 
 ```text
 <工具集目录>\plugins\ai_translate\plugin.py
@@ -78,9 +84,9 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.22
+python tools/release_plugin.py 2.0.23
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.22 dist/ai_translate_plugin_v2.0.22_install.zip --title "ai_translate 2.0.22"
+gh release create v2.0.23 dist/ai_translate_plugin_v2.0.23_install.zip --title "ai_translate 2.0.23"
 # 3) 把第 1 步打印的条目追加进注册表 plugins 数组（需要该仓库写权限）
 ```
 
@@ -94,8 +100,8 @@ gh release create v2.0.22 dist/ai_translate_plugin_v2.0.22_install.zip --title "
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.22.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.22_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.23.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.23_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `CHANGELOG.md` | 各版本完整修复明细与证据 |
 | `corpus/` | 收割用双语语料与退役软层留档（不随发布包分发） |
@@ -111,18 +117,18 @@ gh release create v2.0.22 dist/ai_translate_plugin_v2.0.22_install.zip --title "
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.22`　宿主插件 API：`1`
-- 插件入口 SHA-256：`23ee71961bc2c76a5eac799cfcb26b0c9fbde179e00f81696a4cd00e95159bfa`
-- 发布 zip SHA-256：`7592ea633418a9d2fb94f795b6c20a41062cf8fca2904cbf92b4583b4d91d022`
-- 平台安装包 SHA-256：`e322127295fc27936a939ddd4dfb9f8b77e75976ae9fd71a7dea644994de63f8`
+- 插件版本：`ai_translate 2.0.23`　宿主插件 API：`1`
+- 插件入口 SHA-256：`95433ed51176140802518f21cefcca691fe43ababce8892bc12232f99dd72f22`
+- 发布 zip SHA-256：`25afa5a15acd30478c4725f6eb7374d86be3f876f12e5796ba4f6a2633f1731b`
+- 平台安装包 SHA-256：`57283caa75bb876ceca0cebf237c21d5336bc0e550d55dd6a952484306f2d60c`
 - 术语规模：两张 JSON 各 **22524** 条、11 个分类、条目数一致；
-  canon 4276 / names 3250 / technical 18 / reference 14981。
+  canon 4276 / names 3250 / technical 18 / reference 14980。
   2.0.22 起 `Gunslinger 参考`/`GAMMA 参考`（13946 条）退役，留档
   `corpus/soft_reference_retired.json`，不参与直取与提示。
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.22.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.23.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
@@ -138,8 +144,8 @@ python tools/gen_release_manifest.py --check   # 只校验不写盘（CI 门禁�
 python tools/test_random20_per_mod.py "" 0 "" all   # 全 MOD 全文件判定链重放
 ```
 
-当前全量：16 个测试文件全绿（契约 67、功能回归 356、动态多路 42、提示词规则 46、
-页签与宿主门面 21、分享包 30、2.0.22 专项 79，及各版本专项）；发布一致性 25/25。
+当前全量：18 个测试文件全绿（契约 67、功能回归 358、动态多路 42、提示词规则 46、
+页签与宿主门面 21、分享包 30、2.0.22 专项 86+9、2.0.23 专项 6，及各版本专项）；发布一致性 25/25。
 测试统一 `sys.dont_write_bytecode = True`，不会把 `.pyc` 写进随包目录。
 
 ## 许可

@@ -27,7 +27,7 @@ def check(name, ok, detail=""):
     return ok
 
 # ── 1 版本 ──────────────────────────────────────────────────────
-check("version:2.0.22", m.PLUGIN_INFO["version"] == "2.0.22",
+check("version:2.0.22+", m.PLUGIN_INFO["version"] in ("2.0.22", "2.0.23"),
       m.PLUGIN_INFO["version"])
 
 # ── 2 软层退役：GAMMA / Gunslinger 参考不再参与整串直取 ──────────
