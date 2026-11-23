@@ -1,9 +1,9 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-23T05:05:17+08:00`
+- 生成时间：`2026-11-23T15:08:55+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`main` @ `892af14`（有未提交改动）
-- 已跟踪文件：1254 个，27.16 MB
+- Git：`main` @ `7f86fbd`（有未提交改动）
+- 已跟踪文件：1267 个，29.63 MB
 
 ## 1. 版本与交付物
 
@@ -18,10 +18,10 @@
 |---|---|---:|---|---|
 | 插件入口 | `plugins\ai_translate\plugin.py` | 459.54 KB | `236f1c13f2b53409f0cc325c432ee1638ae84c801db278736d71717d35bfe14b` | 2.x 目录插件（api.ui 门面） |
 | 插件分享目录 | `plugins\ai_translate` | 2.57 MB | — | 5 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.22.zip` | 889.59 KB | `6c7440087dcc38579e925f5133bfa3d0f0661d6020331071e4f89a61d033edc1` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.22_install.zip` | 889.52 KB | `20f8f6f4141feb0fc41c26140cba67ace2292b4373a54e682ab3e00955bb065d` | 给平台插件管理器直接解压用 |
-| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.05 MB | `4d21bfe4df050e28d0972ab46eebd177b39e3ee517ae25d2c538c90e6db23726` | 运行时匹配的内置层 |
-| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.06 MB | `920e428cfc9511a7e9ec48b1cb2820e771fbf35b145a51a26ed98d71e909af6d` | 导入用 |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.22.zip` | 889.58 KB | `e3a9a94508b6ecf6685ba2ddefa50a4f0a2c17d323627a90e926dcd08da40658` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.22_install.zip` | 889.50 KB | `6e88e025a2c1879b132e5a22ed3cd351d6689dc0d464205107d401f6e68f04d6` | 给平台插件管理器直接解压用 |
+| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.05 MB | `ca94d5e47d1b6159fba122ece09e765a8303ab141b2ee5d34b0d117bc3043077` | 运行时匹配的内置层 |
+| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.06 MB | `5d0da21da17f136f04a1fe4b6071caa5fb63bbaca5345121635b216b9108adaa` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 7.38 KB | `2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6` | 解析 XML/LTX/脚本 |
 | 第三方来源声明 | `plugins\ai_translate\assets\THIRD_PARTY_NOTICES.txt` | 2.08 KB | `338f62ede3e6253ce1e7b513023b8535b6f5d94c33a00311bf295d421d601ff2` | 随包分发（上游来源与许可状态） |
 
@@ -55,7 +55,7 @@
 | zip 条目 == 5 个预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
-| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1101351；stalker_termbase.json=1108715 |
+| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1101348；stalker_termbase.json=1108712 |
 | zip 内文件 == 工作副本 | 一致 | 全部一致 |
 | 官方哈希：llama.cpp 6 项 | 一致 | 登记 6 项；不一致：无 |
 | 官方哈希：模型 2 项 | 一致 | 登记 2 项；不一致：无 |
