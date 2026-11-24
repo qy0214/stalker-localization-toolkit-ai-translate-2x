@@ -51,7 +51,7 @@ _TEST_ROOT = tempfile.mkdtemp(prefix="ait_par_plugin_")
 _PLUGIN_DIR = os.path.join(_TEST_ROOT, "ai_translate")
 os.makedirs(os.path.join(_PLUGIN_DIR, "assets"), exist_ok=True)
 shutil.copy2(_ORIG_PLUGIN, os.path.join(_PLUGIN_DIR, "plugin.py"))
-for _name in ("stalker_termbase.json", "glossary_builtin.json"):
+for _name in ("stalker_termbase.json", "glossary_builtin.json", "xray_pkg.zip"):
     _src = os.path.join(_ASSET_SRC, _name)
     if os.path.isfile(_src):
         shutil.copy2(_src, os.path.join(_PLUGIN_DIR, "assets", _name))
@@ -374,58 +374,47 @@ def t9_audit():
         f.write("")                      # 账本说非空，盘上是空
     missing_rel = "configs/text/ghost.xml"  # 账本有、盘上没有
 
-    tab = ait.TranslationJob.__new__(ait.TranslationJob)
-    lock = threading.RLock()
+    def make_audit_job(output):
+        job = ait.TranslationJob(
+            ait._load_vendor(), object(), os.path.join(TMP, "in"),
+            "text", "auto", "chs", out_dir=output,
+            log=lambda *a, **k: None, reference_mode=False,
+            copy_reference=False, protect_proper=False,
+            auto_session_terms=False, freq_names=False, tm_lite=False,
+            force_glossary=False)
+        job._ledger_path = os.path.join(output, ".ai_translate_done.json")
+        job._ledger_present = True
+        job._invalid_generated_tables = set()
+        return job
 
-    class _Lock(object):
-        def __enter__(self):
-            return lock.__enter__()
-
-        def __exit__(self, *a):
-            return lock.__exit__(*a)
-
-    class _P(object):
-        @staticmethod
-        def parse_xray_text_xml(path, enc=None):
-            raw = open(path, "r", encoding="utf-8").read()
-            ents = []
-            for m in re.finditer(r'<string id="([^"]+)">', raw):
-                ents.append(types.SimpleNamespace(id=m.group(1)))
-            return ents
-
-    tab._ledger_lock = _Lock()
+    tab = make_audit_job(done)
     tab._ledger = {
         rel: {"out_size": 128},
         gone: {"out_size": 128},
         missing_rel: {"out_size": 128},
     }
     tab._audit_tables = {rel}
-    tab.in_dir = os.path.join(TMP, "in")
-    tab.p = _P()
     logs = []
     tab.log = lambda msg, tag="info": logs.append((tag, str(msg)))
-    tab._logs = logs
-
-    def _parse_stub(fn, *args):
-        return fn(*args)
-
-    tab._parse = _parse_stub
-    tab._final_audit(done)
+    before = open(os.path.join(done, "configs", "text", "stable.xml"),
+                  "rb").read()
+    result = tab._final_audit(done)
     joined = "\n".join(m for _t, m in logs)
     check("T9-3 账本在盘检查：空文件被点名",
           "输出为空文件" in joined and "vanished.xml" in joined, "")
     check("T9-4 账本在盘检查：缺失文件被点名",
-          "输出缺失" in joined and "ghost.xml" in joined, "")
+          "账本有记录但输出缺失" in joined and "ghost.xml" in joined, "")
     check("T9-5 改写表 ID 覆盖：漏 b 条被点名",
-          "疑似漏条目" in joined and "stable.xml" in joined, "")
+          "输出疑似漏条目" in joined and "stable.xml" in joined, "")
     check("T9-6 掩码残留被点名（疑似口径）",
           "疑似未还原掩码" in joined, "")
-    check("T9-7 终检以 warn 汇报（不删改、不影响输出）",
-          any(t == "warn" for t, _m in logs))
+    check("T9-7 终检硬失败撤销问题账本但不删改输出",
+          not result["ok"] and rel not in tab._ledger
+          and open(os.path.join(done, "configs", "text", "stable.xml"),
+                   "rb").read() == before)
     check("T9-8 有问题的终检不输出「终检通过」",
           "终检通过" not in joined)
 
-    # 全绿路径：独立干净输出目录（不复用上面带问题的输出）
     clean = os.path.join(TMP, "clean_out")
     os.makedirs(os.path.join(clean, "configs", "text"), exist_ok=True)
     wtable(os.path.join(inp, "good.xml"), ["a"], "оригинал")
@@ -433,19 +422,15 @@ def t9_audit():
            ["a"], "хороший перевод")
     wtable(os.path.join(clean, "configs", "text", "stable.xml"),
            ["a", "b"], "перевод")
-    tab2 = ait.TranslationJob.__new__(ait.TranslationJob)
-    tab2._ledger_lock = _Lock()
+    tab2 = make_audit_job(clean)
     tab2._ledger = {rel: {"out_size": 128},
                     "configs/text/good.xml": {"out_size": 64}}
     tab2._audit_tables = {"configs/text/good.xml"}
-    tab2.in_dir = os.path.join(TMP, "in")
-    tab2.p = _P()
     logs2 = []
     tab2.log = lambda msg, tag="info": logs2.append((tag, str(msg)))
-    tab2._parse = _parse_stub
-    tab2._final_audit(clean)
-    check("T9-9 干净输出输出「终检通过」",
-          any("终检通过" in m for _t, m in logs2),
+    result2 = tab2._final_audit(clean)
+    check("T9-9 干净输出返回通过结构并输出「终检通过」",
+          result2["ok"] and any("终检通过" in m for _t, m in logs2),
           logs2[0][1] if logs2 else "(无日志)")
 
 

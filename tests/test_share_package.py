@@ -149,7 +149,8 @@ check("A5 解析器包能被加载（xray_pkg.zip 是必需项，不能省）",
       mod_share._load_vendor() is not None)
 check("B0 导入后分享包本身未被写入（测试只在临时副本上操作）",
       sorted(os.path.relpath(os.path.join(r, f), SHARE)
-             for r, _d, fs in os.walk(SHARE) for f in fs) == BASELINE,
+             for r, _d, fs in os.walk(SHARE)
+             if "__pycache__" not in r for f in fs) == BASELINE,
       "分享包目录保持原样")
 
 mod_cold = load(cold_py, "ait_cold")
@@ -165,12 +166,12 @@ check("B2 无 config.json 时配置回落默认值（不带任何本机设置）
       json.dumps({k: mod_cold.load_config()[k]
                   for k in ("in_dir", "out_dir", "tier", "variant")},
                  ensure_ascii=False))
-check("B3 未附带运行库时 find_exe 返回 None（会引导用户下载）",
-      mod_cold.AiTranslateTab.find_exe.__doc__ is not None)
 _inst = mod_cold.AiTranslateTab.__new__(mod_cold.AiTranslateTab)
 _inst.cfg = mod_cold.load_config()
 _inst.current_variant = lambda: "cuda"
 _inst.current_tier = lambda: "7b"
+check("B3 未附带运行库时 find_exe 返回 None（会引导用户下载）",
+      _inst.find_exe() is None)
 check("B4 未附带模型时 find_model 返回 None（会引导用户下载）",
       _inst.find_model() is None)
 check("B5 未附带运行库时 find_exe 返回 None（不静默跨后端回退）",

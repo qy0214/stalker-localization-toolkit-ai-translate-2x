@@ -151,13 +151,18 @@ def t3_end_to_end_names():
                          "stable_sms_character_name.xml")
         body = open(p, encoding="utf-8").read() if os.path.isfile(p) else ""
         check("T3-run 成功", ok)
+        pkg = ait._load_vendor()
+        parsed = pkg.parse_xray_text_xml(p, ["utf-8"]) or []
+        out_map = {ent.id: ent for ent in parsed}
         for _id, want in (("sms_bar_barmen_name", "酒保"),
                           ("sms_yan_ghost_name", "幽灵"),
                           ("sms_zveroboy_name", "猎兽人"),
                           ("sms_forest_lesnik_name", "守林员"),
                           ("sms_xalyava_name", "白给者"),
                           ("sms_svoboda_name", "自由团")):
-            check("T3-译出 %s" % want, want in body, body[:200])
+            ent = out_map.get(_id)
+            out_text = pkg.getRecommendLangText(ent, "chs")[1] if ent else ""
+            check("T3-译出 %s" % want, want in out_text, out_text)
         # 词库未收的西里尔短名：应送模型，不再原样保留
         check("T3-未收词条送模型",
               any("НЕИЗВЕСТНОЕСЛОВО123" in c for c in srv.calls),

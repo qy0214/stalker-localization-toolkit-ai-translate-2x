@@ -1,4 +1,4 @@
-# ai_translate 2.0.27
+# ai_translate 2.0.28
 
 面向 **STALKER Localization Toolkit 2.x**（C++/Qt）的本地离线 AI 翻译插件：
 用 Hy-MT2 / llama.cpp 在本机翻译 X-Ray 文本 XML、cfgxml、ltx 与脚本，不依赖在线翻译 API。
@@ -11,7 +11,8 @@
 
 | 版本 | 摘要 |
 |---|---|
-| **2.0.27** | 术语库交叉一致性审计（新方法，弃用旧脚本）：同源跨类冲突 15 组全部统一（Loners→独行者、Wolf→狼、Cap→帽子、Mama's Beads→妈妈的念珠、Generator→发电机 等）、中文半角标点 1087 条规范化、俄英同源（Мамины бусы 系列）对齐；交叉审计 S1/S4a 归零，两仓四副本同步，测试 20/20 全绿 |
+| **2.0.28** | 小模型交付可靠性修复：纯符号/零变化文本不再生成文件或记账，旧账本按 pipeline + SHA-256 强制迁移；取消/异常/写盘失败均撤销完成记录，生成 ID 定义表按文件事务落盘并补齐中断恢复；终检升级为结构化硬门禁（悬空 ID、占位符损坏、漏译、硬术语次数、语义方向冲突），失败不再显示「全部完成」；补齐严格 token 序列、提示词串入、多语言字段保真和原子替换并发保护。新增 60 项真实解析器/假模型边界回归，21 个测试文件全绿，发布一致性 25/25 |
+| 2.0.27 | 术语库交叉一致性审计（新方法，弃用旧脚本）：同源跨类冲突 15 组全部统一（Loners→独行者、Wolf→狼、Cap→帽子、Mama's Beads→妈妈的念珠、Generator→发电机 等）、中文半角标点 1087 条规范化、俄英同源（Мамины бусы 系列）对齐；交叉审计 S1/S4a 归零，两仓四副本同步，测试 20/20 全绿 |
 | 2.0.26 | 术语库深度审查与优化：16 个 MOD / 1623 文件 / 64.2 MB 全量词频扫描 + 人工复核，新增「高频硬词」分类 51 条并挂入 canon 层（主产地名格变补位：Зона 主语单数、Припяти/Болотах/Кордоне/Агропроме/Янтаре/Радаре/Юпитере/Лощина 四格变；英文地名、CNPP/ЧАЭС 机组、Lab X-8/10/16/18、固定物品与 UI）；修正 9 处错译（Russian→俄语、НИИ→研究所、Director→主管、Darkscape→幽暗地带、Исполнитель желаний→许愿石、Крота→鼹鼠、Шурупа→螺丝、Стрелка 三格变→史特列洛克，删除 S.T.A.L.K.E.R.→潜行者）；词库 24456→24455（13 分类），本机用户层同步写入 51 条；测试 20/20 全绿 |
 | 2.0.25 | aera MOD 审计（188 文件 / 36138 应译条目）+ 人工对照包按 id 全量比对驱动的修复（不做 A/B 开关）：ident 假跳过修复（`_name/_descr/_text/_title` 等 id 后缀豁免，2206 条找回）；强制术语长文阈值（≥600 字符走分段链，1.8B 长文保不住占位符）；上下文串入切片级兜底；字面换行收敛 11 条；CHS 人工对照收割 1932 条入「人工对照」硬层（P1/P2/P4）；口语化提示词锚例（P6）；审计/清单工具口径修正。词库 22524→24456，测试 20/20 全绿，全 MOD 重放零漂移 |
 | 2.0.24 | IWP 已翻译产物全量深度审计（186 文件 / 18978 应译条目）驱动的 6 项修复：批量对话路径补齐占位符掩码/还原/数字/粘连/错位校验（P0，实测 `%c[default]→%c[默认]` 等 16 条运行期破坏全部来自该无掩码旁路）；「（原文数字/型号 …）」注记退役（年代误报 38 条清零 + 定向重试 + 裸数字兜底 + 型号数字双注记修复）；短名回显新增定名指令兜底；粘连残词（克里门enko 类）新增确定性闸门；未解析引用报告收紧；汉字间空格收敛。全 MOD 重放零漂移，测试 19/19 全绿 |
@@ -33,7 +34,7 @@
 - 八道译后闸门（占位符 / 换行 / 粗口 / 完整性 / 残留源文 / 长度比 / 回显等），收尾输出「提示词体检」遥测。
 - 随包术语库 24455 条（13 分类）：内置只读层 + 用户覆盖层，含 canon/names 硬层、技术精确表与软提示层，2.0.25 起含「人工对照」层，2.0.26 起含「高频硬词」层（51 条高频专名/地名格变升入 canon）；另有会话词表与 TM-lite 精确复用。
 - 场景批处理：连续短对话按上下文批量翻译，失败回退逐条；中文去翻译腔后处理。
-- 完成账本 + 原子写盘：输入变化或输出未覆盖全部条目时自动重译，中断不留半截成品。
+- 完成账本 + 原子写盘：输入或输出 SHA-256 变化即重译；取消、异常、写盘失败与终检硬失败均不记为完成，生成 ID 定义表与正文按文件保持一致，失败时保留源文供复核。
 - 模型与 llama.cpp 运行库不随包分发：自动测速选源、按官方 SHA-256 校验、断点续传、失败换源。
 - 跟随宿主：小文本请求走 `api.host.http_*`、中小产物走 `api.host.http_download`、GB 级模型走自建流式管道；UI 回调走 `api.ui.post`，老宿主自动回退，不引入第三方 Python 依赖。
 
@@ -58,7 +59,7 @@
 
 ## 安装
 
-把 `dist/ai_translate_plugin_v2.0.27.zip` 解压到工具集的 `plugins/` 目录：
+把 `dist/ai_translate_plugin_v2.0.28.zip` 解压到工具集的 `plugins/` 目录：
 
 ```text
 <工具集目录>\plugins\ai_translate\plugin.py
@@ -88,9 +89,9 @@
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.27
+python tools/release_plugin.py 2.0.28
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.27 dist/ai_translate_plugin_v2.0.27_install.zip --title "ai_translate 2.0.27"
+gh release create v2.0.28 dist/ai_translate_plugin_v2.0.28_install.zip --title "ai_translate 2.0.28"
 # 3) 把第 1 步打印的条目追加进注册表 plugins 数组（需要该仓库写权限）
 ```
 
@@ -104,8 +105,8 @@ gh release create v2.0.27 dist/ai_translate_plugin_v2.0.27_install.zip --title "
 |---|---|
 | `plugins/ai_translate/plugin.py` | 插件入口，单文件实现 |
 | `plugins/ai_translate/assets/` | X-Ray 解析器 + 术语数据（随包只读） |
-| `dist/ai_translate_plugin_v2.0.27.zip` | 可直接分发的插件包 |
-| `dist/ai_translate_plugin_v2.0.27_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.28.zip` | 可直接分发的插件包 |
+| `dist/ai_translate_plugin_v2.0.28_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `CHANGELOG.md` | 各版本完整修复明细与证据 |
 | `corpus/` | 收割用双语语料与退役软层留档（不随发布包分发） |
@@ -123,10 +124,10 @@ gh release create v2.0.27 dist/ai_translate_plugin_v2.0.27_install.zip --title "
 
 ## 版本与校验
 
-- 插件版本：`ai_translate 2.0.27`　宿主插件 API：`1`
-- 插件入口 SHA-256：`83584fafaf222907bf4d693bcf3e4be725933af77cd5e72b840cd1ee2a5e7a62`
-- 发布 zip SHA-256：`96c33465642b2bde668dd0841feffa7ca991e41628ec360996b954451569e6a0`
-- 平台安装包 SHA-256：`73536a801ed8cb3b7bd5a5ae411d28be17922977f99d91a562bfaf467730ab0f`
+- 插件版本：`ai_translate 2.0.28`　宿主插件 API：`1`
+- 插件入口 SHA-256：`c85aa80dc1664635a9f5f0f60258c8f3247a7368d0370bfcfed92af92fed0a0a`
+- 发布 zip SHA-256：`d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d`
+- 平台安装包 SHA-256：`6d97b9fceb8bfc1e182614221d5de1402f9ba90b45ae11bf531eda03462ed413`
 - 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
   [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
   reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
@@ -137,7 +138,7 @@ gh release create v2.0.27 dist/ai_translate_plugin_v2.0.27_install.zip --title "
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.27.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.28.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。
@@ -153,10 +154,12 @@ python tools/gen_release_manifest.py --check   # 只校验不写盘（CI 门禁�
 python tools/test_random20_per_mod.py "" 0 "" all   # 全 MOD 全文件判定链重放
 ```
 
-当前全量：20 个测试文件全绿（契约 67、功能回归 358、动态多路 42、提示词规则 46、
-页签与宿主门面 21、分享包 30、2.0.22 专项 86+9、2.0.23 专项 6、2.0.24 专项 27、
-2.0.25 专项 24，及各版本专项；2.0.26 为词库数据变更，滚动 T60-2 夹具与 6 处版本
-白名单）；发布一致性 25/25。
+当前全量：21 个测试文件全绿（契约 67、功能回归 358、动态多路 42、提示词规则 46、
+页签与宿主门面 34、分享包 30、2.0.28 交付闸门 60、2.0.24 专项 27、
+2.0.25 专项 24，及各版本专项）；发布一致性 25/25。
+2.0.28 新测试使用真实 X-Ray 解析器与临时文件，只在模型/宿主边界 programmable fake；
+覆盖零变化输出、旧账本迁移、取消与写盘失败、生成 ID 事务、终检假绿、token 序列、
+提示词串入、多语言字段、术语精确直取、同尺寸输出篡改、损坏定义表恢复和并发互斥。
 测试统一 `sys.dont_write_bytecode = True`，不会把 `.pyc` 写进随包目录。
 
 ## 许可

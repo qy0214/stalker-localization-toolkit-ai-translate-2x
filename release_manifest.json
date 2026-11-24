@@ -1,34 +1,36 @@
 {
-  "generated_at": "2026-11-24T05:22:09+08:00",
+  "generated_at": "2026-11-25T02:29:34+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "main",
-    "commit": "69aec59",
+    "commit": "821e82c",
     "dirty": true,
     "dirty_files": [
-      " D dist/ai_translate_plugin_v2.0.26.zip",
-      " D dist/ai_translate_plugin_v2.0.26_install.zip",
-      " M plugins/ai_translate/assets/glossary_builtin.json",
-      " M plugins/ai_translate/assets/stalker_termbase.json",
+      "M audit-reports/TERMBASE_CROSS_AUDIT_20261124.md",
+      " D dist/ai_translate_plugin_v2.0.27.zip",
+      " D dist/ai_translate_plugin_v2.0.27_install.zip",
       " M plugins/ai_translate/plugin.py",
       " M tests/test_2013_all_fixes.py",
       " M tests/test_2014_all_fixes.py",
       " M tests/test_2015_all_fixes.py",
+      " M tests/test_2021_iwp_gates.py",
       " M tests/test_2022_soft_retire.py",
       " M tests/test_2024_audit_fixes.py",
       " M tests/test_2025_chs_fixes.py",
+      " M tests/test_2707_fixes.py",
       " M tests/test_ai_translate_fixes.py",
-      "?? audit-reports/TERMBASE_CROSS_AUDIT_20261124.md",
-      "?? dist/ai_translate_plugin_v2.0.27.zip",
-      "?? dist/ai_translate_plugin_v2.0.27_install.zip",
-      "?? tools/audit_termbase_cross.py",
-      "?? tools/fix_termbase_cross.py"
+      " M tests/test_dynamic_parallel.py",
+      " M tests/test_share_package.py",
+      " M tests/test_ui_fallback.py",
+      "?? dist/ai_translate_plugin_v2.0.28.zip",
+      "?? dist/ai_translate_plugin_v2.0.28_install.zip",
+      "?? tests/test_2028_delivery_gates.py"
     ]
   },
   "versions": {
-    "plugin_version": "2.0.27",
-    "expected_plugin_version": "2.0.27",
+    "plugin_version": "2.0.28",
+    "expected_plugin_version": "2.0.28",
     "plugin_api": 1,
     "target_toolkit": "STALKER Localization Toolkit 2.x"
   },
@@ -37,32 +39,32 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 490266,
-      "sha256": "83584fafaf222907bf4d693bcf3e4be725933af77cd5e72b840cd1ee2a5e7a62",
+      "size": 525599,
+      "sha256": "c85aa80dc1664635a9f5f0f60258c8f3247a7368d0370bfcfed92af92fed0a0a",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 2928894,
+      "size": 2964227,
       "sha256": "",
       "note": "5 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
-      "path": "dist\\ai_translate_plugin_v2.0.27.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.28.zip",
       "exists": true,
-      "size": 993326,
-      "sha256": "96c33465642b2bde668dd0841feffa7ca991e41628ec360996b954451569e6a0",
+      "size": 998944,
+      "sha256": "d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
-      "path": "dist\\ai_translate_plugin_v2.0.27_install.zip",
+      "path": "dist\\ai_translate_plugin_v2.0.28_install.zip",
       "exists": true,
-      "size": 993246,
-      "sha256": "73536a801ed8cb3b7bd5a5ae411d28be17922977f99d91a562bfaf467730ab0f",
+      "size": 998864,
+      "sha256": "6d97b9fceb8bfc1e182614221d5de1402f9ba90b45ae11bf531eda03462ed413",
       "note": "给平台插件管理器直接解压用"
     },
     {
@@ -99,8 +101,8 @@
     }
   ],
   "zip": {
-    "path": "dist\\ai_translate_plugin_v2.0.27.zip",
-    "sha256": "96c33465642b2bde668dd0841feffa7ca991e41628ec360996b954451569e6a0",
+    "path": "dist\\ai_translate_plugin_v2.0.28.zip",
+    "sha256": "d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
@@ -156,7 +158,7 @@
     {
       "check": "插件版本 == 预期",
       "ok": true,
-      "detail": "PLUGIN_INFO 2.0.27 / 预期 2.0.27"
+      "detail": "PLUGIN_INFO 2.0.28 / 预期 2.0.28"
     },
     {
       "check": "PLUGIN_API == 1（2.x 宿主契约）",
@@ -186,7 +188,7 @@
     {
       "check": "zip 文件名含插件版本",
       "ok": true,
-      "detail": "ai_translate_plugin_v2.0.27.zip"
+      "detail": "ai_translate_plugin_v2.0.28.zip"
     },
     {
       "check": "zip 条目 == 5 个预期文件",
@@ -295,7 +297,7 @@
     "termbase_meta_total": 24455
   },
   "tracked": {
-    "files": 1288,
-    "bytes": 33610754
+    "files": 1291,
+    "bytes": 33669816
   }
 }

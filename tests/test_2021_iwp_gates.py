@@ -53,7 +53,7 @@ check("partial: 单词形态可替换", p2 == "野猪", p2)
 # 词边界：Boar 不应误伤 Boars 之外的包含关系（如 Boars→不替换 Boar 部分）
 p3 = m.partial_glossary_translation('"Boars" pack')
 check("partial: 词边界保护（Boars 不被 Boar 命中替换）",
-      p3 is None or ("野猪s" not in p3 and "野猪" not in p3.replace("野猪群", "")) or True,
+      p3 is None,
       p3)
 
 # 4) 判定路径：保护条目确会命中 looks_like_proper_text

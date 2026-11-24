@@ -30,13 +30,19 @@ from fake_host import FakeApi, FakeUi  # noqa: E402
 class B249Ui(FakeUi):
     """模拟 B249+：有原生 ui.post，无 QTimer 泵。"""
 
+    def __init__(self):
+        super().__init__()
+        self.pending_posts = []
+
     def post(self, fn, *args):
         self.post_calls = getattr(self, "post_calls", 0) + 1
-        try:
-            fn(*args)
-        except Exception:
-            pass
+        self.pending_posts.append((fn, args))
         return True
+
+    def drain(self):
+        pending, self.pending_posts = self.pending_posts, []
+        for fn, args in pending:
+            fn(*args)
 
 RESULTS = []
 
@@ -165,7 +171,11 @@ def t_host_post():
     th = threading.Thread(target=worker)
     th.start()
     th.join(timeout=5)
-    check("T5-2 ui_call 经 post 投递并执行", called == ["ui"],
+    check("T5-2 ui_call 只经 post 投递且工作线程不执行",
+          called == [] and len(api.ui.pending_posts) == 1,
+          "called=%s pending=%d" % (called, len(api.ui.pending_posts)))
+    api.ui.drain()
+    check("T5-2b 宿主回到 UI 线程后执行投递回调", called == ["ui"],
           "called=%s" % called)
     check("T5-3 post 至少调用一次",
           getattr(api.ui, "post_calls", 0) >= 1,
@@ -380,10 +390,15 @@ def t_on_ui_raise():
     direct = called and not getattr(api.ui, "post_calls", 0) and not queued
     check("T8-1 探测异常不直接执行 UI 调用", not direct,
           "direct=%s" % direct)
-    check("T8-2 回调经 post 或兼容队列投递",
-          called == [1] and (getattr(api.ui, "post_calls", 0) >= 1
-                             or len(queued) >= 1),
-          "post=%s queued=%s" % (getattr(api.ui, "post_calls", 0), len(queued)))
+    pending = list(api.ui.pending_posts)
+    check("T8-2 回调延迟投递且尚未执行",
+          called == [] and len(pending) == 1
+          and getattr(api.ui, "post_calls", 0) >= 1,
+          "called=%s post=%s pending=%d"
+          % (called, getattr(api.ui, "post_calls", 0), len(pending)))
+    api.ui.drain()
+    check("T8-3 宿主执行投递回调后更新状态", called == [1],
+          "called=%s" % called)
     api.ui.on_ui_thread = orig_probe
 
 
