@@ -70,7 +70,177 @@ _ATOMIC_REPLACE_LOCK = threading.Lock()
 
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_ASSETS = os.path.join(_HERE, "assets")
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
+from stalker_translate_core import (  # noqa: E402
+    resolve_asset_root,
+    sha256_file as _core_sha256_file,
+)
+from stalker_translate_core.pipeline import (  # noqa: E402
+    GLOSSARY_HINT_HEADER,
+    GLOSSARY_HINT_HEADER_OFFICIAL,
+    TRANSLATION_BATCH_SYS_PROMPT,
+    TRANSLATION_SYS_PROMPT,
+    TRANSLATION_SYS_PROMPT_EN,
+    TRANSLATION_SYS_PROMPT_LABEL,
+    _ANY_PLACEHOLDER_RE,
+    _BIG_NUM_RE,
+    _BULLET,
+    _CLAUSE_SPLIT,
+    _CODE_LIKE_RE,
+    _CONTEXT_ECHO_MARKERS,
+    _COPYRIGHT_RE,
+    _CYR_WORD_RE,
+    _DEBUG_LIKE_RE,
+    _DEBUG_PHRASES,
+    _DUP_FUNCTION_RE,
+    _EN_PROFANITY_RE,
+    _GLUE_RE,
+    _LEADING_ARTICLE_RE,
+    _GLUE_STRIP_RE,
+    _MASK_RESIDUE_RE,
+    _MODEL_LIKE_RE,
+    _MODEL_TOKEN_RE,
+    _PLACEHOLDER_RE,
+    _PLACEHOLDER_RETRY_NOTE,
+    _PLAYER_ID_SUFFIX_RE,
+    _PLAYER_LABEL_DIRS,
+    _PROFANITY_RETRY_NOTE,
+    _PROMPT_ECHO_MARKERS,
+    _PROTECT_FILE_HINTS,
+    _PUNCT_HALF_TO_FULL,
+    _REPEATED_BANG_RE,
+    _RESIDUAL_CYRILLIC_NOTE,
+    _RUNTIME_TOKEN_RE,
+    _RU_PROFANITY_RE,
+    _SENT_SPLIT,
+    _STYLE_REPLACEMENTS,
+    _TECH_CALIBER_RE,
+    _TECH_SPEC_RE,
+    _TITLE_DASH_RE,
+    _TITLE_LIKE_RE,
+    _TRACK_LIST_RE,
+    _UPPER_LABEL_DIRS,
+    _YEAR_RANGE_RE,
+    _ZH_DIGITS,
+    _ZH_PROFANITY_RE,
+    _has_translatable_text,
+    _id_player_visible,
+    _is_model_code_form,
+    _is_prose_sentence,
+    _zh_number_values,
+    budget_max_tokens,
+    clean_injected_bullets,
+    clean_stuck_article,
+    clean_translation_output,
+    count_literal_newlines,
+    detect_text_lang,
+    escape_newlines,
+    estimate_tokens,
+    find_glue_residue,
+    has_cjk,
+    has_source_profanity,
+    has_zh_profanity,
+    is_player_facing_label,
+    looks_like_code_or_debug,
+    looks_like_context_bleed,
+    looks_like_context_echo,
+    looks_like_generated_noise,
+    looks_like_hard_protected_file,
+    looks_like_identifier_text,
+    strip_output_wrappers,
+    looks_like_model_name,
+    looks_like_prompt_echo,
+    looks_like_proper_text,
+    looks_like_protected_text,
+    looks_like_technical_text,
+    mask_runtime_tokens,
+    missing_big_numbers,
+    missing_model_tokens,
+    normalize_cn_punctuation,
+    partial_source_review,
+    patch_missing_numbers,
+    reconcile_literal_newlines,
+    restore_linebreaks,
+    restore_runtime_tokens,
+    runtime_token_counts,
+    runtime_tokens_match,
+    safe_chunk_chars,
+    semantic_role_issues,
+    style_cleanup_cn,
+    unescape_newlines,
+)
+from stalker_translate_core.glossary import (  # noqa: E402
+    GLOSSARY_HINT_BUDGET,
+    GLOSSARY_HINT_STOPWORDS,
+    USER_GLOSSARY_FORMAT as _GLOSS_LAYER_FORMAT,
+    UserGlossaryStore,
+    _SESSION_ITEM_DIRS,
+    _SESSION_LIMITS,
+    _SESSION_LOC_DIRS,
+    _SESSION_NAME_DIRS,
+    _SESSION_QUOTES,
+    _SESSION_SKIP_DIRS,
+    _SESSION_TERM_NOTE,
+    glossary_hint_block,
+    session_category,
+    session_term_shape,
+)
+from stalker_translate_core.matching import GlossaryIndex  # noqa: E402
+from stalker_translate_core.models import BUILTIN_TIERS, TIER_PROFILES  # noqa: E402
+from stalker_translate_core.text import (  # noqa: E402
+    pattern_translate,
+    split_long_text,
+    split_protected,
+)
+from stalker_translate_core.termbase import (  # noqa: E402
+    DEFAULT_LAYERS as _DEFAULT_LAYERS,
+    Termbase,
+    flatten_glossary as _core_flatten_glossary,
+    load_builtin_glossary as _core_load_builtin_glossary,
+)
+from stalker_translate_core.xray import (  # noqa: E402
+    _ENC_UTF8,
+    analyze_input_dir,
+    classify_xray_file,
+    decide_ctx,
+    encoding_chain,
+    files_equal as _files_equal,
+    looks_like_mojibake,
+    read_encoding_chain,
+    read_text_any,
+)
+from stalker_translate_core.script import (  # noqa: E402
+    _SCRIPT_ASSIGN_RE,
+    _SCRIPT_EXTRA_DISPLAY_RES,
+    _SCRIPT_LOGIC_CALL_RE,
+    _SCRIPT_LOG_CALL_RE,
+    _SCRIPT_QUOTED_RE,
+    _SCRIPT_TEXT_VAR_RE,
+    _SCRIPT_TRANSLATE_ARG_RE,
+    _SCRIPT_TRANSLATE_RE,
+    _SCRIPT_UI_CALL_RE,
+    _XML_REF_ATTR_RE,
+    _XML_REF_TAG_RE,
+    extra_script_display_literals,
+    script_literal_allowed,
+    script_literal_allowed_in_file,
+    script_translate_literal_args,
+    strip_script_comment,
+)
+from stalker_translate_core import (  # noqa: E402
+    glossary as _core_glossary,
+    matching as _core_matching,
+    pipeline as _core_pipeline,
+    text as _core_text,
+    xray as _core_xray,
+)
+from stalker_translate_core.pipeline import OutputTruncated  # noqa: E402
+from stalker_translate_core.pipeline import fmt_size as _fmt_size  # noqa: E402
+from stalker_translate_core.runtime import capture_stdout  # noqa: E402
+from stalker_translate_core.vendor import load_vendor as _core_load_vendor  # noqa: E402
+from stalker_translate_core.offline_job import OfflineTranslationJob  # noqa: E402
+_ASSETS = str(resolve_asset_root(__file__))
 _VENDOR_ZIP = os.path.join(_ASSETS, "xray_pkg.zip")
 _SHIPPED_BIN_DIR = os.path.join(_ASSETS, "bin")
 _SHIPPED_MODELS_DIR = os.path.join(_ASSETS, "models")
@@ -121,7 +291,6 @@ _DOWNLOAD_DIR = os.path.join(_DATA_ROOT, "downloads")
 _GLOSS_BUILTIN = os.path.join(_ASSETS, "glossary_builtin.json")
 _GLOSS_BUILTIN_LEGACY = os.path.join(_ASSETS, "glossary_user.json")
 _GLOSS_USER = os.path.join(_DATA_ROOT, "glossary_user.json")
-_GLOSS_LAYER_FORMAT = "ai-translate-glossary-user/1"
 
 for _d in (_DATA_ROOT, _MODELS_DIR, _BIN_DIR, _LOGS_DIR, _DOWNLOAD_DIR):
     try:
@@ -986,33 +1155,10 @@ _TECHNICAL_EXACT = {
 
 # 会话词表：当前 MOD 的人名/物品/地点候选，自动翻译并缓存。
 # 它不是随包术语库，不需要为每个 MOD 手工建档；缓存只在本机。
-_SESSION_TERM_NOTE = (
-    "这是游戏名词表。逐行译成简体中文，保持行数与顺序；"
-    "人名音译，绰号/物品/地点按游戏习惯意译；"
-    "不要编号、不要解释、不要保留俄文或英文原文。")
-_SESSION_QUOTES = "\"'«»“”‘’"
-_SESSION_NAME_DIRS = ("character_name", "snames", "fnames", "bio")
-_SESSION_ITEM_DIRS = ("item", "weapon", "equipment", "artefact",
-                      "artifact", "arsenal")
-_SESSION_LOC_DIRS = ("mapspot", "level", "place", "zone")
-_SESSION_SKIP_DIRS = ("dialog", "news", "task", "tip", "stash", "secret",
-                      "credits", "ui", "gameplay", "spawn", "npc")
-_SESSION_LIMITS = {"人物与军衔": 1500, "物品·武器·装备·神器": 500,
-                   "地点与区域": 400, "阵营与组织": 150, "变异生物": 100,
-                   # ★ 2.0.11 成就名/声望等级/武器属性短标签：模型单条常原样
-                   # 回显，纳入会话词表批量定译（批量带"不得保留英文"提示）。
-                   "成就·称号·属性标签": 300}
 
 # ★ 2.0.3 高频专名定译：会话词表只扫“名字型”文件（人物/物品/地点目录），
 # 正文里反复出现却不在名字型文件里的专名（组织、事件、俚语地名等）仍会
 # 跨文件漂译。这里全文扫描高频词定译，并入软提示层收敛译名。
-_FREQ_NAME_MIN_TOTAL = 5    # 全文出现 ≥5 次才候选
-_FREQ_NAME_MIN_MID = 2      # 其中句中位置（前随空白/标点）≥2 次（滤句首普通词）
-_FREQ_NAME_LIMIT = 64       # 按频次取 top-N，控预算
-_FREQ_SCAN_FILE_CAP = 4000  # 解析文件数上限，防超大 MOD 拖慢启动
-_FREQ_WORD_RE = re.compile(r"[А-ЯЁ][а-яё]{2,}")
-_FREQ_MID_RE = re.compile(
-    r"(?<=[\s«„\"'(，。！？…：；—])[А-ЯЁ][а-яё]{2,}")
 
 # TM-lite：只在“同一批文本里重复句比例高”时启用**精确同源**复用。
 # 不做模糊匹配、不建跨 MOD 持久库、不把上一次任务的译文混进来。
@@ -1025,499 +1171,59 @@ TM_LITE_MIN_RATIO = 0.08
 TM_LITE_MIN_ENTRIES = 40
 
 
-def session_category(rel, eid):
-    """会话词表只收“名字型”条目；对话框/新闻/任务/署名不碰。"""
-    s = (rel or "").lower().replace("\\", "/")
-    k = (eid or "").lower()
-    if any(x in s for x in _SESSION_SKIP_DIRS):
-        return None
-    if any(x in s for x in _SESSION_NAME_DIRS):
-        if k.endswith(("_bio", "_descr", "_desc", "_text", "_hint")):
-            return None
-        if k.endswith("_name") or "snames" in s or "fnames" in s:
-            return "人物与军衔"
-        return None
-    if any(x in s for x in ("faction", "community")):
-        return "阵营与组织"
-    # ★ 2.0.11 玩家可见短标签：成就名、声望/等级、武器属性。
-    # 必须放在 _SESSION_ITEM_DIRS 之前（gunsl_up_binoc 等含 weapon 字样的
-    # 属性表优先归到标签类，模型原样回显时由会话词表批量定译）。
-    if any(x in s for x in ("achievement", "game_relations", "binoc",
-                            "reputation", "rank")):
-        return "成就·称号·属性标签"
-    if any(x in s for x in _SESSION_ITEM_DIRS):
-        if k.endswith(("_descr", "_desc", "_bio", "_text", "_hint")):
-            return None
-        return "物品·武器·装备·神器"
-    if any(x in s for x in ("creature", "mutant", "monster")):
-        return "变异生物"
-    if any(x in s for x in _SESSION_LOC_DIRS):
-        return "地点与区域"
-    return None
 
 
-def session_term_shape(src, cat):
-    """名词形状：短、无句末标点；人名允许缩写点。"""
-    s = (src or "").strip().strip(_SESSION_QUOTES).strip()
-    if not s or len(s) > 60 or "\n" in s or "\r" in s:
-        return ""
-    words = s.split()
-    if not (1 <= len(words) <= 5):
-        return ""
-    if cat == "人物与军衔":
-        if re.search(r"[。！？!?；;:]", s):
-            return ""
-        if re.match(r"^[А-ЯЁA-Z]\.\s*[А-ЯЁA-Z]?\.?\s*[А-ЯЁA-Z]", s):
-            return s
-        if s[0].isupper():
-            return s
-        return ""
-    if re.search(r"[.!?。！？；;:，,]", s):
-        return ""
-    if not re.search(r"[А-Яа-яЁёA-Za-z]", s):
-        return ""
-    if cat == "物品·武器·装备·神器" and looks_like_model_name(s):
-        return ""
-    return s
 
-TRANSLATION_SYS_PROMPT = (
-    "你是《潜行者 S.T.A.L.K.E.R.》后末日游戏的专业译员，"
-    "输入为对话、任务或物品文本。遵守以下规则。\n"
-    "\n"
-    "【硬性规则】\n"
-    "1. 逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
-    "控制符（$$ACTION$$、$变量）、脚本与条目ID（如 zat_b101_x、"
-    "sgtat_gen_text_1_x、a.b.c）、\\n；疑似代码或标记一律照抄勿译；\n"
-    "2. 人名、阵营、地名、怪物、武器物品等专名使用游戏约定译名，"
-    "前后统一，不另译、不音译成多个版本；\n"
-    "3. 忠实完整，不增译、不漏译、不脑补剧情；\n"
-    "4. 粗话、脏话、辱骂、威胁、黑色幽默与残酷描写一律按原意直译，"
-    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写成书面语、"
-    "委婉语（дерьмо 就是「屎／狗屎」，不是「糟糕」；заткнись 就是「闭嘴」，"
-    "不是「请安静」；башку оторву 就是「拧下你的脑袋」，"
-    "不是「我不会放过你」）；原文粗俗则译文粗俗，"
-    "不得因内容而回避或粉饰；\n"
-    "5. 输入是格变、复数、单数片段或半句时，按词库和上下文还原语义后\n"
-    "译成中文，不要保留原文，也不要只译一半；\n"
-    "6. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行；\n"
-    "\n"
-    "【语气与风格】\n"
-    "7. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
-    "用中文的语序、短句和中文习惯的省略与断句；称呼、亲疏、口气与情绪"
-    "贴合说话人身份，自然使用「啊、吧、嘛、呢、唉、喂」等语气词；\n"
-    "8. 不要翻译腔：不要「我不得不说」「就……而言」「如此」「因此」「并且」"
-    "这类欧化说法，不要生硬的被动句，不要把从句堆成长句，"
-    "不要连缀多余的「的」；\n"
-    "9. 物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
-    "10. 反问、讽刺、威胁按说话人的意图译，不要逐字翻转否定："
-    "«Ну а на хрен тебе не пойти?» 是「你他妈怎么还不滚？」，"
-    "不是「你别去了吧」；\n"
-    "11. 引号不是保留原文的理由：引号内的阵营、组织、地名、物品、人名"
-    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文；\n"
-    "12. 术语提示只在语义相符时采用：同一拼写在普通语境（例如 крот=鼹鼠）"
-    "不要硬套人名译名；同一人物、物品、地名全篇保持同一个译名。\n"
-    "\n"
-    "口语对照示例（左为生硬译法，右为地道中文；照右边的路子写）：\n"
-    "· 「听着，我有件事要告诉你。」→「哎，我有事找你。」\n"
-    "· 「我们无法再继续留在这里了。」→「这儿咱待不下去了。」\n"
-    "· 「我不知道你该如何做到这一点。」→「我不知道你咋弄，反正东西我得要。」\n"
-    "· 「你明白正在发生什么吗？」→「你懂现在发生啥了吗？」\n"
-    "· 「如果你因失血过多而死，我概不负责。」→「你要是流血死了，我可不负责。」\n"
-    "\n"
-    "只输出译文本身，不加任何解释或说明；原文已是目标语言时原样返回。\n"
-    "最后再强调两条：占位符、控制符、条目ID 必须逐字保留；"
-    "译文里不得残留整词或整段的俄文。"
-)
 
 # 英语源文专用提示词。规则与俄语版同构（分区+首尾复述），把术语/粗口/
 # 口语锚例换成英语里最常见的误译点：小模型容易把英语委婉化、书面化，
 # 或把习语逐词直译。
-TRANSLATION_SYS_PROMPT_EN = (
-    "你是《潜行者 S.T.A.L.K.E.R.》后末日游戏的专业译员，"
-    "输入可能是英语的对话、任务、物品或界面文本。遵守以下规则。\n"
-    "\n"
-    "【硬性规则】\n"
-    "1. 逐字保留、数量与顺序不变：占位符（%s、%d、%1$s）、"
-    "控制符（$$ACTION$$、$变量）、脚本与条目ID（如 zat_b101_x、"
-    "sgtat_gen_text_1_x、a.b.c）、\\n；疑似代码或标记一律照抄勿译；\n"
-    "2. 人名、阵营、地名、怪物、武器物品等专名使用游戏约定译名；"
-    "有官方中文名的用官方名，没有的按常见音译，首次出现后保持统一；"
-    "缩写、型号、代号（AK-74、PDA、SEVA）保留原文，不要硬造中文；\n"
-    "3. 忠实完整，不增译、不漏译、不脑补剧情；英语的冠词、助动词、"
-    "重复主语不要逐词搬进中文；\n"
-    "4. 粗话、脏话、辱骂、俚语、威胁、黑色幽默与残酷描写一律按原意直译，"
-    "保留同等粗鲁力度与情绪强度：不得弱化、省略、删除或改写成书面语、"
-    "委婉语（fuck 就是「操／妈的」，shit 就是「屎／狗屎」，不是「糟糕」；"
-    "shut up 就是「闭嘴」，不是「请安静」；I'll rip your head off "
-    "就是「我拧下你的脑袋」，不是「我不会放过你」）；"
-    "原文粗俗则译文粗俗；\n"
-    "5. 输入是复数、缩写、单数片段或半句时，按词库和上下文还原语义后"
-    "译成中文，不要保留英文原文；\n"
-    "6. 保留原文的换行数量与段落数；不要把两段合并成一段，也不要多加空行；\n"
-    "\n"
-    "【语气与风格】\n"
-    "7. 译文必须是地道的中文口语，读起来要像中国玩家自己在说话："
-    "用中文的语序、短句和中文习惯的省略与断句；称呼、亲疏、口气与情绪"
-    "贴合说话人身份，自然使用「啊、吧、嘛、呢、唉、喂」等语气词；\n"
-    "8. 不要翻译腔：不要「我不得不说」「就……而言」「如此」「因此」「并且」"
-    "这类欧化说法，不要生硬的被动句，不要把从句堆成长句，"
-    "不要连缀多余的「的」；英语习语按中文口语意译"
-    "（例如 It's a piece of cake → 小菜一碟），不要逐词硬译；\n"
-    "8a. 物品描述、百科正文虽不是对话，同样不许有翻译腔：用自然的中文"
-    "说明文，短句直说（「low radiation won't kill you」是「低剂量辐射"
-    "死不了人」，不是「你不会因低辐射而死」）；「并」「其」「则」「"
-    "免受……的伤害」这类书面连接能免则免；\n"
-    "9. 物品名称、按钮、菜单项这类短标签保持简洁直白，不口语化、不加语气词；\n"
-    "10. 反问、讽刺、威胁按说话人的意图译，不要逐字翻转否定："
-    "「Why don't you just leave?」是「你他妈怎么还不滚？」，"
-    "不是「你为什么不离开」；\n"
-    "11. 引号不是保留原文的理由：引号内的阵营、组织、地名、物品、人名"
-    "同样要译成中文；只有代码、型号、条目ID、文件路径才保留原文；\n"
-    "12. 术语提示只在语义相符时采用；同一人物、物品、地名全篇保持同一个译名；"
-    "普通语境里的同形词不要硬套专名译名。\n"
-    "\n"
-    "英语口语对照示例（左为生硬译法，右为地道中文；照右边的路子写）：\n"
-    "· 「Listen, I've got something to tell you.」→「哎，我有事找你。」\n"
-    "· 「We can't stay here anymore.」→「这儿咱待不下去了。」\n"
-    "· 「I don't know how you're going to do it.」→「我不知道你咋弄，反正东西我得要。」\n"
-    "· 「Do you understand what's going on?」→「你懂现在发生啥了吗？」\n"
-    "· 「Get out of my sight.」→「滚，别让我看见你。」\n"
-    "· 「You're a dead man.」→「你死定了。」\n"
-    "\n"
-    "只输出译文本身，不加任何解释或说明；原文已是中文时原样返回；"
-    "不要把英文原文抄进译文，也不要把规则复述出来。\n"
-    "最后再强调两条：占位符、控制符、条目ID 必须逐字保留；"
-    "译文里不得残留整词或整段的英文或俄文原文。"
-)
 
 # 对话场景批量翻译：只用于连续短对话。1.8B 实测能保留 [n] 行号。
 # 短标签/UI/物品名：不要套用对话口语规则。
-TRANSLATION_SYS_PROMPT_LABEL = (
-    "你是《潜行者 S.T.A.L.K.E.R.》的游戏本地化译者。输入是物品、按钮、"
-    "菜单或界面短标签。译成简洁、直白、统一的简体中文；不加语气词，"
-    "不扩写，不解释。占位符、控制符、代码/条目ID逐字保留。"
-    "专名使用游戏约定译名；只输出译文本身。"
-)
 
-TRANSLATION_BATCH_SYS_PROMPT = (
-    "你是《潜行者 S.T.A.L.K.E.R.》的场景对话译者。输入是多行连续对话，"
-    "每行以 [n] 开头。逐行翻译成自然、口语化的简体中文；必须保留每行"
-    "开头的 [n] 编号、行数和顺序，不合并、不拆分、不解释、不加角色名。"
-    "上下文里前后句只帮助理解，不要翻译没有编号的内容。"
-    "术语提示只在语义相符时采用；引号内的阵营、地名、物品、人名也要译成中文。"
-    "输入里的 $$R0$$、$$R1$$ 等控制符必须逐字原样保留，不得翻译、"
-    "拆分或改动。"
-    "只输出带编号的译文行。"
-)
 
 # 模型偶尔会把整段系统提示词当译文回显。用固定锚点做硬校验，
 # 不依赖提示词本身（换提示词时只需保留这些锚点）。
-_PROMPT_ECHO_MARKERS = (
-    "你是《潜行者",
-    "S.T.A.L.K.E.R.》后末日游戏的专业译员",
-    "只输出译文本身",
-    "口语对照示例",
-    "术语(用给定译名)",
-)
 
 
-def looks_like_prompt_echo(text, source=None):
-    s = text or ""
-    markers = [marker for marker in _PROMPT_ECHO_MARKERS if marker in s]
-    if not markers:
-        return False
-    return not all(marker in (source or "") for marker in markers)
 
 
 # ★ 2.0.8 场景上下文串入：模型（尤其 1.8B）会把 user prompt 前面那段
 # 「前一句/后一句」当成正文一起翻出来，连标签都照抄。这些标签绝不该出现在
 # 译文里，用固定锚点硬校验，与提示词无关。
-_CONTEXT_ECHO_MARKERS = (
-    "前一句：", "后一句：", "上一句：", "下一句：",
-    "上下文（仅供理解", "上下文(仅供理解",
-)
 
 
-def looks_like_context_echo(text):
-    s = text or ""
-    return any(marker in s for marker in _CONTEXT_ECHO_MARKERS)
 
 
-def looks_like_context_bleed(src, out):
-    """译文串入场景上下文：显式标签，或极短源文吐出超长段落。
-
-    后者兜住模型只翻了上下文正文、却没照抄「前一句：」标签的情况：
-    例如源文 `Я не готов.`（11 字符）却输出一整段上一条的译文。
-    """
-    if not out:
-        return False
-    if looks_like_context_echo(out):
-        return True
-    # ★ 2.0.12：串段污染——模型把相邻条目的译文一并吐进当前条目，
-    # 形成「另一段译文\\n\\n正确译文」。特征是源文无换行、译文却出现双 \\n，
-    # 或译文长度远超源文。旧判据只抓极短源文（<24），抓不到长对话串段。
-    s = (src or "").strip()
-    o = (out or "").strip()
-    if s and "\\n" not in s and "\\n" in o:
-        return True
-    if o.count("\\n") >= 2 and s.count("\\n") == 0:
-        return True
-    return len(s) < 24 and len(o) > 150
 
 
 # ★ 2.0.9 数字保真：金额/年份/坐标等大额数字绝不能被模型改写。
 # 实测 dm_lin_treasure_33 源文「30000 рублей」被译成「15,000卢布」（报酬腰斩）。
 # 只检 >=3 位的数字（<3 位多为编号/序号，且 2006-м→2006年 等屈折会误报）。
-_BIG_NUM_RE = re.compile(r"(?<![\d,.])(\d{3,})(?![\d,.])")
-_ZH_DIGITS = {"零": 0, "〇": 0, "一": 1, "二": 2, "两": 2, "三": 3, "四": 4,
-              "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 
 
-def _zh_number_values(text):
-    """把译文里的中文计数法还原成数值集合，用于核对原文大额数字。
-
-    支持：1.5万 / 3万 / 两万 / 三万 / 十五万 / 100,000 / 100 000。
-    中文汉字数字只覆盖万位以内的常见写法，够核对金额即可。
-    """
-    vals = set()
-    if not text:
-        return vals
-    # 阿拉伯数字 + 万/千（含千分位逗号、空格）
-    for m in re.finditer(r"(\d+(?:[.,]\d+)?)\s*([万千])", text):
-        try:
-            base = float(m.group(1).replace(",", ""))
-            mult = 10000 if m.group(2) == "万" else 1000
-            v = base * mult
-            vals.add(int(v) if v == int(v) else v)
-        except ValueError:
-            pass
-    # 纯汉字数字串，如 三万 / 一万五千 / 两万 / 十五万 / 一百二十五
-    # 一次性解析整串（含万/千/百/十多级），避免「一万五千」被拆成 1万+5千。
-    for m in re.finditer(r"[零〇一二两三四五六七八九十百千万]+", text):
-        seg = m.group(0)
-        total, section, num = 0, 0, 0
-        for i, ch in enumerate(seg):
-            if ch in _ZH_DIGITS:
-                num = _ZH_DIGITS[ch]
-            elif ch in ("十", "百", "千", "万"):
-                unit = {"十": 10, "百": 100, "千": 1000, "万": 10000}[ch]
-                if ch == "万":
-                    # 万之前的部分（section+num）是"几万"
-                    total += (section + num or 1) * unit
-                    section, num = 0, 0
-                else:
-                    section += (num or 1) * unit
-                    num = 0
-            # 末端数字累加到 section/num 由下方统一处理
-        value = total + section + num
-        if value:
-            vals.add(value)
-    return vals
 
 
-def missing_big_numbers(src, out):
-    """源文大额数字在译文中找不到（原样/千分位/中文计数）时返回缺失列表。
-
-    找不到 = 模型改写或漏掉了关键数字（金额、年份、坐标、密码），
-    必须拦截。返回空列表表示保真通过。
-    """
-    if not src or not out:
-        return []
-    s = str(src)
-    # ★ 2.0.21（IWP 产物审计）：色码 %c[r,g,b,a] 内的数字是渲染参数，
-    # 不参与保真校验——实测 m249 百科的 109/193 为 %c 分量，被当缺失
-    # 金额补成「（原文数字 109）（原文数字 193）」注记污染译文。
-    s = re.sub(r"%c\[[^\]]*\]", " ", s)
-    src_nums = set(_BIG_NUM_RE.findall(s))
-    # ★ 2.0.11：型号尾号与年份区间不参与保真校验。
-    # 实测武器长段描述含 `FN FNX-45` / `developed in 2007-2009` / `2800`，
-    # 旧逻辑把型号 45、年份 2007/2009 也当金额，模型译成中文后数字对不齐，
-    # 两次重试仍判缺失 → 整段保留英文（比纯漏译更糟）。
-    # 只豁免「字母-数字」的型号尾号和「4位-4位」年份；独立金额/坐标仍严格校验。
-    for m in re.finditer(r"[A-Za-z][A-Za-z0-9]*[-‐‑‒–—]\s*(\d{3,})", s):
-        src_nums.discard(m.group(1))
-    # ★ 2.0.14：年份区间不再全部豁免。旧逻辑把 2007-2009 两端都丢掉，
-    # 模型把「developed in 2007-2009」改成「P220 / 220」时闸门完全放行
-    # （实测 esc_2_12_nimble_get_order_131）。改为只豁免区间尾年，保留
-    # 起始年参与校验——译文若两个年份都换成别的数字就会被拦下。
-    for m in re.finditer(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b", s):
-        src_nums.discard(m.group(2))
-    if not src_nums:
-        return []
-    # 仅去掉千分位逗号；小数点逗号不能与普通分隔符混为一谈。
-    out_text = re.sub(r"(?<=\d),(?=\d{3}(?:\D|$))", "", str(out))
-    out_nums = set(re.findall(r"\d+", re.sub(r"\s+", "", out_text)))
-    out_nums |= {str(int(float(x))) for x in out_nums if x.isdigit()}
-    out_vals = _zh_number_values(out)
-    missing = []
-    for n in src_nums:
-        # 原样出现（含千分位：源 30000，译 30,000 → 去逗号后 30000）
-        if n in out_nums:
-            continue
-        iv = int(n)
-        if iv in out_vals or float(iv) in out_vals or iv in out_nums:
-            continue
-        missing.append(n)
-    # ★ 2.0.24（IWP 全量审计 D2）：年代的中文纪年表述视为保真。
-    # 实测 "1960s / 1990s" 译作「20世纪60年代/90年代」被严格数字核对
-    # 判缺失，59 条注记里 38 条是这种误报。译文出现「YY年代」（可带
-    # 世纪前缀）或「YYYY年代」时，认定对应十年位年份已表达。
-    # 通用规则，不依赖具体 MOD/文本。
-    if missing:
-        keep = []
-        for n in missing:
-            if (len(n) == 4 and n.endswith("0")
-                    and re.search(r"(?:(?:1[5-9]|20)\s*世纪\s*)?"
-                                  + n[2:4] + r"\s*年代|" + n + r"年代",
-                                  str(out))):
-                continue
-            keep.append(n)
-        missing = keep
-    # 确定性输出顺序：集合迭代顺序随进程哈希变化，会让补数字/测试不稳定
-    missing.sort(key=lambda x: (len(x), x))
-    return missing
 
 
-def patch_missing_numbers(src, out, skip=()):
-    """数字闸门两次重试仍缺失时的兜底：不整段回退原文，而是把缺失的
-    关键数字按出现顺序补进译文，保留已经译好的正文。
-
-    实测武器长段描述（FNX-45 段落）因金额 2800 两次重试都没带上，
-    旧逻辑整段保留英文——玩家看到的是一整段看不懂的外文，比数字
-    缺失严重得多。这里改为：译文已有中文时，把缺失金额以「（2800）」
-    形式补到对应位置附近；找不到锚点则追加到末尾。
-
-    ★ 2.0.24：skip 传入缺失型号串——数字若是某个缺失型号的一部分
-    （AK-103 里的 103），由型号保真闸门整串补「（AK-103）」即可，
-    再补裸「（103）」就是双注记（实测交互缺陷，回归测试抓出）。
-    """
-    if not src or not out or not any("\u4e00" <= c <= "\u9fff" for c in out):
-        return None                      # 无中文的译文不能补，交给调用方回退
-    missed = missing_big_numbers(src, out)
-    if not missed:
-        return out
-    if skip:
-        _sk = [str(t) for t in skip]
-        missed = [n for n in missed
-                  if not any(n in t for t in _sk)]
-        if not missed:
-            return out
-    fixed = out
-    for n in missed:
-        # 优先插到译文里出现的货币/单位词之后（卢布/美元/格里夫纳等）
-        # ★ 2.0.24（IWP 全量审计 D2）：注记字样「原文数字」退役——
-        # 兜底补的是裸数字，玩家读到的仍是成品文本而非审计注记。
-        m = re.search(r"(卢布|美元|元|格雷|格里夫纳|coin| coins)", fixed)
-        if m:
-            pos = m.end()
-            fixed = fixed[:pos] + "（%s）" % n + fixed[pos:]
-        else:
-            fixed = fixed.rstrip() + "（%s）" % n
-    return fixed
 
 
-_RU_PROFANITY_RE = re.compile(
-    r"дерьм|заткн|хрен|чёрт|черт|бля|хуй|пизд|ебат|еб[ао]|говн|суч|"
-    r"сдох|жоп|муд[ао]|уёб|уеб|нахуй|иди ты|пошёл ты|пошел ты", re.I)
 # ★ 2.0.13：英文源文的粗口（STALKER 大量英语对话/广播结尾"Weird shit"等）
 # 旧版只认俄语，英文脏话完全绕过粗口力度闸门，模型常把 shit/fuck 软化成
 # "奇怪的东西"。用词边界锚定，避免把 "shot"(发射) 里的 sh 误伤。
-_EN_PROFANITY_RE = re.compile(
-    r"\b(?:shit|fuck(?:ing|ed|er)?|bitch|bastard|asshole|dick|piss(?:ed|ing)?|"
-    r"crap|damn|bullshit|motherfucker|wtf)\b", re.I)
 # 中文译文里出现连续两个以上西里尔字母，基本就是模型漏译/原样保留。
-_CYR_WORD_RE = re.compile(r"[А-Яа-яЁё]{2,}")
-_ZH_PROFANITY_RE = re.compile(
-    r"他妈|妈的|操(?:你|他|她|它|死|蛋|逼|屄)|我操|"
-    r"靠[！!。.，,]|滚(?:蛋|开|！|!|。|，)|闭嘴|混蛋|畜生|王八|去死|"
-    r"该死|见鬼|鸡巴|屌|日你|找死|活腻|屎|狗屎|放屁")
-_PROFANITY_RETRY_NOTE = (
-    "本句原文含粗口、辱骂或威胁，必须保留同等粗鲁力度：不得弱化、"
-    "删除或改成书面语。按原文直译，例如 на хрен→他妈/滚，"
-    "дерьмо→屎/狗屎，заткнись→闭嘴。")
-_PLACEHOLDER_RETRY_NOTE = (
-    "必须逐字保留输入里的 $$R0$$、$$R1$$ 等控制占位符，"
-    "数量、顺序和写法都不能改；只翻译占位符以外的正文。")
-_RESIDUAL_CYRILLIC_NOTE = (
-    "译文里仍夹着俄文（%s）。引号里的阵营、组织、地名、物品、人名"
-    "同样要译成中文；只有代码、型号、条目ID、文件路径保留原文，"
-    "不要保留俄文单词。")
 
 
-def has_source_profanity(text):
-    """源文含粗口（俄语/英语/中文任一）——决定是否启用粗口力度闸门。"""
-    return bool(_RU_PROFANITY_RE.search(text or "")
-                or _EN_PROFANITY_RE.search(text or "")
-                or _ZH_PROFANITY_RE.search(text or ""))
 
 
-def has_zh_profanity(text):
-    return bool(_ZH_PROFANITY_RE.search(text or ""))
 
 
-def has_cjk(text):
-    return bool(re.search(r"[\u4e00-\u9fff]", text or ""))
 
-GLOSSARY_HINT_HEADER = "术语(用给定译名)：\n"
 # ★ 2.0.3 官方措辞 A/B：Hy-MT2 官方术语模板是「参考下面的翻译：X 翻译成 Y」，
 # 贴近训练分布的措辞可能遵循率更高；做成开关由用户对比。
-GLOSSARY_HINT_HEADER_OFFICIAL = "参考下面的翻译：\n"
-GLOSSARY_HINT_BUDGET = 240
-GLOSSARY_HINT_STOPWORDS = frozenset((
-    "и", "в", "во", "не", "что", "он", "на", "я", "с", "со", "как", "а", "то",
-    "все", "она", "так", "его", "но", "да", "ты", "к", "у", "же", "вы", "за",
-    "бы", "по", "нет", "есть", "был", "была", "были", "быть", "это", "этот",
-    "для", "или", "если", "уже", "ещё", "еще", "тут", "там", "тогда", "чем",
-    "кто", "где", "когда", "почти", "всего", "всегда", "очень", "надо",
-    "можно", "нужно", "теперь", "потом", "себя", "себе", "свой", "свою",
-    "один", "два", "три", "без", "под", "над", "про", "при", "между",
-)) | frozenset((
-    # 英语源文同样要过滤功能词，否则术语提示预算会被 the/a/of 吃掉。
-    "the", "a", "an", "of", "to", "in", "on", "at", "for", "and", "or",
-    "is", "are", "was", "were", "be", "been", "being", "with", "by",
-    "from", "this", "that", "these", "those", "it", "its", "as", "not",
-    "no", "yes", "you", "your", "yours", "he", "she", "they", "we", "i",
-    "me", "my", "our", "their", "his", "her", "them", "us", "do", "does",
-    "did", "can", "could", "will", "would", "should", "may", "might",
-    "must", "have", "has", "had", "so", "but", "if", "then", "than",
-    "also", "very", "just", "there", "here", "what", "which", "who",
-    "whom", "whose", "when", "where", "why", "how", "all", "any", "some",
-))
 
 
-def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET, official=False):
-    """把命中术语压成尽可能小的提示块，返回 (文本, 计费字符数)。
-
-    计费字符数是**保守上界**（每行按含换行计、另预留与正文之间的空行），
-    略大于实际块长；预算判断因此偏安全，不会算少。
-
-    规则：跳过功能词、大小写去重、按预算截断；超预算的长术语直接跳过而不是
-    截半（半截术语反而会误导模型）。实测把原来的 15 条上限换成 240 字符预算
-    后，每条请求少注入约 25% 字符，且长专名不再被短词挤掉。
-
-    official=True 用官方模板措辞（「X 翻译成 Y」），False 用自研格式（X=Y）。
-    """
-    seen = set()
-    lines = []
-    header = (GLOSSARY_HINT_HEADER_OFFICIAL if official
-              else GLOSSARY_HINT_HEADER)
-    used = len(header) + 2
-    fmt = "%s 翻译成 %s" if official else "%s=%s"
-    for k, v in pairs:
-        k = str(k).strip()
-        lk = k.lower()
-        if not k or lk in seen or lk in GLOSSARY_HINT_STOPWORDS:
-            continue
-        v = str(v)
-        cost = len(k) + len(v) + (4 if official else 2)
-        if used + cost > budget:
-            continue
-        seen.add(lk)
-        lines.append(fmt % (k, v))
-        used += cost
-    if not lines:
-        return "", 0
-    return header + "\n".join(lines), used
 
 EXTRA_PROMPT_DEMO = (
     "· 语气语域：译文用冷峻简短的军事简报口吻，不用敬语、不加句末语气词。\n"
@@ -1620,56 +1326,7 @@ def _model_sources(repo_ms, repo_hf, filename):
     ]
 
 
-TIER_PROFILES = {
-    "7b": {
-        "task": "model_7b",
-        "file": "Hy-MT2-7B-Q4_K_M.gguf",
-        "repo_ms": "Tencent-Hunyuan/Hy-MT2-7B-GGUF",
-        "repo_hf": "tencent/Hy-MT2-7B-GGUF",
-        "size_gb": 4.4,
-        "ram_gb": 8,
-        "ctx": 8192,
-        "combo": "精雕 · Hy-MT2 7B Q4_K_M｜最精确·质量首选｜速度中等｜上下文8K｜约8GB内存",
-        "download": "① 精雕 Hy-MT2-7B Q4_K_M（4.4GB · 质量最高/最精确 · 速度中等）",
-        "pos": ("质量：最高（复杂长难句、专业领域、多语言指令遵循最强）\n"
-                "精度：最精确，专名/语气/占位符保持最好\n"
-                "速度：中等（CPU 短句约数秒/条）\n"
-                "上下文：8192 token 质量窗（约 3800 字符/段，超长自动分句）\n"
-                "定位：终校级译文，NS7 这类超长日记/大段任务文本首选"),
-    },
-    "mt2": {
-        "task": "model_mt2",
-        "file": "Hy-MT2-1.8B-Q8_0.gguf",
-        "repo_ms": "Tencent-Hunyuan/Hy-MT2-1.8B-GGUF",
-        "repo_hf": "tencent/Hy-MT2-1.8B-GGUF",
-        "size_gb": 1.8,
-        "ram_gb": 4,
-        "ctx": 16384,
-        "combo": "精准 · Hy-MT2 1.8B Q8_0｜高质量·快速｜上下文16K｜约4GB内存",
-        "download": "② 精准 Hy-MT2-1.8B Q8_0（1.8GB · 质量高/精确 · 速度快速）",
-        "pos": ("质量：高（新一代小模型，官方称整体超越主流商业翻译 API）\n"
-                "精度：精确，较上代小模型在真实场景与指令遵循上明显提升\n"
-                "速度：快速（1.8B 轻量，CPU 也明显快于 7B）\n"
-                "上下文：16384 token 质量窗（约 7600 字符/段，超长自动分句）\n"
-                "定位：日常汉化主力，质量/速度最均衡的一档"),
-    },
-    "custom": {
-        "task": None,
-        "file": None,
-        "size_gb": 0,
-        "ram_gb": 0,
-        "ctx": 8192,
-        "combo": "自选 · 任意 GGUF 离线模型｜本机自选文件·自定上下文",
-        "pos": ("用法：点「选择已有模型」指定本机任意 .gguf 文件（拖入亦可），\n"
-                "并在右侧选择该模型要使用的上下文长度。\n"
-                "要求：指令/对话微调的聊天模型（GGUF 内置 chat template）；\n"
-                "非混元模型的翻译风格与术语遵循由模型本身决定。\n"
-                "上下文：按所选长度生效，超长文本仍自动分句；请按模型大小与\n"
-                "内存选择（经验：7B/Q4 约 8GB，1.8B/Q8 约 4GB，上下文越大越吃内存）"),
-    },
-}
 TIER_ORDER = ("7b", "mt2", "custom")
-BUILTIN_TIERS = ("7b", "mt2")
 CUSTOM_CTX_CHOICES = (4096, 8192, 16384, 32768)
 TIER_SHORT = {
     "7b": "精雕7B｜质量最高最精确｜速度中等｜8K上下文",
@@ -1790,15 +1447,6 @@ TIER_FILE = {t: TIER_PROFILES[t]["file"] for t in BUILTIN_TIERS}
 TIER_ALIAS = {"1b8": "mt2", "mt15": "mt2"}
 
 
-def _fmt_size(n):
-    try:
-        n = float(n)
-    except Exception:
-        return "?"
-    for unit in ("B", "KB", "MB", "GB"):
-        if n < 1024 or unit == "GB":
-            return "%.2f %s" % (n, unit)
-        n /= 1024.0
 
 
 def _fmt_eta(sec):
@@ -1988,168 +1636,26 @@ def detect_hardware():
 
 
 
-_ENC_FALLBACK = ("cp1251", "cp1252")
-_ENC_FORCED = "cp1251"
-_ENC_UTF8 = ("utf-8", "utf-8-sig")
-_BOM_UTF8 = b"\xef\xbb\xbf"
-_XML_DECL_ENC = re.compile(rb"<\?xml[^>]*?encoding\s*=\s*[\"']([\w.\-]+)", re.I)
-_DECL_SCAN_BYTES = 2048
 
 
-def _is_valid_utf8(raw):
-    try:
-        raw.decode("utf-8")
-        return True
-    except UnicodeDecodeError:
-        return False
 
 
-def _declared_encoding(raw):
-    """取 XML 声明里写明的编码名；未声明 / 名字不被 Python 认识时返回 None。"""
-    m = _XML_DECL_ENC.search(raw[:_DECL_SCAN_BYTES])
-    if not m:
-        return None
-    name = m.group(1).decode("ascii", "ignore").strip().lower()
-    try:
-        codecs.lookup(name)
-    except (LookupError, ValueError):
-        return None
-    return name
 
 
-def encoding_chain(raw):
-    """给出该字节流的解码候选次序（首个能严格解码成功者胜出）。
-
-    次序规则，按优先级：
-      1. UTF-8 BOM          → utf-8-sig（唯一的权威信号）
-      2. 字节流是合法 UTF-8 → utf-8
-      3. XML 声明写明的编码 → 提到最前（声明与实际不符时严格解码会失败，
-         自动落到下一档，不会误判）
-      4. 其余按 cp1251 → cp1252（STALKER 俄版为主流），末位固定 _ENC_FORCED
-
-    返回元组；末位是"尽力而为"档，供解析器的 errors="ignore" 兜底使用。
-
-    已知限制：无 BOM、无声明、又非 UTF-8 的文件，若同时是合法 cp1251 与
-    合法 cp1252 字节流（极常见），此处按 STALKER 主流取 cp1251；西文 ww
-    版这类文件请把「源语言」选为 eng 或在文件头补 XML 声明。
-    """
-    if raw.startswith(_BOM_UTF8):
-        cands = ["utf-8-sig"]
-    elif _is_valid_utf8(raw):
-        cands = ["utf-8"]
-    else:
-        cands = []
-        decl = _declared_encoding(raw)
-        if decl and decl not in _ENC_UTF8:
-            cands.append(decl)
-        cands.extend(n for n in _ENC_FALLBACK if n not in cands)
-    if not cands or cands[-1] != _ENC_FORCED:
-        cands.append(_ENC_FORCED)
-    return tuple(cands)
 
 
-def read_encoding_chain(path, max_bytes=64 * 1024 * 1024):
-    """读取文件并给出其解码候选次序；读不了时返回兜底次序。
-    仅供解析前判定编码用，不改变调用方自己的读取逻辑。"""
-    try:
-        size = os.path.getsize(path)
-        with open(path, "rb") as f:
-            raw = f.read(max_bytes if size > max_bytes else size)
-    except OSError:
-        return (_ENC_FORCED,)
-    if size > max_bytes:
-        while raw and (raw[-1] & 0xC0) == 0x80:
-            raw = raw[:-1]
-        if raw and raw[-1] >= 0x80:
-            raw = raw[:-1]
-    return encoding_chain(raw)
 
 
-def read_text_any(path):
-    """按 UTF-8（含 BOM）→ cp1251 顺序读取脚本/XML 原文，读不出时替换。"""
-    try:
-        raw = open(path, "rb").read()
-    except OSError:
-        return ""
-    for enc in ("utf-8-sig", "utf-8", "cp1251"):
-        try:
-            return raw.decode(enc)
-        except UnicodeDecodeError:
-            continue
-    return raw.decode("utf-8", "replace")
 
 
-def _files_equal(a, b):
-    try:
-        if os.path.getsize(a) != os.path.getsize(b):
-            return False
-        with open(a, "rb") as fa, open(b, "rb") as fb:
-            while True:
-                x = fa.read(1024 * 1024)
-                y = fb.read(1024 * 1024)
-                if x != y:
-                    return False
-                if not x:
-                    return True
-    except OSError:
-        return False
 
 
-_MOJIBAKE_CHARS = "ÐÑÃÂâ€™Ð„ÑŽ"
 
 
-def looks_like_mojibake(text):
-    """粗判"UTF-8 被单字节码表解出来的乱码"，只用于告警、不自动改判。
-
-    正常俄文/中文文本里不会成片出现 Ð/Ñ/Ã/Â；而 UTF-8 的俄文（Д→D0 94）
-    或中文被 cp1251 解码后，特征就是成片的拉丁扩充字符。
-    """
-    if not text:
-        return False
-    letters = [c for c in text if c.isalpha()]
-    if len(letters) < 8:
-        return False
-    bad = sum(1 for c in letters if c in _MOJIBAKE_CHARS)
-    return bad / len(letters) > 0.3
 
 
-_VENDOR_IO_LOCK = threading.Lock()
 
 
-class capture_stdout(object):
-    """把 vendor 解析器的 print() 诊断收进插件日志。
-
-    vendor 包（wzyddg fork）用 print 报告"某文件用哪个编码解码"这类诊断，
-    而冻结后的 exe 是 GUI 子系统（PE Subsystem=2），stdout 为 None —— 这些
-    诊断在用户侧完全不可见，编码猜错时没有任何线索。这里把它收进
-    api.log_detail（只落盘），让"到底用了哪个编码"事后可复查。
-
-    stdout 是进程级全局对象，故重定向期间加锁串行；解析只在作业线程发生，
-    且按钮互斥保证同时只有一个作业，冲突面很小。拿不到锁则退化为不重定向
-    （宁可少一行日志，也不阻塞翻译主流程）。
-    """
-
-    def __init__(self):
-        self._buf = io.StringIO()
-        self._old = None
-        self._held = False
-
-    def __enter__(self):
-        self._held = _VENDOR_IO_LOCK.acquire(timeout=30)
-        if self._held:
-            self._old = sys.stdout
-            sys.stdout = self._buf
-        return self
-
-    def __exit__(self, *exc_info):
-        if self._held:
-            sys.stdout = self._old
-            _VENDOR_IO_LOCK.release()
-        return False
-
-    def lines(self):
-        return [ln.strip() for ln in self._buf.getvalue().splitlines()
-                if ln.strip()]
 
 
 
@@ -2258,435 +1764,127 @@ def save_config(cfg):
 
 
 
-def load_builtin_glossary():
-    """随包术语（只读）。优先 glossary_builtin.json，兼容早期文件名。"""
-    for path in (_GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return flatten_glossary(json.load(f))
-        except Exception:
-            continue
-    return {}
+
+
+_GLOSSARY_STORE = {"key": None, "value": None}
+
+
+def _glossary_store():
+    key = (_GLOSS_USER, _GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY, _GLOSS_LAYER_FORMAT)
+    if _GLOSSARY_STORE.get("key") != key:
+        _GLOSSARY_STORE["value"] = UserGlossaryStore(
+            _GLOSS_USER, load_builtin_glossary, _GLOSS_LAYER_FORMAT,
+        )
+        _GLOSSARY_STORE["key"] = key
+    return _GLOSSARY_STORE["value"]
 
 
 def _read_user_layer(builtin=None):
-    """读用户覆盖层，返回 (set_map, deleted, clear_builtin)。
-
-    兼容 早期的扁平格式：那份文件其实是"整张术语库的快照"，若直接当
-    覆盖层会把 builtin 的后续更新全部遮蔽。这里按**与 builtin 的差异**提取，
-    只保留用户真正改过/新增的条目。
-    """
-    try:
-        with open(_GLOSS_USER, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception:
-        return {}, set(), False
-    if isinstance(data, dict) and data.get("_format") == _GLOSS_LAYER_FORMAT:
-        raw_set = data.get("set") if isinstance(data.get("set"), dict) else {}
-        set_map = {str(k): str(v) for k, v in raw_set.items()
-                   if str(k).strip() and not str(k).startswith("_")}
-        try:
-            deleted = {str(k) for k in (data.get("del") or [])
-                       if str(k).strip()}
-        except TypeError:
-            deleted = set()
-        return set_map, deleted, bool(data.get("clear_builtin"))
-    flat = flatten_glossary(data) if isinstance(data, dict) else {}
-    base = load_builtin_glossary() if builtin is None else builtin
-    return {k: v for k, v in flat.items() if base.get(k) != v}, set(), False
+    return _glossary_store().read_layer(builtin)
 
 
 def load_glossary_layers():
-    """返回 (合并后的术语表, 用户 set 层, 用户删除集, 是否清空 builtin)。"""
-    builtin = load_builtin_glossary()
-    set_map, deleted, clear = _read_user_layer(builtin)
-    merged = {} if clear else dict(builtin)
-    for key in deleted:
-        merged.pop(key, None)
-    merged.update(set_map)
-    return merged, set_map, deleted, clear
+    return _glossary_store().layers()
 
 
 # 只把真正跨语境稳定的专名当硬词。界面与提示（Здоровье→生命值）、
 # 任务、对话/百科类会随语境变化，一律只做软参考或不注入，避免
 # “Здоровье не шалит?”被硬塞成“生命值”这类语境错误。
-_HARD_TERM_CATEGORIES = (
-    # 人物/军衔不再全局硬替换：不同 MOD 的同名人物可能不是同一人。
-    # 人物名由“当前 MOD 会话词表 + 人物表精确命中”处理，见 _build_session_glossary。
-    "阵营与组织", "地点与区域", "变异生物", "物品·武器·装备·神器")
 
 
 _TERMBASE_PATH = os.path.join(_ASSETS, "stalker_termbase.json")
-_TERMBASE_CACHE = {"key": None, "data": {}}
-_DEFAULT_LAYERS = {
-    "canon": list(_HARD_TERM_CATEGORIES),
-    "names": ["人物与军衔"],
-    "technical": ["技术缩写"],
-    # ★ 2.0.22：Gunslinger/GAMMA 两个软参考层已整体退役（抽样语义自判
-    # 明确错率约 31%），数据留在 corpus/soft_reference_retired.json。
-    "reference": ["ANTHOLOGY 参考"],
-}
-_RISKY_LATIN_RE = re.compile(r"^[a-z][a-z0-9._\-/&()]{1,18}$")
 
 
-def load_termbase_data():
-    """读随包分类术语库（带 mtime 缓存，避免每次命中都重读 350 KB）。"""
-    try:
-        st = os.stat(_TERMBASE_PATH)
-        key = (st.st_mtime_ns, st.st_size)
-    except OSError:
-        return {}
-    if _TERMBASE_CACHE.get("key") == key:
-        return _TERMBASE_CACHE.get("data") or {}
-    try:
-        with open(_TERMBASE_PATH, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception:
-        return {}
-    if not isinstance(data, dict):
-        return {}
-    _TERMBASE_CACHE["key"] = key
-    _TERMBASE_CACHE["data"] = data
-    return data
 
 
-def _layer_categories(meta, name):
-    layers = meta.get("layers") if isinstance(meta, dict) else None
-    cats = layers.get(name) if isinstance(layers, dict) else None
-    if isinstance(cats, str):
-        cats = [cats]
-    if not isinstance(cats, list):
-        cats = _DEFAULT_LAYERS.get(name, [])
-    return [str(c) for c in cats if str(c).strip()]
 
 
-def load_term_layers():
-    """返回 v2 四层索引：canon/names/technical/reference + 变体/大小写策略。
-
-    早期术语库没有 `_meta.layers` 时按原分类回退，导入别人的分类词库也能用。
-    """
-    data = load_termbase_data()
-    meta = data.get("_meta") if isinstance(data.get("_meta"), dict) else {}
-    canon_cats = _layer_categories(meta, "canon")
-    name_cats = _layer_categories(meta, "names")
-    tech_cats = _layer_categories(meta, "technical")
-    ref_cats = _layer_categories(meta, "reference")
-
-    def collect(cats):
-        keys, table = set(), {}
-        for cat in cats:
-            t = data.get(cat)
-            if not isinstance(t, dict):
-                continue
-            for k, v in t.items():
-                name = str(k).strip()
-                if not name or name.startswith("_"):
-                    continue
-                keys.add(name)
-                table[name] = str(v)
-        return keys, table
-
-    canon, _ = collect(canon_cats)
-    names, _ = collect(name_cats)
-    _, technical = collect(tech_cats)
-    _, reference = collect(ref_cats)
-    variants = meta.get("variants") if isinstance(meta.get("variants"),
-                                                 dict) else {}
-    variants = {str(k): str(v) for k, v in variants.items()
-                if str(k).strip() and str(v).strip()}
-    explicit = meta.get("case_sensitive")
-    case_sensitive = ({str(k) for k in explicit if str(k).strip()}
-                      if isinstance(explicit, list) else set())
-    # 人物名与内容型专名按“首字母大小写一致”匹配：英文正文里的
-    # doctor/bar/crystal 这类普通词不会被当成专名。
-    case_sensitive |= names
-    case_sensitive |= {k for k in technical if re.search(r"[A-Za-z]", k)}
-    case_sensitive |= {k for k in canon if _RISKY_LATIN_RE.match(k)}
-    quote_required = meta.get("quote_required")
-    quote_required = ({str(k) for k in quote_required if str(k).strip()}
-                      if isinstance(quote_required, list) else set())
-    return {"canon": canon, "names": names, "technical": technical,
-            "reference": reference, "variants": variants,
-            "case_sensitive": case_sensitive,
-            "quote_required": quote_required}
 
 
-_BUILTIN_FLAT_CACHE = {"key": None, "data": {}}
-_TB_LOW_INDEX = {"key": None, "low": {}}   # termbase casefold 归一索引（审计 F 层优化）
-_PARTIAL_GLOSS_CACHE = {"key": None, "words": []}   # 硬层专名词映射（保护条目子串替换）
 
 
-def termbase_lookup(text):
-    """精确查随包术语库（canon/names/technical/reference 全层），返回译名或 None。
-
-    ★ 2.0.7：专名保护跳过之前先查这里——库里已有的译名（如 БАРМЕН→酒保、
-    ПРИЗРАК→幽灵）直接取用，不再当"不可译专名"原样保留。大小写与首尾
-    引号不敏感（SMS 名字表多为全大写，词库多为首字母大写）。
-    只做整串精确匹配，不做子串——避免把正文里的普通词误换成专名译名。
-    """
-    raw = (text or "").strip()
-    s = raw.strip('"\u00ab\u00bb\u201c\u201d\'')
-    if not raw:
-        return None
-    # ★ 2.0.22：首尾引号不敏感必须是**双向**的——旧实现只把输入剥引号后查，
-    # 于是键本身带引号的条目永远查不到（实测 50 条不可达，含
-    # `Учёный «О-Сознания»`→`“共同意识”科学家`、`"Tears of Electra"`→
-    # `“电之泪”`、`"Monolith" Chief`→`黑石首领`；Anomaly 两个「共同意识」
-    # 人物名因此白白送模型）。原串优先、剥引号兜底，两种形态都试。
-    cands = []
-    for _form in (raw, s):
-        if not _form:
-            continue
-        for _c in (_form, _form.casefold()):
-            if _c not in cands:
-                cands.append(_c)
-    # 直接读 termbase 原始分类表：load_term_layers 的 canon/names 是 set
-    # （只有 technical/reference 带映射），这里需要"原文→译名"全量映射。
-    # ★ 全量审计 2026-11-23：3.6 万条后逐分类 casefold 全扫 O(N) 达 3.6ms/次，
-    #   终检几千条目累计数秒——改为模块级 casefold 归一索引（O(1)），
-    #   首分类优先（canon/人物 在前，与旧遍历顺序一致）。
-    data = load_termbase_data()
-    global _TB_LOW_INDEX
-    try:
-        _st = os.stat(_TERMBASE_PATH)
-        _tkey = (_st.st_mtime_ns, _st.st_size)
-    except OSError:
-        _tkey = None
-    if _TB_LOW_INDEX.get("key") != _tkey:
-        idx = {}
-        for _cat, table in data.items():
-            if _cat.startswith("_") or not isinstance(table, dict):
-                continue
-            for k, v in table.items():
-                kl = str(k).casefold()
-                if kl not in idx:          # 首分类优先
-                    idx[kl] = str(v)
-        _TB_LOW_INDEX = {"key": _tkey, "low": idx}
-    idx = _TB_LOW_INDEX.get("low") or {}
-    for _c in cands:
-        if _c in idx:
-            return idx[_c]
-    # 兼容早期扁平词库（带 mtime 缓存，避免逐条重读 320KB）
-    global _BUILTIN_FLAT_CACHE
-    try:
-        _bst = os.stat(_GLOSS_BUILTIN)
-        _bkey = (_bst.st_mtime_ns, _bst.st_size)
-    except OSError:
-        _bkey = None
-    if _BUILTIN_FLAT_CACHE.get("key") != _bkey:
-        bflat = load_builtin_glossary() or {}
-        _BUILTIN_FLAT_CACHE = {"key": _bkey, "data": bflat,
-                               "low": {str(k).casefold(): str(v)
-                                       for k, v in bflat.items()}}
-    bcache = _BUILTIN_FLAT_CACHE.get("data") or {}
-    blow = _BUILTIN_FLAT_CACHE.get("low") or {}
-    for _c in cands:
-        if _c in bcache:
-            return str(bcache[_c])
-        if _c in blow:
-            return blow[_c]
-    return None
 
 
-_PARTIAL_MODEL_TOKEN_RE = re.compile(
-    r"(?<![A-Za-z])(?:[A-Z]+[A-Za-z]*[-/]\d[\w\-/]*"
-    r"|\d[\w\-/]*[A-Z]+[A-Za-z]*|[A-Z]{2,})(?![a-z])")
 
 
-def partial_glossary_translation(src, rel=None):
-    """专名保护命中但整串无词库键时，对串内硬层专名词做子串替换。
-
-    ★ 2.0.21（IWP 产物审计）：`Vasya "Boar"`（人物名+引号绰号）整串
-    不在词库 → 走专名保护原样保留英文，但 "Boar" 在 canon 有权威译名
-    "野猪"。约束（保守）：
-      * 只替换 canon/names 硬层词（reference/technical 不参与）；
-      * 词长 ≥3 且为 Title Case/全大写（专名形态，避免 doctor/case 类
-        普通词误换）；
-      * 整串 ≤60 字符（人物/物品短名条目），长句正文不适用；
-      * 精确词边界替换，一个词都不命中返回 None（调用方继续保护跳过）。
-    ★ 2.0.22（每 MOD 随机文件测试 + 人工参考对照）：全库 133 条写出里
-    112 条是半中半英破碎文本——硬层收录了与普通英文词同形的条目
-    （Vice→台钳、Eye→眼睛、Lock→锁、Engine→引擎、Sergeant→中士），
-    子串替换只命中其中一部分就把残句写出去：
-      `Executive Vice President` → `Executive 台钳 President`
-      `Senior Sergeant "Mangun" Potryko` → `Senior 中士 "曼古恩" Potryko`
-      `Database Applications Engineer` → `Database Applications 工程师`
-    人工汉化对同样条目是全译（执行副总裁 / 数据库应用工程师）。补两条约束：
-      * 制作名单/音乐表整文件不参与（与"连核心术语也不替换"同口径）；
-      * 替换后仍残留普通英文词（含小写、非型号/全大写缩写形态）→
-        返回 None，回落原样保留，宁可不翻也不写破碎文本。
-    """
-    s = (src or "").strip()
-    if not s or len(s) > 60:
-        return None
-    if rel is not None and looks_like_hard_protected_file(rel):
-        return None
-    global _PARTIAL_GLOSS_CACHE
-    data = load_termbase_data()
-    meta_layers = (data.get("_meta") or {}).get("layers") or {}
-    try:
-        _st = os.stat(_TERMBASE_PATH)
-        _k = (_st.st_mtime_ns, _st.st_size)
-    except OSError:
-        _k = None
-    if _PARTIAL_GLOSS_CACHE.get("key") != _k:
-        # ★ 注意：load_term_layers 的 canon/names set 装的是**词条键**，
-        # 不是分类名——硬层分类名要从 _meta.layers 取。
-        layers = set(meta_layers.get("canon") or []) | \
-            set(meta_layers.get("names") or [])
-        words = []
-        for cat, tbl in data.items():
-            if cat.startswith("_") or not isinstance(tbl, dict) \
-                    or cat not in layers:
-                continue
-            for k, v in tbl.items():
-                k = str(k)
-                if len(k) < 3 or not re.search(r"[A-Za-z]", k):
-                    continue
-                if not (k[:1].isupper() or k.isupper()):
-                    continue
-                words.append((k, str(v)))
-        _PARTIAL_GLOSS_CACHE = {"key": _k, "words": words}
-    out = s
-    changed = False
-    for k, v in _PARTIAL_GLOSS_CACHE.get("words") or []:
-        if k in out:
-            out2 = re.sub(rf"(?<!\w){re.escape(k)}(?!\w)", v, out)
-            if out2 != out:
-                out = out2
-                changed = True
-    if not changed:
-        return None
-    # ★ 2.0.22：残留普通英文词 = 破碎产物，回落原样保留。型号/全大写
-    # 缩写（PSO-1、AKMS、SIG、OTs-14-4A）是合法残留，先剥掉再判。
-    for w in re.findall(r"[A-Za-z]{3,}", _PARTIAL_MODEL_TOKEN_RE.sub(" ", out)):
-        if any(c.islower() for c in w):
-            return None
-    return out
 
 
-def termbase_exact_translation(text):
-    """整条命中术语库时返回可直接落盘的译名（含首尾引号处理），否则 None。
-
-    源文在引号内时去掉词库译名的外层引号，避免 ““自由团”” 双引号嵌套；
-    与 _inline_term_value 同口径。只处理整条精确匹配。
-    """
-    value = termbase_lookup(text)
-    if value is None:
-        return None
-    s = (text or "").strip()
-    quotes = "\"'«»“”‘’"
-    if (len(s) >= 2 and s[0] in quotes and s[-1] in quotes
-            and len(value) >= 2 and value[0] in quotes
-            and value[-1] in quotes):
-        value = value[1:-1]
-    lead = text[:len(text) - len(text.lstrip())]
-    trail = text[len(text.rstrip()):]
-    return lead + value + trail
 
 
-def load_hard_glossary_keys():
-    """只把 canon 层（阵营/地点/变异体/物品）当硬词；人物名与对话类只做软参考。
-
-    builtin 术语表是扁平表，混入了大量新闻/对话里的普通词和屈折形
-    （例如 Информацию→信息、Искренне→火花）。这些词强制替换会把
-    句子改坏；按 v2 的 canon 层筛出硬词，普通词不再注入/强制。
-    """
-    return set(load_term_layers()["canon"])
 
 
-def load_technical_exact():
-    """数据化技术精确表；随包术语库优先，旧包回退到内置常量。"""
-    out = dict(_TECHNICAL_EXACT)
-    out.update(load_term_layers()["technical"])
-    return out
 
 
 def save_user_glossary(set_map, deleted=None, clear_builtin=False):
-    """只写用户覆盖层；builtin 永远是随包只读文件。"""
-    payload = json.dumps({
-        "_format": _GLOSS_LAYER_FORMAT,
-        "clear_builtin": bool(clear_builtin),
-        "set": dict(set_map or {}),
-        "del": sorted(deleted or ()),
-    }, ensure_ascii=False, indent=1, sort_keys=True)
-    with _JSON_WRITE_LOCK:
-        tmp = _GLOSS_USER + ".tmp"
-        with open(tmp, "w", encoding="utf-8") as f:
-            f.write(payload)
-        os.replace(tmp, _GLOSS_USER)
+    return _glossary_store().save(set_map, deleted, clear_builtin)
+
+
+
+
+
+_TERMBASE_STORE = {"key": None, "value": None}
+
+
+def _termbase_store():
+    key = (_TERMBASE_PATH, _GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY)
+    if _TERMBASE_STORE.get("key") != key:
+        _TERMBASE_STORE["value"] = Termbase(
+            _TERMBASE_PATH,
+            (_GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY),
+            _TECHNICAL_EXACT,
+        )
+        _TERMBASE_STORE["key"] = key
+    return _TERMBASE_STORE["value"]
+
+
+def load_builtin_glossary():
+    return _core_load_builtin_glossary((_GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY))
+
+
+def load_termbase_data():
+    return _termbase_store().load_data()
+
+
+def _layer_categories(meta, name):
+    return _termbase_store().layer_categories(meta, name)
+
+
+def load_term_layers():
+    return _termbase_store().load_layers()
+
+
+def termbase_lookup(text):
+    return _termbase_store().lookup(text)
+
+
+def partial_glossary_translation(src, rel=None):
+    return _termbase_store().partial_translation(src, rel)
+
+
+def termbase_exact_translation(text):
+    return _termbase_store().exact_translation(text)
+
+
+def load_hard_glossary_keys():
+    return _termbase_store().hard_keys()
+
+
+def load_technical_exact():
+    return _termbase_store().technical()
 
 
 def flatten_glossary(data):
-    """把术语表归一成 {原文: 译文}。
-
-    兼容三种文件形态并允许**混合**：
-    1) 扁平 {"原文": "译文"}；
-    2) 分类名词库 {"分类名": {"原文": "译文"}, ...}（可多层嵌套）；
-    3) 上面两种混在一张表里（如 {"a": "b", "武器": {...}}）。
-
-    以 "_" 开头的段（如 _meta）整段跳过。
-
-    注意：旧实现只要表里出现**任何**一个 dict 值，就把整张表当分类表解析，
-    于是同一张表里的扁平条目被静默丢弃 —— 实测
-    {"普通原文":"普通译文","分类A":{"原文1":"译文1"}} 只剩 {"原文1":...}，
-    导入后无提示少条目。这里改成逐键判定，两侧都保留。
-    """
-    out = {}
-
-    def walk(table, depth=0):
-        for key, value in table.items():
-            name = str(key).strip()
-            if not name or name.startswith("_"):
-                continue
-            if isinstance(value, dict) and depth < 8:
-                walk(value, depth + 1)
-            elif not isinstance(value, (dict, list, tuple)):
-                out[name] = str(value)
-
-    if isinstance(data, dict):
-        walk(data)
-    return out
+    return _core_flatten_glossary(data)
 
 
 
-_VENDOR_READY = False
+
+
 
 
 def _load_vendor():
-    global _VENDOR_READY
-    import types
-    if _VENDOR_READY:
-        return sys.modules["xRayXmlParser"]
-    if not os.path.isfile(_VENDOR_ZIP):
-        raise FileNotFoundError("缺少解析器包：%s" % _VENDOR_ZIP)
-
-    pkg_name = "xRayXmlParser"
-    pkg = types.ModuleType(pkg_name)
-    pkg.__path__ = []
-    pkg.__package__ = pkg_name
-    sys.modules[pkg_name] = pkg
-
-    order = ["entityDefinition", "xRayTextAnalyzer",
-             "xmlFileGenerator", "xmlxReader"]
-    with zipfile.ZipFile(_VENDOR_ZIP) as z:
-        sources = {n: z.read("%s/%s.py" % (pkg_name, n)).decode("utf-8")
-                   for n in order}
-        init_src = z.read("%s/__init__.py" % pkg_name).decode("utf-8")
-
-    for name in order:
-        mod = types.ModuleType("%s.%s" % (pkg_name, name))
-        mod.__package__ = pkg_name
-        sys.modules["%s.%s" % (pkg_name, name)] = mod
-        code = compile(sources[name], "%s!%s.py" % (_VENDOR_ZIP, name), "exec")
-        exec(code, mod.__dict__)
-        setattr(pkg, name, mod)
-
-    code = compile(init_src, "%s!__init__.py" % _VENDOR_ZIP, "exec")
-    exec(code, pkg.__dict__)
-    _VENDOR_READY = True
-    return pkg
-
+    # 解析器来源: wzyddg/stalker_auto-trans-tool_remake (license: null, 见 THIRD_PARTY_NOTICES.md 第 1 节)
+    return _core_load_vendor(_VENDOR_ZIP)
 
 
 class ProbeResult(object):
@@ -2798,14 +1996,6 @@ class DownloadCancelled(Exception):
     pass
 
 
-class OutputTruncated(Exception):
-    """模型输出撞到 max_tokens 被截断。
-
-    单独成类而不是并进 IOError：重试同一个请求没有意义（同样的输入、同样的
-    上限，结果只会再截一次），必须由上层把源文切得更细再译，否则半句译文会
-    被静默写进汉化包。
-    """
-    pass
 
 
 def _host_http_download(url, target, total=None):
@@ -3201,14 +2391,7 @@ def parallel_of_label(label):
 
 
 def sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        while True:
-            buf = f.read(1 << 20)
-            if not buf:
-                break
-            h.update(buf)
-    return h.hexdigest()
+    return _core_sha256_file(path)
 
 
 def verify_artifact(path, task, log, known_hashes=None):
@@ -3586,6 +2769,8 @@ class LlamaServer(object):
                 continue
             choice = choices[0]
             out = (choice.get("message") or {}).get("content", "").strip()
+            # 小模型代码端加固：剥外壳（栅栏/标签/引号），不依赖提示词自觉
+            out, _wrap = strip_output_wrappers(out)
             if not out:
                 last_err = "空输出"
                 time.sleep(1.0)
@@ -3741,6 +2926,8 @@ class LlamaServer(object):
                 continue
             choice = choices[0]
             content = ((choice.get("message") or {}).get("content") or "").strip()
+            # 小模型代码端加固：剥外壳（栅栏/标签），不依赖提示词自觉
+            content, _wrap = strip_output_wrappers(content)
             if choice.get("finish_reason") == "length":
                 raise OutputTruncated("批量输出被截断")
             return content
@@ -3755,173 +2942,36 @@ class LlamaServer(object):
 
 
 
-def estimate_tokens(text):
-    """保守的多语言 token 估算（混元 12 万词表）：
-    汉字/假名/谚文约 1 token/字；拉丁/西里尔字母文本约 0.45 token/字符，
-    按 0.55 取偏安全上界；标点空白计入长度。"""
-    if not text:
-        return 0
-    cjk = 0
-    for c in text:
-        o = ord(c)
-        if (0x4E00 <= o <= 0x9FFF or 0x3040 <= o <= 0x30FF
-                or 0xAC00 <= o <= 0xD7AF):
-            cjk += 1
-    other = len(text) - cjk
-    return int(cjk * 1.0 + other * 0.55) + 1
 
 
-def safe_chunk_chars(ctx_size):
-    """单次请求可送的最大源文字符数（与画像中的"约 N 字符/段"一致）：
-    8192 → 约 3768；16384 → 约 7536。"""
-    return int(ctx_size * 0.46)
 
 
-_SENT_SPLIT = re.compile(r"([。！？!?…\n；;])")
-_CLAUSE_SPLIT = re.compile(r"([，,：:])")
 
 
-_PLACEHOLDER_RE = re.compile(r"\$\$[TR]\d+\$\$")
-_ANY_PLACEHOLDER_RE = re.compile(r"\$\$[A-Za-z0-9_]+\$\$")
 
 # 运行期占位符：脚本变量/格式符/控制符。**必须先 mask 再送模型**：
 # 提示词要求保留并不可靠，实测模型会把 $level/$name 当成普通英文词译成
 # $地点/$名称，导致脚本变量替换失效（news_data.script 等直接引用这些条目）。
-_RUNTIME_TOKEN_RE = re.compile(
-    r"(\$\$[A-Za-z0-9_]+\$\$"          # $$ACTION$$
-    r"|\$[A-Za-z_][A-Za-z0-9_]*"        # $level / $name
-    r"|%c\[[^\]]*\]"                    # %c[255,1,255,255]
-    r"|%[-+ #0-9.*$]*[A-Za-z]"          # %s / %d / %1$s
-    r"|\b[rsg][0-9]?_[a-z0-9_]+\b)")    # r2_details_opt / s_light 等技术后缀
 # 换行/制表不再当“严格占位符”：模型少写一个 \n 就把整条退回原文，
 # 实测 138 条多行描述因此漏译。送翻前换成真实换行，译后统一写回 \n。
 # ★ 2.0.2 终检用：$$R0$$ 形态是**送翻时**的掩码，正常输出里不该出现
 #   （restore_runtime_tokens 保证每个掩码恰好还原一次，失败整条回退原文）。
 #   终检在成品里扫到它 = 有异常路径漏网，点名让人复核（源文本身含 $$R\d$$
 #   的概率可忽略；报告口径是"疑似"，不自动改写）。
-_MASK_RESIDUE_RE = re.compile(r"\$\$R\d+\$\$")
 
 
-def budget_max_tokens(src_chars, ctx_size):
-    """★ 2.0.13 按本次输入长度估算输出 token 预算（通用，不随 MOD 失效）。
-
-    为什么不用固定 1536：别的 MOD 若有接近 safe_chars 的长段，译文可能需要
-    上千 token，固定值触发 finish_reason=length 截断→递归二分重试，反而更慢。
-    为什么不用 ctx*0.6：那与本次输入无关，短句也虚设 4915，放大失控生成。
-
-    正解是看本次要翻多少字：中文输出 token 上界约源字符数的 1.2 倍
-    （汉字约 1 token/字，加标点/空格/换行余量），另加 256 缓冲；下限 1024
-    覆盖实测最大输出（940），上限不超过窗口 0.6（与旧行为一致的硬顶）。
-    """
-    est = int(src_chars * 1.2) + 256
-    return max(1024, min(est, int(ctx_size * 0.6)))
 
 
-def mask_runtime_tokens(text):
-    """把运行期占位符换成 $$R0$$…，返回 (masked, mapping)。"""
-    mapping = {}
-
-    def repl(m):
-        ph = "$$R%d$$" % len(mapping)
-        mapping[ph] = m.group(0)
-        return ph
-
-    return _RUNTIME_TOKEN_RE.sub(repl, text), mapping
 
 
-def restore_runtime_tokens(text, mapping):
-    """回填占位符；任何一个不是恰好出现一次就返回 None（调用方保留原文）。"""
-    for ph in mapping:
-        if text.count(ph) != 1:
-            return None
-    for ph, tok in mapping.items():
-        text = text.replace(ph, tok)
-    return text
 
 
-def runtime_token_counts(text):
-    return Counter(_RUNTIME_TOKEN_RE.findall(text or ""))
 
 
-def runtime_tokens_match(source, output):
-    return (_RUNTIME_TOKEN_RE.findall(source or "")
-            == _RUNTIME_TOKEN_RE.findall(output or ""))
 
 
-def partial_source_review(source, output):
-    """返回疑似只翻了一部分的源文词；仅作人工复核，不自动回退。"""
-    if not has_cjk(output or ""):
-        return []
-    src = _RUNTIME_TOKEN_RE.sub(" ", source or "")
-    src = re.sub(r"\b[A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)+\b", " ", src)
-    words = set(re.findall(
-        r"[A-Za-z]{2,}|[А-Яа-яЁё]{2,}", src.lower()))
-    if len(words) < 2:
-        return []
-    dst = (output or "").lower()
-    retained = {word for word in words
-                if re.search(r"(?<![a-zа-яё])" + re.escape(word)
-                             + r"(?![a-zа-яё])", dst)}
-    if not retained:
-        return []
-    return sorted(words - retained)
 
 
-def semantic_role_issues(source, output, lang=""):
-    src = re.sub(r"\s+", " ", source or "").strip()
-    dst = re.sub(r"\s+", " ", output or "").strip()
-    if not src or not dst:
-        return []
-    low = src.lower()
-    issues = []
-    src_first = bool(re.search(
-        r"(?<![a-zа-яё])(?:i|me|my|mine|we|us|our|я|мне|меня|мой|мы|нам|нас)"
-        r"(?![a-zа-яё])", low))
-    src_second = bool(re.search(
-        r"(?<![a-zа-яё])(?:you|your|yours|ты|тебе|тебя|твой|вы|вам|вас)"
-        r"(?![a-zа-яё])", low))
-    dst_first = bool(re.search(r"我|我们|咱", dst))
-    dst_second = bool(re.search(r"你|你们|您", dst))
-    if src_first and not src_second and dst_second and not dst_first:
-        issues.append("人称从第一方反转成第二方")
-    if src_second and not src_first and dst_first and not dst_second:
-        issues.append("人称从第二方反转成第一方")
-
-    def _direction(text, language):
-        s = text.lower()
-        if language == "eng" or re.search(r"[a-z]", s):
-            if re.search(r"\b(?:i|we)(?:['’]ll|\s+will)?\s+"
-                         r"(?:pay|give|bring|hand)\s+you\b", s):
-                return "1_to_2"
-            if re.search(r"\byou\s+(?:(?:must|should|need to|have to)\s+)?"
-                         r"(?:pay|give|bring|hand)\s+(?:me|us)\b", s):
-                return "2_to_1"
-            if re.search(r"\b(?:please\s+)?(?:pay|give|bring|hand)\s+"
-                         r"(?:me|us)\b", s):
-                return "2_to_1"
-        if re.search(r"\bя\s+(?:(?:должен|должна|должно)\s+)?"
-                     r"(?:заплачу|заплатить|дам|дать|принесу|принести|"
-                     r"отдам|отдать)\s+тебе\b", s):
-            return "1_to_2"
-        if re.search(r"\bты\s+(?:(?:должен|должна|должно|должны)\s+)?"
-                     r"(?:заплатишь|заплатить|дашь|дать|принесешь|принести|"
-                     r"отдашь|отдать)\s+мне\b", s):
-            return "2_to_1"
-        if re.search(r"\b(?:отнеси|принеси|отдай)\s+мне\b", s):
-            return "2_to_1"
-        if re.search(r"我(?:会|将|要)?(?:付给|交给|带给)你", text):
-            return "1_to_2"
-        if re.search(r"你(?:必须|需要|要)?(?:付给我|交给我|带给我)", text):
-            return "2_to_1"
-        if re.search(r"(?:付给我|交给我|带给我)", text):
-            return "2_to_1"
-        return ""
-
-    src_dir = _direction(src, lang)
-    dst_dir = _direction(dst, "zh")
-    if src_dir and dst_dir and src_dir != dst_dir:
-        issues.append("交接/付款方向反转")
-    return issues
 
 
 # ★ 2.0.24（IWP 全量审计 D10）：半音译粘连签名。模型（1.8B）会把专名
@@ -3932,68 +2982,16 @@ def semantic_role_issues(source, output, lang=""):
 # 「$target正在」「AK-103可以」误报。剥后仍出现「拉丁字母串直接贴汉字」
 # 即粘连。大小写混合形态（首字母大写+后续小写）才算：纯大写缩写
 # （PC机 的 PC）不误伤。
-_GLUE_STRIP_RE = re.compile(
-    r"\$\$R\d+\$\$|%c\[[^\]]*\]|\$clr_\d+|\$[A-Za-z_][A-Za-z0-9_]*"
-    r"|%[-+ #0-9.*$]*[A-Za-z]|\\n")
-_GLUE_RE = re.compile(
-    r"[\u4e00-\u9fff][A-Za-z][a-z]+|[A-Za-z][a-z]+[\u4e00-\u9fff]")
 
 
-def find_glue_residue(text):
-    """返回译文里的粘连残词样例（最多 3 个）；无粘连返回 []。
-
-    数字保留在探针里：单位记法（45mm弹壳、125g药剂）的字母串前面
-    必然是数字，按"字母串紧邻数字"跳过——这是度量单位不是粘连。
-    """
-    if not text:
-        return []
-    probe = _GLUE_STRIP_RE.sub(" ", text)
-    hits = []
-    for mm in _GLUE_RE.finditer(probe):
-        pre = probe[:mm.start()]
-        if re.search(r"[\d.]\s*$", pre):
-            continue
-        hits.append(mm.group(0))
-    return hits[:3]
 
 
 # ★ 2.0.13 圆点注入修复：1.8B 会把遮罩后的颜色码 $$R0$$ 当成列表项，
 # 还原后在 %c[...] 后留下 "•"，实测 392 条神器/百科描述被污染（源文零圆点）。
 # 只在源文**没有**圆点时清理，避免误伤原文真用到的项目符号。
-_BULLET = "\u2022"
 
-def clean_injected_bullets(src, out):
-    """源文无圆点而译文有 → 判定为模型注入，删除所有圆点并整理空格。
 
-    保留 round-trip 安全性：只删圆点本身与其后紧邻的一个空格，
-    不触碰颜色码/占位符/换行，返回 (清洗后文本, 是否改动)。
-    """
-    if not out or _BULLET not in out:
-        return out, False
-    if _BULLET in (src or ""):
-        return out, False   # 源文本来就有圆点，可能是合法列表，不动
-    cleaned = out
-    # "• " / "•" 连同其后紧邻空白一起删（颜色码后常见 %c[...]• %c[...]）
-    cleaned = re.sub(re.escape(_BULLET) + r"[ \t]?", "", cleaned)
-    # 删完后若颜色码之间留下双空格，收敛为一个（源文该处本无空格）
-    cleaned = re.sub(r"(%c\[[^\]]*\])([ \t]{2,})", r"\1 ", cleaned)
-    return cleaned, cleaned != out
 
-# 冠词粘连：小模型偶尔把英文冠词 An/A/The 贴在中文译文前（"An神器..."）。
-# 只在词首紧邻 CJK 时剥离，避免误伤真正的英文混排。
-# ★ 2.0.15：冠词不只出现在行首——颜色码后也会紧贴中文译文
-# （实测 %c[default]The科学家）。匹配「行首或颜色码之后」的冠词，
-# 替换时保留颜色码本身。
-_LEADING_ARTICLE_RE = re.compile(
-    r"(%c\[[^\]]*\]|^)(?:An|A|The)(?=[\u4e00-\u9fff])", re.I)
-
-def clean_stuck_article(out):
-    """剥离紧贴中文译文的英文冠词（行首/颜色码后），返回 (文本, 是否改动)。"""
-    if not out:
-        return out, False
-    cleaned = _LEADING_ARTICLE_RE.sub(lambda m: m.group(1) or "", out,
-                                      count=1)
-    return cleaned, cleaned != out
 
 
 # ★ 2.0.13 通用新闻句式替换：STALKER 各版本的动态广播/新闻存在大量
@@ -4002,126 +3000,19 @@ def clean_stuck_article(out):
 # **数据驱动的通用模板**：句式通用 + 名词查词库，任何 MOD 只要名词在库里就
 # 能零成本命中；库里没有的名词返回 None，照常送模型，不误伤。
 # 只处理纯 ASCII 英文短句，不含占位符/控制符。
-_NEWS_PATTERNS = (
-    # (正则, 模板)  —— 组1是名词（含可选冠词/复数由正则吃掉）
-    (re.compile(r"^We (?:were|got) (?:attacked|ambushed) by (?:a |an |some )?(.+?)[.!]?$", re.I),
-     "我们被%s袭击了。"),
-    (re.compile(r"^(?:A |An |The )?(.+?) ambushed us[.!]?$", re.I),
-     "%s伏击了我们。"),
-    (re.compile(r"^(?:A |An |The )?(.+?) attacked us[.!]?$", re.I),
-     "%s袭击了我们。"),
-    (re.compile(r"^We (?:ran into|encountered|met) (?:a |an |some )?(.+?)[.!]?$", re.I),
-     "我们遇到了%s。"),
-    (re.compile(r"^We got attacked by (?:a |an |some )?(.+?)[.!]?$", re.I),
-     "我们被%s袭击了。"),
-)
-
-def pattern_translate(src, lookup):
-    """通用句式 + 词库名词 → 确定性译文；无法覆盖返回 None。
-
-    lookup: 单调函数 term -> 译名 或 None（由调用方注入词库查询）。
-    """
-    s = (src or "").strip()
-    if not s or not s.isascii():
-        return None
-    for pat, tpl in _NEWS_PATTERNS:
-        m = pat.match(s)
-        if not m:
-            continue
-        noun = m.group(1).strip()
-        zh = lookup(noun)
-        if not zh:
-            return None
-        return tpl % zh
-    return None
 
 
-def unescape_newlines(text):
-    """送翻前把字面 \\n/\\t 变成真实换行，让模型看到段落结构。"""
-    return (text or "").replace("\\r\\n", "\n").replace("\\n", "\n") \
-        .replace("\\t", "\t")
 
 
-def escape_newlines(text):
-    """译后统一写回字面 \\n/\\t，保持 X-Ray 文本表的存储约定。"""
-    s = (text or "").replace("\r\n", "\n")
-    return s.replace("\n", "\\n").replace("\t", "\\t")
 
 
-def restore_linebreaks(text, count):
-    """模型改动换行数时的确定性兜底：把译文的换行数对齐到原文。
 
-    ★ 2.0.13：旧版只在译文**一个换行都没有**时才补，实测大量
-    “原文 10 行 → 译文 8 行”的部分丢失被当成 kept_first 原样写回，
-    游戏里表现为整段错行（用户实测百科/描述条目）。新逻辑同时处理
-    换行不足（按句末/从句标点补）和换行过多（把多余换行并回相邻行），
-    且只在缺/多的量不大（≤ 原文行数）时动手，避免把模型正常分行打乱。
-    """
-    if count <= 0 or not text:
-        return text
-    cur = text.count("\n")
-    if cur == count:
-        return text
-    # 差异过大时不动手：原文 3 行译文 30 行属于模型自由分段，
-    # 强行对齐只会破坏本就可读的译文。
-    if abs(cur - count) > max(count, 1):
-        return text
-
-    if cur < count:
-        # 缺行：优先按句末标点切，不够再退到从句标点。
-        parts = [p for p in re.split(r"(?<=[。！？!?…])", text) if p]
-        if len(parts) < count + 1:
-            parts = [p for p in
-                     re.split(r"(?<=[。！？!?…；;，,、])", text) if p]
-        if len(parts) < 2:
-            return text
-        need = min(count, len(parts) - 1)
-        out = []
-        for i, part in enumerate(parts[:-1]):
-            out.append(part + ("\n" if i < need else ""))
-        out.append(parts[-1])
-        fixed = "".join(out)
-        return fixed if fixed.count("\n") == count else text
-
-    # 多行：把多余的换行符号并回（删除多余 \\n，保留非空行内容）。
-    lines = text.split("\n")
-    keep = []
-    for ln in lines:
-        if len(keep) < count + 1:
-            keep.append(ln)
-        elif ln.strip():
-            # 已够行数又有正文：并入最后一行，不丢字。
-            keep[-1] = keep[-1].rstrip() + ln
-        # 纯空行直接丢弃
-    fixed = "\n".join(keep)
-    # 行数还多（原文就是空行多）：从尾部合并空行
-    while fixed.count("\n") > count:
-        idx = fixed.find("\n")
-        # 优先合并连续空行，其次合并任意相邻换行
-        m = re.search(r"\n\s*\n", fixed)
-        if m:
-            fixed = fixed[:m.start()] + "\n" + fixed[m.end():]
-        else:
-            fixed = fixed.replace("\n", "", 1)
-    return fixed if fixed.count("\n") == count else text
 
 
 # 专名/歌名/型号保护：只按**结构**判断，不写死任何 MOD 文件名。
 # 文件名的 credits/ogg/music/songs/enc_weapons 只是通用提示；用户可关闭。
 # ID 引用扫描（跨 MOD 通用；只认结构，不认具体文件名）
-_XML_REF_TAG_RE = re.compile(
-    r"<(?:text|name|bio|title)\b[^>]*>\s*([A-Za-z0-9_][A-Za-z0-9_.\-]{0,100})\s*</",
-    re.I)
-_XML_REF_ATTR_RE = re.compile(
-    r"\b(?:name|hint|bio|caption|descr|title)\s*=\s*[\"']"
-    r"([A-Za-z0-9_][A-Za-z0-9_.\-]{0,100})[\"']",
-    re.I)
-_SCRIPT_TRANSLATE_RE = re.compile(
-    r"translate_string\s*\(\s*[\"']([^\"']+)[\"']\s*\)")
-_SCRIPT_QUOTED_RE = re.compile(r"[\"']([A-Za-z0-9_][A-Za-z0-9_.\-]{1,100})[\"']")
 
-_PROTECT_FILE_HINTS = ("credits", "ogg", "music", "songs", "enc_weapons",
-                       "snames", "fnames", "character_name")
 # ★ 2.0.11：冒号/破折号前必须是「短标题」——不含句末标点、长度收紧。
 # 旧式 `[^\n:：]{0,80}` 会吞掉 `Just about anyone, buddy. Think about it:`
 # 这类对话（前 80 字内有冒号就整条当标题跳过，实测 12+ 条长对话未译）。
@@ -4129,188 +3020,35 @@ _PROTECT_FILE_HINTS = ("credits", "ogg", "music", "songs", "enc_weapons",
 # ★ 2.0.17：标题规则再收紧——冒号前段含逗号/引号的是叙述句
 # （实测 "Men, take note: only a bullet..." 被当标题整段跳过）。
 # 标签形态（Name: / Radio: / Quest:）冒号前是 1~3 个词、无逗号。
-_TITLE_LIKE_RE = re.compile(
-    r"^[A-Za-z0-9][A-Za-z0-9 .\-'/]{0,40}[:：]\s*[A-Za-z0-9]")
-_TITLE_DASH_RE = re.compile(
-    r"^[A-Za-z0-9][^\n.!?！？—–]{0,40}[—–]\s*"
-    r"[A-Za-z0-9][^\n.!?！？]{0,40}$")
 # 型号名（MP5 "Sanitizer"、AK-74 "Рubin"）：引号前只允许最多 5 个
 # 「首字母大写的词」。旧式 `[A-Za-z0-9 ./\-]*` 会一路吞掉小写单词，把
 # `You have unlocked the "Heavy Pockets" achievement.` 这类整句英文当成
 # 型号整条跳过（实测成就解锁提示 100% 未译）。
-_MODEL_LIKE_RE = re.compile(
-    r'^(?:[A-Z0-9][A-Za-z0-9\-]*[ .\-/]?){1,5}["“][^"”]{1,80}["”]')
-_CODE_LIKE_RE = re.compile(r"^[A-Z0-9][A-Z0-9 .\-/_]{1,30}$")
-_COPYRIGHT_RE = re.compile(r"^(?:©|\(c\)|copyright\b)", re.I)
 # ★ 2.0.17 误伤修正（实测 2.0.15 产物 59 条漏译里 12 条中招）：
 # - `FAILED\b` 在 re.I 下命中叙述文里的 "failed"（"a result of failed
 #   experiments"）→ 改为大小写敏感的显式 FAILED；
 # - `teleport\w*` 命中叙事词 "teleport closer" → 只认调试标识符形态
 #   `teleport_…` 或 `teleport:`/`teleport =`。
 # 其余 token（onItemDrop/npcObj/reinit/kamps 等驼峰或生僻词）保留 re.I。
-_DEBUG_LIKE_RE = re.compile(
-    r"(?:onItemDrop|npcObj|\bFAILED\b|sect\s*-|obj\s*:|gvid\s*:|"
-    r"^(?:~|(?i:\[[a-z0-9_:.\- ]+\]$))|"
-    r"\bteleport_[a-z0-9_]+|\bteleport\s*[:=]|"
-    r"\b(?:reinit|kamps|npcItems|isVisual\w*)\b|"
-    r"content\s*:)")
-_DEBUG_PHRASES = {"dead", "none", "null", "true", "false",
-                  "avail end", "start here", "reinit timer"}
 
 # 口径/型号不是“正文”：9x18 PM、5.56x45 M995 AP、12.7x99mm、.44 Magnum
 # 这类短技术串必须整串保留，不能被模型当时间/自动步枪翻译。
-_TECH_SPEC_RE = re.compile(
-    r"^\s*(?:\d+\s*[x×]\s*)?\d+(?:[.,]\d+)?\s*[x×]\s*"
-    r"\d+(?:[.,]\d+)?(?:\s*[A-Za-z0-9.+/\-]{0,12})?\s*$", re.I)
-_TECH_CALIBER_RE = re.compile(
-    r"^\s*\.\d{2,3}\s+[A-Za-z][A-Za-z0-9 .\-/]{0,24}$", re.I)
 
 
-def looks_like_technical_text(text):
-    """口径/弹药/尺寸类整串：只做技术串保护，不当普通正文。
-
-    ★ 2.0.21（全 MOD 重放审计）：含**句末标点**的串是正文（实测 NS7
-    'Магазин на 10 патронов калибра 10.3x45мм.'——弹匣描述带口径被整条
-    跳过），尾部句号/问号排除。
-    """
-    s = str(text or "").strip()
-    if not s or len(s) > 60 or re.search(r"[。！？!?；;]", s):
-        return False
-    if re.search(r"[.。！？!?]\s*$", s) and len(s) > 20:
-        return False                     # 句末标点 = 句子，非纯规格串
-    if _TECH_SPEC_RE.match(s) or _TECH_CALIBER_RE.match(s):
-        return True
-    return bool(re.search(r"\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?", s))
 
 
-def looks_like_generated_noise(rel, text):
-    """旧的 ___scriptE__ / ___cfgxml__ 生成表：短 ASCII 多是日志/键名。"""
-    low = (rel or "").lower().replace("\\", "/")
-    if "___scripte__" not in low and "___cfgxml__" not in low:
-        return False
-    s = str(text or "").strip()
-    if not s or len(s) > 80 or re.search(r"[。！？!?；;]", s):
-        return False
-    if s.isascii():
-        return True
-    return bool(re.search(
-        r"^(?:gulag|ignored|selected|actor\s+(?:start|end)|spawn|id):",
-        s, re.I))
 
 
-def looks_like_model_name(text):
-    """纯拉丁武器/物品型号名：会话词表不应把它们当人名/普通物品翻译。"""
-    s = str(text or "").strip()
-    if not s or not re.search(r"[A-Za-z]", s):
-        return False
-    if re.search(r"\d", s) or re.search(r"[“”\"'«»/]", s):
-        return True
-    if re.search(r"[A-Z]{2,}", s):
-        return True
-    if "-" in s and len(s.split()) >= 2:
-        return True
-    caps = sum(1 for w in s.split() if w[:1].isupper())
-    return s.isascii() and caps >= 2
 
 
-def _has_translatable_text(text):
-    """剔除运行期占位符后仍有 2 个以上连续字母，才值得送翻。"""
-    clean = _RUNTIME_TOKEN_RE.sub("", text or "")
-    return bool(re.search(r"[A-Za-zА-Яа-яЁё]{2,}", clean))
 
 
-def detect_text_lang(text):
-    """按字母构成判断单条源文是俄语还是英语。
-
-    X-Ray 的 `<rus>` 字段在不少 MOD 里实际放的是英语；只按字段名选源语言
-    会把英语提示词成俄语。这里只做粗判：西里尔字母占优→rus，拉丁占优→eng；
-    混合专名/缩写不改变主语言；太短（<2 个字母）返回空，交给文件级提示。
-    """
-    s = text or ""
-    cyr = len(re.findall(r"[А-Яа-яЁё]", s))
-    lat = len(re.findall(r"[A-Za-z]", s))
-    if cyr >= 2 and cyr >= lat:
-        return "rus"
-    if lat >= 3 and lat > cyr:
-        return "eng"
-    return ""
 
 
-def looks_like_code_or_debug(rel, text):
-    """结构性噪声：调试日志/路径/URL/代号。**总是**跳过，不占“专名保护”。"""
-    s = (text or "").strip()
-    if not s or len(s) <= 1:
-        return True
-    if s.lower() in _DEBUG_PHRASES or _COPYRIGHT_RE.match(s):
-        return True
-    if _DEBUG_LIKE_RE.search(s):
-        # ★ 2.0.11 [Say nothing] / [Issue Command] 是对话选项，不是调试标记。
-        # 只在玩家可见标签表豁免，且方括号内必须是可读英文短语（含空格）。
-        if not (is_player_facing_label(rel, s)
-                and re.fullmatch(r"\[[A-Za-z][A-Za-z ]{2,60}\]", s)):
-            return True
-    if s.lower().startswith(("http://", "https://", "www.")):
-        return True
-    # 短代号/弹药规格：只有“全大写且没有任何小写字母”才跳过。
-    # 旧规则把“Набор 1 / Патроны 9х18мм ПМ / 30 х 5.45x39мм”都当型号，
-    # 实测 459 条正文因此漏译；含小写词的串一律按正文送翻。
-    name_file = any(x in (rel or "").lower() for x in (
-        "character_name", "snames", "fnames", "bio"))
-    zone_file = any(x in (rel or "").lower() for x in (
-        "string_table_enc_zone", "string_table_levels", "mapspots"))
-    if not (name_file or zone_file):
-        if (any(c.isdigit() for c in s)
-                and re.fullmatch(
-                    r"[A-ZА-ЯЁ0-9][A-ZА-ЯЁ0-9 .\-/_]{0,40}", s)):
-            return True
-        if _CODE_LIKE_RE.match(s) and any(c.isdigit() for c in s):
-            return True
-    return False
 
 
-def _is_model_code_form(rel, text):
-    """code 过滤里"全大写型号/弹药规格"那一支是否为命中原因。
-
-    ★ 2.0.22（每 MOD 随机文件测试）：全库 398 条被 code 拦掉的条目其实
-    词库有整串中文译名，其中 121 条与人工汉化逐字一致（AK-74→AK-74突击步枪、
-    AEK-971→AEK-971突击步枪、3D PDA→三维PDA、АН-94→AN-94突击步枪）。
-    按 2.0.21 同一原则（词库整串命中 = 明确翻译意图）放行这一支；
-    调试词/URL/版权行/单字符（dead、True、None、ч）不是型号形态，仍跳过。
-    """
-    s = (text or "").strip()
-    if len(s) <= 1 or s.lower() in _DEBUG_PHRASES or _COPYRIGHT_RE.match(s):
-        return False
-    if _DEBUG_LIKE_RE.search(s):
-        return False
-    if s.lower().startswith(("http://", "https://", "www.")):
-        return False
-    low = (rel or "").lower()
-    if any(x in low for x in ("character_name", "snames", "fnames", "bio",
-                              "string_table_enc_zone", "string_table_levels",
-                              "mapspots")):
-        return False
-    return bool(any(c.isdigit() for c in s)
-                and re.fullmatch(r"[A-ZА-ЯЁ0-9][A-ZА-ЯЁ0-9 .\-/_]{0,40}", s))
 
 
-def looks_like_identifier_text(text):
-    """纯小写 ASCII 的“段落/任务/节名”不是用户正文（如 resque information）。"""
-    s = (text or "").strip()
-    if not s:
-        return True
-    if re.fullmatch(r"[a-z0-9_.\- /]{1,90}", s) and not re.search(
-            r"[.!?,;:()\[\]{}]", s):
-        return True
-    # 纯 ASCII、无句末标点、<=6 个词：多为任务/段落/角色/资源名
-    # （Courier document / My map task / Gans Wiberg / Karta Name），
-    # 不是用户正文；但「Disable Info」这类多个首字母大写的界面标签
-    # 是给玩家看的，不能当标识符跳过。
-    if (s.isascii() and len(s.split()) <= 6
-            and not re.search(r"[.!?。！？]", s)):
-        caps = sum(1 for w in s.split() if w[:1].isupper())
-        if caps <= 1:
-            return True
-    return False
 
 
 # ★ 2.0.11 玩家可见短标签豁免：成就名/声望等级/武器属性/对话动作这类
@@ -4318,42 +3056,13 @@ def looks_like_identifier_text(text):
 # looks_like_identifier_text 一律跳过（实测 IWP 129 条该译未译：
 # Radiotherapy/Enemy/Magnification/[Say nothing]）。这些表是给玩家看的 UI，
 # 必须翻译；只在下列目录豁免，新闻/物品/人物名表仍按原规则跳过。
-_PLAYER_LABEL_DIRS = ("achievement", "game_relations", "binoc",
-                      "dialog", "relation", "reputation", "rank",
-                      "quick_menu", "companion",
-                      # ★ 2.0.21（全 MOD 重放审计）：以下目录的短串是
-                      # 玩家可见正文，实测被 identifier 误跳（WOT 武器
-                      # 升级名 'Synthetic barrel thickener'、新闻碎片
-                      # 'a merc'、UI 'Dismissable'/'March'）
-                      "news", "dynamic_news", "pda", "options",
-                      "equipment", "quests", "loadscreen", "land_names",
-                      "weapons_upgrades", "upgrades", "barter", "cryray",
-                      # ★ 2.0.22：藏宝点/储物点名是 PDA 里玩家可见正文，
-                      # 实测 679 条被 identifier 跳过（'Backpack under tree'、
-                      # 'Chest on the roof'、'Safe under the bush'）。此前被
-                      # 软层直取掩盖，软层退役后缺口暴露。
-                      "treasure", "secrets")
 
 # ★ 2.0.12：全大写短标签的豁免目录。比 _PLAYER_LABEL_DIRS 更窄——
 # binoc（武器属性表）里的 NVIDIA DLSS 是真型号缩写，必须继续保护，
 # 所以不放进来；只放行成就名、军衔声望、同伴菜单、对话选项里的
 # 全大写命令/标题（FOLLOW ME、DO NOT LOOT CORPSES、S.C.H.O.L.A.R.）。
-_UPPER_LABEL_DIRS = ("achievement", "game_relations", "relation",
-                     "reputation", "rank", "quick_menu", "companion",
-                     "dialog",
-                     # ★ 2.0.21：新闻/任务/加载屏的全大写标题是玩家正文
-                     # （'WHO TOOK MY STASH?!!!'、'NIMBLE'S HANDBOOK'）
-                     "news", "dynamic_news", "quests", "loadscreen")
 
 
-def is_player_facing_label(rel, text=""):
-    low = (rel or "").lower().replace("\\", "/")
-    if not any(x in low for x in _PLAYER_LABEL_DIRS):
-        return False
-    s = (text or "").strip()
-    # 真对话长句本来就走正常翻译路径，这里只豁免短标签；
-    # 长度上限与 identifier 判定保持一致，避免把整段对话误判成标签。
-    return bool(s) and len(s) <= 90
 
 
 # ★ 2.0.25（aera 与 CHS 人工包全量对照 P3）：条目 id 后缀是引擎命名惯例
@@ -4361,102 +3070,18 @@ def is_player_facing_label(rel, text=""):
 # id 的内容就是物品名/描述/界面文案（实测 AREA 闪存盘名 "Flash drive
 # with alloys data" 等 2206 条被 identifier 过滤整类跳过，人工包全译）。
 # 后缀白名单是跨 MOD 通用的引擎约定，不含任何具体 MOD 词。
-_PLAYER_ID_SUFFIX_RE = re.compile(
-    r"(?:_|^)(?:name|descr|description|text|title|hint|info|tips|caption)"
-    r"(?:_?\d+)?$",
-    re.I)
 
 
-def _id_player_visible(eid):
-    """条目 id 以玩家可见字段后缀结尾 → 不按 identifier/technical 跳过。"""
-    return bool(eid) and bool(_PLAYER_ID_SUFFIX_RE.search(str(eid)))
 
 
-def _is_prose_sentence(s):
-    """整句正文（不是标题/型号名）。
-
-    ★ 2.0.22（每 MOD 随机文件测试 + 人工参考对照）：2.0.21 的注释声称
-    _TITLE_LIKE/_TITLE_DASH 已"长句收口"，但代码只对 _MODEL_LIKE 生效，
-    标题分支从未收口——全库 23 条正文被当标题跳过，人工汉化全部翻译：
-      `Connection error: CD-Key already in use.`（GAMMA：连接错误: CD-Key已被使用.）
-      `Stash: blocked entrance to the underground, inside an L-shaped pipe.`
-      `06:00 \\nЭх... Уже пора вставать...`（时间戳前缀被当标签）
-    真标题（`Vano:`、`MP5 — Sanitizer`）短且无句末标点，不受影响。
-    """
-    n = len(s)
-    if n >= 40 and re.search(r"[.!?。！？]\s*[\"”»']?\s*$", s):
-        return True
-    return n > 90 and len(re.findall(r"[A-Za-zА-Яа-яЁё]{2,}", s)) >= 8
 
 
-_TRACK_LIST_RE = re.compile(r"(?:ТРЕК|Трек|TRACK|Track|曲目)\s*[:：]?\s*\d+",
-                            re.I)
 
 
-def looks_like_hard_protected_file(rel):
-    """制作名单/音乐列表：连核心术语也不替换；武器短名只保护非词库型号。"""
-    low = (rel or "").lower().replace("\\", "/")
-    return any(x in low for x in ("credits", "ogg", "music", "songs"))
 
 
-def looks_like_proper_text(rel, text):
-    """专名/歌名/型号：只在用户勾选“保护专名”时跳过。"""
-    s = (text or "").strip()
-    if not s:
-        return False
-    low = (rel or "").lower().replace("\\", "/")
-    # 文件级强保护：制作名单、音乐/歌曲列表整张表都不翻；人物/武器/名字表
-    # 只保护短名，长描述仍交给模型（例如武器说明）。
-    hint = next((h for h in _PROTECT_FILE_HINTS if h in low), "")
-    if looks_like_hard_protected_file(rel):
-        # ★ 2.0.22（全 MOD 全文件测试）："ogg/music" 命中的其实是物品表——
-        # `string_table_ogg_player.xml` 是 MP3 播放器与音乐闪存盘的名字/描述，
-        # 玩家在物品栏就能看到，人工汉化对长描述全部翻译。只放行这类长正文；
-        # 制作名单与人物名字表仍整表保护。
-        # 但**含曲目列表的条目不放行**：ogg_flash_* 的描述后面跟着
-        # `ТРЕК 01: Алиса — Веретено` 这类真实歌名/歌手（全库 54 条），
-        # 整串送翻会把歌名译错，人工也只译了前半句描述——宁可整条保留。
-        if (hint in ("ogg", "music", "songs") and "credits" not in low
-                and _is_prose_sentence(s) and not _TRACK_LIST_RE.search(s)):
-            return False
-        return True
-    if hint == "enc_weapons" and len(s) <= 40 and len(s.split()) <= 6:
-        return True
-    # ★ 2.0.21（全 MOD 重放审计）：_MODEL_LIKE 只对短串生效——长正文
-    # （The "underwear" of an exoskeleton...）引号紧跟 Title 词也会命中
-    # 型号形态，实测整段物品描述被跳过。>90 字符或含句末标点不判型号。
-    # ★ _TITLE_LIKE/_TITLE_DASH 同口径收口：长句不是标题（'The situation
-    # is this: ...' 实测整段漏译）；玩家可见目录（quests/news/dialog 等）
-    # 的冒号标题是任务名/新闻标题，送翻不保护。
-    _label_dir = any(x in low for x in _PLAYER_LABEL_DIRS)
-    if (not _label_dir and not _is_prose_sentence(s)
-            and (_TITLE_LIKE_RE.match(s) or _TITLE_DASH_RE.match(s)
-                 or (_MODEL_LIKE_RE.match(s) and len(s) <= 90
-                     and not re.search(r"[.!?。！？]\s*[\"”»]?\s*$", s)))):
-        return True
-    if len(s) <= 30 and s.isupper() and any(c.isalpha() for c in s):
-        # ★ 2.0.7：只保护拉丁字母的型号/缩写（NVIDIA DLSS、AK-74）。
-        # 西里尔全大写短名（БАРМЕН、ПРИЗРАК、ЗВЕРОБОЙ…）在人物表/SMS
-        # 名字表里是**普通身份称呼**，旧规则把它们整批原样保留、连模型
-        # 都不调用。这里放行为"不自动保护"：调用方先用 termbase_lookup
-        # 取库里既有译名，没有的送模型翻译。
-        if re.search(r"[A-Za-z]", s):
-            # ★ 2.0.12：玩家可见的全大写命令/菜单项（FOLLOW ME、WAIT HERE、
-            # DO NOT LOOT CORPSES、S.C.H.O.L.A.R. 成就名）是**正文**，不是
-            # 型号缩写。目录白名单命中时放行送翻；NVIDIA DLSS、AK-74 等
-            # 真型号不在这些目录，仍受保护。
-            low2 = low.lower().replace("\\", "/")
-            if any(x in low2 for x in _UPPER_LABEL_DIRS) and len(s) <= 30:
-                return False
-            return True
-        return False
-    return False
 
 
-def looks_like_protected_text(rel, text):
-    """兼容旧接口：结构性噪声或专名。"""
-    return (looks_like_code_or_debug(rel, text)
-            or looks_like_proper_text(rel, text))
 
 
 # ----------------------------------------------------------------------
@@ -4470,621 +3095,46 @@ def looks_like_protected_text(rel, text):
 #   * 只改显示类调用和明确的文本变量赋值。
 # 宁可漏几条界面文本，也不能把脚本逻辑改坏。
 # ----------------------------------------------------------------------
-_SCRIPT_LOG_CALL_RE = re.compile(
-    r"\b(?:log1?|log2|log3|log_message|printf|print|debug|error|assert|"
-    r"trace|console|exec)\s*\(", re.I)
-_SCRIPT_LOGIC_CALL_RE = re.compile(
-    r"\b(?:string_find|string_gsub|string_match|string_gmatch|"
-    r"string\.find|string\.gsub|string\.match|string\.gmatch)\s*\(",
-    re.I)
-_SCRIPT_UI_CALL_RE = re.compile(
-    r"\b(?:SetText|SetName|SetTextTip|InitStatic|InitButton|AddText|AddLine|"
-    r"send_tip|hud_msg|add_spot_on_map|give_talk_message|map_add_user_spot|"
-    r"show_message|show_tip|talk_message|send_message|add_news|add_tip|"
-    r"message_box|set_level_changer_invitation)\s*\(", re.I)
-_SCRIPT_ASSIGN_RE = re.compile(
-    r"^\s*(?:local\s+)?(?:self\.|this\.|obj\.)?([A-Za-z_]\w*)\s*=\s*[^=]")
-_SCRIPT_TEXT_VAR_RE = re.compile(
-    r"(?:^|_)(?:text|txt|msg|message|hint|caption|title|descr|description|"
-    r"name|news|label|tip)(?:_|$)", re.I)
-
-
-def strip_script_comment(line):
-    """去掉 -- 行注释，保留引号内的 --（如 "a--b"）。"""
-    out = []
-    quote = None
-    escape = False
-    i = 0
-    while i < len(line):
-        ch = line[i]
-        if quote:
-            out.append(ch)
-            if escape:
-                escape = False
-            elif ch == "\\":
-                escape = True
-            elif ch == quote:
-                quote = None
-        else:
-            if ch in "\"'":
-                quote = ch
-                out.append(ch)
-            elif ch == "-" and i + 1 < len(line) and line[i + 1] == "-":
-                break
-            else:
-                out.append(ch)
-        i += 1
-    return "".join(out)
-
-
-_SCRIPT_EXTRA_DISPLAY_RES = (
-    re.compile(
-        r"(?:set_level_changer_invitation|set_description)\s*\(\s*"
-        r"([\"'])(.*?)\1", re.S),
-    re.compile(
-        r"AddItem\s*\(\s*game\.translate_string\s*\(\s*([\"'])(.*?)\1",
-        re.S),
-)
-_SCRIPT_TRANSLATE_ARG_RE = re.compile(
-    r"game\.translate_string\s*\(\s*([\"'])(.*?)\1", re.S)
-
-
-def extra_script_display_literals(whole):
-    """补上游漏掉的显示调用字面串（只收西里尔文本，避免碰 ID/代码）。"""
-    out = set()
-    for pattern in _SCRIPT_EXTRA_DISPLAY_RES:
-        for m in pattern.finditer(whole or ""):
-            inner = m.group(2)
-            if re.search(r"[А-Яа-яЁё]", inner):
-                out.add(m.group(1) + inner + m.group(1))
-    return out
-
-
-def script_translate_literal_args(whole):
-    """已包在 game.translate_string(...) 里的字面串：替换时不能再套一层。"""
-    return {m.group(1) + m.group(2) + m.group(1)
-            for m in _SCRIPT_TRANSLATE_ARG_RE.finditer(whole or "")}
-
-
-def script_literal_allowed(line, literal):
-    """这一行的这个字面串是否允许改写/送翻。"""
-    code = strip_script_comment(line)
-    if not code.strip():
-        return False
-    if _SCRIPT_LOG_CALL_RE.search(code):
-        return False
-    if _SCRIPT_LOGIC_CALL_RE.search(code):
-        return False
-    # 比较/连接判断里的字符串通常是标签、档位、状态名，不能换。
-    if re.search(r"==|~=|<=|>=", code):
-        return False
-    if _SCRIPT_UI_CALL_RE.search(code):
-        return True
-    m = _SCRIPT_ASSIGN_RE.match(code)
-    if m and _SCRIPT_TEXT_VAR_RE.search(m.group(1)):
-        return True
-    return False
-
-
-def script_literal_allowed_in_file(whole, cand):
-    """候选串在脚本里的**每一次**出现都必须是安全上下文，才允许改写。
-
-    任何一次出现在 log/string_find/比较里就整条跳过；全局替换无法区分
-    同一字面串的不同出现位置，保守跳过比改坏逻辑好。
-    """
-    if len(cand) < 2 or cand[0] not in "\"'" or cand[-1] != cand[0]:
-        return False
-    inner = cand[1:-1]
-    if not inner.strip():
-        return False
-    for needle in (cand, inner):
-        found = False
-        start = 0
-        while True:
-            idx = whole.find(needle, start)
-            if idx < 0:
-                break
-            found = True
-            line_start = whole.rfind("\n", 0, idx) + 1
-            line_end = whole.find("\n", idx)
-            if line_end < 0:
-                line_end = len(whole)
-            if not script_literal_allowed(whole[line_start:line_end], inner):
-                return False
-            start = idx + len(needle)
-        if found:
-            return True
-    return False
-
-
-def split_protected(text, max_chars, pattern):
-    """按 split_long_text 切分，但**绝不切断 pattern 的匹配**。
-
-    强制术语模式下原文被换成 $$T1$$ 这类占位符；按字符硬切若切在占位符中间，
-    模型会看到半截标记，回填必然失败并退回旧的切片做法（质量下降且难排查）。
-    做法：先把每个匹配替换成一个私有区单字符，切分后再还原 —— 匹配永远完整。
-    """
-    spans = list(pattern.finditer(text))
-    if not spans or len(spans) > 5000:
-        return split_long_text(text, max_chars)
-    if any(0xE000 <= ord(c) <= 0xF8FF for c in text):
-        # 源文本已含私有区字符时不能用 PUA 做哨兵（会被误还原）；
-        # 退回普通切分：占位符可能被切断，但 _translate_force 会校验并回退，
-        # 不会产出坏译文。
-        return split_long_text(text, max_chars)
-    mapping = {}
-
-    def repl(m):
-        ch = chr(0xE000 + len(mapping))
-        mapping[ch] = m.group(0)
-        return ch
-
-    protected = pattern.sub(repl, text)
-    parts = split_long_text(protected, max_chars)
-    if not mapping:
-        return parts
-    out = []
-    for part in parts:
-        for ch, orig in mapping.items():
-            if ch in part:
-                part = part.replace(ch, orig)
-        out.append(part)
-    return out
-
-
-def split_long_text(text, max_chars):
-    """把超长文本切成 ≤ max_chars 的段：先按句末标点（。！？!?…换行；分号），
-    再按从句标点（逗号等），最后硬切。分隔符随前文保留，绝不丢字、绝不截断。"""
-    if len(text) <= max_chars:
-        return [text]
-
-    def split_keep(pattern, s):
-        """按捕获组切分，分隔符并回前一片段。"""
-        parts = pattern.split(s)
-        units, buf = [], ""
-        for i, piece in enumerate(parts):
-            buf += piece
-            if i % 2 == 1:
-                if buf:
-                    units.append(buf)
-                buf = ""
-        if buf:
-            units.append(buf)
-        return units
-
-    def hard_wrap(s, limit):
-        return [s[i:i + limit] for i in range(0, len(s), limit)]
-
-    units = split_keep(_SENT_SPLIT, text)
-    fine = []
-    for u in units:
-        if len(u) <= max_chars:
-            fine.append(u)
-            continue
-        for clause in split_keep(_CLAUSE_SPLIT, u):
-            fine.extend(hard_wrap(clause, max_chars))
-
-    chunks, cur = [], ""
-    for u in fine:
-        if len(cur) + len(u) <= max_chars:
-            cur += u
-        else:
-            if cur:
-                chunks.append(cur)
-            cur = u
-    if cur:
-        chunks.append(cur)
-    return [c for c in chunks if c]
-
-
-_TAG_TEXT = re.compile(
-    r"<(?:text|rus|eng|ukr|ger|fra)\b[^>]*>(.*?)</(?:text|rus|eng|ukr|ger|fra)>",
-    re.I | re.S)
-
-_SCAN_KIND_MAP = {"text": "text", "cfg": "cfgxml", "ltx": "ltx",
-                  "script": "scriptL"}
-
-
-def _iter_candidate_strings(txt, kind):
-    """按文件类型粗提"可能被翻译的字符串"，只用于规模估计与分档推荐。"""
-    if kind in ("ltx", "cfgxml", "scriptL", "scriptE"):
-        for m in re.finditer(r'"([^"\n]{2,})"', txt):
-            s = m.group(1).strip()
-            if s:
-                yield s
-    else:
-        for m in _TAG_TEXT.finditer(txt):
-            s = re.sub(r"\s+", " ", m.group(1)).strip()
-            if s:
-                yield s
-
-
-def classify_xray_file(full, rel):
-    """判定 X-Ray 文件类型：'text' / 'cfg' / 'ltx' / 'script' / None。
-
-    勘察（扫描选档）与执行（真正翻哪些文件）**必须共用这一处判定**，
-    否则"扫描说有 3000 条"和"实际翻了哪些文件"不是同一批 —— 旧实现两条
-    口径各写一套（勘察只看路径里有没有 text 目录，执行还会嗅探 <string>
-    头），统计与行为会分歧。
-    """
-    low = full.lower()
-    parts = [x.lower() for x in rel.replace("\\", "/").split("/")]
-    if low.endswith(".ltx"):
-        return "ltx"
-    if low.endswith(".script"):
-        return "script"
-    if low.endswith(".xml"):
-        if "text" in parts[:-1]:
-            return "text"
-        try:
-            with open(full, "rb") as f:
-                head = f.read(65536).lower()
-        except OSError:
-            return "cfg"
-        if b"<string" in head and b"id=" in head and (
-                b"<text" in head or b"<rus" in head
-                or b"<eng" in head or b"<ukr" in head):
-            return "text"
-        return "cfg"
-    return None
-
-
-def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
-                      max_files=200000):
-    """勘察待翻译目录：文件数 / 体积 / 最大文件 / 最长单条文本，
-    并按内置档位给出超长条数与推荐档位。只读，不修改任何文件。
-
-    要逐文件读内容才能统计"最长可译文本"，所以超大目录会明显耗时：
-      * 每 500 个文件写一条进度，用户知道它在动；
-      * 超过 max_files 停止统计并在结果里标 truncated（不再默默卡住）；
-      * cancel 为 threading.Event 时支持中途取消。
-    长度统计只保留"直方图 + 最长项"，不再把所有 (长度, 文件名) 元组堆在
-    内存里（数万条文本就是几十万个元组）。
-    """
-    suffixes = {
-        "text": (".xml",), "cfgxml": (".xml",),
-        "ltx": (".ltx",), "scriptL": (".script",), "scriptE": (".script",),
-        "auto": (".xml", ".ltx", ".script"),
-    }
-    want = suffixes.get(mode, (".xml",))
-    n_files = 0
-    total_bytes = 0
-    max_file = (0, "")
-    hist = {}
-    n_strings = 0
-    n_files_with_text = 0
-    max_str = 0
-    max_str_file = ""
-    truncated = False
-    cancelled = False
-    for root0, dirs, files in os.walk(in_dir):
-        dirs[:] = [d for d in dirs
-                   if d not in ("translated_hy_mt2", "__temp__")
-                   and not d.endswith(".git")]
-        if cancel is not None and cancel.is_set():
-            cancelled = True
-            break
-        parent_name = os.path.basename(root0).lower()
-        if mode == "cfgxml" and parent_name == "text":
-            continue
-        for fn in files:
-            if not fn.lower().endswith(want):
-                continue
-            full = os.path.join(root0, fn)
-            rel = os.path.relpath(full, in_dir)
-            try:
-                size = os.path.getsize(full)
-            except OSError:
-                continue
-            if size > 20 * 1024 * 1024:
-                continue
-            n_files += 1
-            total_bytes += size
-            if size > max_file[0]:
-                max_file = (size, full)
-            if n_files > max_files:
-                truncated = True
-                break
-            try:
-                with open(full, "rb") as f:
-                    raw = f.read()
-            except OSError:
-                continue
-            txt = None
-            for enc in encoding_chain(raw):
-                try:
-                    txt = raw.decode(enc)
-                    break
-                except (UnicodeDecodeError, LookupError):
-                    continue
-            if txt is None:
-                continue
-            kind = mode
-            if mode == "auto":
-                kind = _SCAN_KIND_MAP.get(
-                    classify_xray_file(full, rel), "cfgxml")
-            file_strings = 0
-            for s in _iter_candidate_strings(txt, kind):
-                length = len(s)
-                hist[length] = hist.get(length, 0) + 1
-                n_strings += 1
-                file_strings += 1
-                if length > max_str:
-                    max_str, max_str_file = length, full
-            if file_strings:
-                n_files_with_text += 1
-            if log and n_files % 500 == 0:
-                log("  勘察中…已读 %d 个文件" % n_files)
-        if truncated:
-            if log:
-                log("  文件数超过 %d，勘察提前结束（统计口径见结果说明）"
-                    % max_files)
-            break
-    per_tier = {}
-    for t in BUILTIN_TIERS:
-        cap = safe_chunk_chars(TIER_PROFILES[t]["ctx"])
-        per_tier[t] = sum(c for L, c in hist.items() if L > cap)
-    if max_str > safe_chunk_chars(TIER_PROFILES["mt2"]["ctx"]):
-        recommend = "7b"
-    else:
-        recommend = "mt2"
-    return {
-        "files": n_files,
-        "bytes": total_bytes,
-        "max_file": max_file,
-        "max_str": max_str,
-        "max_str_file": max_str_file,
-        "n_strings": n_strings,
-        "files_with_text": n_files_with_text,
-        "overlong": per_tier,
-        "recommend": recommend,
-        "truncated": truncated,
-        "cancelled": cancelled,
-    }
-
-
-def decide_ctx(tier, info=None, cap=None):
-    """按实测文本长度自动设定服务上下文：
-    够短就用 4096 省内存/提速；按需要升档，但不超过该档上限。
-    cap 可显式传入（自选档用用户设置）；否则取画像中的档位窗。
-
-    自选档（custom）例外：上下文是用户自己选的，这里**不做收缩** ——
-    用户选 8192 却被自动降到 4096，等于工具替用户改了他明确指定过的参数。
-    """
-    if cap is None:
-        cap = TIER_PROFILES[tier]["ctx"]
-    if tier == "custom":
-        return cap
-    if not info or not info.get("max_str"):
-        return cap
-    need_tokens = int(estimate_tokens("x" * info["max_str"]) * 2.2) + 512
-    for ctx in (4096, 8192, 16384, 32768):
-        if ctx >= cap:
-            return cap
-        if need_tokens <= ctx:
-            return min(ctx, cap)
-    return cap
-
-
-
-def _is_word_char(ch):
-    """术语两侧的"词字符"判定：西里尔/拉丁按词边界锚定，CJK 视为边界。
-
-    为什么要区分（原实现只用正则 \\w，两者都没分开）：
-      * 西里尔/拉丁文字有词的概念，术语两侧必须锚定词边界，否则
-        "No" 会误伤 "Now"、"Кот" 会误伤 "Который"；
-      * 中文没有词间空格，而 Python 的 \\w 把汉字也算词字符 —— 于是术语表里
-        任何中文条目在中文文本里都会因为"左右都是词字符"而永不命中。
-        把 CJK 当边界即可命中（如术语「神器」在「一个神器装备」中）。
-    """
-    if not (ch.isalnum() or ch == "_"):
-        return False
-    o = ord(ch)
-    if (0x3400 <= o <= 0x9FFF
-            or 0x3040 <= o <= 0x30FF
-            or 0xAC00 <= o <= 0xD7AF):
-        return False
-    return True
-
-
-class GlossaryIndex(object):
-    """术语匹配索引：首字符分桶 + 同位置长词优先 + 非重叠单向扫描。
-
-    为什么不用 "|".join(...) 的巨型交替正则：实测 8208 条术语拼出的
-    204 KB 正则单条 150 字符文本要 43.70 ms，而同样的数据用朴素子串
-    扫描只要 1.22 ms（慢 36 倍）；两万条量级的任务上就是几十分钟纯 CPU
-    空转，GPU 全程在等。分桶后每个字符只与"以该字符开头"的词条比较，
-    比较次数降两个数量级，匹配语义与原正则逐字符一致（有等价性属性测试）。
-
-    v2 增补：
-    * `variants`：拼写变体映射到规范词条，避免 ё/е 两个译名打架；
-    * `case_sensitive`：人物名/技术缩写/小写单单词拉丁硬词要求首字母
-      大小写一致（大写专名仍命中，句子里的普通名词不再误伤）；
-    * 查找时统一做 ё→е 折叠，俄文里漏写两点的名字也能命中规范词条。
-    """
-
-    def __init__(self, mapping, case_sensitive=None, variants=None):
-        raw = {}
-        for k, v in (mapping or {}).items():
-            name = str(k)
-            if name.strip():
-                raw[name] = str(v)
-        self._case_sensitive = {str(k) for k in (case_sensitive or ())}
-        var = {str(k): str(v) for k, v in (variants or {}).items()
-               if str(k).strip() and str(v).strip()}
-
-        # 变体只做别名，不单独成为规范条目：否则硬词过滤会拿到变体键，
-        # 把“当前 MOD 专名”误判成软词。
-        self._map = {}
-        # 规范词条自身的译文优先；变体只在规范词条缺席时补位。
-        for key, value in raw.items():
-            if key not in var or var[key] == key:
-                self._map[key] = value
-        for key, value in raw.items():
-            canon = var.get(key, key)
-            if canon in raw:
-                self._map.setdefault(canon, value)
-            else:
-                self._map.setdefault(key, value)
-        self._alias = {}
-        for key in raw:
-            canon = var.get(key, key)
-            if canon not in self._map:
-                canon = key
-            self._alias.setdefault(self._fold(key), set()).add(canon)
-
-        self._by2 = {}
-        self._by1 = {}
-        for key in self._map:
-            kl = self._fold(key)
-            if len(key) == 1:
-                t = self._by1.setdefault(kl, self._new_table())
-            else:
-                t = self._by2.setdefault(kl[:2], self._new_table())
-            L = len(key)
-            t["e"].setdefault(L, set()).add(key)
-            for alias in self._alias.get(kl, (key,)):
-                if len(alias) != L:
-                    continue
-                t["c"].setdefault(L, {}).setdefault(
-                    self._fold(alias), []).append(key)
-        for t in list(self._by1.values()) + list(self._by2.values()):
-            t["lens"] = sorted(t["e"].keys(), reverse=True)
-
-    @staticmethod
-    def _new_table():
-        return {"e": {}, "c": {}, "lens": []}
-
-    @staticmethod
-    def _fold(s):
-        return s.casefold().replace("ё", "е")
-
-    def _case_ok(self, seg, key):
-        """大小写敏感词条：全大写缩写必须逐字一致，其余只要求首字母一致。
-
-        首字母一致而不是全等，是为了让 `Гришачев`/`Гришачёв`、
-        `Санёк`/`Санек` 这类拼写变体仍能命中；`crystal` 与 `Crystal`
-        的首字母不同，正好被挡在正文普通名词之外。
-        """
-        if key not in self._case_sensitive:
-            return True
-        if key.isupper():
-            return seg == key
-        if key[:1].islower():
-            # 小写单单词 canon（bar/crystal/star）只认大写专名：
-            # 正文里的普通名词保持原样，交给模型按语境处理。
-            return bool(seg) and seg[:1].isupper()
-        return bool(seg) and bool(key) and seg[0] == key[0]
-
-    def __len__(self):
-        return len(self._map)
-
-    def _probe(self, table, text, i, low):
-        """按"位置升序 + 长词优先 + 同长度精确优先"取命中，返回 key 或 None。"""
-        if not table:
-            return None
-        n = len(text)
-        for L in table["lens"]:
-            end = i + L
-            if end > n:
-                continue
-            seg = text[i:end]
-            key = None
-            pool = table["e"].get(L)
-            if pool and seg in pool:
-                key = seg
-            else:
-                segl = low[i:end] if low is not None else self._fold(seg)
-                cand = table["c"].get(L, {}).get(segl)
-                if cand:
-                    cand = list(dict.fromkeys(cand))
-                    exact = [k for k in cand if k[:1] == seg[:1]]
-                    if exact:
-                        cand = exact
-                    key = max(cand, key=lambda k: sum(
-                        1 for a, b in zip(seg, k) if a == b))
-            if key is None:
-                continue
-            if not self._case_ok(seg, key):
-                continue
-            if i and _is_word_char(text[i - 1]):
-                continue
-            if end < n and _is_word_char(text[end]):
-                continue
-            return key
-        return None
-
-    def find(self, text):
-        """返回 [(start, end, key)]：按位置升序、同位置最长优先、互不重叠。"""
-        out = []
-        if not text or not self._map:
-            return out
-        n = len(text)
-        low = self._fold(text)
-        if len(low) != n:
-            # 极少数字符 casefold 后长度变化（如 ß→ss）：退回逐段折叠，
-            # 保证位置与原文一一对应。
-            low = None
-        i = 0
-        while i < n:
-            p2 = low[i:i + 2] if low is not None else self._fold(
-                text[i:i + 2])
-            key = self._probe(self._by2.get(p2), text, i, low)
-            if key is None and self._by1:
-                key = self._probe(self._by1.get(p2[:1]), text, i, low)
-            if key is None:
-                i += 1
-                continue
-            end = i + len(key)
-            out.append((i, end, key))
-            i = end
-        return out
-
-    def hits(self, text):
-        """命中的 (原文, 译文)，长词优先 —— 与旧 _glossary_hits 同序。"""
-        pairs = [(key, self._map[key]) for _, _, key in self.find(text)]
-        pairs.sort(key=lambda kv: len(kv[0]), reverse=True)
-        return pairs
-
-
-
-_DUP_FUNCTION_RE = re.compile(r"(有有|的的|了了|是是|在在)")
-
-
-def clean_translation_output(text):
-    """清掉模型常见的功能词重复（有有/的的/了了…），不动正常叠词。"""
-    if not text:
-        return text
-    return _DUP_FUNCTION_RE.sub(lambda m: m.group(1)[0], text)
-
-_STYLE_REPLACEMENTS = (
-    ("我不得不说", "说实话"),
-    ("就目前而言", "现在"),
-    ("就目前来看", "现在看"),
-    ("并且", "而且"),
-    ("此外", "还有"),
-    ("然而", "可"),
-    ("因此", "所以"),
-    ("进行了一次", "做了一次"),
-    ("作出了", "做了"),
-    ("给予了", "给了"),
-)
-
-
-def style_cleanup_cn(text):
-    """对话专用：保守去掉翻译腔词和高频空格，不改术语、数字、代码。"""
-    if not text:
-        return text
-    out = text
-    for old, new in _STYLE_REPLACEMENTS:
-        out = out.replace(old, new)
-    # 中文之间的半角空格；中文与中文标点之间的空格。
-    out = re.sub(r"(?<=[一-鿿])[ 	]+(?=[一-鿿])", "", out)
-    out = re.sub(r"[ 	]+(?=[，。！？；：、])", "", out)
-    out = re.sub(r"(?<=[，。！？；：、])[ 	]+", "", out)
-    # 口语里常见的三个点统一成中文省略号（代码/占位符已在上层排除）。
-    out = out.replace("...", "……")
-    return out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # =====================================================================
@@ -5093,176 +3143,26 @@ def style_cleanup_cn(text):
 
 # D. 标点规范化：只在中文译文里动手，不动代码/占位符/英文上下文。
 # 半角句读紧跟中文 → 全角；叠用标点收敛；「...」→「……」。
-_PUNCT_HALF_TO_FULL = {",": "，", ";": "；", "!": "！", "?": "？", ":": "："}
 # 连续感叹/问号：中文书面最多两个，超过收敛为两个。
-_REPEATED_BANG_RE = re.compile(r"([！!?？])\1{2,}")
 
 
-def normalize_cn_punctuation(text):
-    """中文语境标点规范化（确定性）：半角句读转全角、叠用标点收敛。
-
-    只在含中文的文本里做；用正则的上下文锚定避免误伤英文缩写、
-    小数点和代码里的标点。不改术语/数字/占位符。
-    """
-    if not text or not has_cjk(text):
-        return text, False
-    out = text
-    # 中文字符后紧跟的半角句读 → 全角（排除小数点：前面是数字时跳过）
-    out = re.sub(r"(?<=[\u4e00-\u9fff]),", "，", out)
-    out = re.sub(r"(?<=[\u4e00-\u9fff]);", "；", out)
-    out = re.sub(r"(?<=[\u4e00-\u9fff])!", "！", out)
-    out = re.sub(r"(?<=[\u4e00-\u9fff])\?", "？", out)
-    # 省略号：连续 3 个及以上半角点 → 中文省略号（前面是数字的不动）
-    out = re.sub(r"(?<![\d])\.{3,}(?![\d])", "……", out)
-    # 半角点跟在中文后（句末）→ 句号
-    out = re.sub(r"(?<=[\u4e00-\u9fff])\.(?=$|[^\dA-Za-z])", "。", out)
-    # 叠用收敛：！！！→！！、？？？→？？
-    prev = out
-    out = _REPEATED_BANG_RE.sub(lambda m: m.group(1) * 2, out)
-    # 已有全角省略号旁边多余的半角点（……. → ……）
-    out = re.sub(r"…\.(?![.\d])", "…", out)
-    # ★ 2.0.24（IWP 全量审计 F5 定量）：汉字之间的空格收敛。
-    # 长文分段/模型风格会产出「强烈的 禁区 环境中」这类词间空格——
-    # 中文没有词间空格，两侧都是汉字即可安全删除；占位符/色码/数字
-    # 两侧必有一侧非汉字，不受影响（「12.3 米」「$start $mid」保留）。
-    out = re.sub(r"(?<=[\u4e00-\u9fff]) +(?=[\u4e00-\u9fff])", "", out)
-    return out, out != prev or out != text
 
 
 # C. 字面 \n 保真：源文里的字面转义 \n 个数，必须与译文一致。
 # 注意：normalized/unescape 阶段字面 \n 已转成真实换行，这里比较的是
 # escape_newlines 之后的结果（final），与源 text 的字面 \n 计数对齐。
-def count_literal_newlines(text):
-    """统计文本里字面 ``\\n`` 转义序列的个数（不是真实换行符）。"""
-    return (text or "").count("\\n")
 
 
-def reconcile_literal_newlines(src, out):
-    """译文字面 \\n 数与源文不符时的确定性兜底：按源文数量补齐/收敛。
-
-    模型常把字面 \n 吞成空格（$clr_1A\\n$clr_2B→空格），或凭空加 \n\\n。
-    只做数量对齐：缺则按句末/颜色码边界补回，多则收敛到源数量。
-    差异过大（源 0 → 译 >2）交给 context_bleed 闸门处理，这里不动。
-    """
-    if not src or not out:
-        return out, False
-    want = count_literal_newlines(src)
-    have = count_literal_newlines(out)
-    if want == have:
-        return out, False
-    # 源无字面换行却冒出多个：多为串段，交给上层闸门，不在数量层硬删。
-    # ★ 2.0.25（aera 全量审计）：实测 11 条「源 0 → 译 2」漏过串段闸门
-    # 原样落盘（dm_anomalies_12 等）——模型平白加的断行在游戏里把整句
-    # 拆碎。少量（≤2 个）时确定性收敛为空格；更多仍交串段闸门点名。
-    if want == 0:
-        if 0 < have <= 2:
-            out2 = out.replace("\\n", " ")
-            while "  " in out2:
-                out2 = out2.replace("  ", " ")
-            return out2, True
-        return out, False
-    # 源有换行、译文全丢或少了：在颜色码切换/句末处补回缺失数量。
-    if have < want:
-        need = want - have
-        # 优先在 $clr_N 颜色码切换处补（动态新闻常是颜色分段）
-        def _add_color(m):
-            nonlocal need
-            if need > 0:
-                need -= 1
-                return "\\n" + m.group(0)
-            return m.group(0)
-        out2 = re.sub(r"\$clr_\d+", _add_color, out)
-        if need > 0:
-            # 其次在句末标点后补
-            def _add_sentence(m):
-                nonlocal need
-                if need > 0:
-                    need -= 1
-                    return m.group(0) + "\\n"
-                return m.group(0)
-            out2 = re.sub(r"(?<=[。！？!?…])", _add_sentence, out2)
-        if need > 0:
-            out2 = "\\n" * need + out2
-        return out2, out2 != out
-    # have > want：收敛多余的换行（删最靠后的空行/连续换行）。
-    # 注意：re.sub 的替换串是模板，"\\n" 会被解释成真实换行——
-    # 必须用 lambda 返回字面 \n，否则收敛反而制造真换行。
-    out2 = out
-    while count_literal_newlines(out2) > want:
-        out2 = re.sub(r"\\n\\n", lambda _m: "\\n", out2, count=1)
-        if "\\n\\n" not in out2:
-            break
-    return out2, out2 != out
 
 
 # B. 大数字/型号保真增强。
 # 源里的「字母-数字型号串」（FNX-45 / MP-153 / P220 等）和年份区间
 # 若被模型整体替换，属于型号篡改，比数字缺失更误导玩家。
-_MODEL_TOKEN_RE = re.compile(r"[A-Za-z]{2,}-?\d{2,4}[A-Za-z]?")
-_YEAR_RANGE_RE = re.compile(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b")
 
 
-def missing_model_tokens(src, out):
-    """返回源文里「明确型号串」在译文中消失的列表（型号被换掉）。
-
-    只取带引号或紧邻武器/物品语义的型号，避免把普通编号当型号。
-    译文里以「译名 + 原型号」形式出现时算保留。
-    """
-    if not src or not out:
-        return []
-    missing = []
-    seen = set()
-    # ★ 2.0.21：色码 %c[r,g,b,a] 内数字不是型号，先剥离再扫（同
-    # missing_big_numbers 的色码豁免口径）。
-    src = re.sub(r"%c\[[^\]]*\]", " ", str(src))
-    for m in _MODEL_TOKEN_RE.finditer(src):
-        tok = m.group(0).strip()
-        if tok in seen or len(tok) < 4:
-            continue
-        seen.add(tok)
-        # 年份区间不算型号
-        if re.fullmatch(r"\d+", tok):
-            continue
-        # ★ 2.0.24（IWP 全量审计 D2）：英文年代短语不是型号——实测
-        # "mid-1990s" 被当型号，译文「1990年代中期」判缺失补出注记。
-        if re.fullmatch(r"(?:early|mid|late)[-\s]?\d{4}s?", tok, re.I):
-            continue
-        # 型号需紧邻引号或武器语境词，减少误报。
-        # ★ 2.0.18：语境窗口从 ±24 放宽到 ±48 + 全源兜底——实测武器描述
-        # （"derivative of the AK-100 series from the AK-74M, chambered
-        # for the M43 cartridge"）型号与语境词相距很远，窄窗口漏掉
-        # AK-100→AK-74M 的型号替换。
-        s, e = m.span()
-        near = src[max(0, s - 48):min(len(src), e + 48)]
-        if not (any(q in near for q in "\"'«“”")
-                or re.search(r"rifle|pistol|gun|shotgun|carbine|weapon|ammo|"
-                             r"cartridge|sniper|caliber|series|barrel|"
-                             r"караб|пистол| оружи|патрон",
-                             near if near else src, re.I)):
-            continue
-        if tok not in out:
-            missing.append(tok)
-    return missing
 
 
-class TranslationJob(object):
-    # 场景上下文/风格提示必须是线程局部的：多路并发时各 worker 不能互相覆盖。
-    @property
-    def _ctx_hint(self):
-        return getattr(self._tls, "ctx", "")
-
-    @_ctx_hint.setter
-    def _ctx_hint(self, value):
-        self._tls.ctx = value or ""
-
-    @property
-    def _style_hint(self):
-        return getattr(self._tls, "style", "dialogue")
-
-    @_style_hint.setter
-    def _style_hint(self, value):
-        self._tls.style = value or "dialogue"
-
+class TranslationJob(OfflineTranslationJob):
     def __init__(self, parser, server, in_dir, mode, src_lang, tgt_lang,
                  reuse_dir=None, glossary=None, output_anyway=False,
                  force_glossary=True, ctx_size=8192, out_dir=None,
@@ -5273,3865 +3173,33 @@ class TranslationJob(object):
                  translate_literals=False, auto_session_terms=False,
                  session_cache_dir=None, tm_lite=True, parallel=1,
                  pending_files=0, freq_names=True):
-        self.p = parser
-        self.srv = server
-        self.in_dir = in_dir
-        self.mode = mode
-        self.src_lang = src_lang
-        self.tgt = tgt_lang
-        self.reuse_dir = reuse_dir
-        self.glossary = dict(glossary or {})
-        term_layers = load_term_layers()
-        self.gloss_names = set(term_layers["names"])
-        # 百科/任务/界面/新闻只做软提示：精确命中才注入，不强制替换。
-        self.gloss_soft = set(term_layers.get("reference") or ())
-        self.gloss_variants = dict(term_layers["variants"])
-        self.gloss_case_sensitive = set(term_layers["case_sensitive"])
-        self.gloss_quote_required = set(
-            term_layers.get("quote_required") or ())
-        # 技术精确表只做整条命中；不进入硬词/提示层。
-        for _k, _v in load_technical_exact().items():
-            self.glossary.setdefault(_k, _v)
-        self.output_anyway = output_anyway
-        self.force_glossary = force_glossary
-        self._tls = threading.local()
-        self.dialogue_temp = 0.1
-        self.batch_stats = {"batches": 0, "lines": 0, "failed": 0}
-        self.ctx_size = int(ctx_size)
-        # ★ 2.0.2：路数上限从写死的 4 放宽到 PARALLEL_CAP（与 LlamaServer 同步）。
-        self.parallel = max(1, min(PARALLEL_CAP, int(parallel)))
-        # 多路并发时所有 worker 共享计数/缓存/账本，写操作统一加锁。
-        self._stat_lock = threading.Lock()
-        self._ledger_lock = threading.RLock()
-        self.safe_chars = safe_chunk_chars(self.ctx_size)
-        self.long_chunks = 0
-        # ID 引用层模式：文本正文在 configs/text 的条目里，XML/脚本只放 ID。
-        # 这里只更新条目正文、原样复制引用层，不改写任何 <text>ID</text>。
-        self.reference_mode = bool(reference_mode)
-        self.copy_reference = bool(copy_reference)
-        self.only_referenced = bool(only_referenced)
-        self.protect_proper = bool(protect_proper)
-        self.preview_reference = bool(preview_reference)
-        self._table_entries = {}     # 绝对路径 -> {id: entity}
-        self._id_files = {}          # id -> [绝对路径, ...]
-        # ★ 2.0.2 终检：本次**成功改写过**的文本表（rel 集合）。真正的改写
-        #   收口只有 _write_table_changes / _write_table_as_utf8 两个出口，
-        #   在那里登记，终检只验这几张（原样复制的不用验 XML 结构）。
-        self._audit_tables = set()
-        self._ref_counts = {}        # id -> 引用次数
-        self._ref_files = set()      # 含可解析引用的 XML/脚本
-        self._unresolved = {}        # id -> 次数（索引里找不到）
-        self._localization = {"language": "", "files": []}
-        self._lang_hint = ""
-        self.log = log or (lambda m: None)
-        self.detail = detail or (lambda m: None)
-        self.progress = progress or (lambda d: None)
-        self.cancel = cancel_event
-        # 自动识别出的「整个 MOD 待翻译文件总数」，用于界面计数显示
-        self.pending_files = int(pending_files or 0)
-        self.req_count = 0
-        self.trans_chars = 0
-        # ★ 2.0.3 规则违规遥测：kind -> {hits, retried_ok, fixed,
-        #   kept_first, kept_source}。收尾输出「提示词体检」报告，
-        #   为提示词迭代提供数据（哪条规则被违反最多）。
-        self._audit_stats = {}
-        self.redundant = []
-        self.failed_strings = 0
-        self.empty_files = 0
-        self._past = set()
-        self._temp_clock = 0
-        self.out_dir = out_dir or os.path.join(in_dir, "translated_hy_mt2")
-        self._excluded_paths = set()
-        self.gloss = self._new_gloss_index()
-        # None = 兼容旧 API/测试：所有术语都可用；set = 只在这些硬词上
-        # 强制/提示（UI 传入 termbase 的 canon 层 + 用户自定义层）。
-        self.gloss_hard = (set(hard_glossary_keys)
-                           if hard_glossary_keys is not None else None)
-        self.translate_literals = bool(translate_literals)
-        self.auto_session_terms = bool(auto_session_terms)
-        self.auto_freq_names = bool(freq_names)
-        self.freq_names = {}
-        self.freq_stats = {"candidates": 0, "cached": 0,
-                           "translated": 0, "failed": 0}
-        self.session_cache_dir = session_cache_dir or os.path.join(
-            _DATA_ROOT, "session_terms")
-        self.session_keys = set()
-        # 会话词条只做提示，不参与“整条精确替换”；否则模型生成的坏译名
-        # 会绕过 protect_proper 直接写进术语表。
-        self.session_only_keys = set()
-        self.session_stats = {}
-        self.session_requests = 0
-        # TM-lite：高重复批次内精确复用；缓存只在本次任务内存里。
-        self.tm_lite = bool(tm_lite)
-        self.tm_stats = {"scope": "off", "total": 0, "unique": 0,
-                         "ratio": 0.0, "hits": 0, "saved_chars": 0}
-        self._tm_cache = {}
-        self._tm_global_enabled = False
-        self._tm_local_enabled = False
-        # 完成账本：记录"每个输入文件的指纹 + 输出大小"，取代"输出文件存在就算
-        # 译完"。旧做法在两种真实场景下会静默漏译：①游戏更新给 XML 加了新条目，
-        # ②ltx/cfg 上次中断留下半截输出 —— 两者都会被"存在即跳过"永久保留。
-        self._ledger_path = None
-        self._ledger = {}
-        self._ledger_present = False
-        self._ledger_saved = 0.0
+        super().__init__(
+            parser, server, in_dir, mode, src_lang, tgt_lang,
+            reuse_dir=reuse_dir, glossary=glossary, output_anyway=output_anyway,
+            force_glossary=force_glossary, ctx_size=ctx_size, out_dir=out_dir,
+            log=log, detail=detail, progress=progress, cancel_event=cancel_event,
+            reference_mode=reference_mode, copy_reference=copy_reference,
+            only_referenced=only_referenced, protect_proper=protect_proper,
+            preview_reference=preview_reference,
+            hard_glossary_keys=hard_glossary_keys,
+            translate_literals=translate_literals,
+            auto_session_terms=auto_session_terms,
+            session_cache_dir=session_cache_dir, tm_lite=tm_lite,
+            parallel=parallel, pending_files=pending_files, freq_names=freq_names,
+            termbase=_termbase_store(), data_root=_DATA_ROOT,
+            pipeline_version=PLUGIN_INFO["version"], parallel_cap=PARALLEL_CAP,
+            is_writable=_writable, tm_min_entries=TM_LITE_MIN_ENTRIES,
+            tm_min_ratio=TM_LITE_MIN_RATIO,
+        )
 
-    def _log_progress(self, idx, total, rel):
-        """每 50 个文件记一条 GUI 进度；逐文件明细不再进界面日志。
 
-        实测日志：6122 个文件时逐文件 log 产生近 5000 行、局部 3000 行/秒，
-        而界面每条日志整块重绘 400 行 —— 主线程被占满，窗口像卡死。
-        明细保留在运行日志里（detail），界面只留可读的进度。
-        """
-        if idx == 1 or idx == total or idx % 50 == 0:
-            self.log("进度 %d/%d（%.0f%%）：%s"
-                     % (idx, total, 100.0 * idx / max(total, 1), rel))
 
-    def _cancelled(self):
-        return self.cancel is not None and self.cancel.is_set()
 
-    def _parse(self, fn, *args):
-        """调用 vendor 解析器，并把它的 print 诊断转进详细日志。
 
-        解析器会逐文件打印"用了哪个编码解码"—— 那正是编码猜错时唯一的
-        线索，而 GUI 子系统下 stdout 为 None，不接过来就等于没有。
 
-        同时记录单文件解析耗时：vendor 的 cfgxml 正则曾在一类 <texture>
-        文件上灾难性回溯，一卡就是几十秒且持有 GIL（整个窗口无响应）。
-        修好后仍保留这条"慢文件"证据，下次换别的语料再遇到就能直接定位。
-        """
-        t0 = time.time()
-        with capture_stdout() as cap:
-            result = fn(*args)
-        elapsed = time.time() - t0
-        for line in cap.lines():
-            self.detail("  " + line)
-        if elapsed >= 2.0:
-            name = os.path.basename(str(args[0])) if args else "?"
-            self.detail("  解析耗时 %.1f 秒：%s" % (elapsed, name))
-            if elapsed >= 10.0:
-                self.log("解析耗时异常（%.0f 秒）：%s；如再次出现请反馈该文件"
-                         % (elapsed, name), "warn")
-        return result
 
-    def _warn_mojibake(self, rel, samples):
-        """单字节解码结果疑似乱码时告警（不自动改判，交人工决定）。"""
-        for text in samples:
-            if looks_like_mojibake(text):
-                self.log("⚠ %s 疑为编码误判（乱码特征）：请用「编码转换」页"
-                         "统一转成 UTF-8 后再翻译，否则译文不可用" % rel, "warn")
-                return
 
-    def _read_existing(self, path):
-        """递归读取目录内全部文本 XML 的已有译文（复用/断点）。"""
-        reuse = {}
-        for root, dirs, files in os.walk(path):
-            dirs[:] = [d for d in dirs if not d.startswith(".")]
-            for fn in files:
-                if not fn.lower().endswith(".xml"):
-                    continue
-                full = os.path.join(root, fn)
-                try:
-                    ents = self.p.parse_xray_text_xml(
-                        full, read_encoding_chain(full))
-                except Exception as e:
-                    self.detail("  复用文件跳过：%s（%s: %s）"
-                                % (fn, type(e).__name__, e))
-                    continue
-                for ent in ents:
-                    rec = self.p.getRecommendLangText(ent, self.tgt)[1]
-                    if rec:
-                        reuse[ent.id] = rec
-        return reuse
 
-    def _looks_like_target(self, text):
-        """目标语言为中文时，汉字占**正文**比例高即认为已经是中文。
-
-        不能把 `$level`、`%s`、`$$T1$$` 里的拉丁字母算进分母：实测
-        `$level $kill_seen_z，如同一个潜行者...` 的汉字占比会被压到 0.3
-        以下，已汉化条目被再次送翻，模型把变量名也译成 `$地点`。
-        先剔除占位符、XML 标签，再按剩下的字母计算。
-        """
-        if self.tgt != "chs":
-            return False
-        clean = _RUNTIME_TOKEN_RE.sub("", text or "")
-        clean = re.sub(r"<[^>]+>", "", clean)
-        letters = [c for c in clean if c.isalpha()]
-        if not letters:
-            return False
-        han = sum(1 for c in letters if "\u4e00" <= c <= "\u9fff")
-        # 0.1 而不是 0.3：`测试Taurus Raging Bull左轮手枪` 这类“中文 + 品牌”
-        # 已经是译文，0.3 会把品牌名那点拉丁字母算成“不是中文”，又翻一遍。
-        return han / len(letters) > 0.1
-
-    def _new_gloss_index(self):
-        if not self.glossary:
-            return None
-        return GlossaryIndex(
-            self.glossary, case_sensitive=self.gloss_case_sensitive,
-            variants=self.gloss_variants)
-
-    def _span_context_ok(self, text, start, end, key):
-        """阵营常见词（долг/свобода/монолит）只认引号内的专名用法。
-
-        `долг` 本义是债务/责任，`свобода` 是自由，`монолит` 是整块石料；
-        只有 `"Долга"` 这种引号内的组织名才强制替换，避免把普通名词
-        硬改成“纪律团/自由团/黑石”。
-        """
-        if key not in self.gloss_quote_required:
-            return True
-        return self._inside_quotes(text, start, end)
-
-    @staticmethod
-    def _inside_quotes(text, start, end):
-        """词条是否位于任意引号对内，而不是只贴着引号。
-
-        原文常见 `"Броня Долга"`、`"база Свободы"` 这种引号包住的多词
-        名称：`Долга/Свободы` 不紧贴引号，但仍在引号语境里，应算专名。
-        """
-        for op, cl in (("«", "»"), ("“", "”"), ("‘", "’")):
-            if (text.rfind(op, 0, start) > text.rfind(cl, 0, start)
-                    and text.find(cl, end) != -1):
-                return True
-        for q in ('"', "'"):
-            if text.count(q, 0, start) % 2 == 1 and text.find(q, end) != -1:
-                return True
-        return False
-
-    def _glossary_hits(self, text):
-        """命中的硬术语 + 人物软提示，用于提示块；普通词不注入。
-
-        canon 层与本次 MOD 会话词在前，人物层只作末尾软提示（不强制替换）。
-        人物层按首字母大小写匹配，正文里的 доктор/bar 不会误命中专名。
-        """
-        if self.gloss is None:
-            return []
-        spans = self.gloss.find(text)
-        pairs = [(key, self.gloss._map[key]) for start, end, key in spans
-                 if self._span_context_ok(text, start, end, key)]
-        if self.gloss_hard is None:
-            return pairs
-        hard = [(k, v) for k, v in pairs
-                if k in self.gloss_hard or k in self.session_keys]
-        used = {k for k, _v in hard}
-        names = [(k, v) for k, v in pairs
-                 if k in self.gloss_names and k not in used]
-        used |= {k for k, _v in names}
-        # 软层只提示不强制；长句/过长的百科条目会挤占 240 字符预算，
-        # 直接跳过，让硬词和短专名优先。
-        soft = [(k, v) for k, v in pairs
-                if k in self.gloss_soft and k not in used
-                and len(k) <= 32]
-        return hard + names + soft
-
-    def _glossary_spans(self, text):
-        """命中的硬术语 (start, end, key)，用于强制/切片。"""
-        if self.gloss is None:
-            return []
-        spans = self.gloss.find(text)
-        spans = [h for h in spans
-                 if self._span_context_ok(text, h[0], h[1], h[2])]
-        if self.gloss_hard is None:
-            return spans
-        return [h for h in spans if h[2] in self.gloss_hard]
-
-    # ── TM-lite：高重复批次内的精确复用 ────────────────────────────
-    @staticmethod
-    def _tm_norm(text):
-        """归一化只做空白/换行整理，保留大小写与标点——精确复用不猜语义。"""
-        s = unescape_newlines(str(text or "")).strip()
-        return re.sub(r"[ \t]+", " ", s)
-
-    def _tm_key(self, text, lang):
-        src = self._tm_norm(text)
-        sig = (tuple(sorted(_RUNTIME_TOKEN_RE.findall(src))),
-               src.count("\n"))
-        return (str(lang), len(src), sig, src)
-
-    def _tm_measure(self, values):
-        seen = set()
-        total = 0
-        for value in values:
-            src = self._tm_norm(value)
-            if len(src) < 4:
-                continue
-            total += 1
-            seen.add(src)
-        unique = len(seen)
-        return {"total": total, "unique": unique,
-                "ratio": (1.0 - float(unique) / total) if total else 0.0}
-
-    def _tm_should_enable(self, stats):
-        total = int(stats.get("total") or 0)
-        unique = int(stats.get("unique") or 0)
-        ratio = stats.get("ratio")
-        if ratio is None:
-            ratio = (1.0 - float(unique) / total) if total else 0.0
-        return (self.tm_lite and total >= TM_LITE_MIN_ENTRIES
-                and ratio >= TM_LITE_MIN_RATIO)
-
-    def _tm_enable_global(self, values):
-        """任务级门控：重复率高才跨表复用；否则完全走原路径。"""
-        if not self.tm_lite:
-            return False
-        stats = self._tm_measure(values)
-        self.tm_stats.update(stats)
-        if self._tm_should_enable(stats):
-            self._tm_global_enabled = True
-            self.tm_stats["scope"] = "global"
-            self.log("TM-lite：本批重复率 %.1f%%（%d/%d），启用跨表精确复用"
-                     % (stats["ratio"] * 100, stats["unique"],
-                        stats["total"]), "dim")
-            return True
-        self.log("TM-lite：未启用（重复率 %.1f%%，门槛 %.0f%%；"
-                 "不改变翻译路径）"
-                 % (stats["ratio"] * 100, TM_LITE_MIN_RATIO * 100), "dim")
-        return False
-
-    def _tm_enable_table(self, values, rel):
-        """表级门控：任务级没启用时，只在高重复表内复用。"""
-        self._tm_local_enabled = False
-        if not self.tm_lite or self._tm_global_enabled:
-            return
-        stats = self._tm_measure(values)
-        if not self._tm_should_enable(stats):
-            return
-        self._tm_local_enabled = True
-        self._tm_cache = {}
-        self.tm_stats.update(stats)
-        self.tm_stats["scope"] = "table"
-        self.log("TM-lite：%s 重复率 %.1f%%（%d/%d），表内精确复用"
-                 % (rel, stats["ratio"] * 100, stats["unique"],
-                    stats["total"]), "dim")
-
-    def _tm_lookup(self, text, lang):
-        if not (self._tm_global_enabled or self._tm_local_enabled):
-            return None
-        return self._tm_cache.get(self._tm_key(text, lang))
-
-    def _tm_store(self, text, lang, out):
-        if not (self._tm_global_enabled or self._tm_local_enabled):
-            return
-        src = self._tm_norm(text)
-        if len(src) < 4 or not out or out == text:
-            return
-        if self.tgt == "chs" and not has_cjk(out):
-            return
-        self._tm_cache.setdefault(self._tm_key(text, lang), out)
-
-    def _translate_chunk(self, content, lang, hints, depth=0, note=""):
-        """翻译单个句段：超出该档安全长度时按句切分逐段翻译并拼回，
-        保证不超长、不截断（长文质量保护）。
-
-        depth 用于处理"模型输出被 max_tokens 截断"：收到 OutputTruncated
-        就把该段一分为二重译，最多递归 3 层（宁可多切几刀，也不能把半句
-        译文写进汉化包）。"""
-        if len(content) <= self.safe_chars:
-            try:
-                return self.srv.translate(
-                    content, lang, self.tgt, glossary_hits=hints,
-                    extra_sys=note or None,
-                    context=getattr(self, "_ctx_hint", "") or None,
-                    style=getattr(self, "_style_hint", "dialogue"),
-                    temperature=self._temp_for_style())
-            except OutputTruncated:
-                if depth >= 3 or len(content) < 8:
-                    self.log("  输出被截断且已无法再切分（%d 字符），"
-                             "建议改用更大上下文档位" % len(content), "warn")
-                    raise
-                self.log("  输出被截断，按句再切一次重译（%d 字符）"
-                         % len(content), "warn")
-                return "".join(
-                    self._translate_chunk(seg, lang, hints, depth + 1, note)
-                    for seg in split_long_text(
-                        content, max(4, len(content) // 2)))
-        parts = split_protected(content, self.safe_chars, _ANY_PLACEHOLDER_RE)
-        if len(parts) > 1:
-            with self._stat_lock:
-                self.long_chunks += max(0, len(parts) - 1)
-            self.log("  长文本 %d 字符 → 自动切为 %d 段翻译（%s 上下文窗）"
-                     % (len(content), len(parts), self.ctx_size))
-        return "".join(
-            self._translate_chunk(seg, lang, hints, depth + 1, note)
-            for seg in parts)
-
-    def _translate_segments(self, text, lang, note=""):
-        """整条翻译；占位符在 `_translate_one` 里已 mask，不能在这里按
-        换行/`$$ACTION$$` 再切碎。
-
-        旧实现调用 `cutTextWithSeparator`：它把 `\\n` 当分隔符，多行描述被
-        拆成一段段单独翻译，实测 8 条藏匿点描述发了 56 次请求，行与行之间
-        失去上下文。这里只保留“整条精确命中术语”的快捷路径，其余交给
-        `_translate_chunk`（超长时仍按句切分，保留占位符）。
-        """
-        if not text.strip():
-            return text
-        stripped = text.strip()
-        if (not self.force_glossary and stripped in self.glossary
-                and stripped not in self.session_only_keys):
-            with self._stat_lock:
-                self.req_count += 1
-            return text.replace(stripped, self.glossary[stripped])
-        with self._stat_lock:
-            self.req_count += 1
-            self.trans_chars += len(text)
-        hints = None if self.force_glossary else self._glossary_hits(text)
-        return self._translate_chunk(text, lang, hints, note=note)
-
-    def _temp_for_style(self):
-        if self._style_hint == "label":
-            return 0.0
-        if self._style_hint == "formal":
-            return 0.1
-        return self.dialogue_temp
-
-    def _rule_hit(self, kind, outcome):
-        """规则违规遥测：kind=规则名，outcome=retried_ok/fixed/
-        kept_first/kept_source。线程安全（复用 _stat_lock）。"""
-        with self._stat_lock:
-            s = self._audit_stats.setdefault(kind, {})
-            s["hits"] = s.get("hits", 0) + 1
-            s[outcome] = s.get(outcome, 0) + 1
-
-    def _audit_report(self):
-        """任务收尾的「提示词体检」：按触发次数排序点名最高频违规规则。
-        零违规只落明细日志（GUI 日志风暴防线，T29），有违规才上界面。"""
-        if not self._audit_stats:
-            self.detail("提示词体检：全部规则零违规，内置提示词与规则约束有效")
-            return
-        ranked = sorted(self._audit_stats.items(),
-                        key=lambda kv: -kv[1].get("hits", 0))
-        labels = (("retried_ok", "重试成功"), ("fixed", "自动修复"),
-                  ("kept_first", "保留首译"), ("kept_source", "保留原文"))
-        parts = []
-        for kind, s in ranked:
-            bits = ["%d 次" % s.get("hits", 0)]
-            bits += ["%s %d" % (lab, s[oc]) for oc, lab in labels
-                     if s.get(oc)]
-            parts.append("%s（%s）" % (kind, " / ".join(bits)))
-        self.log("提示词体检：" + "；".join(parts))
-        self.log("最需要关注的规则：%s（触发最多，优先迭代）" % ranked[0][0],
-                 "warn")
-
-    def _translate_one(self, text, lang, context="", style="dialogue"):
-        """翻译一个文本串；运行期占位符先 mask，译后校验并回填。
-
-        校验失败（模型改了/丢了 `$name`、`%s`、`\n` 等）时**保留原文**，
-        绝不把坏译文写进文本表。这是硬约束，不依赖提示词。
-        """
-        # ★ 2.0.8 源头减险：极短条目（<12 字符，如 "Я не готов."）不注入
-        # 场景上下文。这类条目几乎没有正文压住 prompt 前面的「前一句：…」，
-        # 1.8B 小模型最容易把上下文整段当正文翻出（实测 bar_arena_man_job_172
-        # 被上一条的长译文覆盖）。阈值只取最危险的极短串，正常短对话仍保留
-        # 上下文帮助消歧；其余污染由下面的 bleed 检测+去上下文重试兜住。
-        self._ctx_hint = "" if len((text or "").strip()) < 12 \
-            else (context or "")
-        self._style_hint = style or "dialogue"
-        if lang in ("auto", "text"):
-            lang = detect_text_lang(text) or self._lang_hint or "rus"
-        elif lang in ("rus", "eng"):
-            det = detect_text_lang(text)
-            if det and det != lang:
-                lang = det
-        if lang == self.tgt:
-            return text
-        hit = self._tm_lookup(text, lang)
-        if hit is not None:
-            with self._stat_lock:
-                self.tm_stats["hits"] += 1
-                self.tm_stats["saved_chars"] += len(text)
-            self.detail("  TM-lite 精确复用：%s" % str(text)[:60])
-            return hit
-        normalized = unescape_newlines(text)
-        masked, mapping = mask_runtime_tokens(normalized)
-        if not mapping:
-            out = self._translate_plain(normalized, lang)
-        else:
-            out = self._translate_plain(masked, lang)
-            restored = restore_runtime_tokens(out, mapping)
-            if restored is None:
-                # 颜色控制符（%c[...]）在带术语提示的请求里偶发被模型
-                # 吞掉；先按“逐字保留控制符”重试一次，仍失败才保留原文。
-                try:
-                    retry_raw = self._translate_plain(
-                        masked, lang, note=_PLACEHOLDER_RETRY_NOTE)
-                    retry = restore_runtime_tokens(retry_raw, mapping)
-                except Exception:
-                    retry = None
-                if retry is None:
-                    # ★ 2.0.17 第三级兜底：切短块逐块译（占位符用
-                    # split_protected 保护不被切断），与完整性闸门同一
-                    # 模式。实测动态新闻/物品描述里含 $clr_N、%c[...]、
-                    # %s 的条目模型最容易破坏占位符，旧版在这里整条
-                    # 保留英文——切片能救回大多数。切片也失败才保留原文。
-                    sliced = None
-                    try:
-                        raw = self._force_sliced(masked, lang,
-                                                 note=_PLACEHOLDER_RETRY_NOTE)
-                        sliced = restore_runtime_tokens(raw, mapping) \
-                            if raw is not None else None
-                    except Exception:
-                        sliced = None
-                    if sliced is not None:
-                        self.detail("  运行占位符被破坏，切片翻译成功：%s"
-                                    % str(text)[:50])
-                        self._rule_hit("占位符保留", "sliced_ok")
-                        out = sliced
-                    else:
-                        self.detail("  运行占位符未原样保留，保留原文：%s"
-                                    % str(text)[:60])
-                        self._rule_hit("占位符保留", "kept_source")
-                        return text
-                else:
-                    self.detail("  控制符未保留，已按逐字保留要求重试：%s"
-                                % str(text)[:50])
-                    self._rule_hit("占位符保留", "retried_ok")
-                    out = retry
-            else:
-                out = restored
-        if looks_like_prompt_echo(out, normalized):
-            self.detail("  模型回显提示词，保留原文：%s" % str(text)[:60])
-            self._rule_hit("提示词回显", "kept_source")
-            return text
-        # ★ 2.0.8 上下文串入闸门：模型把「前一句/后一句」上下文当正文翻出，
-        # 或极短源文吐出超长段落（上一条译文）。这些标签/段落绝不属于本条
-        # 译文。去掉上下文重译一次（清 _ctx_hint，否则重试仍带同一上下文）；
-        # 仍异常则保留原文，绝不把相邻条目的译文写进本条。
-        if looks_like_context_bleed(normalized, out):
-            self.detail("  上下文串入译文，去掉上下文重译：%s"
-                        % str(text)[:60])
-            saved_ctx = self._ctx_hint
-            self._ctx_hint = ""
-            try:
-                if mapping:
-                    retry_raw = self._translate_plain(masked, lang)
-                    retry_ctx = restore_runtime_tokens(retry_raw, mapping)
-                else:
-                    retry_ctx = self._translate_plain(normalized, lang)
-            except Exception:
-                retry_ctx = None
-            if retry_ctx and not looks_like_prompt_echo(retry_ctx, normalized) \
-                    and not looks_like_context_bleed(normalized, retry_ctx):
-                self.detail("  去上下文重译成功：%s" % str(text)[:50])
-                self._rule_hit("上下文串入", "retried_ok")
-                out = retry_ctx
-            else:
-                # ★ 2.0.25（aera 全量审计 D12 签名②）：去上下文重译仍串入
-                # 时不再直接保留原文——先试切片强译（实测 camelbak 描述
-                # 341 字符因此整条漏译）。切片结果同样过串入检测。
-                sliced_ctx = None
-                try:
-                    raw = self._force_sliced(masked, lang)
-                    sliced_ctx = restore_runtime_tokens(raw, mapping) \
-                        if (raw is not None and mapping) else raw
-                except Exception:
-                    sliced_ctx = None
-                if (sliced_ctx and not looks_like_prompt_echo(sliced_ctx, normalized)
-                        and has_cjk(sliced_ctx)
-                        and not looks_like_context_bleed(normalized,
-                                                         sliced_ctx)):
-                    self.detail("  去上下文重译仍串入，切片强译成功：%s"
-                                % str(text)[:50])
-                    self._rule_hit("上下文串入", "sliced_ok")
-                    out = sliced_ctx
-                else:
-                    self.detail("  去上下文重译仍异常，保留原文：%s"
-                                % str(text)[:60])
-                    self._rule_hit("上下文串入", "kept_source")
-                    return text
-        # 残留源词确定性替换：模型把专名原样保留时，直接按词库换掉；
-        # 不调用模型，也不改动句子其它部分。替换后再看是否还残留俄文。
-        out = self._repair_residual_source_terms(normalized, out)
-        out = self._repair_residual_latin_names(normalized, out)
-        out = self._repair_known_semantic_terms(normalized, out, lang)
-        if self._style_hint == "dialogue" and has_cjk(out):
-            out = style_cleanup_cn(out)
-        # 多行保真：模型偶尔把整段合并成一行；带明确数量再试一次。
-        source_nl = normalized.count("\n")
-        if source_nl and out.count("\n") != source_nl:
-            note = ("原文有 %d 个换行，必须输出 %d 个换行，逐行对应；"
-                    "不得合并段落，也不得多加空行。" % (source_nl, source_nl))
-            try:
-                if mapping:
-                    retry_raw = self._translate_plain(
-                        masked, lang, note=note)
-                    retry = restore_runtime_tokens(retry_raw, mapping)
-                else:
-                    retry = self._translate_plain(
-                        normalized, lang, note=note)
-            except Exception:
-                retry = None
-            if retry and not looks_like_prompt_echo(retry, normalized) \
-                    and retry.count("\n") == source_nl:
-                self.detail("  换行数不符，已按原文段数重试：%s"
-                            % str(text)[:50])
-                self._rule_hit("换行保真", "retried_ok")
-                out = retry
-            else:
-                fixed = restore_linebreaks(out, source_nl)
-                if fixed != out:
-                    self.detail("  换行数不符（%d→%d），按句末标点补回"
-                                % (source_nl, out.count("\n")))
-                    self._rule_hit("换行保真", "fixed")
-                    out = fixed
-                else:
-                    self.detail("  换行数与原文不一致（%d→%d），保留首次译文"
-                                % (source_nl, out.count("\n")))
-                    self._rule_hit("换行保真", "kept_first")
-        # ★ 2.0.3 长度比闸门：原文较长而译文长度比异常，多半是漏译
-        # （模型只翻了前半句）或过度扩写。带针对性要求重试一次；
-        # 仍异常则保留首次译文（漏译的译文仍比俄文原文强，不回退原文）。
-        # 短文本（<40 字符或可译词 <4）噪声大，不检；短标签不检。
-        #
-        # ★ 2.0.7 下限按语言对：俄→中天然压缩（西里尔 2 字节/字符、中文
-        # 信息密度高），实测bio表 0.24~0.35 全是正确译文；旧下限 0.30
-        # 把 77 条正确译文判成漏译、各白跑一次重试。英→中类似。
-        # 同语系/中→外维持 0.30。上限 2.0 不变（扩写仍要抓）。
-        _to_zh = self.tgt in ("zh", "chs", "zh-CN", "zh-Hans", "简体中文",
-                              "中文", "chs")
-        _low_ratio = 0.15 if (_to_zh and lang in ("rus", "eng", "ukr", "auto",
-                                                  "text")) else 0.30
-        if (self._style_hint != "label" and len(normalized.strip()) >= 40
-                and len(re.findall(r"[а-яёА-ЯЁ]{2,}|[A-Za-z]{2,}",
-                                   normalized)) >= 4):
-            src_len = max(1, len(normalized.strip()))
-            ratio = len(out.strip()) / src_len
-            # 漏译的真正特征：译文短到几乎没内容（<12 字符），无论语言对
-            # 都要抓；否则用语言对下限。
-            if ratio < _low_ratio and len(out.strip()) < 12 \
-                    or not (_low_ratio <= ratio <= 2.0):
-                note = ("译文长度与原文严重不符，疑似漏译或过度扩写；"
-                        "逐句对照原文完整翻译，不增译、不漏译、不概括。")
-                try:
-                    if mapping:
-                        retry_raw = self._translate_plain(
-                            masked, lang, note=note)
-                        retry = restore_runtime_tokens(retry_raw, mapping)
-                    else:
-                        retry = self._translate_plain(
-                            normalized, lang, note=note)
-                except Exception:
-                    retry = None
-                ok_ratio = False
-                if retry and not looks_like_prompt_echo(retry, normalized) \
-                        and _low_ratio <= len(retry.strip()) / src_len <= 2.0:
-                    ok_ratio = True
-                if ok_ratio:
-                    self.detail("  译文长度比异常（%.2f），已按完整对照重试：%s"
-                                % (ratio, str(text)[:50]))
-                    self._rule_hit("长度比（漏译/扩写）", "retried_ok")
-                    out = retry
-                else:
-                    self.detail("  译文长度比异常（%.2f），重试未恢复，"
-                                "保留首次译文：%s"
-                                % (ratio, str(text)[:50]))
-                    self._rule_hit("长度比（漏译/扩写）", "kept_first")
-        # ★ 2.0.9 数字保真闸门：源文的大额数字（金额/年份/坐标/密码）必须在
-        # 译文中原样出现（含千分位或中文万/千计数）。实测源文 30000 卢布被
-        # 译成 15,000，报酬腰斩。带“逐字保留数字”要求重试一次；仍缺则保留
-        # 原文——错误的金额比未翻译的俄文更有害，原文至少不会误导玩家。
-        if _to_zh:
-            _missed = missing_big_numbers(normalized, out)
-            if _missed:
-                self.detail("  译文大额数字缺失/被改（%s），按逐字保留重试：%s"
-                            % (",".join(_missed[:4]), str(text)[:50]))
-                note = ("原文中的数字（尤其是金额、年份、坐标、密码）必须"
-                        "逐字保留，不得换算、四舍五入或改写；"
-                        "例如 30000 就写 30000，不要写成其它数字。")
-                try:
-                    if mapping:
-                        retry_raw = self._translate_plain(
-                            masked, lang, note=note)
-                        retry_num = restore_runtime_tokens(retry_raw, mapping)
-                    else:
-                        retry_num = self._translate_plain(normalized, lang,
-                                                          note=note)
-                except Exception:
-                    retry_num = None
-                still = missing_big_numbers(normalized, retry_num) \
-                    if retry_num else _missed
-                if retry_num and not looks_like_prompt_echo(retry_num, normalized) \
-                        and not still:
-                    self.detail("  数字保真重试成功：%s" % str(text)[:50])
-                    self._rule_hit("数字保真", "retried_ok")
-                    out = retry_num
-                else:
-                    # ★ 2.0.12：不再整段回退原文。重试仍缺数字时，保留已
-                    # 译好的中文正文，仅把缺失数字按原值补进去——一整段
-                    # 看不懂的外文比一个数字缺失严重得多。仅当译文根本
-                    # 没有中文（完全没翻）才回退原文。
-                    patched = patch_missing_numbers(
-                        normalized, out,
-                        skip=missing_model_tokens(normalized, out))
-                    if patched and patched != out:
-                        self.detail("  数字保真重试仍缺（%s），已补数字保留译文：%s"
-                                    % (",".join(still[:4]), str(text)[:50]))
-                        self._rule_hit("数字保真", "fixed")
-                        out = patched
-                    else:
-                        self.detail("  数字保真重试仍缺失（%s），保留原文：%s"
-                                    % (",".join(still[:4]), str(text)[:50]))
-                        self._rule_hit("数字保真", "kept_source")
-                        return text
-        # 粗口保真闸门：原文有脏话/辱骂/威胁，译文却完全软化时，带
-        # “保留同等力度”的补充要求重试一次；仍软化则保留第一次结果。
-        if has_source_profanity(normalized) and not has_zh_profanity(out):
-            try:
-                if mapping:
-                    retry_raw = self._translate_plain(
-                        masked, lang, note=_PROFANITY_RETRY_NOTE)
-                    retry = restore_runtime_tokens(retry_raw, mapping)
-                else:
-                    retry = self._translate_plain(
-                        normalized, lang, note=_PROFANITY_RETRY_NOTE)
-            except Exception:
-                retry = None
-            if retry and not looks_like_prompt_echo(retry, normalized) \
-                    and has_zh_profanity(retry):
-                self.detail("  粗口被软化，已按原文力度重试：%s"
-                            % str(text)[:50])
-                self._rule_hit("粗口力度", "retried_ok")
-                out = retry
-            else:
-                self._rule_hit("粗口力度", "kept_first")
-        # 完整性闸门：源文有可译内容，模型却原样回显/输出英文时重试一次。
-        # 不处理纯型号（FX / ППШ-41）和无空格缩写，避免无意义请求。
-        if (not has_cjk(out) and not has_cjk(text)
-                and (re.search(r"[a-zа-яё]{2,}", text)
-                     or " " in text.strip())):
-            note = ("必须译成简体中文，不要保留英文或俄文原文；"
-                    "人名音译，物品/任务按上下文意译。")
-            try:
-                if mapping:
-                    retry_raw = self._translate_plain(
-                        masked, lang, note=note)
-                    retry = restore_runtime_tokens(retry_raw, mapping)
-                else:
-                    retry = self._translate_plain(
-                        normalized, lang, note=note)
-            except Exception:
-                retry = None
-            if retry and not looks_like_prompt_echo(retry, normalized) \
-                    and has_cjk(retry):
-                self.detail("  译文无中文，已按完整性要求重试：%s"
-                            % str(text)[:50])
-                self._rule_hit("完整性（无中文）", "retried_ok")
-                out = retry
-            else:
-                # ★ 2.0.13 第三级兜底：整段回显时强制切成短块逐块译。
-                # 旧版到这里直接 kept_first，长英文句（如 dm_anomalies_13
-                # 341 字符）就整段不翻。只有切片也失败才保留原文。
-                sliced = None
-                try:
-                    if mapping:
-                        raw = self._force_sliced(masked, lang, note=note)
-                        sliced = restore_runtime_tokens(raw, mapping) \
-                            if raw is not None else None
-                    else:
-                        sliced = self._force_sliced(normalized, lang,
-                                                    note=note)
-                except Exception:
-                    sliced = None
-                if sliced and not looks_like_prompt_echo(sliced, normalized) \
-                        and has_cjk(sliced):
-                    self.detail("  译文无中文，切片强制翻译成功：%s"
-                                % str(text)[:50])
-                    self._rule_hit("完整性（无中文）", "sliced_ok")
-                    out = sliced
-                elif len(normalized.strip()) <= 48:
-                    # ★ 2.0.24（IWP 全量审计 D5）：短名回显第 4 级兜底。
-                    # 成就名/绰号/军衔名（Rag and Bone、Lt-Colonel Shulga）
-                    # 对「翻译这句话」类指令持续回显（实测 187 条）——改发
-                    # 「定名」指令（要求给出中文译名，而非翻译整句）再试
-                    # 一次；仍回显才保留原文。通用规则，不依赖具体 MOD。
-                    _name_note = ("输入是游戏内的名称（成就、人物、物品、"
-                                  "地点、组织）。为该名称给出简洁的中文译名"
-                                  "（音译或意译均可），不要解释，不要原样"
-                                  "保留英文或俄文。")
-                    nm = None
-                    try:
-                        if mapping:
-                            raw = self._translate_plain(masked, lang,
-                                                         note=_name_note)
-                            nm = restore_runtime_tokens(raw, mapping)
-                        else:
-                            nm = self._translate_plain(normalized, lang,
-                                                       note=_name_note)
-                    except Exception:
-                        nm = None
-                    if (nm and not looks_like_prompt_echo(nm, normalized)
-                            and has_cjk(nm)
-                            and nm.strip() != normalized.strip()):
-                        self.detail("  短名回显，已按定名指令给出译名：%s"
-                                    % str(text)[:50])
-                        self._rule_hit("完整性（无中文）", "named_ok")
-                        out = nm
-                    else:
-                        self._rule_hit("完整性（无中文）", "kept_first")
-                else:
-                    self._rule_hit("完整性（无中文）", "kept_first")
-        # 残留俄文闸门：中文译文里还夹着西里尔词，通常是引号内的格变专名
-        # 被模型当成不可译名原样保留。带“引号内也要译”要求重试一次；
-        # 仍残留则保留首次译文，不强行音译未知专名。
-        residual = _CYR_WORD_RE.findall(out)
-        if has_cjk(out) and residual:
-            note = _RESIDUAL_CYRILLIC_NOTE % "、".join(
-                list(dict.fromkeys(residual))[:3])
-            try:
-                if mapping:
-                    retry_raw = self._translate_plain(
-                        masked, lang, note=note)
-                    retry = restore_runtime_tokens(retry_raw, mapping)
-                else:
-                    retry = self._translate_plain(
-                        normalized, lang, note=note)
-            except Exception:
-                retry = None
-            if retry and not looks_like_prompt_echo(retry, normalized) \
-                    and has_cjk(retry) and not _CYR_WORD_RE.search(retry):
-                self.detail("  译文残留俄文，已按引号内也译重试：%s"
-                            % str(text)[:50])
-                self._rule_hit("残留源文", "retried_ok")
-                out = retry
-            else:
-                self._rule_hit("残留源文", "kept_first")
-        # ★ 2.0.13 确定性后修复（零模型请求）：圆点注入 + 冠词粘连。
-        # 这些是模型的格式噪声，用源文比对即可确定性清除，不必重译整段。
-        cleaned, bullet_fixed = clean_injected_bullets(normalized, out)
-        if bullet_fixed:
-            self.detail("  清除模型注入圆点：%s" % str(text)[:50])
-            self._rule_hit("圆点注入", "fixed")
-            out = cleaned
-        cleaned2, article_fixed = clean_stuck_article(out)
-        if article_fixed:
-            self.detail("  剥离粘连冠词：%s" % str(text)[:50])
-            self._rule_hit("冠词粘连", "fixed")
-            out = cleaned2
-        # ★ 2.0.14 确定性后修复（零模型请求）：标点规范化 + 型号/年份保真。
-        if has_cjk(out):
-            out, punct_fixed = normalize_cn_punctuation(out)
-            if punct_fixed:
-                self._rule_hit("标点规范", "fixed")
-        # 型号被模型换成别的（FNX-45→P220）。★ 2.0.24（IWP 全量审计
-        # D2/D3）：旧实现只补「（原文型号 …）」注记——错误内容原样留在
-        # 成品里还污染玩家阅读。现在先带「型号逐字保留」要求定向重试
-        # 一次，仍失败才句末追加裸型号（无「原文」字样）。
-        miss_model = missing_model_tokens(normalized, out)
-        if miss_model and has_cjk(out):
-            _model_note = ("武器/物品型号（如 AK-100、FNX-45）必须原样"
-                           "保留，不得替换为其他型号、省略或换算。")
-            retried = None
-            try:
-                if mapping:
-                    raw = self._translate_plain(masked, lang,
-                                                note=_model_note)
-                    retried = restore_runtime_tokens(raw, mapping)
-                else:
-                    retried = self._translate_plain(normalized, lang,
-                                                    note=_model_note)
-            except Exception:
-                retried = None
-            if (retried and not looks_like_prompt_echo(retried, normalized)
-                    and has_cjk(retried)
-                    and not missing_model_tokens(normalized, retried)):
-                retried, _ = normalize_cn_punctuation(retried)
-                self.detail("  型号保真重试成功：%s" % str(text)[:50])
-                self._rule_hit("型号保真", "retried_ok")
-                out = retried
-            else:
-                out = out.rstrip() + "（%s）" % "、".join(miss_model[:3])
-                self._rule_hit("型号保真", "fixed")
-                self.detail("  型号被替换且重试仍失败，已补回型号：%s"
-                            % "、".join(miss_model[:3]))
-        # ★ 2.0.24（IWP 全量审计 D10）：半音译粘连闸门。模型把专名音译
-        # 一半、原文留一半（「克里门enko队长」「Tkachenko将军」
-        # 「$clr_2We正看到」），词库回填要求整词边界、残留西里尔闸门不认
-        # 拉丁碎片，这类残词此前完全无人拦。带「整词音译」指令重试一次；
-        # 仍粘连则保留现译文只记规则命中——碎片句仍比整段原文可读，
-        # 且已在终检点名清单里供人工复核。
-        if _to_zh and has_cjk(out):
-            glue = find_glue_residue(out)
-            if glue:
-                _glue_note = ("译文里出现了音译一半、原文留一半的粘连词"
-                              "（如「克里门enko」）。人名、绰号、术语要么"
-                              "整体音译成中文，要么整词保留原文并加空格，"
-                              "禁止字母直接贴着汉字。")
-                retried = None
-                try:
-                    if mapping:
-                        raw = self._translate_plain(masked, lang,
-                                                    note=_glue_note)
-                        retried = restore_runtime_tokens(raw, mapping)
-                    else:
-                        retried = self._translate_plain(normalized, lang,
-                                                        note=_glue_note)
-                except Exception:
-                    retried = None
-                if (retried and not looks_like_prompt_echo(retried, normalized)
-                        and has_cjk(retried)
-                        and not find_glue_residue(retried)):
-                    self.detail("  粘连残词（%s），已按整词音译重试：%s"
-                                % ("、".join(glue), str(text)[:50]))
-                    self._rule_hit("粘连残词", "retried_ok")
-                    out = retried
-                else:
-                    self._rule_hit("粘连残词", "kept_first")
-                    self.detail("  粘连残词重试仍失败：%s | %s"
-                                % ("、".join(glue), str(text)[:50]))
-        # ★ 2.0.18 出口级换行对齐：换行闸门在流程前段，其后数字/完整性/
-        # 残留闸门的重试可能再次破坏换行（实测 marsh 背景段 4→2 行）。
-        # 在写回前做最后一次对齐，保证任何闸门都破坏不了换行结构。
-        if source_nl and out.count("\n") != source_nl:
-            realigned = restore_linebreaks(out, source_nl)
-            if realigned != out:
-                self.detail("  出口换行对齐（%d→%d）：%s"
-                            % (out.count("\n"), source_nl, str(text)[:50]))
-                self._rule_hit("出口换行对齐", "fixed")
-                out = realigned
-        final = escape_newlines(out)
-        # C. 字面 \n 保真：源有字面换行而译文吞成空格/多加时，按源数量对齐。
-        final, nl_fixed = reconcile_literal_newlines(text, final)
-        if nl_fixed:
-            self._rule_hit("字面换行保真", "fixed")
-            self.detail("  字面换行数不符，已按原文对齐：%s"
-                        % str(text)[:50])
-        if looks_like_context_bleed(normalized, unescape_newlines(final)):
-            self.failed_strings += 1
-            self._rule_hit("重试结果串段", "blocked")
-            self.detail("  重试结果仍混入其它段落，保留原文：%s"
-                        % str(text)[:50])
-            final = text
-        elif not runtime_tokens_match(text, final):
-            self.failed_strings += 1
-            self._rule_hit("运行期标记计数不一致", "blocked")
-            self.detail("  运行期标记校验失败，保留原文：%s" % str(text)[:50])
-            final = text
-        else:
-            role_issues = semantic_role_issues(text, final, lang)
-            if role_issues:
-                self.failed_strings += 1
-                self._rule_hit("语义方向冲突", "blocked")
-                self.detail("  语义方向校验失败（%s），保留原文：%s"
-                            % ("、".join(role_issues), str(text)[:50]))
-                final = text
-        self._tm_store(normalized, lang, final)
-        return final
-
-    def _force_sliced(self, text, lang, note=""):
-        """★ 2.0.13 未翻译兜底：把整段强制切成短块逐块翻译。
-
-        完整性闸门重试仍无中文时说明模型把整段英文原样回显——整段越长越
-        容易回显。这里无视 safe_chars 强行按句切成 ≤100 字符的小块，每块
-        单独请求（短句翻译成功率高得多），拼回。占位符用 split_protected
-        保护不被切断。任一块仍是纯英文则整条判失败（返回 None），交回原文。
-        """
-        if not text or not text.strip():
-            return None
-        parts = split_protected(text, 100, _PLACEHOLDER_RE)
-        if len(parts) <= 1 and len(text) <= 100:
-            # 本来就是短句还回显，切片也帮不上，直接失败
-            return None
-        pieces = []
-        for seg in parts:
-            try:
-                got = self._translate_segments(seg, lang, note=note)
-            except Exception:
-                return None
-            if not got or not has_cjk(got):
-                return None      # 有一块没译出，整条不算成功
-            pieces.append(got)
-        return "".join(pieces) if pieces else None
-
-    def _translate_plain(self, text, lang, note=""):
-        """翻译一个文本串；强制术语模式下整体翻译后回填指定译名。"""
-        if lang == self.tgt:
-            return text
-        if not self.glossary:
-            return self._translate_segments(text, lang, note=note)
-        if self.force_glossary and self.gloss is not None:
-            return self._translate_force(text, lang, note=note)
-        return self._translate_segments(text, lang, note=note)
-
-    @staticmethod
-    def _inline_term_value(text, start, end, value):
-        """源文本身在引号内时，去掉词条目标的外层引号，避免““纪律团””。"""
-        v = str(value)
-        quotes = "\"'«»“”‘’"
-        if (start > 0 and end < len(text)
-                and text[start - 1] in quotes and text[end] in quotes
-                and len(v) >= 2 and v[0] in quotes and v[-1] in quotes):
-            return v[1:-1]
-        return v
-
-    def _translate_sliced(self, text, lang, note=""):
-        """旧的强制术语做法：把术语之间的片段**各自**送翻，术语直接拼接。
-
-        保留是为了兜底（占位符法校验不过时回退到这里）。实测这条路径在
-        一句含多个术语时句子质量差：片段之间没有上下文，会产出
-        「去那里西德洛维奇，拿去吧战利品，然后——神器并且进入区域。」这种
-        拼接感很强的译文，引号与标点也会被打散。
-        """
-        out = []
-        last = 0
-        for start, end, key in self._glossary_spans(text):
-            if start > last:
-                out.append(self._translate_segments(
-                    text[last:start], lang, note=note))
-            out.append(self._inline_term_value(
-                text, start, end, self.glossary[key]))
-            last = end
-        if last < len(text):
-            out.append(self._translate_segments(
-                text[last:], lang, note=note))
-        return "".join(out) if out else text
-
-    def _repair_residual_source_terms(self, src, out):
-        """A 译文里仍原样留着源文术语时，按词库直接替换，不调用模型。
-
-        只处理 hard canon 且通过引号/大小写策略的 span；替换不改动其它
-        文字、标点或换行。比整条重译零风格风险，专门兜住 `"Автомобилист"`
-        这类模型当成专名保留的情况。
-        """
-        if not src or not out or self.gloss is None:
-            return out
-        spans = self._glossary_spans(src)
-        if not spans:
-            return out
-        quotes = "\"'«»“”‘’"
-        for start, end, key in spans:
-            term = src[start:end]
-            value = self.glossary.get(key)
-            if not term or value is None:
-                continue
-            # 只处理真正的俄文词；拉丁型号（damper.sys、AK-74）留在代码/文件名里，
-            # 不能因为词库里有 damper→阻尼器 就把 damper.sys 改成阻尼器.sys。
-            if not _CYR_WORD_RE.search(term):
-                continue
-            if re.search(r"[\\/]", term) or re.search(
-                    r"\.[A-Za-z0-9]{1,5}$", term):
-                continue
-            v = str(value)
-            if (self._inside_quotes(src, start, end) and len(v) >= 2
-                    and v[0] in quotes and v[-1] in quotes):
-                v = v[1:-1]
-            if not v or v == term or term not in out:
-                continue
-            pattern = re.compile(
-                r"(?<![А-Яа-яЁё])%s(?![А-Яа-яЁё])" % re.escape(term))
-            out2 = pattern.sub(lambda _m: v, out)
-            if out2 != out:
-                self.detail("  残留源词按词库替换：%s → %s"
-                            % (term, v))
-                out = out2
-        return out
-
-    def _repair_residual_latin_names(self, src, out):
-        """★ 2.0.14 英文/拉丁专名残留回填（零模型请求，通用型）。
-
-        模型常把句子中间的人名/绰号原样保留（「Nimble 和 Sidorovich」），
-        而词库里明明有标准译名（机灵鬼/西德洛维奇）。旧版
-        `_repair_residual_source_terms` 只处理俄文（`_CYR_WORD_RE`），
-        拉丁专名全部漏网。这里按词库把译文里残留的英文专名替换为中文译名。
-
-        严格防误伤（词库含大量通用词）：
-        - 只处理词库译名确实含中文的（音译/意译专名），译名是英文原样的跳过；
-        - 词长 >= 4 且首字母大写（或是含空格的多词人名），排除纯技术码；
-        - 排除含数字/点/斜杠的型号、路径、扩展名；
-        - 词边界锚定，只替换译文里仍以原英文形态残留的（已译的不动）。
-        ★ 2.0.15 两处扩展：
-        - 词条层不再限于 names 层：异常/地点/物品等专名（whirligig→旋转木马）
-          同样回填，防误伤由「译名含中文 + 首字母大写 + 词边界」继续保证；
-        - 允许复数/所有格后缀（Whirligigs / Jupiter’s）：中文无复数，
-          整体替换为译名，后缀一并吃掉。
-        """
-        if not src or not out or self.gloss is None or not self.gloss_names:
-            return out
-        # 从源文里找命中的专名 span（用 gloss.find，与硬词同一套索引）
-        spans = self.gloss.find(src)
-        if not spans:
-            return out
-        quotes = "\"'«»“”‘’"
-        for start, end, key in spans:
-            term = src[start:end]
-            if len(term) < 4:
-                continue
-            # 拉丁专名：全 ASCII 字母/空格/连字符，首字母大写；排除技术码
-            if not re.fullmatch(r"[A-Za-z][A-Za-z'’\- ]*", term):
-                continue
-            # ★ 2.0.15：首字母小写也放行——只要词库刻意收录了该小写词条
-            # （如 whirligig→旋转木马），说明它是专名而非普通词。
-            if not (term[0].isupper() or " " in term
-                    or (key[:1] and key[0].islower())):
-                continue
-            value = self.glossary.get(key)
-            if value is None:
-                continue
-            v = str(value)
-            # 译名必须含中文，且不与原词相同（避免把 "AK-74" 换自己）
-            if not has_cjk(v) or v == term:
-                continue
-            if (self._inside_quotes(src, start, end) and len(v) >= 2
-                    and v[0] in quotes and v[-1] in quotes):
-                v = v[1:-1]
-            # ★ 2.0.15 允许可选复数/所有格后缀（中文无复数，整体替换）；
-            # 模型常改变专名大小写（源 whirligig → 译 Whirligigs），用 re.I。
-            pat_str = (r"(?<![A-Za-z])%s(?:s|’s|'s)?(?![A-Za-z])"
-                       % re.escape(term))
-            # 只替换译文里仍以原英文形态残留的（词边界）
-            if not re.search(pat_str, out, re.I):
-                continue
-            pattern = re.compile(pat_str, re.I)
-            out2 = pattern.sub(lambda _m: v, out)
-            if out2 != out:
-                self.detail("  残留英文专名按词库替换：%s → %s"
-                            % (term, v))
-                out = out2
-        return out
-
-    def _repair_known_semantic_terms(self, src, out, lang=""):
-        """英文源里两个已知语义错译的定点修复。
-
-        Controller 在 STALKER 里是脑波怪，不是“控制器”；Freedom 是
-        自由团，不是“自由派”。只在英文源、且源文确实出现该词时修，
-        不改中文里正常的“控制器/自由”用法。
-        """
-        if not src or not out or lang != "eng":
-            return out
-        low = src.lower()
-        if re.search(r"(?<![A-Za-z])controllers?(?![A-Za-z])", low):
-            out = re.sub(r"控制者|控制器", "脑波怪", out)
-        if re.search(r"(?<![A-Za-z])Freedom(?![A-Za-z])", src) or "freedom faction" in low:
-            out = re.sub(r"自由派(?:团体|势力|派别|阵营|组织)?",
-                         "“自由团”", out)
-        return out
-
-    def _translate_force(self, text, lang, note=""):
-        """强制术语：先把术语换成占位符，**整串一次翻译**，再把占位符回填成
-        词库指定译名。
-
-        为什么不用旧做法：旧做法按术语切片，术语之间的每段各自翻译 —— 一句里
-        出现 3 个术语就是 4 次请求，片段之间没有上下文，译文会有拼接感、标点与
-        引号被打散（用户实测「非常差」）。改成占位符后整串只翻一次，语序、
-        标点、语气完整；占位符由系统提示词第 1 条要求逐字保留（两档模型实测
-        都能守住），最后回填，术语仍然是 100% 确定。
-        校验不过（占位符丢失/控制符被改）时自动回退旧做法，不会产出坏译文。
-        """
-        hits = self._glossary_spans(text)
-        if not hits:
-            # 无强制术语时仍要透传 note：数字保真/上下文/占位符/换行等
-            # 闸门的重试指令全靠它，漏传会让重试永远无效、整条保留原文。
-            return self._translate_segments(text, lang, note=note)
-        # ★ 2.0.25（aera 全量审计 D12 签名①）：超长多术语条目不走 $$T$$
-        # 占位符法。实测百科长文（800+ 字符、多处色码/换行）里 1.8B 连续
-        # 破坏 $$T1$$，两次重试失败 → 切片兜底的片段占位符也失败 → 整条
-        # 保留原文（15 条百科条目全漏）。长文改走普通整译，术语交译后
-        # 词库回填（_repair_residual_source_terms/_latin_names 实测有效）。
-        if len(text) >= 600:
-            self.detail("  长文多术语，跳过占位符法改普通整译+回填：%s"
-                        % str(text)[:50])
-            return self._translate_segments(text, lang, note=note)
-
-        mapping = {}
-        parts = []
-        last = 0
-        for i, (start, end, key) in enumerate(hits, 1):
-            ph = "$$T%d$$" % i
-            mapping[ph] = self._inline_term_value(
-                text, start, end, self.glossary[key])
-            parts.append(text[last:start])
-            parts.append(ph)
-            last = end
-        parts.append(text[last:])
-        masked = "".join(parts)
-
-        hard = [pc["content"] for pc in self.p.cutTextWithSeparator(text)
-                if not pc["needTrans"] and pc["content"].strip()]
-
-        try:
-            out = self._translate_masked(masked, lang, note=note)
-        except Exception as e:
-            self.detail("  占位符整译失败（%s: %s），回退到切片方式"
-                        % (type(e).__name__, e))
-            return self._translate_sliced(text, lang, note=note)
-
-        bad = [ph for ph in mapping if out.count(ph) != 1]
-        if bad:
-            self.detail("  占位符未原样保留（%s），回退到切片方式"
-                        % "、".join(bad[:3]))
-            return self._translate_sliced(text, lang, note=note)
-        lost = [h for h in hard if h not in out]
-        if lost:
-            self.detail("  控制符被改动（%s），回退到切片方式"
-                        % "、".join(repr(h) for h in lost[:3]))
-            return self._translate_sliced(text, lang, note=note)
-
-        for ph, val in mapping.items():
-            out = out.replace(ph, val)
-        return out
-
-    def _translate_masked(self, masked, lang, note=""):
-        """把已占位符化的整串交给模型翻一次（超长时按句切分，不丢占位符）。"""
-        with self._stat_lock:
-            self.req_count += 1
-            self.trans_chars += len(masked)
-        if len(masked) <= self.safe_chars:
-            return self.srv.translate(
-                masked, lang, self.tgt, extra_sys=note or None,
-                context=getattr(self, "_ctx_hint", "") or None,
-                style=getattr(self, "_style_hint", "dialogue"),
-                temperature=self._temp_for_style())
-        parts = split_protected(masked, self.safe_chars, _PLACEHOLDER_RE)
-        with self._stat_lock:
-            self.long_chunks += max(0, len(parts) - 1)
-        self.log("  长文本 %d 字符 → 自动切为 %d 段翻译（%s 上下文窗）"
-                 % (len(masked), len(parts), self.ctx_size))
-        return "".join(self._translate_masked(seg, lang, note)
-                       for seg in parts)
-
-
-    def _fallback_done_dir(self):
-        """输入目录不可写（Program Files/只读盘/游戏目录受保护）时，
-        把译文落到本机可变数据目录下，按输入路径派生唯一名。"""
-        safe = re.sub(r'[<>:"/\\|?*]+', "_",
-                      os.path.abspath(self.in_dir)).strip("_")
-        return os.path.join(_DATA_ROOT, "translated_output", safe[-120:])
-
-    def _resolve_done_dir(self, preferred):
-        """确定实际输出目录：首选可写就用；不可写自动回退并明确告知。"""
-        try:
-            if _writable(preferred):
-                return preferred
-        except Exception:
-            pass
-        fb = self._fallback_done_dir()
-        os.makedirs(fb, exist_ok=True)
-        self.log("输出目录不可写（%s），译文改存到：%s"
-                 % (preferred, fb), "warn")
-        return fb
-
-    def _session_tables(self):
-        """当前 MOD 的文本表（兼容 configs/text 与 config/text 两种布局）。"""
-        for root, _dirs, files in self._pruned_walk():
-            for fn in files:
-                if not fn.lower().endswith(".xml"):
-                    continue
-                rel = os.path.relpath(os.path.join(root, fn), self.in_dir)
-                low = rel.lower().replace(os.sep, "/")
-                if not (low.startswith("configs/text/")
-                        or low.startswith("config/text/")):
-                    continue
-                if "sgtat_auto_texts" in low or "/___" in low:
-                    continue
-                yield rel, os.path.join(root, fn)
-
-    def _session_candidates(self):
-        """抽取名字型候选；返回 {lower: (source, category, lang, rel, id)}。"""
-        core = {k.lower() for k in self.glossary}
-        stop = set(GLOSSARY_HINT_STOPWORDS) | {
-            "нет", "да", "все", "всё", "это", "так", "там", "тут", "очень",
-            "можно", "нужно", "надо", "есть", "был", "была", "были",
-        }
-        cand = {}
-        self._session_core_hits = set()
-        for rel, full in self._session_tables():
-            if self._cancelled():
-                return cand
-            try:
-                ents = self._parse(self.p.parse_xray_text_xml, full,
-                                   read_encoding_chain(full))
-            except Exception:
-                continue
-            for ent in ents:
-                cat = session_category(rel, ent.id)
-                if not cat:
-                    continue
-                lang, src = self._pick_source(ent)
-                if not src or has_cjk(src):
-                    continue
-                bare = session_term_shape(src, cat)
-                if not bare:
-                    continue
-                low = bare.lower()
-                if low in core:
-                    # 核心词已在通用库；只把它登记为“本次 MOD 见过”，
-                    # 让对话里也能作为软提示，不重新翻译、不硬替换。
-                    self._session_core_hits.add(bare)
-                    continue
-                if (low in stop
-                        or looks_like_code_or_debug(rel, bare)
-                        or looks_like_identifier_text(bare)):
-                    continue
-                if low not in cand:
-                    cand[low] = (bare, cat,
-                                 detect_text_lang(bare) or lang or "rus",
-                                 rel, ent.id)
-        order = {"人物与军衔": 0, "阵营与组织": 1, "地点与区域": 2,
-                 "变异生物": 3, "物品·武器·装备·神器": 4,
-                 "成就·称号·属性标签": 5}
-        rows = sorted(cand.values(),
-                      key=lambda x: (order.get(x[1], 9), len(x[0]), x[0]))
-        kept = {}
-        used = {k: 0 for k in _SESSION_LIMITS}
-        for src, cat, lang, rel, eid in rows:
-            if used.get(cat, 0) >= _SESSION_LIMITS.get(cat, 0):
-                continue
-            used[cat] += 1
-            kept[src.lower()] = (src, cat, lang, rel, eid)
-        return kept
-
-    @staticmethod
-    def _clean_term_line(line):
-        s = (line or "").strip()
-        s = re.sub(r"^\s*(?:[-*•]|\d+[.)、])\s*", "", s)
-        return s.strip().strip("\"'“”‘’` ").strip()
-
-    def _translate_session_batch(self, terms, lang):
-        """批量翻译名词；行数不符时返回空，交回单条重试。"""
-        self.session_requests += 1
-        try:
-            out = self.srv.translate(
-                "\n".join(terms), lang, self.tgt,
-                extra_sys=_SESSION_TERM_NOTE)
-        except Exception:
-            return {}
-        lines = [self._clean_term_line(x) for x in (out or "").splitlines()
-                 if x.strip()]
-        if len(lines) != len(terms):
-            return {}
-        result = {}
-        for src, dst in zip(terms, lines):
-            if (dst and dst != src and has_cjk(dst)
-                    and not looks_like_prompt_echo(dst) and len(dst) <= 60):
-                result[src] = dst
-        return result
-
-    def _build_session_glossary(self):
-        """扫描当前 MOD，补齐名字型术语；缓存只在本机，不随包。"""
-        if not self.srv or not self.srv.is_running():
-            return
-        cand = self._session_candidates()
-        if not cand:
-            self.session_keys = set(getattr(self, "_session_core_hits", set()))
-            self.session_stats = {"candidates": 0, "cached": 0,
-                                  "translated": 0, "failed": 0}
-            return
-        raw = "\n".join("%s|%s|%s" % (v[3], v[4], v[0])
-                        for v in sorted(cand.values()))
-        fp = hashlib.sha1(raw.encode("utf-8", "replace")).hexdigest()
-        cache_path = os.path.join(self.session_cache_dir, fp + ".json")
-        cached = {}
-        try:
-            data = json.load(open(cache_path, encoding="utf-8"))
-            if isinstance(data.get("terms"), dict):
-                cached = {str(k): str(v) for k, v in data["terms"].items()}
-        except Exception:
-            cached = {}
-        cache_low = {k.lower(): v for k, v in cached.items()}
-        translated = {}
-        missing = [(v[0], v[2]) for low, v in cand.items()
-                   if low not in cache_low]
-        by_lang = {}
-        for src, lang in missing:
-            by_lang.setdefault(lang, []).append(src)
-        for lang, items in by_lang.items():
-            for i in range(0, len(items), 20):
-                batch = items[i:i + 20]
-                got = self._translate_session_batch(batch, lang)
-                translated.update(got)
-                for src in batch:
-                    if src in got:
-                        continue
-                    self.session_requests += 1
-                    try:
-                        out = self.srv.translate(
-                            src, lang, self.tgt,
-                            extra_sys=_SESSION_TERM_NOTE)
-                    except Exception:
-                        continue
-                    dst = self._clean_term_line(out)
-                    if (dst and dst != src and has_cjk(dst)
-                            and not looks_like_prompt_echo(dst)
-                            and len(dst) <= 60):
-                        translated[src] = dst
-        merged = dict(cached)
-        merged.update(translated)
-        self.session_keys = set(merged) | set(
-            getattr(self, "_session_core_hits", set()))
-        self.session_only_keys = set(merged)
-        for src, dst in merged.items():
-            self.glossary[src] = dst
-        self.gloss = self._new_gloss_index()
-        try:
-            os.makedirs(self.session_cache_dir, exist_ok=True)
-            tmp = cache_path + ".tmp"
-            with open(tmp, "w", encoding="utf-8") as f:
-                json.dump({"_format": "ai-translate-session-terms/1",
-                           "fingerprint": fp, "terms": merged},
-                          f, ensure_ascii=False, indent=1, sort_keys=True)
-            os.replace(tmp, cache_path)
-        except OSError:
-            pass
-        self.session_stats = {
-            "candidates": len(cand),
-            "cached": len(cache_low),
-            "translated": len(translated),
-            "failed": max(0, len(missing) - len(translated)),
-        }
-        self.log("会话词表：候选 %d 条，缓存 %d，新译 %d，失败 %d（本机缓存，不随包）"
-                 % (self.session_stats["candidates"],
-                    self.session_stats["cached"],
-                    self.session_stats["translated"],
-                    self.session_stats["failed"]), "dim")
-
-    def _build_freq_names(self):
-        """★ 2.0.3 高频专名定译：全文扫描正文高频词，复用会话词表的
-        批量定译与本机缓存管线，结果并入**软提示层**（术语提示只在语义
-        相符时采用），收敛自造译名的跨文件漂移。"""
-        if not self.srv or not self.srv.is_running():
-            return
-        total, mid, lang_of = {}, {}, {}
-        scanned = 0
-        for rel, full in self._collect_text_targets():
-            if self._cancelled():
-                return
-            if scanned >= _FREQ_SCAN_FILE_CAP:
-                break
-            scanned += 1
-            try:
-                ents = self._parse(self.p.parse_xray_text_xml, full,
-                                   read_encoding_chain(full))
-            except Exception:
-                continue
-            for ent in ents:
-                lang, src = self._pick_source(ent)
-                if not src or has_cjk(src):
-                    continue
-                for w in _FREQ_WORD_RE.findall(src):
-                    lang_of.setdefault(w, lang)
-                    total[w] = total.get(w, 0) + 1
-                for w in _FREQ_MID_RE.findall(src):
-                    mid[w] = mid.get(w, 0) + 1
-        stop = GLOSSARY_HINT_STOPWORDS
-        cand = []
-        for w, n in total.items():
-            if n < _FREQ_NAME_MIN_TOTAL or mid.get(w, 0) < _FREQ_NAME_MIN_MID:
-                continue
-            if len(w) <= 3 or w.lower() in stop or w in self.glossary:
-                continue
-            cand.append((n, w))
-        cand.sort(reverse=True)
-        cand = [w for _n, w in cand[:_FREQ_NAME_LIMIT]]
-        self.freq_stats = {"candidates": len(cand), "cached": 0,
-                           "translated": 0, "failed": 0}
-        if not cand:
-            self.freq_names = {}
-            return
-        raw = "\n".join("%s|%s" % (lang_of.get(w, self.src_lang), w)
-                        for w in cand)
-        fp = hashlib.sha1(
-            ("freq/1/" + raw).encode("utf-8", "replace")).hexdigest()
-        cache_path = os.path.join(self.session_cache_dir,
-                                  "freq_" + fp + ".json")
-        cached = {}
-        try:
-            data = json.load(open(cache_path, encoding="utf-8"))
-            if isinstance(data.get("terms"), dict):
-                cached = {str(k): str(v) for k, v in data["terms"].items()}
-        except Exception:
-            cached = {}
-        cache_low = {k.lower(): v for k, v in cached.items()}
-        self.freq_stats["cached"] = len(cache_low)
-        translated = {}
-        missing = [(w, lang_of.get(w, self.src_lang)) for w in cand
-                   if w.lower() not in cache_low]
-        by_lang = {}
-        for w, lang in missing:
-            by_lang.setdefault(lang, []).append(w)
-        for lang, items in by_lang.items():
-            for i in range(0, len(items), 20):
-                batch = items[i:i + 20]
-                got = self._translate_session_batch(batch, lang)
-                translated.update(got)
-                for w in batch:
-                    if w in got:
-                        continue
-                    self.session_requests += 1
-                    try:
-                        out = self.srv.translate(
-                            w, lang, self.tgt,
-                            extra_sys=_SESSION_TERM_NOTE)
-                    except Exception:
-                        continue
-                    dst = self._clean_term_line(out)
-                    if (dst and dst != w and has_cjk(dst)
-                            and not looks_like_prompt_echo(dst)
-                            and len(dst) <= 60):
-                        translated[w] = dst
-        merged = dict(cached)
-        merged.update(translated)
-        self.freq_stats["translated"] = len(translated)
-        self.freq_stats["failed"] = max(0, len(missing) - len(translated))
-        self.freq_names = merged
-        self.glossary.update(merged)
-        self.gloss_soft |= set(merged)
-        self.gloss = self._new_gloss_index()
-        try:
-            os.makedirs(self.session_cache_dir, exist_ok=True)
-            tmp = cache_path + ".tmp"
-            with open(tmp, "w", encoding="utf-8") as f:
-                json.dump({"_format": "ai-translate-freq-names/1",
-                           "fingerprint": fp, "terms": merged},
-                          f, ensure_ascii=False, indent=1, sort_keys=True)
-            os.replace(tmp, cache_path)
-        except OSError:
-            pass
-        self.log("高频专名定译：候选 %d，缓存 %d，新译 %d（软提示层）"
-                 % (self.freq_stats["candidates"],
-                    self.freq_stats["cached"],
-                    self.freq_stats["translated"]), "dim")
-
-    def _is_stale_empty_output(self, out_path):
-        """早期缺陷会给不含文本条目的文件生成空 XML 占位，
-        这类“译文”必须能被重跑覆盖；有真实条目的输出一律保留。"""
-        try:
-            ents = self.p.parse_xray_text_xml(
-                out_path, read_encoding_chain(out_path))
-        except Exception:
-            return False
-        return len(ents) == 0
-
-    def _load_ledger(self):
-        try:
-            with open(self._ledger_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            return data if isinstance(data, dict) else {}
-        except Exception:
-            return {}
-
-    def _save_ledger(self):
-        if not self._ledger_path:
-            return
-        with self._ledger_lock:
-            try:
-                parent = os.path.dirname(self._ledger_path) or "."
-                fd, tmp = tempfile.mkstemp(prefix=".ait_ledger_", suffix=".tmp",
-                                           dir=parent)
-                with os.fdopen(fd, "w", encoding="utf-8") as f:
-                    json.dump(self._ledger, f, ensure_ascii=False,
-                              sort_keys=True)
-                os.replace(tmp, self._ledger_path)
-                self._ledger_saved = time.time()
-                self._ledger_save_failed = False
-            except OSError:
-                self._ledger_save_failed = True
-                if "tmp" in locals():
-                    try:
-                        os.remove(tmp)
-                    except OSError:
-                        pass
-
-    def _record_done(self, rel, full, out_path):
-        try:
-            ist = os.stat(full)
-            ost = os.stat(out_path)
-            in_hash = sha256_file(full)
-            out_hash = sha256_file(out_path)
-        except OSError:
-            return
-        with self._ledger_lock:
-            self._ledger[rel.replace("\\", "/")] = {
-                "in_size": ist.st_size,
-                "in_mtime_ns": ist.st_mtime_ns,
-                "in_hash": in_hash,
-                "out_size": ost.st_size,
-                "out_hash": out_hash,
-                "pipeline": PLUGIN_INFO["version"],
-            }
-            # 每文件全量重写是 O(n²)（几千文件时写放大明显）；5 秒节流，
-            # 崩溃最多让最近几秒的文件下次重译（不会漏、不会错）。
-            if time.time() - self._ledger_saved > 5:
-                self._save_ledger()
-
-    def _output_covers_input(self, full, out_path):
-        """输出 XML 是否包含输入的全部 string id（用于旧输出版本迁移）。"""
-        try:
-            in_ents = self._parse(self.p.parse_xray_text_xml, full,
-                                  read_encoding_chain(full))
-            out_ents = self.p.parse_xray_text_xml(
-                out_path, read_encoding_chain(out_path))
-        except Exception:
-            return False
-        if not in_ents:
-            # 输入里没有条目：交给 _run_text_file 走"清理空占位输出"的既有路径
-            return False
-        return {e.id for e in in_ents} <= {e.id for e in out_ents}
-
-    def _discard_unchanged_output(self, rel, out_path):
-        try:
-            if os.path.exists(out_path):
-                os.remove(out_path)
-        except OSError:
-            pass
-        with self._ledger_lock:
-            self._ledger.pop(rel.replace("\\", "/"), None)
-
-    def _text_value_pairs(self, src_e, out_e):
-        try:
-            lang, src_val = self._pick_source(src_e)
-            out_texts = getattr(out_e, "texts", None) or {}
-            out_val = out_texts.get(lang)
-            if out_val is None:
-                _out_lang, out_val = self.p.getRecommendLangText(out_e, self.tgt)
-        except Exception:
-            return []
-        if src_val is not None and out_val is not None:
-            return [(lang or "text", src_val, out_val)]
-        return []
-
-    def _text_output_has_changes(self, full, out_path):
-        try:
-            in_ents = self._parse(self.p.parse_xray_text_xml, full,
-                                  read_encoding_chain(full))
-            out_ents = self._parse(self.p.parse_xray_text_xml, out_path,
-                                   read_encoding_chain(out_path))
-        except Exception:
-            return False
-        out_map = {e.id: e for e in (out_ents or [])}
-        for ent in (in_ents or []):
-            other = out_map.get(ent.id)
-            if other is None:
-                continue
-            if any(src_val != out_val
-                   for _lang, src_val, out_val in self._text_value_pairs(
-                       ent, other)):
-                return True
-        return False
-
-    def _should_skip(self, rel, full, out_path, kind):
-        """该文件是否可以跳过（= 输入未变且输出完整）。"""
-        if not os.path.isfile(out_path):
-            return False
-        try:
-            ist = os.stat(full)
-            ost = os.stat(out_path)
-        except OSError:
-            return False
-        ent = self._ledger.get(rel.replace("\\", "/"))
-        if (ent
-                and ent.get("pipeline") == PLUGIN_INFO["version"]
-                and ent.get("in_size") == ist.st_size
-                and ent.get("in_mtime_ns") == ist.st_mtime_ns
-                and ent.get("out_size") == ost.st_size):
-            try:
-                return (ent.get("in_hash") == sha256_file(full)
-                        and ent.get("out_hash") == sha256_file(out_path))
-            except OSError:
-                return False
-        if self._ledger_present:
-            # 有账本 = 严格模式：没记录过的输出一律重做（可能是中断残留，
-            # 也可能是早期产物；重做一次后即入账）。
-            return False
-        # 首次升级：早期输出没有账本。文本按"输出是否覆盖输入 id"
-        # 判断（能识别缺新条目/半截 XML），其余格式退回 mtime 判断。
-        if kind == "text":
-            ok = (self._output_covers_input(full, out_path)
-                  and self._text_output_has_changes(full, out_path))
-        else:
-            ok = ost.st_mtime >= ist.st_mtime and ost.st_size > 0
-        if ok:
-            self._record_done(rel, full, out_path)   # 补账，下次走严格模式
-        return ok
-
-    def _write_atomic(self, out_path, writer):
-        """先写同目录唯一临时文件再替换，避免并发作业互相覆盖。"""
-        parent = os.path.dirname(out_path) or "."
-        os.makedirs(parent, exist_ok=True)
-        fd, tmp = tempfile.mkstemp(prefix=".ait_", suffix=".tmp", dir=parent)
-        os.close(fd)
-        try:
-            writer(tmp)
-            # Windows 并发替换同一目标时可能互相拒绝访问；临时文件仍并行写。
-            with _ATOMIC_REPLACE_LOCK:
-                os.replace(tmp, out_path)
-        finally:
-            if os.path.exists(tmp):
-                try:
-                    os.remove(tmp)
-                except OSError:
-                    pass
-
-    def _final_audit(self, done_dir):
-        """整 MOD 交付前的强制终检；保留输出，但撤销问题文件账本。"""
-        with self._ledger_lock:
-            ledger_items = list(self._ledger.items())
-        missing, empty = [], []
-        for rel, info in ledger_items:
-            out = os.path.join(done_dir, rel.replace("/", os.sep))
-            try:
-                size = os.path.getsize(out)
-            except OSError:
-                missing.append(rel)
-                continue
-            if size == 0 and int(info.get("out_size") or 0) > 0:
-                empty.append(rel)
-        bad_parse, lost_ids, residue, n_tables = [], [], [], 0
-        untranslated = []          # ★ 2.0.7 条目级漏译（输出=俄文源文）
-        ctx_bleed = []             # ★ 2.0.8 上下文串入（前一句/后一句标签）
-        amp_lost = []              # ★ 2.0.22 & 保真哨兵（源含 & 译文双空格）
-        token_bad = []
-        semantic_bad = []
-        term_bad = []
-        partial_review = []
-        unchanged_outputs = []
-        dangling_ids = []
-        _CYR_AUDIT = re.compile(r"[а-яёА-ЯЁ]{2,}")
-        _LATIN_AUDIT = re.compile(r"[A-Za-z]{2,}")
-        _GEN_ID_RE = re.compile(r"sgtat_gen_text_\d+_\d+")
-        for rel in sorted(self._audit_tables):
-            rel = rel.replace("\\", "/")
-            n_tables += 1
-            out = os.path.join(done_dir, rel.replace("/", os.sep))
-            full = os.path.join(self.in_dir, rel.replace("/", os.sep))
-            try:
-                out_ents = self._parse(self.p.parse_xray_text_xml, out,
-                                       read_encoding_chain(out))
-            except Exception as e:
-                bad_parse.append("%s（%s）" % (rel, str(e)[:60]))
-                continue
-            if os.path.isfile(full):
-                try:
-                    in_ents = self._parse(self.p.parse_xray_text_xml, full,
-                                          read_encoding_chain(full))
-                    in_ids = {e.id for e in (in_ents or [])}
-                    out_ids = {e.id for e in (out_ents or [])}
-                    miss = in_ids - out_ids
-                    if miss:
-                        lost_ids.append("%s（缺 %d 条：%s…）"
-                                        % (rel, len(miss),
-                                           ", ".join(sorted(miss)[:3])))
-                    # ④ 条目级漏译：同一 id 输出文本仍是输入俄文原样。
-                    # 排除已登记专名（词库命中）——那是有意保留，不是漏译。
-                    in_map = {e.id: e for e in (in_ents or [])}
-                    hits = []
-                    token_ids = []
-                    semantic_ids = []
-                    term_ids = []
-                    review_ids = []
-                    file_changed = compared = False
-                    for e in (out_ents or []):
-                        src_e = in_map.get(e.id)
-                        if src_e is None:
-                            continue
-                        for lang_key, in_val, out_val in self._text_value_pairs(
-                                src_e, e):
-                            if not in_val or not out_val:
-                                continue
-                            compared = True
-                            if in_val != out_val:
-                                file_changed = True
-                                if not runtime_tokens_match(in_val, out_val):
-                                    token_ids.append(e.id)
-                                if semantic_role_issues(
-                                        in_val, out_val, lang_key):
-                                    semantic_ids.append(e.id)
-                                if partial_source_review(in_val, out_val):
-                                    review_ids.append(e.id)
-                                term_counts = {}
-                                for _start, _end, key in self._glossary_spans(
-                                        in_val):
-                                    term_counts[key] = term_counts.get(key, 0) + 1
-                                for key, source_count in term_counts.items():
-                                    expected = str(
-                                        self.gloss._map.get(key)
-                                        or self.glossary.get(key) or "").strip(
-                                            "\"'«»“”‘’")
-                                    if (expected and out_val.lower().count(
-                                            expected.lower()) < source_count):
-                                        term_ids.append(e.id)
-                                        break
-                                continue
-                            if not (_CYR_AUDIT.search(in_val)
-                                    or _LATIN_AUDIT.search(in_val)):
-                                continue
-                            if not _has_translatable_text(in_val):
-                                continue
-                            if termbase_lookup(in_val) is not None:
-                                continue
-                            if (looks_like_code_or_debug(rel, in_val)
-                                    or looks_like_technical_text(in_val)
-                                    or (looks_like_identifier_text(in_val)
-                                        and not is_player_facing_label(
-                                            rel, in_val)
-                                        and not _id_player_visible(e.id))):
-                                continue
-                            if (self.protect_proper
-                                    and looks_like_proper_text(rel, in_val)):
-                                continue
-                            hits.append(e.id)
-                            break
-                    if token_ids:
-                        token_bad.append("%s（%d 条：%s…）" % (
-                            rel, len(token_ids), ", ".join(token_ids[:3])))
-                    if semantic_ids:
-                        semantic_bad.append("%s（%d 条：%s…）" % (
-                            rel, len(semantic_ids),
-                            ", ".join(semantic_ids[:3])))
-                    if term_ids:
-                        term_bad.append("%s（%d 条：%s…）" % (
-                            rel, len(term_ids), ", ".join(term_ids[:3])))
-                    if review_ids:
-                        partial_review.append("%s（%d 条：%s…）" % (
-                            rel, len(review_ids), ", ".join(review_ids[:3])))
-                    if compared and not file_changed:
-                        unchanged_outputs.append(rel)
-                    if hits:
-                        untranslated.append("%s（%d 条：%s…）"
-                                            % (rel, len(hits),
-                                               ", ".join(hits[:3])))
-                    # ⑤ 上下文串入：输出文本仍带「前一句/后一句」标签。
-                    # 这是译文被相邻条目污染的直接证据，必须点名补译。
-                    bleed_ids = []
-                    for e in (out_ents or []):
-                        for out_val in (e.texts or {}).values():
-                            if looks_like_context_echo(out_val):
-                                bleed_ids.append(e.id)
-                                break
-                    if bleed_ids:
-                        ctx_bleed.append("%s（%d 条：%s…）"
-                                         % (rel, len(bleed_ids),
-                                            ", ".join(bleed_ids[:3])))
-                    # ⑥ & 保真哨兵：源含 & 的已翻条目，译文出现源没有的
-                    # 双空格 = 吞 & 特征签名（Heckler & Koch → Heckler  Koch）。
-                    # 只点名，不自动改写（译成「黑克勒-科赫」专名属正常）。
-                    amp_ids = []
-                    for e in (out_ents or []):
-                        src_e = in_map.get(e.id)
-                        if src_e is None:
-                            continue
-                        for _lang_key, in_val, out_val in self._text_value_pairs(
-                                src_e, e):
-                            if not in_val or not out_val or in_val == out_val:
-                                continue
-                            if "&" not in in_val:
-                                continue
-                            if "  " in out_val and "  " not in in_val:
-                                amp_ids.append(e.id)
-                                break
-                    if amp_ids:
-                        amp_lost.append("%s（%d 条：%s…）"
-                                        % (rel, len(amp_ids),
-                                           ", ".join(amp_ids[:3])))
-                except Exception as e:
-                    bad_parse.append("%s（输入表无法复核：%s）" % (rel, str(e)[:60]))
-            try:
-                raw = read_text_any(out)
-            except Exception:
-                raw = ""
-            if _MASK_RESIDUE_RE.search(raw or ""):
-                residue.append(rel)
-        defined_ids = set()
-        referenced_ids = {}
-        for root, dirs, files in os.walk(done_dir):
-            dirs[:] = [d for d in dirs if d != "__temp__"]
-            for fn in files:
-                low = fn.lower()
-                if not low.endswith((".xml", ".ltx", ".script")):
-                    continue
-                path = os.path.join(root, fn)
-                rel = os.path.relpath(path, done_dir)
-                if low.endswith(".xml"):
-                    try:
-                        ents = self._parse(
-                            self.p.parse_xray_text_xml, path,
-                            read_encoding_chain(path))
-                        defined_ids.update(e.id for e in (ents or []) if e.id)
-                    except Exception:
-                        pass
-                try:
-                    raw = read_text_any(path)
-                except Exception:
-                    continue
-                for gid in set(_GEN_ID_RE.findall(raw or "")):
-                    referenced_ids.setdefault(gid, []).append(rel)
-        for gid in sorted(set(referenced_ids) - defined_ids):
-            dangling_ids.append("%s（%s）" % (
-                gid, ", ".join(referenced_ids[gid][:3])))
-        details = {
-            "missing_files": missing,
-            "empty_files": empty,
-            "unparseable_tables": bad_parse,
-            "missing_ids": lost_ids,
-            "mask_residue": residue,
-            "untranslated_entries": untranslated,
-            "context_bleed": ctx_bleed,
-            "runtime_token_damage": token_bad,
-            "semantic_role_conflicts": semantic_bad,
-            "glossary_conflicts": term_bad,
-            "partial_translation_review": partial_review,
-            "unchanged_outputs": unchanged_outputs,
-            "dangling_generated_ids": dangling_ids,
-            "amp_warnings": amp_lost,
-        }
-        hard_keys = [k for k, v in details.items()
-                     if k not in ("amp_warnings", "partial_translation_review")]
-        counts = {k: len(v) for k, v in details.items()}
-        counts.update({"ledger_files": len(ledger_items),
-                       "text_tables": n_tables,
-                       "amp_warnings": len(amp_lost)})
-        hard_problems = sum(counts[k] for k in hard_keys)
-        warnings = len(amp_lost) + len(partial_review)
-        retry_files = set()
-        for key in hard_keys:
-            for item in details[key]:
-                retry_files.add(item.split("（", 1)[0])
-        for gid in set(referenced_ids) - defined_ids:
-            retry_files.update(referenced_ids[gid])
-        if retry_files:
-            with self._ledger_lock:
-                for rel in retry_files:
-                    self._ledger.pop(rel.replace("\\", "/"), None)
-            self._save_ledger()
-        result = {
-            "ok": hard_problems == 0,
-            "hard_problems": hard_problems,
-            "warnings": warnings,
-            "counts": counts,
-            "details": details,
-        }
-        self.audit_result = result
-        if hard_problems or warnings:
-            self.log("终检：账本 %d 个文件 / 改写文本表 %d 张，"
-                     "硬性问题 %d 处，警告 %d 处"
-                     % (len(ledger_items), n_tables, hard_problems, warnings),
-                     "warn")
-            for key, label in (
-                    ("missing_files", "账本有记录但输出缺失"),
-                    ("empty_files", "输出为空文件"),
-                    ("unparseable_tables", "文本表解析失败"),
-                    ("missing_ids", "输出疑似漏条目"),
-                    ("mask_residue", "疑似未还原掩码（$$R…）"),
-                    ("runtime_token_damage", "颜色码/占位符损坏"),
-                    ("semantic_role_conflicts", "任务/对话语义方向冲突"),
-                    ("glossary_conflicts", "硬术语译名缺失或不一致"),
-                    ("partial_translation_review", "疑似部分源文未翻译（需人工复核）"),
-                    ("unchanged_outputs", "整张输出无实际译文变化"),
-                    ("dangling_generated_ids", "生成字符串 ID 缺少定义"),
-                    ("untranslated_entries", "条目未翻译（保留原文）"),
-                    ("context_bleed", "上下文串入（前一句/后一句）"),
-                    ("amp_warnings", "疑似吞 &（& 塌成双空格）")):
-                for item in details[key][:20]:
-                    self.log("  终检｜%s：%s" % (label, item), "warn")
-            if hard_problems > 40:
-                self.log("  终检｜其余问题只点名前 40 处，完整计数见返回结果",
-                         "warn")
-        else:
-            self.log("终检通过：账本 %d 个文件、改写文本表 %d 张，"
-                     "无悬空 ID/零变化输出/占位符损坏/漏译/语义方向冲突"
-                     % (len(ledger_items), n_tables), "ok")
-        return result
-
-    def run(self):
-        done_dir = self._resolve_done_dir(self.out_dir)
-        in_abs = os.path.normcase(os.path.realpath(self.in_dir))
-        out_abs = os.path.normcase(os.path.realpath(done_dir))
-        try:
-            out_contains_input = os.path.commonpath([in_abs, out_abs]) == out_abs
-        except ValueError:
-            out_contains_input = False
-        if out_contains_input:
-            self.log("输出目录不能与输入目录相同或是它的上级目录；已拒绝启动",
-                     "err")
-            return False
-        self.out_dir = done_dir
-        self.done_dir = done_dir
-        self._excluded_paths = {os.path.normcase(os.path.abspath(done_dir))}
-        os.makedirs(done_dir, exist_ok=True)
-        lock_key = hashlib.sha256(
-            os.path.normcase(os.path.realpath(done_dir)).encode("utf-8")
-        ).hexdigest()[:20]
-        lock_path = os.path.join(tempfile.gettempdir(),
-                                 "ait_translate_%s.lock" % lock_key)
-        lock_stream = open(lock_path, "a+b")
-        try:
-            lock_stream.seek(0, os.SEEK_END)
-            if lock_stream.tell() == 0:
-                lock_stream.write(b"0")
-                lock_stream.flush()
-            lock_stream.seek(0)
-            if os.name == "nt":
-                import msvcrt
-                msvcrt.locking(lock_stream.fileno(), msvcrt.LK_NBLCK, 1)
-            else:
-                import fcntl
-                fcntl.flock(lock_stream.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except OSError:
-            lock_stream.close()
-            self.log("输出目录已有翻译任务在运行，已拒绝重复启动", "err")
-            return False
-        try:
-            return self._run_locked(done_dir)
-        finally:
-            try:
-                lock_stream.seek(0)
-                if os.name == "nt":
-                    import msvcrt
-                    msvcrt.locking(lock_stream.fileno(), msvcrt.LK_UNLCK, 1)
-                else:
-                    import fcntl
-                    fcntl.flock(lock_stream.fileno(), fcntl.LOCK_UN)
-            finally:
-                lock_stream.close()
-
-    def _run_locked(self, done_dir):
-        self._ledger_path = os.path.join(done_dir, ".ai_translate_done.json")
-        self._ledger_present = os.path.isfile(self._ledger_path)
-        self._ledger = self._load_ledger()
-        self._invalid_generated_tables = set()
-        for rel, info in list(self._ledger.items()):
-            if not isinstance(info, dict) or not info.get("generated"):
-                continue
-            path = os.path.join(done_dir, rel.replace("/", os.sep))
-            try:
-                valid = (os.path.getsize(path) == info.get("out_size")
-                         and sha256_file(path) == info.get("out_hash"))
-            except OSError:
-                valid = False
-            if not valid:
-                self._invalid_generated_tables.add(rel.replace("\\", "/"))
-                self.log("生成字符串表缺失或已损坏，相关文件将重新翻译：%s" % rel,
-                         "warn")
-        if self._invalid_generated_tables:
-            with self._ledger_lock:
-                self._ledger = {
-                    rel: info for rel, info in self._ledger.items()
-                    if isinstance(info, dict) and info.get("generated")
-                    and rel.replace("\\", "/") not in
-                    self._invalid_generated_tables}
-
-        if self.auto_session_terms and not self.preview_reference:
-            try:
-                self._build_session_glossary()
-                self.req_count += self.session_requests
-            except Exception as e:
-                self.log("会话词表生成失败，继续使用通用术语库：%s：%s"
-                         % (type(e).__name__, e), "warn")
-
-        if self.auto_freq_names and not self.preview_reference:
-            try:
-                self._build_freq_names()
-            except Exception as e:
-                self.log("高频专名定译失败，跳过：%s：%s"
-                         % (type(e).__name__, e), "warn")
-
-        reuse = {}
-        if (self.reuse_dir and os.path.isdir(self.reuse_dir)
-                and not self.reference_mode):
-            reuse = self._read_existing(self.reuse_dir)
-            self.log("已载入复用译文 %d 条" % len(reuse))
-
-        ok = False
-        audit_result = None
-        try:
-            if self.reference_mode and self.mode in ("auto", "text"):
-                ok = self._run_reference_layer(done_dir, reuse)
-                if (not ok and self.mode == "auto"
-                        and not self._table_entries
-                        and not self._cancelled()):
-                    # ★ 2.0.23：引用层收编为固定模式后，没有 configs/text
-                    # 文本表的 MOD（纯脚本/ltx）自动回退整目录模式，不再
-                    # 警告后终止。引用索引为空，only_referenced 若开着会把
-                    # 所有条目过滤掉，回退时强制关闭。
-                    if self.only_referenced:
-                        self.log("无引用索引，「只译被引用条目」在回退模式下不生效",
-                                 "warn")
-                    self.only_referenced = False
-                    self.log("回退：按整目录直接翻译模式继续", "warn")
-                    ok = self._run_auto(done_dir, reuse)
-            elif self.mode == "auto":
-                ok = self._run_auto(done_dir, reuse)
-            elif self.mode == "text":
-                temp_dir = os.path.join(done_dir, "__temp__")
-                os.makedirs(temp_dir, exist_ok=True)
-                reuse.update(self._read_existing(temp_dir))
-                targets = self._collect_text_targets()
-                total = len(targets)
-                self.log("待翻译文本 XML %d 个（递归子目录，已排除输出目录）"
-                         % total)
-                if total == 0:
-                    self.log("未发现任何 .xml 文件。请把目录选到 configs"
-                             "（文本 XML 在其 text\\ 与 ui\\ 子目录内）", "warn")
-                skipped_empty = 0
-                trans_files = 0
-                failed = 0
-                for idx, (rel, full) in enumerate(targets, 1):
-                    if self._cancelled():
-                        self.log("已取消")
-                        ok = False
-                        break
-                    out_path = os.path.join(done_dir, rel)
-                    if self._should_skip(rel, full, out_path, "text"):
-                        continue
-                    self._log_progress(idx, total, os.path.basename(full))
-                    self.progress({"file": rel, "file_idx": idx, "files": total,
-                                   "ids": trans_files, "total_ids": 0,
-                                   "tabs": trans_files,
-                                   "pending": self.pending_files,
-                                   "reqs": self.req_count, "unit": "个文件"})
-                    try:
-                        n_texts = self._run_text_file(
-                            os.path.basename(full), full, out_path,
-                            os.path.join(temp_dir, rel), reuse, idx, total)
-                    except Exception as e:
-                        failed += 1
-                        self.log("文件处理失败，已跳过：%s（%s: %s）"
-                                 % (rel, type(e).__name__, e), "err")
-                        continue
-                    if n_texts == -2:
-                        failed += 1
-                        continue
-                    if n_texts > 0:
-                        trans_files += 1
-                        self._record_done(rel, full, out_path)
-                    if n_texts == 0:
-                        skipped_empty += 1
-                else:
-                    ok = True
-                if skipped_empty:
-                    self.log("跳过 %d 个不含 <string> 文本条目的 XML"
-                             % skipped_empty)
-                if failed:
-                    self.log("有 %d 个文件处理失败（已跳过，其余照常完成），"
-                             "详见日志" % failed, "warn")
-                ok = not failed and not self.failed_strings and not self._cancelled()
-            else:
-                ok = self._run_recursive(done_dir, reuse)
-            ok = bool(ok) and not self.failed_strings and not self._cancelled()
-            ok = ok and not getattr(self, "_ledger_save_failed", False)
-        finally:
-            # 结束时强制落盘（节流写可能还没写过）。但**空账本不写**：
-            # 用户一开跑就取消时若落一个空账本，下次会进入严格模式，
-            # 把早期遗留的输出全部重译一遍（安全但白白耗时）。
-            if not (self.reference_mode and self.preview_reference):
-                if self._ledger or self._ledger_present:
-                    self._save_ledger()
-                removed = self._prune_empty_dirs(done_dir)
-                if removed:
-                    self.log("已清理 %d 个空目录" % removed)
-
-        # ★ 2.0.2 终检：整 MOD 交付前的最后一道闸。逐条校验（占位符 mask/
-        #   校验/回填、失败保留原文）在翻译时就做了，这里验收"整面墙"——
-        #   只报告不删改；取消/部分完成时也跑（报告的就是已落盘的部分）。
-        if not (self.reference_mode and self.preview_reference):
-            try:
-                audit_result = self._final_audit(done_dir)
-                ok = (bool(ok) and bool(audit_result.get("ok"))
-                      and not getattr(self, "_ledger_save_failed", False))
-            except Exception as e:
-                ok = False
-                self.log("终检未完成，本次不能标记为全部完成：%s: %s"
-                         % (type(e).__name__, e), "err")
-
-        # ★ 2.0.3 提示词体检：规则违规遥测汇总，为提示词迭代提供数据。
-        try:
-            self._audit_report()
-        except Exception:
-            pass
-
-        if ok:
-            self.log("全部完成：请求 %d 段，%s 字符%s" %
-                     (self.req_count, _fmt_size(self.trans_chars),
-                      ("，超长文本自动分句 %d 次" % self.long_chunks)
-                      if self.long_chunks else ""))
-        else:
-            self.log("未全部完成：已生成的内容保留，失败/待复核条目下次运行会重译",
-                     "warn")
-        if self.tm_stats.get("scope") != "off" or self.tm_stats.get("hits"):
-            self.log("TM-lite：%s，精确复用 %d 条，节省 %s 字符"
-                     % ("跨表" if self.tm_stats.get("scope") == "global"
-                        else "表内", self.tm_stats.get("hits", 0),
-                        _fmt_size(self.tm_stats.get("saved_chars", 0))),
-                     "dim")
-        if self.empty_files:
-            self.log("有 %d 个文件未提取到可译文本（前 20 个见详细日志）"
-                     % self.empty_files)
-        if self.failed_strings:
-            self.log("有 %d 条文本翻译失败（已保留原文，详见详细日志）"
-                     % self.failed_strings, "warn")
-        if self.redundant:
-            self.log("以下 ID 在多个文件重复，请人工核对：%s"
-                     % ", ".join(self.redundant[:50]))
-        self.log("译文目录：%s" % done_dir, "ok")
-        return ok
-
-    # ── ID 引用层模式（跨 MOD 通用）────────────────────────────────
-    # 补丁/模组的正文在 configs/text 的条目里，XML/脚本只放条目 ID。
-    # 这里不猜新 ID、不改写引用，只把“定义该 ID 的文本表条目”译成中文；
-    # 引用层文件原样复制。这样 295 个引用层文件不会漏，也不会被改坏。
-    def _read_localization(self):
-        info = {"language": "", "files": []}
-        path = os.path.join(self.in_dir, "configs", "localization.ltx")
-        if not os.path.isfile(path):
-            return info
-        for line in read_text_any(path).splitlines():
-            line = line.strip()
-            if not line or line.startswith(";") or "=" not in line:
-                continue
-            key, value = line.split("=", 1)
-            key = key.strip().lower()
-            if key == "language":
-                info["language"] = value.strip().lower()
-            elif key == "files":
-                info["files"] = [x.strip() for x in value.split(",")
-                                 if x.strip()]
-        return info
-
-    def _is_excluded(self, path):
-        ap = os.path.normcase(os.path.abspath(path))
-        return any(ap == ex or ap.startswith(ex + os.sep)
-                   for ex in self._excluded_paths)
-
-    def _iter_text_tables(self):
-        root = os.path.join(self.in_dir, "configs", "text")
-        out = []
-        if not os.path.isdir(root):
-            return out
-        for cur, dirs, files in os.walk(root):
-            dirs[:] = [d for d in dirs
-                       if not self._is_excluded(os.path.join(cur, d))]
-            for fn in files:
-                full = os.path.join(cur, fn)
-                if fn.lower().endswith(".xml") and not self._is_excluded(full):
-                    out.append(full)
-        out.sort()
-        return out
-
-    def _build_text_index(self):
-        self._table_entries = {}
-        self._id_files = {}
-        self._localization = self._read_localization()
-        self._lang_hint = (self._localization.get("language") or "").lower()
-        if not self._lang_hint:
-            # 没写 localization.ltx 时，从 configs/text/<lang>/ 推断
-            for full in self._iter_text_tables():
-                parts = full.replace("\\", "/").lower().split("/configs/text/")
-                if len(parts) == 2 and "/" in parts[1]:
-                    self._lang_hint = parts[1].split("/")[0]
-                    break
-        for full in self._iter_text_tables():
-            try:
-                ents = self._parse(self.p.parse_xray_text_xml, full,
-                                   read_encoding_chain(full))
-            except Exception as e:
-                self.detail("  文本表解析失败，跳过：%s（%s）"
-                            % (os.path.basename(full), e))
-                continue
-            table = {}
-            for ent in ents:
-                if ent.id:
-                    table[ent.id] = ent
-            self._table_entries[full] = table
-            for eid in table:
-                self._id_files.setdefault(eid, []).append(full)
-        self.log("文本表：%d 个文件 / %d 个 ID（语言 %s，注册表 %d 张）"
-                 % (len(self._table_entries), len(self._id_files),
-                    self._localization.get("language") or "未声明",
-                    len(self._localization.get("files") or [])))
-
-    @staticmethod
-    def _looks_like_ref_value(value):
-        v = (value or "").strip()
-        if not (2 <= len(v) <= 120):
-            return False
-        if re.search(r"\s", v):
-            return False
-        if v.lower().endswith((".xml", ".ltx", ".script", ".dds", ".ogg",
-                               ".wav", ".txt", ".ini")):
-            return False
-        if "/" in v or "\\" in v or ":" in v:
-            return False
-        # ★ 2.0.24（IWP 全量审计 D9）：未解析报告要求下划线形态。旧判据
-        # 把一切标识符形态字符串都算"未解析引用"，实测 CSV 里
-        # ammo/gr/ap/fmj/OK/third/dummy 等 8 类全是 XML 配置参数值，
-        # 不是条目 ID，稀释真正待确认项。能在索引里解析到的 ID 走
-        # add_ref 第一条分支，不受本判据影响——只收紧报告，零覆盖变化。
-        # XRay 文本表 ID 绝大多数带下划线（st_/ui_/mgr_/GENERATE_NAME_…）；
-        # 无下划线的裸词 ID（controls/ok）本来就解析得到，不会进报告。
-        if "_" not in v:
-            return False
-        return bool(re.match(r"^[A-Za-z_][A-Za-z0-9_.\-]*$", v))
-
-    def _scan_references(self):
-        refs = {}
-        ref_files = set()
-        unresolved = {}
-        text_root = os.path.abspath(
-            os.path.join(self.in_dir, "configs", "text"))
-        configs_root = os.path.join(self.in_dir, "configs")
-
-        def add_ref(value, full, count_unresolved=True):
-            v = (value or "").strip()
-            if not v:
-                return False
-            if v in self._id_files:
-                refs[v] = refs.get(v, 0) + 1
-                ref_files.add(full)
-                return True
-            if count_unresolved and self._looks_like_ref_value(v):
-                unresolved[v] = unresolved.get(v, 0) + 1
-            return False
-
-        for cur, dirs, files in os.walk(configs_root):
-            ap = os.path.abspath(cur)
-            if ap == text_root or ap.startswith(text_root + os.sep):
-                continue
-            if self._is_excluded(cur):
-                dirs[:] = []
-                continue
-            for fn in files:
-                if not fn.lower().endswith(".xml"):
-                    continue
-                full = os.path.join(cur, fn)
-                text = read_text_any(full)
-                for v in _XML_REF_TAG_RE.findall(text):
-                    add_ref(v, full)
-                for v in _XML_REF_ATTR_RE.findall(text):
-                    add_ref(v, full)
-
-        scripts_root = os.path.join(self.in_dir, "scripts")
-        if os.path.isdir(scripts_root):
-            for cur, dirs, files in os.walk(scripts_root):
-                if self._is_excluded(cur):
-                    dirs[:] = []
-                    continue
-                for fn in files:
-                    if not fn.lower().endswith(".script"):
-                        continue
-                    full = os.path.join(cur, fn)
-                    text = read_text_any(full)
-                    ids = list(_SCRIPT_TRANSLATE_RE.findall(text))
-                    for v in _SCRIPT_QUOTED_RE.findall(text):
-                        if v in self._id_files and v not in ids:
-                            ids.append(v)
-                    for v in ids:
-                        add_ref(v, full, count_unresolved=False)
-
-        self._ref_counts = refs
-        self._ref_files = ref_files
-        self._unresolved = unresolved
-        self.log("引用层：%d 个 XML/脚本，%d 条引用（%d 个不同 ID）；"
-                 "未解析 %d 个"
-                 % (len(ref_files), sum(refs.values()), len(refs),
-                    len(unresolved)))
-        if unresolved:
-            top = sorted(unresolved.items(), key=lambda kv: -kv[1])[:20]
-            self.log("未解析引用（保留原文，前 20）：%s"
-                     % "、".join("%s×%d" % (k, v) for k, v in top), "warn")
-        return refs, ref_files, unresolved
-
-    def _pick_source(self, ent):
-        """按游戏语言取源文：显式源语言 → localization → rus 优先。
-
-        STALKER 系 MOD 的主语言基本是俄语。旧逻辑用 vendor 的
-        getRecommendLangText 会优先 eng，把英语意译当原文（例如
-        “all right”被翻成“所有 向右”、“rest”被翻成“休息”），
-        俄文原文反而没被使用。这里默认 rus 优先，只有缺 rus 才用 eng。
-        """
-        texts = ent.texts or {}
-        if not isinstance(texts, dict):
-            return self.p.getRecommendLangText(ent, self.tgt)
-        order = []
-        if isinstance(self.src_lang, str) and self.src_lang != "auto":
-            order.append(self.src_lang)
-        if self._lang_hint:
-            order.append(self._lang_hint)
-        order += ["rus", "text", "eng", "ukr", "tur"]
-        order += sorted(key for key in texts
-                        if isinstance(key, str) and key not in ("chs", "zh")
-                        and key not in order)
-        seen = set()
-        for lang in order:
-            if lang in seen:
-                continue
-            seen.add(lang)
-            value = texts.get(lang, "")
-            if value and value.strip():
-                return lang, value
-        return self.p.getRecommendLangText(ent, self.tgt)
-
-    def _reference_candidates(self):
-        total = todo = protected = 0
-        tm_values = []
-        for full, table in self._table_entries.items():
-            rel = os.path.relpath(full, self.in_dir)
-            for ent in table.values():
-                _lang, src = self._pick_source(ent)
-                if not src or not src.strip():
-                    continue
-                if self._looks_like_target(src):
-                    continue
-                if not _has_translatable_text(src):
-                    continue
-                if looks_like_code_or_debug(rel, src):
-                    continue
-                total += 1
-                tm_values.append(src)
-                if self.only_referenced and ent.id not in self._ref_counts:
-                    continue
-                if self.protect_proper and looks_like_proper_text(rel, src):
-                    protected += 1
-                    continue
-                todo += 1
-        self._tm_enable_global(tm_values)
-        return total, todo, protected
-
-    def _run_reference_layer(self, done_dir, reuse):
-        self._build_text_index()
-        if not self._table_entries:
-            self.log("没有找到 configs/text 文本表", "warn")
-            return False
-        self._scan_references()
-        total, todo, protected = self._reference_candidates()
-        self.log("引用层预览：可译条目 %d 条，其中待译 %d 条，保护专名 %d 条"
-                 % (total, todo, protected))
-        if self.preview_reference:
-            self.log("预览完成（未写盘）。取消勾选「先预览」后再开始即执行。",
-                     "ok")
-            return True
-
-        # 早期生成的根目录表没有注册进 localization.ltx，
-        # 属于旧机制残留；引用层模式不再产出它，顺手清掉避免误部署。
-        for stale in ("___auto_put_this_to_text_folder.xml",
-                      "待确认_未解析引用.csv"):
-            try:
-                os.remove(os.path.join(done_dir, stale))
-            except OSError:
-                pass
-
-        tables = sorted(self._table_entries)
-        n_tables = len(tables)
-        changed = copied = translated = skipped = failed = 0
-
-        def _one(item):
-            idx, full = item
-            rel = os.path.relpath(full, self.in_dir)
-            out_path = os.path.join(done_dir, rel)
-            st = self._translate_table(full, out_path, rel)
-            return idx, rel, st
-
-        items = list(enumerate(tables, 1))
-        done_n = 0
-        trans_total = 0
-        ent_total = 0
-        trans_tables = 0
-
-        def _report(rel):
-            """每处理完一张文本表就回报一次：已处理张数 / 总张数 + 累计翻译量。"""
-            self.progress({"file": rel, "file_idx": done_n, "files": n_tables,
-                           "ids": trans_total, "total_ids": ent_total,
-                           "tabs": trans_tables, "pending": self.pending_files,
-                           "reqs": self.req_count, "unit": "个文件"})
-
-        if self.parallel > 1:
-            from concurrent.futures import ThreadPoolExecutor, as_completed
-            self.log("多路翻译：%d 路并发处理 %d 张文本表（每路 %d token）"
-                     % (self.parallel, n_tables, self.ctx_size), "ok")
-            results = []
-            with ThreadPoolExecutor(max_workers=self.parallel) as pool:
-                futures = [pool.submit(_one, item) for item in items]
-                for fut in as_completed(futures):
-                    if self._cancelled():
-                        for f in futures:
-                            f.cancel()
-                        self.log("已取消，已处理的文本表保留在输出目录")
-                        return False
-                    idx, rel, st = fut.result()
-                    done_n += 1
-                    trans_total += st["translated"]
-                    ent_total += st.get("total", 0)
-                    if st["translated"]:
-                        trans_tables += 1
-                    results.append((idx, rel, st))
-                    _report(rel)
-            results.sort(key=lambda x: x[0])
-        else:
-            results = []
-            for item in items:
-                if self._cancelled():
-                    self.log("已取消，已处理的文本表保留在输出目录")
-                    return False
-                idx, rel, st = _one(item)
-                done_n += 1
-                trans_total += st["translated"]
-                ent_total += st.get("total", 0)
-                if st["translated"]:
-                    trans_tables += 1
-                results.append((idx, rel, st))
-                _report(rel)
-
-        for idx, rel, st in results:
-            translated += st["translated"]
-            skipped += st["skipped"]
-            failed += st["failed"]
-            changed += 1 if st["changed"] else 0
-            copied += 1 if st["copied"] else 0
-            if idx == 1 or idx == n_tables or idx % 20 == 0:
-                self.log("文本表 %d/%d（%d%%）：%s"
-                         % (idx, n_tables, 100 * idx // n_tables, rel))
-        copied_refs = self._copy_reference_layer(done_dir)
-        lit = {"files": 0, "entries": 0}
-        if self.translate_literals:
-            lit = self._run_literal_layer(done_dir)
-        self.empty_files = sum(1 for t in self._table_entries.values()
-                               if not t)
-        self.log("引用层完成：改写文本表 %d 个，原样复制 %d 个；"
-                 "复制引用/配置 %d 个；译 %d 条，跳过噪声 %d 条，失败 %d 条；"
-                 "脚本/XML 字面文本：改写 %d 个文件 / %d 条"
-                 % (changed, copied, copied_refs, translated, skipped, failed,
-                    lit["files"], lit["entries"]), "ok")
-        return (failed == 0 and self.failed_strings == 0
-                and not self._cancelled())
-
-    def _run_literal_layer(self, done_dir):
-        """把脚本/XML 里**不是 ID** 的字面文本抽到新表并注册。
-
-        文本表只解决“ID → 正文”这一层；脚本和 UI XML 里仍有直接写着的
-        俄文/英文（补丁的 scripts.xml / ui.xml / gameplay.xml 就是这些）。
-        不处理它们，游戏里就会看到俄文或 ID。这里复用旧的提取器：
-        字面文本 → 新 ID，原文件只换 ASCII ID，新表 UTF-8。
-        """
-        prefix = "sgtat_gen_text_%d_" % time.time_ns()
-        gen = [0]
-        extract = {}
-        written = 0
-        total = 0
-        targets = []
-        for full in self._iter_files():
-            rel = os.path.relpath(full, self.in_dir)
-            kind = self._classify_file(full, rel)
-            if kind in ("cfg", "script"):
-                targets.append((kind, rel, full))
-        targets.sort(key=lambda x: x[1])
-        try:
-            for kind, rel, full in targets:
-                if self._cancelled():
-                    self.log("已取消：字面文本层已处理的文件保留在输出目录")
-                    break
-                out_path = os.path.join(done_dir, rel)
-                old_mode = self.mode
-                self.mode = "cfgxml" if kind == "cfg" else "scriptE"
-                file_extract = {}
-                try:
-                    rep = self._process_non_text(
-                        full, {}, file_extract, prefix, gen)
-                except Exception as e:
-                    self.failed_strings += 1
-                    self.detail("  字面文本提取失败：%s（%s: %s）"
-                                % (rel, type(e).__name__, e))
-                    rep = None
-                finally:
-                    self.mode = old_mode
-                if rep is None:
-                    continue
-                whole, rep_dict, enc = rep
-                if not rep_dict:
-                    continue
-                try:
-                    self._write_atomic(
-                        out_path,
-                        lambda p: self.p.generateOutputFileFromString(
-                            p, whole, needXmlHeader=False,
-                            encoding=enc or "utf-8"))
-                except Exception as e:
-                    self.failed_strings += 1
-                    self._ledger.pop(rel.replace("\\", "/"), None)
-                    self.detail("  字面文本回写失败：%s（%s: %s）"
-                                % (rel, type(e).__name__, e))
-                    continue
-                self._merge_generated_extract(extract, file_extract)
-                written += 1
-                total += len(rep_dict)
-                self._record_done(rel, full, out_path)
-                if written % 20 == 0:
-                    self.log("字面文本：已改写 %d 个文件 / %d 条…"
-                             % (written, total))
-        finally:
-            if extract:
-                name = "sgtat_auto_texts"
-                table_path = os.path.join(done_dir, "configs", "text",
-                                          name + ".xml")
-                self._flush_generated_ids(done_dir, extract,
-                                          name="configs/text/%s.xml" % name)
-                try:
-                    self._register_localization(done_dir, name)
-                except Exception as e:
-                    self.failed_strings += 1
-                    self.detail("  localization.ltx 注册失败：%s" % e)
-                    raise
-                self.log("字面文本表：%s（%d 条），已写入 localization.ltx"
-                         % (table_path, len(extract)), "ok")
-        return {"files": written, "entries": total}
-
-    def _register_localization(self, done_dir, table_name):
-        """把生成的文本表名追加到 configs/localization.ltx 的 files 行。"""
-        src = os.path.join(self.in_dir, "configs", "localization.ltx")
-        out = os.path.join(done_dir, "configs", "localization.ltx")
-        if os.path.isfile(src):
-            text = read_text_any(src)
-        else:
-            text = ("[string_table]\nlanguage = %s\nfont_prefix =\n"
-                    % (self._lang_hint or "rus"))
-        lines = text.splitlines()
-        found = False
-        for i, line in enumerate(lines):
-            s = line.strip()
-            if s.lower().startswith("files") and "=" in s:
-                key, value = line.split("=", 1)
-                names = [x.strip() for x in value.split(",") if x.strip()]
-                if table_name not in names:
-                    names.append(table_name)
-                lines[i] = key + "= " + ", ".join(names)
-                found = True
-                break
-        if not found:
-            lines.extend(["", "files = " + table_name])
-        def write_localization(path):
-            with open(path, "w", encoding="utf-8", newline="\n") as stream:
-                stream.write("\n".join(lines) + "\n")
-
-        self._write_atomic(out, write_localization)
-
-    @staticmethod
-    def _entry_style(rel, src):
-        low = (rel or "").lower().replace(os.sep, "/")
-        if "dialog" in low:
-            return "dialogue"
-        if ("/ui/" in low or "ui_" in low or "items" in low):
-            return "label"
-        s = (src or "").strip()
-        if len(s) <= 48 and not re.search(r"[.!?。！？；;:]", s):
-            return "label"
-        if ("encyclopedia" in low or "news" in low
-                or "enc_" in low):
-            return "formal"
-        return "dialogue"
-
-    def _scene_context(self, metas, idx):
-        """取同表前后各 2 条源文作场景上下文（最多 240 字符）。"""
-        parts = []
-        for j in range(idx - 1, max(-1, idx - 3), -1):
-            src = (metas[j].get("src") or "").strip()
-            if src:
-                parts.insert(0, "前一句：" + src)
-        for j in range(idx + 1, min(len(metas), idx + 3)):
-            src = (metas[j].get("src") or "").strip()
-            if src:
-                parts.append("后一句：" + src)
-        text = "\\n".join(parts)
-        return text[:240]
-
-    def _parse_numbered_batch(self, out, n):
-        found = {}
-        for line in (out or "").splitlines():
-            if not line.strip():
-                continue
-            m = re.match(r"^\s*\[(\d+)\]\s*(.*)$", line)
-            if not m:
-                return None
-            i = int(m.group(1))
-            if i < 1 or i > n or i in found:
-                return None
-            found[i] = m.group(2).strip()
-        if len(found) != n or any(not found.get(i) for i in range(1, n + 1)):
-            return None
-        return [found[i] for i in range(1, n + 1)]
-
-    def _translate_dialogue_batch(self, batch):
-        """批量翻译 2～4 条连续短对话；失败返回 {}，交由逐条路径。"""
-        # ★ 2.0.24（IWP 全量审计 D1）：批量路径与单条路径同等保护——
-        # 送翻前 mask 运行期占位符（%c[default]、$clr、%s…），译后逐行
-        # 还原并校验；任何不一致整批丢弃交回单条路径（那里有完整闸门）。
-        # 旧实现直接送原文，实测 16 条 %c[default]→%c[默认]、$clr_2REMOVE
-        # 被拆译、色码元组内插换行——引擎按未知色名/坏变量渲染，运行期破坏。
-        lines = []
-        mappings = []
-        for x in batch:
-            masked, mapping = mask_runtime_tokens(x["src"])
-            lines.append(masked)
-            mappings.append(mapping)
-        pairs = []
-        seen = set()
-        for x in batch:
-            for k, v in self._glossary_hits(x["src"]):
-                if k not in seen:
-                    seen.add(k)
-                    pairs.append((k, v))
-        with self._stat_lock:
-            self.batch_stats["batches"] += 1
-            self.req_count += 1
-            self.trans_chars += sum(len(x["src"]) for x in batch)
-        try:
-            out = self.srv.translate_batch(
-                lines, batch[0]["lang"], self.tgt,
-                glossary_hits=pairs or None,
-                temperature=self.dialogue_temp)
-        except Exception:
-            self.batch_stats["failed"] += 1
-            return {}
-        parsed = self._parse_numbered_batch(out, len(batch))
-        if not parsed:
-            self.batch_stats["failed"] += 1
-            return {}
-        # ★ 2.0.24（IWP 全量审计 D11）：批处理错位签名。模型把上一行的
-        # 译文复制/顺延到下一行（实测 agr_technic_dialogs_737 拿到 735
-        # 源文的另一种译法、本条一字未译）——行数一致、长度比 0.23 也
-        # 高于闸门下限，唯一可靠信号是「不同源文、完全相同译文」。
-        # 命中任何一对即整批丢弃，交单条路径逐条重翻。
-        # 短应答豁免：「是的。/好的。」类问候语不同源文同译是正常收敛，
-        # 只有 ≥30 字的整句译文重复才可能是错位（实测错位样本 ~90 字）。
-        for _i in range(len(parsed)):
-            for _j in range(_i + 1, len(parsed)):
-                if (len(parsed[_i].strip()) >= 30
-                        and parsed[_i].strip() == parsed[_j].strip()
-                        and batch[_i]["src"].strip()
-                        != batch[_j]["src"].strip()):
-                    self.batch_stats["failed"] += 1
-                    return {}
-        result = {}
-        for x, mapping, text in zip(batch, mappings, parsed):
-            text = clean_translation_output(text)
-            if mapping:
-                text = restore_runtime_tokens(text, mapping)
-                if text is None:
-                    # 掩码丢失/重复/被改动：整批不可信，回退单条路径
-                    self.batch_stats["failed"] += 1
-                    return {}
-            if not runtime_tokens_match(x["src"], text):
-                self.batch_stats["failed"] += 1
-                return {}
-            if text.count("\\n") != x["src"].count("\\n"):
-                self.batch_stats["failed"] += 1
-                return {}
-            if (self.tgt == "chs"
-                    and missing_big_numbers(x["src"], text)):
-                self.batch_stats["failed"] += 1
-                return {}
-            if self.tgt == "chs" and find_glue_residue(text):
-                # 粘连残词交单条路径重试（批量里无法定向重试）
-                self.batch_stats["failed"] += 1
-                return {}
-            text = self._repair_residual_source_terms(x["src"], text)
-            text = self._repair_residual_latin_names(x["src"], text)
-            xlang = x["lang"]
-            if xlang in ("auto", "text", "rus", "eng"):
-                det = detect_text_lang(x["src"])
-                if det:
-                    xlang = det
-            text = self._repair_known_semantic_terms(
-                x["src"], text, xlang)
-            if self._entry_style(x["rel"], x["src"]) == "dialogue":
-                text = style_cleanup_cn(text)
-            if (not text or not has_cjk(text)
-                    or text.strip() == x["src"].strip()
-                    or looks_like_prompt_echo(text, x["src"])
-                    or (has_source_profanity(x["src"])
-                        and not has_zh_profanity(text))):
-                self.batch_stats["failed"] += 1
-                return {}
-            if semantic_role_issues(x["src"], text, xlang):
-                self.batch_stats["failed"] += 1
-                return {}
-            lead = x["src"][:len(x["src"]) - len(x["src"].lstrip())]
-            trail = x["src"][len(x["src"].rstrip()):]
-            result[x["id"]] = (x["lang"], lead + text.strip() + trail)
-        self.batch_stats["lines"] += len(batch)
-        return result
-
-    def _translate_table(self, full, out_path, rel):
-        st = {"translated": 0, "skipped": 0, "failed": 0,
-              "changed": False, "copied": False}
-        try:
-            ents = self._parse(self.p.parse_xray_text_xml, full,
-                               read_encoding_chain(full))
-        except Exception as e:
-            st["failed"] += 1
-            self.detail("  文本表解析失败：%s（%s）" % (rel, e))
-            return st
-        if not ents:
-            self._discard_unchanged_output(rel, out_path)
-            return st
-        # 多路并发时表级 TM 的 _tm_local_enabled/_tm_cache 是实例状态，
-        # 会被其他 worker 覆盖；只保留任务级全局 TM（在并发前已算好）。
-        if self.tm_lite and not self._tm_global_enabled and self.parallel == 1:
-            tm_values = []
-            for ent in ents:
-                _lang, src = self._pick_source(ent)
-                if not src or not src.strip():
-                    continue
-                if self._looks_like_target(src) or not _has_translatable_text(src):
-                    continue
-                if (looks_like_code_or_debug(rel, src)
-                        or looks_like_generated_noise(rel, src)
-                        or looks_like_technical_text(src)
-                        or (looks_like_identifier_text(src)
-                            and not is_player_facing_label(rel, src))):
-                    continue
-                if self.protect_proper and looks_like_proper_text(rel, src):
-                    continue
-                tm_values.append(src)
-            self._tm_enable_table(tm_values, rel)
-        changes = {}
-        metas = []
-        for ent in ents:
-            lang0, src0 = self._pick_source(ent)
-            metas.append({
-                "id": ent.id, "ent": ent, "lang": lang0, "src": src0,
-                "rel": rel, "style": self._entry_style(rel, src0 or ""),
-            })
-        st["total"] = len(metas)
-        batched_ids = set()
-        # ★ 2.0.13：批量不再因 force_glossary 整体关闭。原实现里只要开着
-        # 强制术语，dialog 表就全走逐条——实测请求数翻倍是速度主因之一。
-        # 术语安全由下面 _ok() 保证：含 hard 术语/占位符/词库整条命中的条目
-        # 一律踢出批次走逐条，批量只处理「无硬术语的连续短对话」。
-        if "dialog" in rel.lower():
-            def _ok(meta):
-                src0 = meta["src"]
-                if not src0 or not src0.strip():
-                    return False
-                if len(src0) < 4 or len(src0) > 220 or chr(10) in src0:
-                    return False
-                if _RUNTIME_TOKEN_RE.search(src0):
-                    return False
-                # 含 hard 术语的句子不进批量：批量只用提示，容易丢术语；
-                # 交给逐条路径（占位符/校验更完整）。
-                if (self.gloss_hard is not None
-                       and any(k in self.gloss_hard
-                               for k, _v in self._glossary_hits(src0))):
-                    return False
-                if self._looks_like_target(src0) or not _has_translatable_text(src0):
-                    return False
-                if src0.strip() in self.glossary:
-                    return False
-                if (looks_like_code_or_debug(rel, src0)
-                        or looks_like_generated_noise(rel, src0)
-                        or looks_like_technical_text(src0)
-                        or (looks_like_identifier_text(src0)
-                            and not is_player_facing_label(rel, src0)
-                            and not _id_player_visible(meta["id"]))):
-                    return False
-                if self.only_referenced and meta["id"] not in self._ref_counts:
-                    return False
-                # ★ 2.0.7：术语库整条命中的条目必须进批次（写入点直接取译名）
-                if src0 not in self.glossary \
-                        and termbase_lookup(src0) is not None:
-                    return True
-                if self.protect_proper and looks_like_proper_text(rel, src0):
-                    return False
-                return True
-            i = 0
-            while i < len(metas):
-                if not _ok(metas[i]):
-                    i += 1
-                    continue
-                batch = [metas[i]]
-                total = len(metas[i]["src"])
-                j = i + 1
-                while (j < len(metas) and len(batch) < 4
-                       and _ok(metas[j])
-                       and metas[j]["lang"] == metas[i]["lang"]
-                       and total + len(metas[j]["src"]) <= 700):
-                    batch.append(metas[j])
-                    total += len(metas[j]["src"])
-                    j += 1
-                if len(batch) >= 2:
-                    got = self._translate_dialogue_batch(batch)
-                    if got:
-                        changes.update(got)
-                        batched_ids.update(got)
-                        st["translated"] += len(got)
-                        i = j
-                        continue
-                i += 1
-        for meta_idx, meta in enumerate(metas):
-            ent = meta["ent"]
-            if ent.id in batched_ids:
-                continue
-            if self._cancelled():
-                break
-            lang, src = meta["lang"], meta["src"]
-            if not src or not src.strip():
-                continue
-            if self._looks_like_target(src):
-                continue
-            exact = src.strip()
-            if (exact in self.glossary
-                    and (exact not in self.session_only_keys
-                         or is_player_facing_label(rel, src))):
-                # 制作名单/音乐/武器短名即使命中了核心词条，也要服从
-                # “保护专名”；否则 credits 里的 Harris 会被改写成中文。
-                if not (self.protect_proper
-                        and looks_like_hard_protected_file(rel)):
-                    lead = src[:len(src) - len(src.lstrip())]
-                    trail = src[len(src.rstrip()):]
-                    new_exact = lead + self.glossary[exact] + trail
-                    if new_exact != src:
-                        changes[ent.id] = (lang, new_exact)
-                        st["translated"] += 1
-                    continue
-            if not _has_translatable_text(src):
-                continue
-            if looks_like_code_or_debug(rel, src):
-                # ★ 2.0.22：全大写型号/弹药规格且词库有整串中文译名时直取，
-                # 不再被 code 过滤整条拦掉（见 _is_model_code_form 说明）。
-                _mc = (termbase_exact_translation(src)
-                       if (src not in self.glossary
-                           and not looks_like_hard_protected_file(rel)
-                           and _is_model_code_form(rel, src)) else None)
-                if _mc is not None and _mc != src:
-                    changes[ent.id] = (lang, _mc)
-                    st["translated"] += 1
-                    continue
-                st["skipped"] += 1
-                continue
-            # ★ 2.0.21（全 MOD 重放审计）：术语直取/句式直译提前到
-            # noise/tech/identifier 判定之前——词库整串命中 = 明确的
-            # 翻译意图，任何筛选都不该拦（实测弹药名 '12x76 "Arrow"
-            # slugs' 被 technical 跳过、WOT 升级名被 identifier 跳过，
-            # 而词库均有同形态译名）。credits/音乐等强保护文件除外。
-            if not looks_like_hard_protected_file(rel):
-                _exact = termbase_exact_translation(src) \
-                    if src not in self.glossary else None
-                if _exact is not None and _exact != src:
-                    changes[ent.id] = (lang, _exact)
-                    st["translated"] += 1
-                    continue
-                # ★ 2.0.13 通用新闻句式：固定英文句式 + 词库名词零成本直译。
-                if src not in self.glossary:
-                    _pat = pattern_translate(src, termbase_exact_translation)
-                    if _pat is not None:
-                        changes[ent.id] = (lang, _pat)
-                        st["translated"] += 1
-                        continue
-            if (looks_like_generated_noise(rel, src)
-                    or looks_like_technical_text(src)
-                    or (looks_like_identifier_text(src)
-                        and not is_player_facing_label(rel, src)
-                        and not _id_player_visible(ent.id))):
-                st["skipped"] += 1
-                continue
-            if self.only_referenced and ent.id not in self._ref_counts:
-                continue
-            if self.protect_proper and looks_like_proper_text(rel, src):
-                # ★ 2.0.21：保护命中先试硬层子串替换（Vasya "Boar"→
-                # 瓦西娅"野猪" 形态），词库无可用词才保留原文。
-                _p = (partial_glossary_translation(src, rel)
-                      if src not in self.glossary else None)
-                if _p is not None and _p != src:
-                    changes[ent.id] = (lang, _p)
-                    st["translated"] += 1
-                else:
-                    st["skipped"] += 1
-                continue
-            use_lang = self.src_lang if self.src_lang != "auto" else lang
-            # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
-            # 即使显式选了 rus/eng，正文明显是另一种语言时也按正文判断；
-            # ukr 不覆盖（俄/乌都是西里尔，粗判分不出来）。
-            if use_lang in ("auto", "text", "rus", "eng"):
-                det = detect_text_lang(src)
-                if det and det != use_lang:
-                    use_lang = det
-            ctx = ""
-            if meta["style"] == "dialogue" and "dialog" in rel.lower():
-                ctx = self._scene_context(metas, meta_idx)
-            try:
-                out = self._translate_one(
-                    src, use_lang, context=ctx, style=meta["style"])
-            except Exception as e:
-                st["failed"] += 1
-                self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
-                            % (ent.id, type(e).__name__, e))
-                continue
-            if not out or not out.strip():
-                continue
-            out = clean_translation_output(out)
-            lead = src[:len(src) - len(src.lstrip())]
-            trail = src[len(src.rstrip()):]
-            new = lead + out.strip() + trail
-            if new == src:
-                self.failed_strings += 1
-                continue
-            changes[ent.id] = (lang, new)
-            st["translated"] += 1
-        if not changes:
-            self._discard_unchanged_output(rel, out_path)
-            return st
-        try:
-            open(full, "rb").read().decode("utf-8-sig")
-            utf8_table = True
-        except (OSError, UnicodeDecodeError):
-            utf8_table = False
-        if utf8_table:
-            wrote = self._write_table_changes(full, out_path, changes, rel)
-        else:
-            # 老 MOD 常见 cp1251 表；中文无法用 cp1251 写回，转成 UTF-8
-            # 并重写声明。会丢注释/多语言标签，但不会漏译。
-            wrote = self._write_table_as_utf8(full, out_path, ents,
-                                             changes, rel)
-        if wrote:
-            st["changed"] = True
-            self._audit_tables.add(rel)   # ★ 2.0.2：登记进终检清单
-            self._record_done(rel, full, out_path)
-        else:
-            st["failed"] += 1
-            self._ledger.pop(rel.replace("\\", "/"), None)
-            self.detail("  文本表写入失败，未记录完成：%s" % rel)
-        return st
-
-    def _write_table_as_utf8(self, full, out_path, ents, changes, rel):
-        """非 UTF-8 文本表：保持 <rus>/<eng>/<tur> 结构转 UTF-8。
-
-        不能走 generateOutputXml：它只写 <text>，会把原文的 <rus>/<eng>
-        标签全部丢掉（实测这个 MOD 的 stable_dialogs 从 52 KB 缩到 24 KB，
-        引擎按 rus 读时就可能读不到中文）。这里逐条改 <rus> 内容，
-        只把 XML 声明的编码换成 utf-8。
-        """
-        try:
-            raw = open(full, "rb").read()
-        except OSError:
-            return False
-        text = None
-        had_bom = raw.startswith(b"\xef\xbb\xbf")
-        for enc in ("utf-8-sig", "utf-8", "cp1251", "cp1252"):
-            try:
-                text = raw.decode(enc)
-                break
-            except UnicodeDecodeError:
-                continue
-        if text is None:
-            text = raw.decode("utf-8", "replace")
-        applied = missed = 0
-        for eid, (lang, new_text) in changes.items():
-            text, ok = self._patch_table_text(text, eid, lang, new_text)
-            if ok:
-                applied += 1
-            else:
-                missed += 1
-        if applied == 0:
-            self.log("文本表条目定位失败，未写出译文：%s" % rel, "warn")
-            return False
-        if missed:
-            self.detail("  %s：%d 条已改写，%d 条定位失败（保留原文）"
-                        % (rel, applied, missed))
-        text = re.sub(
-            r'(<\?xml[^>]*?\bencoding\s*=\s*["\'])[^"\']+(["\'])',
-            r"\1utf-8\2", text, count=1, flags=re.I)
-        if not text.lstrip().startswith("<?xml"):
-            text = '<?xml version="1.0" encoding="utf-8"?>\n' + text
-        data = (b"\xef\xbb\xbf" if had_bom else b"") + text.encode("utf-8")
-        def write_bytes(path):
-            with open(path, "wb") as stream:
-                stream.write(data)
-
-        try:
-            self._write_atomic(out_path, write_bytes)
-        except OSError as e:
-            self.log("文本表写入失败，未写出译文：%s（%s）" % (rel, e), "err")
-            return False
-        self.log("文本表转 UTF-8 并保留语言标签：%s" % rel, "warn")
-        return True
-
-    @staticmethod
-    def _patch_table_text(text, eid, lang, new_text):
-        block_re = re.compile(
-            r"(<string\b[^>]*\bid\s*=\s*[\"']%s[\"'][^>]*>)(.*?)"
-            r"(</string>)" % re.escape(eid), re.S)
-        m = block_re.search(text)
-        if not m:
-            return text, False
-        inner = m.group(2)
-        tag = lang if isinstance(lang, str) and re.fullmatch(
-            r"[A-Za-z_][A-Za-z0-9_.-]*", lang) else "text"
-        if not re.search(r"<%s\b" % re.escape(tag), inner):
-            tag = "text"
-        tag_re = re.compile(r"(<%s\b[^>]*>)(.*?)(</%s>)" % (tag, tag), re.S)
-        tm = tag_re.search(inner)
-        # ★ 2.0.13 空白保真：源 <text> 内容的前导/尾随空白（缩进、换行）
-        # 属于排版约定，模型译文常把它们抹平（实测 ui_hint_localization_rus
-        # 丢前导空格）。这里把源内容的首尾空白套回译文，避免游戏内错位。
-        src_body = tm.group(2) if tm else ""
-        lead = src_body[:len(src_body) - len(src_body.lstrip())]
-        trail = src_body[len(src_body.rstrip()):]
-        new_body = lead + str(new_text).strip() + trail
-        esc = (new_body.replace("&", "&amp;").replace("<", "&lt;")
-               .replace(">", "&gt;"))
-        if tm:
-            inner2 = inner[:tm.start(2)] + esc + inner[tm.end(2):]
-        else:
-            inner2 = (inner.rstrip() + "\n\t\t<%s>%s</%s>\n\t"
-                      % (tag, esc, tag))
-        return text[:m.start(2)] + inner2 + text[m.end(2):], True
-
-    def _write_table_changes(self, full, out_path, changes, rel):
-        try:
-            raw = open(full, "rb").read()
-        except OSError:
-            return False
-        had_bom = raw.startswith(b"\xef\xbb\xbf")
-        try:
-            text = raw.decode("utf-8-sig")
-        except UnicodeDecodeError:
-            self.log("非 UTF-8 文本表不能原地改写：%s" % rel, "warn")
-            return False
-        applied = missed = 0
-        for eid, (lang, new_text) in changes.items():
-            text, ok = self._patch_table_text(text, eid, lang, new_text)
-            if ok:
-                applied += 1
-            else:
-                missed += 1
-        if applied == 0:
-            self.log("文本表条目定位失败，未写出译文：%s" % rel, "warn")
-            return False
-        if missed:
-            self.detail("  %s：%d 条已改写，%d 条定位失败（保留原文）"
-                        % (rel, applied, missed))
-        # ★ 2.0.11：UTF-8 表原地改写时同步把 XML 声明的 encoding 改成 utf-8。
-        # 旧逻辑只写字节不改声明：源码声明 windows-1251、内容却是 UTF-8 中文，
-        # 引擎若按声明解码就会乱码（实测 IWP 输出 5/5 张表声明不符）。
-        text = re.sub(
-            r'(<\?xml[^>]*?\bencoding\s*=\s*["\'])[^"\']+(["\'])',
-            r"\1utf-8\2", text, count=1, flags=re.I)
-        if not text.lstrip().startswith("<?xml"):
-            text = '<?xml version="1.0" encoding="utf-8"?>\n' + text
-        data = (b"\xef\xbb\xbf" if had_bom else b"") + text.encode("utf-8")
-        def write_bytes(path):
-            with open(path, "wb") as stream:
-                stream.write(data)
-
-        try:
-            self._write_atomic(out_path, write_bytes)
-        except OSError as e:
-            self.log("文本表写入失败，未写出译文：%s（%s）" % (rel, e), "err")
-            return False
-        return True
-
-    def _copy_reference_layer(self, done_dir):
-        if not self.copy_reference:
-            return 0
-        copied = 0
-        for full in sorted(self._ref_files):
-            rel = os.path.relpath(full, self.in_dir)
-            out = os.path.join(done_dir, rel)
-            if os.path.isfile(out) and _files_equal(full, out):
-                continue
-            try:
-                self._copy_file(full, out)
-                copied += 1
-            except Exception as e:
-                self.failed_strings += 1
-                self.detail("  复制引用层失败：%s（%s）" % (rel, e))
-        # 顶层 configs/*.ltx：localization.ltx 是文本表注册表，
-        # external.ltx/fonts.ltx 等是解析/字体配置；补丁把它们算作有用文件。
-        # 原样复制（不改内容），保证“不漏文件”。
-        cfg = os.path.join(self.in_dir, "configs")
-        if os.path.isdir(cfg):
-            for fn in sorted(os.listdir(cfg)):
-                if not fn.lower().endswith(".ltx"):
-                    continue
-                full = os.path.join(cfg, fn)
-                if not os.path.isfile(full):
-                    continue
-                rel = os.path.relpath(full, self.in_dir)
-                out = os.path.join(done_dir, rel)
-                if os.path.isfile(out) and _files_equal(full, out):
-                    continue
-                try:
-                    self._copy_file(full, out)
-                    copied += 1
-                except Exception as e:
-                    self.failed_strings += 1
-                    self.detail("  复制配置失败：%s（%s）" % (rel, e))
-        if self._unresolved:
-            try:
-                path = os.path.join(done_dir, "待确认_未解析引用.csv")
-                with open(path, "w", encoding="utf-8-sig",
-                          newline="") as f:
-                    writer = csv.writer(f)
-                    writer.writerow(["id", "count"])
-                    for key, count in sorted(
-                            self._unresolved.items(),
-                            key=lambda kv: (-kv[1], kv[0])):
-                        writer.writerow([key, count])
-            except Exception as e:
-                self.failed_strings += 1
-                self.detail("  未解析引用清单写入失败：%s" % e)
-        return copied
-
-    def _copy_file(self, src, dst):
-        self._write_atomic(dst, lambda tmp: shutil.copy2(src, tmp))
-
-    @staticmethod
-    def _prune_empty_dirs(root):
-        """自底向上删除不含任何文件的空目录；保留根目录本身。
-        返回删除的目录数。"""
-        removed = 0
-        if not os.path.isdir(root):
-            return 0
-        for cur, dirs, files in os.walk(root, topdown=False):
-            if os.path.abspath(cur) == os.path.abspath(root):
-                continue
-            try:
-                if not os.listdir(cur):
-                    os.rmdir(cur)
-                    removed += 1
-            except OSError:
-                pass
-        return removed
-
-    def _classify_file(self, full, rel):
-        """文件类型判定（转发到模块级 classify_xray_file，与勘察共用一处口径）。"""
-        return classify_xray_file(full, rel)
-
-    @staticmethod
-    def _merge_generated_extract(target, source):
-        for key, value in source.items():
-            if key == "chars_all_in":
-                target.setdefault(key, set()).update(value or ())
-            else:
-                target[key] = value
-
-    def _flush_generated_ids(self, done_dir, extract, chars_all=None,
-                             name="___auto_put_this_to_text_folder.xml"):
-        data = dict(extract or {})
-        chars = set(chars_all or ())
-        chars.update(data.pop("chars_all_in", set()) or set())
-        path = os.path.join(done_dir, name)
-        normalized = name.replace("\\", "/")
-        invalid = normalized in getattr(self, "_invalid_generated_tables", set())
-        if os.path.isfile(path) and not invalid:
-            try:
-                old = self._parse(self.p.parse_xray_text_xml, path,
-                                  read_encoding_chain(path))
-                for ent in (old or []):
-                    _lang, value = self.p.getRecommendLangText(ent, self.tgt)
-                    if not value:
-                        values = [v for v in (ent.texts or {}).values() if v]
-                        value = values[0] if values else ""
-                    if value:
-                        data.setdefault(ent.id, value)
-            except Exception:
-                pass
-        if chars:
-            text = "".join(sorted(chars))
-            for i, piece in enumerate(
-                    self.p.splitTextToPiecesAtLength(text, 500)):
-                data["text_gen_for_font_%d" % i] = piece
-        if not data and invalid:
-            try:
-                os.remove(path)
-            except FileNotFoundError:
-                pass
-            with self._ledger_lock:
-                self._ledger.pop(normalized, None)
-            self._invalid_generated_tables.discard(normalized)
-            return
-        if data:
-            self._write_atomic(
-                path,
-                lambda p: self.p.generateOutputXml(p, data, splitLength=1000))
-            try:
-                out_hash = sha256_file(path)
-                out_size = os.path.getsize(path)
-            except OSError as e:
-                raise OSError("生成表写入后校验失败：%s" % name) from e
-            with self._ledger_lock:
-                self._ledger[normalized] = {
-                    "in_size": 0, "in_mtime_ns": 0, "in_hash": "",
-                    "out_size": out_size, "out_hash": out_hash,
-                    "pipeline": PLUGIN_INFO["version"], "generated": True,
-                }
-            self._invalid_generated_tables.discard(normalized)
-
-    def _run_auto(self, done_dir, reuse):
-        temp_dir = os.path.join(done_dir, "__temp__")
-        os.makedirs(temp_dir, exist_ok=True)
-        reuse.update(self._read_existing(temp_dir))
-
-        targets = []
-        for root, _dirs, files in self._pruned_walk():
-            for fn in files:
-                full = os.path.join(root, fn)
-                rel = os.path.relpath(full, self.in_dir)
-                kind = self._classify_file(full, rel)
-                if kind:
-                    targets.append((kind, rel, full))
-        targets.sort(key=lambda x: x[1])
-        total = len(targets)
-        counts = {}
-        for kind, _, _ in targets:
-            counts[kind] = counts.get(kind, 0) + 1
-        self.log("识别到可翻译文件 %d 个：文本XML %d / 配置XML %d / ltx %d / 脚本 %d"
-                 % (total, counts.get("text", 0), counts.get("cfg", 0),
-                    counts.get("ltx", 0), counts.get("script", 0)))
-
-        extract = {}
-        prefix = "sgtat_gen_text_%d_" % time.time_ns()
-        gen = [0]
-        chars_all = set()
-        written = 0
-        failed = 0
-        trans_files = 0
-        try:
-            for idx, (kind, rel, full) in enumerate(targets, 1):
-                if self._cancelled():
-                    self.log("已取消，已完成文件保留在输出目录")
-                    break
-                out_path = os.path.join(done_dir, rel)
-                if self._should_skip(rel, full, out_path, kind):
-                    continue
-                self._log_progress(idx, total, rel)
-                self.progress({"file": rel, "file_idx": idx, "files": total,
-                               "ids": trans_files, "total_ids": 0,
-                               "tabs": trans_files, "pending": self.pending_files,
-                               "reqs": self.req_count, "unit": "个文件"})
-                if kind == "text":
-                    tmp = os.path.join(temp_dir, rel)
-                    try:
-                        n_texts = self._run_text_file(
-                            os.path.basename(full), full, out_path,
-                            tmp, reuse, idx, total)
-                    except Exception as e:
-                        failed += 1
-                        self.log("文件处理失败，已跳过：%s（%s: %s）"
-                                 % (rel, type(e).__name__, e), "err")
-                        continue
-                    if n_texts == -2:
-                        failed += 1
-                        continue
-                    if n_texts > 0:
-                        written += 1
-                        trans_files += 1
-                        self._record_done(rel, full, out_path)
-                else:
-                    mode = {"cfg": "cfgxml", "ltx": "ltx",
-                            "script": "scriptL"}[kind]
-                    old_mode = self.mode
-                    self.mode = mode
-                    file_extract = {}
-                    try:
-                        rep = self._process_non_text(
-                            full, reuse, file_extract, prefix, gen)
-                    except Exception as e:
-                        failed += 1
-                        self.log("文件处理失败，已跳过：%s（%s: %s）"
-                                 % (rel, type(e).__name__, e), "err")
-                        continue
-                    finally:
-                        self.mode = old_mode
-                    if rep is None:
-                        continue
-                    whole_text, rep_dict, enc = rep
-                    if rep_dict or self.output_anyway:
-                        try:
-                            if kind in ("cfg", "ltx"):
-                                self._write_atomic(
-                                    out_path,
-                                    lambda p: self.p.generateOutputFileFromString(
-                                        p, whole_text, needXmlHeader=False,
-                                        encoding=enc or "utf-8"))
-                            else:
-                                self._write_atomic(
-                                    out_path,
-                                    lambda p: self.p.generateOutputFileFromString(
-                                        p, whole_text, needXmlHeader=False))
-                        except Exception as e:
-                            failed += 1
-                            self._ledger.pop(rel.replace("\\", "/"), None)
-                            self.log("文件写入失败，已跳过：%s（%s: %s）"
-                                     % (rel, type(e).__name__, e), "err")
-                            continue
-                        self._merge_generated_extract(extract, file_extract)
-                        if kind == "script":
-                            chars_all |= file_extract.get("chars_all_in", set())
-                        written += 1
-                        self._record_done(rel, full, out_path)
-        except Exception as e:
-            failed += 1
-            self.log("自动翻译中断：%s: %s" % (type(e).__name__, e), "err")
-            return False
-        finally:
-            self._flush_generated_ids(done_dir, extract, chars_all)
-        self.log("已写出文件 %d 个（镜像原目录结构，格式保持不变）" % written)
-        if failed:
-            self.log("有 %d 个文件处理失败（已跳过，其余照常完成），详见日志"
-                     % failed, "warn")
-        return not failed and not self._cancelled()
-
-    def _flush_temp(self, temp_path, done):
-        """把当前进度写进 __temp__：取消/中断后重跑可直接复用已译部分。"""
-        if not done:
-            return
-        try:
-            self._write_atomic(
-                temp_path,
-                lambda p: self.p.generateOutputXml(p, done, splitLength=1000))
-            self._temp_clock = time.time()
-        except Exception as e:
-            self.detail("  临时进度写入失败：%s: %s" % (type(e).__name__, e))
-
-    def _run_text_file(self, fn, full, out_path, temp_path, reuse, idx, total):
-        """返回条目数；0 表示无变化，-1 表示取消，-2 表示写盘失败。"""
-        chain = read_encoding_chain(full)
-        texts = self._parse(self.p.parse_xray_text_xml, full, chain)
-        self.detail("  共 %d 条文本" % len(texts))
-        if not texts:
-            if os.path.exists(out_path):
-                if self._is_stale_empty_output(out_path):
-                    try:
-                        os.remove(out_path)
-                        self.detail("  已清理空占位输出：%s" % out_path)
-                    except OSError:
-                        pass
-                else:
-                    self.log("  未解析出条目，但既有译文有内容，已保留：%s"
-                             "（确认是空文件请手动删除）" % out_path, "warn")
-            return 0
-        if chain and chain[0] not in _ENC_UTF8:
-            samples = []
-            for ent in texts[:20]:
-                samples.extend((ent.texts or {}).values())
-            self._warn_mojibake(fn, samples)
-        done = {}
-        self._temp_clock = time.time()
-        metas = []
-        for ent in texts:
-            lang0, src0 = self._pick_source(ent)
-            metas.append({
-                "id": ent.id, "ent": ent, "lang": lang0,
-                "src": src0 if isinstance(src0, str) else "",
-                "rel": full,
-                "style": self._entry_style(full, src0 or ""),
-            })
-        batched = set()
-        if "dialog" in full.lower() and not self.force_glossary:
-            def _ok(meta):
-                src0 = meta["src"]
-                if not src0 or not src0.strip() or meta["id"] in reuse:
-                    return False
-                if len(src0) < 4 or len(src0) > 220 or chr(10) in src0:
-                    return False
-                if _RUNTIME_TOKEN_RE.search(src0):
-                    return False
-                # 含 hard 术语的句子不进批量：批量只用提示，容易丢术语；
-                # 交给逐条路径（占位符/校验更完整）。
-                if (self.gloss_hard is not None
-                       and any(k in self.gloss_hard
-                               for k, _v in self._glossary_hits(src0))):
-                    return False
-                if self._looks_like_target(src0) or not _has_translatable_text(src0):
-                    return False
-                if (looks_like_code_or_debug(full, src0)
-                        or looks_like_generated_noise(full, src0)
-                        or looks_like_technical_text(src0)
-                        or (looks_like_identifier_text(src0)
-                            and not is_player_facing_label(full, src0)
-                            and not _id_player_visible(meta["id"]))):
-                    return False
-                if self.only_referenced and meta["id"] not in self._ref_counts:
-                    return False
-                if termbase_lookup(src0) is not None:
-                    return True
-                if self.protect_proper and looks_like_proper_text(full, src0):
-                    return False
-                return True
-            i = 0
-            while i < len(metas):
-                if not _ok(metas[i]):
-                    i += 1
-                    continue
-                batch = [metas[i]]
-                total = len(metas[i]["src"])
-                j = i + 1
-                while (j < len(metas) and len(batch) < 4
-                       and _ok(metas[j])
-                       and metas[j]["lang"] == metas[i]["lang"]
-                       and total + len(metas[j]["src"]) <= 700):
-                    batch.append(metas[j])
-                    total += len(metas[j]["src"])
-                    j += 1
-                if len(batch) >= 2:
-                    got = self._translate_dialogue_batch(batch)
-                    if got:
-                        for eid, (_lang, new) in got.items():
-                            done[eid] = new
-                        batched.update(got)
-                        i = j
-                        continue
-                i += 1
-        for n, ent in enumerate(texts, 1):
-            if self._cancelled():
-                self._flush_temp(temp_path, done)
-                self.log("已取消：本文件已完成 %d/%d 条（已存入 __temp__，"
-                         "重跑可复用）" % (len(done), len(texts)))
-                return -1
-            if ent.id in self._past:
-                if ent.id not in self.redundant:
-                    self.redundant.append(ent.id)
-            else:
-                self._past.add(ent.id)
-            if ent.id in batched:
-                continue
-            if ent.id in reuse:
-                done[ent.id] = reuse[ent.id]
-                continue
-            lang, src = self._pick_source(ent)
-            if self.tgt == lang:
-                done[ent.id] = src
-            elif src and lang == "text" and self.src_lang == "auto" \
-                    and self._looks_like_target(src):
-                done[ent.id] = src
-            elif src:
-                exact = src.strip()
-                if (exact in self.glossary
-                        and (exact not in self.session_only_keys
-                             or is_player_facing_label(full, src))
-                        and not looks_like_hard_protected_file(full)):
-                    lead = src[:len(src) - len(src.lstrip())]
-                    trail = src[len(src.rstrip()):]
-                    translated = lead + self.glossary[exact] + trail
-                    if translated != src:
-                        done[ent.id] = translated
-                    continue
-                if not looks_like_hard_protected_file(full):
-                    exact_term = (termbase_exact_translation(src)
-                                  if exact not in self.glossary else None)
-                    if exact_term is not None and exact_term != src:
-                        done[ent.id] = exact_term
-                        continue
-                    pattern = (pattern_translate(src, termbase_exact_translation)
-                               if exact not in self.glossary else None)
-                    if pattern is not None and pattern != src:
-                        done[ent.id] = pattern
-                        continue
-                if not _has_translatable_text(src):
-                    done[ent.id] = src
-                    continue
-                use_lang = self.src_lang if self.src_lang != "auto" else lang
-                # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
-                # 自动模式下按本条正文的字母构成覆盖字段判断。
-                if use_lang in ("auto", "text", "rus", "eng"):
-                    det = detect_text_lang(src)
-                    if det and det != use_lang:
-                        use_lang = det
-                style = self._entry_style(full, src)
-                ctx = ""
-                if style == "dialogue" and "dialog" in full.lower():
-                    ctx = self._scene_context(metas, n - 1)
-                try:
-                    translated = self._translate_one(
-                        src, use_lang, context=ctx, style=style)
-                    done[ent.id] = translated
-                    if translated.strip() == src.strip():
-                        self.failed_strings += 1
-                except Exception as e:
-                    self.failed_strings += 1
-                    self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
-                                % (ent.id, type(e).__name__, e))
-                    done[ent.id] = src
-            else:
-                done[ent.id] = ""
-            if time.time() - self._temp_clock > 120:
-                self._flush_temp(temp_path, done)
-            if n % 20 == 0:
-                self.progress({"file": fn, "ids": n, "total_ids": len(texts),
-                               "file_idx": idx, "files": total,
-                               "reqs": self.req_count, "unit": "个文件"})
-        if not any(done.get(meta["id"], "") != meta["src"] for meta in metas):
-            rel = os.path.relpath(full, self.in_dir)
-            self._discard_unchanged_output(rel, out_path)
-            return 0
-        rel = os.path.relpath(full, self.in_dir)
-        try:
-            if any(meta["lang"] != "text" for meta in metas):
-                changes = {
-                    meta["id"]: (meta["lang"], done[meta["id"]])
-                    for meta in metas
-                    if done.get(meta["id"], "") != meta["src"]
-                }
-                try:
-                    open(full, "rb").read().decode("utf-8-sig")
-                    utf8_table = True
-                except (OSError, UnicodeDecodeError):
-                    utf8_table = False
-                wrote = (self._write_table_changes(full, out_path, changes, rel)
-                         if utf8_table else
-                         self._write_table_as_utf8(full, out_path, texts,
-                                                   changes, rel))
-                if not wrote:
-                    raise OSError("语言标签原文定位或写入失败")
-            else:
-                self._write_atomic(
-                    out_path,
-                    lambda p: self.p.generateOutputXml(
-                        p, done, splitLength=1000))
-        except Exception as e:
-            with self._ledger_lock:
-                self._ledger.pop(rel.replace("\\", "/"), None)
-            self.detail("  文本表写入失败，未记录完成：%s（%s: %s）"
-                        % (rel, type(e).__name__, e))
-            return -2
-        self._audit_tables.add(rel)
-        self.progress({"file": fn, "ids": len(texts), "total_ids": len(texts),
-                       "file_idx": idx, "files": total, "reqs": self.req_count,
-                       "unit": "个文件"})
-        return len(texts)
-
-    def _pruned_walk(self):
-        """遍历输入树，统一排除：输出目录（按绝对路径，即使它在输入树内或
-        不叫 translated_hy_mt2）、__temp__、.git，避免把自己的产物再翻一遍。"""
-        for root, dirs, files in os.walk(self.in_dir):
-            kept = []
-            for d in dirs:
-                if d.endswith(".git") or d in ("__temp__", "translated_hy_mt2"):
-                    continue
-                ap = os.path.normcase(os.path.abspath(os.path.join(root, d)))
-                if any(ap == ex or ap.startswith(ex + os.sep)
-                       for ex in self._excluded_paths):
-                    continue
-                kept.append(d)
-            dirs[:] = kept
-            yield root, dirs, files
-
-    def _collect_text_targets(self):
-        """递归收集文本 XML（相对路径, 绝对路径），排除输出目录。"""
-        targets = []
-        for root, _dirs, files in self._pruned_walk():
-            for fn in files:
-                if fn.lower().endswith(".xml"):
-                    full = os.path.join(root, fn)
-                    targets.append((os.path.relpath(full, self.in_dir), full))
-        targets.sort()
-        return targets
-
-    def _iter_files(self):
-        for root, _dirs, files in self._pruned_walk():
-            for fn in files:
-                yield os.path.join(root, fn)
-
-    def _run_recursive(self, done_dir, reuse):
-        suffix = {
-            "cfgxml": ".xml", "ltx": ".ltx",
-            "scriptL": ".script", "scriptE": ".script",
-        }.get(self.mode)
-        if not suffix:
-            self.log("未知文件类型：%r（应为 auto/text/cfgxml/ltx/scriptE/scriptL）"
-                     % self.mode, "err")
-            return False
-        targets = [p for p in self._iter_files() if p.lower().endswith(suffix)]
-        if self.mode == "cfgxml":
-            targets = [p for p in targets
-                       if os.path.basename(os.path.dirname(p)).lower() != "text"]
-        total = len(targets)
-        extract = {}
-        text_id_prefix = "sgtat_gen_text_%d_" % time.time_ns()
-        gen = [0]
-        self.log("待处理 %s 文件 %d 个" % (suffix, total))
-        failed = 0
-        try:
-            for idx, full in enumerate(targets, 1):
-                if self._cancelled():
-                    self.log("已取消")
-                    break
-                rel = os.path.relpath(full, self.in_dir)
-                out_path = os.path.join(done_dir, rel)
-                if self._should_skip(rel, full, out_path, self.mode):
-                    continue
-                self._log_progress(idx, total, rel)
-                file_extract = {}
-                try:
-                    rep = self._process_non_text(full, reuse, file_extract,
-                                                 text_id_prefix, gen)
-                except Exception as e:
-                    failed += 1
-                    self.log("文件处理失败，已跳过：%s（%s: %s）"
-                             % (rel, type(e).__name__, e), "err")
-                    continue
-                if rep is None:
-                    continue
-                whole_text, rep_dict, enc = rep
-                if rep_dict or self.output_anyway:
-                    try:
-                        if self.mode in ("ltx", "cfgxml"):
-                            self._write_atomic(
-                                out_path,
-                                lambda p: self.p.generateOutputFileFromString(
-                                    p, whole_text, needXmlHeader=False,
-                                    encoding=enc or "utf-8"))
-                        else:
-                            self._write_atomic(
-                                out_path,
-                                lambda p: self.p.generateOutputFileFromString(
-                                    p, whole_text, needXmlHeader=False))
-                    except Exception as e:
-                        failed += 1
-                        self._ledger.pop(rel.replace("\\", "/"), None)
-                        self.log("文件写入失败，已跳过：%s（%s: %s）"
-                                 % (rel, type(e).__name__, e), "err")
-                        continue
-                    self._merge_generated_extract(extract, file_extract)
-                    self._record_done(rel, full, out_path)
-        except Exception as e:
-            failed += 1
-            self.log("%s 翻译中断：%s: %s"
-                     % (self.mode, type(e).__name__, e), "err")
-            return False
-        finally:
-            name = "___%s__put_this_to_text_folder.xml" % self.mode
-            self._flush_generated_ids(done_dir, extract, name=name)
-        if failed:
-            self.log("有 %d 个文件处理失败（已跳过，其余照常完成），详见日志"
-                     % failed, "warn")
-        return not failed and not self._cancelled()
-
-    def _process_non_text(self, full, reuse, extract, prefix, gen):
-        chain = read_encoding_chain(full)
-        if self.mode == "cfgxml":
-            whole, cands, enc = self._parse(
-                self.p.parse_xray_cfgxml_xml, full, chain)
-        elif self.mode == "ltx":
-            whole, cands, enc = self._parse(
-                self.p.parse_xray_ltx_file, full, chain)
-        else:
-            whole, cands = self._parse(
-                self.p.parse_xray_script_file, full, chain)
-            # 脚本按原编码写回（只把字面文本换成 ASCII 新 ID，不改编码）
-            enc = "utf-8"
-            for candidate_enc in chain:
-                try:
-                    whole.encode(candidate_enc)
-                    enc = candidate_enc
-                    break
-                except (UnicodeEncodeError, LookupError):
-                    continue
-        if chain and chain[0] not in _ENC_UTF8 and looks_like_mojibake(whole):
-            self.log("⚠ %s 疑为编码误判（乱码特征），请先用「编码转换」页"
-                     "统一转成 UTF-8" % os.path.basename(full), "warn")
-        if not cands:
-            self.empty_files += 1
-            if self.empty_files <= 20:
-                self.detail("  %s 未提取到可译文本（%s 模式的提取规则见上游）"
-                            % (os.path.basename(full), self.mode))
-        prewrapped = set()
-        if self.mode in ("scriptE", "scriptL"):
-            # 上游提取器不认识上下文；这里只保留显示类调用/文本变量赋值，
-            # 跳过 log、string_find/string_gsub、比较运算。见 script_literal_allowed。
-            # 上游还会漏掉 set_level_changer_invitation / set_description /
-            # AddItem(game.translate_string(...))，这里按显示调用补回。
-            extra = extra_script_display_literals(whole)
-            prewrapped = script_translate_literal_args(whole)
-            cands = list(dict.fromkeys(list(cands) + sorted(extra)))
-            cands = [c for c in cands
-                     if c in extra or script_literal_allowed_in_file(whole, c)]
-        if self._cancelled():
-            return None
-        rep = {}
-        for cand in cands:
-            # 这里不能按 reuse 跳过：reuse 的键是文本 XML 的 string id，
-            # 与 ltx/cfg/script 的候选串不是同一命名空间；真命中了也拿不到
-            # 译文，只会把原文留在输出里。非文本模式的复用由账本负责。
-            if self.mode == "cfgxml":
-                if cand.strip() == "" or self.p.doesTextLookLikeId(cand):
-                    continue
-                send = cand
-                quoted = False
-            elif self.mode == "ltx":
-                if self.p.doesTextLookLikeId(cand):
-                    continue
-                quoted = len(cand) > 1 and cand.startswith('"') and cand.endswith('"')
-                send = cand[1:-1] if quoted else cand
-            else:
-                if len(cand) < 2:
-                    continue
-                qch = cand[0]
-                send = cand[1:-1]
-                if (self.p.doesTextLookLikeId(send)
-                        or self.p.doesTextLookLikeScript(send)):
-                    continue
-            rel = os.path.relpath(full, self.in_dir)
-            if looks_like_code_or_debug(rel, send):
-                continue
-            if looks_like_identifier_text(send):
-                continue
-            # 术语直取只用于 UTF-8 的文本表；脚本/ltx 按源编码（cp1251）
-            # 写回，塞中文译名会 UnicodeEncodeError，交给模型走转码路径。
-            _exact = termbase_exact_translation(send) \
-                if send not in self.glossary and enc.lower() in (
-                    "utf-8", "utf8", "utf-8-sig") else None
-            if _exact is not None and _exact != send:
-                # 术语命中当"已翻译结果"，继续走后续 rep 替换流程；
-                # 这里绝不能 return 单值——_process_non_text 契约是三元组。
-                rep[send] = _exact
-                continue
-            if self.protect_proper and looks_like_proper_text(rel, send):
-                # ★ 2.0.21：硬层子串替换仅限 UTF-8 表（cp1251 写回塞中文
-                # 会 UnicodeEncodeError，与术语直取同口径）。
-                if enc.lower() in ("utf-8", "utf8", "utf-8-sig"):
-                    _p = (partial_glossary_translation(send, rel)
-                          if send not in self.glossary else None)
-                    if _p is not None and _p != send:
-                        rep[send] = _p
-                continue
-            if self._cancelled():
-                return None
-            try:
-                lang = self.src_lang
-                if lang in ("auto", "text"):
-                    lang = (detect_text_lang(send) or self._lang_hint
-                            or "rus")
-                transed = self._translate_one(send, lang)
-            except Exception as e:
-                self.failed_strings += 1
-                self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
-                            % (str(send)[:40], type(e).__name__, e))
-                continue
-            if self._cancelled():
-                return None
-            if not transed or not transed.strip():
-                self.failed_strings += 1
-                continue
-            if transed.strip() == send.strip():
-                self.failed_strings += 1
-                continue
-            if self.mode == "ltx" and quoted:
-                transed = '"%s"' % transed
-            if self.mode in ("cfgxml", "ltx", "scriptE"):
-                key = prefix + str(gen[0])
-                gen[0] += 1
-                extract[key] = transed
-                if self.mode == "scriptE":
-                    # 脚本里裸 ID 是未定义全局变量（nil）；补丁统一用
-                    # game.translate_string("id")。已经在 translate_string
-                    # 里的字面串只换 ID，不能再套一层。
-                    if cand in prewrapped:
-                        # 外层已有 game.translate_string(...)，只把引号内
-                        # 的字面串换成带引号的新 ID，不能退化成裸变量。
-                        rep[cand] = '"%s"' % key
-                    else:
-                        rep[cand] = 'game.translate_string("%s")' % key
-                else:
-                    rep[cand] = key
-            else:
-                if "chars_all_in" not in extract:
-                    extract["chars_all_in"] = set()
-                for ch in transed:
-                    extract["chars_all_in"].add(ch)
-                inline = unescape_newlines(transed)
-                rep[qch + self.p.escapeLiteralText(send, quote=qch) + qch] = (
-                    qch + self.p.escapeLiteralText(inline, quote=qch) + qch)
-        if not rep:
-            return (whole, {}, enc)
-        whole = self.p.replaceFromText(whole, rep)
-        return (whole, rep, enc)
 
 
 

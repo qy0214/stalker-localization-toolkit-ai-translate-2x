@@ -66,6 +66,9 @@ def main() -> int:
 
     old = current_version()
     bump(version)
+    for sync_script in ("tools/sync_core.py", "tools/sync_assets.py"):
+        subprocess.run([sys.executable, str(ROOT / sync_script), "--write"],
+                       check=True, cwd=str(ROOT))
     subprocess.run([sys.executable, str(TOOLS), "--build"], check=True,
                    cwd=str(ROOT))
 

@@ -17,9 +17,11 @@ import json
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-SRC = r"C:\Users\Admin\Desktop\IWP\gamedata\configs\text\eng"
-OUT = r"C:\Users\Admin\Desktop\IWP\gamedata\translated_hy_mt2\configs\text\eng"
-TB = r"C:\STALKER-AiTranslate-2x\plugins\ai_translate\assets\stalker_termbase.json"
+SRC = os.environ.get("IWP_SRC") or r"C:\Users\Admin\Desktop\IWP\gamedata\configs\text\eng"
+OUT = (os.environ.get("IWP_OUT") or
+       r"C:\Users\Admin\Desktop\IWP\gamedata\translated_hy_mt2\configs\text\eng")
+TB = (os.environ.get("STALKER_TERMBASE") or
+      r"C:\STALKER-AiTranslate-2x\plugins\ai_translate\assets\stalker_termbase.json")
 
 PH = re.compile(r"\$[A-Za-z_][A-Za-z0-9_]*|%[sdif]|%c\[[^\]]+\]")
 NUM = re.compile(r"\d{2,}")

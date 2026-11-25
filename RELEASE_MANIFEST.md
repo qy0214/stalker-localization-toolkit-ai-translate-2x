@@ -1,9 +1,9 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-25T02:29:34+08:00`
+- 生成时间：`2026-11-25T19:31:42+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`main` @ `821e82c`（有未提交改动）
-- 已跟踪文件：1291 个，32.11 MB
+- Git：`monorepo-migration` @ `f44b561`（有未提交改动）
+- 已跟踪文件：1294 个，33.83 MB
 
 ## 1. 版本与交付物
 
@@ -16,13 +16,13 @@
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 513.28 KB | `c85aa80dc1664635a9f5f0f60258c8f3247a7368d0370bfcfed92af92fed0a0a` | 2.x 目录插件（api.ui 门面） |
-| 插件分享目录 | `plugins\ai_translate` | 2.83 MB | — | 5 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.28.zip` | 975.53 KB | `d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.28_install.zip` | 975.45 KB | `6d97b9fceb8bfc1e182614221d5de1402f9ba90b45ae11bf531eda03462ed413` | 给平台插件管理器直接解压用 |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 220.96 KB | `ce30903560109dd9cecef4628d592aedbfbe5f936be7572f4933fa86b19e2f19` | 2.x 目录插件（api.ui 门面） |
+| 插件分享目录 | `plugins\ai_translate` | 2.86 MB | — | 25 个文件（目录） |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.28.zip` | 998.51 KB | `501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.28_install.zip` | 998.12 KB | `fa0df94c57717e53435f202b0e8f48e41bb9662874035ba92b3b393e07d382bf` | 给平台插件管理器直接解压用 |
 | 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.15 MB | `387a6ce17117b99cd9c03d5efe598a3c2e96851e222a83021affe2c185009d3a` | 运行时匹配的内置层 |
-| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.16 MB | `9537e729411eaf04ac939c517974ceaf44514392360dcbeb83879a909880385b` | 导入用 |
-| X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 7.38 KB | `2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6` | 解析 XML/LTX/脚本 |
+| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.16 MB | `6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722` | 导入用 |
+| X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 9.06 KB | `603b11069eb69aa4148df260e7f14bfb07993044bf04cb70a745ab62923205f2` | 解析 XML/LTX/脚本 |
 | 第三方来源声明 | `plugins\ai_translate\assets\THIRD_PARTY_NOTICES.txt` | 2.08 KB | `338f62ede3e6253ce1e7b513023b8535b6f5d94c33a00311bf295d421d601ff2` | 随包分发（上游来源与许可状态） |
 
 ## 2. 下载链路官方 SHA-256
@@ -52,10 +52,10 @@
 | 目录插件形状：plugins/ai_translate/{plugin.py,assets/} | 一致 | plugin.py + assets/ |
 | 无 2.x 禁用导入（ssl/http/urllib.request/urllib.error/tkinter） | 一致 | 干净 |
 | zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.28.zip |
-| zip 条目 == 5 个预期文件 | 一致 | 多出：无；缺少：无 |
+| zip 条目 == 预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
-| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1210784；stalker_termbase.json=1218148 |
+| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1210784；stalker_termbase.json=1218049 |
 | zip 内文件 == 工作副本 | 一致 | 全部一致 |
 | 官方哈希：llama.cpp 6 项 | 一致 | 登记 6 项；不一致：无 |
 | 官方哈希：模型 2 项 | 一致 | 登记 2 项；不一致：无 |

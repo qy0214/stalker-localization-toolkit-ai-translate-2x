@@ -1,0 +1,16 @@
+{
+  "release_train": "2026.11.25",
+  "core": "1.0.0",
+  "products": {
+    "plugin_2x": "2.0.28",
+    "plugin_1_9x": "1.9.25",
+    "mcp_hermes": "1.1.10",
+    "mcp_online": "0.1.0",
+    "skill": "0.1.0"
+  },
+  "python": {
+    "core": ">=3.11",
+    "plugin_2x": "host-managed",
+    "plugin_1_9x": "host-managed"
+  }
+}

@@ -1,0 +1,1475 @@
+{
+ "_meta": {
+  "termbase": "C:\\STALKER-AiTranslate-2x\\assets\\stalker_termbase.json",
+  "glossary": "C:\\STALKER-AiTranslate-2x\\assets\\glossary_builtin.json",
+  "categories": 13,
+  "summary": {
+   "value_no_cjk": 4,
+   "value_eq_key": 1
+  }
+ },
+ "findings": {
+  "value_no_cjk": [
+   {
+    "category": "地点与区域",
+    "key": "Х-8",
+    "value": "X-8"
+   },
+   {
+    "category": "物品·武器·装备·神器",
+    "key": "PDA",
+    "value": "PDA"
+   },
+   {
+    "category": "物品·武器·装备·神器",
+    "key": "КПК",
+    "value": "PDA"
+   },
+   {
+    "category": "物品·武器·装备·神器",
+    "key": "ПДА",
+    "value": "PDA"
+   }
+  ],
+  "value_eq_key": [
+   {
+    "category": "物品·武器·装备·神器",
+    "key": "PDA"
+   }
+  ]
+ },
+ "coverage_gap_candidates": [
+  {
+   "token": "Anonymous",
+   "refs": 33
+  },
+  {
+   "token": "Heckler",
+   "refs": 27
+  },
+  {
+   "token": "Koch",
+   "refs": 26
+  },
+  {
+   "token": "Herstal",
+   "refs": 21
+  },
+  {
+   "token": "Remington",
+   "refs": 21
+  },
+  {
+   "token": "Galil",
+   "refs": 17
+  },
+  {
+   "token": "GRAU",
+   "refs": 16
+  },
+  {
+   "token": "Magnum",
+   "refs": 15
+  },
+  {
+   "token": "Arms",
+   "refs": 14
+  },
+  {
+   "token": "TsKIB",
+   "refs": 13
+  },
+  {
+   "token": "Shadow",
+   "refs": 13
+  },
+  {
+   "token": "Chernobyl",
+   "refs": 13
+  },
+  {
+   "token": "Brugger",
+   "refs": 11
+  },
+  {
+   "token": "Thomet",
+   "refs": 10
+  },
+  {
+   "token": "Glock",
+   "refs": 10
+  },
+  {
+   "token": "NATO",
+   "refs": 9
+  },
+  {
+   "token": "Assault",
+   "refs": 9
+  },
+  {
+   "token": "Desert",
+   "refs": 9
+  },
+  {
+   "token": "Sauer",
+   "refs": 9
+  },
+  {
+   "token": "Mossberg",
+   "refs": 9
+  },
+  {
+   "token": "International",
+   "refs": 8
+  },
+  {
+   "token": "Five",
+   "refs": 8
+  },
+  {
+   "token": "Xtreme",
+   "refs": 8
+  },
+  {
+   "token": "Benelli",
+   "refs": 8
+  },
+  {
+   "token": "Colt",
+   "refs": 7
+  },
+  {
+   "token": "Aimpoint",
+   "refs": 7
+  },
+  {
+   "token": "Walther",
+   "refs": 7
+  },
+  {
+   "token": "MTech",
+   "refs": 7
+  },
+  {
+   "token": "Steyr",
+   "refs": 7
+  },
+  {
+   "token": "seveN",
+   "refs": 6
+  },
+  {
+   "token": "Minimi",
+   "refs": 6
+  },
+  {
+   "token": "Tech",
+   "refs": 6
+  },
+  {
+   "token": "Universal",
+   "refs": 6
+  },
+  {
+   "token": "Fort",
+   "refs": 6
+  },
+  {
+   "token": "Stgw",
+   "refs": 6
+  },
+  {
+   "token": "USSOCOM",
+   "refs": 5
+  },
+  {
+   "token": "Lapua",
+   "refs": 5
+  },
+  {
+   "token": "Magpul",
+   "refs": 5
+  },
+  {
+   "token": "ACOG",
+   "refs": 5
+  },
+  {
+   "token": "TsNIITochMash",
+   "refs": 5
+  },
+  {
+   "token": "Anyone",
+   "refs": 4
+  },
+  {
+   "token": "Mjolnir",
+   "refs": 4
+  },
+  {
+   "token": "Hydra",
+   "refs": 4
+  },
+  {
+   "token": "Shok",
+   "refs": 4
+  },
+  {
+   "token": "Panthera",
+   "refs": 4
+  },
+  {
+   "token": "Raging",
+   "refs": 4
+  },
+  {
+   "token": "Bull",
+   "refs": 4
+  },
+  {
+   "token": "Taurus",
+   "refs": 4
+  },
+  {
+   "token": "Auto",
+   "refs": 4
+  },
+  {
+   "token": "America",
+   "refs": 4
+  },
+  {
+   "token": "Fredericksburg",
+   "refs": 4
+  },
+  {
+   "token": "Vintorez",
+   "refs": 4
+  },
+  {
+   "token": "Stechkin",
+   "refs": 4
+  },
+  {
+   "token": "SAFE",
+   "refs": 4
+  },
+  {
+   "token": "SEMI",
+   "refs": 4
+  },
+  {
+   "token": "AUTO",
+   "refs": 4
+  },
+  {
+   "token": "Micro",
+   "refs": 4
+  },
+  {
+   "token": "SOCOM",
+   "refs": 4
+  },
+  {
+   "token": "David",
+   "refs": 4
+  },
+  {
+   "token": "Manufacturing",
+   "refs": 4
+  },
+  {
+   "token": "Automat",
+   "refs": 4
+  },
+  {
+   "token": "Eickhorn",
+   "refs": 4
+  },
+  {
+   "token": "Solingen",
+   "refs": 4
+  },
+  {
+   "token": "KRISS",
+   "refs": 4
+  },
+  {
+   "token": "Vector",
+   "refs": 4
+  },
+  {
+   "token": "Azazel",
+   "refs": 4
+  },
+  {
+   "token": "Armee",
+   "refs": 4
+  },
+  {
+   "token": "Gewehr",
+   "refs": 4
+  },
+  {
+   "token": "Browning",
+   "refs": 4
+  },
+  {
+   "token": "Industries",
+   "refs": 4
+  },
+  {
+   "token": "Fabrique",
+   "refs": 4
+  },
+  {
+   "token": "Nationale",
+   "refs": 4
+  },
+  {
+   "token": "Stoner",
+   "refs": 4
+  },
+  {
+   "token": "Parabellum",
+   "refs": 4
+  },
+  {
+   "token": "SPAS",
+   "refs": 4
+  },
+  {
+   "token": "Super",
+   "refs": 4
+  },
+  {
+   "token": "Vityaz",
+   "refs": 4
+  },
+  {
+   "token": "Vepr",
+   "refs": 4
+  },
+  {
+   "token": "Atchisson",
+   "refs": 4
+  },
+  {
+   "token": "Shotgun",
+   "refs": 4
+  },
+  {
+   "token": "Winchester",
+   "refs": 4
+  },
+  {
+   "token": "Scorcher",
+   "refs": 3
+  },
+  {
+   "token": "Boom",
+   "refs": 3
+  },
+  {
+   "token": "SVDS",
+   "refs": 3
+  },
+  {
+   "token": "Mikluha",
+   "refs": 3
+  },
+  {
+   "token": "LOBAEV",
+   "refs": 3
+  },
+  {
+   "token": "limonka",
+   "refs": 3
+  },
+  {
+   "token": "Tactical",
+   "refs": 3
+  },
+  {
+   "token": "Ceska",
+   "refs": 3
+  },
+  {
+   "token": "Cobra",
+   "refs": 3
+  },
+  {
+   "token": "Mtech",
+   "refs": 3
+  },
+  {
+   "token": "USAS",
+   "refs": 3
+  },
+  {
+   "token": "Armi",
+   "refs": 3
+  },
+  {
+   "token": "Defense",
+   "refs": 3
+  },
+  {
+   "token": "Eagle",
+   "refs": 3
+  },
+  {
+   "token": "nHeckler",
+   "refs": 3
+  },
+  {
+   "token": "Stenchkin",
+   "refs": 3
+  },
+  {
+   "token": "Dark",
+   "refs": 2
+  },
+  {
+   "token": "Mitay",
+   "refs": 2
+  },
+  {
+   "token": "Tide",
+   "refs": 2
+  },
+  {
+   "token": "Bedrock",
+   "refs": 2
+  },
+  {
+   "token": "Claws",
+   "refs": 2
+  },
+  {
+   "token": "Nightbird",
+   "refs": 2
+  },
+  {
+   "token": "Zhurov",
+   "refs": 2
+  },
+  {
+   "token": "What",
+   "refs": 2
+  },
+  {
+   "token": "Guys",
+   "refs": 2
+  },
+  {
+   "token": "People",
+   "refs": 2
+  },
+  {
+   "token": "Some",
+   "refs": 2
+  },
+  {
+   "token": "Damn",
+   "refs": 2
+  },
+  {
+   "token": "Need",
+   "refs": 2
+  },
+  {
+   "token": "Digger",
+   "refs": 2
+  },
+  {
+   "token": "Trimadol",
+   "refs": 2
+  },
+  {
+   "token": "ddmmyyyy",
+   "refs": 2
+  },
+  {
+   "token": "Suslov",
+   "refs": 2
+  },
+  {
+   "token": "Tombac",
+   "refs": 2
+  },
+  {
+   "token": "Dragunov",
+   "refs": 2
+  },
+  {
+   "token": "Mera",
+   "refs": 2
+  },
+  {
+   "token": "Pernach",
+   "refs": 2
+  },
+  {
+   "token": "Model",
+   "refs": 2
+  },
+  {
+   "token": "Barska",
+   "refs": 2
+  },
+  {
+   "token": "SIGHT",
+   "refs": 2
+  },
+  {
+   "token": "SureFire",
+   "refs": 2
+  },
+  {
+   "token": "Tundra",
+   "refs": 2
+  },
+  {
+   "token": "TsKB",
+   "refs": 2
+  },
+  {
+   "token": "ELCAN",
+   "refs": 2
+  },
+  {
+   "token": "SpecterDR",
+   "refs": 2
+  },
+  {
+   "token": "Trijicon",
+   "refs": 2
+  },
+  {
+   "token": "SeveN",
+   "refs": 2
+  },
+  {
+   "token": "Selvaggio",
+   "refs": 2
+  },
+  {
+   "token": "SilencerCo",
+   "refs": 2
+  },
+  {
+   "token": "Osprey",
+   "refs": 2
+  },
+  {
+   "token": "Prolonged",
+   "refs": 2
+  },
+  {
+   "token": "Kampfmesser",
+   "refs": 2
+  },
+  {
+   "token": "user",
+   "refs": 2
+  },
+  {
+   "token": "datafiles",
+   "refs": 2
+  },
+  {
+   "token": "Bizon",
+   "refs": 2
+  },
+  {
+   "token": "nTOZ",
+   "refs": 2
+  },
+  {
+   "token": "Research",
+   "refs": 2
+  },
+  {
+   "token": "lemon",
+   "refs": 2
+  },
+  {
+   "token": "Zbrojovka",
+   "refs": 2
+  },
+  {
+   "token": "Schmidt",
+   "refs": 2
+  },
+  {
+   "token": "Tiss",
+   "refs": 2
+  },
+  {
+   "token": "Power",
+   "refs": 2
+  },
+  {
+   "token": "Insight",
+   "refs": 2
+  },
+  {
+   "token": "Rifle",
+   "refs": 2
+  },
+  {
+   "token": "Maschinenpistole",
+   "refs": 2
+  },
+  {
+   "token": "CRISAT",
+   "refs": 2
+  },
+  {
+   "token": "Neugodov",
+   "refs": 2
+  },
+  {
+   "token": "Armsel",
+   "refs": 2
+  },
+  {
+   "token": "Protecta",
+   "refs": 2
+  },
+  {
+   "token": "Sentinel",
+   "refs": 2
+  },
+  {
+   "token": "Striker",
+   "refs": 2
+  },
+  {
+   "token": "Molot",
+   "refs": 2
+  },
+  {
+   "token": "nSaiga",
+   "refs": 2
+  },
+  {
+   "token": "Pistole",
+   "refs": 2
+  },
+  {
+   "token": "nSIG",
+   "refs": 2
+  },
+  {
+   "token": "Commando",
+   "refs": 2
+  },
+  {
+   "token": "Franchi",
+   "refs": 2
+  },
+  {
+   "token": "nFranchi",
+   "refs": 2
+  },
+  {
+   "token": "nSPAS",
+   "refs": 2
+  },
+  {
+   "token": "Blaser",
+   "refs": 2
+  },
+  {
+   "token": "nSVD",
+   "refs": 2
+  },
+  {
+   "token": "nPSO",
+   "refs": 2
+  },
+  {
+   "token": "Casull",
+   "refs": 2
+  },
+  {
+   "token": "Serdyukov",
+   "refs": 2
+  },
+  {
+   "token": "Krasnikov",
+   "refs": 2
+  },
+  {
+   "token": "Vikhr",
+   "refs": 2
+  },
+  {
+   "token": "Transformational",
+   "refs": 2
+  },
+  {
+   "token": "Selveggio",
+   "refs": 2
+  },
+  {
+   "token": "Bulletpad",
+   "refs": 2
+  },
+  {
+   "token": "Kisel",
+   "refs": 2
+  },
+  {
+   "token": "Whirligigs",
+   "refs": 1
+  },
+  {
+   "token": "Burners",
+   "refs": 1
+  },
+  {
+   "token": "Valley",
+   "refs": 1
+  },
+  {
+   "token": "Grizzly",
+   "refs": 1
+  },
+  {
+   "token": "Brain",
+   "refs": 1
+  },
+  {
+   "token": "Grouse",
+   "refs": 1
+  },
+  {
+   "token": "Vulture",
+   "refs": 1
+  },
+  {
+   "token": "Deals",
+   "refs": 1
+  },
+  {
+   "token": "Wish",
+   "refs": 1
+  },
+  {
+   "token": "Bored",
+   "refs": 1
+  },
+  {
+   "token": "Join",
+   "refs": 1
+  },
+  {
+   "token": "Yesterday",
+   "refs": 1
+  },
+  {
+   "token": "Haha",
+   "refs": 1
+  },
+  {
+   "token": "Tired",
+   "refs": 1
+  },
+  {
+   "token": "Cargo",
+   "refs": 1
+  },
+  {
+   "token": "Fuck",
+   "refs": 1
+  },
+  {
+   "token": "Together",
+   "refs": 1
+  },
+  {
+   "token": "Know",
+   "refs": 1
+  },
+  {
+   "token": "Bros",
+   "refs": 1
+  },
+  {
+   "token": "Trust",
+   "refs": 1
+  },
+  {
+   "token": "Handing",
+   "refs": 1
+  },
+  {
+   "token": "Came",
+   "refs": 1
+  },
+  {
+   "token": "Seems",
+   "refs": 1
+  },
+  {
+   "token": "Death",
+   "refs": 1
+  },
+  {
+   "token": "Sold",
+   "refs": 1
+  },
+  {
+   "token": "Hemul",
+   "refs": 1
+  },
+  {
+   "token": "Rumor",
+   "refs": 1
+  },
+  {
+   "token": "Gromov",
+   "refs": 1
+  },
+  {
+   "token": "Gathering",
+   "refs": 1
+  },
+  {
+   "token": "Enough",
+   "refs": 1
+  },
+  {
+   "token": "Heard",
+   "refs": 1
+  },
+  {
+   "token": "Kitsenko",
+   "refs": 1
+  },
+  {
+   "token": "Psss",
+   "refs": 1
+  },
+  {
+   "token": "Leon",
+   "refs": 1
+  },
+  {
+   "token": "That",
+   "refs": 1
+  },
+  {
+   "token": "Rogovets",
+   "refs": 1
+  },
+  {
+   "token": "Here",
+   "refs": 1
+  },
+  {
+   "token": "Biggie",
+   "refs": 1
+  },
+  {
+   "token": "Gimlet",
+   "refs": 1
+  },
+  {
+   "token": "Compass",
+   "refs": 1
+  },
+  {
+   "token": "Etamsylate",
+   "refs": 1
+  },
+  {
+   "token": "Vikasolum",
+   "refs": 1
+  },
+  {
+   "token": "Batilolum",
+   "refs": 1
+  },
+  {
+   "token": "Naphazoline",
+   "refs": 1
+  },
+  {
+   "token": "Sunrise",
+   "refs": 1
+  },
+  {
+   "token": "CBRN",
+   "refs": 1
+  },
+  {
+   "token": "PstM",
+   "refs": 1
+  },
+  {
+   "token": "Index",
+   "refs": 1
+  },
+  {
+   "token": "KBAL",
+   "refs": 1
+  },
+  {
+   "token": "Koshkin",
+   "refs": 1
+  },
+  {
+   "token": "Picatinny",
+   "refs": 1
+  },
+  {
+   "token": "Mini",
+   "refs": 1
+  },
+  {
+   "token": "IEMW",
+   "refs": 1
+  },
+  {
+   "token": "GEMTECH",
+   "refs": 1
+  },
+  {
+   "token": "Tochpribor",
+   "refs": 1
+  },
+  {
+   "token": "Mikhalenko",
+   "refs": 1
+  },
+  {
+   "token": "Pritsel",
+   "refs": 1
+  },
+  {
+   "token": "Ukrochennyy",
+   "refs": 1
+  },
+  {
+   "token": "Polygon",
+   "refs": 1
+  },
+  {
+   "token": "rifling",
+   "refs": 1
+  },
+  {
+   "token": "Ironman",
+   "refs": 1
+  },
+  {
+   "token": "Story",
+   "refs": 1
+  },
+  {
+   "token": "file",
+   "refs": 1
+  },
+  {
+   "token": "Fairway",
+   "refs": 1
+  },
+  {
+   "token": "Kovalsky",
+   "refs": 1
+  },
+  {
+   "token": "Data",
+   "refs": 1
+  },
+  {
+   "token": "Great",
+   "refs": 1
+  },
+  {
+   "token": "Hollow",
+   "refs": 1
+  },
+  {
+   "token": "Consciousness",
+   "refs": 1
+  },
+  {
+   "token": "Laboratory",
+   "refs": 1
+  },
+  {
+   "token": "Rostok",
+   "refs": 1
+  },
+  {
+   "token": "Rads",
+   "refs": 1
+  },
+  {
+   "token": "Attacks",
+   "refs": 1
+  },
+  {
+   "token": "Traits",
+   "refs": 1
+  },
+  {
+   "token": "VSSK",
+   "refs": 1
+  },
+  {
+   "token": "over",
+   "refs": 1
+  },
+  {
+   "token": "under",
+   "refs": 1
+  },
+  {
+   "token": "Russia",
+   "refs": 1
+  },
+  {
+   "token": "CQBP",
+   "refs": 1
+  },
+  {
+   "token": "Cerakote",
+   "refs": 1
+  },
+  {
+   "token": "USMC",
+   "refs": 1
+  },
+  {
+   "token": "Israel",
+   "refs": 1
+  },
+  {
+   "token": "Mark",
+   "refs": 1
+  },
+  {
+   "token": "Lobaev",
+   "refs": 1
+  },
+  {
+   "token": "nDVL",
+   "refs": 1
+  },
+  {
+   "token": "Saboteur",
+   "refs": 1
+  },
+  {
+   "token": "nOTs",
+   "refs": 1
+  },
+  {
+   "token": "Drotik",
+   "refs": 1
+  },
+  {
+   "token": "Bender",
+   "refs": 1
+  },
+  {
+   "token": "PMII",
+   "refs": 1
+  },
+  {
+   "token": "nGalil",
+   "refs": 1
+  },
+  {
+   "token": "Einsatzkommando",
+   "refs": 1
+  },
+  {
+   "token": "Bullpup",
+   "refs": 1
+  },
+  {
+   "token": "Kostyor",
+   "refs": 1
+  },
+  {
+   "token": "Fratelli",
+   "refs": 1
+  },
+  {
+   "token": "Tanfoglio",
+   "refs": 1
+  },
+  {
+   "token": "Bars",
+   "refs": 1
+  },
+  {
+   "token": "nBars",
+   "refs": 1
+  },
+  {
+   "token": "nMtech",
+   "refs": 1
+  },
+  {
+   "token": "tantos",
+   "refs": 1
+  },
+  {
+   "token": "telescoping",
+   "refs": 1
+  },
+  {
+   "token": "stock",
+   "refs": 1
+  },
+  {
+   "token": "Technology",
+   "refs": 1
+  },
+  {
+   "token": "Mauser",
+   "refs": 1
+  },
+  {
+   "token": "Dynamic",
+   "refs": 1
+  },
+  {
+   "token": "predecessor",
+   "refs": 1
+  },
+  {
+   "token": "Purdey",
+   "refs": 1
+  },
+  {
+   "token": "TsNII",
+   "refs": 1
+  },
+  {
+   "token": "TochMash",
+   "refs": 1
+  },
+  {
+   "token": "Deryagin",
+   "refs": 1
+  },
+  {
+   "token": "nPKM",
+   "refs": 1
+  },
+  {
+   "token": "Makarov",
+   "refs": 1
+  },
+  {
+   "token": "Milkor",
+   "refs": 1
+  },
+  {
+   "token": "Telesh",
+   "refs": 1
+  },
+  {
+   "token": "nRGM",
+   "refs": 1
+  },
+  {
+   "token": "Obuvka",
+   "refs": 1
+  },
+  {
+   "token": "nRPG",
+   "refs": 1
+  },
+  {
+   "token": "GSKB",
+   "refs": 1
+  },
+  {
+   "token": "GNPP",
+   "refs": 1
+  },
+  {
+   "token": "Bazalt",
+   "refs": 1
+  },
+  {
+   "token": "nRPK",
+   "refs": 1
+  },
+  {
+   "token": "Ruchnoy",
+   "refs": 1
+  },
+  {
+   "token": "Pulemyot",
+   "refs": 1
+  },
+  {
+   "token": "Kalashnikova",
+   "refs": 1
+  },
+  {
+   "token": "Saiga",
+   "refs": 1
+  },
+  {
+   "token": "Sohn",
+   "refs": 1
+  },
+  {
+   "token": "Arkhar",
+   "refs": 1
+  },
+  {
+   "token": "Okhotniche",
+   "refs": 1
+  },
+  {
+   "token": "Promysloviy",
+   "refs": 1
+  },
+  {
+   "token": "Gyurza",
+   "refs": 1
+  },
+  {
+   "token": "Mirage",
+   "refs": 1
+  },
+  {
+   "token": "Hyperion",
+   "refs": 1
+  },
+  {
+   "token": "UKON",
+   "refs": 1
+  },
+  {
+   "token": "Samozaryadnaya",
+   "refs": 1
+  },
+  {
+   "token": "Vintovka",
+   "refs": 1
+  },
+  {
+   "token": "Ukorachennaya",
+   "refs": 1
+  },
+  {
+   "token": "bullpup",
+   "refs": 1
+  },
+  {
+   "token": "nVal",
+   "refs": 1
+  },
+  {
+   "token": "Tishina",
+   "refs": 1
+  },
+  {
+   "token": "Borisov",
+   "refs": 1
+  },
+  {
+   "token": "Levchenko",
+   "refs": 1
+  },
+  {
+   "token": "nGRAU",
+   "refs": 1
+  },
+  {
+   "token": "VSSM",
+   "refs": 1
+  },
+  {
+   "token": "Ratnik",
+   "refs": 1
+  },
+  {
+   "token": "suppressed",
+   "refs": 1
+  },
+  {
+   "token": "nVityaz",
+   "refs": 1
+  },
+  {
+   "token": "nVepr",
+   "refs": 1
+  },
+  {
+   "token": "nMossberg",
+   "refs": 1
+  },
+  {
+   "token": "tRemington",
+   "refs": 1
+  },
+  {
+   "token": "Seryogin",
+   "refs": 1
+  },
+  {
+   "token": "Borzov",
+   "refs": 1
+  },
+  {
+   "token": "Golovkin",
+   "refs": 1
+  },
+  {
+   "token": "nUDZ",
+   "refs": 1
+  },
+  {
+   "token": "Operations",
+   "refs": 1
+  },
+  {
+   "token": "Forces",
+   "refs": 1
+  },
+  {
+   "token": "Etamzylate",
+   "refs": 1
+  },
+  {
+   "token": "Twaron",
+   "refs": 1
+  },
+  {
+   "token": "Souverain",
+   "refs": 1
+  },
+  {
+   "token": "Express",
+   "refs": 1
+  },
+  {
+   "token": "Sumeri",
+   "refs": 1
+  },
+  {
+   "token": "Piquettini",
+   "refs": 1
+  },
+  {
+   "token": "GemTech",
+   "refs": 1
+  },
+  {
+   "token": "Barrels",
+   "refs": 1
+  },
+  {
+   "token": "Studen",
+   "refs": 1
+  },
+  {
+   "token": "Cholodec",
+   "refs": 1
+  },
+  {
+   "token": "Slyz",
+   "refs": 1
+  },
+  {
+   "token": "Company",
+   "refs": 1
+  },
+  {
+   "token": "Beta",
+   "refs": 1
+  },
+  {
+   "token": "GmbH",
+   "refs": 1
+  },
+  {
+   "token": "nGlock",
+   "refs": 1
+  },
+  {
+   "token": "zbrojovka",
+   "refs": 1
+  },
+  {
+   "token": "Uhersky",
+   "refs": 1
+  },
+  {
+   "token": "EMAG",
+   "refs": 1
+  },
+  {
+   "token": "Maurer",
+   "refs": 1
+  },
+  {
+   "token": "micro",
+   "refs": 1
+  },
+  {
+   "token": "dynamic",
+   "refs": 1
+  },
+  {
+   "token": "rifle",
+   "refs": 1
+  },
+  {
+   "token": "Armia",
+   "refs": 1
+  },
+  {
+   "token": "Beretta",
+   "refs": 1
+  },
+  {
+   "token": "Pikatinni",
+   "refs": 1
+  },
+  {
+   "token": "Gilbert",
+   "refs": 1
+  },
+  {
+   "token": "Lancaster",
+   "refs": 1
+  },
+  {
+   "token": "Springfield",
+   "refs": 1
+  },
+  {
+   "token": "Horst",
+   "refs": 1
+  },
+  {
+   "token": "Wesp",
+   "refs": 1
+  },
+  {
+   "token": "nCarl",
+   "refs": 1
+  },
+  {
+   "token": "nRemington",
+   "refs": 1
+  }
+ ]
+}

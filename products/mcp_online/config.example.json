@@ -1,0 +1,23 @@
+{
+  "base_url": "http://127.0.0.1:8080/v1",
+  "model": "your-model-name",
+  "api_key_env": "STALKER_TRANSLATE_API_KEY",
+  "timeout_sec": 120,
+  "ctx_size": 8192,
+  "max_retries": 2,
+  "max_concurrency": 4,
+  "rpm": 60,
+  "tpm": 120000,
+  "allowed_roots": ["C:/path/to/mods"],
+  "max_files": 5000,
+  "max_file_bytes": 8388608,
+  "max_text_chars": 20000,
+  "input_price_per_million": 0.0,
+  "output_price_per_million": 0.0,
+  "budget": {
+    "max_requests": 1000,
+    "max_input_tokens": 2000000,
+    "max_output_tokens": 500000,
+    "max_cost": 10.0
+  }
+}

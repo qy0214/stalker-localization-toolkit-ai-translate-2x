@@ -160,8 +160,8 @@ for tgt in (tb, gb):
                 if not k.startswith("_") and isinstance(v, dict))
     tgt.setdefault("_meta", {})["total_entries"] = total
     print("%s: 本轮新增 %d，分类总数 %d，_meta.total_entries=%d"
-          % (os.path.basename(tgt_path_local if False else "")
-             or "json", n_cat, len(tbl), total))
+          % (os.path.basename(str(tb_path if tgt is tb else gb_path)),
+             n_cat, len(tbl), total))
 json.dump(tb, open(tb_path, "w", encoding="utf-8"),
           ensure_ascii=False, indent=1, sort_keys=False)
 json.dump(gb, open(gb_path, "w", encoding="utf-8"),

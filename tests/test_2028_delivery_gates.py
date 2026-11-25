@@ -25,6 +25,9 @@ COPY_ROOT = tempfile.mkdtemp(prefix="ait28_plugin_")
 COPY_DIR = os.path.join(COPY_ROOT, "ai_translate")
 os.makedirs(os.path.join(COPY_DIR, "assets"), exist_ok=True)
 shutil.copy2(PLUGIN, os.path.join(COPY_DIR, "plugin.py"))
+shutil.copytree(os.path.join(os.path.dirname(PLUGIN), "stalker_translate_core"),
+                  os.path.join(COPY_DIR, "stalker_translate_core"),
+                  dirs_exist_ok=True)
 for name in ("xray_pkg.zip", "stalker_termbase.json", "glossary_builtin.json"):
     shutil.copy2(os.path.join(ASSETS, name),
                  os.path.join(COPY_DIR, "assets", name))

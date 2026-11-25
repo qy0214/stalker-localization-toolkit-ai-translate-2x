@@ -14,7 +14,8 @@ import contextlib
 import importlib.util
 import xml.etree.ElementTree as ET
 
-PLUGIN = r"C:\STALKER-AiTranslate-2x\plugins\ai_translate\plugin.py"
+PLUGIN = os.environ.get(
+    "STALKER_PLUGIN") or r"C:\STALKER-AiTranslate-2x\plugins\ai_translate\plugin.py"
 MODS = {
     "NS7": r"C:\game\NS7\gamedata\configs\text",
     "NS7-SQ基线": r"C:\game\CCCC\gamedata.sq_base_configs\configs\text",
@@ -34,6 +35,10 @@ MODS = {
     "IWP": r"C:\Users\Admin\Desktop\IWP\gamedata\configs\text\eng",
 }
 SAMPLE_N = 8
+_MODS_ROOT = os.environ.get("STALKER_MODS_ROOT")
+if _MODS_ROOT:
+    MODS = {name: path.replace(r"C:\game", _MODS_ROOT, 1)
+            for name, path in MODS.items()}
 
 spec = importlib.util.spec_from_file_location("m", PLUGIN)
 m = importlib.util.module_from_spec(spec)

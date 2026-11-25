@@ -1,31 +1,32 @@
 {
-  "generated_at": "2026-11-25T02:29:34+08:00",
+  "generated_at": "2026-11-25T19:31:42+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
-    "branch": "main",
-    "commit": "821e82c",
+    "branch": "monorepo-migration",
+    "commit": "f44b561",
     "dirty": true,
     "dirty_files": [
-      "M audit-reports/TERMBASE_CROSS_AUDIT_20261124.md",
-      " D dist/ai_translate_plugin_v2.0.27.zip",
-      " D dist/ai_translate_plugin_v2.0.27_install.zip",
+      "M .github/workflows/ci.yml",
+      " M .gitignore",
+      " M CHANGELOG.md",
+      " M README.md",
+      " M audit-reports/TERMBASE_CROSS_AUDIT_20261124.md",
+      " M dist/ai_translate_plugin_v2.0.28.zip",
+      " M dist/ai_translate_plugin_v2.0.28_install.zip",
+      " M plugins/ai_translate/assets/stalker_termbase.json",
+      " M plugins/ai_translate/assets/xray_pkg.zip",
       " M plugins/ai_translate/plugin.py",
-      " M tests/test_2013_all_fixes.py",
-      " M tests/test_2014_all_fixes.py",
-      " M tests/test_2015_all_fixes.py",
-      " M tests/test_2021_iwp_gates.py",
-      " M tests/test_2022_soft_retire.py",
-      " M tests/test_2024_audit_fixes.py",
-      " M tests/test_2025_chs_fixes.py",
+      " M tests/test_2022_amp_sentinel.py",
+      " M tests/test_2023_options_ui.py",
+      " M tests/test_2028_delivery_gates.py",
       " M tests/test_2707_fixes.py",
+      " M tests/test_2808_context_bleed.py",
+      " M tests/test_2909_number_fidelity.py",
       " M tests/test_ai_translate_fixes.py",
       " M tests/test_dynamic_parallel.py",
-      " M tests/test_share_package.py",
-      " M tests/test_ui_fallback.py",
-      "?? dist/ai_translate_plugin_v2.0.28.zip",
-      "?? dist/ai_translate_plugin_v2.0.28_install.zip",
-      "?? tests/test_2028_delivery_gates.py"
+      " M tests/test_prompt_rules.py",
+      " M tests/test_share_package.py"
     ]
   },
   "versions": {
@@ -39,32 +40,32 @@
       "role": "插件入口",
       "path": "plugins\\ai_translate\\plugin.py",
       "exists": true,
-      "size": 525599,
-      "sha256": "c85aa80dc1664635a9f5f0f60258c8f3247a7368d0370bfcfed92af92fed0a0a",
+      "size": 226268,
+      "sha256": "ce30903560109dd9cecef4628d592aedbfbe5f936be7572f4933fa86b19e2f19",
       "note": "2.x 目录插件（api.ui 门面）"
     },
     {
       "role": "插件分享目录",
       "path": "plugins\\ai_translate",
       "exists": true,
-      "size": 2964227,
+      "size": 3001321,
       "sha256": "",
-      "note": "5 个文件（目录）"
+      "note": "25 个文件（目录）"
     },
     {
       "role": "插件发布 zip",
       "path": "dist\\ai_translate_plugin_v2.0.28.zip",
       "exists": true,
-      "size": 998944,
-      "sha256": "d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d",
+      "size": 1022471,
+      "sha256": "501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4",
       "note": "当前发布包"
     },
     {
       "role": "平台安装包（顶层 ai_translate/）",
       "path": "dist\\ai_translate_plugin_v2.0.28_install.zip",
       "exists": true,
-      "size": 998864,
-      "sha256": "6d97b9fceb8bfc1e182614221d5de1402f9ba90b45ae11bf531eda03462ed413",
+      "size": 1022071,
+      "sha256": "fa0df94c57717e53435f202b0e8f48e41bb9662874035ba92b3b393e07d382bf",
       "note": "给平台插件管理器直接解压用"
     },
     {
@@ -79,16 +80,16 @@
       "role": "术语基表（分类）",
       "path": "plugins\\ai_translate\\assets\\stalker_termbase.json",
       "exists": true,
-      "size": 1218148,
-      "sha256": "9537e729411eaf04ac939c517974ceaf44514392360dcbeb83879a909880385b",
+      "size": 1218049,
+      "sha256": "6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722",
       "note": "导入用"
     },
     {
       "role": "X-Ray 解析器",
       "path": "plugins\\ai_translate\\assets\\xray_pkg.zip",
       "exists": true,
-      "size": 7561,
-      "sha256": "2f3e1dcd4b2ce701e981d5c0f3e6c16cf17782692a5a892aa9cb1e159e63f8a6",
+      "size": 9279,
+      "sha256": "603b11069eb69aa4148df260e7f14bfb07993044bf04cb70a745ab62923205f2",
       "note": "解析 XML/LTX/脚本"
     },
     {
@@ -102,13 +103,33 @@
   ],
   "zip": {
     "path": "dist\\ai_translate_plugin_v2.0.28.zip",
-    "sha256": "d830ff6b51f920cc77fc029c55b2dda8db7c05defc2341033d353b13dd6c7a5d",
+    "sha256": "501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4",
     "entries": [
       "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
       "plugins/ai_translate/assets/glossary_builtin.json",
       "plugins/ai_translate/assets/stalker_termbase.json",
       "plugins/ai_translate/assets/xray_pkg.zip",
-      "plugins/ai_translate/plugin.py"
+      "plugins/ai_translate/plugin.py",
+      "plugins/ai_translate/stalker_translate_core/__init__.py",
+      "plugins/ai_translate/stalker_translate_core/assets.py",
+      "plugins/ai_translate/stalker_translate_core/domain.py",
+      "plugins/ai_translate/stalker_translate_core/glossary.py",
+      "plugins/ai_translate/stalker_translate_core/job.py",
+      "plugins/ai_translate/stalker_translate_core/matching.py",
+      "plugins/ai_translate/stalker_translate_core/mcp.py",
+      "plugins/ai_translate/stalker_translate_core/models.py",
+      "plugins/ai_translate/stalker_translate_core/offline_job.py",
+      "plugins/ai_translate/stalker_translate_core/pipeline.py",
+      "plugins/ai_translate/stalker_translate_core/ports.py",
+      "plugins/ai_translate/stalker_translate_core/project.py",
+      "plugins/ai_translate/stalker_translate_core/runtime.py",
+      "plugins/ai_translate/stalker_translate_core/script.py",
+      "plugins/ai_translate/stalker_translate_core/single_text.py",
+      "plugins/ai_translate/stalker_translate_core/table.py",
+      "plugins/ai_translate/stalker_translate_core/termbase.py",
+      "plugins/ai_translate/stalker_translate_core/text.py",
+      "plugins/ai_translate/stalker_translate_core/vendor.py",
+      "plugins/ai_translate/stalker_translate_core/xray.py"
     ]
   },
   "official_hashes": {
@@ -191,7 +212,7 @@
       "detail": "ai_translate_plugin_v2.0.28.zip"
     },
     {
-      "check": "zip 条目 == 5 个预期文件",
+      "check": "zip 条目 == 预期文件",
       "ok": true,
       "detail": "多出：无；缺少：无"
     },
@@ -208,7 +229,7 @@
     {
       "check": "随包术语库非空壳（两文件合计 > 600 KB）",
       "ok": true,
-      "detail": "glossary_builtin.json=1210784；stalker_termbase.json=1218148"
+      "detail": "glossary_builtin.json=1210784；stalker_termbase.json=1218049"
     },
     {
       "check": "zip 内文件 == 工作副本",
@@ -297,7 +318,7 @@
     "termbase_meta_total": 24455
   },
   "tracked": {
-    "files": 1291,
-    "bytes": 33669816
+    "files": 1294,
+    "bytes": 35472396
   }
 }

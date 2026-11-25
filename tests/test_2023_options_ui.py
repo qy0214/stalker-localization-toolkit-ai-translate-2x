@@ -29,6 +29,9 @@ _TMP = tempfile.mkdtemp(prefix="ait2023_plugin_")
 _PDIR = os.path.join(_TMP, "ai_translate")
 os.makedirs(os.path.join(_PDIR, "assets"), exist_ok=True)
 shutil.copy2(_ORIG_PLUGIN, os.path.join(_PDIR, "plugin.py"))
+shutil.copytree(os.path.join(os.path.dirname(_ORIG_PLUGIN), "stalker_translate_core"),
+                  os.path.join(_PDIR, "stalker_translate_core"),
+                  dirs_exist_ok=True)
 for _f in os.listdir(_ASSET_SRC):
     _src = os.path.join(_ASSET_SRC, _f)
     if os.path.isfile(_src):

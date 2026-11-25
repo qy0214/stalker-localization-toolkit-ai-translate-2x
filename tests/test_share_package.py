@@ -76,6 +76,11 @@ EXPECT = {"plugin.py",
           os.path.join("assets", "xray_pkg.zip"),
           os.path.join("assets", "stalker_termbase.json"),
           os.path.join("assets", "glossary_builtin.json")}
+_core_root = os.path.join(SHARE, "stalker_translate_core")
+for _root, _dirs, _files in os.walk(_core_root):
+    for _name in _files:
+        if _name.endswith(".py"):
+            EXPECT.add(os.path.relpath(os.path.join(_root, _name), SHARE))
 check("A1 只含插件+解析器+术语数据+来源声明（无模型/运行库/配置/日志）",
       set(files) == EXPECT, str(sorted(set(files) ^ EXPECT) or files))
 

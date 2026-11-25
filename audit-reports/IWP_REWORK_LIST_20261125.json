@@ -1,0 +1,5661 @@
+{
+ "_meta": {
+  "report": "IWP_FULL_AUDIT_20261125.json",
+  "blocks": 325,
+  "warns": 337,
+  "waived": {
+   "orphan_out_generated": 1,
+   "cyr_proper_noun": 306,
+   "num_year_converted": 11,
+   "num_partial": 35,
+   "trunc_cjk_calibrated": 1154
+  }
+ },
+ "rework_block": [
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_achievement.xml",
+   "id": "send",
+   "src": "An anonymous source has sent you the coordinates of several unique stashes.",
+   "out": "An anonymous source has sent you the coordinates of several unique stashes."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_achievement.xml",
+   "id": "send",
+   "src": "S.C.H.O.L.A.R.",
+   "out": "S.C.H.O.L.A.R."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dialogs.xml",
+   "id": "send",
+   "src": "%c[ui_8]Interesting... Very interesting. I'll overlook the fact that you just ha",
+   "out": "%c[ui_8]Interesting... Very interesting. I'll overlook the fact that you just ha"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dialogs_new.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "karliks",
+   "out": "karliks"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "tushkanos",
+   "out": "tushkanos"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "mercs",
+   "out": "mercs"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "a Freedomer",
+   "out": "a Freedomer"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "psy-storm",
+   "out": "psy-storm"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Congrats, my friend.",
+   "out": "Congrats, my friend."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Weird... the emergency signal I received was pointing over this location $locati",
+   "out": "Weird... the emergency signal I received was pointing over this location $locati"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$mechanic here. I'm looking for steel plates and carbon fiber. So if you came by",
+   "out": "$mechanic here. I'm looking for steel plates and carbon fiber. So if you came by"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker... My squad has been attacked by $target few minutes ago in $ma",
+   "out": "This is $speaker... My squad has been attacked by $target few minutes ago in $ma"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Help! we got jumped by $target in $map, $location.\\nTwo of our squad are sufferi",
+   "out": "Help! we got jumped by $target in $map, $location.\\nTwo of our squad are sufferi"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Help! we got attacked by $target in $map. Three men from our squad are suffering",
+   "out": "Help! we got attacked by $target in $map. Three men from our squad are suffering"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We have spotted $target approaching our location $location in $map. $boss, what ",
+   "out": "We have spotted $target approaching our location $location in $map. $boss, what "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "A few minutes ago, my squad engaged $target in $map, $location. They fell back a",
+   "out": "A few minutes ago, my squad engaged $target in $map, $location. They fell back a"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "One of my men spotted $target heading our way in $map. We took position $locatio",
+   "out": "One of my men spotted $target heading our way in $map. We took position $locatio"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We opened fire on $target in $map after ignoring our clear warnings.\\nLooks like",
+   "out": "We opened fire on $target in $map after ignoring our clear warnings.\\nLooks like"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$boss, this is $speaker. After a long battle with $target in $map, $location, we",
+   "out": "$boss, this is $speaker. After a long battle with $target in $map, $location, we"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker. We met $target in $map, $location. One of them is suffering fr",
+   "out": "This is $speaker. We met $target in $map, $location. One of them is suffering fr"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We got assistance from $target in $map.\\n They have extra medical supplies. You ",
+   "out": "We got assistance from $target in $map.\\n They have extra medical supplies. You "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "I saw $target roaming $location in $map. They are searching for artifacts.\\nOne ",
+   "out": "I saw $target roaming $location in $map. They are searching for artifacts.\\nOne "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "I was talking to $target we met $location in $map. Their commander, $speaker, me",
+   "out": "I was talking to $target we met $location in $map. Their commander, $speaker, me"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Just found dead bodies of $target here in $map, or what's left of them... Seems ",
+   "out": "Just found dead bodies of $target here in $map, or what's left of them... Seems "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We came by $target on our way towards $map. They're preparing for a raid on muta",
+   "out": "We came by $target on our way towards $map. They're preparing for a raid on muta"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Weird... the emergency signal I received was pointing over this location $locati",
+   "out": "Weird... the emergency signal I received was pointing over this location $locati"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$mechanic here. I'm missing steel plates and carbon fiber.\\nIf you came by any d",
+   "out": "$mechanic here. I'm missing steel plates and carbon fiber.\\nIf you came by any d"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker... My group has been attacked by $target few minutes ago in $ma",
+   "out": "This is $speaker... My group has been attacked by $target few minutes ago in $ma"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Help! we got jumped by $target in $map, $location. I lost two of my men already,",
+   "out": "Help! we got jumped by $target in $map, $location. I lost two of my men already,"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Shit.... Help! we got attacked by $target in $map. I lost two guys already, we c",
+   "out": "Shit.... Help! we got attacked by $target in $map. I lost two guys already, we c"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "A few minutes ago, my group opened fire at $target in $map, $location. They fell",
+   "out": "A few minutes ago, my group opened fire at $target in $map, $location. They fell"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "One of my men spotted $target heading our way in $map. We moved $location. If th",
+   "out": "One of my men spotted $target heading our way in $map. We moved $location. If th"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We opened fire on $target in $map, those idiots were pointing their guns toward ",
+   "out": "We opened fire on $target in $map, those idiots were pointing their guns toward "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$boss, this is $speaker. We had a big gunfight with $target in $map, $location. ",
+   "out": "$boss, this is $speaker. We had a big gunfight with $target in $map, $location. "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker. We met $target in $map, $location. One of them is suffering fr",
+   "out": "This is $speaker. We met $target in $map, $location. One of them is suffering fr"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We got assistance from $target in $map.\\nThey're nice people, we got some extra ",
+   "out": "We got assistance from $target in $map.\\nThey're nice people, we got some extra "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Hey guys, check this out. $target are roaming $location in $map. Looks like they",
+   "out": "Hey guys, check this out. $target are roaming $location in $map. Looks like they"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "I was talking to $target we met $location in $map. Their commander, $speaker, me",
+   "out": "I was talking to $target we met $location in $map. Their commander, $speaker, me"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Damn... Just found dead bodies of $target here in $map, or what's left of them a",
+   "out": "Damn... Just found dead bodies of $target here in $map, or what's left of them a"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "So we came by $target on our way towards $map. They're preparing for a big raid ",
+   "out": "So we came by $target on our way towards $map. They're preparing for a big raid "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Weird... the emergency signal I received was pointing over this location $locati",
+   "out": "Weird... the emergency signal I received was pointing over this location $locati"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker... My group has been attacked by $target few minutes ago in $ma",
+   "out": "This is $speaker... My group has been attacked by $target few minutes ago in $ma"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Help! we got jumped by $target in $map, $location. Two of my science group are s",
+   "out": "Help! we got jumped by $target in $map, $location. Two of my science group are s"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Help us! we got attacked by $target in $map. Three researchers are suffering fro",
+   "out": "Help us! we got attacked by $target in $map. Three researchers are suffering fro"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We have spotted $target approaching our location $location in $map.\\n$boss, is t",
+   "out": "We have spotted $target approaching our location $location in $map.\\n$boss, is t"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "A few minutes ago, my group engaged $target in $map, $location.\\nThey fell back ",
+   "out": "A few minutes ago, my group engaged $target in $map, $location.\\nThey fell back "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We opened fire on $target in $map after ignoring our clear warnings.\\nLooks like",
+   "out": "We opened fire on $target in $map after ignoring our clear warnings.\\nLooks like"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "This is $speaker. We met $target in $map, $location. One of them is suffering fr",
+   "out": "This is $speaker. We met $target in $map, $location. One of them is suffering fr"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We got assistance from $target in $map.\\n They have extra medical supplies. You ",
+   "out": "We got assistance from $target in $map.\\n They have extra medical supplies. You "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "I saw $target roaming $location in $map. They are searching for artifacts.\\nOne ",
+   "out": "I saw $target roaming $location in $map. They are searching for artifacts.\\nOne "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "I was talking to $target we met $location in $map. Their commander, $speaker, me",
+   "out": "I was talking to $target we met $location in $map. Their commander, $speaker, me"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We found dead bodies of $target here in $map, everything is messy... Seems like ",
+   "out": "We found dead bodies of $target here in $map, everything is messy... Seems like "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "We came by $target on our way towards $map. They're preparing for a raid on muta",
+   "out": "We came by $target on our way towards $map. They're preparing for a raid on muta"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Anonymous\\n$clr_2There was heavy fog in Yantar yesterday, made zombies imp",
+   "out": "$clr_1Anonymous\\n$clr_2There was heavy fog in Yantar yesterday, made zombies imp"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Makar\\n$clr_2If only I could leave this mess, buy a flat in the city, and ",
+   "out": "$clr_1Makar\\n$clr_2If only I could leave this mess, buy a flat in the city, and "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Gatekeeper\\n$clr_2Once again for those \"particularly gifted\": do not go to",
+   "out": "$clr_1Gatekeeper\\n$clr_2Once again for those \"particularly gifted\": do not go to"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "%Cardan:\\n$clr_2Ehhhh... Hello everyone. Just woke up, I'm waiting for a drink.",
+   "out": "%Cardan:\\n$clr_2Ehhhh... Hello everyone. Just woke up, I'm waiting for a drink."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "m.. mma... mah.... ah........",
+   "out": "m.. mma... mah.... ah........"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "m.. mma... mon..monooo.... lith",
+   "out": "m.. mma... mon..monooo.... lith"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "yyy...eyh....s.seee... aaar....",
+   "out": "yyy...eyh....s.seee... aaar...."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": ".....s..soooo...ooon........eeeeh...",
+   "out": ".....s..soooo...ooon........eeeeh..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "send",
+   "src": "AM",
+   "out": "AM"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_artefacts.xml",
+   "id": "send",
+   "src": "Black Angel",
+   "out": "Black Angel"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_artefacts.xml",
+   "id": "send",
+   "src": "Black Stone",
+   "out": "Black Stone"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "STs-130 PT (7N34)",
+   "out": "STs-130 PT (7N34)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "STs-130 VPS",
+   "out": "STs-130 VPS"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Beretta M9A1",
+   "out": "Beretta M9A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Colt M1911A1",
+   "out": "Colt M1911A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Silver Hawk",
+   "out": "Silver Hawk"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "IMI Desert Eagle",
+   "out": "IMI Desert Eagle"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Steyr AUG A1",
+   "out": "Steyr AUG A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "An assault rifle/grenade launcher system that is 70% interchangeable with AKS-74",
+   "out": "An assault rifle/grenade launcher system that is 70% interchangeable with AKS-74"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "OTs-14-1A Storm M1",
+   "out": "OTs-14-1A Storm M1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Enfield L85A2",
+   "out": "Enfield L85A2"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "PKM Vist",
+   "out": "PKM Vist"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "SIG-Sauer P220R",
+   "out": "SIG-Sauer P220R"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Franchi SPAS-12",
+   "out": "Franchi SPAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Benelli M4 Super 90 (M1014)",
+   "out": "Benelli M4 Super 90 (M1014)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Molot OP-SKS",
+   "out": "Molot OP-SKS"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "AS Val",
+   "out": "AS Val"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "VSS Vintorez",
+   "out": "VSS Vintorez"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "SR-3M Vikhr",
+   "out": "SR-3M Vikhr"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Walther P99",
+   "out": "Walther P99"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "FN Five-seveN USG",
+   "out": "FN Five-seveN USG"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "DS Arms SA-58",
+   "out": "DS Arms SA-58"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "SR-1MP Gyurza",
+   "out": "SR-1MP Gyurza"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "SR-2MP Veresk",
+   "out": "SR-2MP Veresk"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Colt M45A1",
+   "out": "Colt M45A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Walther WA 2000",
+   "out": "Walther WA 2000"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Browning B725",
+   "out": "Browning B725"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE 22",
+   "out": "Galil ACE 22"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE 31",
+   "out": "Galil ACE 31"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "TDI KRISS Vector",
+   "out": "TDI KRISS Vector"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "send",
+   "src": "Daewoo USAS-12",
+   "out": "Daewoo USAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_itm_minimod.xml",
+   "id": "send",
+   "src": "Are you sure you would like to repair %s?\\n\\n%c[255,1,255,1]+%s%",
+   "out": "Are you sure you would like to repair %s?\\n\\n%c[255,1,255,1]+%s%"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_bar.xml",
+   "id": "send",
+   "src": "%c[ui_8]We are always hunting for dangerous mutants in the Zone. Kill one of tho",
+   "out": "%c[ui_8]We are always hunting for dangerous mutants in the Zone. Kill one of tho"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_bar.xml",
+   "id": "send",
+   "src": "%s are required by Mangun to install advanced equipment upgrades. You should bri",
+   "out": "%s are required by Mangun to install advanced equipment upgrades. You should bri"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Eliminate Mutant Threat for Olivius",
+   "out": "Eliminate Mutant Threat for Olivius"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Mutants have been spotted near this location, making the area dangerous. You hav",
+   "out": "Mutants have been spotted near this location, making the area dangerous. You hav"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "%c[ui_8]We've been looking for someone with enough balls to clear out mutants in",
+   "out": "%c[ui_8]We've been looking for someone with enough balls to clear out mutants in"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Fantastic! Here is your payment. I'll make sure to put a good word in for you wi",
+   "out": "Fantastic! Here is your payment. I'll make sure to put a good word in for you wi"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_deadcity.xml",
+   "id": "send",
+   "src": "%c[ui_8]Listen up, buddy. I'm expecting an important delivery that includes... s",
+   "out": "%c[ui_8]Listen up, buddy. I'm expecting an important delivery that includes... s"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/st_quests_jupiter.xml",
+   "id": "send",
+   "src": "%c[ui_8]Kill this mutant and bring me its %c[ui_orange]%s%c[ui_8] and I will pay",
+   "out": "%c[ui_8]Kill this mutant and bring me its %c[ui_orange]%s%c[ui_8] and I will pay"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_hints.xml",
+   "id": "send",
+   "src": "Displays artifact slots and information about current partners (on the main scre",
+   "out": "Displays artifact slots and information about current partners (on the main scre"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_hints.xml",
+   "id": "send",
+   "src": "Controls the spawning of helicopters in the CEZ.\\n \\n%c[yellow]Additionally: %c[",
+   "out": "Controls the spawning of helicopters in the CEZ.\\n \\n%c[yellow]Additionally: %c["
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_hints.xml",
+   "id": "send",
+   "src": "Mutant population coefficient in the CEZ. The higher the value, the more mutants",
+   "out": "Mutant population coefficient in the CEZ. The higher the value, the more mutants"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_hints.xml",
+   "id": "send",
+   "src": "Stalker population coefficient in the CEZ. The higher the value, the more stalke",
+   "out": "Stalker population coefficient in the CEZ. The higher the value, the more stalke"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Optimizes shadow draw distance to improve performance.\\n \\nDefault: %c[255,216,1",
+   "out": "Optimizes shadow draw distance to improve performance.\\n \\nDefault: %c[255,216,1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Responsible for the range of visibility of static (stationary) objects. The high",
+   "out": "Responsible for the range of visibility of static (stationary) objects. The high"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Responsible for the range of visibility of dynamic (moving) objects. The higher ",
+   "out": "Responsible for the range of visibility of dynamic (moving) objects. The higher "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Responsible for the quality and range of texture rendering at a distance.\\n \\nDe",
+   "out": "Responsible for the quality and range of texture rendering at a distance.\\n \\nDe"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "It is a technology that improves the display of textures when they are placed in",
+   "out": "It is a technology that improves the display of textures when they are placed in"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "It is a technology that reduces \"jagged\" edges (aliasing) on objects, making lin",
+   "out": "It is a technology that reduces \"jagged\" edges (aliasing) on objects, making lin"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "This option is responsible for displaying volumetric rays from sunlight.\\n \\nDef",
+   "out": "This option is responsible for displaying volumetric rays from sunlight.\\n \\nDef"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "This option is responsible for displaying the player's shadow.\\n \\nDefault: %c[2",
+   "out": "This option is responsible for displaying the player's shadow.\\n \\nDefault: %c[2"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "This option is responsible for displaying grass shadows.\\n \\nDefault: %c[255,216",
+   "out": "This option is responsible for displaying grass shadows.\\n \\nDefault: %c[255,216"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Enables display of PiP (picture in picture) scopes.\\n \\nDefault: %c[255,216,186,",
+   "out": "Enables display of PiP (picture in picture) scopes.\\n \\nDefault: %c[255,216,186,"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Affects the level of detail and clarity of textures applied to 3D-models and sur",
+   "out": "Affects the level of detail and clarity of textures applied to 3D-models and sur"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Responsible for displaying the \"fogged edges\" and raindrop effect when wearing h",
+   "out": "Responsible for displaying the \"fogged edges\" and raindrop effect when wearing h"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Lean on Press",
+   "out": "Lean on Press"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "send",
+   "src": "Aim on Press",
+   "out": "Aim on Press"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Black Angel",
+   "out": "Black Angel"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Black Stone",
+   "out": "Black Stone"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_mutants.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]Cats%c[0,140,140,140] in the Zone are heavily mutated from l",
+   "out": "\t\t\t%c[0,153,255,255]Cats%c[0,140,140,140] in the Zone are heavily mutated from l"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_options_gameplay.xml",
+   "id": "send",
+   "src": "Spawn Exclusion",
+   "out": "Spawn Exclusion"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "AN-94 Abakan",
+   "out": "AN-94 Abakan"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Steyr AUG A1",
+   "out": "Steyr AUG A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Browning B725",
+   "out": "Browning B725"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Beretta M9A1",
+   "out": "Beretta M9A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Colt M1911A1",
+   "out": "Colt M1911A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Colt M45A1",
+   "out": "Colt M45A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "FN Five-seveN",
+   "out": "FN Five-seveN"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE",
+   "out": "Galil ACE"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]SA-80%c[0,140,140,140] (SA-80 - Small Arms for 1980) - a Bri",
+   "out": "\t\t\t%c[0,153,255,255]SA-80%c[0,140,140,140] (SA-80 - Small Arms for 1980) - a Bri"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Remington M700",
+   "out": "Remington M700"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Brugger Thomet MP9",
+   "out": "Brugger Thomet MP9"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "DS Arms SA-58",
+   "out": "DS Arms SA-58"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "SIG Sauer P220",
+   "out": "SIG Sauer P220"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Molot OP-SKS",
+   "out": "Molot OP-SKS"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Franchi SPAS-12",
+   "out": "Franchi SPAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Benelli M4 Super 90",
+   "out": "Benelli M4 Super 90"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "SR-1MP Gyurza",
+   "out": "SR-1MP Gyurza"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "SR-2MP Veresk",
+   "out": "SR-2MP Veresk"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]SR-2 Veresk%c[0,140,140,140] (\"special development 2\") - a R",
+   "out": "\t\t\t%c[0,153,255,255]SR-2 Veresk%c[0,140,140,140] (\"special development 2\") - a R"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]TOZ-34%c[0,140,140,140] - a lightweight double-barrel huntin",
+   "out": "\t\t\t%c[0,153,255,255]TOZ-34%c[0,140,140,140] - a lightweight double-barrel huntin"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Daewoo USAS-12",
+   "out": "Daewoo USAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]USAS-12%c[0,140,140,140] - an automatic shotgun developed by",
+   "out": "\t\t\t%c[0,153,255,255]USAS-12%c[0,140,140,140] - an automatic shotgun developed by"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "AS Val",
+   "out": "AS Val"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "SR-3M Vikhr",
+   "out": "SR-3M Vikhr"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "KRISS Vector",
+   "out": "KRISS Vector"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "VSS Vintorez",
+   "out": "VSS Vintorez"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Walther WA 2000",
+   "out": "Walther WA 2000"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Walther P99",
+   "out": "Walther P99"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_other.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_radio.xml",
+   "id": "send",
+   "src": "Loop One",
+   "out": "Loop One"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_radio.xml",
+   "id": "send",
+   "src": "Shuffle On",
+   "out": "Shuffle On"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/eng/ui_st_radio.xml",
+   "id": "send",
+   "src": "Shuffle Off",
+   "out": "Shuffle Off"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_achievement.xml",
+   "id": "send",
+   "src": "S.C.H.O.L.A.R.",
+   "out": "S.C.H.O.L.A.R."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_characters.xml",
+   "id": "send",
+   "src": "Кол",
+   "out": "Кол"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_characters.xml",
+   "id": "send",
+   "src": "Громов",
+   "out": "Громов"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "СБУ",
+   "out": "СБУ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "[Глухарь спрыгнул]",
+   "out": "[Глухарь спрыгнул]"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Теперь поворачивайся! Поворачивайся, сказал! Медленно, ты, и вали отсюда на, пок",
+   "out": "Теперь поворачивайся! Поворачивайся, сказал! Медленно, ты, и вали отсюда на, пок"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "М-м? Чего ты, ну...? Дай поспать... Будь человеком.",
+   "out": "М-м? Чего ты, ну...? Дай поспать... Будь человеком."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Ух ты, вот это пушка! Слушай, покажи-ка, а?",
+   "out": "Ух ты, вот это пушка! Слушай, покажи-ка, а?"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Эй, парень! Сколько можно морозить? В общем, больше ждать тебя не будем. Отряд, ",
+   "out": "Эй, парень! Сколько можно морозить? В общем, больше ждать тебя не будем. Отряд, "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Вас понял.",
+   "out": "Вас понял."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Вас понял, ребята! Постараемся успеть!",
+   "out": "Вас понял, ребята! Постараемся успеть!"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Вас понял!",
+   "out": "Вас понял!"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_closecaption.xml",
+   "id": "send",
+   "src": "Ух ты, ещё одна группа! Так, сейчас посмотрим, кто из них посланник.",
+   "out": "Ух ты, ещё одна группа! Так, сейчас посмотрим, кто из них посланник."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialog_manager.xml",
+   "id": "send",
+   "src": "Видел когда-нибудь, как ярко-оранжевый человечек бегает между камышами? Эти учён",
+   "out": "Видел когда-нибудь, как ярко-оранжевый человечек бегает между камышами? Эти учён"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialog_manager.xml",
+   "id": "send",
+   "src": "Мне обещали награду за твою голову. Что скажешь напоследок?",
+   "out": "Мне обещали награду за твою голову. Что скажешь напоследок?"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialog_manager.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialog_manager.xml",
+   "id": "send",
+   "src": "Тебя Султан прислал, так ведь? Ублюдок ссаный... Чего ты хочешь?! Денег? Вот, де",
+   "out": "Тебя Султан прислал, так ведь? Ублюдок ссаный... Чего ты хочешь?! Денег? Вот, де"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialog_manager.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_bar.xml",
+   "id": "send",
+   "src": "Ты купить чего-то хочешь, или как?",
+   "out": "Ты купить чего-то хочешь, или как?"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_jupiter.xml",
+   "id": "send",
+   "src": "Ты за медикаментами или так, поболтать?",
+   "out": "Ты за медикаментами или так, поболтать?"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_new.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_redforest.xml",
+   "id": "send",
+   "src": "Хорошо. Если уж и вправду в Лиманске старые запасы не кончились, принесу. Но сам",
+   "out": "Хорошо. Если уж и вправду в Лиманске старые запасы не кончились, принесу. Но сам"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_redforest.xml",
+   "id": "send",
+   "src": "Эх, сынок, у меня то с памятью проблемы должны быть, а не у тебя. Молодой ведь е",
+   "out": "Эх, сынок, у меня то с памятью проблемы должны быть, а не у тебя. Молодой ведь е"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_warlab.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dialogs_yantar.xml",
+   "id": "send",
+   "src": "Профессор, я насчёт пропавшей группы, помните?",
+   "out": "Профессор, я насчёт пропавшей группы, помните?"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "химеру",
+   "out": "химеру"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "химеру",
+   "out": "химеру"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "излома",
+   "out": "излома"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "SOS!",
+   "out": "SOS!"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "SOS!",
+   "out": "SOS!"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "долгари",
+   "out": "долгари"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "мерк",
+   "out": "мерк"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "SOS!",
+   "out": "SOS!"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "в Х-18,",
+   "out": "в Х-18,"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "в Х-19,",
+   "out": "в Х-19,"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "в Х-8,",
+   "out": "в Х-8,"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "«Янова»",
+   "out": "«Янова»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "дн",
+   "out": "дн"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "нед",
+   "out": "нед"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Один $target помог нам $map у него неплохие медицинские познания. Можете позволи",
+   "out": "Один $target помог нам $map у него неплохие медицинские познания. Можете позволи"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Один $target помог нам $map у него неплохие медицинские познания. Мы будем держа",
+   "out": "Один $target помог нам $map у него неплохие медицинские познания. Мы будем держа"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Кажется, что последний выброс полностью разрушил датчики $map которые я установи",
+   "out": "Кажется, что последний выброс полностью разрушил датчики $map которые я установи"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "Один $target помог нам $map у него неплохие медицинские познания. Можете позволи",
+   "out": "Один $target помог нам $map у него неплохие медицинские познания. Можете позволи"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Твёрдый\\n$clr_2nапруегпрвлатмаоп\\n$clr_1Лукаш\\n$clr_2Опять всю водяру выжр",
+   "out": "$clr_1Твёрдый\\n$clr_2nапруегпрвлатмаоп\\n$clr_1Лукаш\\n$clr_2Опять всю водяру выжр"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Султан\\n$clr_2Братва, когда найдете Шпалу - можете вальнуть на месте, тока",
+   "out": "$clr_1Султан\\n$clr_2Братва, когда найдете Шпалу - можете вальнуть на месте, тока"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_dynamic_news.xml",
+   "id": "send",
+   "src": "$clr_1Яр\\n$clr_2Эй, Ашот, ну как тебе Янов? Пришёл уже на всё готовенькое, боец ",
+   "out": "$clr_1Яр\\n$clr_2Эй, Ашот, ну как тебе Янов? Пришёл уже на всё готовенькое, боец "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_generate_fnames.xml",
+   "id": "send",
+   "src": "Русик",
+   "out": "Русик"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_artefacts.xml",
+   "id": "send",
+   "src": "«Цепень»",
+   "out": "«Цепень»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_artefacts.xml",
+   "id": "send",
+   "src": "«Василиск»",
+   "out": "«Василиск»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_artefacts.xml",
+   "id": "send",
+   "src": "«Буравчик»",
+   "out": "«Буравчик»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_artefacts.xml",
+   "id": "send",
+   "src": "«Лента»",
+   "out": "«Лента»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_artefacts.xml",
+   "id": "send",
+   "src": "«Зелёнка»",
+   "out": "«Зелёнка»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_outfit.xml",
+   "id": "send",
+   "src": "ССП-100М «Универсал»",
+   "out": "ССП-100М «Универсал»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "5.56х45 М855",
+   "out": "5.56х45 М855"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "5.56х45 M856A1",
+   "out": "5.56х45 M856A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "7.62х25 ТТ",
+   "out": "7.62х25 ТТ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "9х18",
+   "out": "9х18"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "9х18 ПММ",
+   "out": "9х18 ПММ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "СЦ-130 ПТ (7н34)",
+   "out": "СЦ-130 ПТ (7н34)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ИЭМВ",
+   "out": "ИЭМВ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Beretta M9A1",
+   "out": "Beretta M9A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Обрез ТОЗ-66",
+   "out": "Обрез ТОЗ-66"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Colt M1911A1",
+   "out": "Colt M1911A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "IMI Desert Eagle",
+   "out": "IMI Desert Eagle"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Steyr AUG A1",
+   "out": "Steyr AUG A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ОЦ-14-4А «Гроза»",
+   "out": "ОЦ-14-4А «Гроза»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Enfield L85A2",
+   "out": "Enfield L85A2"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ПБ",
+   "out": "ПБ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ПКМ «Вист»",
+   "out": "ПКМ «Вист»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "АПБ",
+   "out": "АПБ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "РГ-6 «Гном»",
+   "out": "РГ-6 «Гном»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ПКМ",
+   "out": "ПКМ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "SIG-Sauer P220R",
+   "out": "SIG-Sauer P220R"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Franchi SPAS-12",
+   "out": "Franchi SPAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Benelli M4 Super 90 (M1014)",
+   "out": "Benelli M4 Super 90 (M1014)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "СВУ",
+   "out": "СВУ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "СВУ-А",
+   "out": "СВУ-А"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "ВССМ",
+   "out": "ВССМ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Walther P99",
+   "out": "Walther P99"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Глушитель Гексагон 12К",
+   "out": "Глушитель Гексагон 12К"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "FN Five-seveN USG",
+   "out": "FN Five-seveN USG"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "DS Arms SA-58",
+   "out": "DS Arms SA-58"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Сайга-12К",
+   "out": "Сайга-12К"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Сайга-12М",
+   "out": "Сайга-12М"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "РПК",
+   "out": "РПК"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "РПК-74(П)",
+   "out": "РПК-74(П)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "СР-2МП «Вереск»",
+   "out": "СР-2МП «Вереск»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Colt M45A1",
+   "out": "Colt M45A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Ротор 43",
+   "out": "Ротор 43"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Walther WA 2000",
+   "out": "Walther WA 2000"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Browning B725",
+   "out": "Browning B725"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE 22",
+   "out": "Galil ACE 22"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE 31",
+   "out": "Galil ACE 31"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "TDI KRISS Vector",
+   "out": "TDI KRISS Vector"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "send",
+   "src": "Daewoo USAS-12",
+   "out": "Daewoo USAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_items_weapons_upgrades.xml",
+   "id": "tb",
+   "src": "Восст. здоровья",
+   "out": "Восст. здоровья"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_itm_minimod.xml",
+   "id": "send",
+   "src": "РБС «Шпингалет»",
+   "out": "РБС «Шпингалет»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_land_names.xml",
+   "id": "send",
+   "src": "«Янов»",
+   "out": "«Янов»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "2ч",
+   "out": "2ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "3ч",
+   "out": "3ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "4ч",
+   "out": "4ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "5ч",
+   "out": "5ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "6ч",
+   "out": "6ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "7ч",
+   "out": "7ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "8ч",
+   "out": "8ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "9ч",
+   "out": "9ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "10ч",
+   "out": "10ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "11ч",
+   "out": "11ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "12ч",
+   "out": "12ч"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_atmosfear_texts.xml",
+   "id": "send",
+   "src": "Туманная",
+   "out": "Туманная"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_mm_faction_select.xml",
+   "id": "send",
+   "src": "откл",
+   "out": "откл"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Пошмалять мутантов",
+   "out": "Пошмалять мутантов"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Необходимо зачистить логово мутантов.",
+   "out": "Необходимо зачистить логово мутантов."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "%c[ui_8]Короче, дело такое: к нам тут на днях со Свалки зверье местное заползло.",
+   "out": "%c[ui_8]Короче, дело такое: к нам тут на днях со Свалки зверье местное заползло."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_darkvalley.xml",
+   "id": "send",
+   "src": "Малаца, ёптыть! Держи бабки. Слушай, я смотрю ты реальный пацан, так шо я пахану",
+   "out": "Малаца, ёптыть! Держи бабки. Слушай, я смотрю ты реальный пацан, так шо я пахану"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_marsh.xml",
+   "id": "send",
+   "src": "%c[ui_8]В Зоне найти нормальные инструменты - задача не из лёгких, а уж в такой ",
+   "out": "%c[ui_8]В Зоне найти нормальные инструменты - задача не из лёгких, а уж в такой "
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/st_quests_marsh.xml",
+   "id": "send",
+   "src": "Аномальные тропы",
+   "out": "Аномальные тропы"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Светляк",
+   "out": "Светляк"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Зелёнка",
+   "out": "Зелёнка"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Поганка",
+   "out": "Поганка"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Василиск",
+   "out": "Василиск"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_artefacts.xml",
+   "id": "send",
+   "src": "Цепень",
+   "out": "Цепень"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_characters.xml",
+   "id": "send",
+   "src": "Громов",
+   "out": "Громов"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_factions_historic.xml",
+   "id": "send",
+   "src": "«ИИГ»",
+   "out": "«ИИГ»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_options_other.xml",
+   "id": "send",
+   "src": "\t\t\tРежим %c[0,153,255,255]«Одна жизнь»%c[0,140,140,140] приводит к подлинной гиб",
+   "out": "\t\t\tРежим %c[0,153,255,255]«Одна жизнь»%c[0,140,140,140] приводит к подлинной гиб"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_options_other.xml",
+   "id": "send",
+   "src": "\t\t\tРежим %c[0,153,255,255]«Выживание»%c[0,140,140,140] превращает Зону в охотнич",
+   "out": "\t\t\tРежим %c[0,153,255,255]«Выживание»%c[0,140,140,140] превращает Зону в охотнич"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Steyr AUG A1",
+   "out": "Steyr AUG A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Browning B725",
+   "out": "Browning B725"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Beretta M9A1",
+   "out": "Beretta M9A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Colt M1911A1",
+   "out": "Colt M1911A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Colt M45A1",
+   "out": "Colt M45A1"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "\t\t\t%c[0,153,255,255]Пистолет M45A1%c[0,140,140,140] производства компании Colt п",
+   "out": "\t\t\t%c[0,153,255,255]Пистолет M45A1%c[0,140,140,140] производства компании Colt п"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "LOBAEV Arms ДВЛ-10 «Диверсант»",
+   "out": "LOBAEV Arms ДВЛ-10 «Диверсант»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "FN Five-seveN",
+   "out": "FN Five-seveN"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Galil ACE",
+   "out": "Galil ACE"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "ОЦ-14-4А «Гроза»",
+   "out": "ОЦ-14-4А «Гроза»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Remington M700",
+   "out": "Remington M700"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Brugger Thomet MP9",
+   "out": "Brugger Thomet MP9"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "ПБ",
+   "out": "ПБ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "ПКМ",
+   "out": "ПКМ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "АПБ",
+   "out": "АПБ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "РГ-6 «Гном»",
+   "out": "РГ-6 «Гном»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "DS Arms SA-58",
+   "out": "DS Arms SA-58"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Сайга-12К",
+   "out": "Сайга-12К"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "SIG Sauer P220",
+   "out": "SIG Sauer P220"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Franchi SPAS-12",
+   "out": "Franchi SPAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Benelli M4 Super 90",
+   "out": "Benelli M4 Super 90"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "СР-2МП «Вереск»",
+   "out": "СР-2МП «Вереск»"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "СВУ",
+   "out": "СВУ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Daewoo USAS-12",
+   "out": "Daewoo USAS-12"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "KRISS Vector",
+   "out": "KRISS Vector"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "ВССМ",
+   "out": "ВССМ"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Walther WA 2000",
+   "out": "Walther WA 2000"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "send",
+   "src": "Walther P99",
+   "out": "Walther P99"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_keybinding.xml",
+   "id": "tb",
+   "src": "Текущее задание",
+   "out": "Текущее задание"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_other.xml",
+   "id": "send",
+   "src": "...",
+   "out": "..."
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_pda.xml",
+   "id": "send",
+   "src": "Вкл",
+   "out": "Вкл"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_pda.xml",
+   "id": "send",
+   "src": "Вкл",
+   "out": "Вкл"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_screen.xml",
+   "id": "send",
+   "src": "Закрыть гермодверь ($$ACTION_USE$$)",
+   "out": "Закрыть гермодверь ($$ACTION_USE$$)"
+  },
+  {
+   "kind": "untranslated",
+   "file": "configs/text/rus/ui_st_screen.xml",
+   "id": "send",
+   "src": "Открыть гермодверь ($$ACTION_USE$$)",
+   "out": "Открыть гермодверь ($$ACTION_USE$$)"
+  },
+  {
+   "kind": "ph",
+   "file": "scripts/dynamic_news_manager.script",
+   "id": "sgtat_gen_text_1795579571800825300_55",
+   "src_ph": [
+    "%s",
+    "%s",
+    "%s",
+    "%s"
+   ],
+   "out_ph": []
+  },
+  {
+   "kind": "ph",
+   "file": "scripts/dynamic_news_manager.script",
+   "id": "sgtat_gen_text_1795579571800825300_55",
+   "src_ph": [
+    "%s",
+    "%s",
+    "%s",
+    "%s"
+   ],
+   "out_ph": []
+  },
+  {
+   "kind": "ph",
+   "file": "scripts/ui_load_dialog.script",
+   "id": "sgtat_gen_text_1795579571800825300_61",
+   "src_ph": [
+    "%s"
+   ],
+   "out_ph": []
+  },
+  {
+   "kind": "cyr_sentence",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_val_nimble_descr",
+   "src": "СР-3 «Вихрь» - компактный российский автомат, разр",
+   "out": "СР-3 “Вихрь” 是一种紧凑型的俄罗斯自动步枪，基于无声步枪AS “Вал”研发而成。СР-"
+  },
+  {
+   "kind": "cyr_sentence",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_knife_ots04_descr",
+   "src": "Боевой нож «ОЦ-04» - аббревиатура «ОЦ» расшифровыв",
+   "out": "OЦ-04战斗刀——“OЦ”是“ЦКИБ武器”的缩写。OЦ-04刀刃由图拉中央设计研究局在80年代末"
+  }
+ ],
+ "rework_warn": [
+  {
+   "kind": "num_lost",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_faction_dolg_28",
+   "missing": "10",
+   "src": "Petrenko speaking. Kolya, confirm the info about t"
+  },
+  {
+   "kind": "num_lost",
+   "file": "configs/text/rus/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_131",
+   "missing": "45",
+   "src": "Взгляни - эта штука называется «FN FNX-45». Пистол"
+  },
+  {
+   "kind": "num_lost",
+   "file": "configs/text/rus/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_431",
+   "missing": "62",
+   "src": "Конечно. Вот, смотри, - «СКС». 7,62-мм самозарядны"
+  },
+  {
+   "kind": "num_lost",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rpk74_text",
+   "missing": "56",
+   "src": "\t\t\t%c[0,153,255,255]РПК-74%c[0,140,140,140] - ручн"
+  },
+  {
+   "kind": "num_lost",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wa2000_text",
+   "missing": "50",
+   "src": "\t\t\t%c[0,153,255,255]WA2000%c[0,140,140,140] (Walth"
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "dm_information_56",
+   "tokens": [
+    "Whirligigs",
+    "Burners"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "dm_information_57",
+   "tokens": [
+    "Dark",
+    "Valley"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialogs.xml",
+   "id": "about_quests_dialog_stalkers_72",
+   "tokens": [
+    "Grizzly",
+    "Mitay",
+    "Mitay"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_331",
+   "tokens": [
+    "Herstal",
+    "USSOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_411",
+   "tokens": [
+    "Tide",
+    "Tide"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialogs_new.xml",
+   "id": "st_radar_deactivate_sidor_msg",
+   "tokens": [
+    "Brain",
+    "Scorcher"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dialogs_zaton.xml",
+   "id": "zat_a2_stalker_barmen_actor_info_11131",
+   "tokens": [
+    "Scorcher",
+    "Grouse"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_l03_agroprom_daleko_5",
+   "tokens": [
+    "Bedrock",
+    "Claws"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_l03_agroprom_blizko_5",
+   "tokens": [
+    "Bedrock",
+    "Claws"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_faction_army_2",
+   "tokens": [
+    "Nightbird",
+    "Nightbird",
+    "Vulture"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_3",
+   "tokens": [
+    "Anonymous",
+    "Deals"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_13",
+   "tokens": [
+    "Anonymous",
+    "Wish"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_14",
+   "tokens": [
+    "Anonymous",
+    "Bored"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_15",
+   "tokens": [
+    "Anonymous",
+    "Join"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_16",
+   "tokens": [
+    "Anonymous",
+    "Yesterday"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_22",
+   "tokens": [
+    "Anonymous",
+    "Haha"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_24",
+   "tokens": [
+    "Anonymous",
+    "Tired"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_26",
+   "tokens": [
+    "Anonymous",
+    "Zhurov",
+    "Cargo"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_27",
+   "tokens": [
+    "Anonymous",
+    "Fuck"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_28",
+   "tokens": [
+    "Anonymous",
+    "Together"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_30",
+   "tokens": [
+    "Anonymous",
+    "Know"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_31",
+   "tokens": [
+    "Anonymous",
+    "What"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_33",
+   "tokens": [
+    "Anonymous",
+    "What"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_38",
+   "tokens": [
+    "Anonymous",
+    "Anyone"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_44",
+   "tokens": [
+    "Anonymous",
+    "Guys"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_45",
+   "tokens": [
+    "Anonymous",
+    "Bros"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_52",
+   "tokens": [
+    "Anonymous",
+    "People"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_53",
+   "tokens": [
+    "Anonymous",
+    "Anyone"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_54",
+   "tokens": [
+    "Anonymous",
+    "People"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_56",
+   "tokens": [
+    "Anonymous",
+    "Some"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_57",
+   "tokens": [
+    "Anonymous",
+    "Trust"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_59",
+   "tokens": [
+    "Anonymous",
+    "Handing"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_61",
+   "tokens": [
+    "Anonymous",
+    "Came"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_62",
+   "tokens": [
+    "Anonymous",
+    "Seems"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_66",
+   "tokens": [
+    "Anonymous",
+    "Anyone"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_69",
+   "tokens": [
+    "Anonymous",
+    "Death"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_74",
+   "tokens": [
+    "Anonymous",
+    "Damn"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_76",
+   "tokens": [
+    "Anonymous",
+    "Need"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_77",
+   "tokens": [
+    "Anonymous",
+    "Some"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_78",
+   "tokens": [
+    "Anonymous",
+    "Sold"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_81",
+   "tokens": [
+    "Anonymous",
+    "Hemul"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_82",
+   "tokens": [
+    "Anonymous",
+    "Rumor"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_84",
+   "tokens": [
+    "Anonymous",
+    "Damn"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_101",
+   "tokens": [
+    "Gromov",
+    "Guys"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_103",
+   "tokens": [
+    "Digger",
+    "Need"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_104",
+   "tokens": [
+    "Digger",
+    "Gathering"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_106",
+   "tokens": [
+    "Zhurov",
+    "Enough"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_107",
+   "tokens": [
+    "Heard",
+    "Scorcher"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_110",
+   "tokens": [
+    "Kitsenko",
+    "Psss"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_114",
+   "tokens": [
+    "Leon",
+    "That"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_135",
+   "tokens": [
+    "Rogovets",
+    "Here"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_154",
+   "tokens": [
+    "Biggie",
+    "Anyone"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_artefacts.xml",
+   "id": "st_artefact_needed",
+   "tokens": [
+    "Gimlet",
+    "Compass"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_equipment.xml",
+   "id": "st_drug_coagulant_descr",
+   "tokens": [
+    "Trimadol",
+    "Etamsylate"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_equipment.xml",
+   "id": "st_medkit_science_descr",
+   "tokens": [
+    "Vikasolum",
+    "Batilolum",
+    "Naphazoline"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_outfit.xml",
+   "id": "nbc_outfit_description",
+   "tokens": [
+    "Sunrise",
+    "CBRN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_outfit.xml",
+   "id": "halo_outfit_description",
+   "tokens": [
+    "Mjolnir",
+    "Mjolnir"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_quest.xml",
+   "id": "item_doc_x8_desc",
+   "tokens": [
+    "ddmmyyyy",
+    "Suslov"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_11.43x23_hydro_descr",
+   "tokens": [
+    "Hydra",
+    "Shok",
+    "Hydra",
+    "Shok"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_44mag_boom",
+   "tokens": [
+    "Panthera",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_44mag_boom_descr",
+   "tokens": [
+    "Panthera",
+    "Magnum",
+    "Boom",
+    "Remington",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_5.45x39_fmj_descr",
+   "tokens": [
+    "GRAU",
+    "Tombac"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_5.56x45_ap_descr",
+   "tokens": [
+    "NATO",
+    "NATO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_7.62x39_ap_descr",
+   "tokens": [
+    "GRAU",
+    "Tombac"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_7.62x54_7h1_descr",
+   "tokens": [
+    "GRAU",
+    "GRAU",
+    "GRAU"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_9x18_pmm_descr",
+   "tokens": [
+    "PstM",
+    "GRAU"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_9x19_pbp_descr",
+   "tokens": [
+    "GRAU",
+    "Index",
+    "KBAL",
+    "Koshkin"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_338_lm",
+   "tokens": [
+    "Lapua",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_338_lm_descr",
+   "tokens": [
+    "Lapua",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_taurus_descr",
+   "tokens": [
+    "Raging",
+    "Bull",
+    "Taurus",
+    "International"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_mp5_nimble_descr",
+   "tokens": [
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_mp9_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet",
+    "Picatinny"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_protecta_nimble_descr",
+   "tokens": [
+    "Auto",
+    "Assault"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_sig550_strelok_descr",
+   "tokens": [
+    "NATO",
+    "Magpul"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_svd_nimble_descr",
+   "tokens": [
+    "Dragunov",
+    "SVDS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_usp_nimble_descr",
+   "tokens": [
+    "Herstal",
+    "America",
+    "Fredericksburg"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_vintorez_nimble_descr",
+   "tokens": [
+    "Vintorez",
+    "Vintorez"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_gauss_cardan",
+   "tokens": [
+    "Mini",
+    "IEMW"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_susat_custom",
+   "tokens": [
+    "ACOG",
+    "Mera"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_fort_snag_descr",
+   "tokens": [
+    "Pernach",
+    "TsKIB",
+    "Stechkin"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_lr300_descr",
+   "tokens": [
+    "Colt",
+    "Model",
+    "SAFE",
+    "SEMI",
+    "AUTO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_micro_t1",
+   "tokens": [
+    "Aimpoint",
+    "Micro"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_micro_t1_descr",
+   "tokens": [
+    "Aimpoint",
+    "Micro",
+    "Aimpoint",
+    "Aimpoint"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_ac10632",
+   "tokens": [
+    "Barska",
+    "SIGHT"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_nato",
+   "tokens": [
+    "SureFire",
+    "SOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_9x19",
+   "tokens": [
+    "GEMTECH",
+    "Tundra"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_mp9_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_1p78_descr",
+   "tokens": [
+    "TsKB",
+    "Tochpribor",
+    "Mikhalenko"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_pu_descr",
+   "tokens": [
+    "Pritsel",
+    "Ukrochennyy"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_specter",
+   "tokens": [
+    "ELCAN",
+    "SpecterDR"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_scope_specter_descr",
+   "tokens": [
+    "Trijicon",
+    "ACOG"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_fiveseven_descr",
+   "tokens": [
+    "Five",
+    "seveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_ammo_5.7x28_fmj_descr",
+   "tokens": [
+    "Five",
+    "SeveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_57_descr",
+   "tokens": [
+    "Five",
+    "seveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_sa58_descr",
+   "tokens": [
+    "David",
+    "Selvaggio",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_m700_descr",
+   "tokens": [
+    "Remington",
+    "NATO",
+    "Remington",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_scarh_descr",
+   "tokens": [
+    "Herstal",
+    "SOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_glock",
+   "tokens": [
+    "SilencerCo",
+    "Osprey"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_m320_descr",
+   "tokens": [
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_m249_descr",
+   "tokens": [
+    "Minimi",
+    "Herstal",
+    "Manufacturing"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_wa2000_descr",
+   "tokens": [
+    "Walther",
+    "Automat"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_mdr_descr",
+   "tokens": [
+    "Desert",
+    "Tech"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_mdr_descr_drum",
+   "tokens": [
+    "Desert",
+    "Tech",
+    "Magpul"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_g28_descr",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_addon_sil_g28_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet",
+    "Prolonged"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_knife_ots04_descr",
+   "tokens": [
+    "TsKIB",
+    "TsKIB"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_knife_extreme",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_knife_extreme_descr",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_knife_km2000_descr",
+   "tokens": [
+    "Kampfmesser",
+    "Eickhorn",
+    "Solingen"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_galil_descr",
+   "tokens": [
+    "Galil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_galil31_descr",
+   "tokens": [
+    "Galil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_vector_descr",
+   "tokens": [
+    "KRISS",
+    "Vector"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_items_weapons_upgrades.xml",
+   "id": "st_up_bar_c1_descr",
+   "tokens": [
+    "Polygon",
+    "rifling"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/st_mm_faction_select.xml",
+   "id": "st_mm_ck_azazel_mode_desc",
+   "tokens": [
+    "Azazel",
+    "Azazel",
+    "Ironman",
+    "Story"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_cryray_options.xml",
+   "id": "ui_st_defaults",
+   "tokens": [
+    "user",
+    "file",
+    "datafiles"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_characters.xml",
+   "id": "encyclopedia_characters_lieutenant_kirilov_text",
+   "tokens": [
+    "Fairway",
+    "Kovalsky"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_characters.xml",
+   "id": "encyclopedia_characters_lukash_text",
+   "tokens": [
+    "Mikluha",
+    "Mikluha",
+    "Mikluha"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_characters.xml",
+   "id": "encyclopedia_characters_shurup_text",
+   "tokens": [
+    "Data",
+    "Great"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_documents.xml",
+   "id": "encyclopedia_documents_x8_text",
+   "tokens": [
+    "ddmmyyyy",
+    "Suslov"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_agroprom_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_agroprom_underground_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_chernobyl_npp_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_cordon_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_darkscape_text",
+   "tokens": [
+    "Dark",
+    "Hollow",
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_dead_city_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_generators_text",
+   "tokens": [
+    "Consciousness",
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_great_swamp_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_lab_x16_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_monolith_war_lab_text",
+   "tokens": [
+    "Laboratory",
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_rostok_text",
+   "tokens": [
+    "Rostok",
+    "Rads",
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_sarcophagus_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_locations.xml",
+   "id": "encyclopedia_locations_yantar_text",
+   "tokens": [
+    "Shadow",
+    "Chernobyl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_mutants.xml",
+   "id": "encyclopedia_mutants_fracture_text",
+   "tokens": [
+    "Attacks",
+    "Traits"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_options_other.xml",
+   "id": "encyclopedia_options_other_azazel_mode_text",
+   "tokens": [
+    "Azazel",
+    "Azazel"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_ash12_text",
+   "tokens": [
+    "TsKIB",
+    "VSSK",
+    "TsKIB"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_aug_text",
+   "tokens": [
+    "Steyr",
+    "Armee",
+    "Universal",
+    "Gewehr",
+    "Universal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_aug_a3_text",
+   "tokens": [
+    "Steyr",
+    "Armee",
+    "Universal",
+    "Gewehr",
+    "Universal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_b725_text",
+   "tokens": [
+    "Browning",
+    "over",
+    "under"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_bizon_text",
+   "tokens": [
+    "Bizon",
+    "Russia",
+    "Bizon"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_bm16_text",
+   "tokens": [
+    "nTOZ",
+    "nTOZ"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_colt1911_text",
+   "tokens": [
+    "Colt",
+    "Colt",
+    "Colt"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_coltm45a1_text",
+   "tokens": [
+    "Colt",
+    "Colt",
+    "CQBP",
+    "Cerakote",
+    "USMC"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_deagle_text",
+   "tokens": [
+    "Magnum",
+    "Research",
+    "Israel",
+    "Industries",
+    "Mark"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_dvl_10",
+   "tokens": [
+    "LOBAEV",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_dvl_10_text",
+   "tokens": [
+    "Lobaev",
+    "nDVL",
+    "LOBAEV",
+    "Saboteur"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_grenade_f1_text",
+   "tokens": [
+    "limonka",
+    "lemon",
+    "limonka",
+    "lemon",
+    "limonka"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fiveseven_text",
+   "tokens": [
+    "Five",
+    "seveN",
+    "Fabrique",
+    "Nationale",
+    "Herstal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fn2000_text",
+   "tokens": [
+    "Herstal",
+    "Tactical"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fort_text",
+   "tokens": [
+    "Fort",
+    "Fort",
+    "Ceska",
+    "Zbrojovka",
+    "Fort"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fort_snag_text",
+   "tokens": [
+    "Pernach",
+    "TsKIB",
+    "Stechkin",
+    "nOTs",
+    "Drotik"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_g28_text",
+   "tokens": [
+    "Dragunov",
+    "Schmidt",
+    "Bender",
+    "PMII",
+    "Schmidt"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_galil_text",
+   "tokens": [
+    "Galil",
+    "Galil",
+    "Galil",
+    "nGalil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_glock18_text",
+   "tokens": [
+    "Cobra",
+    "Einsatzkommando",
+    "Cobra"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_groza_text",
+   "tokens": [
+    "TsKIB",
+    "Tiss",
+    "Bullpup",
+    "Tiss",
+    "Kostyor"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_hpsa_text",
+   "tokens": [
+    "Power",
+    "Fratelli",
+    "Tanfoglio"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_text",
+   "tokens": [
+    "Bars",
+    "nBars"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_ots04_text",
+   "tokens": [
+    "TsKIB",
+    "TsKIB"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_extreme",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_extreme_text",
+   "tokens": [
+    "MTech",
+    "Xtreme",
+    "Mtech",
+    "nMtech",
+    "Tactical"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_km2000_text",
+   "tokens": [
+    "Eickhorn",
+    "Solingen",
+    "tantos"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_lr300_text",
+   "tokens": [
+    "telescoping",
+    "stock",
+    "SAFE",
+    "SEMI",
+    "AUTO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m249_text",
+   "tokens": [
+    "Minimi",
+    "Herstal",
+    "Manufacturing",
+    "Stoner",
+    "Stoner"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m320_text",
+   "tokens": [
+    "Insight",
+    "Technology"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m700_text",
+   "tokens": [
+    "Remington",
+    "NATO",
+    "Remington",
+    "Arms",
+    "Mauser"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mdr_text",
+   "tokens": [
+    "Desert",
+    "Tech",
+    "Micro",
+    "Dynamic",
+    "Rifle"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp43_text",
+   "tokens": [
+    "predecessor",
+    "Purdey"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp5_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "Maschinenpistole"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp5_nimble_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Parabellum",
+    "Parabellum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp9_text",
+   "tokens": [
+    "Brugger",
+    "Thomet",
+    "Brugger",
+    "Thomet",
+    "Steyr"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_p90_text",
+   "tokens": [
+    "Herstal",
+    "CRISAT"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_pb_text",
+   "tokens": [
+    "GRAU",
+    "TsNII",
+    "TochMash",
+    "Deryagin"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_pkm_text",
+   "tokens": [
+    "nPKM",
+    "GRAU"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_pm_actor_text",
+   "tokens": [
+    "Stechkin",
+    "Stechkin",
+    "Makarov",
+    "TsKB",
+    "Neugodov"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_protecta_text",
+   "tokens": [
+    "Armsel",
+    "Protecta",
+    "Sentinel",
+    "Arms",
+    "Striker"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_protecta_nimble_text",
+   "tokens": [
+    "Auto",
+    "Assault",
+    "USAS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rg6_text",
+   "tokens": [
+    "GRAU",
+    "TsKIB",
+    "Milkor"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rgm40_text",
+   "tokens": [
+    "Telesh",
+    "nRGM",
+    "Obuvka"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rpg7_text",
+   "tokens": [
+    "nRPG",
+    "GSKB",
+    "GNPP",
+    "Bazalt"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rpk74_text",
+   "tokens": [
+    "nRPK",
+    "Molot",
+    "Molot",
+    "NATO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rpk16_text",
+   "tokens": [
+    "Minimi",
+    "Ruchnoy",
+    "Pulemyot",
+    "Kalashnikova"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sa58_text",
+   "tokens": [
+    "David",
+    "Selvaggio",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_saiga12_text",
+   "tokens": [
+    "Saiga",
+    "nSaiga",
+    "nSaiga"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_scarh_text",
+   "tokens": [
+    "USSOCOM",
+    "USSOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sig220_text",
+   "tokens": [
+    "Sauer",
+    "Sauer",
+    "Pistole",
+    "Sauer",
+    "Sohn"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sig550_text",
+   "tokens": [
+    "Stgw",
+    "nSIG",
+    "Stgw",
+    "Stgw",
+    "Commando"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sks_text",
+   "tokens": [
+    "Arkhar",
+    "Okhotniche",
+    "Promysloviy"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_spas12_text",
+   "tokens": [
+    "Franchi",
+    "SPAS",
+    "nFranchi",
+    "SPAS",
+    "nSPAS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_spas12_nimble_text",
+   "tokens": [
+    "Benelli",
+    "Super",
+    "Benelli",
+    "Armi",
+    "Benelli"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sr1m_text",
+   "tokens": [
+    "Gyurza",
+    "GRAU",
+    "TsNIITochMash"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sv98_text",
+   "tokens": [
+    "Mirage",
+    "Hyperion",
+    "Blaser",
+    "UKON"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_svd_text",
+   "tokens": [
+    "nSVD",
+    "nSVD",
+    "nPSO",
+    "SVDS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_svu_text",
+   "tokens": [
+    "Samozaryadnaya",
+    "Vintovka",
+    "Ukorachennaya",
+    "bullpup",
+    "TsKIB"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_taurus_text",
+   "tokens": [
+    "Raging",
+    "Bull",
+    "Taurus",
+    "International",
+    "Casull"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usp45_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "Heckler"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usp45_nimble_text",
+   "tokens": [
+    "Herstal",
+    "America",
+    "Fredericksburg",
+    "Parabellum",
+    "Sauer"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_val_text",
+   "tokens": [
+    "Serdyukov",
+    "Krasnikov",
+    "TsNIITochMash",
+    "nVal",
+    "Tishina"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_val_nimble_text",
+   "tokens": [
+    "Vikhr",
+    "TsNIITochMash",
+    "Borisov",
+    "Levchenko",
+    "Vikhr"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vector_text",
+   "tokens": [
+    "KRISS",
+    "Vector",
+    "Transformational",
+    "Defense",
+    "Industries"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vss_text",
+   "tokens": [
+    "Vintorez",
+    "nGRAU",
+    "TsNIITochMash",
+    "Serdyukov",
+    "Krasnikov"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vss_nimble_text",
+   "tokens": [
+    "VSSM",
+    "Ratnik",
+    "TsNIITochMash",
+    "suppressed",
+    "Vintorez"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vityaz_text",
+   "tokens": [
+    "Vityaz",
+    "Vityaz",
+    "nVityaz",
+    "Vityaz",
+    "Vityaz"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vpo101_text",
+   "tokens": [
+    "Vepr",
+    "nVepr",
+    "Vepr",
+    "Vepr",
+    "Vepr"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wa2000_text",
+   "tokens": [
+    "Walther",
+    "Automat"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wincheaster1300_text",
+   "tokens": [
+    "Mossberg",
+    "nMossberg",
+    "Mossberg",
+    "Mossberg",
+    "Mossberg"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wincheaster1300_trapper_text",
+   "tokens": [
+    "Remington",
+    "Remington",
+    "Arms",
+    "Remington",
+    "tRemington"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mts255_text",
+   "tokens": [
+    "TsKIB",
+    "TsKIB",
+    "Seryogin",
+    "Borzov",
+    "Golovkin"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rgn_text",
+   "tokens": [
+    "GRAU",
+    "nUDZ"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_331",
+   "tokens": [
+    "Operations",
+    "Forces",
+    "Assault",
+    "Rifle",
+    "Herstal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_equipment.xml",
+   "id": "st_drug_coagulant_descr",
+   "tokens": [
+    "Trimadol",
+    "Etamzylate"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_outfit.xml",
+   "id": "svoboda_heavy_outfit_description",
+   "tokens": [
+    "Twaron",
+    "Souverain"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_outfit.xml",
+   "id": "halo_outfit_description",
+   "tokens": [
+    "Mjolnir",
+    "Mjolnir"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_11.43x23_hydro_descr",
+   "tokens": [
+    "Hydra",
+    "Shok",
+    "Hydra",
+    "Shok"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_44mag",
+   "tokens": [
+    "Remington",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_44mag_boom",
+   "tokens": [
+    "Panthera",
+    "Magnum",
+    "Boom"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_44mag_boom_descr",
+   "tokens": [
+    "Panthera",
+    "Magnum",
+    "Boom",
+    "Remington",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_50_ae_descr",
+   "tokens": [
+    "Express",
+    "Desert",
+    "Eagle"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_7.62x54_7h1_descr",
+   "tokens": [
+    "GRAU",
+    "GRAU",
+    "GRAU"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_338_lm",
+   "tokens": [
+    "Lapua",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_338_lm_descr",
+   "tokens": [
+    "Lapua",
+    "Magnum"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_susat_dusk",
+   "tokens": [
+    "ACOG",
+    "Sumeri"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_desert_eagle_nimble_descr",
+   "tokens": [
+    "Desert",
+    "Eagle"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_taurus_descr",
+   "tokens": [
+    "Raging",
+    "Bull",
+    "Taurus",
+    "International"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_mp5_nimble_descr",
+   "tokens": [
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_mp9_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_protecta_nimble_descr",
+   "tokens": [
+    "Auto",
+    "Assault",
+    "Atchisson",
+    "Assault",
+    "Shotgun"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_sig550_strelok_descr",
+   "tokens": [
+    "NATO",
+    "Magpul"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_spas12_nimble_descr",
+   "tokens": [
+    "Benelli",
+    "Super",
+    "Benelli",
+    "Armi",
+    "Piquettini"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_usp_nimble_descr",
+   "tokens": [
+    "America",
+    "Herstal",
+    "Fredericksburg"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_wincheaster1300_trapper_descr",
+   "tokens": [
+    "Remington",
+    "Arms",
+    "Defense",
+    "Remington"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_susat_custom",
+   "tokens": [
+    "ACOG",
+    "Mera"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_lr300_descr",
+   "tokens": [
+    "Colt",
+    "Model",
+    "SAFE",
+    "SEMI",
+    "AUTO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_micro_t1_descr",
+   "tokens": [
+    "Aimpoint",
+    "Micro",
+    "Aimpoint",
+    "Aimpoint"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_ac10632",
+   "tokens": [
+    "Barska",
+    "SIGHT"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_nato",
+   "tokens": [
+    "SureFire",
+    "SOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_9x19",
+   "tokens": [
+    "GemTech",
+    "Tundra"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_mp9_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_specter",
+   "tokens": [
+    "ELCAN",
+    "SpecterDR"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_specter_descr",
+   "tokens": [
+    "Trijicon",
+    "ACOG"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_dvl_10_descr",
+   "tokens": [
+    "LOBAEV",
+    "Barrels"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_fiveseven_descr",
+   "tokens": [
+    "Five",
+    "seveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_ammo_5.7x28_fmj_descr",
+   "tokens": [
+    "Five",
+    "SeveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_57_descr",
+   "tokens": [
+    "Five",
+    "seveN"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_p90_descr",
+   "tokens": [
+    "Fabrique",
+    "Nationale",
+    "Herstal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_sa58_descr",
+   "tokens": [
+    "David",
+    "Selveggio",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_m700_descr",
+   "tokens": [
+    "Remington",
+    "Remington",
+    "Arms"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_scarh_descr",
+   "tokens": [
+    "Herstal",
+    "SOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_glock",
+   "tokens": [
+    "SilencerCo",
+    "Osprey"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_glock18_descr",
+   "tokens": [
+    "Glock",
+    "Glock"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_m320_descr",
+   "tokens": [
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_m249_descr",
+   "tokens": [
+    "Minimi",
+    "Manufacturing",
+    "Herstal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_wa2000_descr",
+   "tokens": [
+    "Walther",
+    "Walther",
+    "Automat"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_mdr_descr",
+   "tokens": [
+    "Desert",
+    "Tech",
+    "Bulletpad",
+    "NATO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_mdr_descr_drum",
+   "tokens": [
+    "Desert",
+    "Tech",
+    "Bulletpad",
+    "NATO",
+    "Magpul"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_g28_descr",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_sil_g28_descr",
+   "tokens": [
+    "Brugger",
+    "Thomet",
+    "Prolonged"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_knife_extreme",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_knife_extreme_descr",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_knife_km2000_descr",
+   "tokens": [
+    "Kampfmesser",
+    "Eickhorn",
+    "Solingen"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_galil_descr",
+   "tokens": [
+    "Galil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_galil31_descr",
+   "tokens": [
+    "Galil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_vector_descr",
+   "tokens": [
+    "KRISS",
+    "Vector",
+    "Super"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_usas12_descr",
+   "tokens": [
+    "USAS",
+    "Atchisson",
+    "Assault",
+    "Shotgun"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_cryray_options.xml",
+   "id": "ui_st_defaults",
+   "tokens": [
+    "user",
+    "datafiles"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_anomalies.xml",
+   "id": "encyclopedia_anomalies_fruit_text",
+   "tokens": [
+    "Kisel",
+    "Studen",
+    "Cholodec",
+    "Slyz",
+    "Kisel"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_aug_text",
+   "tokens": [
+    "Steyr",
+    "Armee",
+    "Universal",
+    "Gewehr",
+    "Steyr"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_aug_a3_text",
+   "tokens": [
+    "Steyr",
+    "Armee",
+    "Universal",
+    "Gewehr",
+    "Steyr"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_awm_text",
+   "tokens": [
+    "International",
+    "International",
+    "Magnum",
+    "International",
+    "International"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_b725_text",
+   "tokens": [
+    "Browning",
+    "Browning",
+    "Arms",
+    "Company",
+    "Browning"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_deagle_text",
+   "tokens": [
+    "Desert",
+    "Eagle",
+    "Magnum",
+    "Research",
+    "Industries"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fiveseven_text",
+   "tokens": [
+    "Five",
+    "seveN",
+    "Fabrique",
+    "Nationale",
+    "Herstal"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fn2000_text",
+   "tokens": [
+    "Herstal",
+    "Tactical"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_fort_text",
+   "tokens": [
+    "Fort",
+    "Fort",
+    "Ceska",
+    "Zbrojovka",
+    "Fort"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_g28_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "nHeckler"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_g36_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Beta"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_galil_text",
+   "tokens": [
+    "Galil",
+    "Galil",
+    "Galil",
+    "Galil",
+    "Galil"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_glock_text",
+   "tokens": [
+    "Glock",
+    "Glock",
+    "Glock",
+    "Glock",
+    "Glock"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_glock18_text",
+   "tokens": [
+    "Glock",
+    "Glock",
+    "GmbH",
+    "nGlock",
+    "Cobra"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_hpsa_text",
+   "tokens": [
+    "Parabellum",
+    "Power",
+    "Ceska",
+    "zbrojovka",
+    "Uhersky"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_extreme",
+   "tokens": [
+    "MTech",
+    "Xtreme"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_extreme_text",
+   "tokens": [
+    "Mtech",
+    "Xtreme",
+    "Mtech"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_knife_km2000_text",
+   "tokens": [
+    "Eickhorn",
+    "Solingen"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_l85_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Magpul",
+    "EMAG"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_lr300_text",
+   "tokens": [
+    "SAFE",
+    "SEMI",
+    "AUTO"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m249_text",
+   "tokens": [
+    "Minimi",
+    "Herstal",
+    "Manufacturing",
+    "Stoner",
+    "Stoner"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m320_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "Insight"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_m700_text",
+   "tokens": [
+    "Remington",
+    "Remington",
+    "Arms",
+    "Maurer",
+    "Lapua"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mdr_text",
+   "tokens": [
+    "Desert",
+    "Tech",
+    "micro",
+    "dynamic",
+    "rifle"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp5_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "Maschinenpistole"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp5_nimble_text",
+   "tokens": [
+    "Heckler",
+    "Koch"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_mp9_text",
+   "tokens": [
+    "Brugger",
+    "Thomet",
+    "Brugger",
+    "Thomet",
+    "Brugger"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_p90_text",
+   "tokens": [
+    "Herstal",
+    "CRISAT"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_pm_actor_text",
+   "tokens": [
+    "Stenchkin",
+    "Stenchkin",
+    "Stenchkin",
+    "Neugodov"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_protecta_text",
+   "tokens": [
+    "Armsel",
+    "Protecta",
+    "Sentinel",
+    "Arms",
+    "Striker"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_protecta_nimble_text",
+   "tokens": [
+    "Auto",
+    "Assault",
+    "Atchisson",
+    "Assault",
+    "Shotgun"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_rpk16_text",
+   "tokens": [
+    "Minimi",
+    "Armia"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sa58_text",
+   "tokens": [
+    "Fabrique",
+    "Nationale",
+    "Herstal",
+    "David",
+    "Selveggio"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_scarh_text",
+   "tokens": [
+    "Herstal",
+    "USSOCOM",
+    "USSOCOM"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sig220_text",
+   "tokens": [
+    "Sauer",
+    "Sauer",
+    "Sauer",
+    "Pistole",
+    "Sauer"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sig550_text",
+   "tokens": [
+    "Stgw",
+    "nSIG",
+    "Stgw",
+    "Stgw",
+    "Commando"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sig550_nimble_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "nHeckler",
+    "Koch",
+    "Heckler"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_spas12_text",
+   "tokens": [
+    "Franchi",
+    "SPAS",
+    "nFranchi",
+    "SPAS",
+    "nSPAS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_spas12_nimble_text",
+   "tokens": [
+    "Benelli",
+    "Super",
+    "Benelli",
+    "Armi",
+    "Benelli"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sr1m_text",
+   "tokens": [
+    "GRAU",
+    "Beretta",
+    "Pikatinni"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_sv98_text",
+   "tokens": [
+    "Remington",
+    "Blaser"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_svd_text",
+   "tokens": [
+    "nPSO",
+    "SVDS"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_taurus_text",
+   "tokens": [
+    "Raging",
+    "Bull",
+    "Taurus",
+    "International",
+    "Casull"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usas12_text",
+   "tokens": [
+    "USAS",
+    "Atchisson",
+    "Assault",
+    "Shotgun",
+    "Gilbert"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usp45_text",
+   "tokens": [
+    "Heckler",
+    "Koch",
+    "Heckler",
+    "Koch",
+    "nHeckler"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usp45_nimble_text",
+   "tokens": [
+    "America",
+    "Herstal",
+    "Fredericksburg",
+    "Glock",
+    "Sauer"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vector_text",
+   "tokens": [
+    "KRISS",
+    "Vector",
+    "Transformational",
+    "Defense",
+    "Industries"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_vpo101_text",
+   "tokens": [
+    "Lancaster",
+    "Remington",
+    "Winchester",
+    "Winchester",
+    "Springfield"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wa2000_text",
+   "tokens": [
+    "Walther",
+    "Automat",
+    "Winchester",
+    "Magnum",
+    "Winchester"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_walther_text",
+   "tokens": [
+    "Walther",
+    "Walther",
+    "Horst",
+    "Wesp",
+    "nCarl"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wincheaster1300_text",
+   "tokens": [
+    "Mossberg",
+    "Mossberg",
+    "Mossberg",
+    "Mossberg",
+    "Mossberg"
+   ]
+  },
+  {
+   "kind": "latin_residue",
+   "file": "configs/text/rus/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_wincheaster1300_trapper_text",
+   "tokens": [
+    "Remington",
+    "Remington",
+    "Arms",
+    "Remington",
+    "nRemington"
+   ]
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "dm_information_36",
+   "src_len": 410,
+   "eff_len": 196,
+   "src": "The army boys don't show up as much as they used to back in the day. W"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_dialog_manager.xml",
+   "id": "dm_information_51",
+   "src_len": 418,
+   "eff_len": 151,
+   "src": "We're still losing friends to the Brain Scorcher, you hear about veter"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_131",
+   "src_len": 528,
+   "eff_len": 181,
+   "src": "Take a look - this is the \"FN FNX-45\". The FNX family of pistols is pr"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_faction_ecolog_6",
+   "src_len": 320,
+   "eff_len": 158,
+   "src": "Militarized research groups remind all unregistered individuals in the"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_dynamic_news.xml",
+   "id": "st_dyn_news_spam_faction_freedom_19",
+   "src_len": 339,
+   "eff_len": 166,
+   "src": "Free stalkers, Freedom speaking here! What do you have to gain by cons"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_items_outfit.xml",
+   "id": "svoboda_scientific_outfit_description",
+   "src_len": 380,
+   "eff_len": 187,
+   "src": "Produced by Freedom especially for research in the Zone. The closed-cy"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/st_items_weapons.xml",
+   "id": "st_wpn_gauss_descr",
+   "src_len": 462,
+   "eff_len": 225,
+   "src": "This ultra-precise, high-technology weapon, known as \"Product No. 62\","
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/eng/ui_st_encyclopedia_weapons.xml",
+   "id": "encyclopedia_weapons_usp45_text",
+   "src_len": 1875,
+   "eff_len": 837,
+   "src": "\t\t\t%c[0,153,255,255]Heckler Koch USP%c[0,140,140,140] - a semi-automat"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_dialogs_escape.xml",
+   "id": "esc_2_12_stalker_nimble_get_order_131",
+   "src_len": 531,
+   "eff_len": 168,
+   "src": "Взгляни - эта штука называется «FN FNX-45». Пистолеты семейства FNX вы"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_mutant_parts.xml",
+   "id": "mutant_dog_tail_description",
+   "src_len": 361,
+   "eff_len": 177,
+   "src": "Сопротивление кожи мутировавших слепых собак к воздействию электричест"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_outfit.xml",
+   "id": "dolg_outfit_description",
+   "src_len": 308,
+   "eff_len": 147,
+   "src": "Современная модель комбинезона «Долга». Больше подходит новобранцам из"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_outfit.xml",
+   "id": "scientific_outfit_description",
+   "src_len": 450,
+   "eff_len": 222,
+   "src": "Производимый в одном из киевских оборонных НИИ, представляет собой отл"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_spas12_descr",
+   "src_len": 461,
+   "eff_len": 223,
+   "src": "Гладкоствольный автоматический дробовик специального назначения с возм"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_pso_1m2_01_descr",
+   "src_len": 402,
+   "eff_len": 194,
+   "src": "Используется для прицельной стрельбы из специальной снайперской винтов"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_wpn_sa58_descr",
+   "src_len": 455,
+   "eff_len": 225,
+   "src": "SA-58 OSW (Operations Specialist Weapon) производимая американской ком"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_items_weapons.xml",
+   "id": "st_addon_scope_po4x34_descr",
+   "src_len": 389,
+   "eff_len": 194,
+   "src": "Советский четырёхкратный оптический прицел, предназначенный для исполь"
+  },
+  {
+   "kind": "trunc",
+   "file": "configs/text/rus/st_subtitles.xml",
+   "id": "pri_a28_outro_phrase_3",
+   "src_len": 324,
+   "eff_len": 152,
+   "src": "На основе промышленной документации «Изделия №62» было создано несколь"
+  }
+ ]
+}

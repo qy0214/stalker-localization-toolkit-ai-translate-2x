@@ -11,7 +11,9 @@
   python tools/gen_release_manifest.py --build      # 重建 zip + 清单
   python tools/gen_release_manifest.py --check      # CI 门禁：只校验，不写文件
 
-范围：`plugins/ai_translate/`（`plugin.py` + `assets/`）与同版本发布 zip。
+范围：`plugins/ai_translate/`（`plugin.py` + vendored `stalker_translate_core/` + `assets/`）
+与同版本发布 zip。core 与 assets 的源分别位于根 `core/` 和 `assets/`，
+构建前由 `tools/sync_core.py` / `tools/sync_assets.py` 同步。
 """
 from __future__ import annotations
 
@@ -67,7 +69,7 @@ EXPECTED_MODELS = {
         1908528192),
 }
 
-# 发布包只含这 5 个文件（目录插件形状：plugins/ai_translate/…）
+# 发布包：plugin.py + vendored core + assets。core 由根 core/ 同步生成。
 ZIP_ENTRIES = {
     "plugins/ai_translate/plugin.py",
     "plugins/ai_translate/assets/THIRD_PARTY_NOTICES.txt",
@@ -75,8 +77,17 @@ ZIP_ENTRIES = {
     "plugins/ai_translate/assets/stalker_termbase.json",
     "plugins/ai_translate/assets/xray_pkg.zip",
 }
+ZIP_ENTRIES.update(
+    str(path.relative_to(ROOT)).replace("\\", "/")
+    for path in (PLUGIN_DIR / "stalker_translate_core").rglob("*.py")
+)
 
 ZIP_DATE = (2026, 11, 16, 0, 0, 0)
+
+
+def is_2x_package(path: Path) -> bool:
+    return bool(re.fullmatch(
+        r"ai_translate_plugin_v2\.\d+\.\d+(?:_install)?\.zip", path.name))
 
 
 def zip_path() -> Path:
@@ -324,10 +335,16 @@ def build_zip() -> None:
             z.writestr(info, src.read_bytes())
     os.replace(itmp, install_target)
 
+    # 与其余四款产品一致，为两个 2.x 包落独立 .sha256 旁车文件。
+    for archive in (target, install_target):
+        archive.with_suffix(".zip.sha256").write_text(
+            "%s  %s\n" % (sha256(archive), archive.name),
+            encoding="utf-8", newline="\n")
+
     # 非当前版本 zip 不留在 dist 里，避免"发布包到底是哪个"的歧义
     keep = {target, install_target}
     for stale in DIST.glob("ai_translate_plugin_*.zip"):
-        if stale not in keep:
+        if is_2x_package(stale) and stale not in keep:
             stale.unlink()
 
 
@@ -409,7 +426,7 @@ def build_manifest() -> dict[str, Any]:
         "zip 文件名含插件版本", version and ("v%s" % version) in zip_file.name,
         zip_file.name))
     checks.append(check(
-        "zip 条目 == 5 个预期文件", set(zip_entries) == ZIP_ENTRIES,
+        "zip 条目 == 预期文件", set(zip_entries) == ZIP_ENTRIES,
         "多出：%s；缺少：%s" % (
             sorted(set(zip_entries) - ZIP_ENTRIES) or "无",
             sorted(ZIP_ENTRIES - set(zip_entries)) or "无")))
@@ -545,7 +562,7 @@ def build_manifest() -> dict[str, Any]:
 
     keep_zips = {zip_file, install_zip_path()}
     stale_zips = sorted(p.name for p in DIST.glob("ai_translate_plugin_*.zip")
-                        if p not in keep_zips)
+                        if is_2x_package(p) and p not in keep_zips)
     checks.append(check(
         "dist 只保留当前版本 zip", not stale_zips,
         ("多余：%s" % stale_zips) if stale_zips else "仅当前版本"))

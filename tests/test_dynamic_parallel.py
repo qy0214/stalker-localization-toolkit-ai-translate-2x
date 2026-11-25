@@ -51,6 +51,9 @@ _TEST_ROOT = tempfile.mkdtemp(prefix="ait_par_plugin_")
 _PLUGIN_DIR = os.path.join(_TEST_ROOT, "ai_translate")
 os.makedirs(os.path.join(_PLUGIN_DIR, "assets"), exist_ok=True)
 shutil.copy2(_ORIG_PLUGIN, os.path.join(_PLUGIN_DIR, "plugin.py"))
+shutil.copytree(os.path.join(os.path.dirname(_ORIG_PLUGIN), "stalker_translate_core"),
+                  os.path.join(_PLUGIN_DIR, "stalker_translate_core"),
+                  dirs_exist_ok=True)
 for _name in ("stalker_termbase.json", "glossary_builtin.json", "xray_pkg.zip"):
     _src = os.path.join(_ASSET_SRC, _name)
     if os.path.isfile(_src):
@@ -190,10 +193,17 @@ def t5_cap():
                            ctx_size=8192, parallel=99)
     check("T5-2 LlamaServer 超过 CAP 仍封顶", srv2.parallel == ait.PARALLEL_CAP)
     import inspect
-    src = inspect.getsource(ait.TranslationJob.__init__)
-    n_dyn = src.count("min(PARALLEL_CAP")
+    # 迁移后钳制在共享 core 的 OfflineTranslationJob.__init__；插件适配器
+    # 只负责把 PARALLEL_CAP 传给 super()，两边都不能再出现写死的 4。
+    core_cls = ait.TranslationJob.__mro__[1]
+    core_src = inspect.getsource(core_cls.__init__)
+    adapter_src = inspect.getsource(ait.TranslationJob.__init__)
+    n_dyn = core_src.count("min(parallel_cap")
     check("T5-3 翻译器路数钳制也用 PARALLEL_CAP（无写死的 4）",
-          n_dyn >= 1 and "min(4," not in src, "命中 %d 处" % n_dyn)
+          n_dyn >= 1 and "min(4," not in core_src
+          and "parallel_cap=PARALLEL_CAP" in adapter_src
+          and "min(4," not in adapter_src,
+          "core 命中 %d 处；适配器已传 PARALLEL_CAP" % n_dyn)
 
 
 # ----------------------------------------------------------------------
