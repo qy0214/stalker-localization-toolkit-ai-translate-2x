@@ -17,7 +17,7 @@ from .app import check_env, create_app
 from .schema import ONLINE_TOOL_DEFINITIONS
 
 SERVER_NAME = "stalker-translate-online"
-SERVER_VERSION = "0.1.0"
+SERVER_VERSION = "0.1.1"
 _INSTRUCTIONS = (
     "STALKER 在线翻译。先 scan_project 估算规模，再 translate_project；"
     "长任务立即返回 job_id，使用 job_status 查询，job_cancel 取消。"

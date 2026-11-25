@@ -1,6 +1,6 @@
 ---
 name: stalker-translate
-version: 1.1.10
+version: 1.1.11
 description: "汉化 STALKER / X-Ray 的 MOD：把 MOD 目录里的文本 XML、cfgxml、ltx、脚本批量译成简体中文，自动套用内置术语库（阵营/地点/变异生物/物品/人物）。用户说“翻译这个 MOD”“汉化这个目录”“把这段 STALKER 文本译成中文”时使用。"
 license: GPL-3.0
 ---

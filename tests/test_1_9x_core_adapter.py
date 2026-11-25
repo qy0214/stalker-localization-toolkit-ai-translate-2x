@@ -40,7 +40,7 @@ class AdapterTests(unittest.TestCase):
 
     def test_source_adapter_uses_canonical_assets_and_core_hash(self):
         module = load_plugin(PLUGIN, "ait19_source")
-        self.assertEqual(module.PLUGIN_INFO["version"], "1.9.25")
+        self.assertEqual(module.PLUGIN_INFO["version"], "1.9.26")
         self.assertEqual(Path(module._ASSETS), ROOT / "assets")
         sample = ROOT / "assets/stalker_termbase.json"
         expected = hashlib.sha256(sample.read_bytes()).hexdigest()
@@ -56,7 +56,7 @@ class AdapterTests(unittest.TestCase):
             cwd=str(ROOT), env=env, check=True,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
         )
-        package = out / "ai_translate_plugin_v1.9.25.zip"
+        package = out / "ai_translate_plugin_v1.9.26.zip"
         self.assertTrue(package.is_file())
         with zipfile.ZipFile(package) as archive:
             names = set(archive.namelist())
@@ -70,17 +70,17 @@ class AdapterTests(unittest.TestCase):
 
         extracted = Path(self._tmp.name) / "extract/plugins/ai_translate.py"
         module = load_plugin(extracted, "ait19_package")
-        self.assertEqual(module.PLUGIN_INFO["version"], "1.9.25")
+        self.assertEqual(module.PLUGIN_INFO["version"], "1.9.26")
         self.assertEqual(Path(module._ASSETS),
                          extracted.parent / "ai_translate_assets")
         self.assertEqual(module.termbase_lookup("КПК"), "PDA")
 
         manifest = json.loads(
-            (out / "ai_translate_plugin_v1.9.25.manifest.json").read_text(
+            (out / "ai_translate_plugin_v1.9.26.manifest.json").read_text(
                 encoding="utf-8"
             )
         )
-        self.assertEqual(manifest["version"], "1.9.25")
+        self.assertEqual(manifest["version"], "1.9.26")
         self.assertEqual(manifest["package_sha256"],
                          hashlib.sha256(package.read_bytes()).hexdigest())
 

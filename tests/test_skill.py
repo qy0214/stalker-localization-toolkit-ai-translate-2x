@@ -29,7 +29,7 @@ class SkillTests(unittest.TestCase):
                 [sys.executable, str(BUILD), "--build", "--out-dir", str(dist)],
                 cwd=str(ROOT), env=env, check=True,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            package = dist / "stalker-translate-skill-0.1.0.zip"
+            package = dist / "stalker-translate-skill-0.1.1.zip"
             self.assertTrue(package.is_file())
             extract = base / "skill"
             with zipfile.ZipFile(package) as archive:

@@ -1,25 +1,25 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-25T19:31:42+08:00`
+- 生成时间：`2026-11-25T20:03:17+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`monorepo-migration` @ `f44b561`（有未提交改动）
-- 已跟踪文件：1294 个，33.83 MB
+- Git：`monorepo-migration` @ `142cd1c`（有未提交改动）
+- 已跟踪文件：1484 个，55.84 MB
 
 ## 1. 版本与交付物
 
 | 项 | 值 |
 |---|---|
-| 插件版本 | `2.0.28` |
-| 预期版本 | `2.0.28` |
+| 插件版本 | `2.0.29` |
+| 预期版本 | `2.0.29` |
 | 宿主插件 API | `1` |
 | 适用平台 | `STALKER Localization Toolkit 2.x` |
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 220.96 KB | `ce30903560109dd9cecef4628d592aedbfbe5f936be7572f4933fa86b19e2f19` | 2.x 目录插件（api.ui 门面） |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 220.96 KB | `1582cb62d9f8f3c6307cd005ba2034c27f9675187065b54795c2a0f9293db990` | 2.x 目录插件（api.ui 门面） |
 | 插件分享目录 | `plugins\ai_translate` | 2.86 MB | — | 25 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.28.zip` | 998.51 KB | `501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.28_install.zip` | 998.12 KB | `fa0df94c57717e53435f202b0e8f48e41bb9662874035ba92b3b393e07d382bf` | 给平台插件管理器直接解压用 |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.29.zip` | 998.52 KB | `7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.29_install.zip` | 998.13 KB | `c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92` | 给平台插件管理器直接解压用 |
 | 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.15 MB | `387a6ce17117b99cd9c03d5efe598a3c2e96851e222a83021affe2c185009d3a` | 运行时匹配的内置层 |
 | 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.16 MB | `6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 9.06 KB | `603b11069eb69aa4148df260e7f14bfb07993044bf04cb70a745ab62923205f2` | 解析 XML/LTX/脚本 |
@@ -45,13 +45,13 @@
 | 检查 | 结果 | 说明 |
 |---|---|---|
 | 插件语法 | 一致 | compile() 通过 |
-| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.28 / 预期 2.0.28 |
+| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.29 / 预期 2.0.29 |
 | PLUGIN_API == 1（2.x 宿主契约） | 一致 | 1 |
 | PLUGIN_INFO.id 为 ASCII | 一致 | ai_translate |
 | PLUGIN_INFO.repo 指向 2.x 专用仓库 | 一致 | https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x |
 | 目录插件形状：plugins/ai_translate/{plugin.py,assets/} | 一致 | plugin.py + assets/ |
 | 无 2.x 禁用导入（ssl/http/urllib.request/urllib.error/tkinter） | 一致 | 干净 |
-| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.28.zip |
+| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.29.zip |
 | zip 条目 == 预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
@@ -90,7 +90,7 @@
 
 ```powershell
 # 校验当前插件 zip
-Get-FileHash 'dist\ai_translate_plugin_v2.0.28.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
 
 # 重新打包 + 重生成清单
 python tools/gen_release_manifest.py --build

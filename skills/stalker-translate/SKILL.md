@@ -1,6 +1,6 @@
 ---
 name: stalker-translate
-version: 0.1.0
+version: 0.1.1
 description: "翻译 STALKER / X-Ray MOD 或单段游戏文本。优先调用通用在线 MCP；平台不支持 MCP 时使用跨平台 CLI 包装脚本。支持术语库、缓存、预算、占位符/换行校验与断点续译。"
 license: GPL-3.0
 ---

@@ -147,13 +147,13 @@ def load_kernel():
             super().__init__(
                 parser, server, in_dir, mode, src_lang, tgt_lang,
                 termbase=termbase, data_root=os.path.join(PLUGIN_ROOT, "data"),
-                pipeline_version="1.1.10", parallel_cap=16,
+                pipeline_version="1.1.11", parallel_cap=16,
                 is_writable=lambda _path: True, **kwargs,
             )
 
     return types.SimpleNamespace(
         TranslationJob=TranslationJob,
-        PLUGIN_INFO={"version": "1.1.10"},
+        PLUGIN_INFO={"version": "1.1.11"},
         runtime_tokens_match=runtime_tokens_match,
         semantic_role_issues=semantic_role_issues,
         _load_vendor=lambda: load_vendor(os.path.join(assets, "xray_pkg.zip")),
@@ -356,9 +356,9 @@ def main():
         check("initialize 返回 serverInfo",
               (init.get("result") or {}).get("serverInfo", {}).get("name")
               == "stalker-translate", init.get("result"))
-        check("initialize 版本 1.1.10",
+        check("initialize 版本 1.1.11",
               (init.get("result") or {}).get("serverInfo", {}).get("version")
-              == "1.1.10", init.get("result"))
+              == "1.1.11", init.get("result"))
         client.notify("notifications/initialized")
 
         tools = client.request("tools/list")

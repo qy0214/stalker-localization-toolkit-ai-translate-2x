@@ -28,7 +28,7 @@ class HermesAdapterTests(unittest.TestCase):
                 cwd=str(ROOT), env=env, check=True,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
             )
-            package = dist / "stalker-translate-MCP-1.1.10.zip"
+            package = dist / "stalker-translate-MCP-1.1.11.zip"
             self.assertTrue(package.is_file())
             extract = base / "hermes-plugin"
             with zipfile.ZipFile(package) as archive:

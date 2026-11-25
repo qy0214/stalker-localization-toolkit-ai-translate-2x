@@ -73,7 +73,7 @@ LOG_DIR = os.path.join(HERE, "logs")
 CONFIG_PATH = (os.environ.get("STALKER_MCP_CONFIG")
                or os.path.join(HERE, "config.json"))
 SERVER_NAME = "stalker-translate"
-VERSION = "1.1.10"
+VERSION = "1.1.11"
 LANG_FULL = {"chs": "简体中文", "eng": "英语", "rus": "俄语", "ukr": "乌克兰语"}
 _SEMANTIC_ROLE_NOTE = "请核对付款、交付、雇佣与命令方向，严格按源文语义翻译，不得反转双方关系。"
 

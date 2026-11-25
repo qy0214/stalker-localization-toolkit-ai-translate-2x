@@ -9,11 +9,11 @@ Hermes MCP、通用在线 MCP/CLI、通用翻译技能。核心与资产只保�
 
 | 产品 | 当前版本 | 状态 |
 |---|---|---|
-| 2.x 离线桌面插件 | 2.0.28 | active |
-| 1.9.x 兼容离线插件 | 1.9.25 | active |
-| Hermes MCP | 1.1.10 | active（共享 core，完整离线作业） |
-| 通用在线 MCP / CLI | 0.1.0 | active（OpenAI 兼容、stdio） |
-| 通用翻译技能 | 0.1.0 | active（跨平台脚本 + 内置运行时） |
+| 2.x 离线桌面插件 | 2.0.29 | active |
+| 1.9.x 兼容离线插件 | 1.9.26 | active |
+| Hermes MCP | 1.1.11 | active（共享 core，完整离线作业） |
+| 通用在线 MCP / CLI | 0.1.1 | active（OpenAI 兼容、stdio） |
+| 通用翻译技能 | 0.1.1 | active（跨平台脚本 + 内置运行时） |
 
 ## 统一发布列车
 
@@ -126,7 +126,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ## 2.x 插件安装
 
-把 `dist/ai_translate_plugin_v2.0.28.zip` 解压到工具集的 `plugins/` 目录：
+把 `dist/ai_translate_plugin_v2.0.29.zip` 解压到工具集的 `plugins/` 目录：
 
 ```text
 <工具集目录>\plugins\ai_translate\plugin.py
@@ -159,7 +159,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 安装
 
-1. 解压 `dist/ai_translate_plugin_v1.9.25.zip`。
+1. 解压 `dist/ai_translate_plugin_v1.9.26.zip`。
 2. 将包内 `plugins/` 整个覆盖到工具集 1.1.0 目录（与 `STALKER Localization Toolkit 1.1.0.exe` 同级）。
 3. 确认结构：
 
@@ -188,7 +188,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-MCP-1.1.10.zip`。
+1. 解压 `dist/stalker-translate-MCP-1.1.11.zip`。
 2. Windows 双击 `install-plugin.cmd`；安装器会复制插件、启用工具、安装技能并尝试重启 Hermes。
 3. 完全退出并重新打开 Hermes，确认工具列表出现 `check_env`、`translate_mod`、`translate_text`。
 4. 不需要单独安装 Python 或模型，包内带便携 Python；模型端点由 Hermes 管理。
@@ -209,7 +209,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 安装与配置
 
-1. 解压 `dist/stalker-translate-online-MCP-0.1.0.zip`，要求 Python 3.11+。
+1. 解压 `dist/stalker-translate-online-MCP-0.1.1.zip`，要求 Python 3.11+。
 2. 复制 `config.example.json` 为 `config.json`，填写：
 
 ```json
@@ -264,7 +264,7 @@ python cli.py --config config.json translate "D:\mods\你的MOD"
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-skill-0.1.0.zip`。
+1. 解压 `dist/stalker-translate-skill-0.1.1.zip`。
 2. 将整个目录放入所用平台的技能目录（不同平台路径不同）。
 3. 编辑包内 `runtime/config.example.json` 并保存为 `runtime/config.json`，配置 Provider、模型、`allowed_roots` 和密钥环境变量。
 4. 直接使用技能，或运行：
@@ -286,9 +286,9 @@ python scripts/stalker_translate.py --config runtime/config.json translate "<MOD
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.28
+python tools/release_plugin.py 2.0.29
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.28 dist/ai_translate_plugin_v2.0.28_install.zip --title "ai_translate 2.0.28"
+gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "ai_translate 2.0.29"
 # 3) 把第 1 步打印的条目追加进注册表 plugins 数组（需要该仓库写权限）
 ```
 
@@ -307,16 +307,16 @@ gh release create v2.0.28 dist/ai_translate_plugin_v2.0.28_install.zip --title "
 | `products/` | 1.9.x、Hermes MCP、通用在线 MCP 的产品入口与 manifest |
 | `skills/stalker-translate/` | 通用技能入口与 manifest |
 | `versions.json` / `compatibility.json` | 产品版本与兼容矩阵 |
-| `dist/stalker-translate-skill-0.1.0.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
-| `dist/stalker-translate-skill-0.1.0.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
-| `dist/stalker-translate-online-MCP-0.1.0.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio） |
-| `dist/stalker-translate-online-MCP-0.1.0.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
-| `dist/stalker-translate-MCP-1.1.10.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
-| `dist/stalker-translate-MCP-1.1.10.manifest.json` | Hermes MCP server/core/资产哈希清单（无过渡管线） |
-| `dist/ai_translate_plugin_v1.9.25.zip` | 1.9.x 兼容插件独立分享包 |
+| `dist/stalker-translate-skill-0.1.1.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
+| `dist/stalker-translate-skill-0.1.1.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
+| `dist/stalker-translate-online-MCP-0.1.1.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio） |
+| `dist/stalker-translate-online-MCP-0.1.1.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
+| `dist/stalker-translate-MCP-1.1.11.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
+| `dist/stalker-translate-MCP-1.1.11.manifest.json` | Hermes MCP server/core/资产哈希清单（无过渡管线） |
+| `dist/ai_translate_plugin_v1.9.26.zip` | 1.9.x 兼容插件独立分享包 |
 | `dist/ai_translate_plugin_v1.9.25.manifest.json` | 1.9.x 入口/core/资产/包哈希清单 |
-| `dist/ai_translate_plugin_v2.0.28.zip` | 可直接分发的 2.x 插件包 |
-| `dist/ai_translate_plugin_v2.0.28_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/ai_translate_plugin_v2.0.29.zip` | 可直接分发的 2.x 插件包 |
+| `dist/ai_translate_plugin_v2.0.29_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `CHANGELOG.md` | 各版本完整修复明细与证据 |
 | `corpus/` | 收割用双语语料与退役软层留档（不随发布包分发） |
@@ -341,23 +341,23 @@ gh release create v2.0.28 dist/ai_translate_plugin_v2.0.28_install.zip --title "
 ## 版本与校验
 
 - 2.x 插件版本：`ai_translate 2.0.28`　宿主插件 API：`1`
-- 2.x 入口 SHA-256：`ce30903560109dd9cecef4628d592aedbfbe5f936be7572f4933fa86b19e2f19`
-- 2.x 发布 zip SHA-256：`501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4`
-- 2.x 平台安装包 SHA-256：`fa0df94c57717e53435f202b0e8f48e41bb9662874035ba92b3b393e07d382bf`
+- 2.x 入口 SHA-256：`1582cb62d9f8f3c6307cd005ba2034c27f9675187065b54795c2a0f9293db990`
+- 2.x 发布 zip SHA-256：`7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27`
+- 2.x 平台安装包 SHA-256：`c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92`
 - 1.9.x 插件版本：`ai_translate 1.9.25`
-- 1.9.x 入口 SHA-256：`c658a090b6372dd3239bed9a2cfcaa6e326503de37dd3fcdabd63469a124b2ad`
-- 1.9.x 发布 zip SHA-256：`d3ef2212fe0ca7b55fd7467ed0d4b0e83c059917b3a4a47f337ebb3c94205e02`
+- 1.9.x 入口 SHA-256：`2dd7226137259fca71761d801a3dd9f39ac9394b304a234c870fd19348b436be`
+- 1.9.x 发布 zip SHA-256：`bf6759672717439c55e457d29e27b7c19633dc048597e69357a0b972338bbfaf`
 - Hermes MCP 版本：`1.1.10`
-- Hermes MCP server SHA-256：`307bea17581f7cbbbb6895d3716f0ec4830f0212ae957eadc509800b21d721a3`
-- Hermes MCP 发布 zip SHA-256：`3b8e6816e6b965b5237fbbbd113430ad29274f37836189f31fe7b5c111809050`
+- Hermes MCP server SHA-256：`46dd6ab6a7b3653dd139f7e2fac41644bd97749effde2a954c69a0cf242dbceb`
+- Hermes MCP 发布 zip SHA-256：`38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e`
 - 通用在线 MCP 版本：`0.1.0`
 - 在线 MCP server SHA-256：`7231f74c7ce8db8ba2716f2b47d4de4e2507f3c5f0f29e7227c367c8d2ee3756`
 - 在线 CLI SHA-256：`b5d47a4b8f872a3faee2c65f7636ed4e6e92736bb61806e24f586e7768687f66`
-- 在线 MCP/CLI 发布 zip SHA-256：`0391c23e8052bb6dea4fc5109cb5b6730ed9bee15f552f453b1deea359e2474b`
+- 在线 MCP/CLI 发布 zip SHA-256：`020dcd2f1529df6c65cd56fedb4a048af55c867cbcd05aa08e1737d7f0a4d41d`
 - 在线翻译技能版本：`0.1.0`
-- 技能说明 SHA-256：`f38f0c3e6d0fa300d2a232142b6425248854cfd8bc72221b398da7d99bb408f1`
+- 技能说明 SHA-256：`ed6ac78a22c0b82cb9b7083f2f640ed4dab4f8c08f02dc09631a1760fa676d40`
 - 技能包装脚本 SHA-256：`269a0aae0e35b231a401bcceb9e2d2f3ec8bc5931e47c1561ec50faef7dae90f`
-- 技能发布 zip SHA-256：`e10d887b5a745552da92d25e7518c3eb6ea27d1c3dbd131951469c9ad333c762`
+- 技能发布 zip SHA-256：`dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180`
 - 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
   [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
   reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
@@ -368,11 +368,11 @@ gh release create v2.0.28 dist/ai_translate_plugin_v2.0.28_install.zip --title "
 - 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.28.zip' -Algorithm SHA256
-Get-FileHash 'dist\ai_translate_plugin_v1.9.25.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-MCP-1.1.10.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-online-MCP-0.1.0.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-skill-0.1.0.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v1.9.26.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-MCP-1.1.11.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-online-MCP-0.1.1.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-skill-0.1.1.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

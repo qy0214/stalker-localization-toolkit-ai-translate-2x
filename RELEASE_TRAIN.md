@@ -2,33 +2,34 @@
 
 - Release train：`2026.11.25`
 - Git tag：`suite-v2026.11.25`
-- 共享 core：`1.0.0`
+- 共享 core：`1.0.1`
 
 ## 产品与资产
 
 | 产品 | 版本 | 资产 | 字节 | SHA-256 |
 |---|---|---|---:|---|
-| plugin_2x | 2.0.28 | `dist/ai_translate_plugin_v2.0.28.zip` | 1022471 | `501a964087ba8d1c75f12e3c47a6b6c8920e2f8cf0233180804286fb5eb92ef4` |
-| plugin_2x | 2.0.28 | `dist/ai_translate_plugin_v2.0.28_install.zip` | 1022071 | `fa0df94c57717e53435f202b0e8f48e41bb9662874035ba92b3b393e07d382bf` |
-| plugin_1_9x | 1.9.25 | `dist/ai_translate_plugin_v1.9.25.zip` | 1035929 | `d3ef2212fe0ca7b55fd7467ed0d4b0e83c059917b3a4a47f337ebb3c94205e02` |
-| plugin_1_9x | 1.9.25 | `dist/ai_translate_plugin_v1.9.25.manifest.json` | 3701 | `f85862de6656a5d2077b57937f7ce3967a2020d3edce5d776a877c324d8aa3e4` |
-| mcp_hermes | 1.1.10 | `dist/stalker-translate-MCP-1.1.10.zip` | 12131077 | `3b8e6816e6b965b5237fbbbd113430ad29274f37836189f31fe7b5c111809050` |
-| mcp_hermes | 1.1.10 | `dist/stalker-translate-MCP-1.1.10.manifest.json` | 4806 | `3c022c10aa428ddb3170548ab5a262173e6757bc830dc2d39eba0489803e5644` |
-| mcp_online | 0.1.0 | `dist/stalker-translate-online-MCP-0.1.0.zip` | 986940 | `0391c23e8052bb6dea4fc5109cb5b6730ed9bee15f552f453b1deea359e2474b` |
-| mcp_online | 0.1.0 | `dist/stalker-translate-online-MCP-0.1.0.manifest.json` | 4202 | `05931ba916858312ae28bbe4f6dbd026d15996ab5c5103a428190fc95181f887` |
-| skill | 0.1.0 | `dist/stalker-translate-skill-0.1.0.zip` | 991469 | `e10d887b5a745552da92d25e7518c3eb6ea27d1c3dbd131951469c9ad333c762` |
-| skill | 0.1.0 | `dist/stalker-translate-skill-0.1.0.manifest.json` | 2823 | `44d71f63c77a814d9e8f93ac2a66e89b2679e4a974be4cefcc6e63bd56524466` |
+| plugin_2x | 2.0.29 | `dist/ai_translate_plugin_v2.0.29.zip` | 1022483 | `7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27` |
+| plugin_2x | 2.0.29 | `dist/ai_translate_plugin_v2.0.29_install.zip` | 1022083 | `c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92` |
+| plugin_1_9x | 1.9.26 | `dist/ai_translate_plugin_v1.9.26.zip` | 1035941 | `bf6759672717439c55e457d29e27b7c19633dc048597e69357a0b972338bbfaf` |
+| plugin_1_9x | 1.9.26 | `dist/ai_translate_plugin_v1.9.26.manifest.json` | 3701 | `31a3eca6d8f16589c438425b4bed59b815a5efecbf34e722e1a0eae737d6e740` |
+| mcp_hermes | 1.1.11 | `dist/stalker-translate-MCP-1.1.11.zip` | 12131102 | `38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e` |
+| mcp_hermes | 1.1.11 | `dist/stalker-translate-MCP-1.1.11.manifest.json` | 4806 | `41e7819a59dc75c509bf40fb5a3075a68c81b98d953205a93330ae9df816a051` |
+| mcp_online | 0.1.1 | `dist/stalker-translate-online-MCP-0.1.1.zip` | 986975 | `020dcd2f1529df6c65cd56fedb4a048af55c867cbcd05aa08e1737d7f0a4d41d` |
+| mcp_online | 0.1.1 | `dist/stalker-translate-online-MCP-0.1.1.manifest.json` | 4202 | `a4e22e18acc774c3fcaaaf7cc374356e47732a88d7a7b87fe007d808b6d09a3a` |
+| skill | 0.1.1 | `dist/stalker-translate-skill-0.1.1.zip` | 991526 | `dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180` |
+| skill | 0.1.1 | `dist/stalker-translate-skill-0.1.1.manifest.json` | 2823 | `aaa0b6e1ee05e2acf41a832908561ca0bb71f19a507834aa980f9f2415019891` |
 
 ## 兼容矩阵
 
 | 组件 | 版本/要求 |
 |---|---|
-| core | 1.0.0 |
-| plugin_2x | 2.0.28 |
-| plugin_1_9x | 1.9.25 |
-| mcp_hermes | 1.1.10 |
-| mcp_online | 0.1.0 |
-| skill | 0.1.0 |
+| core | 1.0.1 |
+| plugin_2x | 2.0.29 |
+| plugin_1_9x | 1.9.26 |
+| mcp_hermes | 1.1.11 |
+| mcp_online | 0.1.1 |
+| skill | 0.1.1 |
+| core | 1.0.1 |
 | Python core | >=3.11 |
 | Python plugin_2x | host-managed |
 | Python plugin_1_9x | host-managed |
