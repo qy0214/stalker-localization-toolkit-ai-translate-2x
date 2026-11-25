@@ -25,17 +25,36 @@ class MappingProvider:
     def __init__(self):
         self.calls = 0
 
+    @staticmethod
+    def _source_from_messages(messages):
+        import re
+        user = str(messages[-1].get("content") or "")
+        m = re.search(r"翻译为[^：\n]*：\n", user)
+        return user[m.end():] if m else user
+
+    def chat(self, messages, max_tokens=None, temperature=None):
+        self.calls += 1
+        return (self._map(self._source_from_messages(messages)),
+                TokenUsage(input_tokens=5, output_tokens=3),
+                "req-%d" % self.calls)
+
+    def _map(self, text):
+        import re
+        toks = re.findall(r"\$\$[^$]+\$\$", text)
+        if "Привет" in text:
+            zh = "你好，潜行者。"
+        elif "Heckler" in text:
+            zh = "Heckler & Koch 步枪"
+        elif "Hello" in text:  # %c[...] 已被 core 掩码为 $$Rn$$，逐字带回
+            return "".join(toks) + "你好"
+        else:
+            zh = "中文译文"
+        return zh
+
     def translate(self, request, max_tokens=None, extra_system=""):
         self.calls += 1
-        if "Привет" in request.text:
-            text = "你好，潜行者。"
-        elif "Heckler" in request.text:
-            text = "Heckler & Koch 步枪"
-        elif "%c" in request.text:
-            text = "%c[default]你好"
-        else:
-            text = "中文译文"
-        return TranslationResult(text=text, source_text=request.text,
+        return TranslationResult(text=self._map(request.text),
+                                 source_text=request.text,
                                  provider=self.name, model=self.model,
                                  usage=TokenUsage(input_tokens=5, output_tokens=3))
 
@@ -95,7 +114,7 @@ class JobTests(unittest.TestCase):
         second = self.wait(self.jobs.start(str(self.mod)))
         self.assertEqual(second.state.value, "succeeded")
         self.assertEqual(self.provider.calls, calls)
-        self.assertTrue((Path(first.output_dir) / ".online_translate_ledger.json").is_file())
+        self.assertTrue((Path(first.output_dir) / ".ai_translate_done.json").is_file())
 
 
 if __name__ == "__main__":

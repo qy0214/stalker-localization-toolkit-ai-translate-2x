@@ -17,12 +17,15 @@ from .app import check_env, create_app
 from .schema import ONLINE_TOOL_DEFINITIONS
 
 SERVER_NAME = "stalker-translate-online"
-SERVER_VERSION = "0.1.1"
+SERVER_VERSION = "0.2.0"
 _INSTRUCTIONS = (
-    "STALKER 在线翻译。先 scan_project 估算规模，再 translate_project；"
-    "长任务立即返回 job_id，使用 job_status 查询，job_cancel 取消。"
-    "只有 state=succeeded 才能报告完成，needs_review 必须查看问题。"
-    "单段文本使用 translate_text。密钥只从环境变量读取。"
+    "STALKER 在线翻译（共享全链，2.x 同源筛选器/闸门/回写规则）。"
+    "先 scan_project 估算规模，再 translate_project；长任务立即返回 job_id，"
+    "使用 job_status 查询，job_cancel 取消。只有 state=succeeded 才能报告完成，"
+    "needs_review 必须查看问题。单段文本使用 translate_text。"
+    "无独立 API Key 时用批量协议：pending_entries 让平台对话 AI 只翻译"
+    "筛后残余条目，作答后 apply_batch，再 translate_project 完成（零请求补全）。"
+    "密钥只从环境变量读取。"
 )
 
 
@@ -30,12 +33,15 @@ class Server:
     def __init__(self):
         self.app = None
         self.send_lock = threading.Lock()
+        # 捕获真实 stdout：core 作业在 redirect_stdout(sys.stderr) 上下文里
+        # 运行时，协议响应不能被一起导向 stderr（JSON-RPC 流必须直达宿主）。
+        self._out = sys.stdout
 
     def send(self, obj: dict[str, Any]) -> None:
         data = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
         with self.send_lock:
-            sys.stdout.write(data + "\n")
-            sys.stdout.flush()
+            self._out.write(data + "\n")
+            self._out.flush()
 
     def notify(self, method: str, params: dict[str, Any]) -> None:
         self.send({"jsonrpc": "2.0", "method": method, "params": params})
@@ -154,6 +160,18 @@ class Server:
             return {"query": query, "exact": service.glossary.lookup(query),
                     "hits": [{"source": k, "translation": v}
                              for k, v in service.glossary.hits(query, limit)]}
+        if name == "pending_entries":
+            return jobs.collect_pending(
+                str(args.get("input_dir") or ""),
+                str(args.get("output_dir") or "") or None,
+                str(args.get("source_lang") or "auto"),
+                str(args.get("target_lang") or "chs"),
+            )
+        if name == "apply_batch":
+            rows = args.get("answers")
+            if not isinstance(rows, list):
+                raise ValueError("answers 必须是数组")
+            return jobs.apply_answers([r for r in rows if isinstance(r, dict)])
         raise ValueError("未知工具：%s" % name)
 
 

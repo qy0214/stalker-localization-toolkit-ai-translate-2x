@@ -37,6 +37,11 @@ def version() -> str:
         encoding="utf-8"))["mcp_online"])
 
 
+def core_version() -> str:
+    return str(json.loads((ROOT / "versions.json").read_text(
+        encoding="utf-8"))["core"])
+
+
 def zip_path(out_dir: Path = DIST) -> Path:
     return out_dir / ("stalker-translate-online-MCP-%s.zip" % version())
 
@@ -78,7 +83,7 @@ def build_zip(out_dir: Path = DIST) -> Path:
 def build_manifest(out_dir: Path = DIST) -> dict[str, Any]:
     target = build_zip(out_dir)
     data = {
-        "product": "mcp_online", "version": version(), "core": "1.0.0",
+        "product": "mcp_online", "version": version(), "core": core_version(),
         "transport": "stdio", "provider": "openai_compatible",
         "package": target.name, "package_size": target.stat().st_size,
         "package_sha256": sha256(target),

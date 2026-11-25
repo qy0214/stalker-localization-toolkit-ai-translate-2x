@@ -1,11 +1,11 @@
 ---
 name: stalker-translate
-version: 0.1.2
-description: "翻译 STALKER / X-Ray MOD 或单段游戏文本。优先调用通用在线 MCP；平台不支持 MCP 时使用跨平台 CLI 包装脚本。支持术语库、缓存、预算、占位符/换行校验与断点续译。"
+version: 0.2.0
+description: "翻译 STALKER / X-Ray MOD 或单段游戏文本。共享 2.x 同款筛选器/闸门/回写链，模型只处理筛后残余条目，节省平台对话额度。收集→作答→交回→填充四步协议。"
 license: GPL-3.0
 ---
 
-# STALKER 在线翻译
+# STALKER 翻译技能（对话 AI 批量协议）
 
 ## 何时使用
 
@@ -13,78 +13,64 @@ license: GPL-3.0
 - 用户贴来一段游戏文本，要求译成中文或其他目标语言。
 - 普通文本不要使用本技能。
 
-## 运行方式
+## 运行原理
 
-按平台能力选择，不要同时启动两套：
+程序侧先做确定性处理，**你（平台对话 AI）只处理真正需要的条目**——这就是省积分/省词元的来源：
 
-1. **MCP 可用时**：调用 `stalker-translate-online` 工具。
-2. **MCP 不可用时**：调用本技能脚本：
+- **筛选器**：标识符、调试行、标题形态、制作名单等整条跳过；玩家可见 id 后缀豁免。
+- **直取**：24455 条分层词库整串命中直接落盘（零 token）；技术精确表/句式模板同样前置。
+- **掩码**：`%c[...]`、`$var`、`$$Rn$$` 等运行期令牌送翻时已掩码，答案必须逐字保留令牌。
+- **闸门与回写**：占位符/换行/数字/粘连残词逐项校验；能程序修的绝不回炉——你只需答一遍。
+- **账本**：断点续跑，已完成的文件不再处理；重复调用近零成本。
+
+调用方式（二选一，不要同时启动两套）：
+
+1. 平台支持 MCP 时：连接 `stalker-translate-online`，用 `pending_entries` / `apply_batch` / `job_status` 工具。
+2. 否则用本技能脚本：
 
 ```text
 python scripts/stalker_translate.py --config <配置文件> <命令> ...
 ```
 
-脚本会自动查找：
+脚本自动查找 `STALKER_TRANSLATE_ONLINE_CLI`、已安装 CLI、技能内置 `runtime/cli.py` 与源码树 CLI。
 
-- `STALKER_TRANSLATE_ONLINE_CLI` 指定的 CLI；
-- 已安装的 `stalker-translate-online` 命令；
-- 技能包内置 `runtime/cli.py`；
-- 源码树中的 `products/mcp_online/cli.py`。
+## 标准流程（整目录翻译四步）
 
-API Key 只通过环境变量读取，禁止写入命令参数、技能文件或配置文件。
-
-## 标准流程
-
-### 整目录翻译
-
-1. `check_env`：确认 Provider、模型与资产可用。
-2. `scan_project`：只读统计文件、条目、字符、预估 token/费用。
-3. 向用户确认输出目录与预算；不要自行扩大 `allowed_roots`。
-4. `translate_project`：异步启动，获得 `job_id`。
-5. `job_status`：轮询进度；用户要求停止时调用 `job_cancel`。
-6. 只有 `state=succeeded` 才能报告“翻译完成”；`needs_review` 必须报告待复核。
-7. `validate_output`：核对 ID、占位符、换行和中文产出。
-
-CLI 等价流程：
+1. **收集**：`pending <MOD目录>`
+   —— 能直取/能筛的条目当场落盘；剩余需要模型的条目以编号清单输出
+   （`n`/`key`/`kind`/`sources`/`hint` 术语提示）。
+2. **作答**：把清单分批交给对话 AI（**每批 ≤40 条**，总批次数按用户预算），
+   按行输出 `- {"key": "...", "translation": "..."}` 或 `序号<TAB>译文`。
+   源文里的 `$$R0$$` 类掩码令牌必须原样出现在译文对应位置。
+3. **交回**：`apply-batch <答案文件>`（支持 `--stdin` 与 `第N行<TAB>译文` 宽容格式）。
+   回显源文、丢失令牌的答案会被拒收并留在 pending。
+4. **填充**：再跑一次第 1 步命令——已作答条目从批次存储取回落盘（零请求），
+   未答条目继续 pending。**循环直到 `pending_total=0`**，然后：
 
 ```text
-python scripts/stalker_translate.py check
-python scripts/stalker_translate.py scan <MOD目录>
-python scripts/stalker_translate.py translate <MOD目录> --output-dir <输出目录>
-python scripts/stalker_translate.py validate <MOD目录> <输出目录>
+validate <MOD目录> <输出目录>
 ```
+
+只有 `ok=true` 才能报告翻译完成。
 
 ### 单段文本
 
-```text
-python scripts/stalker_translate.py translate-text "<待译文本>" --source-lang auto --target-lang chs
-```
-
-返回 `retained_source=true` 或 `quality_issues` 非空时，不要当作成功译文使用。
-
-### 术语查询
-
-```text
-python scripts/stalker_translate.py glossary "Pripyat"
-```
+先 `glossary "<文本>"` 查整串直取；未命中时由对话 AI 直接翻译，保留占位符/换行；
+可用 `retained_source` / 术语回填自查。不要把整份 MOD 塞进此类查询。
 
 ## 硬性规则
 
-- **Provider 必须是强在线模型**（混元/GPT/DeepSeek 级 OpenAI 兼容 API）。本技能管线是
-  轻量版（单遍翻译 + 3 类基础校验），**没有** 2.x 桌面插件那套针对小模型的确定性补偿闸门
-  （占位符掩码、重试梯子、残留源文闸门、术语回填、终检审计）。**禁止**把 Provider 指向
-  本地小模型端点（llama.cpp/ollama 等跑 1~8B 模型）——那会产出未经补偿的低质量译文。
-- **没有可用 Provider 配置时，必须停下来向用户索取**（base_url / 模型名 / API Key 环境变量），
-  不得用任何本地端点或其它模型"顶替"。发现配置指向本地小模型时，先质疑再执行。
-- 质量预期说明：术语正确性由词库直取保证（零词元），句子质量 = 所配模型的能力 × 本管线；
-  需要小模型离线高质量输出时，应改用 2.x 桌面插件产品，而不是本技能。
-- 不要用终端或文件工具逐文件扫描 MOD；`scan_project`/`translate_project` 会自行识别。
-- 不要要求用户上传整个 MOD；使用用户授权的本地路径。
-- 不要猜测路径，不要绕过 `allowed_roots`。
-- 不要启动、下载或切换在线模型；Provider 由用户配置。
+- **答案只能来自你所在平台的对话 AI**。禁止把批量清单交给本地小模型端点
+  （llama.cpp/ollama 跑 1~8B）代答——那等于绕过程序闸门产未经补偿的低质量译文。
+- 不要启动、下载、切换或**替用户配置**任何模型 API；本技能不做 API 编排。
+  用户若持有 OpenAI 兼容 API 想全自动翻译，指引其安装「通用在线 MCP/CLI」
+  独立包（`translate_project` 直连模式），技能流程内不代配。
+- 每批作答前先回显本批条目数与预计总请求轮次；超出用户预算上限时停下来询问。
+- 不要把整份 MOD 上传进对话；不要要求用户提供全部文件——脚本自行扫描。
+- 不要猜测路径，不要绕过 `allowed_roots`；输出目录不得等于输入目录或成为其祖先。
 - 不要把密钥、正文或完整译文写入日志与回复；日志只保留元数据。
-- 输出目录不得等于输入目录或成为其祖先。
-- 只有 `succeeded` 表示通过；`needs_review`、`failed`、`cancelled` 都必须明确报告。
+- 只有 `succeeded`/`pending_total=0 且 validate ok` 表示通过；
+  `needs_review`、`failed`、`cancelled` 都必须明确报告。
 
 ## 完成汇报
 
@@ -94,7 +80,7 @@ python scripts/stalker_translate.py glossary "Pripyat"
 状态：succeeded / needs_review / failed / cancelled
 输出目录：<path>
 文件/条目：<counts>
-token/费用：<usage>
+请求轮次/积分估算：rounds / credit_note（收集与填充遍应为 0 次 API 请求）
 待复核问题：<issue codes>
 ```
 

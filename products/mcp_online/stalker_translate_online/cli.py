@@ -37,6 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("cancel"); p.add_argument("job_id")
     p = sub.add_parser("validate"); p.add_argument("input_dir"); p.add_argument("output_dir")
     p = sub.add_parser("glossary"); p.add_argument("query"); p.add_argument("--limit", type=int, default=20)
+    p = sub.add_parser("pending"); p.add_argument("input_dir"); p.add_argument("--output-dir"); p.add_argument("--source-lang", default="auto"); p.add_argument("--target-lang", default="chs")
+    p = sub.add_parser("apply-batch"); p.add_argument("answers_file"); p.add_argument("--stdin", action="store_true")
     sub.add_parser("serve")
     args = parser.parse_args(argv)
 
@@ -92,6 +94,34 @@ def main(argv: list[str] | None = None) -> int:
               "hits": [{"source": k, "translation": v}
                        for k, v in service.glossary.hits(args.query, args.limit)]},
              not args.plain)
+    elif args.command == "pending":
+        emit(jobs.collect_pending(args.input_dir, args.output_dir,
+                                  args.source_lang, args.target_lang),
+             not args.plain)
+    elif args.command == "apply-batch":
+        if args.stdin or str(args.answers_file) == "-":
+            raw = sys.stdin.read()
+        else:
+            raw = Path(args.answers_file).read_text(encoding="utf-8")
+        rows: list[dict] = []
+        for line in raw.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("{"):
+                obj = json.loads(line)
+            else:  # 宽容格式："n<TAB>译文" 或 "n<TAB>key<TAB>译文"
+                parts = line.split("\t")
+                if len(parts) >= 2:
+                    obj = ({"n": int(parts[0]), "key": parts[1],
+                            "translation": parts[2]}
+                           if len(parts) > 2 else
+                           {"n": int(parts[0]), "translation": parts[1]})
+                else:
+                    continue
+            if isinstance(obj, dict):
+                rows.append(obj)
+        emit(jobs.apply_answers(rows), not args.plain)
     return 0
 
 

@@ -45,10 +45,11 @@ class SkillTests(unittest.TestCase):
             skill_text = (extract / "SKILL.md").read_text(encoding="utf-8")
             self.assertNotIn("Hermes", skill_text)
             self.assertNotIn("C:\\Users", skill_text)
-            # 随包 SKILL.md 必须携带护栏修复（f5b4d82）：禁本地小模型端点、无 Provider 必须询问
+            # 随包 SKILL.md 必须携带 0.2.0 批量协议与护栏（禁本地小模型代答、不做 API 编排）
             self.assertIn("硬性规则", skill_text)
             self.assertIn("本地小模型", skill_text)
-            self.assertIn("必须停下来向用户索取", skill_text)
+            self.assertIn("apply-batch", skill_text)
+            self.assertIn("不做 API 编排", skill_text)
             wrapper = extract / "scripts/stalker_translate.py"
             help_result = subprocess.run(
                 [sys.executable, str(wrapper), "--help"], cwd=str(extract),

@@ -139,7 +139,8 @@ class OnlineIntegrationTests(unittest.TestCase):
                     self.assertEqual([t["name"] for t in tools], [
                         "check_env", "scan_project", "translate_text",
                         "translate_project", "job_status", "job_cancel",
-                        "validate_output", "glossary_lookup"])
+                        "validate_output", "glossary_lookup",
+                        "pending_entries", "apply_batch"])
                     self.assertTrue(payload(client.request(
                         "tools/call", {"name": "check_env", "arguments": {}}))["ready"])
                     scan = payload(client.request(

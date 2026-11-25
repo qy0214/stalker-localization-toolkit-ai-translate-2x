@@ -26,13 +26,21 @@ class FakeProvider:
     def __init__(self, outputs):
         self.outputs = list(outputs)
         self.calls = 0
+        self.prompts = []
+
+    def chat(self, messages, max_tokens=None, temperature=None):
+        self.calls += 1
+        self.prompts.append(messages)
+        text = self.outputs.pop(0) if self.outputs else "你好，潜行者。"
+        return text, TokenUsage(input_tokens=10, output_tokens=5), "req-%d" % self.calls
 
     def translate(self, request, max_tokens=None, extra_system=""):
-        self.calls += 1
-        text = self.outputs.pop(0) if self.outputs else "你好，潜行者。"
+        text, usage, request_id = self.chat(
+            [{"role": "user", "content": request.text}],
+            max_tokens=max_tokens)
         return TranslationResult(text=text, source_text=request.text,
                                  provider=self.name, model=self.model,
-                                 usage=TokenUsage(input_tokens=10, output_tokens=5))
+                                 request_id=request_id, usage=usage)
 
 
 class ServiceTests(unittest.TestCase):
@@ -62,10 +70,11 @@ class ServiceTests(unittest.TestCase):
         self.assertEqual(provider.calls, 0)
 
     def test_cache_skips_second_provider_call(self):
+        # 夹具句需避开随包词库精确键（"Hello"→你好 会直取短路 Provider 路径）
         provider = FakeProvider(["你好。"])
         service = self.service(provider)
-        first = service.translate("Hello", "eng", "chs")
-        second = service.translate("Hello", "eng", "chs")
+        first = service.translate("Zeta test", "eng", "chs")
+        second = service.translate("Zeta test", "eng", "chs")
         self.assertEqual(first.text, "你好。")
         self.assertTrue(second.cache_hit)
         self.assertEqual(provider.calls, 1)
@@ -82,9 +91,9 @@ class ServiceTests(unittest.TestCase):
         self.cfg.budget = {"max_requests": 1}
         provider = FakeProvider(["你好。", "再见。"])
         service = self.service(provider)
-        service.translate("Hello", "eng", "chs")
+        service.translate("Zeta probe", "eng", "chs")
         with self.assertRaises(BudgetExceeded):
-            service.translate("Goodbye", "eng", "chs")
+            service.translate("Omega probe", "eng", "chs")
 
     def test_config_rejects_plaintext_key(self):
         path = Path(self.tmp.name) / "config.json"

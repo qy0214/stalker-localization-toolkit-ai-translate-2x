@@ -71,4 +71,41 @@ ONLINE_TOOL_DEFINITIONS = [
             "required": ["query"],
         },
     },
+    {
+        "name": "pending_entries",
+        "description": ("对话 AI 批量协议第一遍：跑共享全链收集筛选与直取后仍需模型的"
+                        "条目（零 API 费用），返回编号条目与术语提示；可翻译部分照常落盘。"),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "input_dir": {"type": "string"},
+                "output_dir": {"type": "string"},
+                "source_lang": {"type": "string", "enum": ["auto", "rus", "eng", "ukr"]},
+                "target_lang": {"type": "string", "enum": ["chs", "eng", "rus", "ukr"]},
+            },
+            "required": ["input_dir"],
+        },
+    },
+    {
+        "name": "apply_batch",
+        "description": ("对话 AI 批量协议第二输入：把批量答案按键或按 n 序号交回；随后 "
+                        "translate_project 复用答案零请求补全。"),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "answers": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "n": {"type": "integer"},
+                            "key": {"type": "string"},
+                            "translation": {"type": "string"},
+                        },
+                    },
+                },
+            },
+            "required": ["answers"],
+        },
+    },
 ]

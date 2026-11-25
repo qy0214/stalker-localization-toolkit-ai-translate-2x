@@ -95,6 +95,33 @@ class OpenAICompatibleProvider:
         except Exception as exc:
             return {"ok": False, "error": "%s: %s" % (type(exc).__name__, exc)}
 
+    def chat(self, messages: list[dict[str, str]], max_tokens: int | None = None,
+             temperature: float | None = None) -> tuple[str, TokenUsage, str]:
+        """消息级原语：共享提示词链使用，返回 (text, usage, request_id)。"""
+        payload: dict[str, Any] = {
+            "model": self.model, "messages": messages, "stream": False,
+            "temperature": (self.settings.temperature if temperature is None
+                            else float(temperature)),
+        }
+        if max_tokens:
+            payload["max_tokens"] = max(256, int(max_tokens))
+        data = self._post("/chat/completions", payload)
+        try:
+            text = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise ProviderError("响应缺少 choices[0].message.content") from exc
+        usage = data.get("usage") or {}
+        est_input = sum(len(m.get("content") or "") for m in messages) // 2
+        token_usage = TokenUsage(
+            input_tokens=int(usage.get("prompt_tokens") or max(1, est_input)),
+            output_tokens=int(usage.get("completion_tokens")
+                              or max(1, len(text) // 2)),
+            cached_input_tokens=int((usage.get("prompt_tokens_details") or {}).get(
+                "cached_tokens") or 0),
+            estimated=not bool(usage),
+        )
+        return text.strip(), token_usage, str(data.get("id") or "")
+
     def translate(self, request: TranslationRequest,
                   max_tokens: int | None = None,
                   extra_system: str = "") -> TranslationResult:

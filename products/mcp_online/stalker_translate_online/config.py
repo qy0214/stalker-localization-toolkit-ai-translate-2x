@@ -30,6 +30,7 @@ class Config:
     audit_dir: str = ""
     input_price_per_million: float = 0.0
     output_price_per_million: float = 0.0
+    prompt_extra: str = ""
     budget: dict[str, Any] = field(default_factory=dict)
 
     @property
