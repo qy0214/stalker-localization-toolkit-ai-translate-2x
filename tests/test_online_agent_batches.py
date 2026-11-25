@@ -110,6 +110,45 @@ class AgentBatchTests(unittest.TestCase):
         self.assertEqual(echo["rejected_or_echo"], 1)
         self.assertEqual(echo["applied"], 0)
 
+    def test_same_source_keys_collapse_after_one_answer(self):
+        from stalker_translate_online.engine import BatchStore
+        store = BatchStore(Path(self.cfg.cache_path) / "t_collapse.jsonl")
+        msgs = [{"role": "system", "content": "s"}, {"role": "user", "content": "u"}]
+        store.record_pending("kA", msgs, "single", ["Optical rangefinder"], {})
+        store.record_pending("kB", msgs, "single", ["Optical rangefinder"], {})
+        store.record_pending("kC", msgs, "batch", ["Alpha", "Beta"], {})
+        store.set_answer("kA", "光学测距仪")
+        # 不同场景键、同源文：一次作答即可命中
+        self.assertEqual(store.answer_for("single", ["Optical rangefinder"]),
+                         "光学测距仪")
+        store.set_answer("kC", "[1] 甲\n[2] 乙")
+        self.assertEqual(store.answer_for("batch", ["Alpha", "Beta"]),
+                         "[1] 甲\n[2] 乙")
+        self.assertIsNone(store.answer_for("single", ["Untouched text"]))
+
+    def test_stale_pending_pruned_after_entry_resolved(self):
+        collected = self.jobs.collect_pending(str(self.mod))
+        keys = [it["key"] for it in collected["items"]]
+        self.assertTrue(keys)
+        # 选一个无掩码占位符的键作答（含占位符的答案会被卫生闸门回炉，
+        # 其键必须保留，见 test_placeholder_answer_invalidated_then_recollected）
+        target = next((it for it in collected["items"]
+                       if it["kind"] == "single" and "$$" not in it["sources"][0]),
+                      None)
+        if target is None:
+            self.skipTest("夹具没有无占位符条目")
+        self.jobs.apply_answers(
+            [{"key": target["key"], "translation": "装置已校准。"}])
+        again = self.jobs.collect_pending(str(self.mod))
+        again_keys = {it["key"] for it in again["items"]}
+        self.assertNotIn(target["key"], again_keys,
+                         "已作答且可命中的键必须从 pending 消失（收敛前提）")
+        dirty = [it for it in collected["items"]
+                 if it["kind"] == "single" and "$$" in it["sources"][0]]
+        for it in dirty:
+            self.assertIn(it["key"], again_keys,
+                          "含掩码占位符而未答的键必须保留在 pending")
+
     def test_placeholder_answer_invalidated_then_recollected(self):
         collected = self.jobs.collect_pending(str(self.mod))
         target = None

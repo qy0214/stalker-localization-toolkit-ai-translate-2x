@@ -35,7 +35,7 @@ from .service import TranslationService, quality_issues
 from .xray import project_xml_files, scan_text_file
 
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
-VERSION = "0.2.0"
+VERSION = "0.2.2"
 
 
 @dataclass
@@ -276,9 +276,11 @@ class JobManager:
         root = allowed_path(input_dir, self.cfg, require_dir=True)
         out = output_path(output_dir or root / "translated_online_mcp", root,
                           self.cfg)
+        store = self.service.get_store()
+        store.begin_round()
         self._execute(record, root, out, source_lang, target_lang,
                       max(1, min(self.cfg.max_concurrency, 8)), None)
-        store = self.service.get_store()
+        pruned = store.prune_stale()
         rows = sorted(store.pending_snapshot().values(),
                       key=lambda r: r.get("recorded_at") or 0)
         items = []
@@ -289,7 +291,8 @@ class JobManager:
                 "hint": self._hint_for(row),
             })
         return {"output_dir": str(out), "pending_total": len(items),
-                "state": record.state.value, "batch_file_hint": str(
+                "stale_pruned": pruned, "state": record.state.value,
+                "batch_file_hint": str(
                     Path(self.cfg.cache_path) / "agent_batches.jsonl"),
                 "items": items}
 
@@ -343,7 +346,7 @@ class JobManager:
                 continue
             if row.get("kind", "single") == "batch" and sources:
                 text = self._normalize_batch(text, [str(s) for s in sources])
-            store.set_answer(key, text)
+            store.set_answer(key, text, [str(s) for s in sources] if sources else None)
             applied += 1
         self.service.audit.record("batch_apply", applied=applied,
                                   unknown=unknown, rejected=rejected,

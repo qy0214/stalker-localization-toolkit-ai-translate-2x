@@ -10,10 +10,12 @@
 """
 from __future__ import annotations
 
+import contextlib
 import hashlib
 import json
 import threading
 import time
+from pathlib import Path
 from typing import Any
 
 from stalker_translate_core import (
@@ -49,14 +51,61 @@ def request_key(kind: str, model: str, messages: list[dict[str, str]],
 
 
 class BatchStore:
-    """对话 AI 批次存储：JSONL 落盘 + 进程内镜像（线程安全）。"""
+    """对话 AI 批次存储：JSONL 落盘 + 进程内镜像（线程安全）。
+
+    除按请求键命中外，维护 逐行源文→译文 映射（by_source/by_line）：
+    同一源文本在不同场景键（普通/补充要求/短名定名/重试注记）只需作答一次。
+    """
 
     def __init__(self, path):
         self.path = path
         self.lock = threading.Lock()
         self.answers: dict[str, dict[str, Any]] = {}
         self.pending: dict[str, dict[str, Any]] = {}
+        self.by_source: dict[str, str] = {}
+        self.touched: set[str] | None = None
         self._load()
+
+    def begin_round(self) -> None:
+        """本轮起登记：collect 结束后未被再次问起的 pending 视为过期。"""
+        self.touched = set()
+
+    def prune_stale(self) -> int:
+        """清理本轮未出现的旧键（源文已按其它键译出/条目已消解）。"""
+        if self.touched is None:
+            return 0
+        with self.lock:
+            stale = [k for k in self.pending if k not in self.touched]
+            if not stale:
+                self.touched = None
+                return 0
+            for k in stale:
+                self.pending.pop(k, None)
+            lines = []
+            try:
+                lines = self.path.read_text(encoding="utf-8").splitlines()
+            except OSError:
+                pass
+            try:
+                with self._replacing() as tmp:
+                    with open(tmp, "w", encoding="utf-8") as handle:
+                        for line in lines:
+                            if not line.strip():
+                                continue
+                            row = json.loads(line)
+                            if row.get("key") in stale and row.get("state") == "pending":
+                                continue
+                            handle.write(line + "\n")
+            except OSError:
+                pass
+            self.touched = None
+            return len(stale)
+
+    @contextlib.contextmanager
+    def _replacing(self):
+        tmp = Path(str(self.path) + ".tmp")
+        yield tmp
+        tmp.replace(self.path)
 
     def _load(self) -> None:
         try:
@@ -70,6 +119,10 @@ class BatchStore:
                 except ValueError:
                     continue
 
+    @staticmethod
+    def _map_lines(sources: list[str], text: str) -> None:
+        pass
+
     def _index(self, row: dict[str, Any]) -> None:
         key = str(row.get("key") or "")
         if not key:
@@ -81,12 +134,47 @@ class BatchStore:
         if row.get("translation") is not None:
             self.answers[key] = row
             self.pending.pop(key, None)
+            self._absorb(row)
+            self._absorb_pending_sources(key)
         elif row.get("state") == "pending":
             self.pending[key] = row
+
+    def _absorb_pending_sources(self, key: str) -> None:
+        """兼容旧格式：translation 行无 sources 时回查历史 pending 行。"""
+        try:
+            for line in reversed(self.path.read_text(
+                    encoding="utf-8").splitlines()):
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                if row.get("key") == key and row.get("state") == "pending":
+                    self._absorb(row)
+                    return
+        except (OSError, ValueError):
+            pass
+
+    def _absorb(self, row: dict[str, Any]) -> None:
+        sources = [str(s) for s in (row.get("sources") or [])]
+        text = str(row.get("translation") or "")
+        if not sources or not text:
+            return
+        if len(sources) == 1:
+            self.by_source.setdefault(sources[0], text)
+            return
+        import re as _re
+        parts = {}
+        for match in _re.finditer(r"\[(\d+)\]\s*([^\n]*)", text):
+            parts[int(match.group(1))] = match.group(2).strip()
+        if len(parts) >= len(sources):
+            for i, src in enumerate(sources, 1):
+                if parts.get(i):
+                    self.by_source.setdefault(src, parts[i])
 
     def record_pending(self, key: str, messages: list[dict[str, str]],
                        kind: str, sources: list[str], meta: dict) -> None:
         with self.lock:
+            if self.touched is not None:
+                self.touched.add(key)
             if key in self.pending or key in self.answers:
                 return
             row = {"key": key, "state": "pending", "kind": kind,
@@ -100,17 +188,26 @@ class BatchStore:
 
     def invalidate(self, key: str) -> None:
         with self.lock:
+            row = self.answers.get(key) or {}
+            for src in row.get("sources") or []:
+                self.by_source.pop(str(src), None)
             self.answers.pop(key, None)
             self.pending.pop(key, None)
             self.path.parent.mkdir(parents=True, exist_ok=True)
             with self.path.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps({"key": key, "state": "invalid"}) + "\n")
 
-    def set_answer(self, key: str, translation: str) -> None:
+    def set_answer(self, key: str, translation: str,
+                   sources: list[str] | None = None) -> None:
         with self.lock:
             row = {"key": key, "translation": translation}
+            pending_row = self.pending.get(key) or {}
+            srcs = [str(s) for s in (sources or pending_row.get("sources") or [])]
+            if srcs:
+                row["sources"] = srcs
             self.answers[key] = row
             self.pending.pop(key, None)
+            self._absorb(row)
             self.path.parent.mkdir(parents=True, exist_ok=True)
             with self.path.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps(row, ensure_ascii=False) + "\n")
@@ -119,6 +216,19 @@ class BatchStore:
         with self.lock:
             row = self.answers.get(key)
         return str(row["translation"]) if row else None
+
+    def answer_for(self, kind: str, sources: list[str]) -> str | None:
+        """同源文键的次级命中：单句直接映射，批量按行合成编号块。"""
+        with self.lock:
+            if not sources:
+                return None
+            if kind != "batch" and len(sources) == 1:
+                return self.by_source.get(str(sources[0]))
+            hits = [self.by_source.get(str(s)) for s in sources]
+            if all(h for h in hits):
+                return "\n".join("[%d] %s" % (i + 1, h)
+                                 for i, h in enumerate(hits))
+            return None
 
     def pending_snapshot(self) -> dict[str, dict[str, Any]]:
         with self.lock:
@@ -256,6 +366,19 @@ class OnlineEngine:
                 self._bump_cache()
                 self.audit.record("batch_hit", kind=kind, key=key[:12],
                                   pipeline=self.pipeline)
+                return answer
+        if answer is None:
+            # 同源文次级命中：同一句在不同场景键（补充要求/定名/重试注记）
+            # 只被对话 AI 作答一次即可；命中后归并为本键答案加速下次查找。
+            answer = self.store.answer_for(kind, list(sources or []))
+            if answer and (kind == "batch" or (
+                    sources and runtime_tokens_match(sources[0], answer))):
+                self.cache.put(key, self._result(answer, TokenUsage(),
+                                                 "", kind))
+                self.store.set_answer(key, answer, list(sources or []))
+                self._bump_cache()
+                self.audit.record("batch_source_hit", kind=kind,
+                                  key=key[:12], pipeline=self.pipeline)
                 return answer
         if self.mode in (MODE_COLLECT, MODE_AGENT):
             self.store.record_pending(

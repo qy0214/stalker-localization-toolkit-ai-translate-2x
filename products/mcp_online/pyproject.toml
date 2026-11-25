@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stalker-translate-online"
-version = "0.2.0"
+version = "0.2.2"
 description = "Generic STALKER translation MCP and CLI using OpenAI-compatible providers"
 requires-python = ">=3.11"
 dependencies = []

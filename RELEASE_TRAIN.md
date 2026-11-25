@@ -14,10 +14,10 @@
 | plugin_1_9x | 1.9.26 | `dist/ai_translate_plugin_v1.9.26.manifest.json` | 3701 | `31a3eca6d8f16589c438425b4bed59b815a5efecbf34e722e1a0eae737d6e740` |
 | mcp_hermes | 1.1.11 | `dist/stalker-translate-MCP-1.1.11.zip` | 12131102 | `38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e` |
 | mcp_hermes | 1.1.11 | `dist/stalker-translate-MCP-1.1.11.manifest.json` | 4806 | `41e7819a59dc75c509bf40fb5a3075a68c81b98d953205a93330ae9df816a051` |
-| mcp_online | 0.2.0 | `dist/stalker-translate-online-MCP-0.2.0.zip` | 996537 | `34c780527c39e0bce48e380b977feb428349e336f35a31e470a23645a0ef3cb8` |
-| mcp_online | 0.2.0 | `dist/stalker-translate-online-MCP-0.2.0.manifest.json` | 4289 | `8c2544644ec7488d1a547aaa8c0d54c6e8c56788e48d81429a20512180fac98e` |
-| skill | 0.2.0 | `dist/stalker-translate-skill-0.2.0.zip` | 1001979 | `d1097a5349870a691de4300512b2210b0c31053222286ca49c10ab2908f5a8bf` |
-| skill | 0.2.0 | `dist/stalker-translate-skill-0.2.0.manifest.json` | 2927 | `28149fa9c9d21f318bdafbbff28ca3506160ea57915a942a0e7f5cbf16539d31` |
+| mcp_online | 0.2.2 | `dist/stalker-translate-online-MCP-0.2.2.zip` | 997887 | `a9b2a983fc6498d9bf8de68653971c3928128c80f13576f2be600445b8c20a22` |
+| mcp_online | 0.2.2 | `dist/stalker-translate-online-MCP-0.2.2.manifest.json` | 4289 | `5d989de247c575c1a9055b6835eb1946dc3045c2f786c35b9a682eb42f4abe3d` |
+| skill | 0.2.2 | `dist/stalker-translate-skill-0.2.2.zip` | 1003509 | `e0576f805465971ff94da93973d7d058724c2d8ea0ec94ccd67052c1ebaaba48` |
+| skill | 0.2.2 | `dist/stalker-translate-skill-0.2.2.manifest.json` | 2927 | `9c381b6dcad863312a98f607550947f98ee3b79974a24e740c491a209f4bb449` |
 
 ## 兼容矩阵
 
@@ -27,8 +27,8 @@
 | plugin_2x | 2.0.29 |
 | plugin_1_9x | 1.9.26 |
 | mcp_hermes | 1.1.11 |
-| mcp_online | 0.2.0 |
-| skill | 0.2.0 |
+| mcp_online | 0.2.2 |
+| skill | 0.2.2 |
 | core | 1.0.1 |
 | Python core | >=3.11 |
 | Python plugin_2x | host-managed |

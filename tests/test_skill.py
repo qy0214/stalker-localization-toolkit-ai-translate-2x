@@ -56,6 +56,15 @@ class SkillTests(unittest.TestCase):
                 env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, encoding="utf-8", timeout=30)
             self.assertEqual(help_result.returncode, 0, help_result.stderr)
+            # 0.2.0 曾漏发：wrapper 白名单必须转发批量协议子命令（0.2.1 回归）
+            wrapper_src = wrapper.read_text(encoding="utf-8")
+            self.assertIn('"pending"', wrapper_src)
+            self.assertIn('"apply-batch"', wrapper_src)
+            wrapper_source_cmd = subprocess.run(
+                [sys.executable, str(wrapper), "--help"], cwd=str(extract),
+                env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                text=True, encoding="utf-8", timeout=30)
+            self.assertIn("pending", wrapper_source_cmd.stdout)
 
             mod = base / "mod"
             (mod / "text").mkdir(parents=True)

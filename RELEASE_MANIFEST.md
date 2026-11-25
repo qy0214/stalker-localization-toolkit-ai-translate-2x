@@ -1,9 +1,9 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-25T22:20:48+08:00`
+- 生成时间：`2026-11-25T22:55:01+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`monorepo-migration` @ `7fb2eef`（有未提交改动）
-- 已跟踪文件：1494 个，70.38 MB
+- Git：`monorepo-migration` @ `c06509e`（有未提交改动）
+- 已跟踪文件：1509 个，74.24 MB
 
 ## 1. 版本与交付物
 
