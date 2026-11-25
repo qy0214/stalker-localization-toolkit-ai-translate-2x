@@ -1,13 +1,14 @@
 {
   "product": "skill",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "runtime": "mcp_online",
   "core": "1.0.1",
-  "package": "stalker-translate-skill-0.2.2.zip",
-  "package_size": 1003509,
-  "package_sha256": "e0576f805465971ff94da93973d7d058724c2d8ea0ec94ccd67052c1ebaaba48",
-  "skill_sha256": "387396cc4456f1b1fa6e46eaeaee6aac7c8c4afe0aa6256a290ffdd49a985359",
-  "wrapper_sha256": "124fa40dcbc178efdf4c2471e664bcac5d66e39c527772919ef4de67ce6c79f7",
+  "package": "stalker-translate-skill-0.3.0.zip",
+  "package_size": 1014654,
+  "package_sha256": "1f9e4cbbe88332029e2d4455dd25b0e72473f3475e716352ef9d737ad3bee736",
+  "skill_sha256": "698c2c7d68df0849410b9de17895217bc8453ded32f396d24042e1f5efc56857",
+  "glossary_sha256": "f044f3957f4114cbbcce80ccaaa0670d58d1709dc85e17f7c037d4d81b6f5748",
+  "wrapper_sha256": "63e920ad6129ad12d9e7ed62bd542fd161c8f69ec35049ef4f6742cea4dec68b",
   "asset_sha256": {
     "stalker_termbase.json": "6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722",
     "glossary_builtin.json": "387a6ce17117b99cd9c03d5efe598a3c2e96851e222a83021affe2c185009d3a",
@@ -15,6 +16,7 @@
     "THIRD_PARTY_NOTICES.txt": "338f62ede3e6253ce1e7b513023b8535b6f5d94c33a00311bf295d421d601ff2"
   },
   "entries": [
+    "GLOSSARY-CORE.md",
     "LICENSE",
     "SKILL.md",
     "THIRD_PARTY_NOTICES.md",
@@ -49,6 +51,7 @@
     "runtime/stalker_translate_core/xray.py",
     "runtime/stalker_translate_online/__init__.py",
     "runtime/stalker_translate_online/__main__.py",
+    "runtime/stalker_translate_online/agentkit.py",
     "runtime/stalker_translate_online/app.py",
     "runtime/stalker_translate_online/cli.py",
     "runtime/stalker_translate_online/config.py",

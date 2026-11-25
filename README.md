@@ -12,8 +12,8 @@ Hermes MCP、通用在线 MCP/CLI、通用翻译技能。核心与资产只保�
 | 2.x 离线桌面插件 | 2.0.29 | active |
 | 1.9.x 兼容离线插件 | 1.9.26 | active |
 | Hermes MCP | 1.1.11 | active（共享 core，完整离线作业） |
-| 通用在线 MCP / CLI | 0.2.2 | active（OpenAI 兼容、stdio、共享全链） |
-| 通用翻译技能 | 0.2.2 | active（对话 AI 批量协议，与 2.x 共享全链） |
+| 通用在线 MCP / CLI | 0.3.0 | active（OpenAI 兼容、stdio、共享全链） |
+| 通用翻译技能 | 0.3.0 | active（知识技能+三薄命令，与 2.x 共享全链） |
 
 ## 统一发布列车
 
@@ -87,6 +87,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **0.3.0** | 协议重铸：账本三命令整体退役（pending_entries/apply_batch 移除），换为知识技能薄工具 `plan_translation`/`extract_batch`/`merge_answers`——批次落紧凑 TSV（sid 短哈希，六十四位键零泄露），stdout 只回摘要；plan 内嵌规模熔断（unique>3000 建议引擎、>20000 判定 engine_required）。| 
 | **0.2.2** | 批次协议两处关键修正：**同源多键折叠**（同一句在不同场景提示键只须作答一次，答任意键全键生效）与 **stale 清理**（本轮未再问起的旧 pending 键自动出清单，杜绝“循环至零”空转）。0.2.0 接入共享 core 全链（与 2.x 同源判定链/词库直取/运行期掩码/闸门回写/断点账本）、`pending_entries`/`apply_batch` 协议、core 提示词统一与 MCP stdout 隔离。 |
 | **0.1.1**（2026.11.25 列车） | 纳入五合一单仓库，同步 core 1.0.1 全部修复与统一发布列车（tag suite-v2026.11.25）。 |
 | **0.1.0** | 首个通用版本：OpenAI 兼容 Provider、stdio MCP、CLI、术语/缓存/预算/限流、质量闸门、X-Ray XML 项目任务、断点账本、取消/进度、输出校验与文件安全边界。 |
@@ -95,6 +96,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **0.3.0** | 技能回归知识本体：随包 `GLOSSARY-CORE.md`（24455 条主库自动切出~650 条宇宙正字法：地名/阵营/怪物/硬词，约 2.6K token）；工作流三拍 `plan→extract→merge`，AI 不再见请求键/不再读整库/不再逐轮重吐清单；统一性三层执法=核心表(事前)+逐行hint(事中)+merge回填闸门(事后)；plan 报价含模式判定，大 MOD 对话硬翻在第一步被熔断。 |
 | **0.2.2** | 发布三连修：0.2.0 包装层白名单漏转发 pending/apply-batch（用户第一步即报错，0.2.1 补齐）；0.2.2 修同源折叠与 stale 清理保证清单收敛。工作流定稿**对话 AI 批量协议**（收集 pending → 平台 AI 作答 → apply-batch → 填充遍，循环至 pending=0）：筛选/直取/掩码/回写全部程序侧完成，模型只答筛后残余、一遍过；SKILL.md 硬护栏改为「禁止本地小模型代答、技能不做 API 编排」（自动 API 需求指向通用在线 MCP 独立包）。 |
 | **0.1.2**（未发布） | 护栏版 SKILL.md 重打包，因并入 0.2.0 回收产物。 |
 | **0.1.1**（2026.11.25 列车） | 纳入五合一单仓库，同步 core 1.0.1 与统一发布列车（tag suite-v2026.11.25）。 |
@@ -216,7 +218,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 安装与配置
 
-1. 解压 `dist/stalker-translate-online-MCP-0.2.2.zip`，要求 Python 3.11+。
+1. 解压 `dist/stalker-translate-online-MCP-0.3.0.zip`，要求 Python 3.11+。
 2. 复制 `config.example.json` 为 `config.json`，填写：
 
 ```json
@@ -271,7 +273,7 @@ python cli.py --config config.json translate "D:\mods\你的MOD"
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-skill-0.2.2.zip`。
+1. 解压 `dist/stalker-translate-skill-0.3.0.zip`。
 2. 将整个目录放入所用平台的技能目录（不同平台路径不同）。
 3. 编辑包内 `runtime/config.example.json` 并保存为 `runtime/config.json`，配置 Provider、模型、`allowed_roots` 和密钥环境变量。
 4. 直接使用技能，或运行：
@@ -314,10 +316,10 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 | `products/` | 1.9.x、Hermes MCP、通用在线 MCP 的产品入口与 manifest |
 | `skills/stalker-translate/` | 通用技能入口与 manifest |
 | `versions.json` / `compatibility.json` | 产品版本与兼容矩阵 |
-| `dist/stalker-translate-skill-0.2.2.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
-| `dist/stalker-translate-skill-0.2.2.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
-| `dist/stalker-translate-online-MCP-0.2.2.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio、共享全链） |
-| `dist/stalker-translate-online-MCP-0.2.2.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
+| `dist/stalker-translate-skill-0.3.0.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
+| `dist/stalker-translate-skill-0.3.0.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
+| `dist/stalker-translate-online-MCP-0.3.0.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio、共享全链） |
+| `dist/stalker-translate-online-MCP-0.3.0.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
 | `dist/stalker-translate-MCP-1.1.11.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
 | `dist/stalker-translate-MCP-1.1.11.manifest.json` | Hermes MCP server/core/资产哈希清单（无过渡管线） |
 | `dist/ai_translate_plugin_v1.9.26.zip` | 1.9.x 兼容插件独立分享包 |
@@ -357,14 +359,15 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 - Hermes MCP 版本：`1.1.11`
 - Hermes MCP server SHA-256：`46dd6ab6a7b3653dd139f7e2fac41644bd97749effde2a954c69a0cf242dbceb`
 - Hermes MCP 发布 zip SHA-256：`38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e`
-- 通用在线 MCP 版本：`0.2.2`
+- 通用在线 MCP 版本：`0.3.0`
 - 在线 MCP server SHA-256：`7231f74c7ce8db8ba2716f2b47d4de4e2507f3c5f0f29e7227c367c8d2ee3756`
 - 在线 CLI SHA-256：`b5d47a4b8f872a3faee2c65f7636ed4e6e92736bb61806e24f586e7768687f66`
-- 在线 MCP/CLI 发布 zip SHA-256：`a9b2a983fc6498d9bf8de68653971c3928128c80f13576f2be600445b8c20a22`
-- 在线翻译技能版本：`0.2.2`
-- 技能说明 SHA-256：`387396cc4456f1b1fa6e46eaeaee6aac7c8c4afe0aa6256a290ffdd49a985359`
-- 技能包装脚本 SHA-256：`269a0aae0e35b231a401bcceb9e2d2f3ec8bc5931e47c1561ec50faef7dae90f`
-- 技能发布 zip SHA-256：`e0576f805465971ff94da93973d7d058724c2d8ea0ec94ccd67052c1ebaaba48`
+- 在线 MCP/CLI 发布 zip SHA-256：`478200f102d303b7b148ebfd5f19d5231f9e7fb6024c4c8d1c395392d4e65929`
+- 在线翻译技能版本：`0.3.0`
+- 技能说明 SHA-256：`698c2c7d68df0849410b9de17895217bc8453ded32f396d24042e1f5efc56857`
+- 技能核心定译表 SHA-256：`f044f3957f4114cbbcce80ccaaa0670d58d1709dc85e17f7c037d4d81b6f5748`
+- 技能包装脚本 SHA-256：`63e920ad6129ad12d9e7ed62bd542fd161c8f69ec35049ef4f6742cea4dec68b`
+- 技能发布 zip SHA-256：`1f9e4cbbe88332029e2d4455dd25b0e72473f3475e716352ef9d737ad3bee736`
 - 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
   [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
   reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
@@ -378,8 +381,8 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
 Get-FileHash 'dist\ai_translate_plugin_v1.9.26.zip' -Algorithm SHA256
 Get-FileHash 'dist\stalker-translate-MCP-1.1.11.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-online-MCP-0.2.2.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-skill-0.2.2.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-online-MCP-0.3.0.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-skill-0.3.0.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

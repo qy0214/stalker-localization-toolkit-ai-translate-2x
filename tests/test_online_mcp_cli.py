@@ -140,7 +140,7 @@ class OnlineIntegrationTests(unittest.TestCase):
                         "check_env", "scan_project", "translate_text",
                         "translate_project", "job_status", "job_cancel",
                         "validate_output", "glossary_lookup",
-                        "pending_entries", "apply_batch"])
+                        "plan_translation", "extract_batch", "merge_answers"])
                     self.assertTrue(payload(client.request(
                         "tools/call", {"name": "check_env", "arguments": {}}))["ready"])
                     scan = payload(client.request(

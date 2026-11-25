@@ -52,7 +52,8 @@ def manifest_path(out_dir: Path = DIST) -> Path:
 
 
 def entries() -> dict[str, Path]:
-    result = {name: SKILL / name for name in ("SKILL.md", "manifest.json")}
+    result = {name: SKILL / name for name in
+              ("SKILL.md", "manifest.json", "GLOSSARY-CORE.md")}
     for path in sorted((SKILL / "scripts").rglob("*.py")):
         result["scripts/" + path.relative_to(SKILL / "scripts").as_posix()] = path
     for name in ("server.py", "cli.py", "config.example.json", "pyproject.toml"):
@@ -89,6 +90,7 @@ def build_manifest(out_dir: Path = DIST) -> dict[str, Any]:
         "core": core_version(), "package": target.name,
         "package_size": target.stat().st_size, "package_sha256": sha256(target),
         "skill_sha256": sha256(SKILL / "SKILL.md"),
+        "glossary_sha256": sha256(SKILL / "GLOSSARY-CORE.md"),
         "wrapper_sha256": sha256(SKILL / "scripts/stalker_translate.py"),
         "asset_sha256": {name: sha256(ASSETS / name) for name in ASSET_NAMES},
         "entries": sorted(entries()),

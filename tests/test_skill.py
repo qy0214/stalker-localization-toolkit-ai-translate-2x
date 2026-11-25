@@ -45,26 +45,32 @@ class SkillTests(unittest.TestCase):
             skill_text = (extract / "SKILL.md").read_text(encoding="utf-8")
             self.assertNotIn("Hermes", skill_text)
             self.assertNotIn("C:\\Users", skill_text)
-            # 随包 SKILL.md 必须携带 0.2.0 批量协议与护栏（禁本地小模型代答、不做 API 编排）
+            # 0.3.0 知识技能契约：核心表引用、三命令、熔断、不做 API 编排
             self.assertIn("硬性规则", skill_text)
             self.assertIn("本地小模型", skill_text)
-            self.assertIn("apply-batch", skill_text)
             self.assertIn("不做 API 编排", skill_text)
+            self.assertIn("GLOSSARY-CORE", skill_text)
+            self.assertRegex(skill_text, r"engine_required")
+            gloss = (extract / "GLOSSARY-CORE.md").read_text(encoding="utf-8")
+            self.assertIn("普里皮亚季", gloss)
+            self.assertIn("禁区", gloss)
+            data = json.loads((extract / "manifest.json").read_text(
+                encoding="utf-8"))
+            self.assertEqual(data.get("version"), versions["skill"])
             wrapper = extract / "scripts/stalker_translate.py"
             help_result = subprocess.run(
                 [sys.executable, str(wrapper), "--help"], cwd=str(extract),
                 env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 text=True, encoding="utf-8", timeout=30)
             self.assertEqual(help_result.returncode, 0, help_result.stderr)
-            # 0.2.0 曾漏发：wrapper 白名单必须转发批量协议子命令（0.2.1 回归）
+            # 0.2.0 教训：wrapper 白名单必须转发技能契约命令（0.3.0 三命令）
             wrapper_src = wrapper.read_text(encoding="utf-8")
-            self.assertIn('"pending"', wrapper_src)
-            self.assertIn('"apply-batch"', wrapper_src)
-            wrapper_source_cmd = subprocess.run(
-                [sys.executable, str(wrapper), "--help"], cwd=str(extract),
-                env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                text=True, encoding="utf-8", timeout=30)
-            self.assertIn("pending", wrapper_source_cmd.stdout)
+            for cmd in ('"plan"', '"extract"', '"merge"'):
+                self.assertIn(cmd, wrapper_src,
+                              "wrapper 必须转发 %s" % cmd)
+            self.assertNotIn('"pending"', wrapper_src,
+                             "旧协议命令应已退役")
+            self.assertIn("plan", help_result.stdout)
 
             mod = base / "mod"
             (mod / "text").mkdir(parents=True)

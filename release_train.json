@@ -61,40 +61,40 @@
       ]
     },
     "mcp_online": {
-      "version": "0.2.2",
+      "version": "0.3.0",
       "core": "1.0.1",
       "status": "active",
       "artifacts": [
         {
           "role": "package",
-          "path": "dist/stalker-translate-online-MCP-0.2.2.zip",
-          "size": 997887,
-          "sha256": "a9b2a983fc6498d9bf8de68653971c3928128c80f13576f2be600445b8c20a22"
+          "path": "dist/stalker-translate-online-MCP-0.3.0.zip",
+          "size": 1001516,
+          "sha256": "478200f102d303b7b148ebfd5f19d5231f9e7fb6024c4c8d1c395392d4e65929"
         },
         {
           "role": "manifest",
-          "path": "dist/stalker-translate-online-MCP-0.2.2.manifest.json",
-          "size": 4289,
-          "sha256": "5d989de247c575c1a9055b6835eb1946dc3045c2f786c35b9a682eb42f4abe3d"
+          "path": "dist/stalker-translate-online-MCP-0.3.0.manifest.json",
+          "size": 4334,
+          "sha256": "ea629af3da14b49d41162279b616883c5b98b21697e3280db0dbcb7c00b79fdb"
         }
       ]
     },
     "skill": {
-      "version": "0.2.2",
+      "version": "0.3.0",
       "core": "1.0.1",
       "status": "active",
       "artifacts": [
         {
           "role": "package",
-          "path": "dist/stalker-translate-skill-0.2.2.zip",
-          "size": 1003509,
-          "sha256": "e0576f805465971ff94da93973d7d058724c2d8ea0ec94ccd67052c1ebaaba48"
+          "path": "dist/stalker-translate-skill-0.3.0.zip",
+          "size": 1014654,
+          "sha256": "1f9e4cbbe88332029e2d4455dd25b0e72473f3475e716352ef9d737ad3bee736"
         },
         {
           "role": "manifest",
-          "path": "dist/stalker-translate-skill-0.2.2.manifest.json",
-          "size": 2927,
-          "sha256": "9c381b6dcad863312a98f607550947f98ee3b79974a24e740c491a209f4bb449"
+          "path": "dist/stalker-translate-skill-0.3.0.manifest.json",
+          "size": 3092,
+          "sha256": "06a48c21d814fab47d12e1ff51d34d5ffd4075dd124c3e5566aec08f9f0ac78f"
         }
       ]
     }
@@ -106,8 +106,8 @@
       "plugin_2x": "2.0.29",
       "plugin_1_9x": "1.9.26",
       "mcp_hermes": "1.1.11",
-      "mcp_online": "0.2.2",
-      "skill": "0.2.2",
+      "mcp_online": "0.3.0",
+      "skill": "0.3.0",
       "core": "1.0.1"
     },
     "python": {

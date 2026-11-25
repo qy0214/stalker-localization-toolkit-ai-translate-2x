@@ -1,89 +1,100 @@
 ---
 name: stalker-translate
-version: 0.2.2
-description: "翻译 STALKER / X-Ray MOD 或单段游戏文本。共享 2.x 同款筛选器/闸门/回写链，模型只处理筛后残余条目，节省平台对话额度。收集→作答→交回→填充四步协议。"
+version: 0.3.0
+description: "翻译 STALKER / X-Ray MOD 或游戏文本。技能=宇宙正字法+操作手册：术语核心表(GLOSSARY-CORE)统一专名，stats/extract/merge 三个薄命令负责本地扫描、直取回填、闸门与写回 XML；对话 AI 只专注逐句写译文。"
 license: GPL-3.0
 ---
 
-# STALKER 翻译技能（对话 AI 批量协议）
+# STALKER MOD 翻译技能（知识 + 三个薄命令）
 
-## 何时使用
+## 心智模型（先读这段）
 
-- 用户给出 STALKER / X-Ray MOD 目录，要求汉化或翻译。
-- 用户贴来一段游戏文本，要求译成中文或其他目标语言。
-- 普通文本不要使用本技能。
+翻译一件 MOD = 三类文本：**能定的**（词库整句直取、术语、噪声）已经在本地处理完，
+**要译的**（人类语言的句子）才轮到你。所有文件读写、编码、占位符、格式都由
+本地脚本负责——**你永远不要手工编辑 XML/脚本文件，也不要把整张词库读进对话**。
 
-## 运行原理
-
-程序侧先做确定性处理，**你（平台对话 AI）只处理真正需要的条目**——这就是省积分/省词元的来源：
-
-- **筛选器**：标识符、调试行、标题形态、制作名单等整条跳过；玩家可见 id 后缀豁免。
-- **直取**：24455 条分层词库整串命中直接落盘（零 token）；技术精确表/句式模板同样前置。
-- **掩码**：`%c[...]`、`$var`、`$$Rn$$` 等运行期令牌送翻时已掩码，答案必须逐字保留令牌。
-- **闸门与回写**：占位符/换行/数字/粘连残词逐项校验；能程序修的绝不回炉——你只需答一遍。
-- **账本**：断点续跑，已完成的文件不再处理；重复调用近零成本。
-
-调用方式（二选一，不要同时启动两套）：
-
-1. 平台支持 MCP 时：连接 `stalker-translate-online`，用 `pending_entries` / `apply_batch` / `job_status` 工具。
-2. 否则用本技能脚本：
-
-```text
-python scripts/stalker_translate.py --config <配置文件> <命令> ...
+```
+plan(报价) → 模式判定 → [extract → 你写译文 → merge] 循环 → validate
 ```
 
-脚本自动查找 `STALKER_TRANSLATE_ONLINE_CLI`、已安装 CLI、技能内置 `runtime/cli.py` 与源码树 CLI。
+## 标准流程
 
-## 标准流程（整目录翻译四步）
-
-1. **收集**：`pending <MOD目录>`
-   —— 能直取/能筛的条目当场落盘；剩余需要模型的条目以编号清单输出
-   （`n`/`key`/`kind`/`sources`/`hint` 术语提示）。
-2. **作答**：把清单分批交给对话 AI（**每批 ≤40 个唯一源文**，总批次数按用户预算），
-   每行 `- {"key": "...", "translation": "..."}` 或 `序号<TAB>译文`。
-   源文里的 `$$R0$$` 类掩码令牌必须原样出现在译文对应位置。
-   同一源文可能出现多个编号（不同场景的提示键）——**按唯一源文作答一次即可**，
-   程序会自动把答案折叠应用到该源文的所有键。
-3. **交回**：`apply-batch <答案文件>`（支持 `--stdin` 与 `第N行<TAB>译文` 宽容格式）。
-   回显源文、丢失令牌的答案会被拒收并留在 pending。
-4. **填充**：再跑一次第 1 步命令——已作答条目从批次存储取回落盘（零请求），
-   未答条目继续 pending。**循环直到 `pending_total=0`**，然后：
+技能脚本定位顺序：环境变量 `STALKER_TRANSLATE_SKILL_DIR` → 已安装 CLI →
+技能内置 `runtime/cli.py`。命令形态（`--config` 用用户配置，缓存/批次文件都在
+cache 目录，全程幂等可断）：
 
 ```text
-validate <MOD目录> <输出目录>
+python scripts/stalker_translate.py --config <配置> plan    <MOD目录>
+python scripts/stalker_translate.py --config <配置> extract <MOD目录> [--chunk 200 --part 1]
+python scripts/stalker_translate.py --config <配置> merge   <MOD目录> <答案.tsv>
+python scripts/stalker_translate.py --config <配置> validate <MOD目录> <输出目录>
 ```
 
-只有 `ok=true` 才能报告翻译完成。
+### 第 0 步：读 `GLOSSARY-CORE.md`（本目录，约 650 条 → 一次读完）
+
+这是 STALKER 宇宙的正字法：地名、阵营、怪物、实验室、高频硬词的唯一写法。
+**你的译文里凡出现表中词条及其变体，一律改用定译。** 库里没有的专名，merge
+的术语回填闸门会按整库兜底——写错也不会漏网，但尽量遵守以省返工。
+
+### 第 1 步：plan（必做，不许跳过）
+
+输出 `mode` 三选一：
+
+- `dialog`：unique ≤ 3000 句 → 继续下面的循环；
+- `engine_recommended`：3000 < unique ≤ 20000 → **停下报告用户**，建议改用
+  「通用在线 MCP/CLI」独立包配 API 或本地引擎跑主体（`translate_project`），
+  得到同意前最多先做第一批示范；
+- `engine_required`：unique > 20000 → **禁止**按对话逐句硬翻（积分会到万级）。
+  把报价交还给用户决策，本技能只负责之后的收尾精修。
+
+### 第 2 步：extract 领批次
+
+只回一个 `batch_file` 路径。用文件工具读它（每行：`sid<TAB>源文<TAB>术语提示`；
+`sid#i` 表示成组对话第 i 行，`%s` `$$Rn$$` `$player` `<br>` 等令牌是
+**占位符，必须逐字出现在译文**，`\n` 是换行占位，保持原样）。
+
+### 第 3 步：写答案 TSV
+
+新建文件，每行 `sid<TAB>译文`（组句 `sid#i<TAB>第i行译文`）。纪律：
+
+- 一次一批（默认 200 行）；术语提示列优先采用；
+- 译文简洁口语化，阵营/地名/怪物名以 GLOSSARY-CORE 为准；
+- **不要**在对话里复述源文或译文清单；写完直接进 merge。
+
+### 第 4 步：merge 交回
+
+自动完成：闸门校验（占位符/换行/数字/粘连）→ 术语回填 → 写回镜像目录。
+返回 `unique_remaining`；>0 就回第 2 步领下一批（已处理的自动消失，重复运行
+零成本），直到 0 再 `validate`，`ok=true` 才能报告完成。
 
 ### 单段文本
 
-先 `glossary "<文本>"` 查整串直取；未命中时由对话 AI 直接翻译，保留占位符/换行；
-可用 `retained_source` / 术语回填自查。不要把整份 MOD 塞进此类查询。
+直接翻译：术语命中先用 `glossary <词>` 查询（零成本）；无需 plan/extract。
 
 ## 硬性规则
 
-- **答案只能来自你所在平台的对话 AI**。禁止把批量清单交给本地小模型端点
-  （llama.cpp/ollama 跑 1~8B）代答——那等于绕过程序闸门产未经补偿的低质量译文。
-- 不要启动、下载、切换或**替用户配置**任何模型 API；本技能不做 API 编排。
-  用户若持有 OpenAI 兼容 API 想全自动翻译，指引其安装「通用在线 MCP/CLI」
-  独立包（`translate_project` 直连模式），技能流程内不代配。
-- 每批作答前先回显本批条目数与预计总请求轮次；超出用户预算上限时停下来询问。
-- 不要把整份 MOD 上传进对话；不要要求用户提供全部文件——脚本自行扫描。
-- 不要猜测路径，不要绕过 `allowed_roots`；输出目录不得等于输入目录或成为其祖先。
-- 不要把密钥、正文或完整译文写入日志与回复；日志只保留元数据。
-- 只有 `succeeded`/`pending_total=0 且 validate ok` 表示通过；
-  `needs_review`、`failed`、`cancelled` 都必须明确报告。
+- 答案只能来自当前平台的对话 AI。**禁止**把句子转交本地小模型端点
+  （llama.cpp/ollama 1~8B）代答——那是绕过闸门的低质量流水线。
+- 本技能**不做 API 编排**：用户要自动化批量，转介「通用在线 MCP/CLI」
+  独立包（translate_project 连 OpenAI 兼容端点或本地引擎），不在技能内配置密钥。
+- 永不修改输入目录原文件；产出一律在 `<输出目录>`（默认 MOD 旁
+  `translated_online_mcp/`，plan 会告知）。
+- sid 由脚本生成，**不要自造或改写 sid**；答案文件里出现未知 sid 会被忽略并计数。
+- 每一轮 merge 后只报告数字（批次/剩余/拒收），不粘贴译文清单。
+- 超出用户声明预算、或 plan 给出非 dialog 模式仍被要求继续时，先停下确认。
+- 只有 `validate ok=true` 才能报告完成。
 
-## 完成汇报
-
-只返回紧凑摘要：
+## 完成汇报（紧凑）
 
 ```text
-状态：succeeded / needs_review / failed / cancelled
+状态：succeeded / needs_review / engine_required / …
 输出目录：<path>
-文件/条目：<counts>
-请求轮次/积分估算：rounds / credit_note（收集与填充遍应为 0 次 API 请求）
-待复核问题：<issue codes>
+句数：直取+译出 / 剩余 / 拒收待复核
+积分账：本会话实际对话轮次（不申报平台单价，由用户对照）
 ```
 
-不要把整份译文回灌到对话上下文。
+## 命令与工具的边界备忘
+
+- `extract` 批次文件命名 `<cache>/kit/batch_NNN.tsv`；
+- 同句在多个场景（提示/上下文差异）已由脚本折叠：一句只出现一次；
+- merge 的填充遍会重新跑一遍判定链（直取/缓存/账本生效），这是幂等的。

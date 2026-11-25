@@ -72,9 +72,9 @@ ONLINE_TOOL_DEFINITIONS = [
         },
     },
     {
-        "name": "pending_entries",
-        "description": ("对话 AI 批量协议第一遍：跑共享全链收集筛选与直取后仍需模型的"
-                        "条目（零 API 费用），返回编号条目与术语提示；可翻译部分照常落盘。"),
+        "name": "plan_translation",
+        "description": ("对话技能第一步：本地全链收集（直取/筛选当场落盘）"
+                        "并给出规模报价与模式判定（dialog/engine）。"),
         "inputSchema": {
             "type": "object",
             "properties": {
@@ -87,25 +87,33 @@ ONLINE_TOOL_DEFINITIONS = [
         },
     },
     {
-        "name": "apply_batch",
-        "description": ("对话 AI 批量协议第二输入：把批量答案按键或按 n 序号交回；随后 "
-                        "translate_project 复用答案零请求补全。"),
+        "name": "extract_batch",
+        "description": ("领取一批待答句子：写入紧凑 TSV 文件（sid+源文+提示），"
+                        "只返回文件路径与进度摘要，不倾倒清单。幂等断点：已作答"
+                        "与已直取的句子自动缺席。每批默认 200 句。"),
         "inputSchema": {
             "type": "object",
             "properties": {
-                "answers": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "n": {"type": "integer"},
-                            "key": {"type": "string"},
-                            "translation": {"type": "string"},
-                        },
-                    },
-                },
+                "input_dir": {"type": "string"},
+                "chunk": {"type": "integer", "minimum": 1, "maximum": 1000},
+                "part": {"type": "integer", "minimum": 1},
+                "output_dir": {"type": "string"},
             },
-            "required": ["answers"],
+            "required": ["input_dir"],
+        },
+    },
+    {
+        "name": "merge_answers",
+        "description": ("交回作答 TSV（sid<TAB>译文）：闸门校验+术语回填后"
+                        "填充落盘，返回剩余规模。被拒句子保留在下一批。"),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "input_dir": {"type": "string"},
+                "answers_file": {"type": "string", "description": "答案 TSV 路径"},
+                "output_dir": {"type": "string"},
+            },
+            "required": ["input_dir", "answers_file"],
         },
     },
 ]

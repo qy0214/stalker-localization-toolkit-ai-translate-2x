@@ -59,11 +59,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--concurrency", type=int)
     p = sub.add_parser("validate"); p.add_argument("input_dir"); p.add_argument("output_dir")
     p = sub.add_parser("glossary"); p.add_argument("query"); p.add_argument("--limit", type=int, default=20)
-    p = sub.add_parser("pending"); p.add_argument("input_dir")
-    p.add_argument("--output-dir"); p.add_argument("--source-lang", default="auto")
-    p.add_argument("--target-lang", default="chs")
-    p = sub.add_parser("apply-batch"); p.add_argument("answers_file")
-    p.add_argument("--stdin", action="store_true")
+    p = sub.add_parser("plan"); p.add_argument("input_dir"); p.add_argument("--output-dir")
+    p = sub.add_parser("extract"); p.add_argument("input_dir")
+    p.add_argument("--chunk", type=int, default=200); p.add_argument("--part", type=int, default=1)
+    p.add_argument("--output-dir")
+    p = sub.add_parser("merge"); p.add_argument("input_dir"); p.add_argument("answers_file")
+    p.add_argument("--output-dir")
     args = parser.parse_args(argv)
 
     command: list[str] | None = None
@@ -108,16 +109,15 @@ def main(argv: list[str] | None = None) -> int:
             forwarded.extend(["--context", args.context])
     elif args.command == "glossary":
         forwarded.extend([args.query, "--limit", str(args.limit)])
-    elif args.command == "pending":
+    elif args.command in ("plan", "extract", "merge"):
         forwarded.append(args.input_dir)
+        if args.command == "merge":
+            forwarded.append(args.answers_file)
+        if args.command == "extract":
+            forwarded.extend(["--chunk", str(args.chunk),
+                              "--part", str(args.part)])
         if args.output_dir:
             forwarded.extend(["--output-dir", args.output_dir])
-        forwarded.extend(["--source-lang", args.source_lang,
-                          "--target-lang", args.target_lang])
-    elif args.command == "apply-batch":
-        forwarded.append(args.answers_file)
-        if args.stdin:
-            forwarded.append("--stdin")
 
     prefix = list(command)
     if args.config:

@@ -34,7 +34,7 @@ def check_env(cfg: Config, provider: OpenAICompatibleProvider,
     bundle = AssetBundle.load(asset_root)
     result = {
         "ready": bool(cfg.model and endpoint.get("ok")),
-        "server": {"name": "stalker-translate-online", "version": "0.2.2"},
+        "server": {"name": "stalker-translate-online", "version": "0.3.0"},
         "core": "1.0.1",
         "provider": provider.name,
         "pipeline_mode": "shared_core_full_chain",
