@@ -27,8 +27,10 @@ python tools/release.py --tag --dry-run   # 查看本地 tag 命令
 python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 ```
 
-脚本不会自动推送或创建 GitHub Release。旧 1.9.x 与 MCP 仓库在主列车发布后归档，
-只保留历史和跳转说明；归档前确认 tag、五个分享包、SHA-256 与注册表条目均已发布。
+脚本不会自动推送或创建 GitHub Release。旧 1.9.x 与 MCP 仓库（`stalker-localization-toolkit-ai-translate`、
+`stalker-translate-mcp`）**已归档**并在各自 README 顶部引导至本单仓库；首个发布列车
+[`suite-v2026.11.25`](https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/tag/suite-v2026.11.25)
+已包含五个分享包、SHA-256 与发布说明。
 
 ## 2.x 插件迭代
 
