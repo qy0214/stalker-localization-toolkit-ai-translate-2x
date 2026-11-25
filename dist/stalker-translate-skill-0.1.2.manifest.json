@@ -1,12 +1,12 @@
 {
   "product": "skill",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "runtime": "mcp_online",
-  "core": "1.0.0",
-  "package": "stalker-translate-skill-0.1.1.zip",
-  "package_size": 991526,
-  "package_sha256": "dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180",
-  "skill_sha256": "ed6ac78a22c0b82cb9b7083f2f640ed4dab4f8c08f02dc09631a1760fa676d40",
+  "core": "1.0.1",
+  "package": "stalker-translate-skill-0.1.2.zip",
+  "package_size": 992056,
+  "package_sha256": "9493c4b6b3c2d1ea26d2e343f2702bbfc96e24d0bcad66ce95df4e93d84f330c",
+  "skill_sha256": "af0ae41445c10d9eec683b10036a52de1288e6dc89ae23e748dd0f324575914a",
   "wrapper_sha256": "269a0aae0e35b231a401bcceb9e2d2f3ec8bc5931e47c1561ec50faef7dae90f",
   "asset_sha256": {
     "stalker_termbase.json": "6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722",

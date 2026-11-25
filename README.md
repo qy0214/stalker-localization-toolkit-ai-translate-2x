@@ -13,7 +13,7 @@ Hermes MCP、通用在线 MCP/CLI、通用翻译技能。核心与资产只保�
 | 1.9.x 兼容离线插件 | 1.9.26 | active |
 | Hermes MCP | 1.1.11 | active（共享 core，完整离线作业） |
 | 通用在线 MCP / CLI | 0.1.1 | active（OpenAI 兼容、stdio） |
-| 通用翻译技能 | 0.1.1 | active（跨平台脚本 + 内置运行时） |
+| 通用翻译技能 | 0.1.2 | active（跨平台脚本 + 内置运行时） |
 
 ## 统一发布列车
 
@@ -94,6 +94,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **0.1.2**（技能热修） | 重打包随包 SKILL.md：补入「硬性规则」护栏（Provider 必须强在线模型、禁本地小模型端点、无配置必须询问用户、质量预期与 2.x 插件边界声明）；清单 core 字段改从 versions.json 读取；护栏随包内容有回归断言。 |
 | **0.1.1**（2026.11.25 列车） | 纳入五合一单仓库，同步 core 1.0.1 与统一发布列车（tag suite-v2026.11.25）。 |
 | **0.1.0** | 首个通用技能包：平台中立工作流、MCP 优先/CLI 回退、跨平台包装脚本、内置运行时与独立分享包。 |
 
@@ -268,7 +269,7 @@ python cli.py --config config.json translate "D:\mods\你的MOD"
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-skill-0.1.1.zip`。
+1. 解压 `dist/stalker-translate-skill-0.1.2.zip`。
 2. 将整个目录放入所用平台的技能目录（不同平台路径不同）。
 3. 编辑包内 `runtime/config.example.json` 并保存为 `runtime/config.json`，配置 Provider、模型、`allowed_roots` 和密钥环境变量。
 4. 直接使用技能，或运行：
@@ -311,8 +312,8 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 | `products/` | 1.9.x、Hermes MCP、通用在线 MCP 的产品入口与 manifest |
 | `skills/stalker-translate/` | 通用技能入口与 manifest |
 | `versions.json` / `compatibility.json` | 产品版本与兼容矩阵 |
-| `dist/stalker-translate-skill-0.1.1.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
-| `dist/stalker-translate-skill-0.1.1.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
+| `dist/stalker-translate-skill-0.1.2.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
+| `dist/stalker-translate-skill-0.1.2.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
 | `dist/stalker-translate-online-MCP-0.1.1.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio） |
 | `dist/stalker-translate-online-MCP-0.1.1.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
 | `dist/stalker-translate-MCP-1.1.11.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
@@ -344,24 +345,24 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 
 ## 版本与校验
 
-- 2.x 插件版本：`ai_translate 2.0.28`　宿主插件 API：`1`
+- 2.x 插件版本：`ai_translate 2.0.29`　宿主插件 API：`1`
 - 2.x 入口 SHA-256：`1582cb62d9f8f3c6307cd005ba2034c27f9675187065b54795c2a0f9293db990`
 - 2.x 发布 zip SHA-256：`7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27`
 - 2.x 平台安装包 SHA-256：`c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92`
-- 1.9.x 插件版本：`ai_translate 1.9.25`
+- 1.9.x 插件版本：`ai_translate 1.9.26`
 - 1.9.x 入口 SHA-256：`2dd7226137259fca71761d801a3dd9f39ac9394b304a234c870fd19348b436be`
 - 1.9.x 发布 zip SHA-256：`bf6759672717439c55e457d29e27b7c19633dc048597e69357a0b972338bbfaf`
-- Hermes MCP 版本：`1.1.10`
+- Hermes MCP 版本：`1.1.11`
 - Hermes MCP server SHA-256：`46dd6ab6a7b3653dd139f7e2fac41644bd97749effde2a954c69a0cf242dbceb`
 - Hermes MCP 发布 zip SHA-256：`38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e`
-- 通用在线 MCP 版本：`0.1.0`
+- 通用在线 MCP 版本：`0.1.1`
 - 在线 MCP server SHA-256：`7231f74c7ce8db8ba2716f2b47d4de4e2507f3c5f0f29e7227c367c8d2ee3756`
 - 在线 CLI SHA-256：`b5d47a4b8f872a3faee2c65f7636ed4e6e92736bb61806e24f586e7768687f66`
 - 在线 MCP/CLI 发布 zip SHA-256：`020dcd2f1529df6c65cd56fedb4a048af55c867cbcd05aa08e1737d7f0a4d41d`
-- 在线翻译技能版本：`0.1.0`
-- 技能说明 SHA-256：`ed6ac78a22c0b82cb9b7083f2f640ed4dab4f8c08f02dc09631a1760fa676d40`
+- 在线翻译技能版本：`0.1.2`
+- 技能说明 SHA-256：`af0ae41445c10d9eec683b10036a52de1288e6dc89ae23e748dd0f324575914a`
 - 技能包装脚本 SHA-256：`269a0aae0e35b231a401bcceb9e2d2f3ec8bc5931e47c1561ec50faef7dae90f`
-- 技能发布 zip SHA-256：`dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180`
+- 技能发布 zip SHA-256：`9493c4b6b3c2d1ea26d2e343f2702bbfc96e24d0bcad66ce95df4e93d84f330c`
 - 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
   [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
   reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
@@ -376,7 +377,7 @@ Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
 Get-FileHash 'dist\ai_translate_plugin_v1.9.26.zip' -Algorithm SHA256
 Get-FileHash 'dist\stalker-translate-MCP-1.1.11.zip' -Algorithm SHA256
 Get-FileHash 'dist\stalker-translate-online-MCP-0.1.1.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-skill-0.1.1.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-skill-0.1.2.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

@@ -38,6 +38,11 @@ def version() -> str:
         encoding="utf-8"))["skill"])
 
 
+def core_version() -> str:
+    return str(json.loads((ROOT / "versions.json").read_text(
+        encoding="utf-8"))["core"])
+
+
 def zip_path(out_dir: Path = DIST) -> Path:
     return out_dir / ("stalker-translate-skill-%s.zip" % version())
 
@@ -81,7 +86,7 @@ def build_manifest(out_dir: Path = DIST) -> dict[str, Any]:
     target = build_zip(out_dir)
     data = {
         "product": "skill", "version": version(), "runtime": "mcp_online",
-        "core": "1.0.0", "package": target.name,
+        "core": core_version(), "package": target.name,
         "package_size": target.stat().st_size, "package_sha256": sha256(target),
         "skill_sha256": sha256(SKILL / "SKILL.md"),
         "wrapper_sha256": sha256(SKILL / "scripts/stalker_translate.py"),

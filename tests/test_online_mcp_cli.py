@@ -90,7 +90,8 @@ class OnlineIntegrationTests(unittest.TestCase):
                 [sys.executable, str(BUILD), "--build", "--out-dir", str(dist)],
                 cwd=str(ROOT), env=env, check=True,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            package = dist / "stalker-translate-online-MCP-0.1.1.zip"
+            versions = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
+            package = dist / ("stalker-translate-online-MCP-%s.zip" % versions["mcp_online"])
             self.assertTrue(package.is_file())
             extract = base / "package"
             with zipfile.ZipFile(package) as archive:

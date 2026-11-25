@@ -29,7 +29,8 @@ class SkillTests(unittest.TestCase):
                 [sys.executable, str(BUILD), "--build", "--out-dir", str(dist)],
                 cwd=str(ROOT), env=env, check=True,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            package = dist / "stalker-translate-skill-0.1.1.zip"
+            versions = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
+            package = dist / ("stalker-translate-skill-%s.zip" % versions["skill"])
             self.assertTrue(package.is_file())
             extract = base / "skill"
             with zipfile.ZipFile(package) as archive:
@@ -44,6 +45,10 @@ class SkillTests(unittest.TestCase):
             skill_text = (extract / "SKILL.md").read_text(encoding="utf-8")
             self.assertNotIn("Hermes", skill_text)
             self.assertNotIn("C:\\Users", skill_text)
+            # 随包 SKILL.md 必须携带护栏修复（f5b4d82）：禁本地小模型端点、无 Provider 必须询问
+            self.assertIn("硬性规则", skill_text)
+            self.assertIn("本地小模型", skill_text)
+            self.assertIn("必须停下来向用户索取", skill_text)
             wrapper = extract / "scripts/stalker_translate.py"
             help_result = subprocess.run(
                 [sys.executable, str(wrapper), "--help"], cwd=str(extract),

@@ -1,32 +1,19 @@
 {
-  "generated_at": "2026-11-25T20:03:17+08:00",
+  "generated_at": "2026-11-25T21:37:51+08:00",
   "workspace": ".",
   "scope": "AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x",
   "git": {
     "branch": "monorepo-migration",
-    "commit": "142cd1c",
+    "commit": "f5b4d82",
     "dirty": true,
     "dirty_files": [
-      "M CHANGELOG.md",
-      " M compatibility.json",
-      " M core/pyproject.toml",
-      " M core/stalker_translate_core/__init__.py",
-      " D dist/ai_translate_plugin_v1.9.25.manifest.json",
-      " D dist/ai_translate_plugin_v1.9.25.zip",
-      " D dist/ai_translate_plugin_v1.9.25.zip.sha256",
-      " D dist/ai_translate_plugin_v2.0.28.zip",
-      " D dist/ai_translate_plugin_v2.0.28.zip.sha256",
-      " D dist/ai_translate_plugin_v2.0.28_install.zip",
-      " D dist/ai_translate_plugin_v2.0.28_install.zip.sha256",
-      " D dist/stalker-translate-MCP-1.1.10.manifest.json",
-      " D dist/stalker-translate-MCP-1.1.10.zip",
-      " D dist/stalker-translate-MCP-1.1.10.zip.sha256",
-      " D dist/stalker-translate-online-MCP-0.1.0.manifest.json",
-      " D dist/stalker-translate-online-MCP-0.1.0.zip",
-      " D dist/stalker-translate-online-MCP-0.1.0.zip.sha256",
-      " D dist/stalker-translate-skill-0.1.0.manifest.json",
-      " D dist/stalker-translate-skill-0.1.0.zip",
-      " D dist/stalker-translate-skill-0.1.0.zip.sha256"
+      "M compatibility.json",
+      " M skills/stalker-translate/SKILL.md",
+      " M skills/stalker-translate/manifest.json",
+      " M tests/test_online_mcp_cli.py",
+      " M tests/test_skill.py",
+      " M tools/gen_release_manifest_skill.py",
+      " M versions.json"
     ]
   },
   "versions": {
@@ -318,7 +305,7 @@
     "termbase_meta_total": 24455
   },
   "tracked": {
-    "files": 1484,
-    "bytes": 58557595
+    "files": 1500,
+    "bytes": 75767139
   }
 }

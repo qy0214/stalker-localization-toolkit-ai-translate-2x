@@ -1,12 +1,12 @@
 {
   "id": "stalker-translate",
   "name": "STALKER Translate Skill",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "status": "active",
   "entry": "skills/stalker-translate/SKILL.md",
   "legacy_reference": "skills/stalker-translate/SKILL.legacy.md",
   "runtime": "mcp_online",
   "core": "1.0.1",
-  "package": "dist/stalker-translate-skill-0.1.1.zip",
-  "release_manifest": "dist/stalker-translate-skill-0.1.1.manifest.json"
+  "package": "dist/stalker-translate-skill-0.1.2.zip",
+  "release_manifest": "dist/stalker-translate-skill-0.1.2.manifest.json"
 }

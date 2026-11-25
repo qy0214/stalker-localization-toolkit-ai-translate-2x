@@ -80,21 +80,21 @@
       ]
     },
     "skill": {
-      "version": "0.1.1",
+      "version": "0.1.2",
       "core": "1.0.1",
       "status": "active",
       "artifacts": [
         {
           "role": "package",
-          "path": "dist/stalker-translate-skill-0.1.1.zip",
-          "size": 991526,
-          "sha256": "dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180"
+          "path": "dist/stalker-translate-skill-0.1.2.zip",
+          "size": 992056,
+          "sha256": "9493c4b6b3c2d1ea26d2e343f2702bbfc96e24d0bcad66ce95df4e93d84f330c"
         },
         {
           "role": "manifest",
-          "path": "dist/stalker-translate-skill-0.1.1.manifest.json",
+          "path": "dist/stalker-translate-skill-0.1.2.manifest.json",
           "size": 2823,
-          "sha256": "aaa0b6e1ee05e2acf41a832908561ca0bb71f19a507834aa980f9f2415019891"
+          "sha256": "0bd2ce7892970bbe6a55cc420d833ce890fe4427e782edc8237f3e0446be31ce"
         }
       ]
     }
@@ -107,7 +107,7 @@
       "plugin_1_9x": "1.9.26",
       "mcp_hermes": "1.1.11",
       "mcp_online": "0.1.1",
-      "skill": "0.1.1",
+      "skill": "0.1.2",
       "core": "1.0.1"
     },
     "python": {

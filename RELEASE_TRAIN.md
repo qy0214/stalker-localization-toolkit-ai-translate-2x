@@ -16,8 +16,8 @@
 | mcp_hermes | 1.1.11 | `dist/stalker-translate-MCP-1.1.11.manifest.json` | 4806 | `41e7819a59dc75c509bf40fb5a3075a68c81b98d953205a93330ae9df816a051` |
 | mcp_online | 0.1.1 | `dist/stalker-translate-online-MCP-0.1.1.zip` | 986975 | `020dcd2f1529df6c65cd56fedb4a048af55c867cbcd05aa08e1737d7f0a4d41d` |
 | mcp_online | 0.1.1 | `dist/stalker-translate-online-MCP-0.1.1.manifest.json` | 4202 | `a4e22e18acc774c3fcaaaf7cc374356e47732a88d7a7b87fe007d808b6d09a3a` |
-| skill | 0.1.1 | `dist/stalker-translate-skill-0.1.1.zip` | 991526 | `dbbe5258cbfce787529ae17e973ce607b6b870753a2d070f70e5a9b8017ba180` |
-| skill | 0.1.1 | `dist/stalker-translate-skill-0.1.1.manifest.json` | 2823 | `aaa0b6e1ee05e2acf41a832908561ca0bb71f19a507834aa980f9f2415019891` |
+| skill | 0.1.2 | `dist/stalker-translate-skill-0.1.2.zip` | 992056 | `9493c4b6b3c2d1ea26d2e343f2702bbfc96e24d0bcad66ce95df4e93d84f330c` |
+| skill | 0.1.2 | `dist/stalker-translate-skill-0.1.2.manifest.json` | 2823 | `0bd2ce7892970bbe6a55cc420d833ce890fe4427e782edc8237f3e0446be31ce` |
 
 ## 兼容矩阵
 
@@ -28,7 +28,7 @@
 | plugin_1_9x | 1.9.26 |
 | mcp_hermes | 1.1.11 |
 | mcp_online | 0.1.1 |
-| skill | 0.1.1 |
+| skill | 0.1.2 |
 | core | 1.0.1 |
 | Python core | >=3.11 |
 | Python plugin_2x | host-managed |
