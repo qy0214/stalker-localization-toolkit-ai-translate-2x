@@ -1,0 +1,42 @@
+{
+  "_format": "termbase-compaction/1",
+  "before": 24455,
+  "after": 21581,
+  "net_deleted": 2874,
+  "scanned_entries": 316736,
+  "scanned_mods": 17,
+  "deleted_by_layer": {
+    "reference": 1873,
+    "names": 842,
+    "canon": 167
+  },
+  "deleted_by_decision": {
+    "candidate_unused_long": 2,
+    "candidate_unused_soft": 2713,
+    "candidate_unused_core_long": 167
+  },
+  "restored_after_regression": [
+    "\"Monolith\" Chief",
+    "Anomalous stabilizer",
+    "activated bombmaker's briefcase",
+    "anomlaous stabilizer",
+    "giant's younger brother",
+    "great-grandma's beads",
+    "insane stalker's flash drive",
+    "the prisoner's flash drive"
+  ],
+  "layer_corrections": [
+    "Circus",
+    "Volcano"
+  ],
+  "backups": [
+    "TERMBASE_COMPACT_BACKUP_20261126_231752.json",
+    "GLOSSARY_BUILTIN_COMPACT_BACKUP_20261126_231752.json"
+  ],
+  "final_layers": {
+    "canon": 4169,
+    "names": 4341,
+    "reference": 13053,
+    "technical": 18
+  }
+}

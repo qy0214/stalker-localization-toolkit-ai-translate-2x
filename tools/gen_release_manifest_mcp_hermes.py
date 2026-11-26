@@ -30,6 +30,7 @@ STATIC_FILES = (
     "install-plugin.ps1",
     "README-MCP.md",
     "server.py",
+    "jobs.py",
 )
 
 
@@ -44,6 +45,11 @@ def sha256(path: Path) -> str:
 def version() -> str:
     data = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
     return str(data["mcp_hermes"])
+
+
+def core_version() -> str:
+    data = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
+    return str(data["core"])
 
 
 def zip_path(out_dir: Path = DIST) -> Path:
@@ -63,6 +69,7 @@ def default_config_bytes() -> bytes:
         "parallel": 1,
         "open_progress_page": True,
         "timeout_sec": 300,
+        "max_retries": 4,
         "prompt_extra": "",
         "official_prompts": False,
         "source_lang": "auto",
@@ -114,7 +121,7 @@ def build_manifest(out_dir: Path = DIST) -> dict[str, Any]:
     data = {
         "product": "mcp_hermes",
         "version": version(),
-        "core": "1.0.0",
+        "core": core_version(),
         "package": target.name,
         "package_size": target.stat().st_size,
         "package_sha256": sha256(target),
@@ -167,6 +174,8 @@ def check(out_dir: Path = DIST) -> int:
     data = json.loads(manifest.read_text(encoding="utf-8"))
     if data.get("version") != version():
         errors.append("清单版本与 versions.json 不一致")
+    if data.get("core") != core_version():
+        errors.append("清单 core 版本与 versions.json 不一致")
     if data.get("package_sha256") != sha256(target):
         errors.append("清单包哈希与 zip 不一致")
     if data.get("server_sha256") != sha256(PRODUCT / "server.py"):

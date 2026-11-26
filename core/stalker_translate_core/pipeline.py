@@ -320,6 +320,11 @@ def patch_missing_numbers(src, out, skip=()):
     missed = missing_big_numbers(src, out)
     if not missed:
         return out
+    repaired = repair_number_values(src, out)
+    if not missing_big_numbers(src, repaired):
+        return repaired
+    out = repaired
+    missed = missing_big_numbers(src, out)
     if skip:
         _sk = [str(t) for t in skip]
         missed = [n for n in missed
@@ -576,7 +581,7 @@ def semantic_role_issues(source, output, lang=""):
         r"(?<![a-zа-яё])(?:i|me|my|mine|we|us|our|я|мне|меня|мой|мы|нам|нас)"
         r"(?![a-zа-яё])", low))
     src_second = bool(re.search(
-        r"(?<![a-zа-яё])(?:you|your|yours|ты|тебе|тебя|твой|вы|вам|вас)"
+        r"(?<![a-zа-яё])(?:you|your|yours|yourself|yourselves|ты|тебе|тебя|твой|вы|вам|вас|себя)"
         r"(?![a-zа-яё])", low))
     dst_first = bool(re.search(r"我|我们|咱", dst))
     dst_second = bool(re.search(r"你|你们|您", dst))
@@ -1217,7 +1222,7 @@ def reconcile_literal_newlines(src, out):
     return out2, out2 != out
 
 
-_MODEL_TOKEN_RE = re.compile(r"[A-Za-z]{2,}-?\d{2,4}[A-Za-z]?")
+_MODEL_TOKEN_RE = re.compile(r"[A-Za-z]{1,}[A-Za-z0-9]*-?\d{2,4}[A-Za-z]?")
 
 
 _YEAR_RANGE_RE = re.compile(r"\b(\d{4})\s*[-‐‑‒–—]\s*(\d{4})\b")
@@ -1264,6 +1269,59 @@ def missing_model_tokens(src, out):
         if tok not in out:
             missing.append(tok)
     return missing
+
+
+def repair_model_tokens(src, out):
+    """源型号被换成其它型号时，用源型号原位替换错误候选。"""
+    missing = missing_model_tokens(src, out)
+    if not missing:
+        return out
+    source_models = set(_MODEL_TOKEN_RE.findall(str(src)))
+    candidates = [token for token in _MODEL_TOKEN_RE.findall(str(out))
+                  if token not in source_models]
+    fixed = out
+    for source_token, wrong in zip(missing, candidates):
+        fixed = re.sub(re.escape(wrong), lambda _m: source_token, fixed, count=1)
+    return fixed
+
+
+def repair_number_values(src, out):
+    """金额/年份等数字被改写时，优先在相同单位或年份位置原位纠正。"""
+    missed = missing_big_numbers(src, out)
+    if not missed:
+        return out
+    fixed = out
+    units = r"(卢布|美元|元|格雷|格里夫纳|coin|coins|rubles|USD|RUB)"
+    for number in missed:
+        source_unit = re.search(
+            r"(?<!\d)" + re.escape(number) + r"\s*" + units, str(src), re.I)
+        if source_unit:
+            unit = source_unit.group(1)
+            aliases = {
+                "rubles": ("卢布", "руб", "RUB"),
+                "usd": ("美元", "US$"),
+                "coin": ("硬币", "金币"),
+                "coins": ("硬币", "金币"),
+            }.get(unit.casefold(), (unit,))
+            for alias in aliases:
+                pattern = re.compile(
+                    r"(?<!\d)\d[\d,]*(?:\s*" + re.escape(alias) + r")", re.I)
+                match = pattern.search(fixed)
+                if match and re.sub(r"[^\d]", "", match.group(0)) != number:
+                    fixed = fixed[:match.start()] + number + match.group(0)[
+                        match.group(0).lower().find(alias.lower()):] + fixed[match.end():]
+                    break
+            if not missing_big_numbers(src, fixed):
+                continue
+        if len(number) == 4 and number.isdigit():
+            match = re.search(r"(?<!\d)\d{4}(?!\d)", fixed)
+            if match and match.group(0) != number:
+                fixed = fixed[:match.start()] + number + fixed[match.end():]
+    return fixed
+
+
+def repair_fidelity_tokens(src, out):
+    return repair_number_values(src, repair_model_tokens(src, out))
 
 
 def repair_known_semantic_terms(src, out, lang=""):
@@ -1331,12 +1389,57 @@ def parse_numbered_batch(out, n):
     return [found[i] for i in range(1, n + 1)]
 
 
-def temp_for_style(style, dialogue_temp=0.1):
+def temp_for_style(style, dialogue_temp=0.1, formal_temp=0.1, label_temp=0.0):
     if style == "label":
-        return 0.0
+        return label_temp
     if style == "formal":
-        return 0.1
+        return formal_temp
     return dialogue_temp
+
+
+def _audit_compact(text):
+    return "".join(ch.lower() for ch in str(text or "") if ch.isalnum())
+
+
+def cross_entry_contamination(output_text, neighbor_outputs, min_chars=16,
+                              source_text="", neighbor_sources=None):
+    """输出包含相邻条目的长译文片段时返回邻居 ID。"""
+    output = _audit_compact(output_text)
+    if len(output) < min_chars:
+        return []
+    source = _audit_compact(source_text)
+    contaminated = []
+    for neighbor_id, neighbor_text in neighbor_outputs:
+        neighbor = _audit_compact(neighbor_text)
+        if len(neighbor) < min_chars or neighbor == output:
+            continue
+        if neighbor in output:
+            if source and neighbor_sources:
+                neighbor_source = _audit_compact(
+                    neighbor_sources.get(neighbor_id, ""))
+                if len(neighbor_source) >= min_chars and neighbor_source in source:
+                    continue
+            contaminated.append(str(neighbor_id))
+    return contaminated
+
+
+_LATIN_RESIDUE_ALLOW = frozenset({
+    "ak", "akm", "aks", "aek", "abakan", "an94", "fnx", "fn", "scar",
+    "svd", "svu", "sks", "mp5", "p90", "usp", "glock", "sig", "sauer",
+    "remington", "winchester", "mossberg", "benelli", "beretta", "colt",
+    "springfield", "ruger", "norinco", "cvd", "rpg", "pda", "cpu",
+    "gpu", "nvidia", "amd", "intel", "directx", "opengl", "vulkan", "cuda",
+    "dlss", "fsr", "xray", "xrayengine", "soc", "ap", "hp",
+    "mm", "cm", "km", "kg", "ms", "sec", "min", "max", "exp",
+})
+
+
+def latin_residue_review(text):
+    """返回中文输出中的英文碎片；全大写缩写与常见型号名豁免。"""
+    cleaned = re.sub(r"<[^>]+>|%c\[[^\]]*\]|\$\$[A-Za-z0-9_]+\$\$", " ", str(text or ""))
+    words = re.findall(r"[A-Za-z]{3,}", cleaned)
+    return sorted({word for word in words
+                   if not word.isupper() and word.lower() not in _LATIN_RESIDUE_ALLOW})
 
 
 def fmt_size(n):

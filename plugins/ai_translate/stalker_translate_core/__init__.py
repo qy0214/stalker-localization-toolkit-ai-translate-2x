@@ -44,6 +44,7 @@ from .ports import (
     TextRepositoryPort,
     UsageSinkPort,
 )
+from .quality import evaluate_lqa, gate_lqa, render_junit, render_sarif
 from .single_text import SingleTextPipeline
 from .table import TablePipeline
 
@@ -79,12 +80,16 @@ __all__ = [
     "_has_translatable_text",
     "budget_max_tokens",
     "detect_text_lang",
+    "evaluate_lqa",
     "flatten_glossary",
+    "gate_lqa",
     "glossary_hint_block",
     "layer_counts",
     "load_glossary_json",
     "load_termbase_document",
     "pipeline_fingerprint",
+    "render_junit",
+    "render_sarif",
     "resolve_asset_root",
     "runtime_tokens_match",
     "semantic_role_issues",
@@ -94,4 +99,4 @@ __all__ = [
     "tool_result",
 ]
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"

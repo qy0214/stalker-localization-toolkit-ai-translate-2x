@@ -167,7 +167,8 @@ def run_audit(tb_path=TB, gl_path=GL):
     gaps = Counter()
     for path in sorted(glob.glob(os.path.join(
             REPORT_DIR, "IWP_REWORK_LIST_*.json"))):
-        wl = json.load(open(path, encoding="utf-8"))
+        with open(path, encoding="utf-8") as handle:
+            wl = json.load(handle)
         for e in wl.get("rework_warn", []):
             if e.get("kind") != "latin_residue":
                 continue

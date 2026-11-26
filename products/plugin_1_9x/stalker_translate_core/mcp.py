@@ -7,8 +7,9 @@ from typing import Any
 PROTOCOL_VERSION = "2024-11-05"
 
 SERVER_INSTRUCTIONS = (
-    "STALKER 汉化翻译。用户要汉化 MOD 时直接调用 translate_mod；"
-    "整目录任务由工具自行识别，不要先用 terminal 扫描。"
+    "STALKER 汉化翻译。用户要汉化 MOD 时先调用 translation_plan 了解模型与路数，"
+    "再调用 translate_mod；整目录任务由工具自行识别，不要先用 terminal 扫描。"
+    "translate_mod 返回 job_id 后用 job_status 轮询；用户要求停止时调用 job_cancel。"
     "只有 status=done 才能报告完成，needs_review 必须报告待复核。"
     "单段文本使用 translate_text；翻译报错时才调用 check_env。"
 )
@@ -28,6 +29,11 @@ TOOL_DEFINITIONS: list[dict[str, Any]] = [
                          "description": "是否真发一句测试翻译"},
             },
         },
+    },
+    {
+        "name": "translation_plan",
+        "description": "查询可用翻译模型、端点槽位与推荐并发路数；不启动翻译。",
+        "inputSchema": {"type": "object", "properties": {}},
     },
     {
         "name": "translate_mod",
@@ -57,6 +63,24 @@ TOOL_DEFINITIONS: list[dict[str, Any]] = [
                                 "default": "auto"},
             },
             "required": ["input_dir"],
+        },
+    },
+    {
+        "name": "job_status",
+        "description": "查询 translate_mod 启动的异步翻译任务状态、进度与终检结果。",
+        "inputSchema": {
+            "type": "object",
+            "properties": {"job_id": {"type": "string"}},
+            "required": ["job_id"],
+        },
+    },
+    {
+        "name": "job_cancel",
+        "description": "停止指定翻译任务；当前请求结束后不再发送新请求。",
+        "inputSchema": {
+            "type": "object",
+            "properties": {"job_id": {"type": "string"}},
+            "required": ["job_id"],
         },
     },
     {

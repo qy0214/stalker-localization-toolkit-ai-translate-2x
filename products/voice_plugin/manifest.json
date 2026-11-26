@@ -1,0 +1,25 @@
+{
+  "id": "voice_plugin",
+  "name": "STALKER 中文语音工坊",
+  "version": "0.1.0",
+  "status": "pending",
+  "entry": "plugins/zh_voice/plugin.py",
+  "host_api": 1,
+  "core": null,
+  "asset_source": null,
+  "package": null,
+  "release_manifest": null,
+  "source_snapshot": "canonical core/stalker_voice_core + plugins/zh_voice",
+  "capabilities": [
+    "worker 子进程握手与心跳",
+    "游戏根目录体检与语音文件枚举",
+    "xrkit 存档语音树解包",
+    "echo 链路自检"
+  ],
+  "reserved": [
+    "三级文本链与台词表",
+    "Qwen3-TTS 原音色克隆合成",
+    "后处理与 MODS 组包"
+  ],
+  "release_note": "骨架版 0.1.0；不纳入当前发布列车，TTS 管线完成并验证后再转 active。"
+}

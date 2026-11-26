@@ -2,6 +2,7 @@
 """共享术语库装载、分层、精确查询与保守子串修复。"""
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -70,6 +71,22 @@ class Termbase:
         self._low_index = {"key": None, "low": {}}
         self._builtin_cache = {"key": None, "data": {}, "low": {}}
         self._partial_cache = {"key": None, "words": []}
+        self._user_set: dict[str, str] = {}
+        self._user_deleted: set[str] = set()
+        self._clear_builtin = False
+
+    def configure_user_layer(self, set_map: Mapping[str, str] | None = None,
+                             deleted: Iterable[str] = (), clear_builtin: bool = False):
+        self._user_set = {str(k): str(v) for k, v in (set_map or {}).items()
+                          if str(k).strip() and not str(k).startswith("_")}
+        self._user_deleted = {str(k) for k in deleted if str(k).strip()}
+        self._clear_builtin = bool(clear_builtin)
+        self._low_index["key"] = None
+        self._partial_cache["key"] = None
+
+    def _snapshot_key(self):
+        return (self._file_key(self.path), tuple(sorted(self._user_set.items())),
+                tuple(sorted(self._user_deleted)), self._clear_builtin)
 
     @staticmethod
     def _file_key(path: str):
@@ -106,6 +123,20 @@ class Termbase:
             }
         return self._builtin_cache.get("data") or {}
 
+    def fingerprint(self) -> str:
+        digest = hashlib.sha256()
+        try:
+            with open(self.path, "rb") as handle:
+                for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                    digest.update(chunk)
+        except OSError:
+            pass
+        digest.update(json.dumps({
+            "set": self._user_set, "deleted": sorted(self._user_deleted),
+            "clear": self._clear_builtin,
+        }, ensure_ascii=False, sort_keys=True).encode("utf-8"))
+        return digest.hexdigest()
+
     @staticmethod
     def layer_categories(meta, name: str) -> list[str]:
         layers = meta.get("layers") if isinstance(meta, dict) else None
@@ -134,10 +165,37 @@ class Termbase:
                     table[name] = str(value)
             return keys, table
 
-        canon, _ = collect(self.layer_categories(meta, "canon"))
-        names, _ = collect(self.layer_categories(meta, "names"))
+        canon, canon_table = collect(self.layer_categories(meta, "canon"))
+        names, names_table = collect(self.layer_categories(meta, "names"))
         _, technical = collect(self.layer_categories(meta, "technical"))
         _, reference = collect(self.layer_categories(meta, "reference"))
+        for table in (canon_table, names_table, technical, reference):
+            for key in self._user_deleted:
+                table.pop(key, None)
+        canon -= self._user_deleted
+        names -= self._user_deleted
+        technical.update({k: v for k, v in self._user_set.items()
+                          if k not in self._user_deleted})
+        user_keys = set(self._user_set) - self._user_deleted
+        canon_table.update({k: self._user_set[k] for k in user_keys})
+        canon |= user_keys
+        names -= user_keys
+        for key in user_keys:
+            reference.pop(key, None)
+        raw_terms = meta.get("terms")
+        details = {str(k): dict(v) for k, v in raw_terms.items()
+                   if str(k).strip() and isinstance(v, dict)} \
+            if isinstance(raw_terms, dict) else {}
+        status = {key: "translate" for key in canon | names}
+        for key, value in technical.items():
+            status[key] = ("preserve" if str(value).casefold() == key.casefold()
+                           else "translate")
+        status.update({key: "contextual" for key in reference})
+        status.update({key: "translate" for key in user_keys})
+        for key, detail in details.items():
+            value = str(detail.get("status") or "").strip().lower()
+            if value in ("translate", "preserve", "contextual"):
+                status[key] = value
         raw_variants = meta.get("variants")
         variants = ({str(k): str(v) for k, v in raw_variants.items()
                      if str(k).strip() and str(v).strip()}
@@ -154,12 +212,26 @@ class Termbase:
         return {
             "canon": canon,
             "names": names,
+            "canon_table": canon_table,
+            "names_table": names_table,
             "technical": technical,
             "reference": reference,
             "variants": variants,
             "case_sensitive": case_sensitive,
             "quote_required": quote_required,
+            "status": status,
+            "details": details,
         }
+
+    def term_status(self, term: str) -> str:
+        status = self.load_layers().get("status") or {}
+        key = str(term or "").strip()
+        return str(status.get(key) or status.get(key.casefold()) or "translate")
+
+    def term_details(self, term: str) -> dict:
+        details = self.load_layers().get("details") or {}
+        key = str(term or "").strip()
+        return dict(details.get(key) or details.get(key.casefold()) or {})
 
     def lookup(self, text: str) -> str | None:
         raw = (text or "").strip()
@@ -173,32 +245,64 @@ class Termbase:
             for candidate in (form, form.casefold()):
                 if candidate not in candidates:
                     candidates.append(candidate)
-        key = self._file_key(self.path)
+        key = self._snapshot_key()
         if self._low_index.get("key") != key:
             index = {}
             for category, table in self.load_data().items():
                 if category.startswith("_") or not isinstance(table, dict):
                     continue
                 for term, value in table.items():
+                    if str(term) in self._user_deleted:
+                        continue
                     lowered = str(term).casefold()
                     if lowered not in index:
                         index[lowered] = str(value)
+            for term, value in self._user_set.items():
+                if term not in self._user_deleted:
+                    index[term.casefold()] = value
             self._low_index = {"key": key, "low": index}
         index = self._low_index.get("low") or {}
         for candidate in candidates:
             if candidate in index:
                 return index[candidate]
+        if self._clear_builtin:
+            return None
         builtin = self.load_builtin()
         lowered_builtin = self._builtin_cache.get("low") or {}
         for candidate in candidates:
+            if candidate in self._user_deleted:
+                continue
             if candidate in builtin:
                 return str(builtin[candidate])
             if candidate in lowered_builtin:
                 return lowered_builtin[candidate]
         return None
 
+    def _exact_lookup(self, text: str) -> str | None:
+        raw = (text or "").strip()
+        stripped = raw.strip('"\u00ab\u00bb\u201c\u201d\'')
+        if not raw:
+            return None
+        layers = self.load_layers()
+        status = layers.get("status") or {}
+        table = dict(layers["canon_table"])
+        table.update(layers["names_table"])
+        table.update(layers["technical"])
+        index = {str(k).casefold(): str(v) for k, v in table.items()
+                 if str(k) not in self._user_deleted
+                 and str(status.get(str(k)) or status.get(str(k).casefold())
+                         or "translate") == "translate"}
+        for form in (raw, stripped):
+            for candidate in (form, form.casefold()):
+                if candidate in index:
+                    return index[candidate]
+        return None
+
     def exact_translation(self, text: str) -> str | None:
-        value = self.lookup(text)
+        key = str(text or "").strip().strip('"\u00ab\u00bb\u201c\u201d\'')
+        if self.term_status(key) == "preserve":
+            return text
+        value = self._exact_lookup(text)
         if value is None:
             return None
         source = (text or "").strip()
@@ -216,23 +320,23 @@ class Termbase:
             return None
         if rel is not None and looks_like_hard_protected_file(rel):
             return None
-        data = self.load_data()
-        meta_layers = (data.get("_meta") or {}).get("layers") or {}
-        key = self._file_key(self.path)
+        key = self._snapshot_key()
         if self._partial_cache.get("key") != key:
-            layers = set(meta_layers.get("canon") or []) | set(meta_layers.get("names") or [])
+            layers = self.load_layers()
+            status = layers.get("status") or {}
+            table = dict(layers["canon_table"])
+            table.update(layers["names_table"])
             words = []
-            for category, table in data.items():
-                if (category.startswith("_") or not isinstance(table, dict)
-                        or category not in layers):
+            for term, value in table.items():
+                term = str(term)
+                if str(status.get(term) or status.get(term.casefold())
+                        or "translate") != "translate":
                     continue
-                for term, value in table.items():
-                    term = str(term)
-                    if len(term) < 3 or not re.search(r"[A-Za-z]", term):
-                        continue
-                    if not (term[:1].isupper() or term.isupper()):
-                        continue
-                    words.append((term, str(value)))
+                if len(term) < 3 or not re.search(r"[A-Za-z]", term):
+                    continue
+                if not (term[:1].isupper() or term.isupper()):
+                    continue
+                words.append((term, str(value)))
             self._partial_cache = {"key": key, "words": words}
         out = text
         changed = False
@@ -250,9 +354,15 @@ class Termbase:
         return out
 
     def hard_keys(self) -> set[str]:
-        return set(self.load_layers()["canon"])
+        layers = self.load_layers()
+        status = layers.get("status") or {}
+        return {key for key in layers["canon"]
+                if str(status.get(key) or status.get(key.casefold())
+                       or "translate") == "translate"}
 
     def technical(self) -> dict[str, str]:
         result = dict(self.technical_exact)
+        for key in self._user_deleted:
+            result.pop(key, None)
         result.update(self.load_layers()["technical"])
         return result

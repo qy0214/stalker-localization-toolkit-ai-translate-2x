@@ -1,7 +1,7 @@
 ---
 name: stalker-translate
-version: 0.3.0
-description: "翻译 STALKER / X-Ray MOD 或游戏文本。技能=宇宙正字法+操作手册：术语核心表(GLOSSARY-CORE)统一专名，stats/extract/merge 三个薄命令负责本地扫描、直取回填、闸门与写回 XML；对话 AI 只专注逐句写译文。"
+version: 0.3.1
+description: "翻译 STALKER / X-Ray MOD 或游戏文本。技能=宇宙正字法+操作手册：术语核心表(GLOSSARY-CORE)统一专名，plan/extract/merge/validate 四个薄命令负责本地扫描、直取回填、闸门与写回 XML；对话 AI 只专注逐句写译文。"
 license: GPL-3.0
 ---
 

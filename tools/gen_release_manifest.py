@@ -38,7 +38,7 @@ PLUGIN = PLUGIN_DIR / "plugin.py"
 ASSETS = PLUGIN_DIR / "assets"
 DIST = ROOT / "dist"
 
-EXPECTED_PLUGIN_VERSION = "2.0.29"
+EXPECTED_PLUGIN_VERSION = "2.0.30"
 EXPECTED_PLUGIN_API = 1
 # 2.x 发布包剥掉了 _ssl.pyd ⇒ 这些导入链会连本机 HTTP 都跑不起来
 FORBIDDEN_IMPORTS = ("ssl", "http", "urllib.request", "urllib.error", "tkinter")
@@ -61,6 +61,12 @@ EXPECTED_LLAMA = {
 
 # 2026-10-23 从 HuggingFace LFS oid 取得（hf-mirror API，官方仓库元数据）。
 EXPECTED_MODELS = {
+    "Hy-MT3-1.8B-Q4_K_M.gguf": (
+        "bae6e591103654ff43ef0de7d1492f6e6df1f955505f6bb2cc52e86fc399a942",
+        1348432160),
+    "Hy-MT3-1.8B-Q8_0.gguf": (
+        "03e246991a57d31fe01ac203331e032eabd327ffd0098e570411b811f6119af8",
+        1908528448),
     "Hy-MT2-7B-Q4_K_M.gguf": (
         "9f96256500f3fc1ab4d64336b58f52a949a95ad7516b0c229476eef782f9f77b",
         4624648896),
@@ -478,7 +484,7 @@ def build_manifest() -> dict[str, Any]:
             sorted(set(expected_llama.items()) ^ set(meta["llama"].items()))
             or "无")))
     checks.append(check(
-        "官方哈希：模型 2 项", meta["models"] == EXPECTED_MODELS,
+        "官方哈希：模型 4 项", meta["models"] == EXPECTED_MODELS,
         "登记 %d 项；不一致：%s" % (
             len(meta["models"]),
             sorted(set(EXPECTED_MODELS.items()) ^ set(meta["models"].items()))
@@ -486,7 +492,7 @@ def build_manifest() -> dict[str, Any]:
     all_hashes = list(meta["llama"].values()) + [
         v[0] for v in meta["models"].values()]
     checks.append(check(
-        "官方哈希：8 个合法 SHA-256", len(all_hashes) == 8 and
+        "官方哈希：10 个合法 SHA-256", len(all_hashes) == 10 and
         all(re.fullmatch(r"[0-9a-f]{64}", h or "") for h in all_hashes),
         "%d 个" % len(all_hashes)))
     checks.append(check(
@@ -644,8 +650,8 @@ def render_markdown(data: dict[str, Any]) -> str:
             key, item["bytes"], item["sha256"]))
     lines.append("")
     lines.append("来源：llama.cpp `b11612` GitHub Release asset digest；"
-                 "HuggingFace LFS oid（`tencent/Hy-MT2-7B-GGUF`、"
-                 "`tencent/Hy-MT2-1.8B-GGUF`）。"
+                 "HuggingFace LFS oid（`tencent/Hy-MT3-1.8B-GGUF`、"
+                 "`tencent/Hy-MT2-7B-GGUF`、`tencent/Hy-MT2-1.8B-GGUF`）。"
                  "下载后强制比对，不一致即删除并换源。")
     lines.append("")
     lines.append("## 3. 一致性核对")

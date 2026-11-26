@@ -35,7 +35,7 @@ from .service import TranslationService, quality_issues
 from .xray import project_xml_files, scan_text_file
 
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 
 
 @dataclass

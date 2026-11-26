@@ -23,7 +23,7 @@ def main() -> int:
         manifest = product_manifest(product)
         if manifest.get("version") != versions.get(product):
             errors.append("%s 产品版本与 versions.json 不一致" % product)
-        if manifest.get("core") != versions.get("core"):
+        if manifest.get("core") is not None and manifest.get("core") != versions.get("core"):
             errors.append("%s core 版本与 versions.json 不一致" % product)
         entry = manifest.get("entry")
         if entry and not (ROOT / entry).is_file():

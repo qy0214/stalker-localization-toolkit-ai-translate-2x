@@ -16,6 +16,30 @@ SMOKE = ROOT / "tests/mcp_hermes_smoke.py"
 
 
 class HermesAdapterTests(unittest.TestCase):
+    def test_progress_percentage_uses_global_total(self):
+        script = r'''
+import os, sys, tempfile
+root = sys.argv[1]
+sys.path.insert(0, root)
+import server
+with tempfile.TemporaryDirectory() as tmp:
+    path = os.path.join(tmp, "progress.html")
+    server._write_progress_page(path, {
+        "files": 165, "file_idx": 8, "ids": 704,
+        "entries_total": 19813, "entries_translatable": 19813,
+    }, [], "running")
+    page = open(path, encoding="utf-8").read()
+    assert '<span class="pct">3%</span>' in page, page[:500]
+    heading = page.split('<h1>', 1)[1].split('</h1>', 1)[0]
+    assert '100%' not in heading
+'''
+        result = subprocess.run(
+            [sys.executable, "-c", script, str(ROOT / "products/mcp_hermes")],
+            cwd=str(ROOT), stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+            text=True, encoding="utf-8", errors="replace", timeout=30,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout[-3000:])
+
     def test_package_layout_and_stdio_smoke(self):
         with tempfile.TemporaryDirectory(prefix="ait_mcp_hermes_") as td:
             base = Path(td)
@@ -28,12 +52,13 @@ class HermesAdapterTests(unittest.TestCase):
                 cwd=str(ROOT), env=env, check=True,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
             )
-            package = dist / "stalker-translate-MCP-1.1.11.zip"
+            package = dist / "stalker-translate-MCP-1.1.12.zip"
             self.assertTrue(package.is_file())
             extract = base / "hermes-plugin"
             with zipfile.ZipFile(package) as archive:
                 names = set(archive.namelist())
                 self.assertIn("server.py", names)
+                self.assertIn("jobs.py", names)
                 self.assertIn("stalker_translate_core/mcp.py", names)
                 self.assertIn("kernel/assets/stalker_termbase.json", names)
                 self.assertIn("stalker_translate_core/offline_job.py", names)

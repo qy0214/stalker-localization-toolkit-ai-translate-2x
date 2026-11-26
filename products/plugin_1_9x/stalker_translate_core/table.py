@@ -139,82 +139,23 @@ class TablePipeline:
             lang, src = meta["lang"], meta["src"]
             if not src or not src.strip():
                 continue
-            if self._looks_like_target(src):
+            action, value, reason = self._filter_decision(rel, ent.id, src, lang)
+            self._record_filter_decision(rel, ent.id, action, reason)
+            if action == "keep":
                 continue
-            exact = src.strip()
-            if (exact in self.glossary
-                    and (exact not in self.session_only_keys
-                         or is_player_facing_label(rel, src))):
-                # 制作名单/音乐/武器短名即使命中了核心词条，也要服从
-                # “保护专名”；否则 credits 里的 Harris 会被改写成中文。
-                if not (self.protect_proper
-                        and looks_like_hard_protected_file(rel)):
-                    lead = src[:len(src) - len(src.lstrip())]
-                    trail = src[len(src.rstrip()):]
-                    new_exact = lead + self.glossary[exact] + trail
-                    if new_exact != src:
-                        changes[ent.id] = (lang, new_exact)
-                        st["translated"] += 1
-                    continue
-            if not _has_translatable_text(src):
-                continue
-            if looks_like_code_or_debug(rel, src):
-                # ★ 2.0.22：全大写型号/弹药规格且词库有整串中文译名时直取，
-                # 不再被 code 过滤整条拦掉（见 _is_model_code_form 说明）。
-                _mc = (self._termbase_exact_translation(src)
-                       if (src not in self.glossary
-                           and not looks_like_hard_protected_file(rel)
-                           and _is_model_code_form(rel, src)) else None)
-                if _mc is not None and _mc != src:
-                    changes[ent.id] = (lang, _mc)
-                    st["translated"] += 1
-                    continue
+            if action == "skip":
                 st["skipped"] += 1
                 continue
-            # ★ 2.0.21（全 MOD 重放审计）：术语直取/句式直译提前到
-            # noise/tech/identifier 判定之前——词库整串命中 = 明确的
-            # 翻译意图，任何筛选都不该拦（实测弹药名 '12x76 "Arrow"
-            # slugs' 被 technical 跳过、WOT 升级名被 identifier 跳过，
-            # 而词库均有同形态译名）。credits/音乐等强保护文件除外。
-            if not looks_like_hard_protected_file(rel):
-                _exact = self._termbase_exact_translation(src) \
-                    if src not in self.glossary else None
-                if _exact is not None and _exact != src:
-                    changes[ent.id] = (lang, _exact)
+            if action == "exact":
+                if value != src:
+                    changes[ent.id] = (lang, value)
                     st["translated"] += 1
-                    continue
-                # ★ 2.0.13 通用新闻句式：固定英文句式 + 词库名词零成本直译。
-                if src not in self.glossary:
-                    _pat = pattern_translate(src, self._termbase_exact_translation)
-                    if _pat is not None:
-                        changes[ent.id] = (lang, _pat)
-                        st["translated"] += 1
-                        continue
-            if (looks_like_generated_noise(rel, src)
-                    or looks_like_technical_text(src)
-                    or (looks_like_identifier_text(src)
-                        and not is_player_facing_label(rel, src)
-                        and not _id_player_visible(ent.id))):
-                st["skipped"] += 1
-                continue
-            if self.only_referenced and ent.id not in self._ref_counts:
-                continue
-            if self.protect_proper and looks_like_proper_text(rel, src):
-                # ★ 2.0.21：保护命中先试硬层子串替换（Vasya "Boar"→
-                # 瓦西娅"野猪" 形态），词库无可用词才保留原文。
-                _p = (self._partial_glossary_translation(src, rel)
-                      if src not in self.glossary else None)
-                if _p is not None and _p != src:
-                    changes[ent.id] = (lang, _p)
-                    st["translated"] += 1
-                else:
-                    st["skipped"] += 1
                 continue
             use_lang = self.src_lang if self.src_lang != "auto" else lang
             # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
             # 即使显式选了 rus/eng，正文明显是另一种语言时也按正文判断；
             # ukr 不覆盖（俄/乌都是西里尔，粗判分不出来）。
-            if use_lang in ("auto", "text", "rus", "eng"):
+            if use_lang != "ukr":
                 det = detect_text_lang(src)
                 if det and det != use_lang:
                     use_lang = det
@@ -226,10 +167,12 @@ class TablePipeline:
                     src, use_lang, context=ctx, style=meta["style"])
             except Exception as e:
                 st["failed"] += 1
+                self.failed_strings += 1
                 self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
                             % (ent.id, type(e).__name__, e))
                 continue
             if not out or not out.strip():
+                self.failed_strings += 1
                 continue
             out = clean_translation_output(out)
             lead = src[:len(src) - len(src.lstrip())]
@@ -244,7 +187,8 @@ class TablePipeline:
             self._discard_unchanged_output(rel, out_path)
             return st
         try:
-            open(full, "rb").read().decode("utf-8-sig")
+            with open(full, "rb") as handle:
+                handle.read().decode("utf-8-sig")
             utf8_table = True
         except (OSError, UnicodeDecodeError):
             utf8_table = False
@@ -256,8 +200,22 @@ class TablePipeline:
             wrote = self._write_table_as_utf8(full, out_path, ents,
                                              changes, rel)
         if wrote:
+            issues = self._verify_table_roundtrip(full, out_path, rel)
+            if issues:
+                wrote = False
+                for issue in issues:
+                    self.log("  回写校验失败：%s" % issue, "err")
+        if wrote:
             st["changed"] = True
             self._audit_tables.add(rel)   # ★ 2.0.2：登记进终检清单
+            source_by_id = {meta["ent"].id: meta["src"] for meta in metas}
+            for eid, (_lang, new_text) in changes.items():
+                reason = self._filter_reason.get((rel, eid), "")
+                origin = "model_batch" if eid in batched_ids else (
+                    "deterministic" if reason.endswith("exact") or reason == "proper_partial"
+                    else "model")
+                self._record_provenance(rel, eid, source_by_id.get(eid, ""),
+                                        new_text, origin)
             self._record_done(rel, full, out_path)
         else:
             st["failed"] += 1
@@ -275,7 +233,8 @@ class TablePipeline:
         只把 XML 声明的编码换成 utf-8。
         """
         try:
-            raw = open(full, "rb").read()
+            with open(full, "rb") as handle:
+                raw = handle.read()
         except OSError:
             return False
         text = None
@@ -322,7 +281,8 @@ class TablePipeline:
 
     def _write_table_changes(self, full, out_path, changes, rel):
         try:
-            raw = open(full, "rb").read()
+            with open(full, "rb") as handle:
+                raw = handle.read()
         except OSError:
             return False
         had_bom = raw.startswith(b"\xef\xbb\xbf")

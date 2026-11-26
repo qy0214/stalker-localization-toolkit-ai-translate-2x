@@ -25,6 +25,9 @@ class MonorepoLayoutTests(unittest.TestCase):
             "products/plugin_1_9x/manifest.json",
             "products/mcp_hermes/manifest.json",
             "products/mcp_online/manifest.json",
+            "products/voice_plugin/manifest.json",
+            "plugins/zh_voice/plugin.py",
+            "core/stalker_voice_core/__init__.py",
             "skills/stalker-translate/manifest.json",
             "skills/stalker-translate/SKILL.md",
             "skills/stalker-translate/scripts/stalker_translate.py",
@@ -51,6 +54,17 @@ class MonorepoLayoutTests(unittest.TestCase):
         self.assertEqual(manifest["version"], versions["skill"])
         self.assertEqual(manifest["runtime"], "mcp_online")
         self.assertEqual(manifest["status"], "active")
+
+    def test_voice_plugin_is_pending_and_not_release_ready(self):
+        versions = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
+        manifest = json.loads(
+            (ROOT / "products/voice_plugin/manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["version"], versions["voice_plugin"])
+        self.assertEqual(manifest["status"], "pending")
+        self.assertIsNone(manifest["core"])
+        self.assertIsNone(manifest["package"])
+        self.assertIn("Qwen3-TTS 原音色克隆合成", manifest["reserved"])
 
     def test_2x_asset_mirror_matches_canonical_assets(self):
         canonical = AssetBundle.load(ROOT / "assets").hashes

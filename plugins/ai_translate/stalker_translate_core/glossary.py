@@ -214,7 +214,8 @@ GLOSSARY_HINT_STOPWORDS = frozenset((
     "whom", "whose", "when", "where", "why", "how", "all", "any", "some",
 ))
 
-def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET, official=False):
+def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET, official=False,
+                        context=""):
     """把命中术语压成尽可能小的提示块，返回 (文本, 计费字符数)。
 
     计费字符数是**保守上界**（每行按含换行计、另预留与正文之间的空行），
@@ -225,7 +226,12 @@ def glossary_hint_block(pairs, budget=GLOSSARY_HINT_BUDGET, official=False):
     后，每条请求少注入约 25% 字符，且长专名不再被短词挤掉。
 
     official=True 用官方模板措辞（「X 翻译成 Y」），False 用自研格式（X=Y）。
+    context 非空时，当前上下文出现的术语优先，避免预算被无关词条挤掉。
     """
+    pairs = list(pairs)
+    if context:
+        context_low = str(context).casefold()
+        pairs.sort(key=lambda pair: 0 if str(pair[0]).casefold() in context_low else 1)
     seen = set()
     lines = []
     header = (GLOSSARY_HINT_HEADER_OFFICIAL if official

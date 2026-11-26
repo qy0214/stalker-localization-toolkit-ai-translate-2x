@@ -242,6 +242,42 @@ def glossary_hits(text, index, hard=None, names=(), soft=(), session_keys=(),
     return hard_pairs + name_pairs + soft_pairs
 
 
+def enforce_preferred_terms(src, out, index, mapping, hard=None,
+                            quote_required=(), details=None, detail=None):
+    """把已译文本中的禁译变体收敛到 preferred；无法定位时不强行插入。"""
+    if not src or not out or index is None:
+        return out
+    spans = glossary_spans(src, index, hard=hard, quote_required=quote_required)
+    counts = {}
+    for _start, _end, key in spans:
+        counts[key] = counts.get(key, 0) + 1
+    for key, source_count in counts.items():
+        expected = str(mapping.get(key) or "").strip()
+        if not expected or expected == key:
+            continue
+        if out.count(expected) >= source_count:
+            continue
+        meta = (details or {}).get(key) or {}
+        if str(meta.get("status") or "translate") != "translate":
+            continue
+        forbidden = meta.get("forbidden") or ()
+        if isinstance(forbidden, str):
+            forbidden = [forbidden]
+        for wrong in forbidden:
+            wrong = str(wrong).strip()
+            if not wrong or wrong == expected:
+                continue
+            flags = 0 if re.search(r"[^\x00-\x7f]", wrong) else re.I
+            replaced = re.sub(re.escape(wrong), lambda _m: expected, out, flags=flags)
+            if replaced != out:
+                if detail:
+                    detail("  硬术语禁译变体收敛：%s → %s" % (wrong, expected))
+                out = replaced
+        if out.count(expected) < source_count and detail:
+            detail("  硬术语 preferred 未足量：%s（需复核）" % key)
+    return out
+
+
 def repair_residual_source_terms(src, out, index, mapping, hard=None,
                                  quote_required=(), detail=None):
     if not src or not out or index is None:

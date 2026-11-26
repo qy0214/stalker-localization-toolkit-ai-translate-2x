@@ -14,13 +14,19 @@ from .pipeline import (
     _MASK_RESIDUE_RE,
     _has_translatable_text,
     _id_player_visible,
+    cross_entry_contamination,
+    find_glue_residue,
     fmt_size,
+    has_cjk,
     is_player_facing_label,
     looks_like_code_or_debug,
     looks_like_context_echo,
     looks_like_identifier_text,
     looks_like_proper_text,
     looks_like_technical_text,
+    latin_residue_review,
+    missing_big_numbers,
+    missing_model_tokens,
     partial_source_review,
     runtime_tokens_match,
     semantic_role_issues,
@@ -284,9 +290,15 @@ class JobPipeline:
         token_bad = []
         semantic_bad = []
         term_bad = []
+        name_bad = []
         partial_review = []
         unchanged_outputs = []
         dangling_ids = []
+        cross_bleed = []
+        latin_review = []
+        number_bad = []
+        model_bad = []
+        glue_bad = []
         _CYR_AUDIT = re.compile(r"[а-яёА-ЯЁ]{2,}")
         _LATIN_AUDIT = re.compile(r"[A-Za-z]{2,}")
         _GEN_ID_RE = re.compile(r"sgtat_gen_text_\d+_\d+")
@@ -316,10 +328,45 @@ class JobPipeline:
                     # ④ 条目级漏译：同一 id 输出文本仍是输入俄文原样。
                     # 排除已登记专名（词库命中）——那是有意保留，不是漏译。
                     in_map = {e.id: e for e in (in_ents or [])}
+                    out_map = {e.id: e for e in (out_ents or [])}
+                    source_order = [entity.id for entity in (in_ents or [])]
+                    contaminated_ids = set()
+                    latin_ids = []
+                    for position, entity in enumerate(out_ents or []):
+                        source_entity = in_map.get(entity.id)
+                        if source_entity is None:
+                            continue
+                        pairs = self._text_value_pairs(source_entity, entity)
+                        if not pairs:
+                            continue
+                        output_value = pairs[0][2]
+                        neighbors = []
+                        neighbor_sources = {}
+                        for neighbor_index in range(max(0, position - 2),
+                                                    min(len(source_order), position + 3)):
+                            if neighbor_index == position:
+                                continue
+                            neighbor = out_map.get(source_order[neighbor_index])
+                            if neighbor is None:
+                                continue
+                            neighbor_pairs = self._text_value_pairs(
+                                in_map[source_order[neighbor_index]], neighbor)
+                            if neighbor_pairs:
+                                neighbors.append((source_order[neighbor_index],
+                                                  neighbor_pairs[0][2]))
+                                neighbor_sources[source_order[neighbor_index]] = \
+                                    neighbor_pairs[0][1]
+                        if cross_entry_contamination(
+                                output_value, neighbors, source_text=pairs[0][1],
+                                neighbor_sources=neighbor_sources):
+                            contaminated_ids.add(entity.id)
+                        if has_cjk(output_value) and latin_residue_review(output_value):
+                            latin_ids.append(entity.id)
                     hits = []
                     token_ids = []
                     semantic_ids = []
                     term_ids = []
+                    name_ids = []
                     review_ids = []
                     file_changed = compared = False
                     for e in (out_ents or []):
@@ -335,6 +382,17 @@ class JobPipeline:
                                 file_changed = True
                                 if not runtime_tokens_match(in_val, out_val):
                                     token_ids.append(e.id)
+                                if missing_big_numbers(in_val, out_val):
+                                    number_bad.append("%s（缺 %s）" % (
+                                        rel, "、".join(missing_big_numbers(
+                                            in_val, out_val)[:3])))
+                                if missing_model_tokens(in_val, out_val):
+                                    model_bad.append("%s（缺 %s）" % (
+                                        rel, "、".join(missing_model_tokens(
+                                            in_val, out_val)[:3])))
+                                if find_glue_residue(out_val):
+                                    glue_bad.append("%s（%s）" % (
+                                        rel, "、".join(find_glue_residue(out_val))))
                                 if semantic_role_issues(
                                         in_val, out_val, lang_key):
                                     semantic_ids.append(e.id)
@@ -353,6 +411,20 @@ class JobPipeline:
                                             expected.lower()) < source_count):
                                         term_ids.append(e.id)
                                         break
+                                if self.gloss is not None:
+                                    name_counts = {}
+                                    for _start, _end, key in self.gloss.find(in_val):
+                                        if key in self.gloss_names:
+                                            name_counts[key] = name_counts.get(key, 0) + 1
+                                    for key, source_count in name_counts.items():
+                                        expected = str(
+                                            self.gloss._map.get(key)
+                                            or self.glossary.get(key) or "").strip(
+                                                "\"'«»“”‘’")
+                                        if (has_cjk(expected) and out_val.lower().count(
+                                                expected.lower()) < source_count):
+                                            name_ids.append(e.id)
+                                            break
                                 continue
                             if not (_CYR_AUDIT.search(in_val)
                                     or _LATIN_AUDIT.search(in_val)):
@@ -383,6 +455,9 @@ class JobPipeline:
                     if term_ids:
                         term_bad.append("%s（%d 条：%s…）" % (
                             rel, len(term_ids), ", ".join(term_ids[:3])))
+                    if name_ids:
+                        name_bad.append("%s（%d 条：%s…）" % (
+                            rel, len(name_ids), ", ".join(name_ids[:3])))
                     if review_ids:
                         partial_review.append("%s（%d 条：%s…）" % (
                             rel, len(review_ids), ", ".join(review_ids[:3])))
@@ -404,6 +479,13 @@ class JobPipeline:
                         ctx_bleed.append("%s（%d 条：%s…）"
                                          % (rel, len(bleed_ids),
                                             ", ".join(bleed_ids[:3])))
+                    if contaminated_ids:
+                        cross_bleed.append("%s（%d 条：%s…）" % (
+                            rel, len(contaminated_ids),
+                            ", ".join(sorted(contaminated_ids)[:3])))
+                    if latin_ids:
+                        latin_review.append("%s（%d 条：%s…）" % (
+                            rel, len(latin_ids), ", ".join(latin_ids[:3])))
                     # ⑥ & 保真哨兵：源含 & 的已翻条目，译文出现源没有的
                     # 双空格 = 吞 & 特征签名（Heckler & Koch → Heckler  Koch）。
                     # 只点名，不自动改写（译成「黑克勒-科赫」专名属正常）。
@@ -468,22 +550,29 @@ class JobPipeline:
             "mask_residue": residue,
             "untranslated_entries": untranslated,
             "context_bleed": ctx_bleed,
+            "cross_entry_contamination": cross_bleed,
+            "latin_residue_review": latin_review,
             "runtime_token_damage": token_bad,
+            "number_fidelity": number_bad,
+            "model_fidelity": model_bad,
+            "glue_residue": glue_bad,
             "semantic_role_conflicts": semantic_bad,
             "glossary_conflicts": term_bad,
+            "name_consistency": name_bad,
             "partial_translation_review": partial_review,
             "unchanged_outputs": unchanged_outputs,
             "dangling_generated_ids": dangling_ids,
             "amp_warnings": amp_lost,
         }
         hard_keys = [k for k, v in details.items()
-                     if k not in ("amp_warnings", "partial_translation_review")]
+                     if k not in ("amp_warnings", "partial_translation_review",
+                                  "latin_residue_review")]
         counts = {k: len(v) for k, v in details.items()}
         counts.update({"ledger_files": len(ledger_items),
                        "text_tables": n_tables,
                        "amp_warnings": len(amp_lost)})
         hard_problems = sum(counts[k] for k in hard_keys)
-        warnings = len(amp_lost) + len(partial_review)
+        warnings = len(amp_lost) + len(partial_review) + len(latin_review)
         retry_files = set()
         for key in hard_keys:
             for item in details[key]:
@@ -501,6 +590,8 @@ class JobPipeline:
             "warnings": warnings,
             "counts": counts,
             "details": details,
+            "filter_summary": dict(self._filter_counts),
+            "filter_trace_sample": self.filter_trace[:200],
         }
         self.audit_result = result
         if hard_problems or warnings:
@@ -515,13 +606,19 @@ class JobPipeline:
                     ("missing_ids", "输出疑似漏条目"),
                     ("mask_residue", "疑似未还原掩码（$$R…）"),
                     ("runtime_token_damage", "颜色码/占位符损坏"),
+                    ("number_fidelity", "关键数字缺失或改写"),
+                    ("model_fidelity", "武器/物品型号缺失或改写"),
+                    ("glue_residue", "中英/中俄粘连残词"),
                     ("semantic_role_conflicts", "任务/对话语义方向冲突"),
                     ("glossary_conflicts", "硬术语译名缺失或不一致"),
+                    ("name_consistency", "人物名译名缺失或不一致"),
                     ("partial_translation_review", "疑似部分源文未翻译（需人工复核）"),
                     ("unchanged_outputs", "整张输出无实际译文变化"),
                     ("dangling_generated_ids", "生成字符串 ID 缺少定义"),
                     ("untranslated_entries", "条目未翻译（保留原文）"),
                     ("context_bleed", "上下文串入（前一句/后一句）"),
+                    ("cross_entry_contamination", "相邻条目译文混入"),
+                    ("latin_residue_review", "中文译文残留英文碎片（需人工复核）"),
                     ("amp_warnings", "疑似吞 &（& 塌成双空格）")):
                 for item in details[key][:20]:
                     self.log("  终检｜%s：%s" % (label, item), "warn")
@@ -550,6 +647,16 @@ class JobPipeline:
         self.out_dir = done_dir
         self.done_dir = done_dir
         self._excluded_paths = {os.path.normcase(os.path.abspath(done_dir))}
+        try:
+            for entry in os.scandir(self.in_dir):
+                if not entry.is_dir(follow_symlinks=False):
+                    continue
+                name = entry.name.lower()
+                if (name.startswith("translated_")
+                        or os.path.isfile(os.path.join(entry.path, ".ai_translate_done.json"))):
+                    self._excluded_paths.add(os.path.normcase(os.path.abspath(entry.path)))
+        except OSError:
+            pass
         os.makedirs(done_dir, exist_ok=True)
         lock_key = hashlib.sha256(
             os.path.normcase(os.path.realpath(done_dir)).encode("utf-8")
@@ -732,6 +839,7 @@ class JobPipeline:
             if not (self.reference_mode and self.preview_reference):
                 if self._ledger or self._ledger_present:
                     self._save_ledger()
+                self._save_provenance(done_dir)
                 removed = self._prune_empty_dirs(done_dir)
                 if removed:
                     self.log("已清理 %d 个空目录" % removed)

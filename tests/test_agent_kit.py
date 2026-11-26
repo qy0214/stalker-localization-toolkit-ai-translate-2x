@@ -83,6 +83,23 @@ class AgentKitTests(unittest.TestCase):
             sid = row.split("\t")[0].split("#")[0]
             self.assertRegex(sid, r"^[0-9a-f]{8}$")
 
+    def test_merge_rejects_outside_oversized_and_sensitive_files(self):
+        outside = self.root.parent / (self.root.name + "_outside.tsv")
+        outside.write_text("abc\t译文\n", encoding="utf-8")
+        try:
+            with self.assertRaises(PermissionError):
+                self.kit.merge(str(self.mod), str(outside))
+        finally:
+            outside.unlink(missing_ok=True)
+        oversized = self.root / "large.tsv"
+        oversized.write_bytes(b"x" * (self.cfg.max_file_bytes + 1))
+        with self.assertRaises(ValueError):
+            self.kit.merge(str(self.mod), str(oversized))
+        sensitive = self.root / "config.json"
+        sensitive.write_text("{}", encoding="utf-8")
+        with self.assertRaises(PermissionError):
+            self.kit.merge(str(self.mod), str(sensitive))
+
     def test_merge_lands_and_next_extract_shrinks(self):
         ex = self.kit.extract(str(self.mod), chunk=200, part=1)
         rows = [l.split("\t") for l in Path(ex["batch_file"]).read_text(

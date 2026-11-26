@@ -9,6 +9,8 @@ import re
 import tempfile
 import threading
 import time
+import xml.etree.ElementTree as ET
+from collections import Counter
 
 from . import glossary as _core_glossary
 from . import matching as _core_matching
@@ -32,11 +34,19 @@ from .job import JobPipeline
 from .matching import GlossaryIndex
 from .pipeline import (
     _RUNTIME_TOKEN_RE,
+    _has_translatable_text,
+    _id_player_visible,
+    _is_model_code_form,
     detect_text_lang,
     has_cjk,
+    is_player_facing_label,
     looks_like_code_or_debug,
+    looks_like_generated_noise,
+    looks_like_hard_protected_file,
     looks_like_identifier_text,
     looks_like_prompt_echo,
+    looks_like_proper_text,
+    looks_like_technical_text,
     safe_chunk_chars,
 )
 from .project import ProjectPipeline
@@ -46,6 +56,12 @@ from .table import TablePipeline
 from .xray import looks_like_mojibake, read_encoding_chain
 
 _ATOMIC_REPLACE_LOCK = threading.Lock()
+_XML_LANGUAGE_TAGS = {
+    "text", "rus", "eng", "ukr", "ger", "deu", "fra", "fre", "spa",
+    "pol", "bel", "kaz", "jpn", "chi", "zho", "kor", "ita", "por",
+}
+_XML_DECL_ENCODING = re.compile(
+    rb"<\?xml[^>]*?\bencoding\s*=\s*[\"']([\w.\-]+)", re.I)
 
 
 class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, JobPipeline):
@@ -76,7 +92,8 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
                  session_cache_dir=None, tm_lite=True, parallel=1,
                  pending_files=0, freq_names=True, *, termbase=None,
                  data_root="", pipeline_version="", parallel_cap=16,
-                 is_writable=None, tm_min_entries=40, tm_min_ratio=0.08):
+                 is_writable=None, on_translation=None,
+                 tm_min_entries=40, tm_min_ratio=0.08):
         self.p = parser
         self.srv = server
         if termbase is None:
@@ -93,6 +110,8 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         self.tgt = tgt_lang
         self.reuse_dir = reuse_dir
         self.glossary = dict(glossary or {})
+        self._glossary_revision = 0
+        self._pipeline_hash_cache = None
         term_layers = self.termbase.load_layers()
         self.gloss_names = set(term_layers["names"])
         # 百科/任务/界面/新闻只做软提示：精确命中才注入，不强制替换。
@@ -107,7 +126,11 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         self.output_anyway = output_anyway
         self.force_glossary = force_glossary
         self._tls = threading.local()
-        self.dialogue_temp = 0.1
+        self._tls.translation_origin = ""
+        self._tls.rule_results = []
+        self.dialogue_temp = float(getattr(server, "dialogue_temperature", 0.1))
+        self.formal_temp = float(getattr(server, "formal_temperature", 0.1))
+        self.label_temp = float(getattr(server, "label_temperature", 0.0))
         self.batch_stats = {"batches": 0, "lines": 0, "failed": 0}
         self.ctx_size = int(ctx_size)
         # ★ 2.0.2：路数上限从写死的 4 放宽到 parallel_cap（与 LlamaServer 同步）。
@@ -130,6 +153,10 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         #   收口只有 _write_table_changes / _write_table_as_utf8 两个出口，
         #   在那里登记，终检只验这几张（原样复制的不用验 XML 结构）。
         self._audit_tables = set()
+        self.filter_trace = []
+        self._filter_counts = Counter()
+        self._filter_reason = {}
+        self.provenance = {}
         self._ref_counts = {}        # id -> 引用次数
         self._ref_files = set()      # 含可解析引用的 XML/脚本
         self._unresolved = {}        # id -> 次数（索引里找不到）
@@ -138,6 +165,7 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         self.log = log or (lambda *args, **kwargs: None)
         self.detail = detail or (lambda *args, **kwargs: None)
         self.progress = progress or (lambda *args, **kwargs: None)
+        self.on_translation = on_translation
         self.cancel = cancel_event
         # 自动识别出的「整个 MOD 待翻译文件总数」，用于界面计数显示
         self.pending_files = int(pending_files or 0)
@@ -266,6 +294,208 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
     def _partial_glossary_translation(self, text, rel=None):
         return self.termbase.partial_translation(text, rel)
 
+    def _record_filter_decision(self, rel, eid, decision, reason):
+        with self._stat_lock:
+            self._filter_counts[reason] += 1
+            self._filter_reason[(rel, eid)] = reason
+            if len(self.filter_trace) < 20000:
+                self.filter_trace.append({"file": rel, "id": eid,
+                                          "decision": decision, "reason": reason})
+
+    def _filter_decision(self, rel, eid, src, lang):
+        """table/project 共用的有序筛选链；返回 (action, value, reason)。"""
+        protected = looks_like_hard_protected_file(rel)
+        if self.tgt == lang or self._looks_like_target(src):
+            return "keep", src, "target_language"
+        if protected and self.protect_proper:
+            return "skip", src, "protected_file"
+        exact = src.strip()
+        if (exact in self.glossary
+                and (exact not in self.session_only_keys
+                     or is_player_facing_label(rel, src))):
+            lead = src[:len(src) - len(src.lstrip())]
+            trail = src[len(src.rstrip()):]
+            return "exact", lead + self.glossary[exact] + trail, "glossary_exact"
+        if not _has_translatable_text(src):
+            return "skip", src, "no_translatable_text"
+        runtime_payload = _RUNTIME_TOKEN_RE.sub("", src).strip()
+        runtime_text = bool(_RUNTIME_TOKEN_RE.search(src)
+                            and _has_translatable_text(runtime_payload)
+                            and not looks_like_technical_text(runtime_payload))
+        if looks_like_code_or_debug(rel, src) and not runtime_text:
+            model_exact = (self._termbase_exact_translation(src)
+                           if exact not in self.glossary and not protected
+                           and _is_model_code_form(rel, src) else None)
+            if model_exact is not None and model_exact != src:
+                return "exact", model_exact, "model_code_exact"
+            return "skip", src, "code_or_debug"
+        if not protected:
+            term_exact = (self._termbase_exact_translation(src)
+                          if exact not in self.glossary else None)
+            if term_exact is not None and term_exact != src:
+                return "exact", term_exact, "termbase_exact"
+            pattern = (_core_text.pattern_translate(
+                src, self._termbase_exact_translation)
+                if exact not in self.glossary else None)
+            if pattern is not None and pattern != src:
+                return "exact", pattern, "pattern_exact"
+        if (looks_like_generated_noise(rel, src)
+                or looks_like_technical_text(src)
+                or (looks_like_identifier_text(src)
+                    and not runtime_text
+                    and not is_player_facing_label(rel, src)
+                    and not _id_player_visible(eid))):
+            return "skip", src, "noise_technical_identifier"
+        if self.only_referenced and eid not in self._ref_counts:
+            return "skip", src, "unreferenced"
+        if self.protect_proper and looks_like_proper_text(rel, src):
+            partial = (self._partial_glossary_translation(src, rel)
+                       if exact not in self.glossary else None)
+            if partial is not None and partial != src:
+                return "exact", partial, "proper_partial"
+            return "skip", src, "proper_protected"
+        return "translate", src, "model_translation"
+
+    def _record_provenance(self, rel, eid, src, out, origin="model"):
+        if not eid or src is None or out is None or src == out:
+            return
+        source_hash = hashlib.sha1(str(src).encode("utf-8"), usedforsecurity=False).hexdigest()
+        output_hash = hashlib.sha1(str(out).encode("utf-8"), usedforsecurity=False).hexdigest()
+        terms = [key for _start, _end, key in self._glossary_spans(str(src))]
+        if origin == "model":
+            origin = getattr(self._tls, "translation_origin", "") or "model"
+        reason = self._filter_reason.get((rel, eid), "")
+        if origin == "tm_lite":
+            reason = "tm_lite_exact"
+        entry = {
+            "source_sha1": source_hash, "output_sha1": output_hash,
+            "origin": origin,
+            "reason": reason,
+            "terms": terms[:32],
+            "rules": list(getattr(self._tls, "rule_results", ()))[:32],
+            "model": getattr(self.srv, "model_id", ""),
+            "pipeline": self._pipeline_version(),
+        }
+        with self._stat_lock:
+            self.provenance["%s::%s" % (rel.replace("\\", "/"), eid)] = entry
+
+    def _save_provenance(self, done_dir):
+        if not self.provenance:
+            return
+        path = os.path.join(done_dir, ".ai_translate_provenance.json")
+        previous = {}
+        previous_pipeline = ""
+        try:
+            with open(path, "r", encoding="utf-8") as handle:
+                old = json.load(handle)
+            if isinstance(old, dict) and isinstance(old.get("entries"), dict):
+                previous = old["entries"]
+                previous_pipeline = old.get("pipeline", "")
+        except (OSError, ValueError):
+            pass
+        current_keys = set(self.provenance)
+        previous_keys = set(previous)
+        common = current_keys & previous_keys
+        changes = {
+            "added": len(current_keys - previous_keys),
+            "removed": len(previous_keys - current_keys),
+            "changed": sum(self.provenance[key] != previous[key] for key in common),
+        }
+        samples = {
+            "added": sorted(current_keys - previous_keys)[:50],
+            "removed": sorted(previous_keys - current_keys)[:50],
+            "changed": sorted(key for key in common
+                              if self.provenance[key] != previous[key])[:50],
+        }
+        payload = {"_format": "ai-translate-provenance/1",
+                   "pipeline": self._pipeline_version(),
+                   "previous_pipeline": previous_pipeline,
+                   "changes": changes, "change_samples": samples,
+                   "entries": self.provenance}
+        try:
+            self._write_atomic(path, lambda tmp: self._write_json_file(tmp, payload))
+        except OSError:
+            self.log("条目来源记录写入失败（不影响译文，但无法审计）", "warn")
+
+    @staticmethod
+    def _write_json_file(path, payload):
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump(payload, handle, ensure_ascii=False, sort_keys=True)
+
+    @staticmethod
+    def _xml_roundtrip_text(text):
+        return re.sub(r"&(?!#\d+;|#x[0-9A-Fa-f]+;|[A-Za-z_][\w.-]*;)",
+                      "&amp;", text)
+
+    @staticmethod
+    def _xml_roundtrip_signature(element, language_content=False):
+        attrs = tuple(sorted(element.attrib.items()))
+        is_language = (not language_content
+                       and str(element.tag).lower() in _XML_LANGUAGE_TAGS)
+        text = "" if is_language else (element.text or "")
+        tail = " ".join((element.tail or "").split())
+        if element.tag is ET.Comment:
+            return ("comment", element.text or "", tail)
+        children = tuple(OfflineTranslationJob._xml_roundtrip_signature(
+            child, language_content or is_language) for child in element)
+        return (element.tag, attrs, text, children, tail)
+
+    @staticmethod
+    def _newline_signature(raw):
+        return (b"\r\n" in raw,
+                re.search(rb"(?<!\r)\n", raw) is not None,
+                re.search(rb"\r(?!\n)", raw) is not None)
+
+    def _verify_table_roundtrip(self, full, out_path, rel):
+        try:
+            with open(full, "rb") as handle:
+                source_raw = handle.read()
+            with open(out_path, "rb") as handle:
+                output_raw = handle.read()
+            source_text = source_raw.decode(read_encoding_chain(full)[0])
+            output_text = output_raw.decode(read_encoding_chain(out_path)[0])
+            source_xml = ET.fromstring(self._xml_roundtrip_text(source_text),
+                                       parser=ET.XMLParser(
+                                           target=ET.TreeBuilder(insert_comments=True)))
+            output_xml = ET.fromstring(self._xml_roundtrip_text(output_text),
+                                       parser=ET.XMLParser(
+                                           target=ET.TreeBuilder(insert_comments=True)))
+            source = self._parse(self.p.parse_xray_text_xml, full,
+                                 read_encoding_chain(full), strict=True)
+            output = self._parse(self.p.parse_xray_text_xml, out_path,
+                                 read_encoding_chain(out_path), strict=True)
+        except Exception as exc:
+            return ["%s（round-trip 解析失败：%s）" % (rel, str(exc)[:60])]
+        source_ids = [ent.id for ent in source or []]
+        output_ids = [ent.id for ent in output or []]
+        issues = []
+        if len(source_ids) != len(set(source_ids)):
+            issues.append("%s（源表存在重复 ID）" % rel)
+        if len(output_ids) != len(set(output_ids)):
+            issues.append("%s（重复 ID）" % rel)
+        missing = set(source_ids) - set(output_ids)
+        extra = set(output_ids) - set(source_ids)
+        if missing:
+            issues.append("%s（round-trip 缺 %d 个 ID）" % (rel, len(missing)))
+        if extra:
+            issues.append("%s（round-trip 多 %d 个 ID）" % (rel, len(extra)))
+        elif source_ids != output_ids:
+            issues.append("%s（ID 顺序变化）" % rel)
+        if self._xml_roundtrip_signature(source_xml) != self._xml_roundtrip_signature(output_xml):
+            issues.append("%s（XML 属性、注释或结构变化）" % rel)
+        if source_raw.startswith(b"\xef\xbb\xbf") != output_raw.startswith(b"\xef\xbb\xbf"):
+            issues.append("%s（BOM 未保持）" % rel)
+        source_newlines = self._newline_signature(source_raw)
+        output_newlines = self._newline_signature(output_raw)
+        if any(source_newlines) and source_newlines != output_newlines:
+            issues.append("%s（换行风格未保持）" % rel)
+        if read_encoding_chain(out_path)[0] not in _core_xray._ENC_UTF8:
+            issues.append("%s（输出不是 UTF-8）" % rel)
+        declaration = _XML_DECL_ENCODING.search(output_raw[:2048])
+        if not declaration or declaration.group(1).lower() not in (b"utf-8", b"utf8"):
+            issues.append("%s（XML 编码声明不是 utf-8）" % rel)
+        return issues
+
     def _data_root(self):
         return self._configured_data_root
 
@@ -273,7 +503,21 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         return self._writable_fn(path)
 
     def _pipeline_version(self):
-        return self._configured_pipeline_version
+        if self._pipeline_hash_cache is None:
+            payload = {
+                "version": self._configured_pipeline_version,
+                "model": getattr(self.srv, "model_id", ""),
+                "prompt": getattr(self.srv, "prompt_mode", ""),
+                "sampling": getattr(self.srv, "sampling", {}),
+                "target": self.tgt,
+                "glossary": self.glossary,
+                "termbase": self.termbase.fingerprint(),
+            }
+            blob = json.dumps(payload, ensure_ascii=False, sort_keys=True,
+                              separators=(",", ":"))
+            digest = hashlib.sha1(blob.encode("utf-8"), usedforsecurity=False).hexdigest()
+            self._pipeline_hash_cache = self._configured_pipeline_version + ":" + digest
+        return self._pipeline_hash_cache
 
     def _cut_text(self, text):
         return self.p.cutTextWithSeparator(text)
@@ -416,7 +660,9 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         self._tm_cache.setdefault(self._tm_key(text, lang), out)
 
     def _temp_for_style(self):
-        return _core_pipeline.temp_for_style(self._style_hint, self.dialogue_temp)
+        return _core_pipeline.temp_for_style(
+            self._style_hint, self.dialogue_temp,
+            formal_temp=self.formal_temp, label_temp=self.label_temp)
 
     def _rule_hit(self, kind, outcome):
         """规则违规遥测：kind=规则名，outcome=retried_ok/fixed/
@@ -425,6 +671,9 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
             s = self._audit_stats.setdefault(kind, {})
             s["hits"] = s.get("hits", 0) + 1
             s[outcome] = s.get(outcome, 0) + 1
+            results = getattr(self._tls, "rule_results", None)
+            if results is not None and len(results) < 32:
+                results.append({"rule": kind, "outcome": outcome})
 
     def _audit_report(self):
         """任务收尾的「提示词体检」：按触发次数排序点名最高频违规规则。
@@ -461,6 +710,12 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
 
     def _repair_known_semantic_terms(self, src, out, lang=""):
         return _core_pipeline.repair_known_semantic_terms(src, out, lang)
+
+    def _enforce_preferred_terms(self, src, out):
+        return _core_matching.enforce_preferred_terms(
+            src, out, self.gloss, self.glossary, self.gloss_hard,
+            self.gloss_quote_required, self.termbase.load_layers().get("details"),
+            self.detail)
 
     def _session_tables(self):
         """当前 MOD 的文本表（兼容 configs/text 与 config/text 两种布局）。"""
@@ -568,8 +823,8 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
             return
         raw = "\n".join("%s|%s|%s" % (v[3], v[4], v[0])
                         for v in sorted(cand.values()))
-        fp = hashlib.sha1(raw.encode("utf-8", "replace"),
-                          usedforsecurity=False).hexdigest()
+        fp = hashlib.sha1((raw + "\n" + self._pipeline_version()).encode(
+            "utf-8", "replace"), usedforsecurity=False).hexdigest()
         cache_path = os.path.join(self.session_cache_dir, fp + ".json")
         cached = {}
         try:
@@ -612,6 +867,10 @@ class OfflineTranslationJob(SingleTextPipeline, TablePipeline, ProjectPipeline, 
         self.session_only_keys = set(merged)
         for src, dst in merged.items():
             self.glossary[src] = dst
+        if self.gloss_hard is not None:
+            self.gloss_hard |= set(merged)
+        self._glossary_revision += 1
+        self._pipeline_hash_cache = None
         self.gloss = self._new_gloss_index()
         try:
             os.makedirs(self.session_cache_dir, exist_ok=True)

@@ -15,7 +15,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .security import allowed_path
+from .security import SecurityError, allowed_path
 
 NL_MARK = "\\n"  # TSV 内的换行占位，merge 端还原
 DIALOG_MODE_LIMIT_UNIQUE = 3000     # 超过建议引擎轨
@@ -141,11 +141,20 @@ class AgentKit:
               target_lang: str = "chs") -> dict:
         if answers_file == "-":
             import sys
-            answers_raw = sys.stdin.read()
+            limit = max(1, int(self.cfg.max_file_bytes))
+            answers_raw = sys.stdin.read(limit + 1)
+            if len(answers_raw.encode("utf-8")) > limit:
+                raise ValueError("答案输入超过大小限制")
         else:
-            path = Path(answers_file)
+            path = allowed_path(answers_file, self.cfg)
             if not path.is_file():
                 raise ValueError("答案文件不存在：%s" % answers_file)
+            if path.name.lower() in {
+                    ".env", "config.json", "credentials.json", "id_rsa",
+                    "id_ed25519"} or path.suffix.lower() in {".pem", ".key"}:
+                raise SecurityError("拒绝读取敏感文件：%s" % path.name)
+            if path.stat().st_size > self.cfg.max_file_bytes:
+                raise ValueError("答案文件超过大小限制")
             answers_raw = path.read_text(encoding="utf-8-sig")
         base = self._collect_unique(input_dir, output_dir, source_lang,
                                     target_lang)

@@ -1,0 +1,318 @@
+[
+  {
+    "model": "Hy-MT3-1.8B-Q4_K_M.gguf",
+    "temperature": 0.7,
+    "ok": false,
+    "failed_strings": 0,
+    "audit": {
+      "ok": false,
+      "hard_problems": 1,
+      "warnings": 2,
+      "counts": {
+        "missing_files": 0,
+        "empty_files": 0,
+        "unparseable_tables": 0,
+        "missing_ids": 0,
+        "mask_residue": 0,
+        "untranslated_entries": 0,
+        "context_bleed": 0,
+        "cross_entry_contamination": 0,
+        "latin_residue_review": 1,
+        "runtime_token_damage": 0,
+        "semantic_role_conflicts": 1,
+        "glossary_conflicts": 0,
+        "name_consistency": 0,
+        "partial_translation_review": 1,
+        "unchanged_outputs": 0,
+        "dangling_generated_ids": 0,
+        "amp_warnings": 0,
+        "ledger_files": 1,
+        "text_tables": 1
+      },
+      "details": {
+        "missing_files": [],
+        "empty_files": [],
+        "unparseable_tables": [],
+        "missing_ids": [],
+        "mask_residue": [],
+        "untranslated_entries": [],
+        "context_bleed": [],
+        "cross_entry_contamination": [],
+        "latin_residue_review": [
+          "probe.xml（7 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text…）"
+        ],
+        "runtime_token_damage": [],
+        "semantic_role_conflicts": [
+          "probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）"
+        ],
+        "glossary_conflicts": [],
+        "name_consistency": [],
+        "partial_translation_review": [
+          "probe.xml（7 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text…）"
+        ],
+        "unchanged_outputs": [],
+        "dangling_generated_ids": [],
+        "amp_warnings": []
+      }
+    },
+    "seconds": 9.422,
+    "translations": {},
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 53623",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling__k4v9y2o\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696349.log",
+      "[info] 引擎就绪（用时 2 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'你好。'",
+      "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+      "[info] 进度 1/1（100%）：probe.xml",
+      "[info] 已清理 1 个空目录",
+      "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 1 处，警告 2 处",
+      "[warn]   终检｜任务/对话语义方向冲突：probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）",
+      "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（7 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text…）",
+      "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（7 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text…）",
+      "[info] 提示词体检：粘连残词（8 次 / 重试成功 1 / 保留首译 7）",
+      "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+      "[warn] 未全部完成：已生成的内容保留，失败/待复核条目下次运行会重译",
+      "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling_work_wdpewe9c\\out_Hy-MT3-1.8B-Q4_K_M_0.7",
+      "[info] 引擎已停止"
+    ]
+  },
+  {
+    "model": "Hy-MT3-1.8B-Q4_K_M.gguf",
+    "temperature": 0.1,
+    "ok": false,
+    "failed_strings": 0,
+    "audit": {
+      "ok": false,
+      "hard_problems": 1,
+      "warnings": 2,
+      "counts": {
+        "missing_files": 0,
+        "empty_files": 0,
+        "unparseable_tables": 0,
+        "missing_ids": 0,
+        "mask_residue": 0,
+        "untranslated_entries": 0,
+        "context_bleed": 0,
+        "cross_entry_contamination": 0,
+        "latin_residue_review": 1,
+        "runtime_token_damage": 0,
+        "semantic_role_conflicts": 1,
+        "glossary_conflicts": 0,
+        "name_consistency": 0,
+        "partial_translation_review": 1,
+        "unchanged_outputs": 0,
+        "dangling_generated_ids": 0,
+        "amp_warnings": 0,
+        "ledger_files": 1,
+        "text_tables": 1
+      },
+      "details": {
+        "missing_files": [],
+        "empty_files": [],
+        "unparseable_tables": [],
+        "missing_ids": [],
+        "mask_residue": [],
+        "untranslated_entries": [],
+        "context_bleed": [],
+        "cross_entry_contamination": [],
+        "latin_residue_review": [
+          "probe.xml（8 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, cit_doctor_docs_dialog_3, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text…）"
+        ],
+        "runtime_token_damage": [],
+        "semantic_role_conflicts": [
+          "probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）"
+        ],
+        "glossary_conflicts": [],
+        "name_consistency": [],
+        "partial_translation_review": [
+          "probe.xml（8 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, cit_doctor_docs_dialog_3, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text…）"
+        ],
+        "unchanged_outputs": [],
+        "dangling_generated_ids": [],
+        "amp_warnings": []
+      }
+    },
+    "seconds": 9.156,
+    "translations": {},
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 52380",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling__k4v9y2o\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696361.log",
+      "[info] 引擎就绪（用时 2 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'嗨。'",
+      "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+      "[info] 进度 1/1（100%）：probe.xml",
+      "[info] 已清理 1 个空目录",
+      "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 1 处，警告 2 处",
+      "[warn]   终检｜任务/对话语义方向冲突：probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）",
+      "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（8 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, cit_doctor_docs_dialog_3, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text…）",
+      "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（8 条：pri_monolith_monolith_trader_stalker_task_5_fetch_about, cit_doctor_docs_dialog_3, val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text…）",
+      "[info] 提示词体检：粘连残词（8 次 / 保留首译 8）",
+      "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+      "[warn] 未全部完成：已生成的内容保留，失败/待复核条目下次运行会重译",
+      "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling_work_wdpewe9c\\out_Hy-MT3-1.8B-Q4_K_M_0.1",
+      "[info] 引擎已停止"
+    ]
+  },
+  {
+    "model": "Hy-MT3-1.8B-Q8_0.gguf",
+    "temperature": 0.7,
+    "ok": false,
+    "failed_strings": 0,
+    "audit": {
+      "ok": false,
+      "hard_problems": 1,
+      "warnings": 2,
+      "counts": {
+        "missing_files": 0,
+        "empty_files": 0,
+        "unparseable_tables": 0,
+        "missing_ids": 0,
+        "mask_residue": 0,
+        "untranslated_entries": 0,
+        "context_bleed": 0,
+        "cross_entry_contamination": 0,
+        "latin_residue_review": 1,
+        "runtime_token_damage": 0,
+        "semantic_role_conflicts": 1,
+        "glossary_conflicts": 0,
+        "name_consistency": 0,
+        "partial_translation_review": 1,
+        "unchanged_outputs": 0,
+        "dangling_generated_ids": 0,
+        "amp_warnings": 0,
+        "ledger_files": 1,
+        "text_tables": 1
+      },
+      "details": {
+        "missing_files": [],
+        "empty_files": [],
+        "unparseable_tables": [],
+        "missing_ids": [],
+        "mask_residue": [],
+        "untranslated_entries": [],
+        "context_bleed": [],
+        "cross_entry_contamination": [],
+        "latin_residue_review": [
+          "probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）"
+        ],
+        "runtime_token_damage": [],
+        "semantic_role_conflicts": [
+          "probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）"
+        ],
+        "glossary_conflicts": [],
+        "name_consistency": [],
+        "partial_translation_review": [
+          "probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）"
+        ],
+        "unchanged_outputs": [],
+        "dangling_generated_ids": [],
+        "amp_warnings": []
+      }
+    },
+    "seconds": 9.0,
+    "translations": {},
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 57689",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling__k4v9y2o\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696373.log",
+      "[info] 引擎就绪（用时 2 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'嗨。'",
+      "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+      "[info] 进度 1/1（100%）：probe.xml",
+      "[info] 已清理 1 个空目录",
+      "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 1 处，警告 2 处",
+      "[warn]   终检｜任务/对话语义方向冲突：probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）",
+      "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）",
+      "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）",
+      "[info] 提示词体检：粘连残词（6 次 / 保留首译 6）",
+      "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+      "[warn] 未全部完成：已生成的内容保留，失败/待复核条目下次运行会重译",
+      "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling_work_wdpewe9c\\out_Hy-MT3-1.8B-Q8_0_0.7",
+      "[info] 引擎已停止"
+    ]
+  },
+  {
+    "model": "Hy-MT3-1.8B-Q8_0.gguf",
+    "temperature": 0.1,
+    "ok": false,
+    "failed_strings": 0,
+    "audit": {
+      "ok": false,
+      "hard_problems": 1,
+      "warnings": 2,
+      "counts": {
+        "missing_files": 0,
+        "empty_files": 0,
+        "unparseable_tables": 0,
+        "missing_ids": 0,
+        "mask_residue": 0,
+        "untranslated_entries": 0,
+        "context_bleed": 0,
+        "cross_entry_contamination": 0,
+        "latin_residue_review": 1,
+        "runtime_token_damage": 0,
+        "semantic_role_conflicts": 1,
+        "glossary_conflicts": 0,
+        "name_consistency": 0,
+        "partial_translation_review": 1,
+        "unchanged_outputs": 0,
+        "dangling_generated_ids": 0,
+        "amp_warnings": 0,
+        "ledger_files": 1,
+        "text_tables": 1
+      },
+      "details": {
+        "missing_files": [],
+        "empty_files": [],
+        "unparseable_tables": [],
+        "missing_ids": [],
+        "mask_residue": [],
+        "untranslated_entries": [],
+        "context_bleed": [],
+        "cross_entry_contamination": [],
+        "latin_residue_review": [
+          "probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）"
+        ],
+        "runtime_token_damage": [],
+        "semantic_role_conflicts": [
+          "probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）"
+        ],
+        "glossary_conflicts": [],
+        "name_consistency": [],
+        "partial_translation_review": [
+          "probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）"
+        ],
+        "unchanged_outputs": [],
+        "dangling_generated_ids": [],
+        "amp_warnings": []
+      }
+    },
+    "seconds": 9.11,
+    "translations": {},
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 62663",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling__k4v9y2o\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696385.log",
+      "[info] 引擎就绪（用时 2 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'嗨。'",
+      "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+      "[info] 进度 1/1（100%）：probe.xml",
+      "[info] 已清理 1 个空目录",
+      "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 1 处，警告 2 处",
+      "[warn]   终检｜任务/对话语义方向冲突：probe.xml（1 条：esc_2_12_stalker_nimble_about_1114…）",
+      "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）",
+      "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（6 条：val_smart_terrain_7_3_bandit_mechanic_stalker_task_1_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_2_text, val_smart_terrain_7_3_bandit_mechanic_stalker_task_3_text…）",
+      "[info] 提示词体检：粘连残词（6 次 / 保留首译 6）",
+      "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+      "[warn] 未全部完成：已生成的内容保留，失败/待复核条目下次运行会重译",
+      "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_sampling_work_wdpewe9c\\out_Hy-MT3-1.8B-Q8_0_0.1",
+      "[info] 引擎已停止"
+    ]
+  }
+]

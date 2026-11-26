@@ -39,6 +39,11 @@ def version() -> str:
     return str(data["plugin_1_9x"])
 
 
+def core_version() -> str:
+    data = json.loads((ROOT / "versions.json").read_text(encoding="utf-8"))
+    return str(data["core"])
+
+
 def zip_path(out_dir: Path = DIST) -> Path:
     return out_dir / ("ai_translate_plugin_v%s.zip" % version())
 
@@ -82,7 +87,7 @@ def build_manifest(out_dir: Path = DIST) -> dict[str, Any]:
     data = {
         "product": "plugin_1_9x",
         "version": version(),
-        "core": "1.0.0",
+        "core": core_version(),
         "package": target.name,
         "package_size": target.stat().st_size,
         "package_sha256": sha256(target),
@@ -125,6 +130,8 @@ def check(out_dir: Path = DIST) -> int:
     data = json.loads(manifest.read_text(encoding="utf-8"))
     if data.get("version") != version():
         errors.append("清单版本与 versions.json 不一致")
+    if data.get("core") != core_version():
+        errors.append("清单 core 版本与 versions.json 不一致")
     if data.get("package_sha256") != sha256(target):
         errors.append("清单包哈希与 zip 不一致")
     if data.get("entry_sha256") != sha256(PLUGIN):

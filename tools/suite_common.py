@@ -11,7 +11,9 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
-PRODUCTS = ("plugin_2x", "plugin_1_9x", "mcp_hermes", "mcp_online", "skill")
+ACTIVE_PRODUCTS = ("plugin_2x", "plugin_1_9x", "mcp_hermes", "mcp_online", "skill")
+PENDING_PRODUCTS = ("voice_plugin",)
+PRODUCTS = ACTIVE_PRODUCTS + PENDING_PRODUCTS
 
 
 def load_json(path: str | Path) -> Any:

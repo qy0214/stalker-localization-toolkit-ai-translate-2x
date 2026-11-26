@@ -304,13 +304,15 @@ class ProjectPipeline:
         items = list(enumerate(tables, 1))
         done_n = 0
         trans_total = 0
-        ent_total = 0
+        ent_total = todo
         trans_tables = 0
 
         def _report(rel):
             """每处理完一张文本表就回报一次：已处理张数 / 总张数 + 累计翻译量。"""
             self.progress({"file": rel, "file_idx": done_n, "files": n_tables,
                            "ids": trans_total, "total_ids": ent_total,
+                           "entries_total": total,
+                           "entries_translatable": ent_total,
                            "tabs": trans_tables, "pending": self.pending_files,
                            "reqs": self.req_count, "unit": "个文件"})
 
@@ -330,7 +332,6 @@ class ProjectPipeline:
                     idx, rel, st = fut.result()
                     done_n += 1
                     trans_total += st["translated"]
-                    ent_total += st.get("total", 0)
                     if st["translated"]:
                         trans_tables += 1
                     results.append((idx, rel, st))
@@ -345,7 +346,6 @@ class ProjectPipeline:
                 idx, rel, st = _one(item)
                 done_n += 1
                 trans_total += st["translated"]
-                ent_total += st.get("total", 0)
                 if st["translated"]:
                     trans_tables += 1
                 results.append((idx, rel, st))
@@ -751,6 +751,7 @@ class ProjectPipeline:
 
     def _run_text_file(self, fn, full, out_path, temp_path, reuse, idx, total):
         """返回条目数；0 表示无变化，-1 表示取消，-2 表示写盘失败。"""
+        rel = os.path.relpath(full, self.in_dir)
         chain = read_encoding_chain(full)
         before_parse = len(getattr(self, "_parse_failures", ()))
         texts = self._parse(self.p.parse_xray_text_xml, full, chain)
@@ -787,6 +788,7 @@ class ProjectPipeline:
                 "style": self._entry_style(full, src0 or ""),
             })
         batched = set()
+        reused = set()
         if "dialog" in full.lower() and not self.force_glossary:
             def _ok(meta):
                 src0 = meta["src"]
@@ -857,61 +859,45 @@ class ProjectPipeline:
                 continue
             if ent.id in reuse:
                 done[ent.id] = reuse[ent.id]
+                reused.add(ent.id)
                 continue
             lang, src = self._pick_source(ent)
-            if self.tgt == lang:
+            if self.tgt == lang or self._looks_like_target(src):
                 done[ent.id] = src
-            elif src and lang == "text" and self.src_lang == "auto" \
-                    and self._looks_like_target(src):
-                done[ent.id] = src
+                self._record_filter_decision(rel, ent.id, "keep", "target_language")
             elif src:
-                exact = src.strip()
-                if (exact in self.glossary
-                        and (exact not in self.session_only_keys
-                             or is_player_facing_label(full, src))
-                        and not looks_like_hard_protected_file(full)):
-                    lead = src[:len(src) - len(src.lstrip())]
-                    trail = src[len(src.rstrip()):]
-                    translated = lead + self.glossary[exact] + trail
-                    if translated != src:
+                action, value, reason = self._filter_decision(
+                    rel, ent.id, src, lang)
+                self._record_filter_decision(rel, ent.id, action, reason)
+                if action == "keep":
+                    done[ent.id] = src
+                elif action == "skip":
+                    done[ent.id] = src
+                elif action == "exact":
+                    done[ent.id] = value
+                else:
+                    use_lang = self.src_lang if self.src_lang != "auto" else lang
+                    # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
+                    # 自动模式下按本条正文的字母构成覆盖字段判断。
+                    if use_lang != "ukr":
+                        det = detect_text_lang(src)
+                        if det and det != use_lang:
+                            use_lang = det
+                    style = self._entry_style(full, src)
+                    ctx = ""
+                    if style == "dialogue" and "dialog" in full.lower():
+                        ctx = self._scene_context(metas, n - 1)
+                    try:
+                        translated = self._translate_one(
+                            src, use_lang, context=ctx, style=style)
                         done[ent.id] = translated
-                    continue
-                if not looks_like_hard_protected_file(full):
-                    exact_term = (self._termbase_exact_translation(src)
-                                  if exact not in self.glossary else None)
-                    if exact_term is not None and exact_term != src:
-                        done[ent.id] = exact_term
-                        continue
-                    pattern = (pattern_translate(src, self._termbase_exact_translation)
-                               if exact not in self.glossary else None)
-                    if pattern is not None and pattern != src:
-                        done[ent.id] = pattern
-                        continue
-                if not _has_translatable_text(src):
-                    done[ent.id] = src
-                    continue
-                use_lang = self.src_lang if self.src_lang != "auto" else lang
-                # 字段名不可靠：不少 MOD 把英语放进 <rus>，或把俄语放进 <text>。
-                # 自动模式下按本条正文的字母构成覆盖字段判断。
-                if use_lang in ("auto", "text", "rus", "eng"):
-                    det = detect_text_lang(src)
-                    if det and det != use_lang:
-                        use_lang = det
-                style = self._entry_style(full, src)
-                ctx = ""
-                if style == "dialogue" and "dialog" in full.lower():
-                    ctx = self._scene_context(metas, n - 1)
-                try:
-                    translated = self._translate_one(
-                        src, use_lang, context=ctx, style=style)
-                    done[ent.id] = translated
-                    if translated.strip() == src.strip():
+                        if translated.strip() == src.strip():
+                            self.failed_strings += 1
+                    except Exception as e:
                         self.failed_strings += 1
-                except Exception as e:
-                    self.failed_strings += 1
-                    self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
-                                % (ent.id, type(e).__name__, e))
-                    done[ent.id] = src
+                        self.detail("  条目翻译失败，保留原文：%s（%s: %s）"
+                                    % (ent.id, type(e).__name__, e))
+                        done[ent.id] = src
             else:
                 done[ent.id] = ""
             if time.time() - self._temp_clock > 120:
@@ -926,34 +912,47 @@ class ProjectPipeline:
             return 0
         rel = os.path.relpath(full, self.in_dir)
         try:
-            if any(meta["lang"] != "text" for meta in metas):
-                changes = {
-                    meta["id"]: (meta["lang"], done[meta["id"]])
-                    for meta in metas
-                    if done.get(meta["id"], "") != meta["src"]
-                }
-                try:
-                    open(full, "rb").read().decode("utf-8-sig")
-                    utf8_table = True
-                except (OSError, UnicodeDecodeError):
-                    utf8_table = False
-                wrote = (self._write_table_changes(full, out_path, changes, rel)
-                         if utf8_table else
-                         self._write_table_as_utf8(full, out_path, texts,
-                                                   changes, rel))
-                if not wrote:
-                    raise OSError("语言标签原文定位或写入失败")
-            else:
-                self._write_atomic(
-                    out_path,
-                    lambda p: self.p.generateOutputXml(
-                        p, done, splitLength=1000))
+            changes = {
+                meta["id"]: (meta["lang"], done[meta["id"]])
+                for meta in metas
+                if done.get(meta["id"], "") != meta["src"]
+            }
+            try:
+                with open(full, "rb") as handle:
+                    handle.read().decode("utf-8-sig")
+                utf8_table = True
+            except (OSError, UnicodeDecodeError):
+                utf8_table = False
+            wrote = (self._write_table_changes(full, out_path, changes, rel)
+                     if utf8_table else
+                     self._write_table_as_utf8(full, out_path, texts,
+                                               changes, rel))
+            if not wrote:
+                raise OSError("语言标签原文定位或写入失败")
         except Exception as e:
             with self._ledger_lock:
                 self._ledger.pop(rel.replace("\\", "/"), None)
             self.detail("  文本表写入失败，未记录完成：%s（%s: %s）"
                         % (rel, type(e).__name__, e))
             return -2
+        issues = self._verify_table_roundtrip(full, out_path, rel)
+        if issues:
+            with self._ledger_lock:
+                self._ledger.pop(rel.replace("\\", "/"), None)
+            for issue in issues:
+                self.detail("  回写校验失败：%s（%s）" % (issue, rel))
+            return -2
+        for meta in metas:
+            eid = meta["id"]
+            new_text = done.get(eid, "")
+            if not new_text or new_text == meta["src"]:
+                continue
+            reason = self._filter_reason.get((rel, eid), "")
+            origin = "reuse" if eid in reused else (
+                "model_batch" if eid in batched else
+                "deterministic" if reason.endswith("exact") or reason == "proper_partial"
+                else "model")
+            self._record_provenance(rel, eid, meta["src"], new_text, origin)
         self._audit_tables.add(rel)
         self.progress({"file": fn, "ids": len(texts), "total_ids": len(texts),
                        "file_idx": idx, "files": total, "reqs": self.req_count,
@@ -967,9 +966,13 @@ class ProjectPipeline:
         for root, dirs, files in os.walk(self.in_dir):
             kept = []
             for d in dirs:
-                if d.endswith(".git") or d in ("__temp__", "translated_hy_mt2"):
+                if (d.endswith(".git") or d in ("__temp__", "translated_hy_mt2")
+                        or d.lower().startswith("translated_")):
                     continue
-                ap = os.path.normcase(os.path.abspath(os.path.join(root, d)))
+                child = os.path.join(root, d)
+                if os.path.isfile(os.path.join(child, ".ai_translate_done.json")):
+                    continue
+                ap = os.path.normcase(os.path.abspath(child))
                 if any(ap == ex or ap.startswith(ex + os.sep)
                        for ex in self._excluded_paths):
                     continue
@@ -1164,9 +1167,11 @@ class ProjectPipeline:
                 return None
             try:
                 lang = self.src_lang
-                if lang in ("auto", "text"):
-                    lang = (detect_text_lang(send) or self._lang_hint
-                            or "rus")
+                detected = detect_text_lang(send)
+                if detected and lang != "ukr":
+                    lang = detected
+                elif lang in ("auto", "text"):
+                    lang = self._lang_hint or "rus"
                 transed = self._translate_one(send, lang)
             except Exception as e:
                 self.failed_strings += 1

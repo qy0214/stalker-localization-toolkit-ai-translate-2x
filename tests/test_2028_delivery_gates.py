@@ -169,7 +169,7 @@ def test_ledger_pipeline_and_rel_name():
     job._ledger[rel]["pipeline"] = "2.0.27"
     check("T3-2 旧版 pipeline 强制重译",
           not job._should_skip(rel, src, dst, "text"))
-    job._ledger[rel]["pipeline"] = ait.PLUGIN_INFO["version"]
+    job._ledger[rel]["pipeline"] = job._pipeline_version()
     check("T3-3 当前 pipeline 且指纹一致才跳过",
           job._should_skip(rel, src, dst, "text"))
 

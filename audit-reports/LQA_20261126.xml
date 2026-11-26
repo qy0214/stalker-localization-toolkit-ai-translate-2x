@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites tests="360" failures="0">
+  <testsuite name="lqa" tests="360" failures="0">
+    <testcase name="configs/text/rus/st_items_outfit.xml::exo_proto_outfit_5_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-b7f17febaf39-exo_proto_outfit_5_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::bar_barman_wait_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2db599060b1e-bar_barman_wait_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_craft.xml::esc_stalker_klin_craft_127001104" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-990a5960c2e9-esc_stalker_klin_craft_127001104", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::sultan_st_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-bce7b24613ea-sultan_st_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::main_monolith_mlr_task_4_dlg_3_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-742637c3de5b-main_monolith_mlr_task_4_dlg_3_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::talk_to_gar_outpost_dolg_main_soldier_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e5071b3fbf10-talk_to_gar_outpost_dolg_main_soldier_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_bar.xml::bar_arena_manager_game_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c7cea7b70991-bar_arena_manager_game_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::about_order_not_merc_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-23cffa213d2b-about_order_not_merc_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialog_manager.xml::dm_tips_37" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-8850b119e50b-dm_tips_37", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_military.xml::mil_smart_terrain_7_7_freedom_leader_stalker_task_3_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3aa3c04ed528-mil_smart_terrain_7_7_freedom_leader_stalker_task_3_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_loadscreen.xml::ls_tip_57" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-8ae9f2ebbc3b-ls_tip_57", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_auts_c3_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-05800e351c06-st_up_auts_c3_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_jupiter.xml::jup_a6_freedom_leader_about_you_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-cb196973b296-jup_a6_freedom_leader_about_you_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_up_tch_a4_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c0c8de70343a-st_up_tch_a4_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_quests.xml::drx_sl_bar_visitors_barman_stalker_trader_task_3_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-66ee9c236d67-drx_sl_bar_visitors_barman_stalker_trader_task_3_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::request_to_no_trade_dialog_monolith_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5ba45dc78ccd-request_to_no_trade_dialog_monolith_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_las.xml::hog_start_dialog_21" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2aa42032e678-hog_start_dialog_21", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_79233000010102" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0fb2619cdab1-esc_stalker_klin_craft_79233000010102", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_stalker_chasing_squad_monolith" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3ad1c9351c52-dm_stalker_chasing_squad_monolith", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_up_zatp_c4_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-75edcb55c3c3-st_up_zatp_c4_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_military.xml::mil_smart_terrain_7_7_freedom_leader_stalker_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-ad29be08c1b9-mil_smart_terrain_7_7_freedom_leader_stalker_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_flash.xml::universal_tech_flashdisk_42" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3f23d0f33d3e-universal_tech_flashdisk_42", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_repair_kit_p_empty_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-fecbe2cb5447-st_repair_kit_p_empty_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::change_faction_to_dolg_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f16e0984f82d-change_faction_to_dolg_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_prop_scope_1.6x" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-4aab2f490482-st_prop_scope_1.6x", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_556450000101" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-bddcf598d286-esc_stalker_klin_craft_556450000101", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_bad_ammo.xml::ammo-gauss_bad" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5b366cc7b1e7-ammo-gauss_bad", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dynamic_news.xml::st_dyn_news_comm_monolith_13" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-376faa459da8-st_dyn_news_comm_monolith_13", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_stable_treasures_manager.xml::st_esc_treasure_novice_stalker_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-25377eb9c5e8-st_esc_treasure_novice_stalker_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_a2_stalker_mechanic_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e1f052dfff2f-zat_a2_stalker_mechanic_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_general.xml::simulation_task_84_fetch_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3a2484d9cd89-simulation_task_84_fetch_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::monolith_show_path_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-9f4f16c8ea22-monolith_show_path_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_information_50" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0946df966b95-dm_information_50", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::gar_smart_terrain_5_4_main_dolg_soldier_task_1_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-9852e83a98df-gar_smart_terrain_5_4_main_dolg_soldier_task_1_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::wings_soldier_mon_mlr_2_talk0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2861bf4c513b-wings_soldier_mon_mlr_2_talk0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_a2_stalker_mechanic_task_2_fetch_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-683aec6cc182-zat_a2_stalker_mechanic_task_2_fetch_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_m14_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a78adcc8d3db-st_wpn_m14_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_screen.xml::st_freeplay_text_ok" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-6076c3a7b707-st_freeplay_text_ok", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_jupiter.xml::jup_b220_trapper_task_3_fetch_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e84189eb148b-jup_b220_trapper_task_3_fetch_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_04500001" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-6c369495e99c-esc_stalker_klin_craft_04500001", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs.xml::about_quests_dialog_dolg_71" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d1e67dcded70-about_quests_dialog_dolg_71", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::inf_craft_14" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7ea64bc84216-inf_craft_14", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_craft.xml::esc_stalker_klin_craft_919000010103" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0b2cfcc30fcf-esc_stalker_klin_craft_919000010103", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_barrelkit_556" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-308fe6a2a985-st_barrelkit_556", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::drink_with_me_58" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-996637939739-drink_with_me_58", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dynamic_news.xml::st_dyn_news_gossip_task_hostage_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-345c6e51eb96-st_dyn_news_gossip_task_hostage_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_treasures.xml::st_mar_q_n_13_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-4519fa46e1b5-st_mar_q_n_13_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_jupiter.xml::jup_b217_stalker_tech_task_3_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-09f6576c4373-jup_b217_stalker_tech_task_3_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialog_manager.xml::st_task_default_excuse_cancel_job" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-461236576112-st_task_default_excuse_cancel_job", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_flash.xml::universal_tech_flashdisk_63" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a3dc4b9ed64d-universal_tech_flashdisk_63", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_quest.xml::st_toolkit_1_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-b281ba99522d-st_toolkit_1_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_flash.xml::universal_tech_flashdisk_23" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f1f54106efba-universal_tech_flashdisk_23", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_556_barrelr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0bfb9e2fe63a-st_556_barrelr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_stable_treasures_manager.xml::st_mil_smart_terrain_2_4_box_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-36f414da08c2-st_mil_smart_terrain_2_4_box_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::detector_repair_bandit_meh_teh_advn_done_10" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-8cf050343a22-detector_repair_bandit_meh_teh_advn_done_10", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_general.xml::simulation_task_81_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-cc90949dabe3-simulation_task_81_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_upd_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e6775e0df170-st_upd_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::bandit_specops_outfit_description" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7a7400df2ddf-bandit_specops_outfit_description", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_treasures.xml::st_mar_q_n_9_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-505fbdb75557-st_mar_q_n_9_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_a2_stalker_barmen_task_1_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d4fb4241eece-zat_a2_stalker_barmen_task_1_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption.xml::pri_a22_base_to_actor_has_rfi_coordinates" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2ea513777b7c-pri_a22_base_to_actor_has_rfi_coordinates", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_flash_disks.xml::st_itm_upgr_flash_disk_ceramics_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f1be216fd1a8-st_itm_upgr_flash_disk_ceramics_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_land_names.xml::space_restrictor_to_agr_ug_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-83098667f51c-space_restrictor_to_agr_ug_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_weapons.xml::st_magazine_9x19_33_glock18_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a95b92dec569-st_magazine_9x19_33_glock18_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::change_faction_to_ecolog_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e7aa3ea57bed-change_faction_to_ecolog_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_quest.xml::st_item_PDA_Kryk_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e1bb86dfa630-st_item_PDA_Kryk_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_yantar.xml::mechanic_army_yan_mlr_task_1_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e2ea091c3725-mechanic_army_yan_mlr_task_1_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_other.xml::st_save_uni_travel_zat_to_jup" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f67b3e6419c5-st_save_uni_travel_zat_to_jup", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_mm.xml::ui_mm_r_screenshot_mode" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-91b2fe948fe6-ui_mm_r_screenshot_mode", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_zaton.xml::zat_b57_den_of_the_bloodsucker_open_gas_box_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-320978a9c788-zat_b57_den_of_the_bloodsucker_open_gas_box_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dynamic_news.xml::st_dyn_news_gossip_task_assault_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-14fc4ce14374-st_dyn_news_gossip_task_assault_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_las.xml::ds_killer_mlr_heal_info_131" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-ad66ed4bedd0-ds_killer_mlr_heal_info_131", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_trigger_rusty_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-84c0340443f6-st_trigger_rusty_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_quests.xml::drx_sl_trucks_cemetery_bandit_trader_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3bc2688354cd-drx_sl_trucks_cemetery_bandit_trader_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_jupiter.xml::st_jup_yar_reply_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-6212c068e52a-st_jup_yar_reply_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_addon_scope_ac11090" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-ace16eef59a9-st_addon_scope_ac11090", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_loadscreen.xml::ls_tip_72" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-cd5c1f8504d3-ls_tip_72", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_escape.xml::drx_sl_esc_m_trader_default_task_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-46f052f999ba-drx_sl_esc_m_trader_default_task_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_information_19" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e281602a5e48-dm_information_19", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_las.xml::sidorovych_start_dialog_1113" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f5d497352703-sidorovych_start_dialog_1113", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_opt_binoc2_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5e489d07e425-st_up_opt_binoc2_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::jup_b19_freedom_yar_task_2_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-23824dd084f1-jup_b19_freedom_yar_task_2_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_general.xml::simulation_task_64_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c495c4b549d5-simulation_task_64_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_sv98_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-649f45d3dc59-st_wpn_sv98_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dynamic_news.xml::st_dyn_k01_darkscape_blizko_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3374ea3b89e0-st_dyn_k01_darkscape_blizko_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_general.xml::hostage_companion_task_1_start_dialog_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-447cbc47ce70-hostage_companion_task_1_start_dialog_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption_generic.xml::cc_generic-stalker-meet_stop_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d2f1d7b09f3c-cc_generic-stalker-meet_stop_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::kardan_st_10" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-30cedfc0d7b1-kardan_st_10", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_marsh.xml::cit_doctor_health_care_1111" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-275639a4fbd6-cit_doctor_health_care_1111", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_subtitles.xml::pri_a28_outro_phrase_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5aa7b99a242c-pri_a28_outro_phrase_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialog_manager.xml::st_task_item_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-10784e009e87-st_task_item_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_other.xml::st_save_pri_a28_evacutaion_start" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2197eab1eab8-st_save_pri_a28_evacutaion_start", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_dolg_501" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5f947d24d78e-about_quests_dialog_dolg_501", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_tch_b2_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-36f36ae56215-st_up_tch_b2_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_treasures.xml::st_red_treasure_20_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a5b03890b04b-st_red_treasure_20_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_deadcity.xml::drx_sl_cit_killers_merc_mechanic_stalker_task_1_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5ac82ce83fd5-drx_sl_cit_killers_merc_mechanic_stalker_task_1_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_faction_starts.xml::ui_st_kopachy_village" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-cde270b311da-ui_st_kopachy_village", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_mm.xml::ui_mm_hardcore_ai_aim" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-08b4dc0c4b9d-ui_mm_hardcore_ai_aim", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_zaton.xml::zat_b57_den_of_the_bloodsucker_open_container_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a5a3f784887c-zat_b57_den_of_the_bloodsucker_open_container_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_treasures.xml::st_agru_treasure_1_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d8d5b3f8d252-st_agru_treasure_1_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::fanat_pred_start_11" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-69931514805e-fanat_pred_start_11", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_faction_starts.xml::ui_st_sakharovs_bunker" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-b03a41dc8a37-ui_st_sakharovs_bunker", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_marsh.xml::drx_sl_mar_base_stalker_barmen_task_2_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-6e304cf6eda0-drx_sl_mar_base_stalker_barmen_task_2_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_bar.xml::bar_arena_manager_game_1351" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-fd8ef37f6635-bar_arena_manager_game_1351", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_dolg_502" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d9bd8164c4ae-about_quests_dialog_dolg_502", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_artefacts.xml::st_af_kislushka_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-51bc3823b7fb-st_af_kislushka_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::army_south_mechan_mlr_task_2_fetch_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-1be870d48ed2-army_south_mechan_mlr_task_2_fetch_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_treasures.xml::st_mil_treasure_21_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-da056498c08e-st_mil_treasure_21_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::Grisha_start_and_Hi_8" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-10148b37af3b-Grisha_start_and_Hi_8", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_credits.xml::st_thanks20" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2f8eae3331bc-st_thanks20", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_subtitles.xml::pri_a28_outro_phrase_18_a" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-676e2bc25e00-pri_a28_outro_phrase_18_a", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_stable_treasures_manager.xml::st_mil_smart_terrain_4_2_box_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7a88a5775fb5-st_mil_smart_terrain_4_2_box_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_darkvalley.xml::drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-21f9fb950453-drx_sl_val_smart_terrain_7_4_bandit_trader_stalker_task_2_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::freedom_mod_exo_proto_outfit_5_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-606ff9cb5099-freedom_mod_exo_proto_outfit_5_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_quests.xml::esc_fo_tr_meet" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0bd04578b505-esc_fo_tr_meet", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_pripyat2.xml::pri_monolith_monolith_trader_stalker_task_6_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-fd80c6158899-pri_monolith_monolith_trader_stalker_task_6_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_craft.xml::esc_stalker_klin_craft_123" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2004eb035b0f-esc_stalker_klin_craft_123", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_treasures.xml::st_mar_q_n_6_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-47e5779ca875-st_mar_q_n_6_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_pripyat2.xml::pri_monolith_monolith_trader_stalker_task_3_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0c0bc2a03788-pri_monolith_monolith_trader_stalker_task_3_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::pri_a22_colonel_about_rfi_and_lost_suad" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-61cd7001ab44-pri_a22_colonel_about_rfi_and_lost_suad", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::pas_b400_zulus_come_back_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3469b73e43e0-pas_b400_zulus_come_back_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_repair_kit_s_empty" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-50b5f1015efe-st_repair_kit_s_empty", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_flash.xml::universal_tech_flashdisk_51" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a7def61b289e-universal_tech_flashdisk_51", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_flash.xml::esc_stalker_upgrade_flashdisk_27" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-4f467114e8ad-esc_stalker_upgrade_flashdisk_27", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_achievement.xml::st_achievement_1_hint" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a97e20dcc3c6-st_achievement_1_hint", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_jupiter.xml::jup_b217_stalker_tech_task_1_fetch_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-8d7d7846a19b-jup_b217_stalker_tech_task_1_fetch_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_darkvalley.xml::zat_b7_bandit_boss_sultan_about_11151" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-34d4568b89aa-zat_b7_bandit_boss_sultan_about_11151", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_achievement.xml::st_achievement_1_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d936f0e083f3-st_achievement_1_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_jupiter.xml::jup_a6_freedom_leader_about_you_11111" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-4401d2ab6509-jup_a6_freedom_leader_about_you_11111", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_las.xml::sidorovych_trader_vodka_trade_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-6ad2966a1222-sidorovych_trader_vodka_trade_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_flash.xml::universal_tech_flashdisk_69" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-26ad48301dd2-universal_tech_flashdisk_69", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_bandit_141" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-10b14d936657-about_quests_dialog_bandit_141", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_items.xml::st_ammo_shell_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-56360a959c85-st_ammo_shell_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_toz34_obrez_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-889f64883bf9-st_wpn_toz34_obrez_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_pripyat2.xml::pri_monolith_monolith_trader_stalker_task_3_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3b00a8ab0992-pri_monolith_monolith_trader_stalker_task_3_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_quests.xml::drx_sl_dasc_tech_mlr_task_1_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-85f87823b012-drx_sl_dasc_tech_mlr_task_1_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_faction_starts.xml::ui_st_pumping_station" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c7c644501567-ui_st_pumping_station", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption.xml::pri_a28_continuation" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d9eb6206e481-pri_a28_continuation", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_pripyat2.xml::pri_monolith_monolith_mechanic_stalker_task_3_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0d61a70beb3d-pri_monolith_monolith_mechanic_stalker_task_3_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_mm.xml::ui_mm_renderer_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-fc24fb4660e4-ui_mm_renderer_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_yantar.xml::brain_machine_deactivate_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-a3710104bf01-brain_machine_deactivate_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_encyclopedia_area.xml::encyclopedia_folk_deadcityleg" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-103c01f22adc-encyclopedia_folk_deadcityleg", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_zaton.xml::zat_b52_reputation_tell_snag_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-38b47789db47-zat_b52_reputation_tell_snag_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption.xml::zat_b106_dont_receipt_reward" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7a113d2bcab7-zat_b106_dont_receipt_reward", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_escape.xml::esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-de80e020c58b-esc_smart_terrain_5_7_loner_mechanic_stalker_task_3_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_land_names.xml::st_gar_smart_terrain_2_4_anomaly_spot_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-083645e3a742-st_gar_smart_terrain_2_4_anomaly_spot_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_artefacts.xml::st_af_dummy_spring_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-ffa0d627d84e-st_af_dummy_spring_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption_generic.xml::cc_generic-bandit-meet_use_no_default_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3dbbf5d5d5e1-cc_generic-bandit-meet_use_no_default_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_encyclopedia_achievements.xml::encyclopedia_achievements_patriarch_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2e188e086367-encyclopedia_achievements_patriarch_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dynamic_news.xml::st_dyn_l10_red_forest_blizko_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5aa5af6b904a-st_dyn_l10_red_forest_blizko_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_keybinding.xml::kb_cam_autoaim" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e743983c1baa-kb_cam_autoaim", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_other.xml::st_only_campfire_save" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f994248230fb-st_only_campfire_save", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_credits.xml::st_slipchenko" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e68af948c62a-st_slipchenko", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_general.xml::simulation_task_21_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-109282fd9e63-simulation_task_21_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_stable_treasures_manager.xml::st_trc_inventory_box_0032_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c77175d024f9-st_trc_inventory_box_0032_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_artefacts.xml::st_af_dummy_dummy_lead_box_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f5ff96d6af4b-st_af_dummy_dummy_lead_box_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_jupiter.xml::drx_sl_jup_b6_scientist_tech_task_1_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-75be594d0e66-drx_sl_jup_b6_scientist_tech_task_1_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::csky_mod_exo_proto_outfit_1_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-b4b30d59ba69-csky_mod_exo_proto_outfit_1_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_area.xml::encyclopedia_crafting_ammo_12x76_buck_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0b157fd193a7-encyclopedia_crafting_ammo_12x76_buck_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_quest.xml::st_item_PDA_Shilo_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-de43071b3756-st_item_PDA_Shilo_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_jupiter.xml::drx_sl_jup_a6_freedom_leader_task_3_fetch_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-9004acaa880c-drx_sl_jup_a6_freedom_leader_task_3_fetch_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_stable_treasures_manager.xml::st_l06_rostok_inventory_box_0014_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3d7110d30f65-st_l06_rostok_inventory_box_0014_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_las.xml::hog_limansk_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-1b9b03ce8490-hog_limansk_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_darkvalley.xml::val_smart_terrain_7_4_bandit_trader_stalker_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e389becc0f24-val_smart_terrain_7_4_bandit_trader_stalker_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_land_names.xml::st_jup_earth_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2ae20d425dff-st_jup_earth_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_outfit.xml::exo_proto_outfit_freedom_2_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f3cde05d7e83-exo_proto_outfit_freedom_2_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_anomalies.xml::encyclopedia_arhianomalies_razlom_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e877748e5373-encyclopedia_arhianomalies_razlom_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption_generic.xml::cc_generic-killer-meet_use_no_talk_leader_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f79080e54563-cc_generic-killer-meet_use_no_talk_leader_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_yantar.xml::yan_merc_guards_start_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-bdf68a96334a-yan_merc_guards_start_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption_generic.xml::cc_generic-stalker-meet_wait_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-5f384f43ea97-cc_generic-stalker-meet_wait_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_general.xml::simulation_task_39_fetch_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-508ee399c855-simulation_task_39_fetch_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_marsh.xml::drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0934e193b70d-drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_2_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption_generic.xml::cc_generic-stalker-meet_comander_wait_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d6a7a899eb46-cc_generic-stalker-meet_comander_wait_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs.xml::about_quests_dialog_bandit_193" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-fc3f99ba3325-about_quests_dialog_bandit_193", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_other.xml::ui_st_file_exist_owerwrite_q" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-22ca91c2d239-ui_st_file_exist_owerwrite_q", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_loadscreen.xml::ls_tip_69" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0d1e4500f301-ls_tip_69", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_zaton.xml::zat_b3_stalker_tech_drink_1_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-ef4a48895f53-zat_b3_stalker_tech_drink_1_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_bar.xml::bar_dolg_general_petrenko_stalker_task_3_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-d2dfbb668e4d-bar_dolg_general_petrenko_stalker_task_3_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_credits.xml::st_thanks22" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-f857c50c8c02-st_thanks22", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_land_names.xml::space_restrictor_to_jupiter_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-4ba12e6be504-space_restrictor_to_jupiter_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption_generic.xml::cc_generic-monolith-meet_use_no_fight_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2c2ba70f1d36-cc_generic-monolith-meet_use_no_fight_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dynamic_news.xml::st_dyn_news_bloodsucker_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-9b34d2a23b01-st_dyn_news_bloodsucker_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_mm_faction_select.xml::st_marauder_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3eea7d4b5a27-st_marauder_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_flash_disks.xml::st_itm_upgr_flash_disk_rubberizol_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-aa833df64c7d-st_itm_upgr_flash_disk_rubberizol_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_artefacts.xml::st_af_fountain_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7322bbd8981d-st_af_fountain_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_items.xml::st_itm_cutting_tools_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-39d0e1ae2c3c-st_itm_cutting_tools_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_encyclopedia_features.xml::encyclopedia_features_only_campfire" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0b51f1ac5121-encyclopedia_features_only_campfire", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_pripyat2.xml::pri_monolith_monolith_mechanic_stalker_task_3_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-2f57f2721fac-pri_monolith_monolith_mechanic_stalker_task_3_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_zaton.xml::zat_b52_robbery_port_bandits_1_11111" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-73560d621444-zat_b52_robbery_port_bandits_1_11111", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_quest.xml::st_toolkit_2_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-3555f1a20dd5-st_toolkit_2_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_items.xml::st_crow_boiled_egg" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-70e0db0a38a5-st_crow_boiled_egg", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_jupiter.xml::jup_a6_freedom_leader_about_you_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-c52482ba3451-jup_a6_freedom_leader_about_you_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_zaton.xml::zat_b22_stalker_medic_dialog_start_22" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-0e0064940670-zat_b22_stalker_medic_dialog_start_22", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_jupiter.xml::jup_b6_scientist_tech_task_1_fetch_finish" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-7d81a6fdb4c8-jup_b6_scientist_tech_task_1_fetch_finish", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_artefacts.xml::st_af_dummy_battery_lead_box_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-78f1986ceced-st_af_dummy_battery_lead_box_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_marsh.xml::drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-331d97b43d47-drx_sl_mar_smart_terrain_base_stalker_leader_marsh_task_3_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_area.xml::encyclopedia_crafting_detox_mix_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-bcc7fddb02f9-encyclopedia_crafting_detox_mix_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_pripyat2.xml::drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-1474f2fe50d6-drx_sl_pri_monolith_monolith_mechanic_stalker_default_task_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs.xml::about_quests_dialog_bandit_62" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-841f417fcd16-about_quests_dialog_bandit_62", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_features.xml::encyclopedia_features_only_campfire_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-human-e211a74a94c7-encyclopedia_features_only_campfire_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_las.xml::sidorovych_start_dialog_14" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-05ba39168cf6-sidorovych_start_dialog_14", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_achievement.xml::st_achievement_1_unlock" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-fafd4f251d2d-st_achievement_1_unlock", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_las.xml::ds_killer_medic_mlr_start_dialog_1112" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-52c33ca120c1-ds_killer_medic_mlr_start_dialog_1112", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::zat_b106_gonta_see_chimera" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-2f12e5a3bb3b-zat_b106_gonta_see_chimera", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::find_blackbox_reward_csky_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-48006bc60353-find_blackbox_reward_csky_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_loadscreen.xml::ls_tip_95" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-72a2ada1ac51-ls_tip_95", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption_generic.xml::cc_generic-stalker-meet_wait_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-5f384f43ea97-cc_generic-stalker-meet_wait_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_exo_a12_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-c032ee692986-st_up_exo_a12_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::zat_b53_artefact_hunter_2_come_on" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-98ec47950cfe-zat_b53_artefact_hunter_2_come_on", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_stalkers_32" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-25040b5ecf81-about_quests_dialog_stalkers_32", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::fanat_drugs_start_26" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-109221fff385-fanat_drugs_start_26", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_flash_disks.xml::st_itm_upgr_flash_disk_titan_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-1290ff280f46-st_itm_upgr_flash_disk_titan_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_b7_stalkers_raiders_time_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-5cc9f8e9c424-zat_b7_stalkers_raiders_time_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::mechanic_monolith_kbo_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-15079de97be0-mechanic_monolith_kbo_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::look_for_cs_history_part_3_1_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-73b2b171e58c-look_for_cs_history_part_3_1_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_flash.xml::esc_stalker_upgrade_flashdisk_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-671bbaa94578-esc_stalker_upgrade_flashdisk_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_encyclopedia_area.xml::encyclopedia_crafting_ammo_gauss_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-86f7a2f97869-encyclopedia_crafting_ammo_gauss_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_general.xml::simulation_task_84_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-75706efb64e0-simulation_task_84_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_pri_a1_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-ce174d6d5d4d-st_up_pri_a1_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialog_manager.xml::dm_hello_26" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-d453ee59e3aa-dm_hello_26", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_loadscreen.xml::ls_tip_18" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-90cb6a3c1614-ls_tip_18", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_marsh.xml::mar_base_stalker_tech_task_2_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-33bbc3b93e5d-mar_base_stalker_tech_task_2_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::mechanic_monolith_kbo_task_3_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-80a0b245ef67-mechanic_monolith_kbo_task_3_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::Georg_start_and_Hi_21" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-ae95737703d5-Georg_start_and_Hi_21", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_quest.xml::jup_a9_way_info" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-6d5d0de86111-jup_a9_way_info", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_up_kom_c7_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-9271a85e7e31-st_up_kom_c7_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_bandit_15" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-df3e9f1bdb92-about_quests_dialog_bandit_15", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::main_monolith_mlr_task_4_name_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-1547d7afadb4-main_monolith_mlr_task_4_name_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_upgr_group" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-0b7a43fa04af-st_upgr_group", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_yantar.xml::yan_stalker_sakharov_npc_psi_helmet_1_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-ceb0a3e21f45-yan_stalker_sakharov_npc_psi_helmet_1_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dynamic_news.xml::st_dyn_news_builder_ending_15" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-dd4887c7815c-st_dyn_news_builder_ending_15", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_marijuana_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-66ec288463df-st_marijuana_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_b29_simple_find_text_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-a96d13ce8ae4-zat_b29_simple_find_text_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_items.xml::st_jaguar_radiated" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-9a98c299781a-st_jaguar_radiated", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::georgii_kltsk_DPA_descr_01" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-c9da639cfdbe-georgii_kltsk_DPA_descr_01", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_jupiter.xml::jup_a6_freedom_leader_about_you_1112" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-fa950c7a476a-jup_a6_freedom_leader_about_you_1112", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_treasures.xml::st_mar_treasure_28_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-3ed8bffe5e18-st_mar_treasure_28_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons_upgrades.xml::st_up_uti_a2_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-1b8de3170011-st_up_uti_a2_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_anomalies_general_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-3d8f0dbcc8d7-dm_anomalies_general_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::find_blackbox_reward_freedom_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-untranslated-5495ca8889ab-find_blackbox_reward_freedom_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_wpn_colt1911_alt" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-efb5b3c9cf68-st_wpn_colt1911_alt", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_subtitles.xml::zat_a1_cutscene_phrase_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-6b99d7bc1893-zat_a1_cutscene_phrase_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_wpn_cz75_auto_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-49be067db47d-st_wpn_cz75_auto_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::bandit_wtr_brt_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-655ae6ccdbc0-bandit_wtr_brt_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_subtitles.xml::zat_a1_cutscene_phrase_9" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-9eb28a1ff81f-zat_a1_cutscene_phrase_9", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::buy_perehod_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-6fe2d3488f4e-buy_perehod_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::sah_wtr_brt_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-b09360fe9e54-sah_wtr_brt_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_wpn_colt1911_merc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-9782bae7bca1-st_wpn_colt1911_merc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_marsh.xml::mar_base_owl_stalker_trader_task_1_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-ac2785b0b4da-mar_base_owl_stalker_trader_task_1_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_zaton.xml::zat_b107_evacuation_jupiter_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-523d08b0ba6b-zat_b107_evacuation_jupiter_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::mil_smart_terrain_7_7_freedom_leader_stalker_task_7_fetch_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-f19114096377-mil_smart_terrain_7_7_freedom_leader_stalker_task_7_fetch_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::detector_repair_bandit_teh_8" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-c03a3706b2d0-detector_repair_bandit_teh_8", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::sah_wtr_brt_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-f7b9b69d64f7-sah_wtr_brt_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_colt1911_alt" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-90d13b36cbd2-st_wpn_colt1911_alt", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_cleaning_kit_s" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-4c0bd141010e-st_cleaning_kit_s", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::sar_crystal_pda_mlr_3_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-b0f99ae6fed5-sar_crystal_pda_mlr_3_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::georgii_heal_7" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-ab3ab808bade-georgii_heal_7", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_addon_scope_ac11090" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-cba8e46234f4-st_addon_scope_ac11090", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_subtitles.xml::zat_a1_cutscene_phrase_8" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-c89709352a68-zat_a1_cutscene_phrase_8", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_bar.xml::bar_arena_manager_game_100" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-8b0340a2e98d-bar_arena_manager_game_100", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::ashot_price_for_pathes_duty1_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-7943071242c0-ashot_price_for_pathes_duty1_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_bar.xml::bar_arena_manager_game_110" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-d24edbcfa18b-bar_arena_manager_game_110", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_addon_scope_tars101" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-d5ffdb187a74-st_addon_scope_tars101", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_warlab.xml::oso_why_chernobyl_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-7807254d2cbc-oso_why_chernobyl_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_yantar.xml::yan_stalker_sakharov_npc_psi_helmet_1_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-e2682e1e3dc3-yan_stalker_sakharov_npc_psi_helmet_1_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption.xml::jup_b221_duty_reply_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-fd82339984bb-jup_b221_duty_reply_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_quest.xml::st_zat_b12_documents_1_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-20a51b9cd591-st_zat_b12_documents_1_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_cleaning_kit_s" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-dd6f9edf9f3e-st_cleaning_kit_s", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_items.xml::st_antirad_radiated" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-8c963efc647d-st_antirad_radiated", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/mlr_addon.xml::sar_crystal_pda_mlr_3_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-806d8ab8f0a9-sar_crystal_pda_mlr_3_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::battery_rechange_5_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-c74e298157d4-battery_rechange_5_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::ashot_price_for_pathes_duty1_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-f59b7d566c5e-ashot_price_for_pathes_duty1_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_pripyat.xml::monolith_wtr_brt_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-bf5cd950bdc7-monolith_wtr_brt_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_quest.xml::st_zat_b12_documents_2_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-5e8301e25bce-st_zat_b12_documents_2_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_bar.xml::bar_arena_manager_game_100" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-fdb178057abf-bar_arena_manager_game_100", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_military.xml::drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-0712a336c176-drx_sl_mil_smart_terrain_7_7_freedom_leader_stalker_cf_task_1_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_money_roubles_1000_bad" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-881a8eff1e12-st_money_roubles_1000_bad", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs_zaton.xml::zat_b22_stalker_medic_need_health_care_111" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-6d7e3a6fe7a9-zat_b22_stalker_medic_need_health_care_111", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_bad_ammo.xml::ammo-m209_verybad" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-ed62693c1b58-ammo-m209_verybad", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_yantar.xml::yan_stalker_sakharov_npc_psi_helmet_1_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-number_fidelity-6253403d7bee-yan_stalker_sakharov_npc_psi_helmet_1_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::ammo-5.7x28-ss195_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-967b2e4e205d-ammo-5.7x28-ss195_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_weapons.xml::st_magazine_9x18_8_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-c2f61457fd69-st_magazine_9x18_8_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_svd_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-2e6d33d298b7-st_wpn_svd_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_weapons.xml::st_magazine_762x54_10_3_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-d88f71cb76ca-st_magazine_762x54_10_3_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_wpn_m98b" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-86792c53b089-st_wpn_m98b", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::st_wpn_sig220_rusty_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-2a6892fbee8b-st_wpn_sig220_rusty_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_cleaning_kit_s" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-dd6f9edf9f3e-st_cleaning_kit_s", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_sig550_sniper_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-aabafe9daf9b-st_wpn_sig550_sniper_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_weapons.xml::st_magazine_9x19_32_2_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-5e98440f74b0-st_magazine_9x19_32_2_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_val_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-0ae1838a45a1-st_wpn_val_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::st_helm_protective_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-e8cb76c57b4e-st_helm_protective_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::ashot_price_for_pathes_duty_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-a002b73882b4-ashot_price_for_pathes_duty_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::ashot_price_for_pathes_duty1_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-c4ceaa558c62-ashot_price_for_pathes_duty1_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::military_outfit_description" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-d5672b3d9971-military_outfit_description", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_area.xml::encyclopedia_crafting_ammo_gauss_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-6f212c820b5b-encyclopedia_crafting_ammo_gauss_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_antirad" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-bb911f4a31f4-st_antirad", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::pri_special_trader_mlr2_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-1c2f21b47317-pri_special_trader_mlr2_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::pri_special_trader_mlr3_9" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-67db24d5e15f-pri_special_trader_mlr3_9", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::pri_special_trader_mlr3_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-95f99f5d8e32-pri_special_trader_mlr3_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_achievements.xml::encyclopedia_achievements_down_to_earth_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-4071903638fe-encyclopedia_achievements_down_to_earth_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_items.xml::st_chernov_docs_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-155b94e762fd-st_chernov_docs_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_area.xml::encyclopedia_crafting_medkit_scientic_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-927433bdef69-encyclopedia_crafting_medkit_scientic_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_91900005" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-803fa55d0f01-esc_stalker_klin_craft_91900005", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_items.xml::st_antirad_radiated" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-100dc35ca947-st_antirad_radiated", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::pri_special_trader_mlr2_15" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-7fde3d188e1a-pri_special_trader_mlr2_15", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_drug_radioprotector_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-4a5cb866dd6a-st_drug_radioprotector_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_equipment.xml::st_cleaning_kit_s" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-4c0bd141010e-st_cleaning_kit_s", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::esc_3_16_military_trader_task_2_fetch_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-3d8306c892ec-esc_3_16_military_trader_task_2_fetch_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::Klin_Guide_19" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-c4a77b651e74-Klin_Guide_19", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_5453900011" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-model_fidelity-24ab3117b106-esc_stalker_klin_craft_5453900011", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_soc94_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-35a7d501702f-st_wpn_soc94_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_firewood_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-38c4e9d1a8e2-st_firewood_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::ammo-7.62x54-7n1_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-a803f5dee90e-ammo-7.62x54-7n1_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dynamic_news.xml::st_dyn_news_gossip_task_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-e2600bcf6a48-st_dyn_news_gossip_task_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_energy_drink_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-ae4231b32cb8-st_energy_drink_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_outfit.xml::bandit_exo_outfit_description" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-416fd9d5bf7a-bandit_exo_outfit_description", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_flash_disks.xml::st_itm_upgr_flash_disk_priemnik_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-6928ab980cc2-st_itm_upgr_flash_disk_priemnik_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_bar.xml::drx_sl_bar_visitors_stalker_mechanic_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-fa53a3a96a56-drx_sl_bar_visitors_stalker_mechanic_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_weapons.xml::st_wpn_vsk94_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-5917ad811209-st_wpn_vsk94_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs.xml::st_jg_16" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-7a990a6c870a-st_jg_16", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_jupiter.xml::jup_b217_stalker_tech_task_2_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-a30530116794-jup_b217_stalker_tech_task_2_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_equipment.xml::st_drug_booster_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-a120ab645a8b-st_drug_booster_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_flash_disks.xml::st_itm_upgr_flash_disk_gazregulator_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-5f343b85302b-st_itm_upgr_flash_disk_gazregulator_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_quests.xml::drx_sl_jup_cont_trader_bandit_task_1_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-a8a4f8ed52ef-drx_sl_jup_cont_trader_bandit_task_1_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::trucks_cemetery_bandit_mechanic_task_2_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-4af596d50ec7-trucks_cemetery_bandit_mechanic_task_2_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_artefacts.xml::st_af_cristall_flower_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-231bc43a0793-st_af_cristall_flower_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_items_outfit.xml::freedom_mod_exo_proto_outfit_5_desc" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-606ff9cb5099-freedom_mod_exo_proto_outfit_5_desc", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_artefacts.xml::st_af_quest_b14_twisted_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-ce7ee4ce698f-st_af_quest_b14_twisted_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_pripyat2.xml::pri_monolith_monolith_trader_stalker_task_5_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-afaf011e0706-pri_monolith_monolith_trader_stalker_task_5_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_screen.xml::pri_a28_talk_with_stupid_medic" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-runtime_token_damage-f86740d6384d-pri_a28_talk_with_stupid_medic", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons_upgrades.xml::st_up_auto_a2_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-5ee567c3eddd-st_up_auto_a2_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_items_weapons.xml::ammo-7.62x51_ap_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-cc20d659e87e-ammo-7.62x51_ap_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dynamic_news.xml::st_dyn_news_zombied_5" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-78c634e59aef-st_dyn_news_zombied_5", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_translation.xml::look_for_cs_history_part_1_1_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-94dac12570bc-look_for_cs_history_part_1_1_3", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_stable_treasures_manager.xml::st_l05_bar_inventory_box_0008_name" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-1d7e442fa800-st_l05_bar_inventory_box_0008_name", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::main_monolith_mlr_task_5_1_dlg_1_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-54f45653040c-main_monolith_mlr_task_5_1_dlg_1_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_dialogs_all_fox.xml::drink_with_me_7" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-a01f48e436b4-drink_with_me_7", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs.xml::about_quests_dialog_bandit_151" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-4790756f80ed-about_quests_dialog_bandit_151", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_no_more_4" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-38ee486bd267-dm_no_more_4", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/mlr_addon.xml::loki_st_10" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-2312c7385964-loki_st_10", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_closecaption.xml::jup_a6_duty_leader_greeting_1" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-3c01d420a802-jup_a6_duty_leader_greeting_1", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/ui_st_loadscreen.xml::ls_tip_17" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-d0831fa1a49c-ls_tip_17", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::esc_nimble_greeting_order_not_ready_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-2945f7abde95-esc_nimble_greeting_order_not_ready_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_achievement.xml::st_achievement_10_unlock" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-a1b1e28f969c-st_achievement_10_unlock", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_items.xml::st_antirad_iodid_radiated" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-glue_residue-a79bccb9e0d8-st_antirad_iodid_radiated", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialogs_zaton.xml::zat_b52_robbery_port_bandits_1_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-eaea27a5423b-zat_b52_robbery_port_bandits_1_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::about_order_bad_rep_csky_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-e846aa1736c7-about_order_bad_rep_csky_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_closecaption.xml::esc_mech_meet_bye_2" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-8715c8557ef3-esc_mech_meet_bye_2", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_dialogs.xml::about_quests_dialog_stalkers_165" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-72dda697a15e-about_quests_dialog_stalkers_165", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_flash.xml::universal_tech_flashdisk_31001" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-6a1f71a194c5-universal_tech_flashdisk_31001", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/ui_st_encyclopedia_features.xml::encyclopedia_features_online_exclusion_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-6727f4b564ec-encyclopedia_features_online_exclusion_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_mm_faction_select.xml::st_depressed_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-5f3d10973f3b-st_depressed_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_dialog_manager.xml::dm_hello_73" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-f92d5aec402c-dm_hello_73", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_zaton.xml::zat_b38_den_of_the_bloodsucker_tell_barman_about_all_text" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-38cd90d5b2ee-zat_b38_den_of_the_bloodsucker_tell_barman_about_all_text", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_achievement.xml::st_achievement_5_descr" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-ec5898f643a6-st_achievement_5_descr", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/area_translation.xml::find_blackbox_reward_freedom_0" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-5495ca8889ab-find_blackbox_reward_freedom_0", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/st_quests_yantar.xml::drx_sl_yan_stalker_sakharov_task_3_about" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-cc8584ef8e6a-drx_sl_yan_stalker_sakharov_task_3_about", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_craft.xml::esc_stalker_klin_craft_9181" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-7cdc90122359-esc_stalker_klin_craft_9181", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/eng/area_dialogs_all_fox.xml::Grisha_start_and_Hi_17" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-a4bf1dad7280-Grisha_start_and_Hi_17", "status": "matched"}</system-out>
+    </testcase>
+    <testcase name="configs/text/rus/st_quests_general.xml::simulation_task_5_about_3" classname="lqa">
+      <system-out>{"false_negatives": [], "false_positives": [], "id": "aera-derived-semantic_role_conflict-8ee9def5e6c2-simulation_task_5_about_3", "status": "matched"}</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,4 +1,4 @@
-"""AI 离线翻译插件（Hy-MT2 / llama.cpp）—— **STALKER Localization Toolkit 2.x 专用**
+"""AI 离线翻译插件（Hy-MT3 测试 / Hy-MT2 / llama.cpp）—— **STALKER Localization Toolkit 2.x 专用**
 
 为 2.x（C++/Qt）提供「AI 翻译」栏目。插件采用目录形态：
   * **目录插件** `plugins/ai_translate/plugin.py`（宿主按目录名作 owner/id），
@@ -12,7 +12,8 @@
     WinHTTP（ctypes + 系统 winhttp.dll），见「HTTP（WinHTTP）」一节。
 
 主要功能：
-  * 两档本地离线模型：Hy-MT2-7B Q4_K_M（约 4.4 GB）/ Hy-MT2-1.8B Q8_0（约 1.8 GB）
+  * 三档本地离线模型：Hy-MT2-7B Q4_K_M（约 4.4 GB）/ Hy-MT2-1.8B Q8_0（约 1.8 GB）/
+    Hy-MT3-1.8B Q8_0 测试档（约 1.8 GB，官方 8K 上下文与采样参数）
   * 模型与 llama.cpp 运行库均不内置：插件内下载管理，自动探测网络环境、
     并发实测各镜像下载速度、自动选择最优源；支持断点续传 / 取消 / 失败换源
   * 本地拉起 llama-server（OpenAI 兼容 HTTP），子进程与主程序隔离
@@ -53,11 +54,12 @@ import urllib.parse
 
 PLUGIN_INFO = {
     "id": "ai_translate",
-    "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
-    "version": "2.0.29",
+    "name": "AI 离线翻译（Hy-MT3 / Hy-MT2 / 自选模型）",
+    "version": "2.0.30",
+    "build": "formal-mt3-q4-q8",
     "repo": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x",
     "description": "本地离线模型翻译 X-Ray 文本；解压即用、零环境依赖；"
-                   "混元两档内置模型自动测速下载；支持自选任意 GGUF 模型；"
+                   "混元三代/二代内置模型自动测速下载；支持自选任意 GGUF 模型；"
                    "CPU / CUDA 12.4 / CUDA 13.4 / Vulkan 四后端并自动检测显卡；"
                    "内置无限制强制术语库",
 }
@@ -188,6 +190,11 @@ from stalker_translate_core.glossary import (  # noqa: E402
 )
 from stalker_translate_core.matching import GlossaryIndex  # noqa: E402
 from stalker_translate_core.models import BUILTIN_TIERS, TIER_PROFILES  # noqa: E402
+from stalker_translate_core.estimation import (  # noqa: E402
+    estimate_all_tiers,
+    estimate_translation,
+    parallel_speedup,
+)
 from stalker_translate_core.text import (  # noqa: E402
     pattern_translate,
     split_long_text,
@@ -1254,6 +1261,12 @@ _LLAMA_SHA256 = {
     "cudart-13.4": "738f8c251ac22b70c3ae6f83a10cf222725df0395246a2cf58f32bdb85fbe668",
 }
 _MODEL_HASHES = {
+    "Hy-MT3-1.8B-Q4_K_M.gguf": (
+        "bae6e591103654ff43ef0de7d1492f6e6df1f955505f6bb2cc52e86fc399a942",
+        1348432160),
+    "Hy-MT3-1.8B-Q8_0.gguf": (
+        "03e246991a57d31fe01ac203331e032eabd327ffd0098e570411b811f6119af8",
+        1908528448),
     "Hy-MT2-7B-Q4_K_M.gguf": (
         "9f96256500f3fc1ab4d64336b58f52a949a95ad7516b0c229476eef782f9f77b",
         4624648896),
@@ -1326,11 +1339,13 @@ def _model_sources(repo_ms, repo_hf, filename):
     ]
 
 
-TIER_ORDER = ("7b", "mt2", "custom")
+TIER_ORDER = ("7b", "mt3_q8", "mt3_q4", "mt2", "custom")
 CUSTOM_CTX_CHOICES = (4096, 8192, 16384, 32768)
 TIER_SHORT = {
     "7b": "精雕7B｜质量最高最精确｜速度中等｜8K上下文",
-    "mt2": "精准1.8B｜高质量精确｜快速｜16K上下文",
+    "mt3_q8": "均衡Hy-MT3 1.8B Q8｜推荐替代档｜约1.67× MT2｜8K",
+    "mt3_q4": "轻快Hy-MT3 1.8B Q4｜速度优先｜约1.94× MT2｜8K",
+    "mt2": "精准Hy-MT2 1.8B｜默认基线｜高质量精确｜快速｜16K上下文",
     "custom": "自选模型｜本机任意 GGUF｜上下文自定",
 }
 
@@ -1357,8 +1372,8 @@ PARALLEL_GPU_BUDGET = 0.9        # 显存预算比例（与 refresh_vram_estimat
 PARALLEL_CPU_BUDGET = 0.7        # 物理内存预算比例（系统/其它进程留量更大）
 PARALLEL_LABELS = {
     1: "1 路（最稳，默认）",
-    2: "2 路（推荐，实测约 1.7×）",
-    4: "4 路（需 ≥8GB 显存）",
+    2: "2 路（推荐，约 1.68× 吞吐）",
+    4: "4 路（约 2.83× 吞吐，需足够显存）",
 }
 # 旧的静态标签语义（2.0.2 起仅在回落固定档时使用）。
 
@@ -1444,7 +1459,7 @@ TASK_KEY_ORDER = _MODEL_TASK_ORDER + ["bin_cpu", "bin_cuda",
                                     "bin_cuda13", "bin_vulkan"]
 TIER_BY_TASK = {TIER_PROFILES[t]["task"]: t for t in BUILTIN_TIERS}
 TIER_FILE = {t: TIER_PROFILES[t]["file"] for t in BUILTIN_TIERS}
-TIER_ALIAS = {"1b8": "mt2", "mt15": "mt2"}
+TIER_ALIAS = {"1b8": "mt2", "mt15": "mt2", "mt3": "mt3_q8"}
 
 
 
@@ -1454,6 +1469,10 @@ def _fmt_eta(sec):
         return "--:--:--"
     sec = int(sec)
     return "%02d:%02d:%02d" % (sec // 3600, (sec % 3600) // 60, sec % 60)
+
+
+def _fmt_eta_range(low, high):
+    return "%s–%s" % (_fmt_eta(low), _fmt_eta(high))
 
 
 def detect_nvidia_gpu():
@@ -1620,7 +1639,7 @@ def detect_hardware():
         tier = "7b" if vram >= 5120 else "mt2"
         short = "%s %dGB → CUDA 12.4 + %s%s" % (
             name.replace("NVIDIA GeForce ", ""), round(vram/1024, 1),
-            {"7b": "精雕7B", "mt2": "精准1.8B"}[tier],
+            {"7b": "精雕7B", "mt2": "精准Hy-MT2 1.8B"}[tier],
             ("（CUDA 13.4 可用）" if cuda13_ok else ""))
         return {"variant": variant, "tier": tier, "gpu_name": name,
                 "vram": vram, "short": short, "driver": driver,
@@ -1630,9 +1649,9 @@ def detect_hardware():
         tier = "mt2"
         return {"variant": "vulkan", "tier": tier, "gpu_name": name,
                 "vram": vram,
-                "short": "%s → Vulkan + 精准1.8B" % name}
+                "short": "%s → Vulkan + 精准Hy-MT2 1.8B" % name}
     return {"variant": "cpu", "tier": "mt2", "gpu_name": "",
-            "vram": 0, "short": "未检测到独显 → CPU + 精准1.8B"}
+            "vram": 0, "short": "未检测到独显 → CPU + 精准Hy-MT2 1.8B"}
 
 
 
@@ -1666,7 +1685,7 @@ DEFAULT_CONFIG = {
     "custom_model_path": "",
     "custom_ctx": 8192,
     "parallel": 1,
-    "tier": "7b",
+    "tier": "mt2",
     "variant": "cpu",
     "in_dir": "",
     "out_dir": "",
@@ -1699,8 +1718,10 @@ def load_config():
     if cfg.get("tier") in TIER_ALIAS:
         cfg["tier"] = TIER_ALIAS[cfg["tier"]]
     if cfg.get("tier") not in TIER_PROFILES:
-        cfg["tier"] = "7b"
+        cfg["tier"] = "mt2"
     mp = cfg.get("model_paths")
+    if isinstance(mp, dict) and "mt3" in mp and "mt3_q8" not in mp:
+        mp["mt3_q8"] = mp.pop("mt3")
     if isinstance(mp, dict) and "1b8" in mp and "mt2" not in mp:
         mp["mt2"] = mp.pop("1b8")
     for k in ("in_dir", "out_dir", "reuse_dir", "glossary"):
@@ -1826,13 +1847,21 @@ _TERMBASE_STORE = {"key": None, "value": None}
 
 
 def _termbase_store():
-    key = (_TERMBASE_PATH, _GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY)
+    try:
+        stat = os.stat(_GLOSS_USER)
+        user_key = (stat.st_mtime_ns, stat.st_size)
+    except OSError:
+        user_key = None
+    key = (_TERMBASE_PATH, _GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY, user_key)
     if _TERMBASE_STORE.get("key") != key:
-        _TERMBASE_STORE["value"] = Termbase(
+        store = Termbase(
             _TERMBASE_PATH,
             (_GLOSS_BUILTIN, _GLOSS_BUILTIN_LEGACY),
             _TECHNICAL_EXACT,
         )
+        _merged, set_map, deleted, clear = load_glossary_layers()
+        store.configure_user_layer(set_map, deleted, clear)
+        _TERMBASE_STORE["value"] = store
         _TERMBASE_STORE["key"] = key
     return _TERMBASE_STORE["value"]
 
@@ -2502,6 +2531,15 @@ class LlamaServer(object):
         # ★ 2.0.2：路数上限从写死的 4 放宽到 PARALLEL_CAP（动态选项）。
         self.parallel = max(1, min(PARALLEL_CAP, int(parallel)))
         self.tier = tier
+        profile = TIER_PROFILES.get(tier) or {}
+        self.model_id = str(profile.get("model_id") or "hy-mt2")
+        self.prompt_mode = str(profile.get("prompt_mode") or "legacy")
+        self.sampling = dict(profile.get("sampling") or {})
+        self.max_output_tokens = int(self.sampling.get("max_tokens") or 0)
+        self.dialogue_temperature = float(self.sampling.get("temperature", 0.1))
+        self.formal_temperature = float(
+            self.sampling.get("formal_temperature", self.dialogue_temperature))
+        self.label_temperature = float(self.sampling.get("label_temperature", 0.0))
         self.gpu_layers = 0 if variant == "cpu" else int(gpu_layers)
         self.proc = None
         self.port = None
@@ -2512,6 +2550,20 @@ class LlamaServer(object):
         self.gpu_verified = False
         self.health_warn = ""
         self.prompt_extra = ""
+
+    @staticmethod
+    def _repair_hymt3_masks(text, source_text):
+        # Hy-MT3 偶发把 $$Rn$$ 写成 R0 / $R0$ / $$R0$，仅修复本次输入出现过的编号。
+        output = str(text or "")
+        for number in set(re.findall(r"\$\$R(\d+)\$\$", str(source_text or ""))):
+            output = re.sub(
+                r"(?<![A-Za-z0-9_$])R%s(?![A-Za-z0-9_$])" % number,
+                "$$R%s$$" % number, output)
+            output = re.sub(
+                r"(?<!\$)\$R%s\$(?!\$)" % number, "$$R%s$$" % number, output)
+            output = re.sub(
+                r"\$\$R%s\$(?!\$)" % number, "$$R%s$$" % number, output)
+        return output
 
     def is_running(self):
         return self.proc is not None and self.proc.poll() is None
@@ -2625,7 +2677,14 @@ class LlamaServer(object):
                 "--ctx-size", str(self.ctx_size * self.parallel),
                 "--n-gpu-layers", str(self.gpu_layers),
                 "--parallel", str(self.parallel),
-                "--temp", "0.1"]
+                "--temp", "%g" % float(self.sampling.get("temperature", 0.1))]
+        if self.sampling.get("top_p") is not None:
+            args += ["--top-p", "%g" % float(self.sampling["top_p"])]
+        if self.sampling.get("top_k") is not None:
+            args += ["--top-k", str(int(self.sampling["top_k"]))]
+        if self.sampling.get("repetition_penalty") is not None:
+            args += ["--repeat-penalty",
+                     "%g" % float(self.sampling["repetition_penalty"])]
         # ★ 2.0.11：禁用「提示词相似度选槽」。所有请求带同一段系统提示词，
         # 相似度 0.88~0.93 全被 LCP 黏到 slot 2（实测 1621/1714 请求），
         # 另两路空转，三路并发名存实亡。0 = 强制轮转进空闲槽。
@@ -2707,20 +2766,29 @@ class LlamaServer(object):
         """
         if not self.is_running():
             raise IOError("引擎未运行")
-        official = bool(getattr(self, "official_prompts", False))
+        hymt3 = getattr(self, "prompt_mode", "legacy") == "hymt3"
+        sampling = getattr(self, "sampling", {}) or {}
+        max_output_tokens = int(getattr(self, "max_output_tokens", 0) or 0)
+        official = bool(getattr(self, "official_prompts", False)) or hymt3
         if src_lang in ("auto", "text"):
             src_lang = detect_text_lang(text) or src_lang
         src = LANG_FULL.get(src_lang)
         tgt = LANG_FULL.get(tgt_lang, tgt_lang)
-        sys_msg = (TRANSLATION_SYS_PROMPT_EN if src_lang == "eng"
-                   else TRANSLATION_SYS_PROMPT)
+        if style == "label":
+            sys_msg = TRANSLATION_SYS_PROMPT_LABEL
+        else:
+            sys_msg = (TRANSLATION_SYS_PROMPT_EN if src_lang == "eng"
+                       else TRANSLATION_SYS_PROMPT)
         extra = (getattr(self, "prompt_extra", "") or "").strip() \
             if use_extra else ""
         if extra:
             sys_msg = sys_msg + "\n补充要求（优先遵守）：\n" + extra
         if extra_sys:
             sys_msg = sys_msg + "\n补充要求（优先遵守）：\n" + extra_sys
-        if official:
+        if hymt3:
+            user_msg = ("将以下文本翻译为%s，注意只需要输出翻译后的结果，"
+                        "不要额外解释：\n\n%s" % (tgt, text))
+        elif official:
             user_msg = ("将以下文本翻译为%s，注意只需要输出翻译后的结果，"
                         "不要额外解释：\n%s" % (tgt, text))
         elif src and src_lang not in ("auto", "text"):
@@ -2728,25 +2796,44 @@ class LlamaServer(object):
         else:
             user_msg = "将下面文本翻译为%s：\n%s" % (tgt, text)
         if context:
-            user_msg = ("上下文（仅供理解，不要翻译）：" + chr(10)
-                        + str(context) + chr(10) + chr(10) + user_msg)
+            if hymt3:
+                user_msg = ("【背景信息】\n%s\n\n"
+                            "请结合背景信息将以下文本翻译为%s。\n\n"
+                            "【待翻译文本】\n%s" % (context, tgt, text))
+            else:
+                user_msg = ("上下文（仅供理解，不要翻译）：" + chr(10)
+                            + str(context) + chr(10) + chr(10) + user_msg)
         if glossary_hits:
             block, _used = glossary_hint_block(glossary_hits,
-                                               official=official)
+                                               official=official, context=context)
             if block:
                 user_msg = block + "\n\n" + user_msg
+        if hymt3 and (_ANY_PLACEHOLDER_RE.search(text)
+                      or _RUNTIME_TOKEN_RE.search(text)
+                      or _MASK_RESIDUE_RE.search(text)):
+            user_msg = ("你必须在译文中保留等量的分隔符，绝对不可遗漏、转义或翻译"
+                        "该符号，并注意分隔符的位置。\n\n" + user_msg)
         if max_tokens is None:
             # ★ 2.0.13：按本次输入长度动态估算（短句不虚设、长段不截断），
             # 上限仍受 ctx 约束——对所有 MOD 通用，不依赖单一 MOD 实测值。
             max_tokens = budget_max_tokens(len(text or ""), self.ctx_size)
+        if max_output_tokens:
+            max_tokens = min(int(max_tokens), max_output_tokens)
+        if temperature is None:
+            if style == "label":
+                temperature = getattr(self, "label_temperature", 0.0)
+            elif style == "formal":
+                temperature = getattr(self, "formal_temperature", 0.1)
+            else:
+                temperature = getattr(self, "dialogue_temperature", 0.1)
+        temperature = float(temperature)
         payload = json.dumps({
-            "model": "hy-mt2",
+            "model": getattr(self, "model_id", "hy-mt2"),
             "messages": [
                 {"role": "system", "content": sys_msg},
                 {"role": "user", "content": user_msg},
             ],
-            "temperature": (0.1 if temperature is None
-                            else float(temperature)),
+            "temperature": temperature,
             "max_tokens": max_tokens,
             "stream": False,
         }).encode("utf-8")
@@ -2771,6 +2858,8 @@ class LlamaServer(object):
             out = (choice.get("message") or {}).get("content", "").strip()
             # 小模型代码端加固：剥外壳（栅栏/标签/引号），不依赖提示词自觉
             out, _wrap = strip_output_wrappers(out)
+            if hymt3:
+                out = self._repair_hymt3_masks(out, text)
             if not out:
                 last_err = "空输出"
                 time.sleep(1.0)
@@ -2880,6 +2969,9 @@ class LlamaServer(object):
         if src_lang in ("auto", "text"):
             src_lang = detect_text_lang(lines[0] if lines else "") or src_lang
         tgt = LANG_FULL.get(tgt_lang, tgt_lang)
+        hymt3 = getattr(self, "prompt_mode", "legacy") == "hymt3"
+        sampling = getattr(self, "sampling", {}) or {}
+        max_output_tokens = int(getattr(self, "max_output_tokens", 0) or 0)
         numbered = chr(10).join("[%d] %s" % (i + 1, line)
                                 for i, line in enumerate(lines))
         sys_msg = TRANSLATION_BATCH_SYS_PROMPT
@@ -2892,18 +2984,26 @@ class LlamaServer(object):
             block, _used = glossary_hint_block(glossary_hits)
             if block:
                 user_msg = block + chr(10) + chr(10) + user_msg
+        if hymt3 and any(
+                _ANY_PLACEHOLDER_RE.search(line) or _RUNTIME_TOKEN_RE.search(line)
+                or _MASK_RESIDUE_RE.search(line) for line in lines):
+            user_msg = ("你必须在译文中保留等量的分隔符，绝对不可遗漏、转义或翻译"
+                        "该符号，并注意分隔符的位置。\n\n" + user_msg)
         if max_tokens is None:
             # ★ 2.0.13：按批量输入总长度动态估算，长对话不截断。
             max_tokens = budget_max_tokens(
                 sum(len(x) for x in lines), self.ctx_size)
+        if max_output_tokens:
+            max_tokens = min(int(max_tokens), max_output_tokens)
+        temperature = (float(sampling.get("temperature", 0.1))
+                       if temperature is None else float(temperature))
         payload = json.dumps({
-            "model": "hy-mt2",
+            "model": getattr(self, "model_id", "hy-mt2"),
             "messages": [
                 {"role": "system", "content": sys_msg},
                 {"role": "user", "content": user_msg},
             ],
-            "temperature": (0.1 if temperature is None
-                            else float(temperature)),
+            "temperature": temperature,
             "max_tokens": max_tokens,
             "stream": False,
         }).encode("utf-8")
@@ -2928,6 +3028,8 @@ class LlamaServer(object):
             content = ((choice.get("message") or {}).get("content") or "").strip()
             # 小模型代码端加固：剥外壳（栅栏/标签），不依赖提示词自觉
             content, _wrap = strip_output_wrappers(content)
+            if hymt3:
+                content = self._repair_hymt3_masks(content, numbered)
             if choice.get("finish_reason") == "length":
                 raise OutputTruncated("批量输出被截断")
             return content
@@ -3322,7 +3424,7 @@ def _ctx_index(value):
 
 
 def _tier_of_label(label):
-    return _LABEL_TO_TIER.get(str(label or ""), "7b")
+    return _LABEL_TO_TIER.get(str(label or ""), "mt2")
 
 
 class AiTranslateTab(object):
@@ -3363,7 +3465,7 @@ class AiTranslateTab(object):
             variant0 = VARIANT_ORDER[0]
         tier0 = self.cfg.get("tier")
         if tier0 not in TIER_ORDER:
-            tier0 = TIER_ORDER[0]
+            tier0 = "mt2"
         self.sel = {
             "variant": variant0,
             "tier": tier0,
@@ -3784,6 +3886,7 @@ class AiTranslateTab(object):
             placeholder="待翻译目录（如 gamedata，可拖入）")
         self.btn_in = ui.button(p, "选择目录", self.on_choose_in)
         self.btn_scan = ui.button(p, "扫描选档", self.on_scan_dir)
+        self.scan_eta_label = ui.label(p, "耗时估算：扫描后显示各档位时间范围")
 
         ui.label(p, "输出目录")
         self.out_box = ui.drop_box(
@@ -3848,7 +3951,7 @@ class AiTranslateTab(object):
     def current_tier(self):
         """当前模型档位（读跨线程缓存 `self.sel`，不碰控件）。"""
         tier = self.sel.get("tier")
-        return tier if tier in TIER_ORDER else "7b"
+        return tier if tier in TIER_ORDER else "mt2"
 
     def current_variant(self):
         """当前后端（读跨线程缓存 `self.sel`，不碰控件）。"""
@@ -3891,7 +3994,10 @@ class AiTranslateTab(object):
             return None
         ctx = self._route_ctx()
         variant = self.current_variant()
-        key = (model, ctx, variant, budget)
+        key = (model, ctx, variant, budget,
+               self.scan_dir,
+               int((self.scan_info or {}).get("translatable_entries") or 0),
+               int((self.scan_info or {}).get("translatable_chars") or 0))
         cache = getattr(self, "_par_choices_cache", None)
         if cache is not None and key in cache:
             return cache[key]
@@ -3913,6 +4019,13 @@ class AiTranslateTab(object):
                 bits.append("最稳，默认")
             if n == max_n and max_n > 1:
                 bits.append("推荐")
+            if n > 1:
+                bits.append("吞吐约 %.2f×" % parallel_speedup(n))
+            if self.scan_info and self.scan_dir:
+                eta = estimate_translation(
+                    self.scan_info, self.current_tier(), n, variant)
+                bits.append("ETA %s" % _fmt_eta_range(
+                    eta["low_seconds"], eta["high_seconds"]))
             bits.append("约 %s" % _fmt_mem(used))
             choices.append((n, "%d 路（%s%s）"
                             % (n, "，".join(bits), note if n == 1 else "")))
@@ -3961,6 +4074,7 @@ class AiTranslateTab(object):
                 save_config(self.cfg)
             _combo_set(combo, labels, idx)
         self.refresh_vram_estimate()
+        self._refresh_eta_estimate()
 
     def _on_parallel(self, value=None):
         if value:
@@ -3970,6 +4084,7 @@ class AiTranslateTab(object):
         self.cfg["parallel"] = self.current_parallel()
         save_config(self.cfg)
         self.refresh_vram_estimate()
+        self._refresh_eta_estimate()
         if self.current_parallel() > 1:
             self.log("多路翻译：%d 路并发；显存占用见「④ 引擎」页估算"
                      % self.current_parallel(), "dim")
@@ -4013,6 +4128,26 @@ class AiTranslateTab(object):
                       _fmt_mem(est["kv"] // par), par, est["compute"],
                       suffix, warn,
                       "　※ 按 GGUF 元数据估算" if est.get("approx") else ""))
+
+    def _refresh_eta_estimate(self):
+        label = getattr(self, "scan_eta_label", None)
+        if label is None:
+            return
+        info = getattr(self, "scan_info", None)
+        if not info or not getattr(self, "scan_dir", None):
+            _label_set(label, "耗时估算：扫描后显示各档位时间范围")
+            return
+        eta = estimate_translation(
+            info, self.current_tier(), self.current_parallel(),
+            self.current_variant())
+        _label_set(
+            label,
+            "耗时估算：%d 文件 / %d 条 / %d 字符 · %d 路 · %s"
+            "（每路约 %d 文件 / %d 条，单路份额 %s）"
+            % (eta["files"], eta["entries"], eta["chars"], eta["parallel"],
+               _fmt_eta_range(eta["low_seconds"], eta["high_seconds"]),
+               eta["per_route_files"], eta["per_route_entries"],
+               _fmt_eta(eta["per_route_seconds"])))
 
     def _on_variant(self, value=None, save_chosen=True):
         """后端下拉变更（2.x 回调把新值作为第一个参数传进来）。"""
@@ -4397,13 +4532,16 @@ class AiTranslateTab(object):
                 self.ui_call(self.log, "待翻译文件识别失败：%s" % e, "warn")
                 return
             self.scan_info, self.scan_dir = info, path
-            n = int(info.get("files_with_text") or 0)
+            n = int(info.get("translatable_files")
+                    or info.get("files_with_text") or 0)
             self.ui_call(self.log,
-                         "待翻译文件：%d 个（自动识别整个 MOD 中含可译文本的文件）"
-                         % n)
+                         "真实可译文件：%d 个（条目 %d / 字符 %d）"
+                         % (n, int(info.get("translatable_entries") or 0),
+                            int(info.get("translatable_chars") or 0)))
             self.ui_call(self._set_count, 0, n, "个文件")
             self.ui_call(self._set_stage,
-                         "阶段：待命（已识别待翻译文件 %d 个）" % n)
+                         "阶段：待命（已识别真实可译文件 %d 个）" % n)
+            self.ui_call(self._refresh_eta_estimate)
         threading.Thread(target=work, daemon=True).start()
 
     def _default_out(self, in_dir):
@@ -4880,7 +5018,7 @@ class AiTranslateTab(object):
                      "仅供参考", "warn")
         ready = [t for t in TIER_ORDER if self.find_model(t)]
         if rec_tier not in ready:
-            pref = [t for t in (rec_tier, "mt2", "7b", "custom")
+            pref = [t for t in (rec_tier, "mt3_q8", "mt3_q4", "mt2", "7b", "custom")
                     if t in ready]
             if pref:
                 self.log("推荐的 %s 档模型尚未下载，已改选本机就绪的 %s 档"
@@ -4895,6 +5033,33 @@ class AiTranslateTab(object):
                     info["max_file"][0] / 1024.0, info["n_strings"],
                     info["max_str"],
                     os.path.basename(info["max_str_file"]) or "-"))
+        self.log("真实可译规模：文件 %d 个 / 条目 %d 条 / 字符 %d"
+                 % (int(info.get("translatable_files") or 0),
+                    int(info.get("translatable_entries") or 0),
+                    int(info.get("translatable_chars") or 0)))
+        for tier in BUILTIN_TIERS:
+            eta = estimate_translation(
+                info, tier, self.current_parallel(), self.current_variant())
+            model = self.find_model(tier)
+            memory = "模型未就绪"
+            if model:
+                tier_ctx = decide_ctx(tier, info)
+                vram = estimate_vram_mib(
+                    model, tier_ctx, self.current_parallel(),
+                    gpu_layers=0 if self.current_variant() == "cpu" else 99)
+                memory = "约 %s" % _fmt_mem(vram["total"])
+            self.log(
+                "  %s：约 %.2f× MT2 单路速度，%d 路总耗时 %s；"
+                "每路约 %d 文件 / %d 条，单路份额 %s；%s%s"
+                % (TIER_PROFILES[tier]["combo"][:2],
+                   eta["speedup_vs_mt2"], eta["parallel"],
+                   _fmt_eta_range(eta["low_seconds"], eta["high_seconds"]),
+                   eta["per_route_files"], eta["per_route_entries"],
+                   _fmt_eta(eta["per_route_seconds"]), memory,
+                   "（经验估值）" if TIER_PROFILES[tier].get("speed_estimated")
+                   else "（同源A/B吞吐）"))
+        self.log("耗时估算基于真实可译规模与 4515 字符同源 A/B；"
+                 "硬件、文本难度与重试会改变实际时间，请以范围为准。", "dim")
         self.log("待翻译文件（自动识别整个 MOD 中含可译文本的文件）：%d 个"
                  % int(info.get("files_with_text") or 0))
         for t in BUILTIN_TIERS:
@@ -5110,6 +5275,7 @@ class AiTranslateTab(object):
         tm_lite = self.flags["tm_lite"]
 
         self.tr_cancel = threading.Event()
+        self._run_started_at = time.monotonic()
         self._last_pct = -1
         self.ui.set_enabled(self.btn_run, False)
         self.ui.set_enabled(self.btn_run_cancel, True)
@@ -5171,7 +5337,8 @@ class AiTranslateTab(object):
                 pending_files = 0
                 if self.scan_info and self.scan_dir == in_dir:
                     info = self.scan_info
-                    pending_files = int(info.get("files_with_text")
+                    pending_files = int(info.get("translatable_files")
+                                        or info.get("files_with_text")
                                         or info.get("files") or 0)
                     self.ui_call(self.log,
                                  "上下文 %d token × %d 路；最长文本 %d 字符，超长自动分句"
@@ -5180,8 +5347,10 @@ class AiTranslateTab(object):
                                     info["max_str"]))
                     if pending_files:
                         self.ui_call(self.log,
-                                     "待翻译文件：%d 个（已自动识别整个 MOD 的"
-                                     "可译文本文件）" % pending_files)
+                                     "真实可译文件：%d 个（条目 %d / 字符 %d）"
+                                     % (pending_files,
+                                        int(info.get("translatable_entries") or 0),
+                                        int(info.get("translatable_chars") or 0)))
                         self.ui_call(self._set_count, 0, pending_files, "个文件")
 
                 job = TranslationJob(
@@ -5240,6 +5409,11 @@ class AiTranslateTab(object):
                 extra = ""
                 if d.get("ids"):
                     extra = "，条目 %d 条" % int(d.get("ids") or 0)
+                started = getattr(self, "_run_started_at", 0)
+                if started and idx > 0:
+                    elapsed = max(0.1, time.monotonic() - started)
+                    remaining = max(0, total - idx)
+                    extra += "，ETA %s" % _fmt_eta(elapsed * remaining / idx)
                 done_count = d.get("tabs")
                 if done_count is None:
                     done_count = min(idx, total)

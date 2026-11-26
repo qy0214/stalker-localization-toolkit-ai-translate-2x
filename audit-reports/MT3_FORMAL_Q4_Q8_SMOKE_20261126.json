@@ -1,0 +1,144 @@
+{
+  "mt3_q4": {
+    "tier": "mt3_q4",
+    "model": "Hy-MT3-1.8B-Q4_K_M.gguf",
+    "cases": [
+      {
+        "name": "short_en",
+        "source": "Hello.",
+        "translation": "嗨。",
+        "seconds": 0.062,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "short_ru",
+        "source": "Привет, сталкер! Как дела?",
+        "translation": "嗨，潜行者！咋样？",
+        "seconds": 0.328,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "placeholder_ru",
+        "source": "Найди %s в баре и вернись ко мне.",
+        "translation": "在酒吧里找到%s然后回到我这儿。",
+        "seconds": 0.156,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "weapon_en",
+        "source": "The trader sells an AK-74 and 300 rounds.",
+        "translation": "那名商人出售了一把AK-74和300发子弹。",
+        "seconds": 0.25,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "context_en",
+        "source": "Where can I buy a suppressor?",
+        "translation": "我在哪儿能买到消音器啊？",
+        "seconds": 0.157,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "profanity_ru",
+        "source": "Заткнись! Я тебе сейчас башку оторву!",
+        "translation": "闭嘴！我现在就把你的脑袋拧下来！",
+        "seconds": 0.218,
+        "has_cjk": true,
+        "placeholders_ok": true
+      }
+    ],
+    "batch": {
+      "output": "[1] 你好。\n[2] 西多罗维奇在哪里交易？\n[3] 我这里有 $name 和 %s。",
+      "seconds": 0.36,
+      "has_cjk": true
+    },
+    "start_seconds": 3.641,
+    "gpu_verified": true,
+    "health_warn": "",
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3_q4 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 51890",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_real_7zwniovh\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795708104.log",
+      "[info] 引擎就绪（用时 3 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'嗨。'",
+      "[info] 引擎已停止"
+    ]
+  },
+  "mt3_q8": {
+    "tier": "mt3_q8",
+    "model": "Hy-MT3-1.8B-Q8_0.gguf",
+    "cases": [
+      {
+        "name": "short_en",
+        "source": "Hello.",
+        "translation": "嗨。",
+        "seconds": 0.078,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "short_ru",
+        "source": "Привет, сталкер! Как дела?",
+        "translation": "嗨，潜行者！怎么样？",
+        "seconds": 0.297,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "placeholder_ru",
+        "source": "Найди %s в баре и вернись ко мне.",
+        "translation": "在酒吧找到%s然后回到我这里。",
+        "seconds": 0.187,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "weapon_en",
+        "source": "The trader sells an AK-74 and 300 rounds.",
+        "translation": "那个商人出售了一把AK-74和300发子弹。",
+        "seconds": 0.234,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "context_en",
+        "source": "Where can I buy a suppressor?",
+        "translation": "我能在哪儿买消音器啊？",
+        "seconds": 0.157,
+        "has_cjk": true,
+        "placeholders_ok": true
+      },
+      {
+        "name": "profanity_ru",
+        "source": "Заткнись! Я тебе сейчас башку оторву!",
+        "translation": "闭嘴！我现在就把你的脑袋拧下来！",
+        "seconds": 0.187,
+        "has_cjk": true,
+        "placeholders_ok": true
+      }
+    ],
+    "batch": {
+      "output": "[1] 嗨。\n[2] 西多罗维奇在哪里交易？\n[3] 我有$name和%s。",
+      "seconds": 0.391,
+      "has_cjk": true
+    },
+    "start_seconds": 4.141,
+    "gpu_verified": true,
+    "health_warn": "",
+    "log_tail": [
+      "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+      "[info] 启动 llama-server（CUDA 12.4/GPU，mt3_q8 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 58735",
+      "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_real_7zwniovh\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795708110.log",
+      "[info] 引擎就绪（用时 4 秒）",
+      "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+      "[info] 启动自检通过：'嗨。'",
+      "[info] 引擎已停止"
+    ]
+  }
+}

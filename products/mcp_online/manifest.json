@@ -1,14 +1,14 @@
 {
   "id": "mcp_online",
   "name": "STALKER Translate Online MCP",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "status": "active",
   "entry": "products/mcp_online/server.py",
   "cli": "products/mcp_online/cli.py",
   "transport": "stdio",
   "provider": "openai_compatible",
-  "core": "1.0.1",
+  "core": "1.0.2",
   "asset_source": "assets",
-  "package": "dist/stalker-translate-online-MCP-0.3.0.zip",
-  "release_manifest": "dist/stalker-translate-online-MCP-0.3.0.manifest.json"
+  "package": "dist/stalker-translate-online-MCP-0.3.1.zip",
+  "release_manifest": "dist/stalker-translate-online-MCP-0.3.1.manifest.json"
 }

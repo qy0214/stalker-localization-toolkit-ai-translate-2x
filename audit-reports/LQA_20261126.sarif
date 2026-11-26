@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "STALKER AI Translate LQA",
+          "rules": [
+            {
+              "id": "glue_residue",
+              "shortDescription": {
+                "text": "检测到中英或中俄粘连残词"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "literal_newline_damage",
+              "shortDescription": {
+                "text": "字面换行符数量不一致"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "missing_prediction",
+              "shortDescription": {
+                "text": "缺少候选译文"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "model_fidelity",
+              "shortDescription": {
+                "text": "明确型号缺失或改写"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "number_fidelity",
+              "shortDescription": {
+                "text": "关键数字缺失或改写"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "runtime_token_damage",
+              "shortDescription": {
+                "text": "运行期占位符或顺序不一致"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "semantic_role_conflict",
+              "shortDescription": {
+                "text": "检测到人称或付款语义方向冲突"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "untranslated",
+              "shortDescription": {
+                "text": "候选译文与源文相同"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            }
+          ]
+        }
+      },
+      "results": [],
+      "properties": {
+        "metrics": {
+          "true_positives": 174,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "cases": 360,
+          "matched_cases": 360,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "human_corrections": 200,
+          "human_correction_survival": 1.0
+        },
+        "llmScoresAreGates": false
+      }
+    }
+  ]
+}

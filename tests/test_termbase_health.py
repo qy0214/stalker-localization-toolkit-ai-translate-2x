@@ -59,7 +59,8 @@ class TestTermbaseHealth(unittest.TestCase):
 
     def test_total_entries_consistent(self):
         import json
-        data = json.load(open(TB, encoding="utf-8"))
+        with open(TB, encoding="utf-8") as handle:
+            data = json.load(handle)
         real = sum(len(v) for k, v in data.items() if k != "_meta")
         meta = data["_meta"]
         self.assertEqual(meta.get("total_entries"), real)

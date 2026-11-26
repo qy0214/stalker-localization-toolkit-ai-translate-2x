@@ -88,9 +88,9 @@ def main() -> int:
         "sha256": sha256(install_zip),
         "entry": "plugin.py",
         "target": PLUGIN_ID,
-        "name": "AI 离线翻译（Hy-MT2 / 自选模型）",
+        "name": "AI 离线翻译（Hy-MT3 测试 / Hy-MT2 / 自选模型）",
         "repo": REPO,
-        "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT2 两档内置模型 + 自选 GGUF，"
+        "note": "本地离线 AI 翻译 X-Ray 文本：Hy-MT3 1.8B 测试档 + Hy-MT2 两档 + 自选 GGUF，"
                 "CPU/CUDA/Vulkan 自动识别，多路并发，术语库随包。",
     }
     print()

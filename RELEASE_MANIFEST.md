@@ -1,27 +1,27 @@
 # AI 离线翻译插件（2.x）· 发布清单
 
-- 生成时间：`2026-11-26T00:06:23+08:00`
+- 生成时间：`2026-11-27T00:58:19+08:00`
 - 范围：**AI 离线翻译插件（ai_translate）· STALKER Localization Toolkit 2.x**
-- Git：`monorepo-migration` @ `02649fa`（有未提交改动）
-- 已跟踪文件：1502 个，72.32 MB
+- Git：`monorepo-migration` @ `1dd39e7`（有未提交改动）
+- 已跟踪文件：1504 个，70.22 MB
 
 ## 1. 版本与交付物
 
 | 项 | 值 |
 |---|---|
-| 插件版本 | `2.0.29` |
-| 预期版本 | `2.0.29` |
+| 插件版本 | `2.0.30` |
+| 预期版本 | `2.0.30` |
 | 宿主插件 API | `1` |
 | 适用平台 | `STALKER Localization Toolkit 2.x` |
 
 | 角色 | 路径 | 大小 | SHA-256 | 说明 |
 |---|---|---:|---|---|
-| 插件入口 | `plugins\ai_translate\plugin.py` | 220.96 KB | `1582cb62d9f8f3c6307cd005ba2034c27f9675187065b54795c2a0f9293db990` | 2.x 目录插件（api.ui 门面） |
-| 插件分享目录 | `plugins\ai_translate` | 2.86 MB | — | 25 个文件（目录） |
-| 插件发布 zip | `dist\ai_translate_plugin_v2.0.29.zip` | 998.52 KB | `7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27` | 当前发布包 |
-| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.29_install.zip` | 998.13 KB | `c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92` | 给平台插件管理器直接解压用 |
-| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.15 MB | `387a6ce17117b99cd9c03d5efe598a3c2e96851e222a83021affe2c185009d3a` | 运行时匹配的内置层 |
-| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.16 MB | `6c87e9b43a4d7ce36d35ebec44c0fd901220d03a5130f0c7508a8f5ec1153722` | 导入用 |
+| 插件入口 | `plugins\ai_translate\plugin.py` | 230.49 KB | `05a82aea4d21024382485fa2266da31143ceead8250a02f721c17c52ce133d2b` | 2.x 目录插件（api.ui 门面） |
+| 插件分享目录 | `plugins\ai_translate` | 2.70 MB | — | 29 个文件（目录） |
+| 插件发布 zip | `dist\ai_translate_plugin_v2.0.30.zip` | 934.75 KB | `9ac081a753101f84b0089b97eeb270d7f24df2fe6d962598ed4d0e638f1fe5fc` | 当前发布包 |
+| 平台安装包（顶层 ai_translate/） | `dist\ai_translate_plugin_v2.0.30_install.zip` | 934.30 KB | `1564f79e14f13381a02755c1fe4a60d9fb1fb012e1984bee1ef3325137d48989` | 给平台插件管理器直接解压用 |
+| 术语库（随包，只读） | `plugins\ai_translate\assets\glossary_builtin.json` | 1.04 MB | `ad3b12caa67541c3509660c946e2eb1fcc43d2d24a05377ab4214319d580bfbb` | 运行时匹配的内置层 |
+| 术语基表（分类） | `plugins\ai_translate\assets\stalker_termbase.json` | 1.05 MB | `71b138ee7a9ba8964e2da15b4666ab4f800710c443469a18eb6a849633ec1a0d` | 导入用 |
 | X-Ray 解析器 | `plugins\ai_translate\assets\xray_pkg.zip` | 9.06 KB | `603b11069eb69aa4148df260e7f14bfb07993044bf04cb70a745ab62923205f2` | 解析 XML/LTX/脚本 |
 | 第三方来源声明 | `plugins\ai_translate\assets\THIRD_PARTY_NOTICES.txt` | 2.08 KB | `338f62ede3e6253ce1e7b513023b8535b6f5d94c33a00311bf295d421d601ff2` | 随包分发（上游来源与许可状态） |
 
@@ -35,49 +35,51 @@
 | llama.cpp `cudart-12.4` | `cudart-llama-bin-win-cuda-12.4-x64.zip` | — | `8c79a9b226de4b3cacfd1f83d24f962d0773be79f1e7b75c6af4ded7e32ae1d6` |
 | llama.cpp `cuda-13.4` | `llama-b11612-bin-win-cuda-13.4-x64.zip` | — | `e1c59ee10ead069dee12bf5a1f5a3ed294b144ea3f9c5006aa89675c5306de38` |
 | llama.cpp `cudart-13.4` | `cudart-llama-bin-win-cuda-13.4-x64.zip` | — | `738f8c251ac22b70c3ae6f83a10cf222725df0395246a2cf58f32bdb85fbe668` |
+| 模型 | `Hy-MT3-1.8B-Q4_K_M.gguf` | 1348432160 | `bae6e591103654ff43ef0de7d1492f6e6df1f955505f6bb2cc52e86fc399a942` |
+| 模型 | `Hy-MT3-1.8B-Q8_0.gguf` | 1908528448 | `03e246991a57d31fe01ac203331e032eabd327ffd0098e570411b811f6119af8` |
 | 模型 | `Hy-MT2-7B-Q4_K_M.gguf` | 4624648896 | `9f96256500f3fc1ab4d64336b58f52a949a95ad7516b0c229476eef782f9f77b` |
 | 模型 | `Hy-MT2-1.8B-Q8_0.gguf` | 1908528192 | `5c3fe0b1408a5ceb0143184ef247b11b579c525f4b02b060e6c851bb76fef1a4` |
 
-来源：llama.cpp `b11612` GitHub Release asset digest；HuggingFace LFS oid（`tencent/Hy-MT2-7B-GGUF`、`tencent/Hy-MT2-1.8B-GGUF`）。下载后强制比对，不一致即删除并换源。
+来源：llama.cpp `b11612` GitHub Release asset digest；HuggingFace LFS oid（`tencent/Hy-MT3-1.8B-GGUF`、`tencent/Hy-MT2-7B-GGUF`、`tencent/Hy-MT2-1.8B-GGUF`）。下载后强制比对，不一致即删除并换源。
 
 ## 3. 一致性核对
 
 | 检查 | 结果 | 说明 |
 |---|---|---|
 | 插件语法 | 一致 | compile() 通过 |
-| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.29 / 预期 2.0.29 |
+| 插件版本 == 预期 | 一致 | PLUGIN_INFO 2.0.30 / 预期 2.0.30 |
 | PLUGIN_API == 1（2.x 宿主契约） | 一致 | 1 |
 | PLUGIN_INFO.id 为 ASCII | 一致 | ai_translate |
 | PLUGIN_INFO.repo 指向 2.x 专用仓库 | 一致 | https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x |
 | 目录插件形状：plugins/ai_translate/{plugin.py,assets/} | 一致 | plugin.py + assets/ |
 | 无 2.x 禁用导入（ssl/http/urllib.request/urllib.error/tkinter） | 一致 | 干净 |
-| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.29.zip |
+| zip 文件名含插件版本 | 一致 | ai_translate_plugin_v2.0.30.zip |
 | zip 条目 == 预期文件 | 一致 | 多出：无；缺少：无 |
 | zip 不含空目录/运行库/模型/日志/__pycache__ | 一致 | 干净 |
 | 随包术语库：内置词表 + 分类基表都在 zip 内 | 一致 | 缺少：无 |
-| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1210784；stalker_termbase.json=1218049 |
+| 随包术语库非空壳（两文件合计 > 600 KB） | 一致 | glossary_builtin.json=1089882；stalker_termbase.json=1103062 |
 | zip 内文件 == 工作副本 | 一致 | 全部一致 |
 | 官方哈希：llama.cpp 6 项 | 一致 | 登记 6 项；不一致：无 |
-| 官方哈希：模型 2 项 | 一致 | 登记 2 项；不一致：无 |
-| 官方哈希：8 个合法 SHA-256 | 一致 | 8 个 |
+| 官方哈希：模型 4 项 | 一致 | 登记 4 项；不一致：无 |
+| 官方哈希：10 个合法 SHA-256 | 一致 | 10 个 |
 | 官方哈希：llama.cpp 标签 b11612 | 一致 | 源码常量 _LLAMA_TAG='b11612' |
 | 分享目录不含 bin/models/logs/downloads/config.json | 一致 | 干净 |
 | 插件目录无被跟踪的 __pycache__ | 一致 | 干净 |
 | 无绝对路径/用户名泄漏 | 一致 | 未发现 |
-| 术语基表：_meta.total_entries == 实际分类合计 | 一致 | meta 24455 / 实际 24455 |
+| 术语基表：_meta.total_entries == 实际分类合计 | 一致 | meta 21581 / 实际 21581 |
 | 术语基表：_meta.categories == 实际分类条数 | 一致 | meta 13 类 / 实际 13 类，差异：无 |
-| 术语库：随包条目 >= 8000 | 一致 | 24455 条 |
-| 术语库：随包 >= 分类基表 | 一致 | 24455 / 24455 |
+| 术语库：随包条目 >= 8000 | 一致 | 21581 条 |
+| 术语库：随包 >= 分类基表 | 一致 | 21581 / 21581 |
 | dist 只保留当前版本 zip | 一致 | 仅当前版本 |
 
 ## 4. 术语数据规模
 
 | 文件 | 条目 |
 |---|---:|
-| `glossary_builtin.json`（随包，运行时匹配） | 24455 |
-| `stalker_termbase.json`（分类导入） | 24455 |
+| `glossary_builtin.json`（随包，运行时匹配） | 21581 |
+| `stalker_termbase.json`（分类导入） | 21581 |
 
-分类明细：阵营与组织 107、人物与军衔 3250、地点与区域 397、变异生物 79、物品·武器·装备·神器 3693、任务 2453、百科与术语 3713、界面与提示 3263、新闻·对话·其他 5351、ANTHOLOGY 参考 148、技术缩写 18、人工对照 1932、高频硬词 51
+分类明细：阵营与组织 107、人物与军衔 2410、地点与区域 395、变异生物 81、物品·武器·装备·神器 3535、任务 2108、百科与术语 2990、界面与提示 2895、新闻·对话·其他 4933、ANTHOLOGY 参考 127、技术缩写 18、人工对照 1931、高频硬词 51
 
 ## 5. 安装位置与数据落点
 
@@ -90,7 +92,7 @@
 
 ```powershell
 # 校验当前插件 zip
-Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.30.zip' -Algorithm SHA256
 
 # 重新打包 + 重生成清单
 python tools/gen_release_manifest.py --build

@@ -1,7 +1,8 @@
 # STALKER AI Translate Suite
 
-单一仓库维护共享翻译核心、术语库和五个独立产品：2.x 离线插件、1.9.x 兼容插件、
-Hermes MCP、通用在线 MCP/CLI、通用翻译技能。核心与资产只保留一份源，发布时生成五个独立分享包。
+单一仓库维护共享翻译核心、术语库和五个 active 产品：2.x 离线插件、1.9.x 兼容插件、
+Hermes MCP、通用在线 MCP/CLI、通用翻译技能；另已接入一个 pending 成员：中文语音工坊。
+核心与资产只保留一份源，发布时生成独立分享包。
 
 仓库：<https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x>
 
@@ -9,15 +10,23 @@ Hermes MCP、通用在线 MCP/CLI、通用翻译技能。核心与资产只保�
 
 | 产品 | 当前版本 | 状态 |
 |---|---|---|
-| 2.x 离线桌面插件 | 2.0.29 | active |
-| 1.9.x 兼容离线插件 | 1.9.26 | active |
-| Hermes MCP | 1.1.11 | active（共享 core，完整离线作业） |
-| 通用在线 MCP / CLI | 0.3.0 | active（OpenAI 兼容、stdio、共享全链） |
-| 通用翻译技能 | 0.3.0 | active（知识技能+三薄命令，与 2.x 共享全链） |
+| 2.x 离线桌面插件 | 2.0.30 | active |
+| 1.9.x 兼容离线插件 | 1.9.27 | active |
+| Hermes MCP | 1.1.12 | active（共享 core，完整离线作业） |
+| 通用在线 MCP / CLI | 0.3.1 | active（OpenAI 兼容、stdio、共享全链） |
+| 通用翻译技能 | 0.3.1 | active（知识技能+三薄命令，与 2.x 共享全链） |
+| 中文语音工坊 | 0.1.0 | **pending**（原音色汉语语音骨架，未纳入发布列车） |
+
+## 中文语音工坊（pending）
+
+- 第六成员已接入 [`products/voice_plugin/manifest.json`](products/voice_plugin/manifest.json)，版本 0.1.0，状态 **pending**；单一源码为 `plugins/zh_voice/` 与 `core/stalker_voice_core/`，当前发布列车仍只包含五个 active 产品。
+- 目标：以俄/英/乌原声为样本克隆音色，生成汉语语音并回写游戏语音树。
+- 骨架已打通 worker 子进程握手/心跳、游戏根体检、`.ogg` 语音枚举、xrkit 存档解包和 echo 自检；重运行时隔离在 worker，宿主不加载 torch/TTS。
+- 三级文本链、Qwen3-TTS 批量合成、后处理与 MODS 组包仍为预留；完成真机验证后再转 active 并生成独立分享包。
 
 ## 统一发布列车
 
-当前列车：`2026.11.25`，tag：`suite-v2026.11.25`。总清单与资产哈希见
+当前本地列车：`2026.11.27`，计划 tag：`suite-v2026.11.27`（尚未推送/发布）。总清单与资产哈希见
 [`release_train.json`](release_train.json) 和 [`RELEASE_TRAIN.md`](RELEASE_TRAIN.md)。
 
 ```powershell
@@ -38,6 +47,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **2.0.30**（2026.11.27 本地列车） | Hy-MT3 Q4_K_M/Q8_0 双正式档，MT2-1.8B 保持默认基线；8192 上下文与官方采样，Q4/Q8 真实 CUDA 冒烟通过。扫描按真实可译文件/条目/字符估算总体及每路 ETA，多路显示次线性吞吐和显存；同源 A/B Q4 约 1.94×、Q8 约 1.67× MT2。新增 Termbase v3 治理/TBX/TMX、数字型号保真、统一筛选追踪、round-trip/provenance、360 条 LQA 金标与 SARIF/JUnit；词库由 24455 精简到 21581。 |
 | **2.0.29**（2026.11.25 列车） | 五合一单仓库归库并首次 GitHub Release（suite-v2026.11.25）：两轮深度审计全修复（未定义名/调用点/只读化/畸形 XML 告警/锁退避/CI 加固/XML 非法字符，见 MONOREPO_DEEP_AUDIT_20261125.md）；wzyddg 解析器来源注释补全；`strip_output_wrappers` 输出外壳剥离（代码栅栏/"译文："前缀/引号包裹）接入单条+批量出口——小模型提示词不可依赖时由代码硬闸门兜底；术语库健康门 10 项回归纳入 CI；测试 34/34 全绿、ruff F821=0、bandit High=0。 |
 | **2.0.28** | 小模型交付可靠性修复：纯符号/零变化文本不再生成文件或记账，旧账本按 pipeline + SHA-256 强制迁移；取消/异常/写盘失败均撤销完成记录，生成 ID 定义表按文件事务落盘并补齐中断恢复；终检升级为结构化硬门禁（悬空 ID、占位符损坏、漏译、硬术语次数、语义方向冲突），失败不再显示「全部完成」；补齐严格 token 序列、提示词串入、多语言字段保真和原子替换并发保护。新增 60 项真实解析器/假模型边界回归，21 个测试文件全绿，发布一致性 25/25 |
 | 2.0.27 | 术语库交叉一致性审计（新方法，弃用旧脚本）：同源跨类冲突 15 组全部统一（Loners→独行者、Wolf→狼、Cap→帽子、Mama's Beads→妈妈的念珠、Generator→发电机 等）、中文半角标点 1087 条规范化、俄英同源（Мамины бусы 系列）对齐；交叉审计 S1/S4a 归零，两仓四副本同步，测试 20/20 全绿 |
@@ -58,7 +68,8 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
-| **1.9.26**（2026.11.25 列车） | 纳入五合一单仓库（products/plugin_1_9x），同步 core 1.0.1 全部修复；新增 `strip_output_wrappers` vendored 副本接入单条+批量出口（小模型输出外壳硬闸门）；旧独立仓库已归档并引导至本库。 |
+| **1.9.27**（2026.11.27 本地列车） | 同步 core 1.0.2：完整 round-trip/provenance、Termbase v3、数字型号保真、统一筛选与 21581 条精简词库；旧构造签名和数据根兼容保持不变。 |
+| **1.9.26**（2026.11.25 列车） | 纳入五合一单仓库（products/plugin_1_9x），切换共享 `OfflineTranslationJob` 完整作业，保留旧构造签名与数据根闸门；同步 core 1.0.1 全部修复和 `strip_output_wrappers` 出口外壳剥离。旧独立仓库已归档并引导至本库（[Release](https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/tag/suite-v2026.11.25)）。 |
 | **1.9.25** | 小模型交付可靠性：零变化不落盘、旧账本强制迁移、取消/异常/写盘失败不记完成、生成 ID 事务、终检硬门禁与 54 项交付回归。 |
 | 1.9.24 | 同步 2.0.27 术语交叉审计：15 组同源冲突统一、1087 条中文标点规范化。 |
 | 1.9.23 | 同步 2.0.26 术语深度审查：51 条高频硬词、9 处错译修正。 |
@@ -72,7 +83,8 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
-| **1.1.11**（2026.11.25 列车） | 纳入五合一单仓库，同步 core 1.0.1 全部修复；模型响应出口接入 `strip_output_wrappers` 外壳剥离；新增可配置 `allowed_roots` 边界；旧独立仓库已归档并引导至本库。 |
+| **1.1.12**（2026.11.27 本地列车） | 同步 core 1.0.2 的回写校验、溯源、术语策略与筛选追踪；修复带颜色码玩家文本被误判为标识符，管线账本断言升级为 runtime fingerprint。 |
+| **1.1.11**（2026.11.25 列车） | 纳入五合一单仓库并删除过渡内核，完整作业改由共享 core 提供。`translate_mod` 异步化，新增 `translation_plan/job_status/job_cancel`、MCP 取消通知、本地令牌控制端点与进度页暂停/继续/停止；无 elicitation 时安全回退 1.8B 单路。进度改用全局分母且运行中封顶 99%，只显示验收译文；排除嵌套旧输出，新增相邻条目污染、人物名一致性、英文碎片终检；端点 429/5xx/断连指数退避，UTF-8 日志，`allowed_roots` 文件边界。旧独立仓库已归档并引导至本库（[Release](https://github.com/qy0214/stalker-localization-toolkit-ai-translate-2x/releases/tag/suite-v2026.11.25)）。 |
 | **1.1.10** | 修复中断悬空 ID、零变化输出、占位符损坏、漏译和完成状态误报；增加语义方向、硬术语终检、问题文件重译与旧账本迁移。 |
 | 1.1.9 | 修复进度页回归，统一 MCP 主线，清理旧 CLI 支线。 |
 | 1.1.8 | 首次调用时同时选择 1.8B/7B 模型与并发路数。 |
@@ -87,6 +99,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **0.3.1**（2026.11.27 本地列车） | 同步 core 1.0.2；项目回写接受 vendor 归一化的裸 `&` 源文，同时保留属性/注释/BOM/换行结构校验与条目溯源。 |
 | **0.3.0** | 协议重铸：账本三命令整体退役（pending_entries/apply_batch 移除），换为知识技能薄工具 `plan_translation`/`extract_batch`/`merge_answers`——批次落紧凑 TSV（sid 短哈希，六十四位键零泄露），stdout 只回摘要；plan 内嵌规模熔断（unique>3000 建议引擎、>20000 判定 engine_required）。| 
 | **0.2.2** | 批次协议两处关键修正：**同源多键折叠**（同一句在不同场景提示键只须作答一次，答任意键全键生效）与 **stale 清理**（本轮未再问起的旧 pending 键自动出清单，杜绝“循环至零”空转）。0.2.0 接入共享 core 全链（与 2.x 同源判定链/词库直取/运行期掩码/闸门回写/断点账本）、`pending_entries`/`apply_batch` 协议、core 提示词统一与 MCP stdout 隔离。 |
 | **0.1.1**（2026.11.25 列车） | 纳入五合一单仓库，同步 core 1.0.1 全部修复与统一发布列车（tag suite-v2026.11.25）。 |
@@ -96,6 +109,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 | 版本 | 摘要 |
 |---|---|
+| **0.3.1**（2026.11.27 本地列车） | 核心定译表随精简词库重新生成；共享 core 升级到 1.0.2，保留 plan/extract/merge 薄命令与规模熔断。 |
 | **0.3.0** | 技能回归知识本体：随包 `GLOSSARY-CORE.md`（24455 条主库自动切出~650 条宇宙正字法：地名/阵营/怪物/硬词，约 2.6K token）；工作流三拍 `plan→extract→merge`，AI 不再见请求键/不再读整库/不再逐轮重吐清单；统一性三层执法=核心表(事前)+逐行hint(事中)+merge回填闸门(事后)；plan 报价含模式判定，大 MOD 对话硬翻在第一步被熔断。 |
 | **0.2.2** | 发布三连修：0.2.0 包装层白名单漏转发 pending/apply-batch（用户第一步即报错，0.2.1 补齐）；0.2.2 修同源折叠与 stale 清理保证清单收敛。工作流定稿**对话 AI 批量协议**（收集 pending → 平台 AI 作答 → apply-batch → 填充遍，循环至 pending=0）：筛选/直取/掩码/回写全部程序侧完成，模型只答筛后残余、一遍过；SKILL.md 硬护栏改为「禁止本地小模型代答、技能不做 API 编排」（自动 API 需求指向通用在线 MCP 独立包）。 |
 | **0.1.2**（未发布） | 护栏版 SKILL.md 重打包，因并入 0.2.0 回收产物。 |
@@ -104,11 +118,11 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ## 2.x 插件功能
 
-- 内置两档本地模型（Hy-MT2-7B Q4_K_M、Hy-MT2-1.8B Q8_0），也支持自选任意 GGUF。
+- 内置四档本地模型（Hy-MT2-7B Q4_K_M、Hy-MT2-1.8B Q8_0、Hy-MT3-1.8B Q8_0/Q4_K_M），也支持自选任意 GGUF；MT2-1.8B 为默认速度/质量基线，Q8 为推荐替代档，Q4 为速度优先档。
 - 四种后端：CPU / CUDA 12.4 / CUDA 13.4 / Vulkan，自动检测硬件并推荐档位。
-- 多路翻译按显存（GPU）或内存（CPU）动态生成 1..16 路，每档带显存估算。
+- 多路翻译按显存（GPU）或内存（CPU）动态生成 1..16 路，每档带显存、相对吞吐与 ETA；扫描后按真实可译文件/条目/字符给出总体时间范围和每路工作份额。
 - 八道译后闸门（占位符 / 换行 / 粗口 / 完整性 / 残留源文 / 长度比 / 回显等），收尾输出「提示词体检」遥测。
-- 随包术语库 24455 条（13 分类）：内置只读层 + 用户覆盖层，含 canon/names 硬层、技术精确表与软提示层，2.0.25 起含「人工对照」层，2.0.26 起含「高频硬词」层（51 条高频专名/地名格变升入 canon）；另有会话词表与 TM-lite 精确复用。
+- 随包术语库 21581 条（13 分类）：canon 4169 / names 4341 / reference 13053 / technical 18；内置只读层 + 用户覆盖层，含技术精确表与软提示层，另有会话词表与 TM-lite 精确复用。2026-11-27 按 17 个真实语料源、316736 条正文使用审计净精简 2874 条，回归必备别名与策略词受永久保护。
 - 场景批处理：连续短对话按上下文批量翻译，失败回退逐条；中文去翻译腔后处理。
 - 完成账本 + 原子写盘：输入或输出 SHA-256 变化即重译；取消、异常、写盘失败与终检硬失败均不记为完成，生成 ID 定义表与正文按文件保持一致，失败时保留源文供复核。
 - 模型与 llama.cpp 运行库不随包分发：自动测速选源、按官方 SHA-256 校验、断点续传、失败换源。
@@ -129,13 +143,14 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
   行为，不再提供开关（关闭只有坏处）。
 - 底部进度条常驻：下载按字节推进，翻译按本轮处理文件数推进；旁边两行给出
   `阶段：翻译中 12/87 · configs\items\x.ltx` 与 `已翻译 12 / 87 个文件（14%），条目 345 条`。
-  分母是自动识别出的整个 MOD 待翻译文件数（只算确实含可译文本的文件）。
+  分母是自动识别出的真实可译文件数；扫描时同时显示条目/字符规模、各档时间范围，
+  翻译中按实际文件进度更新 ETA。
 - `查看日志（弹窗）`：日志不占页面高度；完整日志在
   `%LOCALAPPDATA%\STALKER Localization Toolkit\ai_translate\logs\translate_run.log`。
 
 ## 2.x 插件安装
 
-把 `dist/ai_translate_plugin_v2.0.29.zip` 解压到工具集的 `plugins/` 目录：
+把 `dist/ai_translate_plugin_v2.0.30.zip` 解压到工具集的 `plugins/` 目录：
 
 ```text
 <工具集目录>\plugins\ai_translate\plugin.py
@@ -157,18 +172,30 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 绿色版：在 `plugin.py` 同目录放一个空的 `portable.txt`，数据改写插件目录；
 只读安装位置自动回落 `%LOCALAPPDATA%`。
 
+### Hy-MT3 正式双档
+
+- Q8_0 为推荐替代档，Q4_K_M 为速度/显存优先档；两者均为手动可选，MT2-1.8B 保持默认基线。
+- 统一使用 8192 token 质量窗与官方采样：`temperature=0.7 / top_p=0.6 / top_k=20 / repetition_penalty=1.05`，输出上限 4096。
+- 同源 10 条（5 英 5 俄、4515 字符）A/B：MT2 25.70s、Q4 13.27s（约 1.94×）、Q8 15.41s（约 1.67×）；三模型硬终检通过。有限样本只用于速度建议，不宣称全面质量领先。
+- Q4/Q8 均通过真实 CUDA 启动、33 层上卡、EOS、单句、批量和占位符冒烟；随机 10 文件 × 2 轮保持轮间不重复，不做全量翻译。
+- 扫描估时会按真实可译文件/条目/字符给出各档总体及每路 ETA；显存和文本难度变化会影响实际时间。
+- 证据：[A/B 报告](audit-reports/MT3_AB_5EN_5RU_20261126.md)、
+  [随机两轮](audit-reports/MT3_RANDOM10_2ROUNDS_20261126.json)、
+  [正式冒烟](audit-reports/MT3_FORMAL_Q4_Q8_SMOKE_20261126.json)、
+  [IWP 估时](audit-reports/MT3_ETA_IWP_20261126.json)。
+
 ## 1.9.x 兼容插件
 
 ### 功能
 
 - 适用于 **STALKER Localization Toolkit 1.1.0 Hub**，界面为旧版六步骤页。
-- 使用同一共享 core 与 24455 条术语库，支持文本 XML、cfgxml、ltx、脚本、引用层、会话词表、TM-lite、占位符/数字/换行/上下文/语义闸门。
+- 使用同一共享 core 与 21581 条术语库，支持文本 XML、cfgxml、ltx、脚本、引用层、会话词表、TM-lite、占位符/数字/换行/上下文/语义闸门。
 - 支持 1.8B/7B 本地模型、CPU/CUDA/Vulkan、动态多路、断点续译和完成账本。
 - 1.9.19 起采用兼容式数据根：默认 `%LOCALAPPDATA%`；老用户插件目录已有模型/配置时保持原样，不强制重新下载。
 
 ### 安装
 
-1. 解压 `dist/ai_translate_plugin_v1.9.26.zip`。
+1. 解压 `dist/ai_translate_plugin_v1.9.27.zip`。
 2. 将包内 `plugins/` 整个覆盖到工具集 1.1.0 目录（与 `STALKER Localization Toolkit 1.1.0.exe` 同级）。
 3. 确认结构：
 
@@ -190,16 +217,16 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 功能
 
-- 面向 Hermes Agent 的 stdio MCP 插件，工具为 `check_env`、`translate_mod`、`translate_text`。
-- 自动读取 Hermes 本地模型端点与 API Key；支持 1.8B/7B 模型和并发路数选择。
-- 支持整 MOD 翻译、实时进度页、暂停/继续/停止、日志通知、断点续译、问题文件重译和终检。
+- 面向 Hermes Agent 的 stdio MCP 插件，工具为 `check_env`、`translation_plan`、`translate_mod`、`job_status`、`job_cancel`、`translate_text`。
+- 自动读取 Hermes 本地模型端点与 API Key；支持 1.8B/7B 模型和并发路数选择，不支持弹窗的客户端自动使用 Hy-MT2-1.8B 单路安全默认值。
+- `translate_mod` 异步返回 `job_id`；支持 MCP 取消通知、任务取消工具、浏览器暂停/继续/停止、全局进度、日志通知、断点续译、问题文件重译和终检。
 - 共享 core 提供完整离线翻译作业、术语资产与 X-Ray 解析器；不包含过渡内核。
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-MCP-1.1.11.zip`。
+1. 解压 `dist/stalker-translate-MCP-1.1.12.zip`。
 2. Windows 双击 `install-plugin.cmd`；安装器会复制插件、启用工具、安装技能并尝试重启 Hermes。
-3. 完全退出并重新打开 Hermes，确认工具列表出现 `check_env`、`translate_mod`、`translate_text`。
+3. 完全退出并重新打开 Hermes，确认工具列表出现 `check_env`、`translation_plan`、`translate_mod`、`job_status`、`job_cancel`、`translate_text`。
 4. 不需要单独安装 Python 或模型，包内带便携 Python；模型端点由 Hermes 管理。
 
 手动安装：把解压目录复制到 `<HermesHome>\plugins\stalker-translate`，在 Hermes `config.yaml` 的 `plugins.enabled` 中加入 `stalker-translate`，然后完全退出并重启 Hermes。
@@ -218,7 +245,7 @@ python tools/release.py --tag     # 仅工作区干净时创建本地 tag
 
 ### 安装与配置
 
-1. 解压 `dist/stalker-translate-online-MCP-0.3.0.zip`，要求 Python 3.11+。
+1. 解压 `dist/stalker-translate-online-MCP-0.3.1.zip`，要求 Python 3.11+。
 2. 复制 `config.example.json` 为 `config.json`，填写：
 
 ```json
@@ -273,7 +300,7 @@ python cli.py --config config.json translate "D:\mods\你的MOD"
 
 ### 安装
 
-1. 解压 `dist/stalker-translate-skill-0.3.0.zip`。
+1. 解压 `dist/stalker-translate-skill-0.3.1.zip`。
 2. 将整个目录放入所用平台的技能目录（不同平台路径不同）。
 3. 编辑包内 `runtime/config.example.json` 并保存为 `runtime/config.json`，配置 Provider、模型、`allowed_roots` 和密钥环境变量。
 4. 直接使用技能，或运行：
@@ -295,9 +322,9 @@ python scripts/stalker_translate.py --config runtime/config.json translate "<MOD
 
 ```powershell
 # 1) 改版本号 + 重建 zip/清单 + 打印可直接粘贴的注册表条目
-python tools/release_plugin.py 2.0.29
+python tools/release_plugin.py 2.0.30
 # 2) 把安装包传成 GitHub Release 资产（tag = v<版本号>）
-gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "ai_translate 2.0.29"
+gh release create v2.0.30 dist/ai_translate_plugin_v2.0.30_install.zip --title "ai_translate 2.0.30"
 # 3) 把第 1 步打印的条目追加进注册表 plugins 数组（需要该仓库写权限）
 ```
 
@@ -313,19 +340,20 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 | `assets/` | 唯一资产源：术语库、内置 glossary、X-Ray 解析器、来源声明 |
 | `plugins/ai_translate/plugin.py` | 2.x 宿主适配器；`stalker_translate_core/` 为构建时 vendored 镜像 |
 | `plugins/ai_translate/assets/` | 2.x 发布兼容镜像，由根 `assets/` 自动同步 |
-| `products/` | 1.9.x、Hermes MCP、通用在线 MCP 的产品入口与 manifest |
+| `products/` | 1.9.x、Hermes MCP、通用在线 MCP 的产品入口与 manifest；`voice_plugin/` 为 pending 语音成员清单 |
+| `plugins/zh_voice/` / `core/stalker_voice_core/` | 中文语音工坊单一源码：宿主壳与独立 worker 内核（pending） |
 | `skills/stalker-translate/` | 通用技能入口与 manifest |
 | `versions.json` / `compatibility.json` | 产品版本与兼容矩阵 |
-| `dist/stalker-translate-skill-0.3.0.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
-| `dist/stalker-translate-skill-0.3.0.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
-| `dist/stalker-translate-online-MCP-0.3.0.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio、共享全链） |
-| `dist/stalker-translate-online-MCP-0.3.0.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
-| `dist/stalker-translate-MCP-1.1.11.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
-| `dist/stalker-translate-MCP-1.1.11.manifest.json` | Hermes MCP server/core/资产哈希清单（无过渡管线） |
-| `dist/ai_translate_plugin_v1.9.26.zip` | 1.9.x 兼容插件独立分享包 |
-| `dist/ai_translate_plugin_v1.9.25.manifest.json` | 1.9.x 入口/core/资产/包哈希清单 |
-| `dist/ai_translate_plugin_v2.0.29.zip` | 可直接分发的 2.x 插件包 |
-| `dist/ai_translate_plugin_v2.0.29_install.zip` | 平台安装包（顶层 `ai_translate/`） |
+| `dist/stalker-translate-skill-0.3.1.zip` | 通用在线翻译技能包（含跨平台脚本与内置运行时） |
+| `dist/stalker-translate-skill-0.3.1.manifest.json` | 技能说明/包装脚本/运行时/资产哈希清单 |
+| `dist/stalker-translate-online-MCP-0.3.1.zip` | 通用在线 MCP/CLI 独立包（OpenAI 兼容、stdio、共享全链） |
+| `dist/stalker-translate-online-MCP-0.3.1.manifest.json` | 在线 MCP/CLI server/core/资产哈希清单 |
+| `dist/stalker-translate-MCP-1.1.12.zip` | Hermes MCP 独立分享包（含便携 Python、core、资产、技能） |
+| `dist/stalker-translate-MCP-1.1.12.manifest.json` | Hermes MCP server/core/资产哈希清单（无过渡管线） |
+| `dist/ai_translate_plugin_v1.9.27.zip` | 1.9.x 兼容插件独立分享包 |
+| `dist/ai_translate_plugin_v1.9.27.manifest.json` | 1.9.x 入口/core/资产/包哈希清单 |
+| `dist/ai_translate_plugin_v2.0.30.zip` | 可直接分发的 2.x 插件包 |
+| `dist/ai_translate_plugin_v2.0.30_install.zip` | 平台安装包（顶层 `ai_translate/`） |
 | `RELEASE_MANIFEST.md` / `release_manifest.json` | 发布清单（版本、哈希、一致性核对） |
 | `CHANGELOG.md` | 各版本完整修复明细与证据 |
 | `corpus/` | 收割用双语语料与退役软层留档（不随发布包分发） |
@@ -349,40 +377,37 @@ gh release create v2.0.29 dist/ai_translate_plugin_v2.0.29_install.zip --title "
 
 ## 版本与校验
 
-- 2.x 插件版本：`ai_translate 2.0.29`　宿主插件 API：`1`
-- 2.x 入口 SHA-256：`1582cb62d9f8f3c6307cd005ba2034c27f9675187065b54795c2a0f9293db990`
-- 2.x 发布 zip SHA-256：`7d6473f8554bdcd04350cb8574680b4acde71a53c2c551f4f756d00697c85f27`
-- 2.x 平台安装包 SHA-256：`c67a58cc73a24f0073e601f9bc1a1b79a4e4ac8e48c1f5e802a9d4513e51dc92`
-- 1.9.x 插件版本：`ai_translate 1.9.26`
-- 1.9.x 入口 SHA-256：`2dd7226137259fca71761d801a3dd9f39ac9394b304a234c870fd19348b436be`
-- 1.9.x 发布 zip SHA-256：`bf6759672717439c55e457d29e27b7c19633dc048597e69357a0b972338bbfaf`
-- Hermes MCP 版本：`1.1.11`
-- Hermes MCP server SHA-256：`46dd6ab6a7b3653dd139f7e2fac41644bd97749effde2a954c69a0cf242dbceb`
-- Hermes MCP 发布 zip SHA-256：`38fd8ab16d25913338753cf188e466b1635b35f866d6412e7c66d57a0a76559e`
-- 通用在线 MCP 版本：`0.3.0`
+- 2.x 插件版本：`ai_translate 2.0.30`　宿主插件 API：`1`
+- 2.x 入口 SHA-256：`05a82aea4d21024382485fa2266da31143ceead8250a02f721c17c52ce133d2b`
+- 2.x 发布 zip SHA-256：`9ac081a753101f84b0089b97eeb270d7f24df2fe6d962598ed4d0e638f1fe5fc`
+- 2.x 平台安装包 SHA-256：`1564f79e14f13381a02755c1fe4a60d9fb1fb012e1984bee1ef3325137d48989`
+- 1.9.x 插件版本：`ai_translate 1.9.27`
+- 1.9.x 入口 SHA-256：`1437bcf3a6e09a135c52b10b7da48c0102e5ada76116459387ec5240db89205c`
+- 1.9.x 发布 zip SHA-256：`799a9057b36dd919493ced11e599f79dc2c73b5227978ce8468932562e2a3a48`
+- Hermes MCP 版本：`1.1.12`
+- Hermes MCP server SHA-256：`e2219adeb7b7215e3a275d4c8ff06c9cd71e9399df6fa604beae89f140331dc4`
+- Hermes MCP 发布 zip SHA-256：`c0a7df2cc5c358974a7315135b08dcbd6db01ec3843a8d29e249f5b0f3aac546`
+- 通用在线 MCP 版本：`0.3.1`
 - 在线 MCP server SHA-256：`7231f74c7ce8db8ba2716f2b47d4de4e2507f3c5f0f29e7227c367c8d2ee3756`
 - 在线 CLI SHA-256：`b5d47a4b8f872a3faee2c65f7636ed4e6e92736bb61806e24f586e7768687f66`
-- 在线 MCP/CLI 发布 zip SHA-256：`478200f102d303b7b148ebfd5f19d5231f9e7fb6024c4c8d1c395392d4e65929`
-- 在线翻译技能版本：`0.3.0`
-- 技能说明 SHA-256：`698c2c7d68df0849410b9de17895217bc8453ded32f396d24042e1f5efc56857`
-- 技能核心定译表 SHA-256：`f044f3957f4114cbbcce80ccaaa0670d58d1709dc85e17f7c037d4d81b6f5748`
+- 在线 MCP/CLI 发布 zip SHA-256：`fa510cc206fbd6db9cff31c246b6f7ac168b268c35f726fc69c166737f57b65a`
+- 在线翻译技能版本：`0.3.1`
+- 中文语音工坊版本：`0.1.0`，**pending**，不进入当前发布列车
+- 技能说明 SHA-256：`9eb326b84da17f09215bfaddff6ba0beac7aa3f191e1512247f94fc05102b275`
+- 技能核心定译表 SHA-256：`9329c9c5551496d32709956f0b18bd9889f56ad0095236a3c212a180a274dd17`
 - 技能包装脚本 SHA-256：`63e920ad6129ad12d9e7ed62bd542fd161c8f69ec35049ef4f6742cea4dec68b`
-- 技能发布 zip SHA-256：`1f9e4cbbe88332029e2d4455dd25b0e72473f3475e716352ef9d737ad3bee736`
-- 术语规模：两张 JSON 各 **24455** 条、13 个分类、条目数一致（分类明细见
-  [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)）；canon 4327 / names 5182 /
-  reference 14928。2.0.26 新增「高频硬词」51 条（地名格变补位 + 设施 + 固定
-  物品/UI，挂 canon 层）；2.0.25 新增「人工对照」1932 条（人工翻译包按条目 id
-  对照收割，挂 names 层）。
-  2.0.22 起 `Gunslinger 参考`/`GAMMA 参考`（13946 条）退役，留档
-  `corpus/soft_reference_retired.json`，不参与直取与提示。
-- 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 2 个 HuggingFace 模型。
+- 技能发布 zip SHA-256：`278f0c3464aec6263d5ae5ab0b89caf3a25f959856ebeefd262e0cc232c06743`
+- 术语规模：两张 JSON 各 **21581** 条、13 个分类、条目数一致；canon 4169 /
+  names 4341 / reference 13053 / technical 18。使用审计与回滚备份见
+  [`TERMBASE_COMPACTION_20261126.json`](audit-reports/TERMBASE_COMPACTION_20261126.json)。
+- 下载链路官方哈希：llama.cpp `b11612` 的 6 个 Windows 包 + 4 个 HuggingFace 模型。
 
 ```powershell
-Get-FileHash 'dist\ai_translate_plugin_v2.0.29.zip' -Algorithm SHA256
-Get-FileHash 'dist\ai_translate_plugin_v1.9.26.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-MCP-1.1.11.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-online-MCP-0.3.0.zip' -Algorithm SHA256
-Get-FileHash 'dist\stalker-translate-skill-0.3.0.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v2.0.30.zip' -Algorithm SHA256
+Get-FileHash 'dist\ai_translate_plugin_v1.9.27.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-MCP-1.1.12.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-online-MCP-0.3.1.zip' -Algorithm SHA256
+Get-FileHash 'dist\stalker-translate-skill-0.3.1.zip' -Algorithm SHA256
 ```
 
 完整核对结果见 [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)。

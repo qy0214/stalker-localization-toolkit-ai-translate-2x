@@ -6,6 +6,7 @@
   "parallel": 1,
   "open_progress_page": true,
   "timeout_sec": 300,
+  "max_retries": 4,
   "prompt_extra": "",
   "official_prompts": false,
   "source_lang": "auto",

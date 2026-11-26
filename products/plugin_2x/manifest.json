@@ -1,12 +1,12 @@
 {
   "id": "plugin_2x",
   "name": "STALKER AI Translate 2.x",
-  "version": "2.0.29",
+  "version": "2.0.30",
   "status": "active",
   "entry": "plugins/ai_translate/plugin.py",
   "host_api": 1,
-  "core": "1.0.1",
+  "core": "1.0.2",
   "asset_source": "assets",
-  "package": "dist/ai_translate_plugin_v2.0.29.zip",
-  "install_package": "dist/ai_translate_plugin_v2.0.29_install.zip"
+  "package": "dist/ai_translate_plugin_v2.0.30.zip",
+  "install_package": "dist/ai_translate_plugin_v2.0.30_install.zip"
 }

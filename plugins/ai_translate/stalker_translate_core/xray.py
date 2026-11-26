@@ -7,7 +7,17 @@ import os
 import re
 
 from .models import BUILTIN_TIERS, TIER_PROFILES
-from .pipeline import estimate_tokens, safe_chunk_chars
+from .pipeline import (
+    _has_translatable_text,
+    estimate_tokens,
+    is_player_facing_label,
+    looks_like_code_or_debug,
+    looks_like_generated_noise,
+    looks_like_hard_protected_file,
+    looks_like_identifier_text,
+    looks_like_technical_text,
+    safe_chunk_chars,
+)
 
 
 _ENC_FALLBACK = ("cp1251", "cp1252")
@@ -150,6 +160,23 @@ def classify_xray_file(full, rel):
     return None
 
 
+def _translatable_candidate(rel, value):
+    text = str(value or "").strip()
+    if not text or not _has_translatable_text(text):
+        return False
+    han = sum(1 for char in text if "\u4e00" <= char <= "\u9fff")
+    if han * 5 > len(text):
+        return False
+    if looks_like_hard_protected_file(rel):
+        return False
+    if looks_like_code_or_debug(rel, text) or looks_like_generated_noise(rel, text):
+        return False
+    if looks_like_technical_text(text):
+        return False
+    return not (looks_like_identifier_text(text)
+                and not is_player_facing_label(rel, text))
+
+
 def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
                       max_files=200000):
     """勘察待翻译目录：文件数 / 体积 / 最大文件 / 最长单条文本，
@@ -172,7 +199,12 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
     total_bytes = 0
     max_file = (0, "")
     hist = {}
+    translatable_hist = {}
     n_strings = 0
+    total_chars = 0
+    translatable_entries = 0
+    translatable_chars = 0
+    translatable_files = 0
     n_files_with_text = 0
     max_str = 0
     max_str_file = ""
@@ -225,13 +257,22 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
                 kind = _SCAN_KIND_MAP.get(
                     classify_xray_file(full, rel), "cfgxml")
             file_strings = 0
+            file_translatable = 0
             for s in _iter_candidate_strings(txt, kind):
                 length = len(s)
                 hist[length] = hist.get(length, 0) + 1
                 n_strings += 1
+                total_chars += length
                 file_strings += 1
+                if _translatable_candidate(rel, s):
+                    translatable_hist[length] = translatable_hist.get(length, 0) + 1
+                    translatable_entries += 1
+                    translatable_chars += length
+                    file_translatable += 1
                 if length > max_str:
                     max_str, max_str_file = length, full
+            if file_translatable:
+                translatable_files += 1
             if file_strings:
                 n_files_with_text += 1
             if log and n_files % 500 == 0:
@@ -242,9 +283,12 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
                     % max_files)
             break
     per_tier = {}
+    extra_chunks = {}
     for t in BUILTIN_TIERS:
         cap = safe_chunk_chars(TIER_PROFILES[t]["ctx"])
         per_tier[t] = sum(c for L, c in hist.items() if L > cap)
+        extra_chunks[t] = sum(c * max(0, (L + cap - 1) // cap - 1)
+                             for L, c in translatable_hist.items() if L > cap)
     if max_str > safe_chunk_chars(TIER_PROFILES["mt2"]["ctx"]):
         recommend = "7b"
     else:
@@ -256,8 +300,13 @@ def analyze_input_dir(in_dir, mode="text", log=None, cancel=None,
         "max_str": max_str,
         "max_str_file": max_str_file,
         "n_strings": n_strings,
+        "total_chars": total_chars,
+        "translatable_entries": translatable_entries,
+        "translatable_chars": translatable_chars,
+        "translatable_files": translatable_files,
         "files_with_text": n_files_with_text,
         "overlong": per_tier,
+        "extra_chunks": extra_chunks,
         "recommend": recommend,
         "truncated": truncated,
         "cancelled": cancelled,
@@ -395,7 +444,8 @@ def looks_like_mojibake(text):
 def read_text_any(path):
     """按 UTF-8（含 BOM）→ cp1251 顺序读取脚本/XML 原文，读不出时替换。"""
     try:
-        raw = open(path, "rb").read()
+        with open(path, "rb") as handle:
+            raw = handle.read()
     except OSError:
         return ""
     for enc in ("utf-8-sig", "utf-8", "cp1251"):

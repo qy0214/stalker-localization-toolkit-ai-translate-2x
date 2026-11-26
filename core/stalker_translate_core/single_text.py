@@ -29,6 +29,7 @@ from .pipeline import (
     normalize_cn_punctuation,
     patch_missing_numbers,
     reconcile_literal_newlines,
+    repair_model_tokens,
     restore_linebreaks,
     restore_runtime_tokens,
     runtime_tokens_match,
@@ -90,6 +91,7 @@ class SingleTextPipeline:
         stripped = text.strip()
         if (not self.force_glossary and stripped in self.glossary
                 and stripped not in self.session_only_keys):
+            self._tls.translation_origin = "glossary_exact"
             with self._stat_lock:
                 self.req_count += 1
             return text.replace(stripped, self.glossary[stripped])
@@ -113,6 +115,8 @@ class SingleTextPipeline:
         self._ctx_hint = "" if len((text or "").strip()) < 12 \
             else (context or "")
         self._style_hint = style or "dialogue"
+        self._tls.translation_origin = "model"
+        self._tls.rule_results = []
         if lang in ("auto", "text"):
             lang = detect_text_lang(text) or self._lang_hint or "rus"
         elif lang in ("rus", "eng"):
@@ -123,6 +127,7 @@ class SingleTextPipeline:
             return text
         hit = self._tm_lookup(text, lang)
         if hit is not None:
+            self._tls.translation_origin = "tm_lite"
             with self._stat_lock:
                 self.tm_stats["hits"] += 1
                 self.tm_stats["saved_chars"] += len(text)
@@ -233,6 +238,7 @@ class SingleTextPipeline:
         out = self._repair_residual_source_terms(normalized, out)
         out = self._repair_residual_latin_names(normalized, out)
         out = self._repair_known_semantic_terms(normalized, out, lang)
+        out = self._enforce_preferred_terms(normalized, out)
         if self._style_hint == "dialogue" and has_cjk(out):
             out = style_cleanup_cn(out)
         # 多行保真：模型偶尔把整段合并成一行；带明确数量再试一次。
@@ -529,10 +535,15 @@ class SingleTextPipeline:
                 self._rule_hit("型号保真", "retried_ok")
                 out = retried
             else:
-                out = out.rstrip() + "（%s）" % "、".join(miss_model[:3])
+                repaired_model = repair_model_tokens(normalized, out)
+                still_missing = missing_model_tokens(normalized, repaired_model)
+                if still_missing:
+                    repaired_model = repaired_model.rstrip() + "（%s）" % \
+                        "、".join(still_missing[:3])
                 self._rule_hit("型号保真", "fixed")
-                self.detail("  型号被替换且重试仍失败，已补回型号：%s"
+                self.detail("  型号被替换且重试仍失败，已按源型号修复：%s"
                             % "、".join(miss_model[:3]))
+                out = repaired_model
         # ★ 2.0.24（IWP 全量审计 D10）：半音译粘连闸门。模型把专名音译
         # 一半、原文留一半（「克里门enko队长」「Tkachenko将军」
         # 「$clr_2We正看到」），词库回填要求整词边界、残留西里尔闸门不认
@@ -578,7 +589,7 @@ class SingleTextPipeline:
                             % (out.count("\n"), source_nl, str(text)[:50]))
                 self._rule_hit("出口换行对齐", "fixed")
                 out = realigned
-        final = escape_newlines(out)
+        final = escape_newlines(self._enforce_preferred_terms(normalized, out))
         # C. 字面 \n 保真：源有字面换行而译文吞成空格/多加时，按源数量对齐。
         final, nl_fixed = reconcile_literal_newlines(text, final)
         if nl_fixed:
@@ -605,6 +616,11 @@ class SingleTextPipeline:
                             % ("、".join(role_issues), str(text)[:50]))
                 final = text
         self._tm_store(normalized, lang, final)
+        if self.on_translation is not None and final != text:
+            try:
+                self.on_translation(text, final)
+            except Exception:
+                pass
         return final
 
     def _force_sliced(self, text, lang, note=""):
@@ -686,9 +702,10 @@ class SingleTextPipeline:
         # 保留原文（15 条百科条目全漏）。长文改走普通整译，术语交译后
         # 词库回填（_repair_residual_source_terms/_latin_names 实测有效）。
         if len(text) >= 600:
-            self.detail("  长文多术语，跳过占位符法改普通整译+回填：%s"
+            self.detail("  长文多术语，普通整译并注入术语提示：%s"
                         % str(text)[:50])
-            return self._translate_segments(text, lang, note=note)
+            return self._translate_chunk(
+                text, lang, self._glossary_hits(text), note=note)
 
         mapping = {}
         parts = []
@@ -749,6 +766,8 @@ class SingleTextPipeline:
 
     def _translate_dialogue_batch(self, batch):
         """批量翻译 2～4 条连续短对话；失败返回 {}，交由逐条路径。"""
+        self._tls.translation_origin = "model_batch"
+        self._tls.rule_results = []
         # ★ 2.0.24（IWP 全量审计 D1）：批量路径与单条路径同等保护——
         # 送翻前 mask 运行期占位符（%c[default]、$clr、%s…），译后逐行
         # 还原并校验；任何不一致整批丢弃交回单条路径（那里有完整闸门）。
@@ -823,6 +842,7 @@ class SingleTextPipeline:
                 return {}
             text = self._repair_residual_source_terms(x["src"], text)
             text = self._repair_residual_latin_names(x["src"], text)
+            text = self._enforce_preferred_terms(x["src"], text)
             xlang = x["lang"]
             if xlang in ("auto", "text", "rus", "eng"):
                 det = detect_text_lang(x["src"])

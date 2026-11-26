@@ -132,6 +132,22 @@ def result_json(resp):
     return json.loads(res["content"][0]["text"])
 
 
+def wait_job(client, job_id, timeout=120):
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        status = result_json(client.request(
+            "tools/call", {"name": "job_status", "arguments": {"job_id": job_id}},
+            timeout=30,
+        ))
+        if status.get("state") not in {"queued", "running", "paused", "stopping"}:
+            result = dict(status.get("result") or {})
+            result["state"] = status.get("state")
+            result["progress"] = status.get("progress") or {}
+            return result
+        time.sleep(0.05)
+    raise TimeoutError("等待作业超时：%s" % job_id)
+
+
 def load_kernel():
     assets = os.path.join(PLUGIN_ROOT, "kernel", "assets")
     if not os.path.isdir(assets):
@@ -147,13 +163,13 @@ def load_kernel():
             super().__init__(
                 parser, server, in_dir, mode, src_lang, tgt_lang,
                 termbase=termbase, data_root=os.path.join(PLUGIN_ROOT, "data"),
-                pipeline_version="1.1.11", parallel_cap=16,
+                pipeline_version="1.1.12", parallel_cap=16,
                 is_writable=lambda _path: True, **kwargs,
             )
 
     return types.SimpleNamespace(
         TranslationJob=TranslationJob,
-        PLUGIN_INFO={"version": "1.1.11"},
+        PLUGIN_INFO={"version": "1.1.12"},
         runtime_tokens_match=runtime_tokens_match,
         semantic_role_issues=semantic_role_issues,
         _load_vendor=lambda: load_vendor(os.path.join(assets, "xray_pkg.zip")),
@@ -217,8 +233,10 @@ def kernel_regressions(tmp):
                                      migration_out, "text"))
     migration._record_done("st_old.xml", migration_in, migration_out)
     check("新版完成账本记录管线版本",
-          migration._ledger["st_old.xml"].get("pipeline")
-          == plugin.PLUGIN_INFO["version"], migration._ledger)
+          migration._ledger["st_old.xml"].get("pipeline", "").startswith(
+              plugin.PLUGIN_INFO["version"] + ":")
+          and len(migration._ledger["st_old.xml"]["pipeline"].split(":")[-1]) == 40,
+          migration._ledger)
 
     check("运行期 token 序列校验",
           plugin.runtime_tokens_match("%c[default]%s $clr_2", "%c[default]%s $clr_2")
@@ -334,8 +352,8 @@ def main():
                 '<string_table>\n'
                 '  <string id="st_hello"><rus>Привет, сталкер. '
                 'Как дела?</rus></string>\n'
-                '  <string id="st_trader"><rus>Сидорович ждёт тебя '
-                'на Кордоне.</rus></string>\n'
+                '  <string id="st_trader"><rus>Торговец ждёт тебя '
+                'у старого лагеря.</rus></string>\n'
                 '</string_table>\n')
     with open(os.path.join(mod_dir, "st_symbols.xml"), "w",
               encoding="utf-8") as f:
@@ -356,15 +374,20 @@ def main():
         check("initialize 返回 serverInfo",
               (init.get("result") or {}).get("serverInfo", {}).get("name")
               == "stalker-translate", init.get("result"))
-        check("initialize 版本 1.1.11",
+        check("initialize 版本 1.1.12",
               (init.get("result") or {}).get("serverInfo", {}).get("version")
-              == "1.1.11", init.get("result"))
+              == "1.1.12", init.get("result"))
         client.notify("notifications/initialized")
 
         tools = client.request("tools/list")
         names = [t["name"] for t in (tools.get("result") or {}).get("tools", [])]
-        check("tools/list 三个工具",
-              names == ["check_env", "translate_mod", "translate_text"], names)
+        check("tools/list 六个工具",
+              names == ["check_env", "translation_plan", "translate_mod",
+                        "job_status", "job_cancel", "translate_text"], names)
+        plan = result_json(client.request(
+            "tools/call", {"name": "translation_plan", "arguments": {}}))
+        check("translation_plan 返回翻译模型与路数",
+              bool(plan.get("models")) and bool(plan.get("options")), plan)
 
         env_info = result_json(client.request(
             "tools/call", {"name": "check_env", "arguments": {}}))
@@ -373,6 +396,14 @@ def main():
         check("check_env 术语库已加载",
               (env_info.get("termbase") or {}).get("canon", 0) > 1000,
               env_info.get("termbase"))
+        mock.failures = 2
+        deep_env = result_json(client.request(
+            "tools/call", {"name": "check_env", "arguments": {"deep": True}},
+            timeout=30))
+        check("端点 500 自动退避重试并恢复",
+              deep_env.get("ready") is True and bool(deep_env.get("probe_translation")),
+              deep_env.get("problems"))
+        mock.failures = 0
 
         text = result_json(client.request(
             "tools/call",
@@ -383,11 +414,15 @@ def main():
               text)
 
         t0 = time.time()
-        mod = result_json(client.request(
+        started = result_json(client.request(
             "tools/call",
             {"name": "translate_mod",
              "arguments": {"input_dir": os.path.join(tmp, "mod")}},
-            timeout=600))
+            timeout=30))
+        check("translate_mod 异步返回 job_id",
+              started.get("status") == "running" and started.get("job_id"),
+              started)
+        mod = wait_job(client, started["job_id"])
         elapsed = time.time() - t0
         check("translate_mod 弹窗选择路数",
               bool(client.elicitations)
@@ -449,14 +484,15 @@ def main():
         os.makedirs(bad_mod_dir)
         with open(os.path.join(bad_mod_dir, "st_color.xml"), "w",
                   encoding="utf-8") as f:
-            f.write('<string_table><string id="color"><eng>%c[default]Hello'
+            f.write('<string_table><string id="color"><eng>%c[default]Untranslated label'
                     '</eng></string></string_table>')
-        bad_mod = result_json(client.request(
+        bad_started = result_json(client.request(
             "tools/call",
             {"name": "translate_mod",
              "arguments": {"input_dir": os.path.join(tmp, "bad_mod"),
                            "model": "Hy-MT2-1.8B-Q8_0", "parallel": 1}},
-            timeout=600))
+            timeout=30))
+        bad_mod = wait_job(client, bad_started["job_id"])
         check("硬性翻译失败返回 needs_review 而非 done",
               bad_mod.get("status") == "needs_review"
               and bad_mod.get("failed_strings", 0) >= 1
@@ -472,6 +508,58 @@ def main():
         with open(bad_page_path, encoding="utf-8") as f:
             bad_page = f.read()
         check("进度页显示待复核", "待复核" in bad_page)
+
+        mock.delay = 0.1
+        cancel_mod = os.path.join(tmp, "cancel_mod")
+        os.makedirs(os.path.join(cancel_mod, "text"), exist_ok=True)
+        for index in range(10):
+            with open(os.path.join(cancel_mod, "text", "cancel_%d.xml" % index),
+                      "w", encoding="utf-8") as f:
+                f.write('<string_table><string id="cancel_%d"><eng>Open the door %d.</eng>'
+                        '</string></string_table>' % (index, index))
+        request_id = client._id + 1
+        cancel_started = result_json(client.request(
+            "tools/call",
+            {"name": "translate_mod",
+             "arguments": {"input_dir": cancel_mod,
+                           "model": "Hy-MT2-1.8B-Q8_0", "parallel": 1}},
+            timeout=30))
+        client._write({"jsonrpc": "2.0", "method": "notifications/cancelled",
+                       "params": {"requestId": request_id}})
+        cancelled = wait_job(client, cancel_started["job_id"])
+        check("MCP cancellation 通知停止后台作业",
+              cancelled.get("state") == "stopped", cancelled.get("state"))
+        mock.delay = 0
+
+        fallback_mod = os.path.join(tmp, "fallback_mod", "text")
+        os.makedirs(fallback_mod, exist_ok=True)
+        with open(os.path.join(fallback_mod, "one.xml"), "w", encoding="utf-8") as f:
+            f.write('<string_table><string id="one"><eng>Hello wanderer.</eng>'
+                    '</string></string_table>')
+        fallback_client = McpClient(env, os.environ.get("STALKER_MCP_SERVER"))
+        try:
+            fallback_client.request("initialize", {
+                "protocolVersion": "2024-11-05",
+                "capabilities": {},
+                "clientInfo": {"name": "hermes-agent", "version": "1"},
+            })
+            fallback_client.notify("notifications/initialized")
+            fallback_started = result_json(fallback_client.request(
+                "tools/call",
+                {"name": "translate_mod",
+                 "arguments": {"input_dir": os.path.join(tmp, "fallback_mod")}},
+                timeout=30))
+            check("无弹窗能力时安全默认值直接启动",
+                  fallback_started.get("status") == "running"
+                  and fallback_started.get("parallel") == 1
+                  and "Hy-MT2-1.8B" in fallback_started.get("model", "")
+                  and not fallback_client.elicitations,
+                  fallback_started)
+            fallback_done = wait_job(fallback_client, fallback_started["job_id"])
+            check("无弹窗安全默认任务完成", fallback_done.get("status") == "done",
+                  fallback_done.get("status"))
+        finally:
+            fallback_client.close()
     except Exception as e:
         check("冒烟测试未抛异常", False, "%s: %s" % (type(e).__name__, e))
         print("\n--- server stderr ---")

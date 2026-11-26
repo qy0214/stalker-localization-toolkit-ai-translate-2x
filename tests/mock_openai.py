@@ -10,6 +10,7 @@
 import json
 import re
 import threading
+import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 
@@ -56,6 +57,12 @@ class _Handler(BaseHTTPRequestHandler):
             self._json(404, {"error": "not found"})
 
     def do_POST(self):
+        if getattr(self, "delay", 0):
+            time.sleep(float(self.delay))
+        if getattr(self, "failures", 0) > 0:
+            type(self).failures -= 1
+            self._json(500, {"error": "controlled failure"})
+            return
         if not self.path.startswith("/v1/chat/completions"):
             self._json(404, {"error": "not found"})
             return
@@ -86,14 +93,32 @@ class _Handler(BaseHTTPRequestHandler):
 
 
 class MockOpenAI(object):
-    def __init__(self, model="mock-model", models=None):
+    def __init__(self, model="mock-model", models=None, delay=0, failures=0):
         handler = type("Handler", (_Handler,), {
             "model": model,
             "models": list(models or [model]),
+            "delay": delay,
+            "failures": failures,
         })
         self.httpd = ThreadingHTTPServer(("127.0.0.1", 0), handler)
         self.thread = threading.Thread(target=self.httpd.serve_forever,
                                        daemon=True)
+
+    @property
+    def delay(self):
+        return getattr(self.httpd.RequestHandlerClass, "delay", 0)
+
+    @delay.setter
+    def delay(self, value):
+        self.httpd.RequestHandlerClass.delay = value
+
+    @property
+    def failures(self):
+        return getattr(self.httpd.RequestHandlerClass, "failures", 0)
+
+    @failures.setter
+    def failures(self, value):
+        self.httpd.RequestHandlerClass.failures = value
 
     @property
     def base_url(self):

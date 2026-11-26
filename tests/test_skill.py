@@ -50,6 +50,8 @@ class SkillTests(unittest.TestCase):
             self.assertIn("本地小模型", skill_text)
             self.assertIn("不做 API 编排", skill_text)
             self.assertIn("GLOSSARY-CORE", skill_text)
+            self.assertIn("plan/extract/merge/validate", skill_text)
+            self.assertNotIn("stats/extract/merge", skill_text)
             self.assertRegex(skill_text, r"engine_required")
             gloss = (extract / "GLOSSARY-CORE.md").read_text(encoding="utf-8")
             self.assertIn("普里皮亚季", gloss)

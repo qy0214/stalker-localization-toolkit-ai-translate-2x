@@ -12,15 +12,18 @@
 
 import contextlib
 import html
+import http.server
 import json
 import os
 import queue
 import re
+import secrets
 import sys
 import threading
 import time
 import traceback
 import urllib.error
+import uuid
 import urllib.parse
 import urllib.request
 from collections import deque
@@ -39,6 +42,7 @@ for _core_dir in _core_dirs:
         break
 from stalker_translate_core import (  # noqa: E402
     PROTOCOL_VERSION,
+    __version__ as CORE_VERSION,
     SERVER_INSTRUCTIONS,
     TOOL_DEFINITIONS,
     AssetBundle,
@@ -67,13 +71,14 @@ from stalker_translate_core.pipeline import (  # noqa: E402
     strip_output_wrappers,
 )
 from stalker_translate_core.vendor import load_vendor  # noqa: E402
+from jobs import JobManager  # noqa: E402
 ASSET_ROOT = str(resolve_asset_root(__file__, "kernel/assets"))
 DATA_DIR = os.path.join(HERE, "data")
 LOG_DIR = os.path.join(HERE, "logs")
 CONFIG_PATH = (os.environ.get("STALKER_MCP_CONFIG")
                or os.path.join(HERE, "config.json"))
 SERVER_NAME = "stalker-translate"
-VERSION = "1.1.11"
+VERSION = "1.1.12"
 LANG_FULL = {"chs": "简体中文", "eng": "英语", "rus": "俄语", "ukr": "乌克兰语"}
 _SEMANTIC_ROLE_NOTE = "请核对付款、交付、雇佣与命令方向，严格按源文语义翻译，不得反转双方关系。"
 
@@ -92,6 +97,7 @@ DEFAULT_CONFIG = {
     "open_progress_page": True,
     # 单次请求超时（秒）。
     "timeout_sec": 300,
+    "max_retries": 4,
     # 追加到系统提示词的要求，例如 “专有名词保留英文”。
     "prompt_extra": "",
     "official_prompts": False,
@@ -107,6 +113,10 @@ _PROTO_OUT = os.fdopen(os.dup(1), "w", encoding="utf-8", newline="\n",
 _PROTO_IN = sys.stdin.buffer
 os.dup2(2, 1)
 sys.stdout = sys.stderr
+try:
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 sys.dont_write_bytecode = True
 
@@ -116,12 +126,19 @@ _PROGRESS_LOCK = threading.Lock()
 _TERMBASE = {"obj": None}
 _USER_GLOSS = {"obj": None}
 _ENGINE = {"obj": None}
+_JOBS = JobManager()
 _TEXT_GLOSS = {"index": None, "pending": False}
 _CORE_GLOSS = {"index": None}
 _IN_Q = queue.Queue()
 _CLIENT = {"caps": {}, "name": ""}
 _REQ_SEQ = [0]
 _PLAN_CACHE = {"key": None, "plan": None}
+_CONTROL = {
+    "server": None,
+    "thread": None,
+    "token": secrets.token_urlsafe(18),
+    "lock": threading.Lock(),
+}
 
 
 # ── 基础工具 ────────────────────────────────────────────────────────
@@ -205,7 +222,54 @@ def _open_local_file(path):
         pass
 
 
-def _write_progress_page(path, d, pairs, status="running", elapsed=0.0, note=""):
+def _control_url(job_id):
+    with _CONTROL["lock"]:
+        if _CONTROL["server"] is None:
+            manager = _JOBS
+
+            class Handler(http.server.BaseHTTPRequestHandler):
+                def do_POST(self):
+                    parsed = urllib.parse.urlparse(self.path)
+                    if parsed.query != "":
+                        query = urllib.parse.parse_qs(parsed.query)
+                    else:
+                        query = {}
+                    if query.get("token") != [_CONTROL["token"]]:
+                        self.send_error(403)
+                        return
+                    try:
+                        length = int(self.headers.get("Content-Length") or 0)
+                        payload = json.loads(self.rfile.read(length) or b"{}")
+                        job_id = str(payload.get("job_id") or "")
+                        action = str(payload.get("action") or "")
+                        ok = {
+                            "pause": manager.pause,
+                            "resume": manager.resume,
+                            "stop": manager.cancel,
+                        }.get(action, lambda _job_id: False)(job_id)
+                        body = json.dumps({"ok": ok, "state": action}).encode("utf-8")
+                        self.send_response(200)
+                        self.send_header("Content-Type", "application/json")
+                        self.send_header("Content-Length", str(len(body)))
+                        self.end_headers()
+                        self.wfile.write(body)
+                    except Exception:
+                        self.send_error(400)
+
+                def log_message(self, _format, *args):
+                    pass
+
+            server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+            thread = threading.Thread(target=server.serve_forever, daemon=True)
+            thread.start()
+            _CONTROL["server"] = server
+            _CONTROL["thread"] = thread
+        port = _CONTROL["server"].server_address[1]
+    return "http://127.0.0.1:%d/control?token=%s" % (port, _CONTROL["token"])
+
+
+def _write_progress_page(path, d, pairs, status="running", elapsed=0.0, note="",
+                         control_url="", job_id=""):
     """写实时进度页：浏览器每 2 秒刷新。
 
     总进度 = 已译条目 / 开跑前统计出的可译条目；当前文件单独一根细进度条。
@@ -231,17 +295,17 @@ def _write_progress_page(path, d, pairs, status="running", elapsed=0.0, note="")
                    "needs_review": "待复核"}.get(status, status)
 
     denom = max(translatable, translated)
-    if phase == "prescan" and scan_total > 0:
-        pct = int(100.0 * min(scan_done, scan_total) / scan_total)
-    elif status == "done":
+    if status == "done":
         pct = 100
-    elif denom > 0:
-        pct = int(100.0 * translated / denom)
+    elif phase == "prescan" and scan_total > 0:
+        pct = int(100.0 * min(scan_done, scan_total) / scan_total)
+    elif translatable > 0:
+        pct = int(100.0 * min(translated, translatable) / translatable)
     elif files > 0:
         pct = int(100.0 * min(idx, files) / files)
     else:
         pct = 0
-    pct = max(0, min(100, pct))
+    pct = max(0, min(99 if status != "done" else 100, pct))
     file_pct = (int(100.0 * min(file_done, file_total) / file_total)
                 if file_total > 0 else 0)
 
@@ -305,6 +369,19 @@ def _write_progress_page(path, d, pairs, status="running", elapsed=0.0, note="")
                     % (html.escape(str(src)), html.escape(str(dst))))
     if not rows:
         rows.append('<tr><td colspan="2" class="empty">等待第一批译文……</td></tr>')
+    controls_html = ""
+    if control_url and job_id:
+        controls_html = (
+            '<div class="controls">'
+            '<button onclick="ctl(\'pause\')">暂停</button>'
+            '<button onclick="ctl(\'resume\')">继续</button>'
+            '<button onclick="ctl(\'stop\')">停止</button></div>'
+            '<script>const CONTROL_URL=%s;const JOB_ID=%s;'
+            'async function ctl(action){await fetch(CONTROL_URL,{method:"POST",'
+            'headers:{"Content-Type":"application/json"},body:JSON.stringify('
+            '{action:action,job_id:JOB_ID})});location.reload();}</script>'
+            % (json.dumps(control_url), json.dumps(job_id))
+        )
     page = """<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta http-equiv="refresh" content="2">
@@ -338,11 +415,12 @@ td.dst{color:#8ef0c6;word-break:break-word}
 <div class="bar"><i style="width:%d%%"></i></div>
 <div class="stats">%s</div>
 %s
+%s
 <table><thead><tr><th>原文</th><th>译文</th></tr></thead><tbody>%s</tbody></table>
 %s
 </div></body></html>""" % (
         html.escape(state_label), pct, html.escape(overall), pct,
-        chips_html, bars, "".join(rows),
+        chips_html, bars, controls_html, "".join(rows),
         ('<div class="note">%s</div>' % html.escape(str(note))) if note else "",
     )
     try:
@@ -442,8 +520,7 @@ def _hermes_defaults(cfg):
     if base and (not cfg.get("base_url")
                  or cfg["base_url"] == "http://127.0.0.1:8080/v1"):
         cfg["base_url"] = base
-    if model and (not cfg.get("model") or cfg["model"] == "local-model"):
-        cfg["model"] = model
+    # Hermes Agent 模型不一定擅长翻译；模型选择交给 translation_plan。
     if not cfg.get("api_key"):
         key_path = os.path.join(home, "hermes", "runtimes", "llamacpp",
                                 ".api_key")
@@ -525,6 +602,7 @@ class RemoteEngine(object):
         self.ctx_size = max(512, int(cfg.get("ctx_size") or 8192))
         self.parallel = max(1, int(cfg.get("parallel") or 1))
         self.timeout_sec = max(10, int(cfg.get("timeout_sec") or 300))
+        self.max_retries = max(0, int(cfg.get("max_retries") or 4))
         self.prompt_extra = str(cfg.get("prompt_extra") or "")
         self.official_prompts = bool(cfg.get("official_prompts", False))
         self.tier = "remote"
@@ -572,30 +650,46 @@ class RemoteEngine(object):
             "stream": False,
         }
         last_error = None
-        for _attempt in range(2):
+        for attempt in range(self.max_retries + 1):
+            if self.stop_event is not None and self.stop_event.is_set():
+                raise IOError("翻译已停止")
             try:
                 data = self._post(payload, timeout_sec)
                 choices = data.get("choices") or []
                 if not choices:
                     last_error = str(data.get("error") or "响应缺少 choices")[:160]
-                    time.sleep(1.0)
-                    continue
-                choice = choices[0]
-                content = ((choice.get("message") or {}).get("content") or "").strip()
-                # 小模型代码端加固：剥外壳（栅栏/标签/引号），不依赖提示词自觉
-                content, _wrap = strip_output_wrappers(content)
-                if choice.get("finish_reason") == "length":
-                    raise OutputTruncated("输出达到 max_tokens(%d) 被截断" % max_tokens)
-                if not content:
-                    last_error = "空输出"
-                    time.sleep(1.0)
-                    continue
-                return content
+                    delay = min(8.0, 0.5 * (2 ** attempt))
+                else:
+                    choice = choices[0]
+                    content = ((choice.get("message") or {}).get("content") or "").strip()
+                    content, _wrap = strip_output_wrappers(content)
+                    if choice.get("finish_reason") == "length":
+                        raise OutputTruncated("输出达到 max_tokens(%d) 被截断" % max_tokens)
+                    if not content:
+                        last_error = "空输出"
+                        delay = min(8.0, 0.5 * (2 ** attempt))
+                    else:
+                        return content
             except OutputTruncated:
                 raise
-            except Exception as exc:
+            except urllib.error.HTTPError as exc:
+                retryable = exc.code == 429 or 500 <= exc.code < 600
+                last_error = "HTTP %d" % exc.code
+                if not retryable or attempt >= self.max_retries:
+                    raise
+                try:
+                    delay = max(0.1, float(exc.headers.get("Retry-After") or 0))
+                except (TypeError, ValueError):
+                    delay = min(8.0, 0.5 * (2 ** attempt))
+            except (urllib.error.URLError, TimeoutError, OSError) as exc:
                 last_error = "%s: %s" % (type(exc).__name__, exc)
-                time.sleep(1.0)
+                if attempt >= self.max_retries:
+                    raise
+                delay = min(8.0, 0.5 * (2 ** attempt))
+            if self.stop_event is not None:
+                self.stop_event.wait(delay)
+            else:
+                time.sleep(delay)
         raise IOError("翻译请求失败：%s" % (last_error or "无响应"))
 
     def translate(self, text, src_lang, tgt_lang, glossary_hits=None,
@@ -897,7 +991,17 @@ def _translation_model_choices(cfg):
             labels.append("%s · Hermes 对话模型，不建议翻译" % name)
         else:
             labels.append(name)
-    default = cfg.get("model") if cfg.get("model") in pool else pool[0]
+    default = ""
+    for marker in ("hy-mt2-1.8b", "hy_mt2_1.8b", "hy-mt2-7b", "hy_mt2_7b"):
+        default = next((name for name in pool if marker in name.lower()), "")
+        if default:
+            break
+    if not default:
+        default = next((name for name in pool if name != agent), "")
+    if not default and cfg.get("model") in pool:
+        default = cfg["model"]
+    if not default:
+        default = pool[0]
     return pool, labels, default
 
 
@@ -947,10 +1051,7 @@ def _route_plan(cfg):
 
 
 def _supports_elicitation():
-    caps = _CLIENT.get("caps") or {}
-    if "elicitation" in caps:
-        return True
-    return str(_CLIENT.get("name") or "").lower().startswith("hermes")
+    return "elicitation" in (_CLIENT.get("caps") or {})
 
 
 def _hermes_agent_model():
@@ -1041,8 +1142,9 @@ def _ask_start_options(plan, cfg):
                             "required": required},
     })
     if result is None:
-        raise ToolError("未收到选择，翻译未启动。可重新发起，或直接指定 "
-                        "parallel / model 参数。")
+        note = ("客户端未完成模型/路数选择，已使用安全默认值：%s、%d 路"
+                % (default_model, rec))
+        return rec, default_model, note
     if str(result.get("action") or "") != "accept":
         raise ToolError("已取消：未选择翻译参数，翻译未启动")
     content = result.get("content") or {}
@@ -1068,6 +1170,21 @@ def _json_text(obj):
     return json.dumps(obj, ensure_ascii=False, indent=2)
 
 
+def tool_translation_plan(args):
+    cfg = load_config()
+    plan = _route_plan(cfg)
+    models, labels, default_model = _translation_model_choices(cfg)
+    return {
+        "models": [{"name": name, "label": label}
+                   for name, label in zip(models, labels)],
+        "default_model": default_model,
+        "recommended_parallel": int(plan.get("recommended") or 1),
+        "endpoint": plan.get("endpoint") or {},
+        "options": plan.get("options") or [],
+        "notes": plan.get("notes") or [],
+    }
+
+
 def tool_check_env(args):
     cfg = load_config()
     document = load_termbase_document(
@@ -1077,7 +1194,7 @@ def tool_check_env(args):
     out = {
         "ready": False,
         "server": {"name": SERVER_NAME, "version": VERSION},
-        "core": "1.0.0",
+        "core": CORE_VERSION,
         "pipeline": VERSION,
         "python": sys.version.split()[0],
         "config_file": CONFIG_PATH,
@@ -1214,48 +1331,76 @@ def tool_translate_mod(args):
     mode = str(args.get("mode") or "auto")
     if mode not in ("auto", "text", "cfgxml", "ltx", "scriptL", "scriptE"):
         raise ToolError("不支持的 mode：%s" % mode)
-    src = str(args.get("source_lang") or cfg.get("source_lang") or "auto")
-    tgt = str(cfg.get("target_lang") or "chs")
 
-    # 模型与路数：显式传入就直接用；否则先弹窗让用户选模型和路数。
-    plan = None
+    plan = _route_plan(cfg)
+    models, _labels, default_model = _translation_model_choices(cfg)
+    chosen_model = str(args.get("model") or default_model or cfg.get("model") or "")
     plan_note = ""
-    chosen_model = str(args.get("model") or cfg.get("model") or "")
-    parallel = args.get("parallel")
-    if parallel is None:
-        plan = _route_plan(cfg)
+    if args.get("parallel") is None and args.get("model") is None:
         parallel, chosen_model, plan_note = _ask_start_options(plan, cfg)
     else:
         try:
-            parallel = int(parallel)
+            parallel = int(args.get("parallel") or cfg.get("parallel") or 1)
         except (TypeError, ValueError):
             raise ToolError("parallel 必须是 1-16 的整数")
         parallel = max(1, min(16, parallel))
-        try:
-            plan = _route_plan(cfg)
-        except Exception:
-            plan = None
+        if not args.get("model"):
+            plan_note = "未指定翻译模型，已选择 %s" % chosen_model
+    slots = int((plan.get("endpoint") or {}).get("slots") or 0)
+    if slots:
+        parallel = max(1, min(parallel, slots))
+    job_id = uuid.uuid4().hex[:12]
 
-    # 选了和默认不同的模型：按该模型重算路数上限，避免 7B 按 1.8B 的预算开太多路
-    if chosen_model and chosen_model != (cfg.get("model") or ""):
-        try:
-            mplan = _route_plan(dict(cfg, model=chosen_model))
-            mrec = max(1, int(mplan.get("recommended") or 1))
-            if parallel > mrec:
-                note = ("所选模型 %s 显存只够 %d 路，已从 %d 路收窄"
-                        % (chosen_model, mrec, parallel))
-                plan_note = (plan_note + "；" + note) if plan_note else note
-                parallel = mrec
-        except Exception:
-            pass
-    if plan:
-        slots = int((plan.get("endpoint") or {}).get("slots") or 0)
-        if slots and parallel > slots:
-            note = ("选择了 %d 路，但端点只有 %d 槽，超出的请求会在服务端排队；"
-                    "要真正并行请在模型启动参数里加 --parallel %d"
-                    % (parallel, slots, parallel))
-            plan_note = (plan_note + "；" + note) if plan_note else note
+    def target(cancel_event, pause_event):
+        return _run_translation(
+            args, cfg, chosen_model, parallel, plan, plan_note,
+            job_id, cancel_event, pause_event,
+        )
 
+    record = _JOBS.start(
+        job_id, target, output_dir=out_dir, model=chosen_model, parallel=parallel,
+    )
+    return {
+        "status": "running",
+        "job_id": record.job_id,
+        "input_dir": in_dir,
+        "output_dir": out_dir,
+        "model": chosen_model,
+        "parallel": parallel,
+        "route": {
+            "slots": int((plan.get("endpoint") or {}).get("slots") or 0),
+            "recommended": int(plan.get("recommended") or 1),
+            "options": [option["parallel"] for option in plan.get("options") or []],
+        },
+        "hint": "使用 job_status 查询进度；停止时调用 job_cancel。",
+        "route_note": plan_note,
+    }
+
+
+def tool_job_status(args):
+    job_id = str(args.get("job_id") or "").strip()
+    record = _JOBS.get(job_id)
+    if record is None:
+        raise ToolError("job_id 不存在：%s" % (job_id or "(空)"))
+    return record.snapshot()
+
+
+def tool_job_cancel(args):
+    job_id = str(args.get("job_id") or "").strip()
+    if not _JOBS.cancel(job_id):
+        raise ToolError("任务不存在或已结束：%s" % (job_id or "(空)"))
+    return {"job_id": job_id, "state": "stopping"}
+
+
+def _run_translation(args, cfg, chosen_model, parallel, plan, plan_note,
+                     job_id, cancel_event, pause_event):
+    in_dir = str(args.get("input_dir") or "").strip().strip('"')
+    out_dir = str(args.get("output_dir") or "").strip()
+    if not out_dir:
+        out_dir = os.path.join(in_dir, "translated_hy_mt2")
+    mode = str(args.get("mode") or "auto")
+    src = str(args.get("source_lang") or cfg.get("source_lang") or "auto")
+    tgt = str(cfg.get("target_lang") or "chs")
     eng = _get_engine()
     if chosen_model:
         eng.model = chosen_model
@@ -1281,7 +1426,14 @@ def tool_translate_mod(args):
     last_emit = {"t": 0.0}
     started_at = time.time()
     progress_page = os.path.join(out_dir, ".progress.html")
+    control_url = _control_url(job_id)
     last_state = {"d": {}}
+    accepted_pairs = deque(maxlen=20)
+    accepted_lock = threading.Lock()
+
+    def accepted(source, translated):
+        with accepted_lock:
+            accepted_pairs.append((str(source)[:240], str(translated)[:240]))
 
     def progress(d):
         with _PROGRESS_LOCK:
@@ -1290,6 +1442,9 @@ def tool_translate_mod(args):
                 return
             last_emit["t"] = now
             last_state["d"] = dict(d or {})
+            record = _JOBS.get(job_id)
+            if record is not None:
+                record.progress = dict(d or {})
             total = int(d.get("files") or 0)
             idx = int(d.get("file_idx") or 0)
             ids = int(d.get("ids") or 0)
@@ -1304,10 +1459,8 @@ def tool_translate_mod(args):
                 msg = "%d/%d %s" % (idx, total, d.get("file") or "")
                 if total_ids:
                     msg += " | 已译 %d / 可译 %d 条" % (ids, total_ids)
-            try:
-                pairs = list(eng.recent)
-            except Exception:
-                pairs = []
+            with accepted_lock:
+                pairs = list(accepted_pairs)
             pair = pairs[-1] if pairs else None
             if pair:
                 msg += " | %s → %s" % (str(pair[0])[:60], str(pair[1])[:60])
@@ -1320,7 +1473,8 @@ def tool_translate_mod(args):
             _mcp_log("info", "进度 " + msg)
             try:
                 _write_progress_page(progress_page, d, pairs, "running",
-                                     elapsed=now - started_at)
+                                     elapsed=now - started_at,
+                                     control_url=control_url, job_id=job_id)
             except Exception:
                 pass
 
@@ -1331,15 +1485,15 @@ def tool_translate_mod(args):
     os.makedirs(out_dir, exist_ok=True)
     try:
         _write_progress_page(progress_page, {"files": 0, "file_idx": 0, "file": ""},
-                             [], "running", note="正在扫描 MOD……")
+                             [], "running", note="正在扫描 MOD……",
+                             control_url=control_url, job_id=job_id)
         if bool(cfg.get("open_progress_page", True)):
             _open_local_file(progress_page)
     except Exception:
         pass
     control_path = os.path.join(out_dir, ".ai_translate_control.json")
     status_path = os.path.join(out_dir, ".ai_translate_status.json")
-    pause_event = threading.Event()
-    stop_event = threading.Event()
+    stop_event = cancel_event
     eng.pause_event = pause_event
     eng.stop_event = stop_event
 
@@ -1371,16 +1525,15 @@ def tool_translate_mod(args):
                         with open(control_path, "r", encoding="utf-8") as f:
                             action = str((json.load(f) or {}).get("action") or "")
                         if action == "pause":
-                            pause_event.set()
+                            _JOBS.pause(job_id)
                             _write_status("paused")
                             _mcp_log("info", "已暂停：不再发送新的翻译请求")
                         elif action == "resume":
-                            pause_event.clear()
+                            _JOBS.resume(job_id)
                             _write_status("running")
                             _mcp_log("info", "已继续翻译")
                         elif action == "stop":
-                            stop_event.set()
-                            pause_event.clear()
+                            _JOBS.cancel(job_id)
                             _write_status("stopping")
                             _mcp_log("warning", "已请求停止：当前请求结束后停下")
             except Exception:
@@ -1395,7 +1548,8 @@ def tool_translate_mod(args):
         force_glossary=True,
         out_dir=out_dir,
         log=log, detail=log, progress=progress,
-        cancel_event=stop_event,
+        on_translation=accepted,
+        cancel_event=cancel_event,
         reference_mode=True, copy_reference=True,
         only_referenced=False, protect_proper=True,
         preview_reference=False,
@@ -1431,8 +1585,11 @@ def tool_translate_mod(args):
         status = "done"
     _write_status(status)
     try:
-        _write_progress_page(progress_page, last_state["d"], list(eng.recent),
-                             status, elapsed=elapsed, note=error)
+        with accepted_lock:
+            final_pairs = list(accepted_pairs)
+        _write_progress_page(progress_page, last_state["d"], final_pairs,
+                             status, elapsed=elapsed, note=error,
+                             control_url=control_url, job_id=job_id)
     except Exception:
         pass
     warns = [x for x in logs if "错误" in x or "失败" in x or "警告" in x
@@ -1446,6 +1603,7 @@ def tool_translate_mod(args):
         "requests": int(getattr(job, "req_count", 0) or 0),
         "translated_chars": int(getattr(job, "trans_chars", 0) or 0),
         "failed_strings": failed_strings,
+        "parse_failures": list(getattr(job, "_parse_failures", []) or []),
         "audit": audit,
         "files": (job.batch_stats or {}).get("batches"),
         "model": eng.model,
@@ -1472,6 +1630,7 @@ def tool_translate_mod(args):
                           "请查看 audit 和 log_tail，修正后重新运行续译。")
     if warns:
         result["warnings"] = warns[-10:]
+    result["job_id"] = job_id
     return result
 
 
@@ -1484,7 +1643,7 @@ def _tool_result(obj, is_error=False):
     return tool_result(obj, is_error)
 
 
-def _handle_tool_call(params):
+def _handle_tool_call(params, request_id=None):
     name = params.get("name")
     args = dict(params.get("arguments") or {})
     token = (params.get("_meta") or {}).get("progressToken")
@@ -1492,14 +1651,20 @@ def _handle_tool_call(params):
         args["_progress_token"] = token
     handlers = {
         "check_env": tool_check_env,
+        "translation_plan": tool_translation_plan,
         "translate_mod": tool_translate_mod,
+        "job_status": tool_job_status,
+        "job_cancel": tool_job_cancel,
         "translate_text": tool_translate_text,
     }
     fn = handlers.get(name)
     if fn is None:
         return _tool_result({"error": "未知工具：%s" % name}, True)
     try:
-        return _tool_result(fn(args))
+        result = fn(args)
+        if name == "translate_mod" and result.get("job_id"):
+            _JOBS.bind_request(request_id, result["job_id"])
+        return _tool_result(result)
     except ToolError as e:
         return _tool_result({"error": str(e)}, True)
     except Exception as e:
@@ -1530,7 +1695,11 @@ def _handle(msg):
     elif method == "tools/list":
         _ok(msg_id, {"tools": TOOLS})
     elif method == "tools/call":
-        _ok(msg_id, _handle_tool_call(params))
+        _ok(msg_id, _handle_tool_call(params, msg_id))
+    elif method == "notifications/cancelled":
+        request_id = params.get("requestId")
+        if request_id is not None and _JOBS.cancel_request(request_id):
+            _log("已处理 MCP 取消通知：%s" % request_id)
     elif is_notification:
         return
     else:

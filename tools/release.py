@@ -16,7 +16,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-from suite_common import PRODUCTS, load_json, product_manifest, run_python, sha256  # noqa: E402
+from suite_common import ACTIVE_PRODUCTS, load_json, product_manifest, run_python, sha256  # noqa: E402
 
 OUT_JSON = ROOT / "release_train.json"
 OUT_MD = ROOT / "RELEASE_TRAIN.md"
@@ -28,7 +28,7 @@ def tag_name(train: str) -> str:
 
 def artifact_specs() -> dict[str, list[tuple[str, str]]]:
     specs: dict[str, list[tuple[str, str]]] = {}
-    for product in PRODUCTS:
+    for product in ACTIVE_PRODUCTS:
         manifest = product_manifest(product)
         items: list[tuple[str, str]] = []
         if manifest.get("package"):
@@ -48,7 +48,7 @@ def collect() -> dict[str, Any]:
     if compatibility.get("core") != versions.get("core"):
         raise ValueError("compatibility.json 与 versions.json 的 core 版本不一致")
     products: dict[str, Any] = {}
-    for product in PRODUCTS:
+    for product in ACTIVE_PRODUCTS:
         manifest = product_manifest(product)
         if manifest.get("status") != "active":
             raise ValueError("%s 不是 active 产品" % product)
@@ -63,6 +63,21 @@ def collect() -> dict[str, Any]:
                 raise FileNotFoundError("缺少发布资产：%s" % rel)
             artifacts.append({"role": role, "path": rel,
                               "size": path.stat().st_size, "sha256": sha256(path)})
+        package = next((item for item in artifacts if item["role"] == "package"), None)
+        release_manifest = next((item for item in artifacts if item["role"] == "manifest"), None)
+        if package is not None and release_manifest is not None:
+            details = load_json(ROOT / release_manifest["path"])
+            expected = {
+                "product": product,
+                "version": versions[product],
+                "core": versions["core"],
+                "package": Path(package["path"]).name,
+                "package_size": package["size"],
+                "package_sha256": package["sha256"],
+            }
+            for key, value in expected.items():
+                if details.get(key) != value:
+                    raise ValueError("%s 发布清单 %s 与当前产品不一致" % (product, key))
         products[product] = {
             "version": manifest["version"], "core": manifest["core"],
             "status": manifest["status"], "artifacts": artifacts,
@@ -76,11 +91,11 @@ def collect() -> dict[str, Any]:
         "legacy_repositories": {
             "plugin_1_9x": {
                 "url": "https://github.com/qy0214/stalker-localization-toolkit-ai-translate",
-                "state": "pending_archive",
+                "state": "archived",
             },
             "mcp_hermes": {
                 "url": "https://github.com/qy0214/stalker-translate-mcp",
-                "state": "pending_archive",
+                "state": "archived",
             },
         },
     }
@@ -101,6 +116,14 @@ def render_md(data: dict[str, Any]) -> str:
             lines.append("| %s | %s | `%s` | %d | `%s` |" % (
                 product, info["version"], art["path"], art["size"],
                 art["sha256"]))
+    pending = data["compatibility"].get("pending_products") or []
+    if pending:
+        lines += ["", "## Pending 产品（不进入当前列车）", ""]
+        for product in pending:
+            manifest = product_manifest(product)
+            lines.append("- %s %s：%s" % (
+                product, manifest.get("version", "?"),
+                manifest.get("release_note", "pending")))
     lines += [
         "", "## 兼容矩阵", "",
         "| 组件 | 版本/要求 |", "|---|---|",

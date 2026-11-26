@@ -1,0 +1,555 @@
+{
+  "samples": [
+    {
+      "lang": "eng",
+      "label": "dialogue",
+      "file": "st_dialogs_bar.xml",
+      "id": "bar_arena_man_job_15",
+      "source": "You've got a special fight today. Even the army has heard about you! Don't be surprised, they fight here too - there's even a general in the crowd. These guys are from the Spetsnaz or OMON. They're well armed and their armor is as good as you'd expect. Don't worry though, I ain't gonna leave you out in the rain, either. You'll get a vest used by Freedom - it's light so it won't slow you down. Go on, show them that stalkers ain't no whipping boys. Good luck!",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "今天你有一场特别的战斗。就连军队也听说了你的事！别惊讶，他们也会在这里作战——人群中甚至还有一位将军。这些人是特种部队或OMON的士兵。他们装备精良，盔甲也堪比你的预期。不过放心，我也不会让你独自面对危险。你会得到Freedom公司提供的背心——它很轻便，不会妨碍你的行动。加油吧，向他们证明那些潜行者可不是好欺负的。祝你好运！",
+        "Hy-MT3-1.8B-Q4": "今天你有特别的战斗任务。连军队都听说过你！别惊讶，他们也会在这儿作战——人群中甚至还有个将军。这些家伙是特种部队或者OMON的。他们武装精良，装甲也和你预期的一样好。不过别担心，我也不会把你晾在雨里。你会拿到自由组织用的背心——它很轻，不会拖你的后腿。去吧，让他们见识一下那些潜行者可不是什么任人摆布的玩意儿。祝你好运！",
+        "Hy-MT3-1.8B-Q8": "今天你可有一场特别的战斗。连军队都听说了你！别惊讶，他们也会在这儿打——人群中甚至还有个将军。这些家伙是特种部队或者OMON的。他们武装得很好，他们的装甲也和你预期的一样好。不过别担心，我也不会把你晾在雨里。你会拿到一件Freedom用的背心——它很轻，不会拖你的后腿。去吧，让他们见识一下那些潜行者可不是什么任人摆布的玩意儿。祝你好运！"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "eng",
+      "label": "long_dialogue",
+      "file": "st_dialogs_marsh.xml",
+      "id": "cit_doctor_docs_dialog_3",
+      "source": "Hmm... I see... So that's how it is... Now I understand why Fang, Ghost, and Strelok wanted to reach the very heart of the Zone. He may be right - the Monolith is just a cover for something much bigger...\\nWell... Thank you. Here, take this artifact as a token of my gratitude... And one more thing... If you see Strelok - tell him I'm waiting for him...",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "嗯……我明白了……原来如此……现在我明白为什么方、鬼和斯特雷洛克想要到达这个区域的中心了。他可能是对的——那块巨石不过是一个更大事物的幌子罢了……\\n嗯……谢谢。请收下这个圣物作为我的感谢象征吧……还有一件事……如果你见到斯特雷洛克，请转告他我在等他……",
+        "Hy-MT3-1.8B-Q4": "嗯……我明白了……原来是这样……现在我懂了为什么方、幽灵和斯特雷洛克想抵达区域的最核心地带了。他可能是对的——巨石不过是个更大东西的掩护罢了……\\n好吧……谢谢。来，把这个遗物当作我感激的象征收好……还有一件事……如果你见到斯特雷洛克——告诉他我在等他……",
+        "Hy-MT3-1.8B-Q8": "嗯……我明白了……原来是这样……现在我懂了为什么方、幽灵和斯特雷洛克想抵达区域的最核心了。他也许是对的——莫诺利特不过是个更大东西的掩护罢了……\\n好吧……谢谢。来，把这个遗物当作我感激的象征收好……还有一件事……如果你见到斯特雷洛克——告诉他我在等他……"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "eng",
+      "label": "item_description",
+      "file": "st_items_quest.xml",
+      "id": "bad_psy_helmet_desc",
+      "source": "Prototype developed by scientists to protect people from psy-emissions. Needs adjusting.",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "科学家开发的原型旨在保护人们免受心理辐射的侵害。需要进行调整。",
+        "Hy-MT3-1.8B-Q4": "科学家开发的原型，用于保护人们免受心理辐射。需要调整。",
+        "Hy-MT3-1.8B-Q8": "科学家开发的原型，用于保护人们免受心理辐射。需要调整。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "eng",
+      "label": "color_placeholder",
+      "file": "st_quests_bar.xml",
+      "id": "bar_visitors_stalker_mechanic_task_4_fetch_about",
+      "source": "%c[ui_8]For weapon modifications, I need good condition pistols and rifles. Right now I am looking for a %c[ui_orange]%s%c[ui_8]. If you find one - bring it to me! To improve the weapon's condition, use a %c[ui_orange]Gunsmith kit%c[ui_8] or ask for my help, but it won't be free.",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "%c[ui_8]对于武器改装，我需要状况良好的手枪和步枪。目前我在寻找 %c[ui_orange]%s%c[ui_8]的武器。如果你找到这样的武器，请带给我！要改善武器的状况，可以使用 %c[ui_orange]枪械修理工具包%c[ui_8]，或者寻求我的帮助，但这不会免费。",
+        "Hy-MT3-1.8B-Q4": "%c[ui_8]对于武器改装，我需要状态良好的手枪和步枪。目前我在找%c[ui_orange]%s%c[ui_8]。要是你找到的话——拿给我！为了提升武器的状态，用%c[ui_orange]枪匠套件%c[ui_8]或者找我帮忙，但这不会是免费的。",
+        "Hy-MT3-1.8B-Q8": "%c[ui_8]对于武器改装，我需要状态良好的手枪和步枪。目前我在找%c[ui_orange]%s%c[ui_8]。要是你找到一个——拿给我！为了提升武器的状态，用%c[ui_orange]枪匠套件%c[ui_8]或者来问我帮忙，但这不会是免费的。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "eng",
+      "label": "long_encyclopedia",
+      "file": "ui_st_encyclopedia_locations.xml",
+      "id": "encyclopedia_locations_army_warehouses_text",
+      "source": "\t\t\t%c[0,153,255,255]Army Warehouses%c[0,140,140,140].\\n\t\t\t\\n%c[0,0,255,30]Information:%c[0,140,140,140]\t\t\t\\nA deserted army base next to a dilapidated hamlet and a small marsh. The village is an eerie place literally swarming with mutants - the bloodsuckers alone are legion. Stalkers do their best to keep away from it, even if it means going extra kilometers around it. The anarchists from the Freedom faction have settled down in the army base. The road connecting the base to the Zone is guarded by the Brain Scorcher, which blocks the way to Pripyat and the Chernobyl NPP.\\n\t\t\t\\n%c[0,0,255,30]Routes:%c[0,140,140,140]\t\t\t\\n%c[0,100,100,255]• %c[0,140,140,140]Rostok\t\t\t\\n%c[0,100,100,255]• %c[0,140,140,140]Dead City\t\t\t\\n%c[0,100,100,255]• %c[0,140,140,140]Red Forest\t\t\t\\n%c[0,100,100,255]• %c[0,140,140,140]Radar\t\t\t\\n%c[0,100,100,255]• %c[0,140,140,140]Truck Cemetery\t\t\t\\n\t\t\t\\n%c[0,0,255,30]Additional notes:%c[0,140,140,140]\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]The terrain is very similar to Agroprom.\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]The location was present in S.T.A.L.K.E.R.: Clear Sky.\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]The location was present in S.T.A.L.K.E.R.: Shadow of Chernobyl.\t\t",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "%c[0,153,255,255]军营%c[0,140,140,140]。\\n\\n%c[0,0,255,30]信息：%c[0,140,140,140]。\\n\\n一个荒废的军营基地，位于一个破败的小村庄和一片小沼泽旁边。\\n那个村庄是个阴森恐怖的地方，到处都是变种人——光是那些吸血鬼就有很多。潜行者们尽量远离那里，即使这意味着要绕远路。“自由团”的无政府主义者已经在这座军营基地定居下来。连接基地与该区域的道路由“脑碎机”守卫，这条道路阻断了通往普里皮亚季和切尔诺贝利核电站的通道。\\n%c[0,0,255,30]路线：%c[0,140,140,140]。\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克。\\n%c[0,100,100,255]• %c[0,140,140,140]死城。\\n%c[0,100,100,255]• %c[0,140,140,140]红森林。\\n%c[0,100,100,255]• %c[0,140,140,140]雷达。\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地。\\n%c[0,0,255,30]其他说明：%c[0,140,140,140]。\\n%c[0,200,0,255]• %c[0,140,140,140]这片地形与阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]这个地点出现在《S.T.A.L.K.E.R.：晴朗的天空》中。\\n%c[0,200,0,255]• %c[0,140,140,140]这个地点出现在《S.T.A.L.K.E.R.：切尔诺贝利阴影》中。",
+        "Hy-MT3-1.8B-Q4": "%c[0,153,255,255]军营仓库%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]情报：%c[0,140,140,140]\\t\\t\\t\\n一座废弃的军队基地，位于破败的小村庄和一小片沼泽旁。那个村子是个诡异的地方，简直密密麻麻全是变种人——光是吸血者就有成群。潜行者们尽最大努力远离它，哪怕这意味着绕它多走好几公里。“自由团”的无政府主义者已经安顿在军营基地里了。连接基地和区域的道路由脑蚀者把守，它会阻断通往普里皮亚季和切尔诺贝利核电站的道路。\\n\\t\\t\\t\\n%c[0,0,255,30]路线：%c[0,140,140,140]\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]死城\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]红林\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]雷达\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地\\t\\t\\t\\n\\t\\t\\t\\n%c[0,0,255,30]附加说明：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.：晴空》中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.：切尔诺贝利阴影》中出现过。",
+        "Hy-MT3-1.8B-Q8": "%c[0,153,255,255]军营仓库%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]情报：%c[0,140,140,140]\\t\\t\\t\\n一座废弃的军队基地，位于破败的小村庄和一小片沼泽旁。那个村子是个诡异的地方，简直到处都是变种人——光是吸血鬼就多得数不清。潜行者们竭尽全力远离它，哪怕这意味着得绕远多走几公里。“自由团”的无政府主义者已经安顿在军营基地里了。连接基地和区域的道路由脑蚀者把守，它阻断了通往普里皮亚季和切尔诺贝利核电站的道路。\\n\\t\\t\\t\\n%c[0,0,255,30]路线：%c[0,140,140,140]\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]死城\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]红林\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]雷达\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地\\t\\t\\t\\n\\t\\t\\t\\n%c[0,0,255,30]附加说明：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》：晴朗天空中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》：切尔诺贝利阴影中出现过。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "rus",
+      "label": "dialogue",
+      "file": "st_dialogs_bar.xml",
+      "id": "bar_arena_man_job_15",
+      "source": "Сегодня у тебя необычный бой. Про твои подвиги прослышали даже вояки и прислали двоих своих бойцов; да, не удивляйся, вояки тоже в этом участвуют. Среди зрителей есть даже генерал. Эти парни из спецназа, точнее, из ОМОНА. И вооружены они соответствующе. Будь осторожен - у них достаточно крепкая броня. Я тебя тоже голым не оставлю. Получишь броню, свободовский броник, чтоб они подавились. Штука легкая, так что бегать мешать не будет. Покажи им, что наш брат тоже не лыком шит. Удачи!",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "今天你的战斗很特别。连士兵们也听说了你的英勇事迹，于是派了两个人来帮忙；别惊讶，士兵们也会参与进来。观众中甚至还有一位将军。这些人是特种部队的士兵，更确切地说，是OMON的士兵。他们的武器也符合要求。要小心——他们的装甲非常坚固。我也不会让你赤身裸体。你会得到一套装甲，就是那种能让他们窒息的装甲。这很简单，所以逃跑不会造成任何麻烦。让他们看看，我们的兄弟也不甘示弱。祝你好运！",
+        "Hy-MT3-1.8B-Q4": "今天你的战斗很特别。连军人都听说了你的壮举，还派了两名自己的战士过来；对，别惊讶，军人也参与了这次行动。观众里甚至还有一位将军。这些人是特种部队的，更准确说，是OMON的。而且他们的装备也相当合适。要小心——他们的防弹衣足够结实。我也不会把你丢着裸着不管。你会拿到防弹衣、斯沃布洛夫斯基背心，好让他们闭嘴。这东西很轻，所以不会妨碍你跑动。给他们看看，我们的兄弟也不是吃素的。祝你好运！",
+        "Hy-MT3-1.8B-Q8": "今天你会有不寻常的战斗。连军人都听说了你的壮举，派了两名自己的战士过来；啊，别惊讶，军人也参与了这场战斗。观众里甚至还有将军。这些家伙是特种部队的，更准确地说，是OMON的。而且他们装备也相当合适。要小心——他们的防弹装甲相当坚固。我也不会把你丢光溜溜地留下。你会拿到防弹衣、斯沃多夫背心，好让他们憋住气。这东西很轻，所以不会妨碍你跑动。给他们看看，我们的兄弟也不是吃素的。祝你好运！"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "rus",
+      "label": "long_dialogue",
+      "file": "st_dialogs_marsh.xml",
+      "id": "cit_doctor_docs_dialog_3",
+      "source": "Хм... Угу... Вот оно что... Понятно, почему Клык, Призрак и Стрелок хотели попасть в самое сердце зоны. Возможно он прав, Монолит это лишь прикрытие чего-то большего...\\nЧто ж... Спасибо тебе, держи этот артефакт в знак моей благодарности... И это... Если увидишь Стрелка - передай ему, что я его жду...",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "嗯……哦……原来如此……我明白了，为什么犬齿、幽灵和射手都想进入该区域的中心地带了。也许他说得对，单体装置只是更大阴谋的掩护罢了……\\n嗯……谢谢你，收下这个道具作为我的感谢吧……还有，如果你见到射手，请转告他，我在等他……",
+        "Hy-MT3-1.8B-Q4": "嗯……嗯……就是这样……明白了，为什么牙爪、幽灵和射手都想进入区域的最核心地带。也许他说得对，单体只是某种更宏大事物的掩护……\\n好吧……谢谢你，把这个神器收好，作为我感激的象征……还有这个……要是见到射手的话——告诉他我会等他……",
+        "Hy-MT3-1.8B-Q8": "嗯……嗯……就是这样……明白了，为什么牙刺、幽灵和射手都想进入区域的最中心。也许他说得对，单体岩体不过是某种更大事物的掩护……\\n好吧……谢谢你，把这个神器收好，作为我感谢你的凭证……还有这个……如果你见到射手——告诉他我在等他……"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "rus",
+      "label": "item_description",
+      "file": "st_items_quest.xml",
+      "id": "bad_psy_helmet_desc",
+      "source": "Прототип, разработанный учёными для защиты от пси-излучения. Нуждается в настройке.",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "这是科学家们为抵御心灵辐射而开发的原型设备。需要进行调试。",
+        "Hy-MT3-1.8B-Q4": "科学家研发的用于抵御心灵辐射的原型。需要调试。",
+        "Hy-MT3-1.8B-Q8": "科学家研发的用于抵御心灵辐射的原型。需要调试。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "rus",
+      "label": "color_placeholder",
+      "file": "st_quests_bar.xml",
+      "id": "bar_visitors_stalker_mechanic_task_4_fetch_about",
+      "source": "%c[ui_8]Я тут ребятам снаряжение улучшаю, и мне нужны разные образцы оружия для работы. Сейчас вот  %c[ui_orange]%s%c[ui_8] в хорошем состоянии требуется. Найдёшь такой - неси ко мне! Ну а если оружие в фиговом состоянии, то я советую тебе использовать %c[ui_orange]Ремнабор%c[ui_8]. Или неси сюда, помогу с ремонтом, но не бесплатно.",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "%c[ui_8]我正在为朋友们改进装备，需要各种武器样本来使用。目前 %c[ui_orange]%s%c[ui_8]那些状况良好的武器就急需。找到这样的武器就拿来给我！如果武器状况很差，我建议你使用 %c[ui_orange]修理工具包%c[ui_8]。或者把武器带到这里来，我会帮你修理，但不会免费。",
+        "Hy-MT3-1.8B-Q4": "%c[ui_8]我在给伙计们升级装备，我需要各种用于工作的武器样本。现在就是 %c[ui_orange]%s%c[ui_8]状态良好的那些，我需要。你找到这样的就给我送过来！要是武器状态很差的话，我建议你用 %c[ui_orange]修理工具%c[ui_8]。或者拿过来，我来帮你修，但可不是免费的。",
+        "Hy-MT3-1.8B-Q8": "%c[ui_8]我在这儿给弟兄们升级装备，我需要各种用于工作的武器样品。现在正好有 %c[ui_orange]%s%c[ui_8]状态良好的需要。找到这样的就给我送过来！要是武器状态烂透了，那我建议你用 %c[ui_orange]维修工具%c[ui_8]。或者拿过来，我来帮你修，但不是免费的。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    },
+    {
+      "lang": "rus",
+      "label": "long_encyclopedia",
+      "file": "ui_st_encyclopedia_locations.xml",
+      "id": "encyclopedia_locations_army_warehouses_text",
+      "source": "\t\t\t%c[0,153,255,255]Армейские Склады%c[0,140,140,140].\\n\t\t\t\\n%c[0,0,255,30]Информация:%c[0,140,140,140]\t\t\t\\nЗаброшенная военная база рядом с полуразрушенной деревушкой и небольшим болотом. Деревня представляет собой жуткое место, буквально кишащее мутантами - одни только кровососы чего стоят. Сталкеры изо всех сил стараются держаться от него подальше, даже если для этого придется обойти его на лишние километры. На армейской базе обосновались анархисты из группировки «Свобода». Дорога, соединяющая базу с Зоной, охраняется Выжигателем мозгов, который преграждает путь в Припять и ЧАЭС.\\n\t\t\t\\n%c[0,0,255,30]Дополнительные сведения:%c[0,140,140,140]\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]Рельеф местности очень похож на Агропром.\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]Локация присутствовала в S.T.A.L.K.E.R.«Чистое Небо».\t\t\t\\n%c[0,200,0,255]• %c[0,140,140,140]Локация присутствовала в S.T.A.L.K.E.R.«Тень Чернобыля».\t\t",
+      "outputs": {
+        "Hy-MT2-1.8B-Q8": "%c[0,153,255,255]军队仓库%c[0,140,140,140]。\\n\\n%c[0,0,255,30]信息：%c[0,140,140,140]。\\n位于半毁村庄和一片小沼泽旁的废弃军事基地。\\n村庄看起来…\\n…\\n那是个可怕的地方。\\n到处都是变异体——光是那些吸血的生物就够可怕的了。潜行者们竭尽全力想要摆脱它们。尽量远离他，即使为此需要多走几公里。军队基地上出现了无政府主义者。你属于“自由”组织。连接基地与区域的道路由“脑焚者”负责守卫。它阻挡了通往普里皮亚季和切尔诺贝利核电站的道路。\\n%c[0,0,255,30]附加信息：%c[0,140,140,140]%c[0,200,0,255]• %c[0,140,140,140] 该地区的地形与阿格罗普罗姆非常相似。%c[0,200,0,255]• %c[0,140,140,140]该地点曾出现在《S.T.A.L.K.E.R.：纯空》中。%c[0,200,0,255]• %c[0,140,140,140]该地点曾出现在《S.T.A.L.K.E.R.：切尔诺贝利阴影》中。",
+        "Hy-MT3-1.8B-Q4": "%c[0,153,255,255]军营%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]信息：%c[0,140,140,140]\\t\\t\\t\\n废弃的军事基地，位于半毁村庄附近和一小片沼泽地旁。那座村庄是个恐怖的地方，简直密密麻麻全是变异体——光是吸血怪就有不少。潜行者们拼命尽量离它远点，哪怕为此得绕路多走几公里。军营里驻扎了来自「自由」组织的无政府主义者。连接基地和区域的道路由脑烧者把守，他们会阻拦前往普里皮亚季和切尔诺贝利的地方。\\n\\t\\t\\t\\n%c[0,0,255,30]补充信息：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形地貌和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《S.T.A.L.K.E.R.》游戏中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《S.T.A.L.K.E.R.》游戏中出现过。",
+        "Hy-MT3-1.8B-Q8": "%c[0,153,255,255]军营%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]信息：%c[0,140,140,140]\\t\\t\\t\\n废弃的军事基地，位于半毁村庄附近和一小片沼泽地。那座村庄是个恐怖的地方，简直密密麻麻都是变异体——光是吸血怪就有够多的了。潜行者们拼命想离它远点，哪怕为此得绕路多走几公里。军营里已经安顿下来的是“自由”组织的无政府主义者。连接基地和区的道路由脑烧者把守，他挡住了去往普里皮亚季和切尔诺贝利核电站的路。\\n\\t\\t\\t\\n%c[0,0,255,30]补充信息：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形地貌和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》中出现过。"
+      },
+      "checks": {
+        "Hy-MT2-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q4": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        },
+        "Hy-MT3-1.8B-Q8": {
+          "has_cjk": true,
+          "source_echo": false,
+          "placeholders_ok": true
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "label": "Hy-MT2-1.8B-Q8",
+      "model": "Hy-MT2-1.8B-Q8_0.gguf",
+      "ok": true,
+      "failed_strings": 0,
+      "audit": {
+        "ok": true,
+        "hard_problems": 0,
+        "warnings": 2,
+        "counts": {
+          "missing_files": 0,
+          "empty_files": 0,
+          "unparseable_tables": 0,
+          "missing_ids": 0,
+          "mask_residue": 0,
+          "untranslated_entries": 0,
+          "context_bleed": 0,
+          "cross_entry_contamination": 0,
+          "latin_residue_review": 1,
+          "runtime_token_damage": 0,
+          "semantic_role_conflicts": 0,
+          "glossary_conflicts": 0,
+          "name_consistency": 0,
+          "partial_translation_review": 1,
+          "unchanged_outputs": 0,
+          "dangling_generated_ids": 0,
+          "amp_warnings": 0,
+          "ledger_files": 1,
+          "text_tables": 1
+        },
+        "details": {
+          "missing_files": [],
+          "empty_files": [],
+          "unparseable_tables": [],
+          "missing_ids": [],
+          "mask_residue": [],
+          "untranslated_entries": [],
+          "context_bleed": [],
+          "cross_entry_contamination": [],
+          "latin_residue_review": [
+            "probe.xml（1 条：eng__bar_arena_man_job_15…）"
+          ],
+          "runtime_token_damage": [],
+          "semantic_role_conflicts": [],
+          "glossary_conflicts": [],
+          "name_consistency": [],
+          "partial_translation_review": [
+            "probe.xml（1 条：eng__bar_arena_man_job_15…）"
+          ],
+          "unchanged_outputs": [],
+          "dangling_generated_ids": [],
+          "amp_warnings": []
+        }
+      },
+      "seconds": 25.703,
+      "translations": {
+        "eng__bar_arena_man_job_15": "今天你有一场特别的战斗。就连军队也听说了你的事！别惊讶，他们也会在这里作战——人群中甚至还有一位将军。这些人是特种部队或OMON的士兵。他们装备精良，盔甲也堪比你的预期。不过放心，我也不会让你独自面对危险。你会得到Freedom公司提供的背心——它很轻便，不会妨碍你的行动。加油吧，向他们证明那些潜行者可不是好欺负的。祝你好运！",
+        "eng__cit_doctor_docs_dialog_3": "嗯……我明白了……原来如此……现在我明白为什么方、鬼和斯特雷洛克想要到达这个区域的中心了。他可能是对的——那块巨石不过是一个更大事物的幌子罢了……\\n嗯……谢谢。请收下这个圣物作为我的感谢象征吧……还有一件事……如果你见到斯特雷洛克，请转告他我在等他……",
+        "eng__bad_psy_helmet_desc": "科学家开发的原型旨在保护人们免受心理辐射的侵害。需要进行调整。",
+        "eng__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]对于武器改装，我需要状况良好的手枪和步枪。目前我在寻找 %c[ui_orange]%s%c[ui_8]的武器。如果你找到这样的武器，请带给我！要改善武器的状况，可以使用 %c[ui_orange]枪械修理工具包%c[ui_8]，或者寻求我的帮助，但这不会免费。",
+        "eng__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军营%c[0,140,140,140]。\\n\\n%c[0,0,255,30]信息：%c[0,140,140,140]。\\n\\n一个荒废的军营基地，位于一个破败的小村庄和一片小沼泽旁边。\\n那个村庄是个阴森恐怖的地方，到处都是变种人——光是那些吸血鬼就有很多。潜行者们尽量远离那里，即使这意味着要绕远路。“自由团”的无政府主义者已经在这座军营基地定居下来。连接基地与该区域的道路由“脑碎机”守卫，这条道路阻断了通往普里皮亚季和切尔诺贝利核电站的通道。\\n%c[0,0,255,30]路线：%c[0,140,140,140]。\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克。\\n%c[0,100,100,255]• %c[0,140,140,140]死城。\\n%c[0,100,100,255]• %c[0,140,140,140]红森林。\\n%c[0,100,100,255]• %c[0,140,140,140]雷达。\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地。\\n%c[0,0,255,30]其他说明：%c[0,140,140,140]。\\n%c[0,200,0,255]• %c[0,140,140,140]这片地形与阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]这个地点出现在《S.T.A.L.K.E.R.：晴朗的天空》中。\\n%c[0,200,0,255]• %c[0,140,140,140]这个地点出现在《S.T.A.L.K.E.R.：切尔诺贝利阴影》中。",
+        "rus__bar_arena_man_job_15": "今天你的战斗很特别。连士兵们也听说了你的英勇事迹，于是派了两个人来帮忙；别惊讶，士兵们也会参与进来。观众中甚至还有一位将军。这些人是特种部队的士兵，更确切地说，是OMON的士兵。他们的武器也符合要求。要小心——他们的装甲非常坚固。我也不会让你赤身裸体。你会得到一套装甲，就是那种能让他们窒息的装甲。这很简单，所以逃跑不会造成任何麻烦。让他们看看，我们的兄弟也不甘示弱。祝你好运！",
+        "rus__cit_doctor_docs_dialog_3": "嗯……哦……原来如此……我明白了，为什么犬齿、幽灵和射手都想进入该区域的中心地带了。也许他说得对，单体装置只是更大阴谋的掩护罢了……\\n嗯……谢谢你，收下这个道具作为我的感谢吧……还有，如果你见到射手，请转告他，我在等他……",
+        "rus__bad_psy_helmet_desc": "这是科学家们为抵御心灵辐射而开发的原型设备。需要进行调试。",
+        "rus__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]我正在为朋友们改进装备，需要各种武器样本来使用。目前 %c[ui_orange]%s%c[ui_8]那些状况良好的武器就急需。找到这样的武器就拿来给我！如果武器状况很差，我建议你使用 %c[ui_orange]修理工具包%c[ui_8]。或者把武器带到这里来，我会帮你修理，但不会免费。",
+        "rus__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军队仓库%c[0,140,140,140]。\\n\\n%c[0,0,255,30]信息：%c[0,140,140,140]。\\n位于半毁村庄和一片小沼泽旁的废弃军事基地。\\n村庄看起来…\\n…\\n那是个可怕的地方。\\n到处都是变异体——光是那些吸血的生物就够可怕的了。潜行者们竭尽全力想要摆脱它们。尽量远离他，即使为此需要多走几公里。军队基地上出现了无政府主义者。你属于“自由”组织。连接基地与区域的道路由“脑焚者”负责守卫。它阻挡了通往普里皮亚季和切尔诺贝利核电站的道路。\\n%c[0,0,255,30]附加信息：%c[0,140,140,140]%c[0,200,0,255]• %c[0,140,140,140] 该地区的地形与阿格罗普罗姆非常相似。%c[0,200,0,255]• %c[0,140,140,140]该地点曾出现在《S.T.A.L.K.E.R.：纯空》中。%c[0,200,0,255]• %c[0,140,140,140]该地点曾出现在《S.T.A.L.K.E.R.：切尔诺贝利阴影》中。"
+      },
+      "log_tail": [
+        "[dim] 模型 Global_Step_300：内置对话模板 596 字符，EOS=120020",
+        "[info] 启动 llama-server（CUDA 12.4/GPU，mt2 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 53195",
+        "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_v5a42_ee\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696243.log",
+        "[info] 引擎就绪（用时 2 秒）",
+        "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+        "[info] 启动自检通过：'你好。'",
+        "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+        "[info] 进度 1/1（100%）：probe.xml",
+        "[info] 已清理 1 个空目录",
+        "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 0 处，警告 2 处",
+        "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（1 条：eng__bar_arena_man_job_15…）",
+        "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（1 条：eng__bar_arena_man_job_15…）",
+        "[info] 提示词体检：换行保真（2 次 / 保留首译 2）；字面换行保真（2 次 / 自动修复 2）；粘连残词（1 次 / 保留首译 1）；残留源文（1 次 / 重试成功 1）；占位符保留（1 次）；粗口力度（1 次 / 保留首译 1）",
+        "[warn] 最需要关注的规则：换行保真（触发最多，优先迭代）",
+        "[info] 全部完成：请求 27 段，8.97 KB 字符",
+        "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_work_01kx_t2u\\Hy-MT2-1.8B-Q8\\out",
+        "[info] 引擎已停止"
+      ]
+    },
+    {
+      "label": "Hy-MT3-1.8B-Q4",
+      "model": "Hy-MT3-1.8B-Q4_K_M.gguf",
+      "ok": true,
+      "failed_strings": 0,
+      "audit": {
+        "ok": true,
+        "hard_problems": 0,
+        "warnings": 1,
+        "counts": {
+          "missing_files": 0,
+          "empty_files": 0,
+          "unparseable_tables": 0,
+          "missing_ids": 0,
+          "mask_residue": 0,
+          "untranslated_entries": 0,
+          "context_bleed": 0,
+          "cross_entry_contamination": 0,
+          "latin_residue_review": 0,
+          "runtime_token_damage": 0,
+          "semantic_role_conflicts": 0,
+          "glossary_conflicts": 0,
+          "name_consistency": 0,
+          "partial_translation_review": 1,
+          "unchanged_outputs": 0,
+          "dangling_generated_ids": 0,
+          "amp_warnings": 0,
+          "ledger_files": 1,
+          "text_tables": 1
+        },
+        "details": {
+          "missing_files": [],
+          "empty_files": [],
+          "unparseable_tables": [],
+          "missing_ids": [],
+          "mask_residue": [],
+          "untranslated_entries": [],
+          "context_bleed": [],
+          "cross_entry_contamination": [],
+          "latin_residue_review": [],
+          "runtime_token_damage": [],
+          "semantic_role_conflicts": [],
+          "glossary_conflicts": [],
+          "name_consistency": [],
+          "partial_translation_review": [
+            "probe.xml（1 条：eng__bar_arena_man_job_15…）"
+          ],
+          "unchanged_outputs": [],
+          "dangling_generated_ids": [],
+          "amp_warnings": []
+        }
+      },
+      "seconds": 13.266,
+      "translations": {
+        "eng__bar_arena_man_job_15": "今天你有特别的战斗任务。连军队都听说过你！别惊讶，他们也会在这儿作战——人群中甚至还有个将军。这些家伙是特种部队或者OMON的。他们武装精良，装甲也和你预期的一样好。不过别担心，我也不会把你晾在雨里。你会拿到自由组织用的背心——它很轻，不会拖你的后腿。去吧，让他们见识一下那些潜行者可不是什么任人摆布的玩意儿。祝你好运！",
+        "eng__cit_doctor_docs_dialog_3": "嗯……我明白了……原来是这样……现在我懂了为什么方、幽灵和斯特雷洛克想抵达区域的最核心地带了。他可能是对的——巨石不过是个更大东西的掩护罢了……\\n好吧……谢谢。来，把这个遗物当作我感激的象征收好……还有一件事……如果你见到斯特雷洛克——告诉他我在等他……",
+        "eng__bad_psy_helmet_desc": "科学家开发的原型，用于保护人们免受心理辐射。需要调整。",
+        "eng__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]对于武器改装，我需要状态良好的手枪和步枪。目前我在找%c[ui_orange]%s%c[ui_8]。要是你找到的话——拿给我！为了提升武器的状态，用%c[ui_orange]枪匠套件%c[ui_8]或者找我帮忙，但这不会是免费的。",
+        "eng__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军营仓库%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]情报：%c[0,140,140,140]\\t\\t\\t\\n一座废弃的军队基地，位于破败的小村庄和一小片沼泽旁。那个村子是个诡异的地方，简直密密麻麻全是变种人——光是吸血者就有成群。潜行者们尽最大努力远离它，哪怕这意味着绕它多走好几公里。“自由团”的无政府主义者已经安顿在军营基地里了。连接基地和区域的道路由脑蚀者把守，它会阻断通往普里皮亚季和切尔诺贝利核电站的道路。\\n\\t\\t\\t\\n%c[0,0,255,30]路线：%c[0,140,140,140]\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]死城\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]红林\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]雷达\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地\\t\\t\\t\\n\\t\\t\\t\\n%c[0,0,255,30]附加说明：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.：晴空》中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.：切尔诺贝利阴影》中出现过。",
+        "rus__bar_arena_man_job_15": "今天你的战斗很特别。连军人都听说了你的壮举，还派了两名自己的战士过来；对，别惊讶，军人也参与了这次行动。观众里甚至还有一位将军。这些人是特种部队的，更准确说，是OMON的。而且他们的装备也相当合适。要小心——他们的防弹衣足够结实。我也不会把你丢着裸着不管。你会拿到防弹衣、斯沃布洛夫斯基背心，好让他们闭嘴。这东西很轻，所以不会妨碍你跑动。给他们看看，我们的兄弟也不是吃素的。祝你好运！",
+        "rus__cit_doctor_docs_dialog_3": "嗯……嗯……就是这样……明白了，为什么牙爪、幽灵和射手都想进入区域的最核心地带。也许他说得对，单体只是某种更宏大事物的掩护……\\n好吧……谢谢你，把这个神器收好，作为我感激的象征……还有这个……要是见到射手的话——告诉他我会等他……",
+        "rus__bad_psy_helmet_desc": "科学家研发的用于抵御心灵辐射的原型。需要调试。",
+        "rus__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]我在给伙计们升级装备，我需要各种用于工作的武器样本。现在就是 %c[ui_orange]%s%c[ui_8]状态良好的那些，我需要。你找到这样的就给我送过来！要是武器状态很差的话，我建议你用 %c[ui_orange]修理工具%c[ui_8]。或者拿过来，我来帮你修，但可不是免费的。",
+        "rus__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军营%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]信息：%c[0,140,140,140]\\t\\t\\t\\n废弃的军事基地，位于半毁村庄附近和一小片沼泽地旁。那座村庄是个恐怖的地方，简直密密麻麻全是变异体——光是吸血怪就有不少。潜行者们拼命尽量离它远点，哪怕为此得绕路多走几公里。军营里驻扎了来自「自由」组织的无政府主义者。连接基地和区域的道路由脑烧者把守，他们会阻拦前往普里皮亚季和切尔诺贝利的地方。\\n\\t\\t\\t\\n%c[0,0,255,30]补充信息：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形地貌和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《S.T.A.L.K.E.R.》游戏中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《S.T.A.L.K.E.R.》游戏中出现过。"
+      },
+      "log_tail": [
+        "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+        "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 55682",
+        "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_v5a42_ee\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696271.log",
+        "[info] 引擎就绪（用时 2 秒）",
+        "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+        "[info] 启动自检通过：'嗨。'",
+        "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+        "[info] 进度 1/1（100%）：probe.xml",
+        "[info] 已清理 1 个空目录",
+        "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 0 处，警告 1 处",
+        "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（1 条：eng__bar_arena_man_job_15…）",
+        "[info] 提示词体检：粘连残词（1 次 / 重试成功 1）；粗口力度（1 次 / 保留首译 1）",
+        "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+        "[info] 全部完成：请求 12 段，5.23 KB 字符",
+        "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_work_01kx_t2u\\Hy-MT3-1.8B-Q4\\out",
+        "[info] 引擎已停止"
+      ]
+    },
+    {
+      "label": "Hy-MT3-1.8B-Q8",
+      "model": "Hy-MT3-1.8B-Q8_0.gguf",
+      "ok": true,
+      "failed_strings": 0,
+      "audit": {
+        "ok": true,
+        "hard_problems": 0,
+        "warnings": 2,
+        "counts": {
+          "missing_files": 0,
+          "empty_files": 0,
+          "unparseable_tables": 0,
+          "missing_ids": 0,
+          "mask_residue": 0,
+          "untranslated_entries": 0,
+          "context_bleed": 0,
+          "cross_entry_contamination": 0,
+          "latin_residue_review": 1,
+          "runtime_token_damage": 0,
+          "semantic_role_conflicts": 0,
+          "glossary_conflicts": 0,
+          "name_consistency": 0,
+          "partial_translation_review": 1,
+          "unchanged_outputs": 0,
+          "dangling_generated_ids": 0,
+          "amp_warnings": 0,
+          "ledger_files": 1,
+          "text_tables": 1
+        },
+        "details": {
+          "missing_files": [],
+          "empty_files": [],
+          "unparseable_tables": [],
+          "missing_ids": [],
+          "mask_residue": [],
+          "untranslated_entries": [],
+          "context_bleed": [],
+          "cross_entry_contamination": [],
+          "latin_residue_review": [
+            "probe.xml（1 条：eng__bar_arena_man_job_15…）"
+          ],
+          "runtime_token_damage": [],
+          "semantic_role_conflicts": [],
+          "glossary_conflicts": [],
+          "name_consistency": [],
+          "partial_translation_review": [
+            "probe.xml（1 条：eng__bar_arena_man_job_15…）"
+          ],
+          "unchanged_outputs": [],
+          "dangling_generated_ids": [],
+          "amp_warnings": []
+        }
+      },
+      "seconds": 15.406,
+      "translations": {
+        "eng__bar_arena_man_job_15": "今天你可有一场特别的战斗。连军队都听说了你！别惊讶，他们也会在这儿打——人群中甚至还有个将军。这些家伙是特种部队或者OMON的。他们武装得很好，他们的装甲也和你预期的一样好。不过别担心，我也不会把你晾在雨里。你会拿到一件Freedom用的背心——它很轻，不会拖你的后腿。去吧，让他们见识一下那些潜行者可不是什么任人摆布的玩意儿。祝你好运！",
+        "eng__cit_doctor_docs_dialog_3": "嗯……我明白了……原来是这样……现在我懂了为什么方、幽灵和斯特雷洛克想抵达区域的最核心了。他也许是对的——莫诺利特不过是个更大东西的掩护罢了……\\n好吧……谢谢。来，把这个遗物当作我感激的象征收好……还有一件事……如果你见到斯特雷洛克——告诉他我在等他……",
+        "eng__bad_psy_helmet_desc": "科学家开发的原型，用于保护人们免受心理辐射。需要调整。",
+        "eng__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]对于武器改装，我需要状态良好的手枪和步枪。目前我在找%c[ui_orange]%s%c[ui_8]。要是你找到一个——拿给我！为了提升武器的状态，用%c[ui_orange]枪匠套件%c[ui_8]或者来问我帮忙，但这不会是免费的。",
+        "eng__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军营仓库%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]情报：%c[0,140,140,140]\\t\\t\\t\\n一座废弃的军队基地，位于破败的小村庄和一小片沼泽旁。那个村子是个诡异的地方，简直到处都是变种人——光是吸血鬼就多得数不清。潜行者们竭尽全力远离它，哪怕这意味着得绕远多走几公里。“自由团”的无政府主义者已经安顿在军营基地里了。连接基地和区域的道路由脑蚀者把守，它阻断了通往普里皮亚季和切尔诺贝利核电站的道路。\\n\\t\\t\\t\\n%c[0,0,255,30]路线：%c[0,140,140,140]\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]罗斯托克\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]死城\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]红林\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]雷达\\t\\t\\t\\n%c[0,100,100,255]• %c[0,140,140,140]卡车墓地\\t\\t\\t\\n\\t\\t\\t\\n%c[0,0,255,30]附加说明：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》：晴朗天空中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》：切尔诺贝利阴影中出现过。",
+        "rus__bar_arena_man_job_15": "今天你会有不寻常的战斗。连军人都听说了你的壮举，派了两名自己的战士过来；啊，别惊讶，军人也参与了这场战斗。观众里甚至还有将军。这些家伙是特种部队的，更准确地说，是OMON的。而且他们装备也相当合适。要小心——他们的防弹装甲相当坚固。我也不会把你丢光溜溜地留下。你会拿到防弹衣、斯沃多夫背心，好让他们憋住气。这东西很轻，所以不会妨碍你跑动。给他们看看，我们的兄弟也不是吃素的。祝你好运！",
+        "rus__cit_doctor_docs_dialog_3": "嗯……嗯……就是这样……明白了，为什么牙刺、幽灵和射手都想进入区域的最中心。也许他说得对，单体岩体不过是某种更大事物的掩护……\\n好吧……谢谢你，把这个神器收好，作为我感谢你的凭证……还有这个……如果你见到射手——告诉他我在等他……",
+        "rus__bad_psy_helmet_desc": "科学家研发的用于抵御心灵辐射的原型。需要调试。",
+        "rus__bar_visitors_stalker_mechanic_task_4_fetch_about": "%c[ui_8]我在这儿给弟兄们升级装备，我需要各种用于工作的武器样品。现在正好有 %c[ui_orange]%s%c[ui_8]状态良好的需要。找到这样的就给我送过来！要是武器状态烂透了，那我建议你用 %c[ui_orange]维修工具%c[ui_8]。或者拿过来，我来帮你修，但不是免费的。",
+        "rus__encyclopedia_locations_army_warehouses_text": "%c[0,153,255,255]军营%c[0,140,140,140].\\n\\t\\t\\t\\n%c[0,0,255,30]信息：%c[0,140,140,140]\\t\\t\\t\\n废弃的军事基地，位于半毁村庄附近和一小片沼泽地。那座村庄是个恐怖的地方，简直密密麻麻都是变异体——光是吸血怪就有够多的了。潜行者们拼命想离它远点，哪怕为此得绕路多走几公里。军营里已经安顿下来的是“自由”组织的无政府主义者。连接基地和区的道路由脑烧者把守，他挡住了去往普里皮亚季和切尔诺贝利核电站的路。\\n\\t\\t\\t\\n%c[0,0,255,30]补充信息：%c[0,140,140,140]\\t\\t\\t\\n%c[0,200,0,255]• %c[0,140,140,140]地形地貌和阿格普罗姆非常相似。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》中出现过。\\n%c[0,200,0,255]• %c[0,140,140,140]该地点曾在《潜行者 S.T.A.L.K.E.R.》中出现过。"
+      },
+      "log_tail": [
+        "[dim] 模型 Hy MT3 1.8B 1118：内置对话模板 596 字符，EOS=120020",
+        "[info] 启动 llama-server（CUDA 12.4/GPU，mt3 档，99 层 GPU offload，上下文 8192 token × 1 路），端口 57535",
+        "[info] 运行日志：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_v5a42_ee\\STALKER Localization Toolkit\\ai_translate\\logs\\server_1795696288.log",
+        "[info] 引擎就绪（用时 2 秒）",
+        "[info] GPU 加速已生效（cuda：33/33 层在显卡上）",
+        "[info] 启动自检通过：'嗨。'",
+        "[info] 待翻译文本 XML 1 个（递归子目录，已排除输出目录）",
+        "[info] 进度 1/1（100%）：probe.xml",
+        "[info] 已清理 1 个空目录",
+        "[warn] 终检：账本 1 个文件 / 改写文本表 1 张，硬性问题 0 处，警告 2 处",
+        "[warn]   终检｜疑似部分源文未翻译（需人工复核）：probe.xml（1 条：eng__bar_arena_man_job_15…）",
+        "[warn]   终检｜中文译文残留英文碎片（需人工复核）：probe.xml（1 条：eng__bar_arena_man_job_15…）",
+        "[info] 提示词体检：粘连残词（1 次 / 保留首译 1）；粗口力度（1 次 / 保留首译 1）",
+        "[warn] 最需要关注的规则：粘连残词（触发最多，优先迭代）",
+        "[info] 全部完成：请求 12 段，5.23 KB 字符",
+        "[ok] 译文目录：C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_work_01kx_t2u\\Hy-MT3-1.8B-Q8\\out",
+        "[info] 引擎已停止"
+      ]
+    }
+  ],
+  "work_dir": "C:\\Users\\Admin\\AppData\\Local\\Temp\\ait_mt3_ab10_work_01kx_t2u"
+}
